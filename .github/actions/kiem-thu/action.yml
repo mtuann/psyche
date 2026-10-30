@@ -44,6 +44,13 @@ runs:
     - name: Build (${{ inputs.ban == 'xem' && 'bản xem' || 'bản thật' }})
       run: npm run ${{ inputs.ban == 'xem' && 'build:xem' || 'build' }}
       shell: bash
+    # mọi trang, bản ghi đã khóa còn khớp mã băm (build cũng kiểm; bước riêng để log chỉ rõ mục lệch, D1.7)
+    - name: Kiểm khóa
+      if: inputs.phan == 'npm-test'
+      run: node tools/khoa.mjs tinh
+      shell: bash
+    # gồm kiểm thử khóa, phạm vi lô (nhánh moi/dN-lM so với main: test.yml checkout đủ lịch sử), link và #mục, thành phần,
+    # script chuyển; phép thử cần ../psyche-zero/ tự bỏ qua
     - if: inputs.phan == 'npm-test'
       run: npm test
       shell: bash

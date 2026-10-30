@@ -111,7 +111,7 @@ test.yml: 6 job song song, mỗi job tự build bản xem          deploy.yml: j
 - **Giới hạn:** job kiểm thử dừng sau 30 phút, job đăng sau 15 phút. Quyền tối thiểu: chỉ job đăng có `pages: write`, `id-token: write`.
 - **Khi kiểm thử trình duyệt dài ra** (đợt 8, công cụ): chia tiếp mỗi trình duyệt thành hai job theo file kiểm thử (`kiem-*.mjs`), vẫn song song.
 - Các bước dùng chung ở `.github/actions/kiem-thu/action.yml`. Hỏng Lighthouse thì JSON được tải lên lần chạy (giữ 14 ngày). Ảnh chụp: `gh run download <số lần chạy> -n anh-chup`.
-- **Bạn** bật Pages (Settings → Pages, Source: GitHub Actions) trước khi gộp D1.7; trước đó `deploy.yml` hỏng ở bước đăng, không ảnh hưởng gì.
+- Pages đã bật từ D1.1 (Settings → Pages, Source: GitHub Actions). D1.7 (30/10/2026): phần `npm-test` có thêm bước `node tools/khoa.mjs tinh`; `npm test` gồm kiểm thử khóa, phạm vi lô, link và `#mục`, thành phần, script chuyển (thêm ở D1.3–D1.6); Lighthouse đo tối đa ba trang mẫu (`tools/lighthouse/kiem.mjs`).
 - Thử như CI trên máy: clone repo vào thư mục không có `psyche-zero` cạnh nó, `npm ci`, build, kiểm thử; phép thử cần site cũ tự bỏ qua.
 
 ## Nguồn
