@@ -4,14 +4,409 @@ nguon_cu: ../psyche-zero/docs/bang-chung/thi-nghiem-doi-chung.md
 tang: loi
 muc: V3
 lan:
-  - so: 1
-    ngay: null
-    nhanh: moi/d4-l1
-    ma_bam: null
-    nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
-      kiem_mau: null
-nguon: []
-nhan_dinh: []
+- so: 1
+  ngay: 2026-10-30
+  nhanh: moi/d4-l1
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L1 phần 1/2)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: benedetti2025
+  ten: 'Benedetti (2025), EULAR Rheumatol Open 1(4), 309–311: tóm tắt (Europe PMC, PMC13292406)'
+  link: https://doi.org/10.1016/j.ero.2025.09.006
+  toan_van: false
+- id: barnett2005
+  ten: 'Barnett, van der Pols & Dobson (2005), Int J Epidemiol 34(1), 215–220: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1093/ije/dyh299
+  toan_van: false
+- id: openstax23
+  ten: 'OpenStax, Psychology 2e, mục 2.3 Analyzing Findings: toàn văn trang'
+  link: https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings
+  toan_van: true
+- id: hrobjartsson2010
+  ten: 'Hróbjartsson & Gøtzsche (2010), Cochrane Database Syst Rev CD003974.pub3: tóm tắt (Europe PMC, PMC7156905)'
+  link: https://doi.org/10.1002/14651858.CD003974.pub3
+  toan_van: false
+- id: openstax22
+  ten: 'OpenStax, Psychology 2e, mục 2.2 Approaches to Research: toàn văn trang'
+  link: https://openstax.org/books/psychology-2e/pages/2-2-approaches-to-research
+  toan_van: true
+- id: wolraich1995
+  ten: 'Wolraich, Wilson & White (1995), JAMA 274(20), 1617–1621: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1001/jama.1995.03530200053037
+  toan_van: false
+- id: osc2015
+  ten: 'Open Science Collaboration (2015), Science 349(6251), aac4716: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1126/science.aac4716
+  toan_van: false
+- id: nosek2018
+  ten: 'Nosek và cộng sự (2018), PNAS 115(11), 2600–2606: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1073/pnas.1708274114
+  toan_van: false
+nhan_dinh:
+- id: d1
+  cau: 'Điểm căng thẳng có thể giảm vì hồi phục tự nhiên: nhiều khó khăn tự dịu đi theo thời gian.'
+  loai: phat-hien
+  nguon:
+  - benedetti2025
+  trich: The placebo response is different from the placebo effect. Whereas the placebo response is the global response to a placebo, including spontaneous remission, regression to the mean, patients' and experimenters' biases, possible effects of cointerventions, as well as psychological factors
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: '"Kỳ thi qua đi, dự án kết thúc" là ví dụ minh họa của site. Nguồn nói về "spontaneous remission" nói chung (y học); phạm vi căng thẳng tâm lý là suy rộng, lượt 2 xem lại.'
+- id: d2
+  cau: 'Hồi quy về trung bình: nếu người ta tham gia đúng lúc điểm đang cao bất thường, lần đo sau thường thấp hơn, dù có làm gì hay không.'
+  loai: dinh-nghia
+  nguon:
+  - barnett2005
+  trich: Regression to the mean (RTM) is a statistical phenomenon that can make natural variation in repeated data look like real change. It happens when unusually large or small measurements tend to be followed by measurements that are closer to the mean.
+  vi_tri: Tóm tắt (Background)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Người ta thường tìm đến một giải pháp đúng lúc đang căng thẳng nhất. Từ đỉnh điểm, lần đo sau gần như chắc chắn sẽ thấp hơn". Nguồn nói "tend to be followed by measurements closer to the mean" (xu hướng, không "gần như chắc chắn"), và không nói gì về việc người ta tìm giải pháp lúc căng thẳng nhất. Chữ mới bám định nghĩa.'
+- id: d3
+  cau: 'Kỳ vọng: người tin rằng mình đang được giúp có thể cảm thấy, và trả lời bảng hỏi, tốt hơn.'
+  loai: phat-hien
+  nguon:
+  - openstax23
+  - benedetti2025
+  trich: The placebo effect occurs when people's expectations or beliefs influence or determine their experience in a given situation.
+  vi_tri: OpenStax 2.3, phần Experimenter bias and the placebo effect; Benedetti 2025, tóm tắt
+  ket_qua: dung
+  ghi_chu: '"Trả lời bảng hỏi" là ứng dụng cho kết quả tự báo cáo; Hróbjartsson 2010 nói kết quả tự báo cáo dễ bị báo cáo thiên lệch (d17).'
+- id: d4
+  cau: Người tham gia có thể trả lời theo điều họ nghĩ nhà nghiên cứu mong đợi.
+  loai: phat-hien
+  nguon:
+  - openstax23
+  - hrobjartsson2010
+  trich: it is difficult to distinguish patient-reported effects of placebo from biased reporting
+  vi_tri: 'Hróbjartsson 2010, Authors'' conclusions; OpenStax 2.3: participant and experimenter bias'
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Muốn làm hài lòng. Người tham gia biết nhà nghiên cứu mong đợi điều gì." Nguồn nói tới báo cáo thiên lệch và thiên lệch của người tham gia nói chung; cơ chế cụ thể "muốn làm hài lòng" không nằm trong nguồn đã mở. Chữ mới: "Người tham gia có thể trả lời theo điều họ nghĩ nhà nghiên cứu mong đợi." Lượt 2 xem lại.'
+- id: d5
+  cau: Nhóm đối chứng là nhóm giống nhóm can thiệp, chỉ khác ở chỗ không nhận can thiệp; mọi yếu tố trên đều tác động lên cả hai nhóm, nên chênh lệch giữa hai nhóm mới là tác dụng của can thiệp.
+  loai: dinh-nghia
+  nguon:
+  - openstax23
+  trich: The two groups are designed to be the same except for one difference— experimental manipulation. … Since experimental manipulation is the only difference between the experimental and control groups, we can be sure that any differences between the two are due to experimental manipulation rather than chance.
+  vi_tri: Mục 2.3, Designing an Experiment
+  ket_qua: dung
+  ghi_chu: Cụm "(hoặc nhận một thứ thay thế)" ứng với placebo (d9).
+- id: d6
+  cau: 'Phân nhóm ngẫu nhiên, khi đủ đông người, giúp hai nhóm ít khác nhau một cách có hệ thống về mọi mặt: tuổi, tính cách, mức căng thẳng ban đầu, và cả những yếu tố không ai nghĩ đến.'
+  loai: phat-hien
+  nguon:
+  - openstax23
+  trich: With sufficiently large samples, random assignment makes it unlikely that there are systematic differences between the groups.
+  vi_tri: Mục 2.3, Designing an Experiment
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "làm cho hai nhóm giống nhau về mọi mặt tính trung bình". Nguồn nói "ít có khả năng khác nhau một cách có hệ thống khi mẫu đủ lớn". Chữ mới theo nguồn.'
+- id: d7
+  cau: Nếu để người tham gia tự chọn nhóm, những người háo hức nhất có thể chọn dùng ứng dụng, và chính sự háo hức ấy có thể giải thích kết quả.
+  loai: phat-hien
+  nguon:
+  - openstax23
+  trich: if the groups were systematically different before the experiment began, we would not know the origin of any differences we find between the groups
+  vi_tri: Mục 2.3, Designing an Experiment
+  ket_qua: dung
+  ghi_chu: Ví dụ "háo hức" là minh họa của site cho ý của nguồn (nhóm khác nhau từ trước thì không biết nguồn gốc khác biệt).
+- id: d8
+  cau: Thí nghiệm ngẫu nhiên có đối chứng là cách mạnh nhất để kết luận nhân quả.
+  loai: phat-hien
+  nguon:
+  - openstax22
+  trich: the only way a researcher can claim that the relationship between the variables is cause and effect is to perform an experiment.
+  vi_tri: Mục 2.2, Correlational research
+  ket_qua: dung
+  ghi_chu: OpenStax nói "thí nghiệm" là cách duy nhất; "ngẫu nhiên có đối chứng" thêm từ d5, d6.
+- id: d9
+  cau: Giả dược (placebo) là một can thiệp trông giống thật nhưng không có thành phần được cho là có tác dụng, như viên thuốc đường hay một ứng dụng "nghe nhạc thư giãn" thay cho ứng dụng thiền.
+  loai: dinh-nghia
+  nguon:
+  - openstax23
+  trich: the control group receives a placebo (in this case a sugar pill). Now everyone gets a pill … Any differences in mood between the experimental and control groups can now be attributed to the drug itself rather than to experimenter bias or participant expectations
+  vi_tri: Mục 2.3, Experimenter bias and the placebo effect
+  ket_qua: dung
+  ghi_chu: Ví dụ ứng dụng nghe nhạc là minh họa của site.
+- id: d10
+  cau: 'Mù đơn: người tham gia không biết mình ở nhóm nào.'
+  loai: dinh-nghia
+  nguon:
+  - openstax23
+  trich: This situation is a single-blind study, meaning that one of the groups (participants) are unaware as to which group they are in (experiment or control group) while the researcher who developed the experiment knows which participants are in each group.
+  vi_tri: Mục 2.3
+  ket_qua: dung
+- id: d11
+  cau: 'Mù đôi: cả người tham gia lẫn người đo kết quả đều không biết; điều này ngăn kỳ vọng của nhà nghiên cứu ảnh hưởng đến cách họ đo và ghi nhận.'
+  loai: dinh-nghia
+  nguon:
+  - openstax23
+  trich: In a double-blind study, both the researchers and the participants are blind to group assignments. … by doing so, we can control for both experimenter and participant expectations.
+  vi_tri: Mục 2.3
+  ket_qua: dung
+  ghi_chu: 'OpenStax nói "nhà nghiên cứu", site nói "người đo kết quả" (người chấm điểm không biết nhóm: "the people who score the tests are unaware of who was assigned", cùng mục).'
+- id: d12
+  cau: Nhiều cha mẹ tin rằng đường ảnh hưởng đến hành vi của trẻ.
+  loai: lich-su
+  nguon:
+  - wolraich1995
+  trich: The strong belief of parents may be due to expectancy and common association.
+  vi_tri: Tóm tắt (Conclusion)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nhiều cha mẹ tin rằng ăn đường làm trẻ tăng động". Tóm tắt nói "behavior or cognition" và "strong belief of parents", không nói "tăng động". Chữ mới theo tóm tắt.'
+- id: d13
+  cau: Thí nghiệm mù đôi cho trẻ ăn đường hoặc chất tạo ngọt mà người tham gia, cha mẹ và nhân viên nghiên cứu đều không biết; phân tích tổng hợp không thấy đường ảnh hưởng đến hành vi hay nhận thức của trẻ, dù chưa loại trừ được một tác dụng nhỏ hay tác dụng ở một nhóm trẻ nhất định.
+  loai: phat-hien
+  nguon:
+  - wolraich1995
+  trich: blind the subjects, parents, and research staff to the conditions … The meta-analytic synthesis of the studies to date found that sugar does not affect the behavior or cognitive performance of children. … However, a small effect of sugar or effects on subsets of children cannot be ruled out.
+  vi_tri: Tóm tắt (Study selection, Conclusion)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "không thấy đường ảnh hưởng đến hành vi hay nhận thức của trẻ" (không có vế "chưa loại trừ"). Chữ mới thêm giới hạn của tác giả; thêm nêu rõ ai bị làm mù. Chỉ đọc tóm tắt (JAMA), 16 báo cáo, 23 nghiên cứu.'
+- id: d14
+  cau: Niềm tin của người lớn, chứ không phải đường, có thể là thứ khiến họ "thấy" trẻ thay đổi.
+  loai: phat-hien
+  nguon:
+  - wolraich1995
+  trich: The strong belief of parents may be due to expectancy and common association.
+  vi_tri: Tóm tắt (Conclusion)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "khiến họ thấy trẻ hiếu động". Tóm tắt nói "may be due to expectancy and common association"; chữ mới bỏ "hiếu động".'
+- id: d15
+  cau: Một tổng quan Cochrane so sánh giả dược với không điều trị gì trong hơn 200 thử nghiệm ngẫu nhiên, ở khoảng 60 tình trạng bệnh khác nhau (Hróbjartsson và Gøtzsche, 2010).
+  loai: so-lieu
+  nguon:
+  - hrobjartsson2010
+  trich: Outcome data were available in 202 out of 234 included trials, investigating 60 clinical conditions. … We included randomised placebo trials with a no-treatment control group investigating any health problem.
+  vi_tri: Tóm tắt (Selection criteria, Main results)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "hơn 200 thử nghiệm" (thiếu "ngẫu nhiên"). 202/234 thử nghiệm có dữ liệu kết quả, 60 tình trạng. Đã thêm "ngẫu nhiên" theo tiêu chí chọn.'
+- id: d16
+  cau: Người ta hay nói giả dược có tác dụng rất mạnh.
+  loai: lich-su
+  nguon:
+  - hrobjartsson2010
+  trich: Placebo interventions are often claimed to substantially improve patient-reported and observer-reported outcomes in many clinical conditions
+  vi_tri: Tóm tắt (Background)
+  ket_qua: dung
+- id: d17
+  cau: Nhìn chung, các tác giả không thấy giả dược có tác dụng lâm sàng quan trọng.
+  loai: phat-hien
+  nguon:
+  - hrobjartsson2010
+  trich: We did not find that placebo interventions have important clinical effects in general.
+  vi_tri: Tóm tắt (Authors' conclusions)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nhìn chung, giả dược không có tác dụng lâm sàng quan trọng." Đổi thành phát biểu về điều các tác giả thấy.'
+- id: d18
+  cau: Trong một số bối cảnh, giả dược có thể ảnh hưởng đến các kết quả do người bệnh tự báo cáo, nhất là cảm giác đau và buồn nôn; ảnh hưởng lên cảm giác đau dao động từ không đáng kể đến quan trọng về lâm sàng.
+  loai: phat-hien
+  nguon:
+  - hrobjartsson2010
+  trich: in certain settings placebo interventions can influence patient-reported outcomes, especially pain and nausea … The effect on pain varied, even among trials with low risk of bias, from negligible to clinically important.
+  vi_tri: Tóm tắt (Authors' conclusions)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Có tác dụng nhỏ lên các kết quả do người bệnh tự báo cáo, như cảm giác đau và buồn nôn." Kết luận không nói "nhỏ": nói ảnh hưởng thay đổi từ không đáng kể đến quan trọng lâm sàng ở đau. Chữ mới theo kết luận.'
+- id: d19
+  cau: Các tác giả lưu ý khó tách ảnh hưởng này khỏi việc người bệnh báo cáo thiên lệch.
+  loai: phat-hien
+  nguon:
+  - hrobjartsson2010
+  trich: it is difficult to distinguish patient-reported effects of placebo from biased reporting
+  vi_tri: Tóm tắt (Authors' conclusions)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ có ngoặc: "(ví dụ muốn tỏ ra lịch sự với người điều trị)". Ví dụ này không có trong phần tóm tắt đã đọc (chưa mở được toàn văn); đã bỏ.'
+- id: d20
+  cau: Một phần mức cải thiện của "nhóm giả dược" trong các thử nghiệm thuốc có thể đến từ hồi phục tự nhiên và hồi quy về trung bình, chứ không hẳn do viên giả dược.
+  loai: phat-hien
+  nguon:
+  - benedetti2025
+  trich: the global response to a placebo, including spontaneous remission, regression to the mean, patients' and experimenters' biases
+  vi_tri: Tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Một phần đáng kể có thể đến từ hồi phục tự nhiên và hồi quy về trung bình". Nguồn không định lượng nên bỏ "đáng kể".'
+- id: d21
+  cau: Tổng quan này so giả dược với không điều trị gì, thay vì chỉ nhìn mức cải thiện của nhóm giả dược, vì phần lớn báo cáo về tác dụng giả dược dựa trên nghiên cứu không phân ngẫu nhiên vào giả dược hay không điều trị.
+  loai: phat-hien
+  nguon:
+  - hrobjartsson2010
+  trich: most reports on effects of placebos are based on studies that have not randomised patients to placebo or no treatment.
+  vi_tri: Tóm tắt (Background)
+  ket_qua: dung
+  ghi_chu: Vế "vì" là lý do tác giả nêu ở Background.
+- id: d22
+  cau: 'Nên hỏi: có nhóm đối chứng không (chỉ "trước và sau" thì nói được rất ít về tác dụng); nhóm có chia ngẫu nhiên không; ai biết ai ở nhóm nào (kết quả tự báo cáo dễ bị kỳ vọng ảnh hưởng); nhóm đối chứng nhận gì (nên giống nhóm can thiệp ở mọi mặt trừ điều đang kiểm tra).'
+  loai: loi-khuyen
+  nguon:
+  - openstax23
+  - hrobjartsson2010
+  trich: The two groups are designed to be the same except for one difference— experimental manipulation.
+  vi_tri: OpenStax 2.3; Hróbjartsson 2010 (báo cáo thiên lệch)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nếu chỉ có ''trước và sau'', kết quả gần như không nói được gì về tác dụng" và "''Không làm gì'' là đối chứng yếu; ''một hoạt động khác cũng hấp dẫn như vậy'' là đối chứng mạnh hơn." Nguồn không xếp mạnh yếu; chữ mới chỉ nêu nguyên tắc "giống nhau trừ một điều". Lượt 2 xem lại.'
+- id: d23
+  cau: 'Nhãn Vững chắc: thí nghiệm ngẫu nhiên có đối chứng là cách mạnh nhất để kiểm tra một can thiệp.'
+  loai: nhan
+  nhan: vung-chac
+  nguon:
+  - openstax22
+  - openstax23
+  - hrobjartsson2010
+  co_so:
+  - openstax22
+  - openstax23
+  - hrobjartsson2010
+  ly_do: 'Nguyên tắc phương pháp nền tảng, không phải phát hiện thực nghiệm cần tái lập: giáo trình mở nêu thí nghiệm có đối chứng và phân nhóm ngẫu nhiên là cách duy nhất để kết luận nhân quả; tổng quan Cochrane (2010) chọn thử nghiệm ngẫu nhiên có nhóm không điều trị vì phần lớn báo cáo giả dược thiếu thiết kế này. Giới hạn nêu trên trang (đạo đức, mẫu nhỏ, một lần) có nguồn (OpenStax 2.2; OSC 2015). Lượt 2 và review xem lại cách áp thước đo mục 4.'
+  ket_qua: dung
+- id: d24
+  cau: 'Giới hạn: không phải câu hỏi nào cũng làm thí nghiệm được (vì lý do đạo đức hoặc thực tế), và một thí nghiệm có mẫu nhỏ hay chỉ làm một lần vẫn có thể cho kết quả sai.'
+  loai: phat-hien
+  nguon:
+  - openstax22
+  - osc2015
+  trich: many of the questions that psychologists would like to answer cannot be pursued through experimental research because of ethical concerns. (OpenStax) / Thirty-six percent of replications had statistically significant results (OSC)
+  vi_tri: OpenStax 2.2; OSC 2015, tóm tắt
+  ket_qua: dung
+  ghi_chu: Vế "mẫu nhỏ" là suy luận; OSC cho thấy kết quả đã đăng thường không lặp lại.
+- id: d25
+  cau: 'Nhãn Khá vững: so với không điều trị, giả dược nhìn chung không có tác dụng lâm sàng quan trọng, nhưng có thể ảnh hưởng đến một số kết quả tự báo cáo như đau và buồn nôn.'
+  loai: nhan
+  nhan: kha-vung
+  nguon:
+  - hrobjartsson2010
+  co_so:
+  - hrobjartsson2010
+  ly_do: 'Một tổng quan Cochrane (2010, 202 thử nghiệm có dữ liệu, 60 tình trạng) cùng chiều với phiên bản 2001 và 2004; nhưng chỉ 16 thử nghiệm (8%) có nguy cơ sai lệch thấp, kết quả giữa các thử nghiệm không đồng nhất (ảnh hưởng lên đau từ không đáng kể đến quan trọng) và các tác giả nói khó tách khỏi báo cáo thiên lệch. Đúng điều kiện "Khá vững" (cùng chiều nhưng còn giới hạn) chứ chưa "Vững chắc". Chưa tìm tổng quan hay tái lập mới hơn: chỗ này lượt 2 và review cần xem lại ("Tính đến 10/2026").'
+  ket_qua: dung
+- id: d26
+  cau: 'Chữ ở khung Khá vững: tổng quan Cochrane năm 2010 ghi nhận chỉ 8% số thử nghiệm có nguy cơ sai lệch thấp, và khó tách ảnh hưởng thật khỏi báo cáo thiên lệch.'
+  loai: so-lieu
+  nguon:
+  - hrobjartsson2010
+  trich: We regarded the risk of bias as low in only 16 trials (8%)
+  vi_tri: Tóm tắt (Main results)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Câu hỏi về giả dược trong những bối cảnh cụ thể (ví dụ giả dược ''mở'', khi người bệnh biết mình nhận giả dược) vẫn đang được nghiên cứu." Không có nguồn đã mở cho giả dược "mở"; thay bằng giới hạn của chính tổng quan.'
+- id: e1
+  cau: 'Gợi ý thiết kế lại: tuyển người tham gia rồi chia ngẫu nhiên thành hai nhóm.'
+  loai: loi-khuyen
+  nguon:
+  - openstax23
+  trich: With random assignment, all participants have an equal chance of being assigned to either group.
+  vi_tri: Mục 2.3
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: ví dụ ứng dụng thiền là giả định của site.'
+- id: e2
+  cau: Nhóm đối chứng dùng một ứng dụng khác trông hấp dẫn tương tự nhưng không có phần thiền, để kỳ vọng ở hai nhóm gần giống nhau.
+  loai: loi-khuyen
+  nguon:
+  - openstax23
+  trich: To make sure that any effects on mood are due to the drug and not due to expectations, the control group receives a placebo
+  vi_tri: Mục 2.3
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: ví dụ ứng dụng thiền là giả định của site.'
+- id: e3
+  cau: Người phân tích dữ liệu không biết nhóm nào là nhóm nào.
+  loai: loi-khuyen
+  nguon:
+  - openstax23
+  trich: Ideally, the people who score the tests are unaware of who was assigned to the experimental or control group, in order to control for experimenter bias.
+  vi_tri: Mục 2.3
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: ví dụ ứng dụng thiền là giả định của site.'
+- id: e4
+  cau: Đăng ký trước kế hoạch (đo gì, khi nào, phân tích ra sao) để tách điều được dự đoán trước khỏi điều chỉ được giải thích sau khi đã thấy dữ liệu.
+  loai: loi-khuyen
+  nguon:
+  - nosek2018
+  trich: An effective solution is to define the research questions and analysis plan before observing the research outcomes-a process called preregistration. Preregistration distinguishes analyses and outcomes that result from predictions from those that result from postdictions.
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "để không thể chọn kết quả đẹp nhất sau khi đã thấy dữ liệu". Nosek 2018 nói đăng ký trước tách dự đoán khỏi giải thích sau, không nói "không thể chọn"; chữ mới theo nguồn (như đã sửa ở hồ sơ bat-dau/doc-nhan-chac-chan n10).'
+- id: e5
+  cau: Báo cáo chênh lệch giữa hai nhóm, không chỉ mức thay đổi của nhóm dùng ứng dụng.
+  loai: loi-khuyen
+  nguon:
+  - openstax23
+  trich: Any differences in mood between the experimental and control groups can now be attributed to the drug itself rather than to experimenter bias or participant expectations
+  vi_tri: Mục 2.3
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: ví dụ ứng dụng thiền là giả định của site.'
+- id: q1
+  cau: '200 người dùng một ứng dụng và căng thẳng giảm 30% sau 8 tuần: chưa thể kết luận ứng dụng có tác dụng vì không có nhóm đối chứng; hồi phục tự nhiên, hồi quy về trung bình và kỳ vọng đều có thể làm điểm giảm.'
+  loai: phat-hien
+  nguon:
+  - benedetti2025
+  - barnett2005
+  - openstax23
+  trich: the global response to a placebo, including spontaneous remission, regression to the mean, patients' and experimenters' biases … psychological factors
+  vi_tri: Benedetti 2025, tóm tắt
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: tin ứng dụng thiền là giả định (đã ghi trên trang). Phương án nhiễu "200 người quá ít" và "8 tuần quá ngắn" không phải nhận định của trang.'
+- id: q2
+  cau: Phân nhóm ngẫu nhiên không làm từng cặp người giống nhau, nhưng với đủ người, các khác biệt sẽ cân bằng giữa hai nhóm.
+  loai: phat-hien
+  nguon:
+  - openstax23
+  trich: With sufficiently large samples, random assignment makes it unlikely that there are systematic differences between the groups.
+  vi_tri: Mục 2.3
+  ket_qua: dung
+- id: q3
+  cau: Mù đôi ngăn kỳ vọng của cả hai phía (người tham gia và người đo) ảnh hưởng đến kết quả.
+  loai: dinh-nghia
+  nguon:
+  - openstax23
+  trich: In a double-blind study, both the researchers and the participants are blind to group assignments.
+  vi_tri: Mục 2.3
+  ket_qua: dung
+- id: q4
+  cau: Theo tổng quan Cochrane 2010, so với không điều trị, giả dược nhìn chung không có tác dụng lâm sàng quan trọng, nhưng trong một số bối cảnh có thể ảnh hưởng đến kết quả tự báo cáo như cảm giác đau; hai câu tuyệt đối ("mạnh như thuốc thật", "hoàn toàn không có tác dụng") đều quá mức; các tác giả còn thận trọng về báo cáo thiên lệch.
+  loai: phat-hien
+  nguon:
+  - hrobjartsson2010
+  trich: We did not find that placebo interventions have important clinical effects in general. However, in certain settings placebo interventions can influence patient-reported outcomes, especially pain and nausea
+  vi_tri: Tóm tắt (Authors' conclusions)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (đáp án đúng): "…nhưng có thể có tác dụng nhỏ lên những kết quả tự báo cáo như cảm giác đau." Bỏ "nhỏ" như d18; giải thích "Bằng chứng cho một bức tranh ở giữa" giữ nguyên.'
+doi_chu:
+- cu: Hồi quy về trung bình. Người ta thường tìm đến một giải pháp đúng lúc đang căng thẳng nhất. Từ đỉnh điểm, lần đo sau gần như chắc chắn sẽ thấp hơn
+  moi: Hồi quy về trung bình (Barnett và cộng sự, 2005). Nếu người ta tham gia đúng lúc điểm đang cao bất thường, lần đo sau thường thấp hơn
+  ly_do: d2.
+- cu: Phân nhóm ngẫu nhiên làm cho hai nhóm giống nhau về mọi mặt tính trung bình
+  moi: Phân nhóm ngẫu nhiên giúp, khi đủ đông người, hai nhóm ít khác nhau một cách có hệ thống về mọi mặt
+  ly_do: d6.
+- cu: nhiều cha mẹ tin rằng ăn đường làm trẻ tăng động … không thấy đường ảnh hưởng đến hành vi hay nhận thức của trẻ … khiến họ "thấy" trẻ hiếu động
+  moi: nhiều cha mẹ tin rằng đường ảnh hưởng đến hành vi của trẻ … dù chưa loại trừ được một tác dụng nhỏ hay tác dụng ở một nhóm trẻ nhất định … "thấy" trẻ thay đổi
+  ly_do: d12–d14.
+- cu: trong hơn 200 thử nghiệm
+  moi: trong hơn 200 thử nghiệm ngẫu nhiên
+  ly_do: d15.
+- cu: Có tác dụng nhỏ lên các kết quả do người bệnh tự báo cáo, như cảm giác đau và buồn nôn.
+  moi: Trong một số bối cảnh, giả dược có thể ảnh hưởng đến các kết quả do người bệnh tự báo cáo, nhất là cảm giác đau và buồn nôn. Ảnh hưởng lên cảm giác đau dao động từ không đáng kể đến quan trọng về lâm sàng.
+  ly_do: d18.
+- cu: (ví dụ muốn tỏ ra lịch sự với người điều trị)
+  moi: (bỏ)
+  ly_do: 'd19: không có trong phần đã đọc.'
+- cu: Muốn làm hài lòng. Người tham gia biết nhà nghiên cứu mong đợi điều gì.
+  moi: Muốn làm hài lòng. Người tham gia có thể trả lời theo điều họ nghĩ nhà nghiên cứu mong đợi.
+  ly_do: d4.
+- cu: Một phần đáng kể có thể đến từ hồi phục tự nhiên
+  moi: Một phần có thể đến từ hồi phục tự nhiên
+  ly_do: d20.
+- cu: '"Không làm gì" là đối chứng yếu; "một hoạt động khác cũng hấp dẫn như vậy" là đối chứng mạnh hơn.'
+  moi: Nhóm đối chứng nên giống nhóm can thiệp ở mọi mặt, trừ điều đang được kiểm tra. "Không làm gì" khác với "một hoạt động trông hấp dẫn tương tự".
+  ly_do: d22.
+- cu: 'Khung Khá vững: "giả dược nhìn chung có tác dụng nhỏ, chủ yếu lên các kết quả tự báo cáo … giả dược ''mở'' … vẫn đang được nghiên cứu"'
+  moi: '"giả dược nhìn chung không có tác dụng lâm sàng quan trọng, nhưng có thể ảnh hưởng đến một số kết quả tự báo cáo như đau và buồn nôn … chỉ 8% số thử nghiệm có nguy cơ sai lệch thấp"'
+  ly_do: d18, d26.
+- cu: để không thể chọn kết quả đẹp nhất sau khi đã thấy dữ liệu
+  moi: để tách điều được dự đoán trước khỏi điều chỉ được giải thích sau khi đã thấy dữ liệu (Nosek và cộng sự, 2018)
+  ly_do: e4.
+- cu: 'Quiz câu 4, đáp án đúng: "…có thể có tác dụng nhỏ lên những kết quả tự báo cáo"'
+  moi: '"…trong một số bối cảnh có thể ảnh hưởng đến những kết quả tự báo cáo"'
+  ly_do: q4.
+- cu: (không có)
+  moi: 'Thêm ba nguồn vào mục Nguồn: Barnett và cộng sự (2005), Benedetti (2025), Nosek và cộng sự (2018).'
+  ly_do: Theo các câu đã gắn nguồn trong thân bài.

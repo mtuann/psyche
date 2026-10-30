@@ -10,9 +10,9 @@ in_duoc: true
 
 ## Một tin tức
 
-> **"Hơn một nửa các phát hiện tâm lý nổi tiếng không vượt qua được bài kiểm tra lặp lại"** — tin tức kiểu này phủ sóng báo chí khoa học vào tháng 8 năm 2015.
+> **"Hơn một nửa các nghiên cứu tâm lý được làm lại không cho kết quả có ý nghĩa thống kê như bản gốc"** — một tít giả định, do site tự viết, dựa trên một dự án thật.
 
-Tin tức dựa trên một dự án thật, quy mô chưa từng có: **Open Science Collaboration** — hơn 270 nhà nghiên cứu — làm lại **100 nghiên cứu tâm lý** đã công bố trên ba tạp chí uy tín. Mỗi nghiên cứu được một nhóm độc lập thực hiện lại với cỡ mẫu lớn và thiết kế trung thực với bản gốc ([Open Science Collaboration, 2015](https://doi.org/10.1126/science.aac4716)).
+Dự án ấy là **Open Science Collaboration**: 270 tác giả cùng làm lại **100 nghiên cứu tâm lý** đã công bố trong năm 2008 trên ba tạp chí, và công bố kết quả trên tạp chí *Science* tháng 8 năm 2015. Mỗi nghiên cứu được một nhóm làm lại, dùng tài liệu gốc khi có và thiết kế được tính để có sức mạnh thống kê cao, nhằm giữ sát thiết kế của bản gốc ([Open Science Collaboration, 2015](https://doi.org/10.1126/science.aac4716)).
 
 Kết quả gây chấn động:
 
@@ -22,41 +22,41 @@ Kết quả gây chấn động:
 ::hinh{ten="osc-replication"}
 
 
-Nghe như một bản cáo trạng: phải chăng tâm lý học toàn là "sai"? Nhưng chính các tác giả lại viết điều ngược lại: đây không phải thất bại của tâm lý học, mà là **cách khoa học tự sửa mình** — tìm ra vấn đề bằng bằng chứng, rồi sửa bằng phương pháp tốt hơn.
+Nghe như một bản cáo trạng: phải chăng tâm lý học toàn là "sai"? Nhưng chính các tác giả viết rằng không nên đọc kết quả này như một thất bại của tâm lý học: dự án cho thấy khoa học **đang hoạt động như nó nên làm**, và việc tích lũy bằng chứng là cách cộng đồng khoa học tự sửa mình.
 
 ## Khái niệm
 
 ### Tái lập là gì
 
-**Tái lập** (*replication*) là làm lại một nghiên cứu với người tham gia mới, theo đúng thiết kế cũ, để xem hiệu ứng có xuất hiện trở lại không. Một phát hiện chỉ được coi là vững chắc khi nó **sống sót qua nhiều lần tái lập độc lập** — không phải khi nó xuất hiện một lần thật ấn tượng trên báo.
+**Tái lập** (*replication*) là làm lại một nghiên cứu với người tham gia mới, theo đúng thiết kế cũ, để xem hiệu ứng có xuất hiện trở lại không. Theo chính dự án năm 2015, một nghiên cứu đơn lẻ hầu như không bao giờ cho kết luận dứt khoát về một hiệu ứng: bằng chứng đáng tin hơn khi **nhiều lần làm lại độc lập cùng cho thấy hiệu ứng**, chứ không phải khi nó xuất hiện một lần thật ấn tượng trên báo.
 
-Nhưng "không tái lập được" không đơn giản có nghĩa là "phát hiện đó sai". Trong dự án năm 2015, các nhóm dùng nhiều thước đo khác nhau: 36% đạt ý nghĩa thống kê, 39% được đánh giá chủ quan là "đã tái lập", và 47% hiệu ứng gốc nằm trong khoảng tin cậy của hiệu ứng tái lập. Nghĩa là có một vùng xám: nhiều phát hiện không biến mất hoàn toàn, mà chỉ **nhỏ hơn và mong manh hơn** những gì bài báo gốc tuyên bố.
+Nhưng "không tái lập được" không đơn giản có nghĩa là "phát hiện đó sai". Trong dự án năm 2015, các nhóm dùng nhiều thước đo khác nhau: 36% đạt ý nghĩa thống kê, 39% được đánh giá chủ quan là "đã tái lập", và 47% hiệu ứng gốc nằm trong khoảng tin cậy của hiệu ứng tái lập. Nghĩa là có một vùng xám: nhiều kết quả làm lại cho **hiệu ứng nhỏ hơn và bằng chứng yếu hơn** những gì bài báo gốc tuyên bố, thay vì biến mất hoàn toàn.
 
 ### Vì sao con số lại chênh lệch đến vậy
 
-Có ba nguyên nhân chính, và cả ba đều là "lỗi hệ thống" chứ không phải lỗi của một nhà nghiên cứu cụ thể:
+Open Science Collaboration và nhóm của Nosek (2022) nêu ba yếu tố có thể góp phần. Cả ba thuộc về cách làm và động cơ chung của cộng đồng khoa học, không phải lỗi của một nhà nghiên cứu cụ thể:
 
-**1. Cỡ mẫu nhỏ.** Nhiều nghiên cứu tâm lý dùng vài chục người tham gia. Với mẫu nhỏ, một chút may rủi cũng đủ tạo ra hiệu ứng "đẹp" — giống như tung đồng xu 10 lần mà được 8 lần ngửa, rồi kết luận đồng xu bị lệch. Mẫu càng nhỏ, hiệu ứng "có ý nghĩa thống kê" càng có khả năng bị thổi phồng. Xem thêm [Hiệu ứng lớn hay nhỏ?](/psyche/bang-chung/do-lon-hieu-ung/)
+**1. Sức mạnh thống kê thấp (mẫu nhỏ).** Với mẫu nhỏ, một chút may rủi cũng đủ tạo ra hiệu ứng "đẹp" — giống như tung đồng xu 10 lần mà được 8 lần ngửa, rồi kết luận đồng xu bị lệch. Khi nghiên cứu có sức mạnh thấp lại đi cùng việc ưu tiên đăng kết quả dương tính, độ lớn hiệu ứng trong các bài đã đăng sẽ bị ước lượng cao một cách có hệ thống. Xem thêm [Hiệu ứng lớn hay nhỏ?](/psyche/bang-chung/do-lon-hieu-ung/)
 
-**2. P-hacking.** Đây là cách nói nửa đùa nửa thật về việc "đào" dữ liệu cho đến khi ra kết quả: thử biến này không được thì thử biến khác, loại vài điểm số liệu "lạ", đổi cách phân tích... cho đến khi chỉ số p nhỏ hơn 0,05. Làm đủ nhiều lần thì kiểu gì cũng có lần "trúng" — giống như bắn 100 mũi tên vào tường rồi vẽ hồng tâm quanh chỗ tên rơi nhiều nhất.
+**2. P-hacking.** Đây là cách nói nửa đùa nửa thật về việc "đào" dữ liệu cho đến khi ra kết quả: thử biến này không được thì thử biến khác, loại vài điểm số liệu "lạ", đổi cách phân tích... cho đến khi chỉ số p nhỏ hơn 0,05. Càng làm nhiều lần, càng dễ gặp kết quả "đẹp" do may rủi — giống như bắn 100 mũi tên vào tường rồi vẽ hồng tâm quanh chỗ tên rơi nhiều nhất.
 
-**3. Thiên lệch xuất bản (publication bias).** Các tạp chí thích đăng kết quả "đẹp": hiệu ứng mới, bất ngờ, có ý nghĩa thống kê. Kết quả "không có gì xảy ra" thì bị từ chối hoặc chính nhà nghiên cứu cũng ngại gửi đăng — hiện tượng gọi là **ngăn kéo hồ sơ** (*file drawer*): những nghiên cứu âm tính nằm im trong ngăn kéo, không ai biết đến. Thế là bức tranh công bố bị lệch hẳn về một phía: chỉ thấy thành công, không thấy thất bại.
+**3. Thiên lệch xuất bản (publication bias).** Nhà nghiên cứu có xu hướng công bố kết quả dương tính nhiều hơn kết quả âm tính, và các động cơ trong khoa học ưu tiên điều mới hơn việc kiểm tra lại. Kết quả "không có gì xảy ra" vì thế dễ nằm im trong **ngăn kéo hồ sơ** (*file drawer*), không ai biết đến. Bức tranh công bố bị lệch về một phía: thấy nhiều kết quả "thành công" hơn thực tế, và độ lớn hiệu ứng bị thổi phồng.
 
-| Nguyên nhân | Nói một cách đời thường | Hậu quả |
+| Yếu tố | Nói một cách đời thường | Hậu quả có thể |
 |---|---|---|
-| Cỡ mẫu nhỏ | Tung đồng xu 10 lần, được 8 ngửa | Hiệu ứng may rủi bị tưởng là thật |
-| P-hacking | Bắn tên rồi vẽ hồng tâm | Kết quả "đẹp" nhờ đào bới dữ liệu |
-| Thiên lệch xuất bản | Báo chỉ đưa tin máy bay rơi | Chỉ thấy phát hiện "thành công" |
+| Sức mạnh thống kê thấp | Tung đồng xu 10 lần, được 8 ngửa | Hiệu ứng may rủi bị tưởng là thật |
+| P-hacking | Bắn tên rồi vẽ hồng tâm | Kết quả "đẹp" nhờ chọn lọc cách phân tích |
+| Thiên lệch xuất bản | Chỉ những kết quả "đẹp" được đăng | Chỉ thấy phát hiện "thành công" |
 
 ### Lối ra: đăng ký trước và Registered Reports
 
 Nếu vấn đề là "quyết định được đưa ra sau khi đã thấy dữ liệu", thì giải pháp là **khóa các quyết định lại trước khi thu thập dữ liệu**:
 
-**Đăng ký trước (preregistration)** nghĩa là nhà nghiên cứu công khai toàn bộ kế hoạch — giả thuyết, cách tuyển người tham gia, cách phân tích — *trước* khi bắt đầu. Kế hoạch được lưu ở một nơi công cộng, có đóng dấu thời gian. Sau này ai cũng có thể đối chiếu: "anh làm đúng như anh đã hứa không?" Cách này khiến p-hacking gần như không thể giấu được.
+**Đăng ký trước (preregistration)** nghĩa là nhà nghiên cứu xác định câu hỏi nghiên cứu và kế hoạch phân tích *trước* khi thấy kết quả, và công khai kế hoạch ấy. Nhờ đó người đọc có thể phân biệt phân tích đã dự định từ trước với phân tích thêm vào sau, và biết mức tin cậy nên dành cho từng loại.
 
-**Registered Reports** đi xa hơn một bước. Đây là một định dạng bài báo trong đó tạp chí **phản biện kế hoạch nghiên cứu trước khi dữ liệu được thu thập**. Nếu kế hoạch đạt chuẩn, tạp chí cam kết đăng bài *bất kể kết quả cuối cùng đẹp hay xấu*. Nghĩa là một nghiên cứu được thiết kế tốt nhưng cho kết quả "không có gì xảy ra" vẫn được đăng — trực tiếp chữa bệnh thiên lệch xuất bản.
+**Registered Reports** đi xa hơn một bước. Đây là một mô hình xuất bản trong đó tạp chí **phản biện kế hoạch nghiên cứu trước khi có kết quả** và nhận bài "về nguyên tắc" dựa trên tầm quan trọng của câu hỏi và chất lượng phương pháp. Nhờ vậy một nghiên cứu được thiết kế tốt nhưng cho kết quả "không có gì xảy ra" vẫn được đăng: tỉ lệ kết quả không có hiệu ứng được báo cáo ở Registered Reports cao hơn nhiều so với bài thông thường.
 
-Cả hai đều không phải "thuốc tiên": một kế hoạch đăng ký trước vẫn có thể dở, và không phải câu hỏi nào cũng hợp với định dạng Registered Reports. Nhưng chúng biến những thủ thuật trước đây diễn ra trong bóng tối thành thứ phải công khai — và công khai là kẻ thù của gian lận phương pháp.
+Cả hai không phải "thuốc tiên". Theo Nosek và cộng sự (2022), đến thời điểm bài tổng quan ấy viết, chưa có nghiên cứu nào cho biết kết quả từ Registered Reports có tái lập tốt hơn trung bình hay không.
 
 ### Đừng đọc sai thông điệp
 
@@ -64,23 +64,35 @@ Khủng hoảng tái lập thường bị hiểu thành "tâm lý học toàn sa
 
 - **Tái lập thất bại không có nghĩa phát hiện gốc là bịa.** Có thể hiệu ứng thật nhưng nhỏ hơn, hoặc chỉ đúng trong một số điều kiện nhất định.
 - **Tái lập thành công không có nghĩa phát hiện là chân lý vĩnh viễn.** Nó chỉ có nghĩa là, với cách làm đó, hiệu ứng xuất hiện trở lại.
-- Quan trọng nhất: chính việc phát hiện ra vấn đề — bằng một dự án công khai, minh bạch, được đăng trên *Science* — là **bằng chứng khoa học đang hoạt động đúng**: tự kiểm tra, tự sửa.
+- Quan trọng nhất: theo chính các tác giả, dự án này cho thấy khoa học **đang hoạt động như nó nên làm**: tích lũy bằng chứng là cách cộng đồng khoa học tự kiểm tra và tự sửa.
 
 ## Cách nhận ra
 
 Khi đọc một tin "phát hiện gây sốc", hãy chạy qua danh sách kiểm tra này:
 
-| Dấu hiệu cảnh báo | Dấu hiệu đáng tin |
+| Dấu hiệu cảnh báo | Dấu hiệu đáng tin hơn |
 |---|---|
 | Chỉ **một** nghiên cứu duy nhất | Đã được **nhiều nhóm độc lập** tái lập |
 | Cỡ mẫu nhỏ (vài chục người) | Cỡ mẫu lớn, được tính toán trước |
-| Kết quả quá đẹp, quá gọn | Kết quả có cả điểm mạnh lẫn hạn chế được thừa nhận |
+| Kết quả rất bất ngờ | Kết quả bất ngờ nhưng đã có nghiên cứu khác lặp lại |
 | Không thấy kế hoạch đăng ký trước | Có preregistration hoặc là Registered Report |
 | Tin tức dùng từ "chứng minh", "khẳng định" | Tin tức dùng từ "gợi ý", "cần thêm nghiên cứu" |
 
-Và một câu hỏi luôn hữu ích: **"Nếu phát hiện này sai, ai sẽ phát hiện ra — và họ có được đăng bài không?"** Nếu câu trả lời là "không ai" hoặc "không được đăng", thì hệ thống đó đang có vấn đề, dù phát hiện cụ thể có thể vẫn đúng.
+Và một câu hỏi luôn hữu ích: **"Nếu phát hiện này sai, ai sẽ kiểm tra lại — và việc kiểm tra lại có được ghi nhận, đăng bài không?"** Open Science Collaboration chỉ ra rằng động cơ của nhà khoa học thường ưu tiên điều mới hơn việc kiểm tra lại.
 
-## Thử một lần
+## Mức độ chắc chắn
+
+:::vung-chac[hiệu ứng được công bố trong tâm lý học thường lớn hơn khi được làm lại]
+Ba dự án tái lập lớn, có đăng ký trước, cùng cho thấy hiệu ứng làm lại nhỏ hơn: Open Science Collaboration (2015) khoảng một nửa, Camerer và cộng sự (2018) khoảng 50%, Many Labs 2 (2018) trung vị d = 0,60 giảm còn 0,15. Điều này đúng ở nhiều nhóm người và nhiều nước.
+:::
+
+:::kha-vung[cỡ mẫu nhỏ, p-hacking và thiên lệch xuất bản là những nguyên nhân có khả năng góp phần]
+Bằng chứng chủ yếu là tương quan và lập luận: Open Science Collaboration gọi các thiên lệch này là "giải thích hợp lý", và mức đóng góp của từng yếu tố chưa được đo riêng.
+:::
+
+## Bài tập
+
+### Thử một lần { #thu-mot-lan }
 
 *Tình huống dưới đây là **giả định**, do site tự viết để luyện tập.*
 
@@ -90,14 +102,34 @@ Bạn nên tin phát hiện này đến mức nào? Liệt kê ít nhất ba đi
 
 :::thu-gon[Xem đáp án]
 Nên **rất thận trọng**, gần như chưa tin gì cả. Ba điều (hoặc tương đương) cần có:
-1. **Tái lập độc lập:** ít nhất một nhóm khác, không liên quan đến nhóm gốc, làm lại và ra kết quả tương tự. Một nghiên cứu duy nhất, mẫu nhỏ (30 người) rất dễ cho hiệu ứng "đẹp" do may rủi — đúng bài học của dự án năm 2015.
-2. **Cỡ mẫu lớn và đăng ký trước:** nghiên cứu tiếp theo cần tính cỡ mẫu đủ lớn từ trước và công khai kế hoạch phân tích, để loại trừ p-hacking.
-3. **Hiệu ứng thực tế:** "tăng 15 điểm IQ sau 10 phút nghe nhạc" là con số phi thường — càng phi thường càng cần bằng chứng phi thường. Hãy hỏi: hiệu ứng kéo dài bao lâu? Đo bằng bài kiểm tra IQ chuẩn nào? Nhóm đối chứng nghe gì?
+1. **Tái lập độc lập:** ít nhất một nhóm khác, không liên quan đến nhóm gốc, làm lại và ra kết quả tương tự. Một nghiên cứu duy nhất, mẫu nhỏ (30 người) dễ cho hiệu ứng được ước lượng quá cao — đúng bài học của dự án năm 2015.
+2. **Cỡ mẫu lớn và đăng ký trước:** nghiên cứu tiếp theo cần tính cỡ mẫu đủ lớn từ trước và công khai kế hoạch phân tích, để hạn chế p-hacking.
+3. **Hiệu ứng thực tế:** "tăng 15 điểm IQ sau 10 phút nghe nhạc" là con số rất bất ngờ; theo Open Science Collaboration, hiệu ứng gốc càng bất ngờ thì càng có thể khó tái lập. Hãy hỏi: hiệu ứng kéo dài bao lâu? Đo bằng bài kiểm tra IQ chuẩn nào? Nhóm đối chứng nghe gì?
 
 Nguyên tắc chung: **một nghiên cứu duy nhất, dù kết quả có "gây sốc" đến đâu, cũng chỉ là điểm khởi đầu của bằng chứng — không phải kết luận.**
 :::
 
-## Tự suy ngẫm
+### Kiểm tra nhanh
+
+```quiz
+? Khi Open Science Collaboration làm lại 100 nghiên cứu tâm lý, kết quả nào đúng?
+- Cả 100 nghiên cứu gốc bị chứng minh là sai.
++ Khoảng 36% bản làm lại có hiệu ứng có ý nghĩa thống kê cùng hướng, và hiệu ứng trung bình còn khoảng một nửa so với bản gốc.
+- Khoảng 97% bản làm lại thành công.
+> Trong 100 nghiên cứu gốc, 97 nghiên cứu có kết quả có ý nghĩa thống kê. Ở bản làm lại, con số này là 36%.
+? Một lần làm lại không thấy hiệu ứng. Kết luận nào hợp lý nhất?
+- Phát hiện gốc chắc chắn là bịa.
++ Chưa thể kết luận phát hiện gốc là sai; cần xem thiết kế, độ lớn hiệu ứng và các lần làm lại khác.
+- Nhóm làm lại chắc chắn làm sai.
+> Open Science Collaboration viết rằng làm lại không thành công chưa chắc nghĩa là bằng chứng gốc là dương tính giả, vì sai khác nhỏ về mẫu, bối cảnh hay quy trình cũng có thể đổi hiệu ứng.
+? Registered Reports khác một bài báo thông thường ở điểm nào?
+- Chúng chỉ đăng những kết quả có ý nghĩa thống kê.
++ Tạp chí phản biện kế hoạch nghiên cứu và nhận bài về nguyên tắc từ trước khi có kết quả.
+- Chúng không cần phản biện.
+> Nhận bài về nguyên tắc dựa trên câu hỏi và phương pháp, trước khi biết kết quả, nên kết quả không có hiệu ứng vẫn có thể được đăng.
+```
+
+## Thử suy ngẫm { #tu-suy-ngam }
 
 1. Dự án năm 2015 cho thấy hiệu ứng tái lập chỉ còn khoảng một nửa so với bản gốc. Theo bạn, điều này nói gì về cách báo chí đưa tin các "phát hiện mới" — và bạn sẽ đọc tin khoa học khác đi như thế nào?
 2. Giả sử bạn là tổng biên tập một tạp chí tâm lý. Bạn sẽ làm gì để khuyến khích đăng các nghiên cứu cho kết quả "không có gì xảy ra"? Vì sao việc này khó?
@@ -106,4 +138,7 @@ Nguyên tắc chung: **một nghiên cứu duy nhất, dù kết quả có "gây
 
 ## Nguồn
 
+- Camerer, C. F., et al. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. *Nature Human Behaviour*, 2, 637–644. <https://doi.org/10.1038/s41562-018-0399-z>
+- Klein, R. A., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. *Advances in Methods and Practices in Psychological Science*, 1(4), 443–490. <https://doi.org/10.1177/2515245918810225>
+- Nosek, B. A., et al. (2022). Replicability, robustness, and reproducibility in psychological science. *Annual Review of Psychology*, 73, 719–748. <https://doi.org/10.1146/annurev-psych-020821-114157>
 - Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science*, 349(6251), aac4716. <https://doi.org/10.1126/science.aac4716>
