@@ -33,6 +33,8 @@ const BO = [
 	['Milgram', 'thi-nghiem/milgram/'], ['Asch', 'thi-nghiem/asch/'], ['Darley Latané', 'thi-nghiem/darley-latane/'],
 	['keo deo', 'thi-nghiem/keo-deo/'], ['khi dot vo hinh', 'thi-nghiem/khi-dot-vo-hinh/'], ['Pavlov', 'thi-nghiem/pavlov/'],
 	['Stroop', 'trai-nghiem/stroop/'], ['bai toan Linda', 'trai-nghiem/linda/'],
+	// ba trang thử của D1.8: có chữ "đ" gõ thành "d"
+	['bai toan duong thang', 'thi-nghiem/asch/'], ['duong cong quen Ebbinghaus', 'kham-pha/tri-nho/vi-sao-ta-quen/'],
 	['tuong quan nhan qua', 'bang-chung/tuong-quan-nhan-qua/'], ['khung hoang tai lap', 'bang-chung/khung-hoang-tai-lap/'],
 	['phan tich tong hop', 'bang-chung/phan-tich-tong-hop/'],
 ];
@@ -65,6 +67,7 @@ function boPhanBoQua(html) {
 /**
  * Trang mà câu tìm TU chỉ khớp được qua chữ "đ": sau khi bỏ dấu (như Pagefind làm), phần Pagefind lập chỉ mục (thẻ main
  * có data-pagefind-body của Starlight, trừ phần data-pagefind-ignore) có từ "đang" mà không có từ "dang" (dạng, dáng…).
+ * Trang không có data-pagefind-body (pagefind: false) không vào chỉ mục nên không tính.
  * Không có bản bọc pagefind.js thì gõ TU không ra các trang này.
  */
 const chiCoD = () =>
@@ -73,8 +76,11 @@ const chiCoD = () =>
 		.filter((f) => f.endsWith('index.html'))
 		.filter((f) => {
 			const html = fs.readFileSync(path.join(DIST, f), 'utf8');
+			// trang không vào chỉ mục (pagefind: false ở frontmatter, như search: exclude của site cũ) thì bỏ qua
+			if (!html.includes('data-pagefind-body')) return false;
 			const tu = new Set(
-				boPhanBoQua(html.slice(html.indexOf('<main'), html.indexOf('</main>')))
+				// chân bài của Starlight (nút "Trước", "Tiếp" mang tên trang khác) không phải chữ của trang
+				boPhanBoQua(html.slice(html.indexOf('<main'), html.indexOf('</main>')).replace(/<footer\b[\s\S]*<\/footer>/, ''))
 					.replace(/<[^>]+>/g, ' ')
 					.toLowerCase()
 					.normalize('NFD')

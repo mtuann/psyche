@@ -107,11 +107,11 @@
 .pz-thu-gon > summary::before {
 	content: '';
 	flex: none;
-	width: 0.45rem;
-	height: 0.45rem;
-	margin-inline: 0.1rem 0.2rem;
-	border-block-start: 2px solid currentColor;
-	border-inline-end: 2px solid currentColor;
+	width: 0.55rem;
+	height: 0.55rem;
+	margin-inline: 0.15rem 0.25rem;
+	border-top: 2.5px solid currentColor;
+	border-right: 2.5px solid currentColor;
 	transform: rotate(45deg);
 	transition: transform 0.15s;
 }
@@ -362,9 +362,24 @@
 	border-radius: 0.75rem;
 	background: var(--pz-card);
 }
-/* Khối chưa dựng (chờ script): giữ chỗ để bố cục không xô khi công cụ hiện ra */
+/* Khối chưa dựng (chờ script): giữ chỗ để bố cục không xô khi công cụ hiện ra (Lighthouse đo CLS) */
 .pz-cong-cu:empty {
 	min-height: 14rem;
+}
+/* Stroop: màn hình đầu (chọn phiên bản, ô màu, nút Tiếp tục) cao khoảng 663 px ở 360 px, 623 px ở 412 px, 514 px từ 768 px
+   (đo ở D1.8, font Be Vietnam Pro 16 px) */
+.pz-stroop:empty {
+	min-height: 41.5rem;
+}
+@media (min-width: 26rem) {
+	.pz-stroop:empty {
+		min-height: 39rem;
+	}
+}
+@media (min-width: 40rem) {
+	.pz-stroop:empty {
+		min-height: 32rem;
+	}
 }
 .pz-cong-cu :is(p, li) {
 	max-width: none;
