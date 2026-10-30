@@ -130,8 +130,11 @@ test('site cũ: mọi trang chuyển được (không lỗi), không còn cú ph
 });
 
 /** Hình đã sửa có chủ ý sau khi chép (lô của trang ghi doi_chu ở hồ sơ, kèm lý do và nguồn): thêm tên vào đây. */
-// hình đã sửa có chủ ý so với trang cũ (doi_chu ở hồ sơ trang): milgram-obedience (D3-L1: bài 1963 không có "đòi được thả"; 79% là của Thí nghiệm 5)
-const HINH_DA_SUA = new Set(["milgram-obedience"]);
+// hình đã sửa có chủ ý so với trang cũ (doi_chu ở hồ sơ trang): milgram-obedience (D3-L1: bài 1963 không có "đòi được thả"; 79% là của Thí nghiệm 5);
+// harlow-contact (D3-L2: số theo Hình 5 của Harlow 1958, hai nhóm theo nơi có sữa; "mẹ lưới thép"; bỏ "đúng bằng thời gian bú");
+// seligman-design (D3-L2: nhóm đối chứng không vào võng; yoked cùng thời lượng trung bình; 6/8 chó yoked thụ động);
+// skinner-schedules (D3-L2: nhãn VR "cao, đều, khó tắt dần nhất" như chữ trang)
+const HINH_DA_SUA = new Set(["milgram-obedience", "harlow-contact", "seligman-design", "skinner-schedules"]);
 
 test('hình tĩnh src/hinh/<tên>.html chép đúng hình của trang cũ (chữ trong hình, aria-label; so-chu không so SVG)', { skip: !CO_SITE_CU && 'không có ../psyche-zero/' }, () => {
 	const thu = new URL('../src/hinh/', import.meta.url);

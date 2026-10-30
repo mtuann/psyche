@@ -4,517 +4,786 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/harlow.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-10-30'
-  nhanh: moi/d3-l2
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 1/2)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-10-30'
+    nhanh: không rõ
+    ma_bam: sha256:3aa32f010f8b8c7afd9033a0103b192a5623925165b88d4a1b59f1a19c875317
+    nguoi:
+      luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 1/2); chỗ khó: Claude Opus 5.5'
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D3-L2)
+      review: Claude Sonnet 5.5 (agent review D3-L2, 30/10/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d3-l2-kiem-mau.yml), đạt, 30/10/2026
 nguon:
-- id: harlow1958
-  ten: 'Harlow (1958), Am Psychol 13(12), 673–685: toàn văn (psychclassics.yorku.ca; Hình 5 không có trong bản này)'
-  link: https://psychclassics.yorku.ca/Harlow/love.htm
-  toan_van: true
-- id: harlow1959
-  ten: 'Harlow & Zimmermann (1959), Science 130(3373), 421–432: chỉ đọc nhan đề (PubMed 13675765)'
-  link: https://doi.org/10.1126/science.130.3373.421
-  toan_van: false
-- id: harlow1965
-  ten: 'Harlow, Dodsworth & Harlow (1965), PNAS 54(1), 90–97: chỉ đọc nhan đề (PubMed 4955132); toàn văn bị chặn'
-  link: https://doi.org/10.1073/pnas.54.1.90
-  toan_van: false
-- id: openstax2e
-  ten: 'OpenStax Psychology 2e (2020), mục 9.3 Stages of Development: toàn văn'
-  link: https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development
-  toan_van: true
-- id: suomi1976
-  ten: 'Suomi, Delizio & Harlow (1976), Am J Psychiatry 133(11), 1279–1285: tóm tắt (PubMed 824960); khác bản ghi suomi1972 trong nguon.yml'
-  link: https://doi.org/10.1176/ajp.133.11.1279
-  toan_van: false
-- id: vanrosmalen2022
-  ten: 'van Rosmalen, Luijk & van der Horst (2022), J Hist Behav Sci 58(2), 204–222: tóm tắt (PubMed 35040491); chưa có trong src/data/nguon.yml'
-  link: https://doi.org/10.1002/jhbs.22180
-  toan_van: false
+  - id: harlow1958
+    ten: 'Harlow (1958), Am Psychol 13(12), 673–685: toàn văn (psychclassics.yorku.ca; Hình 5 không có trong bản này)'
+    link: https://psychclassics.yorku.ca/Harlow/love.htm
+    toan_van: true
+  - id: harlow1959
+    ten: 'Harlow & Zimmermann (1959), Science 130(3373), 421–432: chỉ đọc nhan đề (PubMed 13675765)'
+    link: https://doi.org/10.1126/science.130.3373.421
+    toan_van: false
+  - id: harlow1965
+    ten: 'Harlow, Dodsworth & Harlow (1965), PNAS 54(1), 90–97: chỉ đọc nhan đề (PubMed 4955132); toàn văn bị chặn'
+    link: https://doi.org/10.1073/pnas.54.1.90
+    toan_van: false
+  - id: openstax2e
+    ten: 'OpenStax Psychology 2e (2020), mục 9.3 Stages of Development: toàn văn'
+    link: https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development
+    toan_van: true
+  - id: suomi1976
+    ten: 'Suomi, Delizio & Harlow (1976), Am J Psychiatry 133(11), 1279–1285: tóm tắt (PubMed 824960); khác bản ghi suomi1972 trong nguon.yml'
+    link: https://doi.org/10.1176/ajp.133.11.1279
+    toan_van: false
+  - id: vanrosmalen2022
+    ten: 'van Rosmalen, Luijk & van der Horst (2022), J Hist Behav Sci 58(2), 204–222: tóm tắt (PubMed 35040491); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1002/jhbs.22180
+    toan_van: false
+  - id: harlow1958b
+    ten: 'Harlow (1958), Am Psychol 13(12), 673–685: bản quét bài in có hình (PDF ở scottbarrykaufman.com, wp-content/uploads/2015/02/Harlow-1958.pdf), dùng cho Hình 5 và 6 (tr. 674)'
+    link: https://scottbarrykaufman.com/wp-content/uploads/2015/02/Harlow-1958.pdf
+    toan_van: true
+  - id: tim-kiem-vn
+    ten: "Lần tìm 30/10/2026 trên Europe PMC (REST API): surrogate mother, contact comfort, maternal deprivation, attachment kèm orphanage, Vietnam, Vietnamese: không có nghiên cứu tương tự (1 kết quả không liên quan)"
+    link: https://europepmc.org/search?query=%28TITLE_ABS%3A%22surrogate%20mother%22%20OR%20TITLE_ABS%3A%22contact%20comfort%22%20OR%20TITLE_ABS%3A%22surrogate%20mothers%22%29%20AND%20%28TITLE_ABS%3AVietnam%20OR%20TITLE_ABS%3AVietnamese%29
+    toan_van: false
+  - id: phs-policy
+    ten: "PHS Policy on Humane Care and Use of Laboratory Animals (OLAW, NIH): toàn văn, đã đọc mục hội đồng IACUC và yêu cầu tránh hay giảm thiểu đau đớn"
+    link: https://olaw.nih.gov/policies-laws/phs-policy.htm
+    toan_van: true
 nhan_dinh:
-- id: n1
-  cau: Harry Harlow (1958) cho khỉ con chọn giữa "mẹ vải" mềm ấm và "mẹ sắt" bằng lưới thép; dù sữa ở mẹ nào, khỉ con dành phần lớn thời gian bám mẹ vải.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: These data make it obvious that contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance.
-  vi_tri: Hình 5 và đoạn kế tiếp
-  ket_qua: da-sua
-  ghi_chu: 'Câu mô tả (description). Chữ cũ: "khỉ rhesus con ... bám mẹ vải 17–18 giờ mỗi ngày, chứng minh sự dễ chịu khi tiếp xúc quan trọng hơn việc cho ăn". Số 17–18 giờ nằm ở Hình 5 của bài gốc, không có trong bản psychclassics (chỉ có hình 3, 4, 21); chỉ thấy lặp lại ở nguồn phổ thông. Bỏ số; "chứng minh" đổi "gợi ý".'
-- id: n2
-  cau: Bài của Harlow (1958) là diễn văn của chủ tịch Hiệp hội Tâm lý học Hoa Kỳ (APA), đăng trên American Psychologist.
-  loai: lich-su
-  nguon:
-  - harlow1958
-  trich: Address of the President at the sixty-sixth Annual Convention of the
-  vi_tri: trang đầu psychclassics (First published in American Psychologist, 13, 673-685)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bài diễn văn nhậm chức chủ tịch APA" (cả ở tiêu đề mục). Bài ghi "Address of the President at the sixty-sixth Annual Convention"; "nhậm chức" không có trong nguồn; đổi thành "diễn văn của chủ tịch APA tại hội nghị thường niên lần thứ 66". Đã đổi tiêu đề mục (không có link #mục nào trong repo trỏ tới).'
-- id: n3
-  cau: Harlow làm việc tại Đại học Wisconsin.
-  loai: lich-su
-  nguon:
-  - harlow1958
-  trich: University of Wisconsin
-  vi_tri: trang đầu
-  ket_qua: dung
-- id: n4
-  cau: 'Hộp hồ sơ: Harlow và Zimmermann (1959) ghi nhận khỉ mồ côi gắn bó mạnh và bền với mẹ giả.'
-  loai: lich-su
-  nguon:
-  - harlow1959
-  trich: orphaned baby monkeys develop a strong and persistent attachment to inanimate surrogate mothers
-  vi_tri: nhan đề
-  ket_qua: dung
-  ghi_chu: Chỉ đọc nhan đề (PubMed 13675765), không có tóm tắt.
-- id: n5
-  cau: 'Thí nghiệm "hai mẹ giả": mỗi khỉ con có một mẹ vải và một mẹ lưới thép, đặt trong hai ngăn gắn vào lồng.'
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: a cloth mother and a wire mother were placed in different cubicles attached to the infant's living cage
-  vi_tri: tr. thí nghiệm đầu
-  ket_qua: dung
-- id: n6
-  cau: 'Mẹ vải: khối gỗ bọc xốp, phủ vải bông, có bóng đèn phía sau phát nhiệt.'
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: The surrogate was made from a block of wood, covered with sponge rubber, and sheathed in tan cotton terry cloth. A light bulb behind her radiated heat.
-  vi_tri: mô tả mẹ vải
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bên trong có bóng đèn sưởi ấm". Mới theo bài: bóng đèn phía sau.'
-- id: n7
-  cau: Mẹ lưới thép làm bằng lưới thép, cũng được sưởi ấm bằng nhiệt phát ra, chỉ khác mẹ vải ở chất lượng tiếp xúc.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: She is made of wire-mesh, a substance entirely adequate to provide postural support and nursing capability, and she is warmed by radiant heat.
-  vi_tri: mô tả mẹ thứ hai
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "mẹ sắt: khung dây thép lạnh ngắt" — sai: mẹ lưới thép cũng được sưởi ấm (cùng bóng đèn). Chữ "sắt" giữ như biệt danh (tiêu đề trang, tên hồ sơ nghiên cứu).'
-- id: n8
-  cau: Mỗi mẹ có một "vú" ở ngực trên.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: reducing the number of breasts from two to one and placing this unibreast in an upper-thoracic, sagittal position
-  vi_tri: mô tả mẹ vải (mẹ lưới thép cùng "nursing capability")
-  ket_qua: dung
-- id: n9
-  cau: Với 4 khỉ sơ sinh, mẹ vải cho sữa; với 4 khỉ còn lại, mẹ lưới thép cho sữa.
-  loai: so-lieu
-  nguon:
-  - harlow1958
-  trich: For four newborn monkeys the cloth mother lactated and the wire mother did not; and, for the other four, this condition was reversed.
-  vi_tri: thí nghiệm đầu
-  ket_qua: dung
-- id: n10
-  cau: Thời gian trên mỗi mẹ được ghi tự động; khỉ con luôn được tự do rời khỏi tấm sưởi hay sàn để tới mẹ nào.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: The infants were always free to leave the heating pad or cage floor to contact either mother, and the time spent on the surrogate mothers was automatically recorded.
-  vi_tri: thí nghiệm đầu
-  ket_qua: dung
-- id: n11
-  cau: Phòng thí nghiệm thường tách khỉ con khỏi mẹ 6–12 giờ sau sinh.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: We had separated more than 60 of these animals from their mothers 6 to 12 hours after birth
-  vi_tri: tr. đầu "Three years' experimentation"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bị tách khỏi mẹ ruột ngay sau khi sinh". Mới: 6–12 giờ, nói về hơn 60 khỉ của phòng thí nghiệm (không nói riêng 8 con của thí nghiệm hai mẹ).'
-- id: n12
-  cau: Khỉ con đã có sẵn gắn bó với tấm vải lót chuồng, và có cơn giận dữ khi tấm vải bị lấy đi để vệ sinh.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: The infants clung to these pads and engaged in violet temper tantrums when the pads were removed and replaced for sanitary reasons.
-  vi_tri: tr. giữa
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ (khung Vững chắc): dẫn Harlow & Zimmermann 1959; chi tiết nằm trong Harlow 1958. "Rối loạn cảm xúc rõ rệt" đổi "cơn giận dữ" ("temper tantrums"). Harlow 1959 chưa đọc.'
-- id: n13
-  cau: Dù sữa ở mẹ nào, khỉ con dành phần lớn thời gian bám vào mẹ vải.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: These data make it obvious that contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance.
-  vi_tri: sau Hình 5
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "khoảng 17–18 giờ mỗi ngày ... chỉ sang mẹ sắt đúng lúc bú rồi quay về ngay" (Hình 5 không đọc được; "đúng lúc bú rồi quay về ngay" không có trong văn bản). Chữ "phần lớn" chưa có số; bài viết ở mục khác: nhóm khỉ đặt mẹ muộn ở 250 ngày: gần 9 giờ/ngày trên mẹ vải và dưới 1,5 giờ trên mẹ lưới thép.'
-- id: n14
-  cau: Với những khỉ bú mẹ lưới thép, thời gian trên mẹ lưới thép giảm dần theo tuổi còn thời gian trên mẹ vải tăng.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: With age and opportunity to learn, subjects with the lactating wire mother showed decreasing responsiveness to her and increasing responsiveness to the nonlactating cloth mother
-  vi_tri: thí nghiệm đầu
-  ket_qua: dung
-- id: n15
-  cau: Khi được cho thấy vật gây sợ như con gấu đồ chơi chuyển động, khỉ con ưa mẹ vải hơn rõ rệt, bất kể mẹ nào có sữa.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: It is apparent that the cloth mother is highly preferred over the wire one, and this differential selectivity is enhanced by age and experience.
-  vi_tri: thử nghiệm sợ hãi (Hình 13–15)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đồ chơi gây tiếng động lớn ... chạy ngay về phía mẹ vải, ôm chặt, rồi từ từ bình tĩnh lại — có con còn quay lại đối đầu với vật gây sợ". Bài nói "moving toy bear" (không có tiếng động) và "rushes ... comfort and composure" ở mẹ thật; "quay lại đối đầu" không thấy trong văn bản (chỉ có ở Hình 14?). Bỏ.'
-- id: n16
-  cau: Trong căn phòng lạ (6 × 6 × 6 feet), 4 trong 8 khỉ được thử, mỗi khỉ 3 phút, hai lần mỗi tuần trong 8 tuần.
-  loai: so-lieu
-  nguon:
-  - harlow1958
-  trich: we have completed tests for this relationship on four of our eight baby monkeys assigned to the dual mother-surrogate condition by introducing them for three minutes into the strange environment of a room measuring six feet by six feet by six feet
-  vi_tri: open-field test
-  ket_qua: da-sua
-  ghi_chu: Chữ cũ không nói rõ chỉ 4/8 con. Mới nêu số liệu.
-- id: n17
-  cau: Khi mẹ vải có mặt, khỉ con ôm mẹ rồi dùng mẹ làm "căn cứ" để khám phá và quay về; điểm cảm xúc tổng giảm một nửa.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: Total emotionality score was cut in half when the mother was present.
-  vi_tri: open-field test
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "khỉ con có mẹ vải bên cạnh dám bò ra khám phá ...; khỉ con không có mẹ vải thì co rúm một chỗ, mút ngón tay, tê liệt vì sợ" mô tả như hai nhóm khỉ khác nhau; thực ra là cùng 4 khỉ khi mẹ có/không có mặt. "Mút ngón tay" bài nêu "sucking" là một chỉ số cảm xúc; "tê liệt vì sợ" đổi thành "co rúm" ("freeze in a crouched position").'
-- id: n18
-  cau: Khi mẹ vắng, khỉ con thường co rúm (freeze in a crouched position).
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: Frequently they would freeze in a crouched position
-  vi_tri: open-field test
-  ket_qua: dung
-- id: n19
-  cau: Bốn khỉ đối chứng chưa từng nuôi với mẹ giả có điểm cảm xúc khi mẹ vắng bằng nhóm thí nghiệm khi mẹ vắng.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: Four control infants never raised with a mother surrogate showed the same emotionality scores when the mother was absent as the experimental infants showed in the absence of the mother
-  vi_tri: open-field test
-  ket_qua: dung
-- id: n20
-  cau: 'Harlow kết luận: contact comfort là biến số có tầm quan trọng áp đảo trong hình thành phản ứng tình cảm, còn việc cho bú không đáng kể.'
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance
-  vi_tri: sau Hình 5
-  ket_qua: dung
-- id: n21
-  cau: Harlow đề xuất chức năng chính của việc cho bú (như một biến số tình cảm) có lẽ là bảo đảm sự tiếp xúc cơ thể thường xuyên, thân mật giữa mẹ và con.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: the primary function of nursing as an affectional variable is that of insuring frequent and intimate body contact of the infant with the mother
-  vi_tri: sau nhóm đối chứng
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chức năng chính của việc cho bú có lẽ chỉ là..."; thêm giới hạn "như một biến số tình cảm".'
-- id: n22
-  cau: Nhóm khỉ nuôi với một mẹ lưới thép hay một mẹ vải ăn lượng sữa và tăng cân như nhau.
-  loai: so-lieu
-  nguon:
-  - harlow1958
-  trich: There were no differences between these two groups in amount of milk ingested or in weight gain.
-  vi_tri: nhóm đối chứng một mẹ
-  ket_qua: dung
-  ghi_chu: 'Chữ cũ (ngộ nhận): "nhóm nào cũng tăng cân như nhau vì đều được bú đủ"; mới chỉ rõ nhóm đối chứng một mẹ.'
-- id: n23
-  cau: Harlow, Dodsworth và Harlow (1965) nghiên cứu khỉ con trong cô lập xã hội hoàn toàn.
-  loai: lich-su
-  nguon:
-  - harlow1965
-  trich: Total social isolation in monkeys.
-  vi_tri: nhan đề (PubMed 4955132)
-  ket_qua: da-sua
-  ghi_chu: Chỉ đọc nhan đề; toàn văn và tóm tắt không mở được (PMC 285801 bị reCAPTCHA, pnas.org 403).
-- id: n24
-  cau: Kết quả của các nghiên cứu cô lập (sợ hãi cực độ, hành vi tự kích thích, không giao tiếp, không giao phối, con cái không chăm con) đã bỏ khỏi trang.
-  loai: phat-hien
-  ket_qua: da-bo
-  ghi_chu: 'chưa chắc: chữ cũ liệt kê các di chứng; không mở được Harlow, Dodsworth & Harlow 1965. Bỏ để kiểm định dứt điểm; người giao/lượt 2 có thể mở bằng PMC từ máy có trình duyệt và thêm lại nếu có trích nguyên văn.'
-- id: n25
-  cau: Theo giáo trình mở, các thí nghiệm của Harlow ngày nay bị xem là phi đạo đức.
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: today his experiments are widely considered to be unethical and even cruel
-  vi_tri: OpenStax 9.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "phần lớn công trình sau này của Harlow không thể được phép thực hiện ngày nay". Mới theo OpenStax.'
-- id: n26
-  cau: Vào những năm 1960–1970, Harlow làm các thí nghiệm nhằm gây trầm cảm ở khỉ để tìm cách chữa trầm cảm, bị chỉ trích dữ dội; một bài lịch sử gọi là "pit of despair".
-  loai: lich-su
-  nguon:
-  - vanrosmalen2022
-  trich: Harry Harlow, famous for his research with rhesus monkeys, was heavily criticized when he undertook his controversial experiments trying to find a solution for depression in the 1960s-1970s.
-  vi_tri: tóm tắt (PubMed 35040491)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "giếng tuyệt vọng — buồng cô lập sâu, tối, dùng để tạo ra trạng thái trầm cảm ở khỉ con; và mẹ quái vật — mẹ vải được gắn cơ chế gây khó chịu (phun khí, rung lắc)". Chi tiết "buồng sâu, tối", "phun khí, rung lắc" không kiểm được (chưa mở Blum 2002, Harlow & Suomi 1974); bỏ phần "mẹ quái vật". Tóm tắt van Rosmalen nêu tiêu đề "pit of despair".'
-- id: n27
-  cau: '"IACUC, nguyên tắc 3R ra đời chính vì các thí nghiệm này": đã bỏ.'
-  loai: lich-su
-  ket_qua: da-bo
-  ghi_chu: 'Chữ cũ: "chính chúng là lý do các quy định đạo đức trong nghiên cứu động vật (hội đồng IACUC, nguyên tắc 3R) ra đời và siết chặt về sau". Khẳng định nhân quả lịch sử không có nguồn; bỏ cả ở quiz. Câu chuẩn mực chung giữ: "Theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và giảm thiểu đau đớn" (kiểm ở nhận định chuẩn mực; chưa có nguồn: gia-dinh/đạo đức).'
-- id: n28
-  cau: Theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và giảm thiểu đau đớn.
-  loai: loi-khuyen
-  nguon:
-  - openstax2e
-  trich: today his experiments are widely considered to be unethical and even cruel
-  vi_tri: OpenStax 9.3
-  ket_qua: da-lam-mem
-  ghi_chu: Câu chuẩn mực chung (cũng ở pavlov, skinner). Nguồn OpenStax nói "modern ethics guidelines"; không đọc quy định cụ thể (hội đồng đạo đức/giảm thiểu đau đớn). Người giao quyết có cần nguồn quy định (vd. Directive 2010/63/EU, Guide for the Care and Use of Laboratory Animals).
-- id: n29
-  cau: 'Theo Harlow (1958), quan điểm phổ biến lúc đó: động cơ cơ bản là đói, khát...; tình yêu là động cơ phái sinh vì mẹ gắn với việc giảm đói và khát.'
-  loai: lich-su
-  nguon:
-  - harlow1958
-  trich: The mother is associated with the reduction of the primary drives -- particularly hunger, thirst, and pain -- and through learning, affection or love is derived.
-  vi_tri: mục mở đầu
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "tâm lý học Mỹ chịu ảnh hưởng nặng của chủ nghĩa hành vi: người ta tin ... tình yêu là phản xạ có điều kiện gắn với việc được cho bú. Thậm chí các bác sĩ nhi khoa khuyên cha mẹ cho con ăn đúng giờ, hạn chế bế ẵm" (không nguồn; Harlow nói "psychologists and sociologists"). Bỏ lời khuyên nhi khoa.'
-- id: n30
-  cau: Harlow nghi ngờ quan niệm đó; ông cho rằng việc cho ăn là cơ chế không đủ để giải thích sự bền bỉ của gắn bó mẹ con.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: It is entirely reasonable to believe that the mother through association with food may become a secondary-reinforcing agent, but this is an inadequate mechanism to account for the persistence of the infant-maternal ties.
-  vi_tri: mục mở đầu
-  ket_qua: dung
-- id: n31
-  cau: 'Một giáo trình mở mô tả: Harlow (1958) kết luận gắn bó mẹ con không chỉ là dinh dưỡng; trước đó giới khoa học y học thường nghĩ trẻ gắn bó với người cho ăn.'
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: Prior to this study, the medical and scientific communities generally thought that babies become attached to the people who provide their nourishment.
-  vi_tri: OpenStax 9.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đòn đánh trực diện... thắng thuyết phục đến mức thay đổi cách cả thế giới nghĩ về việc nuôi dạy trẻ" (không nguồn; bỏ).'
-- id: n32
-  cau: Harlow gọi nhu cầu đó là "contact comfort".
-  loai: dinh-nghia
-  nguon:
-  - harlow1958
-  trich: contact comfort might be a very important variable in the development of the infant's affection for the mother
-  vi_tri: tr. trước thí nghiệm
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nhu cầu nguyên thủy không kém nhu cầu ăn" (diễn đạt của site; Harlow: "important variable"). Mới: "biến số quan trọng".'
-- id: n33
-  cau: 'Khá vững: sự dễ chịu khi tiếp xúc quan trọng hơn việc cho bú trong gắn bó của khỉ con.'
-  loai: nhan
-  nguon:
-  - harlow1958
-  - openstax2e
-  trich: contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance
-  vi_tri: sau Hình 5
-  nhan: kha-vung
-  co_so:
-  - harlow1958
-  - openstax2e
-  ly_do: '8 khỉ trong một phòng thí nghiệm, kết quả cùng chiều ở cả hai điều kiện sữa; chưa có tái lập độc lập hay phân tích tổng hợp đã mở; không thể lặp lại theo chuẩn đạo đức hiện nay: đúng mô tả Khá vững (mục 4).'
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: chữ cũ :::vung-chac với "Hiệu ứng này được lặp lại trong nhiều nghiên cứu của chính phòng thí nghiệm Harlow và các nhóm khác" (không dẫn được). Thước đo Vững chắc cần phân tích tổng hợp hoặc hai tái lập; chưa có. Hạ xuống Khá vững; người giao/lượt 2 cân nhắc. Harlow & Zimmermann 1959 chưa đọc (chỉ nhan đề).'
-- id: n34
-  cau: 'Khá vững: 4 trong 8 khỉ dùng mẹ vải làm "căn cứ" để khám phá phòng lạ; hình ảnh gần với "căn cứ an toàn" của Bowlby (theo OpenStax); Suomi và cộng sự (1976): khỉ có hành vi trầm cảm sau tách có thể trở lại hoạt động xã hội phù hợp tuổi nhờ tiếp xúc lặp lại với bạn cùng tuổi năng động.'
-  loai: nhan
-  nguon:
-  - harlow1958
-  - openstax2e
-  - suomi1976
-  trich: monkeys showing depressive begaviors after repeated separations can be returned to age-appropriate social performance through repeated exposure to socially active age-mates
-  vi_tri: tóm tắt Suomi 1976; Harlow 1958; OpenStax 9.3
-  nhan: kha-vung
-  co_so:
-  - harlow1958
-  - openstax2e
-  - suomi1976
-  ly_do: 'Hai nghiên cứu nhỏ trên khỉ (Harlow 1958: 4/8 khỉ trong open-field; Suomi 1976: 4 khỉ), không tái lập độc lập; Bowlby (theo OpenStax) chỉ là sự tương đồng về khái niệm.'
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: chữ cũ gộp "thiếu tiếp xúc sớm để lại di chứng lâu dài" (nguồn 1965 không mở được) và "Stephen Suomi chứng minh ... bạn đồng loại kiên nhẫn" — mới dẫn Suomi, Delizio & Harlow 1976 (AJP 133(11): 1279–1285). Mục nguon Suomi trên trang cũ là "Suomi, Harlow & McKinney (1972) ... 129(10), 127–132": sai; nguon.yml (suomi1972) cũng cần sửa — việc người giao (dữ liệu dùng chung).'
-- id: n35
-  cau: 'Đang tranh cãi: suy rộng sang con người được bao xa.'
-  loai: nhan
-  nguon:
-  - harlow1958
-  - openstax2e
-  trich: basic responses relating to affection, including nursing, contact, clinging, and even visual and auditory exploration, exhibit no fundamental differences in the two species
-  vi_tri: tr. đầu (quan điểm của Harlow)
-  nhan: tranh-cai
-  co_so:
-  - harlow1958
-  - openstax2e
-  ly_do: Harlow tự coi phản ứng tình cảm cơ bản của khỉ và trẻ là tương tự; các tác giả sau (OpenStax) nhấn mạnh Bowlby và Ainsworth mở rộng sang trẻ em và chỉ ra khác biệt về kiểu gắn bó; chưa có nghiên cứu tổng hợp để quyết.
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "ở người, cho con bú còn liên quan đến dinh dưỡng, miễn dịch và tiếp xúc da kề da" (không nguồn; bỏ "miễn dịch", "da kề da"). "Khỉ rhesus": Harlow nêu "macaque" và "rhesus monkeys" (tr. đầu).'
-- id: n36
-  cau: Giáo trình mở mô tả Bowlby xây dựng thuyết gắn bó dựa trên công trình của Harlow và những người khác; gắn bó là sợi dây tình cảm giữa trẻ và mẹ; người chăm sóc là "căn cứ an toàn".
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: Building on the work of Harlow and others, John Bowlby developed the concept of attachment theory.
-  vi_tri: OpenStax 9.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Harlow là một trong những nguồn cảm hứng thực nghiệm quan trọng nhất cho Bowlby" (xếp hạng không nguồn); "hệ thống hành vi gắn bó bẩm sinh" bỏ.'
-- id: n37
-  cau: Mary Ainsworth nghiên cứu cách trẻ gắn bó khác nhau bằng "tình huống lạ" (strange situation).
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: she used the Strange Situation procedure to study attachment
-  vi_tri: OpenStax 9.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Ainsworth sau này kiểm chứng ở trẻ em" (OpenStax: nghiên cứu cách trẻ gắn bó khác nhau, không phải "kiểm chứng" Bowlby).'
-- id: n38
-  cau: Trong thí nghiệm 1958, bốn khỉ đối chứng chưa từng có mẹ giả được cho mẹ vải khi 250 ngày tuổi; sau 12–48 giờ khó chịu chúng dần tiếp xúc mẹ vải; thời gian bám mẹ vải tối đa chỉ khoảng một nửa nhóm nuôi từ đầu, Harlow lưu ý chưa biết có phải do kinh nghiệm sớm.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: Although the maximum time that the control monkeys spent on the cloth mother was only about half that Spent by the original dual mother-surrogate group, we cannot be sure that this discrepancy is a function of differential early experience.
-  vi_tri: thử nghiệm mẹ vải muộn
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ (mục "Giai đoạn nhạy cảm"): "khỉ bị cô lập toàn diện trong vài tháng đầu đời khó phục hồi hơn hẳn — gợi ý có cửa sổ phát triển" (nguồn Harlow 1965 không mở được). Mới theo Harlow 1958 (nhóm không phải cô lập hoàn toàn).'
-- id: n39
-  cau: Việc suy ra "bế ẵm trẻ sơ sinh không làm hư trẻ" là suy luận từ khỉ sang người, chưa được kiểm chứng ở trang này.
-  loai: loi-khuyen
-  nguon:
-  - harlow1958
-  trich: The baby, human or monkey, if it is to survive, must clutch at more than a straw.
-  vi_tri: tr. đầu (Harlow chỉ liên hệ so sánh)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Quan niệm cũ đừng bế nhiều kẻo trẻ quen hơi đã bị chính dữ liệu của Harlow bác bỏ ... Da kề da, bế ẵm, ru ngủ đều là contact comfort của con người". Mới nêu rõ suy luận; không có nguồn ở trẻ em trong hồ sơ này.'
-- id: n40
-  cau: 'Một cách đọc theo nghĩa bóng: mẹ vải mềm ấm được khỉ con chọn hơn mẹ lưới thép có sữa; không phải kết luận khoa học về các mối quan hệ của người.'
-  loai: loi-khuyen
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Chất lượng sự hiện diện quan trọng hơn quà cáp vật chất ... sự ấm áp, kiên nhẫn tạo gắn bó bền hơn việc chỉ chu cấp vật chất": khẳng định về quan hệ người không nguồn; viết thành nghĩa bóng có rào đón.'
-- id: n41
-  cau: Trong thuyết gắn bó (Bowlby, theo OpenStax), người chăm sóc là căn cứ an toàn để trẻ khám phá.
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: A secure base is a parental presence that gives the child a sense of safety as he explores his surroundings.
-  vi_tri: OpenStax 9.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "trẻ dám thử cái mới khi biết có chỗ để quay về. Một lớp học, một gia đình mà trẻ cảm thấy an toàn sẽ nuôi dưỡng sự tò mò tốt hơn môi trường chỉ có kỷ luật lạnh lùng" (khẳng định không nguồn). Mới dùng định nghĩa.'
-- id: n42
-  cau: Đừng biến Harlow thành cớ để cực đoan ("bú bình là thiếu tình cảm", "mẹ đi làm là bỏ con"); dữ liệu nói về khỉ con và nhu cầu tiếp xúc.
-  loai: loi-khuyen
-  nguon:
-  - harlow1958
-  trich: We had separated more than 60 of these animals from their mothers 6 to 12 hours after birth and suckled them on tiny bottles.
-  vi_tri: 'tr. đầu: khỉ bú bình khỏe và nặng hơn khỉ mẹ nuôi'
-  ket_qua: da-lam-mem
-  ghi_chu: 'Hỗ trợ: Harlow 1958 ghi khỉ bú bình "healthier and heavier than monkey-mother-reared infants".'
-- id: n43
-  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu tương tự trên linh trưởng hay trên trẻ em Việt Nam.
-  loai: thoi-su
-  het_han: '2028-10-01'
-  ket_qua: dung
-  ghi_chu: 'Tìm 30/10/2026 (PubMed, Crossref): xem ghi chú dưới; chưa tìm Google Scholar hay tạp chí trong nước.'
-- id: n44
-  cau: Quan sát văn hóa về cách chăm trẻ truyền thống của Việt Nam (bế ẵm nhiều, ru ngủ, ngủ chung) và khoảng trống nghiên cứu ở các cơ sở chăm sóc trẻ mồ côi, khuyết tật.
-  loai: thoi-su
-  ket_qua: da-bo
-  ghi_chu: 'Chữ cũ: "cách chăm trẻ truyền thống của Việt Nam — bế ẵm nhiều, ru ngủ trên tay, ngủ chung — vốn đã coi trọng tiếp xúc cơ thể" và "bối cảnh các cơ sở chăm sóc trẻ mồ côi, khuyết tật". Không có nguồn Việt Nam; bỏ.'
-- id: n45
-  cau: Harlow (1958) viết rằng tình cảm của khỉ con với mẹ thật và mẹ vải "có vẻ rất giống nhau", dựa trên quan sát hai khỉ con do mẹ thật nuôi, và hy vọng kiểm tra chắc chắn vào năm sau.
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: Love for the real mother and love for the surrogate mother appear to be very similar.
-  vi_tri: tr. gần cuối
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "các nghiên cứu sau cho thấy khỉ nuôi bằng mẹ giả vẫn phát triển lệch lạc ... so với khỉ được mẹ thật nuôi" (nguồn không mở được); thay bằng nhận xét của Harlow, ghi rõ là sơ bộ.'
-- id: n46
-  cau: Harlow cho rằng sẽ còn các biến số khác quan trọng (nâng đỡ tư thế, chuyển động đung đưa, âm thanh, thị giác).
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: In spite of the importance of contact comfort, there is reason to believe that other variables of measurable importance will be discovered.
-  vi_tri: tr. gần cuối
-  ket_qua: dung
-- id: n47
-  cau: 'Quiz 1: Harlow loại trừ khả năng khỉ chỉ bám bên có sữa bằng cách chia 8 khỉ con thành hai nhóm: 4 bú mẹ vải, 4 bú mẹ lưới thép; kết quả hai nhóm tương tự.'
-  loai: so-lieu
-  nguon:
-  - harlow1958
-  trich: For four newborn monkeys the cloth mother lactated and the wire mother did not; and, for the other four, this condition was reversed.
-  vi_tri: thí nghiệm đầu
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "giống hệt nhau"; mới "tương tự". Giải thích cũ "điểm mạnh của thiết kế" đổi thành nêu thêm giới hạn mẫu 8 khỉ.'
-- id: n48
-  cau: 'Quiz 2: khỉ con dành phần lớn thời gian bên mẹ vải bất kể sữa ở mẹ nào; thời gian trên mẹ lưới thép giảm dần theo tuổi với những khỉ bú mẹ lưới thép.'
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: With age and opportunity to learn, subjects with the lactating wire mother showed decreasing responsiveness to her and increasing responsiveness to the nonlactating cloth mother
-  vi_tri: thí nghiệm đầu
-  ket_qua: da-sua
-  ghi_chu: Câu hỏi cũ có số 17–18 giờ và "dưới 1 giờ" (Hình 5; xem n1); đổi thành câu hỏi định tính.
-- id: n49
-  cau: 'Quiz 3: khi bị làm sợ, khỉ con ưa mẹ vải hơn rõ rệt, kể cả khi sữa ở mẹ lưới thép.'
-  loai: phat-hien
-  nguon:
-  - harlow1958
-  trich: 'In this situation, the variable of nursing appears to be of absolutely no importance: the infant consistently seeks the soft mother surrogate regardless of nursing condition.'
-  vi_tri: thử nghiệm sợ hãi
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "ôm chặt mẹ vải rồi mới dần bình tĩnh, có con còn quay lại đối đầu" (không kiểm được).'
-- id: n50
-  cau: 'Quiz 4: "contact comfort" là biến số tình cảm quan trọng áp đảo, còn việc cho bú là không đáng kể.'
-  loai: dinh-nghia
-  nguon:
-  - harlow1958
-  trich: contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance
-  vi_tri: sau Hình 5
-  ket_qua: dung
-- id: n51
-  cau: 'Quiz 5: giáo trình mở nói các thí nghiệm của Harlow ngày nay bị xem là phi đạo đức; công trình sau này (cô lập hoàn toàn, thí nghiệm gây trầm cảm) bị chỉ trích dữ dội.'
-  loai: lich-su
-  nguon:
-  - openstax2e
-  - vanrosmalen2022
-  trich: today his experiments are widely considered to be unethical and even cruel
-  vi_tri: OpenStax 9.3; van Rosmalen 2022
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "giếng tuyệt vọng", "mẹ quái vật" và "IACUC, 3R" bỏ.'
-- id: n52
-  cau: 'Hình "harlow-contact" (biểu đồ cột): bám mẹ vải 17–18 giờ mỗi ngày, ghé mẹ sắt dưới 1 giờ; chú thích: "đúng bằng thời gian bú rồi quay về ngay"; nguồn: Harlow (1958); số liệu theo bài viết.'
-  loai: so-lieu
-  ket_qua: null
-  ghi_chu: 'chưa chắc: HÌNH SAI/chưa kiểm được, không sửa theo lời giao. Số 17–18 giờ (Hình 5 của Harlow 1958) không có trong bản psychclassics; chỉ thấy lặp lại ở nguồn phổ thông. Chú thích "đúng bằng thời gian bú rồi quay về ngay" không có trong văn bản. Cột "mẹ sắt" nên đổi tên nhãn "mẹ lưới thép (có sữa)" cho khớp bài. Người giao: sửa hình (đưa số về dạng "phần lớn thời gian" hay dẫn Hình 5 bản in) rồi trang mới khóa được; trang đã bỏ số.'
-- id: n53
-  cau: Hộp "Tóm tắt nhanh" dựng tự động từ ý chính của các khung nhãn.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Như n58 của asch.yml.
-- id: n54
-  cau: 'Trang này là trang nhà của nghiên cứu Harlow: nơi khác chỉ tóm một câu và link về.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/data/nghien-cuu.yml: id harlow, trang_nha thi-nghiem/harlow, nguon [harlow1958, harlow1959, harlow1965].'
-- id: n55
-  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Bốn dòng khớp mục Nghiên cứu then chốt (8 khỉ; 4+4; kết quả).
+  - id: n1
+    cau: Harry Harlow (1958) cho khỉ con chọn giữa "mẹ vải" mềm ấm và "mẹ sắt" bằng lưới thép; dù sữa ở mẹ nào, khỉ con dành phần lớn thời gian bám mẹ vải.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: These data make it obvious that contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance.
+    vi_tri: Hình 5 và đoạn kế tiếp
+    ket_qua: da-sua
+    ghi_chu: 'Câu mô tả (description). Chữ cũ: "khỉ rhesus con ... bám mẹ vải 17–18 giờ mỗi ngày, chứng minh sự dễ chịu khi tiếp xúc quan trọng hơn việc cho ăn". Số 17–18 giờ nằm ở Hình 5 của bài gốc, không có trong bản psychclassics (chỉ có hình 3, 4, 21); chỉ thấy lặp lại ở nguồn phổ thông. Bỏ số; "chứng minh" đổi "gợi ý". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): mô tả bỏ số 17–18 giờ, ghi "gợi ý".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n2
+    cau: Bài của Harlow (1958) là diễn văn của chủ tịch Hiệp hội Tâm lý học Hoa Kỳ (APA), đăng trên American Psychologist.
+    loai: lich-su
+    nguon:
+      - harlow1958
+    trich: Address of the President at the sixty-sixth Annual Convention of the
+    vi_tri: trang đầu psychclassics (First published in American Psychologist, 13, 673-685)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bài diễn văn nhậm chức chủ tịch APA" (cả ở tiêu đề mục). Bài ghi "Address of the President at the sixty-sixth Annual Convention"; "nhậm chức" không có trong nguồn; đổi thành "diễn văn của chủ tịch APA tại hội nghị thường niên lần thứ 66". Đã đổi tiêu đề mục (không có link #mục nào trong repo trỏ tới). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp đầu đề bài (Address of the President, hội nghị lần thứ 66).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n3
+    cau: Harlow làm việc tại Đại học Wisconsin.
+    loai: lich-su
+    nguon:
+      - harlow1958
+    trich: University of Wisconsin
+    vi_tri: trang đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n4
+    cau: 'Hộp hồ sơ: Harlow và Zimmermann (1959) ghi nhận khỉ mồ côi gắn bó mạnh và bền với mẹ giả.'
+    loai: lich-su
+    nguon:
+      - harlow1959
+    trich: orphaned baby monkeys develop a strong and persistent attachment to inanimate surrogate mothers
+    vi_tri: nhan đề
+    ket_qua: dung
+    ghi_chu: Chỉ đọc nhan đề (PubMed 13675765), không có tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.130.3373.421" ]
+    luot_2_ghi_chu: Chỉ đọc được tiêu đề và siêu dữ liệu (toàn văn có phí, không có tóm tắt); tiêu đề khớp câu. Phần 'bền' còn được ủng hộ bởi dữ liệu duy trì 185 ngày trong Harlow 1958.
+  - id: n5
+    cau: 'Thí nghiệm "hai mẹ giả": mỗi khỉ con có một mẹ vải và một mẹ lưới thép, đặt trong hai ngăn gắn vào lồng.'
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: a cloth mother and a wire mother were placed in different cubicles attached to the infant's living cage
+    vi_tri: tr. thí nghiệm đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n6
+    cau: 'Mẹ vải: khối gỗ bọc xốp, phủ vải bông, có bóng đèn phía sau phát nhiệt.'
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: The surrogate was made from a block of wood, covered with sponge rubber, and sheathed in tan cotton terry cloth. A light bulb behind her radiated heat.
+    vi_tri: mô tả mẹ vải
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bên trong có bóng đèn sưởi ấm". Mới theo bài: bóng đèn phía sau. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp mô tả mẹ vải.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n7
+    cau: Mẹ lưới thép làm bằng lưới thép, cũng được sưởi ấm bằng nhiệt phát ra, chỉ khác mẹ vải ở chất lượng tiếp xúc.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: She is made of wire-mesh, a substance entirely adequate to provide postural support and nursing capability, and she is warmed by radiant heat.
+    vi_tri: mô tả mẹ thứ hai
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "mẹ sắt: khung dây thép lạnh ngắt" — sai: mẹ lưới thép cũng được sưởi ấm (cùng bóng đèn). Chữ "sắt" giữ như biệt danh (tiêu đề trang, tên hồ sơ nghiên cứu). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp mô tả mẹ lưới thép (có sưởi bằng nhiệt).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n8
+    cau: Mỗi mẹ có một "vú" ở ngực trên.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: reducing the number of breasts from two to one and placing this unibreast in an upper-thoracic, sagittal position
+    vi_tri: mô tả mẹ vải (mẹ lưới thép cùng "nursing capability")
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n9
+    cau: Với 4 khỉ sơ sinh, mẹ vải cho sữa; với 4 khỉ còn lại, mẹ lưới thép cho sữa.
+    loai: so-lieu
+    nguon:
+      - harlow1958
+    trich: For four newborn monkeys the cloth mother lactated and the wire mother did not; and, for the other four, this condition was reversed.
+    vi_tri: thí nghiệm đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n10
+    cau: Thời gian trên mỗi mẹ được ghi tự động; khỉ con luôn được tự do rời khỏi tấm sưởi hay sàn để tới mẹ nào.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: The infants were always free to leave the heating pad or cage floor to contact either mother, and the time spent on the surrogate mothers was automatically recorded.
+    vi_tri: thí nghiệm đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n11
+    cau: Phòng thí nghiệm thường tách khỉ con khỏi mẹ 6–12 giờ sau sinh.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: We had separated more than 60 of these animals from their mothers 6 to 12 hours after birth
+    vi_tri: tr. đầu "Three years' experimentation"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bị tách khỏi mẹ ruột ngay sau khi sinh". Mới: 6–12 giờ, nói về hơn 60 khỉ của phòng thí nghiệm (không nói riêng 8 con của thí nghiệm hai mẹ). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp ("6 to 12 hours after birth", hơn 60 khỉ).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n12
+    cau: Khỉ con đã có sẵn gắn bó với tấm vải lót chuồng, và có cơn giận dữ khi tấm vải bị lấy đi để vệ sinh.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: The infants clung to these pads and engaged in violet temper tantrums when the pads were removed and replaced for sanitary reasons.
+    vi_tri: tr. giữa
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (khung Vững chắc): dẫn Harlow & Zimmermann 1959; chi tiết nằm trong Harlow 1958. "Rối loạn cảm xúc rõ rệt" đổi "cơn giận dữ" ("temper tantrums"). Harlow 1959 chưa đọc. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp ("violet [violent] temper tantrums" khi tấm lót bị thay).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n13
+    cau: Dù sữa ở mẹ nào, khỉ con dành phần lớn thời gian bám vào mẹ vải.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: These data make it obvious that contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance.
+    vi_tri: sau Hình 5
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khoảng 17–18 giờ mỗi ngày ... chỉ sang mẹ sắt đúng lúc bú rồi quay về ngay" (Hình 5 không đọc được; "đúng lúc bú rồi quay về ngay" không có trong văn bản). Chữ "phần lớn" chưa có số; bài viết ở mục khác: nhóm khỉ đặt mẹ muộn ở 250 ngày: gần 9 giờ/ngày trên mẹ vải và dưới 1,5 giờ trên mẹ lưới thép. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp trích "overwhelming importance … negligible".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n14
+    cau: Với những khỉ bú mẹ lưới thép, thời gian trên mẹ vải tăng dần theo tuổi (khoảng 7 giờ lên khoảng 16 giờ mỗi ngày trong 25 ngày đầu), còn thời gian trên mẹ lưới thép chỉ khoảng 1–2 giờ mỗi ngày.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: 'Figure 5 (FED ON WIRE MOTHER): CLOTH MOTHER ≈ 7 giờ (1–5 ngày) → ≈ 16 giờ (21–25 ngày); WIRE MOTHER ≈ 1–2 giờ ở mọi mốc. Lời văn Harlow: "With age and opportunity to learn, subjects with the lactating wire mother showed decreasing responsiveness to her and increasing responsiveness to the nonlactating cloth mother".'
+    vi_tri: thí nghiệm đầu
+    ket_qua: da-sua
+    luot_2: khong-chac
+    luot_2_ghi_chu: Harlow viết đúng như câu. Nhưng Hình 5 (giờ trung bình mỗi ngày, 25 ngày đầu, nhóm bú mẹ lưới) cho thấy thời gian trên mẹ lưới gần như phẳng, hơi tăng (khoảng 1,2 lên 1,8 giờ), chỉ thời gian trên mẹ vải tăng (khoảng 7 lên 16 giờ). Hình 6 (165 ngày) không đọc được. Khó xác nhận 'giảm dần' theo giờ tuyệt đối; có thể là giảm tương đối. Nên diễn đạt 'đáp ứng với mẹ lưới giảm tương đối, mẹ vải tăng'.
+    review: sai
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): lượt 2 khong-chac, đúng. Đã mở Hình 5 và Hình 6 (psychclassics, fig5.jpg, fig6.jpg): ở nhóm bú mẹ lưới thép, đường mẹ lưới thép gần như phẳng (khoảng 1–2 giờ/ngày, hơi tăng), chỉ đường mẹ vải tăng (7 → 16 giờ); Hình 6 (165 ngày) mẹ vải khoảng 12–16 giờ, mẹ lưới dưới 1,5 giờ. Câu "thời gian trên mẹ lưới thép giảm dần" không đúng với giờ tuyệt đối (Harlow viết "responsiveness" giảm, không phải số giờ). Chữ cũ: "thời gian trên mẹ lưới thép giảm dần theo tuổi còn thời gian trên mẹ vải tăng". Chữ mới như cau. Sửa cả lời giải thích câu 2 (n48).'
+  - id: n15
+    cau: Khi được cho thấy vật gây sợ như con gấu đồ chơi chuyển động, khỉ con ưa mẹ vải hơn rõ rệt, bất kể mẹ nào có sữa.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: It is apparent that the cloth mother is highly preferred over the wire one, and this differential selectivity is enhanced by age and experience.
+    vi_tri: thử nghiệm sợ hãi (Hình 13–15)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đồ chơi gây tiếng động lớn ... chạy ngay về phía mẹ vải, ôm chặt, rồi từ từ bình tĩnh lại — có con còn quay lại đối đầu với vật gây sợ". Bài nói "moving toy bear" (không có tiếng động) và "rushes ... comfort and composure" ở mẹ thật; "quay lại đối đầu" không thấy trong văn bản (chỉ có ở Hình 14?). Bỏ. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp (moving toy bear; "highly preferred").'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n16
+    cau: Trong căn phòng lạ (6 × 6 × 6 feet), 4 trong 8 khỉ được thử, mỗi khỉ 3 phút, hai lần mỗi tuần trong 8 tuần.
+    loai: so-lieu
+    nguon:
+      - harlow1958
+    trich: we have completed tests for this relationship on four of our eight baby monkeys assigned to the dual mother-surrogate condition by introducing them for three minutes into the strange environment of a room measuring six feet by six feet by six feet
+    vi_tri: open-field test
+    ket_qua: da-sua
+    ghi_chu: "Chữ cũ không nói rõ chỉ 4/8 con. Mới nêu số liệu. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp (4 trong 8, 3 phút, 6 × 6 × 6 feet)."
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n17
+    cau: Khi mẹ vải có mặt, khỉ con ôm mẹ rồi dùng mẹ làm "căn cứ" để khám phá và quay về; điểm cảm xúc tổng giảm một nửa.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: Total emotionality score was cut in half when the mother was present.
+    vi_tri: open-field test
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khỉ con có mẹ vải bên cạnh dám bò ra khám phá ...; khỉ con không có mẹ vải thì co rúm một chỗ, mút ngón tay, tê liệt vì sợ" mô tả như hai nhóm khỉ khác nhau; thực ra là cùng 4 khỉ khi mẹ có/không có mặt. "Mút ngón tay" bài nêu "sucking" là một chỉ số cảm xúc; "tê liệt vì sợ" đổi thành "co rúm" ("freeze in a crouched position"). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp ("base of operations", "cut in half"); trang ghi đúng cùng 4 khỉ khi mẹ có hay vắng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n18
+    cau: Khi mẹ vắng, khỉ con thường co rúm (freeze in a crouched position).
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: Frequently they would freeze in a crouched position
+    vi_tri: open-field test
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n19
+    cau: Bốn khỉ đối chứng chưa từng nuôi với mẹ giả có điểm cảm xúc khi mẹ vắng bằng nhóm thí nghiệm khi mẹ vắng.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: Four control infants never raised with a mother surrogate showed the same emotionality scores when the mother was absent as the experimental infants showed in the absence of the mother
+    vi_tri: open-field test
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n20
+    cau: 'Harlow kết luận: contact comfort là biến số có tầm quan trọng áp đảo trong hình thành phản ứng tình cảm, còn việc cho bú không đáng kể.'
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance
+    vi_tri: sau Hình 5
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n21
+    cau: Harlow đề xuất chức năng chính của việc cho bú (như một biến số tình cảm) có lẽ là bảo đảm sự tiếp xúc cơ thể thường xuyên, thân mật giữa mẹ và con.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: the primary function of nursing as an affectional variable is that of insuring frequent and intimate body contact of the infant with the mother
+    vi_tri: sau nhóm đối chứng
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chức năng chính của việc cho bú có lẽ chỉ là..."; thêm giới hạn "như một biến số tình cảm". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp ("insuring frequent and intimate body contact").'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n22
+    cau: Nhóm khỉ nuôi với một mẹ lưới thép hay một mẹ vải ăn lượng sữa và tăng cân như nhau.
+    loai: so-lieu
+    nguon:
+      - harlow1958
+    trich: There were no differences between these two groups in amount of milk ingested or in weight gain.
+    vi_tri: nhóm đối chứng một mẹ
+    ket_qua: dung
+    ghi_chu: 'Chữ cũ (ngộ nhận): "nhóm nào cũng tăng cân như nhau vì đều được bú đủ"; mới chỉ rõ nhóm đối chứng một mẹ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n23
+    cau: Harlow, Dodsworth và Harlow (1965) nghiên cứu khỉ con trong cô lập xã hội hoàn toàn.
+    loai: lich-su
+    nguon:
+      - harlow1965
+    trich: Total social isolation in monkeys.
+    vi_tri: nhan đề (PubMed 4955132)
+    ket_qua: da-sua
+    ghi_chu: "Chỉ đọc nhan đề; toàn văn và tóm tắt không mở được (PMC 285801 bị reCAPTCHA, pnas.org 403). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): chỉ nêu tiêu đề bài 1965, trang nói rõ chưa đọc kết quả."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.54.1.90" ]
+    luot_2_ghi_chu: Chỉ xác nhận được tiêu đề, tác giả, năm qua Crossref; không có tóm tắt.
+    review: dung
+  - id: n24
+    cau: Kết quả của các nghiên cứu cô lập (sợ hãi cực độ, hành vi tự kích thích, không giao tiếp, không giao phối, con cái không chăm con) đã bỏ khỏi trang.
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'chưa chắc: chữ cũ liệt kê các di chứng; không mở được Harlow, Dodsworth & Harlow 1965. Bỏ để kiểm định dứt điểm; người giao/lượt 2 có thể mở bằng PMC từ máy có trình duyệt và thêm lại nếu có trích nguyên văn. Review (Claude Sonnet 5.5, 30/10/2026): câu đã bỏ khỏi trang: mục Harlow, Dodsworth & Harlow 1965 chỉ còn câu "chưa đọc được toàn văn nên trang không nêu chi tiết kết quả"; không còn "sợ hãi cực độ", "không giao phối"… Bỏ đúng vì không mở được bậc 1–2.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Không mở được bài nào về kết quả cô lập (Harlow 1965 không có tóm tắt trên OpenAlex/Crossref; Suomi & Harlow 1972 chỉ thấy tiêu đề). Các chi tiết (sợ hãi, tự kích thích, không giao phối, mẹ không chăm con) phù hợp tài liệu chung nhưng chưa đối chiếu được bậc 1-2. Câu cũng nói về điều đã bỏ khỏi trang.
+    review: dung
+  - id: n25
+    cau: Theo giáo trình mở, các thí nghiệm của Harlow ngày nay bị xem là phi đạo đức.
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: today his experiments are widely considered to be unethical and even cruel
+    vi_tri: OpenStax 9.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phần lớn công trình sau này của Harlow không thể được phép thực hiện ngày nay". Mới theo OpenStax. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp OpenStax ("unethical and even cruel").'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    luot_2_ghi_chu: Đọc qua công cụ đọc web; câu trích đúng ý.
+    review: dung
+  - id: n26
+    cau: "Vào những năm 1960–1970, Harlow làm các thí nghiệm gây tranh cãi nhằm tìm cách chữa trầm cảm và bị chỉ trích dữ dội; một bài lịch sử về ông có tiêu đề \"Harry Harlow's pit of despair: Depression in monkeys and men\"."
+    loai: lich-su
+    nguon:
+      - vanrosmalen2022
+    trich: "Harry Harlow, famous for his research with rhesus monkeys, was heavily criticized when he undertook his controversial experiments trying to find a solution for depression in the 1960s-1970s. (tiêu đề bài: Harry Harlow's pit of despair: Depression in monkeys and men)"
+    vi_tri: tóm tắt (PubMed 35040491)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giếng tuyệt vọng — buồng cô lập sâu, tối, dùng để tạo ra trạng thái trầm cảm ở khỉ con; và mẹ quái vật — mẹ vải được gắn cơ chế gây khó chịu (phun khí, rung lắc)". Chi tiết "buồng sâu, tối", "phun khí, rung lắc" không kiểm được (chưa mở Blum 2002, Harlow & Suomi 1974); bỏ phần "mẹ quái vật". Tóm tắt van Rosmalen nêu tiêu đề "pit of despair". Review (Claude Sonnet 5.5, 30/10/2026): lượt 2 không tìm thấy cụm "pit of despair"; đã xác nhận qua OpenAlex và Europe PMC: đó là tiêu đề bài của van Rosmalen và cộng sự (2022, J Hist Behav Sci 58(2)). Nhưng tóm tắt chỉ nói "controversial experiments trying to find a solution for depression"; vế "gây trầm cảm ở khỉ" của trang không có trong tóm tắt. Chữ cũ: "các thí nghiệm nhằm gây trầm cảm ở khỉ để tìm cách chữa trầm cảm (một bài lịch sử gọi là ''pit of despair'' …)". Chữ mới: "các thí nghiệm gây tranh cãi nhằm tìm cách chữa trầm cảm, và bị chỉ trích dữ dội (bài lịch sử … có tiêu đề ''Harry Harlow''s pit of despair: Depression in monkeys and men'')". Sửa cả đáp án câu 5 (n51): "thí nghiệm gây trầm cảm" thành "thí nghiệm về trầm cảm".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Có bài 'Induced depression in monkeys' (1974, Behavioral Biology; Crossref) nên đúng khung thời gian 1960-1970s, nhưng không mở được nội dung và không tìm được nguồn cụm 'pit of despair'. Không xác nhận được ở bậc 1-2.
+    review: sai
+  - id: n27
+    cau: '"IACUC, nguyên tắc 3R ra đời chính vì các thí nghiệm này": đã bỏ.'
+    loai: lich-su
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "chính chúng là lý do các quy định đạo đức trong nghiên cứu động vật (hội đồng IACUC, nguyên tắc 3R) ra đời và siết chặt về sau". Khẳng định nhân quả lịch sử không có nguồn; bỏ cả ở quiz. Câu chuẩn mực chung giữ: "Theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và giảm thiểu đau đớn" (kiểm ở nhận định chuẩn mực; chưa có nguồn: gia-dinh/đạo đức).'
+    luot_2: dung
+    luot_2_nguon: [ "https://grants.nih.gov/policy-and-compliance/policy-topics/animal-welfare/laws-regulations/phs-policy" ]
+    luot_2_ghi_chu: Câu mô tả điều đã bỏ khỏi trang, không phải khẳng định về nghiên cứu.
+  - id: n28
+    cau: Theo chuẩn mực ngày nay, chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn.
+    loai: loi-khuyen
+    nguon:
+      - openstax2e
+      - phs-policy
+    trich: 'today his experiments are widely considered to be unethical and even cruel (OpenStax) ... PHS Policy: "Procedures with animals will avoid or minimize discomfort, distress, and pain to the animals, consistent with sound research design"; nghiên cứu phải được IACUC duyệt'
+    vi_tri: OpenStax 9.3
+    ket_qua: da-sua
+    ghi_chu: 'Câu chuẩn mực chung (cũng ở pavlov, skinner). Nguồn OpenStax nói "modern ethics guidelines"; không đọc quy định cụ thể (hội đồng đạo đức/giảm thiểu đau đớn). Người giao quyết có cần nguồn quy định (vd. Directive 2010/63/EU, Guide for the Care and Use of Laboratory Animals). Review (Claude Sonnet 5.5, 30/10/2026): câu "phải qua hội đồng đạo đức và giảm thiểu đau đớn" không có nguồn trong hồ sơ (OpenStax chỉ nói thí nghiệm bị xem là phi đạo đức). Đã đọc PHS Policy (olaw.nih.gov): hội đồng IACUC phải duyệt; thủ tục phải "avoid or minimize discomfort, distress, and pain". Thu hẹp câu về chính sách này; thêm nguon phs-policy. Chữ cũ: "Theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và giảm thiểu đau đớn."'
+    luot_2: dung
+    luot_2_nguon: [ "https://grants.nih.gov/policy-and-compliance/policy-topics/animal-welfare/laws-regulations/phs-policy" ]
+    luot_2_ghi_chu: Đúng với chuẩn Hoa Kỳ (PHS Policy); câu nói chung 'ngày nay'.
+    review: sai
+  - id: n29
+    cau: 'Theo Harlow (1958), quan điểm phổ biến lúc đó: động cơ cơ bản là đói, khát...; tình yêu là động cơ phái sinh vì mẹ gắn với việc giảm đói và khát.'
+    loai: lich-su
+    nguon:
+      - harlow1958
+    trich: The mother is associated with the reduction of the primary drives -- particularly hunger, thirst, and pain -- and through learning, affection or love is derived.
+    vi_tri: mục mở đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tâm lý học Mỹ chịu ảnh hưởng nặng của chủ nghĩa hành vi: người ta tin ... tình yêu là phản xạ có điều kiện gắn với việc được cho bú. Thậm chí các bác sĩ nhi khoa khuyên cha mẹ cho con ăn đúng giờ, hạn chế bế ẵm" (không nguồn; Harlow nói "psychologists and sociologists"). Bỏ lời khuyên nhi khoa. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp ("psychologists and sociologists", primary drives).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n30
+    cau: Harlow nghi ngờ quan niệm đó; ông cho rằng việc cho ăn là cơ chế không đủ để giải thích sự bền bỉ của gắn bó mẹ con.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: It is entirely reasonable to believe that the mother through association with food may become a secondary-reinforcing agent, but this is an inadequate mechanism to account for the persistence of the infant-maternal ties.
+    vi_tri: mục mở đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n31
+    cau: 'Một giáo trình mở mô tả: Harlow (1958) kết luận gắn bó mẹ con không chỉ là dinh dưỡng; trước đó giới khoa học y học thường nghĩ trẻ gắn bó với người cho ăn.'
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: Prior to this study, the medical and scientific communities generally thought that babies become attached to the people who provide their nourishment.
+    vi_tri: OpenStax 9.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đòn đánh trực diện... thắng thuyết phục đến mức thay đổi cách cả thế giới nghĩ về việc nuôi dạy trẻ" (không nguồn; bỏ). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp OpenStax 9.3.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    luot_2_ghi_chu: Đọc qua công cụ đọc web.
+    review: dung
+  - id: n32
+    cau: Harlow gọi biến số quan trọng đó (được ôm ấp, tiếp xúc cơ thể) là "contact comfort".
+    loai: dinh-nghia
+    nguon:
+      - harlow1958
+    trich: contact comfort might be a very important variable in the development of the infant's affection for the mother
+    vi_tri: tr. trước thí nghiệm
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhu cầu nguyên thủy không kém nhu cầu ăn" (diễn đạt của site; Harlow: "important variable"). Mới: "biến số quan trọng". Review (Claude Sonnet 5.5, 30/10/2026): ghi_chu lượt 1 nói đã bỏ "nhu cầu nguyên thủy không kém nhu cầu ăn" nhưng trang còn ba chỗ "nguyên thủy" (đoạn Điều gì đang xảy ra, gạch đầu dòng Sự dễ chịu khi tiếp xúc, đáp án đúng câu 4). Đã đọc toàn văn Harlow 1958: ông viết "contact comfort might be a very important variable", không nói "nguyên thủy" hay "độc lập với nhu cầu ăn". Đã sửa cả ba chỗ: "ngoài việc cho bú, còn có một biến số quan trọng khác"; "Harlow cho rằng sự gắn bó của khỉ con chịu ảnh hưởng áp đảo từ cảm giác mềm mại, ấm áp, được ôm, còn việc cho bú chỉ có tầm quan trọng không đáng kể" (n20); đáp án câu 4: "theo Harlow, đó là biến số có tầm quan trọng áp đảo trong việc hình thành gắn bó của khỉ con, hơn hẳn việc cho bú" (n50).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: sai
+  - id: n33
+    cau: 'Khá vững: sự dễ chịu khi tiếp xúc quan trọng hơn việc cho bú trong gắn bó của khỉ con.'
+    loai: nhan
+    nguon:
+      - harlow1958
+      - openstax2e
+    trich: contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance
+    vi_tri: sau Hình 5
+    nhan: kha-vung
+    co_so:
+      - harlow1958
+      - openstax2e
+    ly_do: '8 khỉ trong một phòng thí nghiệm, kết quả cùng chiều ở cả hai điều kiện sữa; chưa có tái lập độc lập hay phân tích tổng hợp đã mở; không thể lặp lại theo chuẩn đạo đức hiện nay: đúng mô tả Khá vững (mục 4). Opus xét lại (chỗ khó): giữ Khá vững. Hiện tượng do phòng thí nghiệm Harlow báo cáo (Harlow 1958, Harlow & Zimmermann 1959), cùng chiều với nghiên cứu gắn bó về sau, nhưng không có phân tích tổng hợp hay tái lập độc lập đã mở cho chính khẳng định "tiếp xúc quan trọng hơn cho bú", mẫu nhỏ (4 + 4 khỉ), và thí nghiệm không thể làm lại theo chuẩn đạo đức nay.'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: chữ cũ :::vung-chac với "Hiệu ứng này được lặp lại trong nhiều nghiên cứu của chính phòng thí nghiệm Harlow và các nhóm khác" (không dẫn được). Thước đo Vững chắc cần phân tích tổng hợp hoặc hai tái lập; chưa có. Hạ xuống Khá vững; người giao/lượt 2 cân nhắc. Harlow & Zimmermann 1959 chưa đọc (chỉ nhan đề).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm", "https://psychclassics.yorku.ca/Harlow/fig5.jpg" ]
+    luot_2_ghi_chu: "Nhãn 'Khá vững' hợp thước đo mục 4: nhiều nghiên cứu cùng chiều nhưng không có phân tích tổng hợp hay tái lập có đăng ký trước, mẫu rất nhỏ (8 khỉ), một loài."
+  - id: n34
+    cau: 'Khá vững: 4 trong 8 khỉ dùng mẹ vải làm "căn cứ" (base of operations) để khám phá phòng lạ (Harlow 1958); trang ví hình ảnh này với "căn cứ an toàn" của Bowlby (phép so sánh của trang, theo định nghĩa của OpenStax); Suomi và cộng sự (1976): nhóm 4 khỉ có hành vi trầm cảm sau nhiều lần tách có thể trở lại hoạt động xã hội phù hợp tuổi nhờ tiếp xúc lặp lại với bạn cùng tuổi năng động.'
+    loai: nhan
+    nguon:
+      - harlow1958
+      - openstax2e
+      - suomi1976
+    trich: monkeys showing depressive begaviors after repeated separations can be returned to age-appropriate social performance through repeated exposure to socially active age-mates
+    vi_tri: tóm tắt Suomi 1976; Harlow 1958; OpenStax 9.3
+    nhan: kha-vung
+    co_so:
+      - harlow1958
+      - openstax2e
+      - suomi1976
+    ly_do: 'Hai nghiên cứu nhỏ trên khỉ (Harlow 1958: 4/8 khỉ trong open-field; Suomi 1976: nhóm 4 khỉ), không tái lập độc lập; phép so sánh với Bowlby chỉ là sự tương đồng về khái niệm do trang nêu (OpenStax định nghĩa căn cứ an toàn nhưng không nối với thí nghiệm của Harlow). Chỉ đạt mức thấp nhất của Khá vững; không thể nâng lên.'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: chữ cũ gộp "thiếu tiếp xúc sớm để lại di chứng lâu dài" (nguồn 1965 không mở được) và "Stephen Suomi chứng minh ... bạn đồng loại kiên nhẫn" — mới dẫn Suomi, Delizio & Harlow 1976 (AJP 133(11): 1279–1285). Mục nguon Suomi trên trang cũ là "Suomi, Harlow & McKinney (1972) ... 129(10), 127–132": sai; nguon.yml (suomi1972) cũng cần sửa — việc người giao (dữ liệu dùng chung). Review (Claude Sonnet 5.5, 30/10/2026): lượt 2 khong-chac vì (a) không đọc được Suomi 1976 (đã tra nhầm bài J Child Psychol Psychiatry): đã mở tóm tắt đúng bài Am J Psychiatry 133(11):1279–1285 (PubMed 824960): "four monkeys reared together, repeatedly separated … monkeys showing depressive behaviors after repeated separations can be returned to age-appropriate social performance through repeated exposure to socially active age-mates", khớp trang; (b) OpenStax không nối căn cứ an toàn với thí nghiệm khỉ (đã đọc 9.3), nên "gần với … (theo OpenStax)" gán sai cho OpenStax. Đã sửa trang thành "(Harlow, 1958; Harlow gọi là ''base of operations''). Chúng tôi ví hình ảnh này với ''căn cứ an toàn'' … đây là phép so sánh của trang". Harlow viết "base of operations" (đã đọc). Nhãn Khá vững là mức thấp nhất hợp lý: chỉ hai nghiên cứu nhỏ, nên mức này chưa chắc.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Phần Harlow 1958 (4 trong 8 khỉ dùng mẹ vải làm căn cứ) đúng. Phần Suomi và cộng sự (1976, J Child Psychol Psychiatry 17:101-112; PMID 819450) không đọc được (không có tóm tắt), nên không xác nhận được mệnh đề 'khỉ trầm cảm sau tách phục hồi nhờ bạn cùng tuổi'. Phần 'gần với căn cứ an toàn của Bowlby (theo OpenStax)': trang OpenStax 9.3 định nghĩa căn cứ an toàn nhưng không nối với thí nghiệm khỉ của Harlow. Câu ghép nhiều mệnh đề, nên tách."
+    review: sai
+  - id: n35
+    cau: 'Đang tranh cãi: suy rộng sang con người được bao xa.'
+    loai: nhan
+    nguon:
+      - harlow1958
+      - openstax2e
+    trich: basic responses relating to affection, including nursing, contact, clinging, and even visual and auditory exploration, exhibit no fundamental differences in the two species
+    vi_tri: tr. đầu (quan điểm của Harlow)
+    nhan: tranh-cai
+    co_so:
+      - harlow1958
+      - openstax2e
+    ly_do: 'Harlow tự coi phản ứng tình cảm cơ bản của khỉ và trẻ là tương tự; các tác giả sau (OpenStax) nhấn mạnh Bowlby và Ainsworth mở rộng sang trẻ em và chỉ ra khác biệt về kiểu gắn bó; chưa có nghiên cứu tổng hợp để quyết. Opus xét lại: giữ Đang tranh cãi (suy từ khỉ sang người là diễn giải, chưa có bằng chứng trực tiếp đã mở).'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ở người, cho con bú còn liên quan đến dinh dưỡng, miễn dịch và tiếp xúc da kề da" (không nguồn; bỏ "miễn dịch", "da kề da"). "Khỉ rhesus": Harlow nêu "macaque" và "rhesus monkeys" (tr. đầu).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    luot_2_ghi_chu: "Nhãn 'Đang tranh cãi' cho việc suy rộng sang người: hợp lý; đây là chỗ giới hạn ngoại suy (loài khác, 8 khỉ, nuôi nhân tạo), chưa có nguồn cụ thể để so thước đo."
+  - id: n36
+    cau: Giáo trình mở mô tả Bowlby xây dựng thuyết gắn bó dựa trên công trình của Harlow và những người khác; gắn bó là sợi dây tình cảm giữa trẻ và mẹ; người chăm sóc là "căn cứ an toàn".
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: Building on the work of Harlow and others, John Bowlby developed the concept of attachment theory.
+    vi_tri: OpenStax 9.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Harlow là một trong những nguồn cảm hứng thực nghiệm quan trọng nhất cho Bowlby" (xếp hạng không nguồn); "hệ thống hành vi gắn bó bẩm sinh" bỏ. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp OpenStax 9.3 (Bowlby, attachment theory).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    luot_2_ghi_chu: Đọc qua công cụ đọc web.
+    review: dung
+  - id: n37
+    cau: Mary Ainsworth nghiên cứu cách trẻ gắn bó khác nhau bằng "tình huống lạ" (strange situation).
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: she used the Strange Situation procedure to study attachment
+    vi_tri: OpenStax 9.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ainsworth sau này kiểm chứng ở trẻ em" (OpenStax: nghiên cứu cách trẻ gắn bó khác nhau, không phải "kiểm chứng" Bowlby). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp OpenStax (Ainsworth, Strange Situation).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.2307/1127388" ]
+    luot_2_ghi_chu: Chỉ xác nhận tiêu đề và năm qua Crossref.
+    review: dung
+  - id: n38
+    cau: Trong thí nghiệm 1958, bốn khỉ đối chứng chưa từng có mẹ giả được cho mẹ vải khi 250 ngày tuổi; sau 12–48 giờ khó chịu chúng dần tiếp xúc mẹ vải; thời gian bám mẹ vải tối đa chỉ khoảng một nửa nhóm nuôi từ đầu, Harlow lưu ý chưa biết có phải do kinh nghiệm sớm.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: Although the maximum time that the control monkeys spent on the cloth mother was only about half that Spent by the original dual mother-surrogate group, we cannot be sure that this discrepancy is a function of differential early experience.
+    vi_tri: thử nghiệm mẹ vải muộn
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (mục "Giai đoạn nhạy cảm"): "khỉ bị cô lập toàn diện trong vài tháng đầu đời khó phục hồi hơn hẳn — gợi ý có cửa sổ phát triển" (nguồn Harlow 1965 không mở được). Mới theo Harlow 1958 (nhóm không phải cô lập hoàn toàn). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp (250 ngày, 12–48 giờ, "only about half", "cannot be sure").'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n39
+    cau: Việc suy ra "bế ẵm trẻ sơ sinh không làm hư trẻ" là suy luận từ khỉ sang người, chưa được kiểm chứng ở trang này.
+    loai: loi-khuyen
+    nguon:
+      - harlow1958
+    trich: The baby, human or monkey, if it is to survive, must clutch at more than a straw.
+    vi_tri: tr. đầu (Harlow chỉ liên hệ so sánh)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Quan niệm cũ đừng bế nhiều kẻo trẻ quen hơi đã bị chính dữ liệu của Harlow bác bỏ ... Da kề da, bế ẵm, ru ngủ đều là contact comfort của con người". Mới nêu rõ suy luận; không có nguồn ở trẻ em trong hồ sơ này. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): đã ghi rõ là suy luận.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    luot_2_ghi_chu: Câu nói rõ là suy luận chưa kiểm chứng; khớp với giới hạn của thí nghiệm.
+    review: dung
+  - id: n40
+    cau: 'Một cách đọc theo nghĩa bóng: mẹ vải mềm ấm được khỉ con chọn hơn mẹ lưới thép có sữa; không phải kết luận khoa học về các mối quan hệ của người.'
+    loai: loi-khuyen
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Chất lượng sự hiện diện quan trọng hơn quà cáp vật chất ... sự ấm áp, kiên nhẫn tạo gắn bó bền hơn việc chỉ chu cấp vật chất": khẳng định về quan hệ người không nguồn; viết thành nghĩa bóng có rào đón. Review (Claude Sonnet 5.5, 30/10/2026): câu nghĩa bóng đã ghi rõ không phải kết luận khoa học; thêm nguon harlow1958 (kết quả thí nghiệm mà nó dựa vào).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    luot_2_ghi_chu: Câu hedged, không phải kết luận khoa học.
+    nguon:
+      - harlow1958
+    trich: contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance
+    review: dung
+  - id: n41
+    cau: Trong thuyết gắn bó (Bowlby, theo OpenStax), người chăm sóc là căn cứ an toàn để trẻ khám phá.
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: A secure base is a parental presence that gives the child a sense of safety as he explores his surroundings.
+    vi_tri: OpenStax 9.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trẻ dám thử cái mới khi biết có chỗ để quay về. Một lớp học, một gia đình mà trẻ cảm thấy an toàn sẽ nuôi dưỡng sự tò mò tốt hơn môi trường chỉ có kỷ luật lạnh lùng" (khẳng định không nguồn). Mới dùng định nghĩa. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp định nghĩa secure base của OpenStax.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    luot_2_ghi_chu: Đọc qua công cụ đọc web.
+    review: dung
+  - id: n42
+    cau: Đừng biến Harlow thành cớ để cực đoan ("bú bình là thiếu tình cảm", "mẹ đi làm là bỏ con"); dữ liệu nói về khỉ con và nhu cầu tiếp xúc.
+    loai: loi-khuyen
+    nguon:
+      - harlow1958
+    trich: We had separated more than 60 of these animals from their mothers 6 to 12 hours after birth and suckled them on tiny bottles.
+    vi_tri: 'tr. đầu: khỉ bú bình khỏe và nặng hơn khỉ mẹ nuôi'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Hỗ trợ: Harlow 1958 ghi khỉ bú bình "healthier and heavier than monkey-mother-reared infants". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): lời khuyên thận trọng, khớp phạm vi dữ liệu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    luot_2_ghi_chu: Lời khuyên thận trọng, khớp phạm vi dữ liệu (khỉ con, nhu cầu tiếp xúc).
+    review: dung
+  - id: n43
+    cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu tương tự trên linh trưởng hay trên trẻ em Việt Nam.
+    loai: thoi-su
+    het_han: '2028-10-01'
+    ket_qua: dung
+    ghi_chu: 'Tìm 30/10/2026 (PubMed, Crossref): xem ghi chú dưới; chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Sonnet 5.5, 30/10/2026): thêm nguon tim-kiem-vn. Tự tìm lại 30/10/2026 qua Europe PMC: ("surrogate mother" OR "contact comfort" OR "surrogate mothers") AND (Vietnam OR Vietnamese): 1 kết quả, về sinh sản hỗ trợ, không liên quan; ("maternal deprivation" OR attachment OR "institutional care") AND orphanage AND Vietnam: 0 kết quả. Chưa tìm tạp chí trong nước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works?search=Harlow%20surrogate%20mother%20Vietnam" ]
+    luot_2_ghi_chu: Phép tìm OpenAlex 30/10/2026 (Harlow, surrogate, Vietnam; orphanage attachment Vietnam) không ra bản lặp lại; chỉ thấy nghiên cứu liên quan nhà trẻ ở Việt Nam (ví dụ doi 10.4236/jss.2018.611021) không phải thí nghiệm tương tự. Phủ định không chứng minh hết được; câu đã có mốc 10/2026.
+    nguon:
+      - tim-kiem-vn
+    vi_tri: lần tìm 30/10/2026 (Europe PMC)
+    review: dung
+  - id: n44
+    cau: Quan sát văn hóa về cách chăm trẻ truyền thống của Việt Nam (bế ẵm nhiều, ru ngủ, ngủ chung) và khoảng trống nghiên cứu ở các cơ sở chăm sóc trẻ mồ côi, khuyết tật.
+    loai: thoi-su
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "cách chăm trẻ truyền thống của Việt Nam — bế ẵm nhiều, ru ngủ trên tay, ngủ chung — vốn đã coi trọng tiếp xúc cơ thể" và "bối cảnh các cơ sở chăm sóc trẻ mồ côi, khuyết tật". Không có nguồn Việt Nam; bỏ. Review (Claude Sonnet 5.5, 30/10/2026): câu đã bỏ khỏi trang (mục Ở Việt Nam chỉ còn n43); không nguồn bậc 1–2. Thêm het_han vì loại thoi-su đòi hạn.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Quan sát văn hóa về cách chăm trẻ Việt Nam (bế ẵm nhiều, ngủ chung) và 'khoảng trống nghiên cứu' không có nguồn bậc 1-2 nào được mở. Cần nguồn hay bỏ.
+    het_han: 2028-10-01
+    review: dung
+  - id: n45
+    cau: Harlow (1958) viết rằng tình cảm của khỉ con với mẹ thật và mẹ vải "có vẻ rất giống nhau", dựa trên quan sát hai khỉ con do mẹ thật nuôi, và hy vọng kiểm tra chắc chắn vào năm sau.
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: Love for the real mother and love for the surrogate mother appear to be very similar.
+    vi_tri: tr. gần cuối
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "các nghiên cứu sau cho thấy khỉ nuôi bằng mẹ giả vẫn phát triển lệch lạc ... so với khỉ được mẹ thật nuôi" (nguồn không mở được); thay bằng nhận xét của Harlow, ghi rõ là sơ bộ. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): khớp ("appear to be very similar", hai khỉ do mẹ thật nuôi, "Next year…").'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
+  - id: n46
+    cau: Harlow cho rằng sẽ còn các biến số khác quan trọng (nâng đỡ tư thế, chuyển động đung đưa, âm thanh, thị giác).
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: In spite of the importance of contact comfort, there is reason to believe that other variables of measurable importance will be discovered.
+    vi_tri: tr. gần cuối
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n47
+    cau: 'Quiz 1: Harlow loại trừ khả năng khỉ chỉ bám bên có sữa bằng cách chia 8 khỉ con thành hai nhóm: 4 bú mẹ vải, 4 bú mẹ lưới thép; kết quả hai nhóm tương tự.'
+    loai: so-lieu
+    nguon:
+      - harlow1958
+    trich: For four newborn monkeys the cloth mother lactated and the wire mother did not; and, for the other four, this condition was reversed.
+    vi_tri: thí nghiệm đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giống hệt nhau"; mới "tương tự". Giải thích cũ "điểm mạnh của thiết kế" đổi thành nêu thêm giới hạn mẫu 8 khỉ. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): quiz 1 khớp (4 + 4); giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    luot_2_ghi_chu: Quiz khớp bài gốc; nhóm thí nghiệm 8 khỉ chia 4 và 4, kết quả hai nhóm tương tự.
+    review: dung
+  - id: n48
+    cau: 'Quiz 2: khỉ con dành phần lớn thời gian bên mẹ vải bất kể sữa ở mẹ nào; với những khỉ bú mẹ lưới thép, thời gian trên mẹ vải còn tăng dần theo tuổi, còn thời gian trên mẹ lưới thép chỉ khoảng 1–2 giờ mỗi ngày.'
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: With age and opportunity to learn, subjects with the lactating wire mother showed decreasing responsiveness to her and increasing responsiveness to the nonlactating cloth mother
+    vi_tri: thí nghiệm đầu
+    ket_qua: da-sua
+    ghi_chu: 'Câu hỏi cũ có số 17–18 giờ và "dưới 1 giờ" (Hình 5; xem n1); đổi thành câu hỏi định tính. Review (Claude Sonnet 5.5, 30/10/2026): như n14: Hình 5 không cho thấy thời gian trên mẹ lưới thép giảm. Chữ cũ trong lời giải thích: "với những khỉ bú mẹ lưới thép, thời gian trên mẹ lưới thép còn giảm dần theo tuổi". Chữ mới: "thời gian trên mẹ vải còn tăng dần theo tuổi, còn thời gian trên mẹ lưới thép chỉ khoảng 1–2 giờ mỗi ngày".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Như n14: Harlow viết thời gian trên mẹ lưới giảm theo tuổi ở nhóm bú mẹ lưới, nhưng Hình 5 (25 ngày đầu) cho thấy phẳng hoặc hơi tăng; Hình 6 (165 ngày) không đọc được. Phần 'phần lớn thời gian bên mẹ vải' đúng."
+    review: sai
+  - id: n49
+    cau: 'Quiz 3: khi bị làm sợ, khỉ con ưa mẹ vải hơn rõ rệt, kể cả khi sữa ở mẹ lưới thép.'
+    loai: phat-hien
+    nguon:
+      - harlow1958
+    trich: 'In this situation, the variable of nursing appears to be of absolutely no importance: the infant consistently seeks the soft mother surrogate regardless of nursing condition.'
+    vi_tri: thử nghiệm sợ hãi
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ôm chặt mẹ vải rồi mới dần bình tĩnh, có con còn quay lại đối đầu" (không kiểm được). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích (Harlow 1958 toàn văn psychclassics hay OpenStax 9.3): quiz 3 khớp ("regardless of nursing condition").'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    luot_2_ghi_chu: "Khớp bài gốc (thử với vật gây sợ: gấu đồ chơi chuyển động)."
+    review: dung
+  - id: n50
+    cau: 'Quiz 4: "contact comfort" là biến số tình cảm quan trọng áp đảo, còn việc cho bú là không đáng kể.'
+    loai: dinh-nghia
+    nguon:
+      - harlow1958
+    trich: contact comfort is a variable of overwhelming importance in the development of affectional response, whereas lactation is a variable of negligible importance
+    vi_tri: sau Hình 5
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+  - id: n51
+    cau: 'Quiz 5: giáo trình mở nói các thí nghiệm của Harlow ngày nay bị xem là phi đạo đức; công trình sau này (cô lập hoàn toàn, thí nghiệm về trầm cảm) bị chỉ trích dữ dội.'
+    loai: lich-su
+    nguon:
+      - openstax2e
+      - vanrosmalen2022
+    trich: today his experiments are widely considered to be unethical and even cruel
+    vi_tri: OpenStax 9.3; van Rosmalen 2022
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giếng tuyệt vọng", "mẹ quái vật" và "IACUC, 3R" bỏ. Review (Claude Sonnet 5.5, 30/10/2026): "cô lập hoàn toàn" có trong tiêu đề Harlow 1965 (Total social isolation in monkeys); "gây trầm cảm" không có nguồn, đổi thành "về trầm cảm" (như n26). Chữ cũ: "thí nghiệm gây trầm cảm".'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    luot_2_ghi_chu: Phần 'công trình sau (cô lập, gây trầm cảm) bị chỉ trích dữ dội' không đối chiếu được (xem n24, n26); phần giáo trình đúng.
+    review: sai
+  - id: n52
+    cau: 'Hình "harlow-contact" (biểu đồ cột, đã sửa): số giờ trung bình mỗi ngày trên hai mẹ giả lúc 21–25 ngày tuổi, hai nhóm 4 khỉ (sữa ở mẹ vải; sữa ở mẹ lưới thép); "dù sữa ở mẹ nào, khỉ con ở trên mẹ vải phần lớn thời gian trong ngày"; số đọc gần đúng từ Hình 5 của Harlow (1958).'
+    loai: so-lieu
+    nguon:
+      - harlow1958b
+      - harlow1958
+    trich: Figure 5 shows the total time spent on the cloth and wire mothers under the two conditions of feeding. These data make it obvious that contact comfort is a variable of overwhelming importance
+    vi_tri: Hình 5 (tr. 674, "Time spent on cloth and wire mother surrogates"; trục tung "MEAN HOURS PER DAY", 0–24; trục hoành 1–5 … 21–25 ngày tuổi), bản quét có hình
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó (Opus): mở được bản quét có hình và đọc Hình 5. Hình cũ: một cột "mẹ vải (mềm ấm) 17–18 giờ", một cột "mẹ sắt (có sữa) dưới 1 giờ", chú thích "đúng bằng thời gian bú rồi quay về ngay. Nguồn: Harlow (1958); số liệu theo bài viết." Sai: (1) hình gốc tách hai nhóm theo nơi có sữa, hình cũ gộp thành một và gán sữa cho mẹ lưới thép; (2) nhóm có sữa ở mẹ lưới thép ở trên mẹ lưới thép khoảng 1–2 giờ/ngày, không phải "dưới 1 giờ", và trên mẹ vải tăng từ khoảng 7 giờ (1–5 ngày) lên khoảng 16 giờ (16–25 ngày); (3) bài không nói "đúng bằng thời gian bú rồi quay về ngay" (không đo thời gian bú); (4) "mẹ sắt" đổi "mẹ lưới thép" (wire mother). Hình mới: bốn cột theo hai nhóm, mốc 21–25 ngày, số làm tròn ghi "≈", chú thích nói rõ là đọc gần đúng từ đồ thị. Trang giữ chữ "phần lớn thời gian" nên khớp hình. Tên hình đã thêm vào HINH_DA_SUA (tests/chuyen.test.mjs). Review (Claude Sonnet 5.5, 30/10/2026): đã đối chiếu hình src/hinh/harlow-contact.html với ảnh Hình 5 (psychclassics fig5.jpg): nhóm sữa ở mẹ vải: mẹ vải ≈ 19 giờ (đường 21–25 ngày ≈ 19), mẹ lưới thép < 1 giờ; nhóm sữa ở mẹ lưới thép: mẹ vải ≈ 16, mẹ lưới thép ≈ 2; chiều cao cột khớp thang (11 px/giờ); chữ trong hình là chữ thật, màu theo lớp pz-fig-a/b; chú thích "số đọc gần đúng".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm", "https://psychclassics.yorku.ca/Harlow/fig5.jpg" ]
+    luot_2_ghi_chu: "Hai nhóm 4 khỉ, giờ trung bình mỗi ngày: đúng. Đã mở ảnh Hình 5 (psychclassics) và đọc số."
+    review: dung
+  - id: n53
+    cau: Hộp "Tóm tắt nhanh" dựng tự động từ ý chính của các khung nhãn.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: "Như n58 của asch.yml. Review (Claude Sonnet 5.5, 30/10/2026): Đã kiểm src/plugins/thanh-phan.mjs (hàm tomTat) và trang có ::tom-tat với ba khung nhãn."
+    review: dung
+  - id: n54
+    cau: 'Trang này là trang nhà của nghiên cứu Harlow: nơi khác chỉ tóm một câu và link về.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/data/nghien-cuu.yml: id harlow, trang_nha thi-nghiem/harlow, nguon [harlow1958, harlow1959, harlow1965]. Review (Claude Sonnet 5.5, 30/10/2026): Đã kiểm src/data/nghien-cuu.yml: id harlow, trang_nha thi-nghiem/harlow, nguon [harlow1958, harlow1959, harlow1965].'
+    review: dung
+  - id: n55
+    cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Bốn dòng khớp mục Nghiên cứu then chốt (8 khỉ; 4+4; kết quả). Review (Claude Sonnet 5.5, 30/10/2026): hộp ghi "cộng thêm các nhóm đối chứng khỉ nuôi không có mẹ giả" (số nhiều, không có trong phần kể: phần kể chỉ có 4 khỉ đối chứng chưa từng nuôi với mẹ giả, và ở mục Ngộ nhận nhóm một mẹ). Đã sửa hộp thành "cộng thêm 4 khỉ đối chứng chưa từng nuôi với mẹ giả" (Harlow 1958: "Four control infants never raised with a mother surrogate"). Các dòng còn lại khớp phần kể.'
+    review: sai
+  - id: n56
+    cau: 'Hình harlow-contact: nhóm có sữa ở mẹ vải, lúc 21–25 ngày tuổi, ở trên mẹ vải khoảng 19 giờ mỗi ngày.'
+    loai: so-lieu
+    nguon:
+      - harlow1958b
+    trich: Figure 5 shows the total time spent on the cloth and wire mothers under the two conditions of feeding.
+    vi_tri: 'Hình 5 (tr. 674, "Time spent on cloth and wire mother surrogates"; trục tung "MEAN HOURS PER DAY", 0–24; trục hoành 1–5 … 21–25 ngày tuổi), bản quét có hình; điểm 21–25 ngày của đường CLOTH MOTHER, bảng FED ON CLOTH MOTHER: khoảng 19–20 giờ (đọc theo vạch 18 và 24)'
+    ket_qua: dung
+    ghi_chu: 'Opus, đọc từ hình (không có bảng số): số làm tròn đến giờ, ghi "≈" trên hình. Hình 6 (tr. 674, đến 165 ngày) cùng chiều: mẹ vải khoảng 12–18 giờ, mẹ lưới thép khoảng 1 giờ ở cả hai nhóm. Review (Claude Sonnet 5.5, 30/10/2026): đã đối chiếu với Hình 5 (ảnh psychclassics) như n52: khớp số đọc gần đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/fig5.jpg" ]
+    review: dung
+  - id: n57
+    cau: 'Hình harlow-contact: nhóm có sữa ở mẹ vải ở trên mẹ lưới thép dưới 1 giờ mỗi ngày.'
+    loai: so-lieu
+    nguon:
+      - harlow1958b
+    trich: Figure 5 shows the total time spent on the cloth and wire mothers under the two conditions of feeding.
+    vi_tri: 'Hình 5 (tr. 674, "Time spent on cloth and wire mother surrogates"; trục tung "MEAN HOURS PER DAY", 0–24; trục hoành 1–5 … 21–25 ngày tuổi), bản quét có hình; đường WIRE MOTHER, bảng FED ON CLOTH MOTHER: sát vạch 0, khoảng 0,5 giờ ở mọi mốc'
+    ket_qua: dung
+    ghi_chu: 'Opus, đọc từ hình (không có bảng số): số làm tròn đến giờ, ghi "≈" trên hình. Hình 6 (tr. 674, đến 165 ngày) cùng chiều: mẹ vải khoảng 12–18 giờ, mẹ lưới thép khoảng 1 giờ ở cả hai nhóm. Review (Claude Sonnet 5.5, 30/10/2026): đã đối chiếu với Hình 5 (ảnh psychclassics) như n52: khớp số đọc gần đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/fig5.jpg" ]
+    review: dung
+  - id: n58
+    cau: 'Hình harlow-contact: nhóm có sữa ở mẹ lưới thép, lúc 21–25 ngày tuổi, ở trên mẹ vải khoảng 16 giờ mỗi ngày.'
+    loai: so-lieu
+    nguon:
+      - harlow1958b
+    trich: Figure 5 shows the total time spent on the cloth and wire mothers under the two conditions of feeding.
+    vi_tri: 'Hình 5 (tr. 674, "Time spent on cloth and wire mother surrogates"; trục tung "MEAN HOURS PER DAY", 0–24; trục hoành 1–5 … 21–25 ngày tuổi), bản quét có hình; điểm 16–20 và 21–25 ngày của đường CLOTH MOTHER, bảng FED ON WIRE MOTHER: khoảng 16 giờ (từ khoảng 7 giờ lúc 1–5 ngày)'
+    ket_qua: dung
+    ghi_chu: 'Opus, đọc từ hình (không có bảng số): số làm tròn đến giờ, ghi "≈" trên hình. Hình 6 (tr. 674, đến 165 ngày) cùng chiều: mẹ vải khoảng 12–18 giờ, mẹ lưới thép khoảng 1 giờ ở cả hai nhóm. Review (Claude Sonnet 5.5, 30/10/2026): đã đối chiếu với Hình 5 (ảnh psychclassics) như n52: khớp số đọc gần đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/fig5.jpg" ]
+    review: dung
+  - id: n59
+    cau: 'Hình harlow-contact: nhóm có sữa ở mẹ lưới thép, lúc 21–25 ngày tuổi, ở trên mẹ lưới thép khoảng 2 giờ mỗi ngày.'
+    loai: so-lieu
+    nguon:
+      - harlow1958b
+    trich: Figure 5 shows the total time spent on the cloth and wire mothers under the two conditions of feeding.
+    vi_tri: 'Hình 5 (tr. 674, "Time spent on cloth and wire mother surrogates"; trục tung "MEAN HOURS PER DAY", 0–24; trục hoành 1–5 … 21–25 ngày tuổi), bản quét có hình; điểm 21–25 ngày của đường WIRE MOTHER, bảng FED ON WIRE MOTHER: khoảng 2 giờ (khoảng 1–2 giờ ở mọi mốc)'
+    ket_qua: dung
+    ghi_chu: 'Opus, đọc từ hình (không có bảng số): số làm tròn đến giờ, ghi "≈" trên hình. Hình 6 (tr. 674, đến 165 ngày) cùng chiều: mẹ vải khoảng 12–18 giờ, mẹ lưới thép khoảng 1 giờ ở cả hai nhóm. Review (Claude Sonnet 5.5, 30/10/2026): đã đối chiếu với Hình 5 (ảnh psychclassics) như n52: khớp số đọc gần đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/fig5.jpg" ]
+    review: dung
+  - id: n60
+    cau: 'Hình harlow-contact: mỗi nhóm 4 khỉ.'
+    loai: so-lieu
+    nguon:
+      - harlow1958b
+    trich: For four newborn monkeys the cloth mother lactated and the wire mother did not; and, for the other four, this condition was reversed.
+    vi_tri: Hình 5 (tr. 674, "Time spent on cloth and wire mother surrogates"; trục tung "MEAN HOURS PER DAY", 0–24; trục hoành 1–5 … 21–25 ngày tuổi), bản quét có hình; "For four newborn monkeys the cloth mother lactated and the wire mother did not; and, for the other four, this condition was reversed."
+    ket_qua: dung
+    ghi_chu: "Opus. Review (Claude Sonnet 5.5, 30/10/2026): đã đối chiếu với Hình 5 (ảnh psychclassics) như n52: khớp số đọc gần đúng."
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Harlow/love.htm" ]
+    review: dung
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: (không có)
-  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
-  ly_do: Bố cục C (kế hoạch).
-- cu: 'Khung Vững chắc: "sự dễ chịu khi tiếp xúc quyết định gắn bó, không phải việc cho ăn"'
-  moi: Khung Khá vững cùng ý (viết lại)
-  ly_do: 'Thước đo nhãn: không có phân tích tổng hợp hay tái lập đã mở; xem nhận định nhãn.'
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: (không có)
+    moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Khung Vững chắc: "sự dễ chịu khi tiếp xúc quyết định gắn bó, không phải việc cho ăn"'
+    moi: Khung Khá vững cùng ý (viết lại)
+    ly_do: 'Thước đo nhãn: không có phân tích tổng hợp hay tái lập đã mở; xem nhận định nhãn.'
+  - cu: 'Hình harlow-contact: một cột "mẹ vải (mềm ấm) 17–18 giờ", một cột "mẹ sắt (có sữa) dưới 1 giờ"; chú thích "…đúng bằng thời gian bú rồi quay về ngay. Nguồn: Harlow (1958); số liệu theo bài viết."'
+    moi: 'Bốn cột theo hai nhóm 4 khỉ (sữa ở mẹ vải: mẹ vải ≈ 19 giờ, mẹ lưới thép dưới 1 giờ; sữa ở mẹ lưới thép: mẹ vải ≈ 16 giờ, mẹ lưới thép ≈ 2 giờ), lúc 21–25 ngày tuổi; chú thích: số đọc gần đúng từ Hình 5 của Harlow (1958)'
+    ly_do: Đối chiếu Hình 5 của bài in (n52, n56–n60); "mẹ sắt" thành "mẹ lưới thép"; câu "đúng bằng thời gian bú" không có trong bài. Hình có tên trong HINH_DA_SUA.
+  - cu: '"với những con bú mẹ lưới thép, thời gian trên mẹ lưới thép giảm dần theo tuổi còn thời gian trên mẹ vải tăng" (đoạn Kết quả; lời giải thích câu 2)'
+    moi: '"…thời gian trên mẹ vải tăng dần theo tuổi (khoảng 7 giờ lên khoảng 16 giờ mỗi ngày trong 25 ngày đầu, đọc từ Hình 5), còn thời gian trên mẹ lưới thép chỉ khoảng 1–2 giờ mỗi ngày"'
+    ly_do: "Review: Hình 5 cho thấy đường mẹ lưới thép phẳng (n14, n48)."
+  - cu: '"nhu cầu khác, nguyên thủy không kém nhu cầu ăn"; "một nhu cầu nguyên thủy, không phải sản phẩm phụ của việc ăn"; đáp án câu 4 "một nhu cầu nguyên thủy, độc lập với nhu cầu ăn — và chính nó tạo nên sự gắn bó"'
+    moi: '"ngoài việc cho bú, còn có một biến số quan trọng khác"; "chịu ảnh hưởng áp đảo từ cảm giác mềm mại, ấm áp, được ôm, còn việc cho bú chỉ có tầm quan trọng không đáng kể"; "theo Harlow, đó là biến số có tầm quan trọng áp đảo trong việc hình thành gắn bó của khỉ con, hơn hẳn việc cho bú"'
+    ly_do: 'Review: Harlow không dùng chữ "nguyên thủy" (n32, n20, n50).'
+  - cu: "\"các thí nghiệm nhằm gây trầm cảm ở khỉ … (một bài lịch sử gọi là 'pit of despair' …)\"; đáp án câu 5 \"thí nghiệm gây trầm cảm\""
+    moi: "\"các thí nghiệm gây tranh cãi nhằm tìm cách chữa trầm cảm … (bài … có tiêu đề 'Harry Harlow's pit of despair: Depression in monkeys and men')\"; \"thí nghiệm về trầm cảm\""
+    ly_do: "Review: chỉ theo tóm tắt van Rosmalen 2022 (n26, n51)."
+  - cu: "Khung Khá vững thứ hai: \"hình ảnh gần với 'căn cứ an toàn' (secure base) mà Bowlby mô tả ở trẻ em (theo OpenStax)\""
+    moi: "\"(Harlow gọi là 'base of operations'). Chúng tôi ví hình ảnh này với 'căn cứ an toàn' … đây là phép so sánh của trang\""
+    ly_do: "Review: OpenStax không nối căn cứ an toàn với thí nghiệm khỉ (n34)."
+  - cu: '"Theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và giảm thiểu đau đớn."'
+    moi: '"Theo chuẩn mực ngày nay, chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn."'
+    ly_do: "Review: thêm nguồn PHS Policy, thu hẹp phạm vi (n28)."
+  - cu: 'Hộp hồ sơ: "cộng thêm các nhóm đối chứng khỉ nuôi không có mẹ giả"'
+    moi: '"cộng thêm 4 khỉ đối chứng chưa từng nuôi với mẹ giả"'
+    ly_do: "Review: khớp phần kể (n55)."

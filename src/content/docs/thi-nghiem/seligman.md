@@ -16,7 +16,7 @@ in_duoc: true
 
 ## Tự trải nghiệm
 
-Cuối thập niên 1960, hai con chó bị buộc trong võng và chịu những cú sốc điện cùng cường độ và cùng thời lượng trung bình. Khác biệt duy nhất: con thứ nhất **tắt được sốc** bằng cách ấn đầu vào tấm bảng ở bên đầu; con thứ hai cũng có tấm bảng y hệt, nhưng ấn thế nào sốc cũng không dừng.
+Giữa thập niên 1960, hai con chó bị buộc trong võng và chịu những cú sốc điện cùng cường độ và cùng thời lượng trung bình. Khác biệt duy nhất: con thứ nhất **tắt được sốc** bằng cách ấn đầu vào tấm bảng ở bên đầu; con thứ hai cũng có tấm bảng y hệt, nhưng ấn thế nào sốc cũng không dừng.
 
 Hôm sau, cả hai được đưa vào một cái hộp dài có vách ngăn thấp ở giữa — chỉ cần **nhảy qua vách ngăn** là thoát sốc.
 
@@ -24,8 +24,6 @@ Hôm sau, cả hai được đưa vào một cái hộp dài có vách ngăn th�
 
 :::thu-gon[Xem đáp án]
 Trong thí nghiệm thật, phần lớn chó thuộc nhóm của con thứ hai (6 trên 8 con) thụ động chịu sốc ở ít nhất 9 trong 10 lượt, dù chỉ cần một cái nhảy là thoát. Chó từng tắt được sốc hôm trước, và cả những con chưa từng bị sốc, thoát sốc bình thường.
-
-Câu hỏi cho chính chúng ta: khi con người liên tục rơi vào tình huống mà nỗ lực chẳng thay đổi được gì, điều gì xảy ra với ý chí của họ?
 :::
 
 ## Điều gì đang xảy ra?
@@ -75,7 +73,7 @@ Mạch não "nhân dorsal raphe gây thụ động — vùng trán trong phát h
 :::
 
 :::tranh-cai['bất lực học được' giải thích được bao nhiêu về trầm cảm ở người?]
-Từ thập niên 1970, Seligman đề xuất dùng hiện tượng này làm mô hình phòng thí nghiệm cho trầm cảm, và Maier và Seligman (2016) kể rằng nó tái hiện nhiều triệu chứng trong danh sách của DSM; nhưng chính họ chỉ "phỏng đoán" (speculate) rằng phát hiện thần kinh có thể có ý nghĩa cho điều trị trầm cảm. Đây là **mô hình gợi ý**, tuyệt đối không phải công cụ chẩn đoán hay điều trị ai. Nếu bạn hay người thân buồn kéo dài, xem trang [Hỗ trợ](/psyche/ho-tro/).
+Từ thập niên 1970, Seligman đề xuất dùng hiện tượng này làm mô hình phòng thí nghiệm cho trầm cảm, và Maier và Seligman (2016) kể rằng nó tái hiện nhiều triệu chứng trong danh sách của DSM. Nhưng ngay năm 1978, một tổng quan phê bình cho rằng sáu thí nghiệm trên người của nhóm Seligman ủng hộ rất ít cho thuyết này (Costello, 1978), và chính Seligman cùng cộng sự viết lại thuyết cho người, thêm vai trò của cách mỗi người giải thích nguyên nhân (Abramson, Seligman và Teasdale, 1978). Một phân tích tổng hợp 104 nghiên cứu thấy cách giải thích ấy có liên hệ đáng tin cậy với điểm trầm cảm (Sweeney và cộng sự, 1986); đó là mối liên hệ, tự nó không cho biết chiều nhân quả. Năm 2016, Maier và Seligman viết rằng cơ chế của thuyết gốc "hiểu ngược", và chỉ "phỏng đoán" (speculate) rằng phát hiện thần kinh có thể có ý nghĩa cho điều trị trầm cảm. Đây là **mô hình gợi ý**, tuyệt đối không phải công cụ chẩn đoán hay điều trị ai. Nếu bạn hay người thân buồn kéo dài, xem trang [Hỗ trợ](/psyche/ho-tro/).
 :::
 
 ## Các lý thuyết giải thích
@@ -118,7 +116,7 @@ Không có dữ liệu thì chúng tôi không đoán mò.
 - Cả ba nhóm đều không học được cách nhảy qua vách ngăn.
 + Nhóm từng tắt được sốc và nhóm chưa từng bị sốc thoát sốc bình thường; phần lớn nhóm yoked thụ động chịu sốc.
 - Nhóm yoked học nhanh nhất vì đã quen với sốc điện.
-> Nhóm yoked mang kỳ vọng "làm gì cũng vô ích" sang cả tình huống mới, nơi nỗ lực lẽ ra vẫn có tác dụng.
+> Năm 1967, hai tác giả giải thích rằng nhóm yoked đã học được "làm gì cũng không tắt được sốc" và mang điều đó sang tình huống mới. Năm 2016, chính họ viết rằng cách giải thích này "hiểu ngược": thụ động là phản ứng mặc định, thứ phải học là sự kiểm soát.
 ? Vì sao thủ phạm là "không kiểm soát được" chứ không phải bản thân cú sốc?
 - Vì nhóm sốc nhẹ học tốt hơn nhóm sốc mạnh.
 + Vì nhóm "tắt được sốc" chịu cùng lượng sốc như nhóm yoked mà vẫn thoát bình thường.
@@ -142,5 +140,7 @@ Không có dữ liệu thì chúng tôi không đoán mò.
 - Overmier, J. B., & Seligman, M. E. P. (1967). Effects of inescapable shock upon subsequent escape and avoidance responding. *Journal of Comparative and Physiological Psychology*, 63(1), 28–33. <https://doi.org/10.1037/h0024166>
 - Hiroto, D. S., & Seligman, M. E. P. (1975). Generality of learned helplessness in man. *Journal of Personality and Social Psychology*, 31(2), 311–327. <https://doi.org/10.1037/h0076270>
 - Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D. (1978). Learned helplessness in humans: Critique and reformulation. *Journal of Abnormal Psychology*, 87(1), 49–74. <https://doi.org/10.1037/0021-843X.87.1.49>
+- Costello, C. G. (1978). A critical review of Seligman's laboratory experiments on learned helplessness and depression in humans. *Journal of Abnormal Psychology*, 87(1), 21–31. <https://doi.org/10.1037/0021-843X.87.1.21>
+- Sweeney, P. D., Anderson, K., & Bailey, S. (1986). Attributional style in depression: A meta-analytic review. *Journal of Personality and Social Psychology*, 50(5), 974–991. <https://doi.org/10.1037/0022-3514.50.5.974>
 - Maier, S. F., & Seligman, M. E. P. (2016). Learned helplessness at fifty: Insights from neuroscience. *Psychological Review*, 123(4), 349–367. <https://doi.org/10.1037/rev0000033>
 - Seligman, M. E. P. (1975). *Helplessness: On depression, development, and death*. San Francisco, CA: Freeman.

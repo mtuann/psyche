@@ -4,620 +4,958 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/seligman.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-10-30'
-  nhanh: moi/d3-l2
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 2/2)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-10-30'
+    nhanh: không rõ
+    ma_bam: sha256:af3bae6501d1460fa8f73af08dead2fc16232d71a00c2576a912f3197ea7f9e9
+    nguoi:
+      luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 2/2); chỗ khó: Claude Opus 5.5'
+      luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D3-L2)
+      review: Claude Opus 5.5 (agent review D3-L2, 30/10/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d3-l2-kiem-mau.yml), đạt, 30/10/2026
 nguon:
-- id: seligman1967
-  ten: 'Seligman & Maier (1967), J Exp Psychol 74(1), 1–9: toàn văn (bản PDF qua CiteSeerX)'
-  link: https://doi.org/10.1037/h0024514
-  toan_van: true
-- id: overmier1967
-  ten: 'Overmier & Seligman (1967), J Comp Physiol Psychol 63(1), 28–33: tóm tắt (OpenAlex); phần mở đầu của Seligman & Maier 1967 kể lại'
-  link: https://doi.org/10.1037/h0024166
-  toan_van: false
-- id: hiroto1975
-  ten: 'Hiroto & Seligman (1975), J Pers Soc Psychol 31(2), 311–327: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1037/h0076270
-  toan_van: false
-- id: maier2016
-  ten: 'Maier & Seligman (2016), Psychol Rev 123(4), 349–367: toàn văn (bản tác giả, PMC4920136 qua NCBI E-utilities)'
-  link: https://doi.org/10.1037/rev0000033
-  toan_van: true
-- id: abramson1978
-  ten: 'Abramson, Seligman & Teasdale (1978), J Abnorm Psychol 87(1), 49–74: chưa mở; chỉ dẫn qua tóm lược của Maier & Seligman 2016'
-  link: https://doi.org/10.1037/0021-843X.87.1.49
-  toan_van: false
+  - id: seligman1967
+    ten: 'Seligman & Maier (1967), J Exp Psychol 74(1), 1–9: toàn văn (bản PDF qua CiteSeerX)'
+    link: https://doi.org/10.1037/h0024514
+    toan_van: true
+  - id: overmier1967
+    ten: 'Overmier & Seligman (1967), J Comp Physiol Psychol 63(1), 28–33: tóm tắt (OpenAlex); phần mở đầu của Seligman & Maier 1967 kể lại'
+    link: https://doi.org/10.1037/h0024166
+    toan_van: false
+  - id: hiroto1975
+    ten: 'Hiroto & Seligman (1975), J Pers Soc Psychol 31(2), 311–327: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/h0076270
+    toan_van: false
+  - id: maier2016
+    ten: 'Maier & Seligman (2016), Psychol Rev 123(4), 349–367: toàn văn (bản tác giả, PMC4920136 qua NCBI E-utilities)'
+    link: https://doi.org/10.1037/rev0000033
+    toan_van: true
+  - id: abramson1978
+    ten: 'Abramson, Seligman & Teasdale (1978), J Abnorm Psychol 87(1), 49–74: tóm tắt (OpenAlex), cùng tóm lược của Maier & Seligman 2016'
+    link: https://doi.org/10.1037/0021-843X.87.1.49
+    toan_van: false
+  - id: costello1978
+    ten: 'Costello (1978), J Abnorm Psychol 87(1), 21–31: tóm tắt và đoạn mở đầu (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1037/0021-843X.87.1.21
+    toan_van: false
+  - id: sweeney1986
+    ten: 'Sweeney, Anderson & Bailey (1986), J Pers Soc Psychol 50(5), 974–991: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1037/0022-3514.50.5.974
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Lần tìm nghiên cứu trên người Việt, 30/10/2026: PubMed (E-utilities: (Vietnam OR Vietnamese) AND "learned helplessness", 0 kết quả), Crossref, OpenAlex: không có thí nghiệm trên người Việt. Chưa tìm tạp chí trong nước'
+    link: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(Vietnam%20OR%20Vietnamese)%20AND%20%22learned%20helplessness%22
+    toan_van: true
+  - id: who-tram-cam
+    ten: "WHO, Depression (tờ thông tin, cập nhật 11/9/2026): đọc ngày 30/10/2026"
+    link: https://www.who.int/news-room/fact-sheets/detail/depression
+    toan_van: true
 nhan_dinh:
-- id: n1
-  cau: Năm 1967, Seligman và Maier cho thấy chó từng chịu sốc điện không thể kiểm soát phần lớn thụ động chịu đựng trong hộp shuttle box dù chỉ cần nhảy qua vách ngăn thấp là thoát.
-  loai: phat-hien
-  nguon: &id001
-  - seligman1967
-  trich: Dogs which had 1st learned to panel press in a harness in order to escape shock subsequently showed normal acquisition of escape/avoidance behavior in a shuttle box. In contrast, yoked, inescapable shock in the harness produced profound interference with subsequent escape responding in the shuttle box.
-  vi_tri: Tóm tắt; Table 1
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ (description): "sẽ nằm im chịu đựng". Mới: "phần lớn thụ động" (6/8 chó yoked thất bại ở ≥ 9/10 lượt; 2/8 thì không). "Vách ngăn thấp": Maier 2016 viết "short barrier"; Seligman & Maier 1967 chỉnh vách ngang vai chó: chỗ khó (từ "thấp" giữ theo 2016).'
-- id: n2
-  cau: Cuối thập niên 1960, chó được buộc trong võng (hammock) và chịu sốc điện.
-  loai: lich-su
-  nguon: *id001
-  trich: a rubberized, cloth hammock located inside a shielded, white, sound-attenuating cubicle ... S was strapped into the hammock
-  vi_tri: tr. 2 (Apparatus)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bị đeo đai cố định". Mới: "buộc trong võng". gia-dinh: cảnh "Tự trải nghiệm" là minh họa theo thiết kế 1967, hai con chó.'
-- id: n3
-  cau: Hai con chó chịu cú sốc cùng cường độ và cùng thời lượng trung bình; con thứ nhất tắt được sốc bằng cách ấn đầu vào tấm bảng ở bên đầu, con thứ hai ấn thế nào sốc cũng không dừng.
-  loai: phat-hien
-  nguon: *id001
-  trich: The duration of shock on any given trial was determined by the mean duration of the corresponding trial in the Escape group.
-  vi_tri: tr. 3 (Procedure)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cú sốc điện giống hệt nhau"; "chạm mõm vào tấm bảng bên đầu". Mới: "cùng cường độ và thời lượng trung bình" (yoked nhận thời lượng bằng trung bình của cú tương ứng ở nhóm thoát được); "ấn đầu" (S & M: "pressed the panels with its head"; Maier 2016 viết nose: bám 1967).'
-- id: n4
-  cau: Hôm sau, cả hai được đưa vào một hộp shuttle có vách ngăn ở giữa; chỉ cần nhảy qua vách là thoát sốc.
-  loai: phat-hien
-  nguon: *id001
-  trich: Twenty-four hours later dogs in the Escape group were given 10 trials of escape/avoidance training in the shuttle box
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "thả vào một cái hộp dài có vách ngăn thấp ở giữa". Mới thêm 24 giờ trong n về thiết kế.'
-- id: n5
-  cau: Phần lớn chó nhóm yoked (6 trên 8 con) thụ động chịu sốc ở ít nhất 9 trong 10 lượt, dù chỉ cần một cái nhảy là thoát.
-  loai: so-lieu
-  nguon: *id001
-  trich: Six Ss in the "Yoked" control group failed to escape shock on 9 or more of the 10 trials in the shuttle box.
-  vi_tri: tr. 3 (Results)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Con từng học được rằng ''làm gì cũng vô ích'' ... nằm bẹp xuống sàn, hầu như không buồn thử" (như thể mọi con). Mới số liệu 6/8.'
-- id: n6
-  cau: Chó từng tắt được sốc hôm trước, và cả những con chó chưa từng bị sốc, thoát sốc bình thường.
-  loai: phat-hien
-  nguon: *id001
-  trich: The Escape group and the Normal control group did not differ on these indexes.
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đều nhanh chóng học cách nhảy qua vách ngăn". Mới: "thoát sốc bình thường" (nhóm đối chứng có 1/8 con thất bại ≥ 9/10 lượt).'
-- id: n7
-  cau: 'Câu hỏi cho chính chúng ta: khi con người liên tục rơi vào tình huống mà nỗ lực chẳng đổi được gì, điều gì xảy ra với ý chí của họ?'
-  loai: phat-hien
-  nguon: []
-  ket_qua: null
-  ghi_chu: 'chưa chắc: câu hỏi mở, không phải khẳng định; giữ nguyên chữ cũ.'
-- id: n8
-  cau: Thí nghiệm cho thấy, trong thiết kế của họ, thủ phạm không phải cú sốc điện mà là sự không kiểm soát được cú sốc.
-  loai: phat-hien
-  nguon: *id001
-  trich: Because the Escape group differed from the "Yoked" control group during their initial exposure to shock only in their control over shock termination, we suggest that differential learning about their control over shock occurred in these two groups.
-  vi_tri: tr. 3–4 (Discussion)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "chứng minh". Mới: "cho thấy, trong thiết kế của họ" (chính tác giả viết "we suggest").'
-- id: n9
-  cau: Hai nhóm chó chịu sốc cùng cường độ và cùng thời lượng; nếu chính cơn đau làm chó "tê liệt", hai nhóm phải cư xử giống nhau.
-  loai: phat-hien
-  nguon: *id001
-  trich: the Escape and the "Yoked" control groups were equated for the possibility of adventitious punishment for active responding by shock onset in the harness
-  vi_tri: tr. 4
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đúng y hệt cường độ và thời lượng"; mới: "cùng cường độ và cùng thời lượng" (trung bình theo từng lượt).'
-- id: n10
-  cau: Seligman và Maier giải thích năm 1967 rằng sinh vật học được kết quả độc lập với phản ứng của mình, và bài học đó lan sang tình huống mới; họ gọi đó là "bất lực học được".
-  loai: lich-su
-  nguon: *id001
-  trich: Ss failed to escape shock in the shuttle box following inescapable shock in the harness because they had learned that shock termination was independent of responding.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: khẳng định như sự thật "Đó là sự bất lực học được: sinh vật học được rằng ...". Mới: giải thích năm 1967 của hai tác giả, và Maier 2016 nói "hiểu ngược".'
-- id: n11
-  cau: Năm 2016, chính Maier và Seligman viết rằng giải thích gốc "hiểu ngược" (got it backwards).
-  loai: lich-su
-  nguon: &id002
-  - maier2016
-  trich: the original theory got it backwards
-  vi_tri: Tóm tắt
-  ket_qua: dung
-- id: n12
-  cau: 'Hiện tượng bắt nguồn từ phòng thí nghiệm của Richard Solomon ở Đại học Pennsylvania, nơi nghiên cứu điều kiện hóa sợ hãi kiểu Pavlov: chó bị giữ trong võng, chịu sốc, hôm sau tập thoát sốc trong hộp shuttle.'
-  loai: lich-su
-  nguon: *id002
-  trich: Richard Solomon and his students at the University of Pennsylvania wanted to know how prior Pavlovian fear conditioning would influence later instrumental learning
-  vi_tri: Mở đầu
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Overmier và Seligman vốn nghiên cứu điều kiện hóa Pavlov trên chó". Mới theo Maier 2016: phòng thí nghiệm Solomon (Leaf 1964, Overmier & Leaf 1965); Seligman và Maier đến Penn 1964 làm nghiên cứu sinh.'
-- id: n13
-  cau: Chó nhiều khi không thoát sốc trong hộp shuttle mà thụ động chờ hết sốc.
-  loai: phat-hien
-  nguon: *id002
-  trich: the dogs often failed to escape altogether in the shuttlebox and passively waited the shock out
-  vi_tri: Mở đầu
-  ket_qua: dung
-- id: n14
-  cau: 'Overmier và Seligman: sốc không thoát được làm hỏng một cách đáng tin cậy việc học thoát/tránh sốc sau đó trong tình huống mới.'
-  loai: phat-hien
-  nguon: &id003
-  - overmier1967
-  trich: Exposure of dogs to inescapable shocks under a variety of conditions reliably interfered with subsequent instrumental escape-avoidance responding in a new situation.
-  vi_tri: Tóm tắt (OpenAlex)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "thất bại trong việc học cách thoát dù lối thoát rất dễ; sau vài lượt thử, chúng nằm im chịu đựng thụ động". "Sau vài lượt" có trong phần mở đầu của Seligman & Maier 1967 ("after a few trials, they passively accept shock"); chỉ đọc tóm tắt bài Overmier & Seligman.'
-- id: n15
-  cau: Chó vẫn bị suy giảm khi bị tê liệt bằng curare lúc chịu sốc, và khi tăng cường độ sốc lúc tập thoát.
-  loai: phat-hien
-  nguon: *id003
-  trich: Ss curarized during their exposure to inescapable shocks also showed proactive interference ... Use of a higher level of shock during instrumental avoidance training did not attenuate interference
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: Chi tiết thêm vào trang.
-- id: n16
-  cau: Suy giảm tan sau 48 giờ.
-  loai: phat-hien
-  nguon: *id003
-  trich: Magnitude of interference was found to dissipate rapidly in time, leaving an apparently normal S after only 48 hr.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: Chi tiết thêm; đối lập với 7 ngày ở Seligman & Maier 1967 (chó đã bị suy giảm và thất bại lần đầu trong hộp shuttle).
-- id: n17
-  cau: Overmier và Seligman gợi ý mức kiểm soát có thể là yếu tố quyết định hiệu ứng.
-  loai: lich-su
-  nguon: *id001
-  trich: Overmier and Seligman (1967) suggested that the degree of control over shock allowed to the animal in the harness may be an important determinant of this interference effect.
-  vi_tri: tr. 2
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Đây là lần đầu tiên hiện tượng được mô tả và đặt tên là sự bất lực học được". Maier 2016: "helplessness, as first suggested by Overmier and Seligman in 1967" (gợi ý từ, không phải đặt tên thuật ngữ "learned helplessness" trong bài 1967: chưa kiểm).'
-- id: n18
-  cau: Maier và Seligman (2016) viết rằng Overmier và Seligman là người đầu tiên gợi ý từ "bất lực" cho hiện tượng.
-  loai: lich-su
-  nguon: *id002
-  trich: From the beginning we thought the phenomenon looked like helplessness, as first suggested by Overmier and Seligman in 1967.
-  vi_tri: Mở đầu
-  ket_qua: dung
-- id: n19
-  cau: Thí nghiệm I của Seligman và Maier dùng 24 chó, mỗi nhóm 8 con.
-  loai: so-lieu
-  nguon: *id001
-  trich: This left 24 Ss, eight in each group.
-  vi_tri: tr. 2 (Subjects)
-  ket_qua: da-sua
-  ghi_chu: Chữ cũ không nêu số.
-- id: n20
-  cau: Nhóm thoát được ấn một trong hai tấm bảng bằng đầu để tắt sốc; 64 cú sốc 6 mA không báo hiệu.
-  loai: phat-hien
-  nguon: *id001
-  trich: Sixty-four unsignaled 6.0 ma. shocks were presented ... If the dog pressed either panel with its head during shock, shock terminated.
-  vi_tri: tr. 2–3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bấm tấm bảng hai bên đầu để tắt sốc".'
-- id: n21
-  cau: Nhóm yoked nhận cú sốc có thời lượng bằng trung bình của cú tương ứng ở nhóm thoát được, nhưng ấn bảng vô tác dụng.
-  loai: phat-hien
-  nguon: *id001
-  trich: The duration of shock on any given trial was determined by the mean duration of the corresponding trial in the Escape group.
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chịu cú sốc đúng y hệt, được cặp theo từng cú sốc của bạn cùng cặp". Sai: ở thí nghiệm này theo trung bình của nhóm (Maier 2016 xác nhận: "In this initial experiment ... the average duration"; thí nghiệm sau mới cặp từng đôi).'
-- id: n22
-  cau: Nhóm đối chứng bình thường không qua giai đoạn trong võng, chỉ tập 10 lượt trong hộp shuttle.
-  loai: phat-hien
-  nguon: *id001
-  trich: The Normal control group received only 10 escape/avoidance trials in the shuttle box as described above.
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nhóm đối chứng ngây thơ (đeo đai nhưng không bị sốc)". Sai: nhóm này không bị đeo đai. Đã sửa trên trang. Hình seligman-design còn ghi "Đeo đai / không bị sốc": người giao xử lý (không sửa hình).'
-- id: n23
-  cau: Sau 24 giờ, cả ba nhóm cùng làm 10 lượt tập thoát sốc trong hộp shuttle.
-  loai: phat-hien
-  nguon: *id001
-  trich: Twenty-four hours later ... 10 trials of escape/avoidance training in the shuttle box
-  vi_tri: tr. 3
-  ket_qua: dung
-- id: n24
-  cau: Thời gian thoát trung bình là 27,00 giây (nhóm thoát được), 25,93 giây (đối chứng) và 48,22 giây (yoked).
-  loai: so-lieu
-  nguon: *id001
-  trich: Mean Latency (in sec.) 27.00 25.93 48.22
-  vi_tri: Table 1
-  ket_qua: da-sua
-  ghi_chu: Chữ cũ không có số.
-- id: n25
-  cau: 6 trên 8 chó yoked không thoát ở ít nhất 9 trong 10 lượt, so với 0 con của nhóm thoát được và 1 trên 8 con của nhóm đối chứng.
-  loai: so-lieu
-  nguon: *id001
-  trich: '% Ss Failing to Escape Shock on 9 or More of the 10 Trials: 0, 12.5, 75'
-  vi_tri: Table 1
-  ket_qua: da-sua
-  ghi_chu: Chữ cũ không có số.
-- id: n26
-  cau: Nhóm thoát được và nhóm đối chứng không khác nhau; chỉ nhóm yoked bị suy giảm rõ.
-  loai: phat-hien
-  nguon: *id001
-  trich: It differed significantly from the Escape group and from the Normal control group ... The Escape group and the Normal control group did not differ on these indexes.
-  vi_tri: tr. 3
-  ket_qua: dung
-- id: n27
-  cau: 'Thí nghiệm II (27 chó, mỗi nhóm 9 con): chó đã từng thoát được sốc trong hộp shuttle trước đó không bị suy giảm sau khi chịu sốc không kiểm soát trong võng, trong khi chó chưa có kinh nghiệm thì bị suy giảm.'
-  loai: phat-hien
-  nguon: *id001
-  trich: The No Pregroup showed significant interference with escape/avoidance responding in the shuttle box on Day 3. The Preescape and the No Inescapable groups did not show such interference.
-  vi_tri: tr. 5 (Exp. II, Results)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chó đã có kinh nghiệm thoát sốc từ trước thì không bị suy giảm sau khi chịu sốc không kiểm soát được — trải nghiệm kiểm soát đã bảo vệ chúng". Mới nêu cỡ mẫu, bối cảnh (thoát trong hộp shuttle); chó chịu sốc không thoát trong hộp shuttle trước đó vẫn bị suy giảm (nhóm đối chứng sau).'
-- id: n28
-  cau: Năm trong sáu chó yoked bị suy giảm vẫn thất bại trong mọi lượt khi thử lại sau 7 ngày.
-  loai: so-lieu
-  nguon: *id001
-  trich: Seven days after the first shuttle-box treatment, these six Ss received 10 further trials in the shuttle box. Five of them continued to fail to escape shock on every trial.
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "sự suy giảm vẫn còn thấy được sau 7 ngày nghỉ". Mới số liệu 5/6.'
-- id: n29
-  cau: 'Hình: ba nhóm trải qua giai đoạn sốc khác nhau rồi, sau 24 giờ, cùng làm 10 lượt thoát sốc trong hộp shuttle.'
-  loai: phat-hien
-  nguon: *id001
-  trich: Twenty-four hours later ... 10 trials of escape/avoidance training in the shuttle box
-  vi_tri: tr. 3
-  ket_qua: dung
-  ghi_chu: Số 24 giờ và 10 lượt trong hình seligman-design khớp bài gốc; năm 1967 ở tiêu đề hình đúng.
-- id: n30
-  cau: 'Hình: nhóm đối chứng ngây thơ "đeo đai, không bị sốc".'
-  loai: phat-hien
-  nguon: *id001
-  trich: The Normal control group received only 10 escape/avoidance trials in the shuttle box as described above.
-  vi_tri: tr. 3
-  ket_qua: null
-  ghi_chu: 'HÌNH SAI, chưa sửa (theo lời giao): nhóm đối chứng bình thường không đeo đai, không vào võng, chỉ tập trong hộp shuttle. Cần người giao sửa src/hinh/seligman-design.html (ô "Đeo đai / không bị sốc"). Ngoài ra "Chịu sốc y hệt nhóm 1" ở hình xấp xỉ (trung bình, không từng cú) và chú thích hình cũng nói "chịu cú sốc y hệt nhau": nên đổi thành "cùng thời lượng trung bình".'
-- id: n31
-  cau: 'Hình: chỉ nhóm yoked nằm im chịu đựng (nhóm thoát được và đối chứng học nhảy tốt).'
-  loai: phat-hien
-  nguon: *id001
-  trich: 'Table 1: Escape 27.00 s, Normal 25.93 s, Yoked 48.22 s'
-  vi_tri: Table 1
-  ket_qua: da-lam-mem
-  ghi_chu: '"Nằm im chịu đựng" cho cả nhóm yoked quá mạnh (6/8 thất bại ≥ 9/10); người giao cân nhắc đổi thành "phần lớn thụ động". Chưa sửa hình.'
-- id: n32
-  cau: Hiroto và Seligman làm bốn thí nghiệm cùng lúc trên sinh viên đại học, trong đó có một thí nghiệm dùng tiếng ồn khó chịu (tắt được, không tắt được, không nghe) rồi cho giải anagram.
-  loai: phat-hien
-  nguon:
-  - hiroto1975
-  trich: Four experiments with college students were simultaneously conducted ... (c) pretreatments with inescapable, escapable, or control aversive tone followed by anagram solution testing
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "dùng phiên bản ''nhẹ'' ... tất cả cùng làm một bài tập mới hoàn toàn có thể giải được". Mới theo tóm tắt: bốn thí nghiệm; bài mới là anagram. Chỉ đọc tóm tắt.'
-- id: n33
-  cau: Nhóm từng chịu tiếng ồn không thể tắt thất bại nhiều hơn ở việc giải anagram, dù nhiệm vụ không liên quan đến tiếng ồn.
-  loai: phat-hien
-  nguon:
-  - hiroto1975
-  trich: Both insolubility and inescapability produced failure to escape and failure to solve anagrams.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "làm bài kém hẳn và bỏ cuộc sớm hơn nhiều". "Bỏ cuộc sớm hơn" không có trong tóm tắt: bỏ; "kém hẳn" làm mềm.'
-- id: n34
-  cau: Hiroto và Seligman gợi ý một kỳ vọng rằng phản ứng của mình không liên quan đến kết quả, và hiệu ứng có thể là một "đặc điểm gây ra được".
-  loai: lich-su
-  nguon:
-  - hiroto1975
-  trich: We suggest that inescapability and insolubility both engendered expectancies that responding is independent of reinforcement. ... learned helplessness may be an induced trait.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "hiệu ứng lan truyền qua lĩnh vực khác ... kỳ vọng bất lực khái quát hóa". Mới bám tóm tắt.'
-- id: n35
-  cau: Maier và Seligman (2016) là một bài tổng quan 50 năm trên Psychological Review.
-  loai: lich-su
-  nguon: *id002
-  trich: Learned helplessness ... was discovered half a century ago.
-  vi_tri: Tóm tắt; Psychol Rev 123(4)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Một bài tổng quan 50 năm trên Psychological Review, đúc kết hàng chục năm nghiên cứu". Giữ; bỏ "đúc kết hàng chục năm" cho hợp.'
-- id: n36
-  cau: Nghiên cứu thần kinh học được tổng hợp chủ yếu trên chuột, dùng các can thiệp như tổn thương và vi tiêm thuốc chặn hoạt động của vùng não.
-  loai: phat-hien
-  nguon: *id002
-  trich: In the research to be described below, rats are the subject ... prevented by either lesion ... or microinjection of pharmacological agents
-  vi_tri: Mục "The Neural Circuitry of Learned Helplessness" và "Passivity/Anxiety and the Dorsal raphe nucleus"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "trên chuột và chó (gây tổn thương chọn lọc, bất hoạt tạm thời, kích thích trực tiếp vùng não)". Chó: không phải đối tượng của phần thần kinh học; "kích thích trực tiếp" chỉ là một dẫn chứng gián tiếp (kích thích điện đường PL tới DRN ức chế DRN, trích từ các nghiên cứu khác).'
-- id: n37
-  cau: 'Hai tác giả thừa nhận lý thuyết gốc "hiểu ngược": thụ động trước sốc kéo dài không phải là thứ học được mà là phản ứng mặc định, có sẵn, qua hoạt động serotonin của nhân dorsal raphe ức chế hành vi thoát.'
-  loai: phat-hien
-  nguon: *id002
-  trich: Passivity in response to shock is not learned. It is the default, unlearned response to prolonged aversive events and it is mediated by the serotonergic activity of the dorsal raphe nucleus, which in turn inhibits escape.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "thủ phạm ... do hoạt động serotonin của nhân dorsal raphe ở thân não" ✓. Thêm: "Họ cũng chỉ ra rằng tác dụng của sốc không còn khi sốc thoát được ở lần đầu" (Maier 2016: không xảy ra nếu sốc thoát được; kiểm soát được phát hiện ở vỏ não trước trán, ức chế dorsal raphe).'
-- id: n38
-  cau: 'Cái thực sự phải học là sự kiểm soát: vùng vỏ não trước trán trong phát hiện kiểm soát và tự động ức chế nhân dorsal raphe.'
-  loai: phat-hien
-  nguon: *id002
-  trich: This passivity can be overcome by learning control, with the activity of the medial prefrontal cortex, which subserves the detection of control leading to the automatic inhibition of the dorsal raphe nucleus.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "vỏ não trước trán trong hoạt động như bộ phát hiện kiểm soát" ✓ (medial prefrontal cortex; tiểu vùng prelimbic của vmPFC trong thân bài). Bỏ ẩn dụ "bộ phát hiện".'
-- id: n39
-  cau: 'Khá vững: sốc không kiểm soát được làm suy giảm việc học cách thoát sau này — ở động vật.'
-  loai: nhan
-  nguon:
-  - seligman1967
-  - maier2016
-  trich: The mechanism ... the well-replicated result was that two-thirds of the animals from the INESC group failed to learn to escape, whereas 90% of the animals in both the ESC and 0 groups easily learned to escape
-  vi_tri: Maier 2016, mục "Operationalizing Learned Helplessness"
-  nhan: kha-vung
-  co_so:
-  - seligman1967
-  - maier2016
-  - hiroto1975
-  ly_do: 'Hiệu ứng có thiết kế ba nhóm, được lặp lại ở chó (Seligman & Maier 1967), chuột (Maier & Seligman 2016 gọi là "well-replicated") và trong thí nghiệm người ngắn (Hiroto & Seligman 1975, chỉ tóm tắt). Chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước mà chúng tôi mở được, và bằng chứng do chính nhóm tác giả tổng kết: chưa đạt Vững chắc.'
-  ket_qua: da-lam-mem
-  ghi_chu: 'chỗ khó: chữ cũ :::vung-chac ("lặp lại nhiều lần, trên chó, chuột và các loài khác, với thiết kế ba nhóm"). Thước đo Vững chắc đòi tổng hợp hay hai tái lập lớn: chưa có; hạ xuống Khá vững. Bỏ câu "Đây đều là nghiên cứu trên động vật theo chuẩn đạo đức của thập niên 1960" (không nguồn), thay bằng điều kiểm được. Người giao/lượt 2 cân nhắc; nếu có tổng quan hệ thống độc lập thì có thể nâng.'
-- id: n40
-  cau: 'Khá vững: bản "đảo ngược" 2016 có nền tảng thần kinh học trên động vật.'
-  loai: nhan
-  nguon: *id002
-  trich: The mechanism of learned helplessness is now very well-charted biologically and the original theory got it backward.
-  vi_tri: Tóm tắt
-  nhan: kha-vung
-  co_so:
-  - maier2016
-  ly_do: 'Mạch dựng từ can thiệp (tổn thương, vi tiêm) trên chuột, nhưng là tổng hợp do chính hai tác giả của lý thuyết gốc viết, trên động vật, chưa có tổng quan độc lập: mức Khá vững.'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "dựng từ các nghiên cứu can thiệp nhân quả trên chuột, không chỉ tương quan". Giữ; thêm "do chính hai tác giả của lý thuyết gốc viết". Chữ cũ "mạch ... vỏ não trước trán trong": giữ.'
-- id: n41
-  cau: Từ thập niên 1970, Seligman đề xuất dùng hiện tượng này làm mô hình phòng thí nghiệm cho trầm cảm.
-  loai: lich-su
-  nguon: *id002
-  trich: the possibility that learned helplessness was a laboratory model of clinical depression (Seligman, 1974; Simson & Weiss, 1988)
-  vi_tri: Mục "Humans"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Seligman từ năm 1975 đã đề xuất mô hình động vật". Mới: "từ thập niên 1970" (Maier 2016 dẫn Seligman 1974).'
-- id: n42
-  cau: Maier và Seligman (2016) kể rằng hiện tượng tái hiện tám trong chín triệu chứng của trầm cảm theo tiêu chí DSM-III và DSM-IV.
-  loai: phat-hien
-  nguon: *id002
-  trich: Learned helplessness in the laboratory – combining the animal and human experimental results – produced eight of the nine symptoms
-  vi_tri: Mục "Humans"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nhưng bước nhảy ... gây tranh cãi suốt nhiều thập niên" (không nguồn). Mới nêu điều Maier 2016 kể và thêm "phỏng đoán". Đây là lời kể của chính tác giả.'
-- id: n43
-  cau: Chính Maier và Seligman chỉ "phỏng đoán" (speculate) rằng phát hiện thần kinh có thể có ý nghĩa cho điều trị trầm cảm.
-  loai: phat-hien
-  nguon: *id002
-  trich: We speculate that default passivity and the compensating detection and expectation of control may have substantial implications for how to treat depression.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "các thí nghiệm then chốt không thể lặp lại trên người vì lý do đạo đức" (không nguồn; bỏ).'
-- id: n44
-  cau: 'Khung Đang tranh cãi: "bất lực học được" giải thích được bao nhiêu về trầm cảm ở người? Đây là mô hình gợi ý, không phải công cụ chẩn đoán hay điều trị; dẫn trang Hỗ trợ.'
-  loai: nhan
-  nguon: *id002
-  trich: We speculate that default passivity ... may have substantial implications for how to treat depression.
-  vi_tri: Tóm tắt
-  nhan: tranh-cai
-  co_so:
-  - maier2016
-  ly_do: Mô hình tương đồng triệu chứng (do tác giả kể) chưa được kiểm định độc lập trong các nguồn đã mở; chính tác giả chỉ phỏng đoán ý nghĩa cho điều trị. Không có nguồn cho "tranh cãi" cụ thể; nhãn Đang tranh cãi dựa trên khoảng trống bằng chứng chứ không trên hai phía chất lượng cao mâu thuẫn.
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: nhãn Đang tranh cãi giữ như cũ nhưng căn cứ yếu (chưa mở tổng quan độc lập về mô hình trầm cảm); lượt 2/người giao cân nhắc đổi sang Khá vững hoặc bỏ khung. Đã thêm lời dẫn tới /psyche/ho-tro/.'
-- id: n45
-  cau: 'Lý thuyết 1967: ngoài "làm A thì được B", sinh vật còn học mối quan hệ thứ ba: kết quả độc lập với mọi phản ứng.'
-  loai: lich-su
-  nguon: *id001
-  trich: A third operation that is proposed, independence between events, also produces learning
-  vi_tri: tr. 8 (General Discussion)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "sinh vật còn nhạy với mối quan hệ thứ ba". Mới: "theo lý thuyết 1967 đề xuất ... học được".'
-- id: n46
-  cau: 'Abramson, Seligman và Teasdale (1978): ở người, còn tùy cách giải thích sự bất lực; người cho nguyên nhân là lâu dài thì bất lực kéo dài, người cho nguyên nhân lan rộng thì bất lực lan sang nhiều tình huống.'
-  loai: phat-hien
-  nguon:
-  - maier2016
-  - abramson1978
-  trich: Subjects who attributed their helplessness to permanent causes ... would show long-term helplessness ... Subjects who attributed helplessness to pervasive factors ... would show passivity across situations
-  vi_tri: Mục "Humans"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: kiểu "tại mình — luôn thế — việc gì cũng thế". "Tại mình" (internal) không nằm trong tóm lược của Maier 2016: bỏ. Bài Abramson 1978 chưa mở; dựa vào tóm lược của Maier & Seligman 2016.'
-- id: n47
-  cau: 'Kinh nghiệm thoát được sốc trong hộp shuttle trước đó có tác dụng bảo vệ trong thí nghiệm: chó không bị suy giảm sau khi chịu sốc không kiểm soát được.'
-  loai: phat-hien
-  nguon: *id001
-  trich: The Preescape and the No Inescapable groups did not show such interference.
-  vi_tri: tr. 5
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Kiểm soát không chỉ chữa — nó còn phòng." Bỏ "chữa" (không nguồn); "miễn dịch" đổi "bảo vệ trong thí nghiệm".'
-- id: n48
-  cau: Hiroto và Seligman (1975) thấy ở người rằng trải nghiệm không kiểm soát được trong thí nghiệm ngắn làm giảm thành tích ở nhiệm vụ sau.
-  loai: phat-hien
-  nguon:
-  - hiroto1975
-  trich: Both insolubility and inescapability produced failure to escape and failure to solve anagrams.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ (Áp dụng vào đời sống): ba bullet khuyên chia mục tiêu nhỏ cho học sinh, tách phần kiểm soát được, "luật lệ thất thường... công thức nuôi dưỡng sự bất lực" (không nguồn: loi-khuyen). Đã thay bằng một câu hỏi tự hỏi và Hiroto 1975, nói rõ suy luận không phải kết quả nghiên cứu.'
-- id: n49
-  cau: Các bullet cũ của mục Áp dụng (chia mục tiêu thành bước nhỏ, tách phần kiểm soát được, dạy con và quản lý) đã bỏ khỏi trang.
-  loai: loi-khuyen
-  nguon: []
-  ket_qua: da-bo
-  ghi_chu: Không có nguồn kiểm chứng; lời khuyên về học tập và nuôi dạy phải qua nguồn (chuẩn mục 1). Bỏ; giữ cảnh báo "đừng dán nhãn ai".
-- id: n50
-  cau: Đừng dùng khái niệm này để dán nhãn ai; trang không đưa chẩn đoán hay hướng dẫn điều trị; ai buồn hay kiệt sức kéo dài thì xem trang Hỗ trợ.
-  loai: loi-khuyen
-  nguon: []
-  ket_qua: dung
-  ghi_chu: Câu thận trọng của chính site (chuẩn mục 5); không khẳng định về bằng chứng. Link /psyche/ho-tro/ có (id ho-tro/index trong src/data/trang.yml).
-- id: n51
-  cau: Tính đến 10/2026, chưa tìm thấy thí nghiệm bất lực học được nào trên người Việt.
-  loai: thoi-su
-  nguon: []
-  het_han: '2028-10-01'
-  ket_qua: dung
-  ghi_chu: 'Tìm 30/10/2026: PubMed ("learned helplessness" AND Vietnam: 0), Crossref (truy vấn learned helplessness Vietnamese: không có nghiên cứu thực nghiệm trên người Việt). Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc.'
-- id: n52
-  cau: Thí nghiệm gốc làm trên chó ở Mỹ; bản trên người (Hiroto và Seligman, 1975) làm trên sinh viên đại học.
-  loai: lich-su
-  nguon:
-  - seligman1967
-  - hiroto1975
-  trich: University of Pennsylvania ... Four experiments with college students
-  vi_tri: tr. 1; tóm tắt Hiroto
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "làm trên sinh viên Mỹ": tóm tắt chỉ nói "college students": bỏ "Mỹ".'
-- id: n53
-  cau: Đoạn về văn hóa Việt Nam ("coi trọng ý chí ... ngừng cố gắng bị quy là lười") đã bỏ.
-  loai: phat-hien
-  nguon: []
-  ket_qua: da-bo
-  ghi_chu: Không có nguồn; bỏ.
-- id: n54
-  cau: 'Ngộ nhận "chó không nhảy vì ngu, nhát, lười": nhóm chưa từng bị sốc và nhóm từng tắt được sốc thoát sốc bình thường.'
-  loai: phat-hien
-  nguon: *id001
-  trich: The Escape group and the Normal control group did not differ on these indexes.
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đều nhảy qua vách ngăn ngon lành"; "bài học mà lịch sử đã dạy chúng". Làm mềm: "thoát sốc bình thường", "kinh nghiệm trước đó".'
-- id: n55
-  cau: 'Ngộ nhận "cú sốc điện làm chó tê liệt": thiết kế ba nhóm loại trừ, vì nhóm tắt được sốc chịu cùng lượng sốc như nhóm yoked mà hôm sau vẫn thoát bình thường.'
-  loai: phat-hien
-  nguon: *id001
-  trich: the Escape and the "Yoked" control groups were equated for the possibility of adventitious punishment
-  vi_tri: tr. 4
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đúng lượng sốc như nhóm yoked ... vẫn học bình thường". Mới "cùng lượng sốc".'
-- id: n56
-  cau: 'Ngộ nhận "bất lực học được chính là trầm cảm": đó là mô hình động vật gợi hướng nghiên cứu, không ai được dùng nó để chẩn đoán ai.'
-  loai: phat-hien
-  nguon: *id002
-  trich: learned helplessness was a laboratory model of clinical depression
-  vi_tri: Mục "Humans"
-  ket_qua: dung
-  ghi_chu: Lời "không ai được dùng để chẩn đoán" là cảnh báo của site, không cần nguồn.
-- id: n57
-  cau: 'Ngộ nhận "lý thuyết 1967 vẫn giữ nguyên": chính Maier và Seligman 2016 viết rằng lý thuyết gốc "hiểu ngược".'
-  loai: phat-hien
-  nguon: *id002
-  trich: the original theory got it backwards
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đảo ngược một phần lý thuyết gốc: bị động là mặc định ... cái phải học là sự kiểm soát". Giữ ý, chỉnh "hiểu ngược".'
-- id: n58
-  cau: 'Ngộ nhận "bất lực học được nghĩa là thiếu ý chí": trong thí nghiệm nhóm yoked chịu cùng lượng sốc với nhóm thoát được, khác biệt là khả năng kiểm soát.'
-  loai: phat-hien
-  nguon: *id001
-  trich: differed during their initial exposure to shock only in their control over shock termination
-  vi_tri: tr. 3–4
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Muốn hết bất lực thì chỉ cần cố gắng hơn → ... điều cần là trải nghiệm kiểm soát thật — dù nhỏ" (lời khuyên điều trị không nguồn): bỏ. Thay bằng ngộ nhận mới và lời dẫn Hỗ trợ.'
-- id: n59
-  cau: 'Quiz 1: ba nhóm là nhóm ấn bảng tắt được sốc, nhóm yoked (cùng thời lượng sốc, ấn bảng vô tác dụng), nhóm không qua giai đoạn sốc.'
-  loai: phat-hien
-  nguon: *id001
-  trich: The "Yoked" control group received the same exposure to shock in the harness as did the Escape group, except that panel pressing did not terminate shock.
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nhóm đeo đai mà không bị sốc" sai (xem n22); giải thích cũ "đúng y hệt cường độ và thời lượng" đổi "cùng".'
-- id: n60
-  cau: 'Quiz 2: nhóm từng tắt được sốc và nhóm chưa từng bị sốc thoát sốc bình thường; phần lớn nhóm yoked thụ động chịu sốc.'
-  loai: phat-hien
-  nguon: *id001
-  trich: 'Table 1: Escape 27.00 s, Normal 25.93 s, Yoked 48.22 s; 75% of Yoked failed 9+ of 10'
-  vi_tri: Table 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chỉ nhóm yoked nằm im chịu sốc"; mới "phần lớn".'
-- id: n61
-  cau: 'Quiz 3: nhóm tắt được sốc chịu cùng lượng sốc như nhóm yoked mà vẫn thoát bình thường, nên không phải bản thân cú sốc là nguyên nhân.'
-  loai: phat-hien
-  nguon: *id001
-  trich: Because the Escape group differed from the "Yoked" control group ... only in their control over shock termination
-  vi_tri: tr. 3–4
-  ket_qua: da-sua
-  ghi_chu: Chữ cũ "đúng lượng sốc"; mới "cùng lượng". Chữ cũ "học thoát bình thường"; mới "thoát bình thường".
-- id: n62
-  cau: 'Quiz 4: Maier và Seligman (2016) kết luận lý thuyết gốc "hiểu ngược": thụ động là phản ứng mặc định có sẵn (nhân dorsal raphe), còn cái phải học là sự kiểm soát (vùng trán trong).'
-  loai: phat-hien
-  nguon: *id002
-  trich: Passivity in response to shock is not learned. It is the default, unlearned response to prolonged aversive events
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bị động ... vỏ não trước trán trong"; giải thích cũ "Bỏ cuộc là chế độ mặc định ...". Mới theo tác giả.'
-- id: n63
-  cau: 'Quiz 5: thí nghiệm Seligman là mô hình động vật gợi hướng nghiên cứu, không phải công cụ chẩn đoán hay điều trị; chính Maier và Seligman (2016) chỉ "phỏng đoán" về ý nghĩa với điều trị trầm cảm.'
-  loai: phat-hien
-  nguon: *id002
-  trich: We speculate that default passivity ... may have substantial implications for how to treat depression.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: Quiz 5 hỏi về ứng dụng đúng tinh thần nghiên cứu ("chia mục tiêu thành bước nhỏ"), đã thay hoàn toàn (không nguồn).'
-- id: n64
-  cau: Mục Nguồn liệt kê sáu nguồn với DOI trùng với src/data/nguon.yml (Seligman 1975 không có DOI).
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm bằng grep: seligman1967, overmier1967, hiroto1975, abramson1978, maier2016, seligman1975 có trong src/data/nguon.yml; DOI khớp.'
-- id: n65
-  cau: 'Trang này là trang nhà của nghiên cứu Seligman: nơi khác chỉ tóm một câu và link về.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id seligman, trang_nha: thi-nghiem/seligman, nguon [overmier1967, seligman1967].'
-- id: n66
-  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Như n58 của asch.yml (src/plugins/thanh-phan.mjs, hàm tomTat).
-- id: n67
-  cau: Link "Hỗ trợ" trỏ tới trang /psyche/ho-tro/.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm bằng grep: id ho-tro/index có trong src/data/trang.yml.'
-- id: n68
-  cau: 'Hộp hồ sơ: tác giả và năm là Seligman và Maier, 1967; Overmier và Seligman, 1967; bản cập nhật Maier và Seligman, 2016.'
-  loai: lich-su
-  nguon:
-  - seligman1967
-  - maier2016
-  trich: FAILURE TO ESCAPE TRAUMATIC SHOCK MARTIN E. P. SELIGMAN AND STEVEN F. MAIER ... Overmier and Seligman (1967)
-  vi_tri: tr. 1
-  ket_qua: dung
-- id: n69
-  cau: 'Hộp hồ sơ: đối tượng là 24 chó lai ở Đại học Pennsylvania trong thí nghiệm I (mỗi nhóm 8 con).'
-  loai: so-lieu
-  nguon: *id001
-  trich: The Ss were 30 experimentally naive, mongrel dogs ... This left 24 Ss, eight in each group.
-  vi_tri: tr. 2
-  ket_qua: dung
-- id: n70
-  cau: 'Hộp hồ sơ: thiết kế ba nhóm (tắt được sốc bằng cách ấn bảng bằng đầu, yoked, không qua giai đoạn sốc), 24 giờ sau 10 lượt thoát sốc trong hộp shuttle.'
-  loai: phat-hien
-  nguon: *id001
-  trich: Twenty-four hours later ... 10 trials of escape/avoidance training in the shuttle box
-  vi_tri: tr. 3
-  ket_qua: dung
-- id: n71
-  cau: 'Hộp hồ sơ: 6 trên 8 chó yoked không thoát được ở ít nhất 9 trong 10 lượt; nhóm thoát được và nhóm đối chứng thoát như nhau.'
-  loai: so-lieu
-  nguon: *id001
-  trich: Six Ss in the "Yoked" control group failed to escape shock on 9 or more of the 10 trials in the shuttle box.
-  vi_tri: tr. 3
-  ket_qua: dung
-- id: n72
-  cau: 'Hộp hồ sơ: chính hai tác giả viết năm 2016 rằng lý thuyết gốc "hiểu ngược": thụ động là phản ứng mặc định, thứ phải học là sự kiểm soát.'
-  loai: phat-hien
-  nguon: *id002
-  trich: Passivity in response to shock is not learned. It is the default, unlearned response ... So animals learn that they can control aversive events
-  vi_tri: Tóm tắt
-  ket_qua: dung
-- id: n73
-  cau: Hộp hồ sơ ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Năm dòng của hộp khớp mục Nghiên cứu then chốt (các nhận định về Seligman & Maier 1967 và Maier & Seligman 2016).
+  - id: n1
+    cau: Năm 1967, Seligman và Maier cho thấy chó từng chịu sốc điện không thể kiểm soát phần lớn thụ động chịu đựng trong hộp shuttle box dù chỉ cần nhảy qua vách ngăn thấp là thoát.
+    loai: phat-hien
+    nguon: &id001
+      - seligman1967
+    trich: Dogs which had 1st learned to panel press in a harness in order to escape shock subsequently showed normal acquisition of escape/avoidance behavior in a shuttle box. In contrast, yoked, inescapable shock in the harness produced profound interference with subsequent escape responding in the shuttle box.
+    vi_tri: Tóm tắt; Table 1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ (description): "sẽ nằm im chịu đựng". Mới: "phần lớn thụ động" (6/8 chó yoked thất bại ở ≥ 9/10 lượt; 2/8 thì không). "Vách ngăn thấp": Maier 2016 viết "short barrier"; Seligman & Maier 1967 chỉnh vách ngang vai chó: chỗ khó (từ "thấp" giữ theo 2016). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; "phần lớn thụ động" đúng 6/8; "vách ngăn thấp" theo "a short barrier" của Maier & Seligman 2016 (bài 1967 chỉnh vách ngang vai chó), chấp nhận được.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: Vách cao ngang vai chó (bài gốc); Maier và Seligman 2016 gọi là 'a short barrier'.
+    review: dung
+  - id: n2
+    cau: Giữa thập niên 1960, chó được buộc trong võng (hammock) và chịu sốc điện.
+    loai: lich-su
+    nguon:
+      - seligman1967
+      - maier2016
+    trich: a rubberized, cloth hammock … S was strapped into the hammock (1967, tr. 2); We arrived at Penn as first year graduate students in 1964 (2016)
+    vi_tri: Seligman & Maier 1967 tr. 2; Maier & Seligman 2016, mở đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bị đeo đai cố định". Mới: "buộc trong võng". gia-dinh: cảnh "Tự trải nghiệm" là minh họa theo thiết kế 1967, hai con chó. Review (Claude Opus 5.5, 30/10/2026): sai: "Cuối thập niên 1960" lệch thời điểm. Maier & Seligman 2016 (toàn văn PMC4920136): hai tác giả tới Penn năm 1964 làm nghiên cứu sinh; bài đăng tháng 1/1967, nên thí nghiệm làm giữa thập niên 1960 (lượt 2 cũng chỉ). Chữ cũ "Cuối thập niên 1960, hai con chó bị buộc…" → "Giữa thập niên 1960, hai con chó bị buộc…".'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: "Bài đăng 1967, thí nghiệm làm giữa thập niên 1960 (2016: hai tác giả tới Penn năm 1964; nhóm Solomon dùng võng từ đầu thập niên 1960). 'Cuối thập niên 1960' hơi lệch; 'giữa thập niên 1960' chính xác hơn, nhưng không đổi ý."
+    review: sai
+  - id: n3
+    cau: Hai con chó chịu cú sốc cùng cường độ và cùng thời lượng trung bình; con thứ nhất tắt được sốc bằng cách ấn đầu vào tấm bảng ở bên đầu, con thứ hai ấn thế nào sốc cũng không dừng.
+    loai: phat-hien
+    nguon: *id001
+    trich: The duration of shock on any given trial was determined by the mean duration of the corresponding trial in the Escape group.
+    vi_tri: tr. 3 (Procedure)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cú sốc điện giống hệt nhau"; "chạm mõm vào tấm bảng bên đầu". Mới: "cùng cường độ và thời lượng trung bình" (yoked nhận thời lượng bằng trung bình của cú tương ứng ở nhóm thoát được); "ấn đầu" (S & M: "pressed the panels with its head"; Maier 2016 viết nose: bám 1967). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; "ấn đầu" theo bài 1967 ("with its head"); "cùng thời lượng trung bình" đúng thiết kế thí nghiệm I.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Maier và Seligman 2016 viết 'with their noses'; bài gốc 1967 viết 'with its head'.
+    review: dung
+  - id: n4
+    cau: Hôm sau, cả hai được đưa vào một hộp shuttle có vách ngăn ở giữa; chỉ cần nhảy qua vách là thoát sốc.
+    loai: phat-hien
+    nguon: *id001
+    trich: Twenty-four hours later dogs in the Escape group were given 10 trials of escape/avoidance training in the shuttle box
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thả vào một cái hộp dài có vách ngăn thấp ở giữa". Mới thêm 24 giờ trong n về thiết kế. Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n5
+    cau: Phần lớn chó nhóm yoked (6 trên 8 con) thụ động chịu sốc ở ít nhất 9 trong 10 lượt, dù chỉ cần một cái nhảy là thoát.
+    loai: so-lieu
+    nguon: *id001
+    trich: Six Ss in the "Yoked" control group failed to escape shock on 9 or more of the 10 trials in the shuttle box.
+    vi_tri: tr. 3 (Results)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Con từng học được rằng ''làm gì cũng vô ích'' ... nằm bẹp xuống sàn, hầu như không buồn thử" (như thể mọi con). Mới số liệu 6/8. Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; 6/8, ≥ 9/10 lượt khớp Results.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n6
+    cau: Chó từng tắt được sốc hôm trước, và cả những con chó chưa từng bị sốc, thoát sốc bình thường.
+    loai: phat-hien
+    nguon: *id001
+    trich: The Escape group and the Normal control group did not differ on these indexes.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đều nhanh chóng học cách nhảy qua vách ngăn". Mới: "thoát sốc bình thường" (nhóm đối chứng có 1/8 con thất bại ≥ 9/10 lượt). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; "bình thường" là như cả nhóm (đối chứng 1/8 con thất bại).'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Nhóm đối chứng có 1/8 con không thoát ở ít nhất 9 lượt; 'bình thường' là như cả nhóm, đúng.
+    review: dung
+  - id: n7
+    cau: 'Câu hỏi cho chính chúng ta: khi con người liên tục rơi vào tình huống mà nỗ lực chẳng đổi được gì, điều gì xảy ra với ý chí của họ?'
+    loai: phat-hien
+    nguon: []
+    ket_qua: da-bo
+    ghi_chu: 'Opus: bỏ khỏi khối "Xem đáp án". Câu hỏi mở không kiểm được, lại gợi suy từ chó sang "ý chí" của con người, trái với ngộ nhận cuối trang ("Bất lực học được nghĩa là thiếu ý chí": không). Trang Seligman không viết gì gần với chẩn đoán. Review (Claude Opus 5.5, 30/10/2026): đã kiểm trang thật: khối "Xem đáp án" không còn câu hỏi về "ý chí". Bỏ đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: "Câu hỏi tu từ, không phải nhận định; không trái nguồn. Lưu ý chữ 'ý chí' dễ trái với n58 (không phải thiếu ý chí): nên hỏi về 'sự cố gắng'."
+    review: dung
+  - id: n8
+    cau: Thí nghiệm cho thấy, trong thiết kế của họ, thủ phạm không phải cú sốc điện mà là sự không kiểm soát được cú sốc.
+    loai: phat-hien
+    nguon: *id001
+    trich: Because the Escape group differed from the "Yoked" control group during their initial exposure to shock only in their control over shock termination, we suggest that differential learning about their control over shock occurred in these two groups.
+    vi_tri: tr. 3–4 (Discussion)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chứng minh". Mới: "cho thấy, trong thiết kế của họ" (chính tác giả viết "we suggest"). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; "cho thấy, trong thiết kế của họ" đúng mức "we suggest".'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n9
+    cau: Hai nhóm chó chịu sốc cùng cường độ và cùng thời lượng; nếu chính cơn đau làm chó "tê liệt", hai nhóm phải cư xử giống nhau.
+    loai: phat-hien
+    nguon: *id001
+    trich: the Escape and the "Yoked" control groups were equated for the possibility of adventitious punishment for active responding by shock onset in the harness
+    vi_tri: tr. 4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đúng y hệt cường độ và thời lượng"; mới: "cùng cường độ và cùng thời lượng" (trung bình theo từng lượt). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n10
+    cau: Seligman và Maier giải thích năm 1967 rằng sinh vật học được kết quả độc lập với phản ứng của mình, và bài học đó lan sang tình huống mới; họ gọi đó là "bất lực học được".
+    loai: lich-su
+    nguon: *id001
+    trich: Ss failed to escape shock in the shuttle box following inescapable shock in the harness because they had learned that shock termination was independent of responding.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: khẳng định như sự thật "Đó là sự bất lực học được: sinh vật học được rằng ...". Mới: giải thích năm 1967 của hai tác giả, và Maier 2016 nói "hiểu ngược". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; tóm tắt bài 1967 có chữ: "These results were interpreted as supporting a learned ''helplessness'' explanation", nên "họ gọi đó là bất lực học được" đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n11
+    cau: Năm 2016, chính Maier và Seligman viết rằng giải thích gốc "hiểu ngược" (got it backwards).
+    loai: lich-su
+    nguon: &id002
+      - maier2016
+    trich: the original theory got it backwards
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+  - id: n12
+    cau: 'Hiện tượng bắt nguồn từ phòng thí nghiệm của Richard Solomon ở Đại học Pennsylvania, nơi nghiên cứu điều kiện hóa sợ hãi kiểu Pavlov: chó bị giữ trong võng, chịu sốc, hôm sau tập thoát sốc trong hộp shuttle.'
+    loai: lich-su
+    nguon: *id002
+    trich: Richard Solomon and his students at the University of Pennsylvania wanted to know how prior Pavlovian fear conditioning would influence later instrumental learning
+    vi_tri: Mở đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Overmier và Seligman vốn nghiên cứu điều kiện hóa Pavlov trên chó". Mới theo Maier 2016: phòng thí nghiệm Solomon (Leaf 1964, Overmier & Leaf 1965); Seligman và Maier đến Penn 1964 làm nghiên cứu sinh. Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); "Richard Solomon and his students at the University of Pennsylvania…", Leaf 1964, Overmier & Leaf 1965.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n13
+    cau: Chó nhiều khi không thoát sốc trong hộp shuttle mà thụ động chờ hết sốc.
+    loai: phat-hien
+    nguon: *id002
+    trich: the dogs often failed to escape altogether in the shuttlebox and passively waited the shock out
+    vi_tri: Mở đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+  - id: n14
+    cau: 'Overmier và Seligman: sốc không thoát được làm hỏng một cách đáng tin cậy việc học thoát/tránh sốc sau đó trong tình huống mới.'
+    loai: phat-hien
+    nguon: &id003
+      - overmier1967
+    trich: Exposure of dogs to inescapable shocks under a variety of conditions reliably interfered with subsequent instrumental escape-avoidance responding in a new situation.
+    vi_tri: Tóm tắt (OpenAlex)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thất bại trong việc học cách thoát dù lối thoát rất dễ; sau vài lượt thử, chúng nằm im chịu đựng thụ động". "Sau vài lượt" có trong phần mở đầu của Seligman & Maier 1967 ("after a few trials, they passively accept shock"); chỉ đọc tóm tắt bài Overmier & Seligman. Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Overmier & Seligman 1967 (OpenAlex): khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/h0024166", "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false) (Overmier và Seligman); Seligman và Maier 1967 kể lại cùng ý."
+    review: dung
+  - id: n15
+    cau: Chó vẫn bị suy giảm khi bị tê liệt bằng curare lúc chịu sốc, và khi tăng cường độ sốc lúc tập thoát.
+    loai: phat-hien
+    nguon: *id003
+    trich: Ss curarized during their exposure to inescapable shocks also showed proactive interference ... Use of a higher level of shock during instrumental avoidance training did not attenuate interference
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: "Chi tiết thêm vào trang. Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Overmier & Seligman 1967 (OpenAlex): khớp."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/h0024166" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+    review: dung
+  - id: n16
+    cau: Suy giảm tan sau 48 giờ.
+    loai: phat-hien
+    nguon: *id003
+    trich: Magnitude of interference was found to dissipate rapidly in time, leaving an apparently normal S after only 48 hr.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: "Chi tiết thêm; đối lập với 7 ngày ở Seligman & Maier 1967 (chó đã bị suy giảm và thất bại lần đầu trong hộp shuttle). Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Overmier & Seligman 1967 (OpenAlex): khớp; trang đặt câu 48 giờ trong mục Overmier và Seligman, tách khỏi kết quả 7 ngày của Seligman & Maier, nên không lẫn."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/h0024166" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false); chỉ đúng cho Overmier và Seligman: Seligman và Maier 1967 thấy suy giảm còn sau 7 ngày ở chó đã thất bại trong hộp shuttle."
+    review: dung
+  - id: n17
+    cau: Overmier và Seligman gợi ý mức kiểm soát có thể là yếu tố quyết định hiệu ứng.
+    loai: lich-su
+    nguon: *id001
+    trich: Overmier and Seligman (1967) suggested that the degree of control over shock allowed to the animal in the harness may be an important determinant of this interference effect.
+    vi_tri: tr. 2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đây là lần đầu tiên hiện tượng được mô tả và đặt tên là sự bất lực học được". Maier 2016: "helplessness, as first suggested by Overmier and Seligman in 1967" (gợi ý từ, không phải đặt tên thuật ngữ "learned helplessness" trong bài 1967: chưa kiểm). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; tr. 2 trích Overmier & Seligman "may be an important determinant".'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n18
+    cau: Maier và Seligman (2016) viết rằng Overmier và Seligman là người đầu tiên gợi ý từ "bất lực" cho hiện tượng.
+    loai: lich-su
+    nguon: *id002
+    trich: From the beginning we thought the phenomenon looked like helplessness, as first suggested by Overmier and Seligman in 1967.
+    vi_tri: Mở đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+  - id: n19
+    cau: Thí nghiệm I của Seligman và Maier dùng 24 chó, mỗi nhóm 8 con.
+    loai: so-lieu
+    nguon: *id001
+    trich: This left 24 Ss, eight in each group.
+    vi_tri: tr. 2 (Subjects)
+    ket_qua: da-sua
+    ghi_chu: "Chữ cũ không nêu số. Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2."
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n20
+    cau: Nhóm thoát được ấn một trong hai tấm bảng bằng đầu để tắt sốc; 64 cú sốc 6 mA không báo hiệu.
+    loai: phat-hien
+    nguon: *id001
+    trich: Sixty-four unsignaled 6.0 ma. shocks were presented ... If the dog pressed either panel with its head during shock, shock terminated.
+    vi_tri: tr. 2–3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bấm tấm bảng hai bên đầu để tắt sốc". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n21
+    cau: Nhóm yoked nhận cú sốc có thời lượng bằng trung bình của cú tương ứng ở nhóm thoát được, nhưng ấn bảng vô tác dụng.
+    loai: phat-hien
+    nguon: *id001
+    trich: The duration of shock on any given trial was determined by the mean duration of the corresponding trial in the Escape group.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chịu cú sốc đúng y hệt, được cặp theo từng cú sốc của bạn cùng cặp". Sai: ở thí nghiệm này theo trung bình của nhóm (Maier 2016 xác nhận: "In this initial experiment ... the average duration"; thí nghiệm sau mới cặp từng đôi). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); "In this initial experiment … the average duration".'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n22
+    cau: Nhóm đối chứng bình thường không qua giai đoạn trong võng, chỉ tập 10 lượt trong hộp shuttle.
+    loai: phat-hien
+    nguon: *id001
+    trich: The Normal control group received only 10 escape/avoidance trials in the shuttle box as described above.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhóm đối chứng ngây thơ (đeo đai nhưng không bị sốc)". Sai: nhóm này không bị đeo đai. Đã sửa trên trang. Hình seligman-design còn ghi "Đeo đai / không bị sốc": người giao xử lý (không sửa hình). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; và hình đã sửa ("Không vào võng / không bị sốc trước").'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n23
+    cau: Sau 24 giờ, cả ba nhóm cùng làm 10 lượt tập thoát sốc trong hộp shuttle.
+    loai: phat-hien
+    nguon: *id001
+    trich: Twenty-four hours later ... 10 trials of escape/avoidance training in the shuttle box
+    vi_tri: tr. 3
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+  - id: n24
+    cau: Thời gian thoát trung bình là 27,00 giây (nhóm thoát được), 25,93 giây (đối chứng) và 48,22 giây (yoked).
+    loai: so-lieu
+    nguon: *id001
+    trich: Mean Latency (in sec.) 27.00 25.93 48.22
+    vi_tri: Table 1
+    ket_qua: da-sua
+    ghi_chu: "Chữ cũ không có số. Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; Table 1."
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n25
+    cau: 6 trên 8 chó yoked không thoát ở ít nhất 9 trong 10 lượt, so với 0 con của nhóm thoát được và 1 trên 8 con của nhóm đối chứng.
+    loai: so-lieu
+    nguon: *id001
+    trich: '% Ss Failing to Escape Shock on 9 or More of the 10 Trials: 0, 12.5, 75'
+    vi_tri: Table 1
+    ket_qua: da-sua
+    ghi_chu: "Chữ cũ không có số. Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; Table 1 (0; 12,5%; 75%)."
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n26
+    cau: Nhóm thoát được và nhóm đối chứng không khác nhau; chỉ nhóm yoked bị suy giảm rõ.
+    loai: phat-hien
+    nguon: *id001
+    trich: It differed significantly from the Escape group and from the Normal control group ... The Escape group and the Normal control group did not differ on these indexes.
+    vi_tri: tr. 3
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+  - id: n27
+    cau: 'Thí nghiệm II (27 chó, mỗi nhóm 9 con): chó đã từng thoát được sốc trong hộp shuttle trước đó không bị suy giảm sau khi chịu sốc không kiểm soát trong võng, trong khi chó chưa có kinh nghiệm thì bị suy giảm.'
+    loai: phat-hien
+    nguon: *id001
+    trich: The No Pregroup showed significant interference with escape/avoidance responding in the shuttle box on Day 3. The Preescape and the No Inescapable groups did not show such interference.
+    vi_tri: tr. 5 (Exp. II, Results)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chó đã có kinh nghiệm thoát sốc từ trước thì không bị suy giảm sau khi chịu sốc không kiểm soát được — trải nghiệm kiểm soát đã bảo vệ chúng". Mới nêu cỡ mẫu, bối cảnh (thoát trong hộp shuttle); chó chịu sốc không thoát trong hộp shuttle trước đó vẫn bị suy giảm (nhóm đối chứng sau). Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; tóm tắt: "Initial experience with escape in the shuttle box … prevented interference".'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Nhóm Preescape có một xáo trộn nhỏ, thoáng qua (bài gốc); không đổi kết luận.
+    review: dung
+  - id: n28
+    cau: Năm trong sáu chó yoked bị suy giảm vẫn thất bại trong mọi lượt khi thử lại sau 7 ngày.
+    loai: so-lieu
+    nguon: *id001
+    trich: Seven days after the first shuttle-box treatment, these six Ss received 10 further trials in the shuttle box. Five of them continued to fail to escape shock on every trial.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "sự suy giảm vẫn còn thấy được sau 7 ngày nghỉ". Mới số liệu 5/6. Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n29
+    cau: 'Hình: ba nhóm trải qua giai đoạn sốc khác nhau rồi, sau 24 giờ, cùng làm 10 lượt thoát sốc trong hộp shuttle.'
+    loai: phat-hien
+    nguon: *id001
+    trich: Twenty-four hours later ... 10 trials of escape/avoidance training in the shuttle box
+    vi_tri: tr. 3
+    ket_qua: dung
+    ghi_chu: Số 24 giờ và 10 lượt trong hình seligman-design khớp bài gốc; năm 1967 ở tiêu đề hình đúng.
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khớp quy trình Thí nghiệm I.
+  - id: n30
+    cau: 'Hình (đã sửa): nhóm đối chứng "Không vào võng / không bị sốc trước".'
+    loai: phat-hien
+    nguon: *id001
+    trich: The Normal control group received only 10 escape/avoidance trials in the shuttle box as described above.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Opus đã sửa hình (lời giao chỗ khó). Chữ cũ: "Nhóm đối chứng ngây thơ: Đeo đai / không bị sốc". Mới: "Nhóm đối chứng (8 con): Không vào võng / không bị sốc trước". Lý do: nhóm Normal control chỉ tập 10 lượt trong hộp shuttle. Tên hình đã thêm vào HINH_DA_SUA. Review (Claude Opus 5.5, 30/10/2026): mở src/hinh/seligman-design.html: chữ "Không vào võng" / "không bị sốc trước" có trong hình, khớp bài 1967; tên hình có trong HINH_DA_SUA (tests/chuyen.test.mjs).'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n31
+    cau: 'Hình (đã sửa): ô kết quả "Thoát sốc bình thường" (nhóm thoát được, nhóm đối chứng) và "Phần lớn thụ động (6/8)" (nhóm yoked); dòng dưới "Chỉ nhóm yoked bị suy giảm rõ: 6 trên 8 con không thoát ở ít nhất 9 trong 10 lượt"; chú thích tương ứng.'
+    loai: phat-hien
+    nguon: *id001
+    trich: '% Ss Failing to Escape Shock on 9 or More of the 10 Trials: 0, 12.5, 75 ... The Escape group and the Normal control group did not differ on these indexes.'
+    vi_tri: tr. 3 (Method, Exp. I) và Table 1
+    ket_qua: da-sua
+    ghi_chu: 'Opus đã sửa hình. Chữ cũ: "Học nhảy tốt" / "Nằm im chịu đựng"; "Chỉ nhóm yoked suy giảm nặng nề — “sự bất lực học được”: kết quả độc lập với phản ứng của mình."; chú thích "…hai nhóm kia học nhảy qua vách ngăn tốt như nhau — chỉ nhóm yoked nằm im chịu đựng". Lý do: chỉ 6/8 chó yoked thất bại ≥ 9/10 lượt; 1/8 chó đối chứng cũng thất bại, nên "bình thường" (không khác nhóm thoát được) thay cho "học nhảy tốt". Review (Claude Opus 5.5, 30/10/2026): mở src/hinh/seligman-design.html: ba ô kết quả, dòng dưới và figcaption khớp Table 1 (6/8 yoked; nhóm thoát được và đối chứng không khác nhau); aria-label khớp chữ của hình.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khớp Bảng 1 (0; 12,5%; 75%).
+    review: dung
+  - id: n74
+    cau: 'Hình (đã sửa): nhóm yoked "Sốc cùng thời lượng trung bình / ấn bảng vô tác dụng"; dòng dưới và chú thích: nhóm yoked chịu sốc cùng thời lượng trung bình với nhóm thoát được, chỉ khác ở khả năng kiểm soát.'
+    loai: phat-hien
+    nguon:
+      - seligman1967
+    trich: The duration of shock on any given trial was determined by the mean duration of the corresponding trial in the Escape group.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Opus đã sửa hình. Chữ cũ: "Chịu sốc y hệt nhóm 1"; "nhóm yoked chịu sốc y hệt nhóm thoát được"; chú thích "chịu cú sốc y hệt nhau". "Y hệt" chỉ đúng theo trung bình của nhóm (n21). Review (Claude Opus 5.5, 30/10/2026): mở src/hinh/seligman-design.html: "Sốc cùng thời lượng trung bình / ấn bảng vô tác dụng" khớp bài 1967 tr. 3.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n75
+    cau: 'Hình (đã sửa): nhóm thoát được "Ấn tấm bảng bằng đầu là tắt sốc (kiểm soát được)"; mỗi nhóm 8 con; giai đoạn 2 "học nhảy qua vách ngăn để thoát hay tránh sốc".'
+    loai: phat-hien
+    nguon:
+      - seligman1967
+    trich: If the dog pressed either panel with its head during shock, shock terminated. ... This left 24 Ss, eight in each group. ... 10 trials of escape/avoidance training in the shuttle box
+    vi_tri: tr. 2–3
+    ket_qua: da-sua
+    ghi_chu: 'Opus. Chữ cũ: "Bấm bảng hai bên đầu / tắt sốc (kiểm soát được)"; "học nhảy qua vách ngăn để tránh sốc"; tiêu đề nhóm không có số con. Mới như câu trên, theo bài gốc. Review (Claude Opus 5.5, 30/10/2026): mở src/hinh/seligman-design.html: "Ấn tấm bảng bằng đầu là tắt sốc (kiểm soát được)", "(8 con)" ở ba nhóm, "học nhảy qua vách ngăn để thoát hay tránh sốc", "24 giờ sau": khớp bài 1967.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Mỗi nhóm 8 con (Thí nghiệm I).
+    review: dung
+  - id: n32
+    cau: Hiroto và Seligman làm bốn thí nghiệm cùng lúc trên sinh viên đại học, trong đó có một thí nghiệm dùng tiếng ồn khó chịu (tắt được, không tắt được, không nghe) rồi cho giải anagram.
+    loai: phat-hien
+    nguon:
+      - hiroto1975
+    trich: Four experiments with college students were simultaneously conducted ... (c) pretreatments with inescapable, escapable, or control aversive tone followed by anagram solution testing
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "dùng phiên bản ''nhẹ'' ... tất cả cùng làm một bài tập mới hoàn toàn có thể giải được". Mới theo tóm tắt: bốn thí nghiệm; bài mới là anagram. Chỉ đọc tóm tắt. Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Hiroto & Seligman 1975 (OpenAlex): khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/h0076270", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+    review: dung
+  - id: n33
+    cau: Nhóm từng chịu tiếng ồn không thể tắt thất bại nhiều hơn ở việc giải anagram, dù nhiệm vụ không liên quan đến tiếng ồn.
+    loai: phat-hien
+    nguon:
+      - hiroto1975
+    trich: Both insolubility and inescapability produced failure to escape and failure to solve anagrams.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "làm bài kém hẳn và bỏ cuộc sớm hơn nhiều". "Bỏ cuộc sớm hơn" không có trong tóm tắt: bỏ; "kém hẳn" làm mềm. Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Hiroto & Seligman 1975 (OpenAlex): khớp; "Both insolubility and inescapability produced … failure to solve anagrams".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/h0076270" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+    review: dung
+  - id: n34
+    cau: Hiroto và Seligman gợi ý một kỳ vọng rằng phản ứng của mình không liên quan đến kết quả, và hiệu ứng có thể là một "đặc điểm gây ra được".
+    loai: lich-su
+    nguon:
+      - hiroto1975
+    trich: We suggest that inescapability and insolubility both engendered expectancies that responding is independent of reinforcement. ... learned helplessness may be an induced trait.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hiệu ứng lan truyền qua lĩnh vực khác ... kỳ vọng bất lực khái quát hóa". Mới bám tóm tắt. Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Hiroto & Seligman 1975 (OpenAlex): khớp; "learned helplessness may be an induced trait".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/h0076270" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+    review: dung
+  - id: n35
+    cau: Maier và Seligman (2016) là một bài tổng quan 50 năm trên Psychological Review.
+    loai: lich-su
+    nguon: *id002
+    trich: Learned helplessness ... was discovered half a century ago.
+    vi_tri: Tóm tắt; Psychol Rev 123(4)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một bài tổng quan 50 năm trên Psychological Review, đúc kết hàng chục năm nghiên cứu". Giữ; bỏ "đúc kết hàng chục năm" cho hợp. Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); tóm tắt "discovered half a century ago"; Psychol Rev 123(4).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n36
+    cau: Nghiên cứu thần kinh học được tổng hợp chủ yếu trên chuột, dùng các can thiệp như tổn thương và vi tiêm thuốc chặn hoạt động của vùng não.
+    loai: phat-hien
+    nguon: *id002
+    trich: In the research to be described below, rats are the subject ... prevented by either lesion ... or microinjection of pharmacological agents
+    vi_tri: Mục "The Neural Circuitry of Learned Helplessness" và "Passivity/Anxiety and the Dorsal raphe nucleus"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trên chuột và chó (gây tổn thương chọn lọc, bất hoạt tạm thời, kích thích trực tiếp vùng não)". Chó: không phải đối tượng của phần thần kinh học; "kích thích trực tiếp" chỉ là một dẫn chứng gián tiếp (kích thích điện đường PL tới DRN ức chế DRN, trích từ các nghiên cứu khác). Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); "Research with animals quickly switched from dogs to rodents"; can thiệp bằng tổn thương, vi tiêm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: Từ đoạn 'Research with animals quickly switched from dogs to rodents'.
+    review: dung
+  - id: n37
+    cau: 'Hai tác giả thừa nhận lý thuyết gốc "hiểu ngược": thụ động trước sốc kéo dài không phải là thứ học được mà là phản ứng mặc định, có sẵn, qua hoạt động serotonin của nhân dorsal raphe ức chế hành vi thoát.'
+    loai: phat-hien
+    nguon: *id002
+    trich: Passivity in response to shock is not learned. It is the default, unlearned response to prolonged aversive events and it is mediated by the serotonergic activity of the dorsal raphe nucleus, which in turn inhibits escape.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thủ phạm ... do hoạt động serotonin của nhân dorsal raphe ở thân não" ✓. Thêm: "Họ cũng chỉ ra rằng tác dụng của sốc không còn khi sốc thoát được ở lần đầu" (Maier 2016: không xảy ra nếu sốc thoát được; kiểm soát được phát hiện ở vỏ não trước trán, ức chế dorsal raphe). Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); tóm tắt "Passivity in response to shock is not learned. It is the default, unlearned response…".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n38
+    cau: 'Cái thực sự phải học là sự kiểm soát: vùng vỏ não trước trán trong phát hiện kiểm soát và tự động ức chế nhân dorsal raphe.'
+    loai: phat-hien
+    nguon: *id002
+    trich: This passivity can be overcome by learning control, with the activity of the medial prefrontal cortex, which subserves the detection of control leading to the automatic inhibition of the dorsal raphe nucleus.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "vỏ não trước trán trong hoạt động như bộ phát hiện kiểm soát" ✓ (medial prefrontal cortex; tiểu vùng prelimbic của vmPFC trong thân bài). Bỏ ẩn dụ "bộ phát hiện". Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); tóm tắt "medial prefrontal cortex, which subserves the detection of control".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n39
+    cau: 'Khá vững: sốc không kiểm soát được làm suy giảm việc học cách thoát sau này — ở động vật.'
+    loai: nhan
+    nguon:
+      - seligman1967
+      - maier2016
+    trich: The mechanism ... the well-replicated result was that two-thirds of the animals from the INESC group failed to learn to escape, whereas 90% of the animals in both the ESC and 0 groups easily learned to escape
+    vi_tri: Maier 2016, mục "Operationalizing Learned Helplessness"
+    nhan: kha-vung
+    co_so:
+      - seligman1967
+      - maier2016
+      - hiroto1975
+    ly_do: 'Hiệu ứng có thiết kế ba nhóm, được lặp lại ở chó (Seligman & Maier 1967), chuột (Maier & Seligman 2016 gọi là "well-replicated") và trong thí nghiệm người ngắn (Hiroto & Seligman 1975, chỉ tóm tắt). Chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước mà chúng tôi mở được, và bằng chứng do chính nhóm tác giả tổng kết: chưa đạt Vững chắc. Opus xét lại (chỗ khó): giữ Khá vững. Hiệu ứng ở động vật có nhiều lặp lại (Maier & Seligman 2016: "well-replicated"), có một tổng quan hệ thống (Pryce và cộng sự 2011, Pharmacol Ther 132(3), 242–267, doi 10.1016/j.pharmthera.2011.06.006) nhưng không mở được (trang chặn bot, không có tóm tắt ở OpenAlex), chưa có phân tích tổng hợp đã mở; nguồn đã mở đều do chính hai tác giả. Lượt 2 có thể nâng nếu mở được Pryce 2011.'
+    ket_qua: da-lam-mem
+    ghi_chu: 'chỗ khó: chữ cũ :::vung-chac ("lặp lại nhiều lần, trên chó, chuột và các loài khác, với thiết kế ba nhóm"). Thước đo Vững chắc đòi tổng hợp hay hai tái lập lớn: chưa có; hạ xuống Khá vững. Bỏ câu "Đây đều là nghiên cứu trên động vật theo chuẩn đạo đức của thập niên 1960" (không nguồn), thay bằng điều kiểm được. Người giao/lượt 2 cân nhắc; nếu có tổng quan hệ thống độc lập thì có thể nâng. Review (Claude Opus 5.5, 30/10/2026): nhãn so thước đo mục 4: hiệu ứng được lặp lại nhiều ở chó và chuột (Maier & Seligman 2016: "the well-replicated result was that two-thirds of the animals from the INESC group failed to learn to escape"), nhưng không có phân tích tổng hợp hay tái lập lớn có đăng ký trước đã mở, nguồn đã mở do chính nhóm tác giả, chỉ trên động vật: Khá vững là đúng; chưa đủ Vững chắc. Khung trên trang nói rõ giới hạn.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://doi.org/10.1037/h0024166", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: Nhiều nghiên cứu cùng chiều trên chó, chuột (2016); chưa có tái lập lớn đăng ký trước hay phân tích tổng hợp được tìm thấy; giới hạn ở động vật. Khá vững hợp thước đo.
+    review: dung
+  - id: n40
+    cau: 'Khá vững: bản "đảo ngược" 2016 có nền tảng thần kinh học trên động vật.'
+    loai: nhan
+    nguon: *id002
+    trich: The mechanism of learned helplessness is now very well-charted biologically and the original theory got it backward.
+    vi_tri: Tóm tắt
+    nhan: kha-vung
+    co_so:
+      - maier2016
+    ly_do: 'Mạch dựng từ can thiệp (tổn thương, vi tiêm) trên chuột, nhưng là tổng hợp do chính hai tác giả của lý thuyết gốc viết, trên động vật, chưa có tổng quan độc lập: mức Khá vững. Opus xét lại: giữ Khá vững.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "dựng từ các nghiên cứu can thiệp nhân quả trên chuột, không chỉ tương quan". Giữ; thêm "do chính hai tác giả của lý thuyết gốc viết". Chữ cũ "mạch ... vỏ não trước trán trong": giữ. Review (Claude Opus 5.5, 30/10/2026): nhãn so thước đo mục 4: mạch thần kinh dựng từ nhiều nghiên cứu can thiệp trên chuột (Maier & Seligman 2016, toàn văn), cùng chiều, nhưng tổng hợp do chính hai tác giả, chưa có tổng quan độc lập đã mở: Khá vững là mức cao nhất hợp lý. Khung nói rõ giới hạn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: Bằng chứng thần kinh nhiều nghiên cứu cùng chiều trên chuột (tổn thương, vi tiêm, kích hoạt), phần lớn từ nhóm Maier; chưa có tổng hợp độc lập hay tái lập lớn. Khá vững là mức cao nhất hợp lý; không cao hơn thước đo.
+    review: dung
+  - id: n41
+    cau: Từ thập niên 1970, Seligman đề xuất dùng hiện tượng này làm mô hình phòng thí nghiệm cho trầm cảm.
+    loai: lich-su
+    nguon: *id002
+    trich: the possibility that learned helplessness was a laboratory model of clinical depression (Seligman, 1974; Simson & Weiss, 1988)
+    vi_tri: Mục "Humans"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Seligman từ năm 1975 đã đề xuất mô hình động vật". Mới: "từ thập niên 1970" (Maier 2016 dẫn Seligman 1974). Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); mục "Humans": "Seligman, 1974".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n42
+    cau: Maier và Seligman (2016) kể rằng hiện tượng tái hiện tám trong chín triệu chứng của trầm cảm theo tiêu chí DSM-III và DSM-IV.
+    loai: phat-hien
+    nguon: *id002
+    trich: Learned helplessness in the laboratory – combining the animal and human experimental results – produced eight of the nine symptoms
+    vi_tri: Mục "Humans"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhưng bước nhảy ... gây tranh cãi suốt nhiều thập niên" (không nguồn). Mới nêu điều Maier 2016 kể và thêm "phỏng đoán". Đây là lời kể của chính tác giả. Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); "combining the animal and human experimental results – produced eight of the nine symptoms" (DSM-III, DSM-IV); trang viết "nhiều triệu chứng trong danh sách của DSM" và gán cho lời kể của hai tác giả: đúng mức.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n43
+    cau: Chính Maier và Seligman chỉ "phỏng đoán" (speculate) rằng phát hiện thần kinh có thể có ý nghĩa cho điều trị trầm cảm.
+    loai: phat-hien
+    nguon: *id002
+    trich: We speculate that default passivity and the compensating detection and expectation of control may have substantial implications for how to treat depression.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "các thí nghiệm then chốt không thể lặp lại trên người vì lý do đạo đức" (không nguồn; bỏ). Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); tóm tắt "We speculate…".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n44
+    cau: 'Đang tranh cãi: ''bất lực học được'' giải thích được bao nhiêu về trầm cảm ở người? (mô hình gợi ý, không phải công cụ chẩn đoán hay điều trị; dẫn trang Hỗ trợ).'
+    loai: nhan
+    nguon:
+      - maier2016
+      - costello1978
+      - abramson1978
+      - sweeney1986
+    trich: They were found to provide little or no support for the learned helplessness theory of depression.
+    vi_tri: tóm tắt Costello 1978; tóm tắt Abramson 1978, Sweeney 1986; Maier 2016 tóm tắt
+    nhan: tranh-cai
+    co_so:
+      - costello1978
+      - abramson1978
+      - sweeney1986
+      - maier2016
+    ly_do: 'Bằng chứng chất lượng mâu thuẫn: một phía có phân tích tổng hợp 104 nghiên cứu (Sweeney 1986) cho thấy kiểu quy kết của thuyết cải biên liên hệ đáng tin cậy với điểm trầm cảm (tương quan); phía kia có tổng quan phê bình (Costello 1978: các thí nghiệm trên người "little or no support"), chính các tác giả phải cải biên thuyết cho người (Abramson 1978), và năm 2016 Maier & Seligman viết cơ chế gốc "got it backward", chỉ "speculate" về điều trị. Đạt Đang tranh cãi (mục 4).'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó (Opus): lượt 1 giữ nhãn nhưng căn cứ yếu (chỉ Maier 2016). Đã thêm ba nguồn mở được tóm tắt và viết lại thân khung. Chữ cũ: "…nhưng chính họ chỉ “phỏng đoán” (speculate) rằng phát hiện thần kinh có thể có ý nghĩa cho điều trị trầm cảm. Đây là mô hình gợi ý…". Mới: thêm Costello 1978, Abramson 1978, Sweeney 1986 (n76–n78). Không viết gì như chẩn đoán; giữ lời dẫn /psyche/ho-tro/. Review (Claude Opus 5.5, 30/10/2026): nhãn so thước đo mục 4: tổng quan phê bình Costello 1978 ("little or no support"), bản cải biên Abramson 1978, phân tích tổng hợp Sweeney 1986 (104 nghiên cứu, gần 15.000 người, liên hệ đáng tin cậy, tương quan), và Maier & Seligman 2016 chỉ "speculate" về điều trị: bằng chứng mâu thuẫn, hợp Đang tranh cãi. Đọc lại bốn tóm tắt (OpenAlex) và toàn văn 2016. Câu gần sức khỏe tâm thần: khung nói rõ "mô hình gợi ý, tuyệt đối không phải công cụ chẩn đoán hay điều trị", có link /psyche/ho-tro/; không có câu nào như chẩn đoán hay lời khuyên điều trị.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0021-843X.87.1.21", "https://doi.org/10.1037/0021-843X.87.1.49", "https://doi.org/10.1037/0022-3514.50.5.974", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: "Mâu thuẫn bằng chứng: Costello 1978 thấy ít hay không ủng hộ; bản sửa 1978; phân tích tổng hợp Sweeney 1986 chỉ cho liên hệ. Đang tranh cãi hợp thước đo. Lời 'không phải công cụ chẩn đoán hay điều trị' đúng với chính tác giả ('speculate')."
+    review: dung
+  - id: n76
+    cau: Năm 1978, một tổng quan phê bình cho rằng sáu thí nghiệm trên người của nhóm Seligman ủng hộ rất ít cho thuyết bất lực học được về trầm cảm (Costello, 1978).
+    loai: phat-hien
+    nguon:
+      - costello1978
+    trich: Six laboratory experiments on learned helplessness and depression in humans reported by Seligman and his colleagues were critically reviewed. They were found to provide little or no support for the learned helplessness theory of depression.
+    vi_tri: tóm tắt (OpenAlex)
+    ket_qua: dung
+    ghi_chu: Câu mới (Opus) trong khung Đang tranh cãi. Chỉ đọc tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0021-843X.87.1.21" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+  - id: n77
+    cau: Chính Seligman cùng cộng sự viết lại thuyết cho người, thêm vai trò của cách mỗi người giải thích nguyên nhân (Abramson, Seligman và Teasdale, 1978).
+    loai: phat-hien
+    nguon:
+      - abramson1978
+    trich: The learned helplessness hypothesis is criticized and reformulated. ... According to the reformulation, once people perceive noncontingency, they attribute their helplessness to a cause.
+    vi_tri: tóm tắt (OpenAlex)
+    ket_qua: dung
+    ghi_chu: Câu mới (Opus) trong khung Đang tranh cãi. Chỉ đọc tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0021-843X.87.1.49" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+  - id: n78
+    cau: Một phân tích tổng hợp 104 nghiên cứu thấy cách giải thích nguyên nhân ấy có liên hệ đáng tin cậy với điểm trầm cảm (Sweeney và cộng sự, 1986); đó là mối liên hệ, tự nó không cho biết chiều nhân quả.
+    loai: so-lieu
+    nguon:
+      - sweeney1986
+    trich: In 104 studies involving nearly 15,000 subjects, several attributional patterns had reliable associations with depression scores. For negative events, attributions to internal, stable, and global causes had a reliable and significant association with depression.
+    vi_tri: tóm tắt (OpenAlex)
+    ket_qua: dung
+    ghi_chu: 'Câu mới (Opus) trong khung Đang tranh cãi. Chỉ đọc tóm tắt. Vế "tự nó không cho biết chiều nhân quả" là nhận xét phương pháp: tóm tắt chỉ nói "associations".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.50.5.974" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+  - id: n45
+    cau: 'Lý thuyết 1967: ngoài "làm A thì được B", sinh vật còn học mối quan hệ thứ ba: kết quả độc lập với mọi phản ứng.'
+    loai: lich-su
+    nguon: *id001
+    trich: A third operation that is proposed, independence between events, also produces learning
+    vi_tri: tr. 8 (General Discussion)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "sinh vật còn nhạy với mối quan hệ thứ ba". Mới: "theo lý thuyết 1967 đề xuất ... học được". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; tr. 8 "A third operation … independence between events, also produces learning".'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n46
+    cau: 'Abramson, Seligman và Teasdale (1978): ở người, còn tùy cách giải thích sự bất lực; người cho nguyên nhân là lâu dài thì bất lực kéo dài, người cho nguyên nhân lan rộng thì bất lực lan sang nhiều tình huống.'
+    loai: phat-hien
+    nguon:
+      - maier2016
+      - abramson1978
+    trich: Subjects who attributed their helplessness to permanent causes ... would show long-term helplessness ... Subjects who attributed helplessness to pervasive factors ... would show passivity across situations
+    vi_tri: Mục "Humans"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: kiểu "tại mình — luôn thế — việc gì cũng thế". "Tại mình" (internal) không nằm trong tóm lược của Maier 2016: bỏ. Bài Abramson 1978 chưa mở; dựa vào tóm lược của Maier & Seligman 2016. Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Abramson, Seligman & Teasdale 1978 (OpenAlex): "stable or unstable, global or specific … whether expectation of future helplessness will be chronic or acute, broad or narrow"; khớp câu trên trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0021-843X.87.1.49" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+    review: dung
+  - id: n47
+    cau: 'Kinh nghiệm thoát được sốc trong hộp shuttle trước đó có tác dụng bảo vệ trong thí nghiệm: chó không bị suy giảm sau khi chịu sốc không kiểm soát được.'
+    loai: phat-hien
+    nguon: *id001
+    trich: The Preescape and the No Inescapable groups did not show such interference.
+    vi_tri: tr. 5
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Kiểm soát không chỉ chữa — nó còn phòng." Bỏ "chữa" (không nguồn); "miễn dịch" đổi "bảo vệ trong thí nghiệm". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; Exp. II.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    review: dung
+  - id: n48
+    cau: Hiroto và Seligman (1975) thấy ở người rằng trải nghiệm không kiểm soát được trong thí nghiệm ngắn làm giảm thành tích ở nhiệm vụ sau.
+    loai: phat-hien
+    nguon:
+      - hiroto1975
+    trich: Both insolubility and inescapability produced failure to escape and failure to solve anagrams.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (Áp dụng vào đời sống): ba bullet khuyên chia mục tiêu nhỏ cho học sinh, tách phần kiểm soát được, "luật lệ thất thường... công thức nuôi dưỡng sự bất lực" (không nguồn: loi-khuyen). Đã thay bằng một câu hỏi tự hỏi và Hiroto 1975, nói rõ suy luận không phải kết quả nghiên cứu. Review (Claude Opus 5.5, 30/10/2026): đọc lại tóm tắt Hiroto & Seligman 1975 (OpenAlex): khớp; trang ghi rõ đây là kết quả phòng thí nghiệm, phần Áp dụng là suy luận.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/h0076270" ]
+    luot_2_ghi_chu: "đọc tóm tắt qua OpenAlex (toan_van: false)"
+    review: dung
+  - id: n49
+    cau: Các bullet cũ của mục Áp dụng (chia mục tiêu thành bước nhỏ, tách phần kiểm soát được, dạy con và quản lý) đã bỏ khỏi trang.
+    loai: loi-khuyen
+    nguon: []
+    ket_qua: da-bo
+    ghi_chu: 'Không có nguồn kiểm chứng; lời khuyên về học tập và nuôi dạy phải qua nguồn (chuẩn mục 1). Bỏ; giữ cảnh báo "đừng dán nhãn ai". Review (Claude Opus 5.5, 30/10/2026): đã kiểm trang thật: mục Áp dụng chỉ còn hai bullet (câu hỏi tự hỏi, giới hạn). Bỏ đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: "Phần 'đã bỏ' là về site, không kiểm. Về nội dung: các nguồn đã đọc không có bằng chứng cho các lời khuyên cũ (chia mục tiêu, dạy con, quản lý) từ thí nghiệm này; bỏ là đúng."
+    review: dung
+  - id: n50
+    cau: Đừng dùng khái niệm này để dán nhãn ai; trang không đưa chẩn đoán hay hướng dẫn điều trị; ai buồn hay kiệt sức kéo dài thì xem trang Hỗ trợ.
+    loai: loi-khuyen
+    nguon:
+      - who-tram-cam
+    ket_qua: dung
+    ghi_chu: 'Câu thận trọng của chính site (chuẩn mục 5); không khẳng định về bằng chứng. Link /psyche/ho-tro/ có (id ho-tro/index trong src/data/trang.yml). Review (Claude Opus 5.5, 30/10/2026): câu thận trọng gần sức khỏe tâm thần: không chẩn đoán, không khuyên điều trị, dẫn /psyche/ho-tro/. Thêm nguồn cho vế "tìm giúp đỡ khi buồn kéo dài": tờ thông tin Depression của WHO (cập nhật 11/9/2026) "Seek care if you have symptoms of depression", "seek help from a healthcare provider".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.who.int/news-room/fact-sheets/detail/depression" ]
+    luot_2_ghi_chu: Lời khuyên tìm giúp đỡ khi buồn kéo dài khớp WHO; câu không chẩn đoán, không hướng dẫn điều trị. Phần 'trang Hỗ trợ' là về site.
+    review: dung
+  - id: n51
+    cau: Tính đến 10/2026, chưa tìm thấy thí nghiệm bất lực học được nào trên người Việt.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    het_han: '2028-10-01'
+    ket_qua: dung
+    ghi_chu: 'Tìm 30/10/2026: PubMed ("learned helplessness" AND Vietnam: 0), Crossref (truy vấn learned helplessness Vietnamese: không có nghiên cứu thực nghiệm trên người Việt). Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc. Review (Claude Opus 5.5, 30/10/2026): thêm nguồn tim-kiem-vn (lần tìm 30/10/2026 của lượt 1 và lượt 2); có mốc "Tính đến 10/2026" và het_han 2028-10-01: đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(Vietnam%20OR%20Vietnamese)%20AND%20%22learned%20helplessness%22" ]
+    luot_2_ghi_chu: "PubMed (Vietnam OR Vietnamese) AND 'learned helplessness': 0 kết quả; OpenAlex chỉ ra bài về cựu binh Mỹ ở chiến tranh Việt Nam, không phải thí nghiệm trên người Việt. Tra ngày 30/10/2026."
+  - id: n52
+    cau: Thí nghiệm gốc làm trên chó ở Mỹ; bản trên người (Hiroto và Seligman, 1975) làm trên sinh viên đại học.
+    loai: lich-su
+    nguon:
+      - seligman1967
+      - hiroto1975
+    trich: University of Pennsylvania ... Four experiments with college students
+    vi_tri: tr. 1; tóm tắt Hiroto
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "làm trên sinh viên Mỹ": tóm tắt chỉ nói "college students": bỏ "Mỹ". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; đọc lại tóm tắt Hiroto & Seligman 1975 (OpenAlex): khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://doi.org/10.1037/h0076270" ]
+    luot_2_ghi_chu: Đại học Pennsylvania (Mỹ).
+    review: dung
+  - id: n53
+    cau: Đoạn về văn hóa Việt Nam ("coi trọng ý chí ... ngừng cố gắng bị quy là lười") đã bỏ.
+    loai: phat-hien
+    nguon: []
+    ket_qua: da-bo
+    ghi_chu: 'Không có nguồn; bỏ. Review (Claude Opus 5.5, 30/10/2026): đã kiểm trang thật: mục Ở Việt Nam chỉ còn câu thời sự và "không đoán mò". Bỏ đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: "Phần 'đã bỏ' là về site. Đoạn cũ về văn hóa Việt Nam không có nguồn (n51: không có nghiên cứu trên người Việt), bỏ là đúng."
+    review: dung
+  - id: n54
+    cau: 'Ngộ nhận "chó không nhảy vì ngu, nhát, lười": nhóm chưa từng bị sốc và nhóm từng tắt được sốc thoát sốc bình thường.'
+    loai: phat-hien
+    nguon: *id001
+    trich: The Escape group and the Normal control group did not differ on these indexes.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đều nhảy qua vách ngăn ngon lành"; "bài học mà lịch sử đã dạy chúng". Làm mềm: "thoát sốc bình thường", "kinh nghiệm trước đó". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; Table 1.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: "Bảng 1: nhóm thoát được và đối chứng không khác nhau."
+    review: dung
+  - id: n55
+    cau: 'Ngộ nhận "cú sốc điện làm chó tê liệt": thiết kế ba nhóm loại trừ, vì nhóm tắt được sốc chịu cùng lượng sốc như nhóm yoked mà hôm sau vẫn thoát bình thường.'
+    loai: phat-hien
+    nguon: *id001
+    trich: the Escape and the "Yoked" control groups were equated for the possibility of adventitious punishment
+    vi_tri: tr. 4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đúng lượng sốc như nhóm yoked ... vẫn học bình thường". Mới "cùng lượng sốc". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; "cùng lượng sốc" là xấp xỉ (thời lượng theo trung bình nhóm), đã nói rõ ở mục Nghiên cứu then chốt.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Yoked nhận thời lượng bằng trung bình của nhóm thoát được, nên 'cùng lượng' là xấp xỉ.
+    review: dung
+  - id: n56
+    cau: 'Ngộ nhận "bất lực học được chính là trầm cảm": đó là mô hình động vật gợi hướng nghiên cứu, không ai được dùng nó để chẩn đoán ai.'
+    loai: phat-hien
+    nguon: *id002
+    trich: learned helplessness was a laboratory model of clinical depression
+    vi_tri: Mục "Humans"
+    ket_qua: dung
+    ghi_chu: Lời "không ai được dùng để chẩn đoán" là cảnh báo của site, không cần nguồn.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/", "https://doi.org/10.1037/0021-843X.87.1.21" ]
+    luot_2_ghi_chu: Hai tác giả gọi đó là mô hình phòng thí nghiệm có vẻ hợp lý và chỉ 'speculate' về điều trị.
+  - id: n57
+    cau: 'Ngộ nhận "lý thuyết 1967 vẫn giữ nguyên": chính Maier và Seligman 2016 viết rằng lý thuyết gốc "hiểu ngược".'
+    loai: phat-hien
+    nguon: *id002
+    trich: the original theory got it backwards
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đảo ngược một phần lý thuyết gốc: bị động là mặc định ... cái phải học là sự kiểm soát". Giữ ý, chỉnh "hiểu ngược". Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n58
+    cau: 'Ngộ nhận "bất lực học được nghĩa là thiếu ý chí": trong thí nghiệm nhóm yoked chịu cùng lượng sốc với nhóm thoát được, khác biệt là khả năng kiểm soát.'
+    loai: phat-hien
+    nguon: *id001
+    trich: differed during their initial exposure to shock only in their control over shock termination
+    vi_tri: tr. 3–4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Muốn hết bất lực thì chỉ cần cố gắng hơn → ... điều cần là trải nghiệm kiểm soát thật — dù nhỏ" (lời khuyên điều trị không nguồn): bỏ. Thay bằng ngộ nhận mới và lời dẫn Hỗ trợ. Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; câu kèm lời dẫn /psyche/ho-tro/ và "không đưa lời khuyên điều trị": không đọc như chẩn đoán.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khác biệt duy nhất giữa hai nhóm là kiểm soát việc tắt sốc.
+    review: dung
+  - id: n59
+    cau: 'Quiz 1: ba nhóm là nhóm ấn bảng tắt được sốc, nhóm yoked (cùng thời lượng sốc, ấn bảng vô tác dụng), nhóm không qua giai đoạn sốc.'
+    loai: phat-hien
+    nguon: *id001
+    trich: The "Yoked" control group received the same exposure to shock in the harness as did the Escape group, except that panel pressing did not terminate shock.
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhóm đeo đai mà không bị sốc" sai (xem n22); giải thích cũ "đúng y hệt cường độ và thời lượng" đổi "cùng". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khớp mục Procedure.
+    review: dung
+  - id: n60
+    cau: 'Quiz 2: nhóm từng tắt được sốc và nhóm chưa từng bị sốc thoát sốc bình thường; phần lớn nhóm yoked thụ động chịu sốc. Giải thích: năm 1967 hai tác giả cho rằng nhóm yoked đã học được "làm gì cũng không tắt được sốc" và mang điều đó sang tình huống mới; năm 2016 chính họ viết rằng cách giải thích này "hiểu ngược".'
+    loai: phat-hien
+    nguon:
+      - seligman1967
+      - maier2016
+    trich: Ss failed to escape shock in the shuttle box following inescapable shock in the harness because they had learned that shock termination was independent of responding (1967, tóm tắt); the original theory got it backwards (2016, tóm tắt)
+    vi_tri: Table 1 và tóm tắt bài 1967; tóm tắt bài 2016
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chỉ nhóm yoked nằm im chịu sốc"; mới "phần lớn". Review (Claude Opus 5.5, 30/10/2026): sai ở lời giải thích (chưa có trong hồ sơ): "Nhóm yoked mang kỳ vọng ''làm gì cũng vô ích'' sang cả tình huống mới, nơi nỗ lực lẽ ra vẫn có tác dụng" nói cách giải thích năm 1967 như sự thật, trái với chính trang (Maier & Seligman 2016: "got it backwards"). Đã sửa lời giải thích: gán cho hai tác giả năm 1967 và nêu bản 2016. Phần đáp án đúng (Table 1) giữ nguyên.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khớp Bảng 1.
+    review: sai
+  - id: n61
+    cau: 'Quiz 3: nhóm tắt được sốc chịu cùng lượng sốc như nhóm yoked mà vẫn thoát bình thường, nên không phải bản thân cú sốc là nguyên nhân.'
+    loai: phat-hien
+    nguon: *id001
+    trich: Because the Escape group differed from the "Yoked" control group ... only in their control over shock termination
+    vi_tri: tr. 3–4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ "đúng lượng sốc"; mới "cùng lượng". Chữ cũ "học thoát bình thường"; mới "thoát bình thường". Review (Claude Opus 5.5, 30/10/2026): đối chiếu chữ trên trang với trích Seligman & Maier 1967 trong hồ sơ, tóm tắt bài (OpenAlex, đọc lại) và kết quả lượt 2; giải thích câu hỏi không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khớp phần Discussion.
+    review: dung
+  - id: n62
+    cau: 'Quiz 4: Maier và Seligman (2016) kết luận lý thuyết gốc "hiểu ngược": thụ động là phản ứng mặc định có sẵn (nhân dorsal raphe), còn cái phải học là sự kiểm soát (vùng trán trong).'
+    loai: phat-hien
+    nguon: *id002
+    trich: Passivity in response to shock is not learned. It is the default, unlearned response to prolonged aversive events
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bị động ... vỏ não trước trán trong"; giải thích cũ "Bỏ cuộc là chế độ mặc định ...". Mới theo tác giả. Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+    review: dung
+  - id: n63
+    cau: 'Quiz 5: thí nghiệm Seligman là mô hình động vật gợi hướng nghiên cứu, không phải công cụ chẩn đoán hay điều trị; chính Maier và Seligman (2016) chỉ "phỏng đoán" về ý nghĩa với điều trị trầm cảm.'
+    loai: phat-hien
+    nguon: *id002
+    trich: We speculate that default passivity ... may have substantial implications for how to treat depression.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: Quiz 5 hỏi về ứng dụng đúng tinh thần nghiên cứu ("chia mục tiêu thành bước nhỏ"), đã thay hoàn toàn (không nguồn). Review (Claude Opus 5.5, 30/10/2026): đối chiếu toàn văn Maier & Seligman 2016 (PMC4920136, NCBI E-utilities, đọc lại 30/10/2026); không đọc như chẩn đoán hay điều trị.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    review: dung
+  - id: n64
+    cau: Mục Nguồn liệt kê tám nguồn; sáu nguồn (seligman1967, overmier1967, hiroto1975, abramson1978, maier2016, seligman1975) có trong src/data/nguon.yml, DOI khớp (Seligman 1975 là sách, không DOI); Costello 1978 và Sweeney 1986 chưa có ở đó.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm bằng grep: seligman1967, overmier1967, hiroto1975, abramson1978, maier2016, seligman1975 có trong src/data/nguon.yml; DOI khớp. Review (Claude Opus 5.5, 30/10/2026): sai: câu cũ "liệt kê sáu nguồn" không còn đúng sau khi lượt 1 thêm Costello 1978 và Sweeney 1986 (mục Nguồn có 8 dòng). Kiểm bằng grep src/data/nguon.yml. Sửa câu trong hồ sơ; trang không đổi.'
+    review: sai
+  - id: n65
+    cau: 'Trang này là trang nhà của nghiên cứu Seligman: nơi khác chỉ tóm một câu và link về.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id seligman, trang_nha: thi-nghiem/seligman, nguon [overmier1967, seligman1967]. Review (Claude Opus 5.5, 30/10/2026): kiểm src/data/nghien-cuu.yml (id seligman, trang_nha thi-nghiem/seligman) và grep src/content/docs: nơi khác chỉ có link một câu ở thi-nghiem/pavlov.md và tên ở thi-nghiem/index.md.'
+    review: dung
+  - id: n66
+    cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: "Như n58 của asch.yml (src/plugins/thanh-phan.mjs, hàm tomTat). Review (Claude Opus 5.5, 30/10/2026): kiểm src/plugins/thanh-phan.mjs, hàm tomTat; trang có ba khung nhãn."
+    review: dung
+  - id: n67
+    cau: Link "Hỗ trợ" trỏ tới trang /psyche/ho-tro/.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm bằng grep: id ho-tro/index có trong src/data/trang.yml. Review (Claude Opus 5.5, 30/10/2026): grep trang: ba link /psyche/ho-tro/ (khung Đang tranh cãi, mục Áp dụng, ngộ nhận thứ năm); id ho-tro/index có trong src/data/trang.yml.'
+    review: dung
+  - id: n68
+    cau: 'Hộp hồ sơ: tác giả và năm là Seligman và Maier, 1967; Overmier và Seligman, 1967; bản cập nhật Maier và Seligman, 2016.'
+    loai: lich-su
+    nguon:
+      - seligman1967
+      - maier2016
+    trich: FAILURE TO ESCAPE TRAUMATIC SHOCK MARTIN E. P. SELIGMAN AND STEVEN F. MAIER ... Overmier and Seligman (1967)
+    vi_tri: tr. 1
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf", "https://doi.org/10.1037/h0024166", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+    luot_2_ghi_chu: Tác giả và năm khớp ba bài.
+  - id: n69
+    cau: 'Hộp hồ sơ: đối tượng là 24 chó lai ở Đại học Pennsylvania trong thí nghiệm I (mỗi nhóm 8 con).'
+    loai: so-lieu
+    nguon: *id001
+    trich: The Ss were 30 experimentally naive, mongrel dogs ... This left 24 Ss, eight in each group.
+    vi_tri: tr. 2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Đại học Pennsylvania theo đơn vị tác giả.
+  - id: n70
+    cau: 'Hộp hồ sơ: thiết kế ba nhóm (tắt được sốc bằng cách ấn bảng bằng đầu, yoked, không qua giai đoạn sốc), 24 giờ sau 10 lượt thoát sốc trong hộp shuttle.'
+    loai: phat-hien
+    nguon: *id001
+    trich: Twenty-four hours later ... 10 trials of escape/avoidance training in the shuttle box
+    vi_tri: tr. 3
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khớp mục Procedure.
+  - id: n71
+    cau: 'Hộp hồ sơ: 6 trên 8 chó yoked không thoát được ở ít nhất 9 trong 10 lượt; nhóm thoát được và nhóm đối chứng thoát như nhau.'
+    loai: so-lieu
+    nguon: *id001
+    trich: Six Ss in the "Yoked" control group failed to escape shock on 9 or more of the 10 trials in the shuttle box.
+    vi_tri: tr. 3
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://psych.hanover.edu/Classes/Learning/papers/seligman%20maier%201967.pdf" ]
+    luot_2_ghi_chu: Khớp Bảng 1.
+  - id: n72
+    cau: 'Hộp hồ sơ: chính hai tác giả viết năm 2016 rằng lý thuyết gốc "hiểu ngược": thụ động là phản ứng mặc định, thứ phải học là sự kiểm soát.'
+    loai: phat-hien
+    nguon: *id002
+    trich: Passivity in response to shock is not learned. It is the default, unlearned response ... So animals learn that they can control aversive events
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/" ]
+  - id: n73
+    cau: Hộp hồ sơ ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: "Năm dòng của hộp khớp mục Nghiên cứu then chốt (các nhận định về Seligman & Maier 1967 và Maier & Seligman 2016). Review (Claude Opus 5.5, 30/10/2026): đối chiếu năm dòng hộp hồ sơ (dòng 10–14 của trang) với mục Nghiên cứu then chốt: đều có ở thân bài."
+    review: dung
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: (không có)
-  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, đối tượng, thiết kế, kết quả chính, cập nhật 2016'
-  ly_do: Bố cục C (kế hoạch).
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: (không có)
+    moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, đối tượng, thiết kế, kết quả chính, cập nhật 2016'
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Hình seligman-design: "Nhóm đối chứng ngây thơ: Đeo đai / không bị sốc"; "Chịu sốc y hệt nhóm 1"; "Bấm bảng hai bên đầu"; "Học nhảy tốt" / "Nằm im chịu đựng"; "Chỉ nhóm yoked suy giảm nặng nề…"; chú thích "chịu cú sốc y hệt nhau… chỉ nhóm yoked nằm im chịu đựng"'
+    moi: '"Nhóm đối chứng (8 con): Không vào võng / không bị sốc trước"; "Sốc cùng thời lượng trung bình"; "Ấn tấm bảng bằng đầu là tắt sốc"; "Thoát sốc bình thường" / "Phần lớn thụ động (6/8)"; "Chỉ nhóm yoked bị suy giảm rõ: 6 trên 8 con không thoát ở ít nhất 9 trong 10 lượt"; chú thích theo bài gốc'
+    ly_do: Đối chiếu Seligman & Maier 1967 (n30, n31, n74, n75). Hình có tên trong HINH_DA_SUA.
+  - cu: 'Khối "Xem đáp án": "Câu hỏi cho chính chúng ta: khi con người liên tục rơi vào tình huống mà nỗ lực chẳng thay đổi được gì, điều gì xảy ra với ý chí của họ?"'
+    moi: (bỏ)
+    ly_do: Câu hỏi mở không kiểm được, trái với ngộ nhận về "ý chí" cuối trang (n7).
+  - cu: :::tranh-cai['bất lực học được' giải thích được bao nhiêu về trầm cảm ở người?] … "nhưng chính họ chỉ “phỏng đoán”…"
+    moi: Cùng khung, thêm Costello 1978, Abramson 1978, Sweeney 1986 (phân tích tổng hợp 104 nghiên cứu); thêm Costello 1978 và Sweeney 1986 vào mục Nguồn
+    ly_do: Căn cứ cho nhãn Đang tranh cãi (n44, n76–n78).
+  - cu: 'Tự trải nghiệm: "Cuối thập niên 1960, hai con chó bị buộc trong võng…"'
+    moi: '"Giữa thập niên 1960, hai con chó bị buộc trong võng…"'
+    ly_do: "Review: hai tác giả tới Penn năm 1964, bài đăng 1967 (n2)."
+  - cu: "Giải thích câu hỏi 2: \"Nhóm yoked mang kỳ vọng 'làm gì cũng vô ích' sang cả tình huống mới, nơi nỗ lực lẽ ra vẫn có tác dụng.\""
+    moi: "\"Năm 1967, hai tác giả giải thích rằng nhóm yoked đã học được 'làm gì cũng không tắt được sốc' và mang điều đó sang tình huống mới. Năm 2016, chính họ viết rằng cách giải thích này 'hiểu ngược': thụ động là phản ứng mặc định, thứ phải học là sự kiểm soát.\""
+    ly_do: "Review: lời giải thích cũ nói thuyết 1967 như sự thật, trái với chính trang (n60)."

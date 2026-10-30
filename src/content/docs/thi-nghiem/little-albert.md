@@ -43,7 +43,7 @@ Bài báo là một trong những nghiên cứu được trích dẫn nhiều nh
 - **Buổi 2** (một tuần sau, 11 tháng 10 ngày): đưa chuột trắng ra **không kèm tiếng động** → bé không còn tự nhiên với chuột, rụt tay lại khi chuột chạm vào tay. Ghép đôi thêm **5 lần** (tổng cộng 7) rồi đưa chuột ra một mình → bé khóc ngay, quay người, ngã sang bên và bò đi nhanh đến mức phải chạy theo mới bắt kịp.
 - **Buổi 3** (11 tháng 15 ngày, năm ngày sau buổi 2): bé vẫn né chuột, trong khi chơi khối gỗ bình thường. Rồi kiểm tra **khái quát hóa**: thỏ gây phản ứng rõ rệt (khóc, bò đi), chó gây phản ứng nhẹ hơn thỏ nhưng bé khóc khi chó lại gần đầu, áo lông hải cẩu làm bé khóc và cố bò đi, bông gòn gây phản ứng nhẹ hơn; tóc của Watson và mặt nạ ông già Noel bị né, còn tóc của hai người quan sát khác thì bé chơi. Những vật này chưa từng đi kèm tiếng động.
 - **Buổi 4** (11 tháng 20 ngày): phản ứng với chuột đã yếu hơn buổi trước, nên các tác giả "làm mới" bằng cách ghép đôi chuột với tiếng động; lần đầu tiên thỏ và chó cũng được ghép trực tiếp với tiếng động. Sau đó bé được chuyển sang một phòng giảng lớn, sáng hơn, có bốn người; phản ứng với chuột và thỏ yếu hơn. Có một sự cố ngoài kịch bản: con chó vốn im lặng bỗng sủa ba lần sát mặt bé làm bé òa khóc, và làm cả người lớn có mặt giật mình.
-- **Buổi 5** (1 tuổi 21 ngày, tức 31 ngày sau; suốt thời gian ấy bé ở nhà trẻ bệnh viện và không có thử nghiệm cảm xúc nào): kiểm tra lại. Phản ứng yếu đi phần nào, nhưng bé vẫn né mặt nạ, áo lông, thỏ, chó, và với chuột thì rụt tay, nhăn mặt, che mắt bằng hai tay khi chuột bò lên ngực. **Chính ngày ấy Albert rời bệnh viện — không một lần giải điều kiện hóa nào được thực hiện.**
+- **Buổi 5** (1 tuổi 21 ngày, tức 31 ngày sau; suốt thời gian ấy bé ở nhà trẻ bệnh viện và không có thử nghiệm cảm xúc nào): kiểm tra lại. Phản ứng yếu đi phần nào, nhưng bé vẫn né mặt nạ, áo lông, thỏ, chó, còn với chuột thì bé rụt tay, ngả người ra xa, quấy, rồi lấy hai tay che mắt khi chuột bò lên ngực. **Chính ngày ấy Albert rời bệnh viện — không một lần giải điều kiện hóa nào được thực hiện.**
 
 Chính Watson và Rayner đã đặt ra câu hỏi thứ tư trong bài báo: *nếu nỗi sợ không tự mất đi, phòng thí nghiệm có cách nào gỡ bỏ nó không?* Với Albert, họ không có dịp thử: bé rời bệnh viện đúng ngày ấy. Họ viết rằng các phản ứng này, theo quan điểm "có lẽ chưa có cơ sở vững", có thể tồn tại lâu dài nếu không có cách gỡ.
 
@@ -57,7 +57,7 @@ Khoảng ba năm sau, Mary Cover Jones, làm việc với sự cố vấn của 
 Albert không phải là bằng chứng đáng tin cho điều này (xem khung "Đang tranh cãi" bên dưới). Nhưng điều kiện hóa sợ hãi ở người đã được nghiên cứu rộng rãi trong phòng thí nghiệm: phân tích tổng hợp cập nhật của Duits và cộng sự (2015) gồm 44 nghiên cứu (963 bệnh nhân rối loạn lo âu, 1.222 người đối chứng) cho thấy khác biệt nhất quán giữa hai nhóm trong mô hình điều kiện hóa sợ hãi cổ điển; các quá trình tắt dần của nỗi sợ được cho là nền tảng của liệu pháp phơi nhiễm. Trang này không hướng dẫn điều trị; nếu một nỗi sợ gây khổ sở, xem [trang Hỗ trợ](/psyche/ho-tro/).
 :::
 
-:::vung-chac[Watson và Rayner không gỡ nỗi sợ ở Albert: bé rời bệnh viện trước khi họ thử]
+:::note[Watson và Rayner không gỡ nỗi sợ ở Albert: bé rời bệnh viện trước khi họ thử]
 Chính bài báo gốc ghi lại: Albert bị đưa khỏi bệnh viện ngay ngày kiểm tra cuối cùng, nên không có thủ thuật giải điều kiện hóa nào được áp dụng. Điều này không cho biết nỗi sợ có tồn tại lâu dài hay không (xem phần Ngộ nhận).
 :::
 
@@ -74,14 +74,14 @@ Năm 2009, Beck, Levinson và Irons công bố kết quả tìm kiếm danh tín
 - **Điều kiện hóa cổ điển (Pavlov → Watson):** nỗi sợ là một phản ứng có thể được học bằng cách ghép kích thích trung tính với kích thích gây sợ. Watson và Rayner trình bày Albert như một ví dụ cho mô hình này; bằng chứng từ Albert bị phản biện (xem khung "Đang tranh cãi").
 - **Khái quát hóa kích thích:** Watson và Rayner ghi nhận bé né thỏ, chó, áo lông và mặt nạ dù ban đầu chưa đi kèm tiếng động, và gọi đó là chuyển (transfer) của phản ứng. Powell và Schmaltz (2021) cho rằng bằng chứng từ đoạn phim cho điều này yếu.
 - **Giải điều kiện hóa (Mary Cover Jones):** Jones gọi một trong các cách của bà là "điều kiện hóa trực tiếp": cho trẻ ăn món ưa thích mỗi khi con vật được đưa ra, để nỗi sợ giảm dần.
-- **Thuyết hai yếu tố của Mowrer (về sau):** nỗi sợ được học qua điều kiện hóa cổ điển, nhưng được **duy trì** vì hành vi né tránh giúp ta "thoát" cảm giác sợ — một vòng lặp tự củng cố.
+- **Thuyết hai yếu tố của Mowrer (1951):** nỗi sợ được học qua điều kiện hóa cổ điển (yếu tố thứ nhất), rồi hành vi né tránh được củng cố vì nó làm giảm nỗi sợ (yếu tố thứ hai). Tổng quan của Krypotos và cộng sự (2015) kể lại thuyết này và cũng nêu nhiều kết quả thí nghiệm mà nó không giải thích được.
 
 ## Áp dụng vào đời sống
 
 Điều rút ra từ Albert cần dè dặt, vì bằng chứng từ chính Albert yếu (xem khung "Đang tranh cãi"):
 
 - **Nỗi sợ ở trẻ nhỏ có thể có nhiều nguồn gốc.** Jones lưu ý nỗi sợ của Peter "có lẽ không phải nỗi sợ điều kiện hóa trực tiếp", và nguồn gốc của nó không rõ. Nếu một nỗi sợ ở trẻ kéo dài hoặc làm ảnh hưởng sinh hoạt, hãy xem [trang Hỗ trợ](/psyche/ho-tro/); trang này không đưa ra chẩn đoán hay hướng dẫn điều trị.
-- **Liệu pháp phơi nhiễm:** các quá trình tắt dần của nỗi sợ điều kiện hóa được cho là nền tảng của liệu pháp phơi nhiễm (Duits và cộng sự, 2015). Đây là liệu pháp do chuyên gia thực hiện; trang này không hướng dẫn tự làm.
+- **Liệu pháp phơi nhiễm:** các quá trình tắt dần của nỗi sợ điều kiện hóa được cho là nền tảng của liệu pháp phơi nhiễm (Duits và cộng sự, 2015). Liệu pháp này thường do chuyên gia thực hiện hoặc hướng dẫn; trang này không hướng dẫn tự làm.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
@@ -134,4 +134,5 @@ Tính đến 10/2026, chúng tôi **chưa tìm thấy** nghiên cứu điều ki
 - Fridlund, A. J., Beck, H. P., Goldie, W. D., & Irons, G. (2012). Little Albert: A neurologically impaired child. *History of Psychology*, 15(4), 302–327. <https://doi.org/10.1037/a0026720>
 - Powell, R. A., Digdon, N., Harris, B., & Smithson, C. (2014). Correcting the record on Watson, Rayner, and Little Albert: Albert Barger as "psychology's lost boy." *American Psychologist*, 69(6), 600–611. <https://doi.org/10.1037/a0036854>
 - Duits, P., Cath, D. C., Lissek, S., Hox, J. J., Hamm, A. O., Engelhard, I. M., van den Hout, M. A., & Baas, J. M. P. (2015). Updated meta-analysis of classical fear conditioning in the anxiety disorders. *Depression and Anxiety*, 32(4), 239–253. <https://doi.org/10.1002/da.22353>
+- Krypotos, A.-M., Effting, M., Kindt, M., & Beckers, T. (2015). Avoidance learning: A review of theoretical models and recent developments. *Frontiers in Behavioral Neuroscience*, 9, 189. <https://doi.org/10.3389/fnbeh.2015.00189>
 - Powell, R. A., & Schmaltz, R. M. (2021). Did Little Albert actually acquire a conditioned fear of furry animals? What the film evidence tells us. *History of Psychology*, 24(2), 164–181.

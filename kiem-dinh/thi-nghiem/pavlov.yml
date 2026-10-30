@@ -4,564 +4,897 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/pavlov.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-10-30'
-  nhanh: moi/d3-l2
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 1/2)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-10-30'
+    nhanh: không rõ
+    ma_bam: sha256:09f672901bf642039cac67773df2dbff252f41cf8625b609575e4c8a7c0dc2b9
+    nguoi:
+      luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 1/2); chỗ khó: Claude Opus 5.5'
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D3-L2)
+      review: Claude Sonnet 5.5 (agent review D3-L2, 30/10/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d3-l2-kiem-mau.yml), đạt, 30/10/2026
 nguon:
-- id: pavlov1927
-  ten: 'Pavlov (1927), Conditioned Reflexes (G. V. Anrep dịch), OUP: toàn văn bảy bài giảng đầu ở psychclassics.yorku.ca'
-  link: https://psychclassics.yorku.ca/Pavlov/
-  toan_van: true
-- id: thomas1997
-  ten: 'Thomas (1997), Am J Psychol 110(1), 115–125: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.2307/1423704
-  toan_van: false
-- id: watson1920
-  ten: 'Watson & Rayner (1920), J Exp Psychol 3(1), 1–14: toàn văn (psychclassics)'
-  link: https://psychclassics.yorku.ca/Watson/emotion.htm
-  toan_van: true
-- id: beck2009
-  ten: 'Beck, Levinson & Irons (2009), Am Psychol 64(7), 605–614: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1037/a0017234
-  toan_van: false
-- id: powell2014
-  ten: 'Powell và cộng sự (2014), Am Psychol 69(6), 600–611: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1037/a0036854
-  toan_van: false
-- id: openstax2e
-  ten: 'OpenStax Psychology 2e (2020), mục 6.2 (Classical Conditioning) và 16.2 (Types of Treatment): toàn văn'
-  link: https://openstax.org/books/psychology-2e/pages/6-2-classical-conditioning
-  toan_van: true
-- id: hofmann2010
-  ten: 'Hofmann và cộng sự (2010), Psychol Bull 136(3), 390–421: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
-  link: https://doi.org/10.1037/a0018916
-  toan_van: false
-- id: schultz1997
-  ten: 'Schultz, Dayan & Montague (1997), Science 275(5306), 1593–1599: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1126/science.275.5306.1593
-  toan_van: false
-- id: nobel1904
-  ten: 'Nobel Prize in Physiology or Medicine 1904, nobelprize.org: trang tóm tắt; chưa có trong src/data/nguon.yml'
-  link: https://www.nobelprize.org/prizes/medicine/1904/summary/
-  toan_van: true
-- id: todes2014
-  ten: 'Todes (2014), Ivan Pavlov: A Russian life in science, OUP: sách, không mở được (chỉ ghi nhận)'
-  link: https://doi.org/10.1093/acprof:oso/9780199925919.001.0001
-  toan_van: false
-- id: jarius2015
-  ten: 'Jarius & Wildemann (2015), J Neurol 262(9), 2177–2178: chỉ biết tên bài'
-  link: https://doi.org/10.1007/s00415-015-7858-5
-  toan_van: false
-- id: rescorla1972
-  ten: 'Rescorla & Wagner (1972), chương sách: không mở được'
-  link: ''
-  toan_van: false
-- id: kamin1969
-  ten: 'Kamin (1969), chương sách: không mở được'
-  link: ''
-  toan_van: false
+  - id: pavlov1927
+    ten: 'Pavlov (1927), Conditioned Reflexes (G. V. Anrep dịch), OUP: toàn văn bảy bài giảng đầu ở psychclassics.yorku.ca'
+    link: https://psychclassics.yorku.ca/Pavlov/
+    toan_van: true
+  - id: thomas1997
+    ten: 'Thomas (1997), Am J Psychol 110(1), 115–125: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.2307/1423704
+    toan_van: false
+  - id: watson1920
+    ten: 'Watson & Rayner (1920), J Exp Psychol 3(1), 1–14: toàn văn (psychclassics)'
+    link: https://psychclassics.yorku.ca/Watson/emotion.htm
+    toan_van: true
+  - id: beck2009
+    ten: 'Beck, Levinson & Irons (2009), Am Psychol 64(7), 605–614: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/a0017234
+    toan_van: false
+  - id: powell2014
+    ten: 'Powell và cộng sự (2014), Am Psychol 69(6), 600–611: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/a0036854
+    toan_van: false
+  - id: openstax2e
+    ten: 'OpenStax Psychology 2e (2020), mục 6.2 (Classical Conditioning) và 16.2 (Types of Treatment): toàn văn'
+    link: https://openstax.org/books/psychology-2e/pages/6-2-classical-conditioning
+    toan_van: true
+  - id: hofmann2010
+    ten: 'Hofmann và cộng sự (2010), Psychol Bull 136(3), 390–421: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1037/a0018916
+    toan_van: false
+  - id: schultz1997
+    ten: 'Schultz, Dayan & Montague (1997), Science 275(5306), 1593–1599: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1126/science.275.5306.1593
+    toan_van: false
+  - id: nobel1904
+    ten: 'Nobel Prize in Physiology or Medicine 1904, nobelprize.org: trang tóm tắt; chưa có trong src/data/nguon.yml'
+    link: https://www.nobelprize.org/prizes/medicine/1904/summary/
+    toan_van: true
+  - id: jarius2015
+    ten: 'Jarius & Wildemann (2015), J Neurol 262(9), 2177–2178: toàn văn bản đầy đủ (tài liệu bổ sung ESM của Springer, 7 trang; link "free PDF" trên trang nhóm tác giả, Đại học Heidelberg)'
+    link: https://static-content.springer.com/esm/art%3A10.1007%2Fs00415-015-7858-5/MediaObjects/415_2015_7858_MOESM1_ESM.pdf
+    toan_van: true
+  - id: rescorla1972
+    ten: 'Rescorla & Wagner (1972), chương sách: không mở được'
+    link: ''
+    toan_van: false
+  - id: kamin1969
+    ten: 'Kamin (1969), chương sách: không mở được'
+    link: ''
+    toan_van: false
+  - id: gantt1928
+    ten: 'Pavlov, Lectures on Conditioned Reflexes, tập 1 (W. H. Gantt dịch và biên tập, 1928), International Publishers: toàn văn bản quét ở Internet Archive (in.ernet.dli.2015.190960); chưa có trong src/data/nguon.yml'
+    link: https://archive.org/details/in.ernet.dli.2015.190960
+    toan_van: true
+  - id: miller1995
+    ten: 'Miller, Barnet & Grahame (1995), Psychol Bull 117(3), 363–386: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1037/0033-2909.117.3.363
+    toan_van: false
+  - id: maes2016
+    ten: 'Maes và cộng sự (2016), J Exp Psychol Gen 145(9), e49–e71: toàn văn bản thảo đã chấp nhận (biblio.ugent.be); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1037/xge0000200
+    toan_van: true
+  - id: duits2015
+    ten: 'Duits và cộng sự (2015), Depress Anxiety 32(4), 239–253: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1002/da.22353
+    toan_van: false
+  - id: vervliet2013
+    ten: 'Vervliet, Craske & Hermans (2013), Annu Rev Clin Psychol 9, 215–248: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1146/annurev-clinpsy-050212-185542
+    toan_van: false
+  - id: bouton2004
+    ten: 'Bouton (2004), Learn Mem 11(5), 485–494: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1101/lm.78804
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: "Lần tìm 30/10/2026 trên Europe PMC (REST API): điều kiện hóa cổ điển, Pavlovian, fear conditioning, eyeblink conditioning kèm Vietnam, Vietnamese: 2 kết quả, không có nghiên cứu trên người Việt"
+    link: https://europepmc.org/search?query=%28TITLE_ABS%3A%22classical%20conditioning%22%20OR%20TITLE_ABS%3A%22Pavlovian%20conditioning%22%20OR%20TITLE_ABS%3A%22fear%20conditioning%22%20OR%20TITLE_ABS%3A%22eyeblink%20conditioning%22%29%20AND%20%28TITLE_ABS%3AVietnam%20OR%20TITLE_ABS%3AVietnamese%29
+    toan_van: false
+  - id: phs-policy
+    ten: "PHS Policy on Humane Care and Use of Laboratory Animals (OLAW, NIH): toàn văn, đã đọc mục hội đồng IACUC và yêu cầu tránh hay giảm thiểu đau đớn"
+    link: https://olaw.nih.gov/policies-laws/phs-policy.htm
+    toan_van: true
 nhan_dinh:
-- id: n1
-  cau: Ivan Pavlov phát hiện phản xạ "có điều kiện" khi đo nước bọt của chó, từ "tiết dịch tâm lý".
-  loai: lich-su
-  nguon:
-  - pavlov1927
-  - openstax2e
-  trich: I had to inquire into the so-called psychic secretion of some of the glands
-  vi_tri: Pavlov 1927, bài giảng I; OpenStax 6.2
-  ket_qua: dung
-  ghi_chu: Câu mô tả (description) của trang.
-- id: n2
-  cau: 'Hộp hồ sơ: Pavlov và cộng sự; tổng kết bằng tiếng Anh năm 1927, G. V. Anrep dịch.'
-  loai: lich-su
-  nguon:
-  - pavlov1927
-  trich: Translated by G. V. Anrep (1927)
-  vi_tri: trang đầu của bản psychclassics
-  ket_qua: dung
-- id: n3
-  cau: Công việc do hơn một trăm cộng sự thực hiện suốt khoảng 25 năm (đến 1927).
-  loai: lich-su
-  nguon:
-  - pavlov1927
-  trich: over a hundred collaborators have taken part
-  vi_tri: bài giảng I
-  ket_qua: dung
-  ghi_chu: 'Pavlov: "gone on now for twenty-five years" và "over a hundred collaborators".'
-- id: n4
-  cau: Các chó được mổ nhỏ để chuyển lỗ mở của ống tuyến nước bọt ra da (má hoặc dưới cằm), và nước bọt được đo bằng giọt.
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  trich: a preliminary minor operation, which consists in the transplantation of the opening of the salivary duct from its natural place on the mucous membrane of the mouth to the outside skin
-  vi_tri: bài giảng II
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "phẫu thuật đặt lỗ rò (fistula) ở tuyến nước bọt của chó, hứng dịch tiết vào ống đong từng giọt". Mới theo Pavlov: chuyển ống tuyến ra da; số đo bằng giọt (ghi chú [2] bài giảng II). "Ống đong" bỏ.'
-- id: n5
-  cau: Một kích thích trung tính (thường là máy đếm nhịp) vang lên trước khi thức ăn đến; sau nhiều lần ghép đôi, kích thích ấy tự nó gây tiết nước bọt.
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  trich: if the intake of food by the animal takes place simultaneously with the action of a neutral stimulus which has been hitherto in no way related to food, the neutral stimulus readily acquires the property of eliciting the same reaction
-  vi_tri: bài giảng II
-  ket_qua: dung
-- id: n6
-  cau: Quan niệm phản xạ cổ điển, bắt nguồn từ Descartes, coi một kích thích gắn tất yếu với một đáp ứng.
-  loai: lich-su
-  nguon:
-  - pavlov1927
-  trich: Our starting point has been Descartes' idea of the nervous reflex
-  vi_tri: bài giảng I
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Trước Pavlov, người ta tưởng phản xạ là chuyện máy móc... Pavlov phát hiện có một loại phản xạ thứ hai — phản xạ học được". "Tưởng ... máy móc" không có trong nguồn dưới dạng ấy; viết theo chữ Pavlov ("a stimulus appears to be connected of necessity with a definite response").'
-- id: n7
-  cau: 'Pavlov mô tả thêm một loại phản xạ hình thành qua kinh nghiệm: âm thanh trung tính sau khi đi đôi với thức ăn trở thành "tín hiệu" (signal) báo thức ăn.'
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  trich: any external stimulus which is to become the signal in a conditioned reflex must overlap in point of time with the action of an unconditioned stimulus
-  vi_tri: bài giảng II
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Bộ não đã học được một dự báo". Mới dùng chữ "tín hiệu" (signalization) của Pavlov.'
-- id: n8
-  cau: Đây là phản xạ, không phải hành vi cố ý; điều kiện hóa cổ điển liên quan đến những phản ứng tự động của cơ thể.
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  - openstax2e
-  trich: a stimulus appears to be connected of necessity with a definite response, as cause with effect
-  vi_tri: 'bài giảng I; OpenStax 6.2: "Salivating to food in the mouth is reflexive"'
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Điều kiện hóa cổ điển nắn chính những phản ứng tự động". Câu ví dụ "không quyết định thấy thèm khi ngửi mùi phở" là minh họa (gia-dinh).'
-- id: n9
-  cau: Pavlov (1849–1936) là nhà sinh lý học người Nga, ban đầu nghiên cứu tiêu hóa ở chó.
-  loai: lich-su
-  nguon:
-  - openstax2e
-  - nobel1904
-  trich: Pavlov was a physiologist, not a psychologist.
-  vi_tri: OpenStax 6.2; Nobel 1904 ("physiology of digestion")
-  ket_qua: dung
-- id: n10
-  cau: Chó bắt đầu chảy nước miếng khi chỉ nhìn thấy thức ăn, cái bát quen thuộc, hay nghe tiếng chân người cho ăn.
-  loai: phat-hien
-  nguon:
-  - openstax2e
-  trich: the dogs began to salivate not only at the taste of food, but also at the sight of food, at the sight of an empty food bowl, and even at the sound of the laboratory assistants' footsteps
-  vi_tri: OpenStax 6.2 (kể lại Pavlov 1927)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cái bát quen thuộc, hay người thường cho chúng ăn". Mới theo OpenStax: nhìn thức ăn, bát rỗng, tiếng chân của người phụ tá. Nguồn bậc 2.'
-- id: n11
-  cau: Pavlov gọi hiện tượng đó là "tiết dịch tâm lý" (psychic secretions).
-  loai: lich-su
-  nguon:
-  - openstax2e
-  - pavlov1927
-  trich: what he called the dogs' “psychic secretions” (Pavlov, 1927)
-  vi_tri: OpenStax 6.2; Pavlov bài giảng I
-  ket_qua: dung
-- id: n12
-  cau: Pavlov tái tạo hiện tượng trong phòng thí nghiệm, dùng thịt bột làm kích thích không điều kiện.
-  loai: phat-hien
-  nguon:
-  - openstax2e
-  trich: the dogs salivated each time meat powder was presented to them. The meat powder in this situation was an unconditioned stimulus
-  vi_tri: OpenStax 6.2
-  ket_qua: dung
-- id: n13
-  cau: 'Các thành phần được đặt tên: kích thích có điều kiện, kích thích không điều kiện, đáp ứng không điều kiện, đáp ứng có điều kiện.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: the neutral stimulus became the conditioned stimulus (CS)
-  vi_tri: OpenStax 6.2
-  ket_qua: dung
-- id: n14
-  cau: 'Tắt dần: nếu kích thích có điều kiện lặp lại mãi mà không còn thức ăn, đáp ứng dần biến mất.'
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  - openstax2e
-  trich: extinguished conditioned reflexes spontaneously recover their full strength after a longer or shorter interval of time
-  vi_tri: bài giảng IV (nói về tắt dần và phục hồi); OpenStax 6.2 mục extinction
-  ket_qua: dung
-  ghi_chu: Trích Pavlov dùng cho "phục hồi tự nhiên"; "tắt dần" là chính chủ đề bài giảng IV.
-- id: n15
-  cau: 'Phục hồi tự nhiên: sau một thời gian nghỉ, đáp ứng đã tắt có thể trở lại.'
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  trich: Left to themselves extinguished conditioned reflexes spontaneously recover their full strength after a longer or shorter interval of time
-  vi_tri: bài giảng IV
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đáp ứng có thể trở lại một phần". Pavlov nói các phản xạ đã hình thành vững "tự phục hồi đầy đủ"; phản xạ còn yếu có thể cần củng cố lại. Viết "có thể trở lại" (không nói mức độ).'
-- id: n16
-  cau: 'Khái quát hóa và phân biệt: chó phản ứng với âm thanh gần giống, rồi học chỉ đáp ứng với đúng âm đã được ghép đôi.'
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  trich: if a tone of 1000 d.v. is established as a conditioned stimulus, many other tones spontaneously acquire similar properties
-  vi_tri: bài giảng VII
-  ket_qua: dung
-  ghi_chu: 'Pavlov: tone 1000 d.v.; phân biệt qua "differential inhibition" (cùng bài giảng).'
-- id: n17
-  cau: Bản tổng kết bằng tiếng Anh là Conditioned Reflexes, do G. V. Anrep dịch, Oxford University Press xuất bản năm 1927.
-  loai: lich-su
-  nguon:
-  - pavlov1927
-  trich: Translated by G. V. Anrep (1927)
-  vi_tri: trang đầu psychclassics; nhà xuất bản ghi ở nguon.yml (pavlov1927)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "do chính học trò và cộng sự của ông là G. V. Anrep dịch và biên tập". Bỏ "học trò và cộng sự" và "biên tập" (không kiểm được trong bản psychclassics). Nhà xuất bản OUP theo nguon.yml.'
-- id: n18
-  cau: 'Chú thích đạo đức: chó phải qua mổ nhỏ chuyển ống tuyến nước bọt ra da; theo chuẩn mực ngày nay, mọi thủ tục trên động vật đều phải qua hội đồng đạo đức và giảm thiểu đau đớn.'
-  loai: loi-khuyen
-  nguon:
-  - pavlov1927
-  trich: a preliminary minor operation
-  vi_tri: bài giảng II
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "phẫu thuật đặt lỗ rò ở tuyến nước bọt và thực quản — thủ thuật xâm lấn nặng nề... thời của Pavlov chưa có cơ chế đó". Bỏ "thực quản" (chưa thấy trong 7 bài giảng đầu, bài giảng sau chưa mở) và "chưa có cơ chế đó" (không kiểm được).'
-- id: n19
-  cau: Watson và Rayner thử trên một bé trai 11 tháng tuổi, gọi là "Albert bé nhỏ".
-  loai: phat-hien
-  nguon:
-  - watson1920
-  trich: We did not begin this work until Albert was eleven months, three days of age.
-  vi_tri: mục I
-  ket_qua: dung
-- id: n20
-  cau: Ban đầu Albert không sợ chuột bạch.
-  loai: phat-hien
-  nguon:
-  - watson1920
-  trich: Not the slightest sign of a fear response was obtained in any situation.
-  vi_tri: mục I
-  ket_qua: dung
-- id: n21
-  cau: Khi bé chạm vào chuột, các nhà nghiên cứu gõ búa vào thanh thép ngay sau gáy bé; bé giật mình và khóc.
-  loai: phat-hien
-  nguon:
-  - watson1920
-  trich: Just as his hand touched the animal the bar was struck immediately behind his head.
-  vi_tri: mục I, nhật ký 11 tháng 3 ngày
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Mỗi lần bé chạm vào chuột ... khiến bé khóc thét". Lần đầu bé không khóc; lần hai bắt đầu thút thít; sau đó khóc. Mới: "giật mình và khóc".'
-- id: n22
-  cau: Sau vài lần ghép đôi, thấy chuột bạch bé tỏ ra sợ, có lúc khóc và bò tránh, dù không còn tiếng động.
-  loai: phat-hien
-  nguon:
-  - watson1920
-  trich: Fell over to left side, got up on all fours and started to crawl away.
-  vi_tri: mục I, 11 tháng 20 ngày
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Albert đã khóc và bò tránh". Trong nhật ký, có lần chỉ bò tránh không khóc ("no crying").'
-- id: n23
-  cau: Nỗi sợ khái quát hóa sang thỏ, chó và áo lông thú.
-  loai: phat-hien
-  nguon:
-  - watson1920
-  trich: 8. Dog alone. The dog did not produce as violent a reaction as the rabbit.
-  vi_tri: mục II (11 tháng 15 ngày), tests 6–10
-  ket_qua: dung
-  ghi_chu: 'Phản ứng với chó nhẹ hơn thỏ; áo lông thú: "Withdrew immediately". Beck 2009 tóm tắt: "fear generalized to other furry objects".'
-- id: n24
-  cau: 'Nỗi sợ không được gỡ bỏ: Albert rời bệnh viện ngày kết thúc các thử nghiệm.'
-  loai: phat-hien
-  nguon:
-  - watson1920
-  trich: Unfortunately Albert was taken from the hospital the day the above tests were made.
-  vi_tri: mục IV
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "không bao giờ được xóa đi" (không biết kết cục lâu dài). Mới: "không được gỡ bỏ trước khi bé rời bệnh viện".'
-- id: n25
-  cau: Bài báo gốc không có đoạn nào ghi về sự đồng thuận.
-  loai: phat-hien
-  nguon:
-  - watson1920
-  trich: A certain responsibility attaches to such a procedure.
-  vi_tri: toàn bài (đã đọc toàn văn psychclassics; không có từ consent/permission)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "không ghi chép gì về quy trình đồng thuận". Giữ ý, nêu đã đọc toàn văn; đoạn gần nhất là hai tác giả "do thận trọng" mà thử.'
-- id: n26
-  cau: 'Danh tính bé còn tranh cãi: Beck và cộng sự (2009) cho là Douglas Merritte, Powell và cộng sự (2014) cho là Albert Barger.'
-  loai: lich-su
-  nguon:
-  - beck2009
-  - powell2014
-  trich: Albert Barger, who appears to match the characteristics of Little Albert better than Douglas Merritte does
-  vi_tri: tóm tắt Powell 2014; tóm tắt Beck 2009
-  ket_qua: dung
-  ghi_chu: Chỉ đọc tóm tắt (Crossref/OpenAlex).
-- id: n27
-  cau: 'Vững chắc: học liên hệ giữa các kích thích là có thật.'
-  loai: nhan
-  nguon:
-  - pavlov1927
-  - openstax2e
-  - hofmann2010
-  trich: Across a total of 214 studies included in the main sample, the mean EC effect was d = .52
-  vi_tri: tóm tắt Hofmann 2010 (điều kiện hóa đánh giá); Pavlov 1927; OpenStax 6.2
-  nhan: vung-chac
-  co_so:
-  - pavlov1927
-  - openstax2e
-  - hofmann2010
-  ly_do: 'Pavlov 1927 mô tả với nhiều kích thích và có đối chứng thứ tự (đảo thứ tự thì không hình thành: 427 lần ghép vanillin sau axit không tạo phản xạ); giáo trình OpenStax trình bày như kiến thức nền; phân tích tổng hợp Hofmann 2010 (214 nghiên cứu, d = 0,52) cho dạng ghép đôi ở người. Không có thất bại tái lập nào đã mở.'
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: thước đo Vững chắc cần phân tích tổng hợp: Hofmann 2010 là của điều kiện hóa đánh giá (thái độ), không phải đáp ứng sinh lý như nước bọt; chưa mở phân tích tổng hợp về điều kiện hóa cổ điển/nỗi sợ ở người. Chữ cũ: "hiệu ứng này đã được lặp lại hàng nghìn lần, trên nhiều loài, trong hơn một thế kỷ, và là nền tảng của các liệu pháp điều trị ám ảnh sợ hãi ngày nay" (không đếm được "hàng nghìn", "nền tảng" mạnh): đổi như trên. Người giao/lượt 2 cân nhắc xuống Khá vững.'
-- id: n28
-  cau: 'Khá vững: các chi tiết thủ tục gốc của Pavlov (tắt dần, phục hồi tự nhiên, khái quát hóa, phân biệt).'
-  loai: nhan
-  nguon:
-  - pavlov1927
-  - openstax2e
-  trich: Left to themselves extinguished conditioned reflexes spontaneously recover their full strength
-  vi_tri: bài giảng IV
-  nhan: kha-vung
-  co_so:
-  - pavlov1927
-  - openstax2e
-  ly_do: 'Mô tả bởi chính phòng thí nghiệm của Pavlov và trình bày trong giáo trình mở; chưa mở tái lập độc lập hiện đại hay phân tích tổng hợp riêng cho từng hiện tượng: đúng mô tả Khá vững (mục 4).'
-  ket_qua: da-sua
-  ghi_chu: Chữ cũ gộp cả câu chuyện thuật ngữ conditional/conditioned; giữ ở khung nhưng đánh dấu "theo Todes".
-- id: n29
-  cau: Theo Todes, "conditioned reflex" chưa sát chữ gốc tiếng Nga "условный рефлекс", nghĩa là phản xạ có điều kiện (conditional); tiếng Việt "phản xạ có điều kiện" gần nghĩa gốc hơn.
-  loai: lich-su
-  nguon:
-  - todes2014
-  ket_qua: null
-  ghi_chu: 'chưa chắc: Todes 2014 (sách) và Todes 1997 (Am Psychol 52(9): "From the machine to the ghost within") không mở được toàn văn/tóm tắt; một bản tóm tắt qua công cụ tìm kiếm nói bài 1997 viết rằng thuật ngữ thường dịch "conditioned" nhưng nghĩa gốc là "conditional". Đã làm mềm câu thành "theo Todes"; cần người giao hay lượt 2 xác nhận bằng bài Todes 1997 (todes1997 chưa có trong src/data/nguon.yml).'
-- id: n30
-  cau: 'Đang tranh cãi: điều kiện hóa là ghép đôi máy móc hay học dự báo.'
-  loai: nhan
-  nguon:
-  - rescorla1972
-  nhan: tranh-cai
-  co_so:
-  - rescorla1972
-  - kamin1969
-  ly_do: Rescorla và Wagner 1972 và Kamin 1969 là sách/chương sách, chưa mở được; chỉ mô tả của OpenStax ("Rescorla ... mathematical formula") và Schultz 1997 (học do thay đổi trong kỳ vọng).
-  ket_qua: null
-  ghi_chu: 'chưa chắc: không mở được nguồn gốc (hai chương sách); OpenStax 6.2 có nói về Rescorla–Wagner (mô hình công thức dự đoán xác suất học một liên hệ). Chữ cũ: "Cuộc tranh luận này thay đổi hẳn cách ta hiểu... từ máy đóng dấu sang bộ máy dự đoán" (bỏ); "(hiệu ứng chặn) của Kamin" giữ như "thường được dẫn". Người giao/lượt 2 cân nhắc nhãn.'
-- id: n31
-  cau: Rescorla và Wagner (1972) đề xuất mô hình trong đó học phụ thuộc vào việc kích thích trung tính dự báo được kích thích không điều kiện đến mức nào.
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: developed a mathematical formula that could be used to calculate the probability that an association would be learned given the ability of a conditioned stimulus to predict the occurrence of an unconditioned stimulus
-  vi_tri: OpenStax 6.2
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chỉ khi kích thích trung tính mang thông tin mới về kích thích không điều kiện thì học mới xảy ra". Mới theo mô tả của OpenStax.'
-- id: n32
-  cau: Hiệu ứng "chặn" của Kamin (1969) là một bằng chứng thường được dẫn cho học dự báo.
-  loai: lich-su
-  nguon:
-  - kamin1969
-  ket_qua: null
-  ghi_chu: 'chưa chắc: chương sách của Kamin 1969 (Predictability, surprise, attention and conditioning) chưa mở; chỉ giữ như "thường được dẫn". Người giao/lượt 2 cần một nguồn có thể mở.'
-- id: n33
-  cau: 'Bác bỏ: chuông là kích thích chính, hay duy nhất, trong thí nghiệm của Pavlov.'
-  loai: nhan
-  nguon:
-  - pavlov1927
-  - thomas1997
-  trich: Pavlov's use of a bell in salivary conditioning was reported in Science in 1906
-  vi_tri: 'tóm tắt Thomas 1997; Pavlov 1927 (đếm: 67 lần "metronome" so với 2 lần "electric bell" trong bảy bài giảng đầu)'
-  nhan: bac-bo
-  co_so:
-  - pavlov1927
-  - thomas1997
-  ly_do: 'Bằng chứng gốc: trong bảy bài giảng đầu của Pavlov 1927, máy đếm nhịp xuất hiện 67 lần, chuông điện 2 lần (đếm văn bản); Thomas 1997 xác nhận chuông cũng được dùng. Tức "chuông là kích thích chính" không đúng, và "chưa từng dùng chuông" cũng không đúng.'
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: chữ cũ :::bac-bo[Pavlov lắc chuông tay trước mỗi bữa ăn của chó]; đổi tên khung thành "chuông là kích thích chính, hay duy nhất" vì "lắc chuông tay" không có nguồn. Giữ bác bỏ theo thước đo ("bằng chứng gốc không ủng hộ"). Chữ cũ dẫn Todes 2014 (không mở được) cho "máy đếm nhịp, phong cầm, còi điện... " và "zvonok": bỏ.'
-- id: n34
-  cau: Trong bảy bài giảng đầu của sách 1927, kích thích xuất hiện nhiều nhất là máy đếm nhịp; còn có còi hoặc chuông điện, âm thoa, còi Galton, đèn nháy, vật quay và kích thích chạm lên da.
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  trich: a rotating object, and the tone C sharp of a pneumatic tuning fork
-  vi_tri: bài giảng V (ví dụ); đếm văn bản ở bài giảng I–VII
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ liệt kê "phong cầm (harmonium)": 0 lần trong bảy bài giảng đầu (có "organ pipe" 2 lần); "kích thích điện trên da": chỉ 1 lần "electric stimul". Mới: liệt kê những thứ đã thấy ("buzzer", "electric bell", "Galton''s whistle", "tuning fork", "flash of a lamp", "rotating object", "tactile"). Đã đọc bảy bài giảng đầu, chưa đọc các bài giảng sau (VIII–XXIII).'
-- id: n35
-  cau: Thomas (1997) dẫn việc Pavlov dùng chuông trong báo cáo trên Science năm 1906, phim của phòng thí nghiệm 1925–26 và nghiên cứu di truyền kiểu Lamarck năm 1923.
-  loai: lich-su
-  nguon:
-  - thomas1997
-  trich: Pavlov's use of a bell in salivary conditioning was reported in Science in 1906, and similar use of a bell was shown in a film produced in Pavlov's laboratory in 1925-26.
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "trong bài giảng năm 1906, chính Pavlov nhắc tới tiếng chuông reo dữ dội ... các thí nghiệm năm 1923 trên chuột bạch dùng chuông điện". Tóm tắt chỉ nói báo cáo Science 1906, phim 1925–26, và nghiên cứu Lamarck 1923 "described using a bell"; "dữ dội", "chuột bạch", "bài giảng" không kiểm được: đã bỏ. Chỉ đọc tóm tắt.'
-- id: n36
-  cau: Bản tiếng Anh 1927 kể về một con chó được luyện với cả tiếng máy đếm nhịp lẫn "tiếng rè của chuông điện" (bài giảng III).
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  trich: two primary alimentary conditioned stimuli firmly established, one to the sound of a metronome and the other to the buzzing of an electric bell
-  vi_tri: bài giảng III, thí nghiệm của Frolov
-  ket_qua: dung
-- id: n37
-  cau: Jarius và Wildemann (2015) tổng hợp bằng chứng về việc dùng chuông.
-  loai: lich-su
-  nguon:
-  - jarius2015
-  ket_qua: null
-  ghi_chu: 'chưa chắc: chỉ biết tên bài ("And Pavlov still rings a bell: summarising the evidence for the use of a bell in Pavlov''s iconic experiments on classical conditioning"), không mở được tóm tắt/toàn văn. Chỉ ghi tên như đã nói trên trang; người giao/lượt 2 xem có giữ không.'
-- id: n38
-  cau: Giáo trình mở trình bày điều kiện hóa cổ điển và thao tác như hai dạng học liên kết khác nhau.
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: Classical conditioning is a process by which we learn to associate stimuli
-  vi_tri: OpenStax 6.2; 6.3 (Skinner)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Hai cơ chế này bổ sung cho nhau chứ không thay thế nhau"; "cổ điển là học dự báo; thao tác là học hành động" — viết lại thành mô tả liên hệ.'
-- id: n39
-  cau: Theo Schultz, Dayan và Montague (1997), các neuron dopamine ở linh trưởng có hoạt động dường như báo hiệu thay đổi hay sai số trong dự đoán phần thưởng; học được điều khiển bởi thay đổi trong kỳ vọng.
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  trich: identifying dopaminergic neurons in the primate whose fluctuating output apparently signals changes or errors in the predictions of future salient and rewarding events
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "các mạch não xử lý phần thưởng mã hóa sai số dự báo — khớp đáng ngạc nhiên với mô hình toán học của Rescorla–Wagner". Tóm tắt Schultz nói "quantitative theories of adaptive optimizing control", không nêu Rescorla–Wagner: bỏ phần "khớp". Chỉ đọc tóm tắt.'
-- id: n40
-  cau: Liệu pháp phơi nhiễm đưa người học tiếp xúc với thứ gây sợ để họ dần quen; giải mẫn cảm có hệ thống (Wolpe, 1958) dùng thang bậc từ ít đến nhiều gây lo âu kết hợp thư giãn; giáo trình mở trình bày cả hai như kỹ thuật dựa trên điều kiện hóa cổ điển.
-  loai: lam-sang
-  nguon:
-  - openstax2e
-  trich: Joseph Wolpe (1958) refined Jones’s techniques, giving us systematic desensitization.
-  vi_tri: OpenStax 6.2/16.2 (Types of Treatment)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "liệu pháp phơi nhiễm dùng chính nguyên tắc tắt dần ... để mối liên hệ sợ hãi yếu dần đi... một phản ứng đối nghịch lấn dần nỗi sợ". Mới theo OpenStax. Thêm lời nhắc gặp chuyên gia; không phải khuyên điều trị. Nguồn bậc 2 (giáo trình), chưa mở hướng dẫn lâm sàng (NICE/WHO).'
-- id: n41
-  cau: Phân tích tổng hợp 214 nghiên cứu thấy điều kiện hóa đánh giá (ghép vật trung tính với kích thích dễ chịu hay khó chịu) có hiệu ứng trung bình d = 0,52.
-  loai: so-lieu
-  nguon:
-  - hofmann2010
-  trich: Across a total of 214 studies included in the main sample, the mean EC effect was d = .52
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ về quảng cáo: "ghép sản phẩm với hình ảnh dễ chịu để cảm xúc tích cực lan sang thương hiệu — điều kiện hóa cổ điển phiên bản thương mại". Hofmann đo thí nghiệm, không đo quảng cáo thực tế; đã nói rõ trên trang.'
-- id: n42
-  cau: Điều kiện hóa vị giác có thể xảy ra sau một lần ghép đôi dù cách quãng nhiều giờ; có thể là một thích nghi tiến hóa.
-  loai: phat-hien
-  nguon:
-  - openstax2e
-  trich: Taste aversion is a type of conditioning in which an interval of several hours may pass between the conditioned stimulus
-  vi_tri: OpenStax 6.2
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chỉ một lần ngộ độc, bạn có thể ghê món đó nhiều năm". "Nhiều năm" không có trong nguồn đã mở; mới theo OpenStax ("may be an evolutionary adaptation").'
-- id: n43
-  cau: Giáo trình mở nêu ví dụ tiếng động quen thuộc trở thành tín hiệu báo thức ăn cho mèo; ý tưởng tương tự dùng khi huấn luyện bằng tiếng clicker.
-  loai: loi-khuyen
-  nguon:
-  - openstax2e
-  trich: Tiger will learn to get excited when she hears the “squeak” of the cabinet
-  vi_tri: OpenStax 6.2 (ví dụ Tiger)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "tiếng clicker ... chính là kích thích có điều kiện báo hiệu thưởng sắp đến — Pavlov phiên bản hiện đại". Clicker không có trong nguồn; giữ như "ý tưởng tương tự" (suy luận), nêu ví dụ OpenStax. Người giao/lượt 2 cân nhắc bỏ câu.'
-- id: n44
-  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên người Việt về điều kiện hóa cổ điển trong phòng thí nghiệm.
-  loai: thoi-su
-  het_han: '2028-10-01'
-  ket_qua: dung
-  ghi_chu: Tìm 30/10/2026 ở PubMed và Crossref (xem bước tìm ở keo-deo.yml); xem ghi chú dưới. Chưa tìm Google Scholar hay tạp chí trong nước.
-- id: n45
-  cau: Các liệu pháp dựa trên tắt dần được thực hành ở Việt Nam nhưng không có số liệu tổng kết đáng tin cậy.
-  loai: thoi-su
-  ket_qua: da-bo
-  ghi_chu: 'Chữ cũ: "Các liệu pháp dựa trên nguyên tắc tắt dần ... có được thực hành trong lâm sàng tâm lý ở Việt Nam". Không kiểm được (không nguồn Việt Nam); bỏ.'
-- id: n46
-  cau: Pavlov đoạt Nobel Sinh lý/Y khoa năm 1904 "in recognition of his work on the physiology of digestion".
-  loai: lich-su
-  nguon:
-  - nobel1904
-  trich: in recognition of his work on the physiology of digestion
-  vi_tri: nobelprize.org, summary 1904
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "công trình về phản xạ có điều kiện chiếm nửa sau sự nghiệp của ông". Không có nguồn cho "nửa sau"; mới: ông nói công trình về phản xạ có điều kiện kéo dài khoảng 25 năm đến 1927 (Pavlov, bài giảng I).'
-- id: n47
-  cau: 'Quiz 1: Pavlov đoạt Nobel 1904 vì nghiên cứu sinh lý tiêu hóa ở chó; ông đo nước bọt đến từng giọt vì đó là cách nghiên cứu các tuyến tiêu hóa.'
-  loai: phat-hien
-  nguon:
-  - nobel1904
-  - pavlov1927
-  trich: in recognition of his work on the physiology of digestion
-  vi_tri: Nobel 1904; Pavlov bài giảng I–II
-  ket_qua: da-sua
-  ghi_chu: 'Giải thích cũ "nghiên cứu phản xạ có điều kiện chiếm nửa sau sự nghiệp" đổi như trên. "Ở chó": Nobel không nói loài; bài giảng của Pavlov nói về chó.'
-- id: n48
-  cau: 'Quiz 2: máy đếm nhịp xuất hiện nhiều hơn hẳn chuông điện trong các bài giảng 1927, nhưng Pavlov cũng dùng chuông (Thomas 1997).'
-  loai: phat-hien
-  nguon:
-  - pavlov1927
-  - thomas1997
-  trich: Pavlov's use of a bell in salivary conditioning was reported in Science in 1906
-  vi_tri: tóm tắt Thomas; Pavlov 1927
-  ket_qua: da-sua
-  ghi_chu: 'Giải thích cũ: "các sử gia chỉ còn tranh luận nó được dùng nhiều hay ít" và "máy đếm nhịp và còi điện phổ biến hơn nhiều... chỉnh chính xác cường độ và thời lượng": bỏ lý do không có nguồn.'
-- id: n49
-  cau: 'Quiz 3: thịt bột là kích thích không điều kiện.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: 'The meat powder in this situation was an unconditioned stimulus (UCS): a stimulus that elicits a reflexive response in an organism.'
-  vi_tri: OpenStax 6.2
-  ket_qua: dung
-- id: n50
-  cau: 'Quiz 4: vấn đề đạo đức lớn nhất của Watson và Rayner là nỗi sợ không được gỡ bỏ (bé rời bệnh viện) và bài báo không ghi sự đồng thuận; danh tính còn tranh cãi.'
-  loai: phat-hien
-  nguon:
-  - watson1920
-  - beck2009
-  - powell2014
-  trich: Unfortunately Albert was taken from the hospital the day the above tests were made.
-  vi_tri: mục IV; tóm tắt Beck, Powell
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "không bao giờ được xóa bỏ ... kế hoạch giải điều kiện" — viết lại theo văn bản gốc.'
-- id: n51
-  cau: 'Quiz 5: điều kiện hóa cổ điển liên quan đến liên hệ giữa hai kích thích; thao tác liên quan đến liên hệ hành vi–hậu quả.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: Classical conditioning is a process by which we learn to associate stimuli
-  vi_tri: OpenStax 6.2, 6.3
-  ket_qua: dung
-- id: n52
-  cau: Link "Nỗi sợ có thể dạy được? (Little Albert)", Skinner, Dopamine, Seligman ở mục Đọc thêm trỏ tới trang có trong trang.yml.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm bằng grep src/data/trang.yml: thi-nghiem/little-albert, thi-nghiem/skinner, kham-pha/co-so-sinh-hoc/dopamine, thi-nghiem/seligman đều có.'
-- id: n53
-  cau: 'Trang này là trang nhà của nghiên cứu Pavlov: nơi khác chỉ tóm một câu và link về; trang tóm Watson–Rayner một đoạn và link về trang Little Albert.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/data/nghien-cuu.yml: id pavlov, trang_nha thi-nghiem/pavlov, nguon [pavlov1927]; id little-albert, trang_nha thi-nghiem/little-albert, nguon [watson1920]. Phần kể Watson–Rayner ở trang này vốn là "tóm" cho trang nhà Little Albert: đoạn khá dài, chưa rút gọn (người giao quyết).'
-- id: n54
-  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Như n58 của asch.yml.
-- id: n55
-  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Bốn dòng của hộp khớp mục Nghiên cứu then chốt.
+  - id: n1
+    cau: Ivan Pavlov phát hiện phản xạ "có điều kiện" khi đo nước bọt của chó, từ "tiết dịch tâm lý".
+    loai: lich-su
+    nguon:
+      - pavlov1927
+      - openstax2e
+    trich: I had to inquire into the so-called psychic secretion of some of the glands
+    vi_tri: Pavlov 1927, bài giảng I; OpenStax 6.2
+    ket_qua: dung
+    ghi_chu: Câu mô tả (description) của trang.
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm", "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+  - id: n2
+    cau: 'Hộp hồ sơ: Pavlov và cộng sự; tổng kết bằng tiếng Anh năm 1927, G. V. Anrep dịch.'
+    loai: lich-su
+    nguon:
+      - pavlov1927
+    trich: Translated by G. V. Anrep (1927)
+    vi_tri: trang đầu của bản psychclassics
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/" ]
+  - id: n3
+    cau: Công việc do hơn một trăm cộng sự thực hiện suốt khoảng 25 năm (đến 1927).
+    loai: lich-su
+    nguon:
+      - pavlov1927
+    trich: over a hundred collaborators have taken part
+    vi_tri: bài giảng I
+    ket_qua: dung
+    ghi_chu: 'Pavlov: "gone on now for twenty-five years" và "over a hundred collaborators".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm" ]
+  - id: n4
+    cau: Các chó được mổ nhỏ để chuyển lỗ mở của ống tuyến nước bọt ra da (má hoặc dưới cằm), và nước bọt được đo bằng giọt.
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+    trich: a preliminary minor operation, which consists in the transplantation of the opening of the salivary duct from its natural place on the mucous membrane of the mouth to the outside skin
+    vi_tri: bài giảng II
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phẫu thuật đặt lỗ rò (fistula) ở tuyến nước bọt của chó, hứng dịch tiết vào ống đong từng giọt". Mới theo Pavlov: chuyển ống tuyến ra da; số đo bằng giọt (ghi chú [2] bài giảng II). "Ống đong" bỏ. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp bài giảng II, chú thích về ống tuyến và đo giọt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+    review: dung
+  - id: n5
+    cau: Một kích thích trung tính (thường là máy đếm nhịp) vang lên trước khi thức ăn đến; sau nhiều lần ghép đôi, kích thích ấy tự nó gây tiết nước bọt.
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+    trich: if the intake of food by the animal takes place simultaneously with the action of a neutral stimulus which has been hitherto in no way related to food, the neutral stimulus readily acquires the property of eliciting the same reaction
+    vi_tri: bài giảng II
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+  - id: n6
+    cau: Quan niệm phản xạ cổ điển, bắt nguồn từ Descartes, coi một kích thích gắn tất yếu với một đáp ứng.
+    loai: lich-su
+    nguon:
+      - pavlov1927
+    trich: Our starting point has been Descartes' idea of the nervous reflex
+    vi_tri: bài giảng I
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trước Pavlov, người ta tưởng phản xạ là chuyện máy móc... Pavlov phát hiện có một loại phản xạ thứ hai — phản xạ học được". "Tưởng ... máy móc" không có trong nguồn dưới dạng ấy; viết theo chữ Pavlov ("a stimulus appears to be connected of necessity with a definite response"). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: viết theo chữ Pavlov (Descartes, "of necessity"), khớp trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm" ]
+    review: dung
+  - id: n7
+    cau: 'Pavlov mô tả thêm một loại phản xạ hình thành qua kinh nghiệm: âm thanh trung tính sau khi đi đôi với thức ăn trở thành "tín hiệu" (signal) báo thức ăn.'
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+    trich: any external stimulus which is to become the signal in a conditioned reflex must overlap in point of time with the action of an unconditioned stimulus
+    vi_tri: bài giảng II
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Bộ não đã học được một dự báo". Mới dùng chữ "tín hiệu" (signalization) của Pavlov. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: dùng chữ "signal" của Pavlov, khớp trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm", "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+    review: dung
+  - id: n8
+    cau: Đây là phản xạ, không phải hành vi cố ý; điều kiện hóa cổ điển liên quan đến những phản ứng tự động của cơ thể.
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+      - openstax2e
+    trich: a stimulus appears to be connected of necessity with a definite response, as cause with effect
+    vi_tri: 'bài giảng I; OpenStax 6.2: "Salivating to food in the mouth is reflexive"'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Điều kiện hóa cổ điển nắn chính những phản ứng tự động". Câu ví dụ "không quyết định thấy thèm khi ngửi mùi phở" là minh họa (gia-dinh). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: làm mềm đúng; câu ví dụ phở là minh họa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm", "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+    luot_2_ghi_chu: Pavlov gọi là phản xạ (reflex) hình thành qua kinh nghiệm, đo bằng tiết nước bọt.
+    review: dung
+  - id: n9
+    cau: Pavlov (1849–1936) là nhà sinh lý học người Nga, ban đầu nghiên cứu tiêu hóa ở chó.
+    loai: lich-su
+    nguon:
+      - openstax2e
+      - nobel1904
+    trich: Pavlov was a physiologist, not a psychologist.
+    vi_tri: OpenStax 6.2; Nobel 1904 ("physiology of digestion")
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm" ]
+    luot_2_ghi_chu: Pavlov (1849-1936) là nhà sinh lý học Nga; nghiên cứu tiêu hóa được nhắc ở bài giảng I. Năm sinh/mất theo giải Nobel (n46).
+  - id: n10
+    cau: Chó bắt đầu chảy nước miếng khi chỉ nhìn thấy thức ăn, cái bát quen thuộc, hay nghe tiếng chân người cho ăn.
+    loai: phat-hien
+    nguon:
+      - openstax2e
+    trich: the dogs began to salivate not only at the taste of food, but also at the sight of food, at the sight of an empty food bowl, and even at the sound of the laboratory assistants' footsteps
+    vi_tri: OpenStax 6.2 (kể lại Pavlov 1927)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cái bát quen thuộc, hay người thường cho chúng ăn". Mới theo OpenStax: nhìn thức ăn, bát rỗng, tiếng chân của người phụ tá. Nguồn bậc 2. Review (Claude Sonnet 5.5, 30/10/2026): trang vẫn ghi chữ cũ "cái bát quen thuộc, hay người thường cho chúng ăn" trong khi câu của hồ sơ (theo OpenStax) là bát rỗng và tiếng chân người phụ tá. Đã sửa trang: "nhìn thấy thức ăn, nhìn cái bát rỗng, hay nghe tiếng chân của người phụ tá". Đã đọc OpenStax 6.2 ("the sight of an empty food bowl, and even at the sound of the laboratory assistants'' footsteps").'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm" ]
+    review: sai
+  - id: n11
+    cau: Pavlov gọi hiện tượng đó là "tiết dịch tâm lý" (psychic secretions).
+    loai: lich-su
+    nguon:
+      - openstax2e
+      - pavlov1927
+    trich: what he called the dogs' “psychic secretions” (Pavlov, 1927)
+    vi_tri: OpenStax 6.2; Pavlov bài giảng I
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm" ]
+  - id: n12
+    cau: Pavlov tái tạo hiện tượng trong phòng thí nghiệm, dùng thịt bột làm kích thích không điều kiện.
+    loai: phat-hien
+    nguon:
+      - openstax2e
+    trich: the dogs salivated each time meat powder was presented to them. The meat powder in this situation was an unconditioned stimulus
+    vi_tri: OpenStax 6.2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture8.htm" ]
+    luot_2_ghi_chu: Thịt bột (meat powder) được dùng trong nhiều thí nghiệm; không phải mọi thí nghiệm.
+  - id: n13
+    cau: 'Các thành phần được đặt tên: kích thích có điều kiện, kích thích không điều kiện, đáp ứng không điều kiện, đáp ứng có điều kiện.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: the neutral stimulus became the conditioned stimulus (CS)
+    vi_tri: OpenStax 6.2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture2.htm", "https://psychclassics.yorku.ca/Pavlov/lecture3.htm" ]
+    luot_2_ghi_chu: Các thuật ngữ conditioned/unconditioned stimulus và reflex nằm ở bài giảng II-III; định nghĩa chuẩn, đúng.
+  - id: n14
+    cau: 'Tắt dần: nếu kích thích có điều kiện lặp lại mãi mà không còn thức ăn, đáp ứng dần biến mất.'
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+      - openstax2e
+    trich: extinguished conditioned reflexes spontaneously recover their full strength after a longer or shorter interval of time
+    vi_tri: bài giảng IV (nói về tắt dần và phục hồi); OpenStax 6.2 mục extinction
+    ket_qua: dung
+    ghi_chu: Trích Pavlov dùng cho "phục hồi tự nhiên"; "tắt dần" là chính chủ đề bài giảng IV.
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture4.htm" ]
+  - id: n15
+    cau: 'Phục hồi tự nhiên: sau một thời gian nghỉ, đáp ứng đã tắt có thể trở lại.'
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+    trich: Left to themselves extinguished conditioned reflexes spontaneously recover their full strength after a longer or shorter interval of time
+    vi_tri: bài giảng IV
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đáp ứng có thể trở lại một phần". Pavlov nói các phản xạ đã hình thành vững "tự phục hồi đầy đủ"; phản xạ còn yếu có thể cần củng cố lại. Viết "có thể trở lại" (không nói mức độ). Review (Claude Sonnet 5.5, 30/10/2026): trang vẫn ghi "đáp ứng có thể trở lại một phần" (chữ cũ) trong khi câu của hồ sơ bỏ "một phần" vì Pavlov nói phản xạ vững tự phục hồi đầy đủ. Đã sửa trang: "đáp ứng đã tắt có thể trở lại". Đã đọc bài giảng (psychclassics) cùng câu trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture4.htm" ]
+    review: sai
+  - id: n16
+    cau: 'Khái quát hóa và phân biệt: chó phản ứng với âm thanh gần giống, rồi học chỉ đáp ứng với đúng âm đã được ghép đôi.'
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+    trich: if a tone of 1000 d.v. is established as a conditioned stimulus, many other tones spontaneously acquire similar properties
+    vi_tri: bài giảng VII
+    ket_qua: dung
+    ghi_chu: 'Pavlov: tone 1000 d.v.; phân biệt qua "differential inhibition" (cùng bài giảng).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture7.htm" ]
+  - id: n17
+    cau: Bản tổng kết bằng tiếng Anh là Conditioned Reflexes, do G. V. Anrep dịch, Oxford University Press xuất bản năm 1927.
+    loai: lich-su
+    nguon:
+      - pavlov1927
+    trich: Translated by G. V. Anrep (1927)
+    vi_tri: trang đầu psychclassics; nhà xuất bản ghi ở nguon.yml (pavlov1927)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "do chính học trò và cộng sự của ông là G. V. Anrep dịch và biên tập". Bỏ "học trò và cộng sự" và "biên tập" (không kiểm được trong bản psychclassics). Nhà xuất bản OUP theo nguon.yml. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp trang và mục Nguồn (Anrep 1927, OUP).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/" ]
+    luot_2_ghi_chu: "Nhà xuất bản Oxford University Press (London, Humphrey Milford) 1927: theo biên mục sách; trang psychclassics ghi bản dịch Anrep 1927."
+    review: dung
+  - id: n18
+    cau: 'Chú thích đạo đức: chó phải qua mổ nhỏ chuyển ống tuyến nước bọt ra da; theo chuẩn mực ngày nay, chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn.'
+    loai: loi-khuyen
+    nguon:
+      - pavlov1927
+      - phs-policy
+    trich: 'a preliminary minor operation ... PHS Policy: "Procedures with animals will avoid or minimize discomfort, distress, and pain to the animals"; nghiên cứu phải được IACUC duyệt'
+    vi_tri: bài giảng II
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phẫu thuật đặt lỗ rò ở tuyến nước bọt và thực quản — thủ thuật xâm lấn nặng nề... thời của Pavlov chưa có cơ chế đó". Bỏ "thực quản" (chưa thấy trong 7 bài giảng đầu, bài giảng sau chưa mở) và "chưa có cơ chế đó" (không kiểm được). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: bỏ "thực quản"; phần chuẩn mực ngày nay là khuyến nghị chung, khớp trang. Review (Claude Sonnet 5.5, 30/10/2026): (ghi chú này thay cho "dung" ở trên) vế chuẩn mực "mọi thủ tục … đều phải qua hội đồng đạo đức và giảm thiểu đau đớn" không có nguồn trong hồ sơ. Đã đọc PHS Policy (olaw.nih.gov): IACUC phải duyệt, thủ tục phải "avoid or minimize discomfort, distress, and pain". Thu hẹp "mọi thủ tục" thành "nghiên cứu trên động vật" theo chính sách này; thêm nguon phs-policy. Chữ cũ trên trang: "mọi thủ tục trên động vật đều phải qua hội đồng đạo đức và tuân thủ nguyên tắc giảm thiểu đau đớn".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+    luot_2_ghi_chu: Phần chuẩn mực ngày nay là khuyến nghị chung về đạo đức nghiên cứu động vật, không phải khẳng định về lịch sử.
+    review: sai
+  - id: n19
+    cau: Watson và Rayner thử trên một bé trai 11 tháng tuổi, gọi là "Albert bé nhỏ".
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: We did not begin this work until Albert was eleven months, three days of age.
+    vi_tri: mục I
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: dung Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    luot_2_ghi_chu: Albert 9 tháng khi thử âm thanh, 11 tháng 3 ngày khi bắt đầu ghép đôi; câu đúng với lúc ghép đôi.
+    review: dung
+  - id: n20
+    cau: Ban đầu Albert không sợ chuột bạch.
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: Not the slightest sign of a fear response was obtained in any situation.
+    vi_tri: mục I
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: dung Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    review: dung
+  - id: n21
+    cau: Khi bé chạm vào chuột, các nhà nghiên cứu gõ búa vào thanh thép ngay sau gáy bé; bé giật mình và khóc.
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: Just as his hand touched the animal the bar was struck immediately behind his head.
+    vi_tri: mục I, nhật ký 11 tháng 3 ngày
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: da-sua. Chữ cũ: "Mỗi lần bé chạm vào chuột ... khiến bé khóc thét". Lần đầu bé không khóc; lần hai bắt đầu thút thít; sau đó khóc. Mới: "giật mình và khóc". Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    review: dung
+  - id: n22
+    cau: Sau vài lần ghép đôi, thấy chuột bạch bé tỏ ra sợ, có lúc khóc và bò tránh, dù không còn tiếng động.
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: Fell over to left side, got up on all fours and started to crawl away.
+    vi_tri: mục I, 11 tháng 20 ngày
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: da-sua. Chữ cũ: "Albert đã khóc và bò tránh". Trong nhật ký, có lần chỉ bò tránh không khóc ("no crying"). Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    review: dung
+  - id: n23
+    cau: Nỗi sợ khái quát hóa sang thỏ, chó và áo lông thú.
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: 8. Dog alone. The dog did not produce as violent a reaction as the rabbit.
+    vi_tri: mục II (11 tháng 15 ngày), tests 6–10
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: dung. Phản ứng với chó nhẹ hơn thỏ; áo lông thú: "Withdrew immediately". Beck 2009 tóm tắt: "fear generalized to other furry objects". Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    review: dung
+  - id: n24
+    cau: 'Nỗi sợ không được gỡ bỏ: Albert rời bệnh viện ngày kết thúc các thử nghiệm.'
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: Unfortunately Albert was taken from the hospital the day the above tests were made.
+    vi_tri: mục IV
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: da-sua. Chữ cũ: "không bao giờ được xóa đi" (không biết kết cục lâu dài). Mới: "không được gỡ bỏ trước khi bé rời bệnh viện". Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    review: dung
+  - id: n25
+    cau: Bài báo gốc không có đoạn nào ghi về sự đồng thuận.
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: A certain responsibility attaches to such a procedure.
+    vi_tri: toàn bài (đã đọc toàn văn psychclassics; không có từ consent/permission)
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: da-sua. Chữ cũ: "không ghi chép gì về quy trình đồng thuận". Giữ ý, nêu đã đọc toàn văn; đoạn gần nhất là hai tác giả "do thận trọng" mà thử. Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    luot_2_ghi_chu: "Đã đọc toàn văn trên psychclassics: không có đoạn nào về sự đồng thuận của mẹ."
+    review: dung
+  - id: n26
+    cau: 'Danh tính bé còn tranh cãi: Beck và cộng sự (2009) cho là Douglas Merritte, Powell và cộng sự (2014) cho là Albert Barger.'
+    loai: lich-su
+    nguon:
+      - beck2009
+      - powell2014
+    trich: Albert Barger, who appears to match the characteristics of Little Albert better than Douglas Merritte does
+    vi_tri: tóm tắt Powell 2014; tóm tắt Beck 2009
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: dung. Chỉ đọc tóm tắt (Crossref/OpenAlex). Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/a0026720" ]
+    luot_2_ghi_chu: Powell và cộng sự 2014 (Albert Barger) biết từ tài liệu thứ cấp, chưa mở bài; tranh cãi danh tính là có thật.
+    review: dung
+  - id: n56
+    cau: Watson và Rayner (1920) dùng điều kiện hóa cổ điển để tạo nỗi sợ chuột bạch ở một em bé, "Albert bé nhỏ"; chi tiết ở trang Little Albert.
+    loai: phat-hien
+    nguon:
+      - watson1920
+    trich: (1) Can we condition fear of an animal, e.g., a white rat, by visually presenting it and simultaneously striking a steel bar?
+    vi_tri: mục mở đầu (psychclassics)
+    ket_qua: da-sua
+    ghi_chu: "Câu tóm thay đoạn kể dài (n19–n26) và câu hỏi 4 (n50); không thêm con số. Link /psyche/thi-nghiem/little-albert/ có trong trang.yml. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: một câu tóm, link /psyche/thi-nghiem/little-albert/ có trong trang.yml, không thêm số."
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    luot_2_ghi_chu: "Đúng: Watson & Rayner 1920, Albert B."
+    review: dung
+  - id: n27
+    cau: 'Vững chắc: học liên hệ giữa các kích thích là có thật.'
+    loai: nhan
+    nguon:
+      - pavlov1927
+      - openstax2e
+      - duits2015
+      - hofmann2010
+    trich: Forty-four studies (published between 1920 and 2013) with data on 963 anxiety disordered patients and 1,222 control subjects
+    vi_tri: tóm tắt Duits 2015; tóm tắt Hofmann 2010; Pavlov 1927; OpenStax 6.2
+    nhan: vung-chac
+    co_so:
+      - duits2015
+      - hofmann2010
+      - vervliet2013
+      - openstax2e
+      - pavlov1927
+    ly_do: 'Nguyên lý học tập cơ bản: ngoài bài gốc, có bằng chứng tích lũy từ rất nhiều nghiên cứu trên nhiều loài, hai phân tích tổng hợp ở người (Duits 2015: 44 nghiên cứu điều kiện hóa nỗi sợ, 963 bệnh nhân và 1.222 người đối chứng; Hofmann 2010: 214 nghiên cứu điều kiện hóa đánh giá, d = 0,52), một tổng quan Annual Review (Vervliet 2013, gộp kết quả động vật và người), và giáo trình trình bày như kiến thức nền. Không có thất bại tái lập lớn của chính hiện tượng học liên hệ (chỗ tranh cãi là cơ chế, ở khung tranh-cai). Đạt Vững chắc (mục 4).'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó (Opus): giữ Vững chắc. Lượt 1 lo rằng Hofmann 2010 chỉ là điều kiện hóa đánh giá; đã thêm phân tích tổng hợp điều kiện hóa nỗi sợ ở người (Duits 2015) và tổng quan Vervliet 2013. Trang: thay câu "Các liệu pháp phơi nhiễm cho ám ảnh sợ hãi dựa trên nguyên tắc liên quan" bằng câu về Duits 2015 (liệu pháp đã nói ở mục Áp dụng). Chữ cũ của site cũ: "đã được lặp lại hàng nghìn lần...". Review (Claude Sonnet 5.5, 30/10/2026): nhãn Vững chắc, đúng mục 4: phân tích tổng hợp (Duits 2015, 44 nghiên cứu, 963 bệnh nhân và 1.222 đối chứng; Hofmann 2010, 214 nghiên cứu, d = 0,52) cùng chiều, nhiều loài; không thất bại tái lập của chính hiện tượng (tranh cãi chỉ ở cơ chế, khung riêng). Đã đọc tóm tắt hai bài qua OpenAlex.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/a0018916", "https://doi.org/10.1002/da.22353", "https://doi.org/10.1146/annurev-clinpsy-050212-185542" ]
+    luot_2_ghi_chu: "Nhãn Vững chắc hợp thước đo: phân tích tổng hợp 214 nghiên cứu điều kiện hóa đánh giá (d = .52) và 44 nghiên cứu điều kiện hóa sợ; tổng quan Vervliet 2013. Đúng ở nhiều quần thể (động vật, người)."
+    review: dung
+  - id: n28
+    cau: 'Vững chắc: tắt dần, phục hồi tự nhiên, khái quát hóa và phân biệt (Pavlov mô tả năm 1927; nghiên cứu nhiều ở động vật và người; nỗi sợ có điều kiện dễ tắt dần nhưng dễ quay lại).'
+    loai: nhan
+    nguon:
+      - pavlov1927
+      - openstax2e
+      - vervliet2013
+      - duits2015
+      - bouton2004
+    trich: laboratory studies have shown that conditioned fears are easy to extinguish, but they recover easily
+    vi_tri: tóm tắt Vervliet 2013; Pavlov 1927 bài giảng IV ("Left to themselves extinguished conditioned reflexes spontaneously recover their full strength")
+    nhan: vung-chac
+    co_so:
+      - vervliet2013
+      - duits2015
+      - bouton2004
+      - pavlov1927
+      - openstax2e
+    ly_do: 'Bốn hiện tượng là nền của lý thuyết học tập, được nghiên cứu ở nhiều loài; tổng quan Annual Review (Vervliet 2013) tích hợp "the most important results from animal and human work" về tắt dần và nỗi sợ quay lại; tổng quan Bouton 2004 về tắt dần (tắt dần không xóa điều đã học); phân tích tổng hợp Duits 2015 đo học, tắt dần và phân biệt CS+/CS− ở người. Không có thất bại tái lập lớn. Đạt Vững chắc theo bằng chứng tích lũy (lời giao: nguyên lý học tập cơ bản xét cả bằng chứng tích lũy).'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó (Opus): chữ lượt 1: ":::kha-vung[các chi tiết thủ tục gốc của Pavlov]" (Khá vững vì chỉ phòng thí nghiệm Pavlov mô tả, kèm câu về chuông và thuật ngữ Todes). Mới: ":::vung-chac[tắt dần, phục hồi tự nhiên, khái quát hóa và phân biệt]", thân khung dẫn Vervliet 2013 và Duits 2015; câu về chuông đã có ở khung bac-bo, câu thuật ngữ chuyển hẳn sang mục Ngộ nhận (n29). Lý do: Khá vững chỉ đúng nếu xét bài gốc; các hiện tượng đã được tái lập rộng rãi. Review (Claude Sonnet 5.5, 30/10/2026): nhãn Vững chắc, đúng mục 4: tổng quan Vervliet 2013 (Annual Review) và Duits 2015 cùng chiều, bốn hiện tượng do Pavlov mô tả (bài giảng IV, VII). Chấp nhận.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1146/annurev-clinpsy-050212-185542", "https://psychclassics.yorku.ca/Pavlov/lecture4.htm", "https://psychclassics.yorku.ca/Pavlov/lecture7.htm" ]
+    luot_2_ghi_chu: Annual Review (tổng quan hệ thống) nằm trong thước đo; mô tả của Pavlov ở bài giảng IV và VII.
+    review: dung
+  - id: n57
+    cau: 'Tổng quan Vervliet và cộng sự (2013) trên Annual Review of Clinical Psychology tóm kết quả ở động vật và người: nỗi sợ có điều kiện dễ tắt dần nhưng cũng dễ quay lại.'
+    loai: phat-hien
+    nguon:
+      - vervliet2013
+    trich: laboratory studies have shown that conditioned fears are easy to extinguish, but they recover easily ... This review examines and integrates the most important results from animal and human work.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu mới trong khung Vững chắc thứ hai (Opus). Chỉ đọc tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1146/annurev-clinpsy-050212-185542" ]
+  - id: n58
+    cau: Phân tích tổng hợp của Duits và cộng sự (2015) gồm 44 nghiên cứu điều kiện hóa nỗi sợ, so sánh người có và không có rối loạn lo âu ở giai đoạn học, giai đoạn tắt dần và khả năng phân biệt kích thích báo nguy với kích thích an toàn.
+    loai: so-lieu
+    nguon:
+      - duits2015
+    trich: Forty-four studies (published between 1920 and 2013) with data on 963 anxiety disordered patients and 1,222 control subjects ... during acquisition ... during extinction, patients show stronger fear responses to the CS+ and a trend toward increased discrimination learning (differentiation between the CS+ and CS-)
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu mới (Opus), ở hai khung Vững chắc. Chỉ đọc tóm tắt. Không viết gì về chẩn đoán.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1002/da.22353" ]
+  - id: n29
+    cau: Người dịch W. Horsley Gantt (1928) ghi chú rằng thuật ngữ của Pavlov là "conditional" (условный, có điều kiện), không phải "conditioned"; ông vẫn dùng "conditioned" vì chữ ấy đã quen trong tiếng Anh, còn bản tiếng Pháp và tiếng Đức giữ chữ gốc. Tiếng Việt "phản xạ có điều kiện" gần nghĩa gốc.
+    loai: lich-su
+    nguon:
+      - gantt1928
+    trich: Conditional (условный) and not conditioned is Prof Pavlov's term, but as conditioned reflex has become fixed in English usage instead of conditional reflex, we adhere to the term conditioned. In French and German translation, Prof Pavlov's original term (conditional) has been preserved — Translator
+    vi_tri: tr. 79, chú thích 4 của người dịch (bản quét Internet Archive; OCR có lỗi, đã đọc lại theo ngữ cảnh)
+    ket_qua: da-sua
+    ghi_chu: 'Opus: không mở được Todes 1997/2014, nhưng mở được chính chú thích của người dịch Gantt (1928), nguồn gốc hơn cho cùng ý. Chữ cũ: "Theo Todes, ... условный рефлекс ... (conditional)" ở khung kha-vung, mục Việt Nam và Ngộ nhận 3. Mới: dẫn Gantt 1928 ở Ngộ nhận 3, mục Việt Nam trỏ về; bỏ khỏi khung nhãn (không phải câu về bằng chứng). Ý "tiếng Việt gần nghĩa gốc hơn" là so sánh chữ: "có điều kiện" là dịch sát "conditional". Đã bỏ todes2014 khỏi nguồn của trang. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp chú thích của Gantt (OpenAlex/Wikiversity), trang dẫn đúng; mục Việt Nam trỏ về.'
+    luot_2: dung
+    luot_2_nguon: [ "https://wiki.archive.ntbx.io/content/wikiversity_en_all_maxi_2025-06/Literature/1903/Pavlov" ]
+    luot_2_ghi_chu: Trích Gantt (1928, tr. 79) qua trang Wikiversity, chưa mở sách; chi tiết "bản Pháp và Đức giữ chữ gốc" cũng từ trang đó (thứ cấp). Hướng đúng, nên giữ chú ý.
+    review: dung
+  - id: n30
+    cau: 'Đang tranh cãi: điều kiện hóa chỉ là ghép đôi, hay là học dự báo; học diễn ra theo cơ chế nào vẫn còn được bàn.'
+    loai: nhan
+    nguon:
+      - openstax2e
+      - miller1995
+      - maes2016
+    nhan: tranh-cai
+    co_so:
+      - miller1995
+      - maes2016
+      - openstax2e
+      - schultz1997
+    ly_do: 'Mô hình dự báo (Rescorla–Wagner) có ảnh hưởng lớn nhưng tổng quan Psychological Bulletin (Miller 1995) ghi cả dự đoán đúng lẫn sai; bằng chứng then chốt (hiệu ứng chặn) không lặp lại được trong 15 thí nghiệm ở ba phòng thí nghiệm, phân tích tổng hợp Bayes của chính các thí nghiệm ấy nghiêng về giả thuyết không (Maes 2016). Bằng chứng tốt mâu thuẫn nhau về cơ chế: Đang tranh cãi (mục 4).'
+    trich: reviews some of the model's predictive successes and failures ... this benefit should neither lead to the model being regarded as inherently "correct"
+    vi_tri: tóm tắt Miller 1995; Maes 2016 tóm tắt và General Discussion
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó (Opus): giữ Đang tranh cãi, thêm căn cứ mở được thay cho hai chương sách. Chữ cũ của khung: "...(hiệu ứng chặn của Kamin, 1969, là một bằng chứng thường được dẫn). Đây là cách giải thích còn được bàn; trang này chưa dẫn được nghiên cứu tổng hợp nào so sánh hai cách nhìn". Mới: mô tả hiệu ứng chặn, thêm Miller 1995 (n59) và Maes 2016 (n60); tên khung "điều kiện hóa chỉ là ghép đôi, hay là học dự báo?". Review (Claude Sonnet 5.5, 30/10/2026): nhãn Đang tranh cãi, đúng mục 4: Miller 1995 ghi cả thành công lẫn thất bại của mô hình; Maes 2016 (15 thí nghiệm ở loài gặm nhấm, đã đọc tóm tắt qua OpenAlex: "15 failures to observe a blocking effect despite … highly similar or identical procedures") làm lung lay bằng chứng then chốt. Khung chỉ nói "cơ chế còn được bàn", không phủ nhận học liên hệ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/xge0000200", "https://doi.org/10.1037/0033-2909.117.3.363" ]
+    luot_2_ghi_chu: "Nhãn Đang tranh cãi hợp: mô hình dự báo có thành công lẫn thất bại (Miller 1995), và hiệu ứng chặn thất bại ở 15 thí nghiệm (Maes 2016)."
+    review: dung
+  - id: n31
+    cau: Rescorla và Wagner (1972) đề xuất mô hình trong đó học phụ thuộc vào việc kích thích trung tính dự báo được kích thích không điều kiện đến mức nào.
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: developed a mathematical formula that could be used to calculate the probability that an association would be learned given the ability of a conditioned stimulus to predict the occurrence of an unconditioned stimulus
+    vi_tri: OpenStax 6.2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chỉ khi kích thích trung tính mang thông tin mới về kích thích không điều kiện thì học mới xảy ra". Mới theo mô tả của OpenStax. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp mô tả OpenStax và Miller 1995.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.117.3.363" ]
+    luot_2_ghi_chu: Năm 1972 theo biên mục; abstract Miller 1995 mô tả mô hình.
+    review: dung
+  - id: n32
+    cau: 'Bằng chứng hay được dẫn cho học dự báo là hiệu ứng "chặn" (blocking) của Kamin (1969): đã học rằng một tín hiệu báo trước điều sắp đến thì một tín hiệu mới đi kèm khó được học thêm.'
+    loai: lich-su
+    nguon:
+      - maes2016
+    trich: 'It was Kamin who, with the discovery of the blocking effect (Kamin, 1969), suggested an alternative driving force for learning: surprise. ... Eventually, the ability to explain blocking became nothing short of a touchstone for the validity of any theory of learning'
+    vi_tri: Maes 2016, phần mở đầu và tóm tắt; thiết kế ở Bảng 1 (A+ rồi AX+, thử X)
+    ket_qua: da-sua
+    ghi_chu: 'Opus: Kamin 1969 vẫn chưa mở, nhưng Maes 2016 (toàn văn bản thảo) mô tả thiết kế và vai trò của hiệu ứng chặn. Chữ cũ: "(hiệu ứng "chặn" của Kamin, 1969, là một bằng chứng thường được dẫn)"; mới thêm một câu giải thích hiệu ứng theo thiết kế ở Bảng 1 của Maes. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp Maes 2016 (Kamin 1969 chưa mở, ghi rõ).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/xge0000200" ]
+    luot_2_ghi_chu: Năm Kamin 1969 từ biên mục, không mở bài gốc.
+    review: dung
+  - id: n59
+    cau: Tổng quan của Miller, Barnet và Grahame (1995) cho thấy mô hình Rescorla–Wagner có cả những dự đoán đúng lẫn những dự đoán sai.
+    loai: phat-hien
+    nguon:
+      - miller1995
+    trich: reviews some of the model's predictive successes and failures, relates the failures to the model's assumptions
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu mới (Opus). Chỉ đọc tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.117.3.363" ]
+  - id: n60
+    cau: Maes và cộng sự (2016) báo cáo 15 thí nghiệm trên chuột nhắt và chuột cống không thu được hiệu ứng chặn dù dùng thủ tục giống các nghiên cứu đã đăng.
+    loai: tai-lap
+    nguon:
+      - maes2016
+    trich: we report a series of fifteen rodent experiments in which we tried but failed to obtain a robust blocking effect ... The procedures employed here were always based on published studies
+    vi_tri: phần mở đầu; Series 1 (chuột nhắt C57BL/6J), Series 2–5 (chuột cống)
+    ket_qua: dung
+    ghi_chu: 'Câu mới (Opus). Toàn văn bản thảo đã chấp nhận. Đọc lại 15 thí nghiệm: Series 1 là chuột nhắt, còn lại chuột cống.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/xge0000200" ]
+    luot_2_ghi_chu: Tóm tắt không nêu loài; "chuột nhắt và chuột cống" chưa kiểm ở toàn văn.
+  - id: n33
+    cau: 'Bác bỏ: Pavlov chỉ dùng chuông, hay ngược lại, chưa từng dùng chuông.'
+    loai: nhan
+    nguon:
+      - pavlov1927
+      - thomas1997
+      - jarius2015
+    trich: We conclude that the 'dog-and-bell scenario' indeed has a factual basis, but is strongly influenced by a verifiably incorrect 1928 report in the then widely read Time magazine.
+    vi_tri: 'tóm tắt Jarius & Wildemann 2015; tóm tắt Thomas 1997; Pavlov 1927 (đếm: 67 lần "metronome", 2 lần "electric bell" trong bảy bài giảng đầu)'
+    nhan: bac-bo
+    co_so:
+      - pavlov1927
+      - thomas1997
+      - jarius2015
+    ly_do: 'Câu lịch sử, kiểm bằng tư liệu gốc: bài giảng 1927 có nhiều loại kích thích, máy đếm nhịp nhiều nhất, nên "chỉ dùng chuông" sai; Thomas 1997 và Jarius & Wildemann 2015 (rà các bài của Pavlov trong bản dịch của Gantt) dẫn nhiều lần dùng chuông, nên "chưa từng dùng chuông" cũng sai. Hai khẳng định cực đoan bị tư liệu gốc bác: Đã bị bác bỏ.'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó (Opus): tên khung lượt 1 "chuông là kích thích chính, hay duy nhất" quá mạnh: Jarius & Wildemann 2015 dẫn bản Gantt, ở một con chó "The bell occupied first place among the sounds" (vol. I, p. 364), nên "chuông không phải kích thích chính" không bác được cho mọi thí nghiệm. Mới: "Pavlov chỉ dùng chuông, hay ngược lại, chưa từng dùng chuông". Chữ site cũ: "Pavlov lắc chuông tay trước mỗi bữa ăn của chó". Thân khung thay câu "Bài của họ chưa mở được toàn văn" bằng kết luận của Jarius & Wildemann. Review (Claude Sonnet 5.5, 30/10/2026): nhãn Đã bị bác bỏ cho hai khẳng định cực đoan ("chỉ dùng chuông", "chưa từng dùng chuông"). Đã đọc bảy bài giảng đầu (psychclassics): máy đếm nhịp 67 lần, "electric bell" 2 lần (bài giảng II, III), còi/buzzer, âm thoa, đèn, vật quay, nên "chỉ chuông" sai; Thomas 1997 (tóm tắt OpenAlex: báo cáo Science 1906, phim 1925–26, nghiên cứu kiểu Lamarck 1923 "described using a bell") và Jarius & Wildemann 2015 làm "chưa từng" sai. Chấp nhận; khung không nói gì về trọng tâm của từng bài.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psychology.uga.edu/sites/default/files/inline-files/CorrrectPavloviana1997.pdf", "https://doi.org/10.1007/s00415-015-7858-5", "https://psychclassics.yorku.ca/Pavlov/lecture2.htm", "https://psychclassics.yorku.ca/Pavlov/lecture3.htm", "https://psychclassics.yorku.ca/Pavlov/lecture5.htm" ]
+    luot_2_ghi_chu: "Hai thái cực đều sai: máy đếm nhịp dùng nhiều nhất (bài giảng I-VII), có còi/chuông điện (II, III, V); Thomas 1997 và Jarius & Wildemann 2015 bàn bằng chứng về chuông."
+    review: dung
+  - id: n34
+    cau: Trong bảy bài giảng đầu của sách 1927, kích thích xuất hiện nhiều nhất là máy đếm nhịp; còn có còi hoặc chuông điện, âm thoa, còi Galton, đèn nháy, vật quay và kích thích chạm lên da.
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+    trich: a rotating object, and the tone C sharp of a pneumatic tuning fork
+    vi_tri: bài giảng V (ví dụ); đếm văn bản ở bài giảng I–VII
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ liệt kê "phong cầm (harmonium)": 0 lần trong bảy bài giảng đầu (có "organ pipe" 2 lần); "kích thích điện trên da": chỉ 1 lần "electric stimul". Mới: liệt kê những thứ đã thấy ("buzzer", "electric bell", "Galton''s whistle", "tuning fork", "flash of a lamp", "rotating object", "tactile"). Đã đọc bảy bài giảng đầu, chưa đọc các bài giảng sau (VIII–XXIII). Opus: câu in đậm của khối "Xem đáp án" đổi "Chủ yếu không phải chuông" thành "Trong cuốn sách năm 1927, chủ yếu không phải chuông" (đúng phạm vi đã đếm). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: đã đếm lại bảy bài giảng đầu: máy đếm nhịp 67, electric bell 2, Galton 1, tuning fork 3, rotating 13; trang nói đúng phạm vi bảy bài giảng đầu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture2.htm", "https://psychclassics.yorku.ca/Pavlov/lecture3.htm", "https://psychclassics.yorku.ca/Pavlov/lecture5.htm" ]
+    luot_2_ghi_chu: "Đã đọc chữ thật bài giảng I-VII trên psychclassics: máy đếm nhịp là kích thích hay gặp nhất."
+    review: dung
+  - id: n35
+    cau: Thomas (1997) dẫn việc Pavlov dùng chuông trong báo cáo trên Science năm 1906, phim của phòng thí nghiệm 1925–26 và nghiên cứu di truyền kiểu Lamarck năm 1923.
+    loai: lich-su
+    nguon:
+      - thomas1997
+    trich: Pavlov's use of a bell in salivary conditioning was reported in Science in 1906, and similar use of a bell was shown in a film produced in Pavlov's laboratory in 1925-26.
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trong bài giảng năm 1906, chính Pavlov nhắc tới tiếng chuông reo dữ dội ... các thí nghiệm năm 1923 trên chuột bạch dùng chuông điện". Tóm tắt chỉ nói báo cáo Science 1906, phim 1925–26, và nghiên cứu Lamarck 1923 "described using a bell"; "dữ dội", "chuột bạch", "bài giảng" không kiểm được: đã bỏ. Chỉ đọc tóm tắt. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: đã đọc tóm tắt Thomas 1997 (OpenAlex): Science 1906, phim 1925–26, nghiên cứu kiểu Lamarck 1923; trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psychology.uga.edu/sites/default/files/inline-files/CorrrectPavloviana1997.pdf" ]
+    luot_2_ghi_chu: Tóm tắt của Thomas (1997) theo một công cụ web (tóm tắt bài, một số bình luận phê phán sức nặng bằng chứng 1906 và phim); chưa đọc toàn văn.
+    review: dung
+  - id: n36
+    cau: Bản tiếng Anh 1927 kể về một con chó được luyện với cả tiếng máy đếm nhịp lẫn "tiếng rè của chuông điện" (bài giảng III).
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+    trich: two primary alimentary conditioned stimuli firmly established, one to the sound of a metronome and the other to the buzzing of an electric bell
+    vi_tri: bài giảng III, thí nghiệm của Frolov
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture2.htm", "https://psychclassics.yorku.ca/Pavlov/lecture3.htm" ]
+    luot_2_ghi_chu: '"Tiếng rè" là cách dịch buzzing/buzzer; bài giảng II và III. Số bài giảng ghi III đúng ở chi tiết hai kích thích.'
+  - id: n37
+    cau: Jarius và Wildemann (2015) rà các bài của Pavlov trong bản dịch tiếng Anh của W. Horsley Gantt, thấy nhiều chỗ nhắc tới chuông, và kết luận rằng hình ảnh "chó và chuông" có cơ sở thật.
+    loai: lich-su
+    nguon:
+      - jarius2015
+    trich: In Gantt's edition of Pavlov's works, we found numerous mentions of a "bell". ... We conclude that the 'dog-and-bell scenario' indeed has a factual basis
+    vi_tri: tr. 1–2 (ESM) và tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Opus: mở được toàn văn (tài liệu bổ sung của Springer). Chữ cũ: "Jarius và Wildemann (2015) tổng hợp các bằng chứng về việc dùng chuông. Bài của họ chưa mở được toàn văn nên không dẫn thêm chi tiết." Mới như câu trên. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp trích Jarius & Wildemann 2015.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1007/s00415-015-7858-5" ]
+    luot_2_ghi_chu: Chỉ đọc được tên bài (Crossref/Europe PMC không có tóm tắt); chi tiết "bản dịch Gantt" chưa kiểm.
+    review: dung
+  - id: n38
+    cau: Giáo trình mở trình bày điều kiện hóa cổ điển và thao tác như hai dạng học liên kết khác nhau.
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: Classical conditioning is a process by which we learn to associate stimuli
+    vi_tri: OpenStax 6.2; 6.3 (Skinner)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hai cơ chế này bổ sung cho nhau chứ không thay thế nhau"; "cổ điển là học dự báo; thao tác là học hành động" — viết lại thành mô tả liên hệ. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp OpenStax 6.2 và 6.3.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: OpenStax mục 6.3 phân biệt điều kiện hóa thao tác với điều kiện hóa cổ điển (mục 6.2); đúng.
+    review: dung
+  - id: n39
+    cau: Theo Schultz, Dayan và Montague (1997), các neuron dopamine ở linh trưởng có hoạt động dường như báo hiệu thay đổi hay sai số trong dự đoán phần thưởng; học được điều khiển bởi thay đổi trong kỳ vọng.
+    loai: phat-hien
+    nguon:
+      - schultz1997
+    trich: identifying dopaminergic neurons in the primate whose fluctuating output apparently signals changes or errors in the predictions of future salient and rewarding events
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "các mạch não xử lý phần thưởng mã hóa sai số dự báo — khớp đáng ngạc nhiên với mô hình toán học của Rescorla–Wagner". Tóm tắt Schultz nói "quantitative theories of adaptive optimizing control", không nêu Rescorla–Wagner: bỏ phần "khớp". Chỉ đọc tóm tắt. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp tóm tắt Schultz 1997 (đã đọc OpenAlex, kể cả câu "learning is driven by changes in the expectations").'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.117.3.363" ]
+    luot_2_ghi_chu: "Schultz, Dayan, Montague 1997 (Science): tín hiệu dopamine ở linh trưởng báo sai số dự đoán phần thưởng; xác nhận từ kiến thức chuẩn, chưa mở bài."
+    review: dung
+  - id: n40
+    cau: Liệu pháp phơi nhiễm đưa người học tiếp xúc với thứ gây sợ để họ dần quen; giải mẫn cảm có hệ thống (Wolpe, 1958) dùng thang bậc từ ít đến nhiều gây lo âu kết hợp thư giãn; giáo trình mở trình bày cả hai như kỹ thuật dựa trên điều kiện hóa cổ điển.
+    loai: lam-sang
+    nguon:
+      - openstax2e
+    trich: Joseph Wolpe (1958) refined Jones’s techniques, giving us systematic desensitization.
+    vi_tri: OpenStax 6.2/16.2 (Types of Treatment)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "liệu pháp phơi nhiễm dùng chính nguyên tắc tắt dần ... để mối liên hệ sợ hãi yếu dần đi... một phản ứng đối nghịch lấn dần nỗi sợ". Mới theo OpenStax. Thêm lời nhắc gặp chuyên gia; không phải khuyên điều trị. Nguồn bậc 2 (giáo trình), chưa mở hướng dẫn lâm sàng (NICE/WHO). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: đã đọc OpenStax 16.2: exposure therapy, systematic desensitization (Wolpe 1958), "classical conditioning therapeutic technique"; trang có lời nhắc gặp chuyên gia, không khuyên điều trị.'
+    luot_2: dung
+    luot_2_nguon: [ "https://content.one.lumenlearning.com/introductiontopsychology/wp-json/pressbooks/v2/chapters/1269" ]
+    luot_2_ghi_chu: Trang Lumen là bản sao nội dung giáo trình mở; không mở được trang OpenStax chương 16.
+    review: dung
+  - id: n41
+    cau: Phân tích tổng hợp 214 nghiên cứu thấy điều kiện hóa đánh giá (ghép vật trung tính với kích thích dễ chịu hay khó chịu) có hiệu ứng trung bình d = 0,52.
+    loai: so-lieu
+    nguon:
+      - hofmann2010
+    trich: Across a total of 214 studies included in the main sample, the mean EC effect was d = .52
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ về quảng cáo: "ghép sản phẩm với hình ảnh dễ chịu để cảm xúc tích cực lan sang thương hiệu — điều kiện hóa cổ điển phiên bản thương mại". Hofmann đo thí nghiệm, không đo quảng cáo thực tế; đã nói rõ trên trang. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp tóm tắt Hofmann 2010 (d = 0,52, 214 nghiên cứu); trang nói rõ không đo quảng cáo thực tế.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/a0018916" ]
+    review: dung
+  - id: n42
+    cau: Điều kiện hóa vị giác có thể xảy ra sau một lần ghép đôi dù cách quãng nhiều giờ; có thể là một thích nghi tiến hóa.
+    loai: phat-hien
+    nguon:
+      - openstax2e
+    trich: Taste aversion is a type of conditioning in which an interval of several hours may pass between the conditioned stimulus
+    vi_tri: OpenStax 6.2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chỉ một lần ngộ độc, bạn có thể ghê món đó nhiều năm". "Nhiều năm" không có trong nguồn đã mở; mới theo OpenStax ("may be an evolutionary adaptation"). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp OpenStax 6.2 ("several hours", "evolutionary adaptation").'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Điều kiện hóa vị giác (Garcia) là kiến thức chuẩn; nội dung giáo trình mở; không đọc kỹ trang chương 6.2.
+    review: dung
+  - id: n43
+    cau: Giáo trình mở nêu ví dụ tiếng động quen thuộc trở thành tín hiệu báo thức ăn cho mèo.
+    loai: loi-khuyen
+    nguon:
+      - openstax2e
+    trich: Tiger will learn to get excited when she hears the “squeak” of the cabinet
+    vi_tri: OpenStax 6.2 (ví dụ Tiger)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "tiếng clicker ... chính là kích thích có điều kiện báo hiệu thưởng sắp đến — Pavlov phiên bản hiện đại". Clicker không có trong nguồn; giữ như "ý tưởng tương tự" (suy luận), nêu ví dụ OpenStax. Người giao/lượt 2 cân nhắc bỏ câu. Review (Claude Sonnet 5.5, 30/10/2026): vế "ý tưởng tương tự dùng khi huấn luyện bằng tiếng clicker" không có trong nguồn: đã tìm trong OpenStax 6.2 và 6.3 (không có chữ "clicker", chỉ có nút "Click" của trang) và lượt 2 chỉ xác nhận ví dụ mèo ("squeak" của tủ, máy mở hộp). Đã bỏ vế clicker khỏi trang. Ghi chú gốc của lượt 1 cũng nêu nên bỏ. Chữ cũ: "…cho mèo; ý tưởng tương tự được dùng khi huấn luyện bằng tiếng clicker." Chữ mới: "…cho mèo."'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Ví dụ mèo và máy mở hộp, tiếng clicker thuộc giáo trình mở.
+    review: sai
+  - id: n44
+    cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên người Việt về điều kiện hóa cổ điển trong phòng thí nghiệm.
+    loai: thoi-su
+    het_han: '2028-10-01'
+    ket_qua: dung
+    ghi_chu: 'Tìm 30/10/2026 ở PubMed và Crossref (xem bước tìm ở keo-deo.yml); xem ghi chú dưới. Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Sonnet 5.5, 30/10/2026): thêm nguon tim-kiem-vn. Tự tìm lại 30/10/2026 qua Europe PMC: ("classical conditioning" OR "Pavlovian conditioning" OR "fear conditioning" OR "eyeblink conditioning") AND (Vietnam OR Vietnamese) trong tiêu đề, tóm tắt: 2 kết quả, cả hai về cựu binh Mỹ ở chiến tranh Việt Nam, không phải nghiên cứu trên người Việt; AFF:Vietnam: 0 kết quả. Chưa tìm tạp chí trong nước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22fear%20conditioning%22%20OR%20%22classical%20conditioning%22%20OR%20%22Pavlovian%22%29%20AND%20Vietnamese&format=json" ]
+    luot_2_ghi_chu: "Europe PMC (18 kết quả cho tổ hợp từ khóa, không có nghiên cứu điều kiện hóa ở người Việt) và tìm web ngày 30/10/2026: không thấy. Một nghiên cứu ở chuột (không phải người) ghi nhận ở Việt Nam không đổi kết luận."
+    nguon:
+      - tim-kiem-vn
+    vi_tri: lần tìm 30/10/2026 (Europe PMC)
+    review: dung
+  - id: n45
+    cau: Các liệu pháp dựa trên tắt dần được thực hành ở Việt Nam nhưng không có số liệu tổng kết đáng tin cậy.
+    loai: thoi-su
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Các liệu pháp dựa trên nguyên tắc tắt dần ... có được thực hành trong lâm sàng tâm lý ở Việt Nam". Không kiểm được (không nguồn Việt Nam); bỏ. Review (Claude Sonnet 5.5, 30/10/2026): câu đã bỏ khỏi trang (mục Ở Việt Nam chỉ còn n44 và đoạn thuật ngữ); không nguồn Việt Nam. Thêm het_han vì loại thoi-su đòi hạn.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Phần "được thực hành ở Việt Nam" hợp lý nhưng không có nguồn nào mở được; phần "không có số liệu tổng kết" là khẳng định phủ định chưa kiểm được ngoài tìm kiếm web.
+    het_han: 2028-10-01
+    review: dung
+  - id: n46
+    cau: Pavlov đoạt Nobel Sinh lý/Y khoa năm 1904 "in recognition of his work on the physiology of digestion".
+    loai: lich-su
+    nguon:
+      - nobel1904
+    trich: in recognition of his work on the physiology of digestion
+    vi_tri: nobelprize.org, summary 1904
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "công trình về phản xạ có điều kiện chiếm nửa sau sự nghiệp của ông". Không có nguồn cho "nửa sau"; mới: ông nói công trình về phản xạ có điều kiện kéo dài khoảng 25 năm đến 1927 (Pavlov, bài giảng I). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: khớp trang Nobel 1904 và bài giảng I.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm" ]
+    luot_2_ghi_chu: Giải Nobel Sinh lý/Y học 1904 "in recognition of his work on the physiology of digestion" theo nobelprize.org (chưa mở trang; kiến thức chuẩn). Bài giảng I kể ông bắt đầu từ nghiên cứu tuyến tiêu hóa.
+    review: dung
+  - id: n47
+    cau: 'Quiz 1: Pavlov đoạt Nobel 1904 vì nghiên cứu sinh lý tiêu hóa ở chó; ông đo nước bọt đến từng giọt vì đó là cách nghiên cứu các tuyến tiêu hóa.'
+    loai: phat-hien
+    nguon:
+      - nobel1904
+      - pavlov1927
+    trich: in recognition of his work on the physiology of digestion
+    vi_tri: Nobel 1904; Pavlov bài giảng I–II
+    ket_qua: da-sua
+    ghi_chu: 'Giải thích cũ "nghiên cứu phản xạ có điều kiện chiếm nửa sau sự nghiệp" đổi như trên. "Ở chó": Nobel không nói loài; bài giảng của Pavlov nói về chó. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: quiz 1 khớp n46; giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture1.htm", "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+    review: dung
+  - id: n48
+    cau: 'Quiz 2: máy đếm nhịp xuất hiện nhiều hơn hẳn chuông điện trong các bài giảng 1927, nhưng Pavlov cũng dùng chuông (Thomas 1997).'
+    loai: phat-hien
+    nguon:
+      - pavlov1927
+      - thomas1997
+      - jarius2015
+    trich: Pavlov's use of a bell in salivary conditioning was reported in Science in 1906
+    vi_tri: tóm tắt Thomas; Pavlov 1927
+    ket_qua: da-sua
+    ghi_chu: 'Giải thích cũ: "các sử gia chỉ còn tranh luận nó được dùng nhiều hay ít" và "máy đếm nhịp và còi điện phổ biến hơn nhiều... chỉnh chính xác cường độ và thời lượng": bỏ lý do không có nguồn. Opus: đáp án đúng cũ "chuông điện có xuất hiện nhưng không phải kích thích chủ đạo" đổi thành "chuông có được dùng nhưng chỉ là một trong nhiều kích thích" (Jarius & Wildemann 2015: ở một số thí nghiệm chuông là kích thích âm mạnh nhất); giải thích thêm Jarius và Wildemann (2015). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích của nguồn: quiz 2 khớp; "Thomas (1997) và Jarius và Wildemann (2015) dẫn nhiều lần dùng chuông" khớp hai nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture2.htm", "https://psychclassics.yorku.ca/Pavlov/lecture3.htm", "https://www.psychology.uga.edu/sites/default/files/inline-files/CorrrectPavloviana1997.pdf" ]
+    luot_2_ghi_chu: Chuông điện có ở bài giảng II-III; máy đếm nhịp là kích thích hay dùng nhất; Thomas 1997 dẫn dùng chuông.
+    review: dung
+  - id: n49
+    cau: 'Quiz 3: thịt bột là kích thích không điều kiện.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: 'The meat powder in this situation was an unconditioned stimulus (UCS): a stimulus that elicits a reflexive response in an organism.'
+    vi_tri: OpenStax 6.2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Pavlov/lecture8.htm" ]
+    luot_2_ghi_chu: Thức ăn (thịt bột) là kích thích không điều kiện; xem n12.
+  - id: n50
+    cau: 'Quiz 4: vấn đề đạo đức lớn nhất của Watson và Rayner là nỗi sợ không được gỡ bỏ (bé rời bệnh viện) và bài báo không ghi sự đồng thuận; danh tính còn tranh cãi.'
+    loai: phat-hien
+    nguon:
+      - watson1920
+      - beck2009
+      - powell2014
+    trich: Unfortunately Albert was taken from the hospital the day the above tests were made.
+    vi_tri: mục IV; tóm tắt Beck, Powell
+    ket_qua: da-bo
+    ghi_chu: 'Rút gọn (chỗ khó, Opus): trang nhà của Watson & Rayner là thi-nghiem/little-albert (src/data/nghien-cuu.yml); đoạn kể ở pavlov thay bằng một câu tóm và link về (chuẩn mục 3, AGENTS.md "Mỗi nghiên cứu một trang nhà"), xem n56. Kết quả lượt 1 trước khi rút: da-sua. Chữ cũ: "không bao giờ được xóa bỏ ... kế hoạch giải điều kiện" — viết lại theo văn bản gốc. Review (Claude Sonnet 5.5, 30/10/2026): đã xem trang thật: đoạn kể Watson–Rayner và câu quiz 4 cũ đã bỏ; trang chỉ còn một câu tóm kèm link về little-albert (n56). Đúng quy tắc trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Watson/emotion.htm" ]
+    luot_2_ghi_chu: "Đã đọc bài gốc: không ghi đồng thuận; Albert rời bệnh viện ngay sau thử nghiệm; danh tính còn tranh cãi (Beck 2009)."
+    review: dung
+  - id: n51
+    cau: 'Quiz 5: điều kiện hóa cổ điển liên quan đến liên hệ giữa hai kích thích; thao tác liên quan đến liên hệ hành vi–hậu quả.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: Classical conditioning is a process by which we learn to associate stimuli
+    vi_tri: OpenStax 6.2, 6.3
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: "Đúng với định nghĩa chuẩn: cổ điển ghép hai kích thích; thao tác gắn hành vi với hậu quả."
+    review: sai
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): đáp án đúng của câu 4 viết "sinh vật học mối liên hệ" (dễ đọc thành ngành sinh vật học). Đã sửa thành "học mối liên hệ giữa hai kích thích … học mối liên hệ giữa hành vi của mình và hậu quả". Nội dung không đổi. Giải thích không dựa vào vị trí lựa chọn.'
+  - id: n52
+    cau: Link "Nỗi sợ có thể dạy được? (Little Albert)", Skinner, Dopamine, Seligman ở mục Đọc thêm trỏ tới trang có trong trang.yml.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm bằng grep src/data/trang.yml: thi-nghiem/little-albert, thi-nghiem/skinner, kham-pha/co-so-sinh-hoc/dopamine, thi-nghiem/seligman đều có. Review (Claude Sonnet 5.5, 30/10/2026): Đã kiểm trang trên src/data/trang.yml: thi-nghiem/little-albert (dòng 199), thi-nghiem/skinner (190), kham-pha/co-so-sinh-hoc/dopamine (89), thi-nghiem/seligman (214) đều có; trang dùng đúng bốn link /psyche/…/.'
+    review: dung
+  - id: n53
+    cau: 'Trang này là trang nhà của nghiên cứu Pavlov: nơi khác chỉ tóm một câu và link về; trang tóm Watson–Rayner một câu và link về trang Little Albert.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/data/nghien-cuu.yml: id pavlov, trang_nha thi-nghiem/pavlov; id little-albert, trang_nha thi-nghiem/little-albert. Opus đã rút đoạn Watson–Rayner còn một câu tóm (n56), không thêm số, link về /psyche/thi-nghiem/little-albert/; bỏ câu hỏi 4 về Albert; bỏ Beck 2009, Powell 2014 khỏi mục Nguồn. Review (Claude Sonnet 5.5, 30/10/2026): Đã kiểm src/data/nghien-cuu.yml: pavlov có trang_nha thi-nghiem/pavlov, little-albert có trang_nha thi-nghiem/little-albert; trang chỉ còn một câu về Watson–Rayner kèm link, không thêm số.'
+    review: dung
+  - id: n54
+    cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: "Như n58 của asch.yml. Review (Claude Sonnet 5.5, 30/10/2026): Đã kiểm src/plugins/thanh-phan.mjs (hàm tomTat) và trang có ::tom-tat với bốn khung nhãn."
+    review: dung
+  - id: n55
+    cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Bốn dòng của hộp khớp mục Nghiên cứu then chốt. Review (Claude Sonnet 5.5, 30/10/2026): hộp có dòng "hơn một trăm cộng sự … suốt khoảng 25 năm" mà phần kể không có (chỉ có "25 năm" ở mục Ngộ nhận). Đã thêm vào cuối đoạn "Bản tổng kết bằng tiếng Anh" câu "Trong bài giảng đầu, Pavlov kể công việc này đã kéo dài khoảng 25 năm, với hơn một trăm cộng sự tham gia"; đã đọc bài giảng I (psychclassics): "over a hundred collaborators have taken part", "gone on now for twenty-five years" (n3). Ba dòng còn lại của hộp khớp phần kể.'
+    review: sai
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: (không có)
-  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, đối tượng, thiết kế, kết quả chính'
-  ly_do: Bố cục C (kế hoạch).
-- cu: 'Khung Đã bị bác bỏ: "Pavlov lắc chuông tay trước mỗi bữa ăn của chó"'
-  moi: 'Khung Đã bị bác bỏ: "chuông là kích thích chính, hay duy nhất, trong thí nghiệm của Pavlov"'
-  ly_do: Câu cũ không có nguồn và quá cụ thể ("lắc tay"); xem n bác bỏ.
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: (không có)
+    moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, đối tượng, thiết kế, kết quả chính'
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Khung Đã bị bác bỏ: "Pavlov lắc chuông tay trước mỗi bữa ăn của chó"'
+    moi: 'Khung Đã bị bác bỏ: "chuông là kích thích chính, hay duy nhất, trong thí nghiệm của Pavlov"'
+    ly_do: Câu cũ không có nguồn và quá cụ thể ("lắc tay"); xem n bác bỏ.
+  - cu: 'Mục "Watson và Rayner (1920): nỗi sợ của bé Albert": hai đoạn kể (11 tháng tuổi, búa gõ thanh thép, khái quát hóa sang thỏ, chó, áo lông; đạo đức; Beck 2009 và Powell 2014 về danh tính); câu hỏi 4 về đạo đức của thí nghiệm Albert'
+    moi: Một câu tóm, link về /psyche/thi-nghiem/little-albert/; bỏ câu hỏi 4; bỏ Beck 2009, Powell 2014 khỏi mục Nguồn
+    ly_do: Mỗi nghiên cứu một trang nhà (trang nhà của Watson & Rayner là little-albert); hồ sơ n19–n26, n50, n56.
+  - cu: :::vung-chac[học liên hệ giữa các kích thích là có thật] … "Các liệu pháp phơi nhiễm cho ám ảnh sợ hãi dựa trên nguyên tắc liên quan."
+    moi: 'Cùng khung, căn cứ: phân tích tổng hợp 44 nghiên cứu điều kiện hóa nỗi sợ (Duits 2015) và 214 nghiên cứu điều kiện hóa đánh giá (Hofmann 2010)'
+    ly_do: Thêm phân tích tổng hợp về điều kiện hóa cổ điển ở người cho đúng thước đo Vững chắc (n27).
+  - cu: :::kha-vung[các chi tiết thủ tục gốc của Pavlov] (kèm câu về chuông và thuật ngữ "theo Todes")
+    moi: :::vung-chac[tắt dần, phục hồi tự nhiên, khái quát hóa và phân biệt], dẫn Vervliet 2013 và Duits 2015
+    ly_do: Các hiện tượng đã được nghiên cứu rộng ở động vật và người (n28, n57, n58); thuật ngữ chuyển sang Ngộ nhận (n29).
+  - cu: :::tranh-cai[điều kiện hóa là ghép đôi máy móc hay học dự báo?] … "trang này chưa dẫn được nghiên cứu tổng hợp nào so sánh hai cách nhìn"
+    moi: :::tranh-cai[điều kiện hóa chỉ là ghép đôi, hay là học dự báo?], mô tả hiệu ứng chặn, thêm Miller 1995 và Maes 2016 (15 thí nghiệm không thu được hiệu ứng chặn)
+    ly_do: Căn cứ mở được cho nhãn (n30, n32, n59, n60).
+  - cu: :::bac-bo[chuông là kích thích chính, hay duy nhất, trong thí nghiệm của Pavlov] … "Bài của họ chưa mở được toàn văn nên không dẫn thêm chi tiết."
+    moi: :::bac-bo[Pavlov chỉ dùng chuông, hay ngược lại, chưa từng dùng chuông] … kết luận của Jarius và Wildemann (2015)
+    ly_do: Jarius & Wildemann 2015 đọc được toàn văn; "kích thích chính" không bác được cho mọi thí nghiệm (n33, n37).
+  - cu: '"Theo Todes, Pavlov viết "условный рефлекс"…" (Ngộ nhận 3, mục Việt Nam, khung kha-vung)'
+    moi: Dẫn chú thích của người dịch W. Horsley Gantt (1928, tr. 79); thêm Gantt 1928, Duits 2015, Maes 2016, Miller 1995, Vervliet 2013 vào mục Nguồn, bỏ Todes 2014
+    ly_do: Todes không mở được; chú thích của Gantt là nguồn gốc đọc được (n29).
+  - cu: 'Khối "Xem đáp án": "Chủ yếu không phải chuông"; câu hỏi 2: "chuông điện có xuất hiện nhưng không phải kích thích chủ đạo"'
+    moi: '"Trong cuốn sách năm 1927, chủ yếu không phải chuông"; "chuông có được dùng nhưng chỉ là một trong nhiều kích thích"'
+    ly_do: Đúng phạm vi đã đếm (bảy bài giảng 1927); n34, n48.
+  - cu: '"chó bắt đầu chảy nước miếng khi mới chỉ nhìn thấy thức ăn, cái bát quen thuộc, hay người thường cho chúng ăn"'
+    moi: '"… nhìn thấy thức ăn, nhìn cái bát rỗng, hay nghe tiếng chân của người phụ tá"'
+    ly_do: "Review: khớp OpenStax 6.2 và câu n10."
+  - cu: '"phục hồi tự nhiên — sau một thời gian nghỉ, đáp ứng có thể trở lại một phần"'
+    moi: '"… đáp ứng đã tắt có thể trở lại"'
+    ly_do: "Review: Pavlov nói phản xạ vững tự phục hồi đầy đủ; câu n15."
+  - cu: '"…tín hiệu báo thức ăn cho mèo; ý tưởng tương tự được dùng khi huấn luyện bằng tiếng clicker."'
+    moi: '"…tín hiệu báo thức ăn cho mèo."'
+    ly_do: "Review: clicker không có trong OpenStax (n43)."
+  - cu: 'Quiz 4, đáp án đúng: "Cổ điển: sinh vật học mối liên hệ…; thao tác: sinh vật học mối liên hệ…"'
+    moi: '"Cổ điển: học mối liên hệ…; thao tác: học mối liên hệ…"'
+    ly_do: "Review: câu khó hiểu (n51)."
+  - cu: Mục Nghiên cứu then chốt không nói "hơn một trăm cộng sự", "25 năm"; hộp hồ sơ có
+    moi: 'Thêm vào cuối đoạn Bản tổng kết: "Trong bài giảng đầu, Pavlov kể công việc này đã kéo dài khoảng 25 năm, với hơn một trăm cộng sự tham gia."'
+    ly_do: "Review: hộp hồ sơ chỉ tóm điều đã có trong phần kể (n55, n3)."
+  - cu: '"mọi thủ tục trên động vật đều phải qua hội đồng đạo đức và tuân thủ nguyên tắc giảm thiểu đau đớn"'
+    moi: '"chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn"'
+    ly_do: "Review: thêm nguồn PHS Policy, thu hẹp phạm vi (n18)."

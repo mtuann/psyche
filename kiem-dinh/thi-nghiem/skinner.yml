@@ -4,578 +4,822 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/skinner.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-10-30'
-  nhanh: moi/d3-l2
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 1/2)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-10-30'
+    nhanh: không rõ
+    ma_bam: sha256:2ee935603bf38567c7337f3a25a887c7405f1605e5a9165a3a9a91c628f5054b
+    nguoi:
+      luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 1/2); chỗ khó: Claude Opus 5.5'
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D3-L2)
+      review: Claude Sonnet 5.5 (agent review D3-L2, 30/10/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d3-l2-kiem-mau.yml), đạt, 30/10/2026
 nguon:
-- id: skinner1938
-  ten: 'Skinner (1938), The Behavior of Organisms: toàn văn (bản quét OCR ở Internet Archive, in.ernet.dli.2015.191112)'
-  link: https://archive.org/details/in.ernet.dli.2015.191112
-  toan_van: true
-- id: skinner1948
-  ten: 'Skinner (1948), J Exp Psychol 38(2), 168–172: toàn văn (psychclassics)'
-  link: https://psychclassics.yorku.ca/Skinner/Pigeon/
-  toan_van: true
-- id: ferster1957
-  ten: 'Ferster & Skinner (1957), Schedules of Reinforcement: toàn văn (bản in lại của B. F. Skinner Foundation, có lời giới thiệu 1997 của Morse & Dews)'
-  link: https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf
-  toan_van: true
-- id: skinner1953
-  ten: 'Skinner (1953), Science and Human Behavior: toàn văn (Internet Archive, dli.ernet.448915)'
-  link: https://archive.org/details/dli.ernet.448915
-  toan_van: true
-- id: openstax2e
-  ten: 'OpenStax Psychology 2e (2020), mục 6.3 (Operant Conditioning) và 6.4 (Observational Learning): toàn văn'
-  link: https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning
-  toan_van: true
-- id: chomsky1959
-  ten: 'Chomsky, A Review of B. F. Skinner’s Verbal Behavior (Language 1959; bản đăng lại 1967 ở chomsky.info): toàn văn'
-  link: https://chomsky.info/1967____/
-  toan_van: true
-- id: staddon1971
-  ten: 'Staddon & Simmelhag (1971), Psychol Rev 78(1), 3–43: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
-  link: https://doi.org/10.1037/h0030305
-  toan_van: false
-- id: cotter1967
-  ten: 'Cotter (1967), Am J Psychiatry 124(1), 23–28: chỉ biết tên bài (PubMed 6025947); chưa có trong src/data/nguon.yml'
-  link: https://doi.org/10.1176/ajp.124.1.23
-  toan_van: false
+  - id: skinner1938
+    ten: 'Skinner (1938), The Behavior of Organisms: toàn văn (bản quét OCR ở Internet Archive, in.ernet.dli.2015.191112)'
+    link: https://archive.org/details/in.ernet.dli.2015.191112
+    toan_van: true
+  - id: skinner1948
+    ten: 'Skinner (1948), J Exp Psychol 38(2), 168–172: toàn văn (psychclassics)'
+    link: https://psychclassics.yorku.ca/Skinner/Pigeon/
+    toan_van: true
+  - id: ferster1957
+    ten: 'Ferster & Skinner (1957), Schedules of Reinforcement: toàn văn (bản in lại của B. F. Skinner Foundation, có lời giới thiệu 1997 của Morse & Dews)'
+    link: https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf
+    toan_van: true
+  - id: skinner1953
+    ten: 'Skinner (1953), Science and Human Behavior: toàn văn (Internet Archive, dli.ernet.448915)'
+    link: https://archive.org/details/dli.ernet.448915
+    toan_van: true
+  - id: openstax2e
+    ten: 'OpenStax Psychology 2e (2020), mục 6.3 (Operant Conditioning) và 6.4 (Observational Learning): toàn văn'
+    link: https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning
+    toan_van: true
+  - id: chomsky1959
+    ten: 'Chomsky, A Review of B. F. Skinner’s Verbal Behavior (Language 1959; bản đăng lại 1967 ở chomsky.info): toàn văn'
+    link: https://chomsky.info/1967____/
+    toan_van: true
+  - id: staddon1971
+    ten: 'Staddon & Simmelhag (1971), Psychol Rev 78(1), 3–43: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1037/h0030305
+    toan_van: false
+  - id: cotter1967
+    ten: 'Cotter (1967), Am J Psychiatry 124(1), 23–28: chỉ biết tên bài (PubMed 6025947); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1176/ajp.124.1.23
+    toan_van: false
+  - id: prendergast2006
+    ten: 'Prendergast, Podus, Finney, Greenwell & Roll (2006), Addiction 101(11), 1546–1560: tóm tắt (OpenAlex); chưa có trong src/data/nguon.yml'
+    link: https://doi.org/10.1111/j.1360-0443.2006.01581.x
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: "Lần tìm 30/10/2026 trên Europe PMC (REST API): operant conditioning, schedules of reinforcement, Skinner box kèm Vietnam, Vietnamese: 1 kết quả (Cotter 1967), không có nghiên cứu lịch trình củng cố trên người Việt"
+    link: https://europepmc.org/search?query=%28TITLE_ABS%3A%22operant%20conditioning%22%20OR%20TITLE_ABS%3A%22schedules%20of%20reinforcement%22%20OR%20TITLE_ABS%3A%22reinforcement%20schedule%22%20OR%20TITLE_ABS%3A%22Skinner%20box%22%29%20AND%20%28TITLE_ABS%3AVietnam%20OR%20TITLE_ABS%3AVietnamese%29
+    toan_van: false
+  - id: phs-policy
+    ten: "PHS Policy on Humane Care and Use of Laboratory Animals (OLAW, NIH): toàn văn, đã đọc mục hội đồng IACUC và yêu cầu tránh hay giảm thiểu đau đớn"
+    link: https://olaw.nih.gov/policies-laws/phs-policy.htm
+    toan_van: true
 nhan_dinh:
-- id: n1
-  cau: B. F. Skinner cho chuột ấn cần gạt trong buồng thí nghiệm và phát hiện lịch trình thưởng ảnh hưởng đến hành vi (Ferster & Skinner 1957).
-  loai: phat-hien
-  nguon:
-  - ferster1957
-  - openstax2e
-  trich: By the manipulation of schedules, a wide range of changes in behavior can be produced
-  vi_tri: Lời nói đầu của Ferster & Skinner; OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Câu mô tả (description). Chữ cũ: "phát hiện lịch trình thưởng quyết định sức bền của hành vi"; mạnh hơn: nguồn nói lịch trình tạo ra nhiều thay đổi hành vi. Mới: "tạo ra những mẫu hình hành vi khác nhau"; "buồng thao tác" đổi thành "buồng thí nghiệm"; "ý chí tự do" đổi thành "quyết định luận" (xem nhận định về nhãn Đang tranh cãi).'
-- id: n2
-  cau: 'Khi bạn ngừng thưởng, hành vi được củng cố ngắt quãng (nhất là tỉ lệ biến đổi) bền hơn khi thưởng mỗi lần: Skinner (1953) viết rằng sức bền khi tắt dần do củng cố ngắt quãng "có thể lớn hơn nhiều" so với cùng số lần thưởng cho các đáp ứng liên tiếp.'
-  loai: phat-hien
-  nguon:
-  - skinner1953
-  trich: the resistance to extinction generated by intermittent reinforcement may be much greater than if the same number of reinforcements are given for consecutive responses
-  vi_tri: Science and Human Behavior, chương V (đoạn về extinction)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ (đáp án thu gọn): "bền bỉ hơn hẳn ... một trong những phát hiện vững chắc nhất của Skinner và Ferster". Mới theo Skinner 1953: "may be much greater". Không còn gán cho Ferster & Skinner 1957 (không tìm thấy câu tương ứng trong phần đã đọc).'
-- id: n3
-  cau: Skinner (1953) nhận xét máy đánh bạc trả thưởng theo lịch trình tỉ lệ biến đổi.
-  loai: phat-hien
-  nguon:
-  - skinner1953
-  trich: Slot machines, roulette wheels, dice cages, horse races, and so on pay off on a schedule of variable-ratio reinforcement.
-  vi_tri: Science and Human Behavior (đoạn về gambling)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Cũng là lý do máy đánh bạc gây nghiện đến vậy": khẳng định nhân quả không có nguồn; OpenStax nêu nghiên cứu gần đây trên chuột không ủng hộ ý Skinner rằng riêng lịch trình VR gây cờ bạc bệnh lý (Laskowski và cộng sự 2019: chưa mở bài gốc).'
-- id: n4
-  cau: Nghiên cứu gần đây trên chuột không ủng hộ ý của Skinner rằng riêng lịch trình tỉ lệ biến đổi gây cờ bạc bệnh lý (theo OpenStax, dẫn Laskowski và cộng sự 2019).
-  loai: tai-lap
-  nguon:
-  - openstax2e
-  trich: Recent research in rats has failed to support Skinner’s idea that training on variable-ratio schedules alone causes pathological gambling
-  vi_tri: OpenStax 6.3, hộp "Gambling and the Brain"
-  ket_qua: dung
-  ghi_chu: Nguồn bậc 2 (giáo trình); bài gốc Laskowski 2019 chưa mở.
-- id: n5
-  cau: Khác với chó của Pavlov học "âm thanh báo hiệu thức ăn", con vật của Skinner học "làm gì thì được gì".
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: Skinner believed that behavior is motivated by the consequences we receive for the behavior
-  vi_tri: OpenStax 6.3
-  ket_qua: dung
-- id: n6
-  cau: Một hành vi tự phát, một khi được thưởng, sẽ xuất hiện thường xuyên hơn (hành vi thao tác).
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  - skinner1938
-  trich: At first, the rat might randomly hit the lever while exploring the box, and out would come a pellet of food. After eating the pellet, what do you think the hungry rat did next? It hit the lever again
-  vi_tri: OpenStax 6.3
-  ket_qua: dung
-  ghi_chu: '"Operant" theo Skinner 1938: "An operant is an identifiable part of behavior" (chương I).'
-- id: n7
-  cau: Lịch trình thưởng tạo ra những nhịp độ hành vi khác nhau và ảnh hưởng đến sức bền của hành vi khi thưởng ngừng.
-  loai: phat-hien
-  nguon:
-  - ferster1957
-  - openstax2e
-  trich: The four reinforcement schedules yield different response patterns.
-  vi_tri: Hình 6.13 OpenStax; Ferster & Skinner lời nói đầu
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "quyết định tốc độ học, nhịp độ hành vi và sức bền". "Quyết định tốc độ học": không thấy trong nguồn. Mới: "tạo ra nhịp độ khác nhau" và "ảnh hưởng đến sức bền" (Skinner 1953; OpenStax).'
-- id: n8
-  cau: Skinner bắt đầu chương trình nghiên cứu từ luận án tiến sĩ ở Harvard (1931); phần lớn các thí nghiệm trong sách 1938 làm khi là nghiên cứu viên ở Harvard.
-  loai: lich-su
-  nguon:
-  - skinner1938
-  trich: a thesis for the degree of doctor of philosophy at Harvard University in 1931
-  vi_tri: Acknowledgments, The Behavior of Organisms (bản quét OCR)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "(1904–1990) bắt đầu thí nghiệm khi còn là nghiên cứu sinh ở Harvard đầu thập niên 1930". Bỏ năm sinh/năm mất (chưa có nguồn đã mở). Mới theo lời cảm ơn: luận án 1931, phần lớn nghiên cứu khi là Fellow (National Research Council; Society of Fellows, Harvard).'
-- id: n9
-  cau: Thiết bị là buồng thí nghiệm, về sau được gọi là "buồng điều kiện hóa thao tác", quen gọi là "hộp Skinner".
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: He placed these animals inside an operant conditioning chamber, which has come to be known as a “Skinner box”
-  vi_tri: OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chính ông gọi nó là buồng thao tác (operant chamber); hộp Skinner là biệt danh do người khác đặt" (cả ở phần ngộ nhận). Không tìm được câu của Skinner xác nhận tên; trong Skinner 1938 dùng "experimental box" (đã đọc, không có "operant chamber"/"Skinner box"); Ferster & Skinner 1957 dùng "experimental chamber".'
-- id: n10
-  cau: Chuột đói ấn một cần gạt để nhận viên thức ăn; chim bồ câu mổ một đĩa phím.
-  loai: phat-hien
-  nguon:
-  - openstax2e
-  trich: A Skinner box contains a lever (for rats) or disk (for pigeons) that the animal can press or peck for a food reward via the dispenser.
-  vi_tri: OpenStax 6.3
-  ket_qua: dung
-- id: n11
-  cau: Hành vi được ghi dưới dạng đường cong tích lũy theo thời gian; độ dốc cho biết tốc độ đáp ứng.
-  loai: phat-hien
-  nguon:
-  - skinner1938
-  - ferster1957
-  trich: The cumulative record permits immediate inspection and estimation of rate
-  vi_tri: lời giới thiệu 1997 (Morse & Dews) trong bản in lại Ferster & Skinner; Skinner 1938 dùng "cumulative curve"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "một thiết bị ghi tích lũy vẽ đồ thị: mỗi đáp ứng nhích bút lên một nấc, nên độ dốc chính là tốc độ". Chi tiết "nhích bút lên một nấc" không kiểm được; bỏ. Trích là của lời giới thiệu 1997 (người viết sau), không phải văn bản 1957.'
-- id: n12
-  cau: Chuột đói học ấn cần để lấy thức ăn.
-  loai: phat-hien
-  nguon:
-  - openstax2e
-  trich: It hit the lever again, and received another pellet of food.
-  vi_tri: OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nhanh chóng học" (bỏ "nhanh chóng").'
-- id: n13
-  cau: Hành vi không chỉ phụ thuộc "có thưởng hay không" mà vào cách thưởng được sắp xếp (lịch trình).
-  loai: phat-hien
-  nguon:
-  - ferster1957
-  trich: It is now clear that far from being a mere falling-short of the ideal of inevitable reinforcement, intermittent reinforcement constitutes an important condition of action.
-  vi_tri: Lời nói đầu (Foreword) của Ferster & Skinner
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "mà vào khi nào thưởng đến". Mới tổng quát hơn: "cách thưởng được sắp xếp".'
-- id: n14
-  cau: Skinner công bố The Behavior of Organisms (1938, Appleton-Century) khi là phó giáo sư ở Đại học Minnesota, tổng kết nghiên cứu đã làm từ Harvard.
-  loai: lich-su
-  nguon:
-  - skinner1938
-  trich: ASSISTANT PROFESSOR OF PSYCHOLOGY UNIVERSITY OF MINNESOTA
-  vi_tri: trang tựa
-  ket_qua: da-sua
-  ghi_chu: Trang tựa ghi "Assistant Professor of Psychology, University of Minnesota"; "tổng kết nghiên cứu từ Harvard" theo lời cảm ơn.
-- id: n15
-  cau: Phần lớn công việc của Ferster và Skinner làm từ 1/9/1949 đến 30/6/1955, theo hợp đồng giữa Văn phòng Nghiên cứu Hải quân Mỹ và Đại học Harvard.
-  loai: lich-su
-  nguon:
-  - ferster1957
-  trich: during the period between September 1, 1949 and June 30, 1955
-  vi_tri: Acknowledgments (Ferster & Skinner)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nghiên cứu từ 1949 đến 1955"; mới theo lời cảm ơn ("Most of the work reported in this book was carried out under contract to the Office of Naval Research ... with Harvard University").'
-- id: n16
-  cau: Ferster và Skinner mô tả hệ thống nhiều lịch trình thưởng trong sách Schedules of Reinforcement (Appleton-Century-Crofts, 1957).
-  loai: lich-su
-  nguon:
-  - ferster1957
-  trich: The first step in our analysis of the field is therefore a purely formal statement of these possibilities
-  vi_tri: Foreword/Introduction (Ferster & Skinner)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "hệ thống hóa mọi lịch trình thưởng có thể nghĩ ra ... dày 741 trang". Bỏ "mọi" (tác giả nói "other possibilities exist") và "741 trang" (số trang chỉ thấy qua mục lục thư viện, chưa mở). Nhà xuất bản: nguon.yml ghi Appleton-Century-Crofts; bản in lại của Skinner Foundation ghi "Original copyright © 1957 by Prentice-Hall" (không mâu thuẫn rõ, chưa phân giải).'
-- id: n17
-  cau: Con vật trong sách 1957 chủ yếu là bồ câu, ngoài ra có chuột.
-  loai: phat-hien
-  nguon:
-  - ferster1957
-  trich: In some of the experiments rats were studied, and the response then consisted of depressing a small horizontal bar
-  vi_tri: Ch. 1 và lời giới thiệu 1997 (bồ câu được dùng nhiều nhất)
-  ket_qua: da-sua
-  ghi_chu: 'Câu mới thêm (trang cũ nói chuột); lời giới thiệu 1997: "Homing pigeons were most frequently used by Ferster & Skinner".'
-- id: n18
-  cau: 'Bốn lịch trình cơ bản: tỉ lệ cố định, tỉ lệ biến đổi, khoảng cố định, khoảng biến đổi.'
-  loai: dinh-nghia
-  nguon:
-  - ferster1957
-  trich: 'These two possibilities yield four basic schedules: fixed-interval, variable-interval, fixed-ratio, and variable-ratio.'
-  vi_tri: Foreword
-  ket_qua: dung
-- id: n19
-  cau: 'Tỉ lệ cố định (FR): thưởng sau mỗi N đáp ứng; tốc độ cao, có quãng nghỉ ngắn sau mỗi lần thưởng.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: A fixed ratio schedule is predictable and produces a high response rate, with a short pause after reinforcement
-  vi_tri: OpenStax 6.3, Hình 6.13
-  ket_qua: dung
-  ghi_chu: 'Ferster & Skinner: "Fixed-ratio schedules generate high rates of responding; in the pigeon they often exceed 10 responses per second."'
-- id: n20
-  cau: 'Tỉ lệ biến đổi (VR): thưởng sau số đáp ứng trung bình N thay đổi ngẫu nhiên; tốc độ cao, đều, khó tắt dần nhất trong các lịch trình.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: Among the reinforcement schedules, variable ratio is the most productive and the most resistant to extinction.
-  vi_tri: OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "rất cao, đều, và bền nhất — mẫu hình của máy đánh bạc". Mới theo OpenStax; "mẫu hình của máy đánh bạc" đổi thành "Skinner (1953) gắn với máy đánh bạc".'
-- id: n21
-  cau: 'Khoảng cố định (FI): thưởng cho đáp ứng đầu tiên sau mỗi N giây; đường cong "vỏ sò": nghỉ sau thưởng rồi tăng tốc khi gần đến giờ.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: The fixed interval schedule yields a scallop-shaped response pattern, reflecting a significant pause after reinforcement
-  vi_tri: OpenStax 6.3, Hình 6.13
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nghỉ ngơi sau khi vừa được thưởng, rồi tăng tốc dồn dập khi gần đến giờ"; "dồn dập" bỏ nếu không nguồn: giữ mô tả "vỏ sò" của OpenStax.'
-- id: n22
-  cau: 'Khoảng biến đổi (VI): tốc độ vừa phải, đều.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: The variable interval schedule is unpredictable and produces a moderate, steady response rate
-  vi_tri: OpenStax 6.3, Hình 6.13
-  ket_qua: dung
-- id: n23
-  cau: 'Hình: bốn đường cong tích lũy — FR cao nhưng vỡ nhịp sau thưởng; VR rất cao, đều, bền nhất; FI hình vỏ sò; VI vừa phải, rất đều; sơ đồ ước lệ, không theo tỉ lệ số liệu.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: The four reinforcement schedules yield different response patterns.
-  vi_tri: src/hinh/skinner-schedules.html (đã đọc); OpenStax Hình 6.13
-  ket_qua: dung
-  ghi_chu: 'Hình không có con số; nhãn "rất cao" (VR) khác OpenStax "high and steady" nhưng sơ đồ đã ghi "ước lệ". Không sửa hình (theo lời giao). Người giao cân nhắc đổi "rất cao... bền nhất" thành "cao, đều, khó tắt dần nhất" nếu muốn khớp chữ trang. Chữ "(VR) mẫu hình của máy đánh bạc" trong chú thích: Skinner 1953.'
-- id: n24
-  cau: Skinner (1953) nêu rằng củng cố ngắt quãng có thể tạo hành vi bền hơn củng cố liên tục với cùng số lần thưởng; một bồ câu có thể phát ra khoảng 10.000 đáp ứng trước khi tắt dần hầu như hoàn toàn dưới một số lịch trình ngắt quãng.
-  loai: phat-hien
-  nguon:
-  - skinner1953
-  trich: Under some schedules of intermittent reinforcement as many as 10,000 responses may appear in the behavior of a pigeon before extinction is substantially complete.
-  vi_tri: Science and Human Behavior, chương V
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Chuột được thưởng lúc có lúc không tiếp tục ấn cần rất lâu sau khi thức ăn ngừng hẳn; chuột quen được thưởng mỗi lần thì bỏ cuộc nhanh" (loài và cặp so sánh không nguồn). Mới theo Skinner 1953 (bồ câu).'
-- id: n25
-  cau: Thưởng liên tục là cách nhanh nhất để dạy hành vi mới; sau khi hành vi được dạy thì thường chuyển sang củng cố ngắt quãng.
-  loai: loi-khuyen
-  nguon:
-  - openstax2e
-  trich: This reinforcement schedule is the quickest way to teach someone a behavior
-  vi_tri: OpenStax 6.3
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "muốn dạy hành vi mới nhanh nhất thì nên thưởng liên tục lúc đầu, rồi chuyển dần sang ngắt quãng để khóa thói quen" ("khóa" bỏ).'
-- id: n26
-  cau: 'Skinner (1948): bồ câu đói (giảm còn 75% cân nặng) được ăn theo đồng hồ (ví dụ 15 giây một lần) bất kể hành vi.'
-  loai: phat-hien
-  nguon:
-  - skinner1948
-  trich: A pigeon is brought to a stable state of hunger by reducing it to 75 percent of its weight when well fed.
-  vi_tri: Skinner 1948, tr. 168; "Fifteen sec. is a very effective interval"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cứ 15 giây một lần" như điều kiện chung; bài nói khoảng 15 giây là hiệu quả, có thể kéo dài tới 1–2 phút khi hành vi đã hình thành.'
-- id: n27
-  cau: Ở 6 trong 8 con, một động tác lặp lại rõ rệt xuất hiện.
-  loai: so-lieu
-  nguon:
-  - skinner1948
-  trich: In six out of eight cases the resulting responses were so clearly defined that two observers could agree perfectly in counting instances.
-  vi_tri: tr. 168
-  ket_qua: dung
-- id: n28
-  cau: 'Các động tác gồm: xoay ngược chiều kim đồng hồ, thọc đầu vào một góc lồng, hất đầu, đung đưa đầu và thân, mổ về phía sàn mà không chạm.'
-  loai: phat-hien
-  nguon:
-  - skinner1948
-  trich: One bird was conditioned to turn counter-clockwise about the cage, making two or three turns between reinforcements.
-  vi_tri: tr. 168
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "con xoay vòng, con lắc đầu, con mổ xuống sàn". Mới theo bài: "mổ về phía sàn mà không chạm".'
-- id: n29
-  cau: 'Skinner giải thích: con chim tình cờ đang làm động tác đó đúng lúc thức ăn xuất hiện nên có xu hướng lặp lại; ông gọi đó là hành vi "mê tín".'
-  loai: phat-hien
-  nguon:
-  - skinner1948
-  trich: The bird happens to be executing some response as the hopper appears; as a result it tends to repeat this response.
-  vi_tri: tr. 168; nhan đề
-  ket_qua: dung
-  ghi_chu: '"Mê tín" là chữ trong nhan đề (đặt trong nháy đơn).'
-- id: n30
-  cau: Skinner so sánh với những nghi lễ cầu may của con người.
-  loai: phat-hien
-  nguon:
-  - skinner1948
-  trich: There are many analogies in human behavior. Rituals for changing one's luck at cards are good examples.
-  vi_tri: tr. 171
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "lời cảnh báo rằng bộ não rất giỏi tìm quy luật... kể cả khi không có quy luật nào" (diễn giải của site, không phải của Skinner). Bỏ; giữ phép so sánh có trong bài.'
-- id: n31
-  cau: Staddon và Simmelhag (1971) làm lại thí nghiệm "mê tín" và thấy ngoài hành vi được củng cố tình cờ còn có những hoạt động xuất hiện ngay sau thức ăn, nên cách giải thích chỉ bằng củng cố tình cờ bị đặt câu hỏi.
-  loai: tai-lap
-  nguon:
-  - staddon1971
-  trich: interim activities (related to adjunctive behavior) occurred just after food delivery; the terminal response (a discriminated operant) occurred toward the end of the interval
-  vi_tri: tóm tắt
-  ket_qua: dung
-  ghi_chu: 'Chữ cũ: "chính thí nghiệm mê tín về sau cũng bị đặt câu hỏi liệu có giải thích đơn giản bằng củng cố tình cờ hay không" (không nguồn). Mới dẫn Staddon & Simmelhag 1971 (tóm tắt). id staddon1971 chưa có trong src/data/nguon.yml.'
-- id: n32
-  cau: Trong thí nghiệm 1948, bồ câu bị giảm còn 75% cân nặng; theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và giảm thiểu đau đớn.
-  loai: loi-khuyen
-  nguon:
-  - skinner1948
-  trich: A pigeon is brought to a stable state of hunger by reducing it to 75 percent of its weight when well fed.
-  vi_tri: tr. 168
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chuột, bồ câu bị bỏ đói có kiểm soát... thời đó chưa có cơ chế này". Bỏ "chuột" (1948 chỉ nói bồ câu) và "chưa có cơ chế" (không nguồn).'
-- id: n33
-  cau: 'Khá vững: hậu quả làm thay đổi xác suất hành vi, và các lịch trình củng cố tạo ra mẫu hình ổn định.'
-  loai: nhan
-  nguon:
-  - openstax2e
-  - ferster1957
-  trich: The four reinforcement schedules yield different response patterns.
-  vi_tri: OpenStax 6.3
-  nhan: kha-vung
-  co_so:
-  - openstax2e
-  - ferster1957
-  - skinner1953
-  ly_do: 'Kiến thức nền của giáo trình mở và dữ liệu nhiều năm của Ferster & Skinner trên động vật; không mở được phân tích tổng hợp hay tái lập có đăng ký trước, và nguồn gốc chủ yếu là động vật: đúng mô tả Khá vững (mục 4).'
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: chữ cũ :::vung-chac. Chữ cũ: "Hàng chục nghìn thí nghiệm trên chuột, bồ câu (và cả người, trong các nhiệm vụ đơn giản)..." không đếm được, không nguồn. Thước đo Vững chắc cần phân tích tổng hợp hay tái lập lớn: chưa có trong những nguồn đã mở (tìm 30/10/2026: chỉ thấy các nghiên cứu bồ câu/chuột riêng lẻ). Người giao/lượt 2 xem lại: nếu có tổng quan về củng cố ở người thì có thể nâng.'
-- id: n34
-  cau: 'Khá vững: củng cố ngắt quãng có thể bền hơn củng cố liên tục.'
-  loai: nhan
-  nguon:
-  - skinner1953
-  - openstax2e
-  trich: the resistance to extinction generated by intermittent reinforcement may be much greater
-  vi_tri: Skinner 1953; OpenStax 6.3
-  nhan: kha-vung
-  co_so:
-  - skinner1953
-  - openstax2e
-  ly_do: Hai nguồn nêu hiện tượng (một sách của chính Skinner, một giáo trình mở); không có tổng hợp hay tái lập độc lập đã mở; áp dụng ngoài đời chưa kiểm chứng.
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Hiệu ứng tắt dần của củng cố từng phần xuất hiện nhất quán trong phòng thí nghiệm" (khẳng định chung); thu hẹp theo nguồn.'
-- id: n35
-  cau: 'Đang tranh cãi: con người có phải cỗ máy củng cố (quyết định luận và nhận thức).'
-  loai: nhan
-  nguon:
-  - skinner1953
-  - chomsky1959
-  trich: we must assume that behavior is lawful and determined
-  vi_tri: Skinner 1953 (chương I); Chomsky 1959
-  nhan: tranh-cai
-  co_so:
-  - skinner1953
-  - chomsky1959
-  ly_do: Hai quan điểm (Skinner, các nhà tâm lý học nhận thức) còn tranh luận; vấn đề chủ yếu là diễn giải, không phải dữ liệu lịch trình.
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Skinner theo chủ nghĩa quyết định luận triệt để: ... ý chí tự do chỉ là ảo giác" (không tìm thấy "ảo giác" trong Skinner 1953 đã đọc; ông viết phải giả định hành vi "lawful and determined"). Chữ cũ về Chomsky: "nguyên tắc củng cố không thể giải thích việc trẻ em học ngôn ngữ" đổi theo bài phê bình.'
-- id: n36
-  cau: 'Chomsky (1959): các tuyên bố của Skinner về hành vi ngôn ngữ chưa có cơ sở; củng cố là một yếu tố quan trọng nhưng còn khả năng khái quát và đặt giả thuyết của trẻ chưa hiểu hết.'
-  loai: phat-hien
-  nguon:
-  - chomsky1959
-  trich: it seems clear that reinforcement, casual observation, and natural inquisitiveness (coupled with a strong tendency to imitate) are important factors
-  vi_tri: Review of Verbal Behavior (bản chomsky.info, mục 5–11)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nguyên tắc củng cố không thể giải thích việc trẻ em học ngôn ngữ". Chomsky nêu củng cố là một yếu tố quan trọng, và cách tiếp cận của Skinner không đủ chứng cứ cho ngôn ngữ. Trích đúng theo bản trực tuyến (Chomsky 1967 đăng lại, không phải bản Language 1959).'
-- id: n37
-  cau: 'Đang tranh cãi: củng cố thao tác giải thích được mọi hành vi con người, kể cả ngôn ngữ.'
-  loai: nhan
-  nguon:
-  - chomsky1959
-  - openstax2e
-  trich: Bandura and other researchers proposed a brand of behaviorism called social learning theory
-  vi_tri: OpenStax 6.4; Chomsky 1959
-  nhan: tranh-cai
-  co_so:
-  - chomsky1959
-  - openstax2e
-  ly_do: Phản biện từ Chomsky và thuyết học tập xã hội; nhưng không có nghiên cứu kiểm tra mạnh liên tục thất bại (điều kiện Đã bị bác bỏ).
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: chữ cũ :::bac-bo. Chữ cũ: "Sau bài phê bình của Chomsky và sự trỗi dậy của tâm lý học nhận thức, quan điểm mọi thứ đều là củng cố không còn được chấp nhận". Bác bỏ cần thất bại tái lập/kiểm tra mạnh; một bài phê bình lý thuyết và một thuyết khác chưa đủ. Hạ xuống Đang tranh cãi; người giao/lượt 2 cân nhắc.'
-- id: n38
-  cau: Edward Thorndike (1911) nêu luật hiệu ứng; Skinner lấy luật này làm nền tảng cho điều kiện hóa thao tác.
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: Working with Thorndike’s law of effect as his foundation, Skinner began conducting scientific experiments on animals
-  vi_tri: OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "với thí nghiệm mèo thoát khỏi hộp câu đố cuối thế kỷ 19": chi tiết hộp câu đố/cuối thế kỷ 19 không có trong nguồn đã mở (OpenStax chỉ nói law of effect, Thorndike 1911). Bỏ.'
-- id: n39
-  cau: Ferster và Skinner mô tả hành vi dưới sự kiểm soát của kích thích phân biệt (tình huống) và lịch trình củng cố (hậu quả); đây là cách nhìn của nhóm Skinner.
-  loai: lich-su
-  nguon:
-  - ferster1957
-  trich: schedule-appropriate behavior under discriminative stimulus control emerged as the primary determinant of an individual’s behavior
-  vi_tri: lời giới thiệu 1997 (Morse & Dews)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Ba yếu tố (tình huống – hành vi – hậu quả): ... có thể can thiệp vào bất kỳ mắt xích nào" (không nguồn). Mới theo lời giới thiệu; trích là của người viết 1997.'
-- id: n40
-  cau: 'Củng cố (dương tính: thêm điều dễ chịu; âm tính: bớt điều khó chịu) làm tăng hành vi; trừng phạt làm giảm hành vi; củng cố âm tính không phải là phạt.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: Reinforcement means you are increasing a behavior, and punishment means you are decreasing a behavior.
-  vi_tri: OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "ngộ nhận phổ biến nhất về Skinner" (xếp hạng không nguồn; bỏ).'
-- id: n41
-  cau: 'Bandura và các nhà tâm lý học nhận thức đề xuất thuyết học tập xã hội: con người còn học bằng quan sát người khác.'
-  loai: lich-su
-  nguon:
-  - openstax2e
-  trich: Bandura and other researchers proposed a brand of behaviorism called social learning theory
-  vi_tri: OpenStax 6.4
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "con người còn học bằng suy luận" (không nguồn); bỏ "suy luận".'
-- id: n42
-  cau: Giáo trình mở lấy việc kiểm tra mạng xã hội làm ví dụ của lịch trình khoảng biến đổi và đánh bạc làm ví dụ của tỉ lệ biến đổi.
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: Checking social media
-  vi_tri: OpenStax 6.3, Bảng 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "thông báo điện thoại, lượt thích, hộp quà ngẫu nhiên trong game đều dùng lịch trình tỉ lệ biến đổi" (không nguồn; OpenStax xếp mạng xã hội là VI, không phải VR). Việc các tính năng cố ý dùng lịch trình đó chưa kiểm.'
-- id: n43
-  cau: Giáo trình mở nêu rằng trừng phạt (đặc biệt là thân thể) có thể dạy trẻ sợ; chuyên gia ngày nay khuyên ưu tiên củng cố hơn trừng phạt; Skinner cũng cho rằng nên cân nhắc cái giá của trừng phạt.
-  loai: loi-khuyen
-  nguon:
-  - openstax2e
-  trich: Today’s psychologists and parenting experts favor reinforcement over punishment
-  vi_tri: OpenStax 6.3
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "trừng phạt chỉ dập hành vi tạm thời, không dạy được hành vi thay thế, và dễ gây sợ hãi" ("tạm thời", "không dạy được" không có trong nguồn). Mới theo OpenStax; chưa mở Gershoff 2002 và 2010 (OpenStax dẫn).'
-- id: n44
-  cau: Giáo trình mở lấy trả công theo số sản phẩm làm ví dụ của tỉ lệ cố định; chương trình tích điểm đổi quà có cấu trúc gần giống (phép so sánh của site).
-  loai: loi-khuyen
-  nguon:
-  - openstax2e
-  trich: Piecework—factory worker getting paid for every x number of items manufactured
-  vi_tri: OpenStax 6.3, Bảng 6.3
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "chương trình khách hàng thân thiết... đều là lịch trình tỉ lệ cố định phiên bản thương mại" (khẳng định chung, không nguồn).'
-- id: n45
-  cau: Việc phần thưởng vật chất có làm mòn động lực nội tại hay không là tranh luận riêng; trang không đi sâu.
-  loai: loi-khuyen
-  ket_qua: da-bo
-  ghi_chu: 'Chữ cũ: "phần thưởng vật chất nếu lạm dụng có thể làm mòn động lực nội tại — một tranh luận riêng vẫn chưa ngã ngũ". Không nguồn trong hồ sơ này; câu mới chỉ ghi rằng đây là tranh luận riêng. Có thể bỏ hẳn.'
-- id: n46
-  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên người Việt về lịch trình củng cố trong phòng thí nghiệm.
-  loai: thoi-su
-  het_han: '2028-10-01'
-  ket_qua: dung
-  ghi_chu: 'Tìm 30/10/2026: PubMed ("schedules of reinforcement" AND Vietnam*: 0 kết quả; "applied behavior analysis" AND Vietnam: 0; "operant conditioning" AND Vietnam*: 1 kết quả, Cotter 1967). Chưa tìm Google Scholar hay tạp chí trong nước.'
-- id: n47
-  cau: Có một báo cáo năm 1967 tên "Operant conditioning in a Vietnamese mental hospital" (Cotter, American Journal of Psychiatry); chưa đọc nội dung nên không nêu kết quả.
-  loai: thoi-su
-  nguon:
-  - cotter1967
-  het_han: '2028-10-01'
-  ket_qua: dung
-  ghi_chu: 'Chỉ xác nhận tên và nơi đăng qua PubMed (PMID 6025947), không có tóm tắt. Cotter là tác giả nước ngoài: không thuộc "nghiên cứu trên người Việt" theo nghĩa nghiên cứu do người Việt, nhưng bệnh nhân là người Việt; trang chỉ nêu tên.'
-- id: n48
-  cau: 'Ngộ nhận "Củng cố âm tính là phạt": ví dụ tiếng "bíp" của dây an toàn dừng khi thắt dây là củng cố âm tính.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: car manufacturers use the principles of negative reinforcement in their seatbelt systems, which go “beep, beep, beep” until you fasten your seatbelt
-  vi_tri: OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: ví dụ "uống thuốc hết đau đầu nên lần sau đau lại uống": ví dụ minh họa, đổi sang ví dụ của OpenStax cho khớp nguồn.'
-- id: n49
-  cau: Skinner áp dụng cách phân tích từ phòng thí nghiệm cho hành vi con người; Chomsky và tâm lý học nhận thức chỉ ra giới hạn, đặc biệt với ngôn ngữ.
-  loai: phat-hien
-  nguon:
-  - chomsky1959
-  - openstax2e
-  trich: it seems clear that reinforcement, casual observation, and natural inquisitiveness (coupled with a strong tendency to imitate) are important factors
-  vi_tri: Chomsky 1959; OpenStax 6.4
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Ông cho rằng cùng nguyên tắc học tập chi phối mọi loài" (không tìm thấy câu tương ứng; bỏ).'
-- id: n50
-  cau: 'Quiz 1: chuột ấn cần nhận thức ăn rồi ấn nhiều hơn là củng cố dương tính (thêm một điều dễ chịu làm tăng hành vi).'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: positive means you are adding something, and negative means you are taking something away. Reinforcement means you are increasing a behavior
-  vi_tri: OpenStax 6.3
-  ket_qua: dung
-  ghi_chu: Câu hỏi đổi "buồng thao tác" thành "buồng thí nghiệm" (ghi chú ở nhận định về tên thiết bị).
-- id: n51
-  cau: 'Quiz 2: VR cho tốc độ cao, đều, khó tắt dần nhất; FI cho tốc độ vừa phải và dễ tắt dần nhất; củng cố liên tục giúp học nhanh.'
-  loai: phat-hien
-  nguon:
-  - openstax2e
-  trich: Among the reinforcement schedules, variable ratio is the most productive and the most resistant to extinction. Fixed interval is the least productive and the easiest to extinguish
-  vi_tri: OpenStax 6.3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Củng cố liên tục giúp học nhanh nhưng tắt nhanh nhất khi thưởng biến mất" ("nhanh nhất": không nguồn; OpenStax nói FI dễ tắt dần nhất). Phương án nhiễu "khoảng cố định thưởng theo giờ giấc đều đặn" không còn đúng/sai nghi vấn.'
-- id: n52
-  cau: 'Quiz 3: thí nghiệm 1948 cho thấy một động tác tình cờ trùng đúng lúc thức ăn xuất hiện có thể được lặp lại, thành "nghi lễ".'
-  loai: phat-hien
-  nguon:
-  - skinner1948
-  trich: The bird happens to be executing some response as the hopper appears; as a result it tends to repeat this response.
-  vi_tri: tr. 168
-  ket_qua: da-sua
-  ghi_chu: Giải thích cũ "bộ não (của chim và của ta) rất giỏi thấy quy luật... gốc rễ của nhiều niềm tin mê tín ở người" bỏ (không nguồn).
-- id: n53
-  cau: 'Quiz 4: củng cố âm tính loại bỏ điều khó chịu để làm tăng hành vi; trừng phạt làm giảm hành vi.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: Reinforcement means you are increasing a behavior, and punishment means you are decreasing a behavior.
-  vi_tri: OpenStax 6.3
-  ket_qua: dung
-- id: n54
-  cau: 'Quiz 5: Chomsky (1959) cho rằng tuyên bố của Skinner về ngôn ngữ chưa có cơ sở; bài phê bình nhắm vào Verbal Behavior, không nhắm vào dữ liệu lịch trình.'
-  loai: phat-hien
-  nguon:
-  - chomsky1959
-  trich: The problem to which this book is addressed is that of giving a “functional analysis” of verbal behavior.
-  vi_tri: Review of Verbal Behavior, mục 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Bài phê bình này góp phần mở đường cho cuộc cách mạng nhận thức" (không nguồn trong hồ sơ này; bỏ). Câu "nhắm vào dữ liệu lịch trình": suy từ chủ đề bài phê bình (Verbal Behavior).'
-- id: n55
-  cau: Hộp "Tóm tắt nhanh" dựng tự động từ ý chính của các khung nhãn.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Như n58 của asch.yml.
-- id: n56
-  cau: 'Trang này là trang nhà của nghiên cứu Skinner: nơi khác chỉ tóm một câu và link về.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/data/nghien-cuu.yml: id skinner, trang_nha thi-nghiem/skinner, nguon [skinner1938, skinner1948, ferster1957].'
-- id: n57
-  cau: Hình "skinner-schedules" là sơ đồ ước lệ, không theo tỉ lệ số liệu; chữ trong hình khớp chữ trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã đọc src/hinh/skinner-schedules.html. Hình không có con số; có chữ "rất cao, đều, bền nhất" ở VR, khác chút so với chữ trang ("cao, đều, khó tắt dần nhất"): người giao có thể sửa hình (hình sai thì không sửa, theo lời giao; nhưng chữ ước lệ, không phải con số).'
-- id: n58
-  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Bốn dòng của hộp khớp mục Nghiên cứu then chốt (6/8 bồ câu; 75% cân nặng; kết quả ở n trong bảng trên).
+  - id: n1
+    cau: B. F. Skinner cho chuột ấn cần gạt trong buồng thí nghiệm và phát hiện lịch trình thưởng ảnh hưởng đến hành vi (Ferster & Skinner 1957).
+    loai: phat-hien
+    nguon:
+      - ferster1957
+      - openstax2e
+    trich: By the manipulation of schedules, a wide range of changes in behavior can be produced
+    vi_tri: Lời nói đầu của Ferster & Skinner; OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Câu mô tả (description). Chữ cũ: "phát hiện lịch trình thưởng quyết định sức bền của hành vi"; mạnh hơn: nguồn nói lịch trình tạo ra nhiều thay đổi hành vi. Mới: "tạo ra những mẫu hình hành vi khác nhau"; "buồng thao tác" đổi thành "buồng thí nghiệm"; "ý chí tự do" đổi thành "quyết định luận" (xem nhận định về nhãn Đang tranh cãi). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: mô tả khớp lời giới thiệu và OpenStax; "chuột" khớp sách 1938.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: "Ghi chú: sách ghi chủ yếu bồ câu, ngoài ra có chuột; Skinner khởi đầu với chuột (1938)."
+    review: dung
+  - id: n2
+    cau: 'Khi bạn ngừng thưởng, hành vi được củng cố ngắt quãng (nhất là tỉ lệ biến đổi) bền hơn khi thưởng mỗi lần: Skinner (1953) viết rằng sức bền khi tắt dần do củng cố ngắt quãng "có thể lớn hơn nhiều" so với cùng số lần thưởng cho các đáp ứng liên tiếp.'
+    loai: phat-hien
+    nguon:
+      - skinner1953
+    trich: the resistance to extinction generated by intermittent reinforcement may be much greater than if the same number of reinforcements are given for consecutive responses
+    vi_tri: Science and Human Behavior, chương V (đoạn về extinction)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ (đáp án thu gọn): "bền bỉ hơn hẳn ... một trong những phát hiện vững chắc nhất của Skinner và Ferster". Mới theo Skinner 1953: "may be much greater". Không còn gán cho Ferster & Skinner 1957 (không tìm thấy câu tương ứng trong phần đã đọc). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp câu của Skinner 1953 (đã đọc toàn văn chương V); đáp án có "có thể".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf", "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: 'Ý chính đúng (sức bền tắt dần cao hơn với củng cố ngắt quãng; OpenStax: tỉ lệ biến đổi mạnh nhất). Câu trích nguyên văn từ Skinner 1953 "có thể lớn hơn nhiều" chưa mở được toàn văn Science and Human Behavior (archive.org hạn chế).'
+    review: dung
+  - id: n3
+    cau: Skinner (1953) nhận xét máy đánh bạc trả thưởng theo lịch trình tỉ lệ biến đổi.
+    loai: phat-hien
+    nguon:
+      - skinner1953
+    trich: Slot machines, roulette wheels, dice cages, horse races, and so on pay off on a schedule of variable-ratio reinforcement.
+    vi_tri: Science and Human Behavior (đoạn về gambling)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cũng là lý do máy đánh bạc gây nghiện đến vậy": khẳng định nhân quả không có nguồn; OpenStax nêu nghiên cứu gần đây trên chuột không ủng hộ ý Skinner rằng riêng lịch trình VR gây cờ bạc bệnh lý (Laskowski và cộng sự 2019: chưa mở bài gốc). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: đã đọc Skinner 1953: "Slot machines, roulette wheels … pay off on a schedule of variable-ratio reinforcement"; trang không còn nói máy đánh bạc "gây nghiện" mà chỉ nêu OpenStax về chuột (n4).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: OpenStax ví dụ đánh bạc; nhận xét máy đánh bạc của Skinner 1953 là kiến thức chuẩn, chưa mở được sách.
+    review: dung
+  - id: n4
+    cau: Nghiên cứu gần đây trên chuột không ủng hộ ý của Skinner rằng riêng lịch trình tỉ lệ biến đổi gây cờ bạc bệnh lý (theo OpenStax, dẫn Laskowski và cộng sự 2019).
+    loai: tai-lap
+    nguon:
+      - openstax2e
+    trich: Recent research in rats has failed to support Skinner’s idea that training on variable-ratio schedules alone causes pathological gambling
+    vi_tri: OpenStax 6.3, hộp "Gambling and the Brain"
+    ket_qua: dung
+    ghi_chu: Nguồn bậc 2 (giáo trình); bài gốc Laskowski 2019 chưa mở.
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+  - id: n5
+    cau: Khác với chó của Pavlov học "âm thanh báo hiệu thức ăn", con vật của Skinner học "làm gì thì được gì".
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: Skinner believed that behavior is motivated by the consequences we receive for the behavior
+    vi_tri: OpenStax 6.3
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning", "https://psychclassics.yorku.ca/Pavlov/lecture2.htm" ]
+    luot_2_ghi_chu: "Hai dạng học: cổ điển (tín hiệu) và thao tác (hậu quả); khẳng định giản lược nhưng đúng."
+  - id: n6
+    cau: Một hành vi tự phát, một khi được thưởng, sẽ xuất hiện thường xuyên hơn (hành vi thao tác).
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+      - skinner1938
+    trich: At first, the rat might randomly hit the lever while exploring the box, and out would come a pellet of food. After eating the pellet, what do you think the hungry rat did next? It hit the lever again
+    vi_tri: OpenStax 6.3
+    ket_qua: dung
+    ghi_chu: '"Operant" theo Skinner 1938: "An operant is an identifiable part of behavior" (chương I).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Định nghĩa điều kiện hóa thao tác.
+  - id: n7
+    cau: Lịch trình thưởng tạo ra những nhịp độ hành vi khác nhau và ảnh hưởng đến sức bền của hành vi khi thưởng ngừng.
+    loai: phat-hien
+    nguon:
+      - ferster1957
+      - openstax2e
+    trich: The four reinforcement schedules yield different response patterns.
+    vi_tri: Hình 6.13 OpenStax; Ferster & Skinner lời nói đầu
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "quyết định tốc độ học, nhịp độ hành vi và sức bền". "Quyết định tốc độ học": không thấy trong nguồn. Mới: "tạo ra nhịp độ khác nhau" và "ảnh hưởng đến sức bền" (Skinner 1953; OpenStax). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax Bảng 6.3 và Skinner 1953.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: "Schedules of Reinforcement (1957): mỗi lịch trình sinh nhịp hành vi riêng, và cường độ tắt dần khác nhau."
+    review: dung
+  - id: n8
+    cau: Skinner bắt đầu chương trình nghiên cứu từ luận án tiến sĩ ở Harvard (1931); phần lớn các thí nghiệm trong sách 1938 làm khi là nghiên cứu viên ở Harvard.
+    loai: lich-su
+    nguon:
+      - skinner1938
+    trich: a thesis for the degree of doctor of philosophy at Harvard University in 1931
+    vi_tri: Acknowledgments, The Behavior of Organisms (bản quét OCR)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(1904–1990) bắt đầu thí nghiệm khi còn là nghiên cứu sinh ở Harvard đầu thập niên 1930". Bỏ năm sinh/năm mất (chưa có nguồn đã mở). Mới theo lời cảm ơn: luận án 1931, phần lớn nghiên cứu khi là Fellow (National Research Council; Society of Fellows, Harvard). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: đã đọc lời cảm ơn sách 1938: luận án Harvard 1931, phần lớn nghiên cứu làm khi là Fellow NRC và Junior Fellow Harvard.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gf.org/?p=14572" ]
+    luot_2_ghi_chu: Skinner lấy tiến sĩ Harvard 1931, Junior Fellow Harvard 1933-36 (Guggenheim ghi tóm tắt lý lịch); sách 1938 tổng kết nghiên cứu đó.
+    review: dung
+  - id: n9
+    cau: Thiết bị là buồng thí nghiệm, về sau được gọi là "buồng điều kiện hóa thao tác", quen gọi là "hộp Skinner"; trong sách 1938, chính Skinner gọi nó là "experimental box".
+    loai: lich-su
+    nguon:
+      - openstax2e
+      - skinner1938
+    trich: He placed these animals inside an operant conditioning chamber, which has come to be known as a “Skinner box” ... the rat is placed in the experimental box (Skinner 1938)
+    vi_tri: OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chính ông gọi nó là buồng thao tác (operant chamber); hộp Skinner là biệt danh do người khác đặt" (cả ở phần ngộ nhận). Không tìm được câu của Skinner xác nhận tên; trong Skinner 1938 dùng "experimental box" (đã đọc, không có "operant chamber"/"Skinner box"); Ferster & Skinner 1957 dùng "experimental chamber". Review (Claude Sonnet 5.5, 30/10/2026): mục Ngộ nhận có vế "trong sách 1938, chính Skinner gọi là ''experimental box''" nhưng không nhận định nào chứa vế ấy. Đã đọc OCR sách 1938: "experimental box" 15 lần, không có "Skinner box". Đã thêm vào cau, nguon và trich của n9.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/", "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: Hộp Skinner, tên chính thức operant conditioning chamber.
+    review: sai
+  - id: n10
+    cau: Chuột đói ấn một cần gạt để nhận viên thức ăn; chim bồ câu mổ một đĩa phím.
+    loai: phat-hien
+    nguon:
+      - openstax2e
+    trich: A Skinner box contains a lever (for rats) or disk (for pigeons) that the animal can press or peck for a food reward via the dispenser.
+    vi_tri: OpenStax 6.3
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf", "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+  - id: n11
+    cau: Hành vi được ghi dưới dạng đường cong tích lũy theo thời gian; độ dốc cho biết tốc độ đáp ứng.
+    loai: phat-hien
+    nguon:
+      - skinner1938
+      - ferster1957
+    trich: The cumulative record permits immediate inspection and estimation of rate
+    vi_tri: lời giới thiệu 1997 (Morse & Dews) trong bản in lại Ferster & Skinner; Skinner 1938 dùng "cumulative curve"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một thiết bị ghi tích lũy vẽ đồ thị: mỗi đáp ứng nhích bút lên một nấc, nên độ dốc chính là tốc độ". Chi tiết "nhích bút lên một nấc" không kiểm được; bỏ. Trích là của lời giới thiệu 1997 (người viết sau), không phải văn bản 1957. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp lời giới thiệu 1997 và cách mô tả đường cong tích lũy.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: Ferster & Skinner dùng đường cong tích lũy; độ dốc là tốc độ đáp ứng.
+    review: dung
+  - id: n12
+    cau: Chuột đói học ấn cần để lấy thức ăn.
+    loai: phat-hien
+    nguon:
+      - openstax2e
+    trich: It hit the lever again, and received another pellet of food.
+    vi_tri: OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhanh chóng học" (bỏ "nhanh chóng"). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: đã bỏ "nhanh chóng".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: "Chuột đói ấn cần để lấy thức ăn: mô tả ở Ferster & Skinner (thí nghiệm có chuột)."
+    review: dung
+  - id: n13
+    cau: Hành vi không chỉ phụ thuộc "có thưởng hay không" mà vào cách thưởng được sắp xếp (lịch trình).
+    loai: phat-hien
+    nguon:
+      - ferster1957
+    trich: It is now clear that far from being a mere falling-short of the ideal of inevitable reinforcement, intermittent reinforcement constitutes an important condition of action.
+    vi_tri: Lời nói đầu (Foreword) của Ferster & Skinner
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "mà vào khi nào thưởng đến". Mới tổng quát hơn: "cách thưởng được sắp xếp". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp luận điểm sách 1957 ("intermittent reinforcement constitutes an important condition of action").'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: Chức năng của lịch trình thưởng là luận điểm của sách 1957.
+    review: dung
+  - id: n14
+    cau: Skinner công bố The Behavior of Organisms (1938, Appleton-Century) khi là trợ lý giáo sư (assistant professor) ở Đại học Minnesota, tổng kết nghiên cứu đã làm từ Harvard.
+    loai: lich-su
+    nguon:
+      - skinner1938
+    trich: ASSISTANT PROFESSOR OF PSYCHOLOGY UNIVERSITY OF MINNESOTA
+    vi_tri: trang tựa
+    ket_qua: da-sua
+    ghi_chu: 'Trang tựa ghi "Assistant Professor of Psychology, University of Minnesota"; "tổng kết nghiên cứu từ Harvard" theo lời cảm ơn. Review (Claude Sonnet 5.5, 30/10/2026): lượt 2 đúng: trang tựa sách 1938 (Internet Archive, đã đọc OCR) ghi "ASSISTANT PROFESSOR OF PSYCHOLOGY, UNIVERSITY OF MINNESOTA", nên "phó giáo sư" (associate professor) sai. Chữ cũ: "khi ông là phó giáo sư ở Đại học Minnesota". Chữ mới: "khi ông là trợ lý giáo sư (assistant professor) ở Đại học Minnesota". Lời cảm ơn ghi phần lớn nghiên cứu làm khi là Fellow (NRC, Society of Fellows, Harvard): khớp.'
+    luot_2: sai
+    luot_2_nguon: [ "https://www.gf.org/?p=14572" ]
+    luot_2_ghi_chu: "câu đúng: Skinner công bố The Behavior of Organisms (1938, Appleton-Century) khi là trợ lý giáo sư (assistant professor) ở Đại học Minnesota, tổng kết nghiên cứu đã làm từ Harvard.; Năm 1938 Skinner là assistant professor (trợ lý giáo sư), chưa phải associate professor (phó giáo sư); ngay cả mốc khác (phó giáo sư từ 1939) cũng sau 1938. Sách 1938 do Appleton-Century xuất bản và tổng kết nghiên cứu ở Harvard: đúng."
+    review: sai
+  - id: n15
+    cau: Phần lớn công việc của Ferster và Skinner làm từ 1/9/1949 đến 30/6/1955, theo hợp đồng giữa Văn phòng Nghiên cứu Hải quân Mỹ và Đại học Harvard.
+    loai: lich-su
+    nguon:
+      - ferster1957
+    trich: during the period between September 1, 1949 and June 30, 1955
+    vi_tri: Acknowledgments (Ferster & Skinner)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nghiên cứu từ 1949 đến 1955"; mới theo lời cảm ơn ("Most of the work reported in this book was carried out under contract to the Office of Naval Research ... with Harvard University"). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp lời cảm ơn sách 1957.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    review: dung
+  - id: n16
+    cau: Ferster và Skinner mô tả hệ thống nhiều lịch trình thưởng trong sách Schedules of Reinforcement (Appleton-Century-Crofts, 1957).
+    loai: lich-su
+    nguon:
+      - ferster1957
+    trich: The first step in our analysis of the field is therefore a purely formal statement of these possibilities
+    vi_tri: Foreword/Introduction (Ferster & Skinner)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hệ thống hóa mọi lịch trình thưởng có thể nghĩ ra ... dày 741 trang". Bỏ "mọi" (tác giả nói "other possibilities exist") và "741 trang" (số trang chỉ thấy qua mục lục thư viện, chưa mở). Nhà xuất bản: nguon.yml ghi Appleton-Century-Crofts; bản in lại của Skinner Foundation ghi "Original copyright © 1957 by Prentice-Hall" (không mâu thuẫn rõ, chưa phân giải). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: bỏ "mọi" và "741 trang".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    review: dung
+  - id: n17
+    cau: Con vật trong sách 1957 chủ yếu là bồ câu, ngoài ra có chuột.
+    loai: phat-hien
+    nguon:
+      - ferster1957
+    trich: In some of the experiments rats were studied, and the response then consisted of depressing a small horizontal bar
+    vi_tri: Ch. 1 và lời giới thiệu 1997 (bồ câu được dùng nhiều nhất)
+    ket_qua: da-sua
+    ghi_chu: 'Câu mới thêm (trang cũ nói chuột); lời giới thiệu 1997: "Homing pigeons were most frequently used by Ferster & Skinner". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp lời giới thiệu 1997 và sách 1957.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    review: dung
+  - id: n18
+    cau: 'Bốn lịch trình cơ bản: tỉ lệ cố định, tỉ lệ biến đổi, khoảng cố định, khoảng biến đổi.'
+    loai: dinh-nghia
+    nguon:
+      - ferster1957
+    trich: 'These two possibilities yield four basic schedules: fixed-interval, variable-interval, fixed-ratio, and variable-ratio.'
+    vi_tri: Foreword
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf", "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Bốn lịch trình cơ bản theo giáo trình mở; đúng.
+  - id: n19
+    cau: 'Tỉ lệ cố định (FR): thưởng sau mỗi N đáp ứng; tốc độ cao, có quãng nghỉ ngắn sau mỗi lần thưởng.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: A fixed ratio schedule is predictable and produces a high response rate, with a short pause after reinforcement
+    vi_tri: OpenStax 6.3, Hình 6.13
+    ket_qua: dung
+    ghi_chu: 'Ferster & Skinner: "Fixed-ratio schedules generate high rates of responding; in the pigeon they often exceed 10 responses per second."'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning", "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: "FR: tốc độ cao, ngừng nghỉ sau thưởng; mô tả chuẩn."
+  - id: n20
+    cau: 'Tỉ lệ biến đổi (VR): thưởng sau số đáp ứng trung bình N thay đổi ngẫu nhiên; tốc độ cao, đều, khó tắt dần nhất trong các lịch trình.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: Among the reinforcement schedules, variable ratio is the most productive and the most resistant to extinction.
+    vi_tri: OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "rất cao, đều, và bền nhất — mẫu hình của máy đánh bạc". Mới theo OpenStax; "mẫu hình của máy đánh bạc" đổi thành "Skinner (1953) gắn với máy đánh bạc". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax ("most productive and most resistant to extinction") và Skinner 1953.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: '"Khó tắt dần nhất trong các lịch trình" khớp OpenStax; ở người và động vật chung, đúng.'
+    review: dung
+  - id: n21
+    cau: 'Khoảng cố định (FI): thưởng cho đáp ứng đầu tiên sau mỗi N giây; đường cong "vỏ sò": nghỉ sau thưởng rồi tăng tốc khi gần đến giờ.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: The fixed interval schedule yields a scallop-shaped response pattern, reflecting a significant pause after reinforcement
+    vi_tri: OpenStax 6.3, Hình 6.13
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nghỉ ngơi sau khi vừa được thưởng, rồi tăng tốc dồn dập khi gần đến giờ"; "dồn dập" bỏ nếu không nguồn: giữ mô tả "vỏ sò" của OpenStax. Review (Claude Sonnet 5.5, 30/10/2026): trang và chú thích hình vẫn ghi "tăng tốc dồn dập" (chữ cũ) mà câu của hồ sơ chỉ nói "tăng tốc khi gần đến giờ"; OpenStax chỉ nói "scallop-shaped… a significant pause after reinforcement". Đã bỏ "dồn dập" ở gạch đầu dòng FI và ở chú thích hình skinner-schedules.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning", "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: "FI: đường cong vỏ sò, nghỉ sau thưởng rồi tăng tốc; mô tả chuẩn."
+    review: sai
+  - id: n22
+    cau: 'Khoảng biến đổi (VI): tốc độ vừa phải, đều.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: The variable interval schedule is unpredictable and produces a moderate, steady response rate
+    vi_tri: OpenStax 6.3, Hình 6.13
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+  - id: n23
+    cau: 'Hình (đã sửa): bốn đường cong tích lũy — FR cao nhưng vỡ nhịp sau thưởng; VR cao, đều, khó tắt dần nhất (chú thích: mẫu hình mà Skinner 1953 gắn với máy đánh bạc); FI hình vỏ sò; VI vừa phải, rất đều; sơ đồ ước lệ, không theo tỉ lệ số liệu.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+      - skinner1953
+    trich: Among the reinforcement schedules, variable ratio is the most productive and the most resistant to extinction.
+    vi_tri: src/hinh/skinner-schedules.html (đã đọc); OpenStax 6.3 (như n20), Hình 6.13
+    ket_qua: da-sua
+    ghi_chu: 'Opus đã sửa hình cho khớp chữ trang (n57). Chữ cũ: nhãn VR "rất cao, đều, bền nhất"; chú thích "tỉ lệ biến đổi (VR) rất cao, đều và bền nhất — mẫu hình của máy đánh bạc". Mới: "cao, đều, khó tắt dần nhất"; "…khó tắt dần nhất — mẫu hình mà Skinner (1953) gắn với máy đánh bạc". Lý do: OpenStax 6.3 "the most productive and the most resistant to extinction" (n20); "rất cao" và "bền nhất" mạnh hơn nguồn; máy đánh bạc là liên hệ của Skinner 1953, không phải mẫu hình đo được. Không có con số. Tên hình đã thêm vào HINH_DA_SUA. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: hình đúng chữ trang (xem n57).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf", "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Mô tả hình ước lệ; các mẫu hình khớp mô tả chuẩn từng lịch trình.
+    review: dung
+  - id: n24
+    cau: Skinner (1953) nêu rằng củng cố ngắt quãng có thể tạo hành vi bền hơn củng cố liên tục với cùng số lần thưởng; một bồ câu có thể phát ra khoảng 10.000 đáp ứng trước khi tắt dần hầu như hoàn toàn dưới một số lịch trình ngắt quãng.
+    loai: phat-hien
+    nguon:
+      - skinner1953
+    trich: Under some schedules of intermittent reinforcement as many as 10,000 responses may appear in the behavior of a pigeon before extinction is substantially complete.
+    vi_tri: Science and Human Behavior, chương V
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chuột được thưởng lúc có lúc không tiếp tục ấn cần rất lâu sau khi thức ăn ngừng hẳn; chuột quen được thưởng mỗi lần thì bỏ cuộc nhanh" (loài và cặp so sánh không nguồn). Mới theo Skinner 1953 (bồ câu). Review (Claude Sonnet 5.5, 30/10/2026): lượt 2 không kiểm được vì chưa mở sách 1953; đã đọc toàn văn Science and Human Behavior (Internet Archive, OCR): chương V, trang 70–71 có đúng câu "Under some schedules of intermittent reinforcement as many as 10,000 responses may appear in the behavior of a pigeon before extinction is substantially complete" và câu "the resistance to extinction generated by intermittent reinforcement may be much greater than if the same number of reinforcements are given for consecutive responses". Câu trên trang đúng nguồn 1953.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+    luot_2_ghi_chu: Con số 10.000 đáp ứng tôi xác nhận ở bài 1948 (chim bồ câu, trước khi tắt dần hầu như hoàn toàn), không phải thấy ở bản 1953; chưa mở được toàn văn Science and Human Behavior để kiểm Skinner 1953 có nêu số này và cho "một số lịch trình ngắt quãng" không.
+    review: dung
+  - id: n25
+    cau: Thưởng liên tục là cách nhanh nhất để dạy hành vi mới; sau khi hành vi được dạy thì thường chuyển sang củng cố ngắt quãng.
+    loai: loi-khuyen
+    nguon:
+      - openstax2e
+    trich: This reinforcement schedule is the quickest way to teach someone a behavior
+    vi_tri: OpenStax 6.3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "muốn dạy hành vi mới nhanh nhất thì nên thưởng liên tục lúc đầu, rồi chuyển dần sang ngắt quãng để khóa thói quen" ("khóa" bỏ). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax ("quickest way to teach").'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    review: dung
+  - id: n26
+    cau: 'Skinner (1948): bồ câu đói (giảm còn 75% cân nặng) được ăn theo đồng hồ (ví dụ 15 giây một lần) bất kể hành vi.'
+    loai: phat-hien
+    nguon:
+      - skinner1948
+    trich: A pigeon is brought to a stable state of hunger by reducing it to 75 percent of its weight when well fed.
+    vi_tri: Skinner 1948, tr. 168; "Fifteen sec. is a very effective interval"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cứ 15 giây một lần" như điều kiện chung; bài nói khoảng 15 giây là hiệu quả, có thể kéo dài tới 1–2 phút khi hành vi đã hình thành. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp Skinner 1948 (75%, ví dụ 15 giây).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+    review: dung
+  - id: n27
+    cau: Ở 6 trong 8 con, một động tác lặp lại rõ rệt xuất hiện.
+    loai: so-lieu
+    nguon:
+      - skinner1948
+    trich: In six out of eight cases the resulting responses were so clearly defined that two observers could agree perfectly in counting instances.
+    vi_tri: tr. 168
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+  - id: n28
+    cau: 'Các động tác gồm: xoay ngược chiều kim đồng hồ, thọc đầu vào một góc lồng, hất đầu, đung đưa đầu và thân, mổ về phía sàn mà không chạm.'
+    loai: phat-hien
+    nguon:
+      - skinner1948
+    trich: One bird was conditioned to turn counter-clockwise about the cage, making two or three turns between reinforcements.
+    vi_tri: tr. 168
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "con xoay vòng, con lắc đầu, con mổ xuống sàn". Mới theo bài: "mổ về phía sàn mà không chạm". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp mô tả của Skinner 1948.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+    review: dung
+  - id: n29
+    cau: 'Skinner giải thích: con chim tình cờ đang làm động tác đó đúng lúc thức ăn xuất hiện nên có xu hướng lặp lại; ông gọi đó là hành vi "mê tín".'
+    loai: phat-hien
+    nguon:
+      - skinner1948
+    trich: The bird happens to be executing some response as the hopper appears; as a result it tends to repeat this response.
+    vi_tri: tr. 168; nhan đề
+    ket_qua: dung
+    ghi_chu: '"Mê tín" là chữ trong nhan đề (đặt trong nháy đơn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+  - id: n30
+    cau: Skinner so sánh với những nghi lễ cầu may của con người.
+    loai: phat-hien
+    nguon:
+      - skinner1948
+    trich: There are many analogies in human behavior. Rituals for changing one's luck at cards are good examples.
+    vi_tri: tr. 171
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "lời cảnh báo rằng bộ não rất giỏi tìm quy luật... kể cả khi không có quy luật nào" (diễn giải của site, không phải của Skinner). Bỏ; giữ phép so sánh có trong bài. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp Skinner 1948 ("Rituals for changing one''s luck at cards").'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+    review: dung
+  - id: n31
+    cau: Staddon và Simmelhag (1971) làm lại thí nghiệm "mê tín" và thấy ngoài hành vi được củng cố tình cờ còn có những hoạt động xuất hiện ngay sau thức ăn, nên cách giải thích chỉ bằng củng cố tình cờ bị đặt câu hỏi.
+    loai: tai-lap
+    nguon:
+      - staddon1971
+    trich: interim activities (related to adjunctive behavior) occurred just after food delivery; the terminal response (a discriminated operant) occurred toward the end of the interval
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Chữ cũ: "chính thí nghiệm mê tín về sau cũng bị đặt câu hỏi liệu có giải thích đơn giản bằng củng cố tình cờ hay không" (không nguồn). Mới dẫn Staddon & Simmelhag 1971 (tóm tắt). id staddon1971 chưa có trong src/data/nguon.yml.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+    luot_2_ghi_chu: "Staddon & Simmelhag 1971 (Psychological Review): hoạt động xen kẽ (interim) ngay sau thức ăn và hoạt động cuối khoảng (terminal); kiến thức chuẩn, chưa mở bài; Skinner 1948 là thí nghiệm gốc."
+  - id: n32
+    cau: Trong thí nghiệm 1948, bồ câu bị giảm còn 75% cân nặng; theo chuẩn mực ngày nay, chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn.
+    loai: loi-khuyen
+    nguon:
+      - skinner1948
+      - phs-policy
+    trich: A pigeon is brought to a stable state of hunger by reducing it to 75 percent of its weight when well fed.
+    vi_tri: tr. 168
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chuột, bồ câu bị bỏ đói có kiểm soát... thời đó chưa có cơ chế này". Bỏ "chuột" (1948 chỉ nói bồ câu) và "chưa có cơ chế" (không nguồn). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp Skinner 1948. Review (Claude Sonnet 5.5, 30/10/2026): (ghi chú này thay cho "dung" ở trên) vế chuẩn mực không có nguồn trong hồ sơ. Đã đọc PHS Policy (olaw.nih.gov): IACUC phải duyệt, thủ tục phải "avoid or minimize discomfort, distress, and pain". Đã thu hẹp câu trên trang theo chính sách này; thêm nguon phs-policy. Chữ cũ: "nghiên cứu trên động vật phải qua hội đồng đạo đức và tuân thủ nguyên tắc giảm thiểu đau đớn".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+    luot_2_ghi_chu: Phần chuẩn mực ngày nay là khuyến nghị chung.
+    review: sai
+  - id: n33
+    cau: 'Vững chắc: hậu quả làm thay đổi xác suất hành vi; ở động vật thí nghiệm, các lịch trình củng cố tạo ra mẫu hình ổn định.'
+    loai: nhan
+    nguon:
+      - openstax2e
+      - ferster1957
+      - prendergast2006
+    trich: The four reinforcement schedules yield different response patterns.
+    vi_tri: OpenStax 6.3
+    nhan: vung-chac
+    co_so:
+      - openstax2e
+      - ferster1957
+      - skinner1953
+      - prendergast2006
+    ly_do: 'Nguyên lý học tập cơ bản (lời giao: xét bằng chứng tích lũy): củng cố là kiến thức nền của giáo trình, được mô tả trên nhiều loài trong hàng chục năm (Ferster & Skinner 1957 và về sau); ở người có phân tích tổng hợp 47 so sánh có nhóm đối chứng về cách điều trị dựa trên phần thưởng có điều kiện, hiệu quả dương (Prendergast 2006, d = 0,42). Không có thất bại tái lập lớn của nguyên lý. Phần "mẫu hình lịch trình" được thu hẹp vào động vật thí nghiệm vì dữ liệu chủ yếu là động vật. Đạt Vững chắc (mục 4).'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó (Opus): lượt 1 hạ Vững chắc của site cũ xuống Khá vững vì chưa có phân tích tổng hợp. Opus nâng lại Vững chắc với căn cứ mới (Prendergast 2006) và thu hẹp tên khung. Chữ lượt 1: ":::kha-vung[hậu quả làm thay đổi xác suất hành vi, và các lịch trình củng cố tạo ra mẫu hình ổn định] … Trang này chưa dẫn được phân tích tổng hợp hay tái lập độc lập… nên dừng ở khá vững." Mới: ":::vung-chac[hậu quả làm thay đổi xác suất hành vi; ở động vật thí nghiệm, các lịch trình củng cố tạo ra mẫu hình ổn định]", thêm câu Prendergast (n59). Lượt 2 xem: hiệu quả d giảm theo thời gian sau điều trị (tóm tắt); trang chỉ nói hiệu quả trung bình.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1360-0443.2006.01581.x", "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: "Nhãn Vững chắc hợp: mẫu hình lịch trình ổn định, lặp lại nhiều loài (sách 1957), và phân tích tổng hợp ở người (Prendergast 2006). Không có thất bại tái lập lớn cho nguyên lý hậu quả."
+  - id: n59
+    cau: Ở người, một phân tích tổng hợp 47 so sánh về "quản lý dự phòng" (contingency management), cách điều trị rối loạn dùng chất bằng phần thưởng có điều kiện, thấy hiệu quả trung bình d = 0,42 (Prendergast và cộng sự, 2006).
+    loai: lam-sang
+    nguon:
+      - prendergast2006
+    trich: Meta-analysis was used to determine the average effect size and potential moderators in 47 comparisons of the effectiveness of CM from studies based on a treatment-control group design ... The mean effect size (ES) of CM was positive, with a magnitude of d = 0.42 using a fixed effects model.
+    vi_tri: tóm tắt (Design, Findings)
+    ket_qua: dung
+    ghi_chu: 'Câu mới (Opus) trong khung Vững chắc. Chỉ đọc tóm tắt. "Phần thưởng có điều kiện" là nghĩa của tên gọi contingency management (tóm tắt không định nghĩa): lượt 2 kiểm. Loại lam-sang nên vào mẫu lượt 2. Không phải lời khuyên điều trị.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1360-0443.2006.01581.x" ]
+  - id: n34
+    cau: 'Khá vững: củng cố ngắt quãng có thể bền hơn củng cố liên tục.'
+    loai: nhan
+    nguon:
+      - skinner1953
+      - openstax2e
+    trich: the resistance to extinction generated by intermittent reinforcement may be much greater
+    vi_tri: Skinner 1953; OpenStax 6.3
+    nhan: kha-vung
+    co_so:
+      - skinner1953
+      - openstax2e
+    ly_do: 'Hai nguồn nêu hiện tượng (một sách của chính Skinner, một giáo trình mở); không có tổng hợp hay tái lập độc lập đã mở; áp dụng ngoài đời chưa kiểm chứng. Opus xét lại: giữ Khá vững; có tổng quan cũ (Lewis 1960, Psychol Bull 57(1), 1–28) nhưng chỉ có nhan đề, không mở được; câu trên trang đã viết mềm ("có thể bền hơn").'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hiệu ứng tắt dần của củng cố từng phần xuất hiện nhất quán trong phòng thí nghiệm" (khẳng định chung); thu hẹp theo nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf", "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: "Khá vững hợp: nhất quán ở động vật; ở người kết quả chưa nhất quán, không có phân tích tổng hợp lớn tôi mở được."
+  - id: n35
+    cau: 'Đang tranh cãi: con người có phải cỗ máy củng cố (quyết định luận và nhận thức).'
+    loai: nhan
+    nguon:
+      - skinner1953
+      - chomsky1959
+    trich: we must assume that behavior is lawful and determined
+    vi_tri: Skinner 1953 (chương I); Chomsky 1959
+    nhan: tranh-cai
+    co_so:
+      - skinner1953
+      - chomsky1959
+    ly_do: 'Hai quan điểm (Skinner, các nhà tâm lý học nhận thức) còn tranh luận; vấn đề chủ yếu là diễn giải, không phải dữ liệu lịch trình. Opus xét lại: giữ Đang tranh cãi. Không đổi lại Đã bị bác bỏ: khẳng định "mọi hành vi" là diễn giải lý thuyết, không có chuỗi kiểm tra trực tiếp liên tục thất bại như thước đo đòi.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Skinner theo chủ nghĩa quyết định luận triệt để: ... ý chí tự do chỉ là ảo giác" (không tìm thấy "ảo giác" trong Skinner 1953 đã đọc; ông viết phải giả định hành vi "lawful and determined"). Chữ cũ về Chomsky: "nguyên tắc củng cố không thể giải thích việc trẻ em học ngôn ngữ" đổi theo bài phê bình.'
+    luot_2: dung
+    luot_2_nguon: [ "https://chomsky.info/1967____/", "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Tranh luận giữa chủ nghĩa hành vi cực đoan và tâm lý học nhận thức còn mở; nhãn Đang tranh cãi hợp.
+  - id: n36
+    cau: 'Chomsky (1959): các tuyên bố của Skinner về hành vi ngôn ngữ chưa có cơ sở; củng cố là một yếu tố quan trọng nhưng còn khả năng khái quát và đặt giả thuyết của trẻ chưa hiểu hết.'
+    loai: phat-hien
+    nguon:
+      - chomsky1959
+    trich: it seems clear that reinforcement, casual observation, and natural inquisitiveness (coupled with a strong tendency to imitate) are important factors
+    vi_tri: Review of Verbal Behavior (bản chomsky.info, mục 5–11)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nguyên tắc củng cố không thể giải thích việc trẻ em học ngôn ngữ". Chomsky nêu củng cố là một yếu tố quan trọng, và cách tiếp cận của Skinner không đủ chứng cứ cho ngôn ngữ. Trích đúng theo bản trực tuyến (Chomsky 1967 đăng lại, không phải bản Language 1959). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp bài phê bình Chomsky; trang nêu cả "vẫn thừa nhận củng cố".'
+    luot_2: dung
+    luot_2_nguon: [ "https://chomsky.info/1967____/" ]
+    review: dung
+  - id: n37
+    cau: 'Đang tranh cãi: củng cố thao tác giải thích được mọi hành vi con người, kể cả ngôn ngữ.'
+    loai: nhan
+    nguon:
+      - chomsky1959
+      - openstax2e
+    trich: Bandura and other researchers proposed a brand of behaviorism called social learning theory
+    vi_tri: OpenStax 6.4; Chomsky 1959
+    nhan: tranh-cai
+    co_so:
+      - chomsky1959
+      - openstax2e
+    ly_do: 'Phản biện từ Chomsky và thuyết học tập xã hội; nhưng không có nghiên cứu kiểm tra mạnh liên tục thất bại (điều kiện Đã bị bác bỏ). Opus xét lại: giữ Đang tranh cãi. Không đổi lại Đã bị bác bỏ: khẳng định "mọi hành vi" là diễn giải lý thuyết, không có chuỗi kiểm tra trực tiếp liên tục thất bại như thước đo đòi.'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: chữ cũ :::bac-bo. Chữ cũ: "Sau bài phê bình của Chomsky và sự trỗi dậy của tâm lý học nhận thức, quan điểm mọi thứ đều là củng cố không còn được chấp nhận". Bác bỏ cần thất bại tái lập/kiểm tra mạnh; một bài phê bình lý thuyết và một thuyết khác chưa đủ. Hạ xuống Đang tranh cãi; người giao/lượt 2 cân nhắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://chomsky.info/1967____/", "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Câu giữ nhãn tranh cãi; Chomsky 1959 phê phán mạnh, không phải bác bỏ mọi vai trò củng cố.
+  - id: n38
+    cau: Edward Thorndike (1911) nêu luật hiệu ứng; Skinner lấy luật này làm nền tảng cho điều kiện hóa thao tác.
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: Working with Thorndike’s law of effect as his foundation, Skinner began conducting scientific experiments on animals
+    vi_tri: OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "với thí nghiệm mèo thoát khỏi hộp câu đố cuối thế kỷ 19": chi tiết hộp câu đố/cuối thế kỷ 19 không có trong nguồn đã mở (OpenStax chỉ nói law of effect, Thorndike 1911). Bỏ. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    review: dung
+  - id: n39
+    cau: Ferster và Skinner mô tả hành vi dưới sự kiểm soát của kích thích phân biệt (tình huống) và lịch trình củng cố (hậu quả); đây là cách nhìn của nhóm Skinner.
+    loai: lich-su
+    nguon:
+      - ferster1957
+    trich: schedule-appropriate behavior under discriminative stimulus control emerged as the primary determinant of an individual’s behavior
+    vi_tri: lời giới thiệu 1997 (Morse & Dews)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ba yếu tố (tình huống – hành vi – hậu quả): ... có thể can thiệp vào bất kỳ mắt xích nào" (không nguồn). Mới theo lời giới thiệu; trích là của người viết 1997. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp lời giới thiệu 1997, ghi "cách nhìn của nhóm Skinner". Review (Claude Sonnet 5.5, 30/10/2026): tên gạch đầu dòng trên trang vẫn là chữ cũ "Ba yếu tố (tình huống – hành vi – hậu quả)" mà nguồn không có; đổi thành "Kích thích phân biệt và lịch trình củng cố". Thân gạch đầu dòng đã khớp lời giới thiệu 1997.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: Ferster & Skinner nói về kích thích phân biệt và lịch trình củng cố; "cách nhìn của nhóm Skinner" đúng.
+    review: sai
+  - id: n40
+    cau: 'Củng cố (dương tính: thêm điều dễ chịu; âm tính: bớt điều khó chịu) làm tăng hành vi; trừng phạt làm giảm hành vi; củng cố âm tính không phải là phạt.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: Reinforcement means you are increasing a behavior, and punishment means you are decreasing a behavior.
+    vi_tri: OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ngộ nhận phổ biến nhất về Skinner" (xếp hạng không nguồn; bỏ). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Định nghĩa chuẩn củng cố dương/âm và trừng phạt.
+    review: dung
+  - id: n41
+    cau: 'Bandura và các nhà tâm lý học nhận thức đề xuất thuyết học tập xã hội: con người còn học bằng quan sát người khác.'
+    loai: lich-su
+    nguon:
+      - openstax2e
+    trich: Bandura and other researchers proposed a brand of behaviorism called social learning theory
+    vi_tri: OpenStax 6.4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "con người còn học bằng suy luận" (không nguồn); bỏ "suy luận". Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Bandura (1960s) thuyết học tập xã hội; nội dung mục 6.4 của OpenStax, chưa mở trang đó.
+    review: dung
+  - id: n42
+    cau: Giáo trình mở lấy việc kiểm tra mạng xã hội làm ví dụ của lịch trình khoảng biến đổi và đánh bạc làm ví dụ của tỉ lệ biến đổi.
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: Checking social media
+    vi_tri: OpenStax 6.3, Bảng 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thông báo điện thoại, lượt thích, hộp quà ngẫu nhiên trong game đều dùng lịch trình tỉ lệ biến đổi" (không nguồn; OpenStax xếp mạng xã hội là VI, không phải VR). Việc các tính năng cố ý dùng lịch trình đó chưa kiểm. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax (mạng xã hội là VI, đánh bạc là VR).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    review: dung
+  - id: n43
+    cau: Giáo trình mở nêu rằng trừng phạt (đặc biệt là thân thể) có thể dạy trẻ sợ; chuyên gia ngày nay khuyên ưu tiên củng cố hơn trừng phạt; Skinner cũng cho rằng nên cân nhắc cái giá của trừng phạt.
+    loai: loi-khuyen
+    nguon:
+      - openstax2e
+    trich: Today’s psychologists and parenting experts favor reinforcement over punishment
+    vi_tri: OpenStax 6.3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "trừng phạt chỉ dập hành vi tạm thời, không dạy được hành vi thay thế, và dễ gây sợ hãi" ("tạm thời", "không dạy được" không có trong nguồn). Mới theo OpenStax; chưa mở Gershoff 2002 và 2010 (OpenStax dẫn). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: đã đọc OpenStax 6.3: "punishment may teach fear", "favor reinforcement over punishment", "Skinner suggested that the use of punishment should be…"; trang ghi "theo OpenStax".'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: "Ý Skinner cân nhắc cái giá của trừng phạt: kiến thức chuẩn (Science and Human Behavior), chưa mở sách."
+    review: dung
+  - id: n44
+    cau: Giáo trình mở lấy trả công theo số sản phẩm làm ví dụ của tỉ lệ cố định; chương trình tích điểm đổi quà có cấu trúc gần giống (phép so sánh của site).
+    loai: loi-khuyen
+    nguon:
+      - openstax2e
+    trich: Piecework—factory worker getting paid for every x number of items manufactured
+    vi_tri: OpenStax 6.3, Bảng 6.3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chương trình khách hàng thân thiết... đều là lịch trình tỉ lệ cố định phiên bản thương mại" (khẳng định chung, không nguồn). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax (piecework là FR); phần tích điểm ghi là phép so sánh của site.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Phần tích điểm đổi quà là phép so sánh của site, hợp lý.
+    review: dung
+  - id: n45
+    cau: Việc phần thưởng vật chất có làm mòn động lực nội tại hay không là tranh luận riêng; trang không đi sâu.
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "phần thưởng vật chất nếu lạm dụng có thể làm mòn động lực nội tại — một tranh luận riêng vẫn chưa ngã ngũ". Không nguồn trong hồ sơ này; câu mới chỉ ghi rằng đây là tranh luận riêng. Có thể bỏ hẳn. Review (Claude Sonnet 5.5, 30/10/2026): câu đã ghi da-bo nhưng vẫn còn ở cuối mục Ngộ nhận "Thưởng càng nhiều càng tốt" ("Việc phần thưởng vật chất có làm mòn động lực nội tại… trang này không đi sâu"), không nguồn. Đã bỏ khỏi trang cho khớp da-bo.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Tranh luận có thật (Deci, Koestner & Ryan 1999 và Cameron); câu chỉ nói trang không đi sâu.
+    review: dung
+  - id: n46
+    cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên người Việt về lịch trình củng cố trong phòng thí nghiệm.
+    loai: thoi-su
+    het_han: '2028-10-01'
+    ket_qua: dung
+    ghi_chu: 'Tìm 30/10/2026: PubMed ("schedules of reinforcement" AND Vietnam*: 0 kết quả; "applied behavior analysis" AND Vietnam: 0; "operant conditioning" AND Vietnam*: 1 kết quả, Cotter 1967). Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Sonnet 5.5, 30/10/2026): thêm nguon tim-kiem-vn. Tự tìm lại 30/10/2026 qua Europe PMC: ("operant conditioning" OR "schedules of reinforcement" OR "reinforcement schedule" OR "Skinner box") AND (Vietnam OR Vietnamese) trong tiêu đề, tóm tắt: 1 kết quả, chính là Cotter 1967 (n47, bệnh viện tâm thần, không phải thí nghiệm lịch trình trong phòng thí nghiệm). Chưa tìm tạp chí trong nước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22schedule%20of%20reinforcement%22%20OR%20%22operant%20conditioning%22%29%20AND%20Vietnamese&format=json" ]
+    luot_2_ghi_chu: "Europe PMC (11 kết quả, không có nghiên cứu lịch trình củng cố ở người Việt) và tìm web: không thấy. Đúng với mốc 10/2026."
+    nguon:
+      - tim-kiem-vn
+    vi_tri: lần tìm 30/10/2026 (Europe PMC)
+    review: dung
+  - id: n47
+    cau: Có một báo cáo năm 1967 tên "Operant conditioning in a Vietnamese mental hospital" (Cotter, American Journal of Psychiatry); chưa đọc nội dung nên không nêu kết quả.
+    loai: thoi-su
+    nguon:
+      - cotter1967
+    het_han: '2028-10-01'
+    ket_qua: dung
+    ghi_chu: 'Chỉ xác nhận tên và nơi đăng qua PubMed (PMID 6025947), không có tóm tắt. Cotter là tác giả nước ngoài: không thuộc "nghiên cứu trên người Việt" theo nghĩa nghiên cứu do người Việt, nhưng bệnh nhân là người Việt; trang chỉ nêu tên.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1176/ajp.124.1.23" ]
+    luot_2_ghi_chu: Đã xác nhận tồn tại và nơi đăng (Am J Psychiatry 124:23); câu nói rõ chưa đọc nội dung.
+  - id: n48
+    cau: 'Ngộ nhận "Củng cố âm tính là phạt": ví dụ tiếng "bíp" của dây an toàn dừng khi thắt dây là củng cố âm tính.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: car manufacturers use the principles of negative reinforcement in their seatbelt systems, which go “beep, beep, beep” until you fasten your seatbelt
+    vi_tri: OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: ví dụ "uống thuốc hết đau đầu nên lần sau đau lại uống": ví dụ minh họa, đổi sang ví dụ của OpenStax cho khớp nguồn. Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp OpenStax (dây an toàn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    review: dung
+  - id: n49
+    cau: Skinner áp dụng cách phân tích từ phòng thí nghiệm cho hành vi con người; Chomsky và tâm lý học nhận thức chỉ ra giới hạn, đặc biệt với ngôn ngữ.
+    loai: phat-hien
+    nguon:
+      - chomsky1959
+      - openstax2e
+    trich: it seems clear that reinforcement, casual observation, and natural inquisitiveness (coupled with a strong tendency to imitate) are important factors
+    vi_tri: Chomsky 1959; OpenStax 6.4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ông cho rằng cùng nguyên tắc học tập chi phối mọi loài" (không tìm thấy câu tương ứng; bỏ). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: khớp Chomsky và OpenStax.'
+    luot_2: dung
+    luot_2_nguon: [ "https://chomsky.info/1967____/", "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Chomsky 1959 phê phán mở rộng sang ngôn ngữ; đúng.
+    review: dung
+  - id: n50
+    cau: 'Quiz 1: chuột ấn cần nhận thức ăn rồi ấn nhiều hơn là củng cố dương tính (thêm một điều dễ chịu làm tăng hành vi).'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: positive means you are adding something, and negative means you are taking something away. Reinforcement means you are increasing a behavior
+    vi_tri: OpenStax 6.3
+    ket_qua: dung
+    ghi_chu: Câu hỏi đổi "buồng thao tác" thành "buồng thí nghiệm" (ghi chú ở nhận định về tên thiết bị).
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: "Củng cố dương tính: thêm điều dễ chịu làm tăng hành vi."
+  - id: n51
+    cau: 'Quiz 2: VR cho tốc độ cao, đều, khó tắt dần nhất; FI cho tốc độ vừa phải, với quãng nghỉ sau mỗi lần thưởng; củng cố liên tục giúp học nhanh.'
+    loai: phat-hien
+    nguon:
+      - openstax2e
+    trich: Fixed interval ... Moderate response rate with significant pauses after reinforcement (OpenStax, Bảng 6.3); continuous reinforcement ... is the quickest way to teach someone a behavior; Among the reinforcement schedules, variable ratio is the most productive and the most resistant to extinction.
+    vi_tri: OpenStax 6.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Củng cố liên tục giúp học nhanh nhưng tắt nhanh nhất khi thưởng biến mất" ("nhanh nhất": không nguồn; OpenStax nói FI dễ tắt dần nhất). Phương án nhiễu "khoảng cố định thưởng theo giờ giấc đều đặn" không còn đúng/sai nghi vấn. Review (Claude Sonnet 5.5, 30/10/2026): lượt 2 qua-manh vì "FI dễ tắt dần nhất". OpenStax 6.3 có câu "Fixed interval is the least productive and the easiest to extinguish" (đã đọc) nhưng không nguồn nào khác (Skinner 1953, Ferster & Skinner) xếp thứ tự tắt dần của FI so với FR, và củng cố liên tục mới thường tắt nhanh nhất; thứ tự phụ thuộc thông số. Đã bỏ "dễ tắt dần nhất" khỏi lời giải thích câu 2 ("…FI cho tốc độ vừa phải, với quãng nghỉ sau mỗi lần thưởng") và khỏi khung Khá vững ("theo giáo trình mở, tỉ lệ biến đổi khó tắt dần nhất"). Chữ cũ: "FI cho tốc độ vừa phải và dễ tắt dần nhất". Giữ VR "khó tắt dần nhất" (OpenStax và Skinner 1953: "great resistance to extinction").'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning", "https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf" ]
+    luot_2_ghi_chu: 'câu đúng: VR cho tốc độ cao, đều, khó tắt dần nhất; FI cho tốc độ vừa phải với nghỉ sau thưởng, và các lịch trình cố định (FR, FI) thường tắt dần nhanh hơn lịch trình biến đổi; củng cố liên tục giúp học nhanh.; Ý "VR khó tắt dần nhất", "củng cố liên tục dạy nhanh nhất", FI "vừa phải" đúng. Nhưng "FI dễ tắt dần nhất" không được nguồn nào xác nhận: củng cố liên tục mới thường tắt nhanh nhất, và thứ tự giữa FI và FR phụ thuộc thông số.'
+    review: sai
+  - id: n52
+    cau: 'Quiz 3: thí nghiệm 1948 cho thấy một động tác tình cờ trùng đúng lúc thức ăn xuất hiện có thể được lặp lại, thành "nghi lễ".'
+    loai: phat-hien
+    nguon:
+      - skinner1948
+    trich: The bird happens to be executing some response as the hopper appears; as a result it tends to repeat this response.
+    vi_tri: tr. 168
+    ket_qua: da-sua
+    ghi_chu: 'Giải thích cũ "bộ não (của chim và của ta) rất giỏi thấy quy luật... gốc rễ của nhiều niềm tin mê tín ở người" bỏ (không nguồn). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: quiz 3 khớp Skinner 1948; giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Skinner/Pigeon/" ]
+    review: dung
+  - id: n53
+    cau: 'Quiz 4: củng cố âm tính loại bỏ điều khó chịu để làm tăng hành vi; trừng phạt làm giảm hành vi.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: Reinforcement means you are increasing a behavior, and punishment means you are decreasing a behavior.
+    vi_tri: OpenStax 6.3
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning" ]
+    luot_2_ghi_chu: Định nghĩa chuẩn.
+  - id: n54
+    cau: 'Quiz 5: Chomsky (1959) cho rằng tuyên bố của Skinner về ngôn ngữ chưa có cơ sở; bài phê bình nhắm vào Verbal Behavior, không nhắm vào dữ liệu lịch trình.'
+    loai: phat-hien
+    nguon:
+      - chomsky1959
+    trich: The problem to which this book is addressed is that of giving a “functional analysis” of verbal behavior.
+    vi_tri: Review of Verbal Behavior, mục 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Bài phê bình này góp phần mở đường cho cuộc cách mạng nhận thức" (không nguồn trong hồ sơ này; bỏ). Câu "nhắm vào dữ liệu lịch trình": suy từ chủ đề bài phê bình (Verbal Behavior). Review (Claude Sonnet 5.5, 30/10/2026): đã so chữ cuối trên trang với trích: quiz 5 khớp Chomsky 1959; câu cuối là suy từ chủ đề bài phê bình (Verbal Behavior).'
+    luot_2: dung
+    luot_2_nguon: [ "https://chomsky.info/1967____/" ]
+    luot_2_ghi_chu: Chomsky nhắm vào Verbal Behavior và việc mở rộng từ phòng thí nghiệm; ông không bác dữ liệu lịch trình.
+    review: dung
+  - id: n55
+    cau: Hộp "Tóm tắt nhanh" dựng tự động từ ý chính của các khung nhãn.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: "Như n58 của asch.yml. Review (Claude Sonnet 5.5, 30/10/2026): Đã kiểm src/plugins/thanh-phan.mjs (hàm tomTat) và trang có ::tom-tat với năm khung nhãn."
+    review: dung
+  - id: n56
+    cau: 'Trang này là trang nhà của nghiên cứu Skinner: nơi khác chỉ tóm một câu và link về.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/data/nghien-cuu.yml: id skinner, trang_nha thi-nghiem/skinner, nguon [skinner1938, skinner1948, ferster1957]. Review (Claude Sonnet 5.5, 30/10/2026): Đã kiểm src/data/nghien-cuu.yml: id skinner, trang_nha thi-nghiem/skinner.'
+    review: dung
+  - id: n57
+    cau: Hình "skinner-schedules" là sơ đồ ước lệ, không theo tỉ lệ số liệu; chữ trong hình khớp chữ trang.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã đọc src/hinh/skinner-schedules.html sau khi Opus sửa nhãn VR ("cao, đều, khó tắt dần nhất", khớp chữ trang). Hình không có con số; ghi "Sơ đồ minh họa ước lệ". Review (Claude Sonnet 5.5, 30/10/2026): Đã đọc src/hinh/skinner-schedules.html: nhãn FR "cao, vỡ nhịp sau thưởng", VR "cao, đều, khó tắt dần nhất", FI hình "vỏ sò", VI "vừa phải, rất đều", khớp bốn gạch đầu dòng trên trang; không có con số, ghi "ước lệ"; hình có trong HINH_DA_SUA. Review đã bỏ "dồn dập" khỏi chú thích FI (xem n21).'
+    review: dung
+  - id: n58
+    cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Bốn dòng của hộp khớp mục Nghiên cứu then chốt (6/8 bồ câu; 75% cân nặng; kết quả ở n trong bảng trên). Review (Claude Sonnet 5.5, 30/10/2026): hộp ghi "Chuột (sách 1938) và … bồ câu …, bị giảm cân để đói có kiểm soát" và "máy ghi tích lũy", nhưng phần kể chỉ nói bồ câu 1948 giảm còn 75% cân nặng và "đường cong tích lũy". Đã sửa hộp: "…; trong thí nghiệm 1948, bồ câu bị giảm còn 75% cân nặng để đói có kiểm soát" và "hành vi được ghi dưới dạng đường cong tích lũy". Hai dòng còn lại (tác giả, kết quả chính 6/8 con) khớp phần kể.'
+    review: sai
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: (không có)
-  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, đối tượng, thiết kế, kết quả chính'
-  ly_do: Bố cục C (kế hoạch).
-- cu: 'Khung Vững chắc: "hậu quả làm thay đổi xác suất hành vi..."; khung Đã bị bác bỏ: "củng cố thao tác giải thích được mọi hành vi con người, kể cả ngôn ngữ"'
-  moi: Khung Khá vững (cho câu đầu); khung Đang tranh cãi (cho câu sau)
-  ly_do: 'Thước đo nhãn (chuẩn kiểm định mục 4): không có phân tích tổng hợp đã mở; không có chuỗi kiểm tra mạnh thất bại. Xem ghi chú các nhận định nhãn.'
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: (không có)
+    moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, đối tượng, thiết kế, kết quả chính'
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Khung Vững chắc: "hậu quả làm thay đổi xác suất hành vi..."; khung Đã bị bác bỏ: "củng cố thao tác giải thích được mọi hành vi con người, kể cả ngôn ngữ"'
+    moi: Khung Khá vững (cho câu đầu); khung Đang tranh cãi (cho câu sau)
+    ly_do: 'Thước đo nhãn (chuẩn kiểm định mục 4): không có phân tích tổng hợp đã mở; không có chuỗi kiểm tra mạnh thất bại. Xem ghi chú các nhận định nhãn.'
+  - cu: 'Hình skinner-schedules: nhãn VR "rất cao, đều, bền nhất"; chú thích "(VR) rất cao, đều và bền nhất — mẫu hình của máy đánh bạc"'
+    moi: '"cao, đều, khó tắt dần nhất"; "…khó tắt dần nhất — mẫu hình mà Skinner (1953) gắn với máy đánh bạc"'
+    ly_do: Khớp chữ trang và OpenStax 6.3 (n23, n57). Hình có tên trong HINH_DA_SUA.
+  - cu: :::kha-vung[hậu quả làm thay đổi xác suất hành vi, và các lịch trình củng cố tạo ra mẫu hình ổn định] … "Trang này chưa dẫn được phân tích tổng hợp hay tái lập độc lập…"
+    moi: :::vung-chac[hậu quả làm thay đổi xác suất hành vi; ở động vật thí nghiệm, các lịch trình củng cố tạo ra mẫu hình ổn định], thêm phân tích tổng hợp Prendergast 2006 (47 so sánh, d = 0,42); thêm Prendergast 2006 vào mục Nguồn
+    ly_do: Nguyên lý học tập cơ bản có bằng chứng tích lũy và phân tích tổng hợp ở người (n33, n59).
+  - cu: '"khi ông là phó giáo sư ở Đại học Minnesota"'
+    moi: '"khi ông là trợ lý giáo sư (assistant professor) ở Đại học Minnesota"'
+    ly_do: "Review: trang tựa sách 1938 ghi Assistant Professor (n14)."
+  - cu: 'FI: "rồi tăng tốc dồn dập khi gần đến giờ" (trang và chú thích hình skinner-schedules)'
+    moi: '"rồi tăng tốc khi gần đến giờ"'
+    ly_do: 'Review: "dồn dập" không có trong nguồn (n21).'
+  - cu: 'Khung Khá vững và lời giải thích câu 2: "khoảng cố định dễ tắt dần nhất"'
+    moi: 'Khung: "(theo giáo trình mở, tỉ lệ biến đổi khó tắt dần nhất)"; câu 2: "FI cho tốc độ vừa phải, với quãng nghỉ sau mỗi lần thưởng"'
+    ly_do: "Review: lượt 2 qua-manh; thứ tự tắt dần của FI chỉ có một nguồn (n51)."
+  - cu: 'Mục Ngộ nhận "Thưởng càng nhiều càng tốt": "Việc phần thưởng vật chất có làm mòn động lực nội tại hay không là một tranh luận riêng mà trang này không đi sâu."'
+    moi: (bỏ câu)
+    ly_do: "Review: n45 đã da-bo nhưng câu còn trên trang."
+  - cu: 'Hộp hồ sơ: "…bị giảm cân để đói có kiểm soát"; "máy ghi tích lũy"'
+    moi: '"trong thí nghiệm 1948, bồ câu bị giảm còn 75% cân nặng để đói có kiểm soát"; "ghi dưới dạng đường cong tích lũy"'
+    ly_do: "Review: hộp chỉ tóm điều có trong phần kể (n58)."
+  - cu: '"nghiên cứu trên động vật phải qua hội đồng đạo đức và tuân thủ nguyên tắc giảm thiểu đau đớn"'
+    moi: '"chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn"'
+    ly_do: "Review: thêm nguồn PHS Policy, thu hẹp phạm vi (n32)."
+  - cu: '"Ba yếu tố (tình huống – hành vi – hậu quả):" (đầu gạch đầu dòng, lý thuyết)'
+    moi: '"Kích thích phân biệt và lịch trình củng cố:"'
+    ly_do: 'Review: nguồn (Ferster & Skinner) chỉ nói kích thích phân biệt và lịch trình, không nói "ba yếu tố" (n39).'

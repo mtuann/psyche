@@ -8,7 +8,7 @@ in_duoc: true
 
 :::ho-so-nghien-cuu
 - **Tác giả, năm** Harry Harlow, 1958 (bài diễn văn chủ tịch APA); kèm Harlow và Zimmermann, 1959
-- **Người tham gia** 8 khỉ con trong thí nghiệm "hai mẹ giả", cộng thêm các nhóm đối chứng khỉ nuôi không có mẹ giả
+- **Người tham gia** 8 khỉ con trong thí nghiệm "hai mẹ giả", cộng thêm 4 khỉ đối chứng chưa từng nuôi với mẹ giả
 - **Thiết kế** Mỗi khỉ con có một mẹ vải và một mẹ lưới thép trong hai ngăn gắn vào lồng; với 4 con, sữa ở mẹ vải; với 4 con còn lại, sữa ở mẹ lưới thép; thời gian trên mỗi mẹ được ghi tự động
 - **Kết quả chính** Dù sữa ở mẹ nào, khỉ con dành phần lớn thời gian trên mẹ vải; khi bị làm sợ, khỉ con chạy về mẹ vải; trong căn phòng lạ, sự có mặt của mẹ vải giảm một nửa điểm cảm xúc
 :::
@@ -32,7 +32,7 @@ Khỉ con dành **phần lớn thời gian** trên mẹ vải. Dù ở điều k
 
 ## Điều gì đang xảy ra?
 
-Theo Harlow (1958), quan điểm phổ biến của các nhà tâm lý học và xã hội học lúc đó là các động cơ cơ bản là hạ đói, khát..., còn tình yêu là động cơ **phái sinh**: mẹ gắn với việc giảm đói và khát, nên tình cảm được học. Harry Harlow, nhà tâm lý học tại Đại học Wisconsin, nghi ngờ điều này. Ông cho rằng có một nhu cầu khác, nguyên thủy không kém nhu cầu ăn: nhu cầu được **ôm ấp, tiếp xúc cơ thể** — ông gọi đó là *contact comfort*, sự dễ chịu khi tiếp xúc.
+Theo Harlow (1958), quan điểm phổ biến của các nhà tâm lý học và xã hội học lúc đó là các động cơ cơ bản là hạ đói, khát..., còn tình yêu là động cơ **phái sinh**: mẹ gắn với việc giảm đói và khát, nên tình cảm được học. Harry Harlow, nhà tâm lý học tại Đại học Wisconsin, nghi ngờ điều này. Ông cho rằng, ngoài việc cho bú, còn có một biến số quan trọng khác: được **ôm ấp, tiếp xúc cơ thể** — ông gọi đó là *contact comfort*, sự dễ chịu khi tiếp xúc.
 
 Thí nghiệm mẹ vải – mẹ lưới thép được dùng để kiểm tra trực tiếp quan niệm "tình yêu bắt nguồn từ việc cho ăn". Một giáo trình mở (OpenStax *Psychology 2e*) mô tả Harlow (1958) kết luận rằng mối gắn bó mẹ con không chỉ là dinh dưỡng, và các thí nghiệm của ông ngày nay bị xem là phi đạo đức.
 
@@ -42,7 +42,7 @@ Thí nghiệm mẹ vải – mẹ lưới thép được dùng để kiểm tra 
 
 Kết quả được Harlow công bố trong bài diễn văn của chủ tịch Hiệp hội Tâm lý học Hoa Kỳ (APA) tại hội nghị thường niên lần thứ 66, đăng trên *American Psychologist*: 8 khỉ con trong thí nghiệm "hai mẹ giả", mỗi con có hai "mẹ" giả như mô tả ở trên, đặt trong hai ngăn gắn vào lồng (phòng thí nghiệm của ông thường tách khỉ con khỏi mẹ 6–12 giờ sau sinh). Bốn con bú sữa từ mẹ vải, bốn con còn lại bú từ mẹ lưới thép — để loại trừ khả năng khỉ chỉ bám bên nào có sữa.
 
-**Kết quả.** Dù sữa nằm ở bên nào, khỉ con cũng dành phần lớn thời gian bám vào mẹ vải; với những con bú mẹ lưới thép, thời gian trên mẹ lưới thép giảm dần theo tuổi còn thời gian trên mẹ vải tăng. Khi được cho thấy các vật gây sợ như một con gấu đồ chơi chuyển động, khỉ con **ưa mẹ vải hơn rõ rệt**, bất kể mẹ nào có sữa. Trong căn phòng lạ (6 × 6 × 6 feet; "open-field test"; làm với 4 trong 8 khỉ), khi mẹ vải có mặt, khỉ con ôm mẹ rồi dùng mẹ làm "căn cứ" để khám phá, thỉnh thoảng quay về; khi mẹ vắng, chúng thường co rúm, và điểm cảm xúc tổng giảm một nửa khi mẹ có mặt. Bốn khỉ đối chứng chưa từng nuôi với mẹ giả có điểm cảm xúc khi mẹ vắng bằng nhóm thí nghiệm khi mẹ vắng ([Harlow, 1958](https://doi.org/10.1037/h0047884)).
+**Kết quả.** Dù sữa nằm ở bên nào, khỉ con cũng dành phần lớn thời gian bám vào mẹ vải; với những con bú mẹ lưới thép, thời gian trên mẹ vải tăng dần theo tuổi (khoảng 7 giờ lên khoảng 16 giờ mỗi ngày trong 25 ngày đầu, đọc từ Hình 5), còn thời gian trên mẹ lưới thép chỉ khoảng 1–2 giờ mỗi ngày. Khi được cho thấy các vật gây sợ như một con gấu đồ chơi chuyển động, khỉ con **ưa mẹ vải hơn rõ rệt**, bất kể mẹ nào có sữa. Trong căn phòng lạ (6 × 6 × 6 feet; "open-field test"; làm với 4 trong 8 khỉ), khi mẹ vải có mặt, khỉ con ôm mẹ rồi dùng mẹ làm "căn cứ" để khám phá, thỉnh thoảng quay về; khi mẹ vắng, chúng thường co rúm, và điểm cảm xúc tổng giảm một nửa khi mẹ có mặt. Bốn khỉ đối chứng chưa từng nuôi với mẹ giả có điểm cảm xúc khi mẹ vắng bằng nhóm thí nghiệm khi mẹ vắng ([Harlow, 1958](https://doi.org/10.1037/h0047884)).
 
 Kết luận của Harlow: *"contact comfort là một biến số có tầm quan trọng áp đảo trong sự hình thành phản ứng yêu thương, trong khi việc cho bú là một biến số có tầm quan trọng không đáng kể."* Ông cũng đề xuất rằng chức năng chính của việc cho bú với tư cách một biến số tình cảm có lẽ là bảo đảm sự tiếp xúc cơ thể thường xuyên, thân mật giữa mẹ và con.
 
@@ -52,7 +52,7 @@ Sau thí nghiệm mẹ vải, phòng thí nghiệm của Harlow đi xa hơn: nu�
 
 ### Vấn đề đạo đức theo chuẩn hiện nay
 
-Phải nói thẳng: các thí nghiệm của Harlow, theo giáo trình mở, ngày nay bị xem là phi đạo đức, và công trình sau này của ông còn đi xa hơn. Ngoài việc tách khỉ con khỏi mẹ ruột và nuôi trong cô lập xã hội hoàn toàn, vào những năm 1960–1970 ông còn làm các thí nghiệm nhằm gây trầm cảm ở khỉ để tìm cách chữa trầm cảm (một bài lịch sử gọi là "pit of despair", van Rosmalen và cộng sự, 2022), và bị chỉ trích dữ dội. Bài này không mô tả chi tiết các thí nghiệm đó. Theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và giảm thiểu đau đớn. Giá trị khoa học của phát hiện "contact comfort" không xóa được cái giá mà những con khỉ đã trả.
+Phải nói thẳng: các thí nghiệm của Harlow, theo giáo trình mở, ngày nay bị xem là phi đạo đức, và công trình sau này của ông còn đi xa hơn. Ngoài việc tách khỉ con khỏi mẹ ruột và nuôi trong cô lập xã hội hoàn toàn, vào những năm 1960–1970 ông còn làm các thí nghiệm gây tranh cãi nhằm tìm cách chữa trầm cảm, và bị chỉ trích dữ dội (bài lịch sử của van Rosmalen và cộng sự, 2022, có tiêu đề "Harry Harlow's pit of despair: Depression in monkeys and men"). Bài này không mô tả chi tiết các thí nghiệm đó. Theo chuẩn mực ngày nay, chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn. Giá trị khoa học của phát hiện "contact comfort" không xóa được cái giá mà những con khỉ đã trả.
 
 ## Mức độ chắc chắn
 
@@ -61,7 +61,7 @@ Trong thí nghiệm "hai mẹ giả" của Harlow (1958), dù sữa nằm ở m�
 :::
 
 :::kha-vung[mẹ vải là 'căn cứ an toàn' giúp khỉ con dám khám phá]
-Trong căn phòng lạ, 4 trong 8 khỉ dùng mẹ vải làm "căn cứ" để khám phá rồi quay về (Harlow, 1958) — hình ảnh gần với "căn cứ an toàn" (secure base) mà Bowlby mô tả ở trẻ em (theo OpenStax). Mẫu rất nhỏ và không thể lặp lại theo chuẩn đạo đức hiện nay, nên dừng ở "khá vững". Về khả năng phục hồi: Suomi, Delizio và Harlow (1976) báo cáo rằng khỉ có hành vi trầm cảm sau nhiều lần bị tách có thể trở lại hoạt động xã hội phù hợp tuổi nhờ tiếp xúc lặp lại với bạn cùng tuổi năng động; đây là nghiên cứu với một nhóm nhỏ khỉ.
+Trong căn phòng lạ, 4 trong 8 khỉ dùng mẹ vải làm "căn cứ" để khám phá rồi quay về (Harlow, 1958; Harlow gọi là "base of operations"). Chúng tôi ví hình ảnh này với "căn cứ an toàn" (secure base) trong thuyết gắn bó của Bowlby, nơi người chăm sóc là chỗ trẻ quay về khi khám phá (OpenStax định nghĩa khái niệm này nhưng không nối nó với thí nghiệm của Harlow); đây là phép so sánh của trang. Mẫu rất nhỏ và không thể lặp lại theo chuẩn đạo đức hiện nay, nên dừng ở "khá vững". Về khả năng phục hồi: Suomi, Delizio và Harlow (1976) báo cáo rằng khỉ có hành vi trầm cảm sau nhiều lần bị tách có thể trở lại hoạt động xã hội phù hợp tuổi nhờ tiếp xúc lặp lại với bạn cùng tuổi năng động; đây là nghiên cứu với một nhóm nhỏ khỉ.
 :::
 
 :::tranh-cai[suy rộng sang con người được bao xa?]
@@ -70,7 +70,7 @@ Khỉ không phải người, và "mẹ vải" không phải mẹ thật. Harlow
 
 ## Các lý thuyết giải thích
 
-- **Sự dễ chịu khi tiếp xúc (Harlow):** gắn bó hình thành từ cảm giác mềm mại, ấm áp, được ôm — một nhu cầu nguyên thủy, không phải sản phẩm phụ của việc ăn.
+- **Sự dễ chịu khi tiếp xúc (Harlow):** Harlow cho rằng sự gắn bó của khỉ con chịu ảnh hưởng áp đảo từ cảm giác mềm mại, ấm áp, được ôm, còn việc cho bú chỉ có tầm quan trọng không đáng kể.
 - **Lý thuyết gắn bó (Bowlby, 1969):** OpenStax mô tả Bowlby xây dựng thuyết gắn bó dựa trên công trình của Harlow và những người khác: gắn bó là sợi dây tình cảm giữa trẻ và mẹ, và người chăm sóc là "căn cứ an toàn" để trẻ khám phá. Mary Ainsworth sau này nghiên cứu cách trẻ gắn bó khác nhau bằng "tình huống lạ" (strange situation).
 - **Phản bác thuyết "động cơ phái sinh":** Harlow (1958) mô tả quan điểm phổ biến rằng tình cảm là động cơ phái sinh từ việc giảm các động cơ sơ cấp như đói, khát. Ông lập luận rằng mô hình này không giải thích được sự bền bỉ của gắn bó, và dữ liệu mẹ vải – mẹ lưới thép (sữa không quyết định) là bằng chứng ông đưa ra.
 - **Giai đoạn nhạy cảm:** trong thí nghiệm 1958, bốn khỉ đối chứng chưa từng có mẹ giả được cho mẹ vải khi 250 ngày tuổi; sau 12–48 giờ khó chịu, chúng dần tiếp xúc với mẹ vải, nhưng thời gian bám mẹ vải tối đa chỉ khoảng một nửa nhóm nuôi từ đầu (Harlow lưu ý chưa biết nguyên nhân có phải do kinh nghiệm sớm không). Điều đó chưa đủ để kết luận về một "cửa sổ" phát triển.
@@ -105,7 +105,7 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu tương tự t
 - Chia đều thời gian cho hai mẹ.
 + Phần lớn thời gian bên mẹ vải, bất kể sữa ở mẹ nào.
 - Phần lớn thời gian bên mẹ có sữa, vì cần ăn.
-> Harlow thấy khỉ con ưa mẹ vải áp đảo; với những khỉ bú mẹ lưới thép, thời gian trên mẹ lưới thép còn giảm dần theo tuổi.
+> Harlow thấy khỉ con ưa mẹ vải áp đảo; với những khỉ bú mẹ lưới thép, thời gian trên mẹ vải còn tăng dần theo tuổi, còn thời gian trên mẹ lưới thép chỉ khoảng 1–2 giờ mỗi ngày.
 ? Khi bị làm cho sợ hãi, khỉ con chạy về phía ai?
 - Mẹ lưới thép, vì đó là nguồn sữa — nguồn sống.
 - Con nào cũng đứng yên tại chỗ, tê liệt vì sợ.
@@ -113,12 +113,12 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu tương tự t
 > Harlow dùng phản ứng khi sợ hãi làm một thước đo độ mạnh của sự gắn bó: khi bị làm sợ, khỉ con ưa mẹ vải hơn rõ rệt, kể cả khi sữa ở mẹ lưới thép.
 ? Khái niệm "contact comfort" (sự dễ chịu khi tiếp xúc) của Harlow có nghĩa là gì?
 - Khỉ con thích vải vì vải giữ ấm tốt hơn, đơn thuần là nhu cầu nhiệt độ.
-+ Nhu cầu được ôm ấp, tiếp xúc cơ thể mềm mại, ấm áp là một nhu cầu nguyên thủy, độc lập với nhu cầu ăn — và chính nó tạo nên sự gắn bó.
++ Nhu cầu được ôm ấp, tiếp xúc cơ thể mềm mại, ấm áp: theo Harlow, đó là biến số có tầm quan trọng áp đảo trong việc hình thành gắn bó của khỉ con, hơn hẳn việc cho bú.
 - Khỉ con học được rằng mẹ vải "thưởng" nhiều hơn mẹ sắt.
 > Harlow kết luận: sự dễ chịu khi tiếp xúc có "tầm quan trọng áp đảo" trong việc hình thành gắn bó, còn việc cho bú có "tầm quan trọng không đáng kể" — câu này nói về nguồn gốc tình cảm, không phải về dinh dưỡng.
 ? Điều nào sau đây là đánh giá đúng về mặt đạo đức của các thí nghiệm Harlow theo chuẩn hiện nay?
 - Vì phát hiện có giá trị nên toàn bộ phương pháp đều chấp nhận được.
-+ Giáo trình mở nói các thí nghiệm của Harlow ngày nay bị xem là phi đạo đức; công trình sau này của ông (nuôi khỉ trong cô lập hoàn toàn, thí nghiệm gây trầm cảm) còn bị chỉ trích dữ dội.
++ Giáo trình mở nói các thí nghiệm của Harlow ngày nay bị xem là phi đạo đức; công trình sau này của ông (nuôi khỉ trong cô lập hoàn toàn, thí nghiệm về trầm cảm) còn bị chỉ trích dữ dội.
 - Không có vấn đề đạo đức nào, vì đối tượng là động vật.
 > Khoa học hiện đại đánh giá cả phương pháp chứ không chỉ kết quả.
 ```

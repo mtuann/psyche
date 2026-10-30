@@ -8,8 +8,8 @@ in_duoc: true
 
 :::ho-so-nghien-cuu
 - **Tác giả, năm** B. F. Skinner (1938, 1948); Charles Ferster và B. F. Skinner (1957)
-- **Đối tượng** Chuột (sách 1938) và chủ yếu là bồ câu (thí nghiệm 1948 và sách 1957), bị giảm cân để đói có kiểm soát
-- **Thiết kế** Trong buồng thí nghiệm, con vật ấn cần gạt hoặc mổ phím để nhận thức ăn theo các lịch trình khác nhau; hành vi được ghi bằng máy ghi tích lũy
+- **Đối tượng** Chuột (sách 1938) và chủ yếu là bồ câu (thí nghiệm 1948 và sách 1957); trong thí nghiệm 1948, bồ câu bị giảm còn 75% cân nặng để đói có kiểm soát
+- **Thiết kế** Trong buồng thí nghiệm, con vật ấn cần gạt hoặc mổ phím để nhận thức ăn theo các lịch trình khác nhau; hành vi được ghi dưới dạng đường cong tích lũy
 - **Kết quả chính** Các lịch trình khác nhau tạo ra các mẫu hình hành vi khác nhau; trong thí nghiệm 1948, khi thức ăn đến theo đồng hồ bất kể bồ câu làm gì, 6 trong 8 con hình thành một động tác lặp lại
 :::
 
@@ -35,7 +35,7 @@ Và Skinner cùng Ferster mô tả điều tinh tế hơn: không phải cứ th
 
 **Thiết kế.** Burrhus Frederic Skinner bắt đầu chương trình nghiên cứu từ luận án tiến sĩ ở Harvard (1931); phần lớn các thí nghiệm trong sách 1938 ông làm khi là nghiên cứu viên ở Harvard. Ông dùng một buồng thí nghiệm (về sau được gọi là **"buồng thao tác"**, operant conditioning chamber, hay quen gọi là "hộp Skinner"). Bên trong, chuột đói có thể ấn một cần gạt để nhận viên thức ăn; với chim bồ câu thì mổ vào một đĩa phím. Hành vi được ghi dưới dạng đường cong tích lũy theo thời gian, nên độ dốc của đường cong cho biết tốc độ đáp ứng.
 
-**Kết quả.** Chuột đói học ấn cần để lấy thức ăn. Phát hiện quan trọng hơn của chương trình này: hành vi không chỉ phụ thuộc vào "có thưởng hay không", mà vào **cách** thưởng được sắp xếp. Skinner công bố trong cuốn sách đầu tay *The Behavior of Organisms* (1938, Appleton-Century), khi ông là phó giáo sư ở Đại học Minnesota, tổng kết nghiên cứu đã làm từ Harvard.
+**Kết quả.** Chuột đói học ấn cần để lấy thức ăn. Phát hiện quan trọng hơn của chương trình này: hành vi không chỉ phụ thuộc vào "có thưởng hay không", mà vào **cách** thưởng được sắp xếp. Skinner công bố trong cuốn sách đầu tay *The Behavior of Organisms* (1938, Appleton-Century), khi ông là trợ lý giáo sư (assistant professor) ở Đại học Minnesota, tổng kết nghiên cứu đã làm từ Harvard.
 
 ### Ferster & Skinner (1957): lịch trình củng cố
 
@@ -45,7 +45,7 @@ Bốn lịch trình cơ bản:
 
 - **Tỉ lệ cố định (FR):** thưởng sau mỗi N đáp ứng (ví dụ: cứ ấn 10 lần được 1 viên). Tốc độ cao nhưng có "quãng nghỉ" ngắn sau mỗi lần thưởng (theo OpenStax).
 - **Tỉ lệ biến đổi (VR):** thưởng sau trung bình N đáp ứng, con số cụ thể thay đổi ngẫu nhiên. Tốc độ cao, đều, và khó tắt dần nhất trong các lịch trình (theo OpenStax) — mẫu hình mà Skinner (1953) gắn với máy đánh bạc.
-- **Khoảng cố định (FI):** thưởng cho đáp ứng đầu tiên sau mỗi N giây/phút. Tạo đường cong "vỏ sò": nghỉ ngơi sau khi vừa được thưởng, rồi tăng tốc dồn dập khi gần đến giờ.
+- **Khoảng cố định (FI):** thưởng cho đáp ứng đầu tiên sau mỗi N giây/phút. Tạo đường cong "vỏ sò": nghỉ ngơi sau khi vừa được thưởng, rồi tăng tốc khi gần đến giờ.
 - **Khoảng biến đổi (VI):** thưởng cho đáp ứng đầu tiên sau khoảng thời gian thay đổi ngẫu nhiên. Tốc độ vừa phải, rất đều.
 
 ::hinh{ten="skinner-schedules"}
@@ -56,16 +56,16 @@ Skinner (1953) nêu rằng **củng cố ngắt quãng có thể tạo ra hành 
 
 Trong một thí nghiệm khác, Skinner cho chim bồ câu đói (giảm còn 75% cân nặng) ăn theo đồng hồ, ví dụ cứ 15 giây một lần, **bất kể chúng làm gì**. Ở 6 trong 8 con, một động tác lặp lại rõ rệt xuất hiện: con xoay ngược chiều kim đồng hồ, con thọc đầu vào một góc lồng, con có động tác "hất đầu", con đung đưa đầu và thân, con mổ về phía sàn mà không chạm. Skinner giải thích rằng con chim tình cờ đang làm động tác đó đúng lúc thức ăn xuất hiện nên có xu hướng lặp lại nó. Ông gọi đó là hành vi "mê tín" (*Journal of Experimental Psychology*, 1948) và so sánh với những nghi lễ cầu may của con người.
 
-*(Về đạo đức và phương pháp: trong thí nghiệm 1948, bồ câu được giảm còn 75% cân nặng để đói có kiểm soát. Theo chuẩn mực ngày nay, nghiên cứu trên động vật phải qua hội đồng đạo đức và tuân thủ nguyên tắc giảm thiểu đau đớn. Ngoài ra, việc suy từ chim bồ câu sang hành vi con người là bước nhảy cần thận trọng, và một lần làm lại thí nghiệm "mê tín" (Staddon và Simmelhag, 1971) cho thấy ngoài hành vi được củng cố tình cờ còn có những hoạt động xuất hiện ngay sau thức ăn, nên cách giải thích chỉ bằng củng cố tình cờ bị đặt câu hỏi.)*
+*(Về đạo đức và phương pháp: trong thí nghiệm 1948, bồ câu được giảm còn 75% cân nặng để đói có kiểm soát. Theo chuẩn mực ngày nay, chẳng hạn chính sách của cơ quan y tế công cộng Mỹ (PHS Policy), nghiên cứu trên động vật phải được hội đồng đạo đức duyệt và tránh hay giảm thiểu đau đớn. Ngoài ra, việc suy từ chim bồ câu sang hành vi con người là bước nhảy cần thận trọng, và một lần làm lại thí nghiệm "mê tín" (Staddon và Simmelhag, 1971) cho thấy ngoài hành vi được củng cố tình cờ còn có những hoạt động xuất hiện ngay sau thức ăn, nên cách giải thích chỉ bằng củng cố tình cờ bị đặt câu hỏi.)*
 
 ## Mức độ chắc chắn
 
-:::kha-vung[hậu quả làm thay đổi xác suất hành vi, và các lịch trình củng cố tạo ra mẫu hình ổn định]
-Giáo trình mở trình bày củng cố làm tăng tần suất hành vi, và các lịch trình tỉ lệ/khoảng, cố định/biến đổi tạo ra các mẫu hình đáp ứng đặc trưng; Ferster và Skinner (1957) ghi lại các mẫu hình ấy trên bồ câu và chuột trong nhiều năm. Trang này chưa dẫn được phân tích tổng hợp hay tái lập độc lập, và dữ liệu gốc chủ yếu là động vật, nên dừng ở "khá vững".
+:::vung-chac[hậu quả làm thay đổi xác suất hành vi; ở động vật thí nghiệm, các lịch trình củng cố tạo ra mẫu hình ổn định]
+Giáo trình mở trình bày củng cố làm tăng tần suất hành vi như kiến thức nền, và các lịch trình tỉ lệ/khoảng, cố định/biến đổi tạo ra các mẫu hình đáp ứng đặc trưng; Ferster và Skinner (1957) ghi lại các mẫu hình ấy trên bồ câu và chuột trong nhiều năm. Ở người, một phân tích tổng hợp 47 so sánh về "quản lý dự phòng" (contingency management), cách điều trị rối loạn dùng chất bằng phần thưởng có điều kiện, thấy hiệu quả trung bình d = 0,42 (Prendergast và cộng sự, 2006). Phần về mẫu hình của từng lịch trình chủ yếu dựa trên động vật.
 :::
 
 :::kha-vung[củng cố ngắt quãng có thể bền hơn củng cố liên tục]
-Skinner (1953) và giáo trình mở nêu hiện tượng này (tỉ lệ biến đổi khó tắt dần nhất; khoảng cố định dễ tắt dần nhất). Khi áp dụng ra đời thực (dạy con, quản lý nhân sự), còn nhiều yếu tố khác chen vào nên không thể suy thẳng từ chuột và bồ câu sang người.
+Skinner (1953) và giáo trình mở nêu hiện tượng này (theo giáo trình mở, tỉ lệ biến đổi khó tắt dần nhất). Khi áp dụng ra đời thực (dạy con, quản lý nhân sự), còn nhiều yếu tố khác chen vào nên không thể suy thẳng từ chuột và bồ câu sang người.
 :::
 
 :::tranh-cai[con người có phải cỗ máy củng cố? (quyết định luận và nhận thức)]
@@ -79,7 +79,7 @@ Quan điểm "mọi thứ đều là củng cố" bị phản biện mạnh: Cho
 ## Các lý thuyết giải thích
 
 - **Luật hiệu ứng (Thorndike):** Edward Thorndike (1911) nêu luật hiệu ứng: hành vi được theo sau bởi hậu quả thỏa mãn sinh vật sẽ dễ lặp lại hơn. Skinner lấy luật này làm nền tảng cho điều kiện hóa thao tác (theo OpenStax).
-- **Ba yếu tố (tình huống – hành vi – hậu quả):** Ferster và Skinner mô tả hành vi dưới sự kiểm soát của kích thích phân biệt (tình huống) và lịch trình củng cố (hậu quả). Đây là cách nhìn của nhóm Skinner, không phải kết luận đã được tổng hợp độc lập.
+- **Kích thích phân biệt và lịch trình củng cố:** Ferster và Skinner mô tả hành vi dưới sự kiểm soát của kích thích phân biệt (tình huống) và lịch trình củng cố (hậu quả). Đây là cách nhìn của nhóm Skinner, không phải kết luận đã được tổng hợp độc lập.
 - **Củng cố vs trừng phạt:** củng cố (dương tính: thêm điều dễ chịu; âm tính: bớt điều khó chịu) làm TĂNG hành vi; trừng phạt (thêm điều khó chịu, hoặc bớt điều dễ chịu) làm GIẢM hành vi. "Củng cố âm tính" không phải là phạt.
 - **Học quan sát và nhận thức (phản biện):** Bandura và các nhà tâm lý học nhận thức đề xuất thuyết học tập xã hội: con người còn học bằng cách quan sát người khác (mô hình), không cần trực tiếp nếm trải hậu quả (theo OpenStax).
 
@@ -98,7 +98,7 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên ng�
 
 - **"Củng cố âm tính là phạt."** Sai. Củng cố âm tính là **loại bỏ** điều khó chịu để tăng hành vi (ví dụ: tiếng "bíp" của dây an toàn dừng khi bạn thắt dây). Phạt làm giảm hành vi: thêm điều khó chịu hoặc bớt điều dễ chịu. Hai cơ chế ngược nhau.
 - **"Skinner nói con người chẳng khác gì chuột."** Ông áp dụng cách phân tích hành vi từ phòng thí nghiệm cho hành vi con người, nhưng Chomsky (1959) và các nhà tâm lý học nhận thức đã chỉ ra giới hạn của việc suy rộng này, đặc biệt với ngôn ngữ.
-- **"Thưởng càng nhiều càng tốt."** Giáo trình mở nêu thưởng liên tục giúp học hành vi mới nhanh; hành vi được thưởng ngắt quãng thường bền hơn khi thưởng ngừng. Việc phần thưởng vật chất có làm mòn động lực nội tại hay không là một tranh luận riêng mà trang này không đi sâu.
+- **"Thưởng càng nhiều càng tốt."** Giáo trình mở nêu thưởng liên tục giúp học hành vi mới nhanh; hành vi được thưởng ngắt quãng thường bền hơn khi thưởng ngừng.
 - **"'Hộp Skinner' là tên ông đặt."** Giáo trình mở cho biết thiết bị này là "buồng điều kiện hóa thao tác", về sau mới quen gọi là "hộp Skinner"; trong sách 1938, chính Skinner gọi là "experimental box".
 
 ## Thử suy ngẫm
@@ -113,7 +113,7 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên ng�
 - Khoảng cố định (FI) — thưởng theo giờ giấc đều đặn.
 + Tỉ lệ biến đổi (VR) — thưởng sau số lần đáp ứng thay đổi ngẫu nhiên, như máy đánh bạc.
 - Củng cố liên tục — thưởng mỗi lần.
-> Theo giáo trình mở, VR cho tốc độ cao, đều và khó tắt dần nhất; khoảng cố định (FI) cho tốc độ vừa phải và dễ tắt dần nhất. Củng cố liên tục giúp học hành vi mới nhanh.
+> Theo giáo trình mở, VR cho tốc độ cao, đều và khó tắt dần nhất; khoảng cố định (FI) cho tốc độ vừa phải, với quãng nghỉ sau mỗi lần thưởng. Củng cố liên tục giúp học hành vi mới nhanh.
 ? Thí nghiệm "mê tín ở chim bồ câu" (1948) cho thấy điều gì?
 - Bồ câu thông minh hơn chuột.
 + Một động tác tình cờ trùng đúng lúc thức ăn xuất hiện có thể được lặp lại, tạo thành một "nghi lễ" dù chẳng có quan hệ nhân quả nào.
@@ -141,4 +141,5 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên ng�
 - Thorndike, E. L. (1911). *Animal intelligence: Experimental studies*.
 - Staddon, J. E. R., & Simmelhag, V. L. (1971). The "superstition" experiment: A reexamination of its implications for the principles of adaptive behavior. *Psychological Review*, 78(1), 3–43. <https://doi.org/10.1037/h0030305>
 - Cotter, L. H. (1967). Operant conditioning in a Vietnamese mental hospital. *American Journal of Psychiatry*, 124(1), 23–28. <https://doi.org/10.1176/ajp.124.1.23>
+- Prendergast, M., Podus, D., Finney, J., Greenwell, L., & Roll, J. (2006). Contingency management for treatment of substance use disorders: A meta-analysis. *Addiction*, 101(11), 1546–1560. <https://doi.org/10.1111/j.1360-0443.2006.01581.x>
 - OpenStax (2020). *Psychology 2e*, mục 6.3 (Operant conditioning). <https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning>

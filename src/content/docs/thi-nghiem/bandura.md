@@ -29,7 +29,7 @@ Trong thí nghiệm gốc, hầu hết trẻ xem mẫu gây hấn **bắt chư�
 
 Đầu những năm 1960, nhiều nghiên cứu về học xã hội tập trung vào việc định hình hành vi bằng thưởng và phạt — học bằng "thử và trả giá" trực tiếp. Albert Bandura, nhà nghiên cứu tại Đại học Stanford, cho rằng hành vi mới còn có thể được học theo một con đường khác: **học quan sát** (observational learning) — nhìn người khác làm rồi bắt chước, không cần tự mình trải qua thưởng phạt.
 
-Thí nghiệm búp bê Bobo (1961) là một trong những minh chứng nổi tiếng nhất cho ý tưởng này. Nó cũng gắn với một câu hỏi mà đến nay vẫn còn tranh luận: *nếu trẻ bắt chước người lớn đánh búp bê, liệu chúng có bắt chước bạo lực trên màn hình thành bạo lực thật?*
+Thí nghiệm búp bê Bobo (1961) là một thí nghiệm nổi tiếng minh họa ý tưởng này. Nó cũng gắn với một câu hỏi mà đến nay vẫn còn tranh luận: *nếu trẻ bắt chước người lớn đánh búp bê, liệu chúng có bắt chước bạo lực trên màn hình thành bạo lực thật?*
 
 ## Nghiên cứu then chốt
 
@@ -45,7 +45,7 @@ Giả thuyết "trẻ bắt chước mẫu cùng giới nhiều hơn" chỉ đư
 
 ### Bandura, Ross & Ross (1963): mẫu trên phim cũng có tác dụng
 
-Một câu hỏi hiển nhiên: phải thấy người thật mới bắt chước, hay xem qua màn hình cũng đủ? Năm 1963, nhóm Bandura thử với 96 trẻ (48 trai, 48 gái), mỗi nhóm 24 trẻ: xem người thật gây hấn, xem chính những người đó gây hấn trên phim, xem nhân vật hoạt hình gây hấn trên phim, và nhóm đối chứng. Cả ba nhóm xem mẫu gây hấn nhiều hơn nhóm đối chứng (nhóm xem phim và phim hoạt hình gần gấp đôi); mức bắt chước không khác đáng kể giữa người thật và phim người thật. Nghiên cứu này nối thí nghiệm Bobo với câu hỏi về bạo lực trên màn hình (Bandura, Ross, & Ross, 1963).
+Một câu hỏi hiển nhiên: phải thấy người thật mới bắt chước, hay xem qua màn hình cũng đủ? Năm 1963, nhóm Bandura so sánh trẻ mẫu giáo xem người lớn gây hấn ngoài đời thật, xem chính những người đó gây hấn trên phim, và xem một người hóa trang thành mèo hoạt hình làm cùng những hành vi ấy trên màn hình, với trẻ không xem mẫu nào (Bandura, Ross, & Ross, 1963). Theo Bandura (1973) kể lại, người gây hấn trên phim dạy trẻ những kiểu gây hấn đặc trưng hiệu quả ngang người thật; trẻ ít bắt chước nhân vật hoạt hình hơn người thật; và trẻ xem các mẫu gây hấn về sau gây hấn nhiều hơn hẳn trẻ không xem mẫu. Nghiên cứu này nối thí nghiệm Bobo với câu hỏi về bạo lực trên màn hình.
 
 ### Bandura (1965): thưởng – phạt người mẫu thì sao?
 
@@ -59,10 +59,6 @@ Bài học (theo cách Bandura diễn giải): thưởng phạt dành cho ngư�
 Ba nghiên cứu của nhóm Bandura (1961, 1963, 1965) cùng chiều: trẻ tái hiện hành vi mới của người mẫu khi không ai thưởng cho trẻ, và thưởng ngay lúc quan sát không cần thiết cho việc học. Tuy vậy các nghiên cứu này do một nhóm làm, trên trẻ mẫu giáo ở một trường Mỹ, và chúng tôi chưa dẫn một phân tích tổng hợp riêng về học qua quan sát, nên xếp Khá vững chứ chưa phải Vững chắc.
 :::
 
-:::kha-vung[bé trai bắt chước gây hấn thể chất nhiều hơn bé gái, và mẫu nam có ảnh hưởng rõ hơn mẫu nữ]
-Trong thí nghiệm gốc, bé trai bắt chước gây hấn thể chất nhiều hơn bé gái, và hiệu ứng của mẫu nam rõ hơn mẫu nữ; nhưng giả thuyết "mẫu cùng giới" chỉ được ủng hộ một phần, các so sánh theo nhóm con dựa trên ô nhỏ (6 trẻ), và chúng tôi chưa dẫn lần lặp lại nào. Các tác giả giải thích rằng gây hấn là hành vi "nam tính" hơn trong mắt trẻ nên bé trai dễ bắt chước hơn; đó là giả thuyết của họ, thí nghiệm không tách riêng được.
-:::
-
 :::tranh-cai[kết quả có suy ra được bạo lực truyền thông gây bạo lực thật không?]
 Phân tích tổng hợp của Anderson và cộng sự (2010) về trò chơi điện tử bạo lực, so sánh Nhật Bản với các nước phương Tây, kết luận rằng tiếp xúc với trò chơi bạo lực là yếu tố nguy cơ nhân quả làm tăng hành vi, nhận thức và cảm xúc gây hấn, và ít thấy dấu hiệu thiên lệch xuất bản. Ferguson và Kilburn (2010) phản biện: phân tích ấy gộp nhiều nghiên cứu không liên quan tới gây hấn nghiêm trọng, có một mẫu nghiên cứu chưa công bố dường như thiên lệch, và dựa vào thước đo gây hấn không chuẩn hóa làm phồng hiệu ứng; theo họ, ước lượng r = 0,15 vẫn chỉ là hiệu ứng yếu, và khác với dữ liệu bạo lực thật ở giới trẻ. Cả hai bài bàn về trò chơi điện tử, không phải về thí nghiệm Bobo. Thí nghiệm Bobo cho thấy trẻ *có thể học* hành vi gây hấn từ quan sát; tác động lên bạo lực ngoài đời là một câu hỏi riêng, còn tranh luận.
 :::
@@ -70,14 +66,14 @@ Phân tích tổng hợp của Anderson và cộng sự (2010) về trò chơi �
 ## Các lý thuyết giải thích
 
 - **Học quan sát (Bandura):** khác với học bằng thử-sai trực tiếp, con người có thể học bằng cách nhìn người khác; Bandura và cộng sự cho rằng việc bắt chước có thể đi tắt việc củng cố từng bước.
-- **Bốn quá trình trung gian** (Bandura hệ thống hóa trong *Social Learning Theory*, 1977): để bắt chước được, trẻ phải **chú ý** đến mẫu, **ghi nhớ** những gì thấy, có khả năng **tái hiện** bằng cơ thể, và có **động cơ** để làm theo (ví dụ thấy mẫu được thưởng). Thiếu một trong bốn, việc bắt chước đứt gãy.
+- **Bốn bước của việc học theo mẫu** (Bandura mô tả, theo giáo trình mở OpenStax *Psychology 2e*): để bắt chước được, người học phải **chú ý** đến mẫu, **ghi nhớ** những gì thấy, có khả năng **tái hiện** hành vi đó, và có **động cơ** để làm theo (ví dụ thấy mẫu được thưởng). Theo giáo trình, đó là các bước phải có thì việc học theo mẫu mới thành công.
 - **Củng cố gián tiếp (vicarious reinforcement):** thấy người khác được thưởng thì mình muốn làm theo; thấy bị phạt thì dè chừng — nhưng như thí nghiệm 1965 cho thấy, dè chừng không có nghĩa là không học.
 - **Kỳ vọng về chuẩn mực giới (giả thuyết của Bandura và cộng sự):** gây hấn là hành vi "nam tính" hơn, nên bé trai dễ bắt chước gây hấn hơn, nhất là từ mẫu nam; thí nghiệm chỉ ủng hộ giả thuyết này một phần.
 
 ## Áp dụng vào đời sống
 
 - **Trẻ có thể học từ những gì ta *làm*, không cần ai dạy.** Thí nghiệm cho thấy trẻ tái hiện hành vi người lớn mà không ai bảo hay thưởng. Nếu cha mẹ dặn "không được đánh bạn" nhưng chính mình quát tháo, đập bàn khi tức giận, trẻ có thể học theo điều thấy. Muốn dạy con kiềm chế, một cách hợp lý là tự làm mẫu trước mặt con (suy ra từ cơ chế; thí nghiệm không thử cách dạy con).
-- **Để ý những "người mẫu" của con:** thầy cô, huấn luyện viên, nhân vật trong phim ảnh — nhóm Bandura thấy mẫu trên phim cũng làm tăng gây hấn ở trẻ trong phòng thí nghiệm. Không cần cấm đoán cực đoan, nhưng nên biết con đang xem ai.
+- **Để ý những "người mẫu" của con:** thầy cô, huấn luyện viên, nhân vật trong phim ảnh — nhóm Bandura thấy mẫu trên phim cũng làm tăng gây hấn ở trẻ trong phòng thí nghiệm. Vì vậy biết con đang xem ai là hợp lý (suy ra từ cơ chế; thí nghiệm không thử cách dạy con).
 - **Hành vi bình tĩnh cũng là một "mẫu".** Trẻ xem người lớn chơi hiền lành không gây hấn nhiều hơn trẻ không xem gì (có thể ít hơn khi mẫu là nam). Vì vậy cho trẻ thấy người lớn xử lý bực bội một cách bình tĩnh là một cách dạy khả dĩ; thí nghiệm này không đo trực tiếp điều đó.
 - **Truyền thông cũng là nguồn mẫu:** vì trẻ có thể học từ mẫu trên phim, chọn nội dung và trò chuyện cùng trẻ về những gì chúng xem là hợp lý; thí nghiệm không cho biết tác động lên hành vi ngoài đời.
 
@@ -85,7 +81,7 @@ Phân tích tổng hợp của Anderson và cộng sự (2010) về trò chơi �
 
 Tính đến 10/2026, chúng tôi **chưa tìm thấy** bản lặp lại thí nghiệm Bobo trên trẻ em Việt Nam, và cũng chưa tìm thấy dữ liệu thực nghiệm về mức độ trẻ Việt bắt chước hành vi gây hấn từ người mẫu. Không có dữ liệu thì không suy diễn.
 
-Về tranh luận bạo lực trong trò chơi điện tử: Anderson và cộng sự (2010) so sánh Nhật Bản với các nước phương Tây, không báo cáo riêng mẫu Việt Nam. Việc áp dụng các kết luận đó vào bối cảnh Việt Nam — với đặc điểm gia đình, nhà trường và thói quen dùng thiết bị số rất khác — cần thận trọng và cần nghiên cứu trong nước.
+Về tranh luận bạo lực trong trò chơi điện tử: Anderson và cộng sự (2010) so sánh Nhật Bản với các nước phương Tây, không báo cáo riêng mẫu Việt Nam. Việc áp dụng các kết luận đó vào bối cảnh Việt Nam cần thận trọng và cần nghiên cứu trong nước.
 
 ## Ngộ nhận liên quan
 
@@ -127,7 +123,8 @@ Về tranh luận bạo lực trong trò chơi điện tử: Anderson và cộng
 
 - Bandura, A., Ross, D., & Ross, S. A. (1961). Transmission of aggression through imitation of aggressive models. *Journal of Abnormal and Social Psychology*, 63(3), 575–582. <https://doi.org/10.1037/h0045925>
 - Bandura, A., Ross, D., & Ross, S. A. (1963). Imitation of film-mediated aggressive models. *Journal of Abnormal and Social Psychology*, 66(1), 3–11.
+- Bandura, A. (1973). *Aggression: A social learning analysis* (tr. 68–74). Englewood Cliffs, NJ: Prentice-Hall.
 - Bandura, A. (1965). Influence of models' reinforcement contingencies on the acquisition of imitative responses. *Journal of Personality and Social Psychology*, 1(6), 589–595. <https://doi.org/10.1037/h0022070>
-- Bandura, A. (1977). *Social learning theory*. Englewood Cliffs, NJ: Prentice Hall.
+- OpenStax (2020). *Psychology 2e*, mục 6.4 (Observational learning (modeling)). <https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling>
 - Anderson, C. A., Shibuya, A., Ihori, N., Swing, E. L., Bushman, B. J., Sakamoto, A., Rothstein, H. R., & Saleem, M. (2010). Violent video game effects on aggression, empathy, and prosocial behavior in Eastern and Western countries: A meta-analytic review. *Psychological Bulletin*, 136(2), 151–173. <https://doi.org/10.1037/a0018251>
 - Ferguson, C. J., & Kilburn, J. (2010). Much ado about nothing: The misestimation and overinterpretation of violent video game effects in Eastern and Western nations: Comment on Anderson et al. (2010). *Psychological Bulletin*, 136(2), 174–178. <https://doi.org/10.1037/a0018566>

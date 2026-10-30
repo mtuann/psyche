@@ -54,15 +54,15 @@ Một phát hiện khác cũng đáng nhớ: trong một thí nghiệm nhỏ v�
 ## Mức độ chắc chắn
 
 :::kha-vung[cách trẻ hướng sự chú ý trong lúc chờ làm thay đổi khả năng chờ đợi]
-Các thí nghiệm năm 1972 thao tác trực tiếp điều kiện (đồ chơi, gợi ý nghĩ chuyện vui hay nghĩ về phần thưởng, che phần thưởng) và thấy thời gian chờ thay đổi rõ rệt. Đây là kết quả nhân quả từ thí nghiệm, không phải tương quan. Nhưng mẫu nhỏ (mỗi nhóm khoảng 6–10 trẻ, tất cả ở một trường mầm non), và trang này chưa dẫn được phân tích tổng hợp hay tái lập lớn, nên dừng ở "khá vững".
+Các thí nghiệm năm 1972 thao tác trực tiếp điều kiện (đồ chơi, gợi ý nghĩ chuyện vui hay nghĩ về phần thưởng, che phần thưởng) và thấy thời gian chờ thay đổi rõ rệt. Đây là kết quả nhân quả từ thí nghiệm, không phải tương quan. Nhưng mẫu nhỏ (mỗi nhóm khoảng 4–10 trẻ, tất cả ở một trường mầm non), và trang này chưa dẫn được phân tích tổng hợp hay tái lập lớn, nên dừng ở "khá vững".
 :::
 
 :::kha-vung[thời gian chờ đợi tương quan với một số kết quả tuổi teen trong mẫu gốc]
 Tương quan có trong dữ liệu của Mischel và cộng sự, và lần làm lại năm 2018 cũng thấy một tương quan đơn giản (nhỏ hơn). Nhưng mẫu gốc nhỏ, đặc thù (cộng đồng Đại học Stanford), và các tương quan gốc chưa loại trừ các yếu tố gây nhiễu. "Khá vững" cho sự tồn tại của tương quan, không cho cách diễn giải.
 :::
 
-:::tranh-cai["viên kẹo dẻo đo ý chí và định đoạt tương lai"]
-Cách kể quyết định luận — chờ được thì thành công, không chờ được thì hỏng — không được bằng chứng ủng hộ. Lần làm lại 2018 (một nghiên cứu, mẫu lớn và đa dạng hơn) cho thấy mối liên hệ chỉ bằng khoảng một nửa bản gốc và giảm thêm khoảng hai phần ba khi tính đến hoàn cảnh gia đình; bài viết đó gợi ý rằng mối liên hệ có thể do các yếu tố như hoàn cảnh kinh tế–xã hội và môi trường nuôi dạy. Mức độ chắc chắn dừng ở "đang tranh cãi" vì chúng tôi chưa dẫn được nhiều lần làm lại độc lập; điều chắc là kết luận quyết định luận vượt xa bằng chứng.
+:::bac-bo[thời gian chờ kẹo dẻo lúc nhỏ "định đoạt" tương lai]
+Cách kể quyết định luận — chờ được thì thành công, không chờ được thì hỏng — không đứng vững trước các lần kiểm tra về sau. Lần làm lại 2018 cho thấy mối liên hệ chỉ bằng khoảng một nửa bản gốc và giảm thêm khoảng hai phần ba khi tính đến hoàn cảnh gia đình (Watts, Duncan và Quan, 2018). Hai phân tích có đăng ký trước (pre-registered) còn đi xa hơn: ở 113 người của chính các nghiên cứu trường Bing, khi đã gần 50 tuổi, thời gian chờ lúc mẫu giáo không dự đoán được 11 chỉ số tài chính và học vấn (tương quan trung bình 0,02; Benjamin và cộng sự, 2020); ở 702 người của mẫu NICHD, khi 26 tuổi, kết quả bài thử không dự đoán ổn định thành tích, sức khỏe hay hành vi (Sperber và cộng sự, 2024). Thời gian chờ có tương quan nhỏ với một số kết quả về sau (khung trên), nhưng không định đoạt tương lai.
 :::
 
 ## Các lý thuyết giải thích
@@ -99,7 +99,7 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu kẹo dẻo tr
 - Trẻ chờ lâu hơn chắc chắn thành công hơn — đã chứng minh nhân quả.
 + Thời gian chờ đợi ở tuổi mẫu giáo tương quan với điểm SAT và đánh giá ứng phó ở tuổi teen — nhưng đó là tương quan trong một mẫu nhỏ, đặc thù (trường Bing, Stanford).
 - Không có mối liên hệ nào cả.
-> Tương quan không phải nhân quả (xem bài [tương quan và nhân quả](/psyche/bang-chung/tuong-quan-nhan-qua/)), và mẫu nghiên cứu toàn con em trí thức Stanford.
+> Tương quan không phải nhân quả (xem bài [tương quan và nhân quả](/psyche/bang-chung/tuong-quan-nhan-qua/)), và mẫu nghiên cứu là trẻ từ cộng đồng Đại học Stanford (trường Bing).
 ? Lần làm lại của Watts, Duncan và Quan (2018) với 918 trẻ cho thấy gì?
 - Hiệu ứng mạnh hơn bản gốc.
 + Tương quan chỉ còn khoảng một nửa bản gốc, và giảm thêm khoảng hai phần ba khi tính đến nền tảng gia đình, năng lực nhận thức sớm và môi trường gia đình.
@@ -125,4 +125,6 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu kẹo dẻo tr
 - Metcalfe, J., & Mischel, W. (1999). A hot/cool-system analysis of delay of gratification: Dynamics of willpower. *Psychological Review*, 106(1), 3–19. <https://doi.org/10.1037/0033-295X.106.1.3>
 - Shoda, Y., Mischel, W., & Peake, P. K. (1990). Predicting adolescent cognitive and self-regulatory competencies from preschool delay of gratification: Identifying diagnostic conditions. *Developmental Psychology*, 26(6), 978–986.
 - Watts, T. W., Duncan, G. J., & Quan, H. (2018). Revisiting the marshmallow test: A conceptual replication investigating links between early delay of gratification and later outcomes. *Psychological Science*, 29(7), 1159–1177. <https://doi.org/10.1177/0956797618761661>
+- Benjamin, D. J., Laibson, D., Mischel, W., Peake, P. K., Shoda, Y., Wellsjo, A. S., & Wilson, N. L. (2020). Predicting mid-life capital formation with pre-school delay of gratification and life-course measures of self-regulation. *Journal of Economic Behavior & Organization*, 179, 743–756. <https://doi.org/10.1016/j.jebo.2019.08.016>
+- Sperber, J. F., Vandell, D. L., Duncan, G. J., & Watts, T. W. (2024). Delay of gratification and adult outcomes: The Marshmallow Test does not reliably predict adult functioning. *Child Development*, 95(6), 2015–2029. <https://doi.org/10.1111/cdev.14129>
 - Kidd, C., Palmeri, H., & Aslin, R. N. (2013). Rational snacking: Young children's decision-making on the marshmallow task is moderated by beliefs about environmental reliability. *Cognition*, 126(1), 109–114. <https://doi.org/10.1016/j.cognition.2012.08.004>

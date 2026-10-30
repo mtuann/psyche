@@ -38,11 +38,9 @@ Chúng ta thường nghĩ cảm xúc đi từ trong ra ngoài: buồn thì khóc
 
 **Kết quả.** Ở điều kiện vui vẻ, nhóm tiêm adrenaline **không được báo trước** và nhóm **bị báo sai** tự báo cáo vui hơn nhóm được báo đúng (điểm 1,78 và 1,90, so với 0,98) và có xu hướng hành động hưng phấn hơn (chênh lệch về hành động chỉ đạt ý nghĩa thống kê với nhóm bị báo sai). Ở điều kiện giận dữ, chỉ số hành vi của nhóm không được báo trước cao hơn hẳn nhóm được báo đúng (+2,28 so với −0,18); tự báo cáo cùng chiều nhưng chưa đạt mức ý nghĩa, và các tác giả cho biết người tham gia ngại lộ giận trước người thí nghiệm. Nhóm **được báo đúng** ít bị cuốn theo: họ đã có lời giải thích cho cơn tim đập nhanh. Nhóm giả dược nằm giữa các nhóm; chênh lệch với nhóm epinephrine không có ý nghĩa thống kê ở điều kiện vui vẻ, và các tác giả gọi kết quả này là "đáng lo" cho lý thuyết, nên phải dùng phân tích phụ (loại những người tự gán triệu chứng cho mũi tiêm) và gọi kết luận của mình là dè dặt. Ba mệnh đề của lý thuyết ra đời từ đây: (a) kích thích không rõ nguyên nhân sẽ được dán nhãn theo nhận thức sẵn có; (b) kích thích đã có lời giải thích thỏa đáng thì không cần dán nhãn thêm; (c) cùng một bối cảnh nhận thức, cảm xúc chỉ xuất hiện khi có kích thích sinh lý ([Schachter và Singer, 1962](https://doi.org/10.1037/h0046234)).
 
-### Marshall và Zimbardo (1979): làm lại điều kiện vui vẻ — thất bại
+### Marshall và Zimbardo (1979), Maslach (1979): thử lại năm 1979
 
-**Thiết kế.** Gary Marshall và Philip Zimbardo thử làm lại phần điều kiện vui vẻ: người tham gia tiêm epinephrine hoặc giả dược rồi ngồi cùng diễn viên vui vẻ. Chúng tôi chưa mở được toàn văn bài này nên không nêu chi tiết thiết kế.
-
-**Kết quả.** Theo các tổng kết thứ cấp, hành vi của diễn viên vui vẻ ít ảnh hưởng đến người tham gia, trái với kết quả gốc, và kích thích không rõ nguyên nhân có xu hướng nghiêng về cảm xúc **tiêu cực** hơn là trung tính. Một nghiên cứu cùng năm của Maslach cũng được mô tả theo hướng tương tự ([Maslach, 1979](https://doi.org/10.1037/0022-3514.37.6.953)); chúng tôi chưa đọc được bài gốc của cả hai.
+Năm 1979, cùng một số của *Journal of Personality and Social Psychology* đăng hai bài thử lại ý tưởng của Schachter và Singer: bài của Gary Marshall và Philip Zimbardo về hệ quả cảm xúc của kích thích sinh lý không được giải thích thỏa đáng ([Marshall và Zimbardo, 1979](https://doi.org/10.1037/0022-3514.37.6.970)), và bài của Christina Maslach, mà tên bài đã nói kết quả: kích thích không được giải thích bị "nghiêng" về cảm xúc tiêu cực ([Maslach, 1979](https://doi.org/10.1037/0022-3514.37.6.953)). Schachter và Singer viết bài phản hồi trong cùng số ([Schachter và Singer, 1979](https://doi.org/10.1037/0022-3514.37.6.989)). Chúng tôi chưa mở được toàn văn ba bài này, nên không kể thiết kế và số liệu.
 
 ### Reisenzein (1983): tổng quan sau hai thập kỷ — chỉ còn phiên bản "pha loãng"
 
@@ -59,16 +57,15 @@ Chúng ta thường nghĩ cảm xúc đi từ trong ra ngoài: buồn thì khóc
 ## Mức độ chắc chắn
 
 :::kha-vung[kích thích từ nguồn khác, bị quy nhầm cho một tình huống cảm xúc, có thể làm mạnh thêm cảm xúc]
-Reisenzein (1983) kết luận đây là suy luận duy nhất của lý thuyết được dữ liệu ủng hộ đầy đủ, và nghiên cứu cầu treo của Dutton và Aron (1974) là một ví dụ hiện trường. Đánh giá "khá vững" vì căn cứ chủ yếu là một tổng quan kể chuyện từ năm 1983, chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước mà chúng tôi mở được.
+Reisenzein (1983) kết luận đây là suy luận duy nhất của lý thuyết được dữ liệu ủng hộ đầy đủ, và nghiên cứu cầu treo của Dutton và Aron (1974) là một ví dụ hiện trường. Một phân tích tổng hợp về kích thích và sự hấp dẫn (Foster và cộng sự, 1998) thấy kích thích làm tăng sự hấp dẫn ngay cả khi nguồn kích thích khá rõ ràng; phần tổng quan đi kèm trong cùng bài gợi ý tác động mạnh hơn khi nguồn kích thích mơ hồ. Đánh giá "khá vững" vì phân tích tổng hợp ấy chỉ về sự hấp dẫn, các nghiên cứu đã cũ, và chính nó cho thấy việc quy nhầm nguồn chưa phải toàn bộ cơ chế.
 :::
 
 :::tranh-cai[phiên bản mạnh của lý thuyết hai nhân tố]
-Tuyên bố gốc — cảm xúc là kích thích sinh lý chung chung cộng với một cái nhãn do hoàn cảnh gợi ra — chưa được chứng minh: Reisenzein (1983) không thấy bằng chứng thuyết phục rằng kích thích là điều kiện cần hay rằng dán nhãn có thể tạo ra cảm xúc; tổng quan của Cotton (1981) kết luận lý thuyết chưa được nghiên cứu ủng hộ tốt nhưng bằng chứng cũng chưa chắc đã bác nó ([Cotton, 1981](https://doi.org/10.1002/ejsp.2420110403)); và theo các tổng kết thứ cấp, hai nghiên cứu năm 1979 (Marshall và Zimbardo; Maslach) không lặp lại hiệu ứng gốc.
+Tuyên bố gốc — cảm xúc là kích thích sinh lý chung chung cộng với một cái nhãn do hoàn cảnh gợi ra — chưa được chứng minh: Reisenzein (1983) không thấy bằng chứng thuyết phục rằng kích thích là điều kiện cần hay rằng dán nhãn có thể tạo ra cảm xúc; tổng quan của Cotton (1981) kết luận lý thuyết chưa được nghiên cứu ủng hộ tốt nhưng bằng chứng cũng chưa chắc đã bác nó ([Cotton, 1981](https://doi.org/10.1002/ejsp.2420110403)).
 :::
 
 ## Các lý thuyết giải thích
 
-- **Hai nhân tố (Schachter & Singer):** cảm xúc = kích thích sinh lý + nhãn nhận thức. Cùng một cơn tim đập nhanh, nhãn "vui" cho ra phấn khích, nhãn "nguy hiểm" cho ra sợ hãi.
 - **Hai nhân tố (Schachter & Singer):** cảm xúc = kích thích sinh lý + nhãn nhận thức. Theo hai tác giả, cùng một trạng thái kích thích có thể thành "vui" hay "giận" tùy hoàn cảnh.
 - **James–Lange (cổ điển):** theo James (1890), thay đổi của cơ thể đi liền sau việc nhận ra sự kiện, và cảm giác về những thay đổi ấy chính là cảm xúc. Schachter và Singer giữ lại phần cơ thể nhưng thêm rằng cần có thêm nhận thức phù hợp.
 - **Cannon (phản biện):** Cannon (1929) phê bình James–Lange, chẳng hạn rằng động vật bị cắt hệ giao cảm vẫn có hành vi cảm xúc; Schachter và Singer thừa nhận phê bình này cũng áp dụng cho mệnh đề thứ ba của họ.
@@ -89,7 +86,7 @@ Chúng tôi không có nguồn nào cho biết cách gọi tên cảm xúc ở n
 ## Ngộ nhận liên quan
 
 - **"Thí nghiệm chứng minh cảm xúc chỉ là tưởng tượng, cơ thể không quan trọng."** Ngược lại: lý thuyết hai nhân tố coi kích thích sinh lý là một thành phần của cảm xúc mạnh, dù Reisenzein (1983) không thấy bằng chứng thuyết phục rằng nó là điều kiện cần.
-- **"Tim đập nhanh khi gặp ai đó nghĩa là mình yêu người ta."** Có thể chỉ là cà phê, cầu thang bộ, hay sự lo lắng bị dán nhầm nhãn. Đừng ra quyết định lớn dựa trên một cơn kích thích chưa rõ nguồn gốc.
+- **"Tim đập nhanh khi gặp ai đó nghĩa là mình yêu người ta."** Không nhất thiết. Theo phân tích tổng hợp của Foster và cộng sự (1998), kích thích từ một nguồn khác cũng có thể làm ta thấy người kia hấp dẫn hơn; cảm giác tim đập nhanh tự nó chưa nói được ta cảm thấy gì về người ấy.
 - **"Có thể điều khiển cảm xúc người khác dễ dàng bằng cách tạo kích thích."** Phiên bản mạnh của lý thuyết chưa được chứng minh; điều được tổng quan năm 1983 xem là có đủ bằng chứng chỉ là kích thích có thể làm mạnh thêm cảm xúc sẵn có.
 - **"Lý thuyết bị phê bình nên vứt đi."** Không hẳn. Điều bị thách thức là phiên bản mạnh và một số kết quả gốc; phần mà Reisenzein (1983) xem là có đủ bằng chứng — kích thích bị quy nhầm nguồn làm mạnh thêm cảm xúc — vẫn còn.
 
@@ -106,11 +103,6 @@ Chúng tôi không có nguồn nào cho biết cách gọi tên cảm xúc ở n
 + Vì họ đã có lời giải thích thỏa đáng cho cơn kích thích ("đó là do thuốc"), nên não không cần tìm nhãn từ môi trường.
 - Vì họ ngồi phòng khác với diễn viên.
 > Đây chính là mệnh đề (b) của lý thuyết: kích thích đã có lời giải thích phù hợp thì không phát sinh nhu cầu đánh giá thêm.
-? Marshall và Zimbardo (1979) khi làm lại điều kiện vui vẻ đã phát hiện gì?
-- Kết quả giống hệt bản gốc, củng cố lý thuyết.
-+ Theo các tổng kết thứ cấp, hành vi của diễn viên vui vẻ ít ảnh hưởng đến người tham gia, không như kết quả gốc.
-- Adrenaline không gây ra bất kỳ kích thích sinh lý nào.
-> Đây là một trong những lý do khiến phiên bản mạnh của lý thuyết hai nhân tố bị đặt dấu hỏi.
 ? Sau hai thập kỷ bằng chứng, Reisenzein (1983) kết luận điều gì còn đứng vững?
 - Toàn bộ lý thuyết hai nhân tố được chứng minh đầy đủ.
 + Chỉ còn phiên bản "pha loãng": kích thích bị quy kết nhầm nguồn làm mạnh thêm cảm xúc; không có bằng chứng thuyết phục rằng kích thích là điều kiện cần của cảm xúc.
@@ -130,4 +122,6 @@ Chúng tôi không có nguồn nào cho biết cách gọi tên cảm xúc ở n
 - Reisenzein, R. (1983). The Schachter theory of emotion: Two decades later. *Psychological Bulletin*, 94(2), 239–264. <https://doi.org/10.1037/0033-2909.94.2.239>
 - Dutton, D. G., & Aron, A. P. (1974). Some evidence for heightened sexual attraction under conditions of high anxiety. *Journal of Personality and Social Psychology*, 30(4), 510–517. <https://doi.org/10.1037/h0037031>
 - Cotton, J. L. (1981). A review of research on Schachter's theory of emotion and the misattribution of arousal. *European Journal of Social Psychology*, 11(4), 365–397. <https://doi.org/10.1002/ejsp.2420110403>
+- Schachter, S., & Singer, J. E. (1979). Comments on the Maslach and Marshall-Zimbardo experiments. *Journal of Personality and Social Psychology*, 37(6), 989–995. <https://doi.org/10.1037/0022-3514.37.6.989>
+- Foster, C. A., Witcher, B. S., Campbell, W. K., & Green, J. D. (1998). Arousal and attraction: Evidence for automatic and controlled processes. *Journal of Personality and Social Psychology*, 74(1), 86–101. <https://doi.org/10.1037/0022-3514.74.1.86>
 - Maslach, C. (1979). Negative emotional biasing of unexplained arousal. *Journal of Personality and Social Psychology*, 37(6), 953–969. <https://doi.org/10.1037/0022-3514.37.6.953>
