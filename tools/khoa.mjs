@@ -32,7 +32,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { parse, parseDocument, stringify } from 'yaml';
 import { NHAN, loaiTrang, schema } from '../src/du-lieu.mjs';
-import { GOC, chuanKhoaBanGhi, docBanGhi, docKhoa, fileTrang, maBamKhoaBanGhi, maBamTrang, tachKhoaBanGhi } from '../src/khoa.mjs';
+import { GOC, chuanKhoaBanGhi, docBanGhi, docKhoa, fileTrang, maBamKhoaBanGhi, maBamTrangFile, tachKhoaBanGhi } from '../src/khoa.mjs';
 import { CONG_CU, THU_MUC_HINH } from '../src/plugins/thanh-phan.mjs';
 
 /** Kết quả lượt 1 của một nhận định (chuan-kiem-dinh.md mục 6). */
@@ -106,7 +106,7 @@ function maBamMuc(muc, goc) {
 	}
 	const f = fileTrang(muc, goc);
 	if (!fs.existsSync(f)) throw new Error(`không có trang ${path.relative(goc, f)}`);
-	return maBamTrang(fs.readFileSync(f, 'utf8'));
+	return maBamTrangFile(f, goc);
 }
 
 function ghiKhoa(khoa, goc) {

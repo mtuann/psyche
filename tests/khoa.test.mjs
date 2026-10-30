@@ -9,7 +9,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { parse, stringify } from 'yaml';
 import { locTheoBan } from '../src/ban-build.mjs';
-import { chuanHoaTrang, docKhoa, jsonChuan, kiemKhoa, maBamBanGhi, maBamTrang } from '../src/khoa.mjs';
+import { chuanHoaTrang, docKhoa, jsonChuan, kiemKhoa, maBamBanGhi, maBamTrang, maBamTrangFile } from '../src/khoa.mjs';
 import { MAU_MO_RONG, lenh, loiHoSo } from '../tools/khoa.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -24,6 +24,21 @@ test('mã băm của trang không đổi theo Unicode tổ hợp hay dựng sẵ
 	assert.match(maBamTrang(goc), /^sha256:[0-9a-f]{64}$/);
 	assert.equal(maBamBanGhi({ id: 'x', ten: 'A' }), maBamBanGhi({ ten: 'A', id: 'x' }));
 	assert.equal(jsonChuan({ b: 1, a: { d: [2, { y: 1, x: 2 }] } }), '{"a":{"d":[2,{"x":2,"y":1}]},"b":1}');
+});
+
+test('mã băm của trang gồm cả hình tĩnh ::hinh của trang: sửa hình là đổi mã băm; trang không hình thì như nguồn', () => {
+	const goc = fs.mkdtempSync(path.join(os.tmpdir(), 'psyche-hinh-'));
+	fs.mkdirSync(path.join(goc, 'src', 'hinh'), { recursive: true });
+	const f = path.join(goc, 'trang.md');
+	fs.writeFileSync(f, '---\ntitle: A\n---\n\n::hinh{ten="x"}\n');
+	fs.writeFileSync(path.join(goc, 'src', 'hinh', 'x.html'), '<figure>65%</figure>\n');
+	const truoc = maBamTrangFile(f, goc);
+	assert.notEqual(truoc, maBamTrang(fs.readFileSync(f, 'utf8')));
+	fs.writeFileSync(path.join(goc, 'src', 'hinh', 'x.html'), '<figure>79%</figure>\n');
+	assert.notEqual(maBamTrangFile(f, goc), truoc, 'sửa số trong hình thì mã băm đổi');
+	fs.writeFileSync(f, '---\ntitle: A\n---\n\nChữ.\n');
+	assert.equal(maBamTrangFile(f, goc), maBamTrang('---\ntitle: A\n---\n\nChữ.\n'));
+	fs.rmSync(goc, { recursive: true });
 });
 
 test('mọi mục trong kiem-dinh/khoa.json còn khớp mã băm và có hồ sơ đủ; trang 404 luôn khóa', () => {

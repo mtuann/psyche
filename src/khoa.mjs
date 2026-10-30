@@ -27,6 +27,20 @@ export const chuanHoaTrang = (chu) =>
 
 export const maBamTrang = (chu) => maBam(chuanHoaTrang(chu));
 
+/**
+ * Mã băm của trang như lúc khóa: nguồn Markdown, cộng nội dung từng hình tĩnh ::hinh{ten="x"} mà trang dùng
+ * (src/hinh/x.html, theo thứ tự trong trang), để chữ và số trong hình cũng được khóa (D3-L1). Trang không có hình thì mã
+ * băm như maBamTrang của riêng nguồn.
+ */
+export function maBamTrangFile(f, goc = GOC) {
+	const chu = fs.readFileSync(f, 'utf8');
+	const hinh = [...chu.matchAll(/^::hinh\{[^}]*\bten="([^"]*)"/gm)].map(([, ten]) => {
+		const fh = path.join(goc, 'src', 'hinh', `${ten}.html`);
+		return fs.existsSync(fh) ? `\n<!-- hinh:${ten} -->\n${fs.readFileSync(fh, 'utf8')}` : '';
+	});
+	return maBamTrang(chu + hinh.join(''));
+}
+
 /** JSON của bản ghi với khóa xếp theo chữ cái ở mọi cấp, không khoảng trắng. */
 export const jsonChuan = (x) =>
 	JSON.stringify(x, (_, v) => (v && typeof v === 'object' && !Array.isArray(v) ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))) : v));
@@ -122,7 +136,7 @@ export function kiemKhoa(goc = GOC) {
 	for (const [t, ma] of Object.entries(trang)) {
 		const f = fileTrang(t, goc);
 		if (!fs.existsSync(f)) loi.push(`trang ${t} đã khóa nhưng không còn file ${path.relative(goc, f)}`);
-		else if (maBamTrang(fs.readFileSync(f, 'utf8')) !== ma) loi.push(`trang ${t} đã khóa mà nội dung đã đổi (mã băm lệch); ${cachMo(t)}`);
+		else if (maBamTrangFile(f, goc) !== ma) loi.push(`trang ${t} đã khóa mà nội dung đã đổi (mã băm lệch, tính cả hình của trang); ${cachMo(t)}`);
 	}
 	for (const [k, ma] of Object.entries(ban_ghi)) {
 		const moi = maBamKhoaBanGhi(k, goc, nho);
