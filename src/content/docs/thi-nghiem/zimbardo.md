@@ -1,6 +1,6 @@
 ---
 title: Nhà tù giả thành tù thật? (Thí nghiệm Zimbardo)
-description: Thí nghiệm nhà tù Stanford (1971): 24 sinh viên được chọn bốc thăm vai cai tù và tù nhân trong một nhà tù dựng ở tầng hầm (21 người tham gia), dự kiến 2 tuần nhưng phải dừng sau 6 ngày, rồi trở thành một trong những nghiên cứu nổi tiếng và bị tranh cãi nhiều nhất của tâm lý học.
+description: 'Thí nghiệm nhà tù Stanford (1971): 24 sinh viên được chọn bốc thăm vai cai tù và tù nhân trong một nhà tù dựng ở tầng hầm (21 người tham gia), dự kiến 2 tuần nhưng phải dừng sau 6 ngày, rồi trở thành một trong những nghiên cứu nổi tiếng và bị tranh cãi nhiều nhất của tâm lý học.'
 in_duoc: true
 ---
 
