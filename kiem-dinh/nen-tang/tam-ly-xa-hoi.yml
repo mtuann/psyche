@@ -1,0 +1,43 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa nen-tang/tam-ly-xa-hoi
+trang: src/content/docs/nen-tang/tam-ly-xa-hoi.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon:
+  - id: os12-1
+    ten: OpenStax Psychology 2e, mục 12.1 What Is Social Psychology?
+    link: https://openstax.org/books/psychology-2e/pages/12-1-what-is-social-psychology
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: Tâm lý học xã hội nghiên cứu cách suy nghĩ, cảm xúc và hành vi của mỗi người chịu ảnh hưởng từ người khác và từ nhóm.
+    loai: dinh-nghia
+    nguon:
+      - os12-1
+    trich: Social psychology examines how people affect one another, and it looks at the power of the situation. | we will examine how the presence of other individuals and groups of people impacts a person's behaviors, thoughts, and feelings.
+    ket_qua: da-sua
+    vi_tri: Mục 12.1, đoạn mở đầu
+    ghi_chu: 'Chữ cũ: "...chịu ảnh hưởng từ người khác, dù người khác có mặt thật hay chỉ trong tưởng tượng." Chữ mới bỏ vế "chỉ trong tưởng tượng": OpenStax 12.1 nói người khác và nhóm tác động, không nhắc "tưởng tượng" (vế này là định nghĩa của Allport, 1985, chưa mở được nguồn nào dẫn nguyên văn; APA Dictionary không đọc được).'
+  - id: n2
+    cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
+    review: null
+doi_chu:
+  - cu: '...chưa hiện ở đây.'
+    moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'
+    ly_do: Khớp thành phần ::danh-sach-bai (dòng "Còn N bài sắp có").
+  - cu: '...chịu ảnh hưởng từ người khác, dù người khác có mặt thật hay chỉ trong tưởng tượng.'
+    moi: '...chịu ảnh hưởng từ người khác và từ nhóm.'
+    ly_do: Vế "chỉ trong tưởng tượng" chưa có nguồn đã mở.
+ghi_chu: APA Dictionary of Psychology (dictionary.apa.org) là ứng dụng một trang, không lấy được nội dung mục từ bằng công cụ đọc web; định nghĩa kiểm với OpenStax Psychology 2e (bậc 2, giáo trình mở), dẫn đúng mục.

@@ -1,6 +1,6 @@
 ---
 title: Cách Psyche kiểm chứng
-description: Mỗi trang của Psyche lên site sau khi từng khẳng định được đối chiếu với nguồn qua hai lượt, có hồ sơ ghi lại, rồi khóa để không bị sửa lặng lẽ.
+description: Mỗi trang của Psyche lên site sau khi các khẳng định được đối chiếu với nguồn (bài nền tảng qua hai lượt độc lập), có hồ sơ ghi lại, rồi khóa để không bị sửa lặng lẽ.
 ---
 
 Mỗi trang của Psyche trả lời một câu hỏi: **bằng chứng nói gì, và chắc chắn đến đâu?** Để câu trả lời đáng tin, một trang chỉ lên site sau khi đi qua các bước dưới đây.
@@ -21,11 +21,11 @@ Câu nói một nghiên cứu đã làm gì và thấy gì thì dựa vào bài 
 
 ## Hai lượt độc lập
 
-- **Lượt 1:** người làm mở nguồn, chép câu trích làm căn cứ, sửa câu sai, làm mềm câu nói mạnh hơn bằng chứng, bỏ câu không kiểm được.
-- **Lượt 2:** một người khác kiểm lại, không xem nguồn hay kết luận của lượt 1, tự tìm nguồn và cho kết quả riêng.
-- Chỗ hai lượt cho kết quả khác nhau được người review xét lại, rồi một người nữa xem ngẫu nhiên vài khẳng định của mỗi lô.
+- **Lượt 1:** bên làm lượt đầu mở nguồn, chép câu trích làm căn cứ, sửa câu sai, làm mềm câu nói mạnh hơn bằng chứng, bỏ câu không kiểm được.
+- **Lượt 2:** một lượt độc lập khác kiểm lại, không xem nguồn hay kết luận của lượt 1, tự tìm nguồn và cho kết quả riêng.
+- Chỗ hai lượt cho kết quả khác nhau được một lượt review xét lại, rồi chủ site xem ngẫu nhiên vài khẳng định của mỗi lô.
 
-Bài thuộc phần **Nền tảng** được kiểm đủ cả hai lượt. Bài **Mở rộng** được kiểm đủ ở lượt 1; lượt 2 kiểm một mẫu ngẫu nhiên, cộng mọi nhãn mức độ chắc chắn và mọi điều về lâm sàng, và có hạn xem lại. Bài về sức khỏe tâm thần chỉ lên site sau khi người có chuyên môn đọc lại.
+Bài thuộc phần **Nền tảng** được kiểm đủ cả hai lượt. Bài **Mở rộng** được kiểm đủ ở lượt 1; lượt 2 kiểm một mẫu ngẫu nhiên, cộng mọi nhãn mức độ chắc chắn và mọi điều về lâm sàng, và có hạn xem lại. Bài về sức khỏe tâm thần chỉ lên site sau khi người có chuyên môn đọc lại. Trang chỉ có danh sách sinh từ dữ liệu đã khóa, hay chỉ có câu về chính site, được kiểm theo mức nhẹ hơn.
 
 ## Nhãn mức độ chắc chắn
 
@@ -39,8 +39,8 @@ Thông tin có thể đổi theo thời gian (số liệu mới nhất, số đi
 
 ## Sau khi lên site
 
-- Nghiên cứu mới không sửa lặng lẽ bài cũ: chúng được thêm thành **bổ sung có ngày** ở cuối bài.
-- Một bài chỉ được mở khóa khi có lỗi được báo, khi nguồn thay đổi (bài bị rút hay đính chính), khi bằng chứng mới làm đổi nhãn, hay khi cả site đổi cách trình bày.
+- Nghiên cứu mới không sửa lặng lẽ bài cũ: chúng được thêm thành **bổ sung có ngày** vào đúng mục của bài.
+- Một bài chỉ được mở khóa khi có lỗi được báo, khi nguồn thay đổi (bài bị rút hay đính chính), khi bằng chứng mới có thể làm đổi nhãn hay kết luận, hay khi cả site đổi cách trình bày.
 - Mỗi nghiên cứu kinh điển có một trang nhà kể chi tiết; nơi khác chỉ tóm một câu và dẫn về đó, để một con số không bị kể lệch ở nhiều nơi.
 
 Psyche mang tính giáo dục, không thay thế chẩn đoán hay điều trị chuyên môn. Nếu bạn đang gặp khó khăn, hãy xem trang [Hỗ trợ](/psyche/ho-tro/).

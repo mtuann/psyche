@@ -5,7 +5,7 @@ description: 'Các bài của lĩnh vực Học tập trên Psyche: mỗi bài m
 
 Học tập, theo nghĩa của tâm lý học, là sự thay đổi tương đối lâu dài trong hành vi hay hiểu biết nhờ kinh nghiệm. Lĩnh vực này gồm điều kiện hóa cổ điển, điều kiện hóa thao tác và học qua quan sát.
 
-Đây là một trong 14 lĩnh vực của Psyche. Mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang [Cách Psyche kiểm chứng](/psyche/bat-dau/cach-kiem-chung/), rồi khóa. Bài chưa kiểm chứng xong chưa hiện ở đây.
+Đây là một trong 14 lĩnh vực của Psyche. Mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang [Cách Psyche kiểm chứng](/psyche/bat-dau/cach-kiem-chung/), rồi khóa. Bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
 
 ## Các bài
 

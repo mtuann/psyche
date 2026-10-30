@@ -13,27 +13,23 @@ Trước khi đọc tiếp, hãy thử đoán: ba câu dưới đây, câu nào 
 3. Học rải ra nhiều buổi giúp nhớ lâu hơn học dồn trong một buổi.
 
 :::thu-gon[Xem đáp án]
-Chỉ có câu 3. Câu 1 và câu 2 đều trái với bằng chứng hiện có, dù rất nhiều người tin chúng. Trong một khảo sát đại diện ở Mỹ (công bố năm 2011), 63% người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim ([Simons và Chabris, 2011](https://doi.org/10.1371/journal.pone.0022757)). Bạn có thể thử thêm 20 câu như vậy ở [Bạn nghĩ gì về tâm trí?](/psyche/bat-dau/ban-nghi-gi/)
+Chỉ có câu 3 ([Cepeda và cộng sự, 2006](https://doi.org/10.1037/0033-2909.132.3.354)). Câu 1 và câu 2 đều trái với bằng chứng hiện có ([Kjærvik và Bushman, 2024](https://doi.org/10.1016/j.cpr.2024.102414); [Loftus, 2005](https://doi.org/10.1101/lm.94705)), dù rất nhiều người tin chúng. Trong một khảo sát đại diện ở Mỹ (công bố năm 2011), 63% người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim ([Simons và Chabris, 2011](https://doi.org/10.1371/journal.pone.0022757); chi tiết ở [Nhìn mà không thấy](/psyche/kham-pha/chu-y-tri-giac/nhin-ma-khong-thay/)). Bạn có thể thử thêm 20 câu như vậy ở [Bạn nghĩ gì về tâm trí?](/psyche/bat-dau/ban-nghi-gi/)
 :::
 
 ## Điều gì đang xảy ra?
 
-Ai trong chúng ta cũng là một "nhà tâm lý học nghiệp dư". Ta đoán ý người khác, tự giải thích vì sao mình buồn, có sẵn lời khuyên cho bạn bè. Phần lớn những suy đoán đó đủ dùng trong đời sống hằng ngày. Nhưng chúng cũng sai theo những cách khá đều đặn và có thể đoán trước:
+Ai trong chúng ta cũng là một "nhà tâm lý học nghiệp dư". Ta đoán ý người khác, tự giải thích vì sao mình buồn, có sẵn lời khuyên cho bạn bè. Nhưng trực giác cũng có thể sai, như ba câu ở đầu trang cho thấy.
 
-- Ta nhớ những lần "linh cảm đúng" và quên những lần linh cảm sai.
-- Một câu chuyện cảm động thuyết phục ta hơn một bảng số liệu.
-- Điều gì nghe hợp lý, ta dễ tin là đúng.
-
-**Tâm lý học là khoa học nghiên cứu tâm trí và hành vi.** Nó ra đời chính vì trực giác không đủ: muốn biết điều gì đúng về con người, ta phải đặt câu hỏi rõ ràng, thu thập dữ liệu, so sánh có hệ thống, và chấp nhận khả năng mình sai.
+**Tâm lý học là khoa học nghiên cứu tâm trí và hành vi.** Vì trực giác không đủ, tâm lý học dùng phương pháp khoa học: muốn biết điều gì đúng về con người, ta phải đặt câu hỏi rõ ràng, thu thập dữ liệu, so sánh có hệ thống, và chấp nhận khả năng mình sai.
 
 ### Tâm lý học khoa học khác gì những thứ "nghe giống tâm lý học"?
 
 | Khía cạnh | Tâm lý học khoa học | "Tâm lý học" đại chúng |
 |---|---|---|
 | Nguồn của khẳng định | Nghiên cứu có dữ liệu, được người khác kiểm tra và làm lại | Kinh nghiệm cá nhân, câu chuyện, uy tín người nói |
-| Khi bằng chứng mới xuất hiện | Kết luận thay đổi theo | Thường giữ nguyên |
-| Mức độ chắc chắn | Nói rõ: chắc đến đâu, áp dụng cho ai | Thường tuyệt đối ("luôn luôn", "100%") |
-| Ví dụ | Hiệu ứng giãn cách trong ghi nhớ; mô hình tính cách Big Five | "Bạn thuộc kiểu não trái"; nhiều trắc nghiệm "bạn là ai" trên mạng |
+| Khi bằng chứng mới xuất hiện | Kết luận thay đổi theo | Không có cơ chế buộc phải sửa |
+| Mức độ chắc chắn | Nói rõ: chắc đến đâu, áp dụng cho ai | Hay nói tuyệt đối ("luôn luôn", "100%") |
+| Ví dụ | Hiệu ứng giãn cách trong ghi nhớ; mô hình tính cách Big Five | "Bạn thuộc kiểu não trái"; một số trắc nghiệm "bạn là ai" trên mạng |
 
 Không phải sách self-help nào cũng sai, và không phải nghiên cứu nào cũng đúng. Điểm khác biệt nằm ở **cách** một khẳng định được kiểm tra, chứ không ở chỗ nó được in ở đâu.
 
@@ -45,14 +41,14 @@ Không phải sách self-help nào cũng sai, và không phải nghiên cứu n�
 
 ## Nghiên cứu then chốt
 
-Năm 2015, nhóm Open Science Collaboration gồm hàng trăm nhà nghiên cứu đã làm lại 100 nghiên cứu tâm lý học công bố năm 2008 trên ba tạp chí hàng đầu ([Open Science Collaboration, 2015](https://doi.org/10.1126/science.aac4716)):
+Năm 2015, nhóm Open Science Collaboration gồm hàng trăm nhà nghiên cứu đã làm lại 100 nghiên cứu tâm lý học công bố năm 2008 trên ba tạp chí lớn ([Open Science Collaboration, 2015](https://doi.org/10.1126/science.aac4716)):
 
 - Ở nghiên cứu gốc, 97% có kết quả có ý nghĩa thống kê. Khi làm lại, chỉ còn **36%**.
 - Độ lớn hiệu ứng trung bình khi làm lại chỉ còn **khoảng một nửa** so với bản gốc.
 
-Kết quả này mở ra cái gọi là **khủng hoảng tái lập**. Nhưng hãy đọc cẩn thận: nó không có nghĩa "64% tâm lý học là sai". Mỗi nghiên cứu chỉ được làm lại một lần; một lần làm lại thất bại cũng có thể do may rủi hoặc khác biệt về cách làm. Điều nó cho thấy chắc chắn hơn là: **một nghiên cứu đơn lẻ, dù đăng ở tạp chí uy tín, chưa đủ để tin chắc.**
+Kết quả này là một mốc của cái gọi là **khủng hoảng tái lập**. Nhưng hãy đọc cẩn thận: nó không có nghĩa "64% tâm lý học là sai". Mỗi nghiên cứu chỉ được làm lại một lần; một lần làm lại thất bại cũng có thể do may rủi hoặc khác biệt về cách làm. Điều nó cho thấy chắc chắn hơn là: **một nghiên cứu đơn lẻ, dù đăng ở tạp chí uy tín, chưa đủ để tin chắc.**
 
-Phản ứng của ngành từ đó là một tin tốt: nhiều nghiên cứu giờ được **đăng ký trước** kế hoạch phân tích, dữ liệu được công khai, và những hiệu ứng nổi tiếng được kiểm tra lại bằng các dự án nhiều phòng thí nghiệm cùng lúc.
+Phản ứng của ngành là một tin tốt: những hiệu ứng nổi tiếng được kiểm tra lại bằng các dự án nhiều phòng thí nghiệm cùng lúc, **đăng ký trước** kế hoạch phân tích, như Many Labs 2 ([Klein và cộng sự, 2018](https://doi.org/10.1177/2515245918810225)).
 
 ## Mức độ chắc chắn
 
@@ -62,9 +58,9 @@ Khủng hoảng tái lập bị chính các nhà tâm lý học phát hiện và
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Phần lớn nghiên cứu tâm lý học được làm trên người ở các nước phương Tây, có học vấn, công nghiệp hóa, giàu và dân chủ. Các nhà nghiên cứu gọi nhóm này bằng chữ viết tắt tiếng Anh **WEIRD** (*Western, Educated, Industrialized, Rich, Democratic*), và chỉ ra rằng ở một số lĩnh vực, nhóm này thậm chí khác thường so với phần còn lại của nhân loại ([Henrich, Heine và Norenzayan, 2010](https://doi.org/10.1017/S0140525X0999152X)).
+Theo tổng hợp của Henrich, Heine và Norenzayan (2010), phần lớn đối tượng của nghiên cứu tâm lý học là người ở các nước phương Tây, có học vấn, công nghiệp hóa, giàu và dân chủ. Các nhà nghiên cứu gọi nhóm này bằng chữ viết tắt tiếng Anh **WEIRD** (*Western, Educated, Industrialized, Rich, Democratic*), và chỉ ra rằng ở một số lĩnh vực, nhóm này thậm chí khác thường so với phần còn lại của nhân loại ([bài gốc](https://doi.org/10.1017/S0140525X0999152X); chi tiết ở [Mẫu và chọn mẫu](/psyche/bang-chung/mau-va-chon-mau/)).
 
-Vì vậy, ở mỗi bài, Psyche Zero sẽ nói rõ khi một phát hiện có thể khác đi ở người Việt hay người châu Á, và giới thiệu nghiên cứu xuyên văn hóa khi có. Khi chưa có dữ liệu về người Việt, site sẽ nói thẳng là chưa có.
+Vì vậy, ở mỗi bài, Psyche sẽ nói rõ khi một phát hiện có thể khác đi ở người Việt hay người châu Á, và giới thiệu nghiên cứu xuyên văn hóa khi có. Khi chưa có dữ liệu về người Việt, site sẽ nói thẳng là chưa có.
 
 ## Ngộ nhận liên quan
 
@@ -99,6 +95,10 @@ Vì vậy, ở mỗi bài, Psyche Zero sẽ nói rõ khi một phát hiện có 
 ## Nguồn
 
 - Bond, C. F., & DePaulo, B. M. (2006). Accuracy of deception judgments. *Personality and Social Psychology Review*, 10(3), 214–234. <https://doi.org/10.1207/s15327957pspr1003_2>
+- Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. *Psychological Bulletin*, 132(3), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>
 - Henrich, J., Heine, S. J., & Norenzayan, A. (2010). The weirdest people in the world? *Behavioral and Brain Sciences*, 33(2–3), 61–83. <https://doi.org/10.1017/S0140525X0999152X>
+- Kjærvik, S. L., & Bushman, B. J. (2024). A meta-analytic review of anger management activities that increase or decrease arousal: What fuels or douses rage? *Clinical Psychology Review*, 109, 102414. <https://doi.org/10.1016/j.cpr.2024.102414>
+- Klein, R. A., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. *Advances in Methods and Practices in Psychological Science*, 1(4), 443–490. <https://doi.org/10.1177/2515245918810225>
+- Loftus, E. F. (2005). Planting misinformation in the human mind: A 30-year investigation of the malleability of memory. *Learning & Memory*, 12(4), 361–366. <https://doi.org/10.1101/lm.94705>
 - Open Science Collaboration (2015). Estimating the reproducibility of psychological science. *Science*, 349(6251), aac4716. <https://doi.org/10.1126/science.aac4716>
 - Simons, D. J., & Chabris, C. F. (2011). What people believe about how memory works: A representative survey of the U.S. population. *PLoS ONE*, 6(8), e22757. <https://doi.org/10.1371/journal.pone.0022757>

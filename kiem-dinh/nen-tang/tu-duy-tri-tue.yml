@@ -1,0 +1,55 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa nen-tang/tu-duy-tri-tue
+trang: src/content/docs/nen-tang/tu-duy-tri-tue.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon:
+  - id: os7-1
+    ten: OpenStax Psychology 2e, mục 7.1 What Is Cognition?
+    link: https://openstax.org/books/psychology-2e/pages/7-1-what-is-cognition
+    toan_van: true
+  - id: os7-2
+    ten: OpenStax Psychology 2e, mục 7.2 Language
+    link: https://openstax.org/books/psychology-2e/pages/7-2-language
+    toan_van: true
+  - id: os7-3
+    ten: OpenStax Psychology 2e, mục 7.3 Problem Solving
+    link: https://openstax.org/books/psychology-2e/pages/7-3-problem-solving
+    toan_van: true
+  - id: os7-4
+    ten: OpenStax Psychology 2e, mục 7.4 What Are Intelligence and Creativity?
+    link: https://openstax.org/books/psychology-2e/pages/7-4-what-are-intelligence-and-creativity
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: Lĩnh vực nghiên cứu cách con người suy nghĩ, giải quyết vấn đề, ra quyết định và dùng ngôn ngữ, cùng các khác biệt giữa người với người về trí tuệ.
+    loai: dinh-nghia
+    nguon:
+      - os7-1
+      - os7-2
+      - os7-3
+      - os7-4
+    trich: Simply put, cognition is thinking, and it encompasses the processes associated with perception, knowledge, problem solving, judgment, language, and memory. | Explain some common roadblocks to effective problem solving and decision making | Language is a communication system | intelligence consisted of one general factor, called g, which could be measured and compared among individuals.
+    ket_qua: dung
+    vi_tri: 7.1 đoạn mở đầu; 7.3 mục tiêu học tập; 7.2; 7.4
+    ghi_chu: Phạm vi theo chương 7 OpenStax (nhận thức, ngôn ngữ, giải quyết vấn đề, trí tuệ).
+  - id: n2
+    cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
+    review: null
+doi_chu:
+  - cu: '...chưa hiện ở đây.'
+    moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'
+    ly_do: Khớp thành phần ::danh-sach-bai (dòng "Còn N bài sắp có").
+ghi_chu: APA Dictionary of Psychology (dictionary.apa.org) là ứng dụng một trang, không lấy được nội dung mục từ bằng công cụ đọc web; định nghĩa kiểm với OpenStax Psychology 2e (bậc 2, giáo trình mở), dẫn đúng mục.

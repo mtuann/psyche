@@ -1,0 +1,141 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa bat-dau/cach-kiem-chung
+trang: src/content/docs/bat-dau/cach-kiem-chung.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon: []
+nhan_dinh:
+  - id: n1
+    cau: 'Mỗi trang của Psyche trả lời một câu hỏi: bằng chứng nói gì, và chắc chắn đến đâu; một trang chỉ lên site sau khi đi qua các bước kiểm chứng.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'AGENTS.md (đầu sổ tay) và plans/lam-lai/README.md (luật 1: chỉ trang đã khóa lên site thật). Trang công cụ, Hỗ trợ không có dạng "một câu hỏi": câu nói chung cho nội dung chính.'
+    review: null
+  - id: n2
+    cau: Mọi câu có thể đúng hoặc sai (trong bài, bảng, khung nhãn, câu hỏi và lời giải thích, chữ trong hình, thông số của công cụ) đều được tách ra để kiểm.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, đoạn đầu: khớp từng loại chỗ.'
+    review: null
+  - id: n3
+    cau: 'Mỗi câu có loại riêng: phát hiện của nghiên cứu, con số, sự kiện lịch sử, định nghĩa, nhãn mức độ chắc chắn, lời khuyên, thông tin có thể đổi theo thời gian.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, bảng loại: các loại phat-hien, so-lieu, lich-su, dinh-nghia, nhan, loi-khuyen, thoi-su có đủ; trang liệt kê bảy trong mười một loại (còn tai-lap, lam-sang, cong-cu, ve-site), không sai vì không nói "chỉ".'
+    review: null
+  - id: n4
+    cau: Lời khuyên cũng là khẳng định về bằng chứng, nên cũng phải có nguồn như mọi câu khác.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, "Khác opus: không có loại lời khuyên được miễn nguồn".'
+    review: null
+  - id: n5
+    cau: 'Nguồn xếp ba bậc: nguồn gốc (bài báo của nghiên cứu được kể, báo cáo tái lập, tài liệu lưu trữ); tổng hợp và chuẩn (phân tích tổng hợp, tổng quan hệ thống, dự án tái lập lớn, hướng dẫn lâm sàng, sổ tay chẩn đoán, từ điển APA, giáo trình mở có bình duyệt); phổ thông (Wikipedia, báo, sách đại chúng) chỉ để tìm nguồn tốt hơn, không bao giờ là nguồn duy nhất.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 2: ba bậc khớp. "Bậc 3 không dùng làm nguồn duy nhất cho nhận định nào" khớp "không bao giờ".'
+    review: null
+  - id: n6
+    cau: Câu nói một nghiên cứu đã làm gì và thấy gì thì dựa vào bài gốc; câu nói về tình trạng bằng chứng hiện nay thì dựa vào các tổng hợp.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 2, hai gạch đầu dòng đầu.
+    review: null
+  - id: n7
+    cau: 'Lượt 1: bên làm lượt đầu mở nguồn, chép câu trích làm căn cứ, sửa câu sai, làm mềm câu nói mạnh hơn bằng chứng, bỏ câu không kiểm được.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 1 và mục 6 (kết quả da-sua, da-lam-mem, da-bo). Chữ cũ "người làm" đổi "bên làm lượt đầu" vì lượt 1 do agent làm (xem ghi chú cuối).
+    review: null
+  - id: n8
+    cau: 'Lượt 2: một lượt độc lập khác kiểm lại, không xem nguồn hay kết luận của lượt 1, tự tìm nguồn và cho kết quả riêng.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 2. Chữ cũ "một người khác".
+    review: null
+  - id: n9
+    cau: Chỗ hai lượt cho kết quả khác nhau được một lượt review xét lại, rồi chủ site xem ngẫu nhiên vài khẳng định của mỗi lô.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 3 (review) và bước 4 (chủ repo kiểm mẫu, khoảng 5 nhận định mỗi lô). Chữ cũ "người review", "một người nữa".
+    review: null
+  - id: n10
+    cau: Bài nền tảng được kiểm đủ cả hai lượt; bài mở rộng được kiểm đủ ở lượt 1, lượt 2 kiểm một mẫu ngẫu nhiên, cộng mọi nhãn và mọi điều về lâm sàng, và có hạn xem lại; bài về sức khỏe tâm thần chỉ lên site sau khi người có chuyên môn đọc lại; trang chỉ có danh sách sinh từ dữ liệu đã khóa hay chỉ có câu về chính site được kiểm theo mức nhẹ hơn.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 3 (bảng mức theo tầng: lõi, mở rộng, khung; "kiem_lai_truoc 12–18 tháng") và mục 5 (chữ ký chuyên gia). Chữ thêm "trang chỉ có danh sách..." theo hàng "Khung".'
+    review: null
+  - id: n11
+    cau: Nhãn xếp theo một thước đo chung, ghi ở trang Cách đọc nhãn mức độ chắc chắn; mỗi nhãn có hồ sơ ghi các nguồn làm căn cứ và lý do đạt mức ấy.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 4 và 6 (co_so, ly_do); trang bat-dau/doc-nhan-chac-chan đã thêm thước đo ở lô này.
+    review: null
+  - id: n12
+    cau: Mỗi trang có một hồ sơ kiểm định (từng khẳng định, nguồn, câu trích, kết quả hai lượt, chỗ đã sửa và lý do); khi hồ sơ đủ, trang được khóa bằng dấu vân tay, và bản đăng lên site chỉ gồm trang đã khóa.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 6, 7 ("dấu vân tay" là mã băm SHA-256 trong kiem-dinh/khoa.json; build thật chỉ đưa trang có trong khoa.json).
+    review: null
+  - id: n13
+    cau: Sửa một chữ của trang đã khóa thì site không dựng được, cho đến khi trang được mở khóa có lý do và kiểm lại phần bị sửa.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 7 (mã băm cả file; lệch thì build hỏng) và mục 8 (mở khóa, kiểm chỉ nhận định bị chạm). Lưu ý: khoảng trắng cuối dòng và kiểu xuống dòng được chuẩn hóa nên không tính là "chữ".'
+    review: null
+  - id: n14
+    cau: Thông tin có thể đổi theo thời gian (số liệu mới nhất, số điện thoại hỗ trợ, "chưa tìm thấy nghiên cứu ở Việt Nam") được viết kèm mốc thời gian và có hạn kiểm lại trong hồ sơ.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1 (loại thoi-su: viết kèm mốc, có het_han) và AGENTS.md (Quy tắc nội dung).'
+    review: null
+  - id: n15
+    cau: 'Nghiên cứu mới không sửa lặng lẽ bài cũ: chúng được thêm thành bổ sung có ngày vào đúng mục của bài.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'plans/ben-vung/them-noi-dung.md mục 5: bổ sung hiện thành khung "Cập nhật tháng MM/YYYY" ở cuối mục tương ứng của bài lõi. Chữ cũ "ở cuối bài" đổi "vào đúng mục của bài".'
+    review: null
+  - id: n16
+    cau: Một bài chỉ được mở khóa khi có lỗi được báo, khi nguồn thay đổi (bài bị rút hay đính chính), khi bằng chứng mới có thể làm đổi nhãn hay kết luận, hay khi cả site đổi cách trình bày.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 8, bốn trường hợp (lỗi được báo; nguồn thay đổi; tái lập mốc: bổ sung có anh_huong_nhan, hay từ 3 bổ sung; thay đổi cơ học). Chữ cũ: "khi bằng chứng mới làm đổi nhãn".'
+    review: null
+  - id: n17
+    cau: Mỗi nghiên cứu kinh điển có một trang nhà kể chi tiết; nơi khác chỉ tóm một câu và dẫn về đó.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'AGENTS.md, Quy tắc nội dung: "Mỗi nghiên cứu một trang nhà"; src/data/nghien-cuu.yml (trang_nha).'
+    review: null
+  - id: n18
+    cau: Psyche mang tính giáo dục, không thay thế chẩn đoán hay điều trị chuyên môn; nếu bạn đang gặp khó khăn, hãy xem trang Hỗ trợ.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: AGENTS.md (không có công cụ tự chẩn đoán; không viết như chẩn đoán hay lời khuyên điều trị; chân trang có lời nhắc Hỗ trợ) và src/content/docs/ho-tro/index.md có trong site.
+    review: null
+doi_chu:
+  - cu: 'Mô tả: "...sau khi từng khẳng định được đối chiếu với nguồn qua hai lượt..."'
+    moi: '"...sau khi các khẳng định được đối chiếu với nguồn (bài nền tảng qua hai lượt độc lập)..."'
+    ly_do: Chỉ bài nền tảng đủ hai lượt (chuẩn mục 3).
+  - cu: '"người làm", "một người khác", "người review", "một người nữa"'
+    moi: '"bên làm lượt đầu", "một lượt độc lập khác", "một lượt review", "chủ site"'
+    ly_do: Lượt 1, 2 và review do agent làm, chủ repo kiểm mẫu (chuẩn mục 3); chữ "người" sai.
+  - cu: (không có)
+    moi: Thêm "Trang chỉ có danh sách sinh từ dữ liệu đã khóa, hay chỉ có câu về chính site, được kiểm theo mức nhẹ hơn."
+    ly_do: Chuẩn mục 3, hàng Khung.
+  - cu: '"thêm thành bổ sung có ngày ở cuối bài"'
+    moi: '"... vào đúng mục của bài"'
+    ly_do: them-noi-dung.md mục 5.
+  - cu: '"khi bằng chứng mới làm đổi nhãn"'
+    moi: '"khi bằng chứng mới có thể làm đổi nhãn hay kết luận"'
+    ly_do: Chuẩn mục 8 (tái lập mốc).
+ghi_chu: 'Trang khung mới, toàn câu về chính site; không có nguồn ngoài. Đã đối chiếu từng câu với chuan-kiem-dinh.md và them-noi-dung.md. Người gom quyết: trang công khai mô tả lượt 1, 2 và review là "bên/lượt" (trung tính) vì thực tế do agent AI làm, chủ repo kiểm mẫu; có nên ghi rõ "AI" ở đây không (minh bạch với người đọc) là quyết định của chủ repo.'

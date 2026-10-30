@@ -1,0 +1,34 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/index
+trang: src/content/docs/kham-pha/index.md
+nguon_cu: ../psyche-zero/docs/kham-pha/index.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon: []
+nhan_dinh:
+  - id: n1
+    cau: 'Mỗi bài ở Khám phá bắt đầu bằng một câu hỏi về con người và thường đi theo trình tự: tự thử hay tự đoán, điều đang xảy ra, nghiên cứu then chốt, mức độ chắc chắn, các cách giải thích, điều có thể áp dụng, góc nhìn văn hóa, ngộ nhận liên quan, câu hỏi suy ngẫm.'
+    loai: ve-site
+    ket_qua: da-lam-mem
+    ghi_chu: Đối chiếu tiêu đề mục của src/content/docs/kham-pha/tri-nho/vi-sao-ta-quen.md (Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm) và đếm trên site cũ (48 đến 51 trên 51 bài có mỗi mục; bài sức khỏe tâm thần có mục khác). Chữ cũ "đi theo cùng một trình tự" đổi "thường đi theo", vì không phải bài nào cũng đủ mục.
+    review: null
+  - id: n2
+    cau: Các bài xếp theo 14 lĩnh vực của tâm lý học; bài chỉ hiện sau khi được kiểm chứng lại từ đầu và khóa; bài chưa lên được đếm ở cuối mỗi lĩnh vực.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; mười bốn đề mục của trang khớp từng chữ với trường ten (kiểm bằng script); src/plugins/thanh-phan.mjs (danhSachBai): chỉ bài có trong bản build, dòng "Còn N bài sắp có". Build thật chỉ có bài đã khóa (kiem-dinh/khoa.json).'
+    review: null
+doi_chu:
+  - cu: '"đi theo cùng một trình tự"'
+    moi: '"thường đi theo cùng một trình tự"'
+    ly_do: Một số bài (sức khỏe tâm thần) có mục khác.
+ghi_chu: 'Trang khung: chỉ có đoạn giới thiệu và chỉ thị sinh danh sách; danh sách do dữ liệu đã khóa sinh và kiểm thử tự động.'

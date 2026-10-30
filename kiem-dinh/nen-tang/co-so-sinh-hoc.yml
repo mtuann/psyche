@@ -1,0 +1,50 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa nen-tang/co-so-sinh-hoc
+trang: src/content/docs/nen-tang/co-so-sinh-hoc.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon:
+  - id: os3-1
+    ten: OpenStax Psychology 2e, mục 3.1 Human Genetics
+    link: https://openstax.org/books/psychology-2e/pages/3-1-human-genetics
+    toan_van: true
+  - id: os3-3
+    ten: OpenStax Psychology 2e, mục 3.3 Parts of the Nervous System
+    link: https://openstax.org/books/psychology-2e/pages/3-3-parts-of-the-nervous-system
+    toan_van: true
+  - id: os3-5
+    ten: OpenStax Psychology 2e, mục 3.5 The Endocrine System
+    link: https://openstax.org/books/psychology-2e/pages/3-5-the-endocrine-system
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: Cơ sở sinh học của tâm trí và hành vi gồm não và hệ thần kinh, hormone, gen, và quá trình tiến hóa.
+    loai: dinh-nghia
+    nguon:
+      - os3-1
+      - os3-3
+      - os3-5
+    trich: 'Psychological researchers study genetics in order to better understand the biological factors that contribute to certain behaviors. | The nervous system can be divided into two major subdivisions: the central nervous system (CNS) and the peripheral nervous system (PNS) | The endocrine system consists of a series of glands that produce chemical substances known as hormones'
+    ket_qua: dung
+    vi_tri: 3.1 (gen và tiến hóa theo mục tiêu học tập "theory of evolution by natural selection"), 3.3, 3.5
+    ghi_chu: Chương 3 OpenStax (3.1 di truyền và tiến hóa, 3.2 đến 3.4 hệ thần kinh và não, 3.5 nội tiết).
+  - id: n2
+    cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
+    review: null
+doi_chu:
+  - cu: '...chưa hiện ở đây.'
+    moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'
+    ly_do: Khớp thành phần ::danh-sach-bai (dòng "Còn N bài sắp có").
+ghi_chu: APA Dictionary of Psychology (dictionary.apa.org) là ứng dụng một trang, không lấy được nội dung mục từ bằng công cụ đọc web; định nghĩa kiểm với OpenStax Psychology 2e (bậc 2, giáo trình mở), dẫn đúng mục.

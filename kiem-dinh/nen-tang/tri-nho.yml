@@ -1,0 +1,57 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa nen-tang/tri-nho
+trang: src/content/docs/nen-tang/tri-nho.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon:
+  - id: os8-1
+    ten: OpenStax Psychology 2e, mục 8.1 How Memory Functions
+    link: https://openstax.org/books/psychology-2e/pages/8-1-how-memory-functions
+    toan_van: true
+  - id: os8-3
+    ten: OpenStax Psychology 2e, mục 8.3 Problems with Memory
+    link: https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: Trí nhớ là tập hợp các quá trình mã hóa, lưu giữ và gợi lại thông tin.
+    loai: dinh-nghia
+    nguon:
+      - os8-1
+    trich: Memory is the set of processes used to encode, store, and retrieve information over different periods of time
+    ket_qua: da-sua
+    vi_tri: Mục 8.1
+    ghi_chu: 'Chữ cũ: "Trí nhớ là khả năng mã hóa, lưu giữ và gợi lại thông tin." Chữ mới "tập hợp các quá trình" đúng chữ của OpenStax.'
+  - id: n2
+    cau: Lĩnh vực trí nhớ nghiên cứu các loại trí nhớ, vì sao ta quên, và vì sao ký ức có thể sai.
+    loai: dinh-nghia
+    nguon:
+      - os8-1
+      - os8-3
+    trich: Describe and distinguish between procedural and declarative memory and semantic and episodic memory | Discuss encoding failure | Discuss the various memory errors
+    ket_qua: dung
+    vi_tri: Mục tiêu học tập của 8.1 và 8.3
+    ghi_chu: Chữ không đổi; phạm vi theo chương 8.
+  - id: n3
+    cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
+    review: null
+doi_chu:
+  - cu: '...chưa hiện ở đây.'
+    moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'
+    ly_do: Khớp thành phần ::danh-sach-bai (dòng "Còn N bài sắp có").
+  - cu: Trí nhớ là khả năng mã hóa, lưu giữ và gợi lại thông tin.
+    moi: Trí nhớ là tập hợp các quá trình mã hóa, lưu giữ và gợi lại thông tin.
+    ly_do: Đúng chữ của OpenStax 8.1.
+ghi_chu: APA Dictionary of Psychology (dictionary.apa.org) là ứng dụng một trang, không lấy được nội dung mục từ bằng công cụ đọc web; định nghĩa kiểm với OpenStax Psychology 2e (bậc 2, giáo trình mở), dẫn đúng mục.

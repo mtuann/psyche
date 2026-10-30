@@ -1,0 +1,53 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa nen-tang/phuong-phap
+trang: src/content/docs/nen-tang/phuong-phap.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon:
+  - id: os1-1
+    ten: OpenStax Psychology 2e, mục 1.1 What Is Psychology?
+    link: https://openstax.org/books/psychology-2e/pages/1-1-what-is-psychology
+    toan_van: true
+  - id: os2-3
+    ten: OpenStax Psychology 2e, mục 2.3 Analyzing Findings
+    link: https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: Tâm lý học là khoa học nghiên cứu tâm trí và hành vi.
+    loai: dinh-nghia
+    nguon:
+      - os1-1
+    trich: Psychology refers to the scientific study of the mind and behavior.
+    ket_qua: dung
+    vi_tri: Đoạn đầu mục 1.1
+  - id: n2
+    cau: 'Lĩnh vực phương pháp nói về cách tâm lý học tìm ra điều nó biết: thiết kế nghiên cứu, đo lường, thống kê và cách đọc một kết quả cho đúng mức.'
+    loai: dinh-nghia
+    nguon:
+      - os1-1
+      - os2-3
+    trich: Scientists test that which is perceivable and measurable. | Generally, psychologists consider differences to be statistically significant if there is less than a five percent chance of observing them if the groups did not actually differ from one another.
+    ket_qua: dung
+    vi_tri: 1.1 đoạn đầu; 2.3 mục phân tích kết quả
+    ghi_chu: 'Phạm vi lĩnh vực: chương 2 của OpenStax (2.1 vì sao nghiên cứu quan trọng, 2.2 cách tiếp cận nghiên cứu, 2.3 phân tích kết quả). Chữ không đổi.'
+  - id: n3
+    cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
+    review: null
+doi_chu:
+  - cu: '...chưa hiện ở đây.'
+    moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'
+    ly_do: Khớp thành phần ::danh-sach-bai (dòng "Còn N bài sắp có").
+ghi_chu: APA Dictionary of Psychology (dictionary.apa.org) là ứng dụng một trang, không lấy được nội dung mục từ bằng công cụ đọc web; định nghĩa kiểm với OpenStax Psychology 2e (bậc 2, giáo trình mở), dẫn đúng mục.

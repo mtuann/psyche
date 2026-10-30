@@ -11,7 +11,7 @@ head:
       content: website
 hero:
   title: Bằng chứng nói gì, và chắc chắn đến đâu?
-  tagline: Tâm lý học bằng bằng chứng, bằng tiếng Việt, cho người không học chuyên ngành. Mỗi trang trả lời một câu hỏi về con người, kèm nguồn và mức độ chắc chắn của từng kết luận.
+  tagline: Tâm lý học bằng bằng chứng, bằng tiếng Việt, cho người không học chuyên ngành. Mỗi trang trả lời một câu hỏi về con người, kèm nguồn và mức độ chắc chắn của các kết luận chính.
   actions:
     - text: Bắt đầu đọc
       link: /psyche/bat-dau/
@@ -42,7 +42,7 @@ Psyche đang được làm lại; từng phần sẽ lên sau khi được kiể
 <h2 class="pz-dai__ten" id="cach-kiem-chung">Cách Psyche kiểm chứng</h2>
 <ol role="list">
 <li><b>Hồ sơ trước, chữ sau</b> <span>Mỗi khẳng định được đối chiếu với nghiên cứu gốc hay tổng hợp đáng tin, ghi nguồn và câu trích.</span></li>
-<li><b>Hai lượt độc lập</b> <span>Một người làm, một người khác kiểm lại mà không xem kết luận của người trước.</span></li>
+<li><b>Hai lượt độc lập</b> <span>Với bài nền tảng, một lượt làm và một lượt khác kiểm lại, không xem kết luận của lượt trước.</span></li>
 <li><b>Khóa rồi mới lên site</b> <span>Trang đã khóa không bị sửa lặng lẽ; bằng chứng mới được thêm thành bổ sung có ngày.</span></li>
 </ol>
 <p><a href="/psyche/bat-dau/cach-kiem-chung/">Xem đủ cách làm</a></p>

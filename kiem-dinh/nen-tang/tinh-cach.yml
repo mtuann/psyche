@@ -1,0 +1,53 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa nen-tang/tinh-cach
+trang: src/content/docs/nen-tang/tinh-cach.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d2-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon:
+  - id: os11-1
+    ten: OpenStax Psychology 2e, mục 11.1 What Is Personality?
+    link: https://openstax.org/books/psychology-2e/pages/11-1-what-is-personality
+    toan_van: true
+  - id: os11-7
+    ten: OpenStax Psychology 2e, mục 11.7 Trait Theorists
+    link: https://openstax.org/books/psychology-2e/pages/11-7-trait-theorists
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: Tính cách là những khuôn mẫu tương đối ổn định trong suy nghĩ, cảm xúc và hành vi của một người.
+    loai: dinh-nghia
+    nguon:
+      - os11-1
+    trich: Personality refers to the long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways. | Our personalities are thought to be long term, stable, and not easily changed.
+    ket_qua: dung
+    vi_tri: Mục 11.1, đoạn đầu
+  - id: n2
+    cau: Lĩnh vực tính cách nghiên cứu cách mô tả, đo lường tính cách và tính cách thay đổi đến đâu.
+    loai: dinh-nghia
+    nguon:
+      - os11-1
+      - os11-7
+    trich: Discuss the Big Five factors and describe someone who is high and low on each of the five factors
+    ket_qua: dung
+    vi_tri: 11.7 (mô tả); chương 11 có mục 11.9 Personality Assessment (đo lường)
+    ghi_chu: 'Mục "thay đổi đến đâu": OpenStax 11.1 chỉ nói tính cách được cho là ổn định, khó đổi; chưa đọc phần bằng chứng về thay đổi. Câu chỉ nêu phạm vi các bài, không nêu kết luận.'
+  - id: n3
+    cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
+    review: null
+doi_chu:
+  - cu: '...chưa hiện ở đây.'
+    moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'
+    ly_do: Khớp thành phần ::danh-sach-bai (dòng "Còn N bài sắp có").
+ghi_chu: APA Dictionary of Psychology (dictionary.apa.org) là ứng dụng một trang, không lấy được nội dung mục từ bằng công cụ đọc web; định nghĩa kiểm với OpenStax Psychology 2e (bậc 2, giáo trình mở), dẫn đúng mục.

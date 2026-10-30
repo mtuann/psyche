@@ -3,7 +3,7 @@ title: Khám phá
 description: Các chủ đề tâm lý học, mỗi bài là một câu hỏi về con người, kèm bằng chứng và mức độ chắc chắn.
 ---
 
-Mỗi bài ở đây bắt đầu bằng một câu hỏi về con người, và đi theo cùng một trình tự: bạn tự thử hoặc tự đoán trước, rồi đến điều đang xảy ra, nghiên cứu then chốt, **mức độ chắc chắn**, các cách giải thích, điều có thể áp dụng, góc nhìn văn hóa, những ngộ nhận liên quan, và vài câu hỏi để suy ngẫm.
+Mỗi bài ở đây bắt đầu bằng một câu hỏi về con người, và thường đi theo cùng một trình tự: bạn tự thử hoặc tự đoán trước, rồi đến điều đang xảy ra, nghiên cứu then chốt, **mức độ chắc chắn**, các cách giải thích, điều có thể áp dụng, góc nhìn văn hóa, những ngộ nhận liên quan, và vài câu hỏi để suy ngẫm.
 
 Các bài xếp theo 14 lĩnh vực của tâm lý học. Bài chỉ hiện ở đây sau khi được kiểm chứng lại từ đầu và khóa; bài chưa lên được đếm ở cuối mỗi lĩnh vực.
 

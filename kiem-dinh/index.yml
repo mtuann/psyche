@@ -13,18 +13,79 @@ lan:
       review: Claude Opus 5.5, agent review D1.6 (30/10/2026), không làm D1.6; đã đọc trang, chỉ có câu về chính site
       kiem_mau: không cần
   - so: 2
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-l1
     ma_bam: null
     nguoi:
-      luot_1: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
       luot_2: null
       review: null
       kiem_mau: null
 nguon: []
-nhan_dinh: []
-ghi_chu: 'Trang chủ tạm (D1.1, bố cục C ở D1.3), viết mới, không chuyển từ trang chủ cũ. Chỉ có câu về chính site: site đang làm lại, bản cũ ở /psyche-zero/, ba bước lên site; đã đối chiếu với plans/lam-lai/README.md (Quyết định, Bảy luật). D2-L1 thay bằng trang chủ thật.'
+nhan_dinh:
+  - id: n1
+    cau: Bằng chứng nói gì, và chắc chắn đến đâu? (câu hỏi ở đầu trang chủ)
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'AGENTS.md dòng đầu: "mỗi trang trả lời một câu hỏi, bằng chứng nói gì, và chắc chắn đến đâu?".'
+    review: null
+  - id: n2
+    cau: Psyche là tâm lý học bằng bằng chứng, bằng tiếng Việt, cho người không học chuyên ngành.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'AGENTS.md dòng đầu: "site tâm lý học bằng tiếng Việt cho người không học chuyên ngành"; "bằng bằng chứng" là câu hỏi của site.'
+    review: null
+  - id: n3
+    cau: Mỗi trang trả lời một câu hỏi về con người, kèm nguồn và mức độ chắc chắn của các kết luận chính.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: AGENTS.md (mỗi trang một câu hỏi; mọi kết luận quan trọng có một trong bốn nhãn). Chữ cũ "của từng kết luận" đổi "của các kết luận chính" vì chỉ kết luận quan trọng mới có nhãn; trang Hỗ trợ, công cụ không theo dạng một câu hỏi.
+    review: null
+  - id: n4
+    cau: Psyche đang được làm lại; từng phần sẽ lên sau khi được kiểm chứng lại từ đầu; bản cũ vẫn đọc được ở mtuann.github.io/psyche-zero.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'plans/lam-lai/README.md (Quyết định: site cũ chạy nguyên trong lúc làm lại; luật 1: chỉ trang đã khóa lên). Câu hết đúng khi đợt cuối chuyển hết trang: đổi lúc đó.'
+    review: null
+  - id: n5
+    cau: 'Ba khối của trang chủ (Thử với chính bạn, Mới kiểm chứng, Theo lĩnh vực) sinh từ dữ liệu: công cụ có trong bản build, sáu bài mới khóa gần nhất, 14 thẻ lĩnh vực.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'src/plugins/thanh-phan.mjs: ::cong-cu-noi-bat (trang công cụ có trong bản build), ::bai-moi{so="6"} (bài mới khóa gần nhất theo ngày kiểm định cuối), ::the-linh-vuc (14 thẻ theo thu_tu).'
+    review: null
+  - id: n6
+    cau: 'Hồ sơ trước, chữ sau: mỗi khẳng định được đối chiếu với nghiên cứu gốc hay tổng hợp đáng tin, ghi nguồn và câu trích.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 2 (bậc 1, 2) và mục 6 (trich). Câu ve-site, bản ghi cấu trúc không cần nguồn ngoài; "mỗi khẳng định" nói về khẳng định về tâm lý học.
+    review: null
+  - id: n7
+    cau: 'Hai lượt độc lập: với bài nền tảng, một lượt làm và một lượt khác kiểm lại, không xem kết luận của lượt trước.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 3 (bước 1 và 2; hàng "Nền tảng"). Chữ cũ: "Một người làm, một người khác kiểm lại mà không xem kết luận của người trước": sai vì lượt do agent làm, và chỉ bài nền tảng đủ hai lượt.'
+    review: null
+  - id: n8
+    cau: 'Khóa rồi mới lên site: trang đã khóa không bị sửa lặng lẽ; bằng chứng mới được thêm thành bổ sung có ngày.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 7, 8 và plans/ben-vung/them-noi-dung.md mục 5.
+    review: null
+  - id: n9
+    cau: 'Hai nút: Bắt đầu đọc (tới /psyche/bat-dau/) và Cách Psyche kiểm chứng (tới /psyche/bat-dau/cach-kiem-chung/); liên kết "Xem đủ cách làm" tới cùng trang.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: Cả hai đích đều là trang trong src/content/docs/bat-dau/ có trong src/data/trang.yml.
+    review: null
+ghi_chu: 'Trang chủ tạm (D1.1, bố cục C ở D1.3), viết mới, không chuyển từ trang chủ cũ. Chỉ có câu về chính site: site đang làm lại, bản cũ ở /psyche-zero/, ba bước lên site; đã đối chiếu với plans/lam-lai/README.md (Quyết định, Bảy luật). D2-L1 thay bằng trang chủ thật. Lần 2 (D2-L1): chữ ở hero và dải "Cách Psyche kiểm chứng" là câu về chính site, đã đối chiếu như ghi ở từng nhận định; không có câu cần nguồn ngoài.'
 mo_khoa:
   - ngay: 2026-10-30
     nhanh: moi/d2-l1
-    ly_do: "D2-L1: trang chủ thật (giới thiệu, công cụ, bài mới, thẻ lĩnh vực sinh từ dữ liệu) thay trang chủ tạm (plans/lam-lai/README.md, D2-L1)"
+    ly_do: 'D2-L1: trang chủ thật (giới thiệu, công cụ, bài mới, thẻ lĩnh vực sinh từ dữ liệu) thay trang chủ tạm (plans/lam-lai/README.md, D2-L1)'
+doi_chu:
+  - cu: 'tagline: "...mức độ chắc chắn của từng kết luận."'
+    moi: '"...của các kết luận chính."'
+    ly_do: n3.
+  - cu: '"Một người làm, một người khác kiểm lại mà không xem kết luận của người trước."'
+    moi: '"Với bài nền tảng, một lượt làm và một lượt khác kiểm lại, không xem kết luận của lượt trước."'
+    ly_do: n7.
