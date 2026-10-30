@@ -66,7 +66,11 @@ export function tepDauVet(goc = GOC) {
 					.sort()
 					.map((f) => `${thu}/${f}`)
 			: [];
-	return ['src/du-lieu.mjs', 'src/ban-build.mjs', ...trong('src/plugins', '.mjs'), ...trong('src/data', '.yml'), ...trong('src/hinh', '.html'), 'kiem-dinh/khoa.json'];
+	// trang: danh sách sinh từ dữ liệu (D2-L1) lấy tên, mô tả của trang khác, và ngày khóa trong hồ sơ của chúng
+	const ds = tatCaTrang(path.join(goc, 'src/content/docs'));
+	const trang = ds.map((t) => `src/content/docs/${t}.md`);
+	const hoSo = ds.map((t) => `kiem-dinh/${t}.yml`).filter((f) => fs.existsSync(path.join(goc, f)));
+	return ['src/du-lieu.mjs', 'src/ban-build.mjs', ...trong('src/plugins', '.mjs'), ...trong('src/data', '.yml'), ...trong('src/hinh', '.html'), 'kiem-dinh/khoa.json', ...trang, ...hoSo];
 }
 
 /** Dấu vết của tepDauVet(), bản build (thật hay xem) và danh sách trang trong bản build. Chép từ opus (dauVet). */

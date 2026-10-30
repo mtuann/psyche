@@ -2,11 +2,10 @@
 // Chân trang mặc định của Starlight, thêm hai dòng như site cũ (../psyche-zero/overrides/partials/copyright.html và
 // mục copyright của mkdocs.yml): lời nhắc tìm hỗ trợ khi đang gặp khó khăn, và giấy phép nội dung cùng câu về tính giáo
 // dục của site. Lời nhắc
-// có ở mọi trang (tests/khung.test.mjs kiểm). Trang Hỗ trợ chưa chuyển sang site mới (lô D2-L1): tạm trỏ tới trang của
-// site cũ; khi trang lên site mới thì đổi thành link nội bộ.
+// có ở mọi trang (tests/khung.test.mjs kiểm). Link tới trang Hỗ trợ của site mới (D2-L1).
 import Default from '@astrojs/starlight/components/Footer.astro';
 
-const hoTro = 'https://mtuann.github.io/psyche-zero/ho-tro/';
+const hoTro = '/psyche/ho-tro/';
 ---
 
 <Default><slot /></Default>

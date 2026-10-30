@@ -13,7 +13,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { duLieuDaKiem } from '../du-lieu.mjs';
 import { docKhoa } from '../khoa.mjs';
-import { TEN_NHAN, chipNhan, congCu, danhSachNguon, hinh, quiz } from './thanh-phan.mjs';
+import fs from 'node:fs';
+import { parse } from 'yaml';
+import { DUONG_GOC, trangTrongBan } from '../ban-build.mjs';
+import { svg } from '../bieu-tuong.mjs';
+import { TEN_NHAN, baiMoi, chipNhan, congCu, congCuNoiBat, danhSachBai, danhSachNguon, hinh, quiz, theLinhVuc } from './thanh-phan.mjs';
 
 /** Aside của Starlight: không đụng tới. */
 const ASIDE_STARLIGHT = new Set(['note', 'tip', 'caution', 'danger']);
@@ -67,9 +71,30 @@ const KHOI = {
 /** Chỉ thị một dòng: tên -> { thuocTinh: nhận được (dấu * là bắt buộc; "…" là nhận thêm mọi thuộc tính), ve }. */
 const CHI_THI = {
 	'cong-cu': { thuocTinh: ['ten*', '…'], ve: ({ tt, trang }) => congCu(tt, trang) },
+	// danh sách sinh từ dữ liệu (D2-L1): chỉ trang có trong bản build, tên và mô tả từ frontmatter của chính trang
+	'danh-sach-bai': { thuocTinh: ['linh_vuc', 'nhom'], ve: ({ tt, ds }) => danhSachBai(tt, ds()) },
+	'the-linh-vuc': { ve: ({ ds }) => theLinhVuc(ds()) },
+	'bai-moi': { thuocTinh: ['so'], ve: ({ tt, ds }) => baiMoi(tt, ds()) },
+	'cong-cu-noi-bat': { ve: ({ ds }) => congCuNoiBat(ds()) },
 	hinh: { thuocTinh: ['ten*'], ve: ({ tt, trang }) => hinh(tt.ten, trang) },
 	nguon: { thuocTinh: ['id*'], ve: ({ tt }) => danhSachNguon(tt.id, duLieuDaKiem().nguon) },
 };
+
+/**
+ * Dữ liệu cho danh sách sinh từ dữ liệu: bản ghi trang (thứ tự menu), lĩnh vực, trang trong bản build, ngày khóa (ngày
+ * của lần kiểm định cuối trong hồ sơ kiem-dinh/<trang>.yml của trang đã khóa).
+ */
+function duLieuDanhSach(docsDir) {
+	const duLieu = duLieuDaKiem();
+	const goc = new URL('../../', import.meta.url);
+	const khoa = docKhoa().trang;
+	const ngayKhoa = (t) => {
+		if (!(t in khoa)) return null;
+		const f = new URL(`kiem-dinh/${t}.yml`, goc);
+		return fs.existsSync(f) ? String(parse(fs.readFileSync(f, 'utf8'))?.lan?.at(-1)?.ngay ?? '') || null : null;
+	};
+	return { banGhi: duLieu.trang, linhVuc: duLieu['linh-vuc'], trangCo: trangTrongBan(), docsDir, base: DUONG_GOC, svg, ngayKhoa };
+}
 
 /** Kiểm thuộc tính của một chỉ thị theo khai báo; trả về thông báo lỗi hay null. */
 function loiThuocTinh(ten, { thuocTinh = [] }, tt) {
@@ -125,7 +150,7 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				if (sai) throw loi(sai);
 				let html;
 				try {
-					html = muc.ve({ tt, trang });
+					html = muc.ve({ tt, trang, ds: () => duLieuDanhSach(docsDir) });
 				} catch (e) {
 					throw loi(e.message);
 				}
