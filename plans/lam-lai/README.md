@@ -49,7 +49,7 @@ Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 | Đợt | Nội dung | Lô | Sau đợt này site thật có thêm | Ước tính | Trạng thái |
 |---|---|---|---|---|---|
 | 0 | Dựng repo mới, kế hoạch | | Chưa đăng gì | 0,5 ngày | Xong 29/10/2026 (`bao-cao/d0.md`) |
-| 1 | Nền kỹ thuật | D1.1–D1.8 | Trang chủ tạm, trang 404 ở `/psyche/`; ba trang thử ở bản xem | 1,5–2 ngày | D1.1, D1.2 xong 29/10/2026; D1.3–D1.8 làm xong 30/10/2026 (`bao-cao/d1-3.md` … `d1-8.md`), chờ review và gộp |
+| 1 | Nền kỹ thuật | D1.1–D1.8 | Trang chủ tạm, trang 404 ở `/psyche/`; ba trang thử ở bản xem | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d1-1.md` … `d1-8.md`): review và kiểm lại đạt, CI 6/6 job, gộp vào `main` (`1e25fa8`), deploy đăng trang chủ tạm và 404 mới |
 | 2 | Dữ liệu dùng chung và lối vào | D2-0, D2-L1 | Trang chủ thật, Bắt đầu, Cách đọc nhãn, Hỗ trợ, Cách Psyche kiểm chứng, 14 trang lĩnh vực (20 trang) | 1,5–2 ngày | Chưa làm |
 | 3 | Thí nghiệm kinh điển | D3-L1, D3-L2 | 15 thí nghiệm và mục lục (36 trang) | 2–3 ngày | Chưa làm |
 | 4 | Hiểu bằng chứng | D4-L1, D4-L2 | 12 bài phương pháp và mục lục (49 trang) | 1,5–2 ngày | Chưa làm |
