@@ -18,36 +18,50 @@ const git = (goc, ...ts) => execFileSync('git', ['-C', goc, ...ts], { encoding: 
 /**
  * Phạm vi chung của một lô (plans/lam-lai/README.md, Quy tắc chung): trang của lô; dữ liệu; thành phần, script, file
  * tĩnh, hình; hồ sơ (của trang trong lô, của bản ghi, và khoa.json); bổ sung có ngày; báo cáo của lô (cả ảnh chụp, danh
- * sách nhận định, kết quả lượt 2, mẫu kiểm). Lô làm thành phần thì đăng ký nó trong src/plugins/thanh-phan.mjs (và chỉ
- * thị trong psyche-markdown.mjs), thêm CSS vào src/styles/thanh-phan.css và kiểm thử vào tests/, trừ hai kiểm thử canh
- * cổng (khóa và phạm vi).
+ * sách nhận định, kết quả lượt 2, mẫu kiểm). Lô làm thành phần thì đăng ký nó trong src/plugins/thanh-phan.mjs, thêm CSS
+ * vào src/styles/thanh-phan.css và kiểm thử vào tests/, trừ hai kiểm thử canh cổng (khóa và phạm vi). Chỉ thị mới (sửa
+ * src/plugins/psyche-markdown.mjs, nơi có phép chặn ô "chưa chuyển" ở trang đã khóa) chỉ ở lô được giao (THEM), như opus.
  */
 const CHUNG = [
 	/^src\/(data|components|scripts|hinh)\//,
 	/^src\/content\/bo-sung\//,
 	/^public\//,
 	/^kiem-dinh\/(khoa\.json$|du-lieu\/)/,
-	/^src\/plugins\/(thanh-phan|psyche-markdown)\.mjs$/,
+	/^src\/plugins\/thanh-phan\.mjs$/,
 	/^src\/styles\/thanh-phan\.css$/,
 	/^tests\/(?!khoa\.test\.mjs$|pham-vi\.test\.mjs$)/,
 ];
 
 /** Việc kế hoạch giao riêng cho một lô, ngoài phạm vi chung (plans/lam-lai/README.md, mục của đợt). */
+const MD = 'src/plugins/psyche-markdown.mjs';
 const THEM = {
-	// trang chủ thật, 14 trang lĩnh vực sinh từ dữ liệu, chân trang trỏ tới Hỗ trợ mới, workflow nhắc kiểm Hỗ trợ mỗi quý
-	'D2-L1': ['astro.config.mjs', 'src/menu.mjs', 'src/styles/psyche.css', 'src/pages/', 'src/ban-build.mjs', '.github/workflows/ho-tro-quarterly.yml'],
+	// trang chủ thật, 14 trang lĩnh vực sinh từ dữ liệu, chân trang trỏ tới Hỗ trợ mới, workflow nhắc kiểm Hỗ trợ mỗi quý;
+	// tóm tắt đầu bài (chỉ thị mới)
+	'D2-L1': ['astro.config.mjs', 'src/menu.mjs', 'src/styles/psyche.css', 'src/pages/', 'src/ban-build.mjs', '.github/workflows/ho-tro-quarterly.yml', MD],
+	// hồ sơ nghiên cứu kinh điển ở trang nhà (chỉ thị mới)
+	'D3-L1': [MD],
+	// công cụ, trang Ngộ nhận và bài thử sinh từ thẻ
+	'D8-L1': [MD],
+	'D8-L2': [MD],
+	'D8-L3': [MD, 'src/pages/'],
 	// Sách in, Tờ tóm tắt sinh lúc build; dùng khi mất mạng
-	'D8-L4': ['astro.config.mjs', 'src/pages/', 'src/ban-build.mjs', 'public/'],
+	'D8-L4': ['astro.config.mjs', 'src/pages/', 'src/ban-build.mjs', 'public/', MD],
 };
+
+/** Các lô của một đợt ("D3" -> ["D3-L1", "D3-L2"]) theo plans/lam-lai/anh-xa.md. */
+const cacLoCuaDot = (dot, goc) =>
+	[...fs.readFileSync(path.join(goc, 'plans/lam-lai/anh-xa.md'), 'utf8').matchAll(/^## (D\d+-L\d+) /gm)].map((x) => x[1]).filter((x) => x.startsWith(`${dot}-`));
 
 /** File `file` (đường dẫn từ gốc repo) có thuộc phạm vi của lô `lo` ("D3-L1"), với các trang `trangLo`, không. */
 function trongPhamVi(file, lo, trangLo) {
 	if (CHUNG.some((re) => re.test(file))) return true;
-	if ((THEM[lo] ?? []).some((p) => (p.endsWith('/') ? file.startsWith(p) : file === p))) return true;
+	const them = lo.endsWith('-GOM') ? Object.entries(THEM).filter(([k]) => k.startsWith(lo.slice(0, -3))).flatMap(([, v]) => v) : (THEM[lo] ?? []);
+	if (them.some((p) => (p.endsWith('/') ? file.startsWith(p) : file === p))) return true;
 	// hồ sơ kiểm định của trang: chỉ của trang trong lô
 	const hs = /^kiem-dinh\/(.+)\.yml$/.exec(file);
 	if (hs) return trangLo.includes(hs[1]);
-	const bc = `plans/lam-lai/bao-cao/${lo.toLowerCase()}`;
+	// nhánh gom (D3-GOM): báo cáo của mọi lô trong đợt
+	const bc = `plans/lam-lai/bao-cao/${lo.endsWith('-GOM') ? lo.toLowerCase().slice(0, -4) : lo.toLowerCase()}`;
 	if (file.startsWith(bc) && /^[./-]/.test(file.slice(bc.length))) return true;
 	const m = /^src\/content\/docs\/(.+)\.mdx?$/.exec(file);
 	if (!m) return false;
@@ -65,10 +79,11 @@ function nhanhHienTai(goc) {
 
 /** Kiểm phạm vi của nhánh `nhanh` trong repo `goc`: null nếu không phải nhánh lô, không thì { lo, loi }. */
 function kiemPhamVi(goc, nhanh) {
-	const m = /^moi\/(d\d+-l\d+)$/i.exec(nhanh);
+	const m = /^moi\/(d\d+-(?:l\d+|gom))$/i.exec(nhanh);
 	if (!m) return null;
 	const lo = m[1].toUpperCase();
-	const trangLo = trangCuaLo(lo, goc);
+	// nhánh gom của đợt (moi/d3-gom: lượt 2, review, khóa cả đợt): phạm vi là hợp các lô của đợt (review D1.6)
+	const trangLo = lo.endsWith('-GOM') ? cacLoCuaDot(lo.slice(0, -4), goc).flatMap((x) => trangCuaLo(x, goc)) : trangCuaLo(lo, goc);
 	const nen = ['main', 'origin/main'].find((b) => {
 		try {
 			return git(goc, 'rev-parse', '--verify', '--quiet', `${b}^{commit}`);
@@ -168,6 +183,14 @@ test('phạm vi của một lô: trang của lô, thư mục chung, báo cáo c�
 	assert.ok(trongPhamVi('astro.config.mjs', 'D2-L1', ['index']));
 	assert.ok(trongPhamVi('src/content/docs/index.md', 'D2-L1', ['index']));
 	assert.ok(trongPhamVi('src/pages/sach.astro', 'D8-L4', []));
+	assert.ok(trongPhamVi('src/plugins/psyche-markdown.mjs', 'D3-L1', trang));
+	assert.ok(!trongPhamVi('src/plugins/psyche-markdown.mjs', 'D3-L2', trang));
+	// nhánh gom: báo cáo của mọi lô trong đợt, phần giao riêng của các lô ấy
+	assert.ok(trongPhamVi('plans/lam-lai/bao-cao/d3-gom.md', 'D3-GOM', trang));
+	assert.ok(trongPhamVi('plans/lam-lai/bao-cao/d3-l2-luot-2.yml', 'D3-GOM', trang));
+	assert.ok(trongPhamVi('src/plugins/psyche-markdown.mjs', 'D3-GOM', trang));
+	assert.ok(!trongPhamVi('plans/lam-lai/bao-cao/d4-l1.md', 'D3-GOM', trang));
+	assert.deepEqual(cacLoCuaDot('D3', ROOT), ['D3-L1', 'D3-L2']);
 });
 
 test('nhánh lô trong repo thử: bắt file ngoài phạm vi (đã commit, chưa commit, file mới), hồ sơ và khóa trang của lô khác, khóa bản ghi bị đổi hay gỡ', () => {

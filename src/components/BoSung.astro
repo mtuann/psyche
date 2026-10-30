@@ -2,11 +2,12 @@
 // Bổ sung có ngày của trang (D1.4; plans/ben-vung/them-noi-dung.md): src/content/bo-sung/<trang>/<ngày>.md, hiện ở cuối
 // nội dung, mới nhất trước. Bổ sung nằm ngoài file trang, nên thêm bổ sung không đổi mã băm của trang đã khóa.
 import { getCollection, render } from 'astro:content';
-import { trangCuaMuc } from '../ban-build.mjs';
+import { ban, trangCuaMuc } from '../ban-build.mjs';
 import { ngayViet } from '../kiem-dinh.mjs';
 
-// Chưa có bổ sung nào thì không gọi getCollection (Astro in cảnh báo bộ rỗng ở mọi trang)
-const CO_BO_SUNG = Object.keys(import.meta.glob('/src/content/bo-sung/**/*.md')).length > 0;
+// Chưa có bổ sung nào thì không gọi getCollection (Astro in cảnh báo bộ rỗng ở mọi trang). Bổ sung chưa có hồ sơ và khóa
+// riêng (đợt 9, plans/ben-vung/them-noi-dung.md), nên bản thật chưa hiện bổ sung nào: chỉ bản xem (review D1.6)
+const CO_BO_SUNG = ban() === 'xem' && Object.keys(import.meta.glob('/src/content/bo-sung/**/*.md')).length > 0;
 const trang = trangCuaMuc(Astro.locals.starlightRoute.entry);
 const ds = trang && CO_BO_SUNG
 	? (await getCollection('bo-sung', (b) => b.data.trang === trang)).sort((a, b) => +b.data.ngay - +a.data.ngay)

@@ -91,9 +91,9 @@ node tools/khoa.mjs xuat D3-L1                 # danh sách nhận định cho l
 node tools/khoa.mjs nhap <file lượt 2>         # đưa kết quả lượt 2 vào hồ sơ
 ```
 
-- Khóa đòi: mọi nhận định có `loai` (chuẩn mục 1), `ket_qua` (`dung`, `da-sua`, `da-lam-mem`, `da-bo`; ba loại sau cần `ghi_chu`), nguồn có trong `nguon` của hồ sơ, lượt 2 theo tầng (lõi: mọi nhận định; mở rộng: 8 nhận định ngẫu nhiên cộng mọi `nhan`, `lam-sang`, mẫu có câu sai thì kiểm hết); nhãn có `nhan`, `co_so`, `ly_do`; thời sự có `het_han`; câu `ve-site` không qua lượt 2 mà có `review`; `tang` của hồ sơ khớp `trang.yml`; trang Sức khỏe tâm thần có `nguoi.chuyen_gia`; bài mở rộng có `dua_tren`, `kiem_lai_truoc` ở `trang.yml`; trang không còn ô "chưa chuyển", không có khoảng trắng cuối dòng.
+- Khóa đòi: mọi nhận định có `loai` (chuẩn mục 1), `ket_qua` (`dung`, `da-sua`, `da-lam-mem`, `da-bo`; ba loại sau cần `ghi_chu`), nguồn có trong `nguon` của hồ sơ, lượt 2 theo tầng (kết quả `dung`, `sai`, `qua-manh`, `khong-chac`; `sai`, `qua-manh` cần `cau_dung`; lõi: mọi nhận định; mở rộng: 8 nhận định ngẫu nhiên cộng mọi `nhan`, `lam-sang`, mẫu có câu `sai` hay `qua-manh` thì kiểm hết); nhãn có `nhan`, `co_so`, `ly_do`; thời sự có `het_han` chưa tới; câu `ve-site` không qua lượt 2 mà có `review`; `tang` của hồ sơ khớp `trang.yml`; mọi trang có nhận định thuộc lĩnh vực Sức khỏe tâm thần có `nguoi.chuyen_gia`; chỉ trang khung, trang sinh từ dữ liệu và 404 được khóa không có nhận định; bài mở rộng có `dua_tren`, `kiem_lai_truoc` ở `trang.yml`; trang không còn ô "chưa chuyển", không có khoảng trắng cuối dòng.
 - Trang chủ tạm và trang 404 đã khóa (D1.6, hồ sơ không có nhận định, có `ghi_chu`).
-- Nhánh lô `moi/dN-lM` chỉ chạm phạm vi của lô (`tests/pham-vi.test.mjs`, trang lấy từ `plans/lam-lai/anh-xa.md`).
+- Nhánh lô `moi/dN-lM` chỉ chạm phạm vi của lô; nhánh gom `moi/dN-gom` chỉ chạm phạm vi các lô của đợt (`tests/pham-vi.test.mjs`, trang lấy từ `plans/lam-lai/anh-xa.md`). Sửa `src/plugins/psyche-markdown.mjs` (chỉ thị mới) chỉ ở lô được giao.
 
 ## Giao diện
 
@@ -139,7 +139,7 @@ Chốt ở D1.4 (`src/plugins/psyche-markdown.mjs`, `src/plugins/thanh-phan.mjs`
 
 | Khối | Cách viết | Hiện ra |
 |---|---|---|
-| Khung nhãn mức độ chắc chắn | `:::vung-chac[Ý chính]` … `:::` (cả `kha-vung`, `tranh-cai`, `bac-bo`); không ghi lại chữ "Vững chắc:"; chỉ trang giới thiệu nhãn mới bỏ ý chính (`:::vung-chac`) | Khung nền màu nhạt của nhãn, nhãn dạng viên, ý chính in đậm; trình đọc màn hình đọc "Vững chắc: ý chính" |
+| Khung nhãn mức độ chắc chắn | `:::vung-chac[Ý chính]` … `:::` (cả `kha-vung`, `tranh-cai`, `bac-bo`); không ghi lại chữ "Vững chắc:"; chỉ trang giới thiệu nhãn (`bat-dau/doc-nhan-chac-chan`) được bỏ ý chính, trang khác thì build hỏng | Khung nền màu nhạt của nhãn, nhãn dạng viên, ý chính in đậm; trình đọc màn hình đọc "Vững chắc: ý chính" |
 | Chip nhãn trong câu | `:nhan[vung-chac]` | Viên nhỏ "Vững chắc" |
 | Khối thu gọn | `:::thu-gon[Xem đáp án]` … `:::` | Nút bấm để mở (vùng bấm 44 px); khi in thì mở hết |
 | Khung "Ở Việt Nam" | `:::o-viet-nam` … `:::`, tiêu đề khác: `:::o-viet-nam[Ở Việt Nam và châu Á]` | Khung viền hồng có tiêu đề nhỏ |
@@ -148,7 +148,7 @@ Chốt ở D1.4 (`src/plugins/psyche-markdown.mjs`, `src/plugins/thanh-phan.mjs`
 | Hình | `::hinh{ten="duong-cong-quen"}` (tên như vùng `<!-- fig:… -->` của site cũ) | Hình tĩnh `src/hinh/<tên>.html`: một `<figure class="pz-fig">`, SVG có `role="img"` và `aria-label`, chữ thật, màu theo `currentColor` và lớp `pz-fig-a` (chàm), `pz-fig-b` (hồng), không viết cứng mã màu. Chưa có thì ô "chưa chuyển" |
 | Danh sách nguồn | `::nguon{id="cepeda2006,murre2015"}` | Danh sách APA dựng từ `src/data/nguon.yml`. Trang chuyển từ site cũ giữ mục Nguồn viết tay |
 | Ghi chú, mẹo, chú ý | `:::note`, `:::tip`, `:::caution`, `:::danger`, tiêu đề tùy chọn `:::tip[…]` | Aside của Starlight |
-| Bổ sung có ngày | File `src/content/bo-sung/<trang>/<năm-tháng-ngày>.md`, frontmatter `trang`, `ngay`, `anh_huong_nhan` (`src/content/bo-sung/README.txt`) | Mục "Bổ sung" cuối trang, mới nhất trước; không sửa trang nên không đổi mã băm |
+| Bổ sung có ngày | File `src/content/bo-sung/<trang>/<năm-tháng-ngày>.md`, frontmatter `trang`, `ngay`, `anh_huong_nhan` (`src/content/bo-sung/README.txt`) | Mục "Bổ sung" cuối trang, mới nhất trước; không sửa trang nên không đổi mã băm. Chưa có khóa riêng (đợt 9), nên chỉ hiện ở bản xem |
 | Id cố định cho tiêu đề | `## Tiêu đề { #id }` | Giữ id cũ để link `#mục` cũ còn chạy |
 
 - Script công cụ của site cũ chép nguyên ở `src/scripts/cu/` (nạp qua `src/scripts/cong-cu/<tên>.js`, `nen.js`); đợt 8 viết lại thành module. Kiểm thử trình duyệt chờ `data-san` mà `mount()` của công cụ đặt khi dựng xong.

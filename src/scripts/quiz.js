@@ -32,6 +32,8 @@ export function mount(root, thuTu = 0) {
 	const song = the('div', 'pz-quiz__song');
 	const diem = the('p', 'pz-quiz__diem');
 	diem.setAttribute('role', 'status');
+	// nút "Làm lại" đứng ngoài vùng thông báo (role=status), để trình đọc màn hình không đọc cả nút trong thông báo
+	const cuoi = the('p', 'pz-quiz__lai');
 	let daTraLoi = 0;
 	let dung = 0;
 
@@ -56,11 +58,15 @@ export function mount(root, thuTu = 0) {
 			hop.dataset.xong = '1';
 			daTraLoi++;
 			if (o.ok) dung++;
+			// dấu ✓, ✗ là chữ của CSS (::after), có trình đọc màn hình không đọc: thêm chữ ẩn cho rõ (review D1.4)
+			const an = (nutChon, chu) => nutChon.insertAdjacentHTML('beforeend', ` <span class="pz-an">(${chu})</span>`);
 			for (const x of nut) {
 				x.b.disabled = true;
 				if (x.o.ok) x.b.classList.add('pz-chon--dung');
 				if (x.b === b && !o.ok) x.b.classList.add('pz-chon--sai');
 				if (x.b === b) x.b.setAttribute('aria-pressed', 'true');
+				if (x.o.ok) an(x.b, x.b === b ? 'đáp án đúng, bạn đã chọn' : 'đáp án đúng');
+				else if (x.b === b) an(x.b, 'bạn đã chọn, chưa đúng');
 			}
 			const ket = the('p', `pz-cau__ket ${o.ok ? 'pz-cau__ket--dung' : 'pz-cau__ket--sai'}`);
 			ket.textContent = o.ok ? 'Chính xác.' : 'Chưa đúng. Đáp án đúng được đánh dấu ở trên.';
@@ -76,21 +82,22 @@ export function mount(root, thuTu = 0) {
 	function xong() {
 		diem.textContent =
 			`Bạn trả lời đúng ${dung} / ${qs.length} câu. Điểm số không quan trọng bằng phần giải thích: ` +
-			'nhầm lẫn rồi được giải thích là một cách nhớ rất tốt. ';
+			'nhầm lẫn rồi được giải thích là một cách nhớ rất tốt.';
 		kho()?.add('quiz', { quiz: id, score: dung, total: qs.length });
 		const lai = the('button', 'pz-nut', 'Làm lại');
 		lai.type = 'button';
 		lai.addEventListener('click', () => {
 			song.remove();
 			diem.remove();
+			cuoi.remove();
 			delete root.dataset.ready;
 			mount(root, thuTu);
 			root.querySelector('.pz-chon')?.focus();
 		});
-		diem.append(lai);
+		cuoi.append(lai);
 	}
 
 	tinh.hidden = true;
 	root.classList.add('pz-quiz--song');
-	root.append(song, diem);
+	root.append(song, diem, cuoi);
 }

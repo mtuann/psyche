@@ -8,4 +8,10 @@ Kế hoạch: [`plans/lam-lai/README.md`](plans/lam-lai/README.md). Sơ đồ: [
 npm ci && npm run build && npm test   # Node 24 (.nvmrc)
 ```
 
+## Giấy phép
+
+- **Nội dung** (chữ, câu hỏi, hình và sơ đồ soạn cho site): [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), toàn văn trong `LICENSE-CONTENT`. Được dùng lại, kể cả cho mục đích thương mại, nếu ghi nguồn và chia sẻ lại theo cùng giấy phép.
+- **Giữ giấy phép riêng:** font (SIL OFL 1.1, `public/fonts/`) và nội dung trích từ nguồn khác (ghi ở mục Nguồn của từng trang).
+- **Mã nguồn:** chưa chọn giấy phép.
+
 Site mang tính giáo dục, không thay thế chẩn đoán hay điều trị chuyên môn.

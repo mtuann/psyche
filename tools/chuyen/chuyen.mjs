@@ -47,7 +47,16 @@ export function doiLink(url, trang, canhBao = []) {
 		return url;
 	}
 	const [duongDan, muc] = url.split('#');
-	const dich = path.posix.normalize(path.posix.join(path.posix.dirname(trang), decodeURI(duongDan)));
+	// %… lẻ (không giải mã được) thì giữ nguyên chữ
+	const giai = (x) => {
+		try {
+			return decodeURI(x);
+		} catch {
+			canhBao.push(`link có mã %… lỗi, giữ nguyên chữ: ${url}`);
+			return x;
+		}
+	};
+	const dich = path.posix.normalize(path.posix.join(path.posix.dirname(trang), giai(duongDan)));
 	if (dich.startsWith('..')) {
 		canhBao.push(`link ra ngoài docs/: ${url}`);
 		return url;
@@ -57,7 +66,7 @@ export function doiLink(url, trang, canhBao = []) {
 	// (/psyche-zero/<trang>/, trang mục lục: thư mục của nó), không theo file
 	if (duongDan.endsWith('/')) {
 		const tu = /(^|\/)index$/.test(trang) ? path.posix.dirname(trang) : trang;
-		const t = path.posix.normalize(path.posix.join(tu === '.' ? '' : tu, decodeURI(duongDan))).replace(/\/$/, '');
+		const t = path.posix.normalize(path.posix.join(tu === '.' ? '' : tu, giai(duongDan))).replace(/\/$/, '');
 		if (t.startsWith('..')) {
 			canhBao.push(`link ra ngoài site: ${url}`);
 			return url;

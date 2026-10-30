@@ -66,7 +66,7 @@ function catNoiDung(html, laGoc, ten) {
 }
 
 /** Chữ hiện ra của một đoạn HTML ngắn (dữ liệu câu hỏi của trang mới): bỏ thẻ, giải mã, gộp khoảng trắng. */
-const chuHien = (html) => giaiMa(String(html ?? '').replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
+const chuHienGoc = (html) => giaiMa(String(html ?? '').replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
 
 /** Một câu hỏi thành một chuỗi để so: câu, các lựa chọn (đáp án đúng có dấu ✓), giải thích. */
 const cauHoi = ({ q, opts, why }) => [q, ...opts.map((o) => (o.ok ? '✓ ' : '') + o.t), why].join(' | ');
@@ -155,8 +155,9 @@ function phanThanhPhanCu(the) {
 	return { quiz: quiz.map((x) => cauHoi({ ...x, why: x.why.filter(Boolean).join(' ') })) };
 }
 
-/** Như trên cho trang mới: câu hỏi trong data-quiz (HTML của từng phần). */
+/** Như trên cho trang mới: câu hỏi trong data-quiz (HTML của từng phần; nhãn "sắp có" không phải chữ của trang). */
 function phanThanhPhanMoi(the) {
+	const chuHien = (html) => chuHienGoc(String(html ?? '').replace(/ <span class="pz-sap-co-nhan"[^>]*>sắp có<\/span>/g, ''));
 	const quiz = [];
 	for (const t of the) {
 		if (t.loai !== 'mo') continue;

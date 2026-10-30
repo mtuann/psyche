@@ -271,8 +271,12 @@
 	margin: 1.25rem 0 0;
 	font-weight: 600;
 }
-.pz-quiz__diem:empty {
+.pz-quiz__diem:empty,
+.pz-quiz__lai:empty {
 	display: none;
+}
+.pz-quiz__lai {
+	margin: 0.5rem 0 0;
 }
 
 /* Nút của site (câu hỏi, công cụ cũ dùng lớp md-button của Material) */
@@ -362,23 +366,32 @@
 	border-radius: 0.75rem;
 	background: var(--pz-card);
 }
-/* Khối chưa dựng (chờ script): giữ chỗ để bố cục không xô khi công cụ hiện ra (Lighthouse đo CLS) */
-.pz-cong-cu:empty {
-	min-height: 14rem;
-}
-/* Stroop: màn hình đầu (chọn phiên bản, ô màu, nút Tiếp tục) cao khoảng 663 px ở 360 px, 623 px ở 412 px, 514 px từ 768 px
-   (đo ở D1.8, font Be Vietnam Pro 16 px) */
-.pz-stroop:empty {
-	min-height: 41.5rem;
-}
-@media (min-width: 26rem) {
+/* Khối chưa dựng (chờ script): giữ chỗ để bố cục không xô khi công cụ hiện ra (Lighthouse đo CLS). Chỉ khi có
+   JavaScript: tắt JavaScript thì không có khung trống cao (review D1.4) */
+@media (scripting: enabled) {
+	.pz-cong-cu:empty {
+		min-height: 14rem;
+	}
+	/* Stroop: màn hình đầu (chọn phiên bản, ô màu, nút Tiếp tục) cao khoảng 663 px ở 360 px, 623 px ở 412 px, 514 px từ 768 px
+	   (đo ở D1.8, font Be Vietnam Pro 16 px) */
 	.pz-stroop:empty {
-		min-height: 39rem;
+		min-height: 41.5rem;
+	}
+	@media (min-width: 26rem) {
+		.pz-stroop:empty {
+			min-height: 39rem;
+		}
+	}
+	@media (min-width: 40rem) {
+		.pz-stroop:empty {
+			min-height: 32rem;
+		}
 	}
 }
-@media (min-width: 40rem) {
-	.pz-stroop:empty {
-		min-height: 32rem;
+/* Tắt JavaScript: khung công cụ rỗng không hiện (dòng <noscript> của trang báo cần JavaScript) */
+@media (scripting: none) {
+	.pz-cong-cu:empty {
+		display: none;
 	}
 }
 .pz-cong-cu :is(p, li) {

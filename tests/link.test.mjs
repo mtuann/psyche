@@ -30,11 +30,22 @@ test('link tới trang chưa có trong bản build thành chữ thường kèm n
 	assert.match(html, /<span class="pz-sap-co" data-href="\/psyche\/thi-nghiem\/milgram\/#a" title="[^"]+">Milgram <em>vâng lời<\/em> <span class="pz-sap-co-nhan" data-pagefind-ignore[^>]*>sắp có<\/span><\/span>/);
 	assert.doesNotMatch(html, /<a [^>]*href="\/psyche\/thi-nghiem\/milgram\//, 'không còn thẻ <a> tới trang chưa có');
 	for (const giu of ['href="/psyche/"', 'href="https://www.apa.org/"', 'href="/psyche/favicon.svg"', 'href="#muc"']) assert.ok(html.includes(giu), giu);
+	// link trong lời giải thích của câu hỏi (data-quiz), như HTML thô
+	const q = markdownToHtml('<div class="pz-quiz" data-quiz="[{&quot;q&quot;:&quot;Hỏi&quot;,&quot;opts&quot;:[],&quot;why&quot;:[&quot;Xem &lt;a href=\\&quot;/psyche/thi-nghiem/milgram/\\&quot;&gt;Milgram&lt;/a&gt;&quot;]}]"></div>', { hastPlugins: [plugin] }).html;
+	assert.doesNotMatch(htmlCauHoi(q), /<a /);
+	assert.match(htmlCauHoi(q), /<span class="pz-sap-co" data-href="\/psyche\/thi-nghiem\/milgram\/"[^>]*>Milgram <span class="pz-sap-co-nhan"/);
 	// HTML thô viết trong trang
 	const tho = markdownToHtml('<p><a href="/psyche/thi-nghiem/milgram/">Milgram</a> và <a href="/psyche/thi-nghiem/asch/">Asch</a></p>', { hastPlugins: [plugin] }).html;
 	assert.match(tho, /<span class="pz-sap-co" data-href="\/psyche\/thi-nghiem\/milgram\/" title="[^"]+">Milgram <span class="pz-sap-co-nhan" data-pagefind-ignore>sắp có<\/span><\/span>/);
 	assert.match(tho, /<a href="\/psyche\/thi-nghiem\/asch\/">Asch<\/a>/);
 });
+
+/** HTML của câu hỏi trong một trang (data-quiz: JSON đã thoát; quiz.js đưa vào trang khi dựng câu hỏi bấm được). */
+const htmlCauHoi = (html) =>
+	[...html.matchAll(/\sdata-quiz="([^"]*)"/g)]
+		.flatMap(([, ma]) => JSON.parse(ma.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')))
+		.flatMap((c) => [c.q, ...c.opts.map((o) => o.t), ...c.why])
+		.join('\n');
 
 const trangDist = () => {
 	if (!fs.existsSync(path.join(DIST, 'index.html'))) throw new Error('Chưa có dist/: chạy `npm run build` trước `npm test`.');
@@ -53,7 +64,7 @@ test('mọi link nội bộ trong nội dung các trang của bản build (cả 
 	const hong = [];
 	for (const f of trangDist()) {
 		const html = fs.readFileSync(path.join(DIST, f), 'utf8');
-		const noiDung = html.slice(html.indexOf('<main'), html.indexOf('</main>'));
+		const noiDung = html.slice(html.indexOf('<main'), html.indexOf('</main>')) + htmlCauHoi(html);
 		for (const [, goc] of noiDung.matchAll(/\shref="([^"]+)"/g)) {
 			const href = goc.replaceAll('&amp;', '&');
 			if (href.startsWith('#')) {
@@ -81,7 +92,7 @@ test('chữ "sắp có" trỏ tới một trang trong kế hoạch mà bản bui
 	const hong = [];
 	for (const f of trangDist()) {
 		const html = fs.readFileSync(path.join(DIST, f), 'utf8');
-		for (const [the] of html.matchAll(/<span class="pz-sap-co"[^>]*>/g)) {
+		for (const [the] of (html + htmlCauHoi(html)).matchAll(/<span class="pz-sap-co"[^>]*>/g)) {
 			const href = /\sdata-href="([^"]*)"/.exec(the)?.[1]?.replaceAll('&amp;', '&');
 			if (!href) {
 				hong.push(`${f}: "sắp có" không có data-href`);

@@ -37,10 +37,10 @@ Chủ repo chọn ngày 29/10/2026 ("đồng ý với plan và step"; dùng Astr
 - [x] **CI:** như opus (mỗi phần một job, chạy song song; deploy chạy lại trên bản thật), thêm: bỏ qua lần push chỉ đổi kế hoạch, lưu đệm `node_modules` và trình duyệt. Làm trước ở D1.1 (theo yêu cầu của chủ repo), hoàn tất ở D1.7. Chi tiết: `cong-nghe.md` mục 8.
 - [x] **Sách in, Tờ tóm tắt, trang Ngộ nhận** sinh lúc build từ trang và dữ liệu đã khóa; không commit file sinh.
 - [x] **Repo riêng tư** `mtuann/psyche` (chủ repo tạo ngày 29/10/2026; có GitHub Pro nên vẫn đăng Pages, trang Pages công khai). Site không link tới repo (người đọc mở ra trang 404); `tests/khung.test.mjs` chặn. Repo công khai sau này thì bỏ phép thử ấy.
+- [x] **Giấy phép nội dung:** CC BY-SA 4.0 như opus (chủ repo chọn ngày 30/10/2026); toàn văn trong `LICENSE-CONTENT`, chân mọi trang ghi giấy phép. Mã nguồn chưa chọn giấy phép.
 
 Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 
-- Giấy phép nội dung: giữ "© Psyche" như site cũ, hay CC BY-SA 4.0 như opus. Trước D1.7.
 - Ai rà soát chuyên môn 4 trang Sức khỏe tâm thần (điều kiện để khóa). Trước đợt 7.
 - Khi site mới đủ (đợt 9): có thêm dải "Psyche đã chuyển sang /psyche/" lên site cũ không. Việc này phải sửa repo cũ, nên chỉ làm khi chủ repo cho phép rõ.
 

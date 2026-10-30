@@ -128,3 +128,17 @@ test('site cũ: mọi trang chuyển được (không lỗi), không còn cú ph
 	}
 	assert.deepEqual(loi, []);
 });
+
+/** Hình đã sửa có chủ ý sau khi chép (lô của trang ghi doi_chu ở hồ sơ, kèm lý do và nguồn): thêm tên vào đây. */
+const HINH_DA_SUA = new Set([]);
+
+test('hình tĩnh src/hinh/<tên>.html chép đúng hình của trang cũ (chữ trong hình, aria-label; so-chu không so SVG)', { skip: !CO_SITE_CU && 'không có ../psyche-zero/' }, () => {
+	const thu = new URL('../src/hinh/', import.meta.url);
+	const ten = fs.existsSync(thu) ? fs.readdirSync(thu).filter((f) => f.endsWith('.html')).map((f) => f.slice(0, -5)) : [];
+	const cu = new Map();
+	for (const t of tatCaTrangCu()) for (const [k, v] of chuyenTrang(fs.readFileSync(`${DOCS_CU}/${t}.md`, 'utf8'), { trang: t }).hinh) cu.set(k, v);
+	for (const t of ten.filter((x) => !HINH_DA_SUA.has(x))) {
+		assert.ok(cu.has(t), `src/hinh/${t}.html: site cũ không có vùng <!-- fig:${t} -->`);
+		assert.equal(fs.readFileSync(new URL(`${t}.html`, thu), 'utf8'), cu.get(t), `src/hinh/${t}.html khác hình của trang cũ: sửa có chủ ý thì ghi doi_chu ở hồ sơ trang và thêm tên vào HINH_DA_SUA`);
+	}
+});

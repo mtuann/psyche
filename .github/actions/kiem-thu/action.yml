@@ -41,13 +41,14 @@ runs:
       with:
         path: node_modules
         key: ${{ steps.goi.outputs.cache-primary-key }}
-    - name: Build (${{ inputs.ban == 'xem' && 'bản xem' || 'bản thật' }})
-      run: npm run ${{ inputs.ban == 'xem' && 'build:xem' || 'build' }}
-      shell: bash
-    # mọi trang, bản ghi đã khóa còn khớp mã băm (build cũng kiểm; bước riêng để log chỉ rõ mục lệch, D1.7)
+    # mọi trang, bản ghi đã khóa còn khớp mã băm, trước khi build: build cũng kiểm và dừng ở mục lệch đầu tiên; bước này
+    # in mọi mục, khớp hay lệch (D1.7; review D1.7: đặt trước Build mới có ích)
     - name: Kiểm khóa
       if: inputs.phan == 'npm-test'
       run: node tools/khoa.mjs tinh
+      shell: bash
+    - name: Build (${{ inputs.ban == 'xem' && 'bản xem' || 'bản thật' }})
+      run: npm run ${{ inputs.ban == 'xem' && 'build:xem' || 'build' }}
       shell: bash
     # gồm kiểm thử khóa, phạm vi lô (nhánh moi/dN-lM so với main: test.yml checkout đủ lịch sử), link và #mục, thành phần,
     # script chuyển; phép thử cần ../psyche-zero/ tự bỏ qua

@@ -253,3 +253,115 @@ test('bản build: trang chưa khóa có dải "Chưa kiểm định" (chỉ ở
 	}
 	assert.doesNotMatch(fs.readFileSync(path.join(DIST, '404.html'), 'utf8'), /pz-chua-kiem-dinh/);
 });
+
+test('review D1.6: qua-manh là kết quả lượt 2; câu về chính site review sai; tới hạn; lõi không có nhận định; Sức khỏe tâm thần mọi tầng', () => {
+	const { goc, ghi, xoa } = banChep();
+	try {
+		ghi('src/data/trang.yml', '- id: thi-nghiem/a\n  tang: loi\n  linh_vuc: tam-ly-xa-hoi\n- id: kham-pha/suc-khoe-tam-than/b\n  tang: mo-rong\n  linh_vuc: suc-khoe-tam-than\n  dua_tren: [thi-nghiem/a]\n  kiem_lai_truoc: 2028-01\n');
+		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\nChữ.\n');
+		ghi('src/content/docs/kham-pha/suc-khoe-tam-than/b.md', '---\ntitle: B\n---\n\nChữ.\n');
+		const loi = (ds, them) => loiHoSo(hoSo('thi-nghiem/a', 'loi', ds, them), 'thi-nghiem/a', goc).join('\n');
+		assert.equal(loi([nd({ luot_2: 'qua-manh', ket_qua: 'da-lam-mem', ghi_chu: 'viết lại' })]), '');
+		assert.match(loi([nd({ luot_2: 'qua-manh' })]), /lượt 2 cho "qua-manh" mà kết quả "dung": ghi_chu/);
+		assert.match(loi([nd({ loai: 've-site', luot_2: null, nguon: [], ghi_chu: 'x', review: 'sai' })]), /review ghi sai mà kết quả dung/);
+		assert.match(loi([nd({ loai: 'thoi-su', het_han: '2020-01-01' })]), /đã tới hạn/);
+		assert.equal(loi([nd({ loai: 'thoi-su', het_han: '2099-01-01' })]), '');
+		// trang lõi không được khóa với 0 nhận định, kể cả khi có ghi_chu
+		assert.match(loi([], { ghi_chu: 'không có gì' }), /trang tầng loi cần ít nhất một nhận định/);
+		const mr = 'kham-pha/suc-khoe-tam-than/b';
+		const nhieu = Array.from({ length: 3 }, (_, i) => nd({ id: `n${i}` }));
+		assert.match(loiHoSo(hoSo(mr, 'mo-rong', nhieu), mr, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
+		// mẫu lượt 2 của bài mở rộng: một câu qua-manh thì phải kiểm cả trang
+		const mau = Array.from({ length: 12 }, (_, i) => nd({ id: `m${i}`, luot_2: i < 8 ? 'dung' : null }));
+		mau[0].luot_2 = 'qua-manh';
+		mau[0].ket_qua = 'da-lam-mem';
+		mau[0].ghi_chu = 'x';
+		const co = hoSo(mr, 'mo-rong', mau);
+		co.lan[0].nguoi = { ...NGUOI, chuyen_gia: 'BS. X, 2027-01-05' };
+		assert.match(loiHoSo(co, mr, goc).join(), /phải kiểm cả trang \(mới có 8\/12\)/);
+	} finally {
+		xoa();
+	}
+});
+
+test('review D1.6: xuất mẫu bài mở rộng, nhập (đòi nguồn, cau_dung; không ghi vào hồ sơ đã khóa), mở khóa khi không có hồ sơ, khóa đè', () => {
+	const { goc, ghi, chay, xoa } = banChep();
+	try {
+		ghi('src/data/trang.yml', '- id: kham-pha/tri-nho/m\n  tang: mo-rong\n  linh_vuc: tri-nho\n  dua_tren: [kham-pha/tri-nho/l]\n  kiem_lai_truoc: 2028-01\n- id: kham-pha/tri-nho/l\n  tang: loi\n  linh_vuc: tri-nho\n');
+		ghi('src/data/nguon.yml', '- id: asch1956\n  loai: bai-bao\n  tac_gia: Asch, S. E.\n  nam: 1956\n  ten: Studies\n');
+		ghi('src/content/docs/kham-pha/tri-nho/m.md', '---\ntitle: M\n---\n\nChữ.\n');
+		ghi('src/content/docs/kham-pha/tri-nho/l.md', '---\ntitle: L\n---\n\nChữ.\n');
+		const f = (t) => path.join(goc, `kiem-dinh/kham-pha/tri-nho/${t}.yml`);
+		const ghiHs = (t, hs) => fs.writeFileSync(f(t), stringify(hs));
+		chay('mau', 'kham-pha/tri-nho/m', 'kham-pha/tri-nho/l');
+		const nhieu = [...Array.from({ length: 12 }, (_, i) => nd({ id: `n${i}`, luot_2: null })), nd({ id: 'nh', loai: 'nhan', nhan: 'kha-vung', co_so: ['x'], ly_do: 'y', luot_2: null })];
+		ghiHs('m', hoSo('kham-pha/tri-nho/m', 'mo-rong', nhieu));
+		chay('xuat', 'kham-pha/tri-nho/m', '--ra', 'x.yml');
+		const ds = parse(fs.readFileSync(path.join(goc, 'x.yml'), 'utf8'));
+		assert.equal(ds.length, MAU_MO_RONG + 1, 'mẫu 8 nhận định cộng mọi nhận định loại nhan');
+		assert.ok(ds.some((d) => d.id === 'nh'));
+		ghi('a.yml', stringify([{ trang: 'kham-pha/tri-nho/m', id: 'n0', luot_2: 'dung' }]));
+		assert.throws(() => chay('nhap', 'a.yml'), /dung cần nguon/);
+		ghi('b.yml', stringify([{ trang: 'kham-pha/tri-nho/m', id: 'n0', luot_2: 'qua-manh', nguon: ['https://x.org/'] }]));
+		assert.throws(() => chay('nhap', 'b.yml'), /qua-manh cần cau_dung/);
+		ghi('c.yml', stringify([{ trang: 'kham-pha/tri-nho/m', id: 'n0', luot_2: 'qua-manh', nguon: ['https://x.org/'], cau_dung: 'Câu nhẹ hơn.' }]));
+		chay('nhap', 'c.yml');
+		assert.equal(parse(fs.readFileSync(f('m'), 'utf8')).nhan_dinh[0].luot_2, 'qua-manh');
+		// hồ sơ đã khóa: không nhập vào; không khóa đè; mở khóa khi không có hồ sơ thì từ chối
+		ghiHs('l', hoSo('kham-pha/tri-nho/l', 'loi', [nd()]));
+		chay('khoa', 'kham-pha/tri-nho/l');
+		ghi('d.yml', stringify([{ trang: 'kham-pha/tri-nho/l', id: 'n1', luot_2: 'dung', nguon: ['https://x.org/'] }]));
+		assert.throws(() => chay('nhap', 'd.yml'), /đã khóa/);
+		assert.throws(() => chay('khoa', 'kham-pha/tri-nho/l'), /đã khóa/);
+		fs.rmSync(f('l'));
+		assert.throws(() => chay('mo', 'kham-pha/tri-nho/l', '--ly-do', 'thử'), /không có hồ sơ/);
+	} finally {
+		xoa();
+	}
+});
+
+test('chiTrangTrongBan: ở bản thật, trang chưa khóa không qua plugin của dự án (lỗi của nó không làm hỏng bản đăng); bản xem thì qua', async () => {
+	const { chiTrangTrongBan } = await import('../src/ban-build.mjs');
+	const docs = path.join(ROOT, 'src/content/docs');
+	const plugin = () => ({ name: 'that' });
+	const lay = (ban, trang) => {
+		const cu = process.env.PSYCHE_BAN;
+		if (ban === 'xem') process.env.PSYCHE_BAN = 'xem';
+		else delete process.env.PSYCHE_BAN;
+		try {
+			return chiTrangTrongBan(plugin, docs)({ fileURL: new URL(`file://${path.join(docs, trang)}.md`) }).name;
+		} finally {
+			if (cu === undefined) delete process.env.PSYCHE_BAN;
+			else process.env.PSYCHE_BAN = cu;
+		}
+	};
+	assert.equal(lay('that', 'thi-nghiem/khong-khoa'), 'psyche-bo-qua-trang-chua-khoa');
+	assert.equal(lay('that', 'index'), 'that', 'trang đã khóa vẫn qua plugin');
+	assert.equal(lay('xem', 'thi-nghiem/khong-khoa'), 'that');
+	assert.equal(chiTrangTrongBan(plugin, docs)({}).name, 'that', 'không có đường dẫn (gọi thẳng Sätteri): qua plugin');
+});
+
+test('dauVet đổi khi danh sách trang, bản build hay dữ liệu đổi (để trang dựng lại: link "sắp có" tự thành link)', async () => {
+	const { dauVet, dungLaiKhiDoi, tepDauVet } = await import('../src/ban-build.mjs');
+	const goc = dauVet();
+	assert.match(goc, /^[0-9a-f]{64}$/);
+	assert.ok(tepDauVet().includes('src/data/trang.yml') && tepDauVet().includes('kiem-dinh/khoa.json'));
+	const cu = process.env.PSYCHE_BAN;
+	process.env.PSYCHE_BAN = cu === 'xem' ? 'that' : 'xem';
+	try {
+		assert.notEqual(dauVet(), goc, 'đổi bản build thì dấu vết đổi');
+	} finally {
+		if (cu === undefined) delete process.env.PSYCHE_BAN;
+		else process.env.PSYCHE_BAN = cu;
+	}
+	// thêm một trang vào bản build thì dấu vết đổi
+	assert.notEqual(dauVet(undefined, ['index', 'thi-nghiem/asch']), dauVet(undefined, ['index']));
+	assert.equal(dauVet(), goc);
+	// dấu vết khác lần trước thì xóa bộ nhớ đệm của trang
+	let xoa = 0;
+	const meta = new Map([['psyche-dau-vet', 'cu']]);
+	await dungLaiKhiDoi({ load: async () => {} }).load({ meta, store: { clear: () => xoa++ } });
+	assert.equal(xoa, 1);
+	await dungLaiKhiDoi({ load: async () => {} }).load({ meta, store: { clear: () => xoa++ } });
+	assert.equal(xoa, 1, 'dấu vết như cũ thì giữ bộ nhớ đệm');
+});

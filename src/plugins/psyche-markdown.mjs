@@ -18,6 +18,9 @@ import { TEN_NHAN, chipNhan, congCu, danhSachNguon, hinh, quiz } from './thanh-p
 /** Aside của Starlight: không đụng tới. */
 const ASIDE_STARLIGHT = new Set(['note', 'tip', 'caution', 'danger']);
 
+/** Trang được viết khung nhãn không có ý chính: trang giới thiệu bốn nhãn. */
+const KHONG_Y_CHINH = new Set(['bat-dau/doc-nhan-chac-chan']);
+
 /** Nút mdast tự đặt, Sätteri dựng thành phần tử `the` (data.hName) với thuộc tính `tt`, giữ nguyên các con. */
 const khoi = (the, tt, children) => ({ type: 'pz-khoi', data: { hName: the, hProperties: tt }, children });
 const chu = (n) => (typeof n.value === 'string' ? n.value : (n.children ?? []).map(chu).join(''));
@@ -34,10 +37,12 @@ const KHOI = {
 	...Object.fromEntries(
 		Object.entries(TEN_NHAN).map(([ma, ten]) => [
 			ma,
-			({ nhan, con }) => {
+			({ nhan, con, trang }, loi) => {
 				// "Vững chắc: ý chính" là chữ của tiêu đề (trình đọc màn hình, tìm kiếm, so chữ); dấu hai chấm chỉ ẩn cho mắt.
-				// Không có ý chính (trang giới thiệu bốn nhãn) thì tiêu đề chỉ là tên nhãn.
+				// Không có ý chính thì tiêu đề chỉ là tên nhãn: chỉ ở trang giới thiệu bốn nhãn (KHONG_Y_CHINH)
 				const co = Boolean(nhan?.length);
+				if (!co && !KHONG_Y_CHINH.has(trang))
+					throw loi(`:::${ma} cần ý chính trong ngoặc vuông, ví dụ :::${ma}[Quên nhanh lúc đầu, chậm dần về sau]`);
 				return khoi('aside', { class: `pz-nhan pz-nhan--${ma}`, 'aria-label': co ? `${ten}: ${nhan.map(chu).join('')}` : ten }, [
 					khoi('p', { class: 'pz-nhan__dau' }, [
 						{ type: 'html', value: `<span class="pz-nhan__muc">${ten}</span>` + (co ? '<span class="pz-an">: </span>' : '') },
@@ -100,7 +105,7 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				if (!dung)
 					throw loi(`không có khối :::${node.name} (có: ${[...Object.keys(KHOI), ...ASIDE_STARLIGHT].map((t) => ':::' + t).join(', ')})`);
 				if (Object.keys(node.attributes ?? {}).length) throw loi(`:::${node.name} không nhận thuộc tính`);
-				return dung(tachNhan(node), loi);
+				return dung({ ...tachNhan(node), trang }, loi);
 			},
 			textDirective(node) {
 				// chỉ :nhan[…]; chữ khác dạng ":x" (giờ, tỉ lệ) để Starlight trả lại nguyên chữ

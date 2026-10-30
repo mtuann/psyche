@@ -14,10 +14,11 @@ export const esc = (s) =>
 export const TEN_NHAN = { 'vung-chac': 'Vững chắc', 'kha-vung': 'Khá vững', 'tranh-cai': 'Đang tranh cãi', 'bac-bo': 'Đã bị bác bỏ' };
 
 /**
- * Địa chỉ link được dùng trong chữ của câu hỏi và dữ liệu: trên site (/…, không phải //máy-khác), #mục, tương đối
+ * Địa chỉ link được dùng trong chữ của câu hỏi và dữ liệu: trên site (/…, không phải //máy-khác hay /\máy-khác mà
+ * trình duyệt đọc như //), #mục, tương đối
  * (../x/), http(s), mailto. Khác (như javascript:, data:) thì bỏ link.
  */
-const DIA_CHI_DUOC = /^(\/(?!\/)|#|\.{1,2}\/|https?:\/\/|mailto:)/i;
+const DIA_CHI_DUOC = /^(\/(?![/\\])|#|\.{1,2}\/|https?:\/\/|mailto:)/i;
 const chuCua = (n) => (typeof n.value === 'string' ? n.value : (n.children ?? []).map(chuCua).join(''));
 
 /** Plugin mdast cho chữ trong dòng: thẻ HTML thô thành chữ, link lạ thành chữ thường, ảnh thành chữ thay thế. */

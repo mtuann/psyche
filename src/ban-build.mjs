@@ -70,11 +70,11 @@ export function tepDauVet(goc = GOC) {
 }
 
 /** Dấu vết của tepDauVet(), bản build (thật hay xem) và danh sách trang trong bản build. Chép từ opus (dauVet). */
-export function dauVet(goc = GOC) {
+export function dauVet(goc = GOC, trang = trangTrongBan()) {
 	const h = createHash('sha256');
 	for (const f of tepDauVet(goc)) h.update(fs.existsSync(path.join(goc, f)) ? fs.readFileSync(path.join(goc, f)) : `không có ${f}`);
 	h.update(ban());
-	h.update(trangTrongBan().join('\n'));
+	h.update(trang.join('\n'));
 	return h.digest('hex');
 }
 

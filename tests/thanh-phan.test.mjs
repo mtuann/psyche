@@ -27,8 +27,9 @@ test('khung nhãn: bốn nhãn, ý chính trong ngoặc vuông (có Markdown), n
 	assert.match(html, /<p>Đã tìm thấy <strong>lại<\/strong>.<\/p><p>Đoạn hai.<\/p><\/aside>/);
 	for (const [ma, ten] of [['kha-vung', 'Khá vững'], ['tranh-cai', 'Đang tranh cãi'], ['bac-bo', 'Đã bị bác bỏ']])
 		assert.match(dung(`:::${ma}[Ý]\nx\n:::`), new RegExp(`class="pz-nhan pz-nhan--${ma}" aria-label="${ten}: Ý"`));
-	// không có ý chính (trang giới thiệu bốn nhãn): tiêu đề chỉ là tên nhãn
-	assert.match(dung(':::vung-chac\nx\n:::'), /^<aside class="pz-nhan pz-nhan--vung-chac" aria-label="Vững chắc"><p class="pz-nhan__dau"><span class="pz-nhan__muc">Vững chắc<\/span><\/p><p>x<\/p>/);
+	// không có ý chính: chỉ ở trang giới thiệu bốn nhãn, tiêu đề chỉ là tên nhãn
+	assert.throws(() => dung(':::vung-chac\nx\n:::'), /:::vung-chac cần ý chính trong ngoặc vuông/);
+	assert.match(dung(':::vung-chac\nx\n:::', 'bat-dau/doc-nhan-chac-chan'), /^<aside class="pz-nhan pz-nhan--vung-chac" aria-label="Vững chắc"><p class="pz-nhan__dau"><span class="pz-nhan__muc">Vững chắc<\/span><\/p><p>x<\/p>/);
 });
 
 test('chip nhãn, khối thu gọn, khung "Ở Việt Nam"; aside của Starlight để nguyên', () => {
@@ -68,7 +69,8 @@ test('khối ```quiz: đúng một đáp án đúng, ít nhất hai lựa chọn
 });
 
 test('md(): link chỉ tới địa chỉ an toàn, ảnh thành chữ thay thế', () => {
-	assert.equal(md('[x](javascript:alert(1))'), 'x');
+	for (const la of ['javascript:alert(1)', 'java\tscript:alert(1)', 'data:text/html,x', '//may-khac.vn/', '/\\may-khac.vn/', 'vbscript:x'])
+		assert.equal(md(`[x](<${la}>)`), 'x', la);
 	assert.equal(md('[x](../bang-chung/do-lon-hieu-ung/)'), '<a href="../bang-chung/do-lon-hieu-ung/">x</a>');
 	assert.equal(md('![ảnh](a.png)'), 'ảnh');
 });

@@ -1,6 +1,7 @@
 ---
 // Chân trang mặc định của Starlight, thêm hai dòng như site cũ (../psyche-zero/overrides/partials/copyright.html và
-// mục copyright của mkdocs.yml): lời nhắc tìm hỗ trợ khi đang gặp khó khăn, và câu về tính giáo dục của site. Lời nhắc
+// mục copyright của mkdocs.yml): lời nhắc tìm hỗ trợ khi đang gặp khó khăn, và giấy phép nội dung cùng câu về tính giáo
+// dục của site. Lời nhắc
 // có ở mọi trang (tests/khung.test.mjs kiểm). Trang Hỗ trợ chưa chuyển sang site mới (lô D2-L1): tạm trỏ tới trang của
 // site cũ; khi trang lên site mới thì đổi thành link nội bộ.
 import Default from '@astrojs/starlight/components/Footer.astro';
@@ -15,7 +16,11 @@ const hoTro = 'https://mtuann.github.io/psyche-zero/ho-tro/';
 		<strong>Bạn đang gặp khó khăn?</strong>
 		<a href={hoTro} class="pz-chan__lien-ket">Xem trang Hỗ trợ: khi nào nên tìm chuyên gia và số điện thoại khẩn cấp</a>
 	</div>
-	<p>Nội dung © Psyche. Site mang tính giáo dục, không thay thế chẩn đoán hay điều trị chuyên môn.</p>
+	{/* Giấy phép nội dung: CC BY-SA 4.0 (chủ repo chọn 30/10/2026; toàn văn trong LICENSE-CONTENT) */}
+	<p>
+		Nội dung của Psyche theo giấy phép <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Site
+		mang tính giáo dục, không thay thế chẩn đoán hay điều trị chuyên môn.
+	</p>
 </div>
 
 <style>

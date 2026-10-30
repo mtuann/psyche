@@ -18,7 +18,7 @@
 //       cho chủ repo kiểm mẫu. Lô ("D3-L2", trang lấy từ plans/lam-lai/anh-xa.md) thì mặc định ghi vào
 //       plans/lam-lai/bao-cao/d3-l2-nhan-dinh.yml (với --mau: d3-l2-kiem-mau.yml); trang thì in ra màn hình
 //   node tools/khoa.mjs nhap <file kết quả lượt 2>
-//       đưa kết quả lượt 2 (danh sách { trang, id, luot_2: dung|sai|khong-chac, nguon: [link], cau_dung?, ghi_chu? },
+//       đưa kết quả lượt 2 (danh sách { trang, id, luot_2: dung|sai|qua-manh|khong-chac, nguon: [link], cau_dung?, ghi_chu? },
 //       plans/lam-lai/loi-giao/luot-2-trang.md) vào hồ sơ: luot_2 của từng nhận định, kèm luot_2_nguon, luot_2_ghi_chu. Kiểm hết trước,
 //       một dòng sai thì không ghi gì. In các nhận định cần review (hai lượt khác nhau, lượt 1 đã sửa, bỏ hay chưa có kết quả)
 //       và số nhận định còn thiếu lượt 2 trong các hồ sơ ấy
@@ -37,7 +37,10 @@ import { CONG_CU, THU_MUC_HINH } from '../src/plugins/thanh-phan.mjs';
 
 /** Kết quả lượt 1 của một nhận định (chuan-kiem-dinh.md mục 6). */
 const KET_QUA = ['dung', 'da-sua', 'da-lam-mem', 'da-bo'];
-const LUOT_2 = ['dung', 'sai', 'khong-chac'];
+/** Kết quả lượt 2 (chuan-kiem-dinh.md mục 3; loi-giao/luot-2-trang.md): qua-manh là câu nói mạnh hơn bằng chứng. */
+const LUOT_2 = ['dung', 'sai', 'qua-manh', 'khong-chac'];
+/** Kết quả lượt 2 bác câu của lượt 1: cần cau_dung; mẫu có câu như vậy thì lượt 2 kiểm hết. */
+const BAC = ['sai', 'qua-manh'];
 /** Loại nhận định (chuan-kiem-dinh.md mục 1). */
 export const LOAI = ['phat-hien', 'so-lieu', 'lich-su', 'dinh-nghia', 'nhan', 'tai-lap', 'lam-sang', 'loi-khuyen', 'cong-cu', 'thoi-su', 've-site'];
 /** Bài mở rộng: lượt 2 kiểm mẫu chừng này nhận định mỗi trang, cộng mọi nhận định loại LUON_KIEM (chuan-kiem-dinh.md mục 3). */
@@ -130,15 +133,19 @@ export function loiHoSo(hs, muc, goc) {
 	const rec = bg ? undefined : banGhiTrang(muc, goc);
 	const tang = rec?.tang ?? null;
 	if (!bg && (hs.tang ?? null) !== tang) loi.push(`hồ sơ ghi tang: ${hs.tang ?? null} mà src/data/trang.yml ghi ${tang}: sửa tang trong hồ sơ`);
-	if (rec?.linh_vuc === 'suc-khoe-tam-than' && tang === 'loi' && !hs.lan?.at(-1)?.nguoi?.chuyen_gia)
+	// mọi trang thuộc lĩnh vực Sức khỏe tâm thần có nhận định (lõi hay mở rộng; không tính trang lĩnh vực, trang khung)
+	if (rec?.linh_vuc === 'suc-khoe-tam-than' && tang !== 'khung' && tang !== 'du-lieu' && !hs.lan?.at(-1)?.nguoi?.chuyen_gia)
 		loi.push('trang Sức khỏe tâm thần: chỉ khóa khi chuyên gia đã đọc (lần kiểm định cuối: nguoi.chuyen_gia, tên và ngày; plans/ben-vung/chuan-kiem-dinh.md mục 5)');
 	if (tang === 'mo-rong') {
 		if (!rec.dua_tren?.length) loi.push('bài mở rộng: src/data/trang.yml chưa có dua_tren (các bài lõi mà bài này dựa trên)');
 		if (!rec.kiem_lai_truoc) loi.push('bài mở rộng: src/data/trang.yml chưa có kiem_lai_truoc (hạn xem lại, 12–18 tháng)');
 	}
-	// chỉ trang khung (và trang 404, không có tầng) được khóa với hồ sơ không có nhận định; khác thì cần ghi_chu giải thích
-	if ((bg || (tang && tang !== 'khung')) && !(hs.nhan_dinh ?? []).length && !hs.ghi_chu)
-		loi.push(`chưa có nhận định nào: ${bg ? 'bản ghi' : `trang tầng ${tang}`} cần ít nhất một nhận định đã kiểm, hay ghi_chu giải thích vì sao không có`);
+	// chỉ trang khung, trang sinh từ dữ liệu và trang 404 (không có tầng) được khóa với hồ sơ không có nhận định; bản ghi thì
+	// cần ghi_chu giải thích. Trang lõi, mở rộng, công cụ, có hạn, cập nhật luôn có nhận định (review D1.6)
+	if (!(hs.nhan_dinh ?? []).length) {
+		if (bg && !hs.ghi_chu) loi.push('chưa có nhận định nào: bản ghi cần ít nhất một nhận định đã kiểm, hay ghi_chu giải thích vì sao không có');
+		if (!bg && tang && tang !== 'khung' && tang !== 'du-lieu') loi.push(`chưa có nhận định nào: trang tầng ${tang} cần ít nhất một nhận định đã kiểm`);
+	}
 	const nguon = new Set((hs.nguon ?? []).map((n) => n.id));
 	const ds = hs.nhan_dinh ?? [];
 	const ids = ds.map((n) => n.id).filter(Boolean);
@@ -159,6 +166,7 @@ export function loiHoSo(hs, muc, goc) {
 			if (!n.ly_do) loi.push(`${ten}: nhãn cần ly_do`);
 		}
 		if (n.loai === 'thoi-su' && !/^\d{4}-\d{2}-\d{2}$/.test(String(n.het_han ?? ''))) loi.push(`${ten}: khẳng định thời sự cần het_han (năm-tháng-ngày)`);
+		else if (n.loai === 'thoi-su' && String(n.het_han) <= homNay()) loi.push(`${ten}: khẳng định thời sự đã tới hạn (het_han ${n.het_han}): kiểm lại rồi đặt hạn mới`);
 		// câu về chính site: review kiểm trên trang, thành phần hay dữ liệu đã khóa và ghi kết quả (review); ghi_chu ghi đã
 		// kiểm ở đâu. Không qua lượt 2, nên không cho dùng để né lượt 2: không có ở bản ghi dữ liệu, không kèm nguồn ngoài
 		if (n.loai === VE_SITE) {
@@ -172,14 +180,14 @@ export function loiHoSo(hs, muc, goc) {
 			if (!n.nguon?.length) loi.push(`${ten}: thiếu nguon`);
 			for (const id of n.nguon ?? []) if (!nguon.has(id)) loi.push(`${ten}: nguồn "${id}" không có trong danh sách nguon`);
 		}
-		if ((n.luot_2 === 'sai' || n.luot_2 === 'khong-chac') && n.ket_qua === 'dung' && !n.ghi_chu)
+		if ((BAC.includes(n.luot_2) || n.luot_2 === 'khong-chac') && n.ket_qua === 'dung' && !n.ghi_chu)
 			loi.push(`${ten}: lượt 2 cho "${n.luot_2}" mà kết quả "dung": ghi_chu cách đã giải quyết`);
 	}
 	if (mau) {
 		const nhom = ds.filter((n) => n.loai !== VE_SITE && !LUON_KIEM.includes(n.loai));
 		const co = nhom.filter((n) => LUOT_2.includes(n.luot_2)).length;
 		// mẫu có nhận định sai thì lượt 2 kiểm cả trang (chuan-kiem-dinh.md mục 3)
-		const sai = ds.some((n) => n.luot_2 === 'sai');
+		const sai = ds.some((n) => BAC.includes(n.luot_2));
 		const can = sai ? nhom.length : Math.min(MAU_MO_RONG, nhom.length);
 		if (co < can) loi.push(sai ? `bài mở rộng: mẫu lượt 2 có nhận định sai, nên lượt 2 phải kiểm cả trang (mới có ${co}/${can})` : `bài mở rộng: lượt 2 phải kiểm mẫu ít nhất ${can} nhận định (mới có ${co})`);
 	}
@@ -204,7 +212,7 @@ function conCanLuot2(hs, chon = chonNgauNhien, conLai = false) {
 	const luon = ds.filter((n) => LUON_KIEM.includes(n.loai) && !co(n));
 	const nhom = ds.filter((n) => !LUON_KIEM.includes(n.loai));
 	const chua = nhom.filter((n) => !co(n));
-	if (conLai && ds.some((n) => n.luot_2 === 'sai')) return [...luon, ...chua];
+	if (conLai && ds.some((n) => BAC.includes(n.luot_2))) return [...luon, ...chua];
 	return [...luon, ...chon(chua, Math.max(0, Math.min(MAU_MO_RONG, nhom.length) - nhom.filter(co).length))];
 }
 
@@ -425,7 +433,7 @@ export function lenh(thamSo, goc = GOC, in_ = console.log) {
 			// `nguon:` để trống (null) như không ghi
 			if (d.nguon != null && (!Array.isArray(d.nguon) || d.nguon.some((x) => typeof x !== 'string')))
 				return loi.push(`${ten}: nguon phải là danh sách link`);
-			if (d.luot_2 === 'sai' && !d.cau_dung && !d.ghi_chu) loi.push(`${ten}: sai cần cau_dung hay ghi_chu`);
+			if (BAC.includes(d.luot_2) && !d.cau_dung) loi.push(`${ten}: ${d.luot_2} cần cau_dung (câu viết lại cho đúng mức bằng chứng)`);
 			if (daGap.has(`${d.trang}#${d.id}`)) return loi.push(`${ten}: trùng dòng trước`);
 			daGap.add(`${d.trang}#${d.id}`);
 			const f = fileHoSo(d.trang, goc);
