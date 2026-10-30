@@ -55,15 +55,15 @@ export const dongMayChu = () => mayChu?.dong();
 
 /**
  * Chạy trong trang: các khối cần JavaScript chưa dựng xong. `ten`: trả tên các khối ấy; không thì cuộn tới khối đầu tiên
- * còn chờ, và trả true khi không còn khối nào chờ. D1.1 chưa có thành phần nào: lô làm ra thành phần (D1.4: câu hỏi,
- * khung công cụ) thêm điều kiện "đã dựng xong" của nó vào đây, như repo opus.
+ * còn chờ, và trả true khi không còn khối nào chờ. Lô làm ra thành phần mới thêm điều kiện "đã dựng xong" của nó vào
+ * đây, như repo opus.
  */
 function khoiCho(ten) {
 	const cho = [
 		// câu hỏi kiểm tra nhanh: script thay danh sách lựa chọn bằng nút
 		...[...document.querySelectorAll('.pz-quiz')].filter((e) => !e.querySelector('button')),
-		// công cụ tự trải nghiệm: script gắn phần bấm được rồi đặt data-san
-		...document.querySelectorAll('.pz-tool:not([data-san])'),
+		// công cụ (::cong-cu): mount() của module dựng phần bấm được rồi đặt data-san (src/scripts/cong-cu/)
+		...document.querySelectorAll('.pz-cong-cu:not([data-san])'),
 	];
 	if (ten) return cho.map((e) => `${e.className} "${e.textContent.trim().slice(0, 30)}"`);
 	cho[0]?.scrollIntoView({ block: 'center' });

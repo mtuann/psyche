@@ -1,0 +1,14 @@
+---
+// Nội dung trang của Starlight, thêm bộ tải thành phần (src/scripts/tai.js) chỉ ở trang có khối cần JavaScript: câu
+// hỏi kiểm tra nhanh, công cụ. Dò trên HTML đã dựng (lớp do plugin đặt), nên khớp đúng những gì plugin dựng. Trang khác
+// không tải gì thêm. Sau nội dung: các bổ sung có ngày của trang (src/content/bo-sung/, BoSung.astro).
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import { canTaiScript } from '../plugins/thanh-phan.mjs';
+import BoSung from './BoSung.astro';
+import TaiThanhPhan from './TaiThanhPhan.astro';
+
+const html = await Astro.slots.render('default');
+---
+
+<Default><Fragment set:html={html} /><BoSung /></Default>
+{canTaiScript(html) && <TaiThanhPhan />}

@@ -10,13 +10,18 @@ import { fileURLToPath } from 'node:url';
 const GOC = fileURLToPath(new URL('../', import.meta.url));
 
 /**
- * Dấu hiệu của từng loại khối trong HTML đã dựng. D1.1 mới có bảng và khối thu gọn của Markdown; thành phần của Psyche
- * (nhãn mức độ chắc chắn, câu hỏi, công cụ, hình, "sắp có") thêm dấu hiệu vào đây ở lô làm ra chúng (D1.4, D1.5).
+ * Dấu hiệu của từng loại khối trong HTML đã dựng. Thành phần mới thêm dấu hiệu vào đây ở lô làm ra nó.
  */
 export const KHOI = {
 	'bảng': '<table',
-	'khối thu gọn': '<details',
+	'khối thu gọn': 'class="pz-thu-gon',
 	'hộp ghi chú': 'class="starlight-aside',
+	'khung nhãn': 'class="pz-nhan ',
+	'câu hỏi': 'class="pz-quiz ',
+	'công cụ': 'class="pz-cong-cu ',
+	'hình': 'class="pz-fig"',
+	'Ở Việt Nam': 'class="pz-vn"',
+	'sắp có': 'class="pz-sap-co"',
 };
 
 /** Số trang đã đổi của nhánh được lấy làm mẫu: một lô có tới khoảng 8 trang. */

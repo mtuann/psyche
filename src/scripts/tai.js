@@ -1,0 +1,136 @@
+// Bộ tải theo nhu cầu (chép từ ../opus/src/scripts/tai.js rồi sửa), như ../psyche-zero/docs/assets/js/loader.js: mỗi trang chỉ tải công cụ nó dùng. Khối ở xa màn
+// hình khởi tạo khi người đọc cuộn tới cách nó khoảng 600 px; khối ở phía trên chỗ đang đọc (kể cả trước đích của
+// một link #mục) khởi tạo ngay, rồi cuộn lại cho đích đứng đúng chỗ. Trước khi in: khởi tạo hết những khối còn chờ.
+// Mỗi module có mount(el); có thể có inTruoc() để vẽ đồng bộ ngay trước khi in, và taiSan() để tải trước lúc rảnh.
+
+/** [bộ chọn, nạp module, khởi tạo ngay dù ở xa màn hình?] */
+const LUAT = [
+	// khởi tạo ngay: câu hỏi nhẹ, người đọc thấy ngay bản bấm được
+	['.pz-quiz', () => import('./quiz.js'), true],
+	// công cụ (::cong-cu): nạp khi khối tới gần màn hình
+	['.pz-stroop', () => import('./cong-cu/stroop.js'), false],
+];
+const LE = 600;
+const cho = new Map(); // phần tử đang chờ tới gần màn hình -> hàm khởi tạo (trả về promise)
+let io = null;
+
+function dich() {
+	try {
+		const id = decodeURIComponent(location.hash.slice(1));
+		return id ? document.getElementById(id) : null;
+	} catch {
+		return null;
+	}
+}
+
+/** Phần tử ở gần hay phía trên màn hình, hoặc nằm trước đích của link #mục. */
+function oTruoc(el) {
+	if (el.getBoundingClientRect().top < innerHeight + LE) return true;
+	const t = dich();
+	return !!t && t !== el && !!(el.compareDocumentPosition(t) & Node.DOCUMENT_POSITION_FOLLOWING);
+}
+
+// Người đọc tự cuộn trong lúc chờ thì thôi, không kéo về đích nữa. Bấm chuột hay chạm (pointerdown, mousedown), như lúc
+// bắt đầu kéo thanh cuộn, cũng tính là tự cuộn.
+let lanCuon = 0;
+for (const ev of ['wheel', 'touchmove', 'keydown', 'pointerdown', 'mousedown']) addEventListener(ev, () => lanCuon++, { passive: true });
+
+/**
+ * Sau khi các khối phía trên khởi tạo xong: đích của link #mục bị đẩy đi thì cuộn lại cho đúng. Làm lại một lần nữa khi
+ * font tải xong: font về sau các khối (mạng chậm) làm chữ phía trên xuống dòng khác, đích lại bị đẩy đi, ở cả trình duyệt
+ * có overflow-anchor (đo ở bản build: font về trễ 2,5 giây thì đích lệch tới hàng trăm px, ở cả ba trình duyệt). Thôi,
+ * không kéo về đích cũ, khi người đọc đã tự cuộn (bánh xe, chạm, bàn phím, bấm chuột hay chạm vào thanh cuộn: lanCuon), hay
+ * đã sang đích khác (bấm mục lục khi các khối còn đang tải). Cuộn không qua các sự kiện ấy (tìm chữ bằng Ctrl+F, máy đọc
+ * màn hình di chuyển trong trang) lúc đang tải thì chưa nhận ra: vẫn bị kéo về đích cũ.
+ */
+function giuDich(viec, t, tren) {
+	const lan = lanCuon;
+	const giu = () => {
+		if (t && lan === lanCuon && dich() === t && Math.abs(t.getBoundingClientRect().top - tren) > 2) t.scrollIntoView();
+	};
+	const xong = Promise.all(viec);
+	xong.then(giu);
+	Promise.all([xong, document.fonts?.ready]).then(giu);
+}
+
+// Trình duyệt có overflow-anchor tự giữ chỗ đang đọc khi phần phía trên cao lên; trình duyệt không có thì tự cuộn bù
+const TU_GIU = !!globalThis.CSS?.supports?.('overflow-anchor', 'auto');
+
+function chay(el) {
+	const fn = cho.get(el);
+	if (!fn) return Promise.resolve();
+	cho.delete(el);
+	io?.unobserve(el);
+	return fn();
+}
+
+function khiGan(el, fn) {
+	if (!('IntersectionObserver' in window) || oTruoc(el)) return fn();
+	cho.set(el, fn);
+	io ??= new IntersectionObserver((es) => es.forEach((e) => e.isIntersecting && chay(e.target)), {
+		rootMargin: `${LE}px 0px`,
+	});
+	io.observe(el);
+	return Promise.resolve();
+}
+
+const daNap = [];
+const sauKhiTai = (fn) => (document.readyState === 'complete' ? fn() : addEventListener('load', fn, { once: true }));
+const khiRanh = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 5000 }) : setTimeout(fn, 3000));
+
+function quet() {
+	const t = dich();
+	const tren = t?.getBoundingClientRect().top ?? 0;
+	const ngayBayGio = [];
+	for (const [chon, nap, ngay] of LUAT) {
+		const els = document.querySelectorAll(chon);
+		if (!els.length) continue;
+		let mod = null;
+		// tải hỏng (mất mạng, hay trang mở từ trước một lần deploy đổi tên file) thì lần sau thử lại
+		const lay = () =>
+			(mod ??= nap().then(
+				(m) => (daNap.push(m), m),
+				(e) => {
+					mod = null;
+					throw e;
+				},
+			));
+		const khoi = (el) => {
+			const truocMat = !TU_GIU && el.getBoundingClientRect().bottom <= 0;
+			const cao = truocMat ? document.documentElement.scrollHeight : 0;
+			return lay()
+				.then((m) => m.mount(el, [...els].indexOf(el)))
+				.then(() => truocMat && scrollBy(0, document.documentElement.scrollHeight - cao))
+				.catch((e) => console.error(e));
+		};
+		els.forEach((el) => ngayBayGio.push(ngay ? khoi(el) : khiGan(el, () => khoi(el))));
+		// Tải sẵn lúc trình duyệt rảnh
+		sauKhiTai(() => khiRanh(() => lay().then((m) => m.taiSan?.(), () => {})));
+	}
+	giuDich(ngayBayGio, t, tren);
+}
+
+// Bấm link #mục trong trang: khởi tạo các khối còn chờ ở phía trên đích, rồi giữ đích đúng chỗ
+addEventListener('hashchange', () => {
+	const t = dich();
+	if (!t || !cho.size) return;
+	const tren = t.getBoundingClientRect().top;
+	giuDich([...cho.keys()].filter(oTruoc).map(chay), t, tren);
+});
+
+// Trước khi in: khởi tạo mọi khối còn chờ; module nào đã tải xong thì vẽ đồng bộ ngay (in chỉ chụp những gì đã vẽ).
+// Mở các khối thu gọn để in ra đủ, in xong thì thu lại.
+let moTam = [];
+addEventListener('beforeprint', () => {
+	[...cho.keys()].forEach(chay);
+	daNap.forEach((m) => m.inTruoc?.());
+	moTam = [...document.querySelectorAll('details.pz-thu-gon:not([open])')];
+	moTam.forEach((d) => (d.open = true));
+});
+addEventListener('afterprint', () => {
+	moTam.forEach((d) => (d.open = false));
+	moTam = [];
+});
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', quet);
+else quet();

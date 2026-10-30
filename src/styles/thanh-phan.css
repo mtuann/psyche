@@ -1,0 +1,561 @@
+/* Khối trong bài (D1.4): khung nhãn và chip nhãn, khối thu gọn, khung "Ở Việt Nam", câu hỏi kiểm tra nhanh, hình tĩnh,
+   công cụ, danh sách nguồn, bổ sung có ngày. Kiểu theo bố cục C (plans/lam-lai/ban-mau/ma/mau-chung.css, mau-c.css);
+   phần công cụ theo ../psyche-zero/docs/assets/css/psyche.css (lớp của script cũ trong src/scripts/cu/). Mọi màu lấy từ
+   biến của src/styles/psyche.css, nên có sẵn bản sáng và tối. */
+
+/* Ẩn cho mắt, giữ cho trình đọc màn hình, tìm kiếm và chép chữ */
+.pz-an,
+.pz-sr-only {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* ---------- Màu của bốn nhãn ---------- */
+.pz-tag--vung-chac,
+.pz-nhan--vung-chac {
+	--nhan: var(--sl-color-green);
+	--nhan-nen: var(--sl-color-green-low);
+}
+.pz-tag--kha-vung,
+.pz-nhan--kha-vung {
+	--nhan: var(--sl-color-blue);
+	--nhan-nen: var(--sl-color-blue-low);
+}
+.pz-tag--tranh-cai,
+.pz-nhan--tranh-cai {
+	--nhan: var(--sl-color-orange);
+	--nhan-nen: var(--sl-color-orange-low);
+}
+.pz-tag--bac-bo,
+.pz-nhan--bac-bo {
+	--nhan: var(--sl-color-red);
+	--nhan-nen: var(--sl-color-red-low);
+}
+
+/* ---------- Chip nhãn trong câu: viên nền nhạt ---------- */
+.pz-tag {
+	display: inline-block;
+	padding: 0.1em 0.65em;
+	border-radius: 1em;
+	background: var(--nhan-nen);
+	color: var(--nhan);
+	font-size: 0.78em;
+	font-weight: 600;
+	line-height: 1.6;
+	white-space: nowrap;
+	vertical-align: 0.08em;
+}
+
+/* ---------- Khung nhãn mức độ chắc chắn: nền nhạt, nhãn dạng viên ---------- */
+.sl-markdown-content .pz-nhan {
+	margin-block: 1.5rem;
+	padding: 1.1rem 1.25rem 1.2rem;
+	border-radius: 0.9rem;
+	background: var(--nhan-nen);
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--nhan) 30%, transparent);
+}
+.sl-markdown-content .pz-nhan__dau {
+	margin: 0;
+	line-height: 1.4;
+}
+.pz-nhan__muc {
+	display: inline-block;
+	padding: 0.1rem 0.65rem;
+	border-radius: 1rem;
+	background: var(--nhan);
+	color: var(--sl-color-black);
+	font-size: var(--sl-text-xs);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+.pz-nhan__y {
+	display: block;
+	margin-top: 0.6rem;
+	color: var(--sl-color-white);
+	font-size: 1.15rem;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.sl-markdown-content .pz-nhan > :not(.pz-nhan__dau) {
+	margin-top: 0.6rem;
+}
+
+/* ---------- Khối thu gọn ---------- */
+.sl-markdown-content details.pz-thu-gon {
+	border: 1px solid var(--pz-border);
+	border-radius: 0.6rem;
+	background: var(--pz-card);
+}
+.pz-thu-gon > summary {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-height: 44px;
+	padding: 0.4rem 1rem;
+	color: var(--sl-color-text-accent);
+	font-weight: 600;
+	cursor: pointer;
+}
+.pz-thu-gon > summary::before {
+	content: '';
+	flex: none;
+	width: 0.45rem;
+	height: 0.45rem;
+	margin-inline: 0.1rem 0.2rem;
+	border-block-start: 2px solid currentColor;
+	border-inline-end: 2px solid currentColor;
+	transform: rotate(45deg);
+	transition: transform 0.15s;
+}
+.pz-thu-gon[open] > summary::before {
+	transform: rotate(135deg);
+}
+.pz-thu-gon > summary::marker,
+.pz-thu-gon > summary::-webkit-details-marker {
+	display: none;
+}
+.sl-markdown-content .pz-thu-gon__noi {
+	margin: 0;
+	padding: 0 1rem 1rem;
+}
+
+/* ---------- Khung "Ở Việt Nam" ---------- */
+.sl-markdown-content .pz-vn {
+	margin-block: 1.5rem;
+	padding: 1rem 1.25rem;
+	border-inline-start: 4px solid var(--pz-accent);
+	border-radius: 0 0.75rem 0.75rem 0;
+	background: var(--pz-card);
+}
+.sl-markdown-content .pz-vn__ten {
+	margin: 0;
+	color: var(--pz-accent);
+	font-size: var(--sl-text-xs);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.sl-markdown-content .pz-vn > :not(.pz-vn__ten) {
+	margin-top: 0.5rem;
+}
+
+/* ---------- Câu hỏi kiểm tra nhanh ---------- */
+.pz-quiz {
+	margin-block: 1.5rem;
+	padding: 1rem 1.15rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 1rem;
+	background: var(--pz-card);
+}
+.pz-quiz :is(p, li) {
+	max-width: none;
+}
+/* Bản tĩnh (chưa có JavaScript, khi in): câu đánh số, đáp án đúng in đậm, giải thích ngay dưới */
+.pz-quiz__ds {
+	margin: 0;
+	padding-inline-start: 1.4rem;
+}
+.pz-quiz__ds > li + li {
+	margin-top: 1.25rem;
+}
+.pz-quiz__ds .pz-cau__chon {
+	margin: 0.4rem 0;
+	padding-inline-start: 1.2rem;
+}
+.pz-quiz__ds .pz-cau__dung {
+	font-weight: 600;
+}
+.pz-quiz__ds .pz-cau__giai {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+}
+/* Bản bấm được (src/scripts/quiz.js) */
+.pz-quiz__song .pz-cau {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	min-inline-size: 0;
+}
+.pz-quiz__song .pz-cau + .pz-cau {
+	margin-top: 1.5rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid var(--pz-border);
+}
+/* legend nằm trên viền của fieldset: thả nổi để nó vào trong khung, dưới đường kẻ giữa hai câu */
+.pz-quiz__song .pz-cau__hoi {
+	float: inline-start;
+	width: 100%;
+	margin: 0 0 0.6rem;
+	padding: 0;
+	color: var(--sl-color-white);
+	font-weight: 600;
+}
+.pz-cau__so {
+	color: var(--sl-color-text-accent);
+}
+.pz-quiz__song .pz-cau__chon {
+	clear: both;
+	display: grid;
+	gap: 0.45rem;
+}
+.pz-chon {
+	min-height: 44px;
+	padding: 0.55rem 0.85rem;
+	border: 2px solid var(--pz-border);
+	border-radius: 0.5rem;
+	background: var(--sl-color-black);
+	color: var(--sl-color-gray-1);
+	font: inherit;
+	text-align: start;
+	cursor: pointer;
+}
+.pz-chon:hover:not(:disabled) {
+	border-color: var(--sl-color-text-accent);
+}
+.pz-chon:disabled {
+	cursor: default;
+}
+.pz-chon--dung {
+	border-color: var(--sl-color-green);
+	background: var(--sl-color-green-low);
+	color: var(--sl-color-white);
+}
+.pz-chon--dung::after {
+	content: ' ✓';
+	color: var(--sl-color-green);
+	font-weight: 700;
+}
+.pz-chon--sai {
+	border-color: var(--sl-color-red);
+	background: var(--sl-color-red-low);
+	color: var(--sl-color-white);
+}
+.pz-chon--sai::after {
+	content: ' ✗';
+	color: var(--sl-color-red);
+	font-weight: 700;
+}
+.pz-quiz__song .pz-cau__giai {
+	margin: 0.75rem 0 0;
+	padding: 0.6rem 0.85rem;
+	border-inline-start: 3px solid var(--sl-color-text-accent);
+	background: var(--sl-color-black);
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+	line-height: 1.6;
+}
+.pz-quiz__song .pz-cau__giai > * {
+	margin: 0;
+}
+.pz-quiz__song .pz-cau__giai > * + * {
+	margin-top: 0.5rem;
+}
+.pz-cau__ket {
+	font-weight: 700;
+}
+.pz-cau__ket--dung {
+	color: var(--sl-color-green);
+}
+.pz-cau__ket--sai {
+	color: var(--sl-color-red);
+}
+.pz-quiz__diem {
+	margin: 1.25rem 0 0;
+	font-weight: 600;
+}
+.pz-quiz__diem:empty {
+	display: none;
+}
+
+/* Nút của site (câu hỏi, công cụ cũ dùng lớp md-button của Material) */
+.pz-nut,
+.pz-cong-cu .md-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	margin: 0.4rem 0.4rem 0.4rem 0;
+	padding: 0.4rem 1.1rem;
+	border: 2px solid var(--sl-color-text-accent);
+	border-radius: 999px;
+	background: transparent;
+	color: var(--sl-color-text-accent);
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+.pz-cong-cu .md-button--primary {
+	background: var(--sl-color-text-accent);
+	color: var(--sl-color-black);
+}
+
+/* ---------- Hình tĩnh ---------- */
+.sl-markdown-content .pz-fig {
+	max-width: 40rem;
+	margin: 1.5rem auto;
+}
+.pz-fig svg {
+	display: block;
+	width: 100%;
+	height: auto;
+	color: var(--sl-color-gray-2);
+}
+.pz-fig .pz-fig-a {
+	color: var(--sl-color-text-accent);
+}
+.pz-fig .pz-fig-b {
+	color: var(--pz-accent);
+}
+.pz-fig figcaption {
+	margin-top: 0.5rem;
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+	line-height: 1.5;
+}
+
+/* Công cụ, hình chưa chuyển (chỉ ở bản xem) */
+.pz-chua-chuyen {
+	padding: 0.75rem 1rem;
+	border: 1px dashed var(--sl-color-orange);
+	border-radius: 0.5rem;
+	color: var(--sl-color-gray-2);
+}
+
+/* ---------- Danh sách nguồn (::nguon) ---------- */
+.sl-markdown-content .pz-nguon {
+	padding-inline-start: 1.2rem;
+	font-size: var(--sl-text-sm);
+}
+.pz-nguon a {
+	overflow-wrap: anywhere;
+}
+
+/* ---------- Bổ sung có ngày ---------- */
+.pz-bo-sung__muc {
+	padding-inline-start: 1rem;
+	border-inline-start: 3px solid var(--pz-border);
+}
+.pz-bo-sung__muc + .pz-bo-sung__muc {
+	margin-top: 1rem;
+}
+.sl-markdown-content .pz-bo-sung__ngay {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-xs);
+	font-weight: 700;
+}
+
+/* ---------- Công cụ (::cong-cu; lớp của script cũ, src/scripts/cu/) ---------- */
+.pz-cong-cu {
+	--pz-stage-bg: #17171f;
+	--pz-stage-fg: #f4f4f4;
+	margin-block: 1rem 1.6rem;
+	padding: 1rem 1.1rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 0.75rem;
+	background: var(--pz-card);
+}
+/* Khối chưa dựng (chờ script): giữ chỗ để bố cục không xô khi công cụ hiện ra */
+.pz-cong-cu:empty {
+	min-height: 14rem;
+}
+.pz-cong-cu :is(p, li) {
+	max-width: none;
+}
+.pz-cong-cu .pz-tool__lead {
+	font-size: 1.02em;
+}
+.pz-cong-cu .pz-stage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 9.5rem;
+	margin: 0.6rem 0;
+	padding: 0.8rem;
+	border-radius: 0.5rem;
+	background: var(--pz-stage-bg);
+	color: var(--pz-stage-fg);
+	user-select: none;
+	-webkit-user-select: none;
+}
+.pz-cong-cu .pz-stage--small {
+	display: block;
+	min-height: 4rem;
+	font-size: 1.1em;
+	text-align: center;
+}
+.pz-cong-cu .pz-ex {
+	font-size: 1.4em;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+}
+.pz-cong-cu .pz-stim {
+	min-height: 1.2em;
+	font-size: clamp(2.4rem, 9vw, 3.6rem);
+	font-weight: 800;
+	line-height: 1.2;
+	letter-spacing: 0.06em;
+}
+.pz-cong-cu .pz-stim--fix {
+	color: #bdbdbd;
+	font-weight: 400;
+}
+.pz-cong-cu .pz-answers {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.5rem;
+	touch-action: manipulation;
+}
+@media (max-width: 30em) {
+	.pz-cong-cu .pz-answers {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.pz-cong-cu .pz-answer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 3.4rem;
+	border: 2px solid var(--pz-border);
+	border-radius: 0.5rem;
+	background: var(--sl-color-black);
+	color: var(--sl-color-white);
+	font: inherit;
+	font-size: 1.05em;
+	font-weight: 700;
+	cursor: pointer;
+	touch-action: manipulation;
+}
+.pz-cong-cu .pz-answer:active {
+	border-color: var(--pz-accent);
+}
+.pz-cong-cu .pz-answer__key {
+	color: var(--sl-color-gray-2);
+	font-size: 0.72em;
+	font-weight: 400;
+}
+.pz-cong-cu :is(.pz-counter, .pz-small, .pz-privacy) {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+}
+.pz-cong-cu .pz-feedback {
+	min-height: 1.6em;
+	font-weight: 600;
+	text-align: center;
+}
+.pz-cong-cu .pz-big-number {
+	font-size: 1.15em;
+}
+.pz-cong-cu .pz-big-number strong {
+	color: var(--sl-color-text-accent);
+	font-size: 1.6em;
+}
+.pz-cong-cu .pz-choice {
+	margin: 0.8rem 0;
+	padding: 0.4rem 0.8rem 0.6rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 0.4rem;
+}
+.pz-cong-cu .pz-choice legend {
+	padding: 0 0.3rem;
+	font-weight: 600;
+}
+.pz-cong-cu .pz-radio {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	min-height: 44px;
+	cursor: pointer;
+}
+.pz-cong-cu .pz-radio input {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+.pz-cong-cu .pz-swatches {
+	display: flex;
+	gap: 0.5rem;
+	width: max-content;
+	max-width: 100%;
+	margin: 0.4rem 0 0.8rem;
+	padding: 0.6rem;
+	border-radius: 0.4rem;
+	background: var(--pz-stage-bg);
+}
+.pz-cong-cu .pz-swatch {
+	display: inline-block;
+	width: 2.2rem;
+	height: 2.2rem;
+	border-radius: 0.3rem;
+}
+.pz-cong-cu .pz-details {
+	margin: 0.8rem 0;
+}
+.pz-cong-cu .pz-details summary {
+	display: flex;
+	align-items: center;
+	min-height: 44px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.pz-cong-cu .pz-details table {
+	display: block;
+	overflow-x: auto;
+}
+.pz-cong-cu .admonition {
+	margin: 0.8rem 0;
+	padding: 0.6rem 0.9rem;
+	border-inline-start: 4px solid var(--sl-color-orange);
+	border-radius: 0.4rem;
+	background: var(--sl-color-orange-low);
+}
+.pz-cong-cu .admonition-title {
+	margin: 0;
+	font-weight: 700;
+}
+.pz-bars {
+	display: block;
+	width: 100%;
+	max-width: 32rem;
+	height: auto;
+	margin: 0.6rem 0;
+}
+.pz-bar {
+	fill: var(--sl-color-text-accent);
+}
+.pz-bar--accent {
+	fill: var(--pz-accent);
+}
+/* Đang làm bài thử: ẩn nút lên đầu trang và thanh mục lục điện thoại để không che kích thích */
+.pz-running mobile-starlight-toc {
+	visibility: hidden;
+}
+
+/* ---------- In ---------- */
+@media print {
+	.pz-cong-cu,
+	.pz-quiz__song,
+	.pz-quiz__diem {
+		display: none !important;
+	}
+	.pz-quiz__ds[hidden] {
+		display: block !important;
+	}
+	details.pz-thu-gon > :not(summary) {
+		display: block !important;
+	}
+	.pz-nhan,
+	.pz-fig,
+	.pz-quiz,
+	.pz-thu-gon {
+		break-inside: avoid;
+	}
+}

@@ -2,12 +2,14 @@
 // Cấu hình site Psyche (Astro và Starlight). Phiên bản và lý do: plans/lam-lai/cong-nghe.md.
 // D1.1: khung, font, màu, tìm kiếm không dấu. D1.2: dữ liệu. D1.3: bố cục C (menu theo lĩnh vực, tiêu đề trang, trang chủ).
 // Thành phần, khóa và hai bản build thêm ở D1.4–D1.6.
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { satteri } from '@astrojs/markdown-satteri';
 import { DUONG_GOC, trangTrongBan } from './src/ban-build.mjs';
 import { duLieuDaKiem } from './src/du-lieu.mjs';
 import { menu } from './src/menu.mjs';
+import { psycheMarkdown } from './src/plugins/psyche-markdown.mjs';
 import { timKiemKhongDau } from './src/tim-kiem/tich-hop.mjs';
 
 const site = 'https://mtuann.github.io';
@@ -34,9 +36,11 @@ export default defineConfig({
 	trailingSlash: 'always',
 	build: { format: 'directory' },
 	markdown: {
-		// Sätteri, bộ xử lý Markdown mặc định của Astro 7 (plans/lam-lai/cong-nghe.md mục 2). Plugin của dự án (nhãn mức độ
-		// chắc chắn, câu hỏi, công cụ, hình, "sắp có") thêm ở D1.4–D1.5.
+		// Sätteri, bộ xử lý Markdown mặc định của Astro 7 (plans/lam-lai/cong-nghe.md mục 2), cộng plugin của dự án (D1.4):
+		// khung nhãn, chip nhãn, khối thu gọn, khung "Ở Việt Nam", khối ```quiz, chỉ thị ::cong-cu, ::hinh, ::nguon (cú pháp:
+		// AGENTS.md, mục "Mẫu trang và khối đặc biệt").
 		processor: satteri({
+			mdastPlugins: [psycheMarkdown({ docsDir: fileURLToPath(new URL('./src/content/docs/', import.meta.url)) })],
 			features: {
 				smartPunctuation: false, // giữ nguyên dấu nháy, gạch ngang như chữ của site cũ (Astro mặc định bật)
 				headingAttributes: true, // ## Tiêu đề { #id }: id viết tay, để giữ link #mục của site cũ (D1.5)
@@ -57,10 +61,11 @@ export default defineConfig({
 			// Menu đủ tám nhóm, Nền tảng chia theo 14 lĩnh vực (src/menu.mjs), chỉ trang có trong bản build này; nhóm chưa có
 			// trang hiện "sắp có" (src/components/Sidebar.astro). Đang chạy npm run dev mà thêm, xóa trang thì khởi động lại.
 			sidebar: menu(trangTrongBan(), duLieu.trang, duLieu['linh-vuc']),
-			customCss: ['./src/styles/fonts.css', './src/styles/psyche.css'],
+			customCss: ['./src/styles/fonts.css', './src/styles/psyche.css', './src/styles/thanh-phan.css'],
 			components: {
 				Footer: './src/components/Footer.astro',
 				Hero: './src/components/Hero.astro',
+				MarkdownContent: './src/components/MarkdownContent.astro',
 				PageTitle: './src/components/PageTitle.astro',
 				Sidebar: './src/components/Sidebar.astro',
 			},

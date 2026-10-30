@@ -84,7 +84,8 @@ Từ D1.6, như opus (`../opus/AGENTS.md`, mục Khóa): trang và bản ghi d�
 
 ## Giao diện
 
-- Giữ font (Be Vietnam Pro, tự host), màu (chàm `#3b3f8f`, hồng `#b4387a`, bốn màu nhãn) và giọng văn của site cũ. Màu ở `src/styles/psyche.css`, có bản sáng và tối. Bố cục chốt ở D1.3.
+- Giữ font (Be Vietnam Pro, tự host), màu (chàm `#3b3f8f`, hồng `#b4387a`, bốn màu nhãn) và giọng văn của site cũ. Màu ở `src/styles/psyche.css`, có bản sáng và tối; khối trong bài ở `src/styles/thanh-phan.css`.
+- Bố cục C (D1.3): thanh trên và dải chàm đậm; menu tám nhóm, Nền tảng chia 14 lĩnh vực (`src/menu.mjs`, `src/components/Sidebar.astro`), mỗi lĩnh vực một màu (`mau`) và một biểu tượng (`bieu_tuong`, `src/bieu-tuong.mjs`); viên loại bài, lĩnh vực, tầng phía trên tiêu đề và dòng trạng thái kiểm định phía dưới (`src/components/PageTitle.astro`, đọc `trang.yml` và `kiem-dinh/`).
 - Mọi trang và thành phần phải hiển thị tốt ở 360 px, 768 px và 1280 px, trên Chromium, WebKit (Safari) và Firefox: không tràn ngang; trên màn hình cảm ứng, vùng bấm từ 44 px. Không lỗi axe (WCAG 2.2 AA). Không lùi chuẩn Lighthouse ở luật 7 của kế hoạch.
 - Hình và sơ đồ vẽ bằng SVG hoặc HTML và CSS ngay trong trang, theo màu của site, có bản sáng và tối; chữ trong hình là chữ thật. Hình chỉ để trang trí thì đặt `aria-hidden`.
 - Chân mọi trang có lời nhắc Hỗ trợ (`src/components/Footer.astro`, `tests/khung.test.mjs` kiểm). Đừng bỏ.
@@ -104,7 +105,24 @@ Từ site cũ (`../psyche-zero/README.md`, "Nguyên tắc nội dung"), cộng c
 
 ## Mẫu trang và khối đặc biệt
 
-Chốt ở D1.4–D1.5 (khung nhãn, câu hỏi, công cụ, hình, khối thu gọn, "Ở Việt Nam", bổ sung, "sắp có") và ghi vào đây. Cú pháp cũ của site MkDocs chỉ để tra khi chuyển trang.
+Chốt ở D1.4 (`src/plugins/psyche-markdown.mjs`, `src/plugins/thanh-phan.mjs`; kiểm thử `tests/thanh-phan.test.mjs`). Trang viết `.md`, không nhúng JSX. Viết sai (khối, chỉ thị không có ở đây, thiếu nhãn, thuộc tính lạ, câu hỏi không đúng một đáp án đúng) thì build hỏng. Cú pháp cũ của site MkDocs chỉ để tra khi chuyển trang (`tools/chuyen/`, D1.5).
+
+| Khối | Cách viết | Hiện ra |
+|---|---|---|
+| Khung nhãn mức độ chắc chắn | `:::vung-chac[Ý chính]` … `:::` (cả `kha-vung`, `tranh-cai`, `bac-bo`); ý chính bắt buộc, không ghi lại chữ "Vững chắc:" | Khung nền màu nhạt của nhãn, nhãn dạng viên, ý chính in đậm; trình đọc màn hình đọc "Vững chắc: ý chính" |
+| Chip nhãn trong câu | `:nhan[vung-chac]` | Viên nhỏ "Vững chắc" |
+| Khối thu gọn | `:::thu-gon[Xem đáp án]` … `:::` | Nút bấm để mở (vùng bấm 44 px); khi in thì mở hết |
+| Khung "Ở Việt Nam" | `:::o-viet-nam` … `:::`, tiêu đề khác: `:::o-viet-nam[Ở Việt Nam và châu Á]` | Khung viền hồng có tiêu đề nhỏ |
+| Câu hỏi kiểm tra nhanh | Khối ` ```quiz `: `? câu hỏi`, `+ đáp án đúng`, `- đáp án sai`, `> giải thích` (dòng `>` trống tách đoạn) | Mỗi câu chọn một lần, báo đúng sai, hiện giải thích, cuối cùng điểm và "Làm lại"; thứ tự lựa chọn trộn mỗi lần, nên giải thích không được dựa vào vị trí lựa chọn. Kết quả lưu ở khóa `psyche-zero` như site cũ. Mỗi câu đúng một `+`, ít nhất hai lựa chọn, có giải thích |
+| Công cụ | `::cong-cu{ten="stroop"}`, thông số như `data-*` của site cũ: `::cong-cu{ten="stroop" blocks="1"}` | Công cụ nạp khi khối tới gần màn hình (`src/scripts/tai.js`); lưu trong trình duyệt ở khóa `psyche-zero`. Công cụ đã có: `CONG_CU` trong `src/plugins/thanh-phan.mjs`; chưa có thì ô "chưa chuyển" (chỉ ở trang chưa khóa) |
+| Hình | `::hinh{ten="duong-cong-quen"}` (tên như vùng `<!-- fig:… -->` của site cũ) | Hình tĩnh `src/hinh/<tên>.html`: một `<figure class="pz-fig">`, SVG có `role="img"` và `aria-label`, chữ thật, màu theo `currentColor` và lớp `pz-fig-a` (chàm), `pz-fig-b` (hồng), không viết cứng mã màu. Chưa có thì ô "chưa chuyển" |
+| Danh sách nguồn | `::nguon{id="cepeda2006,murre2015"}` | Danh sách APA dựng từ `src/data/nguon.yml`. Trang chuyển từ site cũ giữ mục Nguồn viết tay |
+| Ghi chú, mẹo, chú ý | `:::note`, `:::tip`, `:::caution`, `:::danger`, tiêu đề tùy chọn `:::tip[…]` | Aside của Starlight |
+| Bổ sung có ngày | File `src/content/bo-sung/<trang>/<năm-tháng-ngày>.md`, frontmatter `trang`, `ngay`, `anh_huong_nhan` (`src/content/bo-sung/README.txt`) | Mục "Bổ sung" cuối trang, mới nhất trước; không sửa trang nên không đổi mã băm |
+| Id cố định cho tiêu đề | `## Tiêu đề { #id }` | Giữ id cũ để link `#mục` cũ còn chạy |
+
+- Script công cụ của site cũ chép nguyên ở `src/scripts/cu/` (nạp qua `src/scripts/cong-cu/<tên>.js`, `nen.js`); đợt 8 viết lại thành module. Kiểm thử trình duyệt chờ `data-san` mà `mount()` của công cụ đặt khi dựng xong.
+- Tóm tắt đầu bài, hồ sơ nghiên cứu (bản mẫu C) chưa làm: lô đầu tiên cần chúng (D2-L1, D3-L1) làm thành phần.
 
 ## Cách làm việc
 
