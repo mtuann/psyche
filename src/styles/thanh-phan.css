@@ -702,3 +702,19 @@
 		min-height: 44px;
 	}
 }
+
+/* Bảng trong bài (src/plugins/psyche-markdown.mjs bọc trong .pz-bang): vùng cuộn ngang nhận focus bằng bàn phím */
+.pz-bang {
+	overflow-x: auto;
+	margin-block: 1rem;
+}
+.pz-bang:focus-visible {
+	outline: 2px solid var(--sl-color-text-accent);
+	outline-offset: 2px;
+}
+.sl-markdown-content .pz-bang > table {
+	/* Starlight cho bảng tự cuộn (display: block); ở đây vùng bọc cuộn thay */
+	display: table;
+	overflow: visible;
+	margin: 0;
+}

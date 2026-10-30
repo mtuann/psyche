@@ -120,6 +120,14 @@ test('chỉ thị một dòng lạ là lỗi', () => {
 	assert.throws(() => dung('::hinh[chữ]{ten="a"}'), /::hinh không nhận chữ/);
 });
 
+test('bảng: bọc trong vùng cuộn nhận focus, mỗi vùng một tên riêng trong trang', () => {
+	const html = dung('| a | b |\n|---|---|\n| 1 | 2 |\n\nĐoạn.\n\n| c |\n|---|\n| 3 |');
+	const vung = html.match(/<div class="pz-bang"[^>]*>\s*<table/g) ?? [];
+	assert.equal(vung.length, 2);
+	assert.ok(vung.every((v) => /tabindex="0"/.test(v) && /role="region"/.test(v)));
+	assert.match(html, /aria-label="Bảng 1, cuộn ngang được"[\s\S]*aria-label="Bảng 2, cuộn ngang được"/);
+});
+
 test('bổ sung có ngày: trang mà bổ sung gắn vào có trong trang.yml', () => {
 	const goc = path.join(ROOT, 'src/content/bo-sung');
 	const trang = new Set(duLieuDaKiem().trang.map((r) => r.id));

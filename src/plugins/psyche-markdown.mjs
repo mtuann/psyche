@@ -114,8 +114,16 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 		const file = fileURL ? fileURLToPath(fileURL) : '';
 		const trang = path.relative(docsDir, file).replace(/\\/g, '/').replace(/\.mdx?$/, '');
 		const loi = (msg) => new Error(`${file ? path.relative(process.cwd(), file) : '(chữ)'}: ${msg}`);
+		let soBang = 0;
 		return {
 			name: 'psyche-markdown',
+			// bảng rộng cuộn ngang trên màn hình hẹp: bọc trong vùng nhận focus để người dùng bàn phím cuộn được (axe
+			// scrollable-region-focusable, trang Hỗ trợ ở 360 px); mỗi vùng một tên riêng (landmark-unique)
+			table(node) {
+				if (node.data?.pzBoc) return;
+				node.data = { ...node.data, pzBoc: true };
+				return khoi('div', { className: ['pz-bang'], tabIndex: 0, role: 'region', ariaLabel: `Bảng ${++soBang}, cuộn ngang được` }, [node]);
+			},
 			code(node) {
 				if (node.lang !== 'quiz') return;
 				try {
