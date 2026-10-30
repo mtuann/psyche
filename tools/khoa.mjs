@@ -134,6 +134,10 @@ function chuaChuyenTrong(noiDung, goc) {
 export function loiHoSo(hs, muc, goc, { khiKhoa = false } = {}) {
 	const loi = [];
 	const bg = laBanGhi(muc) && tachKhoaBanGhi(laBanGhi(muc)).banGhi;
+	// khóa từng phần bản ghi: chỉ xét nhận định nói về trường được khóa (nhận định không ghi truong thì luôn xét); nhận
+	// định về trường chưa khóa được để chưa có kết quả (review D2-0: asch1951 khóa trừ noi_dang)
+	const truongKhoa = bg ? tachKhoaBanGhi(laBanGhi(muc)).truong : null;
+	const ds = (hs.nhan_dinh ?? []).filter((n) => !truongKhoa || !Array.isArray(n.truong) || n.truong.some((t) => truongKhoa.includes(t)));
 	if (bg ? hs.ban_ghi !== bg : hs.trang !== `src/content/docs/${muc}.md`)
 		loi.push(bg ? `ban_ghi phải là "${bg}"` : `trang phải là "src/content/docs/${muc}.md"`);
 	if (!Array.isArray(hs.lan) || !hs.lan.length) loi.push('thiếu lan (các lần kiểm định)');
@@ -152,12 +156,11 @@ export function loiHoSo(hs, muc, goc, { khiKhoa = false } = {}) {
 	}
 	// chỉ trang khung, trang sinh từ dữ liệu và trang 404 (không có tầng) được khóa với hồ sơ không có nhận định; bản ghi thì
 	// cần ghi_chu giải thích. Trang lõi, mở rộng, công cụ, có hạn, cập nhật luôn có nhận định (review D1.6)
-	if (!(hs.nhan_dinh ?? []).length) {
+	if (!ds.length) {
 		if (bg && !hs.ghi_chu) loi.push('chưa có nhận định nào: bản ghi cần ít nhất một nhận định đã kiểm, hay ghi_chu giải thích vì sao không có');
 		if (!bg && tang && tang !== 'khung' && tang !== 'du-lieu') loi.push(`chưa có nhận định nào: trang tầng ${tang} cần ít nhất một nhận định đã kiểm`);
 	}
 	const nguon = new Set((hs.nguon ?? []).map((n) => n.id));
-	const ds = hs.nhan_dinh ?? [];
 	const ids = ds.map((n) => n.id).filter(Boolean);
 	for (const id of new Set(ids.filter((x, i) => ids.indexOf(x) !== i))) loi.push(`nhận định ${id}: id trùng`);
 	// lượt 2 chỉ kiểm mẫu ở bài mở rộng; câu về chính site không qua lượt 2

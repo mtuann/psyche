@@ -145,7 +145,16 @@ function lechDanhSach(r, m) {
 	const nguon = m.cacHo ?? m.cacTen;
 	if (!nguon?.length) return 'nguồn không ghi tác giả';
 	const { ds, conNua } = hoTrong(r.tac_gia);
-	const khop = (h, x) => (m.cacHo ? liem(x).endsWith(liem(h)) || liem(h).endsWith(liem(x)) : liem(x).includes(liem(h)));
+	// họ khớp đúng (bỏ tiền tố "van", "de", "von"…); OpenAlex chỉ có tên đầy đủ: họ là một đoạn cuối của tên
+	const boTienTo = (x) => liem(String(x).replace(/^((van|von|de|der|den|la|le|di|da|du|del|dos|ten|ter)\s+)+/i, ''));
+	const khop = (h, x) =>
+		m.cacHo ? liem(x) === liem(h) || boTienTo(x) === boTienTo(h) : coTu(x, h) || coTu(x, boTienTo(h));
+	// OpenAlex: mọi từ của họ (theo bản ghi) có trong tên đầy đủ, như từ riêng ("Born" trong "Jan Born A", "Szabo" trong
+	// "Amanda N. Szabo-Reed"); không khớp nửa từ ("Han" không khớp "Chan")
+	function coTu(ten, ho) {
+		const tu = new Set(chuan(ten).split(' '));
+		return chuan(ho).split(' ').every((t) => t && tu.has(t));
+	}
 	// "…" của APA 7: tác giả cuối của bản ghi là tác giả cuối của nguồn
 	const cuoi = conNua && /…|\.\.\./.test(r.tac_gia) ? ds.pop() : null;
 	const sai = ds.findIndex((h, i) => !nguon[i] || !khop(h, nguon[i]));
@@ -166,34 +175,43 @@ function lechDanhSach(r, m) {
 export function soBanGhi(r, m) {
 	if (!m) return ['nguồn không có DOI này'];
 	const lech = [];
-	// họ đứng trước dấu phẩy đầu tiên của tac_gia (APA: "Họ, T."); tổ chức thì tên tổ chức
-	const hoGhi = liem(r.tac_gia.split(',')[0]);
-	const coTrongTen = m.hoDu && liem(m.hoDu).includes(hoGhi);
-	if (m.ho && !coTrongTen && !(hoGhi.endsWith(liem(m.ho)) || hoGhi.startsWith(liem(m.ho)) || liem(m.ho).endsWith(hoGhi)))
-		lech.push(`tác giả đầu: nguồn ghi "${m.ho}", bản ghi "${r.tac_gia.slice(0, 40)}"`);
-	else {
-		const ds = lechDanhSach(r, m);
-		if (ds) lech.push(`tác giả: ${ds}`);
-	}
+	const ds = lechDanhSach(r, m);
+	if (ds) lech.push(`tác giả: ${ds}`);
 	const nam = String(r.nam).match(/\d{4}/g)?.map(Number) ?? [];
 	if (m.namCacBan.length && !nam.some((n) => m.namCacBan.includes(n))) lech.push(`năm: nguồn ghi ${[...new Set(m.namCacBan)].join(', ')}, bản ghi ${r.nam}`);
-	// tên của bản ghi là tên đầy đủ (có phụ đề) hay tên chính (bỏ phụ đề) của nguồn; dài hơn tên đầy đủ (lẫn tên tạp chí,
-	// tập, trang) là lệch (review lượt 2 của D2-0: philpot2020)
+	// tên của bản ghi đúng bằng tên đầy đủ (có phụ đề) hay tên chính của nguồn; dài hơn (lẫn tên tạp chí: philpot2020) hay
+	// cắt cụt đều là lệch (review D2-0)
 	const [ten, tenDu, tenChinh] = [liem(r.ten), liem(m.ten), liem(m.tenChinh)];
 	// OpenAlex hay bỏ phụ đề: bản ghi được dài hơn khi phần thêm là phụ đề, đứng ngay sau dấu hai chấm hay dấu hỏi
 	const chiThemPhuDe = m.boPhuDe && ten.startsWith(tenDu) && /^\s*[:?]/.test(String(r.ten).slice(String(m.ten).replace(/[.?\s]+$/, '').length));
-	if (m.tenChinh && !chiThemPhuDe && !(ten === tenDu || ten === tenChinh || (tenDu.startsWith(ten) && ten.length >= tenChinh.length)))
-		lech.push(`tên: nguồn ghi "${m.ten}", bản ghi "${r.ten}"`);
+	if (m.tenChinh && !chiThemPhuDe && ten !== tenDu && ten !== tenChinh) lech.push(`tên: nguồn ghi "${m.ten}", bản ghi "${r.ten}"`);
+	if (m.loai && LOAI_CROSSREF[m.loai] && LOAI_CROSSREF[m.loai] !== r.loai) lech.push(`loại: nguồn ghi ${m.loai}, bản ghi ${r.loai}`);
 	if (r.loai === 'bai-bao') {
-		if (m.tapChi && !dauNhau(m.tapChi, String(r.noi_dang ?? '').split(/,\s*\d/)[0]))
-			lech.push(`tạp chí: nguồn ghi "${m.tapChi}", bản ghi "${r.noi_dang ?? '(không có)'}"`);
-		const so = String(r.noi_dang ?? '');
-		if (m.tap && !new RegExp(`(^|\\D)${m.tap}(\\D|$)`).test(so)) lech.push(`tập: nguồn ghi ${m.tap}, bản ghi "${so}"`);
-		const dau = String(m.trang ?? '').split(/[-–]/)[0];
-		if (dau && !so.includes(dau)) lech.push(`trang: nguồn ghi ${m.trang}, bản ghi "${so}"`);
+		const nd = docNoiDang(r.noi_dang);
+		if (!nd) lech.push(`nơi đăng: không đọc được "${r.noi_dang ?? '(không có)'}" (Tạp chí, tập(số), trang)`);
+		else {
+			if (m.tapChi && liem(m.tapChi).replace(/^the/, '') !== liem(nd.tapChi).replace(/^the/, '')) lech.push(`tạp chí: nguồn ghi "${m.tapChi}", bản ghi "${nd.tapChi}"`);
+			if (m.tap && String(m.tap) !== nd.tap) lech.push(`tập: nguồn ghi ${m.tap}, bản ghi ${nd.tap}`);
+			// số: so khi cả hai có (APA bỏ số khi trang đánh liên tục cả tập)
+			const soDau = (x) => liem(String(x).split(',')[0]).replace(/^0+(?=\d)/, '');
+			if (m.so && nd.so && soDau(m.so) !== soDau(nd.so)) lech.push(`số: nguồn ghi ${m.so}, bản ghi ${nd.so}`);
+			const [d1, c1] = String(m.trang ?? '').split(/[-–]/);
+			const [d2, c2] = String(nd.trang ?? '').split(/[-–]/);
+			if (d1 && liem(d1) !== liem(d2)) lech.push(`trang đầu: nguồn ghi ${d1}, bản ghi ${d2 ?? '(không có)'}`);
+			if (c1 && c2 && liem(c1) !== liem(c2)) lech.push(`trang cuối: nguồn ghi ${c1}, bản ghi ${c2}`);
+		}
 	}
 	if (m.rut?.length) lech.push(`RÚT BÀI hay đính chính theo nguồn: ${m.rut.join(', ')}`);
 	return lech;
+}
+
+/** Loại tài liệu của Crossref -> loai của bản ghi. */
+export const LOAI_CROSSREF = { 'journal-article': 'bai-bao', book: 'sach', monograph: 'sach', 'edited-book': 'sach', 'book-chapter': 'chuong-sach', 'reference-entry': 'chuong-sach', report: 'bao-cao' };
+
+/** Nơi đăng của bài báo kiểu APA: "Tạp chí, 132(3), 354–380" -> { tapChi, tap, so, trang }, hay null. */
+export function docNoiDang(s) {
+	const m = /^(.+?),\s*(\d+)\s*(?:\(([^)]*)\))?(?:,\s*([^,]+))?$/.exec(String(s ?? '').trim());
+	return m ? { tapChi: m[1], tap: m[2], so: m[3] ?? null, trang: m[4]?.trim() ?? null } : null;
 }
 
 if (import.meta.main) {

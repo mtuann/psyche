@@ -4,7 +4,7 @@
 // trường đã kiểm định (node tools/khoa.mjs khoa du-lieu/<bộ>/<id>#<trường>,…). Hồ sơ chưa đủ thì in lỗi, bỏ qua, khóa tiếp
 // cái khác; cuối cùng in số đã khóa và danh sách chưa khóa.
 //   node tools/khoa.mjs … không đổi; script này chỉ gọi lenh() của nó.
-//   node tools/du_lieu/khoa-loat.mjs --review "…" --kiem-mau "…" [--ve-site dung] <bộ>:<trường,…> [<bộ>:<trường,…>…]
+//   node tools/du_lieu/khoa-loat.mjs --review "…" --kiem-mau "…" [--luot-2 "…"] [--ve-site dung] <bộ>:<trường,…> […]
 //   ví dụ: node tools/du_lieu/khoa-loat.mjs --review "Claude Sonnet 5.5, agent review D2-0" --kiem-mau "chủ repo, 5 nhận định"
 //            nguon:doi,loai,nam,noi_dang,tac_gia,ten trang:linh_vuc,moi,tang
 // Chỉ khóa bản ghi có hồ sơ trong kiem-dinh/du-lieu/<bộ>/; bản ghi chưa khóa. Trường bản ghi không có thì khóa bỏ qua.
@@ -24,6 +24,7 @@ const lay = (k) => {
 const review = lay('--review');
 const kiemMau = lay('--kiem-mau');
 const veSite = lay('--ve-site');
+const luot2 = lay('--luot-2');
 if (!review || !kiemMau || !ts.length) {
 	console.error('cần --review "…", --kiem-mau "…" và ít nhất một <bộ>:<trường,…>');
 	process.exit(2);
@@ -41,6 +42,7 @@ for (const muc of ts) {
 		const file = path.join(thu, f);
 		const doc = parseDocument(fs.readFileSync(file, 'utf8'));
 		const nguoi = doc.get('lan').items.at(-1).get('nguoi');
+		if (luot2 && !nguoi.get('luot_2')) nguoi.set('luot_2', luot2);
 		if (!nguoi.get('review')) nguoi.set('review', review);
 		if (!nguoi.get('kiem_mau')) nguoi.set('kiem_mau', kiemMau);
 		if (veSite) for (const n of doc.get('nhan_dinh')?.items ?? []) if (n.get('loai') === 've-site' && n.get('review') == null) n.set('review', veSite);

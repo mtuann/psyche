@@ -8,7 +8,7 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
       review: null
       kiem_mau: null
 nguon:
@@ -57,18 +57,19 @@ nhan_dinh:
     luot_2_nguon:
       - https://api.openalex.org/works/doi:10.1098%2Frspb.1979.0086
   - id: n4
-    cau: "Nơi đăng: Proceedings of the Royal Society of London. Series B, 205(1161), 581–598"
+    cau: "Nơi đăng: Proceedings of the Royal Society of London. Series B. Biological Sciences, 205(1161), 581–598"
     loai: lich-su
     truong:
       - noi_dang
     nguon:
       - crossref
     trich: Proceedings of the Royal Society of London. Series B. Biological Sciences, tập 205, số 1161, trang 581-598
-    ket_qua: dung
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-review.yml): tên tạp chí viết tắt; tên đầy đủ theo Crossref"
     luot_2: dung
     luot_2_nguon:
       - https://europepmc.org/search?query=DOI:10.1098/rspb.1979.0086 (REST api)
-    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Proceedings of the Royal Society B Biological Sciences", bản ghi "Proceedings of the Royal Society of London. Series B, 205(1161), 581–598". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 1979 (tập 205 số 1161, tr. 581-598), trực tuyến 1979-09-01; tạp chí lúc đăng: Proceedings of the Royal Society of London. Series B, Biological sciences; tác giả đầu và tên bài khớp.'
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Proceedings of the Royal Society B Biological Sciences", bản ghi "Proceedings of the Royal Society of London. Series B. Biological Sciences". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 1979 (tập 205 số 1161, tr. 581-598), trực tuyến 1979-09-01; tạp chí lúc đăng: Proceedings of the Royal Society of London. Series B, Biological sciences; tác giả đầu và tên bài khớp.'
   - id: n5
     cau: DOI 10.1098/rspb.1979.0086 trỏ tới tài liệu này, một bài báo
     loai: lich-su

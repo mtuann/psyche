@@ -351,7 +351,7 @@ test('chiTrangTrongBan: ở bản thật, trang chưa khóa không qua plugin c�
 		}
 	};
 	assert.equal(lay('that', 'thi-nghiem/khong-khoa'), 'psyche-bo-qua-trang-chua-khoa');
-	assert.equal(lay('that', 'index'), 'that', 'trang đã khóa vẫn qua plugin');
+	assert.equal(lay('that', '404'), 'that', 'trang đã khóa (404 luôn khóa) vẫn qua plugin');
 	assert.equal(lay('xem', 'thi-nghiem/khong-khoa'), 'that');
 	assert.equal(chiTrangTrongBan(plugin, docs)({}).name, 'that', 'không có đường dẫn (gọi thẳng Sätteri): qua plugin');
 });
@@ -390,4 +390,16 @@ test('bản ghi dữ liệu: câu về chính site chỉ ở cấu trúc của s
 	assert.deepEqual(loiHoSo(hs('nghien-cuu/asch1956', [vs(['trang_nha'])]), 'du-lieu/nghien-cuu/asch1956', ROOT), []);
 	assert.match(loiHoSo(hs('nghien-cuu/asch1956', [vs(['nguon'])]), 'du-lieu/nghien-cuu/asch1956', ROOT).join(), /không có câu về chính site/);
 	assert.match(loiHoSo(hs('nguon/asch1956', [vs(['ten'])]), 'du-lieu/nguon/asch1956', ROOT).join(), /không có câu về chính site/);
+});
+
+test('khóa từng phần bản ghi: nhận định về trường chưa khóa được để chưa có kết quả', () => {
+	const hs = {
+		ban_ghi: 'nguon/asch1951',
+		lan: [{ so: 1, ngay: null, nhanh: 'x', ma_bam: null, nguoi: NGUOI }],
+		nguon: [{ id: 'asch1956' }],
+		nhan_dinh: [nd({ id: 'n1', truong: ['tac_gia'] }), nd({ id: 'n4', truong: ['noi_dang'], ket_qua: null, luot_2: 'khong-chac' })],
+	};
+	assert.deepEqual(loiHoSo(hs, 'du-lieu/nguon/asch1951#tac_gia', ROOT), []);
+	assert.match(loiHoSo(hs, 'du-lieu/nguon/asch1951#noi_dang,tac_gia', ROOT).join(), /n4: ket_qua phải là/);
+	assert.match(loiHoSo(hs, 'du-lieu/nguon/asch1951', ROOT).join(), /n4: ket_qua phải là/);
 });

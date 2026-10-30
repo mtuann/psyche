@@ -8,7 +8,7 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
       review: null
       kiem_mau: null
 nguon:
@@ -57,14 +57,15 @@ nhan_dinh:
     luot_2_nguon:
       - https://api.openalex.org/works/doi:10.1017%2FS0140525X00023992
   - id: n4
-    cau: "Nơi đăng: Behavioral and Brain Sciences, 12(1), 1–49"
+    cau: "Nơi đăng: Behavioral and Brain Sciences, 12(1), 1–14"
     loai: lich-su
     truong:
       - noi_dang
     nguon:
       - crossref
     trich: Behavioral and Brain Sciences, tập 12, số 1, trang 1-14
-    ket_qua: dung
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-review.yml): Crossref và OpenAlex ghi bài chính trang 1–14; 1–49 là tính cả phần bình luận ngang hàng (open peer commentary) đi kèm"
     luot_2: dung
     luot_2_nguon:
       - https://api.openalex.org/works/doi:10.1017%2FS0140525X00023992

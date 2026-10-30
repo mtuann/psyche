@@ -8,7 +8,7 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
       review: null
       kiem_mau: null
 nguon:
@@ -57,14 +57,15 @@ nhan_dinh:
     luot_2_nguon:
       - https://api.openalex.org/works/doi:10.1037%2Fh0093360
   - id: n4
-    cau: "Nơi đăng: Psychological Monographs, 47(211), i–97"
+    cau: "Nơi đăng: Psychological Monographs, 47(1, Whole No. 211), i–171"
     loai: lich-su
     truong:
       - noi_dang
     nguon:
       - crossref
     trich: Psychological Monographs, tập 47, số 1, trang i-171
-    ket_qua: dung
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-review.yml): review D2-0: 211 là số toàn tập (Whole No.), không phải số tạp chí; Crossref và OpenAlex ghi tập 47, số 1, trang i–171"
     luot_2: dung
     luot_2_nguon:
       - https://api.openalex.org/works/doi:10.1037%2Fh0093360

@@ -8,7 +8,7 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
       review: null
       kiem_mau: null
 nguon:
@@ -32,7 +32,7 @@ nhan_dinh:
     luot_2_nguon: &a1
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:"10.1001/jama.1995.03530200053037"
       - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1001/jama.1995.03530200053037
-    luot_2_ghi_chu: 'Crossref: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Wilson", nguồn ghi "(không có)"; OpenAlex: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Wilson", nguồn ghi "(không có)". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC (PMID 7474248): Wolraich ML, Wilson DB, White JW, đúng 3 tác giả theo thứ tự; JAMA 274(20), 1617-1621, 1995.'
+    luot_2_ghi_chu: 'Crossref: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Wilson", nguồn ghi "(không có)"; OpenAlex: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Wilson", nguồn ghi "(không có)". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC (PMID 7474248): Wolraich ML, Wilson DB, White JW, đúng 3 tác giả theo thứ tự; JAMA 274(20), 1617-1621, 1995.'
     luot_2_trich: Mark L. Wolraich
   - id: n2
     cau: "Năm xuất bản: 1995"
@@ -57,7 +57,7 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: *a1
-    luot_2_ghi_chu: 'OpenAlex: tên: nguồn ghi "The Effect of Sugar on Behavior or Cognition in Children", bản ghi "The effect of sugar on behavior or cognition in children: A meta-analysis". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC (PMID 7474248): Wolraich ML, Wilson DB, White JW, đúng 3 tác giả theo thứ tự; JAMA 274(20), 1617-1621, 1995.'
+    luot_2_ghi_chu: 'OpenAlex: tên: nguồn ghi "The Effect of Sugar on Behavior or Cognition in Children", bản ghi "The effect of sugar on behavior or cognition in children: A meta-analysis". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC (PMID 7474248): Wolraich ML, Wilson DB, White JW, đúng 3 tác giả theo thứ tự; JAMA 274(20), 1617-1621, 1995.'
   - id: n4
     cau: "Nơi đăng: JAMA, 274(20), 1617–1621"
     loai: lich-su
