@@ -2,56 +2,61 @@
 ban_ghi: nghien-cuu/skinner
 muc: V3
 lan:
-- so: 1
-  ngay: null
-  nhanh: moi/d2-0-du-lieu
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
-- id: sk38
-  ten: 'Open Library: The behavior of organisms (D. Appleton-Century Company, 1938)'
-  link: https://openlibrary.org/books/OL58590794M
-- id: sk48
-  ten: Bản ghi Crossref của Skinner (1948), DOI 10.1037/h0055873
-  link: https://api.crossref.org/works/10.1037%2Fh0055873
-- id: fer57
-  ten: 'Open Library: Schedules of reinforcement (Appleton-Century-Crofts, 1957)'
-  link: https://openlibrary.org/books/OL19830344M
-- id: sk53
-  ten: 'Open Library: Science and human behavior (Macmillan, 1953)'
-  link: https://openlibrary.org/books/OL22182558M
+  - id: sk38
+    ten: 'Open Library: The behavior of organisms (D. Appleton-Century Company, 1938)'
+    link: https://openlibrary.org/books/OL58590794M
+  - id: sk48
+    ten: Bản ghi Crossref của Skinner (1948), DOI 10.1037/h0055873
+    link: https://api.crossref.org/works/10.1037%2Fh0055873
+  - id: fer57
+    ten: 'Open Library: Schedules of reinforcement (Appleton-Century-Crofts, 1957)'
+    link: https://openlibrary.org/books/OL19830344M
+  - id: sk53
+    ten: 'Open Library: Science and human behavior (Macmillan, 1953)'
+    link: https://openlibrary.org/books/OL22182558M
 nhan_dinh:
-- id: n1
-  cau: Nghiên cứu Skinner được công bố ở Skinner (1938), Skinner (1948) và Ferster và Skinner (1957)
-  loai: lich-su
-  truong:
-  - nguon
-  nguon:
-  - sk38
-  - sk48
-  - fer57
-  trich: 'Open Library: The behavior of organisms, D. Appleton-Century Company, 1938; Crossref: "''Superstition'' in the pigeon", Skinner, J Exp Psychol 38(2) 168-172, 1948; Open Library: Schedules of reinforcement, by C.B. Ferster and B.F. Skinner, Appleton-Century-Crofts, 1957'
-  ket_qua: dung
-  ghi_chu: Ba tài liệu của chính Skinner (và Ferster) báo cáo thí nghiệm về bồ câu và chuột; chưa mở nội dung sách 1938, 1957.
-- id: n2
-  cau: Skinner (1953), Science and human behavior, thuộc nhóm bài gốc của nghiên cứu Skinner
-  loai: lich-su
-  truong:
-  - nguon
-  nguon:
-  - sk53
-  trich: 'Open Library: Science and human behavior, B.F. Skinner, Macmillan, 1953'
-  ket_qua: da-bo
-  ghi_chu: 'lượt 1: sách trình bày lý thuyết hành vi chung, không phải báo cáo thí nghiệm. Người gom (Claude Opus 5.5) bỏ skinner1953 khỏi nguon của hồ sơ (sua-nghien-cuu.yml); vẫn là nguồn của trang thi-nghiem/skinner'
-- id: n-tn
-  cau: Trang nhà của nghiên cứu là thi-nghiem/skinner
-  loai: ve-site
-  truong:
-  - trang_nha
-  ket_qua: dung
-  ghi_chu: trang Thí nghiệm riêng của nghiên cứu này (một trong 15 trang Thí nghiệm của site cũ), nghiên cứu là chủ đề chính của trang nên là trang kể chi tiết nhất; đã mở bản cũ ../psyche-zero/docs/thi-nghiem/skinner.md đối chiếu danh sách nguồn
-  review: null
+  - id: n1
+    cau: Nghiên cứu Skinner được công bố ở Skinner (1938), Skinner (1948) và Ferster và Skinner (1957)
+    loai: lich-su
+    truong:
+      - nguon
+    nguon:
+      - sk38
+      - sk48
+      - fer57
+    trich: 'Open Library: The behavior of organisms, D. Appleton-Century Company, 1938; Crossref: "''Superstition'' in the pigeon", Skinner, J Exp Psychol 38(2) 168-172, 1948; Open Library: Schedules of reinforcement, by C.B. Ferster and B.F. Skinner, Appleton-Century-Crofts, 1957'
+    ket_qua: dung
+    ghi_chu: Ba tài liệu của chính Skinner (và Ferster) báo cáo thí nghiệm về bồ câu và chuột; chưa mở nội dung sách 1938, 1957.
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0055873", "https://openlibrary.org/search.json?title=The+behavior+of+organisms", "https://openlibrary.org/search.json?title=Schedules+of+reinforcement" ]
+  - id: n2
+    cau: Skinner (1953), Science and human behavior, thuộc nhóm bài gốc của nghiên cứu Skinner
+    loai: lich-su
+    truong:
+      - nguon
+    nguon:
+      - sk53
+    trich: 'Open Library: Science and human behavior, B.F. Skinner, Macmillan, 1953'
+    ket_qua: da-bo
+    ghi_chu: 'lượt 1: sách trình bày lý thuyết hành vi chung, không phải báo cáo thí nghiệm. Người gom (Claude Opus 5.5) bỏ skinner1953 khỏi nguon của hồ sơ (sua-nghien-cuu.yml); vẫn là nguồn của trang thi-nghiem/skinner'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0055873", "https://openlibrary.org/search.json?title=The+behavior+of+organisms", "https://openlibrary.org/search.json?title=Schedules+of+reinforcement" ]
+    luot_2_ghi_chu: Science and Human Behavior (Macmillan, 1953) là sách trình bày lý thuyết và áp dụng nguyên lý điều kiện hóa tác động, không báo cáo thí nghiệm gốc; có phải 'bài gốc' hay không là quy ước biên tập của site. Không có nguồn mở được nói thẳng điều này.
+  - id: n-tn
+    cau: Trang nhà của nghiên cứu là thi-nghiem/skinner
+    loai: ve-site
+    truong:
+      - trang_nha
+    ket_qua: dung
+    ghi_chu: trang Thí nghiệm riêng của nghiên cứu này (một trong 15 trang Thí nghiệm của site cũ), nghiên cứu là chủ đề chính của trang nên là trang kể chi tiết nhất; đã mở bản cũ ../psyche-zero/docs/thi-nghiem/skinner.md đối chiếu danh sách nguồn
+    review: null

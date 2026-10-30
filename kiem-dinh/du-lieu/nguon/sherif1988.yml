@@ -2,73 +2,84 @@
 ban_ghi: nguon/sherif1988
 muc: V1
 lan:
-- so: 1
-  ngay: null
-  nhanh: moi/d2-0-du-lieu
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
-- id: openlibrary
-  ten: 'Open Library: The Robbers Cave experiment (Wesleyan University Press, 1988)'
-  link: https://openlibrary.org/books/OL2389151M
-- id: everand
-  ten: 'Trang sách Everand: tác giả theo thứ tự, nhà xuất bản, ấn bản 1961'
-  link: https://www.everand.com/book/251914081/The-Robbers-Cave-Experiment-Intergroup-Conflict-and-Cooperation-Orig-pub-as-Intergroup-Conflict-and-Group-Relations
+  - id: openlibrary
+    ten: 'Open Library: The Robbers Cave experiment (Wesleyan University Press, 1988)'
+    link: https://openlibrary.org/books/OL2389151M
+  - id: everand
+    ten: 'Trang sách Everand: tác giả theo thứ tự, nhà xuất bản, ấn bản 1961'
+    link: https://www.everand.com/book/251914081/The-Robbers-Cave-Experiment-Intergroup-Conflict-and-Cooperation-Orig-pub-as-Intergroup-Conflict-and-Group-Relations
 nhan_dinh:
-- id: n1
-  cau: 'Tác giả: Sherif, M., Harvey, O. J., White, B. J., Hood, W. R., & Sherif, C. W.'
-  loai: lich-su
-  truong:
-  - tac_gia
-  nguon:
-  - everand
-  - openlibrary
-  trich: 'Everand: Muzafer Sherif, O. J. Harvey, B. Jack White, William R. Hood, Carolyn W. Sherif; Open Library: Muzafer Sherif ... [et al.]'
-  ket_qua: dung
-  ghi_chu: Everand ghi "B. Jack White", khớp "White, B. J.".
-- id: n2
-  cau: 'Năm xuất bản: 1988 (ấn bản gốc 1961)'
-  loai: lich-su
-  truong:
-  - nam
-  - nam_goc
-  nguon:
-  - openlibrary
-  - everand
-  trich: 'Open Library: publish_date 1988; notes "Reprint. Previously published: Norman, Okla.: University Book Exchange, 1961"; Everand: "first published by the Institute of Group Relations, the University of Oklahoma in 1961"'
-  ket_qua: dung
-  ghi_chu: Hai nguồn ghi nhà in bản 1961 khác nhau (University Book Exchange, Norman; Institute of Group Relations, Đại học Oklahoma), cùng năm 1961.
-- id: n3
-  cau: 'Tên: The Robbers Cave experiment: Intergroup conflict and cooperation'
-  loai: lich-su
-  truong:
-  - ten
-  nguon:
-  - openlibrary
-  trich: 'title: The Robbers Cave experiment; subtitle: intergroup conflict and cooperation'
-  ket_qua: dung
-  ghi_chu: Everand ghi bản gốc đã in với tên "Intergroup Conflict and Group Relations"; tên bản 1988 như dữ liệu.
-- id: n4
-  cau: 'Nơi đăng: Wesleyan University Press'
-  loai: lich-su
-  truong:
-  - noi_dang
-  nguon:
-  - openlibrary
-  - everand
-  trich: 'publishers: Wesleyan University Press, Distributed by Harper & Row; publish_places: Middletown, Conn'
-  ket_qua: dung
-- id: n5
-  cau: Không có DOI; sách
-  loai: lich-su
-  truong:
-  - doi
-  - loai
-  nguon:
-  - openlibrary
-  trich: bản ghi sách in
-  ket_qua: dung
+  - id: n1
+    cau: 'Tác giả: Sherif, M., Harvey, O. J., White, B. J., Hood, W. R., & Sherif, C. W.'
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - everand
+      - openlibrary
+    trich: 'Everand: Muzafer Sherif, O. J. Harvey, B. Jack White, William R. Hood, Carolyn W. Sherif; Open Library: Muzafer Sherif ... [et al.]'
+    ket_qua: dung
+    ghi_chu: Everand ghi "B. Jack White", khớp "White, B. J.".
+    luot_2: dung
+    luot_2_nguon: [ "https://openlibrary.org/search.json?title=The+Robbers+Cave+experiment" ]
+  - id: n2
+    cau: 'Năm xuất bản: 1988 (ấn bản gốc 1961)'
+    loai: lich-su
+    truong:
+      - nam
+      - nam_goc
+    nguon:
+      - openlibrary
+      - everand
+    trich: 'Open Library: publish_date 1988; notes "Reprint. Previously published: Norman, Okla.: University Book Exchange, 1961"; Everand: "first published by the Institute of Group Relations, the University of Oklahoma in 1961"'
+    ket_qua: dung
+    ghi_chu: Hai nguồn ghi nhà in bản 1961 khác nhau (University Book Exchange, Norman; Institute of Group Relations, Đại học Oklahoma), cùng năm 1961.
+    luot_2: dung
+    luot_2_nguon: [ "https://openlibrary.org/search.json?title=The+Robbers+Cave+experiment" ]
+  - id: n3
+    cau: 'Tên: The Robbers Cave experiment: Intergroup conflict and cooperation'
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - openlibrary
+    trich: 'title: The Robbers Cave experiment; subtitle: intergroup conflict and cooperation'
+    ket_qua: dung
+    ghi_chu: Everand ghi bản gốc đã in với tên "Intergroup Conflict and Group Relations"; tên bản 1988 như dữ liệu.
+    luot_2: dung
+    luot_2_nguon: [ "https://openlibrary.org/search.json?title=The+Robbers+Cave+experiment" ]
+  - id: n4
+    cau: 'Nơi đăng: Wesleyan University Press'
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - openlibrary
+      - everand
+    trich: 'publishers: Wesleyan University Press, Distributed by Harper & Row; publish_places: Middletown, Conn'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openlibrary.org/search.json?title=The+Robbers+Cave+experiment" ]
+  - id: n5
+    cau: Không có DOI; sách
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - openlibrary
+    trich: bản ghi sách in
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openlibrary.org/search.json?title=The+Robbers+Cave+experiment" ]
+    luot_2_ghi_chu: Crossref/Open Library không thấy DOI cho ấn bản gốc.

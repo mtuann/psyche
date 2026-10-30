@@ -2,39 +2,42 @@
 ban_ghi: nghien-cuu/milgram
 muc: V3
 lan:
-- so: 1
-  ngay: null
-  nhanh: moi/d2-0-du-lieu
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
-- id: milgram
-  ten: Bản ghi Crossref của Milgram (1963), DOI 10.1037/h0040525
-  link: https://api.crossref.org/works/10.1037%2Fh0040525
-- id: milgram-pm
-  ten: Bản ghi PubMed (PMID 14049516) của Milgram (1963), đọc qua NCBI E-utilities
-  link: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=text&id=14049516
+  - id: milgram
+    ten: Bản ghi Crossref của Milgram (1963), DOI 10.1037/h0040525
+    link: https://api.crossref.org/works/10.1037%2Fh0040525
+  - id: milgram-pm
+    ten: Bản ghi PubMed (PMID 14049516) của Milgram (1963), đọc qua NCBI E-utilities
+    link: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=abstract&retmode=text&id=14049516
 nhan_dinh:
-- id: n1
-  cau: Thí nghiệm Milgram được công bố ở Milgram (1963)
-  loai: lich-su
-  truong:
-  - nguon
-  nguon:
-  - milgram
-  - milgram-pm
-  trich: 'Crossref: "Behavioral Study of obedience", Milgram, Journal of Abnormal and Social Psychology 67(4) 371-378; PubMed: J Abnorm Psychol. 1963 Oct;67:371-8. BEHAVIORAL STUDY OF OBEDIENCE. MILGRAM S.'
-  ket_qua: dung
-  ghi_chu: 'Bản ghi chỉ có tên, tác giả, nơi đăng (không có tóm tắt): xác nhận bài là của chính Milgram, mang tên "Behavioral study of obedience". Sách Obedience to authority (1974) không có trong nguon, trang nhà cũ không dẫn.'
-- id: n-tn
-  cau: Trang nhà của nghiên cứu là thi-nghiem/milgram
-  loai: ve-site
-  truong:
-  - trang_nha
-  ket_qua: dung
-  ghi_chu: trang Thí nghiệm riêng của nghiên cứu này (một trong 15 trang Thí nghiệm của site cũ), nghiên cứu là chủ đề chính của trang nên là trang kể chi tiết nhất; đã mở bản cũ ../psyche-zero/docs/thi-nghiem/milgram.md đối chiếu danh sách nguồn
-  review: null
+  - id: n1
+    cau: Thí nghiệm Milgram được công bố ở Milgram (1963)
+    loai: lich-su
+    truong:
+      - nguon
+    nguon:
+      - milgram
+      - milgram-pm
+    trich: 'Crossref: "Behavioral Study of obedience", Milgram, Journal of Abnormal and Social Psychology 67(4) 371-378; PubMed: J Abnorm Psychol. 1963 Oct;67:371-8. BEHAVIORAL STUDY OF OBEDIENCE. MILGRAM S.'
+    ket_qua: dung
+    ghi_chu: 'Bản ghi chỉ có tên, tác giả, nơi đăng (không có tóm tắt): xác nhận bài là của chính Milgram, mang tên "Behavioral study of obedience". Sách Obedience to authority (1974) không có trong nguon, trang nhà cũ không dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0040525" ]
+    luot_2_ghi_chu: "Milgram còn có các bài/sách sau (1965, 1974) nhưng câu chỉ nói 1963: đúng."
+  - id: n-tn
+    cau: Trang nhà của nghiên cứu là thi-nghiem/milgram
+    loai: ve-site
+    truong:
+      - trang_nha
+    ket_qua: dung
+    ghi_chu: trang Thí nghiệm riêng của nghiên cứu này (một trong 15 trang Thí nghiệm của site cũ), nghiên cứu là chủ đề chính của trang nên là trang kể chi tiết nhất; đã mở bản cũ ../psyche-zero/docs/thi-nghiem/milgram.md đối chiếu danh sách nguồn
+    review: null
