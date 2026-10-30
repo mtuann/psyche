@@ -3,14 +3,15 @@ ban_ghi: nguon/haney1973
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:0a5628b153163d9e5d7a84efab8335988a7367cd6de829017081296b73682374
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
-      luot_2: null
-      review: null
-      kiem_mau: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D2-0)
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ tac_gia, ten ]
 nguon:
   - id: prisonexp
     ten: Bản PDF của bài ở prisonexp.org (website của Zimbardo; bản scan 29 trang, đọc bằng OCR)
@@ -39,8 +40,9 @@ nhan_dinh:
       - prisonexp
     trich: International Journal of Criminology and Penology 1973, 1, 69-97
     ket_qua: dung
-    luot_2: dung
+    luot_2: khong-chac
     luot_2_nguon: [ "https://api.crossref.org/works?query.bibliographic=Haney+Banks+Zimbardo+Interpersonal+dynamics+in+a+simulated+prison" ]
+    luot_2_ghi_chu: "người gom (review D2-0): nguồn lượt 2 là truy vấn Crossref chỉ ra báo cáo kỹ thuật 1972 cùng tên, không xác nhận năm 1973 hay tạp chí, trang; hạ từ dung xuống khong-chac. Trường nam, noi_dang chưa khóa"
   - id: n3
     cau: 'Tên: Interpersonal dynamics in a simulated prison'
     loai: lich-su
@@ -62,8 +64,9 @@ nhan_dinh:
     trich: International Journal of Criminology and Penology 1973, 1, 69-97
     ket_qua: dung
     ghi_chu: Tệp PDF có 29 trang, khớp trang 69–97. Đầu bài ghi tập 1, không ghi số.
-    luot_2: dung
+    luot_2: khong-chac
     luot_2_nguon: [ "https://api.crossref.org/works?query.bibliographic=Haney+Banks+Zimbardo+Interpersonal+dynamics+in+a+simulated+prison" ]
+    luot_2_ghi_chu: "người gom (review D2-0): nguồn lượt 2 là truy vấn Crossref chỉ ra báo cáo kỹ thuật 1972 cùng tên, không xác nhận năm 1973 hay tạp chí, trang; hạ từ dung xuống khong-chac. Trường nam, noi_dang chưa khóa"
   - id: n5
     cau: Không có DOI; bài báo
     loai: lich-su

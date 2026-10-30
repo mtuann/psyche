@@ -36,8 +36,17 @@ test('khớp: chữ hoa thường, dấu câu cuối, &amp;, "La Berge" như "La
 test('lệch: tên lẫn tên tạp chí, tên bằng lời mô tả, thiếu tập, trang đầu sai, năm, tác giả thiếu hay sai thứ tự', () => {
 	assert.match(soBanGhi(r({ ten: r().ten + '. Psychological Bulletin, 132(3), 354–380' }), cr()).join(), /^tên:/);
 	assert.match(soBanGhi(r({ ten: 'Ôn rải rác giúp nhớ lâu' }), cr()).join(), /^tên:/);
-	assert.match(soBanGhi(r({ noi_dang: 'Psychological Bulletin' }), cr()).join(), /tập: nguồn ghi 132/);
-	assert.match(soBanGhi(r({ noi_dang: 'Psychological Bulletin, 132(3), 353–380' }), cr()).join(), /trang: nguồn ghi 354-380/);
+	assert.match(soBanGhi(r({ noi_dang: 'Psychological Bulletin' }), cr()).join(), /nơi đăng: không đọc được/);
+	assert.match(soBanGhi(r({ noi_dang: 'Psychological Bulletin, 133(3), 354–380' }), cr()).join(), /tập: nguồn ghi 132/);
+	assert.match(soBanGhi(r({ noi_dang: 'Psychological Bulletin, 132(3), 353–380' }), cr()).join(), /trang đầu: nguồn ghi 354/);
+	// review D2-0: số tạp chí, trang cuối, tên tạp chí, cắt cụt tên, loại, họ gần giống đều phải bắt
+	assert.match(soBanGhi(r({ noi_dang: 'Psychological Bulletin, 132(4), 354–380' }), cr()).join(), /số: nguồn ghi 3/);
+	assert.deepEqual(soBanGhi(r({ noi_dang: 'Psychological Bulletin, 132(03), 354–380' }), cr()), []);
+	assert.match(soBanGhi(r({ noi_dang: 'Psychological Bulletin, 132(3), 354–387' }), cr()).join(), /trang cuối: nguồn ghi 380/);
+	assert.match(soBanGhi(r({ noi_dang: 'Psychological Science, 132(3), 354–380' }), cr()).join(), /tạp chí:/);
+	assert.match(soBanGhi(r({ ten: 'Distributed practice in verbal recall tasks: A review' }), cr()).join(), /^tên:/);
+	assert.match(soBanGhi(r({ loai: 'sach' }), cr()).join(), /loại: nguồn ghi journal-article/);
+	assert.match(soBanGhi(r({ tac_gia: 'Epeda, N. J., & Pashler, H.' }), cr()).join(), /tác giả thứ 1/);
 	assert.match(soBanGhi(r({ nam: 2007 }), cr()).join(), /năm: nguồn ghi 2006/);
 	assert.match(soBanGhi(r({ tac_gia: 'Cepeda, N. J.' }), cr()).join(), /bản ghi có 1, nguồn có 2 tác giả/);
 	assert.match(soBanGhi(r({ tac_gia: 'Cepeda, N. J., & Vul, E.' }), cr()).join(), /tác giả thứ 2 của bản ghi là "Vul"/);

@@ -3,14 +3,15 @@ ban_ghi: nguon/vangeel2014
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:232fbb9f322bff6a34588898963b7879f4ddbe06cce207d8ae15dc0be50790b4
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1001/jamapediatrics.2013.4143
@@ -56,7 +57,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: &a1
       - https://europepmc.org/search?query=DOI:10.1001/jamapediatrics.2013.4143 (REST api)
-    luot_2_ghi_chu: 'OpenAlex: tên: nguồn ghi "Relationship Between Peer Victimization, Cyberbullying, and Suicide in Children and Adolescents", bản ghi "Relationship between peer victimization, cyberbullying, and suicide in children and adolescents: A meta-analysis". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2014 (tập 168 số 5, tr. 435-442), trực tuyến 2014-05-01; tạp chí lúc đăng: JAMA pediatrics; tác giả đầu và tên bài khớp.'
+    luot_2_ghi_chu: 'OpenAlex: tên: nguồn ghi "Relationship Between Peer Victimization, Cyberbullying, and Suicide in Children and Adolescents", bản ghi "Relationship between peer victimization, cyberbullying, and suicide in children and adolescents: A meta-analysis". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2014 (tập 168 số 5, tr. 435-442), trực tuyến 2014-05-01; tạp chí lúc đăng: JAMA pediatrics; tác giả đầu và tên bài khớp.'
   - id: n4
     cau: "Nơi đăng: JAMA Pediatrics, 168(5), 435–442"
     loai: lich-su
@@ -68,7 +69,7 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: *a1
-    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Archives of Pediatrics and Adolescent Medicine", bản ghi "JAMA Pediatrics, 168(5), 435–442". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2014 (tập 168 số 5, tr. 435-442), trực tuyến 2014-05-01; tạp chí lúc đăng: JAMA pediatrics; tác giả đầu và tên bài khớp.'
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Archives of Pediatrics and Adolescent Medicine", bản ghi "JAMA Pediatrics, 168(5), 435–442". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2014 (tập 168 số 5, tr. 435-442), trực tuyến 2014-05-01; tạp chí lúc đăng: JAMA pediatrics; tác giả đầu và tên bài khớp.'
   - id: n5
     cau: DOI 10.1001/jamapediatrics.2013.4143 trỏ tới tài liệu này, một bài báo
     loai: lich-su

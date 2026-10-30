@@ -3,14 +3,15 @@ ban_ghi: nguon/pittenger2005
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:d6c99ffa2133bc3c85170a5f044bd8397f06bdbe5954f1cc0aac090a209eb898
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1037/1065-9293.57.3.210
@@ -67,7 +68,8 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon:
-      - https://api.openalex.org/works/doi:10.1037%2F1065-9293.57.3.210
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1037/1065-9293.57.3.210
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Consulting psychology journal", bản ghi "Consulting Psychology Journal: Practice and Research". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Semantic Scholar: tên tạp chí "Consulting Psychology Journal: Practice and Research" tập 57, tr. 210-221, 2005; tác giả duy nhất Pittenger; tên khớp. Chưa mở trang APA.'
   - id: n5
     cau: DOI 10.1037/1065-9293.57.3.210 trỏ tới tài liệu này, một bài báo
     loai: lich-su

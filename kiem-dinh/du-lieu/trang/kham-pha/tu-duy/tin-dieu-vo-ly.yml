@@ -2,14 +2,15 @@
 ban_ghi: trang/kham-pha/tu-duy/tin-dieu-vo-ly
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:13810fc5fac54e4c8ceea3ab52378662f8c87e9647c40644a85b39f82b919941
     nguoi:
       luot_1: script tools/du_lieu/ho-so-cau-truc.mjs, từ src/data/ (Claude Opus 5.5)
       luot_2: không cần (câu về chính site, review kiểm)
-      review: null
-      kiem_mau: null
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ linh_vuc, moi, tang ]
 nguon: []
 nhan_dinh:
   - id: n1
@@ -20,4 +21,4 @@ nhan_dinh:
       - linh_vuc
     ket_qua: dung
     ghi_chu: đối chiếu dòng của trang trong plans/lam-lai/anh-xa.md (tầng, lĩnh vực, "(mới)"); tests/du-lieu.test.mjs kiểm trang.yml khớp bảng ấy
-    review: null
+    review: dung

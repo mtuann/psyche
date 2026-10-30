@@ -3,14 +3,15 @@ ban_ghi: nguon/oboyle2011
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:6ee956304162bf10eefa2ea96608d47ce354bbdef373dcb922480a317c196dbf
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1002/job.714
@@ -44,7 +45,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon:
       - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1002/job.714
-    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2010, bản ghi 2011. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2010, bản ghi 2011. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
   - id: n3
     cau: "Tên: The relation between emotional intelligence and job performance: A meta-analysis"
     loai: lich-su

@@ -3,14 +3,15 @@ ban_ghi: nguon/bridgman2019
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:5b0553f31098c427f9c0239c71466e18169c4df4679e7f45ee06f4687c176fc0
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.5465/amle.2017.0351
@@ -44,7 +45,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon:
       - https://api.semanticscholar.org/graph/v1/paper/DOI:10.5465/amle.2017.0351
-    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
   - id: n3
     cau: "Tên: Who built Maslow's pyramid? A history of the creation of management studies' most famous symbol and its implications for management education"
     loai: lich-su

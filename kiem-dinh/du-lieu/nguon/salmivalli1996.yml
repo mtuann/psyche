@@ -3,14 +3,15 @@ ban_ghi: nguon/salmivalli1996
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:26868a301e4ffbf52a5237c39d30c4cf4659ac6f84913f963bc6cebb4011d5dc
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1002/(SICI)1098-2337(1996)22:1<1::AID-AB1>3.0.CO;2-T
@@ -44,7 +45,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon:
       - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1002/(SICI)1098-2337(1996)22:1<1::AID-AB1>3.0.CO;2-T
-    luot_2_ghi_chu: "Crossref: năm: nguồn ghi 1998, bản ghi 1996; OpenAlex: năm: nguồn ghi 1998, bản ghi 1996. Người kiểm lượt 2 mở trang nhà xuất bản: Aggressive Behavior tập 22 số 1 = 1996 (tr. 1-15); 1998 là năm số hóa. Tác giả đầu, tên khớp (Semantic Scholar)."
+    luot_2_ghi_chu: "Crossref: năm: nguồn ghi 1998, bản ghi 1996; OpenAlex: năm: nguồn ghi 1998, bản ghi 1996. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Aggressive Behavior tập 22 số 1 = 1996 (tr. 1-15); 1998 là năm số hóa. Tác giả đầu, tên khớp (Semantic Scholar)."
   - id: n3
     cau: "Tên: Bullying as a group process: Participant roles and their relations to social status within the group"
     loai: lich-su

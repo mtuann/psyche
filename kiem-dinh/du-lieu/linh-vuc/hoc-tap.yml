@@ -2,14 +2,15 @@
 ban_ghi: linh-vuc/hoc-tap
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:b4119dbdcad18af1df26a9161206344973f63bea4852c13c9a300d18f1ec4686
     nguoi:
       luot_1: script tools/du_lieu/ho-so-cau-truc.mjs, từ src/data/ (Claude Opus 5.5)
       luot_2: không cần (câu về chính site, review kiểm)
-      review: null
-      kiem_mau: null
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ bieu_tuong, mau, ten, thu_tu ]
 nguon: []
 nhan_dinh:
   - id: n1
@@ -20,7 +21,7 @@ nhan_dinh:
       - thu_tu
     ket_qua: dung
     ghi_chu: đối chiếu bảng 14 lĩnh vực ở plans/lam-lai/anh-xa.md và plans/ben-vung/README.md mục 3 (bản đồ Nền tảng, chủ repo duyệt 29/10/2026)
-    review: null
+    review: dung
   - id: n2
     cau: Màu của lĩnh vực có sắc độ 145, biểu tượng chuong
     loai: ve-site
@@ -29,4 +30,4 @@ nhan_dinh:
       - bieu_tuong
     ket_qua: dung
     ghi_chu: màu theo bản mẫu giao diện đã chọn (plans/lam-lai/ban-mau/ma/du-lieu.mjs, sắc độ h); biểu tượng D1.3 (src/bieu-tuong.mjs); tests/giao-dien.test.mjs kiểm không trùng
-    review: null
+    review: dung

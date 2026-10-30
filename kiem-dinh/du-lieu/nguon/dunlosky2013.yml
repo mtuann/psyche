@@ -3,14 +3,15 @@ ban_ghi: nguon/dunlosky2013
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:b579594928f51e0c97e285371f0f0b13f8c62b3de36beb21b41df212da4b8ab6
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1177/1529100612453266
@@ -56,7 +57,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: &a1
       - https://europepmc.org/search?query=DOI:10.1177/1529100612453266 (REST api)
-    luot_2_ghi_chu: "OpenAlex: tên: nguồn ghi \"Improving Students’ Learning With Effective Learning Techniques\", bản ghi \"Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology\". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2013 (tập 14 số 1, tr. 4-58), trực tuyến 2013-01-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp."
+    luot_2_ghi_chu: "OpenAlex: tên: nguồn ghi \"Improving Students’ Learning With Effective Learning Techniques\", bản ghi \"Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology\". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2013 (tập 14 số 1, tr. 4-58), trực tuyến 2013-01-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp."
   - id: n4
     cau: "Nơi đăng: Psychological Science in the Public Interest, 14(1), 4–58"
     loai: lich-su
@@ -68,7 +69,7 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: *a1
-    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Gothic.net", bản ghi "Psychological Science in the Public Interest, 14(1), 4–58". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2013 (tập 14 số 1, tr. 4-58), trực tuyến 2013-01-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp.'
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Gothic.net", bản ghi "Psychological Science in the Public Interest, 14(1), 4–58". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2013 (tập 14 số 1, tr. 4-58), trực tuyến 2013-01-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp.'
   - id: n5
     cau: DOI 10.1177/1529100612453266 trỏ tới tài liệu này, một bài báo
     loai: lich-su

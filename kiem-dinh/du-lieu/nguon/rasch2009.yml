@@ -3,14 +3,15 @@ ban_ghi: nguon/rasch2009
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:b055585d96645a4e97e950322013da1aff2484ab054f2af1777d50354b3f648d
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1038/nn.2206
@@ -44,7 +45,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon:
       - https://europepmc.org/search?query=DOI:10.1038/nn.2206 (REST api)
-    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2008, bản ghi 2009. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2009 (tập 12 số 4, tr. 396-397), trực tuyến 2008-10-05; tạp chí lúc đăng: Nature neuroscience; tác giả đầu và tên bài khớp."
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2008, bản ghi 2009. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2009 (tập 12 số 4, tr. 396-397), trực tuyến 2008-10-05; tạp chí lúc đăng: Nature neuroscience; tác giả đầu và tên bài khớp."
   - id: n3
     cau: "Tên: Pharmacological REM sleep suppression paradoxically improves rather than impairs skill memory"
     loai: lich-su

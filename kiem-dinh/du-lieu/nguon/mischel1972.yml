@@ -1,23 +1,27 @@
-# Hồ sơ kiểm định lượt 1 (D2-0, V1: siêu dữ liệu xuất bản; agent Sonnet 5.5). Khóa: node tools/khoa.mjs khoa du-lieu/nguon/mischel1972#…
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/mischel1972#…
 ban_ghi: nguon/mischel1972
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:169a925f63fe3307a4f236ddcd26bb5d885bc7cac8715dcaa908955d9574b11e
     nguoi:
-      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
-      luot_2: null
-      review: null
-      kiem_mau: null
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1037/h0032198
     link: https://api.crossref.org/works/10.1037%2Fh0032198
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/h0032198
+    link: https://api.openalex.org/works/doi:10.1037%2Fh0032198
 nhan_dinh:
   - id: n1
-    cau: 'Tác giả: Mischel, W., Ebbesen, E. B., & Zeiss, A. R.'
+    cau: "Tác giả: Mischel, W., Ebbesen, E. B., & Zeiss, A. R."
     loai: lich-su
     truong:
       - tac_gia
@@ -25,22 +29,25 @@ nhan_dinh:
       - crossref
     trich: Mischel, Walter; Ebbesen, Ebbe B.; Raskoff Zeiss, Antonette
     ket_qua: dung
-    ghi_chu: Crossref ghi tác giả thứ ba là "Raskoff Zeiss, Antonette" (họ kép); dữ liệu ghi "Zeiss, A. R." (Antonette R. Zeiss), cùng người, cách viết thường dùng.
     luot_2: dung
-    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:"10.1037/h0032198"
+    luot_2_ghi_chu: 'Crossref: tác giả: danh sách tác giả: tác giả thứ 3 của bản ghi là "Zeiss", nguồn ghi "Raskoff Zeiss". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC (PMID 5010404): Mischel W, Ebbesen EB, Zeiss AR; JPSP 21(2), 204-218, 1972. "Zeiss, A. R." đúng.'
+    luot_2_trich: Walter Mischel; Ebbe Β. Ebbesen; Antonette M. Zeiss
   - id: n2
-    cau: 'Năm xuất bản: 1972'
+    cau: "Năm xuất bản: 1972"
     loai: lich-su
     truong:
       - nam
     nguon:
       - crossref
-    trich: 'năm in hay xuất bản: 1972; ngày Crossref ghi: [1972]'
+    trich: "năm in hay xuất bản: 1972; các năm Crossref ghi: 1972"
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0032198
   - id: n3
-    cau: 'Tên: Cognitive and attentional mechanisms in delay of gratification'
+    cau: "Tên: Cognitive and attentional mechanisms in delay of gratification"
     loai: lich-su
     truong:
       - ten
@@ -49,9 +56,10 @@ nhan_dinh:
     trich: Cognitive and attentional mechanisms in delay of gratification.
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0032198
   - id: n4
-    cau: 'Nơi đăng: Journal of Personality and Social Psychology, 21(2), 204–218'
+    cau: "Nơi đăng: Journal of Personality and Social Psychology, 21(2), 204–218"
     loai: lich-su
     truong:
       - noi_dang
@@ -60,7 +68,8 @@ nhan_dinh:
     trich: Journal of Personality and Social Psychology, tập 21, số 2, trang 204-218
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0032198
   - id: n5
     cau: DOI 10.1037/h0032198 trỏ tới tài liệu này, một bài báo
     loai: lich-su
@@ -69,8 +78,9 @@ nhan_dinh:
       - loai
     nguon:
       - crossref
-    trich: 'loại theo Crossref: journal-article'
+    trich: "loại theo Crossref: journal-article"
     ket_qua: da-sua
-    ghi_chu: 'cũ: nguon.yml không ghi DOI; mới: doi 10.1037/h0032198; lý do: Crossref cho bài đúng tác giả, tên, tập, trang này (tìm theo tên và nơi đăng, đối chiếu từng trường ở n1–n4).'
+    ghi_chu: "đã sửa theo Crossref (sua-nguon-khong-doi.yml): bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/h0032198"
     luot_2: dung
-    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0032198

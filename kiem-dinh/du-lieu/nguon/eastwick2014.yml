@@ -3,14 +3,15 @@ ban_ghi: nguon/eastwick2014
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:fa276c666bb39fc3ecd49dfb11bc31cd8f1a28bd586d7e48ca90777ed3743e22
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1037/a0032432
@@ -44,7 +45,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon:
       - https://europepmc.org/search?query=DOI:10.1037/a0032432 (REST api)
-    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2013, bản ghi 2014. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2014 (tập 140 số 3, tr. 623-665), trực tuyến 2013-04-15; tạp chí lúc đăng: Psychological bulletin; tác giả đầu và tên bài khớp."
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2013, bản ghi 2014. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2014 (tập 140 số 3, tr. 623-665), trực tuyến 2013-04-15; tạp chí lúc đăng: Psychological bulletin; tác giả đầu và tên bài khớp."
   - id: n3
     cau: "Tên: The predictive validity of ideal partner preferences: A review and meta-analysis"
     loai: lich-su

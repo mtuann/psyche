@@ -3,14 +3,15 @@ ban_ghi: nguon/paluck2019
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:66738944355d85c72a40f1d924c37f3feaf100ff9364d4d3324c452e4c01959f
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1017/bpp.2018.25
@@ -44,7 +45,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon:
       - https://doi.org/10.1017/bpp.2018.25
-    luot_2_ghi_chu: 'OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 mở trang nhà xuất bản: Trang Cambridge: in 2019/11 (tập 3 số 2, tr. 129-158), trực tuyến 2018/07/10; tác giả đầu Paluck, tên bài "The contact hypothesis re-evaluated" (cần kiểm tên bản ghi).'
+    luot_2_ghi_chu: 'OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Trang Cambridge: in 2019/11 (tập 3 số 2, tr. 129-158), trực tuyến 2018/07/10; tác giả đầu Paluck, tên bài "The contact hypothesis re-evaluated" (cần kiểm tên bản ghi).'
   - id: n3
     cau: "Tên: The contact hypothesis re-evaluated"
     loai: lich-su

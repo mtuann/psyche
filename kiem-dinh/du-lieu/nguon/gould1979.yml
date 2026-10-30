@@ -3,14 +3,15 @@ ban_ghi: nguon/gould1979
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:5a64df97aeda2d33fc1ac1602abae253983c03f3b522c0bd3ee6e160fddc980d
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1098/rspb.1979.0086
@@ -57,18 +58,19 @@ nhan_dinh:
     luot_2_nguon:
       - https://api.openalex.org/works/doi:10.1098%2Frspb.1979.0086
   - id: n4
-    cau: "Nơi đăng: Proceedings of the Royal Society of London. Series B, 205(1161), 581–598"
+    cau: "Nơi đăng: Proceedings of the Royal Society of London. Series B. Biological Sciences, 205(1161), 581–598"
     loai: lich-su
     truong:
       - noi_dang
     nguon:
       - crossref
     trich: Proceedings of the Royal Society of London. Series B. Biological Sciences, tập 205, số 1161, trang 581-598
-    ket_qua: dung
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-review.yml): tên tạp chí viết tắt; tên đầy đủ theo Crossref"
     luot_2: dung
     luot_2_nguon:
       - https://europepmc.org/search?query=DOI:10.1098/rspb.1979.0086 (REST api)
-    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Proceedings of the Royal Society B Biological Sciences", bản ghi "Proceedings of the Royal Society of London. Series B, 205(1161), 581–598". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 1979 (tập 205 số 1161, tr. 581-598), trực tuyến 1979-09-01; tạp chí lúc đăng: Proceedings of the Royal Society of London. Series B, Biological sciences; tác giả đầu và tên bài khớp.'
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Proceedings of the Royal Society B Biological Sciences", bản ghi "Proceedings of the Royal Society of London. Series B. Biological Sciences". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 1979 (tập 205 số 1161, tr. 581-598), trực tuyến 1979-09-01; tạp chí lúc đăng: Proceedings of the Royal Society of London. Series B, Biological sciences; tác giả đầu và tên bài khớp.'
   - id: n5
     cau: DOI 10.1098/rspb.1979.0086 trỏ tới tài liệu này, một bài báo
     loai: lich-su

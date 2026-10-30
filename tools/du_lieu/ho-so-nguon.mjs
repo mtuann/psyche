@@ -18,7 +18,7 @@ const ts = process.argv.slice(2);
 const lay = (k, md) => (ts.includes(k) ? ts[ts.indexOf(k) + 1] : md);
 const ghiDe = ts.includes('--ghi-de');
 const NGUOI_1 = lay('--nguoi-luot-1', 'script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch');
-const NGUOI_2 = lay('--nguoi-luot-2', 'script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch');
+const NGUOI_2 = lay('--nguoi-luot-2', 'script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch');
 
 const docDem = (nguon, doi) => {
 	const f = path.join(GOC, '.cache', 'doi', nguon, encodeURIComponent(doi.toLowerCase()) + '.json');
@@ -92,7 +92,7 @@ for (const r of nguon) {
 		return {
 			luot_2: 'dung',
 			luot_2_nguon: k2.nguon,
-			luot_2_ghi_chu: `${[...lech1.map((x) => 'Crossref: ' + x), ...lechTruong.map((x) => 'OpenAlex: ' + x)].join('; ')}. Người kiểm lượt 2 mở trang nhà xuất bản: ${k2.ghi_chu}`,
+			luot_2_ghi_chu: `${[...lech1.map((x) => 'Crossref: ' + x), ...lechTruong.map((x) => 'OpenAlex: ' + x)].join('; ')}. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): ${k2.ghi_chu}`,
 		};
 	};
 	const ket = (...truong) => {

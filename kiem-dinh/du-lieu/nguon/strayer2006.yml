@@ -3,14 +3,15 @@ ban_ghi: nguon/strayer2006
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:676c7cfbc43dfb90281bdfe251ce152396aadc44816e17b2998598d38a416000
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1518/001872006777724471
@@ -67,7 +68,8 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon:
-      - https://api.openalex.org/works/doi:10.1518%2F001872006777724471
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:"10.1518/001872006777724471"
+    luot_2_ghi_chu: 'Crossref: tạp chí: nguồn ghi "Human Factors: The Journal of the Human Factors and Ergonomics Society", bản ghi "Human Factors"; OpenAlex: tạp chí: nguồn ghi "Human Factors The Journal of the Human Factors and Ergonomics Society", bản ghi "Human Factors". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC (PMID 16884056): Human Factors 48(2), 381-391, 2006; Strayer, Drews, Crouch. Tên "Human Factors" đủ; phần ": The Journal of the HFES" là phụ đề.'
   - id: n5
     cau: DOI 10.1518/001872006777724471 trỏ tới tài liệu này, một bài báo
     loai: lich-su

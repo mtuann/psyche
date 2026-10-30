@@ -3,14 +3,15 @@ ban_ghi: nguon/kawabata2008
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:3d9e92d6b2e642a460f2dc6a3936a992223fcf5031e193312c7a05b02195c8ce
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
-      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1016/j.psychsport.2007.05.005
@@ -32,7 +33,7 @@ nhan_dinh:
     luot_2_nguon: &a1
       - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.psychsport.2007.05.005
       - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.psychsport.2007.05.005
-    luot_2_ghi_chu: 'OpenAlex: tác giả: danh sách tác giả: tác giả thứ 1 của bản ghi là "Kawabata", nguồn ghi "雅人 川端". Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến. Danh sách tác giả: Kawabata, Mallett, Jackson (đủ 3, đúng thứ tự); tên Nhật của OpenAlex chỉ là cách ghi khác của Kawabata.'
+    luot_2_ghi_chu: 'OpenAlex: tác giả: danh sách tác giả: tác giả thứ 1 của bản ghi là "Kawabata", nguồn ghi "雅人 川端". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến. Danh sách tác giả: Kawabata, Mallett, Jackson (đủ 3, đúng thứ tự); tên Nhật của OpenAlex chỉ là cách ghi khác của Kawabata.'
     luot_2_trich: 雅人 川端; Clifford J. Mallett; Susan A. Jackson
   - id: n2
     cau: "Năm xuất bản: 2008"
@@ -45,7 +46,7 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: *a1
-    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2007, bản ghi 2008. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến. Danh sách tác giả: Kawabata, Mallett, Jackson (đủ 3, đúng thứ tự); tên Nhật của OpenAlex chỉ là cách ghi khác của Kawabata."
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2007, bản ghi 2008. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến. Danh sách tác giả: Kawabata, Mallett, Jackson (đủ 3, đúng thứ tự); tên Nhật của OpenAlex chỉ là cách ghi khác của Kawabata."
   - id: n3
     cau: "Tên: The Flow State Scale-2 and Dispositional Flow Scale-2: Examination of factorial validity and reliability for Japanese adults"
     loai: lich-su
