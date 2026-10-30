@@ -6,6 +6,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { markdownToHtml } from 'satteri';
+import { parse } from 'yaml';
+import { diaChi } from '../ban-build.mjs';
 
 export const esc = (s) =>
 	String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -183,3 +185,90 @@ export function danhSachNguon(ds, nguon) {
 
 /** HTML đã dựng có khối cần JavaScript (câu hỏi, công cụ) không: MarkdownContent.astro chỉ tải bộ tải ở những trang này. */
 export const canTaiScript = (html) => /\sclass="(?:[^"]*\s)?(?:pz-quiz|pz-cong-cu)[\s"]/.test(html);
+
+// ---------- Danh sách sinh từ dữ liệu (D2-L1): trang chủ, Khám phá, trang lĩnh vực ----------
+// Chỉ liệt kê trang có trong bản build (bản thật: trang đã khóa); tên và mô tả lấy từ frontmatter của chính trang ấy, nên
+// danh sách không có chữ nào ngoài chữ của trang đã khóa. Trang chưa có hiện "sắp có" (link qua src/plugins/sap-co.mjs).
+
+/** Frontmatter của một trang trong src/content/docs/ ({} nếu không có file). */
+export function frontmatter(trang, docsDir) {
+	const f = path.join(docsDir, `${trang}.md`);
+	if (!fs.existsSync(f)) return {};
+	const m = /^---\n([\s\S]*?)\n---/.exec(fs.readFileSync(f, 'utf8'));
+	return (m && parse(m[1])) || {};
+}
+
+/** Mục danh sách của một trang: link, tên (sidebar.label nếu có, không thì title), mô tả. */
+function mucBai(trang, docsDir, base, { moTa = true } = {}) {
+	const fm = frontmatter(trang, docsDir);
+	const ten = esc(fm.title ?? trang);
+	return `<li><a href="${diaChi(trang, base)}">${ten}</a>${moTa && fm.description ? `<span class="pz-ds-bai__mo">${esc(fm.description)}</span>` : ''}</li>`;
+}
+
+/**
+ * ::danh-sach-bai{linh_vuc="tri-nho"} hay ::danh-sach-bai{nhom="thi-nghiem"}: bài của một lĩnh vực (bài khám phá, lõi và
+ * mở rộng, theo thứ tự của trang.yml) hay của một nhóm (thư mục), chỉ bài có trong bản build. Còn bài chưa lên thì một
+ * dòng "Còn N bài sắp có". Không có bài nào thì chỉ dòng ấy.
+ */
+export function danhSachBai({ linh_vuc, nhom }, { banGhi, trangCo, docsDir, base }) {
+	if (!linh_vuc === !nhom) throw new Error('::danh-sach-bai cần đúng một trong linh_vuc, nhom');
+	const co = new Set(trangCo);
+	const thuoc = banGhi.filter((r) =>
+		linh_vuc ? r.linh_vuc === linh_vuc && (r.tang === 'loi' || r.tang === 'mo-rong') : r.id.startsWith(`${nhom}/`) && !r.id.endsWith('/index'),
+	);
+	if (linh_vuc && !thuoc.length) throw new Error(`::danh-sach-bai: lĩnh vực "${linh_vuc}" không có bài nào trong src/data/trang.yml`);
+	const len = thuoc.filter((r) => co.has(r.id));
+	const con = thuoc.length - len.length;
+	return (
+		`<div class="pz-ds-bai not-content">` +
+		(len.length ? `<ul>${len.map((r) => mucBai(r.id, docsDir, base)).join('')}</ul>` : '') +
+		(con ? `<p class="pz-ds-bai__con">${len.length ? 'Còn' : 'Có'} ${con} bài sắp có: mỗi bài lên site sau khi được kiểm chứng lại.</p>` : '') +
+		`</div>`
+	);
+}
+
+/**
+ * ::the-linh-vuc: 14 thẻ lĩnh vực theo thu_tu (màu, biểu tượng, tên; số bài đã lên). Thẻ là link tới trang lĩnh vực khi
+ * trang ấy có trong bản build.
+ */
+export function theLinhVuc({ linhVuc, banGhi, trangCo, base, svg }) {
+	const co = new Set(trangCo);
+	return (
+		`<ul class="pz-the-lv not-content">` +
+		[...linhVuc]
+			.sort((a, b) => a.thu_tu - b.thu_tu)
+			.map((l) => {
+				const bai = banGhi.filter((r) => r.linh_vuc === l.id && (r.tang === 'loi' || r.tang === 'mo-rong'));
+				const len = bai.filter((r) => co.has(r.id)).length;
+				const dem = len ? `${len}/${bai.length} bài đã lên` : `${bai.length} bài, sắp có`;
+				const noi = `${svg(l.bieu_tuong ?? '')}<span class="pz-the-lv__ten">${esc(l.ten)}</span><span class="pz-the-lv__dem">${dem}</span>`;
+				return `<li class="pz-o-lv" style="--h: ${l.mau}"><a href="${diaChi(`nen-tang/${l.id}`, base)}">${noi}</a></li>`;
+			})
+			.join('') +
+		`</ul>`
+	);
+}
+
+/**
+ * ::bai-moi{so="6"}: bài (lõi, mở rộng, thí nghiệm, phương pháp) mới khóa gần nhất, theo ngày của lần kiểm định cuối
+ * trong hồ sơ; ::cong-cu-noi-bat: trang công cụ (tầng cong-cu) có trong bản build. Không có trang nào thì một câu báo
+ * trang sẽ lên sau khi được kiểm chứng.
+ */
+export function baiMoi({ so = '6' }, { banGhi, trangCo, docsDir, base, ngayKhoa }) {
+	const n = Number(so);
+	if (!Number.isInteger(n) || n < 1) throw new Error('::bai-moi: so phải là số nguyên dương');
+	const co = new Set(trangCo);
+	const ds = banGhi
+		.filter((r) => co.has(r.id) && (r.tang === 'loi' || r.tang === 'mo-rong') && ngayKhoa(r.id))
+		.sort((a, b) => String(ngayKhoa(b.id)).localeCompare(String(ngayKhoa(a.id))))
+		.slice(0, n);
+	if (!ds.length) return `<p class="pz-ds-bai__con not-content">Bài đầu tiên lên site sau khi được kiểm chứng lại từ đầu.</p>`;
+	return `<div class="pz-ds-bai not-content"><ul>${ds.map((r) => mucBai(r.id, docsDir, base)).join('')}</ul></div>`;
+}
+
+export function congCuNoiBat({ banGhi, trangCo, docsDir, base }) {
+	const co = new Set(trangCo);
+	const ds = banGhi.filter((r) => r.tang === 'cong-cu' && co.has(r.id) && !r.id.endsWith('/index'));
+	if (!ds.length) return `<p class="pz-ds-bai__con not-content">Công cụ tự trải nghiệm lên site sau khi số liệu trong công cụ được kiểm chứng lại.</p>`;
+	return `<div class="pz-ds-bai not-content"><ul>${ds.map((r) => mucBai(r.id, docsDir, base)).join('')}</ul></div>`;
+}
