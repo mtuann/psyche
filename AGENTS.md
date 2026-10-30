@@ -149,12 +149,10 @@ Chốt ở D1.4 (`src/plugins/psyche-markdown.mjs`, `src/plugins/thanh-phan.mjs`
 | Danh sách nguồn | `::nguon{id="cepeda2006,murre2015"}` | Danh sách APA dựng từ `src/data/nguon.yml`. Trang chuyển từ site cũ giữ mục Nguồn viết tay |
 | Ghi chú, mẹo, chú ý | `:::note`, `:::tip`, `:::caution`, `:::danger`, tiêu đề tùy chọn `:::tip[…]` | Aside của Starlight |
 | Bổ sung có ngày | File `src/content/bo-sung/<trang>/<năm-tháng-ngày>.md`, frontmatter `trang`, `ngay`, `anh_huong_nhan` (`src/content/bo-sung/README.txt`) | Mục "Bổ sung" cuối trang, mới nhất trước; không sửa trang nên không đổi mã băm. Chưa có khóa riêng (đợt 9), nên chỉ hiện ở bản xem |
-| Danh sách sinh từ dữ liệu | `::danh-sach-bai{linh_vuc="tri-nho"}` (hay `nhom="thi-nghiem"`), `::the-linh-vuc`, `::bai-moi{so="6"}`, `::cong-cu-noi-bat` (D2-L1) | Chỉ trang có trong bản build (bản thật: đã khóa), tên và mô tả từ frontmatter của trang ấy; trang chưa lên chỉ được đếm ("Còn N bài sắp có") |
-| Bảng | Bảng Markdown thường | Bọc trong vùng cuộn ngang nhận focus ("Bảng N, cuộn ngang được") |
 | Id cố định cho tiêu đề | `## Tiêu đề { #id }` | Giữ id cũ để link `#mục` cũ còn chạy |
 
 - Script công cụ của site cũ chép nguyên ở `src/scripts/cu/` (nạp qua `src/scripts/cong-cu/<tên>.js`, `nen.js`); đợt 8 viết lại thành module. Kiểm thử trình duyệt chờ `data-san` mà `mount()` của công cụ đặt khi dựng xong.
-- Tóm tắt đầu bài, hồ sơ nghiên cứu (bản mẫu C) chưa làm: lô đầu tiên cần chúng (D3-L1) làm thành phần.
+- Tóm tắt đầu bài, hồ sơ nghiên cứu (bản mẫu C) chưa làm: lô đầu tiên cần chúng (D2-L1, D3-L1) làm thành phần.
 
 ## Cách làm việc
 
