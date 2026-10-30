@@ -3,14 +3,15 @@ ban_ghi: nguon/coverjones1924
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:dee810c688833b05e15ae3c5c593adaea70b3ee61c8b492cd5a7f9940a5ff042
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
       luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1080/08856559.1924.9944851
@@ -20,17 +21,20 @@ nguon:
     link: https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
 nhan_dinh:
   - id: n1
-    cau: "Tác giả: Cover Jones, M."
+    cau: "Tác giả: Jones, M. C."
     loai: lich-su
     truong:
       - tac_gia
     nguon:
       - crossref
     trich: Jones, Mary Cover
-    ket_qua: dung
+    ket_qua: da-sua
+    ghi_chu: 'đã sửa theo Crossref (sua-review.yml): APA ghi họ là Jones, tên đệm Cover (Mary Cover Jones): "Jones, M. C."; Crossref ghi họ Jones'
     luot_2: dung
-    luot_2_nguon:
-      - https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
+    luot_2_nguon: &a1
+      - https://api.crossref.org/works/10.1080/08856559.1924.9944851
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/08856559.1924.9944851
+    luot_2_ghi_chu: 'OpenAlex: tác giả: danh sách tác giả: tác giả thứ 1 của bản ghi là "Jones", nguồn ghi "Mary Coverjo Nes". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Crossref: tác giả "Mary Cover Jones" (họ Jones), nên "Jones, M. C." đúng; 31(4), 308-315, 1924-12. Trang Taylor & Francis chặn (403). Tên "The Pedagogical Seminary and Journal of Genetic Psychology" là tên hiện hành T&F; tên lúc đăng 1924 chưa xác nhận ở nguồn nào mở được. Cách trích thông dụng "Pedagogical Seminary" có vẻ đúng.'
     luot_2_trich: Mary Coverjo Nes
   - id: n2
     cau: "Năm xuất bản: 1924"
@@ -64,10 +68,9 @@ nhan_dinh:
     nguon:
       - crossref
     trich: The Pedagogical Seminary and Journal of Genetic Psychology, tập 31, số 4, trang 308-315
-    ket_qua: dung
-    luot_2: dung
-    luot_2_nguon:
-      - https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
+    ket_qua: null
+    luot_2: khong-chac
+    ghi_chu: "chưa chắc: tên tạp chí năm 1924 (The Pedagogical Seminary) chưa xác nhận: Crossref chỉ ghi tên về sau, trang Taylor & Francis chặn bot. Tập 31(4), trang 308–315 khớp Crossref. Trường noi_dang chưa khóa"
   - id: n5
     cau: DOI 10.1080/08856559.1924.9944851 trỏ tới tài liệu này, một bài báo
     loai: lich-su

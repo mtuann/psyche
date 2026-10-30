@@ -3,14 +3,15 @@ ban_ghi: nguon/asch1956
 muc: V1
 lan:
   - so: 1
-    ngay: null
+    ngay: 2026-10-30
     nhanh: moi/d2-0-du-lieu
-    ma_bam: null
+    ma_bam: sha256:0ec8d5fe9fa9051b1ee0b9c362dbd72a2a3082dc8f6395062cbe75c75c8940fb
     nguoi:
       luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
       luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch
-      review: null
-      kiem_mau: null
+      review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
+    truong: [ doi, loai, nam, tac_gia, ten ]
 nguon:
   - id: crossref
     ten: Bản ghi Crossref của DOI 10.1037/h0093718
@@ -64,10 +65,9 @@ nhan_dinh:
     nguon:
       - crossref
     trich: "Psychological Monographs: General and Applied, tập 70, số 9, trang 1-70"
-    ket_qua: dung
-    luot_2: dung
-    luot_2_nguon:
-      - https://api.openalex.org/works/doi:10.1037%2Fh0093718
+    ket_qua: null
+    luot_2: khong-chac
+    ghi_chu: "chưa chắc: tên tạp chí lúc đăng (Psychological Monographs: General and Applied) và số 9 chưa xác nhận ở trang APA PsycNet (chặn bot); Semantic Scholar xác nhận tập 70, trang 1–70, năm 1956. Trường noi_dang chưa khóa"
   - id: n5
     cau: DOI 10.1037/h0093718 trỏ tới tài liệu này, một bài báo
     loai: lich-su
