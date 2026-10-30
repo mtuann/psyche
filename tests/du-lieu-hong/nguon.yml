@@ -1,0 +1,108 @@
+# Bộ dữ liệu hỏng mẫu (D1.2), xem linh-vuc.yml.
+- id: cepeda2006
+  loai: bai-bao
+  tac_gia: Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D.
+  nam: 2006
+  ten: 'Distributed practice in verbal recall tasks: A review and quantitative synthesis'
+  noi_dang: Psychological Bulletin, 132(3), 354–380
+  doi: 10.1037/0033-2909.132.3.354
+- id: cepeda2006b
+  loai: bai-bao
+  tac_gia: Cepeda, N. J.
+  nam: 2006
+  ten: Bản ghi trùng DOI
+  doi: 10.1037/0033-2909.132.3.354 # lỗi: cùng DOI với cepeda2006
+- id: cepeda2006c
+  loai: bai-bao
+  tac_gia: Cepeda, N. J., Pashler, H.
+  nam: 2006
+  ten: 'Distributed practice in verbal recall tasks: A review' # lỗi: cùng tác giả đầu, năm, tên với cepeda2006 (ghi lại không DOI)
+- id: rowland2014
+  loai: bai-bao
+  tac_gia: Rowland, C. A.
+  nam: 2014
+  ten: 'The effect of testing versus restudy on retention: A meta-analytic review of the testing effect'
+  doi: 10.1037/A0037559
+- id: rowland2014b
+  loai: bai-bao
+  tac_gia: Rowland, C. A.
+  nam: 2014
+  ten: Bản ghi trùng DOI khác hoa thường
+  doi: 10.1037/a0037559 # lỗi: cùng DOI với rowland2014 (khác hoa thường)
+- id: roediger2006
+  loai: bai-bao
+  tac_gia: Roediger, H. L., & Karpicke, J. D.
+  nam: 2006
+  ten: Test-enhanced learning
+  url: https://example.org/roediger
+- id: roediger2006b
+  loai: bai-bao
+  tac_gia: Roediger, H. L.
+  nam: 2006
+  ten: Bản ghi trùng URL
+  url: https://example.org/roediger/ # lỗi: cùng URL với roediger2006
+- id: murre2015
+  loai: bai-bao
+  tac_gia: Murre, J. M. J., & Dros, J.
+  nam: 2015
+  ten: Replication and analysis of Ebbinghaus' forgetting curve
+  doi: https://doi.org/10.1371/journal.pone.0120644 # lỗi: DOI có https://doi.org/
+- id: dros2015
+  loai: bai-bao
+  tac_gia: Dros, J.
+  nam: 2015
+  ten: Một bản ghi khác
+  doi: 10.1371/journal.pone.0120645. # lỗi: DOI có dấu chấm ở cuối
+- id: ebbinghaus1885
+  loai: sach
+  tac_gia: Ebbinghaus, H.
+  nam: 1885/1913
+  ten: 'Memory: A contribution to experimental psychology'
+  url: https://doi.org/10.1037/10011-000 # lỗi: link doi.org ở trường url
+- id: xss2020
+  loai: trang-web
+  tac_gia: Ai đó
+  nam: 2020
+  ten: Link độc
+  url: javascript:alert(1) # lỗi: link không phải http, https
+- id: sherif1988
+  loai: sach
+  tac_gia: Sherif, M.
+  nam: 1988
+  nam_goc: 1991 # lỗi: ấn bản gốc sau ấn bản được dẫn
+  ten: The Robbers Cave experiment
+- id: cohen1990 # lỗi: id không có năm 1988
+  loai: sach
+  tac_gia: Cohen, J.
+  nam: 1988
+  ten: Statistical power analysis for the behavioral sciences
+  noi_dang: ', Lawrence Erlbaum' # lỗi: nơi đăng mở đầu bằng dấu câu
+- id: retracted2011
+  loai: bai-bao
+  tac_gia: Retracted, A.
+  nam: 2011
+  ten: Bài bị rút
+  rut_bai: {ngay: 2012-01-01, nguon: https://example.org/rut, ly_do: gian lận} # lỗi: trường lạ trong rut_bai
+- id: khong-tac-gia
+  loai: tap-chi # lỗi: không có loại này
+  nam: khoảng 2006 # lỗi: năm không đúng dạng
+  ten: Thiếu tác giả # lỗi: thiếu tac_gia
+  trang: kham-pha/x # lỗi: trường lạ
+- id: roediger2006c
+  loai: bai-bao
+  tac_gia: Roediger, H. L.
+  nam: 2006
+  ten: Bản ghi trùng URL khác hoa thường
+  url: https://EXAMPLE.org/roediger # lỗi: cùng URL với roediger2006 (khác hoa thường)
+- id: wundt1874
+  loai: sach
+  tac_gia: Wundt, W.
+  nam: 1874/1904
+  nam_goc: 1880 # lỗi: ấn bản gốc sau năm đầu (1874) của trường nam dạng chuỗi
+  ten: Grundzüge der physiologischen Psychologie
+- id: retracted2012
+  loai: bai-bao
+  tac_gia: Retracted, B.
+  nam: 2012
+  ten: Bài bị rút thứ hai
+  rut_bai: {ngay: 2013-01-01, nguon: ftp://example.org/rut} # lỗi: link của thông báo rút bài không phải http, https

@@ -1,0 +1,56 @@
+# Bộ dữ liệu hỏng mẫu (D1.2), xem linh-vuc.yml.
+- id: index
+  tang: khung
+- id: nen-tang/phuong-phap
+  tang: khung
+  linh_vuc: phuong-phap
+- id: nen-tang/hoc-tap
+  tang: khung
+  linh_vuc: hoc-tap
+# lỗi: (kiểm chéo) lĩnh vực tri-nho không có trang lĩnh vực nen-tang/tri-nho
+- id: bang-chung/p-value
+  tang: loi
+  linh_vuc: phuong-phap
+- id: kham-pha/tri-nho/vi-sao-ta-quen
+  tang: loi
+  linh_vuc: tri-nho
+  dua_tren: [bang-chung/p-value] # lỗi: chỉ trang mở rộng có dua_tren
+- id: kham-pha/tri-nho/bang-ghi-hinh
+  tang: loi # lỗi: trang lõi thiếu linh_vuc
+- id: kham-pha/tri-nho/phong-cach-hoc
+  tang: mo-rong
+  linh_vuc: tri-nho
+  dua_tren: [nen-tang/hoc-tap, kham-pha/khong-co, kham-pha/tri-nho/phong-cach-hoc] # lỗi: trang khung, không phải trang lõi; lỗi: trang không có; lỗi: trỏ tới chính nó
+- id: kham-pha/tri-nho/duong-cong-quen
+  tang: mo-rong
+  linh_vuc: tri-nho
+  dua_tren: [bang-chung/p-value, bang-chung/p-value] # lỗi: phần tử lặp
+- id: kham-pha/hanh-phuc/dong-chay-flow
+  tang: mo-rong
+  linh_vuc: phuong-phap
+  kiem_lai_truoc: 2027-13 # lỗi: không có tháng 13
+- id: kham-pha/tri-nho/tri-nho-lam-viec
+  tang: loi
+  linh_vuc: tri-nho-sai # lỗi: lĩnh vực không có
+- id: bat-dau/index
+  tang: khung
+  kiem_lai_truoc: 2027-05 # lỗi: trang khung không có hạn xem lại
+- id: them/gioi-thieu
+  tang: ve-site # lỗi: không có tầng này
+- id: them/cap-nhat
+  tang: cap-nhat
+  ghi_chu: dòng cập nhật # lỗi: trường lạ
+- id: /thi-nghiem/asch.md # lỗi: đường dẫn có / ở đầu và .md
+  tang: loi
+  linh_vuc: tam-ly-xa-hoi
+- id: bang-chung/p-value # lỗi: trùng id
+  tang: loi
+  linh_vuc: phuong-phap
+# lỗi: (kiểm chéo) lĩnh vực hoc-tap có trang lĩnh vực nhưng không có bài lõi nào
+- id: them/nhat-ky
+  tang: cong-cu
+  moi: false # lỗi: moi chỉ ghi true (trang cũ thì bỏ trường)
+- id: kham-pha/hanh-phuc/tien-va-hanh-phuc
+  tang: mo-rong
+  linh_vuc: phuong-phap
+  dua_tren: [] # lỗi: danh sách rỗng (chưa có thì bỏ trường)

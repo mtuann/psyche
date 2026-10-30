@@ -98,17 +98,21 @@ Kết quả: **68 trang lõi** (39 bài Khám phá, 15 Thí nghiệm, 12 Hiểu 
 
 Làm ở đợt 1 của kế hoạch làm lại (`../lam-lai/README.md`); công cụ khóa và kiểm thử chép từ opus rồi sửa.
 
-### 4.1 Frontmatter (D1.2)
+### 4.1 Thông tin của trang (D1.2)
+
+Mỗi trang một bản ghi trong `src/data/trang.yml`, kể cả trang chưa chuyển:
 
 ```yaml
-ma: tn-asch                # mã ổn định, không đổi khi đổi tên file
-loai: thi-nghiem           # kham-pha | thi-nghiem | phuong-phap | cong-cu | suc-khoe | trang
-linh_vuc: tam-ly-xa-hoi    # một trong 14 mã của src/data/linh-vuc.yml
-dua_tren: [kp-phu-hop-so-dong]   # chỉ trang mở rộng: bài lõi mà nó dựa trên
-can_ra_soat: false         # chỉ trang Sức khỏe tâm thần: true cho tới khi chuyên gia đọc
+- id: kham-pha/tri-nho/phong-cach-hoc   # đường dẫn trong src/content/docs/, cũng là địa chỉ; cố định (luật 4)
+  tang: mo-rong
+  linh_vuc: tri-nho                      # một trong 14 mã của src/data/linh-vuc.yml
+  dua_tren: [kham-pha/tri-nho/vi-sao-ta-quen]   # chỉ bài mở rộng: các bài lõi mà nó dựa trên
+  kiem_lai_truoc: 2027-11                # bài mở rộng, trang có hạn: hạn xem lại, đặt khi khóa
 ```
 
-Tầng và hạn xem lại nằm trong `src/data/trang.yml`, trạng thái kiểm định đọc từ `kiem-dinh/` lúc build: không ghi trong trang, để mã băm của trang không đổi khi khóa. Dòng trạng thái trên trang sinh lúc build, ví dụ "Nền tảng · Kiểm chứng hai lượt, khóa ngày 05/11/2026 · 1 bổ sung (03/2027)". Bỏ dòng "Rà soát nội dung lần cuối" viết tay của site cũ.
+Frontmatter của trang chỉ có tiêu đề, mô tả và các trường của Starlight; ghi `tang`, `linh_vuc`… ở frontmatter thì build hỏng. Lý do: một chỗ cho mỗi điều (trang chưa chuyển cũng cần tầng, lĩnh vực), và đổi các thông tin này (như gia hạn xem lại) không đổi mã băm của trang đã khóa. Loại trang (khám phá, thí nghiệm, phương pháp, công cụ…) suy từ đường dẫn. Trang Sức khỏe tâm thần chỉ khóa được khi hồ sơ có chữ ký chuyên gia (`nguoi.chuyen_gia`, ngày; D1.6 kiểm), nên không cần cờ `can_ra_soat` riêng. Kế hoạch đầu định ghi các thông tin này, cùng mã `ma` của trang, ở frontmatter; D1.2 đổi như trên (`../lam-lai/bao-cao/d1-2.md`).
+
+Trạng thái kiểm định đọc từ `kiem-dinh/` lúc build. Dòng trạng thái trên trang sinh lúc build, ví dụ "Nền tảng · Kiểm chứng hai lượt, khóa ngày 05/11/2026 · 1 bổ sung (03/2027)". Bỏ dòng "Rà soát nội dung lần cuối" viết tay của site cũ.
 
 ### 4.2 Hồ sơ kiểm định (D1.6)
 
@@ -133,7 +137,7 @@ Mỗi trang một file `kiem-dinh/<trang>.yml`; định dạng ở `chuan-kiem-d
 
 ### 4.6 Kiểm thử theo loại trang và chỉ kiểm phần đổi
 
-- Kiểm thử khung chạy cho **mọi** trang theo `loai`, không có danh sách liệt kê tay.
+- Kiểm thử khung chạy cho **mọi** trang theo loại trang (suy từ đường dẫn: `loaiTrang()` trong `src/du-lieu.mjs`) và tầng (`src/data/trang.yml`), không có danh sách liệt kê tay.
 - Kiểm thử phạm vi lô (D1.6) và CI: trang đã khóa bị đổi thì phải có mở khóa và hồ sơ mới; trang, bổ sung hay thẻ mới thì phải có hồ sơ, không còn mục chưa xử lý. Kiểm sâu (Crossref, hồ sơ) chỉ chạy cho phần đổi.
 
 ### 4.7 Máy canh hằng tuần (đợt 9, GitHub Actions)

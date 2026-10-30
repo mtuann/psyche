@@ -73,7 +73,7 @@ Thời gian chờ bằng job lâu nhất (khoảng 3–4 phút), không phải t
 
 ```mermaid
 flowchart TB
-  DATA["src/data/: có schema,<br/>khóa theo bản ghi hay từng trường<br/><br/>nguon.yml: 363 DOI và hơn<br/>nghien-cuu.yml: trang nhà<br/>linh-vuc.yml: 14 lĩnh vực<br/>trang.yml: tầng, hạn xem lại<br/>ngo-nhan.yml: 60 thẻ"]
+  DATA["src/data/: có schema,<br/>khóa theo bản ghi hay từng trường<br/><br/>nguon.yml: 363 DOI và hơn<br/>nghien-cuu.yml: trang nhà<br/>linh-vuc.yml: 14 lĩnh vực<br/>trang.yml: tầng, lĩnh vực, hạn xem lại<br/>ngo-nhan.yml: 60 thẻ"]
   PAGES["src/content/docs/: khóa theo trang<br/><br/>Nền tảng (lõi): 68<br/>Mở rộng: 12, có hạn<br/>Công cụ: 13<br/>Có hạn (Hỗ trợ): 1"]
   ADD["Dòng cập nhật: chỉ thêm<br/><br/>src/content/bo-sung/<br/>Nghiên cứu mới<br/>bổ sung Việt Nam"]
   GEN["Sinh lúc build, không viết tay<br/><br/>trang chủ, 14 trang lĩnh vực,<br/>dòng trạng thái kiểm chứng,<br/>link sang bài mở rộng,<br/>trang Ngộ nhận, sách in,<br/>tờ tóm tắt, trang Cập nhật"]

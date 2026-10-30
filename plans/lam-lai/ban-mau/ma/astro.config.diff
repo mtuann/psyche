@@ -1,0 +1,59 @@
+--- a/astro.config.mjs	2026-10-29 18:26:54.447983834 -0500
++++ b/astro.config.mjs	2026-10-29 21:21:51.930513227 -0500
+@@ -5,6 +5,10 @@
+ import starlight from '@astrojs/starlight';
+ import { satteri } from '@astrojs/markdown-satteri';
+ import { timKiemKhongDau } from './src/tim-kiem/tich-hop.mjs';
++// BẢN MẪU GIAO DIỆN (chỉ để xem, không đăng): PSYCHE_MAU=A|B|C chọn phương án; xem src/mau/.
++import { SIDEBAR } from './src/mau/du-lieu.mjs';
++
++const MAU = (process.env.PSYCHE_MAU || 'A').toUpperCase();
+ 
+ const site = 'https://mtuann.github.io';
+ const base = '/psyche';
+@@ -46,13 +50,15 @@
+ 			defaultLocale: 'root',
+ 			locales: { root: { label: 'Tiếng Việt', lang: 'vi' } },
+ 			// Dấu ψ của site cũ (favicon), vẽ bằng nét để không phụ thuộc font có chữ Hy Lạp
+-			logo: { src: './src/assets/logo.svg' },
++			logo: { src: MAU === 'B' ? './src/mau/logo-b.svg' : './src/assets/logo.svg' },
+ 			favicon: '/favicon.svg',
+-			customCss: ['./src/styles/fonts.css', './src/styles/psyche.css'],
++			customCss: ['./src/styles/fonts.css', './src/styles/psyche.css', './src/mau/mau-chung.css', `./src/mau/mau-${MAU.toLowerCase()}.css`],
+ 			components: {
+ 				Footer: './src/components/Footer.astro',
+-				Hero: './src/components/Hero.astro',
++				Hero: MAU === 'A' ? './src/components/Hero.astro' : `./src/mau/Hero${MAU}.astro`,
++				PageTitle: './src/mau/PageTitle.astro',
+ 			},
++			sidebar: SIDEBAR,
+ 			head: [
+ 				...preloadFonts,
+ 				// Màu thanh trình duyệt trên điện thoại: trùng nền thanh trên cùng của site (src/styles/psyche.css)
+--- a/src/content.config.ts	2026-10-29 18:26:58.495984075 -0500
++++ b/src/content.config.ts	2026-10-29 21:21:51.936275151 -0500
+@@ -1,12 +1,19 @@
+-// Bộ sưu tập của site: trang (docs, của Starlight) và chữ giao diện (i18n).
+-// D1.2 thêm frontmatter riêng (ma, loai, tang, linh_vuc…) và các bộ dữ liệu trong src/data/ (nguồn, nghiên cứu, lĩnh vực,
+-// ngộ nhận); trạng thái kiểm định không ghi trong trang mà đọc từ kiem-dinh/ lúc build (D1.6), để mã băm của trang
+-// không đổi khi khóa. Kế hoạch: plans/lam-lai/README.md, Đợt 1.
++// BẢN MẪU: thêm ba trường frontmatter (D1.2 sẽ chốt schema thật).
+ import { defineCollection } from 'astro:content';
++import { z } from 'astro/zod';
+ import { docsLoader, i18nLoader } from '@astrojs/starlight/loaders';
+ import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
+ 
+ export const collections = {
+-	docs: defineCollection({ loader: docsLoader(), schema: docsSchema() }),
++	docs: defineCollection({
++		loader: docsLoader(),
++		schema: docsSchema({
++			extend: z.object({
++				linh_vuc: z.string().optional(),
++				tang: z.string().optional(),
++				loai: z.string().optional(),
++			}),
++		}),
++	}),
+ 	i18n: defineCollection({ loader: i18nLoader(), schema: i18nSchema() }),
+ };

@@ -33,7 +33,7 @@ Không đụng trang lõi nào khác, trừ khi đơn vị mới mâu thuẫn v�
 
 ## 3. Bài mở rộng mới
 
-- Frontmatter: `loai`, `linh_vuc`, `dua_tren: [<mã bài lõi>]`. Trang lõi trong `dua_tren` tự có mục "Đọc thêm" trỏ tới bài mới (sinh lúc build), không phải mở khóa.
+- Bản ghi trong `src/data/trang.yml`: `tang: mo-rong`, `linh_vuc`, `dua_tren: [<đường dẫn bài lõi>]` (không ghi ở frontmatter). Trang lõi trong `dua_tren` tự có mục "Đọc thêm" trỏ tới bài mới (sinh lúc build), không phải mở khóa.
 - Lượt 2 kiểm mẫu khoảng 8 nhận định, cộng mọi nhận định loại `nhan`, `lam-sang`; mẫu có câu sai thì kiểm hết.
 - Hạn xem lại 12–18 tháng (`kiem_lai_truoc`); máy canh nhắc trước 30 ngày. Tới hạn: kiểm lại phần thời sự và nhãn; bằng chứng đã chín thì có thể nâng thành bài lõi (kiểm V3, khóa).
 

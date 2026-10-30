@@ -1,0 +1,27 @@
+# Bộ dữ liệu hỏng mẫu (D1.2), xem linh-vuc.yml.
+- id: nao-10
+  cap: 1
+  khang_dinh: Con người chỉ dùng 10% bộ não.
+  nhan: dung # lỗi: không có nhãn này
+  giai_thich: Giải thích.
+  nguon: [cepeda2006]
+- id: hoc-don
+  cap: 5 # lỗi: cấp chỉ từ 1 đến 3
+  khang_dinh: Học dồn nhớ lâu hơn ôn rải.
+  nhan: bac-bo
+  giai_thich: Giải thích.
+  nguon: [cepeda2006, cepeda2006] # lỗi: phần tử lặp
+- id: may-quay
+  cap: 1
+  khang_dinh: Trí nhớ như máy quay phim.
+  nhan: bac-bo
+  giai_thich: Giải thích.
+  nguon: [nguon-khong-co] # lỗi: nguồn không có
+  trang: kham-pha/tri-nho/khong-co # lỗi: trang không có
+- id: tieng-anh
+  cap: 1
+  khang_dinh: Có khẳng định.
+  nhan: bac-bo
+  giai_thich: Giải thích.
+  nguon: [cepeda2006]
+  claim: English # lỗi: trường lạ

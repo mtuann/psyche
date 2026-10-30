@@ -1,0 +1,37 @@
+---
+// BẢN MẪU, phương án C: dải màu chàm tràn hết bề ngang, nối liền thanh trên cùng; tiêu đề là một câu hỏi.
+import { LinkButton } from '@astrojs/starlight/components';
+
+const { data } = Astro.locals.starlightRoute.entry;
+const { title = data.title, tagline, actions = [] } = data.hero || {};
+const NUT = [
+	[24, 56], [78, 32], [128, 60], [182, 34], [236, 58], [290, 30],
+	[344, 58], [398, 34], [452, 60], [506, 32], [560, 56], [606, 30],
+];
+const NOI = NUT.flatMap((_, i) => [
+	...(i + 1 < NUT.length ? [[i, i + 1]] : []),
+	...(i + 2 < NUT.length ? [[i, i + 2]] : []),
+]);
+const SANG = new Set([4, 7, 10]);
+---
+
+<div class="pz-hero-c">
+	<p class="pz-hero-c__mat"><span>Psyche</span> tâm lý học bằng bằng chứng</p>
+	<h1 id="_top" data-page-title set:html={title} />
+	{tagline && <p class="pz-hero-c__tagline" set:html={tagline} />}
+	{
+		actions.length > 0 && (
+			<div class="pz-hero-c__nut">
+				{actions.map(({ icon, link: href, text, variant }) => (
+					<LinkButton {href} {variant} icon={icon?.name}>
+						{text}
+					</LinkButton>
+				))}
+			</div>
+		)
+	}
+	<svg class="pz-hero-c__mang" viewBox="0 0 630 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+		{NOI.map(([a, b]) => <line x1={NUT[a][0]} y1={NUT[a][1]} x2={NUT[b][0]} y2={NUT[b][1]} />)}
+		{NUT.map(([x, y], i) => <circle cx={x} cy={y} r={SANG.has(i) ? 6.5 : 4.5} class:list={{ sang: SANG.has(i) }} />)}
+	</svg>
+</div>

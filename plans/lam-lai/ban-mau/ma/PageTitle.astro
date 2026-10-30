@@ -1,0 +1,37 @@
+---
+// BẢN MẪU: tiêu đề trang kèm nhãn loại bài, lĩnh vực, tầng, và dòng trạng thái kiểm định. Mỗi phương án (mau-a/b/c.css)
+// đặt các phần này một kiểu. Site thật: dòng trạng thái đọc từ kiem-dinh/ (D1.6).
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { LINH_VUC, TANG, LOAI, href } from './du-lieu.mjs';
+
+const { data } = Astro.locals.starlightRoute.entry;
+const lv = LINH_VUC.find((l) => l.ma === data.linh_vuc);
+const tang = data.tang && TANG[data.tang];
+const loai = data.loai && LOAI[data.loai];
+const coNhan = Boolean(lv || tang || loai);
+---
+
+<div class="pz-dau">
+	{
+		coNhan && (
+			<p class="pz-dau__nhan">
+				{loai && <span class="pz-dau__loai">{loai}</span>}
+				{lv && (
+					<a class="pz-dau__lv" href={href('nen-tang/' + lv.ma)} style={`--h: ${lv.h}`}>
+						{lv.ten}
+					</a>
+				)}
+				{tang && <span class="pz-dau__tang">{tang}</span>}
+			</p>
+		)
+	}
+	<Default />
+	{
+		coNhan && (
+			<p class="pz-dau__trang-thai">
+				<span class="pz-dau__co">Chưa kiểm định lại</span>
+				<span>Bản mẫu: nội dung lấy từ Psyche Zero. Trên site thật, chỗ này ghi ngày kiểm chứng, số lần bổ sung và link tới hồ sơ.</span>
+			</p>
+		)
+	}
+</div>

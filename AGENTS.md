@@ -35,6 +35,24 @@ npm run lighthouse        # Lighthouse ở tối đa ba trang mẫu của dist/,
 - Lighthouse cần Chromium của Playwright (hay `CHROME_PATH`); đo qua máy chủ HTTP/2 tự ký (`tools/may-chu.mjs`), như GitHub Pages.
 - Máy ảo của Cowork không tải được trình duyệt Playwright (CDN bị chặn): ở đó chỉ chạy build và `npm test`; kiểm thử trình duyệt để CI chạy, hay chạy ở máy có trình duyệt.
 
+## Dữ liệu
+
+Từ D1.2. Năm bộ dữ liệu trong `src/data/`, schema và kiểm chéo ở `src/du-lieu.mjs` (Zod, trường lạ là lỗi, lời báo tiếng Việt). Dữ liệu sai thì build hỏng; `PSYCHE_DU_LIEU=tests/du-lieu-hong npm run build` thử với bộ hỏng mẫu (phải hỏng). Dữ liệu chưa kiểm định, chưa khóa: kiểm định và khóa ở D2-0.
+
+| File | Nội dung |
+|---|---|
+| `linh-vuc.yml` | 14 lĩnh vực: `id`, `ten`, `thu_tu`, `mau` (sắc độ màu của lĩnh vực, 0–359) |
+| `trang.yml` | Mọi trang của site, kể cả trang chưa chuyển: `id` (đường dẫn trong `src/content/docs/`, bỏ `.md`), `tang`, `linh_vuc`, `moi` (trang mới), `dua_tren` (bài mở rộng: các bài lõi nó dựa trên), `kiem_lai_truoc` (bài mở rộng, trang có hạn; năm-tháng, đặt khi khóa) |
+| `nguon.yml` | Nguồn mà các trang dẫn: `id` (họ tác giả đầu và năm, như `cepeda2006`; trùng thì thêm b, c…), `loai`, `tac_gia`, `nam`, `ten`, `noi_dang`, `doi` (không có `https://doi.org/`) hay `url`; `toan_van`, `rut_bai` ghi khi kiểm định. Mỗi nguồn một bản ghi |
+| `nghien-cuu.yml` | Hồ sơ nghiên cứu kinh điển: `nguon` (các bài gốc), `trang_nha` (trang lõi kể chi tiết; nơi khác chỉ tóm một câu và link về). Một nguồn chỉ thuộc một hồ sơ |
+| `ngo-nhan.yml` | 60 thẻ ngộ nhận: `khang_dinh`, `nhan` (một trong bốn nhãn), `giai_thich`, `nguon`, `trang`, `cap` (cấp trong bài thử "Bạn nghĩ gì về tâm trí?") |
+
+- **Thông tin của trang** (tầng, lĩnh vực, `dua_tren`, hạn xem lại) chỉ ghi ở `trang.yml`, không ghi ở frontmatter: một chỗ cho mỗi điều, và gia hạn xem lại hay sửa `dua_tren` không đổi mã băm của trang đã khóa. Tầng và lĩnh vực thì D2-0 khóa theo từng bản ghi của `trang.yml` (tầng quyết định mức kiểm định): đổi chúng là mở khóa. Frontmatter có `tang`, `linh_vuc`… (mọi trường của `trang.yml`, cả `ma`, `loai`, `can_ra_soat` của kế hoạch đầu) thì build hỏng. Thêm trang thì thêm bản ghi vào `trang.yml`, không thì build hỏng (file tên mở đầu bằng `_` là nháp, Starlight không nạp, không cần bản ghi; thư mục tên mở đầu bằng `_` thì vẫn được nạp và đăng, nên trang trong đó vẫn cần). `trang.yml` phải khớp bảng `plans/lam-lai/anh-xa.md` (kiểm thử): đổi tầng, lĩnh vực thì sửa cả bảng trong `plans/lam-lai/anh_xa.py` và sinh lại `anh-xa.md`.
+- **Loại trang** (bài khám phá, Sức khỏe tâm thần, thí nghiệm, phương pháp, công cụ, trang khác) suy từ đường dẫn: `loaiTrang()` trong `src/du-lieu.mjs`. **Trang Sức khỏe tâm thần** là bài lõi có `linh_vuc: suc-khoe-tam-than` (4 bài: `kham-pha/suc-khoe-tam-than/tram-cam`, `lo-au`, `tim-giup-do`, `tri-lieu-tam-ly`): chỉ khóa khi hồ sơ có chữ ký chuyên gia (`nguoi.chuyen_gia`, ngày; D1.6 kiểm), không cần cờ riêng.
+- **Mỗi nguồn một bản ghi:** cùng DOI, cùng URL, hay cùng (họ tác giả đầu, năm, 30 chữ đầu của tên) là một nguồn, build báo lỗi nếu có hai bản ghi. Link chỉ nhận http và https. Lời báo lỗi của bản ghi có số dòng trong file.
+- `tools/du_lieu/tach.py` tách dữ liệu một lần từ `../psyche-zero/` (cần PyYAML: `python3 -m pip install -r requirements.txt`). `src/data/` đã có dữ liệu thì script từ chối ghi, trừ khi có `--ghi-de`. Từ đợt 2, `src/data/` sửa tay theo hồ sơ kiểm định.
+- Kiểm thử: `tests/du-lieu.test.mjs`; bộ hỏng mẫu `tests/du-lieu-hong/`, mỗi lỗi cố ý một chú thích "lỗi" (kèm hai chấm). Thêm phép kiểm thì thêm lỗi mẫu tương ứng.
+
 ## Tìm kiếm
 
 Pagefind (Starlight) bỏ dấu khi so: gõ "tri nho" ra "trí nhớ". Chữ "đ" là chữ riêng, nên lúc build `src/tim-kiem/tich-hop.mjs` bọc `dist/pagefind/pagefind.js`: mỗi từ bắt đầu bằng "d" được tìm thêm bản "đ" (tối đa 3 từ), rồi gộp kết quả; gõ "dinh kien" ra "định kiến". Trước khi bọc, kiểm chỉ mục đủ; thiếu thì dựng lại. Kiểm thử: `tests/tim-kiem.test.mjs`, `tests/trinh-duyet/kiem-tim-kiem.mjs`.

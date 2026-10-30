@@ -109,7 +109,7 @@ Bốn nhãn của site, từ trang "Cách đọc nhãn". Mỗi khung nhãn là m
 - Lượt 1 và lượt 2 dùng Opus. Nguồn bậc 2 về lâm sàng (ICD-11, hướng dẫn WHO, NICE, tổng quan hệ thống); tỉ lệ mắc ở Việt Nam theo nghiên cứu có bình duyệt hay cơ quan chính thức, ghi mốc.
 - Không viết điều gì như chẩn đoán ("nếu bạn có 3 dấu hiệu sau thì bạn bị…"), không khuyên dùng hay ngừng thuốc. Danh sách dấu hiệu luôn kèm "chỉ chuyên gia mới chẩn đoán được" và đường tới Hỗ trợ.
 - Đầu và cuối trang có lời dẫn tới Hỗ trợ; nói về tự hại theo hướng dẫn đưa tin an toàn (không mô tả cách thức, có thông tin trợ giúp).
-- `can_ra_soat: true` cho tới khi chuyên gia (do chủ repo chọn) đọc và ghi kết quả vào hồ sơ (`nguoi.chuyen_gia`, ngày). Chỉ khi đó trang mới được khóa.
+- Chuyên gia (do chủ repo chọn) đọc và ghi kết quả vào hồ sơ (`nguoi.chuyen_gia`, ngày). Chỉ khi hồ sơ có mục ấy trang mới được khóa (`tools/khoa.mjs` kiểm, D1.6); không cần cờ riêng trong trang.
 
 ## 6. Hồ sơ
 
@@ -155,6 +155,7 @@ nhan_dinh:
     ket_qua: dung
 ```
 
+- `tang` trong hồ sơ là tầng lúc khóa, để biết trang đã được kiểm theo mức nào (mục 3); tầng hiện hành của trang ghi ở `src/data/trang.yml` (D1.2), và công cụ khóa (D1.6) kiểm hai chỗ khớp nhau: đổi tầng thì phải mở khóa, kiểm lại theo mức mới.
 - Giá trị `ket_qua`: `dung`, `da-sua` (kèm `ghi_chu`: chữ cũ, chữ mới, lý do), `da-lam-mem` (câu nói mạnh hơn bằng chứng, đã viết lại; kèm `ghi_chu`), `da-bo` (đã bỏ câu khỏi trang, kèm `ghi_chu`).
 - Kết quả lượt 2 vào hồ sơ bằng `node tools/khoa.mjs nhap <file lượt 2>`, không chép tay. Lệnh in các nhận định cần review.
 - Link trong nguồn phải là trang đã mở và đọc, không phải kết quả tìm kiếm.

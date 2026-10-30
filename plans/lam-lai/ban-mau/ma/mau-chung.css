@@ -1,0 +1,347 @@
+/* BẢN MẪU GIAO DIỆN (không đăng): phần chung của ba phương án cho các khối riêng của Psyche. Mỗi phương án
+   (mau-a.css, mau-b.css, mau-c.css) đổi kiểu trên nền này. D1.3–D1.5 chốt bản thật. */
+
+/* ---------- Màu của bốn nhãn ---------- */
+.pz-tag--vung-chac,
+.pz-nhan--vung-chac {
+	--nhan: var(--sl-color-green);
+	--nhan-nen: var(--sl-color-green-low);
+}
+.pz-tag--kha-vung,
+.pz-nhan--kha-vung {
+	--nhan: var(--sl-color-blue);
+	--nhan-nen: var(--sl-color-blue-low);
+}
+.pz-tag--tranh-cai,
+.pz-nhan--tranh-cai {
+	--nhan: var(--sl-color-orange);
+	--nhan-nen: var(--sl-color-orange-low);
+}
+.pz-tag--bac-bo,
+.pz-nhan--bac-bo {
+	--nhan: var(--sl-color-red);
+	--nhan-nen: var(--sl-color-red-low);
+}
+
+/* Màu lĩnh vực (phương án B, C): mỗi lĩnh vực một sắc độ --h */
+.pz-dau__lv,
+.pz-o-lv > li,
+.pz-muc-luc > section {
+	--lv: hsl(var(--h) 70% 80%);
+	--lv-nen: hsl(var(--h) 28% 19%);
+	--lv-vien: hsl(var(--h) 25% 33%);
+}
+:root[data-theme='light'] :is(.pz-dau__lv, .pz-o-lv > li, .pz-muc-luc > section) {
+	--lv: hsl(var(--h) 55% 30%);
+	--lv-nen: hsl(var(--h) 60% 95.5%);
+	--lv-vien: hsl(var(--h) 40% 84%);
+}
+
+/* ---------- Nhãn nhỏ trong câu chữ ---------- */
+.pz-tag {
+	display: inline-block;
+	padding: 0.05em 0.6em;
+	border: 1px solid currentColor;
+	border-radius: 1em;
+	color: var(--nhan);
+	font-size: 0.78em;
+	font-weight: 600;
+	line-height: 1.6;
+	white-space: nowrap;
+	vertical-align: 0.08em;
+}
+.pz-hang-nhan {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+/* ---------- Khung nhãn mức độ chắc chắn ---------- */
+.sl-markdown-content .pz-nhan {
+	margin-block: 1.5rem;
+}
+.pz-nhan__dau {
+	margin: 0;
+	line-height: 1.4;
+}
+.pz-nhan__muc {
+	color: var(--nhan);
+	font-weight: 700;
+}
+.pz-nhan__y {
+	color: var(--sl-color-white);
+	font-weight: 600;
+}
+
+/* ---------- Tóm tắt, hồ sơ nghiên cứu (mặc định: ẩn tóm tắt; B, C hiện) ---------- */
+.pz-tom-tat {
+	display: none;
+}
+.pz-tom-tat ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.pz-tom-tat li + li {
+	margin-top: 0.6rem;
+}
+.pz-tom-tat .pz-tag {
+	margin-inline-end: 0.5em;
+}
+/* Màn hình đủ rộng: nhãn thẳng một cột bên trái, ý bên phải */
+@media (min-width: 30rem) {
+	.pz-tom-tat ul {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		align-items: baseline;
+		gap: 0.6rem 0.9rem;
+	}
+	.pz-tom-tat li {
+		display: contents;
+	}
+	.pz-tom-tat .pz-tag {
+		justify-self: start;
+		margin: 0;
+	}
+}
+.pz-tom-tat__ten,
+.pz-ho-so__ten {
+	margin: 0 0 0.6rem;
+	color: var(--sl-color-white);
+	font-weight: 700;
+}
+.pz-ho-so dl {
+	display: grid;
+	gap: 0.6rem;
+	margin: 0;
+}
+.pz-ho-so dt {
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-xs);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+.pz-ho-so dd {
+	margin: 0.1rem 0 0;
+	color: var(--sl-color-white);
+}
+@media (min-width: 40rem) {
+	.pz-ho-so dl {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1.5rem;
+	}
+}
+
+/* ---------- Hình ---------- */
+.pz-fig {
+	max-width: 40rem;
+	margin-inline: auto;
+}
+.pz-fig svg {
+	width: 100%;
+	height: auto;
+	color: var(--sl-color-gray-2);
+}
+.pz-fig .pz-fig-a {
+	color: var(--sl-color-text-accent);
+}
+.pz-fig .pz-fig-b {
+	color: var(--pz-accent);
+}
+.pz-fig figcaption {
+	margin-top: 0.5rem;
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-sm);
+	line-height: 1.5;
+}
+
+/* ---------- Đáp án thu gọn ---------- */
+.sl-markdown-content details.pz-dap-an {
+	border: 1px solid var(--pz-border);
+	border-radius: 0.6rem;
+	background: var(--pz-card);
+}
+details.pz-dap-an > summary {
+	display: flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0.4rem 1rem;
+	color: var(--sl-color-text-accent);
+	font-weight: 600;
+	cursor: pointer;
+}
+details.pz-dap-an > p {
+	margin: 0;
+	padding: 0 1rem 1rem;
+}
+
+/* ---------- "Sắp có" ---------- */
+.pz-sap-co {
+	color: var(--sl-color-gray-3);
+}
+.pz-sap-co::after {
+	content: 'sắp có';
+	margin-inline-start: 0.45em;
+	padding: 0 0.45em;
+	border: 1px dashed currentColor;
+	border-radius: 0.3em;
+	font-size: 0.75em;
+	vertical-align: 0.1em;
+}
+
+/* ---------- Câu hỏi "Thử suy ngẫm" ---------- */
+.pz-quiz {
+	padding: 1rem 1.15rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 0.75rem;
+	background: var(--pz-card);
+}
+.pz-quiz__ds {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	counter-reset: pz-cau;
+}
+.pz-cau {
+	counter-increment: pz-cau;
+}
+.pz-cau + .pz-cau {
+	margin-top: 1.5rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid var(--pz-border);
+}
+.pz-cau__hoi {
+	margin: 0 0 0.6rem;
+	color: var(--sl-color-white);
+	font-weight: 600;
+}
+.pz-cau__hoi::before {
+	content: counter(pz-cau) '. ';
+	color: var(--sl-color-text-accent);
+}
+.pz-cau__chon {
+	display: grid;
+	gap: 0.45rem;
+}
+.pz-chon {
+	min-height: 44px;
+	padding: 0.55rem 0.85rem;
+	border: 2px solid var(--pz-border);
+	border-radius: 0.5rem;
+	background: var(--sl-color-black);
+	color: var(--sl-color-gray-1);
+	font: inherit;
+	text-align: start;
+}
+.pz-chon:disabled {
+	cursor: default;
+}
+.pz-chon--dung {
+	border-color: var(--sl-color-green);
+	background: var(--sl-color-green-low);
+	color: var(--sl-color-white);
+}
+.pz-chon--dung::after {
+	content: ' ✓';
+	color: var(--sl-color-green);
+	font-weight: 700;
+}
+.pz-chon--sai {
+	border-color: var(--sl-color-red);
+	background: var(--sl-color-red-low);
+	color: var(--sl-color-white);
+}
+.pz-chon--sai::after {
+	content: ' ✗';
+	color: var(--sl-color-red);
+	font-weight: 700;
+}
+.pz-cau__giai {
+	margin: 0.75rem 0 0;
+	padding: 0.6rem 0.85rem;
+	border-inline-start: 3px solid var(--sl-color-green);
+	background: var(--sl-color-black);
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+	line-height: 1.6;
+}
+.pz-cau__giai--sai {
+	border-inline-start-color: var(--sl-color-red);
+}
+.pz-cau__giai strong {
+	color: var(--sl-color-white);
+}
+.pz-quiz__ghi {
+	margin: 1rem 0 0;
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-xs);
+}
+
+/* ---------- Đầu trang: nhãn loại bài, lĩnh vực, tầng; dòng trạng thái ---------- */
+.pz-dau {
+	display: flex;
+	flex-direction: column;
+}
+.pz-dau__nhan {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem 0.5rem;
+	margin: 0;
+	font-size: var(--sl-text-sm);
+}
+.pz-dau__nhan a {
+	text-decoration: none;
+}
+.pz-dau__trang-thai {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 0.3rem 0.6rem;
+	margin: 0.9rem 0 0;
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-xs);
+	line-height: 1.5;
+}
+.pz-dau__co {
+	padding: 0.05rem 0.55rem;
+	border: 1px dashed var(--sl-color-orange);
+	border-radius: 0.3rem;
+	color: var(--sl-color-orange);
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+/* Khối riêng (not-content): bỏ giới hạn 72ch mà psyche.css đặt cho đoạn văn và mục danh sách */
+.sl-markdown-content .not-content :is(p, li) {
+	max-width: none;
+}
+
+/* ---------- Bảng trong bài: cuộn ngang trên màn hình hẹp (Starlight đã đặt display: block) ---------- */
+.sl-markdown-content table {
+	font-size: var(--sl-text-sm);
+}
+
+/* ---------- Menu bên: "sắp có" nhẹ, không nổi hơn tên bài ---------- */
+.sidebar-content .sl-badge {
+	padding: 0 0.4em;
+	border: 1px dashed var(--sl-color-gray-4);
+	background: none;
+	color: var(--sl-color-gray-2);
+	font-family: inherit;
+	font-size: 0.68rem;
+	font-weight: 500;
+	white-space: nowrap;
+}
+.sidebar-content a:has(.sl-badge) {
+	color: var(--sl-color-gray-2);
+}
+/* Màn hình cảm ứng: mục danh sách chỉ có một link là link đứng riêng, vùng bấm từ 44 px */
+@media (pointer: coarse) {
+	.sl-markdown-content li > a:only-child {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+	}
+}

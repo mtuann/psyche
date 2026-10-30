@@ -19,14 +19,15 @@ Site cũ dùng 5 hook tự viết (vi_slugs, content_fixes, search_unaccent, min
 - Node 24 trong `.nvmrc`: Astro 7.4 cần Node từ 22.23.4; Node 24 là bản LTS (hỗ trợ đến 30/4/2028). Node 26 thành LTS ngày 28/10/2026: chuyển ở lần nâng cấp sau, cùng opus.
 - Gói ghim chính xác trong `package.json` và `package-lock.json` (`tests/khung.test.mjs` kiểm): `astro` 7.4.2, `@astrojs/starlight` 0.42.7, `pagefind` 1.5.2, `@astrojs/markdown-satteri` 0.4.5 và `satteri` 0.10.5 (bộ xử lý Markdown mặc định của Astro 7), `yaml` 2.9.1 (dữ liệu, từ D1.2); để kiểm thử: `playwright` 1.64.1, `axe-core` 4.13.0, `lighthouse` 13.5.0. Cùng phiên bản với opus: `package-lock.json` của D1.1 chép từ opus, chỉ đổi tên gói.
 - Nâng mỗi tháng một lần trên nhánh `moi/nang-cap-<tháng>`, sau khi opus đã nâng và chạy ổn; gộp khi mọi kiểm thử đạt. Bản bọc tìm kiếm (`src/tim-kiem/`) dựa vào cách hàm `options` của Pagefind 1.5: xem lại khi nâng Pagefind.
-- Python 3.12 cho `tools/du_lieu/` (từ D1.2) và cho `plans/lam-lai/anh_xa.py` (không cần gói ngoài).
+- Python 3 (đã chạy với 3.13) cho `tools/du_lieu/` (từ D1.2, cần PyYAML: `requirements.txt`) và cho `plans/lam-lai/anh_xa.py` (không cần gói ngoài).
 
 ## 3. Thư mục
 
 ```text
 astro.config.mjs            # site 'https://mtuann.github.io', base '/psyche', Starlight, Sätteri, tìm kiếm không dấu
 package.json, package-lock.json, tsconfig.json, .nvmrc
-src/content.config.ts       # bộ sưu tập: trang, chữ giao diện; D1.2 thêm frontmatter riêng và dữ liệu
+src/content.config.ts       # bộ sưu tập: trang, chữ giao diện, năm bộ dữ liệu (D1.2); chặn frontmatter thuộc trang.yml
+src/du-lieu.mjs             # D1.2: schema, kiểm chéo, bộ nạp của src/data/
 src/content/docs/           # trang; cùng đường dẫn với ../psyche-zero/docs/
 src/content/i18n/vi.json    # chữ tiếng Việt của ô tìm kiếm
 src/components/             # Hero.astro (trang chủ, 404), Footer.astro (lời nhắc Hỗ trợ); D1.3–D1.4 thêm

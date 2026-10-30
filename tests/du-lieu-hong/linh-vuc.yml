@@ -1,0 +1,20 @@
+# Bộ dữ liệu hỏng mẫu (D1.2): mỗi chú thích "lỗi" (kèm dấu hai chấm) là một lỗi cố ý mà src/du-lieu.mjs phải bắt;
+# tests/du-lieu.test.mjs kiểm từng lỗi và đếm số chú thích. Bản ghi nào có lỗi kiểm chéo thì phải đúng schema (bản ghi
+# sai schema không được kiểm chéo).
+- id: phuong-phap
+  ten: Tâm lý học là gì, phương pháp
+  thu_tu: 1
+  mau: 232
+- id: tri-nho
+  ten: Trí nhớ
+  thu_tu: 3 # lỗi: thiếu thu_tu 2 (1, 3, 3, 4)
+  mau: 232 # lỗi: trùng màu với phuong-phap
+- id: hoc-tap
+  ten: Học tập
+  thu_tu: 3 # lỗi: thu_tu 3 xuất hiện hai lần
+  mau: 400 # lỗi: sắc độ quá 359
+  mau_sac: xanh # lỗi: trường lạ
+- id: Tam-Ly # lỗi: id có chữ hoa
+  ten: Tâm lý
+  thu_tu: 4
+  mau: 10
