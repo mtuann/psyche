@@ -27,7 +27,8 @@ test('khung nhãn: bốn nhãn, ý chính trong ngoặc vuông (có Markdown), n
 	assert.match(html, /<p>Đã tìm thấy <strong>lại<\/strong>.<\/p><p>Đoạn hai.<\/p><\/aside>/);
 	for (const [ma, ten] of [['kha-vung', 'Khá vững'], ['tranh-cai', 'Đang tranh cãi'], ['bac-bo', 'Đã bị bác bỏ']])
 		assert.match(dung(`:::${ma}[Ý]\nx\n:::`), new RegExp(`class="pz-nhan pz-nhan--${ma}" aria-label="${ten}: Ý"`));
-	assert.throws(() => dung(':::vung-chac\nx\n:::'), /:::vung-chac cần ý chính trong ngoặc vuông/);
+	// không có ý chính (trang giới thiệu bốn nhãn): tiêu đề chỉ là tên nhãn
+	assert.match(dung(':::vung-chac\nx\n:::'), /^<aside class="pz-nhan pz-nhan--vung-chac" aria-label="Vững chắc"><p class="pz-nhan__dau"><span class="pz-nhan__muc">Vững chắc<\/span><\/p><p>x<\/p>/);
 });
 
 test('chip nhãn, khối thu gọn, khung "Ở Việt Nam"; aside của Starlight để nguyên', () => {
@@ -125,4 +126,23 @@ test('bổ sung có ngày: trang mà bổ sung gắn vào có trong trang.yml', 
 		const t = /^trang:\s*(\S+)/m.exec(fs.readFileSync(path.join(goc, f), 'utf8'))?.[1];
 		assert.ok(trang.has(t), `src/content/bo-sung/${f}: trang "${t}" không có trong src/data/trang.yml`);
 	}
+});
+
+test('id tiêu đề theo kiểu site cũ: "đ" thành "d", bỏ dấu, chữ của chip nhãn trong tiêu đề vào id, trùng thì thêm _1', async () => {
+	const { idCu, slugCu } = await import('../src/plugins/id-cu.mjs');
+	assert.equal(slugCu('Điều gì đang xảy ra?'), 'dieu-gi-dang-xay-ra');
+	assert.equal(slugCu('Ebbinghaus (1885): người làm thí nghiệm trên chính mình'), 'ebbinghaus-1885-nguoi-lam-thi-nghiem-tren-chinh-minh');
+	const plugin = psycheMarkdown({ docsDir: DOCS })({ fileURL: pathToFileURL(path.join(DOCS, 'kham-pha/tri-nho/thu.md')) });
+	const html = markdownToHtml('### 1. Rải việc ôn tập :nhan[vung-chac]\n\n## Nguồn\n\n## Nguồn', {
+		mdastPlugins: [plugin],
+		hastPlugins: [idCu()],
+		features: { directive: true, smartPunctuation: false },
+	}).html;
+	assert.match(html, /<h3 id="1-rai-viec-on-tap-vung-chac">/);
+	assert.match(html, /<h2 id="nguon">Nguồn<\/h2>\s*<h2 id="nguon_1">/);
+	// tiêu đề trang (title) chiếm id trước, như H1 của site cũ: Astro đưa frontmatter vào data.astro (ở đây giả lập)
+	const coTieuDe = idCu()({ data: { astro: { frontmatter: { title: 'Nguồn' } } } });
+	const ids = [];
+	coTieuDe.element.visit({ properties: {} }, { textContent: () => 'Nguồn', setProperty: (_, k, v) => ids.push(v) });
+	assert.deepEqual(ids, ['nguon_1']);
 });

@@ -9,7 +9,9 @@ import { satteri } from '@astrojs/markdown-satteri';
 import { DUONG_GOC, trangTrongBan } from './src/ban-build.mjs';
 import { duLieuDaKiem } from './src/du-lieu.mjs';
 import { menu } from './src/menu.mjs';
+import { idCu } from './src/plugins/id-cu.mjs';
 import { psycheMarkdown } from './src/plugins/psyche-markdown.mjs';
+import { sapCo } from './src/plugins/sap-co.mjs';
 import { timKiemKhongDau } from './src/tim-kiem/tich-hop.mjs';
 
 const site = 'https://mtuann.github.io';
@@ -41,6 +43,9 @@ export default defineConfig({
 		// AGENTS.md, mục "Mẫu trang và khối đặc biệt").
 		processor: satteri({
 			mdastPlugins: [psycheMarkdown({ docsDir: fileURLToPath(new URL('./src/content/docs/', import.meta.url)) })],
+			// id tiêu đề theo kiểu site cũ, để link #mục cũ vẫn đúng, chạy trước plugin id của Starlight; link tới trang chưa có
+			// trong bản build thành chữ "sắp có" (D1.5)
+			hastPlugins: [idCu(), sapCo({ base: DUONG_GOC, trangCo: trangTrongBan })],
 			features: {
 				smartPunctuation: false, // giữ nguyên dấu nháy, gạch ngang như chữ của site cũ (Astro mặc định bật)
 				headingAttributes: true, // ## Tiêu đề { #id }: id viết tay, để giữ link #mục của site cũ (D1.5)

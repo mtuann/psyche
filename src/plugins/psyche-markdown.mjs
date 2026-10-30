@@ -1,6 +1,7 @@
 // Plugin Markdown của dự án cho Sätteri (cây mdast), đăng ký ở astro.config.mjs (D1.4). Cú pháp: AGENTS.md, mục "Mẫu
 // trang và khối đặc biệt". Lúc build, nó đổi:
-// - khung nhãn :::vung-chac[Ý chính] … ::: (cả kha-vung, tranh-cai, bac-bo) thành khung nền màu nhạt có nhãn dạng viên;
+// - khung nhãn :::vung-chac[Ý chính] … ::: (cả kha-vung, tranh-cai, bac-bo) thành khung nền màu nhạt có nhãn dạng viên
+//   (ý chính chỉ bỏ được ở trang giới thiệu bốn nhãn);
 // - :::thu-gon[Xem đáp án] … ::: thành khối bấm để mở; :::o-viet-nam … ::: thành khung "Ở Việt Nam";
 // - chip nhãn trong câu :nhan[vung-chac];
 // - khối ```quiz thành câu hỏi kiểm tra nhanh;
@@ -32,13 +33,14 @@ const KHOI = {
 	...Object.fromEntries(
 		Object.entries(TEN_NHAN).map(([ma, ten]) => [
 			ma,
-			({ nhan, con }, loi) => {
-				if (!nhan?.length) throw loi(`:::${ma} cần ý chính trong ngoặc vuông, ví dụ :::${ma}[Quên nhanh lúc đầu, chậm dần về sau]`);
-				// "Vững chắc: ý chính" là chữ của tiêu đề (trình đọc màn hình, tìm kiếm, so chữ); dấu hai chấm chỉ ẩn cho mắt
-				return khoi('aside', { class: `pz-nhan pz-nhan--${ma}`, 'aria-label': `${ten}: ${nhan.map(chu).join('')}` }, [
+			({ nhan, con }) => {
+				// "Vững chắc: ý chính" là chữ của tiêu đề (trình đọc màn hình, tìm kiếm, so chữ); dấu hai chấm chỉ ẩn cho mắt.
+				// Không có ý chính (trang giới thiệu bốn nhãn) thì tiêu đề chỉ là tên nhãn.
+				const co = Boolean(nhan?.length);
+				return khoi('aside', { class: `pz-nhan pz-nhan--${ma}`, 'aria-label': co ? `${ten}: ${nhan.map(chu).join('')}` : ten }, [
 					khoi('p', { class: 'pz-nhan__dau' }, [
-						{ type: 'html', value: `<span class="pz-nhan__muc">${ten}</span><span class="pz-an">: </span>` },
-						khoi('span', { class: 'pz-nhan__y' }, nhan),
+						{ type: 'html', value: `<span class="pz-nhan__muc">${ten}</span>` + (co ? '<span class="pz-an">: </span>' : '') },
+						...(co ? [khoi('span', { class: 'pz-nhan__y' }, nhan)] : []),
 					]),
 					...con,
 				]);
@@ -99,11 +101,10 @@ export function psycheMarkdown({ docsDir }) {
 			textDirective(node) {
 				// chỉ :nhan[…]; chữ khác dạng ":x" (giờ, tỉ lệ) để Starlight trả lại nguyên chữ
 				if (node.name !== 'nhan') return;
-				try {
-					return { type: 'html', value: chipNhan(chu(node).trim()) };
-				} catch (e) {
-					throw loi(e.message);
-				}
+				// nút có chữ thật (không phải HTML thô), để chữ của chip vào id của tiêu đề như ở site cũ (src/plugins/id-cu.mjs)
+				const ma = chu(node).trim();
+				if (!TEN_NHAN[ma]) throw loi(chipNhan.loi(ma));
+				return khoi('span', { class: `pz-tag pz-tag--${ma}` }, [{ type: 'text', value: TEN_NHAN[ma] }]);
 			},
 			leafDirective(node) {
 				const muc = CHI_THI[node.name];

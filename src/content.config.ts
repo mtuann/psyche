@@ -8,6 +8,7 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { docsLoader, i18nLoader } from '@astrojs/starlight/loaders';
 import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
+import { dungLaiKhiDoi } from './ban-build.mjs';
 import { boNap, frontmatterRieng, schema, trangChuaDangKy } from './du-lieu.mjs';
 
 // Đọc và kiểm toàn bộ dữ liệu ngay khi nạp cấu hình; sai thì ném lỗi tại đây. Trang chưa có trong trang.yml cũng vậy.
@@ -25,7 +26,12 @@ const boSung = () => {
 const duLieu = (ten: keyof typeof schema) => defineCollection({ loader: boNap(ten), schema: schema[ten] });
 
 export const collections = {
-	docs: defineCollection({ loader: docsLoader(), schema: docsSchema({ extend: frontmatterRieng }) }),
+	// dựng lại mọi trang khi dữ liệu, plugin, hình, khóa hay danh sách trang đổi (dungLaiKhiDoi, src/ban-build.mjs)
+	docs: defineCollection({
+		loader: dungLaiKhiDoi(docsLoader()),
+		// in_duoc: trang vào Sách in (như site cũ; Sách in sinh lúc build ở đợt 8)
+		schema: docsSchema({ extend: frontmatterRieng.extend({ in_duoc: z.boolean().optional() }) }),
+	}),
 	i18n: defineCollection({ loader: i18nLoader(), schema: i18nSchema() }),
 	'linh-vuc': duLieu('linh-vuc'),
 	trang: duLieu('trang'),

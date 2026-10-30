@@ -103,13 +103,30 @@ Từ site cũ (`../psyche-zero/README.md`, "Nguyên tắc nội dung"), cộng c
 - Trang Hỗ trợ chỉ đưa thông tin kiểm chứng được từ nguồn chính thức, ghi ngày kiểm.
 - Văn tiếng Việt rõ, câu ngắn, thuật ngữ tiếng Anh để trong ngoặc ở lần đầu.
 
+## Chuyển trang, so chữ, link
+
+Từ D1.5. Lô chuyển trang bằng script, không chép tay (luật 6):
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 ../psyche-zero/.venv/bin/mkdocs build -q -f ../psyche-zero/mkdocs.yml -d "$PWD/.cache/site-cu"   # bản build cũ để so chữ (-d tuyệt đối)
+node tools/chuyen/chuyen.mjs thi-nghiem/asch [--ghi-de]      # ghi src/content/docs/thi-nghiem/asch.md và hình vào src/hinh/
+npm run build:xem && node tools/chuyen/so-chu.mjs thi-nghiem/asch   # chữ hiển thị như trang cũ; khác thì ghi doi_chu ở hồ sơ
+node tools/chuyen/so-chu.mjs thi-nghiem/asch --doi-chu       # khung doi_chu cho các chỗ khác
+```
+
+- Script đổi: H1 thành `title` (title cũ khác H1 thì thành `sidebar.label`, tên trong menu); `!!! vung-chac "Vững chắc: ý"` thành `:::vung-chac[ý]`; `!!! warning`, `note` thành aside của Starlight; `??? note "…"` thành `:::thu-gon[…]`; `<div class="pz-quiz" markdown>` thành ` ```quiz `; `<div class="pz-stroop"></div>` thành `::cong-cu{ten="stroop"}`; vùng `<!-- fig:x -->` thành `::hinh{ten="x"}` (chép `<figure>` vào `src/hinh/x.html`); chip `pz-tag` thành `:nhan[…]`; link `.md` và link thư mục thành `/psyche/<trang>/`. Bỏ dòng "*Rà soát nội dung lần cuối…*" (nay sinh từ hồ sơ) và `can_ra_soat`, `kiem_tra_lan_cuoi`, `hide` ở frontmatter. Chỗ không tự quyết thì in cảnh báo.
+- `so-chu.mjs` so từng khối chữ, câu hỏi, tiêu đề, mô tả, id tiêu đề; cụm khối chỉ khác cách ngắt khối (site cũ dồn danh sách vào đoạn trên) không tính là khác.
+- Id tiêu đề giữ kiểu site cũ (`src/plugins/id-cu.mjs`, như `vi_slugs.py`: "đ" thành "d"), nên link `#mục` cũ còn đúng.
+- Link tới trang chưa có trong bản build thành chữ kèm nhãn "sắp có" (`src/plugins/sap-co.mjs`), tự thành link khi trang lên; `tests/link.test.mjs` kiểm mọi link và `#mục` nội bộ, và chữ "sắp có" trỏ tới trang có trong `trang.yml`. Link nội bộ viết `/psyche/<trang>/`.
+- Trang 404 (`src/content/docs/404.md`): báo site đang làm lại, nút về trang chủ, mở ô tìm kiếm, và mở đúng địa chỉ ấy ở Psyche Zero.
+
 ## Mẫu trang và khối đặc biệt
 
 Chốt ở D1.4 (`src/plugins/psyche-markdown.mjs`, `src/plugins/thanh-phan.mjs`; kiểm thử `tests/thanh-phan.test.mjs`). Trang viết `.md`, không nhúng JSX. Viết sai (khối, chỉ thị không có ở đây, thiếu nhãn, thuộc tính lạ, câu hỏi không đúng một đáp án đúng) thì build hỏng. Cú pháp cũ của site MkDocs chỉ để tra khi chuyển trang (`tools/chuyen/`, D1.5).
 
 | Khối | Cách viết | Hiện ra |
 |---|---|---|
-| Khung nhãn mức độ chắc chắn | `:::vung-chac[Ý chính]` … `:::` (cả `kha-vung`, `tranh-cai`, `bac-bo`); ý chính bắt buộc, không ghi lại chữ "Vững chắc:" | Khung nền màu nhạt của nhãn, nhãn dạng viên, ý chính in đậm; trình đọc màn hình đọc "Vững chắc: ý chính" |
+| Khung nhãn mức độ chắc chắn | `:::vung-chac[Ý chính]` … `:::` (cả `kha-vung`, `tranh-cai`, `bac-bo`); không ghi lại chữ "Vững chắc:"; chỉ trang giới thiệu nhãn mới bỏ ý chính (`:::vung-chac`) | Khung nền màu nhạt của nhãn, nhãn dạng viên, ý chính in đậm; trình đọc màn hình đọc "Vững chắc: ý chính" |
 | Chip nhãn trong câu | `:nhan[vung-chac]` | Viên nhỏ "Vững chắc" |
 | Khối thu gọn | `:::thu-gon[Xem đáp án]` … `:::` | Nút bấm để mở (vùng bấm 44 px); khi in thì mở hết |
 | Khung "Ở Việt Nam" | `:::o-viet-nam` … `:::`, tiêu đề khác: `:::o-viet-nam[Ở Việt Nam và châu Á]` | Khung viền hồng có tiêu đề nhỏ |

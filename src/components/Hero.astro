@@ -46,3 +46,26 @@ const SANG = new Set([4, 7, 10]);
 		{NUT.map(([x, y], i) => <circle cx={x} cy={y} r={SANG.has(i) ? 6.5 : 4.5} class:list={{ sang: SANG.has(i) }} />)}
 	</svg>
 </div>
+
+<script>
+	// Nút "Tìm trên site" của trang 404 (hero.actions có data-mo-tim-kiem): mở hộp tìm kiếm của Starlight ở thanh trên.
+	// Không có JavaScript thì nút là link tới mục hướng dẫn tìm ngay dưới. Chặn cú bấm lan lên window: Starlight đóng hộp
+	// tìm kiếm khi có cú bấm ra ngoài hộp, kể cả chính cú bấm vừa mở nó. Chép từ ../opus/src/components/Hero.astro.
+	document.querySelectorAll('[data-mo-tim-kiem]').forEach((nut) =>
+		nut.addEventListener('click', (e) => {
+			const mo = document.querySelector<HTMLButtonElement>('site-search button[data-open-modal]');
+			if (mo) {
+				e.preventDefault();
+				e.stopPropagation();
+				mo.click();
+			}
+		}),
+	);
+	// Link "bản cũ" của trang 404 (data-ban-cu): trỏ tới đúng địa chỉ ấy ở Psyche Zero, vì trang giữ đường dẫn
+	// (/psyche/thi-nghiem/asch/ thành /psyche-zero/thi-nghiem/asch/). Không có JavaScript thì link về trang chủ bản cũ.
+	document.querySelectorAll<HTMLAnchorElement>('a[data-ban-cu]').forEach((a) => {
+		const m = /^\/psyche\/(.*)$/.exec(location.pathname);
+		if (m && m[1] !== '404.html') a.href = 'https://mtuann.github.io/psyche-zero/' + m[1];
+	});
+</script>
+

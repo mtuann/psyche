@@ -36,11 +36,12 @@ export function md(s) {
 	return html.trim().replace(/^<p>([\s\S]*)<\/p>$/, '$1');
 }
 
-/** Chip nhãn trong câu (:nhan[vung-chac]). */
+/** Chip nhãn trong câu (:nhan[vung-chac]), dạng HTML (cho chữ dựng từ dữ liệu). */
 export function chipNhan(ma) {
-	if (!TEN_NHAN[ma]) throw new Error(`:nhan[${ma}]: nhãn phải là một trong ${Object.keys(TEN_NHAN).join(', ')}`);
+	if (!TEN_NHAN[ma]) throw new Error(chipNhan.loi(ma));
 	return `<span class="pz-tag pz-tag--${ma}">${TEN_NHAN[ma]}</span>`;
 }
+chipNhan.loi = (ma) => `:nhan[${ma}]: nhãn phải là một trong ${Object.keys(TEN_NHAN).join(', ')}`;
 
 // ---------- Câu hỏi kiểm tra nhanh ----------
 
