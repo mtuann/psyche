@@ -80,7 +80,7 @@ Dùng model hợp việc, không phải lúc nào cũng dùng model mạnh nhấ
 
 ## Khóa
 
-Từ D1.6, như opus: trang và bản ghi dữ liệu lên site thật khi đã khóa (mã băm trong `kiem-dinh/khoa.json`, hồ sơ trong `kiem-dinh/<trang>.yml`, bản ghi `kiem-dinh/du-lieu/<bộ>/<id>.yml`; `plans/ben-vung/chuan-kiem-dinh.md` mục 6–8). Trang đã khóa mà đổi thì build hỏng (cả hai bản), kèm lệnh mở khóa. Mã: `src/khoa.mjs` (mã băm: NFC, `\n`, bỏ khoảng trắng cuối dòng), `src/ban-build.mjs` (bản thật bỏ trang chưa khóa), `src/components/Banner.astro` (dải "Chưa kiểm định" ở bản xem).
+Từ D1.6, như opus: trang và bản ghi dữ liệu lên site thật khi đã khóa (mã băm trong `kiem-dinh/khoa.json`, hồ sơ trong `kiem-dinh/<trang>.yml`, bản ghi `kiem-dinh/du-lieu/<bộ>/<id>.yml`; `plans/ben-vung/chuan-kiem-dinh.md` mục 6–8). Trang đã khóa mà đổi thì build hỏng (cả hai bản), kèm lệnh mở khóa. Mã: `src/khoa.mjs` (mã băm: NFC, `\n`, bỏ khoảng trắng cuối dòng; gồm cả hình `::hinh` của trang, mỗi hình một dòng đúng khuôn), `src/ban-build.mjs` (bản thật bỏ trang chưa khóa), `src/components/Banner.astro` (dải "Chưa kiểm định" ở bản xem).
 
 ```bash
 node tools/khoa.mjs mau <mục>…                 # hồ sơ mẫu (mục: thi-nghiem/asch, index, 404, du-lieu/nguon/asch1956[#nam,tac_gia])

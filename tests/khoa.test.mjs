@@ -9,7 +9,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { parse, stringify } from 'yaml';
 import { locTheoBan } from '../src/ban-build.mjs';
-import { chuanHoaTrang, docKhoa, jsonChuan, kiemKhoa, maBamBanGhi, maBamTrang, maBamTrangFile } from '../src/khoa.mjs';
+import { chuanHoaTrang, docKhoa, jsonChuan, kiemKhoa, hinhCuaTrang, maBamBanGhi, maBamTrang, maBamTrangFile } from '../src/khoa.mjs';
 import { MAU_MO_RONG, lenh, loiHoSo } from '../tools/khoa.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -36,6 +36,19 @@ test('mã băm của trang gồm cả hình tĩnh ::hinh của trang: sửa hìn
 	assert.notEqual(truoc, maBamTrang(fs.readFileSync(f, 'utf8')));
 	fs.writeFileSync(path.join(goc, 'src', 'hinh', 'x.html'), '<figure>79%</figure>\n');
 	assert.notEqual(maBamTrangFile(f, goc), truoc, 'sửa số trong hình thì mã băm đổi');
+	// mỗi phần chuẩn hóa riêng: dòng trống thừa cuối trang không đổi mã băm, kể cả khi có hình
+	fs.writeFileSync(f, '---\ntitle: A\n---\n\n::hinh{ten="x"}\n\n\n');
+	assert.equal(maBamTrangFile(f, goc), maBamTrangFile(f, goc));
+	const coHinh = maBamTrangFile(f, goc);
+	fs.writeFileSync(f, '---\ntitle: A\n---\n\n::hinh{ten="x"}\n');
+	assert.equal(maBamTrangFile(f, goc), coHinh);
+	// hai hình: thứ tự trong trang vào mã băm
+	fs.writeFileSync(path.join(goc, 'src', 'hinh', 'y.html'), '<figure>y</figure>\n');
+	fs.writeFileSync(f, '::hinh{ten="x"}\n\n::hinh{ten="y"}\n');
+	const xy = maBamTrangFile(f, goc);
+	fs.writeFileSync(f, '::hinh{ten="y"}\n\n::hinh{ten="x"}\n');
+	assert.notEqual(maBamTrangFile(f, goc), xy);
+	assert.deepEqual(hinhCuaTrang('::hinh{ten="a"}\n  ::hinh{ten="b"}\n::hinh{ten=\'c\'}\n> ::hinh{ten="d"}\n::hinh{ten="e"}  \n'), ['a', 'e']);
 	fs.writeFileSync(f, '---\ntitle: A\n---\n\nChữ.\n');
 	assert.equal(maBamTrangFile(f, goc), maBamTrang('---\ntitle: A\n---\n\nChữ.\n'));
 	fs.rmSync(goc, { recursive: true });

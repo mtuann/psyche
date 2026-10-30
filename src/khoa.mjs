@@ -28,17 +28,24 @@ export const chuanHoaTrang = (chu) =>
 export const maBamTrang = (chu) => maBam(chuanHoaTrang(chu));
 
 /**
- * Mã băm của trang như lúc khóa: nguồn Markdown, cộng nội dung từng hình tĩnh ::hinh{ten="x"} mà trang dùng
- * (src/hinh/x.html, theo thứ tự trong trang), để chữ và số trong hình cũng được khóa (D3-L1). Trang không có hình thì mã
- * băm như maBamTrang của riêng nguồn.
+ * Tên các hình tĩnh trang dùng, theo thứ tự: mỗi hình một dòng đúng khuôn ::hinh{ten="x"} (đầu dòng, nháy kép, tên chữ
+ * thường, số, gạch nối). Plugin (src/plugins/psyche-markdown.mjs) báo lỗi cách viết khác (thụt lề, nháy đơn, trong danh
+ * sách hay trích dẫn…), để mọi hình hiện ra đều được tính vào mã băm (review them/khoa-hinh).
+ */
+export const hinhCuaTrang = (chu) => [...String(chu).matchAll(/^::hinh\{ten="([a-z0-9-]+)"\}[ \t]*$/gm)].map(([, ten]) => ten);
+
+/**
+ * Mã băm của trang như lúc khóa: nguồn Markdown, cộng nội dung từng hình tĩnh mà trang dùng (src/hinh/x.html, theo thứ
+ * tự trong trang; mỗi phần chuẩn hóa riêng), để chữ và số trong hình cũng được khóa. Trang không có hình thì mã băm như
+ * maBamTrang của riêng nguồn. Một hình dùng ở nhiều trang: sửa hình là phải mở khóa mọi trang đã khóa dùng nó.
  */
 export function maBamTrangFile(f, goc = GOC) {
 	const chu = fs.readFileSync(f, 'utf8');
-	const hinh = [...chu.matchAll(/^::hinh\{[^}]*\bten="([^"]*)"/gm)].map(([, ten]) => {
+	const hinh = hinhCuaTrang(chu).map((ten) => {
 		const fh = path.join(goc, 'src', 'hinh', `${ten}.html`);
-		return fs.existsSync(fh) ? `\n<!-- hinh:${ten} -->\n${fs.readFileSync(fh, 'utf8')}` : '';
+		return fs.existsSync(fh) ? `<!-- hinh:${ten} -->\n${chuanHoaTrang(fs.readFileSync(fh, 'utf8'))}` : '';
 	});
-	return maBamTrang(chu + hinh.join(''));
+	return maBam(chuanHoaTrang(chu) + hinh.join(''));
 }
 
 /** JSON của bản ghi với khóa xếp theo chữ cái ở mọi cấp, không khoảng trắng. */
@@ -136,7 +143,10 @@ export function kiemKhoa(goc = GOC) {
 	for (const [t, ma] of Object.entries(trang)) {
 		const f = fileTrang(t, goc);
 		if (!fs.existsSync(f)) loi.push(`trang ${t} đã khóa nhưng không còn file ${path.relative(goc, f)}`);
-		else if (maBamTrangFile(f, goc) !== ma) loi.push(`trang ${t} đã khóa mà nội dung đã đổi (mã băm lệch, tính cả hình của trang); ${cachMo(t)}`);
+		else if (maBamTrangFile(f, goc) !== ma) {
+			const hinh = hinhCuaTrang(fs.readFileSync(f, 'utf8'));
+			loi.push(`trang ${t} đã khóa mà nội dung đã đổi (mã băm lệch${hinh.length ? `; mã băm gồm cả hình ${hinh.map((x) => `src/hinh/${x}.html`).join(', ')}` : ''}); ${cachMo(t)}`);
+		}
 	}
 	for (const [k, ma] of Object.entries(ban_ghi)) {
 		const moi = maBamKhoaBanGhi(k, goc, nho);

@@ -164,8 +164,8 @@ nhan_dinh:
 
 ## 7. Khóa
 
-- `kiem-dinh/khoa.json` ánh xạ đường dẫn trang → mã băm SHA-256 của nguồn Markdown lúc khóa.
-- Mã băm tính trên cả file, kể cả frontmatter, sau khi chuẩn hóa: Unicode NFC, xuống dòng kiểu `\n`, bỏ khoảng trắng cuối dòng, đúng một `\n` ở cuối file. Vì khoảng trắng cuối dòng không vào mã băm, trang không được có khoảng trắng cuối dòng (ngắt dòng cứng viết `<br>`); kiểm thử chặn. Trang không chứa vùng do công cụ sinh (hình, danh sách, dòng trạng thái đều sinh lúc build từ dữ liệu), nên khóa xong thì file không đổi nữa.
+- `kiem-dinh/khoa.json` ánh xạ đường dẫn trang → mã băm SHA-256 của nguồn Markdown lúc khóa, cộng nội dung các hình tĩnh `::hinh{ten="…"}` mà trang dùng (`src/hinh/<tên>.html`, theo thứ tự trong trang), để chữ và số trong hình cũng được khóa. Mỗi hình viết một dòng riêng đúng khuôn `::hinh{ten="tên"}` (cách viết khác thì build hỏng). Một hình dùng ở nhiều trang thì sửa hình là phải mở khóa mọi trang đã khóa dùng nó.
+- Mã băm tính trên cả file, kể cả frontmatter, sau khi chuẩn hóa: Unicode NFC, xuống dòng kiểu `\n`, bỏ khoảng trắng cuối dòng, đúng một `\n` ở cuối file. Vì khoảng trắng cuối dòng không vào mã băm, trang không được có khoảng trắng cuối dòng (ngắt dòng cứng viết `<br>`); kiểm thử chặn. Trang không chứa vùng do công cụ sinh (danh sách, dòng trạng thái sinh lúc build từ dữ liệu; hình nằm ở file riêng, vào mã băm như trên), nên khóa xong thì file không đổi nữa. Script công cụ, plugin, CSS không vào mã băm: kiểm thử giữ chúng đúng.
 - Bản build thật chỉ đưa trang có trong `khoa.json`; trang có trong `khoa.json` mà mã băm khác thì build hỏng, thông báo kèm cách mở khóa.
 - Bản ghi trong `src/data/` khóa theo từng bản ghi: cả bản ghi, hay từng phần (chỉ các trường đã kiểm định; mã băm tính trên JSON của phần được khóa, tên trường xếp theo chữ cái). Thêm bản ghi mới được; sửa hay xóa phần đã khóa thì phải mở khóa.
 - Thành phần, plugin, JavaScript, CSS không nằm trong khóa; chúng được giữ đúng bằng kiểm thử tự động. Phần do dữ liệu sinh ra (danh sách, con số) đổi khi thêm nội dung mà không phá khóa, và vẫn đúng vì mọi trường trang hiện ra đã được kiểm định và khóa.
