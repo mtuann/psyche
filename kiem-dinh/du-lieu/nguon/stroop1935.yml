@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/stroop1935#…
+ban_ghi: nguon/stroop1935
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/h0054651
+    link: https://api.crossref.org/works/10.1037%2Fh0054651
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/h0054651
+    link: https://api.openalex.org/works/doi:10.1037%2Fh0054651
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Stroop, J. R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Stroop, J. R.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0054651
+    luot_2_trich: J. Ridley Stroop
+  - id: n2
+    cau: "Năm xuất bản: 1935"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1935; các năm Crossref ghi: 1935"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0054651
+  - id: n3
+    cau: "Tên: Studies of interference in serial verbal reactions"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Studies of interference in serial verbal reactions.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0054651
+  - id: n4
+    cau: "Nơi đăng: Journal of Experimental Psychology, 18(6), 643–662"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Experimental Psychology, tập 18, số 6, trang 643-662
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0054651
+  - id: n5
+    cau: DOI 10.1037/h0054651 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fh0054651

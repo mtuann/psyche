@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/dazzi2014#…
+ban_ghi: nguon/dazzi2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1017/s0033291714001299
+    link: https://api.crossref.org/works/10.1017%2Fs0033291714001299
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1017/s0033291714001299
+    link: https://api.openalex.org/works/doi:10.1017%2Fs0033291714001299
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Dazzi, T., Gribble, R., Wessely, S., & Fear, N. T."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Dazzi, T.; Gribble, R.; Wessely, S.; Fear, N. T.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs0033291714001299
+    luot_2_trich: T. Dazzi; Rachael Gribble; Simon C. Wessely; Nicola T. Fear
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2014; các năm Crossref ghi: 2014"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs0033291714001299
+  - id: n3
+    cau: "Tên: Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence?"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence?
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs0033291714001299
+  - id: n4
+    cau: "Nơi đăng: Psychological Medicine, 44(16), 3361–3363"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Medicine, tập 44, số 16, trang 3361-3363
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs0033291714001299
+  - id: n5
+    cau: DOI 10.1017/s0033291714001299 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs0033291714001299

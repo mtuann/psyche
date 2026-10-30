@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/lehmann2017#…
+ban_ghi: nguon/lehmann2017
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1027/1864-9335/a000296
+    link: https://api.crossref.org/works/10.1027%2F1864-9335%2Fa000296
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1027/1864-9335/a000296
+    link: https://api.openalex.org/works/doi:10.1027%2F1864-9335%2Fa000296
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Lehmann, G. K., & Calin-Jageman, R. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Lehmann, Gabrielle K.; Calin-Jageman, Robert J.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1027%2F1864-9335%2Fa000296
+    luot_2_trich: Gabrielle K. Lehmann; Robert J Calin-Jageman
+  - id: n2
+    cau: "Năm xuất bản: 2017"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2017; các năm Crossref ghi: 2017"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1027%2F1864-9335%2Fa000296
+  - id: n3
+    cau: "Tên: Is red really romantic? Two pre-registered replications of the red-romance hypothesis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Is Red Really Romantic?: Two Pre-Registered Replications of the Red-Romance Hypothesis"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1027%2F1864-9335%2Fa000296
+  - id: n4
+    cau: "Nơi đăng: Social Psychology, 48(3), 174–183"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Social Psychology, tập 48, số 3, trang 174-183
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1027%2F1864-9335%2Fa000296
+  - id: n5
+    cau: DOI 10.1027/1864-9335/a000296 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1027%2F1864-9335%2Fa000296

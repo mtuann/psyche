@@ -1,0 +1,87 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/elliot2014#…
+ban_ghi: nguon/elliot2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1146/annurev-psych-010213-115035
+    link: https://api.crossref.org/works/10.1146%2Fannurev-psych-010213-115035
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1146/annurev-psych-010213-115035
+    link: https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-010213-115035
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Elliot, A. J., & Maier, M. A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Elliot, Andrew J.; Maier, Markus A.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-010213-115035
+    luot_2_trich: Andrew J. Elliot; Markus Maier
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2014; các năm Crossref ghi: 2014"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1146/annurev-psych-010213-115035 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2013, bản ghi 2014. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2014 (tập 65 số None, tr. 95-120), trực tuyến 2013-06-26; tạp chí lúc đăng: Annual review of psychology; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Color psychology: Effects of perceiving color on psychological functioning in humans"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Color Psychology: Effects of Perceiving Color on Psychological Functioning in Humans"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-010213-115035
+  - id: n4
+    cau: "Nơi đăng: Annual Review of Psychology, 65, 95–120"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Annual Review of Psychology, tập 65, số 1, trang 95-120
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-010213-115035
+  - id: n5
+    cau: DOI 10.1146/annurev-psych-010213-115035 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-010213-115035

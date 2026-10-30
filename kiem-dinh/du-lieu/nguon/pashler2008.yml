@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/pashler2008#…
+ban_ghi: nguon/pashler2008
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/j.1539-6053.2009.01038.x
+    link: https://api.crossref.org/works/10.1111%2Fj.1539-6053.2009.01038.x
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/j.1539-6053.2009.01038.x
+    link: https://api.openalex.org/works/doi:10.1111%2Fj.1539-6053.2009.01038.x
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Pashler, H., McDaniel, M., Rohrer, D., & Bjork, R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Pashler, Harold; McDaniel, Mark; Rohrer, Doug; Bjork, Robert
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1539-6053.2009.01038.x
+    luot_2_trich: Harold Pashler; Mark A. McDaniel; Doug Rohrer; Robert A. Bjork
+  - id: n2
+    cau: "Năm xuất bản: 2008"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2008; các năm Crossref ghi: 2008, 2009"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1539-6053.2009.01038.x
+  - id: n3
+    cau: "Tên: Learning styles: Concepts and evidence"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Learning Styles: Concepts and Evidence"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: &a1
+      - https://europepmc.org/search?query=DOI:10.1111/j.1539-6053.2009.01038.x (REST api)
+    luot_2_ghi_chu: 'OpenAlex: tên: nguồn ghi "Learning Styles", bản ghi "Learning styles: Concepts and evidence". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2008 (tập 9 số 3, tr. 105-119), trực tuyến 2008-12-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp.'
+  - id: n4
+    cau: "Nơi đăng: Psychological Science in the Public Interest, 9(3), 105–119"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Science in the Public Interest, tập 9, số 3, trang 105-119
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: *a1
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Gothic.net", bản ghi "Psychological Science in the Public Interest, 9(3), 105–119". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2008 (tập 9 số 3, tr. 105-119), trực tuyến 2008-12-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp.'
+  - id: n5
+    cau: DOI 10.1111/j.1539-6053.2009.01038.x trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1539-6053.2009.01038.x

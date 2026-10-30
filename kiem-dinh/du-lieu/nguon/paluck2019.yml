@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/paluck2019#…
+ban_ghi: nguon/paluck2019
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1017/bpp.2018.25
+    link: https://api.crossref.org/works/10.1017%2Fbpp.2018.25
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1017/bpp.2018.25
+    link: https://api.openalex.org/works/doi:10.1017%2Fbpp.2018.25
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Paluck, E. L., Green, S. A., & Green, D. P."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: PALUCK, ELIZABETH LEVY; GREEN, SETH A.; GREEN, DONALD P.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fbpp.2018.25
+    luot_2_trich: Elizabeth Levy Paluck; Seth Ariel Green; DONALD PHILIP GREEN
+  - id: n2
+    cau: "Năm xuất bản: 2019"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2019; các năm Crossref ghi: 2018, 2019"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1017/bpp.2018.25
+    luot_2_ghi_chu: 'OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 mở trang nhà xuất bản: Trang Cambridge: in 2019/11 (tập 3 số 2, tr. 129-158), trực tuyến 2018/07/10; tác giả đầu Paluck, tên bài "The contact hypothesis re-evaluated" (cần kiểm tên bản ghi).'
+  - id: n3
+    cau: "Tên: The contact hypothesis re-evaluated"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The contact hypothesis re-evaluated
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fbpp.2018.25
+  - id: n4
+    cau: "Nơi đăng: Behavioural Public Policy, 3(2), 129–158"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Behavioural Public Policy, tập 3, số 02, trang 129-158
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fbpp.2018.25
+  - id: n5
+    cau: DOI 10.1017/bpp.2018.25 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fbpp.2018.25

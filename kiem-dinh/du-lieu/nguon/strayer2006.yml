@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/strayer2006#…
+ban_ghi: nguon/strayer2006
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1518/001872006777724471
+    link: https://api.crossref.org/works/10.1518%2F001872006777724471
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1518/001872006777724471
+    link: https://api.openalex.org/works/doi:10.1518%2F001872006777724471
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Strayer, D. L., Drews, F. A., & Crouch, D. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Strayer, David L.; Drews, Frank A.; Crouch, Dennis J.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1518%2F001872006777724471
+    luot_2_trich: David L. Strayer; Frank A. Drews; Dennis J. Crouch
+  - id: n2
+    cau: "Năm xuất bản: 2006"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2006; các năm Crossref ghi: 2006"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1518%2F001872006777724471
+  - id: n3
+    cau: "Tên: A comparison of the cell phone driver and the drunk driver"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: A Comparison of the Cell Phone Driver and the Drunk Driver
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1518%2F001872006777724471
+  - id: n4
+    cau: "Nơi đăng: Human Factors, 48(2), 381–391"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: "Human Factors: The Journal of the Human Factors and Ergonomics Society, tập 48, số 2, trang 381-391"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1518%2F001872006777724471
+  - id: n5
+    cau: DOI 10.1518/001872006777724471 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1518%2F001872006777724471

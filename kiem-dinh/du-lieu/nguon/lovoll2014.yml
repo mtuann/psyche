@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/lovoll2014#…
+ban_ghi: nguon/lovoll2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1007/s11205-012-0211-9
+    link: https://api.crossref.org/works/10.1007%2Fs11205-012-0211-9
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1007/s11205-012-0211-9
+    link: https://api.openalex.org/works/doi:10.1007%2Fs11205-012-0211-9
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Løvoll, H. S., & Vittersø, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Løvoll, Helga S.; Vittersø, Joar
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11205-012-0211-9
+    luot_2_trich: Helga Synnevåg Løvoll; Joar Vittersø
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2014; các năm Crossref ghi: 2012, 2014"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s11205-012-0211-9
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2012, bản ghi 2014. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
+  - id: n3
+    cau: 'Tên: Can balance be boring? A critique of the "challenges should match skills" hypotheses in flow theory'
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Can Balance be Boring? A Critique of the “Challenges Should Match Skills” Hypotheses in Flow Theory
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11205-012-0211-9
+  - id: n4
+    cau: "Nơi đăng: Social Indicators Research, 115(1), 117–136"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Social Indicators Research, tập 115, số 1, trang 117-136
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11205-012-0211-9
+  - id: n5
+    cau: DOI 10.1007/s11205-012-0211-9 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11205-012-0211-9

@@ -1,0 +1,85 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/salmivalli1996#…
+ban_ghi: nguon/salmivalli1996
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1002/(SICI)1098-2337(1996)22:1<1::AID-AB1>3.0.CO;2-T
+    link: https://api.crossref.org/works/10.1002%2F(SICI)1098-2337(1996)22%3A1%3C1%3A%3AAID-AB1%3E3.0.CO%3B2-T
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1002/(SICI)1098-2337(1996)22:1<1::AID-AB1>3.0.CO;2-T
+    link: https://api.openalex.org/works/doi:10.1002%2F(SICI)1098-2337(1996)22%3A1%3C1%3A%3AAID-AB1%3E3.0.CO%3B2-T
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K., & Kaukiainen, A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Salmivalli, Christina; Lagerspetz, Kirsti; Björkqvist, Kaj; Österman, Karin; Kaukiainen, Ari
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2F(SICI)1098-2337(1996)22%3A1%3C1%3A%3AAID-AB1%3E3.0.CO%3B2-T
+    luot_2_trich: Christina Salmivalli; KIRSTI M. J. LAGERSPETZ; Kaj Björkqvist; Karin Österman; Ari Kaukiainen
+  - id: n2
+    cau: "Năm xuất bản: 1996"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1998; các năm Crossref ghi: 1998"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1002/(SICI)1098-2337(1996)22:1<1::AID-AB1>3.0.CO;2-T
+    luot_2_ghi_chu: "Crossref: năm: nguồn ghi 1998, bản ghi 1996; OpenAlex: năm: nguồn ghi 1998, bản ghi 1996. Người kiểm lượt 2 mở trang nhà xuất bản: Aggressive Behavior tập 22 số 1 = 1996 (tr. 1-15); 1998 là năm số hóa. Tác giả đầu, tên khớp (Semantic Scholar)."
+  - id: n3
+    cau: "Tên: Bullying as a group process: Participant roles and their relations to social status within the group"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Bullying as a group process: Participant roles and their relations to social status within the group"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2F(SICI)1098-2337(1996)22%3A1%3C1%3A%3AAID-AB1%3E3.0.CO%3B2-T
+  - id: n4
+    cau: "Nơi đăng: Aggressive Behavior, 22(1), 1–15"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Aggressive Behavior, tập 22, số 1, trang 1-15
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2F(SICI)1098-2337(1996)22%3A1%3C1%3A%3AAID-AB1%3E3.0.CO%3B2-T
+  - id: n5
+    cau: DOI 10.1002/(SICI)1098-2337(1996)22:1<1::AID-AB1>3.0.CO;2-T trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): DOI ghi dạng đã mã hóa cho URL (%3C, %3E), nên tra không ra; DOI đúng có dấu < và >"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2F(SICI)1098-2337(1996)22%3A1%3C1%3A%3AAID-AB1%3E3.0.CO%3B2-T

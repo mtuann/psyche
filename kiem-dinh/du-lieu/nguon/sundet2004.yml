@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/sundet2004#…
+ban_ghi: nguon/sundet2004
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.intell.2004.06.004
+    link: https://api.crossref.org/works/10.1016%2Fj.intell.2004.06.004
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.intell.2004.06.004
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.intell.2004.06.004
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Sundet, J. M., Barlaug, D. G., & Torjussen, T. M."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: SUNDET, J; BARLAUG, D; TORJUSSEN, T
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2004.06.004
+    luot_2_trich: Jon Martin Sundet; Dag Barlaug; Tore M. Torjussen
+  - id: n2
+    cau: "Năm xuất bản: 2004"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2004; các năm Crossref ghi: 2004"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2004.06.004
+  - id: n3
+    cau: "Tên: The end of the Flynn effect? A study of secular trends in mean intelligence test scores of Norwegian conscripts during half a century"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: ""
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2004.06.004
+  - id: n4
+    cau: "Nơi đăng: Intelligence, 32(4), 349–362"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Intelligence, tập 32, số 4, trang 349-362
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2004.06.004
+  - id: n5
+    cau: DOI 10.1016/j.intell.2004.06.004 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2004.06.004

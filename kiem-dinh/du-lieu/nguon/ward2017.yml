@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/ward2017#…
+ban_ghi: nguon/ward2017
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1086/691462
+    link: https://api.crossref.org/works/10.1086%2F691462
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1086/691462
+    link: https://api.openalex.org/works/doi:10.1086%2F691462
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Ward, A. F., Duke, K., Gneezy, A., & Bos, M. W."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Ward, Adrian F.; Duke, Kristen; Gneezy, Ayelet; Bos, Maarten W.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1086%2F691462
+    luot_2_trich: Adrian F. Ward; Kristen E. Duke; Ayelet Gneezy; Maarten W. Bos
+  - id: n2
+    cau: "Năm xuất bản: 2017"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2017; các năm Crossref ghi: 2017"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1086%2F691462
+  - id: n3
+    cau: "Tên: Brain drain: The mere presence of one's own smartphone reduces available cognitive capacity"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Brain Drain: The Mere Presence of One’s Own Smartphone Reduces Available Cognitive Capacity"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1086%2F691462
+  - id: n4
+    cau: "Nơi đăng: Journal of the Association for Consumer Research, 2(2), 140–154"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of the Association for Consumer Research, tập 2, số 2, trang 140-154
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1086%2F691462
+  - id: n5
+    cau: DOI 10.1086/691462 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1086%2F691462

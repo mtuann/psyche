@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/holt2015#…
+ban_ghi: nguon/holt2015
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1542/peds.2014-1864
+    link: https://api.crossref.org/works/10.1542%2Fpeds.2014-1864
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1542/peds.2014-1864
+    link: https://api.openalex.org/works/doi:10.1542%2Fpeds.2014-1864
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Holt, M. K., Vivolo-Kantor, A. M., Polanin, J. R., Holland, K. M., DeGue, S., Matjasko, J. L., Wolfe, M., & Reid, G."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Holt, Melissa K.; Vivolo-Kantor, Alana M.; Polanin, Joshua R.; Holland, Kristin M.; DeGue, Sarah; Matjasko, Jennifer L.; Wolfe, Misty; Reid, Gerald
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1542%2Fpeds.2014-1864
+    luot_2_trich: Melissa K. Holt; Alana Marie Vivolo-Kantor; Joshua R. Polanin; Kristin M. Holland; Sarah A. DeGue; Jennifer L. Matjasko; Misty Wolfe; Gerald M. Reid
+  - id: n2
+    cau: "Năm xuất bản: 2015"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2015; các năm Crossref ghi: 2015"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1542%2Fpeds.2014-1864
+  - id: n3
+    cau: "Tên: Bullying and suicidal ideation and behaviors: A meta-analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Bullying and Suicidal Ideation and Behaviors: A Meta-Analysis"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1542%2Fpeds.2014-1864
+  - id: n4
+    cau: "Nơi đăng: Pediatrics, 135(2), e496–e509"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Pediatrics, tập 135, số 2, trang e496-e509
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1542%2Fpeds.2014-1864
+  - id: n5
+    cau: DOI 10.1542/peds.2014-1864 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1542%2Fpeds.2014-1864

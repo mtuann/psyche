@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/beck2009#…
+ban_ghi: nguon/beck2009
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/a0017234
+    link: https://api.crossref.org/works/10.1037%2Fa0017234
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/a0017234
+    link: https://api.openalex.org/works/doi:10.1037%2Fa0017234
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Beck, H. P., Levinson, S., & Irons, G."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Beck, Hall P.; Levinson, Sharman; Irons, Gary
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0017234
+    luot_2_trich: Hall P. Beck; Sharman Levinson; Gary Irons
+  - id: n2
+    cau: "Năm xuất bản: 2009"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2009; các năm Crossref ghi: 2009"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0017234
+  - id: n3
+    cau: "Tên: Finding Little Albert: A journey to John B. Watson's infant laboratory"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Finding little Albert: A journey to John B. Watson’s infant laboratory."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0017234
+  - id: n4
+    cau: "Nơi đăng: American Psychologist, 64(7), 605–614"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: American Psychologist, tập 64, số 7, trang 605-614
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0017234
+  - id: n5
+    cau: DOI 10.1037/a0017234 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0017234

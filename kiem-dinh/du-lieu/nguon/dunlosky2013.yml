@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/dunlosky2013#…
+ban_ghi: nguon/dunlosky2013
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/1529100612453266
+    link: https://api.crossref.org/works/10.1177%2F1529100612453266
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/1529100612453266
+    link: https://api.openalex.org/works/doi:10.1177%2F1529100612453266
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Dunlosky, John; Rawson, Katherine A.; Marsh, Elizabeth J.; Nathan, Mitchell J.; Willingham, Daniel T.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100612453266
+    luot_2_trich: John T. Dunlosky; Katherine A. Rawson; Elizabeth J. Marsh; Mitchell J. Nathan; Daniel T. Willingham
+  - id: n2
+    cau: "Năm xuất bản: 2013"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2013; các năm Crossref ghi: 2013"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100612453266
+  - id: n3
+    cau: "Tên: Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Improving Students’ Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: &a1
+      - https://europepmc.org/search?query=DOI:10.1177/1529100612453266 (REST api)
+    luot_2_ghi_chu: "OpenAlex: tên: nguồn ghi \"Improving Students’ Learning With Effective Learning Techniques\", bản ghi \"Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology\". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2013 (tập 14 số 1, tr. 4-58), trực tuyến 2013-01-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp."
+  - id: n4
+    cau: "Nơi đăng: Psychological Science in the Public Interest, 14(1), 4–58"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Science in the Public Interest, tập 14, số 1, trang 4-58
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: *a1
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Gothic.net", bản ghi "Psychological Science in the Public Interest, 14(1), 4–58". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2013 (tập 14 số 1, tr. 4-58), trực tuyến 2013-01-01; tạp chí lúc đăng: Psychological science in the public interest : a journal of the American Psychological Society; tác giả đầu và tên bài khớp.'
+  - id: n5
+    cau: DOI 10.1177/1529100612453266 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100612453266

@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/sperry1961#…
+ban_ghi: nguon/sperry1961
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1126/science.133.3466.1749
+    link: https://api.crossref.org/works/10.1126%2Fscience.133.3466.1749
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1126/science.133.3466.1749
+    link: https://api.openalex.org/works/doi:10.1126%2Fscience.133.3466.1749
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Sperry, R. W."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Sperry, R. W.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.133.3466.1749
+    luot_2_trich: Roger W Sperry
+  - id: n2
+    cau: "Năm xuất bản: 1961"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1961; các năm Crossref ghi: 1961"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.133.3466.1749
+  - id: n3
+    cau: "Tên: Cerebral organization and behavior: The split brain behaves in many respects like two separate brains, providing new research possibilities"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Cerebral Organization and Behavior: The split brain behaves in many respects like two separate brains, providing new research possibilities."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.133.3466.1749
+  - id: n4
+    cau: "Nơi đăng: Science, 133(3466), 1749–1757"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Science, tập 133, số 3466, trang 1749-1757
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.133.3466.1749
+  - id: n5
+    cau: DOI 10.1126/science.133.3466.1749 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.133.3466.1749

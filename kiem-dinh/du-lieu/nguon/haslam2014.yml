@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/haslam2014#…
+ban_ghi: nguon/haslam2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/bjso.12074
+    link: https://api.crossref.org/works/10.1111%2Fbjso.12074
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/bjso.12074
+    link: https://api.openalex.org/works/doi:10.1111%2Fbjso.12074
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Haslam, S. A., Reicher, S. D., Millard, K., & McDonald, R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Haslam, S. Alexander; Reicher, Stephen D.; Millard, Kathryn; McDonald, Rachel
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fbjso.12074
+    luot_2_trich: S. Alexander Haslam; Stephen David Reicher; Kathryn Millard; Rachel I. McDonald
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2015; các năm Crossref ghi: 2014, 2015"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fbjso.12074
+  - id: n3
+    cau: "Tên: \"Happy to have been of service\": The Yale archive as a window into the engaged followership of participants in Milgram's \"obedience\" experiments"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "‘Happy to have been of service’: The Yale archive as a window into the engaged followership of participants in Milgram's ‘obedience’ experiments"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fbjso.12074
+  - id: n4
+    cau: "Nơi đăng: British Journal of Social Psychology, 54(1), 55–83"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: British Journal of Social Psychology, tập 54, số 1, trang 55-83
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): nơi đăng thiếu tập, số, trang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fbjso.12074
+  - id: n5
+    cau: DOI 10.1111/bjso.12074 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fbjso.12074

@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/woods2011#…
+ban_ghi: nguon/woods2011
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1080/13803395.2010.493149
+    link: https://api.crossref.org/works/10.1080%2F13803395.2010.493149
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1080/13803395.2010.493149
+    link: https://api.openalex.org/works/doi:10.1080%2F13803395.2010.493149
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Woods, D. L., Kishiyama, M. M., Yund, E. W., Herron, T. J., Edwards, B., Poliva, O., Hink, R. F., & Reed, B."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Woods, David L.; Kishiyama, Mark M.; Yund, E. William; Herron, Timothy J.; Edwards, Ben; Poliva, Oren; Hink, Robert F.; Reed, Bruce
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F13803395.2010.493149
+    luot_2_trich: David L. Woods; Mark M. Kishiyama; E. William Yund; Timothy J. Herron; Ben Edwards; Oren Poliva; Robert F. Hink; Bruce Reed
+  - id: n2
+    cau: "Năm xuất bản: 2011"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2011; các năm Crossref ghi: 2010, 2011"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1080/13803395.2010.493149 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2010, bản ghi 2011. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2011 (tập 33 số 1, tr. 101-111), trực tuyến 2011-01-01; tạp chí lúc đăng: Journal of clinical and experimental neuropsychology; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Improving digit span assessment of short-term verbal memory"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Improving digit span assessment of short-term verbal memory
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F13803395.2010.493149
+  - id: n4
+    cau: "Nơi đăng: Journal of Clinical and Experimental Neuropsychology, 33(1), 101–111"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Clinical and Experimental Neuropsychology, tập 33, số 1, trang 101-111
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F13803395.2010.493149
+  - id: n5
+    cau: DOI 10.1080/13803395.2010.493149 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F13803395.2010.493149

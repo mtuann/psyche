@@ -1,0 +1,85 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/wolraich1995#…
+ban_ghi: nguon/wolraich1995
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1001/jama.1995.03530200053037
+    link: https://api.crossref.org/works/10.1001%2Fjama.1995.03530200053037
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1001/jama.1995.03530200053037
+    link: https://api.openalex.org/works/doi:10.1001%2Fjama.1995.03530200053037
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Wolraich, M. L., Wilson, D. B., & White, J. W."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Wolraich, Mark L.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: &a1
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:"10.1001/jama.1995.03530200053037"
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1001/jama.1995.03530200053037
+    luot_2_ghi_chu: 'Crossref: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Wilson", nguồn ghi "(không có)"; OpenAlex: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Wilson", nguồn ghi "(không có)". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC (PMID 7474248): Wolraich ML, Wilson DB, White JW, đúng 3 tác giả theo thứ tự; JAMA 274(20), 1617-1621, 1995.'
+    luot_2_trich: Mark L. Wolraich
+  - id: n2
+    cau: "Năm xuất bản: 1995"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1995; các năm Crossref ghi: 1995"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1001%2Fjama.1995.03530200053037
+  - id: n3
+    cau: "Tên: The effect of sugar on behavior or cognition in children: A meta-analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The Effect of Sugar on Behavior or Cognition in Children: A Meta-analysis"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: *a1
+    luot_2_ghi_chu: 'OpenAlex: tên: nguồn ghi "The Effect of Sugar on Behavior or Cognition in Children", bản ghi "The effect of sugar on behavior or cognition in children: A meta-analysis". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC (PMID 7474248): Wolraich ML, Wilson DB, White JW, đúng 3 tác giả theo thứ tự; JAMA 274(20), 1617-1621, 1995.'
+  - id: n4
+    cau: "Nơi đăng: JAMA, 274(20), 1617–1621"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: JAMA, tập 274, số 20, trang 1617
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1001%2Fjama.1995.03530200053037
+  - id: n5
+    cau: DOI 10.1001/jama.1995.03530200053037 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1001%2Fjama.1995.03530200053037

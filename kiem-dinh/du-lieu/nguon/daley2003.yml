@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/daley2003#…
+ban_ghi: nguon/daley2003
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/1467-9280.02434
+    link: https://api.crossref.org/works/10.1111%2F1467-9280.02434
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/1467-9280.02434
+    link: https://api.openalex.org/works/doi:10.1111%2F1467-9280.02434
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Daley, T. C., Whaley, S. E., Sigman, M. D., Espinosa, M. P., & Neumann, C. G."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Daley, Tamara C.; Whaley, Shannon E.; Sigman, Marian D.; Espinosa, Michael P.; Neumann, Charlotte
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-9280.02434
+    luot_2_trich: Tamara Cohen Daley; Shannon E. Whaley; Marian Sigman; Michael Espinosa; Charlotte G. Neumann
+  - id: n2
+    cau: "Năm xuất bản: 2003"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2003; các năm Crossref ghi: 2003"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-9280.02434
+  - id: n3
+    cau: "Tên: IQ on the rise: The Flynn effect in rural Kenyan children"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "IQ on the Rise: The Flynn Effect in Rural Kenyan Children"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-9280.02434
+  - id: n4
+    cau: "Nơi đăng: Psychological Science, 14(3), 215–219"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Science, tập 14, số 3, trang 215-219
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-9280.02434
+  - id: n5
+    cau: DOI 10.1111/1467-9280.02434 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-9280.02434

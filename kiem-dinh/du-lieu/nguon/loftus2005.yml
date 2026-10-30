@@ -1,0 +1,91 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/loftus2005#…
+ban_ghi: nguon/loftus2005
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1101/lm.94705
+    link: https://api.crossref.org/works/10.1101%2Flm.94705
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1101/lm.94705
+    link: https://api.openalex.org/works/doi:10.1101%2Flm.94705
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Loftus, E. F."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Loftus, Elizabeth F.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1101%2Flm.94705
+    luot_2_trich: Elizabeth F. Loftus
+  - id: n2
+    cau: "Năm xuất bản: 2005"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2005; các năm Crossref ghi: 2005"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1101%2Flm.94705
+  - id: n3
+    cau: "Tên: Planting misinformation in the human mind: A 30-year investigation of the malleability of memory"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: |-
+      Planting misinformation in the human mind: A 30-year investigation of the malleability of memory: 
+            
+              Figure 1.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:"10.1101/lm.94705"
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1101/lm.94705
+    luot_2_ghi_chu: |-
+      Crossref: tên: nguồn ghi "Planting misinformation in the human mind: A 30-year investigation of the malleability of memory: 
+            
+              Figure 1.", bản ghi "Planting misinformation in the human mind: A 30-year investigation of the malleability of memory"; OpenAlex: tên: nguồn ghi "Planting misinformation in the human mind: A 30-year investigation of the malleability of memory: Figure 1.", bản ghi "Planting misinformation in the human mind: A 30-year investigation of the malleability of memory". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC (PMID 16027179): Loftus EF; Learning & Memory 12(4), 361-366, 2005; tên bài không có ": Figure 1." (đó là lỗi của Crossref), bản ghi đúng.
+  - id: n4
+    cau: "Nơi đăng: Learning & Memory, 12(4), 361–366"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Learning &amp; Memory, tập 12, số 4, trang 361-366
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1101%2Flm.94705
+  - id: n5
+    cau: DOI 10.1101/lm.94705 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1101%2Flm.94705

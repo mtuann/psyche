@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/matthews2002#…
+ban_ghi: nguon/matthews2002
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.7551/mitpress/2704.001.0001
+    link: https://api.crossref.org/works/10.7551%2Fmitpress%2F2704.001.0001
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.7551/mitpress/2704.001.0001
+    link: https://api.openalex.org/works/doi:10.7551%2Fmitpress%2F2704.001.0001
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Matthews, G., Zeidner, M., & Roberts, R. D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Matthews, Gerald; Zeidner, Moshe; Roberts, Richard D.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.7551%2Fmitpress%2F2704.001.0001
+    luot_2_trich: Gerald Matthews; Moshe Zeidner; Richard D. Roberts
+  - id: n2
+    cau: "Năm xuất bản: 2002"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2002; các năm Crossref ghi: 2002"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.7551%2Fmitpress%2F2704.001.0001
+  - id: n3
+    cau: "Tên: Emotional intelligence: Science and myth"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Emotional Intelligence: Science and Myth"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.7551%2Fmitpress%2F2704.001.0001
+  - id: n4
+    cau: "Nơi đăng: Cambridge, MA: MIT Press"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: (Crossref không ghi nơi đăng)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.7551%2Fmitpress%2F2704.001.0001
+  - id: n5
+    cau: DOI 10.7551/mitpress/2704.001.0001 trỏ tới tài liệu này, một sách
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: monograph"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.7551%2Fmitpress%2F2704.001.0001

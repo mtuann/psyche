@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/wagenmakers2016#…
+ban_ghi: nguon/wagenmakers2016
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/1745691616674458
+    link: https://api.crossref.org/works/10.1177%2F1745691616674458
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/1745691616674458
+    link: https://api.openalex.org/works/doi:10.1177%2F1745691616674458
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Wagenmakers, E.-J., et al."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Wagenmakers, E.-J.; Beek, T.; Dijkhoff, L.; Gronau, Q. F.; Acosta, A.; Adams, R. B.; Albohn, D. N.; Allard, E. S.; Benning, S. D.; Blouin-Hudon, E.-M.; Bulnes, L. C.; Caldwell, T. L.; Calin-Jageman, R. J.; Capaldi, C. A.; Carfagno, N. S.; Chasten, K. T.; Cleeremans, A.; Connell, L.; DeCicco, J. M.; Dijkstra, K.; Fischer, A. H.; Foroni, F.; Hess, U.; Holmes, K. J.; Jones, J. L. H.; Klein, O.; Koch, C.; Korb, S.; Lewinski, P.; Liao, J. D.; Lund, S.; Lupianez, J.; Lynott, D.; Nance, C. N.; Oosterwijk, S.; Ozdoğru, A. A.; Pacheco-Unguetti, A. P.; Pearson, B.; Powis, C.; Riding, S.; Roberts, T.-A.; Rumiati, R. I.; Senden, M.; Shea-Shumsky, N. B.; Sobocko, K.; Soto, J. A.; Steiner, T. G.; Talarico, J. M.; van Allen, Z. M.; Vandekerckhove, M.; Wainwright, B.; Wayand, J. F.; Zeelenberg, R.; Zetzer, E. E.; Zwaan, R. A.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691616674458
+    luot_2_trich: Eric‐Jan Wagenmakers; Titia F. Beek; L. Dijkhoff; Quentin F. Gronau; A. Acosta; Reginald B. Adams; D. N. Albohn; E. S. Allard; Stephen D. Benning; E.-M. Blouin-Hudon; L. C. Bulnes; T. L. Caldwell; Robert J Calin-Jageman; Colin Andrew Capaldi; N. S. Carfagno; K. T. Chasten; A. Cleeremans; Louise Connell; J. M. DeCicco; Katinka Dijkstra B; Agneta H. Fischer; Francesco Foroni; Ursula Heß; K. J. Holmes; J. L. H. Jones; Olivier Klein; C. Koch; Sebastian Korb; Peter Lewinski; J. D. Liao; S. Lund; J. Lupianez; Dermot Lynott; C. N. Nance; Suzanne Oosterwijk; Asil Ali Özdoğru; Antonia Pilar Pacheco‐Unguetti; B. Pearson; C. Powis; S. Riding; T.-A. Roberts; Raffaella  Ida Rumiati; M. Senden; N. B. Shea-Shumsky; K. Sobocko; J. A. Soto; T. G. Steiner; Jennifer M. Talarico; Zack van Allen; Marie M. P. Vandekerckhove; Bethany Rebecca Wainwright; Joseph F. Wayand; René Zeelenberg; Emily E. Zetzer; Rolf Antonius Zwaan
+  - id: n2
+    cau: "Năm xuất bản: 2016"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2016; các năm Crossref ghi: 2016"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691616674458
+  - id: n3
+    cau: "Tên: Registered Replication Report: Strack, Martin, & Stepper (1988)"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Registered Replication Report: Strack, Martin, &amp; Stepper (1988)"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691616674458
+  - id: n4
+    cau: "Nơi đăng: Perspectives on Psychological Science, 11(6), 917–928"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Perspectives on Psychological Science, tập 11, số 6, trang 917-928
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691616674458
+  - id: n5
+    cau: DOI 10.1177/1745691616674458 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691616674458

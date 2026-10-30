@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/baddeley1966b#…
+ban_ghi: nguon/baddeley1966b
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1080/14640746608400047
+    link: https://api.crossref.org/works/10.1080%2F14640746608400047
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1080/14640746608400047
+    link: https://api.openalex.org/works/doi:10.1080%2F14640746608400047
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Baddeley, A. D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Baddeley, A. D.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F14640746608400047
+    luot_2_trich: Alan Baddeley
+  - id: n2
+    cau: "Năm xuất bản: 1966b"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1966; các năm Crossref ghi: 1966"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F14640746608400047
+  - id: n3
+    cau: "Tên: The influence of acoustic and semantic similarity on long-term memory for word sequences"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The Influence of Acoustic and Semantic Similarity on Long-term Memory for Word Sequences
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F14640746608400047
+  - id: n4
+    cau: "Nơi đăng: Quarterly Journal of Experimental Psychology, 18(4), 302–309"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Quarterly Journal of Experimental Psychology, tập 18, số 4, trang 302-309
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F14640746608400047
+  - id: n5
+    cau: DOI 10.1080/14640746608400047 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F14640746608400047

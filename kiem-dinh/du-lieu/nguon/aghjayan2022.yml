@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/aghjayan2022#…
+ban_ghi: nguon/aghjayan2022
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/s43856-022-00079-7
+    link: https://api.crossref.org/works/10.1038%2Fs43856-022-00079-7
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/s43856-022-00079-7
+    link: https://api.openalex.org/works/doi:10.1038%2Fs43856-022-00079-7
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Aghjayan, S. L., Bournias, T., Kang, C., Zhou, X., Stillman, C. M., Donofry, S. D., Kamarck, T. W., Marsland, A. L., Voss, M. W., Fraundorf, S. D., & Erickson, K. I."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Aghjayan, Sarah L.; Bournias, Themistokles; Kang, Chaeryon; Zhou, Xueping; Stillman, Chelsea M.; Donofry, Shannon D.; Kamarck, Thomas W.; Marsland, Anna L.; Voss, Michelle W.; Fraundorf, Scott H.; Erickson, Kirk I.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs43856-022-00079-7
+    luot_2_trich: Sarah L. Aghjayan; Themistokles Bournias; Chaeryon Kang; Xueping Zhou; Chelsea M. Stillman; Shannon D. Donofry; Thomas W. Kamarck; Anna L. Marsland; Michelle W. Voss; Scott H. Fraundorf; Kirk I. Erickson
+  - id: n2
+    cau: "Năm xuất bản: 2022"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2022; các năm Crossref ghi: 2022"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs43856-022-00079-7
+  - id: n3
+    cau: "Tên: Aerobic exercise improves episodic memory in late adulthood: A systematic review and meta-analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Aerobic exercise improves episodic memory in late adulthood: a systematic review and meta-analysis"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs43856-022-00079-7
+  - id: n4
+    cau: "Nơi đăng: Communications Medicine, 2, 15"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Communications Medicine, tập 2, số 1, trang 15
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs43856-022-00079-7
+  - id: n5
+    cau: DOI 10.1038/s43856-022-00079-7 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs43856-022-00079-7

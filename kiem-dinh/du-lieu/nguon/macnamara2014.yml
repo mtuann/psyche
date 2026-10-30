@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/macnamara2014#…
+ban_ghi: nguon/macnamara2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/0956797614535810
+    link: https://api.crossref.org/works/10.1177%2F0956797614535810
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/0956797614535810
+    link: https://api.openalex.org/works/doi:10.1177%2F0956797614535810
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Macnamara, B. N., Hambrick, D. Z., & Oswald, F. L."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Macnamara, Brooke N.; Hambrick, David Z.; Oswald, Frederick L.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797614535810
+    luot_2_trich: Brooke N. Macnamara; David Zachary Hambrick; Frederick Louis Oswald
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2014; các năm Crossref ghi: 2014"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797614535810
+  - id: n3
+    cau: "Tên: Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797614535810
+  - id: n4
+    cau: "Nơi đăng: Psychological Science, 25(8), 1608–1618"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Science, tập 25, số 8, trang 1608-1618
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797614535810
+  - id: n5
+    cau: DOI 10.1177/0956797614535810 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797614535810

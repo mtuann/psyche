@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/groh2012#…
+ban_ghi: nguon/groh2012
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/j.1467-8624.2011.01711.x
+    link: https://api.crossref.org/works/10.1111%2Fj.1467-8624.2011.01711.x
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/j.1467-8624.2011.01711.x
+    link: https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.2011.01711.x
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Groh, A. M., Roisman, G. I., van IJzendoorn, M. H., Bakermans-Kranenburg, M. J., & Fearon, R. P."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Groh, Ashley M; Roisman, Glenn I; van IJzendoorn, Marinus H; Bakermans-Kranenburg, Marian J; Fearon, R Pasco
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tac-gia.yml): sai thứ tự tác giả thứ ba, thứ tư và thiếu tác giả thứ năm (Fearon)"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.2011.01711.x
+    luot_2_trich: Ashley M. Groh; Glenn I. Roisman; Marinus H. van IJzendoorn; Marian J. Bakermans‐Kranenburg; Pasco R. M. Fearon
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.2011.01711.x
+  - id: n3
+    cau: "Tên: The significance of insecure and disorganized attachment for children's internalizing symptoms: A meta-analytic study"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The Significance of Insecure and Disorganized Attachment for Children’s Internalizing Symptoms: A Meta-Analytic Study"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.2011.01711.x
+  - id: n4
+    cau: "Nơi đăng: Child Development, 83(2), 591–610"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Child Development, tập 83, số 2, trang 591-610
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.2011.01711.x
+  - id: n5
+    cau: DOI 10.1111/j.1467-8624.2011.01711.x trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.2011.01711.x

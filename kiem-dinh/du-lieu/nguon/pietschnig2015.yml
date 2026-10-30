@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/pietschnig2015#…
+ban_ghi: nguon/pietschnig2015
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/1745691615577701
+    link: https://api.crossref.org/works/10.1177%2F1745691615577701
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/1745691615577701
+    link: https://api.openalex.org/works/doi:10.1177%2F1745691615577701
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Pietschnig, J., & Voracek, M."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Pietschnig, Jakob; Voracek, Martin
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691615577701
+    luot_2_trich: Jakob Pietschnig; Martin Voracek
+  - id: n2
+    cau: "Năm xuất bản: 2015"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2015; các năm Crossref ghi: 2015"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691615577701
+  - id: n3
+    cau: "Tên: One century of global IQ gains: A formal meta-analysis of the Flynn effect (1909–2013)"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "One Century of Global IQ Gains: A Formal Meta-Analysis of the Flynn Effect (1909–2013)"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691615577701
+  - id: n4
+    cau: "Nơi đăng: Perspectives on Psychological Science, 10(3), 282–306"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Perspectives on Psychological Science, tập 10, số 3, trang 282-306
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691615577701
+  - id: n5
+    cau: DOI 10.1177/1745691615577701 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1745691615577701

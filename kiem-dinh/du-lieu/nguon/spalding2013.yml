@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/spalding2013#…
+ban_ghi: nguon/spalding2013
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.cell.2013.05.002
+    link: https://api.crossref.org/works/10.1016%2Fj.cell.2013.05.002
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.cell.2013.05.002
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.cell.2013.05.002
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Spalding, K. L., và cộng sự"
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Spalding, Kirsty L.; Bergmann, Olaf; Alkass, Kanar; Bernard, Samuel; Salehpour, Mehran; Huttner, Hagen B.; Boström, Emil; Westerlund, Isabelle; Vial, Céline; Buchholz, Bruce A.; Possnert, Göran; Mash, Deborah C.; Druid, Henrik; Frisén, Jonas
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cell.2013.05.002
+    luot_2_trich: Kirsty L. Spalding; Olaf Bergmann; Kanar Alkass; Samuel Bernard; Mehran Salehpour; Hagen B. Huttner; Emil Boström; Isabelle Westerlund; Céline Vial; Bruce A. Buchholz; Göran Possnert; Deborah C. Mash; Henrik Druid; Jonas Frisén
+  - id: n2
+    cau: "Năm xuất bản: 2013"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2013; các năm Crossref ghi: 2013"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cell.2013.05.002
+  - id: n3
+    cau: "Tên: Dynamics of hippocampal neurogenesis in adult humans"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Dynamics of Hippocampal Neurogenesis in Adult Humans
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cell.2013.05.002
+  - id: n4
+    cau: "Nơi đăng: Cell, 153(6), 1219–1227"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Cell, tập 153, số 6, trang 1219-1227
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cell.2013.05.002
+  - id: n5
+    cau: DOI 10.1016/j.cell.2013.05.002 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cell.2013.05.002

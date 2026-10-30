@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/tran2024#…
+ban_ghi: nguon/tran2024
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.2185/jrm.2024-012
+    link: https://api.crossref.org/works/10.2185%2Fjrm.2024-012
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.2185/jrm.2024-012
+    link: https://api.openalex.org/works/doi:10.2185%2Fjrm.2024-012
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Tran, T. V., Nguyen, H. T. L., Tran, X. M. T., Tashiro, Y., Seino, K., Vo, T. V., & Nakamura, K."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Tran, Thao Vi; Nguyen, Hoang Thuy Linh; Tran, Xuan Minh Tri; Tashiro, Yuri; Seino, Kaoruko; Van Vo, Thang; Nakamura, Keiko
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2185%2Fjrm.2024-012
+    luot_2_trich: Thao Vi Tran; Hoang Thuy Linh Nguyen; Xuan Minh Tri Tran; Yuri Tashiro; Kaoruko Seino; Thang Van Vo; Keiko Nakamura
+  - id: n2
+    cau: "Năm xuất bản: 2024"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2024; các năm Crossref ghi: 2024"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2185%2Fjrm.2024-012
+  - id: n3
+    cau: "Tên: Academic stress among students in Vietnam: A three-year longitudinal study on the impact of family, lifestyle, and academic factors"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Academic stress among students in Vietnam: a three-year longitudinal study on          the impact of family, lifestyle, and academic factors"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2185%2Fjrm.2024-012
+  - id: n4
+    cau: "Nơi đăng: Journal of Rural Medicine, 19(4), 279–290"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Rural Medicine, tập 19, số 4, trang 279-290
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2185%2Fjrm.2024-012
+  - id: n5
+    cau: DOI 10.2185/jrm.2024-012 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2185%2Fjrm.2024-012

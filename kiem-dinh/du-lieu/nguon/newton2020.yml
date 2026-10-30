@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/newton2020#…
+ban_ghi: nguon/newton2020
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.3389/feduc.2020.602451
+    link: https://api.crossref.org/works/10.3389%2Ffeduc.2020.602451
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.3389/feduc.2020.602451
+    link: https://api.openalex.org/works/doi:10.3389%2Ffeduc.2020.602451
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Newton, P. M., & Salvi, A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Newton, Philip M.; Salvi, Atharva
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffeduc.2020.602451
+    luot_2_trich: Philip Mark Newton; Atharva Salvi
+  - id: n2
+    cau: "Năm xuất bản: 2020"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2020; các năm Crossref ghi: 2020"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffeduc.2020.602451
+  - id: n3
+    cau: "Tên: How common is belief in the learning styles neuromyth, and does it matter? A pragmatic systematic review"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: How Common Is Belief in the Learning Styles Neuromyth, and Does It Matter? A Pragmatic Systematic Review
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffeduc.2020.602451
+  - id: n4
+    cau: "Nơi đăng: Frontiers in Education, 5, 602451"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Frontiers in Education, tập 5, trang 602451
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffeduc.2020.602451
+  - id: n5
+    cau: DOI 10.3389/feduc.2020.602451 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffeduc.2020.602451

@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/gould1979#…
+ban_ghi: nguon/gould1979
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1098/rspb.1979.0086
+    link: https://api.crossref.org/works/10.1098%2Frspb.1979.0086
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1098/rspb.1979.0086
+    link: https://api.openalex.org/works/doi:10.1098%2Frspb.1979.0086
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Gould, S. J., & Lewontin, R. C."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Gould, S. J.; Lewontin, R. C.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1098%2Frspb.1979.0086
+    luot_2_trich: Stephen Jay Gould; Richard C Lewontin
+  - id: n2
+    cau: "Năm xuất bản: 1979"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1979; các năm Crossref ghi: 1979"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1098%2Frspb.1979.0086
+  - id: n3
+    cau: "Tên: The spandrels of San Marco and the Panglossian paradigm: A critique of the adaptationist programme"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The spandrels of San Marco and the Panglossian paradigm: a critique of the adaptationist programme"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1098%2Frspb.1979.0086
+  - id: n4
+    cau: "Nơi đăng: Proceedings of the Royal Society of London. Series B, 205(1161), 581–598"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Proceedings of the Royal Society of London. Series B. Biological Sciences, tập 205, số 1161, trang 581-598
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1098/rspb.1979.0086 (REST api)
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Proceedings of the Royal Society B Biological Sciences", bản ghi "Proceedings of the Royal Society of London. Series B, 205(1161), 581–598". Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 1979 (tập 205 số 1161, tr. 581-598), trực tuyến 1979-09-01; tạp chí lúc đăng: Proceedings of the Royal Society of London. Series B, Biological sciences; tác giả đầu và tên bài khớp.'
+  - id: n5
+    cau: DOI 10.1098/rspb.1979.0086 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1098%2Frspb.1979.0086

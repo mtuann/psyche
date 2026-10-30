@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/hedge2018#…
+ban_ghi: nguon/hedge2018
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.3758/s13428-017-0935-1
+    link: https://api.crossref.org/works/10.3758%2Fs13428-017-0935-1
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.3758/s13428-017-0935-1
+    link: https://api.openalex.org/works/doi:10.3758%2Fs13428-017-0935-1
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Hedge, C., Powell, G., & Sumner, P."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Hedge, Craig; Powell, Georgina; Sumner, Petroc
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fs13428-017-0935-1
+    luot_2_trich: Craig Hedge; Georgina Powell; Petroc Sumner
+  - id: n2
+    cau: "Năm xuất bản: 2018"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2018; các năm Crossref ghi: 2017, 2018"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.3758/s13428-017-0935-1 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2017, bản ghi 2018. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2018 (tập 50 số 3, tr. 1166-1186), trực tuyến 2018-06-01; tạp chí lúc đăng: Behavior research methods; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: The reliability paradox: Why robust cognitive tasks do not produce reliable individual differences"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The reliability paradox: Why robust cognitive tasks do not produce reliable individual differences"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fs13428-017-0935-1
+  - id: n4
+    cau: "Nơi đăng: Behavior Research Methods, 50(3), 1166–1186"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Behavior Research Methods, tập 50, số 3, trang 1166-1186
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fs13428-017-0935-1
+  - id: n5
+    cau: DOI 10.3758/s13428-017-0935-1 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fs13428-017-0935-1

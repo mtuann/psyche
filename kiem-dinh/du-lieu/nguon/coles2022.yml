@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/coles2022#…
+ban_ghi: nguon/coles2022
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/s41562-022-01458-9
+    link: https://api.crossref.org/works/10.1038%2Fs41562-022-01458-9
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/s41562-022-01458-9
+    link: https://api.openalex.org/works/doi:10.1038%2Fs41562-022-01458-9
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Coles, N. A., et al."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Coles, Nicholas A.; March, David S.; Marmolejo-Ramos, Fernando; Larsen, Jeff T.; Arinze, Nwadiogo C.; Ndukaihe, Izuchukwu L. G.; Willis, Megan L.; Foroni, Francesco; Reggev, Niv; Mokady, Aviv; Forscher, Patrick S.; Hunter, John F.; Kaminski, Gwenaël; Yüvrük, Elif; Kapucu, Aycan; Nagy, Tamás; Hajdu, Nandor; Tejada, Julian; Freitag, Raquel M. K.; Zambrano, Danilo; Som, Bidisha; Aczel, Balazs; Barzykowski, Krystian; Adamus, Sylwia; Filip, Katarzyna; Yamada, Yuki; Ikeda, Ayumi; Eaves, Daniel L.; Levitan, Carmel A.; Leiweke, Sydney; Parzuchowski, Michal; Butcher, Natalie; Pfuhl, Gerit; Basnight-Brown, Dana M.; Hinojosa, José A.; Montoro, Pedro R.; Javela D, Lady G.; Vezirian, Kevin; IJzerman, Hans; Trujillo, Natalia; Pressman, Sarah D.; Gygax, Pascal M.; Özdoğru, Asil A.; Ruiz-Fernandez, Susana; Ellsworth, Phoebe C.; Gaertner, Lowell; Strack, Fritz; Marozzi, Marco; Liuzza, Marco Tullio
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-022-01458-9
+    luot_2_trich: Nicholas Alvaro Coles; David S. March; Fernando Marmolejo‐Ramos; Jeff T. Larsen; Nwadiogo Chisom Arinze; Izuchukwu L. G. Ndukaihe; Megan  L. Willis; Francesco Foroni; Niv Reggev; Aviv Mokady; Patrick S. Forscher; John F. Hunter; Gwenaël Kaminski; Elif Yüvrük; Aycan Kapucu; Tamás Nagy; Nándor Hajdú; Julián Tejada; Raquel Meister Ko. Freitag; Danilo Zambrano; Bidisha Som; Balázs Aczél; Krystian Barzykowski; Sylwia Adamus; Katarzyna Filip; Yuki Yamada; Ayumi Ikeda; Daniel Lloyd Eaves; Carmel Levitan; Sydney Leiweke; Michał Parzuchowski; Natalie L. Butcher; Gerit Pfuhl; Dana M. Basnight-Brown; José Antonio Hinojosa; Pedro R. Montoro; Lady Grey Javela; Kévin Vezirian; Hans IJzerman; Natalia Trujillo; Sarah D. Pressman; Pascal Mark Gygax; Asil Ali Özdoğru; Susana Ruiz Fernández; Phoebe C. Ellsworth; Lowell Gaertner; Fritz Strack; Marco Marozzi; Marco Tullio Liuzza
+  - id: n2
+    cau: "Năm xuất bản: 2022"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2022; các năm Crossref ghi: 2022"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-022-01458-9
+  - id: n3
+    cau: "Tên: A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-022-01458-9
+  - id: n4
+    cau: "Nơi đăng: Nature Human Behaviour, 6, 1731–1742"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Nature Human Behaviour, tập 6, số 12, trang 1731-1742
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-022-01458-9
+  - id: n5
+    cau: DOI 10.1038/s41562-022-01458-9 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-022-01458-9

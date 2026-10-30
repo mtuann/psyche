@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/doyen2012#…
+ban_ghi: nguon/doyen2012
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1371/journal.pone.0029081
+    link: https://api.crossref.org/works/10.1371%2Fjournal.pone.0029081
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1371/journal.pone.0029081
+    link: https://api.openalex.org/works/doi:10.1371%2Fjournal.pone.0029081
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Doyen, S., Klein, O., Pichon, C.-L., & Cleeremans, A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Doyen, Stéphane; Klein, Olivier; Pichon, Cora-Lise; Cleeremans, Axel
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pone.0029081
+    luot_2_trich: Stéphane Doyen; Olivier Klein; Cora-Lise Pichon; Axel Cleeremans
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pone.0029081
+  - id: n3
+    cau: "Tên: Behavioral priming: It's all in the mind, but whose mind?"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Behavioral Priming: It's All in the Mind, but Whose Mind?"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pone.0029081
+  - id: n4
+    cau: "Nơi đăng: PLoS ONE, 7(1), e29081"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: PLoS ONE, tập 7, số 1, trang e29081
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pone.0029081
+  - id: n5
+    cau: DOI 10.1371/journal.pone.0029081 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pone.0029081

@@ -1,0 +1,85 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/kawabata2008#…
+ban_ghi: nguon/kawabata2008
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.psychsport.2007.05.005
+    link: https://api.crossref.org/works/10.1016%2Fj.psychsport.2007.05.005
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.psychsport.2007.05.005
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.psychsport.2007.05.005
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Kawabata, M., Mallett, C. J., & Jackson, S. A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Kawabata, Masato; Mallett, Clifford J.; Jackson, Susan A.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: &a1
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.psychsport.2007.05.005
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.psychsport.2007.05.005
+    luot_2_ghi_chu: 'OpenAlex: tác giả: danh sách tác giả: tác giả thứ 1 của bản ghi là "Kawabata", nguồn ghi "雅人 川端". Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến. Danh sách tác giả: Kawabata, Mallett, Jackson (đủ 3, đúng thứ tự); tên Nhật của OpenAlex chỉ là cách ghi khác của Kawabata.'
+    luot_2_trich: 雅人 川端; Clifford J. Mallett; Susan A. Jackson
+  - id: n2
+    cau: "Năm xuất bản: 2008"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2008; các năm Crossref ghi: 2008"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: *a1
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2007, bản ghi 2008. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến. Danh sách tác giả: Kawabata, Mallett, Jackson (đủ 3, đúng thứ tự); tên Nhật của OpenAlex chỉ là cách ghi khác của Kawabata."
+  - id: n3
+    cau: "Tên: The Flow State Scale-2 and Dispositional Flow Scale-2: Examination of factorial validity and reliability for Japanese adults"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The Flow State Scale-2 and Dispositional Flow Scale-2: Examination of factorial validity and reliability for Japanese adults"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.psychsport.2007.05.005
+  - id: n4
+    cau: "Nơi đăng: Psychology of Sport and Exercise, 9, 465–485"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychology of Sport and Exercise, tập 9, số 4, trang 465-485
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.psychsport.2007.05.005
+  - id: n5
+    cau: DOI 10.1016/j.psychsport.2007.05.005 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.psychsport.2007.05.005

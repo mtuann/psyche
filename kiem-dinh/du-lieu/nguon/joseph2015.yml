@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/joseph2015#…
+ban_ghi: nguon/joseph2015
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/a0037681
+    link: https://api.crossref.org/works/10.1037%2Fa0037681
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/a0037681
+    link: https://api.openalex.org/works/doi:10.1037%2Fa0037681
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Joseph, D. L., Jin, J., Newman, D. A., & O'Boyle, E. H."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Joseph, Dana L.; Jin, Jing; Newman, Daniel A.; O'Boyle, Ernest H.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0037681
+    luot_2_trich: Dana L. Joseph; Jing Jin; Daniel A. Newman; Ernest H. O’Boyle
+  - id: n2
+    cau: "Năm xuất bản: 2015"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2015; các năm Crossref ghi: 2015"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1037/a0037681 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2014, bản ghi 2015. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2015 (tập 100 số 2, tr. 298-342), trực tuyến 2014-09-22; tạp chí lúc đăng: The Journal of applied psychology; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Why does self-reported emotional intelligence predict job performance? A meta-analytic investigation of mixed EI"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Why does self-reported emotional intelligence predict job performance? A meta-analytic investigation of mixed EI.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0037681
+  - id: n4
+    cau: "Nơi đăng: Journal of Applied Psychology, 100(2), 298–342"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Applied Psychology, tập 100, số 2, trang 298-342
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0037681
+  - id: n5
+    cau: DOI 10.1037/a0037681 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0037681

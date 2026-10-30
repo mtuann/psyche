@@ -380,3 +380,14 @@ test('dauVet đổi khi danh sách trang, bản build hay dữ liệu đổi (đ
 	await dungLaiKhiDoi({ load: async () => {} }).load({ meta, store: { clear: () => xoa++ } });
 	assert.equal(xoa, 1, 'dấu vết như cũ thì giữ bộ nhớ đệm');
 });
+
+test('bản ghi dữ liệu: câu về chính site chỉ ở cấu trúc của site (trang, lĩnh vực, trang nhà của nghiên cứu)', () => {
+	const vs = (truong) => ({ id: 'n1', cau: 'Câu.', loai: 've-site', truong, ghi_chu: 'đối chiếu anh-xa.md', review: 'dung', ket_qua: 'dung' });
+	const hs = (bg, ds) => ({ ban_ghi: bg, lan: [{ so: 1, ngay: null, nhanh: 'x', ma_bam: null, nguoi: NGUOI }], nguon: [], nhan_dinh: ds });
+	assert.deepEqual(loiHoSo(hs('trang/thi-nghiem/asch', [vs(['tang', 'linh_vuc'])]), 'du-lieu/trang/thi-nghiem/asch', ROOT), []);
+	assert.deepEqual(loiHoSo(hs('linh-vuc/tri-nho', [vs(['ten', 'thu_tu'])]), 'du-lieu/linh-vuc/tri-nho', ROOT), []);
+	assert.match(loiHoSo(hs('linh-vuc/tri-nho', [vs(['mo_ta'])]), 'du-lieu/linh-vuc/tri-nho', ROOT).join(), /không có câu về chính site/);
+	assert.deepEqual(loiHoSo(hs('nghien-cuu/asch1956', [vs(['trang_nha'])]), 'du-lieu/nghien-cuu/asch1956', ROOT), []);
+	assert.match(loiHoSo(hs('nghien-cuu/asch1956', [vs(['nguon'])]), 'du-lieu/nghien-cuu/asch1956', ROOT).join(), /không có câu về chính site/);
+	assert.match(loiHoSo(hs('nguon/asch1956', [vs(['ten'])]), 'du-lieu/nguon/asch1956', ROOT).join(), /không có câu về chính site/);
+});

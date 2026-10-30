@@ -48,6 +48,15 @@ export const MAU_MO_RONG = 8;
 const LUON_KIEM = ['nhan', 'lam-sang'];
 /** Câu nói về chính site (loai ve-site): review kiểm trên trang và dữ liệu, không qua lượt 2. */
 const VE_SITE = 've-site';
+/** Trường của bản ghi dữ liệu được ghi là câu về chính site: cấu trúc của site, không phải điều về tâm lý học. */
+const VE_SITE_BO = { trang: null, 'linh-vuc': ['ten', 'thu_tu', 'mau', 'bieu_tuong'], 'nghien-cuu': ['trang_nha'] };
+const VE_SITE_DU_LIEU = 'bộ trang; tên, thứ tự, màu, biểu tượng của lĩnh vực; trang nhà của nghiên cứu';
+const veSiteDuoc = (bg, truong) => {
+	const bo = bg.split('/')[0];
+	if (!(bo in VE_SITE_BO)) return false;
+	return VE_SITE_BO[bo] === null || (Array.isArray(truong) && truong.length > 0 && truong.every((t) => VE_SITE_BO[bo].includes(t)));
+};
+
 /** Mức kiểm định theo tầng (chuan-kiem-dinh.md mục 3), ghi vào hồ sơ mẫu. */
 const MUC = { loi: 'V3', 'mo-rong': 'V2', 'cong-cu': 'V3', 'co-han': 'V3', 'cap-nhat': 'V3', khung: null, 'du-lieu': null };
 
@@ -172,7 +181,10 @@ export function loiHoSo(hs, muc, goc, { khiKhoa = false } = {}) {
 		// câu về chính site: review kiểm trên trang, thành phần hay dữ liệu đã khóa và ghi kết quả (review); ghi_chu ghi đã
 		// kiểm ở đâu. Không qua lượt 2, nên không cho dùng để né lượt 2: không có ở bản ghi dữ liệu, không kèm nguồn ngoài
 		if (n.loai === VE_SITE) {
-			if (bg) loi.push(`${ten}: bản ghi dữ liệu không có câu về chính site (mọi điều trong dữ liệu cần nguồn)`);
+			// bản ghi dữ liệu: chỉ cấu trúc của site là câu về chính site (tầng, lĩnh vực của trang; tên, thứ tự, màu của lĩnh
+			// vực; trang nhà của nghiên cứu), đối chiếu với bản đồ Nền tảng đã duyệt (plans/ben-vung/README.md mục 3, anh-xa.md);
+			// mọi điều khác trong dữ liệu cần nguồn
+			if (bg && !veSiteDuoc(bg, n.truong)) loi.push(`${ten}: bản ghi dữ liệu không có câu về chính site, trừ cấu trúc của site (${VE_SITE_DU_LIEU})`);
 			if (n.nguon?.length) loi.push(`${ten}: câu về chính site không ghi nguồn ngoài; có điều cần nguồn ngoài thì xếp loại khác (qua lượt 2)`);
 			if (!n.ghi_chu) loi.push(`${ten}: câu về chính site cần ghi_chu ghi đã kiểm trên trang, thành phần hay dữ liệu nào`);
 			if (!['dung', 'sai'].includes(n.review)) loi.push(`${ten}: câu về chính site cần kết quả review (review: dung hay sai)`);

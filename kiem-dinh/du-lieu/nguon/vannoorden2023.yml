@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/vannoorden2023#…
+ban_ghi: nguon/vannoorden2023
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/d41586-023-03974-8
+    link: https://api.crossref.org/works/10.1038%2Fd41586-023-03974-8
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/d41586-023-03974-8
+    link: https://api.openalex.org/works/doi:10.1038%2Fd41586-023-03974-8
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Van Noorden, R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Van Noorden, Richard
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fd41586-023-03974-8
+    luot_2_trich: Richard Van Noorden
+  - id: n2
+    cau: "Năm xuất bản: 2023"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fd41586-023-03974-8
+  - id: n3
+    cau: "Tên: More than 10,000 research papers were retracted in 2023 — a new record"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: More than 10,000 research papers were retracted in 2023 — a new record
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fd41586-023-03974-8
+  - id: n4
+    cau: "Nơi đăng: Nature, 624, 479–481"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Nature, tập 624, số 7992, trang 479-481
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fd41586-023-03974-8
+  - id: n5
+    cau: DOI 10.1038/d41586-023-03974-8 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fd41586-023-03974-8

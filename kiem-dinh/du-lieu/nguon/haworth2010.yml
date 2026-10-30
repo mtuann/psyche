@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/haworth2010#…
+ban_ghi: nguon/haworth2010
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/mp.2009.55
+    link: https://api.crossref.org/works/10.1038%2Fmp.2009.55
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/mp.2009.55
+    link: https://api.openalex.org/works/doi:10.1038%2Fmp.2009.55
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Haworth, C. M. A., Wright, M. J., Luciano, M., Martin, N. G., de Geus, E. J. C., van Beijsterveldt, C. E. M., Bartels, M., Posthuma, D., Boomsma, D. I., Davis, O. S. P., Kovas, Y., Corley, R. P., DeFries, J. C., Hewitt, J. K., Olson, R. K., Rhea, S.-A., Wadsworth, S. J., Iacono, W. G., McGue, M., Thompson, L. A., Hart, S. A., Petrill, S. A., Lubinski, D., & Plomin, R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Haworth, C M A; Wright, M J; Luciano, M; Martin, N G; de Geus, E J C; van Beijsterveldt, C E M; Bartels, M; Posthuma, D; Boomsma, D I; Davis, O S P; Kovas, Y; Corley, R P; DeFries, J C; Hewitt, J K; Olson, R K; Rhea, S-A; Wadsworth, S J; Iacono, W G; McGue, M; Thompson, L A; Hart, S A; Petrill, S A; Lubinski, D; Plomin, R
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fmp.2009.55
+    luot_2_trich: Claire M. A. Haworth; Margaret J. Wright; Michelle Luciano A; Nicholas G. Martin; Eco J. C. de Geus; C E M van Beijsterveldt; Meike Bartels; Danielle Posthuma B; Dorret Irene Boomsma; Oliver S. P. Davis; Yulia V. Kovas; Robin P. Corley; J. C. DeFries; John K. Hewitt; Richard K. Olson; S-A Rhea; Sally J. Wadsworth; William G. Iacono; Matthew McGue; Lee A. Thompson; Sara Ann Hart; Stephen A. Petrill; David Lubinski; Robert J. Plomin
+  - id: n2
+    cau: "Năm xuất bản: 2010"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2010; các năm Crossref ghi: 2009, 2010"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1038/mp.2009.55 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2009, bản ghi 2010. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2010 (tập 15 số 11, tr. 1112-1120), trực tuyến 2009-06-02; tạp chí lúc đăng: Molecular psychiatry; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: The heritability of general cognitive ability increases linearly from childhood to young adulthood"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The heritability of general cognitive ability increases linearly from childhood to young adulthood
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fmp.2009.55
+  - id: n4
+    cau: "Nơi đăng: Molecular Psychiatry, 15(11), 1112–1120"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Molecular Psychiatry, tập 15, số 11, trang 1112-1120
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fmp.2009.55
+  - id: n5
+    cau: DOI 10.1038/mp.2009.55 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fmp.2009.55

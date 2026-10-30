@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/stigler1986#…
+ban_ghi: nguon/stigler1986
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/0010-0277(86)90051-X
+    link: https://api.crossref.org/works/10.1016%2F0010-0277(86)90051-X
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/0010-0277(86)90051-X
+    link: https://api.openalex.org/works/doi:10.1016%2F0010-0277(86)90051-X
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Stigler, J. W., Lee, S.-Y., & Stevenson, H. W."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Stigler, James W.; Lee, Shin-Ying; Stevenson, Harold W.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2F0010-0277(86)90051-X
+    luot_2_trich: James W. Stigler; Shin-Ying Lee; Harold W. Stevenson
+  - id: n2
+    cau: "Năm xuất bản: 1986"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1986; các năm Crossref ghi: 1986"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2F0010-0277(86)90051-X
+  - id: n3
+    cau: "Tên: Digit memory in Chinese and English: Evidence for a temporally limited store"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Digit memory in Chinese and English: Evidence for a temporally limited store"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2F0010-0277(86)90051-X
+  - id: n4
+    cau: "Nơi đăng: Cognition, 23(1), 1–20"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Cognition, tập 23, số 1, trang 1-20
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2F0010-0277(86)90051-X
+  - id: n5
+    cau: DOI 10.1016/0010-0277(86)90051-X trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2F0010-0277(86)90051-X

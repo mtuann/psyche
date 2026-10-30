@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/tversky1983#…
+ban_ghi: nguon/tversky1983
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/0033-295X.90.4.293
+    link: https://api.crossref.org/works/10.1037%2F0033-295X.90.4.293
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/0033-295X.90.4.293
+    link: https://api.openalex.org/works/doi:10.1037%2F0033-295X.90.4.293
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Tversky, A., & Kahneman, D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Tversky, Amos; Kahneman, Daniel
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295X.90.4.293
+    luot_2_trich: Amos Tversky; Daniel J. Kahneman
+  - id: n2
+    cau: "Năm xuất bản: 1983"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1983; các năm Crossref ghi: 1983"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295X.90.4.293
+  - id: n3
+    cau: "Tên: Extensional versus intuitive reasoning: The conjunction fallacy in probability judgment"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Extensional versus intuitive reasoning: The conjunction fallacy in probability judgment."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295X.90.4.293
+  - id: n4
+    cau: "Nơi đăng: Psychological Review, 90(4), 293–315"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Review, tập 90, số 4, trang 293-315
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295X.90.4.293
+  - id: n5
+    cau: DOI 10.1037/0033-295X.90.4.293 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295X.90.4.293

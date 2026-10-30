@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/zhang2025#…
+ban_ghi: nguon/zhang2025
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.ijchp.2025.100559
+    link: https://api.crossref.org/works/10.1016%2Fj.ijchp.2025.100559
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.ijchp.2025.100559
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.ijchp.2025.100559
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Zhang, M., Fang, W., & Wang, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Zhang, Mingyang; Fang, Wangfan; Wang, Jiahong
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ijchp.2025.100559
+    luot_2_trich: Mingyang Zhang; Wangfan Fang; Jiahong Wang
+  - id: n2
+    cau: "Năm xuất bản: 2025"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2025; các năm Crossref ghi: 2025"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ijchp.2025.100559
+  - id: n3
+    cau: "Tên: Effects of human concurrent aerobic and resistance training on cognitive health: A systematic review with meta-analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Effects of human concurrent aerobic and resistance training on cognitive health: A systematic review with meta-analysis"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ijchp.2025.100559
+  - id: n4
+    cau: "Nơi đăng: International Journal of Clinical and Health Psychology, 25(1), 100559"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: International Journal of Clinical and Health Psychology, tập 25, số 1, trang 100559
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ijchp.2025.100559
+  - id: n5
+    cau: DOI 10.1016/j.ijchp.2025.100559 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ijchp.2025.100559

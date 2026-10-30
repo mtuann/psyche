@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/depaulo2003#…
+ban_ghi: nguon/depaulo2003
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/0033-2909.129.1.74
+    link: https://api.crossref.org/works/10.1037%2F0033-2909.129.1.74
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/0033-2909.129.1.74
+    link: https://api.openalex.org/works/doi:10.1037%2F0033-2909.129.1.74
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: DePaulo, B. M., et al."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: DePaulo, Bella M.; Lindsay, James J.; Malone, Brian E.; Muhlenbruck, Laura; Charlton, Kelly; Cooper, Harris
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.129.1.74
+    luot_2_trich: Bella M. DePaulo; James J. Lindsay; Brian E. Malone; Laura Muhlenbruck; Kelly Charlton; Harris Cooper
+  - id: n2
+    cau: "Năm xuất bản: 2003"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2003; các năm Crossref ghi: 2003"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.129.1.74
+  - id: n3
+    cau: "Tên: Cues to deception"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Cues to deception.
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.129.1.74
+  - id: n4
+    cau: "Nơi đăng: Psychological Bulletin, 129(1), 74–118"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Bulletin, tập 129, số 1, trang 74-118
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.129.1.74
+  - id: n5
+    cau: DOI 10.1037/0033-2909.129.1.74 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7): tách phần nơi đăng sang noi_dang"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.129.1.74

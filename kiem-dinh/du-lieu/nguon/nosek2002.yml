@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/nosek2002#…
+ban_ghi: nguon/nosek2002
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/1089-2699.6.1.101
+    link: https://api.crossref.org/works/10.1037%2F1089-2699.6.1.101
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/1089-2699.6.1.101
+    link: https://api.openalex.org/works/doi:10.1037%2F1089-2699.6.1.101
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Nosek, B. A., Banaji, M. R., & Greenwald, A. G."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Nosek, Brian A.; Banaji, Mahzarin R.; Greenwald, Anthony G.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1089-2699.6.1.101
+    luot_2_trich: Brian A. Nosek; Mahzarin R. Banaji; Anthony G. Greenwald
+  - id: n2
+    cau: "Năm xuất bản: 2002"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2002; các năm Crossref ghi: 2002"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1089-2699.6.1.101
+  - id: n3
+    cau: "Tên: Harvesting implicit group attitudes and beliefs from a demonstration web site"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Harvesting implicit group attitudes and beliefs from a demonstration web site.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1089-2699.6.1.101
+  - id: n4
+    cau: "Nơi đăng: Group Dynamics: Theory, Research, and Practice, 6(1), 101–115"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: "Group Dynamics: Theory, Research, and Practice, tập 6, số 1, trang 101-115"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1089-2699.6.1.101
+  - id: n5
+    cau: DOI 10.1037/1089-2699.6.1.101 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1089-2699.6.1.101

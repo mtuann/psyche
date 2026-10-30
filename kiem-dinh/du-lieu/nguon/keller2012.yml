@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/keller2012#…
+ban_ghi: nguon/keller2012
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/a0026743
+    link: https://api.crossref.org/works/10.1037%2Fa0026743
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/a0026743
+    link: https://api.openalex.org/works/doi:10.1037%2Fa0026743
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Keller, A., Litzelman, K., Wisk, L. E., Maddox, T., Cheng, E. R., Creswell, P. D., & Witt, W. P."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Keller, Abiola; Litzelman, Kristin; Wisk, Lauren E.; Maddox, Torsheika; Cheng, Erika Rose; Creswell, Paul D.; Witt, Whitney P.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0026743
+    luot_2_trich: Abiola O. Keller; Kristin Litzelman; Lauren E. Wisk; Torsheika Maddox; Erika Rose Cheng; Paul D. Creswell; Whitney Perkins Witt
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1037/a0026743 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2011, bản ghi 2012. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2012 (tập 31 số 5, tr. 677-684), trực tuyến 2011-12-26; tạp chí lúc đăng: Health psychology : official journal of the Division of Health Psychology, American Psychological Association; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Does the perception that stress affects health matter? The association with health and mortality"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Does the perception that stress affects health matter? The association with health and mortality.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0026743
+  - id: n4
+    cau: "Nơi đăng: Health Psychology, 31(5), 677–684"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Health Psychology, tập 31, số 5, trang 677-684
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0026743
+  - id: n5
+    cau: DOI 10.1037/a0026743 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0026743

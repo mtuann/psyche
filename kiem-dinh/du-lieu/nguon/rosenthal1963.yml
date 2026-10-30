@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/rosenthal1963#…
+ban_ghi: nguon/rosenthal1963
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1002/bs.3830080302
+    link: https://api.crossref.org/works/10.1002%2Fbs.3830080302
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1002/bs.3830080302
+    link: https://api.openalex.org/works/doi:10.1002%2Fbs.3830080302
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Rosenthal, R., & Fode, K. L."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Rosenthal, Robert; Fode, Kermit L.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fbs.3830080302
+    luot_2_trich: Robert Rosenthal; Kermit L. Fode
+  - id: n2
+    cau: "Năm xuất bản: 1963"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2007; các năm Crossref ghi: 2007"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: &a1
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1002/bs.3830080302
+    luot_2_ghi_chu: "Crossref: năm: nguồn ghi 2007, bản ghi 1963; OpenAlex: năm: nguồn ghi 2007, bản ghi 1963. Người kiểm lượt 2 mở trang nhà xuất bản: Semantic Scholar: Behavioral Science tập 8, tr. 183-189 = 1963; năm 2007 là năm số hóa Wiley; tên tạp chí lúc đăng là Behavioral Science (nay Systems Research and Behavioral Science), bản ghi đúng."
+  - id: n3
+    cau: "Tên: The effect of experimenter bias on the performance of the albino rat"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The effect of experimenter bias on the performance of the albino rat
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fbs.3830080302
+  - id: n4
+    cau: "Nơi đăng: Behavioral Science, 8(3), 183–189"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Behavioral Science, tập 8, số 3, trang 183-189
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: *a1
+    luot_2_ghi_chu: 'OpenAlex: tạp chí: nguồn ghi "Systems Research and Behavioral Science", bản ghi "Behavioral Science, 8(3), 183–189". Người kiểm lượt 2 mở trang nhà xuất bản: Semantic Scholar: Behavioral Science tập 8, tr. 183-189 = 1963; năm 2007 là năm số hóa Wiley; tên tạp chí lúc đăng là Behavioral Science (nay Systems Research and Behavioral Science), bản ghi đúng.'
+  - id: n5
+    cau: DOI 10.1002/bs.3830080302 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fbs.3830080302

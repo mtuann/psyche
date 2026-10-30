@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/hiller2023#…
+ban_ghi: nguon/hiller2023
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.intell.2023.101732
+    link: https://api.crossref.org/works/10.1016%2Fj.intell.2023.101732
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.intell.2023.101732
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.intell.2023.101732
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Hiller, A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Hiller, Avram
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2023.101732
+    luot_2_trich: Avram Hiller
+  - id: n2
+    cau: "Năm xuất bản: 2023"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2023.101732
+  - id: n3
+    cau: 'Tên: Comment on Gignac and Zajenkowski, "The Dunning-Kruger effect is (mostly) a statistical artefact: Valid approaches to testing the hypothesis with individual differences data"'
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Comment on Gignac and Zajenkowski, “The Dunning-Kruger effect is (mostly) a statistical artefact: Valid approaches to testing the hypothesis with individual differences data”"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-tach-ten.yml): tên bài thiếu phần sau của tên bài được bình luận"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2023.101732
+  - id: n4
+    cau: "Nơi đăng: Intelligence, 97, 101732"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Intelligence, tập 97, trang 101732
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2023.101732
+  - id: n5
+    cau: DOI 10.1016/j.intell.2023.101732 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.intell.2023.101732

@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/ritchie2018#…
+ban_ghi: nguon/ritchie2018
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/0956797618774253
+    link: https://api.crossref.org/works/10.1177%2F0956797618774253
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/0956797618774253
+    link: https://api.openalex.org/works/doi:10.1177%2F0956797618774253
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Ritchie, S. J., & Tucker-Drob, E. M."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Ritchie, Stuart J.; Tucker-Drob, Elliot M.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797618774253
+    luot_2_trich: Stuart James Ritchie; Elliot M. Tucker–Drob
+  - id: n2
+    cau: "Năm xuất bản: 2018"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2018; các năm Crossref ghi: 2018"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797618774253
+  - id: n3
+    cau: "Tên: How much does education improve intelligence? A meta-analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: How Much Does Education Improve Intelligence? A Meta-Analysis
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797618774253
+  - id: n4
+    cau: "Nơi đăng: Psychological Science, 29(8), 1358–1369"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Science, tập 29, số 8, trang 1358-1369
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797618774253
+  - id: n5
+    cau: DOI 10.1177/0956797618774253 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0956797618774253

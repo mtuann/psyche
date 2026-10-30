@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/bushman2002#…
+ban_ghi: nguon/bushman2002
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/0146167202289002
+    link: https://api.crossref.org/works/10.1177%2F0146167202289002
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/0146167202289002
+    link: https://api.openalex.org/works/doi:10.1177%2F0146167202289002
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Bushman, B. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Bushman, Brad J.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167202289002
+    luot_2_trich: Brad J. Bushman
+  - id: n2
+    cau: "Năm xuất bản: 2002"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2002; các năm Crossref ghi: 2002"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167202289002
+  - id: n3
+    cau: "Tên: Does venting anger feed or extinguish the flame? Catharsis, rumination, distraction, anger, and aggressive responding"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Does Venting Anger Feed or Extinguish the Flame? Catharsis, Rumination, Distraction, Anger, and Aggressive Responding
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, trang; thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167202289002
+  - id: n4
+    cau: "Nơi đăng: Personality and Social Psychology Bulletin, 28(6), 724–731"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Personality and Social Psychology Bulletin, tập 28, số 6, trang 724-731
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, trang; thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167202289002
+  - id: n5
+    cau: DOI 10.1177/0146167202289002 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, trang; thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167202289002

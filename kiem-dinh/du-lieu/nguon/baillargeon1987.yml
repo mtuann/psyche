@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/baillargeon1987#…
+ban_ghi: nguon/baillargeon1987
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/0012-1649.23.5.655
+    link: https://api.crossref.org/works/10.1037%2F0012-1649.23.5.655
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/0012-1649.23.5.655
+    link: https://api.openalex.org/works/doi:10.1037%2F0012-1649.23.5.655
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Baillargeon, R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Baillargeon, Renée
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0012-1649.23.5.655
+    luot_2_trich: Renée Baillargeon B
+  - id: n2
+    cau: "Năm xuất bản: 1987"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1987; các năm Crossref ghi: 1987"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0012-1649.23.5.655
+  - id: n3
+    cau: "Tên: Object permanence in 3½- and 4½-month-old infants"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Object permanence in 3½- and 4½-month-old infants.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0012-1649.23.5.655
+  - id: n4
+    cau: "Nơi đăng: Developmental Psychology, 23(5), 655–664"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Developmental Psychology, tập 23, số 5, trang 655-664
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0012-1649.23.5.655
+  - id: n5
+    cau: DOI 10.1037/0012-1649.23.5.655 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0012-1649.23.5.655

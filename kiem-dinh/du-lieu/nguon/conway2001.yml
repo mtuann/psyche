@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/conway2001#…
+ban_ghi: nguon/conway2001
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.3758/BF03196169
+    link: https://api.crossref.org/works/10.3758%2FBF03196169
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.3758/BF03196169
+    link: https://api.openalex.org/works/doi:10.3758%2FBF03196169
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Conway, A. R. A., Cowan, N., & Bunting, M. F."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Conway, Andrew R. A.; Cowan, Nelson; Bunting, Michael F.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2FBF03196169
+    luot_2_trich: Andrew R. A. Conway; Nelson Cowan; Michael F. Bunting
+  - id: n2
+    cau: "Năm xuất bản: 2001"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2001; các năm Crossref ghi: 2001"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2FBF03196169
+  - id: n3
+    cau: "Tên: The cocktail party phenomenon revisited: The importance of working memory capacity"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The cocktail party phenomenon revisited: The importance of working memory capacity"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2FBF03196169
+  - id: n4
+    cau: "Nơi đăng: Psychonomic Bulletin & Review, 8(2), 331–335"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychonomic Bulletin &amp; Review, tập 8, số 2, trang 331-335
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2FBF03196169
+  - id: n5
+    cau: DOI 10.3758/BF03196169 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2FBF03196169

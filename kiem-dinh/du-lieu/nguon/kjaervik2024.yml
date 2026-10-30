@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/kjaervik2024#…
+ban_ghi: nguon/kjaervik2024
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.cpr.2024.102414
+    link: https://api.crossref.org/works/10.1016%2Fj.cpr.2024.102414
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.cpr.2024.102414
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.cpr.2024.102414
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Kjærvik, S. L., & Bushman, B. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Kjærvik, Sophie L.; Bushman, Brad J.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cpr.2024.102414
+    luot_2_trich: Sophie L. Kjærvik; Brad J. Bushman
+  - id: n2
+    cau: "Năm xuất bản: 2024"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2024; các năm Crossref ghi: 2024"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cpr.2024.102414
+  - id: n3
+    cau: "Tên: A meta-analytic review of anger management activities that increase or decrease arousal: What fuels or douses rage?"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "A meta-analytic review of anger management activities that increase or decrease arousal: What fuels or douses rage?"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, số bài; thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cpr.2024.102414
+  - id: n4
+    cau: "Nơi đăng: Clinical Psychology Review, 109, 102414"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Clinical Psychology Review, tập 109, trang 102414
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, số bài; thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cpr.2024.102414
+  - id: n5
+    cau: DOI 10.1016/j.cpr.2024.102414 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, số bài; thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.cpr.2024.102414

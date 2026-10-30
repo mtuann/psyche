@@ -1,0 +1,87 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/bridgman2019#…
+ban_ghi: nguon/bridgman2019
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.5465/amle.2017.0351
+    link: https://api.crossref.org/works/10.5465%2Famle.2017.0351
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.5465/amle.2017.0351
+    link: https://api.openalex.org/works/doi:10.5465%2Famle.2017.0351
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Bridgman, T., Cummings, S., & Ballard, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Bridgman, Todd; Cummings, Stephen; Ballard, John
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.5465%2Famle.2017.0351
+    luot_2_trich: Todd Nicholas Bridgman; Stephen Paul Cummings; John Ballard
+  - id: n2
+    cau: "Năm xuất bản: 2019"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2019; các năm Crossref ghi: 2019"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.5465/amle.2017.0351
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
+  - id: n3
+    cau: "Tên: Who built Maslow's pyramid? A history of the creation of management studies' most famous symbol and its implications for management education"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Who Built Maslow’s Pyramid? A History of the Creation of Management Studies’ Most Famous Symbol and Its Implications for Management Education
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7); thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.5465%2Famle.2017.0351
+  - id: n4
+    cau: "Nơi đăng: Academy of Management Learning & Education, 18(1), 81–98"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Academy of Management Learning &amp; Education, tập 18, số 1, trang 81-98
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7); thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.5465%2Famle.2017.0351
+  - id: n5
+    cau: DOI 10.5465/amle.2017.0351 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài lẫn tên tạp chí, tập, trang (báo cáo D1.2, việc cho D2-0 mục 7); thiếu phụ đề"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.5465%2Famle.2017.0351

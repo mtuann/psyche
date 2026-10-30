@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/golinkoff2019#…
+ban_ghi: nguon/golinkoff2019
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/cdev.13128
+    link: https://api.crossref.org/works/10.1111%2Fcdev.13128
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/cdev.13128
+    link: https://api.openalex.org/works/doi:10.1111%2Fcdev.13128
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Golinkoff, R. M., Hoff, E., Rowe, M. L., Tamis-LeMonda, C. S., & Hirsh-Pasek, K."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Golinkoff, Roberta Michnick; Hoff, Erika; Rowe, Meredith L; Tamis-LeMonda, Catherine S; Hirsh-Pasek, Kathy
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.13128
+    luot_2_trich: Roberta Michnick Golinkoff; Erika Hoff; Meredith L. Rowe; Catherine S. Tamis‐LeMonda; Kathy Hirsh‐Pasek
+  - id: n2
+    cau: "Năm xuất bản: 2019"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2019; các năm Crossref ghi: 2019"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1111/cdev.13128 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2019 (tập 90 số 3, tr. 985-992), trực tuyến 2018-08-13; tạp chí lúc đăng: Child development; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Language matters: Denying the existence of the 30-million-word gap has serious consequences"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Language Matters: Denying the Existence of the 30-Million-Word Gap Has Serious Consequences"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.13128
+  - id: n4
+    cau: "Nơi đăng: Child Development, 90(3), 985–992"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Child Development, tập 90, số 3, trang 985-992
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.13128
+  - id: n5
+    cau: DOI 10.1111/cdev.13128 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.13128

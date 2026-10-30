@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/hyman2010#…
+ban_ghi: nguon/hyman2010
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1002/acp.1638
+    link: https://api.crossref.org/works/10.1002%2Facp.1638
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1002/acp.1638
+    link: https://api.openalex.org/works/doi:10.1002%2Facp.1638
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Hyman, I. E., Boss, S. M., Wise, B. M., McKenzie, K. E., & Caggiano, J. M."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Hyman, Ira E.; Boss, S. Matthew; Wise, Breanne M.; McKenzie, Kira E.; Caggiano, Jenna M.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Facp.1638
+    luot_2_trich: Ira E. Hyman; S. Matthew Boss; Breanne M. Wise-Swanson; Kira E. McKenzie; Jenna M. Caggiano
+  - id: n2
+    cau: "Năm xuất bản: 2010"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2010; các năm Crossref ghi: 2010"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1002/acp.1638
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2009, bản ghi 2010. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
+  - id: n3
+    cau: "Tên: Did you see the unicycling clown? Inattentional blindness while walking and talking on a cell phone"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Did you see the unicycling clown? Inattentional blindness while walking and talking on a cell phone
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Facp.1638
+  - id: n4
+    cau: "Nơi đăng: Applied Cognitive Psychology, 24(5), 597–607"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Applied Cognitive Psychology, tập 24, số 5, trang 597-607
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Facp.1638
+  - id: n5
+    cau: DOI 10.1002/acp.1638 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Facp.1638

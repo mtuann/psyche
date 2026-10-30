@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/meeus2012#…
+ban_ghi: nguon/meeus2012
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1007/s10964-011-9730-y
+    link: https://api.crossref.org/works/10.1007%2Fs10964-011-9730-y
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1007/s10964-011-9730-y
+    link: https://api.openalex.org/works/doi:10.1007%2Fs10964-011-9730-y
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Meeus, W., van de Schoot, R., Keijsers, L., & Branje, S."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Meeus, Wim; van de Schoot, Rens; Keijsers, Loes; Branje, Susan
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10964-011-9730-y
+    luot_2_trich: Wim Meeus; Rens van de Schoot; Loes Keijsers; Susan Branje
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2011, 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1007/s10964-011-9730-y (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2011, bản ghi 2012. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2012 (tập 41 số 8, tr. 1008-1021), trực tuyến 2011-11-17; tạp chí lúc đăng: Journal of youth and adolescence; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Identity statuses as developmental trajectories: A five-wave longitudinal study in early-to-middle and middle-to-late adolescents"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Identity Statuses as Developmental Trajectories: A Five-Wave Longitudinal Study in Early-to-Middle and Middle-to-Late Adolescents"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10964-011-9730-y
+  - id: n4
+    cau: "Nơi đăng: Journal of Youth and Adolescence, 41(8), 1008–1021"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Youth and Adolescence, tập 41, số 8, trang 1008-1021
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10964-011-9730-y
+  - id: n5
+    cau: DOI 10.1007/s10964-011-9730-y trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10964-011-9730-y

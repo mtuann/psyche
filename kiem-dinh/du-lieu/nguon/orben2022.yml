@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/orben2022#…
+ban_ghi: nguon/orben2022
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/s41467-022-29296-3
+    link: https://api.crossref.org/works/10.1038%2Fs41467-022-29296-3
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/s41467-022-29296-3
+    link: https://api.openalex.org/works/doi:10.1038%2Fs41467-022-29296-3
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Orben, A., Przybylski, A. K., Blakemore, S.-J., & Kievit, R. A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Orben, Amy; Przybylski, Andrew K.; Blakemore, Sarah-Jayne; Kievit, Rogier A.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41467-022-29296-3
+    luot_2_trich: Amy C. Orben; Andrew K Przybylski; Sarah‐Jayne Blakemore; Rogier Kievit
+  - id: n2
+    cau: "Năm xuất bản: 2022"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2022; các năm Crossref ghi: 2022"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41467-022-29296-3
+  - id: n3
+    cau: "Tên: Windows of developmental sensitivity to social media"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Windows of developmental sensitivity to social media
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41467-022-29296-3
+  - id: n4
+    cau: "Nơi đăng: Nature Communications, 13, 1649"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Nature Communications, tập 13, số 1, trang 1649
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41467-022-29296-3
+  - id: n5
+    cau: DOI 10.1038/s41467-022-29296-3 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41467-022-29296-3

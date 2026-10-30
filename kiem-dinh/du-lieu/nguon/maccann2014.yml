@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/maccann2014#…
+ban_ghi: nguon/maccann2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/a0034755
+    link: https://api.crossref.org/works/10.1037%2Fa0034755
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/a0034755
+    link: https://api.openalex.org/works/doi:10.1037%2Fa0034755
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: MacCann, C., Joseph, D. L., Newman, D. A., & Roberts, R. D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: MacCann, Carolyn; Joseph, Dana L.; Newman, Daniel A.; Roberts, Richard D.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0034755
+    luot_2_trich: Carolyn MacCann; Dana L. Joseph; Daniel A. Newman; Richard D. Roberts
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2014; các năm Crossref ghi: 2014"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1037/a0034755 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2013, bản ghi 2014. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2014 (tập 14 số 2, tr. 358-374), trực tuyến 2013-12-16; tạp chí lúc đăng: Emotion (Washington, D.C.); tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Emotional intelligence is a second-stratum factor of intelligence: Evidence from hierarchical and bifactor models"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Emotional intelligence is a second-stratum factor of intelligence: Evidence from hierarchical and bifactor models."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0034755
+  - id: n4
+    cau: "Nơi đăng: Emotion, 14, 358–374"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Emotion, tập 14, số 2, trang 358-374
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0034755
+  - id: n5
+    cau: DOI 10.1037/a0034755 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0034755

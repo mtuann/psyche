@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/flynn1984#…
+ban_ghi: nguon/flynn1984
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/0033-2909.95.1.29
+    link: https://api.crossref.org/works/10.1037%2F0033-2909.95.1.29
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/0033-2909.95.1.29
+    link: https://api.openalex.org/works/doi:10.1037%2F0033-2909.95.1.29
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Flynn, J. R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Flynn, James R.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.95.1.29
+    luot_2_trich: James R. Flynn
+  - id: n2
+    cau: "Năm xuất bản: 1984"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1984; các năm Crossref ghi: 1984"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.95.1.29
+  - id: n3
+    cau: "Tên: The mean IQ of Americans: Massive gains 1932 to 1978"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The mean IQ of Americans: Massive gains 1932 to 1978."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.95.1.29
+  - id: n4
+    cau: "Nơi đăng: Psychological Bulletin, 95(1), 29–51"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Bulletin, tập 95, số 1, trang 29-51
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.95.1.29
+  - id: n5
+    cau: DOI 10.1037/0033-2909.95.1.29 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-2909.95.1.29

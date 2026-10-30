@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/berridge1998#…
+ban_ghi: nguon/berridge1998
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/S0165-0173(98)00019-8
+    link: https://api.crossref.org/works/10.1016%2FS0165-0173(98)00019-8
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/S0165-0173(98)00019-8
+    link: https://api.openalex.org/works/doi:10.1016%2FS0165-0173(98)00019-8
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Berridge, K. C., & Robinson, T. E."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Berridge, Kent C; Robinson, Terry E
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2FS0165-0173(98)00019-8
+    luot_2_trich: Kent C. Berridge; Terry E. Robinson
+  - id: n2
+    cau: "Năm xuất bản: 1998"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1998; các năm Crossref ghi: 1998"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2FS0165-0173(98)00019-8
+  - id: n3
+    cau: "Tên: What is the role of dopamine in reward: Hedonic impact, reward learning, or incentive salience?"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "What is the role of dopamine in reward: hedonic impact, reward learning, or incentive salience?"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2FS0165-0173(98)00019-8
+  - id: n4
+    cau: "Nơi đăng: Brain Research Reviews, 28(3), 309–369"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Brain Research Reviews, tập 28, số 3, trang 309-369
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2FS0165-0173(98)00019-8
+  - id: n5
+    cau: DOI 10.1016/S0165-0173(98)00019-8 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2FS0165-0173(98)00019-8

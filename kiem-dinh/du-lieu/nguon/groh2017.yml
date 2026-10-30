@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/groh2017#…
+ban_ghi: nguon/groh2017
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/cdev.12677
+    link: https://api.crossref.org/works/10.1111%2Fcdev.12677
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/cdev.12677
+    link: https://api.openalex.org/works/doi:10.1111%2Fcdev.12677
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Groh, A. M., Narayan, A. J., Bakermans-Kranenburg, M. J., Roisman, G. I., Vaughn, B. E., Fearon, R. M. P., & van IJzendoorn, M. H."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Groh, Ashley M; Narayan, Angela J; Bakermans-Kranenburg, Marian J; Roisman, Glenn I; Vaughn, Brian E; Fearon, R M Pasco; van IJzendoorn, Marinus H
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.12677
+    luot_2_trich: Ashley M. Groh; Angela J. Narayan; Marian J. Bakermans‐Kranenburg; Glenn I. Roisman; Brian E. Vaughn; Pasco R. M. Fearon; Marinus H. van IJzendoorn
+  - id: n2
+    cau: "Năm xuất bản: 2017"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2017; các năm Crossref ghi: 2017"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1111/cdev.12677 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2016, bản ghi 2017. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2017 (tập 88 số 3, tr. 770-795), trực tuyến 2016-11-21; tạp chí lúc đăng: Child development; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: Attachment and temperament in the early life course: A meta-analytic review"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Attachment and Temperament in the Early Life Course: A Meta-Analytic Review"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.12677
+  - id: n4
+    cau: "Nơi đăng: Child Development, 88(3), 770–795"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Child Development, tập 88, số 3, trang 770-795
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.12677
+  - id: n5
+    cau: DOI 10.1111/cdev.12677 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.12677

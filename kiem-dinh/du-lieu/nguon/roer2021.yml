@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/roer2021#…
+ban_ghi: nguon/roer2021
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/xlm0000874
+    link: https://api.crossref.org/works/10.1037%2Fxlm0000874
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/xlm0000874
+    link: https://api.openalex.org/works/doi:10.1037%2Fxlm0000874
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Röer, J. P., & Cowan, N."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Röer, Jan Philipp; Cowan, Nelson
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fxlm0000874
+    luot_2_trich: Jan Philipp Röer; Nelson Cowan
+  - id: n2
+    cau: "Năm xuất bản: 2021"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2021; các năm Crossref ghi: 2021"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1037/xlm0000874 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2020, bản ghi 2021. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2021 (tập 47 số 2, tr. 234-242), trực tuyến 2020-08-24; tạp chí lúc đăng: Journal of experimental psychology. Learning, memory, and cognition; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: A preregistered replication and extension of the cocktail party phenomenon: One's name captures attention, unexpected words do not"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "A preregistered replication and extension of the cocktail party phenomenon: One’s name captures attention, unexpected words do not."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fxlm0000874
+  - id: n4
+    cau: "Nơi đăng: Journal of Experimental Psychology: Learning, Memory, and Cognition, 47(2), 234–242"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: "Journal of Experimental Psychology: Learning, Memory, and Cognition, tập 47, số 2, trang 234-242"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fxlm0000874
+  - id: n5
+    cau: DOI 10.1037/xlm0000874 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fxlm0000874

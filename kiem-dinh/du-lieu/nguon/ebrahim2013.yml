@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/ebrahim2013#…
+ban_ghi: nguon/ebrahim2013
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/acer.12006
+    link: https://api.crossref.org/works/10.1111%2Facer.12006
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/acer.12006
+    link: https://api.openalex.org/works/doi:10.1111%2Facer.12006
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Ebrahim, I. O., và cộng sự"
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Ebrahim, Irshaad O.; Shapiro, Colin M.; Williams, Adrian J.; Fenwick, Peter B.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Facer.12006
+    luot_2_trich: Irshaad Osman Ebrahim; Colin M. Shapiro; Adrian J. Williams; Peter B. C. Fenwick
+  - id: n2
+    cau: "Năm xuất bản: 2013"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2013; các năm Crossref ghi: 2013"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Facer.12006
+  - id: n3
+    cau: "Tên: Alcohol and sleep I: Effects on normal sleep"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Alcohol and Sleep I: Effects on Normal Sleep"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt, lẫn tên tạp chí viết tắt (báo cáo D1.2, việc cho D2-0 mục 3)"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Facer.12006
+  - id: n4
+    cau: "Nơi đăng: Alcoholism: Clinical and Experimental Research, 37(4), 539–549"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: "Alcoholism: Clinical and Experimental Research, tập 37, số 4"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt, lẫn tên tạp chí viết tắt (báo cáo D1.2, việc cho D2-0 mục 3)"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Facer.12006
+  - id: n5
+    cau: DOI 10.1111/acer.12006 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    ghi_chu: "đã sửa theo Crossref (sua-doi.yml): tên bài ghi bằng lời mô tả tiếng Việt, lẫn tên tạp chí viết tắt (báo cáo D1.2, việc cho D2-0 mục 3)"
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Facer.12006

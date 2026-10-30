@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/bertrand2004#…
+ban_ghi: nguon/bertrand2004
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1257/0002828042002561
+    link: https://api.crossref.org/works/10.1257%2F0002828042002561
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1257/0002828042002561
+    link: https://api.openalex.org/works/doi:10.1257%2F0002828042002561
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Bertrand, M., & Mullainathan, S."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Bertrand, Marianne; Mullainathan, Sendhil
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1257%2F0002828042002561
+    luot_2_trich: Marianne Bertrand; Sendhil Mullainathan
+  - id: n2
+    cau: "Năm xuất bản: 2004"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2004; các năm Crossref ghi: 2004"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1257%2F0002828042002561
+  - id: n3
+    cau: "Tên: Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1257%2F0002828042002561
+  - id: n4
+    cau: "Nơi đăng: American Economic Review, 94(4), 991–1013"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: American Economic Review, tập 94, số 4, trang 991-1013
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1257%2F0002828042002561
+  - id: n5
+    cau: DOI 10.1257/0002828042002561 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1257%2F0002828042002561

@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/jack2012#…
+ban_ghi: nguon/jack2012
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1073/pnas.1200155109
+    link: https://api.crossref.org/works/10.1073%2Fpnas.1200155109
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1073/pnas.1200155109
+    link: https://api.openalex.org/works/doi:10.1073%2Fpnas.1200155109
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Jack, R. E., Garrod, O. G. B., Yu, H., Caldara, R., & Schyns, P. G."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Jack, Rachael E.; Garrod, Oliver G. B.; Yu, Hui; Caldara, Roberto; Schyns, Philippe G.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1073%2Fpnas.1200155109
+    luot_2_trich: Rachael Elizabeth Jack; Oliver Garrod; Hui Ling Yu; Roberto Caldara; Philippe G. Schyns
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1073%2Fpnas.1200155109
+  - id: n3
+    cau: "Tên: Facial expressions of emotion are not culturally universal"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Facial expressions of emotion are not culturally universal
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1073%2Fpnas.1200155109
+  - id: n4
+    cau: "Nơi đăng: Proceedings of the National Academy of Sciences, 109(19), 7241–7244"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Proceedings of the National Academy of Sciences, tập 109, số 19, trang 7241-7244
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1073%2Fpnas.1200155109
+  - id: n5
+    cau: DOI 10.1073/pnas.1200155109 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1073%2Fpnas.1200155109

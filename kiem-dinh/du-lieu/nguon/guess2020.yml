@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/guess2020#…
+ban_ghi: nguon/guess2020
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1017/S0007123418000327
+    link: https://api.crossref.org/works/10.1017%2FS0007123418000327
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1017/S0007123418000327
+    link: https://api.openalex.org/works/doi:10.1017%2FS0007123418000327
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Guess, A., & Coppock, A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Guess, Andrew; Coppock, Alexander
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2FS0007123418000327
+    luot_2_trich: Andrew M. Guess; Alexander Coppock
+  - id: n2
+    cau: "Năm xuất bản: 2020"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2020; các năm Crossref ghi: 2018, 2020"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1017/S0007123418000327
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2018, bản ghi 2020. Người kiểm lượt 2 mở trang nhà xuất bản: Trang Cambridge: in 2020/10 (tập 50 số 4, tr. 1497-1515), trực tuyến 2018/11/05; tên, tác giả đầu khớp."
+  - id: n3
+    cau: "Tên: Does counter-attitudinal information cause backlash? Results from three large survey experiments"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2FS0007123418000327
+  - id: n4
+    cau: "Nơi đăng: British Journal of Political Science, 50(4), 1497–1515"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: British Journal of Political Science, tập 50, số 4, trang 1497-1515
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2FS0007123418000327
+  - id: n5
+    cau: DOI 10.1017/S0007123418000327 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2FS0007123418000327

@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/gaffney2019#…
+ban_ghi: nguon/gaffney2019
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.avb.2018.07.001
+    link: https://api.crossref.org/works/10.1016%2Fj.avb.2018.07.001
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.avb.2018.07.001
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.avb.2018.07.001
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Gaffney, H., Ttofi, M. M., & Farrington, D. P."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Gaffney, Hannah; Ttofi, Maria M.; Farrington, David P.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.avb.2018.07.001
+    luot_2_trich: Hannah Gaffney; Maria M. Ttofi; David P. Farrington
+  - id: n2
+    cau: "Năm xuất bản: 2019"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2019; các năm Crossref ghi: 2019"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.avb.2018.07.001
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2018, bản ghi 2019. Người kiểm lượt 2 mở trang nhà xuất bản: Nhà xuất bản chặn bot (403/chuyển hướng). Semantic Scholar: tập và trang khớp, tên bài và tác giả đầu khớp; năm tập khớp bản ghi (tập ↔ năm); năm nguồn máy sớm hơn là năm đăng trực tuyến."
+  - id: n3
+    cau: "Tên: Evaluating the effectiveness of school-bullying prevention programs: An updated meta-analytical review"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Evaluating the effectiveness of school-bullying prevention programs: An updated meta-analytical review"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.avb.2018.07.001
+  - id: n4
+    cau: "Nơi đăng: Aggression and Violent Behavior, 45, 111–133"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Aggression and Violent Behavior, tập 45, trang 111-133
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.avb.2018.07.001
+  - id: n5
+    cau: DOI 10.1016/j.avb.2018.07.001 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.avb.2018.07.001

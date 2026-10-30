@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/voss2014#…
+ban_ghi: nguon/voss2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/nn.3719
+    link: https://api.crossref.org/works/10.1038%2Fnn.3719
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/nn.3719
+    link: https://api.openalex.org/works/doi:10.1038%2Fnn.3719
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Voss, U., Holzmann, R., Hobson, J. A., Paulus, W., Koppehele-Gossel, J., Klimke, A., & Nitsche, M. A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Voss, Ursula; Holzmann, Romain; Hobson, Allan; Paulus, Walter; Koppehele-Gossel, Judith; Klimke, Ansgar; Nitsche, Michael A
+    ket_qua: da-sua
+    ghi_chu: 'đã sửa theo Crossref (sua-tac-gia.yml): danh sách tác giả sai (có "Tuin", thiếu Paulus, Koppehele-Gossel, Klimke, Nitsche; Hobson là tác giả thứ ba). Hobson ghi J. A. (J. Allan Hobson), Crossref chỉ ghi tên gọi Allan'
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fnn.3719
+    luot_2_trich: Ursula Voss; Romain Holzmann; Allan J. Hobson; Walter Paulus; Judith Koppehele‐Gossel; Ansgar Klimke; Michael Andreas Nitsche
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2014; các năm Crossref ghi: 2014"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fnn.3719
+  - id: n3
+    cau: "Tên: Induction of self awareness in dreams through frontal low current stimulation of gamma activity"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Induction of self awareness in dreams through frontal low current stimulation of gamma activity
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fnn.3719
+  - id: n4
+    cau: "Nơi đăng: Nature Neuroscience, 17, 810–812"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Nature Neuroscience, tập 17, số 6, trang 810-812
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fnn.3719
+  - id: n5
+    cau: DOI 10.1038/nn.3719 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fnn.3719

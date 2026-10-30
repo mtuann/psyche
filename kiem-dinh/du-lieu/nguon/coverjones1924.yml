@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/coverjones1924#…
+ban_ghi: nguon/coverjones1924
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1080/08856559.1924.9944851
+    link: https://api.crossref.org/works/10.1080%2F08856559.1924.9944851
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1080/08856559.1924.9944851
+    link: https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Cover Jones, M."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Jones, Mary Cover
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
+    luot_2_trich: Mary Coverjo Nes
+  - id: n2
+    cau: "Năm xuất bản: 1924"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1924; các năm Crossref ghi: 1924, 2010"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
+  - id: n3
+    cau: "Tên: A laboratory study of fear: The case of Peter"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "A Laboratory Study of Fear: The Case Of Peter"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
+  - id: n4
+    cau: "Nơi đăng: Pedagogical Seminary, 31(4), 308–315"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: The Pedagogical Seminary and Journal of Genetic Psychology, tập 31, số 4, trang 308-315
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851
+  - id: n5
+    cau: DOI 10.1080/08856559.1924.9944851 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F08856559.1924.9944851

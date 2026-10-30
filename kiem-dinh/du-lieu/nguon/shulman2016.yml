@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (D2-0, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/shulman2016#…
+ban_ghi: nguon/shulman2016
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 xem và sửa chỗ lệch
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) mở trang nhà xuất bản ở chỗ lệch
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.dcn.2015.12.010
+    link: https://api.crossref.org/works/10.1016%2Fj.dcn.2015.12.010
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.dcn.2015.12.010
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.dcn.2015.12.010
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Shulman, E. P., Smith, A. R., Silva, K., Icenogle, G., Duell, N., Chein, J., & Steinberg, L."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Shulman, Elizabeth P.; Smith, Ashley R.; Silva, Karol; Icenogle, Grace; Duell, Natasha; Chein, Jason; Steinberg, Laurence
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.dcn.2015.12.010
+    luot_2_trich: Elizabeth P. Shulman; Ashley R. Smith; Karol Silva; Grace Icenogle; Natasha Duell; Jason M. Chein; Laurence D. Steinberg
+  - id: n2
+    cau: "Năm xuất bản: 2016"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2016; các năm Crossref ghi: 2016"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/search?query=DOI:10.1016/j.dcn.2015.12.010 (REST api)
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2015, bản ghi 2016. Người kiểm lượt 2 mở trang nhà xuất bản: Europe PMC: in 2016 (tập 17 số None, tr. 103-117), trực tuyến 2015-12-29; tạp chí lúc đăng: Developmental cognitive neuroscience; tác giả đầu và tên bài khớp."
+  - id: n3
+    cau: "Tên: The dual systems model: Review, reappraisal, and reaffirmation"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The dual systems model: Review, reappraisal, and reaffirmation"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.dcn.2015.12.010
+  - id: n4
+    cau: "Nơi đăng: Developmental Cognitive Neuroscience, 17, 103–117"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Developmental Cognitive Neuroscience, tập 17, trang 103-117
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.dcn.2015.12.010
+  - id: n5
+    cau: DOI 10.1016/j.dcn.2015.12.010 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.dcn.2015.12.010
