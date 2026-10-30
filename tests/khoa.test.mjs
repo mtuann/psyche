@@ -203,6 +203,16 @@ test('khóa bản ghi dữ liệu, cả bản ghi hay từng trường; sửa tr
 		assert.deepEqual(kiemKhoa(goc), []);
 		ghi('src/data/nguon.yml', '- id: asch1956\n  loai: bai-bao\n  tac_gia: Asch, S.\n  nam: 1956\n  ten: Studies\n');
 		assert.match(kiemKhoa(goc).join(), /bản ghi nguon\/asch1956#nam,tac_gia đã khóa mà đã đổi/);
+		// khóa từng phần cũ đã lệch thì không khóa thêm che đi; khóa cả bản ghi rồi thì không khóa đè
+		assert.throws(() => chay('khoa', 'du-lieu/nguon/asch1956#ten'), /đã lệch/);
+		ghi('src/data/nguon.yml', '- id: asch1956\n  loai: bai-bao\n  tac_gia: Asch, S. E.\n  nam: 1956\n  ten: Studies\n');
+		chay('mau', 'du-lieu/nguon/asch1956');
+		const hs2 = parse(fs.readFileSync(f, 'utf8'));
+		hs2.lan.at(-1).nguoi = NGUOI;
+		fs.writeFileSync(f, stringify(hs2));
+		chay('khoa', 'du-lieu/nguon/asch1956');
+		assert.ok(docKhoa(goc).ban_ghi['nguon/asch1956'] && !docKhoa(goc).ban_ghi['nguon/asch1956#nam,tac_gia'], 'khóa cả bản ghi thay khóa từng phần');
+		assert.throws(() => chay('khoa', 'du-lieu/nguon/asch1956#ten'), /đã khóa cả bản ghi/);
 	} finally {
 		xoa();
 	}
@@ -257,14 +267,19 @@ test('bản build: trang chưa khóa có dải "Chưa kiểm định" (chỉ ở
 test('review D1.6: qua-manh là kết quả lượt 2; câu về chính site review sai; tới hạn; lõi không có nhận định; Sức khỏe tâm thần mọi tầng', () => {
 	const { goc, ghi, xoa } = banChep();
 	try {
-		ghi('src/data/trang.yml', '- id: thi-nghiem/a\n  tang: loi\n  linh_vuc: tam-ly-xa-hoi\n- id: kham-pha/suc-khoe-tam-than/b\n  tang: mo-rong\n  linh_vuc: suc-khoe-tam-than\n  dua_tren: [thi-nghiem/a]\n  kiem_lai_truoc: 2028-01\n');
+		ghi('src/data/trang.yml', '- id: thi-nghiem/a\n  tang: loi\n  linh_vuc: tam-ly-xa-hoi\n- id: kham-pha/suc-khoe-tam-than/b\n  tang: mo-rong\n  linh_vuc: suc-khoe-tam-than\n  dua_tren: [thi-nghiem/a]\n  kiem_lai_truoc: 2028-01\n- id: ho-tro/index\n  tang: co-han\n  linh_vuc: suc-khoe-tam-than\n');
+		ghi('src/content/docs/ho-tro/index.md', '---\ntitle: H\n---\n\nChữ.\n');
+		// trang Hỗ trợ cùng lĩnh vực nhưng không phải bài Sức khỏe tâm thần: không cần chữ ký chuyên gia
+		assert.deepEqual(loiHoSo(hoSo('ho-tro/index', 'co-han', [nd()]), 'ho-tro/index', goc), []);
 		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\nChữ.\n');
 		ghi('src/content/docs/kham-pha/suc-khoe-tam-than/b.md', '---\ntitle: B\n---\n\nChữ.\n');
 		const loi = (ds, them) => loiHoSo(hoSo('thi-nghiem/a', 'loi', ds, them), 'thi-nghiem/a', goc).join('\n');
 		assert.equal(loi([nd({ luot_2: 'qua-manh', ket_qua: 'da-lam-mem', ghi_chu: 'viết lại' })]), '');
 		assert.match(loi([nd({ luot_2: 'qua-manh' })]), /lượt 2 cho "qua-manh" mà kết quả "dung": ghi_chu/);
 		assert.match(loi([nd({ loai: 've-site', luot_2: null, nguon: [], ghi_chu: 'x', review: 'sai' })]), /review ghi sai mà kết quả dung/);
-		assert.match(loi([nd({ loai: 'thoi-su', het_han: '2020-01-01' })]), /đã tới hạn/);
+		// tới hạn: chặn lúc khóa, không chặn mục đã khóa (máy canh báo)
+		assert.match(loiHoSo(hoSo('thi-nghiem/a', 'loi', [nd({ loai: 'thoi-su', het_han: '2020-01-01' })]), 'thi-nghiem/a', goc, { khiKhoa: true }).join(), /đã tới hạn/);
+		assert.equal(loi([nd({ loai: 'thoi-su', het_han: '2020-01-01' })]), '');
 		assert.equal(loi([nd({ loai: 'thoi-su', het_han: '2099-01-01' })]), '');
 		// trang lõi không được khóa với 0 nhận định, kể cả khi có ghi_chu
 		assert.match(loi([], { ghi_chu: 'không có gì' }), /trang tầng loi cần ít nhất một nhận định/);

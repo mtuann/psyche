@@ -31,7 +31,7 @@ import { randomInt } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse, parseDocument, stringify } from 'yaml';
-import { NHAN, schema } from '../src/du-lieu.mjs';
+import { NHAN, loaiTrang, schema } from '../src/du-lieu.mjs';
 import { GOC, chuanKhoaBanGhi, docBanGhi, docKhoa, fileTrang, maBamKhoaBanGhi, maBamTrang, tachKhoaBanGhi } from '../src/khoa.mjs';
 import { CONG_CU, THU_MUC_HINH } from '../src/plugins/thanh-phan.mjs';
 
@@ -122,7 +122,7 @@ function chuaChuyenTrong(noiDung, goc) {
  * khẳng định thời sự có hạn. Riêng trang: tầng khớp trang.yml; trang Sức khỏe tâm thần có chữ ký chuyên gia; bài mở rộng
  * có dua_tren và hạn xem lại; không còn ô "chưa chuyển"; không có khoảng trắng cuối dòng.
  */
-export function loiHoSo(hs, muc, goc) {
+export function loiHoSo(hs, muc, goc, { khiKhoa = false } = {}) {
 	const loi = [];
 	const bg = laBanGhi(muc) && tachKhoaBanGhi(laBanGhi(muc)).banGhi;
 	if (bg ? hs.ban_ghi !== bg : hs.trang !== `src/content/docs/${muc}.md`)
@@ -133,8 +133,9 @@ export function loiHoSo(hs, muc, goc) {
 	const rec = bg ? undefined : banGhiTrang(muc, goc);
 	const tang = rec?.tang ?? null;
 	if (!bg && (hs.tang ?? null) !== tang) loi.push(`hồ sơ ghi tang: ${hs.tang ?? null} mà src/data/trang.yml ghi ${tang}: sửa tang trong hồ sơ`);
-	// mọi trang thuộc lĩnh vực Sức khỏe tâm thần có nhận định (lõi hay mở rộng; không tính trang lĩnh vực, trang khung)
-	if (rec?.linh_vuc === 'suc-khoe-tam-than' && tang !== 'khung' && tang !== 'du-lieu' && !hs.lan?.at(-1)?.nguoi?.chuyen_gia)
+	// bài Sức khỏe tâm thần (kham-pha/suc-khoe-tam-than/, loaiTrang) ở mọi tầng; trang Hỗ trợ, trang lĩnh vực cùng lĩnh vực thì
+	// không (Hỗ trợ kiểm số liên hệ ở nguồn chính thức, chuan-kiem-dinh.md mục 3)
+	if (loaiTrang(muc) === 'suc-khoe' && !hs.lan?.at(-1)?.nguoi?.chuyen_gia)
 		loi.push('trang Sức khỏe tâm thần: chỉ khóa khi chuyên gia đã đọc (lần kiểm định cuối: nguoi.chuyen_gia, tên và ngày; plans/ben-vung/chuan-kiem-dinh.md mục 5)');
 	if (tang === 'mo-rong') {
 		if (!rec.dua_tren?.length) loi.push('bài mở rộng: src/data/trang.yml chưa có dua_tren (các bài lõi mà bài này dựa trên)');
@@ -166,7 +167,8 @@ export function loiHoSo(hs, muc, goc) {
 			if (!n.ly_do) loi.push(`${ten}: nhãn cần ly_do`);
 		}
 		if (n.loai === 'thoi-su' && !/^\d{4}-\d{2}-\d{2}$/.test(String(n.het_han ?? ''))) loi.push(`${ten}: khẳng định thời sự cần het_han (năm-tháng-ngày)`);
-		else if (n.loai === 'thoi-su' && String(n.het_han) <= homNay()) loi.push(`${ten}: khẳng định thời sự đã tới hạn (het_han ${n.het_han}): kiểm lại rồi đặt hạn mới`);
+		// tới hạn chỉ chặn lúc khóa; mục đã khóa mà tới hạn thì máy canh báo (đợt 9), không làm hỏng deploy (review D1.6)
+		else if (khiKhoa && n.loai === 'thoi-su' && String(n.het_han) <= homNay()) loi.push(`${ten}: khẳng định thời sự đã tới hạn (het_han ${n.het_han}): kiểm lại rồi đặt hạn mới`);
 		// câu về chính site: review kiểm trên trang, thành phần hay dữ liệu đã khóa và ghi kết quả (review); ghi_chu ghi đã
 		// kiểm ở đâu. Không qua lượt 2, nên không cho dùng để né lượt 2: không có ở bản ghi dữ liệu, không kèm nguồn ngoài
 		if (n.loai === VE_SITE) {
@@ -327,7 +329,7 @@ export function lenh(thamSo, goc = GOC, in_ = console.log) {
 			const hs = parse(fs.readFileSync(f, 'utf8')) ?? {};
 			if (hs.lan?.at(-1)?.ma_bam)
 				throw new Error(`${muc}: lần cuối trong lan của hồ sơ đã có mã băm. Trang hay bản ghi đã khóa thì sửa theo thủ tục mở khóa: node tools/khoa.mjs mo ${muc} --ly-do "…"`);
-			const loi = loiHoSo(hs, muc, goc);
+			const loi = loiHoSo(hs, muc, goc, { khiKhoa: true });
 			if (loi.length) throw new Error(`${muc}: hồ sơ chưa đủ để khóa:\n- ${loi.join('\n- ')}`);
 			const ma = maBamMuc(muc, goc);
 			// khóa cả bản ghi thay mọi khóa từng phần cũ; khóa từng phần mới thay khóa cũ có các trường nằm trọn trong nó
