@@ -19,6 +19,6 @@ Mỗi thí nghiệm lên site sau khi được kiểm chứng lại từ đầu;
 
 Một thói quen đáng có khi đọc bất kỳ thí nghiệm kinh điển nào: hỏi ba câu.
 
-1. **Mẫu là ai?** 40 người đàn ông ở Yale, trẻ ở một nhà trẻ của Stanford, sinh viên Mỹ — mỗi mẫu đều đặc thù, và con số từ mẫu đặc thù không tự động đúng cho mọi người.
+1. **Mẫu là ai?** 40 người đàn ông ở vùng New Haven, trẻ ở một nhà trẻ của Stanford, sinh viên Mỹ — mỗi mẫu đều đặc thù, và con số từ mẫu đặc thù không tự động đúng cho mọi người.
 2. **Đã ai làm lại chưa, kết quả ra sao?** Một kết quả chưa từng được làm lại thì chưa thể coi là chắc; khi làm lại, nhiều kết quả yếu đi hoặc không còn, nên kết quả sống sót qua nhiều lần làm lại đáng tin hơn.
-3. **Còn tranh cãi gì?** Khoa học trung thực luôn nói rõ phần chưa chắc chắn. Bài nào trên site này cũng gắn nhãn mức độ chắc chắn cho các kết luận chính — hãy đọc nhãn trước khi đọc kết luận.
+3. **Còn tranh cãi gì?** Khoa học trung thực luôn nói rõ phần chưa chắc chắn. Mỗi bài thí nghiệm ở đây đều gắn nhãn mức độ chắc chắn cho các kết luận chính — hãy đọc nhãn trước khi đọc kết luận.

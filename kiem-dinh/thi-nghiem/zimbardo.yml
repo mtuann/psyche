@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 2/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D3-L1)
+      review: Claude Opus 5.5 (agent review D3-L1, 30/10/2026)
       kiem_mau: null
 nguon:
   - id: haney1973
@@ -19,7 +19,7 @@ nguon:
     link: https://www.prisonexp.org/pdf/ijcp1973.pdf
     toan_van: true
   - id: letexier2019
-    ten: 'Le Texier (2019), Am Psychol 74(7), 823–839: toàn văn bản thảo của tác giả (PsyArXiv/OSF; số trang theo bản thảo)'
+    ten: 'Le Texier (2019), Am Psychol 74(7), 823–839: toàn văn bản thảo của tác giả (PsyArXiv/OSF; số trang theo bản thảo) và bản in (gwern.net, đối chiếu ở review)'
     link: https://osf.io/mjhnp
     toan_van: true
   - id: reicher2006
@@ -121,10 +121,11 @@ nhan_dinh:
     trich: selected from an initial pool of 75 respondents, who answered a newspaper advertisement asking for male volunteers to participate in a psychological study of "prison life" in return for payment of $15 per day.
     vi_tri: Mục Subjects
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Hơn 70 người đăng ký". Chữ mới: "Hơn 70 người đăng ký (75 theo báo cáo gốc)". Lý do: báo cáo gốc nêu đúng con số 75; trang đang viết "hơn 70" cho đúng nhưng chưa chính xác.'
+    ghi_chu: 'Chữ cũ: "Hơn 70 người đăng ký". Chữ mới: "Hơn 70 người đăng ký (75 theo báo cáo gốc)". Lý do: báo cáo gốc nêu đúng con số 75; trang đang viết "hơn 70" cho đúng nhưng chưa chính xác. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP), mục Subjects: "initial pool of 75 respondents". Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: mục Subjects.
+    review: dung
   - id: n4
     cau: 24 người được đánh giá ổn định nhất sau phỏng vấn và kiểm tra tâm lý được chọn và bốc thăm ngẫu nhiên vào vai cai tù hoặc tù nhân; cuối cùng 21 người tham gia (10 tù nhân, 11 cai tù).
     loai: so-lieu
@@ -133,10 +134,11 @@ nhan_dinh:
     trich: the 24 subjects who were judged to be most stable (physically and mentally), most mature, and least involved in anti-social behaviour were selected to participate in the study. On a random basis, half of the subjects were assigned the role of "guard", half to the role of "prisoner". | Two subjects who were assigned to be a "stand-by" ... were not called, and one subject assigned to be a "stand-by" guard decided against participating ... our data analysis is based upon ten prisoners and eleven guards in our experimental conditions.
     vi_tri: Mục Subjects
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Hơn 70 người đăng ký; 24 người vượt qua kiểm tra tâm lý được chọn và bốc thăm ngẫu nhiên vào vai cai tù hoặc tù nhân" (và "24 sinh viên" ở mô tả, mục Mức độ chắc chắn). Chữ mới: thêm "24 người được đánh giá ổn định nhất", "cuối cùng 21 người tham gia (10 tù nhân, 11 cai tù)"; mô tả đổi thành "24 sinh viên được chọn ... (21 người tham gia)". Lý do: báo cáo gốc nói 24 được chọn nhưng phân tích dữ liệu trên 10 tù nhân và 11 cai tù, ba người dự phòng không tham gia.'
+    ghi_chu: 'Chữ cũ: "Hơn 70 người đăng ký; 24 người vượt qua kiểm tra tâm lý được chọn và bốc thăm ngẫu nhiên vào vai cai tù hoặc tù nhân" (và "24 sinh viên" ở mô tả, mục Mức độ chắc chắn). Chữ mới: thêm "24 người được đánh giá ổn định nhất", "cuối cùng 21 người tham gia (10 tù nhân, 11 cai tù)"; mô tả đổi thành "24 sinh viên được chọn ... (21 người tham gia)". Lý do: báo cáo gốc nói 24 được chọn nhưng phân tích dữ liệu trên 10 tù nhân và 11 cai tù, ba người dự phòng không tham gia. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP), mục Subjects: 24 được chọn; phân tích 10 tù nhân, 11 cai tù. Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: mục Subjects. (Le Texier 2019 đếm 11 tù nhân, tính cả người thay thế giữa tuần.)
+    review: dung
   - id: n5
     cau: Thí nghiệm dựng nhà tù giả ở tầng hầm tòa nhà tâm lý của Đại học Stanford.
     loai: lich-su
@@ -145,10 +147,11 @@ nhan_dinh:
     trich: The prison was built in a 35-ft section of a basement corridor in the psychology building at Stanford University.
     vi_tri: Mục Procedure
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Tầng hầm tòa nhà tâm lý Jordan Hall (Đại học Stanford)"; tiêu đề mục "24 sinh viên trong tầng hầm Jordan Hall". Chữ mới: "Một đoạn hành lang tầng hầm tòa nhà tâm lý của Đại học Stanford"; tiêu đề "24 sinh viên trong tầng hầm khoa Tâm lý Stanford". Lý do: báo cáo gốc và Le Texier không nêu tên Jordan Hall; tên chỉ có ở nguồn bậc 3, nên bỏ.'
+    ghi_chu: 'Chữ cũ: "Tầng hầm tòa nhà tâm lý Jordan Hall (Đại học Stanford)"; tiêu đề mục "24 sinh viên trong tầng hầm Jordan Hall". Chữ mới: "Một đoạn hành lang tầng hầm tòa nhà tâm lý của Đại học Stanford"; tiêu đề "24 sinh viên trong tầng hầm khoa Tâm lý Stanford". Lý do: báo cáo gốc và Le Texier không nêu tên Jordan Hall; tên chỉ có ở nguồn bậc 3, nên bỏ. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP): "basement corridor in the psychology building at Stanford University". Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: mục Physical Aspects of the Prison.
+    review: dung
   - id: n6
     cau: Tù nhân bị cảnh sát Palo Alto thật đến tận nhà bắt, còng tay, khám người, rồi mặc áo choàng và đánh số thay tên.
     loai: phat-hien
@@ -181,10 +184,11 @@ nhan_dinh:
     trich: An explicit and categorical prohibition against the use of physical punishment or physical aggression was, however, emphasised by the experimenters.
     vi_tri: Mục Procedure, Instructions to guards
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "với luật duy nhất: không dùng bạo lực thân thể" (Tự trải nghiệm). Chữ mới: "với một điều cấm được nhấn mạnh: không dùng bạo lực thân thể". Lý do: báo cáo gốc nói điều cấm này là "single notable exception" của vai ít cấu trúc, còn Le Texier cho thấy cai tù nhận chỉ dẫn chi tiết (n18); "luật duy nhất" dễ hiểu sai.'
+    ghi_chu: 'Chữ cũ: "với luật duy nhất: không dùng bạo lực thân thể" (Tự trải nghiệm). Chữ mới: "với một điều cấm được nhấn mạnh: không dùng bạo lực thân thể". Lý do: báo cáo gốc nói điều cấm này là "single notable exception" của vai ít cấu trúc, còn Le Texier cho thấy cai tù nhận chỉ dẫn chi tiết (n18); "luật duy nhất" dễ hiểu sai. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP): "explicit and categorical prohibition against the use of physical punishment". Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: mục Role Instructions.
+    review: dung
   - id: n9
     cau: Thí nghiệm dự kiến kéo dài 2 tuần nhưng dừng sau 6 ngày.
     loai: phat-hien
@@ -220,10 +224,11 @@ nhan_dinh:
     trich: A small closet across from the cells served as a solitary confinement facility; its dimensions were extremely small (2 x 2 x 7 ft) and it was unlit. | Out of the 10 prisoners ... prisoners were awakened at 2:30am and 6am
     vi_tri: Haney, mục Physical aspects; Le Texier tr. 24; prisonexp.org/guards
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "nhiều cai tù nhanh chóng trở nên tàn nhẫn" (đáp án mở). Chữ mới: "một số cai tù". Lý do: báo cáo gốc nói ít nhất một phần ba cai tù hung hăng hơn mức dự đoán, một số "cứng nhưng công bằng", vài người thụ động.'
+    ghi_chu: 'Chữ cũ: "nhiều cai tù nhanh chóng trở nên tàn nhẫn" (đáp án mở). Chữ mới: "một số cai tù". Lý do: báo cáo gốc nói ít nhất một phần ba cai tù hung hăng hơn mức dự đoán, một số "cứng nhưng công bằng", vài người thụ động. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) (tủ biệt giam 2 x 2 x 7 ft, đếm số ban đêm); Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF). "Một số cai tù" khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Báo cáo gốc (verbal affronts, đếm số 2:30 sáng, tủ biệt giam); Le Texier gọi là "the Hole".
+    review: dung
   - id: n12
     cau: 'Câu hỏi mở của trang: những gì xảy ra có chứng minh "tình huống biến người bình thường thành kẻ ác" hay không vẫn chưa có đáp án thống nhất; một cách hiểu là kết quả phần lớn đến từ cách thí nghiệm được dàn dựng và hướng dẫn cho người tham gia.'
     loai: lich-su
@@ -234,10 +239,11 @@ nhan_dinh:
     trich: further question the study's scientific merit | The authors of the study value the intellectually engaged alternative perspectives that continue to be used to discuss its unsettling results but reject those that are ad hominem, misleading, inaccurate, and unscientific.
     vi_tri: Le Texier, Abstract; Zimbardo & Haney tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "hay cả thí nghiệm đã bị dàn dựng ngay từ đầu?". Chữ mới: "hay phần lớn kết quả đến từ cách thí nghiệm được dàn dựng và từ hướng dẫn dành cho người tham gia?". Lý do: Le Texier và Haslam, Reicher & Van Bavel không nói cả thí nghiệm bịa; họ nói hướng dẫn cho cai tù, diễn xuất, dữ liệu chọn lọc. Khung nhãn chính ở n40.'
+    ghi_chu: 'Chữ cũ: "hay cả thí nghiệm đã bị dàn dựng ngay từ đầu?". Chữ mới: "hay phần lớn kết quả đến từ cách thí nghiệm được dàn dựng và từ hướng dẫn dành cho người tham gia?". Lý do: Le Texier và Haslam, Reicher & Van Bavel không nói cả thí nghiệm bịa; họ nói hướng dẫn cho cai tù, diễn xuất, dữ liệu chọn lọc. Khung nhãn chính ở n40. Review (Claude Opus 5.5, 30/10/2026): Câu hỏi mở, cân hai phía (Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF); Zimbardo & Haney 2020, tóm tắt). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://api.openalex.org/works/doi:10.1037/amp0000593" ]
     luot_2_ghi_chu: "Tóm lại tranh luận: Le Texier 2019 và Haslam, Reicher, Van Bavel 2019 phản bác; Zimbardo và Haney 2020 bảo vệ."
+    review: dung
   - id: n13
     cau: Chỉ sau vài ngày, theo báo cáo gốc, cai tù hành xử hung hăng và tù nhân suy sụp, thụ động.
     loai: phat-hien
@@ -246,10 +252,11 @@ nhan_dinh:
     trich: At least a third of the guards were judged to have become far more aggressive and dehumanising toward the prisoners than would ordinarily be predicted in a simulation study. | a syndrome of passivity, dependency, depression and helplessness
     vi_tri: Haney, Abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "cai tù hành xử như cai tù thật, tù nhân suy sụp như tù nhân thật" (Điều gì đang xảy ra); "Kết quả ban đầu khiến cả thế giới rùng mình". Chữ mới: "Kết quả công bố ban đầu gây chấn động"; "gần nửa thế kỷ sau". Lý do: bỏ cường điệu "cả thế giới"; "nửa thế kỷ" đổi "gần nửa thế kỷ" cho khớp 1971 đến 2018–2019.'
+    ghi_chu: 'Chữ cũ: "cai tù hành xử như cai tù thật, tù nhân suy sụp như tù nhân thật" (Điều gì đang xảy ra); "Kết quả ban đầu khiến cả thế giới rùng mình". Chữ mới: "Kết quả công bố ban đầu gây chấn động"; "gần nửa thế kỷ sau". Lý do: bỏ cường điệu "cả thế giới"; "nửa thế kỷ" đổi "gần nửa thế kỷ" cho khớp 1971 đến 2018–2019. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP), tóm tắt. Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: Tóm tắt của báo cáo gốc; triệu chứng "began as early as the second day".
+    review: dung
   - id: n14
     cau: Thí nghiệm Zimbardo là một trong những nghiên cứu nổi tiếng nhất, và cũng thuộc nhóm bị tranh cãi nhiều nhất, của tâm lý học.
     loai: lich-su
@@ -258,10 +265,11 @@ nhan_dinh:
     trich: The Stanford Prison Experiment (SPE) is one of psychology's most famous studies. It has been criticized on many grounds
     vi_tri: Abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ (mô tả, Điều gì đang xảy ra): "một trong những nghiên cứu nổi tiếng nhất — và cũng bị tranh cãi nhiều nhất"; mô tả: "một trong những tranh luận lớn nhất về tính khoa học của tâm lý học". Chữ mới: "nổi tiếng nhất, và cũng thuộc nhóm bị tranh cãi nhiều nhất"; mô tả: "một trong những nghiên cứu nổi tiếng và bị tranh cãi nhiều nhất". Lý do: nguồn chỉ nói "one of psychology''s most famous" và "criticized on many grounds", không xếp hạng tranh cãi.'
+    ghi_chu: 'Chữ cũ (mô tả, Điều gì đang xảy ra): "một trong những nghiên cứu nổi tiếng nhất — và cũng bị tranh cãi nhiều nhất"; mô tả: "một trong những tranh luận lớn nhất về tính khoa học của tâm lý học". Chữ mới: "nổi tiếng nhất, và cũng thuộc nhóm bị tranh cãi nhiều nhất"; mô tả: "một trong những nghiên cứu nổi tiếng và bị tranh cãi nhiều nhất". Lý do: nguồn chỉ nói "one of psychology''s most famous" và "criticized on many grounds", không xếp hạng tranh cãi. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF), tóm tắt: "one of psychology''s most famous studies". Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019, tóm tắt.
+    review: dung
   - id: n15
     cau: Gần nửa thế kỷ sau, hồ sơ lưu trữ được mở và người tham gia cũ được phỏng vấn lại.
     loai: lich-su
@@ -270,10 +278,11 @@ nhan_dinh:
     trich: Data collected from a thorough investigation of the SPE archives and interviews with fifteen of the participants in the experiment
     vi_tri: Abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "nửa thế kỷ sau, hồ sơ lưu trữ được mở ra và người tham gia cũ lên tiếng". Chữ mới: "gần nửa thế kỷ sau". Lý do: Le Texier làm việc trong khoảng 2017–2018 (bài đăng 2019), cách 1971 khoảng 47 năm.'
+    ghi_chu: 'Chữ cũ: "nửa thế kỷ sau, hồ sơ lưu trữ được mở ra và người tham gia cũ lên tiếng". Chữ mới: "gần nửa thế kỷ sau". Lý do: Le Texier làm việc trong khoảng 2017–2018 (bài đăng 2019), cách 1971 khoảng 47 năm. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) (lưu trữ và 15 người phỏng vấn, 2017–2018). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019, mục Method (46 năm sau).
+    review: dung
   - id: n16
     cau: Zimbardo tự đóng vai quản giáo (Superintendent) của nhà tù giả.
     loai: phat-hien
@@ -286,30 +295,33 @@ nhan_dinh:
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: mục Role Instructions.
   - id: n17
-    cau: Sau 2 ngày, tù nhân nổi loạn; cai tù trả đũa bằng quấy rối leo thang.
+    cau: Ngay ngày thứ hai, tù nhân nổi loạn; cai tù trả đũa bằng quấy rối leo thang.
     loai: phat-hien
     nguon:
       - haney1973
       - letexier2019
-    trich: Their next response was rebellion, first by the use of direct force, and later with subtle divisive tactics | After the rebellion on the second day, the guards...
-    vi_tri: Haney, Results; Le Texier, mục The experiment was inaccurately reported
-    ket_qua: dung
-    ghi_chu: Haney nói tù nhân nổi loạn sau phản ứng đầu; Le Texier xác nhận "rebellion on the second day".
+    trich: After the rebellion on the second day, the guards…
+    vi_tri: Le Texier 2019 (bản in), mục The experiment was inaccurately reported; Haney 1973, Results
+    ket_qua: da-sua
+    ghi_chu: 'Haney nói tù nhân nổi loạn sau phản ứng đầu; Le Texier xác nhận "rebellion on the second day". Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF): "After the rebellion on the second day" (trích Zimbardo); Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) không nêu ngày. "Sau 2 ngày" dễ hiểu là sang ngày thứ ba; đã sửa thành "Ngay ngày thứ hai" (theo cau_dung của lượt 2).'
     luot_2: sai
     luot_2_nguon: [ "http://web.archive.org/web/20150403202719/http://www.prisonexp.org/pdf/blass.pdf", "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: 'câu đúng: Ngay ngày thứ hai, tù nhân nổi loạn; cai tù trả đũa bằng quấy rối leo thang.; Zimbardo, Maslach và Haney 1999; Le Texier 2019: "After the rebellion on the second day". Cuộc nổi loạn ở ngày thứ hai, không phải sau 2 ngày. Vế cai tù trả đũa đúng.'
+    review: sai
   - id: n18
-    cau: Cai tù nhận hướng dẫn chi tiết về cách đối xử với tù nhân trong buổi định hướng.
+    cau: Theo Le Texier (2019), dựa trên hồ sơ lưu trữ, cai tù đã nhận hướng dẫn chi tiết về cách đối xử với tù nhân trong buổi định hướng, trái với báo cáo gốc nói họ cố ý chỉ được hướng dẫn tối thiểu.
     loai: phat-hien
     nguon:
       - letexier2019
-      - reicher2006
+      - haney1973
     trich: Far from reacting spontaneously to this pathogenic social environment, the guards were given clear instructions for how to create it. | We can create boredom. We can create a sense of frustration.
     vi_tri: Le Texier, mục The experiment was inaccurately reported; Reicher & Haslam 2006, mục Introduction (trích lời Zimbardo)
-    ket_qua: dung
+    ket_qua: da-sua
     luot_2: qua-manh
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "https://api.openalex.org/works/doi:10.1037/amp0000593" ]
     luot_2_ghi_chu: 'câu đúng: Theo Le Texier (2019), dựa trên hồ sơ lưu trữ, trong buổi định hướng cai tù đã nhận hướng dẫn cụ thể về cách đối xử với tù nhân, trái với báo cáo gốc nói họ chỉ được hướng dẫn tối thiểu.; Đây là kết luận của Le Texier 2019 (và Haslam, Reicher, Van Bavel 2019) từ hồ sơ lưu trữ; báo cáo gốc viết cai tù "were intentionally given only minimal guidelines", và Zimbardo (2018, Le Texier dẫn) vẫn nói không có "formal or detailed instructions"; Zimbardo và Haney 2020 bác các phê bình. Viết như sự thật không ghi nguồn là mạnh hơn bằng chứng; nên ghi rõ là theo hồ sơ lưu trữ và Le Texier.'
+    review: sai
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Lượt 2 đúng (qua-manh): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) ("the guards were given clear instructions", "precise instructions") là kết luận của Le Texier từ hồ sơ; Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) viết cai tù "were intentionally given only minimal guidelines", và Zimbardo & Haney 2020 bác phê bình. Đã sửa câu ở mục Le Texier: "Theo Le Texier, hồ sơ lưu trữ cho thấy…: cai tù đã nhận hướng dẫn chi tiết…, trái với báo cáo gốc nói họ cố ý chỉ được hướng dẫn tối thiểu". Câu hỏi 2 vốn hỏi "phát hiện của Le Texier", không cần sửa.'
   - id: n19
     cau: 'Một số tù nhân được cho ra sớm: báo cáo gốc ghi 5 người vì suy sụp cảm xúc nặng hoặc phát ban.'
     loai: so-lieu
@@ -318,22 +330,24 @@ nhan_dinh:
     trich: the gross reactions of five prisoners who had to be released because of extreme emotional depression, crying, rage and acute anxiety. ... The fifth subject was released after being treated for a ... rash
     vi_tri: Mục Results
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(con số \"5\" trong sách giáo khoa bị Le Texier (2019) chất vấn: theo hồ sơ lưu trữ chỉ có 3 trường hợp vì lý do suy sụp tinh thần)". Chữ mới: báo cáo gốc ghi 5 người; Le Texier chỉ ra khoảng hai trong 10 tù nhân thật sự có triệu chứng suy sụp. Lý do: Le Texier (bản thảo tr. 23–24) xác nhận 5 người ra sớm (Korpi và bốn người khác: hai khóc, một phát ban, một không rõ lý do), không nói "3"; ông chất vấn mức độ suy sụp, không phải con số 5.'
+    ghi_chu: 'Chữ cũ: "(con số \"5\" trong sách giáo khoa bị Le Texier (2019) chất vấn: theo hồ sơ lưu trữ chỉ có 3 trường hợp vì lý do suy sụp tinh thần)". Chữ mới: báo cáo gốc ghi 5 người; Le Texier chỉ ra khoảng hai trong 10 tù nhân thật sự có triệu chứng suy sụp. Lý do: Le Texier (bản thảo tr. 23–24) xác nhận 5 người ra sớm (Korpi và bốn người khác: hai khóc, một phát ban, một không rõ lý do), không nói "3"; ông chất vấn mức độ suy sụp, không phải con số 5. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP), Results: "five prisoners who had to be released because of extreme emotional depression, crying, rage and acute anxiety" (người thứ năm vì phát ban). Trang ghi theo câu ấy; đủ.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: mục Results, Overview.
+    review: dung
   - id: n20
-    cau: Theo Le Texier (2019), khoảng hai trong 10 tù nhân thật sự có triệu chứng suy sụp thần kinh; nói "một nửa suy sụp phải cho ra sớm" là cường điệu.
+    cau: Theo Le Texier (2019), chỉ khoảng hai trong 11 tù nhân mà ông đếm thật sự có triệu chứng suy sụp thần kinh; nói "một nửa suy sụp phải cho ra sớm" là cường điệu.
     loai: phat-hien
     nguon:
       - letexier2019
-    trich: Out of the 10 prisoners, it looks like only two really exhibited symptoms of a nervous breakdown.
-    vi_tri: Bản thảo tr. 24
+    trich: Out of the 11 prisoners, it looks like only two really exhibited symptoms of a nervous breakdown.
+    vi_tri: Bản in Am Psychol 2019 (bản thảo OSF tr. 24 ghi "10 prisoners")
     ket_qua: da-sua
-    ghi_chu: 'Chữ mới của đoạn trên. Le Texier viết "it looks like", nên trang chỉ nên nói đây là đánh giá của ông (đã viết "theo Le Texier"). Chỗ khó: Zimbardo và Haney (2020) phản bác cách đọc hồ sơ của Le Texier nói chung, nhưng tóm tắt (bản duy nhất mở được) không nêu riêng điểm này.'
+    ghi_chu: 'Chữ mới của đoạn trên. Le Texier viết "it looks like", nên trang chỉ nên nói đây là đánh giá của ông (đã viết "theo Le Texier"). Chỗ khó: Zimbardo và Haney (2020) phản bác cách đọc hồ sơ của Le Texier nói chung, nhưng tóm tắt (bản duy nhất mở được) không nêu riêng điểm này. Review (Claude Opus 5.5, 30/10/2026): Đã mở bản in Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) (gwern.net/doc/psychology/2019-letexier.pdf): "Out of the 11 prisoners, it looks like only two really exhibited symptoms of a nervous breakdown"; bản thảo OSF mà lượt 1 đọc ghi "10". Theo bản in: sửa thành "hai trong 11 tù nhân mà ông đếm" (báo cáo gốc phân tích 10 tù nhân; Le Texier đếm 11).'
     luot_2: sai
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: "câu đúng: Theo Le Texier (2019), chỉ khoảng hai trong 11 tù nhân thật sự có triệu chứng suy sụp thần kinh; nói \"một nửa suy sụp phải cho ra sớm\" là cường điệu.; Le Texier 2019 tr. 10 viết \"hai trong 11 tù nhân\" (ông tính cả tù nhân thay thế), không phải 10. Vế \"cường điệu\" đúng: \"it is exaggerated to assert about the prisoners that 'half of them became so psychologically disturbed they had to be released prematurely'\"."
+    review: sai
   - id: n21
     cau: Theo hồ sơ lưu trữ, một tù nhân (Korpi) đã tính trước việc tỏ ra suy sụp để được ra.
     loai: lich-su
@@ -342,10 +356,11 @@ nhan_dinh:
     trich: Several archival evidences confirm, on the contrary, that Korpi planned to act mad in order to be released
     vi_tri: Bản thảo tr. 23
     ket_qua: da-sua
-    ghi_chu: 'Chữ mới của đoạn n19; Le Texier nói "highly probable that he wanted to look like he was having a breakdown". Trang viết "theo hồ sơ đã tính trước", khớp nhưng nên ghi là cách đọc của Le Texier: đã viết ở câu trước ("Le Texier ... cho rằng").'
+    ghi_chu: 'Chữ mới của đoạn n19; Le Texier nói "highly probable that he wanted to look like he was having a breakdown". Trang viết "theo hồ sơ đã tính trước", khớp nhưng nên ghi là cách đọc của Le Texier: đã viết ở câu trước ("Le Texier ... cho rằng"). Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) ("Korpi planned to act mad in order to be released"). Trang không nêu tên, ghi "theo hồ sơ" trong câu của Le Texier.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: 'Le Texier 2019 tr. 10 (băng ghi âm ngày dừng thí nghiệm). Le Texier không nêu tên; tên Douglas Korpi của tù nhân 8612 chỉ có ở nguồn bậc 3 (bài báo của Ben Blum 2018). "Tính trước": anh ta lên kế hoạch sau khi xin ra bị từ chối.'
+    review: dung
   - id: n22
     cau: Một tù nhân tuyệt thực.
     loai: phat-hien
@@ -378,22 +393,24 @@ nhan_dinh:
     trich: At least a third of the guards were judged to have become far more aggressive and dehumanising toward the prisoners than would ordinarily be predicted in a simulation study. | Only a very few of the observed reactions to this experience of imprisonment could be attributed to personality trait differences
     vi_tri: Haney, Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "vai trò xã hội và bối cảnh nhà tù đã biến sinh viên bình thường thành cai tù tàn nhẫn hoặc tù nhân cam chịu". Chữ mới: như câu trên. Lý do: báo cáo gốc nói "at least a third" cai tù, không phải tất cả; và dùng cách nói "judged".'
+    ghi_chu: 'Chữ cũ: "vai trò xã hội và bối cảnh nhà tù đã biến sinh viên bình thường thành cai tù tàn nhẫn hoặc tù nhân cam chịu". Chữ mới: như câu trên. Lý do: báo cáo gốc nói "at least a third" cai tù, không phải tất cả; và dùng cách nói "judged". Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP), tóm tắt ("at least a third of the guards"). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: Tóm tắt của báo cáo gốc.
+    review: dung
   - id: n25
-    cau: Thibault Le Texier là nhà xã hội học, lục lại kho lưu trữ của thí nghiệm và phỏng vấn 15 người từng tham gia.
+    cau: Thibault Le Texier, nhà nghiên cứu ở Đại học Nice (Pháp), lục lại kho lưu trữ của thí nghiệm và phỏng vấn 15 người từng tham gia.
     loai: lich-su
     nguon:
       - letexier2019
     trich: Data collected from a thorough investigation of the SPE archives and interviews with fifteen of the participants
     vi_tri: Abstract; Author Note
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "lục lại toàn bộ kho lưu trữ". Chữ mới: "lục lại kho lưu trữ". Lý do: bài nói phân tích nội dung 16 hộp ở Stanford và tư liệu ở Akron; "toàn bộ" quá mạnh. Nghề nghiệp "nhà xã hội học": Author Note ghi "associate researcher at the University of Nice"; chưa kiểm được ngành đào tạo; chỗ chưa chắc: mô tả "nhà xã hội học" lấy từ trang cũ, nên viết "nhà nghiên cứu" nếu người giao muốn chắc.'
+    ghi_chu: 'Chữ cũ: "lục lại toàn bộ kho lưu trữ". Chữ mới: "lục lại kho lưu trữ". Lý do: bài nói phân tích nội dung 16 hộp ở Stanford và tư liệu ở Akron; "toàn bộ" quá mạnh. Nghề nghiệp "nhà xã hội học": Author Note ghi "associate researcher at the University of Nice"; chưa kiểm được ngành đào tạo; chỗ chưa chắc: mô tả "nhà xã hội học" lấy từ trang cũ, nên viết "nhà nghiên cứu" nếu người giao muốn chắc. Review (Claude Opus 5.5, 30/10/2026): Bản in Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) ghi Université de Nice Sophia Antipolis (GREDEG, một phòng nghiên cứu kinh tế), bản thảo ghi "associate researcher at the University of Nice"; La Vie des Idées (lượt 2) giới thiệu ông là tiến sĩ kinh tế. Không nguồn nào nói "nhà xã hội học". Đã sửa thành "Thibault Le Texier, nhà nghiên cứu ở Đại học Nice (Pháp)". Phần lưu trữ và 15 người phỏng vấn đúng.'
     luot_2: khong-chac
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://laviedesidees.fr/_Le-Texier-Thibault_" ]
     luot_2_ghi_chu: 'Phần lưu trữ và 15 người phỏng vấn đúng (Le Texier 2019). Chưa xác nhận "nhà xã hội học": La Vie des Idées giới thiệu ông là "docteur en économie"; bài 2019 ghi Université de Nice Sophia Antipolis (GREDEG). Gợi ý: "nhà nghiên cứu Pháp".'
+    review: sai
   - id: n26
     cau: Cai tù hung hăng nhất, biệt danh "John Wayne" (David Eshleman), sau này thừa nhận mình đang diễn một nhân vật.
     loai: lich-su
@@ -402,10 +419,11 @@ nhan_dinh:
     trich: throughout the entire experiment I was an actor, and I was hamming it up. [...] I was role playing.
     vi_tri: Bản thảo tr. 19 (trích Eshleman 1971a, tr. 2)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Dave Eshelman"; "đang diễn một nhân vật lấy cảm hứng từ phim ảnh". Chữ mới: "David Eshleman"; "đang diễn một nhân vật". Lý do: Le Texier viết "David Eshleman"; nguồn chỉ nói Eshleman tự mô tả là diễn viên đang "hamming it up", tôi không tìm thấy trong các nguồn đã mở chi tiết "lấy cảm hứng từ phim ảnh" nên bỏ cụm này.'
+    ghi_chu: 'Chữ cũ: "Dave Eshelman"; "đang diễn một nhân vật lấy cảm hứng từ phim ảnh". Chữ mới: "David Eshleman"; "đang diễn một nhân vật". Lý do: Le Texier viết "David Eshleman"; nguồn chỉ nói Eshleman tự mô tả là diễn viên đang "hamming it up", tôi không tìm thấy trong các nguồn đã mở chi tiết "lấy cảm hứng từ phim ảnh" nên bỏ cụm này. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) (lời Eshleman: "I was an actor… role playing"). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019 tr. 8 (lời Guard 4 lúc giải thích cuối thí nghiệm, và phỏng vấn 2017).
+    review: dung
   - id: n28
     cau: Dữ liệu thí nghiệm được thu thập và trình bày có chọn lọc.
     loai: phat-hien
@@ -436,10 +454,11 @@ nhan_dinh:
     trich: an incredibly flawed study that should have died an early death
     vi_tri: Bản thảo tr. 32
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "đây giống một màn \"diễn minh họa\" được dàn dựng để chứng minh quan điểm có sẵn, hơn là một thí nghiệm khoa học đúng nghĩa". Chữ mới: như n30. Lý do: Le Texier không dùng cách nói "màn diễn minh họa"; kết luận của ông là "incredibly flawed study". Câu hỏi 2 (giải thích) cũng sửa theo.'
+    ghi_chu: 'Chữ cũ: "đây giống một màn \"diễn minh họa\" được dàn dựng để chứng minh quan điểm có sẵn, hơn là một thí nghiệm khoa học đúng nghĩa". Chữ mới: như n30. Lý do: Le Texier không dùng cách nói "màn diễn minh họa"; kết luận của ông là "incredibly flawed study". Câu hỏi 2 (giải thích) cũng sửa theo. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF), tóm tắt ("further question the study''s scientific merit"). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019, kết luận và tóm tắt ("further question the study's scientific merit").
+    review: dung
   - id: n31
     cau: Reicher và Haslam dựng một "nhà tù" tương tự cho chương trình truyền hình BBC, kéo dài 8 ngày với 15 nam tham gia.
     loai: phat-hien
@@ -448,10 +467,11 @@ nhan_dinh:
     trich: Over a period of 8 days, the study examined the behaviour of 15 men who were placed in a social hierarchy of guards and prisoners
     vi_tri: Mục Method
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "kéo dài 8 ngày, với biện pháp đạo đức chặt chẽ hơn và không có định hướng ngầm từ nhóm nghiên cứu". Chữ mới: thêm "với 15 nam tham gia, có hội đồng đạo đức duyệt và hai nhà tâm lý học lâm sàng theo dõi suốt thời gian, và không hướng dẫn cai tù cách hành xử (chỉ cấm bạo lực thể xác)". Lý do: nêu đúng biện pháp đạo đức và đúng điều nguồn nói về hướng dẫn.'
+    ghi_chu: 'Chữ cũ: "kéo dài 8 ngày, với biện pháp đạo đức chặt chẽ hơn và không có định hướng ngầm từ nhóm nghiên cứu". Chữ mới: thêm "với 15 nam tham gia, có hội đồng đạo đức duyệt và hai nhà tâm lý học lâm sàng theo dõi suốt thời gian, và không hướng dẫn cai tù cách hành xử (chỉ cấm bạo lực thể xác)". Lý do: nêu đúng biện pháp đạo đức và đúng điều nguồn nói về hướng dẫn. Review (Claude Opus 5.5, 30/10/2026): Reicher & Haslam 2006 (toàn văn): 8 ngày, 15 nam; ủy ban đạo đức độc lập 5 người theo dõi suốt, hai nhà tâm lý học lâm sàng độc lập theo dõi suốt (mục Ethics, (c), (f)); "guards were given no guidance". Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1348/014466605X48998", "http://web.archive.org/web/20081004225000/http://www.bbcprisonstudy.org:80/bbc-prison-study.php?p=21" ]
     luot_2_ghi_chu: '8 ngày: tóm tắt Reicher và Haslam 2006 ("over a period of 8 days"); 15 người: trang chính thức của BBC Prison Study (Reicher và Haslam, bản lưu 2008). Trang ấy ghi "9 days that the study lasted"; bài báo ghi 8 ngày.'
+    review: dung
   - id: n32
     cau: Nghiên cứu BBC có hội đồng đạo đức duyệt và hai nhà tâm lý học lâm sàng độc lập theo dõi suốt thời gian.
     loai: phat-hien
@@ -474,6 +494,8 @@ nhan_dinh:
     luot_2: khong-chac
     luot_2_nguon: [ "http://web.archive.org/web/20081004225000/http://www.bbcprisonstudy.org:80/bbc-prison-study.php?p=24", "https://bps.org.uk/psychologist/tyranny-revisited-groups-psychological-well-being-and-health-societies" ]
     luot_2_ghi_chu: 'Vế không hướng dẫn cách hành xử thì xác nhận được (The Psychologist: "we did not act as prison superintendents who instructed the guards how to act"). Chưa đọc được toàn văn BJSP 2006 nên chưa xác nhận các giới hạn cụ thể (cấm bạo lực thể xác, quyền cơ bản của tù nhân); chỉ nguồn bậc 3 nói cấm bạo lực.'
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Đã mở Reicher & Haslam 2006 (toàn văn), mục Procedure: "The guards were given no guidance about how they should achieve their goals. The only limits… a set of ethically determined basic rights… all participants were told that physical violence would not be tolerated". Đúng cả ba vế; lượt 2 không chắc vì không mở được toàn văn.'
   - id: n34
     cau: Ở nghiên cứu BBC, cai tù không đồng nhất với vai trò, ngần ngại dùng quyền lực và cuối cùng bị tù nhân lấn át.
     loai: phat-hien
@@ -493,10 +515,11 @@ nhan_dinh:
     trich: Participants then established an egalitarian social system. When this proved unsustainable, moves to impose a tyrannical regime met with weakening resistance.
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "và vấp phải phản kháng". Chữ mới: "gặp sự kháng cự ngày càng yếu". Lý do: tóm tắt nói "weakening resistance"; "chế độ độc tài" đổi "chế độ độc đoán" cho sát "tyrannical regime"/"draconian".'
+    ghi_chu: 'Chữ cũ: "và vấp phải phản kháng". Chữ mới: "gặp sự kháng cự ngày càng yếu". Lý do: tóm tắt nói "weakening resistance"; "chế độ độc tài" đổi "chế độ độc đoán" cho sát "tyrannical regime"/"draconian". Review (Claude Opus 5.5, 30/10/2026): Reicher & Haslam 2006 (toàn văn), tóm tắt ("weakening resistance"). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1348/014466605X48998", "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1001426&type=printable" ]
     luot_2_ghi_chu: "Tóm tắt; Haslam và Reicher 2012: \"Early in the study, the Prisoners' identification as a group allowed them successfully to challenge the authority of the Guards\"."
+    review: dung
   - id: n36
     cau: 'Kết luận của Reicher và Haslam: bạo lực không phải hệ quả tự động của vai trò và tình huống; điều khiến sự tàn ác trở nên chấp nhận được là sự bất lực và thất bại của các nhóm.'
     loai: phat-hien
@@ -505,10 +528,11 @@ nhan_dinh:
     trich: This suggests that it is powerlessness and the failure of groups that makes tyranny psychologically acceptable.
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "...sự bất lực và sụp đổ của tập thể cùng vai trò của người lãnh đạo". Chữ mới: "sự bất lực và thất bại của các nhóm". Lý do: tóm tắt không nêu vai trò người lãnh đạo; ý đó thuộc Haslam, Reicher & Van Bavel (2019).'
+    ghi_chu: 'Chữ cũ: "...sự bất lực và sụp đổ của tập thể cùng vai trò của người lãnh đạo". Chữ mới: "sự bất lực và thất bại của các nhóm". Lý do: tóm tắt không nêu vai trò người lãnh đạo; ý đó thuộc Haslam, Reicher & Van Bavel (2019). Review (Claude Opus 5.5, 30/10/2026): Reicher & Haslam 2006 (toàn văn), tóm tắt. Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1348/014466605X48998" ]
     luot_2_ghi_chu: 'Reicher và Haslam 2006, tóm tắt; Haslam và Reicher 2012: "participants did not conform automatically to their assigned role".'
+    review: dung
   - id: n37
     cau: 'Nhãn Vững chắc: những sự kiện cơ bản của thí nghiệm là có thật.'
     loai: nhan
@@ -520,15 +544,18 @@ nhan_dinh:
     co_so:
       - haney1973
       - letexier2019
+      - haslam2019
+      - zimbardo2020
       - reicher2006
-    ly_do: Sự kiện cốt lõi (24 được chọn, 21 tham gia, dừng sau 6 ngày, quấy rối của cai tù, một số tù nhân ra sớm) nằm trong báo cáo gốc và bài phê bình mạnh nhất dựa trên hồ sơ lưu trữ (Le Texier) không phủ nhận; Reicher & Haslam cũng không. Có ghi chép và hơn 12 giờ băng hình.
+    ly_do: 'Nhãn cho sự kiện lịch sử, không phải cho một hiệu ứng: thước đo mục 4 (tổng hợp, tái lập) không áp được, nên căn cứ là hồ sơ lưu trữ và việc cả hai phía thừa nhận. Báo cáo gốc (Haney 1973: 24 được chọn, 21 tham gia, dừng sau 6 ngày, quấy rối của cai tù, 5 tù nhân ra sớm; khoảng 12 giờ băng hình, hơn 30 giờ ghi âm), phía phê bình dựa trên chính hồ sơ ấy (Le Texier 2019: 16 hộp tư liệu, băng ghi âm, phỏng vấn 15 người; Haslam, Reicher & Van Bavel 2019) và phía tác giả gốc (Zimbardo & Haney 2020) đều không phủ nhận các sự kiện này; Reicher & Haslam 2006 cũng không. Hai phía chỉ tranh cãi ý nghĩa (khung Đang tranh cãi) và số người thật sự suy sụp (ghi trên trang).'
     trich: the SPE ... planned two-week simulation had to be ended after six days
     vi_tri: Haney, Results; Le Texier, mục Participants not immersed
     ket_qua: dung
-    ghi_chu: 'chỗ khó: thước đo nhãn (mục 4) viết cho hiệu ứng thực nghiệm (tổng hợp, tái lập); ở đây nhãn dùng cho sự kiện lịch sử có tư liệu và hai phía đồng thuận. Người giao quyết: giữ "Vững chắc" hay chỉ ghi không nhãn.'
+    ghi_chu: 'chỗ khó: thước đo nhãn (mục 4) viết cho hiệu ứng thực nghiệm (tổng hợp, tái lập); ở đây nhãn dùng cho sự kiện lịch sử có tư liệu và hai phía đồng thuận. Người giao quyết: giữ "Vững chắc" hay chỉ ghi không nhãn. Review (Claude Opus 5.5, 30/10/2026): Nhãn cho sự kiện lịch sử: thước đo mục 4 viết cho hiệu ứng, nên căn cứ ở đây là hồ sơ lưu trữ và việc cả hai phía thừa nhận. Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) (khoảng 12 giờ băng hình, hơn 30 giờ ghi âm), Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) (16 hộp tư liệu ở Stanford, băng ghi âm, phỏng vấn 15 người) và Zimbardo & Haney 2020 (tóm tắt) đều coi các sự kiện là có thật; không nguồn nào phủ nhận. Đạt mức "Vững chắc" theo nghĩa ấy. Đã viết lại ly_do và thêm zimbardo2020, haslam2019 vào co_so; sửa "hơn 12 giờ băng hình" thành "khoảng 12 giờ" theo báo cáo gốc.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "https://api.openalex.org/works/doi:10.1037/amp0000593" ]
     luot_2_ghi_chu: "Nội dung đúng: cả bên phê bình (Le Texier, Haslam và cộng sự) lẫn tác giả gốc đều xác nhận các sự kiện. Lưu ý cho review: thước đo mục 4 viết cho hiệu ứng (phân tích tổng hợp, tái lập); với sự kiện lịch sử, căn cứ là hồ sơ lưu trữ, phim, ghi âm và sự đồng thuận của hai phía. Cần ghi điều ấy ở co_so."
+    review: dung
   - id: n38
     cau: Thí nghiệm có ghi chép và quay phim; không bên nào phủ nhận các sự kiện cốt lõi.
     loai: lich-su
@@ -550,10 +577,11 @@ nhan_dinh:
     trich: five prisoners who had to be released | only two really exhibited symptoms of a nervous breakdown
     vi_tri: Haney Results; Le Texier tr. 24
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "một số tù nhân suy sụp và được cho ra sớm". Chữ mới: "một số tù nhân được cho ra sớm (có bao nhiêu người thật sự suy sụp thì còn tranh cãi, như trên)". Lý do: n19–n21.'
+    ghi_chu: 'Chữ cũ: "một số tù nhân suy sụp và được cho ra sớm". Chữ mới: "một số tù nhân được cho ra sớm (có bao nhiêu người thật sự suy sụp thì còn tranh cãi, như trên)". Lý do: n19–n21. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) (5 người ra sớm) và Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) (hai người thật sự suy sụp). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "http://web.archive.org/web/20150403202719/http://www.prisonexp.org/pdf/blass.pdf" ]
     luot_2_ghi_chu: Le Texier 2019 tr. 10 (Zimbardo 2018 phản bác Blum); Zimbardo, Maslach và Haney 1999 kể năm tù nhân được cho ra.
+    review: dung
   - id: n40
     cau: 'Nhãn Đang tranh cãi: kết luận gốc "tình huống biến người bình thường thành tàn ác".'
     loai: nhan
@@ -575,6 +603,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1348/014466605X48998", "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://research-repository.st-andrews.ac.uk/bitstream/10023/18565/1/Haslam_American_Psychologist_Cruelty_2019_AAM.pdf", "https://api.openalex.org/works/doi:10.1177/0146167206292689", "https://api.openalex.org/works/doi:10.1037/amp0000593" ]
     luot_2_ghi_chu: "Đang tranh cãi hợp thước đo: tư liệu lưu trữ và một thiết kế lại (BBC) mâu thuẫn với kết luận gốc, trong khi tác giả gốc vẫn bảo vệ (Zimbardo và Haney 2020)."
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Đang tranh cãi hợp mục 4: bằng chứng mâu thuẫn (báo cáo gốc; lưu trữ của Le Texier và Haslam, Reicher & Van Bavel 2019; thiết kế lại BBC; tác giả gốc vẫn bảo vệ năm 2020), không thể làm lại nguyên văn.'
   - id: n41
     cau: Zimbardo và các cộng sự, trong phản hồi năm 2020, vẫn bảo vệ sức mạnh của môi trường phi nhân tính.
     loai: lich-su
@@ -596,10 +626,11 @@ nhan_dinh:
     trich: we present comprehensive evidence that, rather than guards conforming to role of their own accord, experimenters directly encouraged them to adopt roles and act tough in a manner consistent with tenets of identity leadership
     vi_tri: Haslam 2019 abstract; Le Texier abstract; Reicher & Haslam abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "hướng dẫn ngầm"; "khi làm lại tử tế". Chữ mới: "hướng dẫn của người thí nghiệm"; "khi làm lại với thiết kế khác"; thêm trích Haslam, Reicher và Van Bavel (2019). Lý do: nguồn nói "precise instructions" và "directly encouraged", không phải "ngầm"; "tử tế" là đánh giá.'
+    ghi_chu: 'Chữ cũ: "hướng dẫn ngầm"; "khi làm lại tử tế". Chữ mới: "hướng dẫn của người thí nghiệm"; "khi làm lại với thiết kế khác"; thêm trích Haslam, Reicher và Van Bavel (2019). Lý do: nguồn nói "precise instructions" và "directly encouraged", không phải "ngầm"; "tử tế" là đánh giá. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF); Reicher & Haslam 2006 (toàn văn); Haslam, Reicher & Van Bavel 2019 (tóm tắt). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://api.openalex.org/works/doi:10.1348/014466605X48998", "https://research-repository.st-andrews.ac.uk/bitstream/10023/18565/1/Haslam_American_Psychologist_Cruelty_2019_AAM.pdf" ]
     luot_2_ghi_chu: Le Texier 2019 (hướng dẫn, diễn, dữ liệu chọn lọc); Reicher và Haslam 2006; Haslam, Reicher và Van Bavel 2019 (tóm tắt).
+    review: dung
   - id: n43
     cau: Phần lớn các phân tích gần đây dựa trên hồ sơ lưu trữ hoặc thiết kế lại đều hoài nghi kết luận gốc.
     loai: lich-su
@@ -611,10 +642,11 @@ nhan_dinh:
     trich: It has been criticized on many grounds, and yet a majority of textbook authors have ignored these criticisms
     vi_tri: Le Texier Abstract; Haslam 2019
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Cán cân bằng chứng gần đây nghiêng về phía hoài nghi" (cũng ở đáp án câu hỏi 4). Chữ mới: "Phần lớn các phân tích gần đây dựa trên hồ sơ lưu trữ hoặc thiết kế lại đều hoài nghi kết luận gốc". Lý do: nói rõ loại bằng chứng; đếm: ba nguồn hoài nghi (Le Texier, Haslam và cộng sự 2019, Reicher & Haslam 2006), một nguồn bảo vệ (Zimbardo & Haney 2020). Không tìm thấy phân tích hồ sơ nào ủng hộ hoàn toàn kết luận gốc; chưa có tổng quan hệ thống. chỗ khó: câu mang tính tổng kết, cần lượt 2 và review xem có chấp nhận.'
+    ghi_chu: 'Chữ cũ: "Cán cân bằng chứng gần đây nghiêng về phía hoài nghi" (cũng ở đáp án câu hỏi 4). Chữ mới: "Phần lớn các phân tích gần đây dựa trên hồ sơ lưu trữ hoặc thiết kế lại đều hoài nghi kết luận gốc". Lý do: nói rõ loại bằng chứng; đếm: ba nguồn hoài nghi (Le Texier, Haslam và cộng sự 2019, Reicher & Haslam 2006), một nguồn bảo vệ (Zimbardo & Haney 2020). Không tìm thấy phân tích hồ sơ nào ủng hộ hoàn toàn kết luận gốc; chưa có tổng quan hệ thống. chỗ khó: câu mang tính tổng kết, cần lượt 2 và review xem có chấp nhận. Review (Claude Opus 5.5, 30/10/2026): Đánh giá "phần lớn" hợp lý: ba phân tích hoài nghi (Le Texier 2019; Haslam, Reicher & Van Bavel 2019; BBC 2006) cộng Carnahan & McFarland 2007, phía bảo vệ là tác giả gốc. Câu đúng mức.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://research-repository.st-andrews.ac.uk/bitstream/10023/18565/1/Haslam_American_Psychologist_Cruelty_2019_AAM.pdf", "https://api.openalex.org/works/doi:10.1348/014466605X48998", "https://api.openalex.org/works/doi:10.1177/0146167206292689" ]
     luot_2_ghi_chu: Các phân tích lưu trữ (Le Texier 2019; Haslam, Reicher, Van Bavel 2019), thiết kế lại (BBC 2006) và nghiên cứu tự chọn lọc (Carnahan và McFarland 2007) đều hoài nghi; phía bảo vệ chủ yếu là chính tác giả gốc (Zimbardo và Haney 2020). "Phần lớn" là đánh giá hợp lý, không có tổng quan hệ thống đếm.
+    review: dung
   - id: n44
     cau: 'Nhãn Khá vững: mẫu người tham gia không đại diện cho "người bình thường".'
     loai: nhan
@@ -623,14 +655,15 @@ nhan_dinh:
     nhan: kha-vung
     co_so:
       - carnahan2007
-    ly_do: Một nghiên cứu có đối chứng cho thấy tình nguyện viên "nghiên cứu đời sống nhà tù" khác tình nguyện viên nghiên cứu tâm lý thường; hướng của kết quả hợp với logic tự chọn lọc; tác giả nói hệ quả với SPE vẫn là phỏng đoán.
+    ly_do: 'Một nghiên cứu có đối chứng (Carnahan & McFarland 2007) cho thấy tình nguyện viên "nghiên cứu đời sống nhà tù" khác tình nguyện viên nghiên cứu tâm lý thường (tác giả nói hệ quả với SPE vẫn là phỏng đoán); thêm vào đó, chính báo cáo gốc (Haney 1973) mô tả mẫu hẹp: nam sinh viên, phần lớn da trắng, tầng lớp trung lưu, chọn 24 người ổn định nhất từ 75 người trả lời quảng cáo. Cùng chiều nhưng phần tự chọn lọc chưa có tái lập: Khá vững, sát ngưỡng.'
     trich: Volunteers for the prison study scored significantly higher on measures of the abuse-related dispositions of aggressiveness, authoritarianism, Machiavellianism, narcissism, and social dominance and lower on empathy and altruism
     vi_tri: Carnahan & McFarland 2007, Abstract
     ket_qua: dung
-    ghi_chu: 'chỗ khó: thước đo mục 4 cho "Khá vững" đòi nhiều nghiên cứu cùng chiều; ở đây mới chỉ một nghiên cứu (không tái lập; tôi không tìm thấy tái lập độc lập). Người giao quyết: giữ Khá vững, hay đổi nhãn/viết lại cho mềm hơn.'
+    ghi_chu: 'chỗ khó: thước đo mục 4 cho "Khá vững" đòi nhiều nghiên cứu cùng chiều; ở đây mới chỉ một nghiên cứu (không tái lập; tôi không tìm thấy tái lập độc lập). Người giao quyết: giữ Khá vững, hay đổi nhãn/viết lại cho mềm hơn. Review (Claude Opus 5.5, 30/10/2026): Khá vững, sát ngưỡng: phần tự chọn lọc chỉ dựa một nghiên cứu (Carnahan & McFarland 2007 (tóm tắt)), nhưng khẳng định "mẫu không đại diện" còn dựa vào chính Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) (mẫu là nam sinh viên, "largely of middle class socio-economic status, Caucasians", chọn người ổn định nhất từ 75 người đăng ký). Trang nói rõ "mới chỉ một nghiên cứu" và lời của tác giả. Chấp nhận; ly_do thêm căn cứ từ báo cáo gốc.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "https://api.openalex.org/works/doi:10.1177/0146167206292689" ]
     luot_2_ghi_chu: 'Mẫu gốc là nam sinh viên, "largely of middle class socio-economic status and Caucasians" (báo cáo gốc); thêm bằng chứng tự chọn lọc (Carnahan và McFarland 2007). Khá vững hợp thước đo: cùng chiều nhưng phần tự chọn lọc chỉ dựa trên một nghiên cứu chính.'
+    review: dung
   - id: n45
     cau: Carnahan và McFarland (2007) đăng lại quảng cáo "nghiên cứu về đời sống nhà tù" và thấy người đăng ký ghi điểm cao hơn ở các thang đo hung hăng, độc đoán, Machiavelli, ái kỷ, xu hướng thống trị xã hội, và thấp hơn ở đồng cảm và vị tha, so với người đăng ký một nghiên cứu tâm lý bình thường.
     loai: phat-hien
@@ -639,10 +672,11 @@ nhan_dinh:
     trich: Students were recruited for a psychological study of prison life using a virtually identical newspaper ad as used in the Stanford Prison Experiment ... or for a psychological study, an identical ad minus the words of prison life . Volunteers for the prison study scored significantly higher on ...
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "ghi điểm cao hơn hẳn ở các thang đo hung hăng, độc đoán, ái kỷ và xu hướng thống trị xã hội". Chữ mới: bỏ "hẳn", thêm Machiavelli và đồng cảm/vị tha thấp hơn. Lý do: khớp đúng danh sách của tóm tắt.'
+    ghi_chu: 'Chữ cũ: "ghi điểm cao hơn hẳn ở các thang đo hung hăng, độc đoán, ái kỷ và xu hướng thống trị xã hội". Chữ mới: bỏ "hẳn", thêm Machiavelli và đồng cảm/vị tha thấp hơn. Lý do: khớp đúng danh sách của tóm tắt. Review (Claude Opus 5.5, 30/10/2026): Carnahan & McFarland 2007 (tóm tắt). Danh sách thang đo khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/0146167206292689" ]
     luot_2_ghi_chu: Carnahan và McFarland 2007, tóm tắt.
+    review: dung
   - id: n46
     cau: Chính các tác giả Carnahan và McFarland nói hệ quả của kết quả với thí nghiệm Stanford vẫn chỉ là phỏng đoán, và kết quả nghiêng về cách giải thích có cả người lẫn tình huống.
     loai: lich-su
@@ -651,10 +685,11 @@ nhan_dinh:
     trich: Although implications for the SPE remain a matter of conjecture, an interpretation in terms of person-situation interactionism rather than a strict situationist account is indicated by these findings.
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Mới chỉ một nghiên cứu, nhưng logic khó bác bỏ: ... điều này làm suy yếu trực tiếp tuyên bố \"người bình thường cũng thành ác\"". Chữ mới: nêu lời của chính tác giả (phỏng đoán; tương tác người-tình huống) và "làm yếu đi ... theo nghĩa tuyệt đối". Lý do: "làm suy yếu trực tiếp" mạnh hơn tác giả nói.'
+    ghi_chu: 'Chữ cũ: "Mới chỉ một nghiên cứu, nhưng logic khó bác bỏ: ... điều này làm suy yếu trực tiếp tuyên bố \"người bình thường cũng thành ác\"". Chữ mới: nêu lời của chính tác giả (phỏng đoán; tương tác người-tình huống) và "làm yếu đi ... theo nghĩa tuyệt đối". Lý do: "làm suy yếu trực tiếp" mạnh hơn tác giả nói. Review (Claude Opus 5.5, 30/10/2026): Carnahan & McFarland 2007 (tóm tắt) ("implications for the SPE remain a matter of conjecture"). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/0146167206292689" ]
     luot_2_ghi_chu: Carnahan và McFarland 2007, tóm tắt.
+    review: dung
   - id: n47
     cau: 'Nhãn Đã bị bác bỏ: "Zimbardo bịa đặt toàn bộ, thí nghiệm chưa từng xảy ra".'
     loai: nhan
@@ -665,13 +700,17 @@ nhan_dinh:
     co_so:
       - letexier2019
       - haney1973
-    ly_do: Hồ sơ lưu trữ (16 hộp tư liệu, nhật ký, báo cáo ca trực, băng hình) cho thấy thí nghiệm có thật; chính Le Texier, người phê bình mạnh nhất, dựa trên chính các hồ sơ ấy để chỉ ra hướng dẫn và dữ liệu chọn lọc chứ không nói thí nghiệm bịa.
+      - haslam2019
+      - zimbardo2020
+    ly_do: 'Nhãn cho một khẳng định lịch sử, không phải cho một hiệu ứng: căn cứ là hồ sơ lưu trữ và việc hai phía thừa nhận. Hồ sơ (16 hộp tư liệu ở Stanford, nhật ký, báo cáo ca trực, băng hình, ghi âm) cho thấy thí nghiệm đã diễn ra; người phê bình mạnh nhất (Le Texier 2019) và Haslam, Reicher & Van Bavel 2019 dựa trên chính hồ sơ ấy để phê bình phương pháp, không nói bịa; tác giả gốc (Zimbardo & Haney 2020) bảo vệ kết quả. Không nguồn học thuật nào cho rằng thí nghiệm chưa từng xảy ra, nên khẳng định "bịa đặt toàn bộ" bị bằng chứng bác bỏ.'
     trich: Four other prisoners were released before the official interruption of the experiment.
     vi_tri: Le Texier, bản thảo tr. 23; Haney tr. 70–97
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "http://web.archive.org/web/20150403202719/http://www.prisonexp.org/pdf/blass.pdf" ]
     luot_2_ghi_chu: 'Hồ sơ lưu trữ (giấy tờ, phim, ghi âm) xác nhận thí nghiệm đã diễn ra; không nguồn học thuật nào cho rằng nó bịa toàn bộ. Lưu ý cho review như n37: thước đo mục 4 không viết cho sự kiện lịch sử; nhãn hợp ý "bằng chứng phản bác đủ mạnh".'
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Nhãn cho một khẳng định lịch sử: căn cứ là hồ sơ lưu trữ (giấy tờ, băng hình, ghi âm) và việc hai phía thừa nhận thí nghiệm đã diễn ra: người phê bình mạnh nhất (Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF)) dựa trên chính hồ sơ ấy, Haslam, Reicher & Van Bavel 2019 cũng vậy, Zimbardo & Haney 2020 bảo vệ kết quả. Không nguồn học thuật nào nói bịa toàn bộ, nên "Đã bị bác bỏ" theo nghĩa "bằng chứng phản bác đủ mạnh". Đã viết lại ly_do và thêm zimbardo2020, haslam2019 vào co_so.'
   - id: n48
     cau: Phê bình khoa học nhắm vào phương pháp và cách diễn giải (dàn dựng, hướng dẫn của người thí nghiệm, trình bày chọn lọc), không phủ nhận sự kiện cốt lõi.
     loai: lich-su
@@ -680,10 +719,11 @@ nhan_dinh:
     trich: These data are not only supportive of previous criticisms of the SPE, such as the presence of demand characteristics, but provide new criticisms of the SPE based on heretofore unknown information.
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "hướng dẫn ngầm". Chữ mới: "hướng dẫn của người thí nghiệm". Lý do: như n42.'
+    ghi_chu: 'Chữ cũ: "hướng dẫn ngầm". Chữ mới: "hướng dẫn của người thí nghiệm". Lý do: như n42. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF), tóm tắt. Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://research-repository.st-andrews.ac.uk/bitstream/10023/18565/1/Haslam_American_Psychologist_Cruelty_2019_AAM.pdf" ]
     luot_2_ghi_chu: Le Texier 2019 tóm tắt; các phê bình nhắm vào phương pháp và cách diễn giải.
+    review: dung
   - id: n49
     cau: 'Sức mạnh của tình huống (Zimbardo): vai trò xã hội và bối cảnh thể chế có thể lấn át tính cách cá nhân; đây là cách diễn giải gốc.'
     loai: dinh-nghia
@@ -703,10 +743,11 @@ nhan_dinh:
     trich: such as the presence of demand characteristics
     vi_tri: Abstract; mục Participants
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(đặc biệt khi được hướng dẫn ngầm)". Chữ mới: "(đặc biệt khi được hướng dẫn trực tiếp)". Lý do: như n42.'
+    ghi_chu: 'Chữ cũ: "(đặc biệt khi được hướng dẫn ngầm)". Chữ mới: "(đặc biệt khi được hướng dẫn trực tiếp)". Lý do: như n42. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) và Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) ("demand characteristics… exerted some directing influence"). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: Le Texier 2019 trích Banuazizi và Movahedi 1975; báo cáo gốc cũng nhận "demand characteristics in the experiment obviously exerted some directing influence". Khái niệm của Orne 1962.
+    review: dung
   - id: n51
     cau: 'Cai tù "John Wayne" là ví dụ: Eshleman nói mình diễn vì cho rằng làm vậy tốt hơn cho nghiên cứu (hung hăng vì nghĩ đó là điều được kỳ vọng).'
     loai: lich-su
@@ -727,10 +768,11 @@ nhan_dinh:
     trich: identity leadership argue that roles are unlikely to elicit cruelty unless leaders encourage potential perpetrators to identify with what is presented as a noble ingroup cause and to believe their actions are necessary for the advancement of that cause
     vi_tri: Haslam 2019, Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "con người không tự động phục tùng vai trò; họ hành động theo bản sắc nhóm mà người lãnh đạo khơi gợi. Bạo lực xảy ra khi một thủ lĩnh biến sự tàn ác thành chuẩn mực của \"chúng ta\"". Chữ mới: như câu trên. Lý do: bám đúng tóm tắt của Haslam, Reicher & Van Bavel (2019) (lý thuyết bản sắc lãnh đạo gắn với bài 2019, không phải bài 2006); thêm nguồn vào danh sách Nguồn của trang.'
+    ghi_chu: 'Chữ cũ: "con người không tự động phục tùng vai trò; họ hành động theo bản sắc nhóm mà người lãnh đạo khơi gợi. Bạo lực xảy ra khi một thủ lĩnh biến sự tàn ác thành chuẩn mực của \"chúng ta\"". Chữ mới: như câu trên. Lý do: bám đúng tóm tắt của Haslam, Reicher & Van Bavel (2019) (lý thuyết bản sắc lãnh đạo gắn với bài 2019, không phải bài 2006); thêm nguồn vào danh sách Nguồn của trang. Review (Claude Opus 5.5, 30/10/2026): Haslam, Reicher & Van Bavel 2019, tóm tắt. Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://research-repository.st-andrews.ac.uk/bitstream/10023/18565/1/Haslam_American_Psychologist_Cruelty_2019_AAM.pdf" ]
     luot_2_ghi_chu: Haslam, Reicher và Van Bavel 2019, tóm tắt (bản tác giả).
+    review: dung
   - id: n53
     cau: 'Tự chọn lọc mẫu: hiệu ứng có thể một phần bắt nguồn từ việc những người hung hăng, độc đoán hơn đã tự tìm đến thí nghiệm.'
     loai: lich-su
@@ -739,10 +781,11 @@ nhan_dinh:
     trich: Volunteers for the prison study scored significantly higher on measures of the abuse-related dispositions
     vi_tri: Abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "hiệu ứng có thể bắt nguồn từ việc...". Chữ mới: "hiệu ứng có thể một phần bắt nguồn từ việc...". Lý do: tác giả nói chỉ là phỏng đoán và nghiêng về tương tác người-tình huống.'
+    ghi_chu: 'Chữ cũ: "hiệu ứng có thể bắt nguồn từ việc...". Chữ mới: "hiệu ứng có thể một phần bắt nguồn từ việc...". Lý do: tác giả nói chỉ là phỏng đoán và nghiêng về tương tác người-tình huống. Review (Claude Opus 5.5, 30/10/2026): Carnahan & McFarland 2007 (tóm tắt); "có thể một phần" đúng mức.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/0146167206292689" ]
     luot_2_ghi_chu: Carnahan và McFarland 2007; câu dùng "có thể", đúng mức.
+    review: dung
   - id: n54
     cau: Kết luận "hoàn cảnh xô đẩy" đang bị tranh cãi, nên chưa thể dùng nó để gỡ trách nhiệm cá nhân; ở Stanford ít nhất một số cai tù làm theo hướng dẫn và tự nhận đang diễn.
     loai: loi-khuyen
@@ -752,10 +795,11 @@ nhan_dinh:
     trich: throughout the entire experiment I was an actor, and I was hamming it up. [...] I was role playing.
     vi_tri: Le Texier tr. 19; Haslam 2019 abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "\"Hoàn cảnh xô đẩy\" không xóa trách nhiệm cá nhân. Bài học từ phía phê bình khác hẳn: ..." Chữ mới: "Kết luận \"hoàn cảnh xô đẩy\" chính là điểm đang bị tranh cãi, nên chưa thể dùng nó để gỡ trách nhiệm cá nhân. ..." Lý do: câu cũ là khẳng định đạo đức không nguồn; viết lại thành hệ quả của điều nguồn nói. Câu "ít nhất một số cai tù đã làm theo hướng dẫn và tự nhận là đang diễn": Le Texier (hướng dẫn, Eshleman và Barnett nói mình đang diễn).'
+    ghi_chu: 'Chữ cũ: "\"Hoàn cảnh xô đẩy\" không xóa trách nhiệm cá nhân. Bài học từ phía phê bình khác hẳn: ..." Chữ mới: "Kết luận \"hoàn cảnh xô đẩy\" chính là điểm đang bị tranh cãi, nên chưa thể dùng nó để gỡ trách nhiệm cá nhân. ..." Lý do: câu cũ là khẳng định đạo đức không nguồn; viết lại thành hệ quả của điều nguồn nói. Câu "ít nhất một số cai tù đã làm theo hướng dẫn và tự nhận là đang diễn": Le Texier (hướng dẫn, Eshleman và Barnett nói mình đang diễn). Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) (hướng dẫn; Eshleman, Barnett nói mình diễn). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf" ]
     luot_2_ghi_chu: Le Texier 2019 tr. 7–8; chính báo cáo gốc cũng bàn việc viện cớ "đóng vai" để rũ trách nhiệm.
+    review: dung
   - id: n55
     cau: Theo kết luận gốc của Zimbardo (đang bị tranh cãi), đồng phục, chức danh và "luật bất thành văn" của nhóm có thể khiến người ta làm điều bình thường họ không làm; theo nhóm BBC, điều đáng để ý là nhóm đang đồng nhất với điều gì và người lãnh đạo khơi gợi điều gì.
     loai: loi-khuyen
@@ -765,10 +809,11 @@ nhan_dinh:
     trich: This suggests that it is powerlessness and the failure of groups that makes tyranny psychologically acceptable. | uniforms ... issued identical uniforms ... promote feelings of anonymity
     vi_tri: Haney, Uniform; Reicher & Haslam, Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "đồng phục, chức danh, ... có thể khiến người ta làm những việc lúc bình thường họ không làm. Cách chống đỡ hiệu quả nhất, theo nghiên cứu BBC, không phải trông chờ \"bản chất tốt\" ... mà là xây dựng chuẩn mực nhóm lành mạnh và cơ chế để người yếu thế lên tiếng." Chữ mới: như câu trên. Lý do: nghiên cứu BBC không thử "chuẩn mực nhóm lành mạnh" hay "cơ chế để người yếu thế lên tiếng" nên bỏ khuyến nghị; câu đầu gắn rõ với kết luận gốc đang tranh cãi.'
+    ghi_chu: 'Chữ cũ: "đồng phục, chức danh, ... có thể khiến người ta làm những việc lúc bình thường họ không làm. Cách chống đỡ hiệu quả nhất, theo nghiên cứu BBC, không phải trông chờ \"bản chất tốt\" ... mà là xây dựng chuẩn mực nhóm lành mạnh và cơ chế để người yếu thế lên tiếng." Chữ mới: như câu trên. Lý do: nghiên cứu BBC không thử "chuẩn mực nhóm lành mạnh" hay "cơ chế để người yếu thế lên tiếng" nên bỏ khuyến nghị; câu đầu gắn rõ với kết luận gốc đang tranh cãi. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP) (đồng phục, vai); Reicher & Haslam 2006 (toàn văn). Trang gắn đúng hai cách hiểu.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "https://research-repository.st-andrews.ac.uk/bitstream/10023/18565/1/Haslam_American_Psychologist_Cruelty_2019_AAM.pdf", "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1001426&type=printable" ]
     luot_2_ghi_chu: "Hai cách hiểu được gán đúng: báo cáo gốc (đồng phục, vai, môi trường) và nhóm Reicher, Haslam (lãnh đạo bản sắc)."
+    review: dung
   - id: n56
     cau: Một câu chuyện hấp dẫn có thể sống trong sách giáo khoa hàng chục năm dù bằng chứng gốc có nhiều điểm yếu; khi gặp kết quả "gây sốc", hãy hỏi đã ai làm lại được chưa và mẫu có đại diện không.
     loai: loi-khuyen
@@ -778,10 +823,11 @@ nhan_dinh:
     trich: a majority of textbook authors have ignored these criticisms in their discussions of the SPE, thereby misleading both students and the general public
     vi_tri: Le Texier, Abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "dù bằng chứng gốc rất mong manh". Chữ mới: "có nhiều điểm yếu". Lý do: Le Texier nói "questionable scientific validity", không "rất mong manh". Hai câu hỏi (làm lại được chưa, mẫu đại diện không) dựa trên hai điểm yếu có nguồn: thiếu tái lập độc lập (BBC Prison Study là thiết kế khác) và mẫu tự chọn (Carnahan & McFarland).'
+    ghi_chu: 'Chữ cũ: "dù bằng chứng gốc rất mong manh". Chữ mới: "có nhiều điểm yếu". Lý do: Le Texier nói "questionable scientific validity", không "rất mong manh". Hai câu hỏi (làm lại được chưa, mẫu đại diện không) dựa trên hai điểm yếu có nguồn: thiếu tái lập độc lập (BBC Prison Study là thiết kế khác) và mẫu tự chọn (Carnahan & McFarland). Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF), tóm tắt. Lời khuyên chung, không vượt nguồn.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019; lời khuyên chung, không vượt bằng chứng.
+    review: dung
   - id: n57
     cau: Tính đến 10/2026, chưa tìm thấy nghiên cứu nào tương tự thí nghiệm Zimbardo trên người Việt.
     loai: thoi-su
@@ -791,10 +837,11 @@ nhan_dinh:
     trich: the ethical concerns that have placed the SPE "off-limits" (with the exception of a partial replication by Lovibond, Mithiran, & Adams, 1979)
     vi_tri: Reicher & Haslam, Introduction
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy bất kỳ nghiên cứu tương tự nào trên người Việt". Chữ mới: thêm mốc "Tính đến 10/2026". Tìm ngày 30/10/2026: WebSearch "Stanford prison experiment replication Vietnam OR Vietnamese participants" không có kết quả nào về mẫu Việt; chỉ có BBC Prison Study. Chưa tìm trong cơ sở dữ liệu tiếng Việt (Tạp chí Tâm lý học, Vietnam Journals Online): chưa chắc: nên để lượt 2 hay review tìm thêm bằng tiếng Việt.'
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy bất kỳ nghiên cứu tương tự nào trên người Việt". Chữ mới: thêm mốc "Tính đến 10/2026". Tìm ngày 30/10/2026: WebSearch "Stanford prison experiment replication Vietnam OR Vietnamese participants" không có kết quả nào về mẫu Việt; chỉ có BBC Prison Study. Chưa tìm trong cơ sở dữ liệu tiếng Việt (Tạp chí Tâm lý học, Vietnam Journals Online): chưa chắc: nên để lượt 2 hay review tìm thêm bằng tiếng Việt. Review (Claude Opus 5.5, 30/10/2026): Câu thời sự có mốc "Tính đến 10/2026", loai thoi-su, het_han 2028-10-30; review tìm OpenAlex (Stanford prison experiment Vietnam) không thấy.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works?search=Stanford%20prison%20experiment%20Vietnam" ]
     luot_2_ghi_chu: Lượt 2 cũng không tìm thấy (30/10/2026). Câu thời sự, cần het_han.
+    review: dung
   - id: n58
     cau: Một thí nghiệm giam người, gây căng thẳng tâm lý như của Zimbardo ngày nay khó có thể được phê duyệt theo chuẩn mực đạo đức nghiên cứu hiện hành.
     loai: lich-su
@@ -803,22 +850,24 @@ nhan_dinh:
     trich: the ethical concerns that have placed the SPE "off-limits"
     vi_tri: Reicher & Haslam, mục Introduction
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "ngày nay không thể qua được bất kỳ hội đồng đạo đức nghiên cứu nào, ở Việt Nam hay bất kỳ đâu" (cũng ở Ngộ nhận: "không hội đồng đạo đức nào hiện nay cho phép"). Chữ mới: "khó có thể được phê duyệt theo chuẩn mực đạo đức nghiên cứu hiện hành". Lý do: nguồn nói thí nghiệm bị coi là "off-limits" vì lo ngại đạo đức, không khảo sát mọi hội đồng.'
+    ghi_chu: 'Chữ cũ: "ngày nay không thể qua được bất kỳ hội đồng đạo đức nghiên cứu nào, ở Việt Nam hay bất kỳ đâu" (cũng ở Ngộ nhận: "không hội đồng đạo đức nào hiện nay cho phép"). Chữ mới: "khó có thể được phê duyệt theo chuẩn mực đạo đức nghiên cứu hiện hành". Lý do: nguồn nói thí nghiệm bị coi là "off-limits" vì lo ngại đạo đức, không khảo sát mọi hội đồng. Review (Claude Opus 5.5, 30/10/2026): Reicher & Haslam 2006 (toàn văn) (SPE "off-limits" vì đạo đức). "Khó có thể" đúng mức.'
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20150403202719/http://www.prisonexp.org/pdf/blass.pdf", "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "http://web.archive.org/web/20081004225000/http://www.bbcprisonstudy.org:80/bbc-prison-study.php?p=26" ]
     luot_2_ghi_chu: 'Zimbardo, Maslach và Haney 1999; Le Texier 2019: giao thức nói tù nhân "will be discouraged from quitting"; BBC 2002 phải qua hội đồng đạo đức, thiết kế nhẹ hơn. Không có nguồn nói thẳng "không được duyệt", nhưng "khó có thể" là đúng mức.'
+    review: dung
   - id: n59
-    cau: Le Texier (2019) chỉ ra rằng phần lớn tác giả sách giáo khoa tâm lý học bỏ qua các phê bình về thí nghiệm Zimbardo và kể lại một phiên bản chưa qua kiểm chứng.
+    cau: Le Texier (2019) chỉ ra rằng phần lớn tác giả sách giáo khoa tâm lý học (ông khảo sát chủ yếu sách tiếng Anh) bỏ qua các phê bình về thí nghiệm Zimbardo và kể lại một phiên bản chưa qua kiểm chứng.
     loai: lich-su
     nguon:
       - letexier2019
     trich: a majority of textbook authors have ignored these criticisms in their discussions of the SPE
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Những gì độc giả Việt Nam biết về thí nghiệm chủ yếu qua sách giáo khoa và báo chí phổ thông — mà các nguồn này, như Le Texier chỉ ra, thường kể lại phiên bản huyền thoại chưa qua kiểm chứng". Chữ mới: bỏ khẳng định về nguồn của độc giả Việt Nam (không có dữ liệu) và nêu đúng điều Le Texier khảo sát (sách giáo khoa, chủ yếu tiếng Anh). Lý do: không có nguồn về việc người Việt biết thí nghiệm qua đâu.'
+    ghi_chu: 'Chữ cũ: "Những gì độc giả Việt Nam biết về thí nghiệm chủ yếu qua sách giáo khoa và báo chí phổ thông — mà các nguồn này, như Le Texier chỉ ra, thường kể lại phiên bản huyền thoại chưa qua kiểm chứng". Chữ mới: bỏ khẳng định về nguồn của độc giả Việt Nam (không có dữ liệu) và nêu đúng điều Le Texier khảo sát (sách giáo khoa, chủ yếu tiếng Anh). Lý do: không có nguồn về việc người Việt biết thí nghiệm qua đâu. Review (Claude Opus 5.5, 30/10/2026): Câu cuối trên trang chưa khớp ghi_chu của lượt 1: trang vẫn còn "Độc giả Việt Nam có lẽ thường biết thí nghiệm qua sách và báo phổ thông", một khẳng định về độc giả Việt Nam không có nguồn mà lượt 1 nói đã bỏ. Review đã bỏ vế ấy; vế Le Texier (tóm tắt: "a majority of textbook authors have ignored these criticisms") giữ.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019, tóm tắt (dựa trên các phân tích sách giáo khoa của Griggs 2014, Bartels 2015).
+    review: sai
   - id: n60
     cau: 'Điều chắc chắn hơn kết luận "ai cũng có thể thành kẻ ác": trong một nhà tù giả được dàn dựng, một số người đã hành xử tàn nhẫn thật.'
     loai: phat-hien
@@ -838,10 +887,11 @@ nhan_dinh:
     trich: Some guards were tough but fair ("played by the rules"), some went far beyond their roles to engage in creative cruelty and harassment, while a few were passive
     vi_tri: Haney, mục Discussion
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "chỉ một bộ phận cai tù hung hăng rõ rệt; số còn lại trung lập, thậm chí có người tử tế". Chữ mới: như câu trên. Lý do: báo cáo gốc phân loại "cứng nhưng công bằng", "sáng tạo tàn nhẫn", "thụ động"; không có "trung lập" hay "tử tế" theo nghĩa đó.'
+    ghi_chu: 'Chữ cũ: "chỉ một bộ phận cai tù hung hăng rõ rệt; số còn lại trung lập, thậm chí có người tử tế". Chữ mới: như câu trên. Lý do: báo cáo gốc phân loại "cứng nhưng công bằng", "sáng tạo tàn nhẫn", "thụ động"; không có "trung lập" hay "tử tế" theo nghĩa đó. Review (Claude Opus 5.5, 30/10/2026): Haney, Banks & Zimbardo 1973 (toàn văn, bản quét prisonexp.org/OJP), Discussion ("tough but fair… creative cruelty… a few were passive"). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ojp.gov/pdffiles1/Photocopy/10301NCJRS.pdf", "https://archive.org/download/zimbardo451977/A%20Study%20of%20Prisoners%20and%20Guards%20by%20Philip%20Zimbardo_text.pdf" ]
     luot_2_ghi_chu: 'Báo cáo gốc: "At least a third of the guards" (tóm tắt) và đoạn về khác biệt cá nhân.'
+    review: dung
   - id: n62
     cau: Thí nghiệm gần như không thể làm lại nguyên văn ngày nay vì lý do đạo đức; vì vậy tranh luận dựa vào hồ sơ lưu trữ và thiết kế thay thế như BBC Prison Study.
     loai: lich-su
@@ -851,10 +901,11 @@ nhan_dinh:
     trich: the ethical concerns that have placed the SPE "off-limits"
     vi_tri: Reicher & Haslam, Introduction
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Không — không hội đồng đạo đức nào hiện nay cho phép giam người và gây sang chấn tâm lý như vậy." Chữ mới: "Gần như không — theo chuẩn mực hiện nay, một thiết kế giam người và gây căng thẳng tâm lý như vậy khó được phê duyệt." Lý do: như n58; "sang chấn" đổi "căng thẳng" cho khớp.'
+    ghi_chu: 'Chữ cũ: "Không — không hội đồng đạo đức nào hiện nay cho phép giam người và gây sang chấn tâm lý như vậy." Chữ mới: "Gần như không — theo chuẩn mực hiện nay, một thiết kế giam người và gây căng thẳng tâm lý như vậy khó được phê duyệt." Lý do: như n58; "sang chấn" đổi "căng thẳng" cho khớp. Review (Claude Opus 5.5, 30/10/2026): Reicher & Haslam 2006 (toàn văn); Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20150403202719/http://www.prisonexp.org/pdf/blass.pdf", "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://api.openalex.org/works/doi:10.1348/014466605X48998" ]
     luot_2_ghi_chu: Không có bản làm lại nguyên văn; tranh luận dựa trên lưu trữ (Le Texier; Haslam và cộng sự 2019) và BBC Prison Study.
+    review: dung
   - id: n63
     cau: 'Phê bình Le Texier không có nghĩa Zimbardo nói dối toàn bộ: phê bình nhắm vào tính khoa học của thiết kế và cách diễn giải.'
     loai: lich-su
@@ -911,10 +962,11 @@ nhan_dinh:
     trich: further question the study's scientific merit
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "ông chứng minh đây giống một màn minh họa được dàn dựng (hướng dẫn ngầm, diễn xuất, dữ liệu chọn lọc) hơn là thí nghiệm khoa học đúng nghĩa". Chữ mới: như câu trên. Lý do: như n30, n42.'
+    ghi_chu: 'Chữ cũ: "ông chứng minh đây giống một màn minh họa được dàn dựng (hướng dẫn ngầm, diễn xuất, dữ liệu chọn lọc) hơn là thí nghiệm khoa học đúng nghĩa". Chữ mới: như câu trên. Lý do: như n30, n42. Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF), tóm tắt ("precise instructions", "demand characteristics", "biased and incomplete collection of data"). Lời giải thích câu hỏi 2 khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019, tóm tắt và kết quả.
+    review: dung
   - id: q3a
     cau: 'BBC Prison Study cho kết quả ngược: cai tù không đồng nhất với vai trò, ngần ngại dùng quyền lực; bạo lực không phải hệ quả tự động của vai trò và tình huống.'
     loai: phat-hien
@@ -928,23 +980,24 @@ nhan_dinh:
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1348/014466605X48998" ]
     luot_2_ghi_chu: Reicher và Haslam 2006, tóm tắt.
   - id: q3b
-    cau: Điều khiến sự tàn ác trở nên "chấp nhận được" là sự bất lực của tập thể và vai trò của người lãnh đạo, không phải chiếc áo cai tù.
+    cau: Theo Reicher và Haslam, điều khiến sự tàn ác trở nên "chấp nhận được" là sự bất lực và thất bại của các nhóm, không phải chiếc áo cai tù.
     loai: phat-hien
     nguon:
       - reicher2006
-      - haslam2019
     trich: it is powerlessness and the failure of groups that makes tyranny psychologically acceptable
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "là sự bất lực của tập thể và vai trò của người lãnh đạo — chứ không phải chiếc áo cai tù tự nó". Chữ mới: "là sự bất lực và thất bại của các nhóm — chứ không phải chiếc áo cai tù tự nó". Lý do: như n36.'
+    ghi_chu: 'Chữ cũ: "là sự bất lực của tập thể và vai trò của người lãnh đạo — chứ không phải chiếc áo cai tù tự nó". Chữ mới: "là sự bất lực và thất bại của các nhóm — chứ không phải chiếc áo cai tù tự nó". Lý do: như n36. Review (Claude Opus 5.5, 30/10/2026): Ghi_chu lượt 1 nói đã đổi lời giải thích câu hỏi 3 thành "sự bất lực và thất bại của các nhóm", nhưng trang vẫn còn chữ cũ "sự bất lực của tập thể và vai trò của người lãnh đạo". Câu hỏi nói về BBC Prison Study; Reicher & Haslam 2006 (toàn văn), tóm tắt: "it is powerlessness and the failure of groups that makes tyranny psychologically acceptable", không nói vai trò người lãnh đạo (ý ấy là của Haslam, Reicher & Van Bavel 2019, đã có ở mục Lý thuyết). Đã sửa lời giải thích theo tóm tắt và thêm "Theo Reicher và Haslam".'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1348/014466605X48998", "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1001426&type=printable" ]
     luot_2_ghi_chu: 'Tóm tắt; vai trò lãnh đạo: Haslam và Reicher 2012 ("creative leadership and engaged followership").'
+    review: sai
   - id: q4a
     cau: Kết luận gốc "tình huống biến người bình thường thành tàn ác" được gắn nhãn "đang tranh cãi" trên trang này.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm trên trang: khung :::tranh-cai[kết luận gốc ''tình huống biến người bình thường thành tàn ác''].'
+    ghi_chu: 'Đã kiểm trên trang: khung :::tranh-cai[kết luận gốc ''tình huống biến người bình thường thành tàn ác'']. Review (Claude Opus 5.5, 30/10/2026): Trang có khung :::tranh-cai[kết luận gốc ''tình huống biến người bình thường thành tàn ác''].'
+    review: dung
   - id: q4b
     cau: Các sự kiện cơ bản là vững chắc; điều chưa ngã ngũ là ý nghĩa của chúng; phần lớn các phân tích gần đây hoài nghi kết luận gốc.
     loai: lich-su
@@ -956,10 +1009,11 @@ nhan_dinh:
     trich: Four other prisoners were released ... | rather than guards conforming to role of their own accord, experimenters directly encouraged them
     vi_tri: Le Texier tr. 23; Haslam 2019 abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "và cán cân bằng chứng gần đây nghiêng về phía hoài nghi". Chữ mới: "và phần lớn các phân tích gần đây hoài nghi kết luận gốc". Lý do: như n43.'
+    ghi_chu: 'Chữ cũ: "và cán cân bằng chứng gần đây nghiêng về phía hoài nghi". Chữ mới: "và phần lớn các phân tích gần đây hoài nghi kết luận gốc". Lý do: như n43. Review (Claude Opus 5.5, 30/10/2026): Như n37, n43.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf", "https://research-repository.st-andrews.ac.uk/bitstream/10023/18565/1/Haslam_American_Psychologist_Cruelty_2019_AAM.pdf", "https://api.openalex.org/works/doi:10.1037/amp0000593" ]
     luot_2_ghi_chu: Như n37 và n43.
+    review: dung
   - id: q5a
     cau: 'Bài học ứng dụng đúng đắn: đừng dùng "sức mạnh tình huống" để biện minh cho hành vi sai trái; khi gặp kết quả khoa học gây sốc, hãy hỏi đã ai làm lại được chưa và mẫu có đại diện không.'
     loai: loi-khuyen
@@ -981,10 +1035,11 @@ nhan_dinh:
     trich: The Stanford Prison Experiment (SPE) is one of psychology's most famous studies. ... a majority of textbook authors have ignored these criticisms
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "suốt nửa thế kỷ". Chữ mới: "gần nửa thế kỷ". Lý do: 1971 đến 2019. "Mong manh" là đánh giá chung, bám ý "questionable scientific validity".'
+    ghi_chu: 'Chữ cũ: "suốt nửa thế kỷ". Chữ mới: "gần nửa thế kỷ". Lý do: 1971 đến 2019. "Mong manh" là đánh giá chung, bám ý "questionable scientific validity". Review (Claude Opus 5.5, 30/10/2026): Le Texier 2019 (toàn văn bản in, Am Psychol 74(7), và bản thảo OSF) (1971 đến 2019). Trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.gwern.net/doc/psychology/2019-letexier.pdf" ]
     luot_2_ghi_chu: Le Texier 2019, tóm tắt.
+    review: dung
 doi_chu:
   - cu: (không có)
     moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
@@ -1073,4 +1128,22 @@ doi_chu:
   - cu: đã sống trong sách giáo khoa suốt nửa thế kỷ
     moi: đã sống trong sách giáo khoa gần nửa thế kỷ
     ly_do: q5b.
+  - cu: Sau 2 ngày, tù nhân nổi loạn
+    moi: Ngay ngày thứ hai, tù nhân nổi loạn
+    ly_do: 'Review: Le Texier 2019, "the rebellion on the second day" (hồ sơ n17).'
+  - cu: chỉ khoảng hai trong 10 tù nhân thật sự có triệu chứng suy sụp thần kinh
+    moi: chỉ khoảng hai trong 11 tù nhân mà ông đếm thật sự có triệu chứng suy sụp thần kinh
+    ly_do: 'Review: bản in của Le Texier 2019 ghi "Out of the 11 prisoners" (bản thảo ghi 10) (hồ sơ n20).'
+  - cu: Nhà xã hội học Thibault Le Texier lục lại
+    moi: Thibault Le Texier, nhà nghiên cứu ở Đại học Nice (Pháp), lục lại
+    ly_do: 'Review: không nguồn nào nói ông là nhà xã hội học; bài ghi Université de Nice Sophia Antipolis (hồ sơ n25).'
+  - cu: 'Một loạt vấn đề lộ ra: cai tù đã nhận **hướng dẫn chi tiết** về cách đối xử với tù nhân trong buổi định hướng;'
+    moi: 'Theo Le Texier, hồ sơ lưu trữ cho thấy một loạt vấn đề: cai tù đã nhận **hướng dẫn chi tiết** về cách đối xử với tù nhân trong buổi định hướng, trái với báo cáo gốc nói họ cố ý chỉ được hướng dẫn tối thiểu;'
+    ly_do: 'Review: là kết luận của Le Texier từ hồ sơ, báo cáo gốc nói khác (hồ sơ n18).'
+  - cu: Độc giả Việt Nam có lẽ thường biết thí nghiệm qua sách và báo phổ thông; Le Texier (2019) chỉ ra
+    moi: Le Texier (2019) chỉ ra
+    ly_do: 'Review: khẳng định về độc giả Việt Nam không có nguồn (hồ sơ n59).'
+  - cu: '> Điều khiến sự tàn ác trở nên "chấp nhận được" là sự bất lực của tập thể và vai trò của người lãnh đạo — chứ không phải chiếc áo cai tù tự nó.'
+    moi: '> Theo Reicher và Haslam, điều khiến sự tàn ác trở nên "chấp nhận được" là sự bất lực và thất bại của các nhóm — chứ không phải chiếc áo cai tù tự nó.'
+    ly_do: 'Review: theo tóm tắt Reicher & Haslam 2006 (hồ sơ q3b).'
 ghi_chu: 'Haney 1973 (bản quét, OCR) đọc toàn văn; Le Texier là bản thảo PsyArXiv (số trang theo bản thảo); Reicher & Haslam toàn văn qua CiteSeerX; Carnahan, Zimbardo & Haney 2020, Haslam 2019 chỉ đọc tóm tắt. Zimbardo (2007) sách Lucifer Effect không đọc. Nguồn phụ: prisonexp.org (lời kể của Zimbardo).'

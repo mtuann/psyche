@@ -15,7 +15,7 @@ in_duoc: true
 
 ## Tự trải nghiệm
 
-Hãy tưởng tượng bạn là giáo viên chủ nhiệm một lớp tiểu học. Đầu năm học, một nhóm nghiên cứu từ trường đại học đến trường bạn, cho cả lớp làm một bài kiểm tra mà họ gọi là "Bài kiểm tra Harvard về khả năng tiếp thu". Vài tuần sau, họ đưa cho bạn một danh sách: 5 học sinh trong lớp được dự đoán sẽ "nở muộn" — tức là sắp có bước bứt phá trí tuệ trong năm học này.
+Hãy tưởng tượng bạn là giáo viên chủ nhiệm một lớp tiểu học. Cuối năm học trước, một nhóm nghiên cứu từ trường đại học đến trường bạn, cho cả trường làm một bài kiểm tra mà họ gọi là "Bài kiểm tra Harvard về khả năng tiếp thu". Đầu năm học mới, họ đưa cho bạn một danh sách: khoảng một phần năm lớp (giả sử 5 trong 25 học sinh) được dự đoán sẽ "nở muộn" — tức là sắp có bước bứt phá trí tuệ trong năm học này.
 
 Bạn không biết rằng danh sách ấy được bốc ngẫu nhiên. Năm cái tên đó chẳng giỏi hơn ai.
 
@@ -39,7 +39,7 @@ Trước khi bước vào lớp học, Robert Rosenthal thử ý tưởng này t
 
 **Thiết kế.** Sinh viên trong một lớp tâm lý học được giao mỗi người năm con chuột để huấn luyện chạy mê cung chữ T. Một nửa sinh viên được bảo rằng chuột của họ thuộc dòng "thông minh mê cung" (maze-bright); nửa còn lại được bảo chuột của họ thuộc dòng "đần mê cung" (maze-dull). Thực ra không có dòng "thông minh" hay "đần" nào: tất cả là chuột bạch bình thường, được gắn nhãn ngẫu nhiên (chỉ giới hạn để tuổi trung bình của các nhóm gần nhau).
 
-**Kết quả.** Chuột của nhóm sinh viên tin rằng mình đang nuôi chuột "thông minh" chọn đúng nhánh mê cung nhiều hơn, rõ nhất qua cả năm ngày gộp lại. Khi được hỏi, các sinh viên này cũng đánh giá chuột của mình sạch hơn, thuần hơn, dễ chịu hơn, tự mô tả mình thoải mái, thân thiện, khích lệ hơn, và cho biết họ cầm chuột nhiều hơn, nhẹ nhàng hơn (riêng điểm cầm nắm chưa đạt ý nghĩa thống kê, p = 0,09). Các tác giả cho rằng kỳ vọng của người huấn luyện — dù hoàn toàn bịa đặt — đã thay đổi cách họ đối xử với chuột, và điều đó có thể đã ảnh hưởng đến kết quả của con chuột ([Rosenthal & Fode, 1963](https://doi.org/10.1002/bs.3830080302)).
+**Kết quả.** Chuột của nhóm sinh viên tin rằng mình đang nuôi chuột "thông minh" chọn đúng nhánh mê cung nhiều hơn rõ rệt (gộp năm ngày: p một phía = 0,01; riêng ngày 2 và ngày 3 chưa có ý nghĩa thống kê). Khi được hỏi, các sinh viên này cũng đánh giá chuột của mình sạch hơn, thuần hơn, dễ chịu hơn, tự mô tả mình thoải mái, thân thiện, khích lệ hơn, và cho biết họ cầm chuột nhiều hơn, nhẹ nhàng hơn (riêng điểm cầm nắm chưa đạt ý nghĩa thống kê, p = 0,09). Các tác giả cho rằng kỳ vọng của người huấn luyện — dù hoàn toàn bịa đặt — đã thay đổi cách họ đối xử với chuột, và điều đó có thể đã ảnh hưởng đến kết quả của con chuột ([Rosenthal & Fode, 1963](https://doi.org/10.1002/bs.3830080302)).
 
 ### Rosenthal & Jacobson (1968): "ngôi trường Oak"
 
@@ -53,14 +53,14 @@ Từ chuột sang người: Rosenthal bắt tay với Lenore Jacobson để làm
 
 Thí nghiệm gốc gây chấn động, nhưng cũng gây tranh cãi dữ dội. Stephen Raudenbush không cãi bằng lời mà dùng số: ông gom 18 thí nghiệm về kỳ vọng giáo viên (kể cả nghiên cứu gốc) làm một phân tích tổng hợp.
 
-**Thiết kế.** 19 cỡ hiệu ứng từ 18 nghiên cứu độc lập được đưa về cùng một thước đo, rồi xem hiệu ứng trung bình lớn cỡ nào và điều kiện nào làm nó mạnh lên hay yếu đi.
+**Thiết kế.** Cỡ hiệu ứng của 18 nghiên cứu độc lập được đưa về cùng một thước đo, rồi xem hiệu ứng trung bình lớn cỡ nào và điều kiện nào làm nó mạnh lên hay yếu đi.
 
 **Kết quả.** Hiệu ứng trung bình chỉ là 0,11 — nhỏ, và có đạt ý nghĩa thống kê hay không còn tùy cách kiểm định; nhỏ hơn nhiều so với ấn tượng mà nghiên cứu gốc để lại. Quan trọng hơn, Raudenbush phát hiện một quy luật: hiệu ứng mạnh nhất khi kỳ vọng được "gieo" vào lúc giáo viên chưa quen học sinh (4 thí nghiệm không có tiếp xúc trước: cỡ hiệu ứng trung bình 0,32; 3 thí nghiệm có một tuần tiếp xúc trước: 0,26); còn khi giáo viên đã dạy lớp hơn hai tuần — tức là đã có ấn tượng riêng — thì thông tin bịa đặt gần như không còn tác dụng (8 thí nghiệm: −0,04) ([Raudenbush, 1984](https://doi.org/10.1037/0022-0663.76.1.85)).
 
 ## Mức độ chắc chắn
 
-:::vung-chac[kỳ vọng của người khác có thể tự ứng nghiệm]
-Không chỉ một nghiên cứu đơn lẻ: tổng quan 345 nghiên cứu của Rosenthal và Rubin (1978), được Raudenbush dẫn lại, cho thấy kỳ vọng của người quan sát hay người huấn luyện có thể ảnh hưởng đến kết quả ở nhiều bối cảnh, trong đó có lớp học (thí nghiệm chuột bạch của Rosenthal và Fode năm 1963 là một ví dụ); tổng quan 35 năm của Jussim và Harber (2005) cũng kết luận lời tiên tri tự ứng nghiệm trong lớp học có xảy ra, nhưng thường nhỏ.
+:::kha-vung[kỳ vọng của người khác có thể tự ứng nghiệm, nhưng thường nhỏ]
+Không chỉ một nghiên cứu đơn lẻ: tổng quan 345 nghiên cứu của Rosenthal và Rubin (1978), được Raudenbush dẫn lại, cho thấy kỳ vọng của người quan sát hay người huấn luyện có thể ảnh hưởng đến kết quả ở nhiều bối cảnh, trong đó có lớp học (thí nghiệm chuột bạch của Rosenthal và Fode năm 1963 là một ví dụ); tổng quan 35 năm của Jussim và Harber (2005) cũng kết luận lời tiên tri tự ứng nghiệm trong lớp học có xảy ra, nhưng thường nhỏ. Raudenbush thấy hiệu ứng trung bình trong các thí nghiệm lớp học có đạt ý nghĩa thống kê hay không còn tùy cách kiểm định, và trong các nguồn đã đọc chúng tôi không thấy tái lập lớn có đăng ký trước, nên nhãn dừng ở "khá vững".
 :::
 
 :::kha-vung[kỳ vọng của giáo viên ảnh hưởng kết quả học sinh, nhưng hiệu ứng nhỏ và có điều kiện]
@@ -114,7 +114,7 @@ Một điểm đáng suy nghĩ: ở nơi nào học sinh bị xếp sớm vào c
 + Khi kỳ vọng được tạo ra lúc giáo viên chưa quen học sinh (chưa hoặc mới tiếp xúc khoảng một tuần); hiệu ứng trung bình chung chỉ khoảng 0,11.
 - Khi giáo viên đã dạy lớp cả học kỳ và hiểu rõ từng em.
 - Khi học sinh ở độ tuổi trung học, đã có ý thức cạnh tranh.
-> Raudenbush phát hiện quy luật rõ rệt: giáo viên đã có ấn tượng riêng thì thông tin bịa đặt gần như vô tác dụng — kỳ vọng chỉ "gieo" được trên mảnh đất trống.
+> Trong các thí nghiệm gieo thông tin bịa đặt về IQ, hiệu ứng chỉ rõ khi giáo viên chưa quen học sinh (khoảng hai tuần đầu) và gần như biến mất sau đó. Điều này chưa nói về kỳ vọng hình thành tự nhiên: các tổng quan vẫn thấy tác động nhỏ, có thể mạnh hơn ở học sinh thuộc nhóm bị kỳ thị.
 ? Phê bình nổi tiếng nhất nhắm vào nghiên cứu gốc là gì?
 - Rằng Rosenthal đã hối lộ giáo viên để họ thiên vị.
 + Rằng bài kiểm tra đầu vào có vấn đề (điểm ban đầu thấp phi lý, như "IQ" lập luận trung bình 58 ở lớp 1), nên các kết luận của sách không được dữ liệu đỡ vững — phê bình của Thorndike (1968).
