@@ -25,6 +25,7 @@ Không chạy lệnh git. Không dùng trang nguồn mà lượt 1 đã tải.
 - Tình trạng bằng chứng (nhãn): phân tích tổng hợp, tổng quan hệ thống (Cochrane, Psychological Bulletin, Annual Review), tái lập lớn có đăng ký trước (Many Labs, Registered Replication Report).
 - Sức khỏe tâm thần: ICD-11 (bản trực tuyến của WHO), hướng dẫn lâm sàng (WHO, NICE), tổng quan hệ thống; DSM-5-TR qua tài liệu chính thức của APA.
 - Định nghĩa khái niệm: APA Dictionary of Psychology, giáo trình mở (OpenStax *Psychology 2e*, Noba) dẫn đúng chương.
+- Bài cũ: toàn văn hay có ở Internet Archive (bộ `wikipedia-scholarly-sources-corpus`), psychclassics.yorku.ca, gwern.net, CiteSeerX, PubMed Central; tóm tắt qua OpenAlex khi Crossref không có. Cố mở bài gốc ở các nơi này trước khi ghi `khong-chac`.
 - Wikipedia, báo, blog chỉ để tìm nguồn.
 
 ## Kết quả

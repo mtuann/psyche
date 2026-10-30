@@ -153,7 +153,8 @@ test('tóm tắt đầu bài (từ các khung nhãn của trang) và hồ sơ ng
 });
 
 test('bảng: bọc trong vùng cuộn nhận focus, mỗi vùng một tên riêng trong trang', () => {
-	const html = dung('| a | b |\n|---|---|\n| 1 | 2 |\n\nĐoạn.\n\n| c |\n|---|\n| 3 |');
+	const html = dung('| a | b |\n|---|---|\n| 1 | :nhan[vung-chac] |\n\nĐoạn.\n\n| c |\n|---|\n| 3 |');
+	assert.match(html, /<td><span class="pz-tag pz-tag--vung-chac">Vững chắc<\/span><\/td>/, 'chip nhãn trong ô bảng');
 	const vung = html.match(/<div class="pz-bang"[^>]*>\s*<table/g) ?? [];
 	assert.equal(vung.length, 2);
 	assert.ok(vung.every((v) => /tabindex="0"/.test(v) && /role="region"/.test(v)));

@@ -51,7 +51,7 @@ Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 | 0 | Dựng repo mới, kế hoạch | | Chưa đăng gì | 0,5 ngày | Xong 29/10/2026 (`bao-cao/d0.md`) |
 | 1 | Nền kỹ thuật | D1.1–D1.8 | Trang chủ tạm, trang 404 ở `/psyche/`; ba trang thử ở bản xem | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d1-1.md` … `d1-8.md`): review và kiểm lại đạt, CI 6/6 job, gộp vào `main` (`1e25fa8`), deploy đăng trang chủ tạm và 404 mới |
 | 2 | Dữ liệu dùng chung và lối vào | D2-0, D2-L1 | Trang chủ thật, Bắt đầu, Cách đọc nhãn, Hỗ trợ, Cách Psyche kiểm chứng, 14 trang lĩnh vực (20 trang) | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d2-0.md`, `d2-l1.md`): 556 bản ghi và 20 trang đã khóa |
-| 3 | Thí nghiệm kinh điển | D3-L1, D3-L2 | 15 thí nghiệm và mục lục (36 trang) | 2–3 ngày | Chưa làm |
+| 3 | Thí nghiệm kinh điển | D3-L1, D3-L2 | 15 thí nghiệm và mục lục (36 trang) | 2–3 ngày | Xong 30/10/2026 (`bao-cao/d3-l1.md`, `d3-l2.md`): 16 trang đã khóa |
 | 4 | Hiểu bằng chứng | D4-L1, D4-L2 | 12 bài phương pháp và mục lục (49 trang) | 1,5–2 ngày | Chưa làm |
 | 5 | Nền tảng phần 1 | D5-L1–D5-L4 | 27 bài đã kiểm ở G1-L01–L04 của site cũ (76 trang) | 1,5–2 ngày | Chưa làm |
 | 6 | Nền tảng phần 2 | D6-L1–D6-L3 | 20 bài: căng thẳng, giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển (96 trang) | 2–3 ngày | Chưa làm |
@@ -136,8 +136,8 @@ Như đợt 2 của opus: tách phần dữ liệu thành việc riêng, làm tr
 
 15 thí nghiệm là trang nhà của các nghiên cứu kinh điển nhất, nên làm trước bài Khám phá: bài Khám phá sau đó chỉ tóm một câu và link về đây. Mỗi trang 10 mục như site cũ; phần "Ngày nay nhìn lại" ghi tái lập và phê bình (ví dụ tư liệu lưu trữ của Milgram, phê bình thí nghiệm nhà tù Stanford), có ngày.
 
-- **D3-L1** (8 trang: mục lục, Milgram, Asch, Darley–Latané, Zimbardo, Robbers Cave, Pygmalion, Khỉ đột vô hình): làm trọn vẹn, như D3-L1 của opus: chuyển, lượt 1, lượt 2, review, kiểm mẫu, khóa. Đo thời gian và token để chỉnh lời giao, ước tính các đợt sau.
-- **D3-L2** (8 trang: Pavlov, Skinner, Little Albert, Seligman, Bandura, Harlow, Kẹo dẻo, Schachter–Singer): lượt 1 trên nhánh lô; rồi nhánh `moi/d3-gom`: lượt 2, review, kiểm mẫu, khóa.
+- **D3-L1** (làm xong 30/10/2026, `bao-cao/d3-l1.md`; thêm thành phần `::tom-tat`, `:::ho-so-nghien-cuu`) (8 trang: mục lục, Milgram, Asch, Darley–Latané, Zimbardo, Robbers Cave, Pygmalion, Khỉ đột vô hình): làm trọn vẹn, như D3-L1 của opus: chuyển, lượt 1, lượt 2, review, kiểm mẫu, khóa. Đo thời gian và token để chỉnh lời giao, ước tính các đợt sau.
+- **D3-L2** (làm xong 30/10/2026, `bao-cao/d3-l2.md`; D3-L1 đã khóa trước nên lượt 2, review, kiểm mẫu, khóa làm luôn trên nhánh lô, không mở `moi/d3-gom`) (8 trang: Pavlov, Skinner, Little Albert, Seligman, Bandura, Harlow, Kẹo dẻo, Schachter–Singer): lượt 1 trên nhánh lô; rồi nhánh `moi/d3-gom`: lượt 2, review, kiểm mẫu, khóa.
 
 **Xong khi:** 16 trang khóa; hồ sơ nghiên cứu của đợt có trang nhà; bộ truy vấn tìm kiếm của các trang này đạt.
 

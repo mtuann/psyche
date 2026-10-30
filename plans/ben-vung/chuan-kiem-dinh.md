@@ -51,7 +51,9 @@ Thấy cách mới thì thêm vào đây, để lô sau khỏi mò lại.
 | Europe PMC | API REST (`ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:<DOI>`) cho tóm tắt và link toàn văn mở |
 | OSF, PsyArXiv | Bản đăng ký trước, dữ liệu, bản thảo của các đợt tái lập; ghi rõ là bản thảo nếu chưa bình duyệt |
 | Classics in the History of Psychology | `psychclassics.yorku.ca`: toàn văn nhiều bài kinh điển đã hết bản quyền |
-| Internet Archive | Sách cũ (ví dụ bản dịch Ebbinghaus 1885): ghi lần in và số trang |
+| Internet Archive | Sách cũ (ví dụ bản dịch Ebbinghaus 1885, Milgram 1974): ghi lần in và số trang. Bộ `wikipedia-scholarly-sources-corpus` có toàn văn nhiều bài báo cũ (ví dụ Latané & Darley 1968, Fischer 2011); Wayback Machine giữ bản lưu của trang chính thức hay bản tác giả đã gỡ (ghi ngày của bản lưu) |
+| OpenAlex | `https://api.openalex.org/works/doi:<DOI>`: tóm tắt (trường `abstract_inverted_index`) khi Crossref không có; `works?search=<từ khóa>` cho câu "chưa tìm thấy nghiên cứu" (ghi ngày tìm) |
+| gwern.net, CiteSeerX, HAL, kho của trường | Bản PDF của nhiều bài cũ (Raudenbush 1984, Jussim & Harber 2005, Schachter & Singer 1962, Seligman & Maier 1967): đối chiếu với bản in (tập, trang) |
 | ICD-11 | Bản trực tuyến của WHO (`icd.who.int`), dẫn mã và tên mục |
 | APA Dictionary of Psychology | `dictionary.apa.org`, dẫn mục từ |
 | OpenStax *Psychology 2e* | `openstax.org/books/psychology-2e/`, dẫn đúng mục |
@@ -59,6 +61,7 @@ Thấy cách mới thì thêm vào đây, để lô sau khỏi mò lại.
 | Việt Nam | Trang chính thức của cơ quan nhà nước, WHO và UNICEF tại Việt Nam, tạp chí khoa học trong nước có bình duyệt; báo chính thức chỉ khi không có nguồn tốt hơn, ghi rõ loại nguồn. Số liên hệ của Hỗ trợ: kiểm trên trang của chính đơn vị |
 
 - Hết lượt của công cụ tìm kiếm thì tìm tạm qua `https://html.duckduckgo.com/html/?q=<từ khóa>`; vẫn chỉ ghi vào hồ sơ trang đã mở, không ghi trang kết quả tìm kiếm.
+- Lượt 2 phải tự mở lại nguồn, không dùng bản lượt 1 đã tải; bài cũ lượt 1 đọc được thì lượt 2 thường cũng mở được ở các nơi trên. Đợt 3: nhiều câu lượt 2 ghi `khong-chac` chỉ vì chưa tìm tới các nơi này, review phải mở lại.
 - Bản tóm tắt của công cụ đọc web có khi sai hay thiếu. Con số, chiều của kết quả, tên điều kiện thí nghiệm thì đọc chữ thật của bài (bảng, mục Kết quả).
 - **Không đưa email hay thông tin cá nhân của chủ repo vào yêu cầu gửi ra ngoài.**
 
