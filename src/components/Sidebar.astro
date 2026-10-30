@@ -1,0 +1,202 @@
+---
+// Thanh bên (menu) của Starlight, dựng lại phần nhóm (D1.3, bố cục C): tám nhóm của src/menu.mjs, mỗi nhóm một biểu
+// tượng; nhóm Nền tảng chia theo 14 lĩnh vực, mỗi lĩnh vực một màu (sắc độ mau của src/data/linh-vuc.yml) và một biểu
+// tượng. Nhóm hay lĩnh vực chưa có trang nào trong bản build hiện tên kèm nhãn "sắp có" (không bấm được). Trang trong
+// nhóm do Starlight dựng (SidebarSublist). Chép từ ../opus/src/components/Sidebar.astro rồi sửa.
+// Thêm: menu trên điện thoại cần Popover API (Safari 17, Chrome 114, Firefox 125); trình duyệt cũ hơn thì nút menu bật,
+// tắt một lớp (pz-menu-mo) và CSS ở src/styles/psyche.css hiện, ẩn thanh bên.
+import { getCollection } from 'astro:content';
+import MobileMenuFooter from 'virtual:starlight/components/MobileMenuFooter';
+import { Icon } from '@astrojs/starlight/components';
+import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro';
+import SidebarRestorePoint from '@astrojs/starlight/components/SidebarRestorePoint.astro';
+import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
+import { svg } from '../bieu-tuong.mjs';
+import { NHOM } from '../menu.mjs';
+
+const { sidebar } = Astro.locals.starlightRoute;
+const nhomTheoTen = new Map(NHOM.map((n) => [n.ten, n]));
+const lvTheoTen = new Map((await getCollection('linh-vuc')).map((l) => [l.data.ten, l.data]));
+/** Nhóm (hay nhóm con) có trang đang xem. */
+const coTrangDangXem = (e: any): boolean => (e.type === 'link' ? e.isCurrent : e.entries.some(coTrangDangXem));
+---
+
+<SidebarPersister>
+	<ul class="top-level pz-menu">
+		{
+			sidebar.map((e) => {
+				const n = e.type === 'group' ? nhomTheoTen.get(e.label) : undefined;
+				if (!n || e.type !== 'group') return <li><SidebarSublist sublist={[e]} nested /></li>;
+				const ten = (
+					<span class="pz-menu-ten">
+						<Fragment set:html={svg(n.id)} />
+						<span>{n.ten}</span>
+					</span>
+				);
+				const coTrang = e.entries.some((x: any) => x.type === 'link' || x.entries.length);
+				return (
+					<li class="pz-menu-nhom">
+						{coTrang ? (
+							<details open={coTrangDangXem(e) || !e.collapsed}>
+								<summary>
+									{ten}
+									<Icon name="right-caret" class="caret" size="1.25rem" />
+								</summary>
+								<SidebarRestorePoint />
+								{n.id === 'nen-tang' ? (
+									<ul class="pz-menu-lv">
+										{e.entries.map((x: any) => {
+											const lv = x.type === 'group' ? lvTheoTen.get(x.label) : undefined;
+											if (!lv || x.type !== 'group') return <li><SidebarSublist sublist={[x]} nested /></li>;
+											const tenLv = (
+												<span class="pz-menu-ten-lv">
+													<Fragment set:html={svg(lv.bieu_tuong ?? '')} />
+													<span>{lv.ten}</span>
+												</span>
+											);
+											return (
+												<li class="pz-lv" style={`--h: ${lv.mau}`}>
+													{x.entries.length ? (
+														<details open={coTrangDangXem(x)}>
+															<summary>
+																{tenLv}
+																<Icon name="right-caret" class="caret" size="1rem" />
+															</summary>
+															<SidebarRestorePoint />
+															<SidebarSublist sublist={x.entries} nested />
+														</details>
+													) : (
+														<p class="pz-menu-trong" title="Lĩnh vực này sẽ lên site sau khi các bài được kiểm chứng lại">
+															{tenLv}
+															<span class="pz-sap-co-nhan">sắp có</span>
+														</p>
+													)}
+												</li>
+											);
+										})}
+									</ul>
+								) : (
+									<SidebarSublist sublist={e.entries} nested />
+								)}
+							</details>
+						) : (
+							<p class="pz-menu-trong" title="Mục này sẽ lên site sau khi được kiểm chứng lại">
+								{ten}
+								<span class="pz-sap-co-nhan">sắp có</span>
+							</p>
+						)}
+					</li>
+				);
+			})
+		}
+	</ul>
+</SidebarPersister>
+
+<div class="md:sl-hidden">
+	<MobileMenuFooter />
+</div>
+
+<script>
+	// Trình duyệt chưa có Popover API: nút menu (popovertarget) không làm gì, nên tự bật, tắt thanh bên bằng một lớp
+	if (!HTMLElement.prototype.hasOwnProperty('popover')) {
+		const nut = document.querySelector<HTMLButtonElement>('.sl-menu-button');
+		const ben = document.getElementById('starlight__sidebar');
+		nut?.addEventListener('click', () => {
+			const mo = !ben?.classList.contains('pz-menu-mo');
+			ben?.classList.toggle('pz-menu-mo', mo);
+			nut.setAttribute('aria-expanded', String(mo));
+			document.querySelectorAll<HTMLElement>('.main-frame, .sl-skip-link').forEach((x) => x.toggleAttribute('inert', mo));
+		});
+	}
+</script>
+
+<style>
+	.pz-menu,
+	.pz-menu-lv {
+		list-style: none;
+		padding: 0;
+	}
+	.pz-menu > li + li {
+		margin-top: 0.6rem;
+	}
+	.pz-menu summary,
+	.pz-menu-trong {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0.2em 0.5rem;
+		line-height: 1.4;
+	}
+	.pz-menu summary {
+		cursor: pointer;
+		user-select: none;
+	}
+	.pz-menu summary::marker,
+	.pz-menu summary::-webkit-details-marker {
+		display: none;
+	}
+	.pz-menu-ten,
+	.pz-menu-ten-lv {
+		display: flex;
+		align-items: center;
+		gap: 0.55rem;
+		color: var(--sl-color-white);
+	}
+	.pz-menu-ten {
+		font-size: var(--sl-text-lg);
+		font-weight: 700;
+	}
+	.pz-menu-ten :global(.pz-icon) {
+		flex: none;
+		width: 1.35rem;
+		height: 1.35rem;
+		color: var(--sl-color-text-accent);
+	}
+	/* Lĩnh vực: biểu tượng trong ô màu của lĩnh vực */
+	.pz-menu-lv {
+		margin: 0.2rem 0 0 0.35rem;
+	}
+	.pz-menu-ten-lv {
+		font-size: var(--sl-text-sm);
+		font-weight: 600;
+	}
+	.pz-menu-ten-lv :global(.pz-icon) {
+		flex: none;
+		box-sizing: content-box;
+		width: 1rem;
+		height: 1rem;
+		padding: 0.2rem;
+		border-radius: 0.35rem;
+		background: var(--lv-nen);
+		color: var(--lv);
+		box-shadow: inset 0 0 0 1px var(--lv-vien);
+	}
+	/* Mục chưa có trang: chữ nhạt hơn, không bấm được. gray-2: gray-3 trên nền tối chỉ đạt 4,48:1 (bản mẫu D1.3) */
+	.pz-menu-trong .pz-menu-ten,
+	.pz-menu-trong .pz-menu-ten-lv {
+		color: var(--sl-color-gray-2);
+		font-weight: 500;
+	}
+	.pz-menu .caret {
+		flex-shrink: 0;
+		transition: transform 0.2s ease-in-out;
+	}
+	.pz-menu [open] > summary .caret {
+		transform: rotateZ(90deg);
+	}
+	/* Trang trong nhóm: lùi vào dưới tên nhóm; trong lĩnh vực, đường kẻ bên trái theo màu lĩnh vực */
+	.pz-menu details > :global(ul) {
+		margin: 0.2rem 0 0 1.2rem;
+	}
+	.pz-lv details > :global(ul > li) {
+		border-inline-start: 2px solid var(--lv-vien);
+		padding-inline-start: 0.5rem;
+	}
+	@media (min-width: 50rem) {
+		.pz-menu-ten {
+			font-size: var(--sl-text-base);
+		}
+	}
+</style>

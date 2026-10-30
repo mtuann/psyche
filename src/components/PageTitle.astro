@@ -1,0 +1,77 @@
+---
+// Tiêu đề trang của Starlight, thêm (D1.3, bố cục C, plans/lam-lai/ban-mau/README.md): phía trên, viên loại bài, lĩnh vực
+// (màu của lĩnh vực, link tới trang lĩnh vực khi trang ấy có trong bản build) và tầng; phía dưới, dòng trạng thái kiểm
+// định. Thông tin đọc lúc build từ src/data/trang.yml, src/data/linh-vuc.yml và kiem-dinh/ (D1.6), không từ trang, nên
+// mã băm của trang không đổi khi các thông tin ấy đổi. Trang mục lục, trang chủ, trang về site không có viên.
+import { getCollection } from 'astro:content';
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { DUONG_GOC, diaChi, trangCuaMuc } from '../ban-build.mjs';
+import { loaiTrang } from '../du-lieu.mjs';
+import { chuTrangThai, kiemDinh } from '../kiem-dinh.mjs';
+
+// Đọc lúc build; Vite gói nội dung file vào bản dựng. Chưa có kiem-dinh/ thì cả hai rỗng.
+const KHOA = Object.values(import.meta.glob('/kiem-dinh/khoa.json', { eager: true, import: 'default' }))[0];
+const HO_SO = import.meta.glob('/kiem-dinh/**/*.yml', { eager: true, query: '?raw', import: 'default' });
+
+/** Tên loại trang (loaiTrang) và tầng (trang.yml) như người đọc thấy. */
+const LOAI: Record<string, string> = {
+	'kham-pha': 'Bài khám phá',
+	'suc-khoe': 'Sức khỏe tâm thần',
+	'thi-nghiem': 'Thí nghiệm kinh điển',
+	'phuong-phap': 'Hiểu bằng chứng',
+	'cong-cu': 'Tự trải nghiệm',
+};
+const TANG: Record<string, string> = { loi: 'Nền tảng', 'mo-rong': 'Mở rộng', 'cong-cu': 'Công cụ' };
+
+const { entry } = Astro.locals.starlightRoute;
+const trang = trangCuaMuc(entry);
+const banGhi = trang ? (await getCollection('trang')).find((r) => r.id === trang)?.data : undefined;
+const loai = trang ? LOAI[loaiTrang(trang)] : undefined;
+const tang = banGhi && TANG[banGhi.tang];
+const lv = banGhi?.linh_vuc ? (await getCollection('linh-vuc')).find((l) => l.id === banGhi.linh_vuc)?.data : undefined;
+// Trang lĩnh vực có trong bản build thì viên lĩnh vực là link
+const trangLv = lv && `nen-tang/${lv.id}`;
+const coTrangLv = trangLv && (await getCollection('docs')).some((e) => trangCuaMuc(e) === trangLv);
+const coVien = Boolean(loai && (lv || tang));
+const kd = trang ? kiemDinh(trang, KHOA, HO_SO[`/kiem-dinh/${trang}.yml`] as string | undefined) : null;
+---
+
+<div class="pz-dau">
+	{
+		coVien && (
+			<p class="pz-dau__vien" data-pagefind-ignore>
+				<span class="pz-dau__loai">{loai}</span>
+				{lv &&
+					(coTrangLv ? (
+						<a class="pz-dau__lv" href={diaChi(trangLv, DUONG_GOC)} style={`--h: ${lv.mau}`}>
+							{lv.ten}
+						</a>
+					) : (
+						<span class="pz-dau__lv" style={`--h: ${lv.mau}`}>
+							{lv.ten}
+						</span>
+					))}
+				{tang && <span class="pz-dau__tang">{tang}</span>}
+			</p>
+		)
+	}
+	<Default />
+	{
+		coVien &&
+			(kd ? (
+				kd.nhanDinh > 0 && (
+					<p class="pz-dau__trang-thai" data-pagefind-ignore>
+						<svg class="pz-dau__dau" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+							<path d="M9.6 16.2 5.4 12 4 13.4l5.6 5.6 12-12-1.4-1.4z" />
+						</svg>
+						<span>{chuTrangThai(kd, banGhi)}</span>
+					</p>
+				)
+			) : (
+				<p class="pz-dau__trang-thai" data-pagefind-ignore>
+					<span class="pz-dau__co">Chưa kiểm định lại</span>
+					<span>Nội dung lấy từ Psyche Zero, đang chờ kiểm chứng lại từ đầu.</span>
+				</p>
+			))
+	}
+</div>

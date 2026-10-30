@@ -1,13 +1,19 @@
 // @ts-check
 // Cấu hình site Psyche (Astro và Starlight). Phiên bản và lý do: plans/lam-lai/cong-nghe.md.
-// D1.1: khung, font, màu, tìm kiếm không dấu. Dữ liệu, thành phần, khóa và hai bản build thêm ở D1.2–D1.6.
+// D1.1: khung, font, màu, tìm kiếm không dấu. D1.2: dữ liệu. D1.3: bố cục C (menu theo lĩnh vực, tiêu đề trang, trang chủ).
+// Thành phần, khóa và hai bản build thêm ở D1.4–D1.6.
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { satteri } from '@astrojs/markdown-satteri';
+import { DUONG_GOC, trangTrongBan } from './src/ban-build.mjs';
+import { duLieuDaKiem } from './src/du-lieu.mjs';
+import { menu } from './src/menu.mjs';
 import { timKiemKhongDau } from './src/tim-kiem/tich-hop.mjs';
 
 const site = 'https://mtuann.github.io';
-const base = '/psyche';
+const base = DUONG_GOC.replace(/\/$/, ''); // '/psyche'
+// Dữ liệu sai thì báo lỗi ngay ở đây, như khi nạp bộ dữ liệu (src/du-lieu.mjs)
+const duLieu = duLieuDaKiem();
 
 // Font của màn hình đầu (chữ thường và chữ đậm của tiêu đề, bộ latin và vietnamese): nạp trước để chữ hiện đúng font
 // ngay lần vẽ đầu. Phải khớp font khai báo trong src/styles/fonts.css (tests/khung.test.mjs kiểm).
@@ -48,16 +54,21 @@ export default defineConfig({
 			// Dấu ψ của site cũ (favicon), vẽ bằng nét để không phụ thuộc font có chữ Hy Lạp
 			logo: { src: './src/assets/logo.svg' },
 			favicon: '/favicon.svg',
+			// Menu đủ tám nhóm, Nền tảng chia theo 14 lĩnh vực (src/menu.mjs), chỉ trang có trong bản build này; nhóm chưa có
+			// trang hiện "sắp có" (src/components/Sidebar.astro). Đang chạy npm run dev mà thêm, xóa trang thì khởi động lại.
+			sidebar: menu(trangTrongBan(), duLieu.trang, duLieu['linh-vuc']),
 			customCss: ['./src/styles/fonts.css', './src/styles/psyche.css'],
 			components: {
 				Footer: './src/components/Footer.astro',
 				Hero: './src/components/Hero.astro',
+				PageTitle: './src/components/PageTitle.astro',
+				Sidebar: './src/components/Sidebar.astro',
 			},
 			head: [
 				...preloadFonts,
 				// Màu thanh trình duyệt trên điện thoại: trùng nền thanh trên cùng của site (src/styles/psyche.css)
-				{ tag: 'meta', attrs: { name: 'theme-color', content: '#3b3f8f', media: '(prefers-color-scheme: light)' } },
-				{ tag: 'meta', attrs: { name: 'theme-color', content: '#23244a', media: '(prefers-color-scheme: dark)' } },
+				{ tag: 'meta', attrs: { name: 'theme-color', content: '#2a2d6b', media: '(prefers-color-scheme: light)' } },
+				{ tag: 'meta', attrs: { name: 'theme-color', content: '#1b1c3a', media: '(prefers-color-scheme: dark)' } },
 				{ tag: 'link', attrs: { rel: 'apple-touch-icon', href: `${base}/icons/icon-192.png` } },
 			],
 		}),

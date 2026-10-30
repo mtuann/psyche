@@ -2,7 +2,9 @@
    (../psyche-zero/docs/assets/css/psyche.css: chàm #3b3f8f, hồng #b4387a; bốn màu nhãn mức độ chắc chắn) và
    ../psyche-zero/overrides/main.html (theme-color). File này không nằm trong cascade layer nào, nên thắng mọi quy tắc của
    Starlight (đặt trong @layer starlight.*); vì thế màu chế độ sáng phải ghi lại ở :root[data-theme='light'], không thì
-   giá trị của chế độ tối ở :root đè lên cả chế độ sáng. Giao diện chốt ở D1.3; đây là bản của D1.1. */
+   giá trị của chế độ tối ở :root đè lên cả chế độ sáng. Bố cục C "Tạp chí" (D1.3, plans/lam-lai/ban-mau/README.md): thanh
+   trên và dải đầu trang chủ màu chàm đậm liền nhau, viên phía trên tiêu đề bài, mục lớn đánh số, mỗi lĩnh vực một màu.
+   Màu và kiểu của khối trong bài (khung nhãn, câu hỏi, hình…) ở src/styles/thanh-phan.css (D1.4). */
 
 /* ---------- Tokens ---------- */
 :root {
@@ -18,8 +20,10 @@
 	--pz-focus: #f08bbf;
 	--pz-border: #3a3b4a;
 	--pz-card: #20212c;
-	--pz-header-bg: #23244a;
-	--pz-header-line: #1b1c38;
+	/* thanh trên và dải chàm đậm của trang chủ (bố cục C) */
+	--pz-header-bg: #1b1c3a;
+	--pz-header-line: #14152c;
+	--pz-dai-nen: #1b1c3a;
 	--pz-hero-a: rgba(142, 147, 230, 0.16);
 	--pz-hero-b: rgba(240, 139, 191, 0.1);
 	--pz-mang: rgba(176, 180, 240, 0.25);
@@ -55,8 +59,9 @@
 	--pz-focus: #b4387a;
 	--pz-border: #d9d9e3;
 	--pz-card: #f5f5fa;
-	--pz-header-bg: var(--pz-indigo);
+	--pz-header-bg: var(--pz-indigo-dark);
 	--pz-header-line: var(--pz-indigo-dark);
+	--pz-dai-nen: var(--pz-indigo-dark);
 	--pz-hero-a: rgba(59, 63, 143, 0.1);
 	--pz-hero-b: rgba(180, 56, 122, 0.08);
 	--pz-mang: rgba(59, 63, 143, 0.22);
@@ -194,82 +199,275 @@ starlight-theme-select select {
 	--sl-select-width: 7.25em;
 }
 
-/* ---------- Sơ đồ các bước (trang chủ tạm) ---------- */
-.pz-steps {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1.75rem;
-	padding: 0;
-	list-style: none;
-	counter-reset: pz-step;
+/* Trình duyệt chưa có Popover API (Safari dưới 17): Starlight không ẩn được menu bên trên điện thoại, nó phủ cả trang.
+   Ẩn menu, nút menu bật, tắt lớp pz-menu-mo (script ở src/components/Sidebar.astro). Chép từ ../opus/src/styles/opus.css. */
+@supports not selector(:popover-open) {
+	@media (max-width: 49.99rem) {
+		#starlight__sidebar:not(.pz-menu-mo) {
+			display: none;
+		}
+	}
 }
-.sl-markdown-content .pz-steps > li {
-	position: relative;
+
+/* ---------- Màu lĩnh vực: mỗi lĩnh vực một sắc độ --h (mau của src/data/linh-vuc.yml) ---------- */
+/* Chữ hsl(h 70% 80%) trên nền hsl(h 28% 19%) (tối), hsl(h 55% 30%) trên hsl(h 60% 95,5%) (sáng): đạt 4,5:1 với mọi sắc độ
+   (đã đo ở bản mẫu D1.3). */
+.pz-lv,
+.pz-dau__lv,
+.pz-o-lv {
+	--lv: hsl(var(--h) 70% 80%);
+	--lv-nen: hsl(var(--h) 28% 19%);
+	--lv-vien: hsl(var(--h) 25% 33%);
+}
+:root[data-theme='light'] :is(.pz-lv, .pz-dau__lv, .pz-o-lv) {
+	--lv: hsl(var(--h) 55% 30%);
+	--lv-nen: hsl(var(--h) 60% 95.5%);
+	--lv-vien: hsl(var(--h) 40% 84%);
+}
+
+/* Nhãn "sắp có": trang, nhóm chưa lên site (menu bên, link "sắp có" của D1.5) */
+.pz-sap-co-nhan {
+	display: inline-block;
+	margin-inline-start: 0.1em; /* cộng dấu cách thật đứng trước */
+	padding: 0 0.45em;
+	border: 1px dashed currentColor;
+	border-radius: 0.3em;
+	color: var(--sl-color-gray-2);
+	font-size: 0.72em;
+	font-weight: 500;
+	line-height: 1.5;
+	white-space: nowrap;
+	vertical-align: 0.1em;
+}
+
+/* ---------- Đầu trang bài: viên phía trên tiêu đề, dòng trạng thái dưới (src/components/PageTitle.astro) ---------- */
+.pz-dau {
 	display: flex;
 	flex-direction: column;
-	gap: 0.25rem;
-	margin: 0;
-	padding: 1rem 1.1rem 1.1rem 4rem;
-	border: 1px solid var(--pz-border);
-	border-radius: 12px;
+}
+.pz-dau__vien {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem 0.5rem;
+	margin: 0 0 0.2rem;
+}
+.pz-dau__vien > * {
+	padding: 0.15rem 0.7rem;
+	border-radius: 1rem;
 	background: var(--pz-card);
-	counter-increment: pz-step;
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-xs);
+	font-weight: 600;
+	line-height: 1.6;
+	text-decoration: none;
 }
-/* Số bước trong vòng tròn */
-.pz-steps > li::before {
-	content: counter(pz-step);
-	position: absolute;
-	inset-inline-start: 1rem;
-	top: 1rem;
-	display: grid;
-	place-items: center;
-	width: 2.1rem;
-	height: 2.1rem;
-	border-radius: 50%;
-	background: var(--sl-color-accent-low);
-	color: var(--sl-color-text-accent);
-	font-weight: 700;
-}
-/* Bước cuối: phần đã lên site, dùng màu nhấn */
-.pz-steps > li:last-child::before {
+.pz-dau__vien .pz-dau__loai {
 	background: var(--pz-accent);
 	color: var(--pz-on-accent);
 }
-/* Mũi tên nối các bước: xuống dưới trên điện thoại, sang phải trên màn hình rộng */
-.pz-steps > li + li::after {
-	content: '';
-	position: absolute;
-	top: -1.45rem;
-	inset-inline-start: 2.05rem;
-	width: 0;
-	height: 0;
-	border-inline: 0.45rem solid transparent;
-	border-top: 0.6rem solid var(--sl-color-gray-4);
+.pz-dau__vien .pz-dau__lv {
+	background: var(--lv-nen);
+	box-shadow: inset 0 0 0 1px var(--lv-vien);
+	color: var(--lv);
 }
-.pz-steps b {
-	color: var(--sl-color-white);
-	font-size: var(--sl-text-lg);
-	line-height: 1.35;
+.pz-dau__vien a.pz-dau__lv:hover {
+	text-decoration: underline;
 }
-.pz-steps span {
+.pz-dau h1 {
+	font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.2rem);
+	font-weight: 700;
+	line-height: 1.12;
+	letter-spacing: -0.03em;
+}
+.pz-dau__trang-thai {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.3rem 0.6rem;
+	margin: 0.9rem 0 0;
 	color: var(--sl-color-gray-2);
-	font-size: var(--sl-text-sm);
+	font-size: var(--sl-text-xs);
 	line-height: 1.5;
 }
+.pz-dau__co {
+	padding: 0.05rem 0.55rem;
+	border: 1px dashed var(--sl-color-orange);
+	border-radius: 0.3rem;
+	color: var(--sl-color-orange);
+	font-weight: 700;
+	white-space: nowrap;
+}
+.pz-dau__dau {
+	flex: none;
+	width: 1.1rem;
+	height: 1.1rem;
+	fill: var(--sl-color-green);
+}
+/* Màn hình cảm ứng: viên lĩnh vực là link, vùng bấm từ 44 px (nới bằng ::after, không đổi bố cục) */
+@media (pointer: coarse) {
+	.pz-dau__vien > * {
+		display: inline-flex;
+		align-items: center;
+		min-height: 2.25rem;
+	}
+	.pz-dau__vien a.pz-dau__lv {
+		position: relative;
+	}
+	.pz-dau__vien a.pz-dau__lv::after {
+		content: '';
+		position: absolute;
+		inset: -4px 0;
+	}
+}
+
+/* ---------- Mục lớn đánh số (trang có menu bên; không ở trang chủ) ---------- */
+[data-has-sidebar] .sl-markdown-content {
+	counter-reset: pz-muc;
+}
+[data-has-sidebar] .sl-markdown-content h2 {
+	counter-increment: pz-muc;
+	font-size: clamp(1.45rem, 1.15rem + 1vw, 1.8rem);
+	letter-spacing: -0.015em;
+}
+[data-has-sidebar] .sl-markdown-content h2::before {
+	content: counter(pz-muc, decimal-leading-zero);
+	display: block;
+	margin-bottom: 0.2rem;
+	color: var(--pz-accent);
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+}
+[data-has-sidebar] .sl-markdown-content :not(h1, h2, h3, h4, h5, h6, .sl-heading-wrapper) + .sl-heading-wrapper.level-h2 {
+	margin-top: 2.75rem;
+	padding-top: 1.75rem;
+	border-top: 1px solid var(--sl-color-hairline);
+}
+
+/* ---------- Dải chàm đậm tràn bề ngang: đầu trang chủ, trang 404 (src/components/Hero.astro) và dải trong trang ---------- */
+.pz-hero,
+.pz-dai {
+	--sl-color-white: #fff;
+	--sl-color-text-accent: #fff;
+	--sl-color-black: var(--pz-dai-nen);
+	--sl-color-gray-2: #d6d8f0;
+	--sl-color-gray-3: #b9bce4;
+	--pz-focus: #f08bbf;
+	position: relative;
+	background: var(--pz-dai-nen);
+	box-shadow: 0 0 0 100vmax var(--pz-dai-nen);
+	clip-path: inset(0 -100vmax);
+	color: var(--sl-color-gray-2);
+}
+.pz-hero {
+	margin-top: -1.5rem;
+	padding-top: clamp(2rem, 7vw, 4.5rem);
+}
+.pz-hero__mat {
+	margin: 0;
+	color: #f08bbf;
+	font-size: var(--sl-text-sm);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+.pz-hero__mat span {
+	color: #fff;
+}
+.pz-hero h1 {
+	max-width: 18ch;
+	margin: 0.75rem 0 0;
+	color: #fff;
+	font-size: clamp(2.3rem, 1.4rem + 4.2vw, 4.4rem);
+	font-weight: 700;
+	line-height: 1.06;
+	letter-spacing: -0.035em;
+}
+.pz-hero__tagline {
+	max-width: 52ch;
+	margin: 1.25rem 0 0;
+	font-size: clamp(1.05rem, 0.95rem + 0.45vw, 1.25rem);
+	line-height: 1.6;
+}
+.pz-hero__nut {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem 1rem;
+	margin-top: 1.75rem;
+}
+/* Nút chính trên nền chàm: nền trắng, chữ chàm (Starlight dùng màu nhấn, trên nền đậm không đủ tương phản) */
+.pz-hero .sl-link-button.primary {
+	border-color: #fff;
+	background: #fff;
+	color: var(--pz-indigo-dark);
+}
+.pz-hero .sl-link-button.secondary {
+	border-color: rgba(255, 255, 255, 0.55);
+	color: #fff;
+}
+.pz-hero__mang {
+	display: block;
+	width: 100%;
+	height: 5rem;
+	margin-top: 2rem;
+}
+.pz-hero__mang line {
+	stroke: rgba(176, 180, 240, 0.28);
+	stroke-width: 1.5;
+}
+.pz-hero__mang circle {
+	fill: rgba(176, 180, 240, 0.55);
+}
+.pz-hero__mang circle.sang {
+	fill: #f08bbf;
+}
+
+/* Dải trong trang (trang chủ: "Từng phần lên site thế nào", sau này "Cách Psyche kiểm chứng"): ba bước đánh số */
+.sl-markdown-content .pz-dai {
+	margin-top: 3rem;
+	padding-block: 2.25rem;
+}
+.pz-dai__ten {
+	margin: 0 0 1.25rem;
+	color: #fff;
+	font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem);
+	font-weight: 700;
+}
+.sl-markdown-content .pz-dai ol {
+	display: grid;
+	gap: 1.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	counter-reset: pz-dai;
+}
+.sl-markdown-content .pz-dai li {
+	display: grid;
+	gap: 0.3rem;
+	margin: 0;
+	counter-increment: pz-dai;
+	font-size: var(--sl-text-sm);
+	line-height: 1.55;
+}
+.pz-dai li::before {
+	content: counter(pz-dai, decimal-leading-zero);
+	color: #f08bbf;
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+}
+.pz-dai b {
+	color: #fff;
+	font-size: 1.1rem;
+}
+.pz-dai a {
+	color: #fff;
+}
 @media (min-width: 50rem) {
-	.pz-steps {
+	.sl-markdown-content .pz-dai ol {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
-	}
-	.sl-markdown-content .pz-steps > li {
-		padding: 3.75rem 1.1rem 1.2rem;
-	}
-	.pz-steps > li + li::after {
-		top: 1.6rem;
-		inset-inline-start: -1.45rem;
-		border-block: 0.45rem solid transparent;
-		border-inline: 0;
-		border-inline-start: 0.6rem solid var(--sl-color-gray-4);
 	}
 }
 
