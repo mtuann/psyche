@@ -1,0 +1,284 @@
+/* Màu, chữ và các chi tiết riêng của Psyche trên nền Starlight. Màu lấy từ site cũ
+   (../psyche-zero/docs/assets/css/psyche.css: chàm #3b3f8f, hồng #b4387a; bốn màu nhãn mức độ chắc chắn) và
+   ../psyche-zero/overrides/main.html (theme-color). File này không nằm trong cascade layer nào, nên thắng mọi quy tắc của
+   Starlight (đặt trong @layer starlight.*); vì thế màu chế độ sáng phải ghi lại ở :root[data-theme='light'], không thì
+   giá trị của chế độ tối ở :root đè lên cả chế độ sáng. Giao diện chốt ở D1.3; đây là bản của D1.1. */
+
+/* ---------- Tokens ---------- */
+:root {
+	--pz-indigo: #3b3f8f;
+	--pz-indigo-light: #5a5fb5;
+	--pz-indigo-dark: #2a2d6b;
+	--sl-font: 'Be Vietnam Pro';
+	--sl-line-height-headings: 1.25;
+
+	/* Chế độ tối (mặc định của Starlight), theo bảng màu slate của site cũ */
+	--pz-accent: #f08bbf;
+	--pz-on-accent: #17171f;
+	--pz-focus: #f08bbf;
+	--pz-border: #3a3b4a;
+	--pz-card: #20212c;
+	--pz-header-bg: #23244a;
+	--pz-header-line: #1b1c38;
+	--pz-hero-a: rgba(142, 147, 230, 0.16);
+	--pz-hero-b: rgba(240, 139, 191, 0.1);
+	--pz-mang: rgba(176, 180, 240, 0.25);
+	--pz-mang-nut: rgba(176, 180, 240, 0.5);
+
+	--sl-color-accent-low: #23244a;
+	--sl-color-accent: #6e73c9;
+	--sl-color-accent-high: #b0b4f0;
+	--sl-color-black: #17171f;
+
+	/* Các dải màu Starlight dùng cho hộp ghi chú (aside), huy hiệu, thẻ: kéo về bốn màu nhãn của site cũ (xanh lá: vững
+	   chắc; xanh dương: khá vững; cam: đang tranh cãi; đỏ: đã bị bác bỏ) và màu hồng nhấn (tím) */
+	--sl-color-blue-low: #16283a;
+	--sl-color-blue: #7ab8f0;
+	--sl-color-blue-high: #b9dbf7;
+	--sl-color-green-low: #14301f;
+	--sl-color-green: #5fd08f;
+	--sl-color-green-high: #a6e6c1;
+	--sl-color-orange-low: #3a2a10;
+	--sl-color-orange: #f2b44d;
+	--sl-color-orange-high: #f8d79a;
+	--sl-color-red-low: #3d1a18;
+	--sl-color-red: #ff8a80;
+	--sl-color-red-high: #ffc2bc;
+	--sl-color-purple-low: #3a1d2e;
+	--sl-color-purple: #f08bbf;
+	--sl-color-purple-high: #f8c4df;
+}
+
+:root[data-theme='light'] {
+	--pz-accent: #b4387a;
+	--pz-on-accent: #fff;
+	--pz-focus: #b4387a;
+	--pz-border: #d9d9e3;
+	--pz-card: #f5f5fa;
+	--pz-header-bg: var(--pz-indigo);
+	--pz-header-line: var(--pz-indigo-dark);
+	--pz-hero-a: rgba(59, 63, 143, 0.1);
+	--pz-hero-b: rgba(180, 56, 122, 0.08);
+	--pz-mang: rgba(59, 63, 143, 0.22);
+	--pz-mang-nut: rgba(59, 63, 143, 0.42);
+
+	--sl-color-accent-low: #e4e5f5;
+	--sl-color-accent: var(--pz-indigo);
+	--sl-color-accent-high: var(--pz-indigo-dark);
+	--sl-color-black: #fff;
+
+	--sl-color-blue-low: #e3eef8;
+	--sl-color-blue: #1f6aa5;
+	--sl-color-blue-high: #174f7c;
+	--sl-color-green-low: #e0f2e7;
+	--sl-color-green: #1e7a46;
+	--sl-color-green-high: #155733;
+	--sl-color-orange-low: #fbeedb;
+	--sl-color-orange: #9a5b00;
+	--sl-color-orange-high: #6e4100;
+	--sl-color-red-low: #fbe4e2;
+	--sl-color-red: #b3261e;
+	--sl-color-red-high: #8a1d17;
+	--sl-color-purple-low: #f6e3ee;
+	--sl-color-purple: #b4387a;
+	--sl-color-purple-high: #8a2a5d;
+}
+
+/* ---------- Chữ ---------- */
+.sl-markdown-content :is(h1, h2, h3),
+h1#_top,
+.site-title {
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+/* Tiêu đề xuống dòng cân hai bên, không để một chữ lẻ ở dòng cuối (trình duyệt cũ bỏ qua). Tiêu đề trong bài là
+   phần tử inline trong .sl-heading-wrapper của Starlight, nên đặt ở cả khối bọc ngoài. */
+:is(h1, h2, h3, h4),
+.sl-heading-wrapper {
+	text-wrap: balance;
+}
+.sl-markdown-content :is(p, li) {
+	max-width: 72ch;
+}
+/* Link trong bài có gạch chân, để không chỉ phân biệt với chữ quanh nó bằng màu (trợ năng) */
+.sl-markdown-content a:not(:where(.not-content *)) {
+	text-underline-offset: 0.15em;
+	text-decoration-thickness: from-font;
+}
+
+/* Viền khi dùng bàn phím: màu hồng nhấn như site cũ */
+:is(a, button, select, summary, input, textarea, [tabindex]):focus-visible {
+	outline: 2px solid var(--pz-focus);
+	outline-offset: 2px;
+}
+
+/* ---------- Thanh trên cùng: nền chàm như site cũ, cả hai chế độ ---------- */
+header.header {
+	background-color: var(--pz-header-bg);
+	border-bottom-color: var(--pz-header-line);
+}
+/* Đổi bảng màu chỉ cho từng phần của thanh, không cho cả header: hộp tìm kiếm (dialog) nằm trong header và phải giữ
+   màu của trang. */
+header.header .site-title,
+header.header button[data-open-modal],
+header.header .right-group {
+	--sl-color-white: #fff;
+	--sl-color-text-accent: #fff;
+	--sl-color-gray-1: #eeeffa;
+	--sl-color-gray-2: #d6d8f0;
+	--sl-color-gray-5: rgba(255, 255, 255, 0.3);
+	--sl-color-gray-6: rgba(255, 255, 255, 0.14);
+	--sl-color-black: rgba(0, 0, 0, 0.2);
+	--sl-color-bg-nav: var(--pz-header-bg);
+	--pz-focus: #f08bbf;
+}
+.site-title {
+	font-size: var(--sl-text-xl);
+}
+.site-title img {
+	border-radius: 9px;
+}
+/* Màn hình cảm ứng: tên site, nút tìm kiếm, nút menu và nút dạng link của hero (Starlight để cao 35, 40, 32 và 33 px)
+   có vùng bấm từ 44 px. Chép từ ../opus/src/styles/opus.css (rút từ kiểm thử trình duyệt của repo opus). */
+@media (pointer: coarse) {
+	:root {
+		--sl-menu-button-size: 2.75rem;
+	}
+	.sl-menu-button {
+		align-items: center;
+		justify-content: center;
+	}
+	.site-title,
+	header.header button[data-open-modal] {
+		min-height: 44px;
+		min-width: 44px;
+	}
+	.sl-link-button {
+		min-height: 44px;
+	}
+	/* Link neo cạnh tiêu đề: Starlight nới vùng bấm bằng ::after (0,25 rem trên dưới, 0,5 rem hai bên); ở tiêu đề nhỏ vẫn
+	   dưới 44 px, nên nới tới đủ 44 px mỗi chiều. Không đổi bố cục. */
+	.sl-markdown-content .sl-anchor-link::after {
+		inset: min(-0.25rem, calc(50% - 22px)) min(-0.5rem, calc(50% - 22px));
+	}
+	/* Menu bên và mục lục "Trên trang này" (cột phải, và bản thu gọn dưới thanh trên): Starlight để link cao 32–36 px */
+	.sidebar-content a,
+	.sidebar-content summary,
+	starlight-toc a,
+	mobile-starlight-toc .dropdown a {
+		display: flex;
+		align-items: center;
+		min-height: 44px;
+	}
+	/* ô chọn sáng, tối (thanh trên ở trang không có menu bên, và cuối menu trên điện thoại) */
+	starlight-theme-select select {
+		min-height: 44px;
+	}
+}
+
+/* Trang không có menu bên (mẫu splash: trang chủ, trang 404): trên điện thoại Starlight để ô chọn sáng, tối trong menu,
+   nên trang này không đổi được. Hiện ô ấy ở thanh trên. */
+@media (max-width: 49.99rem) {
+	:root:not([data-has-sidebar]) header.header .right-group {
+		display: flex;
+	}
+}
+
+/* Không có link mạng xã hội (social trong astro.config.mjs) thì Starlight vẫn để ô trống, kèm vạch ngăn (::after) đứng
+   lẻ bên trái ô chọn giao diện. Ẩn ô khi trống; có link lại thì vạch tự hiện lại. */
+header.header .social-icons:empty {
+	display: none;
+}
+/* Starlight để ô chọn giao diện rộng 6,25em (viết cho tiếng Anh), chữ "Tự động" bị cắt */
+starlight-theme-select select {
+	--sl-select-width: 7.25em;
+}
+
+/* ---------- Sơ đồ các bước (trang chủ tạm) ---------- */
+.pz-steps {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.75rem;
+	padding: 0;
+	list-style: none;
+	counter-reset: pz-step;
+}
+.sl-markdown-content .pz-steps > li {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin: 0;
+	padding: 1rem 1.1rem 1.1rem 4rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 12px;
+	background: var(--pz-card);
+	counter-increment: pz-step;
+}
+/* Số bước trong vòng tròn */
+.pz-steps > li::before {
+	content: counter(pz-step);
+	position: absolute;
+	inset-inline-start: 1rem;
+	top: 1rem;
+	display: grid;
+	place-items: center;
+	width: 2.1rem;
+	height: 2.1rem;
+	border-radius: 50%;
+	background: var(--sl-color-accent-low);
+	color: var(--sl-color-text-accent);
+	font-weight: 700;
+}
+/* Bước cuối: phần đã lên site, dùng màu nhấn */
+.pz-steps > li:last-child::before {
+	background: var(--pz-accent);
+	color: var(--pz-on-accent);
+}
+/* Mũi tên nối các bước: xuống dưới trên điện thoại, sang phải trên màn hình rộng */
+.pz-steps > li + li::after {
+	content: '';
+	position: absolute;
+	top: -1.45rem;
+	inset-inline-start: 2.05rem;
+	width: 0;
+	height: 0;
+	border-inline: 0.45rem solid transparent;
+	border-top: 0.6rem solid var(--sl-color-gray-4);
+}
+.pz-steps b {
+	color: var(--sl-color-white);
+	font-size: var(--sl-text-lg);
+	line-height: 1.35;
+}
+.pz-steps span {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+	line-height: 1.5;
+}
+@media (min-width: 50rem) {
+	.pz-steps {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+	.sl-markdown-content .pz-steps > li {
+		padding: 3.75rem 1.1rem 1.2rem;
+	}
+	.pz-steps > li + li::after {
+		top: 1.6rem;
+		inset-inline-start: -1.45rem;
+		border-block: 0.45rem solid transparent;
+		border-inline: 0;
+		border-inline-start: 0.6rem solid var(--sl-color-gray-4);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition: none !important;
+		animation: none !important;
+		scroll-behavior: auto !important;
+	}
+}

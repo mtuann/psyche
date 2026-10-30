@@ -1,0 +1,31 @@
+{
+  "name": "psyche",
+  "private": true,
+  "description": "Psyche: tâm lý học bằng bằng chứng, bằng tiếng Việt, cho người không học chuyên ngành (site làm lại bằng Astro và Starlight)",
+  "type": "module",
+  "scripts": {
+    "dev": "PSYCHE_BAN=xem astro dev",
+    "build": "astro build",
+    "build:xem": "PSYCHE_BAN=xem astro build",
+    "preview": "astro preview",
+    "test": "node --test --test-reporter=spec \"tests/**/*.test.mjs\"",
+    "test:trinh-duyet": "node --test --test-concurrency=1 --test-reporter=spec \"tests/trinh-duyet/kiem-*.mjs\"",
+    "lighthouse": "node tools/lighthouse/kiem.mjs"
+  },
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "dependencies": {
+    "@astrojs/markdown-satteri": "0.4.5",
+    "@astrojs/starlight": "0.42.7",
+    "astro": "7.4.2",
+    "pagefind": "1.5.2",
+    "satteri": "0.10.5",
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "axe-core": "4.13.0",
+    "lighthouse": "13.5.0",
+    "playwright": "1.64.1"
+  }
+}

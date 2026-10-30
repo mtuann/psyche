@@ -1,0 +1,56 @@
+---
+// Chân trang mặc định của Starlight, thêm hai dòng như site cũ (../psyche-zero/overrides/partials/copyright.html và
+// mục copyright của mkdocs.yml): lời nhắc tìm hỗ trợ khi đang gặp khó khăn, và câu về tính giáo dục của site. Lời nhắc
+// có ở mọi trang (tests/khung.test.mjs kiểm). Trang Hỗ trợ chưa chuyển sang site mới (lô D2-L1): tạm trỏ tới trang của
+// site cũ; khi trang lên site mới thì đổi thành link nội bộ.
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const hoTro = 'https://mtuann.github.io/psyche-zero/ho-tro/';
+---
+
+<Default><slot /></Default>
+<div class="pz-chan" data-pagefind-ignore>
+	{/* Không đặt trong <p>: link đứng riêng thì kiểm thử vùng bấm 44 px áp dụng (link trong câu chữ được miễn) */}
+	<div class="pz-chan__ho-tro">
+		<strong>Bạn đang gặp khó khăn?</strong>
+		<a href={hoTro} class="pz-chan__lien-ket">Xem trang Hỗ trợ: khi nào nên tìm chuyên gia và số điện thoại khẩn cấp</a>
+	</div>
+	<p>Nội dung © Psyche. Site mang tính giáo dục, không thay thế chẩn đoán hay điều trị chuyên môn.</p>
+</div>
+
+<style>
+	.pz-chan {
+		margin-top: 1.5rem;
+		padding-top: 1rem;
+		border-top: 1px solid var(--sl-color-hairline);
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+	}
+	.pz-chan__ho-tro {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		column-gap: 0.4em;
+		margin-bottom: 0.35rem;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-2);
+	}
+	.pz-chan__ho-tro strong {
+		color: var(--sl-color-white);
+	}
+	.pz-chan a {
+		color: var(--sl-color-text-accent);
+		text-underline-offset: 0.15em;
+	}
+	.pz-chan a:hover {
+		color: var(--sl-color-white);
+	}
+	/* Màn hình cảm ứng: link Hỗ trợ là chỗ bấm quan trọng nhất của chân trang, vùng bấm từ 44 px */
+	@media (pointer: coarse) {
+		.pz-chan__lien-ket {
+			display: inline-flex;
+			align-items: center;
+			min-height: 44px;
+		}
+	}
+</style>

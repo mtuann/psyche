@@ -1,0 +1,90 @@
+name: Build và kiểm thử
+description: >-
+  Cài Node và các gói, build bản thật hay bản xem, rồi chạy một phần kiểm thử: npm test, kiểm thử trình duyệt trên một
+  trình duyệt, Lighthouse (luật 7 của kế hoạch), hay chỉ cài Chromium cho bước chụp ảnh. Các phần chạy song song, mỗi
+  phần một job (matrix của test.yml và deploy.yml); build chỉ mất vài giây nên job nào cũng tự build. Dùng chung cho
+  test.yml và deploy.yml. Chép từ ../opus/.github/actions/kiem-thu/; thêm: lưu đệm node_modules (trúng thì bỏ npm ci).
+inputs:
+  ban:
+    description: "that: bản thật (npm run build, chỉ trang đã khóa); xem: bản xem (npm run build:xem, thêm trang chưa khóa)"
+    required: true
+  phan:
+    description: "npm-test: npm test; chromium, webkit, firefox: kiểm thử trình duyệt trên trình duyệt ấy; lighthouse: Lighthouse; anh-chup: chỉ cài Chromium (bước chụp ảnh ở test.yml)"
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Kiểm tham số
+      if: (inputs.ban != 'that' && inputs.ban != 'xem') || !contains(fromJSON('["npm-test","chromium","webkit","firefox","lighthouse","anh-chup"]'), inputs.phan)
+      run: echo "ban phải là that hay xem; phan phải là npm-test, chromium, webkit, firefox, lighthouse hay anh-chup" && exit 1
+      shell: bash
+    - uses: actions/setup-node@v7
+      id: node
+      with:
+        node-version-file: .nvmrc
+    # node_modules lưu đệm theo package-lock.json, hệ điều hành, kiến trúc máy và phiên bản Node: trúng thì bỏ npm ci
+    # (khoảng 15–20 giây mỗi job, sáu job mỗi lần push). Đổi gói thì khóa đổi, npm ci chạy lại và lưu bản mới.
+    # Lưu ngay sau npm ci, trước khi build: chỉ lưu cây gói sạch. Lưu ở cuối job (như actions/cache) thì bộ đệm build của
+    # Astro (node_modules/.astro: trang đã dựng) lọt vào và được dùng lại cho bản build khác (bản xem, bản thật); dòng
+    # loại trừ `!node_modules/.astro` không có tác dụng khi lưu cả thư mục (review D1.1).
+    - uses: actions/cache/restore@v6
+      id: goi
+      with:
+        path: node_modules
+        key: node-modules-${{ runner.os }}-${{ runner.arch }}-node${{ steps.node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+    - if: steps.goi.outputs.cache-hit != 'true'
+      run: npm ci
+      shell: bash
+    # các job song song cùng trượt thì cùng lưu: job đầu lưu được, các job sau chỉ ghi cảnh báo, không hỏng
+    - if: steps.goi.outputs.cache-hit != 'true'
+      uses: actions/cache/save@v6
+      with:
+        path: node_modules
+        key: ${{ steps.goi.outputs.cache-primary-key }}
+    - name: Build (${{ inputs.ban == 'xem' && 'bản xem' || 'bản thật' }})
+      run: npm run ${{ inputs.ban == 'xem' && 'build:xem' || 'build' }}
+      shell: bash
+    - if: inputs.phan == 'npm-test'
+      run: npm test
+      shell: bash
+    # trình duyệt của Playwright (Lighthouse và chụp ảnh dùng Chromium): lưu đệm theo phiên bản Playwright trong
+    # package-lock.json và theo trình duyệt (đỡ khoảng 2 phút mỗi lần); thư viện hệ thống thì cài mỗi lần
+    - name: Phiên bản Playwright
+      if: inputs.phan != 'npm-test'
+      id: pw
+      run: |
+        echo "phien-ban=$(node -p "require('./node_modules/playwright/package.json').version")" >> "$GITHUB_OUTPUT"
+        echo "trinh-duyet=${{ (inputs.phan == 'lighthouse' || inputs.phan == 'anh-chup') && 'chromium' || inputs.phan }}" >> "$GITHUB_OUTPUT"
+      shell: bash
+    - uses: actions/cache@v6
+      if: inputs.phan != 'npm-test'
+      id: luu-dem
+      with:
+        path: ~/.cache/ms-playwright
+        key: playwright-${{ runner.os }}-${{ steps.pw.outputs.phien-ban }}-${{ steps.pw.outputs.trinh-duyet }}
+    - name: Cài ${{ steps.pw.outputs.trinh-duyet }}
+      if: inputs.phan != 'npm-test' && steps.luu-dem.outputs.cache-hit != 'true'
+      run: npx playwright install --with-deps ${{ steps.pw.outputs.trinh-duyet }}
+      shell: bash
+    - name: Cài thư viện hệ thống cho ${{ steps.pw.outputs.trinh-duyet }}
+      if: inputs.phan != 'npm-test' && steps.luu-dem.outputs.cache-hit == 'true'
+      run: npx playwright install-deps ${{ steps.pw.outputs.trinh-duyet }}
+      shell: bash
+    - name: Kiểm thử trình duyệt (${{ inputs.phan }})
+      if: inputs.phan == 'chromium' || inputs.phan == 'webkit' || inputs.phan == 'firefox'
+      run: npm run test:trinh-duyet
+      env:
+        PSYCHE_TRINH_DUYET: ${{ inputs.phan }}
+      shell: bash
+    - name: Lighthouse
+      if: inputs.phan == 'lighthouse'
+      run: LH_RA=lighthouse-ket-qua npm run lighthouse
+      shell: bash
+    # hỏng thì giữ JSON của Lighthouse để xem lại (tab Summary của lần chạy, 14 ngày)
+    - uses: actions/upload-artifact@v7
+      if: failure() && inputs.phan == 'lighthouse'
+      with:
+        name: lighthouse-${{ inputs.ban }}
+        path: lighthouse-ket-qua
+        retention-days: 14
+        if-no-files-found: ignore

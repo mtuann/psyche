@@ -1,0 +1,130 @@
+---
+// Phần đầu của trang có `hero` (hiện chỉ trang chủ): khung màu chàm như .pz-hero của site cũ
+// (../psyche-zero/docs/assets/css/psyche.css), tên site cạnh dấu ψ, dòng giới thiệu, nút; dưới cùng là một mạng nút
+// trang trí, như sơ đồ nơ-ron. Đọc hero.title, hero.tagline, hero.actions; bỏ qua hero.image.
+import { LinkButton } from '@astrojs/starlight/components';
+import DraftContentNotice from '@astrojs/starlight/components/DraftContentNotice.astro';
+
+const { data } = Astro.locals.starlightRoute.entry;
+const { title = data.title, tagline, actions = [] } = data.hero || {};
+
+// Mạng nút: tọa độ cố định (không ngẫu nhiên) để bản build giống nhau giữa các lần. Ba nút sáng màu nhấn.
+// Các nút nằm trong dải y 30–60 của khung 630 × 90: khung bị cắt trên dưới khi trang rộng (preserveAspectRatio slice),
+// dải giữa vẫn hiện đủ.
+const NUT = [
+	[24, 56], [78, 32], [128, 60], [182, 34], [236, 58], [290, 30],
+	[344, 58], [398, 34], [452, 60], [506, 32], [560, 56], [606, 30],
+];
+const NOI = NUT.flatMap((_, i) => [
+	...(i + 1 < NUT.length ? [[i, i + 1]] : []),
+	...(i + 2 < NUT.length ? [[i, i + 2]] : []),
+]);
+const SANG = new Set([4, 7, 10]);
+---
+
+<div class="pz-hero">
+	<div class="ten">
+		<svg class="dau" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+			<path d="M10 10v4.5a8 8 0 0 0 16 0V10M18 6.5v23"></path>
+			<circle cx="29.5" cy="6.5" r="2.5"></circle>
+		</svg>
+		{/* id="_top" như PAGE_TITLE_ID của Starlight: link "Bỏ qua để đến nội dung" trỏ tới đây */}
+		<h1 id="_top" data-page-title set:html={title} />
+	</div>
+	{data.draft && <DraftContentNotice />}
+	{tagline && <p class="tagline" set:html={tagline} />}
+	{
+		actions.length > 0 && (
+			<div class="actions">
+				{actions.map(({ attrs: { class: className, ...attrs } = {}, icon, link: href, text, variant }) => (
+					<LinkButton {href} {variant} icon={icon?.name} class:list={[className]} {...attrs}>
+						{text}
+						{icon?.html && <Fragment set:html={icon.html} />}
+					</LinkButton>
+				))}
+			</div>
+		)
+	}
+	<svg class="mang" viewBox="0 0 630 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+		{NOI.map(([a, b]) => <line x1={NUT[a][0]} y1={NUT[a][1]} x2={NUT[b][0]} y2={NUT[b][1]} />)}
+		{NUT.map(([x, y], i) => <circle cx={x} cy={y} r={SANG.has(i) ? 6.5 : 4.5} class:list={{ sang: SANG.has(i) }} />)}
+	</svg>
+</div>
+
+<style is:global>
+	.pz-hero {
+		--pad: clamp(1.25rem, 5vw, 3rem);
+		position: relative;
+		overflow: hidden;
+		margin-top: clamp(0.5rem, 3vw, 2rem);
+		padding: var(--pad) var(--pad) 0;
+		border: 1px solid var(--pz-border);
+		border-radius: 1rem;
+		background: linear-gradient(135deg, var(--pz-hero-a), var(--pz-hero-b));
+	}
+
+	.pz-hero .ten {
+		display: flex;
+		align-items: center;
+		gap: 0.35em;
+		font-size: clamp(2.75rem, 12vw, 4.75rem);
+	}
+
+	/* Dấu ψ: cùng nét với logo (src/assets/logo.svg), màu theo chế độ sáng, tối */
+	.pz-hero .dau {
+		flex: none;
+		width: 0.95em;
+		height: 0.95em;
+		fill: none;
+		stroke: var(--sl-color-text-accent);
+		stroke-width: 3;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+	.pz-hero .dau circle {
+		stroke: var(--pz-accent);
+		stroke-width: 2;
+	}
+
+	.pz-hero h1 {
+		margin: 0;
+		font-size: 1em;
+		font-weight: 700;
+		line-height: 1.05;
+		letter-spacing: -0.02em;
+		color: var(--sl-color-white);
+	}
+
+	.pz-hero .tagline {
+		max-width: 34ch;
+		margin-top: 1rem;
+		font-size: clamp(var(--sl-text-lg), calc(0.75rem + 1.4vw), var(--sl-text-2xl));
+		line-height: 1.5;
+		color: var(--sl-color-gray-2);
+	}
+
+	.pz-hero .actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+
+	/* Mạng nút tràn hết bề ngang khung, sát mép dưới */
+	.pz-hero .mang {
+		display: block;
+		width: calc(100% + 2 * var(--pad));
+		height: 5.5rem;
+		margin: 1.75rem calc(-1 * var(--pad)) 0;
+	}
+	.pz-hero .mang line {
+		stroke: var(--pz-mang);
+		stroke-width: 1.5;
+	}
+	.pz-hero .mang circle {
+		fill: var(--pz-mang-nut);
+	}
+	.pz-hero .mang circle.sang {
+		fill: var(--pz-accent);
+	}
+</style>

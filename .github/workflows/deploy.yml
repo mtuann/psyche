@@ -1,0 +1,94 @@
+name: Đăng site lên GitHub Pages
+
+# Mỗi lần push lên main (hay bấm chạy tay): build bản thật (chỉ trang đã khóa trong kiem-dinh/khoa.json, từ D1.6), kiểm
+# thử; kiểm thử trình duyệt và Lighthouse chạy song song ở job trinh-duyet (commit đã qua test.yml ở nhánh: chỉ chromium
+# và Lighthouse). Đạt hết thì đăng dist/. Hỏng bước nào thì không đăng: site giữ bản trước. Chép từ
+# ../opus/.github/workflows/deploy.yml.
+on:
+  push:
+    branches: [main]
+    # chỉ đổi kế hoạch, báo cáo, sổ tay hay giấy phép thì site không đổi: không cần build lại
+    paths-ignore: ['plans/**', 'README.md', 'AGENTS.md', 'CLAUDE.md', 'LICENSE*']
+  workflow_dispatch:
+
+# Quyền đăng Pages chỉ ở job deploy; job build (chạy npm ci, mã của gói bên thứ ba) chỉ đọc mã. Không dùng
+# configure-pages: nó cần quyền đọc Pages ở job build, mà Astro đã có site và base trong astro.config.mjs.
+permissions:
+  contents: read
+
+# Mỗi lúc một lần đăng; lần push sau chờ lần trước xong, để bản cũ hơn không ghi đè bản mới.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build và kiểm thử (bản thật)
+    runs-on: ubuntu-latest
+    # chặn đường treo (mặc định của GitHub là 6 giờ); một lần chạy thường khoảng 1 phút
+    timeout-minutes: 30
+    # đọc các lần chạy của test.yml (bước "Đã kiểm ở nhánh?")
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      cac-phan: ${{ steps.da-kiem.outputs.cac-phan }}
+    steps:
+      - uses: actions/checkout@v7
+      # Lô gộp vào main kiểu fast-forward: commit này đã qua test.yml ở nhánh (lần chạy do push, kiểm đúng commit này; lần
+      # chạy của pull request kiểm bản gộp nên không tính), trên ba trình duyệt với bản xem. Bản thật dựng khác bản xem (link
+      # tới trang chưa khóa thành "sắp có", nút của dải mực tự ẩn, không có dải "Chưa kiểm định", trang mẫu khác), nên vẫn
+      # kiểm trên Chromium (axe, hiển thị, thành phần) và Lighthouse; chỉ bỏ WebKit và Firefox. Push thẳng lên main, hay
+      # test.yml chưa đạt ở commit này, thì chạy đủ bốn phần.
+      - name: Đã kiểm ở nhánh?
+        id: da-kiem
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh api "repos/${{ github.repository }}/actions/workflows/test.yml/runs?head_sha=${{ github.sha }}&event=push&status=success" -q .total_count || echo 0)
+          echo "test.yml đã đạt ở ${{ github.sha }}: $n lần"
+          if [ "${n:-0}" -gt 0 ]; then p='["chromium","lighthouse"]'; else p='["chromium","webkit","firefox","lighthouse"]'; fi
+          echo "cac-phan=$p" >> "$GITHUB_OUTPUT"
+        shell: bash
+      - uses: ./.github/actions/kiem-thu
+        with:
+          ban: that
+          phan: npm-test
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  trinh-duyet:
+    name: Kiểm thử (bản thật, ${{ matrix.phan }})
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # các phần do bước "Đã kiểm ở nhánh?" chọn; đầu ra rỗng hay hỏng thì job hỏng, không đăng
+        phan: ${{ fromJSON(needs.build.outputs.cac-phan) }}
+    # phần lâu nhất thường khoảng 4 phút
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      # tự build lại (vài giây, cùng commit nên cùng kết quả) thay vì chép dist/ từ job build
+      - uses: ./.github/actions/kiem-thu
+        with:
+          ban: that
+          phan: ${{ matrix.phan }}
+
+  deploy:
+    name: Đăng
+    needs: [build, trinh-duyet]
+    runs-on: ubuntu-latest
+    # deploy-pages tự chờ tối đa 10 phút: để dư
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.dang.outputs.page_url }}
+    steps:
+      - id: dang
+        uses: actions/deploy-pages@v5
