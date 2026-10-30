@@ -1,0 +1,70 @@
+# Hồ sơ kiểm định lượt 1 (D2-0, V1: siêu dữ liệu xuất bản; agent Sonnet 5.5). Khóa: node tools/khoa.mjs khoa du-lieu/nguon/harlow1959#…
+ban_ghi: nguon/harlow1959
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
+      luot_2: null
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1126/science.130.3373.421
+    link: https://api.crossref.org/works/10.1126%2Fscience.130.3373.421
+  - id: europepmc
+    ten: Bản ghi Europe PMC (MEDLINE) của DOI 10.1126/science.130.3373.421
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1126/science.130.3373.421&format=json&resultType=lite
+nhan_dinh:
+  - id: n1
+    cau: 'Tác giả: Harlow, H. F., & Zimmermann, R. R.'
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Harlow, Harry F.; Zimmermann, Robert R.
+    ket_qua: dung
+  - id: n2
+    cau: 'Năm xuất bản: 1959'
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: 'năm in hay xuất bản: 1959; ngày Crossref ghi: [1959, 8, 21]'
+    ket_qua: dung
+  - id: n3
+    cau: 'Tên: Affectional response in the infant monkey'
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+      - europepmc
+    trich: Affectional Response in the Infant Monkey
+    ket_qua: da-sua
+    ghi_chu: "người gom (Claude Opus 5.5): tên in trên Science, theo Crossref và OpenAlex, là số ít (Affectional Response in the Infant Monkey); dữ liệu cũ ghi số nhiều như MEDLINE. Đã sửa (sua-nguon-khong-doi.yml)"
+  - id: n4
+    cau: 'Nơi đăng: Science, 130(3373), 421–432'
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Science, tập 130, số 3373, trang 421-432
+    ket_qua: dung
+  - id: n5
+    cau: DOI 10.1126/science.130.3373.421 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: 'loại theo Crossref: journal-article'
+    ket_qua: da-sua
+    ghi_chu: 'cũ: nguon.yml không ghi DOI; mới: doi 10.1126/science.130.3373.421; lý do: Crossref cho bài đúng tác giả, tên, tập, trang này (tìm theo tên và nơi đăng, đối chiếu từng trường ở n1–n4).'

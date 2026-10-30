@@ -1,0 +1,36 @@
+# Sửa dữ liệu nguồn không có DOI (D2-0, lượt 1 của bộ nghien-cuu): thêm DOI tìm được qua Crossref cho 10 bài báo, thêm số của tập cho skinner1948.
+# Áp một lần bằng node tools/du_lieu/ap-sua.mjs nguon plans/lam-lai/bao-cao/d2-0/sua-nguon-khong-doi.yml
+- ban_ghi: darley1968
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/h0025589'
+  moi: {doi: 10.1037/h0025589}
+- ban_ghi: latane1968
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/h0026570'
+  moi: {doi: 10.1037/h0026570}
+- ban_ghi: skinner1948
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/h0055873; thiếu số của tập (Crossref: tập 38, số 2), các nguồn bài báo khác đều ghi số'
+  moi: {doi: 10.1037/h0055873, noi_dang: 'Journal of Experimental Psychology, 38(2), 168–172'}
+- ban_ghi: bandura1963
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/h0048687'
+  moi: {doi: 10.1037/h0048687}
+- ban_ghi: harlow1959
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1126/science.130.3373.421'
+  moi: {doi: 10.1126/science.130.3373.421}
+- ban_ghi: harlow1965
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1073/pnas.54.1.90'
+  moi: {doi: 10.1073/pnas.54.1.90}
+- ban_ghi: mischel1972
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/h0032198'
+  moi: {doi: 10.1037/h0032198}
+- ban_ghi: mischel1988
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/0022-3514.54.4.687'
+  moi: {doi: 10.1037/0022-3514.54.4.687}
+- ban_ghi: mischel1989
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1126/science.2658056'
+  moi: {doi: 10.1126/science.2658056}
+- ban_ghi: shoda1990
+  ly_do: 'bài báo có DOI mà dữ liệu chưa ghi; Crossref (tìm theo tên bài, đối chiếu tác giả, tập, trang): 10.1037/0012-1649.26.6.978'
+  moi: {doi: 10.1037/0012-1649.26.6.978}
+# người gom (Claude Opus 5.5): đối chiếu lại 10 DOI mới bằng tools/du_lieu/doi.mjs
+- ban_ghi: harlow1959
+  ly_do: 'tên in trên Science (Crossref và OpenAlex): "Affectional Response in the Infant Monkey", số ít; MEDLINE ghi số nhiều. APA lấy tên của nhà xuất bản; dòng phụ trên Science ("Orphaned baby monkeys…") là lời dẫn của tạp chí, không thuộc tên bài'
+  moi: { ten: 'Affectional response in the infant monkey' }
