@@ -14,7 +14,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { duLieuDaKiem } from '../du-lieu.mjs';
-import { docKhoa } from '../khoa.mjs';
+import { docKhoa, hinhCuaTrang } from '../khoa.mjs';
 import fs from 'node:fs';
 import { parse } from 'yaml';
 import { DUONG_GOC, trangTrongBan } from '../ban-build.mjs';
@@ -96,7 +96,16 @@ const CHI_THI = {
 	'the-linh-vuc': { ve: ({ ds }) => theLinhVuc(ds()) },
 	'bai-moi': { thuocTinh: ['so'], ve: ({ tt, ds }) => baiMoi(tt, ds()) },
 	'cong-cu-noi-bat': { ve: ({ ds }) => congCuNoiBat(ds()) },
-	hinh: { thuocTinh: ['ten*'], ve: ({ tt, trang }) => hinh(tt.ten, trang) },
+	hinh: {
+		thuocTinh: ['ten*'],
+		ve: ({ tt, trang, nguonTrang }) => {
+			// mỗi hình một dòng đúng khuôn, để mã băm của trang tính được hình (hinhCuaTrang, src/khoa.mjs)
+			const nguon = nguonTrang();
+			if (nguon !== null && !hinhCuaTrang(nguon).includes(tt.ten))
+				throw new Error(`::hinh{ten="${tt.ten}"} phải viết đúng một dòng riêng, đầu dòng: ::hinh{ten="tên-chữ-thường"} (nháy kép, không thụt lề, không trong danh sách hay trích dẫn)`);
+			return hinh(tt.ten, trang);
+		},
+	},
 	nguon: { thuocTinh: ['id*'], ve: ({ tt }) => danhSachNguon(tt.id, duLieuDaKiem().nguon) },
 	// hộp tóm tắt đầu bài (D3-L1): ý chính của các khung nhãn trong trang, theo thứ tự; không có chữ nào ngoài chữ của khung
 	'tom-tat': { ve: ({ nguonTrang }) => tomTat(nguonTrang()) },
@@ -180,7 +189,7 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				if (sai) throw loi(sai);
 				let html;
 				try {
-					html = muc.ve({ tt, trang, ds: () => duLieuDanhSach(docsDir), nguonTrang: () => fs.readFileSync(file, 'utf8') });
+					html = muc.ve({ tt, trang, ds: () => duLieuDanhSach(docsDir), nguonTrang: () => (fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null) });
 				} catch (e) {
 					throw loi(e.message);
 				}

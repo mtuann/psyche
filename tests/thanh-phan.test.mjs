@@ -4,6 +4,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { markdownToHtml } from 'satteri';
@@ -115,6 +116,22 @@ test('::nguon: danh sách nguồn từ nguon.yml theo thứ tự ghi; id không 
 
 // Chữ dạng ":x" (lúc 9:30) không phải :nhan thì plugin để nguyên chỉ thị, và plugin khôi phục chỉ thị của Starlight trả lại
 // thành chữ; plugin ấy không chạy ở đây (đã xem trên bản build), nên chỉ kiểm chỉ thị một dòng.
+test('::hinh: chỉ nhận một dòng đúng khuôn (để mã băm của trang tính được hình); cách viết khác là lỗi', () => {
+	const goc = fs.mkdtempSync(path.join(os.tmpdir(), 'psyche-hinh-'));
+	const dungFile = (chu) => {
+		const f = path.join(goc, 'thi-nghiem', 'thu.md');
+		fs.mkdirSync(path.dirname(f), { recursive: true });
+		fs.writeFileSync(f, chu);
+		const plugin = psycheMarkdown({ docsDir: goc })({ fileURL: pathToFileURL(f) });
+		return markdownToHtml(chu, { mdastPlugins: [plugin], features: { directive: true, smartPunctuation: false } }).html;
+	};
+	const ten = fs.readdirSync(THU_MUC_HINH).find((x) => x.endsWith('.html')).replace(/\.html$/, '');
+	assert.match(dungFile(`Chữ.\n\n::hinh{ten="${ten}"}\n`), /<figure/);
+	for (const sai of [`   ::hinh{ten="${ten}"}`, `::hinh{ten='${ten}'}`, `::hinh{ten=${ten}}`, `- ::hinh{ten="${ten}"}`, `> ::hinh{ten="${ten}"}`])
+		assert.throws(() => dungFile(`Chữ.\n\n${sai}\n`), /phải viết đúng một dòng riêng/, sai);
+	fs.rmSync(goc, { recursive: true });
+});
+
 test('chỉ thị một dòng lạ là lỗi', () => {
 	assert.throws(() => dung('::hop-tac-pham'), /không có chỉ thị ::hop-tac-pham/);
 	assert.throws(() => dung('::hinh[chữ]{ten="a"}'), /::hinh không nhận chữ/);

@@ -32,7 +32,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { parse, parseDocument, stringify } from 'yaml';
 import { NHAN, loaiTrang, schema } from '../src/du-lieu.mjs';
-import { GOC, chuanKhoaBanGhi, docBanGhi, docKhoa, fileTrang, maBamKhoaBanGhi, maBamTrang, tachKhoaBanGhi } from '../src/khoa.mjs';
+import { GOC, chuanKhoaBanGhi, docBanGhi, docKhoa, fileTrang, hinhCuaTrang, maBamKhoaBanGhi, maBamTrangFile, tachKhoaBanGhi } from '../src/khoa.mjs';
 import { CONG_CU, THU_MUC_HINH } from '../src/plugins/thanh-phan.mjs';
 
 /** Kết quả lượt 1 của một nhận định (chuan-kiem-dinh.md mục 6). */
@@ -106,7 +106,7 @@ function maBamMuc(muc, goc) {
 	}
 	const f = fileTrang(muc, goc);
 	if (!fs.existsSync(f)) throw new Error(`không có trang ${path.relative(goc, f)}`);
-	return maBamTrang(fs.readFileSync(f, 'utf8'));
+	return maBamTrangFile(f, goc);
 }
 
 function ghiKhoa(khoa, goc) {
@@ -118,10 +118,9 @@ function ghiKhoa(khoa, goc) {
 /** Chỉ thị ::cong-cu, ::hinh của trang mà site mới chưa có (sẽ hiện ô "chưa chuyển"). */
 function chuaChuyenTrong(noiDung, goc) {
 	const ra = [];
-	for (const [, loai, ten] of noiDung.matchAll(/^::(cong-cu|hinh)\{[^}]*\bten="([^"]*)"/gm)) {
-		if (loai === 'cong-cu' && !CONG_CU[ten]) ra.push(`::cong-cu{ten="${ten}"}`);
-		if (loai === 'hinh' && !fs.existsSync(path.join(goc, path.relative(GOC, THU_MUC_HINH), `${ten}.html`))) ra.push(`::hinh{ten="${ten}"}`);
-	}
+	for (const [, ten] of noiDung.matchAll(/^::cong-cu\{[^}]*\bten="([^"]*)"/gm)) if (!CONG_CU[ten]) ra.push(`::cong-cu{ten="${ten}"}`);
+	for (const ten of hinhCuaTrang(noiDung))
+		if (!fs.existsSync(path.join(goc, path.relative(GOC, THU_MUC_HINH), `${ten}.html`))) ra.push(`::hinh{ten="${ten}"}`);
 	return ra;
 }
 
