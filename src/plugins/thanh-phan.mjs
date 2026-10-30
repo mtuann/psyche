@@ -46,6 +46,24 @@ export function chipNhan(ma) {
 }
 chipNhan.loi = (ma) => `:nhan[${ma}]: nhãn phải là một trong ${Object.keys(TEN_NHAN).join(', ')}`;
 
+// ---------- Tóm tắt đầu bài (D3-L1) ----------
+
+/**
+ * ::tom-tat: hộp "Tóm tắt nhanh" từ các khung nhãn :::<nhãn>[ý chính] của trang (chữ nguồn), theo thứ tự trong trang,
+ * mỗi ý một dòng kèm chip nhãn. Ý chính viết thường đầu câu trong khung nên viết hoa chữ đầu. Trang không có khung nhãn
+ * thì lỗi (hộp rỗng).
+ */
+export function tomTat(nguonTrang) {
+	const y = [...String(nguonTrang).matchAll(/^:::(vung-chac|kha-vung|tranh-cai|bac-bo)\[(.+)\]\s*$/gm)];
+	if (!y.length) throw new Error('::tom-tat: trang không có khung nhãn nào (:::vung-chac[…] …) để tóm tắt');
+	const hoa = (x) => x.replace(/^(\P{L}*)(\p{L})/u, (_, a, b) => a + b.toLocaleUpperCase('vi'));
+	return (
+		`<aside class="pz-tom-tat" aria-label="Tóm tắt nhanh"><p class="pz-tom-tat__ten">Tóm tắt nhanh</p><ul>` +
+		y.map(([, ma, ten]) => `<li>${chipNhan(ma)} ${md(hoa(ten))}</li>`).join('') +
+		`</ul></aside>`
+	);
+}
+
 // ---------- Câu hỏi kiểm tra nhanh ----------
 
 /**

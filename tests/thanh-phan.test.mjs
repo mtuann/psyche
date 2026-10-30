@@ -9,7 +9,7 @@ import { pathToFileURL } from 'node:url';
 import { markdownToHtml } from 'satteri';
 import { duLieuDaKiem } from '../src/du-lieu.mjs';
 import { psycheMarkdown } from '../src/plugins/psyche-markdown.mjs';
-import { CONG_CU, THU_MUC_HINH, canTaiScript, docQuiz, dongNguon, hinh, md } from '../src/plugins/thanh-phan.mjs';
+import { CONG_CU, THU_MUC_HINH, canTaiScript, docQuiz, dongNguon, hinh, md, tomTat } from '../src/plugins/thanh-phan.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DOCS = path.join(ROOT, 'src/content/docs');
@@ -118,6 +118,21 @@ test('::nguon: danh sách nguồn từ nguon.yml theo thứ tự ghi; id không 
 test('chỉ thị một dòng lạ là lỗi', () => {
 	assert.throws(() => dung('::hop-tac-pham'), /không có chỉ thị ::hop-tac-pham/);
 	assert.throws(() => dung('::hinh[chữ]{ten="a"}'), /::hinh không nhận chữ/);
+});
+
+test('tóm tắt đầu bài (từ các khung nhãn của trang) và hồ sơ nghiên cứu (danh sách đúng khuôn; sai khuôn là lỗi)', () => {
+	const tt = dung('::tom-tat', 'thi-nghiem/asch');
+	assert.match(tt, /^<aside class="pz-tom-tat" aria-label="Tóm tắt nhanh"><p class="pz-tom-tat__ten">Tóm tắt nhanh<\/p><ul>/);
+	assert.match(tt, /<li><span class="pz-tag pz-tag--vung-chac">Vững chắc<\/span> Một nhóm nhất trí làm lệch/);
+	assert.equal((tt.match(/<li>/g) ?? []).length, 3, 'ba khung nhãn của trang Asch');
+	assert.match(tomTat(':::bac-bo[*bịa* toàn bộ]\nx\n:::'), /Đã bị bác bỏ<\/span> <em>Bịa<\/em> toàn bộ/);
+	assert.throws(() => tomTat('Không có khung.'), /không có khung nhãn/);
+	const hs = dung(':::ho-so-nghien-cuu\n- **Tác giả, năm** Solomon Asch, 1951\n- **Kết quả chính** 36,8% câu trả lời *hùa theo*\n:::');
+	assert.match(hs, /^<aside class="pz-ho-so" aria-label="Hồ sơ nghiên cứu"><p class="pz-ho-so__ten">Hồ sơ nghiên cứu<\/p><dl>/);
+	assert.match(hs, /<div><dt>Tác giả, năm<\/dt><dd>Solomon Asch, 1951<\/dd><\/div>/);
+	assert.match(hs, /<dd>36,8% câu trả lời <em>hùa theo<\/em><\/dd>/);
+	assert.throws(() => dung(':::ho-so-nghien-cuu\n- Tác giả: Asch\n:::'), /phải là "\*\*Mục\*\* nội dung"/);
+	assert.match(dung(':::ho-so-nghien-cuu[Hồ sơ: Asch]\n- **Năm** 1951\n:::'), /aria-label="Hồ sơ: Asch"/);
 });
 
 test('bảng: bọc trong vùng cuộn nhận focus, mỗi vùng một tên riêng trong trang', () => {

@@ -3,6 +3,8 @@
 // - khung nhãn :::vung-chac[Ý chính] … ::: (cả kha-vung, tranh-cai, bac-bo) thành khung nền màu nhạt có nhãn dạng viên
 //   (ý chính chỉ bỏ được ở trang giới thiệu bốn nhãn);
 // - :::thu-gon[Xem đáp án] … ::: thành khối bấm để mở; :::o-viet-nam … ::: thành khung "Ở Việt Nam";
+// - :::ho-so-nghien-cuu … ::: (hộp hồ sơ nghiên cứu) và ::tom-tat (hộp tóm tắt đầu bài, dựng từ các khung nhãn của
+//   chính trang) của bố cục C;
 // - chip nhãn trong câu :nhan[vung-chac];
 // - khối ```quiz thành câu hỏi kiểm tra nhanh;
 // - chỉ thị một dòng ::cong-cu{ten="…"}, ::hinh{ten="…"}, ::nguon{id="…"} thành công cụ, hình tĩnh, danh sách nguồn.
@@ -17,7 +19,7 @@ import fs from 'node:fs';
 import { parse } from 'yaml';
 import { DUONG_GOC, trangTrongBan } from '../ban-build.mjs';
 import { svg } from '../bieu-tuong.mjs';
-import { TEN_NHAN, baiMoi, chipNhan, congCu, congCuNoiBat, danhSachBai, danhSachNguon, hinh, quiz, theLinhVuc } from './thanh-phan.mjs';
+import { TEN_NHAN, baiMoi, tomTat, chipNhan, congCu, congCuNoiBat, danhSachBai, danhSachNguon, hinh, quiz, theLinhVuc } from './thanh-phan.mjs';
 
 /** Aside của Starlight: không đụng tới. */
 const ASIDE_STARLIGHT = new Set(['note', 'tip', 'caution', 'danger']);
@@ -61,6 +63,24 @@ const KHOI = {
 		if (!nhan?.length) throw loi(':::thu-gon cần chữ của nút trong ngoặc vuông, ví dụ :::thu-gon[Xem đáp án]');
 		return khoi('details', { class: 'pz-thu-gon' }, [khoi('summary', {}, nhan), khoi('div', { class: 'pz-thu-gon__noi' }, con)]);
 	},
+	// hộp hồ sơ nghiên cứu (bố cục C, D3-L1): danh sách "- **Mục** nội dung" thành bảng hai cột; số liệu là chữ của trang,
+	// lấy từ phần kể nghiên cứu của chính trang
+	'ho-so-nghien-cuu': ({ nhan, con }, loi) => {
+		const [ds] = con;
+		if (con.length !== 1 || ds.type !== 'list')
+			throw loi(':::ho-so-nghien-cuu chỉ chứa một danh sách, mỗi dòng "- **Mục** nội dung", ví dụ "- **Tác giả, năm** Solomon Asch, 1951"');
+		const dong = ds.children.map((muc) => {
+			const [p, ...thua] = muc.children ?? [];
+			const [muc0, ...sau] = p?.children ?? [];
+			if (p?.type !== 'paragraph' || thua.length || muc0?.type !== 'strong' || !chu({ children: sau }).trim())
+				throw loi(`:::ho-so-nghien-cuu: dòng "${chu(muc).trim().slice(0, 40)}" phải là "**Mục** nội dung"`);
+			const [dau, ...con2] = sau;
+			const bo = dau.type === 'text' ? [{ ...dau, value: dau.value.replace(/^[\s:]+/, '') }, ...con2] : sau;
+			return khoi('div', {}, [khoi('dt', {}, muc0.children), khoi('dd', {}, bo)]);
+		});
+		const ten = nhan?.length ? nhan : [{ type: 'text', value: 'Hồ sơ nghiên cứu' }];
+		return khoi('aside', { class: 'pz-ho-so', 'aria-label': ten.map(chu).join('') }, [khoi('p', { class: 'pz-ho-so__ten' }, ten), khoi('dl', {}, dong)]);
+	},
 	'o-viet-nam': ({ nhan, con }) =>
 		khoi('aside', { class: 'pz-vn', 'aria-label': 'Ở Việt Nam' }, [
 			khoi('p', { class: 'pz-vn__ten' }, nhan?.length ? nhan : [{ type: 'text', value: 'Ở Việt Nam' }]),
@@ -78,6 +98,8 @@ const CHI_THI = {
 	'cong-cu-noi-bat': { ve: ({ ds }) => congCuNoiBat(ds()) },
 	hinh: { thuocTinh: ['ten*'], ve: ({ tt, trang }) => hinh(tt.ten, trang) },
 	nguon: { thuocTinh: ['id*'], ve: ({ tt }) => danhSachNguon(tt.id, duLieuDaKiem().nguon) },
+	// hộp tóm tắt đầu bài (D3-L1): ý chính của các khung nhãn trong trang, theo thứ tự; không có chữ nào ngoài chữ của khung
+	'tom-tat': { ve: ({ nguonTrang }) => tomTat(nguonTrang()) },
 };
 
 /**
@@ -158,7 +180,7 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				if (sai) throw loi(sai);
 				let html;
 				try {
-					html = muc.ve({ tt, trang, ds: () => duLieuDanhSach(docsDir) });
+					html = muc.ve({ tt, trang, ds: () => duLieuDanhSach(docsDir), nguonTrang: () => fs.readFileSync(file, 'utf8') });
 				} catch (e) {
 					throw loi(e.message);
 				}

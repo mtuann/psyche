@@ -726,3 +726,64 @@
 	overflow: visible;
 	margin: 0;
 }
+
+/* ---------- Tóm tắt đầu bài, hồ sơ nghiên cứu (bố cục C, D3-L1; plans/lam-lai/ban-mau/ma/mau-c.css) ---------- */
+.sl-markdown-content :is(.pz-tom-tat, .pz-ho-so) {
+	margin-block: 1.5rem;
+	padding: 1.1rem 1.25rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 1rem;
+}
+.sl-markdown-content .pz-tom-tat {
+	background: linear-gradient(135deg, var(--pz-hero-a), var(--pz-hero-b));
+}
+.sl-markdown-content :is(.pz-tom-tat__ten, .pz-ho-so__ten) {
+	margin: 0 0 0.6rem;
+	color: var(--pz-accent);
+	font-size: var(--sl-text-xs);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.sl-markdown-content .pz-tom-tat ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sl-markdown-content .pz-tom-tat li {
+	margin: 0;
+	color: var(--sl-color-white);
+	font-weight: 500;
+}
+.sl-markdown-content .pz-tom-tat li + li {
+	margin-top: 0.6rem;
+}
+.pz-tom-tat .pz-tag {
+	margin-inline-end: 0.5em;
+}
+.sl-markdown-content .pz-ho-so dl {
+	display: grid;
+	gap: 0.6rem;
+	margin: 0;
+}
+.sl-markdown-content .pz-ho-so dl > div {
+	margin: 0;
+}
+.sl-markdown-content .pz-ho-so dt {
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-xs);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+.sl-markdown-content .pz-ho-so dd {
+	margin: 0.1rem 0 0;
+	color: var(--sl-color-white);
+	font-weight: 600;
+}
+@media (min-width: 40rem) {
+	.sl-markdown-content .pz-ho-so dl {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1.5rem;
+	}
+}

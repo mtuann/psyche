@@ -4,6 +4,8 @@ description: Solomon Asch (1951/1956) cho người tham gia so sánh độ dài 
 in_duoc: true
 ---
 
+::tom-tat
+
 ## Tự trải nghiệm
 
 Hãy tưởng tượng bạn ngồi trong một phòng với 7 người lạ. Người ta giơ hai tấm bìa: một tấm có một đường thẳng đứng, tấm kia có ba đường thẳng đánh số 1, 2, 3 với độ dài khác nhau rõ ràng. Nhiệm vụ của bạn: nói to xem đường nào dài bằng đường mẫu.
