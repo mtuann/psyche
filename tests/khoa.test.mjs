@@ -38,7 +38,6 @@ test('mã băm của trang gồm cả hình tĩnh ::hinh của trang: sửa hìn
 	assert.notEqual(maBamTrangFile(f, goc), truoc, 'sửa số trong hình thì mã băm đổi');
 	// mỗi phần chuẩn hóa riêng: dòng trống thừa cuối trang không đổi mã băm, kể cả khi có hình
 	fs.writeFileSync(f, '---\ntitle: A\n---\n\n::hinh{ten="x"}\n\n\n');
-	assert.equal(maBamTrangFile(f, goc), maBamTrangFile(f, goc));
 	const coHinh = maBamTrangFile(f, goc);
 	fs.writeFileSync(f, '---\ntitle: A\n---\n\n::hinh{ten="x"}\n');
 	assert.equal(maBamTrangFile(f, goc), coHinh);
