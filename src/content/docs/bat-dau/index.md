@@ -46,7 +46,7 @@ Năm 2015, nhóm Open Science Collaboration gồm hàng trăm nhà nghiên cứu
 - Ở nghiên cứu gốc, 97% có kết quả có ý nghĩa thống kê. Khi làm lại, chỉ còn **36%**.
 - Độ lớn hiệu ứng trung bình khi làm lại chỉ còn **khoảng một nửa** so với bản gốc.
 
-Kết quả này là một mốc của cái gọi là **khủng hoảng tái lập**. Nhưng hãy đọc cẩn thận: nó không có nghĩa "64% tâm lý học là sai". Mỗi nghiên cứu chỉ được làm lại một lần; một lần làm lại thất bại cũng có thể do may rủi hoặc khác biệt về cách làm. Điều nó cho thấy chắc chắn hơn là: **một nghiên cứu đơn lẻ, dù đăng ở tạp chí uy tín, chưa đủ để tin chắc.**
+Kết quả này là một mốc của cái gọi là **khủng hoảng tái lập**. Nhưng hãy đọc cẩn thận: nó không có nghĩa "64% tâm lý học là sai". Trong dự án này, mỗi nghiên cứu chỉ được làm lại một lần; một lần làm lại thất bại cũng có thể do may rủi hoặc khác biệt về cách làm. Điều nó cho thấy chắc chắn hơn là: **một nghiên cứu đơn lẻ, dù đăng ở tạp chí uy tín, chưa đủ để tin chắc.**
 
 Phản ứng của ngành là một tin tốt: những hiệu ứng nổi tiếng được kiểm tra lại bằng các dự án nhiều phòng thí nghiệm cùng lúc, **đăng ký trước** kế hoạch phân tích, như Many Labs 2 ([Klein và cộng sự, 2018](https://doi.org/10.1177/2515245918810225)).
 
@@ -79,7 +79,7 @@ Vì vậy, ở mỗi bài, Psyche sẽ nói rõ khi một phát hiện có thể
 - 64% các phát hiện tâm lý học là sai.
 - Tâm lý học không phải là khoa học.
 + Một nghiên cứu đơn lẻ chưa đủ để tin chắc; cần nhiều lần kiểm tra lại.
-> Mỗi nghiên cứu chỉ được làm lại một lần, và một lần thất bại có thể do may rủi hay khác biệt về cách làm. Bài học vững chắc nhất là: đừng đặt quá nhiều niềm tin vào một nghiên cứu duy nhất.
+> Trong dự án ấy, mỗi nghiên cứu chỉ được làm lại một lần, và một lần thất bại có thể do may rủi hay khác biệt về cách làm. Bài học vững chắc nhất là: đừng đặt quá nhiều niềm tin vào một nghiên cứu duy nhất.
 ? "WEIRD" là gì?
 - Tên một học thuyết về hành vi kỳ lạ.
 + Cách gọi nhóm người phương Tây, có học vấn, công nghiệp hóa, giàu và dân chủ, nơi phần lớn nghiên cứu được thực hiện.
