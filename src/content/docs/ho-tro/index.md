@@ -23,7 +23,7 @@ Dưới đây chỉ gồm những số mà chúng tôi kiểm chứng được t
 
 | Đường dây | Số | Dành cho | Thời gian |
 |---|---|---|---|
-| Cấp cứu y tế | <span class="pz-tel">[115](tel:115)</span> | Mọi trường hợp nguy hiểm đến tính mạng, kể cả nguy cơ tự làm hại | 24/7, miễn phí |
+| Cấp cứu y tế | <span class="pz-tel">[115](tel:115)</span> | Tình huống sức khỏe nguy hiểm đến tính mạng, kể cả khi đã tự làm hại hoặc sắp tự làm hại | 24/7, cuộc gọi miễn phí |
 | Công an | <span class="pz-tel">[113](tel:113)</span> | Nguy cơ bạo lực, cần can thiệp khẩn cấp | Miễn phí |
 | Tổng đài quốc gia bảo vệ trẻ em | <span class="pz-tel">[111](tel:111)</span> | Trẻ em, và người lớn lo lắng cho một trẻ em (bị xâm hại, bạo lực, bỏ rơi…). Do Cục Bà mẹ và Trẻ em, Bộ Y tế vận hành | 24/7, miễn phí |
 | Đường dây nóng Ngày Mai | <span class="pz-tel">[096 306 1414](tel:0963061414)</span> | Sơ cứu và hỗ trợ tâm lý qua điện thoại cho người trầm cảm và người thân của họ. Do một nhóm tình nguyện viên vận hành | 13:00–20:30, Thứ Tư đến Chủ nhật; dịch vụ miễn phí |
