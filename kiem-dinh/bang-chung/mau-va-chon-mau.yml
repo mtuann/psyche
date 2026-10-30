@@ -7,12 +7,21 @@ lan:
   - so: 1
     ngay: 2026-10-30
     nhanh: moi/d4-l1
-    ma_bam: null
+    ma_bam: sha256:1fc992d146b1f1141b1fd830bd3de403092cd230bc0cdb5b38dfb6d1e7b32cbd
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L1 phần 2/2)
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D4-L1)
       review: "Claude Opus 5.5 (agent review D4-L1, 30/10/2026)"
-      kiem_mau: null
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d4-l1-kiem-mau.yml), đạt, 30/10/2026
+  - so: 2
+    ngay: 2026-10-30
+    nhanh: moi/d4-l1
+    ma_bam: sha256:9c33cdedbe9a7a9b1d536f1e05cc591697ff8b2e70d579cff6f3ecadab454c2f
+    nguoi:
+      luot_1: 'Claude Opus 5.5 (người gom D4-L1): chỉ thêm tên cột "Khía cạnh" vào ô tiêu đề rỗng, không có nhận định nào bị chạm'
+      luot_2: "không cần: tên cột không phải điều kiểm được bằng nguồn; các nhận định giữ kết quả lượt 2 của lần 1"
+      review: "Claude Opus 5.5 (người gom D4-L1): kiểm thử trình duyệt (axe) đạt sau khi sửa"
+      kiem_mau: chủ repo, kiểm mẫu D4-L1 (lần 1) đạt 30/10/2026; lần này chỉ đổi tên cột, trước khi đăng
 nguon:
   - id: henrich2010
     ten: 'Henrich, Heine & Norenzayan (2010), Behav Brain Sci 33(2–3), 61–83: toàn văn (bản tác giả, UBC; số trang theo bản tác giả, "tr. 3" là BBS tr. 63)'
@@ -917,3 +926,10 @@ doi_chu:
   - cu: 'Quiz câu 1, lời giải thích: "... dự đoán sai người thắng cử, với danh sách gửi phiếu lệch và tỉ lệ trả lời khoảng 24%."'
     moi: '"Mẫu lớn không tự sửa được thiên lệch chọn mẫu. Cuộc thăm dò Literary Digest năm 1936 gửi khoảng 10 triệu phiếu mà vẫn dự đoán sai người thắng cử: chỉ khoảng 24% người nhận trả lời, và người ủng hộ Landon gửi phiếu lại nhiều hơn hẳn."'
     ly_do: Review, theo lượt 2 (q1).
+  - cu: "Ô tiêu đề đầu của bảng so sánh: rỗng"
+    moi: '"Khía cạnh"'
+    ly_do: Trợ năng (axe empty-table-header), lần kiểm định 2.
+mo_khoa:
+  - ngay: 2026-10-30
+    nhanh: moi/d4-l1
+    ly_do: "Trước khi đăng: ô tiêu đề đầu của bảng so sánh rỗng (axe empty-table-header ở kiểm thử trình duyệt); thêm chữ 'Khía cạnh'"

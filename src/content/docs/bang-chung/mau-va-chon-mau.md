@@ -31,7 +31,7 @@ Một nguyên tắc nền tảng, đáng nhớ: **mẫu tốt phải giống t�
 
 ### Chọn mẫu ngẫu nhiên và chọn mẫu thuận tiện
 
-|  | Chọn mẫu ngẫu nhiên | Chọn mẫu thuận tiện |
+| Khía cạnh | Chọn mẫu ngẫu nhiên | Chọn mẫu thuận tiện |
 |---|---|---|
 | Cách làm | Mỗi người trong tổng thể có cơ hội được chọn như nhau, như rút thăm | Lấy những người dễ tiếp cận nhất: sinh viên lớp mình, người qua đường, bạn bè trên mạng |
 | Ưu điểm | Mẫu có xu hướng giống tổng thể; sai số do chọn mẫu nhỏ dần khi mẫu lớn hơn | Dễ làm, vì dùng kết quả hay người có sẵn |
