@@ -194,11 +194,12 @@ export const canTaiScript = (html) => /\sclass="(?:[^"]*\s)?(?:pz-quiz|pz-cong-c
 export function frontmatter(trang, docsDir) {
 	const f = path.join(docsDir, `${trang}.md`);
 	if (!fs.existsSync(f)) return {};
-	const m = /^---\n([\s\S]*?)\n---/.exec(fs.readFileSync(f, 'utf8'));
-	return (m && parse(m[1])) || {};
+	const m = /^---\r?\n([\s\S]*?)\r?\n---/.exec(fs.readFileSync(f, 'utf8'));
+	if (!m) throw new Error(`${path.relative(process.cwd(), f)}: không đọc được frontmatter (danh sách cần title của trang)`);
+	return parse(m[1]) ?? {};
 }
 
-/** Mục danh sách của một trang: link, tên (sidebar.label nếu có, không thì title), mô tả. */
+/** Mục danh sách của một trang: link, tên (title), mô tả. */
 function mucBai(trang, docsDir, base, { moTa = true } = {}) {
 	const fm = frontmatter(trang, docsDir);
 	const ten = esc(fm.title ?? trang);

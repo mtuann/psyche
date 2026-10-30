@@ -621,6 +621,14 @@
 	font-weight: 600;
 	line-height: 1.4;
 }
+/* vùng bấm từ 44 px trên màn hình cảm ứng */
+@media (pointer: coarse) {
+	.pz-ds-bai li > a {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+	}
+}
 .pz-ds-bai__mo {
 	color: var(--sl-color-gray-2);
 	font-size: var(--sl-text-sm);

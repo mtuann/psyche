@@ -2,10 +2,15 @@
 // Chân trang mặc định của Starlight, thêm hai dòng như site cũ (../psyche-zero/overrides/partials/copyright.html và
 // mục copyright của mkdocs.yml): lời nhắc tìm hỗ trợ khi đang gặp khó khăn, và giấy phép nội dung cùng câu về tính giáo
 // dục của site. Lời nhắc
-// có ở mọi trang (tests/khung.test.mjs kiểm). Link tới trang Hỗ trợ của site mới (D2-L1).
+// có ở mọi trang (tests/khung.test.mjs kiểm). Link tới trang Hỗ trợ của site mới (D2-L1); trang ấy chưa có trong bản build
+// (chưa khóa) thì link tới trang Hỗ trợ của site cũ, để chân trang không bao giờ trỏ tới trang 404.
+// Collection docs chỉ gồm trang có trong bản build (src/ban-build.mjs lọc lúc nạp).
+import { getCollection } from 'astro:content';
 import Default from '@astrojs/starlight/components/Footer.astro';
+import { diaChi, trangCuaMuc } from '../ban-build.mjs';
 
-const hoTro = '/psyche/ho-tro/';
+const coHoTro = (await getCollection('docs')).some((e) => trangCuaMuc(e) === 'ho-tro/index');
+const hoTro = coHoTro ? diaChi('ho-tro/index') : 'https://mtuann.github.io/psyche-zero/ho-tro/';
 ---
 
 <Default><slot /></Default>
