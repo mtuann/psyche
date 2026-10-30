@@ -4,14 +4,781 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/pygmalion.md
 tang: loi
 muc: V3
 lan:
-  - so: 1
-    ngay: null
-    nhanh: moi/d3-l1
-    ma_bam: null
-    nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
-      kiem_mau: null
-nguon: []
-nhan_dinh: []
+- so: 1
+  ngay: 2026-10-30
+  nhanh: moi/d3-l1
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 2/2)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: rosenthal1963
+  ten: 'Rosenthal & Fode (1963), Behav Sci 8(3), 183–189: toàn văn (bản quét trên gwern.net)'
+  link: https://doi.org/10.1002/bs.3830080302
+  toan_van: true
+- id: rosenthal1966b
+  ten: 'Rosenthal & Jacobson (1966), Psychol Rep 19(1), 115–118: tóm tắt (Crossref)'
+  link: https://doi.org/10.2466/pr0.1966.19.1.115
+  toan_van: false
+- id: raudenbush1984
+  ten: 'Raudenbush (1984), J Educ Psychol 76(1), 85–97: toàn văn (bản quét trên gwern.net)'
+  link: https://doi.org/10.1037/0022-0663.76.1.85
+  toan_van: true
+- id: jussim2005
+  ten: 'Jussim & Harber (2005), Pers Soc Psychol Rev 9(2), 131–155: toàn văn (bản trên gwern.net)'
+  link: https://doi.org/10.1207/s15327957pspr0902_3
+  toan_van: true
+- id: thorndike1968
+  ten: 'Thorndike (1968), Am Educ Res J 5(4), 708–711: toàn văn bài điểm sách (bản quét trên gwern.net)'
+  link: https://doi.org/10.3102/00028312005004708
+  toan_van: true
+- id: snow1995
+  ten: 'Snow (1995), Curr Dir Psychol Sci 4(6), 169–171, Pygmalion and intelligence?: toàn văn (bản trên gwern.net)'
+  link: https://doi.org/10.1111/1467-8721.ep10772605
+  toan_van: true
+- id: ovid
+  ten: Ovid, Metamorphoses 10.243–297 (Perseus Digital Library, bản Latin)
+  link: https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+10.243
+  toan_van: true
+- id: crawfurd2020
+  ten: 'Crawfurd & Rolleston (2020), Rev Dev Econ: toàn văn (UCL Discovery); dữ liệu Young Lives Việt Nam, về hiệu ứng giáo viên, không về kỳ vọng'
+  link: https://doi.org/10.1111/rode.12717
+  toan_van: true
+nhan_dinh:
+- id: h1
+  cau: 'Hộp hồ sơ: nghiên cứu gốc là Rosenthal và Jacobson, 1968.'
+  loai: lich-su
+  nguon:
+  - raudenbush1984
+  - jussim2005
+  trich: Rosenthal and Jacobson (1968) then informed each teacher which of their students had been identified as potential "late bloomers."
+  vi_tri: Jussim & Harber, mục The original Pygmalion study
+  ket_qua: dung
+  ghi_chu: 'Câu gốc: mục "Nghiên cứu then chốt", đầu đề Rosenthal & Jacobson (1968).'
+- id: h2
+  cau: 'Hộp hồ sơ: học sinh 18 lớp của một trường tiểu học; khoảng 20% mỗi lớp được chọn ngẫu nhiên làm "kẻ nở muộn".'
+  loai: so-lieu
+  nguon:
+  - rosenthal1966b
+  - raudenbush1984
+  trich: Within each of 18 classrooms, an average of 20% of the children were reported to classroom teachers as showing unusual potential for intellectual gains. | the "bloomers" were a randomly selected 20% of the student population
+  vi_tri: R&J 1966 abstract; Raudenbush tr. 85
+  ket_qua: dung
+  ghi_chu: 'Câu gốc: j2, j3 (cùng nguồn).'
+- id: h3
+  cau: 'Hộp hồ sơ: giáo viên được báo danh sách "kẻ nở muộn"; 8 tháng sau cả lớp làm lại bài kiểm tra IQ.'
+  loai: phat-hien
+  nguon:
+  - rosenthal1966b
+  - raudenbush1984
+  trich: Eight months later these "unusual" children (who had actually been selected at random) showed significantly greater gains in IQ than did the remaining children | After retesting the children 8 months later
+  vi_tri: R&J 1966 abstract; Raudenbush tr. 85–86
+  ket_qua: dung
+  ghi_chu: 'Câu gốc: j6.'
+- id: h4
+  cau: 'Hộp hồ sơ: nhóm "nở muộn" tăng gần 4 điểm IQ tổng và khoảng 7 điểm IQ lập luận nhiều hơn nhóm đối chứng.'
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  trich: those predicted to bloom had in fact gained significantly more in total IQ (nearly 4 points) and reasoning IQ (7 points) than the control group children.
+  vi_tri: Raudenbush tr. 85–86
+  ket_qua: dung
+  ghi_chu: 'Câu gốc: j7.'
+- id: d1
+  cau: Rosenthal và Jacobson (1968) báo với giáo viên tiểu học rằng khoảng 20% học sinh, thực ra được chọn ngẫu nhiên, là "kẻ nở muộn", rồi đo lại điểm IQ của các em sau 8 tháng.
+  loai: phat-hien
+  nguon:
+  - rosenthal1966b
+  - raudenbush1984
+  trich: Within each of 18 classrooms, an average of 20% of the children were reported to classroom teachers as showing unusual potential for intellectual gains. Eight months later ...
+  vi_tri: R&J 1966 abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (mô tả): "nói dối giáo viên tiểu học rằng vài học sinh được chọn ngẫu nhiên là kẻ nở muộn ..., rồi theo dõi điểm số của các em suốt một năm học". Chữ mới: "báo với giáo viên ... khoảng 20% học sinh ... rồi đo lại điểm IQ của các em sau 8 tháng". Lý do: "vài học sinh" mâu thuẫn con số 20%; "suốt một năm học" không khớp: tóm tắt 1966 và Raudenbush nói 8 tháng (Thorndike nêu thêm lần đo khác sau 1 năm, nhưng trọng tâm là 8 tháng); "nói dối" là cách nói; nguồn chỉ nói giáo viên được báo danh sách.'
+- id: n1
+  cau: 'Theo báo cáo gốc, sau 8 tháng nhóm "nở muộn" tăng điểm IQ nhiều hơn nhóm đối chứng: gần 4 điểm IQ tổng và khoảng 7 điểm IQ lập luận.'
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  - rosenthal1966b
+  trich: those predicted to bloom had in fact gained significantly more in total IQ (nearly 4 points) and reasoning IQ (7 points) than the control group children.
+  vi_tri: Raudenbush tr. 85–86 (tóm lại báo cáo gốc)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nhóm được chọn ngẫu nhiên vượt lên thật... nhiều hơn hẳn các bạn cùng lớp ... Không phải vì các em thông minh hơn từ đầu, mà vì thầy cô tin rằng các em sẽ tiến bộ." Chữ mới: "Theo báo cáo gốc, ... nhiều hơn ... " Lý do: "vượt lên thật" và "hẳn" mạnh hơn nguồn; dữ liệu gốc bị phê bình nặng (Thorndike, Snow). Chưa mở được sách gốc 1968: con số "gần 4" và "7" lấy từ cách Raudenbush tóm lại; trang đã đưa vào hộp hồ sơ. chưa chắc: nên có sách gốc (Rosenthal & Jacobson 1968) để lượt 2 xác nhận con số.'
+- id: n2
+  cau: Các em được chọn ngẫu nhiên, nên khác biệt không do các em thông minh hơn từ đầu.
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  - rosenthal1966b
+  trich: the "bloomers" were a randomly selected 20% of the student population
+  vi_tri: Raudenbush tr. 85
+  ket_qua: dung
+- id: n3
+  cau: Các tác giả giải thích rằng khác biệt là do kỳ vọng của giáo viên.
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: The difference between the children earmarked for intellectual growth and the undesignated control children was in the mind of the teacher.
+  vi_tri: Jussim & Harber, mục The original Pygmalion study (trích Rosenthal & Jacobson 1968, tr. 70)
+  ket_qua: dung
+- id: n4
+  cau: Nghiên cứu gốc bị phê bình nặng về dữ liệu.
+  loai: lich-su
+  nguon:
+  - thorndike1968
+  - snow1995
+  trich: the basic data upon which this structure has been raised are so untrustworthy that any conclusions based upon them must be suspect
+  vi_tri: Thorndike, đoạn cuối; Snow 1995
+  ket_qua: dung
+- id: e1
+  cau: Pygmalion là nhà điêu khắc trong truyện thần thoại do Ovid kể (Metamorphoses, quyển 10), đem lòng yêu bức tượng do chính mình tạc nên, và tượng hóa thành người thật.
+  loai: lich-su
+  nguon:
+  - ovid
+  trich: niveum mira feliciter arte sculpsit ebur ... operisque sui concepit amorem
+  vi_tri: Ov. Met. 10.243–297
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nhà điêu khắc trong thần thoại Hy Lạp". Chữ mới: "trong truyện thần thoại do Ovid kể (Metamorphoses, quyển 10)". Lý do: nguồn bậc 1 là thơ Latin của Ovid (La Mã). Chưa đọc hết đoạn tượng hóa người: câu trích về điêu khắc và tình yêu đã mở; đoạn sau (Venus ban sự sống) nằm cùng trang, chưa chắc: người giao có thể kiểm thêm bản dịch.'
+- id: e2
+  cau: Thầy cô trong nghiên cứu không biết danh sách là ngẫu nhiên, và không ai bảo họ phải ưu ái nhóm "nở muộn".
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  - jussim2005
+  trich: the experimenters gave the names of these "bloomers" to the teachers. In truth, the test was a traditional IQ test and the "bloomers" were a randomly selected 20% of the student population.
+  vi_tri: Raudenbush tr. 85
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "thầy cô trong nghiên cứu không hề cố ý thiên vị". Chữ mới: "không biết danh sách là ngẫu nhiên, và không ai bảo họ phải ưu ái". Lý do: "không hề cố ý thiên vị" là kết luận về động cơ; nguồn chỉ nói giáo viên bị cho biết danh sách giả.'
+- id: e3
+  cau: 'Theo cách giải thích của Rosenthal, kỳ vọng có thể len lỏi qua những hành vi nhỏ: ấm áp hơn, phản hồi rõ hơn, giao bài nhiều và khó hơn, cho nhiều cơ hội hơn; đây là cơ chế được đề xuất, mức tác động thực tế còn tranh cãi.'
+  loai: dinh-nghia
+  nguon:
+  - jussim2005
+  trich: Teachers are typically emotionally warmer and more supportive to their high expectancy students, provide them clearer and more positive feedback, teach them more and more difficult material, and give them more opportunities to demonstrate mastery
+  vi_tri: Jussim & Harber, mục Mediation (Students' perceptions of differential teacher treatment)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Kỳ vọng len lỏi qua những hành vi rất nhỏ — giọng nói ấm hơn, kiên nhẫn chờ câu trả lời lâu hơn vài giây, giao bài khó hơn một chút, khen nhiều hơn một chút. Học sinh cảm nhận được tất cả những điều đó, và dần trở thành đúng như những gì thầy cô tin." Chữ mới: như câu trên. Lý do: "chờ lâu hơn vài giây", "học sinh cảm nhận được... dần trở thành" không có trong nguồn đã mở; Jussim & Harber chỉ mô tả giáo viên đối xử khác nhau với học sinh được kỳ vọng cao (dẫn Rosenthal 1974; Harris & Rosenthal 1985, chưa mở được).'
+- id: r1
+  cau: 'Rosenthal và Fode (1963): sinh viên trong một lớp tâm lý học được giao mỗi người năm con chuột huấn luyện chạy mê cung chữ T; một nửa được bảo chuột thuộc dòng "thông minh mê cung", nửa còn lại dòng "đần mê cung".'
+  loai: phat-hien
+  nguon:
+  - rosenthal1963
+  trich: Each of you will be assigned a group of five rats to work with. Some of you will be working with maze-bright rats, others will be working with maze-dull rats.
+  vi_tri: Mục Method, Instructions to Es
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "được giao mỗi người vài con chuột để huấn luyện chạy mê cung". Chữ mới: "mỗi người năm con chuột ... mê cung chữ T". Lý do: bài ghi 5 chuột mỗi người và mê cung T cao.'
+- id: r2
+  cau: 'Thực ra không có dòng "thông minh" hay "đần": các nhóm chuột bạch được gắn nhãn ngẫu nhiên (chỉ giới hạn để tuổi trung bình các nhóm gần nhau).'
+  loai: phat-hien
+  nguon:
+  - rosenthal1963
+  trich: Actually, the groups had been labeled bright or dull randomly, with the restriction that differences in mean age per group per matched pair be at a minimum.
+  vi_tri: Mục Method, Experimenters
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Thực ra tất cả chuột đều giống hệt nhau, được chia ngẫu nhiên." Chữ mới: như câu trên. Lý do: bài nói 65 chuột bạch Sprague-Dawley, chia 13 nhóm 5 con, gắn nhãn ngẫu nhiên; "giống hệt nhau" quá mạnh.'
+- id: r3
+  cau: 'Chuột của nhóm sinh viên tin mình nuôi chuột "thông minh" chọn đúng nhánh mê cung nhiều hơn rõ rệt (gộp năm ngày: p một phía = 0,01).'
+  loai: so-lieu
+  nguon:
+  - rosenthal1963
+  trich: Performance of the Ss run by Es believing Ss to be bright was significantly better on days 1, 4, and 5 but not on days 2 and 3. In addition, when the data from all five days of the experiment were combined, t was again significant, this time with a one-tailed p of .01.
+  vi_tri: Mục Results
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "học mê cung nhanh hơn hẳn". Chữ mới: "chọn đúng nhánh mê cung nhiều hơn rõ rệt (gộp năm ngày: p một phía = 0,01)". Lý do: thước đo là số lần chọn đúng, không phải tốc độ; ngày 2 và 3 không có ý nghĩa.'
+- id: r4
+  cau: Các sinh viên này đánh giá chuột của mình sáng dạ hơn, sạch hơn, thuần hơn, dễ chịu hơn.
+  loai: phat-hien
+  nguon:
+  - rosenthal1963
+  trich: see their Ss, on the whole, as brighter, cleaner, tamer, and more pleasant
+  vi_tri: Mục Results, phần ratings
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "đánh giá chuột của mình \"dễ mến\" hơn". Chữ mới: "sạch hơn, thuần hơn, dễ chịu hơn". Lý do: nguồn ghi "brighter, cleaner, tamer, and more pleasant".'
+- id: r5
+  cau: Các sinh viên này tự mô tả mình thoải mái, thân thiện, khích lệ hơn, và cầm chuột nhiều hơn, nhẹ nhàng hơn (riêng điểm cầm nắm mới đạt p = 0,09, hai phía, chưa có ý nghĩa thống kê).
+  loai: phat-hien
+  nguon:
+  - rosenthal1963
+  trich: Es running "bright" Ss tended to see themselves as more friendly, encouraging, less talkative, more enthusiastic, and more professional. Finally, these Es saw themselves as handling their rats more, and more gently ... The mean difference between these two scales combined was significant at the .09 level, two-tailed test
+  vi_tri: Mục Results, phần ratings
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "cho biết họ cầm nắm, đối xử với chúng nhẹ nhàng, thân thiện hơn." Chữ mới: như câu trên. Lý do: nguồn nêu đây là tự đánh giá; chênh lệch cầm nắm không có ý nghĩa ở mức .05.'
+- id: r6
+  cau: Các tác giả cho rằng kỳ vọng của người huấn luyện, dù bịa đặt, đã thay đổi cách họ đối xử với chuột, và điều đó có thể đã ảnh hưởng đến kết quả.
+  loai: lich-su
+  nguon:
+  - rosenthal1963
+  trich: This study suggests that not only does this biasing of animal Ss occur now and then, but that it can be systematically induced and demonstrated. That differences in animal handling were found to be related to the Ss' performance should surprise no one.
+  vi_tri: Mục Discussion
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Kỳ vọng ... đã thay đổi hành vi của chính họ, và hành vi ấy thay đổi kết quả của con chuột". Chữ mới: "Các tác giả cho rằng ... có thể đã ảnh hưởng ...". Lý do: cơ chế là giả thuyết của tác giả (họ nói "may well be"), không đo trực tiếp.'
+- id: r7
+  cau: Rosenthal thử ý tưởng này trên chuột bạch trước khi vào lớp học.
+  loai: lich-su
+  nguon:
+  - rosenthal1963
+  - thorndike1968
+  trich: Rosenthal and Fode 1963 ... In May 1964, the SRA-published Tests of General Ability (TOGA) were administered
+  vi_tri: R&F, trang đầu; Thorndike (tháng 5/1964)
+  ket_qua: dung
+  ghi_chu: 'Thứ tự: 1963 (chuột) trước 1964 (trường).'
+- id: j1
+  cau: Rosenthal bắt tay với Lenore Jacobson để làm, tại trường tiểu học của bà, thí nghiệm nổi tiếng nhất về kỳ vọng của giáo viên.
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: the children in Jacobson's elementary school (kindergarten through fifth grade)
+  vi_tri: Jussim & Harber, mục The original Pygmalion study
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Lenore Jacobson, hiệu trưởng một trường tiểu học ở California". Chữ mới: "Lenore Jacobson ... tại trường tiểu học của bà". Lý do: không mở được nguồn bậc 1–2 nói Jacobson là hiệu trưởng hay trường ở California (chỉ có bài báo Discover 2015, bậc 3). chưa chắc: nếu người giao có sách gốc, khôi phục "hiệu trưởng ... ở California (South San Francisco)". Jussim & Harber ghi trường mẫu giáo đến lớp 5.'
+- id: j2
+  cau: Tháng 5/1964, toàn bộ học sinh của trường làm một bài kiểm tra, được giới thiệu với giáo viên là "Bài kiểm tra Harvard về khả năng tiếp thu" (Harvard Test of Inflected Acquisition); đầu năm học mới giáo viên của 18 lớp (từ lớp 1 đến lớp 6) nhận danh sách "kẻ nở muộn".
+  loai: phat-hien
+  nguon:
+  - thorndike1968
+  - rosenthal1966b
+  - raudenbush1984
+  - jussim2005
+  trich: In May 1964, the SRA-published Tests of General Ability (TOGA) were administered by the classroom teachers to all pupils in kindergarden and all six grades of a school. | The following September each teacher was given a list of names | Within each of 18 classrooms ... | a new test being developed at Harvard for identifying children likely to "bloom"
+  vi_tri: Thorndike tr. 708; R&J 1966 abstract; Jussim & Harber, mục The original Pygmalion study
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Đầu năm học, toàn bộ học sinh của 18 lớp (từ lớp 1 đến lớp 6) làm một bài kiểm tra IQ ... Sau đó, mỗi giáo viên nhận một danh sách". Chữ mới: "Vào tháng 5/1964, toàn bộ học sinh của trường làm ...; đầu năm học mới, mỗi giáo viên trong 18 lớp (từ lớp 1 đến lớp 6) nhận một danh sách". Lý do: theo Thorndike bài kiểm tra làm tháng 5/1964 (mẫu giáo đến lớp 6), danh sách đưa cho giáo viên tháng 9; đo lại tháng 1/1965 và 5/1965 (nên "tám tháng sau" tính từ danh sách đến 5/1965).'
+- id: j3
+  cau: Mỗi giáo viên nhận danh sách khoảng 20% học sinh trong lớp được "dự đoán sẽ bứt phá trí tuệ trong năm học"; danh sách chọn hoàn toàn ngẫu nhiên.
+  loai: phat-hien
+  nguon:
+  - rosenthal1966b
+  - raudenbush1984
+  - thorndike1968
+  trich: The following September each teacher was given a list of names of pupils (actually selected by a table of random numbers) who were alleged to be the ones likely to show a spurt.
+  vi_tri: Thorndike tr. 708; R&J 1966 abstract
+  ket_qua: dung
+- id: j4
+  cau: Bài kiểm tra thực chất là một bài IQ thông thường (Tests of General Ability, có phần từ vựng và phần lập luận).
+  loai: phat-hien
+  nguon:
+  - thorndike1968
+  - raudenbush1984
+  trich: the SRA-published Tests of General Ability (TOGA) ... TOGA has two subtests, one consisting of oral vocabulary and one of multi-mental ("which one doesn't belong") items
+  vi_tri: Thorndike tr. 708–709; Raudenbush tr. 85
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "một bài kiểm tra IQ phi ngôn ngữ". Chữ mới: "một bài kiểm tra IQ thông thường (Tests of General Ability, có phần từ vựng và phần lập luận)". Lý do: Thorndike cho biết TOGA có phần từ vựng nói; "phi ngôn ngữ" sai.'
+- id: j5
+  cau: Trong sách, trường được gọi là "trường Oak".
+  loai: lich-su
+  nguon:
+  - raudenbush1984
+  trich: the so-called Oak elementary school
+  vi_tri: Raudenbush tr. 85
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "tên trường được giấu thành \"trường Oak\"". Chữ mới: "trường được gọi là \"trường Oak\"". Lý do: nguồn chỉ nói "so-called Oak elementary school"; "giấu tên" là suy luận.'
+- id: j6
+  cau: Tám tháng sau, học sinh làm lại bài kiểm tra.
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  - rosenthal1966b
+  trich: After retesting the children 8 months later
+  vi_tri: Raudenbush tr. 85
+  ket_qua: dung
+- id: j7
+  cau: 'Nhóm "nở muộn" tăng điểm nhiều hơn nhóm đối chứng: gần 4 điểm IQ tổng và khoảng 7 điểm IQ lập luận.'
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  trich: those predicted to bloom had in fact gained significantly more in total IQ (nearly 4 points) and reasoning IQ (7 points) than the control group children.
+  vi_tri: Raudenbush tr. 85–86
+  ket_qua: dung
+  ghi_chu: 'Cùng n1, h4: lấy từ tóm tắt của Raudenbush, chưa mở sách gốc 1968.'
+- id: j8
+  cau: Hiệu ứng xuất hiện chủ yếu ở các em nhỏ tuổi hơn (lớp 1 và lớp 2).
+  loai: phat-hien
+  nguon:
+  - rosenthal1966b
+  - jussim2005
+  trich: These effects of teachers' expectancies operated primarily among the younger children. | In the first grade, the bloomer's out-gained the control students by about 15 IQ points; in second grade the difference was about 10 points.
+  vi_tri: R&J 1966 abstract; Jussim & Harber
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Hiệu ứng rõ nhất ở các lớp nhỏ (lớp 1 và lớp 2)". Chữ mới: "ở các lớp đầu cấp". Lý do: "lớp nhỏ" dễ hiểu là lớp ít học sinh.'
+- id: j9
+  cau: Theo tóm tắt của Raudenbush, cuối năm giáo viên đánh giá nhóm "nở muộn" tò mò hơn về trí tuệ, vui vẻ hơn và thích nghi tốt hơn nhóm đối chứng.
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  trich: at the end of the study, the teachers rated the experimental children as intellectually more curious, happier, better adjusted, and less in need of approval than their control group peers.
+  vi_tri: Raudenbush tr. 86
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "giáo viên đánh giá nhóm \"nở muộn\" có cơ hội thành công trong tương lai cao hơn hẳn (mục duy nhất khác biệt có ý nghĩa thống kê); các đánh giá \"tò mò hơn, vui vẻ hơn…\" không đạt ý nghĩa thống kê trong số liệu gốc (Rosenthal & Jacobson, 1966)". Chữ mới: như câu trên. Lý do: tóm tắt 1966 chỉ nói về IQ, không nói gì về đánh giá của giáo viên; Raudenbush tóm lại điều khác hẳn. Chưa mở sách gốc để biết mục nào đạt ý nghĩa: chỗ khó, nên kiểm bảng đánh giá trong sách (Rosenthal & Jacobson 1968).'
+- id: b1
+  cau: Raudenbush gom 18 thí nghiệm về kỳ vọng giáo viên (kể cả nghiên cứu gốc) làm một phân tích tổng hợp.
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  trich: A Synthesis of Findings From 18 Experiments
+  vi_tri: Tiêu đề, Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Stephen Raudenbush quyết định không cãi bằng lời mà cãi bằng số". Chữ mới: "không cãi bằng lời mà dùng số". Lý do: bỏ ý về quyết định/động cơ.'
+- id: b2
+  cau: 19 cỡ hiệu ứng từ 18 nghiên cứu độc lập được đưa về cùng một thước đo.
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  trich: Because Pellegrini and Hicks (1972) employed aware testers for a randomly selected half of the experimental children and blind testers for the other half, these two conditions are treated as separate studies in this section. Thus Table 5 shows 19 cases in all.
+  vi_tri: Mục Results, chú thích 9
+  ket_qua: dung
+- id: b3
+  cau: Hiệu ứng trung bình là 0,11, nhỏ, và có đạt ý nghĩa thống kê hay không còn tùy cách kiểm định.
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  trich: if we take all 18 experiments together, we find a small average effect of expectancy on IQ (d = 0.11), which either achieves or fails to achieve statistical significance depending on the test employed and its underlying assumptions.
+  vi_tri: Mục Discussion; Results
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Hiệu ứng trung bình chỉ là 0,11 — có thật, nhưng nhỏ hơn nhiều so với ấn tượng". Chữ mới: "nhỏ, và có đạt ý nghĩa thống kê hay không còn tùy cách kiểm định". Lý do: Raudenbush nói hiệu ứng "achieves or fails to achieve statistical significance depending on the test"; "có thật" quá mạnh. Snow (1995) thêm: trung vị chỉ 0,035 (0,025 nếu bỏ nghiên cứu gốc).'
+- id: b4
+  cau: 'Hiệu ứng mạnh nhất khi kỳ vọng được gieo lúc giáo viên chưa quen học sinh: 4 thí nghiệm không có tiếp xúc trước cho 0,32, 3 thí nghiệm có một tuần tiếp xúc trước cho 0,26; sau hơn hai tuần (8 thí nghiệm) hiệu ứng gần như biến mất (−0,04).'
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  trich: four experiments having no prior contact yielded a mean effect size of 0.32. Three experiments having 1 week of prior contact obtained a mean effect size of 0.26. After more than 2 weeks of prior contact, the effect of expectancy seemed to disappear, as indicated by a mean effect size of −0.04 for those eight studies.
+  vi_tri: Mục Results, Prior contact
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "(đầu năm học, cỡ hiệu ứng khoảng 0,41 theo ước lượng mô hình)". Chữ mới: nêu ba nhóm trung bình 0,32; 0,26; −0,04. Lý do: con số 0,41 và "đầu năm học" không có trong bài (không tìm thấy 0,41 khi đọc toàn văn); thay bằng số có trong bài.'
+- id: b5
+  cau: Thí nghiệm gốc gây chấn động nhưng cũng gây tranh cãi dữ dội.
+  loai: lich-su
+  nguon:
+  - raudenbush1984
+  - jussim2005
+  trich: These IQ effects have been a subject of continuing and acrimonious controversy
+  vi_tri: Raudenbush tr. 85
+  ket_qua: da-lam-mem
+  ghi_chu: 'Giữ gần nguyên; "gây chấn động" là cách nói (nguồn: "now famous"; "storm of criticism" ở Jussim). Giữ vì có thể kiểm bằng nguồn.'
+- id: nv
+  cau: 'Nhãn Vững chắc: kỳ vọng của người khác có thể tự ứng nghiệm.'
+  loai: nhan
+  nguon:
+  - jussim2005
+  - raudenbush1984
+  - rosenthal1963
+  nhan: vung-chac
+  co_so:
+  - jussim2005
+  - raudenbush1984
+  - rosenthal1963
+  ly_do: Tổng quan 35 năm (Jussim & Harber 2005) kết luận lời tiên tri tự ứng nghiệm trong lớp học có xảy ra, dù thường nhỏ; Raudenbush dẫn tổng quan 345 nghiên cứu của Rosenthal & Rubin (1978) ủng hộ hiệu ứng ở nhiều bối cảnh; thí nghiệm của Rosenthal & Fode có kết quả cùng chiều. Nhãn chỉ nói về việc hiệu ứng "có thể" xảy ra, không nói về độ lớn.
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate
+  vi_tri: Jussim & Harber, Abstract
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: câu trong khung dễ đọc thành "hiệu ứng mạnh". Đã sửa lời trong khung (thêm "thường nhỏ"). Jussim & Harber nói rõ chưa rõ liệu tự ứng nghiệm có tác động lên trí tuệ; Snow (1995) phản bác cách gộp 464 nghiên cứu: người giao xem có hạ xuống Khá vững.'
+- id: nv2
+  cau: Tổng quan 345 nghiên cứu của Rosenthal và Rubin (1978), được Raudenbush dẫn lại, cho thấy kỳ vọng của người quan sát hay người huấn luyện có thể ảnh hưởng đến kết quả ở nhiều bối cảnh, trong đó có lớp học; thí nghiệm chuột bạch Rosenthal và Fode (1963) là một ví dụ.
+  loai: lich-su
+  nguon:
+  - raudenbush1984
+  - rosenthal1963
+  trich: Rosenthal and Rubin's (1978) review of 345 studies further substantiates the expectancy effect in a wide variety of settings including classrooms but leaves clouded the specific question of expectancy's IQ effects.
+  vi_tri: Raudenbush tr. 86
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "hàng chục thí nghiệm độc lập — từ chuột bạch, học sinh, đến nhân viên — đều cho thấy kỳ vọng ... có thể thay đổi hành vi của họ theo hướng làm cho kỳ vọng thành sự thật. Đây là một hiệu ứng có thật, được lặp lại." Chữ mới: như câu trên (kèm Jussim & Harber). Lý do: "nhân viên" và "hàng chục" không có nguồn đã mở; số 345 lấy từ Raudenbush (chưa mở Rosenthal & Rubin 1978); Snow (1995) phê bình cách gộp.'
+- id: nv3
+  cau: Tổng quan 35 năm của Jussim và Harber (2005) kết luận lời tiên tri tự ứng nghiệm trong lớp học có xảy ra, nhưng thường nhỏ.
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate
+  vi_tri: Abstract
+  ket_qua: dung
+- id: nk
+  cau: 'Nhãn Khá vững: kỳ vọng của giáo viên ảnh hưởng kết quả học sinh, nhưng hiệu ứng nhỏ và có điều kiện.'
+  loai: nhan
+  nguon:
+  - raudenbush1984
+  - jussim2005
+  nhan: kha-vung
+  co_so:
+  - raudenbush1984
+  - jussim2005
+  ly_do: 'Phân tích tổng hợp 18 thí nghiệm (Raudenbush 1984) và tổng quan 35 năm (Jussim & Harber 2005) cùng chiều: hiệu ứng nhỏ (d trung bình 0,11; r khoảng 0–0,2), phụ thuộc điều kiện (tiếp xúc trước giữa giáo viên và học sinh); chưa có tái lập lớn đăng ký trước; nhiều nghiên cứu ở Mỹ.'
+  trich: four experiments having no prior contact yielded a mean effect size of 0.32. Three experiments having 1 week of prior contact obtained a mean effect size of 0.26. After more than 2 weeks of prior contact, the effect of expectancy seemed to disappear, as indicated by a mean effect size of −0.04 for those eight studies.
+  vi_tri: Raudenbush mục Results; Jussim & Harber Abstract
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: có ý kiến cho rằng ở mức IQ nhãn còn thấp hơn (Snow 1995: trung vị 0,035). Khung hiện nói "kết quả học sinh" (nhiều kết quả) chứ không chỉ IQ; Jussim & Harber hỗ trợ phần "thường nhỏ".'
+- id: nk2
+  cau: Phân tích tổng hợp của Raudenbush cho cỡ hiệu ứng trung bình 0,11 lên điểm IQ; hiệu ứng chỉ rõ rệt khi kỳ vọng được tạo lúc giáo viên chưa có ấn tượng riêng về học sinh; Jussim và Harber (2005) cũng thấy tác động thường nhỏ.
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  - jussim2005
+  trich: if we take all 18 experiments together, we find a small average effect of expectancy on IQ (d = 0.11), which either achieves or fails to achieve statistical significance depending on the test employed and its underlying assumptions.
+  vi_tri: Raudenbush Discussion; Jussim & Harber Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "cỡ hiệu ứng trung bình 0,11 — nhỏ". Chữ mới: thêm "lên điểm IQ" và Jussim & Harber. Lý do: phân tích tổng hợp chỉ nói về IQ.'
+- id: nt
+  cau: 'Nhãn Đang tranh cãi: con số gốc có đáng tin, và kỳ vọng "đúng" hay "tự ứng nghiệm".'
+  loai: nhan
+  nguon:
+  - thorndike1968
+  - snow1995
+  - jussim2005
+  nhan: tranh-cai
+  co_so:
+  - thorndike1968
+  - snow1995
+  - jussim2005
+  ly_do: 'Hai bên có bằng chứng chất lượng cao mâu thuẫn: nghiên cứu gốc và Rosenthal tin có hiệu ứng lên IQ; Thorndike (1968) và Snow (1995) cho rằng dữ liệu gốc không đáng tin và hiệu ứng biến mất khi bỏ điểm cực đoan; Jussim & Harber cho rằng một số chỉ trích về độ tin cậy yếu hơn nghiên cứu gốc. Hiệu ứng trung bình nhỏ hơn nhiều so với tuyên bố ban đầu.'
+  trich: The expectancy effect disappears when extreme scores are omitted. | teacher expectations may predict student outcomes more because these expectations are accurate than because they are self-fulfilling
+  vi_tri: Snow 1995; Jussim & Harber Abstract
+  ket_qua: dung
+- id: nt2
+  cau: 'Thorndike (1968): điểm "IQ" lập luận trung bình của học sinh lớp 1 chỉ là 58 (một lớp có trung bình 31), nên các kết luận của sách không được dữ liệu đỡ vững.'
+  loai: phat-hien
+  nguon:
+  - thorndike1968
+  trich: What kind of a test, or what kind of testing is it that gives a mean "IQ" of 58 for the total entering first grade of a rather run-of-the-mill school? | one class of 19 pupils is reported to have a mean "IQ" of 31
+  vi_tri: Thorndike tr. 709–710
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "điểm IQ ban đầu của nhiều lớp thấp đến mức phi lý, nên phần \"tăng điểm\" về sau rất có thể chỉ là hiện tượng hồi quy về trung bình". Chữ mới: như câu trên. Lý do: Thorndike không nói "hồi quy về trung bình"; ông kết luận dữ liệu quá thiếu tin cậy, giá trị kết luận chỉ có thể là "một sự trùng hợp may mắn". Cũng sửa đáp án quiz số 4.'
+- id: nt3
+  cau: Phân tích lại dữ liệu gốc, Snow (1995) thấy khoảng 35% điểm của học sinh lớp 1–2 nằm ngoài khoảng chuẩn của bài kiểm tra và hiệu ứng biến mất khi bỏ năm em có điểm cực đoan.
+  loai: phat-hien
+  nguon:
+  - snow1995
+  trich: About 35% of the scores fall outside the norm range. | The expectancy effect disappears when extreme scores are omitted. The heightened experimental regression line ... appears to result solely from five children
+  vi_tri: Snow tr. 169–170
+  ket_qua: dung
+  ghi_chu: Thêm mới vào trang (thay phần "hồi quy về trung bình" không có trong Thorndike); Snow có đề nghị gom ba mục.
+- id: nt4
+  cau: 'Jussim và Harber (2005) cho rằng nhiều chỉ trích về độ tin cậy của bài kiểm tra còn yếu hơn chính nghiên cứu gốc: độ tin cậy thấp làm khó, chứ không dễ, tìm ra khác biệt giữa các nhóm.'
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: Many of the complaints leveled against the original Rosenthal and Jacobson (1968) study, however, were more flawed than the study itself. One such charge was that the measure of IQ was unreliable
+  vi_tri: Jussim & Harber, mục The storm of criticism
+  ket_qua: dung
+  ghi_chu: 'Thêm mới vào khung tranh-cai: nêu quan điểm phản biện.'
+- id: nt5
+  cau: Jussim và Harber (2005) cho rằng kỳ vọng của giáo viên thường dự đoán đúng kết quả học sinh, nhưng có thể nhiều hơn là vì chúng chính xác chứ không phải vì tự ứng nghiệm.
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: teacher expectations may predict student outcomes more because these expectations are accurate than because they are self-fulfilling
+  vi_tri: Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "phần lớn là vì chúng chính xác". Chữ mới: "có thể nhiều hơn là vì chúng chính xác". Lý do: tóm tắt dùng "may predict ... more". Cũng sửa ở đáp án quiz số 5 và ở câu cuối khung ("Hiệu ứng tự ứng nghiệm trong lớp học có xảy ra, nhưng nhỏ hơn...").'
+- id: l1
+  cau: 'Lời tiên tri tự ứng nghiệm: kỳ vọng ban đầu (dù sai) khiến người ta hành xử theo cách làm cho nó thành đúng.'
+  loai: dinh-nghia
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur
+  vi_tri: Abstract; Introduction
+  ket_qua: dung
+  ghi_chu: 'Định nghĩa chung; Jussim & Harber dùng khái niệm này trong toàn bài. Chưa kiểm APA Dictionary (ứng dụng một trang); chưa chắc: người giao có thể muốn thêm mục từ APA.'
+- id: l2
+  cau: 'Bốn kênh của Rosenthal: (1) sự ấm áp, (2) đầu vào (dạy nhiều hơn, giao bài khó hơn), (3) cơ hội thể hiện, (4) phản hồi rõ ràng, tích cực hơn; theo Jussim và Harber, giáo viên thường đối xử với học sinh được kỳ vọng cao theo những cách này, nhưng việc các hành vi ấy làm thay đổi thành tích là cơ chế được giả định.'
+  loai: dinh-nghia
+  nguon:
+  - jussim2005
+  trich: Teachers are typically emotionally warmer and more supportive to their high expectancy students, provide them clearer and more positive feedback, teach them more and more difficult material, and give them more opportunities to demonstrate mastery
+  vi_tri: Jussim & Harber, mục Mediation
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "(1) sự ấm áp — giọng điệu, ánh mắt thân thiện hơn; ... (3) cơ hội thể hiện — gọi trả lời nhiều hơn, chờ đợi lâu hơn; (4) phản hồi — khen ngợi, khích lệ nhiều hơn. Không kênh nào cần đến ý thức." Chữ mới: như câu trên. Lý do: "giọng điệu, ánh mắt", "chờ đợi lâu hơn", "không kênh nào cần ý thức" không có trong nguồn mở được; tên "bốn kênh" lấy từ trang gốc, Jussim & Harber không dùng tên này (chưa mở Rosenthal 1974): chưa chắc về tên gọi.'
+- id: l3
+  cau: 'Kỳ vọng chính xác (Jussim): giáo viên giỏi đọc đúng học sinh nên "tiên đoán" đúng mà không cần tác động; thực tế cả hai cơ chế cùng tồn tại, một phần chính xác, một phần tự ứng nghiệm.'
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur ... and (d) teacher expectations may predict student outcomes more because these expectations are accurate than because they are self-fulfilling.
+  vi_tri: Abstract
+  ket_qua: dung
+  ghi_chu: Câu "cả hai cùng tồn tại" khớp (a) và (d) của tóm tắt.
+- id: l4
+  cau: 'Hiệu ứng ngược: kỳ vọng thấp cũng có thể tự ứng nghiệm theo hướng xấu; hiệu ứng mạnh có thể xảy ra có chọn lọc ở học sinh thuộc nhóm bị kỳ thị, còn việc nó gây hại nhiều hơn lợi hay không thì chưa rõ.'
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: powerful self-fulfilling prophecies may selectively occur among students from stigmatized social groups; (c) whether self-fulfilling prophecies affect intelligence, and whether they in general do more harm than good, remains unclear
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "kỳ vọng thấp cũng tự ứng nghiệm theo hướng xấu (học sinh bị dán nhãn \"kém\" nhận được ít cơ hội hơn và ngày càng kém thật). Vì vậy dán nhãn trong giáo dục là con dao hai lưỡi." Chữ mới: như câu trên. Lý do: khẳng định chắc quá; nguồn nói chưa rõ hại nhiều hơn lợi và chỉ mạnh có chọn lọc.'
+- id: a1
+  cau: Các tổng quan mô tả giáo viên thường ấm áp hơn, phản hồi rõ hơn, giao bài nhiều và khó hơn, cho nhiều cơ hội hơn với học sinh mình kỳ vọng cao; vì tác động của kỳ vọng nhỏ nhưng có thể có thật, nên tránh dán nhãn cố định cho một đứa trẻ.
+  loai: loi-khuyen
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate
+  vi_tri: Jussim & Harber, Abstract; mục Mediation
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "giữ kỳ vọng cao cho mọi đứa trẻ, nhưng thể hiện bằng hành vi cụ thể — kiên nhẫn chờ câu trả lời, giao việc vừa sức nhưng hơi thử thách, khen nỗ lực thay vì khen \"thông minh\". Và đừng bao giờ dán nhãn cố định kiểu...". Chữ mới: như câu trên. Lý do: "khen nỗ lực thay vì khen thông minh" thuộc một lĩnh vực khác (cần nguồn riêng) và "kiên nhẫn chờ" không có nguồn; lời khuyên "tránh dán nhãn cố định" suy ra từ hiệu ứng nhỏ nhưng có thật và rủi ro với nhóm bị kỳ thị (Jussim & Harber). chỗ khó: đây là lời khuyên suy luận, không có thử nghiệm can thiệp; nên cho lượt 2 xét.'
+- id: a2
+  cau: Quy luật "gieo kỳ vọng lúc mới quen" của Raudenbush được kiểm trên học sinh, không phải nhân viên; áp vào chỗ làm với người mới mới chỉ là suy luận hợp lý, chưa phải bằng chứng.
+  loai: lich-su
+  nguon:
+  - raudenbush1984
+  trich: all studies employing IQ as an outcome and normal children in Grades 1-7 as subjects were included in the sample for the synthesis (n = 18)
+  vi_tri: Raudenbush, mục Method
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nhân viên mới thường nhạy với kỳ vọng của sếp nhất — đúng như quy luật \"đầu năm học\" của Raudenbush. Giao việc thử thách kèm sự tin tưởng cho người mới có tác dụng lớn hơn ta tưởng." Chữ mới: như câu trên. Lý do: không có nguồn về nhân viên mới; phân tích tổng hợp chỉ gồm học sinh lớp 1–7.'
+- id: a3
+  cau: Kỳ vọng của người khác có thể đóng một phần vào kết quả của bạn, thường là phần nhỏ, chứ không quyết định năng lực của bạn.
+  loai: loi-khuyen
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "một phần kết quả của bạn có thể đến từ kỳ vọng của người khác, không phải năng lực của bạn. Nhận ra điều đó là bước đầu để viết lại câu chuyện." Chữ mới: như câu trên. Lý do: bỏ khẳng định "nhận ra ... là bước đầu" (không nguồn) và thêm "thường là phần nhỏ".'
+- id: v1
+  cau: Tính đến 10/2026, chưa tìm thấy thí nghiệm nào về kỳ vọng giáo viên trên học sinh Việt Nam.
+  loai: thoi-su
+  nguon:
+  - crawfurd2020
+  het_han: 2028-10-30
+  trich: Teacher's expectations of students also vary systematically, with, for example, non-black teachers having lower expectations of black students in the USA
+  vi_tri: Crawfurd & Rolleston, mục Introduction (nguồn gần nhất tìm thấy, nói về hiệu ứng giáo viên ở Việt Nam, không về kỳ vọng)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Hầu hết nghiên cứu về hiệu ứng Pygmalion được làm ở phương Tây, trên học sinh Mỹ và châu Âu. Chúng tôi chưa tìm thấy thí nghiệm nào ...". Chữ mới: bỏ câu đầu (không nguồn bậc 1–2 nói trường ở Mỹ), thêm mốc "Tính đến 10/2026". Tìm ngày 30/10/2026: WebSearch "teacher expectations student achievement Vietnam study Young Lives Pygmalion effect": chỉ thấy nghiên cứu hiệu ứng giáo viên (Young Lives, Crawfurd & Rolleston 2020; Huynh 2024 về điểm số và học thêm), không có thí nghiệm kỳ vọng. Chưa tìm trong cơ sở dữ liệu tiếng Việt: chưa chắc.'
+- id: v2
+  cau: Jussim và Harber (2005) nêu một nghiên cứu (Smith và cộng sự, 1998) thấy hiệu ứng tự ứng nghiệm ở các lớp xếp theo năng lực không mạnh hơn ở lớp hỗn hợp.
+  loai: phat-hien
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies among students grouped by ability between classes were no more powerful than those among students in heterogeneous classes—and both fell within the typically small range of 0–.2
+  vi_tri: Jussim & Harber, mục Tracking
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ở Việt Nam, việc phân loại học sinh (lớp chọn, lớp thường, trường chuyên) diễn ra công khai và từ sớm — đó chính là một \"máy gieo kỳ vọng\" khổng lồ chạy suốt nhiều năm." Chữ mới: "ở nơi nào học sinh bị xếp sớm vào các nhóm năng lực khác nhau, việc xếp ấy có thể là một máy gieo kỳ vọng. Nhưng ... bằng chứng quốc tế chưa ủng hộ rõ". Lý do: khẳng định về hệ thống Việt Nam không có nguồn (và việc có "lớp chọn" còn cần kiểm theo quy định hiện hành); nguồn quốc tế nói ngược.'
+- id: g1
+  cau: 'Kỳ vọng không phải phép thuật: theo cách giải thích của Rosenthal nó chỉ tác động qua hành vi của người lớn, và các tổng quan thấy tác động này thường nhỏ.'
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nó chỉ có tác dụng khi biến thành hành vi... Nghĩ mà không làm thì chẳng có gì xảy ra." Chữ mới: như câu trên. Lý do: "chỉ có tác dụng khi biến thành hành vi" là cơ chế giả định (xem e3), không phải kết quả đo.'
+- id: g2
+  cau: Điểm tăng trong nghiên cứu gốc là điểm trên một bài kiểm tra cụ thể, và chính bài kiểm tra ấy bị phê bình; phân tích tổng hợp thấy hiệu ứng trung bình lên điểm IQ chỉ nhỏ (0,11), và Jussim và Harber cho rằng việc kỳ vọng làm thay đổi trí tuệ vẫn chưa rõ.
+  loai: lich-su
+  nguon:
+  - thorndike1968
+  - raudenbush1984
+  - jussim2005
+  trich: whether self-fulfilling prophecies affect intelligence ... remains unclear
+  vi_tri: Thorndike; Raudenbush; Jussim & Harber Abstract (c)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Hiệu ứng thật tồn tại, nhưng khiêm tốn hơn nhiều." Chữ mới: câu trên. Lý do: "thật tồn tại" cho điểm IQ quá mạnh (b3).'
+- id: g3
+  cau: Thầy cô không biết danh sách là ngẫu nhiên và không ai bảo họ thiên vị; nếu kỳ vọng có tác động thì đó là tác động mà thầy cô không hề cố ý.
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  trich: In truth, the test was a traditional IQ test and the "bloomers" were a randomly selected 20% of the student population.
+  vi_tri: Raudenbush tr. 85
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Không ai bảo họ làm vậy, và họ cũng không biết danh sách là bịa đặt. Đó chính là điều đáng chú ý: thiên vị xảy ra ngoài ý thức." Chữ mới: "... danh sách là ngẫu nhiên. Nếu kỳ vọng có tác động, thì đó là tác động mà thầy cô không hề cố ý." Lý do: "thiên vị xảy ra ngoài ý thức" là khẳng định cơ chế không đo được.'
+- id: g4
+  cau: Kỳ vọng thấp cũng có thể tự ứng nghiệm; hiệu ứng mạnh có thể xảy ra có chọn lọc ở học sinh thuộc nhóm bị kỳ thị, còn việc nó gây hại nhiều hơn lợi hay không thì chưa rõ.
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: powerful self-fulfilling prophecies may selectively occur among students from stigmatized social groups
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Kỳ vọng thấp cũng tự ứng nghiệm — học sinh bị coi là kém sẽ nhận ít cơ hội hơn và kém đi thật." Chữ mới: câu trên. Lý do: như l4.'
+- id: q1a
+  cau: Danh sách học sinh "sắp bứt phá" được chọn hoàn toàn ngẫu nhiên khoảng 20% học sinh mỗi lớp, rồi được báo với giáo viên là các em được dự đoán sẽ tiến bộ vượt bậc.
+  loai: phat-hien
+  nguon:
+  - rosenthal1966b
+  - raudenbush1984
+  trich: an average of 20% of the children were reported to classroom teachers as showing unusual potential ... (who had actually been selected at random)
+  vi_tri: R&J 1966 abstract
+  ket_qua: dung
+  ghi_chu: Câu hỏi 1, đáp án đúng.
+- id: q1b
+  cau: Nếu có khác biệt về sau thì nó không thể đến từ năng lực ban đầu của học sinh, vì danh sách là ngẫu nhiên; việc khác biệt ấy có đáng tin hay không còn phụ thuộc chất lượng số đo.
+  loai: lich-su
+  nguon:
+  - raudenbush1984
+  - thorndike1968
+  trich: the "bloomers" were a randomly selected 20% of the student population
+  vi_tri: Raudenbush tr. 85; Thorndike
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "mọi khác biệt về sau chỉ có thể đến từ kỳ vọng của giáo viên, không phải năng lực ban đầu của học sinh". Chữ mới: câu trên. Lý do: "chỉ có thể" bỏ qua sai số đo lường và dữ liệu gốc bị phê bình.'
+- id: q2a
+  cau: Sau 8 tháng, nhóm "nở muộn" hơn nhóm đối chứng gần 4 điểm IQ tổng và khoảng 7 điểm IQ lập luận.
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  trich: those predicted to bloom had in fact gained significantly more in total IQ (nearly 4 points) and reasoning IQ (7 points) than the control group children.
+  vi_tri: Raudenbush tr. 85–86
+  ket_qua: dung
+  ghi_chu: Câu hỏi 2, đáp án đúng; như j7. Phương án nhiễu "hơn khoảng 15 điểm" đã đổi thành "khoảng 30 điểm" vì 15 điểm đúng là mức chênh của riêng lớp 1 (Jussim & Harber).
+- id: q2b
+  cau: Con số đủ lớn để gây chấn động năm 1968, nhưng cũng chính con số này về sau bị soi kỹ vì bài kiểm tra đầu vào có vấn đề.
+  loai: lich-su
+  nguon:
+  - thorndike1968
+  - snow1995
+  trich: the basic data upon which this structure has been raised are so untrustworthy
+  vi_tri: Thorndike tr. 711
+  ket_qua: dung
+- id: q3a
+  cau: Theo phân tích tổng hợp của Raudenbush, hiệu ứng mạnh nhất khi kỳ vọng được tạo lúc giáo viên chưa quen học sinh (chưa hoặc mới tiếp xúc khoảng một tuần); hiệu ứng trung bình chung chỉ khoảng 0,11.
+  loai: so-lieu
+  nguon:
+  - raudenbush1984
+  trich: four experiments having no prior contact yielded a mean effect size of 0.32. Three experiments having 1 week of prior contact obtained a mean effect size of 0.26. After more than 2 weeks of prior contact, the effect of expectancy seemed to disappear, as indicated by a mean effect size of −0.04 for those eight studies.
+  vi_tri: Mục Results
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "(đầu năm học)". Chữ mới: "(chưa hoặc mới tiếp xúc khoảng một tuần)". Lý do: như b4.'
+- id: q3b
+  cau: Giáo viên đã có ấn tượng riêng thì thông tin bịa đặt gần như vô tác dụng; kỳ vọng chỉ "gieo" được trên mảnh đất trống.
+  loai: phat-hien
+  nguon:
+  - raudenbush1984
+  trich: After more than 2 weeks of prior contact, the effect of expectancy seemed to disappear
+  vi_tri: Raudenbush tr. 91
+  ket_qua: dung
+  ghi_chu: Câu hỏi 3, giải thích; "mảnh đất trống" là hình ảnh.
+- id: q4a
+  cau: 'Phê bình nổi tiếng nhất nhắm vào nghiên cứu gốc: bài kiểm tra đầu vào có vấn đề (điểm ban đầu thấp phi lý, như "IQ" lập luận trung bình 58 ở lớp 1), nên các kết luận của sách không được dữ liệu đỡ vững (Thorndike, 1968).'
+  loai: phat-hien
+  nguon:
+  - thorndike1968
+  trich: What kind of a test, or what kind of testing is it that gives a mean "IQ" of 58 for the total entering first grade
+  vi_tri: Thorndike tr. 710
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nên phần tăng điểm rất có thể chỉ là hồi quy về trung bình — phê bình của Thorndike (1968)". Chữ mới: câu trên. Lý do: như nt2.'
+- id: q4b
+  cau: 'Bài học phải khiêm tốn: hiệu ứng có thể xảy ra nhưng thường nhỏ, còn con số gốc thì đáng ngờ.'
+  loai: lich-su
+  nguon:
+  - thorndike1968
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate
+  vi_tri: Thorndike; Jussim & Harber Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "hiệu ứng có thật, nhưng con số gốc thì đáng ngờ". Chữ mới: câu trên. Lý do: như g2.'
+- id: q5a
+  cau: Theo tổng kết 35 năm của Jussim và Harber (2005), kỳ vọng thường dự đoán đúng kết quả, nhưng có thể nhiều hơn là vì chúng chính xác (giáo viên đọc đúng năng lực) chứ không chỉ vì tự ứng nghiệm; hiệu ứng tự ứng nghiệm thường nhỏ.
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate ... teacher expectations may predict student outcomes more because these expectations are accurate
+  vi_tri: Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "phần lớn vì chúng chính xác ... thật sự thường nhỏ". Chữ mới: "có thể nhiều hơn là vì chúng chính xác ... thường nhỏ". Lý do: như nt5.'
+- id: q5b
+  cau: Kỳ vọng có tác động thật, nhưng khiêm tốn, và một phần "tiên đoán đúng" đơn giản là vì thầy cô nhìn người chuẩn.
+  loai: lich-su
+  nguon:
+  - jussim2005
+  trich: Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate
+  vi_tri: Abstract
+  ket_qua: dung
+  ghi_chu: Câu hỏi 5, giải thích; "đừng thần thánh hóa cũng đừng phủ nhận" là kết luận chung.
+doi_chu:
+- cu: (không có)
+  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+  ly_do: Bố cục C (kế hoạch).
+- cu: (không có)
+  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): Tác giả, năm; Người tham gia; Thiết kế; Kết quả chính'
+  ly_do: Bố cục C (kế hoạch).
+- cu: Đầu năm học, toàn bộ học sinh của 18 lớp (từ lớp 1 đến lớp 6) làm một bài kiểm tra IQ ... Sau đó, mỗi giáo viên nhận một danh sách
+  moi: Vào tháng 5/1964, toàn bộ học sinh của trường làm một bài kiểm tra IQ ...; đầu năm học mới, mỗi giáo viên trong 18 lớp nhận một danh sách
+  ly_do: j2.
+- cu: nói dối giáo viên tiểu học rằng vài học sinh được chọn ngẫu nhiên ... rồi theo dõi điểm số của các em suốt một năm học
+  moi: báo với giáo viên tiểu học rằng khoảng 20% học sinh, thực ra được chọn ngẫu nhiên, ... rồi đo lại điểm IQ của các em sau 8 tháng
+  ly_do: d1.
+- cu: Nhóm được chọn ngẫu nhiên vượt lên thật ... nhiều hơn hẳn ... Không phải vì các em thông minh hơn từ đầu, mà vì thầy cô tin
+  moi: Theo báo cáo gốc, nhóm được chọn ngẫu nhiên tăng điểm nhiều hơn ... các tác giả giải thích rằng thầy cô tin ... nhưng nghiên cứu này bị phê bình nặng về dữ liệu
+  ly_do: n1–n4.
+- cu: nhà điêu khắc trong thần thoại Hy Lạp
+  moi: Pygmalion, nhà điêu khắc trong truyện thần thoại do Ovid kể (Metamorphoses, quyển 10)
+  ly_do: e1.
+- cu: 'Điểm mấu chốt: thầy cô ... không hề cố ý thiên vị ... Kỳ vọng len lỏi qua những hành vi rất nhỏ ... Học sinh cảm nhận được tất cả những điều đó, và dần trở thành đúng như những gì thầy cô tin.'
+  moi: 'Điểm mấu chốt: thầy cô ... không biết danh sách là ngẫu nhiên ... Theo cách giải thích của Rosenthal ... kỳ vọng có thể len lỏi qua những hành vi nhỏ ... Đây là cơ chế được đề xuất; mức tác động thực tế còn tranh cãi'
+  ly_do: e2, e3.
+- cu: mỗi người vài con chuột ... giống hệt nhau ... học mê cung nhanh hơn hẳn ... "dễ mến" ... cầm nắm, đối xử với chúng nhẹ nhàng ... đã thay đổi hành vi của chính họ, và hành vi ấy thay đổi kết quả
+  moi: mỗi người năm con chuột ... không có dòng "thông minh" hay "đần" nào ... chọn đúng nhánh mê cung nhiều hơn ... sạch hơn, thuần hơn, dễ chịu hơn ... (cầm nắm chưa đạt ý nghĩa thống kê, p = 0,09) ... các tác giả cho rằng ... có thể đã ảnh hưởng
+  ly_do: r1–r6.
+- cu: Lenore Jacobson, hiệu trưởng một trường tiểu học ở California
+  moi: Lenore Jacobson, tại trường tiểu học của bà
+  ly_do: j1.
+- cu: bài kiểm tra IQ phi ngôn ngữ
+  moi: bài kiểm tra IQ thông thường (Tests of General Ability, có phần từ vựng và phần lập luận)
+  ly_do: j4.
+- cu: tên trường được giấu thành "trường Oak"
+  moi: trường được gọi là "trường Oak"
+  ly_do: j5.
+- cu: ở các lớp nhỏ (lớp 1 và lớp 2)
+  moi: ở các lớp đầu cấp (lớp 1 và lớp 2)
+  ly_do: j8.
+- cu: Cuối năm, giáo viên đánh giá nhóm "nở muộn" có cơ hội thành công trong tương lai cao hơn hẳn (mục duy nhất khác biệt có ý nghĩa thống kê); các đánh giá "tò mò hơn, vui vẻ hơn…" không đạt ý nghĩa thống kê trong số liệu gốc
+  moi: Hiệu ứng xuất hiện chủ yếu ở các em nhỏ tuổi hơn. Theo tóm tắt của Raudenbush (1984), cuối năm giáo viên cũng đánh giá nhóm "nở muộn" tò mò hơn về trí tuệ, vui vẻ hơn và thích nghi tốt hơn
+  ly_do: j9.
+- cu: Stephen Raudenbush quyết định không cãi bằng lời mà cãi bằng số
+  moi: Stephen Raudenbush không cãi bằng lời mà dùng số
+  ly_do: b1.
+- cu: Hiệu ứng trung bình chỉ là 0,11 — có thật, nhưng nhỏ hơn nhiều ... (đầu năm học, cỡ hiệu ứng khoảng 0,41 theo ước lượng mô hình)
+  moi: 'Hiệu ứng trung bình chỉ là 0,11 — nhỏ, và có đạt ý nghĩa thống kê hay không còn tùy cách kiểm định ... (4 thí nghiệm không có tiếp xúc trước: cỡ hiệu ứng trung bình 0,32; 3 thí nghiệm có một tuần tiếp xúc trước: 0,26) ... (8 thí nghiệm: −0,04)'
+  ly_do: b3, b4.
+- cu: 'Không chỉ một nghiên cứu đơn lẻ: hàng chục thí nghiệm độc lập — từ chuột bạch, học sinh, đến nhân viên ... Đây là một hiệu ứng có thật, được lặp lại.'
+  moi: 'Không chỉ một nghiên cứu đơn lẻ: tổng quan 345 nghiên cứu của Rosenthal và Rubin (1978), được Raudenbush dẫn lại ... tổng quan 35 năm của Jussim và Harber (2005) cũng kết luận ... nhưng thường nhỏ'
+  ly_do: nv2, nv3.
+- cu: cỡ hiệu ứng trung bình 0,11 — nhỏ. ... lúc giáo viên chưa có ấn tượng riêng về học sinh.
+  moi: cỡ hiệu ứng trung bình 0,11 lên điểm IQ — nhỏ ... Jussim và Harber (2005) cũng thấy tác động thường nhỏ
+  ly_do: nk2.
+- cu: điểm IQ ban đầu của nhiều lớp thấp đến mức phi lý, nên phần "tăng điểm" về sau rất có thể chỉ là hiện tượng hồi quy về trung bình
+  moi: điểm "IQ" lập luận trung bình của học sinh lớp 1 chỉ là 58 (một lớp có trung bình 31), nên theo ông các kết luận của sách không được dữ liệu đỡ vững; thêm Snow (1995) và phản biện của Jussim & Harber
+  ly_do: nt2–nt4.
+- cu: phần lớn là vì chúng chính xác; Hiệu ứng có thật, nhưng nhỏ hơn
+  moi: có thể nhiều hơn là vì chúng chính xác; Hiệu ứng tự ứng nghiệm trong lớp học có xảy ra, nhưng nhỏ hơn
+  ly_do: nt5.
+- cu: 'Bốn kênh tác động của Rosenthal: ... giọng điệu, ánh mắt ... gọi trả lời nhiều hơn, chờ đợi lâu hơn ... Không kênh nào cần đến ý thức.'
+  moi: '... Theo Jussim và Harber (2005), giáo viên thường đối xử với học sinh được kỳ vọng cao theo những cách này; ... là cơ chế được giả định'
+  ly_do: l2.
+- cu: 'Hiệu ứng ngược: ... tự ứng nghiệm theo hướng xấu (học sinh bị dán nhãn "kém" ...). Vì vậy dán nhãn trong giáo dục là con dao hai lưỡi.'
+  moi: '... có thể tự ứng nghiệm ... Jussim và Harber (2005) nhận xét ... Dán nhãn trong giáo dục vì vậy cần thận trọng.'
+  ly_do: l4, g4.
+- cu: 'Làm cha mẹ, thầy cô: giữ kỳ vọng cao ... khen nỗ lực thay vì khen "thông minh"'
+  moi: các tổng quan mô tả giáo viên thường ấm áp hơn ... nên tránh dán nhãn cố định
+  ly_do: a1.
+- cu: 'Làm quản lý: nhân viên mới thường nhạy với kỳ vọng của sếp nhất ...'
+  moi: quy luật "gieo kỳ vọng lúc mới quen" của Raudenbush được kiểm trên học sinh, không phải nhân viên ... chưa phải bằng chứng
+  ly_do: a2.
+- cu: một phần kết quả của bạn có thể đến từ kỳ vọng của người khác, không phải năng lực của bạn. Nhận ra điều đó là bước đầu để viết lại câu chuyện.
+  moi: kỳ vọng của người khác có thể đóng một phần vào kết quả của bạn — thường là phần nhỏ — chứ không quyết định năng lực của bạn.
+  ly_do: a3.
+- cu: Hầu hết nghiên cứu ... phương Tây ... Chúng tôi chưa tìm thấy thí nghiệm nào ...
+  moi: Tính đến 10/2026, chúng tôi chưa tìm thấy ...
+  ly_do: v1.
+- cu: ở Việt Nam, việc phân loại học sinh (lớp chọn, lớp thường, trường chuyên) diễn ra công khai và từ sớm — đó chính là một "máy gieo kỳ vọng" khổng lồ
+  moi: ở nơi nào học sinh bị xếp sớm vào các nhóm năng lực khác nhau, việc xếp ấy có thể là một "máy gieo kỳ vọng" ... Jussim và Harber (2005) nêu một nghiên cứu (Smith và cộng sự, 1998) ...
+  ly_do: v2.
+- cu: Kỳ vọng không phải phép thuật — nó chỉ có tác dụng khi biến thành hành vi ... Nghĩ mà không làm thì chẳng có gì xảy ra.
+  moi: '... theo cách giải thích của Rosenthal, nó chỉ tác động qua hành vi của người lớn ..., và các tổng quan thấy tác động này thường nhỏ.'
+  ly_do: g1.
+- cu: Hiệu ứng thật tồn tại, nhưng khiêm tốn hơn nhiều.
+  moi: Phân tích tổng hợp thấy hiệu ứng trung bình lên điểm IQ chỉ nhỏ (0,11), và Jussim và Harber (2005) cho rằng việc kỳ vọng làm thay đổi trí tuệ vẫn chưa rõ.
+  ly_do: g2.
+- cu: 'họ cũng không biết danh sách là bịa đặt. Đó chính là điều đáng chú ý: thiên vị xảy ra ngoài ý thức.'
+  moi: họ cũng không biết danh sách là ngẫu nhiên. Nếu kỳ vọng có tác động, thì đó là tác động mà thầy cô không hề cố ý.
+  ly_do: g3.
+- cu: Kỳ vọng thấp cũng tự ứng nghiệm — học sinh bị coi là kém sẽ nhận ít cơ hội hơn và kém đi thật.
+  moi: Kỳ vọng thấp cũng có thể tự ứng nghiệm; ... chưa rõ.
+  ly_do: g4.
+- cu: (đầu năm học) [đáp án quiz 3]
+  moi: (chưa hoặc mới tiếp xúc khoảng một tuần)
+  ly_do: q3a.
+- cu: rất có thể chỉ là hồi quy về trung bình — phê bình của Thorndike (1968) [đáp án quiz 4]
+  moi: các kết luận của sách không được dữ liệu đỡ vững — phê bình của Thorndike (1968)
+  ly_do: q4a.
+- cu: phần lớn vì chúng chính xác [đáp án quiz 5]
+  moi: có thể nhiều hơn là vì chúng chính xác
+  ly_do: q5a.
+ghi_chu: 'Sách gốc Rosenthal & Jacobson (1968) và bài Urban Review không mở được: con số 4/7 điểm IQ, 18 lớp lớp 1–6 lấy từ Raudenbush, Snow, Jussim & Harber, tóm tắt 1966. Rosenthal & Rubin (1978) chỉ biết qua Raudenbush. Rosenthal (1995, Critiquing Pygmalion) chưa đọc. Ba chỗ hồ sơ ghi "chưa chắc" hay "chỗ khó" cần người giao xem (j1 hiệu trưởng/California, j9 đánh giá của giáo viên, q1b/q4b chữ quiz chưa sửa).'

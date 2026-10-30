@@ -130,7 +130,8 @@ test('site cũ: mọi trang chuyển được (không lỗi), không còn cú ph
 });
 
 /** Hình đã sửa có chủ ý sau khi chép (lô của trang ghi doi_chu ở hồ sơ, kèm lý do và nguồn): thêm tên vào đây. */
-const HINH_DA_SUA = new Set([]);
+// hình đã sửa có chủ ý so với trang cũ (doi_chu ở hồ sơ trang): milgram-obedience (D3-L1: bài 1963 không có "đòi được thả"; 79% là của Thí nghiệm 5)
+const HINH_DA_SUA = new Set(["milgram-obedience"]);
 
 test('hình tĩnh src/hinh/<tên>.html chép đúng hình của trang cũ (chữ trong hình, aria-label; so-chu không so SVG)', { skip: !CO_SITE_CU && 'không có ../psyche-zero/' }, () => {
 	const thu = new URL('../src/hinh/', import.meta.url);

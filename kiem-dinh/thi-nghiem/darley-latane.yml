@@ -4,14 +4,570 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/darley-latane.md
 tang: loi
 muc: V3
 lan:
-  - so: 1
-    ngay: null
-    nhanh: moi/d3-l1
-    ma_bam: null
-    nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
-      kiem_mau: null
-nguon: []
-nhan_dinh: []
+- so: 1
+  ngay: '2026-10-30'
+  nhanh: moi/d3-l1
+  ma_bam: null
+  nguoi:
+    luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 1/2); chỗ khó: Claude Opus 5.5'
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: darley1968
+  ten: 'Darley & Latané (1968), J Pers Soc Psychol 8(4), 377–383: toàn văn (pdf.stafforini.com)'
+  link: https://doi.org/10.1037/h0025589
+  toan_van: true
+- id: fischer2011
+  ten: 'Fischer và cộng sự (2011), Psychol Bull 137(4), 517–537: toàn văn (PDF ở Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+  link: https://doi.org/10.1037/a0023304
+  toan_van: true
+- id: philpot2020
+  ten: 'Philpot và cộng sự (2020), Am Psychol 75(1), 66–75: tóm tắt (PubMed 31157529)'
+  link: https://doi.org/10.1037/amp0000469
+  toan_van: false
+- id: manning2007
+  ten: 'Manning, Levine & Collins (2007), Am Psychol 62(6), 555–562: tóm tắt (PubMed 17874896)'
+  link: https://doi.org/10.1037/0003-066X.62.6.555
+  toan_van: false
+- id: latane1968
+  ten: 'Latané & Darley (1968), J Pers Soc Psychol 10(3), 215–221: toàn văn (PDF ở Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+  link: https://doi.org/10.1037/h0026570
+  toan_van: true
+- id: markey2000
+  ten: 'Markey (2000), Computers in Human Behavior 16(2), 183–188: toàn văn (bản tác giả, lưu ở Wayback Machine 4/6/2024)'
+  link: https://doi.org/10.1016/S0747-5632(99)00056-4
+  toan_van: true
+nhan_dinh:
+- id: n1
+  cau: 'Darley và Latané (1968): càng đông người chứng kiến, mỗi cá nhân càng ít khả năng giúp đỡ (mô tả của trang).'
+  loai: phat-hien
+  nguon:
+  - darley1968
+  - fischer2011
+  trich: These considerations lead to the hypothesis that the more bystanders to an emergency, the less likely, or the more slowly, any one bystander will intervene to provide aid.
+  vi_tri: Darley 1968, phần mở đầu
+  ket_qua: dung
+  ghi_chu: Câu mô tả (description) của trang.
+- id: n2
+  cau: 'Hiệu ứng người ngoài cuộc (bystander effect): càng đông người chứng kiến một tình huống khẩn cấp, mỗi cá nhân càng ít khả năng can thiệp.'
+  loai: dinh-nghia
+  nguon:
+  - fischer2011
+  trich: showing that the presence of other people in a critical situation reduces the likelihood that an individual will help
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: Định nghĩa theo tóm tắt Fischer 2011 (APA Dictionary không tải được).
+- id: n3
+  cau: 'Phân tán trách nhiệm: trách nhiệm được chia cho những người có mặt; ở một mình, trách nhiệm hoàn toàn thuộc về bạn.'
+  loai: dinh-nghia
+  nguon:
+  - darley1968
+  trich: the responsibility for intervention is shared among all the onlookers and is not unique to any one
+  vi_tri: Phần mở đầu
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (Điều gì đang xảy ra): "phần của mỗi người co lại đến gần bằng không"; (Lý thuyết): "trách nhiệm tỉ lệ nghịch với số người hiện diện. Ở một mình, 100% trách nhiệm là của bạn". Cả hai là con số tu từ không có trong nguồn; chữ mới theo mô tả của Darley & Latané.'
+- id: n4
+  cau: 'Vô tri tập thể (pluralistic ignorance): ai cũng nhìn người khác để đoán tình hình; thấy mọi người ngồi yên, mỗi người kết luận "chắc không nghiêm trọng".'
+  loai: dinh-nghia
+  nguon:
+  - fischer2011
+  - latane1968
+  trich: The third process is pluralistic ignorance, which results from the tendency to rely on the overt reactions of others when defining an ambiguous situation.
+  vi_tri: Fischer 2011, tr. 518, mục Definitions and Psychological Accounts; Latané & Darley 1968, tr. 216 ("all members may be led (or misled) by each other to define the situation as less critical than they would if alone. Until someone acts, each person only sees other nonresponding bystanders")
+  ket_qua: dung
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): đã mở toàn văn Fischer 2011 và bài khói 1968. Bài 1968 mô tả cơ chế (ảnh hưởng xã hội trong tình huống mập mờ) mà không dùng tên "pluralistic ignorance"; tên ấy Fischer gán cho Latané & Darley (1970). Cùng định nghĩa ở mục Lý thuyết ("dùng phản ứng của người khác làm la bàn").'
+- id: n5
+  cau: 'Sợ bị đánh giá: người ta lo đứng dậy báo động rồi hóa ra chuyện nhỏ, làm mình thành trò cười; trong thí nghiệm co giật, người tham gia lo phản ứng quá mức.'
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: they were concerned not to make fools of them- selves by overreacting
+  vi_tri: Phần Discussion
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Đám đông càng đông, cái giá của việc ''làm lố'' càng cao" (không có trong nguồn đã mở); chữ mới chỉ nói điều Darley & Latané thấy. Ví dụ "máy pha cà phê" là minh họa (gia-dinh).'
+- id: n6
+  cau: 'Người không can thiệp thường không vô cảm: họ run tay, đổ mồ hôi, và còn đang phân vân giữa hai cái giá phải trả.'
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: they often had trembling hands and sweating palms
+  vi_tri: Phần Discussion
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "đám đông không cứu không phải vì vô cảm, mà vì mỗi người đang đọc sai tín hiệu của nhau"; chữ mới theo Darley & Latané (1968): nonintervening subjects "had not decided not to respond… still in a state of indecision and conflict". Phần "đọc sai tín hiệu" thuộc thí nghiệm khói (chưa mở).'
+- id: n7
+  cau: Mỗi người ngồi một phòng riêng, thảo luận nhóm qua loa (hệ thống nội bộ) về các vấn đề của sinh viên.
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: the discussion would be held over the intercom system, rather than face-to-face
+  vi_tri: Phần Method
+  ket_qua: dung
+  ghi_chu: Sinh viên NYU, học phần nhập môn tâm lý; 59 nữ và 13 nam.
+- id: n8
+  cau: Giữa buổi, một "người tham gia" (thật ra là băng ghi âm) lên cơn co giật kiểu động kinh, van xin giúp đỡ.
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: All the confederates' voices were tape-recorded.
+  vi_tri: Phần Method
+  ket_qua: dung
+  ghi_chu: 'Cơn co giật: "very serious nervous seizure similar to epilepsy"; lời van xin "give me a little help here… I''m gonna die". Trích ngắn: "one of the other subjects underwent what appeared to be a very serious nervous seizure similar to epilepsy".'
+- id: n9
+  cau: 'Biến số chính là số người mà người tham gia thật tin là có trong nhóm: chỉ họ và nạn nhân, thêm 1 người khác, hay thêm 4 người khác.'
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: The major independent variable was the number of people the subject thought to be in the discussion group.
+  vi_tri: Phần Overview
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Biến số duy nhất"; chữ mới: "Biến số chính". Lý do: bài còn biến thể giới tính và nghề của người cộng tác ở nhóm 3 người.'
+- id: n10
+  cau: 85% người tưởng mình ở một mình biết hoàn cảnh nạn nhân đã báo cho người thí nghiệm trước khi nạn nhân bị ngắt tiếng; chỉ 31% khi tưởng có 4 người khác.
+  loai: so-lieu
+  nguon:
+  - darley1968
+  trich: Eighty-five percent of the subjects who thought they alone knew of the victim's plight reported the seizure before the victim was cut off, only 31% of those who thought four other by- standers were present did so.
+  vi_tri: Phần Results, bảng 1
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "85%… đã can thiệp"; chữ mới thêm "báo cho người thí nghiệm trước khi nạn nhân bị ngắt tiếng" (điều kiện của số 85% và 31%). Bảng 1: nhóm 2 người N = 13 (85%), nhóm 3 người N = 26 (62%), nhóm 6 người N = 13 (31%).'
+- id: n11
+  cau: 'Nhóm đông can thiệp chậm hơn hẳn: thời gian trung bình 52 giây (2 người), 93 giây (3 người), 166 giây (6 người).'
+  loai: so-lieu
+  nguon:
+  - darley1968
+  trich: Time in sec. 52 93 166
+  vi_tri: Bảng 1
+  ket_qua: dung
+  ghi_chu: Trang chỉ nói "chậm hơn hẳn", không nêu con số.
+- id: n12
+  cau: Sau cùng 6 phút, mọi người trong nhóm 2 người đều báo, nhưng chỉ 62% trong nhóm 6 người từng báo.
+  loai: so-lieu
+  nguon:
+  - darley1968
+  trich: Every one of the subjects in the two- person groups, but only 62% of the subjects in the six-person groups, ever reported the emergency.
+  vi_tri: Phần Results
+  ket_qua: dung
+  ghi_chu: Dữ liệu bổ sung, trang không nêu; ghi để lượt 2 và người giao thấy khác biệt giữa "báo trước khi bị ngắt" và "từng báo".
+- id: n13
+  cau: Cùng một tiếng kêu cứu, cùng một con người, chỉ khác niềm tin về số người xung quanh.
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: The number of bystanders that the sub- ject perceived to be present had a major ef- fect on the likelihood with which she would report the emergency
+  vi_tri: Phần Results
+  ket_qua: dung
+- id: n14
+  cau: 'Hộp hồ sơ, dòng Thiết kế và Người tham gia: sinh viên đại học; người tham gia thật tin rằng chỉ mình mình nghe thấy, hay còn 1 hoặc 4 người khác cùng nghe.'
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: Fifty-nine female and thirteen male stu- dents in introductory psychology courses at New York University
+  vi_tri: Phần Method, Subjects
+  ket_qua: dung
+  ghi_chu: Dòng của hộp hồ sơ; cùng câu gốc với thiết kế ở trên.
+- id: n15
+  cau: 'Thí nghiệm khói (Latané và Darley, 1968): người tham gia (nam sinh viên Đại học Columbia) ngồi điền phiếu trong một phòng chờ; khói phụt vào phòng qua một lỗ thông gió trên tường.'
+  loai: phat-hien
+  nguon:
+  - latane1968
+  trich: The subject, seated in a small waiting room, faced an ambiguous but potentially dangerous situation as a stream of smoke began to puff into the room through a wall vent.
+  vi_tri: tr. 217, mục Method; "Male Columbia students living in campus residences" (Recruitment of subjects)
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Người tham gia ngồi điền phiếu trong phòng, khói bắt đầu bốc lên từ khe thông gió"; chữ mới thêm người tham gia (nam sinh viên Columbia, gồm cả sau đại học) và "phòng chờ", "lỗ thông gió trên tường" theo bài gốc.'
+- id: n16
+  cau: 'Ở một mình: 75% (18 trong 24 người) đi báo khói trong vòng 6 phút kể từ lúc nhận ra khói.'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: Three-quarters of the 24 people who were run in this condition reported the smoke before the experimental period was terminated.
+  vi_tri: 'tr. 217, Results (Alone condition); thời hạn: "If the subject had not reported the presence of smoke by 6 minutes from the time he first noticed it, the experiment was terminated." (Method)'
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "75% báo khói trong 6 phút"; chữ mới thêm 18/24 (ba phần tư của 24) và mốc 6 phút tính từ lúc nhận ra khói. Số 75% cũng có trong hình, ô thu gọn, câu hỏi 1.'
+- id: n17
+  cau: 'Ngồi cùng hai người lạ thật (cũng là người tham gia): chỉ 3 trong 8 nhóm (38%) có người báo khói.'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: In fact, in only 38% of the eight groups in this condition did even 1 subject report (p < .01).
+  vi_tri: tr. 218, Results (Three naive bystanders)
+  ket_qua: dung
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): 38% tính theo nhóm (3/8), đúng như trang. Chữ trang đổi cách viết (bỏ ngoặc "tính theo nhóm —"), ý không đổi.'
+- id: n18
+  cau: 'Ngồi cùng hai diễn viên được dặn nhìn khói rồi nhún vai, tiếp tục điền phiếu: 10% (1 trong 10 người).'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: of 10 people run in this condition, only 1 reported the smoke
+  vi_tri: 'tr. 217–218, Results (Two passive confederates); cách diễn của người cộng tác: "they stared at it briefly, made no comment, but simply shrugged their shoulders, returned to the questionnaires and continued to fill them out" (tr. 217, Experimental manipulation)'
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Ngồi cùng hai diễn viên dửng dưng cắm cúi viết: 10%"; chữ mới thêm 1/10 và cách diễn theo bài gốc.'
+- id: n19
+  cau: 9 người còn lại ngồi trong căn phòng đầy dần khói, ho, dụi mắt, mở cửa sổ, nhưng không đi báo.
+  loai: phat-hien
+  nguon:
+  - latane1968
+  trich: The other 9 stayed in the waiting room as it filled up with smoke, doggedly working on their questionnaire and waving the fumes away from their faces. They coughed, rubbed their eyes, and opened the window—but they did not report the smoke.
+  vi_tri: tr. 218, Results
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "nhiều người trong số 90% còn lại thậm chí dụi mắt vì cay mà vẫn ngồi yên"; "vì cay" không có trong bài, và bài nói cả 9 người (không phải "nhiều người"); chữ mới theo bài.'
+- id: n20
+  cau: 'Theo tính toán của hai tác giả, nếu ba người không ảnh hưởng gì đến nhau thì hơn 98% số nhóm phải có ít nhất một người báo. Tính theo từng người: 3 trong 24 người báo khói.'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: Since 75% of the alone subjects reported the smoke, we would expect over 98% of the three-person groups to contain at least one reporter. … Only 3 people reported the smoke within the entire experimental period.
+  vi_tri: tr. 218, Results (Three naive bystanders)
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ (ô thu gọn): "tính theo từng cá nhân thì thấp hơn, vì mỗi nhóm dừng ngay khi có người đầu tiên lên tiếng"; lý do ấy không đúng ý bài (bài nói khi một người đã báo thì áp lực lên hai người kia mất, nên dùng tốc độ của người báo đầu tiên). Chữ mới nêu thẳng 3/24 và mức kỳ vọng 98% của bài.'
+- id: n21
+  cau: 'Ô thu gọn: khi ngồi cùng hai người lạ cũng "không biết gì" như mình (không phải diễn viên), chỉ 3 trong 8 nhóm (38%) có người báo khói.'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: in only 38% of the eight groups in this condition did even 1 subject report
+  vi_tri: tr. 218
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "tỉ lệ là 38% — tính theo nhóm (3 trong 8 nhóm…)"; chữ mới nói rõ 3/8 nhóm; số đúng. Ô thu gọn còn thêm "1 trong 10 người" cho số 10% (n18).'
+- id: n22
+  cau: 'Câu hỏi đoán ở phần Tự trải nghiệm: khi ở một mình, 75% số người đứng dậy đi báo khói trong vòng 6 phút kể từ lúc nhận ra khói.'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: Three-quarters of the 24 people who were run in this condition reported the smoke before the experimental period was terminated.
+  vi_tri: tr. 217
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "75% số người đứng dậy báo khói trong vòng 6 phút"; thêm "kể từ lúc nhận ra khói" (mốc của bài). Cảnh tưởng tượng ở đầu phần là gia-dinh; "khói xám bốc lên từ khe cửa thông gió" đổi thành "khói trắng … lỗ thông gió trên tường" cho khỏi trái bài gốc ("whitish smoke", "a small vent in the wall").'
+- id: n23
+  cau: 'Để giải thích hiệu ứng, Latané và Darley (1970) đề xuất mô hình 5 bước (theo Fischer và cộng sự, 2011, kể lại): nhận thấy sự việc, hiểu đó là khẩn cấp, nhận trách nhiệm, tin mình biết cách giúp, quyết định giúp.'
+  loai: lich-su
+  nguon:
+  - fischer2011
+  trich: To account for the effect, Latané and Darley (1970) proposed a five-step psychological process model. They postulated that for intervention to occur, the bystander needs to (1) notice a critical situation, (2) construe the situation as an emergency, (3) develop a feeling of personal responsibility, (4) believe that he or she has the skills necessary to succeed, and (5) reach a conscious decision to help.
+  vi_tri: Fischer 2011, tr. 518, mục Definitions and Psychological Accounts
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Sách 1970 vẫn chưa đọc được, nên viết "theo Fischer kể lại". Chữ cũ: "Từ chuỗi thí nghiệm, hai ông rút ra…", "(4) biết cách giúp, (5) quyết định hành động"; chữ mới theo Fischer: "để giải thích hiệu ứng… đề xuất", "(4) tin mình biết cách giúp, (5) quyết định giúp". Cùng sửa ở câu hỏi 3 (n46).'
+- id: n24
+  cau: 'Ở mỗi bước đầu, người chứng kiến có thể rời khỏi quá trình và không giúp. Sự có mặt của người khác cản được ở nhiều bước: trong thí nghiệm khói, người ngồi cùng người khác nhận ra khói chậm hơn (trong 5 giây đầu: 63% người ngồi một mình, 26% người ngồi cùng người khác) và dễ hiểu khói là vô hại; trong thí nghiệm co giật, trách nhiệm bị chia.'
+  loai: phat-hien
+  nguon:
+  - latane1968
+  - darley1968
+  trich: At each of these preliminary steps, the bystander to an emergency can remove himself from the decision process and thus fail to help. … Sixty-three percent of subjects in the alone condition and only 26% of subjects in the combined together conditions noticed the smoke within the first 5 seconds after its introduction
+  vi_tri: 'Latané & Darley 1968, tr. 220 (Discussion) và tr. 219 (Noticing the smoke); Darley & Latané 1968: "the responsibility for intervention is shared among all the onlookers"'
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Vấp ở bất kỳ bước nào — và đám đông khiến ta dễ vấp ở cả 5 bước — là không có hành động nào xảy ra"; "cả 5 bước" không có nguồn (hai bài 1968 chỉ cho thấy ba bước đầu: nhận thấy, hiểu, nhận trách nhiệm). Chữ mới theo hai bài 1968.'
+- id: n25
+  cau: 'Trong khung Vững chắc: còn những quá trình tâm lý nào đứng sau hiệu ứng thì, theo Fischer và cộng sự, các nghiên cứu vẫn chưa rõ ràng.'
+  loai: nhan
+  nguon:
+  - fischer2011
+  trich: The bystander literature has remained somewhat ambiguous with regard to the relevant psychological processes.
+  vi_tri: Fischer 2011, tr. 518
+  nhan: vung-chac
+  co_so:
+  - fischer2011
+  ly_do: 'Câu giới hạn trong khung Vững chắc: nhãn nói về hiệu ứng (khả năng và tốc độ giúp giảm), không về cơ chế; Fischer nói thẳng phần cơ chế còn mập mờ.'
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Mô hình 5 bước là khung giải thích được dùng rộng rãi" (không nguồn cho "dùng rộng rãi"; đặt trong khung Vững chắc dễ hiểu là mô hình cũng vững chắc). Chữ mới theo Fischer.'
+- id: n26
+  cau: 'Fischer và cộng sự (2011): phân tích tổng hợp gộp 105 hiệu ứng từ hơn 7.700 người tham gia, từ thập niên 1960 đến 2010; độ lớn tổng thể g = −0,35.'
+  loai: so-lieu
+  nguon:
+  - fischer2011
+  trich: data from over 7,700 participants and 105 independent effect sizes revealed an overall effect size of g = -0.35
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: Mô hình hiệu ứng cố định (fixed effects).
+- id: n27
+  cau: Hiệu ứng yếu đi khi tình huống được nhận là nguy hiểm, có kẻ gây hại có mặt, hoặc cái giá của việc can thiệp là rủi ro thể chất.
+  loai: so-lieu
+  nguon:
+  - fischer2011
+  trich: The bystander effect was attenuated when situations were perceived as dangerous (compared with non-dangerous), perpetrators were present (compared with non-present), and the costs of intervention were physical (compared with non-physical).
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "yếu đi rõ rệt khi tình huống nguy hiểm rõ ràng: có kẻ tấn công xuất hiện, nạn nhân bị đe dọa thân thể, hoặc cái giá… là rủi ro thể chất". "Rõ rệt" giữ vì nguồn nói "attenuated" (giảm); câu "lửa cháy rõ ràng thì người ta xông vào" mạnh hơn nguồn, đã đổi: hiệu ứng yếu đi, ở một số tình huống nguy hiểm không còn (tóm tắt: "non-negative bystander effects in certain dangerous emergencies"). "Nạn nhân bị đe dọa thân thể" không có trong tóm tắt dưới dạng đó (nguồn dùng "dangerous", "perpetrators present", "physical costs"); lượt 2 xem. Chỗ khó (Claude Opus 5.5): đã đọc toàn văn: ba biến điều chỉnh là "emergency danger (high vs. low)", "perpetrator present versus absent", "physical versus non-physical cost of intervention" (tr. 522–523); không có biến "nạn nhân bị đe dọa thân thể". Đổi "có kẻ tấn công xuất hiện, nạn nhân bị đe dọa thân thể" thành "tình huống được nhận là nguy hiểm, có kẻ gây hại có mặt". "Rõ rệt" giữ: nguy hiểm g = −0,30, không khẩn cấp g = −0,47, kẻ xấu có thể nguy hiểm g = +0,29.'
+- id: n28
+  cau: 'Mô hình kích thích–chi phí–phần thưởng: tình huống nguy hiểm được nhận ra nhanh và rõ hơn là khẩn cấp thật, nên kích thích sinh lý cao hơn và người ta giúp nhiều hơn; khớp với phát hiện của Fischer.'
+  loai: phat-hien
+  nguon:
+  - fischer2011
+  trich: dangerous emergencies are recognized faster and more clearly as real emergencies, thereby inducing higher levels of arousal and hence more helping
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "não nhận diện khẩn cấp nhanh hơn, kích thích sinh lý tăng vọt, và thôi thúc giúp đỡ lấn át nỗi sợ bị đánh giá"; "tăng vọt" và "lấn át nỗi sợ" không có trong nguồn; chữ mới theo tóm tắt.'
+- id: n29
+  cau: 'Vững chắc: sự hiện diện của người khác làm giảm khả năng và tốc độ giúp đỡ trong tình huống khẩn cấp mập mờ.'
+  loai: nhan
+  nguon:
+  - fischer2011
+  - darley1968
+  - philpot2020
+  trich: The bystander effect was attenuated when situations were perceived as dangerous (compared with non-dangerous)
+  vi_tri: Tóm tắt Fischer
+  nhan: vung-chac
+  co_so:
+  - fischer2011
+  - darley1968
+  - latane1968
+  - philpot2020
+  ly_do: 'Phân tích tổng hợp chất lượng tốt (Fischer 2011, toàn văn): 105 hiệu ứng, trên 7.700 người, thập niên 1960–2010; g = −0,35 (cố định), −0,33 (ngẫu nhiên, KTC 95% [−0,45; −0,22]); trim-and-fill không đổi ước lượng, đồ thị phễu cân, nên khó do thiên lệch xuất bản; có ở cả phòng thí nghiệm lẫn thực địa, ở nhiều loại tình huống. Không có thất bại tái lập lớn nào trong các nguồn đã mở. Hiệu ứng khác nhau nhiều giữa các nghiên cứu (Q(104) = 266,29) và yếu hẳn khi nguy hiểm rõ: đã giới hạn khẳng định vào "tình huống khẩn cấp mập mờ" và mức cá nhân. Philpot 2020 nói về mức cả đám đông (có ai giúp không), không mâu thuẫn. Đạt Vững chắc theo mục 4.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Hiệu ứng đã được lặp lại trong hàng chục thí nghiệm suốt 50 năm… Mô hình 5 bước… ít tranh cãi"; chữ mới dùng số liệu của Fischer và thêm lưu ý Philpot. Chỗ khó (Claude Opus 5.5): giữ Vững chắc sau khi đọc toàn văn Fischer (hiệu ứng ngẫu nhiên vẫn có ý nghĩa, không thấy thiên lệch xuất bản, cả thực địa); câu cuối khung (mô hình 5 bước) đã đổi, xem n25.'
+- id: n30
+  cau: 'Philpot và cộng sự (2020): trong 219 xung đột công cộng quay bằng camera ở Anh, Hà Lan và Nam Phi, 9 trên 10 vụ có ít nhất một người ra tay giúp; càng đông người chứng kiến thì càng dễ có ai đó giúp.'
+  loai: so-lieu
+  nguon:
+  - philpot2020
+  trich: in 9 of 10 public conflicts, at least 1 bystander, but typically several, will do something to help
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: 'Câu mới thêm vào trang (Mức độ chắc chắn và Ngộ nhận). Tóm tắt: "increased bystander presence is related to a greater likelihood that someone will intervene".'
+- id: n31
+  cau: 'Khá vững: khi nguy hiểm rõ ràng, hiệu ứng yếu đi.'
+  loai: nhan
+  nguon:
+  - fischer2011
+  trich: The bystander effect was attenuated when situations were perceived as dangerous (compared with non-dangerous)
+  vi_tri: Tóm tắt
+  nhan: kha-vung
+  co_so:
+  - fischer2011
+  ly_do: 'Cùng phân tích tổng hợp (toàn văn): tình huống không khẩn cấp g = −0,47, khẩn cấp nguy hiểm g = −0,30, hành vi của kẻ xấu có thể nguy hiểm g = +0,29 (tr. 523); hiệu ứng vẫn có ý nghĩa trong mô hình ngẫu nhiên. Nhưng đây là so sánh giữa các nghiên cứu được mã hóa lại, các biến điều chỉnh tương quan với nhau (Fischer tự nêu ở mục Limitations), chưa có thí nghiệm mới hay tái lập lớn cho riêng yếu tố này: Khá vững.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "yếu đi nhiều"; chữ mới: "yếu đi" (nguồn chỉ nói attenuated).'
+- id: n32
+  cau: Phân tích tổng hợp của Fischer và cộng sự dựa trên mã hóa lại các nghiên cứu cũ, không phải thí nghiệm mới có đối chứng ngẫu nhiên cho từng yếu tố điều chỉnh.
+  loai: nhan
+  nguon:
+  - fischer2011
+  trich: present work (a) integrates the bystander literature from the 1960s to 2010
+  vi_tri: Tóm tắt
+  nhan: kha-vung
+  co_so:
+  - fischer2011
+  ly_do: Mô tả bản chất tổng hợp; thuộc khung Khá vững (xem nhận định trên).
+  ket_qua: dung
+  ghi_chu: Gộp với khung Khá vững; tách để kiểm riêng mô tả phương pháp.
+- id: n33
+  cau: 'Đang tranh cãi → Đã bị bác bỏ: câu chuyện "38 nhân chứng đứng nhìn không làm gì" trong vụ Kitty Genovese.'
+  loai: nhan
+  nguon:
+  - manning2007
+  trich: there is no evidence for the presence of 38 witnesses, or that witnesses observed the murder, or that witnesses remained inactive
+  vi_tri: Tóm tắt
+  nhan: bac-bo
+  co_so:
+  - manning2007
+  - fischer2011
+  ly_do: 'Manning, Levine & Collins (2007) dùng tư liệu lưu trữ, không thấy bằng chứng cho 38 nhân chứng, cho việc họ chứng kiến vụ án, hay cho việc họ đứng yên: bằng chứng gốc của câu chuyện (bài báo năm 1964) không còn giá trị, đúng điều kiện thứ hai của Đã bị bác bỏ. Phân tích tổng hợp Fischer 2011 (tr. 534) chấp nhận kết luận ấy ("even if there were no 38 witnesses") và tách nó khỏi hiệu ứng được đo trong phòng thí nghiệm. Nhãn nói về câu chuyện "38 nhân chứng", không về hiệu ứng.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: khung Đang tranh cãi ("câu chuyện gốc về Kitty Genovese"… "không đơn giản như huyền thoại"); chữ mới: khung Đã bị bác bỏ. Chỗ khó (Claude Opus 5.5): chốt Đã bị bác bỏ: có một nghiên cứu lịch sử bình duyệt dựa trên lưu trữ và phân tích tổng hợp lớn nhất của lĩnh vực chấp nhận nó; không nguồn nào đã mở bênh lại câu chuyện 38 người. Chỉ đọc tóm tắt Manning; lượt 2 nên mở toàn văn.'
+- id: n34
+  cau: Vụ án mạng năm 1964 ở New York, với con số "38 nhân chứng", là chuyện mở đầu của bài báo năm 1968 của Darley và Latané.
+  loai: lich-su
+  nguon:
+  - darley1968
+  trich: at least 38 witnesses had observed the attack
+  vi_tri: Phần mở đầu
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "chính là cú hích khiến Darley và Latané bắt tay vào nghiên cứu"; chữ mới: "là chuyện mở đầu bài báo" (bài báo mở bằng chuyện này; động cơ bắt tay vào nghiên cứu không được chứng minh ở đây).'
+- id: n35
+  cau: Manning, Levine và Collins (2007) không thấy bằng chứng cho 38 nhân chứng, cho việc họ nhìn thấy vụ án, hay cho việc họ đứng yên không làm gì.
+  loai: lich-su
+  nguon:
+  - manning2007
+  trich: there is no evidence for the presence of 38 witnesses, or that witnesses observed the murder, or that witnesses remained inactive
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "con số 38 đã bị báo chí thổi phồng"; "một số người có gọi điện báo, và không phải ai cũng chứng kiến toàn bộ sự việc". Tóm tắt không nói về cuộc gọi điện (không mở được toàn văn), nên bỏ; "thổi phồng" mạnh hơn "không có bằng chứng".'
+- id: n36
+  cau: 'Nếu bạn cần giúp, hãy gọi đích danh một người thay vì hỏi chung: trong một nghiên cứu ở 400 phòng chat trên mạng (Markey, 2000), lời nhờ có gọi tên được trả lời nhanh hơn (trung bình khoảng 36 giây so với 52 giây), và phòng đông người không còn làm chậm câu trả lời; đó là lời nhờ nhỏ trên mạng, không phải tình huống khẩn cấp.'
+  loai: loi-khuyen
+  nguon:
+  - markey2000
+  trich: assistance was received more quickly when help was asked for by specifying a participant’s name (M=36.38 s) than when no name was specified (M=51.53 s)
+  vi_tri: 'tr. 186, Results; "Over a 30-day period, 400 different chat groups were randomly selected" (tr. 185, Design and procedure); tóm tắt: "the bystander effect was virtually eliminated … when help was asked for by specifying a bystander’s name"'
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "đừng kêu cứu tôi với vào khoảng không. Hãy chỉ đích danh một người… bạn vừa gom 100% trách nhiệm đặt lên vai một người, phá vỡ phân tán trách nhiệm" (không nguồn, "100%" tu từ). Chữ mới giữ lời khuyên, dẫn Markey 2000 và nói rõ giới hạn (lời nhờ trên mạng, không khẩn cấp). Câu mở mục đổi thành "Mỗi gợi ý dưới đây kèm điều nghiên cứu đã thấy, nhưng các nghiên cứu ấy không làm trong tình huống khẩn cấp thật ngoài đời".'
+- id: n37
+  cau: 'Nếu bạn là người chứng kiến, nói với người bên cạnh về điều đang xảy ra: trong thí nghiệm khói, người ta đoán tình hình qua vẻ bình thản của người xung quanh; theo Fischer và cộng sự (2011), khi những người chứng kiến là người thật và trao đổi thật với nhau, có thêm người chứng kiến thậm chí làm tăng việc giúp đỡ.'
+  loai: loi-khuyen
+  nguon:
+  - fischer2011
+  - latane1968
+  trich: Under specific conditions (i.e., when the communication among bystanders is real and not manipulated by the experimenter, and when the bystanders are naive individuals instead of instructed confederates), additional bystanders even lead to more, rather than less, helping.
+  vi_tri: 'Fischer 2011, tr. 534–535 (Discussion); Latané & Darley 1968, tr. 216: "An individual, seeing the inaction of others, will judge the situation as less serious than he would if he were alone."'
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "đặt tên cho tình huống thành tiếng: Đây là trường hợp khẩn cấp, tôi đi gọi bảo vệ đây. Một câu nói to phá vỡ vô tri tập thể của cả đám đông" (không nguồn cho hiệu quả của câu nói to). Chữ mới: lời khuyên trao đổi với người bên cạnh, kèm điều Fischer thấy.'
+- id: n38
+  cau: Theo Fischer và cộng sự (2011) kể lại, Beaman và cộng sự (1978) thấy sinh viên đã nghe giảng về hiệu ứng người ngoài cuộc về sau can thiệp vào một tình huống khẩn cấp nhiều hơn sinh viên chưa nghe.
+  loai: loi-khuyen
+  nguon:
+  - fischer2011
+  trich: Beaman, Barnes, Klentz, and McQuirk (1978) found that students who had learned about the bystander effect in a lecture were more likely to intervene in a bystander emergency at a later date than were students who were not informed.
+  vi_tri: Fischer 2011, tr. 534 (Discussion)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (site cũ): "các chương trình huấn luyện can thiệp… cho thấy chỉ cần được học về hiệu ứng này, người ta đã can thiệp nhiều hơn hẳn. Đọc bài này xong, bạn đã hơn hôm qua một bậc"; lượt 1 phần đầu đã thay bằng "Chuẩn bị trước: mô hình 5 bước cho ta một danh sách để tự hỏi…" (vẫn không nguồn). Chỗ khó (Claude Opus 5.5): thay bằng điều Fischer kể lại về Beaman 1978 (một nghiên cứu, không phải "các chương trình"; bài Beaman chưa mở, nên viết "theo Fischer kể lại").'
+- id: n39
+  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy thí nghiệm kiểu Darley–Latané trên người Việt.
+  loai: thoi-su
+  het_han: '2028-10-01'
+  ket_qua: dung
+  ghi_chu: 'Tìm 30/10/2026: PubMed (Vietnam* AND (bystander effect OR bystander intervention): 0 kết quả), Crossref (bystander effect + Vietnam + helping: không có nghiên cứu thực nghiệm Việt Nam). Chưa tìm Google Scholar hay tạp chí trong nước.'
+- id: n40
+  cau: 'Cách nhìn nhân từ hơn cho cảnh đám đông đứng xem ở Việt Nam là giả thuyết cần kiểm tra: có thể nhiều người muốn giúp nhưng đang chờ nhau.'
+  loai: loi-khuyen
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "ở Việt Nam, ta không thiếu những clip tai nạn giao thông với đám đông đứng quay phim… báo chí hay gọi là vô cảm… nỗi lo giúp rồi bị vạ lây là rào cản có thật… quy định bảo vệ người sơ cứu thiện chí". Không có nguồn nào (cả về clip, báo chí lẫn quy định pháp lý), nên đã bỏ và nói rõ là giả thuyết. Người giao: nếu muốn giữ phần pháp lý thì cần nguồn chính thức (văn bản pháp luật, trang cơ quan nhà nước), ghi ngày kiểm.'
+- id: n41
+  cau: Trong thí nghiệm co giật, nhiều người không can thiệp vẫn run tay, đổ mồ hôi và còn phân vân; Darley và Latané cho rằng họ chưa quyết định không giúp.
+  loai: phat-hien
+  nguon:
+  - darley1968
+  trich: It is our impression that nonintervening subjects had not decided not to respond.
+  vi_tri: Phần Discussion
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Thí nghiệm cho thấy ngay cả người tốt, trong cấu trúc đám đông, cũng có thể không hành động. Đổ lỗi cho đạo đức vừa sai vừa không giúp ích gì"; chữ mới bám nguồn; "người tốt" và "vừa sai vừa không giúp ích" là đánh giá không nguồn, đã bỏ.'
+- id: n42
+  cau: Ngoài đời, ở mức cả đám đông, đông người làm tăng khả năng có ai đó giúp (Philpot 2020).
+  loai: so-lieu
+  nguon:
+  - philpot2020
+  trich: increased bystander presence is related to a greater likelihood that someone will intervene
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: Câu thêm vào Ngộ nhận cuối ("Đông người thì nạn nhân dễ được cứu hơn").
+- id: n43
+  cau: 'Trong tình huống mập mờ, ở mức cá nhân, đông người thì mỗi người ít giúp hơn: nghịch lý mà Darley và Latané phát hiện.'
+  loai: phat-hien
+  nguon:
+  - darley1968
+  - fischer2011
+  trich: the more bystanders to an emergency, the less likely, or the more slowly, any one bystander will intervene to provide aid
+  vi_tri: Darley 1968, phần mở đầu
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Trong tình huống mập mờ, điều ngược lại mới đúng"; chữ mới thêm "ở mức cá nhân" (vì mức cả đám đông thì khác).'
+- id: n44
+  cau: 'Câu hỏi 1: kết quả thí nghiệm khói: 75% (một mình), 38% (hai người lạ thật), 10% (hai diễn viên dửng dưng).'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: As predicted, Ss were less likely to report the smoke when in the presence of passive others (10%) or in groups of 3 (38% of groups) than when alone (75%).
+  vi_tri: Tóm tắt, tr. 215
+  ket_qua: dung
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Ba số đúng; câu hỏi không nói 38% tính theo nhóm, nhưng phương án đúng ghi "khi ngồi cùng hai người lạ thật" (đúng điều kiện); lượt 2 xem có cần thêm "tính theo nhóm".'
+- id: n45
+  cau: 'Câu hỏi 2: vô tri tập thể nghĩa là ai cũng nhìn người khác để đoán tình hình, thấy mọi người ngồi yên nên kết luận "chắc không sao"; lời giải thích: trong thí nghiệm khói, người không báo nói rằng họ đã kết luận khói không phải là lửa, và vẻ bình thản của người xung quanh dẫn họ tới cách hiểu ấy.'
+  loai: dinh-nghia
+  nguon:
+  - fischer2011
+  - latane1968
+  trich: Subjects who had not reported the smoke also were unsure about exactly what it was, but they uniformly said that they had rejected the idea that it was a fire.
+  vi_tri: 'Latané & Darley 1968, tr. 219 (Postexperimental interview); định nghĩa: Fischer 2011, tr. 518'
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ của lời giải thích: "Không ai vô cảm cả; họ chỉ đang đọc sai tín hiệu của nhau một cách có hệ thống" ("không ai" quá mạnh, không nguồn). Chữ mới theo phỏng vấn sau thí nghiệm. Hai phương án sai là gia-dinh.'
+- id: n46
+  cau: 'Câu hỏi 3: mô hình 5 bước (nhận thấy, hiểu là khẩn cấp, nhận trách nhiệm, tin mình biết cách giúp, quyết định giúp); lời giải thích: vấp ở bất kỳ bước nào là không có hành động; sự có mặt của người khác có thể cản ở nhiều bước.'
+  loai: lich-su
+  nguon:
+  - fischer2011
+  - latane1968
+  trich: They postulated that for intervention to occur, the bystander needs to (1) notice a critical situation, (2) construe the situation as an emergency, (3) develop a feeling of personal responsibility, (4) believe that he or she has the skills necessary to succeed, and (5) reach a conscious decision to help.
+  vi_tri: Fischer 2011, tr. 518; Latané & Darley 1968, tr. 219–220
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "biết cách giúp → quyết định hành động", lời giải thích "Đám đông khiến ta dễ vấp ở cả năm bước cùng lúc" (không nguồn); chữ mới như n23, n24.'
+- id: n47
+  cau: 'Câu hỏi 4: Fischer và cộng sự (2011) thấy hiệu ứng vẫn còn (g = −0,35) nhưng yếu đi khi nguy hiểm rõ ràng, chẳng hạn khi có kẻ gây hại có mặt.'
+  loai: so-lieu
+  nguon:
+  - fischer2011
+  trich: overall effect size of g = -0.35
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ của lời giải thích: "Khói mập mờ thì đám đông đóng băng; lửa cháy rõ ràng thì người ta xông vào"; chữ mới như ở nhận định Fischer. Chỗ khó (Claude Opus 5.5): phương án đúng của câu hỏi 4: "— có kẻ tấn công, nạn nhân bị đe dọa thân thể" đổi thành "— chẳng hạn khi có kẻ gây hại có mặt" (như n27).'
+- id: n48
+  cau: 'Câu hỏi 5: trong nghiên cứu ở phòng chat của Markey (2000), lời nhờ có gọi đích danh một người được trả lời nhanh hơn hỏi chung cả phòng; phòng đông người không còn làm chậm câu trả lời, còn hỏi chung thì phòng càng đông câu trả lời càng đến chậm.'
+  loai: loi-khuyen
+  nguon:
+  - markey2000
+  trich: the within-group correlation was r (200)=0.25, p<0.01 when help was requested without specifying a participant’s name and dropped to r (200)=0.03, p>0.05 when help was asked for by specifying a participant’s name
+  vi_tri: tr. 186, Results
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Nếu bạn gặp nạn giữa đám đông, cách kêu cứu hiệu quả nhất là gì? + Chỉ đích danh một người… > Chỉ đích danh gom 100% trách nhiệm…" (không nguồn, "hiệu quả nhất" và "100%" quá mạnh). Câu hỏi mới hỏi điều Markey 2000 thấy. Phương án sai là gia-dinh.'
+- id: n49
+  cau: 'Hình "bystander-smoke": tỉ lệ báo khói trong vòng 6 phút: một mình 75%; cùng 2 người lạ 38% (tính theo nhóm, 3/8 nhóm); cùng 2 diễn viên dửng dưng 10%; chú thích và aria-label cùng số.'
+  loai: so-lieu
+  nguon:
+  - latane1968
+  trich: As predicted, Ss were less likely to report the smoke when in the presence of passive others (10%) or in groups of 3 (38% of groups) than when alone (75%).
+  vi_tri: 'Tóm tắt, tr. 215; 3/8 nhóm: tr. 218; 6 phút: tr. 217 (Method)'
+  ket_qua: dung
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Đã đối chiếu từng số của hình (cột, nhãn, chú thích, aria-label) với bài gốc: đúng cả bốn (75%, 38% theo nhóm, 3/8, 10%) và mốc 6 phút (tính từ lúc nhận ra khói). "Diễn viên dửng dưng cắm cúi viết" khớp cách diễn ("returned to the questionnaires and continued to fill them out"). Không sửa hình, không thêm vào HINH_DA_SUA.'
+- id: n50
+  cau: 'Trang này là trang nhà của nghiên cứu Darley–Latané: nơi khác chỉ tóm một câu và link về.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id darley-latane, nguon [darley1968, latane1968, latane1970], trang_nha: thi-nghiem/darley-latane.'
+- id: n51
+  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn của trang.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đã kiểm trong src/plugins/thanh-phan.mjs (tomTat) và psyche-markdown.mjs.
+- id: n52
+  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ dùng điều đã có trong phần kể nghiên cứu của chính trang.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Bốn dòng khớp mục Nghiên cứu then chốt (Darley và Latané 1968, co giật).
+- id: n53
+  cau: Trang liên kết tới "cách đọc độ lớn hiệu ứng" (/psyche/bang-chung/do-lon-hieu-ung/).
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Trang có trong src/data/trang.yml (bang-chung/do-lon-hieu-ung); chưa có file nên hiện "sắp có" khi build (đã có trang khác dùng cùng link).
+- id: n54
+  cau: Phỏng vấn sau thí nghiệm khói, những người không báo đều nói họ đã gạt ý nghĩ đó là lửa; nhiều người đoán là hơi nước hay hơi máy điều hòa.
+  loai: phat-hien
+  nguon:
+  - latane1968
+  trich: they uniformly said that they had rejected the idea that it was a fire. Instead, they hit upon an astonishing variety of alternative explanations … Many thought the smoke was either steam or air-conditioning vapors
+  vi_tri: tr. 219, Postexperimental interview
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Câu mới thêm vào mục thí nghiệm khói (chữ cũ: không có), làm căn cứ cho định nghĩa vô tri tập thể và câu hỏi 2.'
+- id: n55
+  cau: Trong nghiên cứu của Markey (2000), 400 phòng chat được chọn ngẫu nhiên; lời nhờ có gọi tên được trả lời sau trung bình khoảng 36 giây, lời nhờ chung sau khoảng 52 giây.
+  loai: so-lieu
+  nguon:
+  - markey2000
+  trich: Over a 30-day period, 400 different chat groups were randomly selected … assistance was received more quickly when help was asked for by specifying a participant’s name (M=36.38 s) than when no name was specified (M=51.53 s)
+  vi_tri: tr. 185–186
+  ket_qua: da-sua
+  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Số mới thêm (chữ cũ: không có), tách khỏi n36 để lượt 2 kiểm riêng; 36,38 và 51,53 giây làm tròn thành "khoảng 36" và "52".'
+doi_chu:
+- cu: (không có)
+  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+  ly_do: Bố cục C (kế hoạch).
+- cu: (không có)
+  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
+  ly_do: Bố cục C (kế hoạch).
+- cu: 'Thí nghiệm khói: "Người tham gia ngồi điền phiếu trong phòng… Ở một mình: 75% báo khói trong 6 phút… 38% (tính theo nhóm — 3/8 nhóm…)… 10% — và nhiều người trong số 90% còn lại thậm chí dụi mắt vì cay mà vẫn ngồi yên."'
+  moi: Thêm người tham gia, 18/24, "kể từ lúc nhận ra khói", 1/10, cách diễn của người cộng tác; "9 người còn lại… ho, dụi mắt, mở cửa sổ, nhưng không đi báo"; thêm câu phỏng vấn sau thí nghiệm (hơi nước, hơi máy điều hòa).
+  ly_do: Đối chiếu toàn văn Latané & Darley (1968), tr. 217–219 (hồ sơ n15–n19, n54).
+- cu: 'Tự trải nghiệm và ô "Xem đáp án": "khói xám bốc lên từ khe cửa thông gió"; "75%… trong vòng 6 phút"; "38% — tính theo nhóm (…tính theo từng cá nhân thì thấp hơn, vì mỗi nhóm dừng ngay khi có người đầu tiên lên tiếng)".'
+  moi: '"khói trắng… lỗ thông gió trên tường"; "trong vòng 6 phút kể từ lúc nhận ra khói"; "1 trong 10 người"; "chỉ 3 trong 8 nhóm (38%)…, dù… hơn 98% số nhóm phải có ít nhất một người báo. Tính theo từng người: 3 trong 24 người."'
+  ly_do: 'Bài gốc: khói trắng, lỗ thông gió; lý do "mỗi nhóm dừng" sai ý bài (hồ sơ n20–n22).'
+- cu: 'Mô hình 5 bước: "Từ chuỗi thí nghiệm, hai ông rút ra… (4) biết cách giúp, (5) quyết định hành động. Vấp ở bất kỳ bước nào — và đám đông khiến ta dễ vấp ở cả 5 bước — là không có hành động nào xảy ra."'
+  moi: '"Để giải thích hiệu ứng, Latané và Darley (1970) đề xuất… (theo Fischer và cộng sự, 2011, kể lại)… (4) tin mình biết cách giúp, (5) quyết định giúp"; thêm điều hai bài 1968 cho thấy ở ba bước đầu (63% so với 26% nhận ra khói trong 5 giây đầu).'
+  ly_do: Sách 1970 chưa đọc; Fischer 2011 tr. 518; Latané & Darley 1968 tr. 219–220 (hồ sơ n23, n24).
+- cu: 'Khung Vững chắc, câu cuối: "Mô hình 5 bước là khung giải thích được dùng rộng rãi."'
+  moi: '"Còn những quá trình tâm lý nào đứng sau hiệu ứng thì, theo Fischer và cộng sự, các nghiên cứu vẫn chưa rõ ràng."'
+  ly_do: Fischer 2011 tr. 518 (hồ sơ n25).
+- cu: 'Áp dụng vào đời sống: "Các gợi ý dưới đây suy ra từ cơ chế…"; "Nếu bạn là nạn nhân… gom 100% trách nhiệm…"; "Nếu bạn là người chứng kiến: đặt tên cho tình huống thành tiếng…"; "Chuẩn bị trước: mô hình 5 bước cho ta một danh sách…"'
+  moi: 'Câu mở nói rõ các nghiên cứu không làm trong tình huống khẩn cấp thật; "Nếu bạn cần giúp: gọi đích danh…" kèm Markey (2000); "Nếu bạn là người chứng kiến: nói với người bên cạnh…" kèm Fischer (2011); "Biết về hiệu ứng" kèm Beaman và cộng sự (1978) theo Fischer kể lại. Thêm Markey (2000) vào mục Nguồn.'
+  ly_do: Lời khuyên phải có nguồn (chuẩn mục 1); hồ sơ n36–n38, n55.
+- cu: 'Câu hỏi 2, 3, 5: lời giải thích "Không ai vô cảm cả…"; "Đám đông khiến ta dễ vấp ở cả năm bước cùng lúc"; câu 5 "cách kêu cứu hiệu quả nhất… gom 100% trách nhiệm".'
+  moi: Câu 2 giải thích theo phỏng vấn sau thí nghiệm khói; câu 3 theo Fischer và bài khói; câu 5 hỏi điều Markey (2000) thấy ở phòng chat.
+  ly_do: Hồ sơ n45, n46, n48.
+- cu: 'Fischer và câu hỏi 4: "có kẻ tấn công xuất hiện, nạn nhân bị đe dọa thân thể"'
+  moi: '"tình huống được nhận là nguy hiểm, có kẻ gây hại có mặt"; câu hỏi 4: "chẳng hạn khi có kẻ gây hại có mặt"'
+  ly_do: Toàn văn Fischer 2011 không có biến "nạn nhân bị đe dọa thân thể" (hồ sơ n27, n47).
