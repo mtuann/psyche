@@ -152,8 +152,9 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 			// scrollable-region-focusable, trang Hỗ trợ ở 360 px); mỗi vùng một tên riêng (landmark-unique)
 			table(node) {
 				if (node.data?.pzBoc) return;
-				node.data = { ...node.data, pzBoc: true };
-				return khoi('div', { className: ['pz-bang'], tabIndex: 0, role: 'region', ariaLabel: `Bảng ${++soBang}, cuộn ngang được` }, [node]);
+				// bọc bản sao của nút (Sätteri không nhận nút trả về chứa chính nó khi trong bảng có nút khác được sửa, như :nhan[…])
+				const bang = { ...node, data: { ...node.data, pzBoc: true } };
+				return khoi('div', { className: ['pz-bang'], tabIndex: 0, role: 'region', ariaLabel: `Bảng ${++soBang}, cuộn ngang được` }, [bang]);
 			},
 			code(node) {
 				if (node.lang !== 'quiz') return;
