@@ -69,7 +69,7 @@ Từ D1.6, như opus:
 - `npm run build:xem` (biến môi trường `PSYCHE_BAN=xem`): thêm trang chưa khóa, mỗi trang có dải "Chưa kiểm định" ở đầu. Không đăng ở đâu; CI của nhánh dựng bản này.
 - Link tới trang không có trong bản đang dựng thành chữ "sắp có" (D1.5), cả link do JavaScript sinh.
 
-Trước D1.6 hai lệnh dựng như nhau (chưa có trang nào cần lọc).
+Làm ở D1.6 (`src/khoa.mjs`, `src/ban-build.mjs`, `tools/khoa.mjs`; lệnh ở `AGENTS.md`, mục Khóa).
 
 ## 6. Tìm kiếm
 

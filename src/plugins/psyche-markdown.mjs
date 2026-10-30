@@ -12,6 +12,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { duLieuDaKiem } from '../du-lieu.mjs';
+import { docKhoa } from '../khoa.mjs';
 import { TEN_NHAN, chipNhan, congCu, danhSachNguon, hinh, quiz } from './thanh-phan.mjs';
 
 /** Aside của Starlight: không đụng tới. */
@@ -74,8 +75,11 @@ function loiThuocTinh(ten, { thuocTinh = [] }, tt) {
 	return thieu.length ? `::${ten} thiếu thuộc tính ${thieu.join(', ')}, ví dụ ::${ten}{${thieu[0]}="…"}` : null;
 }
 
-/** @param {{ docsDir: string }} opts docsDir: thư mục trang (src/content/docs), để biết đường dẫn của trang đang dựng. */
-export function psycheMarkdown({ docsDir }) {
+/**
+ * @param {{ docsDir: string, khoa?: () => { trang: object } }} opts docsDir: thư mục trang (src/content/docs), để biết
+ *   đường dẫn của trang đang dựng; khoa: đọc kiem-dinh/khoa.json (kiểm thử thay bằng bản giả).
+ */
+export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 	return ({ fileURL }) => {
 		const file = fileURL ? fileURLToPath(fileURL) : '';
 		const trang = path.relative(docsDir, file).replace(/\\/g, '/').replace(/\.mdx?$/, '');
@@ -114,11 +118,16 @@ export function psycheMarkdown({ docsDir }) {
 				if (node.children?.length) throw loi(`::${node.name} không nhận chữ, viết "::${node.name}{…}" trên một dòng riêng`);
 				const sai = loiThuocTinh(node.name, muc, tt);
 				if (sai) throw loi(sai);
+				let html;
 				try {
-					return { type: 'html', value: muc.ve({ tt, trang }) };
+					html = muc.ve({ tt, trang });
 				} catch (e) {
 					throw loi(e.message);
 				}
+				// ô "chưa chuyển" chỉ ở trang chưa khóa (bản xem): trang đã khóa phải có đủ hình, công cụ
+				if (html.includes('data-chua-chuyen=') && trang in khoa().trang)
+					throw loi(`trang đã khóa mà ::${node.name}{ten="${tt.ten}"} chưa có trên site mới: làm thành phần (hình: src/hinh/${tt.ten}.html) trước khi khóa`);
+				return { type: 'html', value: html };
 			},
 		};
 	};

@@ -1,12 +1,12 @@
 // @ts-check
 // Cấu hình site Psyche (Astro và Starlight). Phiên bản và lý do: plans/lam-lai/cong-nghe.md.
 // D1.1: khung, font, màu, tìm kiếm không dấu. D1.2: dữ liệu. D1.3: bố cục C (menu theo lĩnh vực, tiêu đề trang, trang chủ).
-// Thành phần, khóa và hai bản build thêm ở D1.4–D1.6.
+// D1.4: thành phần. D1.5: chuyển trang, "sắp có", 404. D1.6: khóa, bản thật (chỉ trang đã khóa) và bản xem.
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { satteri } from '@astrojs/markdown-satteri';
-import { DUONG_GOC, trangTrongBan } from './src/ban-build.mjs';
+import { DUONG_GOC, chiTrangTrongBan, trangTrongBan } from './src/ban-build.mjs';
 import { duLieuDaKiem } from './src/du-lieu.mjs';
 import { menu } from './src/menu.mjs';
 import { idCu } from './src/plugins/id-cu.mjs';
@@ -42,7 +42,8 @@ export default defineConfig({
 		// khung nhãn, chip nhãn, khối thu gọn, khung "Ở Việt Nam", khối ```quiz, chỉ thị ::cong-cu, ::hinh, ::nguon (cú pháp:
 		// AGENTS.md, mục "Mẫu trang và khối đặc biệt").
 		processor: satteri({
-			mdastPlugins: [psycheMarkdown({ docsDir: fileURLToPath(new URL('./src/content/docs/', import.meta.url)) })],
+			// bản thật: trang chưa khóa không qua plugin của dự án (chiTrangTrongBan)
+			mdastPlugins: [chiTrangTrongBan(psycheMarkdown({ docsDir: fileURLToPath(new URL('./src/content/docs/', import.meta.url)) }))],
 			// id tiêu đề theo kiểu site cũ, để link #mục cũ vẫn đúng, chạy trước plugin id của Starlight; link tới trang chưa có
 			// trong bản build thành chữ "sắp có" (D1.5)
 			hastPlugins: [idCu(), sapCo({ base: DUONG_GOC, trangCo: trangTrongBan })],
@@ -68,6 +69,7 @@ export default defineConfig({
 			sidebar: menu(trangTrongBan(), duLieu.trang, duLieu['linh-vuc']),
 			customCss: ['./src/styles/fonts.css', './src/styles/psyche.css', './src/styles/thanh-phan.css'],
 			components: {
+				Banner: './src/components/Banner.astro',
 				Footer: './src/components/Footer.astro',
 				Hero: './src/components/Hero.astro',
 				MarkdownContent: './src/components/MarkdownContent.astro',

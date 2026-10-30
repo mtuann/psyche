@@ -8,8 +8,9 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { docsLoader, i18nLoader } from '@astrojs/starlight/loaders';
 import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
-import { dungLaiKhiDoi } from './ban-build.mjs';
+import { dungLaiKhiDoi, locTheoBan } from './ban-build.mjs';
 import { boNap, frontmatterRieng, schema, trangChuaDangKy } from './du-lieu.mjs';
+import { kiemKhoa } from './khoa.mjs';
 
 // Đọc và kiểm toàn bộ dữ liệu ngay khi nạp cấu hình; sai thì ném lỗi tại đây. Trang chưa có trong trang.yml cũng vậy.
 const chuaDangKy = trangChuaDangKy();
@@ -23,12 +24,17 @@ const boSung = () => {
 	return { ...g, load: async (ctx: Parameters<typeof g.load>[0]) => (co() ? g.load(ctx) : ctx.store.clear()) };
 };
 
+// Trang, bản ghi đã khóa mà đổi thì build hỏng, ở cả hai bản (D1.6), kèm cách mở khóa
+const lechKhoa = kiemKhoa();
+if (lechKhoa.length) throw new Error(`Khóa lệch (kiem-dinh/khoa.json):\n- ${lechKhoa.join('\n- ')}`);
+
 const duLieu = (ten: keyof typeof schema) => defineCollection({ loader: boNap(ten), schema: schema[ten] });
 
 export const collections = {
-	// dựng lại mọi trang khi dữ liệu, plugin, hình, khóa hay danh sách trang đổi (dungLaiKhiDoi, src/ban-build.mjs)
+	// dựng lại mọi trang khi dữ liệu, plugin, hình, khóa hay danh sách trang đổi (dungLaiKhiDoi, src/ban-build.mjs); bản
+	// thật bỏ trang chưa khóa (locTheoBan)
 	docs: defineCollection({
-		loader: dungLaiKhiDoi(docsLoader()),
+		loader: dungLaiKhiDoi(locTheoBan(docsLoader())),
 		// in_duoc: trang vào Sách in (như site cũ; Sách in sinh lúc build ở đợt 8)
 		schema: docsSchema({ extend: frontmatterRieng.extend({ in_duoc: z.boolean().optional() }) }),
 	}),

@@ -1,10 +1,12 @@
 // Trang nào có trong bản build hiện tại, và địa chỉ của trang. Chép từ ../opus/src/ban-build.mjs rồi sửa cho Psyche.
-// D1.3: mọi trang trong src/content/docs/ (trừ 404) có trong cả hai bản build. D1.6 thêm khóa: bản thật (npm run build) chỉ
-// có trang đã khóa trong kiem-dinh/khoa.json; bản xem (npm run build:xem, npm run dev) có mọi trang.
+// Bản thật (npm run build): chỉ trang đã khóa trong kiem-dinh/khoa.json (D1.6); bản xem (npm run build:xem, npm run dev):
+// mọi trang trong src/content/docs/, trang chưa khóa có dải "Chưa kiểm định" (src/components/Banner.astro). Link tới
+// trang không có trong bản build hiện chữ "sắp có" (src/plugins/sap-co.mjs).
 import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { docKhoa } from './khoa.mjs';
 
 const GOC = fileURLToPath(new URL('../', import.meta.url));
 const DOCS = fileURLToPath(new URL('./content/docs/', import.meta.url));
@@ -13,8 +15,8 @@ const DOCS = fileURLToPath(new URL('./content/docs/', import.meta.url));
 export const DUONG_GOC = '/psyche/';
 
 /**
- * Bản build đang dựng: "that" (bản thật, mặc định) hay "xem" (bản xem). Đặt bằng biến môi trường PSYCHE_BAN
- * (npm run build:xem, npm run dev).
+ * Bản build đang dựng: "that" (bản thật, mặc định: chỉ trang đã khóa) hay "xem" (bản xem: mọi trang). Đặt bằng biến môi
+ * trường PSYCHE_BAN (npm run build:xem, npm run dev).
  */
 export const ban = () => (process.env.PSYCHE_BAN === 'xem' ? 'xem' : 'that');
 
@@ -29,9 +31,10 @@ export function tatCaTrang(docs = DOCS) {
 		.sort();
 }
 
-/** Trang có trong bản build hiện tại, không tính trang 404. */
+/** Trang có trong bản build hiện tại (theo ban()), không tính trang 404. */
 export function trangTrongBan() {
-	return tatCaTrang().filter((t) => t !== '404');
+	const khoa = docKhoa().trang;
+	return tatCaTrang().filter((t) => t !== '404' && (ban() === 'xem' || t in khoa));
 }
 
 /** Địa chỉ của một trang: "thi-nghiem/asch" -> "/psyche/thi-nghiem/asch/", "thi-nghiem/index" -> "/psyche/thi-nghiem/". */
@@ -91,5 +94,44 @@ export function dungLaiKhiDoi(loader) {
 			}
 			await loader.load(ctx);
 		},
+	};
+}
+
+/**
+ * Bọc bộ nạp trang: ở bản thật, bỏ trang chưa khóa khỏi bộ docs, nên Starlight không dựng trang, không đưa vào menu, tìm
+ * kiếm hay sitemap. Trang 404 chỉ giữ khi đã khóa (không thì dùng trang 404 mặc định của Starlight). Chép từ opus.
+ */
+export function locTheoBan(loader) {
+	return {
+		...loader,
+		load: async (ctx) => {
+			await loader.load(ctx);
+			if (ban() === 'xem') return;
+			const khoa = docKhoa().trang;
+			for (const [id, muc] of ctx.store.entries()) {
+				const t = trangCuaMuc(muc);
+				if (t && !(t in khoa)) ctx.store.delete(id);
+			}
+		},
+	};
+}
+
+const BO = () => ({ type: 'html', value: '' });
+
+/**
+ * Bọc plugin Markdown (mdast) của dự án: ở bản thật, trang chưa khóa không qua plugin. Bộ nạp của Starlight dựng mọi trang
+ * rồi locTheoBan mới bỏ trang chưa khóa, nên không bọc thì lỗi cú pháp ở một khối của trang chưa khóa (không lên site)
+ * làm hỏng bản build đăng lên site. Ở trang ấy, khối mã và chỉ thị thành chỗ trống. Chép từ opus.
+ * @param {(ctx: { fileURL?: URL }) => object} plugin
+ */
+export function chiTrangTrongBan(plugin, docsDir = DOCS) {
+	return (ctx) => {
+		if (ban() !== 'xem' && ctx?.fileURL) {
+			const tuongDoi = path.relative(docsDir, fileURLToPath(ctx.fileURL));
+			const trongDocs = tuongDoi !== '' && tuongDoi.split(/[\\/]/)[0] !== '..' && !path.isAbsolute(tuongDoi);
+			const trang = tuongDoi.replace(/\\/g, '/').replace(/\.mdx?$/, '');
+			if (trongDocs && !(trang in docKhoa().trang)) return { name: 'psyche-bo-qua-trang-chua-khoa', code: BO, leafDirective: BO, containerDirective: BO };
+		}
+		return plugin(ctx);
 	};
 }

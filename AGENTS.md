@@ -22,8 +22,8 @@ Node theo `.nvmrc` (24; Astro 7.4 cần Node từ 22.23.4). Phiên bản gói gh
 ```bash
 npm ci            # cài đúng các gói trong package-lock.json
 npm run dev       # máy chủ thử, tự tải lại khi sửa: http://localhost:4321/psyche/ (tìm kiếm chỉ chạy ở bản build)
-npm run build     # bản thật vào dist/ (từ D1.6: chỉ trang đã khóa); deploy dùng bản này
-npm run build:xem # bản xem vào dist/ (từ D1.6: thêm trang chưa khóa, có dải "Chưa kiểm định"); không đăng
+npm run build     # bản thật vào dist/: chỉ trang đã khóa; deploy dùng bản này
+npm run build:xem # bản xem vào dist/: thêm trang chưa khóa, có dải "Chưa kiểm định"; không đăng
 npm run preview   # xem dist/ vừa build: http://localhost:4321/psyche/
 npm test          # kiểm thử trên dist/: chạy sau npm run build hay npm run build:xem
 npm run test:trinh-duyet  # kiểm thử trình duyệt trên trang mẫu của dist/: ba trình duyệt, ba cỡ màn hình, axe, tìm kiếm
@@ -80,7 +80,20 @@ Dùng model hợp việc, không phải lúc nào cũng dùng model mạnh nhấ
 
 ## Khóa
 
-Từ D1.6, như opus (`../opus/AGENTS.md`, mục Khóa): trang và bản ghi dữ liệu lên site thật khi đã khóa (mã băm trong `kiem-dinh/khoa.json`, hồ sơ trong `kiem-dinh/<trang>.yml`; `plans/ben-vung/chuan-kiem-dinh.md` mục 6–8). Trang đã khóa mà đổi thì build hỏng; sửa theo thủ tục mở khóa. Lệnh (`tools/khoa.mjs`) ghi vào đây khi D1.6 xong.
+Từ D1.6, như opus: trang và bản ghi dữ liệu lên site thật khi đã khóa (mã băm trong `kiem-dinh/khoa.json`, hồ sơ trong `kiem-dinh/<trang>.yml`, bản ghi `kiem-dinh/du-lieu/<bộ>/<id>.yml`; `plans/ben-vung/chuan-kiem-dinh.md` mục 6–8). Trang đã khóa mà đổi thì build hỏng (cả hai bản), kèm lệnh mở khóa. Mã: `src/khoa.mjs` (mã băm: NFC, `\n`, bỏ khoảng trắng cuối dòng), `src/ban-build.mjs` (bản thật bỏ trang chưa khóa), `src/components/Banner.astro` (dải "Chưa kiểm định" ở bản xem).
+
+```bash
+node tools/khoa.mjs mau <mục>…                 # hồ sơ mẫu (mục: thi-nghiem/asch, index, 404, du-lieu/nguon/asch1956[#nam,tac_gia])
+node tools/khoa.mjs khoa <mục>…                # kiểm hồ sơ đủ rồi ghi mã băm vào khoa.json và vào lần cuối của hồ sơ
+node tools/khoa.mjs mo <mục> --ly-do "…"       # mở khóa: ghi lý do, thêm lần kiểm định mới
+node tools/khoa.mjs tinh [<mục>…]              # mã băm; không có mục thì kiểm mọi mục đã khóa
+node tools/khoa.mjs xuat D3-L1                 # danh sách nhận định cho lượt 2 (theo mức của tầng); --mau 5: kiểm mẫu của chủ repo
+node tools/khoa.mjs nhap <file lượt 2>         # đưa kết quả lượt 2 vào hồ sơ
+```
+
+- Khóa đòi: mọi nhận định có `loai` (chuẩn mục 1), `ket_qua` (`dung`, `da-sua`, `da-lam-mem`, `da-bo`; ba loại sau cần `ghi_chu`), nguồn có trong `nguon` của hồ sơ, lượt 2 theo tầng (lõi: mọi nhận định; mở rộng: 8 nhận định ngẫu nhiên cộng mọi `nhan`, `lam-sang`, mẫu có câu sai thì kiểm hết); nhãn có `nhan`, `co_so`, `ly_do`; thời sự có `het_han`; câu `ve-site` không qua lượt 2 mà có `review`; `tang` của hồ sơ khớp `trang.yml`; trang Sức khỏe tâm thần có `nguoi.chuyen_gia`; bài mở rộng có `dua_tren`, `kiem_lai_truoc` ở `trang.yml`; trang không còn ô "chưa chuyển", không có khoảng trắng cuối dòng.
+- Trang chủ tạm và trang 404 đã khóa (D1.6, hồ sơ không có nhận định, có `ghi_chu`).
+- Nhánh lô `moi/dN-lM` chỉ chạm phạm vi của lô (`tests/pham-vi.test.mjs`, trang lấy từ `plans/lam-lai/anh-xa.md`).
 
 ## Giao diện
 

@@ -1,0 +1,255 @@
+// Kiểm thử khóa (D1.6): mã băm (chuẩn hóa nguồn, JSON của bản ghi), mọi mục trong kiem-dinh/khoa.json còn khớp và có hồ sơ
+// đủ, luật của hồ sơ (chuan-kiem-dinh.md mục 3, 6), công cụ tools/khoa.mjs (mẫu, khóa, tính, mở, xuất, nhập) trên một bản
+// chép nhỏ, lọc trang theo bản build, và trên bản build: bản thật không có trang chưa khóa; trang chưa khóa (chỉ ở bản xem)
+// có dải "Chưa kiểm định". Khung chép từ ../opus/tests/khoa.test.mjs.
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { parse, stringify } from 'yaml';
+import { locTheoBan } from '../src/ban-build.mjs';
+import { chuanHoaTrang, docKhoa, jsonChuan, kiemKhoa, maBamBanGhi, maBamTrang } from '../src/khoa.mjs';
+import { MAU_MO_RONG, lenh, loiHoSo } from '../tools/khoa.mjs';
+
+const ROOT = path.resolve(import.meta.dirname, '..');
+const DIST = path.join(ROOT, 'dist');
+
+test('mã băm của trang không đổi theo Unicode tổ hợp hay dựng sẵn, kiểu xuống dòng, khoảng trắng cuối dòng, dòng trống cuối file', () => {
+	const goc = '---\ntitle: A\n---\n\nChữ.\n';
+	assert.equal(chuanHoaTrang('---\r\ntitle: A  \r\n---\r\n\r\nChữ.\t\r\n\r\n\r\n'), goc);
+	assert.equal(maBamTrang(goc), maBamTrang('---\ntitle: A\n---\n\nChữ.'));
+	assert.equal(maBamTrang(goc), maBamTrang(goc.normalize('NFD')), 'NFC và NFD cùng mã băm');
+	assert.notEqual(maBamTrang(goc), maBamTrang(goc.replace('Chữ.', 'Chữ!')));
+	assert.match(maBamTrang(goc), /^sha256:[0-9a-f]{64}$/);
+	assert.equal(maBamBanGhi({ id: 'x', ten: 'A' }), maBamBanGhi({ ten: 'A', id: 'x' }));
+	assert.equal(jsonChuan({ b: 1, a: { d: [2, { y: 1, x: 2 }] } }), '{"a":{"d":[2,{"x":2,"y":1}]},"b":1}');
+});
+
+test('mọi mục trong kiem-dinh/khoa.json còn khớp mã băm và có hồ sơ đủ; trang 404 luôn khóa', () => {
+	assert.deepEqual(kiemKhoa(), []);
+	const { trang, ban_ghi } = docKhoa();
+	assert.ok('404' in trang, 'trang 404 phải được khóa (D1.6)');
+	for (const muc of [...Object.keys(trang), ...Object.keys(ban_ghi).map((k) => `du-lieu/${k}`)]) {
+		const f = path.join(ROOT, 'kiem-dinh', `${muc.split('#')[0]}.yml`);
+		assert.ok(fs.existsSync(f), `${muc}: thiếu hồ sơ kiem-dinh/${muc}.yml`);
+		const hs = parse(fs.readFileSync(f, 'utf8'));
+		assert.deepEqual(loiHoSo(hs, muc, ROOT), [], `hồ sơ của ${muc} chưa đủ`);
+		if (!muc.startsWith('du-lieu/')) assert.equal(hs.lan.at(-1).ma_bam, trang[muc], `${muc}: lần cuối trong hồ sơ phải ghi mã băm đang khóa`);
+	}
+});
+
+/** Bản chép nhỏ của repo trong thư mục tạm; `ghi(f, chữ)`, `chay(...tham số)`. */
+function banChep() {
+	const goc = fs.mkdtempSync(path.join(os.tmpdir(), 'psyche-khoa-'));
+	const ghi = (f, chu) => {
+		fs.mkdirSync(path.dirname(path.join(goc, f)), { recursive: true });
+		fs.writeFileSync(path.join(goc, f), chu);
+	};
+	const chay = (...ts) => lenh([...ts, '--goc', goc], ROOT, () => {});
+	return { goc, ghi, chay, xoa: () => fs.rmSync(goc, { recursive: true, force: true }) };
+}
+
+const NGUOI = { luot_1: 'agent A', luot_2: 'agent B', review: 'Claude', kiem_mau: 'chủ repo, 1/1' };
+const nd = (them = {}) => ({ id: 'n1', cau: 'Câu.', loai: 'phat-hien', nguon: ['asch1956'], luot_2: 'dung', ket_qua: 'dung', ...them });
+const hoSo = (muc, tang, nhanDinh, them = {}) => ({
+	trang: `src/content/docs/${muc}.md`,
+	tang,
+	lan: [{ so: 1, ngay: null, nhanh: 'x', ma_bam: null, nguoi: NGUOI }],
+	nguon: [{ id: 'asch1956' }],
+	nhan_dinh: nhanDinh,
+	...them,
+});
+
+test('luật của hồ sơ: loại, kết quả, nguồn, lượt 2, nhãn có cơ sở, thời sự có hạn, câu về chính site, tầng khớp trang.yml', () => {
+	const { goc, ghi, xoa } = banChep();
+	try {
+		ghi('src/data/trang.yml', '- id: thi-nghiem/a\n  tang: loi\n  linh_vuc: tam-ly-xa-hoi\n');
+		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\nChữ.\n');
+		const loi = (ds, them) => loiHoSo(hoSo('thi-nghiem/a', 'loi', ds, them), 'thi-nghiem/a', goc);
+		assert.deepEqual(loi([nd()]), []);
+		assert.match(loi([nd({ loai: 'khac' })]).join(), /loai phải là/);
+		assert.match(loi([nd({ ket_qua: 'khong-can-nguon' })]).join(), /ket_qua phải là dung, da-sua, da-lam-mem, da-bo/);
+		assert.match(loi([nd({ luot_2: null })]).join(), /chưa có kết quả lượt 2/);
+		assert.match(loi([nd({ nguon: ['khac2000'] })]).join(), /nguồn "khac2000" không có/);
+		assert.match(loi([nd({ ket_qua: 'da-lam-mem' })]).join(), /da-lam-mem cần ghi_chu/);
+		assert.match(loi([nd({ loai: 'nhan' })]).join(), /cần nhan.*cần co_so.*cần ly_do/);
+		assert.deepEqual(loi([nd({ loai: 'nhan', nhan: 'kha-vung', co_so: ['bond1996'], ly_do: 'Phân tích tổng hợp.' })]), []);
+		assert.match(loi([nd({ loai: 'thoi-su' })]).join(), /cần het_han/);
+		assert.match(loi([nd({ loai: 've-site', luot_2: null })]).join(), /không ghi nguồn ngoài.*cần ghi_chu.*cần kết quả review/);
+		assert.deepEqual(loi([nd({ loai: 've-site', luot_2: null, nguon: [], ghi_chu: 'Kiểm trên trang.', review: 'dung' })]), []);
+		assert.match(loi([nd(), nd()]).join(), /n1: id trùng/);
+		assert.match(loiHoSo(hoSo('thi-nghiem/a', 'mo-rong', [nd()]), 'thi-nghiem/a', goc).join(), /tang: mo-rong mà src\/data\/trang.yml ghi loi/);
+		assert.match(loi([]).join(), /chưa có nhận định nào/);
+		// trang còn ô "chưa chuyển", hay có khoảng trắng cuối dòng
+		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\n::cong-cu{ten="linda"}\n\n::hinh{ten="khong-co"}\n\nChữ. \n');
+		const l = loi([nd()]).join('\n');
+		assert.match(l, /::cong-cu\{ten="linda"\} chưa có/);
+		assert.match(l, /::hinh\{ten="khong-co"\} chưa có/);
+		assert.match(l, /khoảng trắng cuối dòng/);
+	} finally {
+		xoa();
+	}
+});
+
+test('luật của hồ sơ: trang Sức khỏe tâm thần cần chữ ký chuyên gia; bài mở rộng cần dua_tren, hạn xem lại, lượt 2 kiểm mẫu', () => {
+	const { goc, ghi, xoa } = banChep();
+	try {
+		ghi(
+			'src/data/trang.yml',
+			'- id: kham-pha/suc-khoe-tam-than/tram-cam\n  tang: loi\n  linh_vuc: suc-khoe-tam-than\n- id: kham-pha/tri-nho/phong-cach-hoc\n  tang: mo-rong\n  linh_vuc: tri-nho\n',
+		);
+		const sk = 'kham-pha/suc-khoe-tam-than/tram-cam';
+		ghi(`src/content/docs/${sk}.md`, '---\ntitle: A\n---\n\nChữ.\n');
+		assert.match(loiHoSo(hoSo(sk, 'loi', [nd()]), sk, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
+		const co = hoSo(sk, 'loi', [nd()]);
+		co.lan[0].nguoi = { ...NGUOI, chuyen_gia: 'BS. X, 2027-01-05' };
+		assert.deepEqual(loiHoSo(co, sk, goc), []);
+
+		const mr = 'kham-pha/tri-nho/phong-cach-hoc';
+		ghi(`src/content/docs/${mr}.md`, '---\ntitle: A\n---\n\nChữ.\n');
+		const nhieu = Array.from({ length: 12 }, (_, i) => nd({ id: `n${i}`, luot_2: null }));
+		const l = loiHoSo(hoSo(mr, 'mo-rong', nhieu), mr, goc).join('\n');
+		assert.match(l, /chưa có dua_tren/);
+		assert.match(l, /chưa có kiem_lai_truoc/);
+		assert.match(l, new RegExp(`kiểm mẫu ít nhất ${MAU_MO_RONG} nhận định \\(mới có 0\\)`));
+		ghi('src/data/trang.yml', `- id: ${mr}\n  tang: mo-rong\n  linh_vuc: tri-nho\n  dua_tren: [kham-pha/tri-nho/vi-sao-ta-quen]\n  kiem_lai_truoc: 2028-01\n`);
+		nhieu.slice(0, MAU_MO_RONG).forEach((n) => (n.luot_2 = 'dung'));
+		assert.deepEqual(loiHoSo(hoSo(mr, 'mo-rong', nhieu), mr, goc), []);
+		// mẫu có câu sai thì lượt 2 kiểm cả trang; nhận định loại nhan, lam-sang luôn qua lượt 2
+		nhieu[0].luot_2 = 'sai';
+		nhieu[0].ghi_chu = 'đã giải quyết';
+		assert.match(loiHoSo(hoSo(mr, 'mo-rong', nhieu), mr, goc).join(), /phải kiểm cả trang \(mới có 8\/12\)/);
+		const ls = [...nhieu.slice(1, MAU_MO_RONG), nd({ id: 'ls', loai: 'lam-sang', luot_2: null })];
+		assert.match(loiHoSo(hoSo(mr, 'mo-rong', ls), mr, goc).join(), /nhận định ls: chưa có kết quả lượt 2/);
+	} finally {
+		xoa();
+	}
+});
+
+test('công cụ khóa trên bản chép nhỏ: mẫu, khóa (đòi hồ sơ đủ), tính, mở khóa (ghi lý do, thêm lần mới), khóa lại, xuất, nhập', () => {
+	const { goc, ghi, chay, xoa } = banChep();
+	try {
+		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\nChữ.\n');
+		ghi('src/data/trang.yml', '- id: thi-nghiem/a\n  tang: loi\n  linh_vuc: tam-ly-xa-hoi\n');
+		ghi('src/data/nguon.yml', '- id: asch1956\n  loai: bai-bao\n  tac_gia: Asch, S. E.\n  nam: 1956\n  ten: Studies\n');
+		ghi('plans/lam-lai/anh-xa.md', '## D9-L1 (1 trang)\n\n| Trang | Tầng |\n|---|---|\n| `thi-nghiem/a` | loi |\n\n## D9-L2 (0 trang)\n');
+		const f = path.join(goc, 'kiem-dinh/thi-nghiem/a.yml');
+		const doc = () => parse(fs.readFileSync(f, 'utf8'));
+		const ghiHs = (hs) => fs.writeFileSync(f, stringify(hs));
+
+		chay('mau', 'thi-nghiem/a');
+		assert.equal(doc().tang, 'loi');
+		assert.equal(doc().muc, 'V3');
+		assert.throws(() => chay('mau', 'thi-nghiem/a'), /đã có/);
+		assert.throws(() => chay('khoa', 'thi-nghiem/a'), /hồ sơ chưa đủ để khóa:[\s\S]*thiếu nguoi.luot_1[\s\S]*chưa có nhận định/);
+		ghiHs({ ...doc(), lan: [{ ...doc().lan[0], nguoi: NGUOI }], nguon: [{ id: 'asch1956' }], nhan_dinh: [nd({ luot_2: null })] });
+
+		// xuất danh sách cho lượt 2 (theo lô), nhập kết quả
+		chay('xuat', 'D9-L1', '--ra', 'ra.yml');
+		const xuat = parse(fs.readFileSync(path.join(goc, 'ra.yml'), 'utf8'));
+		assert.deepEqual(xuat, [{ trang: 'thi-nghiem/a', id: 'n1', cau: 'Câu.', loai: 'phat-hien' }]);
+		ghi('luot2.yml', stringify([{ trang: 'thi-nghiem/a', id: 'n1', luot_2: 'dung', nguon: ['https://doi.org/10.1037/h0093718'] }]));
+		chay('nhap', 'luot2.yml');
+		assert.equal(doc().nhan_dinh[0].luot_2, 'dung');
+		assert.deepEqual(doc().nhan_dinh[0].luot_2_nguon, ['https://doi.org/10.1037/h0093718']);
+		ghi('sai.yml', stringify([{ trang: 'thi-nghiem/a', id: 'n9', luot_2: 'dung', nguon: ['x'] }]));
+		assert.throws(() => chay('nhap', 'sai.yml'), /hồ sơ không có nhận định n9/);
+
+		chay('khoa', 'thi-nghiem/a');
+		const khoa = parse(fs.readFileSync(path.join(goc, 'kiem-dinh/khoa.json'), 'utf8'));
+		assert.match(khoa.trang['thi-nghiem/a'], /^sha256:/);
+		assert.equal(doc().lan[0].ma_bam, khoa.trang['thi-nghiem/a']);
+		assert.match(String(doc().lan[0].ngay), /^\d{4}-\d{2}-\d{2}$/);
+		assert.deepEqual(kiemKhoa(goc), []);
+		assert.equal(chay('tinh'), 0);
+		assert.throws(() => chay('khoa', 'thi-nghiem/a'), /đã khóa/);
+
+		// sửa trang đã khóa: build hỏng (kiemKhoa), tinh báo LỆCH
+		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\nChữ khác.\n');
+		assert.match(kiemKhoa(goc).join(), /trang thi-nghiem\/a đã khóa mà nội dung đã đổi[\s\S]*tools\/khoa.mjs mo thi-nghiem\/a/);
+		assert.equal(chay('tinh'), 1);
+
+		// mở khóa: ghi lý do, gỡ khỏi khoa.json, thêm lần mới; khóa lại
+		assert.throws(() => chay('mo', 'thi-nghiem/a'), /cần mục và --ly-do/);
+		chay('mo', 'thi-nghiem/a', '--ly-do', 'lỗi được báo');
+		assert.equal(docKhoa(goc).trang['thi-nghiem/a'], undefined);
+		assert.equal(doc().mo_khoa[0].ly_do, 'lỗi được báo');
+		assert.equal(doc().lan.length, 2);
+		assert.throws(() => chay('khoa', 'thi-nghiem/a'), /thiếu nguoi.luot_1/);
+		ghiHs({ ...doc(), lan: [doc().lan[0], { ...doc().lan[1], nguoi: NGUOI }] });
+		chay('khoa', 'thi-nghiem/a');
+		assert.deepEqual(kiemKhoa(goc), []);
+	} finally {
+		xoa();
+	}
+});
+
+test('khóa bản ghi dữ liệu, cả bản ghi hay từng trường; sửa trường đã khóa thì lệch', () => {
+	const { goc, ghi, chay, xoa } = banChep();
+	try {
+		ghi('src/data/trang.yml', '- id: index\n  tang: khung\n');
+		ghi('src/data/nguon.yml', '- id: asch1956\n  loai: bai-bao\n  tac_gia: Asch, S. E.\n  nam: 1956\n  ten: Studies\n');
+		const muc = 'du-lieu/nguon/asch1956#nam,tac_gia';
+		chay('mau', muc);
+		const f = path.join(goc, 'kiem-dinh/du-lieu/nguon/asch1956.yml');
+		const hs = parse(fs.readFileSync(f, 'utf8'));
+		fs.writeFileSync(f, stringify({ ...hs, lan: [{ ...hs.lan[0], nguoi: NGUOI }], nguon: [{ id: 'asch1956' }], nhan_dinh: [nd({ truong: ['nam', 'tac_gia'] })] }));
+		chay('khoa', muc);
+		assert.ok(docKhoa(goc).ban_ghi['nguon/asch1956#nam,tac_gia']);
+		assert.deepEqual(kiemKhoa(goc), []);
+		// trường chưa khóa đổi thì không sao; trường đã khóa đổi thì lệch
+		ghi('src/data/nguon.yml', '- id: asch1956\n  loai: bai-bao\n  tac_gia: Asch, S. E.\n  nam: 1956\n  ten: Studies of independence\n');
+		assert.deepEqual(kiemKhoa(goc), []);
+		ghi('src/data/nguon.yml', '- id: asch1956\n  loai: bai-bao\n  tac_gia: Asch, S.\n  nam: 1956\n  ten: Studies\n');
+		assert.match(kiemKhoa(goc).join(), /bản ghi nguon\/asch1956#nam,tac_gia đã khóa mà đã đổi/);
+	} finally {
+		xoa();
+	}
+});
+
+test('lọc trang theo bản build: bản thật bỏ trang chưa khóa khỏi bộ docs, bản xem giữ hết', async () => {
+	const muc = (t) => ({ filePath: `src/content/docs/${t}.md` });
+	const lam = async (banXem) => {
+		const store = new Map([
+			['404', muc('404')],
+			['thu-chua-khoa', muc('thi-nghiem/khong-co-trong-khoa')],
+		]);
+		const ctx = { store: { entries: () => [...store.entries()], delete: (k) => store.delete(k) } };
+		const cu = process.env.PSYCHE_BAN;
+		if (banXem) process.env.PSYCHE_BAN = 'xem';
+		else delete process.env.PSYCHE_BAN;
+		try {
+			await locTheoBan({ name: 'thu', load: async () => {} }).load(ctx);
+		} finally {
+			if (cu === undefined) delete process.env.PSYCHE_BAN;
+			else process.env.PSYCHE_BAN = cu;
+		}
+		return [...store.keys()];
+	};
+	assert.deepEqual(await lam(false), ['404']);
+	assert.deepEqual(await lam(true), ['404', 'thu-chua-khoa']);
+});
+
+test('bản build: trang chưa khóa có dải "Chưa kiểm định" (chỉ ở bản xem); bản thật không có trang chưa khóa', () => {
+	if (!fs.existsSync(path.join(DIST, 'index.html'))) throw new Error('Chưa có dist/: chạy npm run build trước npm test');
+	const khoa = docKhoa().trang;
+	const trang = fs
+		.readdirSync(DIST, { recursive: true })
+		.map((f) => String(f).replace(/\\/g, '/'))
+		.filter((f) => f.endsWith('index.html') && !f.startsWith('pagefind/'))
+		.map((f) => f.replace(/\/?index\.html$/, ''));
+	const banXem = trang.some((t) => {
+		const html = fs.readFileSync(path.join(DIST, t, 'index.html'), 'utf8');
+		return html.includes('class="pz-chua-kiem-dinh"');
+	});
+	for (const t of trang) {
+		const id = [t || 'index', `${t}/index`].find((x) => fs.existsSync(path.join(ROOT, 'src/content/docs', `${x}.md`)));
+		if (!id) continue;
+		const html = fs.readFileSync(path.join(DIST, t, 'index.html'), 'utf8');
+		const coDai = html.includes('class="pz-chua-kiem-dinh"');
+		if (id in khoa) assert.ok(!coDai, `${id}: đã khóa mà có dải "Chưa kiểm định"`);
+		else assert.ok(coDai, `${id}: chưa khóa mà ${banXem ? 'thiếu dải "Chưa kiểm định"' : 'có trong bản build (bản thật chỉ có trang đã khóa)'}`);
+	}
+	assert.doesNotMatch(fs.readFileSync(path.join(DIST, '404.html'), 'utf8'), /pz-chua-kiem-dinh/);
+});
