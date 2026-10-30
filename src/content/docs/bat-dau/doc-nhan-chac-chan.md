@@ -1,6 +1,6 @@
 ---
 title: Cách đọc nhãn mức độ chắc chắn
-description: Bốn nhãn Vững chắc, Khá vững, Đang tranh cãi, Đã bị bác bỏ: thước đo để gắn nhãn và cách đọc từng nhãn trên Psyche.
+description: 'Bốn nhãn Vững chắc, Khá vững, Đang tranh cãi, Đã bị bác bỏ: thước đo để gắn nhãn và cách đọc từng nhãn trên Psyche.'
 ---
 
 Mỗi kết luận quan trọng trên Psyche được gắn một trong bốn nhãn. Nhãn không nói một ý tưởng hay hay dở, thú vị hay nhàm chán. Nó chỉ trả lời: **bằng chứng hiện có ủng hộ kết luận này mạnh đến đâu?**
@@ -23,13 +23,13 @@ Mọi nhãn trên Psyche được gắn theo cùng một thước đo. *Phân t�
 :::vung-chac
 Đủ các điều kiện của thước đo: có phân tích tổng hợp, không có thất bại tái lập lớn chưa giải thích được, và đúng ở nhiều nhóm người.
 
-*Ví dụ:* ôn tập rải ra nhiều lần giúp nhớ lâu hơn học dồn. Một phân tích tổng hợp năm 2006 gộp 839 lần đánh giá từ 317 thí nghiệm ([Cepeda và cộng sự, 2006](https://doi.org/10.1037/0033-2909.132.3.354); chi tiết ở [Đường cong quên](/psyche/kham-pha/tri-nho/duong-cong-quen/)).
+*Ví dụ:* ôn tập rải ra nhiều lần giúp nhớ lâu hơn học dồn. Một phân tích tổng hợp lớn năm 2006 thấy kết quả này ở rất nhiều thí nghiệm ([Cepeda và cộng sự, 2006](https://doi.org/10.1037/0033-2909.132.3.354); chi tiết ở [Đường cong quên](/psyche/kham-pha/tri-nho/duong-cong-quen/)).
 :::
 
 :::kha-vung
 Có nhiều nghiên cứu ủng hộ, nhưng còn giới hạn: chưa có tái lập lớn, mẫu chủ yếu là người phương Tây, hoặc kết quả giữa các nghiên cứu khác nhau nhiều.
 
-*Ví dụ:* cách đặt câu hỏi ("đâm sầm" hay "đụng") làm thay đổi ước lượng tốc độ của nhân chứng. Kết quả gốc phù hợp với hơn 30 năm nghiên cứu về trí nhớ sai ([Loftus, 2005](https://doi.org/10.1101/lm.94705)), nhưng đến tháng 10/2026 chúng tôi chưa thấy bản tái lập lớn nào của chính thí nghiệm này được công bố. Xem [Trí nhớ có giống cuốn băng ghi hình?](/psyche/kham-pha/tri-nho/bang-ghi-hinh/)
+*Ví dụ:* kỳ vọng của giáo viên ảnh hưởng tới kết quả của học sinh. Tổng quan 35 năm nghiên cứu cho thấy hiệu ứng này có thật, nhưng thường nhỏ và hay phai đi hơn là tích tụ theo thời gian ([Jussim và Harber, 2005](https://doi.org/10.1207/s15327957pspr0902_3)). Xem [Thầy tin trò giỏi, trò có giỏi hơn?](/psyche/thi-nghiem/pygmalion/).
 :::
 
 :::tranh-cai

@@ -1,0 +1,35 @@
+# Chép từ site cũ (mtuann/psyche-zero, .github/workflows/ho-tro-quarterly.yml), sửa đường dẫn trang và việc cần làm cho
+# repo mới (D2-L1). Mỗi quý mở một issue nhắc kiểm tra bằng tay thông tin liên hệ của trang Hỗ trợ.
+name: Nhắc kiểm tra trang Hỗ trợ mỗi quý
+
+on:
+  schedule:
+    - cron: "0 2 1 1,4,7,10 *" # ngày 1 của tháng 1, 4, 7, 10
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mở issue nhắc việc
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh issue create --repo "$REPO" --title "Kiểm tra thủ công thông tin liên hệ trang Hỗ trợ ($(date +%m/%Y))" --body "$(cat <<'BODY'
+          Kiểm tra lại bằng tay từng mục trên src/content/docs/ho-tro/index.md (hồ sơ: kiem-dinh/ho-tro/index.yml):
+
+          - [ ] 113, 114, 115 vẫn đúng và miễn phí; có thay đổi gì về số khẩn cấp quốc gia (112, số hợp nhất)?
+          - [ ] Tổng đài 111: còn 24/7, miễn phí; cơ quan vận hành
+          - [ ] Đường dây nóng Ngày Mai: số, ngày và giờ hoạt động (trang chính thức)
+          - [ ] CSAGA: số và giờ hoạt động
+          - [ ] Số tổng đài các bệnh viện (đối chiếu trang chính thức)
+          - [ ] Văn bản pháp luật về tâm lý lâm sàng, kê đơn và công tác xã hội: có sửa đổi?
+          - [ ] Mở khóa trang (node tools/khoa.mjs mo ho-tro/index --ly-do "kiểm tra mỗi quý"), sửa chỗ đổi, cập nhật "Kiểm tra lần cuối", hạn kiểm lại và het_han của hồ sơ, rồi khóa lại
+
+          Chỉ đưa lên những gì kiểm chứng được từ nguồn chính thức.
+          BODY
+          )"

@@ -45,7 +45,7 @@ Các số dưới đây là số tổng đài hay số điện thoại chung mà
 | Bệnh viện Tâm thần Trung ương 2 (Đồng Nai) | <span class="pz-tel">[0251 3822 965](tel:02513822965)</span> |
 | Bệnh viện Tâm thần TP.HCM | <span class="pz-tel">[028 3923 4675](tel:02839234675)</span> |
 
-Nhiều tỉnh, thành phố có bệnh viện tâm thần hoặc khoa tâm thần, khoa tâm lý trong bệnh viện đa khoa. Sau đợt sắp xếp đơn vị hành chính năm 2025, địa chỉ trên một số trang web vẫn ghi theo địa giới cũ; hãy kiểm tra lại trước khi đến.
+Bệnh viện đa khoa gần nơi bạn ở có thể có khoa tâm thần hoặc khoa tâm lý; hãy gọi hỏi trước. Sau đợt sắp xếp đơn vị hành chính năm 2025, địa chỉ trên một số trang web vẫn ghi theo địa giới cũ; hãy kiểm tra lại trước khi đến.
 
 ## Khi nào nên tìm chuyên gia?
 
@@ -62,7 +62,7 @@ Psyche không có và sẽ không có công cụ tự chẩn đoán. Chỉ ngư�
 
 | Khía cạnh | Bác sĩ chuyên khoa tâm thần | Nhà tâm lý lâm sàng | Tham vấn viên / chuyên viên tư vấn tâm lý | Nhân viên công tác xã hội |
 |---|---|---|---|---|
-| Đào tạo | Bác sĩ y khoa, chuyên khoa tâm thần | Chuyên ngành tâm lý lâm sàng | Rất khác nhau | Công tác xã hội, hoặc ngành gần như xã hội học, tâm lý học |
+| Đào tạo | Bác sĩ y khoa, chuyên khoa tâm thần | Chuyên ngành tâm lý lâm sàng | Luật Khám bệnh, chữa bệnh 2023 không đặt chuẩn đào tạo chung | Công tác xã hội, hoặc ngành gần như xã hội học, tâm lý học |
 | Giấy phép | Giấy phép hành nghề bác sĩ | Là chức danh phải có giấy phép hành nghề theo Luật Khám bệnh, chữa bệnh 2023 (có hiệu lực từ 01/01/2024) | Không nằm trong các chức danh phải có giấy phép hành nghề của Luật Khám bệnh, chữa bệnh 2023 | Giấy chứng nhận đăng ký hành nghề công tác xã hội theo Nghị định 110/2024/NĐ-CP |
 | Kê đơn thuốc | **Có** | Không (theo quy định về kê đơn, người kê đơn là bác sĩ, y sĩ) | Không | Không |
 | Thường làm gì | Chẩn đoán, điều trị bằng thuốc và các phương pháp khác, chỉ định nhập viện khi cần | Đánh giá tâm lý, trị liệu tâm lý | Lắng nghe, hỗ trợ, tư vấn | Kết nối dịch vụ, hỗ trợ và bảo vệ người yếu thế |
@@ -73,7 +73,6 @@ Theo Nghị định 96/2023/NĐ-CP, để được cấp giấy phép, nhà tâm
 
 - Hỏi về đào tạo, giấy phép hoặc chứng chỉ hành nghề.
 - Hỏi về chi phí, thời lượng mỗi buổi và cách họ bảo mật thông tin của bạn.
-- Thận trọng với nơi hứa "chữa khỏi" nhanh chóng, cam kết kết quả, hoặc chỉ dựa vào một bài trắc nghiệm.
 - Nếu bạn không thấy hợp với một người, việc tìm người khác là bình thường.
 
 ## Khi người thân đang gặp khó khăn

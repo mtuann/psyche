@@ -25,6 +25,8 @@ Câu nói một nghiên cứu đã làm gì và thấy gì thì dựa vào bài 
 - **Lượt 2:** một lượt độc lập khác kiểm lại, không xem nguồn hay kết luận của lượt 1, tự tìm nguồn và cho kết quả riêng.
 - Chỗ hai lượt cho kết quả khác nhau được một lượt review xét lại, rồi chủ site xem ngẫu nhiên vài khẳng định của mỗi lô.
 
+Hiện nay, lượt 1, lượt 2 và lượt review do mô hình AI (Claude) làm theo đúng quy trình này, mỗi lượt là một phiên làm việc riêng không thấy kết quả của lượt kia. Chủ site đọc kiểm mẫu, quyết các chỗ khó và chịu trách nhiệm về nội dung.
+
 Bài thuộc phần **Nền tảng** được kiểm đủ cả hai lượt. Bài **Mở rộng** được kiểm đủ ở lượt 1; lượt 2 kiểm một mẫu ngẫu nhiên, cộng mọi nhãn mức độ chắc chắn và mọi điều về lâm sàng, và có hạn xem lại. Bài về sức khỏe tâm thần chỉ lên site sau khi người có chuyên môn đọc lại. Trang chỉ có danh sách sinh từ dữ liệu đã khóa, hay chỉ có câu về chính site, được kiểm theo mức nhẹ hơn.
 
 ## Nhãn mức độ chắc chắn

@@ -52,8 +52,8 @@ Phản ứng của ngành là một tin tốt: những hiệu ứng nổi tiến
 
 ## Mức độ chắc chắn
 
-:::vung-chac[tâm lý học là một khoa học thực nghiệm, và nó tự sửa sai]
-Khủng hoảng tái lập bị chính các nhà tâm lý học phát hiện và công bố, bằng chính các phương pháp khoa học. Nhiều phát hiện đã qua được các đợt kiểm tra lại quy mô lớn; một số khác bị loại bỏ. Site này dùng bốn nhãn để nói rõ từng kết luận đang ở đâu. Xem [Cách đọc nhãn mức độ chắc chắn](/psyche/bat-dau/doc-nhan-chac-chan/).
+:::vung-chac[khi được làm lại ở quy mô lớn, một phần đáng kể các phát hiện đã công bố không lặp lại được]
+Điều này bị chính các nhà tâm lý học phát hiện và công bố, bằng chính các phương pháp khoa học: đó là cách một khoa học thực nghiệm tự sửa sai. Nhiều phát hiện đã qua được các đợt kiểm tra lại quy mô lớn; một số khác bị loại bỏ. Site này dùng bốn nhãn để nói rõ từng kết luận đang ở đâu. Xem [Cách đọc nhãn mức độ chắc chắn](/psyche/bat-dau/doc-nhan-chac-chan/).
 :::
 
 ## Ở Việt Nam và các nền văn hóa khác
