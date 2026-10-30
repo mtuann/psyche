@@ -17,7 +17,7 @@ in_duoc: true
 
 Hãy tưởng tượng bạn được mời đến một trường đại học tham gia nghiên cứu về trí nhớ, có trả công. Bạn bốc thăm và trúng vai "thầy giáo". Nhiệm vụ: mỗi khi "học trò" — một người đàn ông lịch sự ngồi phòng bên — trả lời sai, bạn bấm nút phạt bằng điện, mỗi lần tăng thêm một nấc.
 
-Đến nấc 300V, anh ta đập vào tường và không trả lời nữa. Người mặc áo choàng xám đứng cạnh bạn nói đều đều: "Thí nghiệm yêu cầu anh tiếp tục."
+Đến nấc 300V, anh ta đập vào tường và không trả lời nữa. Bạn quay sang người mặc áo choàng xám đứng cạnh; ông ta bảo bạn coi im lặng là trả lời sai và cứ tiếp tục. Bạn ngần ngại. Ông ta nói, giọng chắc chắn mà không thô lỗ: "Xin hãy tiếp tục." Rồi: "Thí nghiệm yêu cầu anh tiếp tục."
 
 > Bạn đoán: trong 100 người bình thường, bao nhiêu người sẽ đi đến nấc tối đa 450V, sau cả nhóm nấc ghi "Nguy hiểm: giật mạnh"? 5 người? 20 người? Hay hơn một nửa?
 
@@ -33,7 +33,7 @@ Thí nghiệm của Stanley Milgram đặt lương tâm cá nhân đối đầu 
 
 ## Nghiên cứu then chốt
 
-### Milgram (1963): 40 người đàn ông ở Yale
+### Milgram (1963): 40 người đàn ông ở vùng New Haven { #milgram-1963-40-nguoi-dan-ong-o-yale }
 
 **Thiết kế.** Milgram tuyển 40 người đàn ông tuổi 20–50, đủ nghề nghiệp, qua quảng cáo trên báo và thư mời gửi trực tiếp, trả 4,5 đô la cho một nghiên cứu "về trí nhớ và hình phạt". Qua bốc thăm gian lận, người tham gia thật luôn trúng vai "thầy giáo", còn "học trò" là người cộng tác của Milgram (một kế toán viên 47 tuổi được huấn luyện cho vai). Máy giật điện (giả) có 30 nấc từ 15V đến 450V, chia nhóm bằng các nhãn từ "Shock nhẹ" đến "Nguy hiểm: giật mạnh"; hai nấc cuối chỉ đánh dấu XXX.
 
@@ -49,14 +49,14 @@ Với chuẩn đạo đức hiện nay, không ai lặp lại y nguyên thí ngh
 
 Burger có 70 người trưởng thành, chia làm hai điều kiện. Ở điều kiện cơ sở (40 người), 70% tiếp tục vượt qua 150V, so với 82,5% ở Thí nghiệm 5 của Milgram — chênh lệch **không có ý nghĩa thống kê**. Điều kiện thứ hai, trong đó người tham gia thấy một người khác từ chối, cũng không làm khác đi. Nam và nữ vâng lời như nhau ([Burger, 2009](https://doi.org/10.1037/a0010932)).
 
-### Doliński và Grzyb (2017): làm lại ở Ba Lan
+### Doliński và cộng sự (2017): làm lại ở Ba Lan { #dolinski-va-grzyb-2017-lam-lai-o-ba-lan }
 
-Ở Ba Lan, trong một nghiên cứu 80 người (40 nam, 40 nữ, tuổi 18–69), 90% bấm đến nút cao nhất trong 10 nút (cường độ được giảm nhẹ vì lý do đạo đức, theo thủ tục của Burger; [Doliński và Grzyb, 2017](https://doi.org/10.1177/1948550617693060)). Thiết kế khác với bản gốc nên không so sánh trực tiếp được từng con số; các tác giả kết luận mức vâng lời "cao tương tự" các nghiên cứu gốc. Mẫu nhỏ nên chênh lệch theo giới tính của người tham gia và của học trò chưa kết luận được.
+Ở Ba Lan, trong một nghiên cứu 80 người (40 nam, 40 nữ, tuổi 18–69), 90% bấm đến nút cao nhất trong 10 nút (cường độ được giảm nhẹ vì lý do đạo đức, theo thủ tục của Burger; [Doliński và cộng sự, 2017](https://doi.org/10.1177/1948550617693060)). Thiết kế khác với bản gốc nên không so sánh trực tiếp được từng con số; các tác giả kết luận mức vâng lời "cao tương tự" các nghiên cứu gốc. Mẫu nhỏ nên chênh lệch theo giới tính của người tham gia và của học trò chưa kết luận được.
 
 ## Mức độ chắc chắn
 
 :::kha-vung[áp lực quyền lực tạo ra mức vâng lời cao trong phòng thí nghiệm]
-Không chỉ một thí nghiệm đơn lẻ: Milgram làm 23 biến thể, và hai lần làm lại hiện đại — Burger (2009) ở Mỹ, Doliński và Grzyb (2017) ở Ba Lan — vẫn thấy mức vâng lời cao, dù cả hai đều dùng thủ tục đã giảm nhẹ. Mức vâng lời thay đổi rất nhiều theo biến thể: trong 21 biến thể có đo việc đi đến 450V, tỉ lệ chung là 43,6% (Haslam, Loughnan và Perry, 2014). Vì sao chỉ "khá vững": con số tổng hợp ấy lấy từ các biến thể của chính Milgram, mỗi biến thể vài chục người; vì lý do đạo đức, hai lần làm lại hiện đại nói trên đều dừng sớm hơn nhiều so với bản gốc; và tư liệu lưu trữ cho thấy những người không tin hẳn vào màn kịch lại giật ở mức cao hơn (Perry và cộng sự, 2019), nên mức vâng lời thật có thể thấp hơn con số trên.
+Không chỉ một thí nghiệm đơn lẻ: Milgram làm 23 biến thể, và hai lần làm lại hiện đại — Burger (2009) ở Mỹ, Doliński và cộng sự (2017) ở Ba Lan — vẫn thấy mức vâng lời cao, dù cả hai đều dùng thủ tục đã giảm nhẹ. Mức vâng lời thay đổi rất nhiều theo biến thể: trong 21 biến thể có đo việc đi đến 450V, tỉ lệ chung là 43,6% (Haslam, Loughnan và Perry, 2014). Vì sao chỉ "khá vững": con số tổng hợp ấy lấy từ các biến thể của chính Milgram, mỗi biến thể vài chục người; vì lý do đạo đức, hai lần làm lại hiện đại nói trên đều dừng sớm hơn nhiều so với bản gốc; và tư liệu lưu trữ cho thấy những người không tin hẳn vào màn kịch lại giật ở mức cao hơn (Perry và cộng sự, 2019), nên mức vâng lời thật có thể thấp hơn con số trên.
 :::
 
 :::kha-vung[nấc 150V là 'điểm không quay đầu']
@@ -72,19 +72,19 @@ Milgram giải thích bằng "trạng thái ủy nhiệm": người ta giao trá
 - **Trạng thái ủy nhiệm (Milgram):** người ta trao trách nhiệm cho người có quyền lực và vì thế vâng lời (cách hiểu mà Reicher, Haslam và Smith, 2012, mô tả để phản biện).
 - **Đồng nhất với mục đích (Haslam & Reicher):** người tham gia tin rằng mình đang góp phần cho khoa học — một mục đích cao đẹp. Theo Reicher và cộng sự, những kẻ thi hành bạo quyền trong lịch sử thường chủ động đồng nhất với lãnh đạo và mục tiêu của họ, chứ không chỉ thụ động làm theo.
 - **Cam kết từng bước:** không ai bị yêu cầu giật 450V ngay. Mỗi nấc chỉ tăng 15V so với nấc trước; giả thuyết là một bước nhỏ dễ chấp nhận hơn một bước nhảy vọt (giả thuyết, chưa được thí nghiệm này kiểm tra riêng).
-- **Tính chính danh của bối cảnh:** Đại học Yale, áo choàng xám của kỹ thuật viên, máy móc khoa học. Cùng một yêu cầu, đặt ở bối cảnh khác sẽ cho kết quả khác — Milgram thấy tỉ lệ vâng lời thấp hơn (47,5% so với 62,5% ở điều kiện tương ứng tại Yale) khi chuyển thí nghiệm ra một văn phòng xập xệ ở Bridgeport.
+- **Tính chính danh của bối cảnh:** Đại học Yale, áo choàng xám của kỹ thuật viên, máy móc khoa học. Cùng một yêu cầu, đặt ở bối cảnh khác sẽ cho kết quả khác — Milgram thấy tỉ lệ vâng lời thấp hơn (47,5% so với 65% ở điều kiện tương ứng tại Yale) khi chuyển thí nghiệm ra một văn phòng xập xệ ở Bridgeport, dù theo ông mức giảm này không có ý nghĩa thống kê (Milgram, 1974).
 
 ## Áp dụng vào đời sống
 
 Bài học thực tế nhất không phải "con người xấu xa", mà là **quyền lực có thể mượn danh nghĩa tốt đẹp để dẫn ta đi xa**. Vài tình huống đời thường:
 
-- **Vẻ chính danh:** trong thí nghiệm, vẻ chính danh của bối cảnh có tác dụng: khi chuyển khỏi Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn (47,5% so với 62,5%), dù vẫn gần một nửa. Những cuộc gọi xưng danh công an hay ngân hàng cũng mượn vẻ chính danh; đó là phép so sánh của chúng tôi, thí nghiệm Milgram không nghiên cứu lừa đảo.
+- **Vẻ chính danh:** trong thí nghiệm, vẻ chính danh của bối cảnh có tác dụng: khi chuyển khỏi Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn (47,5% so với 65%), dù vẫn gần một nửa. Những cuộc gọi xưng danh công an hay ngân hàng cũng mượn vẻ chính danh; đó là phép so sánh của chúng tôi, thí nghiệm Milgram không nghiên cứu lừa đảo.
 - **Nơi làm việc:** sếp yêu cầu làm điều trái quy định "vì công ty". Trong thí nghiệm, có "đồng minh" giúp người ta dám dừng lại: trong một biến thể của Milgram, khi hai người đóng vai "thầy giáo" khác từ chối tiếp tục, chỉ 4 trên 40 người tham gia thật vâng lời đến nấc cuối (Haslam, Loughnan và Perry, 2014).
 - **Lời thúc ép không phải sự thật:** câu "anh không còn lựa chọn nào khác" là lời thúc ép theo kịch bản: 14 trong 40 người vẫn từ chối tiếp tục dù bị thúc ép.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Milgram làm thí nghiệm ở Mỹ, Burger cũng ở Mỹ, Doliński và Grzyb ở Ba Lan. Hiệu ứng vâng lời xuất hiện ở Mỹ và Ba Lan, nhưng **con số cụ thể dao động** theo bối cảnh: khi Milgram chuyển khỏi Yale sang văn phòng ở Bridgeport, tỉ lệ vâng lời là 47,5%, so với 62,5% ở điều kiện tương ứng tại Yale.
+Milgram làm thí nghiệm ở Mỹ, Burger cũng ở Mỹ, nhóm của Doliński ở Ba Lan. Hiệu ứng vâng lời xuất hiện ở Mỹ và Ba Lan, nhưng **con số cụ thể dao động** theo bối cảnh: khi Milgram chuyển khỏi Yale sang văn phòng ở Bridgeport, tỉ lệ vâng lời là 47,5%, so với 65% ở điều kiện tương ứng tại Yale (Milgram, 1974).
 
 Tính đến 10/2026, chúng tôi chưa tìm thấy thí nghiệm tương tự trên người Việt. Không có dữ liệu thì không đoán mò: đây là khoảng trống đáng có một nghiên cứu Việt Nam.
 
@@ -120,9 +120,9 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy thí nghiệm tương tự t
 > Cách hiểu này thay đổi hẳn bài học: nguy hiểm không chỉ nằm ở "mệnh lệnh", mà ở chỗ một mục đích cao đẹp có thể biện minh cho hành vi gây hại.
 ? Khi Milgram chuyển thí nghiệm khỏi Đại học Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thay đổi thế nào?
 - Không ai vâng lời nữa.
-+ Thấp hơn: 47,5%, so với 62,5% ở điều kiện tương ứng tại Yale.
++ Thấp hơn: 47,5%, so với 65% ở điều kiện tương ứng tại Yale.
 - Cao hơn hẳn so với ở Yale.
-> Vẻ chính danh của bối cảnh có tác dụng, nhưng ngay cả ở một văn phòng không có tên tuổi Yale, gần một nửa số người vẫn đi đến nấc cuối.
+> Vẻ chính danh của bối cảnh có tác dụng, nhưng ngay cả ở một văn phòng không có tên tuổi Yale, gần một nửa số người vẫn đi đến nấc cuối; chính Milgram nói mức giảm này không có ý nghĩa thống kê.
 ```
 
 ## Nguồn
@@ -131,7 +131,8 @@ Tính đến 10/2026, chúng tôi chưa tìm thấy thí nghiệm tương tự t
 - Haslam, N., Loughnan, S., & Perry, G. (2014). Meta-Milgram: An empirical synthesis of the obedience experiments. *PLOS ONE*, 9(4), e93927. <https://doi.org/10.1371/journal.pone.0093927>
 - Perry, G., Brannigan, A., Wanner, R. A., & Stam, H. (2019). Credibility and incredulity in Milgram's obedience experiments: A reanalysis of an unpublished test. *Social Psychology Quarterly*, 83(1), 88–106. <https://doi.org/10.1177/0190272519861952>
 - Burger, J. M. (2009). Replicating Milgram: Would people still obey today? *American Psychologist*, 64(1), 1–11. <https://doi.org/10.1037/a0010932>
-- Doliński, D., & Grzyb, T. (2017). Would you deliver an electric shock in 2015? Obedience to authority today. *Social Psychological and Personality Science*, 8(8), 927–933. <https://doi.org/10.1177/1948550617693060>
+- Doliński, D., Grzyb, T., Folwarczny, M., Grzybała, P., Krzyszycha, K., Martynowska, K., & Trojanowski, J. (2017). Would you deliver an electric shock in 2015? Obedience in the experimental paradigm developed by Stanley Milgram in the 50 years following the original studies. *Social Psychological and Personality Science*, 8(8), 927–933. <https://doi.org/10.1177/1948550617693060>
+- Milgram, S. (1974). *Obedience to authority: An experimental view*. Harper & Row.
 - Baumrind, D. (1964). Some thoughts on ethics of research: After reading Milgram's "Behavioral study of obedience." *American Psychologist*, 19(6), 421–423.
 - Perry, G. (2012). *Behind the shock machine: The untold story of the notorious Milgram psychology experiments*. Scribe.
 - Haslam, S. A., Reicher, S. D., Millard, K., & McDonald, R. (2014). "Happy to have been of service": The Yale archive as a window into the engaged followership of participants in Milgram's "obedience" experiments. *British Journal of Social Psychology*. <https://doi.org/10.1111/bjso.12074>

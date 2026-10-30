@@ -70,7 +70,7 @@ Qua phỏng vấn sau thí nghiệm, Asch (1956) thấy người hùa theo có n
 
 ## Áp dụng vào đời sống
 
-- **Trong cuộc họp:** nếu sếp nêu ý kiến trước rồi hỏi "mọi người thấy sao?", tình huống ấy gợi lại thí nghiệm Asch (đây là phép loại suy, chưa được kiểm trực tiếp). Một gợi ý rút từ Asch: để mọi người **ghi ý kiến ra giấy trước khi thảo luận miệng**. Trong một biến thể của Asch, khi người tham gia trả lời bằng văn bản thay vì nói công khai, số lỗi giảm còn khoảng một phần ba (mẫu chỉ 14 người); thí nghiệm ấy không thử tính ẩn danh hay thứ tự phát biểu.
+- **Trong cuộc họp:** nếu sếp nêu ý kiến trước rồi hỏi "mọi người thấy sao?", tình huống ấy gợi lại thí nghiệm Asch (đây là phép loại suy, chưa được kiểm trực tiếp). Một gợi ý rút từ Asch: để mọi người **ghi ý kiến ra giấy trước khi thảo luận miệng**. Trong một biến thể của Asch, khi người tham gia trả lời bằng văn bản thay vì nói công khai, số lỗi giảm còn khoảng một phần ba (mẫu chỉ 14 người, nên chính Asch nói chưa chứng minh được chênh lệch bằng thống kê); thí nghiệm ấy không thử tính ẩn danh hay thứ tự phát biểu.
 - **Trên mạng xã hội:** lượt thích và bình luận có sẵn là một dạng "ý kiến của số đông" mà ta nhìn thấy trước khi tự đánh giá. Đây là phép loại suy với thí nghiệm Asch, không phải kết quả của chính thí nghiệm ấy.
 - **Làm "kẻ phá vỡ nhất trí":** theo Asch (1955), khi có một người cùng phòng nói đúng, người tham gia sai chỉ khoảng một phần tư so với khi cả nhóm nhất trí. Trong nhóm bạn, đôi khi vai trò có ích nhất là người đầu tiên nói "khoan đã, tôi thấy khác".
 

@@ -7,12 +7,12 @@ lan:
   - so: 1
     ngay: 2026-10-30
     nhanh: moi/d3-l1
-    ma_bam: null
+    ma_bam: sha256:cc8e654ab32c342acd48df9a982277960da92af8915024cd04c3cf0748e37ada
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 2/2)
-      luot_2: null
-      review: null
-      kiem_mau: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D3-L1)
+      review: Claude Sonnet 5.5 (agent review D3-L1, 30/10/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d3-l1-kiem-mau.yml), đạt, 30/10/2026
 nguon:
   - id: haney1973
     ten: 'Haney, Banks & Zimbardo (1973): toàn văn (bản quét, OCR); chi tiết ở hồ sơ thi-nghiem/zimbardo'
@@ -43,67 +43,80 @@ nhan_dinh:
     cau: 'Danh sách mười lăm thí nghiệm sinh từ dữ liệu (::danh-sach-bai{nhom="thi-nghiem"}): chỉ trang đã có trên site, tên và mô tả lấy từ chính trang ấy, link về trang nhà; thí nghiệm chưa xong được đếm ở cuối danh sách.'
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Đếm 15 mục trong danh sách "Mười lăm thí nghiệm"; mô tả (frontmatter) liệt kê đúng 15 tên; mỗi mục có link /psyche/thi-nghiem/<trang>/ (kiểm link ở tests/link.test.mjs; tám trang chưa chuyển tự hiện "sắp có"). Người gom (Claude Opus 5.5, 30/10/2026): danh sách viết tay thay bằng danh sách sinh từ dữ liệu, như trang lĩnh vực (D2-L1): src/plugins/thanh-phan.mjs danhSachBai; src/data/trang.yml có 15 trang thi-nghiem/ ngoài index.'
+    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Đếm 15 mục trong danh sách "Mười lăm thí nghiệm"; mô tả (frontmatter) liệt kê đúng 15 tên; mỗi mục có link /psyche/thi-nghiem/<trang>/ (kiểm link ở tests/link.test.mjs; tám trang chưa chuyển tự hiện "sắp có"). Người gom (Claude Opus 5.5, 30/10/2026): danh sách viết tay thay bằng danh sách sinh từ dữ liệu, như trang lĩnh vực (D2-L1): src/plugins/thanh-phan.mjs danhSachBai; src/data/trang.yml có 15 trang thi-nghiem/ ngoài index. Review (Claude Sonnet 5.5, 30/10/2026): dung. Kiểm src/data/trang.yml: 15 trang thi-nghiem/ (cộng index); src/plugins/thanh-phan.mjs danhSachBai (dòng 236 trở đi) in tên và mô tả từ trang nhà, link về trang nhà, và dòng "Còn N bài sắp có". Mô tả frontmatter của index liệt kê đúng 15 tên. Khớp.'
+    review: dung
   - id: s1b
     cau: Tên bài trong mỗi mục khớp title của trang nhà.
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Bảy trang đã chuyển (milgram, asch, darley-latane, khi-dot-vo-hinh, zimbardo, pygmalion, robbers-cave) khớp title. chưa chắc: tám trang còn lại (keo-deo, pavlov, skinner, harlow, bandura, little-albert, schachter-singer, seligman) chưa chuyển; so khi chúng lên. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Bảy trang đã chuyển (milgram, asch, darley-latane, khi-dot-vo-hinh, zimbardo, pygmalion, robbers-cave) khớp title. chưa chắc: tám trang còn lại (keo-deo, pavlov, skinner, harlow, bandura, little-albert, schachter-singer, seligman) chưa chuyển; so khi chúng lên. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s2
     cau: 'Mỗi bài ở đây là một hướng dẫn đọc: thí nghiệm được thiết kế ra sao, con số thật là gì, người ta đã làm lại nó như thế nào, và giới nghiên cứu còn tranh cãi điều gì.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). So với bảy trang đã chuyển: mỗi trang có mục "Nghiên cứu then chốt" (thiết kế, kết quả), "Mức độ chắc chắn" (nhãn, tranh cãi). Tám trang chưa chuyển chưa kiểm được. Người gom (Claude Opus 5.5, 30/10/2026): cả 15 trang thí nghiệm ở site cũ (../psyche-zero/docs/thi-nghiem/*.md) có cùng 10 mục: Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm, Nguồn; trang chuyển bằng script giữ trình tự (7 trang của D3-L1 đã so, chữ giống trang cũ).'
+    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). So với bảy trang đã chuyển: mỗi trang có mục "Nghiên cứu then chốt" (thiết kế, kết quả), "Mức độ chắc chắn" (nhãn, tranh cãi). Tám trang chưa chuyển chưa kiểm được. Người gom (Claude Opus 5.5, 30/10/2026): cả 15 trang thí nghiệm ở site cũ (../psyche-zero/docs/thi-nghiem/*.md) có cùng 10 mục: Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm, Nguồn; trang chuyển bằng script giữ trình tự (7 trang của D3-L1 đã so, chữ giống trang cũ). Review (Claude Sonnet 5.5, 30/10/2026): dung. Bảy trang đã chuyển (milgram, asch, darley-latane, khi-dot-vo-hinh, zimbardo, pygmalion, robbers-cave) đều có đủ mười mục h2 (Nghiên cứu then chốt có thiết kế, kết quả; Mức độ chắc chắn có nhãn và tranh cãi), kiểm lại bằng grep 30/10/2026. Câu nói về "mỗi bài ở đây"; tám bài chưa lên không hiện trên bản thật. Khớp.'
+    review: dung
   - id: s3
     cau: 'Mỗi bài đi theo cùng một trình tự: tự đoán trước, điều đang xảy ra, nghiên cứu then chốt, mức độ chắc chắn, các cách giải thích, điều áp dụng được, góc nhìn văn hóa, ngộ nhận liên quan, vài câu hỏi để suy ngẫm.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Bảy trang đã chuyển đều có chín mục h2 theo thứ tự: Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm (cộng Nguồn). Tám trang chưa chuyển chưa kiểm được. Người gom (Claude Opus 5.5, 30/10/2026): cả 15 trang thí nghiệm ở site cũ (../psyche-zero/docs/thi-nghiem/*.md) có cùng 10 mục: Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm, Nguồn; trang chuyển bằng script giữ trình tự (7 trang của D3-L1 đã so, chữ giống trang cũ).'
+    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Bảy trang đã chuyển đều có chín mục h2 theo thứ tự: Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm (cộng Nguồn). Tám trang chưa chuyển chưa kiểm được. Người gom (Claude Opus 5.5, 30/10/2026): cả 15 trang thí nghiệm ở site cũ (../psyche-zero/docs/thi-nghiem/*.md) có cùng 10 mục: Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm, Nguồn; trang chuyển bằng script giữ trình tự (7 trang của D3-L1 đã so, chữ giống trang cũ). Review (Claude Sonnet 5.5, 30/10/2026): dung. Cùng kiểm với s2: thứ tự mười mục h2 giống nhau ở bảy trang đã chuyển và khớp câu trong trang index.'
+    review: dung
   - id: s4
-    cau: Bài nào trên site này cũng gắn nhãn mức độ chắc chắn cho các kết luận chính.
+    cau: Mỗi bài thí nghiệm ở đây đều gắn nhãn mức độ chắc chắn cho các kết luận chính.
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "cho từng kết luận". Chữ mới: "cho các kết luận chính". Lý do: AGENTS.md, Quy tắc nội dung nói "mọi kết luận quan trọng"; "từng kết luận" quá mạnh. Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Bảy trang đã chuyển đều có khung nhãn trong mục Mức độ chắc chắn.'
+    ghi_chu: 'Chữ cũ: "cho từng kết luận". Chữ mới: "cho các kết luận chính". Lý do: AGENTS.md, Quy tắc nội dung nói "mọi kết luận quan trọng"; "từng kết luận" quá mạnh. Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Bảy trang đã chuyển đều có khung nhãn trong mục Mức độ chắc chắn. Review (Claude Sonnet 5.5, 30/10/2026): sai (nhẹ). Trang viết "Bài nào trên site này cũng gắn nhãn": quá rộng, vì trang Hỗ trợ, công cụ và nhiều trang khác không có khung nhãn. Bảy bài thí nghiệm đã chuyển đều có 3–4 khung nhãn (grep). Đã sửa trang và cau thành "Mỗi bài thí nghiệm ở đây đều gắn nhãn ...".'
+    review: sai
   - id: s5
     cau: 'Câu tóm Milgram khớp trang nhà: 26 trên 40 người đi đến nấc điện 450V; lần làm lại của Burger (2009); tranh luận vâng lời mù quáng hay đồng nhất với sứ mệnh khoa học.'
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang milgram.md hiện có "26 trên 40 người", "65% đi đến 450V", Burger (2009). Số liệu và nhãn do hồ sơ thi-nghiem/milgram kiểm (phần 1, agent khác): nếu phần ấy sửa thì so lại. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang milgram.md hiện có "26 trên 40 người", "65% đi đến 450V", Burger (2009). Số liệu và nhãn do hồ sơ thi-nghiem/milgram kiểm (phần 1, agent khác): nếu phần ấy sửa thì so lại. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s6
     cau: 'Câu tóm Asch khớp trang nhà: 37% câu trả lời hùa theo nhóm nói sai; phân tích tổng hợp 133 nghiên cứu ở 17 nước của Bond và Smith (1996).'
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang asch.md hiện có "37% câu trả lời", "133 nghiên cứu trong 17 nước (Bond và Smith, 1996)". Do hồ sơ thi-nghiem/asch kiểm; so lại nếu sửa. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang asch.md hiện có "37% câu trả lời", "133 nghiên cứu trong 17 nước (Bond và Smith, 1996)". Do hồ sơ thi-nghiem/asch kiểm; so lại nếu sửa. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s7
     cau: 'Câu tóm hiệu ứng người ngoài cuộc khớp trang nhà: 10% người báo khói khi ngồi cùng hai người dửng dưng; mô hình 5 bước; phân tích tổng hợp của Fischer và cộng sự (2011).'
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang darley-latane.md hiện có "10%", "5 bước", Fischer và cộng sự (2011). Do hồ sơ thi-nghiem/darley-latane kiểm; so lại nếu sửa. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang darley-latane.md hiện có "10%", "5 bước", Fischer và cộng sự (2011). Do hồ sơ thi-nghiem/darley-latane kiểm; so lại nếu sửa. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s8
     cau: 'Câu tóm con khỉ đột vô hình khớp trang nhà: khoảng một nửa số người không thấy khỉ đột; mù thay đổi; gợi ý về rủi ro khi lái xe.'
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Chữ cũ: "mù thay đổi và bài học cho lái xe an toàn". Chữ mới: "mù thay đổi và gợi ý về rủi ro khi lái xe". Lý do: Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang khi-dot-vo-hinh.md hiện có "khoảng một nửa", "mù thay đổi" và nói nghiên cứu này không đo việc lái xe, chỉ gợi ý về rủi ro. Do hồ sơ thi-nghiem/khi-dot-vo-hinh (phần 1) kiểm số liệu; so lại nếu trang ấy đổi. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Chữ cũ: "mù thay đổi và bài học cho lái xe an toàn". Chữ mới: "mù thay đổi và gợi ý về rủi ro khi lái xe". Lý do: Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Trang khi-dot-vo-hinh.md hiện có "khoảng một nửa", "mù thay đổi" và nói nghiên cứu này không đo việc lái xe, chỉ gợi ý về rủi ro. Do hồ sơ thi-nghiem/khi-dot-vo-hinh (phần 1) kiểm số liệu; so lại nếu trang ấy đổi. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s9
     cau: 'Câu tóm Zimbardo khớp trang nhà: 24 sinh viên được chọn bốc thăm vai; dừng sau 6 ngày thay vì 2 tuần; Le Texier (2019) chỉ ra nhiều sai sót về phương pháp; kết luận gốc gắn nhãn tranh cãi.'
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Chữ cũ: "24 sinh viên bốc thăm vai ... Le Texier (2019) cho rằng nhiều chi tiết đã được dàn dựng". Chữ mới: "24 sinh viên được chọn bốc thăm vai ... chỉ ra nhiều sai sót về phương pháp". Lý do: khớp trang nhà (n4, n30) và không thêm con số khác trang nhà. Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Khung :::tranh-cai có trong zimbardo.md. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Chữ cũ: "24 sinh viên bốc thăm vai ... Le Texier (2019) cho rằng nhiều chi tiết đã được dàn dựng". Chữ mới: "24 sinh viên được chọn bốc thăm vai ... chỉ ra nhiều sai sót về phương pháp". Lý do: khớp trang nhà (n4, n30) và không thêm con số khác trang nhà. Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Khung :::tranh-cai có trong zimbardo.md. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s10
     cau: 'Câu tóm Pygmalion khớp trang nhà: giáo viên được báo một số học sinh ngẫu nhiên là "kẻ nở muộn" thì theo báo cáo gốc các em tăng điểm IQ nhiều hơn; phân tích tổng hợp cho hiệu ứng trung bình khoảng 0,11.'
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Chữ cũ: "giáo viên được \"mách\" vài học sinh ngẫu nhiên là \"kẻ nở muộn\" thì các em tiến bộ hơn thật". Chữ mới: câu trên. Lý do: khớp trang nhà (n1, b3); bỏ "tiến bộ hơn thật" và "vài". Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). pygmalion.md có 0,11. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Chữ cũ: "giáo viên được \"mách\" vài học sinh ngẫu nhiên là \"kẻ nở muộn\" thì các em tiến bộ hơn thật". Chữ mới: câu trên. Lý do: khớp trang nhà (n1, b3); bỏ "tiến bộ hơn thật" và "vài". Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). pygmalion.md có 0,11. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s11
     cau: 'Câu tóm Robbers Cave khớp trang nhà: 22 bé trai xếp thành hai nhóm; cạnh tranh gây thù địch; mục tiêu chung làm thù địch dịu đi; lý thuyết xung đột thực tế của Sherif.'
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'Chữ cũ: "22 bé trai chia hai nhóm, ... mục tiêu chung làm hòa". Chữ mới: "xếp thành hai nhóm ... làm thù địch dịu đi". Lý do: khớp trang nhà (s3, e2, g3). Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'Chữ cũ: "22 bé trai chia hai nhóm, ... mục tiêu chung làm hòa". Chữ mới: "xếp thành hai nhóm ... làm thù địch dịu đi". Lý do: khớp trang nhà (s3, e2, g3). Đã kiểm trên trang src/content/docs/thi-nghiem/index.md (đọc 30/10/2026). Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: s12
     cau: Câu tóm của tám thí nghiệm chưa chuyển (kẹo dẻo, Pavlov, Skinner, Harlow, Bandura, Little Albert, Schachter và Singer, Seligman) khớp trang nhà.
     loai: ve-site
     ket_qua: da-bo
-    ghi_chu: 'chưa chắc: tám trang nhà chưa chuyển nên chưa so được; các số trong câu tóm (918 trẻ; 17–18 giờ; nhãn tranh luận của kẹo dẻo, Pavlov, Seligman 2016...) phải được kiểm khi từng trang nhà lên, và không được thêm con số khác trang nhà. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa.'
+    ghi_chu: 'chưa chắc: tám trang nhà chưa chuyển nên chưa so được; các số trong câu tóm (918 trẻ; 17–18 giờ; nhãn tranh luận của kẹo dẻo, Pavlov, Seligman 2016...) phải được kiểm khi từng trang nhà lên, và không được thêm con số khác trang nhà. Người gom (Claude Opus 5.5, 30/10/2026): bỏ cùng danh sách viết tay: câu tóm mỗi thí nghiệm chép lại con số của trang nhà (quy tắc: nơi khác không thêm số, chỉ link về nhà), và tám trang nhà chưa có thì không so được. Danh sách sinh từ dữ liệu lấy tên và mô tả từ chính trang nhà đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thuộc danh sách viết tay đã bỏ; trang index.md kiểm lại 30/10/2026: không còn câu tóm này, danh sách sinh từ ::danh-sach-bai{nhom="thi-nghiem"}, tên và mô tả lấy từ trang nhà. Bỏ đúng.'
+    review: dung
   - id: p1
     cau: Mười lăm thí nghiệm này nổi tiếng trong tâm lý học.
     loai: lich-su
@@ -113,7 +126,10 @@ nhan_dinh:
     trich: The Stanford Prison Experiment (SPE) is one of psychology's most famous studies. | that now famous experiment
     vi_tri: Le Texier Abstract; Raudenbush tr. 85
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "mười lăm thí nghiệm nổi tiếng nhất" (mô tả) và "hầu như ai học tâm lý học cũng từng nghe tên". Chữ mới: "nổi tiếng" và "nổi tiếng của tâm lý học". Lý do: chỉ có nguồn xác nhận độ nổi tiếng của hai trong mười lăm (Zimbardo, Pygmalion); xếp hạng "nhất" và "hầu như ai cũng nghe tên" không có nguồn. chưa chắc cho mười ba thí nghiệm còn lại.'
+    ghi_chu: 'Chữ cũ: "mười lăm thí nghiệm nổi tiếng nhất" (mô tả) và "hầu như ai học tâm lý học cũng từng nghe tên". Chữ mới: "nổi tiếng" và "nổi tiếng của tâm lý học". Lý do: chỉ có nguồn xác nhận độ nổi tiếng của hai trong mười lăm (Zimbardo, Pygmalion); xếp hạng "nhất" và "hầu như ai cũng nghe tên" không có nguồn. chưa chắc cho mười ba thí nghiệm còn lại. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu ở mức "nổi tiếng", không xếp hạng. Chấp nhận như nhận xét phổ biến; hai nguồn (Le Texier, Raudenbush) nói riêng Zimbardo và Pygmalion "famous". Lượt 2 không thấy sai.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Số lượng 15 là thuộc tính của trang, không có nguồn ngoài để kiểm; không thấy sai.
+    review: dung
   - id: p2
     cau: 'Các thí nghiệm kinh điển sống hai cuộc đời: một trong sách giáo khoa và một trong phòng thí nghiệm, nơi các nhà nghiên cứu làm lại, soi xét và đôi khi lật ngược cách hiểu ban đầu.'
     loai: lich-su
@@ -123,7 +139,11 @@ nhan_dinh:
     trich: a majority of textbook authors have ignored these criticisms in their discussions of the SPE | Replication effects were half the magnitude of original effects
     vi_tri: Le Texier Abstract; OSC Abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "nơi các nhà nghiên cứu liên tục làm lại, soi xét và đôi khi lật ngược". Chữ mới: bỏ "liên tục". Lý do: nguồn: sách giáo khoa bỏ qua phê bình (Le Texier); làm lại 100 nghiên cứu cho hiệu ứng nhỏ hơn một nửa (OSC): ví dụ, không phải bằng chứng cho "liên tục".'
+    ghi_chu: 'Chữ cũ: "nơi các nhà nghiên cứu liên tục làm lại, soi xét và đôi khi lật ngược". Chữ mới: bỏ "liên tục". Lý do: nguồn: sách giáo khoa bỏ qua phê bình (Le Texier); làm lại 100 nghiên cứu cho hiệu ứng nhỏ hơn một nửa (OSC): ví dụ, không phải bằng chứng cho "liên tục". Review (Claude Sonnet 5.5, 30/10/2026): dung. Trang: "nơi các nhà nghiên cứu làm lại, soi xét và đôi khi lật ngược"; bám OSC 2015 và Le Texier 2019, bỏ "liên tục". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.aac4716" ]
+    luot_2_ghi_chu: Phần 'sống hai cuộc đời' là lời văn; phần soi xét/làm lại khớp OSC 2015.
+    review: dung
   - id: p3
     cau: Một kết quả chưa từng được làm lại thì chưa thể coi là chắc; khi làm lại, nhiều kết quả yếu đi hoặc không còn, nên kết quả sống sót qua nhiều lần làm lại đáng tin hơn.
     loai: tai-lap
@@ -132,23 +152,30 @@ nhan_dinh:
     trich: Replication effects were half the magnitude of original effects, representing a substantial decline. ... Thirty-six percent of replications had statistically significant results
     vi_tri: Abstract
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Thí nghiệm chưa từng được làm lại thì chỉ là một câu chuyện hay; thí nghiệm sống sót qua nhiều lần làm lại mới đáng tin." Chữ mới: câu trên. Lý do: cách nói cũ là ẩn dụ không có nguồn; viết lại bám số liệu của OSC (100 nghiên cứu làm lại, 97% gốc có ý nghĩa, 36% làm lại có ý nghĩa). Chỉ đọc tóm tắt.'
+    ghi_chu: 'Chữ cũ: "Thí nghiệm chưa từng được làm lại thì chỉ là một câu chuyện hay; thí nghiệm sống sót qua nhiều lần làm lại mới đáng tin." Chữ mới: câu trên. Lý do: cách nói cũ là ẩn dụ không có nguồn; viết lại bám số liệu của OSC (100 nghiên cứu làm lại, 97% gốc có ý nghĩa, 36% làm lại có ý nghĩa). Chỉ đọc tóm tắt. Review (Claude Sonnet 5.5, 30/10/2026): dung. Trang đã viết lại bám OSC 2015: làm lại nhiều kết quả yếu đi hoặc không còn; kết luận "sống sót qua nhiều lần làm lại đáng tin hơn" là suy luận hợp lý, không có số. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.aac4716" ]
+    luot_2_ghi_chu: Kết luận 'sống sót qua nhiều lần làm lại đáng tin hơn' là suy luận hợp lý khớp OSC; không phải số liệu.
+    review: dung
   - id: p4
-    cau: 'Mẫu của các thí nghiệm kinh điển đều đặc thù: ví dụ 40 người đàn ông ở Yale (Milgram), trẻ ở một nhà trẻ của Stanford (Bandura), sinh viên Mỹ (Zimbardo).'
+    cau: 'Mẫu của các thí nghiệm kinh điển đều đặc thù: ví dụ 40 người đàn ông ở vùng New Haven (Milgram), trẻ ở một nhà trẻ của Stanford (Bandura), sinh viên Mỹ (Zimbardo).'
     loai: phat-hien
     nguon:
       - bandura1961
       - haney1973
-    trich: The subjects were 36 boys and 36 girls enrolled in the Stanford University Nursery School. | The subjects were normal, healthy males attending colleges throughout the United States who were in the Stanford area during the summer.
-    vi_tri: Bandura, Ross & Ross, mục Method; Haney, mục Subjects
+    trich: The subjects were 40 males between the ages of 20 and 50, drawn from New Haven and the surrounding communities. | The subjects were 36 boys and 36 girls enrolled in the Stanford University Nursery School. | The subjects were normal, healthy males attending colleges throughout the United States who were in the Stanford area during the summer.
+    vi_tri: Milgram 1963, mục Method (Subjects); Bandura, Ross & Ross, mục Method; Haney, mục Subjects
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "trẻ con em giảng viên Stanford". Chữ mới: "trẻ ở một nhà trẻ của Stanford". Lý do: bài gốc nói 72 trẻ học ở Stanford University Nursery School, không nói là con em giảng viên. "40 người đàn ông ở Yale": chưa chắc, thuộc hồ sơ thi-nghiem/milgram (Milgram 1963 chưa mở ở phần này); "sinh viên Mỹ" khớp Haney. Tên "Bandura" lấy bài 1961 (Bobo): đối chiếu với trang Bandura khi trang ấy chuyển.'
+    ghi_chu: 'Chữ cũ: "trẻ con em giảng viên Stanford". Chữ mới: "trẻ ở một nhà trẻ của Stanford". Lý do: bài gốc nói 72 trẻ học ở Stanford University Nursery School, không nói là con em giảng viên. "40 người đàn ông ở Yale": chưa chắc, thuộc hồ sơ thi-nghiem/milgram (Milgram 1963 chưa mở ở phần này); "sinh viên Mỹ" khớp Haney. Tên "Bandura" lấy bài 1961 (Bobo): đối chiếu với trang Bandura khi trang ấy chuyển. Review (Claude Sonnet 5.5, 30/10/2026): sai. Lượt 2 chưa xác nhận được vì không mở bài gốc. Review đọc toàn văn Milgram 1963 (milgram1963.pdf, mục Subjects): "40 males between the ages of 20 and 50, drawn from New Haven and the surrounding communities" (nhận qua quảng cáo báo và thư), tức không phải "ở Yale" (Yale chỉ là nơi làm thí nghiệm). Đã sửa trang index thành "40 người đàn ông ở vùng New Haven". Cần nhắc agent trang milgram: tiêu đề mục "40 người đàn ông ở Yale" có cùng vấn đề. Bandura (72 trẻ, Stanford University Nursery School) và Haney (sinh viên đại học khắp nước Mỹ) khớp trích lượt 1.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Không mở được toàn văn bài gốc (đóng, không có bản tác giả); chỉ đọc tóm tắt. Cỡ mẫu Milgram 1963 (40 nam, Yale), Bandura 1961 (trẻ Stanford), Zimbardo 1973 (sinh viên Mỹ) chỉ có tóm tắt/mở bài; tóm tắt không nêu các chi tiết này. Hồ sơ của từng trang nhà nên kiểm.
+    review: sai
   - id: s13
     cau: Mỗi thí nghiệm lên site sau khi được kiểm chứng lại từ đầu; thí nghiệm chưa xong được đếm ở cuối danh sách.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): câu mới, cùng khuôn với trang lĩnh vực (D2-L1). Bản thật chỉ dựng trang đã khóa (src/ban-build.mjs); danhSachBai in "Còn N bài sắp có" ở cuối.'
-    review: null
+    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): câu mới, cùng khuôn với trang lĩnh vực (D2-L1). Bản thật chỉ dựng trang đã khóa (src/ban-build.mjs); danhSachBai in "Còn N bài sắp có" ở cuối. Review (Claude Sonnet 5.5, 30/10/2026): dung. Kiểm src/ban-build.mjs (bản thật chỉ dựng trang đã khóa) và danhSachBai ("Còn N bài sắp có: mỗi bài lên site sau khi được kiểm chứng lại"). Khớp.'
+    review: dung
 doi_chu:
   - cu: mười lăm thí nghiệm nổi tiếng nhất của tâm lý học
     moi: mười lăm thí nghiệm nổi tiếng của tâm lý học
@@ -180,4 +207,10 @@ doi_chu:
   - cu: 'Mục "Mười lăm thí nghiệm": 15 dòng viết tay, mỗi dòng tên bài, link và một câu tóm có con số'
     moi: Một câu dẫn và ::danh-sach-bai{nhom="thi-nghiem"} (chỉ trang đã khóa, tên và mô tả từ trang nhà)
     ly_do: "s1, s5–s12: không chép lại số của trang nhà; tám trang chưa lên."
+  - cu: Bài nào trên site này cũng gắn nhãn mức độ chắc chắn cho các kết luận chính
+    moi: Mỗi bài thí nghiệm ở đây đều gắn nhãn mức độ chắc chắn cho các kết luận chính
+    ly_do: 'Review s4: "bài nào trên site này" quá rộng.'
+  - cu: 40 người đàn ông ở Yale
+    moi: 40 người đàn ông ở vùng New Haven
+    ly_do: 'Review p4: Milgram 1963 chọn người từ New Haven và vùng lân cận; Yale là nơi làm thí nghiệm.'
 ghi_chu: 'Trang khung: câu về chính site là ve-site (không có nguon; review kiểm). Câu tóm mỗi thí nghiệm khớp trang nhà: bảy trang đã chuyển đã so chữ ngày 30/10/2026; tám trang chưa chuyển chưa so được (s12). Phần 1 (milgram, asch, darley-latane, khi-dot-vo-hinh) do agent khác kiểm: các số trong câu tóm phải khớp nếu trang nhà đổi.'

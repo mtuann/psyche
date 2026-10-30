@@ -27,7 +27,7 @@ Bạn căng mắt đếm: 12... 13... 14... 15. Xong! Bạn tự tin với con s
 
 ## Điều gì đang xảy ra?
 
-Hiện tượng này gọi là **mù không chú ý** (inattentional blindness): khi sự chú ý dồn hết vào một việc, não có thể bỏ qua hoàn toàn những thứ bất ngờ — kể cả những thứ rất lộ liễu — ngay trước mắt ta.
+Hiện tượng này gọi là **mù không chú ý** (inattentional blindness): khi chú ý dồn vào một việc, ta có thể không thấy những thứ bất ngờ nhưng nổi bật — kể cả những thứ rất lộ liễu — ngay trước mắt.
 
 Ta *cảm thấy* mình thấy toàn bộ khung cảnh, nhưng thí nghiệm cho thấy ta bỏ lỡ nhiều hơn ta tưởng: khi chú ý dồn vào một việc, nhiều người không hề ý thức được thứ bất ngờ ngay trước mắt.
 

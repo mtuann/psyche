@@ -4,593 +4,796 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/asch.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-10-30'
-  nhanh: moi/d3-l1
-  ma_bam: null
-  nguoi:
-    luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 1/2); chỗ khó: Claude Opus 5.5'
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-10-30'
+    nhanh: moi/d3-l1
+    ma_bam: sha256:8bc2cfbd16932446c8472651f8c10977009b037357d852810483ffaa76ed1bee
+    nguoi:
+      luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 1/2); chỗ khó: Claude Opus 5.5'
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D3-L1)
+      review: Claude Opus 5.5 (agent review D3-L1, 30/10/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d3-l1-kiem-mau.yml), đạt, 30/10/2026
 nguon:
-- id: asch1956
-  ten: 'Asch (1956), Psychol Monogr 70(9), 1–70: toàn văn (bản quét có chữ ở eclass.uowm.gr)'
-  link: https://doi.org/10.1037/h0093718
-  toan_van: true
-- id: asch1955
-  ten: 'Asch (1955), Opinions and social pressure, Scientific American: toàn văn (bản đăng lại ở panarchy.org)'
-  link: https://www.panarchy.org/asch/social.pressure.1955.html
-  toan_van: true
-- id: bond1996
-  ten: 'Bond & Smith (1996), Psychol Bull 119(1), 111–137: toàn văn (PDF ở d-r-b-o-b.github.io)'
-  link: https://doi.org/10.1037/0033-2909.119.1.111
-  toan_van: true
-- id: franzen2023
-  ten: 'Franzen & Mader (2023), PLOS ONE 18(11), e0294325: tóm tắt (PubMed 38019779)'
-  link: https://doi.org/10.1371/journal.pone.0294325
-  toan_van: false
-- id: openstax2e
-  ten: 'OpenStax Psychology 2e (2020), mục 12.4 Conformity, Compliance, and Obedience: toàn văn'
-  link: https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience
-  toan_van: true
-- id: berns2005
-  ten: 'Berns và cộng sự (2005), Biol Psychiatry 58(3), 245–253: tóm tắt (PubMed 15978553)'
-  link: https://doi.org/10.1016/j.biopsych.2005.04.012
-  toan_van: false
-- id: germar2014
-  ten: 'Germar và cộng sự (2014), Pers Soc Psychol Bull 40(2), 217–231: tóm tắt (OpenAlex; siêu dữ liệu Crossref)'
-  link: https://doi.org/10.1177/0146167213508985
-  toan_van: false
+  - id: asch1956
+    ten: 'Asch (1956), Psychol Monogr 70(9), 1–70: toàn văn (bản quét có chữ ở eclass.uowm.gr)'
+    link: https://doi.org/10.1037/h0093718
+    toan_van: true
+  - id: asch1955
+    ten: 'Asch (1955), Opinions and social pressure, Scientific American: toàn văn (bản đăng lại ở panarchy.org)'
+    link: https://www.panarchy.org/asch/social.pressure.1955.html
+    toan_van: true
+  - id: bond1996
+    ten: 'Bond & Smith (1996), Psychol Bull 119(1), 111–137: toàn văn (PDF ở d-r-b-o-b.github.io)'
+    link: https://doi.org/10.1037/0033-2909.119.1.111
+    toan_van: true
+  - id: franzen2023
+    ten: 'Franzen & Mader (2023), PLOS ONE 18(11), e0294325: tóm tắt (PubMed 38019779)'
+    link: https://doi.org/10.1371/journal.pone.0294325
+    toan_van: false
+  - id: openstax2e
+    ten: 'OpenStax Psychology 2e (2020), mục 12.4 Conformity, Compliance, and Obedience: toàn văn'
+    link: https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience
+    toan_van: true
+  - id: berns2005
+    ten: 'Berns và cộng sự (2005), Biol Psychiatry 58(3), 245–253: tóm tắt (PubMed 15978553)'
+    link: https://doi.org/10.1016/j.biopsych.2005.04.012
+    toan_van: false
+  - id: germar2014
+    ten: 'Germar và cộng sự (2014), Pers Soc Psychol Bull 40(2), 217–231: tóm tắt (OpenAlex; siêu dữ liệu Crossref)'
+    link: https://doi.org/10.1177/0146167213508985
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex "Asch conformity Vietnam" (30/10/2026), cùng PubMed và Crossref ở lượt 1, lượt 2: không có nghiên cứu trên người Việt'
+    link: https://api.openalex.org/works?search=Asch%20conformity%20Vietnam
 nhan_dinh:
-- id: n1
-  cau: Asch (1951, 1956) cho người tham gia so sánh độ dài đường thẳng trước một nhóm "chim mồi" nói sai có chủ đích đồng loạt.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: All but one of the group had met previously with the experimenter and were instructed to respond on certain trials with wrong and unanimous judgments.
-  vi_tri: Mục II.A
-  ket_qua: dung
-  ghi_chu: Câu mô tả (description) của trang. Bài 1951 (Guetzkow) không mở được; chỉ dựa vào bài 1956, ghi cả hai năm vì trang gọi tên cả hai.
-- id: n2
-  cau: Trong các lượt gài bẫy, khoảng 37% (36,8%) câu trả lời hùa theo nhóm.
-  loai: so-lieu
-  nguon:
-  - asch1956
-  - asch1955
-  trich: under group pressure the minority subjects swung to acceptance of the misleading majority's wrong judgments in 36.8 per cent of the selections
-  vi_tri: Asch 1955; bảng 3 của bài 1956 (N = 123, trung bình 36,8%)
-  ket_qua: dung
-  ghi_chu: 'Dùng cho mô tả, đáp án ô thu gọn, hộp hồ sơ. Bài 1956 (bản quét): bảng 3, dòng "All experimental (N=123)": 36.8.'
-- id: n3
-  cau: Ba phần tư số người tham gia hùa theo ít nhất một lần.
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: Only one-fourth of the subjects in the three experimental groups showed errorless performances
-  vi_tri: Mục III, kết quả định lượng, tr. 9–10
-  ket_qua: dung
-  ghi_chu: '29 trên 123 người không sai lần nào (bảng 3): 24%, nên khoảng 76% hùa theo ít nhất một lần.'
-- id: n4
-  cau: 'Hãy tưởng tượng: nhóm 7 người, hai tấm bìa (một đường mẫu, ba đường so sánh đánh số 1, 2, 3), người tham gia thật trả lời gần cuối, hai lượt đầu ai cũng đúng, đến lượt thứ ba nhóm đồng loạt nói sai.'
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: The experiment opened with two neutral trials to which the majority responded correctly. On the third trial, the majority deviated from the correct value by 3/4 inches
-  vi_tri: Mục II.B, cấu trúc nhiệm vụ
-  ket_qua: da-sua
-  ghi_chu: 'Tình huống giả định (gia-dinh) nhưng mô tả theo thiết kế gốc. Chữ cũ: "Ba lượt đầu, ai cũng trả lời đúng. Đến lượt thứ tư"; chữ mới: "Hai lượt đầu… lượt thứ ba". Lý do: bài 1956 có hai lượt trung tính mở đầu, lượt 3 là lượt đầu tiên nhóm nói sai. Số người trong nhóm (7–9) theo Asch; người tham gia thật ngồi ở ghế gần cuối (Hình 1).'
-- id: n5
-  cau: Ở Asch, nhóm có 7–9 người, trong đó chỉ một người là người tham gia thật.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  - bond1996
-  trich: A group of seven to nine individuals was gathered in a classroom to take part in what appeared to be a simple experiment in visual discrimination.
-  vi_tri: Mục II.A
-  ket_qua: dung
-  ghi_chu: 'Asch tự mô tả "nhóm 7–9 người" ở Mục II.A nhưng cũng viết "đa số gồm 7–9 người": B&S 1996 ghi nhận chỗ không nhất quán này. Trang dùng "nhóm 7–9 người".'
-- id: n6
-  cau: Người tham gia thật là người trả lời gần cuối (ghế kế cuối).
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: the critical subject was in the next to the last seat in the second row
-  vi_tri: Mục II.B, Hình 1
-  ket_qua: dung
-- id: n7
-  cau: 'Cái giá của việc nói khác đi trở nên đắt đỏ: sợ bị chê cười, sợ mình nhìn nhầm, sợ trở thành kẻ lập dị.'
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: Some, including the most independent, feared that the group would disapprove of them for standing out or would suspect them of exhibitionism or wilful stubbornness.
-  vi_tri: Mục phỏng vấn sau thí nghiệm
-  ket_qua: dung
-  ghi_chu: Lời kể của người tham gia trong phỏng vấn; "sợ mình nhìn nhầm" khớp các lời kể như "I wasn't ever absolutely sure". Không phải mô tả cơ chế.
-- id: n8
-  cau: Asch làm thí nghiệm vào đầu thập niên 1950, khi các nghiên cứu trước đó cho thấy ý kiến đổi rất dễ chỉ vì sức nặng của số đông hay uy tín; ông nghi ngờ rằng ý kiến "nhạt như nước" đến thế.
-  loai: lich-su
-  nguon:
-  - asch1955
-  trich: Now the very ease of success in these experiments arouses suspicion.
-  vi_tri: Asch 1955, đoạn mở đầu
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "khi ông muốn phản bác một ý tưởng đang thịnh hành: rằng con người dễ dàng bị đám đông nuốt chửng"; chữ mới như trên. Lý do: động cơ "phản bác" không có trong nguồn; Asch (1955) nói các thắng lợi quá dễ của các nghiên cứu trước làm ông nghi ngờ, và đặt câu hỏi liệu ý kiến có "watery" đến vậy (đoạn kế tiếp). Bản 1955 là bản đăng lại ở panarchy.org (bậc 3 về nơi đăng, bài của chính Asch).'
-- id: n9
-  cau: Đa số câu trả lời (63%) không hùa theo.
-  loai: so-lieu
-  nguon:
-  - asch1956
-  - asch1955
-  trich: Despite this large effect, the preponderance of judgments was independent
-  vi_tri: Mục III.E, tóm tắt định lượng
-  ket_qua: dung
-  ghi_chu: 100 − 36,8 = 63,2%.
-- id: n10
-  cau: 'Khi làm một mình (nhóm đối chứng), người ta gần như không sai: 0,7% câu trả lời sai.'
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: in contrast with errors of less than 1 per cent under control conditions
-  vi_tri: Bảng 3, nhóm đối chứng (N = 37)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "vì bài toán dễ đến mức trẻ con cũng làm đúng" (không có trong nguồn); chữ mới: "khi làm một mình, người ta gần như không sai (0,7%)". Bảng 3: nhóm đối chứng 35/37 người không sai, trung bình sai 0,7%.'
-- id: n11
-  cau: Thí nghiệm có tổng cộng 123 người tham gia thật, đều là nam sinh viên đại học, ở ba trường.
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: The subjects were all male, white college students, ranging in age from 17 to 25
-  vi_tri: Mục II.A
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "123 nam sinh viên Mỹ"; chữ mới: "123 nam sinh viên đại học, ở ba trường". Lý do: bài 1956 không nêu nước, chỉ nói "ba cơ sở giáo dục" ẩn danh; "Mỹ" là suy ra. Ba nhóm: I (n = 70), II (25), III (28).'
-- id: n12
-  cau: Mỗi người làm 18 lượt so sánh độ dài đường thẳng; 12 lượt là "gài bẫy" (nhóm đồng loạt nói sai), 6 lượt trung tính.
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: They consisted of 12 critical and 6 neutral trials, distributed in a random order.
-  vi_tri: Mục II.C (Experiment 1)
-  ket_qua: dung
-  ghi_chu: Câu "18 such comparisons" ở Mục II.A; 12 lượt gài bẫy ở "Critical trials".
-- id: n13
-  cau: Ở các lượt gài bẫy, các chim mồi đồng loạt đưa ra cùng một đáp án sai rõ ràng (chênh từ 3/4 đến 1 3/4 inch).
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: departed from the true value by amounts ranging from 3/4 to 1 3/4 inches
-  vi_tri: Mục II.A
-  ket_qua: dung
-  ghi_chu: Trang chỉ nói "sai rõ ràng", không nêu con số.
-- id: n14
-  cau: 'Bài toán dễ: người so sánh đường thẳng một mình gần như không sai (đối chứng 95% người không sai lần nào).'
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: in the control group 95 per cent
-  vi_tri: Mục III, bảng 3
-  ket_qua: dung
-  ghi_chu: Dùng cho câu "bài toán dễ" ở Điều gì đang xảy ra.
-- id: n15
-  cau: 'Hộp hồ sơ, dòng Kết quả chính: 36,8% câu trả lời hùa theo nhóm sai (đối chứng 0,7%), khoảng ba phần tư số người hùa theo ít nhất một lần.'
-  loai: so-lieu
-  nguon:
-  - asch1956
-  - asch1955
-  trich: under group pressure the minority subjects swung to acceptance of the misleading majority's wrong judgments in 36.8 per cent of the selections
-  vi_tri: Asch 1955; bảng 3, bài 1956
-  ket_qua: dung
-  ghi_chu: Dòng Kết quả chính của hộp hồ sơ; cùng câu với n2, n3 và n11 (đối chứng 0,7%).
-- id: n16
-  cau: Khoảng 25% số người không bao giờ hùa theo.
-  loai: so-lieu
-  nguon:
-  - asch1956
-  - asch1955
-  trich: about one quarter of the subjects were completely independent and never agreed with the erroneous judgments of the majority
-  vi_tri: Asch 1955, đoạn kết quả; bảng 3 (29/123)
-  ket_qua: dung
-- id: n17
-  cau: Nhóm 3 người đã tạo ra gần như toàn bộ áp lực; thêm người nữa không tăng đáng kể (Asch, 1955).
-  loai: phat-hien
-  nguon:
-  - asch1955
-  trich: But further increases in the size of the majority apparently did not increase the weight of the pressure substantially.
-  vi_tri: Asch 1955, đoạn về quy mô đa số
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: dẫn Asch 1956 và nói chắc "nhóm 3 người đã tạo gần như toàn bộ áp lực"; bài 1956 không có biến thể quy mô nhóm. Chữ mới dẫn Asch 1955 (đa số 1 người: ít hùa theo; 2 người: 13,6%; 3 người: 31,8%; thêm người nữa không tăng đáng kể) và thêm lưu ý của Bond và Smith. Trang không nêu các con số này.'
-- id: n18
-  cau: Chỉ cần một người cùng phòng nói đúng, tỉ lệ sai còn khoảng một phần tư so với khi cả nhóm nhất trí.
-  loai: so-lieu
-  nguon:
-  - asch1955
-  trich: 'Its pressure on the dissenting individual was reduced to one fourth: that is, subjects answered incorrectly only one fourth as often as under the pressure of a unanimous majority.'
-  vi_tri: Asch 1955, đoạn về người cùng phòng đồng tình
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chỉ cần một chim mồi nói đúng (phá vỡ sự nhất trí), tỉ lệ hùa theo sụt mạnh ([Asch, 1956])"; chữ mới: "chỉ cần một người cùng phòng nói đúng… còn khoảng một phần tư". Lý do: biến thể này là của Asch 1951/1955, không có trong bài 1956; "một chim mồi nói đúng" chưa chính xác: người đồng tình là người thật không biết sắp đặt hoặc người được dặn nói đúng. Dùng ở Kết quả, Mức độ chắc chắn, Áp dụng và câu hỏi.'
-- id: n19
-  cau: 'Bond và Smith (1996) lưu ý kết luận "3 người là đủ" của Asch về sau bị thách thức: quy mô nhóm vẫn có liên hệ với mức hùa theo.'
-  loai: phat-hien
-  nguon:
-  - bond1996
-  trich: Majority size represented by Tanford and Penrod's (1984) SIM was significantly related to conformity
-  vi_tri: Mục Results, các biến điều chỉnh
-  ket_qua: dung
-  ghi_chu: 'B&S cũng tóm tắt lại: Asch (1951) thấy ít hùa theo khi đa số 1–2 người, tăng mạnh ở 3 người, tăng thêm không đáng kể; kết luận này bị Latané & Wolf (1981) và Tanford & Penrod (1984) thách thức (tr. 114–115).'
-- id: n20
-  cau: Bond và Smith (1996) gộp 133 nghiên cứu dùng bài toán so sánh đường thẳng kiểu Asch, thực hiện ở 17 quốc gia.
-  loai: so-lieu
-  nguon:
-  - bond1996
-  trich: The literature search produced 133 studies drawn from 17 countries.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "133 nghiên cứu dùng đúng bài toán đường thẳng của Asch"; chữ mới: "dùng bài toán so sánh đường thẳng kiểu Asch". Lý do: các nghiên cứu gộp cả bản dùng chim mồi trực diện (Asch) lẫn bản "nhóm giả" qua phản hồi sai (Crutchfield).'
-- id: n21
-  cau: Ở Mỹ, mức hùa theo giảm dần kể từ những nghiên cứu của Asch ở thập niên 1950.
-  loai: so-lieu
-  nguon:
-  - bond1996
-  trich: An analysis of U.S. studies found that conformity has declined since the 1950s.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "giảm dần từ thập niên 1950 đến thập niên 1990 — có lẽ vì chuẩn mực văn hóa về sự độc lập đã thay đổi". Chữ mới bỏ mốc "1990" (tóm tắt chỉ nói "since the 1950s") và bỏ lời giải thích, thay bằng: một số tác giả gắn xu hướng với bối cảnh chính trị – xã hội; phân tích không cho biết nguyên nhân. Lý do: nguyên nhân không được phân tích kiểm tra.'
-- id: n22
-  cau: Một số tác giả gắn mức hùa theo cao ở thập niên 1950 và xu hướng giảm sau đó với bối cảnh chính trị – xã hội từng thời kỳ.
-  loai: lich-su
-  nguon:
-  - bond1996
-  trich: several commentators have suggested that the relatively high levels of conformity found in experiments conducted in the early 1950s (notably Asch, 1952b, 1956) was in part a product of the McCarthy era
-  vi_tri: Phần mở đầu
-  ket_qua: dung
-  ghi_chu: B&S tóm tắt quan điểm của các tác giả khác (Larsen, Mann, Perrin & Spencer).
-- id: n23
-  cau: Các nước văn hóa tập thể hùa theo nhiều hơn các nước văn hóa cá nhân; mối liên hệ có ý nghĩa ở cả ba cách đo văn hóa (Hofstede, Schwartz, Trompenaars).
-  loai: so-lieu
-  nguon:
-  - bond1996
-  trich: Results from 3 surveys were used to assess a country's individualism-collectivism, and for each survey the measures were found to be significantly related to conformity.
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: 'Ba khảo sát: Hofstede (1980), Schwartz (1994), Trompenaars (1993), nêu ở phần mở đầu.'
-- id: n24
-  cau: Franzen và Mader (2023) làm lại thí nghiệm Asch với 210 người, mỗi nhóm có 5 chim mồi, thấy tỉ lệ sai 33%, khớp với kết quả gốc.
-  loai: tai-lap
-  nguon:
-  - franzen2023
-  trich: we replicate the original Asch experiment with five confederates and one naïve subject in each group (N = 210)
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "một lần làm lại gần đây đăng trên PLOS ONE… vẫn là thước đo chuẩn của áp lực nhóm". "Thước đo chuẩn" không có trong nguồn: thay bằng kết quả cụ thể. Chỉ đọc tóm tắt (PubMed 38019779). "Error rate of 33%… replicates the original findings".'
-- id: n25
-  cau: Khi người tham gia được thưởng tiền cho câu trả lời đúng, tỉ lệ sai giảm còn 25%, nhưng ảnh hưởng của nhóm vẫn còn.
-  loai: so-lieu
-  nguon:
-  - franzen2023
-  trich: in the incentivized condition the error rate decreases to 25%
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: 'Cũng: "monetary incentives lower the error rate, but that social influence is still at work".'
-- id: n26
-  cau: 'Vững chắc: một nhóm nhất trí làm lệch phán đoán công khai, kể cả với bài toán rõ ràng.'
-  loai: nhan
-  nguon:
-  - bond1996
-  - franzen2023
-  - asch1956
-  trich: An analysis of U.S. studies found that conformity has declined since the 1950s.
-  vi_tri: Tóm tắt
-  nhan: vung-chac
-  co_so:
-  - bond1996
-  - franzen2023
-  - asch1956
-  ly_do: 'Đạt Vững chắc theo mục 4: có một phân tích tổng hợp chất lượng tốt (Bond & Smith 1996, toàn văn: 133 nghiên cứu dùng đúng bài so độ dài, 17 nước), cùng chiều ở mọi nước (khác nhau về mức), tức đúng ở nhiều quần thể; lần làm lại năm 2023 (Franzen & Mader, 210 người, lỗi 33%; có thưởng tiền vẫn 25%) khớp bản gốc. Các nguồn đã mở không nêu thất bại tái lập lớn nào chưa giải thích. Giới hạn ghi rõ trên trang: mức hùa theo giảm theo thời gian (ở các nghiên cứu Mỹ) và khác giữa các nền văn hóa. Không có tái lập đăng ký trước nào đã mở, nhưng thước đo chỉ đòi phân tích tổng hợp hoặc hai tái lập ấy.'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "lặp lại hàng trăm lần trong 70 năm. Các yếu tố điều chỉnh cũng ổn định: …nhóm khoảng 3 người là đủ"; chữ mới: 133 nghiên cứu / 17 nước và lần làm lại 2023; bỏ "hàng trăm" (không đếm được) và "3 người là đủ" (bị thách thức). chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hoặc hai tái lập lớn đăng ký trước; có phân tích tổng hợp lớn, nhưng chưa mở được bài tái lập đăng ký trước nào; người giao/lượt 2 cân nhắc xuống Khá vững. Chỗ khó (Claude Opus 5.5): giữ Vững chắc: điều kiện "ít nhất một phân tích tổng hợp chất lượng tốt" đã đạt (B&S 1996, Psychol Bull), và nhãn chỉ nói hiệu ứng có thật, không nói độ lớn. Franzen & Mader 2023 chỉ đọc tóm tắt (không biết có đăng ký trước).'
-- id: n27
-  cau: 'Khá vững: văn hóa tập thể hùa theo nhiều hơn văn hóa cá nhân.'
-  loai: nhan
-  nguon:
-  - bond1996
-  trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
-  vi_tri: Tóm tắt
-  nhan: kha-vung
-  co_so:
-  - bond1996
-  ly_do: Một phân tích tổng hợp cùng chiều ở cả ba thang đo văn hóa nhưng chỉ có dữ liệu tương quan cấp quốc gia (không thí nghiệm ngẫu nhiên), chưa có tái lập riêng cho mối liên hệ văn hóa; các biến điều chỉnh (loại nhóm, thời gian) cũng liên quan.
-  ket_qua: dung
-- id: n28
-  cau: Phân tích của Bond và Smith dựa trên so sánh giữa các quốc gia, tức dữ liệu tương quan cấp quốc gia, không phải thí nghiệm ngẫu nhiên; không cho phép kết luận "văn hóa gây ra" sự khác biệt.
-  loai: nhan
-  nguon:
-  - bond1996
-  trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
-  vi_tri: Tóm tắt; phần Discussion
-  nhan: kha-vung
-  co_so:
-  - bond1996
-  ly_do: Là phần diễn giải trong khung Khá vững; B&S coi quan hệ với văn hóa là một liên hệ (xem n trên), không chứng minh nguyên nhân.
-  ket_qua: dung
-  ghi_chu: Cùng khung với nhận định trước; tách để kiểm riêng phần "không cho phép kết luận nhân quả".
-- id: n29
-  cau: 'Đang tranh cãi: người hùa theo có thật sự "nhìn" khác đi không.'
-  loai: nhan
-  nguon:
-  - asch1956
-  - berns2005
-  - germar2014
-  trich: it would be too far-fetched to suppose, mainly because we have no means of comprehending, that there was an actual distortion in the perceived relation of lengths.
-  vi_tri: Mục V (bàn luận về méo mó tri giác)
-  nhan: tranh-cai
-  co_so:
-  - asch1956
-  - berns2005
-  - germar2014
-  ly_do: 'Đang tranh cãi theo mục 4 (bằng chứng mâu thuẫn): Asch (1956), qua phỏng vấn, cho rằng méo mó chủ yếu ở khâu phán đoán và không xác lập được méo mó tri giác; còn Berns và cộng sự (2005, chụp cộng hưởng từ chức năng) thấy hùa theo đi kèm thay đổi ở mạng vùng não chẩm–đỉnh và kết luận có cả quá trình tri giác, Germar và cộng sự (2014, hai thí nghiệm, mô hình khuếch tán) thấy ảnh hưởng xã hội đổi cách tiếp nhận thông tin cảm giác chứ không đổi tiêu chí quyết định. Chưa có tổng hợp hay tái lập lớn nào ngã ngũ; các nghiên cứu mới dùng bài toán khác bài so độ dài.'
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Khung cũ chỉ dựa vào lập luận của Asch (lượt 1 phần đầu ghi chỗ khó). Đã thêm hai nghiên cứu hiện đại nghiêng về phía tri giác (chỉ đọc tóm tắt) và câu "câu hỏi còn mở"; giữ nhãn Đang tranh cãi vì hai phía cùng có bằng chứng. Chữ cũ của khung giữ nguyên, thêm câu mới (n60). Chưa tìm tổng quan về câu hỏi này; lượt 2 có thể tìm.'
-- id: n30
-  cau: 'Asch (1956) thấy người hùa theo có những phản ứng rất khác nhau: số rất ít không nhận ra mình bị nhóm ảnh hưởng; một tỉ lệ đáng kể hùa theo khi lòng tin vào mắt mình bị lung lay; số khác không còn quan tâm đúng sai, chỉ muốn khỏi tỏ ra khác biệt.'
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: A substantial proportion of subjects yielded once their confidence was shaken
-  vi_tri: Mục tóm tắt, mục 14
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Chính Asch đã phân loại: bóp méo tri giác (rất ít người), bóp méo phán đoán (kiểu phổ biến nhất…), bóp méo hành động (biết nhóm sai nhưng vẫn nói theo cho yên chuyện)". Bài 1956 (tóm tắt 14c–e): "a very few… unaware"; "a substantial proportion yielded once their confidence was shaken"; "others… dominated by an imperious desire not to appear different". Không có chữ "phổ biến nhất"; cũng không có "biết nhóm sai". Các tên "bóp méo tri giác/phán đoán/hành động" thuộc bài 1951 (không mở được) nên bỏ.'
-- id: n31
-  cau: Asch thừa nhận không thể xác lập mức độ méo mó tri giác thật sự; ông cho rằng méo mó nhiều khả năng xảy ra ở khâu phán đoán.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: It is more likely that the distortion occurred principally at the level of judgment, without the subject's knowledge of his contribution.
-  vi_tri: Mục V
-  ket_qua: dung
-- id: n32
-  cau: 'Ảnh hưởng chuẩn mực: hùa theo để được chấp nhận, tránh bị chê cười hay tẩy chay.'
-  loai: dinh-nghia
-  nguon:
-  - bond1996
-  trich: individuals will publicly accept the majority view while privately retaining their initial view, motivated by a desire not to appear deviant or to risk possible negative sanctions from the majority, such as ostracism or ridicule
-  vi_tri: Phần mở đầu (cf. Deutsch & Gerard, 1955)
-  ket_qua: dung
-  ghi_chu: B&S mô tả đây là kiểu "compliance" của ảnh hưởng chuẩn mực. Chưa mở bài gốc Deutsch & Gerard (1955).
-- id: n33
-  cau: Trong thí nghiệm Asch, kiểu "chỉ muốn khỏi tỏ ra khác biệt" có thật, nhưng nhiều người làm theo lại tự kết luận mắt mình sai.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: Others who yielded lost sight of the question of accuracy, being dominated by an imperious desire not to appear different
-  vi_tri: Mục tóm tắt, 14e
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "kiểu ''biết nhóm sai vẫn nói theo'' — có thật… nhưng không phải kiểu phổ biến nhất: phần lớn người làm theo tự kết luận mắt mình sai"; chữ mới: "nhiều người". Lý do: Asch (1956) chỉ nói "a substantial proportion", không đếm kiểu nào đa số.'
-- id: n34
-  cau: 'Ảnh hưởng thông tin: khi bài toán khó hoặc mơ hồ, ta coi phản ứng của người khác là manh mối về đáp án đúng.'
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: with informational social influence, people conform because they believe the group is competent and has the correct information, particularly when the task or situation is ambiguous.
-  vi_tri: OpenStax Psychology 2e, mục 12.4 (theo Deutsch & Gerard, 1955)
-  ket_qua: dung
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Định nghĩa khớp giáo trình mở (bậc 2), dẫn Deutsch & Gerard (1955). OpenStax còn viết rằng bài của Asch không mơ hồ nên người tham gia chủ yếu chịu ảnh hưởng chuẩn mực; trang không nói ngược điều ấy (chỉ nói "nhiều người" tự kết luận mắt mình sai, theo Asch 1956, n35).'
-- id: n35
-  cau: Bài toán của Asch rất dễ, vậy mà nhiều người làm theo vẫn tự kết luận mắt mình sai.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: A substantial proportion of subjects yielded once their confidence was shaken
-  vi_tri: Mục tóm tắt, 14d
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "phần lớn người làm theo vẫn tự kết luận mắt mình sai"; chữ mới: "nhiều người". Bỏ thêm "cho thấy kiểu ảnh hưởng này mạnh đến đâu" và "ngoài đời… càng mạnh" (suy diễn không nguồn): thay bằng "ta càng có lý do dựa vào người khác" (xem n sau).'
-- id: n36
-  cau: Khi vấn đề mơ hồ hơn, ta càng có lý do dựa vào người khác — ví dụ xem đánh giá nhà hàng trước khi chọn quán.
-  loai: dinh-nghia
-  nguon:
-  - openstax2e
-  trich: particularly when the task or situation is ambiguous
-  vi_tri: OpenStax Psychology 2e, mục 12.4
-  ket_qua: dung
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Đổi loại loi-khuyen thành dinh-nghia (câu không khuyên gì, chỉ nói ảnh hưởng thông tin mạnh hơn khi vấn đề mơ hồ, đúng như giáo trình). "Xem đánh giá nhà hàng trước khi chọn quán" là ví dụ minh họa (gia-dinh), không phải nhận định.'
-- id: n37
-  cau: Nhiều người được phỏng vấn sau thí nghiệm kể rằng họ sợ nhóm không tán thành hay cho mình là lập dị.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: Some, including the most independent, feared that the group would disapprove of them for standing out or would suspect them of exhibitionism or wilful stubbornness.
-  vi_tri: Mục phỏng vấn sau thí nghiệm
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nỗi sợ bị loại khỏi nhóm: về mặt tiến hóa, bị nhóm ruồng bỏ từng đồng nghĩa với nguy hiểm. Não ta đối xử… như một rủi ro xã hội thật sự"; chữ mới: lời kể của người tham gia; cách giải thích tiến hóa nói rõ là giả thuyết thí nghiệm không kiểm tra. Lý do: không nguồn cho phần tiến hóa và "não ta đối xử".'
-- id: n38
-  cau: Nếu sếp nêu ý kiến trước rồi hỏi "mọi người thấy sao?", tình huống ấy gợi lại thí nghiệm Asch (phép loại suy, chưa kiểm trực tiếp).
-  loai: loi-khuyen
-  nguon:
-  - asch1956
-  trich: The individuals were instructed to announce their judgments publicly in the order in which they were seated.
-  vi_tri: Mục II.A
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "bạn vừa tái hiện thí nghiệm Asch"; chữ mới: "gợi lại… phép loại suy, chưa được kiểm trực tiếp". Lý do: thí nghiệm Asch có đa số nhất trí nói sai về một sự kiện nhìn thấy rõ; cuộc họp thì khác.'
-- id: n39
-  cau: Trong một biến thể của Asch, khi người tham gia trả lời bằng văn bản thay vì nói công khai, số lỗi giảm còn khoảng một phần ba (14 người).
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: The mean frequency of errors was 1.50, or 12.5 per cent of all critical estimates, about one-third of the errors found in Experiment 1.
-  vi_tri: Thí nghiệm 4, "The Import of Public Judgments"
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Cách chống: thu thập ý kiến viết, ẩn danh, trước khi thảo luận miệng. Người điều phối khôn ngoan luôn hỏi người ít quyền nhất trước" (không nguồn); chữ mới dựa vào Thí nghiệm 4 (n = 14; 12,5% so với 36,8%) và nói thẳng nó không thử ẩn danh hay thứ tự phát biểu.'
-- id: n40
-  cau: Thí nghiệm 4 của Asch không thử tính ẩn danh hay thứ tự phát biểu; mẫu chỉ 14 người.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: There were fourteen subjects in this variation.
-  vi_tri: Thí nghiệm 4
-  ket_qua: dung
-- id: n41
-  cau: Lượt thích và bình luận có sẵn trên mạng xã hội là một dạng "ý kiến của số đông" nhìn thấy trước khi tự đánh giá; đây là phép loại suy, không phải kết quả của thí nghiệm Asch.
-  loai: loi-khuyen
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "lượt like và bình luận đầu tiên định hướng cả đoàn người sau. Một đánh giá 1 sao đầu tiên có thể kéo theo cả loạt — không phải vì sản phẩm tệ đi…" (khẳng định thực nghiệm không nguồn); chữ mới: chỉ nêu phép loại suy, không khẳng định hiệu ứng. Không mở nguồn nào về hiệu ứng đánh giá đầu trên mạng.'
-- id: n42
-  cau: Theo Asch (1955), khi có một người cùng phòng nói đúng, người tham gia sai chỉ khoảng một phần tư so với khi cả nhóm nhất trí.
-  loai: so-lieu
-  nguon:
-  - asch1955
-  trich: subjects answered incorrectly only one fourth as often as under the pressure of a unanimous majority
-  vi_tri: Asch 1955
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "thí nghiệm cho thấy chỉ cần một người dám nói đúng, áp lực… giảm hẳn". Số liệu "một phần tư" thêm từ nguồn (cùng n20).'
-- id: n43
-  cau: Theo Bond và Smith, các nước văn hóa tập thể hùa theo cao hơn.
-  loai: so-lieu
-  nguon:
-  - bond1996
-  trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
-  vi_tri: Tóm tắt
-  ket_qua: dung
-- id: n44
-  cau: Nếu người Việt coi trọng hòa hợp nhóm, ta có thể dự đoán mức hùa theo cao hơn mặt bằng phương Tây; đó chỉ là dự đoán từ mô hình.
-  loai: loi-khuyen
-  nguon:
-  - bond1996
-  trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
-  vi_tri: Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Việt Nam, với câu ''một cây làm chẳng nên non'' và phép tắc kính trên nhường dưới, nằm trong nhóm văn hóa mà lý thuyết dự đoán…". Chữ mới đặt điều kiện ("nếu người Việt coi trọng hòa hợp nhóm") vì chưa mở nguồn xếp Việt Nam vào nhóm tập thể. gia-dinh: câu tục ngữ chỉ để minh họa.'
-- id: n45
-  cau: Việt Nam không nằm trong số các nước của phân tích Bond và Smith.
-  loai: so-lieu
-  nguon:
-  - bond1996
-  trich: The literature search produced 133 studies drawn from 17 countries.
-  vi_tri: Bảng nghiên cứu, mục Method
-  ket_qua: dung
-  ghi_chu: 'Đã tìm "Vietnam" trong toàn văn: chỉ xuất hiện ở cụm "Vietnam era" (thời chiến tranh Việt Nam, nói về sinh viên Mỹ), không phải nước tham gia. Danh sách nước ở bảng nghiên cứu.'
-- id: n46
-  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu dùng bài toán Asch trên người Việt.
-  loai: thoi-su
-  het_han: '2028-10-01'
-  ket_qua: dung
-  ghi_chu: 'Tìm 30/10/2026: PubMed (Vietnam* AND conformity/Asch: 11 kết quả, không cái nào là tâm lý học xã hội về hùa theo), Crossref (truy vấn Asch + Vietnamese: không có), Bond & Smith 1996 (không có Việt Nam). Chưa tìm Google Scholar hay tạp chí trong nước.'
-- id: n47
-  cau: Văn hóa của một nước không đồng nhất, nên con số thật cho người Việt vẫn là một dấu hỏi.
-  loai: loi-khuyen
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Văn hóa Việt cũng có mặt kia: tinh thần vạch lá tìm sâu, tranh luận nảy lửa ở quán cà phê, và truyền thống phản biện trong gia đình" (không nguồn); đã bỏ. Câu mới là kết luận khiêm tốn, không nói gì cụ thể về người Việt.'
-- id: n48
-  cau: '"37% nghĩa là 37% số người luôn hùa theo": sai; 37% là tỉ lệ câu trả lời hùa theo trong các lượt gài bẫy.'
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: 29 8 10 17 6 7 7 4 13 6 6 4 6 4.41 3.00
-  vi_tri: Bảng 3
-  ket_qua: dung
-  ghi_chu: 'Bảng 3: trung bình sai 4,41 trên 12 lượt (36,8%).'
-- id: n49
-  cau: Trong 123 người, 29 người (khoảng một phần tư) không sai lần nào; số lỗi trung bình là 4,4 trên 12 lượt gài bẫy.
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: 29 8 10 17 6 7 7 4 13 6 6 4 6 4.41 3.00
-  vi_tri: Bảng 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Đa số người hùa theo chỉ vài lần, và 25% không bao giờ hùa theo"; chữ mới số liệu cụ thể. "Đa số… chỉ vài lần" không đo được từ bảng 3.'
-- id: n50
-  cau: Asch nhận xét rằng phần lớn các phán đoán là độc lập, bằng chứng là sức nặng của điều mắt thấy lớn hơn sức ép của đa số.
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: evidence that under the present conditions the force of the perceived data far exceeded that of the majority
-  vi_tri: Mục III.E (a–b)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Asch làm thí nghiệm vì ông tin con người có khả năng độc lập — và dữ liệu ủng hộ ông một phần" (động cơ không có trong nguồn); chữ mới theo lời nhận xét của chính Asch.'
-- id: n51
-  cau: 'Lần làm lại 2023 (210 người) đo trí thông minh, lòng tự trọng, nhu cầu được tán thành và năm đặc điểm tính cách lớn: ngoài tính cởi mở, không đặc điểm nào liên hệ thuyết phục với việc hùa theo.'
-  loai: so-lieu
-  nguon:
-  - franzen2023
-  trich: besides openness, none of the investigated personality traits are convincingly related to the susceptibility of group pressure
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Áp lực nhóm tác động lên cả những người tự tin; khác biệt nằm ở mức độ và ở việc có ai phá vỡ sự nhất trí hay không" (không nguồn). Chữ mới từ tóm tắt Franzen & Mader; nói rõ lòng tự trọng không phải thước đo duy nhất của tự tin.'
-- id: n52
-  cau: 'Câu hỏi 1: 37% là tỉ lệ câu trả lời trong các lượt gài bẫy, không phải tỉ lệ người; khoảng một phần tư số người không hùa theo lần nào và số lỗi trung bình là 4,4 trên 12 lượt.'
-  loai: so-lieu
-  nguon:
-  - asch1956
-  trich: Only one-fourth of the subjects in the three experimental groups showed errorless performances
-  vi_tri: Mục III
-  ket_qua: da-sua
-  ghi_chu: 'Câu hỏi 1, lời giải thích. Chữ cũ: "Phần lớn người tham gia chỉ hùa theo một vài lần, và 25% không hùa theo lần nào"; chữ mới: "Trong 123 người, khoảng một phần tư không hùa theo lần nào; số lỗi trung bình là 4,4 trên 12 lượt". Lý do: "phần lớn… một vài lần" không đo được từ bảng 3.'
-- id: n53
-  cau: 'Câu hỏi 2: yếu tố làm giảm mạnh nhất áp lực hùa theo là có một người trong nhóm phá vỡ sự nhất trí bằng cách trả lời đúng; nhóm 3 người nhất trí đã tạo gần hết áp lực.'
-  loai: so-lieu
-  nguon:
-  - asch1955
-  trich: Disturbance of the majority's unanimity had a striking effect.
-  vi_tri: Asch 1955
-  ket_qua: dung
-  ghi_chu: Cùng nguồn n17, n18.
-- id: n54
-  cau: 'Câu hỏi 3: Bond và Smith (1996) thấy mức hùa theo ở Mỹ giảm dần theo thời gian và các nước văn hóa tập thể hùa theo nhiều hơn các nước văn hóa cá nhân; 133 nghiên cứu ở 17 quốc gia.'
-  loai: so-lieu
-  nguon:
-  - bond1996
-  trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ của lời giải thích: "… một trong những bằng chứng xuyên văn hóa đồ sộ nhất của tâm lý học xã hội" (đánh giá không nguồn); đã bỏ.'
-- id: n55
-  cau: 'Câu hỏi 4: người hùa theo có thể xuất phát từ những cơ chế khác nhau (tin nhóm đúng và mình sai, hay chỉ muốn khỏi tỏ ra khác biệt); thí nghiệm gốc không tách bạch được.'
-  loai: phat-hien
-  nguon:
-  - asch1956
-  trich: Others who yielded lost sight of the question of accuracy, being dominated by an imperious desire not to appear different
-  vi_tri: Mục tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "ba cơ chế khác nhau: tin rằng nhóm đúng, nghi ngờ chính mình, hoặc biết đúng nhưng nói theo cho yên chuyện"; chữ mới: hai cơ chế theo 14d–e của bài 1956.'
-- id: n56
-  cau: 'Câu hỏi 5: trong một biến thể của Asch, trả lời bằng văn bản làm số lỗi giảm còn khoảng một phần ba (mẫu nhỏ); ghi ý kiến trước khi nghe nhau là một cách hợp lý.'
-  loai: loi-khuyen
-  nguon:
-  - asch1956
-  trich: The shift from public to silent judgments markedly lowered the frequency of errors.
-  vi_tri: Thí nghiệm 4
-  ket_qua: da-sua
-  ghi_chu: 'Đáp án đúng cũ: "Thu thập ý kiến bằng văn bản ẩn danh… và hỏi người ít quyền nhất trước"; mới: "Cho mọi người ghi ý kiến ra giấy trước khi thảo luận miệng". Lý do như n38. Các lựa chọn sai là phương án nhiễu (gia-dinh).'
-- id: n57
-  cau: 'Trang này là trang nhà của nghiên cứu Asch: nơi khác chỉ tóm một câu và link về.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id asch, trang_nha: thi-nghiem/asch, nguon [asch1951, asch1956].'
-- id: n58
-  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn của trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm trong src/plugins/thanh-phan.mjs (hàm tomTat) và psyche-markdown.mjs: dựng từ khung :::<nhãn>[ý chính] của trang.'
-- id: n59
-  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Bốn dòng của hộp khớp mục Nghiên cứu then chốt (số liệu kiểm ở n1–n3, n10–n14).
-- id: n60
-  cau: 'Một số nghiên cứu sau này lại nghiêng về phía tri giác: khi người tham gia hùa theo nhóm trong một bài xoay hình trong đầu, hoạt động của một mạng vùng não ở thùy chẩm và thùy đỉnh thay đổi (Berns và cộng sự, 2005); hai thí nghiệm dùng mô hình tách các bước của quyết định thấy ý kiến của nhóm làm đổi cách tiếp nhận thông tin từ mắt, chứ không chỉ đổi ngưỡng trả lời (Germar và cộng sự, 2014); đó là nghiên cứu riêng lẻ, với bài toán khác bài của Asch, nên câu hỏi còn mở.'
-  loai: phat-hien
-  nguon:
-  - berns2005
-  - germar2014
-  trich: Conformity was associated with functional changes in an occipital-parietal network, especially when the wrong information originated from other people. … In two experiments, we found consistent evidence for the idea that social influence alters the uptake of available sensory evidence. By contrast, participants did not adjust their decision criteria.
-  vi_tri: Berns 2005, tóm tắt (Results); Germar 2014, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Câu mới (chữ cũ: không có) trong khung Đang tranh cãi. "Thông tin từ mắt" dịch "sensory evidence" trong bài toán thị giác của Germar; "ngưỡng trả lời" dịch "decision criteria". Thêm Berns 2005 và Germar 2014 vào mục Nguồn của trang. Tóm tắt Berns còn nói "first biological evidence for the involvement of perceptual and emotional processes".'
+  - id: n1
+    cau: Asch (1951, 1956) cho người tham gia so sánh độ dài đường thẳng trước một nhóm "chim mồi" nói sai có chủ đích đồng loạt.
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: All but one of the group had met previously with the experimenter and were instructed to respond on certain trials with wrong and unanimous judgments.
+    vi_tri: Mục II.A
+    ket_qua: dung
+    ghi_chu: Câu mô tả (description) của trang. Bài 1951 (Guetzkow) không mở được; chỉ dựa vào bài 1956, ghi cả hai năm vì trang gọi tên cả hai.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Năm 1951/1956 là các công bố khác của Asch; mô tả thiết kế khớp Asch 1955 (cùng loạt).
+  - id: n2
+    cau: Trong các lượt gài bẫy, khoảng 37% (36,8%) câu trả lời hùa theo nhóm.
+    loai: so-lieu
+    nguon:
+      - asch1956
+      - asch1955
+    trich: under group pressure the minority subjects swung to acceptance of the misleading majority's wrong judgments in 36.8 per cent of the selections
+    vi_tri: Asch 1955; bảng 3 của bài 1956 (N = 123, trung bình 36,8%)
+    ket_qua: dung
+    ghi_chu: 'Dùng cho mô tả, đáp án ô thu gọn, hộp hồ sơ. Bài 1956 (bản quét): bảng 3, dòng "All experimental (N=123)": 36.8.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+  - id: n3
+    cau: Ba phần tư số người tham gia hùa theo ít nhất một lần.
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: Only one-fourth of the subjects in the three experimental groups showed errorless performances
+    vi_tri: Mục III, kết quả định lượng, tr. 9–10
+    ket_qua: dung
+    ghi_chu: '29 trên 123 người không sai lần nào (bảng 3): 24%, nên khoảng 76% hùa theo ít nhất một lần.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Chú thích ảnh Scientific American 1955.
+  - id: n4
+    cau: 'Hãy tưởng tượng: nhóm 7 người, hai tấm bìa (một đường mẫu, ba đường so sánh đánh số 1, 2, 3), người tham gia thật trả lời gần cuối, hai lượt đầu ai cũng đúng, đến lượt thứ ba nhóm đồng loạt nói sai.'
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: The experiment opened with two neutral trials to which the majority responded correctly. On the third trial, the majority deviated from the correct value by 3/4 inches
+    vi_tri: Mục II.B, cấu trúc nhiệm vụ
+    ket_qua: da-sua
+    ghi_chu: 'Tình huống giả định (gia-dinh) nhưng mô tả theo thiết kế gốc. Chữ cũ: "Ba lượt đầu, ai cũng trả lời đúng. Đến lượt thứ tư"; chữ mới: "Hai lượt đầu… lượt thứ ba". Lý do: bài 1956 có hai lượt trung tính mở đầu, lượt 3 là lượt đầu tiên nhóm nói sai. Số người trong nhóm (7–9) theo Asch; người tham gia thật ngồi ở ghế gần cuối (Hình 1). Review (Claude Opus 5.5, 30/10/2026): Asch 1956 (toàn văn, bản quét có chữ) mục II.B: hai lượt trung tính mở đầu, lượt 3 nhóm nói sai. Cảnh giả định khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Phần 'hãy tưởng tượng' khớp mô tả của Asch; 7 người nằm trong khoảng 7-9.
+    review: dung
+  - id: n5
+    cau: Ở Asch, nhóm có 7–9 người, trong đó chỉ một người là người tham gia thật.
+    loai: phat-hien
+    nguon:
+      - asch1956
+      - bond1996
+    trich: A group of seven to nine individuals was gathered in a classroom to take part in what appeared to be a simple experiment in visual discrimination.
+    vi_tri: Mục II.A
+    ket_qua: dung
+    ghi_chu: 'Asch tự mô tả "nhóm 7–9 người" ở Mục II.A nhưng cũng viết "đa số gồm 7–9 người": B&S 1996 ghi nhận chỗ không nhất quán này. Trang dùng "nhóm 7–9 người".'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+  - id: n6
+    cau: Người tham gia thật là người trả lời gần cuối (ghế kế cuối).
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: the critical subject was in the next to the last seat in the second row
+    vi_tri: Mục II.B, Hình 1
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty", "https://doi.org/10.1371/journal.pone.0294325" ]
+  - id: n7
+    cau: 'Cái giá của việc nói khác đi trở nên đắt đỏ: sợ bị chê cười, sợ mình nhìn nhầm, sợ trở thành kẻ lập dị.'
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: Some, including the most independent, feared that the group would disapprove of them for standing out or would suspect them of exhibitionism or wilful stubbornness.
+    vi_tri: Mục phỏng vấn sau thí nghiệm
+    ket_qua: dung
+    ghi_chu: Lời kể của người tham gia trong phỏng vấn; "sợ mình nhìn nhầm" khớp các lời kể như "I wasn't ever absolutely sure". Không phải mô tả cơ chế.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty", "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience" ]
+    luot_2_ghi_chu: Đây là diễn giải của trang; 'sợ bị chê cười' rõ ở OpenStax, 'sợ nhìn nhầm' ('I am wrong, they are right') và 'lập dị' (thiếu sót mà phải che giấu) ở Asch 1955.
+  - id: n8
+    cau: Asch làm thí nghiệm vào đầu thập niên 1950, khi các nghiên cứu trước đó cho thấy ý kiến đổi rất dễ chỉ vì sức nặng của số đông hay uy tín; ông nghi ngờ rằng ý kiến "nhạt như nước" đến thế.
+    loai: lich-su
+    nguon:
+      - asch1955
+    trich: Now the very ease of success in these experiments arouses suspicion.
+    vi_tri: Asch 1955, đoạn mở đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khi ông muốn phản bác một ý tưởng đang thịnh hành: rằng con người dễ dàng bị đám đông nuốt chửng"; chữ mới như trên. Lý do: động cơ "phản bác" không có trong nguồn; Asch (1955) nói các thắng lợi quá dễ của các nghiên cứu trước làm ông nghi ngờ, và đặt câu hỏi liệu ý kiến có "watery" đến vậy (đoạn kế tiếp). Bản 1955 là bản đăng lại ở panarchy.org (bậc 3 về nơi đăng, bài của chính Asch). Review (Claude Opus 5.5, 30/10/2026): Asch 1955 (toàn văn, bản đăng lại), đoạn mở đầu ("the very ease of success… arouses suspicion"; "watery"). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    review: dung
+  - id: n9
+    cau: Đa số câu trả lời (63%) không hùa theo.
+    loai: so-lieu
+    nguon:
+      - asch1956
+      - asch1955
+    trich: Despite this large effect, the preponderance of judgments was independent
+    vi_tri: Mục III.E, tóm tắt định lượng
+    ket_qua: dung
+    ghi_chu: 100 − 36,8 = 63,2%.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: 63% là phép trừ từ 36,8%.
+  - id: n10
+    cau: 'Khi làm một mình (nhóm đối chứng), người ta gần như không sai: 0,7% câu trả lời sai.'
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: in contrast with errors of less than 1 per cent under control conditions
+    vi_tri: Bảng 3, nhóm đối chứng (N = 37)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "vì bài toán dễ đến mức trẻ con cũng làm đúng" (không có trong nguồn); chữ mới: "khi làm một mình, người ta gần như không sai (0,7%)". Bảng 3: nhóm đối chứng 35/37 người không sai, trung bình sai 0,7%. Review (Claude Opus 5.5, 30/10/2026): Lượt 2 không đọc được bài 1956; review mở Asch 1956 (toàn văn, bản quét có chữ) tr. 9–10 và Bảng 3: nhóm đối chứng N = 37, "Thirty-five of 37 subjects made errorless estimates", trung bình 0,7%. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Asch 1955 (Sci Am) chỉ nói 'dưới 1%' ở điều kiện bình thường; con số chính xác 0,7% (nhóm đối chứng, Asch 1956) chưa đọc được trực tiếp. Hướng đúng (rất ít sai) khớp.
+    review: dung
+  - id: n11
+    cau: Thí nghiệm có tổng cộng 123 người tham gia thật, đều là nam sinh viên đại học, ở ba trường.
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: The subjects were all male, white college students, ranging in age from 17 to 25
+    vi_tri: Mục II.A
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "123 nam sinh viên Mỹ"; chữ mới: "123 nam sinh viên đại học, ở ba trường". Lý do: bài 1956 không nêu nước, chỉ nói "ba cơ sở giáo dục" ẩn danh; "Mỹ" là suy ra. Ba nhóm: I (n = 70), II (25), III (28). Review (Claude Opus 5.5, 30/10/2026): Asch 1956 (toàn văn, bản quét có chữ) mục II.A ("three institutions", nam, da trắng, 17–25 tuổi); Bảng 3: nhóm I 70, II 25, III 28 = 123. Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    review: dung
+  - id: n12
+    cau: Mỗi người làm 18 lượt so sánh độ dài đường thẳng; 12 lượt là "gài bẫy" (nhóm đồng loạt nói sai), 6 lượt trung tính.
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: They consisted of 12 critical and 6 neutral trials, distributed in a random order.
+    vi_tri: Mục II.C (Experiment 1)
+    ket_qua: dung
+    ghi_chu: Câu "18 such comparisons" ở Mục II.A; 12 lượt gài bẫy ở "Critical trials".
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: 6 lượt còn lại là lượt đa số trả lời đúng (trung tính), khớp 'occasionally reports correctly'.
+  - id: n13
+    cau: Ở các lượt gài bẫy, các chim mồi đồng loạt đưa ra cùng một đáp án sai rõ ràng (chênh từ 3/4 đến 1 3/4 inch).
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: departed from the true value by amounts ranging from 3/4 to 1 3/4 inches
+    vi_tri: Mục II.A
+    ket_qua: dung
+    ghi_chu: Trang chỉ nói "sai rõ ràng", không nêu con số.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+  - id: n14
+    cau: 'Bài toán dễ: người so sánh đường thẳng một mình gần như không sai (đối chứng 95% người không sai lần nào).'
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: in the control group 95 per cent
+    vi_tri: Mục III, bảng 3
+    ket_qua: dung
+    ghi_chu: 'Dùng cho câu "bài toán dễ" ở Điều gì đang xảy ra. Review (Claude Opus 5.5, 30/10/2026): Review mở Asch 1956 (toàn văn, bản quét có chữ) tr. 9: "while in the control group 95 per cent" (35/37) không sai lần nào. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Chỉ có 'dưới 1% sai' ở Asch 1955; con số '95% không sai lần nào' ở nhóm đối chứng (Asch 1956) chưa đọc được trực tiếp.
+    review: dung
+  - id: n15
+    cau: 'Hộp hồ sơ, dòng Kết quả chính: 36,8% câu trả lời hùa theo nhóm sai (đối chứng 0,7%), khoảng ba phần tư số người hùa theo ít nhất một lần.'
+    loai: so-lieu
+    nguon:
+      - asch1956
+      - asch1955
+    trich: under group pressure the minority subjects swung to acceptance of the misleading majority's wrong judgments in 36.8 per cent of the selections
+    vi_tri: Asch 1955; bảng 3, bài 1956
+    ket_qua: dung
+    ghi_chu: 'Dòng Kết quả chính của hộp hồ sơ; cùng câu với n2, n3 và n11 (đối chứng 0,7%). Review (Claude Opus 5.5, 30/10/2026): Review mở Asch 1956 (toàn văn, bản quét có chữ) Bảng 3: 36,8% (trung bình 4,41/12), đối chứng 0,7%; "Only one-fourth of the subjects in the three experimental groups showed errorless performances" nên ba phần tư sai ít nhất một lần. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: 36,8% và 'khoảng ba phần tư hùa ít nhất một lần' đúng (Asch 1955); riêng '0,7% đối chứng' chưa đọc được trực tiếp (1955 chỉ nói dưới 1%).
+    review: dung
+  - id: n16
+    cau: Khoảng 25% số người không bao giờ hùa theo.
+    loai: so-lieu
+    nguon:
+      - asch1956
+      - asch1955
+    trich: about one quarter of the subjects were completely independent and never agreed with the erroneous judgments of the majority
+    vi_tri: Asch 1955, đoạn kết quả; bảng 3 (29/123)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+  - id: n17
+    cau: Nhóm 3 người đã tạo ra gần như toàn bộ áp lực; thêm người nữa không tăng đáng kể (Asch, 1955).
+    loai: phat-hien
+    nguon:
+      - asch1955
+    trich: But further increases in the size of the majority apparently did not increase the weight of the pressure substantially.
+    vi_tri: Asch 1955, đoạn về quy mô đa số
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: dẫn Asch 1956 và nói chắc "nhóm 3 người đã tạo gần như toàn bộ áp lực"; bài 1956 không có biến thể quy mô nhóm. Chữ mới dẫn Asch 1955 (đa số 1 người: ít hùa theo; 2 người: 13,6%; 3 người: 31,8%; thêm người nữa không tăng đáng kể) và thêm lưu ý của Bond và Smith. Trang không nêu các con số này. Review (Claude Opus 5.5, 30/10/2026): Asch 1955 (toàn văn, bản đăng lại) (đoạn về quy mô đa số) và Bond & Smith 1996 (toàn văn) tr. 115 (Asch 1951). Trang dẫn Asch 1955, kèm lưu ý của Bond & Smith.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Đúng cho dữ liệu Asch; xem n19 cho các phân tích sau.
+    review: dung
+  - id: n18
+    cau: Chỉ cần một người cùng phòng nói đúng, tỉ lệ sai còn khoảng một phần tư so với khi cả nhóm nhất trí.
+    loai: so-lieu
+    nguon:
+      - asch1955
+    trich: 'Its pressure on the dissenting individual was reduced to one fourth: that is, subjects answered incorrectly only one fourth as often as under the pressure of a unanimous majority.'
+    vi_tri: Asch 1955, đoạn về người cùng phòng đồng tình
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chỉ cần một chim mồi nói đúng (phá vỡ sự nhất trí), tỉ lệ hùa theo sụt mạnh ([Asch, 1956])"; chữ mới: "chỉ cần một người cùng phòng nói đúng… còn khoảng một phần tư". Lý do: biến thể này là của Asch 1951/1955, không có trong bài 1956; "một chim mồi nói đúng" chưa chính xác: người đồng tình là người thật không biết sắp đặt hoặc người được dặn nói đúng. Dùng ở Kết quả, Mức độ chắc chắn, Áp dụng và câu hỏi. Review (Claude Opus 5.5, 30/10/2026): Asch 1955 (toàn văn, bản đăng lại): "subjects answered incorrectly only one fourth as often as under the pressure of a unanimous majority". Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    review: dung
+  - id: n19
+    cau: 'Bond và Smith (1996) lưu ý kết luận "3 người là đủ" của Asch về sau bị thách thức: quy mô nhóm vẫn có liên hệ với mức hùa theo.'
+    loai: phat-hien
+    nguon:
+      - bond1996
+    trich: Majority size represented by Tanford and Penrod's (1984) SIM was significantly related to conformity
+    vi_tri: Mục Results, các biến điều chỉnh
+    ket_qua: dung
+    ghi_chu: 'B&S cũng tóm tắt lại: Asch (1951) thấy ít hùa theo khi đa số 1–2 người, tăng mạnh ở 3 người, tăng thêm không đáng kể; kết luận này bị Latané & Wolf (1981) và Tanford & Penrod (1984) thách thức (tr. 114–115). Review (Claude Opus 5.5, 30/10/2026): Lượt 2 chỉ đọc tóm tắt; review mở Bond & Smith 1996 (toàn văn) tr. 115: kết luận "majority of three is sufficient… has been challenged by Latané and Wolf (1981) and Tanford and Penrod (1984)"; tr. 119: "Majority size represented by Tanford and Penrod''s (1984) SIM was significantly related to conformity". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    luot_2_ghi_chu: Tóm tắt Bond & Smith 1996 không nói gì về quy mô nhóm; bài tổng quan riêng của Bond 2005 (meta-analysis 125 nghiên cứu kiểu Asch) nói quan hệ quy mô nhóm - hùa theo thay đổi theo kiểu phản hồi công khai/riêng, nhưng chưa đọc toàn văn để xác nhận câu gán cho Bond & Smith 1996.
+    review: dung
+  - id: n20
+    cau: Bond và Smith (1996) gộp 133 nghiên cứu dùng bài toán so sánh đường thẳng kiểu Asch, thực hiện ở 17 quốc gia.
+    loai: so-lieu
+    nguon:
+      - bond1996
+    trich: The literature search produced 133 studies drawn from 17 countries.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "133 nghiên cứu dùng đúng bài toán đường thẳng của Asch"; chữ mới: "dùng bài toán so sánh đường thẳng kiểu Asch". Lý do: các nghiên cứu gộp cả bản dùng chim mồi trực diện (Asch) lẫn bản "nhóm giả" qua phản hồi sai (Crutchfield). Review (Claude Opus 5.5, 30/10/2026): Bond & Smith 1996 (toàn văn), tóm tắt và Method (gộp cả kiểu Asch lẫn kiểu Crutchfield). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    review: dung
+  - id: n21
+    cau: Ở Mỹ, mức hùa theo giảm dần kể từ những nghiên cứu của Asch ở thập niên 1950.
+    loai: so-lieu
+    nguon:
+      - bond1996
+    trich: An analysis of U.S. studies found that conformity has declined since the 1950s.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giảm dần từ thập niên 1950 đến thập niên 1990 — có lẽ vì chuẩn mực văn hóa về sự độc lập đã thay đổi". Chữ mới bỏ mốc "1990" (tóm tắt chỉ nói "since the 1950s") và bỏ lời giải thích, thay bằng: một số tác giả gắn xu hướng với bối cảnh chính trị – xã hội; phân tích không cho biết nguyên nhân. Lý do: nguyên nhân không được phân tích kiểm tra. Review (Claude Opus 5.5, 30/10/2026): Bond & Smith 1996 (toàn văn), tóm tắt và phần mở đầu (Larsen; "McCarthy era"). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    review: dung
+  - id: n22
+    cau: Một số tác giả gắn mức hùa theo cao ở thập niên 1950 và xu hướng giảm sau đó với bối cảnh chính trị – xã hội từng thời kỳ.
+    loai: lich-su
+    nguon:
+      - bond1996
+    trich: several commentators have suggested that the relatively high levels of conformity found in experiments conducted in the early 1950s (notably Asch, 1952b, 1956) was in part a product of the McCarthy era
+    vi_tri: Phần mở đầu
+    ket_qua: dung
+    ghi_chu: B&S tóm tắt quan điểm của các tác giả khác (Larsen, Mann, Perrin & Spencer).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+  - id: n23
+    cau: Các nước văn hóa tập thể hùa theo nhiều hơn các nước văn hóa cá nhân; mối liên hệ có ý nghĩa ở cả ba cách đo văn hóa (Hofstede, Schwartz, Trompenaars).
+    loai: so-lieu
+    nguon:
+      - bond1996
+    trich: Results from 3 surveys were used to assess a country's individualism-collectivism, and for each survey the measures were found to be significantly related to conformity.
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Ba khảo sát: Hofstede (1980), Schwartz (1994), Trompenaars (1993), nêu ở phần mở đầu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    luot_2_ghi_chu: Tên ba khảo sát (Hofstede, Schwartz, Trompenaars) không có trong tóm tắt; phần cốt lõi khớp.
+  - id: n24
+    cau: Franzen và Mader (2023) làm lại thí nghiệm Asch với 210 người, mỗi nhóm có 5 chim mồi, thấy tỉ lệ sai 33%, khớp với kết quả gốc.
+    loai: tai-lap
+    nguon:
+      - franzen2023
+    trich: we replicate the original Asch experiment with five confederates and one naïve subject in each group (N = 210)
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một lần làm lại gần đây đăng trên PLOS ONE… vẫn là thước đo chuẩn của áp lực nhóm". "Thước đo chuẩn" không có trong nguồn: thay bằng kết quả cụ thể. Chỉ đọc tóm tắt (PubMed 38019779). "Error rate of 33%… replicates the original findings". Review (Claude Opus 5.5, 30/10/2026): Franzen & Mader 2023, tóm tắt (N = 210, 5 chim mồi, lỗi 33%, có thưởng 25%). Trang khớp; 202 người vào phân tích (lượt 2) không trái chữ "dùng 210 người".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0294325" ]
+    luot_2_ghi_chu: 210 người tuyển, 202 hợp lệ trong phân tích; 5 chim mồi + người thật; 10 lượt (6 gài bẫy); sinh viên Bern.
+    review: dung
+  - id: n25
+    cau: Khi người tham gia được thưởng tiền cho câu trả lời đúng, tỉ lệ sai giảm còn 25%, nhưng ảnh hưởng của nhóm vẫn còn.
+    loai: so-lieu
+    nguon:
+      - franzen2023
+    trich: in the incentivized condition the error rate decreases to 25%
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Cũng: "monetary incentives lower the error rate, but that social influence is still at work".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0294325" ]
+  - id: n26
+    cau: 'Vững chắc: một nhóm nhất trí làm lệch phán đoán công khai, kể cả với bài toán rõ ràng.'
+    loai: nhan
+    nguon:
+      - bond1996
+      - franzen2023
+      - asch1956
+    trich: An analysis of U.S. studies found that conformity has declined since the 1950s.
+    vi_tri: Tóm tắt
+    nhan: vung-chac
+    co_so:
+      - bond1996
+      - franzen2023
+      - asch1956
+    ly_do: 'Đạt Vững chắc theo mục 4: có một phân tích tổng hợp chất lượng tốt (Bond & Smith 1996, toàn văn: 133 nghiên cứu dùng đúng bài so độ dài, 17 nước), cùng chiều ở mọi nước (khác nhau về mức), tức đúng ở nhiều quần thể; lần làm lại năm 2023 (Franzen & Mader, 210 người, lỗi 33%; có thưởng tiền vẫn 25%) khớp bản gốc. Các nguồn đã mở không nêu thất bại tái lập lớn nào chưa giải thích. Giới hạn ghi rõ trên trang: mức hùa theo giảm theo thời gian (ở các nghiên cứu Mỹ) và khác giữa các nền văn hóa. Không có tái lập đăng ký trước nào đã mở, nhưng thước đo chỉ đòi phân tích tổng hợp hoặc hai tái lập ấy.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "lặp lại hàng trăm lần trong 70 năm. Các yếu tố điều chỉnh cũng ổn định: …nhóm khoảng 3 người là đủ"; chữ mới: 133 nghiên cứu / 17 nước và lần làm lại 2023; bỏ "hàng trăm" (không đếm được) và "3 người là đủ" (bị thách thức). chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hoặc hai tái lập lớn đăng ký trước; có phân tích tổng hợp lớn, nhưng chưa mở được bài tái lập đăng ký trước nào; người giao/lượt 2 cân nhắc xuống Khá vững. Chỗ khó (Claude Opus 5.5): giữ Vững chắc: điều kiện "ít nhất một phân tích tổng hợp chất lượng tốt" đã đạt (B&S 1996, Psychol Bull), và nhãn chỉ nói hiệu ứng có thật, không nói độ lớn. Franzen & Mader 2023 chỉ đọc tóm tắt (không biết có đăng ký trước). Review (Claude Opus 5.5, 30/10/2026): Vững chắc hợp mục 4: một phân tích tổng hợp chất lượng tốt (Bond & Smith 1996 (toàn văn): 133 nghiên cứu, 17 nước), cùng chiều ở mọi nước, cộng tái lập 2023; không có thất bại tái lập lớn trong các nguồn đã mở. Nhãn chỉ nói hiệu ứng có thật, không nói độ lớn; giới hạn (giảm theo thời gian, khác giữa văn hóa) ghi trên trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111", "https://doi.org/10.1371/journal.pone.0294325", "https://doi.org/10.1037/amp0000469" ]
+    luot_2_ghi_chu: "Khớp thước đo Vững chắc cho nhận định hẹp này: có phân tích tổng hợp, cùng chiều, nhiều nước. Lưu ý mức hùa theo giảm theo thời gian ở Mỹ và biến thiên giữa nghiên cứu; không có tái lập lớn đăng ký trước mà tôi biết, nhưng cũng không có thất bại tái lập lớn."
+    review: dung
+  - id: n27
+    cau: 'Khá vững: văn hóa tập thể hùa theo nhiều hơn văn hóa cá nhân.'
+    loai: nhan
+    nguon:
+      - bond1996
+    trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
+    vi_tri: Tóm tắt
+    nhan: kha-vung
+    co_so:
+      - bond1996
+    ly_do: Một phân tích tổng hợp cùng chiều ở cả ba thang đo văn hóa nhưng chỉ có dữ liệu tương quan cấp quốc gia (không thí nghiệm ngẫu nhiên), chưa có tái lập riêng cho mối liên hệ văn hóa; các biến điều chỉnh (loại nhóm, thời gian) cũng liên quan.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    luot_2_ghi_chu: "Khá vững là hợp lý: tương quan cấp quốc gia, 133 nghiên cứu, mẫu phần lớn sinh viên; không thể gọi Vững chắc."
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Khá vững hợp mục 4: Bond & Smith 1996 (toàn văn), tương quan cấp quốc gia, một phân tích tổng hợp, mẫu chủ yếu sinh viên.'
+  - id: n28
+    cau: Phân tích của Bond và Smith dựa trên so sánh giữa các quốc gia, tức dữ liệu tương quan cấp quốc gia, không phải thí nghiệm ngẫu nhiên; không cho phép kết luận "văn hóa gây ra" sự khác biệt.
+    loai: nhan
+    nguon:
+      - bond1996
+    trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
+    vi_tri: Tóm tắt; phần Discussion
+    nhan: kha-vung
+    co_so:
+      - bond1996
+    ly_do: Là phần diễn giải trong khung Khá vững; B&S coi quan hệ với văn hóa là một liên hệ (xem n trên), không chứng minh nguyên nhân.
+    ket_qua: dung
+    ghi_chu: 'Cùng khung với nhận định trước; tách để kiểm riêng phần "không cho phép kết luận nhân quả". Review (Claude Opus 5.5, 30/10/2026): Như n27.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    luot_2_ghi_chu: "Đúng: dữ liệu là so sánh giữa quốc gia (tương quan), không có phân bổ ngẫu nhiên."
+    review: dung
+  - id: n29
+    cau: 'Đang tranh cãi: người hùa theo có thật sự "nhìn" khác đi không.'
+    loai: nhan
+    nguon:
+      - asch1956
+      - berns2005
+      - germar2014
+    trich: it would be too far-fetched to suppose, mainly because we have no means of comprehending, that there was an actual distortion in the perceived relation of lengths.
+    vi_tri: Mục V (bàn luận về méo mó tri giác)
+    nhan: tranh-cai
+    co_so:
+      - asch1956
+      - berns2005
+      - germar2014
+    ly_do: 'Đang tranh cãi theo mục 4 (bằng chứng mâu thuẫn): Asch (1956), qua phỏng vấn, cho rằng méo mó chủ yếu ở khâu phán đoán và không xác lập được méo mó tri giác; còn Berns và cộng sự (2005, chụp cộng hưởng từ chức năng) thấy hùa theo đi kèm thay đổi ở mạng vùng não chẩm–đỉnh và kết luận có cả quá trình tri giác, Germar và cộng sự (2014, hai thí nghiệm, mô hình khuếch tán) thấy ảnh hưởng xã hội đổi cách tiếp nhận thông tin cảm giác chứ không đổi tiêu chí quyết định. Chưa có tổng hợp hay tái lập lớn nào ngã ngũ; các nghiên cứu mới dùng bài toán khác bài so độ dài.'
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Khung cũ chỉ dựa vào lập luận của Asch (lượt 1 phần đầu ghi chỗ khó). Đã thêm hai nghiên cứu hiện đại nghiêng về phía tri giác (chỉ đọc tóm tắt) và câu "câu hỏi còn mở"; giữ nhãn Đang tranh cãi vì hai phía cùng có bằng chứng. Chữ cũ của khung giữ nguyên, thêm câu mới (n60). Chưa tìm tổng quan về câu hỏi này; lượt 2 có thể tìm. Review (Claude Opus 5.5, 30/10/2026): Đang tranh cãi hợp mục 4: Asch 1956 (toàn văn, bản quét có chữ) mục V (méo mó chủ yếu ở khâu phán đoán) đối lập với Berns và cộng sự 2005, Germar và cộng sự 2014 (tóm tắt), không có tổng hợp phân xử.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15978553", "https://doi.org/10.1177/0146167213508985" ]
+    luot_2_ghi_chu: "Hợp lý là Đang tranh cãi: bằng chứng hành vi/thần kinh mâu thuẫn về cơ chế; chưa có tổng hợp chốt."
+    review: dung
+  - id: n30
+    cau: 'Asch (1956) thấy người hùa theo có những phản ứng rất khác nhau: số rất ít không nhận ra mình bị nhóm ảnh hưởng; một tỉ lệ đáng kể hùa theo khi lòng tin vào mắt mình bị lung lay; số khác không còn quan tâm đúng sai, chỉ muốn khỏi tỏ ra khác biệt.'
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: A substantial proportion of subjects yielded once their confidence was shaken
+    vi_tri: Mục tóm tắt, mục 14
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chính Asch đã phân loại: bóp méo tri giác (rất ít người), bóp méo phán đoán (kiểu phổ biến nhất…), bóp méo hành động (biết nhóm sai nhưng vẫn nói theo cho yên chuyện)". Bài 1956 (tóm tắt 14c–e): "a very few… unaware"; "a substantial proportion yielded once their confidence was shaken"; "others… dominated by an imperious desire not to appear different". Không có chữ "phổ biến nhất"; cũng không có "biết nhóm sai". Các tên "bóp méo tri giác/phán đoán/hành động" thuộc bài 1951 (không mở được) nên bỏ. Review (Claude Opus 5.5, 30/10/2026): Lượt 2 không đọc được bài 1956; review mở Asch 1956 (toàn văn, bản quét có chữ) tóm tắt mục 14(c)–(e): "A very few yielding subjects appeared unaware…", "A substantial proportion of subjects yielded once their confidence was shaken", "Others… dominated by an imperious desire not to appear different". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Ba kiểu phản ứng (méo tri giác, méo phán đoán, méo hành động) là từ Asch 1956 (Psychological Monographs), không mở được toàn văn. Asch 1955 chỉ xác nhận 'mọi người hùa theo đều đánh giá thấp tần suất mình hùa theo' và vài lý do (tin mình sai; không muốn làm hỏng kết quả; sợ khác biệt).
+    review: dung
+  - id: n31
+    cau: Asch thừa nhận không thể xác lập mức độ méo mó tri giác thật sự; ông cho rằng méo mó nhiều khả năng xảy ra ở khâu phán đoán.
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: It is more likely that the distortion occurred principally at the level of judgment, without the subject's knowledge of his contribution.
+    vi_tri: Mục V
+    ket_qua: dung
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Câu Asch thừa nhận không xác lập được méo tri giác là từ Asch 1956, không mở được toàn văn; Asch 1955 nói người hùa theo 'nghi nhóm bị ảo giác thị giác' nhưng vẫn hùa theo.
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Review mở Asch 1956 (toàn văn, bản quét có chữ) mục V: "we cannot establish… the level of distortion… it would be too far-fetched to suppose… It is more likely that the distortion occurred principally at the level of judgment". Đúng.'
+  - id: n32
+    cau: 'Ảnh hưởng chuẩn mực: hùa theo để được chấp nhận, tránh bị chê cười hay tẩy chay.'
+    loai: dinh-nghia
+    nguon:
+      - bond1996
+    trich: individuals will publicly accept the majority view while privately retaining their initial view, motivated by a desire not to appear deviant or to risk possible negative sanctions from the majority, such as ostracism or ridicule
+    vi_tri: Phần mở đầu (cf. Deutsch & Gerard, 1955)
+    ket_qua: dung
+    ghi_chu: B&S mô tả đây là kiểu "compliance" của ảnh hưởng chuẩn mực. Chưa mở bài gốc Deutsch & Gerard (1955).
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience" ]
+  - id: n33
+    cau: Trong thí nghiệm Asch, kiểu "chỉ muốn khỏi tỏ ra khác biệt" có thật, nhưng nhiều người làm theo lại tự kết luận mắt mình sai.
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: Others who yielded lost sight of the question of accuracy, being dominated by an imperious desire not to appear different
+    vi_tri: Mục tóm tắt, 14e
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "kiểu ''biết nhóm sai vẫn nói theo'' — có thật… nhưng không phải kiểu phổ biến nhất: phần lớn người làm theo tự kết luận mắt mình sai"; chữ mới: "nhiều người". Lý do: Asch (1956) chỉ nói "a substantial proportion", không đếm kiểu nào đa số. Review (Claude Opus 5.5, 30/10/2026): Asch 1956 (toàn văn, bản quét có chữ) 14(e), 14(d). Trang khớp ("nhiều người").'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience", "https://archive.org/details/solomon-asch_confirmaty" ]
+    review: dung
+  - id: n34
+    cau: 'Ảnh hưởng thông tin: khi bài toán khó hoặc mơ hồ, ta coi phản ứng của người khác là manh mối về đáp án đúng.'
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: with informational social influence, people conform because they believe the group is competent and has the correct information, particularly when the task or situation is ambiguous.
+    vi_tri: OpenStax Psychology 2e, mục 12.4 (theo Deutsch & Gerard, 1955)
+    ket_qua: dung
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Định nghĩa khớp giáo trình mở (bậc 2), dẫn Deutsch & Gerard (1955). OpenStax còn viết rằng bài của Asch không mơ hồ nên người tham gia chủ yếu chịu ảnh hưởng chuẩn mực; trang không nói ngược điều ấy (chỉ nói "nhiều người" tự kết luận mắt mình sai, theo Asch 1956, n35).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience" ]
+  - id: n35
+    cau: Bài toán của Asch rất dễ, vậy mà nhiều người làm theo vẫn tự kết luận mắt mình sai.
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: A substantial proportion of subjects yielded once their confidence was shaken
+    vi_tri: Mục tóm tắt, 14d
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phần lớn người làm theo vẫn tự kết luận mắt mình sai"; chữ mới: "nhiều người". Bỏ thêm "cho thấy kiểu ảnh hưởng này mạnh đến đâu" và "ngoài đời… càng mạnh" (suy diễn không nguồn): thay bằng "ta càng có lý do dựa vào người khác" (xem n sau). Review (Claude Opus 5.5, 30/10/2026): Asch 1956 (toàn văn, bản quét có chữ) 14(d). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    review: dung
+  - id: n36
+    cau: Khi vấn đề mơ hồ hơn, ta càng có lý do dựa vào người khác — ví dụ xem đánh giá nhà hàng trước khi chọn quán.
+    loai: dinh-nghia
+    nguon:
+      - openstax2e
+    trich: particularly when the task or situation is ambiguous
+    vi_tri: OpenStax Psychology 2e, mục 12.4
+    ket_qua: dung
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Đổi loại loi-khuyen thành dinh-nghia (câu không khuyên gì, chỉ nói ảnh hưởng thông tin mạnh hơn khi vấn đề mơ hồ, đúng như giáo trình). "Xem đánh giá nhà hàng trước khi chọn quán" là ví dụ minh họa (gia-dinh), không phải nhận định.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience" ]
+    luot_2_ghi_chu: Ví dụ nhà hàng là minh họa của trang, đúng với định nghĩa OpenStax.
+  - id: n37
+    cau: Nhiều người được phỏng vấn sau thí nghiệm kể rằng họ sợ nhóm không tán thành hay cho mình là lập dị.
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: Some, including the most independent, feared that the group would disapprove of them for standing out or would suspect them of exhibitionism or wilful stubbornness.
+    vi_tri: Mục phỏng vấn sau thí nghiệm
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nỗi sợ bị loại khỏi nhóm: về mặt tiến hóa, bị nhóm ruồng bỏ từng đồng nghĩa với nguy hiểm. Não ta đối xử… như một rủi ro xã hội thật sự"; chữ mới: lời kể của người tham gia; cách giải thích tiến hóa nói rõ là giả thuyết thí nghiệm không kiểm tra. Lý do: không nguồn cho phần tiến hóa và "não ta đối xử". Review (Claude Opus 5.5, 30/10/2026): Asch 1956 (toàn văn, bản quét có chữ) (phỏng vấn: "feared that the group would disapprove of them… exhibitionism"). Phần tiến hóa ghi là giả thuyết.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: "'Nhóm không tán thành' là diễn giải hợp lý của phỏng vấn; Asch ghi cả lý do khác."
+    review: dung
+  - id: n38
+    cau: Nếu sếp nêu ý kiến trước rồi hỏi "mọi người thấy sao?", tình huống ấy gợi lại thí nghiệm Asch (phép loại suy, chưa kiểm trực tiếp).
+    loai: loi-khuyen
+    nguon:
+      - asch1956
+    trich: The individuals were instructed to announce their judgments publicly in the order in which they were seated.
+    vi_tri: Mục II.A
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "bạn vừa tái hiện thí nghiệm Asch"; chữ mới: "gợi lại… phép loại suy, chưa được kiểm trực tiếp". Lý do: thí nghiệm Asch có đa số nhất trí nói sai về một sự kiện nhìn thấy rõ; cuộc họp thì khác. Review (Claude Opus 5.5, 30/10/2026): Phép loại suy, trang ghi rõ chưa kiểm trực tiếp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Không phải khẳng định thực nghiệm.
+    review: dung
+  - id: n39
+    cau: Trong một biến thể của Asch, khi người tham gia trả lời bằng văn bản thay vì nói công khai, số lỗi giảm còn khoảng một phần ba (14 người); vì mẫu nhỏ, Asch nói chưa chứng minh được chênh lệch bằng thống kê.
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: The mean frequency of errors was 1.50, or 12.5 per cent of all critical estimates, about one-third of the errors found in Experiment 1. … Because of the small number of cases in this variation and the great range of errors in Experiment 1, we cannot establish a conclusive difference statistically between the two conditions.
+    vi_tri: Thí nghiệm 4, "The Import of Public Judgments"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Cách chống: thu thập ý kiến viết, ẩn danh, trước khi thảo luận miệng. Người điều phối khôn ngoan luôn hỏi người ít quyền nhất trước" (không nguồn); chữ mới dựa vào Thí nghiệm 4 (n = 14; 12,5% so với 36,8%) và nói thẳng nó không thử ẩn danh hay thứ tự phát biểu. Review (Claude Opus 5.5, 30/10/2026): Review mở Asch 1956 (toàn văn, bản quét có chữ) Thí nghiệm 4: 14 người, trung bình 1,50 lỗi (12,5%), "about one-third of the errors found in Experiment 1"; nhưng Asch viết tiếp "Because of the small number of cases… we cannot establish a conclusive difference statistically between the two conditions" (chỉ so với nhóm đối chứng là có ý nghĩa). Câu cũ thiếu giới hạn ấy; đã thêm "nên chính Asch nói chưa chứng minh được chênh lệch bằng thống kê" ở mục Áp dụng. Câu hỏi 5 giữ "(mẫu nhỏ)".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Biến thể trả lời bằng văn bản (Asch 1956, thí nghiệm 4, 14 người): không mở được toàn văn, không thấy trong Asch 1955."
+    review: sai
+  - id: n40
+    cau: Thí nghiệm 4 của Asch không thử tính ẩn danh hay thứ tự phát biểu; mẫu chỉ 14 người.
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: There were fourteen subjects in this variation.
+    vi_tri: Thí nghiệm 4
+    ket_qua: dung
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Tương tự n39: cỡ mẫu 14 và điều chưa kiểm của thí nghiệm 4 nằm trong Asch 1956, không mở được."
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Review mở Asch 1956 (toàn văn, bản quét có chữ) Thí nghiệm 4: "There were fourteen subjects in this variation"; thủ tục chỉ đổi cách trả lời (viết), vẫn ngồi gần cuối, không ẩn danh, không đổi thứ tự. Đúng.'
+  - id: n41
+    cau: Lượt thích và bình luận có sẵn trên mạng xã hội là một dạng "ý kiến của số đông" nhìn thấy trước khi tự đánh giá; đây là phép loại suy, không phải kết quả của thí nghiệm Asch.
+    loai: loi-khuyen
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "lượt like và bình luận đầu tiên định hướng cả đoàn người sau. Một đánh giá 1 sao đầu tiên có thể kéo theo cả loạt — không phải vì sản phẩm tệ đi…" (khẳng định thực nghiệm không nguồn); chữ mới: chỉ nêu phép loại suy, không khẳng định hiệu ứng. Không mở nguồn nào về hiệu ứng đánh giá đầu trên mạng. Review (Claude Opus 5.5, 30/10/2026): Phép loại suy, trang ghi rõ. Người gom (Claude Opus 5.5, 30/10/2026): câu suy luận (đã ghi rõ trên trang là suy luận) dựa vào asch1956 (nguồn lượt 2 đã mở).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Không phải khẳng định thực nghiệm.
+    review: dung
+    nguon:
+      - asch1956
+  - id: n42
+    cau: Theo Asch (1955), khi có một người cùng phòng nói đúng, người tham gia sai chỉ khoảng một phần tư so với khi cả nhóm nhất trí.
+    loai: so-lieu
+    nguon:
+      - asch1955
+    trich: subjects answered incorrectly only one fourth as often as under the pressure of a unanimous majority
+    vi_tri: Asch 1955
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thí nghiệm cho thấy chỉ cần một người dám nói đúng, áp lực… giảm hẳn". Số liệu "một phần tư" thêm từ nguồn (cùng n20). Review (Claude Opus 5.5, 30/10/2026): Như n18.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    review: dung
+  - id: n43
+    cau: Theo Bond và Smith, các nước văn hóa tập thể hùa theo cao hơn.
+    loai: so-lieu
+    nguon:
+      - bond1996
+    trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+  - id: n44
+    cau: Nếu người Việt coi trọng hòa hợp nhóm, ta có thể dự đoán mức hùa theo cao hơn mặt bằng phương Tây; đó chỉ là dự đoán từ mô hình.
+    loai: loi-khuyen
+    nguon:
+      - bond1996
+    trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Việt Nam, với câu ''một cây làm chẳng nên non'' và phép tắc kính trên nhường dưới, nằm trong nhóm văn hóa mà lý thuyết dự đoán…". Chữ mới đặt điều kiện ("nếu người Việt coi trọng hòa hợp nhóm") vì chưa mở nguồn xếp Việt Nam vào nhóm tập thể. gia-dinh: câu tục ngữ chỉ để minh họa. Review (Claude Opus 5.5, 30/10/2026): Có điều kiện ("nếu") và ghi là dự đoán; Bond & Smith 1996 (toàn văn) tóm tắt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    luot_2_ghi_chu: Không phải khẳng định thực nghiệm.
+    review: dung
+  - id: n45
+    cau: Việt Nam không nằm trong số các nước của phân tích Bond và Smith.
+    loai: so-lieu
+    nguon:
+      - bond1996
+    trich: The literature search produced 133 studies drawn from 17 countries.
+    vi_tri: Bảng nghiên cứu, mục Method
+    ket_qua: dung
+    ghi_chu: 'Đã tìm "Vietnam" trong toàn văn: chỉ xuất hiện ở cụm "Vietnam era" (thời chiến tranh Việt Nam, nói về sinh viên Mỹ), không phải nước tham gia. Danh sách nước ở bảng nghiên cứu. Review (Claude Opus 5.5, 30/10/2026): Review tìm "Vietnam" trong Bond & Smith 1996 (toàn văn): chỉ có cụm "students of the Vietnam era" (sinh viên Mỹ), không có Việt Nam trong các nước. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    luot_2_ghi_chu: Tóm tắt Bond & Smith nêu 17 nước nhưng không liệt kê; không mở được bảng quốc gia trong toàn văn. Nhiều khả năng đúng.
+    review: dung
+  - id: n46
+    cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu dùng bài toán Asch trên người Việt.
+    loai: thoi-su
+    het_han: '2028-10-01'
+    ket_qua: dung
+    ghi_chu: 'Tìm 30/10/2026: PubMed (Vietnam* AND conformity/Asch: 11 kết quả, không cái nào là tâm lý học xã hội về hùa theo), Crossref (truy vấn Asch + Vietnamese: không có), Bond & Smith 1996 (không có Việt Nam). Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Opus 5.5, 30/10/2026): Câu thời sự có mốc "Tính đến 10/2026", loai thoi-su, het_han 2028-10-01; review tìm OpenAlex (Asch conformity Vietnam) không thấy. Người gom (Claude Opus 5.5, 30/10/2026): nguồn của câu "chưa tìm thấy" là lần tìm (OpenAlex, PubMed, Crossref) ngày 30/10/2026 của lượt 1 và lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0294325" ]
+    luot_2_ghi_chu: Câu là khẳng định 'chưa tìm thấy', có mốc 10/2026; tìm kiếm của tôi cũng không thấy.
+    review: dung
+    nguon:
+      - tim-kiem-vn
+  - id: n47
+    cau: Văn hóa của một nước không đồng nhất, nên con số thật cho người Việt vẫn là một dấu hỏi.
+    loai: loi-khuyen
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Văn hóa Việt cũng có mặt kia: tinh thần vạch lá tìm sâu, tranh luận nảy lửa ở quán cà phê, và truyền thống phản biện trong gia đình" (không nguồn); đã bỏ. Câu mới là kết luận khiêm tốn, không nói gì cụ thể về người Việt. Review (Claude Opus 5.5, 30/10/2026): Nhận xét thận trọng, không khẳng định cần nguồn. Người gom (Claude Opus 5.5, 30/10/2026): câu suy luận (đã ghi rõ trên trang là suy luận/giả thuyết) dựa vào bond1996, nguồn lượt 2 đã mở.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    luot_2_ghi_chu: Lời khuyên/nhận xét thận trọng, không sai.
+    review: dung
+    nguon:
+      - bond1996
+  - id: n48
+    cau: '"37% nghĩa là 37% số người luôn hùa theo": sai; 37% là tỉ lệ câu trả lời hùa theo trong các lượt gài bẫy.'
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: 29 8 10 17 6 7 7 4 13 6 6 4 6 4.41 3.00
+    vi_tri: Bảng 3
+    ket_qua: dung
+    ghi_chu: 'Bảng 3: trung bình sai 4,41 trên 12 lượt (36,8%).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: "Đúng: 36,8% là tỉ lệ lượt chọn, không phải tỉ lệ người."
+  - id: n49
+    cau: Trong 123 người, 29 người (khoảng một phần tư) không sai lần nào; số lỗi trung bình là 4,4 trên 12 lượt gài bẫy.
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: 29 8 10 17 6 7 7 4 13 6 6 4 6 4.41 3.00
+    vi_tri: Bảng 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đa số người hùa theo chỉ vài lần, và 25% không bao giờ hùa theo"; chữ mới số liệu cụ thể. "Đa số… chỉ vài lần" không đo được từ bảng 3. Review (Claude Opus 5.5, 30/10/2026): Review mở Asch 1956 (toàn văn, bản quét có chữ) Bảng 3: cột 0 lỗi 17 + 5 + 7 = 29 người; trung bình 4,41. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Trung bình 4,4/12 = 36,8% x 12 khớp số học; nhưng '29 trong 123 không sai lần nào' chưa xác nhận được (Asch 1955 chỉ nói 'khoảng một phần tư'; bảng chi tiết nằm ở Asch 1956).
+    review: dung
+  - id: n50
+    cau: Asch nhận xét rằng phần lớn các phán đoán là độc lập, bằng chứng là sức nặng của điều mắt thấy lớn hơn sức ép của đa số.
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: evidence that under the present conditions the force of the perceived data far exceeded that of the majority
+    vi_tri: Mục III.E (a–b)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Asch làm thí nghiệm vì ông tin con người có khả năng độc lập — và dữ liệu ủng hộ ông một phần" (động cơ không có trong nguồn); chữ mới theo lời nhận xét của chính Asch. Review (Claude Opus 5.5, 30/10/2026): Asch 1956 (toàn văn, bản quét có chữ) III.E: "the force of the perceived data far exceeded that of the majority". Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Hơi diễn giải ('bằng chứng là sức nặng của điều mắt thấy') nhưng phù hợp quan điểm Asch.
+    review: dung
+  - id: n51
+    cau: 'Lần làm lại 2023 (210 người) đo trí thông minh, lòng tự trọng, nhu cầu được tán thành và năm đặc điểm tính cách lớn: ngoài tính cởi mở, không đặc điểm nào liên hệ thuyết phục với việc hùa theo.'
+    loai: so-lieu
+    nguon:
+      - franzen2023
+    trich: besides openness, none of the investigated personality traits are convincingly related to the susceptibility of group pressure
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Áp lực nhóm tác động lên cả những người tự tin; khác biệt nằm ở mức độ và ở việc có ai phá vỡ sự nhất trí hay không" (không nguồn). Chữ mới từ tóm tắt Franzen & Mader; nói rõ lòng tự trọng không phải thước đo duy nhất của tự tin. Review (Claude Opus 5.5, 30/10/2026): Franzen & Mader 2023, tóm tắt ("besides openness, none… convincingly related"). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0294325" ]
+    luot_2_ghi_chu: 210 tuyển, N phân tích 202.
+    review: dung
+  - id: n52
+    cau: 'Câu hỏi 1: 37% là tỉ lệ câu trả lời trong các lượt gài bẫy, không phải tỉ lệ người; khoảng một phần tư số người không hùa theo lần nào và số lỗi trung bình là 4,4 trên 12 lượt.'
+    loai: so-lieu
+    nguon:
+      - asch1956
+    trich: Only one-fourth of the subjects in the three experimental groups showed errorless performances
+    vi_tri: Mục III
+    ket_qua: da-sua
+    ghi_chu: 'Câu hỏi 1, lời giải thích. Chữ cũ: "Phần lớn người tham gia chỉ hùa theo một vài lần, và 25% không hùa theo lần nào"; chữ mới: "Trong 123 người, khoảng một phần tư không hùa theo lần nào; số lỗi trung bình là 4,4 trên 12 lượt". Lý do: "phần lớn… một vài lần" không đo được từ bảng 3. Review (Claude Opus 5.5, 30/10/2026): Như n15, n49.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    luot_2_ghi_chu: Số 4,4/12 khớp 36,8% x 12; không đọc được trực tiếp bảng, nhưng khớp số học.
+    review: dung
+  - id: n53
+    cau: 'Câu hỏi 2: yếu tố làm giảm mạnh nhất áp lực hùa theo là có một người trong nhóm phá vỡ sự nhất trí bằng cách trả lời đúng; nhóm 3 người nhất trí đã tạo gần hết áp lực.'
+    loai: so-lieu
+    nguon:
+      - asch1955
+    trich: Disturbance of the majority's unanimity had a striking effect.
+    vi_tri: Asch 1955
+    ket_qua: dung
+    ghi_chu: Cùng nguồn n17, n18.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+  - id: n54
+    cau: 'Câu hỏi 3: Bond và Smith (1996) thấy mức hùa theo ở Mỹ giảm dần theo thời gian và các nước văn hóa tập thể hùa theo nhiều hơn các nước văn hóa cá nhân; 133 nghiên cứu ở 17 quốc gia.'
+    loai: so-lieu
+    nguon:
+      - bond1996
+    trich: Collectivist countries tended to show higher levels of conformity than individualist countries.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ của lời giải thích: "… một trong những bằng chứng xuyên văn hóa đồ sộ nhất của tâm lý học xã hội" (đánh giá không nguồn); đã bỏ. Review (Claude Opus 5.5, 30/10/2026): Bond & Smith 1996 (toàn văn), tóm tắt. Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.119.1.111" ]
+    review: dung
+  - id: n55
+    cau: 'Câu hỏi 4: người hùa theo có thể xuất phát từ những cơ chế khác nhau (tin nhóm đúng và mình sai, hay chỉ muốn khỏi tỏ ra khác biệt); thí nghiệm gốc không tách bạch được.'
+    loai: phat-hien
+    nguon:
+      - asch1956
+    trich: Others who yielded lost sight of the question of accuracy, being dominated by an imperious desire not to appear different
+    vi_tri: Mục tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ba cơ chế khác nhau: tin rằng nhóm đúng, nghi ngờ chính mình, hoặc biết đúng nhưng nói theo cho yên chuyện"; chữ mới: hai cơ chế theo 14d–e của bài 1956. Review (Claude Opus 5.5, 30/10/2026): Asch 1956 (toàn văn, bản quét có chữ) 14(d)–(e). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/solomon-asch_confirmaty" ]
+    review: dung
+  - id: n56
+    cau: 'Câu hỏi 5: trong một biến thể của Asch, trả lời bằng văn bản làm số lỗi giảm còn khoảng một phần ba (mẫu nhỏ); ghi ý kiến trước khi nghe nhau là một cách hợp lý.'
+    loai: loi-khuyen
+    nguon:
+      - asch1956
+    trich: The shift from public to silent judgments markedly lowered the frequency of errors.
+    vi_tri: Thí nghiệm 4
+    ket_qua: da-sua
+    ghi_chu: 'Đáp án đúng cũ: "Thu thập ý kiến bằng văn bản ẩn danh… và hỏi người ít quyền nhất trước"; mới: "Cho mọi người ghi ý kiến ra giấy trước khi thảo luận miệng". Lý do như n38. Các lựa chọn sai là phương án nhiễu (gia-dinh). Review (Claude Opus 5.5, 30/10/2026): Như n39: số (khoảng một phần ba, 14 người) đúng; lời giải thích ghi "(mẫu nhỏ)" và chỉ nói "một cách hợp lý"; giới hạn thống kê ghi ở mục Áp dụng.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Phần 'trả lời bằng văn bản giảm còn khoảng một phần ba (mẫu nhỏ)' là Asch 1956 TN4, không mở được (xem n39).
+    review: dung
+  - id: n57
+    cau: 'Trang này là trang nhà của nghiên cứu Asch: nơi khác chỉ tóm một câu và link về.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id asch, trang_nha: thi-nghiem/asch, nguon [asch1951, asch1956]. Review (Claude Opus 5.5, 30/10/2026): src/data/nghien-cuu.yml: id asch, trang_nha thi-nghiem/asch.'
+    review: dung
+  - id: n58
+    cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn của trang.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trong src/plugins/thanh-phan.mjs (hàm tomTat) và psyche-markdown.mjs: dựng từ khung :::<nhãn>[ý chính] của trang. Review (Claude Opus 5.5, 30/10/2026): src/plugins/thanh-phan.mjs, hàm tomTat; psyche-markdown.mjs.'
+    review: dung
+  - id: n59
+    cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Bốn dòng của hộp khớp mục Nghiên cứu then chốt (số liệu kiểm ở n1–n3, n10–n14). Review (Claude Opus 5.5, 30/10/2026): Bốn dòng của :::ho-so-nghien-cuu khớp mục Asch (1951, 1956): 123 nam sinh viên, ba trường, nhóm 7–9, 18 lượt và 12 lượt gài bẫy, 36,8% và 0,7%, ba phần tư.'
+    review: dung
+  - id: n60
+    cau: 'Một số nghiên cứu sau này lại nghiêng về phía tri giác: khi người tham gia hùa theo nhóm trong một bài xoay hình trong đầu, hoạt động của một mạng vùng não ở thùy chẩm và thùy đỉnh thay đổi (Berns và cộng sự, 2005); hai thí nghiệm dùng mô hình tách các bước của quyết định thấy ý kiến của nhóm làm đổi cách tiếp nhận thông tin từ mắt, chứ không chỉ đổi ngưỡng trả lời (Germar và cộng sự, 2014); đó là nghiên cứu riêng lẻ, với bài toán khác bài của Asch, nên câu hỏi còn mở.'
+    loai: phat-hien
+    nguon:
+      - berns2005
+      - germar2014
+    trich: Conformity was associated with functional changes in an occipital-parietal network, especially when the wrong information originated from other people. … In two experiments, we found consistent evidence for the idea that social influence alters the uptake of available sensory evidence. By contrast, participants did not adjust their decision criteria.
+    vi_tri: Berns 2005, tóm tắt (Results); Germar 2014, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Câu mới (chữ cũ: không có) trong khung Đang tranh cãi. "Thông tin từ mắt" dịch "sensory evidence" trong bài toán thị giác của Germar; "ngưỡng trả lời" dịch "decision criteria". Thêm Berns 2005 và Germar 2014 vào mục Nguồn của trang. Tóm tắt Berns còn nói "first biological evidence for the involvement of perceptual and emotional processes". Review (Claude Opus 5.5, 30/10/2026): Berns và cộng sự 2005 (tóm tắt PubMed), Germar và cộng sự 2014 (tóm tắt). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15978553", "https://doi.org/10.1177/0146167213508985" ]
+    luot_2_ghi_chu: Mô tả đúng; 'hai thí nghiệm' và 'bài toán khác Asch' khớp.
+    review: dung
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: (không có)
-  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
-  ly_do: Bố cục C (kế hoạch).
-- cu: Khung Đang tranh cãi kết thúc ở "…ông cho rằng méo mó nhiều khả năng xảy ra ở khâu phán đoán."
-  moi: 'Thêm câu: "Một số nghiên cứu sau này lại nghiêng về phía tri giác: … (Berns và cộng sự, 2005); … (Germar và cộng sự, 2014). Đó là những nghiên cứu riêng lẻ, … nên câu hỏi còn mở." Thêm hai nguồn vào mục Nguồn.'
-  ly_do: Nhãn Đang tranh cãi cần bằng chứng hai phía, không chỉ lập luận của Asch (hồ sơ n29, n60).
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: (không có)
+    moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
+    ly_do: Bố cục C (kế hoạch).
+  - cu: Khung Đang tranh cãi kết thúc ở "…ông cho rằng méo mó nhiều khả năng xảy ra ở khâu phán đoán."
+    moi: 'Thêm câu: "Một số nghiên cứu sau này lại nghiêng về phía tri giác: … (Berns và cộng sự, 2005); … (Germar và cộng sự, 2014). Đó là những nghiên cứu riêng lẻ, … nên câu hỏi còn mở." Thêm hai nguồn vào mục Nguồn.'
+    ly_do: Nhãn Đang tranh cãi cần bằng chứng hai phía, không chỉ lập luận của Asch (hồ sơ n29, n60).
+  - cu: số lỗi giảm còn khoảng một phần ba (mẫu chỉ 14 người); thí nghiệm ấy
+    moi: số lỗi giảm còn khoảng một phần ba (mẫu chỉ 14 người, nên chính Asch nói chưa chứng minh được chênh lệch bằng thống kê); thí nghiệm ấy
+    ly_do: 'Review: Asch 1956, Thí nghiệm 4: "we cannot establish a conclusive difference statistically" (hồ sơ n39).'

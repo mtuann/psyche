@@ -4,688 +4,957 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/milgram.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-10-30'
-  nhanh: moi/d3-l1
-  ma_bam: null
-  nguoi:
-    luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 1/2); chỗ khó: Claude Opus 5.5'
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-10-30'
+    nhanh: moi/d3-l1
+    ma_bam: sha256:0db13dbbf1721d903371d852a0c0b33cc8e693d319ebce6883f1f9270e38a180
+    nguoi:
+      luot_1: 'Claude Sonnet 5.5 (agent lượt 1, D3-L1 phần 1/2); chỗ khó: Claude Opus 5.5'
+      luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D3-L1)
+      review: Claude Opus 5.5 (agent review D3-L1, 30/10/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d3-l1-kiem-mau.yml), đạt, 30/10/2026
 nguon:
-- id: milgram1963
-  ten: 'Milgram (1963), J Abnorm Soc Psychol 67(4), 371–378: toàn văn (PDF ở psy.miami.edu)'
-  link: https://doi.org/10.1037/h0040525
-  toan_van: true
-- id: burger2009
-  ten: 'Burger (2009), Am Psychol 64(1), 1–11: toàn văn (PDF)'
-  link: https://doi.org/10.1037/a0010932
-  toan_van: true
-- id: haslam2014meta
-  ten: 'Haslam, Loughnan & Perry (2014), Meta-Milgram, PLOS ONE 9(4): toàn văn (Europe PMC, PMC3976349)'
-  link: https://doi.org/10.1371/journal.pone.0093927
-  toan_van: true
-- id: perry2019
-  ten: 'Perry, Brannigan, Wanner & Stam (2019), Soc Psychol Q 83(1), 88–106: tóm tắt (Crossref)'
-  link: https://doi.org/10.1177/0190272519861952
-  toan_van: false
-- id: haslam2014
-  ten: 'Haslam, Reicher, Millard & McDonald (2014), Br J Soc Psychol 54(1), 55–83: tóm tắt (PubMed 25196821)'
-  link: https://doi.org/10.1111/bjso.12074
-  toan_van: false
-- id: reicher2012
-  ten: 'Reicher, Haslam & Smith (2012), Perspect Psychol Sci 7(4), 315–324: tóm tắt (PubMed 26168469)'
-  link: https://doi.org/10.1177/1745691612448482
-  toan_van: false
-- id: dolinski2017
-  ten: 'Doliński & Grzyb (2017), Soc Psychol Personal Sci 8(8), 927–933: tóm tắt (Crossref) và thông cáo báo chí của SPSP (14/3/2017)'
-  link: https://doi.org/10.1177/1948550617693060
-  toan_van: false
+  - id: milgram1963
+    ten: 'Milgram (1963), J Abnorm Soc Psychol 67(4), 371–378: toàn văn (PDF ở psy.miami.edu)'
+    link: https://doi.org/10.1037/h0040525
+    toan_van: true
+  - id: burger2009
+    ten: 'Burger (2009), Am Psychol 64(1), 1–11: toàn văn (PDF)'
+    link: https://doi.org/10.1037/a0010932
+    toan_van: true
+  - id: haslam2014meta
+    ten: 'Haslam, Loughnan & Perry (2014), Meta-Milgram, PLOS ONE 9(4): toàn văn (Europe PMC, PMC3976349)'
+    link: https://doi.org/10.1371/journal.pone.0093927
+    toan_van: true
+  - id: perry2019
+    ten: 'Perry, Brannigan, Wanner & Stam (2019), Soc Psychol Q 83(1), 88–106: tóm tắt (Crossref)'
+    link: https://doi.org/10.1177/0190272519861952
+    toan_van: false
+  - id: haslam2014
+    ten: 'Haslam, Reicher, Millard & McDonald (2014), Br J Soc Psychol 54(1), 55–83: tóm tắt (PubMed 25196821)'
+    link: https://doi.org/10.1111/bjso.12074
+    toan_van: false
+  - id: reicher2012
+    ten: 'Reicher, Haslam & Smith (2012), Perspect Psychol Sci 7(4), 315–324: tóm tắt (PubMed 26168469)'
+    link: https://doi.org/10.1177/1745691612448482
+    toan_van: false
+  - id: dolinski2017
+    ten: 'Doliński, Grzyb, Folwarczny, Grzybała, Krzyszycha, Martynowska & Trojanowski (2017), Soc Psychol Personal Sci 8(8), 927–933: tóm tắt (Crossref, OpenAlex) và thông cáo báo chí của SPSP (14/3/2017)'
+    link: https://doi.org/10.1177/1948550617693060
+    toan_van: false
+  - id: milgram1974
+    ten: 'Milgram (1974), Obedience to Authority: An Experimental View, Harper & Row: toàn văn (Internet Archive, ObedienceToAuthority_368, bản chữ djvu)'
+    link: https://archive.org/details/ObedienceToAuthority_368
+    toan_van: true
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex "Milgram obedience Vietnam" (30/10/2026), cùng PubMed và Crossref ở lượt 1, lượt 2: không có nghiên cứu trên người Việt'
+    link: https://api.openalex.org/works?search=Milgram%20obedience%20Vietnam
 nhan_dinh:
-- id: n1
-  cau: 'Milgram (1963) đo người bình thường đi xa đến đâu khi một nhà khoa học yêu cầu giật điện người khác: 26 trên 40 người (65%) đi đến nấc 450V.'
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: 26 Ss obeyed the experimental commands fully, and administered the highest shock on the generator. 14 Ss broke off the experiment
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: Câu mô tả của trang, đáp án ô thu gọn, dòng Kết quả chính của hộp hồ sơ, hình, câu hỏi 1.
-- id: n2
-  cau: Người tham gia tin rằng mình dự một nghiên cứu về trí nhớ, có trả công, tại một trường đại học.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: Those who responded to the appeal believed they were to participate in a study of memory and learning at Yale University.
-  vi_tri: Mục Method, Subjects
-  ket_qua: dung
-  ghi_chu: '"Có trả công": $4,50 (xem nhận định về 4,5 đô la).'
-- id: n3
-  cau: Người tham gia bốc thăm và luôn trúng vai "thầy giáo" (vì bốc thăm gian lận); "học trò" là người cộng tác của Milgram.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: The drawing was rigged so that the naive subject was always the teacher and the accomplice always the learner.
-  vi_tri: Mục Procedure
-  ket_qua: dung
-- id: n4
-  cau: Mỗi khi học trò trả lời sai, thầy giáo bấm nút phạt bằng điện, mỗi lần tăng thêm một nấc.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: to increase the shock level one step each time the learner fails to respond correctly
-  vi_tri: Mục Procedure
-  ket_qua: dung
-- id: n5
-  cau: Học trò là một người đàn ông lịch sự (đa số người quan sát thấy anh ta hiền lành, dễ mến), ngồi phòng bên.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: whom most observers found mild- mannered and likable
-  vi_tri: Mục Method, Personnel and Locale; Procedure ("adjacent room")
-  ket_qua: dung
-- id: n6
-  cau: Ở nấc 300V, học trò đập vào tường và không trả lời nữa; người thí nghiệm nói "Thí nghiệm yêu cầu anh tiếp tục".
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: When the 300-volt shock is administered, the learner pounds on the wall of the room in which he is bound to the electric chair.
-  vi_tri: 'Mục Procedure; "Prod 2: The experiment requires that you continue"'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ (Tự trải nghiệm): "Ở nấc 150V, anh ta kêu đau và đòi dừng"; chữ mới: "Đến nấc 300V, anh ta đập vào tường và không trả lời nữa". Lý do: trong thiết kế 1963, "no vocal response or other sign of protest is heard from the learner until Shock Level 300"; kêu đau từ 150V là của Thí nghiệm 5 (Burger 2009).'
-- id: n7
-  cau: Người thí nghiệm mặc áo choàng xám của kỹ thuật viên (không phải áo choàng trắng).
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: He was dressed in a gray technician's coat.
-  vi_tri: Mục Method, Personnel and Locale
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "áo choàng trắng" (ở 4 chỗ của trang: Tự trải nghiệm, Điều gì đang xảy ra, Tính chính danh); chữ mới: "áo choàng xám". Lý do: bài 1963 ghi "gray technician''s coat". Người thí nghiệm là giáo viên sinh học 31 tuổi.'
-- id: n8
-  cau: Người thí nghiệm là một giáo viên sinh học 31 tuổi.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: The role of experimenter was played by a 31-year-old high school teacher of biology.
-  vi_tri: Mục Method
-  ket_qua: dung
-- id: n9
-  cau: Khi được mô tả thí nghiệm, 14 sinh viên năm cuối ngành tâm lý ở Yale ước tính từ 0 đến 3 trên 100 người đi đến nấc cuối (trung bình 1,2).
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: The class mean was 1.2%.
-  vi_tri: Mục Results, Preliminary Notions
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Trước khi làm thí nghiệm, Milgram hỏi các chuyên gia dự đoán: họ cho rằng chưa đến 3%"; chữ mới như trên. Lý do: bài 1963 không nói thời điểm hỏi, và đó là 14 sinh viên chứ không phải "chuyên gia". Ước tính 0–3% và trung bình 1,2% đúng.'
-- id: n10
-  cau: Đồng nghiệp của Milgram cũng nghĩ hầu như không ai đi quá nấc "Rất mạnh" (Very Strong Shock).
-  loai: lich-su
-  nguon:
-  - milgram1963
-  trich: the most general feeling was that few if any subjects would go beyond the designation Very Strong Shock
-  vi_tri: Mục Results, Preliminary Notions
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "các bác sĩ tâm thần dự đoán còn thấp hơn" (ở Kết quả) và "kể cả chuyên gia" (ô đáp án). Bài 1963 không nói về bác sĩ tâm thần (khảo sát đó thuộc sách 1974, chưa mở). Chữ mới chỉ dùng điều bài 1963 nói.'
-- id: n11
-  cau: Cả sinh viên lẫn đồng nghiệp đều dự đoán sai rất xa so với kết quả.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: The obtained distribution of scores deviates radically from the prediction.
-  vi_tri: Mục Results, Distribution of scores
-  ket_qua: dung
-- id: n12
-  cau: Máy giật điện (giả) có 30 nấc từ 15V đến 450V, tăng 15V mỗi nấc.
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: There is a 15-volt increment from one switch to the next going from left to right.
-  vi_tri: Mục Method, Apparatus
-  ket_qua: dung
-  ghi_chu: '"A simulated shock generator is used, with 30 clearly marked voltage levels that range from IS [15] to 450 volts" (OCR đọc 15 thành IS).'
-- id: n13
-  cau: 'Các nấc chia nhóm bằng nhãn từ "Shock nhẹ" đến "Nguy hiểm: giật mạnh"; hai nấc cuối chỉ đánh dấu XXX (nên nấc 450V không ghi "Nguy hiểm: giật mạnh").'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: Two switches after this last designation are simply marked XXX.
-  vi_tri: Mục Method, Apparatus
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nấc cuối ghi ''Nguy hiểm: giật mạnh''" / "nấc tối đa 450V, nấc ghi ''Nguy hiểm: giật mạnh''"; chữ mới: nhóm 375–420V ghi nhãn ấy, hai nấc 435 và 450V chỉ đánh dấu XXX. Hình (src/hinh) không chứa câu này.'
-- id: n14
-  cau: Người tham gia đổ mồ hôi, run, nói lắp, và có người cười gượng đến mức lên cơn co giật vì căng thẳng; tay vẫn bấm nút.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: Profuse sweating, trembling, and stuttering were typical expressions of this emotional disturbance.
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: 'Cười: 14/40 người cười hay mỉm cười rõ rệt; 3 người co giật dữ dội, một lần phải dừng thí nghiệm (mục Results, Signs of extreme tension).'
-- id: n15
-  cau: 'Vâng lời ở đây không hẳn là sự thản nhiên lạnh lùng: nhiều người căng thẳng rõ rệt; cách giải thích điều đó còn tranh cãi.'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: The procedure created extreme levels of nervous tension in some Ss.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Vâng lời ở đây không phải sự tàn ác lạnh lùng, mà là sự giằng xé rồi đầu hàng". "Giằng xé rồi đầu hàng" là diễn giải; Haslam 2014 cho rằng nhiều người còn "vui vì đã tham gia". Chữ mới chỉ khẳng định điều bài 1963 đo (căng thẳng) và nói việc giải thích còn tranh cãi.'
-- id: n16
-  cau: Milgram tuyển 40 người đàn ông tuổi 20–50, đủ nghề nghiệp, qua quảng cáo trên báo và thư mời gửi trực tiếp.
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: Subjects were obtained by a newspaper advertisement and direct mail solicita- tion.
-  vi_tri: Mục Method, Subjects
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "qua quảng cáo trên báo"; chữ mới thêm "và thư mời gửi trực tiếp" (bài 1963 nêu cả hai). 40 nam, tuổi 20–50 đúng.'
-- id: n17
-  cau: Người tham gia được trả 4,5 đô la (và được nói rằng tiền ấy là của họ dù chuyện gì xảy ra).
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: They were paid $4.50 for their participation in the experiment.
-  vi_tri: Mục Method, Subjects
-  ket_qua: dung
-- id: n18
-  cau: Học trò do một kế toán viên 47 tuổi được huấn luyện cho vai đóng (không phải "diễn viên tên Wallace").
-  loai: lich-su
-  nguon:
-  - milgram1963
-  trich: The victim was played by a 47-year-old accountant, trained for the role
-  vi_tri: Mục Method, Personnel and Locale
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "học trò là diễn viên (ông Wallace)"; chữ mới như trên. Lý do: bài 1963 không nêu tên "Wallace" và mô tả anh ta là kế toán viên 47 tuổi được huấn luyện (tên Wallace chỉ thấy ở sách 1974, chưa mở).'
-- id: n19
-  cau: Học trò trả lời sai theo kịch bản; không có phản hồi hay dấu hiệu phản đối nào cho đến nấc 300V; sau cú giật 315V tiếng đập tường lặp lại rồi anh ta im hẳn.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: In the present experimental condition no vocal re- sponse or other sign of protest is heard from the learner until Shock Level 300 is reached.
-  vi_tri: Mục Procedure
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Ở 150V, anh ta kêu đau và đòi được thả ra. Ở 300V, anh ta đập vào tường đòi được thả; từ 315V trở đi không còn phản hồi trên bảng đáp án". Bài 1963: không phản đối đến 300V; đập tường ở 300V; "The pounding is repeated after the 315-volt shock is administered; afterwards he is not heard from". "Đòi được thả" không có trong bài 1963.'
-- id: n20
-  cau: Ở các biến thể về sau của Milgram (như Thí nghiệm 5), học trò bắt đầu kêu phản đối từ nấc 150V.
-  loai: lich-su
-  nguon:
-  - burger2009
-  trich: Following the administration of the 150-volt punishment, the participant heard the learner's cries of protest through the wall.
-  vi_tri: Mục Method (Burger mô tả lại Thí nghiệm 5)
-  ket_qua: dung
-  ghi_chu: Qua mô tả của Burger 2009; chưa mở sách Milgram 1974.
-- id: n21
-  cau: 'Thí nghiệm 1963 có 4 câu thúc ép, dùng theo đúng thứ tự: "Xin hãy tiếp tục"; "Thí nghiệm yêu cầu anh tiếp tục"; "Điều tuyệt đối cần thiết là anh phải tiếp tục"; "Anh không còn lựa chọn nào khác, anh phải tiếp tục".'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: 'Prod 4: You have no other choice, you must go on. The prods were always made in sequence'
-  vi_tri: Mục Procedure, Experimenter feedback
-  ket_qua: dung
-  ghi_chu: 'Prod 3 gốc: "It is absolutely essential that you continue"; trang dịch "Bắt buộc anh phải tiếp tục" (xấp xỉ, không sai nghĩa).'
-- id: n22
-  cau: 'Hai câu thúc ép đặc biệt: "Dù cú giật có thể đau, nó không gây tổn thương mô vĩnh viễn, xin anh tiếp tục" và "Dù học trò có muốn hay không, anh vẫn phải tiếp tục cho đến khi cậu ấy học thuộc hết các cặp từ".'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: Whether the learner likes it or not, you must go on until he has learned all the word pairs correctly.
-  vi_tri: Mục Procedure, Special prods
-  ket_qua: dung
-- id: n23
-  cau: 26 trên 40 người (65%) đi đến 450V; 14 người dừng lại trong khoảng 300–375V.
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: Of the 40 subjects, 5 refused to obey the experimental commands beyond the 300-voIt level.
-  vi_tri: Mục Results, Distribution of scores; Bảng 2
-  ket_qua: dung
-  ghi_chu: '5 dừng sau 300V, 4 sau 315V, 2 sau 330V, mỗi mức 345, 360, 375V một người: tổng 14.'
-- id: n24
-  cau: Tất cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời.
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: No subject stopped prior to administering Shock Level 20.
-  vi_tri: Mục Results, Distribution of scores
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nấc mà học trò đập tường đòi được thả (từ 315V anh ta không còn phản hồi)"; chữ mới bỏ "đòi được thả" (không có trong bài 1963). Hình src/hinh/milgram-obedience.html vẫn còn chữ cũ ở dòng "nấc mà học trò đập tường đòi được thả": ngoài phạm vi phần này, người giao sửa.'
-- id: n25
-  cau: Burger (2009) làm lại một phần Thí nghiệm 5 của Milgram, 45 năm sau, và dừng ở nấc 150V.
-  loai: tai-lap
-  nguon:
-  - burger2009
-  trich: Seventy adults participated in a replication of Milgram's Experi- ment 5
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "xin phép hội đồng đạo đức để làm lại đến nấc 150V thì dừng — nấc mà học trò lần đầu kêu đau và đòi dừng"; chữ mới nói rõ là Thí nghiệm 5 và 150V là nơi học trò bắt đầu phản đối bằng lời. "Hội đồng đạo đức" không đối chiếu được trong phần đã đọc: đã bỏ chữ ấy, chỉ giữ "với chuẩn đạo đức hiện nay" (Burger: "current standards… place Milgram''s studies out of bounds").'
-- id: n26
-  cau: Trong Thí nghiệm 5, 79% những người đã vượt qua 150V (26 trên 33) đi tiếp đến 450V.
-  loai: so-lieu
-  nguon:
-  - burger2009
-  trich: Another way to say this is that 79% of the people who continued past 150 volts (26 of 33) went all the way to the end of the shock generator's range.
-  vi_tri: Mục Results
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "trong dữ liệu của Milgram, 79%…"; chữ mới nói rõ là Thí nghiệm 5, thêm 26/33. Cùng nhận định ở khung Khá vững và câu hỏi 2. Hình src/hinh/milgram-obedience.html ghi "79% những người đã vượt qua 150V" dưới nhãn "Số liệu Milgram (1963)": 79% là của Thí nghiệm 5, không phải bài 1963.'
-- id: n27
-  cau: Burger có 70 người trưởng thành, chia hai điều kiện; điều kiện cơ sở có 40 người.
-  loai: so-lieu
-  nguon:
-  - burger2009
-  trich: Seventy adults participated in a replication of Milgram's Experi- ment 5
-  vi_tri: Tóm tắt; Bảng 2
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Với 70 người trưởng thành, 70% tiếp tục vượt qua 150V" (gộp sai: 70% là của điều kiện cơ sở, 28/40). Bảng 2: cơ sở 12 dừng + 28 tiếp = 40; điều kiện hai (người mẫu từ chối) 11 + 19 = 30.'
-- id: n28
-  cau: Ở điều kiện cơ sở, 70% (28/40) tiếp tục sau 150V, so với 82,5% ở Thí nghiệm 5 của Milgram; chênh lệch không có ý nghĩa thống kê.
-  loai: tai-lap
-  nguon:
-  - burger2009
-  trich: This rate is slightly lower than the percentage who continued beyond this point in Milgram's comparable condition (82.5%)
-  vi_tri: Mục Results, bảng 2
-  ket_qua: dung
-  ghi_chu: p = ,29 (chi bình phương 1,10, N = 80).
-- id: n29
-  cau: Điều kiện thứ hai của Burger, trong đó người tham gia thấy một người khác từ chối, không làm khác đi so với điều kiện cơ sở.
-  loai: tai-lap
-  nguon:
-  - burger2009
-  trich: participants who saw a confederate refuse the experimenter's instructions obeyed as often as those who saw no model
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: 63,3% so với 70%, không khác biệt có ý nghĩa.
-- id: n30
-  cau: Nam và nữ vâng lời như nhau trong lần làm lại của Burger.
-  loai: tai-lap
-  nguon:
-  - burger2009
-  trich: Men and women did not differ in their rates of obedience
-  vi_tri: Tóm tắt
-  ket_qua: dung
-- id: n31
-  cau: 'Hiệu ứng "mù quáng" ngày nay: với chuẩn đạo đức hiện nay, thí nghiệm Milgram không còn được làm lại nguyên bản.'
-  loai: lich-su
-  nguon:
-  - burger2009
-  trich: Nonetheless, current standards for the ethical treatment of participants clearly place Milgram's studies out of bounds
-  vi_tri: Mục Ethical Concerns
-  ket_qua: dung
-  ghi_chu: Nhận định mới thay cho câu cũ "không ai được phép lặp lại y nguyên… xin phép hội đồng đạo đức".
-- id: n32
-  cau: 'Doliński và Grzyb (2017) ở Ba Lan: 80 người (40 nam, 40 nữ, tuổi 18–69), 10 nút, cường độ giảm nhẹ vì lý do đạo đức; 90% bấm đến nút cao nhất.'
-  loai: tai-lap
-  nguon:
-  - dolinski2017
-  trich: They found that 90% of the people were willing to go to the highest level in the experiment.
-  vi_tri: Thông cáo báo chí SPSP 14/3/2017
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: chỉ mở được tóm tắt (Crossref) và thông cáo báo chí của SPSP (bậc 3, nhưng là thông cáo chính thức của hội xuất bản); chưa mở bài gốc nên "90%", "10 nút", "18–69" chỉ có từ thông cáo. Chữ cũ: "90% người tham gia bấm đến nút cao nhất trong 10 nút"; chữ mới thêm cỡ mẫu, thủ tục theo Burger. Người giao/lượt 2 tìm bản toàn văn. Thông tin trong nguon.yml (8(3), 282–289, không DOI) không khớp Crossref (8(8), 927–933, DOI 10.1177/1948550617693060): đã sửa ở danh sách nguồn của trang, nguon.yml (khóa) cần xem lại.'
-- id: n33
-  cau: Doliński và Grzyb kết luận mức vâng lời cao tương tự các nghiên cứu gốc của Milgram; thiết kế khác bản gốc nên không so sánh trực tiếp được từng con số.
-  loai: tai-lap
-  nguon:
-  - dolinski2017
-  trich: The results achieved show a level of participants' obedience toward instructions similarly high to that of the original Milgram studies.
-  vi_tri: Tóm tắt (Crossref)
-  ket_qua: dung
-- id: n34
-  cau: Ở Doliński và Grzyb, mẫu nhỏ nên chênh lệch theo giới tính của người tham gia và của học trò chưa kết luận được.
-  loai: tai-lap
-  nguon:
-  - dolinski2017
-  trich: Results regarding the influence of the sex of participants and of the "learner," as well as of personality characteristics, do not allow us to unequivocally accept or reject the hypotheses offered.
-  vi_tri: Tóm tắt (Crossref)
-  ket_qua: dung
-- id: n35
-  cau: 'Khá vững: áp lực quyền lực tạo ra mức vâng lời cao trong phòng thí nghiệm.'
-  loai: nhan
-  nguon:
-  - haslam2014meta
-  - burger2009
-  - dolinski2017
-  trich: We assembled data from the 21 conditions ( N = 740) in which obedience involved progression to maximum voltage (overall rate 43.6%)
-  vi_tri: Tóm tắt (Meta-Milgram)
-  nhan: kha-vung
-  co_so:
-  - haslam2014meta
-  - burger2009
-  - dolinski2017
-  - perry2019
-  ly_do: 'Nhiều nghiên cứu cùng chiều: tổng hợp 21 biến thể của Milgram (Meta-Milgram, 740 người, 43,6% đi đến nấc cuối) và hai lần làm lại hiện đại ở Mỹ và Ba Lan (Burger 2009; Doliński 2017) thấy mức vâng lời cao. Chưa đạt Vững chắc theo mục 4: tổng hợp chỉ gồm các biến thể nhỏ (20–40 người) của cùng một chương trình nghiên cứu, không phải phân tích tổng hợp các nghiên cứu độc lập; không có tái lập lớn đăng ký trước; hai lần làm lại đều dừng sớm vì đạo đức nên không đo đúng biến số gốc (đi đến 450V); và tư liệu lưu trữ (Perry 2019: 18/23 biến thể) cho thấy người không tin hẳn vào màn kịch giật mạnh hơn, nên độ lớn bị nghi phóng đại. Hướng của hiệu ứng thì nhất quán, nên Khá vững chứ không Đang tranh cãi.'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Milgram làm nhiều biến thể, và các nhà nghiên cứu khác ở nhiều nước, nhiều thập kỷ sau vẫn thu được… Đây là một trong những hiệu ứng được lặp lại nhiều nhất của tâm lý học xã hội"; chữ mới dùng 23 biến thể, hai lần làm lại, 43,6%. Đã bỏ câu so sánh "lặp lại nhiều nhất" (không nguồn) và "nhiều nước" (chỉ mở được Mỹ và Ba Lan). chỗ khó: thước đo Vững chắc đòi tái lập lớn không giảm nhẹ hay tổng hợp độc lập; ở đây chỉ có tổng hợp số liệu của chính Milgram và hai lần làm lại sửa đổi, cộng phê bình của Perry 2019. Người giao/lượt 2 cân nhắc hạ xuống Khá vững. Chỗ khó (Claude Opus 5.5): chốt hạ Vững chắc xuống Khá vững (lý do ở ly_do); sửa khung trên trang thành :::kha-vung và thêm câu "Vì sao chỉ khá vững" (n69). Hộp Tóm tắt nhanh dựng từ khung nên đổi theo. Trang khác link tới khung này: chưa kiểm (người giao xem o_dau).'
-- id: n36
-  cau: 'Mức vâng lời thay đổi rất nhiều theo biến thể: trong 21 biến thể có đo việc đi đến 450V, tỉ lệ chung là 43,6% (740 người).'
-  loai: so-lieu
-  nguon:
-  - haslam2014meta
-  trich: We assembled data from the 21 conditions ( N = 740) in which obedience involved progression to maximum voltage (overall rate 43.6%)
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: 'Bảng 2: từ 1 trên 40 (carte blanche) đến 29 trên 40 (áp lực nhóm đồng tình với người thí nghiệm).'
-- id: n37
-  cau: Milgram làm 23 biến thể.
-  loai: lich-su
-  nguon:
-  - haslam2014meta
-  trich: Milgram's famous experiment contained 23 small-sample conditions
-  vi_tri: Tóm tắt
-  ket_qua: dung
-- id: n38
-  cau: 'Khá vững: nấc 150V là "điểm không quay đầu".'
-  loai: nhan
-  nguon:
-  - burger2009
-  trich: In short, the 150-volt switch is something of a point of no return.
-  vi_tri: Mục Results
-  nhan: kha-vung
-  co_so:
-  - burger2009
-  ly_do: 'Một con số từ một điều kiện (Thí nghiệm 5, 33 người vượt 150V); Burger dùng nó để ước lượng, nhưng chưa có tái lập đầy đủ đến 450V ở thời nay (không thể làm vì đạo đức): một nguồn, một điều kiện nên Khá vững.'
-  ket_qua: dung
-- id: n39
-  cau: 'Đang tranh cãi: người ta vâng lời vì mù quáng hay vì tin vào mục đích.'
-  loai: nhan
-  nguon:
-  - haslam2014
-  - reicher2012
-  - perry2019
-  trich: This analysis is inconsistent with Milgram's own agentic state model.
-  vi_tri: Tóm tắt Haslam 2014
-  nhan: tranh-cai
-  co_so:
-  - haslam2014
-  - reicher2012
-  - perry2019
-  ly_do: Hai cách hiểu (ủy nhiệm của Milgram; đồng nhất với mục đích, Haslam–Reicher) cùng dựa vào tư liệu và số liệu của Milgram và chưa ngã ngũ; thêm tái phân tích của Perry 2019 cho thấy hoài nghi làm tăng vâng lời.
-  ket_qua: dung
-- id: n40
-  cau: Perry và cộng sự (2019) thấy trong 18 trên 23 biến thể, những người tin hoàn toàn rằng mình đang gây đau chỉ giật ở mức trung bình thấp hơn những người không tin hoàn toàn.
-  loai: so-lieu
-  nguon:
-  - perry2019
-  trich: in 18 of 23 variations of the experiment, the mean levels of shock for those who fully believed that they were inflicting pain were lower than for subjects who did not fully believe they were inflicting pain
-  vi_tri: Tóm tắt (Crossref)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "khi Gina Perry (2012) lục lại kho lưu trữ ở Yale, bà cho rằng Milgram đã trình bày dữ liệu có chọn lọc, và một số người tham gia thực ra đã nghi ngờ màn kịch". Sách Perry (2012) chưa mở được nên câu "chọn lọc" bỏ; thay bằng kết quả đã mở của Perry và cộng sự 2019 (tư liệu của trợ lý Murata). Cả 2019: Social Psychology Quarterly 83(1), 88–106.'
-- id: n41
-  cau: Haslam, Reicher và cộng sự cho rằng người ta vâng lời vì đồng nhất với sứ mệnh khoa học ("engaged followership").
-  loai: phat-hien
-  nguon:
-  - reicher2012
-  - haslam2014
-  trich: willingness to perform unpleasant tasks is contingent upon identification with collective goals
-  vi_tri: Tóm tắt Haslam 2014
-  ket_qua: dung
-  ghi_chu: 'Cũng từ Reicher 2012: "identification-based followership".'
-- id: n42
-  cau: Cuộc tranh luận này chưa ngã ngũ.
-  loai: nhan
-  nguon:
-  - haslam2014
-  - reicher2012
-  trich: This analysis is inconsistent with Milgram's own agentic state model.
-  vi_tri: Tóm tắt Haslam 2014
-  nhan: tranh-cai
-  co_so:
-  - haslam2014
-  - reicher2012
-  ly_do: Xem khung Đang tranh cãi; câu nhận định "chưa ngã ngũ" là diễn giải của trang về tình trạng bằng chứng.
-  ket_qua: dung
-  ghi_chu: Gộp với khung tranh-cai ở trên.
-- id: n43
-  cau: 'Trạng thái ủy nhiệm (Milgram): người ta trao trách nhiệm cho người có quyền lực và vì thế vâng lời.'
-  loai: dinh-nghia
-  nguon:
-  - reicher2012
-  trich: The behavior of participants within Milgram's obedience paradigm is commonly understood to arise from the propensity to cede responsibility to those in authority and hence to obey them.
-  vi_tri: Tóm tắt Reicher 2012
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "khi có quyền lực hợp pháp đứng ra chịu trách nhiệm, người ta chuyển sang ''chế độ thực thi'', ngừng tự đánh giá đạo đức hành vi của mình". Cụm "chế độ thực thi" và "ngừng tự đánh giá đạo đức" không có trong nguồn đã mở (chỉ có trong sách Milgram 1974). Chữ mới dùng định nghĩa của Reicher 2012. Chưa mở Milgram 1974.'
-- id: n44
-  cau: Theo Reicher và cộng sự, những kẻ thi hành bạo quyền trong lịch sử thường chủ động đồng nhất với lãnh đạo và mục tiêu của họ.
-  loai: phat-hien
-  nguon:
-  - reicher2012
-  trich: recent historical and social psychological research suggests that agents of tyranny actively identify with their leaders
-  vi_tri: Tóm tắt Reicher 2012
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Kẻ xấu trong lịch sử hiếm khi nghĩ mình đang làm điều ác; họ nghĩ mình đang phục vụ điều lớn lao" (không nguồn trực tiếp). Chữ mới sát tóm tắt.'
-- id: n45
-  cau: 'Cam kết từng bước: mỗi nấc chỉ tăng 15V; giả thuyết là một bước nhỏ dễ chấp nhận hơn một bước nhảy vọt.'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: There is a 15-volt increment from one switch to the next going from left to right.
-  vi_tri: Mục Method, Apparatus
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "một bước nhỏ luôn dễ hơn một bước nhảy vọt"; chữ mới đánh dấu là giả thuyết. chưa chắc: bài 1963 không kiểm tra giả thuyết cam kết từng bước (nguồn cho thuyết này không mở được).'
-- id: n46
-  cau: Khi chuyển ra văn phòng xập xệ ở Bridgeport, tỉ lệ vâng lời là 47,5%, so với 62,5% ở điều kiện tương ứng tại Yale.
-  loai: so-lieu
-  nguon:
-  - haslam2014meta
-  trich: Thus the 47.5% obedience rate in Bridgeport is usually contrasted with the 62.5% rate for the comparable condition at Yale
-  vi_tri: Phần Introduction
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "tỉ lệ vâng lời giảm từ 65% xuống 47,5%" (Vùng Việt Nam) và "chính Milgram thấy tỉ lệ vâng lời giảm khi chuyển… ra một văn phòng thuê ở Bridgeport". 65% là kết quả của bài 1963 (không có tiếng kêu), còn Bridgeport so với điều kiện tương ứng (62,5%). Bridgeport là "dingy office" theo Meta-Milgram; "văn phòng thuê" bỏ.'
-- id: n47
-  cau: 'Tính chính danh của bối cảnh: thí nghiệm được làm ở phòng thí nghiệm tương tác sang trọng của Yale, chi tiết quan trọng với tính chính danh của thí nghiệm.'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: This detail is relevant to the perceived legitimacy of the e
-  vi_tri: Mục Method, Personnel and Locale
-  ket_qua: dung
-  ghi_chu: OCR cắt cuối câu; vẫn là câu gốc "…perceived legitimacy of the experiment".
-- id: n48
-  cau: 'Vẻ chính danh: trong thí nghiệm, khi chuyển khỏi Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn (47,5% so với 62,5%), dù vẫn gần một nửa. Những cuộc gọi xưng danh công an hay ngân hàng cũng mượn vẻ chính danh; đó là phép so sánh của trang, thí nghiệm Milgram không nghiên cứu lừa đảo.'
-  loai: loi-khuyen
-  nguon:
-  - haslam2014meta
-  trich: Thus the 47.5% obedience rate in Bridgeport is usually contrasted with the 62.5% rate for the comparable condition at Yale
-  vi_tri: Meta-Milgram, phần Introduction (cùng câu với n46)
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Lừa đảo giả danh: kẻ gọi điện xưng công an, bác sĩ, tổng đài ngân hàng và ra lệnh chuyển tiền gấp. Công thức giống hệt: tạo tính chính danh + tạo áp lực thời gian + từng bước nhỏ. Cách chống: xác minh qua kênh độc lập — gọi lại số chính thức, hỏi ý kiến người thứ ba." Không nguồn cho "công thức giống hệt" (Milgram không có áp lực thời gian) và cho cách chống (cần trang chính thức của Bộ Công an hay Ngân hàng Nhà nước; tìm ngày 30/10/2026 không ra trang đọc được). Chữ mới chỉ giữ điều thí nghiệm cho thấy (Bridgeport) và nói rõ phần lừa đảo là phép so sánh (gia-dinh). Muốn giữ lời khuyên chống lừa đảo thì cần nguồn chính thức, loại thoi-su, có hạn.'
-- id: n49
-  cau: Trong một biến thể của Milgram, khi hai người đóng vai "thầy giáo" khác từ chối tiếp tục, chỉ 4 trên 40 người tham gia thật vâng lời đến nấc cuối.
-  loai: so-lieu
-  nguon:
-  - haslam2014meta
-  trich: 'Group pressure to disobey Like baseline condition but with 3 Ts: two (confederates) defy the E, who urges the participant T to continue shocks'
-  vi_tri: Bảng 1–2 (điều kiện 7)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chỉ cần một người cùng phản đối, tỉ lệ vâng lời sụt mạnh". Biến thể này có hai người cộng tác từ chối (không phải một); số 4/40 từ Bảng 2 của Meta-Milgram (điều kiện 7: 40 người, 4 vâng lời). Chỗ khó (Claude Opus 5.5): thêm: "Người dám dừng lại thường là người có một đồng minh" (khái quát ra nơi làm việc, không nguồn) đổi thành "Trong thí nghiệm, có đồng minh giúp người ta dám dừng lại".'
-- id: n50
-  cau: Biết trước bốn câu thúc ép giúp ta nhận ra chúng khi gặp ngoài đời.
-  loai: loi-khuyen
-  ket_qua: da-bo
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Bỏ câu "biết trước bốn câu thúc ép giúp ta nhận ra chúng khi gặp ngoài đời" (không nghiên cứu nào đã mở kiểm việc biết trước lời thúc ép). Mục đổi tên "Tự vệ tinh thần" thành "Lời thúc ép không phải sự thật" và chỉ giữ phần có nguồn (n51: 14/40 người từ chối).'
-- id: n51
-  cau: 'Câu "anh không còn lựa chọn nào khác" là lời thúc ép, không phải sự thật: 14 trong 40 người vẫn từ chối tiếp tục dù bị thúc ép.'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: Thus a total of 14 subjects defied the experimenter.
-  vi_tri: Mục Results
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "hầu như luôn là dối trá — lựa chọn luôn còn đó" (diễn giải mạnh); chữ mới dựa vào 14/40 người từ chối.'
-- id: n52
-  cau: Milgram làm thí nghiệm ở Mỹ, Burger cũng ở Mỹ, Doliński và Grzyb ở Ba Lan.
-  loai: lich-su
-  nguon:
-  - milgram1963
-  - burger2009
-  - dolinski2017
-  trich: Seventy adults participated in a replication of Milgram's Experi- ment 5
-  vi_tri: 'Tóm tắt Burger; Doliński: SWPS University, Poland (thông cáo)'
-  ket_qua: dung
-  ghi_chu: 'Burger: Santa Clara University (Mỹ); Milgram: Yale; Doliński: SWPS University of Social Sciences and Humanities, Ba Lan.'
-- id: n53
-  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy thí nghiệm kiểu Milgram trên người Việt.
-  loai: thoi-su
-  het_han: '2028-10-01'
-  ket_qua: dung
-  ghi_chu: 'Tìm 30/10/2026: PubMed (Vietnam* AND obedience AND (authority OR Milgram): 1 kết quả, bài về thanh thiếu niên Việt di cư, không liên quan), Crossref (truy vấn Milgram + Vietnam + replication: không có). Chưa tìm tạp chí trong nước.'
-- id: n54
-  cau: 'Không có dữ liệu thì không đoán mò: đây là khoảng trống đáng có một nghiên cứu Việt Nam.'
-  loai: loi-khuyen
-  ket_qua: dung
-  ghi_chu: 'Câu kết khiêm tốn, không nói gì cụ thể về người Việt. Đã bỏ câu "Văn hóa Việt Nam coi trọng tôn ti… có thể làm tăng vâng lời… mặt khác… kìm lại" (da-bo: không nguồn).'
-- id: n55
-  cau: Nhiều người tham gia căng thẳng rõ rệt và trong phỏng vấn sau đó họ nhấn mạnh mình không phải kiểu người thích làm đau người khác.
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: In the post-experimental interviews subjects took pains to point out that they were not sadistic types
-  vi_tri: Mục Results, Signs of extreme tension
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Họ đau khổ, do dự, nhiều người muốn trả lại tiền công" ("muốn trả lại tiền" không có trong bài 1963; Haslam 2014 còn thấy nhiều người "vui vì đã tham gia"); chữ mới theo bài 1963.'
-- id: n56
-  cau: Vâng lời trong thí nghiệm không cho phép kết luận về tính cách ngoài đời.
-  loai: loi-khuyen
-  nguon:
-  - milgram1963
-  trich: Obedience, as a determinant of behavior, is of particular relevance to our time.
-  vi_tri: Phần mở đầu
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Vâng lời trong thí nghiệm không đồng nghĩa với tàn ác ngoài đời". Chữ mới thận trọng hơn; chưa chắc: không nguồn bậc 1–2 nói trực tiếp về tính cách.'
-- id: n57
-  cau: 'Học trò không bị giật điện thật: máy giật điện là giả và học trò là người cộng tác của Milgram.'
-  loai: phat-hien
-  nguon:
-  - milgram1963
-  trich: A simulated shock generator is used
-  vi_tri: Mục Method
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Người bị tổn thương thật là chính người tham gia — vì căng thẳng và day dứt"; chữ mới: "Người chịu căng thẳng thật là chính người tham gia". "Day dứt" bỏ: không đo được. Đã đối chiếu: Milgram 1963 không dùng tính từ "tổn thương".'
-- id: n58
-  cau: Trong biến thể của Milgram chỉ có phụ nữ, 26 trên 40 người cũng đi đến nấc cuối, giống nhóm nam.
-  loai: so-lieu
-  nguon:
-  - haslam2014meta
-  - burger2009
-  trich: The women complied fully with the experi- menter's commands 65% of the time, a rate identical to that in the comparable condition with men as participants.
-  vi_tri: 'Burger, phần Introduction; Meta-Milgram bảng 2 (điều kiện 20: 26/40)'
-  ket_qua: dung
-  ghi_chu: Câu mới thêm vào trang để bác "phụ nữ vâng lời ít hơn".
-- id: n59
-  cau: Thí nghiệm cho thấy sức mạnh của tình huống — và theo cách hiểu mới, sức mạnh của niềm tin vào một mục đích; hai bài học rất khác nhau.
-  loai: phat-hien
-  nguon:
-  - reicher2012
-  - haslam2014
-  trich: This reinterpretation also encourages us to see Milgram's studies not as demonstrations of conformity or obedience, but as explorations of the power of social identity-based leadership
-  vi_tri: Tóm tắt Reicher 2012
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nó chứng minh sức mạnh của tình huống"; chữ mới "cho thấy". Lý do: "chứng minh" mạnh hơn mức nguồn.'
-- id: n60
-  cau: 'Câu hỏi 1: 26 trên 40 người đi đến nấc tối đa; tất cả 40 người đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời.'
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: No subject stopped prior to administering Shock Level 20.
-  vi_tri: Mục Results
-  ket_qua: da-sua
-  ghi_chu: 'Cùng nhận định về 300V; chữ cũ trong lời giải thích: "đập tường đòi được thả (từ 315V…)".'
-- id: n61
-  cau: 'Câu hỏi 2: Burger chỉ làm đến 150V vì 79% người đã vượt qua 150V trong Thí nghiệm 5 đều đi tiếp đến 450V; dừng ở đó đỡ gây căng thẳng cho người tham gia.'
-  loai: tai-lap
-  nguon:
-  - burger2009
-  trich: who followed the experimenter's instructions at this point continued up the shock generator's range all the way to 450 volts
-  vi_tri: Mục Results
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "trong thí nghiệm gốc"; mới: "Thí nghiệm 5 của Milgram".'
-- id: n62
-  cau: 'Câu hỏi 3: tỉ lệ tiếp tục 70% so với 82,5% chênh lệch không có ý nghĩa thống kê; Burger không thấy khác biệt giữa nam và nữ.'
-  loai: tai-lap
-  nguon:
-  - burger2009
-  trich: Men and women did not differ in their rates of obedience
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ của lời giải thích: "Burger cũng thấy nam và nữ vâng lời như nhau, trái với suy đoán phổ biến"; "trái với suy đoán phổ biến" bỏ (Burger chỉ nói kỳ vọng của ông là không có khác biệt giới).'
-- id: n63
-  cau: 'Câu hỏi 4: Haslam và Reicher cho rằng người ta vâng lời vì đồng nhất với sứ mệnh khoa học (engaged followership); cách hiểu này thay đổi bài học.'
-  loai: phat-hien
-  nguon:
-  - reicher2012
-  - haslam2014
-  trich: engaged followership
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: Câu hỏi 4 trong quiz.
-- id: n64
-  cau: 'Câu hỏi 5: khi Milgram chuyển thí nghiệm khỏi Đại học Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn: 47,5%, so với 62,5% ở điều kiện tương ứng tại Yale; lời giải thích: vẻ chính danh có tác dụng, nhưng gần một nửa vẫn đi đến nấc cuối.'
-  loai: so-lieu
-  nguon:
-  - haslam2014meta
-  trich: Thus the 47.5% obedience rate in Bridgeport is usually contrasted with the 62.5% rate for the comparable condition at Yale
-  vi_tri: Meta-Milgram, phần Introduction
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Tình huống nào ngoài đời giống cấu trúc của thí nghiệm Milgram nhất? + Kẻ giả danh công an gọi điện… > Công thức chung: tính chính danh + áp lực + từng bước nhỏ" (phép loại suy không nguồn, xếp loi-khuyen). Câu hỏi mới hỏi điều thí nghiệm thấy (cùng số với n46); đổi loại thành so-lieu. Phương án sai là gia-dinh.'
-- id: n65
-  cau: 'Hình "milgram-obedience": cột 65% (26/40, đi đến 450V) và 35% (14/40, dừng ở 300–375V); chữ "Cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời"; chú thích và aria-label cùng số.'
-  loai: so-lieu
-  nguon:
-  - milgram1963
-  trich: No subject stopped prior to administering Shock Level 20. (At this level—300 volts—the victim kicks on the wall and no longer provides answers to the teacher's multiple-choice questions.)
-  vi_tri: Milgram 1963, mục Result of Experiment I; Bảng 2 (5 người dừng ở 300V, 4 ở 315V, 2 ở 330V, 1 mỗi nấc 345, 360, 375V; 26 người đến 450V)
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Người giao đã sửa hình: chữ cũ "100% đều đi đến 300V — nấc mà học trò đập tường đòi được thả" và "79% những người đã vượt qua 150V đều đi tiếp đến 450V" (dưới nhãn "Số liệu Milgram (1963)"); chữ mới "Cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời", bỏ dòng 79%. Lý do: bài 1963 không có lời "đòi được thả" (học trò đập tường, câu trả lời không còn hiện lên bảng); 79% (26/33) là của Thí nghiệm 5 (Burger 2009), không phải bài 1963 (số ấy vẫn ở khung Khá vững và câu hỏi 2, ghi đúng nguồn). Đã đối chiếu: 65%, 35%, 26/40, 14/40, 300–375V, "cả 40 người đến 300V" đúng với bài và Bảng 2. Hình nằm trong HINH_DA_SUA của tests/chuyen.test.mjs.'
-- id: n66
-  cau: 'Trang này là trang nhà của nghiên cứu Milgram: nơi khác chỉ tóm một câu và link về.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id milgram, nguon [milgram1963], trang_nha: thi-nghiem/milgram.'
-- id: n67
-  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn của trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Đã kiểm trong src/plugins/thanh-phan.mjs (tomTat) và psyche-markdown.mjs.
-- id: n68
-  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ dùng điều đã có trong phần kể nghiên cứu của chính trang.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Bốn dòng của hộp khớp mục Nghiên cứu then chốt (số liệu kiểm ở các nhận định về 40 người, 30 nấc, bốn câu thúc ép, 26/40 và 300V).
-- id: n69
-  cau: 'Vì sao chỉ "khá vững": con số tổng hợp lấy từ các biến thể của chính Milgram, mỗi biến thể vài chục người; vì lý do đạo đức, hai lần làm lại hiện đại đều dừng sớm hơn nhiều so với bản gốc; và tư liệu lưu trữ cho thấy những người không tin hẳn vào màn kịch lại giật ở mức cao hơn (Perry và cộng sự, 2019), nên mức vâng lời thật có thể thấp hơn.'
-  loai: nhan
-  nguon:
-  - haslam2014meta
-  - burger2009
-  - perry2019
-  trich: These data suggest that the perception of pain inflated subject defiance and that subject skepticism inflated their obedience.
-  vi_tri: 'Perry 2019, tóm tắt; Meta-Milgram: 21 điều kiện, N = 740 (tóm tắt); Burger 2009 dừng ở 150V (Method)'
-  nhan: kha-vung
-  co_so:
-  - haslam2014meta
-  - burger2009
-  - dolinski2017
-  - perry2019
-  ly_do: Lý do của khung Khá vững (n35).
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ khó (Claude Opus 5.5): Câu mới thêm vào khung (chữ cũ: không có). Doliński 2017: 10 nút (thông cáo SPSP: "Participants had up to 10 buttons to press"), dừng sớm như Burger; chỉ đọc tóm tắt Crossref và thông cáo.'
+  - id: n1
+    cau: 'Milgram (1963) đo người bình thường đi xa đến đâu khi một nhà khoa học yêu cầu giật điện người khác: 26 trên 40 người (65%) đi đến nấc 450V.'
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: 26 Ss obeyed the experimental commands fully, and administered the highest shock on the generator. 14 Ss broke off the experiment
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu mô tả của trang, đáp án ô thu gọn, dòng Kết quả chính của hộp hồ sơ, hình, câu hỏi 1.
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://doi.org/10.1037/h0040525" ]
+    luot_2_ghi_chu: Tóm tắt và Bảng 2, tr. 371, 376.
+  - id: n2
+    cau: Người tham gia tin rằng mình dự một nghiên cứu về trí nhớ, có trả công, tại một trường đại học.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: Those who responded to the appeal believed they were to participate in a study of memory and learning at Yale University.
+    vi_tri: Mục Method, Subjects
+    ket_qua: dung
+    ghi_chu: '"Có trả công": $4,50 (xem nhận định về 4,5 đô la).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 372.
+  - id: n3
+    cau: Người tham gia bốc thăm và luôn trúng vai "thầy giáo" (vì bốc thăm gian lận); "học trò" là người cộng tác của Milgram.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: The drawing was rigged so that the naive subject was always the teacher and the accomplice always the learner.
+    vi_tri: Mục Procedure
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 373.
+  - id: n4
+    cau: Mỗi khi học trò trả lời sai, thầy giáo bấm nút phạt bằng điện, mỗi lần tăng thêm một nấc.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: to increase the shock level one step each time the learner fails to respond correctly
+    vi_tri: Mục Procedure
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 373–374.
+  - id: n5
+    cau: Học trò là một người đàn ông lịch sự (đa số người quan sát thấy anh ta hiền lành, dễ mến), ngồi phòng bên.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: whom most observers found mild- mannered and likable
+    vi_tri: Mục Method, Personnel and Locale; Procedure ("adjacent room")
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 373; học trò bị trói ghế ở "an adjacent room".
+  - id: n6
+    cau: Ở nấc 300V, học trò đập vào tường và không trả lời nữa; người thí nghiệm bảo coi im lặng là trả lời sai, và khi người tham gia ngần ngại thì thúc ép lần lượt "Xin hãy tiếp tục", rồi "Thí nghiệm yêu cầu anh tiếp tục".
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: 'The experimenter instructs the subject to treat the absence of a response as a wrong answer … If the subject indicated his unwillingness to go on, the experimenter responded with a sequence of "prods" … Prod 1: Please continue … Prod 2: The experiment requires that you continue. … The prods were always made in sequence'
+    vi_tri: 'Mục Procedure (tr. 374), Experimenter feedback'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (Tự trải nghiệm): "Ở nấc 150V, anh ta kêu đau và đòi dừng"; chữ mới: "Đến nấc 300V, anh ta đập vào tường và không trả lời nữa". Lý do: trong thiết kế 1963, "no vocal response or other sign of protest is heard from the learner until Shock Level 300"; kêu đau từ 150V là của Thí nghiệm 5 (Burger 2009). Review (Claude Opus 5.5, 30/10/2026): Đã đọc Milgram 1963 tr. 374: ở 300V người thí nghiệm bảo coi im lặng là trả lời sai; các câu thúc ép chỉ dùng khi người tham gia tỏ ý không muốn tiếp tục, theo thứ tự từ Prod 1 "Please continue"; giọng "firm, but not impolite". Câu cũ cho người thí nghiệm nói thẳng Prod 2 ở 300V, "đều đều". Đã sửa đoạn Tự trải nghiệm theo đúng trình tự (lượt 2 đúng).'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: 'Phần đầu đúng (tr. 374). Bài không nói người thí nghiệm dùng đúng câu "Thí nghiệm yêu cầu anh tiếp tục" (Prod 2) ở 300V: ở đó ông bảo coi im lặng là trả lời sai; các câu thúc ép dùng khi người tham gia ngần ngại, bắt đầu từ Prod 1 "Xin hãy tiếp tục". Nên viết: "người thí nghiệm bảo coi im lặng là sai và, nếu người tham gia ngần ngại, thúc ép họ tiếp tục".'
+    review: sai
+  - id: n7
+    cau: Người thí nghiệm mặc áo choàng xám của kỹ thuật viên (không phải áo choàng trắng).
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: He was dressed in a gray technician's coat.
+    vi_tri: Mục Method, Personnel and Locale
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "áo choàng trắng" (ở 4 chỗ của trang: Tự trải nghiệm, Điều gì đang xảy ra, Tính chính danh); chữ mới: "áo choàng xám". Lý do: bài 1963 ghi "gray technician''s coat". Người thí nghiệm là giáo viên sinh học 31 tuổi. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 373: "gray technician''s coat"; trang dùng "áo choàng xám" ở mọi chỗ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 373.
+    review: dung
+  - id: n8
+    cau: Người thí nghiệm là một giáo viên sinh học 31 tuổi.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: The role of experimenter was played by a 31-year-old high school teacher of biology.
+    vi_tri: Mục Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: "tr. 373: giáo viên sinh học trung học."
+  - id: n9
+    cau: Khi được mô tả thí nghiệm, 14 sinh viên năm cuối ngành tâm lý ở Yale ước tính từ 0 đến 3 trên 100 người đi đến nấc cuối (trung bình 1,2).
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: The class mean was 1.2%.
+    vi_tri: Mục Results, Preliminary Notions
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trước khi làm thí nghiệm, Milgram hỏi các chuyên gia dự đoán: họ cho rằng chưa đến 3%"; chữ mới như trên. Lý do: bài 1963 không nói thời điểm hỏi, và đó là 14 sinh viên chứ không phải "chuyên gia". Ước tính 0–3% và trung bình 1,2% đúng. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 375: 14 sinh viên năm cuối, 0–3%, trung bình 1,2%. Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375.
+    review: dung
+  - id: n10
+    cau: Đồng nghiệp của Milgram cũng nghĩ hầu như không ai đi quá nấc "Rất mạnh" (Very Strong Shock).
+    loai: lich-su
+    nguon:
+      - milgram1963
+    trich: the most general feeling was that few if any subjects would go beyond the designation Very Strong Shock
+    vi_tri: Mục Results, Preliminary Notions
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "các bác sĩ tâm thần dự đoán còn thấp hơn" (ở Kết quả) và "kể cả chuyên gia" (ô đáp án). Bài 1963 không nói về bác sĩ tâm thần (khảo sát đó thuộc sách 1974, chưa mở). Chữ mới chỉ dùng điều bài 1963 nói. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 375 ("few if any subjects would go beyond… Very Strong Shock"); trang không còn "bác sĩ tâm thần".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375.
+    review: dung
+  - id: n11
+    cau: Cả sinh viên lẫn đồng nghiệp đều dự đoán sai rất xa so với kết quả.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: The obtained distribution of scores deviates radically from the prediction.
+    vi_tri: Mục Results, Distribution of scores
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375; tr. 376–377 nói cả người quan sát qua gương một chiều cũng đánh giá thấp mức vâng lời.
+  - id: n12
+    cau: Máy giật điện (giả) có 30 nấc từ 15V đến 450V, tăng 15V mỗi nấc.
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: There is a 15-volt increment from one switch to the next going from left to right.
+    vi_tri: Mục Method, Apparatus
+    ket_qua: dung
+    ghi_chu: '"A simulated shock generator is used, with 30 clearly marked voltage levels that range from IS [15] to 450 volts" (OCR đọc 15 thành IS).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 373.
+  - id: n13
+    cau: 'Các nấc chia nhóm bằng nhãn từ "Shock nhẹ" đến "Nguy hiểm: giật mạnh"; hai nấc cuối chỉ đánh dấu XXX (nên nấc 450V không ghi "Nguy hiểm: giật mạnh").'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: Two switches after this last designation are simply marked XXX.
+    vi_tri: Mục Method, Apparatus
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nấc cuối ghi ''Nguy hiểm: giật mạnh''" / "nấc tối đa 450V, nấc ghi ''Nguy hiểm: giật mạnh''"; chữ mới: nhóm 375–420V ghi nhãn ấy, hai nấc 435 và 450V chỉ đánh dấu XXX. Hình (src/hinh) không chứa câu này. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 373, 376: hai nấc cuối chỉ ghi XXX; câu đoán ở Tự trải nghiệm viết "sau cả nhóm nấc ghi Nguy hiểm", khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: 'tr. 373; tr. 376: "The maximum shock is labeled 450 volts, and is two steps beyond the designation: Danger: Severe Shock."'
+    review: dung
+  - id: n14
+    cau: Người tham gia đổ mồ hôi, run, nói lắp, và có người cười gượng đến mức lên cơn co giật vì căng thẳng; tay vẫn bấm nút.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: Profuse sweating, trembling, and stuttering were typical expressions of this emotional disturbance.
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Cười: 14/40 người cười hay mỉm cười rõ rệt; 3 người co giật dữ dội, một lần phải dừng thí nghiệm (mục Results, Signs of extreme tension).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375. "Seizures" ở đây là cơn cười không kiềm được (một ca co giật dữ dội đến mức phải dừng buổi thử). Người vâng lời "often did so under extreme stress" (tr. 376).
+  - id: n15
+    cau: 'Vâng lời ở đây không hẳn là sự thản nhiên lạnh lùng: nhiều người căng thẳng rõ rệt; cách giải thích điều đó còn tranh cãi.'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: The procedure created extreme levels of nervous tension in some Ss.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Vâng lời ở đây không phải sự tàn ác lạnh lùng, mà là sự giằng xé rồi đầu hàng". "Giằng xé rồi đầu hàng" là diễn giải; Haslam 2014 cho rằng nhiều người còn "vui vì đã tham gia". Chữ mới chỉ khẳng định điều bài 1963 đo (căng thẳng) và nói việc giải thích còn tranh cãi. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 375–376 (căng thẳng cực độ ở một số người); tranh cãi về cách hiểu: Haslam và cộng sự 2014 (tóm tắt). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://api.openalex.org/works/doi:10.1111/bjso.12074" ]
+    luot_2_ghi_chu: "Milgram 1963 tr. 376; tranh cãi về cách giải thích: Haslam, Reicher và cộng sự 2014 (tóm tắt) cho rằng mô hình trạng thái ủy nhiệm của Milgram không khớp tư liệu."
+    review: dung
+  - id: n16
+    cau: Milgram tuyển 40 người đàn ông tuổi 20–50, đủ nghề nghiệp, qua quảng cáo trên báo và thư mời gửi trực tiếp.
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: Subjects were obtained by a newspaper advertisement and direct mail solicita- tion.
+    vi_tri: Mục Method, Subjects
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "qua quảng cáo trên báo"; chữ mới thêm "và thư mời gửi trực tiếp" (bài 1963 nêu cả hai). 40 nam, tuổi 20–50 đúng. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 372: "newspaper advertisement and direct mail solicitation"; người tham gia "drawn from New Haven and the surrounding communities". Review sửa thêm tiêu đề mục "40 người đàn ông ở Yale" thành "ở vùng New Haven" (Yale chỉ là nơi làm thí nghiệm), giữ id cũ bằng { #milgram-1963-40-nguoi-dan-ong-o-yale }; xem doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 372.
+    review: dung
+  - id: n17
+    cau: Người tham gia được trả 4,5 đô la (và được nói rằng tiền ấy là của họ dù chuyện gì xảy ra).
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: They were paid $4.50 for their participation in the experiment.
+    vi_tri: Mục Method, Subjects
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 372.
+  - id: n18
+    cau: Học trò do một kế toán viên 47 tuổi được huấn luyện cho vai đóng (không phải "diễn viên tên Wallace").
+    loai: lich-su
+    nguon:
+      - milgram1963
+    trich: The victim was played by a 47-year-old accountant, trained for the role
+    vi_tri: Mục Method, Personnel and Locale
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "học trò là diễn viên (ông Wallace)"; chữ mới như trên. Lý do: bài 1963 không nêu tên "Wallace" và mô tả anh ta là kế toán viên 47 tuổi được huấn luyện (tên Wallace chỉ thấy ở sách 1974, chưa mở). Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 373: "47-year-old accountant, trained for the role". Trang khớp (không còn tên Wallace).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://archive.org/details/ObedienceToAuthority_368" ]
+    luot_2_ghi_chu: 'Milgram 1963 tr. 373. Ghi chú: trong buổi thử học trò được giới thiệu với tên "Mr. Wallace" (Milgram 1974, bản ghi các buổi thử); người đóng là James McDonough, kế toán viên. Câu trong ngoặc đúng nếu hiểu là "không phải diễn viên chuyên nghiệp".'
+    review: dung
+  - id: n19
+    cau: Học trò trả lời sai theo kịch bản; không có phản hồi hay dấu hiệu phản đối nào cho đến nấc 300V; sau cú giật 315V tiếng đập tường lặp lại rồi anh ta im hẳn.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: In the present experimental condition no vocal re- sponse or other sign of protest is heard from the learner until Shock Level 300 is reached.
+    vi_tri: Mục Procedure
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ở 150V, anh ta kêu đau và đòi được thả ra. Ở 300V, anh ta đập vào tường đòi được thả; từ 315V trở đi không còn phản hồi trên bảng đáp án". Bài 1963: không phản đối đến 300V; đập tường ở 300V; "The pounding is repeated after the 315-volt shock is administered; afterwards he is not heard from". "Đòi được thả" không có trong bài 1963. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 374 (không phản đối đến 300V; đập tường ở 300V, lặp lại sau 315V rồi im). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 374; câu trả lời định trước, khoảng ba sai một đúng.
+    review: dung
+  - id: n20
+    cau: Ở các biến thể về sau của Milgram (như Thí nghiệm 5), học trò bắt đầu kêu phản đối từ nấc 150V.
+    loai: lich-su
+    nguon:
+      - burger2009
+    trich: Following the administration of the 150-volt punishment, the participant heard the learner's cries of protest through the wall.
+    vi_tri: Mục Method (Burger mô tả lại Thí nghiệm 5)
+    ket_qua: dung
+    ghi_chu: Qua mô tả của Burger 2009; chưa mở sách Milgram 1974.
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf", "https://archive.org/details/ObedienceToAuthority_368" ]
+    luot_2_ghi_chu: 'Burger 2009 tr. 2. Milgram 1974: ở các điều kiện có phản hồi bằng giọng, học trò rên từ 75V, kêu đau ở 120V, và lần đầu đòi ra ở 150V ("Experimenter, get me out of here! ... I refuse to go on!"). Đúng nếu "kêu phản đối" hiểu là đòi dừng.'
+  - id: n21
+    cau: 'Thí nghiệm 1963 có 4 câu thúc ép, dùng theo đúng thứ tự: "Xin hãy tiếp tục"; "Thí nghiệm yêu cầu anh tiếp tục"; "Điều tuyệt đối cần thiết là anh phải tiếp tục"; "Anh không còn lựa chọn nào khác, anh phải tiếp tục".'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: 'Prod 4: You have no other choice, you must go on. The prods were always made in sequence'
+    vi_tri: Mục Procedure, Experimenter feedback
+    ket_qua: dung
+    ghi_chu: 'Prod 3 gốc: "It is absolutely essential that you continue"; trang dịch "Bắt buộc anh phải tiếp tục" (xấp xỉ, không sai nghĩa).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 374.
+  - id: n22
+    cau: 'Hai câu thúc ép đặc biệt: "Dù cú giật có thể đau, nó không gây tổn thương mô vĩnh viễn, xin anh tiếp tục" và "Dù học trò có muốn hay không, anh vẫn phải tiếp tục cho đến khi cậu ấy học thuộc hết các cặp từ".'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: Whether the learner likes it or not, you must go on until he has learned all the word pairs correctly.
+    vi_tri: Mục Procedure, Special prods
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 374 ("Special prods").
+  - id: n23
+    cau: 26 trên 40 người (65%) đi đến 450V; 14 người dừng lại trong khoảng 300–375V.
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: Of the 40 subjects, 5 refused to obey the experimental commands beyond the 300-voIt level.
+    vi_tri: Mục Results, Distribution of scores; Bảng 2
+    ket_qua: dung
+    ghi_chu: '5 dừng sau 300V, 4 sau 315V, 2 sau 330V, mỗi mức 345, 360, 375V một người: tổng 14.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375 và Bảng 2.
+  - id: n24
+    cau: Tất cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời.
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: No subject stopped prior to administering Shock Level 20.
+    vi_tri: Mục Results, Distribution of scores
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nấc mà học trò đập tường đòi được thả (từ 315V anh ta không còn phản hồi)"; chữ mới bỏ "đòi được thả" (không có trong bài 1963). Hình src/hinh/milgram-obedience.html vẫn còn chữ cũ ở dòng "nấc mà học trò đập tường đòi được thả": ngoài phạm vi phần này, người giao sửa. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 375–376: "No subject stopped prior to administering Shock Level 20"; hình đã bỏ "đòi được thả".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375.
+    review: dung
+  - id: n25
+    cau: Burger (2009) làm lại một phần Thí nghiệm 5 của Milgram, 45 năm sau, và dừng ở nấc 150V.
+    loai: tai-lap
+    nguon:
+      - burger2009
+    trich: Seventy adults participated in a replication of Milgram's Experi- ment 5
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "xin phép hội đồng đạo đức để làm lại đến nấc 150V thì dừng — nấc mà học trò lần đầu kêu đau và đòi dừng"; chữ mới nói rõ là Thí nghiệm 5 và 150V là nơi học trò bắt đầu phản đối bằng lời. "Hội đồng đạo đức" không đối chiếu được trong phần đã đọc: đã bỏ chữ ấy, chỉ giữ "với chuẩn đạo đức hiện nay" (Burger: "current standards… place Milgram''s studies out of bounds"). Review (Claude Opus 5.5, 30/10/2026): Burger 2009 (toàn văn): làm lại Thí nghiệm 5, dừng ở 150V; trang khớp, không còn "hội đồng đạo đức".'
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf", "https://doi.org/10.1037/a0010932" ]
+    luot_2_ghi_chu: Burger 2009, toàn văn, tóm tắt.
+    review: dung
+  - id: n26
+    cau: Trong Thí nghiệm 5, 79% những người đã vượt qua 150V (26 trên 33) đi tiếp đến 450V.
+    loai: so-lieu
+    nguon:
+      - burger2009
+    trich: Another way to say this is that 79% of the people who continued past 150 volts (26 of 33) went all the way to the end of the shock generator's range.
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trong dữ liệu của Milgram, 79%…"; chữ mới nói rõ là Thí nghiệm 5, thêm 26/33. Cùng nhận định ở khung Khá vững và câu hỏi 2. Hình src/hinh/milgram-obedience.html ghi "79% những người đã vượt qua 150V" dưới nhãn "Số liệu Milgram (1963)": 79% là của Thí nghiệm 5, không phải bài 1963. Review (Claude Opus 5.5, 30/10/2026): Burger 2009 (toàn văn) tr. 2: "79% … (26 of 33)", số của Thí nghiệm 5. Trang khớp ở ba chỗ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Burger 2009 tr. 2, tính trên số liệu Thí nghiệm 5 của Milgram.
+    review: dung
+  - id: n27
+    cau: Burger có 70 người trưởng thành, chia hai điều kiện; điều kiện cơ sở có 40 người.
+    loai: so-lieu
+    nguon:
+      - burger2009
+    trich: Seventy adults participated in a replication of Milgram's Experi- ment 5
+    vi_tri: Tóm tắt; Bảng 2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Với 70 người trưởng thành, 70% tiếp tục vượt qua 150V" (gộp sai: 70% là của điều kiện cơ sở, 28/40). Bảng 2: cơ sở 12 dừng + 28 tiếp = 40; điều kiện hai (người mẫu từ chối) 11 + 19 = 30. Review (Claude Opus 5.5, 30/10/2026): Burger 2009 (toàn văn) Bảng 2: cơ sở 28/40 = 70%; điều kiện có người mẫu từ chối 30 người. Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Burger 2009 tr. 4–5; phép so điều kiện cơ sở với Milgram có N = 80 (40 + 40), điều kiện có mẫu từ chối 30 người.
+    review: dung
+  - id: n28
+    cau: Ở điều kiện cơ sở, 70% (28/40) tiếp tục sau 150V, so với 82,5% ở Thí nghiệm 5 của Milgram; chênh lệch không có ý nghĩa thống kê.
+    loai: tai-lap
+    nguon:
+      - burger2009
+    trich: This rate is slightly lower than the percentage who continued beyond this point in Milgram's comparable condition (82.5%)
+    vi_tri: Mục Results, bảng 2
+    ket_qua: dung
+    ghi_chu: p = ,29 (chi bình phương 1,10, N = 80).
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Burger 2009 tr. 7.
+  - id: n29
+    cau: Điều kiện thứ hai của Burger, trong đó người tham gia thấy một người khác từ chối, không làm khác đi so với điều kiện cơ sở.
+    loai: tai-lap
+    nguon:
+      - burger2009
+    trich: participants who saw a confederate refuse the experimenter's instructions obeyed as often as those who saw no model
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 63,3% so với 70%, không khác biệt có ý nghĩa.
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Burger 2009 tr. 7.
+  - id: n30
+    cau: Nam và nữ vâng lời như nhau trong lần làm lại của Burger.
+    loai: tai-lap
+    nguon:
+      - burger2009
+    trich: Men and women did not differ in their rates of obedience
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Burger 2009, tóm tắt và tr. 7–8 (khác biệt không có ý nghĩa ở cả hai điều kiện).
+  - id: n31
+    cau: 'Hiệu ứng "mù quáng" ngày nay: với chuẩn đạo đức hiện nay, thí nghiệm Milgram không còn được làm lại nguyên bản.'
+    loai: lich-su
+    nguon:
+      - burger2009
+    trich: Nonetheless, current standards for the ethical treatment of participants clearly place Milgram's studies out of bounds
+    vi_tri: Mục Ethical Concerns
+    ket_qua: dung
+    ghi_chu: Nhận định mới thay cho câu cũ "không ai được phép lặp lại y nguyên… xin phép hội đồng đạo đức".
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf", "https://api.openalex.org/works/doi:10.1177/1948550617693060" ]
+    luot_2_ghi_chu: Doliński và cộng sự 2017 (tóm tắt); Burger 2009 cũng dừng ở 150V vì lý do đạo đức. Phần mở đầu "Hiệu ứng 'mù quáng' ngày nay" chỉ là tiêu đề.
+  - id: n32
+    cau: 'Doliński và cộng sự (2017) ở Ba Lan: 80 người (40 nam, 40 nữ, tuổi 18–69), 10 nút, cường độ giảm nhẹ vì lý do đạo đức; 90% bấm đến nút cao nhất.'
+    loai: tai-lap
+    nguon:
+      - dolinski2017
+    trich: They found that 90% of the people were willing to go to the highest level in the experiment.
+    vi_tri: Thông cáo báo chí SPSP 14/3/2017
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: chỉ mở được tóm tắt (Crossref) và thông cáo báo chí của SPSP (bậc 3, nhưng là thông cáo chính thức của hội xuất bản); chưa mở bài gốc nên "90%", "10 nút", "18–69" chỉ có từ thông cáo. Chữ cũ: "90% người tham gia bấm đến nút cao nhất trong 10 nút"; chữ mới thêm cỡ mẫu, thủ tục theo Burger. Người giao/lượt 2 tìm bản toàn văn. Thông tin trong nguon.yml (8(3), 282–289, không DOI) không khớp Crossref (8(8), 927–933, DOI 10.1177/1948550617693060): đã sửa ở danh sách nguồn của trang, nguon.yml (khóa) cần xem lại. Review (Claude Opus 5.5, 30/10/2026): OpenAlex và Crossref (DOI 10.1177/1948550617693060): bảy tác giả (Doliński, Grzyb, Folwarczny, Grzybała, Krzyszycha, Martynowska, Trojanowski), tên bài đúng là "Would you deliver an electric shock in 2015? Obedience in the experimental paradigm developed by Stanley Milgram in the 50 years following the original studies", 8(8), 927–933. Số liệu (80 người, 10 nút, 90%) khớp thông cáo SPSP và tóm tắt. Đã sửa "Doliński và Grzyb" thành "Doliński và cộng sự" ở tiêu đề mục (giữ id cũ), câu dẫn, khung nhãn, mục Văn hóa, và sửa cả tên bài, tác giả ở mục Nguồn của trang. src/data/nguon.yml (dolinski2017, chưa khóa) vẫn ghi sai tác giả, tên bài, số tập: ngoài phạm vi review, báo người giao.'
+    luot_2: sai
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/1948550617693060", "https://www.spsp.org/news-center/press-releases/milgram-poland-obey" ]
+    luot_2_ghi_chu: 'câu đúng: Doliński và cộng sự (2017) ở Ba Lan: 80 người (40 nam, 40 nữ, tuổi 18–69), 10 nút, cường độ giảm nhẹ vì lý do đạo đức; 90% bấm đến nút cao nhất.; Số liệu đúng (thông cáo của SPSP, hội xuất bản tạp chí; tóm tắt xác nhận mức vâng lời "similarly high"; chưa đọc được toàn văn, bài đóng). Sai ở tên tác giả: bài có bảy tác giả (Doliński, Grzyb, Folwarczny, Grzybała, Krzyszycha, Martynowska, Trojanowski), nên phải là "Doliński và cộng sự (2017)". Cùng lỗi ở n33, n34, n52.'
+    review: sai
+  - id: n33
+    cau: Doliński và cộng sự kết luận mức vâng lời cao tương tự các nghiên cứu gốc của Milgram; thiết kế khác bản gốc nên không so sánh trực tiếp được từng con số.
+    loai: tai-lap
+    nguon:
+      - dolinski2017
+    trich: The results achieved show a level of participants' obedience toward instructions similarly high to that of the original Milgram studies.
+    vi_tri: Tóm tắt (Crossref)
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/1948550617693060" ]
+    luot_2_ghi_chu: 'Tóm tắt (toàn văn đóng). Vế "không so sánh trực tiếp được từng con số" là suy luận hợp lý từ thiết kế 10 nút kiểu Burger. Tên tác giả: xem n32.'
+    review: sai
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Như n32: tên tác giả. Câu đổi thành "Doliński và cộng sự kết luận…"; ý (mức vâng lời "similarly high", không so được từng con số) khớp tóm tắt.'
+  - id: n34
+    cau: Ở nghiên cứu của nhóm Doliński, mẫu nhỏ nên chênh lệch theo giới tính của người tham gia và của học trò chưa kết luận được.
+    loai: tai-lap
+    nguon:
+      - dolinski2017
+    trich: Results regarding the influence of the sex of participants and of the "learner," as well as of personality characteristics, do not allow us to unequivocally accept or reject the hypotheses offered.
+    vi_tri: Tóm tắt (Crossref)
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/1948550617693060", "https://www.spsp.org/news-center/press-releases/milgram-poland-obey" ]
+    luot_2_ghi_chu: 'Thông cáo SPSP trích lời tác giả; tóm tắt: kết quả về giới "do not allow us to unequivocally accept or reject the hypotheses". Tên tác giả: xem n32.'
+    review: sai
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Như n32: tên tác giả. Ý khớp tóm tắt ("do not allow us to unequivocally accept or reject").'
+  - id: n35
+    cau: 'Khá vững: áp lực quyền lực tạo ra mức vâng lời cao trong phòng thí nghiệm.'
+    loai: nhan
+    nguon:
+      - haslam2014meta
+      - burger2009
+      - dolinski2017
+    trich: We assembled data from the 21 conditions ( N = 740) in which obedience involved progression to maximum voltage (overall rate 43.6%)
+    vi_tri: Tóm tắt (Meta-Milgram)
+    nhan: kha-vung
+    co_so:
+      - haslam2014meta
+      - burger2009
+      - dolinski2017
+      - perry2019
+    ly_do: 'Nhiều nghiên cứu cùng chiều: tổng hợp 21 biến thể của Milgram (Meta-Milgram, 740 người, 43,6% đi đến nấc cuối) và hai lần làm lại hiện đại ở Mỹ và Ba Lan (Burger 2009; Doliński và cộng sự 2017) thấy mức vâng lời cao. Chưa đạt Vững chắc theo mục 4: tổng hợp chỉ gồm các biến thể nhỏ (20–40 người) của cùng một chương trình nghiên cứu, không phải phân tích tổng hợp các nghiên cứu độc lập; không có tái lập lớn đăng ký trước; hai lần làm lại đều dừng sớm vì đạo đức nên không đo đúng biến số gốc (đi đến 450V); và tư liệu lưu trữ (Perry 2019: 18/23 biến thể) cho thấy người không tin hẳn vào màn kịch giật mạnh hơn, nên độ lớn bị nghi phóng đại. Hướng của hiệu ứng thì nhất quán, nên Khá vững chứ không Đang tranh cãi.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Milgram làm nhiều biến thể, và các nhà nghiên cứu khác ở nhiều nước, nhiều thập kỷ sau vẫn thu được… Đây là một trong những hiệu ứng được lặp lại nhiều nhất của tâm lý học xã hội"; chữ mới dùng 23 biến thể, hai lần làm lại, 43,6%. Đã bỏ câu so sánh "lặp lại nhiều nhất" (không nguồn) và "nhiều nước" (chỉ mở được Mỹ và Ba Lan). chỗ khó: thước đo Vững chắc đòi tái lập lớn không giảm nhẹ hay tổng hợp độc lập; ở đây chỉ có tổng hợp số liệu của chính Milgram và hai lần làm lại sửa đổi, cộng phê bình của Perry 2019. Người giao/lượt 2 cân nhắc hạ xuống Khá vững. Chỗ khó (Claude Opus 5.5): chốt hạ Vững chắc xuống Khá vững (lý do ở ly_do); sửa khung trên trang thành :::kha-vung và thêm câu "Vì sao chỉ khá vững" (n69). Hộp Tóm tắt nhanh dựng từ khung nên đổi theo. Trang khác link tới khung này: chưa kiểm (người giao xem o_dau). Review (Claude Opus 5.5, 30/10/2026): Nhãn Khá vững hợp mục 4: Meta-Milgram (21 điều kiện, 740 người, 43,6%) chỉ tổng hợp các biến thể nhỏ của một chương trình; hai lần làm lại hiện đại dừng sớm (150V, 10 nút); Perry và cộng sự 2019 (tóm tắt) cho thấy hoài nghi làm tăng mức giật, nên độ lớn bị nghi. Hướng nhất quán, nên không xuống Đang tranh cãi. Giữ việc hạ từ Vững chắc xuống Khá vững của lượt 1. ly_do sửa "Doliński 2017" thành "Doliński và cộng sự 2017".'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093927&type=printable", "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf", "https://api.openalex.org/works/doi:10.1177/1948550617693060" ]
+    luot_2_ghi_chu: "Nhãn Khá vững hợp thước đo: nhiều nghiên cứu cùng chiều (các biến thể của Milgram, Burger 2009, Doliński và cộng sự 2017) nhưng chưa có tái lập lớn đăng ký trước, mẫu nhỏ, mức vâng lời khác nhau nhiều theo biến thể. Không cao hơn thước đo."
+    review: dung
+  - id: n36
+    cau: 'Mức vâng lời thay đổi rất nhiều theo biến thể: trong 21 biến thể có đo việc đi đến 450V, tỉ lệ chung là 43,6% (740 người).'
+    loai: so-lieu
+    nguon:
+      - haslam2014meta
+    trich: We assembled data from the 21 conditions ( N = 740) in which obedience involved progression to maximum voltage (overall rate 43.6%)
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Bảng 2: từ 1 trên 40 (carte blanche) đến 29 trên 40 (áp lực nhóm đồng tình với người thí nghiệm).'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093927&type=printable" ]
+    luot_2_ghi_chu: Haslam, Loughnan và Perry 2014, tóm tắt và tr. 3 (323/740).
+  - id: n37
+    cau: Milgram làm 23 biến thể.
+    loai: lich-su
+    nguon:
+      - haslam2014meta
+    trich: Milgram's famous experiment contained 23 small-sample conditions
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093927&type=printable" ]
+    luot_2_ghi_chu: Haslam, Loughnan và Perry 2014; điều kiện 21 (dự đoán của chuyên gia) không tính vì không phải thí nghiệm.
+  - id: n38
+    cau: 'Khá vững: nấc 150V là "điểm không quay đầu".'
+    loai: nhan
+    nguon:
+      - burger2009
+    trich: In short, the 150-volt switch is something of a point of no return.
+    vi_tri: Mục Results
+    nhan: kha-vung
+    co_so:
+      - burger2009
+    ly_do: 'Một con số từ một điều kiện (Thí nghiệm 5, 33 người vượt 150V); Burger dùng nó để ước lượng, nhưng chưa có tái lập đầy đủ đến 450V ở thời nay (không thể làm vì đạo đức): một nguồn, một điều kiện nên Khá vững.'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf", "https://api.openalex.org/works/doi:10.1111/j.1745-6924.2008.00080.x" ]
+    luot_2_ghi_chu: 'Packer 2008 (phân tích tổng hợp 8 thí nghiệm của Milgram, tóm tắt); Burger 2009: "the 150-volt switch is something of a point of no return". Khá vững hợp thước đo: cùng chiều nhưng chỉ dựa trên dữ liệu của chính Milgram.'
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Khá vững hợp mục 4: Burger 2009 (toàn văn) tr. 2 ("point of no return", 26/33 của Thí nghiệm 5); Packer 2008 (tóm tắt, lượt 2 dẫn) tổng hợp 8 thí nghiệm của Milgram cũng thấy 150V là điểm người ta hay dừng nhất. Dữ liệu chỉ từ chương trình của Milgram, nên không lên Vững chắc.'
+  - id: n39
+    cau: 'Đang tranh cãi: người ta vâng lời vì mù quáng hay vì tin vào mục đích.'
+    loai: nhan
+    nguon:
+      - haslam2014
+      - reicher2012
+      - perry2019
+    trich: This analysis is inconsistent with Milgram's own agentic state model.
+    vi_tri: Tóm tắt Haslam 2014
+    nhan: tranh-cai
+    co_so:
+      - haslam2014
+      - reicher2012
+      - perry2019
+    ly_do: Hai cách hiểu (ủy nhiệm của Milgram; đồng nhất với mục đích, Haslam–Reicher) cùng dựa vào tư liệu và số liệu của Milgram và chưa ngã ngũ; thêm tái phân tích của Perry 2019 cho thấy hoài nghi làm tăng vâng lời.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/1745691612448482", "https://api.openalex.org/works/doi:10.1111/bjso.12074", "https://api.openalex.org/works/doi:10.1177/0190272519861952" ]
+    luot_2_ghi_chu: "Đang tranh cãi hợp thước đo: các cách giải thích (trạng thái ủy nhiệm, đồng nhất xã hội, hoài nghi màn kịch) dựa trên tư liệu khác nhau và chưa ngã ngũ."
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 30/10/2026): Đang tranh cãi hợp mục 4 (bằng chứng mâu thuẫn, chưa ngã ngũ): Reicher, Haslam & Smith 2012, Haslam và cộng sự 2014, Perry và cộng sự 2019 (tóm tắt) đối lập với cách giải thích ủy nhiệm của Milgram; không có tổng hợp hay tái lập nào phân xử.'
+  - id: n40
+    cau: Perry và cộng sự (2019) thấy trong 18 trên 23 biến thể, những người tin hoàn toàn rằng mình đang gây đau chỉ giật ở mức trung bình thấp hơn những người không tin hoàn toàn.
+    loai: so-lieu
+    nguon:
+      - perry2019
+    trich: in 18 of 23 variations of the experiment, the mean levels of shock for those who fully believed that they were inflicting pain were lower than for subjects who did not fully believe they were inflicting pain
+    vi_tri: Tóm tắt (Crossref)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khi Gina Perry (2012) lục lại kho lưu trữ ở Yale, bà cho rằng Milgram đã trình bày dữ liệu có chọn lọc, và một số người tham gia thực ra đã nghi ngờ màn kịch". Sách Perry (2012) chưa mở được nên câu "chọn lọc" bỏ; thay bằng kết quả đã mở của Perry và cộng sự 2019 (tư liệu của trợ lý Murata). Cả 2019: Social Psychology Quarterly 83(1), 88–106. Review (Claude Opus 5.5, 30/10/2026): Perry và cộng sự 2019, tóm tắt (Crossref): "in 18 of 23 variations…". Trang khớp; Perry 2012 (sách) không còn được dùng làm nguồn cho câu nào.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/0190272519861952" ]
+    luot_2_ghi_chu: Perry, Brannigan, Wanner và Stam (Social Psychology Quarterly, bản trực tuyến 2019, số in 2020), tóm tắt.
+    review: dung
+  - id: n41
+    cau: Haslam, Reicher và cộng sự cho rằng người ta vâng lời vì đồng nhất với sứ mệnh khoa học ("engaged followership").
+    loai: phat-hien
+    nguon:
+      - reicher2012
+      - haslam2014
+    trich: willingness to perform unpleasant tasks is contingent upon identification with collective goals
+    vi_tri: Tóm tắt Haslam 2014
+    ket_qua: dung
+    ghi_chu: 'Cũng từ Reicher 2012: "identification-based followership".'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1111/bjso.12074", "https://api.openalex.org/works/doi:10.1177/1745691612448482" ]
+    luot_2_ghi_chu: 'Haslam, Reicher, Millard và McDonald 2014 (tóm tắt); Reicher, Haslam và Smith 2012: "identification with either the experimenter and the scientific community that he represents".'
+  - id: n42
+    cau: Cuộc tranh luận này chưa ngã ngũ.
+    loai: nhan
+    nguon:
+      - haslam2014
+      - reicher2012
+    trich: This analysis is inconsistent with Milgram's own agentic state model.
+    vi_tri: Tóm tắt Haslam 2014
+    nhan: tranh-cai
+    co_so:
+      - haslam2014
+      - reicher2012
+    ly_do: Xem khung Đang tranh cãi; câu nhận định "chưa ngã ngũ" là diễn giải của trang về tình trạng bằng chứng.
+    ket_qua: dung
+    ghi_chu: 'Gộp với khung tranh-cai ở trên. Review (Claude Opus 5.5, 30/10/2026): Như n39.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/1745691612448482", "https://api.openalex.org/works/doi:10.1111/bjso.12074", "https://api.openalex.org/works/doi:10.1177/0190272519861952" ]
+    luot_2_ghi_chu: "Có nhiều cách giải thích đối lập, dữ liệu lưu trữ chưa phân xử được: nhãn chưa ngã ngũ hợp thước đo."
+    review: dung
+  - id: n43
+    cau: 'Trạng thái ủy nhiệm (Milgram): người ta trao trách nhiệm cho người có quyền lực và vì thế vâng lời.'
+    loai: dinh-nghia
+    nguon:
+      - reicher2012
+    trich: The behavior of participants within Milgram's obedience paradigm is commonly understood to arise from the propensity to cede responsibility to those in authority and hence to obey them.
+    vi_tri: Tóm tắt Reicher 2012
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khi có quyền lực hợp pháp đứng ra chịu trách nhiệm, người ta chuyển sang ''chế độ thực thi'', ngừng tự đánh giá đạo đức hành vi của mình". Cụm "chế độ thực thi" và "ngừng tự đánh giá đạo đức" không có trong nguồn đã mở (chỉ có trong sách Milgram 1974). Chữ mới dùng định nghĩa của Reicher 2012. Chưa mở Milgram 1974. Review (Claude Opus 5.5, 30/10/2026): Reicher, Haslam & Smith 2012, tóm tắt: "cede responsibility to those in authority and hence to obey them"; Milgram 1974 (Internet Archive), chương The Agentic Shift, cùng ý. Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/ObedienceToAuthority_368", "https://api.openalex.org/works/doi:10.1177/1745691612448482" ]
+    luot_2_ghi_chu: 'Milgram 1974, chương "The Agentic Shift"; cùng sách: "he therefore no longer regards himself as responsible for his actions".'
+    review: dung
+  - id: n44
+    cau: Theo Reicher và cộng sự, những kẻ thi hành bạo quyền trong lịch sử thường chủ động đồng nhất với lãnh đạo và mục tiêu của họ.
+    loai: phat-hien
+    nguon:
+      - reicher2012
+    trich: recent historical and social psychological research suggests that agents of tyranny actively identify with their leaders
+    vi_tri: Tóm tắt Reicher 2012
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Kẻ xấu trong lịch sử hiếm khi nghĩ mình đang làm điều ác; họ nghĩ mình đang phục vụ điều lớn lao" (không nguồn trực tiếp). Chữ mới sát tóm tắt. Review (Claude Opus 5.5, 30/10/2026): Reicher, Haslam & Smith 2012, tóm tắt: "agents of tyranny actively identify with their leaders". Trang có "theo Reicher và cộng sự".'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1177/1745691612448482", "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1001426&type=printable" ]
+    luot_2_ghi_chu: Reicher, Haslam và Smith 2012 (tóm tắt); Haslam và Reicher 2012 (PLoS Biology, toàn văn) kể lại các nghiên cứu lịch sử về Eichmann.
+    review: dung
+  - id: n45
+    cau: 'Cam kết từng bước: mỗi nấc chỉ tăng 15V; giả thuyết là một bước nhỏ dễ chấp nhận hơn một bước nhảy vọt.'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: There is a 15-volt increment from one switch to the next going from left to right.
+    vi_tri: Mục Method, Apparatus
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "một bước nhỏ luôn dễ hơn một bước nhảy vọt"; chữ mới đánh dấu là giả thuyết. chưa chắc: bài 1963 không kiểm tra giả thuyết cam kết từng bước (nguồn cho thuyết này không mở được). Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 373 (mỗi nấc 15V); trang ghi rõ là giả thuyết chưa được kiểm riêng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Milgram 1963 tr. 374 (mỗi nấc 15V); Burger 2009 nêu "the incremental nature of the task" là một yếu tố giải thích (Gilbert 1981), tức là giả thuyết.
+    review: dung
+  - id: n46
+    cau: Khi chuyển ra văn phòng xập xệ ở Bridgeport, tỉ lệ vâng lời là 47,5%, so với 65% ở điều kiện tương ứng tại Yale; theo Milgram, mức giảm này không có ý nghĩa thống kê.
+    loai: so-lieu
+    nguon:
+      - milgram1974
+      - haslam2014meta
+    trich: 48 percent of the Bridgeport subjects delivered the maximum shock versus 65 percent in the corresponding condition at Yale
+    vi_tri: Milgram 1974, chương 6, Thí nghiệm 10 (Bridgeport); Meta-Milgram, Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tỉ lệ vâng lời giảm từ 65% xuống 47,5%" (Vùng Việt Nam) và "chính Milgram thấy tỉ lệ vâng lời giảm khi chuyển… ra một văn phòng thuê ở Bridgeport". 65% là kết quả của bài 1963 (không có tiếng kêu), còn Bridgeport so với điều kiện tương ứng (62,5%). Bridgeport là "dingy office" theo Meta-Milgram; "văn phòng thuê" bỏ. Review (Claude Opus 5.5, 30/10/2026): Milgram 1974, Obedience to Authority, chương 6 Thí nghiệm 10 (toàn văn Internet Archive, ObedienceToAuthority_368): "48 percent of the Bridgeport subjects delivered the maximum shock versus 65 percent in the corresponding condition at Yale"; "although somewhat reduced, was not significantly lower than that obtained at Yale". Lượt 1 dùng 62,5% theo Meta-Milgram ("usually contrasted with the 62.5%"), nhưng chính Milgram so với 65%. Theo chữ của sách: 47,5% (19/40, sách làm tròn 48%) so với 65%, và mức giảm không có ý nghĩa thống kê. Đã sửa cả bốn chỗ (Lý thuyết, Áp dụng, Văn hóa, câu hỏi 5), thêm "không có ý nghĩa thống kê" ở mục Lý thuyết và lời giải thích câu hỏi 5, thêm Milgram 1974 vào mục Nguồn của trang và nguon của hồ sơ.'
+    luot_2: sai
+    luot_2_nguon: [ "https://archive.org/details/ObedienceToAuthority_368", "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093927&type=printable" ]
+    luot_2_ghi_chu: 'câu đúng: Khi chuyển ra văn phòng xập xệ ở Bridgeport, tỉ lệ vâng lời là 47,5%, so với 65% ở điều kiện tương ứng tại Yale (Milgram, 1974).; Milgram 1974 (chương Thí nghiệm 10, bảng: Bridgeport 47,5%) so với 65% ở điều kiện tương ứng tại Yale. Haslam, Loughnan và Perry 2014 cũng ghi Bridgeport "like condition 5" (26/40 = 65%); con số 62,5% (điều kiện 2) chỉ là cách sách giáo khoa hay so ("usually contrasted with the 62.5% rate"). Milgram nói mức giảm không có ý nghĩa thống kê.'
+    review: sai
+  - id: n47
+    cau: 'Tính chính danh của bối cảnh: thí nghiệm được làm ở phòng thí nghiệm tương tác sang trọng của Yale, chi tiết quan trọng với tính chính danh của thí nghiệm.'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: This detail is relevant to the perceived legitimacy of the e
+    vi_tri: Mục Method, Personnel and Locale
+    ket_qua: dung
+    ghi_chu: OCR cắt cuối câu; vẫn là câu gốc "…perceived legitimacy of the experiment".
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 372–373.
+  - id: n48
+    cau: 'Vẻ chính danh: trong thí nghiệm, khi chuyển khỏi Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn (47,5% so với 65%), dù vẫn gần một nửa. Những cuộc gọi xưng danh công an hay ngân hàng cũng mượn vẻ chính danh; đó là phép so sánh của trang, thí nghiệm Milgram không nghiên cứu lừa đảo.'
+    loai: loi-khuyen
+    nguon:
+      - milgram1974
+    trich: 48 percent of the Bridgeport subjects delivered the maximum shock versus 65 percent in the corresponding condition at Yale
+    vi_tri: Milgram 1974, chương 6, Thí nghiệm 10
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Lừa đảo giả danh: kẻ gọi điện xưng công an, bác sĩ, tổng đài ngân hàng và ra lệnh chuyển tiền gấp. Công thức giống hệt: tạo tính chính danh + tạo áp lực thời gian + từng bước nhỏ. Cách chống: xác minh qua kênh độc lập — gọi lại số chính thức, hỏi ý kiến người thứ ba." Không nguồn cho "công thức giống hệt" (Milgram không có áp lực thời gian) và cho cách chống (cần trang chính thức của Bộ Công an hay Ngân hàng Nhà nước; tìm ngày 30/10/2026 không ra trang đọc được). Chữ mới chỉ giữ điều thí nghiệm cho thấy (Bridgeport) và nói rõ phần lừa đảo là phép so sánh (gia-dinh). Muốn giữ lời khuyên chống lừa đảo thì cần nguồn chính thức, loại thoi-su, có hạn. Review (Claude Opus 5.5, 30/10/2026): Như n46: 47,5% so với 65% (Milgram 1974). Phần so sánh với lừa đảo đã ghi rõ là phép so sánh của trang (gia-dinh).'
+    luot_2: sai
+    luot_2_nguon: [ "https://archive.org/details/ObedienceToAuthority_368" ]
+    luot_2_ghi_chu: "câu đúng: Vẻ chính danh: trong thí nghiệm, khi chuyển khỏi Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn (47,5% so với 65%), dù vẫn gần một nửa. Những cuộc gọi xưng danh công an hay ngân hàng cũng mượn vẻ chính danh; đó là phép so sánh của trang, thí nghiệm Milgram không nghiên cứu lừa đảo.; Cùng lỗi với n46: Milgram so 47,5% với 65%, không phải 62,5%. Phần còn lại (phép so sánh với lừa đảo là của trang) không cần nguồn."
+    review: sai
+  - id: n49
+    cau: Trong một biến thể của Milgram, khi hai người đóng vai "thầy giáo" khác từ chối tiếp tục, chỉ 4 trên 40 người tham gia thật vâng lời đến nấc cuối.
+    loai: so-lieu
+    nguon:
+      - haslam2014meta
+    trich: 'Group pressure to disobey Like baseline condition but with 3 Ts: two (confederates) defy the E, who urges the participant T to continue shocks'
+    vi_tri: Bảng 1–2 (điều kiện 7)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chỉ cần một người cùng phản đối, tỉ lệ vâng lời sụt mạnh". Biến thể này có hai người cộng tác từ chối (không phải một); số 4/40 từ Bảng 2 của Meta-Milgram (điều kiện 7: 40 người, 4 vâng lời). Chỗ khó (Claude Opus 5.5): thêm: "Người dám dừng lại thường là người có một đồng minh" (khái quát ra nơi làm việc, không nguồn) đổi thành "Trong thí nghiệm, có đồng minh giúp người ta dám dừng lại". Review (Claude Opus 5.5, 30/10/2026): Meta-Milgram (Haslam, Loughnan & Perry 2014, toàn văn PLOS ONE) Bảng 1–2, điều kiện 7: hai người cộng tác chống lệnh, 4/40 đi đến nấc cuối. Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093927&type=printable" ]
+    luot_2_ghi_chu: 'Haslam, Loughnan và Perry 2014, Bảng 1–2: điều kiện 7, hai "thầy giáo" là người cộng tác chống lệnh; 4/40 đi đến 450V (Milgram 1974 gọi là Thí nghiệm 17, "Two Peers Rebel").'
+    review: dung
+  - id: n50
+    cau: Biết trước bốn câu thúc ép giúp ta nhận ra chúng khi gặp ngoài đời.
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Bỏ câu "biết trước bốn câu thúc ép giúp ta nhận ra chúng khi gặp ngoài đời" (không nghiên cứu nào đã mở kiểm việc biết trước lời thúc ép). Mục đổi tên "Tự vệ tinh thần" thành "Lời thúc ép không phải sự thật" và chỉ giữ phần có nguồn (n51: 14/40 người từ chối). Review (Claude Opus 5.5, 30/10/2026): Câu đã bỏ khỏi trang (kiểm: không còn "biết trước bốn câu thúc ép"); lượt 2 cho qua-manh, cùng hướng với việc bỏ. Kết quả da-bo đúng.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: "câu đúng: Biết trước bốn câu thúc ép có thể giúp ta để ý khi gặp lời thúc ép tương tự ngoài đời; điều này chưa được nghiên cứu kiểm chứng.; Không có nghiên cứu nào cho thấy biết trước bốn câu thúc ép giúp nhận ra áp lực ngoài đời; đây là suy luận của trang, viết như điều đã biết. Nên viết thận trọng."
+    review: dung
+  - id: n51
+    cau: 'Câu "anh không còn lựa chọn nào khác" là lời thúc ép, không phải sự thật: 14 trong 40 người vẫn từ chối tiếp tục dù bị thúc ép.'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: Thus a total of 14 subjects defied the experimenter.
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hầu như luôn là dối trá — lựa chọn luôn còn đó" (diễn giải mạnh); chữ mới dựa vào 14/40 người từ chối. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 375: 14 người chống lệnh. Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 374–375.
+    review: dung
+  - id: n52
+    cau: Milgram làm thí nghiệm ở Mỹ, Burger cũng ở Mỹ, nhóm của Doliński ở Ba Lan.
+    loai: lich-su
+    nguon:
+      - milgram1963
+      - burger2009
+      - dolinski2017
+    trich: Seventy adults participated in a replication of Milgram's Experi- ment 5
+    vi_tri: 'Tóm tắt Burger; Doliński: SWPS University, Poland (thông cáo)'
+    ket_qua: da-sua
+    ghi_chu: 'Burger: Santa Clara University (Mỹ); Milgram: Yale; Doliński: SWPS University of Social Sciences and Humanities, Ba Lan. Review (Claude Opus 5.5, 30/10/2026): Như n32: trang nay viết "nhóm của Doliński ở Ba Lan".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf", "https://api.openalex.org/works/doi:10.1177/1948550617693060" ]
+    luot_2_ghi_chu: "Milgram ở Yale (New Haven), Burger ở Santa Clara (California), nhóm Doliński ở Ba Lan (SWPS). Tên tác giả: xem n32."
+    review: sai
+  - id: n53
+    cau: Tính đến 10/2026, chúng tôi chưa tìm thấy thí nghiệm kiểu Milgram trên người Việt.
+    loai: thoi-su
+    het_han: '2028-10-01'
+    ket_qua: dung
+    ghi_chu: 'Tìm 30/10/2026: PubMed (Vietnam* AND obedience AND (authority OR Milgram): 1 kết quả, bài về thanh thiếu niên Việt di cư, không liên quan), Crossref (truy vấn Milgram + Vietnam + replication: không có). Chưa tìm tạp chí trong nước. Review (Claude Opus 5.5, 30/10/2026): Câu thời sự có mốc "Tính đến 10/2026" trên trang, loai thoi-su, het_han 2028-10-01; review tìm OpenAlex (Milgram obedience Vietnam) không thấy nghiên cứu nào. Người gom (Claude Opus 5.5, 30/10/2026): nguồn của câu "chưa tìm thấy" là lần tìm (OpenAlex, PubMed, Crossref) ngày 30/10/2026 của lượt 1 và lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works?search=Milgram%20obedience%20Vietnam" ]
+    luot_2_ghi_chu: Lượt 2 cũng không tìm thấy (OpenAlex, tìm web tiếng Việt, 30/10/2026). Câu thời sự, cần het_han.
+    review: dung
+    nguon:
+      - tim-kiem-vn
+  - id: n54
+    cau: 'Không có dữ liệu thì không đoán mò: đây là khoảng trống đáng có một nghiên cứu Việt Nam.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Câu kết khiêm tốn, không nói gì cụ thể về người Việt. Đã bỏ câu "Văn hóa Việt Nam coi trọng tôn ti… có thể làm tăng vâng lời… mặt khác… kìm lại" (da-bo: không nguồn). Người gom (Claude Opus 5.5, 30/10/2026): câu nói cách site viết (không đoán khi không có dữ liệu), không phải khẳng định về bằng chứng: ve-site; khớp câu thời sự ngay trước (n53).'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works?search=Milgram%20obedience%20Vietnam" ]
+    luot_2_ghi_chu: Ý kiến của trang, nhất quán với n53; không có khẳng định về bằng chứng ngoài việc chưa có dữ liệu.
+    review: dung
+  - id: n55
+    cau: Nhiều người tham gia căng thẳng rõ rệt và trong phỏng vấn sau đó họ nhấn mạnh mình không phải kiểu người thích làm đau người khác.
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: In the post-experimental interviews subjects took pains to point out that they were not sadistic types
+    vi_tri: Mục Results, Signs of extreme tension
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Họ đau khổ, do dự, nhiều người muốn trả lại tiền công" ("muốn trả lại tiền" không có trong bài 1963; Haslam 2014 còn thấy nhiều người "vui vì đã tham gia"); chữ mới theo bài 1963. Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 375 ("took pains to point out that they were not sadistic types"). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375.
+    review: dung
+  - id: n56
+    cau: Vâng lời trong thí nghiệm không cho phép kết luận về tính cách ngoài đời.
+    loai: loi-khuyen
+    nguon:
+      - milgram1963
+    trich: Obedience, as a determinant of behavior, is of particular relevance to our time.
+    vi_tri: Phần mở đầu
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Vâng lời trong thí nghiệm không đồng nghĩa với tàn ác ngoài đời". Chữ mới thận trọng hơn; chưa chắc: không nguồn bậc 1–2 nói trực tiếp về tính cách. Review (Claude Opus 5.5, 30/10/2026): Câu thận trọng, không vượt Milgram 1963 (toàn văn PDF psy.miami.edu) (giải thích bằng tình huống) và Burger 2009 (toàn văn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Milgram giải thích mức vâng lời bằng đặc điểm tình huống (tr. 377–378); Burger 2009 chỉ thấy ảnh hưởng nhỏ của khác biệt cá nhân. Lời khuyên thận trọng, không vượt bằng chứng.
+    review: dung
+  - id: n57
+    cau: 'Học trò không bị giật điện thật: máy giật điện là giả và học trò là người cộng tác của Milgram.'
+    loai: phat-hien
+    nguon:
+      - milgram1963
+    trich: A simulated shock generator is used
+    vi_tri: Mục Method
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Người bị tổn thương thật là chính người tham gia — vì căng thẳng và day dứt"; chữ mới: "Người chịu căng thẳng thật là chính người tham gia". "Day dứt" bỏ: không đo được. Đã đối chiếu: Milgram 1963 không dùng tính từ "tổn thương". Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) ("simulated shock generator"). Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: 'Milgram 1963 tr. 371, 373; Burger 2009: "In actuality, the learner received no shocks."'
+    review: dung
+  - id: n58
+    cau: Trong biến thể của Milgram chỉ có phụ nữ, 26 trên 40 người cũng đi đến nấc cuối, giống nhóm nam.
+    loai: so-lieu
+    nguon:
+      - haslam2014meta
+      - burger2009
+    trich: The women complied fully with the experi- menter's commands 65% of the time, a rate identical to that in the comparable condition with men as participants.
+    vi_tri: 'Burger, phần Introduction; Meta-Milgram bảng 2 (điều kiện 20: 26/40)'
+    ket_qua: dung
+    ghi_chu: Câu mới thêm vào trang để bác "phụ nữ vâng lời ít hơn".
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093927&type=printable", "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: 'Haslam, Loughnan và Perry 2014, Bảng 2; Burger 2009: "The women complied fully ... 65% of the time, a rate identical to that in the comparable condition with men".'
+  - id: n59
+    cau: Thí nghiệm cho thấy sức mạnh của tình huống — và theo cách hiểu mới, sức mạnh của niềm tin vào một mục đích; hai bài học rất khác nhau.
+    loai: phat-hien
+    nguon:
+      - reicher2012
+      - haslam2014
+    trich: This reinterpretation also encourages us to see Milgram's studies not as demonstrations of conformity or obedience, but as explorations of the power of social identity-based leadership
+    vi_tri: Tóm tắt Reicher 2012
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nó chứng minh sức mạnh của tình huống"; chữ mới "cho thấy". Lý do: "chứng minh" mạnh hơn mức nguồn. Review (Claude Opus 5.5, 30/10/2026): Reicher, Haslam & Smith 2012 (tóm tắt) cho cách hiểu thứ hai; "cho thấy" đúng mức.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf", "https://api.openalex.org/works/doi:10.1177/1745691612448482" ]
+    luot_2_ghi_chu: "Hai cách hiểu: tình huống và quyền lực (Milgram) và đồng nhất với mục đích (Reicher, Haslam và Smith 2012)."
+    review: dung
+  - id: n60
+    cau: 'Câu hỏi 1: 26 trên 40 người đi đến nấc tối đa; tất cả 40 người đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời.'
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: No subject stopped prior to administering Shock Level 20.
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Cùng nhận định về 300V; chữ cũ trong lời giải thích: "đập tường đòi được thả (từ 315V…)". Review (Claude Opus 5.5, 30/10/2026): Milgram 1963 (toàn văn PDF psy.miami.edu) tr. 375–376; lời giải thích câu hỏi 1 khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: tr. 375–376.
+    review: dung
+  - id: n61
+    cau: 'Câu hỏi 2: Burger chỉ làm đến 150V vì 79% người đã vượt qua 150V trong Thí nghiệm 5 đều đi tiếp đến 450V; dừng ở đó đỡ gây căng thẳng cho người tham gia.'
+    loai: tai-lap
+    nguon:
+      - burger2009
+    trich: who followed the experimenter's instructions at this point continued up the shock generator's range all the way to 450 volts
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trong thí nghiệm gốc"; mới: "Thí nghiệm 5 của Milgram". Review (Claude Opus 5.5, 30/10/2026): Burger 2009 (toàn văn) tr. 2; câu hỏi 2 ghi Thí nghiệm 5.'
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Burger 2009, tóm tắt và tr. 2.
+    review: dung
+  - id: n62
+    cau: 'Câu hỏi 3: tỉ lệ tiếp tục 70% so với 82,5% chênh lệch không có ý nghĩa thống kê; Burger không thấy khác biệt giữa nam và nữ.'
+    loai: tai-lap
+    nguon:
+      - burger2009
+    trich: Men and women did not differ in their rates of obedience
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ của lời giải thích: "Burger cũng thấy nam và nữ vâng lời như nhau, trái với suy đoán phổ biến"; "trái với suy đoán phổ biến" bỏ (Burger chỉ nói kỳ vọng của ông là không có khác biệt giới). Review (Claude Opus 5.5, 30/10/2026): Burger 2009 (toàn văn) tr. 7; lời giải thích câu hỏi 3 khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf" ]
+    luot_2_ghi_chu: Burger 2009 tr. 7.
+    review: dung
+  - id: n63
+    cau: 'Câu hỏi 4: Haslam và Reicher cho rằng người ta vâng lời vì đồng nhất với sứ mệnh khoa học (engaged followership); cách hiểu này thay đổi bài học.'
+    loai: phat-hien
+    nguon:
+      - reicher2012
+      - haslam2014
+    trich: engaged followership
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu hỏi 4 trong quiz.
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1111/bjso.12074" ]
+    luot_2_ghi_chu: "Haslam, Reicher và cộng sự 2014 (tóm tắt): cách hiểu này \"inconsistent with Milgram's own agentic state model\"."
+  - id: n64
+    cau: 'Câu hỏi 5: khi Milgram chuyển thí nghiệm khỏi Đại học Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn: 47,5%, so với 65% ở điều kiện tương ứng tại Yale; lời giải thích: vẻ chính danh có tác dụng, nhưng gần một nửa vẫn đi đến nấc cuối, và Milgram nói mức giảm không có ý nghĩa thống kê.'
+    loai: so-lieu
+    nguon:
+      - milgram1974
+    trich: the level of obedience in Bridgeport, although somewhat reduced, was not significantly lower than that obtained at Yale
+    vi_tri: Milgram 1974, chương 6, Thí nghiệm 10
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Chữ cũ: "Tình huống nào ngoài đời giống cấu trúc của thí nghiệm Milgram nhất? + Kẻ giả danh công an gọi điện… > Công thức chung: tính chính danh + áp lực + từng bước nhỏ" (phép loại suy không nguồn, xếp loi-khuyen). Câu hỏi mới hỏi điều thí nghiệm thấy (cùng số với n46); đổi loại thành so-lieu. Phương án sai là gia-dinh. Review (Claude Opus 5.5, 30/10/2026): Như n46: phương án đúng của câu hỏi 5 đổi thành 65%; lời giải thích thêm "chính Milgram nói mức giảm này không có ý nghĩa thống kê".'
+    luot_2: sai
+    luot_2_nguon: [ "https://archive.org/details/ObedienceToAuthority_368" ]
+    luot_2_ghi_chu: "câu đúng: Câu hỏi 5: khi Milgram chuyển thí nghiệm khỏi Đại học Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thấp hơn: 47,5%, so với 65% ở điều kiện tương ứng tại Yale; lời giải thích: vẻ chính danh có tác dụng, nhưng gần một nửa vẫn đi đến nấc cuối.; Cùng lỗi với n46: điều kiện tương ứng ở Yale là 65%."
+    review: sai
+  - id: n65
+    cau: 'Hình "milgram-obedience": cột 65% (26/40, đi đến 450V) và 35% (14/40, dừng ở 300–375V); chữ "Cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời"; chú thích và aria-label cùng số.'
+    loai: so-lieu
+    nguon:
+      - milgram1963
+    trich: No subject stopped prior to administering Shock Level 20. (At this level—300 volts—the victim kicks on the wall and no longer provides answers to the teacher's multiple-choice questions.)
+    vi_tri: Milgram 1963, mục Result of Experiment I; Bảng 2 (5 người dừng ở 300V, 4 ở 315V, 2 ở 330V, 1 mỗi nấc 345, 360, 375V; 26 người đến 450V)
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Người giao đã sửa hình: chữ cũ "100% đều đi đến 300V — nấc mà học trò đập tường đòi được thả" và "79% những người đã vượt qua 150V đều đi tiếp đến 450V" (dưới nhãn "Số liệu Milgram (1963)"); chữ mới "Cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời", bỏ dòng 79%. Lý do: bài 1963 không có lời "đòi được thả" (học trò đập tường, câu trả lời không còn hiện lên bảng); 79% (26/33) là của Thí nghiệm 5 (Burger 2009), không phải bài 1963 (số ấy vẫn ở khung Khá vững và câu hỏi 2, ghi đúng nguồn). Đã đối chiếu: 65%, 35%, 26/40, 14/40, 300–375V, "cả 40 người đến 300V" đúng với bài và Bảng 2. Hình nằm trong HINH_DA_SUA của tests/chuyen.test.mjs. Review (Claude Opus 5.5, 30/10/2026): Đã mở src/hinh/milgram-obedience.html: cột 65% (26/40), 35% (14/40, 300–375V), dòng "Cả 40 người đều đi đến 300V…", aria-label và chú thích cùng số; khớp Milgram 1963 (toàn văn PDF psy.miami.edu) Bảng 2. Không còn dòng 79%. Không sửa thêm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.psy.miami.edu/_assets/pdf/rpo-articles/milgram-1963.pdf" ]
+    luot_2_ghi_chu: "Bảng 2, tr. 376: 14 người dừng ở 300–375V. Lượt 2 không xem hình, chỉ kiểm số."
+    review: dung
+  - id: n66
+    cau: 'Trang này là trang nhà của nghiên cứu Milgram: nơi khác chỉ tóm một câu và link về.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id milgram, nguon [milgram1963], trang_nha: thi-nghiem/milgram. Review (Claude Opus 5.5, 30/10/2026): src/data/nghien-cuu.yml: id milgram, trang_nha thi-nghiem/milgram.'
+    review: dung
+  - id: n67
+    cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn của trang.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trong src/plugins/thanh-phan.mjs (tomTat) và psyche-markdown.mjs. Review (Claude Opus 5.5, 30/10/2026): src/plugins/thanh-phan.mjs, hàm tomTat (dựng từ khung :::<nhãn>[ý chính] theo thứ tự); psyche-markdown.mjs gắn ::tom-tat.'
+    review: dung
+  - id: n68
+    cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ dùng điều đã có trong phần kể nghiên cứu của chính trang.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Bốn dòng của hộp khớp mục Nghiên cứu then chốt (số liệu kiểm ở các nhận định về 40 người, 30 nấc, bốn câu thúc ép, 26/40 và 300V). Review (Claude Opus 5.5, 30/10/2026): Đối chiếu bốn dòng của :::ho-so-nghien-cuu với mục Nghiên cứu then chốt: 40 người 20–50 tuổi, 30 nấc 15–450V, bốn câu thúc ép theo thứ tự, 26/40 và 40/40 đến 300V: khớp.'
+    review: dung
+  - id: n69
+    cau: 'Vì sao chỉ "khá vững": con số tổng hợp lấy từ các biến thể của chính Milgram, mỗi biến thể vài chục người; vì lý do đạo đức, hai lần làm lại hiện đại đều dừng sớm hơn nhiều so với bản gốc; và tư liệu lưu trữ cho thấy những người không tin hẳn vào màn kịch lại giật ở mức cao hơn (Perry và cộng sự, 2019), nên mức vâng lời thật có thể thấp hơn.'
+    loai: nhan
+    nguon:
+      - haslam2014meta
+      - burger2009
+      - perry2019
+    trich: These data suggest that the perception of pain inflated subject defiance and that subject skepticism inflated their obedience.
+    vi_tri: 'Perry 2019, tóm tắt; Meta-Milgram: 21 điều kiện, N = 740 (tóm tắt); Burger 2009 dừng ở 150V (Method)'
+    nhan: kha-vung
+    co_so:
+      - haslam2014meta
+      - burger2009
+      - dolinski2017
+      - perry2019
+    ly_do: Lý do của khung Khá vững (n35).
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó (Claude Opus 5.5): Câu mới thêm vào khung (chữ cũ: không có). Doliński 2017: 10 nút (thông cáo SPSP: "Participants had up to 10 buttons to press"), dừng sớm như Burger; chỉ đọc tóm tắt Crossref và thông cáo. Review (Claude Opus 5.5, 30/10/2026): Như n35: lý do "vì sao chỉ khá vững" khớp Meta-Milgram (Bảng 2: biến thể 20 hay 40 người), Burger dừng ở 150V, nhóm Doliński 10 nút, Perry và cộng sự 2019 (tóm tắt: "subject skepticism inflated their obedience").'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093927&type=printable", "https://ethics.moe.edu.tw/files/resource/teach/%E6%95%99%E5%AD%B8%E8%A7%80%E6%91%A9/104-01/B008/%E7%89%B9%E8%89%B2%E8%AA%B2%E7%A8%8B%E4%BA%8C/(d)Replicating%20Milgram.pdf", "https://api.openalex.org/works/doi:10.1177/1948550617693060", "https://api.openalex.org/works/doi:10.1177/0190272519861952" ]
+    luot_2_ghi_chu: Các biến thể có 20 hay 40 người (Haslam và cộng sự 2014, Bảng 2); Burger dừng ở 150V, nhóm Doliński dùng 10 nút; Perry và cộng sự (tóm tắt). Lý do giữ Khá vững hợp thước đo.
+    review: dung
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: (không có)
-  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
-  ly_do: Bố cục C (kế hoạch).
-- cu: 'Hình milgram-obedience: "100% đều đi đến 300V — nấc mà học trò đập tường đòi được thả"; "79% những người đã vượt qua 150V đều đi tiếp đến 450V".'
-  moi: '"Cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời"; bỏ dòng 79%.'
-  ly_do: 'Milgram (1963): học trò đập tường và không trả lời nữa, không có lời đòi thả; 79% là của Thí nghiệm 5 (Burger, 2009), không phải bài 1963 (hồ sơ n65). Hình có tên trong HINH_DA_SUA.'
-- cu: :::vung-chac[áp lực quyền lực tạo ra mức vâng lời cao trong phòng thí nghiệm]
-  moi: ':::kha-vung[…cùng ý chính…], thêm câu "Vì sao chỉ khá vững: …" (biến thể của chính Milgram, làm lại dừng sớm, Perry và cộng sự 2019).'
-  ly_do: 'Thước đo nhãn mục 4: chưa có phân tích tổng hợp các nghiên cứu độc lập hay tái lập lớn đăng ký trước (hồ sơ n35, n69).'
-- cu: 'Áp dụng: "Lừa đảo giả danh… Công thức giống hệt… Cách chống: xác minh qua kênh độc lập…"; "Người dám dừng lại thường là người có một đồng minh"; "Tự vệ tinh thần: biết trước bốn câu thúc ép giúp ta nhận ra chúng khi gặp ngoài đời…"'
-  moi: '"Vẻ chính danh: … Bridgeport 47,5% so với 62,5%… đó là phép so sánh của chúng tôi"; "Trong thí nghiệm, có đồng minh giúp người ta dám dừng lại"; "Lời thúc ép không phải sự thật: …14 trong 40 người…"'
-  ly_do: 'Lời khuyên không nguồn (chuẩn mục 1): hồ sơ n48–n50.'
-- cu: 'Câu hỏi 5: "Tình huống nào ngoài đời giống cấu trúc của thí nghiệm Milgram nhất? + Kẻ giả danh công an gọi điện…"'
-  moi: '"Khi Milgram chuyển thí nghiệm khỏi Đại học Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thay đổi thế nào? + Thấp hơn: 47,5%, so với 62,5%…"'
-  ly_do: Phép loại suy không nguồn; câu mới hỏi số liệu có nguồn (hồ sơ n64).
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: (không có)
+    moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Hình milgram-obedience: "100% đều đi đến 300V — nấc mà học trò đập tường đòi được thả"; "79% những người đã vượt qua 150V đều đi tiếp đến 450V".'
+    moi: '"Cả 40 người đều đi đến 300V, nấc mà học trò đập vào tường và ngừng trả lời"; bỏ dòng 79%.'
+    ly_do: 'Milgram (1963): học trò đập tường và không trả lời nữa, không có lời đòi thả; 79% là của Thí nghiệm 5 (Burger, 2009), không phải bài 1963 (hồ sơ n65). Hình có tên trong HINH_DA_SUA.'
+  - cu: :::vung-chac[áp lực quyền lực tạo ra mức vâng lời cao trong phòng thí nghiệm]
+    moi: ':::kha-vung[…cùng ý chính…], thêm câu "Vì sao chỉ khá vững: …" (biến thể của chính Milgram, làm lại dừng sớm, Perry và cộng sự 2019).'
+    ly_do: 'Thước đo nhãn mục 4: chưa có phân tích tổng hợp các nghiên cứu độc lập hay tái lập lớn đăng ký trước (hồ sơ n35, n69).'
+  - cu: 'Áp dụng: "Lừa đảo giả danh… Công thức giống hệt… Cách chống: xác minh qua kênh độc lập…"; "Người dám dừng lại thường là người có một đồng minh"; "Tự vệ tinh thần: biết trước bốn câu thúc ép giúp ta nhận ra chúng khi gặp ngoài đời…"'
+    moi: '"Vẻ chính danh: … Bridgeport 47,5% so với 62,5%… đó là phép so sánh của chúng tôi"; "Trong thí nghiệm, có đồng minh giúp người ta dám dừng lại"; "Lời thúc ép không phải sự thật: …14 trong 40 người…"'
+    ly_do: 'Lời khuyên không nguồn (chuẩn mục 1): hồ sơ n48–n50.'
+  - cu: 'Câu hỏi 5: "Tình huống nào ngoài đời giống cấu trúc của thí nghiệm Milgram nhất? + Kẻ giả danh công an gọi điện…"'
+    moi: '"Khi Milgram chuyển thí nghiệm khỏi Đại học Yale sang một văn phòng ở Bridgeport, tỉ lệ vâng lời đến nấc cuối thay đổi thế nào? + Thấp hơn: 47,5%, so với 62,5%…"'
+    ly_do: Phép loại suy không nguồn; câu mới hỏi số liệu có nguồn (hồ sơ n64).
+  - cu: 'Người mặc áo choàng xám đứng cạnh bạn nói đều đều: "Thí nghiệm yêu cầu anh tiếp tục."'
+    moi: 'Bạn quay sang người mặc áo choàng xám đứng cạnh; ông ta bảo bạn coi im lặng là trả lời sai và cứ tiếp tục. Bạn ngần ngại. Ông ta nói, giọng chắc chắn mà không thô lỗ: "Xin hãy tiếp tục." Rồi: "Thí nghiệm yêu cầu anh tiếp tục."'
+    ly_do: 'Review: đúng trình tự của Milgram 1963 (coi im lặng là sai; câu thúc ép chỉ khi ngần ngại, theo thứ tự; giọng "firm, but not impolite"); hồ sơ n6.'
+  - cu: '### Milgram (1963): 40 người đàn ông ở Yale'
+    moi: '### Milgram (1963): 40 người đàn ông ở vùng New Haven { #milgram-1963-40-nguoi-dan-ong-o-yale }'
+    ly_do: 'Review: người tham gia "drawn from New Haven and the surrounding communities" (Milgram 1963); Yale chỉ là nơi làm thí nghiệm. Giữ id cũ của mục.'
+  - cu: 'Doliński và Grzyb (2017) (tiêu đề mục, câu dẫn, khung Khá vững); "Doliński và Grzyb ở Ba Lan"; mục Nguồn: "Doliński, D., & Grzyb, T. (2017). … Obedience to authority today"'
+    moi: 'Doliński và cộng sự (2017) (tiêu đề giữ id cũ { #dolinski-va-grzyb-2017-lam-lai-o-ba-lan }); "nhóm của Doliński ở Ba Lan"; mục Nguồn: đủ bảy tác giả và tên bài đúng theo Crossref'
+    ly_do: 'Review: bài có bảy tác giả; tên bài theo Crossref, OpenAlex (hồ sơ n32–n34, n52).'
+  - cu: 47,5% so với 62,5% ở điều kiện tương ứng tại Yale (Lý thuyết, Áp dụng, Văn hóa, câu hỏi 5)
+    moi: 47,5% so với 65% ở điều kiện tương ứng tại Yale; thêm "không có ý nghĩa thống kê" (Lý thuyết, lời giải thích câu hỏi 5) và (Milgram, 1974); mục Nguồn thêm Milgram (1974)
+    ly_do: 'Review: Milgram 1974, Thí nghiệm 10, so 48% (19/40) với 65% và nói mức giảm không có ý nghĩa thống kê (hồ sơ n46, n48, n64).'

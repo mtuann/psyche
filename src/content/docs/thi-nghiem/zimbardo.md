@@ -35,13 +35,13 @@ Nhưng gần nửa thế kỷ sau, hồ sơ lưu trữ được mở ra và ngư
 
 **Thiết kế.** Mùa hè 1971, Philip Zimbardo cùng các cộng sự tuyển nam sinh viên cho "nghiên cứu tâm lý về đời sống nhà tù", trả 15 đô la mỗi ngày. Hơn 70 người đăng ký (75 theo báo cáo gốc); 24 người được đánh giá ổn định nhất sau phỏng vấn và kiểm tra tâm lý được chọn và **bốc thăm ngẫu nhiên** vào vai cai tù hoặc tù nhân; cuối cùng 21 người tham gia (10 tù nhân, 11 cai tù). Một đoạn hành lang tầng hầm tòa nhà tâm lý của Đại học Stanford thành nhà tù giả: cai tù mặc đồng phục, đeo kính râm, cầm dùi cui; tù nhân bị cảnh sát Palo Alto thật đến nhà bắt, khám người, mặc áo choàng, đánh số thay tên. Zimbardo tự đóng vai quản giáo. Kế hoạch: 2 tuần.
 
-**Kết quả.** Sau 2 ngày, tù nhân nổi loạn; cai tù trả đũa bằng quấy rối leo thang: đếm số giữa đêm, chửi rủa, nhốt người "cứng đầu" vào tủ tối chật ("cái hố"). Một số tù nhân được cho ra sớm (báo cáo gốc ghi 5 người vì suy sụp cảm xúc nặng; Le Texier (2019), dựa trên hồ sơ lưu trữ, cho rằng chỉ khoảng hai trong 10 tù nhân thật sự có triệu chứng suy sụp thần kinh, và một người khác theo hồ sơ đã tính trước việc tỏ ra suy sụp để được ra); một người tuyệt thực. Nhà tâm lý học Christina Maslach đến thăm, sốc trước những gì chứng kiến và đối chất với Zimbardo — ông dừng thí nghiệm vào ngày thứ 6. Kết luận của nhóm nghiên cứu: vai trò xã hội và bối cảnh nhà tù đã đẩy ít nhất một phần ba số cai tù đến chỗ hung hăng, hạ nhục tù nhân hơn mức dự đoán, và đẩy nhiều tù nhân vào thụ động, phụ thuộc, trầm cảm — theo họ, đó là sức mạnh của "tình huống" hơn "tính cách".
+**Kết quả.** Ngay ngày thứ hai, tù nhân nổi loạn; cai tù trả đũa bằng quấy rối leo thang: đếm số giữa đêm, chửi rủa, nhốt người "cứng đầu" vào tủ tối chật ("cái hố"). Một số tù nhân được cho ra sớm (báo cáo gốc ghi 5 người vì suy sụp cảm xúc nặng; Le Texier (2019), dựa trên hồ sơ lưu trữ, cho rằng chỉ khoảng hai trong 11 tù nhân mà ông đếm thật sự có triệu chứng suy sụp thần kinh, và một người khác theo hồ sơ đã tính trước việc tỏ ra suy sụp để được ra); một người tuyệt thực. Nhà tâm lý học Christina Maslach đến thăm, sốc trước những gì chứng kiến và đối chất với Zimbardo — ông dừng thí nghiệm vào ngày thứ 6. Kết luận của nhóm nghiên cứu: vai trò xã hội và bối cảnh nhà tù đã đẩy ít nhất một phần ba số cai tù đến chỗ hung hăng, hạ nhục tù nhân hơn mức dự đoán, và đẩy nhiều tù nhân vào thụ động, phụ thuộc, trầm cảm — theo họ, đó là sức mạnh của "tình huống" hơn "tính cách".
 
 ### Le Texier (2019): mở hồ sơ lưu trữ, phỏng vấn lại người tham gia
 
-**Thiết kế.** Nhà xã hội học Thibault Le Texier lục lại kho lưu trữ của thí nghiệm và phỏng vấn 15 người từng tham gia, đối chiếu thực tế với câu chuyện trong sách vở.
+**Thiết kế.** Thibault Le Texier, nhà nghiên cứu ở Đại học Nice (Pháp), lục lại kho lưu trữ của thí nghiệm và phỏng vấn 15 người từng tham gia, đối chiếu thực tế với câu chuyện trong sách vở.
 
-**Kết quả.** Một loạt vấn đề lộ ra: cai tù đã nhận **hướng dẫn chi tiết** về cách đối xử với tù nhân trong buổi định hướng; cai tù hung hăng nhất, biệt danh "John Wayne" (David Eshleman), sau này thừa nhận mình đang **diễn** một nhân vật; dữ liệu được thu thập và trình bày có chọn lọc; ý tưởng thí nghiệm vay mượn từ một "thí nghiệm nhà tù" do sinh viên trong lớp của Zimbardo làm thử vài tháng trước đó. Kết luận của Le Texier: đây là một nghiên cứu có quá nhiều sai sót về phương pháp, đến mức giá trị khoa học của nó bị đặt nghi vấn ([Le Texier, 2019](https://doi.org/10.1037/amp0000401)).
+**Kết quả.** Theo Le Texier, hồ sơ lưu trữ cho thấy một loạt vấn đề: cai tù đã nhận **hướng dẫn chi tiết** về cách đối xử với tù nhân trong buổi định hướng, trái với báo cáo gốc nói họ cố ý chỉ được hướng dẫn tối thiểu; cai tù hung hăng nhất, biệt danh "John Wayne" (David Eshleman), sau này thừa nhận mình đang **diễn** một nhân vật; dữ liệu được thu thập và trình bày có chọn lọc; ý tưởng thí nghiệm vay mượn từ một "thí nghiệm nhà tù" do sinh viên trong lớp của Zimbardo làm thử vài tháng trước đó. Kết luận của Le Texier: đây là một nghiên cứu có quá nhiều sai sót về phương pháp, đến mức giá trị khoa học của nó bị đặt nghi vấn ([Le Texier, 2019](https://doi.org/10.1037/amp0000401)).
 
 ### Reicher và Haslam (2006): làm lại theo cách khác — kết quả ngược lại (BBC Prison Study)
 
@@ -84,7 +84,7 @@ Dù kết luận gốc còn tranh cãi, thí nghiệm vẫn để lại những 
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Tính đến 10/2026, chúng tôi **chưa tìm thấy** bất kỳ nghiên cứu tương tự nào trên người Việt — và điều này không có gì lạ: một thí nghiệm giam người, gây căng thẳng tâm lý như của Zimbardo ngày nay khó có thể được phê duyệt theo chuẩn mực đạo đức nghiên cứu hiện hành, ở Việt Nam hay ở nơi khác. Độc giả Việt Nam có lẽ thường biết thí nghiệm qua sách và báo phổ thông; Le Texier (2019) chỉ ra rằng phần lớn tác giả sách giáo khoa tâm lý học (ông khảo sát chủ yếu sách tiếng Anh) bỏ qua các phê bình và kể lại một phiên bản chưa qua kiểm chứng.
+Tính đến 10/2026, chúng tôi **chưa tìm thấy** bất kỳ nghiên cứu tương tự nào trên người Việt — và điều này không có gì lạ: một thí nghiệm giam người, gây căng thẳng tâm lý như của Zimbardo ngày nay khó có thể được phê duyệt theo chuẩn mực đạo đức nghiên cứu hiện hành, ở Việt Nam hay ở nơi khác. Le Texier (2019) chỉ ra rằng phần lớn tác giả sách giáo khoa tâm lý học (ông khảo sát chủ yếu sách tiếng Anh) bỏ qua các phê bình và kể lại một phiên bản chưa qua kiểm chứng.
 
 Vì vậy, điều trung thực nhất có thể nói là: chúng ta không có dữ liệu nào về việc "người Việt trong vai cai tù sẽ ra sao", và không nên suy diễn từ bất kỳ đặc điểm văn hóa nào. Khoảng trống này không thể lấp bằng suy đoán.
 
@@ -112,7 +112,7 @@ Vì vậy, điều trung thực nhất có thể nói là: chúng ta không có 
 - Kết quả giống hệt Zimbardo: cai tù tự động trở nên tàn nhẫn.
 + Kết quả ngược lại: cai tù không đồng nhất với vai trò, ngần ngại dùng quyền lực; bạo lực không phải hệ quả tự động của vai trò và tình huống.
 - Thí nghiệm bị dừng ngay ngày đầu vì không ai chịu hợp tác.
-> Điều khiến sự tàn ác trở nên "chấp nhận được" là sự bất lực của tập thể và vai trò của người lãnh đạo — chứ không phải chiếc áo cai tù tự nó.
+> Theo Reicher và Haslam, điều khiến sự tàn ác trở nên "chấp nhận được" là sự bất lực và thất bại của các nhóm — chứ không phải chiếc áo cai tù tự nó.
 ? Kết luận nào của thí nghiệm Zimbardo hiện được gắn nhãn "đang tranh cãi"?
 - Rằng thí nghiệm diễn ra vào năm 1971.
 + Rằng "tình huống biến người bình thường thành tàn ác" — cách diễn giải gốc về sức mạnh của hoàn cảnh hơn tính cách.
