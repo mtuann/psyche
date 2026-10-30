@@ -1,6 +1,6 @@
 ---
 title: Vì sao nhiều phát hiện nổi tiếng không lặp lại được?
-description: "Dự án Open Science Collaboration (2015) làm lại 100 nghiên cứu tâm lý: chỉ 36% cho hiệu ứng có ý nghĩa thống kê theo cùng hướng. Vì sao, và khoa học tự sửa mình ra sao."
+description: 'Dự án Open Science Collaboration (2015) làm lại 100 nghiên cứu tâm lý: chỉ 36% cho hiệu ứng có ý nghĩa thống kê theo cùng hướng. Vì sao, và khoa học tự sửa mình ra sao.'
 sidebar:
   label: Vì sao nhiều phát hiện nổi tiếng không lặp lại được? Khủng hoảng tái lập
 in_duoc: true
@@ -14,7 +14,7 @@ in_duoc: true
 
 Dự án ấy là **Open Science Collaboration**: 270 tác giả cùng làm lại **100 nghiên cứu tâm lý** đã công bố trong năm 2008 trên ba tạp chí, và công bố kết quả trên tạp chí *Science* tháng 8 năm 2015. Mỗi nghiên cứu được một nhóm làm lại, dùng tài liệu gốc khi có và thiết kế được tính để có sức mạnh thống kê cao, nhằm giữ sát thiết kế của bản gốc ([Open Science Collaboration, 2015](https://doi.org/10.1126/science.aac4716)).
 
-Kết quả gây chấn động:
+Kết quả:
 
 - Trong 100 nghiên cứu gốc, **97%** báo cáo hiệu ứng có ý nghĩa thống kê.
 - Khi làm lại, chỉ **36%** cho hiệu ứng có ý nghĩa thống kê theo cùng hướng.
@@ -28,7 +28,7 @@ Nghe như một bản cáo trạng: phải chăng tâm lý học toàn là "sai"
 
 ### Tái lập là gì
 
-**Tái lập** (*replication*) là làm lại một nghiên cứu với người tham gia mới, theo đúng thiết kế cũ, để xem hiệu ứng có xuất hiện trở lại không. Theo chính dự án năm 2015, một nghiên cứu đơn lẻ hầu như không bao giờ cho kết luận dứt khoát về một hiệu ứng: bằng chứng đáng tin hơn khi **nhiều lần làm lại độc lập cùng cho thấy hiệu ứng**, chứ không phải khi nó xuất hiện một lần thật ấn tượng trên báo.
+**Tái lập** (*replication*) là làm lại một nghiên cứu với người tham gia mới, theo sát thiết kế cũ, để xem hiệu ứng có xuất hiện trở lại không. Theo chính dự án năm 2015, một nghiên cứu đơn lẻ hầu như không bao giờ cho kết luận dứt khoát về một hiệu ứng: bằng chứng đáng tin hơn khi **nhiều lần làm lại độc lập cùng cho thấy hiệu ứng**, chứ không phải khi nó xuất hiện một lần thật ấn tượng trên báo.
 
 Nhưng "không tái lập được" không đơn giản có nghĩa là "phát hiện đó sai". Trong dự án năm 2015, các nhóm dùng nhiều thước đo khác nhau: 36% đạt ý nghĩa thống kê, 39% được đánh giá chủ quan là "đã tái lập", và 47% hiệu ứng gốc nằm trong khoảng tin cậy của hiệu ứng tái lập. Nghĩa là có một vùng xám: nhiều kết quả làm lại cho **hiệu ứng nhỏ hơn và bằng chứng yếu hơn** những gì bài báo gốc tuyên bố, thay vì biến mất hoàn toàn.
 

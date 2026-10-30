@@ -4,49 +4,54 @@ nguon_cu: ../psyche-zero/docs/bang-chung/index.md
 tang: khung
 muc: null
 lan:
-- so: 1
-  ngay: 2026-10-30
-  nhanh: moi/d4-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L1 phần 1/2)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: 2026-10-30
+    nhanh: moi/d4-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L1 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D4-L1)
+      review: Claude Sonnet 5.5 (agent review D4-L1, 30/10/2026)
+      kiem_mau: null
 nguon: []
 nhan_dinh:
-- id: i1
-  cau: 'Mô tả của mục: cách đọc một tin tức hay một nghiên cứu tâm lý học — tương quan và nhân quả, nhóm đối chứng, độ lớn hiệu ứng.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm trên src/data/trang.yml (đọc 30/10/2026): có bang-chung/tuong-quan-nhan-qua, bang-chung/thi-nghiem-doi-chung, bang-chung/do-lon-hieu-ung (tầng loi, lĩnh vực Hiểu bằng chứng) và đã chuyển ở src/content/docs/bang-chung/.'
-- id: i2
-  cau: 'Mục này giúp bạn tự hỏi vài câu trước khi tin hay chia sẻ một tin bắt đầu bằng "Nghiên cứu cho thấy…": có kết luận nhân quả không, có nhóm đối chứng hợp lý không, hiệu ứng lớn đến đâu, ai được hỏi, và kết quả đã được làm lại chưa.'
-  loai: ve-site
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Mỗi ngày có hàng chục tin tức bắt đầu bằng ''Nghiên cứu cho thấy…''. Mục này giúp bạn tự trả lời ba câu hỏi trước khi tin hay chia sẻ" và danh sách tay 12 bài. Chữ mới: bỏ "hàng chục tin tức mỗi ngày" (không có nguồn, không phải điều kiểm được) và "ba câu hỏi" (danh sách có 12 bài). Đã kiểm: mỗi câu hỏi khớp một bài trong src/data/trang.yml (tuong-quan-nhan-qua: nhân quả; thi-nghiem-doi-chung: nhóm đối chứng; do-lon-hieu-ung: độ lớn; mau-va-chon-mau: ai được hỏi; khung-hoang-tai-lap: làm lại).'
-- id: i3
-  cau: 'Danh sách các bài sinh từ dữ liệu (::danh-sach-bai{nhom="bang-chung"}): chỉ bài đã có trên site, tên và mô tả lấy từ chính bài, bài chưa xong được đếm ở cuối.'
-  loai: ve-site
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: danh sách tay 12 mục với câu hỏi và link, kể cả các bài chưa lên. Chữ mới: danh sách sinh từ dữ liệu như mục lục Thí nghiệm kinh điển (D3-L1). Đã kiểm: src/plugins/thanh-phan.mjs danhSachBai (nhom lọc theo tiền tố id "bang-chung/", bỏ index); src/data/trang.yml có 12 trang bang-chung/ ngoài index (đọc 30/10/2026).'
-- id: i4
-  cau: Mỗi bài lên site sau khi được kiểm chứng lại từ đầu.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'AGENTS.md, mục Khóa và CI: bản thật chỉ gồm trang đã khóa (src/ban-build.mjs); chuan-kiem-dinh.md mục 3 (kiểm định lõi mọi nhận định).'
-- id: i5
-  cau: Các bài thường bắt đầu bằng một tin tức (diễn đạt lại hoặc giả định, có ghi rõ), rồi đến khái niệm, cách nhận ra, một bài tập có đáp án ẩn và vài câu hỏi để tự suy ngẫm.
-  loai: ve-site
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Mỗi bài bắt đầu bằng…". Chữ mới: "Các bài thường bắt đầu…" vì chưa kiểm hết 12 bài (6 bài chưa chuyển lúc ghi hồ sơ). Đã kiểm 3 bài của phần 1/2 (tuong-quan-nhan-qua, thi-nghiem-doi-chung, do-lon-hieu-ung) và mau-va-chon-mau, p-value, khung-hoang-tai-lap: đều có mục "Một tin tức", "Khái niệm", "Cách nhận ra", bài tập có khối :::thu-gon, và câu hỏi quiz hay mục tự suy ngẫm (khung-hoang-tai-lap dùng "Thử một lần" và "Tự suy ngẫm"). Tin tức: tuong-quan-nhan-qua ghi "site diễn đạt lại", hai bài kia ghi "tin giả định". Người gom: so lại khi 6 bài còn lại lên.'
+  - id: i1
+    cau: 'Mô tả của mục: cách đọc một tin tức hay một nghiên cứu tâm lý học — tương quan và nhân quả, nhóm đối chứng, độ lớn hiệu ứng.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trên src/data/trang.yml (đọc 30/10/2026): có bang-chung/tuong-quan-nhan-qua, bang-chung/thi-nghiem-doi-chung, bang-chung/do-lon-hieu-ung (tầng loi, lĩnh vực Hiểu bằng chứng) và đã chuyển ở src/content/docs/bang-chung/. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đã kiểm thẳng: mô tả trong frontmatter của index.md giống chữ của câu; ba trang tuong-quan-nhan-qua, thi-nghiem-doi-chung, do-lon-hieu-ung có trong src/data/trang.yml (tầng loi, lĩnh vực phuong-phap), có file ở src/content/docs/bang-chung/ và hiện trong danh sách ở bản xem (npm run build:xem, dist/bang-chung/index.html).'
+    review: dung
+  - id: i2
+    cau: 'Mục này giúp bạn tự hỏi vài câu trước khi tin hay chia sẻ một tin bắt đầu bằng "Nghiên cứu cho thấy…": có kết luận nhân quả không, có nhóm đối chứng hợp lý không, hiệu ứng lớn đến đâu, ai được hỏi, và kết quả đã được làm lại chưa.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Mỗi ngày có hàng chục tin tức bắt đầu bằng ''Nghiên cứu cho thấy…''. Mục này giúp bạn tự trả lời ba câu hỏi trước khi tin hay chia sẻ" và danh sách tay 12 bài. Chữ mới: bỏ "hàng chục tin tức mỗi ngày" (không có nguồn, không phải điều kiểm được) và "ba câu hỏi" (danh sách có 12 bài). Đã kiểm: mỗi câu hỏi khớp một bài trong src/data/trang.yml (tuong-quan-nhan-qua: nhân quả; thi-nghiem-doi-chung: nhóm đối chứng; do-lon-hieu-ung: độ lớn; mau-va-chon-mau: ai được hỏi; khung-hoang-tai-lap: làm lại). Review (Claude Sonnet 5.5, 30/10/2026): dung. Chữ trên trang khớp chữ mới của câu. Năm vế của câu ứng với năm trang có trong trang.yml: nhân quả (tuong-quan-nhan-qua), nhóm đối chứng (thi-nghiem-doi-chung), độ lớn hiệu ứng (do-lon-hieu-ung), ai được hỏi (mau-va-chon-mau), làm lại được chưa (khung-hoang-tai-lap). Câu nói "vài câu", không đếm.'
+    review: dung
+  - id: i3
+    cau: 'Danh sách các bài sinh từ dữ liệu (::danh-sach-bai{nhom="bang-chung"}): chỉ bài đã có trên site, tên và mô tả lấy từ chính bài, bài chưa xong được đếm ở cuối.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: danh sách tay 12 mục với câu hỏi và link, kể cả các bài chưa lên. Chữ mới: danh sách sinh từ dữ liệu như mục lục Thí nghiệm kinh điển (D3-L1). Đã kiểm: src/plugins/thanh-phan.mjs danhSachBai (nhom lọc theo tiền tố id "bang-chung/", bỏ index); src/data/trang.yml có 12 trang bang-chung/ ngoài index (đọc 30/10/2026). Review (Claude Sonnet 5.5, 30/10/2026): dung. Mã: danhSachBai trong src/plugins/thanh-phan.mjs (dòng 236-251): nhom="bang-chung" lọc theo tiền tố id, bỏ index, chỉ liệt kê trang có trong bản build (bản thật: đã khóa), mô tả lấy từ frontmatter của trang, thêm dòng "Còn N bài sắp có". Bản xem (30/10/2026): 6 bài hiện ra, dòng "Còn 6 bài sắp có"; trang.yml có 12 trang bang-chung/ ngoài index. Mô tả của sáu bài hiện ở đây là chữ của trang ấy, nên đi qua hồ sơ của chính trang đó.'
+    review: dung
+  - id: i4
+    cau: Mỗi bài lên site sau khi được kiểm chứng lại từ đầu.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'AGENTS.md, mục Khóa và CI: bản thật chỉ gồm trang đã khóa (src/ban-build.mjs); chuan-kiem-dinh.md mục 3 (kiểm định lõi mọi nhận định). Review (Claude Sonnet 5.5, 30/10/2026): dung. Đúng với cách site làm: src/ban-build.mjs chỉ đưa trang có trong kiem-dinh/khoa.json vào bản thật (AGENTS.md, mục Khóa); lượt 1 kiểm mọi nhận định của bài (chuan-kiem-dinh.md mục 3). Bài tầng mở rộng chỉ kiểm lượt 2 theo mẫu, nhưng mọi bài trong mục này hiện là tầng loi (trang.yml).'
+    review: dung
+  - id: i5
+    cau: Các bài thường bắt đầu bằng một tin tức (diễn đạt lại hoặc giả định, có ghi rõ), rồi đến khái niệm, cách nhận ra, một bài tập có đáp án ẩn và vài câu hỏi để tự suy ngẫm.
+    loai: ve-site
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Mỗi bài bắt đầu bằng…". Chữ mới: "Các bài thường bắt đầu…" vì chưa kiểm hết 12 bài (6 bài chưa chuyển lúc ghi hồ sơ). Đã kiểm 3 bài của phần 1/2 (tuong-quan-nhan-qua, thi-nghiem-doi-chung, do-lon-hieu-ung) và mau-va-chon-mau, p-value, khung-hoang-tai-lap: đều có mục "Một tin tức", "Khái niệm", "Cách nhận ra", bài tập có khối :::thu-gon, và câu hỏi quiz hay mục tự suy ngẫm (khung-hoang-tai-lap dùng "Thử một lần" và "Tự suy ngẫm"). Tin tức: tuong-quan-nhan-qua ghi "site diễn đạt lại", hai bài kia ghi "tin giả định". Người gom: so lại khi 6 bài còn lại lên. Review (Claude Sonnet 5.5, 30/10/2026): dung (giữ). Câu có chữ "thường" nên đúng. Đã mở sáu bài đã chuyển: cả sáu có mục "Một tin tức", "Khái niệm", "Cách nhận ra", "Bài tập" (đáp án trong :::thu-gon) và quiz hay mục "Thử suy ngẫm"/"Tự suy ngẫm". Năm bài mở bằng tin giả định hay diễn đạt lại, có ghi rõ; mau-va-chon-mau mở bằng một con số có nguồn (ba nhà khoa học nêu năm 2010), không phải tin giả định: do đó giữ "thường". Khi sáu bài còn lại lên, người gom so lại.'
+    review: dung
 doi_chu:
-- cu: 'Mỗi ngày có hàng chục tin tức bắt đầu bằng "Nghiên cứu cho thấy…". Mục này giúp bạn tự trả lời ba câu hỏi trước khi tin hay chia sẻ:'
-  moi: 'Khi gặp một tin bắt đầu bằng "Nghiên cứu cho thấy…", mục này giúp bạn tự hỏi vài câu trước khi tin hay chia sẻ: nghiên cứu có cho phép kết luận nhân quả không, có so sánh với một nhóm đối chứng hợp lý không, hiệu ứng lớn đến đâu, ai được hỏi, và kết quả đã được làm lại chưa.'
-  ly_do: 'i2: bỏ "hàng chục tin tức mỗi ngày" (không có nguồn), "ba câu hỏi" (danh sách có 12 bài).'
-- cu: Danh sách tay 12 bài, mỗi bài một câu hỏi và link
-  moi: Mục "Các bài trong mục" với ::danh-sach-bai{nhom="bang-chung"}, kèm câu "Mỗi bài lên site sau khi được kiểm chứng lại từ đầu; bài chưa xong được đếm ở cuối danh sách."
-  ly_do: 'i3: danh sách sinh từ dữ liệu, như mục lục Thí nghiệm kinh điển (D3-L1); câu hỏi tay chép lại ý của từng bài.'
-- cu: Mỗi bài bắt đầu bằng một tin tức
-  moi: Các bài thường bắt đầu bằng một tin tức
-  ly_do: 'i5: chưa kiểm hết 12 bài.'
+  - cu: 'Mỗi ngày có hàng chục tin tức bắt đầu bằng "Nghiên cứu cho thấy…". Mục này giúp bạn tự trả lời ba câu hỏi trước khi tin hay chia sẻ:'
+    moi: 'Khi gặp một tin bắt đầu bằng "Nghiên cứu cho thấy…", mục này giúp bạn tự hỏi vài câu trước khi tin hay chia sẻ: nghiên cứu có cho phép kết luận nhân quả không, có so sánh với một nhóm đối chứng hợp lý không, hiệu ứng lớn đến đâu, ai được hỏi, và kết quả đã được làm lại chưa.'
+    ly_do: 'i2: bỏ "hàng chục tin tức mỗi ngày" (không có nguồn), "ba câu hỏi" (danh sách có 12 bài).'
+  - cu: Danh sách tay 12 bài, mỗi bài một câu hỏi và link
+    moi: Mục "Các bài trong mục" với ::danh-sach-bai{nhom="bang-chung"}, kèm câu "Mỗi bài lên site sau khi được kiểm chứng lại từ đầu; bài chưa xong được đếm ở cuối danh sách."
+    ly_do: 'i3: danh sách sinh từ dữ liệu, như mục lục Thí nghiệm kinh điển (D3-L1); câu hỏi tay chép lại ý của từng bài.'
+  - cu: Mỗi bài bắt đầu bằng một tin tức
+    moi: Các bài thường bắt đầu bằng một tin tức
+    ly_do: 'i5: chưa kiểm hết 12 bài.'

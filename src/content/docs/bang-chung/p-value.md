@@ -32,14 +32,14 @@ Nói gọn theo cách của ASA: p-value cho biết dữ liệu *không tương 
 
 **p-value KHÔNG phải xác suất giả thuyết đúng.** Đây là một hiểu lầm thường gặp, và là nguyên tắc thứ hai của tuyên bố ASA 2016.
 
-Quay lại ví dụ tung xu: p = 1,1% **không** có nghĩa là "xác suất đồng xu công bằng chỉ là 1,1%". Nó có nghĩa là: *nếu* đồng xu công bằng, thì kết quả 9/10 ngửa là chuyện hiếm (1,1%). Hai câu này khác nhau hoàn toàn:
+Quay lại ví dụ tung xu: p = 1,1% **không** có nghĩa là "xác suất đồng xu công bằng chỉ là 1,1%". Nó có nghĩa là: *nếu* đồng xu công bằng, thì được từ 9 lần ngửa trở lên là chuyện hiếm (1,1%). Hai câu này khác nhau hoàn toàn:
 
 - Câu sai: nói về **đồng xu** ("đồng xu công bằng với xác suất 1,1%").
 - Câu đúng: nói về **dữ liệu trong một điều kiện giả định** ("nếu đồng xu công bằng, dữ liệu này hiếm đến mức 1,1%").
 
 Vì sao dễ nhầm? Câu hỏi ta muốn trả lời thường là "giả thuyết có đúng không", nhưng p-value chỉ trả lời "dữ liệu có lạ không, nếu giả thuyết đúng". Một mình p-value không phải thước đo tốt cho bằng chứng về một mô hình hay giả thuyết.
 
-Tương tự, p = 0,03 trong quảng cáo thuốc không có nghĩa là "thuốc hiệu quả với xác suất 97%", cũng không có nghĩa "chỉ có 3% là do ngẫu nhiên". Nó chỉ có nghĩa: nếu thuốc thực ra vô tác dụng, thì chênh lệch quan sát được là chuyện hiếm ở mức 3%.
+Tương tự, p = 0,03 trong quảng cáo thuốc không có nghĩa là "thuốc hiệu quả với xác suất 97%", cũng không có nghĩa "chỉ có 3% là do ngẫu nhiên". Nó chỉ có nghĩa: nếu thuốc thực ra vô tác dụng (và các giả định của phép tính đều đúng), thì chênh lệch lớn như thế hoặc lớn hơn chỉ xảy ra với xác suất 3%.
 
 ### Khoảng tin cậy: câu hỏi hay hơn "có hay không"
 
@@ -96,7 +96,7 @@ Bảng tra cứu nhanh:
 :::
 
 :::kha-vung[p-hacking và báo cáo chọn lọc làm tăng khả năng có kết quả "có ý nghĩa" sai, và làm kết quả khó tái lập hơn]
-Mô phỏng và khảo sát cho thấy các cách làm này làm tăng dương tính giả và khá phổ biến. Nhưng mức đóng góp của chúng vào tỉ lệ không tái lập quan sát được ở các dự án tái lập lớn chưa được đo trực tiếp.
+Mô phỏng cho thấy các cách làm này làm tăng dương tính giả, và khảo sát cho thấy chúng khá phổ biến. Nhưng mức đóng góp của chúng vào tỉ lệ không tái lập quan sát được ở các dự án tái lập lớn chưa được đo trực tiếp.
 :::
 
 ## Bài tập

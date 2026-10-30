@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L1 phần 2/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D4-L1)
+      review: "Claude Opus 5.5 (agent review D4-L1, 30/10/2026)"
       kiem_mau: null
 nguon:
   - id: wasserstein2016
@@ -59,10 +59,11 @@ nhan_dinh:
     trich: The American Statistical Association (ASA) has released a "Statement on Statistical Significance and P-Values" | In light of misuses of and misconceptions concerning p-values
     vi_tri: Thông cáo ASA, 7/3/2016, đoạn 1 và 3
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "phổ biến đến mức năm 2016, ASA phải ra một tuyên bố chính thức chỉ để nói: mọi người đang hiểu sai p-value". Lý do: "phải", "chỉ để nói", "mọi người đang hiểu sai" mạnh hơn nguồn; thông cáo nói tuyên bố đưa ra vì có "misuses and misconceptions".'
+    ghi_chu: "Chữ cũ: \"phổ biến đến mức năm 2016, ASA phải ra một tuyên bố chính thức chỉ để nói: mọi người đang hiểu sai p-value\". Lý do: \"phải\", \"chỉ để nói\", \"mọi người đang hiểu sai\" mạnh hơn nguồn; thông cáo nói tuyên bố đưa ra vì có \"misuses and misconceptions\". Review (Claude Opus 5.5, 30/10/2026): Khớp thông cáo ASA (\"In light of misuses of and misconceptions\")."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
     luot_2_ghi_chu: Bản ASA (Wasserstein & Lazar 2016), mục Introduction; thông cáo ngày 7/3/2016.
+    review: dung
   - id: p2
     cau: Tuyên bố do Ronald L. Wasserstein và Nicole A. Lazar soạn thảo, đăng trên The American Statistician, số 70(2), trang 129–133.
     loai: lich-su
@@ -84,10 +85,11 @@ nhan_dinh:
     trich: this is the first time that the community of statisticians, as represented by the ASA Board of Directors, has issued a statement to address these issues.
     vi_tri: Thông cáo ASA, lời Utts, cuối trang 2
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đây là lần đầu tiên trong lịch sử hiệp hội có một tuyên bố chính thức về cách dùng và cách hiểu p-value — một dấu hiệu cho thấy vấn đề đã nghiêm trọng đến mức nào." Lý do: nguồn nói lần đầu cộng đồng thống kê, qua Ban Giám đốc, ra tuyên bố về các vấn đề này (không nói "trong lịch sử hiệp hội" về riêng p-value); "dấu hiệu ... nghiêm trọng" là diễn giải, bỏ.'
+    ghi_chu: "Chữ cũ: \"Đây là lần đầu tiên trong lịch sử hiệp hội có một tuyên bố chính thức về cách dùng và cách hiểu p-value — một dấu hiệu cho thấy vấn đề đã nghiêm trọng đến mức nào.\" Lý do: nguồn nói lần đầu cộng đồng thống kê, qua Ban Giám đốc, ra tuyên bố về các vấn đề này (không nói \"trong lịch sử hiệp hội\" về riêng p-value); \"dấu hiệu ... nghiêm trọng\" là diễn giải, bỏ. Review (Claude Opus 5.5, 30/10/2026): Khớp nguyên văn thông cáo ASA."
     luot_2: dung
     luot_2_nguon: [ "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
     luot_2_ghi_chu: Lời Jessica Utts trong thông cáo của ASA.
+    review: dung
   - id: p4
     cau: Tuyên bố nêu sáu nguyên tắc, nhiều nguyên tắc trong đó nhằm sửa các hiểu lầm và cách dùng sai p-value.
     loai: phat-hien
@@ -96,9 +98,10 @@ nhan_dinh:
     trich: The statement's six principles, many of which address misconceptions and misuse of the p-value, are the following
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Tuyên bố nêu sáu nguyên tắc, mà ý chính có thể tóm gọn: p-value không trả lời những câu hỏi mà người ta vẫn tưởng nó trả lời." Chữ mới sát thông cáo ("many of which address misconceptions and misuse").'
+    ghi_chu: "Chữ cũ: \"Tuyên bố nêu sáu nguyên tắc, mà ý chính có thể tóm gọn: p-value không trả lời những câu hỏi mà người ta vẫn tưởng nó trả lời.\" Chữ mới sát thông cáo (\"many of which address misconceptions and misuse\"). Review (Claude Opus 5.5, 30/10/2026): Khớp thông cáo (\"many of which address misconceptions and misuse\")."
     luot_2: dung
     luot_2_nguon: [ "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf", "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108" ]
+    review: dung
   - id: p5
     cau: 'Tung một đồng xu công bằng 10 lần: trong 1024 khả năng đều nhau, có 10 cách được đúng 9 lần ngửa và 1 cách được 10 lần ngửa, tổng 11/1024, khoảng 1,1%.'
     loai: so-lieu
@@ -143,21 +146,24 @@ nhan_dinh:
     trich: P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone. | The P value assumes the test hypothesis is true—it is not a hypothesis probability
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc, nguyên tắc 2; Greenland và cộng sự, "Common misinterpretations of single P values", mục 1
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đây là hiểu lầm phổ biến nhất, và là điều tuyên bố ASA 2016 nhấn mạnh đầu tiên." Lý do: nguyên tắc 1 của ASA là về độ không tương thích, "không phải xác suất giả thuyết đúng" là nguyên tắc 2, nên "nhấn mạnh đầu tiên" sai; "phổ biến nhất" không có nguồn xếp hạng (Greenland chỉ xếp đầu danh sách các hiểu lầm thường gặp). Câu hỏi bài tập (đáp án A) sửa theo.'
+    ghi_chu: "Chữ cũ: \"Đây là hiểu lầm phổ biến nhất, và là điều tuyên bố ASA 2016 nhấn mạnh đầu tiên.\" Lý do: nguyên tắc 1 của ASA là về độ không tương thích, \"không phải xác suất giả thuyết đúng\" là nguyên tắc 2, nên \"nhấn mạnh đầu tiên\" sai; \"phổ biến nhất\" không có nguồn xếp hạng (Greenland chỉ xếp đầu danh sách các hiểu lầm thường gặp). Câu hỏi bài tập (đáp án A) sửa theo. Review (Claude Opus 5.5, 30/10/2026): Nguyên tắc 2 của ASA; Greenland xếp đây là hiểu lầm số 1, trang chỉ viết \"thường gặp\"."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML" ]
     luot_2_ghi_chu: Nguyên tắc 2; Greenland và cs. 2016 xếp đây là hiểu lầm số 1.
+    review: dung
   - id: p9
-    cau: 'Với p = 1,1% trong ví dụ đồng xu: không có nghĩa "xác suất đồng xu công bằng chỉ là 1,1%"; có nghĩa là nếu đồng xu công bằng thì kết quả 9/10 ngửa là chuyện hiếm (1,1%).'
+    cau: "Với p = 1,1% trong ví dụ đồng xu: không có nghĩa \"xác suất đồng xu công bằng chỉ là 1,1%\"; có nghĩa là nếu đồng xu công bằng thì được từ 9 lần ngửa trở lên là chuyện hiếm (1,1%)."
     loai: phat-hien
     nguon:
       - greenland2016
     trich: The P value assumes the test hypothesis is true—it is not a hypothesis probability and may be far from any reasonable probability for the test hypothesis.
     vi_tri: Greenland và cộng sự, "Common misinterpretations", mục 1
-    ket_qua: dung
+    ket_qua: da-sua
+    ghi_chu: "Review (Claude Opus 5.5, 30/10/2026): Lượt 2 đúng: 11/1024 là xác suất được từ 9 lần ngửa trở lên; riêng đúng 9 lần là 10/1024. Chữ cũ: \"thì kết quả 9/10 ngửa là chuyện hiếm (1,1%)\". Chữ mới: \"thì được từ 9 lần ngửa trở lên là chuyện hiếm (1,1%)\", khớp p5 và định nghĩa (\"hoặc lạ hơn\")."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108" ]
     luot_2_ghi_chu: "Chi tiết nhỏ: 1,1% là xác suất được 9 lần ngửa trở lên; riêng đúng 9 lần là 10/1024 ≈ 0,98%. Có thể viết 'kết quả 9 lần ngửa trở lên' cho khớp p5."
+    review: sai
   - id: p10
     cau: Câu sai nói về đồng xu ("đồng xu công bằng với xác suất 1,1%"); câu đúng nói về dữ liệu trong một điều kiện giả định ("nếu đồng xu công bằng, dữ liệu này hiếm đến mức 1,1%").
     loai: phat-hien
@@ -178,23 +184,25 @@ nhan_dinh:
     trich: By itself, a p-value does not provide a good measure of evidence regarding a model or hypothesis. | The P value simply indicates the degree to which the data conform to the pattern predicted by the test hypothesis and all the other assumptions used in the test
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc, nguyên tắc 6; Greenland và cộng sự, mục 1
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Vì sao ai cũng nhầm? Vì bộ não ta muốn biết ''giả thuyết có đúng không'' ... Muốn trả lời câu hỏi thứ nhất cần thêm nhiều thông tin khác mà một mình p-value không có." Lý do: "ai cũng nhầm" và lời giải thích về "bộ não" là nhận định tâm lý không có nguồn; giữ phần thống kê theo nguyên tắc 6 của ASA ("by itself, ... not a good measure of evidence").'
+    ghi_chu: "Chữ cũ: \"Vì sao ai cũng nhầm? Vì bộ não ta muốn biết 'giả thuyết có đúng không' ... Muốn trả lời câu hỏi thứ nhất cần thêm nhiều thông tin khác mà một mình p-value không có.\" Lý do: \"ai cũng nhầm\" và lời giải thích về \"bộ não\" là nhận định tâm lý không có nguồn; giữ phần thống kê theo nguyên tắc 6 của ASA (\"by itself, ... not a good measure of evidence\"). Review (Claude Opus 5.5, 30/10/2026): Nguyên tắc 6 của ASA; lời giải thích \"bộ não\" đã bỏ."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108" ]
     luot_2_ghi_chu: Nguyên tắc 6, kèm nguyên tắc 2.
+    review: dung
   - id: p12
-    cau: 'p = 0,03 trong quảng cáo thuốc không có nghĩa là "thuốc hiệu quả với xác suất 97%", cũng không có nghĩa "chỉ có 3% là do ngẫu nhiên"; nó chỉ có nghĩa: nếu thuốc thực ra vô tác dụng, thì chênh lệch quan sát được là chuyện hiếm ở mức 3%.'
+    cau: "p = 0,03 trong quảng cáo thuốc không có nghĩa là \"thuốc hiệu quả với xác suất 97%\", cũng không có nghĩa \"chỉ có 3% là do ngẫu nhiên\"; nó chỉ có nghĩa: nếu thuốc thực ra vô tác dụng (và các giả định của phép tính đều đúng), thì chênh lệch lớn như thế hoặc lớn hơn chỉ xảy ra với xác suất 3%."
     loai: phat-hien
     nguon:
       - asa-thong-cao
       - greenland2016
     trich: P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone. | The P value for the null hypothesis is the probability that chance alone produced the observed association; for example, if the P value for the null hypothesis is 0.08, there is an 8 % probability that chance alone produced the association. No!
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc, nguyên tắc 2; Greenland và cộng sự, mục 2
-    ket_qua: dung
-    ghi_chu: Ví dụ thuốc là giả định (gia-dinh).
+    ket_qua: da-sua
+    ghi_chu: "Ví dụ thuốc là giả định (gia-dinh). Review (Claude Opus 5.5, 30/10/2026): Lượt 2 đúng: Greenland và cộng sự 2016 định nghĩa p-value là xác suất của thống kê \"would be at least as large as its observed value if every model assumption were correct\". Chữ cũ: \"thì chênh lệch quan sát được là chuyện hiếm ở mức 3%\". Chữ mới: \"(và các giả định của phép tính đều đúng), thì chênh lệch lớn như thế hoặc lớn hơn chỉ xảy ra với xác suất 3%\"."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML" ]
     luot_2_ghi_chu: "Cả hai cách hiểu sai được nêu đúng là sai theo nguyên tắc 2 (và hiểu lầm 1, 2 của Greenland). Chi tiết: chính xác là chênh lệch 'lớn như thế hoặc lớn hơn' hiếm ở mức 3%, với điều kiện mọi giả định của mô hình đúng."
+    review: sai
   - id: p13
     cau: 'Thay vì chỉ hỏi "có ý nghĩa thống kê không", ta có thể hỏi một câu hữu ích hơn: "hiệu ứng lớn cỡ nào?", và khoảng tin cậy là một cách trả lời.'
     loai: phat-hien
@@ -204,10 +212,11 @@ nhan_dinh:
     trich: that emphasize estimation over testing such as confidence, credibility, or prediction intervals | One must look at the confidence interval to determine which effect sizes of scientific or other substantive (e.g., clinical) importance are relatively compatible with the data, given the model.
     vi_tri: Thông cáo ASA, trang 2; Greenland và cộng sự, mục 1 (misinterpretation về ý nghĩa thống kê)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Câu trả lời là khoảng tin cậy." Chữ mới: "khoảng tin cậy là một cách trả lời" (ASA liệt kê khoảng tin cậy cùng các phương pháp thay thế khác).'
+    ghi_chu: "Chữ cũ: \"Câu trả lời là khoảng tin cậy.\" Chữ mới: \"khoảng tin cậy là một cách trả lời\" (ASA liệt kê khoảng tin cậy cùng các phương pháp thay thế khác). Review (Claude Opus 5.5, 30/10/2026): Đúng mức: ASA liệt kê khoảng tin cậy cùng các cách ước lượng khác."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML" ]
     luot_2_ghi_chu: "Greenland: 'estimation of the size of effects and the uncertainty surrounding our estimates will be far more important'."
+    review: dung
   - id: p14
     cau: Khoảng tin cậy 95% gồm các độ lớn hiệu ứng mà phép thử cho p lớn hơn 0,05; nếu khoảng này không chứa số 0, kết quả được gọi là "có ý nghĩa thống kê ở mức 5%", liên hệ với p < 0,05.
     loai: dinh-nghia
@@ -227,10 +236,11 @@ nhan_dinh:
     trich: The effect size whose test produced P = 1 is the size most compatible with the data (in the sense of predicting what was in fact observed) if all the other assumptions used in the test (the statistical model) were correct, and provides a point estimate of the effect under those assumptions.
     vi_tri: Greenland và cộng sự, mục "Moving from tests to estimates"
     ket_qua: dung
-    ghi_chu: Số liệu 20 phút, 5–35 phút là ví dụ giả định (gia-dinh); ước lượng điểm là giá trị tương thích nhất với dữ liệu.
+    ghi_chu: "Số liệu 20 phút, 5–35 phút là ví dụ giả định (gia-dinh); ước lượng điểm là giá trị tương thích nhất với dữ liệu. Review (Claude Opus 5.5, 30/10/2026): Ví dụ cho trung bình 20 phút và khoảng 5–35 đối xứng quanh nó, nên \"ước lượng tốt nhất: thêm 20 phút\" đúng; lưu ý của lượt 2 (khoảng bất đối xứng) không áp vào ví dụ này."
     luot_2: dung
     luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML" ]
     luot_2_ghi_chu: Điểm giữa là ước lượng điểm khi khoảng đối xứng (trường hợp thường gặp, như ví dụ); khoảng bất đối xứng thì không hẳn.
+    review: dung
   - id: p16
     cau: Các giá trị trong khoảng từ 5 đến 35 phút tương thích với dữ liệu hơn các giá trị nằm ngoài khoảng, với điều kiện mô hình thống kê đúng.
     loai: phat-hien
@@ -239,9 +249,10 @@ nhan_dinh:
     trich: a range of sizes ... that would be considered more compatible with the data (in the sense of the observations being closer to what the model predicted) than sizes outside the range—again, if the statistical model were correct.
     vi_tri: Greenland và cộng sự, mục "Moving from tests to estimates"
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Khoảng từ 5 đến 35 phút là vùng ''hợp lý'' cho hiệu ứng thật — các giá trị nằm trong khoảng này đều tương thích khá tốt với dữ liệu." Lý do: nguồn nói tương thích hơn giá trị ngoài khoảng, có điều kiện mô hình đúng; không nói "hợp lý cho hiệu ứng thật" hay "khá tốt".'
+    ghi_chu: "Chữ cũ: \"Khoảng từ 5 đến 35 phút là vùng 'hợp lý' cho hiệu ứng thật — các giá trị nằm trong khoảng này đều tương thích khá tốt với dữ liệu.\" Lý do: nguồn nói tương thích hơn giá trị ngoài khoảng, có điều kiện mô hình đúng; không nói \"hợp lý cho hiệu ứng thật\" hay \"khá tốt\". Review (Claude Opus 5.5, 30/10/2026): Khớp Greenland 2016."
     luot_2: dung
     luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML" ]
+    review: dung
   - id: p17
     cau: 'Khoảng tin cậy cho thấy những độ lớn của hiệu ứng tương thích với dữ liệu, kể cả hướng của hiệu ứng; p-value không đo độ lớn hay tầm quan trọng của kết quả: hai nghiên cứu cùng p = 0,03 có thể ẩn sau một hiệu ứng lớn hoặc một hiệu ứng nhỏ không đáng kể.'
     loai: phat-hien
@@ -251,10 +262,11 @@ nhan_dinh:
     trich: A p-value, or statistical significance, does not measure the size of an effect or the importance of a result. | Especially when a study is large, very minor effects or small assumption violations can lead to statistically significant tests of the null hypothesis.
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc, nguyên tắc 5; Greenland và cộng sự, mục 1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "cho thấy cả hướng, độ lớn và độ chắc chắn của hiệu ứng. Trong khi đó p-value chỉ cho một phán quyết ''có/không'' khô khan". Lý do: "độ chắc chắn" bỏ (khoảng tin cậy không cho xác suất rằng hiệu ứng nằm trong khoảng; Greenland nêu độ phủ là tính chất của dãy khoảng); nói thẳng điều ASA nguyên tắc 5 nói. Ý "hai nghiên cứu cùng p = 0,03 có thể ẩn sau hiệu ứng lớn hay nhỏ" suy từ nguyên tắc 5 và nhận xét về mẫu lớn.'
+    ghi_chu: "Chữ cũ: \"cho thấy cả hướng, độ lớn và độ chắc chắn của hiệu ứng. Trong khi đó p-value chỉ cho một phán quyết 'có/không' khô khan\". Lý do: \"độ chắc chắn\" bỏ (khoảng tin cậy không cho xác suất rằng hiệu ứng nằm trong khoảng; Greenland nêu độ phủ là tính chất của dãy khoảng); nói thẳng điều ASA nguyên tắc 5 nói. Ý \"hai nghiên cứu cùng p = 0,03 có thể ẩn sau hiệu ứng lớn hay nhỏ\" suy từ nguyên tắc 5 và nhận xét về mẫu lớn. Review (Claude Opus 5.5, 30/10/2026): Khớp nguyên tắc 5 và Greenland."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML" ]
     luot_2_ghi_chu: "Nguyên tắc 5; Greenland: CI cho thấy 'the full range of effect sizes compatible with the data'."
+    review: dung
   - id: p18
     cau: 0,05 là một quy ước, không phải chân lý toán học.
     loai: phat-hien
@@ -274,10 +286,11 @@ nhan_dinh:
     trich: The value for which P =.05, or 1 in 20, is 1.96 or nearly 2 ; it is convenient to take this point as a limit in judging whether a deviation is to be considered significant or not.
     vi_tri: Fisher 1925, Statistical Methods for Research Workers, tr. 47
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "một quy ước có từ những năm 1920, do nhà thống kê Ronald Fisher đề xuất như một ngưỡng tiện lợi, rồi dần thành ''luật bất thành văn''". Lý do: gắn với đoạn cụ thể trong sách 1925; "đề xuất" thành "nêu" (nguồn không nói Fisher là người đầu tiên hay duy nhất).'
+    ghi_chu: "Chữ cũ: \"một quy ước có từ những năm 1920, do nhà thống kê Ronald Fisher đề xuất như một ngưỡng tiện lợi, rồi dần thành 'luật bất thành văn'\". Lý do: gắn với đoạn cụ thể trong sách 1925; \"đề xuất\" thành \"nêu\" (nguồn không nói Fisher là người đầu tiên hay duy nhất). Review (Claude Opus 5.5, 30/10/2026): Khớp Fisher 1925, chương 3 (psychclassics)."
     luot_2: dung
     luot_2_nguon: [ "https://psychclassics.yorku.ca/Fisher/Methods/chap3.htm" ]
     luot_2_ghi_chu: Fisher, Statistical Methods for Research Workers (1925), chương 3, tr. 47 (bản psychclassics).
+    review: dung
   - id: p20
     cau: Theo Jessica Utts, chủ tịch ASA năm 2016, ở một số lĩnh vực p-value đã trở thành "người gác cổng" quyết định công trình có được công bố hay không.
     loai: phat-hien
@@ -286,10 +299,11 @@ nhan_dinh:
     trich: Over time it appears the p-value has become a gatekeeper for whether work is publishable, at least in some fields
     vi_tri: Thông cáo ASA, lời Utts, trang 1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "rồi dần thành ''luật bất thành văn'': p < 0,05 thì được công bố, p > 0,05 thì khó công bố." Chữ mới giới hạn "ở một số lĩnh vực" và nói là nhận xét của Utts, không phải sự thật chung.'
+    ghi_chu: "Chữ cũ: \"rồi dần thành 'luật bất thành văn': p < 0,05 thì được công bố, p > 0,05 thì khó công bố.\" Chữ mới giới hạn \"ở một số lĩnh vực\" và nói là nhận xét của Utts, không phải sự thật chung. Review (Claude Opus 5.5, 30/10/2026): Khớp lời Utts trong thông cáo."
     luot_2: dung
     luot_2_nguon: [ "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
     luot_2_ghi_chu: Jessica Utts, ASA president, thông cáo 7/3/2016.
+    review: dung
   - id: p21
     cau: Theo Utts, thiên lệch biên tập này dẫn tới "ngăn kéo hồ sơ" (nghiên cứu có kết quả có ý nghĩa thống kê dễ được đăng hơn nhiều) và tới p-hacking.
     loai: phat-hien
@@ -298,9 +312,10 @@ nhan_dinh:
     trich: This apparent editorial bias leads to the 'file-drawer effect,' in which research with statistically significant outcomes are much more likely to get published | It also leads to practices called by such names as 'p-hacking' and 'data dredging'
     vi_tri: Thông cáo ASA, lời Utts, trang 1
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Hệ quả là cả một hệ thống khoa học bắt đầu ''săn'' con số 0,05 — và đó là cửa ngõ của p-hacking." Lý do: ý này là lời của Utts ("apparent editorial bias leads to ..."), không phải khẳng định lịch sử về "cả hệ thống"; đổi thành lời dẫn của Utts.'
+    ghi_chu: "Chữ cũ: \"Hệ quả là cả một hệ thống khoa học bắt đầu 'săn' con số 0,05 — và đó là cửa ngõ của p-hacking.\" Lý do: ý này là lời của Utts (\"apparent editorial bias leads to ...\"), không phải khẳng định lịch sử về \"cả hệ thống\"; đổi thành lời dẫn của Utts. Review (Claude Opus 5.5, 30/10/2026): Khớp lời Utts."
     luot_2: dung
     luot_2_nguon: [ "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
+    review: dung
   - id: p22
     cau: 'ASA nhấn mạnh: kết luận khoa học không nên chỉ dựa vào việc p-value có vượt qua một ngưỡng cụ thể hay không.'
     loai: phat-hien
@@ -321,10 +336,11 @@ nhan_dinh:
     trich: the P value can be viewed as a continuous measure of the compatibility between the data and the entire model used to compute it, ranging from 0 for complete incompatibility to 1 for perfect compatibility | Too often, however, the P value is degraded into a dichotomy
     vi_tri: Greenland và cộng sự, mục "Statistical significance"
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "... thật vô lý nếu ranh giới mong manh ấy quyết định số phận một nghiên cứu." Chữ mới bỏ "thật vô lý" (đánh giá). Hai giá trị 0,049 và 0,051 là ví dụ minh họa; suy luận từ việc p-value là thước đo liên tục (Greenland) và nguyên tắc 3 của ASA.'
+    ghi_chu: "Chữ cũ: \"... thật vô lý nếu ranh giới mong manh ấy quyết định số phận một nghiên cứu.\" Chữ mới bỏ \"thật vô lý\" (đánh giá). Hai giá trị 0,049 và 0,051 là ví dụ minh họa; suy luận từ việc p-value là thước đo liên tục (Greenland) và nguyên tắc 3 của ASA. Review (Claude Opus 5.5, 30/10/2026): Suy luận đúng từ Greenland (thước đo liên tục) và nguyên tắc 3."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108" ]
     luot_2_ghi_chu: Nguyên tắc 3; con số 0,049/0,051 là ví dụ minh họa của trang.
+    review: dung
   - id: p24
     cau: p-hacking là việc thử đi thử lại nhiều cách phân tích cho đến khi p-value "rơi" xuống dưới 0,05, rồi chỉ báo cáo cách phân tích "thành công".
     loai: dinh-nghia
@@ -346,10 +362,11 @@ nhan_dinh:
     trich: 2. Deciding whether to collect more data after looking to see whether the results were significant
     vi_tri: John và cộng sự 2012, Bảng 1, mục 2
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Thu thập thêm người tham gia cho đến khi kết quả ''đẹp'', rồi dừng lại đúng lúc." Lý do: sát câu của khảo sát ("deciding whether to collect more data after looking to see whether the results were significant", mục 2; mục 4 là dừng sớm vì đã thấy kết quả mong muốn).'
+    ghi_chu: "Chữ cũ: \"Thu thập thêm người tham gia cho đến khi kết quả 'đẹp', rồi dừng lại đúng lúc.\" Lý do: sát câu của khảo sát (\"deciding whether to collect more data after looking to see whether the results were significant\", mục 2; mục 4 là dừng sớm vì đã thấy kết quả mong muốn). Review (Claude Opus 5.5, 30/10/2026): John 2012, bảng 1, mục 2."
     luot_2: dung
     luot_2_nguon: [ "https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf", "http://web.archive.org/web/20250804093838/https://journals.sagepub.com/doi/pdf/10.1177/0956797611417632" ]
     luot_2_ghi_chu: John và cs. 2012, Bảng 1, mục 2; Simmons 2011 mô phỏng tình huống B (thêm 10 quan sát mỗi ô).
+    review: dung
   - id: p26
     cau: Một cách p-hacking là đo nhiều biến kết quả (ví dụ 10 biến), chỉ báo cáo vài biến có p < 0,05 và bỏ qua các biến còn lại.
     loai: phat-hien
@@ -358,10 +375,11 @@ nhan_dinh:
     trich: 1. In a paper, failing to report all of a study's dependent measures
     vi_tri: John và cộng sự 2012, Bảng 1, mục 1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Đo 10 biến kết quả, chỉ báo cáo 2 biến có p < 0,05, lặng lẽ bỏ 8 biến còn lại." Lý do: các số 10, 2, 8 là ví dụ minh họa (gia-dinh), nay ghi "ví dụ 10 biến"; nguồn nói về việc không báo cáo mọi biến kết quả.'
+    ghi_chu: "Chữ cũ: \"Đo 10 biến kết quả, chỉ báo cáo 2 biến có p < 0,05, lặng lẽ bỏ 8 biến còn lại.\" Lý do: các số 10, 2, 8 là ví dụ minh họa (gia-dinh), nay ghi \"ví dụ 10 biến\"; nguồn nói về việc không báo cáo mọi biến kết quả. Review (Claude Opus 5.5, 30/10/2026): John 2012, mục 1; con số 10 là ví dụ."
     luot_2: dung
     luot_2_nguon: [ "https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf", "http://web.archive.org/web/20250804093838/https://journals.sagepub.com/doi/pdf/10.1177/0956797611417632" ]
     luot_2_ghi_chu: John và cs. 2012, mục 1; Simmons 2011 tình huống A. Con số 10 biến là ví dụ của trang.
+    review: dung
   - id: p27
     cau: Một cách p-hacking là quyết định có loại một số điểm dữ liệu hay không sau khi xem việc loại ấy làm kết quả đổi thế nào.
     loai: phat-hien
@@ -370,10 +388,11 @@ nhan_dinh:
     trich: 7. Deciding whether to exclude data after looking at the impact of doing so on the results
     vi_tri: John và cộng sự 2012, Bảng 1, mục 7
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Loại bỏ vài điểm dữ liệu ''ngoại lệ'' cho đến khi đạt ngưỡng." Chữ mới sát câu của khảo sát.'
+    ghi_chu: "Chữ cũ: \"Loại bỏ vài điểm dữ liệu 'ngoại lệ' cho đến khi đạt ngưỡng.\" Chữ mới sát câu của khảo sát. Review (Claude Opus 5.5, 30/10/2026): John 2012, mục 7."
     luot_2: dung
     luot_2_nguon: [ "https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf" ]
     luot_2_ghi_chu: John và cs. 2012, mục 7.
+    review: dung
   - id: p28
     cau: Một cách p-hacking là chỉ báo cáo những nghiên cứu hay điều kiện cho kết quả "thành công".
     loai: phat-hien
@@ -382,10 +401,11 @@ nhan_dinh:
     trich: 3. In a paper, failing to report all of a study's conditions | 6. In a paper, selectively reporting studies that "worked"
     vi_tri: John và cộng sự 2012, Bảng 1, mục 3 và 6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Thử nhiều cách chia nhóm, nhiều mô hình, chỉ giữ lại cái cho kết quả tốt nhất." Lý do: các nguồn đã mở không có mục "chia nhóm" hay "nhiều mô hình"; thay bằng hai thực hành có trong khảo sát (không báo cáo mọi điều kiện, chỉ báo cáo nghiên cứu "thành công").'
+    ghi_chu: "Chữ cũ: \"Thử nhiều cách chia nhóm, nhiều mô hình, chỉ giữ lại cái cho kết quả tốt nhất.\" Lý do: các nguồn đã mở không có mục \"chia nhóm\" hay \"nhiều mô hình\"; thay bằng hai thực hành có trong khảo sát (không báo cáo mọi điều kiện, chỉ báo cáo nghiên cứu \"thành công\"). Review (Claude Opus 5.5, 30/10/2026): John 2012, mục 3 và 6."
     luot_2: dung
     luot_2_nguon: [ "https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf", "http://web.archive.org/web/20250804093838/https://journals.sagepub.com/doi/pdf/10.1177/0956797611417632" ]
     luot_2_ghi_chu: "John và cs. 2012, mục 6 (và mục 3: không báo cáo mọi điều kiện); Simmons tình huống D."
+    review: dung
   - id: p29
     cau: Những cách làm này có thể làm tăng khả năng tìm ra bằng chứng "ủng hộ" một giả thuyết sai.
     loai: phat-hien
@@ -394,10 +414,11 @@ nhan_dinh:
     trich: Questionable research practices (QRPs), such as excluding data points on the basis of post hoc criteria, can spuriously increase the likelihood of finding evidence in support of a hypothesis.
     vi_tri: John và cộng sự 2012, tr. 524
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Mỗi lần thử thêm là một lần ''tung xúc xắc'' nữa. Thử đủ nhiều, kiểu gì cũng có lần ra kết quả ''có ý nghĩa'' — dù thực tế chẳng có hiệu ứng gì." Lý do: "kiểu gì cũng" mạnh hơn nguồn ("can spuriously increase the likelihood"); chưa mở được bài mô phỏng gốc của Simmons, Nelson và Simonsohn (2011), chỉ đọc mô tả của John và cộng sự.'
+    ghi_chu: "Chữ cũ: \"Mỗi lần thử thêm là một lần 'tung xúc xắc' nữa. Thử đủ nhiều, kiểu gì cũng có lần ra kết quả 'có ý nghĩa' — dù thực tế chẳng có hiệu ứng gì.\" Lý do: \"kiểu gì cũng\" mạnh hơn nguồn (\"can spuriously increase the likelihood\"); chưa mở được bài mô phỏng gốc của Simmons, Nelson và Simonsohn (2011), chỉ đọc mô tả của John và cộng sự. Review (Claude Opus 5.5, 30/10/2026): Đúng mức trích của John 2012."
     luot_2: dung
     luot_2_nguon: [ "https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf", "http://web.archive.org/web/20250804093838/https://journals.sagepub.com/doi/pdf/10.1177/0956797611417632" ]
     luot_2_ghi_chu: "Simmons 2011: kết hợp bốn bậc tự do cho tỉ lệ dương tính giả 60,7% ở p < .05."
+    review: dung
   - id: p30
     cau: Kết quả có được theo cách ấy ít có khả năng tái lập hơn khi người khác làm lại.
     loai: phat-hien
@@ -406,10 +427,11 @@ nhan_dinh:
     trich: original findings that result from selective reporting, p-hacking, or other behaviors that leverage random chance to amplify effect sizes, obtain statistical significance, or specify overfitting models should be less likely to replicate than others
     vi_tri: Nosek và cộng sự 2022, tr. 728
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Các kết quả p-hacking trông giống hệt kết quả thật trên giấy, nhưng không tái lập được khi người khác làm lại." Lý do: nguồn nói "should be less likely to replicate" (kỳ vọng), không nói "không tái lập được"; bỏ "giống hệt ... trên giấy" (không nguồn).'
+    ghi_chu: "Chữ cũ: \"Các kết quả p-hacking trông giống hệt kết quả thật trên giấy, nhưng không tái lập được khi người khác làm lại.\" Lý do: nguồn nói \"should be less likely to replicate\" (kỳ vọng), không nói \"không tái lập được\"; bỏ \"giống hệt ... trên giấy\" (không nguồn). Review (Claude Opus 5.5, 30/10/2026): Đúng mức Nosek 2022 (\"should be less likely\")."
     luot_2: dung
     luot_2_nguon: [ "https://repository.tilburguniversity.edu/bitstreams/64a63169-7bdd-47b9-983c-1f96eeed45ee/download" ]
     luot_2_ghi_chu: Nosek và cs. 2022 nêu như một kỳ vọng có cơ sở (kèm trích dẫn), không phải con số đo trực tiếp; câu viết 'ít có khả năng' là đúng mức.
+    review: dung
   - id: p31
     cau: 'Nguyên tắc thứ tư của ASA: suy luận đúng đòi hỏi báo cáo đầy đủ và minh bạch.'
     loai: phat-hien
@@ -418,9 +440,10 @@ nhan_dinh:
     trich: Proper inference requires full reporting and transparency.
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc, nguyên tắc 4
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "... báo cáo đầy đủ và minh bạch — đã thử bao nhiêu cách, đã đo bao nhiêu biến, phải nói hết ra." Bỏ phần sau dấu gạch ngang: thông cáo chỉ có câu nguyên tắc, chưa mở được đoạn giải thích của tuyên bố đầy đủ (bị chặn bot).'
+    ghi_chu: "Chữ cũ: \"... báo cáo đầy đủ và minh bạch — đã thử bao nhiêu cách, đã đo bao nhiêu biến, phải nói hết ra.\" Bỏ phần sau dấu gạch ngang: thông cáo chỉ có câu nguyên tắc, chưa mở được đoạn giải thích của tuyên bố đầy đủ (bị chặn bot). Review (Claude Opus 5.5, 30/10/2026): Nguyên tắc 4 của ASA, nguyên văn."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
+    review: dung
   - id: p32
     cau: 'Hãy hỏi về độ lớn, không chỉ hỏi có/không: hiệu ứng là bao nhiêu, khoảng tin cậy rộng hay hẹp; một hiệu ứng nhỏ vẫn có thể cho p < 0,05 nếu mẫu đủ lớn.'
     loai: loi-khuyen
@@ -484,9 +507,10 @@ nhan_dinh:
     trich: One must look at the confidence interval to determine which effect sizes of scientific or other substantive (e.g., clinical) importance are relatively compatible with the data, given the model.
     vi_tri: Greenland và cộng sự, mục 1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Tốt — cho biết độ lớn và độ chắc chắn của hiệu ứng." Chữ mới bỏ "độ chắc chắn" (xem p17). Ví dụ thuốc là giả định (gia-dinh).'
+    ghi_chu: "Chữ cũ: \"Tốt — cho biết độ lớn và độ chắc chắn của hiệu ứng.\" Chữ mới bỏ \"độ chắc chắn\" (xem p17). Ví dụ thuốc là giả định (gia-dinh). Review (Claude Opus 5.5, 30/10/2026): Bỏ \"độ chắc chắn\" là đúng (Greenland)."
     luot_2: dung
     luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML", "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108" ]
+    review: dung
   - id: p38
     cau: 'Nếu nhóm nghiên cứu đã thử nhiều cách phân tích và chọn cách cho kết quả tốt nhất, đó là dấu hiệu p-hacking: nên dè dặt với kết quả.'
     loai: loi-khuyen
@@ -496,9 +520,10 @@ nhan_dinh:
     trich: original findings that result from selective reporting, p-hacking, or other behaviors ... should be less likely to replicate than others
     vi_tri: Nosek và cộng sự 2022, tr. 728
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Dấu hiệu p-hacking — kết quả khó tin được." Chữ mới: "nên dè dặt". Lý do: nguồn nói ít có khả năng tái lập hơn, không nói "khó tin được".'
+    ghi_chu: "Chữ cũ: \"Dấu hiệu p-hacking — kết quả khó tin được.\" Chữ mới: \"nên dè dặt\". Lý do: nguồn nói ít có khả năng tái lập hơn, không nói \"khó tin được\". Review (Claude Opus 5.5, 30/10/2026): Đúng mức."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108" ]
+    review: dung
   - id: p39
     cau: p-value không phải xác suất giả thuyết đúng, và không đo độ lớn hay tầm quan trọng của hiệu ứng.
     loai: nhan
@@ -508,14 +533,16 @@ nhan_dinh:
     trich: P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone. | A p-value, or statistical significance, does not measure the size of an effect or the importance of a result.
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc, nguyên tắc 2 và 5
     ket_qua: dung
+    ghi_chu: "Review (Claude Opus 5.5, 30/10/2026): Nhãn hợp (xem ly_do). Câu nhãn khớp nguyên tắc 2 và 5 của ASA."
     nhan: vung-chac
     co_so:
       - 'Tuyên bố của ASA (2016), nguyên tắc 2 và 5: văn bản chính thức của hiệp hội thống kê lớn nhất'
       - 'Greenland và cộng sự (2016), "Common misinterpretations of single P values": hai hiểu lầm tương ứng ("No!")'
-    ly_do: 'Là định nghĩa và nguyên tắc của thống kê, không phải phát hiện thực nghiệm; hai nguồn độc lập (ASA, 24 tác giả của hướng dẫn Greenland) cùng nêu, giáo trình mở nêu định nghĩa tương tự; không có phản ví dụ. Thước đo mục 4 viết cho phát hiện thực nghiệm; chỗ cho review: trang do-lon-hieu-ung dùng cách tương tự.'
+    ly_do: "Là định nghĩa và nguyên tắc của thống kê, không phải phát hiện thực nghiệm; hai nguồn độc lập (ASA, 24 tác giả của hướng dẫn Greenland) cùng nêu, giáo trình mở nêu định nghĩa tương tự; không có phản ví dụ. Thước đo mục 4 viết cho phát hiện thực nghiệm; chỗ cho review: trang do-lon-hieu-ung dùng cách tương tự. Review (Claude Opus 5.5, 30/10/2026): Giữ Vững chắc. Đây là nguyên tắc thống kê, nên xét theo mức đồng thuận của tuyên bố chính thức, hướng dẫn và giáo trình thay cho phân tích tổng hợp: ASA 2016 nêu đây là các nguyên tắc được đồng thuận rộng trong cộng đồng thống kê, Greenland và cộng sự 2016 (hướng dẫn có bình duyệt) xếp hai hiểu lầm này vào danh sách \"No!\"; không nguồn nào phản bác."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4877414/fullTextXML" ]
     luot_2_ghi_chu: "Nhãn cho nguyên tắc phương pháp: đây là điều suy ra từ định nghĩa, được tuyên bố chính thức của ASA nêu là 'widely agreed upon principles ... according to widespread consensus in the statistical community' và Greenland 2016 nhắc lại. Đồng thuận cao nhất có thể; nhãn Vững chắc là đúng mức."
+    review: dung
   - id: p40
     cau: Tuyên bố của ASA (2016) và bài hướng dẫn của Greenland và cộng sự (2016) cùng nêu điều này.
     loai: phat-hien
@@ -537,14 +564,16 @@ nhan_dinh:
     trich: Questionable research practices (QRPs), such as excluding data points on the basis of post hoc criteria, can spuriously increase the likelihood of finding evidence in support of a hypothesis. | original findings that result from selective reporting, p-hacking, or other behaviors ... should be less likely to replicate than others
     vi_tri: John và cộng sự 2012, tr. 524; Nosek và cộng sự 2022, tr. 728
     ket_qua: dung
+    ghi_chu: "Review (Claude Opus 5.5, 30/10/2026): Nhãn hợp (xem ly_do). Thân khung đã sửa theo p43."
     nhan: kha-vung
     co_so:
       - 'John, Loewenstein & Prelec 2012: khảo sát hơn 2.000 nhà tâm lý học về mức phổ biến; mô tả mô phỏng của Simmons, Nelson & Simonsohn 2011 (chỉ đọc qua mô tả)'
       - 'Nosek và cộng sự 2022 (tổng quan Annual Review): các thực hành này "should be less likely to replicate"'
-    ly_do: 'Mô phỏng và khảo sát cùng chiều, nhưng mức đóng góp của các thực hành này vào tỉ lệ không tái lập đo được ở các dự án lớn chưa có ước lượng trực tiếp (Open Science Collaboration chỉ gọi là "plausible explanations"); chưa đọc bài mô phỏng gốc. Vì thế Khá vững (mục 4: nhiều bằng chứng cùng chiều nhưng còn giới hạn), chưa Vững chắc.'
+    ly_do: "Mô phỏng và khảo sát cùng chiều, nhưng mức đóng góp của các thực hành này vào tỉ lệ không tái lập đo được ở các dự án lớn chưa có ước lượng trực tiếp (Open Science Collaboration chỉ gọi là \"plausible explanations\"); chưa đọc bài mô phỏng gốc. Vì thế Khá vững (mục 4: nhiều bằng chứng cùng chiều nhưng còn giới hạn), chưa Vững chắc. Review (Claude Opus 5.5, 30/10/2026): Giữ Khá vững. Vế \"tăng kết quả có ý nghĩa sai\" gần như là hệ quả toán học (mô phỏng của Simmons 2011, John 2012 kể lại), nhưng câu nhãn gộp cả vế \"làm kết quả khó tái lập hơn\", mà bằng chứng về vế này là lập luận và tương quan (Nosek 2022: \"should be less likely to replicate\"). Nhãn theo vế yếu hơn."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108", "http://web.archive.org/web/20250804093838/https://journals.sagepub.com/doi/pdf/10.1177/0956797611417632", "https://repository.tilburguniversity.edu/bitstreams/64a63169-7bdd-47b9-983c-1f96eeed45ee/download" ]
     luot_2_ghi_chu: "Nhãn: phần 'tăng kết quả có ý nghĩa sai' có mô phỏng (Simmons 2011) và tuyên bố ASA, đồng thuận cao. Phần 'khó tái lập hơn' dựa trên lập luận và bằng chứng tương quan (Nosek 2022: 'should be less likely to replicate'); nếu khung là Vững chắc thì nên hiểu là vững cho cơ chế, không cho mức đóng góp (đúng như p43 nói)."
+    review: dung
   - id: p42
     cau: Khảo sát nhà tâm lý học cho thấy các cách làm này khá phổ biến.
     loai: so-lieu
@@ -558,18 +587,19 @@ nhan_dinh:
     luot_2_nguon: [ "https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf", "https://repository.tilburguniversity.edu/bitstreams/64a63169-7bdd-47b9-983c-1f96eeed45ee/download" ]
     luot_2_ghi_chu: "John và cs. 2012: 2.155 người trả lời (tỉ lệ phản hồi 36%), nhóm đối chứng. Nosek 2022: 'Most available survey data suggest that psychologists ... acknowledge engaging in questionable research practices'. Lưu ý: có phê bình rằng cách hỏi làm tỉ lệ cao hơn thật; 'khá phổ biến' là cách nói vừa phải."
   - id: p43
-    cau: Mô phỏng và khảo sát cho thấy các cách làm này làm tăng dương tính giả; mức đóng góp của chúng vào tỉ lệ không tái lập quan sát được ở các dự án tái lập lớn chưa được đo trực tiếp.
+    cau: "Mô phỏng cho thấy các cách làm này làm tăng dương tính giả, và khảo sát cho thấy chúng khá phổ biến; mức đóng góp của chúng vào tỉ lệ không tái lập quan sát được ở các dự án tái lập lớn chưa được đo trực tiếp."
     loai: phat-hien
     nguon:
       - john2012
       - nosek2022
     trich: Just how dramatic these effects can be was demonstrated by Simmons, Nelson, and Simonsohn (2011) in a series of experiments and simulations that showed how greatly QRPs increase the likelihood of finding support for a false hypothesis.
     vi_tri: John và cộng sự 2012, tr. 524; Nosek và cộng sự 2022, tr. 728
-    ket_qua: dung
-    ghi_chu: 'Nửa sau là giới hạn của bằng chứng: các nguồn đọc được chỉ nêu mối liên hệ như kỳ vọng ("should be less likely to replicate"), không báo cáo ước lượng riêng.'
+    ket_qua: da-sua
+    ghi_chu: "Nửa sau là giới hạn của bằng chứng: các nguồn đọc được chỉ nêu mối liên hệ như kỳ vọng (\"should be less likely to replicate\"), không báo cáo ước lượng riêng. Review (Claude Opus 5.5, 30/10/2026): Lượt 2 đúng: John và cộng sự 2012 là khảo sát mức phổ biến, không đo dương tính giả; dương tính giả tăng là kết quả mô phỏng của Simmons, Nelson & Simonsohn 2011 (John 2012 kể lại: \"experiments and simulations that showed how greatly QRPs increase the likelihood of finding support for a false hypothesis\"). Chữ cũ: \"Mô phỏng và khảo sát cho thấy các cách làm này làm tăng dương tính giả và khá phổ biến.\" Chữ mới: \"Mô phỏng cho thấy các cách làm này làm tăng dương tính giả, và khảo sát cho thấy chúng khá phổ biến.\""
     luot_2: qua-manh
     luot_2_nguon: [ "http://web.archive.org/web/20250804093838/https://journals.sagepub.com/doi/pdf/10.1177/0956797611417632", "https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf", "https://discovery.dundee.ac.uk/ws/files/7385883/RPP_SCIENCE_2015.pdf" ]
     luot_2_ghi_chu: "câu đúng: Mô phỏng cho thấy các cách làm này làm tăng dương tính giả, và khảo sát cho thấy chúng khá phổ biến; mức đóng góp của chúng vào tỉ lệ không tái lập quan sát được ở các dự án tái lập lớn chưa được đo trực tiếp.; Mô phỏng (Simmons 2011) cho thấy tăng dương tính giả; khảo sát (John 2012) chỉ đo mức phổ biến, không cho thấy dương tính giả tăng. Câu gán cho khảo sát điều nó không đo. Vế sau (chưa đo trực tiếp mức đóng góp) đúng: OSC chỉ gọi các thiên lệch là 'plausible explanations'."
+    review: sai
   - id: p44
     cau: 'B đúng: p-value là xác suất của dữ liệu (cực đoan như quan sát được, hoặc hơn), với giả định giả thuyết "không có tác dụng" là đúng.'
     loai: phat-hien
@@ -603,9 +633,10 @@ nhan_dinh:
     trich: A p-value, or statistical significance, does not measure the size of an effect or the importance of a result. | Especially when a study is large, very minor effects or small assumption violations can lead to statistically significant tests of the null hypothesis.
     vi_tri: Thông cáo ASA, danh sách sáu nguyên tắc, nguyên tắc 5; Greenland và cộng sự, mục 1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "một hiệu ứng nhỏ xíu vẫn có thể cho p < 0,05 nếu mẫu đủ lớn" nay "rất nhỏ"; đổi cách nối câu, không đổi nghĩa.'
+    ghi_chu: "Chữ cũ: \"một hiệu ứng nhỏ xíu vẫn có thể cho p < 0,05 nếu mẫu đủ lớn\" nay \"rất nhỏ\"; đổi cách nối câu, không đổi nghĩa. Review (Claude Opus 5.5, 30/10/2026): Khớp nguyên tắc 5 và Greenland."
     luot_2: dung
     luot_2_nguon: [ "http://web.archive.org/web/20250619034900/https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108" ]
+    review: dung
   - id: q1
     cau: 'p-value hay ý nghĩa thống kê không đo độ lớn của hiệu ứng hay tầm quan trọng của kết quả (nguyên tắc 5); p = 0,001 vì thế không cho biết hiệu ứng lớn hay nhỏ. Nguyên tắc 2: p-value không phải xác suất giả thuyết đúng, nên p = 0,001 không có nghĩa "xác suất giả thuyết đúng là 99,9%".'
     loai: phat-hien
@@ -649,7 +680,8 @@ nhan_dinh:
     cau: Liên kết "Ai được hỏi thì kết quả mới đáng tin?" trong đáp án C trỏ tới trang bang-chung/mau-va-chon-mau.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: src/data/trang.yml có id bang-chung/mau-va-chon-mau; trang có trong src/content/docs/bang-chung/.'
+    ghi_chu: "Đã kiểm: src/data/trang.yml có id bang-chung/mau-va-chon-mau; trang có trong src/content/docs/bang-chung/. Review (Claude Opus 5.5, 30/10/2026): Đã kiểm: p-value.md, đáp án C của Thử một lần, link /psyche/bang-chung/mau-va-chon-mau/ với chữ \"Ai được hỏi thì kết quả mới đáng tin?\" đúng title của trang ấy; trang.yml có bản ghi bang-chung/mau-va-chon-mau."
+    review: dung
 doi_chu:
   - cu: '"năm 2016, ASA phải ra một tuyên bố chính thức chỉ để nói: mọi người đang hiểu sai p-value"; "Đây là lần đầu tiên trong lịch sử hiệp hội ... một dấu hiệu cho thấy vấn đề đã nghiêm trọng đến mức nào"; "mà ý chính có thể tóm gọn"'
     moi: '"ra một tuyên bố chính thức vì cách dùng và cách hiểu p-value hay bị sai lệch"; "Theo thông cáo của ASA, đây là lần đầu Ban Giám đốc ASA, đại diện cho cộng đồng thống kê, ra một tuyên bố về những vấn đề này"; "nhiều nguyên tắc trong đó nhằm sửa các hiểu lầm và cách dùng sai p-value"'
@@ -690,3 +722,12 @@ doi_chu:
   - cu: Mục Nguồn chỉ có Wasserstein & Lazar (2016)
     moi: Thêm thông cáo ASA, Fisher (1925), Greenland và cộng sự (2016), John và cộng sự (2012), Nosek và cộng sự (2022), Spielman và cộng sự (2020, OpenStax)
     ly_do: Các nguồn dùng trong chữ mới.
+  - cu: '"Nó có nghĩa là: *nếu* đồng xu công bằng, thì kết quả 9/10 ngửa là chuyện hiếm (1,1%)."'
+    moi: '"... thì được từ 9 lần ngửa trở lên là chuyện hiếm (1,1%)."'
+    ly_do: Review, theo ghi chú lượt 2 (p9).
+  - cu: '"nếu thuốc thực ra vô tác dụng, thì chênh lệch quan sát được là chuyện hiếm ở mức 3%."'
+    moi: '"nếu thuốc thực ra vô tác dụng (và các giả định của phép tính đều đúng), thì chênh lệch lớn như thế hoặc lớn hơn chỉ xảy ra với xác suất 3%."'
+    ly_do: Review, theo ghi chú lượt 2 (p12).
+  - cu: 'Khung Khá vững: "Mô phỏng và khảo sát cho thấy các cách làm này làm tăng dương tính giả và khá phổ biến."'
+    moi: '"Mô phỏng cho thấy các cách làm này làm tăng dương tính giả, và khảo sát cho thấy chúng khá phổ biến."'
+    ly_do: Review, theo lượt 2 (p43).

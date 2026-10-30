@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L1 phần 1/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D4-L1)
+      review: Claude Sonnet 5.5 (agent review D4-L1, 30/10/2026)
       kiem_mau: null
 nguon:
   - id: bangdiwala2016
@@ -69,6 +69,10 @@ nguon:
   - id: vohs2021
     ten: 'Vohs và cộng sự (2021), Psychol Sci 32(10), 1566–1581: tóm tắt (Europe PMC, PMC12422598)'
     link: https://doi.org/10.1177/0956797621989733
+    toan_van: false
+  - id: hagger2016
+    ten: 'Hagger và cộng sự (2016), Perspect Psychol Sci 11(4), 546–573: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1177/1745691616652873
     toan_van: false
   - id: pashler2008
     ten: 'Pashler và cộng sự (2008), Psychol Sci Public Interest 9(3), 105–119: tóm tắt (Europe PMC)'
@@ -210,10 +214,11 @@ nhan_dinh:
     trich: expresses the probability that a randomly sampled person from one group will have a higher observed measurement than a randomly sampled person from the other group
     vi_tri: Lakens 2013 (CL)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Ngay cả với hiệu ứng lớn d = 0,8, hai nhóm vẫn chồng lên nhau khoảng 69%." (không nêu điều kiện phân bố chuẩn, cùng độ lệch chuẩn). Chữ mới thêm điều kiện. Con số: h9, h10.'
+    ghi_chu: 'Chữ cũ: "Ngay cả với hiệu ứng lớn d = 0,8, hai nhóm vẫn chồng lên nhau khoảng 69%." (không nêu điều kiện phân bố chuẩn, cùng độ lệch chuẩn). Chữ mới thêm điều kiện. Con số: h9, h10. Review (Claude Sonnet 5.5, 30/10/2026): chữ cuối trên trang khớp với câu mới và với trích; tự tính lại OVL = 2Φ(−d/2): 0,920; 0,803; 0,689 và Φ(d/√2): 0,556; 0,638; 0,714 (Python, 30/10/2026); khớp 92/80/69% và 56/64/71% với điều kiện chuẩn, cùng độ lệch chuẩn. Đây là phép tính, không phải câu nguồn: phần "xác suất vượt trội" có định nghĩa ở Lakens 2013, phần "chồng lấn" là diện tích chung của hai đường cong (chú thích hình nói rõ). dung.'
     luot_2: dung
     luot_2_nguon: [ "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00863/full" ]
     luot_2_ghi_chu: "Tự tính: OVL = 2Φ(−d/2): d=0,2 -> 0,920; d=0,5 -> 0,803; d=0,8 -> 0,689. Xác suất vượt trội Φ(d/√2): 0,556; 0,638; 0,714. 68,9% ≈ 69%, 71,4% ≈ 71%: khớp (giả định chuẩn, cùng độ lệch chuẩn)."
+    review: dung
   - id: h12
     cau: Ngay cả khi một can thiệp có hiệu ứng lớn, vẫn có không ít người ở nhóm đối chứng làm tốt hơn người ở nhóm can thiệp.
     loai: phat-hien
@@ -222,10 +227,11 @@ nhan_dinh:
     trich: expresses the probability that a randomly sampled person from one group will have a higher observed measurement than a randomly sampled person from the other group
     vi_tri: Lakens 2013 (CL)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "vẫn có rất nhiều người ở nhóm đối chứng làm tốt hơn nhiều người ở nhóm can thiệp". Với d = 0,8, khoảng 29% số cặp có người nhóm đối chứng cao hơn (1 − 0,714); "rất nhiều" là cách nói, đổi thành "không ít".'
+    ghi_chu: 'Chữ cũ: "vẫn có rất nhiều người ở nhóm đối chứng làm tốt hơn nhiều người ở nhóm can thiệp". Với d = 0,8, khoảng 29% số cặp có người nhóm đối chứng cao hơn (1 − 0,714); "rất nhiều" là cách nói, đổi thành "không ít". Review (Claude Sonnet 5.5, 30/10/2026): chữ cuối trên trang khớp với câu mới và với trích; với d = 0,8, khoảng 29% số cặp là người nhóm đối chứng cao hơn: "không ít" đúng. dung.'
     luot_2: dung
     luot_2_nguon: [ "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00863/full" ]
     luot_2_ghi_chu: "Với d=0,8, 71,4% cặp nhóm can thiệp cao hơn, nên khoảng 28,6% cặp nhóm đối chứng cao hơn: đúng."
+    review: dung
   - id: h13
     cau: Theo Lakens (2013) kể lại, Cohen coi các mốc 0,2 / 0,5 / 0,8 chỉ nên dùng khi kết quả quá mới để so với các nghiên cứu liên quan.
     loai: lich-su
@@ -234,10 +240,11 @@ nhan_dinh:
     trich: The only reason to use these benchmarks is because findings are extremely novel, and cannot be compared to related findings in the literature (Cohen, 1988).
     vi_tri: Interpreting Cohen's d
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Cohen tự coi các mốc 0,2 / 0,5 / 0,8 chỉ là quy ước khi không có cơ sở nào tốt hơn." Chữ mới bám câu của Lakens; Cohen (1988) gốc chưa mở được.'
+    ghi_chu: 'Chữ cũ: "Cohen tự coi các mốc 0,2 / 0,5 / 0,8 chỉ là quy ước khi không có cơ sở nào tốt hơn." Chữ mới bám câu của Lakens; Cohen (1988) gốc chưa mở được. Review (Claude Sonnet 5.5, 30/10/2026): chữ cuối trên trang khớp với câu mới và với trích; câu ghi "Theo Lakens (2013) kể lại"; Lakens: "The only reason to use these benchmarks is because findings are extremely novel, and cannot be compared to related findings in the literature (Cohen, 1988)". Cohen 1988 (sách) chưa mở được; đã nói rõ là kể lại. dung.'
     luot_2: dung
     luot_2_nguon: [ "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00863/full" ]
     luot_2_ghi_chu: Lakens kể lại Cohen 1988; câu viết 'theo Lakens kể lại' đúng.
+    review: dung
   - id: h14
     cau: Các tổng hợp sau này cho thấy hiệu ứng điển hình trong tâm lý học khá khiêm tốn.
     loai: phat-hien
@@ -248,10 +255,11 @@ nhan_dinh:
     trich: social psychological effects typically yield a value of r equal to .21
     vi_tri: Richard 2003, tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "nhỏ hơn nhiều người nghĩ" (khẳng định về niềm tin của người khác, không nguồn). Chữ mới chỉ nói theo các con số h15–h17.'
+    ghi_chu: 'Chữ cũ: "nhỏ hơn nhiều người nghĩ" (khẳng định về niềm tin của người khác, không nguồn). Chữ mới chỉ nói theo các con số h15–h17. Review (Claude Sonnet 5.5, 30/10/2026): chữ cuối trên trang khớp với câu mới và với trích; câu tóm các số ở h15-h17, đúng. dung.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.7.4.331", "https://doi.org/10.1177/2515245919847202" ]
     luot_2_ghi_chu: Gom Richard 2003, Gignac 2016, Funder & Ozer 2019 cùng chiều.
+    review: dung
   - id: h15
     cau: Gộp 322 phân tích tổng hợp trong tâm lý học xã hội, độ lớn trung bình là r = 0,21.
     loai: so-lieu
@@ -274,10 +282,11 @@ nhan_dinh:
     trich: In 708 meta-analytically derived correlations from 87 meta-analyses … They therefore recommended that individual differences researchers consider correlation values of 0.10, 0.20, and 0.30 to be small, typical (medium), and large, respectively
     vi_tri: Dåderman 2022, chú thích 1 (kể lại Gignac & Szodorai 2016, tr. 75); Weinerová 2022, bảng
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: nhãn "tương đối nhỏ / điển hình / tương đối lớn". Nguồn kể lại viết "small, typical (medium), and large"; chưa đọc bản gốc nên bỏ "tương đối".'
+    ghi_chu: 'Chữ cũ: nhãn "tương đối nhỏ / điển hình / tương đối lớn". Nguồn kể lại viết "small, typical (medium), and large"; chưa đọc bản gốc nên bỏ "tương đối". Review (Claude Sonnet 5.5, 30/10/2026): chữ cuối trên trang khớp với câu mới và với trích; 708 hệ số từ 87 phân tích tổng hợp; Dåderman 2022 và Weinerová 2022 (toàn văn, đọc lại): 0,10; 0,20; 0,30 là small, typical (medium), large; 25/50/75 phân vị 0,11/0,19/0,29. dung.'
     luot_2: dung
     luot_2_nguon: [ "https://forrt.org/curated_resources/effect-size-guidelines-for-individual-di/", "https://doi.org/10.1016/j.paid.2016.06.069" ]
     luot_2_ghi_chu: Chỉ đọc được tóm tắt qua trang tổng hợp (FORRT) và bài trích dẫn; toàn văn Elsevier không mở được. Phân vị 0,11/0,19/0,29.
+    review: dung
   - id: h17
     cau: Dưới 3% số hệ số tương quan đạt 0,50 trở lên.
     loai: so-lieu
@@ -363,11 +372,13 @@ nhan_dinh:
       - fraundorf2023
       - yan2024
       - opitz2024
-    ly_do: 'Có phân tích tổng hợp (Rowland 2014, g = 0,50) và một phân tích tổng hợp thứ hai về lớp học cùng cỡ (Yang và cộng sự 2021, g = 0,50, theo PMC10950551 kể lại); nhiều tổng hợp khác (Adesope 2017) cùng chiều, g khoảng 0,50–0,63 theo PMC11461721. Không có thất bại tái lập lớn đã biết. Còn hạn chế: toàn văn Rowland chưa mở được, nhãn này cần khớp trang nhà kham-pha/tri-nho/duong-cong-quen khi D4–D5 làm trang ấy.'
+    ly_do: 'Có phân tích tổng hợp (Rowland 2014, g = 0,50) và một phân tích tổng hợp thứ hai về lớp học cùng cỡ (Yang và cộng sự 2021, g = 0,50, theo PMC10950551 kể lại); nhiều tổng hợp khác (Adesope 2017) cùng chiều, g khoảng 0,50–0,63 theo PMC11461721. Không có thất bại tái lập lớn đã biết. Còn hạn chế: toàn văn Rowland chưa mở được, nhãn này cần khớp trang nhà kham-pha/tri-nho/duong-cong-quen khi D4–D5 làm trang ấy. Review (Claude Sonnet 5.5, 30/10/2026): đủ một tổng hợp thứ hai cùng chiều, không có thất bại tái lập lớn.'
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/a0037559", "https://doi.org/10.3102/0034654316689306" ]
     luot_2_ghi_chu: Hai phân tích tổng hợp (Rowland 2014; Adesope 2017) cùng chiều, g≈0,50, nhiều loại người học. Đạt thước Vững chắc.
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn "Vững chắc" đạt mục 4: Rowland 2014 g = 0,50 (đọc qua Fraundorf 2023, PMC10409703, đọc lại 30/10/2026: "Hedges'' g = 0.50 … people randomly assigned to testing scored half a standard deviation better than those assigned to restudy"); Adesope 2017 cùng chiều (g 0,50-0,63 theo Opitz & Kubik 2024); không có thất bại tái lập lớn đã biết. Bản gốc Rowland chưa mở được, nên số g dựa các nguồn kể lại; hai tổng hợp độc lập cùng cỡ nên nhãn không phụ thuộc một nguồn. Nhãn phải khớp trang nhà duong-cong-quen khi trang ấy làm (trang chưa có ở thời điểm review).'
+    review: dung
   - id: h24
     cau: Nhãn Đã bị bác bỏ cho giả thuyết dạy khớp với "phong cách học" (hàng hai của bảng).
     loai: nhan
@@ -378,24 +389,31 @@ nhan_dinh:
     co_so:
       - hattie2025
       - pashler2008
-    ly_do: 'Hattie & O''Leary (2025) gộp 17 phân tích tổng hợp: nghiên cứu kiểm tra đúng giả thuyết khớp cho d = 0,04 và nói "overwhelming evidence discrediting the matching hypothesis"; Pashler và cộng sự (2008) tìm "virtually no evidence" cho kiểu tương tác cần có. Kiểm tra đủ mạnh liên tục thất bại: đạt điều kiện "Đã bị bác bỏ". Cần khớp trang nhà kham-pha/tri-nho/phong-cach-hoc (có trong trang.yml).'
+    ly_do: 'Hattie & O''Leary (2025) gộp 17 phân tích tổng hợp: nghiên cứu kiểm tra đúng giả thuyết khớp cho d = 0,04 và nói "overwhelming evidence discrediting the matching hypothesis"; Pashler và cộng sự (2008) tìm "virtually no evidence" cho kiểu tương tác cần có. Kiểm tra đủ mạnh liên tục thất bại: đạt điều kiện "Đã bị bác bỏ". Cần khớp trang nhà kham-pha/tri-nho/phong-cach-hoc (có trong trang.yml). Review (Claude Sonnet 5.5, 30/10/2026): kiểm tra đủ mạnh liên tục thất bại (mục 4); khớp ngộ nhận đã khóa.'
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1539-6053.2009.01038.x", "https://doi.org/10.1007/s10648-025-10002-w" ]
     luot_2_ghi_chu: Pashler 2008 (không có bằng chứng đủ) và tổng hợp 2025 d=0,04. Phù hợp thước 'Đã bị bác bỏ' (kiểm tra mạnh liên tục thất bại).
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn "Đã bị bác bỏ" đạt mục 4 và khớp ngộ nhận phong-cach-hoc trong src/data/ngo-nhan.yml (đã khóa, nhan: bac-bo, cùng nguồn Hattie 2025 và Pashler 2008). Hattie & O''Leary 2025 (Crossref đọc lại 30/10/2026): 17 phân tích tổng hợp, nghiên cứu kiểm tra giả thuyết khớp d = .04; "overwhelming evidence discrediting the matching hypothesis". Trang nói "dạy khớp với phong cách học", đúng phạm vi.'
+    review: dung
   - id: h25
     cau: Nhãn Đang tranh cãi cho "cạn kiệt ý chí" (hàng ba của bảng).
     loai: nhan
     nhan: tranh-cai
     nguon:
       - vohs2021
+      - hagger2016
     co_so:
       - vohs2021
-    ly_do: Một tái lập lớn có đăng ký trước (36 phòng thí nghiệm, N = 3.531) không thấy hiệu ứng (d = 0,06, không có ý nghĩa), phân tích khám phá thấy d = 0,08; đạt điều kiện "một tái lập lớn đăng ký trước thất bại" của "Đang tranh cãi". Chưa đọc các tái lập khác (Hagger 2016) trong hồ sơ này.
+      - hagger2016
+    ly_do: 'Một tái lập lớn có đăng ký trước (36 phòng thí nghiệm, N = 3.531) không thấy hiệu ứng (d = 0,06, không có ý nghĩa), phân tích khám phá thấy d = 0,08; đạt điều kiện "một tái lập lớn đăng ký trước thất bại" của "Đang tranh cãi". Hagger 2016 (23 phòng thí nghiệm, N = 2.141, d = 0,04) cùng chiều. Review (Claude Sonnet 5.5, 30/10/2026): khớp nhãn ở trang đã khóa bat-dau/doc-nhan-chac-chan; thêm Hagger 2016.'
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/1745691616652873", "https://doi.org/10.1177/0956797621989733" ]
     luot_2_ghi_chu: "Biên giới giữa 'Đang tranh cãi' và 'Đã bị bác bỏ': hai tái lập lớn có đăng ký trước (Hagger 2016, Vohs 2021) đều không thấy hiệu ứng, nhưng còn phân tích thăm dò và tổng hợp cũ có hiệu ứng trung bình. Nhãn trên trang chấp nhận được; chủ repo cân nhắc."
+    trich: Confirmatory tests found a nonsignificant result (d = 0.06) (Vohs 2021) | Multiple laboratories (k = 23, total N = 2,141) ... the size of the ego-depletion effect was small with 95% confidence intervals (CIs) that encompassed zero (d = 0.04, 95% CI [-0.07, 0.15])
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn "Đang tranh cãi" cho cạn kiệt ý chí khớp trang đã khóa bat-dau/doc-nhan-chac-chan (ví dụ ở khung "Đang tranh cãi", nhãn tranh-cai; hồ sơ n19 đã qua review Opus). Hai tái lập lớn có đăng ký trước (Hagger 2016: 23 phòng thí nghiệm, N = 2.141, d = 0,04; Vohs 2021: 36 phòng thí nghiệm, N = 3.531, d = 0,06) là "kiểm tra đủ mạnh"; chưa xếp "Đã bị bác bỏ" vì Vohs 2021 (Crossref đọc lại 30/10/2026): phân tích khám phá trên toàn mẫu cho d = 0,08 có ý nghĩa thống kê, phân tích Bayes cho dữ liệu "about equally likely" dưới hai giả thuyết, hiệu ứng lớn hơn ở người báo cáo mệt hơn. Đã thêm hagger2016 vào nguon và co_so của câu cho khớp hồ sơ đã khóa. Cạnh biên với "Đã bị bác bỏ" như lượt 2 đã ghi; giữ để nhất quán toàn site (bat-dau/doc-nhan-chac-chan, ngo-nhan.yml). Trang dẫn riêng Vohs 2021 ở hàng bảng (d = 0,06 của phân tích xác nhận), đúng.'
+    review: dung
   - id: h26
     cau: Khi dự án Many Labs 2 làm lại 28 phát hiện ở nhiều quốc gia, độ lớn hiệu ứng trung vị giảm từ d = 0,60 ở nghiên cứu gốc xuống d = 0,15.
     loai: tai-lap
@@ -416,10 +434,11 @@ nhan_dinh:
     trich: Strong results are 40 percentage points more likely to be published than are null results and 60 percentage points more likely to be written up.
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Một lý do: các tạp chí ưu tiên đăng kết quả ''có hiệu ứng'', nên những nghiên cứu tình cờ cho hiệu ứng lớn dễ được đăng hơn." Franco 2014 (221 thí nghiệm khảo sát ở Mỹ) cho thấy kết quả mạnh dễ được đăng hơn, và chủ yếu do tác giả không viết bài; không nói "tạp chí ưu tiên". Chữ mới bám nguồn và nói "một lý do thường được nêu" (nguồn không chứng minh đây là lý do chính của việc co lại).'
+    ghi_chu: 'Chữ cũ: "Một lý do: các tạp chí ưu tiên đăng kết quả ''có hiệu ứng'', nên những nghiên cứu tình cờ cho hiệu ứng lớn dễ được đăng hơn." Franco 2014 (221 thí nghiệm khảo sát ở Mỹ) cho thấy kết quả mạnh dễ được đăng hơn, và chủ yếu do tác giả không viết bài; không nói "tạp chí ưu tiên". Chữ mới bám nguồn và nói "một lý do thường được nêu" (nguồn không chứng minh đây là lý do chính của việc co lại). Review (Claude Sonnet 5.5, 30/10/2026): chữ cuối trên trang khớp với câu mới và với trích; Franco 2014 (Europe PMC đọc lại): "Strong results are 40 percentage points more likely to be published than are null results … Authors do not write up and submit null findings"; câu nói "một lý do thường được nêu", không khẳng định đó là nguyên nhân chính. dung.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1126/science.aac4716" ]
     luot_2_ghi_chu: Thiên lệch xuất bản là giải thích thường nêu (cùng với phân tích linh hoạt); câu viết 'một lý do thường được nêu' thận trọng. Bài OSC không chứng minh nguyên nhân.
+    review: dung
   - id: h28
     cau: Khi đọc một nghiên cứu đơn lẻ với hiệu ứng rất lớn, hãy thận trọng.
     loai: loi-khuyen
@@ -456,11 +475,13 @@ nhan_dinh:
     co_so:
       - bangdiwala2016
       - lakens2013
-    ly_do: 'Nguyên tắc thống kê, không phải phát hiện thực nghiệm cần tái lập: tuyên bố của Hiệp hội Thống kê Hoa Kỳ (qua Bangdiwala 2016) nêu thẳng "A p-value, or statistical significance, does not measure the size of an effect or the importance of a result", Lakens (2013) phân biệt ý nghĩa thống kê và ý nghĩa thực tế. Không có nguồn nào mâu thuẫn. Thước đo nhãn viết cho phát hiện; mức này dựa trên tính nhất quán của các nguồn. Lượt 2 và review xem lại.'
+    ly_do: 'Nguyên tắc thống kê, không phải phát hiện thực nghiệm cần tái lập: tuyên bố của Hiệp hội Thống kê Hoa Kỳ (qua Bangdiwala 2016) nêu thẳng "A p-value, or statistical significance, does not measure the size of an effect or the importance of a result", Lakens (2013) phân biệt ý nghĩa thống kê và ý nghĩa thực tế. Không có nguồn nào mâu thuẫn. Thước đo nhãn viết cho phát hiện; mức này dựa trên tính nhất quán của các nguồn. Lượt 2 và review xem lại. Review (Claude Sonnet 5.5, 30/10/2026): xét theo đồng thuận giáo trình và tuyên bố ASA (mục 4 áp dụng cho nguyên tắc phương pháp), không theo điều kiện tái lập.'
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00863/full" ]
     luot_2_ghi_chu: Nguyên tắc phương pháp, đồng thuận (giáo trình và Lakens; ASA 2016). Nhãn Vững chắc đạt về đồng thuận phương pháp.
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn "Vững chắc" cho nguyên tắc thống kê: xét theo đồng thuận (tuyên bố ASA 2016 qua Bangdiwala 2016, Lakens 2013, OpenStax), không theo điều kiện tái lập; trang nói rõ "nguyên tắc thống kê, không phải phát hiện thực nghiệm". Đạt.'
+    review: dung
   - id: h31
     cau: 'Việc hiệu ứng nhỏ đi khi làm lại cũng được thấy ở hai dự án tái lập lớn: Open Science Collaboration (2015) và Many Labs 2 (2018).'
     loai: tai-lap
@@ -470,10 +491,11 @@ nhan_dinh:
     trich: Replication effects were half the magnitude of original effects, representing a substantial decline. (OSC) / The median comparable Cohen’s ds were 0.60 for the original findings and 0.15 for the replications. (ML2)
     vi_tri: OSC 2015, tóm tắt; Klein 2018, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Việc hiệu ứng thường nhỏ đi khi làm lại cũng đã được ghi nhận nhất quán qua các dự án tái lập lớn." Chữ mới nêu hai dự án đã đọc, bỏ "nhất quán qua các dự án".'
+    ghi_chu: 'Chữ cũ: "Việc hiệu ứng thường nhỏ đi khi làm lại cũng đã được ghi nhận nhất quán qua các dự án tái lập lớn." Chữ mới nêu hai dự án đã đọc, bỏ "nhất quán qua các dự án". Review (Claude Sonnet 5.5, 30/10/2026): chữ cuối trên trang khớp với câu mới và với trích; OSC 2015 (hiệu ứng tái lập bằng nửa bản gốc) và Many Labs 2 (Crossref đọc lại 30/10/2026: trung vị d 0,60 gốc, 0,15 khi làm lại; 28 phát hiện, 125 mẫu, 36 nước). dung.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1126/science.aac4716", "https://doi.org/10.1177/2515245918810225" ]
     luot_2_ghi_chu: "OSC 2015: 100 nghiên cứu; Many Labs 2 2018. Cả hai đăng ký trước/đồng thiết kế."
+    review: dung
   - id: h32
     cau: 'Bài tập: với d = 0,2, hai nhóm chồng lên nhau khoảng 92%, và nếu so ngẫu nhiên một người học với một người không học, người học chỉ hài lòng hơn trong khoảng 56% số trường hợp, so với 50% nếu khóa học không có tác dụng gì.'
     loai: so-lieu

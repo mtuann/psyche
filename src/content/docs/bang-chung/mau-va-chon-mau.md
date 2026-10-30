@@ -38,7 +38,7 @@ Một nguyên tắc nền tảng, đáng nhớ: **mẫu tốt phải giống t�
 | Nhược điểm | Phải rút thăm từ danh sách của cả tổng thể | Có thể rất tốt ở vài trường hợp, nhưng lệch nặng ở trường hợp khác |
 | Ví dụ | Bỏ tên cả lớp vào mũ rồi rút ra vài người | Phát phiếu ở cổng trường mình rồi kết luận về "sinh viên cả nước" (ví dụ giả định) |
 
-Phần lớn nghiên cứu tâm lý học trước nay dùng sinh viên đại học làm người tham gia. Sinh viên thường trẻ hơn, học vấn cao hơn và ít đa dạng hơn dân số chung ([OpenStax, *Psychology 2e*, mục 2.3](https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings)). Tiện, nhưng khi đó mẫu là sinh viên, không phải "con người nói chung".
+Theo giáo trình OpenStax, phần lớn nghiên cứu ở các chuyên ngành tâm lý học trước nay dùng sinh viên đại học làm người tham gia. Sinh viên thường trẻ hơn, học vấn cao hơn và ít đa dạng hơn dân số chung ([OpenStax, *Psychology 2e*, mục 2.3](https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings)). Tiện, nhưng khi đó mẫu là sinh viên, không phải "con người nói chung".
 
 ### Thiên lệch chọn mẫu
 
@@ -56,7 +56,7 @@ Hệ quả chung là **khái quát hóa quá đà**: lấy kết quả từ mẫ
 
 Năm 1936, tạp chí *Literary Digest* của Mỹ làm một cuộc thăm dò dư luận về cuộc bầu cử tổng thống, và dự đoán ứng viên Alf Landon sẽ thắng. Thực tế, Franklin D. Roosevelt thắng với khoảng 61% phiếu phổ thông ([Lohr và Brick, 2017](https://doi.org/10.1515/spp-2016-0006); [The American Presidency Project](https://www.presidency.ucsb.edu/statistics/elections/1936)).
 
-Sai ở đâu? Danh sách gửi phiếu được lập từ danh bạ điện thoại và danh sách đăng ký ô tô, và chỉ khoảng 24% người nhận phiếu trả lời ([Lohr và Brick, 2017](https://doi.org/10.1515/spp-2016-0006)). Squire (1988), dùng một khảo sát của Gallup năm 1937, kết luận rằng cả cách chọn mẫu lẫn việc ai trả lời đều lệch, và hai điều đó cộng lại tạo ra ước tính sai nặng nề. Bài học: **một mẫu lệch cho kết quả không chính xác**, và chỉ thu thêm câu trả lời theo cùng một cách thì không sửa được thiên lệch ấy.
+Sai ở đâu? Tạp chí gửi khoảng 10 triệu phiếu, theo một danh sách lập từ nhiều nguồn, phần lớn là danh bạ điện thoại và danh sách đăng ký ô tô ([Lusinchi, 2012](https://doi.org/10.1017/S014555320001035X)). Chỉ khoảng 24% người nhận phiếu trả lời ([Lohr và Brick, 2017](https://doi.org/10.1515/spp-2016-0006)). Squire (1988), dùng một khảo sát của Gallup năm 1937, kết luận rằng cả cách chọn mẫu lẫn việc ai trả lời đều lệch, và hai điều đó cộng lại tạo ra ước tính sai nặng nề. Cách giải thích quen thuộc là người có điện thoại và ô tô khá giả hơn nên nghiêng về Landon. Nhưng trong khảo sát Gallup ấy, chính nhóm này vẫn ủng hộ Roosevelt. Lusinchi (2012) phân tích lại và cho rằng nguyên nhân chính là người ủng hộ Landon gửi phiếu lại nhiều hơn hẳn người ủng hộ Roosevelt. Bài học: **một mẫu lệch cho kết quả không chính xác**, và chỉ thu thêm câu trả lời theo cùng một cách thì không sửa được thiên lệch ấy.
 
 ## Cách nhận ra
 
@@ -79,7 +79,7 @@ Một lưu ý công bằng: kết quả của mẫu thuận tiện có thể r�
 
 ## Mức độ chắc chắn
 
-:::vung-chac[mẫu lệch, không giống tổng thể, cho kết luận sai về tổng thể]
+:::vung-chac[mẫu lệch, không giống tổng thể, có thể cho kết luận sai về tổng thể]
 Đây là nguyên tắc của thống kê, không phải một phát hiện thực nghiệm riêng lẻ. Cuộc thăm dò *Literary Digest* 1936 là ví dụ lịch sử của nguyên tắc ấy.
 :::
 
@@ -110,7 +110,7 @@ Henrich và cộng sự tổng hợp nhiều so sánh giữa các nhóm xã hộ
 - Đáng tin, vì mẫu rất lớn.
 + Có thể sai nặng, vì mẫu lớn không tự sửa được thiên lệch chọn mẫu.
 - Đáng tin, miễn là có phân tích thống kê.
-> Thiên lệch chọn mẫu làm kết luận về tổng thể không chính xác. Cuộc thăm dò Literary Digest năm 1936 dự đoán sai người thắng cử, với danh sách gửi phiếu lệch và tỉ lệ trả lời khoảng 24%.
+> Mẫu lớn không tự sửa được thiên lệch chọn mẫu. Cuộc thăm dò Literary Digest năm 1936 gửi khoảng 10 triệu phiếu mà vẫn dự đoán sai người thắng cử: chỉ khoảng 24% người nhận trả lời, và người ủng hộ Landon gửi phiếu lại nhiều hơn hẳn.
 ? Henrich, Heine và Norenzayan (2010) lập luận điều gì về người tham gia các nghiên cứu tâm lý?
 - Các nghiên cứu ấy làm sai nên phải bỏ hết.
 + Phần lớn người tham gia đến từ các xã hội phương Tây công nghiệp hóa, và nhóm này thường là ngoại lệ, nên chưa có cơ sở chắc để coi kết quả là đúng cho mọi người.
@@ -136,6 +136,7 @@ Henrich và cộng sự tổng hợp nhiều so sánh giữa các nhóm xã hộ
 - Illowsky, B., & Dean, S. (2023). *Introductory Statistics 2e*, mục 1.2: Data, sampling, and variation in data and sampling. OpenStax. <https://openstax.org/books/introductory-statistics-2e/pages/1-2-data-sampling-and-variation-in-data-and-sampling>
 - Klein, R. A., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. *Advances in Methods and Practices in Psychological Science*, 1(4), 443–490. <https://doi.org/10.1177/2515245918810225>
 - Lohr, S. L., & Brick, J. M. (2017). Roosevelt predicted to win: Revisiting the 1936 Literary Digest poll. *Statistics, Politics and Policy*, 8(1), 65–84. <https://doi.org/10.1515/spp-2016-0006>
+- Lusinchi, D. (2012). "President" Landon and the 1936 Literary Digest poll: Were automobile and telephone owners to blame? *Social Science History*, 36(1), 23–54. <https://doi.org/10.1017/S014555320001035X>
 - Peters, G., & Woolley, J. T. *The American Presidency Project*: Election of 1936. <https://www.presidency.ucsb.edu/statistics/elections/1936>
 - Spielman, R. M., et al. (2020). *Psychology 2e*, mục 2.3: Analyzing findings. OpenStax. <https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings>
 - Squire, P. (1988). Why the 1936 Literary Digest poll failed. *Public Opinion Quarterly*, 52(1), 125–133. <https://doi.org/10.1086/269085>
