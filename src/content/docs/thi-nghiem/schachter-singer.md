@@ -6,91 +6,92 @@ in_duoc: true
 
 ::tom-tat
 
+:::ho-so-nghien-cuu
+- **Tác giả, năm** Stanley Schachter và Jerome Singer, 1962; tổng quan: Reisenzein, 1983
+- **Người tham gia** Nam sinh viên các lớp nhập môn tâm lý học ở Đại học Minnesota; 184 người đồng ý tiêm, 11 người bị loại vì quá nghi ngờ thí nghiệm
+- **Thiết kế** Tiêm epinephrine (được báo đúng, không được báo gì, hoặc bị báo sai triệu chứng) hay giả dược; 20 phút ngồi cùng một "người tham gia khác" thật ra là diễn viên vui vẻ hoặc giận dữ
+- **Kết quả chính** Người tiêm epinephrine mà không được báo trước bị cuốn theo cảm xúc của diễn viên nhiều hơn người được báo đúng; nhóm giả dược nằm giữa, và chênh lệch với nhóm epinephrine không có ý nghĩa thống kê ở điều kiện vui vẻ
+- **Đánh giá sau này** Reisenzein (1983): chỉ một trong ba suy luận của lý thuyết được dữ liệu ủng hộ đầy đủ
+:::
+
 ## Tự trải nghiệm
 
 Hãy tưởng tượng bạn đến phòng thí nghiệm vì một nghiên cứu "tác dụng của vitamin lên thị lực". Bạn được tiêm một mũi mà họ gọi là vitamin Suproxin, rồi ngồi chờ 20 phút. Dần dần, tim bạn đập nhanh, tay hơi run, mặt nóng bừng.
 
-Lúc đó, một "người tham gia khác" ngồi cùng phòng bắt đầu quậy phá: gấp máy bay giấy phóng vèo vèo, vo giấy chơi bóng rổ vào sọt rác, xoay vòng hula hoop — cười ha hả đầy phấn khích.
+Lúc đó, một "người tham gia khác" ngồi cùng phòng bắt đầu quậy phá: gấp máy bay giấy phóng vèo vèo, vo giấy chơi bóng rổ vào sọt rác, xoay vòng hula hoop — hồ hởi như trẻ con.
 
 > Bạn đoán: cơn tim đập nhanh của bạn lúc này sẽ thành cảm xúc gì — vui lây theo anh ta, hay bực mình vì bị làm ồn? Và nếu thay anh ta bằng một người đang nổi giận đùng đùng thì sao — cùng một liều thuốc, liệu cảm xúc của bạn có khác?
 
 :::thu-gon[Xem đáp án]
-Trong thí nghiệm thật năm 1962, những người **không được giải thích đúng** về mũi tiêm đã "bắt" cảm xúc của người ngồi cùng: vui theo người vui, giận theo người giận — dù cơ thể họ chịu cùng một loại kích thích hóa học. Còn những người được báo trước "thuốc sẽ làm tim đập nhanh" thì giữ được bình tĩnh. Kết luận: cảm xúc = **kích thích sinh lý** + **cái nhãn** mà não dán lên nó.
+Trong thí nghiệm thật năm 1962, những người **không được giải thích đúng** về mũi tiêm có xu hướng "bắt" cảm xúc của người ngồi cùng: vui theo người vui, giận theo người giận — dù cơ thể họ chịu cùng một loại kích thích hóa học. Còn những người được báo trước "thuốc sẽ làm tim đập nhanh" thì ít bị cuốn theo hơn hẳn. Từ đó hai tác giả đề xuất: cảm xúc = **kích thích sinh lý** + **cái nhãn** mà não dán lên nó. Các nghiên cứu sau chỉ ủng hộ một phần đề xuất này (xem mục "Mức độ chắc chắn").
 :::
 
 ## Điều gì đang xảy ra?
 
-Chúng ta thường nghĩ cảm xúc đi từ trong ra ngoài: buồn thì khóc, sợ thì tim đập nhanh. Schachter và Singer đảo ngược câu hỏi: nếu cơ thể đã "bật chế độ báo động" mà não chưa biết vì sao, nó sẽ làm gì? Câu trả lời: não nhìn quanh, tìm lời giải thích gần nhất — và dán nhãn cảm xúc tương ứng. Tim đập nhanh giữa buổi tiệc vui thành "phấn khích"; tim đập nhanh trong con hẻm tối thành "sợ hãi". Cùng một cơ thể, hai cảm xúc — khác nhau ở cái nhãn.
+Chúng ta thường nghĩ cảm xúc đi từ trong ra ngoài: buồn thì khóc, sợ thì tim đập nhanh. Schachter và Singer đảo ngược câu hỏi: nếu cơ thể đã "bật chế độ báo động" mà não chưa biết vì sao, nó sẽ làm gì? Câu trả lời của họ (một giả thuyết, các nghiên cứu sau chỉ ủng hộ một phần): não nhìn quanh, tìm lời giải thích trong hoàn cảnh hiện có — và gọi tên cảm xúc theo đó. Hai tác giả hình dung tim đập nhanh giữa buổi tiệc vui thành "phấn khích", và trong con hẻm tối thành "sợ hãi": cùng một cơ thể, hai cảm xúc, khác nhau ở cái nhãn.
 
 ## Nghiên cứu then chốt
 
 ### Schachter và Singer (1962): mũi tiêm adrenaline và người diễn viên hai mặt
 
-**Thiết kế.** 184 nam sinh viên được tiêm epinephrine (adrenaline) hoặc giả dược (nước muối), dưới vỏ bọc "nghiên cứu vitamin Suproxin lên thị lực". Nhóm tiêm adrenaline được chia ba: **được báo đúng** (thuốc gây tim đập nhanh, run tay, nóng mặt), **không được báo gì**, và **bị báo sai** (thuốc gây ngứa hoặc đau đầu). Sau 20 phút chờ thuốc ngấm, mỗi người ngồi cùng một diễn viên: trong điều kiện **vui vẻ**, diễn viên gấp máy bay giấy, chơi bóng rổ bằng giấy vo viên, làm ná chun, xoay hula hoop; trong điều kiện **giận dữ**, cả hai làm một bảng hỏi ngày càng riêng tư, diễn viên tỏ ra bực bội, xé bảng hỏi rồi bỏ ra ngoài. Cảm xúc được đo bằng quan sát qua gương một chiều và bảng tự báo cáo.
+**Thiết kế.** 184 nam sinh viên đồng ý được tiêm epinephrine (adrenaline) hoặc giả dược (nước muối), dưới vỏ bọc "nghiên cứu vitamin Suproxin lên thị lực". Nhóm tiêm adrenaline được chia ba: **được báo đúng** (thuốc gây tim đập nhanh, run tay, nóng mặt), **không được báo gì**, và **bị báo sai** (thuốc gây tê chân, ngứa hoặc hơi đau đầu; nhóm này chỉ có ở điều kiện vui vẻ). Sau 20 phút chờ thuốc ngấm, mỗi người ngồi cùng một diễn viên: trong điều kiện **vui vẻ**, diễn viên gấp máy bay giấy, chơi bóng rổ bằng giấy vo viên, làm ná chun, xoay hula hoop; trong điều kiện **giận dữ**, cả hai làm một bảng hỏi ngày càng riêng tư và xúc phạm, diễn viên tỏ ra bực bội, xé bảng hỏi rồi bỏ ra ngoài. Cảm xúc được đo bằng quan sát qua gương một chiều và bảng tự báo cáo.
 
-**Kết quả.** Những người tiêm adrenaline mà **không có lời giải thích đúng** "bắt" cảm xúc của diễn viên — vui lên trong điều kiện vui vẻ, giận lên trong điều kiện giận dữ. Nhóm **được báo đúng** thì bình tĩnh hơn hẳn: họ đã có lời giải thích cho cơn tim đập nhanh nên không cần "vay" cảm xúc từ môi trường. Nhóm giả dược chỉ chịu ảnh hưởng nhẹ. Ba mệnh đề của lý thuyết ra đời từ đây: (a) kích thích không rõ nguyên nhân sẽ được dán nhãn theo nhận thức sẵn có; (b) kích thích đã có lời giải thích thỏa đáng thì không cần dán nhãn thêm; (c) cùng một bối cảnh nhận thức, cảm xúc chỉ xuất hiện khi có kích thích sinh lý ([Schachter và Singer, 1962](https://doi.org/10.1037/h0046234)).
+**Kết quả.** Ở điều kiện vui vẻ, nhóm tiêm adrenaline **không được báo trước** và nhóm **bị báo sai** tự báo cáo vui hơn nhóm được báo đúng (điểm 1,78 và 1,90, so với 0,98) và có xu hướng hành động hưng phấn hơn (chênh lệch về hành động chỉ đạt ý nghĩa thống kê với nhóm bị báo sai). Ở điều kiện giận dữ, chỉ số hành vi của nhóm không được báo trước cao hơn hẳn nhóm được báo đúng (+2,28 so với −0,18); tự báo cáo cùng chiều nhưng chưa đạt mức ý nghĩa, và các tác giả cho biết người tham gia ngại lộ giận trước người thí nghiệm. Nhóm **được báo đúng** ít bị cuốn theo: họ đã có lời giải thích cho cơn tim đập nhanh. Nhóm giả dược nằm giữa các nhóm; chênh lệch với nhóm epinephrine không có ý nghĩa thống kê ở điều kiện vui vẻ, và các tác giả gọi kết quả này là "đáng lo" cho lý thuyết, nên phải dùng phân tích phụ (loại những người tự gán triệu chứng cho mũi tiêm) và gọi kết luận của mình là dè dặt. Ba mệnh đề của lý thuyết ra đời từ đây: (a) kích thích không rõ nguyên nhân sẽ được dán nhãn theo nhận thức sẵn có; (b) kích thích đã có lời giải thích thỏa đáng thì không cần dán nhãn thêm; (c) cùng một bối cảnh nhận thức, cảm xúc chỉ xuất hiện khi có kích thích sinh lý ([Schachter và Singer, 1962](https://doi.org/10.1037/h0046234)).
 
 ### Marshall và Zimbardo (1979): làm lại điều kiện vui vẻ — thất bại
 
-**Thiết kế.** Gary Marshall và Philip Zimbardo làm lại phần điều kiện vui vẻ: người tham gia tiêm epinephrine hoặc giả dược, được báo về các triệu chứng không liên quan đến kích thích, rồi ngồi cùng diễn viên vui vẻ hoặc trung tính.
+**Thiết kế.** Gary Marshall và Philip Zimbardo thử làm lại phần điều kiện vui vẻ: người tham gia tiêm epinephrine hoặc giả dược rồi ngồi cùng diễn viên vui vẻ. Chúng tôi chưa mở được toàn văn bài này nên không nêu chi tiết thiết kế.
 
-**Kết quả.** Diễn viên vui vẻ **không** tạo thêm sự vui vẻ nào so với diễn viên trung tính, và người tiêm epinephrine cũng không dễ bị "lây" cảm xúc hơn người tiêm giả dược — trái ngược với kết quả gốc. Đáng chú ý: kích thích không rõ nguyên nhân có xu hướng nghiêng về cảm xúc **tiêu cực** chứ không trung tính như lý thuyết giả định. Một nghiên cứu cùng năm của Maslach, dùng ám thị thôi miên thay cho mũi tiêm, cũng cho kết quả tương tự ([Maslach, 1979](https://doi.org/10.1037/0022-3514.37.6.953)).
+**Kết quả.** Theo các tổng kết thứ cấp, hành vi của diễn viên vui vẻ ít ảnh hưởng đến người tham gia, trái với kết quả gốc, và kích thích không rõ nguyên nhân có xu hướng nghiêng về cảm xúc **tiêu cực** hơn là trung tính. Một nghiên cứu cùng năm của Maslach cũng được mô tả theo hướng tương tự ([Maslach, 1979](https://doi.org/10.1037/0022-3514.37.6.953)); chúng tôi chưa đọc được bài gốc của cả hai.
 
 ### Reisenzein (1983): tổng quan sau hai thập kỷ — chỉ còn phiên bản "pha loãng"
 
-**Thiết kế.** Rà soát toàn bộ bằng chứng thực nghiệm cho ba suy luận chính của lý thuyết Schachter sau 20 năm.
+**Thiết kế.** Một bài tổng quan xem xét bằng chứng thực nghiệm cho ba suy luận chính của lý thuyết Schachter sau 20 năm.
 
-**Kết quả.** Chỉ có **một** trong ba suy luận được dữ liệu ủng hộ đầy đủ — kích thích bị quy kết nhầm nguồn **làm mạnh thêm** phản ứng cảm xúc. Không có bằng chứng thuyết phục cho rằng kích thích là điều kiện **cần** của cảm xúc, hay việc dán nhãn kích thích không rõ nguyên nhân có thể **tạo ra** cảm xúc từ con số không. Vai trò của kích thích đã bị thổi phồng; những gì còn đứng vững chỉ là phiên bản "pha loãng": kích thích có thể khuếch đại cường độ cảm xúc, một phần qua cách ta quy kết nguồn gốc kích thích ([Reisenzein, 1983](https://doi.org/10.1037/0033-2909.94.2.239)).
+**Kết quả.** Chỉ có **một** trong ba suy luận được dữ liệu ủng hộ đầy đủ — kích thích từ một nguồn bên ngoài, bị quy nhầm cho tình huống cảm xúc, **làm mạnh thêm** phản ứng cảm xúc. Suy luận về việc giảm kích thích thì ít được ủng hộ, suy luận về việc quy kích thích cho nguồn trung tính thì chưa rõ. Không có bằng chứng thuyết phục cho rằng kích thích là điều kiện **cần** của cảm xúc, hay việc dán nhãn kích thích không rõ nguyên nhân có thể **tạo ra** cảm xúc. Reisenzein cho rằng vai trò của kích thích đã bị nói quá; điều còn lại nhiều nhất là phiên bản "pha loãng": kích thích có thể khuếch đại cường độ cảm xúc, một phần qua cách ta quy kết nguồn gốc kích thích ([Reisenzein, 1983](https://doi.org/10.1037/0033-2909.94.2.239)).
 
 ### Dutton và Aron (1974): cây cầu treo và cú điện thoại
 
-**Thiết kế.** Những người đàn ông vừa đi qua một trong hai cây cầu ở công viên Capilano (Canada) — một cầu treo cao rung lắc gây sợ hãi, một cầu thấp vững chãi — được một phụ nữ hấp dẫn phỏng vấn, cuối buổi cô cho số điện thoại "để hỏi thêm về nghiên cứu".
+**Thiết kế.** Những người đàn ông đi ngang qua được một nữ phỏng vấn viên hấp dẫn gặp, hoặc trên một cây cầu treo gây sợ hãi, hoặc trên một cây cầu không gây sợ hãi. Họ điền bảng hỏi có tranh kiểu TAT (kể chuyện theo tranh).
 
-**Kết quả.** Những người vừa qua cầu treo gọi lại cho cô nhiều hơn hẳn, và viết những câu chuyện có nội dung lãng mạn nhiều hơn: cơn kích thích từ nỗi sợ bị não **quy kết nhầm** thành sự hấp dẫn giới tính — minh chứng ngoài phòng thí nghiệm nổi tiếng nhất cho ý tưởng cốt lõi còn sống sót của Schachter và Singer ([Dutton và Aron, 1974](https://doi.org/10.1037/h0037031)).
+**Kết quả.** Nội dung tình dục trong những câu chuyện của người ở cầu treo và xu hướng tìm cách liên lạc lại với phỏng vấn viên sau thí nghiệm đều cao hơn có ý nghĩa thống kê; với phỏng vấn viên nam thì hai cầu không khác nhau. Các tác giả diễn giải: kích thích từ nỗi sợ có thể bị **quy nhầm** thành sự hấp dẫn — một nghiên cứu hiện trường được dẫn nhiều cho ý tưởng quy kết nhầm của Schachter và Singer ([Dutton và Aron, 1974](https://doi.org/10.1037/h0037031)).
 
 ## Mức độ chắc chắn
 
-:::vung-chac[nhầm lẫn quy kết nguồn kích thích có thể lái trải nghiệm cảm xúc]
-Đây là phần sống sót vững nhất của lý thuyết, được Reisenzein (1983) đánh giá là "được dữ liệu ủng hộ đầy đủ" và được minh họa bởi nghiên cứu cầu treo của Dutton và Aron (1974). Não bộ đôi khi gán nhầm nguyên nhân của cơn kích thích — và cái nhãn nhầm đó đổi luôn cảm xúc ta cảm nhận.
-:::
-
-:::kha-vung[kích thích sinh lý khuếch đại cường độ cảm xúc]
-Phiên bản "pha loãng" của lý thuyết theo Reisenzein: kích thích không tạo ra cảm xúc từ con số không, nhưng nó như chiếc loa phóng đại cho cảm xúc đang có. Đánh giá "khá vững" vì đây là kết luận từ tổng quan tài liệu, không phải từ một thí nghiệm quyết định duy nhất.
+:::kha-vung[kích thích từ nguồn khác, bị quy nhầm cho một tình huống cảm xúc, có thể làm mạnh thêm cảm xúc]
+Reisenzein (1983) kết luận đây là suy luận duy nhất của lý thuyết được dữ liệu ủng hộ đầy đủ, và nghiên cứu cầu treo của Dutton và Aron (1974) là một ví dụ hiện trường. Đánh giá "khá vững" vì căn cứ chủ yếu là một tổng quan kể chuyện từ năm 1983, chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước mà chúng tôi mở được.
 :::
 
 :::tranh-cai[phiên bản mạnh của lý thuyết hai nhân tố]
-Tuyên bố gốc — mọi cảm xúc đều là kích thích sinh lý chung chung cộng với một cái nhãn được chọn tự do — không đứng vững. Marshall và Zimbardo (1979) không lặp lại được điều kiện vui vẻ; Maslach (1979) thấy kích thích không giải thích được nghiêng về tiêu cực chứ không trung tính; tổng quan của Cotton (1981) cũng ghi nhận kết quả các nghiên cứu khá hỗn hợp ([Cotton, 1981](https://doi.org/10.1002/ejsp.2420110403)).
-:::
-
-:::bac-bo['cứ tim đập nhanh là não sẽ tự bịa ra bất kỳ cảm xúc nào']
-Không. Kích thích không phải tấm vải trắng để não muốn vẽ gì thì vẽ: khi không rõ nguyên nhân, nó có xu hướng nghiêng về cảm xúc tiêu cực, và nhiều cảm xúc (như sợ hãi trước mối đe dọa rõ ràng) hình thành mà không cần qua bước "dán nhãn" nào. Lý thuyết hai nhân tố mô tả một cơ chế có thật, không phải công thức vạn năng của mọi cảm xúc.
+Tuyên bố gốc — cảm xúc là kích thích sinh lý chung chung cộng với một cái nhãn do hoàn cảnh gợi ra — chưa được chứng minh: Reisenzein (1983) không thấy bằng chứng thuyết phục rằng kích thích là điều kiện cần hay rằng dán nhãn có thể tạo ra cảm xúc; tổng quan của Cotton (1981) kết luận lý thuyết chưa được nghiên cứu ủng hộ tốt nhưng bằng chứng cũng chưa chắc đã bác nó ([Cotton, 1981](https://doi.org/10.1002/ejsp.2420110403)); và theo các tổng kết thứ cấp, hai nghiên cứu năm 1979 (Marshall và Zimbardo; Maslach) không lặp lại hiệu ứng gốc.
 :::
 
 ## Các lý thuyết giải thích
 
 - **Hai nhân tố (Schachter & Singer):** cảm xúc = kích thích sinh lý + nhãn nhận thức. Cùng một cơn tim đập nhanh, nhãn "vui" cho ra phấn khích, nhãn "nguy hiểm" cho ra sợ hãi.
-- **James–Lange (phiên bản cổ điển):** cơ thể đi trước, cảm xúc đi sau — "ta buồn vì ta khóc". Schachter giữ lại nửa này nhưng thêm: cơ thể một mình chưa đủ, cần thêm diễn giải.
-- **Cannon–Bard (phản biện):** kích thích sinh lý quá chậm và quá giống nhau giữa các cảm xúc để làm nền tảng phân biệt chúng; cảm xúc và phản ứng cơ thể xảy ra song song, do não điều phối.
-- **Thẩm định nhận thức hiện đại:** cảm xúc là kết quả của quá trình đánh giá tình huống — mối đe dọa, mất mát, hay điều đáng mừng — trong đó tín hiệu cơ thể chỉ là một mảnh dữ liệu đầu vào.
+- **Hai nhân tố (Schachter & Singer):** cảm xúc = kích thích sinh lý + nhãn nhận thức. Theo hai tác giả, cùng một trạng thái kích thích có thể thành "vui" hay "giận" tùy hoàn cảnh.
+- **James–Lange (cổ điển):** theo James (1890), thay đổi của cơ thể đi liền sau việc nhận ra sự kiện, và cảm giác về những thay đổi ấy chính là cảm xúc. Schachter và Singer giữ lại phần cơ thể nhưng thêm rằng cần có thêm nhận thức phù hợp.
+- **Cannon (phản biện):** Cannon (1929) phê bình James–Lange, chẳng hạn rằng động vật bị cắt hệ giao cảm vẫn có hành vi cảm xúc; Schachter và Singer thừa nhận phê bình này cũng áp dụng cho mệnh đề thứ ba của họ.
 
 ## Áp dụng vào đời sống
 
-- **Đọc đúng cảm xúc của chính mình:** tim đập nhanh trước buổi thuyết trình có thể là lo lắng — nhưng cũng có thể chỉ là cà phê và sự háo hức. Trước khi dán nhãn "mình đang sợ", hãy kiểm tra các nguồn kích thích khác. Đổi được nguồn quy kết, đôi khi đổi được luôn cảm xúc.
-- **Cẩn thận với "tiếng sét ái tình":** nghiên cứu cầu treo nhắc ta rằng sự hấp dẫn ta cảm thấy đôi khi chỉ là cơn kích thích từ hoàn cảnh bị dán nhầm nhãn "yêu". Những buổi hẹn hò kịch tính — phim kinh dị, tàu lượn — có thể làm tăng "chemistry" theo đúng nghĩa đen.
-- **Tranh luận lúc đang "nóng máy":** vừa tập thể dục xong, vừa kẹt xe về — cơ thể đang đầy kích thích — là thời điểm tồi để bàn chuyện nghiêm túc. Cơn giận có thể không xuất phát từ câu chuyện, mà từ dư âm sinh lý chưa tan.
+Các thí nghiệm ở trang này không kiểm tra lời khuyên nào cho đời sống thường ngày; hai gợi ý dưới đây là suy luận, không phải kết quả nghiên cứu.
+
+- **Đừng vội gọi tên cảm xúc của mình:** tim đập nhanh có thể do nhiều nguyên nhân (cà phê, chạy bộ, lo lắng). Lưu ý: việc đổi nguồn mà ta quy cho cơn kích thích có làm giảm cảm xúc hay không thì Reisenzein (1983) đánh giá là chưa rõ.
+- **Cẩn thận khi diễn giải "tiếng sét ái tình":** nghiên cứu cầu treo gợi ý rằng cơn kích thích từ nỗi sợ có thể bị quy thành sự hấp dẫn, nhưng đó là một nghiên cứu hiện trường với nam giới và một phỏng vấn viên, không đủ để nói điều gì về chuyện hẹn hò nói chung.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Chúng tôi **chưa tìm thấy** nghiên cứu nào kiểm tra lý thuyết hai nhân tố trên người Việt. Điều này cũng dễ hiểu: thí nghiệm gốc tiêm adrenaline cho người khỏe mạnh vì mục đích tâm lý — một thiết kế ngày nay không thể qua được hội đồng đạo đức nghiên cứu ở bất kỳ đâu, kể cả Việt Nam. Các bằng chứng hiện có đều đến từ phương Tây.
+Tính đến 10/2026, chúng tôi **chưa tìm thấy** nghiên cứu nào kiểm tra lý thuyết hai nhân tố trên người Việt. Thí nghiệm gốc làm trên nam sinh viên ở Đại học Minnesota (Mỹ).
 
-Một câu hỏi thú vị nhưng **chưa có đáp án**: liệu cách dán nhãn cảm xúc có khác nhau giữa các nền văn hóa — ví dụ, ở những nơi ngôn ngữ có ít từ phân biệt các cảm xúc, hay chuẩn mực xã hội định hình mạnh cách bộc lộ cảm xúc? Đây là khoảng trống nghiên cứu thực sự, không phải chỗ để suy đoán.
+Chúng tôi không có nguồn nào cho biết cách gọi tên cảm xúc ở người Việt có giống bản gốc hay không, nên không suy đoán.
 
 ## Ngộ nhận liên quan
 
-- **"Thí nghiệm chứng minh cảm xúc chỉ là tưởng tượng, cơ thể không quan trọng."** Ngược lại: lý thuyết hai nhân tố khẳng định kích thích sinh lý là **điều kiện** của cảm xúc mạnh — không có cơn tim đập nhanh thì chẳng có gì để dán nhãn.
+- **"Thí nghiệm chứng minh cảm xúc chỉ là tưởng tượng, cơ thể không quan trọng."** Ngược lại: lý thuyết hai nhân tố coi kích thích sinh lý là một thành phần của cảm xúc mạnh, dù Reisenzein (1983) không thấy bằng chứng thuyết phục rằng nó là điều kiện cần.
 - **"Tim đập nhanh khi gặp ai đó nghĩa là mình yêu người ta."** Có thể chỉ là cà phê, cầu thang bộ, hay sự lo lắng bị dán nhầm nhãn. Đừng ra quyết định lớn dựa trên một cơn kích thích chưa rõ nguồn gốc.
-- **"Có thể điều khiển cảm xúc người khác dễ dàng bằng cách tạo kích thích."** Phiên bản mạnh của lý thuyết đã không đứng vững; kích thích chỉ lái được cảm xúc trong những điều kiện hẹp, và thường nghiêng về tiêu cực.
-- **"Schachter và Singer bị 'bóc phốt' nên lý thuyết vứt đi."** Sai. Điều bị thách thức là phiên bản mạnh và một số kết quả gốc; phần cốt lõi — nhầm lẫn quy kết và vai trò khuếch đại của kích thích — vẫn được ủng hộ.
+- **"Có thể điều khiển cảm xúc người khác dễ dàng bằng cách tạo kích thích."** Phiên bản mạnh của lý thuyết chưa được chứng minh; điều được tổng quan năm 1983 xem là có đủ bằng chứng chỉ là kích thích có thể làm mạnh thêm cảm xúc sẵn có.
+- **"Lý thuyết bị phê bình nên vứt đi."** Không hẳn. Điều bị thách thức là phiên bản mạnh và một số kết quả gốc; phần mà Reisenzein (1983) xem là có đủ bằng chứng — kích thích bị quy nhầm nguồn làm mạnh thêm cảm xúc — vẫn còn.
 
 ## Thử suy ngẫm
 
@@ -99,7 +100,7 @@ Một câu hỏi thú vị nhưng **chưa có đáp án**: liệu cách dán nh�
 - Nhóm được báo đúng về tác dụng của thuốc.
 + Nhóm tiêm adrenaline nhưng không được giải thích đúng (không được báo gì hoặc bị báo sai).
 - Nhóm tiêm giả dược.
-> Nhóm được báo đúng đã có lời giải thích cho cơn tim đập nhanh; nhóm giả dược không có kích thích gì để dán nhãn. Chỉ nhóm có kích thích mà thiếu lời giải thích mới phải "vay" cảm xúc từ người ngồi cùng.
+> Nhóm được báo đúng đã có lời giải thích cho cơn tim đập nhanh nên ít bị cuốn theo nhất; nhóm giả dược nằm giữa các nhóm. Nhóm có kích thích mà thiếu lời giải thích bị cuốn theo cảm xúc của người ngồi cùng nhiều hơn.
 ? Vì sao nhóm "được báo đúng" ít chịu ảnh hưởng của diễn viên?
 - Vì thuốc không có tác dụng với họ.
 + Vì họ đã có lời giải thích thỏa đáng cho cơn kích thích ("đó là do thuốc"), nên não không cần tìm nhãn từ môi trường.
@@ -107,19 +108,19 @@ Một câu hỏi thú vị nhưng **chưa có đáp án**: liệu cách dán nh�
 > Đây chính là mệnh đề (b) của lý thuyết: kích thích đã có lời giải thích phù hợp thì không phát sinh nhu cầu đánh giá thêm.
 ? Marshall và Zimbardo (1979) khi làm lại điều kiện vui vẻ đã phát hiện gì?
 - Kết quả giống hệt bản gốc, củng cố lý thuyết.
-+ Diễn viên vui vẻ không tạo thêm sự vui vẻ so với diễn viên trung tính; kích thích không rõ nguyên nhân nghiêng về cảm xúc tiêu cực.
++ Theo các tổng kết thứ cấp, hành vi của diễn viên vui vẻ ít ảnh hưởng đến người tham gia, không như kết quả gốc.
 - Adrenaline không gây ra bất kỳ kích thích sinh lý nào.
-> Thất bại lặp lại này là một trong những đòn mạnh nhất vào phiên bản mạnh của lý thuyết hai nhân tố.
+> Đây là một trong những lý do khiến phiên bản mạnh của lý thuyết hai nhân tố bị đặt dấu hỏi.
 ? Sau hai thập kỷ bằng chứng, Reisenzein (1983) kết luận điều gì còn đứng vững?
 - Toàn bộ lý thuyết hai nhân tố được chứng minh đầy đủ.
 + Chỉ còn phiên bản "pha loãng": kích thích bị quy kết nhầm nguồn làm mạnh thêm cảm xúc; không có bằng chứng thuyết phục rằng kích thích là điều kiện cần của cảm xúc.
 - Kích thích sinh lý hoàn toàn không liên quan gì đến cảm xúc.
-> Reisenzein cho rằng vai trò của kích thích trong cảm xúc đã bị thổi phồng — nhưng không phải bằng không.
+> Reisenzein cho rằng vai trò của kích thích trong cảm xúc đã bị nói quá — nhưng không phải bằng không.
 ? Nghiên cứu cầu treo của Dutton và Aron (1974) minh họa điều gì?
 - Đi cầu treo giúp giảm huyết áp.
 - Phụ nữ phỏng vấn trên cầu cao được đánh giá là kém hấp dẫn hơn.
-+ Cơn kích thích từ nỗi sợ bị não quy kết nhầm thành sự hấp dẫn giới tính — những người qua cầu treo gọi lại cho cô phỏng vấn nhiều hơn hẳn.
-> Đây là minh chứng ngoài phòng thí nghiệm nổi tiếng nhất cho ý tưởng "dán nhầm nhãn": cùng một cơn tim đập nhanh, nhãn "sợ" hay nhãn "yêu" cho ra hai trải nghiệm khác nhau.
++ Cơn kích thích từ nỗi sợ có thể bị quy nhầm thành sự hấp dẫn — những người ở cầu treo kể chuyện nhiều nội dung tình dục hơn và tìm cách liên lạc lại với phỏng vấn viên nhiều hơn.
+> Đây là một nghiên cứu hiện trường được dẫn nhiều cho ý tưởng quy kết nhầm: cùng một cơn kích thích có thể được gán cho nguồn khác.
 ```
 
 ## Nguồn

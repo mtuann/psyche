@@ -4,14 +4,632 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/keo-deo.md
 tang: loi
 muc: V3
 lan:
-  - so: 1
-    ngay: null
-    nhanh: moi/d3-l2
-    ma_bam: null
-    nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
-      kiem_mau: null
-nguon: []
-nhan_dinh: []
+- so: 1
+  ngay: '2026-10-30'
+  nhanh: moi/d3-l2
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 1/2)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: mischel1972
+  ten: 'Mischel, Ebbesen & Zeiss (1972), J Pers Soc Psychol 21(2), 204–218: toàn văn (bản quét có chữ ở uv.mx, OCR có lỗi chính tả)'
+  link: https://doi.org/10.1037/h0032198
+  toan_van: true
+- id: watts2018
+  ten: 'Watts, Duncan & Quan (2018), Psychol Sci 29(7), 1159–1177: toàn văn (bản PDF ở gwern.net)'
+  link: https://doi.org/10.1177/0956797618761661
+  toan_van: true
+- id: mischel1988
+  ten: 'Mischel, Shoda & Peake (1988), J Pers Soc Psychol 54(4), 687–696: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/0022-3514.54.4.687
+  toan_van: false
+- id: mischel1989
+  ten: 'Mischel, Shoda & Rodriguez (1989), Science 244(4907), 933–938: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1126/science.2658056
+  toan_van: false
+- id: shoda1990
+  ten: 'Shoda, Mischel & Peake (1990), Dev Psychol 26(6), 978–986: tóm tắt (OpenAlex); các hệ số theo Watts 2018'
+  link: https://doi.org/10.1037/0012-1649.26.6.978
+  toan_van: false
+- id: kidd2013
+  ten: 'Kidd, Palmeri & Aslin (2013), Cognition 126(1), 109–114: tóm tắt (PubMed 23063236)'
+  link: https://doi.org/10.1016/j.cognition.2012.08.004
+  toan_van: false
+- id: metcalfe1999
+  ten: 'Metcalfe & Mischel (1999), Psychol Rev 106(1), 3–19: tóm tắt (OpenAlex); id chưa có trong src/data/nguon.yml'
+  link: https://doi.org/10.1037/0033-295X.106.1.3
+  toan_van: false
+nhan_dinh:
+- id: n1
+  cau: Walter Mischel cho trẻ mẫu giáo chọn giữa một phần thưởng ngay và một phần thưởng ưa thích hơn nếu chờ.
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: preschool children could obtain a less preferred reward immediately or continue waiting indefinitely for a more preferred but delayed reward
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Câu mô tả (description) và hộp hồ sơ. Chữ cũ: "một viên kẹo ngay hay hai viên nếu chờ 15 phút"; chữ mới như trên. Lý do: bài 1972 là chọn giữa hai phần thưởng khác nhau (kẹo dẻo và bánh quy que), không phải một so với hai viên kẹo; bản "một viên so với hai viên" là bài chờ chỉnh sửa trong Watts 2018 (7 phút).'
+- id: n2
+  cau: Trong mẫu gốc, những trẻ chờ được lâu hơn sau này có điểm SAT cao hơn.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  - shoda1990
+  trich: observed large correlations between delay time and SAT scores, r(35) = .57 for math, r (35) = .42 for verbal
+  vi_tri: phần Introduction (Watts), kể lại Shoda 1990
+  ket_qua: dung
+  ghi_chu: Bài Shoda 1990 chỉ đọc tóm tắt (nói "cognitive and academic competence"); điểm SAT cụ thể theo Watts 2018 kể lại, toàn văn.
+- id: n3
+  cau: Lần làm lại năm 2018 dùng 918 trẻ.
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: Our analysis sample was limited to children who had a valid measure of delay of gratification at age 54 months, as well as nonmissing achievement and behavioral data at age 15 (n = 918).
+  vi_tri: Method, Data
+  ket_qua: dung
+- id: n4
+  cau: Lần làm lại cho thấy mối liên hệ giảm mạnh khi tính đến hoàn cảnh gia đình.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: this bivariate correlation was only half the size of those reported in the original studies and was reduced by two thirds in the presence of controls for family background, early cognitive ability, and the home environment
+  vi_tri: Abstract
+  ket_qua: dung
+- id: n5
+  cau: 'Hãy tưởng tượng: người lớn nói trẻ 4 tuổi rằng chờ mà không ăn thì được hai viên, ăn ngay thì chỉ được một viên.'
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: If the child waited for 7 min, the interviewer would return, and the child could eat the treat and receive an additional portion as a reward for waiting.
+  vi_tri: Method, bài chờ; tình huống giả định (gia-dinh)
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: tình huống minh họa theo bài chờ "chờ để được thêm một phần" của NICHD (Watts 2018, mục Method), không phải mô tả bài 1972. Không còn nói "15 năm sau" và "sự nghiệp" trong câu hỏi.'
+- id: n6
+  cau: 'Câu hỏi: "khả năng chờ đợi của đứa trẻ 4 tuổi có dự đoán được điểm số của nó hơn mười năm sau không?"'
+  loai: phat-hien
+  nguon:
+  - watts2018
+  - mischel1988
+  trich: children who were able to wait longer at age 4 or 5 became adolescents whose parents rated them as more academically and socially competent
+  vi_tri: tóm tắt Mischel 1988; Watts (outcomes ở tuổi 15)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "điểm thi, sự nghiệp của nó 15 năm sau"; chữ mới: "điểm số của nó hơn mười năm sau". Lý do: Mischel 1988 theo dõi "hơn một thập kỷ" (a decade later), Watts đo ở tuổi 15 (từ 54 tháng): khoảng 10 năm; không nghiên cứu nào đo "sự nghiệp".'
+- id: n7
+  cau: 'Nghiên cứu gốc tìm thấy tương quan đáng kể: trẻ chờ lâu hơn sau này có điểm SAT cao hơn và được cha mẹ đánh giá là ứng phó tốt hơn.'
+  loai: phat-hien
+  nguon:
+  - mischel1988
+  - watts2018
+  trich: parents rated them as more academically and socially competent, verbally fluent, rational, attentive, planful, and able to deal well with frustration and stress
+  vi_tri: tóm tắt Mischel 1988
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "tương quan rõ rệt"; mới: "đáng kể", và nói rõ đánh giá do cha mẹ. SAT: xem nhận định về SAT (Shoda 1990 qua Watts).'
+- id: n8
+  cau: Lần làm lại 2018 cho thấy tương quan chỉ bằng khoảng một nửa bản gốc, và khi tính đến hoàn cảnh gia đình thì giảm thêm khoảng hai phần ba.
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: this bivariate correlation was only half the size of those reported in the original studies and was reduced by two thirds in the presence of controls
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "co lại còn rất nhỏ" (không có trong nguồn). Mới theo tóm tắt của Watts.'
+- id: n9
+  cau: 'Thí nghiệm "kẹo dẻo" nổi tiếng với câu chuyện thường được kể lại: đứa trẻ nào cưỡng lại được viên kẹo hôm nay sẽ thành công ngày mai.'
+  loai: lich-su
+  nguon:
+  - watts2018
+  trich: Because these findings have been cited as motivation both for interventions designed to boost gratification delay specifically
+  vi_tri: Introduction (cách các kết quả được dùng để thúc đẩy can thiệp)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "một trong những câu chuyện tâm lý học được kể lại nhiều nhất". Không có nguồn xếp hạng; đổi thành "nổi tiếng" (Watts gọi là "famous marshmallow study"). Câu "thành công ngày mai" là cách kể phổ biến, không phải khẳng định của site.'
+- id: n10
+  cau: Trong các thí nghiệm gốc, thời gian chờ phụ thuộc mạnh vào cách trẻ hướng sự chú ý, chứ không chỉ vào "ý chí".
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: effective delay of gratification depended on cognitive avoidance or suppression of the reward objects during the waiting period
+  vi_tri: Discussion, Experiments I-III
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "trẻ chờ được nhờ chiến thuật chứ không phải ý chí thép". Làm mềm: bài 1972 là điều kiện thí nghiệm, không phủ nhận khác biệt cá nhân bền (Mischel 1989: "Enduring individual differences in self-control were found as early as the preschool years").'
+- id: n11
+  cau: Mối liên hệ giữa thời gian chờ và kết quả sau này là tương quan, không phải nhân quả.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: These bivariate correlations were not adjusted for potential confounding factors that could affect both early delay ability and later outcomes.
+  vi_tri: Introduction
+  ket_qua: dung
+- id: n12
+  cau: Một phần lớn mối tương quan ấy có thể đến từ hoàn cảnh gia đình.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: associations between gratification delay and later outcomes are driven by factors unlikely to be altered by child-focused programs (e.g., socioeconomic status [SES], home parenting environment)
+  vi_tri: 'Introduction (giả thuyết của tác giả); kết quả: giảm hai phần ba khi kiểm soát'
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "phần lớn ... có thể đến từ"; giữ "một phần lớn ... có thể": kết quả giảm khoảng hai phần ba khi kiểm soát hoàn cảnh, nhưng đó là phân tích tương quan, không chứng minh nguyên nhân.'
+- id: n13
+  cau: Nghiên cứu Mischel, Ebbesen và Zeiss (1972) gồm 3 thí nghiệm với 92 trẻ trong số trẻ phân tích.
+  loai: so-lieu
+  nguon:
+  - mischel1972
+  trich: The subjects were SO children (25 boys and 25 girls) from the Bmg Nursery School of Stanford University
+  vi_tri: Thí nghiệm I (50 trẻ), II (32 trẻ, 6 bị loại, còn 26), III (16 trẻ)
+  ket_qua: dung
+  ghi_chu: Cộng 50 + 26 + 16 = 92 trẻ phân tích; chữ "SO" trong bản quét là "50". Trang cũ viết "92 trẻ 3–5 tuổi" khớp.
+- id: n14
+  cau: Các trẻ có độ tuổi từ 3 tuổi 5 tháng đến 5 tuổi 6 tháng, ở trường mầm non Bing của Đại học Stanford.
+  loai: so-lieu
+  nguon:
+  - mischel1972
+  trich: They ranged in age from 3 years 6 months to 5 years 6 months, with a mean age of 4 years 6 months
+  vi_tri: 'Thí nghiệm I; III: 3 tuổi 5 tháng đến 5 tuổi 6 tháng'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "3–5 tuổi"; mới nêu khoảng cụ thể (TN I: 3;6–5;6; TN II: 3;9–5;3; TN III: 3;5–5;6; gộp 3;5–5;6).'
+- id: n15
+  cau: Mỗi trẻ chọn một trong hai phần thưởng (kẹo dẻo và bánh quy que); chờ người lớn tự quay lại (tối đa 15 phút) thì được phần mình chọn.
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: if you wait until I come back by myself then you can eat this one
+  vi_tri: Thí nghiệm I, Delay-of-Gratification Contingency Instructions; "waiting to criterion (15 minutes)"
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "mỗi trẻ một mình trong phòng với một phần thưởng (kẹo dẻo, bánh quy...): ăn ngay được một, chờ người lớn quay lại (tối đa ~15–20 phút) được hai". Sai thiết kế: bài 1972 cho chọn giữa hai phần thưởng (marshmallow và pretzel), chờ thì được phần ưa thích, bấm chuông thì được phần kia; tối đa 15 phút (không phải 15–20).'
+- id: n16
+  cau: Nếu bấm chuông gọi người lớn về sớm thì chỉ được phần thưởng còn lại, kém ưa thích hơn.
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: if you ring the bell and bring me back then you can't have the , but you can have the
+  vi_tri: Thí nghiệm I, Instructions
+  ket_qua: dung
+- id: n17
+  cau: 'Các nhà nghiên cứu thay đổi điều kiện: trẻ chờ khi cả hai phần thưởng ở trước mặt hay có đồ chơi; được gợi ý nghĩ chuyện vui, chuyện buồn hay nghĩ về phần thưởng; phần thưởng bị che hay không.'
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: Experiment II demonstrated that only certain cognitive events (thinking fun things) served as effective ideational distractors
+  vi_tri: Abstract; TN I–III
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "có trẻ nhìn thấy kẹo, có trẻ không; có trẻ được gợi ý cách nghĩ khác về viên kẹo". Mới chi tiết theo bài.'
+- id: n18
+  cau: Khi cả hai phần thưởng ở trước mặt và không có gì để làm, trẻ chờ trung bình dưới nửa phút.
+  loai: so-lieu
+  nguon:
+  - mischel1972
+  trich: The low mean delay time of less than | a minute found for this group
+  vi_tri: Thí nghiệm I, Results (Hình 1)
+  ket_qua: dung
+  ghi_chu: Bản quét OCR "less than | a minute" là "less than ½ a minute".
+- id: n19
+  cau: Khi đó không trẻ nào chờ đủ 15 phút.
+  loai: so-lieu
+  nguon:
+  - mischel1972
+  trich: not a single child waited to criterion
+  vi_tri: Thí nghiệm I, Results (Bảng 2)
+  ket_qua: dung
+- id: n20
+  cau: Khi có đồ chơi hoặc được gợi ý nghĩ chuyện vui, trẻ chờ trung bình 8,59 và 12,12 phút.
+  loai: so-lieu
+  nguon:
+  - mischel1972
+  trich: the mean delay times in the latter two conditions being 8.59 and 12 12 minutes, respectively
+  vi_tri: Thí nghiệm I, Results
+  ket_qua: dung
+  ghi_chu: 'Bản quét in "12 12", đọc là 12,12 (khớp TN II/III: "think fun" 12.12).'
+- id: n21
+  cau: Khi có đồ chơi hoặc nghĩ chuyện vui, một nửa số trẻ chờ đủ 15 phút.
+  loai: so-lieu
+  nguon:
+  - mischel1972
+  trich: When distractors were available cogmtively or overtly, half of the subjects waited to criterion
+  vi_tri: Thí nghiệm I, Results (Bảng 2)
+  ket_qua: dung
+- id: n22
+  cau: Nghĩ về chính phần thưởng hay nghĩ chuyện buồn cho thời gian chờ tương tự khi không có gợi ý nào (khác biệt không có ý nghĩa thống kê).
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: instructions to think about the rewards, or to think sad, did not significantly facilitate
+  vi_tri: Thí nghiệm II, Results
+  ket_qua: dung
+- id: n23
+  cau: Khi phần thưởng bị che, trẻ được gợi ý nghĩ về phần thưởng chờ trung bình chỉ 0,78 phút.
+  loai: so-lieu
+  nguon:
+  - mischel1972
+  trich: the mean waiting time was only .78 minute
+  vi_tri: Thí nghiệm III, Results (16 trẻ)
+  ket_qua: dung
+- id: n24
+  cau: Nghĩ về chính phần thưởng (kể cả khi phần thưởng đã bị che đi) làm giảm thời gian chờ.
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: ideating about them and attending to them cognitively serves to substantially decrease, rather than to enhance, the duration of delay
+  vi_tri: Thí nghiệm III, Results
+  ket_qua: da-sua
+  ghi_chu: 'Thay cho: "che mắt, quay đi, tự hát, hoặc tưởng tượng viên kẹo chỉ là đám mây trắng". "Đám mây trắng" (hình dung phần thưởng như vật khác) không có trong bài 1972 (đó là Mischel & Baker 1975, chưa mở); trong bài 1972 gợi ý hát chỉ là ví dụ của "thứ vui để nghĩ" ("singing songs"); trẻ không được hướng dẫn che mắt/quay đi.'
+- id: n25
+  cau: Thời gian chờ thay đổi lớn tùy cách trẻ hướng sự chú ý, chứ không chỉ do một phẩm chất cố định.
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: children waited much longer for a preferred reward when they were distracted from the rewards than when they attended to them directly
+  vi_tri: Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Chờ đợi là một kỹ năng dùng chiến thuật, không phải phẩm chất bẩm sinh." Mạnh hơn bằng chứng: bài 1972 là thao tác điều kiện trong lab; Mischel 1989 còn ghi nhận khác biệt cá nhân bền từ tuổi mẫu giáo.'
+- id: n26
+  cau: Mischel, Shoda và Peake (1988) theo dõi 95 trẻ hơn mười năm sau.
+  loai: so-lieu
+  nguon:
+  - mischel1988
+  trich: related to parental personality ratings obtained a decade later for 95 of these children in adolescence
+  vi_tri: tóm tắt
+  ket_qua: dung
+  ghi_chu: Chỉ đọc tóm tắt.
+- id: n27
+  cau: Trẻ chờ lâu hơn hồi 4–5 tuổi sau này được cha mẹ đánh giá là học tập và giao tiếp xã hội tốt hơn, chịu được thất bại và căng thẳng, tập trung và lập kế hoạch tốt hơn.
+  loai: phat-hien
+  nguon:
+  - mischel1988
+  trich: children who were able to wait longer at age 4 or 5 became adolescents whose parents rated them as more academically and socially competent, verbally fluent, rational, attentive, planful, and able to deal well with frustration and stress
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ứng phó tốt hơn — chịu được thất bại, tập trung, lập kế hoạch tốt hơn"; mới thêm "học tập và giao tiếp xã hội tốt hơn", nói rõ do cha mẹ đánh giá, "4–5 tuổi".'
+- id: n28
+  cau: Trong nghiên cứu 1990, ở điều kiện "chẩn đoán", thời gian chờ có tương quan với điểm SAT (r = 0,57 với SAT toán và 0,42 với SAT ngôn ngữ).
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: r(35) = .57 for math, r (35) = .42 for verbal
+  vi_tri: Introduction, kể lại Shoda 1990
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "thời gian chờ đợi dự đoán được điểm SAT". Thêm điều kiện "chẩn đoán" (không dạy chiến lược, phần thưởng thấy rõ: Watts) và hệ số theo Watts; Shoda 1990 chỉ đọc tóm tắt.'
+- id: n29
+  cau: Tổng quan 1989 trên Science tóm tắt rằng trẻ 4 tuổi chờ lâu hơn trong một số tình huống về sau học tốt hơn và ứng phó với thất vọng và căng thẳng tốt hơn.
+  loai: phat-hien
+  nguon:
+  - mischel1989
+  trich: Those 4-year-old children who delayed gratification longer in certain laboratory situations developed into more cognitively and socially competent adolescents, achieving higher scholastic performance and coping better with frustration and stress.
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "liên hệ khả năng chờ đợi với cách ứng phó stress về sau"; mới thêm "trong một số tình huống" (điều kiện chẩn đoán). Chỉ đọc tóm tắt.'
+- id: n30
+  cau: Các nghiên cứu theo dõi làm trên trẻ từ cộng đồng Đại học Stanford, mẫu nhỏ (35–89 trẻ mỗi phân tích) và đặc thù.
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: very small and highly selective samples of children from the Stanford University community (n s = 35–89
+  vi_tri: Introduction
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "con em cán bộ giảng viên" (không có trong nguồn; Shoda 1990: "university community", Watts: "Stanford University community").'
+- id: n31
+  cau: Các nghiên cứu theo dõi cho thấy tương quan, không chứng minh viên kẹo gây ra thành công.
+  loai: loi-khuyen
+  nguon:
+  - watts2018
+  trich: These bivariate correlations were not adjusted for potential confounding factors
+  vi_tri: Introduction
+  ket_qua: dung
+  ghi_chu: Cùng lập luận với nhận định tương quan/nhân quả ở mục Điều gì đang xảy ra.
+- id: n32
+  cau: Watts và cộng sự dùng dữ liệu của nghiên cứu NICHD (Study of Early Child Care and Youth Development), đa dạng hơn về kinh tế–xã hội.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: we examined associations between performance on a modified version of the marshmallow test and later outcomes in a larger and more diverse sample of children
+  vi_tri: Introduction, Method
+  ket_qua: dung
+- id: n33
+  cau: Trẻ làm bài chờ lúc 54 tháng tuổi và có dữ liệu ở tuổi 15.
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: Our analysis sample was limited to children who had a valid measure of delay of gratification at age 54 months
+  vi_tri: Method, Data
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "918 trẻ 4 tuổi"; 54 tháng là 4,5 tuổi.'
+- id: n34
+  cau: 'Bài chờ là phiên bản chỉnh sửa: trẻ chờ tối đa 7 phút để được thêm một phần thưởng.'
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: If the child waited for 7 min, the interviewer would return, and the child could eat the treat and receive an additional portion as a reward for waiting.
+  vi_tri: Method, Measures
+  ket_qua: dung
+  ghi_chu: 'Trong bản PDF: "If the child waited for 7 min ... they could eat the treat and receive an additional portion as a reward".'
+- id: n35
+  cau: Phân tích chính tập trung vào 552 trẻ có mẹ chưa tốt nghiệp đại học, gấp khoảng mười lần mẫu của Shoda và cộng sự (1990).
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: (n = 552, a sample that is 10 times larger than the sample size in the Shoda et al., 1990, study)
+  vi_tri: Method, Data
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "918 trẻ ... gấp khoảng mười lần mẫu gốc": sai. Gấp mười lần là mẫu 552, không phải 918.'
+- id: n36
+  cau: Với tương quan đơn giản, mối liên hệ giữa thời gian chờ và thành tích ở tuổi 15 chỉ bằng khoảng một nửa độ lớn ban đầu.
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: this bivariate correlation was only half the size of those reported in the original studies
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Khi chạy đúng kiểu phân tích như Mischel ... vẫn thấy tương quan". Mới nói rõ là tương quan đơn giản (bivariate).'
+- id: n37
+  cau: Với thành tích học tập ở tuổi 15, hệ số chuẩn hóa còn 0,08 (có ý nghĩa thống kê) khi kiểm soát các yếu tố trước 54 tháng, và 0,05 (không có ý nghĩa thống kê) khi thêm yếu tố đo cùng lúc.
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: became nonsignificant when 54-months controls were added, β = 0.05, SE = 0.03, p = .140
+  vi_tri: Results, Bảng 3 (n = 552); β = 0,08, p = 0,016 khi kiểm soát yếu tố trước 54 tháng
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "co lại thêm hai phần ba, còn rất nhỏ — với thành tích học tập vẫn còn ý nghĩa thống kê dù yếu hơn nhiều". Mới chính xác hơn. Hệ số tương quan đơn giản là 0,24 (p < 0,001).'
+- id: n38
+  cau: Với các chỉ số hành vi ở tuổi 15, mối liên hệ nhỏ và hiếm khi có ý nghĩa thống kê.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: Associations between delay time and measures of behavioral outcomes at age 15 were much smaller and rarely statistically significant.
+  vi_tri: Abstract
+  ket_qua: dung
+- id: n39
+  cau: 'Kidd, Palmeri và Aslin (2013): thí nghiệm với 28 trẻ (tuổi trung bình 4 tuổi 6 tháng).'
+  loai: so-lieu
+  nguon:
+  - kidd2013
+  trich: We tested children (M=4;6, N=28)
+  vi_tri: tóm tắt (PubMed 23063236)
+  ket_qua: dung
+  ghi_chu: Chỉ đọc tóm tắt.
+- id: n40
+  cau: Trẻ ở môi trường người lớn không đáng tin chờ ít hơn đáng kể so với trẻ ở môi trường đáng tin.
+  loai: phat-hien
+  nguon:
+  - kidd2013
+  trich: Children in the reliable condition waited significantly longer than those in the unreliable condition (p<0.0005)
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "trẻ vừa bị người lớn thất hứa thì chờ kẹo ít hơn hẳn trẻ được giữ lời hứa"; mới nêu N = 28, "đáng kể" và dùng đúng điều kiện (môi trường không đáng tin/đáng tin). Chi tiết "thất hứa" (bài gốc: người thí nghiệm không giữ lời) chưa đọc toàn văn.'
+- id: n41
+  cau: 'Khá vững: cách trẻ hướng sự chú ý trong lúc chờ làm thay đổi khả năng chờ đợi.'
+  loai: nhan
+  nguon:
+  - mischel1972
+  trich: children waited much longer for a preferred reward when they were distracted from the rewards than when they attended to them directly
+  vi_tri: Abstract
+  nhan: kha-vung
+  co_so:
+  - mischel1972
+  ly_do: Thí nghiệm có thao tác điều kiện nên kết luận nhân quả trong lab; nhưng mẫu nhỏ (6–10 trẻ mỗi nhóm), một trường mầm non, chưa mở được phân tích tổng hợp hay tái lập lớn có đăng ký trước, nên chưa đạt Vững chắc (mục 4).
+  ket_qua: da-lam-mem
+  ghi_chu: 'chỗ khó: chữ cũ là :::vung-chac. Thước đo Vững chắc đòi phân tích tổng hợp/hai tái lập lớn; chưa có; hạ xuống Khá vững. Người giao/lượt 2 xem lại: nếu có phân tích tổng hợp về phân tán chú ý ở trẻ (chưa mở), có thể nâng.'
+- id: n42
+  cau: 'Khá vững: thời gian chờ đợi tương quan với một số kết quả tuổi teen trong mẫu gốc (và, ở mức nhỏ hơn, trong lần làm lại).'
+  loai: nhan
+  nguon:
+  - watts2018
+  - mischel1988
+  trich: this bivariate correlation was only half the size of those reported in the original studies
+  vi_tri: Abstract Watts; tóm tắt Mischel 1988
+  nhan: kha-vung
+  co_so:
+  - watts2018
+  - mischel1988
+  - mischel1989
+  - shoda1990
+  ly_do: 'Có tương quan trong mẫu gốc (nhỏ, đặc thù) và một tương quan đơn giản nhỏ hơn trong một lần làm lại lớn hơn (Watts 2018); chưa có tái lập trực tiếp lớn và còn gây nhiễu: đúng mô tả "nhiều nghiên cứu cùng chiều nhưng còn giới hạn".'
+  ket_qua: da-sua
+  ghi_chu: 'Giữ Khá vững; thêm câu: lần làm lại 2018 cũng thấy tương quan đơn giản (nhỏ hơn); bỏ "con em trí thức Stanford", thay "cộng đồng Đại học Stanford".'
+- id: n43
+  cau: 'Đang tranh cãi: "viên kẹo dẻo đo ý chí và định đoạt tương lai".'
+  loai: nhan
+  nguon:
+  - watts2018
+  trich: associations between gratification delay and later outcomes are driven by factors unlikely to be altered by child-focused programs (e.g., socioeconomic status [SES], home parenting environment)
+  vi_tri: Introduction; Abstract
+  nhan: tranh-cai
+  co_so:
+  - watts2018
+  ly_do: 'Một lần làm lại lớn, đa dạng hơn thấy mối liên hệ chỉ bằng khoảng một nửa và giảm thêm hai phần ba khi kiểm soát gia đình: đúng mô tả "hiệu ứng nhỏ hơn nhiều so với tuyên bố ban đầu" của Đang tranh cãi (mục 4). Không đủ "các kiểm tra đủ mạnh liên tục thất bại" cho Đã bị bác bỏ.'
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: chữ cũ :::bac-bo. Chỉ có một lần làm lại (Watts 2018, quan sát, không đăng ký trước); chưa mở các phân tích lại khác (vd. Falk 2020, Doebel 2020: chưa đọc). Hạ từ Đã bị bác bỏ xuống Đang tranh cãi theo thước đo; đổi chữ khung. Người giao/lượt 2 cân nhắc.'
+- id: n44
+  cau: Metcalfe và Mischel (1999) đề xuất hệ "lạnh" nhận thức, trung tính về cảm xúc, là nơi đặt sự tự điều chỉnh; hệ "nóng" cảm xúc, bốc đồng, dễ làm hỏng nỗ lực tự kiềm chế.
+  loai: phat-hien
+  nguon:
+  - metcalfe1999
+  trich: The cool system is cognitive, emotionally neutral, contemplative, flexible, integrated, coherent, spatiotemporal, slow, episodic, and strategic.
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "hệ nóng phản ứng với sự hấp dẫn của phần thưởng ("ngọt, dẻo, thơm"); hệ lạnh xử lý trừu tượng ("đám mây trắng"). Trẻ chờ được là trẻ biết chuyển sang hệ lạnh — kỹ năng có thể học, không phải số phận". Mới theo tóm tắt: cân bằng phụ thuộc stress, giai đoạn phát triển, cách tự điều chỉnh. Bỏ "kỹ năng có thể học, không phải số phận" (không có trong tóm tắt). Chỉ đọc tóm tắt. Chú ý: id metcalfe1999 chưa có trong src/data/nguon.yml.'
+- id: n45
+  cau: Theo mô hình hệ nóng–lạnh, cân bằng giữa hai hệ phụ thuộc vào stress, giai đoạn phát triển và cách tự điều chỉnh của mỗi người.
+  loai: phat-hien
+  nguon:
+  - metcalfe1999
+  trich: The balance between the hot and cool systems is determined by stress, developmental level, and the individual's self-regulatory dynamics.
+  vi_tri: tóm tắt
+  ket_qua: dung
+- id: n46
+  cau: Kidd và cộng sự đề xuất rằng thời gian chờ phản ánh cả niềm tin hợp lý về việc chờ có được đền đáp hay không, ngoài tự kiểm soát.
+  loai: phat-hien
+  nguon:
+  - kidd2013
+  trich: children's wait-times are modulated by an implicit, rational decision-making process that considers environmental reliability
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "chờ đợi trong môi trường không đáng tin không phải thiếu ý chí, mà là quyết định khôn ngoan" (quá mạnh). Mới: "có thể là quyết định hợp lý, không nhất thiết là thiếu ý chí".'
+- id: n47
+  cau: Watts và cộng sự cho rằng mối liên hệ có thể do các yếu tố khác như hoàn cảnh kinh tế–xã hội và môi trường nuôi dạy; riêng dữ liệu quan sát này không chứng minh điều đó.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: unobserved
+  vi_tri: Introduction; Discussion
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "gia đình có điều kiện vừa nuôi dưỡng khả năng chờ đợi (dạy chiến thuật, môi trường ổn định), vừa tạo ra điểm số cao sau này" (cơ chế "dạy chiến thuật" không có trong nguồn). Mới theo giả thuyết của Watts.'
+- id: n48
+  cau: 'Không nên dùng bài kẹo dẻo làm "bài test" cho con: mối liên hệ yếu và phần lớn gắn với hoàn cảnh gia đình.'
+  loai: loi-khuyen
+  nguon:
+  - watts2018
+  trich: this bivariate correlation was only half the size of those reported in the original studies and was reduced by two thirds in the presence of controls
+  vi_tri: Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "dán nhãn thiếu ý chí cho một đứa trẻ 4 tuổi vừa sai vừa có hại" ("có hại" không có nguồn). Mới dựa vào độ lớn tương quan.'
+- id: n49
+  cau: Trong thí nghiệm 1972, trẻ mẫu giáo chờ lâu hơn nhiều khi có đồ chơi hay nghĩ chuyện vui thay vì nhìn hay nghĩ về phần thưởng; điều này gợi ý có thể dời sự chú ý của trẻ khỏi thứ đang thèm, nhưng đó là kết quả trong phòng thí nghiệm.
+  loai: loi-khuyen
+  nguon:
+  - mischel1972
+  trich: attentional and cognitive mechanisms which enhanced the salience of the rewards shortened the length of voluntary delay, while distractions from the rewards, overtly or cognitively, facilitated delay
+  vi_tri: Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Dạy chiến thuật, đừng rèn ý chí: ... che phần thưởng khỏi tầm mắt, nghĩ về nó theo cách trừu tượng, tìm việc khác làm... Đó chính là điều thí nghiệm 1972 chứng minh". "Nghĩ trừu tượng" không có trong bài 1972 (ở đó, nghĩ về phần thưởng làm giảm chờ); "chứng minh" quá mạnh; "che phần thưởng": bài 1972 có TN III (che phần thưởng) nhưng nhóm so sánh nghĩ chuyện vui hay không gợi ý đều chờ lâu.'
+- id: n50
+  cau: Trong thí nghiệm của Kidd và cộng sự (28 trẻ), trẻ ở môi trường người lớn không giữ lời chờ ít hơn đáng kể; giữ lời hứa là cách để trẻ có lý do tin rằng chờ đợi được đền đáp.
+  loai: loi-khuyen
+  nguon:
+  - kidd2013
+  trich: Children in the reliable condition waited significantly longer than those in the unreliable condition (p<0.0005)
+  vi_tri: tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "mỗi lần người lớn thất hứa, trẻ học được rằng chờ đợi là dại": suy ra quá xa từ một thí nghiệm nhỏ. Phần "suy rộng ra" là suy luận, đã ghi trên trang.'
+- id: n51
+  cau: Với chính mình, có thể thử để đồ ăn vặt xa tầm mắt; đây là suy luận từ kết quả ở trẻ em, chưa được kiểm chứng ở người lớn.
+  loai: loi-khuyen
+  nguon:
+  - mischel1972
+  trich: overtly or cognitively, facilitated delay
+  vi_tri: Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "bạn không thiếu ý chí khi không cưỡng lại được đồ ăn vặt để ngay trên bàn — hãy để xa tầm mắt, mua ít đi". Không có nguồn ở người lớn trong hồ sơ; viết thành gợi ý có rào đón. "Mua ít đi" bỏ.'
+- id: n52
+  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu kẹo dẻo trên trẻ em Việt Nam.
+  loai: thoi-su
+  het_han: '2028-10-01'
+  ket_qua: dung
+  ghi_chu: 'Tìm 30/10/2026: PubMed (marshmallow test Vietnam: 0 kết quả; delay of gratification Vietnamese children: 0), Crossref (truy vấn marshmallow + delay of gratification + Vietnam: không có nghiên cứu trên trẻ Việt). Chưa tìm Google Scholar hay tạp chí trong nước.'
+- id: n53
+  cau: Các nghiên cứu ở trang này đều ở Mỹ, nên không nên mặc nhiên coi kết quả đúng cho trẻ ở nơi khác.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: Participants were recruited at birth from 10 U.S. sites across the country
+  vi_tri: Method, Data
+  ket_qua: dung
+  ghi_chu: 'Mischel: Stanford (Mỹ); Watts: NICHD ở 10 địa điểm Mỹ; Kidd: Rochester (Mỹ).'
+- id: n54
+  cau: Câu "Câu chuyện kẹo dẻo rất được ưa chuộng trên các diễn đàn nuôi dạy con ở Việt Nam ... khoảng cách điều kiện giữa các gia đình còn lớn..." đã bỏ khỏi trang.
+  loai: loi-khuyen
+  ket_qua: da-bo
+  ghi_chu: 'Chữ cũ: "Câu chuyện kẹo dẻo rất được ưa chuộng ... Quy kết tương lai của trẻ cho một bài test ý chí là bất công với cả trẻ lẫn gia đình." Không có nguồn về mức phổ biến trên diễn đàn, về khoảng cách điều kiện gia đình ở Việt Nam, và "bất công" là bình luận giá trị.'
+- id: n55
+  cau: '"Trẻ không chờ được kẹo thì tương lai mờ mịt": không có bằng chứng; mối liên hệ chỉ là tương quan, bằng khoảng một nửa bản gốc ở lần làm lại và giảm thêm khoảng hai phần ba khi tính đến hoàn cảnh gia đình.'
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: reduced by two thirds in the presence of controls
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "gần như biến mất khi tính đến hoàn cảnh gia đình"; mới dùng số của Watts.'
+- id: n56
+  cau: Thời gian chờ phản ánh nhiều thứ cùng lúc (cách hướng chú ý, niềm tin vào người lớn, hoàn cảnh gia đình); các nghiên cứu ở đây chưa tách được phần "ý chí bẩm sinh".
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  - kidd2013
+  - watts2018
+  trich: children's wait-times reflected reasoned beliefs about whether waiting would ultimately pay off
+  vi_tri: Kidd tóm tắt; Mischel 1972; Watts
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "ý chí bẩm sinh (nếu có) chỉ là một phần nhỏ": không nguồn.'
+- id: n57
+  cau: Lần làm lại 2018 cho thấy một phần lớn mối liên hệ giữa thời gian chờ và kết quả sau này biến mất khi tính đến nền tảng gia đình và môi trường.
+  loai: phat-hien
+  nguon:
+  - watts2018
+  trich: reduced by two thirds in the presence of controls for family background, early cognitive ability, and the home environment
+  vi_tri: Abstract
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "chính môi trường ... định hình phần lớn những gì bài test đo được" (nhân quả không chứng minh). Mới theo tương quan có kiểm soát.'
+- id: n58
+  cau: 'Quiz 1: trong các thí nghiệm 1972, trẻ chờ lâu hơn khi chú ý được dời khỏi phần thưởng (đồ chơi hoặc nghĩ chuyện vui); nghĩ về chính phần thưởng thì chờ ngắn.'
+  loai: phat-hien
+  nguon:
+  - mischel1972
+  trich: distractions from the rewards, overtly or cognitively, facilitated delay
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Đáp án đúng chữ cũ: "Chiến thuật ... che mắt, quay đi, hoặc đám mây trắng ..." (không có trong bài 1972). Giải thích cũ "phần vững chắc nhất" đổi: nhãn đã hạ Khá vững.'
+- id: n59
+  cau: 'Quiz 2: thời gian chờ ở tuổi mẫu giáo tương quan với điểm SAT và đánh giá ứng phó ở tuổi teen, trong một mẫu nhỏ, đặc thù (trường Bing, Stanford).'
+  loai: phat-hien
+  nguon:
+  - watts2018
+  - mischel1988
+  trich: very small and highly selective samples of children from the Stanford University community
+  vi_tri: Introduction
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ở tuổi 4"; mới "tuổi mẫu giáo" (4–5 tuổi). Trích dẫn "(1988, 1990)" ở câu hỏi giữ.'
+- id: n60
+  cau: 'Quiz 3: lần làm lại 2018 thấy tương quan chỉ còn khoảng một nửa bản gốc và giảm thêm khoảng hai phần ba khi tính đến nền tảng gia đình, năng lực nhận thức sớm và môi trường gia đình.'
+  loai: so-lieu
+  nguon:
+  - watts2018
+  trich: reduced by two thirds in the presence of controls for family background, early cognitive ability, and the home environment
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "co lại thêm hai phần ba"; giải thích cũ "gần như biến mất... Hoàn cảnh giải thích phần lớn" đổi thành "giảm mạnh ... gợi ý".'
+- id: n61
+  cau: 'Quiz 4: trẻ ở môi trường người lớn không giữ lời chờ ít hơn đáng kể.'
+  loai: phat-hien
+  nguon:
+  - kidd2013
+  trich: Children in the reliable condition waited significantly longer than those in the unreliable condition (p<0.0005)
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "vừa bị người lớn thất hứa chờ kẹo ít hơn hẳn".'
+- id: n62
+  cau: 'Quiz 5: không dùng bài test làm thước đo; giữ lời hứa với trẻ; thử dời sự chú ý của trẻ khỏi thứ đang thèm.'
+  loai: loi-khuyen
+  nguon:
+  - mischel1972
+  - kidd2013
+  trich: distractions from the rewards, overtly or cognitively, facilitated delay
+  vi_tri: Abstract; Kidd tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Dạy chiến thuật chờ đợi (che phần thưởng..., nghĩ trừu tượng...), giữ lời hứa, sắp xếp môi trường thay vì tra tấn ý chí". Giải thích cũ "Mischel cả đời nghiên cứu ... chưa bao giờ nói viên kẹo là bản án chung thân" bỏ (không nguồn).'
+- id: n63
+  cau: Link "tương quan và nhân quả" trỏ tới trang /psyche/bang-chung/tuong-quan-nhan-qua/.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm bằng grep: id bang-chung/tuong-quan-nhan-qua có trong src/data/trang.yml (không build theo lời giao).'
+- id: n64
+  cau: 'Trang này là trang nhà của nghiên cứu kẹo dẻo: nơi khác chỉ tóm một câu và link về.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id keo-deo, trang_nha: thi-nghiem/keo-deo, nguon [mischel1972, mischel1988, mischel1989, shoda1990].'
+- id: n65
+  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Như n58 của asch.yml (src/plugins/thanh-phan.mjs, hàm tomTat).
+- id: n66
+  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Bốn dòng của hộp khớp mục Nghiên cứu then chốt (số liệu kiểm ở các nhận định về Mischel 1972).
+doi_chu:
+- cu: (không có)
+  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+  ly_do: Bố cục C (kế hoạch).
+- cu: (không có)
+  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'
+  ly_do: Bố cục C (kế hoạch).

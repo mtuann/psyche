@@ -1,123 +1,127 @@
 ---
 title: Nỗi sợ có thể "dạy" được? (Thí nghiệm Little Albert)
-description: John B. Watson và Rosalie Rayner (1920) đã "dạy" một bé trai 11 tháng tuổi sợ chuột trắng bằng cách ghép nó với tiếng động lớn — và không bao giờ gỡ bỏ nỗi sợ đó. Thí nghiệm nổi tiếng nhất về điều kiện hóa nỗi sợ, và cũng là một trong những vi phạm đạo đức nghiêm trọng nhất của tâm lý học.
+description: John B. Watson và Rosalie Rayner (1920) báo cáo đã "dạy" một bé trai 11 tháng tuổi sợ chuột trắng bằng cách ghép nó với tiếng động lớn, và không gỡ nỗi sợ ấy trước khi bé rời bệnh viện. Một phân tích đoạn phim năm 2021 cho rằng bằng chứng điều kiện hóa yếu hơn giáo trình vẫn kể. Thí nghiệm nổi tiếng về điều kiện hóa nỗi sợ, và cũng đặt ra vấn đề đạo đức mà chính các tác giả đã nhắc tới.
 in_duoc: true
 ---
 
 ::tom-tat
 
+:::ho-so-nghien-cuu
+- **Tác giả, năm** John B. Watson và Rosalie Rayner, 1920; phần gỡ nỗi sợ: Mary Cover Jones, 1924
+- **Người tham gia** Một bé trai, "Albert B.", 11 tháng 3 ngày tuổi khi bắt đầu điều kiện hóa, được nuôi trong bệnh viện Harriet Lane Home (mẹ bé là vú nuôi ở đó)
+- **Thiết kế** Một trẻ, không có nhóm đối chứng: chuột trắng được ghép với tiếng búa đập vào thanh thép sau đầu bé (bảy lần ghép đôi ở hai buổi), rồi thử với thỏ, chó, áo lông hải cẩu, mặt nạ; kiểm tra lại sau 31 ngày
+- **Kết quả chính** Theo báo cáo, bé né chuột sau các lần ghép đôi và né cả thỏ, chó, áo lông; sau 31 ngày vẫn còn né, nhẹ hơn; bé rời bệnh viện trước khi có cách gỡ. Phân tích đoạn phim năm 2021 cho rằng bằng chứng điều kiện hóa yếu hơn kể
+:::
+
 ## Tự trải nghiệm
 
-Hãy tưởng tượng bạn chăm sóc một bé trai 11 tháng tuổi, khỏe mạnh, tính tình bình thản, chẳng sợ gì cả. Bé thích nghịch một con chuột trắng. Một ngày, cứ mỗi lần bé đưa tay ra chạm vào con chuột, có người đập thật mạnh một thanh thép ngay sau lưng bé — tiếng vang chói tai đến mức bé giật mình khóc thét.
+Hãy tưởng tượng bạn chăm sóc một bé trai 11 tháng tuổi, khỏe mạnh, tính tình bình thản, chẳng sợ gì cả. Bé tò mò với một con chuột trắng. Một ngày, cứ mỗi lần bé đưa tay ra chạm vào con chuột, có người đập thật mạnh một thanh thép ngay sau lưng bé — tiếng vang chói tai đến mức bé giật mình, ngã người về phía trước.
 
 > Bạn đoán: phải lặp lại bao nhiêu lần như thế thì bé bắt đầu sợ con chuột — kể cả khi không còn tiếng động? Và nỗi sợ đó có lan sang những thứ bé chưa từng bị dọa — như con thỏ, con chó, hay cái áo lông — không?
 
 :::thu-gon[Xem đáp án]
-**Chỉ 2 lần ghép đôi, Albert đã bắt đầu sợ chuột trắng.** Một tuần sau, sau 5 lần ghép đôi tiếp theo, nỗi sợ trở nên dữ dội: bé khóc, bò lùi ra xa mỗi khi thấy con chuột — không cần tiếng động. Và đúng như bạn đoán: nỗi sợ lan sang thỏ, chó, áo lông thú, thậm chí cả mặt nạ râu tóc. Watson và Rayner đã "dạy" được nỗi sợ — và không bao giờ "gỡ" nó cho bé.
+**Theo Watson và Rayner, sau 2 lần ghép đôi Albert đã có phản ứng né chuột trắng nhẹ.** Một tuần sau, thêm 5 lần ghép đôi (tổng cộng 7), bé khóc và bò đi xa ngay khi thấy con chuột, không cần tiếng động. Phản ứng né lan sang thỏ, chó, áo lông hải cẩu và mặt nạ ông già Noel. Họ không có dịp gỡ nỗi sợ ấy vì Albert rời bệnh viện. Tuy vậy, một phân tích đoạn phim gốc năm 2021 cho rằng quy trình điều kiện hóa phần lớn không hiệu quả, và những dấu hiệu khó chịu yếu của Albert có thể giải thích bằng nhạy cảm hóa và sự trưởng thành.
 :::
 
 ## Điều gì đang xảy ra?
 
-Thí nghiệm của John B. Watson và Rosalie Rayner là minh chứng trực tiếp đầu tiên cho thấy **cảm xúc sợ hãi có thể được điều kiện hóa ở người** — đúng như Ivan Pavlov đã làm với phản xạ tiết nước bọt ở chó. Chuột trắng (kích thích trung tính) ghép với tiếng động lớn gây giật mình (kích thích không điều kiện) → tiếng động một mình đã đủ gây sợ (phản ứng không điều kiện). Sau vài lần lặp lại, chuột trắng một mình cũng gây sợ — nó đã trở thành kích thích có điều kiện.
+Thí nghiệm của John B. Watson và Rosalie Rayner là một nỗ lực thực nghiệm sớm nhằm kiểm tra giả thuyết rằng **cảm xúc sợ hãi có thể được điều kiện hóa ở người**, theo mô hình điều kiện hóa cổ điển mà Ivan Pavlov đã dùng với phản xạ tiết nước bọt ở chó. Theo mô hình ấy: chuột trắng (kích thích trung tính) ghép với tiếng động lớn gây giật mình (kích thích không điều kiện), tiếng động một mình đã đủ gây sợ (phản ứng không điều kiện); sau các lần ghép đôi, chuột trắng một mình cũng gây phản ứng sợ, tức là nó đã trở thành kích thích có điều kiện.
 
-Điều làm thí nghiệm này nổi tiếng không chỉ là kết quả, mà còn là giá phải trả: đối tượng là một trẻ sơ sinh 11 tháng tuổi, và nỗi sợ được tạo ra **không bao giờ được xóa bỏ**. Đó là lý do bài báo này xuất hiện trong mọi giáo trình tâm lý học — vừa như một cột mốc khoa học, vừa như một lời cảnh báo đạo đức.
+Bài báo là một trong những nghiên cứu được trích dẫn nhiều nhất trong tâm lý học, thường được trình bày như bằng chứng cho vai trò của điều kiện hóa cổ điển trong sự hình thành nỗi sợ. Nó cũng đặt ra vấn đề đạo đức: đối tượng là một em bé 11 tháng tuổi, và bé rời bệnh viện mà nỗi sợ chưa được gỡ. Chính các tác giả viết rằng họ đã do dự, vì việc gây sợ thực nghiệm "mang một trách nhiệm nhất định".
 
 ## Nghiên cứu then chốt
 
 ### Watson & Rayner (1920): một bé trai, năm buổi thử
 
-**Đối tượng.** "Albert B.", con của một vú nuôi tại nhà trẻ bệnh viện Harriet Lane (thuộc Đại học Johns Hopkins, Baltimore, Mỹ), được nuôi gần như từ lúc mới sinh trong môi trường bệnh viện. Watson mô tả bé khỏe mạnh, phát triển tốt, tính tình bình thản và ít biểu lộ cảm xúc — chính sự ổn định ấy là lý do họ chọn bé: họ tự trấn an rằng thí nghiệm "không gây hại đáng kể" cho một đứa trẻ như vậy ([Watson & Rayner, 1920](https://doi.org/10.1037/h0069608)).
+**Đối tượng.** "Albert B.", mẹ bé là vú nuôi tại Harriet Lane Home for Invalid Children (nhà dành cho trẻ em bệnh), được nuôi gần như từ lúc mới sinh trong môi trường bệnh viện. Bài báo mô tả bé khỏe mạnh từ lúc sinh, phát triển tốt, tính tình điềm tĩnh và ít biểu lộ cảm xúc — chính sự ổn định ấy là một lý do chọn bé: các tác giả tự trấn an rằng họ có thể gây tương đối ít hại cho bé ([Watson & Rayner, 1920](https://doi.org/10.1037/h0069608)).
 
-**Thiết kế.** Trước hết, ở khoảng 8 tháng 26 ngày tuổi, Albert được kiểm tra phản ứng cảm xúc với hàng loạt vật: chuột trắng, thỏ, chó, khỉ, mặt nạ, bông gòn, giấy báo đang cháy. Kết quả: **bé không sợ bất cứ thứ gì** — thậm chí còn thích chơi với con chuột. Chỉ có tiếng động lớn (búa đập vào thanh thép treo ngay sau đầu bé) mới khiến bé giật mình, môi run và khóc. Tiếng động chính là "vũ khí" gây sợ.
+**Thiết kế.** Trước hết, ở khoảng 9 tháng tuổi, Albert được cho xem lần lượt, đột ngột và lần đầu, chuột trắng, thỏ, chó, khỉ, mặt nạ có và không có tóc, bông gòn, giấy báo đang cháy. Phản ứng thường gặp nhất là sờ, nghịch; bé không lần nào tỏ ra sợ, và không ai từng thấy bé trong trạng thái sợ hay giận dữ. Lúc 8 tháng 26 ngày, bé được thử với tiếng động lớn — búa đập vào thanh thép treo sau lưng — và giật mình mạnh, thở ngừng; sang lần đập thứ ba, môi run rồi bé khóc òa. Tiếng động là kích thích gây sợ.
 
 Ở **11 tháng 3 ngày tuổi**, điều kiện hóa bắt đầu:
 
-- **Buổi 1:** chuột trắng + tiếng động, chỉ **2 lần ghép đôi**. Albert bắt đầu rùng mình, rên rỉ.
-- **Buổi 2** (một tuần sau, 11 tháng 10 ngày): đưa chuột trắng ra **không kèm tiếng động** → bé đã sợ ở mức nhẹ. Ghép đôi thêm **5 lần** → nỗi sợ trở nên dữ dội: bé khóc to, bò tránh xa.
-- **Buổi 3** (11 tháng 15 ngày): kiểm tra **khái quát hóa**. Bé được cho xem thỏ, chó, áo lông hải cẩu, bông gòn, tóc của chính Watson, mặt nạ ông già Noel → bé sợ hầu hết, dù những vật này chưa bao giờ đi kèm tiếng động.
-- **Buổi 4** (11 tháng 20 ngày): chuyển sang phòng mới, "làm mới" nỗi sợ bằng vài lần ghép đôi nữa; lần đầu tiên thỏ và chó cũng được ghép trực tiếp với tiếng động. Có một sự cố ngoài kịch bản: một con chó sủa ầm ĩ làm cả Albert lẫn người lớn có mặt đều giật mình.
-- **Buổi 5** (12 tháng 21 ngày, sau một tháng): kiểm tra lại. Phản ứng sợ có yếu đi phần nào (tắt dần một phần), nhưng bé vẫn né tránh chuột, thỏ, chó, áo lông. **Sau buổi này Albert rời bệnh viện — không một lần giải điều kiện hóa nào được thực hiện.**
+- **Buổi 1:** chuột trắng + tiếng động, **2 lần ghép đôi** (bé đưa tay chạm chuột thì thanh thép bị đập sau đầu). Lần đầu bé giật mình và ngã người về phía trước, không khóc; lần hai bé giật mình và bắt đầu rên rỉ.
+- **Buổi 2** (một tuần sau, 11 tháng 10 ngày): đưa chuột trắng ra **không kèm tiếng động** → bé không còn tự nhiên với chuột, rụt tay lại khi chuột chạm vào tay. Ghép đôi thêm **5 lần** (tổng cộng 7) rồi đưa chuột ra một mình → bé khóc ngay, quay người, ngã sang bên và bò đi nhanh đến mức phải chạy theo mới bắt kịp.
+- **Buổi 3** (11 tháng 15 ngày, năm ngày sau buổi 2): bé vẫn né chuột, trong khi chơi khối gỗ bình thường. Rồi kiểm tra **khái quát hóa**: thỏ gây phản ứng rõ rệt (khóc, bò đi), chó gây phản ứng nhẹ hơn thỏ nhưng bé khóc khi chó lại gần đầu, áo lông hải cẩu làm bé khóc và cố bò đi, bông gòn gây phản ứng nhẹ hơn; tóc của Watson và mặt nạ ông già Noel bị né, còn tóc của hai người quan sát khác thì bé chơi. Những vật này chưa từng đi kèm tiếng động.
+- **Buổi 4** (11 tháng 20 ngày): phản ứng với chuột đã yếu hơn buổi trước, nên các tác giả "làm mới" bằng cách ghép đôi chuột với tiếng động; lần đầu tiên thỏ và chó cũng được ghép trực tiếp với tiếng động. Sau đó bé được chuyển sang một phòng giảng lớn, sáng hơn, có bốn người; phản ứng với chuột và thỏ yếu hơn. Có một sự cố ngoài kịch bản: con chó vốn im lặng bỗng sủa ba lần sát mặt bé làm bé òa khóc, và làm cả người lớn có mặt giật mình.
+- **Buổi 5** (1 tuổi 21 ngày, tức 31 ngày sau; suốt thời gian ấy bé ở nhà trẻ bệnh viện và không có thử nghiệm cảm xúc nào): kiểm tra lại. Phản ứng yếu đi phần nào, nhưng bé vẫn né mặt nạ, áo lông, thỏ, chó, và với chuột thì rụt tay, nhăn mặt, che mắt bằng hai tay khi chuột bò lên ngực. **Chính ngày ấy Albert rời bệnh viện — không một lần giải điều kiện hóa nào được thực hiện.**
 
-Chính Watson và Rayner đã đặt ra câu hỏi thứ tư trong bài báo: *nếu nỗi sợ không tự mất đi, phòng thí nghiệm có cách nào gỡ bỏ nó không?* Họ không bao giờ trả lời được câu hỏi của chính mình — vì đối tượng thí nghiệm đã đi mất.
+Chính Watson và Rayner đã đặt ra câu hỏi thứ tư trong bài báo: *nếu nỗi sợ không tự mất đi, phòng thí nghiệm có cách nào gỡ bỏ nó không?* Với Albert, họ không có dịp thử: bé rời bệnh viện đúng ngày ấy. Họ viết rằng các phản ứng này, theo quan điểm "có lẽ chưa có cơ sở vững", có thể tồn tại lâu dài nếu không có cách gỡ.
 
 ### Mary Cover Jones (1924): câu trả lời đạo đức đến sau
 
-Bốn năm sau, một nghiên cứu sinh của Watson — Mary Cover Jones — đã làm điều Watson không làm: **gỡ bỏ** nỗi sợ ở trẻ em. Với bé Peter, 3 tuổi, sợ thỏ trắng, Jones dùng phương pháp "giải mẫn cảm dần dần": cho Peter ăn món yêu thích (kẹo, đồ chơi) trong khi con thỏ được đưa lại gần từng chút một qua nhiều buổi. Nỗi sợ của Peter giảm dần và biến mất. Đây là tiền thân của liệu pháp phơi nhiễm (exposure therapy) ngày nay — và là minh chứng rằng khoa học hoàn toàn có thể tạo ra kiến thức mà không cần gây tổn thương vĩnh viễn ([Cover Jones, 1924](https://doi.org/10.1080/08856559.1924.9944851)).
+Khoảng ba năm sau, Mary Cover Jones, làm việc với sự cố vấn của Watson, gặp một cậu bé tên Peter, 2 tuổi 10 tháng, sợ chuột trắng, và nỗi sợ ấy lan sang thỏ, áo lông, lông vũ, bông gòn. Bà dùng thỏ để "gỡ" nỗi sợ bằng nhiều cách: mỗi ngày Peter chơi cùng ba trẻ không sợ thỏ, thỏ có mặt một phần buổi chơi; sau khi Peter nằm viện hai tháng rồi quay lại và sợ trở lại, bà thêm "điều kiện hóa trực tiếp": cho Peter ăn món ưa thích trong khi thỏ trong lồng được đưa lại gần từng chút. Cuối cùng Peter vuốt, bế thỏ, và nỗi sợ bông gòn, áo lông, lông vũ không còn. Jones nhấn mạnh đây là một ca và nghiên cứu còn dang dở ([Cover Jones, 1924](https://doi.org/10.1080/08856559.1924.9944851)).
 
 ## Mức độ chắc chắn
 
 :::vung-chac[nỗi sợ có thể được điều kiện hóa ở người]
-Không chỉ qua Albert: hàng thập kỷ nghiên cứu sau này trong phòng thí nghiệm (với người trưởng thành tình nguyện) đã xác nhận cơ chế điều kiện hóa sợ hãi hoạt động ở người, và nó là nền tảng của nhiều liệu pháp điều trị ám ảnh sợ hãi. Đây là kết luận khoa học đứng vững của thí nghiệm.
+Albert không phải là bằng chứng đáng tin cho điều này (xem khung "Đang tranh cãi" bên dưới). Nhưng điều kiện hóa sợ hãi ở người đã được nghiên cứu rộng rãi trong phòng thí nghiệm: phân tích tổng hợp cập nhật của Duits và cộng sự (2015) gồm 44 nghiên cứu (963 bệnh nhân rối loạn lo âu, 1.222 người đối chứng) cho thấy khác biệt nhất quán giữa hai nhóm trong mô hình điều kiện hóa sợ hãi cổ điển; các quá trình tắt dần của nỗi sợ được cho là nền tảng của liệu pháp phơi nhiễm. Trang này không hướng dẫn điều trị; nếu một nỗi sợ gây khổ sở, xem [trang Hỗ trợ](/psyche/ho-tro/).
 :::
 
-:::vung-chac[nỗi sợ của Albert không bao giờ được gỡ bỏ]
-Chính bài báo gốc ghi lại: Albert rời bệnh viện sau buổi kiểm tra cuối cùng, và không một thủ thuật giải điều kiện hóa nào được áp dụng. Câu hỏi "làm sao xóa nỗi sợ đã tạo ra" mà Watson và Rayner đặt ra vẫn bỏ ngỏ đối với Albert.
+:::vung-chac[Watson và Rayner không gỡ nỗi sợ ở Albert: bé rời bệnh viện trước khi họ thử]
+Chính bài báo gốc ghi lại: Albert bị đưa khỏi bệnh viện ngay ngày kiểm tra cuối cùng, nên không có thủ thuật giải điều kiện hóa nào được áp dụng. Điều này không cho biết nỗi sợ có tồn tại lâu dài hay không (xem phần Ngộ nhận).
 :::
 
-:::kha-vung[nỗi sợ khái quát hóa sang các vật tương tự]
-Albert sợ thỏ, chó, áo lông dù chưa từng bị dọa với chúng. Hiện tượng khái quát hóa kích thích này phù hợp với lý thuyết điều kiện hóa cổ điển. Tuy nhiên, cần dè dặt: đây là quan sát trên **một** trẻ duy nhất, và một số nhà sử học tâm lý học (xem Powell & Schmaltz, 2021) cho rằng bằng chứng từ đoạn phim gốc yếu hơn những gì giáo trình vẫn kể.
+:::tranh-cai[Albert có thật sự học sợ, và nỗi sợ có lan sang các vật khác không?]
+Watson và Rayner báo cáo bé né chuột, rồi né cả thỏ, chó, áo lông và mặt nạ dù những vật này ban đầu chưa đi kèm tiếng động. Nhưng phân tích chi tiết đoạn phim gốc của Powell và Schmaltz (2021) cho rằng quy trình điều kiện hóa phần lớn không hiệu quả: những dấu hiệu khó chịu yếu của bé có thể giải thích bằng nhạy cảm hóa và sự trưởng thành, và chúng ta dễ thấy "điều kiện hóa" trong đoạn phim vì kỳ vọng. Đây là quan sát trên **một** trẻ, không có nhóm đối chứng.
 :::
 
 :::tranh-cai[Albert thật sự là ai?]
-Năm 2009, Beck, Levinson và Irons công bố kết quả điều tra 7 năm: Little Albert chính là **Douglas Merritte**, con của một nhân viên bệnh viện, sinh ngày 9 tháng 3 năm 1919, và qua đời năm 6 tuổi vì tràn dịch não ([Beck, Levinson, & Irons, 2009](https://doi.org/10.1037/a0017234)). Nhóm này còn cho rằng Douglas có tổn thương thần kinh mà Watson đã che giấu (Fridlund, Beck, Goldie, & Irons, 2012). Nhưng Powell, Digdon, Harris và Smithson (2014) phản bác: ứng viên phù hợp hơn là **Albert Barger** — một bé trai khỏe mạnh, có tuổi lúc rời bệnh viện khớp chính xác với hồ sơ (12 tháng 21 ngày) — và bác bỏ cáo buộc Watson gian lận ([Powell, Digdon, Harris, & Smithson, 2014](https://doi.org/10.1037/a0036854)). Đến nay, danh tính thật của Albert vẫn chưa ngã ngũ.
+Năm 2009, Beck, Levinson và Irons công bố kết quả tìm kiếm danh tính của Little Albert: một nhân viên của Harriet Lane Home là mẹ của bé, và qua liên lạc với con cháu của bà họ cho rằng Albert là **Douglas Merritte** (1919–1925), một bé trai qua đời sớm vì não úng thủy ([Beck, Levinson, & Irons, 2009](https://doi.org/10.1037/a0017234)). Nhóm này sau đó cho rằng Douglas có tổn thương thần kinh mà Watson có thể đã biết và che giấu (Fridlund, Beck, Goldie, & Irons, 2012). Nhưng Powell, Digdon, Harris và Smithson (2014) cho rằng ứng viên phù hợp hơn là **Albert Barger** và bình luận về cáo buộc gian lận ([Powell, Digdon, Harris, & Smithson, 2014](https://doi.org/10.1037/a0036854)). Tính đến 10/2026, trong các nguồn chúng tôi tra được, chưa thấy công trình nào làm tranh luận này ngã ngũ.
 :::
 
 ## Các lý thuyết giải thích
 
-- **Điều kiện hóa cổ điển (Pavlov → Watson):** nỗi sợ là một phản xạ có thể học được bằng cách ghép kích thích trung tính với kích thích gây sợ. Albert là bằng chứng người đầu tiên cho mô hình này.
-- **Khái quát hóa kích thích:** càng giống kích thích gốc (lông trắng, mềm, có tai), càng dễ gợi sợ. Giải thích vì sao bé sợ cả thỏ, chó, áo lông.
-- **Giải điều kiện hóa / đối điều kiện hóa (Mary Cover Jones):** ghép kích thích gây sợ với một trải nghiệm dễ chịu (ăn kẹo) để viết đè phản ứng sợ. Đây là tổ tiên của liệu pháp phơi nhiễm trị ám ảnh sợ hãi ngày nay.
-- **Thuyết hai yếu tố của Mowrer (về sau):** nỗi sợ được học qua điều kiện hóa cổ điển, nhưng được **duy trì** vì hành vi né tránh giúp ta "thoát" cảm giác sợ — một vòng lặp tự củng cố. Albert bò tránh con chuột chính là mảnh ghép thứ hai này.
+- **Điều kiện hóa cổ điển (Pavlov → Watson):** nỗi sợ là một phản ứng có thể được học bằng cách ghép kích thích trung tính với kích thích gây sợ. Watson và Rayner trình bày Albert như một ví dụ cho mô hình này; bằng chứng từ Albert bị phản biện (xem khung "Đang tranh cãi").
+- **Khái quát hóa kích thích:** Watson và Rayner ghi nhận bé né thỏ, chó, áo lông và mặt nạ dù ban đầu chưa đi kèm tiếng động, và gọi đó là chuyển (transfer) của phản ứng. Powell và Schmaltz (2021) cho rằng bằng chứng từ đoạn phim cho điều này yếu.
+- **Giải điều kiện hóa (Mary Cover Jones):** Jones gọi một trong các cách của bà là "điều kiện hóa trực tiếp": cho trẻ ăn món ưa thích mỗi khi con vật được đưa ra, để nỗi sợ giảm dần.
+- **Thuyết hai yếu tố của Mowrer (về sau):** nỗi sợ được học qua điều kiện hóa cổ điển, nhưng được **duy trì** vì hành vi né tránh giúp ta "thoát" cảm giác sợ — một vòng lặp tự củng cố.
 
 ## Áp dụng vào đời sống
 
-Bài học thực tế của Albert không nằm ở con chuột trắng, mà ở chỗ **nhiều nỗi sợ của người lớn cũng được "dạy" theo đúng công thức này**:
+Điều rút ra từ Albert cần dè dặt, vì bằng chứng từ chính Albert yếu (xem khung "Đang tranh cãi"):
 
-- **Nỗi sợ học được ở trẻ nhỏ:** một lần tiêm đau đi kèm áo blouse trắng → sợ bác sĩ; một lần bị chó sủa đi kèm tiếng sủa → sợ chó. Hiểu cơ chế này giúp cha mẹ không vô tình "ghép đôi" thêm nỗi sợ (ví dụ: dọa "bác sĩ chích cho một mũi" mỗi khi trẻ hư).
-- **Điều trị ám ảnh sợ hãi:** liệu pháp phơi nhiễm hiện đại chính là phiên bản có kiểm soát, có đồng thuận của những gì Mary Cover Jones làm với bé Peter: đối mặt dần dần với thứ gây sợ trong môi trường an toàn, cho đến khi phản ứng sợ tắt dần.
-- **Quảng cáo và thương hiệu:** cùng một cơ chế, nhưng dùng cảm xúc dễ chịu — ghép sản phẩm với âm nhạc vui, gương mặt nổi tiếng, khung cảnh đẹp. Mỗi lần bạn thấy "mua hàng = hạnh phúc" là một lần ghép đôi kiểu Watson, chỉ khác ở chỗ kích thích dễ chịu thay vì tiếng động chói tai.
+- **Nỗi sợ ở trẻ nhỏ có thể có nhiều nguồn gốc.** Jones lưu ý nỗi sợ của Peter "có lẽ không phải nỗi sợ điều kiện hóa trực tiếp", và nguồn gốc của nó không rõ. Nếu một nỗi sợ ở trẻ kéo dài hoặc làm ảnh hưởng sinh hoạt, hãy xem [trang Hỗ trợ](/psyche/ho-tro/); trang này không đưa ra chẩn đoán hay hướng dẫn điều trị.
+- **Liệu pháp phơi nhiễm:** các quá trình tắt dần của nỗi sợ điều kiện hóa được cho là nền tảng của liệu pháp phơi nhiễm (Duits và cộng sự, 2015). Đây là liệu pháp do chuyên gia thực hiện; trang này không hướng dẫn tự làm.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Chúng tôi **chưa tìm thấy** nghiên cứu điều kiện hóa nỗi sợ trên trẻ sơ sinh người Việt — và theo chuẩn đạo đức hiện nay, một nghiên cứu như của Watson & Rayner sẽ không bao giờ được hội đồng đạo đức nào phê duyệt, ở Việt Nam cũng như trên thế giới. Đây là khoảng trống dữ liệu, không phải bằng chứng cho bất cứ kết luận nào về trẻ em Việt Nam.
-
-Điều có ý nghĩa thực tế hơn ở Việt Nam: cơ chế điều kiện hóa sợ hãi là phổ quát ở người, nên bài học về "dạy" nỗi sợ cho trẻ (dọa ma, dọa bác sĩ, dọa "ông kẹ bắt") và bài học về liệu pháp phơi nhiễm đều áp dụng được — nhưng đó là suy luận từ lý thuyết chung, không phải từ dữ liệu trên người Việt.
+Tính đến 10/2026, chúng tôi **chưa tìm thấy** nghiên cứu điều kiện hóa nỗi sợ trên trẻ sơ sinh người Việt. Đây là khoảng trống dữ liệu, không phải bằng chứng cho kết luận nào về trẻ em Việt Nam.
 
 ## Ngộ nhận liên quan
 
-- **"Albert vốn đã sợ động vật."** Sai. Ở buổi kiểm tra gốc (8 tháng 26 ngày), bé không sợ bất cứ vật nào được đưa ra — bé còn thích chơi với chuột trắng.
-- **"Watson đã chữa khỏi nỗi sợ cho Albert."** Sai hoàn toàn. Albert rời bệnh viện sau buổi cuối cùng; không một lần giải điều kiện hóa nào được thực hiện, dù chính Watson đặt ra câu hỏi đó trong bài báo.
-- **"Danh tính Albert đã rõ: đó là Douglas Merritte."** Chưa rõ. Giả thuyết Douglas Merritte (Beck và cộng sự, 2009) bị phản bác bởi giả thuyết Albert Barger (Powell và cộng sự, 2014). Đây vẫn là tranh cãi mở.
-- **"Thí nghiệm chứng minh mọi nỗi sợ đều do học mà ra."** Sai. Đây là nghiên cứu trên **một** trẻ duy nhất, không có nhóm đối chứng. Nó chứng minh nỗi sợ *có thể* được học — không phải *mọi* nỗi sợ đều từ học mà ra (nhiều nỗi sợ có yếu tố sinh học, tiến hóa).
-- **"Nỗi sợ theo Albert suốt đời."** Không có bằng chứng. Watson chỉ suy đoán. Theo Powell và cộng sự (2014), cháu gái của Albert Barger cho biết ông có ác cảm với động vật (chó phải nhốt riêng khi ông đến thăm), nhưng chính Powell thừa nhận không thể xác nhận hay bác bỏ đó có phải di chứng của thí nghiệm — một kết cục mơ hồ. (Lưu ý: khẳng định "không có câu chuyện gia đình nào về nỗi sợ" là của Beck và cộng sự về Douglas Merritte, không phải của Powell về Barger.)
+- **"Albert vốn đã sợ động vật."** Theo báo cáo thì không. Ở các buổi kiểm tra trước điều kiện hóa (khoảng 9 tháng, và lại lúc 11 tháng 3 ngày), bé không lần nào tỏ ra sợ các con vật được đưa ra; phản ứng thường gặp là sờ, nghịch.
+- **"Watson đã chữa khỏi nỗi sợ cho Albert."** Sai. Albert rời bệnh viện đúng ngày kiểm tra cuối cùng; không một lần giải điều kiện hóa nào được thực hiện, dù chính Watson và Rayner đặt ra câu hỏi đó trong bài báo.
+- **"Danh tính Albert đã rõ: đó là Douglas Merritte."** Chưa rõ. Giả thuyết Douglas Merritte (Beck và cộng sự, 2009) bị phản bác bởi giả thuyết Albert Barger (Powell và cộng sự, 2014). Tính đến 10/2026, chúng tôi chưa thấy tranh luận này ngã ngũ.
+- **"Thí nghiệm chứng minh mọi nỗi sợ đều do học mà ra."** Sai. Đây là nghiên cứu trên **một** trẻ, không có nhóm đối chứng, và phân tích đoạn phim năm 2021 nghi ngờ rằng điều kiện hóa đã xảy ra rõ rệt. Ngay Jones cũng lưu ý nỗi sợ của Peter có lẽ không phải nỗi sợ điều kiện hóa trực tiếp.
+- **"Nỗi sợ theo Albert suốt đời."** Chưa có bằng chứng chắc chắn trong các nguồn chúng tôi đã mở. Watson và Rayner viết rằng họ cho các phản ứng này có thể tồn tại lâu dài, nhưng tự nhận quan điểm ấy "có lẽ chưa có cơ sở vững". Powell và cộng sự (2014) trình bày bằng chứng về việc Albert Barger có lớn lên với nỗi sợ động vật có lông hay không; chúng tôi chưa đọc phần này nên không nêu kết luận.
 
 ## Thử suy ngẫm
 
 ```quiz
-? Ở buổi kiểm tra gốc (khi Albert 8 tháng 26 ngày), điều nào sau đây là ĐÚNG?
+? Trước khi bắt đầu điều kiện hóa, điều nào sau đây phù hợp với báo cáo của Watson và Rayner?
 - Albert đã sợ chuột trắng ngay từ đầu.
-+ Albert không sợ bất cứ vật nào được đưa ra, kể cả chuột trắng, thỏ, chó.
++ Albert không tỏ ra sợ các con vật được đưa ra, kể cả chuột trắng, thỏ, chó.
 - Albert chỉ sợ tiếng động lớn, còn các con vật thì sợ sẵn.
-> Buổi kiểm tra gốc chứng minh các con vật ban đầu là kích thích trung tính — bé còn thích chơi với chuột trắng. Chỉ tiếng búa đập thanh thép mới gây giật mình và khóc.
+> Báo cáo ghi các con vật ban đầu không gây sợ; phản ứng thường gặp là sờ, nghịch. Chỉ tiếng búa đập thanh thép mới gây giật mình và khóc.
 ? Watson và Rayner tạo ra tiếng động đáng sợ bằng cách nào?
 - Bật loa phát tiếng sấm thật to.
 + Đập búa vào một thanh thép treo ngay sau đầu Albert, mỗi khi bé chạm vào chuột trắng.
 - Cho một con chó sủa ầm ĩ bên cạnh bé.
-> Tiếng động được tạo ra "thủ công" bằng búa và thanh thép — đơn giản nhưng đủ chói tai để một trẻ 11 tháng tuổi khóc thét. (Tiếng chó sủa chỉ là sự cố ngoài kịch bản ở buổi sau.)
-? Sau khi điều kiện hóa, nỗi sợ của Albert lan sang những gì?
+> Tiếng động được tạo ra "thủ công" bằng búa và thanh thép — đơn giản nhưng đủ chói tai để bé giật mình, và các lần sau khóc. (Tiếng chó sủa chỉ là sự cố ngoài kịch bản ở buổi sau.)
+? Theo báo cáo, sau khi điều kiện hóa, Albert còn né những gì?
 - Chỉ con chuột trắng duy nhất.
 - Mọi đồ vật trong phòng thí nghiệm.
-+ Thỏ, chó, áo lông thú, mặt nạ râu tóc — những vật bé chưa từng bị dọa cùng tiếng động.
-> Đây là hiện tượng khái quát hóa kích thích: càng giống kích thích gốc (có lông, mềm), càng dễ gợi phản ứng sợ.
-? Vì sao nỗi sợ của Albert không bao giờ được "gỡ bỏ"?
++ Thỏ, chó, áo lông hải cẩu, mặt nạ ông già Noel: những vật mà ở buổi kiểm tra đầu chưa từng đi kèm tiếng động; bé vẫn chơi khối gỗ bình thường.
+> Watson và Rayner gọi đó là chuyển (transfer) của phản ứng; phân tích đoạn phim năm 2021 cho rằng bằng chứng cho điều này yếu hơn giáo trình vẫn kể.
+? Vì sao Watson và Rayner không gỡ được nỗi sợ ở Albert?
 - Vì Watson tin rằng nỗi sợ sẽ tự biến mất theo thời gian.
-+ Vì Albert rời bệnh viện sau buổi kiểm tra cuối cùng, khi thí nghiệm còn dang dở — Watson và Rayner thừa nhận họ chưa kịp thực hiện bước giải điều kiện hóa mà chính họ đề ra.
++ Vì Albert rời bệnh viện đúng ngày kiểm tra cuối cùng, nên họ không có dịp thử cách gỡ nào.
 - Vì các nhà khoa học đã thử nhiều cách mà đều thất bại.
-> Trong bài báo, Watson và Rayner đặt ra câu hỏi "làm sao xóa phản ứng đã điều kiện hóa" nhưng không bao giờ trả lời được với Albert. Bốn năm sau, Mary Cover Jones mới chứng minh việc "gỡ" nỗi sợ là khả thi — với bé Peter.
+> Trong bài báo, Watson và Rayner đặt ra câu hỏi làm sao gỡ phản ứng đã điều kiện hóa nhưng không thử được với Albert. Khoảng ba năm sau, Mary Cover Jones báo cáo gỡ được nỗi sợ thỏ ở bé Peter (một ca, nghiên cứu còn dang dở).
 ? Về danh tính thật của "Little Albert", điều nào phản ánh đúng tình trạng hiện nay?
 - Đã chắc chắn là Douglas Merritte, không còn tranh cãi.
 - Đã chắc chắn là Albert Barger, giả thuyết Merritte bị bác bỏ hoàn toàn.
-+ Vẫn đang tranh cãi: Beck và cộng sự (2009) cho rằng đó là Douglas Merritte, còn Powell và cộng sự (2014) đưa ra ứng viên Albert Barger phù hợp hơn — chưa có kết luận cuối cùng.
++ Vẫn đang tranh cãi (tính đến 10/2026): Beck và cộng sự (2009) cho rằng đó là Douglas Merritte, còn Powell và cộng sự (2014) đưa ra ứng viên Albert Barger phù hợp hơn.
 > Ngay cả "phát hiện chấn động" năm 2009 cũng bị thách thức. Đây là lời nhắc rằng lịch sử khoa học cũng cần được kiểm chứng như khoa học.
 ```
 
@@ -129,4 +133,5 @@ Chúng tôi **chưa tìm thấy** nghiên cứu điều kiện hóa nỗi sợ t
 - Beck, H. P., Levinson, S., & Irons, G. (2009). Finding Little Albert: A journey to John B. Watson's infant laboratory. *American Psychologist*, 64(7), 605–614. <https://doi.org/10.1037/a0017234>
 - Fridlund, A. J., Beck, H. P., Goldie, W. D., & Irons, G. (2012). Little Albert: A neurologically impaired child. *History of Psychology*, 15(4), 302–327. <https://doi.org/10.1037/a0026720>
 - Powell, R. A., Digdon, N., Harris, B., & Smithson, C. (2014). Correcting the record on Watson, Rayner, and Little Albert: Albert Barger as "psychology's lost boy." *American Psychologist*, 69(6), 600–611. <https://doi.org/10.1037/a0036854>
+- Duits, P., Cath, D. C., Lissek, S., Hox, J. J., Hamm, A. O., Engelhard, I. M., van den Hout, M. A., & Baas, J. M. P. (2015). Updated meta-analysis of classical fear conditioning in the anxiety disorders. *Depression and Anxiety*, 32(4), 239–253. <https://doi.org/10.1002/da.22353>
 - Powell, R. A., & Schmaltz, R. M. (2021). Did Little Albert actually acquire a conditioned fear of furry animals? What the film evidence tells us. *History of Psychology*, 24(2), 164–181.

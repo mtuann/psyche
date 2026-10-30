@@ -4,14 +4,709 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/little-albert.md
 tang: loi
 muc: V3
 lan:
-  - so: 1
-    ngay: null
-    nhanh: moi/d3-l2
-    ma_bam: null
-    nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
-      kiem_mau: null
-nguon: []
-nhan_dinh: []
+- so: 1
+  ngay: '2026-10-30'
+  nhanh: moi/d3-l2
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 2/2)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: watson1920
+  ten: 'Watson & Rayner (1920), J Exp Psychol 3(1), 1–14: toàn văn (psychclassics.yorku.ca)'
+  link: https://doi.org/10.1037/h0069608
+  toan_van: true
+- id: coverjones1924
+  ten: 'Cover Jones (1924), Pedagogical Seminary 31(4), 308–315: toàn văn (psychclassics.yorku.ca)'
+  link: https://doi.org/10.1080/08856559.1924.9944851
+  toan_van: true
+- id: powell2021
+  ten: 'Powell & Schmaltz (2021), Hist Psychol 24(2), 164–181: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/hop0000176
+  toan_van: false
+- id: beck2009
+  ten: 'Beck, Levinson & Irons (2009), Am Psychol 64(7), 605–614: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/a0017234
+  toan_van: false
+- id: fridlund2012
+  ten: 'Fridlund, Beck, Goldie & Irons (2012), Hist Psychol 15(4), 302–327: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/a0026720
+  toan_van: false
+- id: powell2014
+  ten: 'Powell, Digdon, Harris & Smithson (2014), Am Psychol 69(6), 600–611: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/a0036854
+  toan_van: false
+- id: harris1979
+  ten: 'Harris (1979), Am Psychol 34(2), 151–160: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/0003-066X.34.2.151
+  toan_van: false
+- id: duits2015
+  ten: 'Duits và cộng sự (2015), Depress Anxiety 32(4), 239–253: tóm tắt (OpenAlex); id chưa có trong src/data/nguon.yml'
+  link: https://doi.org/10.1002/da.22353
+  toan_van: false
+nhan_dinh:
+- id: n1
+  cau: Watson và Rayner (1920) báo cáo đã điều kiện hóa nỗi sợ chuột trắng ở một bé trai 11 tháng tuổi bằng cách ghép chuột với tiếng động lớn, và không gỡ nỗi sợ ấy trước khi bé rời bệnh viện.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: The present authors present their experimental findings of conditioned fear responses in a male infant beginning at 11 months of age.
+  vi_tri: Abstract (OpenAlex) và toàn văn; "Albert was taken from the hospital the day the above tests were made" (mục IV)
+  ket_qua: da-sua
+  ghi_chu: 'Câu mô tả (description). Chữ cũ: "đã dạy ... sợ chuột trắng ... và không bao giờ gỡ bỏ nỗi sợ đó; ... một trong những vi phạm đạo đức nghiêm trọng nhất của tâm lý học". Mới: "báo cáo
+    đã", "không gỡ ... trước khi bé rời bệnh viện" và thêm điều phân tích đoạn phim 2021. "Vi phạm nghiêm trọng nhất" là đánh giá không nguồn, bỏ; thay bằng điều chính tác giả viết (n8).'
+- id: n2
+  cau: Một phân tích đoạn phim năm 2021 cho rằng bằng chứng điều kiện hóa yếu hơn giáo trình vẫn kể.
+  loai: phat-hien
+  nguon:
+  - powell2021
+  trich: Our findings concur with the view that Watson and Rayner's conditioning procedure was largely ineffective, and that the relatively weak signs of distress that Albert does display in the
+    film can be readily accounted for by such factors as sensitization and maturational influences.
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: Câu thêm mới vào mô tả và đáp án (chữ cũ không nói). Chỉ đọc tóm tắt.
+- id: n3
+  cau: Bé trai 11 tháng tuổi, khỏe mạnh, tính tình bình thản, chẳng sợ gì; cứ mỗi lần đưa tay chạm vào con chuột thì thanh thép bị đập mạnh ngay sau lưng; bé giật mình, ngã người về phía trước.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: He began to reach for rat with left hand. Just as his hand touched the animal the bar was struck immediately behind his head. The infant jumped violently and fell forward, burying his
+    face in the mattress.
+  vi_tri: Mục I, buổi 11 tháng 3 ngày
+  ket_qua: da-sua
+  ghi_chu: 'gia-dinh: đoạn "Tự trải nghiệm" là tình huống minh họa theo bài. Chữ cũ: "Bé thích nghịch một con chuột trắng ... giật mình khóc thét"; mới: "tò mò", "giật mình, ngã người về phía
+    trước". Lý do: bài ghi lần đầu bé không khóc; "thích chuột" không có trong bài ("manipulation was the most usual reaction").'
+- id: n4
+  cau: 'Đáp án nhanh: sau 2 lần ghép đôi Albert có phản ứng né chuột nhẹ; một tuần sau, thêm 5 lần ghép đôi (tổng cộng 7), bé khóc và bò đi xa ngay khi thấy chuột, không cần tiếng động.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: In all seven joint stimulations were given to bring about the complete reaction.
+  vi_tri: Mục I, sau buổi 11 tháng 10 ngày
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Chỉ 2 lần ghép đôi, Albert đã bắt đầu sợ chuột trắng ... nỗi sợ dữ dội"; mới thêm "Theo Watson và Rayner" và "né nhẹ". Lý do: sau 2 lần ghép đôi bài chỉ ghi bé rụt tay khi
+    chuột chạm tay ("the two joint stimulations given the previous week were not without effect"), không ghi "sợ".'
+- id: n5
+  cau: Phản ứng né lan sang thỏ, chó, áo lông hải cẩu và mặt nạ ông già Noel.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: Rabbit alone ... He leaned as far away from the animal as possible, whimpered, then burst into tears. ... Fur coat (seal). Withdrew immediately to the left side and began to fret ...
+    He was again pronouncedly negative [Santa Claus mask].
+  vi_tri: Mục II, buổi 11 tháng 15 ngày
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "lan sang thỏ, chó, áo lông thú, thậm chí cả mặt nạ râu tóc"; mới: "áo lông hải cẩu", "mặt nạ ông già Noel" theo bài.'
+- id: n6
+  cau: Họ không có dịp gỡ nỗi sợ ấy vì Albert rời bệnh viện.
+  loai: lich-su
+  nguon:
+  - watson1920
+  trich: Unfortunately Albert was taken from the hospital the day the above tests were made. Hence the opportunity of building up an experimental technique by means of which we could remove the
+    conditioned emotional responses was denied us.
+  vi_tri: Mục IV
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "không bao giờ gỡ nó cho bé". Mới: nêu lý do theo bài.'
+- id: n7
+  cau: Phân tích đoạn phim năm 2021 cho rằng quy trình điều kiện hóa phần lớn không hiệu quả; dấu hiệu khó chịu yếu của bé có thể giải thích bằng nhạy cảm hóa và sự trưởng thành.
+  loai: phat-hien
+  nguon:
+  - powell2021
+  trich: Our findings concur with the view that Watson and Rayner's conditioning procedure was largely ineffective ... sensitization and maturational influences
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Câu thêm mới. chỗ khó: chỉ đọc tóm tắt; kết luận về điều kiện hóa ở Albert là của một nhóm (Powell, Schmaltz), chưa có nguồn khác đối chiếu.'
+- id: n8
+  cau: Thí nghiệm của Watson và Rayner là một nỗ lực thực nghiệm sớm nhằm kiểm tra giả thuyết rằng cảm xúc sợ hãi có thể được điều kiện hóa ở người; giả thuyết đã được họ và Morgan nêu từ 1917
+    mà thiếu bằng chứng thực nghiệm đủ.
+  loai: lich-su
+  nguon:
+  - watson1920
+  trich: These authors without adequate experimental evidence advanced the view that this range was increased by means of conditioned reflex factors.
+  vi_tri: Mở bài
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "minh chứng trực tiếp đầu tiên cho thấy cảm xúc sợ hãi có thể được điều kiện hóa ở người". Bỏ "đầu tiên", "minh chứng" (khẳng định chưa kiểm được và bị Powell & Schmaltz 2021
+    phản biện). Bài viết cũng ghi "A certain responsibility attaches to such a procedure" (n11).'
+- id: n9
+  cau: 'Mô hình điều kiện hóa cổ điển: chuột trắng (kích thích trung tính) ghép với tiếng động lớn (không điều kiện) gây giật mình; sau các lần ghép đôi, chuột một mình gây phản ứng sợ (kích thích
+    có điều kiện).'
+  loai: dinh-nghia
+  nguon:
+  - watson1920
+  trich: Can we condition fear of an animal, e.g., a white rat, by visually presenting it and simultaneously striking a steel bar?
+  vi_tri: Mục I
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "→ tiếng động một mình đã đủ gây sợ... Sau vài lần lặp lại"; mới nói "Theo mô hình ấy", "sau các lần ghép đôi" (không "vài lần"). Cũng nêu Pavlov dùng phản xạ tiết nước bọt
+    ở chó: nguồn là trang Pavlov, không kiểm lại ở đây (link về trang nhà Pavlov đã kiểm ở phần 1).'
+- id: n10
+  cau: Bài báo là một trong những nghiên cứu được trích dẫn nhiều nhất trong tâm lý học, thường được trình bày như bằng chứng cho vai trò của điều kiện hóa cổ điển trong sự hình thành nỗi sợ.
+  loai: lich-su
+  nguon:
+  - powell2021
+  trich: Watson and Rayner's (1920) attempt to condition a fear of furry animals and objects in an 11-month-old infant is one of the most widely cited studies in psychology. Known as the Little
+    Albert study, it is typically presented as evidence for the role of classical conditioning in fear development.
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "bài báo này xuất hiện trong mọi giáo trình tâm lý học — vừa như một cột mốc khoa học, vừa như một lời cảnh báo đạo đức". Bỏ "mọi giáo trình"; thay bằng điều Powell & Schmaltz
+    nói.'
+- id: n11
+  cau: Bé rời bệnh viện mà nỗi sợ chưa được gỡ; chính các tác giả viết rằng họ do dự vì việc gây sợ thực nghiệm "mang một trách nhiệm nhất định".
+  loai: lich-su
+  nguon:
+  - watson1920
+  trich: At first there was considerable hesitation upon our part in making the attempt to set up fear reactions experimentally. A certain responsibility attaches to such a procedure.
+  vi_tri: Mục I
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nỗi sợ được tạo ra không bao giờ được xóa bỏ". Mới: theo bài (không có thủ thuật giải điều kiện hóa); thêm lời tác giả.'
+- id: n12
+  cau: '"Albert B." là con của một vú nuôi tại Harriet Lane Home for Invalid Children, được nuôi gần như từ lúc mới sinh trong môi trường bệnh viện.'
+  loai: lich-su
+  nguon:
+  - watson1920
+  trich: This infant was reared almost from birth in a hospital environment; his mother was a wet nurse in the Harriet Lane Home for Invalid Children.
+  vi_tri: Mở bài
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nhà trẻ bệnh viện Harriet Lane (thuộc Đại học Johns Hopkins, Baltimore, Mỹ)". Bỏ "Johns Hopkins, Baltimore" (bài không nói; chưa mở nguồn khác); mô tả "Home for Invalid Children"
+    là nhà dành cho trẻ em bệnh.'
+- id: n13
+  cau: Bài báo mô tả bé khỏe mạnh từ lúc sinh, phát triển tốt, tính tình điềm tĩnh, ít biểu lộ cảm xúc; sự ổn định là một lý do chọn bé, và các tác giả cho rằng có thể gây tương đối ít hại.
+  loai: lich-su
+  nguon:
+  - watson1920
+  trich: He was on the whole stolid and unemotional. His stability was one of the principal reasons for using him as a subject in this test. We felt that we could do him relatively little harm
+  vi_tri: Mở bài
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Watson mô tả ... họ tự trấn an rằng thí nghiệm không gây hại đáng kể". Mới: "tương đối ít hại" (relatively little harm); "bài báo mô tả" thay "Watson mô tả" (hai tác giả ký).'
+- id: n14
+  cau: Ở khoảng 9 tháng tuổi, Albert được cho xem lần lượt, đột ngột và lần đầu chuột trắng, thỏ, chó, khỉ, mặt nạ có và không có tóc, bông gòn, giấy báo đang cháy; bé không lần nào tỏ ra sợ,
+    phản ứng thường gặp là sờ, nghịch.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: the infant was confronted suddenly and for the first time successively with a white rat, a rabbit, a dog, a monkey, with masks with and without hair, cotton wool, burning newspapers,
+    etc. ... Manipulation was the most usual reaction called out. At no time did this infant ever show fear in any situation.
+  vi_tri: Mở bài
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ở khoảng 8 tháng 26 ngày ... bé thích chơi với con chuột". Lý do: bài nói các thử nghiệm này ở khoảng 9 tháng; 8 tháng 26 ngày là ngày thử tiếng động. "Thích chơi với chuột"
+    không có trong bài.'
+- id: n15
+  cau: 'Lúc 8 tháng 26 ngày, bé được thử với tiếng búa đập thanh thép treo sau lưng: giật mình mạnh, thở ngừng, môi run, và khóc ở lần đập thứ ba.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: The child started violently, his breathing was checked and the arms were raised in a characteristic manner. On the second stimulation the same thing occurred, and in addition the lips
+    began to pucker and tremble. On the third stimulation the child broke into a sudden crying fit.
+  vi_tri: Mở bài
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "chỉ có tiếng động lớn ... mới khiến bé giật mình, môi run và khóc. Tiếng động chính là vũ khí gây sợ"; bỏ "vũ khí" (diễn giải), thêm chi tiết theo bài.'
+- id: n16
+  cau: Trước khi điều kiện hóa, lúc 11 tháng 3 ngày, các thử nghiệm cảm xúc thông thường vẫn không thấy dấu hiệu sợ.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: Before attempting to set up a conditioned response we, as before, put him through all of the regular emotional tests. Not the slightest sign of a fear response was obtained in any situation.
+  vi_tri: Mục I
+  ket_qua: da-sua
+  ghi_chu: Câu thêm mới theo bài (dùng ở ngộ nhận và câu hỏi).
+- id: n17
+  cau: 'Buổi 1 (11 tháng 3 ngày): 2 lần ghép đôi chuột và tiếng động; lần đầu bé giật mình và ngã về phía trước, không khóc; lần hai giật mình và bắt đầu rên rỉ.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: The infant jumped violently and fell forward, burying his face in the mattress. He did not cry, however. ... Again the infant jumped violently, fell forward and began to whimper.
+  vi_tri: Mục I
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Albert bắt đầu rùng mình, rên rỉ"; mới theo bài.'
+- id: n18
+  cau: 'Buổi 2 (11 tháng 10 ngày, một tuần sau): chuột đưa ra không kèm tiếng động thì bé rụt tay lại khi chuột chạm tay.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: When the rat nosed the infant's left hand, the hand was immediately withdrawn.
+  vi_tri: Mục I
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "bé đã sợ ở mức nhẹ"; mới theo mô tả của bài (không dùng chữ "sợ").'
+- id: n19
+  cau: Ở buổi 2, thêm 5 lần ghép đôi (tổng cộng 7); khi chuột đưa ra một mình bé khóc ngay, quay người, ngã sang bên và bò đi nhanh đến mức phải chạy theo mới bắt kịp.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: The instant the rat was shown the baby began to cry. Almost instantly he turned sharply to the left, fell over on left side, raised himself on all fours and began to crawl away so rapidly
+    that he was caught with difficulty before reaching the edge of the table.
+  vi_tri: Mục I
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "bé khóc to, bò tránh xa"; mới theo bài, nêu rõ 7 lần ghép đôi (không phải "2 + 5" như hai buổi tách).'
+- id: n20
+  cau: 'Buổi 3 (11 tháng 15 ngày, năm ngày sau): bé vẫn né chuột và chơi khối gỗ bình thường; thỏ gây phản ứng rõ rệt; chó nhẹ hơn thỏ nhưng bé khóc khi chó lại gần đầu; áo lông hải cẩu làm bé
+    khóc và cố bò đi; bông gòn nhẹ hơn; tóc của Watson và mặt nạ ông già Noel bị né, tóc hai người quan sát khác thì bé chơi.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: Rabbit alone ... The reaction was pronounced. ... Dog alone. The dog did not produce as violent a reaction as the rabbit. ... Albert was completely negative [Watson's hair]. Two other
+    observers did the same thing. He began immediately to play with their hair.
+  vi_tri: Mục II
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "một tuần sau ... Buổi 3: thỏ, chó, áo lông hải cẩu, bông gòn, tóc của chính Watson, mặt nạ ông già Noel → bé sợ hầu hết". Mới theo chi tiết bài: buổi 3 là năm ngày sau buổi
+    2; bông gòn nhẹ; tóc người khác không bị né.'
+- id: n21
+  cau: Những vật ở buổi 3 (thỏ, chó, áo lông, tóc, mặt nạ) chưa từng đi kèm tiếng động.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: It will be recalled that this was the first time any effort had been made to directly condition response to the dog and rabbit.
+  vi_tri: Mục II (buổi 11 tháng 20 ngày)
+  ket_qua: dung
+  ghi_chu: Đúng cho đến buổi 3; từ buổi 4 thỏ và chó mới được ghép trực tiếp (n22).
+- id: n22
+  cau: 'Buổi 4 (11 tháng 20 ngày): phản ứng với chuột yếu hơn nên các tác giả ghép đôi chuột với tiếng động để "làm mới"; lần đầu thỏ và chó cũng được ghép trực tiếp với tiếng động; sau đó bé
+    được chuyển sang phòng giảng lớn, sáng hơn, có bốn người, và phản ứng với chuột và thỏ yếu hơn.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: It was thought best to freshen up the reaction by another joint stimulation. ... The situation was thus very different from that which obtained in the small dark room. ... Rabbit alone.
+    Fear reaction slight.
+  vi_tri: Mục II
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "chuyển sang phòng mới, làm mới nỗi sợ bằng vài lần ghép đôi nữa; thỏ và chó ghép trực tiếp". Mới thêm thứ tự: làm mới ở phòng cũ, rồi mới sang phòng giảng.'
+- id: n23
+  cau: 'Sự cố ngoài kịch bản ở buổi 4: con chó vốn im lặng bỗng sủa ba lần sát mặt bé làm bé òa khóc, và làm cả người lớn có mặt giật mình.'
+  loai: lich-su
+  nguon:
+  - watson1920
+  trich: the dog, which had not barked before, barked three times loudly when only about six inches from the baby's face. Albert immediately fell over and broke into a wail that continued until
+    the dog was removed. The sudden barking of the hitherto quiet dog produced a marked fear response in the adult observers!
+  vi_tri: Mục II
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "một con chó sủa ầm ĩ làm cả Albert lẫn người lớn giật mình"; mới theo bài.'
+- id: n24
+  cau: 'Buổi 5 (1 tuổi 21 ngày, 31 ngày sau; suốt thời gian ấy bé ở nhà trẻ bệnh viện và không có thử nghiệm cảm xúc): phản ứng yếu đi phần nào nhưng bé vẫn né mặt nạ, áo lông, thỏ, chó; với chuột
+    thì rụt tay, nhăn mặt, che mắt khi chuột bò lên ngực.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: These experiments would seem to show conclusively that directly conditioned emotional responses as well as those conditioned by transfer persist, although with a certain loss in the intensity
+    of the reaction, for a longer period than one month.
+  vi_tri: Mục III
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "(12 tháng 21 ngày, sau một tháng)". "1 Year 21 Days" tức 12 tháng 21 ngày (đúng); đổi cách viết cho khớp nguồn. Chữ cũ nói "né chuột, thỏ, chó, áo lông": mới nói rõ chuột
+    chỉ rụt tay/nhăn mặt/che mắt khi chạm.'
+- id: n25
+  cau: Chính ngày kiểm tra cuối cùng Albert rời bệnh viện, không có giải điều kiện hóa nào.
+  loai: lich-su
+  nguon:
+  - watson1920
+  trich: Unfortunately Albert was taken from the hospital the day the above tests were made.
+  vi_tri: Mục IV
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Sau buổi này Albert rời bệnh viện". Mới: "chính ngày ấy" theo bài.'
+- id: n26
+  cau: 'Câu hỏi thứ tư của bài: nếu phản ứng sợ không tự mất đi sau một thời gian hợp lý, có thể nghĩ ra phương pháp phòng thí nghiệm nào để gỡ bỏ.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: IV. If after a reasonable period such emotional responses have not died out, what laboratory methods can be devised for their removal?
+  vi_tri: Mục "The sound stimulus, thus..."
+  ket_qua: dung
+- id: n27
+  cau: Watson và Rayner viết rằng các phản ứng này có thể tồn tại lâu dài nếu không có cách gỡ, và tự nhận quan điểm ấy "có lẽ chưa có cơ sở vững".
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: Our own view, expressed above, which is possibly not very well grounded, is that these responses in the home environment are likely to persist indefinitely, unless an accidental method
+    for removing them is hit upon.
+  vi_tri: Mục IV
+  ket_qua: da-sua
+  ghi_chu: Câu thêm mới thay "Họ không bao giờ trả lời được câu hỏi của chính mình — vì đối tượng đã đi mất" (không có trong bài ở dạng ấy).
+- id: n28
+  cau: Mary Cover Jones làm việc với sự cố vấn của Watson, gặp Peter, 2 tuổi 10 tháng, sợ chuột trắng, nỗi sợ lan sang thỏ, áo lông, lông vũ, bông gòn, khoảng ba năm sau Albert.
+  loai: lich-su
+  nguon:
+  - coverjones1924
+  trich: Peter was 2 years and 10 months old when we began to study him. He was afraid of a white rat, and this fear extended to a rabbit, a fur coat, a feather, cotton wool, etc.
+  vi_tri: Bài Jones, mục "The case is a sequel..."; ghi chú 1
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Bốn năm sau, một nghiên cứu sinh của Watson ... bé Peter, 3 tuổi, sợ thỏ trắng". Bỏ "nghiên cứu sinh" (bài ghi bà làm với sự cố vấn của Watson; chức vụ không có), "bốn năm"
+    (bài ghi "about three years later" tính từ ca Albert; bài Jones đăng 1924), "3 tuổi" (2 tuổi 10 tháng), "sợ thỏ trắng" (nỗi sợ ban đầu là chuột, lan sang thỏ).'
+- id: n29
+  cau: 'Jones gỡ nỗi sợ thỏ bằng nhiều cách: Peter chơi cùng ba trẻ không sợ thỏ; sau khi Peter nằm viện hai tháng và sợ trở lại, bà thêm "điều kiện hóa trực tiếp" (cho ăn món ưa thích trong khi
+    thỏ trong lồng được đưa lại gần từng chút).'
+  loai: phat-hien
+  nguon:
+  - coverjones1924
+  trich: At this point (b) we began another method of treatment, that of "direct conditioning." Peter was seated in a high chair and given food which he liked. The experimenter brought the rabbit
+    in a wire cage as close as she could without arousing a response which would interfere with the eating.
+  vi_tri: Bài Jones, trang 312–313
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "dùng phương pháp giải mẫn cảm dần dần: cho Peter ăn món yêu thích (kẹo, đồ chơi) trong khi con thỏ được đưa lại gần qua nhiều buổi". Bỏ "giải mẫn cảm" (không phải từ của bài),
+    "đồ chơi" (bài ghi "food"; đoạn khác có "candy"), thêm cách chơi cùng trẻ khác.'
+- id: n30
+  cau: Cuối cùng Peter vuốt, bế thỏ; nỗi sợ bông gòn, áo lông, lông vũ không còn; Jones nhấn mạnh nghiên cứu còn dang dở.
+  loai: phat-hien
+  nguon:
+  - coverjones1924
+  trich: The fear of the cotton, the fur coat, feathers, was entirely absent at our last interview. ... The study is still incomplete.
+  vi_tri: Bài Jones, trang 314–315
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nỗi sợ của Peter giảm dần và biến mất". Mới theo bài, thêm giới hạn ("study is still incomplete").'
+- id: n31
+  cau: Mary Cover Jones báo cáo một ca; chữ cũ cho rằng đó là "tiền thân của liệu pháp phơi nhiễm" và "minh chứng khoa học có thể tạo ra kiến thức mà không cần gây tổn thương vĩnh viễn".
+  loai: lich-su
+  nguon:
+  - coverjones1924
+  ket_qua: da-bo
+  ghi_chu: 'Bỏ hai câu đánh giá: "tiền thân của liệu pháp phơi nhiễm" (không kiểm được bằng nguồn đã mở), "minh chứng ... không cần gây tổn thương" (đánh giá, không nguồn).'
+- id: n32
+  cau: 'Khoảng ba năm sau Albert, Jones làm điều Watson và Rayner không thử: gỡ nỗi sợ ở một đứa trẻ, nối tiếp ca Albert ("continue where Watson had left off").'
+  loai: lich-su
+  nguon:
+  - coverjones1924
+  trich: This case made it possible for the experiment to continue where Dr. Watson had left off. The first problem was that of "unconditioning" a fear response to an animal
+  vi_tri: Bài Jones
+  ket_qua: dung
+  ghi_chu: 'Tiêu đề mục "câu trả lời đạo đức đến sau" giữ nguyên: chữ "đạo đức" là diễn giải, bài Jones không nói về đạo đức (người giao cân nhắc đổi tiêu đề, id tiêu đề cũ sẽ đổi).'
+- id: n33
+  cau: 'Vững chắc: nỗi sợ có thể được điều kiện hóa ở người.'
+  loai: nhan
+  nguon:
+  - duits2015
+  trich: Forty-four studies (published between 1920 and 2013) with data on 963 anxiety disordered patients and 1,222 control subjects were obtained
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: chữ cũ nói "hàng thập kỷ nghiên cứu ... với người trưởng thành tình nguyện đã xác nhận ... nền tảng của nhiều liệu pháp điều trị ám ảnh sợ hãi". Phân tích tổng hợp Duits 2015
+    so sánh bệnh nhân với người đối chứng trong mô hình điều kiện hóa sợ hãi cổ điển, nên gián tiếp xác nhận điều kiện hóa ở người, nhưng không trực tiếp kiểm điều ấy ở người khỏe. Người giao/lượt
+    2: có thể thay bằng một phân tích tổng hợp điều kiện hóa sợ hãi ở người khỏe. Đoạn "nền tảng liệu pháp": Duits chỉ nói tắt dần "được cho là" nền tảng của hiệu quả phơi nhiễm.'
+  nhan: vung-chac
+  co_so:
+  - duits2015
+  ly_do: Một phân tích tổng hợp cập nhật (44 nghiên cứu, 1920–2013; 963 bệnh nhân và 1.222 người đối chứng) dùng mô hình điều kiện hóa sợ hãi cổ điển ở người ở cả bệnh nhân lẫn người đối chứng.
+    Đạt mức Vững chắc (mục 4) với giới hạn ghi ở ghi chú.
+- id: n34
+  cau: 'Duits và cộng sự (2015): phân tích tổng hợp 44 nghiên cứu (963 bệnh nhân rối loạn lo âu, 1.222 người đối chứng); các quá trình tắt dần của nỗi sợ được cho là nền tảng của hiệu quả điều
+    trị phơi nhiễm.'
+  loai: so-lieu
+  nguon:
+  - duits2015
+  trich: Forty-four studies (published between 1920 and 2013) with data on 963 anxiety disordered patients and 1,222 control subjects ... extinction processes are thought to underlie the beneficial
+    effects of exposure treatment in anxiety disorders.
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: Câu thêm mới thay câu chữ cũ không nguồn.
+- id: n35
+  cau: 'Vững chắc: Watson và Rayner không gỡ nỗi sợ ở Albert: bé rời bệnh viện trước khi họ thử.'
+  loai: nhan
+  nguon:
+  - watson1920
+  trich: Unfortunately Albert was taken from the hospital the day the above tests were made.
+  vi_tri: Mục IV
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: chữ cũ "nỗi sợ của Albert không bao giờ được gỡ bỏ ... câu hỏi vẫn bỏ ngỏ đối với Albert". Mới: nhãn chỉ về điều bài ghi (không gỡ), không nói nỗi sợ tồn tại bao lâu. Đây
+    là sự thật lịch sử từ bài gốc, không phải kết luận khoa học theo thước đo mục 4: lượt 2 xem có nên đổi thành khung ghi chú (:::note).'
+  nhan: vung-chac
+  co_so:
+  - watson1920
+  ly_do: Sự thật lịch sử đọc thẳng từ bài gốc toàn văn (mục IV), không phải bằng chứng khoa học; thước đo mục 4 không áp dụng sát, dùng Vững chắc theo nghĩa "đúng với văn bản".
+- id: n36
+  cau: 'Đang tranh cãi: Albert có thật sự học sợ, và nỗi sợ có lan sang các vật khác không.'
+  loai: nhan
+  nguon:
+  - powell2021
+  - watson1920
+  trich: Our findings concur with the view that Watson and Rayner's conditioning procedure was largely ineffective
+  vi_tri: Abstract Powell & Schmaltz 2021
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: chữ cũ :::kha-vung "nỗi sợ khái quát hóa sang các vật tương tự ... cần dè dặt". Hạ xuống Đang tranh cãi: Powell & Schmaltz 2021 (phân tích đoạn phim) cho rằng điều kiện hóa
+    phần lớn không hiệu quả, đối lập với báo cáo gốc; đây là một nhóm, chỉ đọc tóm tắt. Lượt 2 xem lại.'
+  nhan: tranh-cai
+  co_so:
+  - powell2021
+  - watson1920
+  ly_do: Báo cáo gốc (một trẻ, không đối chứng) nói có né và chuyển sang vật khác, nhưng một phân tích chi tiết đoạn phim nói điều kiện hóa phần lớn không hiệu quả; bằng chứng mâu thuẫn, đúng
+    mô tả Đang tranh cãi (mục 4).
+- id: n37
+  cau: 'Powell và Schmaltz (2021): chúng ta dễ thấy "điều kiện hóa" trong đoạn phim vì kỳ vọng.'
+  loai: phat-hien
+  nguon:
+  - powell2021
+  trich: We suggest that the tendency for viewers to perceive the film as a valid demonstration of fear conditioning is likely the result of expectancy effects
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "một số nhà sử học (xem Powell & Schmaltz 2021) cho rằng bằng chứng từ đoạn phim yếu hơn những gì giáo trình vẫn kể". Mới theo tóm tắt; Bỏ "nhà sử học" (tóm tắt không nói).'
+- id: n38
+  cau: 'Beck, Levinson và Irons (2009): một nhân viên của Harriet Lane Home là mẹ của Albert; qua liên lạc với con cháu bà, họ cho rằng Albert là Douglas Merritte (1919–1925), qua đời sớm vì não
+    úng thủy.'
+  loai: lich-su
+  nguon:
+  - beck2009
+  - fridlund2012
+  trich: suggested that an employee at the Harriet Lane Home was Albert's mother. Contact with the woman's descendents led the authors to the individual they believe to be "Little Albert." ...
+    Douglas Merritte (1919-1925). Following the finding that Merritte died early with hydrocephalus
+  vi_tri: Abstract Beck 2009; abstract Fridlund 2012
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "kết quả điều tra 7 năm ... sinh ngày 9 tháng 3 năm 1919, qua đời năm 6 tuổi vì tràn dịch não". Bỏ "7 năm", ngày sinh (tóm tắt không nêu), "6 tuổi"; dùng 1919–1925 từ tóm tắt
+    Fridlund 2012.'
+- id: n39
+  cau: Fridlund và cộng sự (2012) cho rằng Douglas có tổn thương thần kinh mà Watson có thể đã biết và che giấu.
+  loai: phat-hien
+  nguon:
+  - fridlund2012
+  trich: This etiology would imply that "Little Albert" was not the "healthy" and "normal" infant described by Watson ... Further inquiries found ample sources of information available to Watson
+    that would have made him aware of Douglas/Albert's medical condition
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nhóm này còn cho rằng Douglas có tổn thương thần kinh mà Watson đã che giấu". "Che giấu" là cáo buộc nêu trong tóm tắt Powell 2014 ("alleged ... fraudulently hid"); mới: "có
+    thể đã biết".'
+- id: n40
+  cau: Powell, Digdon, Harris và Smithson (2014) cho rằng ứng viên phù hợp hơn là Albert Barger và bình luận về cáo buộc gian lận của Watson.
+  loai: phat-hien
+  nguon:
+  - powell2014
+  trich: we present the discovery of another individual, Albert Barger, who appears to match the characteristics of Little Albert better than Douglas Merritte does ... As for the allegations of
+    fraudulent activity by Watson, we offer comments at the end of this article.
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "một bé trai khỏe mạnh, có tuổi lúc rời bệnh viện khớp chính xác với hồ sơ (12 tháng 21 ngày) — và bác bỏ cáo buộc Watson gian lận". Bỏ chi tiết khớp tuổi và "bác bỏ" (tóm
+    tắt chỉ nói "offer comments"; chưa mở toàn văn).'
+- id: n41
+  cau: Tính đến 10/2026, trong các nguồn chúng tôi tra được, chưa thấy công trình nào làm tranh luận về danh tính Albert ngã ngũ.
+  loai: thoi-su
+  nguon:
+  - beck2009
+  - powell2014
+  ket_qua: dung
+  ghi_chu: 'Tra 30/10/2026 trên OpenAlex (từ khóa Little Albert identity, Douglas Merritte, Albert Barger, từ 2014-06): chỉ thấy "Psychology''s Lost Boy" (2014) và bài tóm lược; không thấy công
+    trình giải quyết. Chưa tra PubMed hay tạp chí chuyên ngành. Chữ cũ "Đến nay ... vẫn chưa ngã ngũ" không có mốc.'
+  het_han: '2028-10-01'
+- id: n42
+  cau: Khung tranh cãi cho Danh tính Albert.
+  loai: nhan
+  nguon:
+  - beck2009
+  - powell2014
+  - fridlund2012
+  trich: In this article, we present the discovery of another individual, Albert Barger, who appears to match the characteristics of Little Albert better than Douglas Merritte does.
+  vi_tri: Abstract Powell 2014
+  ket_qua: dung
+  ghi_chu: 'Chữ cũ :::tranh-cai "Albert thật sự là ai?" giữ Đang tranh cãi: hai bên đưa bằng chứng khác nhau, chưa có kết luận trong các nguồn đã mở. Chỉ đọc tóm tắt cả ba bài.'
+  nhan: tranh-cai
+  co_so:
+  - beck2009
+  - powell2014
+  - fridlund2012
+  ly_do: Hai nhóm nghiên cứu công bố bằng chứng đối lập về danh tính (Beck 2009 và Fridlund 2012 cho Douglas Merritte; Powell 2014 cho Albert Barger); chưa có kết luận. Đúng mô tả "bằng chứng
+    chất lượng cao mâu thuẫn nhau" (mục 4).
+- id: n43
+  cau: 'Điều kiện hóa cổ điển (Pavlov → Watson): nỗi sợ là phản ứng có thể được học bằng cách ghép kích thích trung tính với kích thích gây sợ; Watson và Rayner trình bày Albert như ví dụ, bằng
+    chứng từ Albert bị phản biện.'
+  loai: lich-su
+  nguon:
+  - watson1920
+  - powell2021
+  trich: Can we condition fear of an animal, e.g., a white rat, by visually presenting it and simultaneously striking a steel bar?
+  vi_tri: Mục I; abstract Powell & Schmaltz 2021
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Albert là bằng chứng người đầu tiên cho mô hình này"; mới nêu rõ đó là cách Watson và Rayner trình bày và đã bị phản biện.'
+- id: n44
+  cau: Watson và Rayner ghi nhận bé né thỏ, chó, áo lông và mặt nạ dù ban đầu chưa đi kèm tiếng động, và gọi đó là chuyển (transfer) của phản ứng; Powell và Schmaltz cho rằng bằng chứng từ đoạn
+    phim yếu.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  - powell2021
+  trich: From the above results it would seem that emotional transfers do take place.
+  vi_tri: Mục II
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Khái quát hóa kích thích: càng giống kích thích gốc (lông trắng, mềm, có tai), càng dễ gợi sợ". Bỏ vế "càng giống càng dễ gợi sợ" (bài không nêu quy luật; bông gòn gây phản
+    ứng nhẹ, tóc người khác không bị né).'
+- id: n45
+  cau: 'Jones gọi một cách của bà là "điều kiện hóa trực tiếp": cho trẻ ăn món ưa thích mỗi khi con vật được đưa ra, để nỗi sợ giảm dần.'
+  loai: phat-hien
+  nguon:
+  - coverjones1924
+  trich: Through the presence of the pleasant stimulus (food) whenever the rabbit was shown, the fear was eliminated gradually in favor of a positive response.
+  vi_tri: Bài Jones, trang 313
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Giải điều kiện hóa / đối điều kiện hóa ... viết đè phản ứng sợ. Đây là tổ tiên của liệu pháp phơi nhiễm". Bỏ "tổ tiên" (không nguồn).'
+- id: n46
+  cau: 'Thuyết hai yếu tố của Mowrer (về sau): nỗi sợ được học qua điều kiện hóa cổ điển, được duy trì vì hành vi né tránh giúp thoát cảm giác sợ.'
+  loai: lich-su
+  nguon: []
+  ket_qua: null
+  ghi_chu: 'chưa chắc: không có nguồn đã mở (Mowrer 1947/1960, hay tổng quan lý thuyết). Cần đối chiếu một nguồn mở (APA Dictionary hay giáo trình) trước khi khóa. Đã bỏ câu "Albert bò tránh con
+    chuột chính là mảnh ghép thứ hai này" (diễn giải không có nguồn).'
+- id: n47
+  cau: Jones lưu ý nỗi sợ của Peter có lẽ không phải nỗi sợ điều kiện hóa trực tiếp, và nguồn gốc của nó không rõ.
+  loai: phat-hien
+  nguon:
+  - coverjones1924
+  trich: Peter's fear of the animals which were shown him was probably not a directly conditioned fear. ... Where the fear originated and with what stimulus, is not known.
+  vi_tri: Bài Jones, trang 315
+  ket_qua: da-sua
+  ghi_chu: 'Câu thêm mới thay mục "nỗi sợ học được ở trẻ nhỏ: một lần tiêm đau ... áo blouse trắng; dọa bác sĩ chích một mũi" (không nguồn).'
+- id: n48
+  cau: Nếu một nỗi sợ ở trẻ kéo dài hoặc làm ảnh hưởng sinh hoạt, xem trang Hỗ trợ; trang không chẩn đoán hay hướng dẫn điều trị.
+  loai: loi-khuyen
+  nguon: []
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Hiểu cơ chế này giúp cha mẹ không vô tình ghép đôi thêm nỗi sợ (ví dụ: dọa bác sĩ chích cho một mũi)". Bỏ lời khuyên cụ thể (không nguồn); đưa tới trang Hỗ trợ theo quy tắc
+    nội dung. Link /psyche/ho-tro/ có trong trang.yml (ho-tro/index).'
+- id: n49
+  cau: 'Liệu pháp phơi nhiễm: các quá trình tắt dần của nỗi sợ điều kiện hóa được cho là nền tảng của liệu pháp phơi nhiễm; đó là liệu pháp do chuyên gia thực hiện, trang không hướng dẫn tự làm.'
+  loai: lam-sang
+  nguon:
+  - duits2015
+  trich: extinction processes are thought to underlie the beneficial effects of exposure treatment in anxiety disorders
+  vi_tri: Abstract
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "liệu pháp phơi nhiễm hiện đại chính là phiên bản có kiểm soát, có đồng thuận của những gì Jones làm ... đối mặt dần dần trong môi trường an toàn". Bỏ (diễn giải, mô tả cách
+    làm như hướng dẫn); thay bằng điều tóm tắt nói. chỗ khó: bài Sức khỏe tâm thần chưa phải trang này; không có lời khuyên điều trị.'
+- id: n50
+  cau: Cơ chế quảng cáo ghép sản phẩm với âm nhạc vui, gương mặt nổi tiếng (như ghép đôi kiểu Watson).
+  loai: loi-khuyen
+  nguon: []
+  ket_qua: da-bo
+  ghi_chu: 'Bỏ bullet "Quảng cáo và thương hiệu": không có nguồn đã mở (khẳng định về quảng cáo).'
+- id: n51
+  cau: Tính đến 10/2026, chúng tôi chưa tìm thấy nghiên cứu điều kiện hóa nỗi sợ trên trẻ sơ sinh người Việt.
+  loai: thoi-su
+  nguon: []
+  ket_qua: dung
+  ghi_chu: 'Tìm 30/10/2026 trên OpenAlex ("classical conditioning fear infants Vietnam", "Little Albert Vietnam fear conditioning children Vietnamese"): không có nghiên cứu như vậy. Chưa tìm PubMed,
+    Google Scholar, tạp chí trong nước. Chữ cũ không có mốc; thêm "Tính đến 10/2026".'
+  het_han: '2028-10-01'
+- id: n52
+  cau: 'Chữ cũ về đạo đức và suy luận cho Việt Nam: "theo chuẩn đạo đức hiện nay, nghiên cứu như vậy sẽ không bao giờ được hội đồng đạo đức nào phê duyệt"; "cơ chế điều kiện hóa sợ hãi là phổ
+    quát, nên bài học dọa ma, dọa bác sĩ, ông kẹ ... đều áp dụng được".'
+  loai: lich-su
+  nguon: []
+  ket_qua: da-bo
+  ghi_chu: 'Bỏ cả hai: không có nguồn đã mở nói điều ấy; đoạn thay bằng một câu thời sự (n51).'
+- id: n53
+  cau: 'Theo báo cáo, Albert không vốn đã sợ động vật: ở các buổi trước điều kiện hóa (khoảng 9 tháng và 11 tháng 3 ngày) bé không tỏ ra sợ các con vật được đưa ra; phản ứng thường gặp là sờ,
+    nghịch.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: At no time did this infant ever show fear in any situation.
+  vi_tri: Mở bài; mục I
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Sai. Ở buổi kiểm tra gốc (8 tháng 26 ngày) bé không sợ bất cứ vật nào ... còn thích chơi với chuột trắng". Xem n14, n16.'
+- id: n54
+  cau: Albert rời bệnh viện đúng ngày kiểm tra cuối cùng; không giải điều kiện hóa nào được thực hiện; Watson và Rayner đặt ra câu hỏi gỡ nỗi sợ trong bài.
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: Unfortunately Albert was taken from the hospital the day the above tests were made.
+  vi_tri: Mục IV
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Albert rời bệnh viện sau buổi cuối cùng"; mới "đúng ngày".'
+- id: n55
+  cau: Giả thuyết Douglas Merritte (Beck 2009) bị phản bác bởi giả thuyết Albert Barger (Powell 2014); tính đến 10/2026, chưa thấy ngã ngũ.
+  loai: lich-su
+  nguon:
+  - beck2009
+  - powell2014
+  trich: we present the discovery of another individual, Albert Barger, who appears to match the characteristics of Little Albert better than Douglas Merritte does
+  vi_tri: Abstract Powell 2014
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Đây vẫn là tranh cãi mở" (không mốc); mới thêm "Tính đến 10/2026".'
+- id: n56
+  cau: 'Thí nghiệm không thể cho thấy mọi nỗi sợ đều do học: một trẻ, không đối chứng; phân tích đoạn phim 2021 nghi ngờ điều kiện hóa rõ rệt; Jones lưu ý nỗi sợ của Peter có lẽ không điều kiện
+    hóa trực tiếp.'
+  loai: phat-hien
+  nguon:
+  - powell2021
+  - coverjones1924
+  trich: Peter's fear of the animals which were shown him was probably not a directly conditioned fear.
+  vi_tri: Bài Jones, trang 315; abstract Powell & Schmaltz
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "nhiều nỗi sợ có yếu tố sinh học, tiến hóa". Bỏ (không nguồn đã mở). Giữ "một trẻ, không có nhóm đối chứng" (đúng: bài chỉ báo cáo Albert, mục "Experimental work had been done
+    so far on only one child").'
+- id: n57
+  cau: 'Nỗi sợ theo Albert suốt đời: chưa có bằng chứng chắc chắn trong các nguồn đã mở; Watson và Rayner cho là có thể tồn tại lâu dài nhưng tự nhận quan điểm "có lẽ chưa có cơ sở vững"; Powell
+    và cộng sự (2014) trình bày bằng chứng về việc Albert Barger có lớn lên với nỗi sợ động vật có lông hay không, chưa đọc phần này.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  - powell2014
+  trich: We also present evidence concerning whether Little Albert (Albert Barger) grew up with the fear of furry animals, as Watson and Rayner speculated he might.
+  vi_tri: Abstract Powell 2014; mục IV Watson
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Theo Powell, cháu gái của Albert Barger cho biết ông có ác cảm với động vật (chó phải nhốt riêng khi ông đến thăm) ... Beck ... Douglas Merritte". Bỏ chi tiết gia đình (chưa
+    mở toàn văn Powell 2014). chưa chắc: kết luận của Powell về nỗi sợ suốt đời; cần đọc toàn văn.'
+- id: n58
+  cau: 'Quiz, câu 1: trước điều kiện hóa, Albert không tỏ ra sợ các con vật; chỉ tiếng búa đập mới gây giật mình và khóc.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: At no time did this infant ever show fear in any situation.
+  vi_tri: Mở bài
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "khi Albert 8 tháng 26 ngày ... còn thích chơi với chuột trắng". Mới như n14, n16.'
+- id: n59
+  cau: 'Quiz, câu 2: Watson và Rayner tạo tiếng động bằng búa đập vào thanh thép treo sau đầu Albert khi bé chạm vào chuột; tiếng chó sủa chỉ là sự cố ngoài kịch bản ở buổi sau.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  trich: the other stationed back of the child, struck the steel bar a sharp blow
+  vi_tri: Mở bài; mục II
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "đủ chói tai để một trẻ 11 tháng tuổi khóc thét"; mới "bé giật mình, và các lần sau khóc".'
+- id: n60
+  cau: 'Quiz, câu 3: Albert còn né thỏ, chó, áo lông hải cẩu, mặt nạ ông già Noel, ở buổi đầu chưa đi kèm tiếng động; bé vẫn chơi khối gỗ bình thường; phân tích 2021 cho rằng bằng chứng yếu.'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  - powell2021
+  trich: Blocks again offered. Played readily with them, smiling and gurgling.
+  vi_tri: Mục II
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: đáp án "Thỏ, chó, áo lông thú, mặt nạ râu tóc — những vật bé chưa từng bị dọa cùng tiếng động"; giải thích "càng giống (có lông, mềm), càng dễ gợi sợ": bỏ (xem n44).'
+- id: n61
+  cau: 'Quiz, câu 4: Albert rời bệnh viện đúng ngày kiểm tra cuối cùng nên Watson và Rayner không có dịp gỡ nỗi sợ; khoảng ba năm sau Jones báo cáo gỡ nỗi sợ thỏ ở Peter (một ca, còn dang dở).'
+  loai: phat-hien
+  nguon:
+  - watson1920
+  - coverjones1924
+  trich: The study is still incomplete.
+  vi_tri: Mục IV Watson; bài Jones, trang 315
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: đáp án "Watson và Rayner thừa nhận họ chưa kịp thực hiện bước giải điều kiện hóa" và giải thích "Bốn năm sau, Jones mới chứng minh việc gỡ khả thi"; "chứng minh" quá mạnh,
+    đổi thành "báo cáo".'
+- id: n62
+  cau: 'Quiz, câu 5: tính đến 10/2026 danh tính còn đang tranh cãi: Beck và cộng sự 2009 (Merritte), Powell và cộng sự 2014 (Barger).'
+  loai: phat-hien
+  nguon:
+  - beck2009
+  - powell2014
+  trich: we present the discovery of another individual, Albert Barger
+  vi_tri: Abstract Powell 2014
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "chưa có kết luận cuối cùng" và giải thích "Ngay cả phát hiện chấn động năm 2009 cũng bị thách thức": bỏ "chấn động" và câu bình luận chung.'
+- id: n63
+  cau: 'Trang này là trang nhà của nghiên cứu Little Albert: nơi khác chỉ tóm một câu và link về.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id little-albert, trang_nha: thi-nghiem/little-albert, nguon [watson1920].'
+- id: n64
+  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Như n65 của keo-deo.yml (src/plugins/thanh-phan.mjs, hàm tomTat).
+- id: n65
+  cau: Hộp hồ sơ nghiên cứu ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Bốn dòng của hộp khớp mục Nghiên cứu then chốt (n3, n12, n14–n24, n7).
+- id: n66
+  cau: Link "trang Hỗ trợ" (/psyche/ho-tro/) có trong trang.yml.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm bằng grep: id ho-tro/index có trong src/data/trang.yml; trang bài trỏ /psyche/ho-tro/.'
+doi_chu:
+- cu: (không có)
+  ly_do: Bố cục C (kế hoạch).
+  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+- cu: (không có)
+  ly_do: Bố cục C (kế hoạch).
+  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính'

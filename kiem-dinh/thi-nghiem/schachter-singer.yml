@@ -4,14 +4,645 @@ nguon_cu: ../psyche-zero/docs/thi-nghiem/schachter-singer.md
 tang: loi
 muc: V3
 lan:
-  - so: 1
-    ngay: null
-    nhanh: moi/d3-l2
-    ma_bam: null
-    nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
-      kiem_mau: null
-nguon: []
-nhan_dinh: []
+- so: 1
+  ngay: '2026-10-30'
+  nhanh: moi/d3-l2
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Sonnet 5.5 (agent lượt 1, D3-L2 phần 2/2)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: schachter1962
+  ten: 'Schachter & Singer (1962), Psychol Rev 69(5), 379–399: toàn văn (bản PDF ở gwern.net)'
+  link: https://doi.org/10.1037/h0046234
+  toan_van: true
+- id: reisenzein1983
+  ten: 'Reisenzein (1983), Psychol Bull 94(2), 239–264: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/0033-2909.94.2.239
+  toan_van: false
+- id: cotton1981
+  ten: 'Cotton (1981), Eur J Soc Psychol 11(4), 365–397: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1002/ejsp.2420110403
+  toan_van: false
+- id: dutton1974
+  ten: 'Dutton & Aron (1974), J Pers Soc Psychol 30(4), 510–517: tóm tắt (OpenAlex, PubMed 4455773)'
+  link: https://doi.org/10.1037/h0037031
+  toan_van: false
+- id: marshall1979
+  ten: 'Marshall & Zimbardo (1979), J Pers Soc Psychol 37(6), 970–988: chỉ có nhan đề và siêu dữ liệu (Crossref); không mở được tóm tắt hay toàn văn'
+  link: https://doi.org/10.1037/0022-3514.37.6.970
+  toan_van: false
+- id: maslach1979
+  ten: 'Maslach (1979), J Pers Soc Psychol 37(6), 953–969: chỉ có nhan đề (OpenAlex); không mở được tóm tắt hay toàn văn'
+  link: https://doi.org/10.1037/0022-3514.37.6.953
+  toan_van: false
+nhan_dinh:
+- id: n1
+  cau: Schachter và Singer (1962) tiêm adrenaline cho người tham gia rồi cho họ ngồi cùng một diễn viên vui vẻ hoặc giận dữ.
+  loai: phat-hien
+  nguon: &id001
+  - schachter1962
+  trich: a stooge trained to act euphorically ... a stooge trained to act in an angry fashion
+  vi_tri: tr. 383–384 (Producing an Emotion Inducing Situation)
+  ket_qua: dung
+- id: n2
+  cau: 'Lý thuyết hai nhân tố: trạng thái cảm xúc là hàm của kích thích sinh lý và một nhận thức phù hợp với kích thích ấy.'
+  loai: dinh-nghia
+  nguon: *id001
+  trich: an emotional state may be considered a function of a state of physiological arousal and of a cognition appropriate to this state of arousal
+  vi_tri: tr. 380
+  ket_qua: dung
+- id: n3
+  cau: 'Thí nghiệm được dựng dưới vỏ bọc "tác dụng của vitamin lên thị lực": người tham gia được tiêm "vitamin Suproxin".'
+  loai: phat-hien
+  nguon: *id001
+  trich: the experiment was cast in the framework of a study of the effects of vitamin supplements on vision
+  vi_tri: tr. 382 (Procedure)
+  ket_qua: dung
+- id: n4
+  cau: Người tham gia chờ 20 phút để thuốc ngấm.
+  loai: phat-hien
+  nguon: *id001
+  trich: What I ask you to do now is just wait for 20 minutes.
+  vi_tri: tr. 384
+  ket_qua: dung
+- id: n5
+  cau: Epinephrine gây tim đập nhanh (palpitation), run tay (tremor) và đôi khi cảm giác nóng bừng mặt.
+  loai: phat-hien
+  nguon: *id001
+  trich: the major subjective symptoms are palpitation, tremor, and sometimes a feeling of flushing and accelerated breathing
+  vi_tri: tr. 382
+  ket_qua: dung
+- id: n6
+  cau: Diễn viên vui vẻ gấp máy bay giấy, chơi "bóng rổ" bằng giấy vo viên vào sọt rác, xoay vòng hula hoop.
+  loai: phat-hien
+  nguon: *id001
+  trich: He crumples up other sheets of paper, shoots a few baskets ... "I think I'll make a plane." ... "Hey, look at this—this is great."
+  vi_tri: tr. 384 (các đơn vị 2, 5, 14 của màn diễn)
+  ket_qua: da-sua
+  ghi_chu: 'gia-dinh ở "Tự trải nghiệm": tình huống minh họa ngôi thứ hai theo thí nghiệm gốc. Chữ cũ: "cười ha hả đầy phấn khích"; bài gốc không ghi diễn viên cười ha hả, chỉ nói "I feel like a kid again", "this is great": đổi thành "hồ hởi như trẻ con". Đã sửa.'
+- id: n7
+  cau: 'Trong thí nghiệm thật, những người không được giải thích đúng về mũi tiêm có xu hướng "bắt" cảm xúc của người ngồi cùng: vui theo người vui, giận theo người giận.'
+  loai: phat-hien
+  nguon: *id001
+  trich: those subjects who had no explanation for the bodily state thus produced, gave behavioral and self-report indications that they had been readily manipulable into the disparate feeling states of euphoria and anger
+  vi_tri: tr. 395 (Discussion)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "đã bắt cảm xúc ... vui theo người vui, giận theo người giận", khẳng định không rào đón. Mới: "có xu hướng". Lý do: tự báo cáo giận chỉ p = .08; hành vi vui vẻ của nhóm không được báo trước không khác nhóm được báo đúng có ý nghĩa (Table 3).'
+- id: n8
+  cau: Những người được báo trước "thuốc sẽ làm tim đập nhanh" ít bị cuốn theo cảm xúc của diễn viên hơn hẳn.
+  loai: phat-hien
+  nguon: *id001
+  trich: In those conditions in which subjects were injected with epinephrine and told precisely what they would feel and why, they proved relatively immune to any effects of the manipulated cognitions.
+  vi_tri: tr. 396
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "giữ được bình tĩnh"; mới: "ít bị cuốn theo hơn hẳn", đúng chữ "relatively immune".'
+- id: n9
+  cau: 'Hai tác giả đề xuất: cảm xúc gồm kích thích sinh lý và cái nhãn nhận thức mà não gắn lên nó.'
+  loai: lich-su
+  nguon: *id001
+  trich: It is the cognition which determines whether the state of physiological arousal will be labeled as "anger," "joy," "fear," or whatever.
+  vi_tri: tr. 380
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Kết luận: cảm xúc = kích thích sinh lý + cái nhãn mà não dán lên nó" (kết luận). Mới: "hai tác giả đề xuất", vì sau này chỉ được ủng hộ một phần (Reisenzein 1983).'
+- id: n10
+  cau: Các nghiên cứu sau chỉ ủng hộ một phần đề xuất hai nhân tố.
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: the available data support at best a rather attenuated version of Schachter's theory
+  vi_tri: Tóm tắt (OpenAlex)
+  ket_qua: dung
+  ghi_chu: Chỉ đọc tóm tắt Reisenzein.
+- id: n11
+  cau: 'Schachter và Singer đặt câu hỏi: nếu cơ thể đã "báo động" mà người ta chưa biết vì sao, họ sẽ làm gì, và họ dựa vào hoàn cảnh để gọi tên cảm xúc.'
+  loai: lich-su
+  nguon: *id001
+  trich: Given a state of physiological arousal for which an individual has no immediate explanation, he will "label" this state and describe his feelings in terms of the cognitions available to him.
+  vi_tri: tr. 381 (mệnh đề 1)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Chúng ta thường nghĩ cảm xúc đi từ trong ra ngoài ... đảo ngược câu hỏi ... não nhìn quanh, tìm lời giải thích gần nhất". Mới: gọi đó là câu trả lời của hai tác giả, một giả thuyết ("não" và "lời giải thích gần nhất" không có trong bài gốc). Phần mô tả thói quen nghĩ chung của người đọc không cần nguồn.'
+- id: n12
+  cau: Hai tác giả hình dung tim đập nhanh giữa buổi tiệc vui là "phấn khích" và trong con hẻm tối là "sợ hãi".
+  loai: lich-su
+  nguon: *id001
+  trich: Should he be at a gay party, he might, by comparing himself to others, decide that he was extremely happy and euphoric.
+  vi_tri: tr. 381; ví dụ hẻm tối ở tr. 380
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Tim đập nhanh giữa buổi tiệc vui thành phấn khích; ... con hẻm tối thành sợ hãi" như sự thật. Mới: ví dụ của hai tác giả. Trong bài, hẻm tối là ví dụ về kích thích có nguyên nhân rõ (không có kích thích bí ẩn).'
+- id: n13
+  cau: 184 nam sinh viên đồng ý được tiêm.
+  loai: so-lieu
+  nguon: *id001
+  trich: If the subject agrees to the injection (and all but 1 of 185 subjects did)
+  vi_tri: tr. 382
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: 185 người được mời, 1 từ chối = 184. Nhưng Table 1 có N = 27+26+26+26+23+23+23 = 174, cộng 11 người bị loại vì quá nghi ngờ = 185: hai con số không khớp hẳn (chênh 1). Trang dùng 184 theo câu "all but 1 of 185"; người giao/lượt 2 cân nhắc.'
+- id: n14
+  cau: Người tham gia đều là nam sinh viên các lớp nhập môn tâm lý học ở Đại học Minnesota.
+  loai: phat-hien
+  nguon: *id001
+  trich: The subjects were all male, college students taking classes in introductory psychology at the University of Minnesota.
+  vi_tri: tr. 387 (Subjects)
+  ket_qua: dung
+- id: n15
+  cau: Người tham gia được tiêm epinephrine hoặc giả dược (nước muối).
+  loai: phat-hien
+  nguon: *id001
+  trich: Subjects in the placebo condition received a subcutaneous injection of ½ cubic centimeter of saline solution.
+  vi_tri: tr. 382
+  ket_qua: dung
+- id: n16
+  cau: 'Nhóm tiêm adrenaline được chia ba: được báo đúng, không được báo gì, bị báo sai.'
+  loai: phat-hien
+  nguon: *id001
+  trich: Epinephrine Informed (Epi Inf), Epinephrine Ignorant (Epi Ign), and Epinephrine Misinformed (Epi Mis)
+  vi_tri: tr. 383
+  ket_qua: dung
+- id: n17
+  cau: Nhóm được báo đúng được nói rằng thuốc sẽ làm tim đập nhanh, run tay, mặt nóng.
+  loai: phat-hien
+  nguon: *id001
+  trich: your hand will start to shake, your heart will start to pound, and your face may get warm and flushed
+  vi_tri: tr. 383
+  ket_qua: dung
+- id: n18
+  cau: Nhóm bị báo sai được nói thuốc gây tê chân, ngứa và hơi đau đầu.
+  loai: phat-hien
+  nguon: *id001
+  trich: your feet will feel numb, you will have an itching sensation over parts of your body, and you may get a slight headache
+  vi_tri: tr. 383
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "thuốc gây ngứa hoặc đau đầu"; mới thêm "tê chân", "hơi đau đầu".'
+- id: n19
+  cau: Nhóm bị báo sai chỉ có ở điều kiện vui vẻ, không có ở điều kiện giận dữ.
+  loai: phat-hien
+  nguon: *id001
+  trich: The Epi Mis condition was not run in the Anger sequence.
+  vi_tri: tr. 386
+  ket_qua: da-sua
+  ghi_chu: Chi tiết thêm vào trang; chữ cũ không nói.
+- id: n20
+  cau: Trong điều kiện vui vẻ, diễn viên gấp máy bay giấy, chơi bóng rổ giấy, làm ná chun, xoay hula hoop.
+  loai: phat-hien
+  nguon: *id001
+  trich: He wads up paper and making a slingshot of a rubber band begins to shoot the paper.
+  vi_tri: tr. 384 (đơn vị 9)
+  ket_qua: dung
+- id: n21
+  cau: Trong điều kiện giận dữ, hai người làm một bảng hỏi ngày càng riêng tư và xúc phạm; diễn viên ngày càng bực, xé bảng hỏi rồi bỏ ra ngoài.
+  loai: phat-hien
+  nguon: *id001
+  trich: The questionnaires, five pages long, start off innocently requesting face sheet information and then grow increasingly personal and insulting.
+  vi_tri: tr. 385
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ngày càng riêng tư"; thêm "và xúc phạm" theo trích.'
+- id: n22
+  cau: Cảm xúc được đo bằng quan sát qua gương một chiều và bảng tự báo cáo.
+  loai: phat-hien
+  nguon: *id001
+  trich: Standardized observation through a one-way mirror was the technique used to assess the subject's behavior ... The second type of measure was selfreport
+  vi_tri: tr. 386
+  ket_qua: dung
+- id: n23
+  cau: Ở điều kiện vui vẻ, nhóm không được báo trước và nhóm bị báo sai tự báo cáo vui hơn nhóm được báo đúng (điểm 1,78 và 1,90, so với 0,98).
+  loai: so-lieu
+  nguon: *id001
+  trich: Epi Inf 0.98; Epi Ign 1.78; Epi Mis 1.90; Epi Inf vs. Epi Mis p<.01; Epi Inf vs. Epi Ign p .02
+  vi_tri: Table 2, tr. 390
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: không có con số. Mới thêm các điểm và p của Table 2.'
+- id: n24
+  cau: Ở điều kiện vui vẻ, nhóm không được báo trước và nhóm bị báo sai có xu hướng hành động hưng phấn hơn nhóm được báo đúng; chênh lệch về chỉ số hành động chỉ có ý nghĩa thống kê với nhóm bị báo sai.
+  loai: so-lieu
+  nguon: *id001
+  trich: 'Activity index: Epi Inf 12.72; Epi Ign 18.28; Epi Mis 22.56; Epi Inf vs. Epi Mis .05; Epi Inf vs. Epi Ign ns'
+  vi_tri: Table 3, tr. 390
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "cũng hành động hưng phấn hơn" không điều kiện. Mới làm mềm theo Table 3.'
+- id: n25
+  cau: Ở điều kiện giận dữ, chỉ số hành vi giận của nhóm không được báo trước cao hơn hẳn nhóm được báo đúng (+2,28 so với −0,18).
+  loai: so-lieu
+  nguon: *id001
+  trich: 'Anger units: Epi Inf -0.18; Epi Ign +2.28; Epi Inf vs. Epi Ign <.05'
+  vi_tri: Table 5, tr. 392
+  ket_qua: da-sua
+  ghi_chu: Chữ cũ không có số.
+- id: n26
+  cau: Tự báo cáo giận cùng chiều nhưng chưa đạt mức ý nghĩa (1,91 so với 1,39; p = ,08).
+  loai: so-lieu
+  nguon: *id001
+  trich: Epi Inf 1.91; Epi Ign 1.39; Epi Inf vs. Epi Ign .08
+  vi_tri: Table 4, tr. 392
+  ket_qua: da-sua
+  ghi_chu: Chữ cũ không nói.
+- id: n27
+  cau: Các tác giả cho biết người tham gia ngại bộc lộ giận trước người thí nghiệm, vì sợ mất điểm thi.
+  loai: phat-hien
+  nguon: *id001
+  trich: the subjects ... simply refused to endanger these points by publicly blowing up, admitting their irritation to the experimenter's face or spoiling the questionnaire
+  vi_tri: tr. 391
+  ket_qua: da-sua
+  ghi_chu: Chi tiết thêm. Trang viết "ngại lộ giận trước người thí nghiệm" (bỏ "vì sợ mất điểm" khỏi trang).
+- id: n28
+  cau: Nhóm giả dược nằm giữa các nhóm epinephrine; chênh lệch với nhóm epinephrine không có ý nghĩa thống kê ở điều kiện vui vẻ.
+  loai: phat-hien
+  nguon: *id001
+  trich: Placebo subjects are less euphoric than either Epi Mis or Epi Ign subjects but somewhat more euphoric than Epi Inf subjects. These differences are not, however, statistically significant.
+  vi_tri: tr. 390
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nhóm giả dược chỉ chịu ảnh hưởng nhẹ" (không đúng nghĩa: placebo cao hơn Epi Inf, thấp hơn Epi Ign/Mis). Đã sửa.'
+- id: n29
+  cau: Các tác giả gọi kết quả của nhóm giả dược là "đáng lo" cho lý thuyết, nên phải dùng phân tích phụ.
+  loai: lich-su
+  nguon: *id001
+  trich: This is a particularly troubling pattern for it makes it impossible to evaluate unequivocally the effects of the state of physiological arousal and indeed raises serious questions about our entire theoretical structure.
+  vi_tri: tr. 393
+  ket_qua: da-sua
+  ghi_chu: Chi tiết thêm.
+- id: n30
+  cau: Phân tích phụ loại những người tự gán triệu chứng cho mũi tiêm; các tác giả gọi kết luận của mình là dè dặt (tentative).
+  loai: phat-hien
+  nguon: *id001
+  trich: the fact that we were forced, to some extent, to rely on internal analyses in order to partial out the effects of experimental artifacts inevitably makes our conclusions somewhat tentative
+  vi_tri: tr. 396
+  ket_qua: da-sua
+  ghi_chu: Chi tiết thêm.
+- id: n31
+  cau: 'Ba mệnh đề: (a) kích thích không có lời giải thích sẽ được dán nhãn theo nhận thức sẵn có; (b) kích thích đã có lời giải thích phù hợp thì không cần dán nhãn thêm; (c) cùng bối cảnh nhận thức, phản ứng cảm xúc chỉ xuất hiện khi có kích thích sinh lý.'
+  loai: dinh-nghia
+  nguon: *id001
+  trich: 1. Given a state of physiological arousal for which an individual has no immediate explanation, he will "label" this state ... 2. ... no evaluative needs will arise ... 3. Given the same cognitive circumstances, the individual will react emotionally ... only to the extent that he experiences a state of physiological arousal.
+  vi_tri: tr. 381–382
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "(c) cảm xúc chỉ xuất hiện khi có kích thích sinh lý"; mới thêm "cùng bối cảnh nhận thức, phản ứng cảm xúc". Các tác giả ghi bằng chứng cho mệnh đề 3 là "nhất quán nhưng dè dặt" (tr. 395).'
+- id: n32
+  cau: Marshall và Zimbardo (1979) thử làm lại phần điều kiện vui vẻ, tiêm epinephrine hoặc giả dược rồi cho ngồi cùng diễn viên vui vẻ.
+  loai: tai-lap
+  nguon:
+  - marshall1979
+  ket_qua: null
+  ghi_chu: 'chưa chắc: chỉ có nhan đề và siêu dữ liệu (Crossref); chi tiết thiết kế theo tóm tắt thứ cấp của WebSearch (Wikipedia: "tried to replicate the euphoria conditions"), bậc 3.'
+- id: n33
+  cau: Theo các tổng kết thứ cấp, hành vi của diễn viên vui vẻ ít ảnh hưởng đến người tham gia trong nghiên cứu của Marshall và Zimbardo, không như kết quả gốc.
+  loai: tai-lap
+  nguon:
+  - marshall1979
+  ket_qua: null
+  ghi_chu: 'chưa chắc: không mở được bài gốc. Chữ cũ: "diễn viên vui vẻ không tạo thêm sự vui vẻ so với diễn viên trung tính, và người tiêm epinephrine không dễ bị lây hơn giả dược" (chi tiết cụ thể, không kiểm được): đã làm mềm xuống mức tổng kết thứ cấp. Cần nguồn bậc 1 (người giao mở bản PsycNet).'
+- id: n34
+  cau: Theo các tổng kết thứ cấp, kích thích không giải thích được có xu hướng nghiêng về cảm xúc tiêu cực hơn là trung tính (Marshall và Zimbardo; Maslach).
+  loai: tai-lap
+  nguon:
+  - marshall1979
+  - maslach1979
+  ket_qua: null
+  ghi_chu: 'chưa chắc: chỉ có tóm tắt thứ cấp ("undifferentiated arousal has a more negative than neutral character", Dienstbier 1979 qua WebSearch). Chưa mở bài gốc của cả hai.'
+- id: n35
+  cau: Maslach (1979) dùng ám thị thôi miên thay cho mũi tiêm và cho kết quả theo hướng tương tự.
+  loai: tai-lap
+  nguon:
+  - maslach1979
+  ket_qua: null
+  ghi_chu: 'chưa chắc: chỉ có thông tin thứ cấp (WebSearch: "hypnotic suggestion for arousal ... uniformly negative experienced emotion"). Chữ cũ: "dùng ám thị thôi miên thay cho mũi tiêm, cũng cho kết quả tương tự" đã làm mềm "được mô tả theo hướng tương tự".'
+- id: n36
+  cau: Reisenzein (1983) là tổng quan sau hai thập kỷ, xem xét bằng chứng cho ba suy luận chính của lý thuyết Schachter.
+  loai: lich-su
+  nguon:
+  - reisenzein1983
+  trich: empirical evidence pertaining to three major deductions from the theory is reviewed
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Rà soát toàn bộ bằng chứng thực nghiệm"; mới: "xem xét bằng chứng cho ba suy luận chính" (đúng tóm tắt). Chỉ đọc tóm tắt.'
+- id: n37
+  cau: 'Chỉ một trong ba suy luận được dữ liệu ủng hộ đầy đủ: kích thích từ nguồn ngoài, bị quy nhầm cho tình huống cảm xúc, làm mạnh thêm phản ứng cảm xúc.'
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: only one of these deductions, claiming that misattributed arousal from an extraneous source intensifies emotional reactions, can be considered adequately supported by the data
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "kích thích bị quy kết nhầm nguồn làm mạnh thêm phản ứng cảm xúc"; mới thêm "từ nguồn ngoài", "cho tình huống cảm xúc".'
+- id: n38
+  cau: Suy luận rằng giảm kích thích làm giảm cảm xúc ít được ủng hộ; suy luận rằng quy kích thích cho nguồn trung tính làm giảm cảm xúc thì chưa rõ vì còn cách diễn giải khác.
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: Little support is found for the second hypothesis ... the status of the third hypothesis ... is considered equivocal because of plausible alternative interpretations
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: Chi tiết thêm vào trang.
+- id: n39
+  cau: Không có bằng chứng thuyết phục cho rằng kích thích là điều kiện cần của cảm xúc, hay rằng dán nhãn kích thích không rõ nguyên nhân có thể tạo ra cảm xúc.
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: there is no convincing evidence for Schachter's claim that arousal is a necessary condition for an emotional state, nor for the suggestion that emotional states may result from a labeling of unexplained arousal
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "dán nhãn kích thích không rõ nguyên nhân có thể tạo ra cảm xúc từ con số không"; bỏ "từ con số không" (không có trong tóm tắt).'
+- id: n40
+  cau: 'Reisenzein cho rằng vai trò của kích thích bị nói quá; điều còn lại nhiều nhất là phiên bản "pha loãng": kích thích có thể khuếch đại cường độ cảm xúc, một phần qua cách quy kết nguồn kích thích.'
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: It is suggested that the role of arousal in emotion has been overstated and that the available data support at best a rather attenuated version of Schachter's theory
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "thổi phồng"; "những gì còn đứng vững chỉ là...": mới "nói quá", "điều còn lại nhiều nhất".'
+- id: n41
+  cau: 'Dutton và Aron (1974): những người đàn ông đi ngang qua được một nữ phỏng vấn viên hấp dẫn gặp trên cầu treo gây sợ hãi hoặc cầu không gây sợ hãi, điền bảng hỏi có tranh TAT.'
+  loai: phat-hien
+  nguon:
+  - dutton1974
+  trich: Male passersby were contacted either on a fear-arousing suspension bridge or a non-fear-arousing bridge by an attractive female interviewer who asked them to fill out questionnaires containing Thematic Apperception Test pictures.
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "công viên Capilano (Canada)", "cầu treo cao rung lắc", "cầu thấp vững chãi", "cô cho số điện thoại để hỏi thêm". Bỏ các chi tiết này vì tóm tắt không có (chưa mở toàn văn). Chỉ đọc tóm tắt.'
+- id: n42
+  cau: Nội dung tình dục trong chuyện của người ở cầu treo và xu hướng tìm cách liên lạc lại với phỏng vấn viên đều cao hơn có ý nghĩa thống kê; với phỏng vấn viên nam thì hai cầu không khác nhau.
+  loai: phat-hien
+  nguon:
+  - dutton1974
+  trich: Sexual content of stories written by subjects on the fear-arousing bridge and tendency of these subjects to attempt postexperimental contact with the interviewer were both significantly greater.
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "gọi lại cho cô nhiều hơn hẳn, và viết những câu chuyện có nội dung lãng mạn nhiều hơn". Mới theo tóm tắt: "nội dung tình dục" (không phải "lãng mạn"), "tìm cách liên lạc lại".'
+- id: n43
+  cau: Hai tác giả diễn giải đó là cơn kích thích từ nỗi sợ bị quy nhầm thành sự hấp dẫn; nghiên cứu hiện trường này được dẫn nhiều.
+  loai: phat-hien
+  nguon:
+  - dutton1974
+  trich: Some theoretical implications of these findings are discussed.
+  vi_tri: Tóm tắt; OpenAlex cited_by_count = 934 (30/10/2026)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "minh chứng ngoài phòng thí nghiệm nổi tiếng nhất cho ý tưởng cốt lõi còn sống sót". Mới: bỏ "nổi tiếng nhất", "còn sống sót"; "được dẫn nhiều" theo OpenAlex (934). Việc tóm tắt có chứa chữ "misattribution" chưa kiểm: diễn giải này theo Cotton/Reisenzein (hai tóm tắt xếp nó vào nhóm nghiên cứu misattribution).'
+- id: n44
+  cau: 'Khá vững: kích thích từ nguồn khác, bị quy nhầm cho một tình huống cảm xúc, có thể làm mạnh thêm cảm xúc.'
+  loai: nhan
+  nguon:
+  - reisenzein1983
+  - dutton1974
+  - cotton1981
+  trich: only one of these deductions, claiming that misattributed arousal from an extraneous source intensifies emotional reactions, can be considered adequately supported by the data
+  vi_tri: Tóm tắt Reisenzein
+  nhan: kha-vung
+  co_so:
+  - reisenzein1983
+  - dutton1974
+  - cotton1981
+  ly_do: Một tổng quan kể chuyện (Reisenzein 1983) nói suy luận này có đủ bằng chứng, cộng một nghiên cứu hiện trường (Dutton & Aron 1974); Cotton (1981) nói cơ chế còn nghi ngờ. Không có phân tích tổng hợp hay tái lập lớn có đăng ký trước mà chúng tôi mở được nên chưa đạt Vững chắc.
+  ket_qua: da-lam-mem
+  ghi_chu: 'chỗ khó: chữ cũ là :::vung-chac ("nhầm lẫn quy kết nguồn kích thích có thể lái trải nghiệm cảm xúc", "Đây là phần sống sót vững nhất"). Thước đo Vững chắc đòi phân tích tổng hợp/tái lập lớn; chưa có; hạ xuống Khá vững; và nội dung hẹp lại thành "làm mạnh thêm" (đúng chữ của Reisenzein) thay vì "lái". Gộp với khung kha-vung cũ ("kích thích khuếch đại cường độ cảm xúc") thành một khung. Người giao/lượt 2 cân nhắc; nếu có phân tích tổng hợp về misattribution of arousal (chưa tìm) thì có thể nâng.'
+- id: n45
+  cau: 'Đang tranh cãi: phiên bản mạnh của lý thuyết hai nhân tố.'
+  loai: nhan
+  nguon:
+  - reisenzein1983
+  - cotton1981
+  - marshall1979
+  - maslach1979
+  trich: Schachter's (1964a, b) theory is not well supported by the research, but the available evidence has not necessarily disproven the theory either.
+  vi_tri: Tóm tắt Cotton
+  nhan: tranh-cai
+  co_so:
+  - reisenzein1983
+  - cotton1981
+  - marshall1979
+  - maslach1979
+  ly_do: 'Kết quả gốc dương, một số lần làm lại không lặp lại (Marshall & Zimbardo, Maslach: chưa mở bài gốc), hai tổng quan (Cotton 1981, Reisenzein 1983) nói chưa được ủng hộ tốt nhưng chưa bác hẳn: đúng mô tả "bằng chứng mâu thuẫn" của Đang tranh cãi.'
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: chữ cũ nói "không đứng vững", dẫn Cotton "kết quả khá hỗn hợp". Cotton thực ra nói "not well supported ... not necessarily disproven". Đổi chữ khung và giữ nhãn. Marshall/Maslach chỉ có thông tin thứ cấp.'
+- id: n46
+  cau: Cotton (1981) kết luận lý thuyết của Schachter chưa được nghiên cứu ủng hộ tốt, nhưng bằng chứng chưa chắc đã bác bỏ nó.
+  loai: phat-hien
+  nguon:
+  - cotton1981
+  trich: Schachter's (1964a, b) theory is not well supported by the research, but the available evidence has not necessarily disproven the theory either.
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ghi nhận kết quả các nghiên cứu khá hỗn hợp". Chỉ đọc tóm tắt.'
+- id: n47
+  cau: Khung "Đã bị bác bỏ" cũ ("cứ tim đập nhanh là não sẽ tự bịa ra bất kỳ cảm xúc nào") đã bỏ khỏi trang.
+  loai: phat-hien
+  nguon: []
+  ket_qua: da-bo
+  ghi_chu: 'Chữ cũ: khung :::bac-bo, nói kích thích không rõ nguyên nhân "nghiêng về tiêu cực" và "nhiều cảm xúc hình thành mà không cần dán nhãn". Không có nguồn mở được cho "nhiều cảm xúc hình thành mà không cần qua bước dán nhãn"; chỉ chứng cứ thứ cấp cho "nghiêng tiêu cực"; theo thước đo mục 4 cũng không đạt Đã bị bác bỏ. Bỏ cả khung.'
+- id: n48
+  cau: 'James (1890): thay đổi của cơ thể đi liền sau việc nhận ra sự kiện, và cảm giác về những thay đổi ấy chính là cảm xúc.'
+  loai: lich-su
+  nguon: *id001
+  trich: the bodily changes follow directly the perception of the exciting fact, and that our feeling of the same changes as they occur is the emotion
+  vi_tri: tr. 379
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "cơ thể đi trước, cảm xúc đi sau — ''ta buồn vì ta khóc''". Mới theo trích của Schachter & Singer. Câu "ta buồn vì ta khóc" (cách nói phổ biến, không nguyên văn) bỏ.'
+- id: n49
+  cau: Schachter và Singer giữ lại phần cơ thể của James–Lange nhưng thêm rằng cần có thêm nhận thức phù hợp.
+  loai: lich-su
+  nguon: *id001
+  trich: an emotional state may be considered a function of a state of physiological arousal and of a cognition appropriate to this state of arousal
+  vi_tri: tr. 380
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "giữ lại nửa này nhưng thêm: cơ thể một mình chưa đủ, cần thêm diễn giải". Mới bám bài gốc.'
+- id: n50
+  cau: Cannon (1929) phê bình James–Lange, chẳng hạn rằng động vật bị cắt hệ giao cảm vẫn có hành vi cảm xúc; Schachter và Singer thừa nhận phê bình này cũng áp dụng cho mệnh đề thứ ba.
+  loai: lich-su
+  nguon: *id001
+  trich: In his critique of the James-Lange theory of emotion, Cannon (1929) also makes the point that sympathectomized animals and patients do seem to manifest emotional behavior.
+  vi_tri: chú thích 5, tr. 382
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Cannon–Bard: kích thích sinh lý quá chậm và quá giống nhau giữa các cảm xúc ... cảm xúc và phản ứng cơ thể xảy ra song song, do não điều phối". Không có trong nguồn đã mở (bài gốc chỉ có phê bình về động vật cắt giao cảm). Thay bằng điều có trong chú thích 5.'
+- id: n51
+  cau: 'Bullet "Thẩm định nhận thức hiện đại: cảm xúc là kết quả của quá trình đánh giá tình huống" đã bỏ khỏi trang.'
+  loai: phat-hien
+  nguon: []
+  ket_qua: da-bo
+  ghi_chu: 'Chữ cũ: "Thẩm định nhận thức hiện đại: ... tín hiệu cơ thể chỉ là một mảnh dữ liệu đầu vào". Không có nguồn đã mở nói điều này; bỏ.'
+- id: n52
+  cau: Việc đổi nguồn mà ta quy cho cơn kích thích có làm giảm cảm xúc hay không thì Reisenzein (1983) đánh giá là chưa rõ.
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: the status of the third hypothesis, that misattribution of emotionally induced arousal to a neutral source results in a reduction of emotionality, is considered equivocal
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (loi-khuyen): "Đổi được nguồn quy kết, đôi khi đổi được luôn cảm xúc"; "Trước khi dán nhãn mình đang sợ, hãy kiểm tra các nguồn kích thích khác". Khẳng định đổi được cảm xúc mâu thuẫn Reisenzein (chưa rõ): đã sửa thành "đừng vội gọi tên" và dẫn Reisenzein. Cà phê, chạy bộ, lo lắng là các ví dụ nguyên nhân tim đập nhanh, kiến thức chung, không đủ chặt: ghi chú.'
+- id: n53
+  cau: Nghiên cứu cầu treo là một nghiên cứu hiện trường với nam giới và một phỏng vấn viên, nên không đủ để nói điều gì về chuyện hẹn hò nói chung.
+  loai: phat-hien
+  nguon:
+  - dutton1974
+  trich: Male passersby were contacted either on a fear-arousing suspension bridge or a non-fear-arousing bridge by an attractive female interviewer
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Cẩn thận với tiếng sét ái tình ... Những buổi hẹn hò kịch tính — phim kinh dị, tàu lượn — có thể làm tăng chemistry theo đúng nghĩa đen". Không có nguồn: bỏ ý phim kinh dị, tàu lượn.'
+- id: n54
+  cau: Bullet "Tranh luận lúc đang nóng máy" (vừa tập thể dục xong, cơn giận có thể đến từ dư âm sinh lý) đã bỏ khỏi trang.
+  loai: loi-khuyen
+  nguon: []
+  ket_qua: da-bo
+  ghi_chu: Không có nguồn đã mở nói điều này (excitation transfer chưa đọc).
+- id: n55
+  cau: Tính đến 10/2026, chưa tìm thấy nghiên cứu nào kiểm tra lý thuyết hai nhân tố trên người Việt.
+  loai: thoi-su
+  nguon: []
+  het_han: '2028-10-01'
+  ket_qua: dung
+  ghi_chu: 'Tìm 30/10/2026: PubMed ("two-factor theory of emotion" AND Vietnam: 0; Schachter AND misattribution AND Vietnam: 0); Crossref (truy vấn Schachter Singer two-factor Vietnamese: không có nghiên cứu trên người Việt). Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc thời gian.'
+- id: n56
+  cau: Thí nghiệm gốc làm trên nam sinh viên ở Đại học Minnesota (Mỹ).
+  loai: phat-hien
+  nguon: *id001
+  trich: The subjects were all male, college students taking classes in introductory psychology at the University of Minnesota.
+  vi_tri: tr. 387
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Các bằng chứng hiện có đều đến từ phương Tây" (không kiểm được cho cả nền nghiên cứu; Reisenzein, Cotton chưa mở). Mới chỉ nói điều đã kiểm.'
+- id: n57
+  cau: Câu "thí nghiệm gốc ... một thiết kế ngày nay không thể qua hội đồng đạo đức ở bất kỳ đâu" và đoạn "câu hỏi thú vị nhưng chưa có đáp án" về ngôn ngữ, chuẩn mực văn hóa đã bỏ.
+  loai: phat-hien
+  nguon: []
+  ket_qua: da-bo
+  ghi_chu: 'Không có nguồn: bỏ. Thay bằng "Chúng tôi không có nguồn nào ... nên không suy đoán".'
+- id: n58
+  cau: 'Ngộ nhận: lý thuyết hai nhân tố coi kích thích sinh lý là một thành phần của cảm xúc mạnh, dù Reisenzein (1983) không thấy bằng chứng thuyết phục rằng nó là điều kiện cần.'
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  - schachter1962
+  trich: Given the same cognitive circumstances, the individual will react emotionally or describe his feelings as emotions only to the extent that he experiences a state of physiological arousal.
+  vi_tri: tr. 382; tóm tắt Reisenzein
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "khẳng định kích thích sinh lý là điều kiện của cảm xúc mạnh — không có cơn tim đập nhanh thì chẳng có gì để dán nhãn". Mới thêm Reisenzein.'
+- id: n59
+  cau: 'Ngộ nhận: tim đập nhanh khi gặp ai đó không có nghĩa là yêu; có thể là cà phê, cầu thang bộ hay lo lắng.'
+  loai: loi-khuyen
+  nguon:
+  - dutton1974
+  trich: Anticipation of own shock but not anticipation of shock to confederate increased sexual imagery scores on the Thematic Apperception Test and attraction to the confederate.
+  vi_tri: Tóm tắt (nghiên cứu thứ ba)
+  ket_qua: null
+  ghi_chu: 'chưa chắc: "cà phê, cầu thang bộ" là ví dụ, không có nguồn riêng; ý "đừng ra quyết định lớn dựa trên một cơn kích thích chưa rõ" là lời khuyên không có nguồn. Cần lượt 2 cân nhắc làm mềm hay bỏ.'
+- id: n60
+  cau: 'Ngộ nhận: có thể điều khiển cảm xúc người khác bằng cách tạo kích thích; điều được tổng quan xem là có đủ bằng chứng chỉ là kích thích làm mạnh thêm cảm xúc sẵn có.'
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: only one of these deductions, claiming that misattributed arousal from an extraneous source intensifies emotional reactions, can be considered adequately supported by the data
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "đã không đứng vững; kích thích chỉ lái được trong điều kiện hẹp, thường nghiêng về tiêu cực". Mới bỏ "thường nghiêng tiêu cực" (chưa kiểm).'
+- id: n61
+  cau: 'Ngộ nhận: lý thuyết bị phê bình thì vứt đi; phần mà Reisenzein xem là có đủ bằng chứng vẫn còn.'
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: only one of these deductions ... can be considered adequately supported by the data
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Schachter và Singer bị bóc phốt nên lý thuyết vứt đi. Sai ... cốt lõi nhầm lẫn quy kết và khuếch đại vẫn được ủng hộ". Mới bỏ "bóc phốt" và chỉ nói điều Reisenzein nói.'
+- id: n62
+  cau: 'Quiz 1: nhóm bắt cảm xúc của diễn viên mạnh nhất là nhóm tiêm adrenaline mà không được giải thích đúng (không được báo gì hoặc bị báo sai); nhóm được báo đúng ít bị cuốn theo nhất, nhóm giả dược nằm giữa.'
+  loai: phat-hien
+  nguon: *id001
+  trich: Placebo subjects are less euphoric than either Epi Mis or Epi Ign subjects but somewhat more euphoric than Epi Inf subjects.
+  vi_tri: tr. 390
+  ket_qua: da-sua
+  ghi_chu: 'Giải thích cũ: "nhóm giả dược không có kích thích gì để dán nhãn" (sai: placebo cũng có kích thích một phần theo tác giả); đã sửa.'
+- id: n63
+  cau: 'Quiz 2: nhóm được báo đúng ít chịu ảnh hưởng vì đã có lời giải thích thỏa đáng cho cơn kích thích; đó là mệnh đề (b).'
+  loai: phat-hien
+  nguon: *id001
+  trich: Given a state of physiological arousal for which an individual has a completely appropriate explanation ... no evaluative needs will arise
+  vi_tri: tr. 382
+  ket_qua: dung
+- id: n64
+  cau: 'Quiz 3: Marshall và Zimbardo (1979) khi làm lại điều kiện vui vẻ: theo các tổng kết thứ cấp, hành vi của diễn viên vui vẻ ít ảnh hưởng đến người tham gia, không như kết quả gốc.'
+  loai: tai-lap
+  nguon:
+  - marshall1979
+  ket_qua: null
+  ghi_chu: 'chưa chắc: như n33. Đáp án đúng cũ gồm cả "kích thích nghiêng về cảm xúc tiêu cực"; đã làm mềm. Giải thích cũ: "một trong những đòn mạnh nhất vào phiên bản mạnh"; đổi thành "một trong những lý do khiến bị đặt dấu hỏi".'
+- id: n65
+  cau: 'Quiz 4: Reisenzein (1983) kết luận chỉ còn phiên bản "pha loãng": kích thích bị quy nhầm nguồn làm mạnh thêm cảm xúc; không có bằng chứng thuyết phục rằng kích thích là điều kiện cần của cảm xúc.'
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: there is no convincing evidence for Schachter's claim that arousal is a necessary condition for an emotional state
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: 'Giải thích cũ: "bị thổi phồng", đổi thành "nói quá".'
+- id: n66
+  cau: 'Quiz 5: nghiên cứu cầu treo minh họa việc cơn kích thích từ nỗi sợ có thể bị quy nhầm thành sự hấp dẫn.'
+  loai: phat-hien
+  nguon:
+  - dutton1974
+  trich: Sexual content of stories written by subjects on the fear-arousing bridge and tendency of these subjects to attempt postexperimental contact with the interviewer were both significantly greater.
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "gọi lại cho cô phỏng vấn nhiều hơn hẳn" và giải thích "minh chứng ngoài phòng thí nghiệm nổi tiếng nhất"; đã sửa như n41-43.'
+- id: n67
+  cau: Mục Nguồn liệt kê sáu nguồn với DOI trùng với src/data/nguon.yml.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm bằng grep: schachter1962, marshall1979, reisenzein1983, dutton1974, cotton1981, maslach1979 có trong src/data/nguon.yml với DOI khớp.'
+- id: n68
+  cau: 'Trang này là trang nhà của nghiên cứu Schachter và Singer: nơi khác chỉ tóm một câu và link về.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trong src/data/nghien-cuu.yml: id schachter-singer, trang_nha: thi-nghiem/schachter-singer, nguon [schachter1962].'
+- id: n69
+  cau: Hộp "Tóm tắt nhanh" ở đầu trang dựng tự động từ ý chính của các khung nhãn.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Như n58 của asch.yml (src/plugins/thanh-phan.mjs, hàm tomTat).
+- id: n70
+  cau: 'Hộp hồ sơ: tác giả và năm là Stanley Schachter và Jerome Singer, 1962; tổng quan Reisenzein, 1983.'
+  loai: lich-su
+  nguon: *id001
+  trich: COGNITIVE, SOCIAL, AND PHYSIOLOGICAL DETERMINANTS OF EMOTIONAL STATE STANLEY SCHACHTER AND JEROME E. SINGER
+  vi_tri: tr. 379
+  ket_qua: dung
+- id: n71
+  cau: 'Hộp hồ sơ: người tham gia là nam sinh viên các lớp nhập môn tâm lý học ở Đại học Minnesota; 184 người đồng ý tiêm, 11 người bị loại vì quá nghi ngờ thí nghiệm.'
+  loai: so-lieu
+  nguon: *id001
+  trich: 11 subjects were so extremely suspicious of some crucial feature of the experiment that their data were automatically discarded
+  vi_tri: tr. 387
+  ket_qua: dung
+  ghi_chu: 'Như n13: 184 và 11 theo bài, dù tổng Table 1 là 174.'
+- id: n72
+  cau: 'Hộp hồ sơ: thiết kế gồm tiêm epinephrine (được báo đúng, không được báo, bị báo sai) hay giả dược; 20 phút ngồi cùng diễn viên vui vẻ hoặc giận dữ.'
+  loai: phat-hien
+  nguon: *id001
+  trich: Epinephrine Informed ... Epinephrine Ignorant ... Epinephrine Misinformed ... placebo condition
+  vi_tri: tr. 383–384
+  ket_qua: dung
+- id: n73
+  cau: 'Hộp hồ sơ: người tiêm epinephrine mà không được báo trước bị cuốn theo cảm xúc của diễn viên nhiều hơn người được báo đúng; nhóm giả dược nằm giữa, chênh lệch với nhóm epinephrine không có ý nghĩa thống kê ở điều kiện vui vẻ.'
+  loai: phat-hien
+  nguon: *id001
+  trich: Placebo subjects are less euphoric than either Epi Mis or Epi Ign subjects but somewhat more euphoric than Epi Inf subjects. These differences are not, however, statistically significant.
+  vi_tri: tr. 390
+  ket_qua: dung
+- id: n74
+  cau: 'Hộp hồ sơ: Reisenzein (1983) kết luận chỉ một trong ba suy luận của lý thuyết được dữ liệu ủng hộ đầy đủ.'
+  loai: phat-hien
+  nguon:
+  - reisenzein1983
+  trich: only one of these deductions ... can be considered adequately supported by the data
+  vi_tri: Tóm tắt
+  ket_qua: dung
+- id: n75
+  cau: Hộp hồ sơ ở đầu trang chỉ tóm các điều đã có trong phần kể nghiên cứu của chính trang.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Năm dòng của hộp khớp mục Nghiên cứu then chốt (các nhận định về Schachter 1962 và Reisenzein 1983).
+doi_chu:
+- cu: (không có)
+  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+  ly_do: Bố cục C (kế hoạch).
+- cu: (không có)
+  moi: 'Hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu): tác giả và năm, người tham gia, thiết kế, kết quả chính, đánh giá sau này'
+  ly_do: Bố cục C (kế hoạch).
