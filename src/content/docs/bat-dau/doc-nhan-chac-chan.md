@@ -9,7 +9,7 @@ Nhãn nói về một khẳng định cụ thể, không về cả chủ đề: 
 
 ## Thước đo
 
-Mọi nhãn trên Psyche được gắn theo cùng một thước đo. *Phân tích tổng hợp* là bài gộp kết quả của nhiều nghiên cứu để rút ra một kết luận chung. *Tái lập* là làm lại một nghiên cứu để xem có ra kết quả tương tự không; tái lập *đăng ký trước* là ghi câu hỏi và kế hoạch phân tích trước khi thấy kết quả, để tách điều được dự đoán khỏi điều chỉ giải thích sau khi đã thấy kết quả.
+Mọi nhãn trên Psyche được gắn theo cùng một thước đo. *Phân tích tổng hợp* là bài dùng thống kê gộp kết quả của nhiều nghiên cứu để rút ra một ước lượng chung. *Tái lập* là làm lại một nghiên cứu để xem có ra kết quả tương tự không; tái lập *đăng ký trước* là ghi câu hỏi và kế hoạch phân tích trước khi thấy kết quả, để tách điều được dự đoán khỏi điều chỉ giải thích sau khi đã thấy kết quả.
 
 | Nhãn | Điều kiện |
 |---|---|
@@ -29,7 +29,7 @@ Mọi nhãn trên Psyche được gắn theo cùng một thước đo. *Phân t�
 :::kha-vung
 Có nhiều nghiên cứu ủng hộ, nhưng còn giới hạn: chưa có tái lập lớn, mẫu chủ yếu là người phương Tây, hoặc kết quả giữa các nghiên cứu khác nhau nhiều.
 
-*Ví dụ:* kỳ vọng của giáo viên ảnh hưởng tới kết quả của học sinh. Tổng quan 35 năm nghiên cứu cho thấy hiệu ứng này có thật, nhưng thường nhỏ và hay phai đi hơn là tích tụ theo thời gian ([Jussim và Harber, 2005](https://doi.org/10.1207/s15327957pspr0902_3)). Xem [Thầy tin trò giỏi, trò có giỏi hơn?](/psyche/thi-nghiem/pygmalion/).
+*Ví dụ:* kỳ vọng của giáo viên ảnh hưởng tới kết quả của học sinh. Tổng quan 35 năm nghiên cứu cho thấy hiệu ứng này có thật, nhưng thường nhỏ, không tích tụ nhiều theo thời gian, và có thể phai đi ([Jussim và Harber, 2005](https://doi.org/10.1207/s15327957pspr0902_3)). Xem [Thầy tin trò giỏi, trò có giỏi hơn?](/psyche/thi-nghiem/pygmalion/).
 :::
 
 :::tranh-cai
@@ -64,7 +64,7 @@ Khi gắn nhãn, Psyche xem xét các câu hỏi sau:
 - Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. *Psychological Bulletin*, 132(3), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>
 - Hagger, M. S., et al. (2016). A multilab preregistered replication of the ego-depletion effect. *Perspectives on Psychological Science*, 11(4), 546–573. <https://doi.org/10.1177/1745691616652873>
 - Hattie, J., & O'Leary, T. (2025). Learning styles, preferences, or strategies? An explanation for the resurgence of styles across many meta-analyses. *Educational Psychology Review*, 37, 31. <https://doi.org/10.1007/s10648-025-10002-w>
-- Loftus, E. F. (2005). Planting misinformation in the human mind: A 30-year investigation of the malleability of memory. *Learning & Memory*, 12(4), 361–366. <https://doi.org/10.1101/lm.94705>
+- Jussim, L., & Harber, K. D. (2005). Teacher expectations and self-fulfilling prophecies: Knowns and unknowns, resolved and unresolved controversies. *Personality and Social Psychology Review*, 9(2), 131–155. <https://doi.org/10.1207/s15327957pspr0902_3>
 - Open Science Collaboration (2015). Estimating the reproducibility of psychological science. *Science*, 349(6251), aac4716. <https://doi.org/10.1126/science.aac4716>
 - Pashler, H., McDaniel, M., Rohrer, D., & Bjork, R. (2008). Learning styles: Concepts and evidence. *Psychological Science in the Public Interest*, 9(3), 105–119. <https://doi.org/10.1111/j.1539-6053.2009.01038.x>
 - Vohs, K. D., et al. (2021). A multisite preregistered paradigmatic test of the ego-depletion effect. *Psychological Science*, 32(10), 1566–1581. <https://doi.org/10.1177/0956797621989733>

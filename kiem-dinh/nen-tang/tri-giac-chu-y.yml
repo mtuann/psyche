@@ -9,8 +9,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D2-L1)
+      review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: null
 nguon:
   - id: os5-1
@@ -31,23 +31,24 @@ nhan_dinh:
     luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/5-introduction" ]
     luot_2_ghi_chu: Chỉ mở mục lục/giới thiệu chương; định nghĩa cảm giác-tri giác là chuẩn của giáo trình.
   - id: n2
-    cau: Chú ý là yếu tố quyết định phần nào của thông tin giác quan được ta để ý tới.
+    cau: Chú ý giữ vai trò quan trọng trong việc quyết định phần nào của thông tin giác quan được ta tri giác.
     loai: dinh-nghia
     nguon:
       - os5-1
     trich: Attention plays a significant role in determining what is sensed versus what is perceived.
-    ket_qua: da-lam-mem
+    ket_qua: da-sua
     vi_tri: Mục 5.1
-    ghi_chu: 'Chữ cũ: "chú ý là việc chọn lọc một phần thông tin để xử lý tiếp". Chữ mới bám OpenStax 5.1 (không có định nghĩa một câu; chỉ nói chú ý quyết định phần nào được cảm nhận và tri giác). Chưa đối chiếu APA Dictionary.'
+    ghi_chu: 'Chữ cũ: "chú ý là việc chọn lọc một phần thông tin để xử lý tiếp". Chữ mới bám OpenStax 5.1 (không có định nghĩa một câu; chỉ nói chú ý quyết định phần nào được cảm nhận và tri giác). Chưa đối chiếu APA Dictionary. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. OpenStax 5.1 (câu trích của lượt 1): "Attention plays a significant role in determining what is sensed versus what is perceived." Trang viết chú ý "là yếu tố quyết định": mạnh hơn nguồn (nguồn nói "vai trò quan trọng", không nói là yếu tố duy nhất), và "được ta để ý tới" lặp nghĩa (chú ý quyết định điều được chú ý). Lượt 2 không đọc mục 5.1, chỉ mở trang mở đầu chương. Người gom (Claude Opus 5.5) sửa theo review: chú ý giữ vai trò quan trọng trong việc quyết định phần nào của thông tin giác quan được ta tri giác.'
     luot_2: dung
     luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/5-introduction" ]
     luot_2_ghi_chu: Chỉ xác nhận chương gồm chú ý (không đọc mục); câu mô tả chuẩn.
+    review: sai
   - id: n3
     cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
-    review: null
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Đối chiếu 30/10/2026: src/data/linh-vuc.yml có 14 bản ghi; danhSachBai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (bản thật: trang đã khóa, src/ban-build.mjs) và in dòng "Còn/Có N bài sắp có" ở cuối; link /psyche/bat-dau/cach-kiem-chung/ có trong build. HTML bản xem (dist/nen-tang/tri-nho/) khớp.'
+    review: dung
 doi_chu:
   - cu: '...chưa hiện ở đây.'
     moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'

@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D2-L1)
+      review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: null
 nguon: []
 nhan_dinh:
@@ -19,14 +19,14 @@ nhan_dinh:
     cau: 'Mỗi bài ở Khám phá bắt đầu bằng một câu hỏi về con người và thường đi theo trình tự: tự thử hay tự đoán, điều đang xảy ra, nghiên cứu then chốt, mức độ chắc chắn, các cách giải thích, điều có thể áp dụng, góc nhìn văn hóa, ngộ nhận liên quan, câu hỏi suy ngẫm.'
     loai: ve-site
     ket_qua: da-lam-mem
-    ghi_chu: Đối chiếu tiêu đề mục của src/content/docs/kham-pha/tri-nho/vi-sao-ta-quen.md (Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm) và đếm trên site cũ (48 đến 51 trên 51 bài có mỗi mục; bài sức khỏe tâm thần có mục khác). Chữ cũ "đi theo cùng một trình tự" đổi "thường đi theo", vì không phải bài nào cũng đủ mục.
-    review: null
+    ghi_chu: 'Đối chiếu tiêu đề mục của src/content/docs/kham-pha/tri-nho/vi-sao-ta-quen.md (Tự trải nghiệm, Điều gì đang xảy ra?, Nghiên cứu then chốt, Mức độ chắc chắn, Các lý thuyết giải thích, Áp dụng vào đời sống, Ở Việt Nam và các nền văn hóa khác, Ngộ nhận liên quan, Thử suy ngẫm) và đếm trên site cũ (48 đến 51 trên 51 bài có mỗi mục; bài sức khỏe tâm thần có mục khác). Chữ cũ "đi theo cùng một trình tự" đổi "thường đi theo", vì không phải bài nào cũng đủ mục. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Đối chiếu tiêu đề mục của kham-pha/tri-nho/vi-sao-ta-quen.md và khuôn bài của site cũ; có "thường" nên không đòi mọi bài đủ mục.'
+    review: dung
   - id: n2
     cau: Các bài xếp theo 14 lĩnh vực của tâm lý học; bài chỉ hiện sau khi được kiểm chứng lại từ đầu và khóa; bài chưa lên được đếm ở cuối mỗi lĩnh vực.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; mười bốn đề mục của trang khớp từng chữ với trường ten (kiểm bằng script); src/plugins/thanh-phan.mjs (danhSachBai): chỉ bài có trong bản build, dòng "Còn N bài sắp có". Build thật chỉ có bài đã khóa (kiem-dinh/khoa.json).'
-    review: null
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; mười bốn đề mục của trang khớp từng chữ với trường ten (kiểm bằng script); src/plugins/thanh-phan.mjs (danhSachBai): chỉ bài có trong bản build, dòng "Còn N bài sắp có". Build thật chỉ có bài đã khóa (kiem-dinh/khoa.json). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. 14 bản ghi linh-vuc.yml; danhSachBai chỉ bài có trong bản build và dòng "Còn/Có N bài sắp có" ở cuối mỗi lĩnh vực; bản xem 30/10/2026 hiện đúng.'
+    review: dung
 doi_chu:
   - cu: '"đi theo cùng một trình tự"'
     moi: '"thường đi theo cùng một trình tự"'

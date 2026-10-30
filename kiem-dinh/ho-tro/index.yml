@@ -12,8 +12,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: "Claude Opus 5.5 (agent lượt 1, D2-L1)"
-      luot_2: null
-      review: null
+      luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D2-L1)
+      review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: null
 nguon:
   - id: luat-vien-thong-2023
@@ -176,14 +176,14 @@ nhan_dinh:
     cau: "Dưới đây chỉ gồm những số mà chúng tôi kiểm chứng được từ nguồn chính thức, tính đến tháng 10/2026."
     loai: ve-site
     ket_qua: da-sua
-    review: null
-    ghi_chu: "Kiểm trên hồ sơ này: mọi số trên trang có nguồn chính thức (n13–n33). Chữ cũ: \"Dưới đây chỉ gồm những số mà chúng tôi kiểm chứng được từ nguồn chính thức.\" Chữ mới thêm \"tính đến tháng 10/2026\" (khẳng định thời sự cần mốc)."
+    review: dung
+    ghi_chu: "Kiểm trên hồ sơ này: mọi số trên trang có nguồn chính thức (n13–n33). Chữ cũ: \"Dưới đây chỉ gồm những số mà chúng tôi kiểm chứng được từ nguồn chính thức.\" Chữ mới thêm \"tính đến tháng 10/2026\" (khẳng định thời sự cần mốc). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mọi số ở bảng đường dây có nguồn chính thức: 115, 113 (văn bản pháp luật), 111 (tongdai111.vn), Ngày Mai (duongdaynongngaymai.vn, mở lại 30/10/2026: 096 306 1414, 13h00–20h30, Thứ 4–Chủ nhật), CSAGA (csaga.org.vn, mở lại 30/10/2026: 024 3333 55 99). Có mốc tháng 10/2026."
   - id: n8
     cau: "Psyche không gọi thử các số này và không thể cam kết thay các tổ chức về giờ làm việc, chi phí hay cách họ bảo mật thông tin."
     loai: ve-site
     ket_qua: da-sua
-    review: null
-    ghi_chu: "Lượt 1 không gọi số nào (lời giao). Chữ cũ \"Psyche Zero\", chữ mới \"Psyche\" (tên site mới)."
+    review: dung
+    ghi_chu: "Lượt 1 không gọi số nào (lời giao). Chữ cũ \"Psyche Zero\", chữ mới \"Psyche\" (tên site mới). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Lời giao các lượt cấm gọi; review cũng không gọi."
   - id: n9
     cau: "115 là số cấp cứu y tế: gọi khi có tình huống sức khỏe nguy hiểm đến tính mạng, kể cả khi đã tự làm hại hoặc sắp tự làm hại."
     loai: loi-khuyen
@@ -191,10 +191,11 @@ nhan_dinh:
     trich: "If they’re thinking about self-harm, or have already intentionally harmed themselves, don’t leave them alone. Seek help from the emergency services or a health-care professional."
     vi_tri: "WHO/PAHO 2021, mục What you can do"
     ket_qua: da-sua
-    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): sửa theo cau_dung của lượt 2 (qua-manh). Chữ cũ "Mọi trường hợp nguy hiểm đến tính mạng" rộng hơn Thông tư 27/2021/TT-BTTTT (115 là cấp cứu y tế; cháy 114, an ninh 113).'
+    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): sửa theo cau_dung của lượt 2 (qua-manh). Chữ cũ "Mọi trường hợp nguy hiểm đến tính mạng" rộng hơn Thông tư 27/2021/TT-BTTTT (115 là cấp cứu y tế; cháy 114, an ninh 113). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Chữ cuối (bảng và khung khẩn cấp) đã theo cau_dung của lượt 2: "Tình huống sức khỏe nguy hiểm đến tính mạng, kể cả khi đã tự làm hại hoặc sắp tự làm hại"; khớp WHO/PAHO và NHS (hai lượt).'
     luot_2: qua-manh
     luot_2_nguon: [ "https://datafiles.chinhphu.vn/cpp/files/vbpq/2022/01/27-btttt.pdf", "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/" ]
     luot_2_ghi_chu: 'câu đúng: 115 là số cấp cứu y tế: gọi khi có tình huống sức khỏe nguy hiểm đến tính mạng, kể cả khi đã tự làm hại hoặc sắp tự làm hại.; Mở 30/10/2026. Phần "kể cả nguy cơ tự làm hại" đúng (NHS: tự làm hại hay sắp tự làm hại thì gọi xe cấp cứu). Nhưng "mọi trường hợp nguy hiểm đến tính mạng" rộng hơn văn bản: cháy là 114, bạo lực, tội phạm là 113. Chỉ cần thu hẹp về "cấp cứu y tế".'
+    review: dung
   - id: n10
     cau: "115: 24/7; cuộc gọi miễn phí."
     loai: thoi-su
@@ -203,10 +204,11 @@ nhan_dinh:
     trich: "Công tác cấp cứu, hồi sức tích cực và chống độc phải bảo đảm hoạt động liên tục 24/24 giờ."
     vi_tri: "QĐ 01/2008, Điều 2 k4; miễn phí: Luật Viễn thông 2023, Điều 25 k3 điểm c"
     ket_qua: da-sua
-    ghi_chu: "chỗ khó: LuatVietnam không hiện tình trạng hiệu lực của QĐ 01/2008 (cần đăng nhập); trang không thấy ghi bị thay thế. Không tìm được trang chính thức của một trung tâm 115 cấp quốc gia. Người gom (Claude Opus 5.5, 30/10/2026): sửa theo cau_dung của lượt 2 (qua-manh). Chữ cũ \"24/7, miễn phí\": luật chỉ bảo đảm cuộc gọi miễn phí (Luật Viễn thông 2023, Điều 25), không nói dịch vụ cấp cứu, xe miễn phí."
+    ghi_chu: "chỗ khó: LuatVietnam không hiện tình trạng hiệu lực của QĐ 01/2008 (cần đăng nhập); trang không thấy ghi bị thay thế. Không tìm được trang chính thức của một trung tâm 115 cấp quốc gia. Người gom (Claude Opus 5.5, 30/10/2026): sửa theo cau_dung của lượt 2 (qua-manh). Chữ cũ \"24/7, miễn phí\": luật chỉ bảo đảm cuộc gọi miễn phí (Luật Viễn thông 2023, Điều 25), không nói dịch vụ cấp cứu, xe miễn phí. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Chữ cuối \"24/7, cuộc gọi miễn phí\" theo cau_dung của lượt 2; QĐ 01/2008 (24/24), Luật Viễn thông 2023 Điều 25 (cuộc gọi miễn phí)."
     luot_2: qua-manh
     luot_2_nguon: [ "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/01/luat24.pdf", "https://xaydungchinhsach.chinhphu.vn/quy-dinh-moi-ve-truc-kham-chua-benh-tu-1-1-2024-119240103065651053.htm" ]
     luot_2_ghi_chu: 'câu đúng: 115: 24/7; cuộc gọi miễn phí.; Mở 30/10/2026. 24/7 đúng. Văn bản chỉ bảo đảm miễn phí cuộc gọi. Tôi không tìm được văn bản chính thức nói dịch vụ cấp cứu, vận chuyển 115 miễn phí; các bài tìm thấy (chưa mở được trang chính thức) cho thấy giá vận chuyển cấp cứu ngoại viện do từng tỉnh quy định, ví dụ Hà Nội theo Quyết định 45/2017/QĐ-UBND. Viết "miễn phí" không kèm "cuộc gọi" có thể làm người đọc hiểu cả dịch vụ miễn phí.'
+    review: dung
   - id: n11
     cau: "113 dành cho nguy cơ bạo lực, cần can thiệp khẩn cấp."
     loai: thoi-su
@@ -224,10 +226,11 @@ nhan_dinh:
     loai: thoi-su
     het_han: 2027-01-30
     ket_qua: da-bo
-    ghi_chu: "Chữ cũ ô Thời gian của 113: \"24/7, miễn phí\"; chữ mới: \"Miễn phí\". Không tìm được văn bản hay trang chính thức của Bộ Công an nói giờ trực của số 113 (Thông tư 28/2020/TT-BCA nói trực ban hình sự 24/24 giờ để tiếp nhận tin báo tội phạm, không nói số 113; báo Lâm Đồng nói Cảnh sát 113 tỉnh trực 24/24 là nguồn báo, một địa phương). Bỏ phần 24/7 theo quy tắc chỉ đưa điều kiểm chứng được; chủ repo có thể thêm lại khi có nguồn chính thức."
+    ghi_chu: "Chữ cũ ô Thời gian của 113: \"24/7, miễn phí\"; chữ mới: \"Miễn phí\". Không tìm được văn bản hay trang chính thức của Bộ Công an nói giờ trực của số 113 (Thông tư 28/2020/TT-BCA nói trực ban hình sự 24/24 giờ để tiếp nhận tin báo tội phạm, không nói số 113; báo Lâm Đồng nói Cảnh sát 113 tỉnh trực 24/24 là nguồn báo, một địa phương). Bỏ phần 24/7 theo quy tắc chỉ đưa điều kiểm chứng được; chủ repo có thể thêm lại khi có nguồn chính thức. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Ô thời gian của 113 nay chỉ \"Miễn phí\" (kiểm trên trang); bỏ 24/7 vì chưa có văn bản chung là đúng chuẩn (lượt 2 chỉ thấy bài về từng tỉnh)."
     luot_2: dung
     luot_2_nguon: [ "https://bocongan.gov.vn/bai-viet/gop-phan-dam-bao-an-ninh-trat-tu-an-toan-xa-hoi-tren-dia-ban-tinh-bac-lieu-d23-t40579" ]
     luot_2_ghi_chu: Mở 30/10/2026. Bài trên cổng Bộ Công an (06/08/2024), nói về một tỉnh; tôi không thấy văn bản quy định chung giờ trực của 113, nhưng nhiều bài khác trên bocongan.gov.vn cùng nói trực 24/24.
+    review: dung
   - id: n13
     cau: "Tổng đài quốc gia bảo vệ trẻ em: số 111."
     loai: thoi-su
@@ -292,10 +295,11 @@ nhan_dinh:
     trich: "Sơ cứu và hỗ trợ tâm lý miễn phí qua điện thoại cho người trầm cảm và người thân của họ;"
     vi_tri: "trang chủ, mục hoạt động"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Hỗ trợ tâm lý cho người đang gặp khó khăn về cảm xúc, trầm cảm\". Chữ mới theo đúng trang của Ngày Mai (đối tượng là người trầm cảm và người thân; thêm \"sơ cứu\"), vì chữ cũ rộng hơn trang nói."
+    ghi_chu: "Chữ cũ: \"Hỗ trợ tâm lý cho người đang gặp khó khăn về cảm xúc, trầm cảm\". Chữ mới theo đúng trang của Ngày Mai (đối tượng là người trầm cảm và người thân; thêm \"sơ cứu\"), vì chữ cũ rộng hơn trang nói. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở duongdaynongngaymai.vn 30/10/2026: \"Sơ cứu và hỗ trợ tâm lý miễn phí qua điện thoại cho người trầm cảm và người thân của họ\"; khớp."
     luot_2: dung
     luot_2_nguon: [ "https://duongdaynongngaymai.vn/" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n19
     cau: "Ngày Mai do một nhóm tình nguyện viên vận hành."
     loai: thoi-su
@@ -304,10 +308,11 @@ nhan_dinh:
     trich: "triển khai bởi một nhóm tình nguyện viên"
     vi_tri: "trang chủ, phần giới thiệu (\"Ngày mai là sáng kiến cộng đồng, phi lợi nhuận\")"
     ket_qua: da-sua
-    ghi_chu: "Câu thêm mới (trang cũ không có): bảng có cột \"Do … vận hành\" cho 111; người đọc cần biết Ngày Mai là sáng kiến tình nguyện, không phải dịch vụ nhà nước."
+    ghi_chu: "Câu thêm mới (trang cũ không có): bảng có cột \"Do … vận hành\" cho 111; người đọc cần biết Ngày Mai là sáng kiến tình nguyện, không phải dịch vụ nhà nước. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở duongdaynongngaymai.vn 30/10/2026: \"được triển khai bởi một nhóm tình nguyện viên\"; khớp."
     luot_2: dung
     luot_2_nguon: [ "https://duongdaynongngaymai.vn/" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n20
     cau: "Ngày Mai: 13:00–20:30, Thứ Tư đến Chủ nhật."
     loai: thoi-su
@@ -327,10 +332,11 @@ nhan_dinh:
     trich: "Sơ cứu tâm lý miễn phí qua điện thoại"
     vi_tri: "trang chủ, tiêu đề hoạt động"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"miễn phí (cước gọi theo nhà mạng)\"; chữ mới: \"dịch vụ miễn phí\". Trang của Ngày Mai không nói về cước gọi, nên bỏ phần trong ngoặc; câu chung ở đầu mục vẫn nhắc hỏi chi phí khi gọi."
+    ghi_chu: "Chữ cũ: \"miễn phí (cước gọi theo nhà mạng)\"; chữ mới: \"dịch vụ miễn phí\". Trang của Ngày Mai không nói về cước gọi, nên bỏ phần trong ngoặc; câu chung ở đầu mục vẫn nhắc hỏi chi phí khi gọi. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở duongdaynongngaymai.vn 30/10/2026: \"Sơ cứu tâm lý miễn phí qua điện thoại\"; khớp. Trang không nói cước gọi; câu đầu mục đã nhắc hỏi chi phí."
     luot_2: dung
     luot_2_nguon: [ "https://duongdaynongngaymai.vn/" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n22
     cau: "CSAGA: 024 3333 5599."
     loai: thoi-su
@@ -350,10 +356,11 @@ nhan_dinh:
     trich: "Hotline tư vấn miễn phí về Bạo lực Giới - Bạo lực Gia đình và LGBTQ - Nữ Yêu Nữ"
     vi_tri: "trang chủ, đầu trang"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Người bị bạo lực gia đình, bạo lực trên cơ sở giới; cộng đồng LGBTQ+\". Chữ mới thêm \"Tư vấn miễn phí cho\" theo nhãn hotline trên trang CSAGA."
+    ghi_chu: "Chữ cũ: \"Người bị bạo lực gia đình, bạo lực trên cơ sở giới; cộng đồng LGBTQ+\". Chữ mới thêm \"Tư vấn miễn phí cho\" theo nhãn hotline trên trang CSAGA. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở csaga.org.vn 30/10/2026: \"Hotline tư vấn miễn phí về Bạo lực Giới - Bạo lực Gia đình và LGBTQ - Nữ Yêu Nữ: 024 3333 55 99\"; khớp."
     luot_2: dung
     luot_2_nguon: [ "https://csaga.org.vn/" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n24
     cau: "Trang của CSAGA không ghi giờ trực; hãy hỏi khi gọi."
     loai: thoi-su
@@ -362,10 +369,11 @@ nhan_dinh:
     trich: "Hotline tư vấn miễn phí … 024 3333 55 99 / Điện thoại: +84-24 3754 0421"
     vi_tri: "trang chủ và chân trang: có số, không có giờ làm việc"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Giờ làm việc chưa được công bố rõ; hãy hỏi khi gọi\". Chữ mới nói đúng điều đã kiểm (trang của CSAGA không ghi giờ), không khẳng định chung về việc công bố."
+    ghi_chu: "Chữ cũ: \"Giờ làm việc chưa được công bố rõ; hãy hỏi khi gọi\". Chữ mới nói đúng điều đã kiểm (trang của CSAGA không ghi giờ), không khẳng định chung về việc công bố. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Hai lượt cùng tìm trên trang chủ và trang Liên hệ, không có giờ trực; câu chỉ nói điều đã kiểm."
     luot_2: dung
     luot_2_nguon: [ "https://csaga.org.vn/", "https://csaga.org.vn/lien-he.html" ]
     luot_2_ghi_chu: Mở 30/10/2026; đã tìm chữ "giờ", "thứ" trong cả hai trang, không có giờ trực.
+    review: dung
   - id: n25
     cau: "Tính đến tháng 10/2026, chúng tôi chưa tìm thấy đường dây quốc gia 24/7 dành riêng cho sức khỏe tâm thần người lớn hay phòng chống tự sát ở Việt Nam."
     loai: thoi-su
@@ -374,10 +382,11 @@ nhan_dinh:
     trich: "Phục vụ từ 12:00 đến 00:00 hằng ngày"
     vi_tri: "hyvongsong.com/ho-tro-khung-hoang (HOPE, đường dây khủng hoảng 086 50 444 00); Find A Helpline liệt kê 5 dịch vụ ở Việt Nam (Ngày Mai, HOPE, 111, đường dây bạo lực giới, Ngôi nhà Bình yên)"
     ket_qua: da-lam-mem
-    ghi_chu: "Chữ cũ: \"Theo những gì chúng tôi tìm được (tháng 10/2026), Việt Nam chưa có đường dây quốc gia 24/7…\". Chữ mới: \"Tính đến tháng 10/2026, chúng tôi chưa tìm thấy…\": khẳng định phủ định chỉ nói được ở mức điều mình đã tìm. Đã xem: các dịch vụ trên Find A Helpline; Ngày Mai (13:00–20:30, T4–CN); HOPE (12:00–00:00 hằng ngày, tổ chức phi lợi nhuận lập năm 2025, không nói phạm vi quốc gia); 111 (24/24 nhưng cho trẻ em); tìm \"tổng đài quốc gia sức khỏe tâm thần 24/7 Bộ Y tế 2026\" không ra. Chỗ khó: Bộ Y tế, Bộ Công an đã đề xuất một tổng đài cấp cứu quốc gia tích hợp 113, 114, 115 (Tuổi Trẻ 11/12/2025): kiểm lại mỗi quý."
+    ghi_chu: "Chữ cũ: \"Theo những gì chúng tôi tìm được (tháng 10/2026), Việt Nam chưa có đường dây quốc gia 24/7…\". Chữ mới: \"Tính đến tháng 10/2026, chúng tôi chưa tìm thấy…\": khẳng định phủ định chỉ nói được ở mức điều mình đã tìm. Đã xem: các dịch vụ trên Find A Helpline; Ngày Mai (13:00–20:30, T4–CN); HOPE (12:00–00:00 hằng ngày, tổ chức phi lợi nhuận lập năm 2025, không nói phạm vi quốc gia); 111 (24/24 nhưng cho trẻ em); tìm \"tổng đài quốc gia sức khỏe tâm thần 24/7 Bộ Y tế 2026\" không ra. Chỗ khó: Bộ Y tế, Bộ Công an đã đề xuất một tổng đài cấp cứu quốc gia tích hợp 113, 114, 115 (Tuổi Trẻ 11/12/2025): kiểm lại mỗi quý. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Cách viết đủ thận trọng: có mốc \"Tính đến tháng 10/2026\", chủ ngữ \"chúng tôi chưa tìm thấy\" (không khẳng định Việt Nam không có), phạm vi hẹp (quốc gia, 24/7, riêng sức khỏe tâm thần người lớn hay phòng chống tự sát), và câu sau chỉ đường 115/cấp cứu; có het_han 2027-01-30. Hai lượt tìm độc lập cùng không thấy. Về HOPE: mở hyvongsong.com 30/10/2026 (trang chủ, /ho-tro-khung-hoang/, /meet-our-staff/, /connect/, /faqs/, /disclaimer/). Trang nói rõ số (Hotline 086 50 444 00; văn phòng 081 21 512 20), giờ (\"Phục vụ từ 12:00 đến 00:00 hằng ngày\"), đối tượng (\"những ai đang vật lộn với ý nghĩ tự sát hoặc bị ảnh hưởng bởi vấn đề này\"), và ai vận hành (HOPE, lập năm 2025, văn phòng ở Đà Nẵng; Ban quản trị là tình nguyện viên, có tên: Giám đốc điều hành Merijn Mattheijssen, Tổng quản lý Mai Bảo Trâm…; \"hoạt động kết hợp với Psychologists Vietnam\"; chi phí vận hành do Merijn Mattheijssen tài trợ cá nhân). Điểm yếu: tư cách tự mô tả không nhất quán (\"tổ chức phi lợi nhuận\" ở trang chủ, \"doanh nghiệp xã hội đã được đăng ký\" ở FAQ mà không ghi mã số hay link, \"dự án cộng đồng… không phải cơ sở y tế\" ở miễn trừ trách nhiệm), số nhân sự lệch (\"hơn 30\" và \"hơn 15\" chuyên viên), không nói chi phí cuộc gọi. Đề xuất: đủ điều kiện để thêm (số, giờ, người vận hành đều có trên trang chính thức), là đường dây phòng chống tự sát duy nhất hai lượt tìm thấy, nên đáng thêm sau khi qua lượt 1 và lượt 2 như các dòng khác, với chữ chỉ nói điều trang HOPE nói, ví dụ dòng bảng: \"Đường dây HOPE | 086 50 444 00 | Người có ý nghĩ tự sát hay đang khủng hoảng cảm xúc, và người thân. Do HOPE, một dự án cộng đồng lập năm 2025 ở Đà Nẵng, vận hành với tình nguyện viên; không phải cơ sở y tế | 12:00–00:00 hằng ngày; trang không ghi chi phí, hãy hỏi khi gọi\". Khi thêm thì câu \"Ngoài giờ làm việc của các đường dây trên…\" vẫn đúng; chủ repo quyết vì tư cách pháp lý chưa kiểm được. Câu n25 hiện có giữ nguyên."
     luot_2: khong-chac
     luot_2_nguon: [ "https://findahelpline.com/countries/vn", "https://hyvongsong.com/", "https://bvtt-tphcm.org.vn/lien-he/" ]
     luot_2_ghi_chu: "Câu phủ định, không có nguồn bậc 1 nào xác nhận được. Lượt 2 tìm độc lập (30/10/2026) cũng không thấy đường dây quốc gia 24/7 riêng cho sức khỏe tâm thần người lớn hay phòng chống tự sát. Nhưng Find A Helpline có liệt kê một đường dây phòng chống tự sát mà trang có thể chưa nhắc: HOPE – Suicide Prevention Hotline, 0865 044 400, tổ chức phi lợi nhuận lập năm 2025, 12:00–00:00 hằng ngày (không 24/7, không phải của nhà nước). Bệnh viện Tâm thần TP.HCM có hotline 1900.1267 (không ghi giờ). Người gom nên xem có thêm HOPE vào trang không (sau khi kiểm như các đường dây khác), và giữ câu phủ định kèm mốc thời gian."
+    review: dung
   - id: n26
     cau: "Ngoài giờ làm việc của các đường dây trên, nếu có nguy cơ tự làm hại, hãy gọi 115 hoặc đến khoa cấp cứu."
     loai: loi-khuyen
@@ -408,9 +417,10 @@ nhan_dinh:
     trich: "Tổng đài : 024.33.853227 … Tổng đài:(0251)3822965 … Điện thoại: (028) 39234675"
     vi_tri: "đầu trang TW1 (bản lưu), đầu trang TW2, trang Liên hệ BVTT TP.HCM"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Các số dưới đây là tổng đài của bệnh viện, dùng để hỏi thông tin và đặt lịch khám.\" Chữ mới chỉ nói điều đã kiểm (nhãn trên trang bệnh viện là \"Tổng đài\" hay \"Điện thoại\"); không trang nào nói số ấy dùng để đặt lịch (TW1 có số \"Tư vấn\" và \"Đăng ký khám bệnh trực tuyến\" riêng)."
+    ghi_chu: "Chữ cũ: \"Các số dưới đây là tổng đài của bệnh viện, dùng để hỏi thông tin và đặt lịch khám.\" Chữ mới chỉ nói điều đã kiểm (nhãn trên trang bệnh viện là \"Tổng đài\" hay \"Điện thoại\"); không trang nào nói số ấy dùng để đặt lịch (TW1 có số \"Tư vấn\" và \"Đăng ký khám bệnh trực tuyến\" riêng). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở 30/10/2026: tamthantw2.gov.vn ghi \"Tổng đài:(0251)3822965\"; bản lưu Internet Archive bvtttw1.gov.vn 14/7/2026 (web.archive.org/web/20260714032846/https://bvtttw1.gov.vn/) ghi \"Tổng đài : 024.33.853227\"; bvtt-tphcm.org.vn/lien-he/ ghi \"Điện thoại: (028) 39234675\". Câu \"số tổng đài hay số điện thoại chung\" đúng với cả ba nhãn."
     luot_2: khong-chac
     luot_2_ghi_chu: Chỉ kiểm được Bệnh viện Tâm thần TP.HCM (số ghi ở trang Liên hệ của bệnh viện). Trang của Bệnh viện Tâm thần Trung ương 1 (bvtttw1.gov.vn) và Bệnh viện Bạch Mai (bachmai.gov.vn) không mở được từ máy kiểm (kết nối bị từ chối, hết giờ chờ, ngày 30/10/2026), Internet Archive không có bản lưu dùng được; chưa tìm được trang chính thức của Bệnh viện Tâm thần Trung ương 2 (bvtttw2.vn không phân giải). Nên kiểm lại từ máy ở Việt Nam.
+    review: dung
   - id: n29
     cau: "Các số bệnh viện này không phải đường dây khủng hoảng."
     loai: thoi-su
@@ -421,6 +431,8 @@ nhan_dinh:
     ket_qua: dung
     luot_2: khong-chac
     luot_2_ghi_chu: 'Với Bệnh viện Tâm thần TP.HCM thì đúng: 028 39234675 là số "Điện thoại" chung ở mục liên hệ; đường dây bệnh viện gọi là "HOTLINE" là 1900.1267. Ba bệnh viện còn lại không mở được trang chính thức (xem n28), nên chưa xác nhận được số trên trang có phải số tổng đài chung hay không.'
+    review: dung
+    ghi_chu: 'Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở 30/10/2026: cả ba trang ghi các số này dưới nhãn "Tổng đài"/"Điện thoại" chung; TW1 có số "Hotline" (024.33.762.260) và "Tư vấn" (0967901616) riêng, TW2 có "Hotline:0967.92.17.17", TP.HCM có "HOTLINE 1900.1267"; không trang nào gọi số trên bảng là đường dây khủng hoảng. Câu là lời nhắc an toàn, đúng.'
   - id: n30
     cau: "Bệnh viện Tâm thần Trung ương 1 (Hà Nội): 024 3385 3227."
     loai: thoi-su
@@ -429,17 +441,19 @@ nhan_dinh:
     trich: "Tổng đài : 024.33.853227 … Điện thoại:024.33.853.227"
     vi_tri: "đầu trang và chân trang bvtttw1.gov.vn, bản lưu 14/7/2026 (địa chỉ \"Xã Thường Tín - Hà Nội\")"
     ket_qua: dung
-    ghi_chu: "chỗ khó: ngày 30/10/2026 bvtttw1.gov.vn không mở được từ máy kiểm (từ chối kết nối, hết giờ), nên đối chiếu bản lưu Internet Archive 3,5 tháng trước; trang trên Medpro (bậc 3) ghi cùng số. Bản lưu có chèn link quảng cáo cờ bạc lạ (trang có thể bị chèn mã), không liên quan đến số. Lượt 2 hay chủ repo nên mở lại trang chính thức từ máy khác."
+    ghi_chu: "chỗ khó: ngày 30/10/2026 bvtttw1.gov.vn không mở được từ máy kiểm (từ chối kết nối, hết giờ), nên đối chiếu bản lưu Internet Archive 3,5 tháng trước; trang trên Medpro (bậc 3) ghi cùng số. Bản lưu có chèn link quảng cáo cờ bạc lạ (trang có thể bị chèn mã), không liên quan đến số. Lượt 2 hay chủ repo nên mở lại trang chính thức từ máy khác. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. bvtttw1.gov.vn không mở được 30/10/2026 (http và https: hết giờ kết nối 25 giây). Lượt 2 sai khi nói không có bản lưu: CDX của Internet Archive có 14 bản lưu 200 của https://bvtttw1.gov.vn/ từ 08/01 đến 14/7/2026. Đã mở hai bản (20260520155929 và 20260714032846): cùng ghi \"Tổng đài : 024.33.853227\" và chân trang \"Địa chỉ: Xã Thường Tín - Hà Nội Điện thoại:024.33.853.227\". Bản lưu của trang chính thức đạt chuẩn; số 024 3385 3227 đúng. Lưu ý: bản lưu có chèn link cờ bạc lạ (trang có thể bị chèn mã); kiểm lại trang thật ở lần kiểm quý."
     luot_2: khong-chac
     luot_2_ghi_chu: bvtttw1.gov.vn không mở được (hết giờ chờ, 30/10/2026); không có bản lưu Internet Archive. Số 024 3385 3227 chỉ thấy ở danh bạ, trang thứ ba (Long Châu, Medpro), nên không đủ chuẩn.
+    review: dung
   - id: n31
     cau: "Viện Sức khỏe Tâm thần, Bệnh viện Bạch Mai (Hà Nội): 024 3576 5344."
     loai: thoi-su
     het_han: 2027-01-30
     ket_qua: da-bo
-    ghi_chu: "Bỏ cả dòng bảng và dòng nguồn. Ngày 30/10/2026 không mở được trang chính thức nào: bachmai.gov.vn từ chối kết nối (cả trang đơn vị dẫn ở trang cũ), nimh.gov.vn bị bộ lọc mạng của máy kiểm chặn, Internet Archive không có bản lưu của trang đơn vị. Kết quả tìm kiếm và các trang tổng hợp (Long Châu, Mytour) ghi cùng số, nhưng không phải nguồn chính thức. Chủ repo: mở nimh.gov.vn/lien-he hay trang đơn vị trên bachmai.gov.vn từ máy khác; khớp thì thêm lại dòng (số chung (024) 3576 5344; trang Bạch Mai còn có tổng đài đặt lịch 1900 888 866)."
+    ghi_chu: "Bỏ cả dòng bảng và dòng nguồn. Ngày 30/10/2026 không mở được trang chính thức nào: bachmai.gov.vn từ chối kết nối (cả trang đơn vị dẫn ở trang cũ), nimh.gov.vn bị bộ lọc mạng của máy kiểm chặn, Internet Archive không có bản lưu của trang đơn vị. Kết quả tìm kiếm và các trang tổng hợp (Long Châu, Mytour) ghi cùng số, nhưng không phải nguồn chính thức. Chủ repo: mở nimh.gov.vn/lien-he hay trang đơn vị trên bachmai.gov.vn từ máy khác; khớp thì thêm lại dòng (số chung (024) 3576 5344; trang Bạch Mai còn có tổng đài đặt lịch 1900 888 866). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Dòng đã bỏ khỏi trang và mục nguồn (kiểm trên trang). Mở lại 30/10/2026: bachmai.gov.vn hết giờ kết nối, nimh.gov.vn lỗi TLS từ máy kiểm; không kiểm được thì bỏ là đúng chuẩn."
     luot_2: khong-chac
     luot_2_ghi_chu: bachmai.gov.vn từ chối kết nối (30/10/2026); bản lưu Internet Archive 12/09/2024 của trang Viện Sức khỏe Tâm thần chỉ ghi hotline chung của Bạch Mai (1900.888.866 - 096.985.1616), không có số 024 3576 5344. Số này chỉ thấy ở danh bạ, trang thứ ba; một nguồn quốc tế nói nó nối tới phòng khám của Viện.
+    review: dung
   - id: n32
     cau: "Bệnh viện Tâm thần Trung ương 2 (Đồng Nai): 0251 3822 965."
     loai: thoi-su
@@ -448,9 +462,10 @@ nhan_dinh:
     trich: "Tổng đài:(0251)3822965 … Số 1310 Đường Nguyễn Ái Quốc, khu phố 7, phường Tân Triều, thành phố Đồng Nai"
     vi_tri: "đầu trang và chân trang"
     ket_qua: da-sua
-    ghi_chu: "Số đúng. Chữ cũ: \"(Biên Hòa, Đồng Nai)\"; chữ mới: \"(Đồng Nai)\": trang bệnh viện nay ghi địa chỉ \"phường Tân Triều, thành phố Đồng Nai\" (sau sắp xếp đơn vị hành chính), không còn \"Biên Hòa\"."
+    ghi_chu: "Số đúng. Chữ cũ: \"(Biên Hòa, Đồng Nai)\"; chữ mới: \"(Đồng Nai)\": trang bệnh viện nay ghi địa chỉ \"phường Tân Triều, thành phố Đồng Nai\" (sau sắp xếp đơn vị hành chính), không còn \"Biên Hòa\". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở tamthantw2.gov.vn 30/10/2026 (trang của bệnh viện: tên miền .gov.vn, email bvtttw2@tamthantw2.gov.vn): \"Tổng đài:(0251)3822965\", chân trang \"Số 1310 Đường Nguyễn Ái Quốc, khu phố 7, phường Tân Triều, thành phố Đồng Nai… Điện thoại: (0251) 3822965\". Lượt 2 tìm nhầm tên miền bvtttw2.vn. Số và \"(Đồng Nai)\" đúng."
     luot_2: khong-chac
     luot_2_ghi_chu: "Chưa tìm được trang chính thức của Bệnh viện Tâm thần Trung ương 2 (bvtttw2.vn, bvtttw2.gov.vn không phân giải, 30/10/2026). Không trang nào tôi mở được ghi số 0251 3822 965. Tuổi Trẻ (06/2025) đưa tin Đồng Nai đề xuất di dời bệnh viện: nên kiểm cả địa chỉ."
+    review: dung
   - id: n33
     cau: "Bệnh viện Tâm thần TP.HCM: 028 3923 4675."
     loai: thoi-su
@@ -459,21 +474,24 @@ nhan_dinh:
     trich: "Điện thoại: (028) 39234675"
     vi_tri: "trang Liên hệ (bvtt-tphcm.org.vn/lien-he/), dưới địa chỉ ba cơ sở"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"028 9234 675\" (tel:0289234675, chỉ 7 chữ số sau mã 028, thiếu một số). Chữ mới: \"028 3923 4675\" (tel:02839234675). Chân trang chủ của bệnh viện ghi \"(028) 9234675\" (thiếu số 3, có lẽ lỗi gõ, trang cũ chép theo); trang Liên hệ ghi đủ 8 chữ số, khớp quy tắc số cố định TP.HCM (028 + 8 chữ số). Trang còn có HOTLINE 1900.1267 (đầu số 1900 thường tính cước cao hơn), không thêm."
+    ghi_chu: "Chữ cũ: \"028 9234 675\" (tel:0289234675, chỉ 7 chữ số sau mã 028, thiếu một số). Chữ mới: \"028 3923 4675\" (tel:02839234675). Chân trang chủ của bệnh viện ghi \"(028) 9234675\" (thiếu số 3, có lẽ lỗi gõ, trang cũ chép theo); trang Liên hệ ghi đủ 8 chữ số, khớp quy tắc số cố định TP.HCM (028 + 8 chữ số). Trang còn có HOTLINE 1900.1267 (đầu số 1900 thường tính cước cao hơn), không thêm. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở bvtt-tphcm.org.vn/lien-he/ 30/10/2026: \"Điện thoại: (028) 39234675\"; chân trang vẫn in thiếu số \"(028) 9234675\". Số trên trang (028 3923 4675) đúng."
     luot_2: dung
     luot_2_nguon: [ "https://bvtt-tphcm.org.vn/lien-he/" ]
     luot_2_ghi_chu: 'Mở 30/10/2026. Chân trang chủ in thiếu một số: "(028) 9234675"; trang Liên hệ ghi đủ. Bệnh viện còn có HOTLINE 1900.1267.'
+    review: dung
   - id: n34
     cau: "Bệnh viện đa khoa gần nơi bạn ở có thể có khoa tâm thần hoặc khoa tâm lý; hãy gọi hỏi trước."
     loai: loi-khuyen
     het_han: 2027-01-30
-    nguon: [ qd01-2008-byt ]
+    nguon:
+      - nd96-2023
     trich: null
     ket_qua: da-lam-mem
-    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): không có danh sách chính thức các bệnh viện tâm thần tuyến tỉnh, nên bỏ khẳng định \"nhiều tỉnh, thành phố có…\"; còn lời khuyên gọi hỏi trước, chỉ nói \"có thể có\". Lượt 1: chưa tìm được nguồn."
+    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): không có danh sách chính thức các bệnh viện tâm thần tuyến tỉnh, nên bỏ khẳng định \"nhiều tỉnh, thành phố có…\"; còn lời khuyên gọi hỏi trước, chỉ nói \"có thể có\". Lượt 1: chưa tìm được nguồn. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Chữ cuối \"có thể có… hãy gọi hỏi trước\" đủ thận trọng; lượt 2 dẫn Nghị định hướng dẫn Luật KBCB (bệnh viện có thể có chuyên khoa tâm thần, tâm lý lâm sàng). Lưu ý: nguon qd01-2008-byt không nói ý này; nên thay bằng nguồn lượt 2 dẫn. Người gom (Claude Opus 5.5) sửa theo review: "
     luot_2: dung
     luot_2_nguon: [ "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-kham-benh-chua-benh-119240115115947657.htm" ]
     luot_2_ghi_chu: 'Mở 30/10/2026. Văn bản cho thấy bệnh viện (không riêng bệnh viện tâm thần) có thể có chuyên khoa tâm thần hay bộ phận tâm lý lâm sàng; câu đã viết thận trọng ("có thể có", "gọi hỏi trước"). Ví dụ: Viện Sức khỏe Tâm thần thuộc Bệnh viện Bạch Mai, bệnh viện đa khoa.'
+    review: dung
   - id: n35
     cau: "Sau đợt sắp xếp đơn vị hành chính năm 2025, địa chỉ trên một số trang web vẫn ghi theo địa giới cũ; hãy kiểm tra lại trước khi đến."
     loai: thoi-su
@@ -504,10 +522,11 @@ nhan_dinh:
     trich: "two or more weeks with changes to your thoughts, moods, or body that make it hard to manage work, school, home, or relationships"
     vi_tri: "SAMHSA, đầu danh sách dấu hiệu; NIMH: \"Have you had severe symptoms for 2 weeks or more?\"; WHO: \"for at least two weeks\""
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"kéo dài nhiều tuần\"; chữ mới: \"kéo dài từ hai tuần trở lên\", theo mốc mà SAMHSA, NIMH và WHO cùng dùng."
+    ghi_chu: "Chữ cũ: \"kéo dài nhiều tuần\"; chữ mới: \"kéo dài từ hai tuần trở lên\", theo mốc mà SAMHSA, NIMH và WHO cùng dùng. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. SAMHSA \"two or more weeks\", NIMH \"2 weeks or more\", WHO \"at least two weeks\" (hai lượt); chữ cuối \"từ hai tuần trở lên\"."
     luot_2: dung
     luot_2_nguon: [ "https://www.nimh.nih.gov/health/publications/my-mental-health-do-i-need-help", "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/low-mood-sadness-depression/" ]
     luot_2_ghi_chu: Mở 30/10/2026. NIMH áp dụng cho cảm giác "sad, stressed, or worried".
+    review: dung
   - id: n38
     cau: "Nên cân nhắc tìm chuyên gia khi nó ảnh hưởng rõ đến việc học, công việc, giấc ngủ, ăn uống hay các mối quan hệ."
     loai: loi-khuyen
@@ -525,18 +544,20 @@ nhan_dinh:
     trich: "Needing to use drugs or alcohol more and more often to keep from getting sick"
     vi_tri: "mục Body changes; mục Thoughts: \"Focusing only on getting and using alcohol or drugs\""
     ket_qua: da-lam-mem
-    ghi_chu: "Chữ cũ: \"bạn dùng rượu, chất kích thích hay các hành vi khác để chịu đựng\". Chữ mới: \"bạn dùng rượu hay chất kích thích ngày càng nhiều\": bỏ \"các hành vi khác\" (quá rộng, không nguồn nào nêu) và \"để chịu đựng\" (SAMHSA nói dùng ngày càng nhiều, không nói lý do)."
+    ghi_chu: "Chữ cũ: \"bạn dùng rượu, chất kích thích hay các hành vi khác để chịu đựng\". Chữ mới: \"bạn dùng rượu hay chất kích thích ngày càng nhiều\": bỏ \"các hành vi khác\" (quá rộng, không nguồn nào nêu) và \"để chịu đựng\" (SAMHSA nói dùng ngày càng nhiều, không nói lý do). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. SAMHSA \"Needing to use drugs or alcohol more and more often\"; chữ cuối bỏ \"hành vi khác\", \"để chịu đựng\"."
     luot_2: dung
     luot_2_nguon: [ "https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide", "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/low-mood-sadness-depression/" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n40
     cau: "Nên cân nhắc tìm chuyên gia khi người thân nói rằng bạn thay đổi nhiều."
     loai: loi-khuyen
     ket_qua: da-bo
-    ghi_chu: "Chữ cũ: \"người thân nói rằng bạn thay đổi nhiều;\" (một dòng danh sách). Bỏ: SAMHSA, NIMH, WHO không nêu dấu hiệu này; danh sách còn lại đã có các dấu hiệu có nguồn."
+    ghi_chu: "Chữ cũ: \"người thân nói rằng bạn thay đổi nhiều;\" (một dòng danh sách). Bỏ: SAMHSA, NIMH, WHO không nêu dấu hiệu này; danh sách còn lại đã có các dấu hiệu có nguồn. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Dòng đã bỏ khỏi danh sách (kiểm trên trang); không nguồn nào nêu."
     luot_2: dung
     luot_2_nguon: [ "https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/how-to-help-someone-with-depression/" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n41
     cau: "Khi có ý nghĩ tự làm hại bản thân hoặc nghĩ rằng mọi người sẽ tốt hơn nếu không có mình, hãy tìm giúp đỡ ngay, không cần chờ."
     loai: loi-khuyen
@@ -552,8 +573,8 @@ nhan_dinh:
     cau: "Psyche không có và sẽ không có công cụ tự chẩn đoán."
     loai: ve-site
     ket_qua: da-sua
-    review: null
-    ghi_chu: "Kiểm ở AGENTS.md (Quy tắc nội dung: \"Không có công cụ tự chẩn đoán\") và danh sách công cụ CONG_CU trong src/plugins/thanh-phan.mjs (review xác nhận). Chữ cũ \"Psyche Zero\", chữ mới \"Psyche\"."
+    review: dung
+    ghi_chu: "Kiểm ở AGENTS.md (Quy tắc nội dung: \"Không có công cụ tự chẩn đoán\") và danh sách công cụ CONG_CU trong src/plugins/thanh-phan.mjs (review xác nhận). Chữ cũ \"Psyche Zero\", chữ mới \"Psyche\". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. CONG_CU trong src/plugins/thanh-phan.mjs chỉ có stroop; trai-nghiem/ trong trang.yml (stroop, do-dai-tri-nho, ao-giac-thi-giac, mu-thay-doi, tri-nho-sai, wason-246, linda, big-five-mini, neo-gia, ebbinghaus, tri-nho-tu) không có công cụ chẩn đoán; AGENTS.md cấm."
   - id: n43
     cau: "Chỉ người có chuyên môn mới chẩn đoán được."
     loai: lam-sang
@@ -561,10 +582,11 @@ nhan_dinh:
     trich: "Psychiatrists are medical doctors who have completed specialised training"
     vi_tri: "Healthdirect: bác sĩ tâm thần chẩn đoán và điều trị rối loạn tâm thần; Luật KBCB 2023, Điều 26: khám, chữa bệnh do người có giấy phép hành nghề theo chức danh"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Chẩn đoán cần một người có chuyên môn, gặp và trò chuyện với bạn.\" Chữ mới theo câu chuẩn của chuan-kiem-dinh.md mục 5; bỏ \"gặp và trò chuyện\" vì khám từ xa cũng có và không nguồn nào ở đây nói phải gặp trực tiếp."
+    ghi_chu: "Chữ cũ: \"Chẩn đoán cần một người có chuyên môn, gặp và trò chuyện với bạn.\" Chữ mới theo câu chuẩn của chuan-kiem-dinh.md mục 5; bỏ \"gặp và trò chuyện\" vì khám từ xa cũng có và không nguồn nào ở đây nói phải gặp trực tiếp. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Câu chuẩn của chuan-kiem-dinh.md mục 5; Luật KBCB (văn bản hợp nhất 26/VBHN-VPQH) Điều 26; Healthdirect, NAMI."
     luot_2: dung
     luot_2_nguon: [ "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/26-vbhn-vpqh.pdf", "https://www.nami.org/about-mental-illness/treatments/types-of-mental-health-professionals/" ]
     luot_2_ghi_chu: Mở 30/10/2026. Văn bản hợp nhất 26/VBHN-VPQH (2026) của Luật 15/2023/QH15.
+    review: dung
   # Bảng các loại chuyên gia
   - id: n44
     cau: "Bác sĩ chuyên khoa tâm thần: đào tạo bác sĩ y khoa, chuyên khoa tâm thần."
@@ -593,10 +615,11 @@ nhan_dinh:
     nguon: [ healthdirect-counsellors ]
     trich: null
     ket_qua: da-sua
-    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): đổi \"Rất khác nhau\" (không có nguồn Việt Nam) thành hệ quả trực tiếp của n50: chức danh không nằm trong Điều 26 nên luật này không đặt chuẩn đào tạo."
+    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): đổi \"Rất khác nhau\" (không có nguồn Việt Nam) thành hệ quả trực tiếp của n50: chức danh không nằm trong Điều 26 nên luật này không đặt chuẩn đào tạo. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Luật KBCB Điều 26 không có chức danh này nên luật không đặt chuẩn đào tạo cho họ; chữ \"không đặt chuẩn đào tạo chung\" đúng, hẹp vào luật này."
     luot_2: dung
     luot_2_nguon: [ "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/26-vbhn-vpqh.pdf" ]
     luot_2_ghi_chu: Mở 30/10/2026. Luật không có chức danh tham vấn viên hay chuyên viên tư vấn tâm lý, nên không đặt chuẩn đào tạo cho họ. Câu đúng; chỉ lưu ý luật không nhắc tới họ chứ không phải có điều khoản nói "không đặt chuẩn".
+    review: dung
   - id: n47
     cau: "Nhân viên công tác xã hội: đào tạo công tác xã hội, hoặc ngành gần như xã hội học, tâm lý học."
     loai: dinh-nghia
@@ -604,10 +627,11 @@ nhan_dinh:
     trich: "Đã tốt nghiệp trung cấp, cao đẳng, đại học, sau đại học chuyên ngành công tác xã hội"
     vi_tri: "điều kiện hành nghề, điều kiện 1 (các ngành khác được chấp nhận: xã hội học, tâm lý học, giáo dục đặc biệt…)"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Công tác xã hội\"; chữ mới thêm \"hoặc ngành gần như xã hội học, tâm lý học\", vì Nghị định 110/2024 nhận cả các ngành này."
+    ghi_chu: "Chữ cũ: \"Công tác xã hội\"; chữ mới thêm \"hoặc ngành gần như xã hội học, tâm lý học\", vì Nghị định 110/2024 nhận cả các ngành này. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Mở pbgdpl.cantho.gov.vn/dieu-kien-hanh-nghe-cong-tac-xa-hoi 30/10/2026: \"tốt nghiệp… chuyên ngành công tác xã hội, xã hội học, tâm lý học, giáo dục đặc biệt hoặc chuyên ngành khoa học xã hội khác\"; khớp."
     luot_2: dung
     luot_2_nguon: [ "https://baochinhphu.vn/dieu-kien-hanh-nghe-cong-tac-xa-hoi-102240906124055381.htm" ]
     luot_2_ghi_chu: Mở 30/10/2026. Bản PDF ký số trên vanban.chinhphu.vn (docid=211080) là ảnh quét, không trích được chữ; dẫn qua Báo Điện tử Chính phủ. Nghị định có hiệu lực 15/10/2024.
+    review: dung
   - id: n48
     cau: "Bác sĩ chuyên khoa tâm thần: giấy phép hành nghề bác sĩ."
     loai: thoi-su
@@ -639,10 +663,11 @@ nhan_dinh:
     trich: "Chức danh chuyên môn phải có giấy phép hành nghề bao gồm: Bác sỹ; Y sỹ; Điều dưỡng; Hộ sinh; Kỹ thuật y; Dinh dưỡng lâm sàng; Cấp cứu viên ngoại viện; Tâm lý lâm sàng; Lương y; Người có bài thuốc gia truyền…"
     vi_tri: "Điều 26 k1 (danh sách đủ); k2: Chính phủ có thể bổ sung chức danh"
     ket_qua: da-lam-mem
-    ghi_chu: "Chữ cũ: \"Hiện chưa có giấy phép hành nghề quốc gia riêng\". Chữ mới chỉ nói điều đã kiểm (không có trong danh sách Điều 26); câu cũ là khẳng định phủ định rộng hơn (mọi loại giấy phép quốc gia), chưa kiểm hết được. Điều 26 k2 cho Chính phủ bổ sung chức danh: kiểm lại mỗi quý."
+    ghi_chu: "Chữ cũ: \"Hiện chưa có giấy phép hành nghề quốc gia riêng\". Chữ mới chỉ nói điều đã kiểm (không có trong danh sách Điều 26); câu cũ là khẳng định phủ định rộng hơn (mọi loại giấy phép quốc gia), chưa kiểm hết được. Điều 26 k2 cho Chính phủ bổ sung chức danh: kiểm lại mỗi quý. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Điều 26 k1 (hai lượt): danh sách chức danh không có tham vấn viên; chữ cuối chỉ nói điều đã kiểm, có het_han."
     luot_2: dung
     luot_2_nguon: [ "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/26-vbhn-vpqh.pdf" ]
     luot_2_ghi_chu: Mở 30/10/2026. Khoản 2 cho phép Chính phủ bổ sung chức danh; chưa thấy văn bản bổ sung chức danh này.
+    review: dung
   - id: n51
     cau: "Nhân viên công tác xã hội: giấy chứng nhận đăng ký hành nghề công tác xã hội theo Nghị định 110/2024/NĐ-CP."
     loai: thoi-su
@@ -651,10 +676,11 @@ nhan_dinh:
     trich: "Có giấy chứng nhận đăng ký hành nghề công tác xã hội do cơ quan nhà nước có thẩm quyền cấp còn hiệu lực."
     vi_tri: "điều kiện hành nghề, điều kiện 4; \"Nghị định số 110/2024/NĐ-CP có hiệu lực từ ngày 15/10/2024\""
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Đăng ký hành nghề theo Nghị định 110/2024/NĐ-CP\"; chữ mới gọi đúng tên giấy tờ trong nghị định. Ý không đổi."
+    ghi_chu: "Chữ cũ: \"Đăng ký hành nghề theo Nghị định 110/2024/NĐ-CP\"; chữ mới gọi đúng tên giấy tờ trong nghị định. Ý không đổi. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Cùng trang Cần Thơ 30/10/2026: \"Có giấy chứng nhận đăng ký hành nghề công tác xã hội do cơ quan nhà nước có thẩm quyền cấp còn hiệu lực\"; khớp."
     luot_2: dung
     luot_2_nguon: [ "https://baochinhphu.vn/dieu-kien-hanh-nghe-cong-tac-xa-hoi-102240906124055381.htm", "https://vanban.chinhphu.vn/?pageid=27160&docid=211080" ]
     luot_2_ghi_chu: Mở 30/10/2026. Văn bản gốc trên vanban.chinhphu.vn là ảnh quét; đọc chữ qua Báo Điện tử Chính phủ. Chưa xác nhận được điều, khoản cụ thể trong Nghị định 110/2024.
+    review: dung
   - id: n52
     cau: "Bác sĩ chuyên khoa tâm thần được kê đơn thuốc."
     loai: thoi-su
@@ -674,10 +700,11 @@ nhan_dinh:
     trich: "bác sỹ, y sỹ"
     vi_tri: "TT 26/2025, Điều 2; Healthdirect: \"A psychologist is not a medical doctor and can't prescribe medicines.\""
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"Không (kê đơn là phạm vi của bác sĩ)\"; chữ mới: \"Không (theo quy định về kê đơn, người kê đơn là bác sĩ, y sĩ)\": TT 26/2025 cho cả y sĩ kê đơn. Chỉ xem thông tư về thuốc hóa dược, sinh phẩm; TT 55/2025 (thuốc cổ truyền) chưa xem."
+    ghi_chu: "Chữ cũ: \"Không (kê đơn là phạm vi của bác sĩ)\"; chữ mới: \"Không (theo quy định về kê đơn, người kê đơn là bác sĩ, y sĩ)\": TT 26/2025 cho cả y sĩ kê đơn. Chỉ xem thông tư về thuốc hóa dược, sinh phẩm; TT 55/2025 (thuốc cổ truyền) chưa xem. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. TT 26/2025/TT-BYT Điều 2 (bác sỹ, y sỹ; hai lượt mở PDF chinhphu.vn). Chữ cuối có \"theo quy định về kê đơn\"."
     luot_2: dung
     luot_2_nguon: [ "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/7/26-byt.pdf" ]
     luot_2_ghi_chu: Mở 30/10/2026. Chức danh tâm lý lâm sàng không có trong Điều 2. (Người vừa là bác sỹ vừa có chứng chỉ tâm lý lâm sàng thì vẫn kê đơn theo chức danh bác sỹ, nếu giấy phép là bác sỹ.)
+    review: dung
   - id: n54
     cau: "Tham vấn viên và nhân viên công tác xã hội không kê đơn thuốc."
     loai: thoi-su
@@ -739,10 +766,11 @@ nhan_dinh:
     trich: "Thời gian thực hành khám bệnh, chữa bệnh đối với tâm lý lâm sàng là 09 tháng."
     vi_tri: "Nghị định 96/2023, Điều 3 k6 (Hệ thống pháp luật ghi khoản 6; cổng Cần Thơ ghi Điều 3)"
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ: \"…phải có 9 tháng thực hành có người hướng dẫn tại cơ sở phù hợp\". Chữ mới: \"…9 tháng thực hành khám bệnh, chữa bệnh\": Điều 3 chỉ nói thời gian; điều kiện về cơ sở hướng dẫn ở Điều 5–6 chưa mở. Chỗ khó: Bộ Y tế có dự thảo sửa Nghị định 96/2023 (2025); chưa xác nhận đã ban hành hay đổi thời gian này: kiểm lại mỗi quý."
+    ghi_chu: "Chữ cũ: \"…phải có 9 tháng thực hành có người hướng dẫn tại cơ sở phù hợp\". Chữ mới: \"…9 tháng thực hành khám bệnh, chữa bệnh\": Điều 3 chỉ nói thời gian; điều kiện về cơ sở hướng dẫn ở Điều 5–6 chưa mở. Chỗ khó: Bộ Y tế có dự thảo sửa Nghị định 96/2023 (2025); chưa xác nhận đã ban hành hay đổi thời gian này: kiểm lại mỗi quý. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. ND 96/2023 Điều 3 (9 tháng với tâm lý lâm sàng), hai lượt; có het_han và ghi chú dự thảo sửa đổi. Ngoại lệ Luật Điều 23 k1 (lượt 2) không cần ở bảng tóm tắt."
     luot_2: dung
     luot_2_nguon: [ "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-kham-benh-chua-benh-119240115115947657.htm", "https://vanban.chinhphu.vn/?pageid=27160&docid=209491" ]
     luot_2_ghi_chu: "Mở 30/10/2026. Ngoại lệ theo Luật Điều 23 khoản 1: người đã hoàn thành chương trình đào tạo chuyên khoa, hay có giấy phép nước ngoài được thừa nhận, không phải thực hành. Hiệu lực: tính đến 30/10/2026 chưa thấy nghị định thay thế; Bộ Y tế có dự thảo sửa Nghị định 96 và Nghị quyết 21/2026/NQ-CP đổi thẩm quyền cấp phép, nên nên kiểm lại khi gia hạn."
+    review: dung
   # Gợi ý khi chọn nơi hỗ trợ
   - id: n60
     cau: "Hỏi về đào tạo, giấy phép hoặc chứng chỉ hành nghề."
@@ -751,10 +779,11 @@ nhan_dinh:
     trich: "What qualifications do they have?"
     vi_tri: "Healthdirect, mục chọn chuyên gia; Counsellors: \"check that any counsellor you plan to see is a member of a professional body\""
     ket_qua: da-lam-mem
-    ghi_chu: "Chữ cũ: \"…, và người giám sát chuyên môn (nếu có).\" Bỏ phần người giám sát: không nguồn nào đã mở khuyên hỏi điều này."
+    ghi_chu: "Chữ cũ: \"…, và người giám sát chuyên môn (nếu có).\" Bỏ phần người giám sát: không nguồn nào đã mở khuyên hỏi điều này. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Healthdirect \"What qualifications do they have?\"; chữ cuối bỏ \"người giám sát\"."
     luot_2: dung
     luot_2_nguon: [ "https://www.nimh.nih.gov/health/topics/psychotherapies", "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/counselling/" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n61
     cau: "Hỏi về chi phí, thời lượng mỗi buổi và cách họ bảo mật thông tin của bạn."
     loai: loi-khuyen
@@ -770,9 +799,10 @@ nhan_dinh:
     loai: loi-khuyen
     trich: null
     ket_qua: da-bo
-    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): bỏ: lời khuyên không tìm được nguồn chính thức (chuẩn: lời khuyên cũng phải có nguồn)."
+    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): bỏ: lời khuyên không tìm được nguồn chính thức (chuẩn: lời khuyên cũng phải có nguồn). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Dòng đã bỏ khỏi trang; lượt 2 khong-chac, không có nguồn chính thức. Bỏ là đúng chuẩn."
     luot_2: khong-chac
     luot_2_ghi_chu: 'Không tìm được nguồn bậc 1 (NHS, NIMH, SAMHSA, WHO, APA) nói đúng ý "thận trọng với nơi hứa chữa khỏi nhanh, cam kết kết quả, hay chỉ dựa vào một bài trắc nghiệm". Trang APA về chọn nhà trị liệu chặn máy, trang Mind trả 403. Chỉ thấy ở trang của phòng khám và dịch vụ thương mại. NIMH (psychotherapies) gần nhất: nên hỏi mục tiêu, khung thời gian, cách đánh giá tiến bộ. Luật Khám bệnh, chữa bệnh Điều 7 cấm quảng cáo gian dối về khám chữa bệnh, nhưng không nói đúng ý này. Lời khuyên hợp lý; nên tìm nguồn chính thức hoặc ghi là lời khuyên của site.'
+    review: dung
   - id: n63
     cau: "Nếu bạn không thấy hợp với một người, việc tìm người khác là bình thường."
     loai: loi-khuyen
@@ -791,10 +821,11 @@ nhan_dinh:
     trich: "Let them know that you are there to listen."
     vi_tri: "WHO 2021, mục What you can do; WHO/PAHO: \"listen without judgement, and offer support\""
     ket_qua: da-sua
-    ghi_chu: "Chữ cũ câu sau: \"Thường người ta cần được nghe hơn là cần lời giải.\" Chữ mới: \"Cho họ biết bạn sẵn sàng nghe.\" (theo WHO): câu cũ là khẳng định chung không nguồn nào đã mở nói."
+    ghi_chu: "Chữ cũ câu sau: \"Thường người ta cần được nghe hơn là cần lời giải.\" Chữ mới: \"Cho họ biết bạn sẵn sàng nghe.\" (theo WHO): câu cũ là khẳng định chung không nguồn nào đã mở nói. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. WHO 2021 \"Let them know that you are there to listen\"; NHS, NIMH (lượt 2)."
     luot_2: dung
     luot_2_nguon: [ "https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/how-to-help-someone-with-depression/", "https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide" ]
     luot_2_ghi_chu: Mở 30/10/2026.
+    review: dung
   - id: n65
     cau: "Tránh phán xét (\"Có gì đâu mà buồn\", \"Cố lên là được\")."
     loai: loi-khuyen
@@ -862,32 +893,32 @@ nhan_dinh:
     cau: "Kiểm tra lần cuối: 30/10/2026. Hạn kiểm tra lại: 30/01/2027."
     loai: ve-site
     ket_qua: da-sua
-    review: null
-    ghi_chu: "Kiểm trên hồ sơ này (lan[0].ngay, het_han của các câu thời sự). Chữ cũ: \"Kiểm tra lần cuối: 13/10/2026.\" Chữ mới: ngày kiểm của lượt 1 và hạn kiểm lại (lời giao D2-L1). Review nên đổi ngày nếu lượt 2 kiểm lại số ở ngày khác. Dòng trạng thái kiểm định do PageTitle sinh từ hồ sơ có thể lặp ý: review xem có cần giữ câu này không."
+    review: dung
+    ghi_chu: "Kiểm trên hồ sơ này (lan[0].ngay, het_han của các câu thời sự). Chữ cũ: \"Kiểm tra lần cuối: 13/10/2026.\" Chữ mới: ngày kiểm của lượt 1 và hạn kiểm lại (lời giao D2-L1). Review nên đổi ngày nếu lượt 2 kiểm lại số ở ngày khác. Dòng trạng thái kiểm định do PageTitle sinh từ hồ sơ có thể lặp ý: review xem có cần giữ câu này không. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. lan[0].ngay 2026-10-30 và het_han 2027-01-30 của mọi câu thời sự trong hồ sơ; khớp. Nếu sửa trang sau review thì ngày phải đổi theo lần kiểm mới."
   - id: n72
-    cau: "Các số điện thoại được đối chiếu với trang web chính thức của từng tổ chức; số miễn phí của 113, 114, 115 được đối chiếu với văn bản pháp luật."
+    cau: "Số của các tổ chức và bệnh viện được đối chiếu với trang web chính thức của từng nơi (Bệnh viện Tâm thần Trung ương 1: bản lưu của trang); các số 113, 114, 115, giờ trực của 115 và việc gọi miễn phí được đối chiếu với văn bản pháp luật."
     loai: ve-site
     ket_qua: da-sua
-    review: null
-    ghi_chu: "Kiểm trên hồ sơ này (n2–n33). Chữ cũ: \"…đối chiếu với trang web chính thức của từng tổ chức và ít nhất một nguồn độc lập, trừ khi có ghi chú khác.\" Lượt 1 không đối chiếu nguồn độc lập cho từng số (chỉ trang chính thức, theo chuẩn), nên bỏ vế ấy. Bệnh viện TW1 đối chiếu bản lưu của trang chính thức: đã ghi ở mục nguồn trên trang."
+    review: sai
+    ghi_chu: "Kiểm trên hồ sơ này (n2–n33). Chữ cũ: \"…đối chiếu với trang web chính thức của từng tổ chức và ít nhất một nguồn độc lập, trừ khi có ghi chú khác.\" Lượt 1 không đối chiếu nguồn độc lập cho từng số (chỉ trang chính thức, theo chuẩn), nên bỏ vế ấy. Bệnh viện TW1 đối chiếu bản lưu của trang chính thức: đã ghi ở mục nguồn trên trang. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Vế đầu chưa đúng hết: số 113 và 115 (và giờ 24/7 của 115) đối chiếu với văn bản pháp luật (TT 22/2014, QĐ 01/2008), không phải trang web của \"từng tổ chức\"; số Bệnh viện Tâm thần Trung ương 1 đối chiếu bản lưu của trang chính thức. Người gom (Claude Opus 5.5) sửa theo review: Số của các tổ chức và bệnh viện được đối chiếu với trang web chính thức của từng nơi (Bệnh viện Tâm thần Trung ương 1: bản lưu của trang); các số 113, 114, 115, giờ trực của 115 và việc gọi miễn phí được đối chiếu với văn bản pháp luật."
   - id: n73
     cau: "Danh sách được kiểm tra lại bằng tay mỗi quý."
     loai: ve-site
     ket_qua: dung
-    review: null
-    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): đã chép workflow nhắc mỗi quý sang .github/workflows/ho-tro-quarterly.yml (D2-L1), mở issue ngày 1 tháng 1, 4, 7, 10."
+    review: dung
+    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): đã chép workflow nhắc mỗi quý sang .github/workflows/ho-tro-quarterly.yml (D2-L1), mở issue ngày 1 tháng 1, 4, 7, 10. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. .github/workflows/ho-tro-quarterly.yml: cron \"0 2 1 1,4,7,10 *\", mở issue \"Kiểm tra thủ công thông tin liên hệ trang Hỗ trợ\"; het_han 3 tháng. Workflow chỉ nhắc, việc kiểm vẫn bằng tay: khớp."
   - id: n74
     cau: "Nếu bạn thấy thông tin nào đã thay đổi, xin hãy báo cho chúng tôi."
     loai: ve-site
-    ket_qua: dung
-    review: null
-    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): giữ câu mời như trang cũ, chưa thêm đường báo: repo còn riêng tư nên link GitHub Issues ra 404 với người đọc. Khi repo công khai hay có địa chỉ liên hệ thì thêm (ghi ở báo cáo D2-L1)."
+    ket_qua: da-bo
+    review: sai
+    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): giữ câu mời như trang cũ, chưa thêm đường báo: repo còn riêng tư nên link GitHub Issues ra 404 với người đọc. Khi repo công khai hay có địa chỉ liên hệ thì thêm (ghi ở báo cáo D2-L1). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Câu mời báo nhưng cả site chưa có đường báo nào (Footer.astro chỉ có link Hỗ trợ và giấy phép; repo riêng tư nên Issues ra 404). Người đọc thấy số sai không làm theo được. Người gom (Claude Opus 5.5) sửa theo review: Bỏ câu cho tới khi có đường báo (email hay issue công khai); khi có thì viết kèm link, ví dụ \"Nếu bạn thấy thông tin nào đã thay đổi, xin báo ở <link>.\""
   - id: n75
     cau: "Mục \"Nguồn đã dùng để kiểm chứng\" liệt kê đúng các nguồn đã mở ở hồ sơ này."
     loai: ve-site
     ket_qua: da-sua
-    review: null
-    ghi_chu: "Đối chiếu với danh sách nguon của hồ sơ. Đổi so với trang cũ: bỏ Báo Lào Cai, Tuổi Trẻ (12/10/2025, không nói 24/7 hay miễn phí), Thư viện pháp luật (trả 403), Tuổi Trẻ/PLO (111), Vietnam News (Ngày Mai), Find A Helpline (CSAGA), trang Bạch Mai, và số 112 (trang không nói 112). Thêm Luật Viễn thông 2023, TT 22/2014, QĐ 01/2008, TT 26/2025, cổng pháp luật Cần Thơ, WHO, SAMHSA, NIMH, Healthdirect, NHS Health Careers. Sửa tên báo cáo 111: trang cũ ghi \"Báo cáo số 14/BC-BMTE ngày 20/01/2026\", bản PDF đăng trên tongdai111.vn để trống số và ngày (\"Số: /BC-BMTE\", \"ngày tháng 01 năm 2026\"), nên ghi \"tháng 01/2026\". Bỏ câu \"Số của Bệnh viện Tâm thần Trung ương 2 mới chỉ đối chiếu được với trang chính thức\" (nay mọi số đều chỉ đối chiếu trang chính thức)."
+    review: sai
+    ghi_chu: "Đối chiếu với danh sách nguon của hồ sơ. Đổi so với trang cũ: bỏ Báo Lào Cai, Tuổi Trẻ (12/10/2025, không nói 24/7 hay miễn phí), Thư viện pháp luật (trả 403), Tuổi Trẻ/PLO (111), Vietnam News (Ngày Mai), Find A Helpline (CSAGA), trang Bạch Mai, và số 112 (trang không nói 112). Thêm Luật Viễn thông 2023, TT 22/2014, QĐ 01/2008, TT 26/2025, cổng pháp luật Cần Thơ, WHO, SAMHSA, NIMH, Healthdirect, NHS Health Careers. Sửa tên báo cáo 111: trang cũ ghi \"Báo cáo số 14/BC-BMTE ngày 20/01/2026\", bản PDF đăng trên tongdai111.vn để trống số và ngày (\"Số: /BC-BMTE\", \"ngày tháng 01 năm 2026\"), nên ghi \"tháng 01/2026\". Bỏ câu \"Số của Bệnh viện Tâm thần Trung ương 2 mới chỉ đối chiếu được với trang chính thức\" (nay mọi số đều chỉ đối chiếu trang chính thức). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. So danh sách nguon của hồ sơ với khối \"Nguồn đã dùng để kiểm chứng\": thiếu hope-hyvongsong và findahelpline-vn, là hai nguồn đã mở cho câu \"chưa tìm thấy đường dây quốc gia 24/7\" (n25; Find A Helpline chỉ có link ở thân trang); dazzi2014 có link ngay trong câu. Các nguồn còn lại khớp. Người gom (Claude Opus 5.5) sửa theo review: Thêm một dòng: \"Câu về đường dây quốc gia 24/7: danh bạ [Find A Helpline](https://findahelpline.com/countries/vn) và trang của các đường dây đã liệt kê ở đó, như [HOPE](https://hyvongsong.com) (12:00–00:00 hằng ngày, không 24/7).\""
 doi_chu:
   # Ghi tay theo chữ hiển thị (chưa build được: agent khác đang build). Sau build:xem, chạy
   # node tools/chuyen/so-chu.mjs ho-tro/index --doi-chu để khớp đúng chuỗi khối và bổ sung chỗ còn thiếu.

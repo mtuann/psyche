@@ -86,7 +86,7 @@ Theo Nghị định 96/2023/NĐ-CP, để được cấp giấy phép, nhà tâm
 
 ## Thông tin trên trang này
 
-**Kiểm tra lần cuối: 30/10/2026. Hạn kiểm tra lại: 30/01/2027.** Các số điện thoại được đối chiếu với trang web chính thức của từng tổ chức; số miễn phí của 113, 114, 115 được đối chiếu với văn bản pháp luật. Danh sách được kiểm tra lại bằng tay mỗi quý. Nếu bạn thấy thông tin nào đã thay đổi, xin hãy báo cho chúng tôi.
+**Kiểm tra lần cuối: 30/10/2026. Hạn kiểm tra lại: 30/01/2027.** Số của các tổ chức và bệnh viện được đối chiếu với trang web chính thức của từng nơi (Bệnh viện Tâm thần Trung ương 1: bản lưu của trang); các số 113, 114, 115, giờ trực của 115 và việc gọi miễn phí được đối chiếu với văn bản pháp luật. Danh sách được kiểm tra lại bằng tay mỗi quý.
 
 :::thu-gon[Nguồn đã dùng để kiểm chứng]
 - Số khẩn cấp 113, 114, 115 và cuộc gọi miễn phí: Luật Viễn thông số 24/2023/QH15, Điều 25 ([Công báo, bản đăng trên Cổng thông tin tỉnh Bình Phước](https://binhphuoc.gov.vn/uploads/binhphuoc/news/2024_04/luat24.pdf)); Thông tư 22/2014/TT-BTTTT về quy hoạch kho số viễn thông, Điều 13 ([LuatVietnam](https://luatvietnam.vn/thong-tin/thong-tu-22-2014-tt-btttt-bo-thong-tin-va-truyen-thong-91890-d1.html)).
@@ -94,6 +94,7 @@ Theo Nghị định 96/2023/NĐ-CP, để được cấp giấy phép, nhà tâm
 - Tổng đài 111: [trang chính thức](https://tongdai111.vn); [Báo cáo hoạt động Tổng đài 111 năm 2025 của Cục Bà mẹ và Trẻ em, Bộ Y tế (tháng 01/2026)](https://tongdai111.vn/uploads/files/B%C3%A1o%20c%C3%A1o%20T%E1%BB%95ng%20%C4%91%C3%A0i%20BVTE%20111%20%20n%C4%83m%202025.pdf).
 - Đường dây nóng Ngày Mai: [trang chính thức](https://duongdaynongngaymai.vn).
 - CSAGA: [trang chính thức](https://csaga.org.vn).
+- Câu về đường dây quốc gia 24/7: danh bạ [Find A Helpline](https://findahelpline.com/countries/vn) và trang của các đường dây đã liệt kê ở đó, như [HOPE](https://hyvongsong.com) (12:00–00:00 hằng ngày, không 24/7).
 - Bệnh viện Tâm thần Trung ương 1: trang chính thức bvtttw1.gov.vn (ngày 30/10/2026 không mở được; đối chiếu bản lưu ngày 14/7/2026 trên Internet Archive). Bệnh viện Tâm thần Trung ương 2: [trang chính thức](https://tamthantw2.gov.vn). Bệnh viện Tâm thần TP.HCM: [trang Liên hệ](https://bvtt-tphcm.org.vn/lien-he/).
 - Luật Khám bệnh, chữa bệnh số 15/2023/QH15, Điều 26 ([Hệ thống pháp luật](https://hethongphapluat.com/luat-kham-benh-chua-benh-2023/dieu-26)); Nghị định 96/2023/NĐ-CP, Điều 3 ([Cổng phổ biến pháp luật TP. Cần Thơ](https://pbgdpl.cantho.gov.vn/quy-dinh-chi-tiet-mot-so-dieu-cua-luat-kham-benh-chua-benh)); Thông tư 26/2025/TT-BYT về kê đơn thuốc, Điều 2 ([LuatVietnam](https://luatvietnam.vn/y-te/thong-tu-26-2025-tt-byt-quy-dinh-ke-don-thuoc-hoa-duoc-sinh-pham-tai-co-so-kham-chua-benh-404246-d1.html)).
 - Nghị định 110/2024/NĐ-CP về công tác xã hội, có hiệu lực từ 15/10/2024 ([Cổng phổ biến pháp luật TP. Cần Thơ](https://pbgdpl.cantho.gov.vn/dieu-kien-hanh-nghe-cong-tac-xa-hoi)).

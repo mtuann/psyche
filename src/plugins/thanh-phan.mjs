@@ -206,8 +206,12 @@ function mucBai(trang, docsDir, base, { moTa = true } = {}) {
 	return `<li><a href="${diaChi(trang, base)}">${ten}</a>${moTa && fm.description ? `<span class="pz-ds-bai__mo">${esc(fm.description)}</span>` : ''}</li>`;
 }
 
+/** Bài (lõi, mở rộng) là bài khám phá, thí nghiệm hay phương pháp; trang mục lục, Bắt đầu (như Cách đọc nhãn), Hỗ trợ không tính (review D2-L1). */
+const laBai = (r) => /^(kham-pha|thi-nghiem|bang-chung)\//.test(r.id) && !r.id.endsWith('/index') && (r.tang === 'loi' || r.tang === 'mo-rong');
+const baiKhamPha = (r, linhVuc) => r.linh_vuc === linhVuc && laBai(r);
+
 /**
- * ::danh-sach-bai{linh_vuc="tri-nho"} hay ::danh-sach-bai{nhom="thi-nghiem"}: bài của một lĩnh vực (bài khám phá, lõi và
+ * ::danh-sach-bai{linh_vuc="tri-nho"} hay ::danh-sach-bai{nhom="thi-nghiem"}: bài của một lĩnh vực (laBai: lõi và
  * mở rộng, theo thứ tự của trang.yml) hay của một nhóm (thư mục), chỉ bài có trong bản build. Còn bài chưa lên thì một
  * dòng "Còn N bài sắp có". Không có bài nào thì chỉ dòng ấy.
  */
@@ -215,7 +219,7 @@ export function danhSachBai({ linh_vuc, nhom }, { banGhi, trangCo, docsDir, base
 	if (!linh_vuc === !nhom) throw new Error('::danh-sach-bai cần đúng một trong linh_vuc, nhom');
 	const co = new Set(trangCo);
 	const thuoc = banGhi.filter((r) =>
-		linh_vuc ? r.linh_vuc === linh_vuc && (r.tang === 'loi' || r.tang === 'mo-rong') : r.id.startsWith(`${nhom}/`) && !r.id.endsWith('/index'),
+		linh_vuc ? baiKhamPha(r, linh_vuc) : r.id.startsWith(`${nhom}/`) && !r.id.endsWith('/index'),
 	);
 	if (linh_vuc && !thuoc.length) throw new Error(`::danh-sach-bai: lĩnh vực "${linh_vuc}" không có bài nào trong src/data/trang.yml`);
 	const len = thuoc.filter((r) => co.has(r.id));
@@ -239,11 +243,13 @@ export function theLinhVuc({ linhVuc, banGhi, trangCo, base, svg }) {
 		[...linhVuc]
 			.sort((a, b) => a.thu_tu - b.thu_tu)
 			.map((l) => {
-				const bai = banGhi.filter((r) => r.linh_vuc === l.id && (r.tang === 'loi' || r.tang === 'mo-rong'));
+				const bai = banGhi.filter((r) => baiKhamPha(r, l.id));
 				const len = bai.filter((r) => co.has(r.id)).length;
 				const dem = len ? `${len}/${bai.length} bài đã lên` : `${bai.length} bài, sắp có`;
 				const noi = `${svg(l.bieu_tuong ?? '')}<span class="pz-the-lv__ten">${esc(l.ten)}</span><span class="pz-the-lv__dem">${dem}</span>`;
-				return `<li class="pz-o-lv" style="--h: ${l.mau}"><a href="${diaChi(`nen-tang/${l.id}`, base)}">${noi}</a></li>`;
+				const trang = `nen-tang/${l.id}`;
+				const the = co.has(trang) ? `<a href="${diaChi(trang, base)}">${noi}</a>` : `<span>${noi}</span>`;
+				return `<li class="pz-o-lv" style="--h: ${l.mau}">${the}</li>`;
 			})
 			.join('') +
 		`</ul>`
@@ -260,7 +266,7 @@ export function baiMoi({ so = '6' }, { banGhi, trangCo, docsDir, base, ngayKhoa 
 	if (!Number.isInteger(n) || n < 1) throw new Error('::bai-moi: so phải là số nguyên dương');
 	const co = new Set(trangCo);
 	const ds = banGhi
-		.filter((r) => co.has(r.id) && (r.tang === 'loi' || r.tang === 'mo-rong') && ngayKhoa(r.id))
+		.filter((r) => co.has(r.id) && laBai(r) && ngayKhoa(r.id))
 		.sort((a, b) => String(ngayKhoa(b.id)).localeCompare(String(ngayKhoa(a.id))))
 		.slice(0, n);
 	if (!ds.length) return `<p class="pz-ds-bai__con not-content">Bài đầu tiên lên site sau khi được kiểm chứng lại từ đầu.</p>`;

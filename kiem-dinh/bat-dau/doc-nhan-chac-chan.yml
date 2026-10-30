@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D2-L1)
+      review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: null
 nguon:
   - id: bond2006
@@ -30,10 +30,6 @@ nguon:
     ten: 'Cepeda và cộng sự (2006), Psychol Bull 132(3), 354–380: toàn văn'
     link: https://doi.org/10.1037/0033-2909.132.3.354
     toan_van: true
-  - id: loftus2005
-    ten: 'Loftus (2005), Learn Mem 12(4), 361–366: tóm tắt (Europe PMC)'
-    link: https://doi.org/10.1101/lm.94705
-    toan_van: false
   - id: hagger2016
     ten: 'Hagger và cộng sự (2016), Perspect Psychol Sci 11(4), 546–573: tóm tắt (Europe PMC)'
     link: https://doi.org/10.1177/1745691616652873
@@ -57,61 +53,65 @@ nguon:
   - id: jussim2005
     ten: "Jussim & Harber (2005), Personality and Social Psychology Review 9(2), 131–155: tóm tắt (OpenAlex)"
     link: https://doi.org/10.1207/s15327957pspr0902_3
+  - id: cochrane-ch10
+    ten: "Cochrane Handbook for Systematic Reviews of Interventions, chương 10: Analysing data and undertaking meta-analyses"
+    link: https://training.cochrane.org/handbook/current/chapter-10
 nhan_dinh:
   - id: n1
     cau: Mỗi kết luận quan trọng trên Psyche được gắn một trong bốn nhãn.
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'AGENTS.md, Quy tắc nội dung: "Mọi kết luận quan trọng có một trong bốn nhãn". Chữ cũ "Psyche Zero" đổi thành "Psyche".'
-    review: null
+    ghi_chu: 'AGENTS.md, Quy tắc nội dung: "Mọi kết luận quan trọng có một trong bốn nhãn". Chữ cũ "Psyche Zero" đổi thành "Psyche". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. AGENTS.md, Quy tắc nội dung.'
+    review: dung
   - id: n2
     cau: Nhãn không nói một ý tưởng hay hay dở, thú vị hay nhàm chán; nó chỉ trả lời bằng chứng hiện có ủng hộ kết luận này mạnh đến đâu.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: chuan-kiem-dinh.md mục 4 ("Bốn nhãn của site... mức độ chắc chắn"); plans/lam-lai/README.md (câu hỏi của site).
-    review: null
+    ghi_chu: 'chuan-kiem-dinh.md mục 4 ("Bốn nhãn của site... mức độ chắc chắn"); plans/lam-lai/README.md (câu hỏi của site). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 4 (nhãn nói độ chắc của bằng chứng).'
+    review: dung
   - id: n3
     cau: 'Nhãn nói về một khẳng định cụ thể, không về cả chủ đề: một bài có thể có khung "Vững chắc" cho hiệu ứng chính và khung "Đang tranh cãi" cho cách giải thích.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: chuan-kiem-dinh.md mục 4, gạch đầu dòng thứ nhất (đã chép gần nguyên văn, thêm vào trang theo D2-L1).
-    review: null
+    ghi_chu: "chuan-kiem-dinh.md mục 4, gạch đầu dòng thứ nhất (đã chép gần nguyên văn, thêm vào trang theo D2-L1). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 4, gạch đầu thứ nhất."
+    review: dung
   - id: n4
     cau: 'Thước đo "Vững chắc": ít nhất một phân tích tổng hợp hay tổng quan hệ thống chất lượng tốt, hoặc từ hai lần tái lập lớn có đăng ký trước, cùng chiều; không có thất bại tái lập lớn chưa được giải thích; đúng ở nhiều nhóm người.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đối chiếu từng điều kiện với chuan-kiem-dinh.md mục 4, hàng "Vững chắc": khớp. Thêm vào trang theo D2-L1.'
-    review: null
+    ghi_chu: 'Đối chiếu từng điều kiện với chuan-kiem-dinh.md mục 4, hàng "Vững chắc": khớp. Thêm vào trang theo D2-L1. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Bảng trên trang so từng điều kiện với chuan-kiem-dinh.md mục 4: khớp.'
+    review: dung
   - id: n5
     cau: 'Thước đo "Khá vững": nhiều nghiên cứu cùng chiều nhưng còn giới hạn (chưa có tái lập lớn, mẫu chủ yếu là người phương Tây, kết quả giữa các nghiên cứu khác nhau nhiều, nghi có thiên lệch xuất bản).'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đối chiếu với chuan-kiem-dinh.md mục 4, hàng "Khá vững": khớp, kể cả bốn giới hạn.'
-    review: null
+    ghi_chu: 'Đối chiếu với chuan-kiem-dinh.md mục 4, hàng "Khá vững": khớp, kể cả bốn giới hạn. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Khớp mục 4; phần giải thích "tạp chí ưu tiên kết quả có hiệu ứng" là chú giải, không thêm điều kiện.'
+    review: dung
   - id: n6
     cau: 'Thước đo "Đang tranh cãi": bằng chứng chất lượng cao mâu thuẫn; hoặc một tái lập lớn đăng ký trước thất bại; hoặc hiệu ứng nhỏ hơn nhiều so với tuyên bố ban đầu.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đối chiếu với chuan-kiem-dinh.md mục 4, hàng "Đang tranh cãi": khớp ba điều kiện.'
-    review: null
+    ghi_chu: 'Đối chiếu với chuan-kiem-dinh.md mục 4, hàng "Đang tranh cãi": khớp ba điều kiện. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Khớp mục 4.'
+    review: dung
   - id: n7
     cau: 'Thước đo "Đã bị bác bỏ": các kiểm tra đủ mạnh liên tục thất bại; hoặc bằng chứng gốc không còn giá trị (bài bị rút, gian lận, lỗi phân tích).'
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'Đối chiếu với chuan-kiem-dinh.md mục 4, hàng "Đã bị bác bỏ": khớp. Sửa khung có tiêu đề "Đã bị bác bỏ hoặc không tái lập được": bỏ tiêu đề tùy biến, ý chính là hai điều kiện của thước đo.'
-    review: null
+    ghi_chu: 'Đối chiếu với chuan-kiem-dinh.md mục 4, hàng "Đã bị bác bỏ": khớp. Sửa khung có tiêu đề "Đã bị bác bỏ hoặc không tái lập được": bỏ tiêu đề tùy biến, ý chính là hai điều kiện của thước đo. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Khớp mục 4; khung :::bac-bo không còn tiêu đề tùy biến.'
+    review: dung
   - id: n8
-    cau: Phân tích tổng hợp là bài gộp kết quả của nhiều nghiên cứu để rút ra một kết luận chung.
+    cau: Phân tích tổng hợp là bài dùng thống kê gộp kết quả của nhiều nghiên cứu để rút ra một ước lượng chung.
     loai: dinh-nghia
     nguon:
-      - bond2006
-    trich: We analyze the accuracy of deception judgments, synthesizing research results from 206 documents and 24,483 judges.
+      - cochrane-ch10
+    trich: Meta-analysis is the statistical combination of results from two or more separate studies.
     ket_qua: da-sua
-    vi_tri: Tóm tắt (Bond và DePaulo là một phân tích tổng hợp)
-    ghi_chu: 'Chữ cũ (viết mới, chưa có trong trang cũ): "Phân tích tổng hợp và tổng quan hệ thống là những bài gộp và đánh giá kết quả của nhiều nghiên cứu." Chữ mới chỉ giải thích phân tích tổng hợp vì chưa mở được nguồn bậc 2 định nghĩa tổng quan hệ thống (APA Dictionary không đọc được). Ví dụ gộp: Bond và DePaulo (2006), Cepeda và cộng sự (2006).'
+    vi_tri: Cochrane Handbook, chương 10, mục 10.2
+    ghi_chu: 'Chữ cũ (viết mới, chưa có trong trang cũ): "Phân tích tổng hợp và tổng quan hệ thống là những bài gộp và đánh giá kết quả của nhiều nghiên cứu." Chữ mới chỉ giải thích phân tích tổng hợp vì chưa mở được nguồn bậc 2 định nghĩa tổng quan hệ thống (APA Dictionary không đọc được). Ví dụ gộp: Bond và DePaulo (2006), Cepeda và cộng sự (2006). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Chữ trên trang đúng ý, nhưng nguồn của hồ sơ (bond2006, trích "We analyze the accuracy… synthesizing research results from 206 documents") chỉ là một ví dụ phân tích tổng hợp, không định nghĩa; cả hai lượt đều dẫn bài này. Loại dinh-nghia cần nguồn định nghĩa (mục 1). Đã mở Cochrane Handbook ch. 10 (cochrane.org, 30/10/2026): "Meta-analysis is the statistical combination of results from two or more separate studies." Chữ "gộp kết quả" thiếu ý "bằng thống kê", là chỗ phân biệt với tổng quan thường. Người gom (Claude Opus 5.5) sửa theo review: *Phân tích tổng hợp* là bài dùng thống kê gộp kết quả của nhiều nghiên cứu để rút ra một ước lượng chung. (nguồn: Cochrane Handbook, ch. 10, thay bond2006)'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
     luot_2_ghi_chu: Ví dụ của định nghĩa phân tích tổng hợp.
+    review: sai
   - id: n9
     cau: Tái lập là làm lại một nghiên cứu để xem có ra kết quả tương tự không.
     loai: dinh-nghia
@@ -131,10 +131,11 @@ nhan_dinh:
     trich: An effective solution is to define the research questions and analysis plan before observing the research outcomes-a process called preregistration. Preregistration distinguishes analyses and outcomes that result from predictions from those that result from postdictions.
     ket_qua: da-sua
     vi_tri: Tóm tắt
-    ghi_chu: 'Chữ nháp (chưa đăng): "công bố kế hoạch trước khi thu dữ liệu, nên không thể chọn kết quả đẹp sau đó". Nosek (2018) nói "trước khi thấy kết quả" (kể cả với dữ liệu có sẵn) và không nói "không thể chọn"; viết lại cho đúng.'
+    ghi_chu: 'Chữ nháp (chưa đăng): "công bố kế hoạch trước khi thu dữ liệu, nên không thể chọn kết quả đẹp sau đó". Nosek (2018) nói "trước khi thấy kết quả" (kể cả với dữ liệu có sẵn) và không nói "không thể chọn"; viết lại cho đúng. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Nosek và cộng sự (2018) tóm tắt: "define the research questions and analysis plan before observing the research outcomes… distinguishes… predictions from… postdictions"; chữ trang bám sát. Lượt 2 dẫn DOI của Hagger 2016 (không phải nguồn định nghĩa) nên chỉ dựa được vào lượt 1.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/1745691616652873" ]
     luot_2_ghi_chu: Định nghĩa đăng ký trước chuẩn; chấp nhận.
+    review: dung
   - id: n11
     cau: 'Ôn tập rải ra nhiều lần giúp nhớ lâu hơn học dồn: một phân tích tổng hợp lớn năm 2006 thấy kết quả này ở rất nhiều thí nghiệm.'
     loai: so-lieu
@@ -143,10 +144,11 @@ nhan_dinh:
     trich: This review found 839 assessments of distributed practice in 317 experiments located in 184 articles.
     ket_qua: da-sua
     vi_tri: Tóm tắt
-    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): bỏ hai con số 839 và 317 (nghiên cứu có trang nhà duong-cong-quen; nơi khác không thêm số), giữ link về nhà. Lượt 1: đọc toàn văn, "839 assessments … in 317 experiments".'
+    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): bỏ hai con số 839 và 317 (nghiên cứu có trang nhà duong-cong-quen; nơi khác không thêm số), giữ link về nhà. Lượt 1: đọc toàn văn, "839 assessments … in 317 experiments". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Trang bỏ con số (Cepeda có trang nhà duong-cong-quen), còn "rất nhiều thí nghiệm"; đúng với 317 thí nghiệm trong tóm tắt.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
     luot_2_ghi_chu: "Khớp: phân tích tổng hợp 2006, rất nhiều thí nghiệm."
+    review: dung
   - id: n12
     cau: 'Ví dụ "Vững chắc": ôn tập rải ra nhiều lần giúp nhớ lâu hơn học dồn.'
     loai: nhan
@@ -159,22 +161,24 @@ nhan_dinh:
     co_so:
       - cepeda2006
     ly_do: 'Có một phân tích tổng hợp chất lượng tốt (Psychological Bulletin; 839 lần đánh giá, 317 thí nghiệm, 184 bài), cùng chiều: giãn cách hơn dồn. Chưa mở được tái lập lớn nào thất bại. Giới hạn: bài chỉ gồm bài tập nhớ ngôn từ.'
-    ghi_chu: 'chỗ khó: thước đo đòi "đúng ở nhiều nhóm người"; Cepeda gộp 184 bài nhiều tuổi nhưng không phân tích theo nền văn hóa; chưa đọc phân tích tổng hợp thứ hai (ví dụ Cepeda 2008 hay Carpenter 2012). Ví dụ minh họa; nhãn chính thức do trang nhà gắn. Người gom/lượt 2 cân nhắc.'
+    ghi_chu: 'chỗ khó: thước đo đòi "đúng ở nhiều nhóm người"; Cepeda gộp 184 bài nhiều tuổi nhưng không phân tích theo nền văn hóa; chưa đọc phân tích tổng hợp thứ hai (ví dụ Cepeda 2008 hay Carpenter 2012). Ví dụ minh họa; nhãn chính thức do trang nhà gắn. Người gom/lượt 2 cân nhắc. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Nhãn Vững chắc cho hiệu ứng giãn cách: có phân tích tổng hợp lớn (Cepeda 2006), cùng chiều, không có thất bại tái lập lớn đã biết, nhiều tuổi và chất liệu. Đạt mục 4. Giới hạn (chỉ nhớ ngôn từ) đúng là của Cepeda, không đổi nhãn. Ví dụ minh họa; trang nhà gắn nhãn chính thức.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
     luot_2_ghi_chu: "Nhãn Vững chắc: có phân tích tổng hợp lớn, hướng nhất quán, nhiều quần thể; đạt mục 4 (chưa thấy thất bại tái lập lớn). Chỉ đọc tóm tắt."
+    review: dung
   - id: n13
-    cau: Kỳ vọng của giáo viên ảnh hưởng tới kết quả của học sinh; tổng quan 35 năm nghiên cứu cho thấy hiệu ứng có thật, nhưng thường nhỏ và hay phai đi hơn là tích tụ theo thời gian.
+    cau: Kỳ vọng của giáo viên ảnh hưởng tới kết quả của học sinh; tổng quan 35 năm nghiên cứu cho thấy hiệu ứng có thật, nhưng thường nhỏ, không tích tụ nhiều theo thời gian, và có thể phai đi.
     loai: phat-hien
     nguon:
       - jussim2005
     trich: "This article shows that 35 years of empirical research on teacher expectations justifies the following conclusions: (a) Self-fulfilling prophecies in the classroom do occur, but these effects are typically small, they do not accumulate greatly across perceivers or over time, and they may be more likely to dissipate than accumulate"
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): đổi ví dụ của khung Khá vững. Ví dụ cũ (Loftus và Palmer, 1974) không mở được bài gốc và câu "chưa có tái lập lớn" chỉ có nguồn bậc 3 (blog Zwaan, 9/2025), trong khi có dấu hiệu một bản tái lập đang làm. Ví dụ mới khớp khung Khá vững của trang nhà (thi-nghiem/pygmalion ở site cũ: "kỳ vọng của giáo viên ảnh hưởng kết quả học sinh, nhưng hiệu ứng nhỏ và có điều kiện"). Chỉ một câu, không con số của nghiên cứu Rosenthal và Jacobson; link về trang nhà.'
+    ghi_chu: 'Người gom (Claude Opus 5.5, 30/10/2026): đổi ví dụ của khung Khá vững. Ví dụ cũ (Loftus và Palmer, 1974) không mở được bài gốc và câu "chưa có tái lập lớn" chỉ có nguồn bậc 3 (blog Zwaan, 9/2025), trong khi có dấu hiệu một bản tái lập đang làm. Ví dụ mới khớp khung Khá vững của trang nhà (thi-nghiem/pygmalion ở site cũ: "kỳ vọng của giáo viên ảnh hưởng kết quả học sinh, nhưng hiệu ứng nhỏ và có điều kiện"). Chỉ một câu, không con số của nghiên cứu Rosenthal và Jacobson; link về trang nhà. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Đọc tóm tắt Jussim và Harber (2005) qua Crossref (30/10/2026): "these effects are typically small, they do not accumulate greatly… and they may be more likely to dissipate than accumulate". Trang viết "thường nhỏ và hay phai đi hơn là tích tụ": "hay phai đi" thành khẳng định chắc, bài gốc chỉ nói "may be more likely". Phần còn lại đúng. Người gom (Claude Opus 5.5) sửa theo review: Tổng quan 35 năm nghiên cứu cho thấy hiệu ứng này có thật, nhưng thường nhỏ, không tích tụ nhiều theo thời gian, và có thể phai đi.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1207/s15327957pspr0902_3" ]
     luot_2_ghi_chu: "Jussim & Harber 2005: '35 years of empirical research' khớp từng ý."
+    review: sai
   - id: n15
     cau: 'Ví dụ "Khá vững": kỳ vọng của giáo viên ảnh hưởng tới kết quả của học sinh.'
     loai: nhan
@@ -187,10 +191,11 @@ nhan_dinh:
     vi_tri: Tóm tắt
     ly_do: "Nhiều nghiên cứu cùng chiều trong 35 năm (hiệu ứng có thật), nhưng hiệu ứng nhỏ, không tích tụ, và một phần liên hệ có thể do kỳ vọng chính xác chứ không phải tự ứng nghiệm: kết quả khác nhau theo điều kiện, nên Khá vững theo mục 4 (chưa đủ để Vững chắc, không phải Đang tranh cãi vì bằng chứng không mâu thuẫn về sự tồn tại của hiệu ứng)."
     ket_qua: da-sua
-    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): thay n16 cũ (nhãn của ví dụ Loftus và Palmer)."
+    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): thay n16 cũ (nhãn của ví dụ Loftus và Palmer). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Khá vững theo mục 4: nhiều nghiên cứu cùng chiều, hiệu ứng nhỏ, khác nhau theo điều kiện (Jussim và Harber 2005: mạnh hơn ở nhóm bị kỳ thị; một phần do kỳ vọng chính xác). Không phải Đang tranh cãi vì sự tồn tại của hiệu ứng không bị mâu thuẫn. Khớp khung Khá vững của trang nhà thi-nghiem/pygmalion ở site cũ."
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1207/s15327957pspr0902_3" ]
     luot_2_ghi_chu: "Nhãn Khá vững hợp: nhiều nghiên cứu cùng chiều, hiệu ứng nhỏ, chưa có tái lập lớn."
+    review: dung
   - id: n17
     cau: Thuyết "ý chí là nguồn lực có hạn, dùng nhiều sẽ cạn" (cạn kiệt ý chí).
     loai: dinh-nghia
@@ -211,10 +216,11 @@ nhan_dinh:
     trich: Multiple laboratories (k = 23, total N = 2,141) ... the size of the ego-depletion effect was small with 95% confidence intervals (CIs) that encompassed zero (d = 0.04, 95% CI [-0.07, 0.15]. | a preregistered multilaboratory project (k = 36; N = 3,531) ... Confirmatory tests found a nonsignificant result (d = 0.06).
     ket_qua: da-lam-mem
     vi_tri: Tóm tắt của cả hai bài
-    ghi_chu: 'Chữ cũ: "Hai dự án tái lập với 2.141 và 3.531 người cho hiệu ứng gần bằng 0, nhưng những người ủng hộ cho rằng cách thử nghiệm chưa phù hợp." Chữ mới bỏ vế sau (không mở được nguồn nào nói điều ấy: bài phản hồi Baumeister và Vohs 2016 chỉ thấy tiêu đề, không có tóm tắt) và thêm "lớn, đăng ký trước" (cả hai bài nói rõ).'
+    ghi_chu: 'Chữ cũ: "Hai dự án tái lập với 2.141 và 3.531 người cho hiệu ứng gần bằng 0, nhưng những người ủng hộ cho rằng cách thử nghiệm chưa phù hợp." Chữ mới bỏ vế sau (không mở được nguồn nào nói điều ấy: bài phản hồi Baumeister và Vohs 2016 chỉ thấy tiêu đề, không có tóm tắt) và thêm "lớn, đăng ký trước" (cả hai bài nói rõ). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Crossref (30/10/2026): Vohs 2021 "k = 36; N = 3,531… Confirmatory tests found a nonsignificant result (d = 0.06)"; Hagger 2016 N = 2.141, d = 0,04 (hai lượt). "Gần bằng 0" đúng cho phân tích xác nhận. Không có trang nhà trong nghien-cuu.yml nên con số được phép.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/1745691616652873", "https://doi.org/10.1177/0956797621989733" ]
     luot_2_ghi_chu: Cả hai đăng ký trước, khớp N. Gần 0 đúng cho phân tích xác nhận (d=0,04 và 0,06); phân tích thăm dò toàn mẫu của bài 2021 cho d=0,08 có ý nghĩa thống kê, trang có thể nhắc.
+    review: dung
   - id: n19
     cau: 'Ví dụ "Đang tranh cãi": hiệu ứng cạn kiệt ý chí.'
     loai: nhan
@@ -228,23 +234,25 @@ nhan_dinh:
     co_so:
       - hagger2016
       - vohs2021
-    ly_do: Hai tái lập lớn đăng ký trước (23 phòng thí nghiệm, 2.141 người; 36 phòng thí nghiệm, 3.531 người) không thấy hiệu ứng; theo thước đo mục 4 đó là "một tái lập lớn đăng ký trước thất bại", và hiệu ứng nhỏ hơn nhiều so với tuyên bố ban đầu (phân tích tổng hợp trước đó từng thấy cỡ trung bình). Chưa xếp "Đã bị bác bỏ" vì chưa có bằng chứng gốc rút bài hay gian lận, và các nguồn cho rằng tranh luận về phương pháp còn tiếp.
-    ghi_chu: 'chỗ khó: hai tái lập cùng chiều có thể đáng xếp "Đã bị bác bỏ" theo "các kiểm tra đủ mạnh liên tục thất bại". Site cũ và thẻ ngộ nhận (ngo-nhan.yml) dùng "Đang tranh cãi", giữ nhất quán; người gom/lượt 2 quyết. Vế "tranh luận còn tiếp" chưa có nguồn đã mở (xem n18).'
+    ly_do: 'Hai tái lập lớn đăng ký trước (23 phòng thí nghiệm, 2.141 người; 36 phòng thí nghiệm, 3.531 người) không thấy hiệu ứng; theo thước đo mục 4 đó là "một tái lập lớn đăng ký trước thất bại", và hiệu ứng nhỏ hơn nhiều so với tuyên bố ban đầu (phân tích tổng hợp trước đó từng thấy cỡ trung bình). Chưa xếp "Đã bị bác bỏ": trong tái lập năm 2021, phân tích thăm dò trên toàn mẫu cho hiệu ứng rất nhỏ (d = 0,08) có ý nghĩa thống kê, và phân tích Bayes cho hai giả thuyết gần như ngang nhau (Vohs và cộng sự, 2021, tóm tắt; theo review D2-L1).'
+    ghi_chu: 'chỗ khó: hai tái lập cùng chiều có thể đáng xếp "Đã bị bác bỏ" theo "các kiểm tra đủ mạnh liên tục thất bại". Site cũ và thẻ ngộ nhận (ngo-nhan.yml) dùng "Đang tranh cãi", giữ nhất quán; người gom/lượt 2 quyết. Vế "tranh luận còn tiếp" chưa có nguồn đã mở (xem n18). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Đang tranh cãi đạt mục 4 (tái lập lớn đăng ký trước thất bại; hiệu ứng nhỏ hơn nhiều so với ban đầu). Hai tái lập thất bại đã sát mức "Đã bị bác bỏ" (mục 4: kiểm tra đủ mạnh liên tục thất bại), nhưng tóm tắt Vohs 2021 có lý do để chưa bác bỏ: phân tích thăm dò toàn mẫu d = 0,08 có ý nghĩa, Bayes "about equally likely", hiệu ứng lớn hơn ở người mệt. Đề nghị sửa ly_do: thay vế "các nguồn cho rằng tranh luận về phương pháp còn tiếp" (chưa có nguồn) bằng ý này của Vohs 2021; nhất quán với ngo-nhan.yml.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/1745691616652873", "https://doi.org/10.1177/0956797621989733" ]
     luot_2_ghi_chu: "Nhãn Đang tranh cãi hợp: tái lập lớn đăng ký trước thất bại, còn phe ủng hộ phản biện (mục 4)."
+    review: dung
   - id: n20
     cau: 'Dạy học khớp với "phong cách học" (nhìn, nghe, vận động) không giúp học tốt hơn: bài tổng quan năm 2008 gần như không thấy bằng chứng ủng hộ.'
-    loai: tai-lap
+    loai: phat-hien
     nguon:
       - pashler2008
     trich: we found virtually no evidence for the interaction pattern mentioned above, which was judged to be a precondition for validating the educational applications of learning styles.
     ket_qua: da-sua
     vi_tri: Tóm tắt
-    ghi_chu: 'Chữ cũ: ví dụ chỉ nêu khẳng định, không có nguồn ở trang. Chữ mới thêm nguồn Pashler và cộng sự (2008): "gần như không thấy bằng chứng" cho kiểu tương tác cần có.'
+    ghi_chu: 'Chữ cũ: ví dụ chỉ nêu khẳng định, không có nguồn ở trang. Chữ mới thêm nguồn Pashler và cộng sự (2008): "gần như không thấy bằng chứng" cho kiểu tương tác cần có. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Pashler 2008: "virtually no evidence for the interaction pattern"; chữ trang "gần như không thấy bằng chứng ủng hộ" đúng. Loại nên là phat-hien (tổng quan, không phải tái lập), không đổi chữ.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1539-6053.2009.01038.x" ]
     luot_2_ghi_chu: Pashler và cộng sự 2008; đây là tổng quan, không phải tái lập (loại 'tai-lap' hơi lệch, nhưng nội dung đúng).
+    review: dung
   - id: n21
     cau: Tổng hợp 17 phân tích tổng hợp năm 2025 cho hiệu ứng gần bằng 0 (d = 0,04) ở các nghiên cứu kiểm tra đúng giả thuyết "dạy khớp phong cách học".
     loai: so-lieu
@@ -253,10 +261,11 @@ nhan_dinh:
     trich: Drawing on 17 meta-analyses, we distinguish between studies testing the matching hypothesis (effect size d = .04) and correlational studies (average correlation r = .24)
     ket_qua: da-sua
     vi_tri: Tóm tắt (Crossref)
-    ghi_chu: 'Thêm vào trang (trang cũ chưa có con số này; có trong thẻ ngộ nhận phong-cach-hoc). Nghiên cứu có trang nhà kham-pha/tri-nho/phong-cach-hoc: người gom xem có nên rút con số này về trang nhà (nơi khác chỉ một câu, không thêm số mới).'
+    ghi_chu: 'Thêm vào trang (trang cũ chưa có con số này; có trong thẻ ngộ nhận phong-cach-hoc). Nghiên cứu có trang nhà kham-pha/tri-nho/phong-cach-hoc: người gom xem có nên rút con số này về trang nhà (nơi khác chỉ một câu, không thêm số mới). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Crossref (30/10/2026): "Drawing on 17 meta-analyses… studies testing the matching hypothesis (effect size d = .04)". Hattie 2025 không có hồ sơ nghiên cứu trong nghien-cuu.yml nên con số không trái luật trang nhà; người gom có thể rút về trang nhà phong-cach-hoc khi bài ấy lên.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1007/s10648-025-10002-w" ]
     luot_2_ghi_chu: "Hattie & O'Leary 2025 (Educ Psychol Rev). Chú ý: đây là tổng quan dựa trên 17 phân tích tổng hợp, không phải một phân tích tổng hợp mới; câu 'tổng hợp 17 phân tích tổng hợp' vẫn đúng."
+    review: dung
   - id: n22
     cau: 'Ví dụ "Đã bị bác bỏ": giả thuyết dạy khớp phong cách học.'
     loai: nhan
@@ -271,10 +280,11 @@ nhan_dinh:
       - pashler2008
       - hattie2025
     ly_do: 'Các kiểm tra đủ mạnh liên tục thất bại: tổng quan năm 2008 (gần như không có bằng chứng ở thiết kế đúng) và 17 phân tích tổng hợp gộp lại (d = 0,04 ở nghiên cứu kiểm tra đúng giả thuyết). Khớp thước đo mục 4 (điều kiện thứ nhất). Không phải rút bài hay gian lận.'
-    ghi_chu: Nhất quán với thẻ ngộ nhận phong-cach-hoc (nhan bac-bo).
+    ghi_chu: 'Nhất quán với thẻ ngộ nhận phong-cach-hoc (nhan bac-bo). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Đã bị bác bỏ đạt điều kiện thứ nhất của mục 4 (Pashler 2008; Hattie 2025: "overwhelming evidence discrediting the matching hypothesis", d = 0,04). Có một phân tích tổng hợp 2024 (Clinton-Lisell và Litzinger, lượt 2 dẫn) thấy g = 0,31 nhưng tác giả vẫn kết luận lợi ích quá nhỏ và hiếm; không đủ để hạ xuống Đang tranh cãi ở trang ví dụ. Trang nhà kham-pha/tri-nho/phong-cach-hoc nên nhắc bài 2024 khi lên.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1539-6053.2009.01038.x", "https://doi.org/10.1007/s10648-025-10002-w", "https://doi.org/10.3389/fpsyg.2024.1428732" ]
     luot_2_ghi_chu: Nhãn Đã bị bác bỏ chấp nhận được, nhưng lưu ý một phân tích tổng hợp 2024 (Clinton-Lisell & Litzinger) thấy g = 0,31, dù tác giả vẫn kết luận lợi ích 'too small and too infrequent'; đề nghị trang nói rõ đây là phản biện đã biết.
+    review: dung
   - id: n23
     cau: Hiệu ứng nhỏ hơn nhiều so với tuyên bố ban đầu là một lý do để xếp vào "Đang tranh cãi".
     loai: nhan
@@ -289,10 +299,11 @@ nhan_dinh:
       - hagger2016
       - vohs2021
     ly_do: Đây là điều kiện thứ ba của "Đang tranh cãi" ở thước đo mục 4, nêu ở mục thứ 3 của "Nhãn được quyết định thế nào"; minh họa bằng hiệu ứng cạn kiệt ý chí.
-    ghi_chu: 'Chữ cũ: "Có ý nghĩa thống kê chưa chắc đã đáng kể trong đời sống." Bỏ: không có nguồn đọc được trong lượt này. Chữ mới bám thước đo. Câu nói về cách gắn nhãn của site nhưng kèm điều cần nguồn, nên giữ loại nhan có co_so; người gom có thể đổi sang ve-site.'
+    ghi_chu: 'Chữ cũ: "Có ý nghĩa thống kê chưa chắc đã đáng kể trong đời sống." Bỏ: không có nguồn đọc được trong lượt này. Chữ mới bám thước đo. Câu nói về cách gắn nhãn của site nhưng kèm điều cần nguồn, nên giữ loại nhan có co_so; người gom có thể đổi sang ve-site. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Câu chỉ nhắc lại điều kiện thứ ba của Đang tranh cãi ở mục 4; đúng. Thực chất là câu ve-site (không cần co_so), có thể đổi loại.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/0956797621989733" ]
     luot_2_ghi_chu: Khớp tiêu chí 'hiệu ứng nhỏ hơn nhiều tuyên bố ban đầu' trong thước đo mục 4.
+    review: dung
   - id: n24
     cau: Kết quả từ sinh viên Mỹ chưa chắc đúng với người Việt.
     loai: phat-hien
@@ -312,10 +323,11 @@ nhan_dinh:
     trich: In a discipline with low-powered research designs and an emphasis on positive results for publication, effect sizes will be systematically overestimated in the published literature. | Potentially problematic practices include selective reporting, selective analysis, and insufficient specification of the conditions necessary or sufficient to obtain the results
     ket_qua: da-sua
     vi_tri: Phần mở đầu và phần thảo luận (OSF)
-    ghi_chu: 'Chữ cũ: "Phần lớn các hiệu ứng không tái lập được là do mẫu nhỏ, phân tích linh hoạt, hoặc thiên lệch xuất bản". Chữ mới: "Nhiều... có thể liên quan tới..." Lý do: bài gốc nêu đây là thực hành "có thể" làm tăng dương tính giả, không nói "phần lớn" hay "là do".'
+    ghi_chu: 'Chữ cũ: "Phần lớn các hiệu ứng không tái lập được là do mẫu nhỏ, phân tích linh hoạt, hoặc thiên lệch xuất bản". Chữ mới: "Nhiều... có thể liên quan tới..." Lý do: bài gốc nêu đây là thực hành "có thể" làm tăng dương tính giả, không nói "phần lớn" hay "là do". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Chữ cuối "có thể liên quan tới… sức mạnh thống kê thấp, thiên lệch xuất bản, báo cáo và phân tích có chọn lọc" khớp câu trích OSC 2015 (low-powered designs, emphasis on positive results, selective reporting/analysis); không còn "phần lớn… là do".'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1126/science.aac4716" ]
     luot_2_ghi_chu: Ba nguyên nhân là lời giải thích chuẩn trong văn liệu tái lập; chỉ đọc tóm tắt OSC, câu dùng 'có thể liên quan' nên chấp nhận.
+    review: dung
   - id: n26
     cau: '"Đã bị bác bỏ" không có nghĩa là người đề xuất ban đầu thiếu trung thực.'
     loai: dinh-nghia
@@ -331,34 +343,35 @@ nhan_dinh:
     cau: Nhãn có thể thay đổi khi có bằng chứng mới; mỗi trang ghi nguồn, và trang Cập nhật ghi lại khi một nhãn được sửa.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'plans/ben-vung/them-noi-dung.md mục 5 (bổ sung đổi nhãn: tái lập mốc; "Thêm một dòng vào trang Cập nhật"); src/data/trang.yml có them/cap-nhat. Trang chưa lên: link "sắp có".'
-    review: null
+    ghi_chu: 'plans/ben-vung/them-noi-dung.md mục 5 (bổ sung đổi nhãn: tái lập mốc; "Thêm một dòng vào trang Cập nhật"); src/data/trang.yml có them/cap-nhat. Trang chưa lên: link "sắp có". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. them-noi-dung.md mục 5 (tái lập mốc ghi trang Cập nhật; bổ sung tự liệt kê ở trang Cập nhật); them/cap-nhat có trong trang.yml, hiện "sắp có".'
+    review: dung
   - id: n28
     cau: '"Vững chắc" vẫn có giới hạn: một hiệu ứng có thể chắc chắn tồn tại nhưng nhỏ, hoặc chỉ đúng trong những điều kiện nhất định; mỗi nhãn luôn đi kèm một câu giải thích.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: chuan-kiem-dinh.md mục 4 (nhãn nói về độ chắc chắn của bằng chứng, mỗi khung nhãn có ly_do trong hồ sơ). Hai vế là cách đọc nhãn của site, không số liệu.
-    review: null
+    ghi_chu: "chuan-kiem-dinh.md mục 4 (nhãn nói về độ chắc chắn của bằng chứng, mỗi khung nhãn có ly_do trong hồ sơ). Hai vế là cách đọc nhãn của site, không số liệu. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Cách đọc nhãn của site; mỗi khung nhãn có ý chính và thân khung (src/plugins/psyche-markdown.mjs đòi ý chính), hồ sơ có ly_do."
+    review: dung
   - id: n29
     cau: 'Khi gắn nhãn, Psyche xem xét bốn câu hỏi: có phân tích tổng hợp hay tổng quan hệ thống không; đã có ai làm lại chưa, nhất là các dự án lớn đăng ký trước; hiệu ứng lớn đến đâu; nghiên cứu được làm trên ai.'
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'Đối chiếu chuan-kiem-dinh.md mục 4: bốn câu hỏi khớp với bốn điều kiện của thước đo. Chữ cũ: "theo thứ tự ưu tiên": bỏ vì chuẩn không quy định thứ tự.'
-    review: null
+    ghi_chu: 'Đối chiếu chuan-kiem-dinh.md mục 4: bốn câu hỏi khớp với bốn điều kiện của thước đo. Chữ cũ: "theo thứ tự ưu tiên": bỏ vì chuẩn không quy định thứ tự. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Bốn câu hỏi trên trang ứng với các điều kiện của mục 4; trang không còn nói "theo thứ tự ưu tiên".'
+    review: dung
   - id: n30
-    cau: 'Link trong trang: Cập nhật, Hiệu ứng lớn hay nhỏ?, Đường cong quên, Trí nhớ có giống cuốn băng ghi hình?, Mỗi người có một "phong cách học"?.'
+    cau: 'Link trong trang: Đường cong quên, Thầy tin trò giỏi, trò có giỏi hơn?, Mỗi người có một "phong cách học"?, Hiệu ứng lớn hay nhỏ?, Cập nhật.'
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: Các đích đều có trong src/data/trang.yml (them/cap-nhat, bang-chung/do-lon-hieu-ung, kham-pha/tri-nho/duong-cong-quen, phong-cach-hoc, tri-nho/bang-ghi-hinh); trang chưa lên hiện "sắp có".
-    review: null
+    ket_qua: da-sua
+    ghi_chu: 'Các đích đều có trong src/data/trang.yml (them/cap-nhat, bang-chung/do-lon-hieu-ung, kham-pha/tri-nho/duong-cong-quen, phong-cach-hoc, tri-nho/bang-ghi-hinh); trang chưa lên hiện "sắp có". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Danh sách link trong hồ sơ đã cũ: trang hiện link Đường cong quên, Thầy tin trò giỏi, trò có giỏi hơn? (thi-nghiem/pygmalion, thêm khi đổi ví dụ Khá vững), Mỗi người có một "phong cách học"?, Hiệu ứng lớn hay nhỏ?, Cập nhật; không còn link "Trí nhớ có giống cuốn băng ghi hình?" (kham-pha/tri-nho/bang-ghi-hinh). Mọi đích có trong trang.yml; npm test (link.test) đạt. Người gom (Claude Opus 5.5) sửa theo review: Sửa câu của hồ sơ: "Link trong trang: Đường cong quên, Thầy tin trò giỏi, trò có giỏi hơn?, Mỗi người có một “phong cách học”?, Hiệu ứng lớn hay nhỏ?, Cập nhật." (trang không cần sửa)'
+    review: sai
   - id: n31
     cau: Những người ủng hộ thuyết cạn kiệt ý chí cho rằng cách thử nghiệm của các dự án tái lập chưa phù hợp.
     loai: lich-su
     ket_qua: da-bo
-    ghi_chu: 'Đã bỏ khỏi trang: không mở được nguồn nào nói điều ấy (bài phản hồi Baumeister và Vohs, 2016, chỉ thấy tiêu đề, không có tóm tắt).'
+    ghi_chu: 'Đã bỏ khỏi trang: không mở được nguồn nào nói điều ấy (bài phản hồi Baumeister và Vohs, 2016, chỉ thấy tiêu đề, không có tóm tắt). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Câu đã bỏ khỏi trang (kiểm trên src/content/docs/bat-dau/doc-nhan-chac-chan.md và dist). Bỏ là đúng vì không có nguồn mở được; lượt 2 chỉ xác nhận gián tiếp.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/0956797621989733" ]
     luot_2_ghi_chu: Baumeister & Vohs 2016 phản biện RRR; chưa mở bài đó, nhưng bài 2021 được thiết kế 'paradigmatic' để đáp lại phản biện về cách thử. Đọc tóm tắt, ghi nhận xác nhận gián tiếp.
+    review: dung
 doi_chu:
   - cu: Mỗi kết luận quan trọng trên Psyche Zero...; "Psyche Zero xem xét..."
     moi: '... trên Psyche ...; "Psyche xem xét..."'

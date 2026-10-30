@@ -9,8 +9,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D2-L1)
+      review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: null
 nguon:
   - id: os8-1
@@ -30,10 +30,11 @@ nhan_dinh:
     trich: Memory is the set of processes used to encode, store, and retrieve information over different periods of time
     ket_qua: da-sua
     vi_tri: Mục 8.1
-    ghi_chu: 'Chữ cũ: "Trí nhớ là khả năng mã hóa, lưu giữ và gợi lại thông tin." Chữ mới "tập hợp các quá trình" đúng chữ của OpenStax.'
+    ghi_chu: 'Chữ cũ: "Trí nhớ là khả năng mã hóa, lưu giữ và gợi lại thông tin." Chữ mới "tập hợp các quá trình" đúng chữ của OpenStax. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. OpenStax 8.1: "the set of processes used to encode, store, and retrieve information"; khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/8-1-how-memory-functions" ]
     luot_2_ghi_chu: "Khớp: mã hóa, lưu giữ, gợi lại là ba quá trình của mục 8.1."
+    review: dung
   - id: n2
     cau: Lĩnh vực trí nhớ nghiên cứu các loại trí nhớ, vì sao ta quên, và vì sao ký ức có thể sai.
     loai: dinh-nghia
@@ -51,8 +52,8 @@ nhan_dinh:
     cau: Đây là một trong 14 lĩnh vực của Psyche; mỗi bài dưới đây đã được kiểm chứng lại từ đầu, theo cách ghi ở trang Cách Psyche kiểm chứng, rồi khóa; bài chưa kiểm chứng xong chưa hiện ở đây, chỉ được đếm ở cuối danh sách.
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần.'
-    review: null
+    ghi_chu: 'src/data/linh-vuc.yml có 14 lĩnh vực; ::danh-sach-bai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (đã khóa) và ghi "Còn N bài sắp có"; link tới bat-dau/cach-kiem-chung có trong trang.yml. Mô tả (frontmatter) cùng khuôn: "Các bài của lĩnh vực X trên Psyche: mỗi bài một câu hỏi, kèm bằng chứng và mức độ chắc chắn." Chữ cũ "chưa hiện ở đây" thêm "chỉ được đếm ở cuối danh sách" cho khớp thành phần. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Đối chiếu 30/10/2026: src/data/linh-vuc.yml có 14 bản ghi; danhSachBai (src/plugins/thanh-phan.mjs) chỉ liệt kê bài có trong bản build (bản thật: trang đã khóa, src/ban-build.mjs) và in dòng "Còn/Có N bài sắp có" ở cuối; link /psyche/bat-dau/cach-kiem-chung/ có trong build. HTML bản xem (dist/nen-tang/tri-nho/) khớp.'
+    review: dung
 doi_chu:
   - cu: '...chưa hiện ở đây.'
     moi: '...chưa hiện ở đây, chỉ được đếm ở cuối danh sách.'

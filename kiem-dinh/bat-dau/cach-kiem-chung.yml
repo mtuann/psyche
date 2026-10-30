@@ -9,8 +9,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-L1)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D2-L1)
+      review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: null
 nguon: []
 nhan_dinh:
@@ -18,116 +18,116 @@ nhan_dinh:
     cau: 'Mỗi trang của Psyche trả lời một câu hỏi: bằng chứng nói gì, và chắc chắn đến đâu; một trang chỉ lên site sau khi đi qua các bước kiểm chứng.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'AGENTS.md (đầu sổ tay) và plans/lam-lai/README.md (luật 1: chỉ trang đã khóa lên site thật). Trang công cụ, Hỗ trợ không có dạng "một câu hỏi": câu nói chung cho nội dung chính.'
-    review: null
+    ghi_chu: 'AGENTS.md (đầu sổ tay) và plans/lam-lai/README.md (luật 1: chỉ trang đã khóa lên site thật). Trang công cụ, Hỗ trợ không có dạng "một câu hỏi": câu nói chung cho nội dung chính. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. AGENTS.md; plans/lam-lai/README.md luật 1; src/ban-build.mjs bỏ trang chưa khóa ở bản thật.'
+    review: dung
   - id: n2
     cau: Mọi câu có thể đúng hoặc sai (trong bài, bảng, khung nhãn, câu hỏi và lời giải thích, chữ trong hình, thông số của công cụ) đều được tách ra để kiểm.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, đoạn đầu: khớp từng loại chỗ.'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, đoạn đầu: khớp từng loại chỗ. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 1, đoạn đầu.'
+    review: dung
   - id: n3
     cau: 'Mỗi câu có loại riêng: phát hiện của nghiên cứu, con số, sự kiện lịch sử, định nghĩa, nhãn mức độ chắc chắn, lời khuyên, thông tin có thể đổi theo thời gian.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, bảng loại: các loại phat-hien, so-lieu, lich-su, dinh-nghia, nhan, loi-khuyen, thoi-su có đủ; trang liệt kê bảy trong mười một loại (còn tai-lap, lam-sang, cong-cu, ve-site), không sai vì không nói "chỉ".'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, bảng loại: các loại phat-hien, so-lieu, lich-su, dinh-nghia, nhan, loi-khuyen, thoi-su có đủ; trang liệt kê bảy trong mười một loại (còn tai-lap, lam-sang, cong-cu, ve-site), không sai vì không nói "chỉ". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 1, bảng loại: bảy loại nêu đều có; không nói "chỉ".'
+    review: dung
   - id: n4
     cau: Lời khuyên cũng là khẳng định về bằng chứng, nên cũng phải có nguồn như mọi câu khác.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, "Khác opus: không có loại lời khuyên được miễn nguồn".'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1, "Khác opus: không có loại lời khuyên được miễn nguồn". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 1 ("không có loại lời khuyên được miễn nguồn").'
+    review: dung
   - id: n5
     cau: 'Nguồn xếp ba bậc: nguồn gốc (bài báo của nghiên cứu được kể, báo cáo tái lập, tài liệu lưu trữ); tổng hợp và chuẩn (phân tích tổng hợp, tổng quan hệ thống, dự án tái lập lớn, hướng dẫn lâm sàng, sổ tay chẩn đoán, từ điển APA, giáo trình mở có bình duyệt); phổ thông (Wikipedia, báo, sách đại chúng) chỉ để tìm nguồn tốt hơn, không bao giờ là nguồn duy nhất.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 2: ba bậc khớp. "Bậc 3 không dùng làm nguồn duy nhất cho nhận định nào" khớp "không bao giờ".'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 2: ba bậc khớp. "Bậc 3 không dùng làm nguồn duy nhất cho nhận định nào" khớp "không bao giờ". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 2, ba bậc khớp.'
+    review: dung
   - id: n6
     cau: Câu nói một nghiên cứu đã làm gì và thấy gì thì dựa vào bài gốc; câu nói về tình trạng bằng chứng hiện nay thì dựa vào các tổng hợp.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 2, hai gạch đầu dòng đầu.
-    review: null
+    ghi_chu: "plans/ben-vung/chuan-kiem-dinh.md mục 2, hai gạch đầu dòng đầu. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 2, hai gạch đầu."
+    review: dung
   - id: n7
     cau: 'Lượt 1: bên làm lượt đầu mở nguồn, chép câu trích làm căn cứ, sửa câu sai, làm mềm câu nói mạnh hơn bằng chứng, bỏ câu không kiểm được.'
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 1 và mục 6 (kết quả da-sua, da-lam-mem, da-bo). Chữ cũ "người làm" đổi "bên làm lượt đầu" vì lượt 1 do agent làm (xem ghi chú cuối).
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 1 và mục 6 (kết quả da-sua, da-lam-mem, da-bo). Chữ cũ "người làm" đổi "bên làm lượt đầu" vì lượt 1 do agent làm (xem ghi chú cuối). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 3 bước 1; mục 6 (da-sua, da-lam-mem, da-bo).'
+    review: dung
   - id: n8
     cau: 'Lượt 2: một lượt độc lập khác kiểm lại, không xem nguồn hay kết luận của lượt 1, tự tìm nguồn và cho kết quả riêng.'
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 2. Chữ cũ "một người khác".
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 2. Chữ cũ "một người khác". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 3 bước 2; tools/khoa.mjs xuat bỏ nguồn, kết luận lượt 1.'
+    review: dung
   - id: n9
     cau: Chỗ hai lượt cho kết quả khác nhau được một lượt review xét lại, rồi chủ site xem ngẫu nhiên vài khẳng định của mỗi lô.
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 3 (review) và bước 4 (chủ repo kiểm mẫu, khoảng 5 nhận định mỗi lô). Chữ cũ "người review", "một người nữa".
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 3, bước 3 (review) và bước 4 (chủ repo kiểm mẫu, khoảng 5 nhận định mỗi lô). Chữ cũ "người review", "một người nữa". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 3 bước 3, 4 (review; chủ repo kiểm mẫu, xuat --mau 5).'
+    review: dung
   - id: n10
-    cau: Bài nền tảng được kiểm đủ cả hai lượt; bài mở rộng được kiểm đủ ở lượt 1, lượt 2 kiểm một mẫu ngẫu nhiên, cộng mọi nhãn và mọi điều về lâm sàng, và có hạn xem lại; bài về sức khỏe tâm thần chỉ lên site sau khi người có chuyên môn đọc lại; trang chỉ có danh sách sinh từ dữ liệu đã khóa hay chỉ có câu về chính site được kiểm theo mức nhẹ hơn.
+    cau: Bài mang viên Nền tảng (ở phía trên tiêu đề) được kiểm đủ cả hai lượt; bài mang viên Mở rộng được kiểm đủ ở lượt 1, lượt 2 kiểm một mẫu ngẫu nhiên cộng mọi nhãn và mọi điều về lâm sàng, và có hạn xem lại.
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 3 (bảng mức theo tầng: lõi, mở rộng, khung; "kiem_lai_truoc 12–18 tháng") và mục 5 (chữ ký chuyên gia). Chữ thêm "trang chỉ có danh sách..." theo hàng "Khung".'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 3 (bảng mức theo tầng: lõi, mở rộng, khung; "kiem_lai_truoc 12–18 tháng") và mục 5 (chữ ký chuyên gia). Chữ thêm "trang chỉ có danh sách..." theo hàng "Khung". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Mức theo tầng khớp chuan-kiem-dinh.md mục 3, nhưng "Bài thuộc phần Nền tảng" dễ hiểu là nhóm "Nền tảng" của menu (src/menu.mjs: mọi bài kham-pha/ và nen-tang/), trong khi nhóm ấy có 12 bài tầng mo-rong (src/data/trang.yml), còn thi-nghiem/ (15 bài) và bang-chung/ (12 bài) tầng loi lại nằm ở nhóm menu khác. Viên tầng phía trên tiêu đề (src/components/PageTitle.astro) mới là chỗ chữ "Nền tảng"/"Mở rộng" khớp tầng. Người gom (Claude Opus 5.5) sửa theo review: Bài mang viên **Nền tảng** (ở phía trên tiêu đề) được kiểm đủ cả hai lượt. Bài mang viên **Mở rộng** được kiểm đủ ở lượt 1; …(giữ phần sau như cũ).'
+    review: sai
   - id: n11
     cau: Nhãn xếp theo một thước đo chung, ghi ở trang Cách đọc nhãn mức độ chắc chắn; mỗi nhãn có hồ sơ ghi các nguồn làm căn cứ và lý do đạt mức ấy.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 4 và 6 (co_so, ly_do); trang bat-dau/doc-nhan-chac-chan đã thêm thước đo ở lô này.
-    review: null
+    ghi_chu: "plans/ben-vung/chuan-kiem-dinh.md mục 4 và 6 (co_so, ly_do); trang bat-dau/doc-nhan-chac-chan đã thêm thước đo ở lô này. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 4, 6 (co_so, ly_do); link tới doc-nhan-chac-chan đúng."
+    review: dung
   - id: n12
     cau: Mỗi trang có một hồ sơ kiểm định (từng khẳng định, nguồn, câu trích, kết quả hai lượt, chỗ đã sửa và lý do); khi hồ sơ đủ, trang được khóa bằng dấu vân tay, và bản đăng lên site chỉ gồm trang đã khóa.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: plans/ben-vung/chuan-kiem-dinh.md mục 6, 7 ("dấu vân tay" là mã băm SHA-256 trong kiem-dinh/khoa.json; build thật chỉ đưa trang có trong khoa.json).
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 6, 7 ("dấu vân tay" là mã băm SHA-256 trong kiem-dinh/khoa.json; build thật chỉ đưa trang có trong khoa.json). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 6, 7; src/khoa.mjs (SHA-256), kiem-dinh/khoa.json, src/ban-build.mjs.'
+    review: dung
   - id: n13
     cau: Sửa một chữ của trang đã khóa thì site không dựng được, cho đến khi trang được mở khóa có lý do và kiểm lại phần bị sửa.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 7 (mã băm cả file; lệch thì build hỏng) và mục 8 (mở khóa, kiểm chỉ nhận định bị chạm). Lưu ý: khoảng trắng cuối dòng và kiểu xuống dòng được chuẩn hóa nên không tính là "chữ".'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 7 (mã băm cả file; lệch thì build hỏng) và mục 8 (mở khóa, kiểm chỉ nhận định bị chạm). Lưu ý: khoảng trắng cuối dòng và kiểu xuống dòng được chuẩn hóa nên không tính là "chữ". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 7, 8; AGENTS.md (trang đã khóa đổi thì build hỏng, cả hai bản). Khoảng trắng cuối dòng không tính, nhưng trang cấm khoảng trắng cuối dòng nên câu vẫn đúng.'
+    review: dung
   - id: n14
     cau: Thông tin có thể đổi theo thời gian (số liệu mới nhất, số điện thoại hỗ trợ, "chưa tìm thấy nghiên cứu ở Việt Nam") được viết kèm mốc thời gian và có hạn kiểm lại trong hồ sơ.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1 (loại thoi-su: viết kèm mốc, có het_han) và AGENTS.md (Quy tắc nội dung).'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 1 (loại thoi-su: viết kèm mốc, có het_han) và AGENTS.md (Quy tắc nội dung). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. chuan-kiem-dinh.md mục 1 (thoi-su: mốc, het_han); tools/khoa.mjs đòi het_han chưa tới hạn khi khóa.'
+    review: dung
   - id: n15
-    cau: 'Nghiên cứu mới không sửa lặng lẽ bài cũ: chúng được thêm thành bổ sung có ngày vào đúng mục của bài.'
+    cau: 'Nghiên cứu mới không sửa lặng lẽ bài cũ: chúng được thêm thành bổ sung có ngày đi kèm bài, còn chữ của bài giữ nguyên.'
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'plans/ben-vung/them-noi-dung.md mục 5: bổ sung hiện thành khung "Cập nhật tháng MM/YYYY" ở cuối mục tương ứng của bài lõi. Chữ cũ "ở cuối bài" đổi "vào đúng mục của bài".'
-    review: null
+    ghi_chu: 'plans/ben-vung/them-noi-dung.md mục 5: bổ sung hiện thành khung "Cập nhật tháng MM/YYYY" ở cuối mục tương ứng của bài lõi. Chữ cũ "ở cuối bài" đổi "vào đúng mục của bài". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. plans/ben-vung/them-noi-dung.md mục 5 nói bổ sung hiện "ở cuối mục tương ứng", nhưng cách làm hiện có (src/content/bo-sung/README.txt, AGENTS.md) đặt mọi bổ sung vào một mục "Bổ sung" ở cuối trang, và chưa có khóa riêng (đợt 9). Câu "vào đúng mục của bài" chưa đúng với site. Người gom (Claude Opus 5.5) sửa theo review: Nghiên cứu mới không sửa lặng lẽ bài cũ: chúng được thêm thành **bổ sung có ngày** đi kèm bài, còn chữ của bài giữ nguyên.'
+    review: sai
   - id: n16
-    cau: Một bài chỉ được mở khóa khi có lỗi được báo, khi nguồn thay đổi (bài bị rút hay đính chính), khi bằng chứng mới có thể làm đổi nhãn hay kết luận, hay khi cả site đổi cách trình bày.
+    cau: Một bài chỉ được mở khóa khi có lỗi được báo, khi nguồn thay đổi (bài bị rút hay đính chính, link nguồn chết), khi bằng chứng mới có thể làm đổi nhãn hay kết luận hay bài đã tích nhiều bổ sung, hay khi có thay đổi cơ học trên nhiều trang (như đổi tên nhãn, sửa định dạng).
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 8, bốn trường hợp (lỗi được báo; nguồn thay đổi; tái lập mốc: bổ sung có anh_huong_nhan, hay từ 3 bổ sung; thay đổi cơ học). Chữ cũ: "khi bằng chứng mới làm đổi nhãn".'
-    review: null
+    ghi_chu: 'plans/ben-vung/chuan-kiem-dinh.md mục 8, bốn trường hợp (lỗi được báo; nguồn thay đổi; tái lập mốc: bổ sung có anh_huong_nhan, hay từ 3 bổ sung; thay đổi cơ học). Chữ cũ: "khi bằng chứng mới làm đổi nhãn". Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. chuan-kiem-dinh.md mục 8 có bốn trường hợp; câu "chỉ được mở khóa khi…" thiếu trường hợp bài đã tích từ 3 bổ sung (tái lập mốc) và link nguồn chết (trường hợp 2), còn "cả site đổi cách trình bày" rộng hơn "thay đổi cơ học trên nhiều trang". Câu có chữ "chỉ" nên danh sách phải đủ. Người gom (Claude Opus 5.5) sửa theo review: Một bài chỉ được mở khóa khi có lỗi được báo, khi nguồn thay đổi (bài bị rút hay đính chính, link nguồn chết), khi bằng chứng mới có thể làm đổi nhãn hay kết luận hay bài đã tích nhiều bổ sung, hay khi có thay đổi cơ học trên nhiều trang (như đổi tên nhãn, sửa định dạng).'
+    review: sai
   - id: n17
     cau: Mỗi nghiên cứu kinh điển có một trang nhà kể chi tiết; nơi khác chỉ tóm một câu và dẫn về đó.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'AGENTS.md, Quy tắc nội dung: "Mỗi nghiên cứu một trang nhà"; src/data/nghien-cuu.yml (trang_nha).'
-    review: null
+    ghi_chu: 'AGENTS.md, Quy tắc nội dung: "Mỗi nghiên cứu một trang nhà"; src/data/nghien-cuu.yml (trang_nha). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. AGENTS.md (mỗi nghiên cứu một trang nhà); src/data/nghien-cuu.yml (trang_nha).'
+    review: dung
   - id: n18
     cau: Psyche mang tính giáo dục, không thay thế chẩn đoán hay điều trị chuyên môn; nếu bạn đang gặp khó khăn, hãy xem trang Hỗ trợ.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: AGENTS.md (không có công cụ tự chẩn đoán; không viết như chẩn đoán hay lời khuyên điều trị; chân trang có lời nhắc Hỗ trợ) và src/content/docs/ho-tro/index.md có trong site.
-    review: null
+    ghi_chu: "AGENTS.md (không có công cụ tự chẩn đoán; không viết như chẩn đoán hay lời khuyên điều trị; chân trang có lời nhắc Hỗ trợ) và src/content/docs/ho-tro/index.md có trong site. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. AGENTS.md; src/components/Footer.astro cùng ý; link /psyche/ho-tro/ có trong build."
+    review: dung
   - id: n19
-    cau: Hiện nay, lượt 1, lượt 2 và lượt review do mô hình AI (Claude) làm theo đúng quy trình này, mỗi lượt là một phiên làm việc riêng không thấy kết quả của lượt kia; chủ site đọc kiểm mẫu, quyết các chỗ khó và chịu trách nhiệm về nội dung.
+    cau: Hiện nay, lượt 1, lượt 2 và lượt review do mô hình AI (Claude) làm theo đúng quy trình này, mỗi lượt là một phiên làm việc riêng; lượt 2 không thấy nguồn và kết luận của lượt 1. Chủ site đọc kiểm mẫu, quyết các chỗ khó và chịu trách nhiệm về nội dung.
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): thêm để nói rõ ai làm các lượt (người đọc cần biết); khớp plans/lam-lai/loi-giao/README.md (model cho từng lượt) và các báo cáo lô."
-    review: null
+    ket_qua: da-sua
+    ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): thêm để nói rõ ai làm các lượt (người đọc cần biết); khớp plans/lam-lai/loi-giao/README.md (model cho từng lượt) và các báo cáo lô. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Vế \"mỗi lượt là một phiên làm việc riêng không thấy kết quả của lượt kia\" sai với lượt review: theo chuan-kiem-dinh.md mục 3 bước 3, review phải xem cả hai lượt (chỉ xét chỗ hai lượt lệch, chỗ đã sửa); chính lời giao review này đưa cả hai lượt. Chỉ lượt 2 là không thấy nguồn và kết luận của lượt 1. Ngoài ra hồ sơ D2-L1 ghi một bước \"người gom\" (Claude) sửa chữ sau lượt 2, trang không nhắc. Người gom (Claude Opus 5.5) sửa theo review: Hiện nay, lượt 1, lượt 2 và lượt review do mô hình AI (Claude) làm theo đúng quy trình này, mỗi lượt là một phiên làm việc riêng; lượt 2 không thấy nguồn và kết luận của lượt 1. Chủ site đọc kiểm mẫu, quyết các chỗ khó và chịu trách nhiệm về nội dung."
+    review: sai
 doi_chu:
   - cu: 'Mô tả: "...sau khi từng khẳng định được đối chiếu với nguồn qua hai lượt..."'
     moi: '"...sau khi các khẳng định được đối chiếu với nguồn (bài nền tảng qua hai lượt độc lập)..."'
