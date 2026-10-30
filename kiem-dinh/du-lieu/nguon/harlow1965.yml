@@ -2,64 +2,74 @@
 ban_ghi: nguon/harlow1965
 muc: V1
 lan:
-- so: 1
-  ngay: null
-  nhanh: moi/d2-0-du-lieu
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
-- id: crossref
-  ten: Bản ghi Crossref của DOI 10.1073/pnas.54.1.90
-  link: https://api.crossref.org/works/10.1073%2Fpnas.54.1.90
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1073/pnas.54.1.90
+    link: https://api.crossref.org/works/10.1073%2Fpnas.54.1.90
 nhan_dinh:
-- id: n1
-  cau: 'Tác giả: Harlow, H. F., Dodsworth, R. O., & Harlow, M. K.'
-  loai: lich-su
-  truong:
-  - tac_gia
-  nguon:
-  - crossref
-  trich: Harlow, H F; Dodsworth, R O; Harlow, M K
-  ket_qua: dung
-- id: n2
-  cau: 'Năm xuất bản: 1965'
-  loai: lich-su
-  truong:
-  - nam
-  nguon:
-  - crossref
-  trich: 'năm in hay xuất bản: 1965; ngày Crossref ghi: [1965, 7]'
-  ket_qua: dung
-- id: n3
-  cau: 'Tên: Total social isolation in monkeys'
-  loai: lich-su
-  truong:
-  - ten
-  nguon:
-  - crossref
-  trich: Total social isolation in monkeys.
-  ket_qua: dung
-- id: n4
-  cau: 'Nơi đăng: Proceedings of the National Academy of Sciences, 54(1), 90–97'
-  loai: lich-su
-  truong:
-  - noi_dang
-  nguon:
-  - crossref
-  trich: Proceedings of the National Academy of Sciences, tập 54, số 1, trang 90-97
-  ket_qua: dung
-- id: n5
-  cau: DOI 10.1073/pnas.54.1.90 trỏ tới tài liệu này, một bài báo
-  loai: lich-su
-  truong:
-  - doi
-  - loai
-  nguon:
-  - crossref
-  trich: 'loại theo Crossref: journal-article'
-  ket_qua: da-sua
-  ghi_chu: 'cũ: nguon.yml không ghi DOI; mới: doi 10.1073/pnas.54.1.90; lý do: Crossref cho bài đúng tác giả, tên, tập, trang này (tìm theo tên và nơi đăng, đối chiếu từng trường ở n1–n4).'
+  - id: n1
+    cau: 'Tác giả: Harlow, H. F., Dodsworth, R. O., & Harlow, M. K.'
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Harlow, H F; Dodsworth, R O; Harlow, M K
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1073/pnas.54.1.90" ]
+  - id: n2
+    cau: 'Năm xuất bản: 1965'
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: 'năm in hay xuất bản: 1965; ngày Crossref ghi: [1965, 7]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1073/pnas.54.1.90" ]
+  - id: n3
+    cau: 'Tên: Total social isolation in monkeys'
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Total social isolation in monkeys.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1073/pnas.54.1.90" ]
+  - id: n4
+    cau: 'Nơi đăng: Proceedings of the National Academy of Sciences, 54(1), 90–97'
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Proceedings of the National Academy of Sciences, tập 54, số 1, trang 90-97
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1073/pnas.54.1.90" ]
+  - id: n5
+    cau: DOI 10.1073/pnas.54.1.90 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: 'loại theo Crossref: journal-article'
+    ket_qua: da-sua
+    ghi_chu: 'cũ: nguon.yml không ghi DOI; mới: doi 10.1073/pnas.54.1.90; lý do: Crossref cho bài đúng tác giả, tên, tập, trang này (tìm theo tên và nơi đăng, đối chiếu từng trường ở n1–n4).'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1073/pnas.54.1.90" ]

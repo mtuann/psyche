@@ -2,65 +2,75 @@
 ban_ghi: nguon/mischel1972
 muc: V1
 lan:
-- so: 1
-  ngay: null
-  nhanh: moi/d2-0-du-lieu
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: null
+    nhanh: moi/d2-0-du-lieu
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D2-0)
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
-- id: crossref
-  ten: Bản ghi Crossref của DOI 10.1037/h0032198
-  link: https://api.crossref.org/works/10.1037%2Fh0032198
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/h0032198
+    link: https://api.crossref.org/works/10.1037%2Fh0032198
 nhan_dinh:
-- id: n1
-  cau: 'Tác giả: Mischel, W., Ebbesen, E. B., & Zeiss, A. R.'
-  loai: lich-su
-  truong:
-  - tac_gia
-  nguon:
-  - crossref
-  trich: Mischel, Walter; Ebbesen, Ebbe B.; Raskoff Zeiss, Antonette
-  ket_qua: dung
-  ghi_chu: Crossref ghi tác giả thứ ba là "Raskoff Zeiss, Antonette" (họ kép); dữ liệu ghi "Zeiss, A. R." (Antonette R. Zeiss), cùng người, cách viết thường dùng.
-- id: n2
-  cau: 'Năm xuất bản: 1972'
-  loai: lich-su
-  truong:
-  - nam
-  nguon:
-  - crossref
-  trich: 'năm in hay xuất bản: 1972; ngày Crossref ghi: [1972]'
-  ket_qua: dung
-- id: n3
-  cau: 'Tên: Cognitive and attentional mechanisms in delay of gratification'
-  loai: lich-su
-  truong:
-  - ten
-  nguon:
-  - crossref
-  trich: Cognitive and attentional mechanisms in delay of gratification.
-  ket_qua: dung
-- id: n4
-  cau: 'Nơi đăng: Journal of Personality and Social Psychology, 21(2), 204–218'
-  loai: lich-su
-  truong:
-  - noi_dang
-  nguon:
-  - crossref
-  trich: Journal of Personality and Social Psychology, tập 21, số 2, trang 204-218
-  ket_qua: dung
-- id: n5
-  cau: DOI 10.1037/h0032198 trỏ tới tài liệu này, một bài báo
-  loai: lich-su
-  truong:
-  - doi
-  - loai
-  nguon:
-  - crossref
-  trich: 'loại theo Crossref: journal-article'
-  ket_qua: da-sua
-  ghi_chu: 'cũ: nguon.yml không ghi DOI; mới: doi 10.1037/h0032198; lý do: Crossref cho bài đúng tác giả, tên, tập, trang này (tìm theo tên và nơi đăng, đối chiếu từng trường ở n1–n4).'
+  - id: n1
+    cau: 'Tác giả: Mischel, W., Ebbesen, E. B., & Zeiss, A. R.'
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Mischel, Walter; Ebbesen, Ebbe B.; Raskoff Zeiss, Antonette
+    ket_qua: dung
+    ghi_chu: Crossref ghi tác giả thứ ba là "Raskoff Zeiss, Antonette" (họ kép); dữ liệu ghi "Zeiss, A. R." (Antonette R. Zeiss), cùng người, cách viết thường dùng.
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+  - id: n2
+    cau: 'Năm xuất bản: 1972'
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: 'năm in hay xuất bản: 1972; ngày Crossref ghi: [1972]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+  - id: n3
+    cau: 'Tên: Cognitive and attentional mechanisms in delay of gratification'
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Cognitive and attentional mechanisms in delay of gratification.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+  - id: n4
+    cau: 'Nơi đăng: Journal of Personality and Social Psychology, 21(2), 204–218'
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Personality and Social Psychology, tập 21, số 2, trang 204-218
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
+  - id: n5
+    cau: DOI 10.1037/h0032198 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: 'loại theo Crossref: journal-article'
+    ket_qua: da-sua
+    ghi_chu: 'cũ: nguon.yml không ghi DOI; mới: doi 10.1037/h0032198; lý do: Crossref cho bài đúng tác giả, tên, tập, trang này (tìm theo tên và nơi đăng, đối chiếu từng trường ở n1–n4).'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/h0032198" ]
