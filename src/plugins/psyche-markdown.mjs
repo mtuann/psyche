@@ -146,6 +146,7 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 		const trang = path.relative(docsDir, file).replace(/\\/g, '/').replace(/\.mdx?$/, '');
 		const loi = (msg) => new Error(`${file ? path.relative(process.cwd(), file) : '(chữ)'}: ${msg}`);
 		let soBang = 0;
+		let soKhoi = 0;
 		return {
 			name: 'psyche-markdown',
 			// bảng rộng cuộn ngang trên màn hình hẹp: bọc trong vùng nhận focus để người dùng bàn phím cuộn được (axe
@@ -157,6 +158,13 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				return khoi('div', { className: ['pz-bang'], tabIndex: 0, role: 'region', ariaLabel: `Bảng ${++soBang}, cuộn ngang được` }, [bang]);
 			},
 			code(node) {
+				// khối chữ không ghi ngôn ngữ (hình vẽ bằng chữ, như forest plot ở bang-chung/phan-tich-tong-hop): không qua
+				// Expressive Code, vì nó gắn role="region" không tên cho khối cuộn ngang (axe landmark-unique khi trang có hai
+				// khối) và nút chép 40 px; bọc như bảng, mỗi khối một tên riêng (D4-L2)
+				if (!node.lang || node.lang === 'text' || node.lang === 'plaintext') {
+					const thoat = String(node.value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+					return { type: 'html', value: `<div class="pz-bang pz-khoi-chu" tabindex="0" role="region" aria-label="Khối chữ ${++soKhoi}, cuộn ngang được"><pre>${thoat}</pre></div>` };
+				}
 				if (node.lang !== 'quiz') return;
 				try {
 					return { type: 'html', value: quiz(node.value) };

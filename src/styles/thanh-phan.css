@@ -787,3 +787,17 @@
 		column-gap: 1.5rem;
 	}
 }
+
+/* Khối chữ không ghi ngôn ngữ (hình vẽ bằng chữ), src/plugins/psyche-markdown.mjs: chữ đều cột, cuộn ngang trong vùng .pz-bang */
+.sl-markdown-content .pz-khoi-chu > pre {
+	margin: 0;
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 0.5rem;
+	background: var(--pz-card);
+	color: var(--sl-color-white);
+	font-family: var(--sl-font-mono, ui-monospace, monospace);
+	font-size: var(--sl-text-sm);
+	line-height: 1.5;
+	white-space: pre;
+}

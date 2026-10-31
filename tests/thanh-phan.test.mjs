@@ -152,6 +152,15 @@ test('tóm tắt đầu bài (từ các khung nhãn của trang) và hồ sơ ng
 	assert.match(dung(':::ho-so-nghien-cuu[Hồ sơ: Asch]\n- **Năm** 1951\n:::'), /aria-label="Hồ sơ: Asch"/);
 });
 
+test('khối chữ không ghi ngôn ngữ: vùng cuộn nhận focus, có tên riêng, chữ được thoát; khối có ngôn ngữ để Expressive Code', () => {
+	const html = dung('```\nA <b> & ─●─\n```\n\nĐoạn.\n\n```text\nB\n```\n\n```js\nlet x = 1;\n```');
+	const vung = html.match(/<div class="pz-bang pz-khoi-chu" tabindex="0" role="region" aria-label="Khối chữ \d, cuộn ngang được"><pre>/g) ?? [];
+	assert.equal(vung.length, 2);
+	assert.match(html, /<pre>A &lt;b&gt; &amp; ─●─<\/pre>/);
+	assert.match(html, /aria-label="Khối chữ 1, [\s\S]*aria-label="Khối chữ 2, /);
+	assert.doesNotMatch(html, /pz-khoi-chu[^>]*><pre>let x/, 'khối js không bị bọc');
+});
+
 test('bảng: bọc trong vùng cuộn nhận focus, mỗi vùng một tên riêng trong trang', () => {
 	const html = dung('| a | b |\n|---|---|\n| 1 | :nhan[vung-chac] |\n\nĐoạn.\n\n| c |\n|---|\n| 3 |');
 	assert.match(html, /<td><span class="pz-tag pz-tag--vung-chac">Vững chắc<\/span><\/td>/, 'chip nhãn trong ô bảng');
