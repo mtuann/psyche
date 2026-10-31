@@ -154,11 +154,13 @@ test('tóm tắt đầu bài (từ các khung nhãn của trang) và hồ sơ ng
 
 test('khối chữ không ghi ngôn ngữ: vùng cuộn nhận focus, có tên riêng, chữ được thoát; khối có ngôn ngữ để Expressive Code', () => {
 	const html = dung('```\nA <b> & ─●─\n```\n\nĐoạn.\n\n```text\nB\n```\n\n```js\nlet x = 1;\n```');
-	const vung = html.match(/<div class="pz-bang pz-khoi-chu" tabindex="0" role="region" aria-label="Khối chữ \d, cuộn ngang được"><pre>/g) ?? [];
+	const vung = html.match(/<div class="pz-bang pz-khoi-chu" tabindex="0" role="region" aria-label="Khối chữ \d, cuộn ngang được"><pre>\n/g) ?? [];
 	assert.equal(vung.length, 2);
-	assert.match(html, /<pre>A &lt;b&gt; &amp; ─●─<\/pre>/);
+	assert.match(html, /<pre>\nA &lt;b&gt; &amp; ─●─<\/pre>/);
+	// trình duyệt bỏ đúng một dòng mới ngay sau <pre>: khối bắt đầu bằng dòng trống vẫn giữ dòng ấy
+	assert.match(dung('```\n\nX\n```'), /<pre>\n\nX<\/pre>/);
 	assert.match(html, /aria-label="Khối chữ 1, [\s\S]*aria-label="Khối chữ 2, /);
-	assert.doesNotMatch(html, /pz-khoi-chu[^>]*><pre>let x/, 'khối js không bị bọc');
+	assert.doesNotMatch(html, /pz-khoi-chu[^>]*><pre>\nlet x/, 'khối js không bị bọc');
 });
 
 test('bảng: bọc trong vùng cuộn nhận focus, mỗi vùng một tên riêng trong trang', () => {

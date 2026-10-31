@@ -163,7 +163,7 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				// khối) và nút chép 40 px; bọc như bảng, mỗi khối một tên riêng (D4-L2)
 				if (!node.lang || node.lang === 'text' || node.lang === 'plaintext') {
 					const thoat = String(node.value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-					return { type: 'html', value: `<div class="pz-bang pz-khoi-chu" tabindex="0" role="region" aria-label="Khối chữ ${++soKhoi}, cuộn ngang được"><pre>${thoat}</pre></div>` };
+					return { type: 'html', value: `<div class="pz-bang pz-khoi-chu" tabindex="0" role="region" aria-label="Khối chữ ${++soKhoi}, cuộn ngang được"><pre>\n${thoat}</pre></div>` };
 				}
 				if (node.lang !== 'quiz') return;
 				try {
