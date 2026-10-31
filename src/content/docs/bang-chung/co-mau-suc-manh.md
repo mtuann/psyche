@@ -59,12 +59,12 @@ Lakens (2022) cảnh báo không nên dùng các mốc nhỏ, trung bình, lớn
 Trở lại với Button và cộng sự (2013). Nhóm tác giả lấy dữ liệu từ 49 bài phân tích tổng hợp trong khoa học thần kinh (gồm 730 nghiên cứu riêng lẻ) và ước tính công suất của nghiên cứu có cỡ trung vị trong mỗi bài tổng hợp. Kết quả:
 
 - **Công suất trung vị của toàn lĩnh vực khoảng 21%**, thấp hơn nhiều so với quy ước 0,8 (chỉ bằng khoảng một phần tư).
-- Tóm tắt của bài ước tính công suất trung vị của các nghiên cứu thần kinh học nằm **giữa khoảng 8% và 31%**.
+- Phần bàn luận của bài ước tính công suất trung bình của các nghiên cứu thần kinh học có lẽ **không quá khoảng 8% đến 31%**.
 - Nghiên cứu cấu trúc não bằng hình ảnh (so sánh nhóm bệnh với nhóm đối chứng): công suất trung vị chỉ **8%**.
 - Hai bài tổng hợp về nghiên cứu trên động vật cho **18%** và **31%**.
 - Nhóm tác giả cũng nêu khía cạnh đạo đức: nghiên cứu không đáng tin cậy là nghiên cứu lãng phí.
 
-Ở tâm lý học và khoa học thần kinh nhận thức, một phân tích khác của 26.841 phép kiểm định t trong 3.801 bài báo cho thấy công suất trung vị để phát hiện hiệu ứng nhỏ, trung bình và lớn lần lượt là 0,12, 0,44 và 0,73 ([Szucs & Ioannidis, 2017](https://doi.org/10.1371/journal.pbio.2000797)).
+Ở tâm lý học và khoa học thần kinh nhận thức, một phân tích khác của 26.841 phép kiểm định t trong 3.801 bài báo cho thấy công suất trung vị để phát hiện hiệu ứng nhỏ, trung bình và lớn lần lượt là 0,12, 0,46 và 0,78, theo bản đính chính năm 2021 ([Szucs & Ioannidis, 2017](https://doi.org/10.1371/journal.pbio.2000797); [đính chính, 2021](https://doi.org/10.1371/journal.pbio.3001151)).
 
 Cần thận trọng với các con số này. Nord và cộng sự (2017) tính lại trên cả 730 nghiên cứu và thấy trung vị 23%, gần với 21% của Button, nhưng công suất không đồng đều giữa các nhóm nghiên cứu: thấp nhất ở nghiên cứu gen ứng viên (trung vị 11%). Họ kết luận rằng công suất thấp "không phải vấn đề phổ biến ở mọi nơi" (*far from a universal problem*), dù nhiều nghiên cứu vẫn thiếu công suất, có cái rất nghiêm trọng ([Nord và cộng sự, 2017](https://doi.org/10.1523/JNEUROSCI.3592-16.2017)).
 
@@ -154,4 +154,5 @@ Câu hỏi: Nếu chỉ được chọn một nghiên cứu để tin tưởng h
 - Nord, C. L., Valton, V., Wood, J., & Roiser, J. P. (2017). Power-up: A reanalysis of "power failure" in neuroscience using mixture modeling. *Journal of Neuroscience*, *37*(34), 8051–8061. <https://doi.org/10.1523/JNEUROSCI.3592-16.2017>
 - Richard, F. D., Bond, C. F., & Stokes-Zoota, J. J. (2003). One hundred years of social psychology quantitatively described. *Review of General Psychology*, *7*(4), 331–363. <https://doi.org/10.1037/1089-2680.7.4.331>
 - Szucs, D., & Ioannidis, J. P. A. (2017). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. *PLOS Biology*, *15*(3), e2000797. <https://doi.org/10.1371/journal.pbio.2000797>
+- Szucs, D., & Ioannidis, J. P. A. (2021). Correction: Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. *PLOS Biology*, *19*(3), e3001151. <https://doi.org/10.1371/journal.pbio.3001151>
 - The Transmitter (17/5/2013). Power failure. <https://www.thetransmitter.org/spectrum/power-failure/?fspec=1>

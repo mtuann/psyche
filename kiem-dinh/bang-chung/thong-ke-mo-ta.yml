@@ -7,12 +7,12 @@ lan:
   - so: 1
     ngay: 2026-10-30
     nhanh: moi/d4-l2
-    ma_bam: null
+    ma_bam:
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L2 phần 1/2)
-      luot_2: null
-      review: null
-      kiem_mau: null
+      luot_2:
+      review: Claude Sonnet 5.5 (agent review D4-L2, 30/10/2026)
+      kiem_mau:
 nguon:
   - id: nso-thongcao
     ten: 'Cục Thống kê (16/5/2025), Thông cáo báo chí kết quả khảo sát mức sống dân cư năm 2024: toàn văn trang nso.gov.vn'
@@ -43,9 +43,9 @@ nguon:
     link: https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode
     toan_van: true
   - id: vonhippel2005
-    ten: 'von Hippel (2005), J Stat Educ 13(2): tóm tắt (OpenAlex); bản gốc mở ở nhà xuất bản, chưa đọc toàn văn'
+    ten: 'von Hippel (2005), J Stat Educ 13(2): toàn văn (bản mở của tạp chí, jse.amstat.org/v13n2/vonhippel.html; đọc ở review D4-L2)'
     link: https://doi.org/10.1080/10691898.2005.11910556
-    toan_van: false
+    toan_van: true
 nhan_dinh:
   - id: tk1
     cau: Tiêu đề "Năm 2024 thu nhập bình quân của người Việt tăng mạnh, đạt 5,4 triệu đồng" là của một bài đăng trên Vietstock ngày 19/5/2025.
@@ -55,9 +55,10 @@ nhan_dinh:
     trich: Năm 2024 thu nhập bình quân của người Việt tăng mạnh, đạt 5,4 triệu đồng | 19/05/2025 10:30
     vi_tri: Vietstock, đầu bài
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "tiêu đề kiểu này xuất hiện trên nhiều báo". Lý do: chỉ kiểm được bài Vietstock; viết cụ thể bài đó và ngày đăng.'
+    ghi_chu: 'Chữ cũ: "tiêu đề kiểu này xuất hiện trên nhiều báo". Lý do: chỉ kiểm được bài Vietstock; viết cụ thể bài đó và ngày đăng. Review (Claude Sonnet 5.5, 30/10/2026): dung. Tiêu đề và ngày 19/5/2025 khớp trang Vietstock; trang ghi đúng "tiêu đề của Vietstock".'
     luot_2: dung
-    luot_2_nguon: [ "https://vietstock.vn/2025/05/nam-2024-thu-nhap-binh-quan-cua-nguoi-viet-tang-manh-dat-54-trieu-dong-761-1309745.htm" ]
+    luot_2_nguon: ["https://vietstock.vn/2025/05/nam-2024-thu-nhap-binh-quan-cua-nguoi-viet-tang-manh-dat-54-trieu-dong-761-1309745.htm"]
+    review: dung
   - id: tk2
     cau: Cục Thống kê công bố thông cáo báo chí về kết quả Khảo sát mức sống dân cư năm 2024 ngày 16/5/2025.
     loai: lich-su
@@ -66,9 +67,10 @@ nhan_dinh:
     trich: Thông cáo báo chí kết quả khảo sát mức sống dân cư năm 2024 | 16/05/2025
     vi_tri: nso.gov.vn, đầu và cuối trang
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "sau khi Cục Thống kê công bố Khảo sát mức sống dân cư năm 2024" (không ghi ngày). Thêm ngày theo trang nso.gov.vn.'
+    ghi_chu: 'Chữ cũ: "sau khi Cục Thống kê công bố Khảo sát mức sống dân cư năm 2024" (không ghi ngày). Thêm ngày theo trang nso.gov.vn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Ngày 16/5/2025 khớp thông cáo; trang ghi ngày trong phần Nguồn.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf" ]
+    luot_2_nguon: ["https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf"]
+    review: dung
   - id: tk3
     cau: Theo Cục Thống kê, thu nhập bình quân đầu người mỗi tháng theo giá hiện hành năm 2024 đạt 5,4 triệu đồng, tăng 9,1% so với năm 2023.
     loai: so-lieu
@@ -80,7 +82,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Đã đối chiếu thông cáo (nso.gov.vn) với bài Vietstock: cùng số 5,4 triệu và 9,1%.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf" ]
+    luot_2_nguon: ["https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf"]
     luot_2_ghi_chu: Một bài Vietstock tháng 1/2025 dẫn số sơ bộ tăng 8,8%; số trong thông cáo 16/5/2025 là 9,1%.
   - id: tk4
     cau: Nhóm 20% dân số có thu nhập cao nhất có thu nhập bình quân 11,8 triệu đồng/người/tháng; nhóm 20% dân số có thu nhập thấp nhất 1,6 triệu đồng/người/tháng; chênh nhau 7,4 lần.
@@ -91,10 +93,11 @@ nhan_dinh:
     trich: Nhóm hộ có thu nhập cao nhất (nhóm gồm 20% dân số có thu nhập cao nhất – nhóm 5) bình quân 1 người 1 tháng đạt 11,8 triệu đồng cao gấp 7,4 lần so với nhóm hộ có thu nhập thấp nhất (nhóm gồm 20% dân số có thu nhập thấp nhất – nhóm 1) với thu nhập bình quân chỉ đạt 1,6 triệu đồng/người/tháng.
     vi_tri: Thông cáo của Cục Thống kê, mục II
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "nhóm 20% hộ giàu nhất", "nhóm 20% nghèo nhất" (số 11,8 và 1,6 giữ nguyên). Lý do: thông cáo định nghĩa nhóm là "20% dân số", xếp theo thu nhập bình quân đầu người của hộ. Số 7,4 lần: 11,8 / 1,6 = 7,375, khớp thông cáo.'
+    ghi_chu: 'Chữ cũ: "nhóm 20% hộ giàu nhất", "nhóm 20% nghèo nhất" (số 11,8 và 1,6 giữ nguyên). Lý do: thông cáo định nghĩa nhóm là "20% dân số", xếp theo thu nhập bình quân đầu người của hộ. Số 7,4 lần: 11,8 / 1,6 = 7,375, khớp thông cáo. Review (Claude Sonnet 5.5, 30/10/2026): dung. "20% dân số" và 11,8 / 1,6 / 7,4 lần khớp thông cáo.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf" ]
+    luot_2_nguon: ["https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf"]
     luot_2_ghi_chu: "11,8/1,6 = 7,375, làm tròn 7,4: khớp."
+    review: dung
   - id: tk5
     cau: Tính từ số liệu trên, nhóm 20% dân số có thu nhập cao nhất chiếm khoảng 44% tổng thu nhập (11,8 × 20% ÷ 5,4), nhóm 20% thấp nhất khoảng 6% (1,6 × 20% ÷ 5,4).
     loai: so-lieu
@@ -105,7 +108,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Suy luận từ số liệu của nguồn, có tính lại: 0,2 × 11,8 / 5,4 = 0,437; 0,2 × 1,6 / 5,4 = 0,059. Giả định mỗi nhóm đúng 20% dân số và 5,4 triệu là trung bình theo dân số; làm tròn. Câu mới so với trang cũ (thay cho câu "nhóm nhỏ người giàu đã kéo con số trung bình lên cao, che mất thực tế của hàng chục triệu người").'
     luot_2: dung
-    luot_2_nguon: [ "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/" ]
+    luot_2_nguon: ["https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/"]
     luot_2_ghi_chu: Phép tính đúng; là ước tính từ số làm tròn, câu đã ghi "khoảng" và "tính từ số liệu trên".
   - id: tk6
     cau: Tính đến 10/2026, thông cáo của Cục Thống kê và bài của Vietstock mà chúng tôi đọc đều không nêu trung vị thu nhập.
@@ -114,11 +117,12 @@ nhan_dinh:
       - nso-thongcao
       - vietstock2025
     ket_qua: da-sua
-    ghi_chu: 'chưa tìm thấy: ngày 30/10/2026 đã tìm "trung vị" và "median" trong toàn văn thông cáo (nso.gov.vn) và bài Vietstock đã tải: không có. Chữ cũ: "trong các bản tin, gần như không báo nào đưa trung vị ... Sự vắng mặt đó không phải ngẫu nhiên: trung bình cộng vừa dễ tính, vừa cho con số ''đẹp'' hơn để làm tiêu đề". Lý do: chỉ kiểm được hai văn bản; vế "gần như không báo nào" và lời giải thích động cơ không có nguồn nên bỏ.'
+    ghi_chu: 'chưa tìm thấy: ngày 30/10/2026 đã tìm "trung vị" và "median" trong toàn văn thông cáo (nso.gov.vn) và bài Vietstock đã tải: không có. Chữ cũ: "trong các bản tin, gần như không báo nào đưa trung vị ... Sự vắng mặt đó không phải ngẫu nhiên: trung bình cộng vừa dễ tính, vừa cho con số ''đẹp'' hơn để làm tiêu đề". Lý do: chỉ kiểm được hai văn bản; vế "gần như không báo nào" và lời giải thích động cơ không có nguồn nên bỏ. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thời sự: có mốc "Tính đến 10/2026", het_han 30/10/2027, hai nguồn, và chỉ nói về hai văn bản đã đọc (không khái quát "báo chí").'
     het_han: 2027-10-30
     luot_2: dung
-    luot_2_nguon: [ "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf", "https://vietstock.vn/2025/05/nam-2024-thu-nhap-binh-quan-cua-nguoi-viet-tang-manh-dat-54-trieu-dong-761-1309745.htm" ]
+    luot_2_nguon: ["https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/", "https://www.nso.gov.vn/wp-content/uploads/2025/05/thong-cao-bao-chi-ksmsdc2024.pdf", "https://vietstock.vn/2025/05/nam-2024-thu-nhap-binh-quan-cua-nguoi-viet-tang-manh-dat-54-trieu-dong-761-1309745.htm"]
     luot_2_ghi_chu: Chỉ kiểm hai văn bản này; bảng số liệu xlsx kèm thông cáo không mở.
+    review: dung
   - id: tk7
     cau: Thống kê mô tả (descriptive statistics) là việc tổ chức và tóm tắt dữ liệu, bằng biểu đồ hoặc bằng các con số.
     loai: dinh-nghia
@@ -127,9 +131,10 @@ nhan_dinh:
     trich: Organizing and summarizing data is called descriptive statistics. Two ways to summarize data are by graphing and by using numbers
     vi_tri: OpenStax Introductory Statistics 2e, mục 1.1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "cách tóm tắt một dãy số dài bằng vài con số ngắn gọn, để ta nắm được ''bức tranh chung'' mà không cần đọc từng số liệu". Viết lại theo định nghĩa của giáo trình (gồm cả biểu đồ).'
+    ghi_chu: 'Chữ cũ: "cách tóm tắt một dãy số dài bằng vài con số ngắn gọn, để ta nắm được ''bức tranh chung'' mà không cần đọc từng số liệu". Viết lại theo định nghĩa của giáo trình (gồm cả biểu đồ). Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp định nghĩa OpenStax mục 1.1; trang thêm "bằng biểu đồ hoặc bằng các con số".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms"]
+    review: dung
   - id: tk8
     cau: Ba con số tóm tắt "trung tâm" của một dãy số là trung bình, trung vị và yếu vị; trung bình và trung vị được dùng rộng rãi nhất.
     loai: dinh-nghia
@@ -138,9 +143,10 @@ nhan_dinh:
     trich: The two most widely used measures of the "center" of the data are the mean (average) and the median. | Another measure of the center is the mode.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Ba con số tóm tắt phổ biến nhất là trung bình, trung vị và yếu vị." Lý do: giáo trình nói hai số được dùng rộng rãi nhất là trung bình và trung vị; yếu vị là số thứ ba.'
+    ghi_chu: 'Chữ cũ: "Ba con số tóm tắt phổ biến nhất là trung bình, trung vị và yếu vị." Lý do: giáo trình nói hai số được dùng rộng rãi nhất là trung bình và trung vị; yếu vị là số thứ ba. Review (Claude Sonnet 5.5, 30/10/2026): dung. "Rộng rãi nhất" gắn với trung bình và trung vị đúng như OpenStax mục 2.5.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
+    review: dung
   - id: tk9
     cau: Trung bình cộng là tổng tất cả các giá trị chia cho số lượng giá trị.
     loai: dinh-nghia
@@ -150,7 +156,7 @@ nhan_dinh:
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
   - id: tk10
     cau: Trong đời thường, người ta thường dùng từ "trung bình" (average) để chỉ trung bình cộng.
     loai: dinh-nghia
@@ -159,9 +165,10 @@ nhan_dinh:
     trich: The words "mean" and "average" are often used interchangeably.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5 (ghi chú NOTE)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đây là ''trung bình'' mà báo chí nhắc tới trong hầu hết các tin tức." Lý do: "hầu hết các tin tức" không có nguồn; nguồn chỉ nói hai từ "mean" và "average" thường dùng thay nhau và trong thực tế "average" được hiểu là trung bình cộng.'
+    ghi_chu: 'Chữ cũ: "Đây là ''trung bình'' mà báo chí nhắc tới trong hầu hết các tin tức." Lý do: "hầu hết các tin tức" không có nguồn; nguồn chỉ nói hai từ "mean" và "average" thường dùng thay nhau và trong thực tế "average" được hiểu là trung bình cộng. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu dùng "thường", đúng với "often used interchangeably".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
+    review: dung
   - id: tk11
     cau: Trung bình dùng mọi giá trị trong dãy số và nhạy với giá trị cực đoan; trung vị không bị giá trị cực đoan kéo đi.
     loai: dinh-nghia
@@ -171,9 +178,10 @@ nhan_dinh:
     trich: The median is generally a better measure of the center when there are extreme values or outliers because it is not affected by the precise numerical values of the outliers. | The mean is affected by outliers that do not influence the median.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5; OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Điểm yếu chí mạng: rất nhạy với giá trị cực đoan. Một người duy nhất kiếm 1 tỉ mỗi tháng cũng đủ kéo trung bình của cả xóm lên trời." Lý do: "chí mạng" và ví dụ 1 tỉ không có nguồn; thay bằng ví dụ của giáo trình (tk12).'
+    ghi_chu: 'Chữ cũ: "Điểm yếu chí mạng: rất nhạy với giá trị cực đoan. Một người duy nhất kiếm 1 tỉ mỗi tháng cũng đủ kéo trung bình của cả xóm lên trời." Lý do: "chí mạng" và ví dụ 1 tỉ không có nguồn; thay bằng ví dụ của giáo trình (tk12). Review (Claude Sonnet 5.5, 30/10/2026): dung. Hai tính chất khớp trích OpenStax 2.5 và 2.6.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
+    review: dung
   - id: tk12
     cau: 'Ví dụ giáo trình: thị trấn 50 người, một người kiếm 5.000.000 USD mỗi năm và 49 người còn lại mỗi người kiếm 30.000 USD; trung bình là 129.400 USD, trung vị là 30.000 USD, và trung vị mô tả "trung tâm" tốt hơn.'
     loai: so-lieu
@@ -184,7 +192,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Đã tính lại: (5.000.000 + 49 × 30.000) / 50 = 6.470.000 / 50 = 129.400.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
     luot_2_ghi_chu: "Tự tính: (5.000.000 + 49 x 30.000)/50 = 129.400."
   - id: tk13
     cau: 'Trung vị là giá trị đứng ở chính giữa khi dãy số đã xếp theo thứ tự từ bé đến lớn: một nửa số giá trị nằm dưới nó, một nửa nằm trên nó; nếu dãy có số lượng chẵn, trung vị là trung bình của hai giá trị giữa.'
@@ -195,7 +203,7 @@ nhan_dinh:
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
   - id: tk14
     cau: Nếu người kiếm nhiều nhất kiếm thêm nữa, trung vị vẫn không đổi.
     loai: dinh-nghia
@@ -204,10 +212,11 @@ nhan_dinh:
     trich: The median is generally a better measure of the center when there are extreme values or outliers because it is not affected by the precise numerical values of the outliers.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: da-sua
-    ghi_chu: 'Suy luận từ định nghĩa: trung vị chỉ phụ thuộc vị trí giữa của dãy đã xếp, nên tăng giá trị lớn nhất không đổi thứ tự. Chữ cũ: "Dù người giàu nhất xóm kiếm thêm 10 tỉ nữa, trung vị vẫn đứng yên." (số 10 tỉ bỏ vì không cần).'
+    ghi_chu: 'Suy luận từ định nghĩa: trung vị chỉ phụ thuộc vị trí giữa của dãy đã xếp, nên tăng giá trị lớn nhất không đổi thứ tự. Chữ cũ: "Dù người giàu nhất xóm kiếm thêm 10 tỉ nữa, trung vị vẫn đứng yên." (số 10 tỉ bỏ vì không cần). Review (Claude Sonnet 5.5, 30/10/2026): dung. Hệ quả đúng từ định nghĩa trung vị (người kiếm nhiều nhất vẫn ở phía trên giữa dãy).'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
     luot_2_ghi_chu: Hệ quả suy trực tiếp từ định nghĩa.
+    review: dung
   - id: tk15
     cau: Yếu vị là giá trị xuất hiện nhiều lần nhất trong dãy số; một dãy số có thể có nhiều yếu vị nếu các giá trị đó cùng xuất hiện nhiều nhất.
     loai: dinh-nghia
@@ -217,7 +226,7 @@ nhan_dinh:
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
   - id: tk16
     cau: Yếu vị tính được cả cho dữ liệu phân loại; ví dụ trong dãy "đỏ, đỏ, đỏ, xanh lá, xanh lá, vàng", yếu vị là "đỏ".
     loai: dinh-nghia
@@ -226,10 +235,11 @@ nhan_dinh:
     trich: 'The mode can be calculated for qualitative data as well as for quantitative data. For example, if the data set is: red, red, red, green, green, yellow, purple, black, blue, the mode is red.'
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Nó ít được báo chí nhắc tới, nhưng rất hữu ích ... ''cỡ áo nào bán chạy nhất'', ''khung giờ nào đông khách nhất'', ''lý do nghỉ việc nào được nêu nhiều nhất''." Lý do: vế "ít được báo chí nhắc tới" không có nguồn; ví dụ thay bằng ví dụ gần với giáo trình (gia-dinh). Vế "trung bình và trung vị cần số hoặc thứ tự": suy từ định nghĩa (cộng, xếp từ bé đến lớn).'
+    ghi_chu: 'Chữ cũ: "Nó ít được báo chí nhắc tới, nhưng rất hữu ích ... ''cỡ áo nào bán chạy nhất'', ''khung giờ nào đông khách nhất'', ''lý do nghỉ việc nào được nêu nhiều nhất''." Lý do: vế "ít được báo chí nhắc tới" không có nguồn; ví dụ thay bằng ví dụ gần với giáo trình (gia-dinh). Vế "trung bình và trung vị cần số hoặc thứ tự": suy từ định nghĩa (cộng, xếp từ bé đến lớn). Review (Claude Sonnet 5.5, 30/10/2026): dung. Ví dụ đỏ/xanh lá/vàng là ví dụ riêng, kết quả "đỏ" đúng; định nghĩa khớp OpenStax.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
     luot_2_ghi_chu: Ví dụ đỏ/xanh lá/vàng của câu là ví dụ riêng, kết quả đúng.
+    review: dung
   - id: tk17
     cau: 'Dãy 6, 7, 7, 8, 8, 9, 9, 10, 11, 60: trung bình là 13,5; trung vị là 8,5; yếu vị là 7, 8 và 9; số 60 một mình kéo trung bình cao hơn thu nhập của 9 trên 10 người; một nửa dãy dưới 8,5, một nửa trên.'
     loai: so-lieu
@@ -238,15 +248,17 @@ nhan_dinh:
     trich: To calculate the mean weight of 50 people, add the 50 weights together and divide by 50. | If n is an even number, the median is equal to the two middle values added together and divided by two after the data has been ordered. | The mode is the most frequent value.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5 (cách tính)
     ket_qua: da-sua
-    ghi_chu: 'gia-dinh: dãy số do site tự đặt. Đã tính lại: tổng 135, 135 / 10 = 13,5; vị trí 5 và 6 là 8 và 9, (8 + 9) / 2 = 8,5; 7, 8, 9 mỗi số hai lần; 9 giá trị đầu đều nhỏ hơn 13,5; 5 giá trị nhỏ hơn 8,5 (6, 7, 7, 8, 8). Chữ cũ: "đã một mình kéo trung bình lên 13,5 triệu — cao hơn thu nhập của 9 trên 10 người"; chỉ đổi cách ngắt câu, giữ nghĩa. Chữ cũ: "kể đúng câu chuyện của ''người ở giữa''" đổi thành "cho biết ''người ở giữa''" cho bớt đánh giá.'
+    ghi_chu: 'gia-dinh: dãy số do site tự đặt. Đã tính lại: tổng 135, 135 / 10 = 13,5; vị trí 5 và 6 là 8 và 9, (8 + 9) / 2 = 8,5; 7, 8, 9 mỗi số hai lần; 9 giá trị đầu đều nhỏ hơn 13,5; 5 giá trị nhỏ hơn 8,5 (6, 7, 7, 8, 8). Chữ cũ: "đã một mình kéo trung bình lên 13,5 triệu — cao hơn thu nhập của 9 trên 10 người"; chỉ đổi cách ngắt câu, giữ nghĩa. Chữ cũ: "kể đúng câu chuyện của ''người ở giữa''" đổi thành "cho biết ''người ở giữa''" cho bớt đánh giá. Review (Claude Sonnet 5.5, 30/10/2026): dung. Tính lại: tổng 135, trung bình 13,5; trung vị (8+9)/2 = 8,5; yếu vị 7, 8, 9; 9 giá trị đầu đều dưới 13,5 (cao nhất 11).'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
     luot_2_ghi_chu: Ví dụ do trang tự dựng, tính lại đúng.
+    review: dung
   - id: tk18
-    cau: Hình mean-vs-median vẽ 10 cột thu nhập giả định (6, 7, 7, 8, 8, 9, 9, 10, 11, 60) với đường trung bình 13,5 và đường trung vị 8,5.
+    cau: Hình mean-vs-median vẽ 10 cột thu nhập giả định (6, 7, 7, 8, 8, 9, 9, 10, 11, 60), với đường nét đứt ở trung bình 13,5, đường nét liền ở trung vị 8,5 và chú giải hai đường ở góc trên bên trái.
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: 'Đã kiểm trên src/hinh/mean-vs-median.html: chiều cao cột theo tỉ lệ 3,5 px cho mỗi triệu (6 ra 21 px, 60 ra 210 px); đường nét liền ở y = 270,2 ứng 8,5, đường nét đứt ở y = 252,8 ứng 13,5; nhãn "Trung bình: 13,5" nằm trên đường 13,5 và "Trung vị: 8,5" nằm trên đường 8,5; chú thích hình khớp tk17.'
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm trên src/hinh/mean-vs-median.html: chiều cao cột theo tỉ lệ 3,5 px cho mỗi triệu (6 ra 21 px, 60 ra 210 px); đường nét liền ở y = 270,2 ứng 8,5, đường nét đứt ở y = 252,8 ứng 13,5; nhãn "Trung bình: 13,5" nằm trên đường 13,5 và "Trung vị: 8,5" nằm trên đường 8,5; chú thích hình khớp tk17. Review (Claude Sonnet 5.5, 30/10/2026): sai. Ghi chú trên nói nhãn "Trung vị: 8,5" nằm trên đường 8,5; dựng bản xem bằng Chromium thấy nhãn ấy nằm dưới đường, hai nhãn "Trung bình: 13,5" và "Trung vị: 8,5" đặt ở mép phải nên đè lên cột 60 (chữ cùng màu cột, khó đọc) và cột 11, đường trung bình cắt nhãn giá trị "11". Chú thích hình còn "kể đúng câu chuyện của người ở giữa", lệch với thân bài (tk17 đã đổi thành "cho biết"). Đã sửa src/hinh/mean-vs-median.html: chú giải hai đường (nét đứt trung bình, nét liền trung vị) ở góc trên bên trái, nhãn giá trị có viền nền, chú thích đổi thành "cho biết"; số liệu và tỉ lệ cột không đổi (đã kiểm: 3,5 px mỗi triệu, y = 270,2 và 252,8). Thêm "mean-vs-median" vào HINH_DA_SUA ở tests/chuyen.test.mjs.'
+    review: sai
   - id: tk19
     cau: Phân phối đối xứng là phân phối mà hình bên trái và bên phải một đường thẳng đứng là ảnh phản chiếu của nhau; khi đó trung bình và trung vị xấp xỉ bằng nhau.
     loai: dinh-nghia
@@ -255,9 +267,10 @@ nhan_dinh:
     trich: A distribution is symmetrical if a vertical line can be drawn at some point in the histogram such that the shape to the left and the right of the vertical line are mirror images of each other. | In symmetric distributions, we expect the mean and median to be approximately equal in value.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đối xứng: chiều cao người trưởng thành, điểm IQ." Bỏ ví dụ vì không có nguồn (chiều cao gộp hai giới không đối xứng một đỉnh).'
+    ghi_chu: 'Chữ cũ: "Đối xứng: chiều cao người trưởng thành, điểm IQ." Bỏ ví dụ vì không có nguồn (chiều cao gộp hai giới không đối xứng một đỉnh). Review (Claude Sonnet 5.5, 30/10/2026): dung. Định nghĩa khớp OpenStax 2.6; trang không còn ví dụ chiều cao hay IQ.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode"]
+    review: dung
   - id: tk20
     cau: Lệch phải là đuôi dài về phía giá trị lớn, lệch trái là đuôi dài về phía giá trị nhỏ; khi lệch phải trung bình thường lớn hơn trung vị, khi lệch trái trung bình thường nhỏ hơn trung vị.
     loai: dinh-nghia
@@ -266,21 +279,23 @@ nhan_dinh:
     trich: A distribution of this type is called skewed to the left because it is pulled out to the left. | when the distribution of data is skewed to the left, the mean is often less than the median. When the distribution is skewed to the right, the mean is often greater than the median.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Lệch phải: thu nhập, giá nhà, số lượt xem video, tài sản"; "Lệch trái: tuổi thọ ở nước phát triển ..., điểm thi khi đề quá dễ"; "Với thu nhập — luôn lệch phải — trung bình hầu như luôn cao hơn trung vị, và trung vị mới là con số gần với ''người điển hình'' hơn". Lý do: các ví dụ và "luôn", "hầu như luôn" không có nguồn đã mở; giáo trình chỉ nói "thường" (often).'
+    ghi_chu: 'Chữ cũ: "Lệch phải: thu nhập, giá nhà, số lượt xem video, tài sản"; "Lệch trái: tuổi thọ ở nước phát triển ..., điểm thi khi đề quá dễ"; "Với thu nhập — luôn lệch phải — trung bình hầu như luôn cao hơn trung vị, và trung vị mới là con số gần với ''người điển hình'' hơn". Lý do: các ví dụ và "luôn", "hầu như luôn" không có nguồn đã mở; giáo trình chỉ nói "thường" (often). Review (Claude Sonnet 5.5, 30/10/2026): dung. Có "thường", khớp "often"; không còn ví dụ hay "luôn".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode"]
+    review: dung
   - id: tk21
-    cau: Đuôi lệch về phía nào, trung bình bị kéo về phía đó nhiều hơn trung vị; vì vậy khoảng cách giữa trung bình và trung vị gợi ý dữ liệu có lệch hay không.
+    cau: Đuôi lệch về phía nào, trung bình thường bị kéo về phía đó nhiều hơn trung vị; vì vậy khoảng cách giữa trung bình và trung vị gợi ý dữ liệu có lệch hay không.
     loai: dinh-nghia
     nguon:
       - openstax-stats-2-6
     trich: The mean and the median both reflect the skewing, but the mean reflects it more so. | This is an important connection between the shape of the distribution and the relationship of the mean and median.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "đuôi lệch về phía nào, trung bình bị kéo về phía đó." Thêm "nhiều hơn trung vị" theo nguồn; "cho biết" ở các chỗ dùng ý này (bảng "Khi nào dùng", bảng "Cách nhận ra") đổi thành "gợi ý" vì quy tắc có ngoại lệ (tk22).'
+    ghi_chu: 'Chữ cũ: "đuôi lệch về phía nào, trung bình bị kéo về phía đó." Thêm "nhiều hơn trung vị" theo nguồn; "cho biết" ở các chỗ dùng ý này (bảng "Khi nào dùng", bảng "Cách nhận ra") đổi thành "gợi ý" vì quy tắc có ngoại lệ (tk22). Review (Claude Sonnet 5.5, 30/10/2026): sai. Câu gốc (và chữ trên trang "Quy tắc nhớ nhanh") nói trung bình bị kéo về phía đuôi nhiều hơn trung vị không có "thường"; von Hippel (2005) cho thấy quy tắc này sai với tần suất đáng ngạc nhiên ở dữ liệu rời rạc. Đã thêm "thường" ở cả câu và trang; câu sau vẫn dùng "gợi ý".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html"]
     luot_2_ghi_chu: Câu dùng "gợi ý", phù hợp.
+    review: sai
   - id: tk22
     cau: Trong phân phối lệch phải, ba con số thường xếp theo thứ tự yếu vị < trung vị < trung bình; đây là quy tắc thường đúng chứ không phải luật, và có thể sai, nhất là với dữ liệu rời rạc hay phân phối nhiều đỉnh.
     loai: phat-hien
@@ -290,9 +305,10 @@ nhan_dinh:
     trich: Of the three statistics, the mean is the largest, while the mode is the smallest. | It is not, however, true for every data set. The most common exceptions occur in sets of discrete data. | This rule fails with surprising frequency. It can fail in multimodal distributions
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6; von Hippel 2005, tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Một chi tiết thú vị: trong phân phối lệch phải, ba con số thường xếp theo thứ tự yếu vị < trung vị < trung bình ... nhìn thứ tự này là biết ngay dữ liệu đang lệch về đâu." Lý do: "biết ngay" mạnh hơn nguồn; thêm các ngoại lệ theo giáo trình và von Hippel (chỉ đọc tóm tắt).'
+    ghi_chu: 'Chữ cũ: "Một chi tiết thú vị: trong phân phối lệch phải, ba con số thường xếp theo thứ tự yếu vị < trung vị < trung bình ... nhìn thứ tự này là biết ngay dữ liệu đang lệch về đâu." Lý do: "biết ngay" mạnh hơn nguồn; thêm các ngoại lệ theo giáo trình và von Hippel (chỉ đọc tóm tắt). Review (Claude Sonnet 5.5, 30/10/2026): dung. Đã đọc toàn văn von Hippel (jse.amstat.org/v13n2/vonhippel.html, bản mở): quy tắc sai ở phân phối nhiều đỉnh, đuôi dài một bên và nặng một bên, và nhất là dữ liệu rời rạc; 14 trong 18 giáo trình dạy quy tắc. Chữ trên trang đúng.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html"]
+    review: dung
   - id: tk23
     cau: 'Với dữ liệu đối xứng, không có giá trị quá khác biệt, thường dùng trung bình: nó dùng mọi giá trị, và ở phân phối đối xứng trung bình và trung vị gần như bằng nhau.'
     loai: loi-khuyen
@@ -302,10 +318,11 @@ nhan_dinh:
     trich: The mean is the most common measure of the center. | In symmetric distributions, we expect the mean and median to be approximately equal in value.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5; OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(chiều cao, nhiệt độ)", "Dùng hết thông tin, tiện tính toán". Bỏ ví dụ và "tiện tính toán" (không nguồn).'
+    ghi_chu: 'Chữ cũ: "(chiều cao, nhiệt độ)", "Dùng hết thông tin, tiện tính toán". Bỏ ví dụ và "tiện tính toán" (không nguồn). Review (Claude Sonnet 5.5, 30/10/2026): dung. Lời khuyên có "thường", dựa trên mô tả của OpenStax.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode"]
     luot_2_ghi_chu: Lời khuyên thực hành theo giáo trình, nhất quán với nguồn.
+    review: dung
   - id: tk24
     cau: Với dữ liệu lệch hoặc có giá trị cực đoan, thường dùng trung vị vì nó không bị vài giá trị rất lớn hay rất nhỏ kéo đi.
     loai: loi-khuyen
@@ -314,10 +331,11 @@ nhan_dinh:
     trich: The median is generally a better measure of the center when there are extreme values or outliers because it is not affected by the precise numerical values of the outliers.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(thu nhập, giá nhà, thời gian chờ)", "Không bị vài giá trị khổng lồ đánh lừa". Bỏ ví dụ không có nguồn; nguồn nói "generally better".'
+    ghi_chu: 'Chữ cũ: "(thu nhập, giá nhà, thời gian chờ)", "Không bị vài giá trị khổng lồ đánh lừa". Bỏ ví dụ không có nguồn; nguồn nói "generally better". Review (Claude Sonnet 5.5, 30/10/2026): dung. "Generally better" của OpenStax thành "thường dùng trung vị": đúng.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
     luot_2_ghi_chu: 'Lời khuyên "thường", không tuyệt đối: đúng.'
+    review: dung
   - id: tk25
     cau: Với dữ liệu phân loại, cần biết "cái nào phổ biến nhất" thì dùng yếu vị; trung bình của "màu sắc" là vô nghĩa.
     loai: loi-khuyen
@@ -326,9 +344,10 @@ nhan_dinh:
     trich: The mode can be calculated for qualitative data as well as for quantitative data.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(cỡ áo, màu xe)". Vế "trung bình của màu sắc là vô nghĩa": suy từ định nghĩa trung bình (cộng các giá trị). Bỏ ví dụ.'
+    ghi_chu: 'Chữ cũ: "(cỡ áo, màu xe)". Vế "trung bình của màu sắc là vô nghĩa": suy từ định nghĩa trung bình (cộng các giá trị). Bỏ ví dụ. Review (Claude Sonnet 5.5, 30/10/2026): dung. Định nghĩa khớp; vế "trung bình của màu sắc là vô nghĩa" là suy từ định nghĩa, nói rõ.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
+    review: dung
   - id: tk26
     cau: Muốn mô tả đầy đủ hơn thì nêu cả trung bình lẫn trung vị, vì khoảng cách giữa hai con số gợi ý dữ liệu có lệch hay không.
     loai: loi-khuyen
@@ -337,10 +356,11 @@ nhan_dinh:
     trich: This is an important connection between the shape of the distribution and the relationship of the mean and median.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Muốn mô tả đầy đủ và trung thực nhất ... tự nó đã kể một câu chuyện". Bỏ "trung thực nhất" và ẩn dụ; "cho biết" thành "gợi ý".'
+    ghi_chu: 'Chữ cũ: "Muốn mô tả đầy đủ và trung thực nhất ... tự nó đã kể một câu chuyện". Bỏ "trung thực nhất" và ẩn dụ; "cho biết" thành "gợi ý". Review (Claude Sonnet 5.5, 30/10/2026): dung. Dùng "gợi ý", khớp tk21 sau khi sửa.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html"]
     luot_2_ghi_chu: Câu đã dùng "gợi ý".
+    review: dung
   - id: tk27
     cau: Khi bài báo chỉ ghi "trung bình" mà không nói rõ, thường đó là trung bình cộng, con số nhạy với giá trị cực đoan.
     loai: loi-khuyen
@@ -349,10 +369,11 @@ nhan_dinh:
     trich: The words "mean" and "average" are often used interchangeably. | The median is generally a better measure of the center when there are extreme values or outliers
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5 (ghi chú NOTE về "average" và "mean")
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "mặc định hiểu là trung bình cộng, con số dễ bị bóp méo nhất". Lý do: "dễ bị bóp méo nhất" mạnh hơn nguồn; thay bằng "nhạy với giá trị cực đoan".'
+    ghi_chu: 'Chữ cũ: "mặc định hiểu là trung bình cộng, con số dễ bị bóp méo nhất". Lý do: "dễ bị bóp méo nhất" mạnh hơn nguồn; thay bằng "nhạy với giá trị cực đoan". Review (Claude Sonnet 5.5, 30/10/2026): dung. "Thường" đúng; không khẳng định mọi bài báo đều dùng trung bình cộng.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
     luot_2_ghi_chu: Câu dùng "thường", đúng; báo chí không phải lúc nào cũng vậy.
+    review: dung
   - id: tk28
     cau: Nếu có vài giá trị rất lớn, trung bình bị kéo lên so với trung vị.
     loai: dinh-nghia
@@ -361,9 +382,10 @@ nhan_dinh:
     trich: The mean is affected by outliers that do not influence the median.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Thu nhập, tài sản, doanh thu: luôn có vài ''đại gia'' ở đuôi phân phối". Lý do: "luôn có vài đại gia" không có nguồn.'
+    ghi_chu: 'Chữ cũ: "Thu nhập, tài sản, doanh thu: luôn có vài ''đại gia'' ở đuôi phân phối". Lý do: "luôn có vài đại gia" không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp "mean is affected by outliers that do not influence the median".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
+    review: dung
   - id: tk29
     cau: Nếu bài báo chỉ có trung bình, ta chưa biết dữ liệu lệch đến đâu, vì khoảng cách giữa trung bình và trung vị gợi ý mức lệch.
     loai: loi-khuyen
@@ -372,9 +394,10 @@ nhan_dinh:
     trich: This is an important connection between the shape of the distribution and the relationship of the mean and median.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Chỉ đưa trung bình mà giấu trung vị — bạn đang chỉ được xem một nửa bức tranh". Lý do: "giấu" quy động cơ, không có nguồn.'
+    ghi_chu: 'Chữ cũ: "Chỉ đưa trung bình mà giấu trung vị — bạn đang chỉ được xem một nửa bức tranh". Lý do: "giấu" quy động cơ, không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Suy luận có điều kiện ("ta chưa biết"), không quy động cơ cho bài báo.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html"]
+    review: dung
   - id: tk30
     cau: Thu nhập bình quân đầu người một tháng chia tổng thu nhập của hộ cho tổng dân số (kể cả trẻ em); thu nhập bình quân tháng của người lao động là một chỉ tiêu khác của cơ quan thống kê.
     loai: dinh-nghia
@@ -384,10 +407,11 @@ nhan_dinh:
     trich: Thu nhập bình quân đầu người 01 tháng được tính bằng cách chia tổng thu nhập trong năm của hộ dân cư cho tổng dân số và chia cho 12 tháng. | thu nhập bình quân tháng của người lao động được cải thiện
     vi_tri: nso.gov.vn, trang khái niệm; nso.gov.vn, trang Kết quả khảo sát mức sống 2024 (bản tin thị trường lao động)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "tính cả trẻ em và người không đi làm". "Kể cả trẻ em" suy từ "tổng dân số"; bỏ "người không đi làm" vì không được nêu riêng. Vế thứ hai chỉ cho thấy "thu nhập bình quân tháng của người lao động" là một chỉ tiêu được Cục Thống kê dùng; không nói về cách tính.'
+    ghi_chu: 'Chữ cũ: "tính cả trẻ em và người không đi làm". "Kể cả trẻ em" suy từ "tổng dân số"; bỏ "người không đi làm" vì không được nêu riêng. Vế thứ hai chỉ cho thấy "thu nhập bình quân tháng của người lao động" là một chỉ tiêu được Cục Thống kê dùng; không nói về cách tính. Review (Claude Sonnet 5.5, 30/10/2026): dung. Mẫu số là tổng dân số nên gồm cả trẻ em (nso-dacta); vế sau chỉ nói là một chỉ tiêu khác, không nói cách tính: đúng như đã ghi.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.nso.gov.vn/?p=51719", "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/" ]
+    luot_2_nguon: ["https://www.nso.gov.vn/?p=51719", "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/"]
     luot_2_ghi_chu: Mẫu số là tổng dân số nên gồm cả trẻ em. Chỉ tiêu "thu nhập bình quân tháng của người lao động" là chỉ tiêu riêng của thống kê lao động (số 7,7 triệu đồng năm 2024 thấy trong kết quả tìm kiếm, không mở bài gốc).
+    review: dung
   - id: tk31
     cau: Khi bài báo chỉ nêu trung bình, nên tìm xem có nêu trung vị hay phân phối (như các nhóm 20%) không; nếu không, ta chưa thể biết con số trung bình đại diện cho "người điển hình" đến đâu.
     loai: loi-khuyen
@@ -397,10 +421,11 @@ nhan_dinh:
     trich: The median is generally a better measure of the center when there are extreme values or outliers because it is not affected by the precise numerical values of the outliers. | This is an important connection between the shape of the distribution and the relationship of the mean and median.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5; OpenStax Introductory Statistics 2e, mục 2.6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "khi thấy ''trung bình'' đi kèm các từ thu nhập, lương, giá nhà, tài sản — hãy mặc định nghi ngờ ... chính sự vắng mặt đó cũng là một thông tin". Lý do: bỏ "mặc định nghi ngờ" và "vắng mặt là thông tin" (không nguồn).'
+    ghi_chu: 'Chữ cũ: "khi thấy ''trung bình'' đi kèm các từ thu nhập, lương, giá nhà, tài sản — hãy mặc định nghi ngờ ... chính sự vắng mặt đó cũng là một thông tin". Lý do: bỏ "mặc định nghi ngờ" và "vắng mặt là thông tin" (không nguồn). Review (Claude Sonnet 5.5, 30/10/2026): dung. Lời khuyên thực hành, không quy động cơ; nhóm 20% là ví dụ lấy từ thông cáo đã dùng ở đầu bài.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/"]
     luot_2_ghi_chu: Lời khuyên thực hành, đúng.
+    review: dung
   - id: tk32
     cau: Trung bình, trung vị và yếu vị mô tả các khía cạnh khác nhau của một dãy số; trung bình nhạy với giá trị cực đoan, trung vị thì không.
     loai: nhan
@@ -416,8 +441,10 @@ nhan_dinh:
       - 'OpenStax Introductory Statistics 2e, mục 2.6: quan hệ giữa hình dạng phân phối với trung bình và trung vị'
     ly_do: 'Là định nghĩa và tính chất toán học, không phải phát hiện thực nghiệm; thước đo mục 4 viết cho phát hiện thực nghiệm. Xét theo đồng thuận của giáo trình: giáo trình mở có bình duyệt, các ví dụ tính lại được, và không nguồn nào phản bác. Cùng cách xử lý với trang p-value (D4-L1).'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode"]
     luot_2_ghi_chu: 'Nhãn cho nguyên tắc phương pháp: đồng thuận giáo trình (OpenStax, mở); khớp mức "Vững chắc" theo cách xét nguyên tắc phương pháp ở lời giao.'
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn Vững chắc cho tính chất toán học của trung bình, trung vị, yếu vị; ly_do nói rõ xét theo đồng thuận giáo trình (mục 4 viết cho phát hiện thực nghiệm) như trang p-value; không nguồn nào phản bác.'
+    review: dung
   - id: tk33
     cau: Khi dữ liệu lệch phải, trung bình thường lớn hơn trung vị, và yếu vị thường nhỏ nhất.
     loai: nhan
@@ -433,8 +460,10 @@ nhan_dinh:
       - 'von Hippel (2005): quy tắc sách giáo khoa này "fails with surprising frequency" (chỉ đọc tóm tắt)'
     ly_do: Quy tắc đúng ở nhiều bộ dữ liệu và được giáo trình dạy, nhưng có ngoại lệ thường gặp (dữ liệu rời rạc, phân phối nhiều đỉnh, đuôi dài một bên và nặng ở bên kia). Khá vững theo mục 4 (cùng chiều ở nhiều trường hợp nhưng còn giới hạn); không phải Vững chắc vì không phải luật.
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html"]
     luot_2_ghi_chu: 'Câu dùng "thường" nên giữ được; nhãn không nên cao hơn "Khá vững" nếu muốn tách quy tắc lệch khỏi nguyên tắc nhạy outlier. Lượt 2 chỉ đánh giá nội dung câu: đúng.'
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn Khá vững, không cao hơn: von Hippel (đọc toàn văn) nói quy tắc sai thường xuyên ở dữ liệu rời rạc, nhưng phân phối liên tục "ngoan" hơn nhiều, và OpenStax dạy quy tắc với "often". Khung viết "thường", nêu ngoại lệ và nguồn von Hippel; không nâng thành Vững chắc.'
+    review: dung
   - id: tk34
     cau: Giáo trình OpenStax nêu rõ quy tắc về trung bình và trung vị có ngoại lệ, và von Hippel (2005) cho thấy nó sai "với tần suất đáng ngạc nhiên", nhất là ở dữ liệu rời rạc.
     loai: phat-hien
@@ -445,7 +474,7 @@ nhan_dinh:
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.6; von Hippel 2005, tóm tắt
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode", "https://jse.amstat.org/v13n2/vonhippel.html"]
   - id: tk35
     cau: 'Dãy 5, 6, 6, 7, 7, 8, 8, 9, 10, 80: trung bình 14,6; trung vị 7,5; yếu vị 6, 7 và 8; 9 trên 10 người kiếm từ 10 triệu trở xuống; người kiếm 80 triệu kéo trung bình lên gần gấp đôi trung vị.'
     loai: so-lieu
@@ -454,10 +483,11 @@ nhan_dinh:
     trich: To calculate the mean weight of 50 people, add the 50 weights together and divide by 50. | If n is an even number, the median is equal to the two middle values added together and divided by two after the data has been ordered. | The mode is the most frequent value.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5 (cách tính)
     ket_qua: da-sua
-    ghi_chu: 'gia-dinh: dãy số do site tự đặt. Đã tính lại: tổng 146, 146 / 10 = 14,6; vị trí 5 và 6 là 7 và 8, (7 + 8) / 2 = 7,5; 6, 7, 8 mỗi số hai lần; 9 giá trị từ 5 đến 10 (đều dưới hoặc bằng 10); 14,6 / 7,5 = 1,95. Chữ cũ: "kéo trung bình lên gấp đôi" thành "gần gấp đôi trung vị"; bỏ ngoặc "(có thể là nhà sáng lập)" (phỏng đoán).'
+    ghi_chu: 'gia-dinh: dãy số do site tự đặt. Đã tính lại: tổng 146, 146 / 10 = 14,6; vị trí 5 và 6 là 7 và 8, (7 + 8) / 2 = 7,5; 6, 7, 8 mỗi số hai lần; 9 giá trị từ 5 đến 10 (đều dưới hoặc bằng 10); 14,6 / 7,5 = 1,95. Chữ cũ: "kéo trung bình lên gấp đôi" thành "gần gấp đôi trung vị"; bỏ ngoặc "(có thể là nhà sáng lập)" (phỏng đoán). Review (Claude Sonnet 5.5, 30/10/2026): dung. Tính lại: tổng 146, trung bình 14,6; trung vị 7,5; yếu vị 6, 7, 8; 14,6 / 7,5 = 1,95 ("gần gấp đôi"); 9 trên 10 người từ 10 triệu trở xuống.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
     luot_2_ghi_chu: Ví dụ do trang tự dựng, tính lại đúng.
+    review: dung
   - id: tk36
     cau: 'Con số đúng về mặt tính toán vẫn có thể gây hiểu lầm nếu chọn sai con số để đưa tin: trung vị hợp hơn trung bình khi có giá trị cực đoan.'
     loai: loi-khuyen
@@ -466,9 +496,10 @@ nhan_dinh:
     trich: The median is generally a better measure of the center when there are extreme values or outliers because it is not affected by the precise numerical values of the outliers.
     vi_tri: OpenStax Introductory Statistics 2e, mục 2.5
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "con số đúng về mặt tính toán vẫn có thể gây hiểu lầm nếu chọn sai con số để đưa tin" (giữ), kèm "Trung vị 7,5 triệu kể đúng câu chuyện của nhân viên điển hình hơn". Làm mềm thành "cho biết nhân viên ở giữa kiếm bao nhiêu" và nêu căn cứ của giáo trình ("generally better").'
+    ghi_chu: 'Chữ cũ: "con số đúng về mặt tính toán vẫn có thể gây hiểu lầm nếu chọn sai con số để đưa tin" (giữ), kèm "Trung vị 7,5 triệu kể đúng câu chuyện của nhân viên điển hình hơn". Làm mềm thành "cho biết nhân viên ở giữa kiếm bao nhiêu" và nêu căn cứ của giáo trình ("generally better"). Review (Claude Sonnet 5.5, 30/10/2026): dung. "Generally better" làm căn cứ cho "hợp hơn khi có giá trị cực đoan"; câu nêu đúng mức.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data", "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/"]
+    review: dung
   - id: tk37
     cau: 'Quiz 1: với dữ liệu lệch phải, trung bình thường lớn hơn trung vị vì đuôi dài kéo trung bình đi nhiều hơn; chữ "thường" quan trọng vì quy tắc có ngoại lệ.'
     loai: dinh-nghia
@@ -479,7 +510,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Phương án sai: "trung vị luôn lớn hơn trung bình", "trung bình và trung vị luôn bằng nhau". Giải thích không dựa vào vị trí lựa chọn.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode"]
   - id: tk38
     cau: 'Quiz 2: yếu vị là giá trị xuất hiện nhiều nhất và tính được cả cho dữ liệu phân loại; trung bình cần cộng các giá trị, trung vị cần xếp dãy số theo thứ tự từ bé đến lớn, nên cả hai không hợp với màu sắc.'
     loai: dinh-nghia
@@ -490,7 +521,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Phương án sai: trung bình, trung vị.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
   - id: tk39
     cau: 'Quiz 3: trong nhóm 10 người, khi thu nhập của người kiếm nhiều nhất tăng gấp mười lần, trung bình tăng mạnh còn trung vị không đổi, vì trung vị chỉ phụ thuộc các giá trị ở giữa dãy đã xếp thứ tự, còn trung bình dùng mọi giá trị.'
     loai: dinh-nghia
@@ -501,7 +532,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Suy luận từ định nghĩa: với 10 giá trị, trung vị là trung bình của hai giá trị thứ 5 và 6 sau khi xếp; tăng giá trị lớn nhất không đổi thứ 5 và 6. Phương án sai: "cả hai cùng tăng gấp mười lần", "trung bình không đổi, trung vị tăng".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data" ]
+    luot_2_nguon: ["https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data"]
 doi_chu:
   - cu: 'Mô tả (description): "để không bị con số trung bình đánh lừa trong tin tức"'
     moi: '"để biết khi nào con số trung bình dễ gây hiểu lầm trong tin tức"'
@@ -542,3 +573,9 @@ doi_chu:
   - cu: 'Mục Nguồn: chỉ bài Vietstock (qua Cục Thống kê)'
     moi: Thông cáo của Cục Thống kê, trang khái niệm của Cục Thống kê, Vietstock, OpenStax Introductory Statistics 2e, von Hippel (2005)
     ly_do: Nguồn của các nhận định mới.
+  - cu: 'Hình mean-vs-median: nhãn "Trung bình: 13,5" và "Trung vị: 8,5" đặt cuối hai đường, đè lên cột; chú thích "kể đúng câu chuyện của người ở giữa"'
+    moi: Chú giải hai đường ở góc trên bên trái; nhãn giá trị có viền nền; chú thích "cho biết người ở giữa"
+    ly_do: 'Review tk18: nhãn khó đọc, chú thích lệch thân bài (tk17).'
+  - cu: '"Quy tắc nhớ nhanh: đuôi lệch về phía nào, trung bình bị kéo về phía đó nhiều hơn trung vị."'
+    moi: '"... trung bình thường bị kéo về phía đó nhiều hơn trung vị."'
+    ly_do: 'Review tk21: quy tắc có ngoại lệ (von Hippel 2005).'

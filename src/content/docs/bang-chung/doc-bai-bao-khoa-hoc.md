@@ -12,7 +12,7 @@ in_duoc: true
 
 Đa số các bài Hindawi bị rút nằm trong các số đặc biệt (*special issues*), loại số thường do biên tập viên khách phụ trách và bị kẻ gian lợi dụng để đăng nhanh bài kém chất lượng hay bài giả. Bài báo của Nature cũng ghi rằng tỉ lệ bài bị rút trong tổng số bài đăng năm 2022 vượt 0,2%.
 
-Điều đáng suy nghĩ: những bài báo ấy được đăng qua quy trình phản biện của tạp chí, và quy trình đó, theo lý do chính nhà xuất bản nêu, đã bị xâm phạm. "Đã đăng trên tạp chí khoa học" không đồng nghĩa với "đúng", và "đã qua phản biện" cũng vậy. Vì thế, thay vì tin vào con dấu, người đọc cần biết tự mình đánh giá một bài báo, và bước đầu tiên là hiểu nó được cấu tạo ra sao.
+Điều đáng suy nghĩ: những bài báo ấy được đăng qua quy trình phản biện của tạp chí, và theo lý do chính nhà xuất bản nêu khi rút bài, có lo ngại rằng quy trình đó đã bị xâm phạm. "Đã đăng trên tạp chí khoa học" không đồng nghĩa với "đúng", và "đã qua phản biện" cũng vậy. Vì thế, thay vì tin vào con dấu, người đọc cần biết tự mình đánh giá một bài báo, và bước đầu tiên là hiểu nó được cấu tạo ra sao.
 
 ## Khái niệm
 
@@ -37,7 +37,7 @@ Theo hướng dẫn của ICMJE, abstract nên nêu bối cảnh, mục đích, 
 
 ### Thứ tự đọc: không có cách duy nhất
 
-Không có một thứ tự đọc đúng duy nhất. Hướng dẫn "Ten simple rules for reading a scientific paper" nói: có người xem kỹ hình và bảng (kể cả chú thích) trước khi đọc phần chữ chính, có người đọc phần Results song song với hình và bảng; "không có cách nào đúng hay sai: hãy thử cả hai xem cách nào hợp với bạn". Một thứ tự thường gặp:
+Không có một thứ tự đọc đúng duy nhất. Hướng dẫn "Ten simple rules for reading a scientific paper" nói: có người xem kỹ hình và bảng (kể cả chú thích) trước khi đọc phần chữ chính, có người đọc phần Results song song với hình và bảng; "không có cách nào đúng hay sai: hãy thử cả hai xem cách nào hợp với bạn". Một thứ tự để thử (site tự gợi ý, không phải thứ tự chuẩn của nguồn nào):
 
 1. **Abstract trước tiên**, để có bản đồ toàn bài: câu hỏi là gì, làm bằng cách nào, thấy gì.
 2. **Hình và bảng kết quả**: với mỗi hình, hiểu trục x và y, cách dùng màu và cách phân tích thống kê, và vì sao tác giả chọn cách vẽ đó.
@@ -78,9 +78,9 @@ Nghe thì vững chắc, nhưng peer review có những giới hạn thật:
 
 - **Không đảm bảo đúng.** Phản biện hầu như luôn là công việc tình nguyện của các nhà nghiên cứu. Trong một thử nghiệm với 607 người phản biện của tạp chí *BMJ*, mỗi bản thảo được cài chín lỗi phương pháp lớn; ở bản đầu tiên, người phản biện phát hiện trung bình 2,58 trong chín lỗi ([Schroter và cộng sự, 2008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2586872/)). Gian lận và các thực hành đáng ngờ vẫn lọt vào kho văn bản khoa học dù có phản biện ([Tennant & Ross-Hellauer, 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7191707/)).
 - **Không thay được việc kiểm chứng độc lập.** Kết quả của một nghiên cứu còn cần được người khác làm lại ([khủng hoảng tái lập](/psyche/bang-chung/khung-hoang-tai-lap/)).
-- **Có thể bị thao túng.** Như tin tức đầu bài cho thấy: hơn 8.000 bài của các tạp chí Hindawi bị rút, với lý do gồm "quy trình phản biện đã bị xâm phạm" và "thao túng có hệ thống quy trình xuất bản và phản biện".
+- **Có thể bị thao túng.** Như tin tức đầu bài cho thấy: hơn 8.000 bài của các tạp chí Hindawi bị rút, với lý do gồm "lo ngại rằng quy trình phản biện đã bị xâm phạm" và "thao túng có hệ thống quy trình xuất bản và phản biện".
 
-Vì vậy, hãy xem "đã qua phản biện" như một bước đánh giá có ích nhưng không hoàn hảo: ICMJE ghi rằng giá trị thực của phản biện vẫn còn được bàn cãi, và một tổng quan của Cochrane kết luận rằng hiện còn ít bằng chứng thực nghiệm ủng hộ việc dùng phản biện biên tập ([Jefferson và cộng sự, 2007](https://pmc.ncbi.nlm.nih.gov/articles/PMC8973931/)). Đánh giá cuối cùng vẫn thuộc về người đọc: đọc Methods, xem dữ liệu, và giữ một khoảng hoài nghi lành mạnh.
+Vì vậy, hãy xem "đã qua phản biện" như một bước đánh giá có ích nhưng không hoàn hảo: ICMJE ghi rằng giá trị thực của phản biện vẫn còn được bàn cãi, và một tổng quan của Cochrane năm 2007 kết luận rằng khi đó còn ít bằng chứng thực nghiệm ủng hộ việc dùng phản biện biên tập ([Jefferson và cộng sự, 2007](https://pmc.ncbi.nlm.nih.gov/articles/PMC8973931/)). Đánh giá cuối cùng vẫn thuộc về người đọc: đọc Methods, xem dữ liệu, và giữ một khoảng hoài nghi lành mạnh.
 
 ## Mức độ chắc chắn
 
@@ -88,8 +88,8 @@ Vì vậy, hãy xem "đã qua phản biện" như một bước đánh giá có 
 Đây là nhận định về một quy trình do con người thực hiện, không phải phát hiện thực nghiệm về một hiệu ứng. Thử nghiệm của Schroter (2008), tổng quan của Jefferson (2007), tổng quan của Tennant và Ross-Hellauer (2020) và chính hướng dẫn của ICMJE cùng đi theo hướng này.
 :::
 
-:::vung-chac[IMRaD là cấu trúc chuẩn của bài báo nghiên cứu gốc, và Methods là nơi để tìm cách nghiên cứu được làm]
-Đây là quy ước trình bày được các hướng dẫn xuất bản nêu rõ, không phải phát hiện thực nghiệm. Khảo sát của Sollaci và Pereira (2004), hướng dẫn của ICMJE và hướng dẫn đọc bài báo của Carey và cộng sự (2020) cùng mô tả các mục này giống nhau.
+:::vung-chac[IMRaD là cấu trúc thường dùng của bài báo nghiên cứu gốc, và Methods là nơi để tìm cách nghiên cứu được làm]
+Đây là quy ước trình bày được các hướng dẫn xuất bản nêu rõ, không phải phát hiện thực nghiệm. Khảo sát của Sollaci và Pereira (2004), hướng dẫn của ICMJE và hướng dẫn đọc bài báo của Carey và cộng sự (2020) cùng mô tả các mục này giống nhau. Số liệu về mức phổ biến chỉ có cho bốn tạp chí nội khoa đến thập niên 1980, nên ý chính nói "thường dùng" chứ không nói "luôn".
 :::
 
 ## Bài tập
@@ -103,7 +103,7 @@ Tình huống sau là **giả định**, do site tự viết để luyện tập
 > Trước khi tin vào kết luận "nhạc cổ điển làm tăng IQ", hãy liệt kê **3 điều bạn cần kiểm tra trong mục Methods** của bài báo này.
 
 :::thu-gon[Gợi ý đáp án]
-1. **Mẫu:** 30 sinh viên được chia nhóm thế nào, có ngẫu nhiên không? Khoảng 15 người mỗi nhóm là mẫu nhỏ (xem [Bao nhiêu người là đủ?](/psyche/bang-chung/co-mau-suc-manh/)); sinh viên một trường có đại diện cho "mọi người" không?
+1. **Mẫu:** 30 sinh viên được chia nhóm thế nào, có ngẫu nhiên không? Khoảng 15 người mỗi nhóm là mẫu nhỏ: Simmons, Nelson và Simonsohn (2018) khuyên mặc định coi nghiên cứu có dưới 50 người mỗi nhóm là thiếu sức mạnh thống kê, trừ khi có bằng chứng ngược lại (xem [Bao nhiêu người là đủ?](/psyche/bang-chung/co-mau-suc-manh/)); sinh viên một trường có đại diện cho "mọi người" không?
 2. **Đo lường:** "Bài kiểm tra IQ" cụ thể là bài nào? Mức tăng 9 điểm nằm trên thang nào, và một bài kiểm tra ngắn làm ngay sau 10 phút nghe nhạc có thực sự đo được trí thông minh không?
 3. **Thiết kế:** Nhóm "ngồi yên" có phải nhóm đối chứng tốt không, hay hiệu ứng chỉ đơn giản do tâm trạng tốt lên sau khi nghe nhạc? Có đo IQ *trước* khi nghe nhạc để so sánh thay đổi không, hay chỉ đo một lần sau đó?
 :::
@@ -141,6 +141,7 @@ Tình huống sau là **giả định**, do site tự viết để luyện tập
 - International Committee of Medical Journal Editors. (2026). *Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals* (bản cập nhật tháng 1/2026), mục II.C.2.c, IV.A. <https://www.icmje.org/icmje-recommendations.pdf>
 - Jefferson, T., Rudin, M., Brodney Folse, S., & Davidoff, F. (2007). Editorial peer review for improving the quality of reports of biomedical studies. *Cochrane Database of Systematic Reviews*, MR000016. <https://doi.org/10.1002/14651858.MR000016.pub3>
 - Schroter, S., Black, N., Evans, S., Godlee, F., Osorio, L., & Smith, R. (2008). What errors do peer reviewers detect, and does training improve their ability to detect them? *Journal of the Royal Society of Medicine*, *101*(10), 507–514. <https://doi.org/10.1258/jrsm.2008.080062>
+- Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2018). False-positive citations. *Perspectives on Psychological Science*, *13*(2), 255–259. <https://doi.org/10.1177/1745691617698146>
 - Sollaci, L. B., & Pereira, M. G. (2004). The introduction, methods, results, and discussion (IMRAD) structure: a fifty-year survey. *Journal of the Medical Library Association*, *92*(3), 364–371. <https://pmc.ncbi.nlm.nih.gov/articles/PMC442179/>
 - Tennant, J. P., & Ross-Hellauer, T. (2020). The limitations to our understanding of peer review. *Research Integrity and Peer Review*, *5*(1), 6. <https://doi.org/10.1186/s41073-020-00092-1>
 - Van Noorden, R. (2023). More than 10,000 research papers were retracted in 2023 — a new record. *Nature*, *624*, 479–481. <https://doi.org/10.1038/d41586-023-03974-8>

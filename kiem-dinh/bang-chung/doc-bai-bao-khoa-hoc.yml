@@ -7,12 +7,12 @@ lan:
   - so: 1
     ngay: 2026-10-30
     nhanh: moi/d4-l2
-    ma_bam: null
+    ma_bam:
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L2 phần 2/2)
-      luot_2: null
-      review: null
-      kiem_mau: null
+      luot_2:
+      review: Claude Sonnet 5.5 (agent review D4-L2, 30/10/2026)
+      kiem_mau:
 nguon:
   - id: vannoorden2023
     ten: 'Van Noorden (2023), Nature 624, 479–481 (số 21/28-12-2023; đăng trực tuyến 12/12/2023): toàn văn bản in (PDF media.nature.com, 3 trang)'
@@ -42,6 +42,10 @@ nguon:
     ten: 'Jefferson, Rudin, Brodney Folse & Davidoff (2007), Cochrane Database Syst Rev, MR000016: tóm tắt (PMC8973931); chưa đọc phần thân'
     link: https://doi.org/10.1002/14651858.MR000016.pub3
     toan_van: false
+  - id: simmons2018
+    ten: 'Simmons, Nelson & Simonsohn (2018), Perspect Psychol Sci 13(2), 255–259: toàn văn (bản mở, faculty.wharton.upenn.edu)'
+    link: https://doi.org/10.1177/1745691617698146
+    toan_van: true
 nhan_dinh:
   - id: d1
     cau: 'Tháng 12 năm 2023, tạp chí Nature đưa tin: số lượt rút bài báo nghiên cứu năm 2023 đã vượt 10.000, phá các kỷ lục hằng năm.'
@@ -51,10 +55,11 @@ nhan_dinh:
     trich: The number of retractions issued for research articles in 2023 has passed 10,000 — smashing annual records
     vi_tri: Đoạn mở đầu (tr. 479); đăng trực tuyến 12/12/2023 theo Crossref
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "số bài báo khoa học bị rút lại trong năm 2023 đã vượt 10.000 — một kỷ lục chưa từng có". Chữ mới: "số lượt rút bài báo nghiên cứu ... phá các kỷ lục hằng năm". Lý do: bám bản tin ("retractions issued for research articles", "smashing annual records"); "chưa từng có" mạnh hơn.'
+    ghi_chu: 'Chữ cũ: "số bài báo khoa học bị rút lại trong năm 2023 đã vượt 10.000 — một kỷ lục chưa từng có". Chữ mới: "số lượt rút bài báo nghiên cứu ... phá các kỷ lục hằng năm". Lý do: bám bản tin ("retractions issued for research articles", "smashing annual records"); "chưa từng có" mạnh hơn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp bản tin Nature (21/28/12/2023): "passed 10,000 — smashing annual records"; trang ghi "bài báo nghiên cứu bị rút lại".'
     luot_2: dung
-    luot_2_nguon: [ "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf" ]
+    luot_2_nguon: ["https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf"]
     luot_2_ghi_chu: Bài Nature sau tường trả phí; đọc bản PDF tin ở media.nature.com và đối chiếu với Retraction Watch.
+    review: dung
   - id: d2
     cau: 'Phần lớn các lượt rút bài năm 2023 đến từ các tạp chí của Hindawi, công ty con của nhà xuất bản Wiley ở Luân Đôn: hơn 8.000 bài bị rút, với lý do gồm "thao túng có hệ thống quy trình xuất bản và phản biện".'
     loai: so-lieu
@@ -63,10 +68,11 @@ nhan_dinh:
     trich: The bulk of 2023’s retractions were from journals owned by Hindawi, a London-based subsidiary of the publisher Wiley | Hindawi journals have pulled more than 8,000 articles, citing factors such as “concerns that the peer review process has been compromised” and “systematic manipulation of the publication and peer-review process”
     vi_tri: Bản in, tr. 479
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Phần lớn đến từ các tạp chí của nhà xuất bản Hindawi (hơn 8.000 bài), sau khi điều tra phát hiện quy trình phản biện bị thao túng một cách có hệ thống". Chữ mới: Hindawi là công ty con của Wiley; "thao túng có hệ thống" là lý do nêu trong thông báo rút bài (cùng lý do "quy trình phản biện bị xâm phạm"), cuộc điều tra do biên tập viên nội bộ và các nhà nghiên cứu liêm chính đề xuất. Lý do: bài báo nói "citing factors", không nói chính Nature phát hiện.'
+    ghi_chu: 'Chữ cũ: "Phần lớn đến từ các tạp chí của nhà xuất bản Hindawi (hơn 8.000 bài), sau khi điều tra phát hiện quy trình phản biện bị thao túng một cách có hệ thống". Chữ mới: Hindawi là công ty con của Wiley; "thao túng có hệ thống" là lý do nêu trong thông báo rút bài (cùng lý do "quy trình phản biện bị xâm phạm"), cuộc điều tra do biên tập viên nội bộ và các nhà nghiên cứu liêm chính đề xuất. Lý do: bài báo nói "citing factors", không nói chính Nature phát hiện. Review (Claude Sonnet 5.5, 30/10/2026): dung. Hindawi, công ty con của Wiley, hơn 8.000 bài; "thao túng có hệ thống" là lý do Hindawi nêu (khớp trích).'
     luot_2: dung
-    luot_2_nguon: [ "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles" ]
+    luot_2_nguon: ["https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles"]
     luot_2_ghi_chu: Bài Nature sau tường trả phí; đọc bản PDF tin ở media.nature.com và đối chiếu với Retraction Watch.
+    review: dung
   - id: d3
     cau: Đa số các bài Hindawi bị rút nằm trong các số đặc biệt (special issues), loại số thường do biên tập viên khách phụ trách và bị kẻ gian lợi dụng để đăng nhanh bài kém chất lượng hay bài giả.
     loai: phat-hien
@@ -77,7 +83,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Mục mới.
     luot_2: dung
-    luot_2_nguon: [ "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles" ]
+    luot_2_nguon: ["https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles"]
     luot_2_ghi_chu: Bài Nature sau tường trả phí; đọc bản PDF tin ở media.nature.com và đối chiếu với Retraction Watch.
   - id: d4
     cau: Tỉ lệ bài bị rút trong tổng số bài đăng, theo phân tích của Nature, năm 2022 vượt 0,2%.
@@ -89,7 +95,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Mục mới (cho đúng quy mô).
     luot_2: dung
-    luot_2_nguon: [ "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf" ]
+    luot_2_nguon: ["https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf"]
     luot_2_ghi_chu: Bài Nature sau tường trả phí; đọc bản PDF tin ở media.nature.com và đối chiếu với Retraction Watch.
   - id: d5
     cau: Bài của Nature đăng ở Nature 624, trang 479–481, tác giả Richard Van Noorden.
@@ -100,10 +106,10 @@ nhan_dinh:
     vi_tri: Bản in; Crossref 10.1038/d41586-023-03974-8
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf" ]
+    luot_2_nguon: ["https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf"]
     luot_2_ghi_chu: Bài Nature sau tường trả phí; đọc bản PDF tin ở media.nature.com và đối chiếu với Retraction Watch.
   - id: d6
-    cau: Những bài Hindawi bị rút được đăng qua quy trình phản biện của tạp chí, và quy trình đó, theo lý do nhà xuất bản nêu, đã bị xâm phạm; vì thế "đã đăng" hay "đã qua phản biện" không đồng nghĩa với "đúng".
+    cau: Những bài Hindawi bị rút được đăng qua quy trình phản biện của tạp chí, và theo lý do nhà xuất bản nêu khi rút bài, có lo ngại rằng quy trình đó đã bị xâm phạm; vì thế "đã đăng" hay "đã qua phản biện" không đồng nghĩa với "đúng".
     loai: phat-hien
     nguon:
       - vannoorden2023
@@ -111,9 +117,10 @@ nhan_dinh:
     trich: concerns that the peer review process has been compromised | Published papers are not truths etched in stone.
     vi_tri: Van Noorden, tr. 479; Carey, Rule 6
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Điều đáng suy nghĩ nhất: tất cả những bài báo đó đều đã vượt qua phản biện trước khi được đăng." Chữ mới: bài được đăng qua quy trình phản biện của tạp chí, quy trình ấy đã bị xâm phạm. Lý do: "tất cả những bài báo đó" (cả 10.000) mạnh hơn nguồn: bài báo nói về Hindawi và một phần là bài hội nghị IEEE (khoảng một phần tư số lượt rút). Suy luận "đã được đăng qua quy trình phản biện" là của site.'
+    ghi_chu: 'Chữ cũ: "Điều đáng suy nghĩ nhất: tất cả những bài báo đó đều đã vượt qua phản biện trước khi được đăng." Chữ mới: bài được đăng qua quy trình phản biện của tạp chí, quy trình ấy đã bị xâm phạm. Lý do: "tất cả những bài báo đó" (cả 10.000) mạnh hơn nguồn: bài báo nói về Hindawi và một phần là bài hội nghị IEEE (khoảng một phần tư số lượt rút). Suy luận "đã được đăng qua quy trình phản biện" là của site. Review (Claude Sonnet 5.5, 30/10/2026): sai. Câu "theo lý do nhà xuất bản nêu, [quy trình] đã bị xâm phạm" mạnh hơn nguồn: Hindawi ghi lý do rút bài là "concerns that the peer review process has been compromised" (lo ngại), không khẳng định đã bị xâm phạm. Đã sửa ở câu và trang: "có lo ngại rằng quy trình đó đã bị xâm phạm".'
     luot_2: dung
-    luot_2_nguon: [ "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles" ]
+    luot_2_nguon: ["https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles"]
+    review: sai
   - id: d7
     cau: Thay vì tin vào con dấu, người đọc cần biết tự mình đánh giá một bài báo, và bước đầu là hiểu nó được cấu tạo ra sao.
     loai: loi-khuyen
@@ -123,7 +130,7 @@ nhan_dinh:
     vi_tri: Rule 6
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d8
     cau: Bài báo khoa học thực nghiệm thường chia thành bốn phần Introduction, Methods, Results, Discussion; cấu trúc này gọi là IMRAD (viết là IMRaD).
     loai: dinh-nghia
@@ -133,9 +140,10 @@ nhan_dinh:
     trich: The text of articles reporting original research is usually divided into Introduction, Methods, Results, and Discussion sections. This so-called “IMRAD” structure
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 15, mục IV.A.1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Hầu hết bài báo khoa học thực nghiệm đều tuân theo một cấu trúc chung". Chữ mới: "thường chia". Lý do: ICMJE nói "usually" và còn có kiểu bài khác (tổng quan, báo cáo ca); số liệu độ phổ biến chỉ có cho tạp chí nội khoa (d15).'
+    ghi_chu: 'Chữ cũ: "Hầu hết bài báo khoa học thực nghiệm đều tuân theo một cấu trúc chung". Chữ mới: "thường chia". Lý do: ICMJE nói "usually" và còn có kiểu bài khác (tổng quan, báo cáo ca); số liệu độ phổ biến chỉ có cho tạp chí nội khoa (d15). Review (Claude Sonnet 5.5, 30/10/2026): dung. "Thường" khớp "usually" của ICMJE.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d9
     cau: Introduction nêu bối cảnh và tầm quan trọng của vấn đề, và mục tiêu hay giả thuyết cụ thể của nghiên cứu.
     loai: dinh-nghia
@@ -145,9 +153,10 @@ nhan_dinh:
     trich: Provide a context or background for the study (that is, the nature of the problem and its significance). State the specific purpose or research objective of, or hypothesis tested by, the study or observation.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17, mục IV.A.3.c
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đặt câu hỏi: đã biết gì, chưa biết gì, nghiên cứu này muốn trả lời điều gì". Chữ mới theo ICMJE. Lý do: "đã biết gì, chưa biết gì" không có trong hướng dẫn.'
+    ghi_chu: 'Chữ cũ: "Đặt câu hỏi: đã biết gì, chưa biết gì, nghiên cứu này muốn trả lời điều gì". Chữ mới theo ICMJE. Lý do: "đã biết gì, chưa biết gì" không có trong hướng dẫn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE (context, purpose, hypothesis).'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d10
     cau: 'Methods mô tả cách làm: ai tham gia, đo lường bằng gì, phân tích ra sao, đủ chi tiết để người khác có thể làm lại.'
     loai: dinh-nghia
@@ -158,7 +167,7 @@ nhan_dinh:
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17; Carey, Table 2
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d11
     cau: Results trình bày đã thấy gì, theo thứ tự hợp lý, kết quả chính trước; phần bàn luận về ý nghĩa nằm ở mục sau.
     loai: dinh-nghia
@@ -168,9 +177,10 @@ nhan_dinh:
     trich: Present your results in logical sequence in the text, tables, and figures, giving the main or most important findings first. | The results should be objective observations.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17, mục IV.A.3.e; Carey, Table 2
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Trình bày đã thấy gì: số liệu, hình, bảng — chưa bàn luận, chưa vội kết luận". Lý do: bám ICMJE ("logical sequence", "most important findings first") và Carey ("objective observations").'
+    ghi_chu: 'Chữ cũ: "Trình bày đã thấy gì: số liệu, hình, bảng — chưa bàn luận, chưa vội kết luận". Lý do: bám ICMJE ("logical sequence", "most important findings first") và Carey ("objective observations"). Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE (main findings first) và Carey ("objective observations").'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d12
     cau: Discussion tóm tắt kết quả chính, giải thích kết quả có nghĩa là gì, nêu giới hạn của nghiên cứu và đặt nó vào bối cảnh bằng chứng đã có.
     loai: dinh-nghia
@@ -180,9 +190,10 @@ nhan_dinh:
     trich: It is useful to begin the discussion by briefly summarizing the main findings, and explore possible mechanisms or explanations for these findings. ... put your findings in the context of the totality of the relevant evidence. State the limitations of your study
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 18, mục IV.A.3.f
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Giải thích kết quả có nghĩa là gì, thừa nhận giới hạn, đối chiếu với nghiên cứu khác". Lý do: sát ICMJE; không đổi nghĩa đáng kể.'
+    ghi_chu: 'Chữ cũ: "Giải thích kết quả có nghĩa là gì, thừa nhận giới hạn, đối chiếu với nghiên cứu khác". Lý do: sát ICMJE; không đổi nghĩa đáng kể. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE phần Discussion (tóm tắt, cơ chế, bối cảnh, giới hạn).'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d13
     cau: Bài thường có thêm Abstract (tóm tắt) ở đầu và References (tài liệu tham khảo) ở cuối.
     loai: dinh-nghia
@@ -192,7 +203,7 @@ nhan_dinh:
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 16 và 18, mục IV.A.3.b và g
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d14
     cau: 'Cấu trúc IMRaD tạo điều kiện cho việc đọc theo từng mô-đun: người đọc lướt từng phần để tìm thông tin cụ thể; muốn biết mẫu bao nhiêu người thì mở Methods, muốn xem số liệu thì mở Results.'
     loai: phat-hien
@@ -202,9 +213,10 @@ nhan_dinh:
     trich: facilitates modular reading | browse in each section of the article, looking for specific information
     vi_tri: Sollaci & Pereira, mục Discussion
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Cấu trúc chung này tồn tại để người đọc biết tìm thông tin ở đâu: ... không cần đọc từ đầu đến cuối như đọc tiểu thuyết." Chữ mới ghi là nhận xét của Sollaci và Pereira. Lý do: "tồn tại để" nói về lý do ra đời; chính Sollaci và Pereira viết rằng họ "did not find definite reasons" cho việc IMRAD chiếm ưu thế, chỉ nói nó thuận tiện đọc theo mô-đun.'
+    ghi_chu: 'Chữ cũ: "Cấu trúc chung này tồn tại để người đọc biết tìm thông tin ở đâu: ... không cần đọc từ đầu đến cuối như đọc tiểu thuyết." Chữ mới ghi là nhận xét của Sollaci và Pereira. Lý do: "tồn tại để" nói về lý do ra đời; chính Sollaci và Pereira viết rằng họ "did not find definite reasons" cho việc IMRAD chiếm ưu thế, chỉ nói nó thuận tiện đọc theo mô-đun. Review (Claude Sonnet 5.5, 30/10/2026): dung. Ghi là nhận xét của Sollaci và Pereira; "tạo điều kiện đọc theo mô-đun" khớp "facilitates modular reading".'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC442179/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC442179/"]
+    review: dung
   - id: d15
     cau: 'Khảo sát bốn tạp chí nội khoa hàng đầu (BMJ, JAMA, The Lancet, NEJM) từ 1935 đến 1985: IMRaD bắt đầu được dùng từ thập niên 1940, đạt 80% bài nghiên cứu gốc vào thập niên 1970 và là kiểu duy nhất trong thập niên 1980.'
     loai: so-lieu
@@ -215,7 +227,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Mục mới. Chỉ là nội khoa; phạm vi này ghi rõ trên trang.
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC442179/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC442179/"]
   - id: d16
     cau: Hướng dẫn của ICMJE gọi IMRaD không phải một khuôn xuất bản tùy tiện mà phản ánh quá trình khám phá khoa học.
     loai: phat-hien
@@ -226,7 +238,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Mục mới.
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d17
     cau: Theo hướng dẫn của ICMJE, abstract nên nêu bối cảnh, mục đích, các bước tiến hành cơ bản (chọn người tham gia, bối cảnh, đo lường, phương pháp phân tích), kết quả chính (nêu độ lớn hiệu ứng cụ thể nếu có thể), kết luận chính, ghi các giới hạn quan trọng và không diễn giải vượt quá kết quả.
     loai: phat-hien
@@ -235,9 +247,10 @@ nhan_dinh:
     trich: The abstract should provide the context or background for the study and should state the study’s purpose, basic procedures (selection of study participants, settings, measurements, analytical methods), main findings (giving specific effect sizes and their statistical and clinical significance, if possible), and principal conclusions. It should ... note important limitations, and not overinterpret findings.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 16, mục IV.A.3.b
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "một abstract tốt phải trả lời được bốn câu hỏi: hỏi gì, làm thế nào, thấy gì, nghĩa là gì." Chữ mới theo ICMJE. Lý do: "bốn câu hỏi" là cách nói của site, không có nguồn.'
+    ghi_chu: 'Chữ cũ: "một abstract tốt phải trả lời được bốn câu hỏi: hỏi gì, làm thế nào, thấy gì, nghĩa là gì." Chữ mới theo ICMJE. Lý do: "bốn câu hỏi" là cách nói của site, không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đối chiếu ICMJE IV.A.1.b: các mục abstract và "not overinterpret findings" khớp.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d18
     cau: Nếu abstract chỉ toàn lời khẳng định mà không cho biết người ta đã làm gì với bao nhiêu người, bạn càng cần đọc kỹ phần Methods trước khi tin.
     loai: loi-khuyen
@@ -246,9 +259,10 @@ nhan_dinh:
     trich: basic procedures (selection of study participants, settings, measurements, analytical methods), main findings (giving specific effect sizes
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 16
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "thì đó là abstract quảng cáo chứ không phải abstract khoa học". Lý do: nhãn "abstract quảng cáo" không có nguồn; ý khuyên đọc Methods giữ lại, suy từ yêu cầu của ICMJE về nội dung abstract.'
+    ghi_chu: 'Chữ cũ: "thì đó là abstract quảng cáo chứ không phải abstract khoa học". Lý do: nhãn "abstract quảng cáo" không có nguồn; ý khuyên đọc Methods giữ lại, suy từ yêu cầu của ICMJE về nội dung abstract. Review (Claude Sonnet 5.5, 30/10/2026): dung. Lời khuyên suy từ yêu cầu của ICMJE, không gắn nhãn "abstract quảng cáo".'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d19
     cau: 'Không có một thứ tự đọc bài báo đúng duy nhất: có người xem kỹ hình và bảng (kể cả chú thích) trước phần chữ chính, có người đọc Results song song với hình và bảng; "không có cách nào đúng hay sai: hãy thử cả hai xem cách nào hợp với bạn".'
     loai: phat-hien
@@ -257,21 +271,23 @@ nhan_dinh:
     trich: 'Some people like to scrutinize the figures and tables (including legends) before reading any of the “main text” | There is no correct or incorrect approach: Try both to see what works best for you.'
     vi_tri: Rule 4
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: tiêu đề "Thứ tự đọc khôn ngoan" và "Các nhà khoa học có kinh nghiệm hiếm khi đọc bài báo từ đầu đến cuối. Một thứ tự phổ biến và hiệu quả:". Chữ mới: không có thứ tự đúng duy nhất. Lý do: "hiếm khi", "phổ biến và hiệu quả" không có nguồn; Carey nói không có cách đúng sai.'
+    ghi_chu: 'Chữ cũ: tiêu đề "Thứ tự đọc khôn ngoan" và "Các nhà khoa học có kinh nghiệm hiếm khi đọc bài báo từ đầu đến cuối. Một thứ tự phổ biến và hiệu quả:". Chữ mới: không có thứ tự đúng duy nhất. Lý do: "hiếm khi", "phổ biến và hiệu quả" không có nguồn; Carey nói không có cách đúng sai. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đã đối chiếu Carey Rule 4: câu in nghiêng "There is no correct or incorrect approach: Try both..." đúng nguyên văn.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
+    review: dung
   - id: d20
-    cau: 'Đọc Abstract trước tiên để có bản đồ toàn bài: câu hỏi là gì, làm bằng cách nào, thấy gì.'
+    cau: 'Một thứ tự để thử (do site gợi ý, không phải thứ tự chuẩn của nguồn nào): đọc Abstract trước để có bản đồ toàn bài: câu hỏi là gì, làm bằng cách nào, thấy gì.'
     loai: loi-khuyen
     nguon:
       - carey2020
     trich: A brief overview of the research question, approach, results, and interpretation.
     vi_tri: Table 2, hàng Abstract
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: thêm "Nếu abstract đã không liên quan đến điều bạn quan tâm, dừng lại ở đây cho đỡ tốn thời gian." Bỏ câu thêm (suy luận từ Rule 1 "Pick your reading goal": mục đích đọc quyết định cách đọc, nhưng không có câu nói đúng điều này). Thứ tự này ghi là "thứ tự thường gặp", không phải quy tắc.'
+    ghi_chu: 'Chữ cũ: thêm "Nếu abstract đã không liên quan đến điều bạn quan tâm, dừng lại ở đây cho đỡ tốn thời gian." Bỏ câu thêm (suy luận từ Rule 1 "Pick your reading goal": mục đích đọc quyết định cách đọc, nhưng không có câu nói đúng điều này). Thứ tự này ghi là "thứ tự thường gặp", không phải quy tắc. Review (Claude Sonnet 5.5, 30/10/2026): sai. Trang gọi "Abstract trước tiên" là "một thứ tự thường gặp", nhưng Carey và ICMJE không đưa thứ tự đọc nào (Carey chỉ nói abstract là "road map or elevator pitch", Rule 4 nói không có cách đúng sai; ICMJE nói abstract là phần nhiều người đọc nhất). Thứ tự năm bước là lời khuyên của site. Đã đổi câu dẫn thành "Một thứ tự để thử (site tự gợi ý, không phải thứ tự chuẩn của nguồn nào)"; câu sau đó "không phải quy tắc cứng" giữ.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf"]
     luot_2_ghi_chu: Carey chỉ mô tả abstract là bản đồ toàn bài, không nói "đọc trước tiên"; lời khuyên hợp lý, ICMJE nói abstract là phần nhiều người đọc nhất.
+    review: sai
   - id: d21
     cau: Với mỗi hình, hiểu trục x và y, cách dùng màu và cách phân tích thống kê, và vì sao tác giả chọn cách vẽ đó.
     loai: loi-khuyen
@@ -280,9 +296,10 @@ nhan_dinh:
     trich: For each figure, work to understand each x- and y-axes, color scheme, statistical approach (if one was used), and why the particular plotting approach was used.
     vi_tri: Rule 4
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "xem dữ liệu "nói" gì trước khi đọc lời của tác giả. Chú ý trục đồ thị, cỡ mẫu, và độ lớn của hiệu ứng — đừng chỉ nhìn xem cột nào cao hơn." Chữ mới: theo Rule 4. Lý do: "cỡ mẫu" và "độ lớn hiệu ứng" không có trong Rule 4 (Carey không nhắc); riêng độ lớn hiệu ứng có ở d17, d30.'
+    ghi_chu: 'Chữ cũ: "xem dữ liệu "nói" gì trước khi đọc lời của tác giả. Chú ý trục đồ thị, cỡ mẫu, và độ lớn của hiệu ứng — đừng chỉ nhìn xem cột nào cao hơn." Chữ mới: theo Rule 4. Lý do: "cỡ mẫu" và "độ lớn hiệu ứng" không có trong Rule 4 (Carey không nhắc); riêng độ lớn hiệu ứng có ở d17, d30. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp Carey Rule 4 (trục, màu, cách phân tích, cách vẽ).'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
+    review: dung
   - id: d22
     cau: Methods cho biết nghiên cứu làm gì và làm thế nào; lý tưởng nhất, đọc Methods là đủ để làm lại dự án, và nên quay lại Methods nhiều lần để hiểu rõ dữ liệu có được thế nào.
     loai: loi-khuyen
@@ -292,9 +309,10 @@ nhan_dinh:
     trich: Ideally, one should be able to recreate a project by reading the methods. | Do not be afraid to refer back to the methods section frequently to ensure a full understanding
     vi_tri: Table 2; Rule 4
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "phần quan trọng nhất để đánh giá độ tin cậy. Ai tham gia? Bao nhiêu người? Đo lường bằng công cụ gì? Phân tích bằng cách nào? Có nhóm đối chứng không?" Chữ mới theo Carey, câu hỏi chi tiết chuyển xuống d28–d30. Lý do: "quan trọng nhất" không có nguồn.'
+    ghi_chu: 'Chữ cũ: "phần quan trọng nhất để đánh giá độ tin cậy. Ai tham gia? Bao nhiêu người? Đo lường bằng công cụ gì? Phân tích bằng cách nào? Có nhóm đối chứng không?" Chữ mới theo Carey, câu hỏi chi tiết chuyển xuống d28–d30. Lý do: "quan trọng nhất" không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp Carey Table 2 (recreate a project) và lời khuyên quay lại Methods; không còn "quan trọng nhất".'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
+    review: dung
   - id: d23
     cau: Đọc phần chữ của Results và đối chiếu với hình và bảng.
     loai: loi-khuyen
@@ -304,7 +322,7 @@ nhan_dinh:
     vi_tri: Rule 4
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
   - id: d24
     cau: Discussion là nơi tác giả diễn giải kết quả và đặt nó vào bối cảnh các phát hiện đã có; Introduction nêu câu hỏi nghiên cứu và vì sao nó quan trọng.
     loai: dinh-nghia
@@ -313,9 +331,10 @@ nhan_dinh:
     trich: What do the results mean and how do they relate to previous findings in the literature? | Several paragraphs (or less) to present the research question and why it is important.
     vi_tri: Table 2
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "đây là phần "kể chuyện": tác giả diễn giải, bảo vệ và quảng bá phát hiện của mình. Đọc sau khi bạn đã có nhận định độc lập từ dữ liệu, bạn sẽ khó bị dẫn dắt hơn." Chữ mới: mô tả theo Carey. Lý do: "kể chuyện", "bảo vệ và quảng bá" không có nguồn.'
+    ghi_chu: 'Chữ cũ: "đây là phần "kể chuyện": tác giả diễn giải, bảo vệ và quảng bá phát hiện của mình. Đọc sau khi bạn đã có nhận định độc lập từ dữ liệu, bạn sẽ khó bị dẫn dắt hơn." Chữ mới: mô tả theo Carey. Lý do: "kể chuyện", "bảo vệ và quảng bá" không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp Carey Table 2 (Discussion, Introduction).'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d25
     cau: 'Nguyên tắc nên giữ: đừng để diễn giải của tác giả đi trước bằng chứng; ngay cả các phần được coi là khách quan cũng do tác giả viết nên chịu ảnh hưởng từ cách diễn giải của họ, và người đọc nên phản biện lại diễn giải ấy để thử độ vững của kết luận.'
     loai: loi-khuyen
@@ -324,9 +343,10 @@ nhan_dinh:
     trich: even “objective” sections are written by and, therefore, influenced by the authors interpretations. | it is essential that the reader pushes back against the author’s interpretation to test the strength of their conclusions.
     vi_tri: Rules 5 và 6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "đừng để kết luận của tác giả đi trước bằng chứng". Chữ mới theo Rules 5–6. Lý do: nêu đúng điều Carey nói, thêm lý do.'
+    ghi_chu: 'Chữ cũ: "đừng để kết luận của tác giả đi trước bằng chứng". Chữ mới theo Rules 5–6. Lý do: nêu đúng điều Carey nói, thêm lý do. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đã đối chiếu Carey Rule 5 ("even objective sections ... influenced by the authors interpretations") và Rule 6 ("pushes back").'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
+    review: dung
   - id: d26
     cau: Methods cho biết kết luận được tạo ra bằng cách nào.
     loai: dinh-nghia
@@ -335,9 +355,10 @@ nhan_dinh:
     trich: The guiding principle of the Methods section should be clarity about how and why a study was done in a particular way.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Một kết luận chỉ đáng tin bằng chính phương pháp đã tạo ra nó." Lý do: câu cũ mạnh và không có nguồn.'
+    ghi_chu: 'Chữ cũ: "Một kết luận chỉ đáng tin bằng chính phương pháp đã tạo ra nó." Lý do: câu cũ mạnh và không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp "guiding principle ... clarity about how and why".'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d27
     cau: Một nghiên cứu nên mô tả tiêu chí tuyển chọn người tham gia (kể cả nhóm đối chứng), nguồn dân số và mức đại diện của mẫu so với nhóm người mà nghiên cứu muốn nói tới; vì vậy khi đọc Methods hãy hỏi ai tham gia, bao nhiêu người, được tuyển chọn thế nào và có đại diện không.
     loai: loi-khuyen
@@ -346,9 +367,10 @@ nhan_dinh:
     trich: Clearly describe the selection of observational or experimental participants (healthy individuals or patients, including controls), including eligibility and exclusion criteria and a description of the source population. ... Comment on how representative the study sample is of the larger population of interest.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17, mục IV.A.3.d.i
     ket_qua: da-lam-mem
-    ghi_chu: Chữ cũ không nêu căn cứ; thêm trích hướng dẫn của ICMJE.
+    ghi_chu: 'Chữ cũ không nêu căn cứ; thêm trích hướng dẫn của ICMJE. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đã đối chiếu ICMJE IV.A.3.a.i (Selection and Description of Participants): tiêu chí chọn, nguồn dân số, "Comment on how representative the study sample is".'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d28
     cau: Methods cần nêu phương pháp, thiết bị và quy trình đo đủ chi tiết để người khác làm lại kết quả; vì vậy hãy hỏi người ta đo cái gì, bằng công cụ nào.
     loai: loi-khuyen
@@ -357,9 +379,10 @@ nhan_dinh:
     trich: Identify methods, equipment ... and procedures in sufficient detail to allow others to reproduce the results.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17, mục IV.A.3.d.ii
     ket_qua: da-lam-mem
-    ghi_chu: 'Câu hỏi "công cụ đó có đo đúng thứ cần đo không, có ổn định khi đo lại không" là câu hỏi của site (khái niệm độ giá trị và độ tin cậy: trang do-luong, D4-L2 phần 1); trang không khẳng định đó là yêu cầu của ICMJE.'
+    ghi_chu: 'Câu hỏi "công cụ đó có đo đúng thứ cần đo không, có ổn định khi đo lại không" là câu hỏi của site (khái niệm độ giá trị và độ tin cậy: trang do-luong, D4-L2 phần 1); trang không khẳng định đó là yêu cầu của ICMJE. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE Methods; hai câu hỏi về độ giá trị, độ tin cậy ghi là của site.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d29
     cau: ICMJE khuyên tránh chỉ dựa vào kiểm định giả thuyết như giá trị p vì nó không truyền đạt đủ thông tin về độ lớn hiệu ứng và độ chính xác của ước lượng; vì vậy hãy hỏi hiệu ứng lớn cỡ nào chứ không chỉ "có ý nghĩa thống kê hay không".
     loai: loi-khuyen
@@ -368,9 +391,10 @@ nhan_dinh:
     trich: Avoid relying solely on statistical hypothesis testing, such as P values, which fail to convey important information about effect size and precision of estimates.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17, mục IV.A.3.d.iii
     ket_qua: da-lam-mem
-    ghi_chu: Chữ cũ không có nguồn; ý trùng nguyên tắc 5 của ASA (trang p-value).
+    ghi_chu: 'Chữ cũ không có nguồn; ý trùng nguyên tắc 5 của ASA (trang p-value). Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE ("Avoid relying solely on statistical hypothesis testing, such as P values").'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d30
     cau: Theo ICMJE, Methods nên đủ chi tiết để người khác có dữ liệu có thể làm lại kết quả; nếu Methods quá sơ sài để trả lời những câu hỏi ở trên thì bài khó được đánh giá và đáng được coi là dấu hiệu cảnh báo.
     loai: loi-khuyen
@@ -379,9 +403,10 @@ nhan_dinh:
     trich: The Methods section should aim to be sufficiently detailed such that others with access to the data would be able to reproduce the results.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "một nghiên cứu tốt không có lý do gì giấu cách mình làm". Chữ mới: suy luận có điều kiện từ yêu cầu của ICMJE. Lý do: bỏ khẳng định về động cơ.'
+    ghi_chu: 'Chữ cũ: "một nghiên cứu tốt không có lý do gì giấu cách mình làm". Chữ mới: suy luận có điều kiện từ yêu cầu của ICMJE. Lý do: bỏ khẳng định về động cơ. Review (Claude Sonnet 5.5, 30/10/2026): dung. Suy luận có điều kiện từ yêu cầu của ICMJE; không quy động cơ.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d31
     cau: 'Khi hỏi về Abstract: câu hỏi nghiên cứu là gì, kết luận chính là gì, có nêu cách làm và độ lớn hiệu ứng không.'
     loai: loi-khuyen
@@ -390,9 +415,10 @@ nhan_dinh:
     trich: basic procedures ... main findings (giving specific effect sizes and their statistical and clinical significance, if possible), and principal conclusions
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 16
     ket_qua: da-lam-mem
-    ghi_chu: Thêm "có nêu cách làm và độ lớn hiệu ứng không" theo d17.
+    ghi_chu: 'Thêm "có nêu cách làm và độ lớn hiệu ứng không" theo d17. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp d17.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d32
     cau: 'Khi xem hình hoặc bảng: hỏi trục là gì, cách phân tích thống kê là gì, hiệu ứng lớn hay chỉ "có ý nghĩa thống kê".'
     loai: loi-khuyen
@@ -402,9 +428,10 @@ nhan_dinh:
     trich: work to understand each x- and y-axes, color scheme, statistical approach | giving specific effect sizes and their statistical and clinical significance
     vi_tri: Carey Rule 4; ICMJE tr. 16
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Mỗi điểm hoặc cột đại diện cho bao nhiêu người? ... Khoảng thể hiện độ bất định có rộng không?" Chữ mới: bỏ câu hỏi về số người và khoảng bất định (không có trong nguồn đã đọc cho phần hình). Lý do: bỏ chỗ không có nguồn.'
+    ghi_chu: 'Chữ cũ: "Mỗi điểm hoặc cột đại diện cho bao nhiêu người? ... Khoảng thể hiện độ bất định có rộng không?" Chữ mới: bỏ câu hỏi về số người và khoảng bất định (không có trong nguồn đã đọc cho phần hình). Lý do: bỏ chỗ không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu hỏi về trục, cách phân tích: khớp Carey Rule 4; "hiệu ứng lớn hay chỉ có ý nghĩa thống kê" theo ICMJE.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
+    review: dung
   - id: d33
     cau: 'Khi đọc Methods: hỏi ai tham gia, tuyển chọn thế nào, đo bằng gì, có nhóm đối chứng không.'
     loai: loi-khuyen
@@ -413,9 +440,10 @@ nhan_dinh:
     trich: including eligibility and exclusion criteria and a description of the source population | Identify methods, equipment ... and procedures
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17
     ket_qua: da-sua
-    ghi_chu: Chữ cũ thêm "có phân nhóm ngẫu nhiên không". Chữ mới bỏ cụm này khỏi phần nguồn của ICMJE (ICMJE nhắc nhóm đối chứng ở "participants ... including controls", không nhắc ngẫu nhiên ở mục Methods); ngẫu nhiên đã có ở trang thi-nghiem-doi-chung.
+    ghi_chu: 'Chữ cũ thêm "có phân nhóm ngẫu nhiên không". Chữ mới bỏ cụm này khỏi phần nguồn của ICMJE (ICMJE nhắc nhóm đối chứng ở "participants ... including controls", không nhắc ngẫu nhiên ở mục Methods); ngẫu nhiên đã có ở trang thi-nghiem-doi-chung. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE (người tham gia, đối chứng, phương pháp); đã bỏ "ngẫu nhiên" khỏi phần nguồn.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d34
     cau: 'Khi đọc Results: hỏi lời mô tả có khớp hình không, và mọi kết quả đã nêu ở Methods có được báo cáo không.'
     loai: loi-khuyen
@@ -424,9 +452,10 @@ nhan_dinh:
     trich: Provide data on all primary and secondary outcomes identified in the Methods section.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17, mục IV.A.3.e
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Có dấu hiệu chỉ chọn trình bày những kết quả đẹp?" Chữ mới theo ICMJE. Lý do: "kết quả đẹp" là cách nói của site; ICMJE yêu cầu báo cáo mọi kết quả chính và phụ đã nêu ở Methods.'
+    ghi_chu: 'Chữ cũ: "Có dấu hiệu chỉ chọn trình bày những kết quả đẹp?" Chữ mới theo ICMJE. Lý do: "kết quả đẹp" là cách nói của site; ICMJE yêu cầu báo cáo mọi kết quả chính và phụ đã nêu ở Methods. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE: báo cáo mọi kết quả chính và phụ đã nêu ở Methods.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d35
     cau: 'Khi đọc Discussion: hỏi tác giả có nêu giới hạn của nghiên cứu không, có xét cách giải thích khác cho kết quả không.'
     loai: loi-khuyen
@@ -436,9 +465,10 @@ nhan_dinh:
     trich: State the limitations of your study | Are there other, equally likely, explanations for what is observed?
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 18; Carey, Rule 6
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "hay chỉ kể một câu chuyện duy nhất?" bỏ vế sau; suy luận.'
+    ghi_chu: 'Chữ cũ: "hay chỉ kể một câu chuyện duy nhất?" bỏ vế sau; suy luận. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ICMJE ("State the limitations") và Carey (cách giải thích khác).'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
+    review: dung
   - id: d36
     cau: 'Khi đọc References: hỏi các trích dẫn dẫn về nghiên cứu gốc hay chỉ là bài viết lại.'
     loai: loi-khuyen
@@ -448,12 +478,13 @@ nhan_dinh:
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 18, mục IV.A.3.g.i
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d37
     cau: Các trang liên kết trong bài (Mẫu và chọn mẫu, Bao nhiêu người là đủ?, Hiệu ứng lớn hay nhỏ?, p-value, Vì sao cần nhóm đối chứng?, Tương quan và nhân quả, Khủng hoảng tái lập) có trong trang.yml.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: src/data/trang.yml có bang-chung/mau-va-chon-mau, co-mau-suc-manh, do-lon-hieu-ung, p-value, thi-nghiem-doi-chung, tuong-quan-nhan-qua, khung-hoang-tai-lap; liên kết đúng dạng /psyche/<trang>/.'
+    ghi_chu: 'Đã kiểm: src/data/trang.yml có bang-chung/mau-va-chon-mau, co-mau-suc-manh, do-lon-hieu-ung, p-value, thi-nghiem-doi-chung, tuong-quan-nhan-qua, khung-hoang-tai-lap; liên kết đúng dạng /psyche/<trang>/. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đã kiểm trên trang và dữ liệu: cả bảy trang liên kết (mau-va-chon-mau, co-mau-suc-manh, do-lon-hieu-ung, p-value, thi-nghiem-doi-chung, tuong-quan-nhan-qua, khung-hoang-tai-lap) có bản ghi ở src/data/trang.yml và có trong bản build; trong dist/ mọi link /psyche/... của trang đều thành link thật, không có "sắp có" trong thân bài; đường dẫn đúng dạng /psyche/<trang>/.'
+    review: dung
   - id: d38
     cau: Peer review (phản biện đồng nghiệp) là việc các chuyên gia thường không thuộc ban biên tập đánh giá một bản thảo gửi tới tạp chí.
     loai: dinh-nghia
@@ -462,9 +493,10 @@ nhan_dinh:
     trich: Peer review is the critical assessment of manuscripts submitted to journals by experts who are usually not part of the editorial staff.
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 5, mục II.C.2.c
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "quy trình mà trước khi đăng, bản thảo được gửi cho 2–3 chuyên gia độc lập trong cùng lĩnh vực (thường ẩn danh) để đánh giá: câu hỏi có đáng giá không, phương pháp có ổn không, kết luận có vượt quá dữ liệu không. Họ có thể yêu cầu sửa chữa, bổ sung phân tích, hoặc đề nghị từ chối đăng." Chữ mới theo ICMJE. Lý do: "2–3", "ẩn danh", danh sách điều được đánh giá không có nguồn; ICMJE nói số người phản biện và mở hay ẩn danh khác nhau giữa các tạp chí.'
+    ghi_chu: 'Chữ cũ: "quy trình mà trước khi đăng, bản thảo được gửi cho 2–3 chuyên gia độc lập trong cùng lĩnh vực (thường ẩn danh) để đánh giá: câu hỏi có đáng giá không, phương pháp có ổn không, kết luận có vượt quá dữ liệu không. Họ có thể yêu cầu sửa chữa, bổ sung phân tích, hoặc đề nghị từ chối đăng." Chữ mới theo ICMJE. Lý do: "2–3", "ẩn danh", danh sách điều được đánh giá không có nguồn; ICMJE nói số người phản biện và mở hay ẩn danh khác nhau giữa các tạp chí. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp định nghĩa ICMJE; không còn "2-3 chuyên gia" hay "ẩn danh".'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    review: dung
   - id: d39
     cau: Theo ICMJE, phản biện giúp bản thảo được xem xét công bằng trong cộng đồng khoa học, giúp biên tập viên quyết định bài nào hợp với tạp chí, và thường giúp tác giả và biên tập viên cải thiện chất lượng báo cáo.
     loai: phat-hien
@@ -475,7 +507,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Mục mới.
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d40
     cau: Số lượng và loại người phản biện, và việc phản biện mở hay ẩn danh, khác nhau giữa các tạp chí; tạp chí không bắt buộc làm theo khuyến nghị của người phản biện, dù thuận hay chê.
     loai: phat-hien
@@ -486,7 +518,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Mục mới.
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d41
     cau: Phản biện hầu như luôn là công việc tình nguyện của các nhà nghiên cứu.
     loai: phat-hien
@@ -495,10 +527,11 @@ nhan_dinh:
     trich: which is almost invariably performed as a voluntary service by researchers
     vi_tri: Tennant & Ross-Hellauer, mục Discussion (chi phí)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Người phản biện làm việc không công, trong thời gian hạn chế, và thường không được xem dữ liệu gốc." Chữ mới: chỉ giữ "tình nguyện". Lý do: "thời gian hạn chế" không có nguồn; "thường không được xem dữ liệu gốc" trái ICMJE, nói biên tập viên có trách nhiệm bảo đảm người phản biện tiếp cận mọi tài liệu liên quan.'
+    ghi_chu: 'Chữ cũ: "Người phản biện làm việc không công, trong thời gian hạn chế, và thường không được xem dữ liệu gốc." Chữ mới: chỉ giữ "tình nguyện". Lý do: "thời gian hạn chế" không có nguồn; "thường không được xem dữ liệu gốc" trái ICMJE, nói biên tập viên có trách nhiệm bảo đảm người phản biện tiếp cận mọi tài liệu liên quan. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp "almost invariably performed as a voluntary service"; câu trên trang dùng "hầu như luôn".'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7191707" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7191707"]
     luot_2_ghi_chu: Nguồn ghi "almost invariably voluntary"; câu viết "hầu như luôn" khớp.
+    review: dung
   - id: d42
     cau: Trong một thử nghiệm với 607 người phản biện của tạp chí BMJ, mỗi bản thảo thử được cài chín lỗi phương pháp lớn; ở bản đầu tiên, người phản biện phát hiện trung bình 2,58 trong chín lỗi.
     loai: so-lieu
@@ -509,7 +542,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Mục mới. Kết luận của bài: biên tập viên không nên cho rằng người phản biện sẽ phát hiện phần lớn lỗi lớn.'
     luot_2: dung
-    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18840867/" ]
+    luot_2_nguon: ["https://pubmed.ncbi.nlm.nih.gov/18840867/"]
   - id: d43
     cau: 'Schroter và cộng sự kết luận: biên tập viên không nên cho rằng người phản biện sẽ phát hiện phần lớn lỗi lớn.'
     loai: phat-hien
@@ -520,7 +553,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Mục mới.
     luot_2: dung
-    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18840867/" ]
+    luot_2_nguon: ["https://pubmed.ncbi.nlm.nih.gov/18840867/"]
   - id: d44
     cau: Gian lận và các thực hành nghiên cứu đáng ngờ vẫn lọt vào kho văn bản khoa học dù có phản biện.
     loai: phat-hien
@@ -529,9 +562,10 @@ nhan_dinh:
     trich: fraudulent behaviour, or questionable research practices, still enter the scholarly record at high proportions, even though peer review occurs
     vi_tri: Tennant & Ross-Hellauer, mục Peer review and reproducibility
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Người phản biện ... có thể bỏ sót lỗi — thậm chí bỏ sót gian lận tinh vi." Chữ mới theo Tennant. Lý do: "gian lận tinh vi" không có nguồn.'
+    ghi_chu: 'Chữ cũ: "Người phản biện ... có thể bỏ sót lỗi — thậm chí bỏ sót gian lận tinh vi." Chữ mới theo Tennant. Lý do: "gian lận tinh vi" không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp trích Tennant & Ross-Hellauer.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7191707", "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7191707", "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf"]
+    review: dung
   - id: d45
     cau: Phản biện không thay được việc kiểm chứng độc lập bằng cách làm lại nghiên cứu.
     loai: phat-hien
@@ -540,33 +574,36 @@ nhan_dinh:
     trich: fraudulent behaviour, or questionable research practices, still enter the scholarly record at high proportions, even though peer review occurs
     vi_tri: Tennant & Ross-Hellauer
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Nhiều lỗi chỉ lộ ra khi có người khác làm lại nghiên cứu một cách độc lập." Chữ mới: suy luận nhẹ hơn. Chỗ cho lượt 2: câu mang tính suy luận từ d44; liên kết khủng hoảng tái lập ở trang đã khóa.'
+    ghi_chu: 'Chữ cũ: "Nhiều lỗi chỉ lộ ra khi có người khác làm lại nghiên cứu một cách độc lập." Chữ mới: suy luận nhẹ hơn. Chỗ cho lượt 2: câu mang tính suy luận từ d44; liên kết khủng hoảng tái lập ở trang đã khóa. Review (Claude Sonnet 5.5, 30/10/2026): dung. Suy luận nhẹ từ d44, nêu như nhận định của trang; khung "Không thay được việc kiểm chứng độc lập" không dẫn con số nào.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7191707", "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7191707", "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf"]
+    review: dung
   - id: d46
-    cau: Hơn 8.000 bài của các tạp chí Hindawi bị rút, với lý do gồm "quy trình phản biện đã bị xâm phạm" và "thao túng có hệ thống quy trình xuất bản và phản biện".
+    cau: Hơn 8.000 bài của các tạp chí Hindawi bị rút, với lý do gồm "lo ngại rằng quy trình phản biện đã bị xâm phạm" và "thao túng có hệ thống quy trình xuất bản và phản biện".
     loai: phat-hien
     nguon:
       - vannoorden2023
     trich: citing factors such as “concerns that the peer review process has been compromised” and “systematic manipulation of the publication and peer-review process”
     vi_tri: Bản in, tr. 479
-    ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "hàng nghìn bài báo đã vượt qua một quy trình phản biện bị "thao túng có hệ thống", rồi sau đó đồng loạt bị rút lại." Lý do: "hàng nghìn" nhẹ hơn thực tế (hơn 8.000), "đồng loạt" và "sau đó" không có nguồn.'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "hàng nghìn bài báo đã vượt qua một quy trình phản biện bị "thao túng có hệ thống", rồi sau đó đồng loạt bị rút lại." Lý do: "hàng nghìn" nhẹ hơn thực tế (hơn 8.000), "đồng loạt" và "sau đó" không có nguồn. Review (Claude Sonnet 5.5, 30/10/2026): sai. Cùng lỗi d6: trang trích "quy trình phản biện đã bị xâm phạm" như lý do đã xác lập, trong khi nguồn là "concerns that the peer review process has been compromised". Đã sửa trang và câu: "lo ngại rằng quy trình phản biện đã bị xâm phạm".'
     luot_2: dung
-    luot_2_nguon: [ "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles" ]
+    luot_2_nguon: ["https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf", "https://retractionwatch.com/2023/12/19/hindawi-reveals-process-for-retracting-more-than-8000-paper-mill-articles"]
     luot_2_ghi_chu: Bài Nature sau tường trả phí; đọc bản PDF tin ở media.nature.com và đối chiếu với Retraction Watch.
+    review: sai
   - id: d47
-    cau: 'Nên xem "đã qua phản biện" như một bước đánh giá có ích nhưng không hoàn hảo: ICMJE ghi rằng giá trị thực của phản biện vẫn còn được bàn cãi, và một tổng quan của Cochrane kết luận hiện còn ít bằng chứng thực nghiệm ủng hộ việc dùng phản biện biên tập.'
+    cau: 'Nên xem "đã qua phản biện" như một bước đánh giá có ích nhưng không hoàn hảo: ICMJE ghi rằng giá trị thực của phản biện vẫn còn được bàn cãi, và một tổng quan của Cochrane năm 2007 kết luận rằng khi đó còn ít bằng chứng thực nghiệm ủng hộ việc dùng phản biện biên tập.'
     loai: loi-khuyen
     nguon:
       - icmje2026
       - jefferson2007
     trich: The actual value of peer review is widely debated | At present, little empirical evidence is available to support the use of editorial peer review
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 5; Jefferson, Tóm tắt
-    ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "hãy xem "đã qua phản biện" như một bộ lọc sơ bộ — bài báo đã đủ nghiêm túc để được đem ra bàn — chứ không phải con dấu bảo đảm." Chữ mới theo ICMJE và Jefferson. Lý do: "bộ lọc sơ bộ" và "đủ nghiêm túc" không có nguồn. Jefferson: chưa đọc phần thân, chỉ tóm tắt; câu trích đầy đủ nói "as a mechanism to ensure quality of biomedical research".'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "hãy xem "đã qua phản biện" như một bộ lọc sơ bộ — bài báo đã đủ nghiêm túc để được đem ra bàn — chứ không phải con dấu bảo đảm." Chữ mới theo ICMJE và Jefferson. Lý do: "bộ lọc sơ bộ" và "đủ nghiêm túc" không có nguồn. Jefferson: chưa đọc phần thân, chỉ tóm tắt; câu trích đầy đủ nói "as a mechanism to ensure quality of biomedical research". Review (Claude Sonnet 5.5, 30/10/2026): sai. "Hiện còn ít bằng chứng" nói về tổng quan Cochrane của Jefferson, Rudin, Brodney Folse và Davidoff, công bố năm 2007: trình bày như hiện trạng 2026 là quá mạnh. Đã sửa câu và trang: "một tổng quan của Cochrane năm 2007 kết luận rằng khi đó còn ít bằng chứng"; ICMJE (2026) vẫn đỡ "giá trị thực còn được bàn cãi".'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf", "https://pubmed.ncbi.nlm.nih.gov/17443635/" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf", "https://pubmed.ncbi.nlm.nih.gov/17443635/"]
+    review: sai
   - id: d48
     cau: Phản biện đồng nghiệp không phát hiện được mọi lỗi và không bảo đảm một bài báo đúng.
     loai: nhan
@@ -586,9 +623,11 @@ nhan_dinh:
       - 'ICMJE (2026): giá trị thực của phản biện còn được bàn cãi; tạp chí không bắt buộc theo khuyến nghị'
     ly_do: 'Là nhận định phủ định ("không bảo đảm"), về một quy trình do con người thực hiện, không phải phát hiện thực nghiệm về hiệu ứng: bốn nguồn độc lập cùng chiều (thử nghiệm ngẫu nhiên, tổng quan hệ thống của Cochrane, tổng quan phân tích, hướng dẫn của ICMJE), không nguồn nào phản bác; thước đo mục 4 viết cho phát hiện thực nghiệm, nên xét theo mức đồng thuận như nhãn của p-value đã khóa. Jefferson chỉ đọc tóm tắt; chỗ cho review.'
     luot_2: dung
-    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18840867/", "https://www.icmje.org/icmje-recommendations.pdf", "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf" ]
+    luot_2_nguon: ["https://pubmed.ncbi.nlm.nih.gov/18840867/", "https://www.icmje.org/icmje-recommendations.pdf", "https://media.nature.com/original/magazine-assets/d41586-023-03974-8/d41586-023-03974-8.pdf"]
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn Vững chắc cho nhận định phủ định về quy trình ("không bảo đảm"), xét theo đồng thuận bốn nguồn độc lập như ly_do ghi; không nói phản biện vô ích, và khung không nêu tỉ lệ nào ngoài thử nghiệm Schroter. Khớp thước đo mục 4 cho nguyên tắc phương pháp.'
+    review: dung
   - id: d49
-    cau: IMRaD là cấu trúc chuẩn của bài báo nghiên cứu gốc, và Methods là nơi để tìm cách nghiên cứu được làm.
+    cau: IMRaD là cấu trúc thường dùng của bài báo nghiên cứu gốc, và Methods là nơi để tìm cách nghiên cứu được làm.
     loai: nhan
     nguon:
       - icmje2026
@@ -596,7 +635,7 @@ nhan_dinh:
       - carey2020
     trich: This so-called “IMRAD” structure is not an arbitrary publication format but a reflection of the process of scientific discovery. | Ideally, one should be able to recreate a project by reading the methods.
     vi_tri: ICMJE tr. 15, 17; Carey Table 2; Sollaci, Tóm tắt
-    ket_qua: dung
+    ket_qua: da-lam-mem
     nhan: vung-chac
     co_so:
       - 'ICMJE (2026): IMRAD "usually" chia bài nghiên cứu gốc; Methods đủ chi tiết để làm lại'
@@ -604,23 +643,27 @@ nhan_dinh:
       - 'Carey và cộng sự (2020): Table 2 mô tả bốn phần giống ICMJE'
     ly_do: 'Là quy ước trình bày được hướng dẫn xuất bản nêu rõ, không phải phát hiện thực nghiệm; ba nguồn nhất quán. Giới hạn: số liệu độ phổ biến chỉ có cho tạp chí nội khoa và đến thập niên 1980; ICMJE dành cho tạp chí y khoa, nên câu trên trang nói "bài báo nghiên cứu gốc" và dùng "thường".'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): sai. Khung ghi "IMRaD là cấu trúc chuẩn của bài báo nghiên cứu gốc" (không "thường"), trong khi ICMJE dùng "usually" và số liệu phổ biến của Sollaci và Pereira chỉ có cho bốn tạp chí nội khoa đến thập niên 1980; thân bài đã nói "thường theo". Đã sửa ý chính thành "cấu trúc thường dùng" và thêm câu giới hạn vào khung. Nhãn Vững chắc giữ cho quy ước trình bày đã được hướng dẫn xuất bản nêu rõ, sau khi sửa.'
+    review: sai
   - id: d50
     cau: Tình huống giả định ở "Thử một lần" (30 sinh viên, nghe nhạc cổ điển, tăng IQ 9 điểm) không trùng với một nghiên cứu thật được nêu trong trang.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: gia-dinh. Tình huống ghi rõ là giả định; không có nhận định nào khác của trang dựa vào nó. Đã kiểm trên trang.
+    ghi_chu: 'gia-dinh. Tình huống ghi rõ là giả định; không có nhận định nào khác của trang dựa vào nó. Đã kiểm trên trang. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đã kiểm trên trang: tình huống ghi rõ "giả định, do site tự viết"; không nhận định nào khác dựa vào nó; không nêu tên nghiên cứu thật nào.'
+    review: dung
   - id: d51
-    cau: Khoảng 15 người mỗi nhóm là mẫu nhỏ.
+    cau: 'Khoảng 15 người mỗi nhóm là mẫu nhỏ: Simmons, Nelson và Simonsohn (2018) khuyên mặc định coi nghiên cứu có dưới 50 người mỗi nhóm là thiếu sức mạnh thống kê, trừ khi có bằng chứng ngược lại.'
     loai: loi-khuyen
     nguon:
-      - icmje2026
-    trich: Comment on how representative the study sample is of the larger population of interest.
-    vi_tri: ICMJE (PDF tháng 1/2026), tr. 17
-    ket_qua: da-lam-mem
-    ghi_chu: 'gia-dinh. Chữ cũ: "15 người mỗi nhóm" (giả định chia đều 30 người). Chữ mới: "khoảng 15"; "mẫu nhỏ" kèm liên kết trang Bao nhiêu người là đủ? (đã kiểm: hiệu ứng nhỏ cần mẫu lớn).'
+      - simmons2018
+    trich: we would suggest that you should assume that a study with fewer than 50 per cell is underpowered unless there is evidence to the contrary.
+    vi_tri: Simmons, Nelson & Simonsohn 2018, tr. 258
+    ket_qua: da-sua
+    ghi_chu: 'gia-dinh. Chữ cũ: "15 người mỗi nhóm" (giả định chia đều 30 người). Chữ mới: "khoảng 15"; "mẫu nhỏ" kèm liên kết trang Bao nhiêu người là đủ? (đã kiểm: hiệu ứng nhỏ cần mẫu lớn). Review (Claude Sonnet 5.5, 30/10/2026): sai. "Khoảng 15 người mỗi nhóm là mẫu nhỏ" chỉ được đỡ bằng trích ICMJE về tính đại diện (nguồn trong hồ sơ không đỡ câu); nguồn đúng là Simmons, Nelson và Simonsohn (2018, Perspect Psychol Sci 13(2), 255-259), không có trong danh sách nguon, và trang không dẫn nguồn. Đã đọc bản mở: nhóm tác giả "suggest that you should assume that a study with fewer than 50 per cell is underpowered unless there is evidence to the contrary" (tr. 258), và gọi mốc 20 mỗi nhóm của chính họ năm 2011 là "comically low". Đã thêm nguồn simmons2018 vào hồ sơ và trang (câu và mục Nguồn), nêu mốc 50.'
     luot_2: dung
-    luot_2_nguon: [ "https://faculty.wharton.upenn.edu/wp-content/uploads/2017/02/26-Simmons-Nelson-Simonsohn-2018.pdf" ]
+    luot_2_nguon: ["https://faculty.wharton.upenn.edu/wp-content/uploads/2017/02/26-Simmons-Nelson-Simonsohn-2018.pdf"]
+    review: sai
   - id: d52
     cau: 'Với tình huống thử nghiệm, ba điều cần kiểm tra trong Methods: cách chia nhóm (có ngẫu nhiên không) và đại diện của mẫu; bài kiểm tra IQ cụ thể là bài nào và đo bằng thang nào; nhóm "ngồi yên" có là nhóm đối chứng tốt không và có đo IQ trước khi nghe nhạc không.'
     loai: loi-khuyen
@@ -629,9 +672,10 @@ nhan_dinh:
     trich: Clearly describe the selection of observational or experimental participants (healthy individuals or patients, including controls) | Identify methods, equipment ... and procedures
     vi_tri: ICMJE (PDF tháng 1/2026), tr. 17
     ket_qua: da-lam-mem
-    ghi_chu: gia-dinh. Câu "hiệu ứng chỉ đơn giản do tâm trạng tốt lên" là một giả thuyết thay thế đặt thành câu hỏi, không khẳng định.
+    ghi_chu: 'gia-dinh. Câu "hiệu ứng chỉ đơn giản do tâm trạng tốt lên" là một giả thuyết thay thế đặt thành câu hỏi, không khẳng định. Review (Claude Sonnet 5.5, 30/10/2026): dung. Ba điều cần kiểm tra khớp ICMJE về chọn người tham gia, đo lường; câu "do tâm trạng" là giả thuyết thay thế đặt thành câu hỏi.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://pubmed.ncbi.nlm.nih.gov/18840867/" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://pubmed.ncbi.nlm.nih.gov/18840867/"]
+    review: dung
   - id: d53
     cau: 'Câu hỏi 1: tìm cách tuyển người tham gia và công cụ đo ở Methods; Introduction nêu bối cảnh và mục tiêu, Discussion giải thích ý nghĩa của kết quả.'
     loai: dinh-nghia
@@ -643,7 +687,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Trùng d9, d10, d12.
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf"]
   - id: d54
     cau: 'Câu hỏi 2: phản biện giúp bản thảo được xem xét và thường giúp cải thiện cách báo cáo, nhưng người phản biện không phát hiện được mọi lỗi và quy trình có thể bị thao túng.'
     loai: phat-hien
@@ -656,7 +700,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Trùng d39, d42, d46.
     luot_2: dung
-    luot_2_nguon: [ "https://www.icmje.org/icmje-recommendations.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://pubmed.ncbi.nlm.nih.gov/18840867/" ]
+    luot_2_nguon: ["https://www.icmje.org/icmje-recommendations.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/", "https://pubmed.ncbi.nlm.nih.gov/18840867/"]
   - id: d55
     cau: 'Câu hỏi 3: các phần được coi là khách quan cũng do tác giả viết nên có thể mang diễn giải của họ; người đọc nên tự kiểm tra độ vững của kết luận.'
     loai: phat-hien
@@ -667,7 +711,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Trùng d25.
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7392212/"]
 doi_chu:
   - cu: 'description: "… thứ tự đọc khôn ngoan từ abstract đến phương pháp, và peer review bảo đảm được điều gì — và không bảo đảm được điều gì."'
     moi: 'description: "… gợi ý thứ tự đọc từ abstract đến phương pháp, và peer review bảo đảm được điều gì, không bảo đảm được điều gì."'
@@ -705,3 +749,18 @@ doi_chu:
   - cu: 'Mục "Mức độ chắc chắn" và "Bài tập" (mới); "Tự suy ngẫm"; đáp án Thử một lần: "15 người mỗi nhóm"'
     moi: Thêm hai khung nhãn (Vững chắc), phần "Bài tập" gồm "Thử một lần" (id thu-mot-lan giữ) và "Kiểm tra nhanh" 3 câu; "Thử suy ngẫm" (id tu-suy-ngam); "Khoảng 15 người mỗi nhóm"
     ly_do: Chuẩn hóa khuôn 7 mục (d48–d55).
+  - cu: '"... và quy trình đó, theo lý do chính nhà xuất bản nêu, đã bị xâm phạm"; "với lý do gồm quy trình phản biện đã bị xâm phạm"'
+    moi: '"... theo lý do chính nhà xuất bản nêu khi rút bài, có lo ngại rằng quy trình đó đã bị xâm phạm"; "lo ngại rằng quy trình phản biện đã bị xâm phạm"'
+    ly_do: 'Review d6, d46: nguồn nói "concerns that ... compromised".'
+  - cu: '"Một thứ tự thường gặp:"'
+    moi: '"Một thứ tự để thử (site tự gợi ý, không phải thứ tự chuẩn của nguồn nào):"'
+    ly_do: 'Review d20: không nguồn nào nêu thứ tự đọc.'
+  - cu: '"một tổng quan của Cochrane kết luận rằng hiện còn ít bằng chứng"'
+    moi: '"một tổng quan của Cochrane năm 2007 kết luận rằng khi đó còn ít bằng chứng"'
+    ly_do: 'Review d47: kết luận năm 2007, không phải hiện trạng.'
+  - cu: 'Ý chính khung: "IMRaD là cấu trúc chuẩn của bài báo nghiên cứu gốc"'
+    moi: '"IMRaD là cấu trúc thường dùng ..."; thêm câu giới hạn về số liệu của Sollaci và Pereira'
+    ly_do: 'Review d49: "chuẩn" mạnh hơn "usually" của ICMJE.'
+  - cu: '"Khoảng 15 người mỗi nhóm là mẫu nhỏ (xem Bao nhiêu người là đủ?)" (không nguồn)'
+    moi: 'Kèm Simmons, Nelson và Simonsohn (2018): coi nghiên cứu dưới 50 người mỗi nhóm là thiếu sức mạnh thống kê, trừ khi có bằng chứng ngược lại; thêm vào mục Nguồn'
+    ly_do: 'Review d51: câu cần nguồn.'

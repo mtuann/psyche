@@ -52,7 +52,7 @@ GỘP                 █—◆———█
 
 Quay lại ví dụ thật: Fischer và cộng sự (2011) tính ra **g = −0,35** cho hiệu ứng người ngoài cuộc (mô hình hiệu ứng cố định). Đọc con số này thế nào:
 
-- **g** là chênh lệch trung bình giữa hai nhóm, chia cho độ lệch chuẩn (có hiệu chỉnh cho mẫu nhỏ). Ở đây là nhóm có người khác chứng kiến trừ nhóm không có, nên **dấu âm (−)** nghĩa là có người khác chứng kiến thì người ta giúp ít hơn: đúng hướng lý thuyết dự đoán. Dấu chỉ cho biết *chiều*, không phải "xấu".
+- **g** là chênh lệch trung bình giữa hai nhóm, chia cho độ lệch chuẩn gộp của hai nhóm. Ở đây là nhóm có người khác chứng kiến trừ nhóm không có, nên **dấu âm (−)** nghĩa là có người khác chứng kiến thì người ta giúp ít hơn: đúng hướng lý thuyết dự đoán. Dấu chỉ cho biết *chiều*, không phải "xấu".
 - **Độ lớn:** theo quy ước của Cohen (1988), khoảng 0,2 gọi là nhỏ, 0,5 là trung bình; Fischer và cộng sự gọi g = −0,35 là hiệu ứng "nhỏ đến vừa". Các mốc này mang tính quy ước, không nên áp dụng cứng nhắc ([Lakens, 2013](https://doi.org/10.3389/fpsyg.2013.00863)).
 - **g không phải là xác suất.** g = −0,35 không có nghĩa là "35% người sẽ bỏ đi".
 

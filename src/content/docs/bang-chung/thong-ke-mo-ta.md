@@ -62,7 +62,7 @@ Khi vẽ dãy số thành biểu đồ, hình dạng của nó có thể **đố
 - **Lệch phải** (đuôi dài về phía giá trị lớn): vài giá trị rất lớn ở đuôi phải kéo trung bình lên, nên trung bình thường lớn hơn trung vị.
 - **Lệch trái** (đuôi dài về phía giá trị nhỏ): trung bình thường nhỏ hơn trung vị.
 
-Quy tắc nhớ nhanh: **đuôi lệch về phía nào, trung bình bị kéo về phía đó** nhiều hơn trung vị. Vì vậy khoảng cách giữa trung bình và trung vị gợi ý dữ liệu có lệch hay không.
+Quy tắc nhớ nhanh: **đuôi lệch về phía nào, trung bình thường bị kéo về phía đó** nhiều hơn trung vị. Vì vậy khoảng cách giữa trung bình và trung vị gợi ý dữ liệu có lệch hay không.
 
 Một chi tiết thêm: trong phân phối lệch phải, ba con số thường xếp theo thứ tự yếu vị < trung vị < trung bình. Yếu vị nằm ở đỉnh của phân phối, trung bình bị đuôi phải kéo đi xa nhất. Đây là quy tắc thường đúng chứ không phải luật: nó có thể sai, nhất là với dữ liệu rời rạc hay phân phối nhiều đỉnh, nên đừng kết luận về hình dạng của dữ liệu chỉ từ hai con số.
 

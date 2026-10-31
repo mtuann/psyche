@@ -10,7 +10,7 @@ in_duoc: true
 
 ## Một tin tức
 
-> **"Việt Nam xếp thứ 54 trong 143 quốc gia và vùng lãnh thổ về mức độ hạnh phúc"** — tin này được các báo trong nước đưa ngày 21/3/2024, sau khi báo cáo được công bố ngày 20/3, Ngày Quốc tế Hạnh phúc của Liên Hợp Quốc.
+> **Việt Nam xếp thứ 54 trong 143 quốc gia và vùng lãnh thổ về mức độ hạnh phúc** *(ý chính của tin, diễn đạt lại, không phải tít nguyên văn)*: báo *Vietnam Investment Review* đưa tin ngày 21/3/2024, sau khi báo cáo được công bố ngày 20/3, Ngày Quốc tế Hạnh phúc của Liên Hợp Quốc.
 
 Bảng xếp hạng là *World Happiness Report 2024*, dựa trên dữ liệu của Gallup World Poll: Việt Nam tăng 11 bậc so với năm 2023 (từ hạng 65 lên 54), Phần Lan đứng đầu ([Vietnam Investment Review, 3/2024](https://vir.com.vn/vietnam-named-54th-happiest-country-in-the-world-109709.html); [World Happiness Report 2024](https://worldhappiness.report/ed/2024/)).
 
@@ -53,7 +53,7 @@ Một vài mốc thường được nêu *(chỉ là quy ước tham khảo, kh�
 |---|---|
 | Từ khoảng 0,70 đến 0,95 | Khoảng giá trị được nhiều báo cáo coi là chấp nhận được |
 | Dưới khoảng 0,70 | Thường bị coi là thấp; nguyên nhân có thể là ít câu hỏi, các câu ít liên hệ với nhau, hay khái niệm nhiều mặt |
-| Trên khoảng 0,90 đến 0,95 | Có thể do các câu hỏi lặp lại nhau một cách thừa thãi; mức tối đa 0,90 từng được khuyến nghị |
+| Cao hơn khoảng 0,90 | Các báo cáo không thống nhất về mức tối đa; alpha quá cao có thể do các câu hỏi lặp lại nhau một cách thừa thãi, và mức tối đa 0,90 từng được khuyến nghị |
 
 (Cả ba dòng theo Tavakol & Dennick, 2011.) Đây chỉ là quy ước. Khảo sát các bài báo giáo dục khoa học, Taber (2018) thấy cách gọi bằng lời cho từng mức alpha khác nhau rất nhiều giữa các nghiên cứu. Mức cần thiết còn tùy mục đích dùng điểm số: Tiêu chuẩn 2014 nêu rằng cần độ tin cậy cao hơn với những cách dùng điểm số có hệ quả lớn hơn cho người làm bài. Nunnally (1978) viết rằng trong nhiều bối cảnh ứng dụng, độ tin cậy 0,80 chưa đủ cao, và khi cần ra quyết định quan trọng thì 0,95 nên là chuẩn mong muốn (tr. 245–246, theo trích của Metsämuuronen và Niemensivu, 2025).
 

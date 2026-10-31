@@ -7,12 +7,12 @@ lan:
   - so: 1
     ngay: 2026-10-30
     nhanh: moi/d4-l2
-    ma_bam: null
+    ma_bam:
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L2 phần 1/2)
-      luot_2: null
-      review: null
-      kiem_mau: null
+      luot_2:
+      review: Claude Sonnet 5.5 (agent review D4-L2, 30/10/2026)
+      kiem_mau:
 nguon:
   - id: whr2024-ch2
     ten: 'Helliwell, Huang, Shiplett & Wang (2024), World Happiness Report 2024, chương 2: toàn văn trực tuyến (worldhappiness.report)'
@@ -76,17 +76,18 @@ nguon:
     toan_van: true
 nhan_dinh:
   - id: dl1
-    cau: Báo cáo World Happiness Report 2024 được công bố ngày 20/3/2024, Ngày Quốc tế Hạnh phúc của Liên Hợp Quốc, và được báo đưa tin ngày 21/3/2024.
+    cau: Bài trên Vietnam Investment Review đưa tin Việt Nam xếp thứ 54/143 trong World Happiness Report 2024 ngày 21/3/2024; báo cáo được công bố ngày 20/3/2024, Ngày Quốc tế Hạnh phúc của Liên Hợp Quốc.
     loai: lich-su
     nguon:
       - vir2024
     trich: The findings, announced on March 20 to mark the United Nations’ International Day of Happiness | March 21, 2024
     vi_tri: Vietnam Investment Review, đầu bài
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "tin này lan khắp báo chí Việt Nam ngày 20/3/2024". Lý do: bài đã đọc (VIR) đăng 21/3/2024 và nói báo cáo công bố ngày 20/3; "lan khắp báo chí" không kiểm được, bỏ.'
+    ghi_chu: 'Chữ cũ: "tin này lan khắp báo chí Việt Nam ngày 20/3/2024". Lý do: bài đã đọc (VIR) đăng 21/3/2024 và nói báo cáo công bố ngày 20/3; "lan khắp báo chí" không kiểm được, bỏ. Review (Claude Sonnet 5.5, 30/10/2026): sai. Câu gốc ổn (VIR đăng 21/3/2024, báo cáo công bố 20/3), nhưng khối trích đầu trang vẫn in dòng "Việt Nam xếp thứ 54 trong 143 ... về mức độ hạnh phúc" trong nháy kép đậm như tít nguyên văn, mà không nguồn nào có đúng chữ ấy, và "các báo trong nước" chỉ có một báo trong hồ sơ. Đã bỏ nháy, ghi "ý chính của tin, diễn đạt lại, không phải tít nguyên văn", và nêu đúng báo (Vietnam Investment Review).'
     luot_2: dung
-    luot_2_nguon: [ "https://files.worldhappiness.report/WHR24.pdf", "https://wellbeing.hmc.ox.ac.uk/events/world-happiness-report-2024-global-launch", "https://en.baochinhphu.vn/viet-nam-jumps-11-steps-in-world-happiness-report-2024-111240321110305123.htm" ]
+    luot_2_nguon: ["https://files.worldhappiness.report/WHR24.pdf", "https://wellbeing.hmc.ox.ac.uk/events/world-happiness-report-2024-global-launch", "https://en.baochinhphu.vn/viet-nam-jumps-11-steps-in-world-happiness-report-2024-111240321110305123.htm"]
     luot_2_ghi_chu: Ngày 20/3 là Ngày Quốc tế Hạnh phúc của Liên Hợp Quốc (thông tin chung); trang Oxford không tự nói liên hệ này. Metadata PDF tạo ngày 18/3/2024, không mâu thuẫn.
+    review: sai
   - id: dl2
     cau: Trong World Happiness Report 2024, Việt Nam xếp thứ 54 trên 143 quốc gia và vùng lãnh thổ, tăng 11 bậc so với năm 2023 (từ hạng 65).
     loai: so-lieu
@@ -99,7 +100,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Đã đối chiếu dữ liệu gốc: tệp WHR24_Data_Figure_2.1.xls có 143 nước, Việt Nam ở hàng 54 (điểm 6,043); tệp WHR23_Data_Figure_2.1.xls có Việt Nam ở hàng 65 (điểm 5,763). 65 trừ 54 bằng 11. (Bài Báo Chính phủ ghi "từ hạng 75", mâu thuẫn với "tăng 11 bậc" của chính bài đó; dữ liệu gốc xác nhận 65.)'
     luot_2: dung
-    luot_2_nguon: [ "https://files.worldhappiness.report/WHR24_Data_Figure_2.1.xls", "https://files.worldhappiness.report/WHR23_Data_Figure_2.1.xls", "https://files.worldhappiness.report/WHR24.pdf" ]
+    luot_2_nguon: ["https://files.worldhappiness.report/WHR24_Data_Figure_2.1.xls", "https://files.worldhappiness.report/WHR23_Data_Figure_2.1.xls", "https://files.worldhappiness.report/WHR24.pdf"]
     luot_2_ghi_chu: Một bài báo tiếng Anh ghi nhầm "từ hạng 75"; số trong tệp WHR chính thức khớp câu.
   - id: dl3
     cau: Phần Lan đứng đầu bảng xếp hạng World Happiness Report 2024.
@@ -110,9 +111,10 @@ nhan_dinh:
     trich: a full six points (on the 0 to 10 scale) between Finland at the top and Afghanistan at the bottom
     vi_tri: 'WHR 2024, chương 2, phần Ranking of Happiness; tệp dữ liệu Hình 2.1 (hàng 1: Finland, điểm 7,74)'
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Phần Lan đứng đầu năm thứ bảy liên tiếp" (chỉ có bài VIR nói "seventh successive year"). Lý do: không kiểm được "thứ bảy liên tiếp" từ nguồn bậc 1 đã mở; chỉ giữ "đứng đầu".'
+    ghi_chu: 'Chữ cũ: "Phần Lan đứng đầu năm thứ bảy liên tiếp" (chỉ có bài VIR nói "seventh successive year"). Lý do: không kiểm được "thứ bảy liên tiếp" từ nguồn bậc 1 đã mở; chỉ giữ "đứng đầu". Review (Claude Sonnet 5.5, 30/10/2026): dung. "Đứng đầu" khớp WHR 2024 (Phần Lan hạng 1 trong tệp dữ liệu và chương 2); đã bỏ "thứ bảy liên tiếp".'
     luot_2: dung
-    luot_2_nguon: [ "https://files.worldhappiness.report/WHR24_Data_Figure_2.1.xls", "https://files.worldhappiness.report/WHR24.pdf" ]
+    luot_2_nguon: ["https://files.worldhappiness.report/WHR24_Data_Figure_2.1.xls", "https://files.worldhappiness.report/WHR24.pdf"]
+    review: dung
   - id: dl4
     cau: Bảng xếp hạng World Happiness Report dựa trên dữ liệu của Gallup World Poll.
     loai: phat-hien
@@ -121,9 +123,10 @@ nhan_dinh:
     trich: The Gallup World Poll, which remains the principal source of data in this report
     vi_tri: WHR 2024, chương 2, phần mở đầu
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "do các nhà khoa học hàng đầu thế giới phân tích" (lời của bài VIR, không phải nhận định kiểm được); bỏ.'
+    ghi_chu: 'Chữ cũ: "do các nhà khoa học hàng đầu thế giới phân tích" (lời của bài VIR, không phải nhận định kiểm được); bỏ. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp "principal source of data".'
     luot_2: dung
-    luot_2_nguon: [ "https://files.worldhappiness.report/WHR24.pdf" ]
+    luot_2_nguon: ["https://files.worldhappiness.report/WHR24.pdf"]
+    review: dung
   - id: dl5
     cau: 'Gallup World Poll yêu cầu mỗi người đánh giá cuộc sống hiện tại của mình bằng hình ảnh một cái thang: bậc 10 là cuộc sống tốt nhất có thể đối với họ, bậc 0 là tồi tệ nhất.'
     loai: phat-hien
@@ -132,9 +135,10 @@ nhan_dinh:
     trich: asks respondents to evaluate their current life as a whole using the image of a ladder, with the best possible life for them as a 10 and worst possible as a 0.
     vi_tri: WHR 2024, chương 2, phần mở đầu
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "cuộc đời tệ nhất có thể ... cuộc đời tốt nhất có thể, bạn đang đứng ở bậc nào?" Chữ mới sát nguồn: "best possible life for them" (tốt nhất có thể đối với họ).'
+    ghi_chu: 'Chữ cũ: "cuộc đời tệ nhất có thể ... cuộc đời tốt nhất có thể, bạn đang đứng ở bậc nào?" Chữ mới sát nguồn: "best possible life for them" (tốt nhất có thể đối với họ). Review (Claude Sonnet 5.5, 30/10/2026): dung. Mô tả thang bậc khớp WHR 2024 ch.2; "đối với họ" khớp "for them".'
     luot_2: dung
-    luot_2_nguon: [ "https://files.worldhappiness.report/WHR24.pdf" ]
+    luot_2_nguon: ["https://files.worldhappiness.report/WHR24.pdf"]
+    review: dung
   - id: dl6
     cau: Thứ hạng của mỗi nước dựa trên điểm trung bình của câu trả lời thang này trong ba năm (2021–2023).
     loai: phat-hien
@@ -143,9 +147,10 @@ nhan_dinh:
     trich: Countries are ranked according to their self-assessed life evaluations (answers to the Cantril ladder question in the Gallup World Poll), averaged over the years 2021-2023.
     vi_tri: WHR 2024, chương 2, phần Ranking of Happiness 2021-2023
     ket_qua: da-lam-mem
-    ghi_chu: Câu thêm so với trang cũ (trang cũ nói cả bảng "dựng lên từ đó" mà không nêu trung bình ba năm).
+    ghi_chu: 'Câu thêm so với trang cũ (trang cũ nói cả bảng "dựng lên từ đó" mà không nêu trung bình ba năm). Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp "averaged over the years 2021-2023".'
     luot_2: dung
-    luot_2_nguon: [ "https://files.worldhappiness.report/WHR24.pdf" ]
+    luot_2_nguon: ["https://files.worldhappiness.report/WHR24.pdf"]
+    review: dung
   - id: dl7
     cau: Điểm của mỗi nước dựa trên câu trả lời cho một câu hỏi duy nhất (thang Cantril).
     loai: phat-hien
@@ -156,7 +161,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Chữ cũ: "Một câu hỏi, một con số — và cả một bảng xếp hạng quốc gia được dựng lên từ đó." Giữ ý, theo đúng chữ "single-item".'
     luot_2: dung
-    luot_2_nguon: [ "https://files.worldhappiness.report/WHR24.pdf" ]
+    luot_2_nguon: ["https://files.worldhappiness.report/WHR24.pdf"]
   - id: dl8
     cau: 'Nhà nghiên cứu phải định nghĩa thao tác (operational definition) cho các khái niệm như hạnh phúc, lo âu, trí thông minh: mô tả chính xác điều mình đo và đo bằng cách nào, ví dụ qua điểm của một bài kiểm tra hay câu trả lời của một bảng hỏi.'
     loai: dinh-nghia
@@ -165,10 +170,11 @@ nhan_dinh:
     trich: An operational definition is a precise description of our variables | In operationalizing learning, we might choose to look at performance on a test
     vi_tri: OpenStax Psychology 2e, mục 2.2 (Research designs, phần Variables) và mục 2.3
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đo lường là việc gán con số cho những thứ không quan sát trực tiếp được — hạnh phúc, lo âu, trí thông minh, tính cách — thông qua những biểu hiện quan sát được, thường là câu trả lời cho một loạt câu hỏi". Lý do: viết lại theo khái niệm định nghĩa thao tác của giáo trình; "tính cách" bỏ vì không nêu trong nguồn; ví dụ hạnh phúc, lo âu, trí thông minh là các khái niệm tâm lý quen thuộc (suy luận, không phải trích).'
+    ghi_chu: 'Chữ cũ: "Đo lường là việc gán con số cho những thứ không quan sát trực tiếp được — hạnh phúc, lo âu, trí thông minh, tính cách — thông qua những biểu hiện quan sát được, thường là câu trả lời cho một loạt câu hỏi". Lý do: viết lại theo khái niệm định nghĩa thao tác của giáo trình; "tính cách" bỏ vì không nêu trong nguồn; ví dụ hạnh phúc, lo âu, trí thông minh là các khái niệm tâm lý quen thuộc (suy luận, không phải trích). Review (Claude Sonnet 5.5, 30/10/2026): dung. Định nghĩa thao tác khớp OpenStax; ví dụ hạnh phúc, lo âu, trí thông minh là của trang, nói rõ ở ghi chú.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
     luot_2_ghi_chu: Ví dụ trong câu (hạnh phúc, lo âu, trí thông minh) là ví dụ của trang; OpenStax dùng ví dụ học đại số. Định nghĩa đúng.
+    review: dung
   - id: dl9
     cau: 'Mọi thang đo cần trả lời hai câu hỏi: độ tin cậy và độ giá trị.'
     loai: phat-hien
@@ -177,10 +183,11 @@ nhan_dinh:
     trich: Reliability and validity are two important considerations that must be made with any type of data collection.
     vi_tri: OpenStax Psychology 2e, mục 2.3
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Vì cái được đo là vô hình, một thang đo tốt phải vượt qua hai bài kiểm tra". Bỏ vế "vì vô hình" (suy luận của site) và "vượt qua".'
+    ghi_chu: 'Chữ cũ: "Vì cái được đo là vô hình, một thang đo tốt phải vượt qua hai bài kiểm tra". Bỏ vế "vì vô hình" (suy luận của site) và "vượt qua". Review (Claude Sonnet 5.5, 30/10/2026): dung. "Mọi thang đo cần trả lời hai câu hỏi" là cách nói dạy học khớp OpenStax; không phủ nhận Standards 2014 còn nói về tính công bằng.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
     luot_2_ghi_chu: Standards 2014 xếp ba nền tảng (validity, reliability/precision, fairness); cách nói "hai câu hỏi" là rút gọn dạy học, không sai.
+    review: dung
   - id: dl10
     cau: Độ tin cậy (reliability) là khả năng cho cùng một kết quả một cách nhất quán; nếu đo đi đo lại mà kết quả lúc nào cũng khác nhau thì phép đo không đáng tin.
     loai: dinh-nghia
@@ -191,7 +198,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Ví dụ cái thước kẻ đo bàn mười lần là minh họa của site, không phải trích nguồn.
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
   - id: dl11
     cau: Test-retest là cho cùng một nhóm người làm bài test hai lần, cách nhau một khoảng thời gian; hệ số tương quan hai lần đo cho biết thang đo ổn định theo thời gian.
     loai: dinh-nghia
@@ -202,7 +209,7 @@ nhan_dinh:
     vi_tri: OpenStax Psychology 2e, mục 2.3; Standards 2014, phần Reliability/Precision
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
   - id: dl12
     cau: Nhất quán nội tại (internal consistency) là mức độ các câu hỏi cùng đo một thứ tương quan với nhau; nếu các câu hỏi của một thang đo gần như không liên hệ với nhau thì khó coi chúng cùng đo một thứ.
     loai: dinh-nghia
@@ -212,9 +219,10 @@ nhan_dinh:
     trich: internal consistency (the degree to which different items on a survey that measure the same thing correlate with one another) | Internal consistency describes the extent to which all the items in a test measure the same concept or construct and hence it is connected to the inter-relatedness of the items within the test.
     vi_tri: OpenStax Psychology 2e, mục 2.3; Tavakol & Dennick 2011
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Một thang đo ''lo âu'' mà người trả lời câu ''tôi thấy bồn chồn'' rất cao nhưng câu ''tôi thấy căng thẳng'' rất thấp thì có gì đó không ổn". Lý do: ví dụ minh họa của site; thay bằng định nghĩa của giáo trình, giữ ý.'
+    ghi_chu: 'Chữ cũ: "Một thang đo ''lo âu'' mà người trả lời câu ''tôi thấy bồn chồn'' rất cao nhưng câu ''tôi thấy căng thẳng'' rất thấp thì có gì đó không ổn". Lý do: ví dụ minh họa của site; thay bằng định nghĩa của giáo trình, giữ ý. Review (Claude Sonnet 5.5, 30/10/2026): dung. Định nghĩa nhất quán nội tại khớp OpenStax và Tavakol & Dennick.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
+    review: dung
   - id: dl13
     cau: Ngoài test-retest và nhất quán nội tại còn có độ nhất quán giữa những người chấm (inter-rater reliability).
     loai: dinh-nghia
@@ -223,9 +231,10 @@ nhan_dinh:
     trich: inter-rater reliability (the degree to which two or more different observers agree on what has been observed)
     vi_tri: OpenStax Psychology 2e, mục 2.3
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Có hai cách kiểm tra độ tin cậy phổ biến". Lý do: "phổ biến" không có nguồn, và nguồn kể ba loại; viết "hai trong các cách ... thường dùng với thang đo bằng câu hỏi" (Standards 2014 xếp test-retest và nhất quán nội tại thành hai trong các loại hệ số) và nêu thêm loại thứ ba.'
+    ghi_chu: 'Chữ cũ: "Có hai cách kiểm tra độ tin cậy phổ biến". Lý do: "phổ biến" không có nguồn, và nguồn kể ba loại; viết "hai trong các cách ... thường dùng với thang đo bằng câu hỏi" (Standards 2014 xếp test-retest và nhất quán nội tại thành hai trong các loại hệ số) và nêu thêm loại thứ ba. Review (Claude Sonnet 5.5, 30/10/2026): dung. Nêu đúng ba loại và nói rõ "hai trong các cách"; không còn "phổ biến".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://openstax.org/books/psychology-2e/pages/2-2-approaches-to-research" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://openstax.org/books/psychology-2e/pages/2-2-approaches-to-research"]
+    review: dung
   - id: dl14
     cau: Độ giá trị (validity) là mức độ một công cụ đo chính xác điều nó được cho là đo.
     loai: dinh-nghia
@@ -235,7 +244,7 @@ nhan_dinh:
     vi_tri: OpenStax Psychology 2e, mục 2.3
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
   - id: dl15
     cau: 'Tiêu chuẩn AERA, APA, NCME (2014): giá trị là mức độ bằng chứng và lý thuyết ủng hộ cách diễn giải điểm số cho một mục đích đã định; điều được đánh giá là cách diễn giải điểm số, không phải bản thân bài test.'
     loai: dinh-nghia
@@ -246,7 +255,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Câu thêm so với trang cũ.
     luot_2: dung
-    luot_2_nguon: [ "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
   - id: dl16
     cau: 'Ví dụ trong giáo trình OpenStax: một cân bếp không được hiệu chỉnh đúng có thể luôn báo thiếu hoặc thừa, nhưng cùng một lượng ngũ cốc luôn cho cùng một số; cân ấy rất tin cậy nhưng kết quả sai, tức không có giá trị.'
     loai: dinh-nghia
@@ -255,9 +264,10 @@ nhan_dinh:
     trich: If the scale is not properly calibrated, it may consistently under- or overestimate the amount of cereal that’s being measured. While the scale is highly reliable in producing consistent results
     vi_tri: OpenStax Psychology 2e, mục 2.3
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "một cái cân lúc nào cũng báo nặng hơn thực tế 5 kg ... bước lên mười lần, mười lần cùng một số" (ví dụ của site, con số 5 kg do site đặt). Thay bằng ví dụ cân bếp của giáo trình.'
+    ghi_chu: 'Chữ cũ: "một cái cân lúc nào cũng báo nặng hơn thực tế 5 kg ... bước lên mười lần, mười lần cùng một số" (ví dụ của site, con số 5 kg do site đặt). Thay bằng ví dụ cân bếp của giáo trình. Review (Claude Sonnet 5.5, 30/10/2026): dung. Ví dụ cân bếp khớp OpenStax Psychology 2e 2.3.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
+    review: dung
   - id: dl17
     cau: 'Một phép đo có giá trị thì nhất thiết tin cậy; ngược lại không đúng: một cái cân mỗi lần báo một số khác nhau không thể có giá trị.'
     loai: dinh-nghia
@@ -268,7 +278,7 @@ nhan_dinh:
     vi_tri: OpenStax Psychology 2e, mục 2.3; Tavakol & Dennick 2011
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
     luot_2_ghi_chu: Đúng theo giáo trình và cách dạy quy ước; trong tâm trắc học nâng cao có sắc thái (độ tin cậy đo lường theo nhóm), nhưng câu ở mức nhập môn đúng.
   - id: dl18
     cau: 'Độ tin cậy là điều kiện cần nhưng không đủ của độ giá trị: thang đo phải nhất quán thì mới có thể đo đúng, nhưng nhất quán chưa chắc đã đo đúng.'
@@ -281,7 +291,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Giữ ý của trang cũ.
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
   - id: dl19
     cau: 'Theo cách phân loại truyền thống mà ủy ban của APA nêu trong thập niên 1950, có bốn kiểu giá trị: dự đoán, đồng thời, nội dung và cấu trúc.'
     loai: lich-su
@@ -290,9 +300,10 @@ nhan_dinh:
     trich: 'distinguish four types of validity | are: predictive validity, concurrent validity, content validity, and construct validity'
     vi_tri: Cronbach & Meehl 1955, tr. 281 và đoạn "Four types of validation"
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Các nhà tâm lý học còn phân biệt nhiều loại độ giá trị: thang đo có bao quát đủ các khía cạnh ..., điểm số có dự đoán được kết quả thực tế không, và thang đo có khớp với mạng lưới lý thuyết ... (giá trị cấu trúc)". Lý do: nguồn gốc ghi cụ thể là bốn kiểu của ủy ban APA (1950–1954); viết lại cho khớp.'
+    ghi_chu: 'Chữ cũ: "Các nhà tâm lý học còn phân biệt nhiều loại độ giá trị: thang đo có bao quát đủ các khía cạnh ..., điểm số có dự đoán được kết quả thực tế không, và thang đo có khớp với mạng lưới lý thuyết ... (giá trị cấu trúc)". Lý do: nguồn gốc ghi cụ thể là bốn kiểu của ủy ban APA (1950–1954); viết lại cho khớp. Review (Claude Sonnet 5.5, 30/10/2026): dung. Bốn kiểu giá trị khớp Cronbach & Meehl 1955; trang ghi là cách phân loại truyền thống của ủy ban APA thập niên 1950.'
     luot_2: dung
-    luot_2_nguon: [ "https://psychclassics.yorku.ca/Cronbach/construct.htm" ]
+    luot_2_nguon: ["https://psychclassics.yorku.ca/Cronbach/construct.htm"]
+    review: dung
   - id: dl20
     cau: Thuật ngữ giá trị cấu trúc (construct validity) xuất hiện trong báo cáo của Ủy ban Trắc nghiệm Tâm lý của APA (1950–1954), và Cronbach và Meehl (1955) trình bày cách hiểu của họ về nó.
     loai: lich-su
@@ -301,9 +312,10 @@ nhan_dinh:
     trich: The chief innovation in the Committee’s report was the term | The present interpretation of construct validity is not "official"
     vi_tri: Cronbach & Meehl 1955, tr. 281
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Khái niệm giá trị cấu trúc ... được đặt nền móng trong bài báo của Cronbach và Meehl năm 1955". Lý do: bài 1955 nói thuật ngữ là "chief innovation" của báo cáo ủy ban APA (1950–54) và tự nhận cách hiểu của mình "không phải chính thức"; sửa lại cho đúng ai đặt ra thuật ngữ.'
+    ghi_chu: 'Chữ cũ: "Khái niệm giá trị cấu trúc ... được đặt nền móng trong bài báo của Cronbach và Meehl năm 1955". Lý do: bài 1955 nói thuật ngữ là "chief innovation" của báo cáo ủy ban APA (1950–54) và tự nhận cách hiểu của mình "không phải chính thức"; sửa lại cho đúng ai đặt ra thuật ngữ. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu đã sửa đúng nguồn: "chief innovation" của báo cáo ủy ban; bài 1955 trình bày cách hiểu của chính họ.'
     luot_2: dung
-    luot_2_nguon: [ "https://psychclassics.yorku.ca/Cronbach/construct.htm" ]
+    luot_2_nguon: ["https://psychclassics.yorku.ca/Cronbach/construct.htm"]
+    review: dung
   - id: dl21
     cau: Tiêu chuẩn 2014 nói về các loại bằng chứng cho giá trị (như nội dung bài test, cấu trúc nội tại, quan hệ với các biến khác), chứ không nói về các kiểu giá trị riêng biệt.
     loai: dinh-nghia
@@ -314,7 +326,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: Câu thêm so với trang cũ.
     luot_2: dung
-    luot_2_nguon: [ "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
   - id: dl22
     cau: Hệ số alpha do Lee Cronbach phát triển năm 1951, trong bài "Coefficient alpha and the internal structure of tests" trên tạp chí Psychometrika.
     loai: lich-su
@@ -324,10 +336,11 @@ nhan_dinh:
     trich: Alpha was developed by Lee Cronbach in 1951
     vi_tri: Tavakol & Dennick 2011, mục Cronbach's alpha; tên bài và tạp chí theo Crossref (nguon.yml)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "đề xuất một con số duy nhất để tóm tắt mức độ ''đồng lòng''". Lý do: không mở được bài 1951 (chỉ siêu dữ liệu); giữ điều Tavakol & Dennick nói (developed by Cronbach in 1951) và tên bài, tạp chí theo Crossref.'
+    ghi_chu: 'Chữ cũ: "đề xuất một con số duy nhất để tóm tắt mức độ ''đồng lòng''". Lý do: không mở được bài 1951 (chỉ siêu dữ liệu); giữ điều Tavakol & Dennick nói (developed by Cronbach in 1951) và tên bài, tạp chí theo Crossref. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đối chiếu Crossref (10.1007/BF02310555): "Coefficient Alpha and the Internal Structure of Tests", Psychometrika 16(3), 297-334, 9/1951. Tên tạp chí, bài, năm đúng; "do Lee Cronbach phát triển năm 1951" theo Tavakol & Dennick. Không cần toàn văn cho câu này.'
     luot_2: dung
-    luot_2_nguon: [ "https://doi.org/10.1007/BF02310555" ]
+    luot_2_nguon: ["https://doi.org/10.1007/BF02310555"]
     luot_2_ghi_chu: Tên tạp chí suy từ DOI/ hiểu biết chung và trích dẫn quen thuộc; bài gốc không mở toàn văn.
+    review: dung
   - id: dl23
     cau: Alpha là một con số từ 0 đến 1 tóm tắt độ nhất quán nội tại của một thang đo.
     loai: dinh-nghia
@@ -337,7 +350,7 @@ nhan_dinh:
     vi_tri: Tavakol & Dennick 2011
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/"]
     luot_2_ghi_chu: Về lý thuyết alpha có thể âm khi dữ liệu bất thường; ngôn ngữ nhập môn chấp nhận được.
   - id: dl24
     cau: Các câu hỏi tương quan với nhau thì alpha tăng; alpha thấp có thể do ít câu hỏi, các câu ít liên hệ với nhau hoặc khái niệm nhiều mặt; alpha cũng phụ thuộc số câu hỏi, thang đo quá ngắn thì alpha giảm.
@@ -347,9 +360,10 @@ nhan_dinh:
     trich: If the items in a test are correlated to each other, the value of alpha is increased. | alpha is also affected by the length of the test. If the test length is too short, the value of alpha is reduced. | A low value of alpha could be due to a low number of questions, poor inter-relatedness between items or heterogeneous constructs.
     vi_tri: Tavakol & Dennick 2011
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Nếu các câu hỏi mỗi câu nói một thứ khác nhau, alpha tụt về gần 0." Lý do: nguồn nói alpha thấp có thể do nhiều nguyên nhân; "gần 0" không có nguồn. Ví dụ 5 câu hỏi hài lòng với cuộc sống là minh họa của site (gia-dinh).'
+    ghi_chu: 'Chữ cũ: "Nếu các câu hỏi mỗi câu nói một thứ khác nhau, alpha tụt về gần 0." Lý do: nguồn nói alpha thấp có thể do nhiều nguyên nhân; "gần 0" không có nguồn. Ví dụ 5 câu hỏi hài lòng với cuộc sống là minh họa của site (gia-dinh). Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp ba trích Tavakol & Dennick (tương quan, độ dài thang, nguyên nhân alpha thấp).'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/"]
+    review: dung
   - id: dl25
     cau: Giá trị alpha từ khoảng 0,70 đến 0,95 là khoảng được nhiều báo cáo coi là chấp nhận được.
     loai: dinh-nghia
@@ -358,9 +372,10 @@ nhan_dinh:
     trich: There are different reports about the acceptable values of alpha, ranging from 0.70 to 0.95.
     vi_tri: Tavakol & Dennick 2011, mục Acceptable values of alpha
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: bảng năm hàng "≥ 0,90 rất tốt; 0,80–0,89 tốt; 0,70–0,79 chấp nhận được; 0,60–0,69 đáng ngờ; < 0,60 kém". Lý do: các nhãn bằng lời cho từng mức không có nguồn đọc được; Taber (2018) thấy chúng khác nhau rất nhiều giữa các nghiên cứu (dl28). Thay bằng ba dòng theo Tavakol & Dennick.'
+    ghi_chu: 'Chữ cũ: bảng năm hàng "≥ 0,90 rất tốt; 0,80–0,89 tốt; 0,70–0,79 chấp nhận được; 0,60–0,69 đáng ngờ; < 0,60 kém". Lý do: các nhãn bằng lời cho từng mức không có nguồn đọc được; Taber (2018) thấy chúng khác nhau rất nhiều giữa các nghiên cứu (dl28). Thay bằng ba dòng theo Tavakol & Dennick. Review (Claude Sonnet 5.5, 30/10/2026): dung. "0,70 đến 0,95" khớp "different reports ... ranging from 0.70 to 0.95"; bảng năm mức có nhãn đã bỏ.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/"]
+    review: dung
   - id: dl26
     cau: Giá trị alpha dưới khoảng 0,70 thường bị coi là thấp; từ khoảng 0,70 trở lên được coi là mong muốn.
     loai: dinh-nghia
@@ -369,20 +384,22 @@ nhan_dinh:
     trich: A value of around 0.70 or greater is widely considered desirable
     vi_tri: Taber 2018, mục Discussion (tóm tắt thực hành trong giáo dục khoa học)
     ket_qua: da-lam-mem
-    ghi_chu: Làm mềm so với chữ cũ ("Kém, thang đo lỏng lẻo" cho dưới 0,60; "Đáng ngờ" cho 0,60–0,69). Taber nói "widely considered desirable" cho khoảng 0,70 trở lên và cách gọi bằng lời rất biến thiên.
+    ghi_chu: 'Làm mềm so với chữ cũ ("Kém, thang đo lỏng lẻo" cho dưới 0,60; "Đáng ngờ" cho 0,60–0,69). Taber nói "widely considered desirable" cho khoảng 0,70 trở lên và cách gọi bằng lời rất biến thiên. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp Taber: "around 0.70 or greater is widely considered desirable".'
     luot_2: dung
-    luot_2_nguon: [ "https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf" ]
+    luot_2_nguon: ["https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf"]
+    review: dung
   - id: dl27
-    cau: Alpha trên khoảng 0,90 đến 0,95 có thể do các câu hỏi lặp lại nhau một cách thừa thãi; mức tối đa 0,90 từng được khuyến nghị.
+    cau: Alpha quá cao có thể do các câu hỏi lặp lại nhau một cách thừa thãi; mức tối đa 0,90 từng được khuyến nghị.
     loai: dinh-nghia
     nguon:
       - tavakol2011
     trich: If alpha is too high it may suggest that some items are redundant as they are testing the same question but in a different guise. A maximum alpha value of 0.90 has been recommended.
     vi_tri: Tavakol & Dennick 2011
-    ket_qua: dung
-    ghi_chu: 'Chữ cũ: "(nhưng trên 0,95 có thể nghĩa là các câu hỏi lặp lại nhau một cách thừa thãi)". Nguồn nêu mốc 0,90 là mức tối đa từng được khuyến nghị; viết cả hai.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(nhưng trên 0,95 có thể nghĩa là các câu hỏi lặp lại nhau một cách thừa thãi)". Nguồn nêu mốc 0,90 là mức tối đa từng được khuyến nghị; viết cả hai. Review (Claude Sonnet 5.5, 30/10/2026): sai. Câu gốc "Alpha trên khoảng 0,90 đến 0,95 có thể do các câu hỏi lặp lại": Tavakol & Dennick chỉ nói "if alpha is too high ... redundant" và "maximum 0.90 recommended"; mốc 0,95 cho phần thừa thãi không có trong nguồn (0,95 là cận trên của khoảng chấp nhận được, dl25). Đã sửa câu, hàng bảng ("Cao hơn khoảng 0,90", ghi rõ các báo cáo không thống nhất) và bỏ 0,95 ở hàng này.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/"]
+    review: sai
   - id: dl28
     cau: Khảo sát các bài báo giáo dục khoa học, Taber (2018) thấy cách gọi bằng lời cho từng mức alpha khác nhau rất nhiều giữa các nghiên cứu.
     loai: phat-hien
@@ -392,7 +409,7 @@ nhan_dinh:
     vi_tri: Taber 2018, mục Discussion
     ket_qua: dung
     luot_2: dung
-    luot_2_nguon: [ "https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf" ]
+    luot_2_nguon: ["https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf"]
   - id: dl29
     cau: 'Tiêu chuẩn 2014: cần độ tin cậy cao hơn với những cách dùng điểm số có hệ quả lớn hơn cho người làm bài.'
     loai: phat-hien
@@ -401,9 +418,10 @@ nhan_dinh:
     trich: A higher degree of reliability/precision is required for score uses that have more significant consequences for test takers.
     vi_tri: Standards 2014, Chương 2 (Reliability/Precision), Standard 2.0, phần Comment
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "chính Nunnally cũng nhấn mạnh: ngưỡng phù hợp phụ thuộc vào mục đích sử dụng — 0,70 chỉ là mức tối thiểu cho giai đoạn nghiên cứu ban đầu, còn các bài test dùng để ra quyết định về từng cá nhân cần độ tin cậy cao hơn nhiều". Lý do: tách ý "tùy mục đích" sang nguồn đọc được (Standards 2014).'
+    ghi_chu: 'Chữ cũ: "chính Nunnally cũng nhấn mạnh: ngưỡng phù hợp phụ thuộc vào mục đích sử dụng — 0,70 chỉ là mức tối thiểu cho giai đoạn nghiên cứu ban đầu, còn các bài test dùng để ra quyết định về từng cá nhân cần độ tin cậy cao hơn nhiều". Lý do: tách ý "tùy mục đích" sang nguồn đọc được (Standards 2014). Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp Standards 2014, phần Comment của Standard 2.0.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
+    review: dung
   - id: dl30
     cau: Nunnally (1978) viết rằng trong nhiều bối cảnh ứng dụng, độ tin cậy 0,80 chưa đủ cao, và khi cần ra quyết định quan trọng thì 0,95 nên là chuẩn mong muốn (tr. 245–246, theo trích của Metsämuuronen và Niemensivu, 2025).
     loai: phat-hien
@@ -412,10 +430,11 @@ nhan_dinh:
     trich: “in many applied settings a reliability of .80 is not nearly high enough” | “a reliability of .95 should be considered the desirable standard”
     vi_tri: Metsämuuronen & Niemensivu 2025, mục Introduction (trích Nunnally 1978, tr. 245, 246)
     ket_qua: da-sua
-    ghi_chu: 'chỗ khó: Nunnally (1978) là sách in, chưa mở được; hai câu trên chỉ dẫn qua trích của một bài mở. Chữ cũ: "Ngưỡng 0,70 bắt nguồn từ cuốn Psychometric Theory của Jim Nunnally (ấn bản 2, 1978) ... 0,70 chỉ là mức tối thiểu cho giai đoạn nghiên cứu ban đầu". Lý do: không tìm được nguồn đọc được nói 0,70 là mức cho nghiên cứu ban đầu hay nguồn gốc của ngưỡng này, nên bỏ cả hai vế.'
+    ghi_chu: 'chỗ khó: Nunnally (1978) là sách in, chưa mở được; hai câu trên chỉ dẫn qua trích của một bài mở. Chữ cũ: "Ngưỡng 0,70 bắt nguồn từ cuốn Psychometric Theory của Jim Nunnally (ấn bản 2, 1978) ... 0,70 chỉ là mức tối thiểu cho giai đoạn nghiên cứu ban đầu". Lý do: không tìm được nguồn đọc được nói 0,70 là mức cho nghiên cứu ban đầu hay nguồn gốc của ngưỡng này, nên bỏ cả hai vế. Review (Claude Sonnet 5.5, 30/10/2026): dung. Đối chiếu Metsämuuronen & Niemensivu (2025, PMC12187714): hai câu trích đúng nguyên văn, "(Nunnally, 1978, p. 245)" và "p. 246"; "khi cần ra quyết định quan trọng" khớp "if important decisions are to be made". Trang ghi rõ "theo trích của"; nhãn không dựa riêng vào Nunnally.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.utupub.fi/bitstreams/de31e96c-061a-449e-a67f-057baba2972a/download" ]
+    luot_2_nguon: ["https://www.utupub.fi/bitstreams/de31e96c-061a-449e-a67f-057baba2972a/download"]
     luot_2_ghi_chu: Đọc qua trích dẫn của bài 2025, không đọc sách Nunnally; câu đã ghi rõ "theo trích của".
+    review: dung
   - id: dl31
     cau: Thang Hài lòng với Cuộc sống (SWLS) của Diener và cộng sự (1985) có 5 câu hỏi, trả lời theo thang 1 (hoàn toàn không đồng ý) đến 7 (hoàn toàn đồng ý); một câu là "Tôi hài lòng với cuộc sống của mình" (I am satisfied with my life).
     loai: cong-cu
@@ -425,10 +444,11 @@ nhan_dinh:
     trich: in a five-item scale, the SWLS | is scored from 1 to 7 | 7 - Strongly agree | 1 - Strongly disagree | I am satisfied with my life.
     vi_tri: Diener 1985, tr. 72–73; bản tiếng Anh của SWLS trên trang của Ed Diener
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: ví dụ "Nhìn chung, tôi hài lòng với cuộc sống của mình" (không phải một câu của thang). Câu thật là mục 3, "I am satisfied with my life".'
+    ghi_chu: 'Chữ cũ: ví dụ "Nhìn chung, tôi hài lòng với cuộc sống của mình" (không phải một câu của thang). Câu thật là mục 3, "I am satisfied with my life". Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thật "I am satisfied with my life" (mục 3), thang 1-7, 5 mục.'
     luot_2: dung
-    luot_2_nguon: [ "https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf" ]
+    luot_2_nguon: ["https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf"]
     luot_2_ghi_chu: Bản PDF là ảnh quét, đọc bằng OCR.
+    review: dung
   - id: dl32
     cau: Trong nghiên cứu gốc, trên 176 sinh viên đại học ở Mỹ, SWLS đạt alpha 0,87; 76 sinh viên làm lại sau hai tháng cho hệ số test-retest 0,82.
     loai: so-lieu
@@ -437,9 +457,10 @@ nhan_dinh:
     trich: Subjects were 176 undergraduates at the University of Illinois | The two-month test-retest correlation coefficient was .82, and coefficient alpha was .87.
     vi_tri: 'Diener 1985, tr. 72 (Study 1: Method, Results)'
     ket_qua: da-sua
-    ghi_chu: Chữ cũ không nêu mẫu và chưa nói số người làm lại; thêm theo nguồn (176 sinh viên năm nhất môn tâm lý đại cương ở Đại học Illinois; 76 người làm lại sau hai tháng).
+    ghi_chu: 'Chữ cũ không nêu mẫu và chưa nói số người làm lại; thêm theo nguồn (176 sinh viên năm nhất môn tâm lý đại cương ở Đại học Illinois; 76 người làm lại sau hai tháng). Review (Claude Sonnet 5.5, 30/10/2026): dung. 176 sinh viên Illinois, alpha 0,87, test-retest 0,82 sau hai tháng khớp trích Diener 1985.'
     luot_2: dung
-    luot_2_nguon: [ "https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf" ]
+    luot_2_nguon: ["https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf"]
+    review: dung
   - id: dl33
     cau: Tính đến 10/2026, theo OpenAlex, bài gốc năm 1985 của SWLS được trích dẫn hơn 31.000 lần.
     loai: thoi-su
@@ -447,11 +468,12 @@ nhan_dinh:
       - openalex-diener1985
     vi_tri: OpenAlex works/doi:10.1207/s15327752jpa4901_13, trường cited_by_count
     ket_qua: da-sua
-    ghi_chu: 'Đã tra ngày 30/10/2026: cited_by_count = 31756. Chữ cũ: "được dùng trong hàng nghìn nghiên cứu suốt bốn thập kỷ ... Đó là lý do ... không phải vì nó ''đúng tuyệt đối'', mà vì độ tin cậy của nó đã được kiểm chứng công khai". Lý do: "hàng nghìn", "bốn thập kỷ" và quan hệ nhân quả không có nguồn; thay bằng số trích dẫn có mốc thời gian.'
+    ghi_chu: 'Đã tra ngày 30/10/2026: cited_by_count = 31756. Chữ cũ: "được dùng trong hàng nghìn nghiên cứu suốt bốn thập kỷ ... Đó là lý do ... không phải vì nó ''đúng tuyệt đối'', mà vì độ tin cậy của nó đã được kiểm chứng công khai". Lý do: "hàng nghìn", "bốn thập kỷ" và quan hệ nhân quả không có nguồn; thay bằng số trích dẫn có mốc thời gian. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu thời sự: mốc "Tính đến 10/2026", het_han 30/10/2027, nguồn OpenAlex. Tra lại ngày 30/10/2026: cited_by_count = 31.756, đúng "hơn 31.000".'
     het_han: 2027-10-30
     luot_2: dung
-    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1207/s15327752jpa4901_13" ]
+    luot_2_nguon: ["https://api.openalex.org/works/doi:10.1207/s15327752jpa4901_13"]
     luot_2_ghi_chu: Số trích dẫn thay đổi theo thời gian và theo cơ sở dữ liệu; OpenAlex thường thấp hơn Google Scholar.
+    review: dung
   - id: dl34
     cau: Với alpha 0,87 và test-retest 0,82 ở nhóm sinh viên đó, 5 câu hỏi khá "đồng lòng" với nhau và kết quả khá ổn định theo thời gian.
     loai: phat-hien
@@ -461,10 +483,11 @@ nhan_dinh:
     trich: There are different reports about the acceptable values of alpha, ranging from 0.70 to 0.95. | The two-month test-retest correlation coefficient was .82, and coefficient alpha was .87.
     vi_tri: Tavakol & Dennick 2011; Diener 1985, tr. 72
     ket_qua: da-lam-mem
-    ghi_chu: 'Suy luận: 0,87 nằm trong khoảng 0,70 đến 0,95 (dl25) và 0,82 cho test-retest hai tháng; làm mềm "khá" và "ở nhóm đó". Chữ cũ: "Nghĩa là 5 câu hỏi đồng lòng với nhau, và kết quả khá ổn định theo thời gian."'
+    ghi_chu: 'Suy luận: 0,87 nằm trong khoảng 0,70 đến 0,95 (dl25) và 0,82 cho test-retest hai tháng; làm mềm "khá" và "ở nhóm đó". Chữ cũ: "Nghĩa là 5 câu hỏi đồng lòng với nhau, và kết quả khá ổn định theo thời gian." Review (Claude Sonnet 5.5, 30/10/2026): dung. Có "khá", "ở nhóm sinh viên đó"; 0,87 nằm trong 0,70-0,95.'
     luot_2: dung
-    luot_2_nguon: [ "https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/" ]
+    luot_2_nguon: ["https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/"]
     luot_2_ghi_chu: Diễn giải hợp lý; chỉ nói về nhóm sinh viên đó.
+    review: dung
   - id: dl35
     cau: Tiêu chuẩn 2014 nêu rằng nhà phát triển bài test nên cung cấp bằng chứng về độ tin cậy cho từng cách dùng điểm số; một bài test không nhắc tới alpha hay test-retest thì ta không có cơ sở để đánh giá độ tin cậy của nó.
     loai: loi-khuyen
@@ -473,10 +496,11 @@ nhan_dinh:
     trich: Appropriate evidence of reliability/precision should be provided for the interpretation for each intended score use.
     vi_tri: Standards 2014, Chương 2, Standard 2.0
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Không hề nhắc tới alpha hay test-retest — chỉ khoe ''được hàng triệu người làm''" (không nguồn cho tiêu chí). Thêm Standard 2.0; "hàng triệu người làm" là minh họa của site (gia-dinh). Câu cuối ("không có cơ sở để đánh giá") là suy luận từ tiêu chuẩn.'
+    ghi_chu: 'Chữ cũ: "Không hề nhắc tới alpha hay test-retest — chỉ khoe ''được hàng triệu người làm''" (không nguồn cho tiêu chí). Thêm Standard 2.0; "hàng triệu người làm" là minh họa của site (gia-dinh). Câu cuối ("không có cơ sở để đánh giá") là suy luận từ tiêu chuẩn. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp Standard 2.0; phần suy luận nói rõ.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
     luot_2_ghi_chu: Phần sau câu ("không có cơ sở để đánh giá") là suy luận hợp lý từ chuẩn.
+    review: dung
   - id: dl36
     cau: Alpha dưới khoảng 0,70 thường được coi là thấp; một quiz tự tin kết luận mà không nêu con số hay chỉ nêu giá trị dưới mức đó thì đáng dè chừng.
     loai: loi-khuyen
@@ -486,10 +510,11 @@ nhan_dinh:
     trich: A value of around 0.70 or greater is widely considered desirable | A low value of alpha could be due to a low number of questions, poor inter-relatedness between items or heterogeneous constructs.
     vi_tri: Taber 2018, mục Discussion; Tavakol & Dennick 2011
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Dưới 0,70 mà vẫn tự tin kết luận, hoặc giấu nhẹm con số". Bỏ "giấu nhẹm" (quy động cơ). Suy luận từ dl26 và dl28 (mốc 0,70 chỉ là quy ước).'
+    ghi_chu: 'Chữ cũ: "Dưới 0,70 mà vẫn tự tin kết luận, hoặc giấu nhẹm con số". Bỏ "giấu nhẹm" (quy động cơ). Suy luận từ dl26 và dl28 (mốc 0,70 chỉ là quy ước). Review (Claude Sonnet 5.5, 30/10/2026): dung. Dùng "thường", "đáng dè chừng", không kết luận chắc.'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/", "https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/", "https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf"]
     luot_2_ghi_chu: Lời khuyên thực hành, đúng, kèm quy ước.
+    review: dung
   - id: dl37
     cau: Nội dung các câu hỏi của một bài test nên khớp với khái niệm cần đo; ví dụ một quiz "đo IQ" toàn hỏi kiến thức đố vui thì nội dung không khớp.
     loai: loi-khuyen
@@ -498,9 +523,10 @@ nhan_dinh:
     trich: Important validity evidence can be obtained from an analysis of the relationship between the content of a test and the construct it is intended to measure.
     vi_tri: Standards 2014, phần Evidence Based on Test Content
     ket_qua: da-sua
-    ghi_chu: Ví dụ quiz đo IQ là minh họa của site (gia-dinh). Chữ cũ có thêm ví dụ "quiz đo trầm cảm chỉ hỏi 'hôm nay bạn có buồn không' một lần"; bỏ vì không có nguồn và vì không nên gợi ý công cụ tự chẩn đoán.
+    ghi_chu: "Ví dụ quiz đo IQ là minh họa của site (gia-dinh). Chữ cũ có thêm ví dụ \"quiz đo trầm cảm chỉ hỏi 'hôm nay bạn có buồn không' một lần\"; bỏ vì không có nguồn và vì không nên gợi ý công cụ tự chẩn đoán. Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp tiêu chí bằng chứng về nội dung bài test của Standards 2014; ví dụ quiz IQ là của trang."
     luot_2: dung
-    luot_2_nguon: [ "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
+    review: dung
   - id: dl38
     cau: Tiêu chuẩn 2014 nêu rằng thông tin về bài test nên được ghi rõ để người dùng có thể quyết định dùng bài nào, chấm điểm và diễn giải ra sao; vì vậy cần hỏi ai đứng sau thang đo và có tài liệu để người khác kiểm lại không.
     loai: loi-khuyen
@@ -509,9 +535,10 @@ nhan_dinh:
     trich: Information relating to tests should be clearly documented so that those who use tests can make informed decisions regarding which test to use for a specific purpose, how to administer the chosen test, and how to interpret test scores.
     vi_tri: Standards 2014, Chương 7 (Documentation), Standard 7.0
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Không rõ tác giả, không có nghiên cứu công bố, không ai ngoài công ty bán test kiểm chứng". Viết lại theo Standard 7.0 (không nguồn cho "công ty bán test").'
+    ghi_chu: 'Chữ cũ: "Không rõ tác giả, không có nghiên cứu công bố, không ai ngoài công ty bán test kiểm chứng". Viết lại theo Standard 7.0 (không nguồn cho "công ty bán test"). Review (Claude Sonnet 5.5, 30/10/2026): dung. Khớp Standard 7.0.'
     luot_2: dung
-    luot_2_nguon: [ "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
+    review: dung
   - id: dl39
     cau: Năm 1949, Forer cho 39 sinh viên làm một bài trắc nghiệm rồi phát cho mỗi em một bản "mô tả tính cách" ghi sẵn tên nhưng giống hệt nhau (13 nhận xét); trung bình các em chấp nhận khoảng 10 trên 13 nhận xét là đúng với mình.
     loai: phat-hien
@@ -520,9 +547,10 @@ nhan_dinh:
     trich: At the next meeting the 39 students were given DIB's to fill out | all sketches were identical | consists of 13 statements | Mean acceptance was 10.2 items.
     vi_tri: Forer 1949, tr. 119–121 (Procedure, Results)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Một dấu hiệu kinh điển: kết quả lúc nào cũng nịnh người làm ... Một bài test tính cách mà ai làm xong cũng nhận được ''bạn là người đặc biệt, sâu sắc và hiếm có'' ... được thiết kế để bạn chia sẻ, không phải để đo." Lý do: câu tổng quát và động cơ ("thiết kế để chia sẻ") không có nguồn; thay bằng thí nghiệm của Forer (1949), kết quả 10,2 trên 13 (bản đọc được ghi "Mean acceptance was 10.2 items").'
+    ghi_chu: 'Chữ cũ: "Một dấu hiệu kinh điển: kết quả lúc nào cũng nịnh người làm ... Một bài test tính cách mà ai làm xong cũng nhận được ''bạn là người đặc biệt, sâu sắc và hiếm có'' ... được thiết kế để bạn chia sẻ, không phải để đo." Lý do: câu tổng quát và động cơ ("thiết kế để chia sẻ") không có nguồn; thay bằng thí nghiệm của Forer (1949), kết quả 10,2 trên 13 (bản đọc được ghi "Mean acceptance was 10.2 items"). Review (Claude Sonnet 5.5, 30/10/2026): dung. Forer 1949: 39 sinh viên, 13 nhận xét giống hệt, "Mean acceptance was 10.2 items"; bản mô tả có tên từng em (lượt 2 đã đọc bản gốc).'
     luot_2: dung
-    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fh0034974.zip/10.1037%252Fh0059240.pdf" ]
+    luot_2_nguon: ["https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fh0034974.zip/10.1037%252Fh0059240.pdf"]
+    review: dung
   - id: dl40
     cau: Nếu mọi người nhận cùng một mô tả mà đều thấy đúng, thì việc thấy đúng không phải bằng chứng rằng bài test đo được điều gì.
     loai: phat-hien
@@ -531,10 +559,11 @@ nhan_dinh:
     trich: 'THE FALLACY OF PERSONAL VALIDATION: A CLASSROOM DEMONSTRATION OF GULLIBILITY'
     vi_tri: Forer 1949, tên bài
     ket_qua: da-lam-mem
-    ghi_chu: Suy luận từ thí nghiệm của Forer (mô tả giống hệt cho mọi người vẫn được chấp nhận đúng); Forer gọi đó là "fallacy of personal validation".
+    ghi_chu: 'Suy luận từ thí nghiệm của Forer (mô tả giống hệt cho mọi người vẫn được chấp nhận đúng); Forer gọi đó là "fallacy of personal validation". Review (Claude Sonnet 5.5, 30/10/2026): dung. Suy luận có điều kiện, không khẳng định bài test nào vô giá trị.'
     luot_2: dung
-    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fh0034974.zip/10.1037%252Fh0059240.pdf" ]
+    luot_2_nguon: ["https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fh0034974.zip/10.1037%252Fh0059240.pdf"]
     luot_2_ghi_chu: Đúng với kết luận của Forer ("fallacy of personal validation"); câu này không khẳng định bài test nào vô giá trị.
+    review: dung
   - id: dl41
     cau: 'Độ tin cậy là điều kiện cần nhưng không đủ của độ giá trị: một thang đo nhất quán vẫn có thể không đo đúng thứ định đo.'
     loai: nhan
@@ -550,8 +579,10 @@ nhan_dinh:
       - 'Tavakol & Dennick (2011), bài tổng quan phương pháp: "An instrument cannot be valid unless it is reliable"'
     ly_do: 'Là nguyên tắc của lý thuyết đo lường, không phải phát hiện thực nghiệm; thước đo mục 4 viết cho phát hiện thực nghiệm. Xét theo đồng thuận của giáo trình mở có bình duyệt và bài tổng quan phương pháp: hai nguồn độc lập nêu cùng điều, kèm ví dụ minh họa, không nguồn nào phản bác. Cùng cách xử lý với trang p-value (D4-L1).'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
     luot_2_ghi_chu: "Nhãn cho nguyên tắc phương pháp xét theo đồng thuận giáo trình và Standards 2014: đạt mức vững cho khẳng định này."
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn Vững chắc cho nguyên tắc phương pháp, xét theo đồng thuận giáo trình (OpenStax, Tavakol & Dennick) như ly_do ghi; mục 4 viết cho phát hiện thực nghiệm. Phạm vi đúng: hệ quả "nhất thiết tin cậy" ở mức nhập môn.'
+    review: dung
   - id: dl42
     cau: Các mốc alpha như 0,70 chỉ là quy ước tham khảo; mức cần thiết phụ thuộc mục đích dùng điểm số.
     loai: nhan
@@ -571,8 +602,10 @@ nhan_dinh:
       - 'Metsämuuronen & Niemensivu (2025), trích Nunnally (1978): 0,80 chưa đủ ở nhiều bối cảnh ứng dụng'
     ly_do: 'Các nguồn cùng chiều về điểm "tùy mục đích", nhưng không có phân tích tổng hợp hay thử nghiệm quyết định mốc nào; con số cụ thể khác nhau giữa các tác giả. Theo mục 4: nhiều nguồn cùng chiều nhưng còn giới hạn, nên Khá vững (không phải Vững chắc). Nunnally (1978) chỉ đọc qua trích dẫn.'
     luot_2: dung
-    luot_2_nguon: [ "https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://rd.springer.com/content/pdf/10.1007/s11165-016-9602-2.pdf", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
     luot_2_ghi_chu: Nhãn theo đồng thuận tổng quan phương pháp.
+    ghi_chu: 'Review (Claude Sonnet 5.5, 30/10/2026): dung. Nhãn Khá vững cho các mốc alpha: các nguồn cùng chiều về "tùy mục đích" nhưng con số khác nhau (0,70-0,95; Taber). Nunnally chỉ qua trích, đã nêu rõ trong khung.'
+    review: dung
   - id: dl43
     cau: 'Trong bài tập giả định (quiz 4 câu về hạnh phúc, test-retest 0,85, alpha 0,45): test-retest 0,85 là khá cao (gần bằng 0,82 của SWLS) nên quiz ổn định theo thời gian; alpha 0,45 là thấp (dưới mốc khoảng 0,70 thường dùng), nguyên nhân có thể là các câu ít liên hệ với nhau hoặc ít câu hỏi.'
     loai: phat-hien
@@ -583,10 +616,11 @@ nhan_dinh:
     trich: The two-month test-retest correlation coefficient was .82, and coefficient alpha was .87. | A low value of alpha could be due to a low number of questions, poor inter-relatedness between items or heterogeneous constructs. | A value of around 0.70 or greater is widely considered desirable
     vi_tri: Diener 1985, tr. 72; Tavakol & Dennick 2011; Taber 2018
     ket_qua: da-sua
-    ghi_chu: 'gia-dinh: quiz và các số 0,85 và 0,45 do site đặt. Chữ cũ: "Test-retest 0,85 là cao" (không mốc); "Alpha 0,45 là thấp (dưới ngưỡng 0,70) ... Thang đo lỏng lẻo về mặt nội tại". Thêm so sánh với SWLS và nguyên nhân có thể có theo nguồn; "khá cao" thay "cao".'
+    ghi_chu: 'gia-dinh: quiz và các số 0,85 và 0,45 do site đặt. Chữ cũ: "Test-retest 0,85 là cao" (không mốc); "Alpha 0,45 là thấp (dưới ngưỡng 0,70) ... Thang đo lỏng lẻo về mặt nội tại". Thêm so sánh với SWLS và nguyên nhân có thể có theo nguồn; "khá cao" thay "cao". Review (Claude Sonnet 5.5, 30/10/2026): dung. 0,85 "khá cao", 0,45 dưới mốc 0,70; so với SWLS (0,82 sau hai tháng) chỉ nói "gần bằng", không nói tương đương.'
     luot_2: dung
-    luot_2_nguon: [ "https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/" ]
+    luot_2_nguon: ["https://labs.psychology.illinois.edu/~ediener/Documents/Diener-Emmons-Larsen-Griffin_1985.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/"]
     luot_2_ghi_chu: Bài tập giả định, phép đọc số đúng.
+    review: dung
   - id: dl44
     cau: 'Trong bài tập giả định: quiz có thể ổn định (tin cậy cao) mà vẫn không đo đúng điều nó tuyên bố, vì các câu hỏi như "Bạn có nhiều tiền không?" và "Bữa sáng hôm nay có ngon không?" đo những thứ khác với "hạnh phúc" như một trạng thái tâm lý chung; đây là vấn đề độ giá trị.'
     loai: dinh-nghia
@@ -596,9 +630,10 @@ nhan_dinh:
     trich: While any valid measure is by necessity reliable, the reverse is not necessarily true. | Important validity evidence can be obtained from an analysis of the relationship between the content of a test and the construct it is intended to measure.
     vi_tri: OpenStax Psychology 2e, mục 2.3; Standards 2014, Evidence Based on Test Content
     ket_qua: dung
-    ghi_chu: 'gia-dinh: quiz do site đặt; nhận xét "đo những thứ khác với hạnh phúc" là phán đoán về một quiz giả định, theo tiêu chí nội dung của Standards 2014.'
+    ghi_chu: 'gia-dinh: quiz do site đặt; nhận xét "đo những thứ khác với hạnh phúc" là phán đoán về một quiz giả định, theo tiêu chí nội dung của Standards 2014. Review (Claude Sonnet 5.5, 30/10/2026): dung. Câu giả định, nêu rõ là vấn đề độ giá trị, có điều kiện.'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
+    review: dung
   - id: dl45
     cau: 'Quiz 1: cái cân luôn báo nặng hơn thực tế 5 kg và cho cùng một số mười lần là độ tin cậy cao nhưng độ giá trị thấp; giáo trình OpenStax dùng đúng kiểu ví dụ này.'
     loai: dinh-nghia
@@ -609,7 +644,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'gia-dinh: số 5 kg do site đặt. Phương án sai: "độ giá trị cao nhưng độ tin cậy thấp", "cả hai cùng cao".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
   - id: dl46
     cau: 'Quiz 2: alpha rất cao (như 0,97) không tự động là tốt hơn, vì có thể do các câu hỏi lặp lại nhau; và độ giá trị là câu hỏi khác với độ nhất quán nội tại.'
     loai: dinh-nghia
@@ -620,7 +655,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'gia-dinh: thang 10 câu, alpha 0,97 do site đặt. Phương án sai: "chắc chắn có độ giá trị cao nhất", "chứng tỏ thang đo vô dụng".'
     luot_2: dung
-    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/", "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings" ]
+    luot_2_nguon: ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4205511/", "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings"]
   - id: dl47
     cau: 'Quiz 3: alpha tóm tắt độ nhất quán nội tại; độ ổn định giữa hai lần đo là test-retest, còn khả năng dự đoán thuộc về độ giá trị.'
     loai: dinh-nghia
@@ -632,7 +667,7 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: 'Phương án sai: "độ ổn định giữa hai lần đo cách nhau vài tháng", "mức điểm số dự đoán được kết quả thực tế".'
     luot_2: dung
-    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf" ]
+    luot_2_nguon: ["https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings", "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf"]
 doi_chu:
   - cu: 'Mô tả (description): "nhận ra một bài test dỏm"'
     moi: '"các câu hỏi nên đặt ra trước khi tin một bài test"'
@@ -676,3 +711,9 @@ doi_chu:
   - cu: 'Mục Nguồn: Cronbach 1951, Cronbach & Meehl 1955, Nunnally 1978, Diener 1985, Vietnam Investment Review'
     moi: Thêm Tiêu chuẩn 2014, OpenStax Psychology 2e, Tavakol & Dennick 2011, Taber 2018, Metsämuuronen & Niemensivu 2025, Forer 1949, World Happiness Report 2024; Nunnally ghi rõ là sách in chưa mở được
     ly_do: Nguồn của các nhận định mới.
+  - cu: 'Khối đầu bài: tít trong nháy kép "Việt Nam xếp thứ 54 trong 143 quốc gia và vùng lãnh thổ về mức độ hạnh phúc"; "tin này được các báo trong nước đưa ngày 21/3/2024"'
+    moi: Không nháy kép, ghi "ý chính của tin, diễn đạt lại, không phải tít nguyên văn"; "báo Vietnam Investment Review đưa tin ngày 21/3/2024"
+    ly_do: 'Review dl1: không nguồn nào có đúng chữ tít; hồ sơ chỉ có một báo.'
+  - cu: 'Hàng bảng alpha: "Trên khoảng 0,90 đến 0,95 | Có thể do các câu hỏi lặp lại nhau một cách thừa thãi; mức tối đa 0,90 từng được khuyến nghị"'
+    moi: '"Cao hơn khoảng 0,90 | Các báo cáo không thống nhất về mức tối đa; alpha quá cao có thể do ..., và mức tối đa 0,90 từng được khuyến nghị"'
+    ly_do: 'Review dl27: mốc 0,95 cho phần thừa thãi không có trong nguồn.'
