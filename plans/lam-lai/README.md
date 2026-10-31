@@ -52,7 +52,7 @@ Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 | 1 | Nền kỹ thuật | D1.1–D1.8 | Trang chủ tạm, trang 404 ở `/psyche/`; ba trang thử ở bản xem | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d1-1.md` … `d1-8.md`): review và kiểm lại đạt, CI 6/6 job, gộp vào `main` (`1e25fa8`), deploy đăng trang chủ tạm và 404 mới |
 | 2 | Dữ liệu dùng chung và lối vào | D2-0, D2-L1 | Trang chủ thật, Bắt đầu, Cách đọc nhãn, Hỗ trợ, Cách Psyche kiểm chứng, 14 trang lĩnh vực (20 trang) | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d2-0.md`, `d2-l1.md`): 556 bản ghi và 20 trang đã khóa |
 | 3 | Thí nghiệm kinh điển | D3-L1, D3-L2 | 15 thí nghiệm và mục lục (36 trang) | 2–3 ngày | Xong 30/10/2026 (`bao-cao/d3-l1.md`, `d3-l2.md`): 16 trang đã khóa |
-| 4 | Hiểu bằng chứng | D4-L1, D4-L2 | 12 bài phương pháp và mục lục (49 trang) | 1,5–2 ngày | D4-L1 xong 30/10/2026 (`bao-cao/d4-l1.md`, 7 trang đã khóa); D4-L2 chưa làm |
+| 4 | Hiểu bằng chứng | D4-L1, D4-L2 | 12 bài phương pháp và mục lục (49 trang) | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d4-l1.md`, `d4-l2.md`): 13 trang đã khóa; D4-L2 làm luôn trên nhánh lô, không mở `moi/d4-gom` |
 | 5 | Nền tảng phần 1 | D5-L1–D5-L4 | 27 bài đã kiểm ở G1-L01–L04 của site cũ (76 trang) | 1,5–2 ngày | Chưa làm |
 | 6 | Nền tảng phần 2 | D6-L1–D6-L3 | 20 bài: căng thẳng, giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển (96 trang) | 2–3 ngày | Chưa làm |
 | 7 | Sức khỏe tâm thần | D7-L1 | 4 bài, khóa sau khi chuyên gia đọc (100 trang) | 1 ngày, cộng thời gian chờ chuyên gia | Chưa làm |
