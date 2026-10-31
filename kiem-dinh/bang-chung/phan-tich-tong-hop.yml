@@ -7,12 +7,12 @@ lan:
   - so: 1
     ngay: 2026-10-30
     nhanh: moi/d4-l2
-    ma_bam: null
+    ma_bam: sha256:044a6803eb87c999a2149097f28f037fd47356ef78371ce0e0fccc4a24d8f9c3
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D4-L2 phần 1/2)
-      luot_2: null
+      luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D4-L2)
       review: "Claude Opus 5.5 (agent review D4-L2, 30/10/2026)"
-      kiem_mau: null
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d4-l2-kiem-mau.yml), đạt, 30/10/2026
 nguon:
   - id: fischer2011
     ten: 'Fischer và cộng sự (2011), Psychol Bull 137(4), 517–537: toàn văn (PDF ở Internet Archive, bộ wikipedia-scholarly-sources-corpus); số trang theo bản in'
@@ -573,12 +573,9 @@ nhan_dinh:
   - id: pt45
     cau: 'Hình funnel-demo gồm hai phễu: phễu bên trái đối xứng, phễu bên phải khuyết một bên đáy; chú thích nói phễu khuyết là dấu hiệu đáng ngờ có thiên lệch xuất bản.'
     loai: ve-site
-    nguon:
-      - cochrane-ch13
-    trich: will lead to an asymmetrical appearance of the funnel plot with a gap at the bottom corner of the graph
-    vi_tri: src/hinh/funnel-demo.html; Cochrane Handbook, chương 13, mục 13.3.4.2
+    vi_tri: src/hinh/funnel-demo.html
     ket_qua: dung
-    ghi_chu: "Đã kiểm trên src/hinh/funnel-demo.html: phễu phải không có chấm nào ở phía trái đường giữa từ hàng thứ hai trở xuống (x < 520 khi y > 270), phễu trái cân đối; hình không có số liệu. Chú thích hình chưa nhắc rằng phễu lệch còn có thể do lý do khác (xem pt43); ghi lại cho người giao, không sửa hình. Review (Claude Opus 5.5, 30/10/2026): Đã kiểm hình: phễu phải chỉ có một chấm ở bên trái đường giữa (hàng trên cùng), đáy trái trống; phễu trái cân. Chú thích dùng \"đáng ngờ\", \"có thể\", đúng mức; đoạn văn ngay trên hình nêu lý do khác (pt43), nên không sửa hình."
+    ghi_chu: "Đã kiểm trên src/hinh/funnel-demo.html: phễu phải không có chấm nào ở phía trái đường giữa từ hàng thứ hai trở xuống (x < 520 khi y > 270), phễu trái cân đối; hình không có số liệu. Chú thích hình chưa nhắc rằng phễu lệch còn có thể do lý do khác (xem pt43); ghi lại cho người giao, không sửa hình. Review (Claude Opus 5.5, 30/10/2026): Đã kiểm hình: phễu phải chỉ có một chấm ở bên trái đường giữa (hàng trên cùng), đáy trái trống; phễu trái cân. Chú thích dùng \"đáng ngờ\", \"có thể\", đúng mức; đoạn văn ngay trên hình nêu lý do khác (pt43), nên không sửa hình. Người gom (Claude Opus 5.5, 30/10/2026): câu về chính site chỉ tả hình (không ghi nguồn ngoài); ý \"phễu khuyết là dấu hiệu đáng ngờ có thiên lệch xuất bản\" do nhận định pt43 (có nguồn Cochrane chương 13, đã qua lượt 2) đỡ."
     review: dung
   - id: pt46
     cau: Gộp càng nhiều dữ liệu, ước lượng càng chính xác.
@@ -877,3 +874,6 @@ doi_chu:
   - cu: "\"g là chênh lệch trung bình giữa hai nhóm, chia cho độ lệch chuẩn (có hiệu chỉnh cho mẫu nhỏ).\""
     moi: "\"g là chênh lệch trung bình giữa hai nhóm, chia cho độ lệch chuẩn gộp của hai nhóm.\""
     ly_do: "Review: vế hiệu chỉnh cho mẫu nhỏ không có trong nguồn đã đọc (pt22)."
+  - cu: 'Tiêu đề và tên trong menu: "Gộp hàng trăm nghiên cứu lại thì được gì?"'
+    moi: '"Gộp nhiều nghiên cứu lại thì được gì?"'
+    ly_do: "Review D4-L2 đề xuất, chủ repo chọn 30/10/2026: ví dụ chính (Fischer 2011) gộp 105 hiệu ứng từ 53 bài; đường dẫn và id giữ nguyên."

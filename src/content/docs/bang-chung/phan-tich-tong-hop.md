@@ -1,8 +1,8 @@
 ---
-title: Gộp hàng trăm nghiên cứu lại thì được gì?
+title: Gộp nhiều nghiên cứu lại thì được gì?
 description: Phân tích tổng hợp (meta-analysis) gộp kết quả nhiều nghiên cứu thành một ước lượng chung. Cách đọc forest plot, hiểu độ lớn hiệu ứng gộp và nhận ra dấu hiệu thiên lệch xuất bản qua funnel plot.
 sidebar:
-  label: Gộp hàng trăm nghiên cứu lại thì được gì? Phân tích tổng hợp
+  label: Gộp nhiều nghiên cứu lại thì được gì? Phân tích tổng hợp
 in_duoc: true
 ---
 
