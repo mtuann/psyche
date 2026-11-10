@@ -34,6 +34,13 @@ const trangLv = lv && `nen-tang/${lv.id}`;
 const coTrangLv = trangLv && (await getCollection('docs')).some((e) => trangCuaMuc(e) === trangLv);
 const coVien = Boolean(loai && (lv || tang));
 const kd = trang ? kiemDinh(trang, KHOA, HO_SO[`/kiem-dinh/${trang}.yml`] as string | undefined) : null;
+// Tên chủ đề cho tìm kiếm (tiêu đề dạng câu hỏi không nêu chủ đề): chu_de ở trang.yml, và tên menu khi khác tiêu đề. Tiếng
+// Việt tách theo âm tiết, các âm như "quan", "nhận", "nhớ" có ở hầu hết bài, nên khi site lớn, trang đúng chủ đề bị đẩy
+// khỏi các kết quả đầu nếu tên chủ đề chỉ nằm lẻ trong thân bài. Pagefind lập chỉ mục với trọng số 10 (h1 là 7). Ẩn với
+// mọi người đọc (sr-only để Pagefind vẫn đọc; aria-hidden để máy đọc màn hình không đọc lặp). Không đọc từ thân trang,
+// nên mã băm của trang không đổi.
+const tenMenu = entry.data.sidebar?.label;
+const tenTim = [banGhi?.chu_de, tenMenu && tenMenu !== entry.data.title ? tenMenu : undefined].filter(Boolean).join('. ');
 ---
 
 <div class="pz-dau">
@@ -56,6 +63,7 @@ const kd = trang ? kiemDinh(trang, KHOA, HO_SO[`/kiem-dinh/${trang}.yml`] as str
 		)
 	}
 	<Default />
+	{tenTim && <span class="sr-only" aria-hidden="true" data-pagefind-weight="10">{tenTim}</span>}
 	{
 		coVien &&
 			(kd ? (
