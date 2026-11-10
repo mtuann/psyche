@@ -1,0 +1,88 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/dolinski2017#…
+ban_ghi: nguon/dolinski2017
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:8fd3f26644a2ed6e83ef825ea001409b8ea7f418c08079726892c940f115d667
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/1948550617693060
+    link: https://api.crossref.org/works/10.1177%2F1948550617693060
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/1948550617693060
+    link: https://api.openalex.org/works/doi:10.1177%2F1948550617693060
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Doliński, D., Grzyb, T., Folwarczny, M., Grzybała, P., Krzyszycha, K., Martynowska, K., & Trojanowski, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Doliński, Dariusz; Grzyb, Tomasz; Folwarczny, Michał; Grzybała, Patrycja; Krzyszycha, Karolina; Martynowska, Karolina; Trojanowski, Jakub
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1948550617693060
+    luot_2_trich: Dariusz Doliński; Tomasz Grzyb; Michał Folwarczny; Patrycja Grzybała; Karolina Krzyszycha; Karolina Martynowska; Jakub Trojanowski
+    ghi_chu: "đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, tac_gia): tác giả, tên bài, tập(số), trang sai (bản ghi: 2 tác giả, 8(3), 282–289, không DOI); theo Crossref DOI 10.1177/1948550617693060 (OpenAlex khớp): 7 tác giả, 8(8), 927–933. Lượt 1 và review hồ sơ thi-nghiem/milgram (D3) đã báo"
+  - id: n2
+    cau: "Năm xuất bản: 2017"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2017; các năm Crossref ghi: 2017"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1948550617693060
+  - id: n3
+    cau: "Tên: Would you deliver an electric shock in 2015? Obedience in the experimental paradigm developed by Stanley Milgram in the 50 years following the original studies"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Would You Deliver an Electric Shock in 2015? Obedience in the Experimental Paradigm Developed by Stanley Milgram in the 50 Years Following the Original Studies
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1948550617693060
+    ghi_chu: "đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, ten): tác giả, tên bài, tập(số), trang sai (bản ghi: 2 tác giả, 8(3), 282–289, không DOI); theo Crossref DOI 10.1177/1948550617693060 (OpenAlex khớp): 7 tác giả, 8(8), 927–933. Lượt 1 và review hồ sơ thi-nghiem/milgram (D3) đã báo"
+  - id: n4
+    cau: "Nơi đăng: Social Psychological and Personality Science, 8(8), 927–933"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Social Psychological and Personality Science, tập 8, số 8, trang 927-933
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1948550617693060
+    ghi_chu: "đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, noi_dang): tác giả, tên bài, tập(số), trang sai (bản ghi: 2 tác giả, 8(3), 282–289, không DOI); theo Crossref DOI 10.1177/1948550617693060 (OpenAlex khớp): 7 tác giả, 8(8), 927–933. Lượt 1 và review hồ sơ thi-nghiem/milgram (D3) đã báo"
+  - id: n5
+    cau: DOI 10.1177/1948550617693060 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1948550617693060
+    ghi_chu: "đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, doi): tác giả, tên bài, tập(số), trang sai (bản ghi: 2 tác giả, 8(3), 282–289, không DOI); theo Crossref DOI 10.1177/1948550617693060 (OpenAlex khớp): 7 tác giả, 8(8), 927–933. Lượt 1 và review hồ sơ thi-nghiem/milgram (D3) đã báo"

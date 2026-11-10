@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/taber2018#…
+ban_ghi: nguon/taber2018
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:980f4bd0f18b161faf54adfce63979a59ddf4f93edcf04cdc08f40fe0619a238
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1007/s11165-016-9602-2
+    link: https://api.crossref.org/works/10.1007%2Fs11165-016-9602-2
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1007/s11165-016-9602-2
+    link: https://api.openalex.org/works/doi:10.1007%2Fs11165-016-9602-2
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Taber, K. S."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Taber, Keith S.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11165-016-9602-2
+    luot_2_trich: Keith S. Taber
+  - id: n2
+    cau: "Năm xuất bản: 2018"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2018; các năm Crossref ghi: 2017, 2018"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://link.springer.com/article/10.1007/s11165-016-9602-2
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s11165-016-9602-2?fields=title,authors,year,venue,publicationDate,journal
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2017, bản ghi 2018. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Trang Springer: tập 48 số 6, tr. 1273-1296, ngày in 2018/12, trực tuyến 2017/06/07. Bản ghi dùng năm in 2018; năm 2017 của OpenAlex là năm trực tuyến."
+  - id: n3
+    cau: "Tên: The use of Cronbach's alpha when developing and reporting research instruments in science education"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The Use of Cronbach’s Alpha When Developing and Reporting Research Instruments in Science Education
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11165-016-9602-2
+  - id: n4
+    cau: "Nơi đăng: Research in Science Education, 48(6), 1273–1296"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Research in Science Education, tập 48, số 6, trang 1273-1296
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11165-016-9602-2
+  - id: n5
+    cau: DOI 10.1007/s11165-016-9602-2 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11165-016-9602-2

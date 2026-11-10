@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/benedetti2025#…
+ban_ghi: nguon/benedetti2025
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:8e92cb4a448358375505dfc295df5ce44867ce03d5b125f826ac56107cefbd91
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.ero.2025.09.006
+    link: https://api.crossref.org/works/10.1016%2Fj.ero.2025.09.006
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.ero.2025.09.006
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.ero.2025.09.006
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Benedetti, F."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Benedetti, Fabrizio
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ero.2025.09.006
+    luot_2_trich: Fabrizio Benedetti
+  - id: n2
+    cau: "Năm xuất bản: 2025"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2025; các năm Crossref ghi: 2025"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ero.2025.09.006
+  - id: n3
+    cau: "Tên: The concept of placebo/nocebo response and effect"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The concept of placebo/nocebo response and effect
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ero.2025.09.006
+  - id: n4
+    cau: "Nơi đăng: EULAR Rheumatology Open, 1(4), 309–311"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: EULAR Rheumatology Open, tập 1, số 4, trang 309-311
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ero.2025.09.006
+  - id: n5
+    cau: DOI 10.1016/j.ero.2025.09.006 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.ero.2025.09.006

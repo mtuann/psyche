@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/chabris2011#…
+ban_ghi: nguon/chabris2011
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:b8814bc3865093aa863b641905b6676630902036a584e1efbf9796340c87fa49
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1068/i0436
+    link: https://api.crossref.org/works/10.1068%2Fi0436
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1068/i0436
+    link: https://api.openalex.org/works/doi:10.1068%2Fi0436
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Chabris, C. F., Weinberger, A., Fontaine, M., & Simons, D. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Chabris, Christopher F; Weinberger, Adam; Fontaine, Matthew; Simons, Daniel J
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1068%2Fi0436
+    luot_2_trich: Christopher F. Chabris; Adam B. Weinberger; Matthew Fontaine; Daniel J. Simons
+  - id: n2
+    cau: "Năm xuất bản: 2011"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2011; các năm Crossref ghi: 2011"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1068%2Fi0436
+  - id: n3
+    cau: "Tên: You do not talk about Fight Club if you do not notice Fight Club: Inattentional blindness for a simulated real-world assault"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "You Do Not Talk about Fight Club if You Do Not Notice Fight Club: Inattentional Blindness for a Simulated Real-World Assault"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1068%2Fi0436
+  - id: n4
+    cau: "Nơi đăng: i-Perception, 2(2), 150–153"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: i-Perception, tập 2, số 2, trang 150-153
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1068%2Fi0436
+  - id: n5
+    cau: DOI 10.1068/i0436 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1068%2Fi0436

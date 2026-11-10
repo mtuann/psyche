@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/lusinchi2012#…
+ban_ghi: nguon/lusinchi2012
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:e4f3e2a3a04ba97103cc247dd2a8790f4a56dcb4a7ae20bcdbf2447074b7e338
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1017/s014555320001035x
+    link: https://api.crossref.org/works/10.1017%2Fs014555320001035x
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1017/s014555320001035x
+    link: https://api.openalex.org/works/doi:10.1017%2Fs014555320001035x
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Lusinchi, D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Lusinchi, Dominic
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs014555320001035x
+    luot_2_trich: Dominic Lusinchi
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012, 2016"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs014555320001035x
+  - id: n3
+    cau: 'Tên: "President" Landon and the 1936 Literary Digest poll: Were automobile and telephone owners to blame?'
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "“President” Landon and the 1936<i>Literary Digest</i>Poll: Were Automobile and Telephone Owners to Blame?"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs014555320001035x
+  - id: n4
+    cau: "Nơi đăng: Social Science History, 36(1), 23–54"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Social Science History, tập 36, số 1, trang 23-54
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs014555320001035x
+  - id: n5
+    cau: DOI 10.1017/s014555320001035x trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs014555320001035x

@@ -1,0 +1,85 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/krypotos2015#…
+ban_ghi: nguon/krypotos2015
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:343f365742f290d04386988522803f281039a7845b187316d9d1cfca80342870
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.3389/fnbeh.2015.00189
+    link: https://api.crossref.org/works/10.3389%2Ffnbeh.2015.00189
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.3389/fnbeh.2015.00189
+    link: https://api.openalex.org/works/doi:10.3389%2Ffnbeh.2015.00189
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Krypotos, A.-M., Effting, M., Kindt, M., & Beckers, T."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Krypotos, Angelos-Miltiadis
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.3389/fnbeh.2015.00189&resultType=core&format=json
+    luot_2_ghi_chu: 'Crossref: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Effting", nguồn ghi "(không có)"; OpenAlex: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "Effting", nguồn ghi "(không có)". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: tác giả Krypotos AM, Effting M, Kindt M, Beckers T (đủ bốn người), 2015, tập 9, số bài 189. Crossref thiếu tác giả.'
+    luot_2_trich: Angelos‐Miltiadis Krypotos
+  - id: n2
+    cau: "Năm xuất bản: 2015"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2015; các năm Crossref ghi: 2015"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffnbeh.2015.00189
+  - id: n3
+    cau: "Tên: Avoidance learning: A review of theoretical models and recent developments"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Avoidance learning: a review of theoretical models and recent developments"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffnbeh.2015.00189
+  - id: n4
+    cau: "Nơi đăng: Frontiers in Behavioral Neuroscience, 9, 189"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Frontiers in Behavioral Neuroscience, tập 9
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffnbeh.2015.00189
+  - id: n5
+    cau: DOI 10.3389/fnbeh.2015.00189 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffnbeh.2015.00189

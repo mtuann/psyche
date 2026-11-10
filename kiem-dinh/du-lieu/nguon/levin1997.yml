@@ -1,0 +1,85 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/levin1997#…
+ban_ghi: nguon/levin1997
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:0c743576a1a1197733174aa1570c59195bc577ac5ca84dcd46c606b7a16be93e
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.3758/bf03214339
+    link: https://api.crossref.org/works/10.3758%2Fbf03214339
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.3758/bf03214339
+    link: https://api.openalex.org/works/doi:10.3758%2Fbf03214339
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Levin, D. T., & Simons, D. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Levin, Daniel T.; Simons, Daniel J.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fbf03214339
+    luot_2_trich: Daniel T. Levin; Daniel J. Simons
+  - id: n2
+    cau: "Năm xuất bản: 1997"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1997; các năm Crossref ghi: 1997"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fbf03214339
+  - id: n3
+    cau: "Tên: Failure to detect changes to attended objects in motion pictures"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Failure to detect changes to attended objects in motion pictures
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fbf03214339
+  - id: n4
+    cau: "Nơi đăng: Psychonomic Bulletin & Review, 4(4), 501–506"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychonomic Bulletin &amp; Review, tập 4, số 4, trang 501-506
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fbf03214339
+  - id: n5
+    cau: DOI 10.3758/bf03214339 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3758%2Fbf03214339
+    ghi_chu: "đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, doi): thiếu DOI; hồ sơ thi-nghiem/khi-dot-vo-hinh dẫn DOI 10.3758/bf03214339, Crossref khớp bản ghi"

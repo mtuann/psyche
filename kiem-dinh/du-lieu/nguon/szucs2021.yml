@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/szucs2021#…
+ban_ghi: nguon/szucs2021
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:5034959b0d8bc21b883c0ef5b9186c204304474e9100c5c5811c1882dcfbe072
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1371/journal.pbio.3001151
+    link: https://api.crossref.org/works/10.1371%2Fjournal.pbio.3001151
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1371/journal.pbio.3001151
+    link: https://api.openalex.org/works/doi:10.1371%2Fjournal.pbio.3001151
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Szucs, D., & Ioannidis, J. P. A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Szucs, Denes; Ioannidis, John P. A.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pbio.3001151
+    luot_2_trich: Dénes Szűcs; John P. A. Ioannidis
+  - id: n2
+    cau: "Năm xuất bản: 2021"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2021; các năm Crossref ghi: 2021"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pbio.3001151
+  - id: n3
+    cau: "Tên: Correction: Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Correction: Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pbio.3001151
+  - id: n4
+    cau: "Nơi đăng: PLOS Biology, 19(3), e3001151"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: PLOS Biology, tập 19, số 3, trang e3001151
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pbio.3001151
+  - id: n5
+    cau: DOI 10.1371/journal.pbio.3001151 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pbio.3001151

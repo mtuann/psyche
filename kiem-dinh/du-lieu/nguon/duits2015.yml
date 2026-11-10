@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/duits2015#…
+ban_ghi: nguon/duits2015
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:ba6519297b143149bad2bc2ca4fd1a553e28f7012a8d8cbf72898a9fc8cbcda4
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1002/da.22353
+    link: https://api.crossref.org/works/10.1002%2Fda.22353
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1002/da.22353
+    link: https://api.openalex.org/works/doi:10.1002%2Fda.22353
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Duits, P., Cath, D. C., Lissek, S., Hox, J. J., Hamm, A. O., Engelhard, I. M., van den Hout, M. A., & Baas, J. M. P."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Duits, Puck; Cath, Danielle C.; Lissek, Shmuel; Hox, Joop J.; Hamm, Alfons O.; Engelhard, Iris M.; van den Hout, Marcel A.; Baas, Joke M. P.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fda.22353
+    luot_2_trich: Puck Duits; Daniëlle C. Cath; Shmuel M. Lissek; Joop J. Hox; Alfons O. Hamm; Iris M. Engelhard; Marcel van den Hout; Joke M. P. Baas
+  - id: n2
+    cau: "Năm xuất bản: 2015"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2015; các năm Crossref ghi: 2015"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fda.22353
+  - id: n3
+    cau: "Tên: Updated meta-analysis of classical fear conditioning in the anxiety disorders"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "UPDATED META-ANALYSIS OF CLASSICAL FEAR CONDITIONING IN THE ANXIETY DISORDERS: Review: Updated Meta-Analysis of Fear Conditioning in Anxiety Disorders"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fda.22353
+  - id: n4
+    cau: "Nơi đăng: Depression and Anxiety, 32(4), 239–253"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Depression and Anxiety, tập 32, số 4, trang 239-253
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fda.22353
+  - id: n5
+    cau: DOI 10.1002/da.22353 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1002%2Fda.22353

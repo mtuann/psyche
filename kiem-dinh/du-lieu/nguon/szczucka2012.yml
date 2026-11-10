@@ -1,0 +1,85 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/szczucka2012#…
+ban_ghi: nguon/szczucka2012
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:7e9dba734f5bd47d6ef137afdf9c49a1d48d967a4cf1b1f973041a134bd9b152
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.2478/v10059-012-0021-6
+    link: https://api.crossref.org/works/10.2478%2Fv10059-012-0021-6
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.2478/v10059-012-0021-6
+    link: https://api.openalex.org/works/doi:10.2478%2Fv10059-012-0021-6
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Szczucka, K."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Szczucka, Katarzyna
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2478%2Fv10059-012-0021-6
+    luot_2_trich: Katarzyna Szczucka
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2478%2Fv10059-012-0021-6
+  - id: n3
+    cau: "Tên: Attraction at first fright? What Datton [sic] & Aron really demonstrated almost 40 years ago"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Attraction at first fright? What Datton &amp; Aron really demonstrated almost 40 years ago
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2478%2Fv10059-012-0021-6
+    ghi_chu: tên viết "Dutton" (đúng tên người) đổi thành "Datton" như bản in (lỗi chính tả của chính bài in; APA giữ tên như bản in), theo lượt 2; thêm "[sic]" sau "Datton" (chủ repo chọn 09/11/2026), để người đọc biết lỗi chính tả là của bản in, không phải của site
+  - id: n4
+    cau: "Nơi đăng: Polish Psychological Bulletin, 43(3), 191–198"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Polish Psychological Bulletin, tập 43, số 3, trang 191-198
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2478%2Fv10059-012-0021-6
+  - id: n5
+    cau: DOI 10.2478/v10059-012-0021-6 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.2478%2Fv10059-012-0021-6

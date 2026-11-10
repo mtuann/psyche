@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/lohr2017#…
+ban_ghi: nguon/lohr2017
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:3b04f8837a05ede43cb3005e5fdd2f445e5c69cf916eb782eba385c66f9ebb9d
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1515/spp-2016-0006
+    link: https://api.crossref.org/works/10.1515%2Fspp-2016-0006
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1515/spp-2016-0006
+    link: https://api.openalex.org/works/doi:10.1515%2Fspp-2016-0006
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Lohr, S. L., & Brick, J. M."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Lohr, Sharon L.; Brick, J. Michael
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1515%2Fspp-2016-0006
+    luot_2_trich: Sharon L. Lohr; J. Michael Brick
+  - id: n2
+    cau: "Năm xuất bản: 2017"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2017; các năm Crossref ghi: 2017"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1515%2Fspp-2016-0006
+  - id: n3
+    cau: "Tên: Roosevelt predicted to win: Revisiting the 1936 Literary Digest poll"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Roosevelt Predicted to Win: Revisiting the 1936 <i>Literary Digest</i> Poll"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1515%2Fspp-2016-0006
+  - id: n4
+    cau: "Nơi đăng: Statistics, Politics and Policy, 8(1), 65–84"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Statistics, Politics and Policy, tập 8, số 1, trang 65-84
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1515%2Fspp-2016-0006
+  - id: n5
+    cau: DOI 10.1515/spp-2016-0006 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1515%2Fspp-2016-0006

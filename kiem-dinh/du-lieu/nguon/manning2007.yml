@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/manning2007#…
+ban_ghi: nguon/manning2007
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:bb1158ab943f7f570d63b36c2386bddcbea653f517bb6f30a1cf90a3e6df2502
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/0003-066x.62.6.555
+    link: https://api.crossref.org/works/10.1037%2F0003-066x.62.6.555
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/0003-066x.62.6.555
+    link: https://api.openalex.org/works/doi:10.1037%2F0003-066x.62.6.555
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Manning, R., Levine, M., & Collins, A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Manning, Rachel; Levine, Mark; Collins, Alan
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0003-066x.62.6.555
+    luot_2_trich: Rachel Manning; Mark Levine; Alan F. Collins
+  - id: n2
+    cau: "Năm xuất bản: 2007"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2007; các năm Crossref ghi: 2007"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0003-066x.62.6.555
+  - id: n3
+    cau: "Tên: The Kitty Genovese murder and the social psychology of helping: The parable of the 38 witnesses"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The Kitty Genovese murder and the social psychology of helping: The parable of the 38 witnesses."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0003-066x.62.6.555
+  - id: n4
+    cau: "Nơi đăng: American Psychologist, 62(6), 555–562"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: American Psychologist, tập 62, số 6, trang 555-562
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0003-066x.62.6.555
+  - id: n5
+    cau: DOI 10.1037/0003-066x.62.6.555 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0003-066x.62.6.555
