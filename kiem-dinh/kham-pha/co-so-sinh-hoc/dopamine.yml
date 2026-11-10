@@ -4,714 +4,977 @@ nguon_cu: ../psyche-zero/docs/kham-pha/co-so-sinh-hoc/dopamine.md
 tang: mo-rong
 muc: V2
 lan:
-- so: 1
-  ngay: '2026-11-10'
-  nhanh: moi/d6-l2
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L2 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d6-l2
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L2 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L2)
+      review: Claude Sonnet 5.5 (agent review D6-L2, 10/11/2026)
+      kiem_mau: null
 nguon:
-- id: schultz1997
-  ten: 'Schultz, Dayan & Montague (1997), Science 275(5306), 1593–1599: toàn văn (PDF bản của P. Dayan tại gatsby.ucl.ac.uk); là bài tổng hợp ghi chép neuron và mô hình'
-  link: https://doi.org/10.1126/science.275.5306.1593
-  toan_van: true
-- id: schultz2016
-  ten: 'Schultz (2016), Dialogues Clin Neurosci 18(1), 23–32: toàn văn (PMC, truy cập mở)'
-  link: https://doi.org/10.31887/DCNS.2016.18.1/wschultz
-  toan_van: true
-- id: fiorillo2003
-  ten: 'Fiorillo, Tobler & Schultz (2003), Science 299, 1898–1902: tóm tắt (Europe PMC); toàn văn không mở được'
-  link: https://doi.org/10.1126/science.1077349
-  toan_van: false
-- id: berridge1989
-  ten: 'Berridge, Venier & Robinson (1989), Behav Neurosci 103(1), 36–45: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1037/0735-7044.103.1.36
-  toan_van: false
-- id: berridge1998
-  ten: 'Berridge & Robinson (1998), Brain Res Rev 28(3), 309–369: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/S0165-0173(98)00019-8
-  toan_van: false
-- id: pecina2005
-  ten: 'Peciña & Berridge (2005), J Neurosci 25(50), 11777–11786: tóm tắt (Europe PMC); toàn văn bị chặn'
-  link: https://doi.org/10.1523/JNEUROSCI.2329-05.2005
-  toan_van: false
-- id: olds1954
-  ten: 'Olds & Milner (1954), J Comp Physiol Psychol 47(6), 419–427: không mở được (APA bị chặn); chỉ có nhan đề qua danh mục của Schultz 2016'
-  link: https://doi.org/10.1037/h0058775
-  toan_van: false
-- id: garrison2013
-  ten: 'Garrison, Erdeniz & Done (2013), Neurosci Biobehav Rev 37(7), 1297–1310: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/j.neubiorev.2013.03.023
-  toan_van: false
-- id: kalia2015
-  ten: 'Kalia & Lang (2015), Lancet 386, 896–912: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/S0140-6736(14)61393-3
-  toan_van: false
-- id: poldrack2006
-  ten: 'Poldrack (2006), Trends Cogn Sci 10(2), 59–63: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/j.tics.2005.12.004
-  toan_van: false
-- id: sepah2019
-  ten: 'Bowles, N. (2019), The New York Times, đăng lại trên Irish Times: "How to feel nothing now in order to feel more later" (mở đọc; trích lời Sepah)'
-  link: https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491
-  toan_van: true
-- id: vinmec
-  ten: Vinmec, "Hormones hạnh phúc là gì và làm thế nào để tăng cường?" (mở 10/11/2026)
-  link: https://vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/song-khoe/hormones-hanh-phuc-la-gi-va-lam-nao-de-tang-cuong/
-  toan_van: true
-- id: tim-kiem-vn
-  ten: 'Tìm trên Europe PMC (10/11/2026): (Vietnam* OR Vietnamese) AND dopamine AND ("reward prediction" OR "wanting" OR "incentive salience") (107 kết quả, năm kết quả đầu là tổng quan hay nghiên cứu không phải kiểm tra riêng trên người Việt); OpenAlex bị giới hạn lượt'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam*%20OR%20Vietnamese)%20AND%20dopamine&format=json
-  toan_van: false
+  - id: schultz1997
+    ten: 'Schultz, Dayan & Montague (1997), Science 275(5306), 1593–1599: toàn văn (PDF bản của P. Dayan tại gatsby.ucl.ac.uk); là bài tổng hợp ghi chép neuron và mô hình'
+    link: https://doi.org/10.1126/science.275.5306.1593
+    toan_van: true
+  - id: schultz2016
+    ten: 'Schultz (2016), Dialogues Clin Neurosci 18(1), 23–32: toàn văn (PMC, truy cập mở)'
+    link: https://doi.org/10.31887/DCNS.2016.18.1/wschultz
+    toan_van: true
+  - id: fiorillo2003
+    ten: 'Fiorillo, Tobler & Schultz (2003), Science 299, 1898–1902: tóm tắt (Europe PMC); toàn văn không mở được'
+    link: https://doi.org/10.1126/science.1077349
+    toan_van: false
+  - id: berridge1989
+    ten: 'Berridge, Venier & Robinson (1989), Behav Neurosci 103(1), 36–45: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/0735-7044.103.1.36
+    toan_van: false
+  - id: berridge1998
+    ten: 'Berridge & Robinson (1998), Brain Res Rev 28(3), 309–369: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/S0165-0173(98)00019-8
+    toan_van: false
+  - id: pecina2005
+    ten: 'Peciña & Berridge (2005), J Neurosci 25(50), 11777–11786: tóm tắt (Europe PMC); toàn văn bị chặn'
+    link: https://doi.org/10.1523/JNEUROSCI.2329-05.2005
+    toan_van: false
+  - id: olds1954
+    ten: 'Olds & Milner (1954), J Comp Physiol Psychol 47(6), 419–427: không mở được (APA bị chặn); chỉ có nhan đề qua danh mục của Schultz 2016'
+    link: https://doi.org/10.1037/h0058775
+    toan_van: false
+  - id: garrison2013
+    ten: 'Garrison, Erdeniz & Done (2013), Neurosci Biobehav Rev 37(7), 1297–1310: tóm tắt (Europe PMC); số liệu 35 nghiên cứu, 446 điểm tọa độ từ bản tác giả (uhra.herts.ac.uk/id/eprint/3623, đọc ở review 10/11/2026)'
+    link: https://doi.org/10.1016/j.neubiorev.2013.03.023
+    toan_van: true
+  - id: kalia2015
+    ten: 'Kalia & Lang (2015), Lancet 386, 896–912: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/S0140-6736(14)61393-3
+    toan_van: false
+  - id: poldrack2006
+    ten: 'Poldrack (2006), Trends Cogn Sci 10(2), 59–63: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.tics.2005.12.004
+    toan_van: false
+  - id: sepah2019
+    ten: 'Bowles, N. (2019), The New York Times, đăng lại trên Irish Times: "How to feel nothing now in order to feel more later" (mở đọc; trích lời Sepah)'
+    link: https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491
+    toan_van: true
+  - id: vinmec
+    ten: Vinmec, "Hormones hạnh phúc là gì và làm thế nào để tăng cường?" (mở 10/11/2026)
+    link: https://vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/song-khoe/hormones-hanh-phuc-la-gi-va-lam-nao-de-tang-cuong/
+    toan_van: true
+  - id: tim-kiem-vn
+    ten: 'Tìm trên Europe PMC (10/11/2026): (Vietnam* OR Vietnamese) AND dopamine AND ("reward prediction" OR "wanting" OR "incentive salience") (107 kết quả, năm kết quả đầu là tổng quan hay nghiên cứu không phải kiểm tra riêng trên người Việt); OpenAlex bị giới hạn lượt'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam*%20OR%20Vietnamese)%20AND%20dopamine&format=json
+    toan_van: false
+  - id: harvard2020
+    ten: 'Grinspoon, P. (2020), Harvard Health Blog 26/2/2020, "Dopamine fasting: Misunderstanding science spawns a maladaptive fad": toàn văn (đã mở đọc 10/11/2026; bậc 3, dùng cho lời Sepah và nhận xét về tên gọi)'
+    link: https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917
+    toan_van: true
+  - id: kushlev2016
+    ten: 'Kushlev, Proulx & Dunn (2016), Proc CHI 2016, 1011–1020, "Silence Your Phones": tóm tắt (Crossref, OpenAlex)'
+    link: https://doi.org/10.1145/2858036.2858359
+    toan_van: false
 nhan_dinh:
-- id: n1
-  cau: Dopamine thường được xếp vào nhóm "hormone hạnh phúc" cùng serotonin, endorphin, oxytocin trong các lời khuyên sức khỏe.
-  loai: thoi-su
-  nguon:
-  - vinmec
-  trich: Các hormone hạnh phúc do cơ thể sản xuất bao gồm dopamine giúp cảm thấy dễ chịu, serotonin làm giảm buồn phiền chán nản, oxytocin là hormone tình yêu và endorphin
-  vi_tri: Vinmec, đoạn mở đầu
-  het_han: '2028-11-01'
-  ket_qua: dung
-  ghi_chu: Ví dụ một trang; "thường" chỉ kiểm bằng một ví dụ. Mốc 11/2026.
-- id: n2
-  cau: Các câu trích "Buồn thì làm gì đó cho tăng dopamine đi", "Detox dopamine 7 ngày để reset não" là lời khuyên phổ biến (ví dụ minh họa).
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: gia-dinh. Câu trích minh họa, không khẳng định điều gì về bằng chứng.
-- id: n3
-  cau: Chuột bị phá hủy phần lớn dopamine ở nhân accumbens và thể vân vẫn có phản ứng "thích" vị ngọt gần như không đổi.
-  loai: phat-hien
-  nguon:
-  - berridge1998
-  - berridge1989
-  trich: rats were depleted of dopamine in the nucleus accumbens and neostriatum by up to 99% ... We found normal hedonic reaction patterns to sucrose vs. quinine
-  vi_tri: Berridge & Robinson 1998, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bị phá hủy gần như toàn bộ dopamine trong não vẫn tỏ ra thích vị ngọt như bình thường". Chữ mới nói đúng vùng và mức (đến 99% ở accumbens, thể vân). Lý do: tóm tắt Berridge & Robinson 1998.'
-- id: n4
-  cau: Phần thưởng được báo trước chắc chắn không làm neuron dopamine bùng phát.
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  - schultz2016
-  trich: The dopamine neuron is activated by the reward-predicting stimulus but fails to be activated by the predicted reward
-  vi_tri: Schultz 1997, chú thích Hình 1 (giữa)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "không khiến neuron dopamine phản ứng gì". Chữ mới: "không làm neuron bùng phát". Lý do: nguồn nói "fails to be activated", không nói không phản ứng gì.'
-- id: n5
-  cau: 'Dopamine không đơn giản là "chất gây sướng": một vai trò được ghi nhận rõ của nó là báo cho não biết điều vừa xảy ra tốt hơn hay tệ hơn dự đoán (sai số dự đoán phần thưởng).'
-  loai: phat-hien
-  nguon:
-  - schultz2016
-  trich: Most dopamine neurons in the midbrain of humans, monkeys, and rodents signal a reward prediction error
-  vi_tri: Schultz 2016, tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Dopamine không phải "chất gây sướng". Công việc chính của nó là báo...". Chữ mới: "không đơn giản là", "một vai trò được ghi nhận rõ". Lý do: "công việc chính" mạnh hơn nguồn.'
-- id: n6
-  cau: Theo các thí nghiệm ở chuột của Berridge và cộng sự, cái "thích" được khuếch đại ở những điểm nóng nhỏ bởi hệ opioid; theo khung của họ, dopamine liên quan đến cái "muốn"; ở chuột hai thứ này có thể tách rời.
-  loai: phat-hien
-  nguon:
-  - pecina2005
-  - berridge1998
-  trich: We conclude instead that dopamine may be more important to incentive salience
-  vi_tri: Berridge & Robinson 1998, tóm tắt; Peciña & Berridge 2005, tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "do một hệ khác đảm nhiệm: hệ opioid. Dopamine điều khiển cái "muốn"... có thể tách rời nhau hoàn toàn". Chữ mới nêu là kết quả ở chuột của nhóm Berridge và bỏ "hoàn toàn".'
-- id: n7
-  cau: Chúng tôi không tìm thấy cơ chế hay nghiên cứu nào ủng hộ "detox dopamine" theo nghĩa đen (xả dopamine ra khỏi não).
-  loai: phat-hien
-  nguon:
-  - sepah2019
-  trich: The title's not to be taken literally.
-  vi_tri: Irish Times (NYT), đoạn Sepah
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "không có cơ sở khoa học nào cả". Chữ mới nói về việc không tìm thấy. Lý do: không thể chứng minh phủ định; chỉ tìm thấy lời của người phổ biến (n47) và kết quả tìm kiếm (News-Medical, Digital Zen, chỉ blog, không dùng làm nguồn).'
-- id: n8
-  cau: Dopamine chủ yếu được nghiên cứu như một chất dẫn truyền thần kinh trong não, dù truyền thông gọi là "hormone hạnh phúc".
-  loai: dinh-nghia
-  nguon:
-  - schultz2016
-  - berridge1998
-  trich: mesolimbic and neostriatal dopamine systems
-  vi_tri: Berridge & Robinson 1998, tóm tắt; Schultz 2016
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Dopamine là một chất dẫn truyền thần kinh — không phải hormone theo đúng nghĩa sinh học". Chữ mới: "chủ yếu được nghiên cứu như". Lý do: tránh khẳng định tuyệt đối về hormone; chưa mở APA Dictionary.'
-- id: n9
-  cau: Các neuron sản xuất dopamine tập trung ở vùng não giữa (VTA và chất đen), gửi tín hiệu đến nhân accumbens và thể vân.
-  loai: dinh-nghia
-  nguon:
-  - berridge1998
-  - kalia2015
-  trich: loss of dopaminergic neurons in the substantia nigra; mesolimbic and neostriatal dopamine systems
-  vi_tri: Kalia & Lang, tóm tắt; Berridge & Robinson, tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: Chữ cũ có "vùng xử lý động lực". Chữ mới bỏ cụm này; "VTA" suy từ "mesolimbic", chưa thấy tên VTA trong tóm tắt (chỗ khó).
-- id: n10
-  cau: Ngộ nhận "dopamine = chất gây sướng" thường được gắn với dòng nghiên cứu bắt đầu từ thí nghiệm năm 1954 của Olds và Milner.
-  loai: lich-su
-  nguon:
-  - schultz2016
-  - olds1954
-  trich: The study of reward processing in the brain started when Olds and Milner introduced electrodes into the brains of rats
-  vi_tri: Schultz 2016, đoạn mở đầu
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bắt nguồn từ một thí nghiệm nổi tiếng năm 1954, rồi được thổi phồng trong nhiều thập kỷ". Chữ mới: "thường được gắn với dòng nghiên cứu bắt đầu từ". Lý do: "bắt nguồn" và "thổi phồng" không có nguồn.'
-- id: n11
-  cau: Olds và Milner đặt điện cực vào vùng vách (septal area) và các vùng não khác của chuột; mỗi lần nhấn cần gạt, não nhận một dòng điện nhỏ.
-  loai: phat-hien
-  nguon:
-  - olds1954
-  - schultz2016
-  trich: Olds and Milner introduced electrodes into the brains of rats and subjected them to small electric currents when they pressed a lever. ... Olds and Milner placed electrodes in different brain regions.
-  vi_tri: Schultz 2016, đoạn 4; nhan đề Olds 1954 trong danh mục
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "rồi đặt chuột vào hộp Skinner có cần gạt". Chữ mới bỏ "hộp Skinner" (không có trong nguồn đã mở). Bài gốc không mở được; theo Schultz 2016 kể lại (đã ghi trên trang). Vùng vách theo nhan đề bài gốc.'
-- id: n12
-  cau: Chuột nhấn cần nhiều hơn để nhận thêm kích thích ở một số vùng, đến mức quên ăn uống một lúc.
-  loai: phat-hien
-  nguon:
-  - schultz2016
-  trich: The rats pressed more to get more electric shocks to their brains. The animals were so fascinated by the lever pressing that they forgot to eat and drink for a while.
-  vi_tri: Schultz 2016, đoạn 4
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "tự kích thích "thường xuyên và đều đặn trong thời gian dài" — sẵn sàng học hành vi mới chỉ để được kích thích". Chữ mới theo Schultz 2016. Lý do: câu trích cũ không thấy ở nguồn mở được.'
-- id: n13
-  cau: Điều này được diễn giải là đã tìm thấy một cơ sở thần kinh của phần thưởng; về sau các nghiên cứu khác (như Corbett và Wise, 1980) gắn tự kích thích não với các đường dẫn dopamine.
-  loai: lich-su
-  nguon:
-  - schultz2016
-  trich: Olds and Milner had found a physical correlate for reward in the brain!
-  vi_tri: 'Schultz 2016; Corbett & Wise: nhan đề trong danh mục tham khảo'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "diễn giải là não có một "trung tâm phần thưởng"... công chúng ghép nối: dopamine = chất gây sướng". Chữ mới theo Schultz 2016 và dẫn Corbett & Wise qua nhan đề. Lý do: "công chúng ghép nối" không kiểm được.'
-- id: n14
-  cau: Theo những gì chúng tôi đọc được, thí nghiệm gốc của Olds và Milner không đo dopamine; liên kết với dopamine là diễn giải của các nghiên cứu về sau.
-  loai: lich-su
-  nguon:
-  - schultz2016
-  - olds1954
-  trich: 'Corbett & Wise (1980): Intracranial self-stimulation in relation to the ascending dopaminergic systems of the midbrain'
-  vi_tri: Schultz 2016, danh mục tham khảo
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Olds và Milner không hề đo dopamine — liên kết này là diễn giải chồng chất". Chữ mới thêm "theo những gì chúng tôi đọc được" vì không mở được bài gốc (chỗ khó).'
-- id: n15
-  cau: 'Schultz, Dayan và Montague (1997) là bài tổng hợp: ghi hoạt động từng neuron dopamine ở vùng não giữa của khỉ tỉnh táo trong nhiệm vụ học điều kiện (kích thích thị giác báo trước phần thưởng là nước trái cây), cùng mô hình học tăng cường TD.'
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  trich: single dopamine neurons is recorded in alert monkeys while they perform behavioral acts and receive rewards ... Before learning, a drop of appetitive fruit juice occurs in the absence of prediction
-  vi_tri: Schultz 1997, đoạn thứ 3 của phần mở bài; chú thích Hình 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Wolfram Schultz và cộng sự ghi hoạt động... một tín hiệu (ánh đèn)". Chữ mới: bài tổng hợp, "kích thích thị giác". Lý do: bài 1997 là tổng hợp ghi chép (và mô hình TD), chú thích Hình 1 chỉ nói "conditioned visual stimulus"; "ánh đèn" không có.'
-- id: n16
-  cau: Phần thưởng bất ngờ làm neuron dopamine bùng phát mạnh.
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  trich: Before learning, a drop of appetitive fruit juice occurs in the absence of prediction—hence a positive error in the prediction of reward. The dopamine neuron is activated by this unpredicted occurrence of juice.
-  vi_tri: Schultz 1997, chú thích Hình 1 (trên)
-  ket_qua: dung
-- id: n17
-  cau: Sau khi học xong, neuron bùng phát với tín hiệu báo trước, còn phần thưởng đã được dự đoán thì không làm neuron bùng phát.
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  trich: After learning, the conditioned stimulus predicts reward, and the reward occurs according to the prediction—hence no error in the prediction of reward. The dopamine neuron is activated by the reward-predicting stimulus but fails to be activated by the predicted reward
-  vi_tri: Schultz 1997, chú thích Hình 1 (giữa)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đáp ứng "chuyển" sang tín hiệu báo trước... neuron gần như im lặng". Chữ mới sát chú thích hình.'
-- id: n18
-  cau: Phần thưởng được dự đoán nhưng không đến thì hoạt động neuron bị ức chế đúng lúc phần thưởng lẽ ra đến.
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  - schultz2016
-  trich: The activity of the dopamine neuron is depressed exactly at the time when the reward would have occurred.
-  vi_tri: 'Schultz 1997, chú thích Hình 1 (dưới); Schultz 2016: "depressed activity"'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "giảm xuống dưới mức nền". Chữ mới: "bị ức chế". Lý do: nguồn dùng "depressed", không nói "dưới mức nền".'
-- id: n19
-  cau: 'Sai số dự đoán = thực tế − dự đoán: neuron không báo "có sướng không" mà báo "có bất ngờ không — và theo hướng nào".'
-  loai: dinh-nghia
-  nguon:
-  - schultz2016
-  trich: The dopamine response thus reflects a reward prediction error and can be described by the simple difference between obtained and predicted reward
-  vi_tri: Schultz 2016, mục "Reward prediction error"
-  ket_qua: dung
-- id: n20
-  cau: Fiorillo và cộng sự (2003) ghi neuron dopamine với các tín hiệu báo trước những xác suất phần thưởng khác nhau.
-  loai: phat-hien
-  nguon:
-  - fiorillo2003
-  trich: Using distinct stimuli to indicate the probability of reward
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Vẫn ghi neuron dopamine trên khỉ". Chữ mới bỏ "trên khỉ" vì tóm tắt không nêu loài (chỗ khó).'
-- id: n21
-  cau: Đáp ứng ngắn của neuron thay đổi đều đặn theo xác suất phần thưởng, phù hợp với mã hóa chênh lệch giữa phần thưởng thực và dự đoán.
-  loai: phat-hien
-  nguon:
-  - fiorillo2003
-  trich: the phasic activation of dopamine neurons varied monotonically across the full range of probabilities, supporting past claims that this response codes the discrepancy between predicted and actual reward
-  vi_tri: Tóm tắt
-  ket_qua: dung
-- id: n22
-  cau: 'Có một đáp ứng mới: hoạt động tăng dần cho đến thời điểm phần thưởng có thể đến, tăng theo mức không chắc chắn, lớn nhất ở xác suất 50%.'
-  loai: phat-hien
-  nguon:
-  - fiorillo2003
-  trich: a previously unobserved response covaried with uncertainty and consisted of a gradual increase in activity until the potential time of reward ... maximal at P = 0.5
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "tăng dần, duy trì ... mạnh nhất khi xác suất là 50%". Chữ mới: "tăng theo mức không chắc chắn, lớn nhất ở 50%". Lý do: "duy trì" và "mạnh nhất" không phải lời của tóm tắt; cực đại là của độ không chắc chắn.'
-- id: n23
-  cau: Các tác giả gợi ý tín hiệu này có thể liên quan đến học dựa trên chú ý và hành vi chấp nhận rủi ro.
-  loai: phat-hien
-  nguon:
-  - fiorillo2003
-  trich: The coding of uncertainty suggests a possible role for dopamine signals in attention-based learning and risk-taking behavior.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Dopamine... bị thu hút bởi chính sự không chắc chắn". Chữ mới theo gợi ý của tác giả.'
-- id: n24
-  cau: Berridge, Venier và Robinson (1989) tiêm 6-OHDA vào vùng chất đen của chuột; chuột trở nên biếng ăn (aphagia), không tự ăn nữa.
-  loai: phat-hien
-  nguon:
-  - berridge1989
-  trich: taste reactivity was examined in rats made aphagic by intranigral 6-OHDA injections
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "phá hủy hệ dopamine bằng 6-OHDA... biếng ăn hoàn toàn: không tự đi tìm hay ăn". Chữ mới: tổn thương qua tiêm vào chất đen; "không tự ăn". Lý do: "hoàn toàn" và "tìm thức ăn" không có trong tóm tắt.'
-- id: n25
-  cau: Khi cho vị ngọt vào miệng, phản ứng miệng-mặt (taste reactivity) của chuột gần như không đổi.
-  loai: phat-hien
-  nguon:
-  - berridge1989
-  trich: Taste reactivity was essentially unchanged.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "biểu cảm mặt thư giãn, thè lưỡi, liếm môi... hoàn toàn bình thường". Chữ mới: "gần như không đổi", bỏ danh sách biểu hiện. Lý do: tóm tắt chỉ nói "essentially unchanged".'
-- id: n26
-  cau: 'Các tác giả lập luận: nếu dopamine tạo ra khoái cảm thì tổn thương dopamine phải làm đổi phản ứng này; điều đó đã không xảy ra.'
-  loai: phat-hien
-  nguon:
-  - berridge1989
-  trich: The persistence of normal taste reactivity argues against both an anhedonia and a global sensorimotor arousal interpretation
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nếu dopamine tạo ra sung sướng, phá hủy dopamine phải xóa luôn cảm giác thích — nó đã không làm vậy." Chữ mới thêm "các tác giả lập luận".'
-- id: n27
-  cau: 'Berridge và Robinson (1998) là bài tổng quan kèm nghiên cứu mới: chuột mất đến 99% dopamine ở nhân accumbens và thể vân, rồi đo phản ứng miệng-mặt với vị ngọt, vị đắng, học lại giá trị vị và thuốc tăng khoái cảm.'
-  loai: phat-hien
-  nguon:
-  - berridge1998
-  trich: rats were depleted of dopamine in the nucleus accumbens and neostriatum by up to 99% using 6-hydroxydopamine
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Một bài tổng quan lớn, gom bằng chứng từ thần kinh học, điện sinh lý và hành vi". Chữ mới thêm nghiên cứu mới. Lý do: tóm tắt nói rõ có "a new study".'
-- id: n28
-  cau: Chuột vẫn có phản ứng "thích" bình thường; các tác giả kết luận hệ dopamine không cần để tạo ra khoái cảm cũng không cần cho việc học các mối liên hệ khoái cảm mới, và đề xuất dopamine có thể quan trọng hơn cho "wanting".
-  loai: phat-hien
-  nguon:
-  - berridge1998
-  trich: We conclude that dopamine systems are not needed either to mediate the hedonic pleasure of reinforcers or to mediate predictive associations involved in hedonic reward learning. We conclude instead that dopamine may be more important to incentive salience
-  vi_tri: Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Dopamine cần cho wanting... Hệ dopamine cần cho việc "muốn"". Chữ mới: "có thể quan trọng hơn" theo "may be".'
-- id: n29
-  cau: Peciña và Berridge (2005) vi tiêm DAMGO (chất kích hoạt thụ thể μ-opioid) vào từng điểm nhỏ trong vỏ giữa của nhân accumbens ở chuột, đo phản ứng "thích" với vị ngọt và lượng ăn.
-  loai: phat-hien
-  nguon:
-  - pecina2005
-  trich: We mapped changes in affective orofacial reactions of "liking"/"disliking" elicited by sucrose or quinine tastes after D-Ala2-N-Me-Phe4-Glycol5-enkephalin (DAMGO) microinjections in rats
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "vào từng điểm nhỏ trong nhân accumbens". Chữ mới thêm "vỏ giữa" và lượng ăn. DAMGO là chất kích hoạt thụ thể μ-opioid: kiến thức dược học chung.'
-- id: n30
-  cau: Chỉ ở một điểm nóng khoảng 1 mm³ ở vùng trước-lưng của vỏ giữa, DAMGO làm tăng phản ứng "thích" với vị ngọt; ở mọi vùng của vỏ giữa, DAMGO đều làm chuột ăn nhiều hơn.
-  loai: so-lieu
-  nguon:
-  - pecina2005
-  trich: opioid-induced increases in sucrose hedonic impact are generated by a localized cubic millimeter site in a rostrodorsal region of the medial shell. In contrast, all regions of the medial shell generated DAMGO-induced robust increases in eating behavior and food intake.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "phản ứng "thích" tăng gấp khoảng bốn lần bình thường. Ở các điểm xung quanh... không tăng "thích"". Chữ mới bỏ "gấp bốn lần" (tóm tắt không nêu; toàn văn không mở được) và nói đủ phạm vi.'
-- id: n31
-  cau: Theo các tác giả, mạch opioid kích thích ăn phân bố rộng, còn mạch "thích" khu trú hơn nhiều; nghiên cứu này không đo dopamine.
-  loai: phat-hien
-  nguon:
-  - pecina2005
-  trich: Opioid circuits for stimulating food intake are widely distributed, whereas hedonic "liking" circuits are more tightly localized in the rostromedial shell of the nucleus accumbens.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Khoái cảm thật sự được tạo ra bởi hệ opioid — dopamine đứng ngoài câu chuyện này." Chữ mới theo tóm tắt. Lý do: nghiên cứu không đo dopamine nên không nói được "đứng ngoài".'
-- id: n32
-  cau: 'Vững chắc: neuron dopamine mã hóa sai số dự đoán phần thưởng.'
-  loai: nhan
-  nhan: vung-chac
-  co_so:
-  - schultz2016
-  - garrison2013
-  - schultz1997
-  ly_do: 'Tổng quan Schultz 2016 (ghi neuron ở người, khỉ, chuột) và phân tích tổng hợp ALE các nghiên cứu ghi hình (Garrison 2013: thể vân là vùng chính mã hóa sai số dự đoán) cùng chiều; đúng ở nhiều loài. Giới hạn: ghi hình não không đo riêng dopamine; chưa tìm thấy tái lập lớn có đăng ký trước. Chỗ khó: thước đo mục 4 cần tổng hợp hay tổng quan hệ thống: Schultz 2016 là tổng quan kể, Garrison 2013 là phân tích tổng hợp về não chứ không riêng neuron dopamine.'
-  nguon:
-  - schultz2016
-  - garrison2013
-  - schultz1997
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đã được tái lập rộng rãi... Phát hiện của Schultz và cộng sự (1997)". Chữ mới: "Mẫu hình... đã được thấy lại", thêm Garrison 2013 và nói ghi hình não không đo riêng dopamine. Lý do: kể rõ giới hạn.'
-- id: n33
-  cau: Tổng quan của chính Schultz (2016) kết luận rằng hầu hết neuron dopamine ở não giữa của người, khỉ và động vật gặm nhấm đều báo hiệu sai số dự đoán phần thưởng.
-  loai: phat-hien
-  nguon:
-  - schultz2016
-  trich: Most dopamine neurons in the midbrain of humans, monkeys, and rodents signal a reward prediction error
-  vi_tri: Schultz 2016, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: dấu trích dẫn Việt hóa "hầu hết neuron...". Chữ mới bỏ dấu trích (là bản dịch).'
-- id: n34
-  cau: Hàng trăm nghiên cứu ghi hình não ở người cho thấy tín hiệu sai số dự đoán ở các cấu trúc thưởng, trong đó thể vân là vùng chính theo một phân tích tổng hợp (Garrison và cộng sự, 2013).
-  loai: so-lieu
-  nguon:
-  - schultz2016
-  - garrison2013
-  trich: The striatum was the key brain area encoding for prediction error
-  vi_tri: 'Garrison 2013, tóm tắt; Schultz 2016: "hundreds of human neuro imaging studies"'
-  ket_qua: dung
-  ghi_chu: Mới thêm cho khung n32.
-- id: n35
-  cau: 'Khá vững: phân biệt "muốn" (dopamine) và "thích" (opioid).'
-  loai: nhan
-  nhan: kha-vung
-  co_so:
-  - berridge1989
-  - berridge1998
-  - pecina2005
-  ly_do: Nhiều thí nghiệm ở chuột cùng chiều, nhưng chủ yếu từ một nhóm nghiên cứu; chưa dẫn được bằng chứng trực tiếp ở người; chưa có phân tích tổng hợp hay tái lập lớn; một mâu thuẫn nhỏ trong chính khung là Berridge và Robinson 1998 nói dopamine không cần cho học liên hệ khoái cảm, còn Schultz 2016 mô tả dopamine như tín hiệu dạy học.
-  nguon:
-  - berridge1989
-  - berridge1998
-  - pecina2005
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: nhãn "vững chắc", "chứng minh nhất quán", "gấp nhiều lần", "khung chuẩn trong nghiên cứu nghiện hiện nay". Chữ mới: "khá vững", nói rõ giới hạn; bỏ "khung chuẩn trong nghiên cứu nghiện" (không kiểm được). Lý do: thước đo mục 4 cho vững chắc cần tổng hợp hoặc hai tái lập lớn.'
-- id: n36
-  cau: 'Đã bị bác bỏ: "detox dopamine" theo nghĩa đen.'
-  loai: nhan
-  nhan: bac-bo
-  co_so:
-  - sepah2019
-  - kalia2015
-  ly_do: 'Nguyên tắc: không có cơ chế sinh học nào được nêu cho việc xả dopamine; chính người phổ biến thuật ngữ nói cái tên không nên hiểu theo nghĩa đen. Chưa có thử nghiệm nào kiểm chứng vì ý tưởng không dựa trên cơ chế; theo nhãn mục 4 "bằng chứng gốc không còn giá trị". Chỗ khó: không có "kiểm tra đủ mạnh thất bại" mà là vắng cơ sở, nên người giao quyết có đổi nhãn không.'
-  nguon:
-  - sepah2019
-  - kalia2015
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "dopamine không phải độc tố tích tụ... không thể "đào thải"... (thiếu dopamine trầm trọng là bệnh Parkinson, không phải "tập trung cao độ")... nhà tâm lý học Cameron Sepah... chỉ là kỹ thuật kiểm soát kích thích của CBT". Chữ mới: "chúng tôi không tìm thấy nghiên cứu nào cho thấy xả được dopamine"; Parkinson liên quan mất neuron ở chất đen; trích lời Sepah qua NYT; bỏ "nhà tâm lý học" và "CBT". Lý do: các chi tiết đó không kiểm được (Medium bị chặn).'
-- id: n37
-  cau: Bệnh Parkinson liên quan đến mất neuron dopamine ở chất đen.
-  loai: dinh-nghia
-  nguon:
-  - kalia2015
-  trich: loss of dopaminergic neurons in the substantia nigra
-  vi_tri: Kalia & Lang 2015, tóm tắt
-  ket_qua: dung
-  ghi_chu: 'Dopamine là chất mà não cần cho vận động: suy ra từ Parkinson (đặc trưng vận động), ghi rõ.'
-- id: n38
-  cau: Cameron Sepah (2019) nói với The New York Times rằng cái tên "dopamine fasting" "không nên được hiểu theo nghĩa đen" và dopamine "chỉ là một cơ chế giải thích vì sao nghiện có thể được củng cố, và làm nên một cái tên bắt tai".
-  loai: lich-su
-  nguon:
-  - sepah2019
-  trich: '"Dopamine is just a mechanism that explains how addictions can become reinforced and makes for a catchy title," he wrote in an email. "The title''s not to be taken literally."'
-  vi_tri: Irish Times, đăng lại NYT (7/11/2019)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chính người phổ biến thuật ngữ — nhà tâm lý học Cameron Sepah (2019)... thực chất đó chỉ là một kỹ thuật kiểm soát kích thích của CBT". Chữ mới: trích đúng lời; bỏ "nhà tâm lý học" (nguồn gọi là "Dr", giáo sư UCSF Medical School) và phần CBT (chỉ có trên Medium, bị chặn). Cũng đổi trong ngộ nhận, quiz và danh mục nguồn.'
-- id: n39
-  cau: 'Đang tranh cãi: dopamine có phải "thủ phạm" gây nghiện mạng xã hội và game gacha không.'
-  loai: nhan
-  nhan: tranh-cai
-  co_so:
-  - fiorillo2003
-  - schultz2016
-  ly_do: 'Có lập luận cơ chế (Fiorillo 2003 ở động vật; Schultz 2016 về thuốc gây nghiện) nhưng không có nghiên cứu về điện thoại hay game; chưa dẫn được bằng chứng nhân quả ở người. Theo mục 4, "đang tranh cãi" chỉ gần nghĩa; thiếu nhãn "chưa đủ bằng chứng": người giao quyết.'
-  nguon:
-  - fiorillo2003
-  - schultz2016
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "lịch trình củng cố biến đổi vốn đã được chứng minh là tạo hành vi bền bỉ nhất từ thời Skinner... nghiện là đa yếu tố (thói quen, kiểm soát ức chế...)". Chữ mới bỏ hai ý này (không có nguồn đã mở), thêm lời dẫn tới Hỗ trợ.'
-- id: n40
-  cau: Theo tổng quan của Schultz (2016), thuốc gây nghiện tạo ra, chiếm đoạt và khuếch đại tín hiệu dopamine.
-  loai: phat-hien
-  nguon:
-  - schultz2016
-  trich: Drugs of addiction generate, hijack, and amplify the dopamine reward signal
-  vi_tri: Schultz 2016, tóm tắt
-  ket_qua: dung
-  ghi_chu: Mới thêm cho khung n39.
-- id: n41
-  cau: 'Khung sai số dự đoán: dopamine là tín hiệu "dạy học" của não (thực tế − dự đoán), cho các vùng khác biết có cần cập nhật kỳ vọng hay không.'
-  loai: dinh-nghia
-  nguon:
-  - schultz1997
-  - schultz2016
-  trich: Rewards produce learning ... Reward prediction errors ... are crucial for basic forms of learning about rewards
-  vi_tri: Schultz 2016, tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: Thêm "theo khung này".
-- id: n42
-  cau: 'Khung incentive salience: dopamine gán sức hút cho các dấu hiệu báo phần thưởng; wanting là muốn, không nhất thiết thích; ví dụ biểu tượng ứng dụng, tiếng "ting" là minh họa của trang.'
-  loai: dinh-nghia
-  nguon:
-  - berridge1998
-  trich: dopamine systems may mediate the incentive salience of rewards, modulating their motivational value in a manner separable from hedonia and reward learning
-  vi_tri: Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Dopamine gán... nam châm tâm lý... nhìn thấy biểu tượng ứng dụng... bỗng dưng thấy thôi thúc" như khẳng định. Chữ mới ghi rõ minh họa.'
-- id: n43
-  cau: 'Ba khung trả lời ba câu hỏi khác nhau nhưng không hoàn toàn khớp: Berridge và Robinson (1998) kết luận dopamine không cần cho học liên hệ khoái cảm, còn Schultz mô tả dopamine như tín hiệu dạy học.'
-  loai: phat-hien
-  nguon:
-  - berridge1998
-  - schultz2016
-  trich: dopamine systems are not needed ... to mediate predictive associations involved in hedonic reward learning
-  vi_tri: Berridge & Robinson, tóm tắt; Schultz 2016
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Ba khung lý thuyết dưới đây không mâu thuẫn nhau". Chữ mới nêu chỗ không khớp. Lý do: Berridge & Robinson 1998 nói thẳng "no" cho vai trò trong hedonic reward learning. Chỗ khó.'
-- id: n44
-  cau: Theo Peciña và Berridge, hệ opioid tại một điểm nóng rất nhỏ trong nhân accumbens của chuột khuếch đại cái "thích" với vị ngọt ("lớp sơn khoái cảm" là ẩn dụ của trang).
-  loai: phat-hien
-  nguon:
-  - pecina2005
-  trich: Our maps indicate that opioid-induced increases in sucrose hedonic impact are generated by a localized cubic millimeter site
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Khoái cảm thật sự — liking — được tạo ra bởi hệ opioid tại những "điểm nóng"... Dopamine không cầm cọ vẽ này." Chữ mới bỏ câu cuối và nói là kết quả ở chuột.'
-- id: n45
-  cau: 'Ghép lại, theo các khung này (và còn tranh luận): dopamine liên quan đến việc muốn theo đuổi và có thể đến việc học xem thứ gì đáng theo đuổi; ở chuột, opioid khuếch đại cái thích.'
-  loai: phat-hien
-  nguon:
-  - berridge1998
-  - schultz2016
-  - pecina2005
-  trich: dopamine may be more important to incentive salience
-  vi_tri: Berridge & Robinson, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "dopamine giúp bạn học cái gì đáng theo đuổi và muốn theo đuổi nó; opioid cho bạn thích nó khi đã có trong tay... người ta lẫn lộn ba việc này thành một". Chữ mới thận trọng, ghi "còn tranh luận".'
-- id: n46
-  cau: 'Tranh cãi (Áp dụng 1): một cách nghĩ về thông báo điện thoại và gacha (lịch thưởng biến đổi).'
-  loai: nhan
-  nhan: tranh-cai
-  co_so:
-  - fiorillo2003
-  ly_do: Suy đoán từ nghiên cứu động vật sang hành vi dùng điện thoại; chưa có nghiên cứu về điện thoại. Mục này giữ nhãn "đang tranh cãi" (đổi từ "khá vững").
-  nguon:
-  - fiorillo2003
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: nhãn khá vững; "thí nghiệm của Fiorillo cho thấy sự không chắc chắn duy trì hoạt động dopamine cho đến phút quyết định. Hiểu điều này giúp bạn tập trung vào... thiết kế môi trường". Chữ mới: "nghiên cứu ở động vật", "bước suy đoán", lời khuyên đổi môi trường thành "hướng thử, không phải khuyến nghị đã kiểm chứng". Lý do: khẳng định quá sức nguồn.'
-- id: n47
-  cau: 'Một hướng thử, không phải khuyến nghị đã kiểm chứng: đổi môi trường (tắt thông báo, để điện thoại xa tầm tay).'
-  loai: loi-khuyen
-  nguon:
-  - fiorillo2003
-  ket_qua: da-lam-mem
-  ghi_chu: 'Không có nguồn kiểm chứng hiệu quả; trang ghi rõ không phải khuyến nghị đã kiểm chứng, nhãn tranh-cai. Chỗ khó: thiếu nguồn thực nghiệm về tắt thông báo (chưa tìm).'
-- id: n48
-  cau: 'Khá vững (Áp dụng 2): phân biệt "muốn" và "thích" trong chính mình.'
-  loai: nhan
-  nhan: kha-vung
-  co_so:
-  - berridge1998
-  - pecina2005
-  ly_do: Bài tập tự quan sát dựa trên khung wanting/liking vốn ở mức khá vững (n35); không có nghiên cứu riêng cho bài tập, trang ghi rõ.
-  nguon:
-  - berridge1998
-  - pecina2005
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: nhãn "vững chắc"; "hãy nhận diện: đó là wanting đang lái xe... Câu hỏi đơn giản này đưa hệ "muốn" tự động ra ánh sáng của ý thức". Chữ mới: nhãn khá vững; "có thể thử hình dung (ví von)"; bỏ câu "đưa hệ muốn ra ánh sáng của ý thức".'
-- id: n49
-  cau: 'Đã bị bác bỏ (Áp dụng 3): "Detox dopamine": giữ cái hữu ích, bỏ cái sai.'
-  loai: nhan
-  nhan: bac-bo
-  co_so:
-  - sepah2019
-  ly_do: 'Khớp n36. Phần lời khuyên: chưa dẫn bằng chứng cho việc cắt giảm hành vi.'
-  nguon:
-  - sepah2019
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Đó là kỹ thuật kiểm soát kích thích của liệu pháp hành vi-nhận thức: giảm tiếp xúc với tín hiệu gây cám dỗ thì cám dỗ giảm. Đừng trả tiền cho các gói "reset não 7 ngày", đừng tin những bảng xếp hạng... — chúng không đo được gì cả." Chữ mới: "có thể giúp một số người", "chưa dẫn bằng chứng", "không tìm thấy nghiên cứu nào ủng hộ" gói reset và bảng xếp hạng.'
-- id: n50
-  cau: 'Tranh cãi (Áp dụng 4): dùng sự bất ngờ một cách có chủ ý.'
-  loai: nhan
-  nhan: tranh-cai
-  co_so:
-  - fiorillo2003
-  ly_do: Cơ chế hợp lý nhưng chưa dẫn được bằng chứng ở người.
-  nguon:
-  - fiorillo2003
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "bằng chứng ở người còn rất hạn chế". Chữ mới: "chưa dẫn được bằng chứng ở người". Lý do: không có nguồn đã kiểm cho "rất hạn chế".'
-- id: n51
-  cau: Các thí nghiệm gốc về dopamine ở trang này chủ yếu thực hiện trên khỉ và chuột.
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  - berridge1998
-  - pecina2005
-  - fiorillo2003
-  trich: dopamine neurons ... in alert monkeys; rats were depleted of dopamine
-  vi_tri: Schultz 1997; Berridge & Robinson 1998
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đều thực hiện trên khỉ và chuột trong phòng thí nghiệm phương Tây". Chữ mới: "chủ yếu"; bỏ "phương Tây" (không kiểm được nơi làm từng thí nghiệm). Ở người có ghi neuron đơn lẻ và hình ảnh não (Schultz 2016).'
-- id: n52
-  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra sai số dự đoán phần thưởng hay phân biệt wanting/liking trên người Việt.
-  loai: thoi-su
-  nguon:
-  - tim-kiem-vn
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Europe PMC ngày 10/11/2026 (OpenAlex bị giới hạn lượt): 107 kết quả (dopamine AND Vietnam*...), chỉ xem năm kết quả đầu, không thấy kiểm tra riêng. Chữ cũ: không mốc, thêm "và cũng khó có, vì đây là cấp độ neuron đơn lẻ" (đã bỏ: ở người có ghi hình não và có thể có nghiên cứu hành vi). Chưa tìm Google Scholar hay tạp chí trong nước. Chỗ chưa chắc: không đọc hết các kết quả.'
-- id: n53
-  cau: Cụm từ "hormone hạnh phúc" xuất hiện trong các nội dung sức khỏe tiếng Việt, nơi dopamine được liệt kê cùng serotonin, endorphin, oxytocin (ví dụ bài Vinmec viết dopamine "giúp cảm thấy dễ chịu"), một cách mô tả không phân biệt "muốn" với "thích".
-  loai: thoi-su
-  nguon:
-  - vinmec
-  trich: dopamine giúp cảm thấy dễ chịu, serotonin làm giảm buồn phiền chán nản, oxytocin là hormone tình yêu và endorphin
-  vi_tri: Vinmec, đoạn mở đầu
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "rất phổ biến... như một "bộ tứ" — mà không phân biệt chất dẫn truyền thần kinh với hormone... Trào lưu "detox dopamine" cũng đã lan sang các cộng đồng năng suất tiếng Việt". Chữ mới: một ví dụ có link, mốc 11/2026; bỏ câu về trào lưu detox (không tìm được nguồn tiếng Việt; tìm 10/11/2026 chủ yếu ra trang tiếng Anh) và bỏ "không phân biệt chất dẫn truyền với hormone" (Long Châu có phân biệt).'
-- id: n54
-  cau: '"Dopamine là hormone hạnh phúc" là ngộ nhận: dopamine chủ yếu được nghiên cứu như chất dẫn truyền thần kinh; vai trò nổi bật là báo sai số dự đoán và liên quan đến động lực; các thí nghiệm ở chuột cho thấy khoái cảm vị giác không phụ thuộc vào dopamine.'
-  loai: phat-hien
-  nguon:
-  - schultz2016
-  - berridge1998
-  trich: dopamine systems are not needed either to mediate the hedonic pleasure of reinforcers
-  vi_tri: Berridge & Robinson 1998, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "công việc cốt lõi... không phải tạo ra khoái cảm. Khoái cảm thuộc về hệ opioid." Chữ mới giảm xuống mức nguồn.'
-- id: n55
-  cau: '"Càng nhiều dopamine càng hạnh phúc" là ngộ nhận: phần thưởng được dự đoán đầy đủ không làm neuron dopamine bùng phát; chuột tổn thương hệ dopamine vẫn có phản ứng thích vị ngọt gần như không đổi.'
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  - berridge1989
-  trich: fails to be activated by the predicted reward; Taste reactivity was essentially unchanged
-  vi_tri: Schultz 1997, Hình 1; Berridge 1989, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "không kích hoạt... chút nào"; "bị phá hủy dopamine vẫn "thích" vị ngọt bình thường". Chữ mới như n4, n25.'
-- id: n56
-  cau: '"Nghiện điện thoại vì dopamine tăng quá cao" là đơn giản hóa; dopamine có thể là một mắt xích, không phải toàn bộ lời giải thích.'
-  loai: loi-khuyen
-  nguon:
-  - schultz2016
-  trich: Drugs of addiction generate, hijack, and amplify the dopamine reward signal
-  vi_tri: Schultz 2016, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Dopamine là một mắt xích trong vòng lặp nghiện (cùng với thói quen, kiểm soát ức chế, thiết kế sản phẩm)". Chữ mới: "có thể là", bỏ danh sách yếu tố không có nguồn. Chỗ khó: nguồn chỉ nói về thuốc gây nghiện.'
-- id: n57
-  cau: '"Detox dopamine vài ngày sẽ reset não" là ngộ nhận: chúng tôi không tìm thấy cơ chế nào cho việc xả dopamine; chính người phổ biến thuật ngữ nói cái tên không nên hiểu theo nghĩa đen.'
-  loai: phat-hien
-  nguon:
-  - sepah2019
-  trich: The title's not to be taken literally.
-  vi_tri: Irish Times (NYT)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chính người tạo ra thuật ngữ cũng nói nó chỉ là ẩn dụ cho một kỹ thuật hành vi cũ". Chữ mới như n38.'
-- id: n58
-  cau: '"Vùng não sáng lên khi quét não nghĩa là người ta sướng" là suy luận ngược (reverse inference), vốn không chặt chẽ: một vùng "sáng" có thể phản ánh nhiều quá trình.'
-  loai: dinh-nghia
-  nguon:
-  - poldrack2006
-  trich: Such inferences are not deductively valid, but can still provide some information.
-  vi_tri: Poldrack 2006, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "lỗi suy luận ngược: ... chứ không riêng gì khoái cảm". Chữ mới nói "không chặt chẽ" theo Poldrack 2006.'
-- id: n59
-  cau: 'Quiz 1: neuron dopamine của khỉ phản ứng mạnh nhất với phần thưởng bất ngờ, chưa được dự đoán.'
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  trich: The dopamine neuron is activated by this unpredicted occurrence of juice.
-  vi_tri: Schultz 1997, Hình 1
-  ket_qua: dung
-  ghi_chu: Lời giải thích không dựa vào vị trí lựa chọn.
-- id: n60
-  cau: 'Quiz 2: phần thưởng được dự đoán nhưng không đến thì hoạt động neuron dopamine giảm xuống dưới mức nền (sai số dự đoán âm).'
-  loai: phat-hien
-  nguon:
-  - schultz1997
-  - schultz2016
-  trich: show depressed activity with less reward than predicted (negative prediction error)
-  vi_tri: Schultz 2016, tóm tắt
-  ket_qua: dung
-  ghi_chu: 'Quiz: đáp án đúng "giảm xuống dưới mức nền (sai số dự đoán âm)": nguồn dùng "depressed activity"; chấp nhận "dưới mức nền" ở mức quiz, giữ nguyên chữ vì khớp nghĩa "ức chế" ở n18.'
-- id: n61
-  cau: 'Quiz 3: thí nghiệm 6-OHDA (1989): chuột bị tổn thương dopamine không còn tự ăn nhưng phản ứng miệng-mặt với vị ngọt gần như không đổi; các tác giả dùng làm lập luận tách wanting khỏi liking.'
-  loai: phat-hien
-  nguon:
-  - berridge1989
-  trich: Taste reactivity was essentially unchanged.
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chứng minh... hoàn toàn bình thường... Đây là bằng chứng tách rời". Chữ mới theo n25, n26. Lời giải thích không dựa vào vị trí lựa chọn.'
-- id: n62
-  cau: 'Quiz 4: "detox dopamine" theo nghĩa đen bị coi là sai vì không có cơ chế hay nghiên cứu nào cho thấy xả được dopamine; Sepah nói cái tên không nên hiểu theo nghĩa đen; Parkinson liên quan đến mất neuron dopamine; cắt giảm hành vi cưỡng chế có thể có ích với một số người nhưng không phải vì "reset dopamine".'
-  loai: phat-hien
-  nguon:
-  - sepah2019
-  - kalia2015
-  trich: The title's not to be taken literally.
-  vi_tri: Irish Times; Kalia & Lang
-  ket_qua: da-sua
-  ghi_chu: Chữ cũ có "kỹ thuật kiểm soát kích thích của CBT" và "thiếu nó trầm trọng là bệnh Parkinson, không phải tập trung cao độ". Chữ mới như n36, n49.
-- id: n63
-  cau: 'Quiz 5: Peciña và Berridge (2005): phản ứng "thích" tăng ở một điểm nóng khoảng 1 mm³, trong khi ở mọi vùng của vỏ giữa chuột ăn nhiều hơn; nghiên cứu không đo dopamine.'
-  loai: phat-hien
-  nguon:
-  - pecina2005
-  trich: Opioid circuits for stimulating food intake are widely distributed, whereas hedonic "liking" circuits are more tightly localized
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "tăng gấp khoảng bốn lần... Khoái cảm là việc của opioid, không phải dopamine". Chữ mới như n30, n31. Câu hỏi đổi hẳn để hết "gấp bốn lần". Lời giải thích không dựa vào vị trí lựa chọn.'
-- id: n64
-  cau: 'Đọc thêm: link tới thuong-va-dong-luc và cam-xuc-co-ban.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm: các trang /kham-pha/cam-xuc-dong-luc/... chưa có trong src/content/docs (chưa chuyển); link chưa chạy cho đến khi có trang. Ghi cho người giao.'
-- id: n65
-  cau: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm trên trang: có ::tom-tat.'
+  - id: n1
+    cau: Trong một số nội dung sức khỏe, dopamine được xếp vào nhóm "hormone hạnh phúc" cùng serotonin, endorphin, oxytocin (ví dụ một bài của Vinmec).
+    loai: thoi-su
+    nguon:
+      - vinmec
+    trich: Các hormone hạnh phúc do cơ thể sản xuất bao gồm dopamine giúp cảm thấy dễ chịu, serotonin làm giảm buồn phiền chán nản, oxytocin là hormone tình yêu và endorphin
+    vi_tri: Vinmec, đoạn mở đầu
+    het_han: '2028-11-01'
+    ket_qua: dung
+    ghi_chu: 'Ví dụ một trang; "thường" chỉ kiểm bằng một ví dụ. Mốc 11/2026. Review (Claude Sonnet 5.5, 10/11/2026): sai (nhẹ). "Thường" dựa trên một ví dụ duy nhất (Vinmec). Trang đã đổi thành "Trong một số nội dung sức khỏe ... (ví dụ ...)". Vinmec mở lại 10/11/2026: mô tả bài viết đúng trích; het_han 2028-11-01 giữ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.vinmec.com/vie/bai-viet/hormones-hanh-phuc-la-gi-va-lam-nao-de-tang-cuong-vi" ]
+    luot_2_ghi_chu: Câu thời sự; Vinmec mở 2026-11-10.
+    review: sai
+  - id: n2
+    cau: Các câu trích "Buồn thì làm gì đó cho tăng dopamine đi", "Detox dopamine 7 ngày để reset não" là lời khuyên phổ biến (ví dụ minh họa).
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'gia-dinh. Câu trích minh họa, không khẳng định điều gì về bằng chứng. Review (Claude Sonnet 5.5, 10/11/2026): dung. Loại ve-site (gia-dinh): hai câu minh họa, không khẳng định điều gì về bằng chứng. Trang đã thêm "Hai câu giả định, kiểu lời khuyên về dopamine" để người đọc không hiểu là trích dẫn thật.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Loại ve-site: không qua lượt 2 (review kiểm thẳng trên trang). Là ví dụ minh họa lời khuyên phổ biến."
+    review: dung
+  - id: n3
+    cau: Chuột bị phá hủy phần lớn dopamine ở nhân accumbens và thể vân vẫn có phản ứng "thích" vị ngọt gần như không đổi.
+    loai: phat-hien
+    nguon:
+      - berridge1998
+      - berridge1989
+    trich: rats were depleted of dopamine in the nucleus accumbens and neostriatum by up to 99% ... We found normal hedonic reaction patterns to sucrose vs. quinine
+    vi_tri: Berridge & Robinson 1998, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bị phá hủy gần như toàn bộ dopamine trong não vẫn tỏ ra thích vị ngọt như bình thường". Chữ mới nói đúng vùng và mức (đến 99% ở accumbens, thể vân). Lý do: tóm tắt Berridge & Robinson 1998. Review (Claude Sonnet 5.5, 10/11/2026): dung. Berridge & Robinson 1998 (tóm tắt Europe PMC, PMID 9858756): "depleted of dopamine in the nucleus accumbens and neostriatum by up to 99%", "normal hedonic reaction patterns to sucrose vs. quinine". Trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Khớp; 'gần như không đổi' hợp 'normal'.
+    review: dung
+  - id: n4
+    cau: Phần thưởng được báo trước chắc chắn không làm neuron dopamine bùng phát.
+    loai: phat-hien
+    nguon:
+      - schultz1997
+      - schultz2016
+    trich: The dopamine neuron is activated by the reward-predicting stimulus but fails to be activated by the predicted reward
+    vi_tri: Schultz 1997, chú thích Hình 1 (giữa)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "không khiến neuron dopamine phản ứng gì". Chữ mới: "không làm neuron bùng phát". Lý do: nguồn nói "fails to be activated", không nói không phản ứng gì. Review (Claude Sonnet 5.5, 10/11/2026): dung. Schultz 1997, chú thích Hình 1: "fails to be activated by the predicted reward"; trang dùng "không làm bùng phát".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n5
+    cau: 'Dopamine không đơn giản là "chất gây sướng": một vai trò được ghi nhận rõ của nó là báo cho não biết điều vừa xảy ra tốt hơn hay tệ hơn dự đoán (sai số dự đoán phần thưởng).'
+    loai: phat-hien
+    nguon:
+      - schultz2016
+    trich: Most dopamine neurons in the midbrain of humans, monkeys, and rodents signal a reward prediction error
+    vi_tri: Schultz 2016, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Dopamine không phải "chất gây sướng". Công việc chính của nó là báo...". Chữ mới: "không đơn giản là", "một vai trò được ghi nhận rõ". Lý do: "công việc chính" mạnh hơn nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Một vai trò được ghi nhận rõ, đúng mức Schultz 2016 (tóm tắt: hầu hết neuron dopamine ... báo sai số dự đoán).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n6
+    cau: Theo các thí nghiệm ở chuột của Berridge và cộng sự, cái "thích" được khuếch đại ở những điểm nóng nhỏ bởi hệ opioid; theo khung của họ, dopamine liên quan đến cái "muốn"; ở chuột hai thứ này có thể tách rời.
+    loai: phat-hien
+    nguon:
+      - pecina2005
+      - berridge1998
+    trich: We conclude instead that dopamine may be more important to incentive salience
+    vi_tri: Berridge & Robinson 1998, tóm tắt; Peciña & Berridge 2005, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "do một hệ khác đảm nhiệm: hệ opioid. Dopamine điều khiển cái "muốn"... có thể tách rời nhau hoàn toàn". Chữ mới nêu là kết quả ở chuột của nhóm Berridge và bỏ "hoàn toàn". Review (Claude Sonnet 5.5, 10/11/2026): dung. Phát biểu đã gắn "theo các thí nghiệm ở chuột của Berridge và cộng sự", "theo khung của họ"; khớp B&R 1998 và Peciña 2005.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16354936/", "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n7
+    cau: Chúng tôi không tìm thấy cơ chế hay nghiên cứu nào ủng hộ "detox dopamine" theo nghĩa đen (xả dopamine ra khỏi não).
+    loai: phat-hien
+    nguon:
+      - sepah2019
+    trich: The title's not to be taken literally.
+    vi_tri: Irish Times (NYT), đoạn Sepah
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "không có cơ sở khoa học nào cả". Chữ mới nói về việc không tìm thấy. Lý do: không thể chứng minh phủ định; chỉ tìm thấy lời của người phổ biến (n47) và kết quả tìm kiếm (News-Medical, Digital Zen, chỉ blog, không dùng làm nguồn). Review (Claude Sonnet 5.5, 10/11/2026): dung. Phủ định đã viết ở mức "chúng tôi không tìm thấy". Nguồn mở lại: Irish Times (bản đăng lại NYT) và bài Harvard Health (Grinspoon, 26/2/2020: "dopamine fasting ... has very little to do with either fasting or dopamine"; Sepah: "The title''s not to be taken literally"). Đã thêm Harvard Health vào nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917", "https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491" ]
+    luot_2_ghi_chu: Không có nghiên cứu hay cơ chế 'xả' dopamine; câu mang tính 'chúng tôi không tìm thấy'.
+    review: dung
+  - id: n8
+    cau: Dopamine chủ yếu được nghiên cứu như một chất dẫn truyền thần kinh trong não, dù truyền thông gọi là "hormone hạnh phúc".
+    loai: dinh-nghia
+    nguon:
+      - schultz2016
+      - berridge1998
+    trich: mesolimbic and neostriatal dopamine systems
+    vi_tri: Berridge & Robinson 1998, tóm tắt; Schultz 2016
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Dopamine là một chất dẫn truyền thần kinh — không phải hormone theo đúng nghĩa sinh học". Chữ mới: "chủ yếu được nghiên cứu như". Lý do: tránh khẳng định tuyệt đối về hormone; chưa mở APA Dictionary. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu ở mức "chủ yếu được nghiên cứu như chất dẫn truyền thần kinh"; không khẳng định tuyệt đối. Không mở được APA Dictionary (trang chạy bằng JavaScript).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://openstax.org/books/psychology-2e/pages/3-2-cells-of-the-nervous-system", "https://www.vinmec.com/vie/bai-viet/hormones-hanh-phuc-la-gi-va-lam-nao-de-tang-cuong-vi" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n9
+    cau: Các neuron sản xuất dopamine tập trung ở vùng não giữa (VTA và chất đen), gửi tín hiệu đến nhân accumbens và thể vân.
+    loai: dinh-nghia
+    nguon:
+      - berridge1998
+      - kalia2015
+    trich: loss of dopaminergic neurons in the substantia nigra; mesolimbic and neostriatal dopamine systems
+    vi_tri: Kalia & Lang, tóm tắt; Berridge & Robinson, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ có "vùng xử lý động lực". Chữ mới bỏ cụm này; "VTA" suy từ "mesolimbic", chưa thấy tên VTA trong tóm tắt (chỗ khó). Review (Claude Sonnet 5.5, 10/11/2026): dung. Nơi sản xuất và đích gửi tín hiệu là kiến thức giáo trình; Schultz 2016 có từ khóa substantia nigra, ventral tegmental area, striatum; B&R 1998: mesolimbic và neostriatal.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n10
+    cau: Ngộ nhận "dopamine = chất gây sướng" thường được gắn với dòng nghiên cứu bắt đầu từ thí nghiệm năm 1954 của Olds và Milner.
+    loai: lich-su
+    nguon:
+      - schultz2016
+      - olds1954
+    trich: The study of reward processing in the brain started when Olds and Milner introduced electrodes into the brains of rats
+    vi_tri: Schultz 2016, đoạn mở đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bắt nguồn từ một thí nghiệm nổi tiếng năm 1954, rồi được thổi phồng trong nhiều thập kỷ". Chữ mới: "thường được gắn với dòng nghiên cứu bắt đầu từ". Lý do: "bắt nguồn" và "thổi phồng" không có nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Schultz 2016: "The study of reward processing in the brain started when Olds and Milner ..."; trang nói "thường được gắn với", đúng mức.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/13233369/", "https://pubmed.ncbi.nlm.nih.gov/7353169/" ]
+    luot_2_ghi_chu: Lịch sử đúng; toàn văn Olds & Milner không mở được (chỉ bản ghi PubMed).
+    review: dung
+  - id: n11
+    cau: Olds và Milner đặt điện cực vào vùng vách (septal area) và các vùng não khác của chuột; mỗi lần nhấn cần gạt, não nhận một dòng điện nhỏ.
+    loai: phat-hien
+    nguon:
+      - olds1954
+      - schultz2016
+    trich: Olds and Milner introduced electrodes into the brains of rats and subjected them to small electric currents when they pressed a lever. ... Olds and Milner placed electrodes in different brain regions.
+    vi_tri: Schultz 2016, đoạn 4; nhan đề Olds 1954 trong danh mục
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "rồi đặt chuột vào hộp Skinner có cần gạt". Chữ mới bỏ "hộp Skinner" (không có trong nguồn đã mở). Bài gốc không mở được; theo Schultz 2016 kể lại (đã ghi trên trang). Vùng vách theo nhan đề bài gốc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đúng theo Schultz 2016 (đã mở toàn văn PMC4826767); bài gốc không mở được; trang ghi "phần này theo Schultz (2016) kể lại". Vùng vách theo nhan đề bài gốc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/13233369/" ]
+    luot_2_ghi_chu: Chỉ đọc tiêu đề/bản ghi PubMed, toàn văn trả phí; phần 'lever' là cách mô tả chuẩn của thí nghiệm.
+    review: dung
+  - id: n12
+    cau: Theo cách Schultz (2016) kể lại, ở một số vùng chuột nhấn cần nhiều hơn để nhận thêm kích thích, đến mức quên ăn uống một lúc.
+    loai: phat-hien
+    nguon:
+      - schultz2016
+    trich: The rats pressed more to get more electric shocks to their brains. The animals were so fascinated by the lever pressing that they forgot to eat and drink for a while.
+    vi_tri: Schultz 2016, đoạn 4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tự kích thích "thường xuyên và đều đặn trong thời gian dài" — sẵn sàng học hành vi mới chỉ để được kích thích". Chữ mới theo Schultz 2016. Lý do: câu trích cũ không thấy ở nguồn mở được. Review (Claude Sonnet 5.5, 10/11/2026): sai (nguồn). Lượt 2: khong-chac. Schultz 2016 (đọc lại toàn văn): "The animals were so fascinated by the lever pressing that they forgot to eat and drink for a while." Nhưng chi tiết "quên ăn uống" không có trong tóm tắt bài gốc 1954 (không mở được; APA bị chặn; bài không có trong bộ Wikipedia scholarly sources corpus mà review thử). Câu cũ đặt thành kết quả của Olds và Milner; đã viết lại thành "theo cách Schultz (2016) kể lại" để chỉ xác nhận mức nguồn đã đọc.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Toàn văn Olds & Milner 1954 không mở được (trả phí); chi tiết 'quên ăn uống' không có trong bản ghi PubMed nên không xác nhận được.
+    review: sai
+  - id: n13
+    cau: Điều này được diễn giải là đã tìm thấy một cơ sở thần kinh của phần thưởng; về sau các nghiên cứu khác (như Corbett và Wise, 1980) gắn tự kích thích não với các đường dẫn dopamine.
+    loai: lich-su
+    nguon:
+      - schultz2016
+    trich: Olds and Milner had found a physical correlate for reward in the brain!
+    vi_tri: 'Schultz 2016; Corbett & Wise: nhan đề trong danh mục tham khảo'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "diễn giải là não có một "trung tâm phần thưởng"... công chúng ghép nối: dopamine = chất gây sướng". Chữ mới theo Schultz 2016 và dẫn Corbett & Wise qua nhan đề. Lý do: "công chúng ghép nối" không kiểm được. Review (Claude Sonnet 5.5, 10/11/2026): dung. Schultz 2016: "Subsequent studies showed that about half of the effective locations for electrical self-stimulation are connected with dopamine neurons" (dẫn Corbett & Wise 1980); trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/7353169/" ]
+    luot_2_ghi_chu: Khớp; Olds&Milner 1954 'cơ sở thần kinh của phần thưởng' là diễn giải.
+    review: dung
+  - id: n14
+    cau: Theo những gì chúng tôi đọc được, thí nghiệm gốc của Olds và Milner không đo dopamine; liên kết với dopamine là diễn giải của các nghiên cứu về sau.
+    loai: lich-su
+    nguon:
+      - schultz2016
+      - olds1954
+    trich: 'Corbett & Wise (1980): Intracranial self-stimulation in relation to the ascending dopaminergic systems of the midbrain'
+    vi_tri: Schultz 2016, danh mục tham khảo
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Olds và Milner không hề đo dopamine — liên kết này là diễn giải chồng chất". Chữ mới thêm "theo những gì chúng tôi đọc được" vì không mở được bài gốc (chỗ khó). Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu đã làm mềm "theo những gì chúng tôi đọc được"; đúng (tự kích thích bằng điện, không đo dopamine; Corbett & Wise là nghiên cứu sau gắn với đường dẫn dopamine).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/13233369/", "https://pubmed.ncbi.nlm.nih.gov/7353169/" ]
+    luot_2_ghi_chu: Chỉ đọc bản ghi PubMed của Olds & Milner (không có đo dopamine ở tiêu đề); toàn văn không mở.
+    review: dung
+  - id: n15
+    cau: 'Schultz, Dayan và Montague (1997) là bài tổng hợp: ghi hoạt động từng neuron dopamine ở vùng não giữa của khỉ tỉnh táo trong nhiệm vụ học điều kiện (kích thích thị giác báo trước phần thưởng là nước trái cây), cùng mô hình học tăng cường TD.'
+    loai: phat-hien
+    nguon:
+      - schultz1997
+    trich: single dopamine neurons is recorded in alert monkeys while they perform behavioral acts and receive rewards ... Before learning, a drop of appetitive fruit juice occurs in the absence of prediction
+    vi_tri: Schultz 1997, đoạn thứ 3 của phần mở bài; chú thích Hình 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Wolfram Schultz và cộng sự ghi hoạt động... một tín hiệu (ánh đèn)". Chữ mới: bài tổng hợp, "kích thích thị giác". Lý do: bài 1997 là tổng hợp ghi chép (và mô hình TD), chú thích Hình 1 chỉ nói "conditioned visual stimulus"; "ánh đèn" không có. Review (Claude Sonnet 5.5, 10/11/2026): dung. Schultz, Dayan & Montague 1997 là bài tổng hợp ghi chép và mô hình TD (bản gatsby.ucl.ac.uk); trang đã sửa đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9054347/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Chi tiết 'khỉ tỉnh táo' và 'nước trái cây' không có trong tóm tắt; bài Science không mở được, nên dựa vào mô tả của Schultz 2016 (khỉ, nước trái cây).
+    review: dung
+  - id: n16
+    cau: Phần thưởng bất ngờ làm neuron dopamine bùng phát mạnh.
+    loai: phat-hien
+    nguon:
+      - schultz1997
+    trich: Before learning, a drop of appetitive fruit juice occurs in the absence of prediction—hence a positive error in the prediction of reward. The dopamine neuron is activated by this unpredicted occurrence of juice.
+    vi_tri: Schultz 1997, chú thích Hình 1 (trên)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n17
+    cau: Sau khi học xong, neuron bùng phát với tín hiệu báo trước, còn phần thưởng đã được dự đoán thì không làm neuron bùng phát.
+    loai: phat-hien
+    nguon:
+      - schultz1997
+    trich: After learning, the conditioned stimulus predicts reward, and the reward occurs according to the prediction—hence no error in the prediction of reward. The dopamine neuron is activated by the reward-predicting stimulus but fails to be activated by the predicted reward
+    vi_tri: Schultz 1997, chú thích Hình 1 (giữa)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đáp ứng "chuyển" sang tín hiệu báo trước... neuron gần như im lặng". Chữ mới sát chú thích hình. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp chú thích Hình 1 (giữa).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: "Khớp: neuron bùng phát ở tín hiệu báo trước (Schultz 2016: responds to reward-predicting stimuli)."
+    review: dung
+  - id: n18
+    cau: Phần thưởng được dự đoán nhưng không đến thì hoạt động neuron bị ức chế đúng lúc phần thưởng lẽ ra đến.
+    loai: phat-hien
+    nguon:
+      - schultz1997
+      - schultz2016
+    trich: The activity of the dopamine neuron is depressed exactly at the time when the reward would have occurred.
+    vi_tri: 'Schultz 1997, chú thích Hình 1 (dưới); Schultz 2016: "depressed activity"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giảm xuống dưới mức nền". Chữ mới: "bị ức chế". Lý do: nguồn dùng "depressed", không nói "dưới mức nền". Review (Claude Sonnet 5.5, 10/11/2026): dung. "depressed exactly at the time when the reward would have occurred"; trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n19
+    cau: 'Sai số dự đoán = thực tế − dự đoán: neuron không báo "có sướng không" mà báo "có bất ngờ không — và theo hướng nào".'
+    loai: dinh-nghia
+    nguon:
+      - schultz2016
+    trich: The dopamine response thus reflects a reward prediction error and can be described by the simple difference between obtained and predicted reward
+    vi_tri: Schultz 2016, mục "Reward prediction error"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n20
+    cau: Fiorillo và cộng sự (2003) ghi neuron dopamine với các tín hiệu báo trước những xác suất phần thưởng khác nhau.
+    loai: phat-hien
+    nguon:
+      - fiorillo2003
+    trich: Using distinct stimuli to indicate the probability of reward
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Vẫn ghi neuron dopamine trên khỉ". Chữ mới bỏ "trên khỉ" vì tóm tắt không nêu loài (chỗ khó). Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Fiorillo không nêu loài; trang không ghi loài ở thiết kế (chỉ ghi "ở động vật" trong khung đang tranh cãi cũ, nay là khung chú ý). Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/12649484/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n21
+    cau: Đáp ứng ngắn của neuron thay đổi đều đặn theo xác suất phần thưởng, phù hợp với mã hóa chênh lệch giữa phần thưởng thực và dự đoán.
+    loai: phat-hien
+    nguon:
+      - fiorillo2003
+    trich: the phasic activation of dopamine neurons varied monotonically across the full range of probabilities, supporting past claims that this response codes the discrepancy between predicted and actual reward
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/12649484/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n22
+    cau: 'Có một đáp ứng mới: hoạt động tăng dần cho đến thời điểm phần thưởng có thể đến, tăng theo mức không chắc chắn, lớn nhất ở xác suất 50%.'
+    loai: phat-hien
+    nguon:
+      - fiorillo2003
+    trich: a previously unobserved response covaried with uncertainty and consisted of a gradual increase in activity until the potential time of reward ... maximal at P = 0.5
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tăng dần, duy trì ... mạnh nhất khi xác suất là 50%". Chữ mới: "tăng theo mức không chắc chắn, lớn nhất ở 50%". Lý do: "duy trì" và "mạnh nhất" không phải lời của tóm tắt; cực đại là của độ không chắc chắn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt: "a gradual increase in activity until the potential time of reward", "maximal at P = 0.5" (mô tả mức không chắc chắn, không phải mức hoạt động).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/12649484/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n23
+    cau: Các tác giả gợi ý tín hiệu này có thể liên quan đến học dựa trên chú ý và hành vi chấp nhận rủi ro.
+    loai: phat-hien
+    nguon:
+      - fiorillo2003
+    trich: The coding of uncertainty suggests a possible role for dopamine signals in attention-based learning and risk-taking behavior.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Dopamine... bị thu hút bởi chính sự không chắc chắn". Chữ mới theo gợi ý của tác giả. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: "suggests a possible role for dopamine signals in attention-based learning and risk-taking behavior".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/12649484/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n24
+    cau: Berridge, Venier và Robinson (1989) tiêm 6-OHDA vào vùng chất đen của chuột; chuột trở nên biếng ăn (aphagia), không tự ăn nữa.
+    loai: phat-hien
+    nguon:
+      - berridge1989
+    trich: taste reactivity was examined in rats made aphagic by intranigral 6-OHDA injections
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phá hủy hệ dopamine bằng 6-OHDA... biếng ăn hoàn toàn: không tự đi tìm hay ăn". Chữ mới: tổn thương qua tiêm vào chất đen; "không tự ăn". Lý do: "hoàn toàn" và "tìm thức ăn" không có trong tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Berridge 1989 (OpenAlex): "rats made aphagic by intranigral 6-OHDA injections".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/2493791/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n25
+    cau: Khi cho vị ngọt vào miệng, phản ứng miệng-mặt (taste reactivity) của chuột gần như không đổi.
+    loai: phat-hien
+    nguon:
+      - berridge1989
+    trich: Taste reactivity was essentially unchanged.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "biểu cảm mặt thư giãn, thè lưỡi, liếm môi... hoàn toàn bình thường". Chữ mới: "gần như không đổi", bỏ danh sách biểu hiện. Lý do: tóm tắt chỉ nói "essentially unchanged". Review (Claude Sonnet 5.5, 10/11/2026): dung. "Taste reactivity was essentially unchanged"; trang "gần như không đổi".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/2493791/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n26
+    cau: 'Các tác giả lập luận: nếu dopamine tạo ra khoái cảm thì tổn thương dopamine phải làm đổi phản ứng này; điều đó đã không xảy ra.'
+    loai: phat-hien
+    nguon:
+      - berridge1989
+    trich: The persistence of normal taste reactivity argues against both an anhedonia and a global sensorimotor arousal interpretation
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nếu dopamine tạo ra sung sướng, phá hủy dopamine phải xóa luôn cảm giác thích — nó đã không làm vậy." Chữ mới thêm "các tác giả lập luận". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: "The persistence of normal taste reactivity argues against both an anhedonia and a global sensorimotor arousal interpretation".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/2493791/", "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n27
+    cau: 'Berridge và Robinson (1998) là bài tổng quan kèm nghiên cứu mới: chuột mất đến 99% dopamine ở nhân accumbens và thể vân, rồi đo phản ứng miệng-mặt với vị ngọt, vị đắng, học lại giá trị vị và thuốc tăng khoái cảm.'
+    loai: phat-hien
+    nguon:
+      - berridge1998
+    trich: rats were depleted of dopamine in the nucleus accumbens and neostriatum by up to 99% using 6-hydroxydopamine
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một bài tổng quan lớn, gom bằng chứng từ thần kinh học, điện sinh lý và hành vi". Chữ mới thêm nghiên cứu mới. Lý do: tóm tắt nói rõ có "a new study". Review (Claude Sonnet 5.5, 10/11/2026): dung. Berridge & Robinson 1998 (tóm tắt Europe PMC, PMID 9858756): 99%, ba thí nghiệm (phản ứng hedonic và ghê, học giá trị vị mới, tăng khoái cảm bằng benzodiazepine); trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n28
+    cau: Chuột vẫn có phản ứng "thích" bình thường; các tác giả kết luận hệ dopamine không cần để tạo ra khoái cảm cũng không cần cho việc học các mối liên hệ khoái cảm mới, và đề xuất dopamine có thể quan trọng hơn cho "wanting".
+    loai: phat-hien
+    nguon:
+      - berridge1998
+    trich: We conclude that dopamine systems are not needed either to mediate the hedonic pleasure of reinforcers or to mediate predictive associations involved in hedonic reward learning. We conclude instead that dopamine may be more important to incentive salience
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Dopamine cần cho wanting... Hệ dopamine cần cho việc "muốn"". Chữ mới: "có thể quan trọng hơn" theo "may be". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: "dopamine systems are not needed either to mediate the hedonic pleasure ... or to mediate predictive associations involved in hedonic reward learning ... dopamine may be more important to incentive salience".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Đây là kết luận của tác giả; site đã ghi 'các tác giả'.
+    review: dung
+  - id: n29
+    cau: Peciña và Berridge (2005) vi tiêm DAMGO (chất kích hoạt thụ thể μ-opioid) vào từng điểm nhỏ trong vỏ giữa của nhân accumbens ở chuột, đo phản ứng "thích" với vị ngọt và lượng ăn.
+    loai: phat-hien
+    nguon:
+      - pecina2005
+    trich: We mapped changes in affective orofacial reactions of "liking"/"disliking" elicited by sucrose or quinine tastes after D-Ala2-N-Me-Phe4-Glycol5-enkephalin (DAMGO) microinjections in rats
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "vào từng điểm nhỏ trong nhân accumbens". Chữ mới thêm "vỏ giữa" và lượng ăn. DAMGO là chất kích hoạt thụ thể μ-opioid: kiến thức dược học chung. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Peciña & Berridge 2005 (PMC6726018): DAMGO vi tiêm vào vỏ giữa, "liking"/"disliking" với sucrose, quinine.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16354936/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n30
+    cau: Chỉ ở một điểm nóng khoảng 1 mm³ ở vùng trước-lưng của vỏ giữa, DAMGO làm tăng phản ứng "thích" với vị ngọt; ở mọi vùng của vỏ giữa, DAMGO đều làm chuột ăn nhiều hơn.
+    loai: so-lieu
+    nguon:
+      - pecina2005
+    trich: opioid-induced increases in sucrose hedonic impact are generated by a localized cubic millimeter site in a rostrodorsal region of the medial shell. In contrast, all regions of the medial shell generated DAMGO-induced robust increases in eating behavior and food intake.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phản ứng "thích" tăng gấp khoảng bốn lần bình thường. Ở các điểm xung quanh... không tăng "thích"". Chữ mới bỏ "gấp bốn lần" (tóm tắt không nêu; toàn văn không mở được) và nói đủ phạm vi. Review (Claude Sonnet 5.5, 10/11/2026): dung. "a localized cubic millimeter site in a rostrodorsal region of the medial shell"; "all regions of the medial shell generated DAMGO-induced robust increases in eating". Khớp; không còn "gấp bốn lần".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16354936/" ]
+    luot_2_ghi_chu: "Khớp: 'vùng trước-lưng' = rostrodorsal; 1 mm³ = cubic millimeter."
+    review: dung
+  - id: n31
+    cau: Theo các tác giả, mạch opioid kích thích ăn phân bố rộng, còn mạch "thích" khu trú hơn nhiều; nghiên cứu này không đo dopamine.
+    loai: phat-hien
+    nguon:
+      - pecina2005
+    trich: Opioid circuits for stimulating food intake are widely distributed, whereas hedonic "liking" circuits are more tightly localized in the rostromedial shell of the nucleus accumbens.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Khoái cảm thật sự được tạo ra bởi hệ opioid — dopamine đứng ngoài câu chuyện này." Chữ mới theo tóm tắt. Lý do: nghiên cứu không đo dopamine nên không nói được "đứng ngoài". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: "Opioid circuits for stimulating food intake are widely distributed, whereas hedonic liking circuits are more tightly localized"; nghiên cứu không đo dopamine.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16354936/" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+    review: dung
+  - id: n32
+    cau: 'Khá vững: neuron dopamine mã hóa sai số dự đoán phần thưởng.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - schultz2016
+      - garrison2013
+      - schultz1997
+    ly_do: 'Nhiều nghiên cứu cùng chiều nhiều thập kỷ ở khỉ, chuột và (ghi neuron đơn lẻ, ghi hình) ở người; tổng quan của Schultz 2016. Nhưng thước đo mục 4 cho Vững chắc đòi phân tích tổng hợp hay tổng quan hệ thống chất lượng tốt cho chính khẳng định: Garrison 2013 là phân tích tổng hợp 35 nghiên cứu fMRI về não (không đo dopamine), còn Schultz 2016 là tổng quan kể; bằng chứng về neuron chủ yếu ở động vật; chưa tái lập lớn có đăng ký trước.'
+    nguon:
+      - schultz2016
+      - garrison2013
+      - schultz1997
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đã được tái lập rộng rãi... Phát hiện của Schultz và cộng sự (1997)". Chữ mới: "Mẫu hình... đã được thấy lại", thêm Garrison 2013 và nói ghi hình não không đo riêng dopamine. Lý do: kể rõ giới hạn. Review (Claude Sonnet 5.5, 10/11/2026): sai (sát ranh). Lượt 2 cho dung "nhẹ". Đối chiếu mục 4: Vững chắc cần ít nhất một phân tích tổng hợp hay tổng quan hệ thống chất lượng tốt cho khẳng định; ở đây không có cái nào về hoạt động neuron dopamine. Hạ xuống Khá vững; thân khung nay nói rõ lý do. Lõi RPE vẫn rất vững ở mức nghiên cứu cơ bản (nhiều phòng thí nghiệm, nhiều loài). Nếu người gom nhận ngành thần kinh học là chuẩn khác, có thể đưa lại Vững chắc: sửa :::kha-vung thành :::vung-chac, và mở lại hồ sơ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://pubmed.ncbi.nlm.nih.gov/23567522/", "https://pubmed.ncbi.nlm.nih.gov/29760524/" ]
+    luot_2_ghi_chu: Nhiều phòng thí nghiệm, nhiều loài; có tổng quan và phân tích tổng hợp fMRI; còn tranh luận về vai trò rộng hơn (Berke 2018) nhưng lõi RPE vững. Mức 'vững chắc' chấp nhận được, nhẹ.
+    review: sai
+  - id: n33
+    cau: Tổng quan của chính Schultz (2016) kết luận rằng hầu hết neuron dopamine ở não giữa của người, khỉ và động vật gặm nhấm đều báo hiệu sai số dự đoán phần thưởng.
+    loai: phat-hien
+    nguon:
+      - schultz2016
+    trich: Most dopamine neurons in the midbrain of humans, monkeys, and rodents signal a reward prediction error
+    vi_tri: Schultz 2016, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: dấu trích dẫn Việt hóa "hầu hết neuron...". Chữ mới bỏ dấu trích (là bản dịch). Review (Claude Sonnet 5.5, 10/11/2026): dung. Schultz 2016, tóm tắt: "Most dopamine neurons in the midbrain of humans, monkeys, and rodents signal a reward prediction error"; trang khớp (bản dịch, không để trong dấu trích).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n34
+    cau: Một phân tích tổng hợp 35 nghiên cứu fMRI ở người (446 điểm tọa độ) thấy tín hiệu sai số dự đoán ở nhiều vùng não, trong đó thể vân là vùng chính (Garrison và cộng sự, 2013); ghi hình não không đo riêng dopamine.
+    loai: so-lieu
+    nguon:
+      - schultz2016
+      - garrison2013
+    trich: This added another 7 studies making a total of 35 whole-brain activation studies ... a total of 446 foci identified across the 35 studies. // The striatum was the key brain area encoding for prediction error
+    vi_tri: 'Garrison 2013, bản tác giả (uhra.herts.ac.uk/id/eprint/3623): mục 2.1, 2.2, Table 1 (35 nghiên cứu, 446 foci); tóm tắt (striatum)'
+    ket_qua: da-sua
+    ghi_chu: 'Mới thêm cho khung n32. Review (Claude Sonnet 5.5, 10/11/2026): sai (lượt 2: sai). Garrison 2013 gồm 35 nghiên cứu fMRI với 446 điểm tọa độ (đã đọc bản tác giả), không phải "hàng trăm nghiên cứu"; "hàng trăm" là lời của Schultz 2016 ("hundreds of human neuro imaging studies") và là ước lượng của ông, không phải phân tích tổng hợp. Chữ cũ: "Hàng trăm nghiên cứu ghi hình não ở người cho thấy ... trong đó thể vân là vùng chính theo một phân tích tổng hợp (Garrison)". Đã viết lại theo Garrison.'
+    luot_2: sai
+    luot_2_nguon: [ "https://uhra.herts.ac.uk/id/eprint/3623/2/904929.pdf", "https://pubmed.ncbi.nlm.nih.gov/23567522/" ]
+    luot_2_ghi_chu: "câu đúng: Phân tích tổng hợp của Garrison và cộng sự (2013) gồm 35 nghiên cứu ghi hình não ở người, cho thấy thể vân là vùng chính mã hóa sai số dự đoán.; Không phải 'hàng trăm' nghiên cứu: phân tích tổng hợp Garrison dùng 35 nghiên cứu fMRI; thể vân là vùng chính (đúng)."
+    review: sai
+  - id: n35
+    cau: 'Khá vững: phân biệt "muốn" (dopamine) và "thích" (opioid).'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - berridge1989
+      - berridge1998
+      - pecina2005
+    ly_do: Nhiều thí nghiệm ở chuột cùng chiều, nhưng chủ yếu từ một nhóm nghiên cứu; chưa dẫn được bằng chứng trực tiếp ở người; chưa có phân tích tổng hợp hay tái lập lớn; một mâu thuẫn nhỏ trong chính khung là Berridge và Robinson 1998 nói dopamine không cần cho học liên hệ khoái cảm, còn Schultz 2016 mô tả dopamine như tín hiệu dạy học.
+    nguon:
+      - berridge1989
+      - berridge1998
+      - pecina2005
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nhãn "vững chắc", "chứng minh nhất quán", "gấp nhiều lần", "khung chuẩn trong nghiên cứu nghiện hiện nay". Chữ mới: "khá vững", nói rõ giới hạn; bỏ "khung chuẩn trong nghiên cứu nghiện" (không kiểm được). Lý do: thước đo mục 4 cho vững chắc cần tổng hợp hoặc hai tái lập lớn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khá vững hợp mục 4: nhiều thí nghiệm ở chuột cùng chiều (Berridge 1989, B&R 1998, Peciña 2005) nhưng chủ yếu một nhóm nghiên cứu, chưa tổng hợp hay tái lập lớn, chưa có bằng chứng trực tiếp ở người. Thân khung nói đúng những giới hạn này.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/", "https://pubmed.ncbi.nlm.nih.gov/16354936/", "https://pubmed.ncbi.nlm.nih.gov/29760524/" ]
+    luot_2_ghi_chu: "'Khá vững' vừa mức; ở người ít bằng chứng trực tiếp."
+    review: dung
+  - id: n36
+    cau: 'Chúng tôi không tìm thấy cơ chế sinh học nào cho việc "xả" dopamine ra khỏi não, cũng không thấy nghiên cứu nào ủng hộ "detox dopamine" theo nghĩa đen; chính người phổ biến thuật ngữ nói tên gọi không nên hiểu theo nghĩa đen.'
+    loai: phat-hien
+    nguon:
+      - sepah2019
+      - kalia2015
+      - harvard2020
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "dopamine không phải độc tố tích tụ... không thể "đào thải"... (thiếu dopamine trầm trọng là bệnh Parkinson, không phải "tập trung cao độ")... nhà tâm lý học Cameron Sepah... chỉ là kỹ thuật kiểm soát kích thích của CBT". Chữ mới: "chúng tôi không tìm thấy nghiên cứu nào cho thấy xả được dopamine"; Parkinson liên quan mất neuron ở chất đen; trích lời Sepah qua NYT; bỏ "nhà tâm lý học" và "CBT". Lý do: các chi tiết đó không kiểm được (Medium bị chặn). Review (Claude Sonnet 5.5, 10/11/2026): sai (lượt 2: qua-manh). Nhãn Đã bị bác bỏ không hợp mục 4: không có kiểm tra thực nghiệm nào thất bại và không có bằng chứng gốc bị rút; ly_do cũ tự nhận "vắng cơ sở". Chọn cách nói thẳng "không có cơ chế, không có bằng chứng" không gắn nhãn: khung đổi từ :::bac-bo thành :::note, nêu rõ lý do không gắn nhãn; câu không còn loại nhan. Thêm nguồn Harvard Health (Grinspoon 2020, bậc 3, đã mở đọc). Cũng đổi phần Mô tả frontmatter ("không có cơ sở khoa học" thành "không tìm thấy cơ chế hay bằng chứng nào ủng hộ").'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917", "https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491", "https://pubmed.ncbi.nlm.nih.gov/25904081/" ]
+    luot_2_ghi_chu: "câu đúng: Không có cơ chế hay nghiên cứu nào ủng hộ việc 'xả dopamine' ra khỏi não; người phổ biến thuật ngữ cũng nói không nên hiểu theo nghĩa đen (chưa có thử nghiệm trực tiếp nào bác bỏ).; 'Đã bị bác bỏ' đòi hỏi kiểm tra đủ mạnh thất bại; chưa có thí nghiệm nào kiểm chứng việc 'xả dopamine' vì không có cơ chế; mức đúng là 'không có bằng chứng, cơ chế không tồn tại'."
+    review: sai
+    trich: "\"Dopamine is just a mechanism that explains how addictions can become reinforced and makes for a catchy title,\" he wrote in an email. \"The title's not to be taken literally.\" // The dopamine fast, created by California psychiatrist Dr. Cameron Sepah, has very little to do with either fasting or dopamine."
+    vi_tri: Irish Times (bản đăng lại NYT, 2019); Harvard Health Blog 26/2/2020, đoạn mở đầu
+  - id: n37
+    cau: Bệnh Parkinson liên quan đến mất neuron dopamine ở chất đen.
+    loai: dinh-nghia
+    nguon:
+      - kalia2015
+    trich: loss of dopaminergic neurons in the substantia nigra
+    vi_tri: Kalia & Lang 2015, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Dopamine là chất mà não cần cho vận động: suy ra từ Parkinson (đặc trưng vận động), ghi rõ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/25904081/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n38
+    cau: Cameron Sepah (2019) nói với The New York Times rằng cái tên "dopamine fasting" "không nên được hiểu theo nghĩa đen" và dopamine "chỉ là một cơ chế giải thích vì sao nghiện có thể được củng cố, và làm nên một cái tên bắt tai".
+    loai: lich-su
+    nguon:
+      - sepah2019
+    trich: '"Dopamine is just a mechanism that explains how addictions can become reinforced and makes for a catchy title," he wrote in an email. "The title''s not to be taken literally."'
+    vi_tri: Irish Times, đăng lại NYT (7/11/2019)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chính người phổ biến thuật ngữ — nhà tâm lý học Cameron Sepah (2019)... thực chất đó chỉ là một kỹ thuật kiểm soát kích thích của CBT". Chữ mới: trích đúng lời; bỏ "nhà tâm lý học" (nguồn gọi là "Dr", giáo sư UCSF Medical School) và phần CBT (chỉ có trên Medium, bị chặn). Cũng đổi trong ngộ nhận, quiz và danh mục nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Trích khớp Irish Times (bản đăng lại NYT) và Harvard Health: Sepah viết trong email cho NYT: "The title''s not to be taken literally". Trang đã bỏ "nhà tâm lý học" và phần CBT.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491", "https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917" ]
+    luot_2_ghi_chu: Trích từ bài NYT (Irish Times đăng lại) và Harvard Health; Sepah trả lời qua email.
+    review: dung
+  - id: n39
+    cau: 'Chúng tôi chưa dẫn được bằng chứng nhân quả trực tiếp ở người cho việc dopamine gây nghiện mạng xã hội hay game gacha; có lập luận cơ chế từ động vật (Fiorillo 2003) và từ thuốc gây nghiện (Schultz 2016).'
+    loai: phat-hien
+    nguon:
+      - fiorillo2003
+      - schultz2016
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "lịch trình củng cố biến đổi vốn đã được chứng minh là tạo hành vi bền bỉ nhất từ thời Skinner... nghiện là đa yếu tố (thói quen, kiểm soát ức chế...)". Chữ mới bỏ hai ý này (không có nguồn đã mở), thêm lời dẫn tới Hỗ trợ. Review (Claude Sonnet 5.5, 10/11/2026): sai (nhãn). Đang tranh cãi không hợp mục 4 (không có bằng chứng chất lượng cao mâu thuẫn, không có tái lập thất bại; tình trạng thật là chưa có nghiên cứu trực tiếp). Hồ sơ lượt 1 cũng nói "chỉ gần nghĩa". Đã đổi khung từ :::tranh-cai thành :::note "Chưa đủ bằng chứng: ...", giữ nguyên thân; câu không còn loại nhan. Fiorillo (tóm tắt) và Schultz 2016 ("Drugs of addiction generate, hijack, and amplify the dopamine reward signal") khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9607763/", "https://pubmed.ncbi.nlm.nih.gov/42946727/", "https://pubmed.ncbi.nlm.nih.gov/35933619/" ]
+    luot_2_ghi_chu: Hợp 'đang tranh cãi'.
+    review: sai
+  - id: n40
+    cau: Theo tổng quan của Schultz (2016), thuốc gây nghiện tạo ra, chiếm đoạt và khuếch đại tín hiệu dopamine.
+    loai: phat-hien
+    nguon:
+      - schultz2016
+    trich: Drugs of addiction generate, hijack, and amplify the dopamine reward signal
+    vi_tri: Schultz 2016, tóm tắt
+    ket_qua: dung
+    ghi_chu: Mới thêm cho khung n39.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n41
+    cau: 'Khung sai số dự đoán: dopamine là tín hiệu "dạy học" của não (thực tế − dự đoán), cho các vùng khác biết có cần cập nhật kỳ vọng hay không.'
+    loai: dinh-nghia
+    nguon:
+      - schultz1997
+      - schultz2016
+    trich: Rewards produce learning ... Reward prediction errors ... are crucial for basic forms of learning about rewards
+    vi_tri: Schultz 2016, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Thêm "theo khung này". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khung sai số dự đoán đã gắn "theo khung này".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n42
+    cau: 'Khung incentive salience: dopamine gán sức hút cho các dấu hiệu báo phần thưởng; wanting là muốn, không nhất thiết thích; ví dụ biểu tượng ứng dụng, tiếng "ting" là minh họa của trang.'
+    loai: dinh-nghia
+    nguon:
+      - berridge1998
+    trich: dopamine systems may mediate the incentive salience of rewards, modulating their motivational value in a manner separable from hedonia and reward learning
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Dopamine gán... nam châm tâm lý... nhìn thấy biểu tượng ứng dụng... bỗng dưng thấy thôi thúc" như khẳng định. Chữ mới ghi rõ minh họa. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp B&R 1998: "dopamine systems may mediate the incentive salience of rewards"; ví dụ biểu tượng ứng dụng, tiếng "ting" đã ghi là minh họa của trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/" ]
+    luot_2_ghi_chu: Ví dụ biểu tượng ứng dụng là minh họa của trang.
+    review: dung
+  - id: n43
+    cau: 'Ba khung trả lời ba câu hỏi khác nhau nhưng không hoàn toàn khớp: Berridge và Robinson (1998) kết luận dopamine không cần cho học liên hệ khoái cảm, còn Schultz mô tả dopamine như tín hiệu dạy học.'
+    loai: phat-hien
+    nguon:
+      - berridge1998
+      - schultz2016
+    trich: dopamine systems are not needed ... to mediate predictive associations involved in hedonic reward learning
+    vi_tri: Berridge & Robinson, tóm tắt; Schultz 2016
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ba khung lý thuyết dưới đây không mâu thuẫn nhau". Chữ mới nêu chỗ không khớp. Lý do: Berridge & Robinson 1998 nói thẳng "no" cho vai trò trong hedonic reward learning. Chỗ khó. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: B&R 1998 nói dopamine không cần cho học liên hệ khoái cảm; Schultz mô tả dopamine như tín hiệu dạy học: nói "không hoàn toàn khớp" là đúng mức.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: "Khớp: hai khung chưa khớp nhau."
+    review: dung
+  - id: n44
+    cau: Theo Peciña và Berridge, hệ opioid tại một điểm nóng rất nhỏ trong nhân accumbens của chuột khuếch đại cái "thích" với vị ngọt ("lớp sơn khoái cảm" là ẩn dụ của trang).
+    loai: phat-hien
+    nguon:
+      - pecina2005
+    trich: Our maps indicate that opioid-induced increases in sucrose hedonic impact are generated by a localized cubic millimeter site
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Khoái cảm thật sự — liking — được tạo ra bởi hệ opioid tại những "điểm nóng"... Dopamine không cầm cọ vẽ này." Chữ mới bỏ câu cuối và nói là kết quả ở chuột. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Peciña & Berridge 2005; "lớp sơn khoái cảm" là ẩn dụ của trang, đã ghi.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16354936/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n45
+    cau: 'Ghép lại, theo các khung này (và còn tranh luận): dopamine liên quan đến việc muốn theo đuổi và có thể đến việc học xem thứ gì đáng theo đuổi; ở chuột, opioid khuếch đại cái thích.'
+    loai: phat-hien
+    nguon:
+      - berridge1998
+      - schultz2016
+      - pecina2005
+    trich: dopamine may be more important to incentive salience
+    vi_tri: Berridge & Robinson, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "dopamine giúp bạn học cái gì đáng theo đuổi và muốn theo đuổi nó; opioid cho bạn thích nó khi đã có trong tay... người ta lẫn lộn ba việc này thành một". Chữ mới thận trọng, ghi "còn tranh luận". Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu cuối "có thể ra đời vì lẫn lộn những việc này" là suy đoán có hạn định ("có thể"); chấp nhận.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/", "https://pubmed.ncbi.nlm.nih.gov/16354936/", "https://pubmed.ncbi.nlm.nih.gov/9054347/" ]
+    luot_2_ghi_chu: Câu đã ghi 'còn tranh luận', 'ở chuột'.
+    review: dung
+  - id: n46
+    cau: 'Từ nghiên cứu ở động vật của Fiorillo và cộng sự (2003), trong đó hoạt động dopamine tăng dần theo mức không chắc chắn của phần thưởng, đến hành vi dùng điện thoại là một bước suy đoán.'
+    loai: phat-hien
+    nguon:
+      - fiorillo2003
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nhãn khá vững; "thí nghiệm của Fiorillo cho thấy sự không chắc chắn duy trì hoạt động dopamine cho đến phút quyết định. Hiểu điều này giúp bạn tập trung vào... thiết kế môi trường". Chữ mới: "nghiên cứu ở động vật", "bước suy đoán", lời khuyên đổi môi trường thành "hướng thử, không phải khuyến nghị đã kiểm chứng". Lý do: khẳng định quá sức nguồn. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chip Đang tranh cãi không hợp mục 4 (xem n39) và đặt trên một lời khuyên. Đã bỏ chip (giữ id cũ) và đổi loại: câu này chỉ nói đó là suy đoán từ nghiên cứu ở động vật.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/35933619/", "https://pubmed.ncbi.nlm.nih.gov/42946727/" ]
+    luot_2_ghi_chu: Hợp 'tranh cãi'; cách nghĩ về lịch thưởng biến đổi là giả thuyết.
+    review: sai
+  - id: n47
+    cau: 'Bạn có thể thử đổi môi trường (tắt thông báo, để điện thoại xa tầm tay): một thử nghiệm trên 221 người trưởng thành, mỗi người một tuần bật và một tuần tắt thông báo, thấy họ tự báo cáo ít mất tập trung và ít tăng động hơn ở tuần tắt (Kushlev và cộng sự, 2016); thử nghiệm không đo dopamine và không bàn về nghiện.'
+    loai: loi-khuyen
+    nguon:
+      - kushlev2016
+    ket_qua: da-sua
+    ghi_chu: 'Không có nguồn kiểm chứng hiệu quả; trang ghi rõ không phải khuyến nghị đã kiểm chứng, nhãn tranh-cai. Chỗ khó: thiếu nguồn thực nghiệm về tắt thông báo (chưa tìm). Review (Claude Sonnet 5.5, 10/11/2026): sai (không nguồn). Lời khuyên "tắt thông báo, để điện thoại xa tầm tay" chưa có nguồn thực nghiệm (hồ sơ lượt 1 tự ghi). Tìm thấy Kushlev, Proulx & Dunn (2016, CHI): 221 người, một tuần bật thông báo (điện thoại trong tầm tay) và một tuần tắt (điện thoại xa tầm tay); khi bật, họ tự báo cáo mất tập trung và tăng động nhiều hơn. Chỉ có tóm tắt (Crossref, OpenAlex); thông báo trong trang nói rõ không đo dopamine. Đã viết lại và đổi "không phải khuyến nghị đã kiểm chứng" thành "không phải khuyến nghị về dopamine".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/35600564/" ]
+    luot_2_ghi_chu: Câu đã ghi 'một hướng thử, không phải khuyến nghị đã kiểm chứng'; thử nghiệm nhỏ (N=51, N=70).
+    review: sai
+    trich: Participants reported higher levels of inattention and hyperactivity when alerts were on than when alerts were off.
+    vi_tri: Kushlev, Proulx & Dunn 2016, tóm tắt (Crossref/OpenAlex)
+  - id: n48
+    cau: 'Bài tập tự hỏi "mình thực sự sẽ thích nó, hay chỉ đang muốn nó?" dựa trên khung wanting/liking ở chuột; chúng tôi không có nghiên cứu nào kiểm chứng riêng bài tập này.'
+    loai: loi-khuyen
+    nguon:
+      - berridge1998
+      - pecina2005
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nhãn "vững chắc"; "hãy nhận diện: đó là wanting đang lái xe... Câu hỏi đơn giản này đưa hệ "muốn" tự động ra ánh sáng của ý thức". Chữ mới: nhãn khá vững; "có thể thử hình dung (ví von)"; bỏ câu "đưa hệ muốn ra ánh sáng của ý thức". Review (Claude Sonnet 5.5, 10/11/2026): sai. Chip Khá vững đặt trên một bài tập mà thân mục tự nói không có nghiên cứu kiểm chứng: mâu thuẫn. Đã bỏ chip (giữ id cũ); câu nay nói đúng mức: dựa trên khung ở chuột, chưa có nghiên cứu riêng cho bài tập. Loại lời khuyên giữ, có nguồn của khung (Berridge & Robinson 1998, Peciña & Berridge 2005).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9858756/", "https://pubmed.ncbi.nlm.nih.gov/16354936/", "https://pubmed.ncbi.nlm.nih.gov/29760524/" ]
+    luot_2_ghi_chu: "'Khá vững' vừa mức: nhiều thí nghiệm chuột, ít bằng chứng ở người, còn tranh luận."
+    review: sai
+  - id: n49
+    cau: 'Tắt thông báo và để điện thoại xa tầm tay có thể giúp một số người bớt xao lãng (Kushlev và cộng sự, 2016), nhưng nếu có, lý do không phải là "xả được dopamine", vì không có cơ chế nào như vậy được nêu; chúng tôi chưa dẫn bằng chứng về hiệu quả của việc "tạm cắt giảm hành vi cưỡng chế" nói chung, và không tìm thấy nghiên cứu nào ủng hộ các gói "reset não 7 ngày" hay bảng xếp hạng "hoạt động X tăng dopamine bao nhiêu %".'
+    loai: loi-khuyen
+    nguon:
+      - sepah2019
+      - kushlev2016
+      - harvard2020
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đó là kỹ thuật kiểm soát kích thích của liệu pháp hành vi-nhận thức: giảm tiếp xúc với tín hiệu gây cám dỗ thì cám dỗ giảm. Đừng trả tiền cho các gói "reset não 7 ngày", đừng tin những bảng xếp hạng... — chúng không đo được gì cả." Chữ mới: "có thể giúp một số người", "chưa dẫn bằng chứng", "không tìm thấy nghiên cứu nào ủng hộ" gói reset và bảng xếp hạng. Review (Claude Sonnet 5.5, 10/11/2026): sai (lượt 2: qua-manh). Nhãn Đã bị bác bỏ không hợp mục 4 (xem n36); đã bỏ chip (tiêu đề không đổi). Vế "có thể giúp một số người bớt xao lãng" của câu cũ ("tạm cắt giảm hành vi cưỡng chế, ít lướt điện thoại, tắt thông báo một cuối tuần") không có nguồn: đã thu về phần có nguồn (Kushlev 2016: tắt thông báo). Không viết như lời khuyên điều trị.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917", "https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491" ]
+    luot_2_ghi_chu: "câu đúng: Không có bằng chứng cho 'detox dopamine' theo nghĩa đen; nhãn 'bác bỏ' không đúng thước đo vì chưa có kiểm tra nào.; Cùng lý do với n36: nhãn 'bác bỏ' cao hơn thước đo vì không có thử nghiệm nào; phần 'giữ cái hữu ích' (giảm kích thích) là hướng CBT theo Harvard Health."
+    review: sai
+  - id: n50
+    cau: 'Vì neuron dopamine phản ứng với bất ngờ và không chắc chắn (Schultz và cộng sự, 1997; Fiorillo và cộng sự, 2003, ở động vật), có thể nghĩ đến việc thiết kế phần thưởng biến đổi cho thói quen tốt; về cơ chế thì nghe hợp lý, nhưng chúng tôi chưa dẫn được bằng chứng ở người.'
+    loai: phat-hien
+    nguon:
+      - schultz1997
+      - fiorillo2003
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bằng chứng ở người còn rất hạn chế". Chữ mới: "chưa dẫn được bằng chứng ở người". Lý do: không có nguồn đã kiểm cho "rất hạn chế". Review (Claude Sonnet 5.5, 10/11/2026): sai. Chip Đang tranh cãi không hợp mục 4 (xem n39); câu "một số người đề xuất" không gán cho ai. Đã bỏ chip (tiêu đề không đổi), bỏ "một số người đề xuất" thành "có thể nghĩ đến", dẫn Schultz 1997, Fiorillo 2003.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: "Nhãn 'tranh cãi' thận trọng: chưa có thử nghiệm về 'dùng bất ngờ có chủ ý'."
+    review: sai
+  - id: n51
+    cau: Các thí nghiệm gốc về dopamine ở trang này chủ yếu thực hiện trên khỉ và chuột.
+    loai: phat-hien
+    nguon:
+      - schultz1997
+      - berridge1998
+      - pecina2005
+      - fiorillo2003
+    trich: dopamine neurons ... in alert monkeys; rats were depleted of dopamine
+    vi_tri: Schultz 1997; Berridge & Robinson 1998
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đều thực hiện trên khỉ và chuột trong phòng thí nghiệm phương Tây". Chữ mới: "chủ yếu"; bỏ "phương Tây" (không kiểm được nơi làm từng thí nghiệm). Ở người có ghi neuron đơn lẻ và hình ảnh não (Schultz 2016). Review (Claude Sonnet 5.5, 10/11/2026): dung. "Chủ yếu trên khỉ và chuột": Schultz 1997 (khỉ), Berridge (chuột), Fiorillo (neuron dopamine, tóm tắt không nêu loài), Peciña (chuột).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/9054347/", "https://pubmed.ncbi.nlm.nih.gov/9858756/", "https://pubmed.ncbi.nlm.nih.gov/16354936/", "https://pubmed.ncbi.nlm.nih.gov/12649484/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n52
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra sai số dự đoán phần thưởng hay phân biệt wanting/liking trên người Việt.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Europe PMC ngày 10/11/2026 (OpenAlex bị giới hạn lượt): 107 kết quả (dopamine AND Vietnam*...), chỉ xem năm kết quả đầu, không thấy kiểm tra riêng. Chữ cũ: không mốc, thêm "và cũng khó có, vì đây là cấp độ neuron đơn lẻ" (đã bỏ: ở người có ghi hình não và có thể có nghiên cứu hành vi). Chưa tìm Google Scholar hay tạp chí trong nước. Chỗ chưa chắc: không đọc hết các kết quả. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu thời sự có mốc "Tính đến 11/2026", het_han 2028-11-01, nguon là truy vấn Europe PMC đã mở; kiem_lai_truoc của bài (2028-05) không muộn hơn het_han. Hạn chế đã ghi (chỉ xem năm kết quả đầu).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&query=dopamine%20reward%20prediction%20error%20Vietnam", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&query=Vietnamese%20adolescents%20reward%20fMRI%20OR%20dopamine%20wanting%20liking" ]
+    luot_2_ghi_chu: Câu 'chưa tìm thấy' đúng ở ngày 2026-11-10.
+    review: dung
+  - id: n53
+    cau: Cụm từ "hormone hạnh phúc" xuất hiện trong các nội dung sức khỏe tiếng Việt, nơi dopamine được liệt kê cùng serotonin, endorphin, oxytocin (ví dụ bài Vinmec viết dopamine "giúp cảm thấy dễ chịu"), một cách mô tả không phân biệt "muốn" với "thích".
+    loai: thoi-su
+    nguon:
+      - vinmec
+    trich: dopamine giúp cảm thấy dễ chịu, serotonin làm giảm buồn phiền chán nản, oxytocin là hormone tình yêu và endorphin
+    vi_tri: Vinmec, đoạn mở đầu
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "rất phổ biến... như một "bộ tứ" — mà không phân biệt chất dẫn truyền thần kinh với hormone... Trào lưu "detox dopamine" cũng đã lan sang các cộng đồng năng suất tiếng Việt". Chữ mới: một ví dụ có link, mốc 11/2026; bỏ câu về trào lưu detox (không tìm được nguồn tiếng Việt; tìm 10/11/2026 chủ yếu ra trang tiếng Anh) và bỏ "không phân biệt chất dẫn truyền với hormone" (Long Châu có phân biệt). Review (Claude Sonnet 5.5, 10/11/2026): dung. Vinmec mở lại 10/11/2026: "dopamine giúp cảm thấy dễ chịu, serotonin làm giảm buồn phiền chán nản, oxytocin ... endorphin ...". Câu nói "một ví dụ", mốc, het_han có.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.vinmec.com/vie/bai-viet/hormones-hanh-phuc-la-gi-va-lam-nao-de-tang-cuong-vi" ]
+    luot_2_ghi_chu: Vinmec, mở 2026-11-10.
+    review: dung
+  - id: n54
+    cau: '"Dopamine là hormone hạnh phúc" là ngộ nhận: dopamine chủ yếu được nghiên cứu như chất dẫn truyền thần kinh; vai trò nổi bật là báo sai số dự đoán và liên quan đến động lực; các thí nghiệm ở chuột cho thấy khoái cảm vị giác không phụ thuộc vào dopamine.'
+    loai: phat-hien
+    nguon:
+      - schultz2016
+      - berridge1998
+    trich: dopamine systems are not needed either to mediate the hedonic pleasure of reinforcers
+    vi_tri: Berridge & Robinson 1998, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "công việc cốt lõi... không phải tạo ra khoái cảm. Khoái cảm thuộc về hệ opioid." Chữ mới giảm xuống mức nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Schultz 2016 và B&R 1998; trang không nói tuyệt đối.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://pubmed.ncbi.nlm.nih.gov/2493791/", "https://pubmed.ncbi.nlm.nih.gov/9858756/", "https://openstax.org/books/psychology-2e/pages/3-2-cells-of-the-nervous-system" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n55
+    cau: '"Càng nhiều dopamine càng hạnh phúc" là ngộ nhận: phần thưởng được dự đoán đầy đủ không làm neuron dopamine bùng phát; chuột tổn thương hệ dopamine vẫn có phản ứng thích vị ngọt gần như không đổi.'
+    loai: phat-hien
+    nguon:
+      - schultz1997
+      - berridge1989
+    trich: fails to be activated by the predicted reward; Taste reactivity was essentially unchanged
+    vi_tri: Schultz 1997, Hình 1; Berridge 1989, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "không kích hoạt... chút nào"; "bị phá hủy dopamine vẫn "thích" vị ngọt bình thường". Chữ mới như n4, n25. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Schultz 1997 (Hình 1) và Berridge 1989 ("essentially unchanged").'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://pubmed.ncbi.nlm.nih.gov/2493791/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n56
+    cau: '"Nghiện điện thoại vì dopamine tăng quá cao" là đơn giản hóa; dopamine có thể là một mắt xích, không phải toàn bộ lời giải thích.'
+    loai: loi-khuyen
+    nguon:
+      - schultz2016
+    trich: Drugs of addiction generate, hijack, and amplify the dopamine reward signal
+    vi_tri: Schultz 2016, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Dopamine là một mắt xích trong vòng lặp nghiện (cùng với thói quen, kiểm soát ức chế, thiết kế sản phẩm)". Chữ mới: "có thể là", bỏ danh sách yếu tố không có nguồn. Chỗ khó: nguồn chỉ nói về thuốc gây nghiện. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ngộ nhận đã làm mềm ("đơn giản hóa", "có thể là một mắt xích"); Schultz 2016: thuốc gây nghiện tạo ra, chiếm đoạt và khuếch đại tín hiệu dopamine; không nói điện thoại.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://pubmed.ncbi.nlm.nih.gov/29760524/", "https://pubmed.ncbi.nlm.nih.gov/42946727/" ]
+    luot_2_ghi_chu: Câu là nhận xét thận trọng, đúng.
+    review: dung
+  - id: n57
+    cau: '"Detox dopamine vài ngày sẽ reset não" là ngộ nhận: chúng tôi không tìm thấy cơ chế nào cho việc xả dopamine; chính người phổ biến thuật ngữ nói cái tên không nên hiểu theo nghĩa đen.'
+    loai: phat-hien
+    nguon:
+      - sepah2019
+    trich: The title's not to be taken literally.
+    vi_tri: Irish Times (NYT)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chính người tạo ra thuật ngữ cũng nói nó chỉ là ẩn dụ cho một kỹ thuật hành vi cũ". Chữ mới như n38. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp n36, n38; "không tìm thấy" là mức đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917", "https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n58
+    cau: '"Vùng não sáng lên khi quét não nghĩa là người ta sướng" là suy luận ngược (reverse inference), vốn không chặt chẽ: một vùng "sáng" có thể phản ánh nhiều quá trình.'
+    loai: dinh-nghia
+    nguon:
+      - poldrack2006
+    trich: Such inferences are not deductively valid, but can still provide some information.
+    vi_tri: Poldrack 2006, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "lỗi suy luận ngược: ... chứ không riêng gì khoái cảm". Chữ mới nói "không chặt chẽ" theo Poldrack 2006. Review (Claude Sonnet 5.5, 10/11/2026): dung. Poldrack 2006: suy luận ngược "not deductively valid, but can still provide some information"; trang nói "không chặt chẽ", đúng mức.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16406760/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n59
+    cau: 'Quiz 1: neuron dopamine của khỉ phản ứng mạnh nhất với phần thưởng bất ngờ, chưa được dự đoán.'
+    loai: phat-hien
+    nguon:
+      - schultz1997
+    trich: The dopamine neuron is activated by this unpredicted occurrence of juice.
+    vi_tri: Schultz 1997, Hình 1
+    ket_qua: dung
+    ghi_chu: Lời giải thích không dựa vào vị trí lựa chọn.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/", "https://pubmed.ncbi.nlm.nih.gov/9054347/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n60
+    cau: 'Quiz 2: phần thưởng được dự đoán nhưng không đến thì hoạt động neuron dopamine giảm xuống dưới mức nền (sai số dự đoán âm).'
+    loai: phat-hien
+    nguon:
+      - schultz1997
+      - schultz2016
+    trich: show depressed activity with less reward than predicted (negative prediction error)
+    vi_tri: Schultz 2016, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Quiz: đáp án đúng "giảm xuống dưới mức nền (sai số dự đoán âm)": nguồn dùng "depressed activity"; chấp nhận "dưới mức nền" ở mức quiz, giữ nguyên chữ vì khớp nghĩa "ức chế" ở n18.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826767/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n61
+    cau: 'Quiz 3: thí nghiệm 6-OHDA (1989): chuột bị tổn thương dopamine không còn tự ăn nhưng phản ứng miệng-mặt với vị ngọt gần như không đổi; các tác giả dùng làm lập luận tách wanting khỏi liking.'
+    loai: phat-hien
+    nguon:
+      - berridge1989
+    trich: Taste reactivity was essentially unchanged.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chứng minh... hoàn toàn bình thường... Đây là bằng chứng tách rời". Chữ mới theo n25, n26. Lời giải thích không dựa vào vị trí lựa chọn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 3 khớp n24–n26; lời giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/2493791/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n62
+    cau: 'Quiz 4: câu hỏi "Vì sao trang này nói không có cơ sở khoa học cho detox dopamine theo nghĩa đen?"; đáp án đúng: không có cơ chế hay nghiên cứu nào cho thấy xả được dopamine, Sepah nói tên không nên hiểu theo nghĩa đen; giải thích: Parkinson liên quan mất neuron dopamine; tắt thông báo có thể giúp một số người bớt xao lãng (Kushlev 2016) nhưng không phải vì "reset dopamine".'
+    loai: phat-hien
+    nguon:
+      - sepah2019
+      - kalia2015
+      - kushlev2016
+    trich: The title's not to be taken literally.
+    vi_tri: Irish Times; Kalia & Lang
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ có "kỹ thuật kiểm soát kích thích của CBT" và "thiếu nó trầm trọng là bệnh Parkinson, không phải tập trung cao độ". Chữ mới như n36, n49. Review (Claude Sonnet 5.5, 10/11/2026): sai (phụ thuộc n36, n49). Câu hỏi cũ "bị coi là sai về mặt khoa học" và lời giải thích "cắt giảm bớt hành vi cưỡng chế có thể có ích với một số người" không còn khớp với trang sau khi bỏ nhãn Bác bỏ và thu vế lời khuyên về phần có nguồn. Đã sửa câu hỏi và lời giải thích; lời giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917", "https://www.irishtimes.com/life-and-style/health-family/how-to-feel-nothing-now-in-order-to-feel-more-later-1.4095491", "https://pubmed.ncbi.nlm.nih.gov/25904081/" ]
+    luot_2_ghi_chu: Khớp; 'cắt giảm hành vi cưỡng chế có ích' hợp hướng CBT trong Harvard Health.
+    review: sai
+  - id: n63
+    cau: 'Quiz 5: Peciña và Berridge (2005): phản ứng "thích" tăng ở một điểm nóng khoảng 1 mm³, trong khi ở mọi vùng của vỏ giữa chuột ăn nhiều hơn; nghiên cứu không đo dopamine.'
+    loai: phat-hien
+    nguon:
+      - pecina2005
+    trich: Opioid circuits for stimulating food intake are widely distributed, whereas hedonic "liking" circuits are more tightly localized
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tăng gấp khoảng bốn lần... Khoái cảm là việc của opioid, không phải dopamine". Chữ mới như n30, n31. Câu hỏi đổi hẳn để hết "gấp bốn lần". Lời giải thích không dựa vào vị trí lựa chọn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 5 khớp n30, n31; lời giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16354936/" ]
+    luot_2_ghi_chu: Khớp; tóm tắt không có phép đo dopamine.
+    review: dung
+  - id: n64
+    cau: 'Đọc thêm: link tới thuong-va-dong-luc ("khi nào phần thưởng làm xói mòn hứng thú") và cam-xuc-co-ban ("Ekman, các cảm xúc cơ bản và tranh luận về nét mặt").'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm: các trang /kham-pha/cam-xuc-dong-luc/... chưa có trong src/content/docs (chưa chuyển); link chưa chạy cho đến khi có trang. Ghi cho người giao. Review (Claude Sonnet 5.5, 10/11/2026): sai (mô tả). Cả hai id có trong trang.yml; trang chưa chuyển nên thành chữ "sắp có", tự thành link khi trang lên. Mô tả cũ của cam-xuc-co-ban "''thích'' và ''muốn'' trong cảm xúc" không đúng với trang đích (trang cũ nói về Ekman 1969, 6 cảm xúc cơ bản, phê bình của Barrett; không có chữ "muốn" hay "dopamine"). Đã đổi mô tả hai link theo mô tả trang đích.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Loại ve-site: không qua lượt 2 (review kiểm thẳng trên trang)."
+    review: sai
+  - id: n65
+    cau: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trên trang: có ::tom-tat. Review (Claude Sonnet 5.5, 10/11/2026): dung. Loại ve-site đúng; trang có ::tom-tat dưới frontmatter, dựng từ ý chính của khung nhãn (nay: hai khung Khá vững).'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Loại ve-site: không qua lượt 2 (review kiểm thẳng trên trang)."
+    review: dung
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: 'Schultz, Dayan và Montague (1997): "ghi hoạt động... ánh đèn"; "giảm xuống dưới mức nền"'
-  moi: Bài tổng hợp ghi chép và mô hình TD; "kích thích thị giác"; "bị ức chế"
-  ly_do: Hồ sơ n15, n18.
-- cu: 'Peciña và Berridge (2005): "tăng gấp khoảng bốn lần", "dopamine đứng ngoài câu chuyện"'
-  moi: Bỏ "gấp bốn lần"; "nghiên cứu này không đo dopamine"
-  ly_do: Hồ sơ n30, n31, n63.
-- cu: Khung "vững chắc" cho phân biệt muốn (dopamine) và thích (opioid)
-  moi: Khung "khá vững"
-  ly_do: Hồ sơ n35 (thước đo mục 4).
-- cu: 'Detox: "nhà tâm lý học Cameron Sepah... kỹ thuật kiểm soát kích thích của CBT"'
-  moi: Trích lời Sepah qua NYT (Irish Times); bỏ phần CBT; "chúng tôi không tìm thấy cơ chế"
-  ly_do: Hồ sơ n36, n38, n49, n57, n62.
-- cu: 'Áp dụng 1 và 2: nhãn khá vững / vững chắc; "hãy nhận diện", "tập trung vào thiết kế môi trường"'
-  moi: 'Áp dụng 1: đang tranh cãi, "hướng thử"; Áp dụng 2: khá vững, "có thể thử hình dung"'
-  ly_do: Hồ sơ n46, n47, n48.
-- cu: 'Olds và Milner: "hộp Skinner", "thường xuyên và đều đặn trong thời gian dài", "công chúng ghép nối"'
-  moi: Theo Schultz (2016) kể lại; bỏ các chi tiết
-  ly_do: Hồ sơ n11–n14.
-- cu: Ba khung "không mâu thuẫn nhau"
-  moi: '"không hoàn toàn khớp nhau"'
-  ly_do: Hồ sơ n43.
-- cu: 'Việt Nam: không mốc; "cũng khó có"; "detox đã lan sang các cộng đồng năng suất tiếng Việt"'
-  moi: '"Tính đến 11/2026"; ví dụ Vinmec; bỏ câu về trào lưu detox'
-  ly_do: Hồ sơ n52, n53.
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Schultz, Dayan và Montague (1997): "ghi hoạt động... ánh đèn"; "giảm xuống dưới mức nền"'
+    moi: Bài tổng hợp ghi chép và mô hình TD; "kích thích thị giác"; "bị ức chế"
+    ly_do: Hồ sơ n15, n18.
+  - cu: 'Peciña và Berridge (2005): "tăng gấp khoảng bốn lần", "dopamine đứng ngoài câu chuyện"'
+    moi: Bỏ "gấp bốn lần"; "nghiên cứu này không đo dopamine"
+    ly_do: Hồ sơ n30, n31, n63.
+  - cu: Khung "vững chắc" cho phân biệt muốn (dopamine) và thích (opioid)
+    moi: Khung "khá vững"
+    ly_do: Hồ sơ n35 (thước đo mục 4).
+  - cu: 'Detox: "nhà tâm lý học Cameron Sepah... kỹ thuật kiểm soát kích thích của CBT"'
+    moi: Trích lời Sepah qua NYT (Irish Times); bỏ phần CBT; "chúng tôi không tìm thấy cơ chế"
+    ly_do: Hồ sơ n36, n38, n49, n57, n62.
+  - cu: 'Áp dụng 1 và 2: nhãn khá vững / vững chắc; "hãy nhận diện", "tập trung vào thiết kế môi trường"'
+    moi: 'Áp dụng 1: đang tranh cãi, "hướng thử"; Áp dụng 2: khá vững, "có thể thử hình dung"'
+    ly_do: Hồ sơ n46, n47, n48.
+  - cu: 'Olds và Milner: "hộp Skinner", "thường xuyên và đều đặn trong thời gian dài", "công chúng ghép nối"'
+    moi: Theo Schultz (2016) kể lại; bỏ các chi tiết
+    ly_do: Hồ sơ n11–n14.
+  - cu: Ba khung "không mâu thuẫn nhau"
+    moi: '"không hoàn toàn khớp nhau"'
+    ly_do: Hồ sơ n43.
+  - cu: 'Việt Nam: không mốc; "cũng khó có"; "detox đã lan sang các cộng đồng năng suất tiếng Việt"'
+    moi: '"Tính đến 11/2026"; ví dụ Vinmec; bỏ câu về trào lưu detox'
+    ly_do: Hồ sơ n52, n53.
+  - cu: 'Khung Vững chắc: "neuron dopamine mã hóa sai số dự đoán phần thưởng"; "hàng trăm nghiên cứu ghi hình não ... theo một phân tích tổng hợp"'
+    moi: Khung Khá vững, kèm lý do; "một phân tích tổng hợp 35 nghiên cứu fMRI ở người ... thể vân là vùng chính (Garrison 2013)"
+    ly_do: Review, hồ sơ n32 (mục 4 cần tổng hợp riêng cho khẳng định), n34 (lượt 2 sai).
+  - cu: "Khung Đã bị bác bỏ: \"'detox dopamine' theo nghĩa đen\""
+    moi: "Aside :::note \"Không có cơ chế, không có bằng chứng: 'detox dopamine' theo nghĩa đen\" (không nhãn), thêm Harvard Health 2020; Mô tả frontmatter đổi theo; Áp dụng 3 bỏ chip Bác bỏ"
+    ly_do: Review, hồ sơ n36, n49 (lượt 2 qua-manh; không có kiểm tra thất bại).
+  - cu: "Khung Đang tranh cãi: \"dopamine có phải 'thủ phạm' gây nghiện mạng xã hội và game gacha không\"; chip Đang tranh cãi ở Áp dụng 1 và 4; chip Khá vững ở Áp dụng 2"
+    moi: 'Aside :::note "Chưa đủ bằng chứng: ..."; bỏ ba chip (id tiêu đề giữ nguyên)'
+    ly_do: Review, hồ sơ n39, n46, n48, n50 (không hợp mục 4).
+  - cu: 'Kết quả Olds & Milner: "Chuột nhấn cần nhiều hơn ... đến mức quên ăn uống một lúc (theo Schultz, 2016; bài gốc ...)"'
+    moi: '"Theo cách Schultz (2016) kể lại, ở một số vùng chuột nhấn cần nhiều hơn ..."'
+    ly_do: Review, hồ sơ n12.
+  - cu: 'Áp dụng 1: "... bạn có thể thử đổi môi trường (tắt thông báo, để điện thoại xa tầm tay)" không nguồn; Áp dụng 3: "tạm cắt giảm các hành vi cưỡng chế ... có thể giúp một số người bớt xao lãng"; Áp dụng 4: "một số người đề xuất"'
+    moi: 'Thêm Kushlev 2016 (221 người, tuần bật và tuần tắt thông báo); Áp dụng 3 thu về "tắt thông báo và để điện thoại xa tầm tay"; Áp dụng 4: "có thể nghĩ đến" kèm Schultz 1997, Fiorillo 2003'
+    ly_do: Review, hồ sơ n47, n49, n50.
+  - cu: 'Quiz 4: "Vì sao detox dopamine theo nghĩa đen bị coi là sai về mặt khoa học?"; giải thích "Cắt giảm bớt hành vi cưỡng chế có thể có ích với một số người"'
+    moi: '"Vì sao trang này nói không có cơ sở khoa học cho detox dopamine theo nghĩa đen?"; giải thích dẫn Kushlev 2016 cho tắt thông báo'
+    ly_do: Review, hồ sơ n62.
+  - cu: 'Mở bài: "Trong các lời khuyên sức khỏe, dopamine thường được xếp vào nhóm hormone hạnh phúc"; hai câu trích không ghi là minh họa'
+    moi: '"Hai câu giả định, kiểu lời khuyên về dopamine: ... Trong một số nội dung sức khỏe, dopamine được xếp vào nhóm ..."'
+    ly_do: Review, hồ sơ n1, n2.
+  - cu: "Đọc thêm: cam-xuc-co-ban \"'thích' và 'muốn' trong cảm xúc\"; thuong-va-dong-luc \"phần thưởng ảnh hưởng động lực ra sao\""
+    moi: 'cam-xuc-co-ban: "Ekman, các cảm xúc cơ bản và tranh luận về nét mặt"; thuong-va-dong-luc: "khi nào phần thưởng làm xói mòn hứng thú"'
+    ly_do: Review, hồ sơ n64 (mô tả không đúng trang đích).

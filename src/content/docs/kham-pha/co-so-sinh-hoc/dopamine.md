@@ -1,6 +1,6 @@
 ---
 title: Dopamine có phải "chất gây sướng"?
-description: Các ghi chép của Wolfram Schultz trên khỉ cho thấy neuron dopamine mã hóa sai số dự đoán phần thưởng — không phải niềm vui. Kent Berridge cho thấy ở chuột dopamine liên quan đến "muốn" chứ không phải "thích". Và vì sao "detox dopamine" không có cơ sở khoa học.
+description: Các ghi chép của Wolfram Schultz trên khỉ cho thấy neuron dopamine mã hóa sai số dự đoán phần thưởng — không phải niềm vui. Kent Berridge cho thấy ở chuột dopamine liên quan đến "muốn" chứ không phải "thích". Và vì sao chúng tôi không tìm thấy cơ chế hay bằng chứng nào ủng hộ "detox dopamine".
 in_duoc: true
 ---
 
@@ -8,7 +8,7 @@ in_duoc: true
 
 ## Tự trải nghiệm
 
-*"Buồn thì làm gì đó cho tăng dopamine đi."* *"Detox dopamine 7 ngày để reset não."* Trong các lời khuyên sức khỏe, dopamine thường được xếp vào nhóm "hormone hạnh phúc" cùng serotonin, endorphin và oxytocin — với logic đơn giản: nhiều dopamine = hạnh phúc, và "cai" dopamine một thời gian sẽ giúp não nhạy lại.
+Hai câu giả định, kiểu lời khuyên về dopamine: *"Buồn thì làm gì đó cho tăng dopamine đi."* *"Detox dopamine 7 ngày để reset não."* Trong một số nội dung sức khỏe, dopamine được xếp vào nhóm "hormone hạnh phúc" cùng serotonin, endorphin và oxytocin — với logic đơn giản: nhiều dopamine = hạnh phúc, và "cai" dopamine một thời gian sẽ giúp não nhạy lại.
 
 Nhưng trước khi đọc tiếp, hãy ghi nhớ hai câu hỏi:
 
@@ -34,7 +34,7 @@ Ngộ nhận "dopamine = chất gây sướng" thường được gắn với d�
 
 **Thiết kế.** James Olds và Peter Milner đặt điện cực vào vùng vách (septal area) và các vùng não khác của chuột; mỗi lần chuột nhấn cần gạt, não nhận một dòng điện nhỏ. Chúng tôi chưa mở được toàn văn bài gốc; phần này theo Schultz (2016) kể lại.
 
-**Kết quả.** Chuột nhấn cần nhiều hơn để nhận thêm kích thích ở một số vùng, đến mức quên ăn uống một lúc ([theo Schultz, 2016](https://doi.org/10.31887/DCNS.2016.18.1/wschultz); bài gốc: [Olds và Milner, 1954](https://doi.org/10.1037/h0058775)). Điều này được diễn giải là đã tìm thấy một cơ sở thần kinh của phần thưởng; về sau các nghiên cứu khác (như Corbett và Wise, 1980) gắn tự kích thích não với các đường dẫn dopamine. **Lưu ý:** theo những gì chúng tôi đọc được, thí nghiệm gốc không đo dopamine — liên kết với dopamine là diễn giải của các nghiên cứu về sau.
+**Kết quả.** Theo cách Schultz (2016) kể lại, ở một số vùng chuột nhấn cần nhiều hơn để nhận thêm kích thích, đến mức quên ăn uống một lúc ([Schultz, 2016](https://doi.org/10.31887/DCNS.2016.18.1/wschultz); bài gốc: [Olds và Milner, 1954](https://doi.org/10.1037/h0058775)). Điều này được diễn giải là đã tìm thấy một cơ sở thần kinh của phần thưởng; về sau các nghiên cứu khác (như Corbett và Wise, 1980) gắn tự kích thích não với các đường dẫn dopamine. **Lưu ý:** theo những gì chúng tôi đọc được, thí nghiệm gốc không đo dopamine — liên kết với dopamine là diễn giải của các nghiên cứu về sau.
 
 ### Schultz, Dayan và Montague (1997): dopamine mã hóa sai số dự đoán
 
@@ -68,19 +68,19 @@ Ngộ nhận "dopamine = chất gây sướng" thường được gắn với d�
 
 ## Mức độ chắc chắn
 
-:::vung-chac[neuron dopamine mã hóa sai số dự đoán phần thưởng]
-Mẫu hình của Schultz và cộng sự (1997) đã được thấy lại trong gần ba thập kỷ: trên khỉ, chuột, và ở người (ghi neuron đơn lẻ; và hàng trăm nghiên cứu ghi hình não cho thấy tín hiệu sai số dự đoán ở các cấu trúc thưởng, trong đó thể vân là vùng chính theo một phân tích tổng hợp, Garrison và cộng sự, 2013; ghi hình não không đo riêng dopamine). Tổng quan của chính Schultz (2016) kết luận rằng hầu hết neuron dopamine ở não giữa của người, khỉ và động vật gặm nhấm đều báo hiệu sai số dự đoán phần thưởng ([Schultz, 2016](https://doi.org/10.31887/DCNS.2016.18.1/wschultz)).
+:::kha-vung[neuron dopamine mã hóa sai số dự đoán phần thưởng]
+Mẫu hình của Schultz và cộng sự (1997) đã được thấy lại trong gần ba thập kỷ: trên khỉ, chuột, và ở người (ghi neuron đơn lẻ; và ghi hình não: một phân tích tổng hợp 35 nghiên cứu fMRI thấy tín hiệu sai số dự đoán ở nhiều vùng não, trong đó thể vân là vùng chính, Garrison và cộng sự, 2013; ghi hình não không đo riêng dopamine). Tổng quan của chính Schultz (2016) kết luận rằng hầu hết neuron dopamine ở não giữa của người, khỉ và động vật gặm nhấm đều báo hiệu sai số dự đoán phần thưởng ([Schultz, 2016](https://doi.org/10.31887/DCNS.2016.18.1/wschultz)). Nhãn là "khá vững", không phải "vững chắc": chúng tôi chưa dẫn được phân tích tổng hợp hay tổng quan hệ thống riêng về hoạt động neuron dopamine (phân tích tổng hợp trên là về ghi hình não, còn tổng quan của Schultz là tổng quan kể), và phần lớn bằng chứng về neuron là ở động vật.
 :::
 
 :::kha-vung[phân biệt 'muốn' (dopamine) và 'thích' (opioid)]
 Sự tách rời giữa wanting và liking được thấy ở chuột trong nhiều thí nghiệm của cùng một nhóm nghiên cứu: tổn thương dopamine để nguyên phản ứng "thích" (Berridge và cộng sự, 1989; Berridge và Robinson, 1998); kích hoạt opioid tại một điểm nóng khoái cảm làm tăng "thích" (Peciña và Berridge, 2005). Chúng tôi chưa dẫn được bằng chứng trực tiếp ở người, và chưa có phân tích tổng hợp, nên nhãn là "khá vững", không phải "vững chắc".
 :::
 
-:::bac-bo['detox dopamine' theo nghĩa đen]
-Ý tưởng "ngồi yên vài ngày để xả dopamine, reset não" không có cơ chế sinh học nào được nêu: chúng tôi không tìm thấy nghiên cứu nào cho thấy "xả" được dopamine ra khỏi não, và dopamine là chất mà não cần cho vận động (bệnh Parkinson liên quan đến mất neuron dopamine ở chất đen). Đáng chú ý, chính người phổ biến thuật ngữ này, Cameron Sepah (2019), đã nói với *The New York Times* rằng cái tên "không nên được hiểu theo nghĩa đen" và dopamine "chỉ là một cơ chế giải thích vì sao nghiện có thể được củng cố, và làm nên một cái tên bắt tai". Nếu bạn cảm thấy mình mất kiểm soát với điện thoại hay trò chơi, nên nói chuyện với người có chuyên môn ([Hỗ trợ](/psyche/ho-tro/)).
+:::note[Không có cơ chế, không có bằng chứng: "detox dopamine" theo nghĩa đen]
+Ý tưởng "ngồi yên vài ngày để xả dopamine, reset não" không có cơ chế sinh học nào được nêu: chúng tôi không tìm thấy nghiên cứu nào cho thấy "xả" được dopamine ra khỏi não, và dopamine là chất mà não cần cho vận động (bệnh Parkinson liên quan đến mất neuron dopamine ở chất đen). Vì ý tưởng không dựa trên cơ chế nên chúng tôi cũng không thấy phép kiểm tra nào để nói là đã thất bại; đó là lý do trang này không gắn nhãn "Đã bị bác bỏ". Đáng chú ý, chính người phổ biến thuật ngữ này, Cameron Sepah (2019), đã nói với *The New York Times* rằng cái tên "không nên được hiểu theo nghĩa đen" và dopamine "chỉ là một cơ chế giải thích vì sao nghiện có thể được củng cố, và làm nên một cái tên bắt tai"; một bài của Harvard Health (Grinspoon, 2020) cũng viết rằng "dopamine fasting" có rất ít liên quan đến cả việc nhịn lẫn dopamine. Nếu bạn cảm thấy mình mất kiểm soát với điện thoại hay trò chơi, nên nói chuyện với người có chuyên môn ([Hỗ trợ](/psyche/ho-tro/)).
 :::
 
-:::tranh-cai[dopamine có phải 'thủ phạm' gây nghiện mạng xã hội và game gacha không]
+:::note[Chưa đủ bằng chứng: dopamine có phải 'thủ phạm' gây nghiện mạng xã hội và game gacha không]
 Có một lập luận về cơ chế: hoạt động neuron dopamine tăng dần theo mức không chắc chắn của phần thưởng (Fiorillo và cộng sự, 2003, ở động vật), và theo tổng quan của Schultz (2016), thuốc gây nghiện tạo ra, chiếm đoạt và khuếch đại tín hiệu dopamine. Nhưng nhảy từ đó đến "dopamine là nguyên nhân gây nghiện điện thoại hay game" là một bước quá dài: những nghiên cứu trên là ở động vật hay ở thuốc gây nghiện, không phải ở điện thoại hay game, và chúng tôi chưa dẫn được bằng chứng nhân quả trực tiếp ở người cho trường hợp này. Dopamine có thể là một mắt xích; nếu bạn thấy khó kiểm soát thời gian dùng điện thoại hay trò chơi, nên nói chuyện với người có chuyên môn ([Hỗ trợ](/psyche/ho-tro/)).
 :::
 
@@ -98,21 +98,21 @@ Ghép lại, theo các khung này (và còn tranh luận): dopamine liên quan �
 
 ## Áp dụng vào đời sống
 
-### 1. Một cách nghĩ về thông báo điện thoại và gacha :nhan[tranh-cai] { #1-hieu-vi-sao-thong-bao-dien-thoai-va-gacha-kho-cuong-kha-vung }
+### 1. Một cách nghĩ về thông báo điện thoại và gacha { #1-hieu-vi-sao-thong-bao-dien-thoai-va-gacha-kho-cuong-kha-vung }
 
-Mỗi lần kéo để làm mới, bạn không biết sẽ thấy gì: một tin nhắn thú vị, một lượt thích — hay chẳng có gì. Đó là một **lịch thưởng biến đổi, không chắc chắn**, và nghiên cứu của Fiorillo và cộng sự (2003) ở động vật thấy hoạt động dopamine tăng dần theo mức không chắc chắn của phần thưởng. Từ đó đến hành vi dùng điện thoại là một bước suy đoán. Một hướng thử, không phải khuyến nghị đã kiểm chứng: thay vì tự trách "não mình có vấn đề", bạn có thể thử đổi môi trường (tắt thông báo, để điện thoại xa tầm tay).
+Mỗi lần kéo để làm mới, bạn không biết sẽ thấy gì: một tin nhắn thú vị, một lượt thích — hay chẳng có gì. Đó là một **lịch thưởng biến đổi, không chắc chắn**, và nghiên cứu của Fiorillo và cộng sự (2003) ở động vật thấy hoạt động dopamine tăng dần theo mức không chắc chắn của phần thưởng. Từ đó đến hành vi dùng điện thoại là một bước suy đoán. Một hướng thử, không phải khuyến nghị về dopamine: thay vì tự trách "não mình có vấn đề", bạn có thể thử đổi môi trường (tắt thông báo, để điện thoại xa tầm tay). Một thử nghiệm trên 221 người trưởng thành, mỗi người một tuần bật và một tuần tắt thông báo (Kushlev và cộng sự, 2016), thấy họ tự báo cáo ít mất tập trung và ít tăng động hơn ở tuần tắt; thử nghiệm này không đo dopamine và không bàn về nghiện.
 
-### 2. Phân biệt "muốn" và "thích" trong chính mình :nhan[kha-vung] { #2-phan-biet-muon-va-thich-trong-chinh-minh-vung-chac }
+### 2. Phân biệt "muốn" và "thích" trong chính mình { #2-phan-biet-muon-va-thich-trong-chinh-minh-vung-chac }
 
 Lần tới khi thấy mình lướt điện thoại dù đã chán, hay thèm một món ăn mà ăn xong chẳng thấy ngon, bạn có thể thử hình dung: đó là **wanting đang lái xe mà không có liking ngồi cùng** (một cách ví von, vì bằng chứng gốc là ở chuột). Bài tập tự quan sát: trước khi làm một việc, tự hỏi *"mình thực sự sẽ thích nó, hay mình chỉ đang muốn nó?"* Chúng tôi không có nghiên cứu nào kiểm chứng riêng bài tập này.
 
-### 3. "Detox dopamine": giữ cái hữu ích, bỏ cái sai :nhan[bac-bo]
+### 3. "Detox dopamine": giữ cái hữu ích, bỏ cái sai { #3-detox-dopamine-giu-cai-huu-ich-bo-cai-sai-da-bi-bac-bo }
 
-Việc **tạm cắt giảm các hành vi cưỡng chế** (ít lướt điện thoại, tắt thông báo một cuối tuần) có thể giúp một số người bớt xao lãng — nhưng nếu có, lý do không phải là "xả được dopamine", vì không có cơ chế nào như vậy được nêu. Chúng tôi chưa dẫn bằng chứng về hiệu quả của việc này ở trang này. Với các gói "reset não 7 ngày" hay bảng xếp hạng "hoạt động X tăng dopamine bao nhiêu %", chúng tôi không tìm thấy nghiên cứu nào ủng hộ.
+Việc **tắt thông báo và để điện thoại xa tầm tay** có thể giúp một số người bớt xao lãng (xem mục 1) — nhưng nếu có, lý do không phải là "xả được dopamine", vì không có cơ chế nào như vậy được nêu. Chúng tôi chưa dẫn bằng chứng về hiệu quả của việc "tạm cắt giảm hành vi cưỡng chế" nói chung. Với các gói "reset não 7 ngày" hay bảng xếp hạng "hoạt động X tăng dopamine bao nhiêu %", chúng tôi không tìm thấy nghiên cứu nào ủng hộ.
 
-### 4. Dùng sự bất ngờ một cách có chủ ý :nhan[tranh-cai]
+### 4. Dùng sự bất ngờ một cách có chủ ý { #4-dung-su-bat-ngo-mot-cach-co-chu-y-dang-tranh-cai }
 
-Vì dopamine phản ứng với bất ngờ và không chắc chắn, một số người đề xuất "thiết kế" phần thưởng biến đổi cho thói quen tốt: tự thưởng ngẫu nhiên sau khi tập thể dục, học nhóm có yếu tố bất ngờ. Về mặt cơ chế thì nghe hợp lý, nhưng chúng tôi **chưa dẫn được bằng chứng ở người** — và ranh giới giữa "tạo động lực lành mạnh" với "tự biến cuộc sống thành máy đánh bạc" rất mong manh. Hãy coi đây là ý tưởng thử nghiệm, không phải công thức chắc chắn.
+Vì neuron dopamine phản ứng với bất ngờ và không chắc chắn (Schultz và cộng sự, 1997; Fiorillo và cộng sự, 2003, ở động vật), có thể nghĩ đến việc "thiết kế" phần thưởng biến đổi cho thói quen tốt: tự thưởng ngẫu nhiên sau khi tập thể dục, học nhóm có yếu tố bất ngờ. Về mặt cơ chế thì nghe hợp lý, nhưng chúng tôi **chưa dẫn được bằng chứng ở người** — và ranh giới giữa "tạo động lực lành mạnh" với "tự biến cuộc sống thành máy đánh bạc" rất mong manh. Hãy coi đây là ý tưởng thử nghiệm, không phải công thức chắc chắn.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
@@ -130,8 +130,8 @@ Tuy nhiên, **ngộ nhận thì không biên giới**. Cụm từ "hormone hạn
 
 ### Đọc thêm
 
-- [Thưởng có làm mất hứng thú?](/psyche/kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc/) — phần thưởng ảnh hưởng động lực ra sao
-- [Cảm xúc có mấy loại cơ bản?](/psyche/kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban/) — "thích" và "muốn" trong cảm xúc
+- [Thưởng có làm mất hứng thú?](/psyche/kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc/) — khi nào phần thưởng làm xói mòn hứng thú
+- [Cảm xúc có mấy loại cơ bản?](/psyche/kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban/) — Ekman, các cảm xúc cơ bản và tranh luận về nét mặt
 
 ## Thử suy ngẫm
 
@@ -151,11 +151,11 @@ Tuy nhiên, **ngộ nhận thì không biên giới**. Cụm từ "hormone hạn
 + Chuột bị tổn thương dopamine không còn tự ăn, nhưng phản ứng miệng-mặt với vị ngọt gần như không đổi.
 - Dopamine không liên quan gì đến hành vi ăn uống.
 > Các tác giả dùng kết quả này để lập luận cho việc tách wanting khỏi liking: hệ dopamine có vẻ cần cho hành vi tìm kiếm, nhưng không cần cho phản ứng "thích".
-? Vì sao "detox dopamine" theo nghĩa đen bị coi là sai về mặt khoa học?
+? Vì sao trang này nói không có cơ sở khoa học cho "detox dopamine" theo nghĩa đen?
 - Vì chưa ai thử detox đủ lâu để kết luận.
 + Vì không có cơ chế hay nghiên cứu nào cho thấy có thể "xả" dopamine khỏi não; chính người phổ biến thuật ngữ (Cameron Sepah, 2019) cũng nói cái tên không nên được hiểu theo nghĩa đen.
 - Vì detox chỉ có tác dụng với người nghiện nặng.
-> Dopamine là chất dẫn truyền thần kinh mà não cần cho vận động: bệnh Parkinson liên quan đến mất neuron dopamine ở chất đen. Cắt giảm bớt hành vi cưỡng chế có thể có ích với một số người, nhưng không phải vì "reset dopamine".
+> Dopamine là chất dẫn truyền thần kinh mà não cần cho vận động: bệnh Parkinson liên quan đến mất neuron dopamine ở chất đen. Tắt thông báo có thể giúp một số người bớt xao lãng (Kushlev và cộng sự, 2016), nhưng không phải vì "reset dopamine".
 ? Peciña và Berridge (2005) vi tiêm chất kích hoạt thụ thể μ-opioid vào nhân accumbens của chuột. Họ thấy gì ở phản ứng "thích" vị ngọt?
 - Phản ứng "thích" tăng ở mọi vùng của vỏ giữa nhân accumbens.
 + Phản ứng "thích" tăng ở một "điểm nóng" khoảng 1 mm³, trong khi ở mọi vùng của vỏ giữa chuột đều ăn nhiều hơn.
@@ -168,6 +168,8 @@ Tuy nhiên, **ngộ nhận thì không biên giới**. Cụm từ "hormone hạn
 - Berridge, K. C., Venier, I. L., & Robinson, T. E. (1989). Taste reactivity analysis of 6-hydroxydopamine-induced aphagia: Implications for arousal and anhedonia hypotheses of dopamine function. *Behavioral Neuroscience*, 103(1), 36–45. <https://doi.org/10.1037/0735-7044.103.1.36>
 - Berridge, K. C., & Robinson, T. E. (1998). What is the role of dopamine in reward: Hedonic impact, reward learning, or incentive salience? *Brain Research Reviews*, 28(3), 309–369. <https://doi.org/10.1016/S0165-0173(98)00019-8>
 - Fiorillo, C. D., Tobler, P. N., & Schultz, W. (2003). Discrete coding of reward probability and uncertainty by dopamine neurons. *Science*, 299(5614), 1898–1902. <https://doi.org/10.1126/science.1077349>
+- Grinspoon, P. (2020, 26 tháng 2). Dopamine fasting: Misunderstanding science spawns a maladaptive fad. *Harvard Health Blog*. <https://www.health.harvard.edu/blog/dopamine-fasting-misunderstanding-science-spawns-a-maladaptive-fad-2020022618917>
+- Kushlev, K., Proulx, J., & Dunn, E. W. (2016). "Silence your phones": Smartphone notifications increase inattention and hyperactivity symptoms. *Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems*, 1011–1020. <https://doi.org/10.1145/2858036.2858359>
 - Olds, J., & Milner, P. (1954). Positive reinforcement produced by electrical stimulation of septal area and other regions of rat brain. *Journal of Comparative and Physiological Psychology*, 47(6), 419–427. <https://doi.org/10.1037/h0058775>
 - Peciña, S., & Berridge, K. C. (2005). Hedonic hot spot in nucleus accumbens shell: Where do μ-opioids cause increased hedonic impact of sweetness? *The Journal of Neuroscience*, 25(50), 11777–11786. <https://doi.org/10.1523/JNEUROSCI.2329-05.2005>
 - Corbett, D., & Wise, R. A. (1980). Intracranial self-stimulation in relation to the ascending dopaminergic systems of the midbrain: A moveable microelectrode study. *Brain Research*, 185(1), 1–15. <https://doi.org/10.1016/0006-8993(80)90666-6> (chỉ dẫn qua danh mục tham khảo của Schultz, 2016)

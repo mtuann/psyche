@@ -8,7 +8,7 @@ in_duoc: true
 
 ## Tự trải nghiệm
 
-Mai ghen khi thấy người yêu bấm "thích" ảnh một cô gái lạ. Nam đã có bạn gái nhưng vẫn không cưỡng được việc ngắm người đẹp đi ngang qua. Cả hai đều thấy hành vi của mình... hơi "bản năng", khó giải thích bằng lý trí.
+Hai tình huống giả định. Mai ghen khi thấy người yêu bấm "thích" ảnh một cô gái lạ. Nam đã có bạn gái nhưng vẫn không cưỡng được việc ngắm người đẹp đi ngang qua. Cả hai đều thấy hành vi của mình... hơi "bản năng", khó giải thích bằng lý trí.
 
 > Một số nhà tâm lý học nói: đừng ngạc nhiên — não bạn được "lập trình" từ thời tổ tiên còn săn bắn hái lượm trên thảo nguyên, nơi ngoại hình có thể báo hiệu khả năng sinh sản. Nghe rất hợp lý. Nhưng "nghe hợp lý" có đủ để tin không?
 
@@ -36,9 +36,9 @@ Mai ghen khi thấy người yêu bấm "thích" ảnh một cô gái lạ. Nam 
 
 ### Walter, Conroy-Beam, Buss và cộng sự (2020): tái lập ở 45 nước
 
-**Thiết kế.** Tái lập quy mô lớn, mẫu mới 14.399 người ở 45 quốc gia; đồng thời kiểm chứng hai khung lý thuyết đối đầu — tâm lý học tiến hóa và lý thuyết vai trò xã hội (cho rằng khác biệt giới bắt nguồn từ vai trò xã hội của hai giới).
+**Thiết kế.** Tái lập quy mô lớn, mẫu mới 14.399 người ở 45 quốc gia (dữ liệu thu năm 2016, trực tiếp, ở cả sinh viên và cộng đồng; kế hoạch phân tích được đăng ký trước); đồng thời kiểm chứng hai khung lý thuyết đối đầu — tâm lý học tiến hóa và lý thuyết vai trò xã hội (cho rằng khác biệt giới bắt nguồn từ vai trò xã hội của hai giới).
 
-**Kết quả.** Theo tóm tắt của bài, khác biệt giới trong *sở thích nêu ra* vẫn vững: nam chuộng bạn tình trẻ, đẹp hơn; nữ chuộng bạn tình lớn tuổi, có triển vọng tài chính hơn. Nhưng có một chi tiết thú vị cho phe xã hội: ở nước càng bình đẳng giới, cả hai giới đều có bạn đời gần tuổi mình hơn. Ngoài tuổi bạn đời, cả mức lây nhiễm mầm bệnh lẫn bình đẳng giới đều không dự báo vững các khác biệt giữa các nước. Đáng chú ý: **Việt Nam có mặt trong nghiên cứu này** (bốn tác giả thuộc Đại học Quốc gia Hà Nội) — nhưng không có trong nghiên cứu gốc 1989 ([Walter và cộng sự, 2020](https://doi.org/10.1177/0956797620904154)).
+**Kết quả.** Khác biệt giới trong *sở thích nêu ra* vẫn vững: nam chuộng bạn tình trẻ, đẹp hơn; nữ chuộng bạn tình lớn tuổi, có triển vọng tài chính hơn. Nhưng có một chi tiết thú vị cho phe xã hội: ở nước càng bình đẳng giới, cả hai giới đều có bạn đời gần tuổi mình hơn. Ngoài tuổi bạn đời, cả mức lây nhiễm mầm bệnh lẫn bình đẳng giới đều không dự báo vững các khác biệt giữa các nước. Đáng chú ý: **Việt Nam có mặt trong nghiên cứu này** (có trong danh sách 45 nước, và bốn tác giả thuộc Đại học Quốc gia Hà Nội) — nhưng không có trong nghiên cứu gốc 1989 ([Walter và cộng sự, 2020](https://doi.org/10.1177/0956797620904154)).
 
 ### Eastwick và Finkel (2008) và Eastwick và cộng sự (2014): nói một đằng, yêu một nẻo { #eastwick-luchies-finkel-va-hunt-2014-noi-mot-dang-yeu-mot-neo }
 
@@ -55,19 +55,19 @@ Mai ghen khi thấy người yêu bấm "thích" ảnh một cô gái lạ. Nam 
 ## Mức độ chắc chắn
 
 :::vung-chac[hành vi con người chịu ảnh hưởng của lịch sử tiến hóa]
-Chọn lọc tự nhiên và chọn lọc giới tính là cơ chế được sinh học tiến hóa chấp nhận rộng rãi, và ngay cả các nhà phê bình tâm lý học tiến hóa như Gould và Lewontin (1979) cũng không phủ nhận vai trò của chọn lọc tự nhiên. Đồng thuận khoa học coi con người là sản phẩm của tiến hóa. Câu hỏi không phải "tiến hóa có ảnh hưởng không", mà là "ảnh hưởng *cụ thể nào*, *đến mức nào*".
+Chọn lọc tự nhiên và chọn lọc giới tính là cơ chế được sinh học tiến hóa chấp nhận rộng rãi, và ngay cả các nhà phê bình tâm lý học tiến hóa như Gould và Lewontin (1979) cũng ủng hộ cách tiếp cận đa nguyên của chính Darwin thay vì phủ nhận chọn lọc tự nhiên. Giáo trình mở *Psychology 2e* của OpenStax (mục 3.1) trình bày rằng gen góp phần vào các khuôn mẫu nhận thức và hành vi, và tâm lý học tiến hóa nghiên cứu những hiện tượng tâm lý có thể đã tiến hóa như thích nghi, trong đó có việc chọn bạn đời. Câu hỏi không phải "tiến hóa có ảnh hưởng không", mà là "ảnh hưởng *cụ thể nào*, *đến mức nào*".
 :::
 
 :::kha-vung[khác biệt giới trong sở thích bạn đời được nêu ra là có thật và xuyên văn hóa]
-Buss (1989) và tái lập của Walter và cộng sự (2020, N = 14.399, 45 nước) đều thấy: nam chuộng trẻ/đẹp hơn, nữ chuộng lớn tuổi/có nguồn lực hơn. Nhãn "khá vững", chưa phải "vững chắc", vì chưa có phân tích tổng hợp hay hai tái lập lớn có đăng ký trước, và vì đây là *sở thích nêu ra trên khảo sát*: trong một nghiên cứu hẹn hò tốc độ (Eastwick và Finkel, 2008), tiêu chuẩn nêu ra từ trước không dự báo được sự quan tâm thật với người vừa gặp, và chênh lệch giữa hai giới ở mức dự báo của ngoại hình và triển vọng kiếm tiền chỉ khoảng r = 0,03 (Eastwick và cộng sự, 2014).
+Buss (1989) và tái lập của Walter và cộng sự (2020, N = 14.399, 45 nước) đều thấy: nam chuộng trẻ/đẹp hơn, nữ chuộng lớn tuổi/có nguồn lực hơn. Nhãn "khá vững", chưa phải "vững chắc", vì mới có một tái lập lớn có đăng ký trước (Walter và cộng sự, 2020), chưa có phân tích tổng hợp hay hai tái lập như vậy, và vì đây là *sở thích nêu ra trên khảo sát*: trong một nghiên cứu hẹn hò tốc độ (Eastwick và Finkel, 2008), tiêu chuẩn nêu ra từ trước không dự báo được sự quan tâm thật với người vừa gặp, và chênh lệch giữa hai giới ở mức dự báo của ngoại hình và triển vọng kiếm tiền chỉ khoảng r = 0,03 (Eastwick và cộng sự, 2014).
 :::
 
 :::tranh-cai[từng 'câu chuyện thích nghi' cụ thể có đúng không, và khác biệt giới do tiến hóa hay do xã hội]
-Cùng một dữ liệu (khác biệt giới trong sở thích), hai phe đọc khác nhau: phe tiến hóa thấy bằng chứng chọn lọc giới tính; phe vai trò xã hội (Eagly và Wood, 1999) thấy hệ quả của vai trò xã hội của hai giới; khi bình đẳng giới tăng thì khoảng cách tuổi bạn đời thu hẹp (Walter 2020), điều phe này coi là phù hợp với quan điểm của mình.
+Cùng một dữ liệu (khác biệt giới trong sở thích), hai phe đọc khác nhau: phe tiến hóa thấy bằng chứng chọn lọc giới tính; phe vai trò xã hội (Eagly và Wood, 1999, theo cách Walter và cộng sự, 2020 mô tả) thấy hệ quả của vai trò xã hội của hai giới. Trong chính nghiên cứu của Walter và cộng sự, khoảng cách tuổi bạn đời thu hẹp khi bình đẳng giới tăng, phù hợp với lý thuyết vai trò xã hội; nhưng bình đẳng giới ít liên quan đến khác biệt giới trong sở thích, trái với dự báo của lý thuyết ấy, và mức lây nhiễm mầm bệnh cũng không dự báo được sở thích về ngoại hình, trái với một dự báo của phía tiến hóa.
 :::
 
 :::bac-bo[mọi đặc điểm tâm lý đều là thích nghi]
-Nhiều đặc điểm là sản phẩm phụ (spandrel), kết quả của cố định ngẫu nhiên các alen (random fixation, trôi dạt gen) hoặc tương quan phát triển — không phải thứ gì cũng "được chọn lọc vì có ích" (Gould và Lewontin, 1979). Đây là nguyên tắc phương pháp theo đồng thuận của giáo trình sinh học tiến hóa, nên khung này xếp "đã bị bác bỏ" cho khẳng định "mọi đặc điểm đều là thích nghi". Dùng kết quả khảo sát sở thích để khẳng định "đàn ông/đàn bà *tự nhiên* chọn như thế" cũng là vượt quá dữ liệu.
+Nhiều đặc điểm là sản phẩm phụ (spandrel), kết quả của cố định ngẫu nhiên các alen (random fixation, trôi dạt gen) hoặc tương quan phát triển — không phải thứ gì cũng "được chọn lọc vì có ích" (Gould và Lewontin, 1979). Vì "mọi đặc điểm đều là thích nghi" là một khẳng định phổ quát, chỉ cần có đặc điểm không phải thích nghi là nó sai, nên khung này xếp nó vào "đã bị bác bỏ". Dùng kết quả khảo sát sở thích để khẳng định "đàn ông/đàn bà *tự nhiên* chọn như thế" cũng là vượt quá dữ liệu.
 :::
 
 ## Các lý thuyết giải thích
@@ -82,38 +82,38 @@ Nhiều đặc điểm là sản phẩm phụ (spandrel), kết quả của cố
 
 - **Thiên kiến WEIRD (Henrich, Heine và Norenzayan, 2010).** WEIRD = Western, Educated, Industrialized, Rich, Democratic (phương Tây, có học, công nghiệp hóa, giàu, dân chủ). Phần lớn nghiên cứu tâm lý dùng sinh viên đại học phương Tây rồi khái quát cho "con người". Buss (1989) đa dạng hơn mặt bằng chung (có người Zulu, người Hoa đại lục, người Gujarat Ấn Độ...), nhưng mỗi mẫu trung bình chỉ ~272 người, cách lấy mẫu khác nhau giữa các nước và tác giả tự ghi mẫu không đại diện cho dân số (người nông thôn, ít học, thu nhập thấp ít có mặt) — vẫn còn xa mới đại diện cho "loài người".
 
-- **Tận dụng (exaptation).** Khái niệm bổ sung của Gould: đặc điểm tiến hóa cho mục đích A có thể sau đó được *tận dụng* cho mục đích B. Ứng dụng: ngay cả khi một đặc điểm não bộ có nguồn gốc tiến hóa, công dụng hiện tại của nó có thể chẳng liên quan gì đến "mục đích gốc" — đừng suy ngược từ công dụng hiện tại ra câu chuyện thích nghi.
+- **Tận dụng (exaptation).** Khái niệm bổ sung của Gould (Gould và Vrba, 1982): đặc điểm tiến hóa cho mục đích A có thể sau đó được *tận dụng* cho mục đích B. Ứng dụng: ngay cả khi một đặc điểm não bộ có nguồn gốc tiến hóa, công dụng hiện tại của nó có thể chẳng liên quan gì đến "mục đích gốc" — đừng suy ngược từ công dụng hiện tại ra câu chuyện thích nghi.
 
 ## Áp dụng vào đời sống
 
-### 1. "Tự nhiên" không có nghĩa là "đúng" :nhan[vung-chac]
+### 1. "Tự nhiên" không có nghĩa là "đúng" { #1-tu-nhien-khong-co-nghia-la-dung-vung-chac }
 
-Giải thích nguồn gốc tiến hóa của một hành vi (ghen tuông, ngoại tình, bạo lực) không biện minh cho nó về mặt đạo đức: từ "nó từng giúp tổ tiên sinh tồn" không suy ra được "nó là đúng". Khoa học mô tả thế giới *là gì*; đạo đức quyết định ta *nên làm gì*.
+Giải thích nguồn gốc tiến hóa của một hành vi (ghen tuông, ngoại tình, bạo lực) không biện minh cho nó về mặt đạo đức: từ "nó từng giúp tổ tiên sinh tồn" không suy ra được "nó là đúng". Khoa học mô tả thế giới *là gì*; đạo đức quyết định ta *nên làm gì*. Đây là nguyên tắc lập luận, không phải kết quả nghiên cứu thực nghiệm: theo cách đọc phổ biến trong triết học đạo đức (thường gọi là "định luật Hume"), từ những tiền đề chỉ mô tả sự thật không suy ra được kết luận đạo đức ([Cohon, Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/hume-moral/)).
 
-### 2. Đừng nhầm "tiêu chuẩn miệng" với con người thật :nhan[kha-vung]
+### 2. Đừng nhầm "tiêu chuẩn miệng" với con người thật { #2-dung-nham-tieu-chuan-mieng-voi-con-nguoi-that-kha-vung }
 
 Bạn tuyên bố thích người "chân thành, có chí tiến thủ" nhưng thực tế lại rung động trước người khác — điều đó không hiếm: trong một nghiên cứu hẹn hò tốc độ, tiêu chuẩn nêu ra từ trước không dự báo được sự quan tâm thật với người vừa gặp (Eastwick và Finkel, 2008). Khi tìm hiểu ai đó (hoặc tự nhìn lại mình), có thể chú ý đến điều thật sự thu hút mình khi gặp người thật, bên cạnh danh sách tiêu chuẩn.
 
-### 3. Đọc tin "khoa học chứng minh đàn ông/đàn bà là thế" bằng con mắt phê bình :nhan[vung-chac]
+### 3. Đọc tin "khoa học chứng minh đàn ông/đàn bà là thế" bằng con mắt phê bình { #3-doc-tin-khoa-hoc-chung-minh-dan-ongdan-ba-la-the-bang-con-mat-phe-binh-vung-chac }
 
 Luôn hỏi ba câu: mẫu nghiên cứu là ai (sinh viên Mỹ hay đa văn hóa)? Đo *lời nói* hay *hành vi thực*? Có giải thích khác không (văn hóa, kinh tế, vai trò xã hội)? Một nghiên cứu dù nổi tiếng đến đâu cũng chỉ trả lời đúng câu hỏi mà nó đặt ra.
 
-### 4. Tiến hóa cho khuynh hướng, không cho định mệnh :nhan[kha-vung]
+### 4. Tiến hóa cho khuynh hướng, không cho định mệnh { #4-tien-hoa-cho-khuynh-huong-khong-cho-dinh-menh-kha-vung }
 
-Ngay cả khi một khuynh hướng có gốc tiến hóa, văn hóa và lựa chọn cá nhân vẫn định hình phần lớn hành vi: các mẫu Trung Quốc đánh giá rất cao trinh tiết còn Thụy Điển coi là "không liên quan hay không quan trọng" trong cùng một nghiên cứu của Buss. Hiểu gốc gác để tự chủ hơn — không phải để đầu hàng nó.
+Ngay cả khi một khuynh hướng có gốc tiến hóa, văn hóa và lựa chọn cá nhân vẫn có thể định hình hành vi mạnh mẽ: các mẫu Trung Quốc đánh giá rất cao trinh tiết còn Thụy Điển coi là "không liên quan hay không quan trọng" trong cùng một nghiên cứu của Buss. Hiểu gốc gác để tự chủ hơn — không phải để đầu hàng nó.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
 **Việt Nam không có trong 37 mẫu của Buss (1989).** Danh sách mẫu của ông gồm Trung Quốc, Đài Loan, Nhật Bản, Ấn Độ, Indonesia, Iran, Israel... nhưng không có Việt Nam — nên các con số 36/37 hay 37/37 ở trên không đến từ người Việt.
 
-Việt Nam xuất hiện trong nghiên cứu **tái lập** của Walter và cộng sự (2020) với 45 quốc gia — bốn tác giả của bài thuộc Đại học Quốc gia Hà Nội. Chúng tôi chưa mở được toàn văn bài này, nên không nói được dữ liệu Việt Nam được phân tích đến mức nào.
+Việt Nam có trong 45 quốc gia của nghiên cứu **tái lập** của Walter và cộng sự (2020) — bốn tác giả của bài thuộc Đại học Quốc gia Hà Nội. Tuy nhiên, ở Việt Nam (cũng như Bulgaria, Jordan và Uruguay), người tham gia không ghi tuổi bạn đời, nên Việt Nam không có trong các phân tích về tuổi bạn đời; chúng tôi chưa tách riêng kết quả của mẫu Việt Nam.
 
-**Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu công bố nào kiểm chứng riêng các giả thuyết chọn bạn đời của Buss trên người Việt** (có nghiên cứu khác về cảm nhận vẻ hấp dẫn khuôn mặt người Việt, 2023, nhưng không phải kiểm chứng này). Góc nhìn văn hóa Việt Nam ở đây vì thế phải khiêm tốn: những gì ta quan sát — chuẩn mực "môn đăng hộ đối", kỳ vọng con trai "lập nghiệp" trước khi cưới, con gái chịu áp lực "lấy chồng sớm" — có thể gợi ý rằng văn hóa và kinh tế định hình "sở thích" chọn bạn đời, phù hợp với lập luận của phe vai trò xã hội — nhưng đây chỉ là suy đoán, chưa có dữ liệu. Đó không phải bằng chứng chống lại tiến hóa, mà là lời nhắc: giữa "khuynh hướng tiến hóa" và "hành vi thực tế của người Việt" còn cả một lớp văn hóa dày mà nghiên cứu hiện tại chưa đo được.
+**Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu công bố nào kiểm chứng riêng các giả thuyết chọn bạn đời của Buss trên người Việt** (có nghiên cứu khác về cảm nhận vẻ hấp dẫn khuôn mặt người Việt, 2023, nhưng không phải kiểm chứng này). Góc nhìn văn hóa Việt Nam ở đây vì thế phải khiêm tốn: chúng tôi chưa dẫn nghiên cứu nào về cách văn hóa và kinh tế Việt Nam định hình sở thích chọn bạn đời, nên không nói được gì ở mức bằng chứng. Nếu văn hóa và kinh tế có vai trò, điều đó sẽ phù hợp với lập luận của phe vai trò xã hội; nhưng đó chỉ là suy đoán của chúng tôi, chưa có dữ liệu. Đó không phải bằng chứng chống lại tiến hóa, mà là lời nhắc: giữa "khuynh hướng tiến hóa" và "hành vi thực tế của người Việt" còn một lớp văn hóa mà nghiên cứu hiện tại chưa đo được.
 
 ## Ngộ nhận liên quan
 
 - **"Tiến hóa nghĩa là mọi đặc điểm đều có mục đích thích nghi."** Sai — đó chính là điều Gould và Lewontin phê bình. Nhiều đặc điểm là sản phẩm phụ (spandrel), kết quả ngẫu nhiên (trôi dạt gen) hoặc bị ràng buộc bởi cấu trúc cơ thể. Thấy "có ích bây giờ" không có nghĩa "được chọn lọc vì cái ích đó".
-- **"Gen đã định thì không thay đổi được."** Khuynh hướng tiến hóa là xác suất, không phải định mệnh. Con người có văn hóa, luật pháp, giáo dục — chính những thứ đó tạo ra khác biệt giữa "có khuynh hướng ghen" và "xã hội chấp nhận bạo lực vì ghen".
+- **"Gen đã định thì không thay đổi được."** Khuynh hướng tiến hóa là xác suất, không phải định mệnh. Trong dữ liệu của Buss (1989), mức coi trọng trinh tiết biến thiên rất mạnh giữa các nền văn hóa: văn hóa có thể tác động mạnh lên điều ta coi trọng.
 - **"Khoa học chứng minh đàn ông/đàn bà tự nhiên phải thế này."** Dữ liệu của chính Buss cho thấy biến thiên văn hóa khổng lồ (trinh tiết: Trung Quốc vs Thụy Điển). Dùng vài phát hiện trung bình để áp đặt "bản chất" cho cả một giới là vượt quá dữ liệu.
 - **"Tâm lý học tiến hóa đã bị bác bỏ hoàn toàn."** Không. Khung tiến hóa vẫn là một khung lý thuyết để đặt câu hỏi về hành vi; cái bị phê bình là thói quen kể chuyện thiếu kiểm chứng. Các đợt kiểm chứng gần đây, như tái lập đa văn hóa của Walter và cộng sự (2020), cho thấy một số kết quả của Buss vẫn đứng vững ở mức sở thích nêu ra.
 
@@ -121,7 +121,7 @@ Việt Nam xuất hiện trong nghiên cứu **tái lập** của Walter và c�
 
 - [Gen quyết định bao nhiêu phần con người ta?](/psyche/kham-pha/co-so-sinh-hoc/gen-va-tinh-cach/) — gen, môi trường và tính di truyền
 - [Bé bám mẹ là tốt hay xấu?](/psyche/kham-pha/phat-trien/gan-bo/) — một lý thuyết tiến hóa khác: gắn bó mẹ–con
-- [Não có thực sự chia hai nửa độc lập?](/psyche/kham-pha/co-so-sinh-hoc/nao-che-doi/) — não bộ không phải máy ghi hình trung thực
+- [Não có thực sự chia hai nửa độc lập?](/psyche/kham-pha/co-so-sinh-hoc/nao-che-doi/) — thí nghiệm não chẻ và ngộ nhận "não trái, não phải"
 
 ## Thử suy ngẫm
 
@@ -157,6 +157,9 @@ Việt Nam xuất hiện trong nghiên cứu **tái lập** của Walter và c�
 - Eastwick, P. W., & Finkel, E. J. (2008). Sex differences in mate preferences revisited: Do people know what they initially desire in a romantic partner? *Journal of Personality and Social Psychology*, 94(2), 245–264. <https://doi.org/10.1037/0022-3514.94.2.245>
 - Eastwick, P. W., Luchies, L. B., Finkel, E. J., & Hunt, L. L. (2014). The predictive validity of ideal partner preferences: A review and meta-analysis. *Psychological Bulletin*, 140(3), 623–665. <https://doi.org/10.1037/a0032432>
 - Gould, S. J., & Lewontin, R. C. (1979). The spandrels of San Marco and the Panglossian paradigm: A critique of the adaptationist programme. *Proceedings of the Royal Society of London. Series B*, 205(1161), 581–598. <https://doi.org/10.1098/rspb.1979.0086>
+- Gould, S. J., & Vrba, E. S. (1982). Exaptation—a missing term in the science of form. *Paleobiology*, 8(1), 4–15. <https://doi.org/10.1017/S0094837300004310>
 - Henrich, J., Heine, S. J., & Norenzayan, A. (2010). The weirdest people in the world? *Behavioral and Brain Sciences*, 33(2-3), 61–83. <https://doi.org/10.1017/S0140525X0999152X>
+- Cohon, R. (2018). Hume's moral philosophy. Trong *Stanford Encyclopedia of Philosophy*. <https://plato.stanford.edu/entries/hume-moral/> (mục 5, "Is and ought")
+- Spielman, R. M., Jenkins, W. J., & Lovett, M. D. (2020). *Psychology 2e*. OpenStax, mục 3.1 "Human Genetics". <https://openstax.org/books/psychology-2e/pages/3-1-human-genetics>
 - Trivers, R. L. (1972). Parental investment and sexual selection. Trong *Sexual selection and the descent of man* (tr. 136–179). New York: Aldine de Gruyter. (chương sách)
 - Walter, K. V., Conroy-Beam, D., Buss, D. M., và cộng sự (2020). Sex differences in mate preferences across 45 countries: A large-scale replication. *Psychological Science*, 31(4), 408–423. <https://doi.org/10.1177/0956797620904154>
