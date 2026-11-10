@@ -53,8 +53,8 @@ Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 | 2 | Dữ liệu dùng chung và lối vào | D2-0, D2-L1 | Trang chủ thật, Bắt đầu, Cách đọc nhãn, Hỗ trợ, Cách Psyche kiểm chứng, 14 trang lĩnh vực (20 trang) | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d2-0.md`, `d2-l1.md`): 556 bản ghi và 20 trang đã khóa |
 | 3 | Thí nghiệm kinh điển | D3-L1, D3-L2 | 15 thí nghiệm và mục lục (36 trang) | 2–3 ngày | Xong 30/10/2026 (`bao-cao/d3-l1.md`, `d3-l2.md`): 16 trang đã khóa |
 | 4 | Hiểu bằng chứng | D4-L1, D4-L2 | 12 bài phương pháp và mục lục (49 trang) | 1,5–2 ngày | Xong 30/10/2026 (`bao-cao/d4-l1.md`, `d4-l2.md`): 13 trang đã khóa; D4-L2 làm luôn trên nhánh lô, không mở `moi/d4-gom` |
-| 5 | Nền tảng phần 1 | D5-L1–D5-L4 | 27 bài đã kiểm ở G1-L01–L04 của site cũ (76 trang) | 1,5–2 ngày | Chưa làm |
-| 6 | Nền tảng phần 2 | D6-L1–D6-L3 | 20 bài: căng thẳng, giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển (96 trang) | 2–3 ngày | Chưa làm |
+| 5 | Nền tảng phần 1 | D5-L1–D5-L4 | 27 bài đã kiểm ở G1-L01–L04 của site cũ (76 trang) | 1,5–2 ngày | Xong 10/11/2026 (`bao-cao/d5-l1.md` … `d5-l4.md`): 27 trang đã khóa; kiểm mẫu của chủ repo đạt |
+| 6 | Nền tảng phần 2 | D6-L1–D6-L3 | 20 bài: căng thẳng, giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển (96 trang) | 2–3 ngày | Xong 10/11/2026 (`bao-cao/d6-l1.md` … `d6-l3.md`): 20 trang đã khóa; bài mở rộng kiểm lượt 2 cả trang; tìm kiếm thêm tên chủ đề (`chu_de` ở `trang.yml`) |
 | 7 | Sức khỏe tâm thần | D7-L1 | 4 bài, khóa sau khi chuyên gia đọc (100 trang) | 1 ngày, cộng thời gian chờ chuyên gia | Chưa làm |
 | 8 | Công cụ, ngộ nhận, sách in, Thêm | D8-L1–D8-L4 | 11 công cụ, 60 thẻ ngộ nhận, Sách in, Tờ tóm tắt, Nghiên cứu mới, dùng khi mất mạng; đủ 106 trang cũ (121 trang) | 2–3 ngày | Chưa làm |
 | 9 | Hoàn tất | | Máy canh hằng tuần; site mới không còn cần `../psyche-zero/` | 0,5–1 ngày | Chưa làm |
@@ -185,7 +185,7 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 
 **Xong khi:** site mới không còn cần `../psyche-zero/` để build hay kiểm thử.
 
-## Việc treo (cập nhật 09/11/2026)
+## Việc treo (cập nhật 10/11/2026)
 
 Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong việc nào thì gạch khỏi đây.
 
@@ -193,6 +193,10 @@ Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong 
 - **Đường dây HOPE** (hyvongsong.com) ở trang Hỗ trợ: chủ repo quyết sau (review D2-L1: trang nói rõ số, giờ, người vận hành, nhưng tư cách pháp lý tự mâu thuẫn).
 - **Đường báo lỗi ở trang Hỗ trợ:** repo đã công khai (11/2026), có thể thêm câu mời báo lỗi kèm link GitHub Issues (mở khóa trang Hỗ trợ).
 - **Nguồn không DOI** trong hồ sơ của trang đã khóa chưa có bản ghi ở `src/data/nguon.yml` (giáo trình mở, văn bản chính thức, trang web): theo D2-0, lô dùng chúng thêm và kiểm (`bao-cao/don-nguon.md` có phân loại).
+- **Nguồn mới của đợt 5–6** (vài chục bài: Nemeth 2001, Sleegers 2024, Bleidorn 2022, Haslam 2012, Chervonsky và Hunt 2017, Ciria 2023, Teague 2026…) có ở hồ sơ và mục Nguồn của trang nhưng chưa có bản ghi ở `src/data/nguon.yml`: một lô dọn nguồn riêng (như `bao-cao/don-nguon.md`). Danh sách ở mục "Chỗ còn chưa chắc" của từng báo cáo `d5-l*.md`, `d6-l*.md`.
+- **Thẻ ngộ nhận `mbti`** (`src/data/ngo-nhan.yml`, đã khóa) còn nói Big Five "có bằng chứng dự báo tốt hơn", lệch với trang MBTI mới (chưa có so sánh trực tiếp): sửa ở D8-L3.
+- **Đề xuất cho `chuan-kiem-dinh.md`, mục Nguồn và cách mở** (từ review đợt 6): OpenStax Lifespan Development qua REX archive; ngoặc trong DOI của bộ Internet Archive mã hóa hai lần (`%2528`, `%2529`); trường `locations` của OpenAlex chỉ tới bản tác giả; hhs.gov qua bản lưu Internet Archive. OpenAlex hay hết lượt miễn phí trong ngày: câu thời sự "chưa tìm thấy ở Việt Nam" của đợt 5–6 phần lớn tìm qua Europe PMC, Crossref.
+- **Tìm kiếm khi site lớn:** bài mới có tiêu đề dạng câu hỏi không nêu chủ đề thì thêm `chu_de` ở `src/data/trang.yml`; kiểm thử tìm kiếm (`tests/trinh-duyet/kiem-tim-kiem.mjs`) báo khi trang đích rớt khỏi 5 kết quả đầu.
 - **Sửa nhỏ khi mở khóa:** `bang-chung/dao-duc-nghien-cuu` e4 dịch "disadvantaged" là "nghèo" ("thiệt thòi" sát hơn); nhãn Rowland 2014 (Vững chắc) phải khớp `kham-pha/tri-nho/duong-cong-quen` khi trang ấy làm (D5); trang khác dẫn nhãn cũ của Milgram, Pygmalion, Robbers Cave sửa theo nhãn mới khi chuyển.
 - **Chưa mở được toàn văn:** Messerli 2012 (NEJM), Button 2013, Gignac & Szodorai 2016, Funder & Ozer 2019, Camerer 2018, Marshall & Zimbardo 1979, Maslach 1979: số liệu qua nguồn dẫn lại, ghi ở hồ sơ.
 
