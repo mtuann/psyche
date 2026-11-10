@@ -217,7 +217,7 @@ test('trangChuaDangKy: mọi trang thật có bản ghi; thiếu thì báo đún
 });
 
 test('frontmatter không ghi thông tin thuộc trang.yml (mọi trường của trang.yml trừ id, cùng ma, loai, can_ra_soat)', () => {
-	assert.deepEqual([...TRUONG_O_TRANG_YML].sort(), ['can_ra_soat', 'dua_tren', 'kiem_lai_truoc', 'linh_vuc', 'loai', 'ma', 'moi', 'tang']);
+	assert.deepEqual([...TRUONG_O_TRANG_YML].sort(), ['can_ra_soat', 'chu_de', 'dua_tren', 'kiem_lai_truoc', 'linh_vuc', 'loai', 'ma', 'moi', 'tang']);
 	for (const truong of TRUONG_O_TRANG_YML) {
 		const kq = frontmatterRieng.safeParse({ [truong]: 'loi' });
 		assert.equal(kq.success, false, `frontmatter có ${truong} mà không báo lỗi`);
