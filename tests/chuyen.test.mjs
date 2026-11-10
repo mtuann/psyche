@@ -136,9 +136,10 @@ test('site cũ: mọi trang chuyển được (không lỗi), không còn cú ph
 // skinner-schedules (D3-L2: nhãn VR "cao, đều, khó tắt dần nhất" như chữ trang)
 // tuong-quan (D4-L1): bỏ tên file tools/figures.py (không có ở repo này) khỏi chú thích
 // loftus-verbs (D5-L1 review): chú thích "khoảng 14,5 km/giờ" (9 dặm = 14,48 km)
+// linda-venn (D5-L2 review): chú thích "85%" chỉ của phiên bản chọn một trong hai (142 sinh viên UBC)
 // elm-routes (D5-L4 review): "bền vững / mong manh" thành "tương đối bền / tương đối mong manh, dễ đổi hơn" (Petty & Cacioppo 1986, Hình 1: "relatively enduring", "relatively temporary")
 // festinger-diverging (D5-L4 review): chú thích "tích cực hơn hẳn nhóm 20 đô-la" thành "cao hơn, chênh lệch có ý nghĩa thống kê" (Festinger & Carlsmith 1959: p < 0,03 và p < 0,02)
-const HINH_DA_SUA = new Set(["tuong-quan", "milgram-obedience", "harlow-contact", "seligman-design", "skinner-schedules", "mean-vs-median", "loftus-verbs", "festinger-diverging", "elm-routes", "gross-model"]);
+const HINH_DA_SUA = new Set(["tuong-quan", "milgram-obedience", "harlow-contact", "seligman-design", "skinner-schedules", "mean-vs-median", "loftus-verbs", "linda-venn", "festinger-diverging", "elm-routes", "gross-model"]);
 
 test('hình tĩnh src/hinh/<tên>.html chép đúng hình của trang cũ (chữ trong hình, aria-label; so-chu không so SVG)', { skip: !CO_SITE_CU && 'không có ../psyche-zero/' }, () => {
 	const thu = new URL('../src/hinh/', import.meta.url);
