@@ -22,7 +22,7 @@ Nhưng đáp án cho câu hỏi "có phải con người thực sự thông minh
 
 ## Điều gì đang xảy ra?
 
-Năm 1984, James R. Flynn — một nhà triết học và khoa học chính trị người New Zealand — đọc các cuốn sổ tay chấm điểm của những bài kiểm tra IQ phổ biến và phát hiện một điều kỳ lạ: **điểm thô của người làm bài cứ tăng dần theo thời gian**. Cùng một bài kiểm tra, cùng cách chấm, nhưng người làm bài vào thập niên 1970 đạt điểm cao hơn hẳn người làm bài vào thập niên 1930 — mâu thuẫn với niềm tin phổ biến lúc bấy giờ rằng "con người đang ngày càng ngu đi". Flynn thu thập thêm dữ liệu từ nhiều quốc gia, công bố hai bài báo nền tảng ([Flynn, 1984](https://doi.org/10.1037/0033-2909.95.1.29); [Flynn, 1987](https://doi.org/10.1037/0033-2909.101.2.171)), và hiện tượng này được đặt tên theo ông: **hiệu ứng Flynn**.
+Năm 1984, James R. Flynn, nhà nghiên cứu ở Đại học Otago (New Zealand), so sánh điểm của người Mỹ trên cùng các bài kiểm tra IQ qua các lần chuẩn hóa khác nhau và phát hiện một điều kỳ lạ: **điểm số của người làm bài cứ tăng dần theo thời gian**. Cùng một loại bài kiểm tra, nhưng người làm bài vào thập niên 1970 đạt điểm cao hơn hẳn so với chuẩn của thập niên 1930 — điều này đi ngược giả thuyết trước đó rằng IQ của dân số đang giảm vì những người điểm thấp sinh nhiều con hơn. Flynn thu thập thêm dữ liệu từ nhiều quốc gia, công bố hai bài báo nền tảng ([Flynn, 1984](https://doi.org/10.1037/0033-2909.95.1.29); [Flynn, 1987](https://doi.org/10.1037/0033-2909.101.2.171)), và hiện tượng này về sau được gọi là **hiệu ứng Flynn**.
 
 ## Nghiên cứu then chốt
 
@@ -36,7 +36,7 @@ Năm 1984, James R. Flynn — một nhà triết học và khoa học chính tr�
 
 **Thiết kế.** Flynn mở rộng ra 14 quốc gia, so sánh điểm qua thời gian trên nhiều loại bài kiểm tra khác nhau.
 
-**Kết quả.** Ở cả 14 nước, điểm đều tăng, từ 5 đến 25 điểm chỉ trong một thế hệ — và tăng mạnh nhất ở **ma trận Raven**, bài kiểm tra suy luận trừu tượng bằng hình ảnh vốn được xem là "sạch" văn hóa nhất. Ví dụ nổi tiếng nhất: thanh niên Hà Lan 18 tuổi tăng **hơn 20 điểm trong 30 năm** (1952–1982) trên bài kiểm tra dạng Raven — khoảng **7 điểm mỗi thập kỷ**, gấp đôi mức khoảng 3 điểm mỗi thập kỷ ở Mỹ. Chi tiết này gây bất ngờ, vì Raven vốn được xem là bài ít phụ thuộc văn hóa và học vấn nhất ([Flynn, 1987](https://doi.org/10.1037/0033-2909.101.2.171)).
+**Kết quả.** Ở cả 14 nước, điểm đều tăng, từ 5 đến 25 điểm chỉ trong một thế hệ — và mức tăng thuộc loại lớn nhất xuất hiện ở các bài suy luận trừu tượng như **ma trận Raven**, bài kiểm tra bằng hình ảnh vốn được thiết kế để ít phụ thuộc văn hóa. Ví dụ nổi tiếng nhất: thanh niên Hà Lan 18 tuổi tăng **hơn 20 điểm trong 30 năm** (1952–1982) trên bài kiểm tra dạng Raven — khoảng **7 điểm mỗi thập kỷ**, gấp đôi mức khoảng 3 điểm mỗi thập kỷ ở Mỹ. Chi tiết này gây bất ngờ, vì Raven vốn được thiết kế để ít phụ thuộc văn hóa ([Flynn, 1987](https://doi.org/10.1037/0033-2909.101.2.171)).
 
 ### Pietschnig và Voracek (2015): phân tích tổng hợp gần 4 triệu người
 
@@ -46,22 +46,22 @@ Năm 1984, James R. Flynn — một nhà triết học và khoa học chính tr�
 
 ### Sundet, Barlaug và Torjussen (2004): hiệu ứng Flynn dừng lại ở Na Uy?
 
-**Thiết kế.** Điểm kiểm tra (ngôn ngữ, toán, bài dạng Raven) của nam thanh niên Na Uy trong diện nghĩa vụ quân sự, từ giữa thập niên 1950 đến năm 2002 — đo lường nhất quán bằng cùng một bài kiểm tra suốt gần nửa thế kỷ.
+**Thiết kế.** Điểm ba bài kiểm tra (ngôn ngữ, toán, bài dạng Raven) của nam thanh niên Na Uy trong diện nghĩa vụ quân sự, từ giữa thập niên 1950 đến năm 2002. Bài ngôn ngữ và bài dạng Raven giữ nguyên từ năm 1954; bài toán được đổi từ trả lời tự do sang trắc nghiệm vào giữa thập niên 1990.
 
 **Kết quả.** Điểm tăng mạnh từ giữa thập niên 1950 đến cuối thập niên 1960, sau đó chậm dần và **dừng hẳn từ giữa thập niên 1990** — từ đầu thập niên 1970, gần như toàn bộ mức tăng còn lại chỉ đến từ bài kiểm tra dạng Raven, rồi chính bài này cũng ngừng tăng vào cuối thập niên 1990 ([Sundet và cộng sự, 2004](https://doi.org/10.1016/j.intell.2004.06.004)).
 
 ### Bratsberg và Rogeberg (2018): đảo chiều — và nguyên nhân là môi trường
 
-**Thiết kế.** Phân tích dữ liệu nghĩa vụ quân sự Na Uy, bao gồm điểm IQ của các cặp cha–con và anh em trai qua nhiều thế hệ, tất cả làm cùng một bài kiểm tra trong điều kiện như nhau.
+**Thiết kế.** Phân tích dữ liệu đăng ký hành chính và điểm kiểm tra nhận thức trong nghĩa vụ quân sự của nam giới Na Uy, ba thập niên lứa sinh (1962–1991), so sánh cả giữa các anh em trai trong cùng một gia đình.
 
-**Kết quả.** Điểm tăng ở các lứa sinh đến khoảng giữa thập niên 1970, sau đó **giảm đều ở các lứa sinh tiếp theo** — và mức giảm xuất hiện **ngay cả giữa các anh em trai cùng một nhà**. Điều này loại trừ các giải thích di truyền hay do nhập cư: cả hiệu ứng Flynn lẫn sự đảo chiều của nó đều do **môi trường** gây ra ([Bratsberg và Rogeberg, 2018](https://doi.org/10.1073/pnas.1718793115)).
+**Kết quả.** Điểm tăng ở các lứa sinh đến khoảng giữa thập niên 1970, sau đó **giảm đều ở các lứa sinh tiếp theo** — và mức giảm xuất hiện **ngay cả giữa các anh em trai cùng một nhà**. Điều này loại trừ các giải thích dựa trên khác biệt *giữa* các gia đình, như sinh sản kém ưu thế (dysgenic fertility) hay nhập cư; theo các tác giả, cả hiệu ứng Flynn lẫn sự đảo chiều của nó đều do **môi trường** gây ra ([Bratsberg và Rogeberg, 2018](https://doi.org/10.1073/pnas.1718793115)).
 
-Dấu hiệu tương tự cũng được ghi nhận ở Đan Mạch: điểm của nam thanh niên tăng từ thập niên 1950 đến giữa thập niên 1990, rồi chững lại và bắt đầu giảm vào cuối thập niên 1990 ([Teasdale và Owen, 2005](https://doi.org/10.1016/j.paid.2005.01.029)).
+Dấu hiệu tương tự cũng được ghi nhận ở Đan Mạch: điểm của hơn 500.000 nam thanh niên (kiểm tra từ 1959 đến 2004) đạt đỉnh vào cuối thập niên 1990 rồi giảm vừa phải ([Teasdale và Owen, 2005](https://doi.org/10.1016/j.paid.2005.01.029)).
 
 ## Mức độ chắc chắn
 
 :::vung-chac[điểm kiểm tra IQ tăng khoảng 3 điểm mỗi thập kỷ suốt thế kỷ 20]
-Từ Flynn (1984, 1987) đến hai phân tích tổng hợp độc lập (Trahan và cộng sự, 2014: 2,31 điểm/thập kỷ trên 285 nghiên cứu, 2,93 với các bản Stanford-Binet và Wechsler từ năm 1972; Pietschnig và Voracek, 2015: 2,8 điểm/thập kỷ trên gần 4 triệu người ở 31 quốc gia), đây là một trong những phát hiện được tái lập tốt nhất trong tâm lý học — xuất hiện ở hàng chục quốc gia, trên nhiều loại bài kiểm tra, ở cả nam lẫn nữ, cả trẻ em lẫn người lớn.
+Từ Flynn (1984, 1987) đến hai phân tích tổng hợp độc lập (Trahan và cộng sự, 2014: 2,31 điểm/thập kỷ trên 285 nghiên cứu, 2,93 với các bản Stanford-Binet và Wechsler từ năm 1972; Pietschnig và Voracek, 2015: 2,8 điểm/thập kỷ trên gần 4 triệu người ở 31 quốc gia), đây là một phát hiện được tái lập tốt — xuất hiện ở hàng chục quốc gia, trên nhiều loại bài kiểm tra, ở cả trẻ em lẫn người lớn.
 :::
 
 :::kha-vung[tăng mạnh nhất ở các bài suy luận trừu tượng (Raven, trí thông minh lưu động)]
@@ -73,7 +73,7 @@ Bốn họ giải thích cạnh tranh nhau — giáo dục, dinh dưỡng và s�
 :::
 
 :::tranh-cai[hiệu ứng Flynn có đang đảo chiều không?]
-Dữ liệu quân dịch ở Na Uy, Đan Mạch, Phần Lan và một số nước châu Âu cho thấy điểm chững lại hoặc giảm từ cuối thế kỷ 20, và thiết kế so sánh anh em trong gia đình của Bratsberg và Rogeberg (2018) là bằng chứng mạnh rằng sự giảm này do môi trường. Nhưng phạm vi (chủ yếu một số nước phát triển), nguyên nhân cụ thể, và liệu đây có phải xu hướng lâu dài hay không vẫn đang được tranh luận. Ở nhiều nước đang phát triển, điểm kiểm tra vẫn đang tăng.
+Dữ liệu quân dịch ở Na Uy, Đan Mạch (và theo Pietschnig và Voracek, 2015, cả Phần Lan) cho thấy điểm chững lại hoặc giảm từ cuối thế kỷ 20, và thiết kế so sánh anh em trong gia đình của Bratsberg và Rogeberg (2018) là bằng chứng mạnh rằng sự giảm này do môi trường. Nhưng phạm vi (chủ yếu một số nước phát triển), nguyên nhân cụ thể, và liệu đây có phải xu hướng lâu dài hay không vẫn đang được tranh luận. Ở một số nơi khác, như vùng nông thôn Kenya (xem mục Ở Việt Nam và các nền văn hóa khác), điểm kiểm tra vẫn tăng.
 :::
 
 ## Các lý thuyết giải thích
@@ -82,13 +82,13 @@ Có một nghịch lý: IQ có tính di truyền khá cao *trong cùng một th�
 
 Bốn họ giải thích cụ thể được bàn đến nhiều nhất:
 
-- **Giáo dục.** Số năm đi học tăng mạnh, nội dung học chuyển từ học thuộc lòng sang tư duy phân tích. Một phân tích tổng hợp ước tính mỗi năm đi học thêm giúp tăng 1–5 điểm IQ ([Ritchie và Tucker-Drob, 2018](https://doi.org/10.1177/0956797618774253)). Điểm yếu: các bài gần với kiến thức học ở trường nhất (từ vựng, số học, kiến thức chung) lại tăng điểm *ít* nhất (Neisser, 1997).
+- **Giáo dục.** Trẻ em ngày nay đi học lâu hơn (Neisser, 1997). Một phân tích tổng hợp ước tính mỗi năm đi học thêm giúp tăng 1–5 điểm IQ ([Ritchie và Tucker-Drob, 2018](https://doi.org/10.1177/0956797618774253)). Điểm yếu: các bài gần với kiến thức học ở trường nhất (từ vựng, số học, kiến thức chung) lại tăng điểm *ít* nhất (Neisser, 1997).
 
-- **Dinh dưỡng và sức khỏe.** Trẻ em thế kỷ 20 được nuôi dưỡng tốt hơn, ít bệnh tật hơn, ít phơi nhiễm chì hơn. Pietschnig và Voracek (2015) kết luận các yếu tố gắn với "tốc độ lịch sử sống" — gia đình ít con hơn, dinh dưỡng và y tế tốt hơn — giải thích tốt nhất quỹ đạo chung của hiệu ứng.
+- **Dinh dưỡng và sức khỏe.** Dinh dưỡng, y tế tốt hơn, ít bệnh tật và ít phơi nhiễm chì hơn là những yếu tố đã được đề xuất; ở Na Uy, mức tăng chiều cao tương quan chặt với mức tăng điểm cho đến khi chiều cao ngừng tăng cuối thập niên 1980 (Sundet và cộng sự, 2004). Pietschnig và Voracek (2015) cho rằng các yếu tố gắn với "tốc độ lịch sử sống" — gia đình ít con hơn, dinh dưỡng và y tế tốt hơn — dường như là nguyên nhân chính của quỹ đạo chung của hiệu ứng.
 
-- **Môi trường nhận thức ngày càng đòi hỏi tư duy trừu tượng.** Đây là giải thích mà chính Flynn ưa thích: thế giới hiện đại đòi hỏi con người thường xuyên phân loại thế giới bằng các khái niệm trừu tượng, đúng kiểu tư duy mà bài Raven đo lường — Flynn gọi đó là việc đeo "cặp kính khoa học": không phải não bộ tốt hơn, mà là *thói quen tư duy* đã thay đổi.
+- **Môi trường nhận thức ngày càng đòi hỏi tư duy trừu tượng.** Dickens và Flynn (2001) lập luận rằng công nghiệp hóa, công nghệ và nghề nghiệp ngày càng đòi hỏi nhiều hơn ở nhận thức, và con người tự chọn hay được đặt vào những môi trường đòi hỏi hơn — đúng kiểu tư duy mà bài Raven đo lường. Cách hiểu này nhấn mạnh *thói quen tư duy* thay đổi chứ không phải não bộ "tốt hơn".
 
-- **Quen thuộc với bài kiểm tra.** Người hiện đại làm bài trắc nghiệm từ nhỏ, quen với áp lực thời gian và các dạng câu hỏi "mẹo". Một phần của "tăng điểm" có thể là tăng ở *kỹ năng làm bài*, chứ không hẳn ở năng lực nhận thức.
+- **Quen thuộc với bài kiểm tra.** Người hiện đại làm bài trắc nghiệm từ nhỏ nên một phần của "tăng điểm" có thể là tăng ở *kỹ năng làm bài*. Nhưng người làm lại cùng một bài chỉ tăng khoảng 5–6 điểm, và các giải thích dựa vào học đường lại dự đoán mức tăng lớn nhất ở bài gần chương trình học — trái với dữ liệu — nên giải thích này không đủ (Neisser, 1997).
 
 ## Áp dụng vào đời sống
 
@@ -98,24 +98,24 @@ Vì điểm trung bình tăng khoảng 3 điểm mỗi thập kỷ, bài kiểm 
 
 ### 2. Đừng đồng nhất điểm kiểm tra với "trí thông minh" :nhan[kha-vung]
 
-Mức tăng tập trung ở bài Raven — suy luận trừu tượng với hình ảnh — trong khi trí khôn ngoan, óc sáng tạo, kiến thức thực tế và khả năng xoay xở trong đời sống tăng ít hơn nhiều, hoặc không được bài kiểm tra đo. Người nay "giỏi làm bài Raven hơn xưa" là kết luận an toàn; "người nay thông minh hơn xưa theo mọi nghĩa" thì không.
+Mức tăng lớn nhất là ở các bài suy luận trừu tượng như Raven, còn các bài gần với kiến thức học ở trường tăng ít nhất (Neisser, 1997). Flynn (1987) đề nghị gọi điều bài IQ đo là "khả năng giải quyết vấn đề trừu tượng", vì ta chưa biết nó phản ánh trí thông minh trong đời sống thực đến đâu. Người nay "giỏi làm bài Raven hơn xưa" là kết luận an toàn; "người nay thông minh hơn xưa theo mọi nghĩa" thì không.
 
 ### 3. Đọc tin "giới trẻ ngày càng kém thông minh" một cách tỉnh táo :nhan[kha-vung]
 
-Các tít báo về "đảo chiều Flynn" thường dựa trên dữ liệu của một vài nước Bắc Âu, trên nam thanh niên trong diện nghĩa vụ, với mức giảm chỉ vài điểm — nhỏ hơn nhiều so với mức tăng hàng chục điểm của thế kỷ 20. Hơn nữa, nguyên nhân là môi trường, tức là *có thể thay đổi được*, chứ không phải sự suy thoái không thể đảo ngược của loài người.
+Các tít báo về "đảo chiều Flynn" thường dựa trên dữ liệu của một vài nước Bắc Âu, trên nam thanh niên trong diện nghĩa vụ, với mức giảm chỉ vài điểm — nhỏ hơn nhiều so với mức tăng hàng chục điểm của thế kỷ 20. Hơn nữa, theo Bratsberg và Rogeberg (2018), nguyên nhân là môi trường; từ đó có thể suy ra đây không phải sự suy thoái di truyền không thể đảo ngược của loài người.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
 Hiệu ứng Flynn không phải chuyện riêng của phương Tây. Ví dụ, ở một vùng nông thôn Kenya, điểm của trẻ em tăng rõ chỉ trong 14 năm (1984–1998), mạnh nhất ở ma trận Raven ([Daley và cộng sự, 2003](https://doi.org/10.1111/1467-9280.02434)).
 
-**Về Việt Nam: chúng tôi chưa tìm thấy nghiên cứu nào đo lường hiệu ứng Flynn trên người Việt** — không có dữ liệu công bố về xu hướng điểm kiểm tra nhận thức qua các thế hệ. Với tốc độ mở rộng giáo dục và cải thiện dinh dưỡng trong vài thập niên qua, ta *có thể dự đoán* một hiệu ứng Flynn đang diễn ra — nhưng đó mới chỉ là dự đoán. Bất kỳ khẳng định nào về "người Việt nay thông minh hơn/kém hơn xưa" hiện tại đều thiếu cơ sở dữ liệu.
+**Về Việt Nam: tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào đo lường hiệu ứng Flynn trên người Việt** — không thấy dữ liệu công bố về xu hướng điểm kiểm tra nhận thức qua các thế hệ. Nếu giáo dục và dinh dưỡng cải thiện, mô hình của các nghiên cứu ở nơi khác gợi ý điểm có thể tăng — nhưng đó mới chỉ là dự đoán. Bất kỳ khẳng định nào về "người Việt nay thông minh hơn/kém hơn xưa" hiện tại đều thiếu cơ sở dữ liệu.
 
 ## Ngộ nhận liên quan
 
-- **"Điểm IQ tăng nghĩa là gene của loài người tốt lên."** Sai. Thay đổi di truyền cần hàng nghìn năm; hiệu ứng Flynn diễn ra trong vài thập niên. Các bằng chứng — đặc biệt là thiết kế so sánh anh em trong gia đình của Bratsberg và Rogeberg (2018) — đều chỉ về môi trường.
-- **"Hiệu ứng Flynn chỉ là do người ta quen với bài kiểm tra."** Đây là một giả thuyết hợp lệ nhưng chưa được chứng minh là giải thích duy nhất. Mức tăng quá lớn (hơn 20 điểm ở Hà Lan trên bài dạng Raven) và tương quan với các cải thiện về giáo dục, chiều cao, sức khỏe cho thấy có điều gì đó thực chất đã thay đổi, không chỉ là kỹ năng làm bài.
-- **"Trẻ con bây giờ làm bài Raven giỏi hơn thì chắc chắn cũng giỏi mọi thứ khác."** Sai. Tăng điểm tập trung ở tư duy trừu tượng dạng bài kiểm tra; các nghiên cứu còn tranh luận hiệu ứng này có "ăn" vào yếu tố trí thông minh chung (g) đến mức nào.
-- **"Hiệu ứng Flynn đã kết thúc / đảo chiều trên toàn thế giới."** Chưa có cơ sở để nói vậy. Dữ liệu chững lại/giảm đến từ một số nước phát triển (chủ yếu Bắc Âu); ở nhiều nơi khác, điểm vẫn đang tăng — Pietschnig và Voracek (2015) ghi nhận mức tăng *giảm dần* ở cấp toàn cầu, tức là "chậm lại", chưa phải "đảo chiều".
+- **"Điểm IQ tăng nghĩa là gene của loài người tốt lên."** Sai. Vốn gen của cả quần thể khó thay đổi đáng kể trong vài thập niên, còn hiệu ứng Flynn diễn ra đúng trong khoảng thời gian ấy (Neisser, 1997: mức tăng "quá nhanh để do thay đổi di truyền"). Các bằng chứng — đặc biệt là thiết kế so sánh anh em trong gia đình của Bratsberg và Rogeberg (2018) — đều chỉ về môi trường.
+- **"Hiệu ứng Flynn chỉ là do người ta quen với bài kiểm tra."** Đây là một giả thuyết hợp lệ nhưng chưa được chứng minh là giải thích duy nhất. Mức tăng quá lớn (hơn 20 điểm ở Hà Lan trên bài dạng Raven) và việc làm lại cùng một bài chỉ tăng khoảng 5–6 điểm (Neisser, 1997), cùng mức tăng chiều cao tương quan với mức tăng điểm ở Na Uy (Sundet và cộng sự, 2004), gợi ý rằng không chỉ là kỹ năng làm bài.
+- **"Trẻ con bây giờ làm bài Raven giỏi hơn thì chắc chắn cũng giỏi mọi thứ khác."** Sai. Tăng điểm tập trung ở tư duy trừu tượng dạng bài kiểm tra; phân tích tổng hợp của Pietschnig và Voracek (2015) thấy mức tăng dường như không nằm ở yếu tố trí thông minh chung (g).
+- **"Hiệu ứng Flynn đã kết thúc / đảo chiều trên toàn thế giới."** Chưa có cơ sở để nói vậy. Dữ liệu chững lại/giảm đến từ một số nước phát triển (chủ yếu Bắc Âu); ở một số nơi khác, điểm vẫn tăng — Pietschnig và Voracek (2015) ghi nhận mức tăng *giảm dần* ở cấp toàn cầu, tức là "chậm lại", chưa phải "đảo chiều".
 
 ### Đọc thêm
 
@@ -138,12 +138,12 @@ Hiệu ứng Flynn không phải chuyện riêng của phương Tây. Ví dụ, 
 + Vì tính di truyền đo sự khác biệt *giữa các cá nhân trong cùng một thế hệ*, còn hiệu ứng Flynn là thay đổi *trung bình của cả quần thể giữa các thế hệ* — và mô hình bội số xã hội (Dickens & Flynn, 2001) cho thấy thay đổi môi trường nhỏ có thể được khuếch đại thành thay đổi lớn ở cấp quần thể.
 > "Nghịch lý Flynn": gene giải thích vì sao bạn khác với người ngồi cạnh bạn, nhưng không giải thích được vì sao cả thế hệ bạn làm bài tốt hơn thế hệ ông bà.
 ? Phát hiện quan trọng nhất trong thiết kế nghiên cứu của Bratsberg và Rogeberg (2018) là gì?
-+ Mức giảm điểm xuất hiện ngay cả giữa các anh em trai cùng một gia đình, loại trừ các giải thích di truyền và nhập cư — cho thấy nguyên nhân là môi trường.
++ Mức giảm điểm xuất hiện ngay cả giữa các anh em trai cùng một gia đình, loại trừ các giải thích dựa trên khác biệt giữa các gia đình (sinh sản kém ưu thế, nhập cư) — cho thấy nguyên nhân là môi trường.
 - Họ chứng minh hiệu ứng Flynn chưa bao giờ tồn tại.
 > So sánh trong gia đình là "át chủ bài" của nghiên cứu này: anh em cùng nhà chia sẻ phần lớn gene và hoàn cảnh gia đình.
 ? Vì sao "điểm kiểm tra tăng" không đồng nghĩa "con người thông minh hơn theo mọi nghĩa"?
 - Vì các bài kiểm tra IQ không đo được gì cả.
-+ Vì mức tăng tập trung ở kỹ năng suy luận trừu tượng dạng bài kiểm tra (Raven), trong khi trí khôn ngoan, óc sáng tạo và khả năng xoay xở trong đời sống là những khía cạnh khác mà bài kiểm tra đo rất hạn chế.
++ Vì mức tăng lớn nhất ở kỹ năng suy luận trừu tượng dạng bài kiểm tra (Raven), còn bài gần kiến thức học ở trường tăng ít nhất; Flynn đề nghị gọi điều bài IQ đo là "khả năng giải quyết vấn đề trừu tượng", vì chưa rõ nó phản ánh trí thông minh đời thực đến đâu.
 > Nói "người nay giỏi làm bài Raven hơn" là chính xác; nói "người nay thông minh hơn theo mọi nghĩa" là vượt quá dữ liệu.
 ```
 

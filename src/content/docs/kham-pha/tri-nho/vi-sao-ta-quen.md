@@ -8,25 +8,25 @@ in_duoc: true
 
 ## Tự trải nghiệm
 
-Năm 1879, một nhà nghiên cứu người Đức tên Hermann Ebbinghaus tự học thuộc các danh sách âm tiết vô nghĩa như "DAX", "BOK", "ZUF", rồi đo xem mình quên nhanh đến đâu. Hãy đoán:
+Năm 1879, một nhà nghiên cứu người Đức tên Hermann Ebbinghaus tự học thuộc các danh sách âm tiết vô nghĩa (ví dụ minh họa của chúng tôi: "DAX", "BOK", "ZUF"), rồi đo xem mình quên nhanh đến đâu. Hãy đoán:
 
 > Sau **20 phút**, sau **1 ngày** và sau **1 tháng**, lượng ông "còn giữ được" là bao nhiêu? Ông quên đều đặn theo thời gian, hay quên nhanh lúc đầu rồi chậm dần?
 
 :::thu-gon[Xem đáp án]
-Quên **nhanh lúc đầu, rồi chậm dần**. Phần lớn sự sụt giảm xảy ra trong vài giờ đầu; sau đó, đường cong gần như nằm ngang. Con số cụ thể nằm ở hình bên dưới. Nhưng hãy đọc kỹ cách ông đo, vì nó không phải "phần trăm còn nhớ" như nhiều trang mạng vẫn viết.
+Quên **nhanh lúc đầu, rồi chậm dần**. Phần lớn sự sụt giảm xảy ra trong vài giờ đầu; sau đó, đường cong thoải dần. Con số cụ thể nằm ở hình bên dưới. Nhưng hãy đọc kỹ cách ông đo, vì nó không phải "phần trăm còn nhớ" như một số tài liệu vẫn viết.
 :::
 
 ## Điều gì đang xảy ra?
 
-Quên không phải là lỗi của trí nhớ. Nó là một phần của cách trí nhớ hoạt động. Mỗi ngày ta tiếp nhận vô số chi tiết: màu áo người ngồi cạnh trên xe buýt, giá một món đồ vừa lướt qua. Nếu cái gì cũng nhớ mãi, việc tìm lại điều quan trọng sẽ khó hơn nhiều.
+Quên không hẳn là lỗi của trí nhớ. Một bài tổng quan cho rằng quên còn có những chức năng có ích, chẳng hạn giúp cập nhật kiến thức và điều tiết cảm xúc ([Nørby, 2015](https://doi.org/10.1177/1745691615596787)). Mỗi ngày ta tiếp nhận vô số chi tiết: màu áo người ngồi cạnh trên xe buýt, giá một món đồ vừa lướt qua.
 
-Điều thú vị là quên có **hình dạng** khá đều đặn: dốc ở đầu, thoải về sau. Ebbinghaus là người đầu tiên đo được hình dạng ấy.
+Điều thú vị là quên có **hình dạng** khá đều đặn: dốc ở đầu, thoải về sau. Ebbinghaus được xem là người đầu tiên làm một loạt thí nghiệm chặt chẽ về hình dạng của việc quên ([Murre và Dros, 2015](https://doi.org/10.1371/journal.pone.0120644)).
 
 ## Nghiên cứu then chốt
 
 ### Ebbinghaus (1885): người làm thí nghiệm trên chính mình
 
-**Thiết kế.** Ebbinghaus là người tham gia duy nhất. Ông dùng âm tiết vô nghĩa để tránh việc ý nghĩa của từ giúp ông nhớ. Mỗi lần thử, ông học 8 danh sách, mỗi danh sách 13 âm tiết, đến khi đọc thuộc lòng không sai hai lần liên tiếp. Sau một khoảng thời gian, ông học lại các danh sách đó và đo thời gian.
+**Thiết kế.** Ebbinghaus là người tham gia duy nhất. Ông dùng âm tiết vô nghĩa để tránh việc ý nghĩa của từ giúp ông nhớ. Trong phần lớn các lần thử, ông học 8 danh sách, mỗi danh sách 13 âm tiết, đến khi đọc thuộc lòng không sai hai lần liên tiếp. Sau một khoảng thời gian, ông học lại các danh sách đó và đo thời gian.
 
 **Cách đo: "tiết kiệm".** Nếu lần đầu mất 1.000 giây mà lần sau chỉ mất 600 giây, ông đã *tiết kiệm* được 40%. Tiết kiệm càng nhiều nghĩa là dấu vết trí nhớ còn lại càng nhiều, kể cả khi ông không thể tự nhớ ra một âm tiết nào. Đây **không phải** tỉ lệ phần trăm âm tiết còn nhớ.
 
@@ -47,24 +47,24 @@ Hình dạng chung của đường cong quên đã được tìm thấy lại nh
 :::
 
 :::tranh-cai[“bước nhảy” ở mốc 24 giờ và vai trò của giấc ngủ]
-Murre và Dros cho rằng nhiều khả năng có một bước nhảy nhỏ ở mốc 1 ngày, nhưng mức cải thiện khi đưa nó vào mô hình chỉ ở mức xu hướng, và mô hình khớp với dữ liệu của chính Dros không cho thấy bước nhảy. Vai trò của giấc ngủ là một giả thuyết hợp lý, nhưng không được kiểm tra trực tiếp trong nghiên cứu này.
+Murre và Dros cho rằng nhiều khả năng có một bước nhảy ở mốc 1 ngày, nhưng mức cải thiện khi đưa nó vào mô hình chỉ ở mức xu hướng, và mô hình khớp với dữ liệu của chính Dros không cho thấy bước nhảy. Vai trò của giấc ngủ là một giả thuyết hợp lý, nhưng không được kiểm tra trực tiếp trong nghiên cứu này.
 :::
 
 ## Các lý thuyết giải thích
 
-Vì sao ta quên? Các nhà tâm lý học thường bàn đến ba khả năng, và chúng có thể cùng đúng một phần:
+Vì sao ta quên? Giáo trình thường nêu ba hướng giải thích (xem [OpenStax Psychology 2e, mục 8.3](https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory)):
 
 - **Phai mờ:** dấu vết trí nhớ yếu dần theo thời gian nếu không được dùng đến.
 - **Nhiễu:** những gì học trước hoặc sau "chen" vào nhau. Ví dụ, mật khẩu mới làm bạn khó nhớ mật khẩu cũ, và ngược lại.
-- **Không truy xuất được:** thông tin vẫn còn đó nhưng thiếu "manh mối" để tìm ra. Cảm giác một từ "ở ngay đầu lưỡi" là ví dụ quen thuộc. Phương pháp "tiết kiệm" của Ebbinghaus cho thấy điều này: ngay cả khi không nhớ ra được gì, ông vẫn học lại nhanh hơn.
+- **Không truy xuất được:** thông tin vẫn còn đó nhưng ta không lấy ra được. Cảm giác một từ "ở ngay đầu lưỡi" là ví dụ quen thuộc. Phương pháp "tiết kiệm" của Ebbinghaus cho thấy dấu vết có thể còn lại sau khi đã quên: học lại vẫn nhanh hơn học lần đầu.
 
 ## Áp dụng vào đời sống
 
-Quên là điều không tránh được, nhưng có hai cách làm chậm nó lại, được ủng hộ bởi bằng chứng mạnh nhất trong tâm lý học học tập.
+Quên là điều không tránh được, nhưng có hai cách làm chậm nó lại, được một tổng quan về 10 kỹ thuật học xếp vào nhóm "hiệu quả cao" ([Dunlosky và cộng sự, 2013](https://doi.org/10.1177/1529100612453266)).
 
 ### 1. Rải việc ôn tập ra nhiều lần :nhan[vung-chac]
 
-Với cùng tổng thời gian, ôn nhiều lần cách quãng giúp nhớ lâu hơn ôn dồn một lần. Phân tích tổng hợp năm 2006 gộp 839 phép so sánh từ 317 thí nghiệm ([Cepeda và cộng sự, 2006](https://doi.org/10.1037/0033-2909.132.3.354)).
+Với cùng số lần học, ôn nhiều lần cách quãng giúp nhớ lâu hơn ôn dồn một lần. Phân tích tổng hợp năm 2006 gộp 839 phép so sánh từ 317 thí nghiệm ([Cepeda và cộng sự, 2006](https://doi.org/10.1037/0033-2909.132.3.354)).
 
 Khoảng cách bao nhiêu là tốt? Trong một nghiên cứu trực tuyến với hơn 1.350 người, khoảng cách tốt nhất giữa hai lần học vào khoảng 20–40% thời gian bạn cần nhớ nếu bài kiểm tra ở sau 1 tuần, và giảm xuống khoảng 5–10% nếu cần nhớ đến 1 năm ([Cepeda và cộng sự, 2008](https://doi.org/10.1111/j.1467-9280.2008.02209.x)). Nói đơn giản: **muốn nhớ càng lâu, khoảng cách giữa các lần ôn càng nên dài**.
 
@@ -78,21 +78,21 @@ Cố nhớ lại một điều, kể cả khi nhớ không ra, giúp củng cố
 | 2 ngày | 54% | **68%** |
 | 1 tuần | 42% | **56%** |
 
-Để ý hàng đầu tiên: ngay sau khi học, đọc lại cho cảm giác (và kết quả) tốt hơn. Lợi ích của tự kiểm tra chỉ hiện ra về sau. Đó là lý do nhiều người vẫn chuộng đọc lại: nó *cảm thấy* hiệu quả. Phân tích tổng hợp năm 2014 gộp 159 hiệu ứng cho thấy tự kiểm tra tốt hơn đọc lại với độ lớn trung bình g = 0,50 ([Rowland, 2014](https://doi.org/10.1037/a0037559)), tức ở mức trung bình theo [cách đọc độ lớn hiệu ứng](/psyche/bang-chung/do-lon-hieu-ung/).
+Để ý hàng đầu tiên: ngay sau khi học, đọc lại cho kết quả tốt hơn. Lợi ích của tự kiểm tra chỉ hiện ra về sau. Trong thí nghiệm thứ hai của cùng bài báo, nhóm đọc lại còn tin rằng mình sẽ nhớ tốt hơn sau 1 tuần, dù kết quả thực tế ngược lại. Đó có thể là một lý do nhiều người vẫn chuộng đọc lại: nó *cảm thấy* hiệu quả. Phân tích tổng hợp năm 2014 gộp 159 hiệu ứng cho thấy tự kiểm tra tốt hơn đọc lại với độ lớn trung bình g = 0,50 ([Rowland, 2014](https://doi.org/10.1037/a0037559)), tức ở mức trung bình theo [cách đọc độ lớn hiệu ứng](/psyche/bang-chung/do-lon-hieu-ung/).
 
 Bài tổng quan năm 2013 đánh giá 10 kỹ thuật học phổ biến và xếp hai kỹ thuật trên vào nhóm "hiệu quả cao"; đọc lại và tô đậm được xếp vào nhóm "hiệu quả thấp" ([Dunlosky và cộng sự, 2013](https://doi.org/10.1177/1529100612453266)).
 
-**Giới hạn.** Phần lớn nghiên cứu dùng tài liệu dạng sự kiện, từ vựng, đoạn văn ngắn. Với kỹ năng phức tạp (chơi đàn, giải toán khó), bằng chứng ít hơn. Và các kỹ thuật này giúp *nhớ*, chứ không tự động giúp *hiểu*.
+**Giới hạn.** Phân tích tổng hợp của Cepeda và cộng sự (2006) chỉ gồm các nhiệm vụ nhớ bằng lời (từ, sự kiện, đoạn văn), nên bài này chưa có bằng chứng cho kỹ năng phức tạp (chơi đàn, giải toán khó). Và các thí nghiệm kể trên đo việc *nhớ*, không đo việc *hiểu*.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Ebbinghaus làm thí nghiệm ở Đức, Murre và Dros ở Hà Lan, và phần lớn nghiên cứu về ôn tập ngắt quãng và tự kiểm tra được làm ở Mỹ và châu Âu. Chúng tôi chưa tìm thấy nghiên cứu tương tự trên người Việt.
+Ebbinghaus làm thí nghiệm ở Đức, Murre và Dros ở Hà Lan, và Roediger và Karpicke ở một trường đại học Mỹ. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu tương tự trên người Việt.
 
 Một gợi ý từ dự án tái lập Many Labs 2: khi làm lại 28 hiệu ứng tâm lý học ở 36 quốc gia và vùng lãnh thổ, mức độ khác biệt giữa các kết quả phụ thuộc vào bản thân hiệu ứng nhiều hơn là vào nơi thực hiện ([Klein và cộng sự, 2018](https://doi.org/10.1177/2515245918810225)). Dự án này không kiểm tra đường cong quên, nên đây chỉ là gợi ý, chưa phải bằng chứng trực tiếp.
 
 ## Ngộ nhận liên quan
 
-- **"Đọc lại nhiều lần là cách ôn bài tốt nhất."** Đọc lại tạo cảm giác quen thuộc, nhưng tự kiểm tra hiệu quả hơn hẳn về lâu dài.
+- **"Đọc lại nhiều lần là cách ôn bài tốt nhất."** Đọc lại tạo cảm giác quen thuộc, nhưng tự kiểm tra hiệu quả hơn về lâu dài.
 - **"Hay quên là dấu hiệu trí nhớ kém."** Ai cũng quên theo một hình dạng giống nhau: nhanh lúc đầu, chậm dần về sau. Quên những chi tiết không dùng đến là bình thường. Nếu bạn lo lắng về việc quên bất thường, hãy trao đổi với bác sĩ.
 - **"Ebbinghaus cho thấy sau một ngày ta quên 70% những gì đã học."** Con số của Ebbinghaus đo thời gian tiết kiệm khi học lại âm tiết vô nghĩa, không phải tỉ lệ kiến thức còn nhớ.
 
@@ -140,5 +140,7 @@ Một gợi ý từ dự án tái lập Many Labs 2: khi làm lại 28 hiệu �
 - Ebbinghaus, H. (1885/1913). *Memory: A contribution to experimental psychology* (bản dịch tiếng Anh của Ruger & Bussenius). Chương 7. <https://psychclassics.yorku.ca/Ebbinghaus/memory7.htm>
 - Klein, R. A., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. *Advances in Methods and Practices in Psychological Science*, 1(4), 443–490. <https://doi.org/10.1177/2515245918810225>
 - Murre, J. M. J., & Dros, J. (2015). Replication and analysis of Ebbinghaus' forgetting curve. *PLOS ONE*, 10(7), e0120644. <https://doi.org/10.1371/journal.pone.0120644>
+- Nørby, S. (2015). Why forget? On the adaptive value of memory loss. *Perspectives on Psychological Science*, 10(5), 551–578. <https://doi.org/10.1177/1745691615596787>
+- OpenStax. (2020). *Psychology 2e*, mục 8.3 Problems with Memory. <https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory>
 - Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science*, 17(3), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>
 - Rowland, C. A. (2014). The effect of testing versus restudy on retention: A meta-analytic review of the testing effect. *Psychological Bulletin*, 140(6), 1432–1463. <https://doi.org/10.1037/a0037559>

@@ -13,16 +13,16 @@ Bạn là người học bằng mắt, bằng tai hay bằng tay? Nhiều ngư�
 Giờ hãy thử nghĩ: bạn muốn học **đường đi từ nhà đến một quán ăn mới**. Bạn sẽ chọn nghe ai đó kể đường, hay nhìn bản đồ? Còn muốn học **phát âm một từ tiếng Anh**, bạn sẽ nhìn chữ hay nghe người bản ngữ đọc?
 
 :::thu-gon[Bạn nhận ra điều gì?]
-Với hầu hết mọi người, cách học tốt nhất phụ thuộc vào **nội dung cần học** nhiều hơn là vào "kiểu người". Bản đồ thì nên nhìn, phát âm thì nên nghe. Đây là một gợi ý quan trọng cho phần dưới đây.
+Rất có thể cách học hợp lý phụ thuộc vào **nội dung cần học** nhiều hơn là vào "kiểu người": bản đồ thì nên nhìn, phát âm thì nên nghe. Đó là một gợi ý để suy nghĩ cho phần dưới đây, không phải kết quả của một nghiên cứu cụ thể.
 :::
 
 ## Điều gì đang xảy ra?
 
-Ý tưởng phong cách học có nhiều phiên bản. Một tổng quan năm 2004 đếm được **71 mô hình** khác nhau (Coffield và cộng sự, 2004). Phổ biến nhất là chia người học thành ba nhóm: nhìn, nghe và vận động.
+Ý tưởng phong cách học có nhiều phiên bản. Một tổng quan năm 2004 đếm được **71 mô hình** khác nhau (Coffield và cộng sự, 2004). Một cách chia rất quen thuộc là ba nhóm: nhìn, nghe và vận động (cách chia VARK thêm nhóm đọc–viết).
 
 Cần tách hai khẳng định rất khác nhau:
 
-1. **Người ta có sở thích học khác nhau.** Điều này đúng, và chẳng ai phản đối: có người thích đọc, có người thích nghe giảng.
+1. **Người ta có sở thích học khác nhau.** Điều này đúng: có người thích đọc, có người thích nghe giảng. Pashler và cộng sự (2008) thấy nhiều bằng chứng rằng người ta nói ra các sở thích như vậy khi được hỏi.
 2. **Dạy khớp với phong cách của từng người thì họ học tốt hơn.** Các nhà nghiên cứu gọi đây là *giả thuyết khớp* (*meshing hypothesis*). Đây mới là khẳng định quan trọng, vì nó dẫn đến việc phân loại học sinh và thiết kế bài giảng riêng cho từng nhóm.
 
 ## Nghiên cứu then chốt
@@ -45,17 +45,17 @@ Kết luận của họ: rất ít nghiên cứu dùng thiết kế này, và tr
 
 ### Nhưng gần như ai cũng tin
 
-- Trong một khảo sát năm 2012, **93%** giáo viên ở Anh và **96%** ở Hà Lan đồng ý rằng học sinh học tốt hơn khi được dạy theo phong cách học của mình ([Dekker và cộng sự, 2012](https://doi.org/10.3389/fpsyg.2012.00429)).
+- Trong một khảo sát đăng năm 2012 với 242 giáo viên quan tâm đến khoa học não (137 người ở vùng Dorset, Anh; 105 người ở vùng quanh Amsterdam, Hà Lan), **93%** giáo viên Anh và **96%** giáo viên Hà Lan đồng ý rằng học sinh học tốt hơn khi được dạy theo phong cách học của mình ([Dekker và cộng sự, 2012](https://doi.org/10.3389/fpsyg.2012.00429)).
 - Một tổng quan năm 2020 gộp 37 nghiên cứu với hơn 15.000 nhà giáo dục ở 18 quốc gia: trung bình **89%** tin vào ý tưởng này, và không thấy dấu hiệu niềm tin giảm đi theo thời gian ([Newton và Salvi, 2020](https://doi.org/10.3389/feduc.2020.602451)).
 
 ## Mức độ chắc chắn
 
 :::bac-bo[dạy khớp với phong cách học giúp học tốt hơn]
-Các nghiên cứu có thiết kế phù hợp gần như không tìm thấy lợi ích, và các tổng hợp gần nhất cho hiệu ứng rất nhỏ hoặc bằng 0. Nói chính xác: nhiều phiên bản của ý tưởng này chưa bao giờ được kiểm tra đúng cách, nên khoa học không "chứng minh nó sai" theo nghĩa tuyệt đối. Nhưng sau hơn 15 năm tìm kiếm mà không thấy bằng chứng, việc dùng nó để thiết kế việc dạy và học là không có cơ sở.
+Các nghiên cứu có thiết kế phù hợp gần như không tìm thấy lợi ích, và các tổng hợp gần nhất cho hiệu ứng từ nhỏ đến gần bằng 0 (các tác giả của phân tích tổng hợp 2024 cũng không khuyên áp dụng rộng rãi). Nói chính xác: nhiều phiên bản của ý tưởng này chưa bao giờ được kiểm tra đúng cách, nên khoa học không "chứng minh nó sai" theo nghĩa tuyệt đối. Nhưng sau hơn 15 năm tìm kiếm mà không thấy bằng chứng, việc dùng nó để thiết kế việc dạy và học là không có cơ sở.
 :::
 
 :::vung-chac[người ta có sở thích học khác nhau]
-Sở thích là có thật. Chỉ là học theo cách mình thích không làm mình học tốt hơn.
+Sở thích là có thật. Chỉ là các nghiên cứu cho đến nay gần như không thấy học theo cách mình thích làm mình học tốt hơn.
 :::
 
 ## Các lý thuyết giải thích
@@ -63,21 +63,21 @@ Sở thích là có thật. Chỉ là học theo cách mình thích không làm 
 Vì sao một ý tưởng thiếu bằng chứng lại phổ biến đến vậy? Một vài khả năng:
 
 - **Nó chứa một phần đúng.** Mọi người thật sự khác nhau, và sở thích học là có thật.
-- **Nó dễ chịu.** Ý tưởng "ai cũng giỏi theo cách riêng" mang tính tôn trọng và lạc quan.
-- **Cảm giác dễ dàng bị nhầm với hiệu quả.** Học theo cách mình thích *cảm thấy* trôi chảy hơn, nhưng như bài [Vì sao ta quên?](/psyche/kham-pha/tri-nho/vi-sao-ta-quen/) cho thấy, cảm giác dễ dàng lúc học thường không phản ánh hiệu quả về lâu dài.
+- **Nó hợp với mong muốn cá nhân hóa việc dạy.** Hattie và O'Leary (2025) kể sự hấp dẫn của việc cá nhân hóa trong số các lý do ý tưởng này vẫn phổ biến.
+- **Ta nhớ những lần cách ưa thích có vẻ hiệu quả.** Hattie và O'Leary (2025) cho rằng ta dễ nhớ những lần một cách học hợp với mình và bỏ qua bằng chứng ngược. Và như bài [Học dồn có nhớ lâu?](/psyche/kham-pha/tri-nho/duong-cong-quen/) cho thấy, cảm giác học trôi chảy có thể không phản ánh hiệu quả về lâu dài.
 
 ## Áp dụng vào đời sống
 
 Thay vì hỏi "mình thuộc phong cách nào", hãy hỏi **"nội dung này nên học bằng cách nào"**:
 
-- Bản đồ, sơ đồ, hình học: học bằng hình. Phát âm, âm nhạc: học bằng tai. Kỹ năng vận động: học bằng cách làm. Điều này đúng với **mọi người**.
-- Dùng hai kỹ thuật có bằng chứng vững chắc cho mọi người: [ôn tập rải ra nhiều lần và tự kiểm tra](/psyche/kham-pha/tri-nho/vi-sao-ta-quen/#ap-dung-vao-doi-song).
+- Chọn cách học theo nội dung và mục tiêu: học đường đi thì nhìn bản đồ, học phát âm thì nghe, học kỹ năng vận động thì làm. Hattie và O'Leary (2025) khuyên dạy người học chọn và dùng linh hoạt các chiến lược học hợp với độ phức tạp của nhiệm vụ và mục tiêu học. Các ví dụ cụ thể ở đây là suy luận của chúng tôi, chưa phải phát hiện được kiểm riêng.
+- Dùng hai kỹ thuật có bằng chứng vững chắc: [ôn tập rải ra nhiều lần và tự kiểm tra](/psyche/kham-pha/tri-nho/duong-cong-quen/#ap-dung-vao-doi-song).
 
-**Giới hạn.** Kết luận ở đây nói về người học nói chung. Người có khiếm khuyết về giác quan hoặc khó khăn học tập cụ thể (ví dụ khó đọc) cần những điều chỉnh riêng, đó là chuyện khác với "phong cách học".
+**Giới hạn.** Kết luận ở đây nói về việc dạy theo "phong cách học" cho người học nói chung. Trang này không bàn về nhu cầu hỗ trợ riêng của người có khiếm khuyết về giác quan hay khó khăn học tập cụ thể; nếu bạn hay người thân gặp những khó khăn ấy, hãy trao đổi với giáo viên hoặc chuyên gia.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Chúng tôi chưa tìm thấy khảo sát có công bố về niềm tin vào phong cách học ở giáo viên Việt Nam. Tổng quan năm 2020 cho thấy niềm tin này phổ biến ở cả 18 quốc gia được khảo sát, nên có thể nó cũng phổ biến ở Việt Nam, nhưng đó chỉ là phỏng đoán.
+Tính đến 11/2026, chúng tôi chưa tìm thấy khảo sát có công bố về niềm tin vào phong cách học ở giáo viên Việt Nam. Tổng quan năm 2020 gộp các khảo sát từ 18 quốc gia và thấy niềm tin này phổ biến, nên có thể nó cũng phổ biến ở Việt Nam, nhưng đó chỉ là phỏng đoán.
 
 ## Ngộ nhận liên quan
 

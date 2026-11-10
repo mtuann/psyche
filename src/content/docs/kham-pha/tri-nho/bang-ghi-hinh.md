@@ -1,6 +1,6 @@
 ---
 title: Trí nhớ có giống cuốn băng ghi hình?
-description: Thí nghiệm Loftus và Palmer (1974) cho thấy chỉ một động từ trong câu hỏi cũng làm thay đổi ký ức của nhân chứng.
+description: Thí nghiệm Loftus và Palmer (1974) cho thấy chỉ một động từ trong câu hỏi cũng làm thay đổi điều nhân chứng ước lượng và có thể cả điều họ nhớ.
 in_duoc: true
 ---
 
@@ -20,7 +20,7 @@ Câu hỏi đã ngầm cho rằng bữa tối có canh, và canh thì mặn. N�
 
 Nhiều người hình dung trí nhớ như một cuốn băng: sự kiện được ghi lại nguyên vẹn, ký ức có thể mờ đi nhưng không bị sửa. Trong một khảo sát đại diện ở Mỹ (làm năm 2009, công bố năm 2011), **63%** người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim ([Simons và Chabris, 2011](https://doi.org/10.1371/journal.pone.0022757)).
 
-Bằng chứng tâm lý học cho một hình ảnh khác: mỗi lần nhớ lại, ta **dựng lại** sự kiện từ các mảnh: một phần từ những gì thật sự đã thấy, một phần từ hiểu biết chung, từ điều người khác kể, và từ chính câu hỏi khiến ta phải nhớ. Phần lớn thời gian, việc dựng lại này đủ chính xác. Nhưng nó có thể bị dẫn dắt.
+Bằng chứng tâm lý học cho một hình ảnh khác: khi nhớ lại, ta thường **dựng lại** sự kiện từ các mảnh: một phần từ những gì thật sự đã thấy, một phần từ thông tin đến sau sự kiện, kể cả điều người khác kể và chính câu hỏi khiến ta phải nhớ. Việc dựng lại này có thể bị dẫn dắt.
 
 ## Nghiên cứu then chốt
 
@@ -40,7 +40,7 @@ Cùng một đoạn phim, chỉ đổi một từ, ước lượng chênh nhau k
 ::hinh{ten="loftus-verbs"}
 
 
-**Thí nghiệm 2.** Nhưng có thể người tham gia chỉ "chiều theo" từ ngữ của câu hỏi, còn ký ức thì không đổi? Để kiểm tra, 150 sinh viên khác xem một đoạn phim tai nạn. 50 người được hỏi với từ "đâm sầm", 50 người với từ "tông", 50 người không được hỏi về tốc độ. **Một tuần sau**, tất cả được hỏi: *"Bạn có thấy kính vỡ không?"* Trong phim **không có kính vỡ**.
+**Thí nghiệm 2.** Nhưng có thể người tham gia chỉ "chiều theo" từ ngữ của câu hỏi, còn ký ức thì không đổi? Để kiểm tra, 150 sinh viên xem một đoạn phim tai nạn. 50 người được hỏi với từ "đâm sầm", 50 người với từ "tông", 50 người không được hỏi về tốc độ. **Một tuần sau**, tất cả được hỏi: *"Bạn có thấy kính vỡ không?"* Trong phim **không có kính vỡ**.
 
 | Nhóm | Trả lời "Có" |
 |---|---|
@@ -48,7 +48,7 @@ Cùng một đoạn phim, chỉ đổi một từ, ước lượng chênh nhau k
 | "Tông" | 7 / 50 (14%) |
 | Không hỏi tốc độ | 6 / 50 (12%) |
 
-Một động từ được nghe một tuần trước đã khiến gấp đôi số người "nhớ" ra một chi tiết không hề tồn tại.
+Những người được hỏi bằng từ "đâm sầm" "nhớ" ra một chi tiết không hề tồn tại với tỉ lệ hơn gấp đôi so với hai nhóm còn lại.
 
 ## Mức độ chắc chắn
 
@@ -57,7 +57,7 @@ Hiện tượng thông tin sai lệch (*misinformation effect*) đã được ng
 :::
 
 :::kha-vung[kết quả cụ thể của thí nghiệm Loftus và Palmer]
-Kết quả gốc rõ ràng và phù hợp với rất nhiều nghiên cứu sau đó. Nhưng mẫu nhỏ (9 người mỗi động từ ở thí nghiệm 1), và theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại trong một dự án tái lập quy mô lớn, đăng ký trước. Bản thân các tác giả cũng nêu hai cách giải thích (xem dưới).
+Kết quả gốc rõ ràng và phù hợp với rất nhiều nghiên cứu sau đó. Nhưng mẫu nhỏ (9 người mỗi động từ ở thí nghiệm 1), và tính đến 11/2026, theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại trong một dự án tái lập quy mô lớn, đăng ký trước. Bản thân các tác giả cũng nêu hai cách giải thích (xem dưới).
 :::
 
 ## Các lý thuyết giải thích
@@ -67,19 +67,19 @@ Loftus và Palmer tự đưa ra hai khả năng:
 1. **Thiên lệch khi trả lời.** Người tham gia không chắc xe chạy 30 hay 40 dặm/giờ, và từ "đâm sầm" đẩy câu trả lời lên cao hơn, còn ký ức thì không đổi.
 2. **Ký ức thật sự thay đổi.** Từ "đâm sầm" khiến người ta lưu lại một phiên bản "nghiêm trọng hơn" của vụ tai nạn, rồi một tuần sau, phiên bản ấy "gợi ra" cả mảnh kính vỡ.
 
-Thí nghiệm 2 được thiết kế để ủng hộ khả năng thứ hai, nhưng tranh luận về việc ký ức gốc bị *ghi đè* hay chỉ *khó truy cập hơn* vẫn tiếp tục trong nhiều năm sau đó.
+Thí nghiệm 2 được thiết kế để cho thêm manh mối giữa hai khả năng ấy, và kết quả phù hợp với khả năng thứ hai; nhưng câu hỏi ký ức gốc bị *ghi đè* hay chỉ *khó truy cập hơn* vẫn được nghiên cứu trong nhiều năm sau đó.
 
 ## Áp dụng vào đời sống
 
-- **Khi hỏi người khác về một sự việc,** đặc biệt là trẻ em, hãy dùng câu hỏi mở ("Chuyện gì đã xảy ra?") thay vì câu hỏi gài sẵn câu trả lời ("Nó đánh con phải không?"). Đây là áp dụng trực tiếp từ các nghiên cứu về thông tin sai lệch.
+- **Khi hỏi người khác về một sự việc,** đặc biệt là trẻ em, hãy dùng câu hỏi mở ("Chuyện gì đã xảy ra?") thay vì câu hỏi gài sẵn câu trả lời ("Nó đánh con phải không?"). Đây là suy luận từ các nghiên cứu về thông tin sai lệch, chưa phải kết quả của một nghiên cứu so sánh trực tiếp hai kiểu hỏi.
 - **Cảm giác chắc chắn không đảm bảo ký ức đúng.** Ký ức sai có thể sống động và đi kèm cảm giác rất tự tin. Khi hai người nhớ khác nhau về cùng một chuyện, có thể không ai nói dối cả.
 - **Nếu một sự kiện quan trọng** (va chạm giao thông, tranh chấp), ghi chép lại sớm, trước khi trao đổi với người khác, giúp giữ phiên bản ít bị pha trộn hơn. Đây là suy luận từ các nghiên cứu nói trên, chưa phải một phát hiện được kiểm tra riêng.
 
-**Giới hạn.** Thí nghiệm dùng phim ngắn trong phòng thí nghiệm; người xem không bị căng thẳng như nhân chứng thật và biết hậu quả của câu trả lời không lớn. Vì thế, mức độ sai lệch ngoài đời có thể khác.
+**Giới hạn.** Thí nghiệm dùng đoạn phim ngắn cho sinh viên xem, không phải một vụ tai nạn thật xảy ra trước mắt nhân chứng. Vì thế, mức độ sai lệch ngoài đời có thể khác.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Thí nghiệm gốc được làm với sinh viên Mỹ, bằng tiếng Anh. Các bản dịch trong bảng trên chỉ để minh họa: trong tiếng Việt, "đâm sầm", "tông", "đụng", "chạm" mang sắc thái khác nhau theo cách không hoàn toàn trùng với tiếng Anh. Chúng tôi chưa tìm thấy nghiên cứu nào lặp lại thí nghiệm này với người Việt.
+Thí nghiệm gốc được làm với sinh viên Mỹ, bằng tiếng Anh. Các bản dịch trong bảng trên chỉ để minh họa, không phải câu hỏi gốc. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào lặp lại thí nghiệm này với người Việt.
 
 ## Ngộ nhận liên quan
 
@@ -115,7 +115,7 @@ Xem thêm các ngộ nhận khác ở trang [Ngộ nhận](/psyche/ngo-nhan/).
 - Không bao giờ được tin lời nhân chứng.
 + Câu hỏi gợi ý có thể làm thay đổi điều người ta nhớ, nên cần cẩn thận khi hỏi và khi đánh giá lời khai.
 - Trí nhớ của con người hoàn toàn không đáng tin.
-> Phần lớn ký ức của ta đủ chính xác cho đời sống hằng ngày. Nghiên cứu cho thấy trí nhớ *có thể* bị dẫn dắt, chứ không phải nó *luôn* sai.
+> Nghiên cứu cho thấy trí nhớ *có thể* bị dẫn dắt, chứ không cho thấy nó *luôn* sai.
 ```
 
 ## Nguồn
