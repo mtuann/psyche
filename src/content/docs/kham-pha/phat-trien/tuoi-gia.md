@@ -1,6 +1,6 @@
 ---
 title: Già có lẫn không?
-description: Nghiên cứu dọc Seattle cho thấy chưa có suy giảm trung bình đáng tin cậy trước 60 tuổi, và vốn từ vựng còn tăng đến khoảng thập niên 60 — nhưng sa sút trí tuệ là chuyện khác, và cần phân biệt.
+description: Nghiên cứu dọc Seattle chưa thấy suy giảm trung bình đáng tin cậy trước 60 tuổi, và các nghiên cứu khác thấy vốn từ vựng còn tăng đến khoảng thập niên 60 — nhưng sa sút trí tuệ là chuyện khác, và cần phân biệt.
 in_duoc: true
 ---
 
@@ -22,9 +22,9 @@ Bài này trả lời câu hỏi "già có lẫn không?" bằng dữ liệu c�
 
 ## Điều gì đang xảy ra?
 
-Khi nói "già thì lẫn", ta đang gộp hai chuyện hoàn toàn khác nhau vào một rổ. Chuyện thứ nhất là **lão hóa nhận thức bình thường**: tốc độ xử lý chậm lại, khó làm hai việc cùng lúc hơn hồi trẻ (Salthouse, 1996). Chuyện thứ hai là **sa sút trí tuệ** (dementia): một nhóm bệnh lý trong đó suy giảm nhận thức đủ nặng để **cản trở cuộc sống hàng ngày** — quên những việc vừa mới xảy ra, hỏi lặp lại, khó làm những việc từng làm thành thạo (WHO; NHS).
+Khi nói "già thì lẫn", ta đang gộp hai chuyện hoàn toàn khác nhau vào một rổ. Chuyện thứ nhất là **lão hóa nhận thức bình thường**: tốc độ xử lý chậm lại (Salthouse, 1996), và khi làm hai việc cùng lúc thì chậm đi nhiều hơn so với người trẻ (Verhaeghen và cộng sự, 2003). Chuyện thứ hai là **sa sút trí tuệ** (dementia): một tình trạng do nhiều bệnh gây tổn thương não, trong đó suy giảm nhận thức đủ nặng để **cản trở cuộc sống hàng ngày** — quên những việc vừa mới xảy ra, hỏi lặp lại, khó làm những việc từng làm thành thạo (WHO; NHS).
 
-Nhầm lẫn hai chuyện này có thể gây ra hai cái hại ngược nhau: người thì chủ quan ("già quên là bình thường mà") bỏ qua dấu hiệu cần được thăm khám; người thì hoảng loạn khi gặp một lần quên vặt. Nghiên cứu dọc dài hạn về trí tuệ người lớn giúp ta nhìn các thay đổi thông thường theo dữ liệu, thay vì theo nỗi sợ. Nếu bạn đang lo về trí nhớ của mình hay của người thân, hãy nói chuyện với bác sĩ; xem thêm [Hỗ trợ](/psyche/ho-tro/).
+Nhầm lẫn hai chuyện này có thể khiến người ta chủ quan ("già quên là bình thường mà") mà bỏ qua dấu hiệu cần được thăm khám: NHS lưu ý người thân có khi không để ý hay không coi trọng các dấu hiệu sớm trong một thời gian, và WHO nêu thiếu hiểu biết về sa sút trí tuệ là rào cản đối với chẩn đoán và chăm sóc. Nghiên cứu dọc dài hạn về trí tuệ người lớn giúp ta nhìn các thay đổi thông thường theo dữ liệu, thay vì theo nỗi sợ. Nếu bạn đang lo về trí nhớ của mình hay của người thân, hãy nói chuyện với bác sĩ; xem thêm [Hỗ trợ](/psyche/ho-tro/).
 
 ## Nghiên cứu then chốt
 
@@ -64,7 +64,7 @@ Lý thuyết đứng sau là **lý thuyết chọn lọc cảm xúc–xã hội*
 | Thay đổi thông thường theo tuổi (theo Salthouse, Schaie) | Dấu hiệu nên nói chuyện với bác sĩ (theo NHS, WHO) |
 |---|---|
 | Tốc độ xử lý chậm dần | Thường xuyên quên những việc vừa xảy ra, tên và gương mặt |
-| Làm nhiều việc cùng lúc khó hơn trước | Hỏi lặp lại cùng một câu |
+| Làm hai việc cùng lúc chậm hơn trước | Hỏi lặp lại cùng một câu |
 | Học cái mới mất nhiều thời gian hơn, nhưng vẫn học được | Thấy khó làm những việc quen thuộc hằng ngày |
 | Vốn từ vựng, kiến thức tích lũy còn tăng đến khoảng thập niên 60 | Khó theo dõi cuộc trò chuyện hay tìm từ; nhầm lẫn về thời gian và nơi chốn |
 
@@ -125,7 +125,7 @@ Nếu nhận thấy những dấu hiệu ở cột bên phải của bảng trê
 ## Ngộ nhận liên quan
 
 - **"Cứ già là lẫn."** Sai. Sa sút trí tuệ không phải hệ quả tất yếu của tuổi già (WHO; NHS). Những thay đổi thông thường theo tuổi (xử lý chậm lại) khác với sa sút trí tuệ (ảnh hưởng đến sinh hoạt hằng ngày).
-- **"Quên chìa khóa là dấu hiệu Alzheimer."** Một lần quên vặt chưa nói lên điều gì. Các dấu hiệu sớm mà NHS nêu là quên thường xuyên những việc vừa xảy ra, hỏi lặp lại, khó làm việc quen thuộc, khó tìm từ, nhầm lẫn về thời gian và nơi chốn — xem bảng ở trên, và nói chuyện với bác sĩ nếu lo.
+- **"Quên chìa khóa là dấu hiệu Alzheimer."** Một lần quên vặt chưa nói lên điều gì. Các dấu hiệu sớm của sa sút trí tuệ mà NHS nêu gồm khó làm việc quen thuộc, khó theo dõi cuộc trò chuyện hay tìm từ, nhầm lẫn về thời gian và nơi chốn; với bệnh Alzheimer, NHS nêu thường xuyên quên những việc vừa xảy ra và hỏi lặp lại — xem bảng ở trên, và nói chuyện với bác sĩ nếu lo.
 - **"Não già không học được gì mới."** Tốc độ xử lý giảm theo tuổi, nhưng vốn từ vựng còn tăng đến khoảng thập niên 60 (Salthouse, 2019), và các nghiên cứu huấn luyện của nhóm Seattle cho thấy người lớn tuổi vẫn cải thiện được kỹ năng nhận thức (Schaie và Willis, 2010).
 - **"Hiệu ứng tích cực nghĩa là người già lúc nào cũng vui."** Không. Đó là xu hướng **xử lý thông tin** (chú ý và nhớ cái tích cực hơn cái tiêu cực), không phải trạng thái cảm xúc thường trực; người cao tuổi vẫn có thể buồn và lo.
 
@@ -183,4 +183,5 @@ Nếu nhận thấy những dấu hiệu ở cột bên phải của bảng trê
 - Singh-Manoux, A., Kivimäki, M., Glymour, M. M., Elbaz, A., Berr, C., Ebmeier, K. P., … Dugravot, A. (2012). Timing of onset of cognitive decline: Results from Whitehall II prospective cohort study. *BMJ*, 344, d7622. <https://doi.org/10.1136/bmj.d7622>
 - Stern, Y. (2009). Cognitive reserve. *Neuropsychologia*, 47(10), 2015–2028. <https://doi.org/10.1016/j.neuropsychologia.2009.03.004>
 - UNFPA Viet Nam (2026). *10th Country Programme (2022–2026), final evaluation report*. <https://www.unfpa.org/sites/default/files/2026-02/CPE%20FINAL%20Report%20Viet%20Nam%202022-2026.pdf>
+- Verhaeghen, P., Steitz, D. W., Sliwinski, M. J., & Cerella, J. (2003). Aging and dual-task performance: A meta-analysis. *Psychology and Aging*, 18(3), 443–460. <https://doi.org/10.1037/0882-7974.18.3.443>
 - WHO. Dementia (tờ thông tin, truy cập 11/2026). <https://www.who.int/news-room/fact-sheets/detail/dementia>

@@ -60,7 +60,7 @@ Những thành phần hiệu quả không hoàn toàn ổn định giữa các p
 
 **Kết quả.** Mọi vai trò dính líu vào bắt nạt đều **liên quan đến nguy cơ cao hơn** của ý nghĩ và hành vi tự tử, với tỉ số chênh (odds ratio) từ **2,12 đến 4,02** ([Holt và cộng sự, 2015](https://doi.org/10.1542/peds.2014-1864)). Một phân tích tổng hợp khác trên trẻ em và thanh thiếu niên (van Geel, Vedder và Tanilon, 2014) thấy bị bạn bè ức hiếp liên quan đến ý nghĩ tự tử (OR 2,23) và hành vi tự tử (OR 2,55), và bắt nạt mạng liên quan đến ý nghĩ tự tử mạnh hơn bắt nạt truyền thống.
 
-Cần đọc đúng con số này: đây là **mối liên hệ**, không phải "bị bắt nạt thì sẽ...". Các nghiên cứu được tổng hợp là cắt ngang nên không cho biết chiều nhân quả, và phần lớn học sinh bị bắt nạt không đi đến bước đường cùng — nhưng con số đủ lớn để thấy bắt nạt **không phải "chuyện trẻ con"**. Nếu bạn hoặc người thân đang bị bắt nạt kéo dài và cảm thấy quá sức chịu đựng, hãy **nói ra với một người lớn mà bạn tin tưởng** — cha mẹ, thầy cô — hoặc tìm người có chuyên môn; xin giúp đỡ là dấu hiệu của sức mạnh, không phải của yếu đuối. Nếu bạn hoặc người thân đang nghĩ đến việc tự làm hại mình, hãy nói ngay với người có chuyên môn; xem [Hỗ trợ](/psyche/ho-tro/) để biết nơi liên hệ.
+Cần đọc đúng con số này: đây là **mối liên hệ**, không phải "bị bắt nạt thì sẽ...". Các nghiên cứu được tổng hợp là cắt ngang nên không cho biết chiều nhân quả, và phần lớn học sinh bị bắt nạt không đi đến bước đường cùng — nhưng con số đủ lớn để thấy bắt nạt **không phải "chuyện trẻ con"**. Nếu bạn hoặc người thân đang bị bắt nạt kéo dài và cảm thấy quá sức chịu đựng, hãy **nói ra với một người lớn mà bạn tin tưởng** — cha mẹ, thầy cô — hoặc tìm người có chuyên môn, như UNICEF khuyên. Nếu bạn hoặc người thân đang nghĩ đến việc tự làm hại mình, hãy nói ngay với người có chuyên môn; xem [Hỗ trợ](/psyche/ho-tro/) để biết nơi liên hệ.
 
 ### Trần và cộng sự (2024): áp lực học tập của học sinh Việt Nam, đo bằng số liệu dọc
 
@@ -70,8 +70,8 @@ Cần đọc đúng con số này: đây là **mối liên hệ**, không phải
 
 ## Mức độ chắc chắn
 
-:::vung-chac[bắt nạt được định nghĩa bằng ba tiêu chí — cố ý gây hại, lặp lại theo thời gian, chênh lệch quyền lực]
-Ba tiêu chí này là nền của định nghĩa theo Olweus và của định nghĩa thống nhất của CDC (theo mô tả của Holt và cộng sự, 2015), và là công cụ thực tế để phân biệt bắt nạt với xung đột ngang hàng hay một sự cố đơn lẻ. Nhãn nói về định nghĩa, không về tỉ lệ: nhiều nghiên cứu không đo đủ ba tiêu chí, nên các số liệu về tỉ lệ khó so sánh.
+:::kha-vung[bắt nạt được định nghĩa bằng ba tiêu chí — cố ý gây hại, lặp lại theo thời gian, chênh lệch quyền lực]
+Ba tiêu chí này là nền của định nghĩa theo Olweus và của định nghĩa thống nhất của CDC (theo mô tả của Holt và cộng sự, 2015), và là công cụ thực tế để phân biệt bắt nạt với xung đột ngang hàng hay một sự cố đơn lẻ. Nhưng đây là một định nghĩa quy ước, không phải một kết quả đo được, và các nghiên cứu đo nó khác nhau: trong 47 nghiên cứu mà Holt và cộng sự tổng hợp, chỉ khoảng một phần tư cố đánh giá chênh lệch quyền lực. Vì vậy nhãn là "khá vững", và các số liệu về tỉ lệ khó so sánh với nhau.
 :::
 
 :::vung-chac[bị bắt nạt gắn liền với trầm cảm về sau và với ý nghĩ tự tử]
@@ -90,8 +90,8 @@ Phân tích tổng hợp 80 nghiên cứu (Modecki và cộng sự, 2014) thấy
 Phân tích của Holt và cộng sự (2015) chỉ gồm các nghiên cứu cắt ngang: chúng cho thấy mối liên hệ mạnh (OR 2–4) nhưng không chứng minh được chiều nhân quả; tác giả của tổng hợp về trầm cảm cũng nói các suy luận nhân quả chỉ là tạm thời (Ttofi và cộng sự, 2011). Bắt nạt là một **yếu tố nguy cơ** đáng nghiêm túc — không phải nguyên nhân duy nhất hay tất yếu.
 :::
 
-:::bac-bo['trừng phạt thật nặng là cách tốt nhất để xóa bắt nạt']
-Bằng chứng ủng hộ **kỷ luật vững chắc** (Ttofi và Farrington, 2011: các chương trình có "firm disciplinary methods" hiệu quả hơn). Còn các chính sách "không khoan nhượng" (zero tolerance) nói chung: tổng quan của APA (2008) thấy có rất ít dữ liệu kiểm tra trực tiếp các giả định của cách làm này, và các dữ liệu hiện có có xu hướng mâu thuẫn với chúng. Nhãn dựa trên đồng thuận của các tổng quan này, không phải một phân tích tổng hợp riêng cho chủ đề bắt nạt.
+:::kha-vung[chính sách kỷ luật "không khoan nhượng" chưa có bằng chứng ủng hộ]
+Tổng quan của APA (2008) về chính sách "không khoan nhượng" (zero tolerance) trong kỷ luật học đường nói chung thấy có rất ít dữ liệu kiểm tra trực tiếp các giả định của cách làm này, và các dữ liệu hiện có có xu hướng mâu thuẫn với chúng. Điều đó khác với **kỷ luật vững chắc** trong một chương trình toàn trường: Ttofi và Farrington (2011) thấy các chương trình có "firm disciplinary methods" hiệu quả hơn. Nhãn chỉ là "khá vững" vì tổng quan của APA không riêng cho bắt nạt, và chưa có phân tích tổng hợp nào so sánh trực tiếp mức độ trừng phạt trong các chương trình chống bắt nạt.
 :::
 
 :::bac-bo['bắt nạt chỉ là chuyện trẻ con, lớn lên tự hết']
@@ -100,7 +100,7 @@ Các tổng quan hệ thống các nghiên cứu dọc cho thấy hậu quả c�
 
 ## Các lý thuyết giải thích
 
-- **Bắt nạt là một quá trình của cả nhóm, không chỉ của hai người.** Salmivalli và cộng sự (1996) xem bắt nạt như một quá trình nhóm và xét các vai trò tham gia của học sinh trong mối liên hệ với địa vị xã hội trong nhóm (chúng tôi chỉ đọc được tiêu đề và thông tin xuất bản, không mở được toàn văn). Cách nhìn này gợi ý rằng ngoài kẻ bắt nạt và nạn nhân còn có những người **tiếp tay, cổ vũ, đứng ngoài cuộc** và **bảo vệ**. Vì thế chương trình KiVa của Phần Lan nhấn mạnh vai trò của **người chứng kiến** (theo một tổng quan năm 2026).
+- **Bắt nạt là một quá trình của cả nhóm, không chỉ của hai người.** Salmivalli và cộng sự (1996) xem bắt nạt như một quá trình nhóm và xét các vai trò tham gia của học sinh trong mối liên hệ với địa vị xã hội trong nhóm. Trong nghiên cứu trên 573 học sinh lớp 6 ở Phần Lan, ngoài kẻ bắt nạt và nạn nhân, các tác giả xếp học sinh vào các vai **người tiếp tay** và **người cổ vũ** kẻ bắt nạt, **người bảo vệ** nạn nhân, và **người đứng ngoài** (chúng tôi chỉ đọc được tóm tắt). Vì thế chương trình KiVa của Phần Lan nhấn mạnh vai trò của **người chứng kiến** (theo một tổng quan năm 2026).
 
 - **Chương trình toàn trường.** Theo Gaffney và cộng sự (2021), các thành phần như cách tiếp cận toàn trường, chính sách chống bắt nạt, nội quy lớp học và thông tin cho phụ huynh gắn với hiệu quả lớn hơn. Đây là các liên hệ giữa thành phần và hiệu quả trong các nghiên cứu đã có, không phải thí nghiệm riêng cho từng thành phần.
 
@@ -110,21 +110,21 @@ Các tổng quan hệ thống các nghiên cứu dọc cho thấy hậu quả c�
 
 ## Áp dụng vào đời sống
 
-### 1. Nhận diện đúng: dùng "bộ lọc" ba tiêu chí :nhan[vung-chac]
+### 1. Nhận diện đúng: dùng "bộ lọc" ba tiêu chí :nhan[kha-vung] { #1-nhan-dien-dung-dung-bo-loc-ba-tieu-chi-vung-chac }
 
 Khi nghe con/em/học trò kể bị bạn trêu chọc, đừng vội kết luận "chắc chỉ đùa thôi" cũng đừng vội dán nhãn "bắt nạt". Hãy hỏi ba câu: việc này có **chủ ý gây hại** không (hay chỉ là vô tình/vụng về)? Nó có **lặp đi lặp lại** không? Có **chênh lệch quyền lực** không (một mình em chống lại cả nhóm, hoặc đối phương mạnh thế hơn)? Nếu cả ba đều "có", đó là bắt nạt và cần được nhà trường, gia đình xử lý nghiêm túc. Ba câu hỏi này là cách áp dụng định nghĩa nêu ở trên, không phải công cụ chẩn đoán.
 
-### 2. Người chứng kiến là "chìa khóa" bị bỏ quên :nhan[kha-vung]
+### 2. Người chứng kiến: hướng đi hứa hẹn, bằng chứng chưa thống nhất :nhan[tranh-cai] { #2-nguoi-chung-kien-la-chia-khoa-bi-bo-quen-kha-vung }
 
-Chương trình KiVa của Phần Lan nhấn mạnh vai trò của người chứng kiến, và một thử nghiệm ngẫu nhiên ở 78 trường với hơn 8.000 học sinh lớp 4–6 thấy sau 9 tháng chương trình có tác động tốt lên nhiều chỉ số, kể cả bắt nạt và bị bắt nạt do học sinh tự báo cáo (Kärnä và cộng sự, 2011). Gaffney và cộng sự (2021) cũng thấy sự tham gia không chính thức của bạn bè gắn với hiệu quả lớn hơn. Những việc như **không cười theo, không chia sẻ clip bắt nạt** và sau đó **đến hỏi thăm bạn bị bắt nạt** là gợi ý thực hành hợp lý theo hướng này; chúng tôi không có nghiên cứu nào đo riêng từng hành vi ấy.
+Chương trình KiVa của Phần Lan nhấn mạnh vai trò của người chứng kiến, và một thử nghiệm ngẫu nhiên ở 78 trường với hơn 8.000 học sinh lớp 4–6 thấy sau 9 tháng chương trình có tác động tốt lên nhiều chỉ số, kể cả bắt nạt và bị bắt nạt do học sinh tự báo cáo (Kärnä và cộng sự, 2011). Gaffney và cộng sự (2021) cũng thấy sự tham gia không chính thức của bạn bè gắn với hiệu quả lớn hơn. Nhưng phân tích trước đó của Ttofi và Farrington (2011) lại thấy thành phần "làm việc với bạn cùng lứa" đi cùng tỉ lệ nạn nhân tăng, và thử nghiệm KiVa đánh giá cả chương trình chứ không tách riêng phần dành cho người chứng kiến. Vì vậy chưa thể nói người chứng kiến là "chìa khóa". Khi bạn mình bị bắt nạt trên mạng, UNICEF khuyên lắng nghe bạn và giúp bạn tìm một người lớn tin cậy.
 
 ### 3. Cha mẹ và nhà trường phải "cùng một phe" :nhan[kha-vung]
 
-Ttofi và Farrington (2011) thấy **họp phụ huynh** đi cùng hiệu quả lớn hơn của chương trình, và Gaffney và cộng sự (2021) thấy thông tin cho phụ huynh gắn với hiệu quả lớn hơn. Các gợi ý cụ thể dưới đây là thông lệ thực hành, chưa phải kết quả của nghiên cứu mà chúng tôi đã kiểm: khi con bị bắt nạt, cha mẹ có thể lắng nghe con trước, ghi lại diễn biến (ngày giờ, ai làm gì, có ai chứng kiến) và trao đổi với giáo viên chủ nhiệm. Với bắt nạt trên mạng, có thể lưu bằng chứng (chụp màn hình), chặn tài khoản quấy rối, báo cáo với nền tảng và nói với người lớn tin cậy. Nếu bị bắt nạt kéo dài làm em lo lắng nhiều hay thay đổi rõ về ăn, ngủ, đi học, hãy tìm người có chuyên môn; xem [Hỗ trợ](/psyche/ho-tro/).
+Ttofi và Farrington (2011) thấy **họp phụ huynh** đi cùng hiệu quả lớn hơn của chương trình, và Gaffney và cộng sự (2021) thấy thông tin cho phụ huynh gắn với hiệu quả lớn hơn. UNICEF khuyên trẻ bị bắt nạt tìm sự giúp đỡ của cha mẹ, người thân hay một người lớn tin cậy; với bắt nạt trên mạng, có thể chặn tài khoản quấy rối, báo cáo với nền tảng và lưu bằng chứng (tin nhắn, ảnh chụp màn hình). Đây là lời khuyên của một tổ chức, chưa phải kết quả của nghiên cứu mà chúng tôi đã kiểm. Nếu bị bắt nạt kéo dài làm em lo lắng nhiều hay thay đổi rõ về ăn, ngủ, đi học, hãy tìm người có chuyên môn (với bắt nạt trên mạng, UNICEF nêu mất ngủ, đau đầu, đau bụng, nghỉ học trong các ảnh hưởng thường gặp); xem [Hỗ trợ](/psyche/ho-tro/).
 
 ### 4. Áp lực thi cử: khi nào cần để ý :nhan[kha-vung] { #4-quan-ly-ap-luc-thi-cu-phan-biet-lo-au-vua-phai-voi-lo-au-doc-hai-kha-vung }
 
-Lo âu về thi cử nhìn chung đi cùng thành tích thấp hơn, ở mức liên hệ nhỏ đến vừa (von der Embse và cộng sự, 2018); tác giả khuyên dùng đánh giá và can thiệp có bằng chứng khi cần. Chúng tôi không có nguồn cho việc một mức căng thẳng "vừa phải" có lợi cho thi cử. Nếu căng thẳng về thi cử kéo dài và ảnh hưởng đến giấc ngủ, ăn uống, việc đến trường, hay em nói những điều cho thấy mất hy vọng, đó là lúc cần nói với người lớn tin cậy và tìm người có chuyên môn; xem [Hỗ trợ](/psyche/ho-tro/). Nghiên cứu ở Huế thấy **đi học thêm** gắn với stress cao hơn; cha mẹ có thể cân nhắc xem thêm giờ học có thực sự giúp con hay không, nhưng đó là liên hệ quan sát.
+Lo âu về thi cử nhìn chung đi cùng thành tích thấp hơn, ở mức liên hệ nhỏ đến vừa (von der Embse và cộng sự, 2018); tác giả khuyên dùng đánh giá và can thiệp có bằng chứng khi cần. Chúng tôi không có nguồn cho việc một mức căng thẳng "vừa phải" có lợi cho thi cử. Theo NHS (Anh), học sinh căng thẳng vì thi cử có thể ngủ không ngon, ăn uống thay đổi hay thấy tương lai vô vọng, và nên tìm giúp đỡ khi lo âu hay buồn chán nặng, kéo dài và ảnh hưởng đến sinh hoạt hằng ngày: khi đó hãy nói với người lớn tin cậy và tìm người có chuyên môn; xem [Hỗ trợ](/psyche/ho-tro/). Nghiên cứu ở Huế thấy **đi học thêm** gắn với stress cao hơn; cha mẹ có thể cân nhắc xem thêm giờ học có thực sự giúp con hay không, nhưng đó là liên hệ quan sát.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
@@ -134,7 +134,7 @@ Lo âu về thi cử nhìn chung đi cùng thành tích thấp hơn, ở mức l
 
 **So sánh quốc tế.** Trong PISA 2015, Việt Nam không có số liệu cho chỉ số lo âu liên quan đến bài vở, nên không thể đặt học sinh Việt cạnh Singapore hay Phần Lan trên chỉ số này. Điều chúng ta biết là ở cấp độ nước, động lực thành tích cao và lo âu về bài thi thường đi cùng nhau, và Phần Lan, Hà Lan, Thụy Sĩ cho thấy học tốt có thể đi cùng học sinh hài lòng với cuộc sống (OECD, 2017).
 
-**Bắt nạt ở trường.** Nếu nhà trường muốn có số liệu thay vì đoán, khảo sát ẩn danh định kỳ là một phần của chương trình như OBPP; xử lý từng vụ việc riêng với từng bên và đặt nội quy rõ ràng cũng nằm trong các thành phần được mô tả của chương trình này. Chúng tôi chưa tìm thấy nghiên cứu đã mở nào so sánh cách "ép hai bên bắt tay làm hòa" với các cách khác ở Việt Nam.
+**Bắt nạt ở trường.** Nếu nhà trường muốn có số liệu thay vì đoán, khảo sát ẩn danh là một phần của chương trình như OBPP; đặt nội quy rõ ràng, làm việc riêng với em bắt nạt, em bị bắt nạt và phụ huynh cũng nằm trong các thành phần được mô tả của chương trình này (theo một bài tổng quan năm 2026). Chúng tôi chưa tìm thấy nghiên cứu đã mở nào so sánh cách "ép hai bên bắt tay làm hòa" với các cách khác ở Việt Nam.
 
 ## Ngộ nhận liên quan
 
@@ -189,6 +189,7 @@ Lo âu về thi cử nhìn chung đi cùng thành tích thấp hơn, ở mức l
 - Modecki, K. L., Minchin, J., Harbaugh, A. G., Guerra, N. G., & Runions, K. C. (2014). Bullying prevalence across contexts: A meta-analysis measuring cyber and traditional bullying. *Journal of Adolescent Health*, 55(5), 602–611. <https://doi.org/10.1016/j.jadohealth.2014.06.007>
 - OECD (2017). *PISA 2015 results (volume III): Students' well-being*. Paris: OECD Publishing. <https://doi.org/10.1787/9789264273856-en>
 - Nhóm NAMHS (2025). Bullying victimisation and perpetration and the association with mental disorders among adolescents in Kenya, Indonesia, and Vietnam: Findings from the National Adolescent Mental Health Surveys. *Child and Adolescent Psychiatry and Mental Health*. <https://doi.org/10.1186/s13034-025-00922-4>
+- NHS. Help your child beat exam stress (truy cập 11/2026). <https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/help-your-child-beat-exam-stress/>
 - Olweus, D. (1978). *Aggression in the schools: Bullies and whipping boys*. Washington, DC: Hemisphere (Wiley). (sách)
 - Olweus, D. (1993). *Bullying at school: What we know and what we can do*. Oxford: Blackwell. (sách)
 - Olweus, D. (2013). School bullying: Development and some important challenges. *Annual Review of Clinical Psychology*, 9, 751–780. <https://doi.org/10.1146/annurev-clinpsy-050212-185516>
@@ -201,5 +202,6 @@ Lo âu về thi cử nhìn chung đi cùng thành tích thấp hơn, ở mức l
 - Ttofi, M. M., Farrington, D. P., Lösel, F., & Loeber, R. (2011). Do the victims of school bullies tend to become depressed later in life? A systematic review and meta-analysis of longitudinal studies. *Journal of Aggression, Conflict and Peace Research*, 3(2), 63–73. <https://doi.org/10.1108/17596591111132873>
 - Ttofi, M. M., Farrington, D. P., Lösel, F., & Loeber, R. (2011). The predictive efficiency of school bullying versus later offending: A systematic/meta-analytic review of longitudinal studies. *Criminal Behaviour and Mental Health*, 21(2), 80–89. <https://doi.org/10.1002/cbm.808>
 - UNESCO (2019). *Behind the numbers: Ending school violence and bullying*. Paris: UNESCO. (báo cáo; chúng tôi dùng bản tin của Liên Hợp Quốc về báo cáo: <https://news.un.org/en/story/2019/01/1031052>)
+- UNICEF. Cyberbullying: What is it and how to stop it (truy cập 11/2026). <https://www.unicef.org/end-violence/how-to-stop-cyberbullying>
 - van Geel, M., Vedder, P., & Tanilon, J. (2014). Relationship between peer victimization, cyberbullying, and suicide in children and adolescents: A meta-analysis. *JAMA Pediatrics*, 168(5), 435–442. <https://doi.org/10.1001/jamapediatrics.2013.4143>
 - von der Embse, N., Jester, D., Roy, D., & Post, J. (2018). Test anxiety effects, predictors, and correlates: A 30-year meta-analytic review. *Journal of Affective Disorders*, 227, 483–493. <https://doi.org/10.1016/j.jad.2017.11.048>

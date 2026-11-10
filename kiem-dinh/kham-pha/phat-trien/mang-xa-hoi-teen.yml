@@ -4,832 +4,1077 @@ nguon_cu: ../psyche-zero/docs/kham-pha/phat-trien/mang-xa-hoi-teen.md
 tang: mo-rong
 muc: V2
 lan:
-- so: 1
-  ngay: '2026-11-10'
-  nhanh: moi/d6-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L3 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d6-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L3 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L3)
+      review: Claude Opus 5.5 (agent review D6-L3, 10/11/2026)
+      kiem_mau: null
 nguon:
-- id: cdc1121
-  ten: 'CDC (2023), YRBS Data Summary & Trends Report 2011–2021: toàn văn (PDF, cdc.gov)'
-  link: https://www.cdc.gov/yrbs/dstr/pdf/YRBS_Data-Summary-Trends_Report2023_508.pdf
-  toan_van: true
-- id: cdc1323
-  ten: 'CDC (2024), YRBS Data Summary & Trends Report 2013–2023: toàn văn (PDF, cdc.gov; đọc cả biểu đồ)'
-  link: https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf
-  toan_van: true
-- id: cdc-yif2026
-  ten: 'CDC (2026), Youth Health in Focus: Mental Health and Suicide Risks (trang đề ngày 18/9/2026, đọc 10/11/2026)'
-  link: https://www.cdc.gov/yrbs/youth-health-in-focus/mental-health.html
-  toan_van: true
-- id: mmwr2023
-  ten: 'CDC MMWR Suppl 73(4) (2024), YRBS 2023: các trang su7304a1 (tổng quan) và su7304a3 (mạng xã hội; đọc qua công cụ đọc web)'
-  link: https://www.cdc.gov/mmwr/volumes/73/su/su7304a3.htm
-  toan_van: true
-- id: orben2019
-  ten: 'Orben & Przybylski (2019), Nat Hum Behav 3(2), 173–182: toàn văn (bản tác giả chấp nhận, kho Oxford ORA); thêm bản tin của OII Oxford (oii.ox.ac.uk) cho tỉ lệ 2,7 và 4,3'
-  link: https://doi.org/10.1038/s41562-018-0506-1
-  toan_van: true
-- id: orben-dienlin2019
-  ten: 'Orben, Dienlin & Przybylski (2019), PNAS 116(21), 10226–10228: toàn văn (PMC6534991)'
-  link: https://doi.org/10.1073/pnas.1902058116
-  toan_van: true
-- id: orben2022
-  ten: 'Orben và cộng sự (2022), Nat Commun 13, 1649: toàn văn (PMC8960761)'
-  link: https://doi.org/10.1038/s41467-022-29296-3
-  toan_van: true
-- id: teague2026
-  ten: 'Teague và cộng sự (2026), JAMA Pediatrics 180(5): trang bài (jamanetwork.com, đọc qua công cụ đọc web); số người tham gia trong bài tự mâu thuẫn nên không dùng'
-  link: https://jamanetwork.com/journals/jamapediatrics/fullarticle/2845518
-  toan_van: false
-- id: haidt-site
-  ten: 'Trang chính thức của sách (anxiousgeneration.com): trang book và resources/four-norms (đọc qua công cụ đọc web); sách không mở được'
-  link: https://www.anxiousgeneration.com/resources/four-norms
-  toan_van: true
-- id: wiki-ag
-  ten: 'Wikipedia, "The Anxious Generation" (bậc 3: chỉ để xác nhận bốn tổn hại, mốc 2010–2015 và các phản biện; không dùng làm nguồn duy nhất)'
-  link: https://en.wikipedia.org/wiki/The_Anxious_Generation
-  toan_van: true
-- id: sg2023
-  ten: 'U.S. Surgeon General (2023), Advisory on social media and youth mental health: hhs.gov chặn bot (403); chỉ đọc đoạn trích qua kết quả tìm kiếm, không mở trang'
-  link: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html
-  toan_van: false
-- id: who-adol2025
-  ten: WHO (2025), Adolescent mental health (tờ thông tin, đề ngày 1/9/2025; đọc qua công cụ đọc web)
-  link: https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health
-  toan_van: true
-- id: namhs-lancet2024
-  ten: 'NAMHS (2024), Lancet: Prevalence of adolescent mental disorders in Kenya, Indonesia, and Viet Nam: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/S0140-6736(23)02641-7
-  toan_van: false
-- id: dam2023
-  ten: 'Dam và cộng sự (2023), PLOS ONE 18(6), e0286766: toàn văn (PMC10246797)'
-  link: https://doi.org/10.1371/journal.pone.0286766
-  toan_van: true
-- id: vu2024
-  ten: 'Vu & Nguyen (2024), VNU J Econ Bus 4(6): tóm tắt (Crossref)'
-  link: https://doi.org/10.57110/vnu-jeb.v4i6.354
-  toan_van: false
-- id: tim-kiem-vn-mxh
-  ten: 'Tìm trên Europe PMC (10/11/2026): "(Vietnam OR Vietnamese) AND (social media) AND (adolescents) AND (longitudinal OR cohort)": 1.728 kết quả, các kết quả đầu không phải nghiên cứu dọc về mạng xã hội và sức khỏe tâm thần teen Việt Nam; chưa đọc hết. OpenAlex hết lượt trong ngày'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam%20OR%20Vietnamese)%20AND%20(social%20media)%20AND%20(adolescents)%20AND%20(longitudinal%20OR%20cohort)
-  toan_van: false
+  - id: cdc1121
+    ten: 'CDC (2023), YRBS Data Summary & Trends Report 2011–2021: toàn văn (PDF, cdc.gov)'
+    link: https://www.cdc.gov/yrbs/dstr/pdf/YRBS_Data-Summary-Trends_Report2023_508.pdf
+    toan_van: true
+  - id: cdc1323
+    ten: 'CDC (2024), YRBS Data Summary & Trends Report 2013–2023: toàn văn (PDF, cdc.gov; đọc cả biểu đồ)'
+    link: https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf
+    toan_van: true
+  - id: cdc-yif2026
+    ten: 'CDC (2026), Youth Health in Focus: Mental Health and Suicide Risks (trang đề ngày 18/9/2026, đọc 10/11/2026)'
+    link: https://www.cdc.gov/yrbs/youth-health-in-focus/mental-health.html
+    toan_van: true
+  - id: mmwr2023
+    ten: 'CDC MMWR Suppl 73(4) (2024), YRBS 2023: các trang su7304a1 (tổng quan) và su7304a3 (mạng xã hội; đọc qua công cụ đọc web)'
+    link: https://www.cdc.gov/mmwr/volumes/73/su/su7304a3.htm
+    toan_van: true
+  - id: orben2019
+    ten: 'Orben & Przybylski (2019), Nat Hum Behav 3(2), 173–182: toàn văn bản tác giả chấp nhận (Oxford ORA, uuid:5d844350-a359-47d3-b10c-4bfb93ce613b; review tải và đọc lại 10/11/2026)'
+    link: https://doi.org/10.1038/s41562-018-0506-1
+    toan_van: true
+  - id: orben-dienlin2019
+    ten: 'Orben, Dienlin & Przybylski (2019), PNAS 116(21), 10226–10228: toàn văn (PMC6534991)'
+    link: https://doi.org/10.1073/pnas.1902058116
+    toan_van: true
+  - id: orben2022
+    ten: 'Orben và cộng sự (2022), Nat Commun 13, 1649: toàn văn (PMC8960761)'
+    link: https://doi.org/10.1038/s41467-022-29296-3
+    toan_van: true
+  - id: teague2026
+    ten: 'Teague và cộng sự (2026), JAMA Pediatrics 180(5), doi 10.1001/jamapediatrics.2026.0085: tóm tắt (Europe PMC, PMID 41801211; đọc ở review 10/11/2026); số người tham gia trong tóm tắt tự mâu thuẫn nên không dùng'
+    link: https://doi.org/10.1001/jamapediatrics.2026.0085
+    toan_van: false
+  - id: haidt-site
+    ten: 'Trang chính thức của sách (anxiousgeneration.com): trang book và resources/four-norms (đọc qua công cụ đọc web); sách không mở được'
+    link: https://www.anxiousgeneration.com/resources/four-norms
+    toan_van: true
+  - id: sg2023
+    ten: 'U.S. Surgeon General (2023), Social Media and Youth Mental Health advisory: toàn văn PDF hhs.gov, đọc qua bản lưu Internet Archive (web.archive.org, 04/11/2026) ở review 10/11/2026; hhs.gov chặn bot (403)'
+    link: https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf
+    toan_van: true
+  - id: who-adol2025
+    ten: WHO (2025), Adolescent mental health (tờ thông tin, đề ngày 1/9/2025; đọc qua công cụ đọc web)
+    link: https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health
+    toan_van: true
+  - id: namhs-lancet2024
+    ten: 'NAMHS (2024), Lancet: Prevalence of adolescent mental disorders in Kenya, Indonesia, and Viet Nam: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/S0140-6736(23)02641-7
+    toan_van: false
+  - id: dam2023
+    ten: 'Dam và cộng sự (2023), PLOS ONE 18(6), e0286766: toàn văn (PMC10246797)'
+    link: https://doi.org/10.1371/journal.pone.0286766
+    toan_van: true
+  - id: vu2024
+    ten: 'Vu & Nguyen (2024), VNU J Econ Bus 4(6): tóm tắt (Crossref)'
+    link: https://doi.org/10.57110/vnu-jeb.v4i6.354
+    toan_van: false
+  - id: tim-kiem-vn-mxh
+    ten: 'Tìm trên Europe PMC (10/11/2026): "(Vietnam OR Vietnamese) AND (social media) AND (adolescents) AND (longitudinal OR cohort)": 1.728 kết quả, các kết quả đầu không phải nghiên cứu dọc về mạng xã hội và sức khỏe tâm thần teen Việt Nam; chưa đọc hết. OpenAlex hết lượt trong ngày'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam%20OR%20Vietnamese)%20AND%20(social%20media)%20AND%20(adolescents)%20AND%20(longitudinal%20OR%20cohort)
+    toan_van: false
+  - id: odgers2024
+    ten: 'Odgers (2024), Nature 628, 29–30, "The great rewiring: is social media really behind an epidemic of teenage mental illness?" (bài điểm sách): toàn văn (nature.com, đọc ở review 10/11/2026)'
+    link: https://doi.org/10.1038/d41586-024-00902-2
+    toan_van: true
 nhan_dinh:
-- id: n1
-  cau: 'Mô tả: tranh luận Haidt (2024) và Orben & Przybylski (2019), hiệu ứng lên sức khỏe tâm thần teen, tương quan có phải nhân quả, dữ liệu CDC YRBS, và số liệu quốc gia của Việt Nam.'
-  loai: phat-hien
-  nguon:
-  - orben2019
-  - cdc1323
-  - namhs-lancet2024
-  trich: The association we find between digital technology use and adolescent well-being is negative but small, explaining at most 0.4% of the variation in well-being.
-  vi_tri: Orben & Przybylski (2019), tóm tắt; CDC 2024; NAMHS 2024
-  ket_qua: da-sua
-  ghi_chu: 'Mô tả khớp nội dung trang sau khi sửa. Chữ cũ: "…và dữ liệu CDC YRBS nói gì." Chữ mới: "…dữ liệu CDC YRBS nói gì, và số liệu quốc gia của Việt Nam." Lý do: Trang nay có số liệu NAMHS (Việt Nam).'
-- id: n2
-  cau: Ở Mỹ, tỉ lệ teen báo cáo buồn bã dai dẳng đã tăng rõ trong thập kỷ 2010 (số liệu khảo sát đại diện quốc gia); câu hỏi là mạng xã hội có phải thủ phạm không (câu trả lời của mục "Tự trải nghiệm", An là ví dụ giả định).
-  loai: phat-hien
-  nguon:
-  - cdc1323
-  trich: Unfortunately, the data show that from 2013 to 2023, almost all other indicators of health and well-being in this report worsened. Data highlight worsening trends in … persistent sadness or hopelessness, and suicidal thoughts and behaviors.
-  vi_tri: CDC (2024), Executive Summary
-  ket_qua: da-sua
-  ghi_chu: 'Tình huống An và mẹ An: gia-dinh. Chữ cũ: "…sức khỏe tâm thần của teen xấu đi là có thật (dữ liệu không thể chối cãi)… một trong những tranh luận khoa học ồn ào nhất thập kỷ". Chữ mới: "…ở Mỹ, tỉ lệ teen báo cáo buồn bã dai dẳng đã tăng rõ trong thập kỷ 2010 (số liệu khảo sát đại diện quốc gia)… một tranh luận khoa học đang diễn ra". Lý do: Bỏ "không thể chối cãi", "ồn ào nhất thập kỷ"; chỉ nói về teen Mỹ và tự báo cáo.'
-- id: n3
-  cau: 'Haidt xuất bản năm 2024 cuốn The Anxious Generation, luận điểm: sự trỗi dậy của smartphone và mạng xã hội cùng sự suy giảm tự lập và chơi tự do đã "đại tu sửa" tuổi thơ và gây ra khủng hoảng sức khỏe tâm thần ở trẻ em và teen.'
-  loai: lich-su
-  nguon:
-  - haidt-site
-  trich: the rise of smartphones and social media, along with the decline of independence and free play, "rapidly rewired childhood and caused a global mental health crisis for kids and teens."
-  vi_tri: anxiousgeneration.com/book
-  ket_qua: da-sua
-  ghi_chu: 'Chỉ đọc trang web chính thức của sách, không đọc sách. Chữ cũ: "Jonathan Haidt, nhà tâm lý học xã hội tại Đại học New York, xuất bản năm 2024… từ khoảng 2010–2015, tuổi thơ của trẻ em phương Tây đã bị "đại tu sửa"… từ tuổi thơ chơi tự do ngoài đời thực sang tuổi thơ gắn với điện thoại." Chữ mới: "Nhà tâm lý học Jonathan Haidt xuất bản năm 2024… sự trỗi dậy của smartphone và mạng xã hội, cùng với sự suy giảm tự lập và chơi tự do, đã "đại tu sửa" tuổi thơ… Ông nói về giai đoạn biến đổi 2010–2015." Lý do: Bỏ "nhà tâm lý học xã hội tại ĐH New York" và "trẻ em phương Tây" (không có trong nguồn đã mở); theo chữ của trang sách.'
-- id: n4
-  cau: Haidt nói về giai đoạn biến đổi 2010–2015.
-  loai: lich-su
-  nguon:
-  - wiki-ag
-  trich: Haidt's X reply refers to "the radical transformation of daily life that happened for teens between 2010 and 2015."
-  vi_tri: Wikipedia, mục Criticism (trích Haidt)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chỗ chưa chắc: nguồn bậc 3 (Wikipedia), sách không mở được; lượt 2 nên tìm nguồn bậc 1–2 (sách, bài của Haidt). Chữ cũ: "…từ khoảng 2010–2015…". Chữ mới: "…ông nói về giai đoạn biến đổi 2010–2015". Lý do: Làm mềm: bắt nguồn từ một trích dẫn qua nguồn bậc 3, không phải sách.'
-- id: n5
-  cau: (Đã bỏ) Điểm gãy Haidt nhấn mạnh là khoảng năm 2012, khi đa số teen Mỹ đã sở hữu smartphone.
-  loai: lich-su
-  ket_qua: da-bo
-  ghi_chu: 'Không có nguồn đã mở (Wikipedia nói chung chung "khoảng 2010"; không có tỉ lệ sở hữu). Chữ cũ: "Điểm gãy ông nhấn mạnh là khoảng năm 2012, khi đa số teen Mỹ đã sở hữu smartphone." Chữ mới: (bỏ) Lý do: Không kiểm được.'
-- id: n6
-  cau: 'Theo mô tả của sách, Haidt nêu bốn tổn hại nền tảng: tước đoạt xã hội, thiếu ngủ, phân mảnh chú ý và nghiện; đây là các giả thuyết cơ chế của Haidt.'
-  loai: lich-su
-  nguon:
-  - wiki-ag
-  trich: social deprivation, sleep deprivation, attention fragmentation, and addiction
-  vi_tri: Wikipedia, mục Content
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chỗ chưa chắc: chỉ xác nhận qua nguồn bậc 3; sách không mở được. Lượt 2 nên tìm nguồn bậc 1–2. Chữ cũ: "Haidt liệt kê bốn tổn hại nền tảng… (1) tước đoạt xã hội — tương tác trực tiếp bị thay bằng kết nối nông trên mạng; (2) thiếu ngủ — dùng điện thoại khuya; (3) phân mảnh chú ý — thông báo liên tục; (4) nghiện — thuật toán tối ưu cho thời gian dùng." (và ở mục Lý thuyết: ánh sáng xanh, rèn não chuyển đổi tác vụ…) Chữ mới: "Theo mô tả của sách (chúng tôi không mở được sách gốc), Haidt nêu bốn tổn hại nền tảng: … Đây là các giả thuyết cơ chế của Haidt; chúng tôi chưa kiểm các cơ chế cụ thể bằng nguồn riêng." Lý do: Bỏ các mô tả chi tiết cơ chế (không có nguồn đã mở).'
-- id: n7
-  cau: 'Bốn chuẩn mực của Haidt: hoãn smartphone đến cấp 3, không mạng xã hội trước 16 tuổi, trường học không điện thoại từ đầu đến cuối buổi, và cho trẻ nhiều tự lập, chơi tự do và trách nhiệm hơn ở đời thực.'
-  loai: lich-su
-  nguon:
-  - haidt-site
-  trich: '"Delay smartphones until high school"; "No social media until 16"; "Phone-free schools, bell to bell"; "More independence, free play, and responsibility in the real world"'
-  vi_tri: anxiousgeneration.com/resources/four-norms
-  ket_qua: dung
-  ghi_chu: '"Cấp 3" dịch cho "high school" (Mỹ: lớp 9–12).'
-- id: n8
-  cau: 'Câu hỏi YRBS: trong 12 tháng qua, có bao giờ buồn bã hoặc tuyệt vọng gần như mỗi ngày trong ít nhất hai tuần liên tiếp đến mức bỏ bê các hoạt động thường ngày không?'
-  loai: cong-cu
-  nguon:
-  - cdc1323
-  - mmwr2023
-  trich: In 2023, 40% of high school students felt so sad or hopeless almost every day for at least two weeks in a row that they stopped doing their usual activities.
-  vi_tri: CDC (2024), tr. 56; MMWR 2024, Bảng 2 (past 12 months)
-  ket_qua: dung
-- id: n9
-  cau: 'YRBS 2021: 42% học sinh cấp 3 báo cáo buồn bã dai dẳng; nữ 57%, nam 29%; năm 2011 nữ 36%.'
-  loai: so-lieu
-  nguon:
-  - cdc1121
-  trich: 'In 2021, 42% of high school students felt so sad or hopeless almost every day for at least two weeks in a row that they stopped doing their usual activities. [biểu đồ: Total 42% Male 29% Female 57%; nữ 2011: 36%]'
-  vi_tri: CDC (2023), tr. 60 (biểu đồ theo nhóm) và tr. 61 (xu hướng theo giới)
-  ket_qua: dung
-- id: n10
-  cau: 'YRBS 2021: 22% từng nghiêm túc nghĩ đến tự tử (nữ 30%, nam 14%; nữ năm 2011: 19%); 10% đã từng cố tự tử.'
-  loai: so-lieu
-  nguon:
-  - cdc1121
-  trich: 'In 2021, 22% of high school students seriously considered attempting suicide during the past year. [biểu đồ: Total 22% Male 14% Female 30%; xu hướng nữ 19% → 30%]; Attempted suicide … 8 8 9 7 9 10'
-  vi_tri: CDC (2023), tr. 63 và 64; bảng tóm tắt tr. 58
-  ket_qua: dung
-  ghi_chu: 'Câu hỏi: "trong 12 tháng qua", tự báo cáo.'
-- id: n11
-  cau: 'YRBS 2023: buồn bã dai dẳng 40% (nữ 53%, nam 28%), 30% năm 2013 (nữ 39% năm 2013); LGBTQ+ 65% (2023).'
-  loai: so-lieu
-  nguon:
-  - cdc1323
-  trich: 'In 2023, 40% of high school students felt so sad or hopeless … [biểu đồ: Total 40%, Female 53%, Male 28%, LGBTQ+ 65%; 2013: 30% tổng, nữ 39%]'
-  vi_tri: CDC (2024), tr. 56 (nhóm) và tr. 57 (xu hướng)
-  ket_qua: dung
-  ghi_chu: 'Trang cũ "40% (nữ 53%) so với 30% của năm 2013": khớp.'
-- id: n12
-  cau: 'YRBS 2023: khoảng 9% đã từng cố tự tử.'
-  loai: so-lieu
-  nguon:
-  - cdc1323
-  - mmwr2023
-  trich: Attempted suicide 8 9 7 9 10 9 (2013–2023 Total) (CDC); "9.5% had attempted suicide" (MMWR)
-  vi_tri: CDC (2024), bảng "Progress at a glance"; MMWR su7304a1
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "…10% đã từng cố tự tử (2021), 9% (2023)." Chữ mới: "…10% đã từng cố tự tử (2021), khoảng 9% (2023)." Lý do: Báo cáo xu hướng làm tròn 9, MMWR nêu 9,5%; viết "khoảng".'
-- id: n13
-  cau: 'Tính đến 11/2026, số liệu mới nhất của CDC là năm 2025: buồn bã dai dẳng 33% (nữ 43%, nam 24%), thấp hơn 2023.'
-  loai: thoi-su
-  het_han: '2027-11-01'
-  nguon:
-  - cdc-yif2026
-  ket_qua: dung
-  ghi_chu: 'Trích: "2025: 33% total, 24% male, 43% female" (trang Youth Health in Focus, đề 18/9/2026; cập nhật 14/8/2026). YRBS đợt sau là 2027 (hai năm một lần), nên đặt hạn 2027-11. Câu mới thêm.'
-- id: n14
-  cau: Số liệu YRBS là tự báo cáo, không phải chẩn đoán; câu hỏi là chỉ báo của triệu chứng trầm cảm.
-  loai: dinh-nghia
-  nguon:
-  - cdc1323
-  trich: One question assesses persistent feelings of sadness or hopelessness and is an indicator of depressive symptoms.
-  vi_tri: CDC (2024), mục Mental Health and Suicidal Thoughts and Behaviors
-  ket_qua: dung
-- id: n15
-  cau: YRBS 2021 và các đợt trước không hỏi về mạng xã hội; đợt 2023 mới thêm câu hỏi về tần suất dùng.
-  loai: cong-cu
-  nguon:
-  - mmwr2023
-  trich: '"These new questions assessed social media use" (MMWR su7304a1, danh sách chủ đề mới của 2023)'
-  vi_tri: MMWR su7304a1 (Introduction)
-  ket_qua: da-sua
-  ghi_chu: '"Các đợt trước không hỏi" suy ra từ "new questions" của 2023; chưa đọc bảng câu hỏi các đợt trước. Chỗ chưa chắc nhỏ. Chữ cũ: "Lưu ý quan trọng: YRBS không hỏi gì về mạng xã hội" và "YRBS không đo việc dùng mạng xã hội". Chữ mới: "YRBS 2021 và các đợt trước không hỏi gì về nó; riêng đợt 2023 mới thêm câu hỏi về tần suất dùng". Lý do: Sai với 2023: CDC đã thêm câu hỏi về mạng xã hội.'
-- id: n16
-  cau: 'YRBS 2023 (MMWR 2024): buồn bã dai dẳng 42,6% ở nhóm dùng mạng xã hội nhiều lần mỗi ngày so với 31,9% ở nhóm dùng ít hơn; đây là liên hệ cắt ngang.'
-  loai: so-lieu
-  nguon:
-  - mmwr2023
-  trich: 'Persistent sadness or hopelessness (Table 4 and Table 5): Overall: 42.6% of frequent users vs. 31.9% of less frequent users. [theo kết quả đọc trang su7304a3]'
-  vi_tri: MMWR su7304a3, Bảng 4
-  ket_qua: dung
-  ghi_chu: Câu mới thêm; số theo công cụ đọc web, "frequent" = nhiều lần mỗi ngày trở lên.
-- id: n17
-  cau: Dữ liệu 2021 thu thập mùa thu 2021, giữa đại dịch; các chỉ số như buồn bã dai dẳng đã tăng từ 30% (2013) lên 37% (2019) trước 2021.
-  loai: so-lieu
-  nguon:
-  - mmwr2023
-  - cdc1323
-  trich: Experienced persistent feelings of sadness or hopelessness 30 30 31 37 42 40 (2013, 2015, 2017, 2019, 2021, 2023); the previous YRBS "was not administered until fall 2021 because of the COVID-19 pandemic."
-  vi_tri: CDC (2024), Progress at a glance; MMWR su7304a1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…nhưng CDC nhấn mạnh nhiều chỉ số đã xấu đi từ trước COVID." Chữ mới: "…báo cáo của CDC nêu nhiều chỉ số xấu đi từ 2013 đến 2023, và ở nhiều chỉ số (như buồn bã dai dẳng) số liệu đã tăng từ trước 2021 (30% năm 2013, 37% năm 2019)." Lý do: CDC không "nhấn mạnh" trước COVID; câu mới dựa trên số liệu bảng.'
-- id: n18
-  cau: 'Orben & Przybylski (2019): phân tích đường cong đặc tả trên ba bộ dữ liệu (Monitoring the Future, YRBS, Millennium Cohort Study), 355.358 vị thành niên (chủ yếu 12–18 tuổi), khảo sát 2007–2016.'
-  loai: so-lieu
-  nguon:
-  - orben2019
-  trich: This paper’s analysis pipeline spans three nationally-representative datasets from the US and the UK … encompassing a total of 355,358, predominately 12 to 18-year-old, adolescents surveyed between the years of 2007 and 2016.
-  vi_tri: Orben & Przybylski (2019), Methods (AAM)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…tổng cộng 355.358 vị thành niên, dữ liệu 2007–2016. … chạy mọi đặc tả phân tích hợp lý và báo cáo toàn bộ". Chữ mới: "…355.358 vị thành niên (chủ yếu 12–18 tuổi), khảo sát trong các năm 2007–2016… chạy nhiều đặc tả phân tích hợp lý và báo cáo kết quả". Lý do: "Mọi" và "toàn bộ" mạnh hơn nguồn (nguồn nói SCA áp dụng cho các đặc tả hợp lý).'
-- id: n19
-  cau: 'Liên hệ giữa dùng công nghệ số và sức khỏe tinh thần là âm nhưng rất nhỏ: giải thích tối đa 0,4% phương sai; tác giả kết luận hiệu ứng quá nhỏ để biện minh cho thay đổi chính sách.'
-  loai: phat-hien
-  nguon:
-  - orben2019
-  trich: The association we find between digital technology use and adolescent well-being is negative but small, explaining at most 0.4% of the variation in well-being. Taking the broader context of the data into account suggests that these effects are too small to warrant policy change.
-  vi_tri: Orben & Przybylski (2019), tóm tắt
-  ket_qua: dung
-- id: n20
-  cau: 'Trong cùng bộ dữ liệu, ăn khoai tây cho liên hệ nhỏ gần bằng công nghệ số (YRBS: β −0,042 so với −0,049) và đeo kính còn "tệ hơn" ở một bộ dữ liệu.'
-  loai: so-lieu
-  nguon:
-  - orben2019
-  trich: There is a smaller negative association for eating potatoes (median β = -.042 …); … wearing glasses (median β = -.061, median n = 7,963 …) [bộ MCS]; … technology use (median β = -.049) [YRBS]
-  vi_tri: Orben & Przybylski (2019), Results (so sánh ở YRBS và MCS)
-  ket_qua: da-sua
-  ghi_chu: 'Hệ số của kính: so ở bộ dữ liệu MCS (−0,061, so với hệ số công nghệ của bộ đó; chưa đối chiếu số của MCS), nên chỉ ghi "ở một bộ dữ liệu". Bản tin OII nói glasses "worse association". Chữ cũ: "…tương đương với... ăn khoai tây; đeo kính cận còn "có hại" hơn." và "ăn khoai tây thường xuyên cho liên hệ tương đương, đeo kính cận còn tệ hơn". Chữ mới: "…ăn khoai tây cho liên hệ nhỏ tương tự và đeo kính còn "tệ hơn"." và "(ở YRBS, β −0,042 so với −0,049 của công nghệ số), đeo kính còn "tệ hơn" ở một bộ dữ liệu". Lý do: "Tương đương" thành "gần bằng" kèm số; "kính cận" thành "kính" (nguồn: wearing glasses).'
-- id: n21
-  cau: Trong bộ YRBS, bị bắt nạt có liên hệ tiêu cực với sức khỏe tinh thần gấp 4,3 lần và hút cần sa gấp 2,7 lần so với mức liên hệ của công nghệ số; ngủ đủ và ăn sáng có liên hệ tích cực hơn hẳn.
-  loai: so-lieu
-  nguon:
-  - orben2019
-  trich: the association of mean technology use with well-being (median β = -.049) was exceeded by well-being’s association with being bullied (median β = -.212 …) … smoking marijuana (median β = -.132 …) … eating breakfast (median β = .116 …) and getting enough sleep (median β = .150 …)
-  vi_tri: 'Orben & Przybylski (2019), Results, đoạn YRBS; OII press release: "2.7 times and 4.3 times"'
-  ket_qua: da-sua
-  ghi_chu: 'Tỉ lệ 4,3 = 0,212/0,049; 2,7 = 0,132/0,049 (tính lại). Hệ số của giấc ngủ và ăn sáng dương. Chữ cũ: "bị bắt nạt có liên hệ tiêu cực gấp 4,3 lần, hút cần sa gấp 2,7 lần" (không nêu so với cái gì, bộ dữ liệu nào). Chữ mới: "…(trong bộ YRBS) bị bắt nạt có liên hệ tiêu cực với sức khỏe tinh thần gấp 4,3 lần và hút cần sa gấp 2,7 lần so với mức liên hệ của công nghệ số". Lý do: Nêu rõ mẫu số và bộ dữ liệu.'
-- id: n22
-  cau: 'Hạn chế: dữ liệu 2007–2016, trước kỷ nguyên TikTok và video ngắn, nên có thể khác với việc dùng mạng xã hội hiện nay (hạn chế do chúng tôi nêu).'
-  loai: phat-hien
-  nguon:
-  - orben2019
-  trich: adolescents surveyed between the years of 2007 and 2016
-  vi_tri: Orben & Przybylski (2019), Methods
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "…phe phê bình cho rằng "mạng xã hội 2024" khác hẳn "màn hình 2012"." Chữ mới: "…nên có thể khác với việc dùng mạng xã hội hiện nay (đây là hạn chế do chúng tôi nêu, không phải kết quả của nghiên cứu)." Lý do: Không có nguồn đã mở nói phe phê bình đã nói vậy; giữ như suy luận của trang, ghi rõ.'
-- id: n23
-  cau: 'Orben, Dienlin & Przybylski (2019): dữ liệu dọc Understanding Society (Anh, 2009–2016), hơn 12.000 teen 10–15 tuổi (12.672), phân tích tách giữa người và trong cùng người.'
-  loai: so-lieu
-  nguon:
-  - orben-dienlin2019
-  trich: an eight-wave, large-scale, and nationally representative panel dataset (Understanding Society, the UK Household Longitudinal Study, 2009–2016) … While 12,672 10- to 15-y-olds took part, the precise number of participants for any analysis varied (range, n = 539 to 5,492; median, n = 1,699).
-  vi_tri: Orben (2019, PNAS), Results và Methods
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…theo dõi khoảng 12.000 teen qua nhiều năm". Chữ mới: "…(Anh, 2009–2016) — hơn 12.000 teen 10–15 tuổi tham gia (số người trong mỗi phân tích ít hơn nhiều)…". Lý do: 12.672 tham gia nhưng mỗi phân tích có n = 539–5.492.'
-- id: n24
-  cau: 'Hiệu ứng nhỏ, hai chiều và "tầm thường": dùng mạng xã hội nhiều dự báo hài lòng cuộc sống giảm nhẹ (β −0,04 đến −0,09 ở các mục có ý nghĩa; hệ số trung vị −0,05), hài lòng giảm dự báo dùng nhiều hơn (−0,02); ở nữ rõ hơn ở nam.'
-  loai: phat-hien
-  nguon:
-  - orben-dienlin2019
-  trich: Both median longitudinal effects were trivial in size (social media predicting life satisfaction, β = −0.05; life satisfaction predicting social media use, β = −0.02). … For females, however, social media was a predictor of slightly decreased life satisfaction across all domains, except satisfaction with appearance (b = −0.13 to −0.05 or β = −0.09 to −0.04)
-  vi_tri: Orben (2019, PNAS), Results (Fig. 1–2)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…(β từ -0,04 đến -0,09), nhưng chiều ngược lại cũng đúng… Hiệu ứng ở nữ hơi rõ hơn nam, nhưng vẫn nhỏ". Chữ mới: "…(β từ -0,04 đến -0,09 ở các mục hài lòng có ý nghĩa; hệ số trung vị -0,05)… (hệ số trung vị -0,02). Hiệu ứng ở nữ hơi rõ hơn nam (nữ có tác động ở hầu hết các mục hài lòng, nam chỉ ở hai)". Lý do: Thêm hệ số trung vị và mô tả sự khác biệt giới theo nguồn.'
-- id: n25
-  cau: '(Đã bỏ) Przybylski: 99,75% mức hài lòng của một teen trong một năm không liên quan đến việc họ dùng mạng xã hội nhiều hay ít.'
-  loai: so-lieu
-  ket_qua: da-bo
-  ghi_chu: 'Con số từ lời phát biểu, không có trong bài đã mở (PNAS). Chữ cũ: "Nói như Przybylski: 99,75% mức hài lòng… không liên quan…". Chữ mới: (bỏ) Lý do: Không kiểm được.'
-- id: n26
-  cau: 'Orben và cộng sự (2022): 84.011 người Anh 10–80 tuổi (cắt ngang) và 17.409 người 10–21 tuổi theo dõi dọc, tìm độ tuổi mà dùng mạng xã hội nhiều dự báo hài lòng giảm một năm sau.'
-  loai: so-lieu
-  nguon:
-  - orben2022
-  trich: Our analyses of two UK datasets comprising 84,011 participants (10-80 years old) … Longitudinal analyses of 17,409 participants (10-21 years old) suggest distinct developmental windows of sensitivity to social media in adolescence
-  vi_tri: Orben (2022), tóm tắt
-  ket_qua: dung
-- id: n27
-  cau: 'Các cửa sổ nhạy cảm: nữ 11–13 tuổi, nam 14–15 tuổi, và 19 tuổi ở cả hai giới; hệ số nhỏ (β −0,07 đến −0,13); chiều ngược lại (hài lòng thấp → dùng nhiều) cũng tồn tại, không gắn với tuổi hay giới.'
-  loai: phat-hien
-  nguon:
-  - orben2022
-  trich: These windows occur at different ages for males (14-15 and 19 years old) and females (11-13 and 19 years old). Decreases in life satisfaction ratings also predicted subsequent increases in estimated social media use, however, these were not associated with age or sex.
-  vi_tri: Orben (2022), tóm tắt; Results (age 11 β = −0,09; age 12 −0,12; age 13 −0,07; age 14 −0,10; age 15 −0,12; age 19 nữ −0,13)
-  ket_qua: dung
-- id: n28
-  cau: Các tác giả suy đoán cửa sổ sớm có thể liên quan đến dậy thì (nữ dậy thì sớm hơn nam), nhưng dữ liệu không đo dậy thì nên chưa kiểm được.
-  loai: phat-hien
-  nguon:
-  - orben2022
-  trich: Speculatively, the sex difference in timing suggested that early increases in sensitivity to social media might be due to maturational processes such as puberty … these explanations cannot be tested directly in this dataset
-  vi_tri: Orben (2022), Discussion
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…trùng với thời điểm dậy thì (nữ dậy thì sớm hơn nam)." Chữ mới: "Các tác giả suy đoán rằng cửa sổ sớm có thể liên quan đến dậy thì… nhưng dữ liệu không đo dậy thì nên chưa kiểm được." Lý do: Nguồn nêu là suy đoán ("speculatively").'
-- id: n29
-  cau: Hiệu ứng trung bình nhỏ không có nghĩa mọi teen đều như nhau — có các độ tuổi mà hiệu ứng rõ hơn một chút.
-  loai: phat-hien
-  nguon:
-  - orben2022
-  trich: distinct developmental windows of sensitivity to social media in adolescence
-  vi_tri: Orben (2022), tóm tắt
-  ket_qua: dung
-  ghi_chu: Trang cũ viết "có nhóm tuổi dễ tổn thương hơn"; giữ vì "windows of sensitivity", nhưng "tổn thương" là cách diễn đạt của trang.
-- id: n30
-  cau: 'Nhãn "Vững chắc": sức khỏe tâm thần tự báo cáo của teen Mỹ xấu đi rõ rệt trong thập kỷ 2010.'
-  loai: nhan
-  nhan: vung-chac
-  co_so:
-  - cdc1121
-  - cdc1323
-  - cdc-yif2026
-  ly_do: 'Khảo sát đại diện quốc gia hai năm một lần của CDC, nhất quán qua nhiều đợt: buồn bã dai dẳng 28% (2011), 30% (2013), 37% (2019), 42% (2021), 40% (2023), 33% (2025); nữ 36% → 57% (2011–2021); nghĩ đến tự tử 16% → 22% (2011–2021). Là dữ liệu giám sát lặp lại có hệ thống (mức "tái lập" mạnh với đo lường lặp lại), nhưng chỉ ở Mỹ và là tự báo cáo triệu chứng; nhãn nói về xu hướng tự báo cáo, không phải tỉ lệ rối loạn lâm sàng hay nguyên nhân. Thước đo mục 4 viết cho khẳng định nghiên cứu; với dữ liệu giám sát lặp lại thì coi nhiều đợt cùng chiều như "tái lập" (chỗ khó: lượt 2 và review xem lại).'
-  nguon:
-  - cdc1121
-  - cdc1323
-  - cdc-yif2026
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ khó: thước đo nhãn dựa trên phân tích tổng hợp, ở đây không có; dùng khảo sát giám sát lặp lại. Chữ cũ: "…khủng hoảng là có thật, không phải ảo giác truyền thông." và tiêu đề "sức khỏe tâm thần của teen (Mỹ) xấu đi rõ rệt trong thập kỷ 2010". Chữ mới: "…mức tự báo cáo tăng là có thật, nhưng đó là tự báo cáo triệu chứng, không phải chẩn đoán, và nó chỉ nói về teen Mỹ." Số liệu thêm 2025: 33%. Lý do: Bỏ "khủng hoảng" và "ảo giác truyền thông" (cách nói mạnh); thêm giới hạn và số 2025.'
-- id: n31
-  cau: 'Nhãn "Khá vững": ở cấp độ cá nhân, thời gian dùng công nghệ chỉ liên hệ yếu với sức khỏe tinh thần.'
-  loai: nhan
-  nhan: kha-vung
-  co_so:
-  - orben2019
-  - orben-dienlin2019
-  - orben2022
-  - teague2026
-  ly_do: 'Nhiều nghiên cứu lớn cùng chiều: tối đa 0,4% phương sai (355.358 teen; Orben & Przybylski 2019), β dọc −0,04 đến −0,13 và hai chiều (Orben và cộng sự 2019, 2022), phân tích tổng hợp 2026 trên 153 nghiên cứu dọc: r = 0,09–0,21 cho trầm cảm, hành vi, ý nghĩ tự hại. Nhưng đo bằng ước lượng tự báo cáo thô, kết quả khác nhau theo phân tích (0,4% phương sai tương ứng r khoảng 0,06, nhỏ hơn r 0,09–0,21), chủ yếu mẫu phương Tây, thiếu thực nghiệm. Khá vững.'
-  nguon:
-  - orben2019
-  - orben-dienlin2019
-  - orben2022
-  - teague2026
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nghiên cứu lớn nhất… cho tối đa 0,4% phương sai; các nghiên cứu dọc cho hệ số β khoảng -0,04 đến -0,13… Lưu ý: … dữ liệu chủ yếu từ trước kỷ nguyên video ngắn." Chữ mới: "…Một phân tích tổng hợp 2026 trên 153 nghiên cứu dọc… thấy mạng xã hội liên hệ nhất quán nhưng khiêm tốn… (r = 0,09–0,21)… phần lớn dữ liệu từ trước kỷ nguyên video ngắn." Lý do: Thêm phân tích tổng hợp 2026 (nguồn bắt buộc của lời giao: các phân tích tổng hợp mới).'
-- id: n32
-  cau: 'Teague và cộng sự (2026, JAMA Pediatrics): phân tích tổng hợp 153 nghiên cứu dọc (115 nhóm, 1.072 cỡ hiệu ứng, đăng ký trước PROSPERO); mạng xã hội liên hệ với trầm cảm, vấn đề hành vi, ý nghĩ tự hại và dùng chất (r = 0,09–0,21), thành tích học tập và tự nhận thức kém hơn (r = −0,07 đến −0,14); các tác giả nêu liên hệ khiêm tốn.'
-  loai: so-lieu
-  nguon:
-  - teague2026
-  trich: Social media use was linked to higher depression, behavioral problems, self-injurious thoughts, and substance use (r = 0.09 to 0.21). … lower academic achievement and poorer self-perception (r = −0.07 to −0.14). [theo kết quả đọc trang bài]
-  vi_tri: Teague (2026), Abstract/Results
-  ket_qua: dung
-  ghi_chu: 'Câu mới thêm; không ghi cỡ mẫu người vì trang bài tự mâu thuẫn ("18 933 participants" và "18 933 articles"). Đọc qua công cụ đọc web, chưa toàn văn: lượt 2 nên mở lại.'
-- id: n33
-  cau: 'Nhãn "Đang tranh cãi": mạng xã hội có phải nguyên nhân chính của khủng hoảng không; Haidt (2024) cho rằng có; các nhà nghiên cứu như Odgers phản biện; Tổng Y sĩ Mỹ (2023) khuyến cáo thận trọng.'
-  loai: nhan
-  nhan: tranh-cai
-  co_so:
-  - orben2019
-  - orben2022
-  - teague2026
-  - wiki-ag
-  - sg2023
-  ly_do: 'Bằng chứng chất lượng cao không thống nhất về chỗ đáng kể nhất: hiệu ứng trung bình nhỏ và hai chiều (Orben và cộng sự), phân tích tổng hợp 2026 thấy liên hệ nhất quán nhưng khiêm tốn, trong khi Haidt cho rằng nhân quả; chưa có can thiệp thực nghiệm đủ mạnh. Odgers và Surgeon General: chỉ đọc qua nguồn thứ cấp, chưa mở nguồn gốc (Nature bị chặn, hhs.gov 403). Nhãn tranh cãi cho phần nhân quả.'
-  nguon:
-  - orben2019
-  - orben2022
-  - teague2026
-  - wiki-ag
-  - sg2023
-  ket_qua: da-sua
-  ghi_chu: 'Chỗ chưa chắc: vế Odgers và Surgeon General chỉ qua nguồn thứ cấp. Chữ cũ: "Haidt (2024) nói có, dựa trên trùng khớp thời điểm (~2012), cơ chế hợp lý (ngủ, so sánh, bắt nạt) và dữ liệu nhiều nước. Giới nghiên cứu chuyên sâu phản biện: … nhiều giải thích khác chưa loại trừ được (đại dịch, áp lực học tập, bất bình đẳng, lo âu khí hậu, thay đổi cách hỏi khảo sát)." Chữ mới: "Haidt (2024) cho rằng có. Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp… Một phân tích tổng hợp 2026 thấy liên hệ nhỏ nhưng nhất quán, và nhóm Orben thấy hiệu ứng trung bình nhỏ và hai chiều." Lý do: Bỏ "dựa trên…" và danh sách giải thích khác (không kiểm được).'
-- id: n34
-  cau: 'Odgers (Nature, 2024), theo tóm tắt thứ cấp: phần lớn bằng chứng thực nghiệm không thấy hiệu ứng lớn hay nhất quán, và quan hệ ngược chiều có thể giải thích tương quan.'
-  loai: phat-hien
-  nguon:
-  - wiki-ag
-  trich: In a Nature review, she argued most empirical evidence didn't find a large or consistently negative effect and that reverse causation might explain the correlation.
-  vi_tri: Wikipedia (tóm tắt thứ cấp qua công cụ đọc web), mục Criticism
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chỗ chưa chắc: Nature (doi 10.1038/d41586-024-00902-2) chuyển hướng đăng nhập, chưa mở; nguồn bậc 3. Lượt 2 nên tìm bản mở. Chữ cũ: "Giới nghiên cứu chuyên sâu phản biện: bằng chứng nhân quả còn yếu, hiệu ứng đo được nhỏ…" Chữ mới: "Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp mà chúng tôi đọc được (chưa mở bản gốc): …" Lý do: Gán cho một người phản biện cụ thể với nguồn nói rõ thứ cấp; bỏ "giới nghiên cứu chuyên sâu" (không kiểm được).'
-- id: n35
-  cau: 'Tổng Y sĩ Mỹ (2023) ra khuyến cáo thận trọng: mạng xã hội có thể có cả lợi và hại, và cần thêm dữ liệu từ chính các công ty công nghệ.'
-  loai: phat-hien
-  nguon:
-  - sg2023
-  trich: '"social media presents a meaningful risk of harm to youth, while also providing benefits"; asks that technology companies share data … with independent researchers (đoạn trích qua kết quả tìm kiếm, không phải trang đã mở)'
-  vi_tri: HHS (2023), Advisory (hhs.gov 403, không mở được)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chỗ chưa chắc: không mở được trang HHS (403); lượt 2 và review nên mở. Đã viết "theo trang của HHS, chúng tôi chỉ đọc được đoạn trích". Chữ cũ: "…ra khuyến cáo thận trọng: mạng xã hội có cả lợi và hại, cần thêm dữ liệu từ chính các công ty công nghệ." Chữ mới: "…mạng xã hội có thể có cả lợi và hại, và cần thêm dữ liệu từ chính các công ty công nghệ (theo trang của HHS, chúng tôi chỉ đọc được đoạn trích)." Lý do: Làm mềm vì nguồn chưa mở trực tiếp.'
-- id: n36
-  cau: 'Nhãn "Đã bị bác bỏ": "mạng xã hội hoàn toàn vô hại với teen".'
-  loai: nhan
-  nhan: bac-bo
-  co_so:
-  - teague2026
-  - orben2022
-  ly_do: Phân tích tổng hợp 2026 (153 nghiên cứu dọc) thấy mạng xã hội liên hệ nhất quán, khiêm tốn với trầm cảm và ý nghĩ tự hại (r = 0,09–0,21); Orben và cộng sự (2022) thấy các độ tuổi mà dùng nhiều dự báo hài lòng giảm nhẹ. Khẳng định "hoàn toàn vô hại" trái với các kết quả này. Nhãn xét theo đồng thuận của hai nguồn đã mở; liên hệ nhỏ và chưa nhân quả nên chỉ bác bỏ "hoàn toàn vô hại", không khẳng định có hại.
-  nguon:
-  - teague2026
-  - orben2022
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…cửa sổ nhạy cảm quanh tuổi dậy thì (nữ 11–13, nam 14–15) có bằng chứng dọc; nội dung độc hại (bắt nạt mạng, nội dung cổ vũ tự hại, so sánh ngoại hình) là rủi ro thật với nhóm dễ tổn thương." Chữ mới: "…phân tích tổng hợp 2026 thấy mạng xã hội liên hệ nhất quán với trầm cảm và ý nghĩ tự hại ở mức nhỏ (r = 0,09–0,21), và Orben và cộng sự (2022) thấy một nghiên cứu dọc có các độ tuổi…". Lý do: Bỏ "nội dung độc hại… rủi ro thật" (không có nguồn đã mở); thay bằng nguồn đọc được.'
-- id: n37
-  cau: Các cửa sổ nhạy cảm khác nhau theo tuổi và giới (Orben và cộng sự, 2022); các yếu tố khác (tính cách, môi trường gia đình) có thể liên quan nhưng chúng tôi chưa có nguồn đã mở.
-  loai: phat-hien
-  nguon:
-  - orben2022
-  trich: distinct developmental windows of sensitivity to social media in adolescence … at different ages for males … and females
-  vi_tri: Orben (2022), tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Mô hình nhạy cảm khác biệt (differential susceptibility)… Tuổi dậy thì (não bộ đang tái cấu trúc mạnh, nhạy cảm với đánh giá xã hội), giới tính, tính cách (hay lo âu, cầu toàn) và môi trường gia đình đều có thể khuếch đại hoặc giảm nhẹ tác động." Chữ mới: "Mức độ nhạy cảm khác nhau giữa các nhóm… Orben và cộng sự (2022) thấy các cửa sổ nhạy cảm khác nhau theo tuổi và giới. Các yếu tố khác… chúng tôi chưa có nguồn đã mở…, nên chỉ nêu như một khả năng." Lý do: Bỏ tên "differential susceptibility" và các yếu tố không có nguồn.'
-- id: n38
-  cau: Các nghiên cứu ở trên dùng ước lượng thời gian dùng do teen tự báo cáo; nghiên cứu tương lai có thể đo cách dùng chứ không chỉ số giờ (ví dụ hai teen cùng lướt 3 tiếng là ví dụ giả định).
-  loai: phat-hien
-  nguon:
-  - orben2022
-  trich: correlating a single-item life satisfaction measure and participant estimates of how much time they spend using social media on a typical day
-  vi_tri: Orben (2022), Results (Fig. 1)
-  ket_qua: da-sua
-  ghi_chu: 'Ví dụ hai teen: gia-dinh. Chữ cũ: "…Hai teen cùng lướt 3 tiếng/ngày có thể đang làm hai việc hoàn toàn khác: … Nghiên cứu tương lai cần đo cách dùng… và cần dữ liệu thực từ công ty công nghệ thay vì tự báo cáo." Chữ mới: "…Các nghiên cứu ở trên dùng ước lượng thời gian dùng do teen tự báo cáo (Orben và cộng sự, 2022)… nghiên cứu tương lai có thể đo cách dùng…". Lý do: Bỏ "cần dữ liệu thực từ công ty" (không có nguồn mở); nêu bằng chứng về tự báo cáo.'
-- id: n39
-  cau: Dữ liệu cắt ngang không cho biết chiều nhân quả; dữ liệu dọc cho thấy cả hai chiều tồn tại (dùng nhiều → hài lòng giảm nhẹ; hài lòng giảm → dùng nhiều); các phân tích tổng hợp thấy liên hệ nhỏ hoặc không đáng kể và bằng chứng thực nghiệm còn lẫn lộn (Orben và cộng sự, 2022); muốn kết luận nhân quả cần can thiệp.
-  loai: phat-hien
-  nguon:
-  - orben2022
-  - orben-dienlin2019
-  trich: Meta-analyses have identified small or negligible negative links between social media use and well-being, while experimental evidence is mixed. Longitudinal observational studies … have found that they are either reciprocal
-  vi_tri: Orben (2022), Introduction
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Hầu hết dữ liệu là cắt ngang… buồn cũng dẫn đến dùng nhiều hơn (trốn tránh, tìm đồng cảm)… loại nghiên cứu này còn rất ít." Chữ mới: "Dữ liệu cắt ngang… Dữ liệu dọc… cho thấy cả hai chiều đều tồn tại… Theo Orben và cộng sự (2022), các phân tích tổng hợp thấy liên hệ nhỏ hoặc không đáng kể và bằng chứng thực nghiệm còn lẫn lộn". Lý do: Bỏ "trốn tránh, tìm đồng cảm" (cơ chế, không kiểm được) và "còn rất ít" (nguồn nói "mixed").'
-- id: n40
-  cau: 'Mục 1 (đừng chỉ đếm giờ): số giờ dùng công nghệ liên hệ yếu với sức khỏe tinh thần ở cấp độ dân số; chưa có nghiên cứu đã mở cho thấy "cách dùng" quan trọng hơn "số giờ"; hỏi con đang xem gì là thông lệ hợp lý.'
-  loai: loi-khuyen
-  nguon:
-  - orben2019
-  trich: explaining at most 0.4% of the variation in well-being
-  vi_tri: Orben & Przybylski (2019), tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: ":nhan[kha-vung] "Số giờ màn hình liên hệ yếu với sức khỏe tinh thần; cách dùng mới quan trọng. Dấu hiệu đáng lo… so sánh bản thân liên tục, bị bắt nạt/bình luận độc hại, xem nội dung cổ vũ tự hại hoặc rối loạn ăn uống, và dùng điện thoại để trốn tránh mọi cảm xúc khó chịu." Chữ mới: "Theo Orben và Przybylski (2019), số giờ… liên hệ yếu… Chúng tôi chưa có nghiên cứu đã mở cho thấy "cách dùng" quan trọng hơn "số giờ"; hỏi con đang xem gì… là thông lệ hợp lý, không phải kết quả của một nghiên cứu cụ thể." Lý do: Bỏ "cách dùng mới quan trọng" và danh sách "dấu hiệu đáng lo" (không có nguồn; gần với dấu hiệu lâm sàng).'
-- id: n41
-  cau: 'Nhãn "Khá vững": số giờ dùng công nghệ liên hệ yếu với sức khỏe tinh thần, nên chỉ đếm giờ có thể bỏ sót nhiều điều.'
-  loai: nhan
-  nhan: kha-vung
-  co_so:
-  - orben2019
-  - teague2026
-  ly_do: 'Như n31: liên hệ yếu theo thời gian dùng (0,4% phương sai) nhưng phân tích tổng hợp 2026 thấy liên hệ nhất quán khiêm tốn; chủ yếu mẫu phương Tây, đo tự báo cáo. Khá vững.'
-  nguon:
-  - orben2019
-  - teague2026
-  ket_qua: dung
-- id: n42
-  cau: 'Ngủ đủ giấc liên hệ với sức khỏe tinh thần mạnh hơn hẳn thời gian dùng màn hình (YRBS: β 0,150 so với −0,049); đây là liên hệ quan sát, chưa chứng minh rằng ngủ đủ cải thiện sức khỏe tinh thần.'
-  loai: so-lieu
-  nguon:
-  - orben2019
-  trich: a larger positive association for eating breakfast (median β = .116 …) and getting enough sleep (median β = .150, median n = 56,552, partial 𝜂2 = .022 …)
-  vi_tri: Orben & Przybylski (2019), Results (YRBS)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Trong cùng bộ dữ liệu của Orben và Przybylski, ngủ đủ giấc liên hệ… mạnh hơn hẳn thời gian dùng màn hình." (tiêu đề "…là can thiệp rẻ và chắc chắn nhất", chip vững chắc) Chữ mới: "…(ở YRBS: β 0,150 so với −0,049). Đó là liên hệ quan sát, chưa chứng minh rằng ngủ đủ giấc cải thiện sức khỏe tinh thần." Tiêu đề "Bảo vệ giấc ngủ là một việc đáng làm", chip khá vững, giữ id cũ. Lý do: "Can thiệp… chắc chắn nhất" không có nguồn (chỉ liên hệ quan sát); hạ Vững chắc → Khá vững.'
-- id: n43
-  cau: Quy tắc cụ thể (sạc điện thoại ngoài phòng ngủ, không lướt trước giờ ngủ 30–60 phút) là thông lệ thực hành, chưa phải kết quả của nghiên cứu đã kiểm.
-  loai: loi-khuyen
-  nguon:
-  - orben2019
-  trich: getting enough sleep (median β = .150 …)
-  vi_tri: Orben & Przybylski (2019), Results
-  ket_qua: da-lam-mem
-  ghi_chu: 'Các con số 30–60 phút không có nguồn đã mở. Chữ cũ: "Quy tắc đơn giản, dễ thực hiện: điện thoại sạc ngoài phòng ngủ, không lướt trước giờ ngủ 30–60 phút." Chữ mới: "Quy tắc cụ thể… là thông lệ thực hành, chưa phải kết quả của nghiên cứu mà chúng tôi đã kiểm." Lý do: Nêu rõ không có nguồn.'
-- id: n44
-  cau: 'Nhãn "Khá vững": giấc ngủ đủ liên hệ với sức khỏe tinh thần mạnh hơn thời gian dùng màn hình.'
-  loai: nhan
-  nhan: kha-vung
-  co_so:
-  - orben2019
-  ly_do: 'Hai bộ dữ liệu lớn (YRBS và MTF; MTF: β sleep 0,246 so với −0,006) cùng chiều trong một bài; chưa mở được phân tích tổng hợp hay thử nghiệm đối chứng về can thiệp giấc ngủ. Khá vững cho liên hệ, không cho tác dụng nhân quả.'
-  nguon:
-  - orben2019
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: ":nhan[vung-chac]" cho "Bảo vệ giấc ngủ là can thiệp rẻ và chắc chắn nhất". Chữ mới: ":nhan[kha-vung]" cho "Bảo vệ giấc ngủ là một việc đáng làm". Lý do: Chỉ có liên hệ quan sát từ một bài; không đạt "Vững chắc".'
-- id: n45
-  cau: 'Mục 3: Orben và cộng sự (2022) thấy các cửa sổ (nữ 11–13, nam 14–15, 19 tuổi) trong đó dùng nhiều dự báo hài lòng giảm nhẹ một năm sau; chỉ một nghiên cứu dọc ở Anh, các tác giả chỉ suy đoán về dậy thì; trò chuyện với con thay vì chỉ cấm là gợi ý thực hành hợp lý (không phải kết quả nghiên cứu).'
-  loai: loi-khuyen
-  nguon:
-  - orben2022
-  trich: distinct developmental windows of sensitivity to social media in adolescence, when higher estimated social media use predicts a decrease in life satisfaction ratings one year later
-  vi_tri: Orben (2022), tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Cửa sổ nhạy cảm… là lúc não bộ nhạy cảm nhất với đánh giá xã hội. Đây là giai đoạn nên trò chuyện nhiều hơn về so sánh trên mạng, áp lực ngoại hình và bắt nạt mạng — thay vì chỉ ra lệnh cấm." Chữ mới: "…đây là một nghiên cứu dọc ở Anh, và các tác giả chỉ suy đoán về dậy thì. Một gợi ý thực hành hợp lý (không phải kết quả của nghiên cứu): … trò chuyện với con về những điều con gặp trên mạng có thể hữu ích hơn chỉ ra lệnh cấm." Lý do: Bỏ "não bộ nhạy cảm nhất với đánh giá xã hội" (không có nguồn đã mở).'
-- id: n46
-  cau: 'Nhãn "Khá vững": chú ý ở ngưỡng dậy thì (các cửa sổ nhạy cảm).'
-  loai: nhan
-  nhan: kha-vung
-  co_so:
-  - orben2022
-  ly_do: 'Một nghiên cứu dọc lớn (17.409 người) ở Anh thấy các cửa sổ nhạy cảm; chưa có tái lập hay phân tích tổng hợp; hệ số nhỏ và tác giả chỉ suy đoán về dậy thì. Theo mục 4, nhiều nghiên cứu cùng chiều mới đạt Khá vững; một nghiên cứu thì dưới mức ấy: chỗ khó: lượt 2 và review cân nhắc hạ xuống "chưa đủ bằng chứng" hay giữ.'
-  nguon:
-  - orben2022
-  ket_qua: dung
-  ghi_chu: 'Chỗ khó: một nghiên cứu, chưa có tái lập; giữ chip khá vững như trang gốc nhưng nên xem lại.'
-- id: n47
-  cau: 'Mục 4: nếu một bạn trẻ buồn bã kéo dài, mất hứng thú, nói về cái chết hoặc tự làm hại mình, đó là lúc cần người có chuyên môn; chỉ chuyên gia mới chẩn đoán được; WHO ghi nhận nhiều vấn đề sức khỏe tâm thần tuổi vị thành niên chưa được nhận ra và chưa được điều trị, và kỳ thị là một rào cản; xem Hỗ trợ.'
-  loai: lam-sang
-  nguon:
-  - who-adol2025
-  trich: adolescent mental health conditions "remain largely unrecognized and untreated"; "stigma (affecting readiness to seek help)" and "barriers to accessing care"
-  vi_tri: WHO (2025), Adolescent mental health
-  ket_qua: da-sua
-  ghi_chu: 'Lời dẫn an toàn theo lời giao (không chẩn đoán, không liệt kê dấu hiệu để tự đối chiếu, không chi tiết về cách tự hại). Đã bỏ chip vững chắc: không có nguồn đã mở nói "nên đi khám khi…" như một khẳng định nghiên cứu; giữ id cũ. Chữ cũ: ":nhan[vung-chac]" "Buồn bã kéo dài trên hai tuần, mất hứng thú với mọi thứ, nói về cái chết hoặc tự làm hại mình — đó là lúc cần bác sĩ tâm thần/nhà tâm lý… Tại Việt Nam, gọi 115 khi khẩn cấp. Trầm cảm tuổi teen là bệnh lý có thể điều trị được." Chữ mới: "Nếu một bạn trẻ buồn bã kéo dài, mất hứng thú, nói về cái chết hoặc tự làm hại mình, đó là lúc cần người có chuyên môn… Chỉ chuyên gia mới chẩn đoán được… Xem [Hỗ trợ]." Tiêu đề "Khi lo về trầm cảm hoặc tự hại: tìm người có chuyên môn", bỏ chip, giữ id cũ. Lý do: Bỏ "hai tuần" (dạng tiêu chí chẩn đoán), "bệnh lý có thể điều trị được" (WHO fact sheet không nói điều đó), số 115 (dẫn Hỗ trợ theo lời giao).'
-- id: n48
-  cau: Các lời dẫn an toàn khác (khung ">" ở "Điều gì đang xảy ra?", ngộ nhận "cứ thu điện thoại là hết trầm cảm") chỉ nói nên nói với người tin cậy hay người có chuyên môn và dẫn Hỗ trợ, không số điện thoại không kiểm.
-  loai: loi-khuyen
-  nguon:
-  - who-adol2025
-  trich: stigma (affecting readiness to seek help); barriers to accessing care
-  vi_tri: WHO (2025)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "hãy gọi ngay 115 (cấp cứu)… Trầm cảm là bệnh lý có thể điều trị được"; "…gọi 115 khi khẩn cấp hoặc tìm bác sĩ tâm thần/nhà tâm lý." Chữ mới: "hãy nói ngay với người bạn tin cậy, thầy cô hoặc người có chuyên môn… xem Hỗ trợ… Tìm giúp đỡ là dấu hiệu của sức mạnh." Lý do: Theo lời giao: dẫn Hỗ trợ; bỏ "bệnh lý có thể điều trị được" và số 115.'
-- id: n49
-  cau: Liên kết [Hỗ trợ](/psyche/ho-tro/) (khung đầu bài, mục 4, ngộ nhận) và liên kết tới Bắt nạt và áp lực thi cử trỏ tới trang của site.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm: ho-tro/index.md và kham-pha/phat-trien/tam-ly-hoc-duong.md có trong worktree; trang.yml có ho-tro/index.'
-- id: n50
-  cau: 'Việt Nam có khảo sát quốc gia riêng (NAMHS 2021): 5.996 hộ gia đình, 10–17 tuổi, phỏng vấn chẩn đoán; tỉ lệ có một trong sáu rối loạn tâm thần trong 12 tháng là 3,3% ở Việt Nam (12,1% Kenya; 5,5% Indonesia); ý nghĩ tự tử 12 tháng khoảng 1,4% (KTC 1,0–1,9%), cố tự tử khoảng 0,2% (0,1–0,3%).'
-  loai: so-lieu
-  nguon:
-  - namhs-lancet2024
-  trich: Prevalence of any mental disorder in the past 12 months was 12·1% (95% CI 10·9-13·5) in Kenya, 5·5% (4·3-6·9) in Indonesia, and 3·3% (2·7-4·1) in Viet Nam. … suicide ideation ranging from 1·4% in Indonesia (1·0-2·0) and Viet Nam (1·0-1·9) … suicide attempts ranging from 0·2% in Indonesia (0·1-0·4) and Viet Nam (0·1-0·3)
-  vi_tri: Lancet (2024), tóm tắt, Findings
-  ket_qua: da-sua
-  ghi_chu: 'Câu mới thêm. Số "5.996 hộ" theo tóm tắt (Viet Nam). Ý nghĩ tự tử 1,4% là con số chung ghi cho Indonesia và Việt Nam trong tóm tắt (KTC khác nhau); số cố tự tử 0,2% cũng vậy. Chữ cũ: "Chưa có khảo sát quy mô quốc gia kiểu YRBS cho teen Việt Nam". Chữ mới: "Việt Nam có các khảo sát quốc gia riêng, đo khác nên không so trực tiếp được: NAMHS (2021…)". Lý do: Sai: có khảo sát quốc gia (NAMHS 2021; cũng GSHS Việt Nam 2019 theo một nghiên cứu về bạo lực học đường, chưa dùng trên trang).'
-- id: n51
-  cau: NAMHS đo bằng phỏng vấn chẩn đoán còn YRBS bằng một câu hỏi tự báo cáo, nên không thể kết luận teen Việt "khỏe hơn" hay "ít buồn hơn" teen Mỹ; không thấy dữ liệu mạng xã hội trong tóm tắt NAMHS.
-  loai: phat-hien
-  nguon:
-  - namhs-lancet2024
-  - cdc1323
-  trich: Six mental disorders … were assessed with the Diagnostic Interview Schedule for Children, Version 5 (NAMHS); One question assesses persistent feelings of sadness or hopelessness and is an indicator of depressive symptoms (CDC)
-  vi_tri: Lancet (2024), Methods; CDC (2024)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Suy luận về không so sánh được đã ghi rõ trên trang. Chữ cũ: (không có) Chữ mới: "Số này thấp so với tỉ lệ buồn bã tự báo cáo ở Mỹ, nhưng đó là hai cách đo khác nhau… nên không thể kết luận teen Việt "khỏe hơn" hay "ít buồn hơn"." Lý do: Câu mới thêm để không để lại ấn tượng sai khi đặt số Mỹ và số Việt cạnh nhau.'
-- id: n52
-  cau: 'Dam và cộng sự (2023): khảo sát trực tuyến 1.891 người tham gia ở Hà Nội, Tuyên Quang, Cần Thơ (9–10/2021; tuổi trung bình 17); 98,4% dùng mạng xã hội; FOMO càng cao thì PHQ-9 càng cao; FOMO và dùng Internet có vấn đề đi kèm tự hại/tự tử.'
-  loai: so-lieu
-  nguon:
-  - dam2023
-  trich: An online cross-sectional study was conducted in three cities in Vietnam (Hanoi, Tuyen Quang, and Can Tho) from September through to October 2021. … 1891 participants were recruited, with 98.4% having access to social media. … "FOMO score" and "self-harm and suicide" were positive factors of the PHQ-9 score … In terms of self-harm and suicide, "FOMO score" and "Problematic Internet use" were positive factors
-  vi_tri: Dam (2023), Abstract và Results (tuổi TB 17,0, SD 2,8)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…khảo sát trực tuyến 1.891 vị thành niên ở Hà Nội, Tuyên Quang và Cần Thơ…: FOMO và việc dùng Internet có vấn đề cùng đi kèm nguy cơ tự hại/tự tử cao hơn." Chữ mới: "…khảo sát trực tuyến 1.891 người tham gia… (tháng 9–10/2021; tuổi trung bình 17)… đi kèm với tự hại/tự tử." Lý do: "Vị thành niên" → "người tham gia" (tuổi trung bình 17, SD 2,8); bỏ "nguy cơ cao hơn" (nguồn nói "yếu tố dương").'
-- id: n53
-  cau: Một nghiên cứu cắt ngang (Vũ Thị Thúy Hằng & Nguyễn Thị Vân, công bố 25/12/2024, VNU Journal of Economics and Business) dùng thang BSMAS trên 13–17 tuổi, chọn mẫu quả cầu tuyết, ghi nhận tỉ lệ "nghiện mạng xã hội" cao, nữ dễ bị hơn nam.
-  loai: so-lieu
-  nguon:
-  - vu2024
-  trich: A cross-sectional study was conducted in Vietnam with participants aged 13 to under 18. Snowball sampling was used … The study found a high prevalence of social media addiction among Vietnamese adolescents, with females being more susceptible than males.
-  vi_tri: Vu & Nguyen (2024), tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Một nghiên cứu tại Đại học Thương mại (chấp nhận đăng cuối 2024) dùng thang BSMAS trên teen 13–18 tuổi… mẫu thuận tiện". Chữ mới: "…(Vũ Thị Thúy Hằng và Nguyễn Thị Vân, công bố 25/12/2024 trên VNU Journal of Economics and Business) dùng thang BSMAS trên 13–17 tuổi, chọn mẫu theo kiểu quả cầu tuyết…". Danh mục nguồn đã sửa. Lý do: Nơi đăng là VNU Journal of Economics and Business (không phải "Đại học Thương mại"); tuổi 13 đến dưới 18; mẫu quả cầu tuyết, không phải "thuận tiện".'
-- id: n54
-  cau: 'Các nghiên cứu Việt Nam về mạng xã hội ở trên là cắt ngang, mẫu không đại diện, đo bằng bảng hỏi trực tuyến: chỉ cho thấy "đi cùng nhau".'
-  loai: phat-hien
-  nguon:
-  - dam2023
-  - vu2024
-  trich: An online cross-sectional study … Snowball sampling was used
-  vi_tri: Dam (2023); Vu & Nguyen (2024)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "…tất cả đều là nghiên cứu cắt ngang, mẫu thuận tiện…" Chữ mới: "…các nghiên cứu này là cắt ngang, mẫu không đại diện, và đo bằng bảng hỏi trực tuyến…" Lý do: Phân biệt với khảo sát quốc gia NAMHS; mẫu thuận tiện → không đại diện.'
-- id: n55
-  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu dọc đủ lớn ở Việt Nam về mạng xã hội và sức khỏe tâm thần teen để trả lời câu hỏi nhân quả.
-  loai: thoi-su
-  het_han: '2028-11-01'
-  nguon:
-  - tim-kiem-vn-mxh
-  ket_qua: da-sua
-  ghi_chu: 'Europe PMC 10/11/2026: các kết quả đầu không phải nghiên cứu dọc về mạng xã hội và sức khỏe tâm thần teen Việt Nam (có nghiên cứu dọc khác về cân nặng, v.v.); chưa đọc hết 1.728 kết quả, chưa tìm Google Scholar hay tạp chí trong nước: lượt 2 và review nên tìm thêm. Chữ cũ: "…chúng ta chưa có dữ liệu dọc đủ tốt để trả lời." Chữ mới: "Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu dọc đủ lớn…". Lý do: Quy tắc câu thời sự: mốc, hạn, nguồn là lần tìm.'
-- id: n56
-  cau: (Đã bỏ) TikTok và video ngắn chiếm vị trí áp đảo trong thời gian online của teen Việt; áp lực học tập và kỳ vọng gia đình là nguồn stress lớn được ghi nhận trong nhiều khảo sát trong nước.
-  loai: phat-hien
-  ket_qua: da-bo
-  ghi_chu: 'Không có nguồn đã mở cho tỉ trọng TikTok; áp lực học tập chỉ có ở trang khác (Trần 2024). Chữ cũ: "TikTok và video ngắn chiếm vị trí áp đảo trong thời gian online của teen Việt… áp lực học tập và kỳ vọng gia đình là nguồn stress lớn được ghi nhận trong nhiều khảo sát trong nước." Chữ mới: "…chúng tôi không có nguồn đã mở về tỉ trọng TikTok… áp lực học tập là một yếu tố có thể liên quan (xem [Bắt nạt và áp lực thi cử]), nhưng đó là giả thuyết." Lý do: Không kiểm được; thêm liên kết trang nội bộ.'
-- id: n57
-  cau: 'Ngộ nhận: tương quan–nhân quả; dữ liệu dọc cho thấy hài lòng giảm dự báo dùng nhiều hơn sau đó; cả hai chiều có thể cùng đúng.'
-  loai: phat-hien
-  nguon:
-  - orben-dienlin2019
-  - orben2022
-  trich: Decreases in life satisfaction ratings also predicted subsequent increases in estimated social media use
-  vi_tri: Orben (2022), tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Dữ liệu dọc cho thấy chiều ngược lại cũng đúng: teen đang buồn có xu hướng chui vào mạng xã hội nhiều hơn." Chữ mới: "Dữ liệu dọc của Orben và cộng sự cho thấy chiều ngược lại cũng đúng: hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn sau đó." Lý do: "Chui vào mạng xã hội" (động cơ) không có trong nguồn; hài lòng là biến đo.'
-- id: n58
-  cau: 'Ngộ nhận "hiệu ứng nhỏ nghĩa là vô hại": "nhỏ ở mức trung bình" không có nghĩa bằng không; các phân tích tổng hợp thấy liên hệ nhỏ nhưng nhất quán; chúng tôi chưa có nguồn nói với một số nhóm hiệu ứng "không hề nhỏ".'
-  loai: phat-hien
-  nguon:
-  - teague2026
-  - orben2022
-  trich: Digital media use was "consistently associated with risks" to child and adolescent health, especially social media. … They also note the associations are modest.
-  vi_tri: Teague (2026); Orben (2022)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Ở quy mô hàng chục triệu teen, hiệu ứng nhỏ vẫn tạo ra số ca đáng kể ở mức cộng đồng; và "trung bình nhỏ" che giấu nhóm dễ tổn thương (tuổi dậy thì, đã có sẵn lo âu/trầm cảm) — với các em, hiệu ứng không hề nhỏ." Chữ mới: "…các phân tích tổng hợp thấy liên hệ nhỏ nhưng nhất quán, và Orben và cộng sự (2022) thấy các độ tuổi mà hiệu ứng rõ hơn một chút. Chúng tôi chưa có nguồn nói rằng với một số nhóm, hiệu ứng "không hề nhỏ"." Lý do: Bỏ tính toán "hàng chục triệu", "lo âu/trầm cảm có sẵn" (không có nguồn đã mở).'
-- id: n59
-  cau: 'Ngộ nhận "cấm tiệt mạng xã hội là giải pháp": chưa đủ bằng chứng thực nghiệm; Tổng Y sĩ Mỹ (2023) nói mạng xã hội có thể có cả lợi và hại.'
-  loai: phat-hien
-  nguon:
-  - orben2022
-  - sg2023
-  trich: Meta-analyses have identified small or negligible negative links … while experimental evidence is mixed. (Orben 2022)
-  vi_tri: Orben (2022), Introduction
-  ket_qua: da-sua
-  ghi_chu: 'Vế Surgeon General: chưa mở nguồn trực tiếp (xem n35). Chữ cũ: "Mạng xã hội cũng là nơi nhiều teen tìm thấy cộng đồng và sự hỗ trợ (bạn bè, nhóm sở thích, teen thuộc nhóm thiểu số khó chia sẻ ngoài đời). Cấm đoán cực đoan có thể lấy đi cả mặt tích cực mà không giải quyết được gốc rễ." Chữ mới: "Chưa có đủ bằng chứng thực nghiệm để nói cấm tiệt mạng xã hội cải thiện sức khỏe tâm thần… Chúng tôi không có nguồn đã mở về mặt tích cực cụ thể…, nên không khẳng định." Lý do: Bỏ mặt tích cực cụ thể (không có nguồn đã mở).'
-- id: n60
-  cau: 'Ngộ nhận "cứ thu điện thoại là hết trầm cảm": liên hệ giữa mạng xã hội và sức khỏe tâm thần là nhỏ và hai chiều nên chỉ thu điện thoại khó là cả lời giải; nếu lo, tìm người có chuyên môn; xem Hỗ trợ.'
-  loai: loi-khuyen
-  nguon:
-  - orben-dienlin2019
-  trich: social media use is not, in and of itself, a strong predictor of life satisfaction across the adolescent population. Instead, social media effects are nuanced, small at best, reciprocal over time, gender specific, and contingent on analytic methods.
-  vi_tri: Orben (2019, PNAS), tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Trầm cảm là bệnh lý phức tạp (gen, môi trường, sang chấn, áp lực học tập...)… điều trị trầm cảm cần chuyên môn y tế — gọi 115…". Chữ mới: "Dữ liệu cho thấy liên hệ… là nhỏ và hai chiều, nên chỉ thu điện thoại khó là cả lời giải. Nếu lo về trầm cảm của một bạn trẻ, hãy tìm người có chuyên môn; xem Hỗ trợ." Lý do: Bỏ danh sách nguyên nhân trầm cảm (không có nguồn) và số 115.'
-- id: n61
-  cau: 'Các liên kết "Đọc thêm" (Não tuổi teen khác gì não người lớn?; Buồn thường và trầm cảm khác nhau thế nào?; Tuổi teen: mình là ai?) trỏ tới trang của site.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Chỗ cần chú ý: trong worktree chỉ có phat-trien/ban-sac-tuoi-teen.md; co-so-sinh-hoc/nao-tuoi-teen và suc-khoe-tam-than/tram-cam chưa có (lô khác). Link không đổi; kiểm khi gom nhánh. Đã kiểm: trang.yml dua_tren (ban-sac-tuoi-teen, nao-tuoi-teen) khớp các link.'
-- id: n62
-  cau: 'Câu hỏi 1: Orben & Przybylski (2019) trên 355.358 teen — công nghệ số giải thích tối đa 0,4% khác biệt về sức khỏe tinh thần — tương đương ăn khoai tây; bị bắt nạt và hút cần sa có liên hệ tiêu cực mạnh hơn nhiều lần.'
-  loai: phat-hien
-  nguon:
-  - orben2019
-  trich: explaining at most 0.4% of the variation in well-being; … being bullied (median β = -.212) … smoking marijuana (median β = -.132) [so với technology use −.049]
-  vi_tri: Orben & Przybylski (2019)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Lời giải thích không dựa vào vị trí lựa chọn. Chữ cũ: "…tương đương ăn khoai tây; bị bắt nạt và hút cần sa có liên hệ tiêu cực mạnh hơn nhiều lần." và lời giải thích "…giấc ngủ, bắt nạt, bữa sáng — liên hệ mạnh hơn hẳn." Chữ mới: "…trong cùng bộ dữ liệu, giấc ngủ, bắt nạt, bữa sáng liên hệ mạnh hơn hẳn."; lựa chọn đúng "…tương đương ăn khoai tây…" giữ (xem n20, nhỏ gần bằng). Lý do: "Tương đương" khoai tây hơi mạnh (−0,042 so với −0,049): giữ vì là cách nói tắt trong câu hỏi, nhưng lời giải thích nêu "trong cùng bộ dữ liệu".'
-- id: n63
-  cau: 'Câu hỏi 2: YRBS 2021 không hỏi về mạng xã hội nên không chứng minh mạng xã hội gây trầm cảm; muốn kết luận nhân quả cần thiết kế khác.'
-  loai: phat-hien
-  nguon:
-  - mmwr2023
-  - cdc1121
-  trich: '"These new questions assessed social media use" (2023); In 2021, 42% of high school students felt so sad or hopeless …'
-  vi_tri: MMWR su7304a1; CDC (2023)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Vì YRBS không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy khủng hoảng sức khỏe tâm thần có thật…" Chữ mới: "Vì đợt YRBS 2021 không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy mức buồn bã tự báo cáo tăng…" Lý do: Xem n15, n2; câu hỏi đổi "năm 2021".'
-- id: n64
-  cau: 'Câu hỏi 3: Orben và cộng sự (2022) — cửa sổ nhạy cảm nữ 11–13, nam 14–15; hiệu ứng vẫn nhỏ; chiều ngược lại cũng tồn tại.'
-  loai: phat-hien
-  nguon:
-  - orben2022
-  trich: These windows occur at different ages for males (14-15 and 19 years old) and females (11-13 and 19 years old).
-  vi_tri: Orben (2022), tóm tắt
-  ket_qua: dung
-  ghi_chu: Câu hỏi dùng "quanh tuổi dậy thì" như mô tả địa phương của khoảng tuổi; phần "quanh tuổi dậy thì" đã được làm rõ ở n28.
-- id: n65
-  cau: 'Câu hỏi 4: dữ liệu dọc cho thấy hài lòng giảm cũng dự báo dùng mạng xã hội nhiều hơn; tương quan không cho biết chiều nhân quả; có thể cả hai chiều cùng đúng.'
-  loai: phat-hien
-  nguon:
-  - orben2022
-  trich: Decreases in life satisfaction ratings also predicted subsequent increases in estimated social media use
-  vi_tri: Orben (2022), tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Dữ liệu dọc cho thấy teen đang buồn có xu hướng dùng mạng xã hội NHIỀU hơn" và lựa chọn đúng "…teen buồn tìm đến mạng xã hội để trốn tránh hoặc tìm đồng cảm…". Chữ mới: "Dữ liệu dọc cho thấy hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn…" và lựa chọn đúng bỏ "để trốn tránh hoặc tìm đồng cảm". Lý do: Bỏ động cơ (không có nguồn); chữ "buồn" thay bằng biến đo.'
-- id: n66
-  cau: Trang là bài mở rộng, dựa trên ban-sac-tuoi-teen và nao-tuoi-teen, kiem_lai_truoc 2028-05 (src/data/trang.yml); nên đặt hạn ngắn hơn vì tranh luận đang diễn ra nhanh.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm trong src/data/trang.yml. Đề xuất: hạ kiem_lai_truoc xuống 2027-05 (YRBS 2027 dự kiến, phân tích tổng hợp mới ra liên tục; chưa mở được Nature/hhs.gov). Người giao quyết.'
+  - id: n1
+    cau: 'Mô tả: tranh luận Haidt (2024) và Orben & Przybylski (2019), hiệu ứng lên sức khỏe tâm thần teen, tương quan có phải nhân quả, dữ liệu CDC YRBS, và số liệu quốc gia của Việt Nam.'
+    loai: phat-hien
+    nguon:
+      - orben2019
+      - cdc1323
+      - namhs-lancet2024
+    trich: The association we find between digital technology use and adolescent well-being is negative but small, explaining at most 0.4% of the variation in well-being.
+    vi_tri: Orben & Przybylski (2019), tóm tắt; CDC 2024; NAMHS 2024
+    ket_qua: da-sua
+    ghi_chu: 'Mô tả khớp nội dung trang sau khi sửa. Chữ cũ: "…và dữ liệu CDC YRBS nói gì." Chữ mới: "…dữ liệu CDC YRBS nói gì, và số liệu quốc gia của Việt Nam." Lý do: Trang nay có số liệu NAMHS (Việt Nam). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nature.com/articles/d41586-024-00902-2", "https://europepmc.org/article/MED/30944443", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11559676/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12312254/" ]
+    luot_2_ghi_chu: Các thành phần đều có nguồn đã mở.
+    review: dung
+  - id: n2
+    cau: Ở Mỹ, tỉ lệ teen báo cáo buồn bã dai dẳng đã tăng rõ trong thập kỷ 2010 (số liệu khảo sát đại diện quốc gia); câu hỏi là mạng xã hội có phải thủ phạm không (câu trả lời của mục "Tự trải nghiệm", An là ví dụ giả định).
+    loai: phat-hien
+    nguon:
+      - cdc1323
+    trich: Unfortunately, the data show that from 2013 to 2023, almost all other indicators of health and well-being in this report worsened. Data highlight worsening trends in … persistent sadness or hopelessness, and suicidal thoughts and behaviors.
+    vi_tri: CDC (2024), Executive Summary
+    ket_qua: da-sua
+    ghi_chu: 'Tình huống An và mẹ An: gia-dinh. Chữ cũ: "…sức khỏe tâm thần của teen xấu đi là có thật (dữ liệu không thể chối cãi)… một trong những tranh luận khoa học ồn ào nhất thập kỷ". Chữ mới: "…ở Mỹ, tỉ lệ teen báo cáo buồn bã dai dẳng đã tăng rõ trong thập kỷ 2010 (số liệu khảo sát đại diện quốc gia)… một tranh luận khoa học đang diễn ra". Lý do: Bỏ "không thể chối cãi", "ồn ào nhất thập kỷ"; chỉ nói về teen Mỹ và tự báo cáo. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Tình huống An là giả định.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS_Data-Summary-Trends_Report2023_508.pdf", "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+    luot_2_ghi_chu: Ví dụ 'An' là giả định.
+    review: dung
+  - id: n3
+    cau: 'Haidt xuất bản năm 2024 cuốn The Anxious Generation, luận điểm: sự trỗi dậy của smartphone và mạng xã hội cùng sự suy giảm tự lập và chơi tự do đã "đại tu sửa" tuổi thơ và gây ra khủng hoảng sức khỏe tâm thần ở trẻ em và teen.'
+    loai: lich-su
+    nguon:
+      - haidt-site
+    trich: the rise of smartphones and social media, along with the decline of independence and free play, "rapidly rewired childhood and caused a global mental health crisis for kids and teens."
+    vi_tri: anxiousgeneration.com/book
+    ket_qua: da-sua
+    ghi_chu: 'Chỉ đọc trang web chính thức của sách, không đọc sách. Chữ cũ: "Jonathan Haidt, nhà tâm lý học xã hội tại Đại học New York, xuất bản năm 2024… từ khoảng 2010–2015, tuổi thơ của trẻ em phương Tây đã bị "đại tu sửa"… từ tuổi thơ chơi tự do ngoài đời thực sang tuổi thơ gắn với điện thoại." Chữ mới: "Nhà tâm lý học Jonathan Haidt xuất bản năm 2024… sự trỗi dậy của smartphone và mạng xã hội, cùng với sự suy giảm tự lập và chơi tự do, đã "đại tu sửa" tuổi thơ… Ông nói về giai đoạn biến đổi 2010–2015." Lý do: Bỏ "nhà tâm lý học xã hội tại ĐH New York" và "trẻ em phương Tây" (không có trong nguồn đã mở); theo chữ của trang sách. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Trang sách anxiousgeneration.com/book (đọc lại): câu trích nguyên văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.anxiousgeneration.com/book", "https://www.nature.com/articles/d41586-024-00902-2" ]
+    review: dung
+  - id: n4
+    cau: (Đã bỏ) Haidt nói về giai đoạn biến đổi 2010–2015.
+    loai: lich-su
+    ket_qua: da-bo
+    ghi_chu: 'Chỗ chưa chắc: nguồn bậc 3 (Wikipedia), sách không mở được; lượt 2 nên tìm nguồn bậc 1–2 (sách, bài của Haidt). Chữ cũ: "…từ khoảng 2010–2015…". Chữ mới: "…ông nói về giai đoạn biến đổi 2010–2015". Lý do: Làm mềm: bắt nguồn từ một trích dẫn qua nguồn bậc 3, không phải sách. Review (Claude Opus 5.5, 10/11/2026): Lượt 2 không chắc đúng chỗ: mốc chỉ có ở Wikipedia (bậc 3, không được làm nguồn duy nhất); trang sách, trang bốn chuẩn mực và bài Nature của Odgers không nêu. Đã bỏ khỏi trang; doi_chu.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://www.anxiousgeneration.com/the-issue" ]
+    luot_2_ghi_chu: Nguồn mở chỉ nói 'đầu thập niên 2010'; mốc 2010-2015 không xác nhận được (không mở được sách hay trang tóm tắt có mốc này).
+    review: sai
+  - id: n5
+    cau: (Đã bỏ) Điểm gãy Haidt nhấn mạnh là khoảng năm 2012, khi đa số teen Mỹ đã sở hữu smartphone.
+    loai: lich-su
+    ket_qua: da-bo
+    ghi_chu: 'Không có nguồn đã mở (Wikipedia nói chung chung "khoảng 2010"; không có tỉ lệ sở hữu). Chữ cũ: "Điểm gãy ông nhấn mạnh là khoảng năm 2012, khi đa số teen Mỹ đã sở hữu smartphone." Chữ mới: (bỏ) Lý do: Không kiểm được. Review (Claude Opus 5.5, 10/11/2026): Đã kiểm: trang không còn "2012".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Câu đã bỏ khỏi trang; không qua lượt 2.
+    review: dung
+  - id: n6
+    cau: Theo các đoạn trích sách trong bài điểm sách của Odgers (2024), Haidt cho rằng các công ty công nghệ đã "tái cấu trúc" tuổi thơ bằng nội dung gây nghiện và bằng việc thay thế chơi đùa, gặp gỡ trực tiếp; đây là các giả thuyết cơ chế của Haidt, Odgers cho rằng chúng chưa được khoa học ủng hộ.
+    loai: lich-su
+    nguon:
+      - odgers2024
+    trich: Haidt asserts that the great rewiring of children’s brains has taken place by “designing a firehose of addictive content that entered through kids’ eyes and ears”. And that “by displacing physical play and in-person socializing, these companies have rewired childhood…” … the book’s repeated suggestion that digital technologies are rewiring our children’s brains and causing an epidemic of mental illness is not supported by science.
+    vi_tri: Odgers 2024, Nature, đoạn 1–2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chỗ chưa chắc: chỉ xác nhận qua nguồn bậc 3; sách không mở được. Lượt 2 nên tìm nguồn bậc 1–2. Chữ cũ: "Haidt liệt kê bốn tổn hại nền tảng… (1) tước đoạt xã hội — tương tác trực tiếp bị thay bằng kết nối nông trên mạng; (2) thiếu ngủ — dùng điện thoại khuya; (3) phân mảnh chú ý — thông báo liên tục; (4) nghiện — thuật toán tối ưu cho thời gian dùng." (và ở mục Lý thuyết: ánh sáng xanh, rèn não chuyển đổi tác vụ…) Chữ mới: "Theo mô tả của sách (chúng tôi không mở được sách gốc), Haidt nêu bốn tổn hại nền tảng: … Đây là các giả thuyết cơ chế của Haidt; chúng tôi chưa kiểm các cơ chế cụ thể bằng nguồn riêng." Lý do: Bỏ các mô tả chi tiết cơ chế (không có nguồn đã mở). Review (Claude Opus 5.5, 10/11/2026): Câu cũ (bốn tổn hại) chỉ có nguồn Wikipedia (bậc 3), trái chuẩn mục 2; không mở được sách hay trang nào của tác giả, nhà xuất bản nêu bốn tổn hại. Viết lại theo đoạn trích sách trong bài Nature của Odgers (mở được 10/11/2026), cả ở mục "Điều gì đang xảy ra?" và mục Lý thuyết; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.anxiousgeneration.com/the-issue", "https://www.anxiousgeneration.com/book" ]
+    luot_2_ghi_chu: Đây là cách trình bày của Haidt (giả thuyết cơ chế), không phải kết quả đã chứng minh.
+    review: sai
+  - id: n7
+    cau: 'Bốn chuẩn mực của Haidt: hoãn smartphone đến cấp 3, không mạng xã hội trước 16 tuổi, trường học không điện thoại từ đầu đến cuối buổi, và cho trẻ nhiều tự lập, chơi tự do và trách nhiệm hơn ở đời thực.'
+    loai: lich-su
+    nguon:
+      - haidt-site
+    trich: '"Delay smartphones until high school"; "No social media until 16"; "Phone-free schools, bell to bell"; "More independence, free play, and responsibility in the real world"'
+    vi_tri: anxiousgeneration.com/resources/four-norms
+    ket_qua: dung
+    ghi_chu: '"Cấp 3" dịch cho "high school" (Mỹ: lớp 9–12).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.anxiousgeneration.com/resources/four-norms" ]
+  - id: n8
+    cau: 'Câu hỏi YRBS: trong 12 tháng qua, có bao giờ buồn bã hoặc tuyệt vọng gần như mỗi ngày trong ít nhất hai tuần liên tiếp đến mức bỏ bê các hoạt động thường ngày không?'
+    loai: cong-cu
+    nguon:
+      - cdc1323
+      - mmwr2023
+    trich: In 2023, 40% of high school students felt so sad or hopeless almost every day for at least two weeks in a row that they stopped doing their usual activities.
+    vi_tri: CDC (2024), tr. 56; MMWR 2024, Bảng 2 (past 12 months)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+  - id: n9
+    cau: 'YRBS 2021: 42% học sinh cấp 3 báo cáo buồn bã dai dẳng; nữ 57%, nam 29%; năm 2011 nữ 36%.'
+    loai: so-lieu
+    nguon:
+      - cdc1121
+    trich: 'In 2021, 42% of high school students felt so sad or hopeless almost every day for at least two weeks in a row that they stopped doing their usual activities. [biểu đồ: Total 42% Male 29% Female 57%; nữ 2011: 36%]'
+    vi_tri: CDC (2023), tr. 60 (biểu đồ theo nhóm) và tr. 61 (xu hướng theo giới)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS_Data-Summary-Trends_Report2023_508.pdf" ]
+  - id: n10
+    cau: "YRBS 2021: trong 12 tháng qua, 22% học sinh cấp 3 đã nghiêm túc nghĩ đến tự tử (nữ 30%, nam 14%; nữ năm 2011: 19%) và 10% đã cố tự tử."
+    loai: so-lieu
+    nguon:
+      - cdc1121
+    trich: 'In 2021, 22% of high school students seriously considered attempting suicide during the past year. [biểu đồ: Total 22% Male 14% Female 30%; xu hướng nữ 19% → 30%]; Attempted suicide … 8 8 9 7 9 10'
+    vi_tri: CDC (2023), tr. 63 và 64; bảng tóm tắt tr. 58
+    ket_qua: da-sua
+    ghi_chu: 'Câu hỏi: "trong 12 tháng qua", tự báo cáo. Review (Claude Opus 5.5, 10/11/2026): Lượt 2 sai đúng: số đúng nhưng khung thời gian là 12 tháng qua (CDC: "seriously considered attempting suicide during the past year"), không phải "từng". Đã sửa hai chỗ trên trang (mục "Điều gì đang xảy ra?" và kết quả YRBS) theo câu đúng của lượt 2; doi_chu. Không thêm chi tiết về cách tự hại; khung dẫn Hỗ trợ đứng ngay sau.'
+    luot_2: sai
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS_Data-Summary-Trends_Report2023_508.pdf" ]
+    luot_2_ghi_chu: "câu đúng: YRBS 2021: 22% học sinh cấp 3 đã nghiêm túc nghĩ đến tự tử trong 12 tháng qua (nữ 30%, nam 14%; nữ năm 2011: 19%); 10% đã cố tự tử ít nhất một lần trong 12 tháng qua.; 22% (nữ 30%, nam 14%; nữ năm 2011: 19%) và 10% đúng, nhưng đều là trong 12 tháng qua, không phải 'từng' (cả đời); câu viết khung thời gian sai."
+    review: sai
+  - id: n11
+    cau: 'YRBS 2023: buồn bã dai dẳng 40% (nữ 53%, nam 28%), 30% năm 2013 (nữ 39% năm 2013); LGBTQ+ 65% (2023).'
+    loai: so-lieu
+    nguon:
+      - cdc1323
+    trich: 'In 2023, 40% of high school students felt so sad or hopeless … [biểu đồ: Total 40%, Female 53%, Male 28%, LGBTQ+ 65%; 2013: 30% tổng, nữ 39%]'
+    vi_tri: CDC (2024), tr. 56 (nhóm) và tr. 57 (xu hướng)
+    ket_qua: dung
+    ghi_chu: 'Trang cũ "40% (nữ 53%) so với 30% của năm 2013": khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+  - id: n12
+    cau: "YRBS 2023: khoảng 9% đã cố tự tử trong 12 tháng qua."
+    loai: so-lieu
+    nguon:
+      - cdc1323
+      - mmwr2023
+    trich: Attempted suicide 8 9 7 9 10 9 (2013–2023 Total) (CDC); "9.5% had attempted suicide" (MMWR)
+    vi_tri: CDC (2024), bảng "Progress at a glance"; MMWR su7304a1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "…10% đã từng cố tự tử (2021), 9% (2023)." Chữ mới: "…10% đã từng cố tự tử (2021), khoảng 9% (2023)." Lý do: Báo cáo xu hướng làm tròn 9, MMWR nêu 9,5%; viết "khoảng". Review (Claude Opus 5.5, 10/11/2026): Lượt 2 sai đúng: 9% (MMWR 9,5%) là trong 12 tháng qua. Đã sửa theo câu đúng của lượt 2; doi_chu.'
+    luot_2: sai
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+    luot_2_ghi_chu: "câu đúng: YRBS 2023: khoảng 9% đã cố tự tử ít nhất một lần trong 12 tháng qua.; 9% đúng nhưng là trong 12 tháng qua, không phải 'đã từng'."
+    review: sai
+  - id: n13
+    cau: 'Tính đến 11/2026, số liệu mới nhất của CDC là năm 2025: buồn bã dai dẳng 33% (nữ 43%, nam 24%), thấp hơn 2023.'
+    loai: thoi-su
+    het_han: '2027-11-01'
+    nguon:
+      - cdc-yif2026
+    ket_qua: dung
+    ghi_chu: 'Trích: "2025: 33% total, 24% male, 43% female" (trang Youth Health in Focus, đề 18/9/2026; cập nhật 14/8/2026). YRBS đợt sau là 2027 (hai năm một lần), nên đặt hạn 2027-11. Câu mới thêm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/youth-health-in-focus/mental-health.html", "https://www.cdc.gov/yrbs/yhif/files/2025/YHIF-2015-2025-Final-508.pdf" ]
+    luot_2_ghi_chu: Kiểm lại hôm nay 2026-11-10 trên trang CDC; 2023 là 40% (nữ 53%, nam 28%) nên 2025 thấp hơn.
+  - id: n14
+    cau: Số liệu YRBS là tự báo cáo, không phải chẩn đoán; câu hỏi là chỉ báo của triệu chứng trầm cảm.
+    loai: dinh-nghia
+    nguon:
+      - cdc1323
+    trich: One question assesses persistent feelings of sadness or hopelessness and is an indicator of depressive symptoms.
+    vi_tri: CDC (2024), mục Mental Health and Suicidal Thoughts and Behaviors
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+  - id: n15
+    cau: YRBS 2021 và các đợt trước không hỏi về mạng xã hội; đợt 2023 mới thêm câu hỏi về tần suất dùng.
+    loai: cong-cu
+    nguon:
+      - mmwr2023
+    trich: '"These new questions assessed social media use" (MMWR su7304a1, danh sách chủ đề mới của 2023)'
+    vi_tri: MMWR su7304a1 (Introduction)
+    ket_qua: da-sua
+    ghi_chu: '"Các đợt trước không hỏi" suy ra từ "new questions" của 2023; chưa đọc bảng câu hỏi các đợt trước. Chỗ chưa chắc nhỏ. Chữ cũ: "Lưu ý quan trọng: YRBS không hỏi gì về mạng xã hội" và "YRBS không đo việc dùng mạng xã hội". Chữ mới: "YRBS 2021 và các đợt trước không hỏi gì về nó; riêng đợt 2023 mới thêm câu hỏi về tần suất dùng". Lý do: Sai với 2023: CDC đã thêm câu hỏi về mạng xã hội. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC11559676/" ]
+    review: dung
+  - id: n16
+    cau: 'YRBS 2023 (MMWR 2024): buồn bã dai dẳng 42,6% ở nhóm dùng mạng xã hội nhiều lần mỗi ngày so với 31,9% ở nhóm dùng ít hơn; đây là liên hệ cắt ngang.'
+    loai: so-lieu
+    nguon:
+      - mmwr2023
+    trich: 'Persistent sadness or hopelessness (Table 4 and Table 5): Overall: 42.6% of frequent users vs. 31.9% of less frequent users. [theo kết quả đọc trang su7304a3]'
+    vi_tri: MMWR su7304a3, Bảng 4
+    ket_qua: dung
+    ghi_chu: Câu mới thêm; số theo công cụ đọc web, "frequent" = nhiều lần mỗi ngày trở lên.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC11559676/" ]
+  - id: n17
+    cau: Dữ liệu 2021 thu thập mùa thu 2021, giữa đại dịch; các chỉ số như buồn bã dai dẳng đã tăng từ 30% (2013) lên 37% (2019) trước 2021.
+    loai: so-lieu
+    nguon:
+      - mmwr2023
+      - cdc1323
+    trich: Experienced persistent feelings of sadness or hopelessness 30 30 31 37 42 40 (2013, 2015, 2017, 2019, 2021, 2023); the previous YRBS "was not administered until fall 2021 because of the COVID-19 pandemic."
+    vi_tri: CDC (2024), Progress at a glance; MMWR su7304a1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…nhưng CDC nhấn mạnh nhiều chỉ số đã xấu đi từ trước COVID." Chữ mới: "…báo cáo của CDC nêu nhiều chỉ số xấu đi từ 2013 đến 2023, và ở nhiều chỉ số (như buồn bã dai dẳng) số liệu đã tăng từ trước 2021 (30% năm 2013, 37% năm 2019)." Lý do: CDC không "nhấn mạnh" trước COVID; câu mới dựa trên số liệu bảng. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS_Data-Summary-Trends_Report2023_508.pdf", "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+    review: dung
+  - id: n18
+    cau: 'Orben & Przybylski (2019): phân tích đường cong đặc tả trên ba bộ dữ liệu (Monitoring the Future, YRBS, Millennium Cohort Study), 355.358 vị thành niên (chủ yếu 12–18 tuổi), khảo sát 2007–2016.'
+    loai: so-lieu
+    nguon:
+      - orben2019
+    trich: This paper’s analysis pipeline spans three nationally-representative datasets from the US and the UK … encompassing a total of 355,358, predominately 12 to 18-year-old, adolescents surveyed between the years of 2007 and 2016.
+    vi_tri: Orben & Przybylski (2019), Methods (AAM)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…tổng cộng 355.358 vị thành niên, dữ liệu 2007–2016. … chạy mọi đặc tả phân tích hợp lý và báo cáo toàn bộ". Chữ mới: "…355.358 vị thành niên (chủ yếu 12–18 tuổi), khảo sát trong các năm 2007–2016… chạy nhiều đặc tả phân tích hợp lý và báo cáo kết quả". Lý do: "Mọi" và "toàn bộ" mạnh hơn nguồn (nguồn nói SCA áp dụng cho các đặc tả hợp lý). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): "three nationally-representative datasets from the US and the UK… a total of 355,358, predominately 12 to 18-year-old, adolescents surveyed between the years of 2007 and 2016". Lượt 2 không chắc vì không mở được toàn văn; nay đã giải quyết.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10117262/" ]
+    luot_2_ghi_chu: Xác nhận được ba bộ dữ liệu (MTF, YRBS, MCS) và n = 355.358; khoảng tuổi 12-18 và năm khảo sát 2007-2016 nằm trong toàn văn sau tường phí, không mở được.
+    review: dung
+  - id: n19
+    cau: 'Liên hệ giữa dùng công nghệ số và sức khỏe tinh thần là âm nhưng rất nhỏ: giải thích tối đa 0,4% phương sai; tác giả kết luận hiệu ứng quá nhỏ để biện minh cho thay đổi chính sách.'
+    loai: phat-hien
+    nguon:
+      - orben2019
+    trich: The association we find between digital technology use and adolescent well-being is negative but small, explaining at most 0.4% of the variation in well-being. Taking the broader context of the data into account suggests that these effects are too small to warrant policy change.
+    vi_tri: Orben & Przybylski (2019), tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443" ]
+  - id: n20
+    cau: 'Trong cùng bộ dữ liệu, ăn khoai tây cho liên hệ nhỏ gần bằng công nghệ số (YRBS: β −0,042 so với −0,049) và đeo kính còn "tệ hơn" ở một bộ dữ liệu.'
+    loai: so-lieu
+    nguon:
+      - orben2019
+    trich: There is a smaller negative association for eating potatoes (median β = -.042 …); … wearing glasses (median β = -.061, median n = 7,963 …) [bộ MCS]; … technology use (median β = -.049) [YRBS]
+    vi_tri: Orben & Przybylski (2019), Results (so sánh ở YRBS và MCS)
+    ket_qua: da-sua
+    ghi_chu: 'Hệ số của kính: so ở bộ dữ liệu MCS (−0,061, so với hệ số công nghệ của bộ đó; chưa đối chiếu số của MCS), nên chỉ ghi "ở một bộ dữ liệu". Bản tin OII nói glasses "worse association". Chữ cũ: "…tương đương với... ăn khoai tây; đeo kính cận còn "có hại" hơn." và "ăn khoai tây thường xuyên cho liên hệ tương đương, đeo kính cận còn tệ hơn". Chữ mới: "…ăn khoai tây cho liên hệ nhỏ tương tự và đeo kính còn "tệ hơn"." và "(ở YRBS, β −0,042 so với −0,049 của công nghệ số), đeo kính còn "tệ hơn" ở một bộ dữ liệu". Lý do: "Tương đương" thành "gần bằng" kèm số; "kính cận" thành "kính" (nguồn: wearing glasses). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): YRBS: công nghệ β −0,049, khoai tây −0,042; Thảo luận: "potatoes was nearly as negative as the association with technology use (0.9x, YRBS) and wearing glasses was more negatively associated with well-being (1.5x, MCS)". Đã giải quyết.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443" ]
+    luot_2_ghi_chu: "'Khoai tây' và 'đeo kính' có thật như phép so sánh của Orben & Przybylski (nhắc lại trong PMC9893300, PMC10132652) nhưng β cụ thể (-0,042 so với -0,049) nằm trong toàn văn sau tường phí, không mở được."
+    review: dung
+  - id: n21
+    cau: Trong bộ YRBS, bị bắt nạt có liên hệ tiêu cực với sức khỏe tinh thần gấp 4,3 lần và hút cần sa gấp 2,7 lần so với mức liên hệ của công nghệ số; ngủ đủ và ăn sáng có liên hệ tích cực hơn hẳn.
+    loai: so-lieu
+    nguon:
+      - orben2019
+    trich: the association of mean technology use with well-being (median β = -.049) was exceeded by well-being’s association with being bullied (median β = -.212 …) … smoking marijuana (median β = -.132 …) … eating breakfast (median β = .116 …) and getting enough sleep (median β = .150 …)
+    vi_tri: 'Orben & Przybylski (2019), Results, đoạn YRBS; OII press release: "2.7 times and 4.3 times"'
+    ket_qua: da-sua
+    ghi_chu: 'Tỉ lệ 4,3 = 0,212/0,049; 2,7 = 0,132/0,049 (tính lại). Hệ số của giấc ngủ và ăn sáng dương. Chữ cũ: "bị bắt nạt có liên hệ tiêu cực gấp 4,3 lần, hút cần sa gấp 2,7 lần" (không nêu so với cái gì, bộ dữ liệu nào). Chữ mới: "…(trong bộ YRBS) bị bắt nạt có liên hệ tiêu cực với sức khỏe tinh thần gấp 4,3 lần và hút cần sa gấp 2,7 lần so với mức liên hệ của công nghệ số". Lý do: Nêu rõ mẫu số và bộ dữ liệu. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): "smoking marijuana and bullying have much larger negative associations… (2.7x and 4.3x respectively for YRBS)"; ngủ đủ β 0,150, ăn sáng 0,116. Đã giải quyết.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443" ]
+    luot_2_ghi_chu: Tỉ số 4,3 lần (bị bắt nạt) và 2,7 lần (cần sa) so với công nghệ số, cùng 'ngủ đủ, ăn sáng', nằm trong toàn văn Orben & Przybylski 2019 sau tường phí; không mở được.
+    review: dung
+  - id: n22
+    cau: 'Hạn chế: dữ liệu 2007–2016, trước kỷ nguyên TikTok và video ngắn, nên có thể khác với việc dùng mạng xã hội hiện nay (hạn chế do chúng tôi nêu).'
+    loai: phat-hien
+    nguon:
+      - orben2019
+    trich: adolescents surveyed between the years of 2007 and 2016
+    vi_tri: Orben & Przybylski (2019), Methods
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "…phe phê bình cho rằng "mạng xã hội 2024" khác hẳn "màn hình 2012"." Chữ mới: "…nên có thể khác với việc dùng mạng xã hội hiện nay (đây là hạn chế do chúng tôi nêu, không phải kết quả của nghiên cứu)." Lý do: Không có nguồn đã mở nói phe phê bình đã nói vậy; giữ như suy luận của trang, ghi rõ. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): năm khảo sát 2007–2016 xác nhận; vế "trước kỷ nguyên TikTok" ghi rõ là suy luận của trang.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443" ]
+    luot_2_ghi_chu: Năm khảo sát 2007-2016 của Orben & Przybylski nằm trong toàn văn sau tường phí, không mở được; 'trước kỷ nguyên TikTok' là suy luận của trang.
+    review: dung
+  - id: n23
+    cau: 'Orben, Dienlin & Przybylski (2019): dữ liệu dọc Understanding Society (Anh, 2009–2016), hơn 12.000 teen 10–15 tuổi (12.672), phân tích tách giữa người và trong cùng người.'
+    loai: so-lieu
+    nguon:
+      - orben-dienlin2019
+    trich: an eight-wave, large-scale, and nationally representative panel dataset (Understanding Society, the UK Household Longitudinal Study, 2009–2016) … While 12,672 10- to 15-y-olds took part, the precise number of participants for any analysis varied (range, n = 539 to 5,492; median, n = 1,699).
+    vi_tri: Orben (2019, PNAS), Results và Methods
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…theo dõi khoảng 12.000 teen qua nhiều năm". Chữ mới: "…(Anh, 2009–2016) — hơn 12.000 teen 10–15 tuổi tham gia (số người trong mỗi phân tích ít hơn nhiều)…". Lý do: 12.672 tham gia nhưng mỗi phân tích có n = 539–5.492. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/" ]
+    luot_2_ghi_chu: Phân tích tách giữa người và trong cùng người là random-intercept cross-lagged.
+    review: dung
+  - id: n24
+    cau: 'Hiệu ứng nhỏ, hai chiều và "tầm thường": dùng mạng xã hội nhiều dự báo hài lòng cuộc sống giảm nhẹ (β −0,04 đến −0,09 ở các mục có ý nghĩa; hệ số trung vị −0,05), hài lòng giảm dự báo dùng nhiều hơn (−0,02); ở nữ rõ hơn ở nam.'
+    loai: phat-hien
+    nguon:
+      - orben-dienlin2019
+    trich: Both median longitudinal effects were trivial in size (social media predicting life satisfaction, β = −0.05; life satisfaction predicting social media use, β = −0.02). … For females, however, social media was a predictor of slightly decreased life satisfaction across all domains, except satisfaction with appearance (b = −0.13 to −0.05 or β = −0.09 to −0.04)
+    vi_tri: Orben (2019, PNAS), Results (Fig. 1–2)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…(β từ -0,04 đến -0,09), nhưng chiều ngược lại cũng đúng… Hiệu ứng ở nữ hơi rõ hơn nam, nhưng vẫn nhỏ". Chữ mới: "…(β từ -0,04 đến -0,09 ở các mục hài lòng có ý nghĩa; hệ số trung vị -0,05)… (hệ số trung vị -0,02). Hiệu ứng ở nữ hơi rõ hơn nam (nữ có tác động ở hầu hết các mục hài lòng, nam chỉ ở hai)". Lý do: Thêm hệ số trung vị và mô tả sự khác biệt giới theo nguồn. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/" ]
+    luot_2_ghi_chu: "Tiêu đề bài PNAS 2019: 'Social media's enduring effect on adolescent life satisfaction'."
+    review: dung
+  - id: n25
+    cau: '(Đã bỏ) Przybylski: 99,75% mức hài lòng của một teen trong một năm không liên quan đến việc họ dùng mạng xã hội nhiều hay ít.'
+    loai: so-lieu
+    ket_qua: da-bo
+    ghi_chu: 'Con số từ lời phát biểu, không có trong bài đã mở (PNAS). Chữ cũ: "Nói như Przybylski: 99,75% mức hài lòng… không liên quan…". Chữ mới: (bỏ) Lý do: Không kiểm được. Review (Claude Opus 5.5, 10/11/2026): Đã kiểm: trang không còn "99,75%".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Câu đã bỏ khỏi trang; không qua lượt 2.
+    review: dung
+  - id: n26
+    cau: 'Orben và cộng sự (2022): 84.011 người Anh 10–80 tuổi (cắt ngang) và 17.409 người 10–21 tuổi theo dõi dọc, tìm độ tuổi mà dùng mạng xã hội nhiều dự báo hài lòng giảm một năm sau.'
+    loai: so-lieu
+    nguon:
+      - orben2022
+    trich: Our analyses of two UK datasets comprising 84,011 participants (10-80 years old) … Longitudinal analyses of 17,409 participants (10-21 years old) suggest distinct developmental windows of sensitivity to social media in adolescence
+    vi_tri: Orben (2022), tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+  - id: n27
+    cau: 'Các cửa sổ nhạy cảm: nữ 11–13 tuổi, nam 14–15 tuổi, và 19 tuổi ở cả hai giới; hệ số nhỏ (β −0,07 đến −0,13); chiều ngược lại (hài lòng thấp → dùng nhiều) cũng tồn tại, không gắn với tuổi hay giới.'
+    loai: phat-hien
+    nguon:
+      - orben2022
+    trich: These windows occur at different ages for males (14-15 and 19 years old) and females (11-13 and 19 years old). Decreases in life satisfaction ratings also predicted subsequent increases in estimated social media use, however, these were not associated with age or sex.
+    vi_tri: Orben (2022), tóm tắt; Results (age 11 β = −0,09; age 12 −0,12; age 13 −0,07; age 14 −0,10; age 15 −0,12; age 19 nữ −0,13)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+  - id: n28
+    cau: Các tác giả suy đoán cửa sổ sớm có thể liên quan đến dậy thì (nữ dậy thì sớm hơn nam), nhưng dữ liệu không đo dậy thì nên chưa kiểm được.
+    loai: phat-hien
+    nguon:
+      - orben2022
+    trich: Speculatively, the sex difference in timing suggested that early increases in sensitivity to social media might be due to maturational processes such as puberty … these explanations cannot be tested directly in this dataset
+    vi_tri: Orben (2022), Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…trùng với thời điểm dậy thì (nữ dậy thì sớm hơn nam)." Chữ mới: "Các tác giả suy đoán rằng cửa sổ sớm có thể liên quan đến dậy thì… nhưng dữ liệu không đo dậy thì nên chưa kiểm được." Lý do: Nguồn nêu là suy đoán ("speculatively"). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+    review: dung
+  - id: n29
+    cau: Hiệu ứng trung bình nhỏ không có nghĩa mọi teen đều như nhau — có các độ tuổi mà hiệu ứng rõ hơn một chút.
+    loai: phat-hien
+    nguon:
+      - orben2022
+    trich: distinct developmental windows of sensitivity to social media in adolescence
+    vi_tri: Orben (2022), tóm tắt
+    ket_qua: dung
+    ghi_chu: Trang cũ viết "có nhóm tuổi dễ tổn thương hơn"; giữ vì "windows of sensitivity", nhưng "tổn thương" là cách diễn đạt của trang.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/" ]
+  - id: n30
+    cau: 'Nhãn "Khá vững": sức khỏe tâm thần tự báo cáo của teen Mỹ xấu đi rõ rệt trong thập kỷ 2010.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - cdc1121
+      - cdc1323
+      - cdc-yif2026
+    ly_do: "Một hệ thống giám sát đại diện quốc gia (YRBS), nhiều đợt cùng chiều: buồn bã dai dẳng 28% (2011) → 42% (2021), nữ 36% → 57%. Nhưng chỉ một nguồn dữ liệu, một nước, chưa đối chiếu khảo sát quốc gia khác hay phân tích tổng hợp, và là tự báo cáo triệu chứng. Theo mục 4: Khá vững (Vững chắc đòi tổng hợp hay hai tái lập lớn và nhiều quần thể)."
+    nguon:
+      - cdc1121
+      - cdc1323
+      - cdc-yif2026
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: thước đo nhãn dựa trên phân tích tổng hợp, ở đây không có; dùng khảo sát giám sát lặp lại. Chữ cũ: "…khủng hoảng là có thật, không phải ảo giác truyền thông." và tiêu đề "sức khỏe tâm thần của teen (Mỹ) xấu đi rõ rệt trong thập kỷ 2010". Chữ mới: "…mức tự báo cáo tăng là có thật, nhưng đó là tự báo cáo triệu chứng, không phải chẩn đoán, và nó chỉ nói về teen Mỹ." Số liệu thêm 2025: 33%. Lý do: Bỏ "khủng hoảng" và "ảo giác truyền thông" (cách nói mạnh); thêm giới hạn và số 2025. Review (Claude Opus 5.5, 10/11/2026): Lượt 1 nêu là chỗ khó; lời giao yêu cầu xem lại. Dữ liệu giám sát lặp lại của một hệ thống không thay được phân tích tổng hợp, và khung tự nói "chỉ nói về teen Mỹ" (không đạt "nhiều quần thể"). Hạ xuống Khá vững, thân khung nêu lý do; tiêu đề mục YRBS bỏ chữ "khủng hoảng là có thật" (giữ id cũ); doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cdc.gov/yrbs/dstr/pdf/YRBS_Data-Summary-Trends_Report2023_508.pdf", "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+    luot_2_ghi_chu: Chỉ mở được YRBS của CDC (không phải phân tích tổng hợp); xu hướng tương tự nêu bởi Haidt/NSDUH chưa kiểm. Nhãn 'Vững chắc' dựa trên lặp lại ở nhiều khảo sát quốc gia; lượt 2 đã xác nhận phần YRBS.
+    review: sai
+  - id: n31
+    cau: 'Nhãn "Khá vững": ở cấp độ cá nhân, thời gian dùng công nghệ chỉ liên hệ yếu với sức khỏe tinh thần.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - orben2019
+      - orben-dienlin2019
+      - orben2022
+      - teague2026
+    ly_do: 'Nhiều nghiên cứu lớn cùng chiều: tối đa 0,4% phương sai (355.358 teen; Orben & Przybylski 2019), β dọc −0,04 đến −0,13 và hai chiều (Orben và cộng sự 2019, 2022), phân tích tổng hợp 2026 trên 153 nghiên cứu dọc: r = 0,09–0,21 cho trầm cảm, hành vi, ý nghĩ tự hại. Nhưng đo bằng ước lượng tự báo cáo thô, kết quả khác nhau theo phân tích (0,4% phương sai tương ứng r khoảng 0,06, nhỏ hơn r 0,09–0,21), chủ yếu mẫu phương Tây, thiếu thực nghiệm. Khá vững.'
+    nguon:
+      - orben2019
+      - orben-dienlin2019
+      - orben2022
+      - teague2026
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nghiên cứu lớn nhất… cho tối đa 0,4% phương sai; các nghiên cứu dọc cho hệ số β khoảng -0,04 đến -0,13… Lưu ý: … dữ liệu chủ yếu từ trước kỷ nguyên video ngắn." Chữ mới: "…Một phân tích tổng hợp 2026 trên 153 nghiên cứu dọc… thấy mạng xã hội liên hệ nhất quán nhưng khiêm tốn… (r = 0,09–0,21)… phần lớn dữ liệu từ trước kỷ nguyên video ngắn." Lý do: Thêm phân tích tổng hợp 2026 (nguồn bắt buộc của lời giao: các phân tích tổng hợp mới). Review (Claude Opus 5.5, 10/11/2026): Nhãn Khá vững đạt thước đo. Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): 0,4% xác nhận. Thân khung đã sửa chữ "khiêm tốn" (n32).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/", "https://europepmc.org/article/MED/41801211" ]
+    luot_2_ghi_chu: Nhãn 'Khá vững' không cao hơn thước đo.
+    review: dung
+  - id: n32
+    cau: 'Teague và cộng sự (2026, JAMA Pediatrics): phân tích tổng hợp 153 nghiên cứu dọc (115 nhóm, 1.072 cỡ hiệu ứng, đăng ký trước PROSPERO); mạng xã hội liên hệ với trầm cảm, vấn đề hành vi, ý nghĩ tự hại và dùng chất (r = 0,09–0,21), thành tích học tập và tự nhận thức kém hơn (r = −0,07 đến −0,14); các tác giả kết luận dùng phương tiện số "liên hệ nhất quán với rủi ro".'
+    loai: so-lieu
+    nguon:
+      - teague2026
+    trich: Social media use was associated with higher depression, externalizing and internalizing behaviors, self-injurious thoughts, problematic internet use, and substance use (r = 0.09 … to r = 0.21 …) and also with lower academic achievement, poorer self-perception, and less positive development (r = -0.14 … to r = -0.07 …). … digital media use was consistently associated with risks to child and adolescent health and development, particularly for social media.
+    vi_tri: Teague (2026), Abstract/Results
+    ket_qua: da-sua
+    ghi_chu: 'Câu mới thêm ở lượt 1; review sửa chữ "khiêm tốn". Review (Claude Opus 5.5, 10/11/2026): Lượt 2 không chắc đúng chỗ: tóm tắt (Europe PMC, đọc 10/11/2026) không nói "khiêm tốn". Trang sửa thành "ở mức nhỏ (r = 0,09–0,21)", link nguồn đổi sang DOI; doi_chu.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/41801211" ]
+    luot_2_ghi_chu: Các con số và đăng ký trước PROSPERO khớp tóm tắt (JAMA Pediatrics, 2026). Tóm tắt kết luận 'consistently associated with risks'; chữ 'các tác giả nêu liên hệ khiêm tốn' không có trong tóm tắt, toàn văn sau tường phí.
+    review: sai
+  - id: n33
+    cau: 'Nhãn "Đang tranh cãi": mạng xã hội có phải nguyên nhân chính của khủng hoảng không; Haidt (2024) cho rằng có; các nhà nghiên cứu như Odgers phản biện; Tổng Y sĩ Mỹ (2023) khuyến cáo thận trọng.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - orben2019
+      - orben2022
+      - teague2026
+      - odgers2024
+      - sg2023
+    ly_do: 'Bằng chứng chất lượng cao không thống nhất về chỗ đáng kể nhất: hiệu ứng trung bình nhỏ và hai chiều (Orben và cộng sự), phân tích tổng hợp 2026 thấy liên hệ nhất quán nhưng khiêm tốn, trong khi Haidt cho rằng nhân quả; chưa có can thiệp thực nghiệm đủ mạnh. Odgers và Surgeon General: chỉ đọc qua nguồn thứ cấp, chưa mở nguồn gốc (Nature bị chặn, hhs.gov 403). Nhãn tranh cãi cho phần nhân quả.'
+    nguon:
+      - orben2019
+      - orben2022
+      - teague2026
+      - odgers2024
+      - sg2023
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ chưa chắc: vế Odgers và Surgeon General chỉ qua nguồn thứ cấp. Chữ cũ: "Haidt (2024) nói có, dựa trên trùng khớp thời điểm (~2012), cơ chế hợp lý (ngủ, so sánh, bắt nạt) và dữ liệu nhiều nước. Giới nghiên cứu chuyên sâu phản biện: … nhiều giải thích khác chưa loại trừ được (đại dịch, áp lực học tập, bất bình đẳng, lo âu khí hậu, thay đổi cách hỏi khảo sát)." Chữ mới: "Haidt (2024) cho rằng có. Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp… Một phân tích tổng hợp 2026 thấy liên hệ nhỏ nhưng nhất quán, và nhóm Orben thấy hiệu ứng trung bình nhỏ và hai chiều." Lý do: Bỏ "dựa trên…" và danh sách giải thích khác (không kiểm được). Review (Claude Opus 5.5, 10/11/2026): Nhãn Đang tranh cãi đạt thước đo: bằng chứng tốt khác chiều về nhân quả. Nay đã mở được Odgers 2024 (nature.com) và khuyến cáo Surgeon General (bản lưu), thay nguồn Wikipedia trong co_so.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nature.com/articles/d41586-024-00902-2", "https://web.archive.org/web/2024if_/https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf" ]
+    luot_2_ghi_chu: Nhãn 'Đang tranh cãi' hợp lý.
+    review: dung
+  - id: n34
+    cau: "Odgers (Nature, 2024, bài điểm sách): tìm kiếm các hiệu ứng lớn như Haidt gợi ý cho ra liên hệ không có, nhỏ hoặc lẫn lộn; khi thấy liên hệ theo thời gian thì chúng gợi ý teen đã có vấn đề sức khỏe tâm thần dùng mạng xã hội nhiều hơn."
+    loai: phat-hien
+    nguon:
+      - odgers2024
+    trich: Hundreds of researchers, myself included, have searched for the kind of large effects suggested by Haidt. Our efforts have produced a mix of no, small and mixed associations. Most data are correlative. When associations over time are found, they suggest not that social-media use predicts or causes depression, but that young people who already have mental-health problems use such platforms more
+    vi_tri: Wikipedia (tóm tắt thứ cấp qua công cụ đọc web), mục Criticism
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chỗ chưa chắc: Nature (doi 10.1038/d41586-024-00902-2) chuyển hướng đăng nhập, chưa mở; nguồn bậc 3. Lượt 2 nên tìm bản mở. Chữ cũ: "Giới nghiên cứu chuyên sâu phản biện: bằng chứng nhân quả còn yếu, hiệu ứng đo được nhỏ…" Chữ mới: "Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp mà chúng tôi đọc được (chưa mở bản gốc): …" Lý do: Gán cho một người phản biện cụ thể với nguồn nói rõ thứ cấp; bỏ "giới nghiên cứu chuyên sâu" (không kiểm được). Review (Claude Opus 5.5, 10/11/2026): Review mở được bài của Odgers trên nature.com (10/11/2026): chữ cũ đúng ý nhưng ghi "theo tóm tắt thứ cấp"; đã viết lại theo bài gốc và thay nguồn Wikipedia; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nature.com/articles/d41586-024-00902-2" ]
+    luot_2_ghi_chu: Nature 29/3/2024 (book review), đã đọc trực tiếp, không phải tóm tắt thứ cấp.
+    review: dung
+  - id: n35
+    cau: "Tổng Y sĩ Mỹ (2023) ra khuyến cáo thận trọng: mạng xã hội có thể có lợi cho một số teen nhưng cũng có dấu hiệu rủi ro gây hại, chưa đủ bằng chứng để nói nó đủ an toàn, và các công ty công nghệ cần chia sẻ dữ liệu cho nhà nghiên cứu độc lập."
+    loai: phat-hien
+    nguon:
+      - sg2023
+    trich: while social media may have benefits for some children and adolescents, there are ample indicators that social media can also have a profound risk of harm to the mental health and well-being of children and adolescents. At this time, we do not yet have enough evidence to determine if social media is sufficiently safe … Ensure technology companies share data … with independent researchers
+    vi_tri: HHS (2023), Advisory (hhs.gov 403, không mở được)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chỗ chưa chắc: không mở được trang HHS (403); lượt 2 và review nên mở. Đã viết "theo trang của HHS, chúng tôi chỉ đọc được đoạn trích". Chữ cũ: "…ra khuyến cáo thận trọng: mạng xã hội có cả lợi và hại, cần thêm dữ liệu từ chính các công ty công nghệ." Chữ mới: "…mạng xã hội có thể có cả lợi và hại, và cần thêm dữ liệu từ chính các công ty công nghệ (theo trang của HHS, chúng tôi chỉ đọc được đoạn trích)." Lý do: Làm mềm vì nguồn chưa mở trực tiếp. Review (Claude Opus 5.5, 10/11/2026): Review đọc khuyến cáo của Tổng Y sĩ Mỹ 2023 (PDF hhs.gov qua bản lưu Internet Archive 4/11/2026): chữ cũ đúng ý nhưng ghi "chỉ đọc được đoạn trích"; đã viết lại theo toàn văn; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2024if_/https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf" ]
+    review: dung
+  - id: n36
+    cau: 'Nhãn "Đã bị bác bỏ": "mạng xã hội hoàn toàn vô hại với teen".'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - teague2026
+      - orben2022
+    ly_do: Phân tích tổng hợp 2026 (153 nghiên cứu dọc) thấy mạng xã hội liên hệ nhất quán, khiêm tốn với trầm cảm và ý nghĩ tự hại (r = 0,09–0,21); Orben và cộng sự (2022) thấy các độ tuổi mà dùng nhiều dự báo hài lòng giảm nhẹ. Khẳng định "hoàn toàn vô hại" trái với các kết quả này. Nhãn xét theo đồng thuận của hai nguồn đã mở; liên hệ nhỏ và chưa nhân quả nên chỉ bác bỏ "hoàn toàn vô hại", không khẳng định có hại.
+    nguon:
+      - teague2026
+      - orben2022
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…cửa sổ nhạy cảm quanh tuổi dậy thì (nữ 11–13, nam 14–15) có bằng chứng dọc; nội dung độc hại (bắt nạt mạng, nội dung cổ vũ tự hại, so sánh ngoại hình) là rủi ro thật với nhóm dễ tổn thương." Chữ mới: "…phân tích tổng hợp 2026 thấy mạng xã hội liên hệ nhất quán với trầm cảm và ý nghĩ tự hại ở mức nhỏ (r = 0,09–0,21), và Orben và cộng sự (2022) thấy một nghiên cứu dọc có các độ tuổi…". Lý do: Bỏ "nội dung độc hại… rủi ro thật" (không có nguồn đã mở); thay bằng nguồn đọc được. Review (Claude Opus 5.5, 10/11/2026): Giữ Đã bị bác bỏ cho mệnh đề tuyệt đối "hoàn toàn vô hại": phân tích tổng hợp 153 nghiên cứu dọc (Teague 2026, tóm tắt đọc lại) thấy liên hệ nhất quán; Orben-Dienlin 2019 và Orben 2022 thấy hiệu ứng trong cùng người (nhỏ). Chỗ còn căng: phần nhân quả vẫn "đang tranh cãi" (n33); khung đã nói rõ "nhỏ ở mức trung bình" và không khẳng định có hại.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2024if_/https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf", "https://europepmc.org/article/MED/41801211", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+    luot_2_ghi_chu: "Nhãn 'Đã bị bác bỏ' cho 'hoàn toàn vô hại': hợp lý."
+    review: dung
+  - id: n37
+    cau: Các cửa sổ nhạy cảm khác nhau theo tuổi và giới (Orben và cộng sự, 2022); các yếu tố khác (tính cách, môi trường gia đình) có thể liên quan nhưng chúng tôi chưa có nguồn đã mở.
+    loai: phat-hien
+    nguon:
+      - orben2022
+    trich: distinct developmental windows of sensitivity to social media in adolescence … at different ages for males … and females
+    vi_tri: Orben (2022), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Mô hình nhạy cảm khác biệt (differential susceptibility)… Tuổi dậy thì (não bộ đang tái cấu trúc mạnh, nhạy cảm với đánh giá xã hội), giới tính, tính cách (hay lo âu, cầu toàn) và môi trường gia đình đều có thể khuếch đại hoặc giảm nhẹ tác động." Chữ mới: "Mức độ nhạy cảm khác nhau giữa các nhóm… Orben và cộng sự (2022) thấy các cửa sổ nhạy cảm khác nhau theo tuổi và giới. Các yếu tố khác… chúng tôi chưa có nguồn đã mở…, nên chỉ nêu như một khả năng." Lý do: Bỏ tên "differential susceptibility" và các yếu tố không có nguồn. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+    luot_2_ghi_chu: "'Chưa có nguồn đã mở' về yếu tố khác là tự nhận, đúng."
+    review: dung
+  - id: n38
+    cau: Các nghiên cứu ở trên dùng ước lượng thời gian dùng do teen tự báo cáo; nghiên cứu tương lai có thể đo cách dùng chứ không chỉ số giờ (ví dụ hai teen cùng lướt 3 tiếng là ví dụ giả định).
+    loai: phat-hien
+    nguon:
+      - orben2022
+    trich: correlating a single-item life satisfaction measure and participant estimates of how much time they spend using social media on a typical day
+    vi_tri: Orben (2022), Results (Fig. 1)
+    ket_qua: da-sua
+    ghi_chu: 'Ví dụ hai teen: gia-dinh. Chữ cũ: "…Hai teen cùng lướt 3 tiếng/ngày có thể đang làm hai việc hoàn toàn khác: … Nghiên cứu tương lai cần đo cách dùng… và cần dữ liệu thực từ công ty công nghệ thay vì tự báo cáo." Chữ mới: "…Các nghiên cứu ở trên dùng ước lượng thời gian dùng do teen tự báo cáo (Orben và cộng sự, 2022)… nghiên cứu tương lai có thể đo cách dùng…". Lý do: Bỏ "cần dữ liệu thực từ công ty" (không có nguồn mở); nêu bằng chứng về tự báo cáo. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Ví dụ hai teen là giả định.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/" ]
+    luot_2_ghi_chu: Ví dụ hai teen lướt 3 tiếng là giả định.
+    review: dung
+  - id: n39
+    cau: Dữ liệu cắt ngang không cho biết chiều nhân quả; dữ liệu dọc cho thấy cả hai chiều tồn tại (dùng nhiều → hài lòng giảm nhẹ; hài lòng giảm → dùng nhiều); các phân tích tổng hợp thấy liên hệ nhỏ hoặc không đáng kể và bằng chứng thực nghiệm còn lẫn lộn (Orben và cộng sự, 2022); muốn kết luận nhân quả cần can thiệp.
+    loai: phat-hien
+    nguon:
+      - orben2022
+      - orben-dienlin2019
+    trich: Meta-analyses have identified small or negligible negative links between social media use and well-being, while experimental evidence is mixed. Longitudinal observational studies … have found that they are either reciprocal
+    vi_tri: Orben (2022), Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hầu hết dữ liệu là cắt ngang… buồn cũng dẫn đến dùng nhiều hơn (trốn tránh, tìm đồng cảm)… loại nghiên cứu này còn rất ít." Chữ mới: "Dữ liệu cắt ngang… Dữ liệu dọc… cho thấy cả hai chiều đều tồn tại… Theo Orben và cộng sự (2022), các phân tích tổng hợp thấy liên hệ nhỏ hoặc không đáng kể và bằng chứng thực nghiệm còn lẫn lộn". Lý do: Bỏ "trốn tránh, tìm đồng cảm" (cơ chế, không kiểm được) và "còn rất ít" (nguồn nói "mixed"). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/" ]
+    review: dung
+  - id: n40
+    cau: 'Mục 1: số giờ dùng công nghệ liên hệ yếu với sức khỏe tinh thần ở cấp độ dân số (Orben và Przybylski, 2019); chưa có nghiên cứu đã mở cho thấy "cách dùng" quan trọng hơn "số giờ"; Tổng Y sĩ Mỹ (2023) khuyên gia đình lập kế hoạch dùng phương tiện số, thảo luận cởi mở về thời gian và nội dung, và nói với con về lợi ích, rủi ro của mạng xã hội.'
+    loai: loi-khuyen
+    nguon:
+      - orben2019
+      - sg2023
+    trich: explaining at most 0.4% of the variation in well-being [Orben 2019] | Create a family media plan. … A family media plan can promote open family discussion and rules about media use and include topics such as balancing screen/online time, content boundaries… Discuss with children the benefits and risks of social media [Surgeon General 2023]
+    vi_tri: Orben & Przybylski (2019), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: ":nhan[kha-vung] "Số giờ màn hình liên hệ yếu với sức khỏe tinh thần; cách dùng mới quan trọng. Dấu hiệu đáng lo… so sánh bản thân liên tục, bị bắt nạt/bình luận độc hại, xem nội dung cổ vũ tự hại hoặc rối loạn ăn uống, và dùng điện thoại để trốn tránh mọi cảm xúc khó chịu." Chữ mới: "Theo Orben và Przybylski (2019), số giờ… liên hệ yếu… Chúng tôi chưa có nghiên cứu đã mở cho thấy "cách dùng" quan trọng hơn "số giờ"; hỏi con đang xem gì… là thông lệ hợp lý, không phải kết quả của một nghiên cứu cụ thể." Lý do: Bỏ "cách dùng mới quan trọng" và danh sách "dấu hiệu đáng lo" (không có nguồn; gần với dấu hiệu lâm sàng). Review (Claude Opus 5.5, 10/11/2026): Lượt 2 không chắc đúng chỗ: lời khuyên "hỏi con đang xem gì" không có nguồn, lời rào "thông lệ hợp lý" không thay được nguồn. Thay bằng khuyến cáo có nguồn; doi_chu.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/" ]
+    luot_2_ghi_chu: Nguồn đã mở không cho thấy 'cách dùng quan trọng hơn số giờ' hay ngược lại; khẳng định 'chưa có nghiên cứu đã mở' là tự nhận của trang, không kiểm được ở lượt 2. Lời khuyên 'hỏi con đang xem gì' không có nguồn.
+    review: sai
+  - id: n41
+    cau: 'Nhãn "Khá vững": số giờ dùng công nghệ liên hệ yếu với sức khỏe tinh thần, nên chỉ đếm giờ có thể bỏ sót nhiều điều.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - orben2019
+      - teague2026
+    ly_do: 'Như n31: liên hệ yếu theo thời gian dùng (0,4% phương sai) nhưng phân tích tổng hợp 2026 thấy liên hệ nhất quán khiêm tốn; chủ yếu mẫu phương Tây, đo tự báo cáo. Khá vững.'
+    nguon:
+      - orben2019
+      - teague2026
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/", "https://europepmc.org/article/MED/41801211" ]
+    luot_2_ghi_chu: Phần 'nên chỉ đếm giờ có thể bỏ sót nhiều điều' là suy luận; nhãn 'Khá vững' không cao hơn thước đo.
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): Nhãn Khá vững đạt thước đo (như n31)."
+    review: dung
+  - id: n42
+    cau: 'Ngủ đủ giấc liên hệ với sức khỏe tinh thần mạnh hơn hẳn thời gian dùng màn hình (YRBS: β 0,150 so với −0,049); đây là liên hệ quan sát, chưa chứng minh rằng ngủ đủ cải thiện sức khỏe tinh thần.'
+    loai: so-lieu
+    nguon:
+      - orben2019
+    trich: a larger positive association for eating breakfast (median β = .116 …) and getting enough sleep (median β = .150, median n = 56,552, partial 𝜂2 = .022 …)
+    vi_tri: Orben & Przybylski (2019), Results (YRBS)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trong cùng bộ dữ liệu của Orben và Przybylski, ngủ đủ giấc liên hệ… mạnh hơn hẳn thời gian dùng màn hình." (tiêu đề "…là can thiệp rẻ và chắc chắn nhất", chip vững chắc) Chữ mới: "…(ở YRBS: β 0,150 so với −0,049). Đó là liên hệ quan sát, chưa chứng minh rằng ngủ đủ giấc cải thiện sức khỏe tinh thần." Tiêu đề "Bảo vệ giấc ngủ là một việc đáng làm", chip khá vững, giữ id cũ. Lý do: "Can thiệp… chắc chắn nhất" không có nguồn (chỉ liên hệ quan sát); hạ Vững chắc → Khá vững. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): YRBS: ngủ đủ β 0,150 so với công nghệ −0,049. Đã giải quyết.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443" ]
+    luot_2_ghi_chu: Hệ số β so sánh trong YRBS (0,150 so với -0,049) nằm trong toàn văn Nature Human Behaviour sau tường phí; không mở được, không có bản mở nào đã tìm thấy.
+    review: dung
+  - id: n43
+    cau: Tổng Y sĩ Mỹ (2023) khuyên cân nhắc hạn chế dùng điện thoại, máy tính bảng và máy tính ít nhất 1 giờ trước khi ngủ và suốt đêm; đó là khuyến cáo, chưa phải kết quả thử nghiệm mà chúng tôi đã kiểm.
+    loai: loi-khuyen
+    nguon:
+      - sg2023
+    trich: Since electronics can be a potential distraction after bedtime and can interfere with sleep, consider restricting the use of phones, tablets, and computers for at least 1 hour before bedtime and through the night.
+    vi_tri: Orben & Przybylski (2019), Results
+    ket_qua: da-sua
+    ghi_chu: 'Các con số 30–60 phút không có nguồn đã mở. Chữ cũ: "Quy tắc đơn giản, dễ thực hiện: điện thoại sạc ngoài phòng ngủ, không lướt trước giờ ngủ 30–60 phút." Chữ mới: "Quy tắc cụ thể… là thông lệ thực hành, chưa phải kết quả của nghiên cứu mà chúng tôi đã kiểm." Lý do: Nêu rõ không có nguồn. Review (Claude Opus 5.5, 10/11/2026): Lượt 2 không chắc đúng chỗ: "30–60 phút", "sạc ngoài phòng ngủ" không có nguồn. Thay bằng khuyến cáo của Tổng Y sĩ Mỹ (toàn văn qua bản lưu); doi_chu.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Lời khuyên cụ thể (sạc ngoài phòng ngủ, không lướt 30-60 phút trước giờ ngủ): trang tự nhận không phải kết quả nghiên cứu; không nguồn bậc 1-2 trong lượt 2."
+    review: sai
+  - id: n44
+    cau: 'Nhãn "Khá vững": giấc ngủ đủ liên hệ với sức khỏe tinh thần mạnh hơn thời gian dùng màn hình.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - orben2019
+    ly_do: 'Hai bộ dữ liệu lớn (YRBS và MTF; MTF: β sleep 0,246 so với −0,006) cùng chiều trong một bài; chưa mở được phân tích tổng hợp hay thử nghiệm đối chứng về can thiệp giấc ngủ. Khá vững cho liên hệ, không cho tác dụng nhân quả.'
+    nguon:
+      - orben2019
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: ":nhan[vung-chac]" cho "Bảo vệ giấc ngủ là can thiệp rẻ và chắc chắn nhất". Chữ mới: ":nhan[kha-vung]" cho "Bảo vệ giấc ngủ là một việc đáng làm". Lý do: Chỉ có liên hệ quan sát từ một bài; không đạt "Vững chắc". Review (Claude Opus 5.5, 10/11/2026): Lượt 2 không chắc vì không mở được Orben 2019; Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): YRBS β ngủ 0,150 so với −0,049; MTF 0,246 so với −0,006; Thảo luận: "getting enough sleep and regularly eating breakfast have much more positive associations… (ranging from 1.7x to 44.2x…)". Khá vững cho liên hệ (một bài, ba bộ dữ liệu; khuyến cáo Surgeon General cũng nêu liên hệ mạng xã hội với giấc ngủ kém), không cho tác dụng nhân quả: đạt thước đo.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443" ]
+    luot_2_ghi_chu: Nhãn dựa trên so sánh hệ số giấc ngủ với màn hình trong Orben & Przybylski 2019 (toàn văn sau tường phí, không mở được); không xác nhận được. Chưa mở tổng hợp nào khác so sánh trực tiếp hai yếu tố này.
+    review: dung
+  - id: n45
+    cau: "Mục 3: Orben và cộng sự (2022) thấy các cửa sổ (nữ 11–13, nam 14–15, 19 tuổi) trong đó dùng nhiều dự báo hài lòng giảm nhẹ một năm sau; chỉ một nghiên cứu dọc ở Anh, chưa lặp lại, các tác giả chỉ suy đoán về dậy thì, nên không gắn nhãn; phân tích tổng hợp 2026 thấy liên hệ với trầm cảm mạnh hơn ở đầu tuổi vị thành niên."
+    loai: loi-khuyen
+    nguon:
+      - orben2022
+      - teague2026
+    trich: distinct developmental windows of sensitivity to social media in adolescence, when higher estimated social media use predicts a decrease in life satisfaction ratings one year later [Orben 2022] | Associations between social media and depression were stronger in early adolescence (β = 0.09) [Teague 2026]
+    vi_tri: Orben (2022), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cửa sổ nhạy cảm… là lúc não bộ nhạy cảm nhất với đánh giá xã hội. Đây là giai đoạn nên trò chuyện nhiều hơn về so sánh trên mạng, áp lực ngoại hình và bắt nạt mạng — thay vì chỉ ra lệnh cấm." Chữ mới: "…đây là một nghiên cứu dọc ở Anh, và các tác giả chỉ suy đoán về dậy thì. Một gợi ý thực hành hợp lý (không phải kết quả của nghiên cứu): … trò chuyện với con về những điều con gặp trên mạng có thể hữu ích hơn chỉ ra lệnh cấm." Lý do: Bỏ "não bộ nhạy cảm nhất với đánh giá xã hội" (không có nguồn đã mở). Review (Claude Opus 5.5, 10/11/2026): Lời so sánh "trò chuyện… hữu ích hơn chỉ ra lệnh cấm" không có nguồn. Bỏ; tiêu đề đổi "Có thể có những độ tuổi nhạy cảm hơn", bỏ chip (xem n46), thêm kết quả điều tiết theo tuổi của Teague 2026; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+    luot_2_ghi_chu: Phần 'trò chuyện với con thay vì chỉ cấm' đã tự nhận là gợi ý thực hành, không phải kết quả nghiên cứu.
+    review: sai
+  - id: n46
+    cau: '(Đã bỏ) Nhãn "Khá vững": chú ý ở ngưỡng dậy thì (các cửa sổ nhạy cảm).'
+    loai: nhan
+    ket_qua: da-bo
+    ghi_chu: 'Lượt 1: chỗ khó, một nghiên cứu chưa tái lập. Review (Claude Opus 5.5, 10/11/2026): Lượt 2 quá mạnh đúng: một nghiên cứu dọc, chưa tái lập, không đạt Khá vững; cũng không đạt Đang tranh cãi (không có bằng chứng trái chiều) như câu đúng của lượt 2. Bỏ chip khỏi tiêu đề mục 3 (giữ id cũ { #3-chu-y-dac-biet-o-nguong-day-thi-kha-vung }), phát hiện vẫn kể ở n45 với lời "chưa được lặp lại"; doi_chu.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/", "https://europepmc.org/article/MED/30944443" ]
+    luot_2_ghi_chu: "câu đúng: Nhãn 'Đang tranh cãi' hay 'chưa đủ bằng chứng': cửa sổ nhạy cảm theo tuổi và giới chỉ dựa trên một nghiên cứu dọc ở Anh, chưa tái lập.; Cửa sổ nhạy cảm chỉ có một nghiên cứu dọc ở Anh, chưa có tái lập; hiệu ứng nhỏ và cơ chế dậy thì chỉ là suy đoán. 'Khá vững' (nhiều nghiên cứu cùng chiều) cao hơn thước đo mục 4."
+    review: sai
+    nhan: kha-vung
+    co_so:
+      - orben2022
+    ly_do: (Nhãn cũ, đã bỏ khỏi trang ở review.) Một nghiên cứu dọc lớn (17.409 người) ở Anh thấy các cửa sổ nhạy cảm; chưa có tái lập hay phân tích tổng hợp; không đạt Khá vững.
+  - id: n47
+    cau: 'Mục 4: nếu một bạn trẻ buồn bã kéo dài, mất hứng thú, nói về cái chết hoặc tự làm hại mình, đó là lúc cần người có chuyên môn; chỉ chuyên gia mới chẩn đoán được; WHO ghi nhận nhiều vấn đề sức khỏe tâm thần tuổi vị thành niên chưa được nhận ra và chưa được điều trị, và kỳ thị là một rào cản; xem Hỗ trợ.'
+    loai: lam-sang
+    nguon:
+      - who-adol2025
+    trich: adolescent mental health conditions "remain largely unrecognized and untreated"; "stigma (affecting readiness to seek help)" and "barriers to accessing care"
+    vi_tri: WHO (2025), Adolescent mental health
+    ket_qua: da-sua
+    ghi_chu: 'Lời dẫn an toàn theo lời giao (không chẩn đoán, không liệt kê dấu hiệu để tự đối chiếu, không chi tiết về cách tự hại). Đã bỏ chip vững chắc: không có nguồn đã mở nói "nên đi khám khi…" như một khẳng định nghiên cứu; giữ id cũ. Chữ cũ: ":nhan[vung-chac]" "Buồn bã kéo dài trên hai tuần, mất hứng thú với mọi thứ, nói về cái chết hoặc tự làm hại mình — đó là lúc cần bác sĩ tâm thần/nhà tâm lý… Tại Việt Nam, gọi 115 khi khẩn cấp. Trầm cảm tuổi teen là bệnh lý có thể điều trị được." Chữ mới: "Nếu một bạn trẻ buồn bã kéo dài, mất hứng thú, nói về cái chết hoặc tự làm hại mình, đó là lúc cần người có chuyên môn… Chỉ chuyên gia mới chẩn đoán được… Xem [Hỗ trợ]." Tiêu đề "Khi lo về trầm cảm hoặc tự hại: tìm người có chuyên môn", bỏ chip, giữ id cũ. Lý do: Bỏ "hai tuần" (dạng tiêu chí chẩn đoán), "bệnh lý có thể điều trị được" (WHO fact sheet không nói điều đó), số 115 (dẫn Hỗ trợ theo lời giao). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Không có tiêu chí chẩn đoán, không chi tiết cách tự hại, dẫn Hỗ trợ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health" ]
+    luot_2_ghi_chu: Phần chỉ dấu hiệu và 'chỉ chuyên gia mới chẩn đoán' là lời dẫn an toàn, phù hợp tinh thần hướng dẫn WHO.
+    review: dung
+  - id: n48
+    cau: Các lời dẫn an toàn khác (khung ">" ở "Điều gì đang xảy ra?", ngộ nhận "cứ thu điện thoại là hết trầm cảm") chỉ nói nên nói với người tin cậy hay người có chuyên môn và dẫn Hỗ trợ, không có số điện thoại.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hãy gọi ngay 115 (cấp cứu)… Trầm cảm là bệnh lý có thể điều trị được"; "…gọi 115 khi khẩn cấp hoặc tìm bác sĩ tâm thần/nhà tâm lý." Chữ mới: "hãy nói ngay với người bạn tin cậy, thầy cô hoặc người có chuyên môn… xem Hỗ trợ… Tìm giúp đỡ là dấu hiệu của sức mạnh." Lý do: Theo lời giao: dẫn Hỗ trợ; bỏ "bệnh lý có thể điều trị được" và số 115. Review (Claude Opus 5.5, 10/11/2026): Đổi loại loi-khuyen thành ve-site (lời dẫn tới Hỗ trợ; lượt 2 cũng xếp ve-site). Câu "Tìm giúp đỡ là dấu hiệu của sức mạnh, không phải yếu đuối" trong khung là khẳng định không nguồn: đã bỏ; doi_chu. Đã kiểm trên trang: không có số đường dây nóng, không chi tiết cách tự hại.'
+    review: sai
+  - id: n49
+    cau: Liên kết [Hỗ trợ](/psyche/ho-tro/) (khung đầu bài, mục 4, ngộ nhận) và liên kết tới Bắt nạt và áp lực thi cử trỏ tới trang của site.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: ho-tro/index.md và kham-pha/phat-trien/tam-ly-hoc-duong.md có trong worktree; trang.yml có ho-tro/index. Review (Claude Opus 5.5, 10/11/2026): Đã kiểm: ho-tro/index và kham-pha/phat-trien/tam-ly-hoc-duong có trang; ba chỗ dẫn Hỗ trợ còn trên trang.'
+    review: dung
+  - id: n50
+    cau: 'Việt Nam có khảo sát quốc gia riêng (NAMHS 2021): 5.996 hộ gia đình, 10–17 tuổi, phỏng vấn chẩn đoán; tỉ lệ có một trong sáu rối loạn tâm thần trong 12 tháng là 3,3% ở Việt Nam (12,1% Kenya; 5,5% Indonesia); ý nghĩ tự tử 12 tháng khoảng 1,4% (KTC 1,0–1,9%), cố tự tử khoảng 0,2% (0,1–0,3%).'
+    loai: so-lieu
+    nguon:
+      - namhs-lancet2024
+    trich: Prevalence of any mental disorder in the past 12 months was 12·1% (95% CI 10·9-13·5) in Kenya, 5·5% (4·3-6·9) in Indonesia, and 3·3% (2·7-4·1) in Viet Nam. … suicide ideation ranging from 1·4% in Indonesia (1·0-2·0) and Viet Nam (1·0-1·9) … suicide attempts ranging from 0·2% in Indonesia (0·1-0·4) and Viet Nam (0·1-0·3)
+    vi_tri: Lancet (2024), tóm tắt, Findings
+    ket_qua: da-sua
+    ghi_chu: 'Câu mới thêm. Số "5.996 hộ" theo tóm tắt (Viet Nam). Ý nghĩ tự tử 1,4% là con số chung ghi cho Indonesia và Việt Nam trong tóm tắt (KTC khác nhau); số cố tự tử 0,2% cũng vậy. Chữ cũ: "Chưa có khảo sát quy mô quốc gia kiểu YRBS cho teen Việt Nam". Chữ mới: "Việt Nam có các khảo sát quốc gia riêng, đo khác nên không so trực tiếp được: NAMHS (2021…)". Lý do: Sai: có khảo sát quốc gia (NAMHS 2021; cũng GSHS Việt Nam 2019 theo một nghiên cứu về bạo lực học đường, chưa dùng trên trang). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Tóm tắt NAMHS (Lancet 2024) đọc lại trên Europe PMC: "suicide ideation ranging from 1·4% in Indonesia (1·0-2·0) and Viet Nam (1·0-1·9)… suicide attempts ranging from 0·2% in Indonesia (0·1-0·4) and Viet Nam (0·1-0·3)"; 5996 households; 3·3% (2·7-4·1). Lượt 2 không chắc vì không mở được; nay đã giải quyết. Số có khung "trong 12 tháng".'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC12312253/" ]
+    luot_2_ghi_chu: Xác nhận 5.996 hộ, 10-17 tuổi, 3,3% (12,1% Kenya; 5,5% Indonesia). Không tìm thấy trong nguồn mở nào 'ý nghĩ tự tử 12 tháng ~1,4% (KTC 1,0-1,9)' và 'cố tự tử ~0,2% (0,1-0,3)'; bài Lancet 2024 của NAMHS không mở được.
+    review: dung
+  - id: n51
+    cau: NAMHS đo bằng phỏng vấn chẩn đoán còn YRBS bằng một câu hỏi tự báo cáo, nên không thể kết luận teen Việt "khỏe hơn" hay "ít buồn hơn" teen Mỹ; không thấy dữ liệu mạng xã hội trong tóm tắt NAMHS.
+    loai: phat-hien
+    nguon:
+      - namhs-lancet2024
+      - cdc1323
+    trich: Six mental disorders … were assessed with the Diagnostic Interview Schedule for Children, Version 5 (NAMHS); One question assesses persistent feelings of sadness or hopelessness and is an indicator of depressive symptoms (CDC)
+    vi_tri: Lancet (2024), Methods; CDC (2024)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Suy luận về không so sánh được đã ghi rõ trên trang. Chữ cũ: (không có) Chữ mới: "Số này thấp so với tỉ lệ buồn bã tự báo cáo ở Mỹ, nhưng đó là hai cách đo khác nhau… nên không thể kết luận teen Việt "khỏe hơn" hay "ít buồn hơn"." Lý do: Câu mới thêm để không để lại ấn tượng sai khi đặt số Mỹ và số Việt cạnh nhau. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC12312254/", "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf" ]
+    luot_2_ghi_chu: Các bài NAMHS đã mở không thấy dữ liệu mạng xã hội trong tóm tắt.
+    review: dung
+  - id: n52
+    cau: 'Dam và cộng sự (2023): khảo sát trực tuyến 1.891 người tham gia ở Hà Nội, Tuyên Quang, Cần Thơ (9–10/2021; tuổi trung bình 17); 98,4% dùng mạng xã hội; FOMO càng cao thì PHQ-9 càng cao; FOMO và dùng Internet có vấn đề đi kèm tự hại/tự tử.'
+    loai: so-lieu
+    nguon:
+      - dam2023
+    trich: An online cross-sectional study was conducted in three cities in Vietnam (Hanoi, Tuyen Quang, and Can Tho) from September through to October 2021. … 1891 participants were recruited, with 98.4% having access to social media. … "FOMO score" and "self-harm and suicide" were positive factors of the PHQ-9 score … In terms of self-harm and suicide, "FOMO score" and "Problematic Internet use" were positive factors
+    vi_tri: Dam (2023), Abstract và Results (tuổi TB 17,0, SD 2,8)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…khảo sát trực tuyến 1.891 vị thành niên ở Hà Nội, Tuyên Quang và Cần Thơ…: FOMO và việc dùng Internet có vấn đề cùng đi kèm nguy cơ tự hại/tự tử cao hơn." Chữ mới: "…khảo sát trực tuyến 1.891 người tham gia… (tháng 9–10/2021; tuổi trung bình 17)… đi kèm với tự hại/tự tử." Lý do: "Vị thành niên" → "người tham gia" (tuổi trung bình 17, SD 2,8); bỏ "nguy cơ cao hơn" (nguồn nói "yếu tố dương"). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC10246797/" ]
+    review: dung
+  - id: n53
+    cau: Một nghiên cứu cắt ngang (Vũ Thị Thúy Hằng & Nguyễn Thị Vân, công bố 25/12/2024, VNU Journal of Economics and Business) dùng thang BSMAS trên 13–17 tuổi, chọn mẫu quả cầu tuyết, ghi nhận tỉ lệ "nghiện mạng xã hội" cao, nữ dễ bị hơn nam.
+    loai: so-lieu
+    nguon:
+      - vu2024
+    trich: A cross-sectional study was conducted in Vietnam with participants aged 13 to under 18. Snowball sampling was used … The study found a high prevalence of social media addiction among Vietnamese adolescents, with females being more susceptible than males.
+    vi_tri: Vu & Nguyen (2024), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một nghiên cứu tại Đại học Thương mại (chấp nhận đăng cuối 2024) dùng thang BSMAS trên teen 13–18 tuổi… mẫu thuận tiện". Chữ mới: "…(Vũ Thị Thúy Hằng và Nguyễn Thị Vân, công bố 25/12/2024 trên VNU Journal of Economics and Business) dùng thang BSMAS trên 13–17 tuổi, chọn mẫu theo kiểu quả cầu tuyết…". Danh mục nguồn đã sửa. Lý do: Nơi đăng là VNU Journal of Economics and Business (không phải "Đại học Thương mại"); tuổi 13 đến dưới 18; mẫu quả cầu tuyết, không phải "thuận tiện". Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.57110/vnu-jeb.v4i6.354" ]
+    luot_2_ghi_chu: Tác giả Vu Thi Thuy Hang và Nguyen Thi Van.
+    review: dung
+  - id: n54
+    cau: 'Các nghiên cứu Việt Nam về mạng xã hội ở trên là cắt ngang, mẫu không đại diện, đo bằng bảng hỏi trực tuyến: chỉ cho thấy "đi cùng nhau".'
+    loai: phat-hien
+    nguon:
+      - dam2023
+      - vu2024
+    trich: An online cross-sectional study … Snowball sampling was used
+    vi_tri: Dam (2023); Vu & Nguyen (2024)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…tất cả đều là nghiên cứu cắt ngang, mẫu thuận tiện…" Chữ mới: "…các nghiên cứu này là cắt ngang, mẫu không đại diện, và đo bằng bảng hỏi trực tuyến…" Lý do: Phân biệt với khảo sát quốc gia NAMHS; mẫu thuận tiện → không đại diện. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC10246797/", "https://doi.org/10.57110/vnu-jeb.v4i6.354" ]
+    luot_2_ghi_chu: Mẫu không đại diện (lấy mẫu quả cầu tuyết, tham gia qua mạng).
+    review: dung
+  - id: n55
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu dọc đủ lớn ở Việt Nam về mạng xã hội và sức khỏe tâm thần teen để trả lời câu hỏi nhân quả.
+    loai: thoi-su
+    het_han: '2028-11-01'
+    nguon:
+      - tim-kiem-vn-mxh
+    ket_qua: da-sua
+    ghi_chu: 'Europe PMC 10/11/2026: các kết quả đầu không phải nghiên cứu dọc về mạng xã hội và sức khỏe tâm thần teen Việt Nam (có nghiên cứu dọc khác về cân nặng, v.v.); chưa đọc hết 1.728 kết quả, chưa tìm Google Scholar hay tạp chí trong nước: lượt 2 và review nên tìm thêm. Chữ cũ: "…chúng ta chưa có dữ liệu dọc đủ tốt để trả lời." Chữ mới: "Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu dọc đủ lớn…". Lý do: Quy tắc câu thời sự: mốc, hạn, nguồn là lần tìm. Review (Claude Opus 5.5, 10/11/2026): Câu thời sự có mốc "Tính đến 11/2026", het_han 2028-11-01; nguồn là lần tìm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=vietnam%20AND%20adolescents%20AND%20(%22social%20media%22%20OR%20%22internet%20use%22%20OR%20smartphone)%20AND%20(longitudinal%20OR%20cohort%20OR%20prospective)%20AND%20(%22mental%20health%22%20OR%20depress*%20OR%20anxiety)&format=json&resultType=lite&pageSize=12" ]
+    luot_2_ghi_chu: Kiểm lại hôm nay 2026-11-10; 'chưa tìm thấy' là kết quả tìm kiếm của lượt 2.
+    review: dung
+  - id: n56
+    cau: (Đã bỏ) TikTok và video ngắn chiếm vị trí áp đảo trong thời gian online của teen Việt; áp lực học tập và kỳ vọng gia đình là nguồn stress lớn được ghi nhận trong nhiều khảo sát trong nước.
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'Không có nguồn đã mở cho tỉ trọng TikTok; áp lực học tập chỉ có ở trang khác (Trần 2024). Chữ cũ: "TikTok và video ngắn chiếm vị trí áp đảo trong thời gian online của teen Việt… áp lực học tập và kỳ vọng gia đình là nguồn stress lớn được ghi nhận trong nhiều khảo sát trong nước." Chữ mới: "…chúng tôi không có nguồn đã mở về tỉ trọng TikTok… áp lực học tập là một yếu tố có thể liên quan (xem [Bắt nạt và áp lực thi cử]), nhưng đó là giả thuyết." Lý do: Không kiểm được; thêm liên kết trang nội bộ. Review (Claude Opus 5.5, 10/11/2026): Đã kiểm: trang không còn "áp đảo" hay "TikTok chiếm".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Câu đã bỏ khỏi trang; không qua lượt 2.
+    review: dung
+  - id: n57
+    cau: 'Ngộ nhận: tương quan–nhân quả; dữ liệu dọc cho thấy hài lòng giảm dự báo dùng nhiều hơn sau đó; cả hai chiều có thể cùng đúng.'
+    loai: phat-hien
+    nguon:
+      - orben-dienlin2019
+      - orben2022
+    trich: Decreases in life satisfaction ratings also predicted subsequent increases in estimated social media use
+    vi_tri: Orben (2022), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Dữ liệu dọc cho thấy chiều ngược lại cũng đúng: teen đang buồn có xu hướng chui vào mạng xã hội nhiều hơn." Chữ mới: "Dữ liệu dọc của Orben và cộng sự cho thấy chiều ngược lại cũng đúng: hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn sau đó." Lý do: "Chui vào mạng xã hội" (động cơ) không có trong nguồn; hài lòng là biến đo. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+    review: dung
+  - id: n58
+    cau: 'Ngộ nhận "hiệu ứng nhỏ nghĩa là vô hại": "nhỏ ở mức trung bình" không có nghĩa bằng không; các phân tích tổng hợp thấy liên hệ nhỏ nhưng nhất quán; chúng tôi chưa có nguồn nói với một số nhóm hiệu ứng "không hề nhỏ".'
+    loai: phat-hien
+    nguon:
+      - teague2026
+      - orben2022
+    trich: Digital media use was "consistently associated with risks" to child and adolescent health, especially social media. … They also note the associations are modest.
+    vi_tri: Teague (2026); Orben (2022)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ở quy mô hàng chục triệu teen, hiệu ứng nhỏ vẫn tạo ra số ca đáng kể ở mức cộng đồng; và "trung bình nhỏ" che giấu nhóm dễ tổn thương (tuổi dậy thì, đã có sẵn lo âu/trầm cảm) — với các em, hiệu ứng không hề nhỏ." Chữ mới: "…các phân tích tổng hợp thấy liên hệ nhỏ nhưng nhất quán, và Orben và cộng sự (2022) thấy các độ tuổi mà hiệu ứng rõ hơn một chút. Chúng tôi chưa có nguồn nói rằng với một số nhóm, hiệu ứng "không hề nhỏ"." Lý do: Bỏ tính toán "hàng chục triệu", "lo âu/trầm cảm có sẵn" (không có nguồn đã mở). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Chữ "nhỏ nhưng nhất quán" khớp tóm tắt Teague 2026 và Orben 2022.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/41801211", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/" ]
+    luot_2_ghi_chu: "Các phân tích tổng hợp nói 'nhỏ' (Orben 2022: 'small or negligible'; Teague 2026: nhất quán ở mức nhỏ-vừa); câu của trang khớp ở mức 'nhỏ nhưng nhất quán'; phần 'chưa có nguồn cho nhóm hiệu ứng không hề nhỏ' là tự nhận."
+    review: dung
+  - id: n59
+    cau: 'Ngộ nhận "cấm tiệt mạng xã hội là giải pháp": chưa đủ bằng chứng thực nghiệm; Tổng Y sĩ Mỹ (2023) nói mạng xã hội có thể có cả lợi và hại: với một số teen, nó mang lại cộng đồng và sự hỗ trợ từ bạn bè, nhất là với những nhóm hay bị gạt ra lề.'
+    loai: phat-hien
+    nguon:
+      - orben2022
+      - sg2023
+    trich: Meta-analyses have identified small or negligible negative links … while experimental evidence is mixed. (Orben 2022) | Social media can provide benefits for some youth by providing positive community and connection … especially important for youth who are often marginalized, including racial, ethnic, and sexual and gender minorities. (Surgeon General 2023)
+    vi_tri: Orben (2022), Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Vế Surgeon General: chưa mở nguồn trực tiếp (xem n35). Chữ cũ: "Mạng xã hội cũng là nơi nhiều teen tìm thấy cộng đồng và sự hỗ trợ (bạn bè, nhóm sở thích, teen thuộc nhóm thiểu số khó chia sẻ ngoài đời). Cấm đoán cực đoan có thể lấy đi cả mặt tích cực mà không giải quyết được gốc rễ." Chữ mới: "Chưa có đủ bằng chứng thực nghiệm để nói cấm tiệt mạng xã hội cải thiện sức khỏe tâm thần… Chúng tôi không có nguồn đã mở về mặt tích cực cụ thể…, nên không khẳng định." Lý do: Bỏ mặt tích cực cụ thể (không có nguồn đã mở). Review (Claude Opus 5.5, 10/11/2026): Review đọc khuyến cáo của Tổng Y sĩ Mỹ 2023 (PDF hhs.gov qua bản lưu Internet Archive 4/11/2026): vế lợi ích nay có nguồn; trang bỏ câu "chúng tôi không có nguồn… nên không khẳng định" và nêu lợi ích theo khuyến cáo; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2024if_/https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf" ]
+    review: dung
+  - id: n60
+    cau: 'Ngộ nhận "cứ thu điện thoại là hết trầm cảm": liên hệ giữa mạng xã hội và sức khỏe tâm thần là nhỏ và hai chiều nên chỉ thu điện thoại khó là cả lời giải; nếu lo, tìm người có chuyên môn; xem Hỗ trợ.'
+    loai: loi-khuyen
+    nguon:
+      - orben-dienlin2019
+    trich: social media use is not, in and of itself, a strong predictor of life satisfaction across the adolescent population. Instead, social media effects are nuanced, small at best, reciprocal over time, gender specific, and contingent on analytic methods.
+    vi_tri: Orben (2019, PNAS), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trầm cảm là bệnh lý phức tạp (gen, môi trường, sang chấn, áp lực học tập...)… điều trị trầm cảm cần chuyên môn y tế — gọi 115…". Chữ mới: "Dữ liệu cho thấy liên hệ… là nhỏ và hai chiều, nên chỉ thu điện thoại khó là cả lời giải. Nếu lo về trầm cảm của một bạn trẻ, hãy tìm người có chuyên môn; xem Hỗ trợ." Lý do: Bỏ danh sách nguyên nhân trầm cảm (không có nguồn) và số 115. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Lời dẫn Hỗ trợ, không số điện thoại.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/", "https://web.archive.org/web/2024if_/https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf" ]
+    luot_2_ghi_chu: Phần 'nếu lo, tìm người có chuyên môn' là lời dẫn tới Hỗ trợ, phù hợp WHO về thanh thiếu niên.
+    review: dung
+  - id: n61
+    cau: 'Các liên kết "Đọc thêm" (Não tuổi teen khác gì não người lớn?; Buồn thường và trầm cảm khác nhau thế nào?; Tuổi teen: mình là ai?) trỏ tới trang của site.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Chỗ cần chú ý: trong worktree chỉ có phat-trien/ban-sac-tuoi-teen.md; co-so-sinh-hoc/nao-tuoi-teen và suc-khoe-tam-than/tram-cam chưa có (lô khác). Link không đổi; kiểm khi gom nhánh. Đã kiểm: trang.yml dua_tren (ban-sac-tuoi-teen, nao-tuoi-teen) khớp các link. Review (Claude Opus 5.5, 10/11/2026): Đã kiểm: ban-sac-tuoi-teen có trang; co-so-sinh-hoc/nao-tuoi-teen và suc-khoe-tam-than/tram-cam có bản ghi ở trang.yml (chưa có trang trong worktree, hiện "sắp có"); kiểm lại khi gom.'
+    review: dung
+  - id: n62
+    cau: 'Câu hỏi 1: Orben & Przybylski (2019) trên 355.358 teen — công nghệ số giải thích tối đa 0,4% khác biệt về sức khỏe tinh thần — tương đương ăn khoai tây; bị bắt nạt và hút cần sa có liên hệ tiêu cực mạnh hơn nhiều lần.'
+    loai: phat-hien
+    nguon:
+      - orben2019
+    trich: explaining at most 0.4% of the variation in well-being; … being bullied (median β = -.212) … smoking marijuana (median β = -.132) [so với technology use −.049]
+    vi_tri: Orben & Przybylski (2019)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Lời giải thích không dựa vào vị trí lựa chọn. Chữ cũ: "…tương đương ăn khoai tây; bị bắt nạt và hút cần sa có liên hệ tiêu cực mạnh hơn nhiều lần." và lời giải thích "…giấc ngủ, bắt nạt, bữa sáng — liên hệ mạnh hơn hẳn." Chữ mới: "…trong cùng bộ dữ liệu, giấc ngủ, bắt nạt, bữa sáng liên hệ mạnh hơn hẳn."; lựa chọn đúng "…tương đương ăn khoai tây…" giữ (xem n20, nhỏ gần bằng). Lý do: "Tương đương" khoai tây hơi mạnh (−0,042 so với −0,049): giữ vì là cách nói tắt trong câu hỏi, nhưng lời giải thích nêu "trong cùng bộ dữ liệu". Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Review đọc toàn văn bản tác giả Orben & Przybylski 2019 (Oxford ORA, uuid:5d844350…, tải PDF 10/11/2026): "nearly as negative (0.9x, YRBS)": chữ "tương đương" trong lựa chọn đúng là cách nói tắt chấp nhận được. Đã giải quyết.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30944443" ]
+    luot_2_ghi_chu: 0,4% khớp tóm tắt. 'Tương đương ăn khoai tây' và 'bị bắt nạt, hút cần sa mạnh hơn nhiều lần' nằm trong toàn văn sau tường phí, không mở được.
+    review: dung
+  - id: n63
+    cau: 'Câu hỏi 2: YRBS 2021 không hỏi về mạng xã hội nên không chứng minh mạng xã hội gây trầm cảm; muốn kết luận nhân quả cần thiết kế khác.'
+    loai: phat-hien
+    nguon:
+      - mmwr2023
+      - cdc1121
+    trich: '"These new questions assessed social media use" (2023); In 2021, 42% of high school students felt so sad or hopeless …'
+    vi_tri: MMWR su7304a1; CDC (2023)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Vì YRBS không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy khủng hoảng sức khỏe tâm thần có thật…" Chữ mới: "Vì đợt YRBS 2021 không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy mức buồn bã tự báo cáo tăng…" Lý do: Xem n15, n2; câu hỏi đổi "năm 2021". Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC11559676/" ]
+    luot_2_ghi_chu: YRBS 2021 không có câu hỏi này; DSTR 2013-2023 nói chung 'câu hỏi mới 2021 và 2023' cho nhiều chủ đề, nhưng MMWR 2024 nêu rõ 2023 là lần đầu cho tần suất dùng mạng xã hội.
+    review: dung
+  - id: n64
+    cau: 'Câu hỏi 3: Orben và cộng sự (2022) — cửa sổ nhạy cảm nữ 11–13, nam 14–15; hiệu ứng vẫn nhỏ; chiều ngược lại cũng tồn tại.'
+    loai: phat-hien
+    nguon:
+      - orben2022
+    trich: These windows occur at different ages for males (14-15 and 19 years old) and females (11-13 and 19 years old).
+    vi_tri: Orben (2022), tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu hỏi dùng "quanh tuổi dậy thì" như mô tả địa phương của khoảng tuổi; phần "quanh tuổi dậy thì" đã được làm rõ ở n28.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+    luot_2_ghi_chu: Câu hỏi 3 gom 'nữ 11-13, nam 14-15' (còn có 19 tuổi cả hai giới).
+  - id: n65
+    cau: 'Câu hỏi 4: dữ liệu dọc cho thấy hài lòng giảm cũng dự báo dùng mạng xã hội nhiều hơn; tương quan không cho biết chiều nhân quả; có thể cả hai chiều cùng đúng.'
+    loai: phat-hien
+    nguon:
+      - orben2022
+    trich: Decreases in life satisfaction ratings also predicted subsequent increases in estimated social media use
+    vi_tri: Orben (2022), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Dữ liệu dọc cho thấy teen đang buồn có xu hướng dùng mạng xã hội NHIỀU hơn" và lựa chọn đúng "…teen buồn tìm đến mạng xã hội để trốn tránh hoặc tìm đồng cảm…". Chữ mới: "Dữ liệu dọc cho thấy hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn…" và lựa chọn đúng bỏ "để trốn tránh hoặc tìm đồng cảm". Lý do: Bỏ động cơ (không có nguồn); chữ "buồn" thay bằng biến đo. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534991/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960761/" ]
+    review: dung
+  - id: n66
+    cau: Trang là bài mở rộng, dựa trên ban-sac-tuoi-teen và nao-tuoi-teen, kiem_lai_truoc 2027-05 (src/data/trang.yml).
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm trong src/data/trang.yml. Đề xuất: hạ kiem_lai_truoc xuống 2027-05 (YRBS 2027 dự kiến, phân tích tổng hợp mới ra liên tục; chưa mở được Nature/hhs.gov). Người giao quyết. Review (Claude Opus 5.5, 10/11/2026): Câu cũ ghi kiem_lai_truoc 2028-05; trang.yml nay ghi 2027-05 (người giao đã đổi theo đề xuất). 2027-05 không muộn hơn het_han sớm nhất của bài (n13: 2027-11-01).'
+    review: sai
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: '"…và dữ liệu CDC YRBS nói gì."'
-  moi: '"…dữ liệu CDC YRBS nói gì, và số liệu quốc gia của Việt Nam."'
-  ly_do: Trang nay có số liệu NAMHS (Việt Nam). (nhận định n1)
-- cu: '"…sức khỏe tâm thần của teen xấu đi là có thật (dữ liệu không thể chối cãi)… một trong những tranh luận khoa học ồn ào nhất thập kỷ".'
-  moi: '"…ở Mỹ, tỉ lệ teen báo cáo buồn bã dai dẳng đã tăng rõ trong thập kỷ 2010 (số liệu khảo sát đại diện quốc gia)… một tranh luận khoa học đang diễn ra".'
-  ly_do: Bỏ "không thể chối cãi", "ồn ào nhất thập kỷ"; chỉ nói về teen Mỹ và tự báo cáo. (nhận định n2)
-- cu: '"Jonathan Haidt, nhà tâm lý học xã hội tại Đại học New York, xuất bản năm 2024… từ khoảng 2010–2015, tuổi thơ của trẻ em phương Tây đã bị "đại tu sửa"… từ tuổi thơ chơi tự do ngoài đời thực sang tuổi thơ gắn với điện thoại."'
-  moi: '"Nhà tâm lý học Jonathan Haidt xuất bản năm 2024… sự trỗi dậy của smartphone và mạng xã hội, cùng với sự suy giảm tự lập và chơi tự do, đã "đại tu sửa" tuổi thơ… Ông nói về giai đoạn biến đổi 2010–2015."'
-  ly_do: Bỏ "nhà tâm lý học xã hội tại ĐH New York" và "trẻ em phương Tây" (không có trong nguồn đã mở); theo chữ của trang sách. (nhận định n3)
-- cu: '"…từ khoảng 2010–2015…".'
-  moi: '"…ông nói về giai đoạn biến đổi 2010–2015".'
-  ly_do: 'Làm mềm: bắt nguồn từ một trích dẫn qua nguồn bậc 3, không phải sách. (nhận định n4)'
-- cu: '"Điểm gãy ông nhấn mạnh là khoảng năm 2012, khi đa số teen Mỹ đã sở hữu smartphone."'
-  moi: (bỏ)
-  ly_do: Không kiểm được. (nhận định n5)
-- cu: '"Haidt liệt kê bốn tổn hại nền tảng… (1) tước đoạt xã hội — tương tác trực tiếp bị thay bằng kết nối nông trên mạng; (2) thiếu ngủ — dùng điện thoại khuya; (3) phân mảnh chú ý — thông báo liên tục; (4) nghiện — thuật toán tối ưu cho thời gian dùng." (và ở mục Lý thuyết: ánh sáng xanh, rèn não chuyển đổi tác vụ…)'
-  moi: '"Theo mô tả của sách (chúng tôi không mở được sách gốc), Haidt nêu bốn tổn hại nền tảng: … Đây là các giả thuyết cơ chế của Haidt; chúng tôi chưa kiểm các cơ chế cụ thể bằng nguồn riêng."'
-  ly_do: Bỏ các mô tả chi tiết cơ chế (không có nguồn đã mở). (nhận định n6)
-- cu: '"…10% đã từng cố tự tử (2021), 9% (2023)."'
-  moi: '"…10% đã từng cố tự tử (2021), khoảng 9% (2023)."'
-  ly_do: Báo cáo xu hướng làm tròn 9, MMWR nêu 9,5%; viết "khoảng". (nhận định n12)
-- cu: '"Lưu ý quan trọng: YRBS không hỏi gì về mạng xã hội" và "YRBS không đo việc dùng mạng xã hội".'
-  moi: '"YRBS 2021 và các đợt trước không hỏi gì về nó; riêng đợt 2023 mới thêm câu hỏi về tần suất dùng".'
-  ly_do: 'Sai với 2023: CDC đã thêm câu hỏi về mạng xã hội. (nhận định n15)'
-- cu: '"…nhưng CDC nhấn mạnh nhiều chỉ số đã xấu đi từ trước COVID."'
-  moi: '"…báo cáo của CDC nêu nhiều chỉ số xấu đi từ 2013 đến 2023, và ở nhiều chỉ số (như buồn bã dai dẳng) số liệu đã tăng từ trước 2021 (30% năm 2013, 37% năm 2019)."'
-  ly_do: CDC không "nhấn mạnh" trước COVID; câu mới dựa trên số liệu bảng. (nhận định n17)
-- cu: '"…tổng cộng 355.358 vị thành niên, dữ liệu 2007–2016. … chạy mọi đặc tả phân tích hợp lý và báo cáo toàn bộ".'
-  moi: '"…355.358 vị thành niên (chủ yếu 12–18 tuổi), khảo sát trong các năm 2007–2016… chạy nhiều đặc tả phân tích hợp lý và báo cáo kết quả".'
-  ly_do: '"Mọi" và "toàn bộ" mạnh hơn nguồn (nguồn nói SCA áp dụng cho các đặc tả hợp lý). (nhận định n18)'
-- cu: '"…tương đương với... ăn khoai tây; đeo kính cận còn "có hại" hơn." và "ăn khoai tây thường xuyên cho liên hệ tương đương, đeo kính cận còn tệ hơn".'
-  moi: '"…ăn khoai tây cho liên hệ nhỏ tương tự và đeo kính còn "tệ hơn"." và "(ở YRBS, β −0,042 so với −0,049 của công nghệ số), đeo kính còn "tệ hơn" ở một bộ dữ liệu".'
-  ly_do: '"Tương đương" thành "gần bằng" kèm số; "kính cận" thành "kính" (nguồn: wearing glasses). (nhận định n20)'
-- cu: '"bị bắt nạt có liên hệ tiêu cực gấp 4,3 lần, hút cần sa gấp 2,7 lần" (không nêu so với cái gì, bộ dữ liệu nào).'
-  moi: '"…(trong bộ YRBS) bị bắt nạt có liên hệ tiêu cực với sức khỏe tinh thần gấp 4,3 lần và hút cần sa gấp 2,7 lần so với mức liên hệ của công nghệ số".'
-  ly_do: Nêu rõ mẫu số và bộ dữ liệu. (nhận định n21)
-- cu: '"…phe phê bình cho rằng "mạng xã hội 2024" khác hẳn "màn hình 2012"."'
-  moi: '"…nên có thể khác với việc dùng mạng xã hội hiện nay (đây là hạn chế do chúng tôi nêu, không phải kết quả của nghiên cứu)."'
-  ly_do: Không có nguồn đã mở nói phe phê bình đã nói vậy; giữ như suy luận của trang, ghi rõ. (nhận định n22)
-- cu: '"…theo dõi khoảng 12.000 teen qua nhiều năm".'
-  moi: '"…(Anh, 2009–2016) — hơn 12.000 teen 10–15 tuổi tham gia (số người trong mỗi phân tích ít hơn nhiều)…".'
-  ly_do: 12.672 tham gia nhưng mỗi phân tích có n = 539–5.492. (nhận định n23)
-- cu: '"…(β từ -0,04 đến -0,09), nhưng chiều ngược lại cũng đúng… Hiệu ứng ở nữ hơi rõ hơn nam, nhưng vẫn nhỏ".'
-  moi: '"…(β từ -0,04 đến -0,09 ở các mục hài lòng có ý nghĩa; hệ số trung vị -0,05)… (hệ số trung vị -0,02). Hiệu ứng ở nữ hơi rõ hơn nam (nữ có tác động ở hầu hết các mục hài lòng, nam chỉ ở hai)".'
-  ly_do: Thêm hệ số trung vị và mô tả sự khác biệt giới theo nguồn. (nhận định n24)
-- cu: '"Nói như Przybylski: 99,75% mức hài lòng… không liên quan…".'
-  moi: (bỏ)
-  ly_do: Không kiểm được. (nhận định n25)
-- cu: '"…trùng với thời điểm dậy thì (nữ dậy thì sớm hơn nam)."'
-  moi: '"Các tác giả suy đoán rằng cửa sổ sớm có thể liên quan đến dậy thì… nhưng dữ liệu không đo dậy thì nên chưa kiểm được."'
-  ly_do: Nguồn nêu là suy đoán ("speculatively"). (nhận định n28)
-- cu: '"…khủng hoảng là có thật, không phải ảo giác truyền thông." và tiêu đề "sức khỏe tâm thần của teen (Mỹ) xấu đi rõ rệt trong thập kỷ 2010".'
-  moi: '"…mức tự báo cáo tăng là có thật, nhưng đó là tự báo cáo triệu chứng, không phải chẩn đoán, và nó chỉ nói về teen Mỹ." Số liệu thêm 2025: 33%.'
-  ly_do: Bỏ "khủng hoảng" và "ảo giác truyền thông" (cách nói mạnh); thêm giới hạn và số 2025. (nhận định n30)
-- cu: '"Nghiên cứu lớn nhất… cho tối đa 0,4% phương sai; các nghiên cứu dọc cho hệ số β khoảng -0,04 đến -0,13… Lưu ý: … dữ liệu chủ yếu từ trước kỷ nguyên video ngắn."'
-  moi: '"…Một phân tích tổng hợp 2026 trên 153 nghiên cứu dọc… thấy mạng xã hội liên hệ nhất quán nhưng khiêm tốn… (r = 0,09–0,21)… phần lớn dữ liệu từ trước kỷ nguyên video ngắn."'
-  ly_do: 'Thêm phân tích tổng hợp 2026 (nguồn bắt buộc của lời giao: các phân tích tổng hợp mới). (nhận định n31)'
-- cu: '"Haidt (2024) nói có, dựa trên trùng khớp thời điểm (~2012), cơ chế hợp lý (ngủ, so sánh, bắt nạt) và dữ liệu nhiều nước. Giới nghiên cứu chuyên sâu phản biện: … nhiều giải thích khác chưa loại trừ được (đại dịch, áp lực học tập, bất bình đẳng, lo âu khí hậu, thay đổi cách hỏi khảo sát)."'
-  moi: '"Haidt (2024) cho rằng có. Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp… Một phân tích tổng hợp 2026 thấy liên hệ nhỏ nhưng nhất quán, và nhóm Orben thấy hiệu ứng trung bình nhỏ và hai chiều."'
-  ly_do: Bỏ "dựa trên…" và danh sách giải thích khác (không kiểm được). (nhận định n33)
-- cu: '"Giới nghiên cứu chuyên sâu phản biện: bằng chứng nhân quả còn yếu, hiệu ứng đo được nhỏ…"'
-  moi: '"Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp mà chúng tôi đọc được (chưa mở bản gốc): …"'
-  ly_do: Gán cho một người phản biện cụ thể với nguồn nói rõ thứ cấp; bỏ "giới nghiên cứu chuyên sâu" (không kiểm được). (nhận định n34)
-- cu: '"…ra khuyến cáo thận trọng: mạng xã hội có cả lợi và hại, cần thêm dữ liệu từ chính các công ty công nghệ."'
-  moi: '"…mạng xã hội có thể có cả lợi và hại, và cần thêm dữ liệu từ chính các công ty công nghệ (theo trang của HHS, chúng tôi chỉ đọc được đoạn trích)."'
-  ly_do: Làm mềm vì nguồn chưa mở trực tiếp. (nhận định n35)
-- cu: '"…cửa sổ nhạy cảm quanh tuổi dậy thì (nữ 11–13, nam 14–15) có bằng chứng dọc; nội dung độc hại (bắt nạt mạng, nội dung cổ vũ tự hại, so sánh ngoại hình) là rủi ro thật với nhóm dễ tổn thương."'
-  moi: '"…phân tích tổng hợp 2026 thấy mạng xã hội liên hệ nhất quán với trầm cảm và ý nghĩ tự hại ở mức nhỏ (r = 0,09–0,21), và Orben và cộng sự (2022) thấy một nghiên cứu dọc có các độ tuổi…".'
-  ly_do: Bỏ "nội dung độc hại… rủi ro thật" (không có nguồn đã mở); thay bằng nguồn đọc được. (nhận định n36)
-- cu: '"Mô hình nhạy cảm khác biệt (differential susceptibility)… Tuổi dậy thì (não bộ đang tái cấu trúc mạnh, nhạy cảm với đánh giá xã hội), giới tính, tính cách (hay lo âu, cầu toàn) và môi trường gia đình đều có thể khuếch đại hoặc giảm nhẹ tác động."'
-  moi: '"Mức độ nhạy cảm khác nhau giữa các nhóm… Orben và cộng sự (2022) thấy các cửa sổ nhạy cảm khác nhau theo tuổi và giới. Các yếu tố khác… chúng tôi chưa có nguồn đã mở…, nên chỉ nêu như một khả năng."'
-  ly_do: Bỏ tên "differential susceptibility" và các yếu tố không có nguồn. (nhận định n37)
-- cu: '"…Hai teen cùng lướt 3 tiếng/ngày có thể đang làm hai việc hoàn toàn khác: … Nghiên cứu tương lai cần đo cách dùng… và cần dữ liệu thực từ công ty công nghệ thay vì tự báo cáo."'
-  moi: '"…Các nghiên cứu ở trên dùng ước lượng thời gian dùng do teen tự báo cáo (Orben và cộng sự, 2022)… nghiên cứu tương lai có thể đo cách dùng…".'
-  ly_do: Bỏ "cần dữ liệu thực từ công ty" (không có nguồn mở); nêu bằng chứng về tự báo cáo. (nhận định n38)
-- cu: '"Hầu hết dữ liệu là cắt ngang… buồn cũng dẫn đến dùng nhiều hơn (trốn tránh, tìm đồng cảm)… loại nghiên cứu này còn rất ít."'
-  moi: '"Dữ liệu cắt ngang… Dữ liệu dọc… cho thấy cả hai chiều đều tồn tại… Theo Orben và cộng sự (2022), các phân tích tổng hợp thấy liên hệ nhỏ hoặc không đáng kể và bằng chứng thực nghiệm còn lẫn lộn".'
-  ly_do: Bỏ "trốn tránh, tìm đồng cảm" (cơ chế, không kiểm được) và "còn rất ít" (nguồn nói "mixed"). (nhận định n39)
-- cu: '":nhan[kha-vung] "Số giờ màn hình liên hệ yếu với sức khỏe tinh thần; cách dùng mới quan trọng. Dấu hiệu đáng lo… so sánh bản thân liên tục, bị bắt nạt/bình luận độc hại, xem nội dung cổ vũ tự hại hoặc rối loạn ăn uống, và dùng điện thoại để trốn tránh mọi cảm xúc khó chịu."'
-  moi: '"Theo Orben và Przybylski (2019), số giờ… liên hệ yếu… Chúng tôi chưa có nghiên cứu đã mở cho thấy "cách dùng" quan trọng hơn "số giờ"; hỏi con đang xem gì… là thông lệ hợp lý, không phải kết quả của một nghiên cứu cụ thể."'
-  ly_do: Bỏ "cách dùng mới quan trọng" và danh sách "dấu hiệu đáng lo" (không có nguồn; gần với dấu hiệu lâm sàng). (nhận định n40)
-- cu: '"Trong cùng bộ dữ liệu của Orben và Przybylski, ngủ đủ giấc liên hệ… mạnh hơn hẳn thời gian dùng màn hình." (tiêu đề "…là can thiệp rẻ và chắc chắn nhất", chip vững chắc)'
-  moi: '"…(ở YRBS: β 0,150 so với −0,049). Đó là liên hệ quan sát, chưa chứng minh rằng ngủ đủ giấc cải thiện sức khỏe tinh thần." Tiêu đề "Bảo vệ giấc ngủ là một việc đáng làm", chip khá vững, giữ id cũ.'
-  ly_do: '"Can thiệp… chắc chắn nhất" không có nguồn (chỉ liên hệ quan sát); hạ Vững chắc → Khá vững. (nhận định n42)'
-- cu: '"Quy tắc đơn giản, dễ thực hiện: điện thoại sạc ngoài phòng ngủ, không lướt trước giờ ngủ 30–60 phút."'
-  moi: '"Quy tắc cụ thể… là thông lệ thực hành, chưa phải kết quả của nghiên cứu mà chúng tôi đã kiểm."'
-  ly_do: Nêu rõ không có nguồn. (nhận định n43)
-- cu: '":nhan[vung-chac]" cho "Bảo vệ giấc ngủ là can thiệp rẻ và chắc chắn nhất".'
-  moi: '":nhan[kha-vung]" cho "Bảo vệ giấc ngủ là một việc đáng làm".'
-  ly_do: Chỉ có liên hệ quan sát từ một bài; không đạt "Vững chắc". (nhận định n44)
-- cu: '"Cửa sổ nhạy cảm… là lúc não bộ nhạy cảm nhất với đánh giá xã hội. Đây là giai đoạn nên trò chuyện nhiều hơn về so sánh trên mạng, áp lực ngoại hình và bắt nạt mạng — thay vì chỉ ra lệnh cấm."'
-  moi: '"…đây là một nghiên cứu dọc ở Anh, và các tác giả chỉ suy đoán về dậy thì. Một gợi ý thực hành hợp lý (không phải kết quả của nghiên cứu): … trò chuyện với con về những điều con gặp trên mạng có thể hữu ích hơn chỉ ra lệnh cấm."'
-  ly_do: Bỏ "não bộ nhạy cảm nhất với đánh giá xã hội" (không có nguồn đã mở). (nhận định n45)
-- cu: '":nhan[vung-chac]" "Buồn bã kéo dài trên hai tuần, mất hứng thú với mọi thứ, nói về cái chết hoặc tự làm hại mình — đó là lúc cần bác sĩ tâm thần/nhà tâm lý… Tại Việt Nam, gọi 115 khi khẩn cấp. Trầm cảm tuổi teen là bệnh lý có thể điều trị được."'
-  moi: '"Nếu một bạn trẻ buồn bã kéo dài, mất hứng thú, nói về cái chết hoặc tự làm hại mình, đó là lúc cần người có chuyên môn… Chỉ chuyên gia mới chẩn đoán được… Xem [Hỗ trợ]." Tiêu đề "Khi lo về trầm cảm hoặc tự hại: tìm người có chuyên môn", bỏ chip, giữ id cũ.'
-  ly_do: Bỏ "hai tuần" (dạng tiêu chí chẩn đoán), "bệnh lý có thể điều trị được" (WHO fact sheet không nói điều đó), số 115 (dẫn Hỗ trợ theo lời giao). (nhận định n47)
-- cu: '"hãy gọi ngay 115 (cấp cứu)… Trầm cảm là bệnh lý có thể điều trị được"; "…gọi 115 khi khẩn cấp hoặc tìm bác sĩ tâm thần/nhà tâm lý."'
-  moi: '"hãy nói ngay với người bạn tin cậy, thầy cô hoặc người có chuyên môn… xem Hỗ trợ… Tìm giúp đỡ là dấu hiệu của sức mạnh."'
-  ly_do: 'Theo lời giao: dẫn Hỗ trợ; bỏ "bệnh lý có thể điều trị được" và số 115. (nhận định n48)'
-- cu: '"Chưa có khảo sát quy mô quốc gia kiểu YRBS cho teen Việt Nam".'
-  moi: '"Việt Nam có các khảo sát quốc gia riêng, đo khác nên không so trực tiếp được: NAMHS (2021…)".'
-  ly_do: 'Sai: có khảo sát quốc gia (NAMHS 2021; cũng GSHS Việt Nam 2019 theo một nghiên cứu về bạo lực học đường, chưa dùng trên trang). (nhận định n50)'
-- cu: (không có)
-  moi: '"Số này thấp so với tỉ lệ buồn bã tự báo cáo ở Mỹ, nhưng đó là hai cách đo khác nhau… nên không thể kết luận teen Việt "khỏe hơn" hay "ít buồn hơn"."'
-  ly_do: Câu mới thêm để không để lại ấn tượng sai khi đặt số Mỹ và số Việt cạnh nhau. (nhận định n51)
-- cu: '"…khảo sát trực tuyến 1.891 vị thành niên ở Hà Nội, Tuyên Quang và Cần Thơ…: FOMO và việc dùng Internet có vấn đề cùng đi kèm nguy cơ tự hại/tự tử cao hơn."'
-  moi: '"…khảo sát trực tuyến 1.891 người tham gia… (tháng 9–10/2021; tuổi trung bình 17)… đi kèm với tự hại/tự tử."'
-  ly_do: '"Vị thành niên" → "người tham gia" (tuổi trung bình 17, SD 2,8); bỏ "nguy cơ cao hơn" (nguồn nói "yếu tố dương"). (nhận định n52)'
-- cu: '"Một nghiên cứu tại Đại học Thương mại (chấp nhận đăng cuối 2024) dùng thang BSMAS trên teen 13–18 tuổi… mẫu thuận tiện".'
-  moi: '"…(Vũ Thị Thúy Hằng và Nguyễn Thị Vân, công bố 25/12/2024 trên VNU Journal of Economics and Business) dùng thang BSMAS trên 13–17 tuổi, chọn mẫu theo kiểu quả cầu tuyết…". Danh mục nguồn đã sửa.'
-  ly_do: Nơi đăng là VNU Journal of Economics and Business (không phải "Đại học Thương mại"); tuổi 13 đến dưới 18; mẫu quả cầu tuyết, không phải "thuận tiện". (nhận định n53)
-- cu: '"…tất cả đều là nghiên cứu cắt ngang, mẫu thuận tiện…"'
-  moi: '"…các nghiên cứu này là cắt ngang, mẫu không đại diện, và đo bằng bảng hỏi trực tuyến…"'
-  ly_do: Phân biệt với khảo sát quốc gia NAMHS; mẫu thuận tiện → không đại diện. (nhận định n54)
-- cu: '"…chúng ta chưa có dữ liệu dọc đủ tốt để trả lời."'
-  moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu dọc đủ lớn…".'
-  ly_do: 'Quy tắc câu thời sự: mốc, hạn, nguồn là lần tìm. (nhận định n55)'
-- cu: '"TikTok và video ngắn chiếm vị trí áp đảo trong thời gian online của teen Việt… áp lực học tập và kỳ vọng gia đình là nguồn stress lớn được ghi nhận trong nhiều khảo sát trong nước."'
-  moi: '"…chúng tôi không có nguồn đã mở về tỉ trọng TikTok… áp lực học tập là một yếu tố có thể liên quan (xem [Bắt nạt và áp lực thi cử]), nhưng đó là giả thuyết."'
-  ly_do: Không kiểm được; thêm liên kết trang nội bộ. (nhận định n56)
-- cu: '"Dữ liệu dọc cho thấy chiều ngược lại cũng đúng: teen đang buồn có xu hướng chui vào mạng xã hội nhiều hơn."'
-  moi: '"Dữ liệu dọc của Orben và cộng sự cho thấy chiều ngược lại cũng đúng: hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn sau đó."'
-  ly_do: '"Chui vào mạng xã hội" (động cơ) không có trong nguồn; hài lòng là biến đo. (nhận định n57)'
-- cu: '"Ở quy mô hàng chục triệu teen, hiệu ứng nhỏ vẫn tạo ra số ca đáng kể ở mức cộng đồng; và "trung bình nhỏ" che giấu nhóm dễ tổn thương (tuổi dậy thì, đã có sẵn lo âu/trầm cảm) — với các em, hiệu ứng không hề nhỏ."'
-  moi: '"…các phân tích tổng hợp thấy liên hệ nhỏ nhưng nhất quán, và Orben và cộng sự (2022) thấy các độ tuổi mà hiệu ứng rõ hơn một chút. Chúng tôi chưa có nguồn nói rằng với một số nhóm, hiệu ứng "không hề nhỏ"."'
-  ly_do: Bỏ tính toán "hàng chục triệu", "lo âu/trầm cảm có sẵn" (không có nguồn đã mở). (nhận định n58)
-- cu: '"Mạng xã hội cũng là nơi nhiều teen tìm thấy cộng đồng và sự hỗ trợ (bạn bè, nhóm sở thích, teen thuộc nhóm thiểu số khó chia sẻ ngoài đời). Cấm đoán cực đoan có thể lấy đi cả mặt tích cực mà không giải quyết được gốc rễ."'
-  moi: '"Chưa có đủ bằng chứng thực nghiệm để nói cấm tiệt mạng xã hội cải thiện sức khỏe tâm thần… Chúng tôi không có nguồn đã mở về mặt tích cực cụ thể…, nên không khẳng định."'
-  ly_do: Bỏ mặt tích cực cụ thể (không có nguồn đã mở). (nhận định n59)
-- cu: '"Trầm cảm là bệnh lý phức tạp (gen, môi trường, sang chấn, áp lực học tập...)… điều trị trầm cảm cần chuyên môn y tế — gọi 115…".'
-  moi: '"Dữ liệu cho thấy liên hệ… là nhỏ và hai chiều, nên chỉ thu điện thoại khó là cả lời giải. Nếu lo về trầm cảm của một bạn trẻ, hãy tìm người có chuyên môn; xem Hỗ trợ."'
-  ly_do: Bỏ danh sách nguyên nhân trầm cảm (không có nguồn) và số 115. (nhận định n60)
-- cu: '"…tương đương ăn khoai tây; bị bắt nạt và hút cần sa có liên hệ tiêu cực mạnh hơn nhiều lần." và lời giải thích "…giấc ngủ, bắt nạt, bữa sáng — liên hệ mạnh hơn hẳn."'
-  moi: '"…trong cùng bộ dữ liệu, giấc ngủ, bắt nạt, bữa sáng liên hệ mạnh hơn hẳn."; lựa chọn đúng "…tương đương ăn khoai tây…" giữ (xem n20, nhỏ gần bằng).'
-  ly_do: '"Tương đương" khoai tây hơi mạnh (−0,042 so với −0,049): giữ vì là cách nói tắt trong câu hỏi, nhưng lời giải thích nêu "trong cùng bộ dữ liệu". (nhận định n62)'
-- cu: '"Vì YRBS không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy khủng hoảng sức khỏe tâm thần có thật…"'
-  moi: '"Vì đợt YRBS 2021 không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy mức buồn bã tự báo cáo tăng…"'
-  ly_do: Xem n15, n2; câu hỏi đổi "năm 2021". (nhận định n63)
-- cu: '"Dữ liệu dọc cho thấy teen đang buồn có xu hướng dùng mạng xã hội NHIỀU hơn" và lựa chọn đúng "…teen buồn tìm đến mạng xã hội để trốn tránh hoặc tìm đồng cảm…".'
-  moi: '"Dữ liệu dọc cho thấy hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn…" và lựa chọn đúng bỏ "để trốn tránh hoặc tìm đồng cảm".'
-  ly_do: Bỏ động cơ (không có nguồn); chữ "buồn" thay bằng biến đo. (nhận định n65)
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: '"…và dữ liệu CDC YRBS nói gì."'
+    moi: '"…dữ liệu CDC YRBS nói gì, và số liệu quốc gia của Việt Nam."'
+    ly_do: Trang nay có số liệu NAMHS (Việt Nam). (nhận định n1)
+  - cu: '"…sức khỏe tâm thần của teen xấu đi là có thật (dữ liệu không thể chối cãi)… một trong những tranh luận khoa học ồn ào nhất thập kỷ".'
+    moi: '"…ở Mỹ, tỉ lệ teen báo cáo buồn bã dai dẳng đã tăng rõ trong thập kỷ 2010 (số liệu khảo sát đại diện quốc gia)… một tranh luận khoa học đang diễn ra".'
+    ly_do: Bỏ "không thể chối cãi", "ồn ào nhất thập kỷ"; chỉ nói về teen Mỹ và tự báo cáo. (nhận định n2)
+  - cu: '"Jonathan Haidt, nhà tâm lý học xã hội tại Đại học New York, xuất bản năm 2024… từ khoảng 2010–2015, tuổi thơ của trẻ em phương Tây đã bị "đại tu sửa"… từ tuổi thơ chơi tự do ngoài đời thực sang tuổi thơ gắn với điện thoại."'
+    moi: '"Nhà tâm lý học Jonathan Haidt xuất bản năm 2024… sự trỗi dậy của smartphone và mạng xã hội, cùng với sự suy giảm tự lập và chơi tự do, đã "đại tu sửa" tuổi thơ… Ông nói về giai đoạn biến đổi 2010–2015."'
+    ly_do: Bỏ "nhà tâm lý học xã hội tại ĐH New York" và "trẻ em phương Tây" (không có trong nguồn đã mở); theo chữ của trang sách. (nhận định n3)
+  - cu: '"…từ khoảng 2010–2015…".'
+    moi: '"…ông nói về giai đoạn biến đổi 2010–2015".'
+    ly_do: 'Làm mềm: bắt nguồn từ một trích dẫn qua nguồn bậc 3, không phải sách. (nhận định n4)'
+  - cu: '"Điểm gãy ông nhấn mạnh là khoảng năm 2012, khi đa số teen Mỹ đã sở hữu smartphone."'
+    moi: (bỏ)
+    ly_do: Không kiểm được. (nhận định n5)
+  - cu: '"Haidt liệt kê bốn tổn hại nền tảng… (1) tước đoạt xã hội — tương tác trực tiếp bị thay bằng kết nối nông trên mạng; (2) thiếu ngủ — dùng điện thoại khuya; (3) phân mảnh chú ý — thông báo liên tục; (4) nghiện — thuật toán tối ưu cho thời gian dùng." (và ở mục Lý thuyết: ánh sáng xanh, rèn não chuyển đổi tác vụ…)'
+    moi: '"Theo mô tả của sách (chúng tôi không mở được sách gốc), Haidt nêu bốn tổn hại nền tảng: … Đây là các giả thuyết cơ chế của Haidt; chúng tôi chưa kiểm các cơ chế cụ thể bằng nguồn riêng."'
+    ly_do: Bỏ các mô tả chi tiết cơ chế (không có nguồn đã mở). (nhận định n6)
+  - cu: '"…10% đã từng cố tự tử (2021), 9% (2023)."'
+    moi: '"…10% đã từng cố tự tử (2021), khoảng 9% (2023)."'
+    ly_do: Báo cáo xu hướng làm tròn 9, MMWR nêu 9,5%; viết "khoảng". (nhận định n12)
+  - cu: '"Lưu ý quan trọng: YRBS không hỏi gì về mạng xã hội" và "YRBS không đo việc dùng mạng xã hội".'
+    moi: '"YRBS 2021 và các đợt trước không hỏi gì về nó; riêng đợt 2023 mới thêm câu hỏi về tần suất dùng".'
+    ly_do: 'Sai với 2023: CDC đã thêm câu hỏi về mạng xã hội. (nhận định n15)'
+  - cu: '"…nhưng CDC nhấn mạnh nhiều chỉ số đã xấu đi từ trước COVID."'
+    moi: '"…báo cáo của CDC nêu nhiều chỉ số xấu đi từ 2013 đến 2023, và ở nhiều chỉ số (như buồn bã dai dẳng) số liệu đã tăng từ trước 2021 (30% năm 2013, 37% năm 2019)."'
+    ly_do: CDC không "nhấn mạnh" trước COVID; câu mới dựa trên số liệu bảng. (nhận định n17)
+  - cu: '"…tổng cộng 355.358 vị thành niên, dữ liệu 2007–2016. … chạy mọi đặc tả phân tích hợp lý và báo cáo toàn bộ".'
+    moi: '"…355.358 vị thành niên (chủ yếu 12–18 tuổi), khảo sát trong các năm 2007–2016… chạy nhiều đặc tả phân tích hợp lý và báo cáo kết quả".'
+    ly_do: '"Mọi" và "toàn bộ" mạnh hơn nguồn (nguồn nói SCA áp dụng cho các đặc tả hợp lý). (nhận định n18)'
+  - cu: '"…tương đương với... ăn khoai tây; đeo kính cận còn "có hại" hơn." và "ăn khoai tây thường xuyên cho liên hệ tương đương, đeo kính cận còn tệ hơn".'
+    moi: '"…ăn khoai tây cho liên hệ nhỏ tương tự và đeo kính còn "tệ hơn"." và "(ở YRBS, β −0,042 so với −0,049 của công nghệ số), đeo kính còn "tệ hơn" ở một bộ dữ liệu".'
+    ly_do: '"Tương đương" thành "gần bằng" kèm số; "kính cận" thành "kính" (nguồn: wearing glasses). (nhận định n20)'
+  - cu: '"bị bắt nạt có liên hệ tiêu cực gấp 4,3 lần, hút cần sa gấp 2,7 lần" (không nêu so với cái gì, bộ dữ liệu nào).'
+    moi: '"…(trong bộ YRBS) bị bắt nạt có liên hệ tiêu cực với sức khỏe tinh thần gấp 4,3 lần và hút cần sa gấp 2,7 lần so với mức liên hệ của công nghệ số".'
+    ly_do: Nêu rõ mẫu số và bộ dữ liệu. (nhận định n21)
+  - cu: '"…phe phê bình cho rằng "mạng xã hội 2024" khác hẳn "màn hình 2012"."'
+    moi: '"…nên có thể khác với việc dùng mạng xã hội hiện nay (đây là hạn chế do chúng tôi nêu, không phải kết quả của nghiên cứu)."'
+    ly_do: Không có nguồn đã mở nói phe phê bình đã nói vậy; giữ như suy luận của trang, ghi rõ. (nhận định n22)
+  - cu: '"…theo dõi khoảng 12.000 teen qua nhiều năm".'
+    moi: '"…(Anh, 2009–2016) — hơn 12.000 teen 10–15 tuổi tham gia (số người trong mỗi phân tích ít hơn nhiều)…".'
+    ly_do: 12.672 tham gia nhưng mỗi phân tích có n = 539–5.492. (nhận định n23)
+  - cu: '"…(β từ -0,04 đến -0,09), nhưng chiều ngược lại cũng đúng… Hiệu ứng ở nữ hơi rõ hơn nam, nhưng vẫn nhỏ".'
+    moi: '"…(β từ -0,04 đến -0,09 ở các mục hài lòng có ý nghĩa; hệ số trung vị -0,05)… (hệ số trung vị -0,02). Hiệu ứng ở nữ hơi rõ hơn nam (nữ có tác động ở hầu hết các mục hài lòng, nam chỉ ở hai)".'
+    ly_do: Thêm hệ số trung vị và mô tả sự khác biệt giới theo nguồn. (nhận định n24)
+  - cu: '"Nói như Przybylski: 99,75% mức hài lòng… không liên quan…".'
+    moi: (bỏ)
+    ly_do: Không kiểm được. (nhận định n25)
+  - cu: '"…trùng với thời điểm dậy thì (nữ dậy thì sớm hơn nam)."'
+    moi: '"Các tác giả suy đoán rằng cửa sổ sớm có thể liên quan đến dậy thì… nhưng dữ liệu không đo dậy thì nên chưa kiểm được."'
+    ly_do: Nguồn nêu là suy đoán ("speculatively"). (nhận định n28)
+  - cu: '"…khủng hoảng là có thật, không phải ảo giác truyền thông." và tiêu đề "sức khỏe tâm thần của teen (Mỹ) xấu đi rõ rệt trong thập kỷ 2010".'
+    moi: '"…mức tự báo cáo tăng là có thật, nhưng đó là tự báo cáo triệu chứng, không phải chẩn đoán, và nó chỉ nói về teen Mỹ." Số liệu thêm 2025: 33%.'
+    ly_do: Bỏ "khủng hoảng" và "ảo giác truyền thông" (cách nói mạnh); thêm giới hạn và số 2025. (nhận định n30)
+  - cu: '"Nghiên cứu lớn nhất… cho tối đa 0,4% phương sai; các nghiên cứu dọc cho hệ số β khoảng -0,04 đến -0,13… Lưu ý: … dữ liệu chủ yếu từ trước kỷ nguyên video ngắn."'
+    moi: '"…Một phân tích tổng hợp 2026 trên 153 nghiên cứu dọc… thấy mạng xã hội liên hệ nhất quán nhưng khiêm tốn… (r = 0,09–0,21)… phần lớn dữ liệu từ trước kỷ nguyên video ngắn."'
+    ly_do: 'Thêm phân tích tổng hợp 2026 (nguồn bắt buộc của lời giao: các phân tích tổng hợp mới). (nhận định n31)'
+  - cu: '"Haidt (2024) nói có, dựa trên trùng khớp thời điểm (~2012), cơ chế hợp lý (ngủ, so sánh, bắt nạt) và dữ liệu nhiều nước. Giới nghiên cứu chuyên sâu phản biện: … nhiều giải thích khác chưa loại trừ được (đại dịch, áp lực học tập, bất bình đẳng, lo âu khí hậu, thay đổi cách hỏi khảo sát)."'
+    moi: '"Haidt (2024) cho rằng có. Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp… Một phân tích tổng hợp 2026 thấy liên hệ nhỏ nhưng nhất quán, và nhóm Orben thấy hiệu ứng trung bình nhỏ và hai chiều."'
+    ly_do: Bỏ "dựa trên…" và danh sách giải thích khác (không kiểm được). (nhận định n33)
+  - cu: '"Giới nghiên cứu chuyên sâu phản biện: bằng chứng nhân quả còn yếu, hiệu ứng đo được nhỏ…"'
+    moi: '"Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp mà chúng tôi đọc được (chưa mở bản gốc): …"'
+    ly_do: Gán cho một người phản biện cụ thể với nguồn nói rõ thứ cấp; bỏ "giới nghiên cứu chuyên sâu" (không kiểm được). (nhận định n34)
+  - cu: '"…ra khuyến cáo thận trọng: mạng xã hội có cả lợi và hại, cần thêm dữ liệu từ chính các công ty công nghệ."'
+    moi: '"…mạng xã hội có thể có cả lợi và hại, và cần thêm dữ liệu từ chính các công ty công nghệ (theo trang của HHS, chúng tôi chỉ đọc được đoạn trích)."'
+    ly_do: Làm mềm vì nguồn chưa mở trực tiếp. (nhận định n35)
+  - cu: '"…cửa sổ nhạy cảm quanh tuổi dậy thì (nữ 11–13, nam 14–15) có bằng chứng dọc; nội dung độc hại (bắt nạt mạng, nội dung cổ vũ tự hại, so sánh ngoại hình) là rủi ro thật với nhóm dễ tổn thương."'
+    moi: '"…phân tích tổng hợp 2026 thấy mạng xã hội liên hệ nhất quán với trầm cảm và ý nghĩ tự hại ở mức nhỏ (r = 0,09–0,21), và Orben và cộng sự (2022) thấy một nghiên cứu dọc có các độ tuổi…".'
+    ly_do: Bỏ "nội dung độc hại… rủi ro thật" (không có nguồn đã mở); thay bằng nguồn đọc được. (nhận định n36)
+  - cu: '"Mô hình nhạy cảm khác biệt (differential susceptibility)… Tuổi dậy thì (não bộ đang tái cấu trúc mạnh, nhạy cảm với đánh giá xã hội), giới tính, tính cách (hay lo âu, cầu toàn) và môi trường gia đình đều có thể khuếch đại hoặc giảm nhẹ tác động."'
+    moi: '"Mức độ nhạy cảm khác nhau giữa các nhóm… Orben và cộng sự (2022) thấy các cửa sổ nhạy cảm khác nhau theo tuổi và giới. Các yếu tố khác… chúng tôi chưa có nguồn đã mở…, nên chỉ nêu như một khả năng."'
+    ly_do: Bỏ tên "differential susceptibility" và các yếu tố không có nguồn. (nhận định n37)
+  - cu: '"…Hai teen cùng lướt 3 tiếng/ngày có thể đang làm hai việc hoàn toàn khác: … Nghiên cứu tương lai cần đo cách dùng… và cần dữ liệu thực từ công ty công nghệ thay vì tự báo cáo."'
+    moi: '"…Các nghiên cứu ở trên dùng ước lượng thời gian dùng do teen tự báo cáo (Orben và cộng sự, 2022)… nghiên cứu tương lai có thể đo cách dùng…".'
+    ly_do: Bỏ "cần dữ liệu thực từ công ty" (không có nguồn mở); nêu bằng chứng về tự báo cáo. (nhận định n38)
+  - cu: '"Hầu hết dữ liệu là cắt ngang… buồn cũng dẫn đến dùng nhiều hơn (trốn tránh, tìm đồng cảm)… loại nghiên cứu này còn rất ít."'
+    moi: '"Dữ liệu cắt ngang… Dữ liệu dọc… cho thấy cả hai chiều đều tồn tại… Theo Orben và cộng sự (2022), các phân tích tổng hợp thấy liên hệ nhỏ hoặc không đáng kể và bằng chứng thực nghiệm còn lẫn lộn".'
+    ly_do: Bỏ "trốn tránh, tìm đồng cảm" (cơ chế, không kiểm được) và "còn rất ít" (nguồn nói "mixed"). (nhận định n39)
+  - cu: '":nhan[kha-vung] "Số giờ màn hình liên hệ yếu với sức khỏe tinh thần; cách dùng mới quan trọng. Dấu hiệu đáng lo… so sánh bản thân liên tục, bị bắt nạt/bình luận độc hại, xem nội dung cổ vũ tự hại hoặc rối loạn ăn uống, và dùng điện thoại để trốn tránh mọi cảm xúc khó chịu."'
+    moi: '"Theo Orben và Przybylski (2019), số giờ… liên hệ yếu… Chúng tôi chưa có nghiên cứu đã mở cho thấy "cách dùng" quan trọng hơn "số giờ"; hỏi con đang xem gì… là thông lệ hợp lý, không phải kết quả của một nghiên cứu cụ thể."'
+    ly_do: Bỏ "cách dùng mới quan trọng" và danh sách "dấu hiệu đáng lo" (không có nguồn; gần với dấu hiệu lâm sàng). (nhận định n40)
+  - cu: '"Trong cùng bộ dữ liệu của Orben và Przybylski, ngủ đủ giấc liên hệ… mạnh hơn hẳn thời gian dùng màn hình." (tiêu đề "…là can thiệp rẻ và chắc chắn nhất", chip vững chắc)'
+    moi: '"…(ở YRBS: β 0,150 so với −0,049). Đó là liên hệ quan sát, chưa chứng minh rằng ngủ đủ giấc cải thiện sức khỏe tinh thần." Tiêu đề "Bảo vệ giấc ngủ là một việc đáng làm", chip khá vững, giữ id cũ.'
+    ly_do: '"Can thiệp… chắc chắn nhất" không có nguồn (chỉ liên hệ quan sát); hạ Vững chắc → Khá vững. (nhận định n42)'
+  - cu: '"Quy tắc đơn giản, dễ thực hiện: điện thoại sạc ngoài phòng ngủ, không lướt trước giờ ngủ 30–60 phút."'
+    moi: '"Quy tắc cụ thể… là thông lệ thực hành, chưa phải kết quả của nghiên cứu mà chúng tôi đã kiểm."'
+    ly_do: Nêu rõ không có nguồn. (nhận định n43)
+  - cu: '":nhan[vung-chac]" cho "Bảo vệ giấc ngủ là can thiệp rẻ và chắc chắn nhất".'
+    moi: '":nhan[kha-vung]" cho "Bảo vệ giấc ngủ là một việc đáng làm".'
+    ly_do: Chỉ có liên hệ quan sát từ một bài; không đạt "Vững chắc". (nhận định n44)
+  - cu: '"Cửa sổ nhạy cảm… là lúc não bộ nhạy cảm nhất với đánh giá xã hội. Đây là giai đoạn nên trò chuyện nhiều hơn về so sánh trên mạng, áp lực ngoại hình và bắt nạt mạng — thay vì chỉ ra lệnh cấm."'
+    moi: '"…đây là một nghiên cứu dọc ở Anh, và các tác giả chỉ suy đoán về dậy thì. Một gợi ý thực hành hợp lý (không phải kết quả của nghiên cứu): … trò chuyện với con về những điều con gặp trên mạng có thể hữu ích hơn chỉ ra lệnh cấm."'
+    ly_do: Bỏ "não bộ nhạy cảm nhất với đánh giá xã hội" (không có nguồn đã mở). (nhận định n45)
+  - cu: '":nhan[vung-chac]" "Buồn bã kéo dài trên hai tuần, mất hứng thú với mọi thứ, nói về cái chết hoặc tự làm hại mình — đó là lúc cần bác sĩ tâm thần/nhà tâm lý… Tại Việt Nam, gọi 115 khi khẩn cấp. Trầm cảm tuổi teen là bệnh lý có thể điều trị được."'
+    moi: '"Nếu một bạn trẻ buồn bã kéo dài, mất hứng thú, nói về cái chết hoặc tự làm hại mình, đó là lúc cần người có chuyên môn… Chỉ chuyên gia mới chẩn đoán được… Xem [Hỗ trợ]." Tiêu đề "Khi lo về trầm cảm hoặc tự hại: tìm người có chuyên môn", bỏ chip, giữ id cũ.'
+    ly_do: Bỏ "hai tuần" (dạng tiêu chí chẩn đoán), "bệnh lý có thể điều trị được" (WHO fact sheet không nói điều đó), số 115 (dẫn Hỗ trợ theo lời giao). (nhận định n47)
+  - cu: '"hãy gọi ngay 115 (cấp cứu)… Trầm cảm là bệnh lý có thể điều trị được"; "…gọi 115 khi khẩn cấp hoặc tìm bác sĩ tâm thần/nhà tâm lý."'
+    moi: '"hãy nói ngay với người bạn tin cậy, thầy cô hoặc người có chuyên môn… xem Hỗ trợ… Tìm giúp đỡ là dấu hiệu của sức mạnh."'
+    ly_do: 'Theo lời giao: dẫn Hỗ trợ; bỏ "bệnh lý có thể điều trị được" và số 115. (nhận định n48)'
+  - cu: '"Chưa có khảo sát quy mô quốc gia kiểu YRBS cho teen Việt Nam".'
+    moi: '"Việt Nam có các khảo sát quốc gia riêng, đo khác nên không so trực tiếp được: NAMHS (2021…)".'
+    ly_do: 'Sai: có khảo sát quốc gia (NAMHS 2021; cũng GSHS Việt Nam 2019 theo một nghiên cứu về bạo lực học đường, chưa dùng trên trang). (nhận định n50)'
+  - cu: (không có)
+    moi: '"Số này thấp so với tỉ lệ buồn bã tự báo cáo ở Mỹ, nhưng đó là hai cách đo khác nhau… nên không thể kết luận teen Việt "khỏe hơn" hay "ít buồn hơn"."'
+    ly_do: Câu mới thêm để không để lại ấn tượng sai khi đặt số Mỹ và số Việt cạnh nhau. (nhận định n51)
+  - cu: '"…khảo sát trực tuyến 1.891 vị thành niên ở Hà Nội, Tuyên Quang và Cần Thơ…: FOMO và việc dùng Internet có vấn đề cùng đi kèm nguy cơ tự hại/tự tử cao hơn."'
+    moi: '"…khảo sát trực tuyến 1.891 người tham gia… (tháng 9–10/2021; tuổi trung bình 17)… đi kèm với tự hại/tự tử."'
+    ly_do: '"Vị thành niên" → "người tham gia" (tuổi trung bình 17, SD 2,8); bỏ "nguy cơ cao hơn" (nguồn nói "yếu tố dương"). (nhận định n52)'
+  - cu: '"Một nghiên cứu tại Đại học Thương mại (chấp nhận đăng cuối 2024) dùng thang BSMAS trên teen 13–18 tuổi… mẫu thuận tiện".'
+    moi: '"…(Vũ Thị Thúy Hằng và Nguyễn Thị Vân, công bố 25/12/2024 trên VNU Journal of Economics and Business) dùng thang BSMAS trên 13–17 tuổi, chọn mẫu theo kiểu quả cầu tuyết…". Danh mục nguồn đã sửa.'
+    ly_do: Nơi đăng là VNU Journal of Economics and Business (không phải "Đại học Thương mại"); tuổi 13 đến dưới 18; mẫu quả cầu tuyết, không phải "thuận tiện". (nhận định n53)
+  - cu: '"…tất cả đều là nghiên cứu cắt ngang, mẫu thuận tiện…"'
+    moi: '"…các nghiên cứu này là cắt ngang, mẫu không đại diện, và đo bằng bảng hỏi trực tuyến…"'
+    ly_do: Phân biệt với khảo sát quốc gia NAMHS; mẫu thuận tiện → không đại diện. (nhận định n54)
+  - cu: '"…chúng ta chưa có dữ liệu dọc đủ tốt để trả lời."'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu dọc đủ lớn…".'
+    ly_do: 'Quy tắc câu thời sự: mốc, hạn, nguồn là lần tìm. (nhận định n55)'
+  - cu: '"TikTok và video ngắn chiếm vị trí áp đảo trong thời gian online của teen Việt… áp lực học tập và kỳ vọng gia đình là nguồn stress lớn được ghi nhận trong nhiều khảo sát trong nước."'
+    moi: '"…chúng tôi không có nguồn đã mở về tỉ trọng TikTok… áp lực học tập là một yếu tố có thể liên quan (xem [Bắt nạt và áp lực thi cử]), nhưng đó là giả thuyết."'
+    ly_do: Không kiểm được; thêm liên kết trang nội bộ. (nhận định n56)
+  - cu: '"Dữ liệu dọc cho thấy chiều ngược lại cũng đúng: teen đang buồn có xu hướng chui vào mạng xã hội nhiều hơn."'
+    moi: '"Dữ liệu dọc của Orben và cộng sự cho thấy chiều ngược lại cũng đúng: hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn sau đó."'
+    ly_do: '"Chui vào mạng xã hội" (động cơ) không có trong nguồn; hài lòng là biến đo. (nhận định n57)'
+  - cu: '"Ở quy mô hàng chục triệu teen, hiệu ứng nhỏ vẫn tạo ra số ca đáng kể ở mức cộng đồng; và "trung bình nhỏ" che giấu nhóm dễ tổn thương (tuổi dậy thì, đã có sẵn lo âu/trầm cảm) — với các em, hiệu ứng không hề nhỏ."'
+    moi: '"…các phân tích tổng hợp thấy liên hệ nhỏ nhưng nhất quán, và Orben và cộng sự (2022) thấy các độ tuổi mà hiệu ứng rõ hơn một chút. Chúng tôi chưa có nguồn nói rằng với một số nhóm, hiệu ứng "không hề nhỏ"."'
+    ly_do: Bỏ tính toán "hàng chục triệu", "lo âu/trầm cảm có sẵn" (không có nguồn đã mở). (nhận định n58)
+  - cu: '"Mạng xã hội cũng là nơi nhiều teen tìm thấy cộng đồng và sự hỗ trợ (bạn bè, nhóm sở thích, teen thuộc nhóm thiểu số khó chia sẻ ngoài đời). Cấm đoán cực đoan có thể lấy đi cả mặt tích cực mà không giải quyết được gốc rễ."'
+    moi: '"Chưa có đủ bằng chứng thực nghiệm để nói cấm tiệt mạng xã hội cải thiện sức khỏe tâm thần… Chúng tôi không có nguồn đã mở về mặt tích cực cụ thể…, nên không khẳng định."'
+    ly_do: Bỏ mặt tích cực cụ thể (không có nguồn đã mở). (nhận định n59)
+  - cu: '"Trầm cảm là bệnh lý phức tạp (gen, môi trường, sang chấn, áp lực học tập...)… điều trị trầm cảm cần chuyên môn y tế — gọi 115…".'
+    moi: '"Dữ liệu cho thấy liên hệ… là nhỏ và hai chiều, nên chỉ thu điện thoại khó là cả lời giải. Nếu lo về trầm cảm của một bạn trẻ, hãy tìm người có chuyên môn; xem Hỗ trợ."'
+    ly_do: Bỏ danh sách nguyên nhân trầm cảm (không có nguồn) và số 115. (nhận định n60)
+  - cu: '"…tương đương ăn khoai tây; bị bắt nạt và hút cần sa có liên hệ tiêu cực mạnh hơn nhiều lần." và lời giải thích "…giấc ngủ, bắt nạt, bữa sáng — liên hệ mạnh hơn hẳn."'
+    moi: '"…trong cùng bộ dữ liệu, giấc ngủ, bắt nạt, bữa sáng liên hệ mạnh hơn hẳn."; lựa chọn đúng "…tương đương ăn khoai tây…" giữ (xem n20, nhỏ gần bằng).'
+    ly_do: '"Tương đương" khoai tây hơi mạnh (−0,042 so với −0,049): giữ vì là cách nói tắt trong câu hỏi, nhưng lời giải thích nêu "trong cùng bộ dữ liệu". (nhận định n62)'
+  - cu: '"Vì YRBS không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy khủng hoảng sức khỏe tâm thần có thật…"'
+    moi: '"Vì đợt YRBS 2021 không hỏi gì về việc dùng mạng xã hội — nó chỉ cho thấy mức buồn bã tự báo cáo tăng…"'
+    ly_do: Xem n15, n2; câu hỏi đổi "năm 2021". (nhận định n63)
+  - cu: '"Dữ liệu dọc cho thấy teen đang buồn có xu hướng dùng mạng xã hội NHIỀU hơn" và lựa chọn đúng "…teen buồn tìm đến mạng xã hội để trốn tránh hoặc tìm đồng cảm…".'
+    moi: '"Dữ liệu dọc cho thấy hài lòng với cuộc sống giảm dự báo dùng mạng xã hội nhiều hơn…" và lựa chọn đúng bỏ "để trốn tránh hoặc tìm đồng cảm".'
+    ly_do: Bỏ động cơ (không có nguồn); chữ "buồn" thay bằng biến đo. (nhận định n65)
+  - cu: '"…gây ra một cuộc khủng hoảng sức khỏe tâm thần ở trẻ em và teen; ông nói về giai đoạn biến đổi 2010–2015. Theo mô tả của sách (chúng tôi không mở được sách gốc), Haidt nêu bốn tổn hại nền tảng của "tuổi thơ gắn điện thoại": tước đoạt xã hội…, thiếu ngủ…, phân mảnh chú ý… và nghiện…"'
+    moi: '"…gây ra một cuộc khủng hoảng sức khỏe tâm thần ở trẻ em và teen. Theo các đoạn trích sách trong bài điểm sách của Odgers (2024) (chúng tôi không mở được sách gốc), Haidt cho rằng các công ty công nghệ đã "tái cấu trúc" tuổi thơ bằng một "vòi rồng" nội dung gây nghiện và bằng việc thay thế chơi đùa, gặp gỡ trực tiếp."'
+    ly_do: "Review: mốc 2010–2015 và danh sách bốn tổn hại chỉ có nguồn bậc 3 (Wikipedia), trái chuẩn mục 2; trang sách và trang nhà xuất bản không nêu. Thay bằng điều bài Nature của Odgers trích từ sách. (nhận định n4, n6)"
+  - cu: 'Mục Lý thuyết: "Bốn tổn hại nền tảng của Haidt. Theo mô tả của sách…, Haidt nêu bốn con đường: tước đoạt xã hội…, thiếu ngủ, phân mảnh chú ý và nghiện. Đây là các giả thuyết cơ chế của Haidt; chúng tôi chưa kiểm các cơ chế cụ thể (như ánh sáng xanh hay thuật toán) bằng nguồn riêng."'
+    moi: '"Các cơ chế Haidt nêu. Theo các đoạn trích trong bài điểm sách của Odgers (2024), Haidt nêu nội dung gây nghiện và việc thời gian online thay thế chơi đùa, gặp gỡ trực tiếp. Đây là các giả thuyết cơ chế của Haidt; Odgers cho rằng chúng chưa được khoa học ủng hộ. Chúng tôi chưa mở được sách để kiểm danh sách đầy đủ các cơ chế."'
+    ly_do: "Review: như trên. (nhận định n6)"
+  - cu: '"22% từng nghiêm túc nghĩ đến việc tự tử (nữ 30%, nam 14%), 10% đã từng cố tự tử." và "Từng nghiêm túc nghĩ đến tự tử: 22% (2021)…; 10% đã từng cố tự tử (2021), khoảng 9% (2023)."'
+    moi: '"Cũng trong 12 tháng trước khảo sát, 22% đã nghiêm túc nghĩ đến việc tự tử (nữ 30%, nam 14%) và 10% đã cố tự tử." và "Nghiêm túc nghĩ đến tự tử trong 12 tháng qua: 22% (2021)…; cố tự tử trong 12 tháng qua: 10% (2021), khoảng 9% (2023)."'
+    ly_do: 'Review (lượt 2 sai): câu hỏi YRBS là "during the past 12 months", không phải "từng" (cả đời). (nhận định n10, n12)'
+  - cu: '"…xem [Hỗ trợ](/psyche/ho-tro/) để biết nơi liên hệ. Tìm giúp đỡ là dấu hiệu của sức mạnh, không phải yếu đuối."'
+    moi: '"…xem [Hỗ trợ](/psyche/ho-tro/) để biết nơi liên hệ."'
+    ly_do: "Review: câu cuối không có nguồn. (nhận định n48)"
+  - cu: '"### CDC YRBS (2021, 2023): khủng hoảng là có thật, thủ phạm thì chưa rõ" và khung ":::vung-chac[sức khỏe tâm thần tự báo cáo của teen (Mỹ) xấu đi rõ rệt trong thập kỷ 2010]" … "Đây là dữ liệu khảo sát đại diện quốc gia, nhất quán qua nhiều đợt: mức tự báo cáo tăng là có thật, nhưng…"'
+    moi: '"### CDC YRBS (2021, 2023): buồn bã tự báo cáo tăng, thủ phạm thì chưa rõ { #cdc-yrbs-2021-2023-khung-hoang-la-co-that-thu-pham-thi-chua-ro }" và ":::kha-vung[…cùng ý chính…]" … "Nhãn chỉ là "khá vững" vì chúng tôi mới dựa vào một hệ thống khảo sát của một nước (chưa đối chiếu các khảo sát khác hay phân tích tổng hợp), và đây là tự báo cáo triệu chứng, không phải chẩn đoán."'
+    ly_do: 'Review: Vững chắc đòi phân tích tổng hợp hay hai tái lập lớn và nhiều quần thể; ở đây chỉ có YRBS (một nước). "Khủng hoảng là có thật" mạnh hơn điều trang đo (tự báo cáo). Id cũ giữ. (nhận định n30)'
+  - cu: '"…thấy mạng xã hội liên hệ nhất quán nhưng khiêm tốn với trầm cảm, hành vi và ý nghĩ tự hại (r = 0,09–0,21)."'
+    moi: '"…thấy mạng xã hội liên hệ nhất quán với trầm cảm, các vấn đề hành vi và ý nghĩ tự hại, ở mức nhỏ (r = 0,09–0,21)."; mục Nguồn: link DOI 10.1001/jamapediatrics.2026.0085, tên bài theo tóm tắt.'
+    ly_do: 'Review: tóm tắt Teague 2026 viết "consistently associated with risks", không nói "khiêm tốn"; "nhỏ" là cách đọc r của trang. (nhận định n32)'
+  - cu: '"Các nhà nghiên cứu như Odgers (Nature, 2024) phản biện, theo các tóm tắt thứ cấp mà chúng tôi đọc được (chưa mở bản gốc): phần lớn bằng chứng thực nghiệm không thấy hiệu ứng lớn hay nhất quán, và quan hệ ngược chiều có thể giải thích tương quan."'
+    moi: '"Các nhà nghiên cứu như Odgers (Nature, 2024, bài điểm sách) phản biện: việc tìm kiếm các hiệu ứng lớn như Haidt gợi ý cho ra một hỗn hợp liên hệ không có, nhỏ hoặc lẫn lộn, và khi thấy liên hệ theo thời gian thì chúng gợi ý rằng teen đã có vấn đề sức khỏe tâm thần dùng mạng xã hội nhiều hơn."; thêm Odgers (2024) vào mục Nguồn.'
+    ly_do: 'Review mở được bài gốc: "Our efforts have produced a mix of no, small and mixed associations… they suggest … that young people who already have mental-health problems use such platforms more". (nhận định n34)'
+  - cu: '"…mạng xã hội có thể có cả lợi và hại, và cần thêm dữ liệu từ chính các công ty công nghệ (theo trang của HHS, chúng tôi chỉ đọc được đoạn trích)."; Ngộ nhận: "Chúng tôi không có nguồn đã mở về mặt tích cực cụ thể (như cộng đồng cho nhóm thiểu số), nên không khẳng định."'
+    moi: '"…mạng xã hội có thể có lợi cho một số teen nhưng cũng có dấu hiệu rủi ro gây hại, chưa đủ bằng chứng để nói nó đủ an toàn, và các công ty công nghệ cần chia sẻ dữ liệu cho nhà nghiên cứu độc lập."; "…với một số teen, nó mang lại cộng đồng và sự hỗ trợ từ bạn bè, nhất là với những nhóm hay bị gạt ra lề."; mục Nguồn thêm link PDF.'
+    ly_do: 'Review đọc toàn văn khuyến cáo (bản lưu Internet Archive): "may have benefits for some children and adolescents, there are ample indicators that social media can also have a profound risk of harm… we do not yet have enough evidence to determine if social media is sufficiently safe"; "Ensure technology companies share data"; "positive community… especially important for youth who are often marginalized". (nhận định n35, n59)'
+  - cu: '"…hỏi con đang xem gì và trò chuyện về những điều con gặp trên mạng (bị bắt nạt, so sánh bản thân, nội dung gây khó chịu) là thông lệ hợp lý, không phải kết quả của một nghiên cứu cụ thể."'
+    moi: '"Tổng Y sĩ Mỹ (2023) khuyên gia đình lập một kế hoạch dùng phương tiện số, có thảo luận cởi mở về thời gian dùng và giới hạn nội dung, và nói với con về lợi ích và rủi ro của mạng xã hội; đó là khuyến cáo, chưa phải kết quả của một thử nghiệm mà chúng tôi đã kiểm."'
+    ly_do: 'Review: lời khuyên không có nguồn; thay bằng khuyến cáo có nguồn ("Create a family media plan… open family discussion… content boundaries"; "Discuss with children the benefits and risks of social media"). (nhận định n40)'
+  - cu: '"Quy tắc cụ thể như sạc điện thoại ngoài phòng ngủ hay không lướt trước giờ ngủ 30–60 phút là thông lệ thực hành, chưa phải kết quả của nghiên cứu mà chúng tôi đã kiểm."'
+    moi: '"Tổng Y sĩ Mỹ (2023) khuyên cân nhắc hạn chế dùng điện thoại, máy tính bảng và máy tính ít nhất 1 giờ trước khi ngủ và suốt đêm, vì thiết bị điện tử có thể làm xao nhãng và ảnh hưởng đến giấc ngủ; đó là khuyến cáo, chưa phải kết quả của một thử nghiệm mà chúng tôi đã kiểm."'
+    ly_do: 'Review: "30–60 phút" và "sạc ngoài phòng ngủ" không có nguồn; khuyến cáo có nguồn: "consider restricting the use of phones, tablets, and computers for at least 1 hour before bedtime and through the night". (nhận định n43)'
+  - cu: '"### 3. Chú ý đặc biệt ở ngưỡng dậy thì :nhan[kha-vung]" … "Một gợi ý thực hành hợp lý (không phải kết quả của nghiên cứu): ở các độ tuổi này, trò chuyện với con về những điều con gặp trên mạng có thể hữu ích hơn chỉ ra lệnh cấm."'
+    moi: '"### 3. Có thể có những độ tuổi nhạy cảm hơn { #3-chu-y-dac-biet-o-nguong-day-thi-kha-vung }" (bỏ chip) … "Đây mới là một nghiên cứu dọc ở Anh, chưa được lặp lại, và các tác giả chỉ suy đoán về dậy thì, nên chúng tôi không gắn nhãn cho phát hiện này. Phân tích tổng hợp 2026 cũng thấy liên hệ giữa mạng xã hội và trầm cảm mạnh hơn ở đầu tuổi vị thành niên (Teague và cộng sự, 2026)."'
+    ly_do: 'Review: một nghiên cứu chưa tái lập không đạt Khá vững (lượt 2 quá mạnh), cũng không đạt Đang tranh cãi (không có bằng chứng trái chiều): bỏ chip. Lời so sánh "hữu ích hơn chỉ ra lệnh cấm" không có nguồn; thay bằng điều tóm tắt Teague 2026 nêu ("stronger in early adolescence"). Id cũ giữ. (nhận định n45, n46)'
+  - cu: "Hồ sơ: nguồn wiki-ag (Wikipedia, bậc 3)"
+    moi: (bỏ khỏi danh sách nguồn của hồ sơ)
+    ly_do: "Review: không còn nhận định nào dùng; các chỗ dùng trước đây (n4, n6, n33, n34) đã bỏ hay thay bằng Odgers 2024 và khuyến cáo Surgeon General."
