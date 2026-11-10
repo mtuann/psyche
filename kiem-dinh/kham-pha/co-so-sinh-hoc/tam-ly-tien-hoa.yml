@@ -1,0 +1,1116 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa
+trang: src/content/docs/kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa.md
+nguon_cu: ../psyche-zero/docs/kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa.md
+tang: loi
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d6-l2
+    ma_bam: sha256:979bfcb639a46d0515cbe747ee6710a3eff2b80e114ce70510b94cde08e8040b
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L2 phần 2/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L2)
+      review: Claude Sonnet 5.5 (agent review D6-L2, 10/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d6-l2-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: buss1989
+    ten: 'Buss (1989), Behav Brain Sci 12(1), 1–49: toàn văn (PDF mở trên Cambridge Core, đọc 10/11/2026)'
+    link: https://doi.org/10.1017/S0140525X00023992
+    toan_van: true
+  - id: walter2020
+    ten: 'Walter và cộng sự (2020), Psychol Sci 31(4), 408–423: toàn văn bản chấp nhận đăng (kho Đại học Louvain, research.dial.uclouvain.be, đọc ở review 10/11/2026); lượt 1 chỉ đọc được tóm tắt (Crossref, Europe PMC) và danh sách tác giả qua OpenAlex'
+    link: https://doi.org/10.1177/0956797620904154
+    toan_van: true
+  - id: eastwick2008
+    ten: 'Eastwick & Finkel (2008), J Pers Soc Psychol 94(2), 245–264: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/0022-3514.94.2.245
+    toan_van: false
+  - id: eastwick2014
+    ten: 'Eastwick và cộng sự (2014), Psychol Bull 140(3), 623–665: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/a0032432
+    toan_van: false
+  - id: gould1979
+    ten: 'Gould & Lewontin (1979), Proc R Soc B 205, 581–598: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1098/rspb.1979.0086
+    toan_van: false
+  - id: gouldvrba1982
+    ten: 'Gould & Vrba (1982), Paleobiology 8(1), 4–15: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1017/S0094837300004310
+    toan_van: false
+  - id: henrich2010
+    ten: 'Henrich, Heine & Norenzayan (2010), Behav Brain Sci 33, 61–83: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1017/S0140525X0999152X
+    toan_van: false
+  - id: eagly1999
+    ten: 'Eagly & Wood (1999), Am Psychol 54(6), 408–423: chỉ có nhan đề; không mở được tóm tắt hay toàn văn'
+    link: https://doi.org/10.1037/0003-066X.54.6.408
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên Europe PMC (10/11/2026): (Vietnam* OR Vietnamese) AND "mate preferences" (16 kết quả), AND "evolutionary psychology" (48): là bài tổng quan hay nghiên cứu nhiều nước; không có nghiên cứu kiểm chứng giả thuyết chọn bạn đời của Buss riêng trên người Việt; có một nghiên cứu về vẻ hấp dẫn khuôn mặt người Việt (2023). OpenAlex bị giới hạn lượt'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam*%20OR%20Vietnamese)%20AND%20%22mate%20preferences%22&format=json
+    toan_van: false
+  - id: openstax2e31
+    ten: 'Spielman, Jenkins & Lovett (2020), OpenStax Psychology 2e, mục 3.1 "Human Genetics": đã mở đọc 10/11/2026'
+    link: https://openstax.org/books/psychology-2e/pages/3-1-human-genetics
+    toan_van: true
+  - id: cohon2018
+    ten: "Cohon (2004; sửa đổi 2018), Stanford Encyclopedia of Philosophy, \"Hume's Moral Philosophy\", mục 5 \"Is and ought\": đã mở đọc 10/11/2026"
+    link: https://plato.stanford.edu/entries/hume-moral/
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: Từ chọn lọc giới tính của Darwin đến nghiên cứu chọn bạn đời ở 37 nền văn hóa của Buss (1989), nhiều "lời giải thích" của tâm lý học tiến hóa bị gọi là chuyện kể vừa vặn (mô tả).
+    loai: lich-su
+    nguon:
+      - buss1989
+      - gould1979
+    trich: We fault the adaptationist programme ... for its reliance upon plausibility alone as a criterion for accepting speculative tales
+    vi_tri: Gould & Lewontin, tóm tắt; Buss, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Mô tả (description). "37 nền văn hóa" là cách nói của nhan đề Buss ("37 cultures"): 37 mẫu từ 33 nước (n17).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Buss 1989 đúng là nghiên cứu 37 mẫu; G&L 1979 chê lối kể chuyện thích nghi nói chung. Câu ghi (mô tả) nên chấp nhận.
+  - id: n2
+    cau: Tình huống Mai ghen khi người yêu bấm "thích" ảnh người lạ, và Nam đã có bạn gái nhưng vẫn ngắm người đẹp, là ví dụ giả định.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'gia-dinh. Ví dụ giả định, không khẳng định điều gì về bằng chứng; kiểm trên trang. Review (Claude Sonnet 5.5, 10/11/2026): dung. Loại ve-site (gia-dinh): hai tình huống Mai, Nam là ví dụ giả định; trang đã thêm "Hai tình huống giả định." đầu đoạn. Không trái nhận định nào.'
+    review: dung
+  - id: n3
+    cau: Một số nhà tâm lý học nói não ta được "lập trình" từ thời tổ tiên săn bắn hái lượm, nơi ngoại hình có thể báo hiệu khả năng sinh sản.
+    loai: phat-hien
+    nguon:
+      - buss1989
+    trich: Characteristics signaling reproductive capacity were valued more by males than by females.
+    vi_tri: Buss, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nơi ghen tuông giữ được bạn tình và ngoại hình báo hiệu sức khỏe sinh sản". Chữ mới: "nơi ngoại hình có thể báo hiệu khả năng sinh sản". Lý do: Buss (1989) nói về dấu hiệu khả năng sinh sản và nguồn lực; phần "ghen tuông giữ bạn tình" không có trong nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu gán cho "một số nhà tâm lý học", đúng mức Buss (tóm tắt: dấu hiệu khả năng sinh sản được nam coi trọng hơn nữ).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Cách nói 'lập trình' là ví von; nội dung (ngoại hình báo hiệu khả năng sinh sản theo lập luận tiến hóa) đúng với Buss 1989.
+    review: dung
+  - id: n4
+    cau: Tâm lý học tiến hóa dùng chọn lọc tự nhiên và chọn lọc giới tính để giải thích đặc điểm tâm lý và hành vi của con người.
+    loai: dinh-nghia
+    nguon:
+      - buss1989
+    trich: Five predictions were made about sex differences in human mate preferences based on evolutionary conceptions of parental investment, sexual selection, human reproductive capacity
+    vi_tri: Buss, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "dùng chọn lọc tự nhiên để giải thích hành vi con người hiện đại". Chữ mới thêm chọn lọc giới tính và "đặc điểm tâm lý". Lý do: sát cách Buss dùng khung tiến hóa. Chưa mở mục từ APA Dictionary (trang không tải được). Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax Psychology 2e mục 3.1 mô tả tâm lý học tiến hóa tập trung vào các khuôn mẫu hành vi và nhận thức phổ quát đã tiến hóa; khớp ý. Không mở được APA Dictionary.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gutenberg.org/cache/epub/1228/pg1228.txt", "https://www.gutenberg.org/cache/epub/2300/pg2300.txt", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Định nghĩa mô tả đúng hướng tâm lý học tiến hóa (Buss 1989 dùng cả hai cơ chế).
+    review: dung
+  - id: n5
+    cau: Ngành này có những nghiên cứu xuyên văn hóa ấn tượng và cũng hứng những phê bình sắc bén.
+    loai: phat-hien
+    nguon:
+      - buss1989
+      - gould1979
+    trich: The 37 samples ... combined, they are the largest ever obtained on mate preferences.
+    vi_tri: Buss, mục 2.1 (đoạn về mẫu)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "…hứng những phê bình sắc bén nhất trong tâm lý học". Chữ mới bỏ "nhất trong tâm lý học" vì không kiểm được xếp hạng. Review (Claude Sonnet 5.5, 10/11/2026): dung. "Xuyên văn hóa ấn tượng" bám vào Buss ("the largest ever obtained on mate preferences"); "phê bình sắc bén" = Gould và Lewontin. Chấp nhận.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Cả hai vế có nguồn.
+    review: dung
+  - id: n6
+    cau: 'Năm 1859, Darwin xuất bản Nguồn gốc các loài và đề xuất chọn lọc tự nhiên: cá thể thích nghi tốt hơn với môi trường thì sống sót và sinh sản nhiều hơn, truyền đặc điểm cho đời sau.'
+    loai: lich-su
+    nguon:
+      - buss1989
+      - gould1979
+    trich: Individuals lacking favored characteristics tend to become no one's ancestors
+    vi_tri: Buss, mục 1 (dẫn Darwin 1859; 1871)
+    ket_qua: dung
+    ghi_chu: 'Sách Darwin (1859) không đọc được: chỉ là nguồn phụ; Buss dẫn Darwin 1859, 1871 cho chọn lọc tự nhiên và giới tính, Gould & Lewontin nói tới "natural selection as an optimizing agent". Định nghĩa phổ thông của chọn lọc tự nhiên.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gutenberg.org/cache/epub/1228/pg1228.txt" ]
+    luot_2_ghi_chu: Bản in lần đầu 1859 (Gutenberg, ebook 1228).
+  - id: n7
+    cau: Một số đặc điểm dường như không giúp sống sót, như đuôi công rực rỡ.
+    loai: lich-su
+    nguon:
+      - buss1989
+    trich: who is differentially excluded from and included in mating (Darwin 1871)
+    vi_tri: Buss, mục 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "dường như... vô dụng cho sinh tồn: đuôi công rực rỡ (nặng nề, dễ bị thú dữ phát hiện), sừng hươu khổng lồ". Chữ mới bỏ chi tiết (nặng nề, bị thú dữ phát hiện, sừng hươu) vì nguồn đã mở không có. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đuôi công: ví dụ kinh điển Darwin; trang đã gắn "dường như". Chấp nhận.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gutenberg.org/cache/epub/2300/pg2300.txt" ]
+    luot_2_ghi_chu: Cách nói 'dường như' nhẹ; đúng.
+    review: dung
+  - id: n8
+    cau: 'Darwin đề xuất chọn lọc giới tính trong Nguồn gốc con người (1871): một số đặc điểm tiến hóa vì giúp thu hút bạn tình hoặc đánh bại đối thủ cùng giới.'
+    loai: lich-su
+    nguon:
+      - buss1989
+    trich: Favored mate characteristics that show some heritability will typically be represented more frequently in subsequent generations.
+    vi_tri: Buss, mục 1 (dẫn Darwin 1871); từ khóa "intrasexual competition" ở phần thảo luận
+    ket_qua: dung
+    ghi_chu: Nguồn phụ (Darwin 1871 là sách, không đọc được). "Đánh bại đối thủ cùng giới" khớp "human intrasexual competition" trong phần thảo luận của Buss.
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gutenberg.org/cache/epub/2300/pg2300.txt" ]
+    luot_2_ghi_chu: Bản 1871 (lần in thứ hai ghi 'first edition 1871').
+  - id: n9
+    cau: 'Hơn một thế kỷ sau, các nhà tâm lý học, trong đó có Buss, áp dụng logic này cho tâm trí: sở thích chọn bạn đời có thể phản ánh áp lực chọn lọc tổ tiên từng chịu; một số người cho rằng một số hành vi là "phần mềm cũ chạy trên phần cứng mới" (cách nói ví von).'
+    loai: lich-su
+    nguon:
+      - buss1989
+    trich: current mate preferences may reflect prior selection pressures
+    vi_tri: Buss, mục 1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: danh sách Cosmides, Tooby, Buss; "não là tập hợp mô-đun... như ghen tuông, sợ rắn, thèm đồ ngọt"; "thèm đồ ngọt vốn là thích nghi, nay thành béo phì". Chữ mới: chỉ ví dụ chọn bạn đời của Buss, có ghi rõ là cách nói ví von. Lý do: phần mô-đun và ví dụ đồ ngọt không có nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Buss mục 1: "current mate preferences may reflect prior selection pressures"; "phần mềm cũ chạy trên phần cứng mới" đã ghi là cách nói ví von của trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Phần 'phần mềm cũ chạy trên phần cứng mới' là cách nói ví von đã ghi chú.
+    review: dung
+  - id: n10
+    cau: 'Buss khảo sát 10.047 người ở 37 mẫu: phụ nữ chuộng "triển vọng tài chính" hơn nam ở 36/37 mẫu (có ý nghĩa); nam chuộng ngoại hình hơn ở cả 37/37 mẫu theo đúng chiều (34 mẫu có ý nghĩa).'
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: In 36 of 37 samples, the predicted sex difference emerged ... All 37 samples show sex differences in the predicted direction, with 34 significant beyond the .05 level.
+    vi_tri: Buss, mục 3.1 và 3.4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "36/37 nền văn hóa; nam chuộng ngoại hình hơn ở cả 37/37". Chữ mới: đơn vị là mẫu; 37/37 là theo chiều, 34 mẫu có ý nghĩa. Lý do: Buss 3.4. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đối chiếu toàn văn Buss 1989 (PDF mở trên Cambridge Core, đọc lại ở review): 36/37 (ngoại lệ Tây Ban Nha), 37/37 đúng chiều và 34 mẫu có ý nghĩa với "good looks"; 10.047 người, 37 mẫu, 33 nước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp bài gốc (mục 3.4 và tóm tắt).
+    review: dung
+  - id: n11
+    cau: 'Lý giải: vì người nữ đầu tư sinh học nhiều hơn (mang thai, nuôi con), họ kén hơn về nguồn lực nuôi con; người nam cần dấu hiệu khả năng sinh sản (trẻ, khỏe, ngoại hình).'
+    loai: phat-hien
+    nguon:
+      - buss1989
+    trich: In humans and other mammals, male parental investment tends to be less than female parental investment
+    vi_tri: Buss, mục 1.1
+    ket_qua: dung
+    ghi_chu: Là lập luận của Buss (từ Trivers 1972), không phải kết quả đo.
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Lý giải của Buss.
+  - id: n12
+    cau: 'Gould và Lewontin (1979) cảnh báo không phải đặc điểm nào cũng là thích nghi: nhiều thứ chỉ là sản phẩm phụ của cấu trúc (spandrel).'
+    loai: lich-su
+    nguon:
+      - gould1979
+    trich: production of non-adaptive structures by developmental correlation with selected features
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Đọc tóm tắt qua PubMed; toàn văn chỉ có ở nguồn trả phí, không mở.
+  - id: n13
+    cau: Tên "chuyện kể vừa vặn" (just-so stories) lấy theo tập truyện Just So Stories của Rudyard Kipling.
+    loai: lich-su
+    nguon:
+      - gould1979
+    trich: reliance upon plausibility alone as a criterion for accepting speculative tales
+    vi_tri: Tóm tắt (nội dung phê bình)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…của Rudyard Kipling, 1902, chuyên bịa chuyện giải thích "vì sao voi có vòi dài"". Chữ mới bỏ năm và ví dụ. Chỗ khó: tóm tắt Gould & Lewontin không dùng cụm "just-so"; nguồn gốc tên là kiến thức văn học, chưa mở toàn văn để đối chiếu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tên "just-so stories" lấy theo Kipling: kiến thức văn học, tóm tắt Gould & Lewontin không nêu; mức câu đã bỏ năm và ví dụ. Chấp nhận.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC5180405/", "https://www.gutenberg.org/ebooks/2781" ]
+    luot_2_ghi_chu: Koonin 2016 (truy cập mở) nói rõ; tập truyện Just So Stories của Kipling có trên Gutenberg.
+    review: dung
+  - id: n14
+    cau: 'Các nhà phê bình mô tả thói quen: thấy một hành vi, nghĩ ra một câu chuyện tiến hóa nghe hợp lý, rồi coi như đã giải thích xong.'
+    loai: phat-hien
+    nguon:
+      - gould1979
+    trich: proposing an adaptive story for each considered separately ... reliance upon plausibility alone as a criterion for accepting speculative tales
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: Mô tả phê bình của Gould & Lewontin về "adaptationist programme".
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Đúng mô tả của G&L; nhận xét 'coi như xong' là cách diễn đạt của site.
+  - id: n15
+    cau: Điều người ta nói mình muốn ở bạn đời hầu như không dự báo được họ thực sự có cảm tình với ai khi gặp người thật (Eastwick và Finkel, 2008, hẹn hò tốc độ).
+    loai: phat-hien
+    nguon:
+      - eastwick2008
+    trich: participants' ideal preferences, assessed before the speed-dating event, failed to predict what inspired their actual desire at the event
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(Eastwick và cộng sự, 2014: tương quan r ≈ 0,03 — gần như bằng không)". Chữ mới: dẫn Eastwick & Finkel (2008). Lý do: r ≈ 0,03 trong tóm tắt Eastwick 2014 là chênh lệch giữa hai giới ở mức dự báo của ngoại hình và triển vọng kiếm tiền, không phải tương quan giữa tiêu chuẩn nêu ra và sự thu hút. Review (Claude Sonnet 5.5, 10/11/2026): dung. Eastwick & Finkel 2008 (tóm tắt Europe PMC, đọc lại): "participants'' ideal preferences, assessed before the speed-dating event, failed to predict what inspired their actual desire". Trang dùng "hầu như không dự báo được", đúng mức; r = 0,03 không còn ở đây.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/" ]
+    luot_2_ghi_chu: Tóm tắt PubMed; 'hầu như không' hợp với 'failed to predict'.
+    review: dung
+  - id: n16
+    cau: Buss khảo sát 31 phẩm chất của bạn đời lý tưởng (18 chấm điểm, 13 xếp hạng).
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: The third section requested subjects to rate each of 18 characteristics ... Interspersed among the 13 characteristics were the target variables
+    vi_tri: Buss, mục 2.2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "32 phẩm chất của bạn đời lý tưởng (chấm điểm + xếp hạng)". Chữ mới: 31 (18 + 13). Lý do: Buss mục 2.2. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đối chiếu toàn văn Buss 1989 (PDF mở trên Cambridge Core, đọc lại ở review): 18 phẩm chất chấm điểm (thang 0–3) và 13 phẩm chất xếp hạng; trang nói 31.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: 18 chấm điểm + 13 xếp hạng; con số 31 là tổng của hai bộ công cụ khác nhau, bài không tự ghi chữ '31'.
+    review: dung
+  - id: n17
+    cau: Mẫu gồm 10.047 người, 37 mẫu từ 33 nước thuộc 6 châu lục và 5 đảo.
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: 37 samples drawn from 33 countries located on six continents and five islands (total N = 10,047)
+    vi_tri: Buss, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n18
+    cau: Trung bình khoảng 272 người mỗi mẫu.
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: The mean sample size for the 37 samples is 272.
+    vi_tri: Buss, mục 2.1
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n19
+    cau: 'Năm dự báo tiến hóa được kiểm chứng: nữ chuộng năng lực kiếm tiền và tham vọng; nam chuộng trẻ và ngoại hình; trinh tiết.'
+    loai: phat-hien
+    nguon:
+      - buss1989
+    trich: The predictions centered on how each sex valued earning capacity, ambition-industriousness, youth, physical attractiveness, and chastity.
+    vi_tri: Buss, tóm tắt
+    ket_qua: dung
+    ghi_chu: Trên trang, "nữ chuộng... nam chuộng..." là cách tóm tắt năm dự báo; dự báo trinh tiết là nam coi trọng hơn nữ (Buss mục 1.1).
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+  - id: n20
+    cau: Nhóm còn thu thập tuổi kết hôn thực tế ở 27 nước để kiểm chứng chéo.
+    loai: phat-hien
+    nguon:
+      - buss1989
+    trich: For 27 countries, demographic data on actual age at marriage provided a validity check on questionnaire data.
+    vi_tri: Buss, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n21
+    cau: Nữ đánh giá "triển vọng tài chính tốt" cao hơn nam ở 36/37 mẫu có ý nghĩa thống kê; ngoại lệ duy nhất là mẫu Tây Ban Nha (cùng chiều nhưng chưa có ý nghĩa).
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: The sole exception was the sample from Spain, which showed the predicted direction of the sex difference, but not significantly so.
+    vi_tri: Buss, mục 3.1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ở 36/37 nền văn hóa (ngoại lệ duy nhất: Tây Ban Nha)". Chữ mới thêm "mẫu", "có ý nghĩa thống kê", và nói Tây Ban Nha cùng chiều. Lý do: Buss 3.1. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đối chiếu toàn văn Buss 1989 (PDF mở trên Cambridge Core, đọc lại ở review): ngoại lệ duy nhất là mẫu Tây Ban Nha (cùng chiều, không có ý nghĩa).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n22
+    cau: Nam đánh giá "ngoại hình" cao hơn nữ ở cả 37/37 mẫu theo đúng chiều, 34 mẫu có ý nghĩa thống kê.
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: All 37 samples show sex differences in the predicted direction, with 34 significant beyond the .05 level.
+    vi_tri: Buss, mục 3.4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ở cả 37/37". Chữ mới thêm "theo đúng chiều" và 34 mẫu có ý nghĩa. Lý do: Buss 3.4 (Ấn Độ, Ba Lan, Thụy Điển không có ý nghĩa ở thang chấm điểm). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đối chiếu toàn văn Buss 1989 (PDF mở trên Cambridge Core, đọc lại ở review) (mục 3.4): "All 37 samples show sex differences in the predicted direction, with 34 significant beyond the .05 level" (Ấn Độ, Ba Lan, Thụy Điển không có ý nghĩa ở thang chấm điểm).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n23
+    cau: Nam muốn bạn đời trẻ hơn, nữ muốn bạn đời lớn tuổi hơn, ở cả 37 mẫu; khớp với tuổi kết hôn thực tế (chú rể 28,2; cô dâu 25,3).
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: Both preferred age of marriage and preferred mate age correspond closely in absolute value to the actual mean ages of grooms (28.2) and brides (25.3).
+    vi_tri: Buss, mục 3.2 và 3.2 (kiểm chứng tuổi kết hôn)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cả hai giới đều muốn người chồng lớn tuổi hơn vợ". Chữ mới nói rõ nam muốn bạn đời trẻ hơn (2,66 năm), nữ muốn lớn tuổi hơn (3,42 năm). Lý do: Buss 3.2. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Buss (mục 3.2); số tuổi kết hôn thực tế đã đối chiếu ở lượt 1 và lượt 2.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: "Bảng 4: mọi mẫu có ý nghĩa; số tuổi kết hôn khớp."
+    review: dung
+  - id: n24
+    cau: '"Tham vọng, siêng năng": nữ cao hơn nam theo đúng chiều ở 34/37 mẫu (29 mẫu có ý nghĩa); ba mẫu (Colombia, Tây Ban Nha, Zulu) có chiều ngược lại, chỉ mẫu Zulu có ý nghĩa.'
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: Three samples - Colombian, Spanish, and South African Zulu - show the opposite sex difference, significant only in the Zulu sample.
+    vi_tri: Buss, mục 3.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nữ cao hơn ở 34/37 (ngoại lệ: người Zulu ở Nam Phi)". Chữ mới: ba ngoại lệ, 29 mẫu có ý nghĩa. Lý do: Buss 3.3. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đối chiếu toàn văn Buss 1989 (PDF mở trên Cambridge Core, đọc lại ở review): 34/37 mẫu đúng chiều, 29 có ý nghĩa; Colombia, Tây Ban Nha, Zulu ngược chiều, chỉ Zulu có ý nghĩa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp (34/37 đúng chiều, 29 có ý nghĩa).
+    review: dung
+  - id: n25
+    cau: 'Trinh tiết là tiêu chí biến thiên văn hóa nhất, và chỉ 23/37 mẫu có khác biệt giới có ý nghĩa: các mẫu Trung Quốc, Ấn Độ, Indonesia, Iran, Đài Loan đánh giá rất cao; Thụy Điển, Na Uy, Phần Lan, Hà Lan, Tây Đức, Pháp coi là không liên quan hay không quan trọng.'
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: chastity shows greater cross-cultural variability than any other rated variable in this study
+    vi_tri: Buss, mục 3.5 và mục 4
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ở Trung Quốc đại lục bị coi là "không thể thiếu", ở Thụy Điển bị coi là "không quan trọng"". Chữ mới theo lời Buss: "attach high value" (không phải "indispensable"), nhóm các nước, thêm 23/37. Lý do: Buss 3.5. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đối chiếu toàn văn Buss 1989 (PDF mở trên Cambridge Core, đọc lại ở review) (mục 3.5): Trung Quốc, Ấn Độ, Indonesia, Iran, Đài Loan và Israel (chỉ người Ả Rập Palestine) coi trọng; Thụy Điển, Na Uy, Phần Lan, Hà Lan, Tây Đức, Pháp coi là không quan trọng; 23/37 mẫu có ý nghĩa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Bài còn nêu thêm mẫu Ả Rập Palestine ở nhóm cao; câu của site chọn năm mẫu, không sai.
+    review: dung
+  - id: n26
+    cau: 'Walter và cộng sự (2020) tái lập quy mô lớn: 14.399 người ở 45 quốc gia.'
+    loai: so-lieu
+    nguon:
+      - walter2020
+    trich: Using a new 45-country sample ( N = 14,399), we attempted to replicate classic studies
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đăng ký phương pháp trước khi thu thập (preregistered) và mở dữ liệu: 14.399 người ở 45 quốc gia (2016)". Chữ mới bỏ "đăng ký trước", "mở dữ liệu", "(2016)": chưa mở được toàn văn để xác nhận. Lý do: tóm tắt chỉ nói mẫu mới 45 nước, N = 14.399. Review (Claude Sonnet 5.5, 10/11/2026): dung. Walter 2020: đọc toàn văn bản chấp nhận đăng (kho Đại học Louvain, research.dial.uclouvain.be, đọc ở review): N = 14.399, 45 nước. Chi tiết thiết kế thêm ở n77.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n27
+    cau: 'Nghiên cứu đồng thời kiểm chứng hai khung đối đầu: tâm lý học tiến hóa và lý thuyết vai trò xã hội (khác biệt giới bắt nguồn từ vai trò xã hội của hai giới).'
+    loai: dinh-nghia
+    nguon:
+      - walter2020
+      - eagly1999
+    trich: Two competing perspectives—an evolutionary psychological perspective and a biosocial role perspective
+    vi_tri: Walter, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(cho rằng khác biệt giới bắt nguồn từ phân công lao động xã hội)". Chữ mới: "từ vai trò xã hội của hai giới". Lý do: tóm tắt gọi là "biosocial role perspective"; "phân công lao động" không có trong nguồn mở được. Eagly & Wood (1999) chỉ đọc được nhan đề. Review (Claude Sonnet 5.5, 10/11/2026): dung. Walter 2020: đọc toàn văn bản chấp nhận đăng (kho Đại học Louvain, research.dial.uclouvain.be, đọc ở review): tái lập và kiểm chứng đối đầu hai khung (tiến hóa và vai trò xã hội).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n28
+    cau: 'Theo tóm tắt, khác biệt giới trong sở thích nêu ra vẫn vững: nam chuộng bạn tình trẻ, đẹp hơn; nữ chuộng bạn tình lớn tuổi, có triển vọng tài chính hơn.'
+    loai: so-lieu
+    nguon:
+      - walter2020
+    trich: Men, more than women, prefer attractive, young mates, and women, more than men, prefer older mates with financial prospects.
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Thêm "theo tóm tắt" vì không mở toàn văn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Walter ("Support for universal sex differences in preferences remains robust"); trang nay bỏ "Theo tóm tắt của bài" vì đã đọc toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+    review: dung
+  - id: n29
+    cau: Ở nước càng bình đẳng giới, cả hai giới đều có bạn đời gần tuổi mình hơn.
+    loai: so-lieu
+    nguon:
+      - walter2020
+    trich: Cross-culturally, both sexes have mates closer to their own ages as gender equality increases.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khoảng cách tuổi vợ chồng càng thu hẹp". Chữ mới theo tóm tắt: bạn đời gần tuổi mình hơn ở cả hai giới. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: "both sexes have mates closer to their own ages as gender equality increases"; kèm n78.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n30
+    cau: Ngoài tuổi bạn đời, cả mức lây nhiễm mầm bệnh lẫn bình đẳng giới đều không dự báo vững các khác biệt giữa các nước.
+    loai: so-lieu
+    nguon:
+      - walter2020
+    trich: Beyond age of partner, neither pathogen prevalence nor gender equality robustly predicted sex differences or preferences across countries.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ngoài tuổi tác, bình đẳng giới không dự báo vững các khác biệt khác" (thiếu mầm bệnh). Chữ mới đủ theo tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: "Beyond age of partner, neither pathogen prevalence nor gender equality robustly predicted sex differences or preferences across countries."'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n31
+    cau: 'Việt Nam có trong danh sách 45 nước của nghiên cứu Walter (2020), và bốn tác giả thuộc Đại học Quốc gia Hà Nội.'
+    loai: lich-su
+    nguon:
+      - walter2020
+    trich: 'Participants did not indicate mate age in four countries (Bulgaria, Jordan, Vietnam, and Uruguay), and those countries were not included in age analyses. // Department of Psychology, University of Social Sciences and Humanities, Vietnam National University, Hanoi'
+    vi_tri: "Walter 2020, bản chấp nhận đăng: mục Participants/Method, Fig. 3 (danh sách nước), danh sách cơ quan tác giả"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Việt Nam có mặt trong 45 nước này (nhóm Đại học Quốc gia Hà Nội tham gia thu thập dữ liệu)". Chữ mới: dẫn bốn tác giả thuộc ĐHQG Hà Nội. Lý do: không mở được toàn văn để xác nhận Việt Nam là một trong 45 nước hay đã thu thập dữ liệu; chỉ xác nhận được cơ quan của tác giả. Chỗ khó. Review (Claude Sonnet 5.5, 10/11/2026): sai (thiếu, nay đã xác nhận). Lượt 1 chỉ xác nhận qua bốn tác giả ĐHQG Hà Nội vì chưa mở được toàn văn. Đã đọc toàn văn bản chấp nhận đăng: Việt Nam nằm trong danh sách 45 nước (Fig. 3) nhưng người tham gia ở Việt Nam, Bulgaria, Jordan, Uruguay không ghi tuổi bạn đời nên không vào phân tích tuổi. Trang đã viết lại ở mục Walter và mục Việt Nam (n64).'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1177/0956797620904154", "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf" ]
+    luot_2_ghi_chu: Có đủ bốn tác giả; Việt Nam nằm trong mẫu, nhưng bị loại khỏi phân tích tuổi bạn đời (không ghi tuổi bạn đời).
+    review: sai
+  - id: n32
+    cau: Việt Nam không có trong nghiên cứu gốc của Buss (1989).
+    loai: lich-su
+    nguon:
+      - buss1989
+    trich: 'Table 1: Sample sizes and mean ages (không có mẫu Việt Nam)'
+    vi_tri: Buss, Bảng 1, 6 bảng khác
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Đã đọc toàn bộ bảng mẫu.
+  - id: n33
+    cau: Eastwick & Finkel (2008) hỏi người tham gia về bạn đời lý tưởng trước một sự kiện hẹn hò tốc độ, rồi so với sự quan tâm thật với những người họ gặp.
+    loai: phat-hien
+    nguon:
+      - eastwick2008
+    trich: we explored this possibility using speed dating and longitudinal follow-up procedures
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Phân tích tổng hợp các nghiên cứu "hẹn hò tốc độ" và gặp gỡ ngoài đời". Chữ mới: một nghiên cứu hẹn hò tốc độ (2008). Lý do: bài 2014 là tổng quan kèm phân tích tổng hợp về đánh giá lãng mạn, không phải về speed-dating như mô tả cũ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Eastwick & Finkel 2008: speed dating, ideal preferences nêu trước sự kiện.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n34
+    cau: Eastwick và cộng sự (2014) là tổng quan kèm phân tích tổng hợp 97 nghiên cứu về việc vẻ ngoài và triển vọng kiếm tiền dự báo đánh giá lãng mạn.
+    loai: so-lieu
+    nguon:
+      - eastwick2014
+    trich: a new meta-analysis spanning the attraction and relationships literatures (k = 97)
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/23586697/" ]
+    luot_2_ghi_chu: k=97 là số nghiên cứu/mẫu trong phân tích; đúng là tổng quan kèm phân tích tổng hợp.
+  - id: n35
+    cau: 'Khi nêu tiêu chuẩn, người tham gia cho thấy khác biệt giới quen thuộc: nam coi trọng ngoại hình hơn, nữ coi trọng triển vọng kiếm tiền hơn.'
+    loai: phat-hien
+    nguon:
+      - eastwick2008
+    trich: participants exhibited traditional sex differences when stating the importance of physical attractiveness and earning prospects in an ideal partner and ideal speed date
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n36
+    cau: Với những người họ thực sự gặp, mối liên hệ giữa sự quan tâm và ngoại hình hay triển vọng kiếm tiền của người kia không khác nhau giữa hai giới.
+    loai: phat-hien
+    nguon:
+      - eastwick2008
+    trich: data revealed no sex differences in the associations between participants' romantic interest in real-life potential partners ... and the attractiveness and earning prospects of those partners
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n37
+    cau: Tiêu chuẩn nêu ra từ trước sự kiện không dự báo được điều gây ra sự quan tâm thật.
+    loai: phat-hien
+    nguon:
+      - eastwick2008
+    trich: ideal preferences, assessed before the speed-dating event, failed to predict what inspired their actual desire at the event
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n38
+    cau: 'Phân tích tổng hợp 2014: ngoại hình dự báo đánh giá lãng mạn ở mức vừa đến mạnh (r ≈ 0,40) và triển vọng kiếm tiền ở mức nhỏ (r ≈ 0,10) cho cả hai giới.'
+    loai: so-lieu
+    nguon:
+      - eastwick2014
+    trich: physical attractiveness predicted romantic evaluations with a moderate-to-strong effect size (r = ∼.40) for both sexes, and earning prospects predicted romantic evaluations with a small effect size (r = ∼.10) for both sexes
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/23586697/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n39
+    cau: Chênh lệch giữa hai giới ở các tương quan ấy chỉ khoảng r = 0,03 và không có ý nghĩa thống kê.
+    loai: so-lieu
+    nguon:
+      - eastwick2014
+    trich: Sex differences in the correlations were small (r difference = .03) and uniformly nonsignificant.
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: Đây là nguồn gốc của số 0,03 mà bản cũ dùng sai.
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/23586697/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n40
+    cau: 'Bài học: điều ta nói mình muốn ở bạn đời không nhất thiết là điều làm ta rung động khi gặp người thật; Eastwick và Finkel giải thích theo hướng người ta có thể thiếu nhận biết nội quan về điều ảnh hưởng đến mình.'
+    loai: phat-hien
+    nguon:
+      - eastwick2008
+    trich: people may lack introspective awareness of what influences their judgments and behavior
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khảo sát hỏi "bạn thích gì" đo được chuẩn mực văn hóa và tự hình ảnh nhiều hơn là cơ chế chọn bạn đời thực". Chữ mới theo lời giải thích của tác giả (Nisbett & Wilson). Lý do: cách giải thích cũ không có trong nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. "Bài học" nêu đúng mức: Eastwick & Finkel kết luận người ta "may lack introspective awareness"; trang dùng "không nhất thiết".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n41
+    cau: Gould và Lewontin (1979) không phải thí nghiệm mà là bài phê bình lý thuyết, nổi tiếng trong sinh học tiến hóa.
+    loai: lich-su
+    nguon:
+      - gould1979
+    trich: We criticize this approach and attempt to reassert a competing notion
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "…một trong những bài phê bình có ảnh hưởng nhất trong lịch sử sinh học". Chữ mới: "nổi tiếng". Lý do: không kiểm được xếp hạng ảnh hưởng. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: bài phê bình lý thuyết, nổi tiếng trong sinh học tiến hóa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Bài lý thuyết/phê bình, không có thí nghiệm.
+    review: dung
+  - id: n42
+    cau: 'Spandrel: khoảng tường tam giác cong giữa vòm và trần nhà thờ San Marco ở Venice, sản phẩm phụ tất yếu của cấu trúc vòm; nhiều đặc điểm sinh học có thể là sản phẩm phụ của đặc điểm khác.'
+    loai: lich-su
+    nguon:
+      - gould1979
+    trich: production of non-adaptive structures by developmental correlation with selected features
+    vi_tri: Tóm tắt; nhan đề "The spandrels of San Marco"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nó không được "thiết kế" để vẽ tranh trang trí... tranh vẽ chỉ là tận dụng sau". Chữ mới bỏ phần tranh vẽ. Chỗ khó: chưa mở toàn văn; ẩn dụ kiến trúc theo nhan đề và kiến thức chung. Review (Claude Sonnet 5.5, 10/11/2026): dung. Spandrel mô tả theo bài gốc; "sản phẩm phụ tất yếu của cấu trúc" là cách diễn giải của bài; đã làm mềm ở lượt 1.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC5180405/" ]
+    luot_2_ghi_chu: Koonin 2016 mô tả; 'sản phẩm phụ tất yếu' là cách nói của G&L (không đọc toàn văn).
+    review: dung
+  - id: n43
+    cau: Pangloss là nhân vật trong tiểu thuyết Candide của Voltaire, được Gould và Lewontin dùng để châm biếm thói gán cho mọi đặc điểm một câu chuyện thích nghi.
+    loai: lich-su
+    nguon:
+      - gould1979
+    trich: The Panglossian paradigm (nhan đề)
+    vi_tri: Nhan đề; tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "…châm biếm thói quen gán cho mọi đặc điểm một câu chuyện thích nghi có lợi". Chữ mới: "dùng để châm biếm". Chỗ khó: chưa mở toàn văn; nguồn gốc nhân vật là kiến thức văn học. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pangloss: nhân vật Candide của Voltaire, được Gould và Lewontin dùng làm ẩn dụ châm biếm (đã có ở lượt 1).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gutenberg.org/cache/epub/19942/pg19942.txt", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5180405/" ]
+    luot_2_ghi_chu: Pangloss có trong Candide (Gutenberg).
+    review: dung
+  - id: n44
+    cau: 'Luận điểm cốt lõi: công dụng hiện tại không đồng nhất với lý do xuất hiện, và việc chỉ dựa vào "tính hợp lý" để chấp nhận một câu chuyện suy đoán bị tác giả phê phán.'
+    loai: phat-hien
+    nguon:
+      - gould1979
+    trich: its failure to distinguish current utility from reasons for origin
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "công dụng hiện tại không đồng nhất với nguồn gốc tiến hóa, và "nghe có vẻ hợp lý" không phải là bằng chứng". Chữ mới sát tóm tắt ("current utility" và "reasons for origin", "plausibility alone"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Gould & Lewontin (1979): "its failure to distinguish current utility from reasons for origin ... reliance upon plausibility alone as a criterion for accepting speculative tales".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+    review: dung
+  - id: n45
+    cau: 'Vững chắc: hành vi con người chịu ảnh hưởng của lịch sử tiến hóa.'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - openstax2e31
+      - gould1979
+    ly_do: 'Nguyên tắc nền: giáo trình mở OpenStax Psychology 2e mục 3.1 trình bày gen góp phần vào khuôn mẫu nhận thức và hành vi, và tâm lý học tiến hóa nghiên cứu những hiện tượng tâm lý có thể đã tiến hóa như thích nghi (gồm mate selection); Gould và Lewontin (người phê bình) "support Darwin''s own pluralistic approach". Khung nói "ảnh hưởng cụ thể nào, đến mức nào" là câu hỏi mở.'
+    nguon:
+      - openstax2e31
+      - gould1979
+      - buss1989
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "được kiểm chứng độc lập vô số lần trong sinh học... không nhà khoa học nghiêm túc nào tranh cãi điều này". Chữ mới: "được chấp nhận rộng rãi... Đồng thuận khoa học coi con người là sản phẩm của tiến hóa". Lý do: bỏ khẳng định mạnh không kiểm được. Chỗ khó: chưa mở giáo trình (OpenStax) để dẫn đúng chương. Review (Claude Sonnet 5.5, 10/11/2026): dung. Trước đây ly_do tự nhận "chưa mở giáo trình" và câu "Đồng thuận khoa học coi con người là sản phẩm của tiến hóa" không nguồn. Đã mở OpenStax 3.1 (bậc 2) và viết lại thân khung theo giáo trình, bỏ câu "đồng thuận" không nguồn. Vững chắc giữ ở mức nguyên tắc nền (đồng thuận giáo trình), không phải kết quả thực nghiệm về hành vi cụ thể.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/25985137/", "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://openstax.org/books/psychology-2e/pages/3-1-human-genetics" ]
+    luot_2_ghi_chu: Nhãn ở mức câu tổng quát (hành vi chịu ảnh hưởng tiến hóa) có phân tích tổng hợp lớn hỗ trợ; không đưa lên mức cho từng 'câu chuyện' cụ thể.
+    review: dung
+    trich: In both fields, it is understood that genes not only code for particular traits, but also contribute to certain patterns of cognition and behavior. // We support Darwin's own pluralistic approach to identifying the agents of evolutionary change.
+    vi_tri: OpenStax Psychology 2e, mục 3.1, hộp "Two Perspectives on Genetics and Behavior"; Gould & Lewontin, tóm tắt
+  - id: n46
+    cau: 'Khá vững: khác biệt giới trong sở thích bạn đời được nêu ra là có thật và xuyên văn hóa.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - buss1989
+      - walter2020
+      - eastwick2008
+      - eastwick2014
+    ly_do: 'Buss 1989 (37 mẫu) và Walter 2020 (14.399 người, 45 nước, tái lập có đăng ký trước, OSF) cùng chiều; nhưng mới có một tái lập lớn có đăng ký trước và chưa có phân tích tổng hợp hay hai tái lập như vậy; mẫu không đại diện; là sở thích nêu ra chứ không phải lựa chọn thực (Eastwick & Finkel 2008; Eastwick và cộng sự 2014). Khớp mục 4: nhiều nghiên cứu cùng chiều nhưng còn giới hạn.'
+    nguon:
+      - buss1989
+      - walter2020
+      - eastwick2008
+      - eastwick2014
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tái lập độc lập của Walter (2020, ..., đăng ký trước)... xem chip "bác bỏ" về khoảng cách giữa lời nói và lựa chọn thực". Chữ mới bỏ "đăng ký trước", nêu lý do "khá vững" và dẫn Eastwick & Finkel (2008), Eastwick và cộng sự (2014) trực tiếp. Lý do: không xác nhận được đăng ký trước; số 0,03 cũ sai. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khá vững hợp mục 4. Đã đọc toàn văn Walter: kế hoạch phân tích đăng ký trước (osf.io/726jc), nên lời trong thân khung đổi thành "mới có một tái lập lớn có đăng ký trước"; chưa đủ hai. Tóm tắt Eastwick 2014: chênh lệch giữa hai giới r = 0,03, không có ý nghĩa; đúng trên trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Walter 2020 là tái lập lớn nhưng một bài, mẫu nhiều nước vẫn thiên sinh viên; 'khá vững' là vừa mức.
+    review: dung
+  - id: n47
+    cau: 'Đang tranh cãi: từng "câu chuyện thích nghi" cụ thể có đúng không, và khác biệt giới do tiến hóa hay do xã hội.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - gould1979
+      - walter2020
+      - eagly1999
+    ly_do: 'Cùng dữ liệu, hai khung cạnh tranh (tiến hóa và vai trò xã hội) được kiểm chứng đối đầu trong cùng một nghiên cứu (Walter 2020), và chưa phân định được: bình đẳng giới chỉ dự báo tuổi bạn đời, không dự báo vững các khác biệt khác. Eagly & Wood chỉ đọc được nhan đề.'
+    nguon:
+      - gould1979
+      - walter2020
+      - eagly1999
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phụ nữ ít cơ hội kinh tế nên phải "kén" nguồn lực" và "Não có phải tập hợp mô-đun chuyên biệt hay hệ thống linh hoạt chung — vẫn đang tranh cãi". Chữ mới bỏ cả hai (không có nguồn); giữ vai trò xã hội và ý Walter 2020 (khoảng cách tuổi). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp mục 4 (hai khung cạnh tranh được kiểm đối đầu trong cùng một tái lập có đăng ký trước, kết quả lẫn lộn: tuổi bạn đời phù hợp lý thuyết vai trò xã hội, nhưng bình đẳng giới ít liên quan đến khác biệt giới trong sở thích và mầm bệnh không dự báo sở thích ngoại hình). Thân khung viết lại bám Walter (n50, n78); Eagly & Wood chỉ qua mô tả của Walter (mở bài: "biosocial role theory ... as an alternative explanation for the findings of Buss (1989)"), không mở được bài gốc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://pubmed.ncbi.nlm.nih.gov/23586697/", "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Hai vế đều đang tranh luận; đúng mức.
+    review: dung
+  - id: n48
+    cau: 'Đã bị bác bỏ: mọi đặc điểm tâm lý đều là thích nghi.'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - gould1979
+    ly_do: 'Nguyên tắc phương pháp, xét theo đồng thuận của giáo trình sinh học tiến hóa và bài của Gould & Lewontin: khẳng định "mọi đặc điểm đều là thích nghi" bị phản bác bằng các ví dụ ngược (sản phẩm phụ, trôi dạt) và không phải là điều tâm lý học tiến hóa chủ lưu nói. Khung đã tách nửa sau cũ (tiêu chuẩn nêu ra không bằng lựa chọn thực) vì chỉ có một nghiên cứu và một tổng quan, không đủ cho "bác bỏ" (theo bài học đợt 3–4: khung gộp hai ý theo ý yếu hơn).'
+    nguon:
+      - gould1979
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: khung "mọi đặc điểm tâm lý đều là thích nghi, và tiêu chuẩn nêu ra bằng lựa chọn thực tế", hai bác bỏ, (2) r ≈ 0,03. Chữ mới: chỉ ý 1; ý 2 chuyển sang khung Khá vững (n46). Lý do: ý 2 không đủ bằng chứng cho "đã bị bác bỏ", và r ≈ 0,03 sai. Cũng đổi "trôi dạt gen (thay đổi ngẫu nhiên)" thành "cố định ngẫu nhiên các alen" theo tóm tắt Gould & Lewontin. Review (Claude Sonnet 5.5, 10/11/2026): dung (sát ranh, nên người gom nhìn lại). Thước đo mục 4 hai nửa: "kiểm tra thất bại" và "bằng chứng gốc mất giá trị". Khẳng định phổ quát "mọi đặc điểm đều là thích nghi" bị phản bác bởi các ví dụ ngược (cố định ngẫu nhiên các alen, tương quan phát triển: tóm tắt Gould & Lewontin) hơn là bởi thí nghiệm; giữ nhãn vì phản chứng đủ để phủ nhận một khẳng định phổ quát. Đã bỏ câu "nguyên tắc phương pháp theo đồng thuận của giáo trình sinh học tiến hóa" (không nguồn) và thay bằng lý do phổ quát. Nếu muốn khắt khe, hạ xuống không nhãn như detox dopamine.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Mệnh đề phổ quát bị bác bằng phản ví dụ (sản phẩm phụ, trôi dạt).
+    review: dung
+  - id: n49
+    cau: Cố định ngẫu nhiên các alen (trôi dạt gen) và tương quan phát triển có thể tạo ra đặc điểm không thích nghi (Gould và Lewontin, 1979).
+    loai: phat-hien
+    nguon:
+      - gould1979
+    trich: random fixation of alleles, production of non-adaptive structures by developmental correlation with selected features (allometry, pleiotropy, material compensation, mechanically forced correlation)
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Chữ cũ của khung: "trôi dạt gen (genetic drift — thay đổi ngẫu nhiên) hoặc ràng buộc phát triển"; chữ mới sát tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Gould & Lewontin: random fixation of alleles, developmental correlation (allometry, pleiotropy...).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n50
+    cau: Phe vai trò xã hội (Eagly và Wood, 1999, theo cách Walter và cộng sự 2020 mô tả) thấy khác biệt giới là hệ quả của vai trò xã hội của hai giới.
+    loai: lich-su
+    nguon:
+      - walter2020
+      - eagly1999
+    trich: In 1999, Eagly and Wood proposed biosocial role theory ... as an alternative explanation for the findings of Buss (1989). Biosocial role theory locates the origin of sex differences in the contrasting roles men and women occupy in society.
+    vi_tri: Walter 2020, mục Cross-Cultural Variability in Sex Differences
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chỗ khó: Eagly & Wood chỉ đọc được nhan đề; "phe này coi là phù hợp" là diễn giải của trang, ghi theo cách Walter (2020) đặt hai khung đối đầu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Trước đây Eagly & Wood chỉ có nhan đề; nay xác nhận nội dung lý thuyết qua toàn văn Walter ("theo X kể lại"). Phần "khoảng cách tuổi thu hẹp khi bình đẳng giới tăng, phù hợp" chuyển sang n78.'
+    luot_2: dung
+    luot_2_nguon: [ "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf" ]
+    luot_2_ghi_chu: Mô tả Eagly & Wood 1999 lấy từ phần giới thiệu Walter 2020 (đọc bản tác giả); bài Eagly & Wood không mở được.
+    review: dung
+  - id: n51
+    cau: 'Chọn lọc tự nhiên (Darwin, 1859): cá thể có đặc điểm giúp sống sót và sinh sản tốt hơn truyền đặc điểm cho thế hệ sau nhiều hơn; qua nhiều thế hệ quần thể "vừa" dần với môi trường, như bàn tay vừa với găng.'
+    loai: dinh-nghia
+    nguon:
+      - buss1989
+      - gould1979
+    trich: Individuals lacking favored characteristics tend to become no one's ancestors
+    vi_tri: Buss, mục 1
+    ket_qua: dung
+    ghi_chu: Định nghĩa phổ thông; ẩn dụ "bàn tay và găng" là của trang. Chưa mở giáo trình.
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gutenberg.org/cache/epub/1228/pg1228.txt", "https://openstax.org/books/psychology-2e/pages/3-1-human-genetics" ]
+    luot_2_ghi_chu: Ẩn dụ 'găng tay' là của site.
+  - id: n52
+    cau: 'Chọn lọc giới tính (Darwin, 1871): đặc điểm giúp thắng trong cuộc đua sinh sản, hoặc quyến rũ bạn tình hoặc đánh bại đối thủ cùng giới, có thể lan rộng dù bất lợi cho sinh tồn; đây là nền tảng lý thuyết cho dự báo của Buss.'
+    loai: dinh-nghia
+    nguon:
+      - buss1989
+    trich: Predictions ... based on evolutionary conceptions of parental investment, sexual selection
+    vi_tri: Buss, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "(đuôi công), (sừng hươu)... nền tảng lý thuyết cho mọi dự báo của Buss". Chữ mới: "cho dự báo của Buss". Lý do: Buss dựa trên đầu tư của cha mẹ và chọn lọc giới tính, không "mọi" dự báo. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chọn lọc giới tính: định nghĩa phổ thông; "nền tảng lý thuyết cho dự báo của Buss" khớp Buss (tóm tắt nêu parental investment, sexual selection).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.gutenberg.org/cache/epub/2300/pg2300.txt" ]
+    luot_2_ghi_chu: Darwin dùng chim công làm ví dụ; 'nền tảng cho dự báo của Buss' đúng theo mục 1 của Buss.
+    review: dung
+  - id: n53
+    cau: 'Lý thuyết đầu tư của cha mẹ (Trivers, 1972): giới đầu tư sinh học nhiều hơn kén chọn bạn tình hơn; từ đó Buss suy ra nữ kén nguồn lực, nam kén dấu hiệu sinh sản, và dữ liệu 37 mẫu khớp dự báo.'
+    loai: lich-su
+    nguon:
+      - buss1989
+    trich: Trivers (1972) posits that sexual selection is driven in part by different levels of investment by males and females in their offspring
+    vi_tri: Buss, mục 1.1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "dữ liệu 37 nền văn hóa khớp dự báo". Chữ mới: "37 mẫu khớp dự báo" (đã nêu ở n10, n24, n25 mức khớp không đều). Review (Claude Sonnet 5.5, 10/11/2026): dung. Buss mục 1.1: Trivers (1972) "posits that sexual selection is driven in part by different levels of investment by males and females in their offspring". Trang gắn "theo Buss kể lại"? Không: trang nêu Trivers 1972 làm gốc, nguồn đọc là Buss; chấp nhận vì không có số liệu riêng của Trivers.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Buss dẫn Trivers 1972; bản gốc Trivers 1972 không mở.
+    review: dung
+  - id: n54
+    cau: 'Cách làm khoa học đúng: từ lý thuyết suy ra dự báo trước, kiểm chứng độc lập, tìm giải thích khác để loại trừ; Buss (1989) nêu năm dự báo từ lý thuyết trước rồi kiểm chứng ở nhiều mẫu, nhưng sự khớp không đều.'
+    loai: loi-khuyen
+    nguon:
+      - buss1989
+      - gould1979
+      - walter2020
+    trich: its unwillingness to consider alternatives to adaptive stories
+    vi_tri: Gould & Lewontin, tóm tắt; Buss tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Buss (1989) thực ra làm khá đúng quy trình này — vấn đề nằm ở hàng loạt nghiên cứu "ăn theo" thiếu kiểm chứng". Chữ mới bỏ nhận xét về "hàng loạt nghiên cứu ăn theo" (không kiểm được) và thêm 23/37 cho trinh tiết. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nguyên tắc phương pháp có hai chỗ dựa: Gould & Lewontin ("unwillingness to consider alternatives") và Walter 2020 (đăng ký trước kế hoạch phân tích để khắc phục khác biệt thiết kế); Buss nêu năm dự báo trước rồi kiểm ở nhiều mẫu (tóm tắt). Đã thêm Walter vào nguon.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n55
+    cau: WEIRD là Western, Educated, Industrialized, Rich, Democratic; phần lớn nghiên cứu tâm lý dùng mẫu phương Tây rồi khái quát cho "con người" (Henrich, Heine và Norenzayan, 2010).
+    loai: dinh-nghia
+    nguon:
+      - henrich2010
+    trich: Behavioral scientists routinely publish broad claims about human psychology and behavior in the world's top journals based on samples drawn entirely from Western, Educated, Industrialized, Rich, and Democratic (WEIRD) societies.
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "dùng sinh viên đại học phương Tây" (cụm "sinh viên" không có trong tóm tắt). Chữ mới: "mẫu phương Tây". Thân bài ghi lại như vậy. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Henrich, Heine & Norenzayan (2010): các mẫu lấy hoàn toàn từ xã hội WEIRD.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/20550733/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n56
+    cau: Buss (1989) đa dạng hơn mặt bằng chung nhưng mỗi mẫu trung bình chỉ ~272 người, cách lấy mẫu khác nhau giữa các nước và tác giả ghi mẫu không đại diện (nông thôn, ít học, thu nhập thấp ít có mặt).
+    loai: phat-hien
+    nguon:
+      - buss1989
+    trich: The samples obtained cannot be viewed as representative of the populations in each country. In general, rural, less-educated, and lower levels of socioeconomic status are underrepresented
+    vi_tri: Buss, mục 2.1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhiều mẫu là sinh viên/thuận tiện". Chữ mới theo lời tác giả. Lý do: Buss nói cách lấy mẫu khác nhau, không nói "sinh viên/thuận tiện". Review (Claude Sonnet 5.5, 10/11/2026): dung. Đối chiếu toàn văn Buss 1989 (PDF mở trên Cambridge Core, đọc lại ở review): "The samples ... cannot be viewed as representative", nông thôn, ít học, mức kinh tế xã hội thấp ít có mặt; mẫu trung bình 272; kỹ thuật lấy mẫu khác nhau giữa các nước; có ngoại lệ (Zulu, Gujarati...).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n57
+    cau: 'Tận dụng (exaptation, Gould): đặc điểm tiến hóa cho mục đích A có thể sau đó được tận dụng cho mục đích B; công dụng hiện tại có thể không liên quan đến "mục đích gốc".'
+    loai: dinh-nghia
+    nguon:
+      - gouldvrba1982
+    trich: features that now enhance fitness but were not built by natural selection for their current role. We propose that such features be called exaptations
+    vi_tri: Tóm tắt (Gould & Vrba 1982)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ có ví dụ "lông vũ tiến hóa để giữ ấm → sau dùng để bay": đã bỏ vì không có trong tóm tắt. Bài gốc là Gould & Vrba (1982); thêm vào nguồn (trước thiếu). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Gould & Vrba (1982): "exaptations"; trang đã bổ sung trích dẫn (Gould và Vrba, 1982) và mục Nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC5180405/" ]
+    luot_2_ghi_chu: Thuật ngữ do Gould và Vrba (1982) đặt; ghi 'Gould' ở trang là rút gọn.
+    review: dung
+  - id: n58
+    cau: 'Vững chắc (Áp dụng 1): "Tự nhiên" không có nghĩa là "đúng".'
+    loai: loi-khuyen
+    nguon:
+      - cohon2018
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ có tên "ngụy biện tự nhiên là tốt (naturalistic fallacy)". Chữ mới bỏ tên. Chỗ khó: câu suy luận không có nguồn thực nghiệm; người giao quyết có chấp nhận nhãn Vững chắc cho nguyên tắc đạo đức theo đồng thuận không. Review (Claude Sonnet 5.5, 10/11/2026): sai (nhãn). Chip Vững chắc đặt trên một nguyên tắc lập luận/đạo đức, không phải kết luận về tình trạng bằng chứng: không hợp mục 4 (ly_do cũ tự nhận không có nghiên cứu thực nghiệm). Đã bỏ chip (giữ id cũ), dẫn SEP "Hume''s Moral Philosophy" mục 5 (is/ought) và nói rõ đây là nguyên tắc lập luận. Không còn là câu loại nhan.'
+    luot_2: dung
+    luot_2_nguon: [ "https://plato.stanford.edu/entries/morality-biology/" ]
+    luot_2_ghi_chu: Luận điểm triết học (is-ought), không phải bằng chứng thực nghiệm; 'vững chắc' chấp nhận được ở nghĩa logic.
+    review: sai
+  - id: n59
+    cau: 'Giải thích nguồn gốc tiến hóa của một hành vi (ghen tuông, ngoại tình, bạo lực) không biện minh cho nó về mặt đạo đức: theo cách đọc phổ biến trong triết học đạo đức (định luật Hume), từ các tiền đề chỉ mô tả sự thật không suy ra được kết luận đạo đức; đây là nguyên tắc lập luận, không phải kết quả thực nghiệm.'
+    loai: loi-khuyen
+    nguon:
+      - gould1979
+      - cohon2018
+    trich: no ought-judgment may be correctly inferred from a set of premises expressed only in terms of 'is' ... This is usually thought to mean ... that no ethical or indeed evaluative conclusion whatsoever may be validly inferred from any set of purely factual premises.
+    vi_tri: Cohon, SEP "Hume's Moral Philosophy", mục 5
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: suy luận logic/đạo đức, nguồn chỉ gần; chưa tìm văn bản đạo đức học. Đã bỏ "naturalistic fallacy". Review (Claude Sonnet 5.5, 10/11/2026): sai (nguồn). Lượt 1 ghi "nguồn chỉ gần; chưa tìm văn bản đạo đức học" (Gould & Lewontin chỉ nói công dụng hiện tại khác lý do xuất hiện). Đã tìm SEP (Cohon): cách đọc thống trị thế kỷ 20 là không suy ra được kết luận đạo đức từ tiền đề chỉ mô tả; SEP cũng nói đoạn này gây nhiều tranh luận diễn giải: trang ghi "theo cách đọc phổ biến". Đã thêm câu trên trang và mục Nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://plato.stanford.edu/entries/morality-biology/" ]
+    luot_2_ghi_chu: Khớp.
+    review: sai
+  - id: n60
+    cau: 'Khá vững (Áp dụng 2): đừng nhầm "tiêu chuẩn miệng" với con người thật.'
+    loai: loi-khuyen
+    nguon:
+      - eastwick2008
+      - eastwick2014
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ của thân khung: "dữ liệu nói vậy (r ≈ 0,03)... hãy quan sát lựa chọn thực tế thay vì tin tuyệt đối vào danh sách tiêu chuẩn". Chữ mới: dẫn nghiên cứu hẹn hò tốc độ, bỏ r ≈ 0,03, và nói "có thể chú ý đến điều thật sự thu hút mình". Lý do: số cũ sai; lời khuyên nhẹ đi. Review (Claude Sonnet 5.5, 10/11/2026): sai (nhãn). Khá vững không hợp mục 4: điều trang nêu chỉ dựa trên một nghiên cứu hẹn hò tốc độ (Eastwick & Finkel 2008) và một tổng quan nói về chênh lệch giữa hai giới (ly_do cũ tự nhận chưa có tổng hợp riêng), không phải "nhiều nghiên cứu cùng chiều". Đã bỏ chip (giữ id cũ); thân mục vẫn nói rõ là một nghiên cứu. Không còn là câu loại nhan.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/", "https://pubmed.ncbi.nlm.nih.gov/23586697/" ]
+    luot_2_ghi_chu: "Hợp với 'khá vững': E14 còn cho biết lý tưởng dự báo tốt hơn ở một số bối cảnh."
+    review: sai
+  - id: n61
+    cau: 'Vững chắc (Áp dụng 3): đọc tin "khoa học chứng minh đàn ông/đàn bà là thế" bằng con mắt phê bình (hỏi mẫu là ai, đo lời nói hay hành vi, có giải thích khác không).'
+    loai: loi-khuyen
+    nguon:
+      - henrich2010
+      - gould1979
+      - eastwick2008
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: nhãn cho nguyên tắc phương pháp theo đồng thuận; chưa mở giáo trình (OpenStax Psychology 2e, chương phương pháp) để dẫn. Review (Claude Sonnet 5.5, 10/11/2026): sai (nhãn). Chip Vững chắc đặt trên ba câu hỏi phương pháp, không phải kết luận về bằng chứng; ly_do cũ tự nhận "chưa mở giáo trình". Đã bỏ chip (giữ id cũ). Nguồn Henrich 2010, Eastwick & Finkel 2008 và Gould & Lewontin 1979 đỡ từng câu hỏi (mẫu, lời nói và hành vi, giải thích khác). Không còn là câu loại nhan.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/20550733/", "https://pubmed.ncbi.nlm.nih.gov/18211175/", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Lời khuyên đọc phê phán có đủ chỗ dựa.
+    review: sai
+  - id: n62
+    cau: 'Ngay cả khi một khuynh hướng có gốc tiến hóa, văn hóa và lựa chọn cá nhân vẫn có thể định hình hành vi mạnh mẽ: các mẫu Trung Quốc đánh giá rất cao trinh tiết còn Thụy Điển coi là "không liên quan hay không quan trọng" trong cùng một nghiên cứu của Buss.'
+    loai: loi-khuyen
+    nguon:
+      - buss1989
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trinh tiết từng là "không thể thiếu" ở Trung Quốc nhưng "không quan trọng" ở Thụy Điển". Chữ mới theo Buss mục 3.5. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ trên trang: "văn hóa và lựa chọn cá nhân vẫn định hình phần lớn hành vi": "phần lớn" không có nguồn; đã đổi thành "có thể định hình hành vi mạnh mẽ". Chip Khá vững không hợp mục 4 (ly_do cũ: chỉ biến thiên trong dữ liệu Buss, không có tổng hợp): đã bỏ chip (giữ id cũ). Không còn là câu loại nhan.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf", "https://pubmed.ncbi.nlm.nih.gov/25985137/" ]
+    luot_2_ghi_chu: Biến thiên văn hóa lớn trong dữ liệu Buss; 'khuynh hướng, không định mệnh' đúng.
+    review: sai
+  - id: n63
+    cau: Việt Nam không có trong 37 mẫu của Buss (1989); danh sách mẫu gồm Trung Quốc, Đài Loan, Nhật Bản, Ấn Độ, Indonesia, Iran, Israel...; các con số 36/37, 37/37 không đến từ người Việt.
+    loai: lich-su
+    nguon:
+      - buss1989
+    trich: 'Table 1 (danh sách 37 mẫu): không có Việt Nam'
+    vi_tri: Buss, Bảng 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "37 nền văn hóa... 33 nước... mọi con số... đều chưa từng được kiểm chứng trên người Việt". Chữ mới: "37 mẫu", "không đến từ người Việt". Lý do: không khẳng định "chưa từng kiểm chứng" (có thể có nghiên cứu khác), chỉ nói về nghiên cứu này. Review (Claude Sonnet 5.5, 10/11/2026): dung. Bảng 1 Buss, các mẫu châu Á: Trung Quốc, Ấn Độ, Indonesia, Iran, Israel (Do Thái và Palestine), Nhật Bản, Đài Loan; không có Việt Nam. Đã đối chiếu toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n64
+    cau: 'Việt Nam có trong 45 quốc gia của nghiên cứu tái lập Walter (2020), bốn tác giả thuộc Đại học Quốc gia Hà Nội; nhưng người tham gia ở Việt Nam không ghi tuổi bạn đời nên Việt Nam không có trong phân tích tuổi; chúng tôi chưa tách riêng kết quả của mẫu Việt Nam.'
+    loai: lich-su
+    nguon:
+      - walter2020
+    trich: Participants did not indicate mate age in four countries (Bulgaria, Jordan, Vietnam, and Uruguay), and those countries were not included in age analyses.
+    vi_tri: Walter 2020, bản chấp nhận đăng, mục Method
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nhóm 4 nước (Bulgaria, Jordan, Uruguay, Việt Nam) không có số liệu tuổi bạn đời, bị loại khỏi phân tích tuổi. Đã bỏ (da-bo một phần) vì không xác nhận được ở nguồn mở được. Xem n31. Review (Claude Sonnet 5.5, 10/11/2026): sai (đã xác nhận được). Xem n31: đã mở toàn văn bản chấp nhận đăng; trang bỏ câu "chưa mở được toàn văn" và nêu đúng: Việt Nam có trong mẫu nhưng không vào phân tích tuổi.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1177/0956797620904154", "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf" ]
+    luot_2_ghi_chu: "Nay đã mở được toàn văn bản tác giả: Việt Nam có trong mẫu nhưng bị loại khỏi phân tích tuổi bạn đời; câu của site vẫn đúng."
+    review: sai
+  - id: n65
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu công bố nào kiểm chứng riêng các giả thuyết chọn bạn đời của Buss trên người Việt (có nghiên cứu khác về cảm nhận vẻ hấp dẫn khuôn mặt người Việt, 2023, nhưng không phải kiểm chứng này).
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Europe PMC ngày 10/11/2026 (OpenAlex bị giới hạn lượt): 16 kết quả cho "Vietnam* AND mate preferences", 48 cho "evolutionary psychology"; xem xét 5 kết quả đầu mỗi truy vấn, không có kiểm chứng riêng. Chữ cũ: "chưa tìm thấy nghiên cứu... kiểm chứng các giả thuyết tâm lý học tiến hóa trên người Việt" (rộng quá: có nghiên cứu về vẻ hấp dẫn khuôn mặt). Chữ mới thu hẹp và thêm mốc. Chưa tìm Google Scholar hay tạp chí trong nước. Chỗ chưa chắc: không đọc hết các kết quả. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu thời sự có mốc "Tính đến 11/2026", het_han và nguon (truy vấn Europe PMC đã mở); kiem_lai_truoc của bài lõi không áp dụng. Hạn chế đã ghi (chỉ xem 5 kết quả đầu mỗi truy vấn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&query=mate%20preferences%20Vietnam", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&query=Vietnamese%20facial%20attractiveness" ]
+    luot_2_ghi_chu: Câu 'chưa tìm thấy' tại ngày 2026-11-10; Việt Nam có mặt trong mẫu Walter 2020 nhưng đó không phải kiểm chứng riêng.
+    review: dung
+  - id: n66
+    cau: Chúng tôi chưa dẫn nghiên cứu nào về cách văn hóa và kinh tế Việt Nam định hình sở thích chọn bạn đời; nếu chúng có vai trò thì điều đó phù hợp với lập luận của phe vai trò xã hội, nhưng đó chỉ là suy đoán của chúng tôi, chưa có dữ liệu.
+    loai: phat-hien
+    nguon:
+      - walter2020
+    ket_qua: da-sua
+    ghi_chu: 'Suy luận đã ghi rõ là suy đoán. Chữ cũ: "cho thấy văn hóa và kinh tế định hình mạnh mẽ... đúng như phe vai trò xã hội lập luận". Chữ mới nói "có thể gợi ý", "chỉ là suy đoán". Nguồn Walter chỉ đặt hai khung đối đầu; không có dữ liệu Việt Nam về ba chuẩn mực này. Review (Claude Sonnet 5.5, 10/11/2026): sai (lượt 2: khong-chac). Ba "chuẩn mực" ("môn đăng hộ đối", con trai lập nghiệp trước khi cưới, con gái chịu áp lực lấy chồng sớm) là quan sát xã hội học không nguồn. Đã bỏ cả ba khỏi trang, giữ phần nói thẳng là suy đoán. Loại đổi từ loi-khuyen sang phat-hien (câu không khuyên điều gì).'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Câu là suy đoán tự ghi 'chưa có dữ liệu'; chuẩn mực 'môn đăng hộ đối' ở Việt Nam chưa có nguồn bậc 1-2 đã mở; lập luận Eagly & Wood thì có (Walter 2020).
+    review: sai
+  - id: n67
+    cau: '"Tiến hóa nghĩa là mọi đặc điểm đều có mục đích thích nghi" là sai: nhiều đặc điểm là sản phẩm phụ, kết quả ngẫu nhiên, hay bị ràng buộc bởi cấu trúc cơ thể.'
+    loai: phat-hien
+    nguon:
+      - gould1979
+    trich: We criticize this approach
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+  - id: n68
+    cau: '"Gen đã định thì không thay đổi được" sai: khuynh hướng tiến hóa là xác suất, không phải định mệnh; trong dữ liệu của Buss (1989), mức coi trọng trinh tiết biến thiên rất mạnh giữa các nền văn hóa, nên văn hóa có thể tác động mạnh lên điều ta coi trọng.'
+    loai: phat-hien
+    nguon:
+      - buss1989
+    trich: cultural differences, ecological differences, or mating system differences exert powerful effects on the value attached to chastity
+    vi_tri: Buss, mục 4 (trinh tiết)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Khuynh hướng tiến hóa là xác suất, không phải định mệnh... xã hội chấp nhận bạo lực vì ghen". Giữ nội dung chính, dựa vào biến thiên văn hóa trong dữ liệu Buss; phần "bạo lực vì ghen" là ví dụ minh họa, không phải phát hiện. Chỗ khó. Review (Claude Sonnet 5.5, 10/11/2026): sai (một vế). Câu cũ có "luật pháp, giáo dục tạo ra khác biệt giữa có khuynh hướng ghen và xã hội chấp nhận bạo lực vì ghen": lượt 1 tự nhận đó là ví dụ minh họa, không phải phát hiện; không nguồn. Đã bỏ, giữ phần có nguồn (Buss mục 4: văn hóa tác động mạnh lên giá trị gán cho trinh tiết).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf", "https://pubmed.ncbi.nlm.nih.gov/25985137/" ]
+    luot_2_ghi_chu: "Lời khuyên nêu đúng: khuynh hướng, không phải định mệnh."
+    review: sai
+  - id: n69
+    cau: '"Khoa học chứng minh đàn ông/đàn bà tự nhiên phải thế này" là sai: dữ liệu của chính Buss cho thấy biến thiên văn hóa lớn (trinh tiết).'
+    loai: phat-hien
+    nguon:
+      - buss1989
+    trich: chastity shows greater cross-cultural variability than any other rated variable in this study
+    vi_tri: Buss, mục 3.5
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "...là lạm dụng khoa học — và thường phục vụ định kiến có sẵn của người nói". Chữ mới: "là vượt quá dữ liệu". Lý do: nhận xét về động cơ của người nói không kiểm được. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Buss: trinh tiết biến thiên văn hóa hơn mọi biến chấm điểm khác.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n70
+    cau: '"Tâm lý học tiến hóa đã bị bác bỏ hoàn toàn" là sai: khung tiến hóa vẫn là khung để đặt câu hỏi, cái bị phê bình là thói kể chuyện thiếu kiểm chứng; các đợt kiểm chứng gần đây cho thấy một số kết quả của Buss vẫn đứng vững ở mức sở thích nêu ra.'
+    loai: phat-hien
+    nguon:
+      - walter2020
+      - gould1979
+    trich: Support for universal sex differences in preferences remains robust
+    vi_tri: Walter, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khung lý thuyết hữu ích... ngành biết tự sửa mình... đăng ký trước, dữ liệu mở, tái lập đa văn hóa như Walter 2020". Chữ mới bỏ đánh giá về ngành và "đăng ký trước, dữ liệu mở". Review (Claude Sonnet 5.5, 10/11/2026): dung. Walter 2020 (tóm tắt): "Support for universal sex differences in preferences remains robust"; câu giữ "ở mức sở thích nêu ra".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/32196435/", "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n71
+    cau: 'Quiz 1: spandrel theo Gould và Lewontin là sản phẩm phụ tất yếu của cấu trúc, không phải thích nghi, dù sau này có thể được tận dụng.'
+    loai: dinh-nghia
+    nguon:
+      - gould1979
+      - gouldvrba1982
+    trich: production of non-adaptive structures by developmental correlation with selected features
+    vi_tri: Gould & Lewontin, tóm tắt
+    ket_qua: dung
+    ghi_chu: Lời giải thích không dựa vào vị trí lựa chọn.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC5180405/", "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n72
+    cau: 'Quiz 2: các mẫu Trung Quốc đánh giá rất cao trinh tiết, Thụy Điển coi là không liên quan hay không quan trọng; chỉ 23/37 mẫu có khác biệt giới có ý nghĩa; nam chuộng ngoại hình (có ý nghĩa 34/37), nữ chuộng triển vọng tài chính (36/37).'
+    loai: so-lieu
+    nguon:
+      - buss1989
+    trich: chastity shows greater cross-cultural variability than any other rated variable in this study
+    vi_tri: Buss, mục 3.5
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: câu hỏi "KHÔNG mang tính phổ quát" với "không thể thiếu". Chữ mới đổi câu hỏi thành "biến thiên văn hóa nhiều nhất" và số liệu khớp n10, n22, n25. Lý do: các đáp án sai cũ ("đúng ở cả 37/37") không chính xác. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 2 khớp n10, n22, n25 (đối chiếu toàn văn Buss); lời giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E112ACEB2E7BC877805E3AC11ABC889/S0140525X00023992a.pdf/div-class-title-sex-differences-in-human-mate-preferences-evolutionary-hypotheses-tested-in-37-cultures-div.pdf" ]
+    luot_2_ghi_chu: Khớp; Trung Quốc nằm nhóm đánh giá cao.
+    review: dung
+  - id: n73
+    cau: 'Quiz 3: Eastwick và Finkel (2008): tiêu chuẩn nêu ra từ trước không dự báo được điều thật sự gây quan tâm với những người vừa gặp, và với người thật khác biệt giới không còn thấy; không có nghĩa Buss sai.'
+    loai: phat-hien
+    nguon:
+      - eastwick2008
+      - walter2020
+    trich: ideal preferences, assessed before the speed-dating event, failed to predict what inspired their actual desire at the event
+    vi_tri: Eastwick & Finkel, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Eastwick và cộng sự (2014) phát hiện... r ≈ 0,03... đo chuẩn mực văn hóa và tự hình ảnh". Chữ mới dẫn 2008 như n15, n36, n37, n40. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 3 khớp n15, n37; lời giải thích dẫn Walter 2020 ("sở thích nêu ra vẫn thấy lại"); không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18211175/" ]
+    luot_2_ghi_chu: Khớp.
+    review: dung
+  - id: n74
+    cau: 'Quiz 4: "nghe hợp lý" không phải bằng chứng: công dụng hiện tại không đồng nhất với nguồn gốc, và cần loại trừ giải thích khác; lời giải thích tiến hóa tốt phải dự báo trước và chịu kiểm chứng độc lập.'
+    loai: loi-khuyen
+    nguon:
+      - gould1979
+    trich: for its reliance upon plausibility alone as a criterion for accepting speculative tales; for its unwillingness to consider alternatives to adaptive stories
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: Lời giải thích không dựa vào vị trí lựa chọn.
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/42062/" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n75
+    cau: 'Đọc thêm: ba link tới trang gen-va-tinh-cach ("gen, môi trường và tính di truyền"), gan-bo (Phát triển; "một lý thuyết tiến hóa khác: gắn bó mẹ–con") và nao-che-doi ("thí nghiệm não chẻ và ngộ nhận ''não trái, não phải''").'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm: gen-va-tinh-cach và nao-che-doi có trang; link tới /psyche/kham-pha/phat-trien/gan-bo/ chưa có trang (trang chưa chuyển sang site mới, thuộc đợt sau). Ghi cho người giao: link sẽ hỏng cho đến khi có trang. Review (Claude Sonnet 5.5, 10/11/2026): sai (mô tả). Trang nao-che-doi nói về thí nghiệm não chẻ của Sperry và Gazzaniga và ngộ nhận "người não trái, não phải", không phải "não bộ không phải máy ghi hình trung thực". Đã sửa mô tả. gen-va-tinh-cach, nao-che-doi có trang; gan-bo có trong trang.yml, chưa chuyển nên thành "sắp có" (trang cũ có nói Bowlby và thích nghi tiến hóa: mô tả "một lý thuyết tiến hóa khác" đúng).'
+    review: sai
+  - id: n76
+    cau: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trên trang: có ::tom-tat; nhận định dựng từ các khung nhãn n45–n48. Review (Claude Sonnet 5.5, 10/11/2026): dung. Loại ve-site đúng; trang có ::tom-tat dưới frontmatter, dựng từ ý chính của bốn khung nhãn (n45–n48).'
+    review: dung
+  - id: n77
+    cau: Walter và cộng sự (2020) thu dữ liệu năm 2016 trực tiếp, ở cả sinh viên và cộng đồng, và đăng ký trước kế hoạch phân tích.
+    loai: phat-hien
+    nguon:
+      - walter2020
+    trich: Data were collected in 2016 from participants in 45 different countries (N = 14,399; 7,909 female, or 54.93%). All participant data were collected in person ... At each study site, data were collected from both university populations and community samples. // The analysis plan for this project was preregistered prior to data analyses.
+    vi_tri: "Walter 2020, bản chấp nhận đăng: mục Participants, Method; Open Practices"
+    ket_qua: dung
+    ghi_chu: 'Mới thêm ở review để thay cho vế "đăng ký trước, 2016" mà lượt 1 phải bỏ vì chỉ đọc được tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đọc toàn văn bản chấp nhận đăng (kho Đại học Louvain).'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf", "https://pubmed.ncbi.nlm.nih.gov/32196435/" ]
+    luot_2_ghi_chu: Bản tác giả (accepted version). Đăng ký trước là kế hoạch phân tích và biến dự báo, trước khi phân tích dữ liệu, không phải trước khi thu dữ liệu; câu trang viết 'kế hoạch phân tích' nên đúng.
+  - id: n78
+    cau: Trong nghiên cứu của Walter và cộng sự (2020), khoảng cách tuổi bạn đời thu hẹp khi bình đẳng giới tăng, phù hợp với lý thuyết vai trò xã hội; nhưng bình đẳng giới ít liên quan đến khác biệt giới trong sở thích, trái với dự báo của lý thuyết ấy, và mức lây nhiễm mầm bệnh cũng không dự báo được sở thích về ngoại hình, trái với một dự báo của phía tiến hóa.
+    loai: phat-hien
+    nguon:
+      - walter2020
+    trich: Consistent with biosocial role theory, our findings showed that the sex difference in age of partner decreased as gender equality increased. However, inconsistent with biosocial role theory, our results provided little support for a relationship between sex differences in mate preferences and gender equality. ... There was also no evidence of a relationship between pathogen prevalence and preferences for attractiveness, intelligence, and health.
+    vi_tri: "Walter 2020, bản chấp nhận đăng: mục Discussion"
+    ket_qua: dung
+    ghi_chu: 'Mới thêm ở review cho thân khung Đang tranh cãi (n47). Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu cuối của Walter: "our results failed to support the evolutionary prediction of Gangestad and Buss"; trang không nêu tên để khỏi thêm nguồn.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://repositorio.iscte-iul.pt/bitstream/10071/28991/1/article_73154.pdf", "https://pubmed.ncbi.nlm.nih.gov/32196435/" ]
+    luot_2_ghi_chu: Khớp phần Thảo luận. Bài có một ngoại lệ nhỏ (chỉ số GGGI và triển vọng tài chính) mà câu trang gói trong 'ít liên quan'.
+  - id: n79
+    cau: Giáo trình mở OpenStax Psychology 2e (mục 3.1) trình bày rằng gen góp phần vào các khuôn mẫu nhận thức và hành vi, và tâm lý học tiến hóa nghiên cứu những hiện tượng tâm lý có thể đã tiến hóa như thích nghi, trong đó có việc chọn bạn đời.
+    loai: dinh-nghia
+    nguon:
+      - openstax2e31
+    trich: Evolutionary psychologists study a variety of psychological phenomena that may have evolved as adaptations, including fear response, food preferences, mate selection, and cooperative behaviors.
+    vi_tri: OpenStax Psychology 2e, mục 3.1, hộp "Two Perspectives on Genetics and Behavior"
+    ket_qua: dung
+    ghi_chu: "Mới thêm ở review cho thân khung Vững chắc (n45). Review (Claude Sonnet 5.5, 10/11/2026): dung. Giáo trình mở bậc 2, đã mở đọc 10/11/2026."
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/3-1-human-genetics" ]
+    luot_2_ghi_chu: Đã mở mục 3.1 (Human Genetics), hộp 'Two Perspectives on Genetics and Behavior'.
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Eastwick và cộng sự (2014): tương quan r ≈ 0,03 giữa tiêu chuẩn nêu ra và sự thu hút'
+    moi: 'Eastwick và Finkel (2008): tiêu chuẩn nêu ra không dự báo sự quan tâm thật; r ≈ 0,03 chỉ là chênh lệch giữa hai giới ở mức dự báo của ngoại hình và triển vọng kiếm tiền (Eastwick và cộng sự, 2014)'
+    ly_do: 'Hồ sơ n15, n39: số 0,03 bị gán sai nghĩa.'
+  - cu: 32 phẩm chất
+    moi: 31 phẩm chất (18 chấm điểm, 13 xếp hạng)
+    ly_do: Hồ sơ n16.
+  - cu: '36/37 nền văn hóa; nam chuộng ngoại hình ở cả 37/37; ngoại lệ tham vọng: người Zulu; trinh tiết "không thể thiếu" ở Trung Quốc'
+    moi: 36/37 mẫu có ý nghĩa; 37/37 theo chiều, 34 có ý nghĩa; ba ngoại lệ tham vọng; Trung Quốc đánh giá rất cao, 23/37 mẫu có ý nghĩa
+    ly_do: Hồ sơ n10, n21–n25.
+  - cu: 'Walter 2020: đăng ký trước, mở dữ liệu, 2016; nhóm 4 nước không có số liệu tuổi, Việt Nam trong 45 nước'
+    moi: 'Bỏ các chi tiết không xác nhận được; Việt Nam: bốn tác giả thuộc ĐHQG Hà Nội'
+    ly_do: 'Hồ sơ n26, n31, n64: chỉ đọc được tóm tắt.'
+  - cu: Khung "mọi đặc điểm tâm lý đều là thích nghi, và tiêu chuẩn nêu ra bằng lựa chọn thực tế" (bác bỏ, r ≈ 0,03)
+    moi: Khung chỉ còn ý "mọi đặc điểm đều là thích nghi"; ý tiêu chuẩn nêu ra chuyển sang khung Khá vững
+    ly_do: Hồ sơ n48; theo bài học đợt 3–4 (khung gộp hai ý theo ý yếu hơn).
+  - cu: Câu hỏi quiz 2 "KHÔNG mang tính phổ quát"; quiz 3 về r ≈ 0,03
+    moi: Quiz 2 về biến thiên văn hóa của trinh tiết; quiz 3 về Eastwick và Finkel (2008)
+    ly_do: Hồ sơ n72, n73.
+  - cu: 'Mục Việt Nam: "chưa tìm thấy nghiên cứu... tâm lý học tiến hóa trên người Việt"'
+    moi: '"Tính đến 11/2026... kiểm chứng riêng các giả thuyết chọn bạn đời của Buss trên người Việt"'
+    ly_do: Hồ sơ n65.
+  - cu: 'Mục Walter: "Theo tóm tắt của bài ..."; "Việt Nam có mặt trong nghiên cứu này (bốn tác giả ...)"; mục Việt Nam: "Chúng tôi chưa mở được toàn văn bài này, nên không nói được dữ liệu Việt Nam được phân tích đến mức nào."'
+    moi: 'Thiết kế thêm "dữ liệu thu năm 2016, trực tiếp, ở cả sinh viên và cộng đồng; kế hoạch phân tích được đăng ký trước"; "Việt Nam có trong danh sách 45 nước"; mục Việt Nam: Việt Nam không có trong phân tích tuổi vì người tham gia không ghi tuổi bạn đời'
+    ly_do: "Review: đọc được toàn văn bản chấp nhận đăng của Walter 2020 (hồ sơ n26, n31, n64, n77)."
+  - cu: 'Khung Vững chắc: "Đồng thuận khoa học coi con người là sản phẩm của tiến hóa."'
+    moi: Dẫn Gould và Lewontin ("ủng hộ cách tiếp cận đa nguyên của chính Darwin") và OpenStax Psychology 2e mục 3.1
+    ly_do: 'Review, hồ sơ n45, n79: câu "đồng thuận" không nguồn.'
+  - cu: 'Khung Khá vững: "chưa có phân tích tổng hợp hay hai tái lập lớn có đăng ký trước"'
+    moi: '"mới có một tái lập lớn có đăng ký trước (Walter và cộng sự, 2020), chưa có phân tích tổng hợp hay hai tái lập như vậy"'
+    ly_do: "Review, hồ sơ n46: đã xác nhận Walter có đăng ký trước."
+  - cu: 'Khung Đang tranh cãi: "... khi bình đẳng giới tăng thì khoảng cách tuổi bạn đời thu hẹp (Walter 2020), điều phe này coi là phù hợp"'
+    moi: Nêu kết quả của Walter đủ hai chiều (tuổi bạn đời phù hợp lý thuyết vai trò xã hội; bình đẳng giới ít liên quan đến khác biệt giới trong sở thích; mầm bệnh không dự báo ngoại hình)
+    ly_do: Review, hồ sơ n47, n50, n78.
+  - cu: 'Khung Đã bị bác bỏ: "Đây là nguyên tắc phương pháp theo đồng thuận của giáo trình sinh học tiến hóa, nên khung này xếp đã bị bác bỏ ..."'
+    moi: '"Vì ... là một khẳng định phổ quát, chỉ cần có đặc điểm không phải thích nghi là nó sai, nên khung này xếp nó vào đã bị bác bỏ."'
+    ly_do: 'Review, hồ sơ n48: câu "đồng thuận của giáo trình" không nguồn.'
+  - cu: Chip nhãn ở bốn mục Áp dụng (Vững chắc, Khá vững, Vững chắc, Khá vững)
+    moi: 'Bỏ cả bốn chip (id tiêu đề giữ nguyên bằng { #id-cu }); mục 4: "định hình phần lớn hành vi" thành "có thể định hình hành vi mạnh mẽ"; mục 1 thêm câu về nguyên tắc lập luận (SEP, Hume)'
+    ly_do: Review, hồ sơ n58–n62.
+  - cu: 'Mục Việt Nam: "chuẩn mực môn đăng hộ đối, kỳ vọng con trai lập nghiệp trước khi cưới, con gái chịu áp lực lấy chồng sớm — có thể gợi ý ..."'
+    moi: '"chúng tôi chưa dẫn nghiên cứu nào về cách văn hóa và kinh tế Việt Nam định hình sở thích chọn bạn đời ... chỉ là suy đoán của chúng tôi"'
+    ly_do: Review, hồ sơ n66 (lượt 2 khong-chac).
+  - cu: 'Ngộ nhận Gen: "Con người có văn hóa, luật pháp, giáo dục — chính những thứ đó tạo ra khác biệt giữa có khuynh hướng ghen và xã hội chấp nhận bạo lực vì ghen"'
+    moi: '"Trong dữ liệu của Buss (1989), mức coi trọng trinh tiết biến thiên rất mạnh giữa các nền văn hóa: văn hóa có thể tác động mạnh lên điều ta coi trọng."'
+    ly_do: Review, hồ sơ n68.
+  - cu: 'Đọc thêm: nao-che-doi "não bộ không phải máy ghi hình trung thực"'
+    moi: "\"thí nghiệm não chẻ và ngộ nhận 'não trái, não phải'\""
+    ly_do: Review, hồ sơ n75.
+  - cu: 'Mở bài: "Mai ghen khi ..." không ghi là giả định; mục Tận dụng không dẫn nguồn; Nguồn thiếu Gould & Vrba'
+    moi: Thêm "Hai tình huống giả định."; "(Gould và Vrba, 1982)"; mục Nguồn thêm Gould & Vrba 1982, Cohon (SEP), OpenStax
+    ly_do: Review, hồ sơ n2, n57, n59, n45.

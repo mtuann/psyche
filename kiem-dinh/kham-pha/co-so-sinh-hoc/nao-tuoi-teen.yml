@@ -1,0 +1,894 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/co-so-sinh-hoc/nao-tuoi-teen
+trang: src/content/docs/kham-pha/co-so-sinh-hoc/nao-tuoi-teen.md
+nguon_cu: ../psyche-zero/docs/kham-pha/co-so-sinh-hoc/nao-tuoi-teen.md
+tang: loi
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d6-l2
+    ma_bam: sha256:2b2c8fbe11aa1aaf305f208ab61c501a1aa7b69efa2e34d37ddc188916ec7a02
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L2 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L2)
+      review: "Claude Opus 5.5 (agent review D6-L2, 10/11/2026)"
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d6-l2-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: gogtay2004
+    ten: 'Gogtay và cộng sự (2004), PNAS 101(21), 8174–8179: toàn văn (PDF của PNAS, bản lưu ở Wayback Machine)'
+    link: https://doi.org/10.1073/pnas.0402680101
+    toan_van: true
+  - id: galvan2006
+    ten: 'Galvan và cộng sự (2006), J Neurosci 26(25), 6885–6892: toàn văn (PDF của J Neurosci, bản lưu ở Wayback Machine)'
+    link: https://doi.org/10.1523/JNEUROSCI.1062-06.2006
+    toan_van: true
+  - id: gardner2005
+    ten: 'Gardner & Steinberg (2005), Dev Psychol 41(4), 625–635: tóm tắt (Europe PMC); số liệu từng nhóm tuổi theo mô tả của Steinberg (2008), chưa mở được toàn văn'
+    link: https://doi.org/10.1037/0012-1649.41.4.625
+    toan_van: false
+  - id: steinberg2008
+    ten: 'Steinberg (2008), Dev Rev 28(1), 78–106: toàn văn (bản PMC, lưu ở Wayback Machine)'
+    link: https://doi.org/10.1016/j.dr.2007.08.002
+    toan_van: true
+  - id: steinberg2008b
+    ten: 'Steinberg và cộng sự (2008), Dev Psychol 44(6), 1764–1778: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1037/a0012955
+    toan_van: true
+  - id: shulman2016
+    ten: 'Shulman và cộng sự (2016), Dev Cogn Neurosci 17, 103–117: toàn văn (PMC, truy cập mở)'
+    link: https://doi.org/10.1016/j.dcn.2015.12.010
+    toan_van: true
+  - id: steinberg2009
+    ten: 'Steinberg (2009), Annu Rev Clin Psychol 5, 459–485: tóm tắt (Europe PMC); toàn văn chưa mở được'
+    link: https://doi.org/10.1146/annurev.clinpsy.032408.153603
+    toan_van: false
+  - id: defoe2015
+    ten: 'Defoe và cộng sự (2015), Psychol Bull 141(1), 48–84: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/a0038088
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên Europe PMC (10/11/2026): "adolescent brain development Vietnamese MRI", "Vietnam adolescents reward sensitivity fMRI", "Vietnamese adolescents risk taking peer influence experiment": không có nghiên cứu chụp não phát triển ở vị thành niên Việt hay thí nghiệm ảnh hưởng của bạn bè lên mạo hiểm kiểu Gardner & Steinberg trên thiếu niên Việt (kết quả là nghiên cứu khác chủ đề, nghiên cứu y học hay khảo sát hành vi). Chưa tìm Google Scholar hay tạp chí trong nước'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=adolescent%20brain%20development%20Vietnamese%20MRI&format=json
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả: vỏ não trước trán trưởng thành muộn, hệ phần thưởng nhạy bén ở giữa tuổi teen; mô hình "mất cân bằng phát triển" đề xuất lời giải thích cho việc teen có thể hiểu nguy hiểm mà vẫn liều; khoa học nói gì về trách nhiệm của người chưa thành niên.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+      - steinberg2009
+    trich: The differing timetables of these changes make mid-adolescence a time of heightened vulnerability to risky and reckless behavior.
+    vi_tri: Steinberg 2008, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Mô tả (description). Chữ cũ: "Vỏ não trước trán hoàn thiện sau cùng, hệ phần thưởng nhạy bén nhất ở giữa tuổi teen — mô hình mất cân bằng phát triển giải thích vì sao teen hiểu nguy hiểm mà vẫn liều". Chữ mới: "trưởng thành muộn", "nhạy bén ở giữa tuổi teen", "đề xuất lời giải thích cho việc teen có thể hiểu nguy hiểm mà vẫn liều". Lý do: "hoàn thiện sau cùng" quá mạnh (Gogtay: thùy thái dương bên chín muộn nhất trên toàn vỏ não); "nhạy bén nhất" thì Shulman 2016 nói đỉnh có thể ở cuối tuổi teen; "giải thích" thành "đề xuất" vì mô hình còn bị phê bình. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "make mid-adolescence a time of heightened vulnerability"; mô tả đã dùng "đề xuất", "trưởng thành muộn".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pubmed.ncbi.nlm.nih.gov/19327037/", "https://pubmed.ncbi.nlm.nih.gov/16793895/" ]
+    review: dung
+  - id: n2
+    cau: 'Tự trải nghiệm: bạn 16 tuổi giải được bài toán khó, tranh luận sắc sảo, nhưng tối thứ Bảy nhận lời thách đố lạng lách khi có đám bạn hò reo, dù biết nguy hiểm.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: The fact that adolescents are knowledgeable, logical, reality-based, and accurate in the ways in which they think about risky activity – or, at least, as knowledgeable, logical, reality-based, and accurate as their elders – but engage in higher rates of risky behavior than adults
+    vi_tri: Steinberg 2008, Introduction (dẫn Reyna & Farley 2006)
+    ket_qua: dung
+    ghi_chu: Tình huống giả định (gia-dinh); khớp mô tả của Steinberg 2008 về teen hiểu biết nhưng mạo hiểm.
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: Ví dụ giả định, nhất quán với nguồn.
+  - id: n3
+    cau: Theo mô hình "hai hệ thống" của Steinberg, hệ phần thưởng nhạy cảm cao vào khoảng giữa tuổi teen, còn hệ kiểm soát ở vỏ não trước trán tiếp tục trưởng thành đến tận đầu hay giữa tuổi đôi mươi; sự có mặt của bạn bè đạp thêm vào "chân ga".
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+      - shulman2016
+    trich: self-regulatory competence, which occurs gradually and is not complete until the mid-20s, makes mid-adolescence a time of heightened vulnerability
+    vi_tri: 'Steinberg 2008, mục Introduction; Shulman 2016: "cognitive control increase gradually and linearly throughout adolescence and into the early 20s"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Não tuổi teen không hỏng — nó đang lệch nhịp. … hệ phần thưởng đạt đỉnh nhạy cảm vào giữa tuổi teen, trong khi hệ kiểm soát … phải đến đầu tuổi đôi mươi mới hoàn thiện." Chữ mới: "Theo mô hình hai hệ thống của Steinberg, …; nhạy cảm cao vào khoảng giữa tuổi teen …; tiếp tục trưởng thành đến tận đầu hay giữa tuổi đôi mươi". Lý do: nêu rõ đây là mô hình; Steinberg 2008 nói "mid-20s", Shulman 2016 nói "early 20s". Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "not complete until the mid-20s"; Shulman 2016 "into the early 20s" (lượt 2 đọc). Trang ghi "đầu hay giữa tuổi đôi mươi".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: Mô hình 'dual systems' của Steinberg (Shulman 2016 xác nhận).
+    review: dung
+  - id: n4
+    cau: 'Từ khoảng 10 tuổi đến đầu tuổi đôi mươi, não bộ trải qua nhiều thay đổi cấu trúc, trong đó có hai quá trình được nói tới nhiều: tỉa synap và myelin hóa.'
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+      - steinberg2008
+    trich: Studies of GM maturation show a loss in cortical GM density over time (15, 16), which temporally correlates with postmortem findings of increased synaptic pruning during adolescence and early adulthood (17–19).
+    vi_tri: Gogtay 2004, mục Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "não bộ trải qua đợt đại tu lớn thứ hai trong đời (sau giai đoạn sơ sinh), gồm hai quá trình song song". Chữ mới: "nhiều thay đổi cấu trúc, trong đó có hai quá trình được nói tới nhiều". Lý do: "đợt đại tu lớn thứ hai trong đời" không có trong nguồn đã mở. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở): câu trích ở Introduction khớp. "đại tu lớn thứ hai" đã bỏ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC3621648/" ]
+    luot_2_ghi_chu: Tổng quan bậc 2 vừa phải (Arain 2013, Neuropsychiatr Dis Treat); 'từ khoảng 10 tuổi' theo mốc dậy thì.
+    review: dung
+  - id: n5
+    cau: Việc chất xám vỏ não giảm dần trên MRI có thể một phần do tỉa synap (Gogtay và cộng sự đoán); đây là một phần của phát triển bình thường.
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+    trich: We speculate that it may be driven at least partially by the process of synaptic pruning (43) together with trophic glial and vascular changes and/or cell shrinkage (44).
+    vi_tri: Gogtay 2004, Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Tỉa synap: não loại bỏ bớt các kết nối thần kinh ít được dùng để tinh chỉnh mạng lưới … Chất xám giảm dần theo một làn sóng từ phía sau ra phía trước, và vỏ não trước trán … hoàn thiện sau cùng." Chữ mới: nói rõ đó là suy đoán của các tác giả ("speculate"), thêm thứ tự giảm chất xám theo nguồn. Lý do: Gogtay nói nguyên nhân "unknown", suy đoán một phần do tỉa synap. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở), Discussion: "the primary cause for loss of GM density is unknown. We speculate that it may be driven at least partially by the process of synaptic pruning (43) together with trophic glial and vascular changes and/or cell shrinkage". Lượt 2 không mở được toàn văn; review xác nhận.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/" ]
+    luot_2_ghi_chu: Cần toàn văn PNAS để xác nhận 'Gogtay đoán một phần do tỉa synap'. PMC và PNAS chặn tải tự động (kiểm tra trình duyệt, 403); chưa mở được.
+    review: dung
+  - id: n6
+    cau: 'Chất xám giảm theo thứ tự: vùng cảm giác–vận động và thị giác bậc thấp trước, vùng liên kết bậc cao sau; trong thùy trán, vỏ não trước trán lưng–bên mất chất xám muộn nhất, vào cuối tuổi vị thành niên.'
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+    trich: Frontal and occipital poles lose GM early, and in the frontal lobe, the GM maturation ultimately involves the dorsolateral prefrontal cortex, which loses GM only at the end of adolescence.
+    vi_tri: Gogtay 2004, Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chất xám giảm dần theo một làn sóng từ phía sau ra phía trước, và vỏ não trước trán là nơi hoàn thiện sau cùng." Chữ mới như trên. Lý do: cực trán mất chất xám sớm (ngoại lệ của "từ sau ra trước"); trên toàn vỏ não vùng chín muộn nhất là thùy thái dương bên. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở), Results: "Frontal and occipital poles lose GM early, and in the frontal lobe, the GM maturation ultimately involves the dorsolateral prefrontal cortex, which loses GM only at the end of adolescence"; tóm tắt: "higher-order association cortices mature only after lower-order somatosensory and visual cortices". Khớp.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/" ]
+    luot_2_ghi_chu: Nửa đầu khớp tóm tắt; 'vỏ não trước trán lưng–bên mất chất xám muộn nhất, cuối tuổi vị thành niên' cần toàn văn, chưa mở được.
+    review: dung
+  - id: n7
+    cau: 'Myelin hóa: các sợi thần kinh được bọc myelin giúp tín hiệu truyền nhanh và ổn định hơn; quá trình này kéo dài sang thập niên thứ hai của đời và có thể còn lâu hơn.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+      - gogtay2004
+    trich: myelination is ongoing well into the second decade of life and perhaps beyond
+    vi_tri: 'Steinberg 2008, mục về vỏ não trước trán; Gogtay 2004: "the dorsolateral prefrontal cortex matures last, coinciding with its later myelination"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Quá trình này cũng kéo dài đến đầu tuổi trưởng thành, hoàn thiện muộn nhất ở các vùng trán." Chữ mới: "kéo dài sang thập niên thứ hai của đời và có thể còn lâu hơn (Steinberg 2008); vỏ não trước trán lưng–bên chín muộn, trùng với myelin hóa muộn hơn (Gogtay 2004)". Lý do: bám nguồn; Steinberg còn nói tỉa synap ở vỏ não trước trán chủ yếu hoàn tất vào giữa tuổi teen. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "myelination is ongoing well into the second decade of life and perhaps beyond"; Gogtay 2004: "the dorsolateral prefrontal cortex matures last, coinciding with its later myelination". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC3621648/" ]
+    luot_2_ghi_chu: "'Có thể còn lâu hơn': Arain nêu đến 24 tuổi."
+    review: dung
+  - id: n8
+    cau: Theo mô hình của Steinberg (2008), hệ cảm xúc–xã hội — gồm hạnh nhân và nhân accumbens — trở nên nhạy với phần thưởng quanh tuổi dậy thì, liên quan tái cấu trúc hệ dopamine.
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: Risk-taking increases between childhood and adolescence as a result of changes around the time of puberty in the brain's socio-emotional system leading to increased reward-seeking, especially in the presence of peers, fueled mainly by a dramatic remodeling of the brain's dopaminergic system.
+    vi_tri: 'Steinberg 2008, tóm tắt; Introduction: "Key nodes of these networks comprise the amygdala, nucleus accumbens, orbitofrontal cortex, medial prefrontal cortex, and superior temporal sulcus"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hệ limbic — cụm cấu trúc sâu trong não phụ trách cảm xúc và phần thưởng, nổi bật là nhân accumbens — lại trở nên nhạy cảm bất thường với phần thưởng vào giữa tuổi teen, một phần do sự tái cấu trúc mạnh mẽ của hệ dopamine quanh tuổi dậy thì." Chữ mới: "theo mô hình của Steinberg (2008), hệ cảm xúc–xã hội — gồm các cấu trúc như hạnh nhân và nhân accumbens — … liên quan đến sự tái cấu trúc …". Lý do: thuật ngữ "limbic" không dùng trong nguồn (dùng "socio-emotional system"); "bất thường", "một phần do" mạnh hơn nguồn ("fueled mainly by"). Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "Key nodes of these networks comprise the amygdala, nucleus accumbens, orbitofrontal cortex, medial prefrontal cortex, and superior temporal sulcus"; tóm tắt: "fueled mainly by a dramatic remodeling of the brain''s dopaminergic system". Lượt 2 không mở được toàn văn; review xác nhận.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: Tóm tắt Steinberg 2008 khớp ý chính; việc nêu 'hạnh nhân và nhân accumbens' nằm trong toàn văn (PMC chặn tải tự động), chưa mở được. Shulman 2016 chỉ nói 'dopamine-rich limbic regions', 'ventral striatum'.
+    review: dung
+  - id: n9
+    cau: 'Kết quả là một sự lệch pha về thời gian: độ nhạy với phần thưởng tăng cao ở giữa tuổi teen khi khả năng tự kiểm soát còn đang tiếp tục trưởng thành.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+      - steinberg2008b
+    trich: The differing timetables of these changes – the increase in reward-seeking, which occurs early and is relatively abrupt, and the increase in self-regulatory competence, which occurs gradually and is not complete until the mid-20s
+    vi_tri: Steinberg 2008, Introduction
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "khả năng bị kích thích bởi phần thưởng lên đến đỉnh điểm đúng lúc khả năng tự kiểm soát còn đang dang dở". Chữ mới: "độ nhạy với phần thưởng tăng cao … còn đang tiếp tục trưởng thành". Lý do: nói "tăng cao", không nói "đỉnh điểm" (Shulman 2016 nói đỉnh có thể ở cuối tuổi teen). Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): câu trích khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pubmed.ncbi.nlm.nih.gov/16793895/" ]
+    review: dung
+  - id: n10
+    cau: 'Gogtay và cộng sự (2004): nhóm NIMH chụp MRI 13 trẻ khỏe mạnh, mỗi 2 năm trong 8–10 năm (từ 4 đến 21 tuổi), tổng cộng 52 lượt chụp, dựng thành "phim" time-lapse về chất xám vỏ não.'
+    loai: so-lieu
+    nguon:
+      - gogtay2004
+    trich: Thirteen healthy children for whom anatomic brain MRI scans were obtained every 2 years, for 8–10 years, were studied.
+    vi_tri: 'Gogtay 2004, tóm tắt; Bảng 1: "Total no. of scans 52"'
+    ket_qua: dung
+    ghi_chu: 'Trang thêm "tổng cộng 52 lượt chụp" (Bảng 1). "NIMH" theo mục Discussion: "referral bias of the National Institute of Mental Health study". Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở): tóm tắt "Thirteen healthy children … every 2 years, for 8–10 years"; Bảng 1 và Discussion "These analyses are based on 52 scans"; Methods "recruited from the community for an ongoing National Institute of Mental Health study". Khớp.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/" ]
+    luot_2_ghi_chu: Khớp 13 trẻ, mỗi 2 năm, 8–10 năm, 4–21 tuổi. 'Tổng cộng 52 lượt chụp' và 'nhóm NIMH' không có trong tóm tắt; toàn văn chưa mở được.
+    review: dung
+  - id: n11
+    cau: Các vùng liên kết bậc cao chín muộn hơn các vùng cảm giác–vận động và thị giác bậc thấp mà chúng tích hợp; các vùng cổ xưa hơn chín trước các vùng mới hơn.
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+    trich: (i) higher-order association cortices mature only after lower-order somatosensory and visual cortices, the functions of which they integrate, are developed, and (ii) phylogenetically older brain areas mature earlier than newer ones.
+    vi_tri: Gogtay 2004, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/" ]
+  - id: n12
+    cau: Trên toàn vỏ não, thùy thái dương bên là vùng chín muộn nhất; cực trán và cực chẩm mất chất xám sớm.
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+    trich: Similar to the frontal pole, the occipital pole matured early. Lateral temporal lobes were the last to mature.
+    vi_tri: Gogtay 2004, Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Câu thêm khi sửa n6 (chữ cũ: "vỏ não trước trán … hoàn thiện cuối cùng"). Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở), Discussion: "Similar to the frontal pole, the occipital pole matured early. Lateral temporal lobes were the last to mature." Khớp.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/" ]
+    luot_2_ghi_chu: Chi tiết 'thùy thái dương bên chín muộn nhất; cực trán và cực chẩm mất chất xám sớm' nằm trong toàn văn Gogtay 2004 (chưa mở được), không có trong tóm tắt.
+    review: dung
+  - id: n13
+    cau: 'Giới hạn của Gogtay và cộng sự: chỉ 13 trẻ, IQ trung bình khoảng 125, mẫu không đại diện (thiên lệch lựa chọn do nghiên cứu của NIMH); chất xám trên MRI là thước đo gián tiếp.'
+    loai: so-lieu
+    nguon:
+      - gogtay2004
+    trich: These analyses are based on 52 scans, in which 1,976 anatomical models were created, giving sufficient power to track change, but are from only 13 children. In addition, this is a nonrepresentative population with an average IQ of 125
+    vi_tri: Gogtay 2004, Discussion; Bảng 1 (IQ 125,8 ± 12,7)
+    ket_qua: dung
+    ghi_chu: 'Câu thêm vào trang. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở), Discussion: "from only 13 children. In addition, this is a nonrepresentative population with an average IQ of 125, reflecting a referral bias of the National Institute of Mental Health study"; Bảng 1: IQ 125,8 ± 12,7. Khớp.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/" ]
+    luot_2_ghi_chu: Chỉ 13 trẻ khớp. IQ trung bình ~125 và 'thiên lệch lựa chọn' cần toàn văn, chưa mở được.
+    review: dung
+  - id: n14
+    cau: Galvan và cộng sự (2006) quét fMRI 41 người — 16 trẻ em 7–11 tuổi, 13 vị thành niên 13–17 tuổi, 12 người lớn 23–29 tuổi — làm nhiệm vụ có phần thưởng với các mức giá trị khác nhau; 37 người (13, 12, 12) có dữ liệu để phân tích sau khi loại 4 người cử động quá mức.
+    loai: so-lieu
+    nguon:
+      - galvan2006
+    trich: Sixteen children (seven females; aged 7–11, with mean age of 9.8 years), 13 adolescents (six females; aged 13–17, with mean age of 16 years), and 12 right-handed healthy adults (six females; aged 23–29, with mean age of 25 years) participated in the fMRI experiment. … Three children and one adolescent were excluded from the analysis due to excessive motion
+    vi_tri: Galvan 2006, Materials and Methods, "Participants"; tóm tắt "Thirty-seven participants (7–29 years of age)"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "quét não của 37 người — 16 trẻ em, 13 vị thành niên và 12 người lớn". Chữ mới: "41 người (16, 13, 12), 37 người có dữ liệu phân tích (13, 12, 12)". Lý do: 16+13+12 = 41, không phải 37; 37 là số người sau khi loại 4 người cử động quá mức. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Galvan 2006 (PDF của J Neurosci, bản lưu Wayback 28/10/2026; bài truy cập mở), Participants: "Sixteen children (… aged 7–11 …), 13 adolescents (… aged 13–17 …), and 12 … adults (… aged 23–29 …) participated in the fMRI experiment"; "Three children and one adolescent were excluded from the analysis due to excessive motion". 41 quét, 37 phân tích (13, 12, 12): đúng. Tóm tắt viết "Thirty-seven participants … were scanned", lệch nhẹ với Methods; trang theo Methods.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16793895/", "https://api.crossref.org/works/10.1523/jneurosci.1062-06.2006" ]
+    luot_2_ghi_chu: 37 người 7–29 tuổi khớp tóm tắt. Phân nhóm (16/13/12 và 13/12/12) và 4 người bị loại do cử động cần toàn văn; PMC/jneurosci chặn tải tự động.
+    review: dung
+  - id: n15
+    cau: Ở vị thành niên, nhân accumbens hoạt động mạnh hơn cả trẻ em lẫn người lớn; hoạt động giống người lớn về mức lan rộng và độ nhạy với giá trị phần thưởng, nhưng biên độ bị phóng đại.
+    loai: phat-hien
+    nguon:
+      - galvan2006
+    trich: Accumbens activity in adolescents looked like that of adults in both extent of activity and sensitivity to reward values, although the magnitude of activity was exaggerated.
+    vi_tri: Galvan 2006, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "mức độ phản ứng đã như người lớn nhưng biên độ thì phóng đại". Chữ mới: "giống người lớn về mức lan rộng và độ nhạy với giá trị phần thưởng, nhưng biên độ bị phóng đại" (bám tóm tắt). Phần "mạnh hơn cả trẻ em lẫn người lớn": tóm tắt "exaggerated accumbens activity, relative to prefrontal activity in adolescents, compared with children and adults". Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Galvan 2006 (PDF của J Neurosci, bản lưu Wayback 28/10/2026; bài truy cập mở): tóm tắt "Accumbens activity in adolescents looked like that of adults in both extent of activity and sensitivity to reward values, although the magnitude of activity was exaggerated".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16793895/" ]
+    luot_2_ghi_chu: "Tóm tắt: 'exaggerated accumbens activity ... in adolescents, compared with children and adults'."
+    review: dung
+  - id: n16
+    cau: Mức lan rộng của hoạt động ở vỏ não ổ mắt ở vị thành niên giống trẻ em hơn là người lớn.
+    loai: phat-hien
+    nguon:
+      - galvan2006
+    trich: In contrast, the extent of orbital frontal cortex activity in adolescents looked more like that of children than adults, with less focal patterns of activity.
+    vi_tri: Galvan 2006, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "vỏ não ổ mắt … ở vị thành niên lại hoạt động giống trẻ em hơn là người lớn". Chữ mới: "mức lan rộng của hoạt động ở vỏ não ổ mắt … giống trẻ em hơn". Lý do: bám chữ "extent of activity" của tóm tắt. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Galvan 2006 (PDF của J Neurosci, bản lưu Wayback 28/10/2026; bài truy cập mở): "the extent of orbital frontal cortex activity in adolescents looked more like that of children than adults".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16793895/" ]
+    review: dung
+  - id: n17
+    cau: Các tác giả cho rằng hệ thống dưới vỏ đang chín bị kích hoạt quá mức so với hệ thống kiểm soát từ trên xuống chín muộn hơn, khiến vị thành niên nghiêng về lợi ích trước mắt; đây là một nghiên cứu nhỏ, cắt ngang.
+    loai: phat-hien
+    nguon:
+      - galvan2006
+    trich: These findings suggest that maturing subcortical systems become disproportionately activated relative to later maturing top-down control systems, biasing the adolescent's action toward immediate over long-term gains.
+    vi_tri: Galvan 2006, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Các tác giả kết luận: …". Chữ mới: "Các tác giả cho rằng …" và thêm nhận xét về quy mô và thiết kế (so sánh nhóm tuổi khác nhau, không theo dõi dọc). Lý do: tóm tắt dùng "suggest". Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Galvan 2006 (PDF của J Neurosci, bản lưu Wayback 28/10/2026; bài truy cập mở): "These findings suggest that maturing subcortical systems become disproportionately activated relative to later maturing top–down control systems".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16793895/" ]
+    luot_2_ghi_chu: "37 người, cắt ngang: 'nghiên cứu nhỏ'."
+    review: dung
+  - id: n18
+    cau: 'Gardner và Steinberg (2005): 306 người trong ba nhóm tuổi 13–16, 18–22, từ 24 trở lên; mỗi người làm một nhiệm vụ lái xe trên máy tính một mình hoặc có hai bạn cùng tuổi, chia ngẫu nhiên.'
+    loai: so-lieu
+    nguon:
+      - gardner2005
+      - steinberg2008
+    trich: In this study, 306 individuals in 3 age groups--adolescents (13-16), youths (18-22), and adults (24 and older)--completed 2 questionnaire measures assessing risk preference and risky decision making, and 1 behavioral task measuring risk taking. Participants in each age group were randomly assigned to complete the measures either alone or with 2 same-aged peers.
+    vi_tri: 'Gardner & Steinberg 2005, tóm tắt; Steinberg 2008: "a video driving game … the longer they drive, the more points they earn but that if the car crashes into the wall, all the points that have been accumulated are lost"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thiết kế trò chơi lái xe trên máy tính ("Chicken"): người chơi cố đi xa nhất có thể mà không đâm vào tường. Ba nhóm tuổi … mỗi nhóm chơi trong hai điều kiện: một mình hoặc có hai bạn cùng tuổi ngồi xem". Chữ mới: thêm cỡ mẫu 306, "chia ngẫu nhiên"; bỏ tên "Chicken". Lý do: tên trò chơi không có trong nguồn đã mở (Steinberg 2008 mô tả là "video driving game"); "ngồi xem" bỏ vì tóm tắt chỉ nói "with 2 same-aged peers". Tên Margo Gardner theo Crossref. Review (Claude Opus 5.5, 10/11/2026): dung. Tóm tắt Gardner & Steinberg 2005 (Europe PMC): 306 người, ba nhóm tuổi, chia ngẫu nhiên một mình hay với 2 bạn cùng tuổi. Mô tả trò chơi theo Steinberg 2008 (toàn văn). Khớp; tên "Chicken" đã bỏ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16060809/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3075496/" ]
+    review: dung
+  - id: n19
+    cau: Khi chơi một mình, mức liều lĩnh của cả ba nhóm tuổi tương đương nhau; khi có bạn bè, nhóm 13–16 liều gấp đôi, nhóm 18–22 liều hơn khoảng 50%, người lớn không thay đổi.
+    loai: so-lieu
+    nguon:
+      - steinberg2008
+      - gardner2005
+    trich: When subjects were alone, levels of risky driving were comparable across the three age groups. However, the presence of friends doubled risk-taking among the adolescents, increased it by fifty percent among the youths, but had no effect on the adults
+    vi_tri: Steinberg 2008, mục về bạn bè (tóm lược bài Gardner & Steinberg 2005)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Khi chơi một mình, cả ba nhóm liều lĩnh ngang nhau — bằng chứng cho thấy teen không phải lúc nào cũng bốc đồng hơn người lớn." Chữ mới: "Theo mô tả của Steinberg (2008) về nghiên cứu này, …". Lý do: số liệu lấy từ bài của chính Steinberg (tác giả) mô tả, chưa mở toàn văn Gardner 2005. Tóm tắt của Gardner 2005 còn nói rủi ro và quyết định rủi ro giảm theo tuổi nói chung: không mâu thuẫn nhưng nên nêu. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "When subjects were alone, levels of risky driving were comparable across the three age groups. However, the presence of friends doubled risk-taking among the adolescents, increased it by fifty percent among the youths, but had no effect on the adults". Lượt 2 không mở được; review xác nhận. Trang ghi "Theo mô tả của Steinberg (2008)".'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16060809/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3075496/" ]
+    luot_2_ghi_chu: Chiều khớp (thanh thiếu niên nhiều nhất, người lớn không đổi; một mình thì tương đương, theo Chein 2011). 'Gấp đôi' và '50%' là số cụ thể, tóm tắt Gardner & Steinberg không nêu; toàn văn chưa mở được (bản mở chặn).
+    review: dung
+  - id: n20
+    cau: Bài gốc kết luận sự có mặt của bạn bè làm tăng liều lĩnh, hiệu ứng mạnh hơn ở tuổi teen và thanh niên so với người lớn.
+    loai: phat-hien
+    nguon:
+      - gardner2005
+    trich: participants took more risks, focused more on the benefits than the costs of risky behavior, and made riskier decisions when in peer groups than alone; and (c) peer effects on risk taking and risky decision making were stronger among adolescents and youths than adults.
+    vi_tri: Gardner & Steinberg 2005, tóm tắt
+    ket_qua: dung
+    ghi_chu: Thay câu cũ "Đây là một trong những minh chứng thực nghiệm rõ ràng nhất …" (nhận xét không kiểm được).
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16060809/" ]
+  - id: n21
+    cau: 'Steinberg (2008): hành vi mạo hiểm tăng từ tuổi thơ lên tuổi teen vì hệ cảm xúc–xã hội thay đổi quanh tuổi dậy thì; rồi giảm về tuổi trưởng thành vì hệ kiểm soát nhận thức cải thiện khả năng tự điều chỉnh, chưa hoàn tất cho đến giữa tuổi đôi mươi.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: Risk-taking declines between adolescence and adulthood because of changes in the brain's cognitive control system – changes which improve individuals' capacity for self-regulation.
+    vi_tri: Steinberg 2008, tóm tắt; Introduction ("not complete until the mid-20s")
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hệ cảm xúc–xã hội "chín" sớm; … hệ kiểm soát nhận thức … hoàn thiện muộn, kéo dài suốt tuổi teen và đầu tuổi đôi mươi". Chữ mới: "thay đổi quanh tuổi dậy thì", "chưa hoàn tất cho đến giữa tuổi đôi mươi". Lý do: bám nguồn. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): tóm tắt và "not complete until the mid-20s". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/" ]
+    review: dung
+  - id: n22
+    cau: 'Điểm mấu chốt của mô hình: sự lệch nhịp giữa hai hệ thống khiến giữa tuổi teen dễ tổn thương nhất trước hành vi mạo hiểm.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: The differing timetables of these changes make mid-adolescence a time of heightened vulnerability to risky and reckless behavior.
+    vi_tri: Steinberg 2008, tóm tắt
+    ket_qua: dung
+    ghi_chu: Đây là điều mô hình nói, không phải kết quả đo trực tiếp.
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/" ]
+  - id: n23
+    cau: Steinberg và cộng sự (2008) khảo sát 935 người từ 10 đến 30 tuổi (đa dạng về kinh tế–xã hội và sắc tộc) bằng cả tự báo cáo lẫn đo hành vi.
+    loai: so-lieu
+    nguon:
+      - steinberg2008b
+    trich: a socioeconomically and ethnically diverse sample of 935 individuals between the ages of 10 and 30, using self-report and behavioral measures of each construct
+    vi_tri: Steinberg 2008b, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18999337/" ]
+    luot_2_ghi_chu: Steinberg và cộng sự 2008, Developmental Psychology.
+  - id: n24
+    cau: 'Tìm kiếm cảm giác mạnh (sensation seeking) đi theo đường cong: tăng từ 10 đến 15 tuổi rồi giảm hoặc giữ nguyên; tính bốc đồng giảm đều đặn từ 10 tuổi trở đi.'
+    loai: so-lieu
+    nguon:
+      - steinberg2008b
+    trich: sensation seeking increasing between 10 and 15 and declining or remaining stable thereafter. In contrast, age differences in impulsivity, which are unrelated to puberty, follow a linear pattern, with impulsivity declining steadily from age 10 on.
+    vi_tri: Steinberg 2008b, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "xu hướng tìm kiếm phần thưởng đi theo đường cong — tăng từ tiền teen lên đỉnh ở giữa tuổi teen rồi giảm". Chữ mới: "tìm kiếm cảm giác mạnh (sensation seeking) … tăng từ 10 đến 15 tuổi rồi giảm hoặc giữ nguyên". Lý do: thước đo là sensation seeking, không phải "phần thưởng"; nguồn nói "giảm hoặc giữ nguyên". Review (Claude Opus 5.5, 10/11/2026): dung. Tóm tắt Steinberg và cộng sự 2008 (Europe PMC): "sensation seeking increasing between 10 and 15 and declining or remaining stable thereafter … impulsivity declining steadily from age 10 on"; 935 người 10–30 tuổi. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18999337/" ]
+    review: dung
+  - id: n25
+    cau: Sự kết hợp "ham cảm giác mạnh cao + tự kiểm soát chưa xong" ở giữa tuổi teen được các tác giả coi là có thể giải thích sự mạo hiểm.
+    loai: phat-hien
+    nguon:
+      - steinberg2008b
+    trich: Heightened vulnerability to risk taking in middle adolescence may be due to the combination of relatively higher inclinations to seek excitement and relatively immature capacities for self-control that are typical of this period of development.
+    vi_tri: Steinberg 2008b, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chính là công thức của sự mạo hiểm". Chữ mới: "được các tác giả coi là có thể giải thích". Lý do: nguồn dùng "may be due to". Review (Claude Opus 5.5, 10/11/2026): dung. Tóm tắt Steinberg và cộng sự 2008: "may be due to the combination …". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18999337/" ]
+    review: dung
+  - id: n26
+    cau: Bài tổng quan của chính nhóm Steinberg (Shulman và cộng sự, 2016) rà soát bằng chứng từ 2008, kết luận nhìn chung bằng chứng ủng hộ mô hình hai hệ thống và "tái khẳng định" nó, dù thừa nhận là bản đơn giản hóa.
+    loai: lich-su
+    nguon:
+      - shulman2016
+    trich: Recent findings (since 2008) generally support the dual systems model.
+    vi_tri: 'Shulman 2016, Highlights; Abstract: "Although it is admittedly an oversimplification, as a heuristic device, the dual systems model provides a far more accurate account of adolescent risk taking than prior models"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một bài tổng quan sau đó (Shulman và cộng sự, 2016) đã rà soát lại toàn bộ bằng chứng và tái khẳng định mô hình này." Chữ mới: "của chính nhóm Steinberg … rà soát bằng chứng từ 2008 … tái khẳng định … dù thừa nhận là bản đơn giản hóa". Lý do: Steinberg là đồng tác giả của bài tổng quan ("toàn bộ" quá mạnh; bài là tổng quan có chọn lọc của chính tác giả mô hình). Review (Claude Opus 5.5, 10/11/2026): dung. Shulman 2016 (lượt 2 đọc PMC6990093): "Recent findings (since 2008) generally support the dual systems model"; "admittedly an oversimplification". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: Shulman, Smith, Silva, Icenogle, Duell, Chein, Steinberg (2016).
+    review: dung
+  - id: n27
+    cau: 'Các tác giả khác phê bình mô hình: chưa đủ tinh vi, và giữa tuổi teen chưa chắc là đỉnh của mạo hiểm; phân tích tổng hợp của Defoe và cộng sự (2015) thấy teen mạo hiểm hơn người lớn (g = 0,37) nhưng ngang trẻ em ở nhiều nhiệm vụ trong phòng thí nghiệm (g = 0).'
+    loai: phat-hien
+    nguon:
+      - shulman2016
+      - defoe2015
+    trich: adolescents take more risks (g = .37) than adults … adolescents and children take equal levels of risk (g = -.00)
+    vi_tri: Shulman 2016, mục 2 ("critiques of this viewpoint … Pfeifer and Allen, 2012 … Defoe et al., 2014"); Defoe 2015, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Câu thêm vào trang (cân bằng chữ "tái khẳng định"). Chữ "Defoe và cộng sự, 2015" là năm đăng chính thức; Shulman ghi 2014 (bản trực tuyến). Review (Claude Opus 5.5, 10/11/2026): dung. Tóm tắt Defoe 2015 (Europe PMC): "adolescents take more risks (g = .37) than adults … adolescents and children take equal levels of risk (g = -.00)". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/25365761/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    review: dung
+  - id: n28
+    cau: 'Khá vững: vỏ não trước trán trưởng thành muộn; độ nhạy phần thưởng cao ở giữa tuổi teen.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - gogtay2004
+      - steinberg2008b
+      - galvan2006
+      - shulman2016
+      - defoe2015
+    ly_do: 'Việc các vùng liên kết bậc cao chín muộn thấy trong MRI dọc 13 trẻ (Gogtay 2004) và được tổng quan của Steinberg 2008 nhắc tới; độ nhạy phần thưởng cao ở khoảng giữa tuổi teen thấy trong tự báo cáo của 935 người (Steinberg 2008b) và một nghiên cứu fMRI nhỏ (Galvan 2006); nhưng Shulman 2016 nói đỉnh có thể ở cuối tuổi teen, một số nghiên cứu không thấy teen nhạy phần thưởng hơn, Defoe 2015 thấy teen mạo hiểm hơn người lớn nhưng ngang trẻ em ở nhiều nhiệm vụ phòng thí nghiệm. Chưa có phân tích tổng hợp hay tái lập đăng ký trước cho cả hai ý; mẫu chủ yếu phương Tây; hai ý khác nhau, khung gộp theo ý yếu hơn: "khá vững".'
+    nguon:
+      - gogtay2004
+      - steinberg2008b
+      - galvan2006
+      - shulman2016
+      - defoe2015
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: khung "Vững chắc: vỏ não trước trán hoàn thiện sau cùng; độ nhạy phần thưởng đạt đỉnh ở giữa tuổi teen — làn sóng hoàn thiện từ sau ra trước … đã được ghi nhận qua nhiều nghiên cứu MRI độc lập (Gogtay 2004) …". Chữ mới: khung "Khá vững: vỏ não trước trán trưởng thành muộn; độ nhạy phần thưởng cao ở giữa tuổi teen", nêu giới hạn và phê bình. Lý do: khung gộp hai ý (theo bài học đợt 3–4: theo ý yếu hơn); ý "đạt đỉnh ở giữa tuổi teen" còn tranh luận; "nhiều nghiên cứu MRI độc lập" dẫn chỉ một nghiên cứu (Gogtay, 13 trẻ). Đổi nhãn làm đổi dòng Tóm tắt nhanh. Review nên xem lại. Review (Claude Opus 5.5, 10/11/2026): dung. Nhãn Khá vững (đổi từ Vững chắc) đúng thước đo: khung gộp hai ý; ý vỏ não trước trán chín muộn dựa một nghiên cứu dọc 13 trẻ (Gogtay 2004, toàn văn đã mở); ý độ nhạy phần thưởng có dữ liệu cùng chiều (Steinberg 2008b, Galvan 2006) nhưng có phân tích tổng hợp không thấy teen hơn trẻ em trong phòng thí nghiệm (Defoe 2015). Không đạt Vững chắc; chưa tới mức Đang tranh cãi cho ý chung vì Defoe vẫn thấy teen mạo hiểm hơn người lớn (g = 0,37) và hơn trẻ em ở nhiệm vụ "nóng".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/", "https://pubmed.ncbi.nlm.nih.gov/16793895/", "https://pubmed.ncbi.nlm.nih.gov/25365761/" ]
+    luot_2_ghi_chu: "Nhiều nghiên cứu cùng chiều, có ngoại lệ (kích hoạt vân lúc chờ thưởng, Defoe): 'Khá vững' không vượt thước đo."
+    review: dung
+  - id: n29
+    cau: 'Khá vững: bạn bè khuếch đại hành vi mạo hiểm ở tuổi teen.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - gardner2005
+      - shulman2016
+      - steinberg2008
+    ly_do: 'Gardner & Steinberg 2005 (306 người, ngẫu nhiên) và Shulman 2016 (tổng quan nhóm Steinberg: vị thành niên bị thúc đẩy bởi sự có mặt của bạn bè hơn người lớn, dẫn Chein 2011, Smith 2014); nghiên cứu về lái xe của thiếu niên cũng cùng chiều (Simons-Morton 2005, qua Steinberg 2008). Giới hạn: chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước, nhiều nghiên cứu cùng nhóm tác giả, mẫu phương Tây; nên "khá vững".'
+    nguon:
+      - gardner2005
+      - shulman2016
+      - steinberg2008
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hiệu ứng … đã được tái lập qua nhiều biến thể thí nghiệm (Gardner và Steinberg, 2005 và các nghiên cứu tiếp nối). Mức độ khuếch đại … thay đổi theo bối cảnh cụ thể, nhưng hướng của hiệu ứng thì nhất quán." Chữ mới: dẫn Shulman 2016 (Chein 2011; Smith 2014), "chưa có tái lập lớn có đăng ký trước". Lý do: "đã được tái lập qua nhiều biến thể" chưa dẫn nguồn riêng; "thay đổi theo bối cảnh" không có nguồn, nay chỉ nói "hướng nhất quán trong các nguồn đã đọc". Review (Claude Opus 5.5, 10/11/2026): dung. Nhãn Khá vững: Gardner & Steinberg 2005 (tóm tắt: "peer effects … were stronger among adolescents and youths than adults") cộng các nghiên cứu Shulman 2016 dẫn; chưa có tái lập lớn có đăng ký trước, nhiều nghiên cứu cùng nhóm. Đúng thước đo.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16060809/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3075496/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: "Nhiều thí nghiệm cùng hướng, chưa có tái lập đăng ký trước: 'Khá vững'."
+    review: dung
+  - id: n30
+    cau: 'Shulman và cộng sự (2016): các thí nghiệm thao tác bối cảnh xã hội thấy vị thành niên bị thúc đẩy bởi sự có mặt của bạn bè để mạo hiểm hơn người lớn (dẫn Chein 2011; Gardner & Steinberg 2005; Smith 2014).'
+    loai: phat-hien
+    nguon:
+      - shulman2016
+    trich: Studies that have manipulated the social context have found that adolescents are more induced by peer presence to take risks than are adults
+    vi_tri: Shulman 2016, mục 4.3 (tác động của bạn bè)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3075496/" ]
+    luot_2_ghi_chu: Tên tác giả trích trong bản đã mở bị lược khỏi văn bản; Chein 2011 và Gardner & Steinberg 2005 xác nhận riêng.
+  - id: n31
+    cau: 'Đang tranh cãi: "não chưa hoàn thiện" có làm giảm trách nhiệm của người chưa thành niên?'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - steinberg2009
+    ly_do: 'Câu hỏi giao giữa khoa học, pháp luật và đạo đức. Steinberg 2009 (tóm tắt): chính sách "cannot, and should not, be dictated solely by studies of adolescent development" nhưng nên "informed by the lessons of developmental science", và chính ông kết luận các bài học ấy "offer strong support for the maintenance of a separate juvenile justice system". Bằng chứng khoa học không tự phân xử được câu hỏi giá trị (mức trách nhiệm), nên trong bốn nhãn của site Đang tranh cãi là nhãn đúng nhất; review (10/11/2026) giữ nhãn và thêm vào thân khung kết luận của Steinberg để người đọc thấy lập trường của nguồn. Giới hạn: chưa mở nguồn của phía phản đối.'
+    nguon:
+      - steinberg2009
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đây là nơi khoa học giao với pháp luật và đạo đức — và các nhà khoa học cũng chia rẽ." Chữ mới: bỏ "và các nhà khoa học cũng chia rẽ". Lý do: không có nguồn mở về sự chia rẽ của các nhà khoa học; thay bằng điều Steinberg 2009 viết. Chỗ khó: nhãn "đang tranh cãi" dựa trên bản chất giá trị của câu hỏi hơn là hai bằng chứng mâu thuẫn. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại tóm tắt Steinberg 2009 (Europe PMC). Nhãn giữ (lý do ở ly_do). Thân khung trước đây chỉ nêu lời cảnh báo của Steinberg mà không nêu kết luận của ông (ủng hộ mạnh hệ thống tư pháp riêng cho người chưa thành niên), dễ đọc thành Steinberg trung lập; review thêm câu: "Bản thân ông kết luận rằng, ở Mỹ, các bài học ấy ủng hộ mạnh việc duy trì một hệ thống tư pháp riêng cho người chưa thành niên" (cùng chỗ sửa với n46).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/19327037/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: "Là câu hỏi quy phạm/pháp lý: các nguồn không thống nhất, hợp 'Đang tranh cãi'."
+    review: dung
+  - id: n32
+    cau: 'Steinberg (2009): chính sách tư pháp "không thể và không nên" bị quyết định chỉ bởi nghiên cứu phát triển, nhưng cách đối xử với người chưa thành niên vi phạm pháp luật nên được tham khảo từ khoa học phát triển.'
+    loai: phat-hien
+    nguon:
+      - steinberg2009
+    trich: Although justice system policy and practice cannot, and should not, be dictated solely by studies of adolescent development, the ways in which we respond to juvenile offending should be informed by the lessons of developmental science.
+    vi_tri: Steinberg 2009, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/19327037/" ]
+  - id: n33
+    cau: Nói "não chưa hoàn thiện nên miễn trách nhiệm" là suy diễn quá đà; nói "não bộ không liên quan gì" cũng bỏ qua bằng chứng.
+    loai: loi-khuyen
+    nguon:
+      - steinberg2009
+    trich: the ways in which we respond to juvenile offending should be informed by the lessons of developmental science
+    vi_tri: Steinberg 2009, tóm tắt
+    ket_qua: dung
+    ghi_chu: Suy ra từ câu của Steinberg ở n32; nhận xét của người viết trang, không phải khuyến nghị pháp lý.
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/19327037/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+  - id: n34
+    cau: 'Mô hình hai hệ thống: hệ cảm xúc–xã hội thay đổi sớm quanh tuổi dậy thì, hệ kiểm soát tiếp tục cải thiện đến tận tuổi đôi mươi, nên giữa tuổi teen dễ tổn thương nhất trước mạo hiểm; đây là mô hình giải thích, không phải kết quả đo trực tiếp.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+      - steinberg2008b
+    trich: The differing timetables of these changes make mid-adolescence a time of heightened vulnerability to risky and reckless behavior.
+    vi_tri: Steinberg 2008, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hệ cảm xúc–xã hội chín sớm (có lợi cho việc tách khỏi gia đình, kết bạn, tìm bạn đời) … Sự lệch nhịp là cái giá của một lịch trình phát triển vốn có lý do của nó." Chữ mới: bỏ phần "có lợi … tìm bạn đời" và "cái giá của … có lý do của nó". Lý do: không có nguồn mở; phần thích nghi chuyển sang n35. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): tóm tắt. Trang ghi rõ là mô hình giải thích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    review: dung
+  - id: n35
+    cau: Steinberg (2008), dẫn Spear (2000), nêu giả thuyết rằng đặc điểm điển hình của tuổi teen như tìm kiếm cái mới và mạo hiểm có thể đã mang tính thích nghi tiến hóa, giúp thanh thiếu niên rời nhóm gốc và vượt qua bước chuyển từ phụ thuộc sang độc lập; ở người có thể biểu hiện qua rượu, ma túy và hành vi có vấn đề.
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: Such adolescent-typical features may have been adaptive evolutionarily in helping adolescents to disperse from the natal unit and to negotiate with success the developmental transition from dependence to independence.
+    vi_tri: Steinberg 2008, mục về động lực tìm kiếm cảm giác (trích Spear 2000, tr. 446–447)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một số nhà nghiên cứu lập luận rằng sự mạo hiểm của tuổi teen không phải lỗi hệ thống mà có chức năng: khám phá môi trường mới, thử giới hạn, học cách tự lập … Vấn đề chỉ nảy sinh khi môi trường hiện đại (xe máy, ma túy, mạng xã hội) biến những lần thử thành cái giá quá đắt." Chữ mới: bám Steinberg 2008 (giả thuyết; Spear 2000). Lý do: bỏ "môi trường hiện đại (xe máy, mạng xã hội)" (không có trong nguồn); thêm "đây là giả thuyết". Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "Such adolescent-typical features may have been adaptive evolutionarily in helping adolescents to disperse from the natal unit and to negotiate with success the developmental transition from dependence to independence. In the human adolescent, these propensities may be expressed, however, in alcohol and drug use". Lượt 2 không mở được; review xác nhận.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/" ]
+    luot_2_ghi_chu: "Việc Steinberg 2008 dẫn Spear (2000) về giả thuyết thích nghi tiến hóa nằm trong toàn văn (chưa mở được: PMC chặn tải tự động); tóm tắt không có."
+    review: dung
+  - id: n36
+    cau: 'Các nguồn không ủng hộ việc xem não teen như phiên bản lỗi của não người lớn: teen hiểu biết, lý luận logic, đánh giá rủi ro chính xác không kém người lớn (Steinberg 2008), và mô hình hai hệ thống giải thích mạo hiểm của teen đúng hơn các mô hình quy cho thiếu năng lực nhận thức (Shulman 2016).'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+      - shulman2016
+    trich: the dual systems model provides a far more accurate account of adolescent risk taking than prior models that have attributed adolescent recklessness to cognitive deficiencies
+    vi_tri: Shulman 2016, tóm tắt; Steinberg 2008 (Reyna & Farley 2006)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cách khung sai lầm nhất là xem não teen như một phiên bản lỗi của não người lớn. Đúng hơn, đó là một bộ não đang trong quá trình tinh chỉnh: tỉa synap nghĩa là não đang học cách dùng hiệu quả hơn dựa trên trải nghiệm — dùng hoặc mất. Điều này cũng có nghĩa tuổi teen là cửa sổ vàng để học kỹ năng, ngôn ngữ, nhạc cụ". Chữ mới: bám hai nguồn; bỏ "dùng hoặc mất" và "cửa sổ vàng …". Lý do: không có nguồn mở cho hai ý đó. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "adolescents are knowledgeable, logical, reality-based, and accurate … as their elders" (dẫn Reyna & Farley 2006); Shulman 2016 câu trích khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    review: dung
+  - id: n37
+    cau: 'Khá vững (chip ở Áp dụng 1): nói chuyện khi "nguội", đừng giảng đạo lý khi đang "nóng".'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - steinberg2008
+      - gardner2005
+    ly_do: 'Cơ sở: Steinberg 2008 mô tả rằng khi chơi một mình, mức liều lĩnh của các nhóm tuổi tương đương và teen hiểu biết, lý luận không kém người lớn; chương trình giáo dục thường thay đổi hiểu biết nhiều hơn hành vi. Phần "nên nói lúc bình tĩnh" là suy luận từ mô hình, chưa có thử nghiệm riêng, nên "khá vững" ở mức tối đa; review xem lại nhãn.'
+    nguon:
+      - steinberg2008
+      - gardner2005
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Rủi ro bùng lên trong trạng thái nóng … Vì vậy, bài học an toàn giao thông hay phòng chống ma túy nên được gieo vào lúc bình tĩnh." Chữ mới: thêm "Theo Steinberg (2008)", "Theo mô hình", và câu "Việc nên nói chuyện lúc bình tĩnh là suy luận của chúng tôi từ mô hình, chưa có thử nghiệm riêng." Lý do: lời khuyên là suy luận, cần nói rõ. Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2: qua-manh. Đồng ý: nguồn (Steinberg 2008) xác nhận cơ chế (một mình thì liều ngang người lớn, teen lý luận không kém người lớn, giáo dục đổi hiểu biết hơn hành vi), không kiểm lời khuyên "nói chuyện lúc nguội"; chính trang ghi đây là suy luận chưa có thử nghiệm. Chip Khá vững gắn lên lời khuyên cao hơn bằng chứng: đã bỏ chip :nhan[kha-vung] ở tiêu đề Áp dụng 1, giữ id cũ { #1-noi-chuyen-khi-nguoi-dung-giang-dao-ly-khi-dang-nong-kha-vung }. Thân mục giữ (n38 và các câu có nguồn).'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: "câu đúng: Bằng chứng ủng hộ rằng quyết định của thiếu niên giống người lớn khi ít kích động cảm xúc; lời khuyên nói chuyện lúc 'nguội' là suy ra từ mô hình, chưa được kiểm chứng can thiệp.; Nguồn xác nhận cơ chế (kích hoạt cảm xúc làm tăng mạo hiểm), không kiểm tra lời khuyên 'nói chuyện khi nguội, đừng giảng khi nóng' có hiệu quả; nhãn 'Khá vững' cho lời khuyên cao hơn bằng chứng."
+    review: sai
+  - id: n38
+    cau: Steinberg (2008) ghi rằng các chương trình giáo dục về nguy cơ ở tuổi teen thường thay đổi hiểu biết nhiều hơn thay đổi hành vi.
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: most systematic research on health education indicates that even the best programs are far more successful at changing individuals' knowledge than in altering their behavior
+    vi_tri: Steinberg 2008, Introduction
+    ket_qua: dung
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/" ]
+    luot_2_ghi_chu: Nhận định của Steinberg 2008 về chương trình giáo dục đổi hiểu biết hơn hành vi nằm trong toàn văn (chưa mở được).
+    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "most systematic research on health education indicates that even the best programs are far more successful at changing individuals'' knowledge than in altering their behavior". Lượt 2 không mở được; review xác nhận.'
+    review: dung
+  - id: n39
+    cau: Theo mô hình, rủi ro tăng lên khi hệ cảm xúc–xã hội được kích hoạt mạnh (ví dụ có bạn bè, cảm xúc dâng cao); khi không được kích hoạt mạnh, hệ kiểm soát đủ mạnh để điều tiết, kể cả ở đầu tuổi teen.
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: Indeed, when the socio-emotional network is not highly activated (for example, when individuals are not emotionally excited or are alone), the cognitive control network is strong enough to impose regulatory control over impulsive and risky behavior, even in early adolescence
+    vi_tri: Steinberg 2008, mục về bạn bè
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+  - id: n40
+    cau: 'Khá vững (chip ở Áp dụng 2): thiết kế môi trường thay vì trông chờ "tự kiềm chế".'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - steinberg2008
+    ly_do: 'Steinberg 2008 lập luận rằng nỗ lực giảm mạo hiểm nên tập trung vào bối cảnh hơn là kiến thức, dẫn nghiên cứu về hành khách cùng tuổi và tai nạn (Simons-Morton 2005); đây là lập luận của một tác giả, không có phân tích tổng hợp hay thử nghiệm can thiệp trong nguồn đã mở. Giới hạn: một nguồn chính; nên "khá vững" ở mức tối đa; review xem lại.'
+    nguon:
+      - steinberg2008
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Vì chân phanh sinh học chưa lắp xong, chiến lược hiệu quả nhất là giảm số tình huống cần đến phanh: hạn chế để teen lái xe chở nhiều bạn cùng lúc vào ban đêm, quản lý tiền tiêu vặt và thời gian online, giữ rượu bia và chất gây nghiện ngoài tầm với. Đây cũng là logic đằng sau nhiều chính sách giới hạn độ tuổi trên thế giới". Chữ mới: lập luận của Steinberg (2008) và nghiên cứu của Simons-Morton 2005, kèm "ví dụ của chúng tôi". Lý do: "hiệu quả nhất", "tiền tiêu vặt", "thời gian online", "rượu bia", "nhiều chính sách trên thế giới" không có nguồn mở; bỏ. Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2: qua-manh. Đồng ý: Steinberg 2008 lập luận nên thay đổi bối cảnh ("should therefore focus on changing the context") và dẫn Simons-Morton 2005 về hành khách cùng tuổi; không nguồn đã mở nào kiểm hiệu quả của cách "thiết kế môi trường". Đã bỏ chip :nhan[kha-vung] ở tiêu đề Áp dụng 2, giữ id cũ { #2-thiet-ke-moi-truong-thay-vi-trong-cho-tu-kiem-che-kha-vung }. Thân mục giữ, đã ghi là lập luận của Steinberg và ví dụ của site.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/", "https://pubmed.ncbi.nlm.nih.gov/18509515/" ]
+    luot_2_ghi_chu: "câu đúng: Mô hình nhấn mạnh vai trò bối cảnh nên khuyến nghị thay đổi bối cảnh là hợp lý, nhưng hiệu quả của cách này chưa được kiểm chứng bằng nguồn đã đọc.; Các nguồn mở xác nhận vai trò bối cảnh trong mô hình, không có thử nghiệm can thiệp 'thiết kế môi trường' nào đã đọc; nhãn 'Khá vững' cho khuyến nghị là cao hơn bằng chứng."
+    review: sai
+  - id: n41
+    cau: 'Steinberg (2008): nỗ lực giảm mạo hiểm ở tuổi teen nên tập trung thay đổi bối cảnh nơi hành vi mạo hiểm xảy ra hơn là chủ yếu thay đổi điều teen biết và cách teen nghĩ; có bạn cùng tuổi trong xe làm tăng nguy cơ tai nạn nghiêm trọng khi người lái là thiếu niên (Simons-Morton và cộng sự, 2005).'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: efforts to prevent or minimize adolescent risk-taking should therefore focus on changing the context in which risky activity takes place rather than mainly attempting, as current practice does, to change what adolescents know and the ways they think.
+    vi_tri: Steinberg 2008, tóm tắt (cuối đoạn mở đầu); "the presence of same-aged passengers in a car driven by an adolescent driver significantly increases the risk of a serious accident (Simons-Morton, Lerner, & Springer, 2005)"
+    ket_qua: dung
+    ghi_chu: 'Nguồn thứ cấp cho Simons-Morton (qua Steinberg 2008). Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "efforts to prevent or minimize adolescent risk-taking should therefore focus on changing the context …"; "the presence of same-aged passengers in a car driven by an adolescent driver significantly increases the risk of a serious accident (Simons-Morton, Lerner, & Springer, 2005)". Simons-Morton dẫn qua Steinberg, trang ghi "ông dẫn nghiên cứu". Khớp.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/" ]
+    luot_2_ghi_chu: "Câu có hai phần: khuyến nghị của Steinberg 2008 (toàn văn chưa mở được) và Simons-Morton 2005 về bạn cùng tuổi trong xe (bài gốc chưa tìm được bản mở)."
+    review: dung
+  - id: n42
+    cau: 'Áp dụng 3: các nguồn đã đọc chỉ kiểm tra tác động của bạn bè lên hành vi mạo hiểm, chưa kiểm tra hiệu quả của các chương trình dùng ảnh hưởng của bạn bè theo hướng tích cực; vì vậy không đưa ra khuyến nghị.'
+    loai: phat-hien
+    nguon:
+      - shulman2016
+      - gardner2005
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Cùng một cơ chế khiến bạn bè khuếch đại rủi ro cũng có thể khuếch đại điều tốt: teen cũng nhạy với sự công nhận của bạn bè khi làm việc tốt. Các chương trình dùng đàn anh đàn chị hướng dẫn, hoạt động nhóm lành mạnh hay thử thách tập thể tích cực đều đang khai thác đúng chân ga này — chỉ khác hướng đi." Chữ mới: câu nói không có nguồn và không đưa khuyến nghị. Lý do: không mở được nguồn kiểm chứng ảnh hưởng tích cực của bạn bè hay chương trình đàn anh; bỏ khẳng định và chip nhãn (id mục giữ). Chỗ khó: Shulman 2016 thấy bạn bè làm tăng rủi ro, không nói về điều tốt. Review (Claude Opus 5.5, 10/11/2026): sai. Thân mục đúng (Gardner 2005, Shulman 2016 chỉ kiểm bạn bè làm tăng mạo hiểm; không kiểm chương trình dùng bạn bè theo hướng tích cực; đây là câu về phạm vi nguồn, kiểm được bằng tóm tắt hai bài). Nhưng tiêu đề mục vẫn là lời khuyên "3. Dùng sức mạnh của bạn bè theo hướng tích cực", trái với thân mục. Tiêu đề mới: "3. Bạn bè có thể là ảnh hưởng tích cực?", giữ id cũ.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Là câu về phạm vi các nguồn site đã đọc, không kiểm được từ bên ngoài; bản thân khoảng trống ('chưa kiểm tra') là khẳng định về văn liệu, nên chuyển thành ve-site hoặc ghi rõ phạm vi.
+    review: sai
+  - id: n43
+    cau: 'Áp dụng 4: các nguồn đã đọc không kiểm tra việc học một kỹ năng ở tuổi teen có hiệu quả hơn các tuổi khác hay không, nên không đưa ra lời khuyên về "thời điểm vàng"; điều có nguồn: chất xám vỏ não giảm dần trong tuổi teen, một phần có thể do tỉa synap.'
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Tỉa synap hoạt động theo nguyên tắc dùng hoặc mất: kết nối nào được dùng nhiều sẽ được giữ lại và myelin hóa. Tuổi teen vì vậy là thời điểm vàng để đầu tư vào ngoại ngữ, nhạc cụ, thể thao, kỹ năng tư duy — những đường cao tốc thần kinh được xây lúc này sẽ phục vụ cả đời … đừng lãng phí giai đoạn não dẻo nhất." Chữ mới: không đưa lời khuyên, giữ điều Gogtay nói. Lý do: "dùng hoặc mất" và "thời điểm vàng" không có trong nguồn đã mở (Gogtay nói cơ chế chưa rõ); lời khuyên học tập cần nguồn riêng. Chip nhãn bỏ, id mục giữ. Review (Claude Opus 5.5, 10/11/2026): sai. Phần có nguồn (chất xám giảm trong tuổi teen, một phần có thể do tỉa synap) khớp Gogtay 2004 (Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở)). Nhưng tiêu đề mục vẫn là lời khuyên "4. Tận dụng ''cửa sổ'' học hỏi của não đang tỉa", trái với thân mục (không đưa lời khuyên về thời điểm vàng). Tiêu đề mới: "4. Tuổi teen có ''cửa sổ'' học hỏi riêng?", giữ id cũ.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/" ]
+    luot_2_ghi_chu: Phần 'chất xám giảm, một phần có thể do tỉa synap' cần toàn văn Gogtay 2004 (chưa mở được); phần còn lại là câu về phạm vi nguồn đã đọc.
+    review: sai
+  - id: n44
+    cau: Các nghiên cứu nêu trong bài chủ yếu thực hiện ở Mỹ.
+    loai: lich-su
+    nguon:
+      - gogtay2004
+      - steinberg2009
+    trich: This review begins with a brief overview of the history, rationale, and workings of the American juvenile justice system.
+    vi_tri: 'Steinberg 2009, tóm tắt; Gogtay 2004, Discussion: "the National Institute of Mental Health study"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hầu hết nghiên cứu về não vị thành niên thực hiện ở Mỹ và châu Âu." Chữ mới: "Các nghiên cứu nêu trong bài chủ yếu thực hiện ở Mỹ". Lý do: câu cũ nói chung về toàn ngành, không kiểm được; chỉ nói điều bài dẫn. Đã kiểm địa điểm cho Gogtay 2004 (NIMH, Mỹ) và Steinberg 2009 (hệ thống tư pháp Mỹ); với Galvan 2006, Gardner & Steinberg 2005, Steinberg và cộng sự 2008 chưa kiểm đơn vị nơi làm việc từ nguồn đã mở (các tác giả Galvan, Casey, Steinberg ở Mỹ theo hiểu biết chung): chữ "chủ yếu" giữ ở mức đó. Review (Claude Opus 5.5, 10/11/2026): dung. Gogtay (NIMH, Bethesda), Galvan (địa chỉ trong PDF J Neurosci: Weill Cornell, New York), Steinberg (Temple): Mỹ; Defoe là tổng hợp quốc tế nhưng chỉ dẫn một câu. "chủ yếu ở Mỹ" đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16060809/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3075496/", "https://pubmed.ncbi.nlm.nih.gov/15148381/", "https://pubmed.ncbi.nlm.nih.gov/16793895/" ]
+    luot_2_ghi_chu: Suy từ cơ quan tác giả; Defoe là phân tích tổng hợp quốc tế.
+    review: dung
+  - id: n45
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu chụp não (MRI/fMRI) về phát triển não vị thành niên trên người Việt, cũng như thí nghiệm kiểu Gardner và Steinberg trên thiếu niên Việt.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Europe PMC ngày 10/11/2026, ba truy vấn nêu ở nguồn: không có. Chữ cũ: "Chúng tôi chưa tìm thấy dữ liệu chụp não (MRI/fMRI) về phát triển não vị thành niên trên người Việt" (không có mốc). Chữ mới: thêm "Tính đến 11/2026" và vế "thí nghiệm kiểu Gardner và Steinberg". Chưa tìm Google Scholar hay tạp chí trong nước; OpenAlex bị giới hạn lượt. Review (Claude Opus 5.5, 10/11/2026): dung. Có mốc "Tính đến 11/2026", het_han; lượt 2 tìm độc lập trên Europe PMC cũng không thấy.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&query=(TITLE%3A%22brain%20development%22%20OR%20TITLE%3A%22cortical%22%20OR%20TITLE%3A%22gray%20matter%22)%20AND%20(TITLE%3Aadolescen*)%20AND%20(AFF%3A%22Hanoi%22%20OR%20AFF%3A%22Ho%20Chi%20Minh%22%20OR%20TITLE%3AVietnam*)", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&query=(%22risk%20taking%22%20OR%20%22risk-taking%22)%20AND%20(Vietnam%20OR%20Vietnamese)%20AND%20adolescen*%20AND%20(peer)%20AND%20(driving%20OR%20%22decision%20making%22)" ]
+    luot_2_ghi_chu: "Phạm vi: Europe PMC; không phủ tạp chí trong nước."
+    review: dung
+  - id: n46
+    cau: 'Steinberg (2009) bàn về việc dùng khoa học phát triển trong hệ thống tư pháp người chưa thành niên của Mỹ, qua ba vấn đề (trách nhiệm hình sự, năng lực ra tòa, tác động của hình phạt); ông kết luận khoa học phát triển ủng hộ mạnh việc duy trì một hệ thống tư pháp riêng cho người chưa thành niên, đồng thời nhấn mạnh chính sách không thể và không nên được quyết định chỉ bởi các nghiên cứu phát triển.'
+    loai: lich-su
+    nguon:
+      - steinberg2009
+    trich: 'Taken together, the lessons of developmental science offer strong support for the maintenance of a separate juvenile justice system in which adolescents are judged, tried, and sanctioned in developmentally appropriate ways.'
+    vi_tri: 'Steinberg 2009, tóm tắt (Europe PMC)'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khoa học phát triển đã được trích dẫn trong các tranh luận về tư pháp người chưa thành niên ở nhiều nước (Steinberg, 2009) … một trong nhiều nguồn tham khảo … bên cạnh văn hóa, đạo đức và thực tiễn xã hội". Chữ mới: "hệ thống tư pháp … của Mỹ", "một trong các cân nhắc". Lý do: tóm tắt nói về Mỹ, không nói "nhiều nước"; "văn hóa, đạo đức, thực tiễn" là diễn giải của người viết. Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2: sai. Đồng ý. Chữ cũ: "Steinberg (2009) bàn về việc dùng khoa học phát triển trong hệ thống tư pháp người chưa thành niên của Mỹ. Như chính ông nhấn mạnh, khoa học chỉ nên là một trong các cân nhắc cho nhà làm luật." Tóm tắt nói rõ ông có kết luận chính sách: "offer strong support for the maintenance of a separate juvenile justice system", qua ba vấn đề "criminal culpability … competence to stand trial … impact of punitive sanctions". Chữ mới nêu ba vấn đề và kết luận ấy, giữ lời cảnh báo "cannot, and should not, be dictated solely". Câu "Bài viết này không đưa ra khuyến nghị …" là lập trường của site, giữ. Khung Đang tranh cãi sửa theo (n31).'
+    luot_2: sai
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/19327037/" ]
+    luot_2_ghi_chu: "câu đúng: Steinberg (2009) bàn về việc dùng khoa học phát triển trong tư pháp người chưa thành niên của Mỹ: khoa học không thể và không nên một mình quyết định chính sách, nhưng bài kết luận khoa học phát triển ủng hộ mạnh việc duy trì hệ thống tư pháp riêng, qua ba vấn đề: trách nhiệm hình sự, năng lực ra tòa, tác động của chế tài trừng phạt.; Tóm tắt nói rõ kết luận có tính khuyến nghị chính sách; phần 'khoa học chỉ nên là một trong các cân nhắc' đúng."
+    review: sai
+  - id: n47
+    cau: 'Ngộ nhận: não tuổi teen không bị "hỏng" hay "thiếu" — theo mô hình hai hệ thống đó là lịch trình phát triển bình thường, lệch nhịp giữa hai hệ thống, không phải khiếm khuyết.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: The differing timetables of these changes make mid-adolescence a time of heightened vulnerability to risky and reckless behavior.
+    vi_tri: Steinberg 2008, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "… Gọi nó là hỏng vừa sai khoa học, vừa khiến người lớn đối xử với teen như bệnh nhân." Chữ mới: bỏ câu đó, thêm "theo mô hình hai hệ thống" và dẫn Steinberg 2008. Lý do: câu về hậu quả đối xử không có nguồn. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): tóm tắt; câu "đối xử như bệnh nhân" đã bỏ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    review: dung
+  - id: n48
+    cau: 'Ngộ nhận: các nguồn đã đọc mô tả khả năng tự kiểm soát cải thiện dần qua tuổi teen đến đầu hay giữa tuổi đôi mươi, không phải một mốc "qua một đêm"; chúng tôi không tìm thấy một mốc cứng ở tuổi 25.'
+    loai: phat-hien
+    nguon:
+      - shulman2016
+      - steinberg2008
+    trich: psychological and neural reflections of better cognitive control increase gradually and linearly throughout adolescence and into the early 20s
+    vi_tri: 'Shulman 2016, tóm tắt; Steinberg 2008: "not complete until the mid-20s"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Con số 25 thường gặp trên báo chí chỉ là cách nói gọn — các nhà nghiên cứu nhấn mạnh phát triển là một phổ liên tục, không có đường ranh cứng nào mà qua một đêm não bỗng xong. Đừng dùng nó như một mốc pháp lý hay tâm lý tuyệt đối." Chữ mới: dẫn Shulman và Steinberg; "chúng tôi không tìm thấy một mốc cứng ở tuổi 25". Lý do: "thường gặp trên báo chí" và "các nhà nghiên cứu nhấn mạnh" không có nguồn mở; hai nguồn nêu "đầu tuổi 20" (Shulman) và "giữa tuổi 20" (Steinberg). Review (Claude Opus 5.5, 10/11/2026): dung. Shulman 2016 "into the early 20s"; Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024) "not complete until the mid-20s". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    review: dung
+  - id: n49
+    cau: 'Ngộ nhận: teen không hẳn liều vì không hiểu nguy hiểm; teen hiểu biết, lý luận và đánh giá rủi ro chính xác không kém người lớn nhưng vẫn mạo hiểm nhiều hơn; khi chơi một mình các nhóm tuổi liều ngang nhau, khi có bạn bè teen liều hơn.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+      - gardner2005
+    trich: The fact that adolescents are knowledgeable, logical, reality-based, and accurate in the ways in which they think about risky activity – or, at least, as knowledgeable, logical, reality-based, and accurate as their elders – but engage in higher rates of risky behavior than adults
+    vi_tri: Steinberg 2008, Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Sai. Trong trạng thái bình tĩnh, teen đánh giá rủi ro không kém người lớn là bao (Gardner và Steinberg, 2005). Vấn đề là khi phần thưởng và bạn bè xuất hiện, hệ thống phần thưởng lấn át khả năng kiềm chế — các em biết nhưng không thắng được cơn thôi thúc lúc đó." Chữ mới: dẫn Steinberg 2008 (Reyna & Farley 2006). Lý do: tóm tắt Gardner 2005 thấy "risky decision making decreased with age", nên không dẫn bài ấy cho "đánh giá rủi ro không kém"; "không thắng được cơn thôi thúc" là diễn giải. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): câu trích (Reyna & Farley 2006) và mô tả Gardner & Steinberg khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3075496/" ]
+    review: dung
+  - id: n50
+    cau: 'Ngộ nhận: chất xám giảm trên MRI trong tuổi teen là một phần của phát triển bình thường; nguyên nhân chưa rõ, Gogtay và cộng sự đoán một phần do tỉa synap cùng thay đổi tế bào thần kinh đệm, mạch máu, co nhỏ tế bào; myelin hóa diễn ra song song.'
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+    trich: Although changes in sulcal and gyral folding patterns or other nonatrophic processes such as dehydration could influence the GM density, the primary cause for loss of GM density is unknown.
+    vi_tri: Gogtay 2004, Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Không phải mất tế bào ồ ạt — đó là quá trình tinh chỉnh: loại bỏ kết nối ít dùng để mạng lưới còn lại hoạt động hiệu quả hơn, song song với việc bọc myelin tăng tốc các kết nối được giữ lại." Chữ mới: nói nguyên nhân chưa rõ, đây là suy đoán của tác giả. Lý do: nguồn nói "primary cause … is unknown". Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở): "the primary cause for loss of GM density is unknown. We speculate … synaptic pruning (43) together with trophic glial and vascular changes and/or cell shrinkage"; "pruning [and] myelination may often occur in parallel". Khớp.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/15148381/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3621648/" ]
+    luot_2_ghi_chu: Phần 'phát triển bình thường' và myelin hóa song song có nguồn; phần 'Gogtay đoán một phần do tỉa synap cùng thay đổi tế bào đệm, mạch máu, co nhỏ tế bào' cần toàn văn Gogtay (chưa mở được).
+    review: dung
+  - id: n51
+    cau: 'Ngộ nhận: mạo hiểm và tìm cái mới ở tuổi teen theo mô hình gắn với tìm kiếm phần thưởng và ảnh hưởng của bạn bè, không phải thái độ chống đối; chưa có nguồn đã mở đo trực tiếp "chống đối người lớn".'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: increased reward-seeking, especially in the presence of peers
+    vi_tri: Steinberg 2008, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hành vi thử giới hạn ở tuổi teen phần lớn là biểu hiện của lịch trình phát triển (tìm kiếm sự mới lạ, sự công nhận của bạn bè), không phải âm mưu chống đối cá nhân nào." Chữ mới: "Theo mô hình hai hệ thống, … gắn với tìm kiếm phần thưởng và ảnh hưởng của bạn bè (Steinberg 2008), chứ không phải một thái độ chống đối; chúng tôi chưa mở nguồn nào đo trực tiếp". Lý do: "phần lớn" và "sự công nhận của bạn bè" không kiểm được. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): "increased reward-seeking, especially in the presence of peers"; trang đã rào "chưa mở nguồn nào đo trực tiếp".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    review: dung
+  - id: n52
+    cau: 'Đọc thêm: trang "Tuổi teen: mình là ai?" (kham-pha/phat-trien/ban-sac-tuoi-teen) và "Bắt nạt và áp lực thi cử?" (kham-pha/phat-trien/tam-ly-hoc-duong).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: hai trang có trong src/data/trang.yml (ban-sac-tuoi-teen tầng loi; tam-ly-hoc-duong tầng mo-rong), tiêu đề khớp site cũ (.cache/site-cu); chưa lên bản build nên thành chữ "sắp có". Review (Claude Opus 5.5, 10/11/2026): dung. Hai trang có trong src/data/trang.yml (ban-sac-tuoi-teen tầng loi, tam-ly-hoc-duong tầng mo-rong); tiêu đề khớp trang cũ ("Tuổi teen: mình là ai?", "Bắt nạt và áp lực thi cử?"); chưa lên nhánh nên thành chữ "sắp có".'
+    review: dung
+  - id: n53
+    cau: 'Câu hỏi 1: theo mô hình "mất cân bằng phát triển" của Steinberg (2008), giữa tuổi teen dễ mạo hiểm nhất vì hệ phần thưởng nhạy cảm đúng lúc hệ kiểm soát ở vỏ não trước trán còn chưa hoàn thiện; điểm mấu chốt là sự lệch nhịp giữa hai hệ thống; teen hiểu nguy hiểm.'
+    loai: phat-hien
+    nguon:
+      - steinberg2008
+    trich: The differing timetables of these changes make mid-adolescence a time of heightened vulnerability to risky and reckless behavior.
+    vi_tri: Steinberg 2008, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Lựa chọn nhiễu ("vỏ não trước trán hoàn toàn chưa hoạt động", "không hiểu khái niệm nguy hiểm") sai (gia-dinh). Lời giải thích không dựa vào vị trí lựa chọn. Review (Claude Opus 5.5, 10/11/2026): sai. Hồ sơ ghi "hệ phần thưởng nhạy cảm đúng lúc …", nhưng lựa chọn đúng của câu hỏi 1 trên trang vẫn viết "đạt đỉnh nhạy cảm", điều lượt 1 đã đổi ở n3, n9 (Shulman 2016: đỉnh có thể ở cuối tuổi teen). Đổi thành "nhạy cảm cao đúng lúc …".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    review: sai
+  - id: n54
+    cau: 'Câu hỏi 2: tỉa synap là quá trình loại bỏ các kết nối thần kinh ít được dùng để tinh chỉnh mạng lưới não, được cho là góp phần vào việc chất xám giảm trong tuổi teen, song song với myelin hóa; không phải sự hư hại.'
+    loai: phat-hien
+    nguon:
+      - gogtay2004
+    trich: We speculate that it may be driven at least partially by the process of synaptic pruning
+    vi_tri: Gogtay 2004, Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "… theo nguyên tắc dùng hoặc mất, song song với myelin hóa" và "Đây cũng là lý do tuổi teen là cửa sổ vàng để học kỹ năng mới". Chữ mới: "được cho là góp phần vào việc chất xám giảm", bỏ "dùng hoặc mất" và "cửa sổ vàng". Lý do: như n36, n43. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Gogtay 2004 (PDF của PNAS, bản lưu Wayback 31/01/2022; bài truy cập mở): "We speculate that it may be driven at least partially by the process of synaptic pruning"; "được cho là góp phần" đúng mức.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC3621648/" ]
+    luot_2_ghi_chu: Chất xám giảm 'được cho là góp phần' đã rào đón; không phải hư hại.
+    review: dung
+  - id: n55
+    cau: 'Câu hỏi 3: thí nghiệm lái xe của Gardner và Steinberg (2005) — khi chơi một mình các nhóm tuổi liều ngang nhau; khi có bạn bè xem, nhóm 13–16 liều gấp đôi, nhóm 18–22 hơn khoảng 50%, người lớn không thay đổi (theo Steinberg 2008).'
+    loai: so-lieu
+    nguon:
+      - steinberg2008
+      - gardner2005
+    trich: the presence of friends doubled risk-taking among the adolescents, increased it by fifty percent among the youths, but had no effect on the adults
+    vi_tri: Steinberg 2008
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: câu hỏi nêu trò chơi "Chicken", giải thích "rất quan trọng: nó bác bỏ ý tưởng teen là những cá nhân bốc đồng trong mọi hoàn cảnh … bối cảnh xã hội mới là chất xúc tác". Chữ mới: bỏ "Chicken"; giải thích nói "theo mô tả của Steinberg (2008)", "bối cảnh xã hội là một yếu tố khuếch đại rủi ro". Lý do: như n18, n19. Lựa chọn nhiễu ("luôn liều hơn trong mọi điều kiện", "người lớn liều hơn teen khi có bạn bè") sai. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Steinberg 2008 (bản PMC2396566, lưu ở Wayback 26/08/2024): số liệu gấp đôi, 50%, không đổi khớp (xem n19).'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16060809/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3075496/" ]
+    luot_2_ghi_chu: "Như n19: số 'gấp đôi', '50%' cần toàn văn Gardner & Steinberg hay Steinberg 2008 (chưa mở được)."
+    review: dung
+  - id: n56
+    cau: 'Câu hỏi 4: Galvan và cộng sự (2006): nhân accumbens ở teen hoạt động mạnh hơn cả trẻ em lẫn người lớn, còn vỏ não ổ mắt giống trẻ em hơn người lớn; một bằng chứng não ủng hộ mô hình lệch nhịp (từ một nghiên cứu nhỏ).'
+    loai: phat-hien
+    nguon:
+      - galvan2006
+    trich: These findings suggest that maturing subcortical systems become disproportionately activated relative to later maturing top-down control systems
+    vi_tri: Galvan 2006, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đây là bằng chứng não trực tiếp cho mô hình lệch nhịp". Chữ mới: "Đây là một bằng chứng não ủng hộ mô hình lệch nhịp (từ một nghiên cứu nhỏ)". Lý do: "trực tiếp" mạnh hơn nguồn (tác giả dùng "suggest"). Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn Galvan 2006 (PDF của J Neurosci, bản lưu Wayback 28/10/2026; bài truy cập mở): "suggest"; "một bằng chứng … từ một nghiên cứu nhỏ" đúng mức.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/16793895/" ]
+    luot_2_ghi_chu: Nghiên cứu nhỏ (37 người).
+    review: dung
+  - id: n57
+    cau: 'Câu hỏi 5: các nguồn đã đọc mô tả khả năng tự kiểm soát cải thiện dần đến đầu hay giữa tuổi đôi mươi, không có mốc cứng ở 25; khoa học phát triển nên được tham khảo (chứ không quyết định một mình) khi bàn về chính sách với người chưa thành niên (Steinberg 2009).'
+    loai: phat-hien
+    nguon:
+      - steinberg2009
+      - shulman2016
+      - steinberg2008
+    trich: Although justice system policy and practice cannot, and should not, be dictated solely by studies of adolescent development, the ways in which we respond to juvenile offending should be informed by the lessons of developmental science.
+    vi_tri: Steinberg 2009, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "25 chỉ là cách nói gọn trên báo chí — phát triển là một phổ liên tục không có ranh cứng; …". Chữ mới: "Các nguồn đã đọc mô tả khả năng tự kiểm soát cải thiện dần …, không có mốc cứng ở 25; …". Lý do: như n48. Review (Claude Opus 5.5, 10/11/2026): dung. Tóm tắt Steinberg 2009: câu trích khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/", "https://pubmed.ncbi.nlm.nih.gov/19327037/" ]
+    review: dung
+  - id: n58
+    cau: Danh sách Nguồn của trang (Defoe 2015; Galvan 2006; Gardner & Steinberg 2005; Gogtay 2004; Shulman 2016; Steinberg 2008, 2009; Steinberg và cộng sự 2008) đúng tác giả, năm, nhan đề, tạp chí, tập, trang, DOI.
+    loai: lich-su
+    nguon:
+      - gogtay2004
+      - galvan2006
+      - gardner2005
+      - steinberg2008
+      - steinberg2008b
+      - shulman2016
+      - steinberg2009
+      - defoe2015
+    ket_qua: da-sua
+    ghi_chu: 'Đã đối chiếu với Crossref (10/11/2026): Gardner 41(4) 625–635; Galvan 26(25) 6885–6892; Gogtay 101(21) 8174–8179; Steinberg 2008 Dev Rev 28(1) 78–106; … khớp. Chữ cũ: 7 mục. Thêm Defoe và cộng sự (2015) vì bài dẫn. Tên "M Gardner" ở thân bài sửa thành "Margo Gardner" (Crossref); "Adriana Galvan" bỏ (Crossref chỉ ghi "A. Galvan"). Review (Claude Opus 5.5, 10/11/2026): dung. Lượt 2 ghi khong-chac vì không so được với trang. Review so từng mục trên trang với Crossref (10/11/2026): Defoe 2015 Psychol Bull 141(1) 48–84; Galvan 2006 J Neurosci 26(25) 6885–6892 (7 tác giả); Gardner & Steinberg 2005 Dev Psychol 41(4) 625–635; Gogtay 2004 PNAS 101(21) 8174–8179 (12 tác giả); Shulman 2016 Dev Cogn Neurosci 17, 103–117 (7 tác giả); Steinberg 2008 Dev Rev 28(1) 78–106; Steinberg 2009 Annu Rev Clin Psychol 5, 459–485; Steinberg và cộng sự 2008 Dev Psychol 44(6) 1764–1778 (6 tác giả). Tác giả, nhan đề, tập, trang, DOI khớp.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/25365761/", "https://pubmed.ncbi.nlm.nih.gov/16793895/", "https://pubmed.ncbi.nlm.nih.gov/16060809/", "https://pubmed.ncbi.nlm.nih.gov/18509515/", "https://pubmed.ncbi.nlm.nih.gov/18999337/", "https://pubmed.ncbi.nlm.nih.gov/19327037/", "https://pubmed.ncbi.nlm.nih.gov/15148381/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990093/" ]
+    luot_2_ghi_chu: Không mở trang nên không so từng mục. Metadata thật khớp bản ghi cho Defoe 2015 (Psychol Bull 141:48), Galvan 2006 (J Neurosci 26:6885), Gardner & Steinberg 2005 (Dev Psychol 41:625), Gogtay 2004 (PNAS 101:8174), Shulman 2016 (Dev Cogn Neurosci 17:103), Steinberg 2008 (Dev Rev 28:78), Steinberg 2009 (Annu Rev Clin Psychol 5:459), Steinberg và cộng sự 2008 (Dev Psychol). Cần so với danh sách trên trang.
+    review: dung
+  - id: n59
+    cau: 'Tên "Margo Gardner" (trước: "M Gardner") và "Galvan và đồng nghiệp" (trước: "Adriana Galvan").'
+    loai: lich-su
+    nguon:
+      - gardner2005
+      - galvan2006
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "M Gardner", "Adriana Galvan". Chữ mới: "Margo Gardner", "Galvan". Lý do: Crossref ghi Margo Gardner; "Galvan" chỉ có chữ cái đầu A. Review (Claude Opus 5.5, 10/11/2026): dung. Crossref: Gardner, Margo; Galvan chỉ ghi chữ cái đầu. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/0012-1649.41.4.625", "https://api.crossref.org/works/10.1523/jneurosci.1062-06.2006" ]
+    luot_2_ghi_chu: Tên 'Margo' đúng; 'Galvan và đồng nghiệp' đúng (nhiều tác giả, Galvan đứng đầu). Tên riêng 'Adriana' không có trong Crossref (chỉ chữ A.); câu nên là ve-site.
+    review: dung
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch). Khung đầu đổi nhãn nên dòng tóm tắt đầu cũng đổi (hồ sơ n28).
+  - cu: 'mô tả: "Vỏ não trước trán hoàn thiện sau cùng, hệ phần thưởng nhạy bén nhất ở giữa tuổi teen — mô hình … giải thích vì sao teen hiểu nguy hiểm mà vẫn liều"'
+    moi: '"Vỏ não trước trán trưởng thành muộn, hệ phần thưởng nhạy bén ở giữa tuổi teen — mô hình … đề xuất lời giải thích …"'
+    ly_do: Hồ sơ n1.
+  - cu: 'đáp án mở đầu: "Não tuổi teen không hỏng — nó đang lệch nhịp. … phải đến đầu tuổi đôi mươi mới hoàn thiện."'
+    moi: '"Theo mô hình hai hệ thống của Steinberg, … tiếp tục trưởng thành đến tận đầu hay giữa tuổi đôi mươi."'
+    ly_do: Hồ sơ n3.
+  - cu: 'mục Điều gì đang xảy ra: "đợt đại tu lớn thứ hai trong đời"; tỉa synap và myelin hóa; "hệ limbic … nhạy cảm bất thường"'
+    moi: '"nhiều thay đổi cấu trúc"; tỉa synap là suy đoán của Gogtay; myelin hóa kéo dài sang thập niên thứ hai; "hệ cảm xúc–xã hội … theo mô hình của Steinberg (2008)"'
+    ly_do: Hồ sơ n4–n9.
+  - cu: 'Gogtay: "Chất xám giảm dần (phản ánh tỉa synap và myelin hóa) theo một làn sóng từ vùng cảm giác–thị giác … ra phía trước … vỏ não trước trán … hoàn thiện cuối cùng … bằng chứng hình ảnh trực quan nhất …"'
+    moi: thứ tự chín muộn theo nguồn (vỏ não trước trán lưng–bên muộn nhất trong thùy trán, thùy thái dương bên muộn nhất toàn vỏ não), kèm giới hạn mẫu (13 trẻ, IQ 125)
+    ly_do: Hồ sơ n6, n10–n13.
+  - cu: 'Galvan: "quét não của 37 người — 16 trẻ em, 13 vị thành niên và 12 người lớn"; "Adriana Galvan"; "hoạt động giống trẻ em hơn"; "Các tác giả kết luận"'
+    moi: '"41 người (16, 13, 12); 37 người (13, 12, 12) có dữ liệu phân tích"; "Galvan"; "mức lan rộng của hoạt động … giống trẻ em hơn"; "Các tác giả cho rằng … nghiên cứu nhỏ, cắt ngang"'
+    ly_do: Hồ sơ n14–n17, n59.
+  - cu: 'Gardner: "M Gardner … ("Chicken") … một mình hoặc có hai bạn cùng tuổi ngồi xem"; "Đây là một trong những minh chứng thực nghiệm rõ ràng nhất …"'
+    moi: '"Margo Gardner … 306 người … trò chơi lái xe trên máy tính …"; "Theo mô tả của Steinberg (2008) …"; "Bài gốc kết luận …"'
+    ly_do: Hồ sơ n18–n20, n59.
+  - cu: 'Steinberg 2008: "hệ cảm xúc–xã hội chín sớm … hệ kiểm soát … hoàn thiện muộn, kéo dài … đầu tuổi đôi mươi"'
+    moi: '"thay đổi quanh tuổi dậy thì … chưa hoàn tất cho đến giữa tuổi đôi mươi"'
+    ly_do: Hồ sơ n21.
+  - cu: 'Steinberg và cộng sự 2008: "xu hướng tìm kiếm phần thưởng … tăng từ tiền teen lên đỉnh ở giữa tuổi teen rồi giảm"; "chính là công thức của sự mạo hiểm"; "Shulman … rà soát lại toàn bộ bằng chứng và tái khẳng định"'
+    moi: '"tìm kiếm cảm giác mạnh … tăng từ 10 đến 15 tuổi rồi giảm hoặc giữ nguyên"; "được các tác giả coi là có thể giải thích"; "tổng quan của chính nhóm Steinberg … tái khẳng định … thừa nhận đơn giản hóa; các tác giả khác phê bình (Defoe …)"'
+    ly_do: Hồ sơ n24–n27.
+  - cu: 'khung "Vững chắc: vỏ não trước trán hoàn thiện sau cùng; độ nhạy phần thưởng đạt đỉnh ở giữa tuổi teen"'
+    moi: 'khung "Khá vững: vỏ não trước trán trưởng thành muộn; độ nhạy phần thưởng cao ở giữa tuổi teen" với giới hạn và phê bình'
+    ly_do: Hồ sơ n28.
+  - cu: 'khung Khá vững: "Hiệu ứng … đã được tái lập qua nhiều biến thể thí nghiệm …"'
+    moi: dẫn Shulman 2016 (Chein 2011; Smith 2014); "chưa có tái lập lớn có đăng ký trước"
+    ly_do: Hồ sơ n29, n30.
+  - cu: 'khung Đang tranh cãi: "… và các nhà khoa học cũng chia rẽ"'
+    moi: bỏ vế đó
+    ly_do: Hồ sơ n31.
+  - cu: 'mục Các lý thuyết: "hệ cảm xúc–xã hội chín sớm (có lợi cho việc tách khỏi gia đình, kết bạn, tìm bạn đời)"; "Góc nhìn thích nghi … môi trường hiện đại (xe máy, ma túy, mạng xã hội)"; "Não đang xây … tỉa synap … dùng hoặc mất … cửa sổ vàng"'
+    moi: mô hình hai hệ thống (không có phần "có lợi cho …"); giả thuyết thích nghi theo Steinberg 2008 / Spear 2000; "Các nguồn … không ủng hộ cách nhìn xem não teen như phiên bản lỗi …"
+    ly_do: Hồ sơ n34–n36.
+  - cu: câu "Vì sao tiến hóa lại thiết kế ra một bộ não lệch nhịp như vậy?"
+    moi: '"Vì sao não tuổi teen có thể lệch nhịp như vậy?"'
+    ly_do: Không phải số liệu; bỏ cách nói "tiến hóa thiết kế" (hồ sơ n35).
+  - cu: 'Áp dụng 1: "… khả năng suy luận của các em không có vấn đề gì …; Vì vậy, bài học … nên được gieo vào lúc bình tĩnh"'
+    moi: '"Theo Steinberg (2008), …; Theo mô hình …; … Việc nên nói chuyện lúc bình tĩnh là suy luận của chúng tôi …"'
+    ly_do: Hồ sơ n37–n39.
+  - cu: 'Áp dụng 2: "chiến lược hiệu quả nhất …: hạn chế để teen lái xe chở nhiều bạn …, quản lý tiền tiêu vặt …, giữ rượu bia …; logic đằng sau nhiều chính sách giới hạn độ tuổi trên thế giới"'
+    moi: lập luận của Steinberg 2008 (đổi bối cảnh) và Simons-Morton 2005; "Một ví dụ minh họa là hạn chế để thiếu niên chở nhiều bạn cùng tuổi — đây là ví dụ của chúng tôi"
+    ly_do: Hồ sơ n40, n41.
+  - cu: 'Áp dụng 3 (Dùng sức mạnh của bạn bè theo hướng tích cực) và Áp dụng 4 (Tận dụng cửa sổ học hỏi): lời khuyên và chip "Khá vững"'
+    moi: mỗi mục một đoạn ngắn nói các nguồn đã đọc chưa kiểm tra điều đó, không đưa khuyến nghị; bỏ chip; giữ id mục cũ
+    ly_do: Hồ sơ n42, n43.
+  - cu: 'mục Ở Việt Nam: "Hầu hết nghiên cứu về não vị thành niên thực hiện ở Mỹ và châu Âu. Chúng tôi chưa tìm thấy dữ liệu chụp não …"; "… ở nhiều nước … văn hóa, đạo đức và thực tiễn xã hội"'
+    moi: '"Các nghiên cứu nêu trong bài chủ yếu thực hiện ở Mỹ. Tính đến 11/2026, chúng tôi chưa tìm thấy … cũng như thí nghiệm kiểu Gardner và Steinberg …"; "hệ thống tư pháp … của Mỹ", "một trong các cân nhắc"'
+    ly_do: Hồ sơ n44–n46.
+  - cu: 'Ngộ nhận: "bị hỏng": "… vừa sai khoa học, vừa khiến người lớn đối xử với teen như bệnh nhân"; "tuổi 25 … thường gặp trên báo chí"; "Teen liều vì không hiểu nguy hiểm. Sai. … (Gardner và Steinberg, 2005)"; "Tỉa synap … mất tế bào"; "chống đối"'
+    moi: xem hồ sơ n47–n51 (dẫn Steinberg 2008, Shulman 2016, Gogtay 2004; bỏ các câu không có nguồn)
+    ly_do: Hồ sơ n47–n51.
+  - cu: 'câu hỏi 2: "… theo nguyên tắc dùng hoặc mất … Đây cũng là lý do tuổi teen là cửa sổ vàng"; câu hỏi 3: "trò chơi lái xe Chicken … rất quan trọng …"; câu hỏi 4: "bằng chứng não trực tiếp"; câu hỏi 5: "25 chỉ là cách nói gọn trên báo chí"'
+    moi: xem hồ sơ n54–n57
+    ly_do: Hồ sơ n54–n57.
+  - cu: danh sách Nguồn (7 mục)
+    moi: thêm Defoe và cộng sự (2015)
+    ly_do: Hồ sơ n58.
+  - cu: 'tiêu đề Áp dụng 1 và 2 có chip :nhan[kha-vung]'
+    moi: 'bỏ chip, giữ id cũ { #1-noi-chuyen-khi-nguoi-dung-giang-dao-ly-khi-dang-nong-kha-vung }, { #2-thiet-ke-moi-truong-thay-vi-trong-cho-tu-kiem-che-kha-vung }'
+    ly_do: Review, hồ sơ n37, n40 (nhãn cho lời khuyên chưa được kiểm trực tiếp).
+  - cu: 'tiêu đề "3. Dùng sức mạnh của bạn bè theo hướng tích cực"; "4. Tận dụng "cửa sổ" học hỏi của não đang tỉa"'
+    moi: '"3. Bạn bè có thể là ảnh hưởng tích cực?"; "4. Tuổi teen có "cửa sổ" học hỏi riêng?" (id cũ giữ)'
+    ly_do: Review, hồ sơ n42, n43 (tiêu đề là lời khuyên trái với thân mục).
+  - cu: 'khung Đang tranh cãi: "… nên được tham khảo từ những bài học của khoa học phát triển (Steinberg, 2009)."'
+    moi: 'thêm "Bản thân ông kết luận rằng, ở Mỹ, các bài học ấy ủng hộ mạnh việc duy trì một hệ thống tư pháp riêng cho người chưa thành niên"'
+    ly_do: Review, hồ sơ n31, n46.
+  - cu: 'mục Ở Việt Nam: "Steinberg (2009) bàn về … của Mỹ. Như chính ông nhấn mạnh, khoa học chỉ nên là một trong các cân nhắc cho nhà làm luật."'
+    moi: '"… của Mỹ, qua ba vấn đề: … Ông kết luận rằng khoa học phát triển ủng hộ mạnh việc duy trì một hệ thống tư pháp riêng …; đồng thời ông nhấn mạnh chính sách không thể và không nên được quyết định chỉ bởi các nghiên cứu phát triển."'
+    ly_do: Review, hồ sơ n46 (lượt 2 sai).
+  - cu: 'câu hỏi 1, lựa chọn đúng: "hệ phần thưởng … đạt đỉnh nhạy cảm đúng lúc …"'
+    moi: '"hệ phần thưởng … nhạy cảm cao đúng lúc …"'
+    ly_do: Review, hồ sơ n53.

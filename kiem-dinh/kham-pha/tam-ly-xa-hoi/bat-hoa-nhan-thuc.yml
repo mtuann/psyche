@@ -1,0 +1,652 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc
+trang: src/content/docs/kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc.md
+nguon_cu: ../psyche-zero/docs/kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc.md
+tang: loi
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d5-l4
+    ma_bam: sha256:bcfa4dce042cc8dfbb1e8b323a55acb599a9fff3dbda054ceffee6647302e8f1
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L4 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L4)
+      review: Claude Sonnet 5.5 (agent review D5-L4, 10/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l4-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: fest1959
+    ten: 'Festinger & Carlsmith (1959), J Abnorm Soc Psychol 58, 203-210: toàn văn (psychclassics.yorku.ca)'
+    link: https://psychclassics.yorku.ca/Festinger/
+    toan_van: true
+  - id: openstax-bd
+    ten: OpenStax Psychology 2e, mục 12.3 Attitudes and Persuasion
+    link: https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion
+    toan_van: true
+  - id: vaidis2024
+    ten: "Vaidis và cộng sự (2024), Adv Methods Pract Psychol Sci 7(1): toàn văn (bản lưu ở pure.tue.nl; đọc lại ở review qua bản HAL hal-04443137)"
+    link: https://doi.org/10.1177/25152459231213375
+    toan_van: true
+  - id: vaidis2024c
+    ten: "Sleegers và cộng sự (2024), When replication fails: What to conclude and not to conclude?, Adv Methods Pract Psychol Sci 7(4): tóm tắt (Crossref); tác giả đầu Sleegers (lượt 1 ghi nhầm là Vaidis, 7(3))"
+    link: https://doi.org/10.1177/25152459241268197
+    toan_van: false
+  - id: bem1967
+    ten: 'Bem (1967), Psychol Rev 74(3), 183-200: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/h0024835
+    toan_van: false
+  - id: simon1995
+    ten: 'Simon, Greenberg & Brehm (1995), J Pers Soc Psychol 68(2): tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/0022-3514.68.2.247
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm kiếm ngày 10/11/2026: Crossref (query.bibliographic), kết quả ghi ở ghi_chu của từng nhận định'
+    link: https://api.crossref.org/works
+    toan_van: false
+  - id: stanovich2008
+    ten: 'Stanovich & West (2008), Think Reason 14(2): tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1080/13546780701679764
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả (description): thí nghiệm 1 đô-la / 20 đô-la của Festinger và Carlsmith (1959), lý thuyết bất hòa nhận thức, và những cách ta tự "chữa cháy" cho quyết định của mình.'
+    loai: lich-su
+    nguon:
+      - fest1959
+    trich: COGNITIVE CONSEQUENCES OF FORCED COMPLIANCE
+    vi_tri: Tên bài
+    ket_qua: dung
+    ghi_chu: 'Mô tả của trang; "chữa cháy" là cách nói ví von của trang cho các lối giảm bất hòa (n18). Review (Claude Sonnet 5.5, 10/11/2026): dung. khớp tên bài Festinger & Carlsmith (1959); "chữa cháy" là cách nói ví von cho các lối giảm bất hòa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n2
+    cau: 'Theo lý thuyết bất hòa nhận thức, khi hành động mâu thuẫn với điều ta nghĩ, ta có thể đổi cách nghĩ thay vì đổi hành động (Tự trải nghiệm: mua đồ đắt tiền, xếp hàng mua trà sữa).'
+    loai: phat-hien
+    nguon:
+      - openstax-bd
+    trich: To reduce cognitive dissonance, individuals can change their behavior, as in quitting smoking, or change their belief, such as discounting the evidence that smoking is harmful.
+    vi_tri: OpenStax 12.3, chú thích hình 12.11
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Cả hai đều là cùng một cơ chế tâm lý: khi hành động của ta mâu thuẫn với những gì ta nghĩ, ta thường đổi… cách nghĩ, chứ không đổi hành động." Chữ mới: "Theo lý thuyết bất hòa nhận thức, cả hai tình huống đều có thể xuất phát từ cùng một cơ chế… ta có thể đổi…". Lý do: "thường" và "cùng một cơ chế" mạnh hơn nguồn. Hai ví dụ (mua xe, trà sữa) là tình huống giả định (gia-dinh). Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.3: đổi hành vi hay đổi niềm tin để giảm bất hòa; câu viết "có thể", ví dụ mua đồ và trà sữa là giả định.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/", "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion" ]
+    luot_2_ghi_chu: Ví dụ tự trải nghiệm (đồ đắt, trà sữa) là ví dụ minh họa, không phải kết quả nghiên cứu.
+    review: dung
+  - id: n3
+    cau: Năm 1959, hai nhà nghiên cứu cho sinh viên làm một việc chán ngắt rồi trả tiền để họ nói dối người khác rằng "việc đó thú vị lắm".
+    loai: lich-su
+    nguon:
+      - fest1959
+    trich: We can pay you a dollar (twenty dollars) for doing this
+    vi_tri: Mục Procedure, One and Twenty Dollar Conditions
+    ket_qua: dung
+    ghi_chu: 'G1: khớp. Trích lấy từ lời của người thí nghiệm trong bài. Dùng ở ô thu gọn. Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959 (psychclassics, mở lại): nhóm 20 đô-la và 1 đô-la được trả để nói công việc thú vị với người chờ (thật ra là người của nhóm thí nghiệm).'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n4
+    cau: Nhóm được trả 1 đô-la về sau đánh giá công việc thú vị hơn nhóm được trả 20 đô-la, chênh lệch có ý nghĩa thống kê.
+    loai: phat-hien
+    nguon:
+      - fest1959
+    trich: The difference between the One Dollar and Twenty Dollar conditions is significant at the .03 level (t = 2.22).
+    vi_tri: Mục Results, How Enjoyable the Tasks Were
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thú vị hơn hẳn nhóm 20 đô-la". Chữ mới: "thú vị hơn nhóm… với chênh lệch có ý nghĩa thống kê". Lý do: p < 0,03 (t = 2,22), "hơn hẳn" mạnh hơn nguồn. Cùng sửa ở bảng và đáp án quiz 1. Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959 mục Results: "difference between the One Dollar and Twenty Dollar conditions is significant at the .03 level (t = 2.22)".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n5
+    cau: 'Festinger (1957) đề xuất lý thuyết bất hòa nhận thức: ta có nhu cầu giữ cho niềm tin, thái độ và hành vi nhất quán; khi chúng mâu thuẫn ta thấy khó chịu và tìm cách chỉnh lại.'
+    loai: dinh-nghia
+    nguon:
+      - openstax-bd
+      - fest1959
+    trich: Psychologist Leon Festinger (1957) defined cognitive dissonance as psychological discomfort arising from holding two or more inconsistent attitudes, behaviors, or cognitions
+    vi_tri: OpenStax 12.3, mục Cognitive Dissonance?
+    ket_qua: dung
+    ghi_chu: '"Như một nốt nhạc lạc điệu" là ví von. Sách 1957 không mở được; đối chiếu qua OpenStax và phần mở đầu của Festinger & Carlsmith (1959). Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.3 định nghĩa Festinger (1957); "nốt nhạc lạc điệu" là ví von, đã ghi.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/", "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion" ]
+    luot_2_ghi_chu: Sách Festinger 1957 không mở; định nghĩa khớp OpenStax và phần lý thuyết của bài 1959.
+    review: dung
+  - id: n6
+    cau: Khi hành vi đã xảy ra, ta không đổi được nó; ta còn có thể đổi cách nghĩ ("thật ra việc đó cũng thú vị mà").
+    loai: phat-hien
+    nguon:
+      - openstax-bd
+    trich: The last option, a change of behaviors, is not available to Joaquin.
+    vi_tri: OpenStax 12.3, ví dụ Joaquin
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cách dễ hơn thường là đổi cách nghĩ". Chữ mới: "Khi ấy ta còn có thể đổi cách nghĩ". Lý do: "dễ hơn thường" không có nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.3: đổi hành vi không còn (ví dụ Joaquin), còn đổi niềm tin.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n7
+    cau: 'Thí nghiệm: 71 sinh viên nam lớp nhập môn tâm lý học ở Stanford; 11 người bị loại, còn 60 người (20 người mỗi nhóm).'
+    loai: so-lieu
+    nguon:
+      - fest1959
+    trich: Seventy-one male students in the introductory psychology course at Stanford University were used in the experiment.
+    vi_tri: Mục Procedure; Summary of Design
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "71 sinh viên nam Đại học Stanford" (G1 gợi ý thêm "60 người được phân tích"). Chữ mới thêm "(dữ liệu của 60 người được đưa vào phân tích, 20 người mỗi nhóm)". Trích 2: "There remain, for analysis, 20 Ss in each of the thee conditions" (bản trực tuyến). Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959: 71 sinh viên nam lớp nhập môn ở Stanford, 11 người bị loại, còn 20 người mỗi nhóm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n8
+    cau: 'Công việc kéo dài khoảng một giờ: nửa giờ xếp 12 chiếc suốt chỉ lên khay, đổ ra rồi xếp lại; nửa giờ sau xoay từng chốt vuông trên tấm bảng, mỗi lần một phần tư vòng.'
+    loai: phat-hien
+    nguon:
+      - fest1959
+    trich: The E then removed the tray and spools and placed in front of the S a board containing 48 square pegs. His task was to turn each peg a quarter turn clockwise
+    vi_tri: Mục Procedure
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (trước G1): "xoay những chiếc suốt gỗ… hết vòng này đến vòng khác, rồi sắp xếp lại"; trang đã áp sửa G1; chữ "chốt gỗ" còn sót. Chữ mới: "chốt vuông". Lý do: bài chỉ nói "square pegs", không nói gỗ. Cũng đổi "chán ngắt/cực kỳ tẻ nhạt" thành "tẻ nhạt/đơn điệu": bài nói công việc "boring and monotonous". Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959 mục Procedure: 12 spools lên khay, đổ ra, xếp lại nửa giờ; 48 square pegs, mỗi lần quay một phần tư vòng, nửa giờ; chữ trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n9
+    cau: Nhóm đối chứng (không phải nói dối ai) chấm công việc −0,45 trên thang từ −5 (cực chán) đến +5 (cực thích), tức hơi nghiêng về phía chán.
+    loai: so-lieu
+    nguon:
+      - fest1959
+    trich: in the Control condition the average rating was -.45, somewhat on the negative side of the neutral point.
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Tức là: chán thật." Chữ mới: "Tức là hơi nghiêng về phía chán." Lý do: bài nói "somewhat on the negative side of the neutral point". Thang −5 đến +5: câu hỏi 1 ở mục Procedure. Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959: đối chứng trung bình −0,45 "somewhat on the negative side of the neutral point"; thang −5 đến +5 ở câu hỏi 1.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n10
+    cau: Người nghiên cứu "nhờ" sinh viên nói với người tham gia tiếp theo (thật ra người của nhóm nghiên cứu) rằng công việc rất thú vị; một nhóm được trả 20 đô-la, nhóm kia 1 đô-la.
+    loai: phat-hien
+    nguon:
+      - fest1959
+    trich: The girl, an undergraduate hired for this role
+    vi_tri: Mục Procedure
+    ket_qua: dung
+    ghi_chu: 'G1: khớp. Nhóm đối chứng không nói dối ai (mục Control Condition). Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959: "girl, an undergraduate hired for this role"; 20 đô-la và 1 đô-la; đối chứng không nói dối.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n11
+    cau: Theo lý thuyết, 20 đô-la là lý do đủ lớn để biện minh cho lời nói dối, còn 1 đô-la thì chưa.
+    loai: phat-hien
+    nguon:
+      - fest1959
+    trich: if these promised rewards or threatened punishments were just barely sufficient to induce the person to say "not X."
+    vi_tri: Phần mở đầu, suy luận 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(Vào năm 1959, 20 đô-la là một khoản kha khá với sinh viên, còn 1 đô-la thì chẳng đáng gì.)" Chữ mới: như câu trên. Lý do: bài không nói về giá trị đồng đô-la lúc đó; chỉ nêu logic của lý thuyết. Review (Claude Sonnet 5.5, 10/11/2026): dung. chỉ nêu logic của lý thuyết (đã ghi "Theo lý thuyết"), không khẳng định giá trị đồng đô-la.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n12
+    cau: 'Điểm đánh giá: nhóm 20 đô-la −0,05 (gần mức trung lập); nhóm 1 đô-la +1,35 (nghiêng về phía thú vị); đối chứng −0,45.'
+    loai: so-lieu
+    nguon:
+      - fest1959
+    trich: In this condition, the average rating was +1.35, considerably on the positive side and significantly different from the Control condition at the .02 level
+    vi_tri: Mục Results; Table 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ trong bảng: "(vẫn thấy chán)" cho −0,05 và "(thấy khá thú vị!)" cho +1,35. Chữ mới: "(gần mức trung lập)", "(nghiêng về phía thú vị)". Lý do: −0,05 ≈ 0 là trung lập ("slightly and not significantly higher than the Control"), không phải "chán". Số liệu −0,05, +1,35, −0,45: khớp bài và hình festinger-diverging. Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959 bảng 1: −0,05; +1,35; −0,45; 1 đô-la khác đối chứng ở mức .02, 20 đô-la "slightly and not significantly higher than the Control".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n13
+    cau: 'Hình festinger-diverging: ba cột 1 đô-la +1,35, 20 đô-la −0,05, đối chứng −0,45, thang −5 đến +5.'
+    loai: so-lieu
+    nguon:
+      - fest1959
+    trich: In the other two conditions, however, the Ss told someone that these tasks were interesting and enjoyab1e.
+    vi_tri: Mục Results
+    ket_qua: dung
+    ghi_chu: 'Số trên hình đúng (G1 cũng kiểm). Nhưng lời chú của hình (src/hinh/festinger-diverging.html) viết "tích cực hơn hẳn nhóm 20 đô-la (−0,05)": mạnh hơn p < 0,03 (n4). KHÔNG SỬA HÌNH theo lời giao; người giao đổi "hơn hẳn" thành "cao hơn (chênh lệch có ý nghĩa thống kê)" khi sửa hình (và mở khóa nếu có trang khác dùng hình). Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): chú thích hình "tích cực hơn hẳn nhóm 20 đô-la" mạnh hơn nguồn (p < 0,03, F&C 1959). Đã sửa hình: "cao hơn nhóm 20 đô-la (−0,05) và nhóm đối chứng (−0,45); chênh lệch có ý nghĩa thống kê (p < 0,03 so với nhóm 20 đô-la, p < 0,02 so với nhóm đối chứng)", và thêm festinger-diverging vào HINH_DA_SUA ở tests/chuyen.test.mjs. Số trên hình (+1,35; −0,05; −0,45) khớp bảng 1 của F&C.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    luot_2_ghi_chu: Chữ trong hình khớp số của bài gốc; chưa đối chiếu hình thực tế.
+    review: sai
+  - id: n14
+    cau: 'Lý giải của Festinger: nhóm 20 đô-la có lý do chính đáng nên không có gì lạc điệu; nhóm 1 đô-la thì không đủ biện minh, nên chỉnh lại niềm tin; thái độ thật của họ nhích về phía điều đã nói.'
+    loai: phat-hien
+    nguon:
+      - fest1959
+    trich: In short, when an S was induced, by offer of reward, to say something contrary to his private opinion, this private opinion tended to change so as to correspond more closely with what he had said.
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "họ vô thức chỉnh lại niềm tin… Lời nói dối ít tiền trở thành niềm tin thật." Chữ mới: bỏ "vô thức" và "trở thành niềm tin thật"; "thái độ thật… nhích về phía điều họ đã nói". Lý do: bài không nói "vô thức"; chỉ nói ý kiến riêng có xu hướng đổi gần hơn điều đã nói. Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959 mục Results: ý kiến riêng có xu hướng đổi gần hơn điều đã nói; trang đã bỏ "vô thức".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n15
+    cau: "Khung Đang tranh cãi: phần thưởng nhỏ có làm thái độ đổi nhiều hơn phần thưởng lớn? (mẫu nhỏ, một bối cảnh, chênh lệch có ý nghĩa thống kê chỉ ở một trong bốn câu hỏi phỏng vấn; đợt tái lập 39 phòng thí nghiệm, 19 nước, 4.898 người không thấy dự đoán cốt lõi của mô hình tuân thủ bị ép buộc)."
+    loai: nhan
+    nguon:
+      - vaidis2024
+      - vaidis2024c
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Kết quả 1 đô-la > 20 đô-la từng được lặp lại trong một số biến thể của mô hình ''tuân thủ bị ép buộc''… thang đo thái độ khá đơn giản." Chữ mới: bỏ câu "từng được lặp lại trong một số biến thể" (không có nguồn đã mở; G1 đánh dấu ĐÁNG NGỜ, đã giảm ở lần sửa G1); thang đo mô tả đúng là "một câu hỏi trên thang 11 điểm"; thêm "60 người được phân tích", "có đăng ký trước". Nhãn giữ. Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): "thái độ chỉ được đo bằng một câu hỏi trên thang 11 điểm" không đúng. F&C 1959 phỏng vấn bốn câu hỏi, mỗi câu thang 11 điểm; chênh lệch có ý nghĩa thống kê chỉ thấy ở câu hỏi độ thú vị; câu hỏi mong muốn tham gia lại cùng chiều nhưng chỉ đạt p = .08 (1 đô-la so với đối chứng) và .15 (1 so với 20 đô-la). Đã sửa trên trang. Nhãn Đang tranh cãi chốt (sát ranh): đợt tái lập 2024 có đăng ký trước (Registered Report, 39 phòng, 19 nước, N = 4.898 tuyển) thất bại ở dự đoán lõi (quyền chọn), nhưng không thử tiền thưởng 1/20 đô-la; trang đã nói rõ điều này, nên nhãn chỉ đứng ở mức "mô hình tuân thủ bị ép buộc".'
+    nhan: tranh-cai
+    co_so:
+      - vaidis2024
+      - vaidis2024c
+    ly_do: 'Mục 4: "một tái lập lớn có đăng ký trước thất bại". Vaidis và cộng sự (2024) là Registered Replication Report (toàn văn: "The project was a Registered Report"), 39 phòng thí nghiệm, 19 nước, N = 4.898, không thấy khác biệt thái độ giữa quyền chọn cao và thấp. Lưu ý: đợt này dùng quyền chọn, không dùng tiền thưởng 1/20 đô-la; nhận định của khung nói về mô hình, không về chính số tiền.'
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf", "https://psychclassics.yorku.ca/Festinger/" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi đạt thước đo mục 4 (tái lập lớn có đăng ký trước không ủng hộ phần lõi). Lưu ý đợt 2024 thử biến thể 'quyền chọn' (Croyle & Cooper 1983), không thao túng tiền thưởng.
+    review: sai
+  - id: n16
+    cau: 'Đợt tái lập 2024: 39 phòng thí nghiệm ở 19 nước, N = 4.898; viết bài trái quan điểm khi tự chọn không làm thái độ đổi nhiều hơn khi bị chỉ định; đợt này không dùng tiền thưởng; đặt dấu hỏi cho mô hình tuân thủ bị ép buộc.'
+    loai: tai-lap
+    nguon:
+      - vaidis2024
+    trich: 'The primary analyses failed to support the core hypothesis: No significant difference in attitude was observed after writing a counterattitudinal essay under high choice compared with low choice.'
+    vi_tri: Tóm tắt (Abstract)
+    ket_qua: dung
+    ghi_chu: 'theo G1-L04: KHỚP. Mở toàn văn (pure.tue.nl): thiết kế dựa trên Croyle & Cooper (Experiment 1). Trang này viết "gần 4.900 người": 4.898. Review (Claude Sonnet 5.5, 10/11/2026): dung. Vaidis 2024 toàn văn (bản HAL, mở lại): 39 phòng, 19 nước, 14 ngôn ngữ, N = 4.898 tuyển; "failed to support the core hypothesis" về quyền chọn; không dùng tiền thưởng.'
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    luot_2_ghi_chu: 4.898 là số tuyển; sau loại trừ còn ít hơn (902 + 112 bị loại, một phòng bị loại hẳn). Đợt này không trả tiền thưởng theo kích cỡ.
+    review: dung
+  - id: n17
+    cau: "Khung Khá vững: con người có xu hướng giảm mâu thuẫn giữa niềm tin và hành vi (nhiều mô hình; người viết bài trái quan điểm thuận hơn người viết bài trung tính; nhiều nghiên cứu kinh điển mẫu nhỏ, hạn chế phương pháp; mô hình tuân thủ bị ép buộc không tái lập ở phần quan trọng nhất)."
+    loai: nhan
+    nguon:
+      - vaidis2024
+      - vaidis2024c
+    trich: Despite failing to replicate the classic effect that cognitive dissonance requires experiencing a freedom of choice, we did find that participants who wrote a counterattitudinal essay reported a more positive attitude than participants who wrote a neutral essay.
+    vi_tri: Thảo luận (Discussion)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nhãn Vững chắc: "hàng chục năm nghiên cứu với nhiều mô hình khác nhau (lựa chọn khó khăn, nỗ lực bỏ ra, niềm tin bị phản bác) phần lớn cho thấy cùng một khuynh hướng… Đây là một trong những ý tưởng được kiểm tra nhiều nhất của tâm lý học xã hội." Chữ mới: nhãn Khá vững, nêu cả kết quả ủng hộ và hạn chế. Lý do: không có phân tích tổng hợp trong nguồn đã mở (Vững chắc cần ít nhất một tổng hợp hay hai tái lập có đăng ký trước cùng chiều, mục 4); đợt tái lập lớn không thấy tác động của quyền chọn; "ba mô hình" và "được kiểm tra nhiều nhất" không có nguồn, thay bằng câu của Vaidis ("applied to a wide variety of situations…"). Review (Claude Sonnet 5.5, 10/11/2026): sai (không kiểm được): vế "chưa có phân tích tổng hợp chung cho các mô hình" là khẳng định về điều không tồn tại, chỉ dựa vào một lần tìm Crossref ngắn; có thể sai. Đã bỏ vế đó khỏi trang; nhãn Khá vững dựa vào: nhiều mô hình cùng chiều, tái lập lớn thấy thái độ thuận hơn khi viết bài trái quan điểm so với bài trung tính (nhưng hiệu ứng nhỏ, không phụ thuộc quyền chọn), và nhận xét của Sleegers và cộng sự (2024) về mẫu nhỏ, thiếu thực hành khoa học mở. Đạt "Khá vững" mục 4; không đạt "Vững chắc" vì mô hình tuân thủ bị ép buộc đã thất bại ở phần quan trọng nhất. Nhãn chốt: Khá vững.'
+    nhan: kha-vung
+    co_so:
+      - vaidis2024
+      - vaidis2024c
+    ly_do: "Mục 4, Khá vững: nhiều nghiên cứu cùng chiều nhưng còn giới hạn. Vaidis 2024 thấy thái độ thuận hơn sau viết bài trái quan điểm so với bài trung tính (cùng chiều, hiệu ứng nhỏ), nhưng không thấy tác động của quyền chọn; bài của Sleegers và cộng sự (2024, tóm tắt) nêu hạn chế phương pháp phổ biến (mẫu nhỏ, thiếu thực hành khoa học mở). Không đạt Vững chắc: mô hình tuân thủ bị ép buộc đã thất bại ở phần quan trọng nhất."
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf", "https://api.openalex.org/works/doi:10.1037/h0024835" ]
+    luot_2_ghi_chu: Nhãn Khá vững chấp nhận được (nhiều mô hình cùng chiều, chưa có tái lập lớn phủ nhận phần 'có giảm mâu thuẫn'). Vế 'chưa có tổng hợp chung' không kiểm được đầy đủ, chỉ tìm Crossref ngắn.
+    review: sai
+  - id: n18
+    cau: 'Lý thuyết bất hòa đã được áp dụng cho nhiều tình huống: niềm tin bị phản bác, biện minh cho nỗ lực, đạo đức giả, ra quyết định.'
+    loai: phat-hien
+    nguon:
+      - vaidis2024
+    trich: CDT has been applied to a wide variety of situations, including belief disconfirmation,
+    vi_tri: Phần mở đầu (Introduction)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Vaidis 2024 mở bài: lý thuyết đã được áp dụng cho nhiều tình huống (belief disconfirmation, ...)."
+  - id: n19
+    cau: 'Sau đợt tái lập 2024: người viết bài trái quan điểm có thái độ thuận hơn người viết bài trung tính, dù quyền chọn không tạo khác biệt.'
+    loai: tai-lap
+    nguon:
+      - vaidis2024
+    trich: Participants became more in favor of the essay topic after writing counterattitudinal arguments.
+    vi_tri: Thảo luận
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Vaidis 2024: đúng, thái độ thuận hơn ở nhóm bài trái quan điểm so với nhóm bài trung tính, bất kể quyền chọn; hiệu ứng nhỏ."
+  - id: n20
+    cau: Nhiều nghiên cứu kinh điển về bất hòa có mẫu nhỏ và hạn chế về phương pháp (bài phản hồi của nhóm Vaidis).
+    loai: phat-hien
+    nguon:
+      - vaidis2024c
+    trich: pervasive methodological limitations, such as underpowered studies and a lack of open-science practices
+    vi_tri: Tóm tắt bài phản hồi
+    ket_qua: dung
+    ghi_chu: 'Chỉ đọc tóm tắt (OpenAlex), nên chỉ dùng cho điều tóm tắt nói. Bản toàn văn của Vaidis 2024 cũng nói các nghiên cứu kinh điển "small samples (around 20 participants per cell)". Review (Claude Sonnet 5.5, 10/11/2026): dung. trích từ tóm tắt Crossref của bài Sleegers và cộng sự (2024), "pervasive methodological limitations, such as underpowered studies and a lack of open-science practices"; gán cho bài phản hồi là đúng. Đã sửa tác giả đầu và số tập (tác giả đầu Sleegers, 7(4), không phải Vaidis, 7(3)) ở trang và hồ sơ.'
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    luot_2_ghi_chu: Nội dung có ở bài chính Vaidis 2024; việc gán cho 'bài phản hồi' không xác nhận được.
+    review: dung
+  - id: n21
+    cau: 'Bem (1967): lý thuyết tự tri giác giải thích lại các hiện tượng bất hòa mà không cần giả định một động lực khó chịu về nhất quán.'
+    loai: phat-hien
+    nguon:
+      - bem1967
+    trich: it is unnecessary to postulate an aversive motivational drive toward consistency
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 'G1: khớp. Chỉ đọc tóm tắt (toàn văn không mở được). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ có tóm tắt (toàn văn không có trong kho Internet Archive): "it is unnecessary to postulate an aversive motivational drive toward consistency". Câu trên trang nói đúng mức đó.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/h0024835" ]
+    luot_2_ghi_chu: Chỉ đọc được tóm tắt (OpenAlex); đủ cho câu này.
+    review: dung
+  - id: n22
+    cau: Hai lý thuyết có thể giải thích cùng một kết quả, và tranh luận về cơ chế đã kéo dài nhiều thập kỷ; trong đợt tái lập 2024 nhóm viết bài trái quan điểm báo cáo khó chịu và xung đột nhiều hơn nhóm bài trung tính, điều khó hòa với tự tri giác thuần túy, nhưng chưa loại được cách giải thích "tự thuyết phục".
+    loai: phat-hien
+    nguon:
+      - vaidis2024
+      - bem1967
+    trich: This explanation has, historically, been widely debated in the literature on cognitive dissonance
+    vi_tri: Thảo luận (đoạn về self-perception và self-persuasion)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hai lý thuyết dự đoán giống nhau trong thí nghiệm gốc, và tranh luận về cơ chế thật sự vẫn tiếp tục." Chữ mới: "…có thể giải thích cùng một kết quả, tranh luận kéo dài nhiều thập kỷ" và thêm kết quả 2024. Lý do: "dự đoán giống nhau trong thí nghiệm gốc" không đối chiếu được (toàn văn Bem 1967 không mở được); nguồn mở nói tranh luận kéo dài. Review (Claude Sonnet 5.5, 10/11/2026): dung. Vaidis 2024 toàn văn: nhóm bài trái quan điểm báo cáo khó chịu và xung đột nhiều hơn nhóm bài trung tính, "contradicts an explanation in terms of self-perception processes"; "may not be able to definitively rule out" tự thuyết phục; tác giả cũng nêu thận trọng về quan hệ cảm xúc với thái độ. Chữ trên trang đã dùng "người viết bài trung tính"; đã sửa cau ở hồ sơ từ "nhóm trung bình" thành "nhóm bài trung tính".'
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf", "https://api.openalex.org/works/doi:10.1037/h0024835" ]
+    luot_2_ghi_chu: "'nhóm trung bình' trong câu nên đổi thành 'nhóm bài trung tính'."
+    review: dung
+  - id: n23
+    cau: 'Khung Đang tranh cãi: bất hòa có thật sự là "cảm giác khó chịu" không?'
+    loai: nhan
+    nguon:
+      - vaidis2024
+      - bem1967
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: khung chỉ nêu lý thuyết Bem. Chữ mới thêm kết quả 2024 (n22). Nhãn giữ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Đang tranh cãi chốt: bằng chứng mâu thuẫn hay chưa phân xử (Bem: không cần động lực khó chịu; Vaidis 2024: khó chịu cao hơn nhưng quan hệ với thái độ không rõ, chưa loại được tự thuyết phục).'
+    nhan: tranh-cai
+    co_so:
+      - bem1967
+      - vaidis2024
+    ly_do: 'Hai cách giải thích đều có bằng chứng, chưa phân xử: Bem (1967) bỏ giả định động lực khó chịu; Vaidis 2024 thấy khó chịu và xung đột cao hơn ở nhóm trái quan điểm (khó hòa với tự tri giác) nhưng thừa nhận chưa loại được "tự thuyết phục". Chưa có tổng hợp hay tái lập phân xử.'
+    luot_2: dung
+    luot_2_nguon: [ "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf", "https://api.openalex.org/works/doi:10.1037/h0024835" ]
+    luot_2_ghi_chu: "Nhãn Đang tranh cãi đạt thước đo: chưa có phép thử phân định; chính bài Vaidis nêu các cách giải thích thay thế."
+    review: dung
+  - id: n24
+    cau: Ta có thể thoát bất hòa bằng cách đổi hành vi, đổi niềm tin, thêm niềm tin mới, hoặc coi nhẹ mâu thuẫn; đổi niềm tin là điều nhóm 1 đô-la đã làm theo cách giải thích của Festinger và Carlsmith.
+    loai: phat-hien
+    nguon:
+      - openstax-bd
+      - simon1995
+    trich: We can reduce cognitive dissonance by bringing our cognitions, attitudes, and behaviors in line
+    vi_tri: OpenStax 12.3 (3 lối); Simon 1995 (coi nhẹ)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ta có bốn lối thoát"; đổi niềm tin là "lối phổ biến nhất"; lối 1 "tốt nhất nhưng khó nhất". Chữ mới: "ta có thể thoát theo những lối như sau"; bỏ "phổ biến nhất", "tốt nhất". Lý do: OpenStax nêu ba lối (đổi hành vi, đổi nhận thức qua hợp lý hóa, thêm nhận thức mới); lối "coi nhẹ" (trivialization) từ Simon, Greenberg & Brehm (1995, tóm tắt); không nguồn nào xếp "phổ biến nhất". Ví dụ hút thuốc, "ông nội 90 tuổi" là minh họa (gia-dinh). Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.3 nêu ba lối (đổi hành vi, đổi nhận thức qua hợp lý hóa hay phủ nhận, thêm nhận thức mới); lối "coi nhẹ" theo Simon, Greenberg & Brehm (1995, tóm tắt); trang viết "những lối như sau", không nói "ba" hay "bốn" là chuẩn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/", "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion" ]
+    luot_2_ghi_chu: Cách thứ tư (coi nhẹ mâu thuẫn) và sự phân loại bốn cách thuộc Festinger 1957, không mở sách; OpenStax nêu ba cách. Phần 'nhóm 1 đô-la đổi niềm tin' khớp bài gốc.
+    review: dung
+  - id: n25
+    cau: Cả bốn lối đều có thể làm ta dễ chịu hơn, nhưng chỉ lối đầu tiên thay đổi điều ta đã làm; đó có thể là một lý do ta khó đổi ý sau khi đã chọn (diễn giải theo lý thuyết).
+    loai: loi-khuyen
+    nguon:
+      - openstax-bd
+    trich: When we experience cognitive dissonance, we are motivated to decrease it because it is psychologically, physically, and mentally uncomfortable.
+    vi_tri: OpenStax 12.3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chỉ lối đầu tiên làm ta đúng hơn. Ba lối còn lại là những cách tự dỗ mình rất hiệu quả — và đó chính là lý do ta khó đổi ý". Chữ mới: bỏ "đúng hơn", "rất hiệu quả", "chính là lý do"; ghi là diễn giải theo lý thuyết. Lý do: nguồn chỉ nói ta có động lực giảm bất hòa; không nói các lối đó "hiệu quả" hay là lý do khó đổi ý. Review (Claude Sonnet 5.5, 10/11/2026): dung. câu đã ghi là diễn giải theo lý thuyết, dùng "có thể".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    luot_2_ghi_chu: Chỉ nói 'có thể'; không có nguồn thực nghiệm về 'khó đổi ý sau khi chọn' trong bài này, nhưng câu tự ghi là diễn giải lý thuyết.
+    review: dung
+  - id: n26
+    cau: "Khi mua sắm: theo lý thuyết, khi một lựa chọn đã xong mà không đổi được, ta có thể giảm khó chịu bằng cách đổi cách nghĩ về nó (OpenStax minh họa bằng người lính nhập ngũ không thể rời đi); áp vào chuyện mua đồ là suy luận từ lý thuyết, chưa kiểm trực tiếp, và không cho biết món đồ tốt hay dở."
+    loai: loi-khuyen
+    nguon:
+      - openstax-bd
+    trich: The last option, a change of behaviors, is not available to Joaquin. ... Joaquin can change his beliefs or attitudes.
+    vi_tri: OpenStax 12.3, ví dụ Joaquin (chọn con đường khó rồi đổi niềm tin)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Câu hỏi này không làm món đồ tốt lên, nhưng giúp lần mua sau sáng suốt hơn." Chữ mới: "Gợi ý này suy ra từ lý thuyết bất hòa, chưa được kiểm trực tiếp." Lý do: "giúp mua sáng suốt hơn" chưa có bằng chứng. Review (Claude Sonnet 5.5, 10/11/2026): sai (lời khuyên không nguồn): "hãy dừng lại và tự hỏi: mình khen vì nó tốt hay vì đã trả tiền" là lời khuyên chưa có bằng chứng. Đã viết lại thành mô tả theo lý thuyết (OpenStax 12.3, ví dụ người lính nhập ngũ không rời được, tự đổi niềm tin) và ghi suy luận cho chuyện mua đồ, bỏ lời khuyên.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Lời khuyên dựa trên giả định 'ta bênh món đồ vừa mua'; không mở được nguồn bậc 1–2 kiểm điều đó (nguồn cổ điển là mô hình lựa chọn tự do, có tranh cãi về phương pháp). Trang đã ghi 'chưa kiểm trực tiếp'.
+    review: sai
+  - id: n27
+    cau: 'Trong tranh luận: khi ai đó bị dồn vào chân tường mà vẫn cố thủ, theo lý thuyết có thể họ đang giảm cảm giác "mình đã sai", chứ không nhất thiết là "cứng đầu"; suy luận từ lý thuyết, chưa kiểm trực tiếp.'
+    loai: loi-khuyen
+    nguon:
+      - openstax-bd
+    trich: we are motivated to decrease it because it is psychologically, physically, and mentally uncomfortable
+    vi_tri: OpenStax 12.3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Có thể họ đang bảo vệ chính mình khỏi cảm giác ''mình đã sai''. Cách hiệu quả hơn cãi thắng: cho họ một lối thoát giữ thể diện". Chữ mới: thêm "Theo lý thuyết" và "gợi ý suy ra từ lý thuyết (chưa kiểm trực tiếp)". Lý do: "hiệu quả hơn" không có nguồn. Review (Claude Sonnet 5.5, 10/11/2026): sai (lời khuyên không nguồn): "cho họ một lối thoát giữ thể diện" chưa có nguồn kiểm hiệu quả. Đã bỏ lời khuyên và câu mẫu, giữ phần mô tả theo lý thuyết.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Lời khuyên 'cho lối thoát giữ thể diện' suy từ lý thuyết, không nguồn bậc 1–2 nào mở được kiểm điều này; trang đã ghi 'chưa kiểm trực tiếp'.
+    review: sai
+  - id: n28
+    cau: 'Với chính mình: nhận ra cơ chế này không giúp ta hết bị bất hòa; nó giúp phân biệt lý do thật với lý do ta bịa ra để tự an ủi.'
+    loai: loi-khuyen
+    nguon:
+      - openstax-bd
+    trich: In this type of situation, people can change their beliefs, their attitudes, or their behaviors.
+    vi_tri: OpenStax 12.3
+    ket_qua: da-bo
+    ghi_chu: 'Giữ nguyên chữ của trang. Câu mô tả hệ quả của việc nhận ra cơ chế; không có nghiên cứu đo điều này. Làm mềm: đã có câu "gợi ý suy ra từ lý thuyết" ở hai gợi ý kề trước; câu này là lời nhận xét chung, nên ghi chú là suy luận. Chỗ khó cho review: có thể bỏ nếu cho là thừa. Review (Claude Sonnet 5.5, 10/11/2026): sai (không nguồn): "nhận ra cơ chế giúp phân biệt lý do thật với lý do bịa" và "nó là một phần của con người" không có nguồn. Đã bỏ cả gạch đầu dòng "Với chính mình" khỏi trang.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Hai vế ('nhận ra cơ chế không giúp hết bất hòa'; 'giúp phân biệt lý do thật với lý do bịa') không có nguồn bậc 1–2 mở được.
+    review: sai
+  - id: n29
+    cau: Theo lý thuyết, bất hòa chỉ xuất hiện khi hành vi mâu thuẫn với điều quan trọng với hình ảnh bản thân; mô hình tuân thủ bị ép buộc dựa vào cảm giác được tự chọn; nhưng đợt tái lập 2024 không thấy quyền chọn tạo khác biệt.
+    loai: phat-hien
+    nguon:
+      - openstax-bd
+      - vaidis2024
+    trich: Later research documented that only conflicting cognitions that threaten individuals' positive self-image cause dissonance (Greenwald & Ronis, 1978).
+    vi_tri: OpenStax 12.3; Vaidis 2024, Thảo luận
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (Giới hạn): "Bất hòa mạnh nhất khi hành vi là tự nguyện… và khi vấn đề quan trọng với bản thân. Với những chuyện ta không quan tâm, chẳng có bất hòa nào để mà giảm." (G1: không dẫn nguồn). Chữ mới: dẫn OpenStax về hình ảnh bản thân; nêu rõ đợt 2024 không thấy tác động của quyền chọn, nên là dự đoán lý thuyết. Lý do: điều kiện "tự nguyện" không còn được ủng hộ ở đợt tái lập lớn. Cùng sửa ở quiz 3. Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.3 (Greenwald & Ronis 1978: chỉ nhận thức mâu thuẫn đe dọa hình ảnh bản thân mới gây bất hòa); Vaidis 2024 không thấy tác động của quyền chọn, trang ghi "dự đoán của lý thuyết" là đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion", "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    review: dung
+  - id: n30
+    cau: Thí nghiệm gốc dùng sinh viên Stanford năm 1959.
+    loai: lich-su
+    nguon:
+      - fest1959
+    trich: Seventy-one male students in the introductory psychology course at Stanford University were used in the experiment.
+    vi_tri: Mục Procedure
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "sinh viên Mỹ năm 1959, với số tiền 1 và 20 đô-la mang ý nghĩa rất cụ thể trong bối cảnh đó". Chữ mới: "sinh viên Stanford". Lý do: bài ghi Stanford; "ý nghĩa rất cụ thể" của số tiền không có trong bài (n11). Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959: sinh viên nam lớp nhập môn ở Stanford; bài đăng 1959.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    luot_2_ghi_chu: Bài đăng 1959 (J. Abnormal and Social Psychology).
+    review: dung
+  - id: n31
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào lặp lại đúng mô hình này (tuân thủ bị ép buộc) với người Việt.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu nào…". Chữ mới thêm mốc. Tìm 10/11/2026 trên Crossref: "cognitive dissonance Vietnamese students forced compliance" (xem lần tìm ở báo cáo); không thấy nghiên cứu thực nghiệm kiểu F&C với người Việt. Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Sonnet 5.5, 10/11/2026): dung. thời sự có mốc 11/2026, hạn 2027-11-01, nguồn tim-kiem-vn; câu chỉ nói "chưa tìm thấy".'
+    het_han: '2027-11-01'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works?query=cognitive%20dissonance%20induced%20compliance%20Vietnamese&rows=6" ]
+    luot_2_ghi_chu: Ngày kiểm 2026-11-10; tìm kiếm hạn chế (Crossref), câu là 'chưa tìm thấy'.
+    review: dung
+  - id: n32
+    cau: 'Ví dụ giả định: người đã theo một "thầy" chữa bệnh có thể khó thừa nhận phương pháp đó không hiệu quả vì thừa nhận là nhìn nhận một lựa chọn tốn kém là sai lầm (suy luận từ lý thuyết, chưa phải kết quả nghiên cứu trên người Việt).'
+    loai: phat-hien
+    nguon:
+      - openstax-bd
+    trich: Joaquin can change his beliefs or attitudes.
+    vi_tri: OpenStax 12.3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cơ chế ''bênh'' quyết định của mình là điều dễ quan sát trong đời sống Việt Nam: từ việc bảo vệ quan điểm… Văn hóa coi trọng ''giữ thể diện'' có thể khiến…". Chữ mới: bỏ khẳng định "dễ quan sát trong đời sống Việt Nam" (không nguồn), đặt ví dụ là giả định và điều kiện "Nếu văn hóa coi trọng…". Đã ghi rõ là suy luận. Review (Claude Sonnet 5.5, 10/11/2026): sai (suy đoán không nguồn): "nếu văn hóa coi trọng giữ thể diện, lối thoát 3 và 4 dễ được chọn hơn" không suy ra được từ lý thuyết hay nguồn nào. Đã bỏ câu ấy khỏi trang; giữ ví dụ giả định (gia-dinh) và câu "suy luận từ lý thuyết".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Ví dụ giả định kèm suy đoán văn hóa ('giữ thể diện' khiến lối thoát 3 và 4 dễ được chọn hơn) không có nguồn bậc 1–2; trang đã ghi suy luận từ lý thuyết.
+    review: sai
+  - id: n33
+    cau: 'Ngộ nhận "Thưởng càng nhiều thì càng đổi thái độ": thí nghiệm gốc thấy nhóm 20 đô-la không khác nhóm đối chứng về mặt thống kê, nhóm 1 đô-la thì khác; theo lý thuyết, phần thưởng lớn là lý do để không cần đổi thái độ.'
+    loai: phat-hien
+    nguon:
+      - fest1959
+    trich: The average rating in this condition is only -.05, slightly and not significantly higher than the Control condition. The difference between the One Dollar and Twenty Dollar conditions is significant at the .03 level ( t = 2.22).
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Thí nghiệm này cho thấy điều ngược lại trong một số điều kiện: phần thưởng quá lớn cho người ta lý do để không cần đổi thái độ." Chữ mới: nêu kết quả thí nghiệm gốc và để vế lý do là "theo lý thuyết". Lý do: "một số điều kiện" không rõ; kết quả là của một thí nghiệm, nay gắn nhãn tranh cãi (n15). Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): "nhóm 20 đô-la không đổi thái độ" mạnh hơn nguồn: F&C 1959 nói nhóm 20 đô-la (−0,05) "slightly and not significantly higher than the Control" (−0,45). Đã sửa thành "không khác nhóm đối chứng về mặt thống kê, còn nhóm 1 đô-la thì khác".'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: sai
+  - id: n34
+    cau: 'Ngộ nhận "Tôi luôn nhìn nhận quyết định của mình khách quan": đợt tái lập 2024 thấy thái độ của người viết bài trái quan điểm dịch về phía điều họ đã viết; theo lý thuyết bất hòa đó là dấu hiệu ta không phải lúc nào cũng nhìn điều mình đã làm một cách khách quan; lý thuyết tự tri giác giải thích khác nên cơ chế còn tranh cãi.'
+    loai: phat-hien
+    nguon:
+      - vaidis2024
+      - openstax-bd
+    trich: Participants became more in favor of the essay topic after writing counterattitudinal arguments.
+    vi_tri: Vaidis 2024, Thảo luận
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Sau khi đã chọn, ta có xu hướng tự động ''làm đẹp'' cho lựa chọn của mình và ''bôi xấu'' phương án bị loại." Chữ mới: câu trên. Lý do: "làm đẹp lựa chọn, bôi xấu phương án loại" là mô hình lựa chọn khó khăn, không có nguồn đã mở; kết luận chung hạ về mức nguồn đã mở nói. Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): "Nhiều nghiên cứu cho thấy … nên ta không phải lúc nào cũng khách quan" nhảy từ thái độ dịch theo hành vi sang "không khách quan", trong khi tự tri giác (Bem) giải thích cùng kết quả như suy luận hợp lý. Chỉ nguồn đã mở là Vaidis 2024. Đã sửa: nêu kết quả 2024, nói đó là dấu hiệu theo lý thuyết bất hòa, cơ chế còn tranh cãi.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/", "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    review: sai
+  - id: n35
+    cau: 'Nhãn của ngộ nhận trên: Đã bị bác bỏ ("luôn khách quan" là khẳng định tuyệt đối đã bị bác).'
+    loai: nhan
+    nguon:
+      - vaidis2024
+      - openstax-bd
+    ket_qua: da-bo
+    ghi_chu: 'Đây là nhãn của ngộ nhận (niềm tin sai) như ở các trang Trí nhớ. Chỗ khó: ngộ nhận nói "luôn"; bằng chứng bác bỏ là bằng chứng bất hòa vừa nêu (tranh cãi về độ mạnh), nên nhãn Đã bị bác bỏ chỉ đứng ở mức "luôn khách quan" sai, không ở mức cơ chế. Nếu thẻ trong ngo-nhan.yml ghi khác thì khớp thẻ. Review (Claude Sonnet 5.5, 10/11/2026): sai (nhãn không đạt thước đo): nhãn Đã bị bác bỏ đòi các kiểm tra đủ mạnh liên tục thất bại hay bằng chứng gốc không còn giá trị (mục 4); chỉ có Vaidis 2024 và OpenStax, và cơ chế chính lại đang tranh cãi (n23), nên nhãn này mâu thuẫn với phần còn lại của trang. Đã bỏ chip nhãn khỏi ngộ nhận này, dùng chữ "Chưa chắc" (xem n34).'
+    nhan: bac-bo
+    co_so:
+      - vaidis2024
+      - openstax-bd
+    ly_do: Khẳng định tuyệt đối "luôn nhìn nhận quyết định của mình một cách khách quan" bị bác bởi bằng chứng thái độ dịch theo hành vi (Vaidis 2024; OpenStax); nhận định nhãn xét theo khẳng định của ngộ nhận chứ không theo cơ chế.
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/", "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    luot_2_ghi_chu: Nhãn Đã bị bác bỏ áp cho khẳng định tuyệt đối 'luôn khách quan'; chấp nhận được vì chỉ cần phản ví dụ, nhưng khác nghĩa với 'bác bỏ sau nhiều lần kiểm thất bại' ở thước đo mục 4.
+    review: sai
+  - id: n36
+    cau: 'Ngộ nhận "Người cố chấp là người thiếu thông minh": ở thiên kiến "bênh phía mình", người có năng lực nhận thức cao không ít thiên kiến hơn (Stanovich và West, 2008); theo lý thuyết bất hòa điều bị đe dọa là hình ảnh bản thân.'
+    loai: phat-hien
+    nguon:
+      - stanovich2008
+      - openstax-bd
+    trich: we failed to find that participants of higher cognitive ability displayed less myside bias or less one-side bias
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cố thủ sau khi đã chọn là cơ chế tâm lý phổ biến, xảy ra với cả người thông minh. Vấn đề không nằm ở trí tuệ mà ở nhu cầu bảo vệ hình ảnh bản thân." Chữ mới: câu trên. Lý do: không nguồn cho "phổ biến" và "xảy ra với cả người thông minh" ở cố thủ sau lựa chọn; nguồn gần nhất là thiên kiến bênh phía mình (chỉ đọc tóm tắt). Review (Claude Sonnet 5.5, 10/11/2026): dung. Stanovich & West (2008), tóm tắt: không thấy người năng lực nhận thức cao ít thiên kiến "bênh phía mình"; trang nói rõ "ở một dạng gần"; "hình ảnh bản thân" theo OpenStax.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.94.4.672" ]
+    review: dung
+  - id: n37
+    cau: Xem thêm các ngộ nhận khác ở trang Ngộ nhận.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: src/data/trang.yml có id ngo-nhan/index; link sẽ hiện khi trang lên. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: ngo-nhan/index có trong src/data/trang.yml; trang chưa lên bản build nên link thành "sắp có".'
+    review: dung
+  - id: n38
+    cau: 'Đọc thêm: Vì sao ta tin điều vô lý? (suy luận như luật sư bào chữa); Vì sao ta chỉ thấy điều mình muốn thấy? (tìm bằng chứng ủng hộ thay vì bác bỏ).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: kham-pha/tu-duy/tin-dieu-vo-ly và kham-pha/tu-duy/thien-kien-xac-nhan có trong src/data/trang.yml; mô tả khớp tên trang (D5-L3 đang kiểm nội dung của hai trang đó). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: hai trang kham-pha/tu-duy/tin-dieu-vo-ly và thien-kien-xac-nhan có trong src/data/trang.yml; tên và mô tả khớp bản trang cũ (luật sư bào chữa, tìm bằng chứng ủng hộ); chưa có file ở worktree này (D5-L3).'
+    review: dung
+  - id: n39
+    cau: 'Quiz 1: nhóm 1 đô-la chấm +1,35, cao hơn nhóm 20 đô-la (−0,05; p < 0,03) và đối chứng (−0,45).'
+    loai: so-lieu
+    nguon:
+      - fest1959
+    trich: The difference between the One Dollar and Twenty Dollar conditions is significant at the .03 level (t = 2.22).
+    vi_tri: Mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cao hơn hẳn". Chữ mới: kèm "chênh lệch có ý nghĩa thống kê, p < 0,03". Lý do: n4. Review (Claude Sonnet 5.5, 10/11/2026): dung. F&C 1959: +1,35, −0,05, −0,45; p < 0,03 so với nhóm 20 đô-la.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    luot_2_ghi_chu: Câu viết 'p < 0,03' khớp với 'significant at the .03 level' của bài.
+    review: dung
+  - id: n40
+    cau: 'Quiz 2: theo giải thích của Festinger và Carlsmith, 20 đô-la là lý do đủ lớn để biện minh cho lời nói dối nên không có mâu thuẫn nào cần giải quyết.'
+    loai: phat-hien
+    nguon:
+      - fest1959
+    trich: In evaluating the total magnitude of dissonance one must take account of both dissonances and consonances.
+    vi_tri: Phần mở đầu, suy luận 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Vì sao nhóm 20 đô-la không cần thay đổi thái độ?" Chữ mới thêm "Theo giải thích của Festinger và Carlsmith". Lý do: là giải thích của lý thuyết, không phải điều đo trực tiếp. Review (Claude Sonnet 5.5, 10/11/2026): dung. giải thích của lý thuyết, đã ghi "Theo giải thích của Festinger và Carlsmith"; không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/Festinger/" ]
+    review: dung
+  - id: n41
+    cau: 'Quiz 3: theo lý thuyết, bất hòa mạnh hơn khi hành vi tự chọn và vấn đề quan trọng với hình ảnh bản thân; đợt tái lập 2024 không thấy quyền chọn tạo khác biệt.'
+    loai: phat-hien
+    nguon:
+      - openstax-bd
+      - vaidis2024
+    trich: The lack of an effect of choice on attitude in our multilab replication was unexpected.
+    vi_tri: Vaidis 2024, Thảo luận
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: câu hỏi "Điều kiện nào làm bất hòa nhận thức mạnh nhất?", đáp án "Hành vi tự nguyện và vấn đề quan trọng với bản thân", giải thích khẳng định. Chữ mới: "Theo lý thuyết bất hòa, điều kiện nào làm bất hòa mạnh hơn?" và lưu ý đợt 2024. Lý do: n29. Review (Claude Sonnet 5.5, 10/11/2026): dung. Vaidis 2024: "lack of an effect of choice on attitude ... was unexpected"; trang ghi đúng "theo lý thuyết" và "dự đoán".'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion", "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    review: dung
+  - id: n42
+    cau: 'Quiz 4: xe đã mua không trả lại được nên theo lý thuyết ta có thể "làm đẹp" cho lựa chọn để giảm khó chịu; lời khen lúc này chưa chắc khách quan.'
+    loai: phat-hien
+    nguon:
+      - openstax-bd
+    trich: The last option, a change of behaviors, is not available to Joaquin.
+    vi_tri: OpenStax 12.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tâm trí tự động ''làm đẹp'' cho lựa chọn". Chữ mới: "theo lý thuyết, ta có thể…". Lý do: "tự động" mạnh hơn nguồn. Tình huống mua xe là giả định (gia-dinh). Review (Claude Sonnet 5.5, 10/11/2026): dung. chỉ nói "theo lý thuyết ... có thể", tình huống mua xe là giả định.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion" ]
+    luot_2_ghi_chu: Câu chỉ nói 'theo lý thuyết ... có thể ... chưa chắc khách quan'; không tuyên bố bằng chứng riêng.
+    review: dung
+  - id: n43
+    cau: 'Quiz 5: Bem (1967) cho rằng không cần cảm giác khó chịu: ta quan sát hành vi của mình rồi suy ra thái độ; hai lý thuyết giải thích cùng kết quả bằng hai cơ chế; cơ chế được gắn nhãn Đang tranh cãi.'
+    loai: phat-hien
+    nguon:
+      - bem1967
+    trich: it is unnecessary to postulate an aversive motivational drive toward consistency
+    vi_tri: Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đó là lý do cơ chế thật sự của hiệu ứng vẫn được gắn nhãn ''Đang tranh cãi''." Chữ mới: bỏ "vẫn" nhỏ; ý giữ. Lý do: tránh gợi nhãn cũ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Bem 1967 (tóm tắt): không cần giả định động lực khó chịu; nhãn Đang tranh cãi theo n23.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/h0024835", "http://gala.gre.ac.uk/id/eprint/45716/7/45716_EVANS_A_multilab_replication_of_the_induced_compliance_paradigm_of_cognitive_dissonance.pdf" ]
+    review: dung
+  - id: n44
+    cau: Hộp "Tóm tắt nhanh" (::tom-tat) dựng từ ý chính của các khung nhãn của trang.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: ::tom-tat đọc các khung nhãn trong trang (src/plugins/thanh-phan.mjs). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: ::tom-tat đọc các khung vung-chac, kha-vung, tranh-cai, bac-bo (src/plugins/thanh-phan.mjs); trang có các khung ấy.'
+    review: dung
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: Khung Vững chắc "hàng chục năm nghiên cứu… một trong những ý tưởng được kiểm tra nhiều nhất"
+    moi: Khung Khá vững nêu cả kết quả ủng hộ lẫn hạn chế và đợt tái lập 2024
+    ly_do: 'n17: không có tổng hợp; mô hình tái lập lớn thất bại ở phần quyền chọn.'
+  - cu: '"Kết quả 1 đô-la > 20 đô-la từng được lặp lại trong một số biến thể…"; "thang đo thái độ khá đơn giản"'
+    moi: Bỏ vế "từng được lặp lại"; "một câu hỏi trên thang 11 điểm"; "60 người được phân tích"; "có đăng ký trước"
+    ly_do: n15.
+  - cu: '"hơn hẳn nhóm 20 đô-la"; "(vẫn thấy chán)"; "(thấy khá thú vị!)"; "Tức là: chán thật."'
+    moi: '"hơn… với chênh lệch có ý nghĩa thống kê (p < 0,03)"; "(gần mức trung lập)"; "(nghiêng về phía thú vị)"; "hơi nghiêng về phía chán"'
+    ly_do: n4, n9, n12.
+  - cu: '"xoay từng chốt gỗ"; "(Vào năm 1959, 20 đô-la là một khoản kha khá…)"; "vô thức"; "trở thành niềm tin thật"'
+    moi: '"chốt vuông"; "Theo lý thuyết, 20 đô-la là lý do đủ lớn…"; bỏ "vô thức"; "nhích về phía điều họ đã nói"'
+    ly_do: n8, n11, n14.
+  - cu: 'Bốn lối thoát: "phổ biến nhất", "tốt nhất nhưng khó nhất", "chỉ lối đầu tiên làm ta đúng hơn… rất hiệu quả… chính là lý do"'
+    moi: Bỏ các so sánh không nguồn; nêu là diễn giải theo lý thuyết
+    ly_do: n24, n25.
+  - cu: '"Bất hòa mạnh nhất khi hành vi là tự nguyện… và quiz 3 tương ứng'
+    moi: Theo lý thuyết; đợt tái lập 2024 không thấy quyền chọn tạo khác biệt
+    ly_do: n29, n41.
+  - cu: 'Phần Việt Nam: "chưa tìm thấy…"; "dễ quan sát trong đời sống Việt Nam"'
+    moi: '"Tính đến 11/2026…"; ví dụ giả định có điều kiện'
+    ly_do: n31, n32.
+  - cu: Ngộ nhận 2 và 3 ("làm đẹp… bôi xấu"; "xảy ra với cả người thông minh")
+    moi: Viết theo mức nguồn (Vaidis 2024; Stanovich & West 2008)
+    ly_do: n34, n36.
+  - cu: Hình festinger-diverging, lời chú "tích cực hơn hẳn nhóm 20 đô-la"
+    moi: (chưa đổi; người giao đổi thành "cao hơn, chênh lệch có ý nghĩa thống kê")
+    ly_do: 'n13: hình sai ghi lại, không sửa.'
+  - cu: 'hình festinger-diverging, chú thích: "tích cực hơn hẳn nhóm 20 đô-la (−0,05) và nhóm đối chứng (−0,45)"'
+    moi: '"cao hơn nhóm 20 đô-la (−0,05) và nhóm đối chứng (−0,45); chênh lệch có ý nghĩa thống kê (p < 0,03 so với nhóm 20 đô-la, p < 0,02 so với nhóm đối chứng)"'
+    ly_do: "Review n13: Festinger & Carlsmith 1959."
+  - cu: '"…thái độ chỉ được đo bằng một câu hỏi trên thang 11 điểm."'
+    moi: '"…chênh lệch có ý nghĩa thống kê chỉ thấy ở một trong bốn câu hỏi phỏng vấn (độ thú vị, thang 11 điểm); câu hỏi về mong muốn tham gia lại cùng chiều nhưng chưa đạt ý nghĩa thống kê."'
+    ly_do: Review n15.
+  - cu: '"Nhưng chưa có phân tích tổng hợp chung cho các mô hình, nhiều nghiên cứu kinh điển … ([Vaidis và cộng sự, 2024])"'
+    moi: '"Nhưng các tác giả đánh giá lại tài liệu nhận thấy nhiều nghiên cứu kinh điển … ([Sleegers và cộng sự, 2024])"; mục Nguồn: tác giả đầu Sleegers, 7(4)'
+    ly_do: 'Review n17, n20: vế "chưa có tổng hợp" không kiểm được; sai tác giả đầu và số tập.'
+  - cu: 'Áp dụng vào đời sống: ba gạch đầu dòng lời khuyên (tự hỏi mình khen vì tốt hay vì đã trả tiền; cho lối thoát giữ thể diện; "Với chính mình…")'
+    moi: hai gạch đầu dòng mô tả theo lý thuyết, ghi rõ suy luận, không lời khuyên; bỏ gạch "Với chính mình"
+    ly_do: "Review n26, n27, n28: lời khuyên không nguồn."
+  - cu: '"Nếu văn hóa coi trọng "giữ thể diện", lối thoát số 4 … và số 3 … có thể dễ được chọn hơn."'
+    moi: (bỏ câu)
+    ly_do: "Review n32: suy đoán không nguồn."
+  - cu: '"nhóm 20 đô-la không đổi thái độ, nhóm 1 đô-la có"'
+    moi: '"nhóm 20 đô-la không khác nhóm đối chứng về mặt thống kê, còn nhóm 1 đô-la thì khác"'
+    ly_do: Review n33.
+  - cu: 'Ngộ nhận "Tôi luôn nhìn nhận quyết định…": :nhan[bac-bo] "Nhiều nghiên cứu cho thấy thái độ của ta có thể dịch …, nên ta không phải lúc nào cũng nhìn quyết định của mình một cách khách quan."'
+    moi: '"Chưa chắc." (không chip nhãn) + kết quả 2024, theo lý thuyết bất hòa, tự tri giác giải thích khác nên còn tranh cãi'
+    ly_do: Review n34, n35.

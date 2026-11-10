@@ -1,0 +1,915 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/chu-y-tri-giac/da-nhiem-so
+trang: src/content/docs/kham-pha/chu-y-tri-giac/da-nhiem-so.md
+nguon_cu: ../psyche-zero/docs/kham-pha/chu-y-tri-giac/da-nhiem-so.md
+tang: mo-rong
+muc: V2
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d5-l3
+    ma_bam: sha256:8fa26a4a6282cbaeb1e0714fbae892e82179256d9394e8ec9cbc6e5aa1931ca1
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L3 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L3)
+      review: Claude Sonnet 5.5 (agent review D5-L3, 10/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l3-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: ophir2009
+    ten: 'Ophir, Nass & Wagner (2009), PNAS 106(37), 15583–15587: tóm tắt (OpenAlex); toàn văn PNAS và PMC không mở được'
+    link: https://doi.org/10.1073/pnas.0903620106
+    toan_van: false
+  - id: stanford2009
+    ten: 'Thông cáo của Đại học Stanford đăng lại trên ScienceDaily (25/8/2009), "Media multitaskers pay mental price": đọc toàn văn thông cáo'
+    link: https://www.sciencedaily.com/releases/2009/08/090825113133.htm
+    toan_van: true
+  - id: uncapher2018
+    ten: 'Uncapher & Wagner (2018), PNAS 115(40), 9889–9896: tóm tắt (Europe PMC, PMC6176627); toàn văn không mở được'
+    link: https://doi.org/10.1073/pnas.1611612115
+    toan_van: false
+  - id: ward2017
+    ten: 'Ward, Duke, Gneezy & Bos (2017), J Assoc Consum Res 2(2), 140–154: tóm tắt (OpenAlex); toàn văn không mở được'
+    link: https://doi.org/10.1086/691462
+    toan_van: false
+  - id: ruiz2022
+    ten: 'Ruiz Pardo & Minda (2022), Acta Psychol 230, 103717: tóm tắt (Europe PMC; Western University, Canada); làm lại thí nghiệm 2 của Ward'
+    link: https://doi.org/10.1016/j.actpsy.2022.103717
+    toan_van: false
+  - id: hartanto2024
+    ten: 'Hartanto và cộng sự (2024), Technol Mind Behav 5(1), 1–14: tóm tắt qua trang JCU Research Online và APA Open (tìm web 10/11/2026): 33 nghiên cứu, 4.368 người, d = −0,02'
+    link: https://doi.org/10.1037/tmb0000123
+    toan_van: false
+  - id: wiradhany2017
+    ten: 'Wiradhany & Nieuwenstein (2017), Atten Percept Psychophys 79(8), 2620–2641: toàn văn (PMC5662702; đọc lại ở review 10/11/2026); thí nghiệm 1 sinh viên Indonesia (Universitas Gadjah Mada), thí nghiệm 2 sinh viên Hà Lan (Groningen)'
+    link: https://doi.org/10.3758/s13414-017-1408-4
+    toan_van: true
+  - id: parry2021
+    ten: 'Parry & le Roux (2021), Cyberpsychology 15(2), art. 7: toàn văn (PDF, cyberpsychology.eu; đọc ở review 10/11/2026): 118 phép đo, z chung = 0,138; bài kiểm tra hiệu suất z = 0,091; tự báo cáo z = 0,200'
+    link: https://doi.org/10.5817/cp2021-2-7
+    toan_van: true
+  - id: sanbonmatsu2013
+    ten: 'Sanbonmatsu, Strayer, Medeiros-Ward & Watson (2013), PLoS ONE 8(1), e54402: toàn văn (PMC3553130; đọc ở review 10/11/2026)'
+    link: https://doi.org/10.1371/journal.pone.0054402
+    toan_van: true
+  - id: watson2010
+    ten: 'Watson & Strayer (2010), Psychon Bull Rev 17(4), 479–485: toàn văn (PDF, Springer)'
+    link: https://doi.org/10.3758/PBR.17.4.479
+    toan_van: true
+  - id: kiesel2010
+    ten: 'Kiesel và cộng sự (2010), Psychol Bull 136(5), 849–874: tóm tắt (OpenAlex), bài tổng quan về chuyển đổi nhiệm vụ'
+    link: https://doi.org/10.1037/a0019842
+    toan_van: false
+  - id: wiki-simon
+    ten: 'Wikipedia, "Attention economy" (nguồn bậc ba, đọc 10/11/2026): trích Simon (1971), Designing Organizations for an Information-rich World, tr. 40–41, "a wealth of information creates a poverty of attention"'
+    link: https://en.wikipedia.org/wiki/Attention_economy
+    toan_van: false
+  - id: hanoi2026
+    ten: 'Nguyễn Thị T. và cộng sự (2026), Engineering and Technology for Sustainable Development 36(3), 115–125: khảo sát hành vi đa nhiệm truyền thông, 257 sinh viên Hà Nội, thang MMT-R (siêu dữ liệu Crossref 10/11/2026; tóm tắt OpenAlex ở lượt 1)'
+    link: https://doi.org/10.51316/jst.191.etsd.2026.36.3.15
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "media multitasking Vietnamese students cognitive", "smartphone presence cognitive performance Vietnam": không có nghiên cứu đo tác động nhận thức của đa nhiệm truyền thông hay "brain drain" trên người Việt trong sáu kết quả đầu mỗi truy vấn; có khảo sát hành vi ở Hà Nội (hanoi2026)'
+    link: https://api.openalex.org/works?search=media%20multitasking%20Vietnamese%20students%20cognitive
+    toan_van: false
+  - id: simon1971
+    ten: "Simon (1971), Designing organizations for an information-rich world, trong Greenberger (Chủ biên), Computers, communications, and the public interest, tr. 37–72: toàn văn (PDF, gwern.net; đọc ở review 10/11/2026)"
+    link: https://www.gwern.net/doc/design/1971-simon.pdf
+    toan_van: true
+  - id: boettger2023
+    ten: "Böttger, Poschik & Zierer (2023), Behav Sci 13(9), 751: tóm tắt (Europe PMC, PMC10525686); phân tích tổng hợp 22 nghiên cứu, gộp việc dùng và sự hiện diện của điện thoại"
+    link: https://doi.org/10.3390/bs13090751
+    toan_van: false
+  - id: stothart2015
+    ten: "Stothart, Mitchum & Yehnert (2015), J Exp Psychol Hum Percept Perform 41(4), 893–897: tóm tắt (Europe PMC)"
+    link: https://doi.org/10.1037/xhp0000100
+    toan_van: false
+  - id: fitz2019
+    ten: "Fitz và cộng sự (2019), Comput Hum Behav 101, 84–94: tóm tắt qua trang Duke Scholars (scholars.duke.edu/publication/1402953), siêu dữ liệu khớp Crossref; thí nghiệm ngẫu nhiên ngoài đời, 237 người"
+    link: https://doi.org/10.1016/j.chb.2019.07.016
+    toan_van: false
+  - id: pashler1994
+    ten: "Pashler (1994), Psychol Bull 116(2), 220–244: tóm tắt (Europe PMC); tổng quan về nhiễu khi làm hai việc cùng lúc"
+    link: https://doi.org/10.1037/0033-2909.116.2.220
+    toan_van: false
+  - id: wasylyshyn2011
+    ten: "Wasylyshyn, Verhaeghen & Sliwinski (2011), Psychol Aging 26(1), 15–20: tóm tắt (Europe PMC); phân tích tổng hợp 26 bài về chi phí chuyển đổi nhiệm vụ"
+    link: https://doi.org/10.1037/a0020912
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: Ophir, Nass và Wagner (2009) thấy người đa nhiệm truyền thông nặng làm kém hơn ở các bài kiểm tra kiểm soát nhận thức, nhưng nhiều kết quả sau chưa lặp lại; Uncapher và Wagner (2018) tổng quan một thập kỷ nghiên cứu (mô tả của trang).
+    loai: phat-hien
+    nguon:
+      - ophir2009
+      - wiradhany2017
+      - uncapher2018
+    trich: Results showed that heavy media multitaskers are more susceptible to interference from irrelevant environmental stimuli and from irrelevant representations in memory.
+    vi_tri: Tóm tắt Ophir 2009
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (description): "người đa nhiệm truyền thông nặng chuyển đổi nhiệm vụ kém hơn" (nói như kết quả chắc; không lặp lại ở bốn nghiên cứu sau, G1 #1). Chữ mới thêm "nhiều kết quả sau chưa lặp lại". Review (Claude Sonnet 5.5, 10/11/2026): dung. Ophir 2009 (tóm tắt Europe PMC): nhóm nặng dễ nhiễu hơn, chuyển đổi nhiệm vụ kém hơn; Wiradhany 2017 (toàn văn): kết quả chuyển đổi không lặp lại ở bốn nghiên cứu sau; Parry & le Roux 2021: "ten years on, we are no closer to understanding". Khớp chữ mô tả.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106", "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Ophir 2009 (tóm tắt, toàn văn bản PDF lưu trữ) và Uncapher & Wagner 2018 khớp; "chưa lặp lại" khớp Wiradhany & Nieuwenstein 2017 và Parry & le Roux 2021.
+  - id: n2
+    cau: Não người gần như không làm tốt được hai việc đòi hỏi chú ý cùng lúc; cái gọi là "đa nhiệm" thường thực chất là chuyển đổi nhiệm vụ, và mỗi lần chuyển đều tốn "phí chuyển đổi" (chậm hơn, sai nhiều hơn).
+    loai: phat-hien
+    nguon:
+      - watson2010
+      - kiesel2010
+      - pashler1994
+    trich: Whereas the vast majority of participants showed significant performance decrements in dual-task conditions
+    vi_tri: Tóm tắt Watson & Strayer 2010
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Não người không làm được…" (G1 #5: tuyệt đối hóa); G1 đã sửa thành "gần như không". Phần "thực chất là chuyển đổi nhiệm vụ… tốn phí" suy từ Kiesel (2010) về switch cost; "thực chất" là cách nói của trang. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "…cái ta gọi là ''đa nhiệm'' thực chất là chuyển đổi nhiệm vụ…" Chữ mới: "…thường thực chất là chuyển đổi nhiệm vụ…" Lý do: nguồn (Watson & Strayer 2010: đa số giảm hiệu suất, 2,5% không; Pashler 1994: "stubborn bottleneck") cho thấy hai việc đòi hỏi chú ý thường gây nhiễu, không cho phép nói chắc "thực chất" cho mọi người.'
+    review: sai
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/PBR.17.4.479", "https://doi.org/10.1037/a0019842", "https://kops.uni-konstanz.de/bitstreams/5a39a685-94f4-4ab0-b450-6bc0145db6c7/download" ]
+    luot_2_ghi_chu: 'Watson & Strayer: đa số giảm hiệu suất khi làm hai việc đòi hỏi chú ý (có ngoại lệ ~2,5%). Kiesel và cộng sự 2010: phí chuyển đổi là hiện tượng chuẩn của tâm lý học nhận thức. "Gần như" đã chừa chỗ cho ngoại lệ.'
+  - id: n3
+    cau: Nhóm đa nhiệm nhiều nhất lại chuyển đổi nhiệm vụ kém hơn, dù kết quả này chưa được các nghiên cứu sau lặp lại.
+    loai: phat-hien
+    nguon:
+      - ophir2009
+      - wiradhany2017
+    trich: Ophir et al.'s finding of increased switch costs in HMMs was not replicated in four subsequent studies
+    vi_tri: Wiradhany 2017, tr. 2621
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "những người đa nhiệm nhiều nhất lại thường là những người chuyển đổi nhiệm vụ kém nhất" (G1 #1: sai, kết luận mạnh hơn nguồn). Theo G1-L03 (22/10/2026): sửa đã áp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Wiradhany 2017 (toàn văn): "Ophir et al.''s finding of increased switch costs in HMMs was not replicated in four subsequent studies"; chữ trang chỉ nói chưa lặp lại.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106", "https://doi.org/10.5817/cp2021-2-7" ]
+    luot_2_ghi_chu: 'Ophir: phí chuyển đổi của nhóm nặng lớn hơn 167 ms. Parry & le Roux (toàn văn): bằng chứng không ủng hộ ý cho rằng đa nhiệm giúp chuyển đổi tốt hơn và "not associated with attenuated abilities to manage tasks", tức không lặp lại kết quả chuyển đổi kém.'
+  - id: n4
+    cau: Đa nhiệm truyền thông (media multitasking) là dùng nhiều luồng truyền thông cùng lúc, hẹp hơn "đa nhiệm" nói chung; ví dụ vừa xem TV vừa lướt điện thoại, vừa học vừa nghe nhạc.
+    loai: dinh-nghia
+    nguon:
+      - uncapher2018
+    trich: individuals who differ in the extent to which they simultaneously engage with multiple media streams, or "media multitasking."
+    vi_tri: Tóm tắt Uncapher & Wagner 2018
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ có thêm "đa nhiệm truyền thông gắn liền với các thiết bị được thiết kế để giành giật chú ý của bạn" (không nguồn); đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Uncapher & Wagner 2018 (tóm tắt Europe PMC) định nghĩa đa nhiệm truyền thông là cùng lúc dùng nhiều luồng truyền thông. Ví dụ của trang là minh họa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/s13414-017-1408-4", "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Bài Ophir 2009 chưa mở; mô tả qua bản tái lập. Chi tiết 'bài chuyển đổi nhiệm vụ' và 'luyện tập mỗi ngày' không kiểm trực tiếp.
+    review: dung
+  - id: n5
+    cau: 'Herbert Simon viết từ năm 1971 rằng trong thế giới thừa mứa thông tin, thứ khan hiếm không phải thông tin mà là chú ý: "sự giàu có về thông tin tạo ra sự nghèo nàn về chú ý".'
+    loai: lich-su
+    nguon:
+      - wiki-simon
+      - simon1971
+    trich: Hence a wealth of information creates a poverty of attention and a need to allocate that attention efficiently among the overabundance of information sources that might consume it.
+    vi_tri: Simon 1971, tr. 40–41 (toàn văn, gwern.net)
+    ket_qua: dung
+    ghi_chu: 'Nguồn bậc ba (trích Simon). Chỗ khó: lượt 2 nên đối chiếu bản gốc. Theo G1-L03 (22/10/2026): KHỚP (Simon 1971). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã mở bản gốc: Simon (1971), toàn văn, tr. 40–41: "Hence a wealth of information creates a poverty of attention and a need to allocate that attention efficiently among the overabundance of information sources that might consume it". Khớp; không còn chỉ dựa Wikipedia.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://atelierdesfuturs.org/wp-content/uploads/2025/07/1971-simon.pdf" ]
+    luot_2_ghi_chu: Toàn văn bài Simon (in trong Greenberger, Johns Hopkins Press, 1971), tr. 40-41, cùng đoạn "information consumes the attention of its recipients"; ý "chú ý là thứ khan hiếm" đúng.
+  - id: n6
+    cau: Các nền tảng miễn phí bán sự chú ý của bạn cho nhà quảng cáo; mỗi thông báo, video tự chạy, gợi ý là một cái móc câu được tính toán để giữ bạn ở lại; bạn đang đấu với cả một ngành công nghiệp nghìn tỷ đô được tối ưu hóa để thắng mình.
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ khỏi trang: không có nguồn đã mở (khẳng định về thiết kế nền tảng và quy mô ngành). Chữ cũ: toàn bộ ba câu cuối của đoạn "Điều gì đang xảy ra?" (trừ phần Simon). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã bỏ; kiểm trang: không còn câu về nền tảng bán chú ý, móc câu, ngành công nghiệp nghìn tỷ đô. Review lần 2 (Claude Sonnet 5.5, 10/11/2026): dung. Lượt 2 chấm đúng câu gốc là quá mạnh (quy mô ngành quảng cáo là cả ngành, "mỗi thông báo là cái móc được tính toán" không có nguồn đo); câu đã bỏ khỏi trang (ket_qua da-bo) từ review lần 1 nên không còn gì để sửa. Không thêm câu thay thế "cau_dung": bản đó cần số Magna/GroupM chưa mở toàn văn và trang không cần. Kiểm trang: chỉ còn Simon (1971), không còn quảng cáo, móc, nghìn tỷ.'
+    review: dung
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1016/j.chb.2019.07.016", "https://www.axios.com/2024/12/09/ad-revenue-growth-2024" ]
+    luot_2_ghi_chu: 'câu đúng: Nhiều nền tảng miễn phí kiếm tiền từ quảng cáo dựa trên thời gian và sự chú ý của người dùng, và nhiều tính năng (thông báo, tự phát video, gợi ý) được thiết kế để giữ người dùng ở lại; ngành quảng cáo toàn cầu cỡ khoảng một nghìn tỷ đô la năm 2024.; Mô hình kinh doanh quảng cáo là có thật; quảng cáo toàn cầu khoảng 0,93-1,04 nghìn tỷ USD năm 2024 (Magna, GroupM) nhưng đó là cả ngành quảng cáo, không riêng ngành chú ý. "Mỗi thông báo/video/gợi ý là cái móc được tính toán" và "tối ưu hóa để thắng mình" là khái quát mạnh, không có nguồn đo; thông báo cũng có chức năng chính đáng.'
+  - id: n7
+    cau: 'Ophir và cộng sự (2009): nhóm nghiên cứu ở Stanford cho sinh viên làm bảng hỏi để tính chỉ số đa nhiệm truyền thông, rồi chọn hai nhóm ở hai đầu (đa nhiệm nặng và nhẹ).'
+    loai: phat-hien
+    nguon:
+      - ophir2009
+      - wiradhany2017
+    trich: A trait media multitasking index was developed to identify groups of heavy and light media multitaskers.
+    vi_tri: Tóm tắt Ophir 2009; Wiradhany 2017 ("one standard deviation below or above the group mean")
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03 (22/10/2026): khớp, nhưng "khoảng 100 sinh viên làm bảng hỏi" SAI (n8). Review (Claude Sonnet 5.5, 10/11/2026): dung. Ophir 2009 (tóm tắt) và Wiradhany 2017 (toàn văn): chỉ số đa nhiệm truyền thông, chọn nhóm cao/thấp một độ lệch chuẩn quanh trung bình. Khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106" ]
+    luot_2_ghi_chu: Bảng hỏi 262 sinh viên Stanford; chọn nhóm cách trung bình từ 1 độ lệch chuẩn trở lên ở hai phía.
+  - id: n8
+    cau: 'Theo thông cáo của Stanford, khoảng 100 sinh viên làm ba bài kiểm tra khả năng kiểm soát nhận thức: lọc nhiễu từ môi trường, lọc nhiễu từ trí nhớ, và chuyển đổi giữa các nhiệm vụ.'
+    loai: so-lieu
+    nguon:
+      - stanford2009
+      - ophir2009
+    trich: But after putting about 100 students through a series of three tests
+    vi_tri: Thông cáo Stanford (ScienceDaily)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Tổng cộng khoảng 100 sinh viên làm ba bài kiểm tra…" sau câu nói về bảng hỏi (G1 #3: 100 là số làm bài kiểm tra, không phải số làm bảng hỏi; 262 làm bảng hỏi theo InfoQ). Chữ mới gắn "theo thông cáo". Chỗ khó: bài gốc không mở được; mỗi thí nghiệm dùng nhóm người khác nhau (Wiradhany: "used different groups of participants for different tasks"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Thông cáo Stanford (ScienceDaily): "about 100 students" qua ba bài kiểm tra. Wiradhany nhắc mỗi bài dùng nhóm người khác; chữ trang "theo thông cáo" đúng chừng mực. Bài gốc Ophir không mở được toàn văn (PNAS/PMC chặn); chỉ có tóm tắt.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2009/http://news.stanford.edu/news/2009/august24/multitask-research-study-082409.html", "https://doi.org/10.1073/pnas.0903620106" ]
+    luot_2_ghi_chu: "Thông cáo Stanford 24/8/2009 nói đúng như vậy. Bài gốc: 41 (Phần I) + 30 (II) + 32 (III) = 103 sinh viên; ba bộ thí nghiệm: lọc nhiễu và AX-CPT, 2-/3-back, chuyển đổi nhiệm vụ."
+  - id: n9
+    cau: 'Nhóm đa nhiệm nặng làm kém hơn ở cả ba bài, kể cả bài chuyển đổi nhiệm vụ; họ dễ bị nhiễu hơn từ môi trường và từ trí nhớ (trang: "Cụ thể, họ dễ bị nhiễu…").'
+    loai: phat-hien
+    nguon:
+      - ophir2009
+    trich: heavy media multitaskers are more susceptible to interference from irrelevant environmental stimuli and from irrelevant representations in memory. This led to the surprising result that heavy media multitaskers performed worse on a test of task-switching ability
+    vi_tri: Tóm tắt Ophir 2009
+    ket_qua: da-lam-mem
+    ghi_chu: 'Theo G1-L03: KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "…Nguyên nhân: họ dễ bị nhiễu (distraction) hơn…" Chữ mới: "…Cụ thể, họ dễ bị nhiễu (distraction) hơn…" Lý do: tóm tắt Ophir nói nhóm nặng dễ nhiễu hơn từ môi trường và trí nhớ, và chuyển đổi kém "likely due to" lọc nhiễu kém; "nguyên nhân" nói chắc hơn nguồn.'
+    review: sai
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106", "https://web.archive.org/web/2009/http://news.stanford.edu/news/2009/august24/multitask-research-study-082409.html" ]
+    luot_2_ghi_chu: "Nhóm nặng kém ở cả ba bộ (lọc môi trường, nhiễu trí nhớ, chuyển đổi). Lưu ý nhỏ: ở AX-CPT chuẩn (không có nhiễu) hai nhóm không khác; khác biệt chỉ ở bản có nhiễu."
+  - id: n10
+    cau: 'Clifford Nass tóm gọn: họ là "con mồi dễ dàng của những thứ không liên quan" (suckers for irrelevancy); mọi thứ đều lôi kéo được sự chú ý của họ.'
+    loai: lich-su
+    nguon:
+      - stanford2009
+    trich: '"They''re suckers for irrelevancy," said communication Professor Clifford Nass ... "Everything distracts them."'
+    vi_tri: Thông cáo Stanford
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): dung. Thông cáo Stanford (toàn văn): Nass: "They''re suckers for irrelevancy… Everything distracts them." Khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2009/http://news.stanford.edu/news/2009/august24/multitask-research-study-082409.html" ]
+    luot_2_ghi_chu: Lời Nass trong thông cáo Stanford.
+  - id: n11
+    cau: 'Giải thích của nhóm nghiên cứu: kết quả chuyển đổi kém nhiều khả năng do người đa nhiệm nặng khó gạt bỏ nhiễu từ bộ quy tắc của nhiệm vụ kia.'
+    loai: phat-hien
+    nguon:
+      - ophir2009
+    trich: likely due to reduced ability to filter out interference from the irrelevant task set
+    vi_tri: Tóm tắt Ophir 2009
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thói quen kiểm soát nhận thức dàn trải (breadth-biased cognitive control) — chia đều chú ý… có lợi khi cần ''bắt sóng'' rộng…" (thuật ngữ và phần "có lợi" không có trong tóm tắt, bài gốc không mở được). Đã thay bằng chữ của tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ophir 2009 (tóm tắt): "likely due to reduced ability to filter out interference from the irrelevant task set". Chữ trang "nhiều khả năng" khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106" ]
+    luot_2_ghi_chu: 'Tóm tắt: "likely due to reduced ability to filter out interference from the irrelevant task set".'
+  - id: n12
+    cau: Uncapher và Wagner (2018) tổng quan các nghiên cứu về mối liên hệ giữa đa nhiệm truyền thông và nhận thức, đến năm 2018.
+    loai: lich-su
+    nguon:
+      - uncapher2018
+    trich: Here we review the growing body of research that investigates the cognitive and neural profiles of individuals who differ in the extent to which they simultaneously engage with multiple media streams
+    vi_tri: Tóm tắt Uncapher & Wagner 2018
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tiếp nối công trình của người đồng nghiệp quá cố Clifford Nass… toàn bộ nghiên cứu từ 2009 đến 2018… chú ý, trí nhớ làm việc, trí nhớ dài hạn, trí thông minh lỏng." (chi tiết không có trong tóm tắt). Đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Uncapher & Wagner 2018 (tóm tắt, Europe PMC): khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Tổng quan đăng PNAS 2018.
+  - id: n13
+    cau: Cán cân bằng chứng cho thấy người đa nhiệm truyền thông nặng hơn có hiệu suất thấp hơn ở một số lĩnh vực nhận thức, thường ở các bài đòi hỏi duy trì chú ý hướng đích, nhưng nhiều nghiên cứu không thấy khác biệt giữa hai nhóm.
+    loai: phat-hien
+    nguon:
+      - uncapher2018
+    trich: the balance of evidence suggests that heavier media multitaskers exhibit poorer performance in a number of cognitive domains, relative to lighter media multitaskers (although many studies find no performance differences between groups)
+    vi_tri: Tóm tắt Uncapher & Wagner 2018
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tương quan âm nhưng nhỏ, rõ nhất ở các bài kiểm tra trí nhớ và chú ý" (tóm tắt nói chú ý hướng đích; "nhỏ" là của Parry 2021, n14). Theo G1-L03: tóm tắt khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Uncapher & Wagner 2018 (tóm tắt, Europe PMC) khớp từng chữ: "balance of evidence suggests… poorer performance in a number of cognitive domains… (although many studies find no performance differences between groups)"; "sustained goal-directed attention".'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+  - id: n14
+    cau: Một phân tích tổng hợp sau đó (118 phép đo) thấy liên hệ chung là nhỏ.
+    loai: so-lieu
+    nguon:
+      - parry2021
+    trich: 118 assessments were included in the meta-analysis. Overall, the pooled effect size of the association, across measurement approaches and cognitive control functions, is small.
+    vi_tri: Tóm tắt Parry & le Roux 2021
+    ket_qua: dung
+    ghi_chu: 'Câu mới thêm vào trang; G1 #2 đề xuất. Review (Claude Sonnet 5.5, 10/11/2026): dung. Parry & le Roux 2021 (toàn văn): 118 phép đo, hệ số chung z = 0,138 (small); khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.5817/cp2021-2-7" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n15
+    cau: Hầu hết các nghiên cứu là tương quan, nên chưa rõ đa nhiệm làm nhận thức kém đi hay người vốn khó tập trung mới tìm đến đa nhiệm; các tác giả nêu cần thêm nghiên cứu để xác định chiều nhân quả.
+    loai: phat-hien
+    nguon:
+      - uncapher2018
+    trich: further research is needed to uncover the mechanistic underpinnings of observed differences, to determine the direction of causality
+    vi_tri: Tóm tắt Uncapher & Wagner 2018
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Wagner nhấn mạnh hai cảnh báo… (2) hiệu ứng nhỏ và không đồng nhất… vài nghiên cứu còn thấy người đa nhiệm nặng làm tốt hơn ở bài tích hợp đa giác quan." (chi tiết tích hợp đa giác quan không kiểm được). "Hầu hết là tương quan" là mô tả chung, tóm tắt không đếm: chỗ khó, lượt 2 xem. Review (Claude Sonnet 5.5, 10/11/2026): dung. Uncapher & Wagner 2018 (tóm tắt): cần nghiên cứu để "determine the direction of causality"; Parry & le Roux 2021 cũng kết luận cần "address causality". "Hầu hết là tương quan" là mô tả chung hợp lý (hầu hết nghiên cứu so sánh nhóm nặng và nhẹ). Khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Tóm tắt nêu cần xác định chiều nhân quả; các nghiên cứu được tổng quan là so sánh nhóm/tương quan. Sanbonmatsu 2013 cũng gợi ý cả hai hướng.
+  - id: n16
+    cau: 'Ward và cộng sự (2017): chỉ riêng sự hiện diện của điện thoại làm giảm năng lực nhận thức có sẵn, kể cả khi người tham gia không dùng đến nó; giả thuyết "brain drain": sự hiện diện của điện thoại chiếm một phần nguồn lực nhận thức có hạn.'
+    loai: phat-hien
+    nguon:
+      - ward2017
+    trich: even when people are successful at maintaining sustained attention—as when avoiding the temptation to check their phones—the mere presence of these devices reduces available cognitive capacity
+    vi_tri: Tóm tắt Ward 2017
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhóm để điện thoại trên bàn làm bài kém nhất, nhóm để ở phòng khác làm tốt nhất… một phần tâm trí luôn bận rộn kìm nén ham muốn kiểm tra nó… Điện thoại đều úp mặt, tắt tiếng." (thứ tự ba nhóm, cơ chế kìm nén, úp mặt, tắt tiếng đều chưa kiểm được: toàn văn Ward bị chặn). Chữ mới theo tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ward 2017 (tóm tắt): "the mere presence of these devices reduces available cognitive capacity"; chữ trang dùng "Theo các tác giả". Bài gốc không mở được; chỉ tóm tắt.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1086/691462" ]
+    luot_2_ghi_chu: Câu trong trang là mô tả giả thuyết và kết quả "theo các tác giả"; khớp tóm tắt.
+  - id: n17
+    cau: 'Thiết kế: người tham gia làm bài trí nhớ làm việc và chú ý với điện thoại ở một trong ba nơi: trên bàn, trong túi hay cặp, hoặc ở phòng khác (theo mô tả của lần làm lại năm 2022).'
+    loai: phat-hien
+    nguon:
+      - ruiz2022
+    trich: This replication assigned both smartphone location (on desk, in pocket/bag, or outside of the testing room) and smartphone power (on, or off) for a total of six conditions.
+    vi_tri: Tóm tắt Ruiz Pardo & Minda 2022
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "sinh viên làm bài kiểm tra trí nhớ và chú ý… Điện thoại đều úp mặt, tắt tiếng." Lần làm lại cũng thay đổi cả nguồn (bật hay tắt) nên "đều tắt tiếng" không đúng cho nó. Chữ mới theo Ruiz Pardo. Chỗ khó: thiết kế thí nghiệm gốc của Ward chưa kiểm. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ruiz Pardo & Minda 2022 (tóm tắt Europe PMC): vị trí điện thoại (trên bàn, túi/cặp, ngoài phòng) và nguồn bật/tắt; làm lại thí nghiệm 2 của Ward, trước đăng ký. Chữ trang ghi rõ "theo mô tả của lần làm lại". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/j.actpsy.2022.103717" ]
+    luot_2_ghi_chu: Thiết kế mô tả đúng; Ward 2017 gốc chưa mở nhưng thiết kế ba vị trí xác nhận qua bản tái lập. 'Đang tranh cãi' hợp lý.
+    review: dung
+  - id: n18
+    cau: Trong nghiên cứu của Ward và cộng sự, cái giá cao nhất ở những người phụ thuộc smartphone nhiều nhất.
+    loai: phat-hien
+    nguon:
+      - ward2017
+    trich: these cognitive costs are highest for those highest in smartphone dependence
+    vi_tri: Tóm tắt Ward 2017
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ward 2017 (tóm tắt): "these cognitive costs are highest for those highest in smartphone dependence". Khớp; chữ trang "cái giá được báo cáo".'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1086/691462" ]
+    luot_2_ghi_chu: Khớp tóm tắt (thí nghiệm 2).
+  - id: n19
+    cau: Một lần làm lại có đăng ký trước, dùng các bài và điều kiện của thí nghiệm gốc, không thấy hiệu ứng này (Ruiz Pardo và Minda, 2022).
+    loai: phat-hien
+    nguon:
+      - ruiz2022
+    trich: 'Using the same tasks and conditions as in Ward et al.''s (2017) second experiment, the present study found that the "brain drain" effect did not replicate: there was no difference between smartphone location conditions on performance on either the o-span task or the go/no-go task.'
+    vi_tri: Tóm tắt Ruiz Pardo & Minda 2022
+    ket_qua: dung
+    ghi_chu: 'Là làm lại thí nghiệm 2 của Ward. Theo G1-L03 (22/10/2026): KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ruiz Pardo & Minda 2022 (tóm tắt): đăng ký trước, cùng bài và điều kiện, "did not replicate". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/j.actpsy.2022.103717" ]
+    luot_2_ghi_chu: Thiết kế mô tả đúng; Ward 2017 gốc chưa mở nhưng thiết kế ba vị trí xác nhận qua bản tái lập. 'Đang tranh cãi' hợp lý.
+    review: dung
+  - id: n20
+    cau: Một phân tích tổng hợp 33 nghiên cứu với 4.368 người không thấy sự hiện diện của điện thoại làm giảm khả năng nhận thức (d = −0,02), và không thấy mức phụ thuộc điện thoại làm thay đổi kết quả (Hartanto và cộng sự, 2024).
+    loai: so-lieu
+    nguon:
+      - hartanto2024
+    trich: the mere presence of smartphone had no significant effect on cognitive outcomes (d = −0.02, SE = 0.02, 95% CI [−0.06, 0.01], p = .246). Further, the effect of mere presence of smartphone was not moderated by demographics, trait smartphone dependency
+    vi_tri: Tóm tắt Hartanto 2024
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): dung. Hartanto 2024: 33 nghiên cứu, 4.368 người, d = −0,02, 95% CI [−0,06; 0,01], p = 0,246; không điều chỉnh bởi mức phụ thuộc điện thoại (tìm web 10/11/2026: trang JCU và APA Open). Khớp. Không mở được tóm tắt từ Crossref hay Europe PMC.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/tmb0000123" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n21
+    cau: 'Vững chắc: chuyển đổi nhiệm vụ thường tốn "phí".'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - kiesel2010
+      - watson2010
+      - wiradhany2017
+      - wasylyshyn2011
+      - pashler1994
+    ly_do: Switch cost (chậm hơn, sai nhiều hơn khi chuyển việc) là hiện tượng được tổng quan trong nhiều bài (Kiesel và cộng sự 2010) và thấy ở đa số người trong thí nghiệm hai nhiệm vụ (Watson và Strayer 2010); các bài tổng hợp đa nhiệm truyền thông không làm yếu phần này. Chỉ mở tóm tắt của Kiesel.
+    nguon:
+      - kiesel2010
+      - watson2010
+      - wiradhany2017
+      - wasylyshyn2011
+      - pashler1994
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chuyển đổi nhiệm vụ luôn tốn phí… được tái hiện suốt hàng chục năm… Điểm này không còn tranh cãi." (G1 #5 cảnh báo tuyệt đối hóa). Chữ mới: "thường", dẫn Kiesel (2010). Chỗ khó: Vững chắc cần phân tích tổng hợp hay tổng quan hệ thống; Kiesel là tổng quan kể chuyện; chưa mở phân tích tổng hợp về switch cost; lượt 2 và review cân nhắc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Vững chắc giữ: Kiesel 2010 (tổng quan Psychological Bulletin về chi phí chuyển đổi), Wasylyshyn 2011 (phân tích tổng hợp 26 bài về chi phí chuyển đổi), Pashler 1994 (tổng quan nhiễu khi làm hai việc) và Watson & Strayer 2010 (đa số 200 người giảm hiệu suất). Thêm Wasylyshyn và Pashler vào cơ sở. Ranh giới: Kiesel là tổng quan kể chuyện và Wasylyshyn bàn về lão hóa; chủ repo duyệt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/a0019842" ]
+    luot_2_ghi_chu: n38 là lời khuyên suy ra từ chi phí chuyển đổi và nút cổ chai xử lý song song.
+    review: dung
+  - id: n22
+    cau: 'Khá vững: người đa nhiệm truyền thông nặng làm bài kiểm tra chú ý và trí nhớ kém hơn một chút (liên hệ nhỏ: khoảng 0,14 nói chung, khoảng 0,09 ở bài kiểm tra hiệu suất).'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - uncapher2018
+      - parry2021
+      - wiradhany2017
+    ly_do: 'Uncapher & Wagner 2018 (tổng quan) thấy xu hướng nhưng "many studies find no performance differences"; Parry & le Roux 2021 (118 phép đo): liên hệ nhỏ có ý nghĩa (z = 0,138; bài kiểm tra hiệu suất z = 0,091; tự báo cáo z = 0,200), dị biệt lớn (I2 khoảng 74–80%); Wiradhany 2017 (39 cỡ hiệu ứng) thấy liên hệ yếu mất ý nghĩa sau hiệu chỉnh nghiên cứu nhỏ; hai lần làm lại chỉ 5 trên 14 phép thử có ý nghĩa.'
+    nguon:
+      - uncapher2018
+      - parry2021
+      - wiradhany2017
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhiều nghiên cứu không tìm thấy khác biệt (một số nghiên cứu không tái hiện được)" (G1 #2: ĐÁNG NGỜ, "một số" là nói nhẹ). Đã thêm phân tích tổng hợp bị mất ý nghĩa. Chỗ khó: bằng chứng chất lượng cao mâu thuẫn (nhãn Đang tranh cãi cũng hợp); review cân nhắc. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "…hiệu ứng nhỏ, nhiều nghiên cứu không tìm thấy khác biệt (một phân tích tổng hợp còn thấy liên hệ mất ý nghĩa…)" Chữ mới: thêm số của Parry & le Roux (hệ số khoảng 0,14 nói chung, 0,09 ở bài kiểm tra hiệu suất, thang Fisher z). Lý do: lượt 2 nhắc nhãn "sát thước đo"; toàn văn Parry cho thấy ở bài kiểm tra hiệu suất liên hệ gần như không đáng kể (z = 0,091), và Wiradhany thấy mất ý nghĩa sau hiệu chỉnh. Nhãn Khá vững giữ (liên hệ nhỏ nhưng có ý nghĩa thống kê trong phân tích tổng hợp 118 phép đo); không hạ vì hiệu ứng vẫn dương ở cả hai cách đo.'
+    luot_2: dung
+    luot_2_nguon: [ "https://cyberpsychology.eu/article/view/13303", "https://doi.org/10.1073/pnas.1611612115", "https://doi.org/10.3758/s13414-017-1408-4" ]
+    luot_2_ghi_chu: "Nhãn 'Khá vững' sát thước đo (chỗ hở: hiệu ứng nhỏ và gần như không đổi chiều khi hiệu chỉnh); không nên cao hơn."
+    review: sai
+    trich: Overall, across all 118 assessments, the effect size for the association between media multitasking and cognitive control is small (z = .138, 95% CI [.107, .170]) ... For performance-based assays the effect size is negligible but statistically significant (z = .091, 95% CI [.044, .139])
+    vi_tri: Parry & le Roux 2021, Results
+  - id: n23
+    cau: Một phân tích tổng hợp thấy liên hệ mất ý nghĩa sau khi hiệu chỉnh cho các nghiên cứu nhỏ (Wiradhany và Nieuwenstein, 2017).
+    loai: phat-hien
+    nguon:
+      - wiradhany2017
+    trich: our meta-analysis on a total of 39 effect sizes yielded a weak but significant association between media multitasking and distractibility that turned nonsignificant after correction for small-study effects
+    vi_tri: Tóm tắt Wiradhany 2017
+    ket_qua: dung
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Wiradhany 2017 (tóm tắt và toàn văn): 39 cỡ hiệu ứng, liên hệ yếu có ý nghĩa nhưng mất ý nghĩa sau hiệu chỉnh hiệu ứng nghiên cứu nhỏ. Khớp."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/s13414-017-1408-4" ]
+    luot_2_ghi_chu: Phân tích tổng hợp 39 effect size chỉ về lọc nhiễu (distractibility), không phải mọi lĩnh vực nhận thức; câu của trang đặt trong ngữ cảnh bài kiểm tra chú ý, chấp nhận được.
+  - id: n24
+    cau: 'Đang tranh cãi: đa nhiệm gây ra suy giảm nhận thức, hay người khó tập trung mới đa nhiệm nhiều?'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - uncapher2018
+      - sanbonmatsu2013
+    ly_do: Dữ liệu chủ yếu tương quan; tổng quan nêu cần xác định chiều nhân quả; Sanbonmatsu 2013 thấy người đa nhiệm nhiều thường bốc đồng hơn và tự đánh giá khả năng đa nhiệm quá cao.
+    nguon:
+      - uncapher2018
+      - sanbonmatsu2013
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chính Wagner cũng nhấn mạnh còn quá sớm để kết luận chiều nhân quả"; chữ mới: "Uncapher và Wagner (2018) nêu cần thêm nghiên cứu để xác định chiều nhân quả" theo tóm tắt. Câu "Khả năng lớn nhất là vòng xoáy hai chiều" là suy đoán của trang, không nguồn: chỗ khó. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Đang tranh cãi hợp lý cho câu hỏi nhân quả chưa có lời đáp (Uncapher & Wagner; Parry & le Roux): bằng chứng tương quan, có thể mỗi chiều. Sanbonmatsu 2013 (toàn văn): người ít kiểm soát điều hành và bốc đồng đa nhiệm nhiều hơn. Chữ khung thấp hơn "khả năng lớn nhất" (n26).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115", "https://doi.org/10.1371/journal.pone.0054402" ]
+    luot_2_ghi_chu: Nhãn 'Đang tranh cãi' đúng.
+    review: dung
+  - id: n25
+    cau: Người đa nhiệm nhiều nhất thường cũng bốc đồng nhất (Sanbonmatsu và cộng sự, 2013).
+    loai: phat-hien
+    nguon:
+      - sanbonmatsu2013
+    trich: Participants with a strong approach orientation and a weak avoidance orientation--high levels of impulsivity and sensation seeking--reported greater multi-tasking behavior.
+    vi_tri: Tóm tắt Sanbonmatsu 2013
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): dung. Sanbonmatsu 2013 (toàn văn): bốc đồng và ham cảm giác mới tương quan dương với đa nhiệm. Khớp; chữ trang "thường cũng bốc đồng nhất" hơi mạnh ("nhất") nhưng là cách nói của trang về người đa nhiệm nhiều nhất, tương ứng "reported greater multi-tasking behavior".'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0054402" ]
+    luot_2_ghi_chu: Khớp; mẫu sinh viên Utah, dữ liệu tương quan.
+  - id: n26
+    cau: Cũng có thể cả hai chiều cùng đúng (một vòng xoáy hai chiều giữa đa nhiệm và khó tập trung), nhưng chưa có bằng chứng quyết định.
+    loai: phat-hien
+    nguon:
+      - sanbonmatsu2013
+      - uncapher2018
+    trich: the findings suggest that people often engage in multi-tasking because they are less able to block out distractions and focus on a singular task
+    vi_tri: Tóm tắt Sanbonmatsu 2013
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nêu như khả năng lớn nhất; nguồn chỉ cho thấy một chiều (người ít kiểm soát chú ý đa nhiệm nhiều hơn) và tổng quan nói cần xác định chiều nhân quả. Chữ trang giữ "khả năng lớn nhất" làm mềm bằng "chưa chắc" ở câu liền trước; chỗ khó: lượt 2 xem. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Khả năng lớn nhất là vòng xoáy hai chiều" (khung Đang tranh cãi); quiz 2: "rất có thể cả hai chiều cùng đúng" và "giả thuyết hợp lý nhất hiện nay". Chữ mới: "Cũng có thể cả hai chiều cùng đúng (một vòng xoáy hai chiều), nhưng chưa có bằng chứng quyết định"; "có thể cả hai chiều cùng đúng"; "một giả thuyết hợp lý". Lý do: không nguồn nào xếp hạng khả năng; Sanbonmatsu chỉ cho một chiều, Uncapher & Wagner nói cần xác định chiều nhân quả.'
+    review: sai
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115", "https://doi.org/10.1371/journal.pone.0054402" ]
+    luot_2_ghi_chu: Câu đã tự giới hạn ("có thể", "chưa có bằng chứng quyết định"); khớp việc Uncapher & Wagner nêu chiều nhân quả còn chưa xác định.
+  - id: n27
+    cau: 'Khá vững: đa nhiệm truyền thông nhiều không đi kèm khả năng đa nhiệm hay kiểm soát nhận thức tốt hơn.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - sanbonmatsu2013
+      - ophir2009
+      - parry2021
+      - wiradhany2017
+    ly_do: 'Sanbonmatsu 2013 (toàn văn): mức đa nhiệm tương quan âm với khả năng đa nhiệm đo bằng OSPAN, và tự đánh giá quá cao; Parry & le Roux 2021 (118 phép đo): liên hệ nhỏ theo chiều đa nhiệm nhiều thì kiểm soát nhận thức kém hơn; Ophir 2009 thấy nhóm nặng chuyển đổi kém hơn nhưng chưa lặp lại (Wiradhany 2017). Dữ liệu tương quan, không đo hiệu quả của luyện tập.'
+    nguon:
+      - sanbonmatsu2013
+      - ophir2009
+      - parry2021
+      - wiradhany2017
+      - watson2010
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hai ngộ nhận bị dữ liệu bác bỏ thẳng thừng. Thứ nhất, Ophir… cho thấy nhóm đa nhiệm nặng chuyển đổi nhiệm vụ kém hơn" và "luôn là chuyển đổi nối tiếp… Ngoại lệ duy nhất" (G1 #1, #5). Chữ mới: "không có bằng chứng ủng hộ", Ophir chưa lặp lại, ngoại lệ 2,5%. Chỗ khó: bác bỏ ý "giỏi đa nhiệm" dựa chủ yếu vào Sanbonmatsu, một nghiên cứu; lượt 2 cân nhắc. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: khung "Đã bị bác bỏ: đa nhiệm nhiều giúp ta giỏi đa nhiệm, và não làm được hai việc khó cùng lúc". Chữ mới: khung "Khá vững: đa nhiệm truyền thông nhiều không đi kèm khả năng đa nhiệm hay kiểm soát nhận thức tốt hơn". Lý do: lượt 2 đúng (quá mạnh): vế "não làm được hai việc khó cùng lúc" có ngoại lệ (2,5% supertaskers, Watson & Strayer 2010) và vế "đa nhiệm giúp giỏi đa nhiệm" chỉ có dữ liệu tương quan (Sanbonmatsu 2013: tương quan âm với OSPAN; Parry & le Roux 2021: liên hệ nhỏ theo chiều xấu; Ophir chưa lặp lại), không phải kiểm tra thất bại liên tục; luyện tập chưa được thử trong các nghiên cứu này. Nhãn Khá vững.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1037/a0031208", "https://doi.org/10.3758/s13414-017-1408-4", "https://doi.org/10.1371/journal.pone.0054402" ]
+    luot_2_ghi_chu: "câu đúng: Không có bằng chứng nhất quán rằng đa nhiệm nhiều làm ta giỏi đa nhiệm (nhiều nghiên cứu thấy kém hơn hoặc ngang nhau, một số thấy chuyển đổi tác vụ nhanh hơn); và làm hai việc khó cùng lúc thì chịu chi phí xử lý. Nhãn đúng hơn: Đang tranh cãi cho vế đầu.; Vế sau (não không làm được hai việc khó cùng lúc) vững; vế đầu kết quả lẫn lộn nên 'Đã bị bác bỏ' vượt thước đo (kiểm tra mạnh liên tục thất bại)."
+    review: sai
+  - id: n28
+    cau: 'Với việc làm cùng lúc hai việc đòi hỏi chú ý, đa số người giảm hiệu suất; chỉ khoảng 2,5% người tham gia một nghiên cứu lái xe mô phỏng gần như không bị giảm hiệu suất (Watson và Strayer, 2010).'
+    loai: so-lieu
+    nguon:
+      - watson2010
+    trich: 2.5% of the sample showed absolutely no performance decrements with respect to performing single and dual tasks
+    vi_tri: Tóm tắt Watson & Strayer 2010
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(Ngoại lệ duy nhất: một việc đã thành phản xạ tự động như đi bộ)" (G1 #5). Việc "đi bộ" là ví dụ phổ thông, không kiểm từ nguồn: chỗ khó. 200 người tham gia; 2,5% là "supertaskers" (Watson & Strayer 2010). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Ngoại lệ: một việc đã thành phản xạ tự động như đi bộ; và một số rất ít người, khoảng 2,5%…" Chữ mới: "Với việc làm cùng lúc hai việc đòi hỏi chú ý, đa số người giảm hiệu suất; chỉ khoảng 2,5% người tham gia một nghiên cứu lái xe mô phỏng gần như không bị giảm." Lý do: ví dụ đi bộ không có nguồn đã mở; Watson & Strayer 2010 (tóm tắt Europe PMC): 200 người, đa số giảm, 2,5% không giảm.'
+    review: sai
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/PBR.17.4.479" ]
+    luot_2_ghi_chu: 200 người, mô phỏng lái xe + OSPAN qua điện thoại.
+  - id: n29
+    cau: 'Phí chuyển đổi nhiệm vụ: mỗi lần chuyển việc, não cần chuẩn bị và chuyển bộ quy tắc của việc cũ sang việc mới, và việc cũ có thể còn gây nhiễu; điều này làm ta chậm hơn và dễ sai hơn.'
+    loai: phat-hien
+    nguon:
+      - kiesel2010
+    trich: We consider proactive interference of tasks and inhibition of recently performed tasks indicated by asymmetrical switch costs and n-2 task-repetition costs.
+    vi_tri: Tóm tắt Kiesel 2010
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "não phải ''dỡ'' bộ quy tắc của việc cũ và ''nạp'' bộ quy tắc của việc mới — quá trình này tốn vài trăm mili-giây… Cộng dồn hàng chục lần nhảy trong một buổi học, thiệt hại là đáng kể." ("vài trăm mili-giây", "cộng dồn… đáng kể" không có nguồn đã mở). Chữ mới theo Kiesel. Review (Claude Sonnet 5.5, 10/11/2026): dung. Kiesel 2010 (tóm tắt): chuẩn bị nhiệm vụ, nhiễu chủ động (proactive interference), chi phí chuyển đổi bất đối xứng. Phần "chậm hơn và dễ sai hơn" là hệ quả chi phí chuyển đổi (đo bằng thời gian phản ứng và lỗi); khớp mô tả.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/a0019842" ]
+    luot_2_ghi_chu: n38 là lời khuyên suy ra từ chi phí chuyển đổi và nút cổ chai xử lý song song.
+    review: dung
+  - id: n30
+    cau: 'Giả thuyết của Ophir và cộng sự: người đa nhiệm truyền thông nặng dễ bị nhiễu từ kích thích không liên quan và từ trí nhớ, và điều này nhiều khả năng làm họ chuyển nhiệm vụ kém hơn.'
+    loai: phat-hien
+    nguon:
+      - ophir2009
+    trich: heavy media multitaskers are more susceptible to interference from irrelevant environmental stimuli and from irrelevant representations in memory
+    vi_tri: Tóm tắt Ophir 2009
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Kiểm soát nhận thức dàn trải (breadth-biased control)… đón mọi tín hiệu thay vì lọc… môi trường săn bắt–hái lượm… thảm họa khi cần đọc hiểu một văn bản khó." (không có trong tóm tắt). Đã thay. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ophir 2009 (tóm tắt): dễ nhiễu từ kích thích không liên quan và trí nhớ; chuyển đổi kém "likely due to". Chữ trang "nhiều khả năng" khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106" ]
+    luot_2_ghi_chu: Khớp tóm tắt.
+  - id: n31
+    cau: 'Vòng xoáy chú ý: các nền tảng được thiết kế để khai thác mọi kẽ hở chú ý → thói quen kiểm tra liên tục → suy yếu khả năng duy trì chú ý → dễ bị móc câu hơn; đây là câu chuyện môi trường được thiết kế để ý chí của bạn thua.'
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ khỏi trang: mô hình không có nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã bỏ; kiểm trang: không còn "vòng xoáy chú ý" về thiết kế nền tảng. Review lần 2 (Claude Sonnet 5.5, 10/11/2026): dung. Chiều nhân quả "kiểm tra liên tục thành suy yếu chú ý" chưa xác định (Uncapher & Wagner 2018); câu gốc đã bỏ (da-bo). Phần còn lại trên trang (n26, n28) đã viết hai chiều, "chưa có bằng chứng quyết định", khớp cau_dung của lượt 2. Kiểm trang: không còn "vòng xoáy chú ý" kiểu nền tảng thiết kế, "ý chí thua".'
+    review: dung
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115", "https://doi.org/10.5817/cp2021-2-7" ]
+    luot_2_ghi_chu: 'câu đúng: Một giả thuyết (chưa chứng minh): nền tảng thiết kế để thu hút chú ý, thói quen kiểm tra điện thoại liên tục có thể làm khó duy trì chú ý hơn, và khó duy trì chú ý có thể khiến người ta dễ bị cuốn vào hơn; bằng chứng hiện có chủ yếu là tương quan, chưa xác định chiều nhân quả.; Mắt xích "thói quen kiểm tra liên tục -> suy yếu khả năng duy trì chú ý" là chiều nhân quả mà các tổng quan nói chưa xác định (dữ liệu tương quan, liên hệ nhỏ). Câu viết như vòng xoáy đã biết và "môi trường được thiết kế để ý chí thua" là khẳng định mạnh.'
+  - id: n32
+    cau: 'Giả thuyết thay thế (tự chọn): người khó tập trung, bốc đồng, ham cảm giác mới bị hút vào đa nhiệm nhiều hơn; chính đặc điểm tính cách đó giải thích điểm kiểm tra thấp.'
+    loai: phat-hien
+    nguon:
+      - sanbonmatsu2013
+    trich: Participants with less executive control--low scorers on the Operation Span task and persons high in impulsivity--tended to report higher levels of multi-tasking activity.
+    vi_tri: Tóm tắt Sanbonmatsu 2013
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115", "https://doi.org/10.1371/journal.pone.0054402" ]
+    luot_2_ghi_chu: Nhãn 'Đang tranh cãi' đúng.
+  - id: n33
+    cau: 'Sanbonmatsu và cộng sự (2013): người đa nhiệm nhiều thường tự đánh giá khả năng đa nhiệm của mình cao hơn thực tế, trong khi khả năng thật của họ kém hơn.'
+    loai: phat-hien
+    nguon:
+      - sanbonmatsu2013
+    trich: Multi-tasking was positively correlated with participants' perceived ability to multi-task ability which was found to be significantly inflated.
+    vi_tri: Tóm tắt Sanbonmatsu 2013
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thường tự đánh giá khả năng đa nhiệm của mình cao — trong khi thực tế họ làm kém hơn" (so sánh không rõ đối tượng). Chữ mới nói rõ: cao hơn thực tế. Review (Claude Sonnet 5.5, 10/11/2026): dung. Sanbonmatsu 2013 (toàn văn): hoạt động đa nhiệm tương quan dương với khả năng đa nhiệm tự đánh giá (quá cao), tương quan âm với OSPAN. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115", "https://doi.org/10.1371/journal.pone.0054402" ]
+    luot_2_ghi_chu: Nhãn 'Đang tranh cãi' đúng.
+    review: dung
+  - id: n34
+    cau: 'Đang tranh cãi: điện thoại để đâu khi cần tập trung (sự hiện diện của điện thoại có làm giảm tập trung không): Ward 2017 báo cáo hiệu ứng; lần làm lại đăng ký trước (Ruiz Pardo & Minda 2022) không thấy; phân tích tổng hợp 33 nghiên cứu (Hartanto 2024) không thấy; phân tích tổng hợp 22 nghiên cứu gộp việc dùng và sự hiện diện (Böttger 2023) thấy tác động tiêu cực chung.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - ward2017
+      - ruiz2022
+      - hartanto2024
+      - boettger2023
+    ly_do: 'Ward 2017 báo cáo hiệu ứng; lần làm lại có đăng ký trước (Ruiz Pardo & Minda 2022) không thấy; phân tích tổng hợp 33 nghiên cứu (Hartanto 2024) d = −0,02 không thấy; phân tích tổng hợp 22 nghiên cứu (Böttger 2023) gộp việc dùng và sự hiện diện thấy tác động tiêu cực chung, kết quả không đồng nhất giữa lĩnh vực nhận thức và quốc gia. Bằng chứng chất lượng cao mâu thuẫn nhau theo thước đo.'
+    nguon:
+      - ward2017
+      - ruiz2022
+      - hartanto2024
+      - boettger2023
+    ket_qua: da-sua
+    ghi_chu: 'Nhãn cũ: Khá vững (mục áp dụng 1); G1 #4 đề xuất Đang tranh cãi. Chữ cũ: "Bài học rẻ nhất từ Ward: không cần tắt nguồn hay cai nghiện — chỉ cần để điện thoại ở phòng khác… Để điện thoại ra xa vẫn là cách rẻ để bớt bị gián đoạn." Chữ mới: Ward gợi ý, nhưng làm lại và tổng hợp không thấy; "chúng tôi chưa thể khuyên làm theo". Chỗ khó: Parry (2023) thấy tác động nhỏ lên trí nhớ làm việc (theo G1), chưa mở; có thể đáng nêu. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (Áp dụng 1): "…phân tích tổng hợp 33 nghiên cứu (Hartanto và cộng sự, 2024) kết luận hầu như không có lý do để cho rằng cách ly hoàn toàn khỏi điện thoại cải thiện hiệu suất." Chữ mới: thêm "còn một phân tích tổng hợp khác, gộp cả việc dùng lẫn sự hiện diện của điện thoại (Böttger và cộng sự, 2023), lại thấy tác động tiêu cực chung." Lý do: Böttger 2023 (22 nghiên cứu, Behav Sci) báo "significant overall negative effect of smartphone use and presence", trái chiều với Hartanto (d = −0,02); câu cũ chỉ nêu một phía. Nhãn Đang tranh cãi vững hơn (hai phân tích tổng hợp trái chiều cộng một làm lại đăng ký trước không thấy hiệu ứng).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/j.actpsy.2022.103717" ]
+    luot_2_ghi_chu: Thiết kế mô tả đúng; Ward 2017 gốc chưa mở nhưng thiết kế ba vị trí xác nhận qua bản tái lập. 'Đang tranh cãi' hợp lý.
+    review: sai
+  - id: n35
+    cau: 'Gom thông báo không khẩn cấp vào vài khung giờ cố định, thay vì tắt hẳn hay để chúng "ting" liên tục (lời khuyên, bằng chứng sơ bộ; không gắn nhãn).'
+    loai: loi-khuyen
+    nguon:
+      - stothart2015
+      - fitz2019
+    ket_qua: da-sua
+    ghi_chu: 'chưa chắc: lời khuyên "tắt thông báo, đặt 2–3 khung giờ" cần nghiên cứu về gom thông báo, chưa tìm. Chữ trang giữ nguyên; lượt 2 và review quyết định hạ nhãn hay bỏ. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (Áp dụng 2): tiêu đề kèm chip Khá vững; "Mỗi thông báo là một lần chuyển đổi nhiệm vụ bắt buộc — và phí chuyển đổi thì chắc chắn tồn tại. Hãy tắt thông báo của mọi ứng dụng không khẩn cấp, đặt 2–3 khung giờ… Bạn không bỏ lỡ gì cả". Chữ mới: bỏ chip Khá vững; nêu Stothart 2015 và Fitz 2019 (237 người: gom ba đợt tốt hơn nhận như thường, tắt hẳn lại tăng lo âu và sợ bỏ lỡ); lời khuyên "gom vào vài khung giờ, thay vì tắt hẳn", thêm câu bằng chứng sơ bộ. Lý do: lượt 2 đúng (quá mạnh): chưa đủ cho nhãn Khá vững; bằng chứng chỉ có hai nghiên cứu, chủ yếu tự báo cáo; "tắt hẳn" trái với kết quả Fitz; "bạn không bỏ lỡ gì cả" không nguồn nên bỏ.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://scholars.duke.edu/publication/1402953" ]
+    luot_2_ghi_chu: "câu đúng: Có bằng chứng sơ bộ: một thử nghiệm ngẫu nhiên hai tuần (n = 237) cho thấy gom thông báo ba lần mỗi ngày giúp thấy tập trung và chủ động hơn; chưa đủ cho nhãn Khá vững (gom theo giờ ít lợi, tắt hẳn lại tăng lo âu).; Chỉ đọc qua trang Duke Scholars và tóm tắt thứ cấp; chưa mở bài gốc. Nhãn Đang tranh cãi/sơ bộ hợp hơn."
+    review: sai
+    trich: delivering notifications in predictable intervals throughout the day (Fitz 2019); cellular phone notifications alone significantly disrupted performance on an attention-demanding task, even when participants did not directly interact with a mobile device (Stothart 2015)
+    vi_tri: Fitz 2019, tóm tắt (qua Duke Scholars); Stothart 2015, tóm tắt (Europe PMC)
+  - id: n36
+    cau: Chỉ riêng việc nhận một thông báo cũng có thể làm giảm hiệu suất ở bài đòi hỏi chú ý, kể cả khi người ta không chạm vào điện thoại (Stothart và cộng sự, 2015); trong một thí nghiệm ngẫu nhiên ngoài đời (Fitz và cộng sự, 2019; 237 người), nhóm nhận thông báo gom thành ba đợt mỗi ngày cảm thấy tập trung, năng suất và kiểm soát điện thoại tốt hơn nhóm nhận như thường lệ; nhóm không nhận thông báo nào lo âu và sợ bỏ lỡ nhiều hơn.
+    loai: phat-hien
+    nguon:
+      - stothart2015
+      - fitz2019
+    ket_qua: da-sua
+    ghi_chu: 'chưa chắc: lời khuyên không nguồn riêng ("không bỏ lỡ gì cả" cũng là khẳng định chung). Xem n35. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Mỗi thông báo là một lần chuyển đổi nhiệm vụ bắt buộc; hãy tắt thông báo… bạn không bỏ lỡ gì cả." Chữ mới: nêu kết quả Stothart 2015 và Fitz 2019 như phát hiện. Lý do: câu cũ không nguồn riêng ("bắt buộc", "không bỏ lỡ gì cả"). Fitz: 237 người, ba đợt/ngày so với như thường và không thông báo (nhóm gom thấy tập trung, năng suất, tâm trạng, kiểm soát điện thoại hơn; nhóm không thông báo lo âu và sợ bỏ lỡ hơn). Stothart: thông báo đủ làm giảm hiệu suất bài đòi hỏi chú ý dù không chạm điện thoại.'
+    review: sai
+    trich: cellular phone notifications alone significantly disrupted performance on an attention-demanding task, even when participants did not directly interact with a mobile device during the task
+    vi_tri: Stothart 2015, tóm tắt; Fitz 2019, tóm tắt (Duke Scholars)
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/xhp0000100", "https://doi.org/10.1016/j.chb.2019.07.016" ]
+    luot_2_ghi_chu: n = 237, thí nghiệm ngẫu nhiên ngoài đời. Tóm tắt Fitz có một câu lạ ("lower productivity") nhưng so với đối chứng nhóm gom thông báo báo cáo năng suất và tập trung hơn như trang nói.
+  - id: n37
+    cau: 'Thử tự quan sát mức đa nhiệm của chính mình: ghi chép mỗi lần "nhảy" sang điện thoại trong một giờ học; đây là cách tự quan sát thói quen, chưa có nghiên cứu cho thấy việc ghi chép cải thiện sự tập trung (lời khuyên, không gắn nhãn).'
+    loai: loi-khuyen
+    nguon:
+      - sanbonmatsu2013
+    ket_qua: da-sua
+    ghi_chu: 'chưa chắc: nhãn Khá vững cho việc tự ghi chép là lời khuyên suy từ Sanbonmatsu; lượt 2 quyết định. Chữ cũ có thêm "Hầu hết mọi người đều sốc khi thấy con số thật… Đo được mới quản được." (không nguồn): đã thay bằng "Đây là cách tự quan sát, không phải cách đo có kiểm soát." Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: tiêu đề "3. Tự đo mức đa nhiệm của mình trong một tuần" kèm chip Khá vững. Chữ mới: tiêu đề "3. Thử quan sát mức đa nhiệm của chính mình" (giữ id cũ), bỏ chip; câu nêu Sanbonmatsu 2013 (tự đánh giá quá cao), nói rõ đây là tự quan sát và chưa có nghiên cứu cho thấy việc ghi chép cải thiện tập trung. Lý do: lượt 2 đúng (quá mạnh): không có nghiên cứu kiểm chứng lời khuyên tự theo dõi nên không đủ nhãn Khá vững; chữ "trong một tuần" của tiêu đề cũ không khớp thí nghiệm một giờ học trong thân.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: "câu đúng: Tự theo dõi mức đa nhiệm của mình là gợi ý hợp lý, nhưng không có bằng chứng trực tiếp (ngoài việc người đa nhiệm nặng hay đánh giá quá cao khả năng của mình, Sanbonmatsu 2013) rằng việc này cải thiện tập trung; không nên gắn nhãn Khá vững.; Không tìm được nghiên cứu kiểm chứng lời khuyên tự theo dõi trong một tuần."
+    review: sai
+    trich: Multi-tasking was positively correlated with participants' perceived ability to multi-task ability which was found to be significantly inflated.
+    vi_tri: Sanbonmatsu 2013, tóm tắt
+  - id: n38
+    cau: 'Vững chắc: đừng nhầm "bận rộn" với "hiệu quả"; với việc khó, làm tuần tự từng việc thường phù hợp hơn làm song song (mục áp dụng 4).'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - watson2010
+      - kiesel2010
+      - pashler1994
+      - wasylyshyn2011
+    ly_do: Đa số người giảm hiệu suất khi làm hai việc cùng lúc (Watson & Strayer 2010); chuyển việc tốn phí (Kiesel 2010). Chỉ dựa trên một thí nghiệm hai nhiệm vụ và một tổng quan tóm tắt.
+    nguon:
+      - watson2010
+      - kiesel2010
+      - pashler1994
+      - wasylyshyn2011
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ảo giác năng suất… mỗi việc đều chậm hơn và lỗi nhiều hơn… làm tuần tự từng việc luôn thắng làm song song — hệ quả trực tiếp của switch cost." Đã bỏ "luôn", "ảo giác năng suất" (không nguồn). Chỗ khó: Vững chắc kế thừa n21; nếu n21 hạ thì n38 hạ theo. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Vững chắc cho lời khuyên mềm ("thường phù hợp hơn"): Watson & Strayer 2010 (200 người, đa số giảm khi làm hai việc), Kiesel 2010 (tổng quan chi phí chuyển đổi), Pashler 1994 (tổng quan nhiễu giữa hai nhiệm vụ), Wasylyshyn 2011 (tổng hợp). Phụ thuộc n21; thêm Pashler và Wasylyshyn vào cơ sở. Ranh giới như n21; chủ repo duyệt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/a0019842" ]
+    luot_2_ghi_chu: n38 là lời khuyên suy ra từ chi phí chuyển đổi và nút cổ chai xử lý song song.
+    review: dung
+  - id: n39
+    cau: 'Thí nghiệm tại gia: ba buổi học với điện thoại trên bàn, trong túi, ở phòng khác; nếu hiệu ứng trong nghiên cứu gốc có thật, buổi 3 sẽ tốt nhất và buổi 1 kém nhất; một lần tự thử chưa đủ để kết luận, nhất là khi lần làm lại có đăng ký trước và phân tích tổng hợp không thấy hiệu ứng này.'
+    loai: phat-hien
+    nguon:
+      - ruiz2022
+      - hartanto2024
+    trich: there was no difference between smartphone location conditions on performance
+    vi_tri: Tóm tắt Ruiz Pardo & Minda 2022
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Dự đoán theo nghiên cứu gốc: buổi 3 sẽ nhanh và chính xác nhất, buổi 1 tệ nhất — dù bạn không hề chạm vào điện thoại" (chưa kiểm được thiết kế gốc). "các lần làm lại phần lớn không thấy" là chữ cũ của trang; nguồn: một lần làm lại và một tổng hợp, không phải "phần lớn các lần làm lại": chỗ khó. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (cau): "…nhất là khi các lần làm lại phần lớn không thấy hiệu ứng". Chữ trang: "nhất là khi lần làm lại có đăng ký trước và phân tích tổng hợp không thấy hiệu ứng này". Lý do: cau lệch trang; nguồn là một lần làm lại và một tổng hợp (Böttger 2023 thì thấy khác, xem n34). Chữ trang không đổi, chỉ sửa cau cho khớp.'
+    review: sai
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1086/691462", "https://doi.org/10.1016/j.actpsy.2022.103717", "https://doi.org/10.1037/tmb0000123" ]
+    luot_2_ghi_chu: "Giả thuyết gốc: điện thoại càng gần càng kém (bàn kém nhất, phòng khác tốt nhất). Lần làm lại có đăng ký trước và tổng hợp 33 nghiên cứu không thấy hiệu ứng; câu đã hạn chế đúng."
+  - id: n40
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu thực nghiệm nào đo tác động nhận thức của đa nhiệm truyền thông trên người Việt; có một khảo sát hành vi đa nhiệm trong lớp học ở 257 sinh viên một trường đại học ở Hà Nội (2026), nhưng đó không phải bài kiểm tra nhận thức.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+      - hanoi2026
+    trich: This study uses the Media Multitasking-Revised (MMT-R) scale to assess the level of multitasking behaviour in the classroom among 257 students from various academic disciplines.
+    vi_tri: Tóm tắt (OpenAlex)
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu thực nghiệm nào về đa nhiệm truyền thông trên người Việt. Mọi con số trong bài đều từ sinh viên Mỹ và châu Âu." Chữ mới thêm mốc, giới hạn câu ("đo tác động nhận thức") và nêu khảo sát Hà Nội; "chủ yếu từ sinh viên Mỹ và châu Âu" mềm hơn "mọi con số" (Sanbonmatsu ở Utah, Wiradhany ở Hà Lan, Hartanto ở Singapore có thể). Review (Claude Sonnet 5.5, 10/11/2026): dung. Thời sự có mốc "11/2026", `het_han` có trong hồ sơ. Tự tìm lại Europe PMC ngày 10/11/2026: (media multitasking OR smartphone presence OR brain drain OR multitasking) AND (Vietnam OR Vietnamese) AND (cognitive OR attention): không có nghiên cứu nhận thức về đa nhiệm truyền thông ở người Việt. Khảo sát Hà Nội: Crossref xác nhận (Engineering and Technology for Sustainable Development 36(3), 115–125, 2026), tóm tắt lượt 1: thang MMT-R, 257 sinh viên, hành vi trong lớp học.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://jst.vn/index.php/etsd/article/view/1057", "https://doi.org/10.51316/jst.191.etsd.2026.36.3.15" ]
+    luot_2_ghi_chu: 'Khảo sát hành vi bằng thang MMT-R, không có bài kiểm tra nhận thức. Phần phủ định ("chưa tìm thấy") hợp lý: tìm tiếng Anh/Việt qua Semantic Scholar/tìm web không thấy nghiên cứu thực nghiệm trên người Việt; mang tính chưa tìm thấy, đúng cách diễn đạt của trang.'
+  - id: n41
+    cau: Các nghiên cứu kể trong bài chủ yếu làm với sinh viên ở Mỹ, Canada và châu Âu; lần làm lại của Wiradhany và Nieuwenstein (2017) có thêm một mẫu sinh viên Indonesia.
+    loai: phat-hien
+    nguon:
+      - ophir2009
+      - wiradhany2017
+      - sanbonmatsu2013
+      - ruiz2022
+    trich: A total of 154 undergraduate students from the Faculty of Psychology, Universitas Gadjah Mada, Indonesia, were invited to fill in the media-use questionnaire in an online study.; A total of 306 students from the University of Groningen, The Netherlands, were asked to complete the Media Multitasking Index questionnaire
+    vi_tri: Wiradhany 2017, Experiment 1 và 2, Method; Sanbonmatsu 2013 (Utah); Ruiz Pardo & Minda 2022 (Western University)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Mọi con số trong bài đều từ sinh viên Mỹ và châu Âu"; chưa kiểm hết nguồn gốc người tham gia của Ward, Hartanto (nhiều nơi): chữ mới "chủ yếu"; chỗ khó. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Các con số trong bài chủ yếu từ sinh viên Mỹ và châu Âu." Chữ mới: "Các nghiên cứu kể trong bài chủ yếu làm với sinh viên ở Mỹ, Canada và châu Âu; lần làm lại của Wiradhany và Nieuwenstein (2017) có thêm một mẫu sinh viên Indonesia." Lý do: Wiradhany (toàn văn) thí nghiệm 1: 154 sinh viên Universitas Gadjah Mada, Indonesia; thí nghiệm 2: Groningen, Hà Lan; Ruiz Pardo & Minda: Western University, Canada.'
+    review: sai
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/s13414-017-1408-4", "https://doi.org/10.3758/PBR.17.4.479", "https://doi.org/10.1086/691462", "https://doi.org/10.1016/j.actpsy.2022.103717" ]
+    luot_2_ghi_chu: 'Wiradhany: một mẫu Indonesia và một mẫu Hà Lan. Ophir (Stanford), Sanbonmatsu và Watson (Utah), Ruiz Pardo & Minda (Canada) khớp; "chủ yếu" là mô tả cẩn thận. Không kiểm mẫu Fitz và Stothart.'
+  - id: n42
+    cau: Việt Nam có tỉ lệ dùng smartphone và mạng xã hội thuộc hàng cao; Zalo, Facebook, TikTok len vào mọi kẽ hở thời gian; học sinh vừa học online vừa chat, người đi đường vừa chạy xe vừa xem điện thoại; nền kinh tế chú ý vận hành ở Việt Nam với cường độ không kém nơi nào.
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ khỏi trang (đoạn "Nhưng hiện trường Việt Nam thì ai cũng thấy…" và đoạn ca dao "một nghề cho chín"): khẳng định không nguồn đã mở (G1 cũng không kiểm được phần khung pháp lý; số liệu DataReportal 1/2024 chưa mở lại), và liên hệ ca dao với phí chuyển đổi là diễn giải không nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã bỏ; kiểm trang: không còn đoạn "hiện trường Việt Nam", Zalo/Facebook/TikTok như khẳng định, hay ca dao. Review lần 2 (Claude Sonnet 5.5, 10/11/2026): dung. Câu gốc ("cường độ không kém nơi nào", hình ảnh học online, chạy xe) không nguồn; đã bỏ (da-bo). Mục "Ở Việt Nam" hiện chỉ nói "Tính đến 11/2026, chưa tìm thấy nghiên cứu thực nghiệm trên người Việt" (n40, n41), không có số liệu DataReportal nên không cần loai thoi-su cho câu bị bỏ. Không đưa cau_dung (số DataReportal chưa mở báo cáo gốc) vào trang.'
+    review: dung
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://datareportal.com/reports/tag/Vietnam" ]
+    luot_2_ghi_chu: 'câu đúng: Việt Nam có tỉ lệ dùng mạng xã hội cao (khoảng ba phần tư dân số có tài khoản mạng xã hội đầu 2025; Zalo, Facebook, TikTok phổ biến); chưa có số liệu so sánh quốc tế nào cho thấy cường độ "không kém nơi nào".; Số liệu cho thấy mức dùng mạng xã hội cao, nhưng không mở được báo cáo gốc DataReportal, không có số liệu smartphone. Các câu "vừa học online vừa chat", "vừa chạy xe vừa xem điện thoại" là quan sát không nguồn; "với cường độ không kém nơi nào" là so sánh không có căn cứ.'
+  - id: n43
+    cau: 'Ngộ nhận: "Người trẻ đa nhiệm giỏi vì họ là thế hệ số." Chúng tôi không tìm thấy bằng chứng cho điều này; Ophir và cộng sự (2009) còn thấy nhóm đa nhiệm nặng (sinh viên Stanford) chuyển đổi nhiệm vụ kém hơn nhóm nhẹ, dù các nghiên cứu sau chưa lặp lại; quen dùng nhiều thiết bị không đồng nghĩa với dùng hiệu quả.'
+    loai: phat-hien
+    nguon:
+      - ophir2009
+      - sanbonmatsu2013
+      - wiradhany2017
+    trich: The findings indicate that the persons who are most capable of multi-tasking effectively are not the persons who are most likely to engage in multiple tasks simultaneously.
+    vi_tri: Tóm tắt Sanbonmatsu 2013
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhóm đa nhiệm nặng (phần lớn là người trẻ, dùng nhiều thiết bị nhất)" (không nguồn). Theo G1-L03 (22/10/2026): sửa đã áp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Sanbonmatsu 2013 (toàn văn): người đa nhiệm hiệu quả nhất không phải người hay đa nhiệm nhất; Ophir 2009 (tóm tắt) và Wiradhany 2017: chưa lặp lại. Chữ trang "không tìm thấy bằng chứng" cộng "dù các nghiên cứu sau chưa lặp lại" khớp.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106", "https://www.learntechlib.org/p/202079/" ]
+    luot_2_ghi_chu: Ngộ nhận "thế hệ số đa nhiệm giỏi" bị Kirschner & De Bruyckere bác; phần Ophir (sinh viên Stanford) đúng; "chúng tôi không tìm thấy" là diễn đạt hợp lý. Chỉ đọc tóm tắt Kirschner qua mô tả tìm kiếm.
+  - id: n44
+    cau: 'Ngộ nhận: "Vừa nghe nhạc vừa học giúp tập trung hơn." Nhạc không lời, đều đều, âm lượng nhỏ có thể che tiếng ồn xung quanh; nhạc có lời, podcast, video luôn tranh chú ý với bài học.'
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ khỏi trang: không có nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã bỏ; kiểm trang: không còn ngộ nhận "nghe nhạc khi học". Review lần 2 (Claude Sonnet 5.5, 10/11/2026): dung. "Luôn tranh chú ý" và "nhạc không lời che tiếng ồn" không nguồn mở; câu gốc đã bỏ (da-bo). Kiểm trang: ngộ nhận nghe nhạc khi học không còn; chữ "nghe nhạc" chỉ còn trong ví dụ định nghĩa đa nhiệm (mục mở đầu).'
+    review: dung
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://eprints.bournemouth.ac.uk/29995/", "https://eric.ed.gov/?id=EJ944201" ]
+    luot_2_ghi_chu: 'câu đúng: Nhạc có lời và lời nói (podcast, video) thường gây nhiễu nhất khi học, nhất là khi đọc hiểu; nhạc không lời, nhỏ ít gây nhiễu hơn, nhưng bằng chứng nhạc nền giúp tập trung là không rõ ràng.; Lời, podcast gây nhiễu nhiều nhất là đúng; nhưng "luôn tranh chú ý" quá tuyệt đối, và ý nhạc không lời, nhỏ, đều "che tiếng ồn" chưa có nguồn nào mở được xác nhận (chỉ đọc tóm tắt qua tìm kiếm); tổng hợp Kämpfe thấy hiệu ứng thay đổi theo loại tác vụ, đọc bị hại.'
+  - id: n45
+    cau: 'Ngộ nhận: "Tắt thông báo là đủ, để điện thoại cạnh cũng được." Bằng chứng chưa ngã ngũ: Ward và cộng sự (2017) thấy chỉ riêng sự hiện diện của điện thoại trên bàn làm giảm hiệu suất, nhưng lần làm lại có đăng ký trước và tổng hợp không thấy điều này.'
+    loai: phat-hien
+    nguon:
+      - ward2017
+      - ruiz2022
+      - hartanto2024
+    trich: there was no difference between smartphone location conditions
+    vi_tri: Tóm tắt Ruiz Pardo & Minda 2022
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ward… thấy chỉ riêng sự hiện diện của điện thoại trên bàn đã làm giảm hiệu suất, nhưng các nghiên cứu làm lại về sau phần lớn không thấy điều này. Dù vậy, điện thoại trong tầm mắt vẫn là một nguồn gián đoạn; tắt thông báo là bước một, đưa điện thoại ra khỏi tầm mắt là bước hai." Đã bỏ "phần lớn các nghiên cứu làm lại" (có một lần làm lại và một tổng hợp) và lời khuyên không nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chữ trang "bằng chứng chưa ngã ngũ" đúng: Ward (báo cáo hiệu ứng), Ruiz Pardo & Minda và Hartanto (không thấy), Böttger 2023 (thấy tác động tiêu cực chung). Dòng sửa trailing space ở cuối dòng này của trang.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1086/691462", "https://doi.org/10.1016/j.actpsy.2022.103717", "https://doi.org/10.1037/tmb0000123", "https://doi.org/10.3390/bs13090751" ]
+    luot_2_ghi_chu: Khớp ba nguồn; Böttger 2023 (gộp cả việc dùng) thấy tác động tiêu cực chung, phù hợp với việc gọi là "chưa ngã ngũ".
+  - id: n46
+    cau: 'Ngộ nhận: "Đa nhiệm truyền thông = đa nhiệm nói chung." Không: nghiên cứu trong bài chỉ nói về dùng nhiều luồng truyền thông cùng lúc; vừa nấu cơm vừa nghe podcast khác với vừa học bài vừa trả lời tin nhắn.'
+    loai: dinh-nghia
+    nguon:
+      - uncapher2018
+    trich: individuals who differ in the extent to which they simultaneously engage with multiple media streams, or "media multitasking."
+    vi_tri: Tóm tắt Uncapher & Wagner 2018
+    ket_qua: da-lam-mem
+    ghi_chu: 'Ví dụ nấu cơm, podcast là minh họa của trang (gia-dinh); chỗ "một việc tự động + một việc chú ý" suy từ Watson & Strayer (việc tự động như đi bộ) chưa kiểm: chỗ khó. Review (Claude Sonnet 5.5, 10/11/2026): dung. Định nghĩa khớp Uncapher & Wagner 2018 (tóm tắt); ví dụ nấu cơm/podcast là minh họa (`gia-dinh`); đã không nói chắc về "một việc tự động".'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0903620106", "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Định nghĩa đúng; ví dụ nấu ăn + podcast ở ngoài phạm vi chỉ số đa nhiệm truyền thông (nấu ăn không phải truyền thông) là cách minh họa của trang, không phải kết quả thực nghiệm.
+  - id: n47
+    cau: 'Quiz 1: phát hiện ngược trực giác nhất của Ophir, Nass và Wagner (2009): nhóm đa nhiệm truyền thông nặng, dù "luyện tập" chuyển đổi mỗi ngày, lại làm kém hơn nhóm nhẹ ở bài kiểm tra chuyển đổi nhiệm vụ, nhiều khả năng vì khó gạt bỏ thông tin gây nhiễu.'
+    loai: phat-hien
+    nguon:
+      - ophir2009
+    trich: This led to the surprising result that heavy media multitaskers performed worse on a test of task-switching ability, likely due to reduced ability to filter out interference from the irrelevant task set.
+    vi_tri: Tóm tắt Ophir 2009
+    ket_qua: da-sua
+    ghi_chu: 'Theo G1-L03: KHỚP. Lời giải thích "Luyện nhiều không đồng nghĩa với luyện đúng" là bình luận. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (đáp án quiz 1): "…lại làm kém hơn nhóm đa nhiệm nhẹ ở bài kiểm tra chuyển đổi nhiệm vụ, vì họ khó gạt bỏ thông tin gây nhiễu hơn." Chữ mới: "…nhiều khả năng vì họ khó gạt bỏ…" Lý do: Ophir 2009 (tóm tắt): "likely due to reduced ability to filter out interference".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/s13414-017-1408-4", "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Bài Ophir 2009 chưa mở; mô tả qua bản tái lập. Chi tiết 'bài chuyển đổi nhiệm vụ' và 'luyện tập mỗi ngày' không kiểm trực tiếp.
+    review: sai
+  - id: n48
+    cau: 'Quiz 2: Uncapher và Wagner (2018) thận trọng vì hầu hết là nghiên cứu tương quan, chưa rõ chiều nhân quả.'
+    loai: phat-hien
+    nguon:
+      - uncapher2018
+    trich: to determine the direction of causality
+    vi_tri: Tóm tắt Uncapher & Wagner 2018
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/s13414-017-1408-4", "https://doi.org/10.1073/pnas.1611612115" ]
+    luot_2_ghi_chu: Bài Ophir 2009 chưa mở; mô tả qua bản tái lập. Chi tiết 'bài chuyển đổi nhiệm vụ' và 'luyện tập mỗi ngày' không kiểm trực tiếp.
+  - id: n49
+    cau: 'Quiz 3: thí nghiệm "brain drain" của Ward và cộng sự (2017): các tác giả báo cáo chỉ riêng việc điện thoại ở gần đã làm giảm năng lực nhận thức; lần làm lại có đăng ký trước và phân tích tổng hợp 33 nghiên cứu không thấy hiệu ứng, nên đây vẫn đang tranh cãi.'
+    loai: phat-hien
+    nguon:
+      - ward2017
+      - ruiz2022
+      - hartanto2024
+      - boettger2023
+    trich: the mere presence of these devices reduces available cognitive capacity
+    vi_tri: Tóm tắt Ward 2017
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: câu hỏi "chứng minh điều gì?"; đáp án "(úp mặt, tắt tiếng, không ai chạm vào)… vì một phần tài nguyên nhận thức bận rộn kìm nén ham muốn kiểm tra điện thoại"; giải thích "các nghiên cứu làm lại về sau phần lớn không thấy". G1 #4. Đã sửa như n16, n34. Câu hỏi quiz: "phát hiện điều gì?" (không đổi); hai lựa chọn nhiễu ("hỏng mắt và cột sống", "tắt nguồn tăng IQ") là phương án nhiễu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 3: khớp Ward 2017 (tóm tắt), Ruiz Pardo & Minda 2022, Hartanto 2024; "đang tranh cãi" khớp nhãn n34 (kể cả Böttger 2023). Giải thích không dựa vào vị trí lựa chọn.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1086/691462", "https://doi.org/10.1016/j.actpsy.2022.103717", "https://doi.org/10.1037/tmb0000123" ]
+    luot_2_ghi_chu: Khớp.
+  - id: n50
+    cau: 'Quiz 4: Herbert Simon (1971): thông tin dồi dào thì chú ý trở thành thứ khan hiếm: "sự giàu có về thông tin tạo ra sự nghèo nàn về chú ý".'
+    loai: lich-su
+    nguon:
+      - wiki-simon
+      - simon1971
+    trich: Hence a wealth of information creates a poverty of attention and a need to allocate that attention efficiently
+    vi_tri: Simon 1971 (theo Wikipedia)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: đáp án "…các nền tảng miễn phí vì thế cạnh tranh để giành giật và bán sự chú ý của bạn cho nhà quảng cáo" và lời giải thích "bạn đang đấu với cả một ngành công nghiệp được tối ưu hóa để thắng bạn" (không nguồn); đã bỏ. Hai lựa chọn nhiễu giữ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 4: Simon 1971 (toàn văn, tr. 40–41) xác nhận đúng chữ. Giải thích không dựa vào vị trí lựa chọn.'
+    review: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://atelierdesfuturs.org/wp-content/uploads/2025/07/1971-simon.pdf" ]
+    luot_2_ghi_chu: Khớp văn bản gốc.
+  - id: n51
+    cau: '"Đọc thêm": liên kết tới "Giữa bữa tiệc ồn ào…", "Nhìn mà không thấy", "Não có hai chế độ nghĩ?" (tư duy nhanh và chậm), và "hiệu ứng Dunning–Kruger".'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: kham-pha/chu-y-tri-giac/nghe-chon-loc, nhin-ma-khong-thay, kham-pha/tu-duy/tu-duy-nhanh-cham, kham-pha/tu-duy/dunning-kruger có trong src/data/trang.yml. Chữ cũ: "mỗi lần chuyển đổi nhiệm vụ là một lần đánh thức Hệ 2 tốn kém" (không nguồn) đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Bốn trang có trong src/data/trang.yml (nghe-chon-loc, nhin-ma-khong-thay cùng lô; kham-pha/tu-duy/tu-duy-nhanh-cham; kham-pha/tu-duy/dunning-kruger); các trang tu-duy chưa dựng nên link thành "sắp có". Tiêu đề khớp (kiểm trang.yml và tiêu đề các trang cùng lô).'
+    review: dung
+  - id: n52
+    cau: 'Mục Nguồn: Böttger (2023); Fitz (2019); Hartanto (2024); Kiesel (2010); Ophir (2009); Parry & le Roux (2021); Ruiz Pardo & Minda (2022); Sanbonmatsu (2013); Simon (1971); Stothart (2015); Uncapher & Wagner (2018); Ward (2017); Watson & Strayer (2010); Wiradhany & Nieuwenstein (2017) (thông tin sách báo); Ophir: "~100 sinh viên Stanford làm bài kiểm tra".'
+    loai: lich-su
+    nguon:
+      - ophir2009
+      - uncapher2018
+      - ward2017
+      - ruiz2022
+      - hartanto2024
+      - wiradhany2017
+      - sanbonmatsu2013
+      - watson2010
+      - kiesel2010
+      - parry2021
+      - boettger2023
+      - fitz2019
+      - stothart2015
+      - simon1971
+    ket_qua: da-sua
+    ghi_chu: 'Đối chiếu tên bài, tạp chí, tập, trang với OpenAlex và bản PDF (Wiradhany, Watson). Hartanto: trang ghi "Technology, Mind, and Behavior, 5(1), 1–14": chưa kiểm số trang. Chữ cũ: ghi chú nguồn Ophir "~100 sinh viên Stanford làm bài kiểm tra, chỉ số đa nhiệm truyền thông…" (G1 #3 đã sửa). Quy ước "Hartanto, A., và cộng sự" là cách viết của trang, không phải APA đầy đủ. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: mục Nguồn có 11 mục, không có các nguồn mới. Chữ mới: thêm Böttger (2023), Fitz (2019), Stothart (2015). Siêu dữ liệu đối chiếu Crossref: Hartanto (Technology, Mind, and Behavior 5(1) 1–14 khớp); Parry & le Roux (Cyberpsychology 15(2), art. 7); Ruiz Pardo & Minda (Acta Psychol 230, 103717); Ward (JACR 2(2) 140–154); Uncapher (PNAS 115(40) 9889–9896); Ophir (PNAS 106(37) 15583–15587); Wiradhany (APP 79(8) 2620–2641); Kiesel (Psychol Bull 136(5) 849–874); Sanbonmatsu (PLoS ONE 8(1) e54402); Watson & Strayer (PBR 17(4) 479–485); Böttger (Behav Sci 13(9) 751); Fitz (CHB 101, 84–94); Stothart (JEP:HPP 41(4) 893–897). Simon (1971) đã đọc toàn văn, tr. 37–52 theo trang là chương trong sách (bản PDF có số trang 37–72 của cả hội thảo).'
+    review: sai
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1037/xhp0000100", "https://web.archive.org/web/2009/http://news.stanford.edu/news/2009/august24/multitask-research-study-082409.html", "https://atelierdesfuturs.org/wp-content/uploads/2025/07/1971-simon.pdf" ]
+    luot_2_ghi_chu: 'Đối chiếu Crossref cho Böttger, Fitz, Hartanto (5(1) 1-14), Kiesel, Ophir, Parry (15(2) art. 7), Ruiz Pardo (230, 103717), Sanbonmatsu, Stothart, Uncapher, Ward, Watson, Wiradhany: đều khớp. Simon 1971: tr. 37-52 là cách trích dẫn phổ biến của riêng bài Simon (bản PDF dài 36 trang vì có phần thảo luận, nên có nguồn ghi 37-72). Ophir "~100 sinh viên" khớp thông cáo và tổng 103 người trong ba phần thí nghiệm.'
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Mô tả (description): "…người đa nhiệm truyền thông nặng chuyển đổi nhiệm vụ kém hơn…"'
+    moi: '"…thấy người đa nhiệm truyền thông nặng làm kém hơn ở các bài kiểm tra kiểm soát nhận thức, nhưng nhiều kết quả sau chưa lặp lại…"'
+    ly_do: Hồ sơ n1.
+  - cu: Đoạn "Vì sao các ứng dụng làm vậy?… Mỗi thông báo… móc câu… ngành công nghiệp nghìn tỷ đô…"; "đa nhiệm truyền thông gắn liền với các thiết bị được thiết kế để giành giật chú ý"
+    moi: Chỉ giữ khái niệm nền kinh tế chú ý và câu của Simon (1971)
+    ly_do: Hồ sơ n4–n6.
+  - cu: 'Ophir: "kiểm soát nhận thức dàn trải (breadth-biased cognitive control)… có lợi khi cần bắt sóng rộng…"'
+    moi: '"kết quả chuyển đổi kém nhiều khả năng do người đa nhiệm nặng khó gạt bỏ nhiễu từ bộ quy tắc của nhiệm vụ kia (theo tóm tắt bài gốc)."'
+    ly_do: Hồ sơ n11, n30.
+  - cu: 'Uncapher và Wagner: "tiếp nối công trình của người đồng nghiệp quá cố Clifford Nass… chú ý, trí nhớ làm việc, trí nhớ dài hạn, trí thông minh lỏng"; "tương quan âm nhưng nhỏ, rõ nhất ở các bài kiểm tra trí nhớ và chú ý… hai cảnh báo của Wagner… bài tích hợp đa giác quan"'
+    moi: '"tổng quan các nghiên cứu… đến năm 2018"; "Theo tóm tắt… thường ở các bài đòi hỏi duy trì chú ý hướng đích… nhiều nghiên cứu không thấy khác biệt… (118 phép đo, Parry và le Roux 2021)"'
+    ly_do: Hồ sơ n12–n15.
+  - cu: 'Ward: "nhóm để điện thoại trên bàn làm bài kém nhất, nhóm để ở phòng khác làm tốt nhất… một phần tâm trí luôn bận rộn kìm nén ham muốn kiểm tra nó"; "Điện thoại đều úp mặt, tắt tiếng."'
+    moi: '"Theo các tác giả, chỉ riêng sự hiện diện của điện thoại đã làm giảm năng lực nhận thức có sẵn… giả thuyết brain drain…"; ba vị trí theo mô tả của lần làm lại 2022'
+    ly_do: Hồ sơ n16–n18.
+  - cu: 'Khung Vững chắc: "chuyển đổi nhiệm vụ luôn tốn phí… được tái hiện suốt hàng chục năm… Điểm này không còn tranh cãi."'
+    moi: '"chuyển đổi nhiệm vụ thường tốn phí… được tổng quan trong nhiều bài (Kiesel và cộng sự, 2010)…"'
+    ly_do: Hồ sơ n21.
+  - cu: 'Khung Khá vững: "…nhiều nghiên cứu không tìm thấy khác biệt…"'
+    moi: '"…được tổng quan bởi Uncapher và Wagner (2018) và Parry và le Roux (2021)…"'
+    ly_do: Hồ sơ n22.
+  - cu: 'Khung Đang tranh cãi: "chính Wagner cũng nhấn mạnh còn quá sớm…"'
+    moi: '"Uncapher và Wagner (2018) nêu cần thêm nghiên cứu để xác định chiều nhân quả."'
+    ly_do: Hồ sơ n24.
+  - cu: 'Khung bác bỏ: "Không có bằng chứng ủng hộ hai ý này."'
+    moi: '"Chúng tôi không tìm thấy bằng chứng ủng hộ hai ý này."'
+    ly_do: Hồ sơ n27.
+  - cu: 'Lý thuyết: "mất vài trăm mili-giây… Cộng dồn hàng chục lần nhảy…"; "Kiểm soát nhận thức dàn trải… săn bắt–hái lượm"; "Vòng xoáy chú ý trong nền kinh tế chú ý"'
+    moi: '"…chuẩn bị và chuyển bộ quy tắc… (Kiesel và cộng sự, 2010)"; "Dễ bị nhiễu…"; bỏ mục vòng xoáy'
+    ly_do: Hồ sơ n29–n31.
+  - cu: 'Áp dụng 1: "Bài học rẻ nhất… để điện thoại ở phòng khác… Để điện thoại ra xa vẫn là cách rẻ…"'
+    moi: '"Ward và cộng sự (2017) gợi ý… Nhưng lần làm lại… và phân tích tổng hợp 33 nghiên cứu… chưa thể khuyên làm theo."'
+    ly_do: Hồ sơ n34.
+  - cu: 'Áp dụng 3: "Hầu hết mọi người đều sốc khi thấy con số thật… Đo được mới quản được."'
+    moi: '"Đây là cách tự quan sát, không phải cách đo có kiểm soát."'
+    ly_do: Hồ sơ n37.
+  - cu: 'Áp dụng 4: "ảo giác năng suất… luôn thắng… hệ quả trực tiếp của switch cost"'
+    moi: '"Với đa số người, làm hai việc đòi hỏi chú ý cùng lúc thì kém hơn… thường phù hợp hơn…"'
+    ly_do: Hồ sơ n38.
+  - cu: 'Tự thử: "Dự đoán theo nghiên cứu gốc: buổi 3 sẽ nhanh và chính xác nhất…"'
+    moi: '"Nếu hiệu ứng trong nghiên cứu gốc có thật, buổi 3 sẽ tốt nhất và buổi 1 kém nhất."'
+    ly_do: Hồ sơ n39.
+  - cu: 'Mục Việt Nam: "Chúng tôi chưa tìm thấy nghiên cứu thực nghiệm nào về đa nhiệm truyền thông trên người Việt. Mọi con số…"; hai đoạn "Nhưng hiện trường Việt Nam thì ai cũng thấy…" và ca dao'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu thực nghiệm nào đo tác động nhận thức… Có một khảo sát hành vi… Các con số… chủ yếu từ…"; bỏ hai đoạn sau'
+    ly_do: Hồ sơ n40–n42.
+  - cu: 'Ngộ nhận: "(phần lớn là người trẻ, dùng nhiều thiết bị nhất)"; bullet "Vừa nghe nhạc vừa học giúp tập trung hơn"; "các nghiên cứu làm lại về sau phần lớn không thấy… Dù vậy, điện thoại trong tầm mắt vẫn là nguồn gián đoạn…"'
+    moi: '"(sinh viên Stanford)"; bỏ bullet nhạc; "lần làm lại có đăng ký trước và tổng hợp không thấy điều này"'
+    ly_do: Hồ sơ n43–n45.
+  - cu: 'Quiz 3, 4: đáp án "…úp mặt, tắt tiếng, không ai chạm vào… kìm nén…"; "các nền tảng miễn phí… bán sự chú ý"; lời giải thích "…ngành công nghiệp được tối ưu hóa để thắng bạn"'
+    moi: Đáp án "Các tác giả báo cáo… giải thích là điện thoại chiếm một phần nguồn lực nhận thức có hạn"; "…khan hiếm không phải thông tin mà là sự chú ý…"; giải thích theo Simon
+    ly_do: Hồ sơ n49, n50.
+  - cu: 'Đọc thêm: "…mỗi lần chuyển đổi nhiệm vụ là một lần đánh thức Hệ 2 tốn kém."'
+    moi: '"…tư duy nhanh và tư duy chậm."'
+    ly_do: Hồ sơ n51.
+  - cu: "Thu gọn: \"cái ta gọi là 'đa nhiệm' thực chất là chuyển đổi nhiệm vụ\"; Ophir Kết quả: \"Nguyên nhân: họ dễ bị nhiễu…\"; quiz 1: \"…vì họ khó gạt bỏ thông tin gây nhiễu hơn.\""
+    moi: '"…thường thực chất là…"; "Cụ thể, họ dễ bị nhiễu…"; "…nhiều khả năng vì họ khó gạt bỏ…"'
+    ly_do: Review n2, n9, n47.
+  - cu: 'Khung Khá vững (đa nhiệm và nhận thức): "hiệu ứng nhỏ, nhiều nghiên cứu không tìm thấy khác biệt…"'
+    moi: Thêm số của Parry và le Roux (khoảng 0,14 nói chung, 0,09 ở bài kiểm tra hiệu suất)
+    ly_do: Review n22.
+  - cu: 'Khung Đang tranh cãi: "Khả năng lớn nhất là vòng xoáy hai chiều — và Uncapher…"; quiz 2: "rất có thể cả hai chiều cùng đúng", "giả thuyết hợp lý nhất hiện nay"'
+    moi: '"Cũng có thể cả hai chiều cùng đúng… nhưng chưa có bằng chứng quyết định"; "có thể cả hai chiều cùng đúng"; "một giả thuyết hợp lý"'
+    ly_do: Review n26.
+  - cu: 'Khung Đã bị bác bỏ: "đa nhiệm nhiều giúp ta giỏi đa nhiệm, và não làm được hai việc khó cùng lúc" (kèm ngoại lệ "đi bộ")'
+    moi: 'Khung Khá vững: "đa nhiệm truyền thông nhiều không đi kèm khả năng đa nhiệm hay kiểm soát nhận thức tốt hơn" (bỏ ví dụ đi bộ)'
+    ly_do: Review n27, n28.
+  - cu: 'Áp dụng 1: "…Hartanto… kết luận hầu như không có lý do… Vì vậy"'
+    moi: Thêm "còn một phân tích tổng hợp khác, gộp cả việc dùng lẫn sự hiện diện của điện thoại (Böttger và cộng sự, 2023), lại thấy tác động tiêu cực chung."
+    ly_do: Review n34.
+  - cu: 'Áp dụng 2: tiêu đề kèm chip Khá vững; "Mỗi thông báo là một lần chuyển đổi nhiệm vụ bắt buộc… Hãy tắt thông báo của mọi ứng dụng không khẩn cấp… Bạn không bỏ lỡ gì cả…"'
+    moi: Tiêu đề không chip (giữ id cũ); đoạn nêu Stothart 2015 và Fitz 2019, lời khuyên "gom vào vài khung giờ, thay vì tắt hẳn", "bằng chứng từ ít nghiên cứu"
+    ly_do: Review n35, n36.
+  - cu: 'Áp dụng 3: "3. Tự đo mức đa nhiệm của mình trong một tuần" kèm chip Khá vững'
+    moi: '"3. Thử quan sát mức đa nhiệm của chính mình" (giữ id cũ), không chip; nêu Sanbonmatsu 2013 và nói chưa có nghiên cứu về hiệu quả của việc ghi chép'
+    ly_do: Review n37.
+  - cu: 'Ở Việt Nam: "Các con số trong bài chủ yếu từ sinh viên Mỹ và châu Âu."'
+    moi: '"Các nghiên cứu kể trong bài chủ yếu làm với sinh viên ở Mỹ, Canada và châu Âu; lần làm lại của Wiradhany và Nieuwenstein (2017) có thêm một mẫu sinh viên Indonesia."'
+    ly_do: Review n41.
+  - cu: "Nguồn: 11 mục; Ngộ nhận 2 có khoảng trắng cuối dòng"
+    moi: Thêm Böttger 2023, Fitz 2019, Stothart 2015; bỏ khoảng trắng cuối dòng
+    ly_do: Review n52, n45.

@@ -1,0 +1,1166 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/tu-duy/dunning-kruger
+trang: src/content/docs/kham-pha/tu-duy/dunning-kruger.md
+nguon_cu: ../psyche-zero/docs/kham-pha/tu-duy/dunning-kruger.md
+tang: mo-rong
+muc: V2
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d5-l2
+    ma_bam: sha256:5e1ad628a7160cc5640777be13d9fb1d1e4d07ded43dcb87a1a4073841f1ce43
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L2 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L2)
+      review: "Claude Opus 5.5 (agent review D5-L2, 10/11/2026)"
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l2-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: kruger1999
+    ten: 'Kruger & Dunning (1999), J Pers Soc Psychol 77(6), 1121–1134: toàn văn (PDF ở avaresearch.com), đối chiếu lại các câu của G1-L02'
+    link: https://doi.org/10.1037/0022-3514.77.6.1121
+    toan_van: true
+  - id: gignac2020
+    ten: 'Gignac & Zajenkowski (2020), Intelligence 80, 101449: toàn văn (gwern.net/doc/iq/2020-gignac.pdf)'
+    link: https://doi.org/10.1016/j.intell.2020.101449
+    toan_van: true
+  - id: krueger2002
+    ten: 'Krueger & Mueller (2002), J Pers Soc Psychol 82(2), 180–188: tóm tắt (OpenAlex); không mở được toàn văn'
+    link: https://doi.org/10.1037/0022-3514.82.2.180
+    toan_van: false
+  - id: nuhfer2016
+    ten: 'Nuhfer và cộng sự (2016), Numeracy 9(1), art. 4: tóm tắt (OpenAlex); PDF trả 403'
+    link: https://doi.org/10.5038/1936-4660.9.1.4
+    toan_van: false
+  - id: nuhfer2017
+    ten: 'Nuhfer và cộng sự (2017), Numeracy 10(1), art. 4: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.5038/1936-4660.10.1.4
+    toan_van: false
+  - id: hiller2023
+    ten: 'Hiller (2023), Intelligence 97, 101732: tóm tắt của bản preprint (PDXScholar); bản đăng không mở'
+    link: https://doi.org/10.1016/j.intell.2023.101732
+    toan_van: false
+  - id: zell2020
+    ten: 'Zell và cộng sự (2020), Psychol Bull 146(2), 118–149: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/bul0000218
+    toan_van: false
+  - id: ehrlinger2008
+    ten: 'Ehrlinger và cộng sự (2008), Organ Behav Hum Decis Process 105(1), 98–121: tóm tắt (Europe PMC; toàn văn PMC2702783 chưa đọc)'
+    link: https://doi.org/10.1016/j.obhdp.2007.05.002
+    toan_van: false
+  - id: jansen2021
+    ten: 'Jansen, Rafferty & Griffiths (2021), Nat Hum Behav 5(6), 756–763: tóm tắt (nature.com, thu phí)'
+    link: https://doi.org/10.1038/s41562-021-01057-0
+    toan_van: false
+  - id: ryvkin2012
+    ten: 'Ryvkin, Krajč & Ortmann (2012), J Econ Psychol 33(5), 1012–1031: tóm tắt của bản mở rộng (SSRN 1578474, qua Crossref)'
+    link: https://doi.org/10.1016/j.joep.2012.06.003
+    toan_van: false
+  - id: nguyen2026
+    ten: 'Nguyen, Ho Thi & Truong (2026), J Eng Educ Transformations 39(S2), 133–140: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.16920/jeet/2026/v39i4/26113
+    toan_van: false
+  - id: ig2000
+    ten: Ig Nobel 2000, hạng mục Tâm lý học (improbable.com), mở 10/11/2026
+    link: https://improbable.com/ig-about/winners/#ig2000
+    toan_van: true
+  - id: crossref-krueger
+    ten: 'Crossref, DOI 10.1037/0022-3514.82.2.180: tên tác giả (Joachim Krueger, Ross A. Mueller); review chạy lại 10/11/2026'
+    link: https://api.crossref.org/works/10.1037/0022-3514.82.2.180
+    toan_van: false
+  - id: nam-ngan
+    ten: 'Nam ngạn chích cẩm (Phạm Quang Sán, 1918), bản đánh máy trên Wikisource tiếng Việt kèm bản quét (mục 8 chữ, mục 9 chữ)'
+    link: https://vi.wikisource.org/wiki/Nam_ngạn_chích_cẩm
+    toan_van: true
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "Dunning-Kruger effect Vietnam", "Dunning-Kruger Vietnamese students", "unskilled and unaware Vietnam", "overconfidence self-assessment Vietnamese students metacognition calibration", "better-than-average effect Vietnamese": không có nghiên cứu kiểm định hiệu ứng theo cách gốc trên người Việt'
+    link: https://api.openalex.org/works?search=Dunning-Kruger%20effect%20Vietnam
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả: Kruger và Dunning (1999) cho thấy người kém nhất tự đánh giá cao hơn thực tế nhiều nhất.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Although their test scores put them in the 12th percentile, they estimated themselves to be in the 62nd.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Mô tả (description). Chữ "đánh giá cao hơn thực tế nhiều nhất" đã sửa theo G1-L02 (mục 1). Theo G1-L02: KHỚP.'
+  - id: n2
+    cau: 'Mô tả: có phê bình thống kê (hiệu ứng hồi quy về trung bình) nhắm vào hiệu ứng.'
+    loai: phat-hien
+    nguon:
+      - krueger2002
+    trich: Asymmetric errors were expected because of statistical regression and the general better-than-average (BTA) heuristic.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Mô tả (description).
+  - id: n3
+    cau: Đường cong "núi ngu dốt" không có trong nghiên cứu gốc; bài báo chỉ có bốn hình đồ thị đường theo tứ phân vị (mô tả, bài giới thiệu, khung Đã bị bác bỏ, ngộ nhận, quiz).
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Figure 1. Perceived ability to recognize humor as a function of actual test performance (Study 1).
+    vi_tri: Hình 1–4 (chú thích hình)
+    ket_qua: dung
+    ghi_chu: 'Kiểm toàn văn (bản PDF avaresearch.com): có đúng bốn hình (Figure 1–4), mỗi hình là đồ thị đường nối bốn tứ phân vị (chú thích: "as a function of actual test performance"); không có chữ "Mount Stupid", "Valley of Despair" hay "Slope of Enlightenment" trong bài. Theo G1-L02 mục 7: đã sửa "biểu đồ cột" thành "đồ thị đường".'
+  - id: n4
+    cau: Theo giả thuyết Dunning–Kruger, người ta có thể thiếu luôn khả năng nhận ra mình thiếu kiến thức (siêu nhận thức).
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: their incompetence robs them of the metacognitive ability to realize it.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Khung "Tự trải nghiệm" (đáp án). Chữ cũ: "Chính là khả năng thứ hai"; chữ mới: "Theo giả thuyết Dunning–Kruger, đó là…" (giả thuyết, chưa phải kết luận chắc). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n5
+    cau: Siêu nhận thức (metacognition) là "biết về cái biết của mình".
+    loai: dinh-nghia
+    nguon:
+      - kruger1999
+    trich: what cognitive psychologists variously term metacognition
+    vi_tri: Mục "Competence and Metacognitive Skills"
+    ket_qua: dung
+    ghi_chu: Định nghĩa của site ("biết về cái biết của mình") khớp cách bài gốc nối khái niệm với năng lực nhận ra đúng sai; chưa mở từ điển APA.
+  - id: n6
+    cau: Kỹ năng để làm đúng một việc và kỹ năng để nhận ra mình đang làm sai thường là cùng một bộ kỹ năng.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: the skills that engender competence in a particular domain are often the very same skills necessary to evaluate competence in that domain-one's own or anyone else's.
+    vi_tri: Introduction (đoạn "In essence, we argue…")
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "là cùng một kỹ năng" (khung Tự trải nghiệm và đáp án quiz câu 1); chữ mới: "thường là cùng một bộ kỹ năng". Lý do: bài gốc nói "often". Theo G1-L02: KHỚP (ý chính). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n7
+    cau: Hai nhà tâm lý học Justin Kruger và David Dunning (Cornell) là tác giả bài gốc năm 1999.
+    loai: lich-su
+    nguon:
+      - kruger1999
+      - ig2000
+    trich: Justin Kruger and David Dunning Cornell University
+    vi_tri: Trang đầu bài (JPSP 1999, 77(6), 1121–1134)
+    ket_qua: dung
+    ghi_chu: Ig Nobel ghi Kruger sau đó ở Đại học Illinois; trang chỉ nói Cornell khi nói về nghiên cứu, khớp tiêu đề bài.
+  - id: n8
+    cau: 'Hiệu ứng Dunning–Kruger: người kém nhất trong một lĩnh vực đánh giá năng lực của mình cao hơn thực tế nhiều nhất, người giỏi nhất hơi đánh giá thấp mình.'
+    loai: dinh-nghia
+    nguon:
+      - kruger1999
+    trich: Although these individuals scored at the 12th percentile on average, they nevertheless believed that their general logical reasoning ability fell at the 68th percentile
+    vi_tri: Nghiên cứu 2, Results
+    ket_qua: dung
+    ghi_chu: 'Định nghĩa theo bài gốc; Gignac & Zajenkowski (2020, Introduction) phát biểu cùng ý: "the misestimation of ability is larger at the lower end of the spectrum of objectively measured ability than at the higher end". Phần nhóm giỏi nhất hơi đánh giá thấp: xem n30.'
+  - id: n9
+    cau: 'Cơ chế được đề xuất: "gánh nặng kép": người thiếu năng lực vừa không làm tốt, vừa không đủ năng lực để nhận ra mình làm không tốt.'
+    loai: dinh-nghia
+    nguon:
+      - kruger1999
+    trich: Not only do these people reach erroneous conclusions and make unfortunate choices, but their incompetence robs them of the metacognitive ability to realize it.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+  - id: n10
+    cau: 'Kruger và Dunning viết: những kỹ năng giúp làm đúng thường chính là những kỹ năng cần để nhận ra đâu là đúng, của mình hay của người khác.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: the skills that engender competence in a particular domain are often the very same skills necessary to evaluate competence in that domain-one's own or anyone else's.
+    vi_tri: Introduction
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Như Dunning diễn đạt: những kỹ năng bạn cần để đưa ra đáp án đúng chính là những kỹ năng bạn cần để nhận ra đâu là đáp án đúng." Chữ mới gán cho hai tác giả và thêm "thường" theo "often". Theo G1-L02: KHỚP. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n11
+    cau: Họ ví với anosognosia, một chứng thần kinh do tổn thương phần phải của não, khiến người bệnh liệt nửa người bên trái mà không nhận ra mình bị liệt.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: anosognosia leaves people paralyzed on the left side of their body. But more than that
+    vi_tri: General Discussion (đoạn đầu)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ông ví von với anosognosia, một triệu chứng thần kinh trong đó bệnh nhân mất một chức năng (thậm chí mù hay liệt) mà vẫn khăng khăng mình bình thường". Bài gốc mô tả anosognosia là liệt nửa người trái do tổn thương nửa phải của não và không nhận ra mình liệt, và nói "we proposed a psychological analogue" (hai tác giả, không riêng Dunning); bỏ "mù" vì bài không nói. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp. (anosognosia: "Caused by certain types of damage to the right side of the brain, anosognosia leaves people paralyzed on the left side of their body").'
+    review: 'dung'
+  - id: n12
+    cau: Nhìn chung, người ta có xu hướng tự xếp mình trên mức trung bình (better-than-average effect), điều trái với logic của thống kê mô tả.
+    loai: dinh-nghia
+    nguon:
+      - kruger1999
+    trich: the tendency of the average person to believe he or she is above average, a result that defies the logic of descriptive statistics
+    vi_tri: Introduction, mục "Imperfect Self-Assessments"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Hầu như ai cũng có xu hướng … (đa số nghĩ mình lái xe, dạy học, hài hước hơn mức trung bình — điều bất khả thi về mặt toán học)". Chữ mới: "Nhìn chung, người ta có xu hướng …" (bài gốc: "the average person"), bỏ "ai cũng" và "bất khả thi về mặt toán học". Xem n13 về ví dụ. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n13
+    cau: 'Kruger và Dunning nêu ví dụ: học sinh trung học tự thấy mình hơn bạn về khả năng lãnh đạo, hòa đồng và viết; các quản lý tự thấy mình giỏi hơn quản lý trung bình.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: high school students tend to see themselves as having more ability in leadership, getting along with others, and written expression than their peers
+    vi_tri: Introduction, mục "Imperfect Self-Assessments"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: ví dụ "lái xe, dạy học, hài hước": không có trong bài gốc (ví dụ của bài là lãnh đạo, hòa đồng, viết; quản lý; cầu thủ bóng bầu dục). Chữ mới theo bài: "business managers view themselves as more able than the typical manager". Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n14
+    cau: 'Hiệu ứng Dunning–Kruger nói một điều hẹp hơn: mức sai lệch trong tự đánh giá phụ thuộc vào chính năng lực được đánh giá: người càng kém, sai lệch càng lớn.'
+    loai: dinh-nghia
+    nguon:
+      - gignac2020
+    trich: The Dunning-Kruger hypothesis states that the misestimation of ability is larger at the lower end of the spectrum of objectively
+    vi_tri: Gignac & Zajenkowski (2020), Introduction (câu đầu)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Câu "đang bị tranh cãi" của đoạn này trỏ tới khung tranh-cai (n58). Chữ cũ: "dữ dội nhất" → "đang bị tranh cãi". Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    review: 'dung'
+  - id: n15
+    cau: Hai nhà nghiên cứu ở Cornell cho sinh viên làm bài kiểm tra ở ba lĩnh vực (khiếu hài hước, ngữ pháp, suy luận logic) rồi yêu cầu tự đánh giá số câu đúng và thứ hạng so với bạn.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: participants scoring in the bottom quartile on tests of humor, grammar, and logic grossly overestimated their test performance and ability.
+    vi_tri: Tóm tắt (abstract); Study 1–3, mục Procedure
+    ket_qua: dung
+  - id: n16
+    cau: 'Nghiên cứu 1: 65 sinh viên.'
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: Participants were 65 Cornell University undergraduates
+    vi_tri: Study 1, Method
+    ket_qua: dung
+  - id: n17
+    cau: 'Nghiên cứu 1: sinh viên chấm độ hài của 30 mẩu truyện cười.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: We created a 30-item questionnaire made up of jokes we felt were of varying comedic value.
+    vi_tri: Study 1, Method
+    ket_qua: dung
+  - id: n18
+    cau: 'Nghiên cứu 1: "đáp án đúng" là mức độ trùng khớp với đánh giá của một nhóm diễn viên hài chuyên nghiệp.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: To assess joke quality, we contacted several professional comedians via electronic mail and asked them to rate each joke
+    vi_tri: Study 1, Method
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "một hội đồng diễn viên hài chuyên nghiệp"; chữ mới: "một nhóm" (tám diễn viên hài trả lời, bài loại một người; không có "hội đồng"). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: 'dung'
+  - id: n19
+    cau: 'Nghiên cứu 2: 45 sinh viên.'
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: Participants were 45 Cornell University undergraduates
+    vi_tri: Study 2, Method
+    ket_qua: dung
+  - id: n20
+    cau: 'Nghiên cứu 2: 20 câu hỏi lấy từ sách luyện thi LSAT (kỳ thi đầu vào trường luật ở Mỹ).'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: a 20-item logical reasoning test that we created using questions taken from a Law School Admissions Test (LSAT) test preparation guide
+    vi_tri: Study 2, Method
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "20 câu hỏi lấy từ đề thi đầu vào trường luật (LSAT)"; chữ mới: "lấy từ sách luyện thi LSAT (…)" (bài: test preparation guide, Orton 1993). Theo G1-L02: KHỚP (ý chính). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n21
+    cau: 'Nghiên cứu 3: bài kiểm tra ngữ pháp tiếng Anh.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Participants completed a 20-item test of grammar, with questions taken from a National Teacher Examination preparation guide
+    vi_tri: Study 3, Method
+    ket_qua: dung
+  - id: n22
+    cau: 'Nghiên cứu 4: 140 người tham gia.'
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: Participants were 140 Cornell University undergraduates
+    vi_tri: Study 4, Method
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 (mục 2) đã sửa: huấn luyện chia ngẫu nhiên cho mọi mức năng lực.'
+  - id: n23
+    cau: 'Nghiên cứu 4: một nửa người tham gia, chọn ngẫu nhiên, đọc một tài liệu huấn luyện ngắn (khoảng 10 phút) về suy luận logic; nửa kia làm việc khác.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Next, a random selection of 70 participants were given a short
+    vi_tri: Study 4, Method
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 2: bản cũ kể sai (chỉ nhóm yếu nhất được huấn luyện); trang cũ đã sửa theo G1. Bài: nửa kia (70 người) làm một việc không liên quan khoảng 10 phút. Đã đối chiếu lại toàn văn.'
+  - id: n24
+    cau: 'Nghiên cứu 4: sau đó mọi người tự chấm lại bài của mình và đánh giá lại.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: participants in both conditions completed a metacognition task in which they went through their own tests
+    vi_tri: Study 4, mục "Impact of training"
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 3: không có lần làm bài thứ hai.'
+  - id: n25
+    cau: Nhóm yếu nhất (tứ phân vị dưới cùng) đánh giá mình quá cao một cách ngoạn mục.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: participants scoring in the bottom quartile on tests of humor, grammar, and logic grossly overestimated their test performance and ability.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ở cả bốn nghiên cứu, nhóm yếu nhất … đều đánh giá mình quá cao"; chữ mới: "Ở các nghiên cứu". Bài nói "across 4 studies" ở tóm tắt nhưng chỉ ba nghiên cứu đầu có chữ "overestimated" cho mọi bài; Study 4 cũng thấy ("oblivious"). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n26
+    cau: 'Tóm tắt của bài nêu: điểm thực tế của nhóm yếu nhất rơi vào phân vị thứ 12 nhưng họ tưởng mình ở phân vị thứ 62.'
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: Although their test scores put them in the 12th percentile, they estimated themselves to be in the 62nd.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ở cả bốn nghiên cứu … điểm thực tế … phân vị thứ 12 … tưởng mình ở phân vị thứ 62". Thực tế mỗi nghiên cứu khác (NC1: 12 và 58; NC2: 12 và 62/68; NC4: 13 và 55/53); chữ mới gán con số cho tóm tắt của bài và nói "con số mỗi nghiên cứu hơi khác nhau". "Chỉ hơn được 12% số người" là cách đọc phân vị. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n27
+    cau: 'Con số mỗi nghiên cứu hơi khác nhau (ví dụ nghiên cứu 1: nhóm yếu nhất tự xếp ở phân vị 58).'
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: Whereas their actual performance fell in the 12th percentile, they put themselves in the 58th percentile.
+    vi_tri: Study 1, Results
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101" ]
+    luot_2_ghi_chu: Đọc toàn văn (Study 1, nhóm 25% thấp nhất).
+  - id: n28
+    cau: Trong bài logic, nhóm yếu nhất làm đúng trung bình 10/20 câu (9,6) nhưng đoán mình đúng 14 câu (14,2).
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: they thought they had answered 14.2 problems correctly on average-compared with the actual mean score of 9.6
+    vi_tri: Study 2, Results
+    ket_qua: dung
+  - id: n29
+    cau: Nhóm giỏi nhất làm đúng 17/20 (16,9) nhưng chỉ đoán mình đúng khoảng 14 câu (14,0).
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: M = 14.0 (perceived) versus 16.9 (actual)
+    vi_tri: Study 2, Results
+    ket_qua: dung
+  - id: n30
+    cau: Nhóm giỏi nhất hơi đánh giá thấp mình.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: estimated their general logical reasoning ability to fall at only the 74th percentile
+    vi_tri: Study 2, Results (nhóm tứ phân vị trên)
+    ket_qua: dung
+  - id: n31
+    cau: Nhóm yếu nhất cũng là nhóm lệch nhiều nhất khi ước lượng vị trí của mình so với các bạn.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: it was participants in the bottom quartile (n = 11) who overestimated their logical reasoning ability and test performance to the greatest extent.
+    vi_tri: Study 2, Results
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nhóm yếu nhất đồng thời là nhóm kém nhận biết vị trí tương đối của mình nhất." Chữ mới bám câu của bài (overestimated … to the greatest extent). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n32
+    cau: Ở nghiên cứu 4, nhóm yếu nhất được huấn luyện chấm lại bài cũ của mình chính xác hơn hẳn (9,3 so với 3,5 trên 10 câu).
+    loai: so-lieu
+    nguon:
+      - kruger1999
+    trich: Ms = 9.3 versus 3.5
+    vi_tri: Study 4, mục "Impact of training"
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 3. Đã sửa: "chấm lại bài cũ", không phải làm bài tốt hơn.'
+  - id: n33
+    cau: Nhóm yếu nhất được huấn luyện cũng tự đánh giá sát thực tế hơn hẳn.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: participants in the bottom quartile who had received training (n = 19) became more calibrated in every way.
+    vi_tri: Study 4, mục "Impact of training"
+    ket_qua: dung
+    ghi_chu: Số đi kèm (phân vị tự xếp 55 xuống 44, số câu tự đoán 5,3 xuống 1,0) khớp bài; trang không nêu số.
+  - id: n34
+    cau: 'Bài thi không làm lại: thứ thay đổi là khả năng nhận ra mình đúng, sai ở đâu.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: participants in both conditions completed a metacognition task in which they went through their own tests
+    vi_tri: Study 4, Procedure
+    ket_qua: dung
+    ghi_chu: 'Kiểm toàn văn: chỉ có một lần làm bài; huấn luyện, rồi chấm lại bài đã làm.'
+  - id: n35
+    cau: Học được kỹ năng cũng là học được cách "nhìn thấy" mình.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Paradoxically, improving the skills of participants, and thus increasing their metacognitive competence, helped them recognize the limitations of their abilities.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Diễn giải của trang cho kết quả nghiên cứu 4.
+  - id: n36
+    cau: Bài báo đoạt giải Ig Nobel Tâm lý học năm 2000.
+    loai: lich-su
+    nguon:
+      - ig2000
+    trich: 'PSYCHOLOGY : David Dunning of Cornell University and Justin Kruger of the University of Illinois, for their modest report'
+    vi_tri: Danh sách giải Ig Nobel 2000 (improbable.com)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ có thêm: "giải thưởng dành cho những nghiên cứu ''khiến người ta cười, rồi khiến người ta nghĩ''". Đã bỏ vế sau vì không mở được nguồn nói câu ấy (trang improbable.com/ig-about không có). Review (Claude Opus 5.5, 10/11/2026): đã tự mở improbable.com/ig-about/winners/: "PSYCHOLOGY: David Dunning of Cornell University and Justin Kruger of the University of Illinois, for their modest report, Unskilled and Unaware of It…" (Ig Nobel 2000). Đúng.'
+    review: 'dung'
+  - id: n37
+    cau: 'Joachim Krueger và Ross Mueller là tác giả của bài phê bình thống kê năm 2002 (mục Nguồn: không gọi là phê bình "đầu tiên").'
+    loai: lich-su
+    nguon:
+      - crossref-krueger
+    trich: '"given": "Joachim", "family": "Krueger" | "given": "Ross A.", "family": "Mueller"'
+    vi_tri: Crossref, DOI 10.1037/0022-3514.82.2.180
+    ket_qua: 'da-sua'
+    ghi_chu: 'Theo G1-L02 mục 4 (đã sửa "Justin Krueger"). Crossref (G1 trích; chưa chạy lại). Heading: bỏ chữ "đầu tiên" ("phê bình thống kê đầu tiên") vì không có nguồn nói đây là phê bình đầu tiên; xem n38. Review (Claude Opus 5.5, 10/11/2026): Crossref chạy lại 10/11/2026: Joachim Krueger, Ross A. Mueller; JPSP 82(2), 180–188. Lượt 1 bỏ "đầu tiên" ở tiêu đề nhưng mục Nguồn vẫn ghi "— phê bình thống kê đầu tiên: …" và thiếu DOI. Chữ mới: "<https://doi.org/10.1037/0022-3514.82.2.180> — phê bình thống kê: better-than-average + hồi quy về trung bình."'
+    review: 'sai'
+  - id: n38
+    cau: 'Krueger và Mueller chỉ ra hai thủ phạm thống kê có thể tạo ra đường cong: hiệu ứng better-than-average và hồi quy về trung bình.'
+    loai: phat-hien
+    nguon:
+      - krueger2002
+    trich: Asymmetric errors were expected because of statistical regression and the general better-than-average (BTA) heuristic.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Chỉ đọc tóm tắt (toan_van: false). Trích tiếp: "errors were no longer asymmetric when either regression or the BTA effect was statistically removed."'
+  - id: n39
+    cau: Người ta có xu hướng tự xếp mình trên trung bình (một trong hai thủ phạm theo Krueger và Mueller).
+    loai: phat-hien
+    nguon:
+      - krueger2002
+    trich: the general better-than-average (BTA) heuristic
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "ai cũng có xu hướng tự xếp mình trên trung bình"; chữ mới: "người ta có xu hướng" (bỏ "ai cũng"). Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt. (Krueger & Mueller 2002, Europe PMC: "the general better-than-average (BTA) heuristic").'
+    review: 'dung'
+  - id: n40
+    cau: 'Hồi quy về trung bình: khi chọn nhóm điểm thấp nhất rồi đo lại bằng một thước đo khác (tự đánh giá), điểm của họ có xu hướng hồi về phía trung bình, tạo ảo giác tự đánh giá quá cao.'
+    loai: dinh-nghia
+    nguon:
+      - krueger2002
+    trich: Asymmetric errors were expected because of statistical regression and the general better-than-average (BTA) heuristic.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Mô tả cơ chế hồi quy là khái niệm thống kê chuẩn; chưa mở từ điển hay giáo trình. Ví dụ đồng xu và "đoán mò trúng ít, hôm đó mệt" là ví dụ giả định (gia-dinh) trong đoạn kế.
+  - id: n41
+    cau: Người rơi vào nhóm điểm thấp một phần do kém thật, một phần do xui; tự đánh giá không có phần xui nên cao hơn điểm thi.
+    loai: dinh-nghia
+    nguon:
+      - krueger2002
+    trich: Asymmetric errors were expected because of statistical regression and the general better-than-average (BTA) heuristic.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Minh họa (đồng xu gian lận nhẹ) là ví dụ giả định, gia-dinh; câu mô tả cơ chế hồi quy khớp tóm tắt K&M ở mức khái niệm. Người giao/lượt 2 cân nhắc.
+  - id: n42
+    cau: Gilles Gignac (Đại học Tây Úc) và Marcin Zajenkowski (Đại học Warsaw).
+    loai: lich-su
+    nguon:
+      - gignac2020
+    trich: University of Western Australia, Australia b Faculty of Psychology, University of Warsaw, Poland
+    vi_tri: Trang đầu bài (Intelligence 80, 101449)
+    ket_qua: dung
+  - id: n43
+    cau: Gignac và Zajenkowski dùng dữ liệu của 929 người trong cộng đồng, so tự đánh giá trí thông minh với điểm trắc nghiệm Raven.
+    loai: so-lieu
+    nguon:
+      - gignac2020
+    trich: On the basis of a sample of 929 general community participants who completed a self-assessment of intelligence and the Advanced Raven's Progressive Matrices
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 5 và "Đã khớp": 929 người. Chữ "(họ so tự đánh giá trí thông minh với điểm trắc nghiệm Raven)" là phần thêm mới của lượt này.'
+  - id: n44
+    cau: 'Hai kỹ thuật thống kê được cho là "sạch" hơn cách chia tứ phân vị: kiểm định Glejser và hồi quy bậc hai.'
+    loai: phat-hien
+    nguon:
+      - gignac2020
+    trich: 'it is argued that the Dunning-Kruger hypothesis can be tested validly with two inferential statistical techniques: the Glejser test of heteroscedasticity and nonlinear (quadratic) regression.'
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+  - id: n45
+    cau: Kiểm định Glejser xem sai lệch tự đánh giá có lớn dần ở nhóm yếu hay không.
+    loai: dinh-nghia
+    nguon:
+      - gignac2020
+    trich: The observation of a statistically significant, negatively directed Glejser test correlation would be considered supportive of the Dunning-Kruger hypothesis
+    vi_tri: Mục 1 (Introduction), phần mô tả kiểm định Glejser
+    ket_qua: dung
+    ghi_chu: 'Gần đúng mô tả của trang ("xem sai lệch … có lớn dần ở nhóm yếu"): tương quan Glejser âm nghĩa là phần dư nhỏ dần khi năng lực tăng, tức sai lệch lớn hơn ở nhóm yếu.'
+  - id: n46
+    cau: 'Hồi quy bậc hai: nếu hiệu ứng có thật, đường quan hệ giữa năng lực thật và tự đánh giá phải thoải ở nhóm yếu và dốc dần ở nhóm giỏi.'
+    loai: phat-hien
+    nguon:
+      - gignac2020
+    trich: a positively directed quadratic effect (i.e., positive beta-weight or positive semi-partial correlation) would imply that the magnitude of the positive association increases across the
+    vi_tri: Mục 1 (Introduction), mô tả hồi quy bậc hai
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 5: bản cũ viết sai ("chữ U ngược"); trang đã sửa thành "thoải ở nhóm yếu, dốc dần ở nhóm giỏi". Đối chiếu lại toàn văn.'
+  - id: n47
+    cau: Cả hai kiểm định đều không ủng hộ giả thuyết Dunning–Kruger.
+    loai: phat-hien
+    nguon:
+      - gignac2020
+    trich: we failed to identify statistically significant heteroscedasticity, contrary to the Dunning-Kruger hypothesis.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+  - id: n48
+    cau: Tương quan Glejser chỉ r = −0,05, coi như bằng không.
+    loai: so-lieu
+    nguon:
+      - gignac2020
+    trich: 'r(927) = -0.05, 95%CI: -0.11/0.02, p = .132'
+    vi_tri: Mục 3 (Results)
+    ket_qua: dung
+  - id: n49
+    cau: Quan hệ giữa năng lực thật và tự đánh giá gần như là một đường thẳng.
+    loai: phat-hien
+    nguon:
+      - gignac2020
+    trich: the association between objectively measured intelligence and self-assessed intelligence was found to be essentially entirely linear
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+  - id: n50
+    cau: 'Kết luận của họ: hiện tượng có thể có thật ở một số kỹ năng, nhưng quy mô của nó có thể nhỏ hơn nhiều so với các nghiên cứu trước mô tả.'
+    loai: phat-hien
+    nguon:
+      - gignac2020
+    trich: the magnitude of the effect may be much smaller than reported previously.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "quy mô của nó nhỏ hơn nhiều so với những gì nghiên cứu gốc mô tả"; chữ mới: "có thể nhỏ hơn nhiều so với những gì các nghiên cứu trước mô tả" (bài: "may be", "previously"). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn. (Gignac & Zajenkowski 2020, toàn văn).'
+    review: 'dung'
+  - id: n51
+    cau: Hiller (2023) phản biện rằng kết quả "sai lệch đều nhau" của Gignac và Zajenkowski có thể do cách chuyển đổi thang đo tự đánh giá sang thang IQ theo kiểu tuyến tính, trong khi một thang IQ chuẩn có lẽ hợp hơn.
+    loai: phat-hien
+    nguon:
+      - hiller2023
+    trich: Gignac and Zajenkowski (2020) recoded test subjects' responses to a question regarding self-assessed comparative IQ onto a linear IQ scale when a normal IQ scale would likely have been more appropriate.
+    vi_tri: Tóm tắt (abstract, bản preprint PDXScholar)
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 6 (đã sửa). Chỉ đọc tóm tắt (toan_van: false).'
+  - id: n52
+    cau: Cuộc tranh luận phương pháp luận giữa Hiller và Gignac–Zajenkowski đến nay vẫn chưa ngã ngũ.
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Cuộc tranh luận phương pháp luận này đến nay vẫn chưa ngã ngũ." Không có nguồn nói về tình trạng hiện nay (không tìm thấy trả lời của Gignac và Zajenkowski cho Hiller); đã bỏ câu. Review (Claude Opus 5.5, 10/11/2026): bỏ câu không nguồn: đúng.'
+    review: 'dung'
+  - id: n53
+    cau: 'Khung Vững chắc: Better-than-average effect là hiện tượng bền: phân tích tổng hợp 291 mẫu độc lập, hơn 950.000 người, ổn định giữa các nghiên cứu (dz = 0,78), ít dấu hiệu thiên lệch xuất bản.'
+    loai: so-lieu
+    nguon:
+      - zell2020
+    trich: including data from 124 published articles, 291 independent samples, and more than 950,000 participants. Results indicated that the BTAE is robust across studies (dz = 0.78, 95% CI [0.71, 0.84]), with little evidence of publication bias.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Theo G1-L02 ("Đã khớp"): dz = 0,78 và 291 mẫu. Chữ cũ: "một trong những phát hiện được tái hiện nhiều nhất trong tâm lý học xã hội" (không có nguồn; bỏ). Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt.'
+    review: 'dung'
+  - id: n54
+    cau: Hiệu ứng better-than-average nhỏ hơn ở người Đông Á so với người Mỹ gốc Âu.
+    loai: so-lieu
+    nguon:
+      - zell2020
+    trich: sample European Americans rather than East-Asians (especially for individualistic traits)
+    vi_tri: Tóm tắt (abstract), phần moderation tests
+    ket_qua: dung
+    ghi_chu: Bài nói hiệu ứng lớn hơn ở European Americans so với East-Asians; không nêu riêng người Việt.
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/31789535/", "https://doi.org/10.1177/1088868306294587" ]
+    luot_2_ghi_chu: Zell 2020 (tóm tắt PubMed); Heine & Hamamura 2007.
+  - id: n55
+    cau: Hiệu ứng "hơn trung bình" là nền cho phần "tự tin thái quá" trong câu chuyện Dunning–Kruger.
+    loai: phat-hien
+    nguon:
+      - zell2020
+      - kruger1999
+    trich: the tendency of the average person to believe he or she is above average, a result that defies the logic of descriptive statistics
+    vi_tri: Kruger & Dunning (1999), Introduction
+    ket_qua: da-lam-mem
+    ghi_chu: 'Là cách trang nối hai khái niệm; Kruger và Dunning tự nêu họ muốn giải thích xu hướng "inflated self-appraisals" nói chung bằng thiếu siêu nhận thức. Chữ cũ: "đứng trên nền tảng vững chắc này". Review (Claude Opus 5.5, 10/11/2026): là cách site nối hai khái niệm, viết mềm ("đứng trên nền này"); không vượt nguồn.'
+    review: 'dung'
+  - id: n56
+    cau: 'Nhãn Vững chắc: con người nhìn chung tự xếp mình trên mức trung bình.'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - zell2020
+    ly_do: 'Phân tích tổng hợp 124 bài, 291 mẫu, hơn 950.000 người thấy hiệu ứng ổn định (dz = 0,78, 95% CI 0,71–0,84), ít dấu hiệu thiên lệch xuất bản; hiệu ứng có ở cả người Mỹ gốc Âu và người Đông Á (nhỏ hơn). Đạt Vững chắc theo mục 4 (một phân tích tổng hợp chất lượng tốt; nhiều quần thể; không có thất bại tái lập). Chữ cũ của khung: "tự đánh giá mình cao hơn thực tế" (mạnh hơn nguồn: BTAE đo so với người khác, không đo so với thực tế); đã làm mềm thành "tự xếp mình trên mức trung bình".'
+    nguon:
+      - zell2020
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ của ý chính: "con người nhìn chung tự đánh giá mình cao hơn thực tế". BTAE là so sánh với người khác; bài của Zell nói riêng về "comparative self-evaluation". Chỉ đọc tóm tắt. Review (Claude Opus 5.5, 10/11/2026): giữ Vững chắc: một phân tích tổng hợp lớn (Zell 2020: 291 mẫu, hơn 950.000 người, dz = 0,78, ít thiên lệch xuất bản), có ở nhiều quần thể (nhỏ hơn ở người Đông Á). Đạt mục 4. Ý chính đã thu về "tự xếp mình trên mức trung bình" (so với người khác), đúng phạm vi của Zell.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/31789535/" ]
+    luot_2_ghi_chu: Phân tích tổng hợp Psychological Bulletin 2020, mẫu rất lớn; hiệu ứng nhỏ hơn ở người Đông Á và ở năng lực so với đặc điểm tính cách, nhưng câu 'nhìn chung' vẫn đúng. Chỉ đọc tóm tắt PubMed.
+    review: 'dung'
+  - id: n57
+    cau: 'Nhãn Khá vững: phản hồi và huấn luyện giúp người yếu tự đánh giá sát hơn (huấn luyện ngắn ở Kruger–Dunning nghiên cứu 4; phản hồi ở Ryvkin và cộng sự 2012).'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - kruger1999
+      - ryvkin2012
+    ly_do: 'Hai hướng cùng chiều: (1) Kruger và Dunning (1999) nghiên cứu 4, giao ngẫu nhiên, n = 140: nhóm yếu nhất được huấn luyện chấm bài đúng hơn và tự đánh giá sát hơn; (2) Ryvkin và cộng sự (2012), hai nghiên cứu: phản hồi giúp hiệu chỉnh, người kém cải thiện nhiều nhất. Chưa có phân tích tổng hợp hay tái lập lớn riêng cho phần này; mẫu chủ yếu sinh viên/người tham gia thí nghiệm phương Tây. Theo mục 4: nhiều nghiên cứu cùng chiều nhưng còn giới hạn, nên Khá vững.'
+    nguon:
+      - kruger1999
+      - ryvkin2012
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: chỉ hai hướng nghiên cứu; Ryvkin chỉ đọc tóm tắt của bản mở rộng (SSRN). Chữ cũ của ý chính: "học thêm giúp tự đánh giá chính xác hơn" (chỉ một nghiên cứu); chữ mới nói rõ phản hồi/huấn luyện và thêm Ryvkin 2012. Lượt 2/review cân nhắc đổi thành Khá vững chỉ với điều kiện giữ hai nguồn hay hạ. Review (Claude Opus 5.5, 10/11/2026): giữ Khá vững: hai hướng cùng chiều (Kruger & Dunning 1999 nghiên cứu 4, giao ngẫu nhiên, toàn văn; Ryvkin 2012, hai nghiên cứu, tóm tắt), trang nói rõ số nghiên cứu còn ít và chưa có tái lập lớn. Sát mức dưới của Khá vững; chủ repo có thể xem lại khi có thêm nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101", "https://econpapers.repec.org/RePEc:eee:joepsy:v:33:y:2012:i:5:p:1012-1031" ]
+    luot_2_ghi_chu: "Nhãn Khá vững hợp: vài nghiên cứu cùng chiều, mẫu nhỏ. Ryvkin chỉ đọc tóm tắt."
+    review: 'dung'
+  - id: n58
+    cau: 'Nhãn Khá vững (ý phụ): Ryvkin, Krajč và Ortmann (2012) thấy phản hồi giúp hiệu chỉnh tự đánh giá, và người kém nhất cải thiện nhiều nhất.'
+    loai: phat-hien
+    nguon:
+      - ryvkin2012
+    trich: In both studies, it is the unskilled who improve their calibration most.
+    vi_tri: Tóm tắt (bản mở rộng, SSRN)
+    ket_qua: dung
+    ghi_chu: Bản mở rộng (The Extended Version, SSRN 1578474); bản đăng J Econ Psychol 33(5) chưa mở. Chỉ đọc tóm tắt.
+  - id: n59
+    cau: 'Nhãn Đang tranh cãi: đường cong Dunning–Kruger là hiện tượng tâm lý thật hay nhiễu thống kê.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - kruger1999
+      - krueger2002
+      - nuhfer2016
+      - nuhfer2017
+      - gignac2020
+      - ehrlinger2008
+      - jansen2021
+      - hiller2023
+    ly_do: 'Bằng chứng chất lượng cao mâu thuẫn (mục 4): phe phê bình (Krueger & Mueller 2002; Nuhfer 2016, 2017; Gignac & Zajenkowski 2020 với 929 người) thấy nhiễu thống kê có thể tạo ra đường cong; phe ủng hộ phần tâm lý (Ehrlinger 2008, năm nghiên cứu và phân tích tổng hợp; Jansen 2021, tái lập lớn khoảng 4.000 người mỗi nghiên cứu) thấy người kém ít nhận ra mình đúng sai. Chưa có phân tích tổng hợp phân xử. Chữ cũ: "Phe bảo vệ đáp rằng hiệu ứng vẫn còn sau khi đã kiểm soát các yếu tố thống kê, và Dunning … nhấn mạnh ông chưa bao giờ tuyên bố…" (không nguồn; thay bằng Ehrlinger 2008, Jansen 2021).'
+    nguon:
+      - kruger1999
+      - krueger2002
+      - nuhfer2016
+      - nuhfer2017
+      - gignac2020
+      - ehrlinger2008
+      - jansen2021
+      - hiller2023
+    ket_qua: da-sua
+    ghi_chu: 'Nhãn giữ như cũ (Đang tranh cãi), chữ trong khung đã sửa. Theo G1-L02 ("Không kiểm được", dòng 69): "Phe bảo vệ đáp rằng…" không có nguồn; nay có nguồn. Chữ cũ về Dunning: không kiểm được (không tìm bài sau này của Dunning); đã bỏ. Review (Claude Opus 5.5, 10/11/2026): giữ Đang tranh cãi: bằng chứng chất lượng cao hai chiều (Gignac & Zajenkowski 2020 toàn văn; Jansen 2021 toàn văn theo lượt 2; Krueger & Mueller 2002, Nuhfer, Ehrlinger tóm tắt). Đạt mục 4.'
+    luot_2: dung
+    luot_2_nguon: [ "https://cocosci.princeton.edu/papers/DK_NHB_Final.pdf", "https://doi.org/10.5038/1936-4660.9.1.4", "https://archive.org/details/kruger623101" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi hợp.
+    review: 'dung'
+  - id: n60
+    cau: Ehrlinger và cộng sự (2008) báo cáo người kém thiếu hiểu biết về lỗi của chính mình ngay cả khi có phần thưởng cho sự chính xác.
+    loai: phat-hien
+    nguon:
+      - ehrlinger2008
+    trich: Five studies demonstrated that poor performers lack insight into their shortcomings even in real world settings and when given incentives to be accurate.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Chỉ đọc tóm tắt (PMC2702783 mở nhưng chưa đọc toàn văn).
+  - id: n61
+    cau: Một lần làm lại lớn, khoảng 4.000 người mỗi nghiên cứu, cho thấy người kém ít nhận ra mình làm đúng hay sai hơn ở bài ngữ pháp và suy luận (Jansen và cộng sự, 2021).
+    loai: so-lieu
+    nguon:
+      - jansen2021
+    trich: we conducted a large-scale replication of a seminal paper with approximately 4,000 participants in each of two studies. Comparing the predictions of two variants of our rational model provides support for low performers being less able to estimate whether they are correct in the domains of grammar and logical reasoning.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Chỉ đọc tóm tắt (Nature Human Behaviour, thu phí). Không rõ có đăng ký trước hay không; trang không nói vậy.
+    luot_2: dung
+    luot_2_nguon: [ "https://cocosci.princeton.edu/papers/DK_NHB_Final.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn bản tác giả (Nature Human Behaviour 2021).
+  - id: n62
+    cau: Nuhfer và cộng sự (2016, 2017) cho thấy nhiễu ngẫu nhiên và cách vẽ đồ thị theo tứ phân vị tạo ra hình giả.
+    loai: phat-hien
+    nguon:
+      - nuhfer2016
+      - nuhfer2017
+    trich: We show that graphical conventions common in the self-assessment literature introduce artifacts that invite misinterpretation.
+    vi_tri: 'Nuhfer 2016, tóm tắt; Nuhfer 2017: "Much of the current consensus … comes from interpreting normative data presented in the Kruger-Dunning type graphical format"'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cách chia tứ phân vị cộng với hồi quy về trung bình có thể vẽ ra đường cong ngay cả từ dữ liệu ngẫu nhiên — thậm chí khi tung đồng xu mô phỏng". Chữ mới bám tóm tắt (nhiễu ngẫu nhiên, đồ thị "line charts that display data aggregated as quantiles" tạo artifact). G1-L02 ("Đã khớp" dòng 69): mô phỏng số ngẫu nhiên tạo hình kiểu DK. Chỉ đọc tóm tắt (PDF bị chặn 403). Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt. ("graphical conventions … introduce artifacts").'
+    review: 'dung'
+  - id: n63
+    cau: 'Phe phê bình: Krueger và Mueller (2002) quy sai lệch cho better-than-average và hồi quy; Gignac và Zajenkowski (2020) không thấy kiểu sai lệch mà giả thuyết dự đoán.'
+    loai: phat-hien
+    nguon:
+      - krueger2002
+      - gignac2020
+    trich: Consistent with this parsimonious model, errors were no longer asymmetric when either regression or the BTA effect was statistically removed.
+    vi_tri: Krueger & Mueller (2002), tóm tắt; xem n47–n49 cho Gignac và Zajenkowski
+    ket_qua: dung
+  - id: n64
+    cau: 'Câu chuyển ý của khung Đang tranh cãi: đây là tâm điểm tranh luận hiện nay.'
+    loai: ve-site
+    ket_qua: 'da-bo'
+    ghi_chu: 'Câu chuyển ý; nội dung kiểm ở nhận định nhãn n59 (và n60–n63). Review (Claude Opus 5.5, 10/11/2026): câu "Đây là tâm điểm tranh luận hiện nay." nói về tình trạng của ngành, không chỉ về site (loại ve-site sai) và không có nguồn. Đã bỏ câu khỏi khung Đang tranh cãi; khung bắt đầu thẳng bằng "Phe phê bình: …".'
+    review: 'sai'
+  - id: n65
+    cau: 'Nhãn Đã bị bác bỏ: đường cong "núi ngu dốt" là đồ thị từ nghiên cứu gốc.'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - kruger1999
+    ly_do: 'Đây là nhãn cho một khẳng định về nguồn gốc của đồ thị, không phải về bằng chứng tâm lý: toàn văn bài gốc (4 hình, đều là đồ thị đường theo tứ phân vị; không có "Mount Stupid" hay "Valley of Despair") bác bỏ rằng đường cong nằm trong nghiên cứu gốc. Theo mục 4: bằng chứng gốc không có; khớp "Đã bị bác bỏ".'
+    nguon:
+      - kruger1999
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Núi ngu dốt là tranh biếm họa internet ra đời sau này" (khung, quiz câu 3, ngộ nhận): đã bỏ vì không có nguồn về nguồn gốc của meme; chữ mới: "đồ thị lan truyền trên mạng, không thuộc nghiên cứu gốc". Cũng bỏ vế "nhiều người mới bắt đầu rất rụt rè" (không nguồn). Giữ ý: bài gốc nói về nhóm yếu nhất, không nói người mới học lúc nào cũng tự tin thái quá. Review (Claude Opus 5.5, 10/11/2026): giữ Đã bị bác bỏ: khẳng định "đồ thị núi ngu dốt là đồ thị từ nghiên cứu gốc" bị bác bằng chính bài gốc (đã tự mở: bốn hình, Figure 1–4, đều là tự đánh giá theo tứ phân vị điểm thực tế). Khác khung "hai bộ phận trong não" của tu-duy-nhanh-cham (không có phép kiểm): ở đây có phép kiểm trực tiếp, quyết định.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101" ]
+    luot_2_ghi_chu: Bài gốc (toàn văn qua Internet Archive) không có đồ thị đó.
+    review: 'dung'
+  - id: n66
+    cau: Bài báo gốc không nói người mới học lúc nào cũng tự tin thái quá.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Other participants were less miscalibrated.
+    vi_tri: Study 2, Results
+    ket_qua: dung
+    ghi_chu: 'Kiểm toàn văn: bài nói về nhóm điểm thấp nhất và các nhóm khác, không có khẳng định về người mới học nói chung (từ "novices" chỉ xuất hiện khi điểm lại các nghiên cứu khác, nói người mới kém siêu nhận thức hơn chuyên gia). Hệ thức "không nói điều gì đó" kiểm bằng đọc toàn văn.'
+  - id: n67
+    cau: 'Gánh nặng kép: cùng một vốn kiến thức vừa để làm đúng, vừa để chấm đúng bài của mình.'
+    loai: dinh-nghia
+    nguon:
+      - kruger1999
+    trich: the skills that engender competence in a particular domain are often the very same skills necessary to evaluate competence in that domain-one's own or anyone else's.
+    vi_tri: Introduction
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: n68
+    cau: Kruger và Dunning cho rằng giả thuyết này hợp nhất với những lĩnh vực mà kiến thức làm nên năng lực (như ngữ pháp, suy luận logic).
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Some domains, like those examined in this article, are those in which knowledge about the domain confers competence in the domain.
+    vi_tri: Discussion (trước đoạn "In other domains")
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (đã qua sửa G1 mục 8): "dự đoán hiệu ứng mạnh nhất ở những lĩnh vực mà kiến thức để làm đúng cũng chính là kiến thức để chấm đúng (ngữ pháp, logic, viết lách, đầu tư), và yếu hơn … (chạy 100m)". Bài gốc chỉ nêu ngữ pháp và logic (cùng lĩnh vực họ đo); "viết lách, đầu tư" và "chạy 100m" không có trong bài; chữ mới dùng ví dụ của chính bài (bóng rổ). Đối chiếu G1-L02 mục 8. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp. (ví dụ huấn luyện viên bóng rổ).'
+    review: 'dung'
+  - id: n69
+    cau: 'Kém hợp hơn ở những lĩnh vực mà năng lực còn dựa vào kỹ năng thể chất; ví dụ của họ: nhiều huấn luyện viên bóng rổ hiểu chiến thuật nhưng không thể "úp rổ".'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: One need not look far to find individuals with an impressive understanding of the strategies and techniques of basketball, for instance, yet who could not "dunk" to save their lives.
+    vi_tri: Discussion
+    ket_qua: dung
+  - id: n70
+    cau: 'Hồi quy về trung bình + better-than-average (phe phê bình): không cần "gánh nặng kép"; chỉ cần hai yếu tố này là có thể đủ tạo hình cong; người giỏi "đánh giá thấp mình" cũng là hồi quy.'
+    loai: phat-hien
+    nguon:
+      - krueger2002
+    trich: Consistent with this parsimonious model, errors were no longer asymmetric when either regression or the BTA effect was statistically removed.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nhóm điểm thấp nhất luôn chứa những ca xui … là đủ tạo ra hình cong"; chữ mới: "thường chứa", "có thể đủ". Chỉ đọc tóm tắt. Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt.'
+    review: 'dung'
+  - id: n71
+    cau: 'Một cách đọc thận trọng: có thể có phần tâm lý thật, nhưng độ lớn của nó trong các đồ thị lan truyền có thể bị phóng đại bởi nhiễu thống kê; chúng tôi không thấy nguồn nào nói hai phía đã đi đến một kết luận chung.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - ehrlinger2008
+      - jansen2021
+      - krueger2002
+      - nuhfer2016
+      - gignac2020
+    ly_do: 'Cách tóm tắt hai phía của site, cùng cơ sở với khung Đang tranh cãi (n59). Chữ cũ: "Điểm dung hòa hiện nay. Nhiều nhà nghiên cứu chấp nhận cả hai … (bằng chứng từ nghiên cứu huấn luyện, từ việc chuyên gia dự báo kém trong lĩnh vực ngoài chuyên môn)": không có nguồn cho "nhiều nhà nghiên cứu chấp nhận cả hai" và "chuyên gia dự báo kém ngoài chuyên môn" (G1-L02 dòng 80: không kiểm được); đã thay bằng cách đọc có nguồn.'
+    nguon:
+      - kruger1999
+      - ehrlinger2008
+      - jansen2021
+      - krueger2002
+      - nuhfer2016
+      - gignac2020
+    ket_qua: da-sua
+    ghi_chu: 'Chữ mới nói rõ là cách tóm tắt của site. Review (Claude Opus 5.5, 10/11/2026): đoạn tóm tắt hai phía, ghi rõ là cách tóm tắt của site, cùng cơ sở với n59; không có chip trên trang. Đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://cocosci.princeton.edu/papers/DK_NHB_Final.pdf", "https://doi.org/10.5038/1936-4660.9.1.4" ]
+    luot_2_ghi_chu: Câu tự rào 'chúng tôi không thấy nguồn nào...'; hợp với bằng chứng hai phía đã đọc.
+    review: 'dung'
+  - id: n72
+    cau: 'Lời khuyên 1: ở lĩnh vực ít phản hồi khách quan, hãy tìm một "bảng điểm" bên ngoài; trong các thí nghiệm hiệu chỉnh, người kém nhất cải thiện nhiều nhất sau phản hồi (Ryvkin và cộng sự, 2012).'
+    loai: loi-khuyen
+    nguon:
+      - ryvkin2012
+    trich: In both studies, it is the unskilled who improve their calibration most.
+    vi_tri: Tóm tắt (bản mở rộng, SSRN)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (tiêu đề và đoạn): "Nghi ngờ chính sự tự tin của mình trước các quyết định lớn :nhan[kha-vung]. Quy tắc thực dụng rút ra từ gánh nặng kép: lĩnh vực nào bạn càng ít có phản hồi khách quan, càng phải nghi ngờ tự đánh giá của mình. Đầu tư chứng khoán, đánh giá năng lực lãnh đạo, chấm bài viết … đó là nơi còn báo động dễ câm nhất." Chữ mới bỏ chip nhãn (không có nguồn kiểm riêng cho quy tắc), bỏ ví dụ không nguồn, ghi rõ là gợi ý rút ra, thêm Ryvkin 2012. Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt. ("it is the unskilled who improve their calibration most"); phần gợi ý ghi rõ là suy ra.'
+    luot_2: dung
+    luot_2_nguon: [ "https://econpapers.repec.org/RePEc:eee:joepsy:v:33:y:2012:i:5:p:1012-1031" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt; câu 'bảng điểm ngoài' là lời khuyên.
+    review: 'dung'
+  - id: n73
+    cau: 'Lời khuyên 2: huấn luyện ngắn giúp nhóm yếu nhất nhìn thấy mình rõ hơn (nghiên cứu 4), phản hồi cũng giúp hiệu chỉnh (Ryvkin); áp vào đàn em, nhân viên mới, con cái là sự vận dụng của site: cho họ bài tập có đáp án đúng rõ ràng và phản hồi nhanh.'
+    loai: loi-khuyen
+    nguon:
+      - kruger1999
+      - ryvkin2012
+    trich: participants in the bottom quartile who had received training (n = 19) became more calibrated in every way.
+    vi_tri: Study 4, mục "Impact of training"; Ryvkin (tóm tắt)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "… hãy cho họ bài tập có đáp án đúng rõ ràng và phản hồi nhanh — đó là cách rẻ nhất để lắp còi báo động cho họ". Bỏ "cách rẻ nhất" (không nguồn) và ghi rõ vận dụng ngoài thí nghiệm. Nhãn kha-vung của chip kiểm ở n57. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn. Phần áp dụng cho đàn em, con cái ghi rõ là vận dụng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101", "https://econpapers.repec.org/RePEc:eee:joepsy:v:33:y:2012:i:5:p:1012-1031" ]
+    luot_2_ghi_chu: Phần áp dụng cho đàn em, nhân viên là vận dụng của site, đã ghi rõ.
+    review: 'dung'
+  - id: n74
+    cau: 'Chip Khá vững của lời khuyên 2: phản hồi và huấn luyện giúp người yếu tự đánh giá sát hơn.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - kruger1999
+      - ryvkin2012
+    ly_do: Như n57.
+    nguon:
+      - kruger1999
+      - ryvkin2012
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): như n57.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101", "https://econpapers.repec.org/RePEc:eee:joepsy:v:33:y:2012:i:5:p:1012-1031" ]
+    luot_2_ghi_chu: Như n57.
+    review: 'dung'
+  - id: n75
+    cau: 'Lời khuyên 3: các nghiên cứu mô tả xu hướng trung bình của nhóm trong điều kiện thí nghiệm; chúng không cho phép kết luận về từng người.'
+    loai: loi-khuyen
+    nguon:
+      - kruger1999
+    trich: Although their test scores put them in the 12th percentile, they estimated themselves to be in the 62nd.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ (tiêu đề "Đừng dùng hiệu ứng này để miệt thị người khác :nhan[vung-chac]" và đoạn): "cách dùng phổ biến nhất của meme là …", "trớ trêu thay … lại là biểu hiện của sự thiếu siêu nhận thức". Bỏ chip (nhãn Vững chắc cho một lời khuyên về cách dùng, không có nguồn riêng), bỏ nhận định về "cách dùng phổ biến nhất" và vế mỉa. Giữ phần kiểm được: bài gốc báo cáo trung bình theo tứ phân vị, không phân loại từng người. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp. Bài báo cáo trung bình theo tứ phân vị.'
+    review: 'dung'
+  - id: n76
+    cau: Nghiên cứu gốc thấy nhóm giỏi nhất hơi đánh giá thấp vị trí của mình so với bạn.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: estimated their general logical reasoning ability to fall at only the 74th percentile
+    vi_tri: Study 2, Results (nhóm tứ phân vị trên)
+    ket_qua: dung
+  - id: n77
+    cau: 'Kruger và Dunning giải thích điều này bằng đồng thuận giả (false consensus): họ tưởng việc dễ với mình thì cũng dễ với người khác.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: In essence, we believe they fell prey to the false-consensus effect
+    vi_tri: Study 2–3, Discussion (nhóm tứ phân vị trên)
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 ("Đã khớp"): giải thích đồng thuận giả. Tiếp trích: "they mistakenly assumed that their peers would tend provide the same (correct) answers as they themselves".'
+  - id: n78
+    cau: Khi được xem bài của bạn, nhóm giỏi chỉnh lại ước lượng.
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Once top-quartile participants learned how poorly their peers had performed, they raised their self-appraisals to more accurate levels.
+    vi_tri: Study 3 (Phase 2), Discussion
+    ket_qua: dung
+  - id: n79
+    cau: Krueger và Mueller (2002) cho rằng việc người giỏi đánh giá thấp mình chủ yếu là hiệu ứng thống kê.
+    loai: phat-hien
+    nguon:
+      - krueger2002
+    trich: People who score low on a performance test overestimate their own performance relative to others, whereas high scorers slightly underestimate their own performance.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: không có (đoạn mới). K&M: sai lệch bất đối xứng do hồi quy và better-than-average; trang dùng "chủ yếu là hiệu ứng thống kê", nhẹ hơn nên cần cân nhắc ở review. Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt. Tóm tắt: sai lệch bất đối xứng được dự đoán bởi hồi quy thống kê và heuristic better-than-average, hết bất đối xứng khi loại một trong hai. Với riêng người giỏi đánh giá thấp mình thì yếu tố là hồi quy, nên "chủ yếu là hiệu ứng thống kê" đúng ý.'
+    review: 'dung'
+  - id: n80
+    cau: 'Chip Đang tranh cãi của lời khuyên 4: người giỏi cũng có thể ước lượng lệch, nhưng nguyên nhân còn tranh cãi.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - kruger1999
+      - krueger2002
+    ly_do: 'Hai giải thích khác nhau cho cùng một hiện tượng: Kruger–Dunning (đồng thuận giả, có thí nghiệm pha 2 nghiên cứu 3) và Krueger–Mueller (hồi quy, better-than-average). Chữ cũ: "người giỏi có xu hướng đánh giá thấp mình, một phần vì … (false consensus) :nhan[kha-vung]. Nếu bạn thường xuyên thấy mình chưa đủ giỏi dù kết quả khách quan tốt, đó có thể không phải khiêm tốn — mà là sai lệch theo hướng ngược lại." Đổi nhãn sang Đang tranh cãi và bỏ lời gợi ý cá nhân không nguồn.'
+    nguon:
+      - kruger1999
+      - krueger2002
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip :nhan[kha-vung] và câu "Nếu bạn thường xuyên thấy mình chưa đủ giỏi …"; chữ mới: chip :nhan[tranh-cai], nêu hai giải thích và bỏ câu gợi ý cá nhân. Lý do: hai giải thích khác nhau cho cùng một hiện tượng (Kruger–Dunning; Krueger–Mueller); bằng chứng pha 2 nghiên cứu 3 chỉ là một thí nghiệm. Review (Claude Opus 5.5, 10/11/2026): giữ Đang tranh cãi: hai giải thích khác nhau (đồng thuận giả, Kruger & Dunning nghiên cứu 3 pha 2; hồi quy, Krueger & Mueller 2002). Đạt mục 4.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101" ]
+    luot_2_ghi_chu: Nguyên nhân (đánh giá sai về người khác, hồi quy) còn tranh cãi.
+    review: 'dung'
+  - id: n81
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm định hiệu ứng Dunning–Kruger trên người Việt theo cách của nghiên cứu gốc (so tự đánh giá với điểm thực tế theo mức năng lực).
+    loai: thoi-su
+    het_han: '2028-11-01'
+    nguon:
+      - tim-kiem-vn
+    ket_qua: dung
+    ghi_chu: 'Tìm trên OpenAlex ngày 10/11/2026: "Dunning-Kruger effect Vietnam", "Dunning-Kruger Vietnamese students", "unskilled and unaware Vietnam", "overconfidence self-assessment Vietnamese students metacognition calibration", "better-than-average effect Vietnamese": chỉ có một bài (xem n82) dùng tên hiệu ứng, không đo theo cách nghiên cứu gốc; nghiên cứu 46 nước về Sea Hero Quest (Walkowiak và cộng sự 2023, bioRxiv) chưa kiểm có Việt Nam. Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu công bố nào kiểm định hiệu ứng Dunning–Kruger trên người Việt." (không mốc, không hạn) và "nội dung tiếng Việt về chủ đề này hiện chủ yếu là dịch lại meme và bài báo nước ngoài" (không nguồn; đã bỏ). Theo G1-L02 ("Không kiểm được", dòng 102): chưa tra; nay đã tra. Review (Claude Opus 5.5, 10/11/2026): tìm thêm Europe PMC ngày 10/11/2026 ("Dunning-Kruger" AND (Vietnam OR Vietnamese)): 10 kết quả, không có bài nào đo hiệu ứng theo cách gốc trên người Việt (bài gần nhất là một thí nghiệm ở Thổ Nhĩ Kỳ). OpenAlex hết lượt trong phiên review. Giữ câu và hạn.'
+    review: 'dung'
+  - id: n82
+    cau: Một bài năm 2026 của nhóm tác giả Việt Nam, về sinh viên kỹ thuật, dùng tên "hiệu ứng Dunning–Kruger" để nói về sinh viên thất vọng với điểm thi cuối kỳ (Nguyen và cộng sự, 2026), nhưng không đo theo cách của nghiên cứu gốc.
+    loai: phat-hien
+    nguon:
+      - nguyen2026
+    trich: Although only 36.96% of students were disappointed or very disappointed with their final exam results, indicating a small but significant Dunning-Kruger effect, this is a noteworthy finding.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Chỉ đọc tóm tắt (OpenAlex; toan_van: false). Tác giả có đơn vị ở Việt Nam (mã VN trên OpenAlex); tóm tắt không nêu rõ mẫu ở nước nào, chỉ nói chương trình ở "developing country".'
+  - id: n83
+    cau: Các con số chi tiết trong bài đến từ nghiên cứu ở Mỹ (sinh viên Cornell) và Ba Lan (người trưởng thành).
+    loai: phat-hien
+    nguon:
+      - kruger1999
+      - gignac2020
+    trich: Participants were 65 Cornell University undergraduates
+    vi_tri: 'Kruger & Dunning (1999), Study 1; Gignac & Zajenkowski (2020), Methods: "University of Warsaw"'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Mọi con số trong bài đều từ mẫu phương Tây (sinh viên Mỹ, người trưởng thành ở Ba Lan)" (G1-L02 mục 9 đã sửa từ "sinh viên phương Tây"). Chữ mới: "Các con số chi tiết" (vì Zell, Jansen cũng nêu số; nơi tuyển mẫu của họ chưa kiểm). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    review: 'dung'
+  - id: n84
+    cau: '"Ếch ngồi đáy giếng" có trong các tập tục ngữ cổ như Nam ngạn chích cẩm.'
+    loai: lich-su
+    nguon:
+      - nam-ngan
+    trich: Ếch ngồi đáy giếng biết đâu là giời.
+    vi_tri: Nam ngạn chích cẩm, mục 8 chữ (Wikisource)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nhưng văn hóa Việt Nam không thiếu những đúc kết dân gian "đi trước" khoa học cả trăm năm. "Thùng rỗng kêu to" … gần như là phiên bản ca dao của phát hiện …" và "Luận ngữ": đã bỏ ("đi trước khoa học cả trăm năm" không kiểm được; "Thùng rỗng kêu to" không tìm thấy trong Wikisource tiếng Việt; câu Luận ngữ không mở được văn bản trong phiên này). Nguồn là bản đánh máy Wikisource (bậc 3, chép văn bản cổ); người giao cân nhắc nguồn bậc 1. Review (Claude Opus 5.5, 10/11/2026): đã tự mở Wikisource (Nam ngạn chích cẩm, Phạm Quang Sán, 1918, mục 8 chữ): "Ếch ngồi đáy giếng biết đâu là giời." Wikisource ở đây là bản chép của sách in, đối chiếu được với bản quét đi kèm; chấp nhận cho câu "có trong tập".'
+    review: 'dung'
+  - id: n85
+    cau: '"Biết thưa thốt, không biết dựa cột mà nghe" khuyên im lặng quan sát khi chưa biết.'
+    loai: lich-su
+    nguon:
+      - nam-ngan
+    trich: Biết thưa-thốt, không biết dựa cột mà nghe.
+    vi_tri: Nam ngạn chích cẩm, mục 9 chữ (Wikisource)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Biết thì thưa thốt, không biết thì dựa cột mà nghe". Wikisource ghi "Biết thưa-thốt, không biết dựa cột mà nghe"; chữ mới theo đó. Ý "khuyên im lặng quan sát khi chưa biết" là diễn giải của site, đã ghi là liên tưởng. Review (Claude Opus 5.5, 10/11/2026): đã tự mở Wikisource (mục 9 chữ): "Biết thưa-thốt, không biết dựa cột mà nghe." Diễn giải ghi rõ là liên tưởng.'
+    review: 'dung'
+  - id: n86
+    cau: 'Diễn giải: con ếch không nhất thiết kém thông minh nhưng thế giới nó thấy chỉ rộng bằng miệng giếng; câu tục ngữ gợi liên tưởng đến ý tưởng của hiệu ứng (liên tưởng của site, không phải kết quả nghiên cứu).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Liên tưởng của chính site, đã ghi rõ trên trang ("đó là liên tưởng của chúng tôi, không phải kết quả nghiên cứu"); không khẳng định về bằng chứng. Review (Claude Opus 5.5, 10/11/2026): câu diễn giải tục ngữ, trang ghi rõ là liên tưởng của site, không khẳng định về bằng chứng. Loại ve-site chấp nhận được.'
+    review: 'dung'
+  - id: n87
+    cau: 'Suy luận: tổng hợp của Zell và cộng sự (2020) thấy hiệu ứng "hơn trung bình" nhỏ hơn ở người Đông Á so với người Mỹ gốc Âu; nếu điều tương tự đúng với người Việt (chưa có dữ liệu), nền của hiệu ứng Dunning–Kruger có thể khác; chưa có dữ liệu cho việc người kém tự tin thái quá hay tự ti.'
+    loai: phat-hien
+    nguon:
+      - zell2020
+    trich: sample European Americans rather than East-Asians (especially for individualistic traits)
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Suy luận của site, đã ghi rõ trên trang. Chữ cũ: "xã hội Việt Nam coi trọng khiêm tốn (''khiêm tốn là đức tính quý''), nên … có thể biểu hiện yếu hơn" (không nguồn); thay bằng căn cứ Zell 2020 (người Đông Á). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn. Suy luận ghi rõ.'
+    review: 'dung'
+  - id: n88
+    cau: 'Ngộ nhận: "Đồ thị núi ngu dốt là kết quả nghiên cứu khoa học." Không: đó là đồ thị lan truyền trên mạng, không thuộc nghiên cứu gốc; nghiên cứu gốc chỉ có đồ thị theo tứ phân vị và không vẽ hành trình "tự tin → vỡ mộng → giác ngộ" của một cá nhân theo thời gian.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Figure 1. Perceived ability to recognize humor as a function of actual test performance (Study 1).
+    vi_tri: Hình 1–4
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Đó là tranh biếm họa internet." Xem n65. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n89
+    cau: 'Ngộ nhận: Hiệu ứng Dunning–Kruger không có nghĩa kẻ dốt luôn tự cho mình giỏi nhất: nhóm yếu nhất trung bình tự xếp ở phân vị 62; đây là xu hướng của nhóm, không nói về từng cá nhân.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Although their test scores put them in the 12th percentile, they estimated themselves to be in the 62nd.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Trong nhóm đó vẫn có người tự ti, và nhiều người mới học rất rụt rè. Đây là xu hướng thống kê, không phải định mệnh cá nhân." Bỏ hai vế không nguồn (người tự ti, rụt rè); giữ phần là xu hướng của nhóm. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n90
+    cau: 'Ngộ nhận: người thông minh miễn nhiễm. Nghiên cứu gốc đo năng lực theo từng lĩnh vực (hài hước, ngữ pháp, logic) và không bàn đến chuyện ai miễn nhiễm; ví dụ bác sĩ giỏi mới vào lĩnh vực đầu tư là giả định.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: participants scoring in the bottom quartile on tests of humor, grammar, and logic grossly overestimated their test performance and ability.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "hiệu ứng gắn với từng lĩnh vực, không gắn với con người … vì ở lĩnh vực mới, ông cũng là người thiếu năng lực". Đã làm mềm: bài gốc chỉ đo theo lĩnh vực và không bàn tới ai "miễn nhiễm" (kiểm bằng đọc toàn văn; từ "immune" không xuất hiện). Ví dụ bác sĩ là giả định (gia-dinh). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/details/kruger623101" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: 'dung'
+  - id: n91
+    cau: 'Ngộ nhận: câu "kẻ ngu thì chắc chắn, người khôn thì đầy hoài nghi" của Bukowski; ý tưởng gốc gần với Bertrand Russell từ những năm 1930.'
+    loai: lich-su
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ (cả điểm ngộ nhận). Đã bỏ: về Russell (Mortals and Others, 1931–35) chỉ tìm thấy trích dẫn trên Wikiquote (bậc 3) và không mở được nguồn bậc 1–2; về "thường bị gán cho Bukowski trên mạng" không có nguồn. G1-L02 ("Đã khớp" dòng 113) đã xác nhận câu của Russell qua nguồn khác, nhưng điểm ngộ nhận không còn cần thiết cho bài. Review (Claude Opus 5.5, 10/11/2026): bỏ điểm ngộ nhận: đúng.'
+    review: 'dung'
+  - id: n92
+    cau: 'Đọc thêm: link /psyche/kham-pha/tu-duy/thien-kien-xac-nhan/ ("Vì sao ta chỉ thấy điều mình muốn thấy?") — thiên kiến xác nhận.'
+    loai: ve-site
+    ket_qua: da-lam-mem
+    ghi_chu: 'Đã kiểm: trang thien-kien-xac-nhan có trong src/data/trang.yml (kham-pha/tu-duy) và tiêu đề đúng "Vì sao ta chỉ thấy điều mình muốn thấy?"; tests/link.test.mjs kiểm link. Chữ cũ của chú thích: "ta tìm bằng chứng bênh vực tự đánh giá của mình thay vì kiểm chứng nó" (nối với hiệu ứng DK không có nguồn); đã bỏ. Review (Claude Opus 5.5, 10/11/2026): đã kiểm: trang.yml có kham-pha/tu-duy/thien-kien-xac-nhan, tiêu đề "Vì sao ta chỉ thấy điều mình muốn thấy?" khớp.'
+    review: 'dung'
+  - id: n93
+    cau: 'Đọc thêm: link /psyche/kham-pha/tu-duy/tin-dieu-vo-ly/ ("Vì sao ta tin điều vô lý?") — lập luận có động cơ.'
+    loai: ve-site
+    ket_qua: da-lam-mem
+    ghi_chu: 'Đã kiểm: trang tin-dieu-vo-ly có trong trang.yml, tiêu đề đúng. Chữ cũ của chú thích: "người càng giỏi suy luận đôi khi càng bào chữa giỏi cho niềm tin sai của mình" (bằng chứng chưa chắc, xem hồ sơ tin-dieu-vo-ly); đã bỏ. Review (Claude Opus 5.5, 10/11/2026): đã kiểm: trang.yml có kham-pha/tu-duy/tin-dieu-vo-ly, tiêu đề khớp.'
+    review: 'dung'
+  - id: n94
+    cau: 'Đọc thêm: link /psyche/kham-pha/tu-duy/tu-duy-nhanh-cham/ ("Não có hai chế độ nghĩ?") — Hệ 1 và Hệ 2 của Kahneman.'
+    loai: ve-site
+    ket_qua: da-lam-mem
+    ghi_chu: 'Đã kiểm: trang tu-duy-nhanh-cham có trong trang.yml, tiêu đề đúng. Chữ cũ của chú thích: "Hệ 1 luôn nhảy ra đáp án (kể cả đáp án về chính năng lực của ta) trước khi Hệ 2 kịp kiểm tra" (không nguồn nối với hiệu ứng DK); đã bỏ. Review (Claude Opus 5.5, 10/11/2026): đã kiểm: trang.yml có kham-pha/tu-duy/tu-duy-nhanh-cham, tiêu đề khớp.'
+    review: 'dung'
+  - id: n95
+    cau: 'Bài này đi qua nghiên cứu gốc năm 1999, rồi qua các phê bình về nó, vì câu chuyện này phức tạp hơn meme "núi ngu dốt" lan truyền trên mạng.'
+    loai: ve-site
+    ket_qua: 'da-sua'
+    ghi_chu: 'Đã kiểm trên trang: mục "Nghiên cứu then chốt" kể Kruger–Dunning 1999 rồi Krueger–Mueller, Gignac–Zajenkowski, Hiller; mục "Mức độ chắc chắn" nêu phê bình. Review (Claude Opus 5.5, 10/11/2026): chữ trên trang: "rồi qua cả những phê bình gay gắt nhất về nó — vì câu chuyện này phức tạp hơn meme … rất nhiều". "Gay gắt nhất" là so sánh không kiểm được, không phải câu chỉ về site. Chữ mới: "rồi qua các phê bình về nó, vì câu chuyện này phức tạp hơn meme "núi ngu dốt" lan truyền trên mạng." Đã kiểm trên trang: mục Nghiên cứu then chốt kể bài 1999 rồi Krueger–Mueller, Gignac–Zajenkowski, Hiller.'
+    review: 'sai'
+  - id: n96
+    cau: 'Gignac và Zajenkowski đặt tên bài: "The Dunning-Kruger effect is (mostly) a statistical artefact".'
+    loai: lich-su
+    nguon:
+      - gignac2020
+    trich: The Dunning-Kruger effect is (mostly) a statistical artefact
+    vi_tri: Tiêu đề bài (Intelligence 80, 101449)
+    ket_qua: dung
+  - id: n97
+    cau: 'Quiz 1: "gánh nặng kép" nghĩa là người thiếu năng lực vừa không làm tốt, vừa thiếu khả năng nhận ra mình làm không tốt, vì kỹ năng làm đúng và nhận ra đúng thường là cùng một bộ kỹ năng; không có "còi báo động" nội tại.'
+    loai: dinh-nghia
+    nguon:
+      - kruger1999
+    trich: Not only do these people reach erroneous conclusions and make unfortunate choices, but their incompetence robs them of the metacognitive ability to realize it.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "là cùng một kỹ năng"; chữ mới: "thường là cùng một bộ kỹ năng". Hai phương án sai (thiếu may mắn trong thi cử; người giỏi gánh trách nhiệm kèm cặp) là phương án nhiễu. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n98
+    cau: 'Quiz 2: các nhà phê bình cho rằng đường cong có thể là nhiễu thống kê, vì hiệu ứng "người ta thường tự xếp mình trên trung bình" cộng với hồi quy về trung bình có thể đủ vẽ ra hình cong, kể cả từ dữ liệu mô phỏng ngẫu nhiên.'
+    loai: phat-hien
+    nguon:
+      - krueger2002
+      - nuhfer2016
+    trich: Consistent with this parsimonious model, errors were no longer asymmetric when either regression or the BTA effect was statistically removed.
+    vi_tri: Krueger & Mueller (2002), tóm tắt; Nuhfer 2016 (mô phỏng số ngẫu nhiên)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "đã đủ vẽ ra hình cong — thậm chí từ dữ liệu mô phỏng ngẫu nhiên"; chữ mới: "có thể đủ … kể cả từ dữ liệu mô phỏng". Nhóm phương án nhiễu (cỡ mẫu nhỏ; sinh viên Cornell không đại diện) không phải nhận định của trang. Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt.'
+    review: 'dung'
+  - id: n99
+    cau: 'Quiz 2 (giải thích): Gignac và Zajenkowski (2020) kiểm định trên 929 người và thấy mức sai lệch tự đánh giá gần như bằng nhau trên toàn phổ năng lực — ủng hộ phe phê bình.'
+    loai: phat-hien
+    nguon:
+      - gignac2020
+    trich: The accuracy with which people self-assess their intelligence is essentially equal across the whole spectrum of objectively measured intelligence.
+    vi_tri: Mục 4 (Discussion)
+    ket_qua: dung
+    ghi_chu: 'Câu cuối "dù tranh luận vẫn tiếp diễn" dựa vào Hiller 2023 (n51). Trích tương ứng ở bản gốc: "the accuracy with which people self-assess their intelligence is essentially equal across the whole spectrum of objectively measured intelligence."'
+  - id: n100
+    cau: 'Quiz 3: "Núi ngu dốt" là đồ thị lan truyền trên mạng, không thuộc nghiên cứu gốc; nghiên cứu gốc chỉ có đồ thị đường so tự đánh giá với điểm thực tế theo tứ phân vị, và không khẳng định người mới học lúc nào cũng tự tin thái quá.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Figure 1. Perceived ability to recognize humor as a function of actual test performance (Study 1).
+    vi_tri: Hình 1–4
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Đó là tranh biếm họa internet ra đời sau này" (không nguồn về nguồn gốc). Theo G1-L02 mục 7: đã sửa "biểu đồ cột" thành "đồ thị đường". Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n101
+    cau: 'Quiz 3 (giải thích): meme biến một xu hướng thống kê của nhóm thành một định mệnh cá nhân, điều nghiên cứu gốc không hề nói.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: Although their test scores put them in the 12th percentile, they estimated themselves to be in the 62nd.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Meme lan truyền vì nó đã — nhưng nó biến …"; bỏ vế "lan truyền vì nó đã" (không nguồn). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Kruger & Dunning 1999 (gwern.net/doc/psychology/1999-kruger.pdf): chữ cuối trên trang khớp.'
+    review: 'dung'
+  - id: n102
+    cau: 'Quiz 4: sau một buổi huấn luyện ngắn về logic, nhóm yếu nhất chấm lại bài của chính mình chính xác hơn và tự đánh giá sát thực tế hơn; học được kỹ năng cũng là học được cách "nhìn thấy" mình.'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+    trich: participants in the bottom quartile who had received training (n = 19) became more calibrated in every way.
+    vi_tri: Study 4, mục "Impact of training"
+    ket_qua: dung
+    ghi_chu: Theo G1-L02 mục 3 (đã sửa "làm bài khá hơn").
+  - id: n103
+    cau: 'Quiz 4 (giải thích): phản hồi khách quan và huấn luyện cụ thể là hướng có bằng chứng ban đầu để hiệu chỉnh tự đánh giá (nghiên cứu 4; Ryvkin và cộng sự, 2012).'
+    loai: phat-hien
+    nguon:
+      - kruger1999
+      - ryvkin2012
+    trich: In both studies, it is the unskilled who improve their calibration most.
+    vi_tri: Ryvkin (tóm tắt); Kruger & Dunning, Study 4
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "phản hồi khách quan và huấn luyện cụ thể là cách rẻ nhất để lắp còi báo động cho sự tự đánh giá của mình — và của người ta kèm cặp". Bỏ "rẻ nhất" (không nguồn). Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt tóm tắt.'
+    review: 'dung'
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: '"Chính là khả năng thứ hai … là cùng một kỹ năng."'
+    moi: '"Theo giả thuyết Dunning–Kruger, đó là khả năng thứ hai … thường là cùng một bộ kỹ năng."'
+    ly_do: Hồ sơ n4, n6 (bài gốc nói "often").
+  - cu: '"Như Dunning diễn đạt … ông ví von với anosognosia … (thậm chí mù hay liệt)"'
+    moi: '"Như Kruger và Dunning viết … Họ ví với anosognosia, một chứng thần kinh … liệt nửa người bên trái mà không nhận ra mình bị liệt."'
+    ly_do: Hồ sơ n10, n11.
+  - cu: '"Hầu như ai cũng có xu hướng … (đa số nghĩ mình lái xe, dạy học, hài hước hơn mức trung bình — điều bất khả thi về mặt toán học)"'
+    moi: '"Nhìn chung, người ta có xu hướng … (ví dụ học sinh trung học tự thấy mình hơn bạn về lãnh đạo, hòa đồng, viết; quản lý …)"'
+    ly_do: Hồ sơ n12, n13 (ví dụ theo bài gốc).
+  - cu: '"Ở cả bốn nghiên cứu, nhóm yếu nhất … phân vị thứ 12 … phân vị thứ 62"'
+    moi: '"Ở các nghiên cứu … Tóm tắt của bài báo nêu … (con số mỗi nghiên cứu hơi khác nhau)"'
+    ly_do: Hồ sơ n25–n27.
+  - cu: '"giải thưởng dành cho những nghiên cứu khiến người ta cười, rồi khiến người ta nghĩ"'
+    moi: (bỏ vế sau)
+    ly_do: 'Hồ sơ n36: không mở được nguồn nói câu ấy.'
+  - cu: '"phê bình thống kê đầu tiên"; "ai cũng có xu hướng"'
+    moi: '"phê bình thống kê"; "người ta có xu hướng"'
+    ly_do: Hồ sơ n37, n39.
+  - cu: '"quy mô của nó nhỏ hơn nhiều"; "Cuộc tranh luận … vẫn chưa ngã ngũ."'
+    moi: '"có thể nhỏ hơn nhiều"; (bỏ câu)'
+    ly_do: Hồ sơ n50, n52.
+  - cu: Khung Vững chắc "tự đánh giá mình cao hơn thực tế"; "một trong những phát hiện được tái hiện nhiều nhất …"
+    moi: '"tự xếp mình trên mức trung bình"; Zell và cộng sự (2020) với số liệu'
+    ly_do: Hồ sơ n53–n56.
+  - cu: Khung Khá vững "học thêm giúp tự đánh giá chính xác hơn" (chỉ một nghiên cứu)
+    moi: '"phản hồi và huấn luyện giúp người yếu tự đánh giá sát hơn" + Ryvkin 2012'
+    ly_do: Hồ sơ n57.
+  - cu: 'Khung Đang tranh cãi: "Phe bảo vệ đáp rằng hiệu ứng vẫn còn sau khi đã kiểm soát …, và Dunning … nhấn mạnh …"'
+    moi: Ehrlinger và cộng sự (2008), Jansen và cộng sự (2021)
+    ly_do: Hồ sơ n59–n62 (G1-L02 dòng 69 không kiểm được).
+  - cu: 'Khung Đã bị bác bỏ: "tranh biếm họa internet ra đời sau này"; "nhiều người mới bắt đầu rất rụt rè"'
+    moi: '"đồ thị lan truyền trên mạng, không thuộc nghiên cứu gốc"'
+    ly_do: Hồ sơ n65, n66.
+  - cu: 'Lý thuyết: "(ngữ pháp, logic, viết lách, đầu tư) … (chạy 100m)"; "Điểm dung hòa hiện nay … nhiều nhà nghiên cứu chấp nhận cả hai"'
+    moi: ví dụ theo bài gốc (bóng rổ); "Một cách đọc thận trọng"
+    ly_do: Hồ sơ n68–n71.
+  - cu: Lời khuyên 1–4 (chip kha-vung, vung-chac, kha-vung; "cách rẻ nhất"; "biểu hiện của sự thiếu siêu nhận thức"; "sai lệch theo hướng ngược lại")
+    moi: Lời khuyên 1, 3 không còn chip; lời khuyên 2 giữ kha-vung; lời khuyên 4 đổi sang tranh-cai; ghi rõ phần vận dụng là của site
+    ly_do: Hồ sơ n72–n80.
+  - cu: 'Ở Việt Nam: "Chúng tôi chưa tìm thấy nghiên cứu công bố nào …" (không mốc); "Thùng rỗng kêu to", Luận ngữ, "đi trước khoa học cả trăm năm"; "khiêm tốn là đức tính quý"'
+    moi: '"Tính đến 11/2026 …" kèm bài Nguyen và cộng sự (2026); Ếch ngồi đáy giếng và Biết thưa thốt (Nam ngạn chích cẩm); suy luận có căn cứ Zell 2020'
+    ly_do: Hồ sơ n81–n87.
+  - cu: 'Ngộ nhận: "tranh biếm họa internet"; "vẫn có người tự ti … rụt rè"; ví dụ bác sĩ; điểm Bukowski/Russell'
+    moi: đã làm mềm; bỏ điểm Bukowski/Russell
+    ly_do: Hồ sơ n88–n91.
+  - cu: 'Đọc thêm: các chú thích nối với hiệu ứng DK'
+    moi: chỉ nêu chủ đề của trang
+    ly_do: Hồ sơ n92–n94.
+  - cu: 'Quiz câu 1, 2, 3, 4: "cùng một kỹ năng"; "đã đủ vẽ ra hình cong"; "tranh biếm họa internet"; "Meme lan truyền vì nó đã"; "cách rẻ nhất"'
+    moi: đã làm mềm
+    ly_do: Hồ sơ n97–n103.
+  - cu: Nguồn (4 mục)
+    moi: 'Nguồn thêm: Ehrlinger 2008, Jansen 2021, Nam ngạn chích cẩm, Nguyen 2026, Nuhfer 2016 và 2017, Ryvkin 2012, Zell 2020'
+    ly_do: Hồ sơ n53–n87.
+  - cu: 'Khung Đang tranh cãi: "Đây là tâm điểm tranh luận hiện nay. Phe phê bình: …"'
+    moi: '"Phe phê bình: …" (bỏ câu đầu)'
+    ly_do: 'Review: hồ sơ n64 (câu về tình trạng ngành, không nguồn).'
+  - cu: '"rồi qua cả những phê bình gay gắt nhất về nó — vì câu chuyện này phức tạp hơn meme … rất nhiều"'
+    moi: '"rồi qua các phê bình về nó, vì câu chuyện này phức tạp hơn meme … lan truyền trên mạng"'
+    ly_do: 'Review: hồ sơ n95.'
+  - cu: 'Nguồn: Krueger & Mueller (2002) "— phê bình thống kê đầu tiên: …", không DOI'
+    moi: 'Thêm DOI 10.1037/0022-3514.82.2.180; "— phê bình thống kê: …"'
+    ly_do: 'Review: hồ sơ n37.'

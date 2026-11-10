@@ -92,11 +92,12 @@ const chiCoD = () =>
 		.map((f) => BASE + f.replace(/index\.html$/, ''));
 
 /**
- * Tùy chọn xếp hạng mà ô tìm kiếm của Starlight đưa cho Pagefind: astro.config.mjs không đặt `pagefind`, nên là mặc định
- * của Starlight. API dùng cùng tùy chọn thì thứ hạng như ô tìm kiếm (rút từ review D1.8 của opus).
+ * Tùy chọn xếp hạng mà ô tìm kiếm của Starlight đưa cho Pagefind: mặc định của Starlight, đè bằng src/tim-kiem/xep-hang.mjs
+ * (astro.config.mjs dùng cùng file). API dùng cùng tùy chọn thì thứ hạng như ô tìm kiếm (rút từ review D1.8 của opus).
  */
 const { PagefindConfigDefaults } = await import(pathToFileURL(path.resolve(import.meta.dirname, '../../node_modules/@astrojs/starlight/dist/schemas/pagefind.js')).href);
-const XEP_HANG = PagefindConfigDefaults().ranking;
+const { XEP_HANG: DE } = await import(pathToFileURL(path.resolve(import.meta.dirname, '../../src/tim-kiem/xep-hang.mjs')).href);
+const XEP_HANG = { ...PagefindConfigDefaults().ranking, ...DE };
 
 /** Trang (địa chỉ, bỏ #mục) của `toiDa` kết quả đầu (không ghi: mọi kết quả), theo thứ tự, không trùng. */
 async function tim(p, cau, toiDa) {
