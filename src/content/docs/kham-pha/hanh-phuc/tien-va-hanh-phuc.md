@@ -98,7 +98,7 @@ Vì sao tiền vừa "có tác dụng" vừa "không có tác dụng"? Bốn cá
 
 - **Thích nghi.** Con người quen nhanh với mức sống mới: tăng lương mang lại niềm vui ngắn hạn, rồi kỳ vọng "leo thang" theo và hiệu ứng phai dần.
 - **So sánh xã hội.** Hạnh phúc phụ thuộc nhiều vào vị trí *tương đối* của bạn so với những người xung quanh hơn là con số tuyệt đối trong tài khoản. Nếu thu nhập của cả xã hội cùng tăng, thứ bậc tương đối không đổi — nên hạnh phúc trung bình không nhúc nhích.
-- **Lợi ích biên giảm dần (dạng logarit).** Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập: tăng từ 20.000 lên 60.000 USD có tác động tương đương tăng từ 60.000 lên 180.000 USD.
+- **Lợi ích biên giảm dần (dạng logarit).** Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập. Nếu đúng dạng logarit, tăng từ 20.000 lên 60.000 USD có tác động tương đương tăng từ 60.000 lên 180.000 USD (cùng gấp ba lần).
 - **Tiền xóa khổ đau hiệu quả hơn tạo hạnh phúc.** Ở vùng thu nhập thấp, tiền giải quyết những nỗi khổ cụ thể: lo tiền nhà, tiền thuốc, sự bất an. Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại không đáp ứng với thu nhập thêm: bài báo 2023 đề xuất cách giải thích này cho nhóm ít hạnh phúc nhất và nêu ví dụ đau lòng, mất người thân; đây là suy đoán của các tác giả, chưa được kiểm tra.
 
 ## Áp dụng vào đời sống
@@ -109,13 +109,13 @@ Từ một chủ đề còn tranh cãi, ta chỉ nên rút ra những điều h�
 
 Con số này đến từ dữ liệu người Mỹ hơn một thập kỷ trước, và theo phân tích mới nhất, nó chỉ mô tả nhóm 20% ít hạnh phúc nhất. Nó không phải công thức cho bất kỳ cá nhân nào, càng không áp được sang thu nhập ở Việt Nam.
 
-### 2. Nếu thu nhập còn thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất (chưa chứng minh nhân quả) :nhan[tranh-cai] { #2-neu-thu-nhap-con-thap-tang-thu-nhap-la-mot-trong-nhung-cach-cai-thien-tinh-than-hieu-qua-nhat-tranh-cai }
+### 2. Nếu thu nhập còn thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất (chưa chứng minh nhân quả) :nhan[tranh-cai] { #2-neu-thu-nhap-con-thap-tang-thu-nhap-la-mot-trong-nhung-cach-cai-thien-tinh-than-hieu-qua-nhat-dang-tranh-cai }
 
 Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (người thu nhập cao hơn thì tốt hơn), không chứng minh tăng thu nhập làm tinh thần tốt lên. Với giới hạn đó, "tiền không mua được hạnh phúc" có vẻ là câu nói xa xỉ — theo các dữ liệu này nó ít đúng nhất với người đang thiếu tiền.
 
 ### 3. Khi đã đủ sống, hãy để ý xem điều gì thật sự làm bạn bất hạnh :nhan[tranh-cai]
 
-Với đa số người đã vượt qua mức đủ sống, hạnh phúc cảm xúc vẫn tăng theo thu nhập — nhưng theo dạng logarit, tức chậm dần. Và với nhóm bất hạnh nhất, tiền thêm trên khoảng 100.000 USD/năm không còn giúp. Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ.
+Với đa số người đã vượt qua mức đủ sống, hạnh phúc cảm xúc vẫn tăng theo thu nhập — nhưng theo dạng logarit, tức chậm dần. Và với nhóm bất hạnh nhất, tiền thêm trên khoảng 100.000 USD/năm không còn giúp. Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang [Hỗ trợ](/psyche/ho-tro/).
 
 ## Ở Việt Nam và các nền văn hóa khác
 

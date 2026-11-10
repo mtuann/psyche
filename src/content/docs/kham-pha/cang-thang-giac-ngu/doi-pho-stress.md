@@ -41,7 +41,7 @@ Mô hình của họ gồm hai bước đánh giá đan xen nhau:
 Từ đó, con người tung ra các **nỗ lực đối phó** (coping) — những nỗ lực nhận thức và hành vi *liên tục thay đổi* nhằm quản lý các đòi hỏi được đánh giá là vượt quá nguồn lực của bản thân. Hai họ chiến lược lớn:
 
 - **Đối phó tập trung vào vấn đề** (problem-focused): tấn công trực tiếp vào nguồn stress — ví dụ lập kế hoạch ôn thi, thương lượng lại deadline, tìm thông tin.
-- **Đối phó tập trung vào cảm xúc** (emotion-focused): điều chỉnh phản ứng cảm xúc — ví dụ tìm sự hỗ trợ, nhìn nhận lại theo hướng tích cực, giữ khoảng cách, tạm thời phân tâm.
+- **Đối phó tập trung vào cảm xúc** (emotion-focused): điều chỉnh phản ứng cảm xúc — ví dụ tìm sự hỗ trợ, nhìn nhận lại theo hướng tích cực, giữ khoảng cách, tự kiềm chế cảm xúc.
 
 Theo mô hình này, đối phó thay đổi theo những đánh giá liên tục về mối quan hệ người–môi trường đang biến đổi. Vì vậy sau khi đối phó, ta có thể **đánh giá lại** — "cách này có hiệu quả không? tình hình đã khác chưa?" — rồi điều chỉnh tiếp. Đối phó vì thế được xem chủ yếu là một quá trình động, chứ không chỉ là một "tính cách" cố định.
 
@@ -49,17 +49,17 @@ Theo mô hình này, đối phó thay đổi theo những đánh giá liên tụ
 
 ### Lazarus và Folkman (1984): nền móng của cả lĩnh vực
 
-Trong cuốn sách *Stress, Appraisal, and Coping* (New York: Springer Publishing Company), Lazarus và Folkman đề xuất **mô hình giao dịch** (transactional model): stress không nằm ở môi trường, cũng không nằm ở con người, mà nằm ở *mối quan hệ* giữa người và môi trường — mối quan hệ mà người ấy đánh giá là vượt quá nguồn lực của mình và đe dọa sức khỏe tinh thần.
+Trong cuốn sách *Stress, Appraisal, and Coping* (New York: Springer Publishing Company), Lazarus và Folkman đề xuất **mô hình giao dịch** (transactional model): stress không nằm ở môi trường, cũng không nằm ở con người, mà nằm ở *mối quan hệ* giữa người và môi trường — mối quan hệ mà người ấy đánh giá là vượt quá nguồn lực của mình và đe dọa sự an lành (well-being) của mình.
 
 Ba ý cốt lõi vẫn còn được dùng đến hôm nay: (1) đánh giá của cá nhân — chứ không chỉ sự việc khách quan — là khâu trung gian then chốt của phản ứng stress; (2) đối phó chủ yếu là một *quá trình* thay đổi theo tình huống, không chỉ là một *đặc điểm tính cách* ổn định; (3) không nên đánh giá một chiến lược đối phó mà không xét bối cảnh dùng nó — giá trị của nó tùy thuộc vào bối cảnh.
 
-### Folkman và Lazarus (1988): đối phó và cảm xúc ảnh hưởng lẫn nhau
+### Folkman và Lazarus (1988): đối phó và cảm xúc ảnh hưởng lẫn nhau { #folkman-va-lazarus-1988-doi-pho-va-cam-xuc-tac-dong-qua-lai }
 
 Trước đây đối phó thường được xem là phản ứng đối với cảm xúc. Trong một bài viết lý thuyết, hai tác giả đề xuất cách nhìn rộng hơn: cảm xúc và đối phó ảnh hưởng lẫn nhau trong một mối quan hệ động, hai chiều ([Folkman và Lazarus, 1988](https://doi.org/10.1016/0277-9536(88)90395-4)). Vì vậy đừng hình dung đối phó như công thức tuyến tính "stress → chọn cách → xong".
 
-### Folkman, Lazarus, Gruen và DeLongis (1986): đánh giá và đối phó qua nhiều tình huống
+### Folkman, Lazarus, Gruen và DeLongis (1986): đánh giá và đối phó qua nhiều tình huống { #folkman-lazarus-gruen-va-delongis-1986-hieu-qua-tuy-thuoc-vao-danh-gia }
 
-Nghiên cứu trên 150 người trưởng thành trong cộng đồng (75 cặp vợ chồng), mỗi người kể về sự việc căng thẳng nhất của tuần vừa qua trong năm lần phỏng vấn cách nhau một tháng. Các quá trình đánh giá và đối phó (gộp qua năm tình huống) cùng các đặc điểm tính cách giải thích được một phần đáng kể các triệu chứng tâm lý, nhưng không giải thích được đáng kể tình trạng sức khỏe thể chất ([Folkman và cộng sự, 1986](https://doi.org/10.1037/0022-3514.50.3.571)). Đánh giá và đối phó biến động từ tình huống này sang tình huống khác nhiều hơn là ổn định. Các tác giả cũng nhấn mạnh rằng không nên coi một dạng đối phó là tốt hay xấu mà không xét bối cảnh dùng nó: **hiệu quả của một chiến lược có thể tùy thuộc vào tình huống** — một ý tưởng sau này được kiểm chứng trực tiếp ở các nghiên cứu về "sự khớp nhau" dưới đây.
+Nghiên cứu trên 150 người trưởng thành trong cộng đồng (75 cặp vợ chồng), mỗi người kể về sự việc căng thẳng nhất của tuần vừa qua trong năm lần phỏng vấn cách nhau một tháng. Các quá trình đánh giá và đối phó (gộp qua năm tình huống) cùng các đặc điểm tính cách giải thích được một phần đáng kể các triệu chứng tâm lý, nhưng không giải thích được đáng kể tình trạng sức khỏe thể chất ([Folkman và cộng sự, 1986](https://doi.org/10.1037/0022-3514.50.3.571)). Nhìn chung, đánh giá và đối phó biến động giữa các tình huống nhiều hơn là ổn định, nhưng không đều: đánh giá thứ cấp biến động nhiều, còn các dạng đối phó tập trung vào cảm xúc ổn định ở mức vừa. Các tác giả cũng nhấn mạnh rằng không nên coi một dạng đối phó là tốt hay xấu mà không xét bối cảnh dùng nó: **hiệu quả của một chiến lược có thể tùy thuộc vào tình huống** — một ý tưởng sau này được kiểm chứng trực tiếp ở các nghiên cứu về "sự khớp nhau" dưới đây.
 
 ### Forsythe và Compas (1987): kiểm chứng "giả thuyết khớp nhau"
 
@@ -109,19 +109,19 @@ Ba lớp lý thuyết xếp chồng lên nhau, từ tổng quát đến cụ th�
 
 ## Áp dụng vào đời sống
 
-### 1. Hỏi trước tiên: "Việc này có thay đổi được không?" :nhan[kha-vung]
+### 1. Hỏi trước tiên: "Việc này có thay đổi được không?" :nhan[tranh-cai] { #1-hoi-truoc-tien-viec-nay-co-thay-doi-duoc-khong-vung-chac }
 
-Trước khi chọn cách đối phó, hãy dành một phút đánh giá tính kiểm soát được của tình huống. Deadline có thể thương lượng? Mối quan hệ có thể hàn gắn? Sức khỏe có thể cải thiện bằng hành động cụ thể? Câu trả lời — dù chỉ là ước lượng — có thể là la bàn cho các bước tiếp theo, như giả thuyết khớp nhau gợi ý (với bằng chứng còn lẫn lộn).
+Trước khi chọn cách đối phó, hãy dành một phút đánh giá tính kiểm soát được của tình huống. Deadline có thể thương lượng? Mối quan hệ có thể hàn gắn? Sức khỏe có thể cải thiện bằng hành động cụ thể? Câu trả lời — dù chỉ là ước lượng — có thể là la bàn cho các bước tiếp theo, như giả thuyết khớp nhau gợi ý; nhưng giả thuyết này còn đang tranh cãi (xem khung "Đang tranh cãi" ở trên).
 
-### 2. Thay đổi được → hành động cụ thể, chia nhỏ :nhan[kha-vung]
+### 2. Thay đổi được → hành động cụ thể, chia nhỏ :nhan[kha-vung] { #2-thay-doi-duoc-hanh-dong-cu-the-chia-nho-vung-chac }
 
 Với việc thay đổi được (như kỳ thi của Lan), đối phó tập trung vào vấn đề thường là lựa chọn hợp lý trước tiên: lập kế hoạch, chia việc lớn thành việc nhỏ, tìm thông tin. Lưu ý: "hành động" ở đây là hành động *có khả năng thay đổi tình huống* — lướt mạng tìm mẹo thi cả đêm mà không ôn bài nào chỉ là bận rộn giả tạo.
 
-### 3. Không thay đổi được → điều chỉnh phản ứng bên trong, nhưng đừng trốn tránh :nhan[tranh-cai]
+### 3. Không thay đổi được → điều chỉnh phản ứng bên trong, nhưng đừng trốn tránh :nhan[tranh-cai] { #3-khong-thay-doi-duoc-cham-soc-cam-xuc-mot-cach-chu-dong-kha-vung }
 
 Với việc khó thay đổi (như bệnh tình của cha Minh), một số nghiên cứu gợi ý điều chỉnh phản ứng bên trong, chẳng hạn chấp nhận thực tế (không đồng nghĩa với bỏ cuộc), có thể thích ứng hơn việc cố "sửa" tình huống. Đây là điểm bằng chứng lẫn lộn nhất (xem khung "Đang tranh cãi"). Và đừng lẫn điều chỉnh có chủ đích với trốn tránh hay mong ước viển vông, những dạng thường đi cùng sức khỏe kém hơn.
 
-### 4. Đánh giá lại sau mỗi vòng — đừng "đóng đinh" một cách :nhan[kha-vung]
+### 4. Đánh giá lại sau mỗi vòng — đừng "đóng đinh" một cách :nhan[kha-vung] { #4-danh-gia-lai-sau-moi-vong-dung-dong-dinh-mot-cach-vung-chac }
 
 Tình huống thay đổi, và đánh giá của bạn cũng nên thay đổi theo. Mỗi vài ngày hãy tự hỏi: "Cách mình đang dùng có giúp gì không? Tình hình đã khác lúc đầu chưa?" Đây gần với thành phần "nhạy với phản hồi" trong linh hoạt điều tiết, và với ý rằng đối phó thay đổi theo đánh giá liên tục trong mô hình của Lazarus và Folkman.
 
@@ -129,7 +129,7 @@ Tình huống thay đổi, và đánh giá của bạn cũng nên thay đổi th
 
 Người chỉ biết một cách đối phó — dù là "luôn đối mặt" hay "luôn buông" — có thể lúng túng khi gặp tình huống không hợp với chiêu đó. Hãy mở rộng "túi đồ nghề": kỹ năng giải quyết vấn đề và kỹ năng xoa dịu cảm xúc.
 
-### 6. Khi khó xoay xở với stress, hãy tìm sự giúp đỡ chuyên nghiệp :nhan[vung-chac]
+### 6. Khi khó xoay xở với stress, hãy tìm sự giúp đỡ chuyên nghiệp { #6-khi-stress-vuot-qua-suc-hay-tim-su-giup-do-chuyen-nghiep-vung-chac }
 
 Nếu bạn thấy khó xoay xở với stress, hoặc những cách tự làm không giúp được, hãy tìm chuyên gia tâm lý hoặc bác sĩ; hướng dẫn của NHS (Anh) cũng nói vậy. Nếu có ý nghĩ làm hại bản thân hoặc cần giúp đỡ khẩn cấp, xem ngay trang [Hỗ trợ](/psyche/ho-tro/). Tìm kiếm sự giúp đỡ có thể xem là một cách đối phó chủ động.
 
@@ -188,7 +188,7 @@ Có một hướng suy luận chưa được kiểm chứng: một tổng quan v
 - Conway, V. J., & Terry, D. J. (1992). Appraised controllability as a moderator of the effectiveness of different coping strategies: A test of the goodness of fit hypothesis. *Australian Journal of Psychology*, 44(1), 1–7. <https://doi.org/10.1080/00049539208260155>
 - Folkman, S., & Lazarus, R. S. (1988). The relationship between coping and emotion: Implications for theory and research. *Social Science & Medicine*, 26(3), 309–317. <https://doi.org/10.1016/0277-9536(88)90395-4>
 - Folkman, S., Lazarus, R. S., Gruen, R. J., & DeLongis, A. (1986). Appraisal, coping, health status, and psychological symptoms. *Journal of Personality and Social Psychology*, 50(3), 571–579. <https://doi.org/10.1037/0022-3514.50.3.571>
-- Forsythe, C. J., & Compas, B. E. (1987). Interaction of cognitive appraisals of stressful events and coping: Testing the goodness of fit hypothesis. *Cognitive Therapy and Research*, 11, 473–485. <https://doi.org/10.1007/BF01175357>
+- Forsythe, C. J., & Compas, B. E. (1987). Interaction of cognitive appraisals of stressful events and coping: Testing the goodness of fit hypothesis. *Cognitive Therapy and Research*, 11(4), 473–485. <https://doi.org/10.1007/BF01175357>
 - Kendall, E., & Terry, D. J. (2008). Understanding adjustment following traumatic brain injury: Is the Goodness-of-Fit coping hypothesis useful? *Social Science & Medicine*, 67(8), 1217–1224. <https://doi.org/10.1016/j.socscimed.2008.05.033>
 - Kuo, B. C. H. (2013). Collectivism and coping: Current theories, evidence, and measurements of collective coping. *International Journal of Psychology*, 48(3), 374–388. <https://doi.org/10.1080/00207594.2011.640681>
 - Lazarus, R. S., & Folkman, S. (1984). *Stress, appraisal, and coping*. New York: Springer Publishing Company.

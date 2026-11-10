@@ -4,902 +4,1003 @@ nguon_cu: ../psyche-zero/docs/kham-pha/hanh-phuc/tien-va-hanh-phuc.md
 tang: mo-rong
 muc: V2
 lan:
-- so: 1
-  ngay: '2026-11-10'
-  nhanh: moi/d6-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L1 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d6-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L1 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L1)
+      review: Claude Sonnet 5.5 (agent review D6-L1, 10/11/2026)
+      kiem_mau: null
 nguon:
-- id: kd2010
-  ten: 'Kahneman & Deaton (2010), PNAS 107(38), 16489–16493: toàn văn (PDF bản tác giả, trang Princeton của Deaton); tóm tắt thêm từ PMC2944762'
-  link: https://doi.org/10.1073/pnas.1011492107
-  toan_van: true
-- id: kill2021
-  ten: 'Killingsworth (2021), PNAS 118(4), e2016976118: toàn văn (PMC7848527, qua Europe PMC)'
-  link: https://doi.org/10.1073/pnas.2016976118
-  toan_van: true
-- id: kkm2023
-  ten: 'Killingsworth, Kahneman & Mellers (2023), PNAS 120(10), e2208661120: toàn văn (PMC10013834, qua Europe PMC)'
-  link: https://doi.org/10.1073/pnas.2208661120
-  toan_van: true
-- id: easterlin1974
-  ten: 'Easterlin (1974), trong David & Reder (eds.), Nations and Households in Economic Growth, tr. 89–125: toàn văn (bản MPRA 111773, in lại có phép của Elsevier)'
-  link: https://doi.org/10.1016/B978-0-12-205050-3.50008-7
-  toan_van: true
-- id: easterlin2010
-  ten: 'Easterlin và cộng sự (2010), PNAS 107(52), 22463–22468: tóm tắt (OpenAlex/Europe PMC, PMC3012515); số liệu mẫu theo bản thảo IZA DP 5799 (toàn văn)'
-  link: https://doi.org/10.1073/pnas.1015962107
-  toan_van: false
-- id: sw2008
-  ten: 'Stevenson & Wolfers (2008): bản NBER Working Paper 14282 (toàn văn); bản in Brookings Papers on Economic Activity 39(1), 1–87 không mở được'
-  link: https://www.nber.org/papers/w14282
-  toan_van: true
-- id: rohrer2024
-  ten: 'Rohrer & Wenz (2024), PNAS 121, e2313712121: bình luận về KKM 2023 (toàn văn PMC11572929, qua Europe PMC; tóm tắt OpenAlex)'
-  link: https://doi.org/10.1073/pnas.2313712121
-  toan_van: true
-- id: arslan2024
-  ten: 'Arslan (2024), PNAS 121, e2314207121: bình luận về KKM 2023 (toàn văn, PMC11572980)'
-  link: https://doi.org/10.1073/pnas.2314207121
-  toan_van: true
-- id: kkm2024
-  ten: 'Killingsworth, Kahneman & Mellers (2024), PNAS 121, e2322160121: trả lời hai bình luận (đọc đoạn đầu, PMC11572976)'
-  link: https://doi.org/10.1073/pnas.2322160121
-  toan_van: true
-- id: fors2026
-  ten: 'Fors Connolly, Hjerm & Gärling (2026), Sci Rep: tóm tắt (Europe PMC, PMC13333869)'
-  link: https://doi.org/10.1038/s41598-026-59695-1
-  toan_van: false
-- id: tim-vn-tien
-  ten: 'Tìm trên Europe PMC (10/11/2026): các tổ hợp (Vietnam OR Vietnamese) với income/GDP và happiness/life satisfaction/subjective well-being, "Easterlin" và Vietnam; đã xem đầu danh sách, không thấy nghiên cứu về quan hệ thu nhập–hạnh phúc ở người Việt; lần tìm chưa hệ thống, chưa đọc hết, chưa tìm tạp chí trong nước; OpenAlex hết hạn mức trong ngày'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam%20OR%20Vietnamese)%20AND%20income%20AND%20happiness
-  toan_van: false
-- id: tim-es-vn
-  ten: 'Tìm trên Europe PMC (10/11/2026): thiết kế experience-sampling thu nhập–cảm xúc ở châu Á/Việt Nam: không thấy bản sao; lần tìm chưa hệ thống'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(income%20OR%20money)%20AND%20(%22emotional%20well-being%22%20OR%20happiness)%20AND%20Vietnam
-  toan_van: false
+  - id: kd2010
+    ten: 'Kahneman & Deaton (2010), PNAS 107(38), 16489–16493: toàn văn (PDF bản tác giả, trang Princeton của Deaton); tóm tắt thêm từ PMC2944762'
+    link: https://doi.org/10.1073/pnas.1011492107
+    toan_van: true
+  - id: kill2021
+    ten: 'Killingsworth (2021), PNAS 118(4), e2016976118: toàn văn (PMC7848527, qua Europe PMC)'
+    link: https://doi.org/10.1073/pnas.2016976118
+    toan_van: true
+  - id: kkm2023
+    ten: 'Killingsworth, Kahneman & Mellers (2023), PNAS 120(10), e2208661120: toàn văn (PMC10013834, qua Europe PMC)'
+    link: https://doi.org/10.1073/pnas.2208661120
+    toan_van: true
+  - id: easterlin1974
+    ten: 'Easterlin (1974), trong David & Reder (eds.), Nations and Households in Economic Growth, tr. 89–125: toàn văn (bản MPRA 111773, in lại có phép của Elsevier)'
+    link: https://doi.org/10.1016/B978-0-12-205050-3.50008-7
+    toan_van: true
+  - id: easterlin2010
+    ten: 'Easterlin và cộng sự (2010), PNAS 107(52), 22463–22468: tóm tắt (OpenAlex/Europe PMC, PMC3012515); số liệu mẫu theo bản thảo IZA DP 5799 (toàn văn)'
+    link: https://doi.org/10.1073/pnas.1015962107
+    toan_van: false
+  - id: sw2008
+    ten: 'Stevenson & Wolfers (2008): bản NBER Working Paper 14282 (toàn văn); bản in Brookings Papers on Economic Activity 39(1), 1–87 không mở được'
+    link: https://www.nber.org/papers/w14282
+    toan_van: true
+  - id: rohrer2024
+    ten: 'Rohrer & Wenz (2024), PNAS 121, e2313712121: bình luận về KKM 2023 (toàn văn PMC11572929, qua Europe PMC; tóm tắt OpenAlex)'
+    link: https://doi.org/10.1073/pnas.2313712121
+    toan_van: true
+  - id: arslan2024
+    ten: 'Arslan (2024), PNAS 121, e2314207121: bình luận về KKM 2023 (toàn văn, PMC11572980)'
+    link: https://doi.org/10.1073/pnas.2314207121
+    toan_van: true
+  - id: kkm2024
+    ten: 'Killingsworth, Kahneman & Mellers (2024), PNAS 121, e2322160121: trả lời hai bình luận (đọc đoạn đầu, PMC11572976)'
+    link: https://doi.org/10.1073/pnas.2322160121
+    toan_van: true
+  - id: fors2026
+    ten: 'Fors Connolly, Hjerm & Gärling (2026), Sci Rep: tóm tắt (Europe PMC, PMC13333869)'
+    link: https://doi.org/10.1038/s41598-026-59695-1
+    toan_van: false
+  - id: tim-vn-tien
+    ten: 'Tìm trên Europe PMC (10/11/2026): các tổ hợp (Vietnam OR Vietnamese) với income/GDP và happiness/life satisfaction/subjective well-being, "Easterlin" và Vietnam; đã xem đầu danh sách, không thấy nghiên cứu về quan hệ thu nhập–hạnh phúc ở người Việt; lần tìm chưa hệ thống, chưa đọc hết, chưa tìm tạp chí trong nước; OpenAlex hết hạn mức trong ngày'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam%20OR%20Vietnamese)%20AND%20income%20AND%20happiness
+    toan_van: false
+  - id: tim-es-vn
+    ten: 'Tìm trên Europe PMC (10/11/2026): thiết kế experience-sampling thu nhập–cảm xúc ở châu Á/Việt Nam: không thấy bản sao; lần tìm chưa hệ thống'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(income%20OR%20money)%20AND%20(%22emotional%20well-being%22%20OR%20happiness)%20AND%20Vietnam
+    toan_van: false
 nhan_dinh:
-- id: n1
-  cau: 'Mô tả trang: nghịch lý Easterlin, ngưỡng 75.000 USD của Kahneman và Deaton, lời hòa giải năm 2023 về tiền và hạnh phúc cảm xúc.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: 'Income and emotional well-being: A conflict resolved'
-  vi_tri: tên bài, PNAS 120(10) (2023)
-  ket_qua: dung
-- id: n2
-  cau: 'Việc 1: thang Cantril 0 (tệ nhất) đến 10 (tốt nhất) đo đánh giá cuộc sống; câu hỏi cảm xúc hôm qua đo cảm xúc.'
-  loai: cong-cu
-  nguon:
-  - kd2010
-  trich: Life evaluation is measured using Cantril's Self-Anchoring Scale, which has the respondent rate his or her current life on a ladder scale in which 0 is "the worst possible life for you" and 10 is "the best possible life for you."
-  vi_tri: tr. 1
-  ket_qua: dung
-- id: n3
-  cau: 'Việc 2 (đáp án thu gọn): nghiên cứu năm 2010 trả lời khoảng 75.000 USD/năm cho cảm xúc hằng ngày của người Mỹ; con số gây tranh cãi hơn một thập kỷ.'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  - kkm2023
-  trich: Emotional well-being also rises with log income, but there is no further progress beyond an annual income of ~$75,000.
-  vi_tri: 'K&D 2010, tóm tắt; tranh cãi: Killingsworth 2021, KKM 2023'
-  ket_qua: dung
-- id: n4
-  cau: Nghịch lý về tiền và hạnh phúc làm đau đầu các nhà kinh tế hơn nửa thế kỷ (từ 1974).
-  loai: lich-su
-  nguon:
-  - easterlin1974
-  trich: Does Economic Growth Improve the Human Lot? Some Empirical Evidence
-  vi_tri: Easterlin 1974, tr. 89
-  ket_qua: dung
-- id: n5
-  cau: 'Nhìn ngang: trong cùng một nước, người giàu hơn thường hạnh phúc hơn.'
-  loai: phat-hien
-  nguon:
-  - easterlin1974
-  trich: in every single survey, those in the highest status group were happier, on the average, than those in the lowest status group
-  vi_tri: tr. 117 (mục 4)
-  ket_qua: dung
-- id: n6
-  cau: 'Nhìn dọc: theo Easterlin, hạnh phúc trung bình không tăng khi GDP tăng; kết luận bị tranh cãi.'
-  loai: phat-hien
-  nguon:
-  - easterlin1974
-  - sw2008
-  trich: in the one national time series studied, that for the United States since 1946, higher income was not systematically accompanied by greater happiness
-  vi_tri: 'Easterlin 1974, tr. 118; phản biện: Stevenson & Wolfers 2008 tr. 3'
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "- **Nhìn dọc (theo thời gian):** khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân lại không tăng theo.". Chữ mới: "- **Nhìn dọc (theo thời gian):** theo Easterlin, khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân không tăng theo (kết luận này bị tranh cãi, xem dưới).". Lý do: Câu cũ nêu kết luận của Easterlin như sự thật; Stevenson & Wolfers (2008) thấy hạnh phúc tăng ở Nhật và châu Âu.'
-- id: n7
-  cau: 'Nghịch lý Easterlin: theo tên Richard Easterlin, nêu năm 1974.'
-  loai: lich-su
-  nguon:
-  - sw2008
-  trich: In several papers Richard Easterlin has examined the relationship between happiness and GDP [...] (1974, 1995, 2005a, 2005b)
-  vi_tri: S&W 2008, tr. 1
-  ket_qua: dung
-  ghi_chu: Bài Easterlin 1974 đã đọc; tên "nghịch lý Easterlin" do người sau đặt (S&W 2008 gọi là "Easterlin paradox").
-- id: n8
-  cau: 'Kahneman và Deaton tách hạnh phúc cảm xúc (chất lượng cảm xúc trải nghiệm hằng ngày: niềm vui, căng thẳng, nỗi buồn, cơn giận) khỏi đánh giá cuộc sống (suy nghĩ khi nghĩ về cuộc đời mình).'
-  loai: dinh-nghia
-  nguon:
-  - kd2010
-  trich: Emotional well-being refers to the emotional quality of an individual's everyday experience—the frequency and intensity of experiences of joy, stress, sadness, anger, and affection [...] Life evaluation refers to the thoughts that people have about their life when they think about it.
-  vi_tri: tr. 1, tóm tắt
-  ket_qua: dung
-- id: n9
-  cau: 'Hai thứ liên quan yếu: các thang cảm xúc và thang Cantril tương quan đều dưới 0,31 trong dữ liệu Gallup.'
-  loai: so-lieu
-  nguon:
-  - kd2010
-  trich: The correlations between the emotional well-being measures and the ladder values had the expected sign but were modest in size (all <0.31).
-  vi_tri: tr. 2
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Phần lớn tranh cãi về tiền và hạnh phúc, như ta sẽ thấy, xuất phát từ việc lẫn lộn hai khái niệm này.". Chữ mới: "Hai thứ này liên quan yếu: trong dữ liệu Gallup, các thang cảm xúc và thang Cantril tương quan với nhau đều dưới 0,31. Một phần tranh cãi về tiền và hạnh phúc xuất phát từ việc lẫn lộn hai khái niệm này; còn mâu thuẫn giữa kết quả năm 2010 và 2021, như ta sẽ thấy, nảy sinh ở cách đo và cách phân tíc". Lý do: Câu cũ "phần lớn tranh cãi" không có nguồn; bài hòa giải 2023 tìm nguyên nhân ở thang đo (hiệu ứng trần) và giả định đồng nhất, không phải lẫn hai khái niệm. Thêm số tương quan từ K&D 2010.'
-- id: n10
-  cau: Một phần tranh cãi xuất phát từ việc lẫn lộn hai khái niệm; mâu thuẫn 2010–2021 nảy sinh ở cách đo và phân tích cùng một khía cạnh cảm xúc.
-  loai: phat-hien
-  nguon:
-  - kd2010
-  - kkm2023
-  trich: A discussion of subjective well-being must recognize a distinction between two concepts that are often confounded
-  vi_tri: K&D 2010, tr. 1; KKM 2023 (We agreed that KD and MK had attempted to measure the same construct of emotional well-being)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Phần lớn tranh cãi về tiền và hạnh phúc, như ta sẽ thấy, xuất phát từ việc lẫn lộn hai khái niệm này.". Chữ mới: "Hai thứ này liên quan yếu: trong dữ liệu Gallup, các thang cảm xúc và thang Cantril tương quan với nhau đều dưới 0,31. Một phần tranh cãi về tiền và hạnh phúc xuất phát từ việc lẫn lộn hai khái niệm này; còn mâu thuẫn giữa kết quả năm 2010 và 2021, như ta sẽ thấy, nảy sinh ở cách đo và cách phân tíc". Lý do: Câu cũ "phần lớn tranh cãi" không có nguồn; bài hòa giải 2023 tìm nguyên nhân ở thang đo (hiệu ứng trần) và giả định đồng nhất, không phải lẫn hai khái niệm. Thêm số tương quan từ K&D 2010.'
-- id: n11
-  cau: 'Ví dụ: có thể chấm cuộc đời 8/10 mà hôm qua là một ngày đầy căng thẳng.'
-  loai: loi-khuyen
-  nguon:
-  - kd2010
-  ket_qua: dung
-  ghi_chu: 'gia-dinh: ví dụ minh họa; hợp với tương quan yếu (n9).'
-- id: n12
-  cau: 'Easterlin 1974: 30 cuộc khảo sát từ 1946 đến 1970, 19 nước; so sánh trong nước, giữa các nước, theo thời gian.'
-  loai: so-lieu
-  nguon:
-  - easterlin1974
-  trich: thirty surveys from 1946 through 1970, covering nineteen countries, including eleven in Asia, Africa, and Latin America
-  vi_tri: tr. 117
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Easterlin so sánh dữ liệu hạnh phúc theo ba cách:". Chữ mới: "Easterlin tổng hợp 30 cuộc khảo sát hạnh phúc từ 1946 đến 1970 ở 19 nước, và so sánh theo ba cách:". Lý do: Thêm cỡ mẫu theo bài gốc.'
-- id: n13
-  cau: 'Easterlin 1974 (kết quả): trong nước, nhóm địa vị cao nhất hạnh phúc hơn nhóm thấp nhất ở mọi cuộc khảo sát; giữa các nước chưa chắc có liên hệ; ở Mỹ từ 1946 hạnh phúc không đi cùng thu nhập.'
-  loai: phat-hien
-  nguon:
-  - easterlin1974
-  trich: whether any such positive association exists among countries at a given time is uncertain
-  vi_tri: tr. 117–118
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "**Kết quả.** Tại một thời điểm, người có thu nhập cao hơn hạnh phúc hơn — cả khi so sánh trong nước lẫn giữa các nước. Nhưng theo thời gian, khi một nước giàu lên, hạnh phúc trung bình không tăng theo.". Chữ mới: "**Kết quả.** Trong cùng một nước, ở mọi cuộc khảo sát, nhóm có địa vị (thu nhập) cao nhất hạnh phúc hơn nhóm thấp nhất. Nhưng giữa các nước tại một thời điểm, liệu có liên hệ dương hay không là chưa chắc: chênh lệch hạnh phúc giữa nước giàu và nước nghèo không như dự đoán từ chênh lệch trong nước. V". Lý do: Chữ cũ nói người giàu hạnh phúc hơn "cả giữa các nước": Easterlin 1974 viết "whether any such positive association exists among countries at a given time is uncertain".'
-- id: n14
-  cau: Easterlin cho rằng quan trọng là thu nhập tương đối/chuẩn so sánh và sự thích nghi; khi thu nhập cùng tăng, chuẩn cũng tăng.
-  loai: phat-hien
-  nguon:
-  - easterlin1974
-  trich: Over time, however, as economic conditions advance, so too does the social norm [...] these results are a testimony to the adaptability of mankind.
-  vi_tri: tr. 118–119
-  ket_qua: dung
-- id: n15
-  cau: 'Stevenson & Wolfers (2008): dùng Gallup World Poll, World Values Survey, Eurobarometer và các khảo sát khác.'
-  loai: phat-hien
-  nguon:
-  - sw2008
-  trich: Table 1 formalizes all of the analysis [...] using data from the Gallup World Poll, all four waves of the World Values Survey, and the Pew Global Attitudes
-  vi_tri: 'tr. 14; Eurobarometer: Hình 6'
-  ket_qua: dung
-  ghi_chu: Bản NBER; bản Brookings không mở được.
-- id: n16
-  cau: 'Stevenson & Wolfers: liên hệ dương, dạng log-tuyến tính giữa thu nhập và hạnh phúc trong nước và giữa các nước, không thấy điểm bão hòa.'
-  loai: phat-hien
-  nguon:
-  - sw2008
-  trich: we establish a clear positive link between average levels of subjective well-being and GDP per capita across countries, and find no evidence of a satiation point
-  vi_tri: 'tóm tắt; Hình trong nước: "linear relationship [...] with no evidence of satiation"'
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ".'
-- id: n17
-  cau: 'Stevenson & Wolfers: theo thời gian, tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu; Mỹ là ngoại lệ chưa giải thích được.'
-  loai: phat-hien
-  nguon:
-  - sw2008
-  trich: we find that happiness has in fact risen in Japan and Europe. The failure of happiness to rise in the United States remains a puzzling outlier
-  vi_tri: tr. 3
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ".'
-- id: n18
-  cau: 'Easterlin và cộng sự (2010): các phê phán cho là liên hệ dương theo thời gian là do sai sót thống kê hoặc lẫn quan hệ ngắn hạn với dài hạn.'
-  loai: phat-hien
-  nguon:
-  - easterlin2010
-  trich: Recent critiques of the paradox, claiming the time series relationship between happiness and income is positive, are the result either of a statistical artifact or a confusion of the short-term relationship with the long-term one.
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Chỉ đọc tóm tắt (PNAS); toàn văn không mở được.'
-- id: n19
-  cau: 'Nghiên cứu châu Âu năm 2026 (33 nước, European Social Survey, 177.948 người): GDP đi cùng cảm xúc tốt hơn giữa các nước và theo thời gian.'
-  loai: phat-hien
-  nguon:
-  - fors2026
-  trich: We found strong positive associations between GDP and both emotional well-being and life satisfaction across countries. Longitudinal mixed models showed positive associations between GDP and both well-being components over time.
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Chỉ đọc tóm tắt.'
-- id: n20
-  cau: Tính đến 11/2026, cuộc tranh luận về nghịch lý Easterlin vẫn chưa ngã ngũ.
-  loai: thoi-su
-  nguon:
-  - easterlin2010
-  - sw2008
-  - fors2026
-  vi_tri: so sánh các nguồn, 10/11/2026
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Lần tìm: Europe PMC 10/11/2026, "Easterlin paradox" (188 kết quả), đã xem đầu danh sách; thấy bài 2026 (Fors Connolly) cùng phía phản bác; không thấy tổng quan kết luận dứt khoát.'
-- id: n21
-  cau: 'Kahneman & Deaton (2010): hai nhà nghiên cứu ở Princeton.'
-  loai: lich-su
-  nguon:
-  - kd2010
-  trich: Center for Health and Well-being, Princeton University, Princeton, NJ 08544
-  vi_tri: tr. 1
-  ket_qua: dung
-- id: n22
-  cau: 'K&D 2010: hơn 450.000 phản hồi từ Gallup-Healthways Well-Being Index (2008–2009), khảo sát hằng ngày 1.000 người Mỹ.'
-  loai: so-lieu
-  nguon:
-  - kd2010
-  trich: more than 450,000 responses to the Gallup-Healthways Well-Being Index, a daily survey of 1,000 US residents conducted by the Gallup Organization [...] surveyed in 2008 and 2009
-  vi_tri: tr. 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index — khảo sát hằng ngày trên 1.000 người Mỹ được chọn ngẫu nhiên.". Chữ mới: "phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index (2008–2009) — khảo sát hằng ngày trên 1.000 người Mỹ.". Lý do: Bài gốc không nói "chọn ngẫu nhiên" trong phần đọc được.'
-- id: n23
-  cau: 'K&D 2010: hạnh phúc cảm xúc đo qua câu hỏi về cảm xúc hôm qua; đánh giá cuộc sống đo bằng thang Cantril 0–10.'
-  loai: cong-cu
-  nguon:
-  - kd2010
-  trich: Emotional well-being is assessed by questions about the presence of various emotions in the experience of yesterday
-  vi_tri: tr. 1
-  ket_qua: dung
-- id: n24
-  cau: 'K&D 2010: đánh giá cuộc sống tăng đều theo logarit thu nhập trên toàn dải thu nhập.'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  trich: the figure shows a fairly steady rise in life evaluation with log income over the entire range
-  vi_tri: tr. 3
-  ket_qua: dung
-- id: n25
-  cau: 'K&D 2010: hạnh phúc cảm xúc cũng tăng theo logarit thu nhập nhưng không cải thiện thêm sau khoảng 75.000 USD/năm.'
-  loai: so-lieu
-  nguon:
-  - kd2010
-  trich: We infer that beyond about $75,000/y, there is no improvement whatever in any of the three measures of emotional well-being.
-  vi_tri: tr. 3
-  ket_qua: dung
-- id: n26
-  cau: 'K&D 2010: thu nhập thấp làm trầm trọng thêm nỗi đau tinh thần khi gặp ly hôn, bệnh tật, sống một mình.'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  trich: the pain of some of life's misfortunes, including asthma, divorce, and being alone, is significantly exacerbated by poverty
-  vi_tri: tr. 3
-  ket_qua: dung
-- id: n27
-  cau: 'K&D 2010 kết luận: thu nhập cao "mua" được sự hài lòng với cuộc sống nhưng không mua được hạnh phúc cảm xúc.'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  trich: We conclude that high income buys life satisfaction but not happiness
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n28
-  cau: 75.000 USD chỉ là điểm giữa của nhóm thu nhập 60.000–90.000 USD; không có cải thiện thêm trên một ngưỡng ở hoặc dưới 90.000 USD.
-  loai: so-lieu
-  nguon:
-  - kkm2023
-  trich: The threshold of $75,000, which has been frequently quoted, is simply the midpoint of the "60 to 90K" income category. A more precise statement would be that there is no further progress in average happiness beyond a threshold at or below 90K.
-  vi_tri: tr. 1 (đoạn "Can money buy happiness?")
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nói chính xác hơn: không có cải thiện nào vượt qua ngưỡng *ở hoặc dưới* 90.000 USD.". Chữ mới: "Nói chính xác hơn: không có cải thiện thêm nào trên một ngưỡng *ở hoặc dưới* 90.000 USD.". Lý do: Chữ rõ nghĩa theo KKM 2023 ("no further progress ... beyond a threshold at or below 90K").'
-- id: n29
-  cau: Dữ liệu K&D là của người Mỹ giai đoạn 2008–2009.
-  loai: so-lieu
-  nguon:
-  - kd2010
-  trich: surveyed in 2008 and 2009
-  vi_tri: tr. 1
-  ket_qua: dung
-- id: n30
-  cau: Killingsworth (Wharton, ĐH Pennsylvania) cho rằng cách hỏi hôm qua phụ thuộc trí nhớ nên đo trực tiếp.
-  loai: lich-su
-  nguon:
-  - kill2021
-  trich: a measure of experienced well-being that may or may not be indicative of actual emotional experience (retrospective, dichotomous reports)
-  vi_tri: Significance; The Wharton School, University of Pennsylvania
-  ket_qua: dung
-- id: n31
-  cau: 'Killingsworth 2021: ứng dụng Track Your Happiness nhắc ngẫu nhiên (mặc định 3 lần/ngày, trong nhiều tuần), câu hỏi "How do you feel right now?" từ "Very bad" đến "Very good".'
-  loai: cong-cu
-  nguon:
-  - kill2021
-  - kkm2023
-  trich: participants' smartphones were signaled at randomly timed moments during their waking hours [...] "How do you feel right now?" on a continuous response scale with endpoints labeled "Very bad" and "Very good"
-  vi_tri: 'Killingsworth 2021, Methods; "typically three times per day for several weeks": KKM 2023'
-  ket_qua: dung
-- id: n32
-  cau: 'Killingsworth 2021: mẫu 33.391 người Mỹ có việc làm 18–65 tuổi, 1.725.994 báo cáo (thu nhập hộ từ 10.000 USD trở lên).'
-  loai: so-lieu
-  nguon:
-  - kill2021
-  trich: 1,725,994 experience-sampling reports from 33,391 employed US adults [...] ages 18 to 65 [...] who reported household incomes of at least $10,000/y
-  vi_tri: tóm tắt; Methods
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi**, tổng cộng **1.725.994 báo cáo**.". Chữ mới: "Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi** (thu nhập hộ gia đình từ 10.000 USD/năm trở lên), tổng cộng **1.725.994 báo cáo**.". Lý do: Thêm điều kiện chọn mẫu theo bài gốc.'
-- id: n33
-  cau: 'Killingsworth 2021: hạnh phúc trải nghiệm tăng tuyến tính theo logarit thu nhập, độ dốc trên 75.000–80.000 USD ngang độ dốc dưới đó; không có ngưỡng bão hòa.'
-  loai: phat-hien
-  nguon:
-  - kill2021
-  trich: experienced well-being rises linearly with log income, with an equally steep slope above $80,000 as below it
-  vi_tri: Significance; Bảng 1
-  ket_qua: dung
-- id: n34
-  cau: 'Killingsworth 2021: thu nhập cao hơn đi cùng cảm xúc tốt hơn ở cả mức thu nhập cao; đây là liên hệ cắt ngang, không chứng minh nhân quả; tương quan với log thu nhập khoảng 0,09.'
-  loai: so-lieu
-  nguon:
-  - kkm2023
-  trich: we are simply describing cross-sectional associations between happiness and income [...] The correlation between average happiness and log(income) is 0.09 in the experience sampling data
-  vi_tri: Results (KKM 2023)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Nói cách khác, với cách đo thời gian thực này, tiền vẫn "mua" được cảm xúc tốt hơn ở cả những mức thu nhập cao.". Chữ mới: "Nói cách khác, với cách đo thời gian thực này, thu nhập cao hơn vẫn đi cùng cảm xúc tốt hơn ở cả những mức thu nhập cao. Đây là mối liên hệ cắt ngang, không chứng minh nhân quả; và mối liên hệ này yếu (tương quan giữa hạnh phúc trung bình và log thu nhập chỉ khoảng 0,09 trong dữ liệu experience samp". Lý do: "Mua" ngụ ý nhân quả; bài KKM nêu rõ chỉ là cross-sectional associations và r = 0,09.'
-- id: n35
-  cau: 'Killingsworth 2021: cả hạnh phúc trải nghiệm và đánh giá cuộc sống tăng tuyến tính theo log thu nhập, không có ngưỡng mà hai thứ tách ra.'
-  loai: phat-hien
-  nguon:
-  - kill2021
-  trich: There was also no evidence of an income threshold at which experienced and evaluative well-being diverged
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n36
-  cau: Hai nghiên cứu dùng dữ liệu lớn; mâu thuẫn kéo dài đến bài hòa giải năm 2023.
-  loai: lich-su
-  nguon:
-  - kkm2023
-  trich: Two authors of the present paper have published contradictory answers.
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Mâu thuẫn này tồn tại suốt hai năm, cho đến khi chính hai "đối thủ" ngồi lại với nhau.". Chữ mới: "Mâu thuẫn này kéo dài cho đến khi chính hai "đối thủ" ngồi lại với nhau (bài hòa giải đăng năm 2023).". Lý do: "Suốt hai năm" không có nguồn chính xác.'
-- id: n37
-  cau: KKM 2023 là hợp tác đối kháng giữa Killingsworth và Kahneman, với Mellers làm người điều phối, phân tích lại dữ liệu experience-sampling của Killingsworth.
-  loai: lich-su
-  nguon:
-  - kkm2023
-  trich: We engaged in an adversarial collaboration and asked Barbara Mellers to be the facilitator.
-  vi_tri: Introduction
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "cùng với Barbara Mellers làm trọng tài, phân tích lại". Chữ mới: "cùng với Barbara Mellers làm người điều phối, phân tích lại". Lý do: Bài gốc gọi Mellers là facilitator.'
-- id: n38
-  cau: 'KKM 2023: với đa số, hạnh phúc tăng theo logarit thu nhập, không có ngưỡng; ở nhóm hạnh phúc nhất (phân vị 85) dốc hơn trên 100.000 USD.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: For the 85th percentile, the slope accelerates above 100k (P = 0.023). The slopes do not differ significantly in the remaining quantiles (30th, 50th, 70th)
-  vi_tri: Results
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "với nhóm hạnh phúc nhất, đường cong thậm chí còn *dốc hơn* trên 100.000 USD.". Chữ mới: "ở nhóm hạnh phúc nhất (phân vị 85), đường cong thậm chí còn *dốc hơn* trên 100.000 USD.". Lý do: Bài gốc: dốc hơn có ý nghĩa ở phân vị 85 (p = 0,023); phân vị 70 chỉ gần ý nghĩa.'
-- id: n39
-  cau: 'KKM 2023: ở nhóm khoảng 15–20% ít hạnh phúc nhất, hạnh phúc tăng theo thu nhập rồi chững ở khoảng 100.000 USD/năm.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: confirmed the flattening pattern only for the least happy people [...] The happiness of the least happy 15% rises quickly in the lower range of income, leveling off abruptly at $100,000
-  vi_tri: Abstract; Results; Bảng 1
-  ket_qua: dung
-  ghi_chu: Tóm tắt nói "least happy 20%" (phần Significance), thân bài 15–20%; trang giữ "20%". Ngưỡng 90K trong dữ liệu 2008–09 tương ứng khoảng 97K sau điều chỉnh lạm phát.
-- id: n40
-  cau: 'KKM 2023: ngưỡng 75.000 USD của năm 2010 "bắt" nhóm bất hạnh nhất rồi bị diễn giải thành quy luật chung.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: KD claimed that the flattening pattern applies to the happiness of the entire population when in fact it is restricted to the lowest 15 to 20% of the distribution.
-  vi_tri: Errors and Their Origins
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.". Chữ mới: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập". Lý do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024.'
-- id: n41
-  cau: 'KKM 2023: ngưỡng 100.000 USD có thể là mức mà những nỗi khổ còn lại (đau lòng, mất người thân) không được thu nhập thêm làm dịu; là suy đoán.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: This income threshold may represent the point beyond which the miseries that remain are not alleviated by high income. Heartbreak, bereavement, and clinical depression may be examples of such miseries.
-  vi_tri: Results
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.". Chữ mới: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập". Lý do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024.'
-- id: n42
-  cau: 'Năm 2024 hai bình luận trên PNAS (Rohrer & Wenz; Arslan) phê bình bài KKM; nhóm tác giả trả lời cùng năm: giả định nhân quả, và ngưỡng 100.000 USD lấy từ nghiên cứu 2010 chứ không ước lượng từ dữ liệu Killingsworth.'
-  loai: lich-su
-  nguon:
-  - rohrer2024
-  - arslan2024
-  - kkm2024
-  trich: The existence and location ($100,000) of a threshold was not estimated in Killingsworth's data but was based on Kahneman and Deaton.
-  vi_tri: 'Arslan 2024, đoạn đầu; Rohrer & Wenz 2024: tên bài "Inappropriate causal assumptions underlie Killingsworth, Kahneman, and Mellers'' conclusions"; trả lời: PNAS 121, e2322160121'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.". Chữ mới: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập". Lý do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024. Đọc toàn văn Arslan; Rohrer & Wenz chỉ đọc tóm tắt và tên bài (ghi cả hai nơi); phần "giả định nhân quả" theo tên bài của Rohrer & Wenz.'
-- id: n43
-  cau: 'Khung Đang tranh cãi (tổng thể): tiền có mua được hạnh phúc cảm xúc không?'
-  loai: nhan
-  nguon:
-  - easterlin2010
-  - sw2008
-  - kill2021
-  - kkm2023
-  - rohrer2024
-  - arslan2024
-  - fors2026
-  nhan: tranh-cai
-  co_so:
-  - kd2010
-  - kill2021
-  - kkm2023
-  - sw2008
-  - easterlin2010
-  - rohrer2024
-  - arslan2024
-  ly_do: 'Bằng chứng chất lượng cao mâu thuẫn nhau: Kahneman–Deaton 2010 (chững ở 75.000 USD) và Killingsworth 2021 (không chững); bài hòa giải 2023 giải thích bằng tính không đồng nhất nhưng bị bình luận năm 2024; nghịch lý Easterlin vẫn bị phản bác (Stevenson & Wolfers; nghiên cứu châu Âu 2026). Chưa có phân tích tổng hợp hay tái lập có đăng ký trước. Đúng mức Đang tranh cãi theo thước đo.'
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) mới chỉ được hòa giải năm 2023 trên dữ liệu người Mỹ. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.". Chữ mới: "Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) được hòa giải năm 2023 trên dữ liệu người Mỹ, và cách hòa giải ấy lại bị bình luận năm 2024. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.". Lý do: Thêm bình luận 2024 và "mới chỉ" thành "được".'
-- id: n44
-  cau: 'Khung Khá vững: hạnh phúc cảm xúc và đánh giá cuộc sống là hai thứ khác nhau, có yếu tố ảnh hưởng khác nhau.'
-  loai: nhan
-  nguon:
-  - kd2010
-  - kill2021
-  nhan: kha-vung
-  co_so:
-  - kd2010
-  - kill2021
-  ly_do: Nhiều nghiên cứu cùng chiều (Kahneman & Deaton 2010, Kahneman 2004, Schimmack 2008 ở trang Hạnh phúc có đo được không?) nhưng chưa có phân tích tổng hợp; mẫu chủ yếu Mỹ và Đức; Killingsworth 2021 không thấy hai thứ tách ra theo thu nhập. Khá vững theo thước đo.
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Sự phân biệt này được lặp lại qua nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau. Đây là phần vững chắc nhất của cả câu chuyện.". Chữ mới: "Sự phân biệt này được thấy trong nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau (Kahneman và Deaton, 2010; Kahneman và cộng sự, 2004). Riêng với thu nhập, Killingsworth (2021) không thấy mức thu nhập nào mà hai thứ tách ra. Đây l". Lý do: "Phần vững chắc nhất" vượt nhãn Khá vững; thêm điểm Killingsworth 2021 không thấy tách rời theo thu nhập.'
-- id: n45
-  cau: 'Khung: trong nghiên cứu 2021, không có mức thu nhập nào mà hạnh phúc cảm xúc và đánh giá cuộc sống tách ra.'
-  loai: phat-hien
-  nguon:
-  - kill2021
-  trich: There was also no evidence of an income threshold at which experienced and evaluative well-being diverged
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Sự phân biệt này được lặp lại qua nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau. Đây là phần vững chắc nhất của cả câu chuyện.". Chữ mới: "Sự phân biệt này được thấy trong nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau (Kahneman và Deaton, 2010; Kahneman và cộng sự, 2004). Riêng với thu nhập, Killingsworth (2021) không thấy mức thu nhập nào mà hai thứ tách ra. Đây l". Lý do: "Phần vững chắc nhất" vượt nhãn Khá vững; thêm điểm Killingsworth 2021 không thấy tách rời theo thu nhập.'
-- id: n46
-  cau: 'Khung Đang tranh cãi: con số 75.000 USD — điểm giữa nhóm thu nhập, dữ liệu Mỹ 2008–2009; theo phân tích 2023 chỉ mô tả nhóm 15–20% ít hạnh phúc nhất; bị bình luận 2024.'
-  loai: nhan
-  nguon:
-  - kkm2023
-  - arslan2024
-  nhan: tranh-cai
-  co_so:
-  - kkm2023
-  - arslan2024
-  - rohrer2024
-  ly_do: 'Bằng chứng mâu thuẫn: nghiên cứu gốc và nghiên cứu thời gian thực, được hòa giải bằng phân tích một nhóm tác giả rồi bị bình luận; xếp Đang tranh cãi.'
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, nó chỉ mô tả đúng nhóm 20% ít hạnh phúc nhất.". Chữ mới: "Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, hiện tượng chững lại chỉ có ở nhóm 15–20% ít hạnh phúc nhất (cách xác định ngưỡng này bị bình luận năm 2024).". Lý do: Bài gốc nói 15% (phân vị) đến 20%; thêm bình luận 2024.'
-- id: n47
-  cau: 'Lý thuyết thích nghi: con người quen nhanh với mức sống mới; kỳ vọng leo thang.'
-  loai: phat-hien
-  nguon:
-  - easterlin1974
-  trich: Income and aspirations in time and space tend to go together
-  vi_tri: tr. 119
-  ket_qua: dung
-  ghi_chu: 'K&D 2010 cũng nêu thích nghi: "The pleasure of a raise is likely to be transient, however, due to a phenomenon known as adaptation".'
-- id: n48
-  cau: 'Lý thuyết so sánh xã hội: hạnh phúc phụ thuộc vị trí tương đối; thu nhập cả xã hội cùng tăng thì thứ bậc không đổi.'
-  loai: phat-hien
-  nguon:
-  - easterlin1974
-  trich: a Duesenberry-type model, involving relative status considerations as an important determinant of happiness
-  vi_tri: tr. 118
-  ket_qua: dung
-  ghi_chu: Stevenson & Wolfers kết luận vai trò của thu nhập tương đối "more limited"; nêu như một cách giải thích bị tranh cãi.
-- id: n49
-  cau: 'Lý thuyết logarit: cả ba nghiên cứu hiện đại thấy hạnh phúc tăng theo logarit thu nhập (ít nhất ở một dải); tăng 20.000→60.000 tương đương 60.000→180.000.'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  - kill2021
-  - kkm2023
-  trich: Plots of subjective well-being against income in dollars invariably yield a strongly concave function. [...] a doubling of their respective incomes might have a similar impact on both.
-  vi_tri: K&D 2010, tr. 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập: tăng". Chữ mới: "Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập: tăng". Lý do: Kahneman & Deaton thấy cảm xúc chững lại ở ~75.000 USD. Ví dụ số (tăng gấp ba mỗi bước) là phép tính của trang: 60/20 = 180/60 = 3.'
-- id: n50
-  cau: 'Lý thuyết xóa khổ: ở thu nhập thấp tiền giải quyết nỗi khổ cụ thể (nhà, thuốc, bất an).'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  trich: Low income exacerbates the emotional pain associated with such misfortunes as divorce, ill health, and being alone.
-  vi_tri: tóm tắt
-  ket_qua: dung
-  ghi_chu: Ví dụ "lo tiền nhà, tiền thuốc" là minh họa của trang, không phải số liệu K&D; K&D chỉ nói thu nhập thấp làm nặng thêm nỗi đau khi gặp biến cố.
-- id: n51
-  cau: 'Lý thuyết xóa khổ: những nỗi khổ còn lại không đáp ứng với thu nhập thêm là cách giải thích của bài 2023, nêu như suy đoán.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: This income threshold may represent the point beyond which the miseries that remain are not alleviated by high income.
-  vi_tri: Results
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại — cô đơn, bệnh tật, xung đột, cảm giác vô nghĩa — không đáp ứng với thu nhập thêm. Đây chính là lời giải của bài báo 2023 cho nhóm 20% ít hạnh phúc nhất.". Chữ mới: "Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại không đáp ứng với thu nhập thêm: bài báo 2023 đề xuất cách giải thích này cho nhóm ít hạnh phúc nhất và nêu ví dụ đau lòng, mất người thân; đây là suy đoán của các tác giả, chưa được kiểm tra.". Lý do: Danh sách "cô đơn, bệnh tật, xung đột, vô nghĩa" không có trong bài 2023; bài nêu heartbreak, bereavement, clinical depression như ví dụ có thể có, và chỉ là suy đoán.'
-- id: n52
-  cau: 'Áp dụng 1 (nhãn Đang tranh cãi): đừng coi 75.000 USD là ngưỡng hạnh phúc của bạn; số này từ dữ liệu Mỹ hơn một thập kỷ trước; theo phân tích mới nhất chỉ mô tả nhóm 20% ít hạnh phúc nhất.'
-  loai: nhan
-  nguon:
-  - kd2010
-  - kkm2023
-  - arslan2024
-  nhan: tranh-cai
-  co_so:
-  - kkm2023
-  - arslan2024
-  ly_do: Như khung 75.000 USD của phần Mức độ chắc chắn; lời khuyên không dùng con số làm ngưỡng cá nhân là phản ứng thận trọng với nhãn Đang tranh cãi.
-  ket_qua: dung
-- id: n53
-  cau: 'Áp dụng 1: 75.000 USD không phải công thức cho cá nhân, càng không áp được sang thu nhập ở Việt Nam.'
-  loai: loi-khuyen
-  nguon:
-  - kd2010
-  trich: Our data speak only to differences
-  vi_tri: tr. 4 (Discussion)
-  ket_qua: dung
-  ghi_chu: Câu thận trọng, suy luận từ việc dữ liệu là của người Mỹ; có nhãn Đang tranh cãi.
-- id: n54
-  cau: 'Áp dụng 2 (nhãn Đang tranh cãi): ở thu nhập thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất, chưa chứng minh nhân quả.'
-  loai: nhan
-  nguon:
-  - kd2010
-  - kill2021
-  - kkm2023
-  nhan: tranh-cai
-  co_so:
-  - kd2010
-  - kill2021
-  - kkm2023
-  ly_do: Cả ba nghiên cứu chỉ mô tả liên hệ cắt ngang, nên chưa chứng minh nhân quả; nhãn theo chủ đề.
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "### 2. Nếu thu nhập còn thấp, tăng thu nhập là một trong những cách cải thiện tinh thần hiệu quả nhất :nhan[tranh-cai]". Chữ mới: "### 2. Nếu thu nhập còn thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất (chưa chứng minh nhân quả) :nhan[tranh-cai] { #2-neu-thu-nhap-con-thap-tang-thu-nhap-la-mot-trong-nhung-cach-cai-thien-tinh-than-hieu-qua-nhat-tranh-cai }". Lý do: Tiêu đề cũ ngụ ý nhân quả và "hiệu quả nhất" không có nguồn; giữ id cũ.'
-- id: n55
-  cau: 'Áp dụng 2: cả ba nghiên cứu thấy hạnh phúc tăng theo logarit thu nhập nên mức tăng theo đô la lớn nhất ở thu nhập thấp; thu nhập thấp làm nặng thêm nỗi đau khi gặp biến cố.'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  - kill2021
-  - kkm2023
-  trich: Low income exacerbates the emotional pain associated with such misfortunes as divorce, ill health, and being alone.
-  vi_tri: K&D 2010, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.". Chữ mới: "Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (ngư". Lý do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang.'
-- id: n56
-  cau: 'Áp dụng 2: cả ba chỉ mô tả mối liên hệ cắt ngang, không chứng minh tăng thu nhập làm tinh thần tốt lên.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: we are simply describing cross-sectional associations between happiness and income (just as KD and MK did)
-  vi_tri: Results (KKM 2023)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.". Chữ mới: "Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (ngư". Lý do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang.'
-- id: n57
-  cau: 'Áp dụng 2: "tiền không mua được hạnh phúc" là câu nói xa xỉ, ít đúng nhất với người thiếu tiền (diễn giải thận trọng).'
-  loai: loi-khuyen
-  nguon:
-  - kd2010
-  trich: low income is associated both with low life evaluation and low emotional well-being
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.". Chữ mới: "Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (ngư". Lý do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang. Lời khuyên đời thường, nhãn Đang tranh cãi.'
-- id: n58
-  cau: 'Áp dụng 3 (nhãn Đang tranh cãi): khi đã đủ sống, hạnh phúc cảm xúc của đa số vẫn tăng theo thu nhập nhưng chậm dần (logarit); nhóm bất hạnh nhất không còn giúp trên khoảng 100.000 USD/năm.'
-  loai: nhan
-  nguon:
-  - kkm2023
-  nhan: tranh-cai
-  co_so:
-  - kkm2023
-  - arslan2024
-  ly_do: Dựa vào bài hòa giải 2023 đang bị bình luận.
-  ket_qua: dung
-- id: n59
-  cau: 'Áp dụng 3: với đa số, hạnh phúc cảm xúc vẫn tăng theo logarit thu nhập; với nhóm bất hạnh nhất không tăng trên khoảng 100.000 USD/năm.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: Happiness increases steadily with log(income) among happier people, and even accelerates in the happiest group.
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n60
-  cau: 'Áp dụng 3: nguyên nhân bất hạnh khi đã đủ đầy có thể nằm ở những thứ thu nhập thêm không chạm tới (đau lòng, mất người thân); suy đoán của các tác giả; nếu kéo dài, xem trang Hỗ trợ.'
-  loai: loi-khuyen
-  nguon:
-  - kkm2023
-  trich: Heartbreak, bereavement, and clinical depression may be examples of such miseries.
-  vi_tri: Results
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân nhiều khả năng nằm ở những thứ tiền không chạm tới: các mối quan hệ, sức khỏe, cảm giác có ý nghĩa.". Chữ mới: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ.". Lý do: Chữ cũ "nhiều khả năng" và liệt kê quan hệ, sức khỏe, ý nghĩa không có nguồn; thêm dẫn tới Hỗ trợ. Không phải chẩn đoán hay lời khuyên điều trị; dẫn tới Hỗ trợ.'
-- id: n61
-  cau: Link tới trang Hỗ trợ (/psyche/ho-tro/) ở mục Áp dụng 3.
-  loai: ve-site
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân nhiều khả năng nằm ở những thứ tiền không chạm tới: các mối quan hệ, sức khỏe, cảm giác có ý nghĩa.". Chữ mới: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ.". Lý do: Chữ cũ "nhiều khả năng" và liệt kê quan hệ, sức khỏe, ý nghĩa không có nguồn; thêm dẫn tới Hỗ trợ. Đã kiểm: id ho-tro có trong src/data/trang.yml; trang chưa có trong worktree này (cần lên trước khi khóa); câu chỉ dẫn, không chẩn đoán.'
-- id: n62
-  cau: 'Việt Nam: tính đến 11/2026 chưa thấy nghiên cứu về mối quan hệ thu nhập–hạnh phúc trên người Việt.'
-  loai: thoi-su
-  nguon:
-  - tim-vn-tien
-  vi_tri: Europe PMC, 10/11/2026
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "**Chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt**, và không suy diễn từ dữ liệu Mỹ sang Việt Nam.". Chữ mới: "Tính đến 11/2026, **chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt** (lần tìm chưa hệ thống: Europe PMC, chưa tìm tạp chí trong nước), và không suy diễn từ dữ liệu Mỹ sang Việt Nam.". Lý do: Thêm mốc và nêu rõ phạm vi lần tìm.'
-- id: n63
-  cau: 'Việt Nam: mọi con số (75.000, 100.000 USD) đều từ khảo sát người Mỹ; cấu trúc thu nhập, chi phí, chuẩn mực ở Việt Nam khác nên không áp được sang VND.'
-  loai: phat-hien
-  nguon:
-  - kd2010
-  - kkm2023
-  trich: Participants were 33,391 employed adults living in the United States.
-  vi_tri: KKM 2023, Materials and Methods
-  ket_qua: dung
-  ghi_chu: Phần "khác hẳn" ở Việt Nam là suy luận chung, không có số liệu; đã ghi "không suy diễn".
-- id: n64
-  cau: 'Việt Nam: dữ liệu experience-sampling của Killingsworth (2021) và 2023 chỉ gồm người Mỹ có việc làm 18–65 tuổi.'
-  loai: phat-hien
-  nguon:
-  - kill2021
-  - kkm2023
-  trich: 33,391 employed US adults
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n65
-  cau: 'Việt Nam: chưa thấy bản sao thiết kế experience-sampling thu nhập–cảm xúc ở châu Á hay Việt Nam (tính đến 11/2026).'
-  loai: thoi-su
-  nguon:
-  - tim-es-vn
-  vi_tri: Europe PMC, 10/11/2026
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chưa có bản sao nào của thiết kế này ở châu Á hay Việt Nam.". Chữ mới: "chưa thấy bản sao nào của thiết kế này ở châu Á hay Việt Nam (tính đến 11/2026; lần tìm chưa hệ thống).". Lý do: Câu phủ định cần mốc và nói rõ phạm vi tìm.'
-- id: n66
-  cau: 'Phía ủng hộ nghịch lý có dữ liệu 37 nước (Easterlin và cộng sự 2010; bản thảo: 12–34 năm, trung bình 22 năm).'
-  loai: so-lieu
-  nguon:
-  - easterlin2010
-  trich: For a worldwide sample of 37 countries with intermittent life satisfaction data (1-10 scale) for periods ranging from 12 to 34 years (mean=22) up to 2005
-  vi_tri: bản thảo IZA DP 5799, tr. 6
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS, mỗi nước theo dõi trung bình 22 năm);". Chữ mới: "Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS; theo bản thảo IZA, mỗi nước được theo dõi từ 12 đến 34 năm, trung bình 22 năm);". Lý do: Số theo bản thảo IZA DP 5799 (bản PNAS không mở được toàn văn). Số lấy từ bản thảo IZA; bản PNAS chưa mở được toàn văn, nên chưa xác nhận số trong bản in.'
-- id: n67
-  cau: Phía phản bác (Stevenson & Wolfers) dùng Gallup World Poll và World Values Survey bao phủ nhiều nước; hai bên đều dùng câu hỏi khảo sát tổng thể, không phải đo thời gian thực.
-  loai: phat-hien
-  nguon:
-  - sw2008
-  trich: 'These surveys typically involve questions probing happiness or life satisfaction. The World Values Survey, for example, asks, "Taking all things together, would you say you are: very happy; quite happy; not very happy; not at all happy?"'
-  vi_tri: tr. 4
-  ket_qua: dung
-  ghi_chu: Câu "cả hai bên đều không đo thời gian thực" là suy luận từ mô tả dữ liệu; Easterlin 2010 dùng dữ liệu life satisfaction/happiness tổng thể (IZA DP).
-- id: n68
-  cau: 'Ngộ nhận 1: "trên 75.000 USD tiền không làm hạnh phúc hơn" sai ở ba điểm (điểm giữa nhóm 60–90k Mỹ 2008–09; chỉ cho hạnh phúc cảm xúc, đánh giá cuộc sống vẫn tăng; theo 2023 chỉ nhóm 20% ít hạnh phúc nhất).'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  - kd2010
-  trich: The threshold of $75,000, which has been frequently quoted, is simply the midpoint of the "60 to 90K" income category.
-  vi_tri: KKM 2023; K&D 2010, tr. 3
-  ket_qua: dung
-- id: n69
-  cau: 'Ngộ nhận 2: nghịch lý Easterlin nói về hạnh phúc giữa các nước và theo tăng trưởng GDP, không phủ nhận người giàu hơn hạnh phúc hơn trong cùng một nước.'
-  loai: phat-hien
-  nguon:
-  - easterlin1974
-  trich: Within countries there is a noticeable positive association between income and happiness—in every single survey
-  vi_tri: tr. 117
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Sai: nghịch lý nói về *tăng trưởng GDP theo thời gian*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán.". Chữ mới: "Sai: nghịch lý nói về hạnh phúc giữa các nước và *theo tăng trưởng GDP*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán (trong mọi cuộc khảo sát của Easterlin 1974).". Lý do: Chính xác hơn theo bài gốc.'
-- id: n70
-  cau: 'Ngộ nhận 3: với nhóm bất hạnh nhất đường cong chững trên khoảng 100.000 USD; cả ba nghiên cứu chỉ mô tả liên hệ cắt ngang.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: The suffering of the unhappy group diminishes as income increases up to 100k but very little beyond that.
-  vi_tri: Results
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và không nghiên cứu nào trong số này đo khả năng của tiền trong việc chữa lành những nỗi khổ không mang tính vật chất.". Chữ mới: "với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và cả ba nghiên cứu chỉ mô tả mối liên hệ cắt ngang, không chứng minh tiền gây ra hạnh phúc.". Lý do: Câu cũ không có nguồn; bài KKM nêu rõ chỉ là cross-sectional associations.'
-- id: n71
-  cau: 'Đọc thêm: liên kết tới "Hạnh phúc có đo được không?" và "Cháy hết mình là gì?".'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm: hai trang có trong src/data/trang.yml và thư mục kham-pha/hanh-phuc.'
-- id: n72
-  cau: 'Hộp "Tóm tắt nhanh" (::tom-tat): dựng từ ba khung nhãn của trang (Đang tranh cãi: tiền có mua được hạnh phúc cảm xúc không; Khá vững: hai thứ khác nhau; Đang tranh cãi: 75.000 USD).'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm: trang có ba khung :::tranh-cai, :::kha-vung, :::tranh-cai; tiêu đề khung không đổi.'
-- id: n73
-  cau: 'Câu hỏi 1: khác biệt cốt lõi giữa hạnh phúc cảm xúc và đánh giá cuộc sống; giải thích: Kahneman và Deaton tách vì chúng có yếu tố ảnh hưởng khác nhau.'
-  loai: dinh-nghia
-  nguon:
-  - kd2010
-  trich: We find that emotional well-being (measured by questions about emotional experiences yesterday) and life evaluation (measured by Cantril's Self-Anchoring Scale) have different correlates.
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n74
-  cau: 'Câu hỏi 2: K&D đo hạnh phúc cảm xúc bằng câu hỏi về cảm xúc hôm qua; thang 0–10 (Cantril) đo đánh giá cuộc sống.'
-  loai: cong-cu
-  nguon:
-  - kd2010
-  trich: Emotional well-being is assessed by questions about the presence of various emotions in the experience of yesterday
-  vi_tri: tr. 1
-  ket_qua: dung
-- id: n75
-  cau: 'Câu hỏi 3: 75.000 USD là điểm giữa nhóm thu nhập 60.000–90.000 USD trong dữ liệu Mỹ 2008–2009; phương án nhiễu: trung vị hộ gia đình Mỹ 2008 (52.000 USD, không phải 75.000).'
-  loai: so-lieu
-  nguon:
-  - kkm2023
-  - kd2010
-  trich: mean (median) US household income was $71,500 ($52,000) in 2008
-  vi_tri: K&D 2010, tr. 4 (Discussion); KKM 2023 tr. 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "- Mức thu nhập trung bình của người Mỹ năm 2010.". Chữ mới: "- Mức thu nhập trung vị của hộ gia đình Mỹ năm 2008.". Lý do: Phương án nhiễu cũ gần với số thật (thu nhập trung bình hộ Mỹ 2008 là 71.500 USD theo K&D 2010, gần 75.000); đổi sang trung vị (52.000 USD) để phương án chắc chắn sai.'
-- id: n76
-  cau: 'Câu hỏi 4: theo KKM 2023, mô hình chững chỉ đúng với nhóm 20% ít hạnh phúc nhất, ngưỡng khoảng 100.000 USD/năm; kết quả 2010 và 2021 mô tả những nhóm khác nhau.'
-  loai: phat-hien
-  nguon:
-  - kkm2023
-  trich: A reanalysis of Killingsworth's experienced sampling data confirmed the flattening pattern only for the least happy people.
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n77
-  cau: 'Câu hỏi 5: chủ đề gắn nhãn Đang tranh cãi vì nghịch lý Easterlin vẫn bị phản bác và mâu thuẫn 2010–2021 mới được hòa giải trên dữ liệu người Mỹ.'
-  loai: nhan
-  nguon:
-  - kkm2023
-  - sw2008
-  nhan: tranh-cai
-  co_so:
-  - kkm2023
-  - sw2008
-  ly_do: Như khung Đang tranh cãi (tổng thể).
-  ket_qua: dung
-- id: n78
-  cau: 'Mục Nguồn: Easterlin 1974 là chương trong sách do David & Reder biên tập (tr. 89–125, Academic Press); bản trước ghi "New York: Academic Press" không đủ.'
-  loai: lich-su
-  nguon:
-  - easterlin1974
-  trich: Reprinted from Nations and Households in Economic Growth Essays in Honor of Moses Abramovitz (P. A. David and M W. Reder, eds.), Richard A. Easterlin, Does Economic Growth Improve the Human Lot? Some Empirical Evidence, Pages 89-125, Academic Press (1974)
-  vi_tri: trang 2 bản MPRA
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. New York: Academic Press.". Chữ mới: "- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. In P. A. David & M. W. Reder (Eds.), *Nations and households in economic growth* (pp. 89–125). New York: Academic Press. <https://doi.org/10.1016/B978-0-12-205050-3.50008-7>". Lý do: Sách do David & Reder biên tập; thêm DOI.'
-- id: n79
-  cau: 'Mục Nguồn: các bài PNAS 2010, 2021, 2023 có số tập và DOI đúng (kiểm Crossref/PMC).'
-  loai: lich-su
-  nguon:
-  - kd2010
-  - kill2021
-  - kkm2023
-  trich: Kahneman and Deaton [Proc. Natl. Acad. Sci. U.S.A. 107, 16489–93 (2010)] [...] Killingsworth [Proc. Natl. Acad. Sci. U.S.A. 118, e2016976118 (2021)]
-  vi_tri: KKM 2023, Significance
-  ket_qua: dung
-  ghi_chu: 'Số tập và DOI khớp bài gốc (K&D 2010: 107(38); Killingsworth 2021: 118(4); KKM 2023: 120(10), e2208661120).'
+  - id: n1
+    cau: 'Mô tả trang: nghịch lý Easterlin, ngưỡng 75.000 USD của Kahneman và Deaton, lời hòa giải năm 2023 về tiền và hạnh phúc cảm xúc.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: 'Income and emotional well-being: A conflict resolved'
+    vi_tri: tên bài, PNAS 120(10) (2023)
+    ket_qua: dung
+  - id: n2
+    cau: 'Việc 1: thang Cantril 0 (tệ nhất) đến 10 (tốt nhất) đo đánh giá cuộc sống; câu hỏi cảm xúc hôm qua đo cảm xúc.'
+    loai: cong-cu
+    nguon:
+      - kd2010
+    trich: Life evaluation is measured using Cantril's Self-Anchoring Scale, which has the respondent rate his or her current life on a ladder scale in which 0 is "the worst possible life for you" and 10 is "the best possible life for you."
+    vi_tri: tr. 1
+    ket_qua: dung
+  - id: n3
+    cau: 'Việc 2 (đáp án thu gọn): nghiên cứu năm 2010 trả lời khoảng 75.000 USD/năm cho cảm xúc hằng ngày của người Mỹ; con số gây tranh cãi hơn một thập kỷ.'
+    loai: phat-hien
+    nguon:
+      - kd2010
+      - kkm2023
+    trich: Emotional well-being also rises with log income, but there is no further progress beyond an annual income of ~$75,000.
+    vi_tri: 'K&D 2010, tóm tắt; tranh cãi: Killingsworth 2021, KKM 2023'
+    ket_qua: dung
+  - id: n4
+    cau: Nghịch lý về tiền và hạnh phúc làm đau đầu các nhà kinh tế hơn nửa thế kỷ (từ 1974).
+    loai: lich-su
+    nguon:
+      - easterlin1974
+    trich: Does Economic Growth Improve the Human Lot? Some Empirical Evidence
+    vi_tri: Easterlin 1974, tr. 89
+    ket_qua: dung
+  - id: n5
+    cau: 'Nhìn ngang: trong cùng một nước, người giàu hơn thường hạnh phúc hơn.'
+    loai: phat-hien
+    nguon:
+      - easterlin1974
+    trich: in every single survey, those in the highest status group were happier, on the average, than those in the lowest status group
+    vi_tri: tr. 117 (mục 4)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1353/eca.0.0001", "https://doi.org/10.1016/B978-0-12-205050-3.50008-7" ]
+    luot_2_ghi_chu: 'Đúng: "thường" là cách nói phù hợp (trung bình, trong khảo sát).'
+  - id: n6
+    cau: 'Nhìn dọc: theo Easterlin, hạnh phúc trung bình không tăng khi GDP tăng; kết luận bị tranh cãi.'
+    loai: phat-hien
+    nguon:
+      - easterlin1974
+      - sw2008
+    trich: in the one national time series studied, that for the United States since 1946, higher income was not systematically accompanied by greater happiness
+    vi_tri: 'Easterlin 1974, tr. 118; phản biện: Stevenson & Wolfers 2008 tr. 3'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "- **Nhìn dọc (theo thời gian):** khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân lại không tăng theo.". Chữ mới: "- **Nhìn dọc (theo thời gian):** theo Easterlin, khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân không tăng theo (kết luận này bị tranh cãi, xem dưới).". Lý do: Câu cũ nêu kết luận của Easterlin như sự thật; Stevenson & Wolfers (2008) thấy hạnh phúc tăng ở Nhật và châu Âu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chữ cuối khớp: Easterlin 1974 nói ở Mỹ từ 1946 thu nhập cao hơn không đi cùng hạnh phúc cao hơn; Stevenson & Wolfers phản biện; nêu rõ là bị tranh cãi.'
+    review: dung
+  - id: n7
+    cau: 'Nghịch lý Easterlin: theo tên Richard Easterlin, nêu năm 1974.'
+    loai: lich-su
+    nguon:
+      - sw2008
+    trich: In several papers Richard Easterlin has examined the relationship between happiness and GDP [...] (1974, 1995, 2005a, 2005b)
+    vi_tri: S&W 2008, tr. 1
+    ket_qua: dung
+    ghi_chu: Bài Easterlin 1974 đã đọc; tên "nghịch lý Easterlin" do người sau đặt (S&W 2008 gọi là "Easterlin paradox").
+  - id: n8
+    cau: 'Kahneman và Deaton tách hạnh phúc cảm xúc (chất lượng cảm xúc trải nghiệm hằng ngày: niềm vui, căng thẳng, nỗi buồn, cơn giận) khỏi đánh giá cuộc sống (suy nghĩ khi nghĩ về cuộc đời mình).'
+    loai: dinh-nghia
+    nguon:
+      - kd2010
+    trich: Emotional well-being refers to the emotional quality of an individual's everyday experience—the frequency and intensity of experiences of joy, stress, sadness, anger, and affection [...] Life evaluation refers to the thoughts that people have about their life when they think about it.
+    vi_tri: tr. 1, tóm tắt
+    ket_qua: dung
+  - id: n9
+    cau: 'Hai thứ liên quan yếu: các thang cảm xúc và thang Cantril tương quan đều dưới 0,31 trong dữ liệu Gallup.'
+    loai: so-lieu
+    nguon:
+      - kd2010
+    trich: The correlations between the emotional well-being measures and the ladder values had the expected sign but were modest in size (all <0.31).
+    vi_tri: tr. 2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Phần lớn tranh cãi về tiền và hạnh phúc, như ta sẽ thấy, xuất phát từ việc lẫn lộn hai khái niệm này.". Chữ mới: "Hai thứ này liên quan yếu: trong dữ liệu Gallup, các thang cảm xúc và thang Cantril tương quan với nhau đều dưới 0,31. Một phần tranh cãi về tiền và hạnh phúc xuất phát từ việc lẫn lộn hai khái niệm này; còn mâu thuẫn giữa kết quả năm 2010 và 2021, như ta sẽ thấy, nảy sinh ở cách đo và cách phân tíc". Lý do: Câu cũ "phần lớn tranh cãi" không có nguồn; bài hòa giải 2023 tìm nguyên nhân ở thang đo (hiệu ứng trần) và giả định đồng nhất, không phải lẫn hai khái niệm. Thêm số tương quan từ K&D 2010. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp K&D 2010 (tương quan có chiều đúng nhưng khiêm tốn, đều dưới 0,31).'
+    review: dung
+  - id: n10
+    cau: Một phần tranh cãi xuất phát từ việc lẫn lộn hai khái niệm; mâu thuẫn 2010–2021 nảy sinh ở cách đo và phân tích cùng một khía cạnh cảm xúc.
+    loai: phat-hien
+    nguon:
+      - kd2010
+      - kkm2023
+    trich: A discussion of subjective well-being must recognize a distinction between two concepts that are often confounded
+    vi_tri: K&D 2010, tr. 1; KKM 2023 (We agreed that KD and MK had attempted to measure the same construct of emotional well-being)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Phần lớn tranh cãi về tiền và hạnh phúc, như ta sẽ thấy, xuất phát từ việc lẫn lộn hai khái niệm này.". Chữ mới: "Hai thứ này liên quan yếu: trong dữ liệu Gallup, các thang cảm xúc và thang Cantril tương quan với nhau đều dưới 0,31. Một phần tranh cãi về tiền và hạnh phúc xuất phát từ việc lẫn lộn hai khái niệm này; còn mâu thuẫn giữa kết quả năm 2010 và 2021, như ta sẽ thấy, nảy sinh ở cách đo và cách phân tíc". Lý do: Câu cũ "phần lớn tranh cãi" không có nguồn; bài hòa giải 2023 tìm nguyên nhân ở thang đo (hiệu ứng trần) và giả định đồng nhất, không phải lẫn hai khái niệm. Thêm số tương quan từ K&D 2010. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích; chữ trang tách rõ phần tranh cãi do lẫn hai khái niệm với phần mâu thuẫn 2010–2021 do cách đo và phân tích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107", "https://doi.org/10.1073/pnas.2208661120" ]
+    luot_2_ghi_chu: Đúng. KKM quy kết bất đồng cho cách đo (câu hỏi có/không so với thang liên tục) và giả định phân tích.
+    review: dung
+  - id: n11
+    cau: 'Ví dụ: có thể chấm cuộc đời 8/10 mà hôm qua là một ngày đầy căng thẳng.'
+    loai: loi-khuyen
+    nguon:
+      - kd2010
+    ket_qua: dung
+    ghi_chu: 'gia-dinh: ví dụ minh họa; hợp với tương quan yếu (n9).'
+  - id: n12
+    cau: 'Easterlin 1974: 30 cuộc khảo sát từ 1946 đến 1970, 19 nước; so sánh trong nước, giữa các nước, theo thời gian.'
+    loai: so-lieu
+    nguon:
+      - easterlin1974
+    trich: thirty surveys from 1946 through 1970, covering nineteen countries, including eleven in Asia, Africa, and Latin America
+    vi_tri: tr. 117
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Easterlin so sánh dữ liệu hạnh phúc theo ba cách:". Chữ mới: "Easterlin tổng hợp 30 cuộc khảo sát hạnh phúc từ 1946 đến 1970 ở 19 nước, và so sánh theo ba cách:". Lý do: Thêm cỡ mẫu theo bài gốc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Số khớp trích Easterlin 1974 (30 khảo sát, 1946–1970, 19 nước).'
+    review: dung
+  - id: n13
+    cau: 'Easterlin 1974 (kết quả): trong nước, nhóm địa vị cao nhất hạnh phúc hơn nhóm thấp nhất ở mọi cuộc khảo sát; giữa các nước chưa chắc có liên hệ; ở Mỹ từ 1946 hạnh phúc không đi cùng thu nhập.'
+    loai: phat-hien
+    nguon:
+      - easterlin1974
+    trich: whether any such positive association exists among countries at a given time is uncertain
+    vi_tri: tr. 117–118
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "**Kết quả.** Tại một thời điểm, người có thu nhập cao hơn hạnh phúc hơn — cả khi so sánh trong nước lẫn giữa các nước. Nhưng theo thời gian, khi một nước giàu lên, hạnh phúc trung bình không tăng theo.". Chữ mới: "**Kết quả.** Trong cùng một nước, ở mọi cuộc khảo sát, nhóm có địa vị (thu nhập) cao nhất hạnh phúc hơn nhóm thấp nhất. Nhưng giữa các nước tại một thời điểm, liệu có liên hệ dương hay không là chưa chắc: chênh lệch hạnh phúc giữa nước giàu và nước nghèo không như dự đoán từ chênh lệch trong nước. V". Lý do: Chữ cũ nói người giàu hạnh phúc hơn "cả giữa các nước": Easterlin 1974 viết "whether any such positive association exists among countries at a given time is uncertain". Review (Claude Sonnet 5.5, 10/11/2026): dung. Ba vế khớp Easterlin 1974 tr. 117–118; "chưa chắc" giữa các nước đúng với chữ "uncertain".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/B978-0-12-205050-3.50008-7" ]
+    luot_2_ghi_chu: Đọc toàn văn bản MPRA (Phần 4 Kết luận). Khớp ba vế.
+    review: dung
+  - id: n14
+    cau: Easterlin cho rằng quan trọng là thu nhập tương đối/chuẩn so sánh và sự thích nghi; khi thu nhập cùng tăng, chuẩn cũng tăng.
+    loai: phat-hien
+    nguon:
+      - easterlin1974
+    trich: Over time, however, as economic conditions advance, so too does the social norm [...] these results are a testimony to the adaptability of mankind.
+    vi_tri: tr. 118–119
+    ket_qua: dung
+  - id: n15
+    cau: 'Stevenson & Wolfers (2008): dùng Gallup World Poll, World Values Survey, Eurobarometer và các khảo sát khác.'
+    loai: phat-hien
+    nguon:
+      - sw2008
+    trich: Table 1 formalizes all of the analysis [...] using data from the Gallup World Poll, all four waves of the World Values Survey, and the Pew Global Attitudes
+    vi_tri: 'tr. 14; Eurobarometer: Hình 6'
+    ket_qua: dung
+    ghi_chu: Bản NBER; bản Brookings không mở được.
+  - id: n16
+    cau: 'Stevenson & Wolfers: liên hệ dương, dạng log-tuyến tính giữa thu nhập và hạnh phúc trong nước và giữa các nước, không thấy điểm bão hòa.'
+    loai: phat-hien
+    nguon:
+      - sw2008
+    trich: we establish a clear positive link between average levels of subjective well-being and GDP per capita across countries, and find no evidence of a satiation point
+    vi_tri: 'tóm tắt; Hình trong nước: "linear relationship [...] with no evidence of satiation"'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Review (Claude Sonnet 5.5, 10/11/2026): dung. Làm mềm đúng: Stevenson & Wolfers thấy liên hệ dương, log-tuyến tính, không có điểm bão hòa; Mỹ là ngoại lệ ở chiều thời gian đã nêu ở n17.'
+    review: dung
+  - id: n17
+    cau: 'Stevenson & Wolfers: theo thời gian, tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu; Mỹ là ngoại lệ chưa giải thích được.'
+    loai: phat-hien
+    nguon:
+      - sw2008
+    trich: we find that happiness has in fact risen in Japan and Europe. The failure of happiness to rise in the United States remains a puzzling outlier
+    vi_tri: tr. 3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích Stevenson & Wolfers (hạnh phúc tăng ở Nhật và châu Âu; Mỹ là ngoại lệ khó giải thích).'
+    review: dung
+  - id: n18
+    cau: 'Easterlin và cộng sự (2010): các phê phán cho là liên hệ dương theo thời gian là do sai sót thống kê hoặc lẫn quan hệ ngắn hạn với dài hạn.'
+    loai: phat-hien
+    nguon:
+      - easterlin2010
+    trich: Recent critiques of the paradox, claiming the time series relationship between happiness and income is positive, are the result either of a statistical artifact or a confusion of the short-term relationship with the long-term one.
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Chỉ đọc tóm tắt (PNAS); toàn văn không mở được. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Easterlin và cộng sự 2010 (chỉ tóm tắt).'
+    review: dung
+  - id: n19
+    cau: 'Nghiên cứu châu Âu năm 2026 (33 nước, European Social Survey, 177.948 người): GDP đi cùng cảm xúc tốt hơn giữa các nước và theo thời gian.'
+    loai: phat-hien
+    nguon:
+      - fors2026
+    trich: We found strong positive associations between GDP and both emotional well-being and life satisfaction across countries. Longitudinal mixed models showed positive associations between GDP and both well-being components over time.
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Chỉ đọc tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Fors Connolly 2026; lượt 2 đọc toàn văn; chữ trang không nói nhân quả.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1038/s41598-026-59695-1" ]
+    luot_2_ghi_chu: Đọc toàn văn Sci Rep 2026 (PMC13333869). Đây là tương quan quan sát ở cấp nước-vòng khảo sát, không phải bằng chứng nhân quả.
+    review: dung
+  - id: n20
+    cau: Tính đến 11/2026, cuộc tranh luận về nghịch lý Easterlin vẫn chưa ngã ngũ.
+    loai: thoi-su
+    nguon:
+      - easterlin2010
+      - sw2008
+      - fors2026
+    vi_tri: so sánh các nguồn, 10/11/2026
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.". Chữ mới: "cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán ch". Lý do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ". Lần tìm: Europe PMC 10/11/2026, "Easterlin paradox" (188 kết quả), đã xem đầu danh sách; thấy bài 2026 (Fors Connolly) cùng phía phản bác; không thấy tổng quan kết luận dứt khoát. Review (Claude Sonnet 5.5, 10/11/2026): dung. Có mốc 11/2026, nguồn, het_han 2028-11-01; "chưa ngã ngũ" đúng với việc cả hai phía (Easterlin 2010; Stevenson & Wolfers; Fors Connolly 2026) còn công bố.'
+    review: dung
+  - id: n21
+    cau: 'Kahneman & Deaton (2010): hai nhà nghiên cứu ở Princeton.'
+    loai: lich-su
+    nguon:
+      - kd2010
+    trich: Center for Health and Well-being, Princeton University, Princeton, NJ 08544
+    vi_tri: tr. 1
+    ket_qua: dung
+  - id: n22
+    cau: 'K&D 2010: hơn 450.000 phản hồi từ Gallup-Healthways Well-Being Index (2008–2009), khảo sát hằng ngày 1.000 người Mỹ.'
+    loai: so-lieu
+    nguon:
+      - kd2010
+    trich: more than 450,000 responses to the Gallup-Healthways Well-Being Index, a daily survey of 1,000 US residents conducted by the Gallup Organization [...] surveyed in 2008 and 2009
+    vi_tri: tr. 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index — khảo sát hằng ngày trên 1.000 người Mỹ được chọn ngẫu nhiên.". Chữ mới: "phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index (2008–2009) — khảo sát hằng ngày trên 1.000 người Mỹ.". Lý do: Bài gốc không nói "chọn ngẫu nhiên" trong phần đọc được. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích K&D 2010 (hơn 450.000 phản hồi, 1.000 người Mỹ mỗi ngày, 2008–2009).'
+    review: dung
+  - id: n23
+    cau: 'K&D 2010: hạnh phúc cảm xúc đo qua câu hỏi về cảm xúc hôm qua; đánh giá cuộc sống đo bằng thang Cantril 0–10.'
+    loai: cong-cu
+    nguon:
+      - kd2010
+    trich: Emotional well-being is assessed by questions about the presence of various emotions in the experience of yesterday
+    vi_tri: tr. 1
+    ket_qua: dung
+  - id: n24
+    cau: 'K&D 2010: đánh giá cuộc sống tăng đều theo logarit thu nhập trên toàn dải thu nhập.'
+    loai: phat-hien
+    nguon:
+      - kd2010
+    trich: the figure shows a fairly steady rise in life evaluation with log income over the entire range
+    vi_tri: tr. 3
+    ket_qua: dung
+  - id: n25
+    cau: 'K&D 2010: hạnh phúc cảm xúc cũng tăng theo logarit thu nhập nhưng không cải thiện thêm sau khoảng 75.000 USD/năm.'
+    loai: so-lieu
+    nguon:
+      - kd2010
+    trich: We infer that beyond about $75,000/y, there is no improvement whatever in any of the three measures of emotional well-being.
+    vi_tri: tr. 3
+    ket_qua: dung
+  - id: n26
+    cau: 'K&D 2010: thu nhập thấp làm trầm trọng thêm nỗi đau tinh thần khi gặp ly hôn, bệnh tật, sống một mình.'
+    loai: phat-hien
+    nguon:
+      - kd2010
+    trich: the pain of some of life's misfortunes, including asthma, divorce, and being alone, is significantly exacerbated by poverty
+    vi_tri: tr. 3
+    ket_qua: dung
+  - id: n27
+    cau: 'K&D 2010 kết luận: thu nhập cao "mua" được sự hài lòng với cuộc sống nhưng không mua được hạnh phúc cảm xúc.'
+    loai: phat-hien
+    nguon:
+      - kd2010
+    trich: We conclude that high income buys life satisfaction but not happiness
+    vi_tri: tóm tắt
+    ket_qua: dung
+  - id: n28
+    cau: 75.000 USD chỉ là điểm giữa của nhóm thu nhập 60.000–90.000 USD; không có cải thiện thêm trên một ngưỡng ở hoặc dưới 90.000 USD.
+    loai: so-lieu
+    nguon:
+      - kkm2023
+    trich: The threshold of $75,000, which has been frequently quoted, is simply the midpoint of the "60 to 90K" income category. A more precise statement would be that there is no further progress in average happiness beyond a threshold at or below 90K.
+    vi_tri: tr. 1 (đoạn "Can money buy happiness?")
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nói chính xác hơn: không có cải thiện nào vượt qua ngưỡng *ở hoặc dưới* 90.000 USD.". Chữ mới: "Nói chính xác hơn: không có cải thiện thêm nào trên một ngưỡng *ở hoặc dưới* 90.000 USD.". Lý do: Chữ rõ nghĩa theo KKM 2023 ("no further progress ... beyond a threshold at or below 90K"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp KKM 2023: "75.000 chỉ là điểm giữa của nhóm 60–90K", "no further progress ... at or below 90K" (đọc lại PMC10013834).'
+    review: dung
+  - id: n29
+    cau: Dữ liệu K&D là của người Mỹ giai đoạn 2008–2009.
+    loai: so-lieu
+    nguon:
+      - kd2010
+    trich: surveyed in 2008 and 2009
+    vi_tri: tr. 1
+    ket_qua: dung
+  - id: n30
+    cau: Killingsworth (Wharton, ĐH Pennsylvania) cho rằng cách hỏi hôm qua phụ thuộc trí nhớ nên đo trực tiếp.
+    loai: lich-su
+    nguon:
+      - kill2021
+    trich: a measure of experienced well-being that may or may not be indicative of actual emotional experience (retrospective, dichotomous reports)
+    vi_tri: Significance; The Wharton School, University of Pennsylvania
+    ket_qua: dung
+  - id: n31
+    cau: 'Killingsworth 2021: ứng dụng Track Your Happiness nhắc ngẫu nhiên (mặc định 3 lần/ngày, trong nhiều tuần), câu hỏi "How do you feel right now?" từ "Very bad" đến "Very good".'
+    loai: cong-cu
+    nguon:
+      - kill2021
+      - kkm2023
+    trich: participants' smartphones were signaled at randomly timed moments during their waking hours [...] "How do you feel right now?" on a continuous response scale with endpoints labeled "Very bad" and "Very good"
+    vi_tri: 'Killingsworth 2021, Methods; "typically three times per day for several weeks": KKM 2023'
+    ket_qua: dung
+  - id: n32
+    cau: 'Killingsworth 2021: mẫu 33.391 người Mỹ có việc làm 18–65 tuổi, 1.725.994 báo cáo (thu nhập hộ từ 10.000 USD trở lên).'
+    loai: so-lieu
+    nguon:
+      - kill2021
+    trich: 1,725,994 experience-sampling reports from 33,391 employed US adults [...] ages 18 to 65 [...] who reported household incomes of at least $10,000/y
+    vi_tri: tóm tắt; Methods
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi**, tổng cộng **1.725.994 báo cáo**.". Chữ mới: "Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi** (thu nhập hộ gia đình từ 10.000 USD/năm trở lên), tổng cộng **1.725.994 báo cáo**.". Lý do: Thêm điều kiện chọn mẫu theo bài gốc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích Killingsworth 2021 (33.391 người, 1.725.994 báo cáo, hộ từ 10.000 USD).'
+    review: dung
+  - id: n33
+    cau: 'Killingsworth 2021: hạnh phúc trải nghiệm tăng tuyến tính theo logarit thu nhập, độ dốc trên 75.000–80.000 USD ngang độ dốc dưới đó; không có ngưỡng bão hòa.'
+    loai: phat-hien
+    nguon:
+      - kill2021
+    trich: experienced well-being rises linearly with log income, with an equally steep slope above $80,000 as below it
+    vi_tri: Significance; Bảng 1
+    ket_qua: dung
+  - id: n34
+    cau: 'Killingsworth 2021: thu nhập cao hơn đi cùng cảm xúc tốt hơn ở cả mức thu nhập cao; đây là liên hệ cắt ngang, không chứng minh nhân quả; tương quan với log thu nhập khoảng 0,09.'
+    loai: so-lieu
+    nguon:
+      - kkm2023
+    trich: we are simply describing cross-sectional associations between happiness and income [...] The correlation between average happiness and log(income) is 0.09 in the experience sampling data
+    vi_tri: Results (KKM 2023)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nói cách khác, với cách đo thời gian thực này, tiền vẫn "mua" được cảm xúc tốt hơn ở cả những mức thu nhập cao.". Chữ mới: "Nói cách khác, với cách đo thời gian thực này, thu nhập cao hơn vẫn đi cùng cảm xúc tốt hơn ở cả những mức thu nhập cao. Đây là mối liên hệ cắt ngang, không chứng minh nhân quả; và mối liên hệ này yếu (tương quan giữa hạnh phúc trung bình và log thu nhập chỉ khoảng 0,09 trong dữ liệu experience samp". Lý do: "Mua" ngụ ý nhân quả; bài KKM nêu rõ chỉ là cross-sectional associations và r = 0,09. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: bài KKM nêu chỉ là liên hệ cắt ngang và r = 0,09; trang không còn "mua".'
+    review: dung
+  - id: n35
+    cau: 'Killingsworth 2021: cả hạnh phúc trải nghiệm và đánh giá cuộc sống tăng tuyến tính theo log thu nhập, không có ngưỡng mà hai thứ tách ra.'
+    loai: phat-hien
+    nguon:
+      - kill2021
+    trich: There was also no evidence of an income threshold at which experienced and evaluative well-being diverged
+    vi_tri: tóm tắt
+    ket_qua: dung
+  - id: n36
+    cau: Hai nghiên cứu dùng dữ liệu lớn; mâu thuẫn kéo dài đến bài hòa giải năm 2023.
+    loai: lich-su
+    nguon:
+      - kkm2023
+    trich: Two authors of the present paper have published contradictory answers.
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Mâu thuẫn này tồn tại suốt hai năm, cho đến khi chính hai "đối thủ" ngồi lại với nhau.". Chữ mới: "Mâu thuẫn này kéo dài cho đến khi chính hai "đối thủ" ngồi lại với nhau (bài hòa giải đăng năm 2023).". Lý do: "Suốt hai năm" không có nguồn chính xác. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: KKM 2023 mở đầu "two authors ... published contradictory answers".'
+    review: dung
+  - id: n37
+    cau: KKM 2023 là hợp tác đối kháng giữa Killingsworth và Kahneman, với Mellers làm người điều phối, phân tích lại dữ liệu experience-sampling của Killingsworth.
+    loai: lich-su
+    nguon:
+      - kkm2023
+    trich: We engaged in an adversarial collaboration and asked Barbara Mellers to be the facilitator.
+    vi_tri: Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cùng với Barbara Mellers làm trọng tài, phân tích lại". Chữ mới: "cùng với Barbara Mellers làm người điều phối, phân tích lại". Lý do: Bài gốc gọi Mellers là facilitator. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: Mellers là facilitator (đọc lại KKM 2023).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.2208661120" ]
+    luot_2_ghi_chu: Đọc toàn văn (PMC10013834).
+    review: dung
+  - id: n38
+    cau: 'KKM 2023: với đa số, hạnh phúc tăng theo logarit thu nhập, không có ngưỡng; ở nhóm hạnh phúc nhất (phân vị 85) dốc hơn trên 100.000 USD.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: For the 85th percentile, the slope accelerates above 100k (P = 0.023). The slopes do not differ significantly in the remaining quantiles (30th, 50th, 70th)
+    vi_tri: Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "với nhóm hạnh phúc nhất, đường cong thậm chí còn *dốc hơn* trên 100.000 USD.". Chữ mới: "ở nhóm hạnh phúc nhất (phân vị 85), đường cong thậm chí còn *dốc hơn* trên 100.000 USD.". Lý do: Bài gốc: dốc hơn có ý nghĩa ở phân vị 85 (p = 0,023); phân vị 70 chỉ gần ý nghĩa. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích KKM 2023 (phân vị 85, dốc hơn trên 100K, P = 0,023).'
+    review: dung
+  - id: n39
+    cau: 'KKM 2023: ở nhóm khoảng 15–20% ít hạnh phúc nhất, hạnh phúc tăng theo thu nhập rồi chững ở khoảng 100.000 USD/năm.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: confirmed the flattening pattern only for the least happy people [...] The happiness of the least happy 15% rises quickly in the lower range of income, leveling off abruptly at $100,000
+    vi_tri: Abstract; Results; Bảng 1
+    ket_qua: dung
+    ghi_chu: Tóm tắt nói "least happy 20%" (phần Significance), thân bài 15–20%; trang giữ "20%". Ngưỡng 90K trong dữ liệu 2008–09 tương ứng khoảng 97K sau điều chỉnh lạm phát.
+  - id: n40
+    cau: 'KKM 2023: ngưỡng 75.000 USD của năm 2010 "bắt" nhóm bất hạnh nhất rồi bị diễn giải thành quy luật chung.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: KD claimed that the flattening pattern applies to the happiness of the entire population when in fact it is restricted to the lowest 15 to 20% of the distribution.
+    vi_tri: Errors and Their Origins
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.". Chữ mới: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập". Lý do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: KKM 2023 nêu mô hình chững chỉ ở 15–20% thấp nhất (đọc lại PMC10013834).'
+    review: dung
+  - id: n41
+    cau: 'KKM 2023: ngưỡng 100.000 USD có thể là mức mà những nỗi khổ còn lại (đau lòng, mất người thân) không được thu nhập thêm làm dịu; là suy đoán.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: This income threshold may represent the point beyond which the miseries that remain are not alleviated by high income. Heartbreak, bereavement, and clinical depression may be examples of such miseries.
+    vi_tri: Results
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.". Chữ mới: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập". Lý do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích KKM 2023 ("may represent ... heartbreak, bereavement ..."); trang ghi rõ là suy đoán.'
+    review: dung
+  - id: n42
+    cau: 'Năm 2024 hai bình luận trên PNAS (Rohrer & Wenz; Arslan) phê bình bài KKM; nhóm tác giả trả lời cùng năm: giả định nhân quả, và ngưỡng 100.000 USD lấy từ nghiên cứu 2010 chứ không ước lượng từ dữ liệu Killingsworth.'
+    loai: lich-su
+    nguon:
+      - rohrer2024
+      - arslan2024
+      - kkm2024
+    trich: The existence and location ($100,000) of a threshold was not estimated in Killingsworth's data but was based on Kahneman and Deaton.
+    vi_tri: 'Arslan 2024, đoạn đầu; Rohrer & Wenz 2024: tên bài "Inappropriate causal assumptions underlie Killingsworth, Kahneman, and Mellers'' conclusions"; trả lời: PNAS 121, e2322160121'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.". Chữ mới: "Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập". Lý do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024. Đọc toàn văn Arslan; Rohrer & Wenz chỉ đọc tóm tắt và tên bài (ghi cả hai nơi); phần "giả định nhân quả" theo tên bài của Rohrer & Wenz. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: Rohrer & Wenz (tên bài và nội dung: giả định nhân quả) và Arslan (ngưỡng 100.000 USD không ước lượng từ dữ liệu Killingsworth, "little angle to identify a causal effect") đọc lại ở PMC; KKM trả lời 2024. Câu gộp hai bình luận nhưng mỗi ý có ở ít nhất một bình luận; chấp nhận.'
+    review: dung
+  - id: n43
+    cau: 'Khung Đang tranh cãi (tổng thể): tiền có mua được hạnh phúc cảm xúc không?'
+    loai: nhan
+    nguon:
+      - easterlin2010
+      - sw2008
+      - kill2021
+      - kkm2023
+      - rohrer2024
+      - arslan2024
+      - fors2026
+    nhan: tranh-cai
+    co_so:
+      - kd2010
+      - kill2021
+      - kkm2023
+      - sw2008
+      - easterlin2010
+      - rohrer2024
+      - arslan2024
+    ly_do: 'Bằng chứng chất lượng cao mâu thuẫn nhau: Kahneman–Deaton 2010 (chững ở 75.000 USD) và Killingsworth 2021 (không chững); bài hòa giải 2023 giải thích bằng tính không đồng nhất nhưng bị bình luận năm 2024; nghịch lý Easterlin vẫn bị phản bác (Stevenson & Wolfers; nghiên cứu châu Âu 2026). Chưa có phân tích tổng hợp hay tái lập có đăng ký trước. Đúng mức Đang tranh cãi theo thước đo.'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) mới chỉ được hòa giải năm 2023 trên dữ liệu người Mỹ. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.". Chữ mới: "Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) được hòa giải năm 2023 trên dữ liệu người Mỹ, và cách hòa giải ấy lại bị bình luận năm 2024. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.". Lý do: Thêm bình luận 2024 và "mới chỉ" thành "được". Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp thước đo mục 4: bằng chứng chất lượng cao mâu thuẫn (K&D 2010 với Killingsworth 2021), hòa giải 2023 bị bình luận 2024, chưa có tổng hợp hay tái lập đăng ký trước. Giữ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107", "https://doi.org/10.1073/pnas.2208661120", "https://doi.org/10.1073/pnas.2313712121" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi thấp hơn Khá vững; đúng.
+    review: dung
+  - id: n44
+    cau: 'Khung Khá vững: hạnh phúc cảm xúc và đánh giá cuộc sống là hai thứ khác nhau, có yếu tố ảnh hưởng khác nhau.'
+    loai: nhan
+    nguon:
+      - kd2010
+      - kill2021
+    nhan: kha-vung
+    co_so:
+      - kd2010
+      - kill2021
+    ly_do: Nhiều nghiên cứu cùng chiều (Kahneman & Deaton 2010, Kahneman 2004, Schimmack 2008 ở trang Hạnh phúc có đo được không?) nhưng chưa có phân tích tổng hợp; mẫu chủ yếu Mỹ và Đức; Killingsworth 2021 không thấy hai thứ tách ra theo thu nhập. Khá vững theo thước đo.
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Sự phân biệt này được lặp lại qua nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau. Đây là phần vững chắc nhất của cả câu chuyện.". Chữ mới: "Sự phân biệt này được thấy trong nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau (Kahneman và Deaton, 2010; Kahneman và cộng sự, 2004). Riêng với thu nhập, Killingsworth (2021) không thấy mức thu nhập nào mà hai thứ tách ra. Đây l". Lý do: "Phần vững chắc nhất" vượt nhãn Khá vững; thêm điểm Killingsworth 2021 không thấy tách rời theo thu nhập. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khá vững hợp: nhiều nghiên cứu cùng chiều nhưng chưa có tổng hợp, mẫu chủ yếu Mỹ và Đức. Giữ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107", "https://doi.org/10.1073/pnas.2208661120" ]
+    luot_2_ghi_chu: "Đọc toàn văn K&D 2010 (bản tác giả, Princeton) và KKM 2023 (PMC). Nhãn Khá vững không cao hơn thước đo: nhiều nghiên cứu cùng chiều, chưa có tái lập đăng ký trước."
+    review: dung
+  - id: n45
+    cau: 'Khung: trong nghiên cứu 2021, không có mức thu nhập nào mà hạnh phúc cảm xúc và đánh giá cuộc sống tách ra.'
+    loai: phat-hien
+    nguon:
+      - kill2021
+    trich: There was also no evidence of an income threshold at which experienced and evaluative well-being diverged
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Sự phân biệt này được lặp lại qua nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau. Đây là phần vững chắc nhất của cả câu chuyện.". Chữ mới: "Sự phân biệt này được thấy trong nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau (Kahneman và Deaton, 2010; Kahneman và cộng sự, 2004). Riêng với thu nhập, Killingsworth (2021) không thấy mức thu nhập nào mà hai thứ tách ra. Đây l". Lý do: "Phần vững chắc nhất" vượt nhãn Khá vững; thêm điểm Killingsworth 2021 không thấy tách rời theo thu nhập. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Killingsworth 2021.'
+    review: dung
+  - id: n46
+    cau: 'Khung Đang tranh cãi: con số 75.000 USD — điểm giữa nhóm thu nhập, dữ liệu Mỹ 2008–2009; theo phân tích 2023 chỉ mô tả nhóm 15–20% ít hạnh phúc nhất; bị bình luận 2024.'
+    loai: nhan
+    nguon:
+      - kkm2023
+      - arslan2024
+    nhan: tranh-cai
+    co_so:
+      - kkm2023
+      - arslan2024
+      - rohrer2024
+    ly_do: 'Bằng chứng mâu thuẫn: nghiên cứu gốc và nghiên cứu thời gian thực, được hòa giải bằng phân tích một nhóm tác giả rồi bị bình luận; xếp Đang tranh cãi.'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, nó chỉ mô tả đúng nhóm 20% ít hạnh phúc nhất.". Chữ mới: "Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, hiện tượng chững lại chỉ có ở nhóm 15–20% ít hạnh phúc nhất (cách xác định ngưỡng này bị bình luận năm 2024).". Lý do: Bài gốc nói 15% (phân vị) đến 20%; thêm bình luận 2024. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp thước đo: hiệu ứng chững lại bị thu hẹp từ "mọi người" xuống nhóm 15–20% và bị bình luận 2024. Giữ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107", "https://doi.org/10.1073/pnas.2208661120", "https://doi.org/10.1073/pnas.2313712121", "https://doi.org/10.1073/pnas.2314207121" ]
+    luot_2_ghi_chu: 'Đúng: số liệu Gallup 2008-2009, nhóm 15-20% ít hạnh phúc nhất; bình luận 2024 tồn tại ("Inappropriate causal assumptions...").'
+    review: dung
+  - id: n47
+    cau: 'Lý thuyết thích nghi: con người quen nhanh với mức sống mới; kỳ vọng leo thang.'
+    loai: phat-hien
+    nguon:
+      - easterlin1974
+    trich: Income and aspirations in time and space tend to go together
+    vi_tri: tr. 119
+    ket_qua: dung
+    ghi_chu: 'K&D 2010 cũng nêu thích nghi: "The pleasure of a raise is likely to be transient, however, due to a phenomenon known as adaptation".'
+  - id: n48
+    cau: 'Lý thuyết so sánh xã hội: hạnh phúc phụ thuộc vị trí tương đối; thu nhập cả xã hội cùng tăng thì thứ bậc không đổi.'
+    loai: phat-hien
+    nguon:
+      - easterlin1974
+    trich: a Duesenberry-type model, involving relative status considerations as an important determinant of happiness
+    vi_tri: tr. 118
+    ket_qua: dung
+    ghi_chu: Stevenson & Wolfers kết luận vai trò của thu nhập tương đối "more limited"; nêu như một cách giải thích bị tranh cãi.
+  - id: n49
+    cau: 'Lý thuyết logarit: cả ba nghiên cứu hiện đại thấy hạnh phúc tăng theo logarit thu nhập ít nhất ở một dải; nếu đúng dạng logarit thì tăng 20.000→60.000 tương đương 60.000→180.000 (cùng gấp ba lần).'
+    loai: phat-hien
+    nguon:
+      - kd2010
+      - kill2021
+      - kkm2023
+    trich: Plots of subjective well-being against income in dollars invariably yield a strongly concave function. [...] a doubling of their respective incomes might have a similar impact on both.
+    vi_tri: K&D 2010, tr. 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập: tăng". Chữ mới: "Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập: tăng". Lý do: Kahneman & Deaton thấy cảm xúc chững lại ở ~75.000 USD. Ví dụ số (tăng gấp ba mỗi bước) là phép tính của trang: 60/20 = 180/60 = 3. Review (Claude Sonnet 5.5, 10/11/2026): sai. Ví dụ số (20.000→60.000 và 60.000→180.000) đúng cho dạng logarit nhưng K&D thấy cảm xúc chững ở khoảng 75.000 USD, nên câu cũ viết như điều cả ba nghiên cứu thấy là quá tay. Đã sửa trang thành "Nếu đúng dạng logarit, ...".'
+    review: sai
+  - id: n50
+    cau: 'Lý thuyết xóa khổ: ở thu nhập thấp tiền giải quyết nỗi khổ cụ thể (nhà, thuốc, bất an).'
+    loai: phat-hien
+    nguon:
+      - kd2010
+    trich: Low income exacerbates the emotional pain associated with such misfortunes as divorce, ill health, and being alone.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Ví dụ "lo tiền nhà, tiền thuốc" là minh họa của trang, không phải số liệu K&D; K&D chỉ nói thu nhập thấp làm nặng thêm nỗi đau khi gặp biến cố.
+  - id: n51
+    cau: 'Lý thuyết xóa khổ: những nỗi khổ còn lại không đáp ứng với thu nhập thêm là cách giải thích của bài 2023, nêu như suy đoán.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: This income threshold may represent the point beyond which the miseries that remain are not alleviated by high income.
+    vi_tri: Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại — cô đơn, bệnh tật, xung đột, cảm giác vô nghĩa — không đáp ứng với thu nhập thêm. Đây chính là lời giải của bài báo 2023 cho nhóm 20% ít hạnh phúc nhất.". Chữ mới: "Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại không đáp ứng với thu nhập thêm: bài báo 2023 đề xuất cách giải thích này cho nhóm ít hạnh phúc nhất và nêu ví dụ đau lòng, mất người thân; đây là suy đoán của các tác giả, chưa được kiểm tra.". Lý do: Danh sách "cô đơn, bệnh tật, xung đột, vô nghĩa" không có trong bài 2023; bài nêu heartbreak, bereavement, clinical depression như ví dụ có thể có, và chỉ là suy đoán. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích KKM 2023; ghi rõ suy đoán.'
+    review: dung
+  - id: n52
+    cau: 'Áp dụng 1 (nhãn Đang tranh cãi): đừng coi 75.000 USD là ngưỡng hạnh phúc của bạn; số này từ dữ liệu Mỹ hơn một thập kỷ trước; theo phân tích mới nhất chỉ mô tả nhóm 20% ít hạnh phúc nhất.'
+    loai: nhan
+    nguon:
+      - kd2010
+      - kkm2023
+      - arslan2024
+    nhan: tranh-cai
+    co_so:
+      - kkm2023
+      - arslan2024
+    ly_do: Như khung 75.000 USD của phần Mức độ chắc chắn; lời khuyên không dùng con số làm ngưỡng cá nhân là phản ứng thận trọng với nhãn Đang tranh cãi.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107", "https://doi.org/10.1073/pnas.2208661120", "https://doi.org/10.1073/pnas.2313712121" ]
+    luot_2_ghi_chu: 'Đúng với bài gốc: dữ liệu Mỹ 2008-2009 (hơn một thập kỷ trước); "phân tích mới nhất" nên hiểu là KKM 2023, có bình luận 2024 phản biện. Nhãn Đang tranh cãi hợp lý.'
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp: lời khuyên không áp ngưỡng 75.000 cho cá nhân là thận trọng; nhãn khớp khung tổng thể."
+    review: dung
+  - id: n53
+    cau: 'Áp dụng 1: 75.000 USD không phải công thức cho cá nhân, càng không áp được sang thu nhập ở Việt Nam.'
+    loai: loi-khuyen
+    nguon:
+      - kd2010
+    trich: Our data speak only to differences
+    vi_tri: tr. 4 (Discussion)
+    ket_qua: dung
+    ghi_chu: Câu thận trọng, suy luận từ việc dữ liệu là của người Mỹ; có nhãn Đang tranh cãi.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107" ]
+    luot_2_ghi_chu: Lời khuyên là suy luận từ việc dữ liệu là của người Mỹ; K&D nói về trung bình nhóm, không về cá nhân.
+  - id: n54
+    cau: 'Áp dụng 2 (nhãn Đang tranh cãi): ở thu nhập thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất, chưa chứng minh nhân quả.'
+    loai: nhan
+    nguon:
+      - kd2010
+      - kill2021
+      - kkm2023
+    nhan: tranh-cai
+    co_so:
+      - kd2010
+      - kill2021
+      - kkm2023
+    ly_do: Cả ba nghiên cứu chỉ mô tả liên hệ cắt ngang, nên chưa chứng minh nhân quả; nhãn theo chủ đề.
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "### 2. Nếu thu nhập còn thấp, tăng thu nhập là một trong những cách cải thiện tinh thần hiệu quả nhất :nhan[tranh-cai]". Chữ mới: "### 2. Nếu thu nhập còn thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất (chưa chứng minh nhân quả) :nhan[tranh-cai] { #2-neu-thu-nhap-con-thap-tang-thu-nhap-la-mot-trong-nhung-cach-cai-thien-tinh-than-hieu-qua-nhat-dang-tranh-cai }". Lý do: Tiêu đề cũ ngụ ý nhân quả và "hiệu quả nhất" không có nguồn; giữ id cũ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp; trang đã nói "chưa chứng minh nhân quả"; id tiêu đề cũ giữ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107", "https://doi.org/10.1073/pnas.2208661120", "https://doi.org/10.1073/pnas.2313712121" ]
+    luot_2_ghi_chu: 'Câu có kèm "chưa chứng minh nhân quả": đúng.'
+    review: dung
+  - id: n55
+    cau: 'Áp dụng 2: cả ba nghiên cứu thấy hạnh phúc tăng theo logarit thu nhập nên mức tăng theo đô la lớn nhất ở thu nhập thấp; thu nhập thấp làm nặng thêm nỗi đau khi gặp biến cố.'
+    loai: phat-hien
+    nguon:
+      - kd2010
+      - kill2021
+      - kkm2023
+    trich: Low income exacerbates the emotional pain associated with such misfortunes as divorce, ill health, and being alone.
+    vi_tri: K&D 2010, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.". Chữ mới: "Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (ngư". Lý do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: K&D 2010 thu nhập thấp làm nặng thêm nỗi đau khi gặp biến cố; KKM 2023 chỉ mô tả liên hệ cắt ngang; trang không nói nhân quả.'
+    review: dung
+  - id: n56
+    cau: 'Áp dụng 2: cả ba chỉ mô tả mối liên hệ cắt ngang, không chứng minh tăng thu nhập làm tinh thần tốt lên.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: we are simply describing cross-sectional associations between happiness and income (just as KD and MK did)
+    vi_tri: Results (KKM 2023)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.". Chữ mới: "Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (ngư". Lý do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích KKM 2023 (cross-sectional associations).'
+    review: dung
+  - id: n57
+    cau: 'Áp dụng 2: "tiền không mua được hạnh phúc" là câu nói xa xỉ, ít đúng nhất với người thiếu tiền (diễn giải thận trọng).'
+    loai: loi-khuyen
+    nguon:
+      - kd2010
+    trich: low income is associated both with low life evaluation and low emotional well-being
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.". Chữ mới: "Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (ngư". Lý do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang. Lời khuyên đời thường, nhãn Đang tranh cãi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Diễn giải thận trọng, có nhãn tranh-cai; khớp tóm tắt K&D 2010 (thu nhập thấp gắn với cả đánh giá cuộc sống thấp và cảm xúc kém).'
+    review: dung
+  - id: n58
+    cau: 'Áp dụng 3 (nhãn Đang tranh cãi): khi đã đủ sống, hạnh phúc cảm xúc của đa số vẫn tăng theo thu nhập nhưng chậm dần (logarit); nhóm bất hạnh nhất không còn giúp trên khoảng 100.000 USD/năm.'
+    loai: nhan
+    nguon:
+      - kkm2023
+    nhan: tranh-cai
+    co_so:
+      - kkm2023
+      - arslan2024
+    ly_do: Dựa vào bài hòa giải 2023 đang bị bình luận.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.2208661120" ]
+    luot_2_ghi_chu: Đúng; "nhóm bất hạnh nhất" là 15-20% thấp nhất.
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp (dựa vào bài hòa giải 2023 đang bị bình luận); nhóm bất hạnh nhất là 15–20% thấp nhất, trang ghi 20% theo tóm tắt Significance của KKM."
+    review: dung
+  - id: n59
+    cau: 'Áp dụng 3: với đa số, hạnh phúc cảm xúc vẫn tăng theo logarit thu nhập; với nhóm bất hạnh nhất không tăng trên khoảng 100.000 USD/năm.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: Happiness increases steadily with log(income) among happier people, and even accelerates in the happiest group.
+    vi_tri: tóm tắt
+    ket_qua: dung
+  - id: n60
+    cau: 'Áp dụng 3: nguyên nhân bất hạnh khi đã đủ đầy có thể nằm ở những thứ thu nhập thêm không chạm tới (đau lòng, mất người thân); suy đoán của các tác giả; nếu kéo dài, xem trang Hỗ trợ.'
+    loai: loi-khuyen
+    nguon:
+      - kkm2023
+    trich: Heartbreak, bereavement, and clinical depression may be examples of such miseries.
+    vi_tri: Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân nhiều khả năng nằm ở những thứ tiền không chạm tới: các mối quan hệ, sức khỏe, cảm giác có ý nghĩa.". Chữ mới: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ.". Lý do: Chữ cũ "nhiều khả năng" và liệt kê quan hệ, sức khỏe, ý nghĩa không có nguồn; thêm dẫn tới Hỗ trợ. Không phải chẩn đoán hay lời khuyên điều trị; dẫn tới Hỗ trợ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chữ cuối đúng trích (heartbreak, bereavement; trang bỏ clinical depression, không sai); ghi rõ suy đoán; không chẩn đoán, không khuyên điều trị; dẫn Hỗ trợ.'
+    review: dung
+  - id: n61
+    cau: Link tới trang Hỗ trợ (/psyche/ho-tro/) ở mục Áp dụng 3.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân nhiều khả năng nằm ở những thứ tiền không chạm tới: các mối quan hệ, sức khỏe, cảm giác có ý nghĩa.". Chữ mới: "Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ.". Lý do: Chữ cũ "nhiều khả năng" và liệt kê quan hệ, sức khỏe, ý nghĩa không có nguồn; thêm dẫn tới Hỗ trợ. Đã kiểm: id ho-tro có trong src/data/trang.yml; trang chưa có trong worktree này (cần lên trước khi khóa); câu chỉ dẫn, không chẩn đoán. Review (Claude Sonnet 5.5, 10/11/2026): sai. Câu nói đã có link tới trang Hỗ trợ ở mục Áp dụng 3 nhưng trang chỉ có chữ "xem trang Hỗ trợ", không có link. Đã thêm [Hỗ trợ](/psyche/ho-tro/); ho-tro/index có trong src/data/trang.yml và src/content/docs/ho-tro/index.md.'
+    review: sai
+  - id: n62
+    cau: 'Việt Nam: tính đến 11/2026 chưa thấy nghiên cứu về mối quan hệ thu nhập–hạnh phúc trên người Việt.'
+    loai: thoi-su
+    nguon:
+      - tim-vn-tien
+    vi_tri: Europe PMC, 10/11/2026
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "**Chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt**, và không suy diễn từ dữ liệu Mỹ sang Việt Nam.". Chữ mới: "Tính đến 11/2026, **chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt** (lần tìm chưa hệ thống: Europe PMC, chưa tìm tạp chí trong nước), và không suy diễn từ dữ liệu Mỹ sang Việt Nam.". Lý do: Thêm mốc và nêu rõ phạm vi lần tìm. Review (Claude Sonnet 5.5, 10/11/2026): dung. Có mốc 11/2026, nguồn (lần tìm Europe PMC), het_han 2028-11-01; "chưa thấy" đủ thận trọng, phạm vi lần tìm đã ghi.'
+    review: dung
+  - id: n63
+    cau: 'Việt Nam: mọi con số (75.000, 100.000 USD) đều từ khảo sát người Mỹ; cấu trúc thu nhập, chi phí, chuẩn mực ở Việt Nam khác nên không áp được sang VND.'
+    loai: phat-hien
+    nguon:
+      - kd2010
+      - kkm2023
+    trich: Participants were 33,391 employed adults living in the United States.
+    vi_tri: KKM 2023, Materials and Methods
+    ket_qua: dung
+    ghi_chu: Phần "khác hẳn" ở Việt Nam là suy luận chung, không có số liệu; đã ghi "không suy diễn".
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107", "https://doi.org/10.1073/pnas.2208661120" ]
+    luot_2_ghi_chu: Phần "cấu trúc thu nhập ở Việt Nam khác" là suy luận, không phải số liệu; câu viết ở mức thận trọng.
+  - id: n64
+    cau: 'Việt Nam: dữ liệu experience-sampling của Killingsworth (2021) và 2023 chỉ gồm người Mỹ có việc làm 18–65 tuổi.'
+    loai: phat-hien
+    nguon:
+      - kill2021
+      - kkm2023
+    trich: 33,391 employed US adults
+    vi_tri: tóm tắt
+    ket_qua: dung
+  - id: n65
+    cau: 'Việt Nam: chưa thấy bản sao thiết kế experience-sampling thu nhập–cảm xúc ở châu Á hay Việt Nam (tính đến 11/2026).'
+    loai: thoi-su
+    nguon:
+      - tim-es-vn
+    vi_tri: Europe PMC, 10/11/2026
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chưa có bản sao nào của thiết kế này ở châu Á hay Việt Nam.". Chữ mới: "chưa thấy bản sao nào của thiết kế này ở châu Á hay Việt Nam (tính đến 11/2026; lần tìm chưa hệ thống).". Lý do: Câu phủ định cần mốc và nói rõ phạm vi tìm. Review (Claude Sonnet 5.5, 10/11/2026): dung. Có mốc, nguồn, het_han; lượt 2 kiểm lại 10/11/2026.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22experience%20sampling%22%20OR%20%22ecological%20momentary%22%29%20AND%20income%20AND%20%28emotional%20OR%20happiness%20OR%20affect%29%20AND%20%28Vietnam*%20OR%20Asia*%20OR%20China%20OR%20Chinese%20OR%20Japan*%20OR%20Korea*%20OR%20India*%29&format=json" ]
+    luot_2_ghi_chu: Kiểm lại hôm nay (10/11/2026); kết quả phủ định theo "chưa thấy". Chỉ thấy các nghiên cứu khác chủ đề (ví dụ ESM môi trường đô thị).
+    review: dung
+  - id: n66
+    cau: 'Phía ủng hộ nghịch lý có dữ liệu 37 nước (Easterlin và cộng sự 2010; bản thảo: 12–34 năm, trung bình 22 năm).'
+    loai: so-lieu
+    nguon:
+      - easterlin2010
+    trich: For a worldwide sample of 37 countries with intermittent life satisfaction data (1-10 scale) for periods ranging from 12 to 34 years (mean=22) up to 2005
+    vi_tri: bản thảo IZA DP 5799, tr. 6
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS, mỗi nước theo dõi trung bình 22 năm);". Chữ mới: "Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS; theo bản thảo IZA, mỗi nước được theo dõi từ 12 đến 34 năm, trung bình 22 năm);". Lý do: Số theo bản thảo IZA DP 5799 (bản PNAS không mở được toàn văn). Số lấy từ bản thảo IZA; bản PNAS chưa mở được toàn văn, nên chưa xác nhận số trong bản in. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp bản thảo IZA DP 5799 (37 nước, 12–34 năm, trung bình 22); trang ghi nguồn là bản thảo.'
+    review: dung
+  - id: n67
+    cau: Phía phản bác (Stevenson & Wolfers) dùng Gallup World Poll và World Values Survey bao phủ nhiều nước; hai bên đều dùng câu hỏi khảo sát tổng thể, không phải đo thời gian thực.
+    loai: phat-hien
+    nguon:
+      - sw2008
+    trich: 'These surveys typically involve questions probing happiness or life satisfaction. The World Values Survey, for example, asks, "Taking all things together, would you say you are: very happy; quite happy; not very happy; not at all happy?"'
+    vi_tri: tr. 4
+    ket_qua: dung
+    ghi_chu: Câu "cả hai bên đều không đo thời gian thực" là suy luận từ mô tả dữ liệu; Easterlin 2010 dùng dữ liệu life satisfaction/happiness tổng thể (IZA DP).
+  - id: n68
+    cau: 'Ngộ nhận 1: "trên 75.000 USD tiền không làm hạnh phúc hơn" sai ở ba điểm (điểm giữa nhóm 60–90k Mỹ 2008–09; chỉ cho hạnh phúc cảm xúc, đánh giá cuộc sống vẫn tăng; theo 2023 chỉ nhóm 20% ít hạnh phúc nhất).'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+      - kd2010
+    trich: The threshold of $75,000, which has been frequently quoted, is simply the midpoint of the "60 to 90K" income category.
+    vi_tri: KKM 2023; K&D 2010, tr. 3
+    ket_qua: dung
+  - id: n69
+    cau: 'Ngộ nhận 2: nghịch lý Easterlin nói về hạnh phúc giữa các nước và theo tăng trưởng GDP, không phủ nhận người giàu hơn hạnh phúc hơn trong cùng một nước.'
+    loai: phat-hien
+    nguon:
+      - easterlin1974
+    trich: Within countries there is a noticeable positive association between income and happiness—in every single survey
+    vi_tri: tr. 117
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Sai: nghịch lý nói về *tăng trưởng GDP theo thời gian*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán.". Chữ mới: "Sai: nghịch lý nói về hạnh phúc giữa các nước và *theo tăng trưởng GDP*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán (trong mọi cuộc khảo sát của Easterlin 1974).". Lý do: Chính xác hơn theo bài gốc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Easterlin 1974 tr. 117 ("in every single survey").'
+    review: dung
+  - id: n70
+    cau: 'Ngộ nhận 3: với nhóm bất hạnh nhất đường cong chững trên khoảng 100.000 USD; cả ba nghiên cứu chỉ mô tả liên hệ cắt ngang.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: The suffering of the unhappy group diminishes as income increases up to 100k but very little beyond that.
+    vi_tri: Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và không nghiên cứu nào trong số này đo khả năng của tiền trong việc chữa lành những nỗi khổ không mang tính vật chất.". Chữ mới: "với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và cả ba nghiên cứu chỉ mô tả mối liên hệ cắt ngang, không chứng minh tiền gây ra hạnh phúc.". Lý do: Câu cũ không có nguồn; bài KKM nêu rõ chỉ là cross-sectional associations. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích KKM 2023 (nhóm bất hạnh: tăng đến 100K rồi gần như không).'
+    review: dung
+  - id: n71
+    cau: 'Đọc thêm: liên kết tới "Hạnh phúc có đo được không?" và "Cháy hết mình là gì?".'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: hai trang có trong src/data/trang.yml và thư mục kham-pha/hanh-phuc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Hai trang "Hạnh phúc có đo được không?" và "Cháy hết mình là gì?" có trong src/data/trang.yml và src/content/docs/kham-pha/hanh-phuc/; link trên trang trỏ đúng, tiêu đề khớp.'
+    review: dung
+  - id: n72
+    cau: 'Hộp "Tóm tắt nhanh" (::tom-tat): dựng từ ba khung nhãn của trang (Đang tranh cãi: tiền có mua được hạnh phúc cảm xúc không; Khá vững: hai thứ khác nhau; Đang tranh cãi: 75.000 USD).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: trang có ba khung :::tranh-cai, :::kha-vung, :::tranh-cai; tiêu đề khung không đổi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Trang có đúng ba khung (:::tranh-cai tiền có mua được hạnh phúc cảm xúc không; :::kha-vung hai thứ khác nhau; :::tranh-cai con số 75.000 USD); hộp ::tom-tat dựng từ ba ý chính này; chữ khớp.'
+    review: dung
+  - id: n73
+    cau: 'Câu hỏi 1: khác biệt cốt lõi giữa hạnh phúc cảm xúc và đánh giá cuộc sống; giải thích: Kahneman và Deaton tách vì chúng có yếu tố ảnh hưởng khác nhau.'
+    loai: dinh-nghia
+    nguon:
+      - kd2010
+    trich: We find that emotional well-being (measured by questions about emotional experiences yesterday) and life evaluation (measured by Cantril's Self-Anchoring Scale) have different correlates.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1011492107" ]
+    luot_2_ghi_chu: Đúng.
+  - id: n74
+    cau: 'Câu hỏi 2: K&D đo hạnh phúc cảm xúc bằng câu hỏi về cảm xúc hôm qua; thang 0–10 (Cantril) đo đánh giá cuộc sống.'
+    loai: cong-cu
+    nguon:
+      - kd2010
+    trich: Emotional well-being is assessed by questions about the presence of various emotions in the experience of yesterday
+    vi_tri: tr. 1
+    ket_qua: dung
+  - id: n75
+    cau: 'Câu hỏi 3: 75.000 USD là điểm giữa nhóm thu nhập 60.000–90.000 USD trong dữ liệu Mỹ 2008–2009; phương án nhiễu: trung vị hộ gia đình Mỹ 2008 (52.000 USD, không phải 75.000).'
+    loai: so-lieu
+    nguon:
+      - kkm2023
+      - kd2010
+    trich: mean (median) US household income was $71,500 ($52,000) in 2008
+    vi_tri: K&D 2010, tr. 4 (Discussion); KKM 2023 tr. 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "- Mức thu nhập trung bình của người Mỹ năm 2010.". Chữ mới: "- Mức thu nhập trung vị của hộ gia đình Mỹ năm 2008.". Lý do: Phương án nhiễu cũ gần với số thật (thu nhập trung bình hộ Mỹ 2008 là 71.500 USD theo K&D 2010, gần 75.000); đổi sang trung vị (52.000 USD) để phương án chắc chắn sai. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp K&D 2010 (trung bình hộ Mỹ 71.500, trung vị 52.000 USD năm 2008); phương án nhiễu mới đúng là sai.'
+    review: dung
+  - id: n76
+    cau: 'Câu hỏi 4: theo KKM 2023, mô hình chững chỉ đúng với nhóm 20% ít hạnh phúc nhất, ngưỡng khoảng 100.000 USD/năm; kết quả 2010 và 2021 mô tả những nhóm khác nhau.'
+    loai: phat-hien
+    nguon:
+      - kkm2023
+    trich: A reanalysis of Killingsworth's experienced sampling data confirmed the flattening pattern only for the least happy people.
+    vi_tri: tóm tắt
+    ket_qua: dung
+  - id: n77
+    cau: 'Câu hỏi 5: chủ đề gắn nhãn Đang tranh cãi vì nghịch lý Easterlin vẫn bị phản bác và mâu thuẫn 2010–2021 mới được hòa giải trên dữ liệu người Mỹ.'
+    loai: nhan
+    nguon:
+      - kkm2023
+      - sw2008
+    nhan: tranh-cai
+    co_so:
+      - kkm2023
+      - sw2008
+    ly_do: Như khung Đang tranh cãi (tổng thể).
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1015962107", "https://doi.org/10.1353/eca.0.0001", "https://doi.org/10.1073/pnas.2208661120" ]
+    luot_2_ghi_chu: Bất đồng Easterlin-Stevenson/Wolfers còn, và KKM chỉ hòa giải hai nghiên cứu Mỹ; bình luận PNAS 2024 phản biện. Đúng.
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp, cùng cơ sở với n43."
+    review: dung
+  - id: n78
+    cau: 'Mục Nguồn: Easterlin 1974 là chương trong sách do David & Reder biên tập (tr. 89–125, Academic Press); bản trước ghi "New York: Academic Press" không đủ.'
+    loai: lich-su
+    nguon:
+      - easterlin1974
+    trich: Reprinted from Nations and Households in Economic Growth Essays in Honor of Moses Abramovitz (P. A. David and M W. Reder, eds.), Richard A. Easterlin, Does Economic Growth Improve the Human Lot? Some Empirical Evidence, Pages 89-125, Academic Press (1974)
+    vi_tri: trang 2 bản MPRA
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. New York: Academic Press.". Chữ mới: "- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. In P. A. David & M. W. Reder (Eds.), *Nations and households in economic growth* (pp. 89–125). New York: Academic Press. <https://doi.org/10.1016/B978-0-12-205050-3.50008-7>". Lý do: Sách do David & Reder biên tập; thêm DOI. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp bản MPRA (David & Reder eds., tr. 89–125, Academic Press 1974); DOI trong mục Nguồn.'
+    review: dung
+  - id: n79
+    cau: 'Mục Nguồn: các bài PNAS 2010, 2021, 2023 có số tập và DOI đúng (kiểm Crossref/PMC).'
+    loai: lich-su
+    nguon:
+      - kd2010
+      - kill2021
+      - kkm2023
+    trich: Kahneman and Deaton [Proc. Natl. Acad. Sci. U.S.A. 107, 16489–93 (2010)] [...] Killingsworth [Proc. Natl. Acad. Sci. U.S.A. 118, e2016976118 (2021)]
+    vi_tri: KKM 2023, Significance
+    ket_qua: dung
+    ghi_chu: 'Số tập và DOI khớp bài gốc (K&D 2010: 107(38); Killingsworth 2021: 118(4); KKM 2023: 120(10), e2208661120).'
 doi_chu:
-- cu: '- **Nhìn dọc (theo thời gian):** khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân lại không tăng theo.'
-  moi: '- **Nhìn dọc (theo thời gian):** theo Easterlin, khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân không tăng theo (kết luận này bị tranh cãi, xem dưới).'
-  ly_do: Câu cũ nêu kết luận của Easterlin như sự thật; Stevenson & Wolfers (2008) thấy hạnh phúc tăng ở Nhật và châu Âu.
-- cu: Phần lớn tranh cãi về tiền và hạnh phúc, như ta sẽ thấy, xuất phát từ việc lẫn lộn hai khái niệm này.
-  moi: 'Hai thứ này liên quan yếu: trong dữ liệu Gallup, các thang cảm xúc và thang Cantril tương quan với nhau đều dưới 0,31. Một phần tranh cãi về tiền và hạnh phúc xuất phát từ việc lẫn lộn hai khái niệm này; còn mâu thuẫn giữa kết quả năm 2010 và 2021, như ta sẽ thấy, nảy sinh ở cách đo và cách phân tích cùng một khía cạnh cảm xúc.'
-  ly_do: Câu cũ "phần lớn tranh cãi" không có nguồn; bài hòa giải 2023 tìm nguyên nhân ở thang đo (hiệu ứng trần) và giả định đồng nhất, không phải lẫn hai khái niệm. Thêm số tương quan từ K&D 2010.
-- cu: 'Easterlin so sánh dữ liệu hạnh phúc theo ba cách:'
-  moi: 'Easterlin tổng hợp 30 cuộc khảo sát hạnh phúc từ 1946 đến 1970 ở 19 nước, và so sánh theo ba cách:'
-  ly_do: Thêm cỡ mẫu theo bài gốc.
-- cu: '**Kết quả.** Tại một thời điểm, người có thu nhập cao hơn hạnh phúc hơn — cả khi so sánh trong nước lẫn giữa các nước. Nhưng theo thời gian, khi một nước giàu lên, hạnh phúc trung bình không tăng theo.'
-  moi: '**Kết quả.** Trong cùng một nước, ở mọi cuộc khảo sát, nhóm có địa vị (thu nhập) cao nhất hạnh phúc hơn nhóm thấp nhất. Nhưng giữa các nước tại một thời điểm, liệu có liên hệ dương hay không là chưa chắc: chênh lệch hạnh phúc giữa nước giàu và nước nghèo không như dự đoán từ chênh lệch trong nước. Và ở Mỹ từ 1946, thu nhập cao hơn không đi kèm hạnh phúc cao hơn một cách có hệ thống.'
-  ly_do: 'Chữ cũ nói người giàu hạnh phúc hơn "cả giữa các nước": Easterlin 1974 viết "whether any such positive association exists among countries at a given time is uncertain".'
-- cu: 'cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.'
-  moi: cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán cho là liên hệ dương theo thời gian là do sai sót thống kê hay lẫn quan hệ ngắn hạn với dài hạn. Một nghiên cứu châu Âu năm 2026 (33 nước) lại thấy GDP đi cùng cảm xúc tốt hơn cả giữa các nước lẫn theo thời gian. Tính đến 11/2026, cuộc tranh luận này vẫn chưa ngã ngũ.
-  ly_do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ".
-- cu: phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index — khảo sát hằng ngày trên 1.000 người Mỹ được chọn ngẫu nhiên.
-  moi: phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index (2008–2009) — khảo sát hằng ngày trên 1.000 người Mỹ.
-  ly_do: Bài gốc không nói "chọn ngẫu nhiên" trong phần đọc được.
-- cu: 'Nói chính xác hơn: không có cải thiện nào vượt qua ngưỡng *ở hoặc dưới* 90.000 USD.'
-  moi: 'Nói chính xác hơn: không có cải thiện thêm nào trên một ngưỡng *ở hoặc dưới* 90.000 USD.'
-  ly_do: Chữ rõ nghĩa theo KKM 2023 ("no further progress ... beyond a threshold at or below 90K").
-- cu: 'Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi**, tổng cộng **1.725.994 báo cáo**.'
-  moi: 'Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi** (thu nhập hộ gia đình từ 10.000 USD/năm trở lên), tổng cộng **1.725.994 báo cáo**.'
-  ly_do: Thêm điều kiện chọn mẫu theo bài gốc.
-- cu: Nói cách khác, với cách đo thời gian thực này, tiền vẫn "mua" được cảm xúc tốt hơn ở cả những mức thu nhập cao.
-  moi: Nói cách khác, với cách đo thời gian thực này, thu nhập cao hơn vẫn đi cùng cảm xúc tốt hơn ở cả những mức thu nhập cao. Đây là mối liên hệ cắt ngang, không chứng minh nhân quả; và mối liên hệ này yếu (tương quan giữa hạnh phúc trung bình và log thu nhập chỉ khoảng 0,09 trong dữ liệu experience sampling, theo bài năm 2023).
-  ly_do: '"Mua" ngụ ý nhân quả; bài KKM nêu rõ chỉ là cross-sectional associations và r = 0,09.'
-- cu: Mâu thuẫn này tồn tại suốt hai năm, cho đến khi chính hai "đối thủ" ngồi lại với nhau.
-  moi: Mâu thuẫn này kéo dài cho đến khi chính hai "đối thủ" ngồi lại với nhau (bài hòa giải đăng năm 2023).
-  ly_do: '"Suốt hai năm" không có nguồn chính xác.'
-- cu: cùng với Barbara Mellers làm trọng tài, phân tích lại
-  moi: cùng với Barbara Mellers làm người điều phối, phân tích lại
-  ly_do: Bài gốc gọi Mellers là facilitator.
-- cu: với nhóm hạnh phúc nhất, đường cong thậm chí còn *dốc hơn* trên 100.000 USD.
-  moi: ở nhóm hạnh phúc nhất (phân vị 85), đường cong thậm chí còn *dốc hơn* trên 100.000 USD.
-  ly_do: 'Bài gốc: dốc hơn có ý nghĩa ở phân vị 85 (p = 0,023); phân vị 70 chỉ gần ý nghĩa.'
-- cu: 'Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.'
-  moi: 'Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập thêm làm dịu; đây là suy đoán của họ, chưa được kiểm tra.
+  - cu: '- **Nhìn dọc (theo thời gian):** khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân lại không tăng theo.'
+    moi: '- **Nhìn dọc (theo thời gian):** theo Easterlin, khi GDP của một nước tăng lên qua nhiều thập kỷ, mức hạnh phúc trung bình của người dân không tăng theo (kết luận này bị tranh cãi, xem dưới).'
+    ly_do: Câu cũ nêu kết luận của Easterlin như sự thật; Stevenson & Wolfers (2008) thấy hạnh phúc tăng ở Nhật và châu Âu.
+  - cu: Phần lớn tranh cãi về tiền và hạnh phúc, như ta sẽ thấy, xuất phát từ việc lẫn lộn hai khái niệm này.
+    moi: 'Hai thứ này liên quan yếu: trong dữ liệu Gallup, các thang cảm xúc và thang Cantril tương quan với nhau đều dưới 0,31. Một phần tranh cãi về tiền và hạnh phúc xuất phát từ việc lẫn lộn hai khái niệm này; còn mâu thuẫn giữa kết quả năm 2010 và 2021, như ta sẽ thấy, nảy sinh ở cách đo và cách phân tích cùng một khía cạnh cảm xúc.'
+    ly_do: Câu cũ "phần lớn tranh cãi" không có nguồn; bài hòa giải 2023 tìm nguyên nhân ở thang đo (hiệu ứng trần) và giả định đồng nhất, không phải lẫn hai khái niệm. Thêm số tương quan từ K&D 2010.
+  - cu: 'Easterlin so sánh dữ liệu hạnh phúc theo ba cách:'
+    moi: 'Easterlin tổng hợp 30 cuộc khảo sát hạnh phúc từ 1946 đến 1970 ở 19 nước, và so sánh theo ba cách:'
+    ly_do: Thêm cỡ mẫu theo bài gốc.
+  - cu: '**Kết quả.** Tại một thời điểm, người có thu nhập cao hơn hạnh phúc hơn — cả khi so sánh trong nước lẫn giữa các nước. Nhưng theo thời gian, khi một nước giàu lên, hạnh phúc trung bình không tăng theo.'
+    moi: '**Kết quả.** Trong cùng một nước, ở mọi cuộc khảo sát, nhóm có địa vị (thu nhập) cao nhất hạnh phúc hơn nhóm thấp nhất. Nhưng giữa các nước tại một thời điểm, liệu có liên hệ dương hay không là chưa chắc: chênh lệch hạnh phúc giữa nước giàu và nước nghèo không như dự đoán từ chênh lệch trong nước. Và ở Mỹ từ 1946, thu nhập cao hơn không đi kèm hạnh phúc cao hơn một cách có hệ thống.'
+    ly_do: 'Chữ cũ nói người giàu hạnh phúc hơn "cả giữa các nước": Easterlin 1974 viết "whether any such positive association exists among countries at a given time is uncertain".'
+  - cu: 'cho rằng mối quan hệ giữa thu nhập và hạnh phúc là **log-tuyến tính và dương** ở cả ba chiều: trong nước, giữa các nước, và theo thời gian, với rất ít bằng chứng về điểm bão hòa. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.'
+    moi: cho rằng hạnh phúc có liên hệ dương, dạng **log-tuyến tính** với thu nhập, trong nước và giữa các nước, không thấy điểm bão hòa; theo thời gian, họ thấy tăng trưởng đi kèm hạnh phúc tăng ở Nhật và châu Âu (Mỹ là ngoại lệ chưa giải thích được). Easterlin và cộng sự (2010) đáp lại rằng các phê phán cho là liên hệ dương theo thời gian là do sai sót thống kê hay lẫn quan hệ ngắn hạn với dài hạn. Một nghiên cứu châu Âu năm 2026 (33 nước) lại thấy GDP đi cùng cảm xúc tốt hơn cả giữa các nước lẫn theo thời gian. Tính đến 11/2026, cuộc tranh luận này vẫn chưa ngã ngũ.
+    ly_do: Câu cũ nói "ở cả ba chiều" gồm theo thời gian, nhưng bài Stevenson & Wolfers thấy Mỹ là ngoại lệ; thêm phản hồi của Easterlin 2010 và nghiên cứu 2026; thêm mốc cho câu "chưa ngã ngũ".
+  - cu: phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index — khảo sát hằng ngày trên 1.000 người Mỹ được chọn ngẫu nhiên.
+    moi: phân tích **hơn 450.000 phản hồi** từ Gallup-Healthways Well-Being Index (2008–2009) — khảo sát hằng ngày trên 1.000 người Mỹ.
+    ly_do: Bài gốc không nói "chọn ngẫu nhiên" trong phần đọc được.
+  - cu: 'Nói chính xác hơn: không có cải thiện nào vượt qua ngưỡng *ở hoặc dưới* 90.000 USD.'
+    moi: 'Nói chính xác hơn: không có cải thiện thêm nào trên một ngưỡng *ở hoặc dưới* 90.000 USD.'
+    ly_do: Chữ rõ nghĩa theo KKM 2023 ("no further progress ... beyond a threshold at or below 90K").
+  - cu: 'Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi**, tổng cộng **1.725.994 báo cáo**.'
+    moi: 'Mẫu nghiên cứu: **33.391 người Mỹ có việc làm, 18–65 tuổi** (thu nhập hộ gia đình từ 10.000 USD/năm trở lên), tổng cộng **1.725.994 báo cáo**.'
+    ly_do: Thêm điều kiện chọn mẫu theo bài gốc.
+  - cu: Nói cách khác, với cách đo thời gian thực này, tiền vẫn "mua" được cảm xúc tốt hơn ở cả những mức thu nhập cao.
+    moi: Nói cách khác, với cách đo thời gian thực này, thu nhập cao hơn vẫn đi cùng cảm xúc tốt hơn ở cả những mức thu nhập cao. Đây là mối liên hệ cắt ngang, không chứng minh nhân quả; và mối liên hệ này yếu (tương quan giữa hạnh phúc trung bình và log thu nhập chỉ khoảng 0,09 trong dữ liệu experience sampling, theo bài năm 2023).
+    ly_do: '"Mua" ngụ ý nhân quả; bài KKM nêu rõ chỉ là cross-sectional associations và r = 0,09.'
+  - cu: Mâu thuẫn này tồn tại suốt hai năm, cho đến khi chính hai "đối thủ" ngồi lại với nhau.
+    moi: Mâu thuẫn này kéo dài cho đến khi chính hai "đối thủ" ngồi lại với nhau (bài hòa giải đăng năm 2023).
+    ly_do: '"Suốt hai năm" không có nguồn chính xác.'
+  - cu: cùng với Barbara Mellers làm trọng tài, phân tích lại
+    moi: cùng với Barbara Mellers làm người điều phối, phân tích lại
+    ly_do: Bài gốc gọi Mellers là facilitator.
+  - cu: với nhóm hạnh phúc nhất, đường cong thậm chí còn *dốc hơn* trên 100.000 USD.
+    moi: ở nhóm hạnh phúc nhất (phân vị 85), đường cong thậm chí còn *dốc hơn* trên 100.000 USD.
+    ly_do: 'Bài gốc: dốc hơn có ý nghĩa ở phân vị 85 (p = 0,023); phân vị 70 chỉ gần ý nghĩa.'
+  - cu: 'Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải sai thành quy luật chung cho mọi người: tiền xóa được những nỗi khổ do thiếu tiền gây ra, nhưng không xóa được những nỗi khổ có nguyên nhân khác.'
+    moi: 'Nói cách khác, ngưỡng 75.000 USD năm 2010 thực chất "bắt" được nhóm người bất hạnh nhất, rồi bị diễn giải thành quy luật chung cho mọi người. Các tác giả suy đoán rằng ngưỡng khoảng 100.000 USD có thể là mức mà những nỗi khổ còn lại (họ nêu ví dụ như đau lòng, mất người thân) không còn được thu nhập thêm làm dịu; đây là suy đoán của họ, chưa được kiểm tra.
 
 
-    Hòa giải này không phải lời cuối. Năm 2024, hai bình luận trên PNAS (Rohrer và Wenz; Arslan) cho rằng bài dựa vào giả định nhân quả không có cơ sở, và rằng ngưỡng 100.000 USD không được ước lượng từ dữ liệu của Killingsworth mà lấy từ nghiên cứu năm 2010; nhóm tác giả đã trả lời lại trong cùng năm.'
-  ly_do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024.
-- cu: Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) mới chỉ được hòa giải năm 2023 trên dữ liệu người Mỹ. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.
-  moi: Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) được hòa giải năm 2023 trên dữ liệu người Mỹ, và cách hòa giải ấy lại bị bình luận năm 2024. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.
-  ly_do: Thêm bình luận 2024 và "mới chỉ" thành "được".
-- cu: 'Sự phân biệt này được lặp lại qua nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau. Đây là phần vững chắc nhất của cả câu chuyện.'
-  moi: 'Sự phân biệt này được thấy trong nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau (Kahneman và Deaton, 2010; Kahneman và cộng sự, 2004). Riêng với thu nhập, Killingsworth (2021) không thấy mức thu nhập nào mà hai thứ tách ra. Đây là phần ít tranh cãi nhất của cả câu chuyện.'
-  ly_do: '"Phần vững chắc nhất" vượt nhãn Khá vững; thêm điểm Killingsworth 2021 không thấy tách rời theo thu nhập.'
-- cu: Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, nó chỉ mô tả đúng nhóm 20% ít hạnh phúc nhất.
-  moi: Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, hiện tượng chững lại chỉ có ở nhóm 15–20% ít hạnh phúc nhất (cách xác định ngưỡng này bị bình luận năm 2024).
-  ly_do: Bài gốc nói 15% (phân vị) đến 20%; thêm bình luận 2024.
-- cu: 'Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập: tăng'
-  moi: 'Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập: tăng'
-  ly_do: Kahneman & Deaton thấy cảm xúc chững lại ở ~75.000 USD.
-- cu: Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại — cô đơn, bệnh tật, xung đột, cảm giác vô nghĩa — không đáp ứng với thu nhập thêm. Đây chính là lời giải của bài báo 2023 cho nhóm 20% ít hạnh phúc nhất.
-  moi: 'Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại không đáp ứng với thu nhập thêm: bài báo 2023 đề xuất cách giải thích này cho nhóm ít hạnh phúc nhất và nêu ví dụ đau lòng, mất người thân; đây là suy đoán của các tác giả, chưa được kiểm tra.'
-  ly_do: Danh sách "cô đơn, bệnh tật, xung đột, vô nghĩa" không có trong bài 2023; bài nêu heartbreak, bereavement, clinical depression như ví dụ có thể có, và chỉ là suy đoán.
-- cu: '### 2. Nếu thu nhập còn thấp, tăng thu nhập là một trong những cách cải thiện tinh thần hiệu quả nhất :nhan[tranh-cai]'
-  moi: '### 2. Nếu thu nhập còn thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất (chưa chứng minh nhân quả) :nhan[tranh-cai] { #2-neu-thu-nhap-con-thap-tang-thu-nhap-la-mot-trong-nhung-cach-cai-thien-tinh-than-hieu-qua-nhat-tranh-cai }'
-  ly_do: Tiêu đề cũ ngụ ý nhân quả và "hiệu quả nhất" không có nguồn; giữ id cũ.
-- cu: 'Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.'
-  moi: Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (người thu nhập cao hơn thì tốt hơn), không chứng minh tăng thu nhập làm tinh thần tốt lên. Với giới hạn đó, "tiền không mua được hạnh phúc" có vẻ là câu nói xa xỉ — theo các dữ liệu này nó ít đúng nhất với người đang thiếu tiền.
-  ly_do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang.
-- cu: 'Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân nhiều khả năng nằm ở những thứ tiền không chạm tới: các mối quan hệ, sức khỏe, cảm giác có ý nghĩa.'
-  moi: Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ.
-  ly_do: Chữ cũ "nhiều khả năng" và liệt kê quan hệ, sức khỏe, ý nghĩa không có nguồn; thêm dẫn tới Hỗ trợ.
-- cu: '**Chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt**, và không suy diễn từ dữ liệu Mỹ sang Việt Nam.'
-  moi: 'Tính đến 11/2026, **chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt** (lần tìm chưa hệ thống: Europe PMC, chưa tìm tạp chí trong nước), và không suy diễn từ dữ liệu Mỹ sang Việt Nam.'
-  ly_do: Thêm mốc và nêu rõ phạm vi lần tìm.
-- cu: chưa có bản sao nào của thiết kế này ở châu Á hay Việt Nam.
-  moi: chưa thấy bản sao nào của thiết kế này ở châu Á hay Việt Nam (tính đến 11/2026; lần tìm chưa hệ thống).
-  ly_do: Câu phủ định cần mốc và nói rõ phạm vi tìm.
-- cu: Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS, mỗi nước theo dõi trung bình 22 năm);
-  moi: Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS; theo bản thảo IZA, mỗi nước được theo dõi từ 12 đến 34 năm, trung bình 22 năm);
-  ly_do: Số theo bản thảo IZA DP 5799 (bản PNAS không mở được toàn văn).
-- cu: 'Sai: nghịch lý nói về *tăng trưởng GDP theo thời gian*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán.'
-  moi: 'Sai: nghịch lý nói về hạnh phúc giữa các nước và *theo tăng trưởng GDP*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán (trong mọi cuộc khảo sát của Easterlin 1974).'
-  ly_do: Chính xác hơn theo bài gốc.
-- cu: với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và không nghiên cứu nào trong số này đo khả năng của tiền trong việc chữa lành những nỗi khổ không mang tính vật chất.
-  moi: với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và cả ba nghiên cứu chỉ mô tả mối liên hệ cắt ngang, không chứng minh tiền gây ra hạnh phúc.
-  ly_do: Câu cũ không có nguồn; bài KKM nêu rõ chỉ là cross-sectional associations.
-- cu: '- Mức thu nhập trung bình của người Mỹ năm 2010.'
-  moi: '- Mức thu nhập trung vị của hộ gia đình Mỹ năm 2008.'
-  ly_do: Phương án nhiễu cũ gần với số thật (thu nhập trung bình hộ Mỹ 2008 là 71.500 USD theo K&D 2010, gần 75.000); đổi sang trung vị (52.000 USD) để phương án chắc chắn sai.
-- cu: '- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. New York: Academic Press.'
-  moi: '- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. In P. A. David & M. W. Reder (Eds.), *Nations and households in economic growth* (pp. 89–125). New York: Academic Press. <https://doi.org/10.1016/B978-0-12-205050-3.50008-7>'
-  ly_do: Sách do David & Reder biên tập; thêm DOI.
-- cu: '- Stevenson, B., & Wolfers, J. (2008). Economic growth and subjective well-being: Reassessing the Easterlin paradox. *Brookings Papers on Economic Activity*, 39(1), 1–87.'
-  moi: '- Fors Connolly, F., Hjerm, M., & Gärling, T. (2026). Economic development and emotional well-being: Longitudinal evidence from 33 European countries. *Scientific Reports*. <https://doi.org/10.1038/s41598-026-59695-1>
+      Hòa giải này không phải lời cuối. Năm 2024, hai bình luận trên PNAS (Rohrer và Wenz; Arslan) cho rằng bài dựa vào giả định nhân quả không có cơ sở, và rằng ngưỡng 100.000 USD không được ước lượng từ dữ liệu của Killingsworth mà lấy từ nghiên cứu năm 2010; nhóm tác giả đã trả lời lại trong cùng năm.'
+    ly_do: Câu cũ nêu nguyên nhân như điều đã biết ("tiền xóa được … không xóa được …"); KKM 2023 chỉ nêu như suy đoán ("may represent"). Thêm các bình luận 2024.
+  - cu: Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) mới chỉ được hòa giải năm 2023 trên dữ liệu người Mỹ. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.
+    moi: Nghịch lý Easterlin vẫn bị phản bác bằng dữ liệu mới hơn; mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) được hòa giải năm 2023 trên dữ liệu người Mỹ, và cách hòa giải ấy lại bị bình luận năm 2024. Chưa có đồng thuận cho mọi nền văn hóa và mọi thời điểm.
+    ly_do: Thêm bình luận 2024 và "mới chỉ" thành "được".
+  - cu: 'Sự phân biệt này được lặp lại qua nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau. Đây là phần vững chắc nhất của cả câu chuyện.'
+    moi: 'Sự phân biệt này được thấy trong nhiều nghiên cứu với nhiều cách đo: cảm xúc hằng ngày và đánh giá tổng thể cuộc đời có các yếu tố ảnh hưởng khác nhau (Kahneman và Deaton, 2010; Kahneman và cộng sự, 2004). Riêng với thu nhập, Killingsworth (2021) không thấy mức thu nhập nào mà hai thứ tách ra. Đây là phần ít tranh cãi nhất của cả câu chuyện.'
+    ly_do: '"Phần vững chắc nhất" vượt nhãn Khá vững; thêm điểm Killingsworth 2021 không thấy tách rời theo thu nhập.'
+  - cu: Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, nó chỉ mô tả đúng nhóm 20% ít hạnh phúc nhất.
+    moi: Đây không phải một hằng số tâm lý học. Nó là điểm giữa của một nhóm thu nhập trong dữ liệu khảo sát người Mỹ 2008–2009, và theo phân tích năm 2023, hiện tượng chững lại chỉ có ở nhóm 15–20% ít hạnh phúc nhất (cách xác định ngưỡng này bị bình luận năm 2024).
+    ly_do: Bài gốc nói 15% (phân vị) đến 20%; thêm bình luận 2024.
+  - cu: 'Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập: tăng'
+    moi: 'Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập: tăng'
+    ly_do: Kahneman & Deaton thấy cảm xúc chững lại ở ~75.000 USD.
+  - cu: Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại — cô đơn, bệnh tật, xung đột, cảm giác vô nghĩa — không đáp ứng với thu nhập thêm. Đây chính là lời giải của bài báo 2023 cho nhóm 20% ít hạnh phúc nhất.
+    moi: 'Khi những nỗi khổ mang tính vật chất đã được giải quyết, những gì còn lại không đáp ứng với thu nhập thêm: bài báo 2023 đề xuất cách giải thích này cho nhóm ít hạnh phúc nhất và nêu ví dụ đau lòng, mất người thân; đây là suy đoán của các tác giả, chưa được kiểm tra.'
+    ly_do: Danh sách "cô đơn, bệnh tật, xung đột, vô nghĩa" không có trong bài 2023; bài nêu heartbreak, bereavement, clinical depression như ví dụ có thể có, và chỉ là suy đoán.
+  - cu: '### 2. Nếu thu nhập còn thấp, tăng thu nhập là một trong những cách cải thiện tinh thần hiệu quả nhất :nhan[tranh-cai]'
+    moi: '### 2. Nếu thu nhập còn thấp, mối liên hệ giữa thu nhập và tinh thần dốc nhất (chưa chứng minh nhân quả) :nhan[tranh-cai] { #2-neu-thu-nhap-con-thap-tang-thu-nhap-la-mot-trong-nhung-cach-cai-thien-tinh-than-hieu-qua-nhat-dang-tranh-cai }'
+    ly_do: Tiêu đề cũ ngụ ý nhân quả và "hiệu quả nhất" không có nguồn; giữ id cũ.
+  - cu: 'Đây là điểm mà cả ba nghiên cứu đều đồng ý: ở vùng thu nhập thấp, đường cong dốc nhất. Thu nhập tăng ở vùng này gắn với việc giảm lo âu tài chính và giảm nỗi đau khi gặp biến cố. Nói cách khác, "tiền không mua được hạnh phúc" là một câu nói xa xỉ — nó ít đúng nhất với người đang thiếu tiền.'
+    moi: Cả ba nghiên cứu đều thấy hạnh phúc tăng theo logarit thu nhập, nên mỗi đô la thêm đi cùng mức tăng lớn nhất ở vùng thu nhập thấp; ở đó, theo Kahneman và Deaton (2010), thu nhập thấp còn làm nỗi đau khi gặp ly hôn, bệnh tật hay sống một mình nặng hơn. Nhưng cả ba chỉ mô tả mối liên hệ cắt ngang (người thu nhập cao hơn thì tốt hơn), không chứng minh tăng thu nhập làm tinh thần tốt lên. Với giới hạn đó, "tiền không mua được hạnh phúc" có vẻ là câu nói xa xỉ — theo các dữ liệu này nó ít đúng nhất với người đang thiếu tiền.
+    ly_do: Chữ cũ nói "cải thiện tinh thần hiệu quả nhất", "giảm lo âu tài chính" (không có nguồn) và ngụ ý nhân quả; bài chỉ có liên hệ cắt ngang.
+  - cu: 'Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân nhiều khả năng nằm ở những thứ tiền không chạm tới: các mối quan hệ, sức khỏe, cảm giác có ý nghĩa.'
+    moi: Nếu bạn đã đủ đầy về vật chất mà vẫn bất hạnh, nguyên nhân có thể nằm ở những thứ thu nhập thêm không chạm tới (các tác giả bài 2023 nêu ví dụ như đau lòng, mất người thân); đây là suy đoán của họ, chưa được kiểm tra. Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ.
+    ly_do: Chữ cũ "nhiều khả năng" và liệt kê quan hệ, sức khỏe, ý nghĩa không có nguồn; thêm dẫn tới Hỗ trợ.
+  - cu: '**Chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt**, và không suy diễn từ dữ liệu Mỹ sang Việt Nam.'
+    moi: 'Tính đến 11/2026, **chúng tôi chưa tìm thấy nghiên cứu nào về mối quan hệ thu nhập–hạnh phúc trên người Việt** (lần tìm chưa hệ thống: Europe PMC, chưa tìm tạp chí trong nước), và không suy diễn từ dữ liệu Mỹ sang Việt Nam.'
+    ly_do: Thêm mốc và nêu rõ phạm vi lần tìm.
+  - cu: chưa có bản sao nào của thiết kế này ở châu Á hay Việt Nam.
+    moi: chưa thấy bản sao nào của thiết kế này ở châu Á hay Việt Nam (tính đến 11/2026; lần tìm chưa hệ thống).
+    ly_do: Câu phủ định cần mốc và nói rõ phạm vi tìm.
+  - cu: Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS, mỗi nước theo dõi trung bình 22 năm);
+    moi: Phía ủng hộ nghịch lý Easterlin có dữ liệu 37 nước (Easterlin và cộng sự, 2010, PNAS; theo bản thảo IZA, mỗi nước được theo dõi từ 12 đến 34 năm, trung bình 22 năm);
+    ly_do: Số theo bản thảo IZA DP 5799 (bản PNAS không mở được toàn văn).
+  - cu: 'Sai: nghịch lý nói về *tăng trưởng GDP theo thời gian*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán.'
+    moi: 'Sai: nghịch lý nói về hạnh phúc giữa các nước và *theo tăng trưởng GDP*, không phủ nhận rằng trong cùng một nước, người giàu hơn hạnh phúc hơn — kết quả này khá nhất quán (trong mọi cuộc khảo sát của Easterlin 1974).'
+    ly_do: Chính xác hơn theo bài gốc.
+  - cu: với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và không nghiên cứu nào trong số này đo khả năng của tiền trong việc chữa lành những nỗi khổ không mang tính vật chất.
+    moi: với nhóm bất hạnh nhất, đường cong chững lại trên khoảng 100.000 USD; và cả ba nghiên cứu chỉ mô tả mối liên hệ cắt ngang, không chứng minh tiền gây ra hạnh phúc.
+    ly_do: Câu cũ không có nguồn; bài KKM nêu rõ chỉ là cross-sectional associations.
+  - cu: '- Mức thu nhập trung bình của người Mỹ năm 2010.'
+    moi: '- Mức thu nhập trung vị của hộ gia đình Mỹ năm 2008.'
+    ly_do: Phương án nhiễu cũ gần với số thật (thu nhập trung bình hộ Mỹ 2008 là 71.500 USD theo K&D 2010, gần 75.000); đổi sang trung vị (52.000 USD) để phương án chắc chắn sai.
+  - cu: '- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. New York: Academic Press.'
+    moi: '- Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. In P. A. David & M. W. Reder (Eds.), *Nations and households in economic growth* (pp. 89–125). New York: Academic Press. <https://doi.org/10.1016/B978-0-12-205050-3.50008-7>'
+    ly_do: Sách do David & Reder biên tập; thêm DOI.
+  - cu: '- Stevenson, B., & Wolfers, J. (2008). Economic growth and subjective well-being: Reassessing the Easterlin paradox. *Brookings Papers on Economic Activity*, 39(1), 1–87.'
+    moi: '- Fors Connolly, F., Hjerm, M., & Gärling, T. (2026). Economic development and emotional well-being: Longitudinal evidence from 33 European countries. *Scientific Reports*. <https://doi.org/10.1038/s41598-026-59695-1>
 
-    - Stevenson, B., & Wolfers, J. (2008). Economic growth and subjective well-being: Reassessing the Easterlin paradox. *Brookings Papers on Economic Activity*, 39(1), 1–87. (Bản làm việc: NBER Working Paper 14282.)'
-  ly_do: Thêm nguồn mới dùng trong bài.
-- cu: '- Killingsworth, M. A., Kahneman, D., & Mellers, B. (2023).'
-  moi: '- Killingsworth, M. A., Kahneman, D., & Mellers, B. (2024). Reply to Rohrer and Wenz and Arslan: The association between income and emotional well-being. *Proceedings of the National Academy of Sciences*, 121, e2322160121. <https://doi.org/10.1073/pnas.2322160121>
+      - Stevenson, B., & Wolfers, J. (2008). Economic growth and subjective well-being: Reassessing the Easterlin paradox. *Brookings Papers on Economic Activity*, 39(1), 1–87. (Bản làm việc: NBER Working Paper 14282.)'
+    ly_do: Thêm nguồn mới dùng trong bài.
+  - cu: '- Killingsworth, M. A., Kahneman, D., & Mellers, B. (2023).'
+    moi: '- Killingsworth, M. A., Kahneman, D., & Mellers, B. (2024). Reply to Rohrer and Wenz and Arslan: The association between income and emotional well-being. *Proceedings of the National Academy of Sciences*, 121, e2322160121. <https://doi.org/10.1073/pnas.2322160121>
 
-    - Killingsworth, M. A., Kahneman, D., & Mellers, B. (2023).'
-  ly_do: Thêm nguồn mới dùng trong bài.
-- cu: '- Stevenson, B., & Wolfers'
-  moi: '- Rohrer, J. M., & Wenz, S. E. (2024). Inappropriate causal assumptions underlie Killingsworth, Kahneman, and Mellers'' conclusions. *Proceedings of the National Academy of Sciences*, 121, e2313712121. <https://doi.org/10.1073/pnas.2313712121>
+      - Killingsworth, M. A., Kahneman, D., & Mellers, B. (2023).'
+    ly_do: Thêm nguồn mới dùng trong bài.
+  - cu: '- Stevenson, B., & Wolfers'
+    moi: '- Rohrer, J. M., & Wenz, S. E. (2024). Inappropriate causal assumptions underlie Killingsworth, Kahneman, and Mellers'' conclusions. *Proceedings of the National Academy of Sciences*, 121, e2313712121. <https://doi.org/10.1073/pnas.2313712121>
 
-    - Stevenson, B., & Wolfers'
-  ly_do: Thêm nguồn mới dùng trong bài (sau mục Fors Connolly, đặt đúng thứ tự chữ cái).
-- cu: '- Easterlin, R. A. (1974).'
-  moi: '- Arslan, R. C. (2024). The miseries that remain may yet be alleviated. *Proceedings of the National Academy of Sciences*, 121, e2314207121. <https://doi.org/10.1073/pnas.2314207121>
+      - Stevenson, B., & Wolfers'
+    ly_do: Thêm nguồn mới dùng trong bài (sau mục Fors Connolly, đặt đúng thứ tự chữ cái).
+  - cu: '- Easterlin, R. A. (1974).'
+    moi: '- Arslan, R. C. (2024). The miseries that remain may yet be alleviated. *Proceedings of the National Academy of Sciences*, 121, e2314207121. <https://doi.org/10.1073/pnas.2314207121>
 
-    - Easterlin, R. A. (1974).'
-  ly_do: Thêm nguồn mới dùng trong bài.
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch); tiêu đề ba khung nhãn không đổi nên chữ trong hộp không đổi.
+      - Easterlin, R. A. (1974).'
+    ly_do: Thêm nguồn mới dùng trong bài.
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch); tiêu đề ba khung nhãn không đổi nên chữ trong hộp không đổi.
+  - cu: 'Lý thuyết logarit: "Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập: tăng từ 20.000 lên 60.000 USD có tác động tương đương tăng từ 60.000 lên 180.000 USD."'
+    moi: '"Cả ba nghiên cứu hiện đại đều thấy hạnh phúc tăng theo *logarit* thu nhập ít nhất ở một dải thu nhập. Nếu đúng dạng logarit, tăng từ 20.000 lên 60.000 USD có tác động tương đương tăng từ 60.000 lên 180.000 USD (cùng gấp ba lần)."'
+    ly_do: "Review n49: K&D 2010 thấy cảm xúc chững ở khoảng 75.000 USD, nên ví dụ không đúng cho cả ba nghiên cứu."
+  - cu: 'Áp dụng 3: "Nếu tình trạng này kéo dài, hãy xem trang Hỗ trợ."'
+    moi: '"Nếu tình trạng này kéo dài, hãy xem trang [Hỗ trợ](/psyche/ho-tro/)."'
+    ly_do: "Review n61: thêm link cho khớp hồ sơ."

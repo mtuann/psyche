@@ -57,7 +57,7 @@ Các tác giả coi đây là bằng chứng thực nghiệm cho vai trò nhân 
 ## Mức độ chắc chắn
 
 :::kha-vung[giấc ngủ sóng chậm củng cố trí nhớ tường thuật]
-Ngủ sau khi học giúp nhớ lại tốt hơn một khoảng thức dài bằng nhau: phân tích tổng hợp 823 hiệu ứng từ 271 mẫu thấy lợi ích ở mức vừa (g = 0,44), giảm còn g = 0,28 sau khi hiệu chỉnh thiên lệch báo cáo chọn lọc ([Berres và Erdfelder, 2021](https://doi.org/10.1037/bul0000350)). Phân tích tổng hợp 91 thí nghiệm "nhắc lại ký ức có chủ đích" thấy việc nhắc trong giấc ngủ sóng chậm có tác dụng nhỏ nhưng ổn định (g = 0,27), còn nhắc trong REM hay lúc thức thì không ([Hu và cộng sự, 2020](https://doi.org/10.1037/bul0000223)), khớp với thí nghiệm nhắc mùi năm 2007. Vì sao chỉ "khá vững" chứ chưa "vững chắc": hiệu ứng nhỏ đến vừa, các thí nghiệm kể ở trang này có mẫu nhỏ, và phần "ký ức được chuyển dần về vỏ não" vẫn là một mô hình — bài tổng quan 2010 viết rằng điều đó chưa được chứng minh trực tiếp.
+Ngủ sau khi học giúp nhớ lại tốt hơn một khoảng thức dài bằng nhau: phân tích tổng hợp 823 hiệu ứng từ 271 mẫu thấy lợi ích ở mức vừa (g = 0,44), giảm còn g = 0,28 sau khi hiệu chỉnh thiên lệch báo cáo chọn lọc ([Berres và Erdfelder, 2021](https://doi.org/10.1037/bul0000350)). Phân tích tổng hợp 91 thí nghiệm "nhắc lại ký ức có chủ đích" thấy việc nhắc trong giấc ngủ sóng chậm có tác dụng nhỏ (g = 0,27), còn nhắc trong REM hay lúc thức thì không ([Hu và cộng sự, 2020](https://doi.org/10.1037/bul0000223)), khớp với thí nghiệm nhắc mùi năm 2007. Vì sao chỉ "khá vững" chứ chưa "vững chắc": hiệu ứng nhỏ đến vừa, các thí nghiệm kể ở trang này có mẫu nhỏ, và phần "ký ức được chuyển dần về vỏ não" vẫn là một mô hình — bài tổng quan 2010 viết rằng điều đó chưa được chứng minh trực tiếp.
 :::
 
 :::tranh-cai[vai trò chính xác của giấc ngủ REM]
@@ -86,7 +86,7 @@ Nghiên cứu của Gais và cộng sự cho thấy ngủ *trong vài giờ sau 
 
 ### 2. Đừng thức trắng đêm trước ngày thi :nhan[kha-vung] { #2-dung-thuc-trang-dem-truoc-ngay-thi-vung-chac }
 
-Nghiên cứu của Gais và cộng sự cùng phân tích tổng hợp về lợi ích của giấc ngủ cho thấy thức trắng không chỉ khiến bạn mệt mỏi lúc làm bài: người thức trắng còn nhớ lại phần đã học kém hơn người đã ngủ, kể cả sau khi ngủ bù. Chưa có nghiên cứu nào ở đây so sánh trực tiếp việc dùng đêm thức để học thêm với việc ngủ đủ, nên chúng tôi không khẳng định đêm ngủ đủ "lợi" hơn bao nhiêu so với vài tiếng nhồi nhét thêm. Nếu bạn thường xuyên khó ngủ hay mất ngủ kéo dài, hãy trao đổi với người có chuyên môn (hướng dẫn của NHS cũng khuyên đi khám khi mất ngủ kéo dài nhiều tháng hay ảnh hưởng đến sinh hoạt hằng ngày); xem thêm trang [Hỗ trợ](/psyche/ho-tro/).
+Thức trắng không chỉ khiến bạn mệt lúc làm bài. Trong thí nghiệm của Gais và cộng sự (14 học sinh), người tham gia nhớ lại phần đã học kém hơn sau đêm thức trắng so với khi được ngủ, kể cả khi đã ngủ bù trước lúc kiểm tra. Phân tích tổng hợp của Berres và Erdfelder (2021) cũng thấy người ngủ nhớ lại nhiều hơn người thức cùng khoảng thời gian. Chưa có nghiên cứu nào ở đây so sánh trực tiếp việc dùng đêm thức để học thêm với việc ngủ đủ, nên chúng tôi không khẳng định đêm ngủ đủ "lợi" hơn bao nhiêu so với vài tiếng nhồi nhét thêm. Nếu bạn thường xuyên khó ngủ hay mất ngủ kéo dài, hãy trao đổi với người có chuyên môn (hướng dẫn của NHS cũng khuyên đi khám khi mất ngủ kéo dài nhiều tháng hay ảnh hưởng đến sinh hoạt hằng ngày); xem thêm trang [Hỗ trợ](/psyche/ho-tro/).
 
 ### 3. Muốn nhớ lâu, hãy để ký ức "qua đêm" nhiều lần :nhan[kha-vung]
 

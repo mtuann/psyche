@@ -4,831 +4,1120 @@ nguon_cu: ../psyche-zero/docs/kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-10'
-  nhanh: moi/d6-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L1 phần 1/2)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d6-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L1 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L1)
+      review: Claude Opus 5.5 (agent review D6-L1, 10/11/2026)
+      kiem_mau: null
 nguon:
-- id: diekelmann2010
-  ten: 'Diekelmann & Born (2010), Nat Rev Neurosci 11(2), 114–126: toàn văn (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
-  link: https://doi.org/10.1038/nrn2762
-  toan_van: true
-- id: gais2006
-  ten: 'Gais, Lucas & Born (2006), Learn Mem 13(3), 259–262: toàn văn (PDF, Internet Archive)'
-  link: https://doi.org/10.1101/lm.132106
-  toan_van: true
-- id: rasch2007
-  ten: 'Rasch và cộng sự (2007), Science 315(5817), 1426–1429: toàn văn (PDF, Internet Archive)'
-  link: https://doi.org/10.1126/science.1138581
-  toan_van: true
-- id: rasch2009
-  ten: 'Rasch và cộng sự (2009), Nat Neurosci 12(4), 396–397: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1038/nn.2206
-  toan_van: false
-- id: berres2021
-  ten: 'Berres & Erdfelder (2021), Psychol Bull 147(12), 1309–1353: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1037/bul0000350
-  toan_van: false
-- id: hu2020
-  ten: 'Hu và cộng sự (2020), Psychol Bull 146(3), 218–244: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1037/bul0000223
-  toan_van: false
-- id: ataei2023
-  ten: 'Ataei và cộng sự (2023), Sleep Med Rev 72, 101852: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/j.smrv.2023.101852
-  toan_van: false
-- id: zust2019
-  ten: 'Züst và cộng sự (2019), Curr Biol 29(4), 541–553: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/j.cub.2018.12.038
-  toan_van: false
-- id: le2026
-  ten: 'Le và cộng sự (2026), Front Psychol 17, 1848504: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.3389/fpsyg.2026.1848504
-  toan_van: false
-- id: nhs-insomnia
-  ten: NHS, Insomnia (đọc 10/11/2026)
-  link: https://www.nhs.uk/conditions/insomnia/
-  toan_van: true
-- id: tim-vn
-  ten: 'Tìm trên Europe PMC (10/11/2026): hai truy vấn sleep + memory + Vietnam*/Vietnamese: không có thí nghiệm ngủ-trí nhớ trên người Việt; chỉ có Le 2026'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=sleep%20AND%20memory%20AND%20Vietnam*
-  toan_van: false
+  - id: diekelmann2010
+    ten: 'Diekelmann & Born (2010), Nat Rev Neurosci 11(2), 114–126: toàn văn (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1038/nrn2762
+    toan_van: true
+  - id: gais2006
+    ten: 'Gais, Lucas & Born (2006), Learn Mem 13(3), 259–262: toàn văn (PDF, Internet Archive)'
+    link: https://doi.org/10.1101/lm.132106
+    toan_van: true
+  - id: rasch2007
+    ten: 'Rasch và cộng sự (2007), Science 315(5817), 1426–1429: toàn văn (PDF, Internet Archive)'
+    link: https://doi.org/10.1126/science.1138581
+    toan_van: true
+  - id: rasch2009
+    ten: 'Rasch và cộng sự (2009), Nat Neurosci 12(4), 396–397: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1038/nn.2206
+    toan_van: false
+  - id: berres2021
+    ten: 'Berres & Erdfelder (2021), Psychol Bull 147(12), 1309–1353: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/bul0000350
+    toan_van: false
+  - id: hu2020
+    ten: 'Hu và cộng sự (2020), Psychol Bull 146(3), 218–244: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/bul0000223
+    toan_van: false
+  - id: ataei2023
+    ten: 'Ataei và cộng sự (2023), Sleep Med Rev 72, 101852: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.smrv.2023.101852
+    toan_van: false
+  - id: zust2019
+    ten: 'Züst và cộng sự (2019), Curr Biol 29(4), 541–553: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.cub.2018.12.038
+    toan_van: false
+  - id: le2026
+    ten: 'Le và cộng sự (2026), Front Psychol 17, 1848504: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.3389/fpsyg.2026.1848504
+    toan_van: false
+  - id: nhs-insomnia
+    ten: NHS, Insomnia (đọc 10/11/2026)
+    link: https://www.nhs.uk/conditions/insomnia/
+    toan_van: true
+  - id: tim-vn
+    ten: 'Tìm trên Europe PMC (10/11/2026): hai truy vấn sleep + memory + Vietnam*/Vietnamese: không có thí nghiệm ngủ-trí nhớ trên người Việt; chỉ có Le 2026'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=sleep%20AND%20memory%20AND%20Vietnam*
+    toan_van: false
 nhan_dinh:
-- id: n1
-  cau: 'Mô tả: giấc ngủ, nhất là giấc ngủ sóng chậm, có thể giúp củng cố trí nhớ.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: Sleep has been identified as a state that optimizes the consolidation of newly acquired information in memory
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Giấc ngủ sóng chậm củng cố trí nhớ như thế nào". Chữ mới: "Giấc ngủ, nhất là giấc ngủ sóng chậm, có thể giúp củng cố trí nhớ như thế nào". Lý do: cơ chế SWS là mô hình (n12).'
-- id: n2
-  cau: 'Đáp án thu gọn: người ngủ sau khi học nhớ lại nhiều hơn khi thức trắng, kể cả khi người thức trắng đã được ngủ bù trước lúc kiểm tra; nên nhiều khả năng An nhớ phần đã học tốt hơn.'
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Subjects remembered clearly more of the learned vocabulary when they had slept during the night following learning than when they had stayed awake
-  vi_tri: tr. 260, thí nghiệm 2
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "**An nhớ tốt hơn** … giấc ngủ sau khi học *chủ động* củng cố trí nhớ, còn thức trắng thì phá hỏng quá trình đó." Chữ mới: "**Nhiều khả năng An nhớ phần đã học tốt hơn** … Trong thí nghiệm bên dưới, người ngủ sau khi học nhớ lại nhiều hơn khi thức trắng …". Lý do: 14 người, danh sách ngắn; "chủ động củng cố/phá hỏng" là diễn giải.'
-- id: n3
-  cau: Trong thí nghiệm của Gais, người thức trắng không dùng đêm để học thêm (xem TV, chơi trò chơi), nên phần "Bình học thêm mấy tiếng" chưa được kiểm tra trực tiếp.
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: During sleep deprivation, subjects were engaged in activities such as watching TV and playing games. Reading was not allowed
-  vi_tri: tr. 260
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: (không có; đáp án coi như thức đêm để học thêm cũng thua). Chữ mới: câu thêm. Lý do: nguồn không kiểm tra việc học thêm.'
-- id: n4
-  cau: Theo mô hình được nhiều nhà nghiên cứu ủng hộ, khi ngủ sâu não tái kích hoạt ("phát lại") những gì đã học trong ngày.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: an active consolidation process results from selective re-activation of memories during sleep
-  vi_tri: tr. 118 (mục Synaptic homeostasis versus system consolidation)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Thực ra, khi ta chìm vào giấc ngủ sâu, não bước vào một ca làm việc khác: nó **phát lại** những gì đã học trong ngày." Chữ mới: "Theo mô hình được nhiều nhà nghiên cứu ủng hộ, … **tái kích hoạt** ("phát lại") …". Lý do: là giả thuyết (n12).'
-- id: n5
-  cau: Giấc ngủ gồm các giai đoạn luân phiên; giấc ngủ sóng chậm (SWS, ngủ sâu, sóng não chậm và đều) tập trung ở nửa đầu đêm, giấc ngủ mắt chuyển động nhanh (REM) ở nửa sau đêm.
-  loai: dinh-nghia
-  nguon:
-  - diekelmann2010
-  trich: is characterized by high amounts of SWS, whereas REM sleep prevails during the second half (late sleep)
-  vi_tri: tr. 115, Box 1
-  ket_qua: dung
-  ghi_chu: Bỏ "lúc ta mơ nhiều nhất" khỏi định nghĩa REM (xem n6).
-- id: n6
-  cau: (Đã bỏ) "REM — lúc ta mơ nhiều nhất".
-  loai: phat-hien
-  ket_qua: da-bo
-  ghi_chu: 'Chữ cũ: "(rapid eye movement, REM — lúc ta mơ nhiều nhất)". Chữ mới: "(rapid eye movement, REM)". Lý do: câu thừa, giấc mơ có ở cả NREM; không cần cho luận điểm của bài (giấc mơ ở bài riêng).'
-- id: n7
-  cau: Bài tổng quan "The memory function of sleep" đăng trên Nature Reviews Neuroscience, tập 11, số 2, trang 114–126 (Diekelmann và Born, 2010).
-  loai: lich-su
-  nguon:
-  - diekelmann2010
-  trich: The memory function of sleep
-  vi_tri: tr. 114
-  ket_qua: dung
-  ghi_chu: Siêu dữ liệu khớp bản PDF (tr. 114, "FEBRUARY 2010, VOLUME 11") và Crossref 10.1038/nrn2762.
-- id: n8
-  cau: Bài tổng quan tổng hợp bằng chứng trên người và động vật gặm nhấm.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: a consistent finding in humans, cats, rats and mice
-  vi_tri: tr. 118
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "tổng hợp hàng loạt bằng chứng". Chữ mới: "tổng hợp bằng chứng trên người và động vật gặm nhấm". Lý do: chính xác hơn (bài dẫn cả người, mèo, chuột).'
-- id: n9
-  cau: 'Bài đề xuất khung hai giai đoạn nối tiếp: củng cố hệ thống trong SWS rồi củng cố synap trong REM.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: slow-wave sleep (SWS) and rapid eye movement (REM) sleep support system consolidation and synaptic consolidation, respectively
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n10
-  cau: Trong SWS, sóng chậm, thoi ngủ và gợn sóng phối hợp việc tái kích hoạt và tái phân phối các ký ức phụ thuộc hồi hải mã sang vỏ não.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: slow oscillations, spindles and ripples - at minimum cholinergic activity - coordinate the re-activation and redistribution of hippocampus-dependent memories to neocortical sites
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n11
-  cau: Quá trình đó diễn ra khi hoạt động acetylcholine ở mức thấp nhất.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: at minimum cholinergic activity
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n12
-  cau: Chính bài tổng quan lưu ý việc tái phân phối ký ức này chưa được chứng minh trực tiếp.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: although this has not been directly demonstrated yet
-  vi_tri: tr. 119 (mục System consolidation)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: (không có; trang nói như chắc chắn). Chữ mới: câu thêm. Lý do: nguồn tự nói chưa chứng minh trực tiếp.'
-- id: n13
-  cau: Trong REM, với acetylcholine và sóng theta cao, hoạt động của các gen liên quan đến tính dẻo tăng cục bộ, và điều này có thể tạo điều kiện củng cố synap ở vỏ não.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: local increases in plasticity-related immediate-early gene activity
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "các gen liên quan đến tính dẻo của não được kích hoạt, tạo điều kiện **gia cố các kết nối synap**". Chữ mới: "hoạt động của các gen … tăng cục bộ, và điều này *có thể* tạo điều kiện …". Lý do: nguồn dùng "might favour"; bằng chứng trực tiếp còn ít (n39).'
-- id: n14
-  cau: Hồi hải mã là kho lưu trữ tạm, vỏ não là kho lưu trữ dài hạn (mô hình hai kho); hồi hải mã học nhanh, vỏ não học chậm.
-  loai: dinh-nghia
-  nguon:
-  - diekelmann2010
-  trich: the other store learns at a slower rate and serves as the long-term store
-  vi_tri: Box 2
-  ket_qua: dung
-- id: n15
-  cau: 'Gais và cộng sự: người tham gia là học sinh trung học Mỹ, nói tiếng Anh và chưa biết tiếng Đức.'
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Twelve American high school students [...] Subjects were native English speakers with no prior knowledge of German.
-  vi_tri: tr. 259
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Học sinh trung học học các cặp từ vựng (tiếng Đức–tiếng Anh)". Chữ mới: ghi rõ học sinh Mỹ, nói tiếng Anh, chưa biết tiếng Đức. Lý do: đủ và chính xác hơn.'
-- id: n16
-  cau: Mỗi danh sách gồm 24 cặp từ tiếng Anh–tiếng Đức, học tối đa 10 phút.
-  loai: so-lieu
-  nguon:
-  - gais2006
-  trich: one of four 24-pair English-German vocabulary lists [...] with a time limit of 10 min to learn the whole list
-  vi_tri: tr. 259
-  ket_qua: da-sua
-  ghi_chu: Xem n15 (chữ cũ không nêu số cặp và thời gian).
-- id: n17
-  cau: 'Thí nghiệm 1: 12 học sinh, thiết kế trong-nhóm, ai cũng làm đủ bốn điều kiện.'
-  loai: so-lieu
-  nguon:
-  - gais2006
-  trich: Twelve American high school students [...] participated in all four conditions in a within-subject design.
-  vi_tri: tr. 259
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "mỗi học sinh học buổi tối rồi ngủ ngay trong một điều kiện, và học buổi sáng rồi thức ban ngày trong điều kiện còn lại; kiểm tra sau 24 và 36 giờ". Chữ mới: bốn điều kiện (sáng/tối, 24/36 giờ). Lý do: bài có bốn điều kiện, không phải hai.'
-- id: n18
-  cau: 'Thí nghiệm 1: học lúc 8 giờ tối rồi ngủ trong khoảng 3 giờ sau đó, hoặc học lúc 8 giờ sáng rồi thức khoảng 15 giờ mới ngủ; kiểm tra lại sau 24 hoặc 36 giờ.'
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Learning took place either at 8 a.m. or at 8 p.m. [...] Recall was tested again after 24 h or 36 h
-  vi_tri: 'tr. 259; bảng 1 (cột "Time between learning and sleep": 3 h, 15 h)'
-  ket_qua: da-sua
-  ghi_chu: Xem n17; số giờ lấy từ Bảng 1.
-- id: n19
-  cau: 'Thí nghiệm 2: 14 học sinh nam, thiết kế trong-nhóm, thứ tự đảo ngẫu nhiên.'
-  loai: so-lieu
-  nguon:
-  - gais2006
-  trich: Fourteen male high school students [...] were tested twice in randomized, counterbalanced order
-  vi_tri: tr. 260
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "một nhóm học buổi tối rồi đi ngủ, nhóm còn lại học cùng giờ nhưng thức trắng đêm". Chữ mới: mỗi người làm cả hai điều kiện. Lý do: thiết kế trong-nhóm, không phải hai nhóm.'
-- id: n20
-  cau: Ở lại thức trắng đêm dưới sự giám sát (xem TV, chơi trò chơi); không được đọc sách để tránh gây nhiễu cho trí nhớ.
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: subjects were engaged in activities such as watching TV and playing games. Reading was not allowed in order to prevent possible interference in the declarative memory system
-  vi_tri: tr. 260
-  ket_qua: dung
-- id: n21
-  cau: Sáng hôm sau người thức trắng về nhà ngủ bù (trung bình khoảng 5,6 giờ ban ngày và 7,6 giờ đêm kế tiếp).
-  loai: so-lieu
-  nguon:
-  - gais2006
-  trich: they slept on average for 5.6 [...] h during daytime and for another 7.6 [...] h during the following night
-  vi_tri: tr. 260
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: (không có số giờ ngủ bù). Chữ mới: số giờ theo bài.'
-- id: n22
-  cau: Cả hai điều kiện được kiểm tra 48 giờ sau khi học, nên người thức trắng đã được ngủ bù trước lúc kiểm tra, loại trừ khả năng nhớ kém chỉ vì mệt.
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Recall testing took place in both conditions 48 h after initial learning
-  vi_tri: tr. 260
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "kiểm tra sau 48 giờ — tức nhóm thức trắng đã được ngủ bù một đêm". Chữ mới: ghi rõ ngủ bù 5,6 giờ ban ngày và 7,6 giờ đêm kế tiếp. Lý do: chính xác hơn.'
-- id: n23
-  cau: 'Kết quả thí nghiệm 1: tỉ lệ quên cao hơn rõ rệt khi học buổi sáng (ngủ muộn) so với buổi tối (ngủ sớm); khoảng giữ 24 hay 36 giờ không tạo khác biệt đáng kể.'
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: a much higher rate of forgetting in morning-learning conditions than in evening-learning conditions [...] no significant difference was found for retention intervals of 24 h and 36 h
-  vi_tri: tr. 260
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: (không nêu kết quả thí nghiệm 1). Chữ mới: kết quả theo bài (F(1,11)=9,8, P<0,01; F=0,2, P=0,65).'
-- id: n24
-  cau: 'Thí nghiệm 2: người tham gia nhớ rõ ràng nhiều từ hơn khi đã ngủ so với khi thức trắng (trung bình mất khoảng 0,2 từ so với khoảng 1,8 từ).'
-  loai: so-lieu
-  nguon:
-  - gais2006
-  trich: Subjects remembered clearly more of the learned vocabulary when they had slept during the night following learning than when they had stayed awake (F1,13 = 7.1, P < 0.05
-  vi_tri: tr. 260, Bảng 1 phần B (0,2 và 1,8 từ)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Nhóm được ngủ sau khi học nhớ rõ ràng nhiều từ hơn nhóm thức trắng." Chữ mới: so sánh trong-nhóm kèm số từ mất. Lý do: không có "nhóm"; thêm số.'
-- id: n25
-  cau: 'Tác hại của việc thức trắng vẫn còn sau khi ngủ bù: các tác giả kết luận mệt mỏi lúc kiểm tra không giải thích được khác biệt; điều này gợi ý ảnh hưởng nằm ở củng cố trong đêm đầu, chứ không chỉ ở lúc truy xuất.'
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: This finding excludes fatigue as a factor explaining differences in retrieval performance between sleep and sleep deprivation.
-  vi_tri: tr. 260
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "chứng tỏ vấn đề không phải là mệt mỏi lúc kiểm tra, mà là quá trình củng cố trí nhớ đã bị phá hỏng ngay trong đêm đầu tiên". Chữ mới: "các tác giả kết luận … gợi ý …". Lý do: loại trừ mệt mỏi không đồng nghĩa chứng minh cơ chế.'
-- id: n26
-  cau: Cỡ mẫu nhỏ (12 và 14 người) và danh sách từ ngắn là giới hạn của thí nghiệm.
-  loai: so-lieu
-  nguon:
-  - gais2006
-  trich: compared with many other studies measuring forgetting, here only a small number of items had to be encoded
-  vi_tri: tr. 260
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: (không có). Chữ mới: câu giới hạn. Lý do: cỡ mẫu 12 và 14 theo bài; bài tự nói ít mục.'
-- id: n27
-  cau: Trí nhớ từ vựng là trí nhớ tường thuật (declarative), được xem là phụ thuộc hồi hải mã; trước đó, phần lớn nghiên cứu gần đây về giấc ngủ và trí nhớ ở người tập trung vào trí nhớ quy trình, được xem là không phụ thuộc hồi hải mã.
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: In humans, these studies concentrated mainly on procedural types of memory, which are considered to be hippocampus-independent.
-  vi_tri: tr. 259, tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "phụ thuộc hồi hải mã … vốn ít liên quan đến hồi hải mã hơn". Chữ mới: "được xem là …". Lý do: bài nói "considered to be".'
-- id: n28
-  cau: Gais, Lucas & Born (2006), Learning & Memory, 13(3), 259–262.
-  loai: lich-su
-  nguon:
-  - gais2006
-  trich: Brief Communication 13:259-262
-  vi_tri: tr. 259
-  ket_qua: dung
-  ghi_chu: Khớp bản PDF và Crossref 10.1101/lm.132106.
-- id: n29
-  cau: 'Rasch và cộng sự: tình nguyện viên học vị trí 15 cặp thẻ trên lưới hai chiều vào buổi tối, trong khi ngửi mùi hoa hồng; trong hai giai đoạn SWS đầu của đêm, mùi được phảng phất lại.'
-  loai: phat-hien
-  nguon:
-  - rasch2007
-  trich: locations of 15 card pairs on a computer screen [...] During the first two periods of subsequent SWS, the odor was presented again
-  vi_tri: tr. 1427
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Người tham gia học vị trí các cặp thẻ …". Chữ mới: "15 cặp thẻ" và "trong hai giai đoạn SWS đầu". Lý do: bổ sung số liệu thiết kế.'
-- id: n30
-  cau: Đêm đối chứng chỉ phảng phất không khí không mùi (thiết kế bắt chéo, mù đôi, cùng người làm cả hai đêm).
-  loai: phat-hien
-  nguon:
-  - rasch2007
-  trich: Experiments were conducted according to a double-blind crossover design.
-  vi_tri: tr. 1427, chú thích Hình 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: (không có). Chữ mới: thêm. Lý do: đủ thiết kế.'
-- id: n31
-  cau: 'Thí nghiệm chính 18 người: nhớ lại khoảng 97% vị trí sau đêm có mùi, so với khoảng 86% sau đêm không mùi.'
-  loai: so-lieu
-  nguon:
-  - rasch2007
-  trich: participants remembered 97.2 4.1% of the card pairs they had learned before sleep, but they remembered only 85.8 3.8% after the vehicle night
-  vi_tri: tr. 1427
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nhớ vị trí các cặp thẻ tốt hơn hẳn". Chữ mới: kèm số 97%/86%, 18 người. Lý do: số thật của bài (97,2 ± 4,1% và 85,8 ± 3,8%; P = 0,001).'
-- id: n32
-  cau: 'Các thí nghiệm kiểm soát (17–18 người mỗi thí nghiệm): nhắc mùi trong REM, lúc thức, hoặc khi mùi không xuất hiện lúc học đều không có tác dụng với trí nhớ vị trí.'
-  loai: so-lieu
-  nguon:
-  - rasch2007
-  trich: Odor re-exposure was ineffective during rapid eye movement sleep or wakefulness or when the odor had been omitted during prior learning.
-  vi_tri: tóm tắt; thí nghiệm II n=17, III n=17, IV n=18
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đều không có tác dụng". Chữ mới: thêm "17–18 người", "với trí nhớ vị trí". Lý do: nêu mẫu, và giới hạn ở nhiệm vụ trí nhớ vị trí.'
-- id: n33
-  cau: Một thí nghiệm fMRI cho thấy hồi hải mã tăng hoạt động khi mùi được nhắc lại trong SWS.
-  loai: phat-hien
-  nguon:
-  - rasch2007
-  trich: functional magnetic resonance imaging revealed significant hippocampal activation in response to odor re-exposure during SWS
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "hồi hải mã *sáng lên*". Chữ mới: "tăng hoạt động". Lý do: bỏ hình ảnh sai lệch (fMRI đo tín hiệu, không phát sáng).'
-- id: n34
-  cau: Các tác giả coi đây là bằng chứng thực nghiệm cho vai trò nhân quả của tái kích hoạt ký ức trong SWS; mỗi thí nghiệm chỉ 17–18 người.
-  loai: phat-hien
-  nguon:
-  - rasch2007
-  trich: showed that reactivation indeed causes memory consolidation during sleep
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Đây là bằng chứng nhân quả mạnh mẽ". Chữ mới: "Các tác giả coi đây là bằng chứng thực nghiệm cho vai trò nhân quả … Mỗi thí nghiệm chỉ có 17–18 người". Lý do: tránh "mạnh mẽ", nêu mẫu nhỏ.'
-- id: n35
-  cau: Rasch, Büchel, Gais & Born (2007), Science, 315(5817), 1426–1429.
-  loai: lich-su
-  nguon:
-  - rasch2007
-  trich: SCIENCE VOL 315 9 MARCH 2007
-  vi_tri: tr. 1427
-  ket_qua: dung
-  ghi_chu: Khớp PDF (Science 315, 1426) và Crossref 10.1126/science.1138581.
-- id: n36
-  cau: 'Khung "Khá vững: giấc ngủ sóng chậm củng cố trí nhớ tường thuật".'
-  loai: nhan
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: khung "Vững chắc" (:::vung-chac), nội dung "một trong những phát hiện được tái lập tốt nhất trong khoa học về giấc ngủ". Chữ mới: :::kha-vung với hai phân tích tổng hợp và lý do chưa Vững chắc. Lý do: câu "tái lập tốt nhất" không có nguồn; mô hình chuyển kho chưa chứng minh trực tiếp. Khớp nhãn các bài tri-nho đã khóa: bài Đường cong quên có nhãn riêng cho học rải (n53).'
-  nhan: kha-vung
-  co_so:
-  - berres2021
-  - hu2020
-  - diekelmann2010
-  - gais2006
-  - rasch2007
-  ly_do: 'Hai phân tích tổng hợp trong Psychological Bulletin cùng chiều (Berres & Erdfelder 2021: ngủ giúp nhớ lại g = 0,44, 0,28 sau hiệu chỉnh; Hu 2020: nhắc ký ức trong SWS g = 0,27). Chưa đạt Vững chắc: hiệu ứng nhỏ đến vừa, các thí nghiệm kể ở trang có mẫu nhỏ, phần "ký ức chuyển dần về vỏ não" là mô hình chưa chứng minh trực tiếp (Diekelmann & Born 2010), chưa có tái lập lớn có đăng ký trước.'
-- id: n37
-  cau: Phân tích tổng hợp 823 hiệu ứng từ 271 mẫu độc lập thấy lợi ích của giấc ngủ ở mức vừa (g = 0,44), giảm còn g = 0,28 sau khi hiệu chỉnh thiên lệch báo cáo chọn lọc.
-  loai: so-lieu
-  nguon:
-  - berres2021
-  trich: we found a moderate overall sleep benefit in episodic memory (g = 0.44) [...] When accounting for selective reporting bias, the overall effect of sleep on episodic memory is reduced but still significant (g = 0.28)
-  vi_tri: tóm tắt
-  ket_qua: dung
-  ghi_chu: Tóm tắt (toan_van false). Số 823/271 khớp "823 effect sizes from 271 independent samples".
-- id: n38
-  cau: 'Phân tích tổng hợp 91 thí nghiệm nhắc lại ký ức có chủ đích: nhắc trong SWS có tác dụng nhỏ (g = 0,27), nhắc trong REM hay lúc thức thì không.'
-  loai: so-lieu
-  nguon:
-  - hu2020
-  trich: 'from 91 experiments with 212 effect sizes (N = 2,004) [...] slow-wave sleep: Hedges'' g = 0.27, 95% CI [0.20, 0.35]). In contrast, TMR was not effective during REM sleep nor during wakefulness'
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ (nếu có): "nhỏ nhưng ổn định". Chữ mới: "nhỏ (g = 0,27)". Lý do: tóm tắt không dùng chữ "ổn định" cho kết quả này. Khớp với Rasch 2007 ở chiều REM/thức.'
-- id: n39
-  cau: 'Khung "Đang tranh cãi: vai trò chính xác của giấc ngủ REM".'
-  loai: nhan
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "cho rằng REM đảm nhận bước *củng cố synap*". Chữ mới: "REM *có thể* thuận lợi …" và thêm lưu ý thuốc có thể bù. Lý do: nguồn dùng "might favour" và nói "direct evidence of this is scarce at present".'
-  nhan: tranh-cai
-  co_so:
-  - diekelmann2010
-  - rasch2009
-  ly_do: 'Bằng chứng chất lượng cao mâu thuẫn: Diekelmann & Born (2010) nói bằng chứng trực tiếp về củng cố synap trong REM còn ít; Rasch 2009 thấy ức chế REM bằng thuốc không làm hại trí nhớ kỹ năng, nhưng bài tổng quan lưu ý thuốc có thể tự bù qua tính dẻo synap.'
-- id: n40
-  cau: Ức chế REM bằng thuốc không làm giảm, thậm chí cải thiện trí nhớ kỹ năng (Rasch và cộng sự, 2009); bài tổng quan lưu ý thuốc có thể tác động trực tiếp lên tính dẻo synap và bù cho việc mất REM.
-  loai: phat-hien
-  nguon:
-  - rasch2009
-  trich: REM sleep suppression by administration of selective serotonin or norepinephrine re-uptake inhibitors after training did not impair consolidation of skills or word-pairs in healthy men but rather enhanced gains in finger tapping accuracy
-  vi_tri: tóm tắt (Rasch 2009); Diekelmann & Born tr. 120 cho lưu ý
-  ket_qua: dung
-  ghi_chu: 'Phần "bài tổng quan lưu ý" khớp Diekelmann & Born: "such substances also exert direct effects on synaptic plasticity and synaptic forms of consolidation that could compensate for a loss of REM sleep".'
-- id: n41
-  cau: Bài tổng quan 2010 tóm tắt bằng chứng về vai trò của REM với trí nhớ cảm xúc.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: Sleep likewise supports the consolidation of emotional information
-  vi_tri: tr. 116
-  ket_qua: dung
-- id: n42
-  cau: 'Khung "Bác bỏ: thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn".'
-  loai: nhan
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: khung :::bac-bo[thức trắng đêm ôn thi giúp nhớ bài hơn], "nhóm thức trắng nhớ kém hơn hẳn … Thiếu ngủ không chỉ làm ta mệt lúc thi — nó phá hỏng quá trình củng cố trí nhớ ngay trong đêm đó." Chữ mới: tên khung thu hẹp "thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn" và nội dung nêu Berres 2021 và giới hạn. Lý do: bằng chứng không kiểm tra việc thức đêm để học thêm.'
-  nhan: bac-bo
-  co_so:
-  - gais2006
-  - berres2021
-  ly_do: 'Gais 2006 (14 người) và phân tích tổng hợp Berres & Erdfelder 2021 (271 mẫu) cùng thấy người ngủ nhớ lại nhiều hơn người thức cùng khoảng thời gian; chưa có nghiên cứu nào kể ở trang so sánh việc dùng đêm thức để học thêm. Nhãn phát biểu hẹp: thức trắng thay cho ngủ, không phải "học thêm".'
-- id: n43
-  cau: Phân tích tổng hợp của Berres và Erdfelder (2021) thấy người ngủ nhớ lại nhiều hơn người thức cùng khoảng thời gian.
-  loai: phat-hien
-  nguon:
-  - berres2021
-  trich: People recall more information after sleep than after an equally long period of wakefulness.
-  vi_tri: tóm tắt
-  ket_qua: dung
-- id: n44
-  cau: 'Củng cố hệ thống: trong SWS, hồi hải mã phát lại ký ức (gợn sóng ripple), thoi ngủ giúp vỏ não sẵn sàng tiếp nhận, sóng chậm phối hợp các hoạt động ấy.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: a fine-tuned temporal relationship between the occurrence of slow oscillations, spindles and sharp wave-ripples during SWS that coordinates the bidirectional information flow between the neocortex and the hippocampus
-  vi_tri: tr. 118
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "các thoi ngủ và sóng chậm "mở cổng" để vỏ não tiếp nhận". Chữ mới: "thoi ngủ giúp vỏ não sẵn sàng tiếp nhận và sóng chậm phối hợp". Lý do: bỏ ẩn dụ "mở cổng" không có trong nguồn.'
-- id: n45
-  cau: Theo mô hình hai kho, việc chuyển kho diễn ra dần qua nhiều lần tái kích hoạt, lúc ngủ khi não không ghi nhận thông tin mới, nên tránh nhiễu và ghi đè lên kiến thức cũ.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: the re-activation and redistribution of memories take place off-line (during sleep) when no encoding occurs
-  vi_tri: Box 2
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Qua nhiều đêm, ký ức dần trở nên độc lập với hồi hải mã — đó là lý do ký ức cũ khó mất hơn ký ức mới học." Chữ mới: viết theo Box 2 và thêm "chưa được chứng minh trực tiếp". Lý do: câu "đó là lý do ký ức cũ khó mất hơn" không có trong nguồn.'
-- id: n46
-  cau: 'Củng cố synap trong REM: môi trường hóa học của REM (acetylcholine cao, sóng theta) có thể tạo điều kiện gia cố các kết nối ở vỏ não; đây là phần còn nhiều tranh luận.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: might favour the subsequent synaptic consolidation of memories in the cortex
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "tạo điều kiện gia cố". Chữ mới: "*có thể* tạo điều kiện … còn nhiều tranh luận". Lý do: như n13.'
-- id: n47
-  cau: 'Giả thuyết cân bằng synap: sóng chậm làm giảm đồng loạt cường độ các kết nối synap, các kết nối yếu bị loại bỏ, nhờ đó tín hiệu nổi bật hơn nhiễu.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: Sleep would serve to globally downscale synaptic strength
-  vi_tri: tr. 118, mục Synaptic homeostasis
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "trong SWS, não còn "tỉa bớt" các kết nối yếu, ít dùng đến". Chữ mới: "sóng chậm làm giảm đồng loạt cường độ các kết nối synap, các kết nối yếu bị loại bỏ …". Lý do: giả thuyết nói về giảm toàn bộ cường độ synap, không phải "tỉa kết nối ít dùng".'
-- id: n48
-  cau: Bài tổng quan xem giả thuyết cân bằng synap và củng cố hệ thống chủ động là hai giả thuyết không loại trừ nhau, nhiều khả năng phối hợp với nhau.
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: The two models are not mutually exclusive; indeed, the hypothesized processes probably act in concert to optimize the memory function of sleep.
-  vi_tri: tr. 118
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Một ý tưởng bổ sung". Chữ mới: nêu rõ nguồn nói gì. Lý do: chính xác hơn.'
-- id: n49
-  cau: 'Cả ba ý tưởng cùng hướng nhìn: giấc ngủ không chỉ là thời gian chết của trí nhớ, mà có thể là ca làm việc thứ hai của nó.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: SWS and REM sleep have complementary functions to optimize memory consolidation
-  vi_tri: tr. 122, Conclusions
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Cả ba đều thống nhất ở một điểm: giấc ngủ không phải thời gian chết của trí nhớ, mà là ca làm việc thứ hai của nó". Chữ mới: "cùng một hướng nhìn … không chỉ … có thể là". Lý do: "thống nhất" quá mạnh, ba ý tưởng cạnh tranh nhau một phần.'
-- id: n50
-  cau: 'Mục Áp dụng 1: "Xếp lịch học sao cho sau đó là một giấc ngủ đêm" :nhan[kha-vung].'
-  loai: nhan
-  ket_qua: dung
-  nhan: kha-vung
-  co_so:
-  - gais2006
-  - berres2021
-  ly_do: Lợi ích của ngủ sau khi học thấy ở phân tích tổng hợp (g 0,28–0,44) nhưng thí nghiệm Gais chỉ 12 người, một điều kiện học sáng/tối; nên Khá vững.
-- id: n51
-  cau: Gais thấy ngủ trong vài giờ sau khi học giúp nhớ từ vựng tốt hơn học buổi sáng rồi thức cả ngày, trong một thí nghiệm nhỏ (12 học sinh); có thể học xong buổi tối rồi đi ngủ đúng giờ.
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: declarative memory is enhanced when sleep follows within a few hours of learning, independent of time of day
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "ngủ *ngay trong vài giờ sau khi học* giúp nhớ từ vựng tốt hơn … hãy học xong buổi tối rồi đi ngủ đúng giờ — giấc ngủ sẽ "làm nốt phần việc còn lại"". Chữ mới: "so với học sáng rồi thức cả ngày, trong một thí nghiệm nhỏ (12 học sinh) … có thể … có thể giúp". Lý do: mềm lại, nêu cỡ mẫu.'
-- id: n52
-  cau: 'Mục Áp dụng 2: "Đừng thức trắng đêm trước ngày thi" :nhan[kha-vung].'
-  loai: nhan
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: :nhan[vung-chac] "Đây là ứng dụng chắc chắn nhất … Một đêm ngủ đủ trước kỳ thi "lợi" hơn nhiều so với vài tiếng nhồi nhét thêm." Chữ mới: :nhan[kha-vung], nêu rõ chưa kiểm tra thức để học thêm, thêm lời dẫn tới người có chuyên môn và Hỗ trợ. Lý do: so sánh "lợi hơn nhiều" chưa được kiểm tra.'
-  nhan: kha-vung
-  co_so:
-  - gais2006
-  - berres2021
-  - nhs-insomnia
-  ly_do: Chiều "thức thay cho ngủ thì nhớ phần đã học kém hơn" có hai nguồn (Gais 2006, Berres 2021) nên Khá vững; nhưng không có nghiên cứu so thức để học thêm với ngủ đủ, nên không Vững chắc.
-  id_cu_giu: '#2-dung-thuc-trang-dem-truoc-ngay-thi-vung-chac'
-- id: n53
-  cau: Nghiên cứu của Gais và phân tích tổng hợp cho thấy người thức trắng nhớ lại phần đã học kém hơn người đã ngủ, kể cả sau khi ngủ bù.
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Sleep deprivation has a detrimental effect on memory, which was significant after a night of recovery sleep.
-  vi_tri: tóm tắt
-  ket_qua: dung
-  ghi_chu: Phần "phân tích tổng hợp" xem n43; "kể cả sau khi ngủ bù" chỉ có ở Gais.
-- id: n54
-  cau: Chưa có nghiên cứu nào ở đây so sánh trực tiếp việc dùng đêm thức để học thêm với ngủ đủ.
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Reading was not allowed in order to prevent possible interference in the declarative memory system
-  vi_tri: tr. 260
-  ket_qua: dung
-  ghi_chu: 'Khẳng định giới hạn của các nguồn trong bài (Gais, Berres): không có điều kiện "học thêm khi thức". Không khẳng định gì về toàn bộ văn liệu.'
-- id: n55
-  cau: Nếu thường xuyên khó ngủ hay mất ngủ kéo dài, hãy trao đổi với người có chuyên môn; hướng dẫn của NHS khuyên đi khám khi mất ngủ kéo dài nhiều tháng hay ảnh hưởng đến sinh hoạt hằng ngày.
-  loai: loi-khuyen
-  nguon:
-  - nhs-insomnia
-  trich: 'See a GP if: changing your sleeping habits has not helped your insomnia you''ve had trouble sleeping for months your insomnia is affecting your daily life in a way that makes it hard for you to cope'
-  vi_tri: NHS, Insomnia, mục "See a GP if" (nhs.uk/conditions/insomnia, đọc 10/11/2026)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: (không có). Chữ mới: câu thêm theo yêu cầu an toàn (chủ đề gần sức khỏe), không chẩn đoán, không điều trị.'
-- id: n56
-  cau: Link tới trang [Hỗ trợ](/psyche/ho-tro/) ở mục Áp dụng 2.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Kiểm: trang Hỗ trợ có trong src/data/trang.yml và kế hoạch (id ho-tro); đã có trong các trang đợt trước. Cần chắc trang lên trước khi khóa.'
-- id: n57
-  cau: 'Mục Áp dụng 3: "Muốn nhớ lâu, hãy để ký ức qua đêm nhiều lần" :nhan[kha-vung].'
-  loai: nhan
-  ket_qua: dung
-  nhan: kha-vung
-  co_so:
-  - diekelmann2010
-  - berres2021
-  ly_do: Học rải có nhãn Vững chắc ở bài Học dồn có nhớ lâu? (đã khóa); phần "các đêm ngủ ở giữa góp phần" chưa được tách riêng, nên theo ý yếu hơn là Khá vững.
-- id: n58
-  cau: Mô hình hai kho cho rằng ký ức chuyển dần qua nhiều lần tái kích hoạt, nên ôn tập rải ra nhiều ngày (mỗi lần học xong đều được ngủ) là một lịch học hợp lý.
-  loai: loi-khuyen
-  nguon:
-  - diekelmann2010
-  trich: The two-stage model of memory offers a widely accepted solution to this dilemma
-  vi_tri: Box 2
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "việc ôn tập rải ra nhiều ngày … hiệu quả hơn học dồn một lần rồi thi ngay. Kết quả này cũng khớp với …". Chữ mới: "là một lịch học hợp lý", tách học rải (Vững chắc ở bài khác) khỏi vai trò của giấc ngủ (giả thuyết). Lý do: hiệu quả của các đêm ngủ chưa tách riêng.'
-- id: n59
-  cau: Bản thân việc rải ôn tập giúp nhớ lâu hơn học dồn mang nhãn Vững chắc ở bài Học dồn có nhớ lâu?; liên kết tới bài đó.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Kiểm trên src/content/docs/kham-pha/tri-nho/duong-cong-quen.md và hồ sơ đã khóa: khung "học ngắt quãng giúp nhớ lâu hơn học dồn" là :::vung-chac (hồ sơ duong-cong-quen.yml có nhan: vung-chac).'
-- id: n60
-  cau: Các thí nghiệm then chốt (Gais 2006; Rasch 2007) do các nhóm nghiên cứu ở Đức thực hiện (Lübeck); Gais trên học sinh trung học Mỹ, Rasch trên tình nguyện viên (bài báo không nêu quốc tịch).
-  loai: lich-su
-  nguon:
-  - gais2006
-  trich: Department of Neuroendocrinology, University of Lübeck, 23538 Lübeck, Germany
-  vi_tri: tr. 259 (địa chỉ tác giả); Rasch 2007 tr. 1426–1427 (Lübeck)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "được thực hiện trên học sinh, sinh viên ở **Đức**" (sai: người tham gia Gais là học sinh Mỹ). Chữ mới: nhóm nghiên cứu ở Đức, người tham gia Mỹ / không nêu. Lý do: sai về người tham gia. Rasch 2007: địa chỉ tác giả Lübeck, "volunteers (n = 18)", không nêu quốc tịch.'
-- id: n61
-  cau: Tính đến 11/2026, chưa tìm thấy thí nghiệm nào kiểm tra việc ngủ sau khi học có giúp nhớ trên học sinh, sinh viên Việt Nam.
-  loai: thoi-su
-  nguon:
-  - tim-vn
-  vi_tri: Europe PMC, 10/11/2026
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu tương tự trên học sinh, sinh viên Việt Nam." Chữ mới: thêm mốc "Tính đến 11/2026", nêu rõ loại thí nghiệm. Lần tìm: Europe PMC 10/11/2026, truy vấn (sleep AND memory AND Vietnam* AND (students OR adolescents) AND (consolidation OR learning)) và (sleep AND "memory consolidation" AND Vietnamese); các kết quả liên quan chỉ có Le 2026 (khảo sát, không đo củng cố). Tìm trong tạp chí trong nước chưa làm.'
-  het_han: '2028-11-01'
-- id: n62
-  cau: Một khảo sát cắt ngang trên 639 học sinh trung học ở Hà Nội và Hưng Yên ghi nhận mối liên quan nhỏ giữa triệu chứng mất ngủ và thành tích học tập tự báo cáo (Le và cộng sự, 2026), không đo củng cố trí nhớ.
-  loai: so-lieu
-  nguon:
-  - le2026
-  trich: Six hundred and thirty-nine high-school students from a more highly-developed, urban area (Hanoi) and a lesser-developed, rural area (Hung Yen) were cross-sectionally assessed [...] with higher levels of insomnia symptoms associated with lower reported academic performance
-  vi_tri: tóm tắt
-  ket_qua: dung
-  ghi_chu: 'r chính tắc = 0,20; khi thêm động lực và mệt mỏi làm biến số đồng biến, mối liên quan còn không có ý nghĩa thống kê (tóm tắt): trang chỉ nói "nhỏ", không mâu thuẫn.'
-- id: n63
-  cau: 'Suy luận (đã ghi rõ chưa kiểm tra): cơ chế củng cố trí nhớ trong giấc ngủ là đặc điểm chung của não người nên kết luận chính có thể đúng với nhiều nền văn hóa; lịch học, giờ ngủ có thể làm đổi mức độ ảnh hưởng.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: Numerous studies have confirmed the beneficial effect of sleep on declarative and procedural memory in various tasks
-  vi_tri: tr. 114–115
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Về nguyên tắc sinh học, cơ chế … là đặc điểm chung của não người, nên kết luận chính nhiều khả năng đúng với mọi nền văn hóa." Chữ mới: "Chúng tôi suy luận (chưa được kiểm tra trực tiếp) … có thể đúng với nhiều nền văn hóa". Lý do: "mọi nền văn hóa" quá mạnh; nguồn là suy luận từ bằng chứng chủ yếu ở phương Tây; không có nguồn riêng cho các nền văn hóa khác.'
-- id: n64
-  cau: 'Ngộ nhận "thức trắng ôn thi học nhiều hơn thì nhớ nhiều hơn": người thức trắng sau khi học (không học thêm) nhớ lại ít hơn khi được ngủ; việc dùng đêm thức để học thêm chưa được thí nghiệm ấy kiểm tra.'
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Reading was not allowed in order to prevent possible interference in the declarative memory system
-  vi_tri: tr. 260
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "nếu không có giấc ngủ để củng cố, phần lớn những gì "nhồi" thêm sẽ rơi rụng. Thí nghiệm năm 2006 chứng minh nhóm ngủ (học ít giờ hơn) mà nhớ nhiều hơn nhóm thức trắng." Chữ mới: câu hiện tại. Lý do: sai: nhóm ngủ không học ít giờ hơn (cả hai học cùng lúc, người thức không học thêm); "chứng minh", "phần lớn rơi rụng" không có trong nguồn.'
-- id: n65
-  cau: 'Ngộ nhận "ngủ là lúc não nghỉ hoàn toàn": trong SWS hồi hải mã phát lại ký ức; trong REM, theo bài tổng quan 2010, hoạt động của các gen liên quan đến tính dẻo của synap tăng cục bộ.'
-  loai: phat-hien
-  nguon:
-  - diekelmann2010
-  trich: local increases in plasticity-related immediate-early gene activity
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "trong REM, não kích hoạt các gen liên quan đến tính dẻo của synap". Chữ mới: "theo bài tổng quan 2010, hoạt động của các gen … tăng cục bộ". Lý do: như n13.'
-- id: n66
-  cau: 'Tính đến 11/2026, bằng chứng về việc học điều mới trong lúc ngủ vẫn chưa kết luận được: tổng quan 2023 (51 bài) thấy dạng học đơn giản (quen dần, điều kiện hóa) có thể xảy ra lúc ngủ, còn với việc học phức tạp như ngôn ngữ mới thì bằng chứng hành vi về chuyển kiến thức sang lúc tỉnh còn chưa kết luận được (Ataei và cộng sự, 2023).'
-  loai: thoi-su
-  nguon:
-  - ataei2023
-  trich: simpler forms of learning, such as habituation and conditioning, are possible during sleep [...] behavioral evidence for the transfer of new knowledge to wake remains inconclusive
-  vi_tri: tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Chưa có bằng chứng vững chắc nào cho thấy ta có thể học kiến thức *mới* trong lúc ngủ." Chữ mới: mốc 11/2026 và nội dung tổng quan 2023. Lý do: thêm nguồn và mốc; bằng chứng tìm được là tổng quan 2023 (cập nhật đến thời điểm tìm: chưa tìm tổng quan mới hơn).'
-  het_han: '2028-11-01'
-- id: n67
-  cau: Một thí nghiệm năm 2019 chỉ thấy các liên kết từ mới đơn giản có thể hình thành khi từ được phát đúng đỉnh sóng chậm (Züst và cộng sự, 2019); chưa có gì cho thấy nghe băng bài giảng cả đêm thay được việc học.
-  loai: phat-hien
-  nguon:
-  - zust2019
-  trich: When the presentation of the second word of a pair (e.g., "Haus" of "tofer-house") coincided with an ongoing slow-wave peak, the chances increased that a new semantic association between the pair had been formed and retained.
-  vi_tri: tóm tắt
-  ket_qua: dung
-  ghi_chu: Phần "chưa có gì cho thấy nghe băng bài giảng thay được việc học" là kết luận từ Ataei 2023 (n66) và giới hạn của Züst (cặp từ đơn giản, khi ngủ trưa, tín hiệu khớp đỉnh sóng chậm).
-- id: n68
-  cau: Thí nghiệm "nhắc mùi" 2007 chỉ cho thấy có thể củng cố cái đã học lúc thức, và chỉ khi mùi hương đã gắn với lúc học, trong đúng giai đoạn SWS.
-  loai: phat-hien
-  nguon:
-  - rasch2007
-  trich: Odor re-exposure was ineffective during rapid eye movement sleep or wakefulness or when the odor had been omitted during prior learning.
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "khi tín hiệu gợi đúng ký ức cũ". Chữ mới: "khi mùi hương đã gắn với lúc học". Lý do: nói đúng điều kiện của thí nghiệm.'
-- id: n69
-  cau: 'Ba mục "Đọc thêm": Giấc mơ có ý nghĩa gì? (các lý thuyết về giấc mơ); Học dồn có nhớ lâu? (ôn tập ngắt quãng và giấc ngủ giữa các buổi học); Vì sao ta quên? (đường cong quên và vai trò của giấc ngủ).'
-  loai: ve-site
-  ket_qua: da-sua
-  ghi_chu: 'Đã kiểm trên trang: giac-mo.md bàn các lý thuyết giấc mơ; duong-cong-quen.md có mục :nhan "Ngủ đủ giấc giữa các buổi học" (dòng 114) và giả thuyết "trí nhớ cần thời gian ngấm"; vi-sao-ta-quen.md có khung :::tranh-cai "bước nhảy ở mốc 24 giờ và vai trò của giấc ngủ". Chữ cũ của mô tả ("ngủ rồi mơ — chuyện gì xảy ra"; "ngủ và ôn tập ngắt quãng giữ ký ức"; "củng cố trí nhớ chống lại đường cong quên") sửa cho khớp trang đích.'
-- id: q1
-  cau: 'Câu hỏi 1: theo Diekelmann và Born, trong SWS ký ức được tái kích hoạt ở hồi hải mã và tái phân phối dần về vỏ não; việc gia cố synap trong môi trường acetylcholine cao, theo bài tổng quan, có thể là việc của REM.'
-  loai: dinh-nghia
-  nguon:
-  - diekelmann2010
-  trich: slow oscillations, spindles and ripples - at minimum cholinergic activity - coordinate the re-activation and redistribution of hippocampus-dependent memories to neocortical sites, whereas during REM sleep
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: phương án sai "Não xóa bớt ký ức để tiết kiệm năng lượng." và giải thích "gia cố kệ hàng … là việc của REM". Chữ mới: phương án sai "Não ngừng mọi hoạt động liên quan đến ký ức." và "*có thể* là việc của REM". Lý do: phương án sai cũ gần giả thuyết cân bằng synap (n47) nên có thể bị coi là đúng; giải thích làm mềm theo n13.'
-- id: q2
-  cau: 'Câu hỏi 2: Gais cho người thức trắng ngủ bù trước khi kiểm tra để loại trừ khả năng họ nhớ kém chỉ vì mệt lúc làm bài; kiểm tra sau 48 giờ, cả hai điều kiện đã ngủ bù; các tác giả kết luận mệt mỏi không giải thích được khác biệt.'
-  loai: phat-hien
-  nguon:
-  - gais2006
-  trich: Thus, fatigue accumulating during wake intervals could be ruled out as a confound.
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "nhóm thức trắng … Nhóm thức trắng vẫn nhớ kém hơn — chứng tỏ thiệt hại nằm ở quá trình củng cố … chứ không phải ở lúc truy xuất." và phương án "Vì thiếu người tham gia nên phải dùng lại nhóm cũ." Chữ mới: "người thức trắng", "các tác giả kết luận … gợi ý … chứ không chỉ ở lúc truy xuất", phương án sai mới "Để người tham gia không biết mình đang ở điều kiện nào.". Lý do: thiết kế trong-nhóm (n19); "chứng tỏ" quá mạnh (n25); phương án sai cũ gần với sự thật (thí nghiệm dùng lại cùng người).'
-- id: q3
-  cau: 'Câu hỏi 3: thí nghiệm nhắc mùi cho thấy tái kích hoạt ký ức trong SWS là nguyên nhân giúp củng cố trí nhớ vị trí đã học; mùi chỉ có tác dụng khi đã xuất hiện lúc học và được nhắc trong SWS; mỗi thí nghiệm 17–18 người.'
-  loai: phat-hien
-  nguon:
-  - rasch2007
-  trich: Odor re-exposure was ineffective during rapid eye movement sleep or wakefulness or when the odor had been omitted during prior learning.
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "chứng minh điều gì?"; "nhắc trong REM hay lúc thức đều vô ích"; "bằng chứng nhân quả". Chữ mới: "cho thấy điều gì?", "không có tác dụng", "bằng chứng thực nghiệm … (mỗi thí nghiệm chỉ có 17–18 người)", thêm "vị trí đã học". Lý do: như n32, n34.'
-- id: q4
-  cau: 'Câu hỏi 4: vì sao vai trò của REM được gắn "Đang tranh cãi": bằng chứng chưa nhất quán (ức chế REM không làm giảm trí nhớ kỹ năng); bài tổng quan viết REM có thể thuận lợi cho củng cố synap, còn là giả thuyết.'
-  loai: nhan
-  nguon:
-  - diekelmann2010
-  trich: direct evidence of this is scarce at present
-  vi_tri: tr. 122
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Bài tổng quan 2010 đề xuất REM đảm nhận bước củng cố synap". Chữ mới: "viết rằng REM *có thể* thuận lợi cho bước củng cố synap". Lý do: như n39. Nhất quán với nhãn khung n39.'
-- id: q5
-  cau: 'Câu hỏi 5: với kỳ thi sau 3 ngày, lịch hợp lý là học rải 3 ngày, mỗi tối đi ngủ đúng giờ; học rải tận dụng hiệu ứng ngắt quãng, ngủ đủ sau mỗi buổi học cho giấc ngủ cơ hội củng cố, còn thức trắng thay cho giấc ngủ thì chưa thấy bằng chứng có lợi cho việc nhớ phần đã học.'
-  loai: loi-khuyen
-  nguon:
-  - diekelmann2010
-  trich: The two-stage model of memory offers a widely accepted solution to this dilemma
-  vi_tri: Box 2
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Mỗi đêm ngủ là một ca củng cố trí nhớ. Học rải ra kết hợp ngủ đủ vừa tận dụng hiệu ứng ngắt quãng (xem Vì sao ta quên?), vừa tận dụng củng cố trong giấc ngủ." Chữ mới: câu hiện tại, link tới Học dồn có nhớ lâu?. Lý do: hiệu ứng ngắt quãng ở bài Học dồn (Vững chắc, đã khóa); phần ngủ là giả thuyết hợp lý (n58); link đúng trang.'
-- id: n70
-  cau: 'Mục Nguồn: 9 tài liệu (Diekelmann & Born 2010; Gais, Lucas & Born 2006; Rasch và cộng sự 2007; Ataei 2023; Berres & Erdfelder 2021; Hu 2020; Rasch 2009; Le 2026; Züst 2019) có tên, tạp chí, tập, trang, DOI đúng.'
-  loai: lich-su
-  ket_qua: dung
-  ghi_chu: 'Đối chiếu: Diekelmann, Gais, Rasch 2007 khớp PDF; Berres, Hu, Ataei, Züst, Rasch 2009, Le khớp Europe PMC/OpenAlex (tên bài, năm, DOI). Trang tập/số của Berres 147(12) 1309–1353, Hu 146(3) 218–244, Züst 29(4) 541–553, Ataei 72:101852, Rasch 2009 12(4) 396–397 chưa đối chiếu từng chữ với Crossref; chỗ này lượt 2 có thể kiểm lại.'
+  - id: n1
+    cau: 'Mô tả: giấc ngủ, nhất là giấc ngủ sóng chậm, có thể giúp củng cố trí nhớ.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: Sleep has been identified as a state that optimizes the consolidation of newly acquired information in memory
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Giấc ngủ sóng chậm củng cố trí nhớ như thế nào". Chữ mới: "Giấc ngủ, nhất là giấc ngủ sóng chậm, có thể giúp củng cố trí nhớ như thế nào". Lý do: cơ chế SWS là mô hình (n12). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35404637", "https://europepmc.org/article/MED/20046194", "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Câu mô tả nói "có thể giúp", đúng mức.
+    review: dung
+  - id: n2
+    cau: 'Đáp án thu gọn: người ngủ sau khi học nhớ lại nhiều hơn khi thức trắng, kể cả khi người thức trắng đã được ngủ bù trước lúc kiểm tra; nên nhiều khả năng An nhớ phần đã học tốt hơn.'
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: Subjects remembered clearly more of the learned vocabulary when they had slept during the night following learning than when they had stayed awake
+    vi_tri: tr. 260, thí nghiệm 2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "**An nhớ tốt hơn** … giấc ngủ sau khi học *chủ động* củng cố trí nhớ, còn thức trắng thì phá hỏng quá trình đó." Chữ mới: "**Nhiều khả năng An nhớ phần đã học tốt hơn** … Trong thí nghiệm bên dưới, người ngủ sau khi học nhớ lại nhiều hơn khi thức trắng …". Lý do: 14 người, danh sách ngắn; "chủ động củng cố/phá hỏng" là diễn giải. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Chỉ 14 người; kết luận "nhiều khả năng" là đúng mức.
+    review: dung
+  - id: n3
+    cau: Trong thí nghiệm của Gais, người thức trắng không dùng đêm để học thêm (xem TV, chơi trò chơi), nên phần "Bình học thêm mấy tiếng" chưa được kiểm tra trực tiếp.
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: During sleep deprivation, subjects were engaged in activities such as watching TV and playing games. Reading was not allowed
+    vi_tri: tr. 260
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: (không có; đáp án coi như thức đêm để học thêm cũng thua). Chữ mới: câu thêm. Lý do: nguồn không kiểm tra việc học thêm. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n4
+    cau: Theo mô hình được nhiều nhà nghiên cứu ủng hộ, khi ngủ sâu não tái kích hoạt ("phát lại") những gì đã học trong ngày.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: an active consolidation process results from selective re-activation of memories during sleep
+    vi_tri: tr. 118 (mục Synaptic homeostasis versus system consolidation)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Thực ra, khi ta chìm vào giấc ngủ sâu, não bước vào một ca làm việc khác: nó **phát lại** những gì đã học trong ngày." Chữ mới: "Theo mô hình được nhiều nhà nghiên cứu ủng hộ, … **tái kích hoạt** ("phát lại") …". Lý do: là giả thuyết (n12). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt bài tổng quan (toàn văn có tường phí, không mở).
+    review: dung
+  - id: n5
+    cau: Giấc ngủ gồm các giai đoạn luân phiên; giấc ngủ sóng chậm (SWS, ngủ sâu, sóng não chậm và đều) tập trung ở nửa đầu đêm, giấc ngủ mắt chuyển động nhanh (REM) ở nửa sau đêm.
+    loai: dinh-nghia
+    nguon:
+      - diekelmann2010
+    trich: is characterized by high amounts of SWS, whereas REM sleep prevails during the second half (late sleep)
+    vi_tri: tr. 115, Box 1
+    ket_qua: dung
+    ghi_chu: 'Bỏ "lúc ta mơ nhiều nhất" khỏi định nghĩa REM (xem n6). Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): Box 1: "In humans, the first part of the night (early sleep) is characterized by high amounts of SWS, whereas REM sleep prevails during the second half (late sleep)". Lượt 2 không chắc chỉ vì chưa mở toàn văn.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'Chỉ xác nhận phần định nghĩa: OpenStax Psychology 2e 4.3 nói giai đoạn 3 NREM là "deep sleep or slow-wave sleep" với sóng delta, REM có sóng giống lúc thức. Chưa mở được nguồn bậc 1-2 nói SWS tập trung nửa đầu đêm và REM nửa sau.'
+    review: dung
+  - id: n6
+    cau: (Đã bỏ) "REM — lúc ta mơ nhiều nhất".
+    loai: phat-hien
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "(rapid eye movement, REM — lúc ta mơ nhiều nhất)". Chữ mới: "(rapid eye movement, REM)". Lý do: câu thừa, giấc mơ có ở cả NREM; không cần cho luận điểm của bài (giấc mơ ở bài riêng). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/21543596", "https://openstax.org/books/psychology-2e/pages/4-3-stages-of-sleep" ]
+    luot_2_ghi_chu: Câu đã bỏ khỏi trang, không còn khẳng định gì; việc bỏ là đúng vì mơ cũng xảy ra ngoài REM.
+    review: dung
+  - id: n7
+    cau: Bài tổng quan "The memory function of sleep" đăng trên Nature Reviews Neuroscience, tập 11, số 2, trang 114–126 (Diekelmann và Born, 2010).
+    loai: lich-su
+    nguon:
+      - diekelmann2010
+    trich: The memory function of sleep
+    vi_tri: tr. 114
+    ket_qua: dung
+    ghi_chu: Siêu dữ liệu khớp bản PDF (tr. 114, "FEBRUARY 2010, VOLUME 11") và Crossref 10.1038/nrn2762.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+  - id: n8
+    cau: Bài tổng quan tổng hợp bằng chứng trên người và động vật gặm nhấm.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: a consistent finding in humans, cats, rats and mice
+    vi_tri: tr. 118
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "tổng hợp hàng loạt bằng chứng". Chữ mới: "tổng hợp bằng chứng trên người và động vật gặm nhấm". Lý do: chính xác hơn (bài dẫn cả người, mèo, chuột). Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): tr. 118 "a consistent finding in humans, cats, rats and mice"; bài dẫn nghiên cứu trên người và chuột (rats, mice). Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Tóm tắt không nói bài gồm cả người lẫn động vật gặm nhấm; không mở được toàn văn.
+    review: dung
+  - id: n9
+    cau: 'Bài đề xuất khung hai giai đoạn nối tiếp: củng cố hệ thống trong SWS rồi củng cố synap trong REM.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: slow-wave sleep (SWS) and rapid eye movement (REM) sleep support system consolidation and synaptic consolidation, respectively
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Từ "subsequent" ủng hộ thứ tự nối tiếp; chỉ đọc tóm tắt.
+  - id: n10
+    cau: Trong SWS, sóng chậm, thoi ngủ và gợn sóng phối hợp việc tái kích hoạt và tái phân phối các ký ức phụ thuộc hồi hải mã sang vỏ não.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: slow oscillations, spindles and ripples - at minimum cholinergic activity - coordinate the re-activation and redistribution of hippocampus-dependent memories to neocortical sites
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+  - id: n11
+    cau: Quá trình đó diễn ra khi hoạt động acetylcholine ở mức thấp nhất.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: at minimum cholinergic activity
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+  - id: n12
+    cau: Chính bài tổng quan lưu ý việc tái phân phối ký ức này chưa được chứng minh trực tiếp.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: although this has not been directly demonstrated yet
+    vi_tri: tr. 119 (mục System consolidation)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: (không có; trang nói như chắc chắn). Chữ mới: câu thêm. Lý do: nguồn tự nói chưa chứng minh trực tiếp. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): "It is assumed that the reactivations during system consolidation stimulate the redistribution of hippocampal memories to neocortical storage sites, although this has not been directly demonstrated yet". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Tóm tắt không nói việc tái phân phối "chưa được chứng minh trực tiếp"; không mở được toàn văn để xác nhận lời lưu ý này.
+    review: dung
+  - id: n13
+    cau: Trong REM, với acetylcholine và sóng theta cao, hoạt động của các gen liên quan đến tính dẻo tăng cục bộ, và điều này có thể tạo điều kiện củng cố synap ở vỏ não.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: local increases in plasticity-related immediate-early gene activity
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "các gen liên quan đến tính dẻo của não được kích hoạt, tạo điều kiện **gia cố các kết nối synap**". Chữ mới: "hoạt động của các gen … tăng cục bộ, và điều này *có thể* tạo điều kiện …". Lý do: nguồn dùng "might favour"; bằng chứng trực tiếp còn ít (n39). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    review: dung
+  - id: n14
+    cau: Hồi hải mã là kho lưu trữ tạm, vỏ não là kho lưu trữ dài hạn (mô hình hai kho); hồi hải mã học nhanh, vỏ não học chậm.
+    loai: dinh-nghia
+    nguon:
+      - diekelmann2010
+    trich: the other store learns at a slower rate and serves as the long-term store
+    vi_tri: Box 2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194", "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Mô tả mô hình hai kho đúng theo văn liệu; "hồi hải mã học nhanh, vỏ não học chậm" là phần chuẩn của mô hình, không có ở tóm tắt.
+  - id: n15
+    cau: 'Gais và cộng sự: người tham gia là học sinh trung học Mỹ, nói tiếng Anh và chưa biết tiếng Đức.'
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: Twelve American high school students [...] Subjects were native English speakers with no prior knowledge of German.
+    vi_tri: tr. 259
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Học sinh trung học học các cặp từ vựng (tiếng Đức–tiếng Anh)". Chữ mới: ghi rõ học sinh Mỹ, nói tiếng Anh, chưa biết tiếng Đức. Lý do: đủ và chính xác hơn. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n16
+    cau: Mỗi danh sách gồm 24 cặp từ tiếng Anh–tiếng Đức, học tối đa 10 phút.
+    loai: so-lieu
+    nguon:
+      - gais2006
+    trich: one of four 24-pair English-German vocabulary lists [...] with a time limit of 10 min to learn the whole list
+    vi_tri: tr. 259
+    ket_qua: da-sua
+    ghi_chu: "Xem n15 (chữ cũ không nêu số cặp và thời gian). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn."
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n17
+    cau: 'Thí nghiệm 1: 12 học sinh, thiết kế trong-nhóm, ai cũng làm đủ bốn điều kiện.'
+    loai: so-lieu
+    nguon:
+      - gais2006
+    trich: Twelve American high school students [...] participated in all four conditions in a within-subject design.
+    vi_tri: tr. 259
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "mỗi học sinh học buổi tối rồi ngủ ngay trong một điều kiện, và học buổi sáng rồi thức ban ngày trong điều kiện còn lại; kiểm tra sau 24 và 36 giờ". Chữ mới: bốn điều kiện (sáng/tối, 24/36 giờ). Lý do: bài có bốn điều kiện, không phải hai. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n18
+    cau: 'Thí nghiệm 1: học lúc 8 giờ tối rồi ngủ trong khoảng 3 giờ sau đó, hoặc học lúc 8 giờ sáng rồi thức khoảng 15 giờ mới ngủ; kiểm tra lại sau 24 hoặc 36 giờ.'
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: Learning took place either at 8 a.m. or at 8 p.m. [...] Recall was tested again after 24 h or 36 h
+    vi_tri: 'tr. 259; bảng 1 (cột "Time between learning and sleep": 3 h, 15 h)'
+    ket_qua: da-sua
+    ghi_chu: "Xem n17; số giờ lấy từ Bảng 1. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn."
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n19
+    cau: 'Thí nghiệm 2: 14 học sinh nam, thiết kế trong-nhóm, thứ tự đảo ngẫu nhiên.'
+    loai: so-lieu
+    nguon:
+      - gais2006
+    trich: Fourteen male high school students [...] were tested twice in randomized, counterbalanced order
+    vi_tri: tr. 260
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một nhóm học buổi tối rồi đi ngủ, nhóm còn lại học cùng giờ nhưng thức trắng đêm". Chữ mới: mỗi người làm cả hai điều kiện. Lý do: thiết kế trong-nhóm, không phải hai nhóm. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n20
+    cau: Ở lại thức trắng đêm dưới sự giám sát (xem TV, chơi trò chơi); không được đọc sách để tránh gây nhiễu cho trí nhớ.
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: subjects were engaged in activities such as watching TV and playing games. Reading was not allowed in order to prevent possible interference in the declarative memory system
+    vi_tri: tr. 260
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+  - id: n21
+    cau: Sáng hôm sau người thức trắng về nhà ngủ bù (trung bình khoảng 5,6 giờ ban ngày và 7,6 giờ đêm kế tiếp).
+    loai: so-lieu
+    nguon:
+      - gais2006
+    trich: they slept on average for 5.6 [...] h during daytime and for another 7.6 [...] h during the following night
+    vi_tri: tr. 260
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: (không có số giờ ngủ bù). Chữ mới: số giờ theo bài. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n22
+    cau: Cả hai điều kiện được kiểm tra 48 giờ sau khi học, nên người thức trắng đã được ngủ bù trước lúc kiểm tra, loại trừ khả năng nhớ kém chỉ vì mệt.
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: Recall testing took place in both conditions 48 h after initial learning
+    vi_tri: tr. 260
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "kiểm tra sau 48 giờ — tức nhóm thức trắng đã được ngủ bù một đêm". Chữ mới: ghi rõ ngủ bù 5,6 giờ ban ngày và 7,6 giờ đêm kế tiếp. Lý do: chính xác hơn. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n23
+    cau: 'Kết quả thí nghiệm 1: tỉ lệ quên cao hơn rõ rệt khi học buổi sáng (ngủ muộn) so với buổi tối (ngủ sớm); khoảng giữ 24 hay 36 giờ không tạo khác biệt đáng kể.'
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: a much higher rate of forgetting in morning-learning conditions than in evening-learning conditions [...] no significant difference was found for retention intervals of 24 h and 36 h
+    vi_tri: tr. 260
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: (không nêu kết quả thí nghiệm 1). Chữ mới: kết quả theo bài (F(1,11)=9,8, P<0,01; F=0,2, P=0,65). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n24
+    cau: 'Thí nghiệm 2: người tham gia nhớ rõ ràng nhiều từ hơn khi đã ngủ so với khi thức trắng (trung bình mất khoảng 0,2 từ so với khoảng 1,8 từ).'
+    loai: so-lieu
+    nguon:
+      - gais2006
+    trich: Subjects remembered clearly more of the learned vocabulary when they had slept during the night following learning than when they had stayed awake (F1,13 = 7.1, P < 0.05
+    vi_tri: tr. 260, Bảng 1 phần B (0,2 và 1,8 từ)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nhóm được ngủ sau khi học nhớ rõ ràng nhiều từ hơn nhóm thức trắng." Chữ mới: so sánh trong-nhóm kèm số từ mất. Lý do: không có "nhóm"; thêm số. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n25
+    cau: 'Tác hại của việc thức trắng vẫn còn sau khi ngủ bù: các tác giả kết luận mệt mỏi lúc kiểm tra không giải thích được khác biệt; điều này gợi ý ảnh hưởng nằm ở củng cố trong đêm đầu, chứ không chỉ ở lúc truy xuất.'
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: This finding excludes fatigue as a factor explaining differences in retrieval performance between sleep and sleep deprivation.
+    vi_tri: tr. 260
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chứng tỏ vấn đề không phải là mệt mỏi lúc kiểm tra, mà là quá trình củng cố trí nhớ đã bị phá hỏng ngay trong đêm đầu tiên". Chữ mới: "các tác giả kết luận … gợi ý …". Lý do: loại trừ mệt mỏi không đồng nghĩa chứng minh cơ chế. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Phần "chứ không chỉ ở lúc truy xuất" là cách diễn giải của trang, phù hợp lập luận của các tác giả về "consolidation".
+    review: dung
+  - id: n26
+    cau: Cỡ mẫu nhỏ (12 và 14 người) và danh sách từ ngắn là giới hạn của thí nghiệm.
+    loai: so-lieu
+    nguon:
+      - gais2006
+    trich: compared with many other studies measuring forgetting, here only a small number of items had to be encoded
+    vi_tri: tr. 260
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: (không có). Chữ mới: câu giới hạn. Lý do: cỡ mẫu 12 và 14 theo bài; bài tự nói ít mục. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Tác giả nêu số từ ít là một điểm cần lưu ý; "giới hạn" về cỡ mẫu là nhận xét của trang, hợp lý.
+    review: dung
+  - id: n27
+    cau: Trí nhớ từ vựng là trí nhớ tường thuật (declarative), được xem là phụ thuộc hồi hải mã; trước đó, phần lớn nghiên cứu gần đây về giấc ngủ và trí nhớ ở người tập trung vào trí nhớ quy trình, được xem là không phụ thuộc hồi hải mã.
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: In humans, these studies concentrated mainly on procedural types of memory, which are considered to be hippocampus-independent.
+    vi_tri: tr. 259, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "phụ thuộc hồi hải mã … vốn ít liên quan đến hồi hải mã hơn". Chữ mới: "được xem là …". Lý do: bài nói "considered to be". Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n28
+    cau: Gais, Lucas & Born (2006), Learning & Memory, 13(3), 259–262.
+    loai: lich-su
+    nguon:
+      - gais2006
+    trich: Brief Communication 13:259-262
+    vi_tri: tr. 259
+    ket_qua: dung
+    ghi_chu: Khớp bản PDF và Crossref 10.1101/lm.132106.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/16741280" ]
+  - id: n29
+    cau: 'Rasch và cộng sự: tình nguyện viên học vị trí 15 cặp thẻ trên lưới hai chiều vào buổi tối, trong khi ngửi mùi hoa hồng; trong hai giai đoạn SWS đầu của đêm, mùi được phảng phất lại.'
+    loai: phat-hien
+    nguon:
+      - rasch2007
+    trich: locations of 15 card pairs on a computer screen [...] During the first two periods of subsequent SWS, the odor was presented again
+    vi_tri: tr. 1427
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Người tham gia học vị trí các cặp thẻ …". Chữ mới: "15 cặp thẻ" và "trong hai giai đoạn SWS đầu". Lý do: bổ sung số liệu thiết kế. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): "volunteers (n = 18) learned object locations in a two-dimensional (2D) object-location memory task in the evening", "the smell of a rose", "locations of 15 card pairs", "During the first two periods of subsequent SWS, the odor was presented again". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    luot_2_ghi_chu: 'Tóm tắt xác nhận: mùi có lúc học được nhắc lại trong SWS, thí nghiệm fMRI. Chưa mở được toàn văn nên không xác nhận được 15 cặp thẻ, lưới hai chiều, mùi hoa hồng, "hai giai đoạn SWS đầu".'
+    review: dung
+  - id: n30
+    cau: Đêm đối chứng chỉ phảng phất không khí không mùi (thiết kế bắt chéo, mù đôi, cùng người làm cả hai đêm).
+    loai: phat-hien
+    nguon:
+      - rasch2007
+    trich: Experiments were conducted according to a double-blind crossover design.
+    vi_tri: tr. 1427, chú thích Hình 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: (không có). Chữ mới: thêm. Lý do: đủ thiết kế. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): "In a control condition, odorless vehicle was delivered"; "Experiments were conducted according to a double-blind crossover design". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    luot_2_ghi_chu: "Không mở được toàn văn (Science có tường phí): không xác nhận được thiết kế bắt chéo, mù đôi, đêm đối chứng không mùi."
+    review: dung
+  - id: n31
+    cau: 'Thí nghiệm chính 18 người: nhớ lại khoảng 97% vị trí sau đêm có mùi, so với khoảng 86% sau đêm không mùi.'
+    loai: so-lieu
+    nguon:
+      - rasch2007
+    trich: participants remembered 97.2 4.1% of the card pairs they had learned before sleep, but they remembered only 85.8 3.8% after the vehicle night
+    vi_tri: tr. 1427
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhớ vị trí các cặp thẻ tốt hơn hẳn". Chữ mới: kèm số 97%/86%, 18 người. Lý do: số thật của bài (97,2 ± 4,1% và 85,8 ± 3,8%; P = 0,001). Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): "participants remembered 97.2 ± 4.1% of the card pairs ... only 85.8 ± 3.8% after the vehicle night (P = 0.001)", n = 18. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    luot_2_ghi_chu: "Không mở được toàn văn: không xác nhận được cỡ mẫu 18 và tỉ lệ 97% so với 86%."
+    review: dung
+  - id: n32
+    cau: 'Các thí nghiệm kiểm soát (17–18 người mỗi thí nghiệm): nhắc mùi trong REM, lúc thức, hoặc khi mùi không xuất hiện lúc học đều không có tác dụng với trí nhớ vị trí.'
+    loai: so-lieu
+    nguon:
+      - rasch2007
+    trich: Odor re-exposure was ineffective during rapid eye movement sleep or wakefulness or when the odor had been omitted during prior learning.
+    vi_tri: tóm tắt; thí nghiệm II n=17, III n=17, IV n=18
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đều không có tác dụng". Chữ mới: thêm "17–18 người", "với trí nhớ vị trí". Lý do: nêu mẫu, và giới hạn ở nhiệm vụ trí nhớ vị trí. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): thí nghiệm II n = 17 (không có mùi lúc học), III n = 17 (REM), IV n = 18 (lúc thức), đều không có tác dụng. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    luot_2_ghi_chu: 'Tóm tắt xác nhận: mùi "ineffective during REM sleep or wakefulness or when the odor had been omitted during prior learning" (và không có tác dụng ở trí nhớ quy trình). Cỡ mẫu 17-18 người mỗi thí nghiệm không xác nhận được vì chưa mở toàn văn.'
+    review: dung
+  - id: n33
+    cau: Một thí nghiệm fMRI cho thấy hồi hải mã tăng hoạt động khi mùi được nhắc lại trong SWS.
+    loai: phat-hien
+    nguon:
+      - rasch2007
+    trich: functional magnetic resonance imaging revealed significant hippocampal activation in response to odor re-exposure during SWS
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hồi hải mã *sáng lên*". Chữ mới: "tăng hoạt động". Lý do: bỏ hình ảnh sai lệch (fMRI đo tín hiệu, không phát sáng). Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    review: dung
+  - id: n34
+    cau: Các tác giả coi đây là bằng chứng thực nghiệm cho vai trò nhân quả của tái kích hoạt ký ức trong SWS; mỗi thí nghiệm chỉ 17–18 người.
+    loai: phat-hien
+    nguon:
+      - rasch2007
+    trich: showed that reactivation indeed causes memory consolidation during sleep
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Đây là bằng chứng nhân quả mạnh mẽ". Chữ mới: "Các tác giả coi đây là bằng chứng thực nghiệm cho vai trò nhân quả … Mỗi thí nghiệm chỉ có 17–18 người". Lý do: tránh "mạnh mẽ", nêu mẫu nhỏ. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): tóm tắt "showed that reactivation indeed causes memory consolidation during sleep"; mẫu 17–18 người mỗi thí nghiệm. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    luot_2_ghi_chu: 'Tóm tắt xác nhận: "showed that reactivation indeed causes memory consolidation during sleep". Cỡ mẫu 17-18 người mỗi thí nghiệm chưa xác nhận được (không mở được toàn văn).'
+    review: dung
+  - id: n35
+    cau: Rasch, Büchel, Gais & Born (2007), Science, 315(5817), 1426–1429.
+    loai: lich-su
+    nguon:
+      - rasch2007
+    trich: SCIENCE VOL 315 9 MARCH 2007
+    vi_tri: tr. 1427
+    ket_qua: dung
+    ghi_chu: Khớp PDF (Science 315, 1426) và Crossref 10.1126/science.1138581.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+  - id: n36
+    cau: 'Khung "Khá vững: giấc ngủ sóng chậm củng cố trí nhớ tường thuật".'
+    loai: nhan
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: khung "Vững chắc" (:::vung-chac), nội dung "một trong những phát hiện được tái lập tốt nhất trong khoa học về giấc ngủ". Chữ mới: :::kha-vung với hai phân tích tổng hợp và lý do chưa Vững chắc. Lý do: câu "tái lập tốt nhất" không có nguồn; mô hình chuyển kho chưa chứng minh trực tiếp. Khớp nhãn các bài tri-nho đã khóa: bài Đường cong quên có nhãn riêng cho học rải (n53). Review (Claude Opus 5.5, 10/11/2026): dung. Nhãn Khá vững đạt thước đo mục 4: Berres & Erdfelder 2021 (tóm tắt, Europe PMC: 823 hiệu ứng, 271 mẫu, g = 0,44, còn 0,28 khi tính thiên lệch báo cáo chọn lọc) và Hu 2020 (91 thí nghiệm, SWS g = 0,27) cùng chiều; chưa Vững chắc vì phần riêng của SWS và cơ chế chuyển kho chưa được chứng minh trực tiếp (Diekelmann & Born 2010, toàn văn). Số trong khung khớp tóm tắt.'
+    nhan: kha-vung
+    co_so:
+      - berres2021
+      - hu2020
+      - diekelmann2010
+      - gais2006
+      - rasch2007
+    ly_do: 'Hai phân tích tổng hợp trong Psychological Bulletin cùng chiều (Berres & Erdfelder 2021: ngủ giúp nhớ lại g = 0,44, 0,28 sau hiệu chỉnh; Hu 2020: nhắc ký ức trong SWS g = 0,27). Chưa đạt Vững chắc: hiệu ứng nhỏ đến vừa, các thí nghiệm kể ở trang có mẫu nhỏ, phần "ký ức chuyển dần về vỏ não" là mô hình chưa chứng minh trực tiếp (Diekelmann & Born 2010), chưa có tái lập lớn có đăng ký trước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35404637", "https://europepmc.org/article/MED/32027149", "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: 'Khung "khá vững" hợp thước đo: nhiều bằng chứng cùng chiều, hiệu ứng giảm khi hiệu chỉnh thiên lệch, chưa có tái lập lớn đăng ký trước.'
+    review: dung
+    nguon:
+      - berres2021
+      - hu2020
+      - diekelmann2010
+      - gais2006
+      - rasch2007
+  - id: n37
+    cau: Phân tích tổng hợp 823 hiệu ứng từ 271 mẫu độc lập thấy lợi ích của giấc ngủ ở mức vừa (g = 0,44), giảm còn g = 0,28 sau khi hiệu chỉnh thiên lệch báo cáo chọn lọc.
+    loai: so-lieu
+    nguon:
+      - berres2021
+    trich: we found a moderate overall sleep benefit in episodic memory (g = 0.44) [...] When accounting for selective reporting bias, the overall effect of sleep on episodic memory is reduced but still significant (g = 0.28)
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Tóm tắt (toan_van false). Số 823/271 khớp "823 effect sizes from 271 independent samples".
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35404637" ]
+  - id: n38
+    cau: 'Phân tích tổng hợp 91 thí nghiệm nhắc lại ký ức có chủ đích: nhắc trong SWS có tác dụng nhỏ (g = 0,27), nhắc trong REM hay lúc thức thì không.'
+    loai: so-lieu
+    nguon:
+      - hu2020
+    trich: 'from 91 experiments with 212 effect sizes (N = 2,004) [...] slow-wave sleep: Hedges'' g = 0.27, 95% CI [0.20, 0.35]). In contrast, TMR was not effective during REM sleep nor during wakefulness'
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ (nếu có): "nhỏ nhưng ổn định". Chữ mới: "nhỏ (g = 0,27)". Lý do: tóm tắt không dùng chữ "ổn định" cho kết quả này. Khớp với Rasch 2007 ở chiều REM/thức. Review (Claude Opus 5.5, 10/11/2026): sai. Hồ sơ ghi đã bỏ chữ "ổn định" nhưng trang vẫn viết "tác dụng nhỏ nhưng ổn định (g = 0,27)". Tóm tắt Hu 2020 chỉ cho g = 0,27, 95% CI [0,20; 0,35], không nói "ổn định". Chữ mới trên trang: "có tác dụng nhỏ (g = 0,27)".'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/32027149" ]
+    luot_2_ghi_chu: Bài còn thấy hiệu ứng ở giai đoạn 2 NREM (g = 0,32); câu của trang không sai.
+    review: sai
+  - id: n39
+    cau: 'Khung "Đang tranh cãi: vai trò chính xác của giấc ngủ REM".'
+    loai: nhan
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cho rằng REM đảm nhận bước *củng cố synap*". Chữ mới: "REM *có thể* thuận lợi …" và thêm lưu ý thuốc có thể bù. Lý do: nguồn dùng "might favour" và nói "direct evidence of this is scarce at present". Review (Claude Opus 5.5, 10/11/2026): dung. Nhãn Đang tranh cãi đạt: Rasch 2009 (ức chế REM không làm hại, còn cải thiện trí nhớ kỹ năng) mâu thuẫn với vai trò củng cố synap của REM mà Diekelmann & Born 2010 tự nói "direct evidence of this is scarce at present" (toàn văn).'
+    nhan: tranh-cai
+    co_so:
+      - diekelmann2010
+      - rasch2009
+    ly_do: 'Bằng chứng chất lượng cao mâu thuẫn: Diekelmann & Born (2010) nói bằng chứng trực tiếp về củng cố synap trong REM còn ít; Rasch 2009 thấy ức chế REM bằng thuốc không làm hại trí nhớ kỹ năng, nhưng bài tổng quan lưu ý thuốc có thể tự bù qua tính dẻo synap.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/18836440", "https://europepmc.org/article/MED/20046194", "https://europepmc.org/article/MED/32027149" ]
+    luot_2_ghi_chu: Bằng chứng không nhất quán nên "đang tranh cãi" hợp thước đo.
+    review: dung
+    nguon:
+      - diekelmann2010
+      - rasch2009
+  - id: n40
+    cau: Ức chế REM bằng thuốc không làm giảm, thậm chí cải thiện trí nhớ kỹ năng (Rasch và cộng sự, 2009); bài tổng quan lưu ý thuốc có thể tác động trực tiếp lên tính dẻo synap và bù cho việc mất REM.
+    loai: phat-hien
+    nguon:
+      - rasch2009
+    trich: REM sleep suppression by administration of selective serotonin or norepinephrine re-uptake inhibitors after training did not impair consolidation of skills or word-pairs in healthy men but rather enhanced gains in finger tapping accuracy
+    vi_tri: tóm tắt (Rasch 2009); Diekelmann & Born tr. 120 cho lưu ý
+    ket_qua: dung
+    ghi_chu: 'Phần "bài tổng quan lưu ý" khớp Diekelmann & Born: "such substances also exert direct effects on synaptic plasticity and synaptic forms of consolidation that could compensate for a loss of REM sleep". Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): tr. 116 "such substances also exert direct effects on synaptic plasticity and synaptic forms of consolidation that could compensate for a loss of REM sleep"; phần Rasch 2009 khớp tóm tắt. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/18836440" ]
+    luot_2_ghi_chu: 'Nửa đầu đúng: "REM sleep suppression ... did not impair consolidation of skills or word-pairs ... but rather enhanced gains in finger tapping accuracy" (ở nam khỏe mạnh). Nửa sau (bài tổng quan lưu ý thuốc có thể tác động trực tiếp lên tính dẻo synap) không xác nhận được vì không mở được toàn văn Diekelmann & Born.'
+    review: dung
+  - id: n41
+    cau: Bài tổng quan 2010 tóm tắt bằng chứng về vai trò của REM với trí nhớ cảm xúc.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: Sleep likewise supports the consolidation of emotional information
+    vi_tri: tr. 116
+    ket_qua: dung
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Tóm tắt Diekelmann & Born không nói gì về trí nhớ cảm xúc; không mở được toàn văn.
+    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): "Sleep likewise supports the consolidation of emotional information" và "REM-rich sleep benefits nondeclarative types of memory (that is, procedural and emotional aspects of memory)". Đúng.'
+    review: dung
+  - id: n42
+    cau: 'Khung "Bác bỏ: thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn".'
+    loai: nhan
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: khung :::bac-bo[thức trắng đêm ôn thi giúp nhớ bài hơn], "nhóm thức trắng nhớ kém hơn hẳn … Thiếu ngủ không chỉ làm ta mệt lúc thi — nó phá hỏng quá trình củng cố trí nhớ ngay trong đêm đó." Chữ mới: tên khung thu hẹp "thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn" và nội dung nêu Berres 2021 và giới hạn. Lý do: bằng chứng không kiểm tra việc thức đêm để học thêm. Review (Claude Opus 5.5, 10/11/2026): dung. Nhãn Đã bị bác bỏ cho phát biểu hẹp "thức trắng thay cho giấc ngủ giúp nhớ phần đã học tốt hơn": phân tích tổng hợp 271 mẫu (Berres & Erdfelder 2021) và Gais 2006 cùng ngược chiều; không có kết quả nào ủng hộ. Khung tự nêu giới hạn (không kiểm việc học thêm). Đạt.'
+    nhan: bac-bo
+    co_so:
+      - gais2006
+      - berres2021
+    ly_do: 'Gais 2006 (14 người) và phân tích tổng hợp Berres & Erdfelder 2021 (271 mẫu) cùng thấy người ngủ nhớ lại nhiều hơn người thức cùng khoảng thời gian; chưa có nghiên cứu nào kể ở trang so sánh việc dùng đêm thức để học thêm. Nhãn phát biểu hẹp: thức trắng thay cho ngủ, không phải "học thêm".'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35404637", "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: 'Khung "bác bỏ" cho ý "thức trắng thay ngủ giúp nhớ tốt hơn" hợp lý: hiệu ứng ngủ có ở 271 mẫu, ngược chiều ý đó.'
+    review: dung
+    nguon:
+      - gais2006
+      - berres2021
+  - id: n43
+    cau: Phân tích tổng hợp của Berres và Erdfelder (2021) thấy người ngủ nhớ lại nhiều hơn người thức cùng khoảng thời gian.
+    loai: phat-hien
+    nguon:
+      - berres2021
+    trich: People recall more information after sleep than after an equally long period of wakefulness.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35404637" ]
+  - id: n44
+    cau: 'Củng cố hệ thống: trong SWS, hồi hải mã phát lại ký ức (gợn sóng ripple), thoi ngủ giúp vỏ não sẵn sàng tiếp nhận, sóng chậm phối hợp các hoạt động ấy.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: a fine-tuned temporal relationship between the occurrence of slow oscillations, spindles and sharp wave-ripples during SWS that coordinates the bidirectional information flow between the neocortex and the hippocampus
+    vi_tri: tr. 118
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "các thoi ngủ và sóng chậm "mở cổng" để vỏ não tiếp nhận". Chữ mới: "thoi ngủ giúp vỏ não sẵn sàng tiếp nhận và sóng chậm phối hợp". Lý do: bỏ ẩn dụ "mở cổng" không có trong nguồn. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): "Thalamo-cortical spindles seem to prime cortical networks for the long-term storage of memory representations". Đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Chi tiết "thoi ngủ giúp vỏ não sẵn sàng tiếp nhận" là cách diễn đạt của trang, không có ở tóm tắt; ý chung đúng.
+    review: dung
+  - id: n45
+    cau: Theo mô hình hai kho, việc chuyển kho diễn ra dần qua nhiều lần tái kích hoạt, lúc ngủ khi não không ghi nhận thông tin mới, nên tránh nhiễu và ghi đè lên kiến thức cũ.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: the re-activation and redistribution of memories take place off-line (during sleep) when no encoding occurs
+    vi_tri: Box 2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Qua nhiều đêm, ký ức dần trở nên độc lập với hồi hải mã — đó là lý do ký ức cũ khó mất hơn ký ức mới học." Chữ mới: viết theo Box 2 và thêm "chưa được chứng minh trực tiếp". Lý do: câu "đó là lý do ký ức cũ khó mất hơn" không có trong nguồn. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): Box 2: "the newly encoded memory traces are repeatedly re-activated ... gradually redistributed"; "in order to prevent interference, the re-activation and redistribution of memories take place off-line (during sleep) when no encoding occurs"; vấn đề là học mới "without overriding older knowledge". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194", "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: 'Gais có nhắc giả thuyết ít nhiễu khi ngủ, nhưng ý "mô hình hai kho: chuyển dần qua nhiều lần tái kích hoạt, tránh ghi đè" không xác nhận được khi chưa mở toàn văn bài tổng quan.'
+    review: dung
+  - id: n46
+    cau: 'Củng cố synap trong REM: môi trường hóa học của REM (acetylcholine cao, sóng theta) có thể tạo điều kiện gia cố các kết nối ở vỏ não; đây là phần còn nhiều tranh luận.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: might favour the subsequent synaptic consolidation of memories in the cortex
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "tạo điều kiện gia cố". Chữ mới: "*có thể* tạo điều kiện … còn nhiều tranh luận". Lý do: như n13. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Phần "còn nhiều tranh luận" khớp với ngôn ngữ giả thuyết ("might") và bằng chứng của Rasch 2009.
+    review: dung
+  - id: n47
+    cau: 'Giả thuyết cân bằng synap: sóng chậm làm giảm đồng loạt cường độ các kết nối synap, các kết nối yếu bị loại bỏ, nhờ đó tín hiệu nổi bật hơn nhiễu.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: Sleep would serve to globally downscale synaptic strength
+    vi_tri: tr. 118, mục Synaptic homeostasis
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trong SWS, não còn "tỉa bớt" các kết nối yếu, ít dùng đến". Chữ mới: "sóng chậm làm giảm đồng loạt cường độ các kết nối synap, các kết nối yếu bị loại bỏ …". Lý do: giả thuyết nói về giảm toàn bộ cường độ synap, không phải "tỉa kết nối ít dùng". Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/24411729" ]
+    luot_2_ghi_chu: Mô tả giả thuyết SHY đúng; chi tiết "sóng chậm" là diễn giải chuẩn của Tononi & Cirelli.
+    review: dung
+  - id: n48
+    cau: Bài tổng quan xem giả thuyết cân bằng synap và củng cố hệ thống chủ động là hai giả thuyết không loại trừ nhau, nhiều khả năng phối hợp với nhau.
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: The two models are not mutually exclusive; indeed, the hypothesized processes probably act in concert to optimize the memory function of sleep.
+    vi_tri: tr. 118
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một ý tưởng bổ sung". Chữ mới: nêu rõ nguồn nói gì. Lý do: chính xác hơn. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Diekelmann & Born 2010 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): "The two models are not mutually exclusive; indeed, the hypothesized processes probably act in concert". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194", "https://europepmc.org/article/MED/24411729" ]
+    luot_2_ghi_chu: Chưa mở được toàn văn Diekelmann & Born nên không xác nhận được bài xem hai giả thuyết là không loại trừ nhau.
+    review: dung
+  - id: n49
+    cau: 'Cả ba ý tưởng cùng hướng nhìn: giấc ngủ không chỉ là thời gian chết của trí nhớ, mà có thể là ca làm việc thứ hai của nó.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: SWS and REM sleep have complementary functions to optimize memory consolidation
+    vi_tri: tr. 122, Conclusions
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Cả ba đều thống nhất ở một điểm: giấc ngủ không phải thời gian chết của trí nhớ, mà là ca làm việc thứ hai của nó". Chữ mới: "cùng một hướng nhìn … không chỉ … có thể là". Lý do: "thống nhất" quá mạnh, ba ý tưởng cạnh tranh nhau một phần. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Câu hình ảnh tổng kết của trang, không phải số liệu.
+    review: dung
+  - id: n50
+    cau: 'Mục Áp dụng 1: "Xếp lịch học sao cho sau đó là một giấc ngủ đêm" :nhan[kha-vung].'
+    loai: nhan
+    ket_qua: dung
+    nhan: kha-vung
+    co_so:
+      - gais2006
+      - berres2021
+    ly_do: Lợi ích của ngủ sau khi học thấy ở phân tích tổng hợp (g 0,28–0,44) nhưng thí nghiệm Gais chỉ 12 người, một điều kiện học sáng/tối; nên Khá vững.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35404637", "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Khá vững hợp thước đo.
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Khá vững đạt: phân tích tổng hợp cùng chiều, thí nghiệm kể ở trang nhỏ."
+    review: dung
+    nguon:
+      - gais2006
+      - berres2021
+  - id: n51
+    cau: Gais thấy ngủ trong vài giờ sau khi học giúp nhớ từ vựng tốt hơn học buổi sáng rồi thức cả ngày, trong một thí nghiệm nhỏ (12 học sinh); có thể học xong buổi tối rồi đi ngủ đúng giờ.
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: declarative memory is enhanced when sleep follows within a few hours of learning, independent of time of day
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "ngủ *ngay trong vài giờ sau khi học* giúp nhớ từ vựng tốt hơn … hãy học xong buổi tối rồi đi ngủ đúng giờ — giấc ngủ sẽ "làm nốt phần việc còn lại"". Chữ mới: "so với học sáng rồi thức cả ngày, trong một thí nghiệm nhỏ (12 học sinh) … có thể … có thể giúp". Lý do: mềm lại, nêu cỡ mẫu. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n52
+    cau: 'Mục Áp dụng 2: "Đừng thức trắng đêm trước ngày thi" :nhan[kha-vung].'
+    loai: nhan
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: :nhan[vung-chac] "Đây là ứng dụng chắc chắn nhất … Một đêm ngủ đủ trước kỳ thi "lợi" hơn nhiều so với vài tiếng nhồi nhét thêm." Chữ mới: :nhan[kha-vung], nêu rõ chưa kiểm tra thức để học thêm, thêm lời dẫn tới người có chuyên môn và Hỗ trợ. Lý do: so sánh "lợi hơn nhiều" chưa được kiểm tra. Review (Claude Opus 5.5, 10/11/2026): dung. Khá vững đạt (như n42, nhưng lời khuyên còn phụ thuộc việc dùng đêm thức để học thêm, chưa được kiểm tra).'
+    nhan: kha-vung
+    co_so:
+      - gais2006
+      - berres2021
+      - nhs-insomnia
+    ly_do: Chiều "thức thay cho ngủ thì nhớ phần đã học kém hơn" có hai nguồn (Gais 2006, Berres 2021) nên Khá vững; nhưng không có nghiên cứu so thức để học thêm với ngủ đủ, nên không Vững chắc.
+    id_cu_giu: '#2-dung-thuc-trang-dem-truoc-ngay-thi-vung-chac'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf", "https://europepmc.org/article/MED/35404637" ]
+    luot_2_ghi_chu: Khá vững hợp thước đo.
+    review: dung
+    nguon:
+      - gais2006
+      - berres2021
+      - nhs-insomnia
+  - id: n53
+    cau: "Thức trắng không chỉ khiến bạn mệt lúc làm bài: trong thí nghiệm của Gais và cộng sự (14 học sinh), người tham gia nhớ lại phần đã học kém hơn sau đêm thức trắng so với khi được ngủ, kể cả khi đã ngủ bù trước lúc kiểm tra; phân tích tổng hợp của Berres và Erdfelder (2021) cũng thấy người ngủ nhớ lại nhiều hơn người thức cùng khoảng thời gian."
+    loai: phat-hien
+    nguon:
+      - gais2006
+      - berres2021
+    trich: Sleep deprivation has a detrimental effect on memory, which was significant after a night of recovery sleep. [Gais 2006, tóm tắt] | People recall more information after sleep than after an equally long period of wakefulness. [Berres 2021, tóm tắt]
+    vi_tri: Gais 2006 tóm tắt và tr. 260; Berres & Erdfelder 2021 tóm tắt (Europe PMC)
+    ket_qua: da-sua
+    ghi_chu: 'Phần "phân tích tổng hợp" xem n43; "kể cả sau khi ngủ bù" chỉ có ở Gais. Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2 đúng: "kể cả sau khi ngủ bù" chỉ có ở Gais 2006 (thí nghiệm 2, 14 học sinh nam); Berres & Erdfelder 2021 so người ngủ với người thức cùng khoảng thời gian, không đo ngủ bù. Chữ cũ: "Nghiên cứu của Gais và cộng sự cùng phân tích tổng hợp về lợi ích của giấc ngủ cho thấy thức trắng không chỉ khiến bạn mệt mỏi lúc làm bài: người thức trắng còn nhớ lại phần đã học kém hơn người đã ngủ, kể cả sau khi ngủ bù." Chữ mới: tách hai nguồn, theo cau_dung của lượt 2.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf", "https://europepmc.org/article/MED/35404637" ]
+    luot_2_ghi_chu: 'câu đúng: Gais (14 học sinh nam) thấy người thức trắng nhớ kém hơn người đã ngủ kể cả sau khi ngủ bù; phân tích tổng hợp của Berres và Erdfelder (2021) cho thấy người ngủ nhớ nhiều hơn người thức cùng khoảng thời gian.; Phần "kể cả sau khi ngủ bù" chỉ có ở Gais (14 người); phân tích tổng hợp Berres & Erdfelder so người ngủ với người thức cùng khoảng thời gian, không nói riêng đến thức trắng có ngủ bù.'
+    review: sai
+  - id: n54
+    cau: Chưa có nghiên cứu nào ở đây so sánh trực tiếp việc dùng đêm thức để học thêm với ngủ đủ.
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: Reading was not allowed in order to prevent possible interference in the declarative memory system
+    vi_tri: tr. 260
+    ket_qua: dung
+    ghi_chu: 'Khẳng định giới hạn của các nguồn trong bài (Gais, Berres): không có điều kiện "học thêm khi thức". Không khẳng định gì về toàn bộ văn liệu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf", "https://europepmc.org/article/MED/35404637" ]
+    luot_2_ghi_chu: Câu nói về các nghiên cứu đã dẫn; không có thí nghiệm nào trong số đó cho học thêm lúc thức.
+  - id: n55
+    cau: Nếu thường xuyên khó ngủ hay mất ngủ kéo dài, hãy trao đổi với người có chuyên môn; hướng dẫn của NHS khuyên đi khám khi mất ngủ kéo dài nhiều tháng hay ảnh hưởng đến sinh hoạt hằng ngày.
+    loai: loi-khuyen
+    nguon:
+      - nhs-insomnia
+    trich: 'See a GP if: changing your sleeping habits has not helped your insomnia you''ve had trouble sleeping for months your insomnia is affecting your daily life in a way that makes it hard for you to cope'
+    vi_tri: NHS, Insomnia, mục "See a GP if" (nhs.uk/conditions/insomnia, đọc 10/11/2026)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: (không có). Chữ mới: câu thêm theo yêu cầu an toàn (chủ đề gần sức khỏe), không chẩn đoán, không điều trị. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nhs.uk/conditions/insomnia/" ]
+    review: dung
+  - id: n56
+    cau: Link tới trang [Hỗ trợ](/psyche/ho-tro/) ở mục Áp dụng 2.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Kiểm: trang Hỗ trợ có trong src/data/trang.yml và kế hoạch (id ho-tro); đã có trong các trang đợt trước. Cần chắc trang lên trước khi khóa. Review (Claude Opus 5.5, 10/11/2026): dung. Link viết /psyche/ho-tro/ như các trang đã khóa (nen-tang/suc-khoe-tam-than, bat-dau/cach-kiem-chung, thi-nghiem/seligman) và AGENTS.md ("Link nội bộ viết /psyche/<trang>/"); ho-tro/index có trong trang.yml và khoa.json.'
+    review: dung
+  - id: n57
+    cau: 'Mục Áp dụng 3: "Muốn nhớ lâu, hãy để ký ức qua đêm nhiều lần" :nhan[kha-vung].'
+    loai: nhan
+    ket_qua: dung
+    nhan: kha-vung
+    co_so:
+      - diekelmann2010
+      - berres2021
+    ly_do: Học rải có nhãn Vững chắc ở bài Học dồn có nhớ lâu? (đã khóa); phần "các đêm ngủ ở giữa góp phần" chưa được tách riêng, nên theo ý yếu hơn là Khá vững.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35404637", "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Khung khá vững hợp thước đo; chưa có tái lập lớn cho lịch nhiều đêm.
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Khá vững đạt: học rải Vững chắc ở bài đã khóa; vai trò riêng của các đêm ngủ chưa tách, nên hạ một bậc."
+    review: dung
+    nguon:
+      - diekelmann2010
+      - berres2021
+  - id: n58
+    cau: Mô hình hai kho cho rằng ký ức chuyển dần qua nhiều lần tái kích hoạt, nên ôn tập rải ra nhiều ngày (mỗi lần học xong đều được ngủ) là một lịch học hợp lý.
+    loai: loi-khuyen
+    nguon:
+      - diekelmann2010
+    trich: The two-stage model of memory offers a widely accepted solution to this dilemma
+    vi_tri: Box 2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "việc ôn tập rải ra nhiều ngày … hiệu quả hơn học dồn một lần rồi thi ngay. Kết quả này cũng khớp với …". Chữ mới: "là một lịch học hợp lý", tách học rải (Vững chắc ở bài khác) khỏi vai trò của giấc ngủ (giả thuyết). Lý do: hiệu quả của các đêm ngủ chưa tách riêng. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/16719566", "https://europepmc.org/article/MED/20046194" ]
+    luot_2_ghi_chu: Là lời khuyên suy từ mô hình, nói "hợp lý", không khẳng định đã kiểm chứng.
+    review: dung
+  - id: n59
+    cau: Bản thân việc rải ôn tập giúp nhớ lâu hơn học dồn mang nhãn Vững chắc ở bài Học dồn có nhớ lâu?; liên kết tới bài đó.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Kiểm trên src/content/docs/kham-pha/tri-nho/duong-cong-quen.md và hồ sơ đã khóa: khung "học ngắt quãng giúp nhớ lâu hơn học dồn" là :::vung-chac (hồ sơ duong-cong-quen.yml có nhan: vung-chac). Review (Claude Opus 5.5, 10/11/2026): dung. duong-cong-quen.md có khung :::vung-chac[học ngắt quãng giúp nhớ lâu hơn học dồn] (dòng 72), tiêu đề "Học dồn có nhớ lâu?". Đúng.'
+    review: dung
+  - id: n60
+    cau: Các thí nghiệm then chốt (Gais 2006; Rasch 2007) do các nhóm nghiên cứu ở Đức thực hiện (Lübeck); Gais trên học sinh trung học Mỹ, Rasch trên tình nguyện viên (bài báo không nêu quốc tịch).
+    loai: lich-su
+    nguon:
+      - gais2006
+    trich: Department of Neuroendocrinology, University of Lübeck, 23538 Lübeck, Germany
+    vi_tri: tr. 259 (địa chỉ tác giả); Rasch 2007 tr. 1426–1427 (Lübeck)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "được thực hiện trên học sinh, sinh viên ở **Đức**" (sai: người tham gia Gais là học sinh Mỹ). Chữ mới: nhóm nghiên cứu ở Đức, người tham gia Mỹ / không nêu. Lý do: sai về người tham gia. Rasch 2007: địa chỉ tác giả Lübeck, "volunteers (n = 18)", không nêu quốc tịch. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): địa chỉ tác giả ở Lübeck và Hamburg (Đức); người tham gia chỉ ghi "volunteers", không nêu quốc tịch. Gais: Lübeck, học sinh Mỹ. Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/16741280" ]
+    luot_2_ghi_chu: Gais thuộc Đại học Lübeck (Europe PMC); mẫu là học sinh Mỹ. Chưa mở được bản Rasch 2007 nên không xác nhận nơi thực hiện hay chuyện bài không nêu quốc tịch.
+    review: dung
+  - id: n61
+    cau: Tính đến 11/2026, chưa tìm thấy thí nghiệm nào kiểm tra việc ngủ sau khi học có giúp nhớ trên học sinh, sinh viên Việt Nam.
+    loai: thoi-su
+    nguon:
+      - tim-vn
+    vi_tri: Europe PMC, 10/11/2026
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu tương tự trên học sinh, sinh viên Việt Nam." Chữ mới: thêm mốc "Tính đến 11/2026", nêu rõ loại thí nghiệm. Lần tìm: Europe PMC 10/11/2026, truy vấn (sleep AND memory AND Vietnam* AND (students OR adolescents) AND (consolidation OR learning)) và (sleep AND "memory consolidation" AND Vietnamese); các kết quả liên quan chỉ có Le 2026 (khảo sát, không đo củng cố). Tìm trong tạp chí trong nước chưa làm. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    het_han: '2028-11-01'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ABSTRACT%3A%22sleep%22%20AND%20ABSTRACT%3A%22memory%22%20AND%20ABSTRACT%3A%22Vietnam*%22&format=json", "https://pmc.ncbi.nlm.nih.gov/articles/PMC13612568/" ]
+    luot_2_ghi_chu: Tìm kiếm có giới hạn; phù hợp chữ "chưa tìm thấy".
+    review: dung
+  - id: n62
+    cau: Một khảo sát cắt ngang trên 639 học sinh trung học ở Hà Nội và Hưng Yên ghi nhận mối liên quan nhỏ giữa triệu chứng mất ngủ và thành tích học tập tự báo cáo (Le và cộng sự, 2026), không đo củng cố trí nhớ.
+    loai: so-lieu
+    nguon:
+      - le2026
+    trich: Six hundred and thirty-nine high-school students from a more highly-developed, urban area (Hanoi) and a lesser-developed, rural area (Hung Yen) were cross-sectionally assessed [...] with higher levels of insomnia symptoms associated with lower reported academic performance
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: 'r chính tắc = 0,20; khi thêm động lực và mệt mỏi làm biến số đồng biến, mối liên quan còn không có ý nghĩa thống kê (tóm tắt): trang chỉ nói "nhỏ", không mâu thuẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC13612568/" ]
+    luot_2_ghi_chu: Đã đọc toàn văn PMC; bài không đo củng cố trí nhớ.
+  - id: n63
+    cau: 'Suy luận (đã ghi rõ chưa kiểm tra): cơ chế củng cố trí nhớ trong giấc ngủ là đặc điểm chung của não người nên kết luận chính có thể đúng với nhiều nền văn hóa; lịch học, giờ ngủ có thể làm đổi mức độ ảnh hưởng.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: Numerous studies have confirmed the beneficial effect of sleep on declarative and procedural memory in various tasks
+    vi_tri: tr. 114–115
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Về nguyên tắc sinh học, cơ chế … là đặc điểm chung của não người, nên kết luận chính nhiều khả năng đúng với mọi nền văn hóa." Chữ mới: "Chúng tôi suy luận (chưa được kiểm tra trực tiếp) … có thể đúng với nhiều nền văn hóa". Lý do: "mọi nền văn hóa" quá mạnh; nguồn là suy luận từ bằng chứng chủ yếu ở phương Tây; không có nguồn riêng cho các nền văn hóa khác. Review (Claude Opus 5.5, 10/11/2026): dung. Câu tự ghi là suy luận chưa kiểm tra, không nói như phát hiện; căn cứ hợp lý: Diekelmann & Born 2010 (toàn văn) thấy lợi ích của giấc ngủ nhất quán ở người và nhiều loài, Berres & Erdfelder 2021 tổng hợp 271 mẫu. Câu sau nói rõ mức độ trong đời thực chưa được kiểm tra. Giữ.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    luot_2_ghi_chu: Câu tự khai là suy luận chưa kiểm tra, không có nguồn nào để xác nhận hay bác bỏ; chỉ ghi nhận Gais thực hiện trên học sinh Mỹ.
+    review: dung
+  - id: n64
+    cau: 'Ngộ nhận "thức trắng ôn thi học nhiều hơn thì nhớ nhiều hơn": người thức trắng sau khi học (không học thêm) nhớ lại ít hơn khi được ngủ; việc dùng đêm thức để học thêm chưa được thí nghiệm ấy kiểm tra.'
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: Reading was not allowed in order to prevent possible interference in the declarative memory system
+    vi_tri: tr. 260
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nếu không có giấc ngủ để củng cố, phần lớn những gì "nhồi" thêm sẽ rơi rụng. Thí nghiệm năm 2006 chứng minh nhóm ngủ (học ít giờ hơn) mà nhớ nhiều hơn nhóm thức trắng." Chữ mới: câu hiện tại. Lý do: sai: nhóm ngủ không học ít giờ hơn (cả hai học cùng lúc, người thức không học thêm); "chứng minh", "phần lớn rơi rụng" không có trong nguồn. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: n65
+    cau: 'Ngộ nhận "ngủ là lúc não nghỉ hoàn toàn": trong SWS hồi hải mã phát lại ký ức; trong REM, theo bài tổng quan 2010, hoạt động của các gen liên quan đến tính dẻo của synap tăng cục bộ.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: local increases in plasticity-related immediate-early gene activity
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "trong REM, não kích hoạt các gen liên quan đến tính dẻo của synap". Chữ mới: "theo bài tổng quan 2010, hoạt động của các gen … tăng cục bộ". Lý do: như n13. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    review: dung
+  - id: n66
+    cau: 'Tính đến 11/2026, bằng chứng về việc học điều mới trong lúc ngủ vẫn chưa kết luận được: tổng quan 2023 (51 bài) thấy dạng học đơn giản (quen dần, điều kiện hóa) có thể xảy ra lúc ngủ, còn với việc học phức tạp như ngôn ngữ mới thì bằng chứng hành vi về chuyển kiến thức sang lúc tỉnh còn chưa kết luận được (Ataei và cộng sự, 2023).'
+    loai: thoi-su
+    nguon:
+      - ataei2023
+    trich: simpler forms of learning, such as habituation and conditioning, are possible during sleep [...] behavioral evidence for the transfer of new knowledge to wake remains inconclusive
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chưa có bằng chứng vững chắc nào cho thấy ta có thể học kiến thức *mới* trong lúc ngủ." Chữ mới: mốc 11/2026 và nội dung tổng quan 2023. Lý do: thêm nguồn và mốc; bằng chứng tìm được là tổng quan 2023 (cập nhật đến thời điểm tìm: chưa tìm tổng quan mới hơn). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    het_han: '2028-11-01'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/37778137" ]
+    luot_2_ghi_chu: "Kiểm lại ngày 10/11/2026: chưa thấy tổng quan mới hơn thay đổi kết luận trong lần tìm Europe PMC."
+    review: dung
+  - id: n67
+    cau: Một thí nghiệm năm 2019 chỉ thấy các liên kết từ mới đơn giản có thể hình thành khi từ được phát đúng đỉnh sóng chậm (Züst và cộng sự, 2019); chưa có gì cho thấy nghe băng bài giảng cả đêm thay được việc học.
+    loai: phat-hien
+    nguon:
+      - zust2019
+    trich: When the presentation of the second word of a pair (e.g., "Haus" of "tofer-house") coincided with an ongoing slow-wave peak, the chances increased that a new semantic association between the pair had been formed and retained.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Phần "chưa có gì cho thấy nghe băng bài giảng thay được việc học" là kết luận từ Ataei 2023 (n66) và giới hạn của Züst (cặp từ đơn giản, khi ngủ trưa, tín hiệu khớp đỉnh sóng chậm).
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30713104" ]
+    luot_2_ghi_chu: Giấc ngủ là một giấc ngủ trưa; nhóm nữ và nam người Đức.
+  - id: n68
+    cau: Thí nghiệm "nhắc mùi" 2007 chỉ cho thấy có thể củng cố cái đã học lúc thức, và chỉ khi mùi hương đã gắn với lúc học, trong đúng giai đoạn SWS.
+    loai: phat-hien
+    nguon:
+      - rasch2007
+    trich: Odor re-exposure was ineffective during rapid eye movement sleep or wakefulness or when the odor had been omitted during prior learning.
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "khi tín hiệu gợi đúng ký ức cũ". Chữ mới: "khi mùi hương đã gắn với lúc học". Lý do: nói đúng điều kiện của thí nghiệm. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    review: dung
+  - id: n69
+    cau: 'Ba mục "Đọc thêm": Giấc mơ có ý nghĩa gì? (các lý thuyết về giấc mơ); Học dồn có nhớ lâu? (ôn tập ngắt quãng và giấc ngủ giữa các buổi học); Vì sao ta quên? (đường cong quên và vai trò của giấc ngủ).'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm trên trang: giac-mo.md bàn các lý thuyết giấc mơ; duong-cong-quen.md có mục :nhan "Ngủ đủ giấc giữa các buổi học" (dòng 114) và giả thuyết "trí nhớ cần thời gian ngấm"; vi-sao-ta-quen.md có khung :::tranh-cai "bước nhảy ở mốc 24 giờ và vai trò của giấc ngủ". Chữ cũ của mô tả ("ngủ rồi mơ — chuyện gì xảy ra"; "ngủ và ôn tập ngắt quãng giữ ký ức"; "củng cố trí nhớ chống lại đường cong quên") sửa cho khớp trang đích. Review (Claude Opus 5.5, 10/11/2026): dung. giac-mo.md tiêu đề "Giấc mơ có ý nghĩa gì?", bàn các lý thuyết; duong-cong-quen.md có mục "Ngủ đủ giấc giữa các buổi học" :nhan[kha-vung]; vi-sao-ta-quen.md có khung :::tranh-cai về bước nhảy 24 giờ và vai trò của giấc ngủ. Đúng.'
+    review: dung
+  - id: q1
+    cau: 'Câu hỏi 1: theo Diekelmann và Born, trong SWS ký ức được tái kích hoạt ở hồi hải mã và tái phân phối dần về vỏ não; việc gia cố synap trong môi trường acetylcholine cao, theo bài tổng quan, có thể là việc của REM.'
+    loai: dinh-nghia
+    nguon:
+      - diekelmann2010
+    trich: slow oscillations, spindles and ripples - at minimum cholinergic activity - coordinate the re-activation and redistribution of hippocampus-dependent memories to neocortical sites, whereas during REM sleep
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: phương án sai "Não xóa bớt ký ức để tiết kiệm năng lượng." và giải thích "gia cố kệ hàng … là việc của REM". Chữ mới: phương án sai "Não ngừng mọi hoạt động liên quan đến ký ức." và "*có thể* là việc của REM". Lý do: phương án sai cũ gần giả thuyết cân bằng synap (n47) nên có thể bị coi là đúng; giải thích làm mềm theo n13. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/20046194" ]
+    review: dung
+  - id: q2
+    cau: 'Câu hỏi 2: Gais cho người thức trắng ngủ bù trước khi kiểm tra để loại trừ khả năng họ nhớ kém chỉ vì mệt lúc làm bài; kiểm tra sau 48 giờ, cả hai điều kiện đã ngủ bù; các tác giả kết luận mệt mỏi không giải thích được khác biệt.'
+    loai: phat-hien
+    nguon:
+      - gais2006
+    trich: Thus, fatigue accumulating during wake intervals could be ruled out as a confound.
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nhóm thức trắng … Nhóm thức trắng vẫn nhớ kém hơn — chứng tỏ thiệt hại nằm ở quá trình củng cố … chứ không phải ở lúc truy xuất." và phương án "Vì thiếu người tham gia nên phải dùng lại nhóm cũ." Chữ mới: "người thức trắng", "các tác giả kết luận … gợi ý … chứ không chỉ ở lúc truy xuất", phương án sai mới "Để người tham gia không biết mình đang ở điều kiện nào.". Lý do: thiết kế trong-nhóm (n19); "chứng tỏ" quá mạnh (n25); phương án sai cũ gần với sự thật (thí nghiệm dùng lại cùng người). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf" ]
+    review: dung
+  - id: q3
+    cau: 'Câu hỏi 3: thí nghiệm nhắc mùi cho thấy tái kích hoạt ký ức trong SWS là nguyên nhân giúp củng cố trí nhớ vị trí đã học; mùi chỉ có tác dụng khi đã xuất hiện lúc học và được nhắc trong SWS; mỗi thí nghiệm 17–18 người.'
+    loai: phat-hien
+    nguon:
+      - rasch2007
+    trich: Odor re-exposure was ineffective during rapid eye movement sleep or wakefulness or when the odor had been omitted during prior learning.
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chứng minh điều gì?"; "nhắc trong REM hay lúc thức đều vô ích"; "bằng chứng nhân quả". Chữ mới: "cho thấy điều gì?", "không có tác dụng", "bằng chứng thực nghiệm … (mỗi thí nghiệm chỉ có 17–18 người)", thêm "vị trí đã học". Lý do: như n32, n34. Review (Claude Opus 5.5, 10/11/2026): dung. Mở lại toàn văn Rasch 2007 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus): điều kiện mùi và cỡ mẫu 17–18 khớp (xem n32, n34).'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/17347444" ]
+    luot_2_ghi_chu: Phần nhân quả và điều kiện của mùi khớp tóm tắt; cỡ mẫu 17-18 mỗi thí nghiệm chưa xác nhận được (không mở toàn văn).
+    review: dung
+  - id: q4
+    cau: 'Câu hỏi 4: vì sao vai trò của REM được gắn "Đang tranh cãi": bằng chứng chưa nhất quán (ức chế REM không làm giảm trí nhớ kỹ năng); bài tổng quan viết REM có thể thuận lợi cho củng cố synap, còn là giả thuyết.'
+    loai: phat-hien
+    nguon:
+      - diekelmann2010
+    trich: direct evidence of this is scarce at present
+    vi_tri: tr. 122
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Bài tổng quan 2010 đề xuất REM đảm nhận bước củng cố synap". Chữ mới: "viết rằng REM *có thể* thuận lợi cho bước củng cố synap". Lý do: như n39. Nhất quán với nhãn khung n39. Review (Claude Opus 5.5, 10/11/2026): dung. Lời giải thích khớp khung n39.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/18836440", "https://europepmc.org/article/MED/20046194" ]
+    review: dung
+  - id: q5
+    cau: 'Câu hỏi 5: với kỳ thi sau 3 ngày, lịch hợp lý là học rải 3 ngày, mỗi tối đi ngủ đúng giờ; học rải tận dụng hiệu ứng ngắt quãng, ngủ đủ sau mỗi buổi học cho giấc ngủ cơ hội củng cố, còn thức trắng thay cho giấc ngủ thì chưa thấy bằng chứng có lợi cho việc nhớ phần đã học.'
+    loai: loi-khuyen
+    nguon:
+      - diekelmann2010
+    trich: The two-stage model of memory offers a widely accepted solution to this dilemma
+    vi_tri: Box 2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Mỗi đêm ngủ là một ca củng cố trí nhớ. Học rải ra kết hợp ngủ đủ vừa tận dụng hiệu ứng ngắt quãng (xem Vì sao ta quên?), vừa tận dụng củng cố trong giấc ngủ." Chữ mới: câu hiện tại, link tới Học dồn có nhớ lâu?. Lý do: hiệu ứng ngắt quãng ở bài Học dồn (Vững chắc, đã khóa); phần ngủ là giả thuyết hợp lý (n58); link đúng trang. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/16719566", "https://web.archive.org/web/2020/http://learnmem.cshlp.org/content/13/3/259.full.pdf", "https://europepmc.org/article/MED/35404637" ]
+    luot_2_ghi_chu: Lời khuyên hợp lý, nói "chưa thấy bằng chứng có lợi" cho thức trắng.
+    review: dung
+  - id: n70
+    cau: 'Mục Nguồn: 9 tài liệu (Diekelmann & Born 2010; Gais, Lucas & Born 2006; Rasch và cộng sự 2007; Ataei 2023; Berres & Erdfelder 2021; Hu 2020; Rasch 2009; Le 2026; Züst 2019) có tên, tạp chí, tập, trang, DOI đúng.'
+    loai: lich-su
+    ket_qua: dung
+    ghi_chu: 'Đối chiếu: Diekelmann, Gais, Rasch 2007 khớp PDF; Berres, Hu, Ataei, Züst, Rasch 2009, Le khớp Europe PMC/OpenAlex (tên bài, năm, DOI). Trang tập/số của Berres 147(12) 1309–1353, Hu 146(3) 218–244, Züst 29(4) 541–553, Ataei 72:101852, Rasch 2009 12(4) 396–397 chưa đối chiếu từng chữ với Crossref; chỗ này lượt 2 có thể kiểm lại. Review (Claude Opus 5.5, 10/11/2026): dung. Đối chiếu Crossref (10/11/2026) cả 9 mục: tác giả, năm, tên bài, tạp chí, tập, số, trang, DOI khớp (Ataei: tên bài trên Crossref dùng gạch ngang "–" thay hai chấm, không đổi nghĩa).'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Không được xem trang để đối chiếu từng mục nguồn. Đã kiểm riêng: Diekelmann & Born (11, 114-126), Gais (13, 259-262), Rasch 2007 (315, 1426-1429), Berres (147, 1309-1353), Hu (146, 218-244; doi 10.1037/bul0000223), Rasch 2009 (Nat Neurosci 12, 396-397), Ataei (Sleep Med Rev 72, 101852), Züst (Curr Biol 29, 541-553; doi 10.1016/j.cub.2018.12.038), Le (Front Psychol 17, 1848504) đều có thật và khớp tên bài."
+    review: dung
+    nguon:
+      - diekelmann2010
+      - gais2006
+      - rasch2007
+      - rasch2009
+      - berres2021
+      - hu2020
+      - ataei2023
+      - zust2019
+      - le2026
 doi_chu:
-- cu: 'mô tả: "Giấc ngủ sóng chậm củng cố trí nhớ như thế nào — …"'
-  moi: 'mô tả: "Giấc ngủ, nhất là giấc ngủ sóng chậm, có thể giúp củng cố trí nhớ như thế nào — …"'
-  ly_do: 'n1: cơ chế còn là mô hình.'
-- cu: '"**An nhớ tốt hơn** … giấc ngủ sau khi học *chủ động* củng cố trí nhớ, còn thức trắng thì phá hỏng quá trình đó."'
-  moi: '"**Nhiều khả năng An nhớ phần đã học tốt hơn** … người ngủ sau khi học nhớ lại nhiều hơn khi thức trắng, kể cả khi người thức trắng đã được ngủ bù …"'
-  ly_do: 'n2: mạnh hơn bằng chứng.'
-- cu: (không có)
-  moi: '"Thí nghiệm ấy không cho người thức dùng đêm để học thêm, nên phần ''Bình học thêm mấy tiếng'' chưa được kiểm tra trực tiếp."'
-  ly_do: n3.
-- cu: '"Thực ra, khi ta chìm vào giấc ngủ sâu, não bước vào một ca làm việc khác: nó phát lại …"'
-  moi: '"Theo mô hình được nhiều nhà nghiên cứu ủng hộ, khi ta chìm vào giấc ngủ sâu, … nó tái kích hoạt (''phát lại'') …"'
-  ly_do: n4.
-- cu: '"REM — lúc ta mơ nhiều nhất"'
-  moi: '"REM"'
-  ly_do: 'n6: bỏ vế không cần nguồn.'
-- cu: '"tổng hợp hàng loạt bằng chứng"'
-  moi: '"tổng hợp bằng chứng trên người và động vật gặm nhấm"'
-  ly_do: n8.
-- cu: (không có)
-  moi: '"Chính bài tổng quan lưu ý rằng việc tái phân phối này chưa được chứng minh trực tiếp."'
-  ly_do: n12.
-- cu: '"các gen liên quan đến tính dẻo của não được kích hoạt, tạo điều kiện gia cố các kết nối synap"'
-  moi: '"hoạt động của các gen liên quan đến tính dẻo của não tăng cục bộ, và điều này có thể tạo điều kiện gia cố các kết nối synap"'
-  ly_do: n13.
-- cu: '"Học sinh trung học học các cặp từ vựng (tiếng Đức–tiếng Anh)."'
-  moi: '"Người tham gia là học sinh trung học Mỹ, nói tiếng Anh và chưa biết tiếng Đức; họ học các danh sách 24 cặp từ vựng tiếng Anh–tiếng Đức (tối đa 10 phút mỗi danh sách)."'
-  ly_do: n15, n16.
-- cu: '"mỗi học sinh học buổi tối rồi ngủ ngay trong một điều kiện, và học buổi sáng rồi thức ban ngày trong điều kiện còn lại; kiểm tra sau 24 và 36 giờ"'
-  moi: '"ai cũng làm đủ bốn điều kiện: học lúc 8 giờ tối rồi ngủ trong khoảng 3 giờ sau đó, hoặc học lúc 8 giờ sáng rồi thức khoảng 15 giờ mới ngủ; kiểm tra lại sau 24 hoặc 36 giờ"'
-  ly_do: n17, n18.
-- cu: '"nhóm thức trắng đã được ngủ bù một đêm trước khi kiểm tra"'
-  moi: '"sáng hôm sau người thức trắng được về nhà ngủ bù (… 5,6 giờ ban ngày và 7,6 giờ đêm kế tiếp). Cả hai điều kiện được kiểm tra 48 giờ sau khi học"'
-  ly_do: n19–n22.
-- cu: '"chứng tỏ vấn đề không phải là mệt mỏi lúc kiểm tra, mà là quá trình củng cố trí nhớ đã bị phá hỏng ngay trong đêm đầu tiên"'
-  moi: '"các tác giả kết luận rằng mệt mỏi lúc kiểm tra không giải thích được khác biệt; điều này gợi ý rằng ảnh hưởng nằm ở quá trình củng cố … chứ không chỉ ở lúc truy xuất"'
-  ly_do: n25.
-- cu: '"phụ thuộc hồi hải mã — trước đó, phần lớn bằng chứng về giấc ngủ và trí nhớ chỉ tập trung vào trí nhớ quy trình …, vốn ít liên quan đến hồi hải mã hơn"'
-  moi: '"được xem là phụ thuộc hồi hải mã — trước đó, phần lớn các nghiên cứu gần đây … ở người tập trung vào trí nhớ quy trình …, được xem là không phụ thuộc hồi hải mã"'
-  ly_do: n27.
-- cu: '"Đây là bằng chứng nhân quả mạnh mẽ"'
-  moi: '"Các tác giả coi đây là bằng chứng thực nghiệm cho vai trò nhân quả … Mỗi thí nghiệm chỉ có 17–18 người, nên kết quả cần được đọc cùng các nghiên cứu khác"'
-  ly_do: n34.
-- cu: :::vung-chac[giấc ngủ sóng chậm củng cố trí nhớ tường thuật] "… Đây là một trong những phát hiện được tái lập tốt nhất trong khoa học về giấc ngủ."
-  moi: :::kha-vung[…] "Ngủ sau khi học giúp nhớ lại tốt hơn … g = 0,44 … g = 0,28 … Hu 2020 … g = 0,27 … Vì sao chỉ khá vững …"
-  ly_do: 'n36: hạ Vững chắc xuống Khá vững; tóm tắt hộp tự đổi theo khung.'
-- cu: '"có tác dụng nhỏ nhưng ổn định (g = 0,27)"'
-  moi: '"có tác dụng nhỏ (g = 0,27)"'
-  ly_do: 'n38: bỏ "ổn định" (không có trong tóm tắt).'
-- cu: '"Bài tổng quan 2010 cho rằng REM đảm nhận bước củng cố synap tiếp theo"'
-  moi: '"Bài tổng quan 2010 cho rằng REM có thể thuận lợi cho bước củng cố synap tiếp theo … bài tổng quan lưu ý các thuốc đó cũng có thể tác động trực tiếp lên tính dẻo synap và bù cho việc mất REM"'
-  ly_do: n39, n40.
-- cu: khung :::bac-bo[thức trắng đêm ôn thi giúp nhớ bài hơn] "… nhóm thức trắng nhớ kém hơn hẳn … nó phá hỏng quá trình củng cố trí nhớ ngay trong đêm đó."
-  moi: khung :::bac-bo[thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn] "… người tham gia nhớ lại ít từ hơn khi được ngủ … Berres và Erdfelder (2021) … Các nghiên cứu này không kiểm tra việc dùng đêm thức để học thêm"
-  ly_do: 'n42, n43: thu hẹp cho đúng bằng chứng; tiêu đề đổi nên hộp tóm tắt đổi theo.'
-- cu: '"Qua nhiều đêm, ký ức dần trở nên độc lập với hồi hải mã — đó là lý do ký ức cũ khó mất hơn ký ức mới học. … hồi hải mã học nhanh nhưng dễ nhiễu, vỏ não học chậm nhưng ổn định, và giấc ngủ là cầu nối"'
-  moi: '"Theo mô hình hai kho, hồi hải mã học nhanh và giữ thông tin tạm thời, vỏ não học chậm và lưu trữ dài hạn; việc chuyển kho diễn ra dần qua nhiều lần tái kích hoạt, và diễn ra lúc ngủ, khi não không ghi nhận thông tin mới … chưa được chứng minh trực tiếp."'
-  ly_do: n44, n45.
-- cu: '"…(acetylcholine cao, sóng theta) tạo điều kiện gia cố các kết nối thần kinh ở vỏ não."'
-  moi: '"… *có thể* tạo điều kiện gia cố các kết nối thần kinh ở vỏ não. Đây là phần còn nhiều tranh luận (xem khung ''Đang tranh cãi'')."'
-  ly_do: n46.
-- cu: '"một ý tưởng bổ sung cho rằng trong SWS, não còn ''tỉa bớt'' các kết nối yếu, ít dùng đến"'
-  moi: '"một ý tưởng khác cho rằng sóng chậm làm giảm đồng loạt cường độ các kết nối synap, các kết nối yếu bị loại bỏ … Bài tổng quan 2010 xem đây và củng cố hệ thống chủ động là hai giả thuyết không loại trừ nhau"'
-  ly_do: n47, n48.
-- cu: '"Cả ba đều thống nhất ở một điểm: … không phải thời gian chết …, mà là ca làm việc thứ hai của nó"'
-  moi: '"Cả ba đều cùng một hướng nhìn: … không chỉ là thời gian chết …, mà có thể là ca làm việc thứ hai của nó"'
-  ly_do: n49.
-- cu: '"Áp dụng 1: … hãy học xong buổi tối rồi đi ngủ đúng giờ — giấc ngủ sẽ ''làm nốt phần việc còn lại''."'
-  moi: '"… trong một thí nghiệm nhỏ (12 học sinh). … có thể học xong buổi tối rồi đi ngủ đúng giờ — giấc ngủ có thể giúp ''làm nốt phần việc còn lại''."'
-  ly_do: n51.
-- cu: '"2. Đừng thức trắng đêm trước ngày thi :nhan[vung-chac] — … Một đêm ngủ đủ trước kỳ thi ''lợi'' hơn nhiều so với vài tiếng nhồi nhét thêm."'
-  moi: '"2. … :nhan[kha-vung] { #2-dung-thuc-trang-dem-truoc-ngay-thi-vung-chac } — … Chưa có nghiên cứu nào ở đây so sánh trực tiếp việc dùng đêm thức để học thêm với việc ngủ đủ …"'
-  ly_do: 'n52: hạ nhãn; giữ id cũ của tiêu đề.'
-- cu: (không có)
-  moi: '"Nếu bạn thường xuyên khó ngủ hay mất ngủ kéo dài, hãy trao đổi với người có chuyên môn (hướng dẫn của NHS …); xem thêm trang Hỗ trợ."'
-  ly_do: n55.
-- cu: '"việc ôn tập rải ra nhiều ngày (mỗi lần học xong đều được ngủ) hiệu quả hơn học dồn một lần rồi thi ngay."'
-  moi: '"ôn tập rải ra nhiều ngày … là một lịch học hợp lý. … việc các đêm ngủ ở giữa góp phần vào lợi ích đó là giả thuyết hợp lý, chưa được tách riêng … khung này chỉ mang nhãn ''khá vững''."'
-  ly_do: n58.
-- cu: '"được thực hiện trên học sinh, sinh viên ở Đức; bài tổng quan 2010 tổng hợp chủ yếu các nghiên cứu trong phòng thí nghiệm ở châu Âu và Mỹ"'
-  moi: '"do các nhóm nghiên cứu ở Đức thực hiện, trên học sinh trung học Mỹ (Gais và cộng sự) và tình nguyện viên (Rasch và cộng sự, bài báo không nêu quốc tịch); bài tổng quan 2010 tổng hợp các nghiên cứu trên người và động vật gặm nhấm"'
-  ly_do: 'n60: người tham gia Gais là học sinh Mỹ; bài tổng quan không giới hạn ở "phòng thí nghiệm châu Âu và Mỹ" (n8).'
-- cu: '"Chúng tôi chưa tìm thấy nghiên cứu tương tự trên học sinh, sinh viên Việt Nam."'
-  moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy thí nghiệm nào kiểm tra việc ngủ sau khi học có giúp nhớ trên học sinh, sinh viên Việt Nam; chỉ thấy một khảo sát cắt ngang …"'
-  ly_do: 'n61, n62: mốc thời gian, nêu khảo sát gần nhất.'
-- cu: '"nên kết luận chính nhiều khả năng đúng với mọi nền văn hóa"'
-  moi: '"Chúng tôi suy luận (chưa được kiểm tra trực tiếp) rằng … kết luận chính có thể đúng với nhiều nền văn hóa"'
-  ly_do: n63.
-- cu: '"nếu không có giấc ngủ để củng cố, phần lớn những gì ''nhồi'' thêm sẽ rơi rụng. Thí nghiệm năm 2006 chứng minh nhóm ngủ (học ít giờ hơn) mà nhớ nhiều hơn nhóm thức trắng."'
-  moi: '"thí nghiệm năm 2006 thấy người thức trắng sau khi học (không học thêm) nhớ lại ít hơn khi họ được ngủ. Việc dùng đêm thức để học thêm chưa được thí nghiệm ấy kiểm tra."'
-  ly_do: 'n64: sai về thiết kế (không có nhóm học thêm).'
-- cu: '"trong REM, não kích hoạt các gen liên quan đến tính dẻo của synap"'
-  moi: '"trong REM, theo bài tổng quan 2010, hoạt động của các gen liên quan đến tính dẻo của synap tăng cục bộ"'
-  ly_do: n65.
-- cu: '"ngủ rồi mơ — chuyện gì xảy ra"; "ngủ và ôn tập ngắt quãng giữ ký ức"; "củng cố trí nhớ chống lại đường cong quên"'
-  moi: '"các lý thuyết về giấc mơ"; "ôn tập ngắt quãng và giấc ngủ giữa các buổi học"; "đường cong quên và vai trò của giấc ngủ"'
-  ly_do: 'n69: mô tả khớp nội dung trang đích; "chống lại đường cong quên" là diễn giải mạnh.'
-- cu: 'quiz 1: phương án "Não xóa bớt ký ức để tiết kiệm năng lượng."; giải thích "gia cố kệ hàng trong môi trường acetylcholine cao là việc của REM"'
-  moi: phương án "Não ngừng mọi hoạt động liên quan đến ký ức."; giải thích "… theo bài tổng quan, *có thể* là việc của REM"
-  ly_do: q1.
-- cu: 'quiz 2: "nhóm thức trắng"; phương án "Vì thiếu người tham gia nên phải dùng lại nhóm cũ."; "chứng tỏ thiệt hại nằm ở quá trình củng cố … chứ không phải ở lúc truy xuất"'
-  moi: '"người thức trắng"; phương án "Để người tham gia không biết mình đang ở điều kiện nào."; "các tác giả kết luận … gợi ý rằng ảnh hưởng nằm ở quá trình củng cố … chứ không chỉ ở lúc truy xuất"'
-  ly_do: q2.
-- cu: 'quiz 3: "chứng minh điều gì?"; "nhắc trong REM hay lúc thức đều vô ích"'
-  moi: '"cho thấy điều gì?"; "… đều không có tác dụng … (mỗi thí nghiệm chỉ có 17–18 người)"; đáp án đúng thêm "trí nhớ vị trí đã học"'
-  ly_do: q3.
-- cu: 'quiz 4: "Bài tổng quan 2010 đề xuất REM đảm nhận bước củng cố synap"'
-  moi: '"Bài tổng quan 2010 viết rằng REM có thể thuận lợi cho bước củng cố synap"'
-  ly_do: q4.
-- cu: 'quiz 5: "Mỗi đêm ngủ là một ca củng cố trí nhớ. Học rải ra kết hợp ngủ đủ vừa tận dụng hiệu ứng ngắt quãng (xem Vì sao ta quên?), vừa tận dụng củng cố trong giấc ngủ."'
-  moi: '"Học rải ra nhiều ngày tận dụng hiệu ứng ngắt quãng (xem Học dồn có nhớ lâu?), và ngủ đủ sau mỗi buổi học cho giấc ngủ cơ hội củng cố …; còn thức trắng thay cho giấc ngủ thì chưa thấy bằng chứng là có lợi …"'
-  ly_do: q5.
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
+  - cu: 'mô tả: "Giấc ngủ sóng chậm củng cố trí nhớ như thế nào — …"'
+    moi: 'mô tả: "Giấc ngủ, nhất là giấc ngủ sóng chậm, có thể giúp củng cố trí nhớ như thế nào — …"'
+    ly_do: 'n1: cơ chế còn là mô hình.'
+  - cu: '"**An nhớ tốt hơn** … giấc ngủ sau khi học *chủ động* củng cố trí nhớ, còn thức trắng thì phá hỏng quá trình đó."'
+    moi: '"**Nhiều khả năng An nhớ phần đã học tốt hơn** … người ngủ sau khi học nhớ lại nhiều hơn khi thức trắng, kể cả khi người thức trắng đã được ngủ bù …"'
+    ly_do: 'n2: mạnh hơn bằng chứng.'
+  - cu: (không có)
+    moi: '"Thí nghiệm ấy không cho người thức dùng đêm để học thêm, nên phần ''Bình học thêm mấy tiếng'' chưa được kiểm tra trực tiếp."'
+    ly_do: n3.
+  - cu: '"Thực ra, khi ta chìm vào giấc ngủ sâu, não bước vào một ca làm việc khác: nó phát lại …"'
+    moi: '"Theo mô hình được nhiều nhà nghiên cứu ủng hộ, khi ta chìm vào giấc ngủ sâu, … nó tái kích hoạt (''phát lại'') …"'
+    ly_do: n4.
+  - cu: '"REM — lúc ta mơ nhiều nhất"'
+    moi: '"REM"'
+    ly_do: 'n6: bỏ vế không cần nguồn.'
+  - cu: '"tổng hợp hàng loạt bằng chứng"'
+    moi: '"tổng hợp bằng chứng trên người và động vật gặm nhấm"'
+    ly_do: n8.
+  - cu: (không có)
+    moi: '"Chính bài tổng quan lưu ý rằng việc tái phân phối này chưa được chứng minh trực tiếp."'
+    ly_do: n12.
+  - cu: '"các gen liên quan đến tính dẻo của não được kích hoạt, tạo điều kiện gia cố các kết nối synap"'
+    moi: '"hoạt động của các gen liên quan đến tính dẻo của não tăng cục bộ, và điều này có thể tạo điều kiện gia cố các kết nối synap"'
+    ly_do: n13.
+  - cu: '"Học sinh trung học học các cặp từ vựng (tiếng Đức–tiếng Anh)."'
+    moi: '"Người tham gia là học sinh trung học Mỹ, nói tiếng Anh và chưa biết tiếng Đức; họ học các danh sách 24 cặp từ vựng tiếng Anh–tiếng Đức (tối đa 10 phút mỗi danh sách)."'
+    ly_do: n15, n16.
+  - cu: '"mỗi học sinh học buổi tối rồi ngủ ngay trong một điều kiện, và học buổi sáng rồi thức ban ngày trong điều kiện còn lại; kiểm tra sau 24 và 36 giờ"'
+    moi: '"ai cũng làm đủ bốn điều kiện: học lúc 8 giờ tối rồi ngủ trong khoảng 3 giờ sau đó, hoặc học lúc 8 giờ sáng rồi thức khoảng 15 giờ mới ngủ; kiểm tra lại sau 24 hoặc 36 giờ"'
+    ly_do: n17, n18.
+  - cu: '"nhóm thức trắng đã được ngủ bù một đêm trước khi kiểm tra"'
+    moi: '"sáng hôm sau người thức trắng được về nhà ngủ bù (… 5,6 giờ ban ngày và 7,6 giờ đêm kế tiếp). Cả hai điều kiện được kiểm tra 48 giờ sau khi học"'
+    ly_do: n19–n22.
+  - cu: '"chứng tỏ vấn đề không phải là mệt mỏi lúc kiểm tra, mà là quá trình củng cố trí nhớ đã bị phá hỏng ngay trong đêm đầu tiên"'
+    moi: '"các tác giả kết luận rằng mệt mỏi lúc kiểm tra không giải thích được khác biệt; điều này gợi ý rằng ảnh hưởng nằm ở quá trình củng cố … chứ không chỉ ở lúc truy xuất"'
+    ly_do: n25.
+  - cu: '"phụ thuộc hồi hải mã — trước đó, phần lớn bằng chứng về giấc ngủ và trí nhớ chỉ tập trung vào trí nhớ quy trình …, vốn ít liên quan đến hồi hải mã hơn"'
+    moi: '"được xem là phụ thuộc hồi hải mã — trước đó, phần lớn các nghiên cứu gần đây … ở người tập trung vào trí nhớ quy trình …, được xem là không phụ thuộc hồi hải mã"'
+    ly_do: n27.
+  - cu: '"Đây là bằng chứng nhân quả mạnh mẽ"'
+    moi: '"Các tác giả coi đây là bằng chứng thực nghiệm cho vai trò nhân quả … Mỗi thí nghiệm chỉ có 17–18 người, nên kết quả cần được đọc cùng các nghiên cứu khác"'
+    ly_do: n34.
+  - cu: :::vung-chac[giấc ngủ sóng chậm củng cố trí nhớ tường thuật] "… Đây là một trong những phát hiện được tái lập tốt nhất trong khoa học về giấc ngủ."
+    moi: :::kha-vung[…] "Ngủ sau khi học giúp nhớ lại tốt hơn … g = 0,44 … g = 0,28 … Hu 2020 … g = 0,27 … Vì sao chỉ khá vững …"
+    ly_do: 'n36: hạ Vững chắc xuống Khá vững; tóm tắt hộp tự đổi theo khung.'
+  - cu: '"có tác dụng nhỏ nhưng ổn định (g = 0,27)"'
+    moi: '"có tác dụng nhỏ (g = 0,27)"'
+    ly_do: 'n38: bỏ "ổn định" (không có trong tóm tắt).'
+  - cu: '"Bài tổng quan 2010 cho rằng REM đảm nhận bước củng cố synap tiếp theo"'
+    moi: '"Bài tổng quan 2010 cho rằng REM có thể thuận lợi cho bước củng cố synap tiếp theo … bài tổng quan lưu ý các thuốc đó cũng có thể tác động trực tiếp lên tính dẻo synap và bù cho việc mất REM"'
+    ly_do: n39, n40.
+  - cu: khung :::bac-bo[thức trắng đêm ôn thi giúp nhớ bài hơn] "… nhóm thức trắng nhớ kém hơn hẳn … nó phá hỏng quá trình củng cố trí nhớ ngay trong đêm đó."
+    moi: khung :::bac-bo[thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn] "… người tham gia nhớ lại ít từ hơn khi được ngủ … Berres và Erdfelder (2021) … Các nghiên cứu này không kiểm tra việc dùng đêm thức để học thêm"
+    ly_do: 'n42, n43: thu hẹp cho đúng bằng chứng; tiêu đề đổi nên hộp tóm tắt đổi theo.'
+  - cu: '"Qua nhiều đêm, ký ức dần trở nên độc lập với hồi hải mã — đó là lý do ký ức cũ khó mất hơn ký ức mới học. … hồi hải mã học nhanh nhưng dễ nhiễu, vỏ não học chậm nhưng ổn định, và giấc ngủ là cầu nối"'
+    moi: '"Theo mô hình hai kho, hồi hải mã học nhanh và giữ thông tin tạm thời, vỏ não học chậm và lưu trữ dài hạn; việc chuyển kho diễn ra dần qua nhiều lần tái kích hoạt, và diễn ra lúc ngủ, khi não không ghi nhận thông tin mới … chưa được chứng minh trực tiếp."'
+    ly_do: n44, n45.
+  - cu: '"…(acetylcholine cao, sóng theta) tạo điều kiện gia cố các kết nối thần kinh ở vỏ não."'
+    moi: '"… *có thể* tạo điều kiện gia cố các kết nối thần kinh ở vỏ não. Đây là phần còn nhiều tranh luận (xem khung ''Đang tranh cãi'')."'
+    ly_do: n46.
+  - cu: '"một ý tưởng bổ sung cho rằng trong SWS, não còn ''tỉa bớt'' các kết nối yếu, ít dùng đến"'
+    moi: '"một ý tưởng khác cho rằng sóng chậm làm giảm đồng loạt cường độ các kết nối synap, các kết nối yếu bị loại bỏ … Bài tổng quan 2010 xem đây và củng cố hệ thống chủ động là hai giả thuyết không loại trừ nhau"'
+    ly_do: n47, n48.
+  - cu: '"Cả ba đều thống nhất ở một điểm: … không phải thời gian chết …, mà là ca làm việc thứ hai của nó"'
+    moi: '"Cả ba đều cùng một hướng nhìn: … không chỉ là thời gian chết …, mà có thể là ca làm việc thứ hai của nó"'
+    ly_do: n49.
+  - cu: '"Áp dụng 1: … hãy học xong buổi tối rồi đi ngủ đúng giờ — giấc ngủ sẽ ''làm nốt phần việc còn lại''."'
+    moi: '"… trong một thí nghiệm nhỏ (12 học sinh). … có thể học xong buổi tối rồi đi ngủ đúng giờ — giấc ngủ có thể giúp ''làm nốt phần việc còn lại''."'
+    ly_do: n51.
+  - cu: '"2. Đừng thức trắng đêm trước ngày thi :nhan[vung-chac] — … Một đêm ngủ đủ trước kỳ thi ''lợi'' hơn nhiều so với vài tiếng nhồi nhét thêm."'
+    moi: '"2. … :nhan[kha-vung] { #2-dung-thuc-trang-dem-truoc-ngay-thi-vung-chac } — … Chưa có nghiên cứu nào ở đây so sánh trực tiếp việc dùng đêm thức để học thêm với việc ngủ đủ …"'
+    ly_do: 'n52: hạ nhãn; giữ id cũ của tiêu đề.'
+  - cu: (không có)
+    moi: '"Nếu bạn thường xuyên khó ngủ hay mất ngủ kéo dài, hãy trao đổi với người có chuyên môn (hướng dẫn của NHS …); xem thêm trang Hỗ trợ."'
+    ly_do: n55.
+  - cu: '"việc ôn tập rải ra nhiều ngày (mỗi lần học xong đều được ngủ) hiệu quả hơn học dồn một lần rồi thi ngay."'
+    moi: '"ôn tập rải ra nhiều ngày … là một lịch học hợp lý. … việc các đêm ngủ ở giữa góp phần vào lợi ích đó là giả thuyết hợp lý, chưa được tách riêng … khung này chỉ mang nhãn ''khá vững''."'
+    ly_do: n58.
+  - cu: '"được thực hiện trên học sinh, sinh viên ở Đức; bài tổng quan 2010 tổng hợp chủ yếu các nghiên cứu trong phòng thí nghiệm ở châu Âu và Mỹ"'
+    moi: '"do các nhóm nghiên cứu ở Đức thực hiện, trên học sinh trung học Mỹ (Gais và cộng sự) và tình nguyện viên (Rasch và cộng sự, bài báo không nêu quốc tịch); bài tổng quan 2010 tổng hợp các nghiên cứu trên người và động vật gặm nhấm"'
+    ly_do: 'n60: người tham gia Gais là học sinh Mỹ; bài tổng quan không giới hạn ở "phòng thí nghiệm châu Âu và Mỹ" (n8).'
+  - cu: '"Chúng tôi chưa tìm thấy nghiên cứu tương tự trên học sinh, sinh viên Việt Nam."'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy thí nghiệm nào kiểm tra việc ngủ sau khi học có giúp nhớ trên học sinh, sinh viên Việt Nam; chỉ thấy một khảo sát cắt ngang …"'
+    ly_do: 'n61, n62: mốc thời gian, nêu khảo sát gần nhất.'
+  - cu: '"nên kết luận chính nhiều khả năng đúng với mọi nền văn hóa"'
+    moi: '"Chúng tôi suy luận (chưa được kiểm tra trực tiếp) rằng … kết luận chính có thể đúng với nhiều nền văn hóa"'
+    ly_do: n63.
+  - cu: '"nếu không có giấc ngủ để củng cố, phần lớn những gì ''nhồi'' thêm sẽ rơi rụng. Thí nghiệm năm 2006 chứng minh nhóm ngủ (học ít giờ hơn) mà nhớ nhiều hơn nhóm thức trắng."'
+    moi: '"thí nghiệm năm 2006 thấy người thức trắng sau khi học (không học thêm) nhớ lại ít hơn khi họ được ngủ. Việc dùng đêm thức để học thêm chưa được thí nghiệm ấy kiểm tra."'
+    ly_do: 'n64: sai về thiết kế (không có nhóm học thêm).'
+  - cu: '"trong REM, não kích hoạt các gen liên quan đến tính dẻo của synap"'
+    moi: '"trong REM, theo bài tổng quan 2010, hoạt động của các gen liên quan đến tính dẻo của synap tăng cục bộ"'
+    ly_do: n65.
+  - cu: '"ngủ rồi mơ — chuyện gì xảy ra"; "ngủ và ôn tập ngắt quãng giữ ký ức"; "củng cố trí nhớ chống lại đường cong quên"'
+    moi: '"các lý thuyết về giấc mơ"; "ôn tập ngắt quãng và giấc ngủ giữa các buổi học"; "đường cong quên và vai trò của giấc ngủ"'
+    ly_do: 'n69: mô tả khớp nội dung trang đích; "chống lại đường cong quên" là diễn giải mạnh.'
+  - cu: 'quiz 1: phương án "Não xóa bớt ký ức để tiết kiệm năng lượng."; giải thích "gia cố kệ hàng trong môi trường acetylcholine cao là việc của REM"'
+    moi: phương án "Não ngừng mọi hoạt động liên quan đến ký ức."; giải thích "… theo bài tổng quan, *có thể* là việc của REM"
+    ly_do: q1.
+  - cu: 'quiz 2: "nhóm thức trắng"; phương án "Vì thiếu người tham gia nên phải dùng lại nhóm cũ."; "chứng tỏ thiệt hại nằm ở quá trình củng cố … chứ không phải ở lúc truy xuất"'
+    moi: '"người thức trắng"; phương án "Để người tham gia không biết mình đang ở điều kiện nào."; "các tác giả kết luận … gợi ý rằng ảnh hưởng nằm ở quá trình củng cố … chứ không chỉ ở lúc truy xuất"'
+    ly_do: q2.
+  - cu: 'quiz 3: "chứng minh điều gì?"; "nhắc trong REM hay lúc thức đều vô ích"'
+    moi: '"cho thấy điều gì?"; "… đều không có tác dụng … (mỗi thí nghiệm chỉ có 17–18 người)"; đáp án đúng thêm "trí nhớ vị trí đã học"'
+    ly_do: q3.
+  - cu: 'quiz 4: "Bài tổng quan 2010 đề xuất REM đảm nhận bước củng cố synap"'
+    moi: '"Bài tổng quan 2010 viết rằng REM có thể thuận lợi cho bước củng cố synap"'
+    ly_do: q4.
+  - cu: 'quiz 5: "Mỗi đêm ngủ là một ca củng cố trí nhớ. Học rải ra kết hợp ngủ đủ vừa tận dụng hiệu ứng ngắt quãng (xem Vì sao ta quên?), vừa tận dụng củng cố trong giấc ngủ."'
+    moi: '"Học rải ra nhiều ngày tận dụng hiệu ứng ngắt quãng (xem Học dồn có nhớ lâu?), và ngủ đủ sau mỗi buổi học cho giấc ngủ cơ hội củng cố …; còn thức trắng thay cho giấc ngủ thì chưa thấy bằng chứng là có lợi …"'
+    ly_do: q5.
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: '"Phân tích tổng hợp 91 thí nghiệm … có tác dụng nhỏ nhưng ổn định (g = 0,27)"'
+    moi: '"… có tác dụng nhỏ (g = 0,27)"'
+    ly_do: 'Review, n38: nguồn không nói "ổn định".'
+  - cu: '"Nghiên cứu của Gais và cộng sự cùng phân tích tổng hợp về lợi ích của giấc ngủ cho thấy thức trắng không chỉ khiến bạn mệt mỏi lúc làm bài: người thức trắng còn nhớ lại phần đã học kém hơn người đã ngủ, kể cả sau khi ngủ bù."'
+    moi: '"Thức trắng không chỉ khiến bạn mệt lúc làm bài. Trong thí nghiệm của Gais và cộng sự (14 học sinh), … kể cả khi đã ngủ bù trước lúc kiểm tra. Phân tích tổng hợp của Berres và Erdfelder (2021) cũng thấy người ngủ nhớ lại nhiều hơn người thức cùng khoảng thời gian."'
+    ly_do: 'Review, n53: "kể cả sau khi ngủ bù" chỉ có ở Gais (lượt 2 qua-manh).'
