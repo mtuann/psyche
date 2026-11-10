@@ -5,13 +5,981 @@ tang: loi
 muc: V3
 lan:
   - so: 1
-    ngay: null
+    ngay: '2026-11-10'
     nhanh: moi/d5-l2
     ma_bam: null
     nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L2 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L2)
+      review: "Claude Opus 5.5 (agent review D5-L2, 10/11/2026)"
       kiem_mau: null
-nguon: []
-nhan_dinh: []
+nguon:
+  - id: tversky1974
+    ten: 'Tversky & Kahneman (1974), Science 185(4157), 1124–1131: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1126/science.185.4157.1124
+    toan_van: true
+  - id: tversky1983
+    ten: 'Tversky & Kahneman (1983), Psychol Rev 90(4), 293–315: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1037/0033-295X.90.4.293
+    toan_van: true
+  - id: charness2010
+    ten: 'Charness, Karni & Levin, bản working paper 2009 (Johns Hopkins WP 552, EconStor): toàn văn; bản in 2010 Games Econ Behav 68(2), 551–556 chưa mở, số liệu nên đối chiếu bản in'
+    link: https://doi.org/10.1016/j.geb.2009.09.003
+    toan_van: true
+  - id: gigerenzer1991
+    ten: 'Gigerenzer (1991), Eur Rev Soc Psychol 2(1), 83–115: tóm tắt (OpenAlex); không mở được toàn văn'
+    link: https://doi.org/10.1080/14792779143000033
+    toan_van: false
+  - id: kahneman2011
+    ten: 'Kahneman (2011), Thinking, Fast and Slow, FSG: toàn văn (bản quét trong Internet Archive)'
+    link: https://archive.org/details/thinking-fast-and-slow-by-daniel-kahneman
+    toan_van: true
+  - id: chandrashekar2021
+    ten: 'Chandrashekar và cộng sự (2021), Meta-Psychology 5: tóm tắt (OpenAlex); review đọc toàn văn (open.lnu.se/index.php/metapsychology/article/download/2474/2516)'
+    link: https://doi.org/10.15626/mp.2020.2474
+    toan_van: true
+  - id: yechiam2023
+    ten: 'Yechiam & Zeif (2023), Psychol Res 87(8), 2336–2344: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1007/s00426-023-01837-5
+    toan_van: false
+  - id: tentori2004
+    ten: 'Tentori, Bonini & Osherson (2004), Cogn Sci 28(3), 467–477: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1016/s0364-0213(04)00004-7
+    toan_van: false
+  - id: tim-kiem-vn-linda
+    ten: 'Tìm trên OpenAlex (10/11/2026): "conjunction fallacy Vietnamese", "Linda problem Vietnam participants": không có nghiên cứu về lỗi conjunction ở người Việt (kết quả là bài không liên quan). Review tìm thêm Europe PMC (10/11/2026): "conjunction fallacy" AND (Vietnam OR Vietnamese), "Linda problem" AND (Vietnam OR Vietnamese): một bài không liên quan'
+    link: https://api.openalex.org/works?search=conjunction%20fallacy%20Vietnamese
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả (description): 85% sinh viên ở một phiên bản của nghiên cứu gốc chọn đáp án "chi tiết hơn" dù về mặt logic nó không thể đúng hơn.'
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: Overall, 85% of respondents indicated that T&F was more probable than T, in a flagrant violation of the conjunction rule.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "vì sao 85% người chọn đáp án chi tiết hơn". 85% là của phiên bản chọn một trong hai với 142 sinh viên UBC; các phiên bản khác cho tỉ lệ khác. theo G1-L02: mục "ĐÁNG NGỜ" #5 (cùng ý). Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n2
+    cau: Linda 31 tuổi, độc thân, thẳng thắn và rất thông minh; học triết học; thời sinh viên quan tâm đến phân biệt đối xử, công bằng xã hội và tham gia biểu tình chống vũ khí hạt nhân (đoạn mô tả của bài toán).
+    loai: dinh-nghia
+    nguon:
+      - tversky1983
+    trich: Linda is 31 years old, single, outspoken and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in anti-nuclear demonstrations.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests" (bản mô tả Linda)
+    ket_qua: dung
+    ghi_chu: 'theo G1-L02: KHỚP (dòng 16). Đối chiếu lại bản dịch với bản gốc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+  - id: n3
+    cau: 'Hai đáp án: (a) Linda là nhân viên ngân hàng; (b) Linda là nhân viên ngân hàng và là nhà hoạt động nữ quyền.'
+    loai: dinh-nghia
+    nguon:
+      - tversky1983
+    trich: Linda is a bank teller. (T) ... Linda is a bank teller and is active in the feminist movement. (T&F)
+    vi_tri: Tversky & Kahneman 1983, danh sách phát biểu về Linda
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+  - id: n4
+    cau: 'Đáp án đúng về mặt logic là (a): mọi nhân viên ngân hàng đồng thời là nhà hoạt động nữ quyền đều là nhân viên ngân hàng; tập (b) nằm trong tập (a) nên P(A và B) ≤ P(A).'
+    loai: dinh-nghia
+    nguon:
+      - kahneman2011
+    trich: The set of feminist bank tellers is wholly included in the set of bank tellers, as every feminist bank teller is a bank teller. Therefore the probability that Linda is a feminist bank teller must be lower than the probability of her being a bank teller.
+    vi_tri: 'Kahneman 2011, chương "Linda: Less Is More"'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Suy luận logic chuẩn; bài gốc gọi là extension rule.
+  - id: n5
+    cau: Trong một phiên bản của nghiên cứu gốc (142 sinh viên đại học ở UBC chưa học thống kê), 85% chọn (b) giống người đọc.
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: We first presented the description of Linda to a group of 142 undergraduates at UBC and asked them to check which of two alternatives was more probable ... Overall, 85% of respondents indicated that T&F was more probable than T
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trong nghiên cứu gốc, 85% sinh viên tham gia cũng chọn như bạn — kể cả những người có trình độ thống kê cao" (G1-L02 #5, ĐÁNG NGỜ): 85% ở dạng hỏi này là của sinh viên chưa học thống kê; nhóm đã học thống kê làm dạng này chỉ mắc 36%. Chữ hiện trên trang đã sửa theo đề xuất; đối chiếu lại với bài gốc: khớp. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n6
+    cau: Ở phiên bản xếp hạng tám phát biểu, nghiên cứu sinh chương trình khoa học quyết định cũng mắc lỗi với tỉ lệ tương tự (85%).
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: 'Table 1: Tests of the Conjunction Rule in Likelihood Rankings: Linda, direct test V = 89 (naive), 90 (informed), 85 (sophisticated)'
+    vi_tri: Tversky & Kahneman 1983, Bảng 1 (cột Linda, V; OCR in "89 ... 90 ... 85")
+    ket_qua: dung
+    ghi_chu: 'theo G1-L02 (#2): V = 89, 90, 85. Đối chiếu lại Bảng 1 trong toàn văn: khớp (Bill: 92, 86, 83).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: "Bảng 1: xếp hạng tám phát biểu; V (tỉ lệ vi phạm) Linda: 89, 90, 85 ở ba nhóm."
+  - id: n7
+    cau: Trong nghiên cứu gốc, thứ hạng xác suất người tham gia gán cho các phát biểu gần như trùng thứ hạng độ giống (hệ số tương quan 0,98 với Linda); cảm giác "hợp" thắng cả quy tắc xác suất.
+    loai: phat-hien
+    nguon:
+      - tversky1983
+    trich: The correlation between the mean ranks of probability and representativeness was .96 for Bill and .98 for Linda.
+    vi_tri: Tversky & Kahneman 1983, mục "Representative Conjunctions"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Não bộ của ta rất giỏi kể chuyện, nhưng rất dở tính xác suất... Cái cảm giác hợp đó mạnh đến mức nó lấn át". "Giỏi kể chuyện, dở tính xác suất" là khái quát của trang, không phải kết quả; chữ mới nói theo cách giải thích của hai tác giả và số liệu tương quan. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp. (tương quan .98 giữa thứ hạng trung bình xác suất và độ giống, tr. 297–298).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Hệ số tương quan tính trên thứ hạng trung bình; vế 'cảm giác hợp thắng quy tắc' là diễn giải đúng ý bài.
+    review: 'dung'
+  - id: n8
+    cau: Heuristic là các nguyên tắc đơn giản hóa, thường hữu ích nhưng đôi khi dẫn đến lỗi nặng và có hệ thống (bias).
+    loai: dinh-nghia
+    nguon:
+      - tversky1974
+    trich: These heuristics are highly economical and usually effective, but they lead to systematic and predictable errors.
+    vi_tri: Tversky & Kahneman 1974, đoạn kết
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "các quy tắc mò mẫm nhanh, thường cho đáp án đủ tốt trong đời sống hàng ngày"; chữ mới sát lời hai tác giả. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích (Tversky & Kahneman 1974) và đúng ý lượt 2 đã đọc toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    review: 'dung'
+  - id: n9
+    cau: 'Bài toán Linda là ví dụ nổi tiếng của hai ông: ở phiên bản xếp hạng, ngay cả nhóm đã học nhiều về xác suất cũng mắc lỗi.'
+    loai: so-lieu
+    nguon:
+      - tversky1983
+      - kahneman2011
+    trich: The best-known and most controversial of our experiments involved a fictitious lady called Linda.
+    vi_tri: 'Kahneman 2011, chương "Linda: Less Is More"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cho thấy một heuristic có thể đánh bại cả những người rành xác suất". Chữ mới nêu kết quả cụ thể (nhóm tinh vi 85%, n6). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Kết quả này là của bài 1983 (Psychological Review), không phải bài 1974.
+    review: 'dung'
+  - id: n10
+    cau: Trong bài *Science* 1974, hai ông cho rằng khi đánh giá khả năng hay dự đoán giá trị, con người dựa vào một số ít nguyên tắc heuristic; chúng thường hữu ích nhưng đôi khi dẫn đến sai lệch nặng và có hệ thống.
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: people rely on a limited number of heuristic principles which reduce the complex tasks of assessing probabilities and predicting values to simpler judgmental operations. In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors.
+    vi_tri: Tversky & Kahneman 1974, mở bài
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "ba heuristic mà con người dùng để phán đoán trong điều kiện không chắc chắn". Chữ mới theo mở bài; trang nhà của nghiên cứu (src/data/nghien-cuu.yml). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích (Tversky & Kahneman 1974) và đúng ý lượt 2 đã đọc toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    review: 'dung'
+  - id: n11
+    cau: Bài mô tả ba heuristic (đại diện, sẵn có, neo), kèm các thí nghiệm minh họa, nhiều thí nghiệm lấy từ công trình trước của hai ông.
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: This article describes three heuristics that are employed to assess probabilities and to predict values.
+    vi_tri: Tversky & Kahneman 1974, mở bài
+    ket_qua: dung
+    ghi_chu: '"Nhiều thí nghiệm lấy từ công trình trước": ví dụ tỉ lệ gốc "(1)" là Kahneman & Tversky 1973, Psychol Rev 80, 237; ví dụ danh sách tên và chữ r "(6)" là Tversky & Kahneman 1973, Cogn Psychol 5, 207.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+  - id: n12
+    cau: 'Ví dụ "Steve" (nhút nhát, thích trật tự, đam mê chi tiết): người ta xếp các nghề theo xác suất và theo độ giống khuôn mẫu theo đúng một thứ tự.'
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: research with problems of this type has shown that people order the occupations by probability and by similarity in exactly the same way
+    vi_tri: Tversky & Kahneman 1974, mục "Representativeness"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+  - id: n13
+    cau: 'Về tỉ lệ gốc: khi biết nhóm gồm 70 kỹ sư và 30 luật sư, hay ngược lại, người tham gia đưa ra những đánh giá xác suất gần như giống nhau cho từng bản mô tả.'
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: In a sharp violation of Bayes' rule, the subjects in the two conditions produced essentially the same probability judgments.
+    vi_tri: Tversky & Kahneman 1974, mục "Insensitivity to prior probability of outcomes"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Bài 1974 tóm tắt thí nghiệm này (dẫn công trình 1973), không nêu cỡ mẫu; "gần như giống nhau" là chữ của bài ("essentially the same"). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích (Tversky & Kahneman 1974) và đúng ý lượt 2 đã đọc toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    review: 'dung'
+  - id: n14
+    cau: Với bản mô tả vô thưởng vô phạt ("Dick"), họ cho xác suất làm kỹ sư là 0,5 ở cả hai nhóm (0,7 hay 0,3 kỹ sư).
+    loai: so-lieu
+    nguon:
+      - tversky1974
+    trich: The subjects, however, judged the probability of Dick being an engineer to be .5 regardless of whether the stated proportion of engineers in the group was .7 or .3.
+    vi_tri: Tversky & Kahneman 1974, mục "Insensitivity to prior probability of outcomes"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+  - id: n15
+    cau: 'Về cỡ mẫu: hỏi bệnh viện lớn (khoảng 45 ca sinh/ngày) hay nhỏ (khoảng 15 ca) ghi nhiều ngày hơn có hơn 60% bé trai, 21 sinh viên chọn bệnh viện lớn, 21 chọn nhỏ và 53 chọn "khoảng bằng nhau"; đúng ra bệnh viện nhỏ có nhiều ngày hơn.'
+    loai: so-lieu
+    nguon:
+      - tversky1974
+    trich: The larger hospital (21) - The smaller hospital (21) - About the same (that is, within 5 percent of each other) (53)
+    vi_tri: Tversky & Kahneman 1974, mục "Insensitivity to sample size"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+  - id: n16
+    cau: 'Heuristic sẵn có: đánh giá tần suất dựa trên độ dễ nhớ lại; khi nghe danh sách người nổi tiếng nam và nữ, người tham gia cho rằng nhóm có nhiều người nổi tiếng hơn là nhóm đông hơn.'
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: In each of the lists, the subjects erroneously judged that the class (sex) that had the more famous personalities was the more numerous (6).
+    vi_tri: Tversky & Kahneman 1974, mục "Availability"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+  - id: n17
+    cau: Hỏi từ bắt đầu bằng chữ r hay có r ở vị trí thứ ba nhiều hơn, đa số cho rằng từ bắt đầu bằng r nhiều hơn, kể cả với phụ âm như r hay k vốn gặp ở vị trí thứ ba nhiều hơn.
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: most people judge words that begin with a given consonant to be more numerous than words in which the same consonant appears in the third position. They do so even for consonants, such as r or k, that are more frequent in the third position than in the first (6).
+    vi_tri: Tversky & Kahneman 1974, mục "Availability"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+  - id: n18
+    cau: 'Ấn tượng rõ nét và gần đây tăng cảm giác về khả năng xảy ra: tai nạn giao thông có vẻ dễ xảy ra hơn trong chốc lát sau khi ta thấy một chiếc xe lật bên đường.'
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: It is a common experience that the subjective probability of traffic accidents rises temporarily when one sees a car overturned by the side of the road.
+    vi_tri: Tversky & Kahneman 1974, mục "Availability"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Vụ tai nạn máy bay lên báo khiến ta sợ bay hơn lái xe, dù thống kê nói ngược lại" (bài 1974 không có ví dụ máy bay; "dù thống kê nói ngược lại" không kiểm được). Chữ mới dùng ví dụ trong bài (xe lật bên đường). Bài ghi đây là "common experience", không phải kết quả đo. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích (Tversky & Kahneman 1974) và đúng ý lượt 2 đã đọc toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    review: 'dung'
+  - id: n19
+    cau: 'Heuristic neo: nhóm nhận số khởi đầu 10 (bánh xe may rủi) ước tính tỉ lệ nước châu Phi trong Liên Hợp Quốc với trung vị 25, nhóm nhận 65 cho 45; thưởng tiền cho độ chính xác không làm giảm hiệu ứng.'
+    loai: so-lieu
+    nguon:
+      - tversky1974
+    trich: the median estimates of the percentage of African countries in the United Nations were 25 and 45 for groups that received 10 and 65, respectively, as starting points. Payoffs for accuracy did not reduce the anchoring effect.
+    vi_tri: Tversky & Kahneman 1974, mục "Anchoring and adjustment"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bám vào con số đầu tiên nghe được... Giá niêm yết ban đầu neo cả quá trình mặc cả sau đó" (ví dụ giá niêm yết không có trong bài; thay bằng thí nghiệm trong bài). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích (Tversky & Kahneman 1974) và đúng ý lượt 2 đã đọc toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    review: 'dung'
+  - id: n20
+    cau: 'Hai nhóm học sinh trung học ước tính trong 5 giây tích 8×7×6×5×4×3×2×1 hay 1×2×3×4×5×6×7×8: trung vị 2.250 và 512 (đáp án đúng 40.320).'
+    loai: so-lieu
+    nguon:
+      - tversky1974
+    trich: The median estimate for the ascending sequence was 512, while the median estimate for the descending sequence was 2,250. The correct answer is 40,320.
+    vi_tri: Tversky & Kahneman 1974, mục "Anchoring and adjustment"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+  - id: n21
+    cau: Hai ông kết luận các heuristic này rất tiết kiệm và thường hiệu quả, nhưng dẫn đến lỗi có hệ thống và dự đoán được.
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: These heuristics are highly economical and usually effective, but they lead to systematic and predictable errors.
+    vi_tri: Tversky & Kahneman 1974, đoạn kết
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ba heuristic này tiết kiệm công sức và phần lớn thời gian cho kết quả chấp nhận được — đó là lý do chúng tồn tại... mỗi heuristic đều có điểm mù". "Đó là lý do chúng tồn tại" là suy luận của trang, không có trong bài; bỏ. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích (Tversky & Kahneman 1974) và đúng ý lượt 2 đã đọc toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    review: 'dung'
+  - id: n22
+    cau: Chín năm sau bài 1974, hai ông công bố trên Psychological Review một loạt thí nghiệm về lỗi conjunction fallacy.
+    loai: lich-su
+    nguon:
+      - tversky1983
+    trich: Psychological Review 1983, Vol. 90, No. 4, 293-315
+    vi_tri: Tversky & Kahneman 1983, đầu bài
+    ket_qua: dung
+    ghi_chu: 1983 − 1974 = 9 năm.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    luot_2_ghi_chu: Linda 1983 trên Psychological Review; Science 27/9/1974.
+  - id: n23
+    cau: 'Conjunction fallacy: đánh giá "A và B" có khả năng cao hơn "A" khi so sánh trực tiếp.'
+    loai: dinh-nghia
+    nguon:
+      - tversky1983
+      - kahneman2011
+    trich: The violation of the conjunction rule in a direct comparison of B to A&B is called the conjunction fallacy.
+    vi_tri: Tversky & Kahneman 1983, mục "Direct and Indirect Tests"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+  - id: n24
+    cau: 'Nghiên cứu dùng nhiều biến thể: so sánh trực tiếp hai phát biểu, xếp hạng tám phát biểu, chấm xác suất thang 9 bậc, và phiên bản "đặt cược" (nếu có thể thắng 10 đô la khi đặt cược vào một sự kiện, bạn chọn đặt vào đâu).'
+    loai: phat-hien
+    nguon:
+      - tversky1983
+    trich: If you could win $10 by betting on an event, which of the following would you choose to bet on? (Check one)
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chọn một trong hai để đặt cược 10 đô la"; chữ mới sát lời hướng dẫn gốc; thêm biến thể thang 9 bậc (G1-L02 #2, #3). Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n25
+    cau: 'Ba nhóm: ngây thơ (sinh viên đại học Stanford và UBC chưa học xác suất hay thống kê), trung gian (học viên cao học năm đầu ngành tâm lý và giáo dục, và sinh viên y Stanford, đã học thống kê), tinh vi (nghiên cứu sinh khoa học quyết định của Stanford Business School, đã học nhiều môn về xác suất, thống kê và lý thuyết quyết định).'
+    loai: dinh-nghia
+    nguon:
+      - tversky1983
+    trich: The statistically naive group consisted of undergraduate students at Stanford University and UBC who had no background in probability or statistics. The informed group consisted of first-year graduate students in psychology and in education and of medical students at Stanford who were all familiar with the basic concepts of probability after one or more courses in statistics.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests" (đầu thí nghiệm chính)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nhóm ngây thơ (sinh viên đại học chưa học xác suất), nhóm trung gian (học viên cao học đã học thống kê)". Thêm chi tiết nơi học và ngành theo bài gốc (G1-L02 KHỚP dòng 52). Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n26
+    cau: Ở phiên bản xếp hạng, tỉ lệ mắc lỗi với Linda là 89%, 90% và 85% ở ba nhóm ngây thơ, trung gian và tinh vi.
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: 'Table 1: Linda, direct test V = 89 (naive), 90 (informed), 85 (sophisticated)'
+    vi_tri: Tversky & Kahneman 1983, Bảng 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "85–90% ở cả ba nhóm trình độ ... các biến thể khác cho tỉ lệ thấp hơn nhưng vẫn cao (56–82%)". Chữ mới nêu đúng số từng nhóm; "56–82%" bỏ vì 36% (nhóm đã học thống kê) và 65%, 57% nằm ngoài cách gộp (G1-L02 #2). Hình có số "85%" ở chú thích: xem n33. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp. (Bảng 1: V = 89, 90, 85 cho Linda).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n27
+    cau: 'Các biến thể khác ở sinh viên chưa học thống kê cho tỉ lệ thấp hơn nhưng vẫn cao: 82% khi chấm xác suất trên thang 9 bậc.'
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: The mean ratings of probability were 3.5 for T and 5.6 for T&F, and 82% of subjects assigned a higher rating to T&F than they did to T.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+  - id: n28
+    cau: 65% (n = 58) chọn lập luận "giống" (không hợp lệ) thay vì lập luận logic.
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: The majority of subjects (65%, n = 58) chose the invalid resemblance argument (Argument 2)
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+  - id: n29
+    cau: 57% (n = 75) mắc lỗi khi phát biểu (a) được viết là "nhân viên ngân hàng, dù có hay không là nhà hoạt động nữ quyền".
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: 57% of the subjects (n = 75) committed the conjunction fallacy by rating T&F higher than T*
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ không nêu số này; theo G1-L02 #3 bổ sung để cho thấy các biến thể khác cũng thấp hơn 85%. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n30
+    cau: Khi 64 nghiên cứu sinh khoa học xã hội đã học nhiều môn thống kê (Berkeley, Stanford) chỉ phải so hai phát biểu, đa số làm đúng, nhưng 36% vẫn mắc lỗi.
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: only 36% of respondents committed the fallacy. Thus, statistical sophistication produced a majority who conformed to the conjunction rule in a transparent test
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Khi chỉ phải so hai phát biểu, đa số người đã học thống kê làm đúng"; thêm nhóm (64 người, Berkeley và Stanford) và cách đo (thang chấm điểm); G1-L02 #4. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp. (64 nghiên cứu sinh Berkeley và Stanford, dạng chấm thang điểm hai phát biểu, 36%).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n31
+    cau: Trong phép so sánh trực tiếp, cả người chưa học thống kê lẫn người đã học thường nhận ra hai tập hợp lồng nhau, nhưng người chưa học, khác người đã học, không thấy điều đó quyết định phán đoán xác suất.
+    loai: phat-hien
+    nguon:
+      - tversky1983
+    trich: Naive as well as sophisticated subjects generally noticed the nesting of the target events in the direct-transparent test, but the naive, unlike the sophisticated, did not appreciate its significance for probability assessment.
+    vi_tri: Tversky & Kahneman 1983, mục "Direct and Indirect Tests"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (site gốc): gán nhận xét này cho nhóm thạo thống kê (G1-L02 #4, SAI). Chữ mới đã sửa; đối chiếu lại trích: khớp. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n32
+    cau: 'Với khung đặt cược, tỉ lệ vi phạm là 56% (n = 60): quá cao so với mức chấp nhận được, và thấp hơn hẳn mức điển hình của các phép so sánh xác suất.'
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: The percentage of violations of the conjunction rule in this task was "only" 56% (n = 60), much too high for comfort but substantially lower than the typical value for comparisons of the two events in terms of probability.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chỉ khi chuyển sang khung đặt cược... tỉ lệ vi phạm mới giảm xuống" (G1-L02 #3, SAI: không chỉ khung đặt cược làm giảm). Chữ mới đã sửa; bỏ "buộc người ta nghĩ đến điều kiện thắng cược" ở đoạn kết quả (là phỏng đoán của tác giả, xem n53). Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp. Chữ "giảm xuống" trên trang theo cách chính hai tác giả trình bày ("Modest success in loosening the grip", "substantially lower than the typical value").'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n33
+    cau: 'Chú thích hình linda-venn: dù ở một phiên bản của nghiên cứu gốc (chọn một trong hai, 142 sinh viên UBC), 85% vẫn chọn (b); hình ghi P(A và B) ≤ P(A).'
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: Overall, 85% of respondents indicated that T&F was more probable than T
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: 'da-sua'
+    ghi_chu: 'Hình linda-venn: chú thích "85%" đúng với phiên bản chọn một trong hai (142 sinh viên UBC) nhưng nói chung chung "người tham gia nghiên cứu gốc"; theo G1-L02 khớp. Hình sai/thiếu chính xác thì ghi lại, không sửa hình: ghi để người giao quyết (chú thích nên nói "ở một phiên bản của nghiên cứu gốc"). Review (Claude Opus 5.5, 10/11/2026): chữ cũ "dù 85% người tham gia nghiên cứu gốc vẫn chọn (b)" chỉ đúng cho phiên bản chọn một trong hai (UBC); các phiên bản khác 36–90%. Đã sửa chú thích trong src/hinh/linda-venn.html (giữ khuôn SVG), thêm linda-venn vào HINH_DA_SUA của tests/chuyen.test.mjs.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Không xem được hình; số 85% và bất đẳng thức khớp bài gốc.
+    review: 'sai'
+  - id: n34
+    cau: 'Khá vững: lỗi conjunction fallacy trong bài toán Linda.'
+    loai: nhan
+    nhan: 'kha-vung'
+    co_so:
+      - tversky1983
+      - charness2010
+      - yechiam2023
+      - chandrashekar2021
+    ly_do: 'Nhiều nghiên cứu cùng chiều: nhiều biến thể trong chính nghiên cứu gốc (36–90%), Charness (58% không thưởng, 33% có thưởng nhỏ), các nghiên cứu gộp trong phân tích tổng hợp của Yechiam & Zeif 2023 (phần lớn người tham gia trả lời sai khi không có thưởng), và một lần làm lại có đăng ký trước 1.032 người thấy hiệu ứng Linda (Chandrashekar 2021). Chưa đạt Vững chắc theo mục 4: chưa có phân tích tổng hợp về chính sự tồn tại hay mức độ của lỗi (Yechiam & Zeif đo tác dụng của thưởng), mới một tái lập lớn có đăng ký trước, và trong lần ấy bài James thất bại (tác giả chỉ nêu khả năng giải thích); tỉ lệ khác nhau nhiều theo cách hỏi.'
+    nguon:
+      - tversky1983
+      - charness2010
+      - yechiam2023
+      - chandrashekar2021
+    ket_qua: 'da-sua'
+    ghi_chu: 'Chữ cũ có câu "Đây là một trong những phát hiện được lặp lại nhiều nhất của tâm lý học phán đoán" (không kiểm được; bỏ) và "Ở phiên bản xếp hạng, 85–90%..." (thêm "tám phát biểu"). Thêm Yechiam & Zeif 2023 và Chandrashekar 2021. Chỗ khó: không có phân tích tổng hợp trực tiếp về mức độ của hiệu ứng (chỉ về tác dụng của thưởng) và tái lập có đăng ký trước chỉ một lần; giữ Vững chắc cho sự tồn tại của hiệu ứng, review cân nhắc. Review (Claude Opus 5.5, 10/11/2026): đồng ý với lượt 2 (qua-manh). Đã tự mở toàn văn Chandrashekar 2021: "Findings for James profile were a likely failed replication, with no conjunction effect"; tóm tắt Yechiam & Zeif 2023 (Europe PMC) chỉ nói về tác dụng của thưởng. Chữ cũ ":::vung-chac[...]" và câu cuối "Vì vậy hiện tượng vững, còn mức độ thì thay đổi nhiều theo cách hỏi." Chữ mới ":::kha-vung[lỗi conjunction fallacy trong bài toán Linda]", câu cuối "Mức "khá vững" vì chưa có phân tích tổng hợp về chính mức độ của lỗi, mới có một lần làm lại lớn có đăng ký trước, và tỉ lệ mắc lỗi thay đổi nhiều theo cách hỏi." Quiz câu 4 (n67) sửa theo.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516", "https://link.springer.com/article/10.1007/s00426-023-01837-5", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: "câu đúng: Khá vững: lỗi conjunction fallacy ở bài toán Linda lặp lại ở nhiều nghiên cứu và một tái lập có đăng ký trước (Chandrashekar và cộng sự, 2021), nhưng chưa có phân tích tổng hợp riêng, mức lỗi phụ thuộc cách hỏi, và một mô tả tương tự (James) không tái lập.; Thước đo mục 4: Vững chắc cần phân tích tổng hợp/tổng quan hệ thống hay hai tái lập lớn có đăng ký trước, cùng chiều, không thất bại lớn chưa giải thích. Với Linda chỉ thấy một tái lập lớn có đăng ký trước (Hồng Kông), kèm một thất bại ở mô tả James chưa giải thích hết; phân tích tổng hợp của Yechiam & Zeif nói về thưởng tiền, không phải về sự tồn tại của lỗi. Không tìm thấy phân tích tổng hợp riêng về bài toán Linda."
+    review: 'sai'
+  - id: n35
+    cau: Trong một lần làm lại (Charness và cộng sự), 58% mắc lỗi khi không có thưởng, 33% khi có thưởng nhỏ, và còn ít hơn nữa khi được bàn với người khác.
+    loai: so-lieu
+    nguon:
+      - charness2010
+    trich: In this study 58 percent of participants committed the conjunction fallacy ... the mere addition of small incentives reduced this rate to 33 percent.
+    vi_tri: 'Charness, Karni & Levin, working paper 2009, tr. 8–9 (Bảng 1: trio có thưởng 10,4%)'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Số theo bản working paper (cùng thí nghiệm với bản in 2010, nên đối chiếu bản in); chữ hiện trên trang đã sửa theo G1-L02 #6 (trước: "tỉ lệ vi phạm giảm đáng kể khi có thưởng hoặc thảo luận nhóm"). Cho nhóm đơn lẻ: 58% (50/86) không thưởng, 33,0% (31/94) có thưởng; cặp 13,2%, trio 10,4% khi có thưởng. Sinh viên UCSB. Review (Claude Opus 5.5, 10/11/2026): số theo bản working paper (EconStor), lượt 2 cũng đọc bản ấy; OpenAlex không có tóm tắt bản in. Chữ trên trang khớp; số của bản in chưa đối chiếu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.econstor.eu/bitstream/10419/49905/1/601165225.pdf" ]
+    luot_2_ghi_chu: Bản working paper (2009); bài in Games and Economic Behavior 2010 (doi 10.1016/j.geb.2009.09.003). Bản working cho 58,1%, 33,0%, cặp 48,2%/13,2%, bộ ba 25,6%/10,4%.
+    review: 'dung'
+  - id: n36
+    cau: Một phân tích tổng hợp (Yechiam và Zeif, 2023; 3.276 người) thấy thưởng tiền làm giảm lỗi conjunction ở mức nhỏ (d = 0,19).
+    loai: so-lieu
+    nguon:
+      - yechiam2023
+    trich: the results across studies show a significant positive effect for incentivization, d = 0.19, with an odds ratio of 1.40 for answering correctly when incentivized.
+    vi_tri: Yechiam & Zeif 2023, tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu mới thêm vào trang ở lượt 1; tóm tắt qua Europe PMC (không mở toàn văn).
+    luot_2: dung
+    luot_2_nguon: [ "https://link.springer.com/article/10.1007/s00426-023-01837-5" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt (bài sau tường phí); số khớp.
+  - id: n37
+    cau: Một lần làm lại có đăng ký trước (Chandrashekar và cộng sự, 2021; 1.032 người) vẫn thấy hiệu ứng ở bài toán Linda, nhưng không thấy ở bài thứ hai (James).
+    loai: tai-lap
+    nguon:
+      - chandrashekar2021
+    trich: Linda profile findings were in support of conjunction effect and consistent with Tversky and Kahneman's (1983) arguments for a representative heuristic. ... Findings for James profile were a likely failed replication, with no conjunction effect.
+    vi_tri: Chandrashekar và cộng sự 2021, tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu mới thêm vào trang ở lượt 1; chỉ tóm tắt (OpenAlex).
+    luot_2: dung
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516" ]
+  - id: n38
+    cau: 'Đang tranh cãi: vì sao ta mắc bẫy — heuristic hay cách diễn đạt?'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - tversky1983
+      - gigerenzer1991
+      - chandrashekar2021
+      - tentori2004
+    ly_do: 'Bằng chứng hai chiều: hiệu ứng vẫn còn khi người tham gia có thể hiểu khác câu hỏi (82% ở thang 9 bậc; Tversky & Kahneman 1983) và trong lần làm lại có đăng ký trước (Chandrashekar 2021: không ủng hộ mơ hồ ngữ nghĩa), nhưng Gigerenzer (1991) và Tentori và cộng sự (2004) cho rằng cách hiểu từ ngữ và trường hợp đơn/tần suất quyết định việc đây có phải là "lỗi" hay không, và lần làm lại không thấy hiệu ứng ở bài James. Chưa có kết luận chung về cơ chế.'
+    nguon:
+      - tversky1983
+      - gigerenzer1991
+      - chandrashekar2021
+      - tentori2004
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): giữ Đang tranh cãi: Chandrashekar 2021 (toàn văn) không ủng hộ mơ hồ ngữ nghĩa ở Linda nhưng không tái lập ở James; phía Gigerenzer, Tentori có bài phê bình. Đạt mục 4 (bằng chứng hai chiều).'
+    luot_2: dung
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516", "https://doi.org/10.1016/s0364-0213(04)00004-7", "https://doi.org/10.1080/14792779143000033" ]
+    review: 'dung'
+  - id: n39
+    cau: Theo Gigerenzer (1991), nhiều "lỗi" trong suy luận xác suất, trong đó có conjunction fallacy, thực ra không vi phạm lý thuyết xác suất nếu phân biệt xác suất của một trường hợp đơn lẻ với tần suất tương đối.
+    loai: phat-hien
+    nguon:
+      - gigerenzer1991
+    trich: Most so-called "errors" in probabilistic reasoning are in fact not violations of probability theory. Examples of such "errors" include overconfidence bias, conjunction fallacy, and base-rate neglect. Researchers have relied on a very narrow normative view, and have ignored conceptual distinctions—e.g. single case versus relative frequency—fundamental to probability theory.
+    vi_tri: Gigerenzer 1991, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cách đặt câu hỏi vi phạm nguyên tắc hội thoại: ... ngầm hiểu là nhân viên ngân hàng và không phải nhà hoạt động nữ quyền" gán cho Gigerenzer. Tóm tắt Gigerenzer 1991 chỉ nói về trường hợp đơn/tần suất; lập luận hội thoại (Hertwig & Gigerenzer 1999) không mở được, nên trang gán rộng hơn ("Gigerenzer và các cộng sự") và dẫn Chandrashekar 2021 cho quan điểm của Hertwig. theo G1-L02: KHÔNG KIỂM ĐƯỢC (Gigerenzer chỉ có tóm tắt). Review (Claude Opus 5.5, 10/11/2026): chỉ có tóm tắt; chữ trên trang không vượt quá tóm tắt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/14792779143000033" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt (qua OpenAlex/Max Planck); toàn văn không mở được.
+    review: 'dung'
+  - id: n40
+    cau: Theo mô tả của Chandrashekar và cộng sự (2021), Hertwig cho rằng dạng tần suất xóa hiệu ứng conjunction và hiệu ứng chủ yếu do từ ngữ mơ hồ; quan điểm này bị tranh cãi.
+    loai: phat-hien
+    nguon:
+      - chandrashekar2021
+    trich: Hertwig's contested view that frequency formats eliminate conjunction effects, and that conjunction effects are largely due to semantic ambiguity.
+    vi_tri: Chandrashekar và cộng sự 2021, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hai ông cũng chỉ ra rằng khi diễn đạt dưới dạng tần suất, hiệu ứng giảm mạnh" ("hai ông" không rõ chủ ngữ; không có nguồn mở được cho "giảm mạnh"). Chữ mới gán cho Hertwig theo mô tả của nguồn đã mở. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Chandrashekar và cộng sự 2021 (open.lnu.se): khớp; lưu ý mẫu là 1.032 người Mỹ trên MTurk (tác giả ở Hồng Kông).'
+    luot_2: dung
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516" ]
+    review: 'dung'
+  - id: n41
+    cau: 'Chính Tversky và Kahneman (1983) đã nêu và thử cách hiểu "(a) là nhân viên ngân hàng và không phải nhà hoạt động nữ quyền": ở thang 9 bậc, 82% vẫn đánh giá (b) cao hơn (a).'
+    loai: phat-hien
+    nguon:
+      - tversky1983
+    trich: Perhaps the subjects found the question too trivial to be taken literally and consequently interpreted the inclusive statement T as T&not-F ... The mean ratings of probability were 3.5 for T and 5.6 for T&F, and 82% of subjects assigned a higher rating to T&F than they did to T.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: dung
+    ghi_chu: 'theo G1-L02: ghi chú của người kiểm cũng nêu điều này. Đối chiếu lại trích: khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+  - id: n42
+    cau: Hai ông nói đã thử một loạt cách chỉnh sửa "ngày càng tuyệt vọng" để buộc người tham gia theo quy tắc conjunction, nhưng không xóa được hiệu ứng ở người chưa học thống kê.
+    loai: phat-hien
+    nguon:
+      - tversky1983
+    trich: This section describes a series of increasingly desperate manipulations designed to induce subjects to obey the conjunction rule.
+    vi_tri: Tversky & Kahneman 1983, đầu mục "Transparent Tests"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nhiều cách chỉnh sửa diễn đạt đã được thử nhưng không cách nào xóa được hiệu ứng". Bài nói "manipulations", không nói riêng "diễn đạt"; nhóm đã học thống kê làm đúng khi so hai phát biểu (36%): "không xóa được hiệu ứng" chỉ đúng với người chưa học thống kê. Đã làm mềm. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Thưởng cược giảm xuống 56% nhưng không xóa; câu trang 'không xóa được ở người chưa học thống kê' đúng.
+    review: 'dung'
+  - id: n43
+    cau: Tentori và cộng sự (2004) cho rằng việc đó có phải lỗi hay không phụ thuộc vào cách người ta hiểu các từ "xác suất" và "và".
+    loai: phat-hien
+    nguon:
+      - tentori2004
+    trich: Whether an error is thereby committed depends on reasoners' interpretation of the expressions "probability" and "and."
+    vi_tri: Tentori và cộng sự 2004, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/s0364-0213(04)00004-7" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt (qua OpenAlex); Wiley chặn.
+  - id: n44
+    cau: Cuộc tranh luận về cơ chế đến nay chưa ngã ngũ hoàn toàn; các tác giả lần làm lại 2021 kêu gọi thêm các tái lập có đăng ký trước.
+    loai: phat-hien
+    nguon:
+      - chandrashekar2021
+    trich: We discuss implications for research on conjunction effect, and call for further well-powered pre-registered replications and extensions of classic findings in judgment and decision-making.
+    vi_tri: Chandrashekar và cộng sự 2021, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Cuộc tranh luận này đến nay vẫn chưa ngã ngũ hoàn toàn" (không nguồn). Thêm lý do dựa vào tóm tắt Chandrashekar; chữ vẫn mềm. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Chandrashekar và cộng sự 2021 (open.lnu.se): khớp; lưu ý mẫu là 1.032 người Mỹ trên MTurk (tác giả ở Hồng Kông).'
+    luot_2: dung
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516" ]
+    luot_2_ghi_chu: Vế 'chưa ngã ngũ' là đánh giá hợp lý theo các nguồn trên.
+    review: 'dung'
+  - id: n45
+    cau: 'Thay thế thuộc tính (Kahneman 2011): khi gặp câu hỏi khó, ta thường trả lời một câu dễ hơn mà không để ý mình đã đổi câu hỏi.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: when faced with a difficult question, we often answer an easier one instead, usually without noticing the substitution.
+    vi_tri: Kahneman 2011, Introduction
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "não tự động trả lời...", "Cảm giác giống đến nhanh, trôi chảy, và đầy sức thuyết phục — đó chính là heuristic đại diện trong hành động". Chữ mới sát Kahneman: "thường", không nói "tự động" tuyệt đối; thêm liên hệ với kết quả tương quan. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Nobel lecture 2003 của Kahneman, mục attribute substitution; khớp ý câu.
+    review: 'dung'
+  - id: n46
+    cau: Kahneman mô tả kết quả Linda ở phiên bản xếp hạng là một thất bại của Hệ thống 2 (người tham gia có cơ hội phát hiện quy tắc nhưng không tận dụng); phiên bản so sánh hai phát biểu buộc phải so sánh rõ ràng, giúp nhiều người đã học thống kê tránh được lỗi.
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: 'we had observed a failure of System 2: our participants had a fair opportunity to detect the relevance of the logical rule, since both outcomes were included in the same ranking. They did not take advantage of that opportunity. ... The shorter version, in contrast, required an explicit comparison that mobilized System 2 and allowed most of the statistically sophisticated students to avoid the fallacy.'
+    vi_tri: 'Kahneman 2011, chương "Linda: Less Is More"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Bài toán Linda là trường hợp Hệ thống 2 ngủ gật ngay cả ở những người được đào tạo bài bản" (Kahneman nói thất bại của Hệ thống 2 ở phiên bản xếp hạng; ở phiên bản so hai phát biểu, người đã học thống kê phần lớn tránh được). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Nobel lecture mô tả đúng ý 'Hệ 2 ký duyệt'; phần so sánh hai phát biểu giúp người đã học thống kê khớp T&K 1983 (36% vs 85%).
+    review: 'dung'
+  - id: n47
+    cau: Theo Kahneman, Hệ thống 1 vận hành nhanh, dựa vào ấn tượng và câu chuyện; Hệ thống 2 có kiểm soát, nhưng thường "ký duyệt" câu trả lời trực giác.
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: System 1 is impulsive and intuitive; System 2 is capable of reasoning, and it is cautious, but at least for some people it is also lazy.
+    vi_tri: Kahneman 2011, chương "The Characters of the Story"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Hệ thống 2 ... biết quy tắc P(A và B) ≤ P(A) — nhưng lười biếng và thường ký duyệt luôn". Kahneman nói "lazy" "at least for some people", không phải mọi lúc; làm mềm. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Chữ 'câu chuyện' (Hệ 1) thuộc sách 2011; ý chính khớp lecture.
+    review: 'dung'
+  - id: n48
+    cau: Ba cách giải thích không nhất thiết loại trừ nhau, và chưa rõ phần nào của hiệu ứng đến từ heuristic, phần nào từ cách diễn đạt câu hỏi.
+    loai: phat-hien
+    nguon:
+      - chandrashekar2021
+    trich: Linda profile findings were in support of conjunction effect and consistent with Tversky and Kahneman's (1983) arguments for a representative heuristic. We found no support for semantic ambiguity.
+    vi_tri: Chandrashekar và cộng sự 2021, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "có thể heuristic đại diện giải thích phần lớn hiệu ứng, trong khi cách diễn đạt câu hỏi khuếch đại thêm nó" (giả thuyết của trang, không nguồn; lần làm lại 2021 không ủng hộ mơ hồ ngữ nghĩa ở bài Linda). Chữ mới trung tính. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Chandrashekar và cộng sự 2021 (open.lnu.se): khớp; lưu ý mẫu là 1.032 người Mỹ trên MTurk (tác giả ở Hồng Kông).'
+    luot_2: dung
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516", "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    review: 'dung'
+  - id: n49
+    cau: 'Vững chắc (chip ở mục 1): quy tắc "chi tiết chỉ làm giảm khả năng".'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - kahneman2011
+      - tversky1983
+    ly_do: 'Đây là quy tắc toán học của xác suất (P(A và B) ≤ P(A)), không phải kết quả thực nghiệm: Kahneman (2011) và Tversky & Kahneman (1983) đều nêu là hiển nhiên. Nhãn nói về quy tắc, không về việc ta luôn áp dụng được.'
+    nguon:
+      - kahneman2011
+      - tversky1983
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "giả thuyết ... khó đúng hơn", "Mỗi chi tiết thêm vào một giả thuyết chỉ có thể làm nó khó đúng hơn"; chữ mới "sự kiện ... khó xảy ra hơn (hay giữ nguyên)". Chỗ khó: nhãn cho một quy tắc toán học (theo đồng thuận giáo trình và văn bản của Kahneman). Review (Claude Opus 5.5, 10/11/2026): nhãn cho quy tắc toán học P(A và B) ≤ P(A): hiển nhiên về logic, cả hai lượt và hai nguồn nêu như vậy; giữ Vững chắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n50
+    cau: Mỗi chi tiết thêm vào một sự kiện chỉ có thể làm nó khó xảy ra hơn; câu chuyện hay không đồng nghĩa với xác suất cao.
+    loai: loi-khuyen
+    nguon:
+      - kahneman2011
+    trich: The most coherent stories are not necessarily the most probable, but they are plausible, and the notions of coherence, plausibility, and probability are easily confused by the unwary.
+    vi_tri: 'Kahneman 2011, chương "Linda: Less Is More"'
+    ket_qua: dung
+    ghi_chu: Ví dụ "kỹ sư và chơi guitar giỏi" là ví dụ minh họa của trang; "từ tin đồn đến thuyết âm mưu" là gợi ý áp dụng.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Lời khuyên suy từ quy tắc; vế 'câu chuyện hay không đồng nghĩa xác suất cao' khớp phần scenario của T&K 1983.
+  - id: n51
+    cau: 'Khá vững (chip ở mục 2): tưởng tượng đặt tiền thật vào phán đoán giúp giảm lỗi conjunction.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - tversky1983
+      - yechiam2023
+      - charness2010
+    ly_do: Khung đặt cược thấy 56% so với 85% ở phiên bản chọn một trong hai (khác nhóm sinh viên; Tversky & Kahneman 1983), thưởng làm giảm lỗi ở mức nhỏ trong một phân tích tổng hợp (d = 0,19; Yechiam & Zeif 2023) và trong một lần làm lại (33% so với 58%; Charness). Cùng chiều nhưng hiệu ứng nhỏ và còn nhiều lỗi, nên chưa Vững chắc.
+    nguon:
+      - tversky1983
+      - yechiam2023
+      - charness2010
+    ket_qua: 'da-bo'
+    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): đồng ý với lượt 2 (qua-manh): bằng chứng cho riêng việc tưởng tượng đặt cược chỉ là một phép so sánh giữa hai nhóm UBC khác nhau (56% so với 85%, Tversky & Kahneman 1983, đã mở toàn văn); thưởng tiền thật thì d = 0,19. Đã bỏ chip :nhan[kha-vung] ở tiêu đề mục 2, giữ id cũ { #2-bai-kiem-tra-dat-cuoc-kha-vung }; thêm câu rào vào đoạn (xem n54).'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://link.springer.com/article/10.1007/s00426-023-01837-5", "https://www.econstor.eu/bitstream/10419/49905/1/601165225.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: "câu đúng: Có bằng chứng thưởng tiền thật làm giảm nhẹ lỗi conjunction (d = 0,19; Charness: 58% xuống 33%); bằng chứng cho việc chỉ tưởng tượng đặt cược yếu hơn (một phép so sánh giữa các nhóm khác nhau, 56% so với 85%). Nhãn Khá vững chỉ hợp cho thưởng tiền thật, hiệu ứng nhỏ.; Bằng chứng tốt là về thưởng tiền thật: hiệu ứng nhỏ (d = 0,19; đa số nghiên cứu riêng lẻ không có ý nghĩa). Về 'tưởng tượng' đặt tiền thật, chỉ có phép so sánh giữa các nhóm khác nhau của T&K 1983 (56% so 85%), không phải thử nghiệm được kiểm soát."
+    review: 'sai'
+  - id: n52
+    cau: Với khung đặt cược, tỉ lệ mắc lỗi là 56%, thấp hơn mức 85% của phiên bản chọn một trong hai (ở các nhóm sinh viên khác nhau).
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: The percentage of violations of the conjunction rule in this task was "only" 56% (n = 60), much too high for comfort but substantially lower than the typical value for comparisons of the two events in terms of probability.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chỉ cần đổi khung câu hỏi... tỉ lệ mắc lỗi đã giảm từ 85% xuống còn 56%" (đổi khung trên cùng nhóm: không đúng, hai nhóm khác nhau). Quiz câu 5 tương tự. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Hai con số từ hai nhóm UBC khác nhau.
+    review: 'dung'
+  - id: n53
+    cau: Tversky và Kahneman phỏng đoán rằng khung đặt cược khiến người ta chú ý đến điều kiện thắng cược của từng phương án.
+    loai: phat-hien
+    nguon:
+      - tversky1983
+    trich: We conjecture that the betting context draws attention to the conditions in which one bet pays off whereas the other does not, allowing some subjects to discover that a bet on T dominates a bet on T&F.
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Khung được–mất buộc não chuyển từ chế độ kể chuyện sang chế độ tính toán hậu quả" (nói như sự thật; bài chỉ phỏng đoán: "We conjecture"). Quiz câu 5 cũng viết lại. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n54
+    cau: 'Khi phân vân giữa hai phán đoán, hãy tưởng tượng bạn phải đặt tiền thật vào một trong hai; đây là gợi ý thực hành, bằng chứng cho riêng việc tưởng tượng chỉ là phép so sánh giữa hai nhóm khác nhau (56% và 85%), chưa phải thử nghiệm có kiểm soát; với tiền thưởng thật, phân tích tổng hợp thấy lỗi giảm ở mức nhỏ.'
+    loai: loi-khuyen
+    nguon:
+      - tversky1983
+      - yechiam2023
+    trich: 'The percentage of violations of the conjunction rule in this task was "only" 56% (n = 60) ... We conjecture that the betting context draws attention to the conditions in which one bet pays off | the results across studies show a significant positive effect for incentivization, d = 0.19'
+    vi_tri: Charness 2009, tr. 8–9; Yechiam & Zeif 2023 (d = 0,19)
+    ket_qua: 'da-lam-mem'
+    ghi_chu: 'Lời khuyên suy từ phát hiện đặt cược/thưởng; hiệu ứng nhỏ nên trang nói "có thể giúp chậm lại" (quiz câu 5). Review (Claude Opus 5.5, 10/11/2026): chữ cũ "Áp dụng: ... hãy tưởng tượng bạn phải đặt tiền thật vào một trong hai. Một phân tích tổng hợp (Yechiam và Zeif, 2023) thấy thưởng tiền giúp giảm lỗi, nhưng chỉ ở mức nhỏ." (đi cùng chip Khá vững). Chữ mới thêm: "Đây là gợi ý thực hành: bằng chứng cho riêng việc tưởng tượng chỉ là phép so sánh giữa hai nhóm khác nhau nói trên, chưa phải thử nghiệm có kiểm soát. Với tiền thưởng thật, ..." (theo câu đúng của lượt 2 ở n51).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf", "https://link.springer.com/article/10.1007/s00426-023-01837-5" ]
+    luot_2_ghi_chu: Lời khuyên hợp lý nhưng hiệu ứng nhỏ; trang không nên hứa hết lỗi.
+    review: 'sai'
+  - id: n55
+    cau: 'Khá vững (chip ở mục 3): nghĩ bằng tần suất thay vì xác suất giúp giảm lỗi.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - gigerenzer1991
+      - chandrashekar2021
+      - tversky1983
+    ly_do: Gigerenzer (1991) cho rằng dạng tần suất làm "lỗi" biến mất hoặc đảo ngược; nhưng lần làm lại có đăng ký trước (1.032 người) vẫn thấy hiệu ứng Linda ở dạng tần suất và bằng chứng giữa các nghiên cứu khác nhau, nên chỉ Khá vững. Tóm tắt Gigerenzer là nguồn duy nhất đã mở cho phía tần suất.
+    nguon:
+      - gigerenzer1991
+      - chandrashekar2021
+      - tversky1983
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Cách diễn đạt tần suất làm cấu trúc lồng nhau... hiện ra rõ ràng"; chữ mới "có thể làm... rõ hơn". Chỗ khó: bằng chứng cho mức giảm cụ thể (Fiedler 1988, Hertwig & Gigerenzer 1999) không mở được; giữ Khá vững với lưu ý đã nêu trên trang. Review (Claude Opus 5.5, 10/11/2026): giữ Khá vững: lời khuyên có ghi rõ là công cụ hỗ trợ; Chandrashekar 2021 (toàn văn) cho thấy dạng tần suất không xóa hiệu ứng Linda.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf", "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516" ]
+    luot_2_ghi_chu: "Khá vững hợp: nhiều thí nghiệm cùng chiều nhưng hiệu ứng không xóa hết."
+    review: 'dung'
+  - id: n56
+    cau: Một lần làm lại có đăng ký trước (Chandrashekar và cộng sự, 2021) vẫn thấy hiệu ứng Linda ở dạng tần suất, nên đây là công cụ hỗ trợ chứ không phải "thuốc chữa".
+    loai: phat-hien
+    nguon:
+      - chandrashekar2021
+    trich: 'Frequency estimation and semantic ambiguity do not eliminate conjunction bias, when it occurs: Replication and extension of Mellers, Hertwig, and Kahneman (2001)'
+    vi_tri: Chandrashekar và cộng sự 2021, tên bài và tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một số nghiên cứu vẫn ghi nhận hiệu ứng ở mức đáng kể ngay cả với định dạng tần suất" (không dẫn nguồn; G1-L02 KHÔNG KIỂM ĐƯỢC). Chữ mới dẫn lần làm lại 2021. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Chandrashekar và cộng sự 2021 (open.lnu.se): khớp; lưu ý mẫu là 1.032 người Mỹ trên MTurk (tác giả ở Hồng Kông).'
+    luot_2: dung
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516" ]
+    review: 'dung'
+  - id: n57
+    cau: 'Thay vì hỏi "khả năng nào lớn hơn?", hãy hỏi: "Trong 100 người giống Linda, có bao nhiêu người là nhân viên ngân hàng? Trong số đó có bao nhiêu người đồng thời là nhà hoạt động nữ quyền?"'
+    loai: loi-khuyen
+    nguon:
+      - gigerenzer1991
+    trich: Researchers have relied on a very narrow normative view, and have ignored conceptual distinctions—e.g. single case versus relative frequency—fundamental to probability theory.
+    vi_tri: Gigerenzer 1991, tóm tắt
+    ket_qua: dung
+    ghi_chu: Cách đặt câu hỏi theo tần suất là gợi ý của trang dựa trên phê bình của Gigerenzer.
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Câu khuyên dựa trên bản 'bao nhiêu trong 100'; trang ghi chú Chandrashekar vẫn thấy hiệu ứng.
+  - id: n58
+    cau: Khi đánh giá bằng độ giống, người ta bỏ qua tỉ lệ gốc (ví dụ 70 kỹ sư/30 luật sư).
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: In a sharp violation of Bayes' rule, the subjects in the two conditions produced essentially the same probability judgments.
+    vi_tri: Tversky & Kahneman 1974, mục "Insensitivity to prior probability of outcomes"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Heuristic đại diện khiến ta quên mất câu hỏi nền tảng"; chip "Khá vững" cho lời khuyên "Kiểm tra tỉ lệ gốc". Bỏ chip, vì không có nguồn đã mở đo hiệu quả của lời khuyên; giữ phần chẩn đoán có nguồn. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích (Tversky & Kahneman 1974) và đúng ý lượt 2 đã đọc toàn văn. Tiêu đề mục 4 mất chip Khá vững (lượt 1): thêm id cũ { #4-kiem-tra-ti-le-goc-kha-vung } để link #mục cũ còn chạy.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    review: 'dung'
+  - id: n59
+    cau: Khi một mô tả quá "đắt" về chi tiết, hãy lùi một bước và hỏi về tỉ lệ gốc trước khi để câu chuyện dẫn dắt; trang chưa dẫn nghiên cứu đo hiệu quả của cách làm này.
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Đã bỏ khẳng định hiệu quả (chip Khá vững) khỏi trang; câu còn lại là gợi ý thực hành, nói rõ chưa có nguồn đo hiệu quả. Review (Claude Opus 5.5, 10/11/2026): trang chỉ còn gợi ý thực hành, nói rõ chưa có nguồn đo hiệu quả; da-bo đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.167.3920.984.zip/10.1126%252Fscience.185.4157.1124.pdf" ]
+    luot_2_ghi_chu: Trang tự nói chưa có nghiên cứu đo hiệu quả của cách làm; đúng.
+    review: 'dung'
+  - id: n60
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra bài toán Linda hay lỗi conjunction fallacy trên người Việt.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn-linda
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'OpenAlex 10/11/2026, hai truy vấn ở danh sách nguồn: không có. Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc ("Chúng tôi chưa tìm thấy..."); thêm "Tính đến 11/2026". Review (Claude Opus 5.5, 10/11/2026): tìm thêm Europe PMC ngày 10/11/2026 ("conjunction fallacy" AND (Vietnam OR Vietnamese); "Linda problem" AND (Vietnam OR Vietnamese)): chỉ một bài không liên quan. OpenAlex hết lượt trong phiên review. Giữ câu và hạn 2028-11-01.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.openalex.org/works?search=conjunction+fallacy+Vietnamese" ]
+    luot_2_ghi_chu: "Hạn chế: tìm bằng tiếng Anh; chưa quét tạp chí tiếng Việt."
+    review: 'dung'
+  - id: n61
+    cau: Nghiên cứu gốc dùng sinh viên đại học và nghiên cứu sinh ở Mỹ và Canada (Stanford, Berkeley, UBC); bài công bố năm 1983.
+    loai: lich-su
+    nguon:
+      - tversky1983
+    trich: 64 graduate students of social sciences at the University of California, Berkeley and at Stanford University ... UBC ... University of British Columbia, Vancouver, British Columbia, Canada
+    vi_tri: Tversky & Kahneman 1983, tr. 293 (cơ quan tác giả), mục "Transparent Tests"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "sinh viên đại học ở Mỹ (Stanford, UBC)" và "vào đầu thập niên 1980" (G1-L02 #7, SAI: UBC ở Canada; "đầu thập niên 1980" không kiểm được, đổi thành năm công bố 1983). Chữ hiện trên trang đã gồm Canada và Berkeley. Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n62
+    cau: Nếu một phần hiệu ứng đến từ cách hiểu câu hỏi theo thói quen giao tiếp, thì thói quen giao tiếp khác nhau giữa các nền văn hóa có thể ảnh hưởng đến hiệu ứng; đây là suy luận của trang, chưa có dữ liệu.
+    loai: phat-hien
+    nguon:
+      - tentori2004
+    trich: Whether an error is thereby committed depends on reasoners' interpretation of the expressions "probability" and "and."
+    vi_tri: Tentori và cộng sự 2004, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một phần hiệu ứng có thể đến từ cách hiểu câu hỏi theo thói quen giao tiếp (luận điểm của Gigerenzer) — mà thói quen giao tiếp thì khác nhau giữa các nền văn hóa" (khẳng định về văn hóa không có nguồn). Chữ mới ghi rõ là suy luận. Review (Claude Opus 5.5, 10/11/2026): đã ghi rõ là suy luận của trang; dẫn Tentori 2004 cho ý cách hiểu từ ngữ. Đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516", "https://doi.org/10.1016/s0364-0213(04)00004-7" ]
+    review: 'dung'
+  - id: n63
+    cau: 'Ngộ nhận: mô tả càng chi tiết không làm tăng khả năng đúng; chi tiết làm tăng độ thuyết phục, không làm tăng độ có khả năng.'
+    loai: dinh-nghia
+    nguon:
+      - kahneman2011
+    trich: When you specify a possible event in greater detail you can only lower its probability.
+    vi_tri: 'Kahneman 2011, chương "Linda: Less Is More"'
+    ket_qua: dung
+    ghi_chu: Khớp n50 (logic).
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: Phần 'chi tiết làm tăng độ thuyết phục' khớp mục scenario của bài.
+  - id: n64
+    cau: 'Ngộ nhận: ở phiên bản xếp hạng, nhóm nghiên cứu sinh ngành khoa học quyết định — được đào tạo xác suất bài bản — vẫn mắc lỗi ở tỉ lệ cao (85%).'
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: 'Table 1: Linda, direct test V = 85 (sophisticated)'
+    vi_tri: Tversky & Kahneman 1983, Bảng 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "vẫn mắc lỗi ở tỉ lệ cao" (không nêu phiên bản; nhóm nghiên cứu sinh đã học thống kê chỉ mắc 36% ở phiên bản so hai phát biểu). Thêm "ở phiên bản xếp hạng" và 85% (G1-L02 #5). Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n65
+    cau: 'Ngộ nhận: không có nghịch lý toán học ở đây; P(A và B) ≤ P(A) là hiển nhiên, điều đáng ngạc nhiên là ở nhiều phiên bản trực giác của người tham gia đi ngược với điều ấy.'
+    loai: dinh-nghia
+    nguon:
+      - kahneman2011
+      - tversky1983
+    trich: The problem therefore sets up a conflict between the intuition of representativeness and the logic of probability.
+    vi_tri: 'Kahneman 2011, chương "Linda: Less Is More"'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "không ai tranh cãi" và "trực giác của con người — kể cả trực giác được đào tạo — lại đi ngược". Quy tắc toán học không bị tranh cãi (các nhà phê bình bàn về cách hiểu câu hỏi, không bàn quy tắc); chữ mới làm mềm "ở nhiều phiên bản". Review (Claude Opus 5.5, 10/11/2026): đã tự mở lại toàn văn Tversky & Kahneman 1983 (Internet Archive): chữ cuối trên trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'dung'
+  - id: n66
+    cau: 'Đọc thêm: bài "Não có hai chế độ nghĩ?" (Hệ 1 trực giác đằng sau linh cảm) và "Vì sao ta tin điều vô lý?" có trên site.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: trang.yml có kham-pha/tu-duy/tu-duy-nhanh-cham và kham-pha/tu-duy/tin-dieu-vo-ly; link nội bộ đúng. Trang chưa khóa nên hiện "sắp có" ở bản thật. Review (Claude Opus 5.5, 10/11/2026): đã kiểm: trang.yml có hai trang, link /psyche/... đúng.'
+    review: 'dung'
+  - id: n67
+    cau: 'Câu hỏi 4: phần "Mức độ chắc chắn" gắn nhãn tranh cãi cho câu hỏi vì sao ta mắc bẫy, còn bản thân hiệu ứng thì được xếp khá vững.'
+    loai: ve-site
+    ket_qua: 'da-sua'
+    ghi_chu: 'Đã kiểm trên trang: có khung Vững chắc (hiệu ứng) và khung Đang tranh cãi (vì sao). Review (Claude Opus 5.5, 10/11/2026): chữ cũ "— dù bản thân hiệu ứng thì vững chắc" không còn khớp nhãn sau khi khung n34 hạ xuống Khá vững; chữ mới "còn bản thân hiệu ứng thì được xếp khá vững". Đã kiểm trên trang: có khung Khá vững (hiệu ứng) và Đang tranh cãi (vì sao).'
+    review: 'sai'
+  - id: n68
+    cau: 'Câu hỏi 1: (a) luôn có khả năng đúng hơn (b) vì mọi người thỏa (b) đều thỏa (a); quy tắc conjunction P(A và B) ≤ P(A), không có ngoại lệ.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: Therefore the probability that Linda is a feminist bank teller must be lower than the probability of her being a bank teller.
+    vi_tri: 'Kahneman 2011, chương "Linda: Less Is More"'
+    ket_qua: dung
+    ghi_chu: 'Quiz câu 1. "Không có ngoại lệ" nói về quy tắc xác suất (ngoại lệ chỉ có khi hai xác suất bằng nhau: "giữ nguyên").'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    luot_2_ghi_chu: "'Luôn' hiểu theo nghĩa 'không thể kém hơn'; về chặt chẽ (a) ≥ (b), bằng nhau chỉ khi mọi nhân viên ngân hàng đều là nhà nữ quyền."
+  - id: n69
+    cau: 'Câu hỏi 2: trong nghiên cứu gốc, khoảng 85% chọn (b) ở phiên bản chọn một trong hai (sinh viên chưa học thống kê) và 85–90% ở phiên bản xếp hạng, kể cả nhóm rành xác suất (85%); khi chỉ phải chấm hai phát biểu, phần lớn người đã học nhiều thống kê làm đúng nhưng vẫn có 36% mắc lỗi.'
+    loai: so-lieu
+    nguon:
+      - tversky1983
+    trich: 'Overall, 85% of respondents indicated that T&F was more probable than T | Table 1: Linda, direct test V = 89, 90, 85 | only 36% of respondents committed the fallacy. Thus, statistical sophistication produced a majority who conformed to the conjunction rule in a transparent test'
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"; Bảng 1
+    ket_qua: 'da-sua'
+    ghi_chu: 'Quiz câu 2 (đã sửa theo G1-L02 #2; phương án nhiễu "Khoảng 30–40%" đổi thành "Khoảng 50%"). Review (Claude Opus 5.5, 10/11/2026): lời giải thích cũ "Con số 85% trong phiên bản so sánh trực tiếp — và 85–90% ở phiên bản xếp hạng tám phát biểu — là điều làm bài báo này nổi tiếng: một lỗi logic sơ đẳng mà số đông, kể cả người rành xác suất, đều mắc phải" gộp hai phiên bản: ở phép so trực tiếp, người đã học nhiều thống kê chỉ 36% mắc lỗi (Tversky & Kahneman 1983, tr. 300, đã mở toàn văn); "làm bài báo nổi tiếng" không có nguồn. Đáp án đúng thêm "(sinh viên chưa học thống kê)"; giải thích mới "Ở phiên bản xếp hạng tám phát biểu, ngay cả nhóm rành xác suất cũng mắc lỗi (85%). Khi chỉ phải chấm hai phát biểu, phần lớn người đã học nhiều thống kê làm đúng, nhưng vẫn có 36% mắc lỗi."'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'sai'
+  - id: n70
+    cau: 'Câu hỏi 3: theo thay thế thuộc tính của Kahneman, ta đổi câu hỏi khó ("xác suất nào lớn hơn?") thành câu dễ ("mô tả nào giống Linda hơn?") mà không hay biết.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: when faced with a difficult question, we often answer an easier one instead, usually without noticing the substitution.
+    vi_tri: Kahneman 2011, Introduction
+    ket_qua: dung
+    ghi_chu: Quiz câu 3 (đáp án đúng); "Heuristic đại diện chính là sự thay thế này" khớp Kahneman (representativeness thay probability).
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Nobel lecture mô tả Linda qua attribute substitution; thuật ngữ 'thay thế thuộc tính' của Kahneman & Frederick 2002.
+  - id: n71
+    cau: 'Câu hỏi 4: phê bình của Gigerenzer cho rằng nhiều "lỗi" như vậy không thực sự vi phạm lý thuyết xác suất nếu phân biệt xác suất của một trường hợp đơn lẻ với tần suất tương đối, và cách người đọc hiểu câu hỏi có thể khác cách hiểu toán học.'
+    loai: phat-hien
+    nguon:
+      - gigerenzer1991
+      - tentori2004
+    trich: Most so-called "errors" in probabilistic reasoning are in fact not violations of probability theory.
+    vi_tri: Gigerenzer 1991, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Quiz câu 4: chữ cũ "Ông cho rằng cách đặt câu hỏi vi phạm nguyên tắc hội thoại: người nghe ngầm hiểu (a) là nhân viên ngân hàng và không phải nhà hoạt động nữ quyền" gán cho Gigerenzer (không kiểm được qua tóm tắt, xem n39). Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp tóm tắt Gigerenzer 1991 và Tentori 2004.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/14792779143000033", "https://doi.org/10.1016/s0364-0213(04)00004-7" ]
+    review: 'dung'
+  - id: n72
+    cau: 'Câu hỏi 5: ở phiên bản đặt cược 10 đô la, tỉ lệ mắc lỗi là 56%, thấp hơn mức 85% của phiên bản chọn một trong hai (một nhóm sinh viên khác); Tversky và Kahneman phỏng đoán rằng khung đặt cược khiến người ta chú ý đến điều kiện thắng cược, nên một số người nhận ra cược vào (a) không bao giờ kém cược vào (b); mẹo tưởng tượng đặt tiền không xóa hẳn lỗi (56% vẫn mắc) và chưa được thử riêng.'
+    loai: phat-hien
+    nguon:
+      - tversky1983
+    trich: 'The percentage of violations of the conjunction rule in this task was "only" 56% (n = 60) ... We conjecture that the betting context draws attention to the conditions in which one bet pays off whereas the other does not, allowing some subjects to discover that a bet on T dominates a bet on T&F.'
+    vi_tri: Tversky & Kahneman 1983, mục "Transparent Tests"
+    ket_qua: da-sua
+    ghi_chu: 'Quiz câu 5: chữ cũ "Vì khung đặt cược buộc não nghĩ đến điều kiện thắng–thua, làm cấu trúc lồng nhau... hiện ra rõ hơn" và "cách nhanh nhất để đánh thức Hệ thống 2" (không nguồn). Review (Claude Opus 5.5, 10/11/2026): thân câu hỏi cũ "Vì sao phiên bản "đặt cược 10 đô la" làm giảm tỉ lệ mắc lỗi (từ 85% xuống 56%)?" vẫn ngầm nói đổi khung trên cùng một nhóm (lượt 1 đã sửa ý này ở n52 nhưng chưa sửa thân câu hỏi); "cược vào (a) không thể thua (b)" chưa sát "dominates". Chữ mới: "Ở phiên bản "đặt cược 10 đô la", tỉ lệ mắc lỗi là 56%, thấp hơn mức 85% của phiên bản chọn một trong hai (ở một nhóm sinh viên khác). Tversky và Kahneman giải thích chênh lệch này thế nào?"; đáp án "Họ phỏng đoán ... cược vào (a) không bao giờ kém cược vào (b) ..."; giải thích nói rõ là phỏng đoán, hai nhóm khác nhau, mẹo chưa được thử riêng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
+    review: 'sai'
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'mô tả: "vì sao 85% người chọn đáp án chi tiết hơn"; đáp án mở đầu: "85% sinh viên tham gia cũng chọn như bạn"'
+    moi: '"85% sinh viên ở một phiên bản của nghiên cứu gốc"; "142 sinh viên đại học ở UBC chưa học thống kê", "85% ở phiên bản xếp hạng"'
+    ly_do: 'Hồ sơ n1, n5, n6 (G1-L02 #5).'
+  - cu: '"Não bộ của ta rất giỏi kể chuyện, nhưng rất dở tính xác suất... lấn át"'
+    moi: Theo cách giải thích của hai tác giả; hệ số tương quan 0,98 giữa thứ hạng xác suất và độ giống
+    ly_do: Hồ sơ n7.
+  - cu: 'Mục 1974: ba gạch đầu dòng chung chung ("Vụ tai nạn máy bay... dù thống kê nói ngược lại", "Giá niêm yết ban đầu neo cả quá trình mặc cả")'
+    moi: 'Kể đủ theo bài: Steve, tỉ lệ gốc 70/30, "Dick", bệnh viện 45/15, danh sách tên, chữ r, xe lật, bánh xe may rủi 10/65 (25 và 45), 8×7×… (2.250 và 512)'
+    ly_do: Hồ sơ n10–n21 (trang nhà của Tversky & Kahneman 1974).
+  - cu: 'Kết quả 1983: "85–90% ở cả ba nhóm... các biến thể khác ... (56–82%)"; "Chỉ khi chuyển sang khung đặt cược..."; "buộc người ta nghĩ đến điều kiện thắng cược"'
+    moi: 85% (142 UBC); 89%, 90%, 85%; 82%, 65%, 57%; 36%; đặt cược 56% (n = 60)
+    ly_do: 'Hồ sơ n26–n32 (G1-L02 #2, #3, #4).'
+  - cu: 'Khung Vững chắc: "Đây là một trong những phát hiện được lặp lại nhiều nhất của tâm lý học phán đoán"'
+    moi: Thêm Yechiam & Zeif (2023), Chandrashekar và cộng sự (2021); "hiện tượng vững, còn mức độ thì thay đổi nhiều theo cách hỏi"
+    ly_do: 'Hồ sơ n34–n37 (G1-L02 #6).'
+  - cu: 'Khung Đang tranh cãi: "Gigerenzer phản biện rằng cách đặt câu hỏi vi phạm nguyên tắc hội thoại... Hai ông cũng chỉ ra rằng ... tần suất ... hiệu ứng giảm mạnh"'
+    moi: 'Gigerenzer (1991): trường hợp đơn/tần suất; Hertwig (theo Chandrashekar 2021): tần suất và mơ hồ ngữ nghĩa; T&K 1983 đã thử cách hiểu T&không-F (82%); lần làm lại 2021'
+    ly_do: Hồ sơ n38–n44.
+  - cu: 'Lý thuyết: "Suy luận theo nguyên tắc hội thoại. Theo Gigerenzer..."; Hệ thống 2 "ngủ gật ngay cả ở những người được đào tạo bài bản"; "có thể heuristic đại diện giải thích phần lớn hiệu ứng, trong khi cách diễn đạt khuếch đại thêm nó"'
+    moi: '"Cách hiểu câu hỏi (mơ hồ ngữ nghĩa)... Gigerenzer và Hertwig... Tentori"; mô tả theo Kahneman 2011; "chưa rõ phần nào của hiệu ứng..."'
+    ly_do: Hồ sơ n45–n48.
+  - cu: 'Mục Áp dụng 1: giả thuyết "khó đúng hơn"; 2: "tỉ lệ ... đã giảm từ 85% xuống còn 56%", "buộc não chuyển ... sang chế độ tính toán"; 3: "hiện ra rõ ràng", "một số nghiên cứu vẫn ghi nhận"; 4: chip Khá vững, "Heuristic đại diện khiến ta quên mất câu hỏi nền tảng"'
+    moi: '"sự kiện... khó xảy ra hơn (hay giữ nguyên)"; "56%, thấp hơn mức 85% của phiên bản chọn một trong hai (ở các nhóm khác nhau)... phỏng đoán"; "có thể làm... rõ hơn", lần làm lại 2021; bỏ chip, thêm "gợi ý thực hành; chưa dẫn nghiên cứu"'
+    ly_do: Hồ sơ n49–n59.
+  - cu: 'Ở Việt Nam: "Chúng tôi chưa tìm thấy...", "vào đầu thập niên 1980", "luận điểm của Gigerenzer — mà thói quen giao tiếp thì khác nhau giữa các nền văn hóa"'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy..."; "bài công bố năm 1983"; "đây là suy luận của chúng tôi, chưa có dữ liệu"'
+    ly_do: Hồ sơ n60–n62.
+  - cu: 'Ngộ nhận: "tỉ lệ cao" (nhóm nghiên cứu sinh); "không ai tranh cãi"; "kể cả trực giác được đào tạo"'
+    moi: '"ở phiên bản xếp hạng ... (85%)"; "ở nhiều phiên bản, trực giác của người tham gia — kể cả nhóm được đào tạo"'
+    ly_do: Hồ sơ n63–n65.
+  - cu: 'Quiz câu 4, 5: "nguyên tắc hội thoại"; "buộc não nghĩ đến điều kiện thắng–thua... cách nhanh nhất để đánh thức Hệ thống 2"'
+    moi: '"phân biệt xác suất của một trường hợp đơn lẻ với tần suất tương đối..."; "theo phỏng đoán của Tversky và Kahneman, khung đặt cược khiến người ta chú ý..."; "có thể giúp bạn chậm lại"'
+    ly_do: Hồ sơ n71, n72.
+  - cu: 'Hình linda-venn, chú thích: "dù 85% người tham gia nghiên cứu gốc vẫn chọn (b)"'
+    moi: '"dù ở một phiên bản của nghiên cứu gốc (chọn một trong hai, 142 sinh viên UBC), 85% vẫn chọn (b)"'
+    ly_do: 'Review: hồ sơ n33; hình có trong HINH_DA_SUA (tests/chuyen.test.mjs).'
+  - cu: 'Khung :::vung-chac[lỗi conjunction fallacy trong bài toán Linda], câu cuối "Vì vậy hiện tượng vững, còn mức độ thì thay đổi nhiều theo cách hỏi."'
+    moi: ':::kha-vung[…], câu cuối nêu lý do mức "khá vững"'
+    ly_do: 'Review: hồ sơ n34 (lượt 2 qua-manh; thước đo mục 4).'
+  - cu: '### 2. Bài kiểm tra đặt cược :nhan[kha-vung]; "Một phân tích tổng hợp (Yechiam và Zeif, 2023) thấy thưởng tiền giúp giảm lỗi"'
+    moi: 'Bỏ chip, giữ id cũ { #2-bai-kiem-tra-dat-cuoc-kha-vung }; thêm câu: bằng chứng cho riêng việc tưởng tượng chỉ là so sánh giữa hai nhóm, chưa phải thử nghiệm có kiểm soát; "Với tiền thưởng thật, … thấy lỗi giảm, nhưng chỉ ở mức nhỏ"'
+    ly_do: 'Review: hồ sơ n51, n54 (lượt 2 qua-manh).'
+  - cu: '### 4. Kiểm tra tỉ lệ gốc (lượt 1 đã bỏ chip Khá vững, id đổi)'
+    moi: '### 4. Kiểm tra tỉ lệ gốc { #4-kiem-tra-ti-le-goc-kha-vung }'
+    ly_do: 'Review: giữ id cũ cho link #mục (hồ sơ n58).'
+  - cu: 'Quiz câu 2: đáp án "Khoảng 85% ở phiên bản chọn một trong hai, …"; giải thích "… là điều làm bài báo này nổi tiếng: … số đông, kể cả người rành xác suất, đều mắc phải"'
+    moi: 'Đáp án thêm "(sinh viên chưa học thống kê)"; giải thích nêu 85% ở nhóm rành xác suất (xếp hạng) và 36% khi chỉ chấm hai phát biểu'
+    ly_do: 'Review: hồ sơ n69.'
+  - cu: 'Quiz câu 4, giải thích: "— dù bản thân hiệu ứng thì vững chắc"'
+    moi: '", còn bản thân hiệu ứng thì được xếp khá vững"'
+    ly_do: 'Review: hồ sơ n67 (theo nhãn mới n34).'
+  - cu: 'Quiz câu 5: "Vì sao phiên bản "đặt cược 10 đô la" làm giảm tỉ lệ mắc lỗi (từ 85% xuống 56%)?"; "cược vào (a) không thể thua (b)"'
+    moi: '"Ở phiên bản … 56%, thấp hơn mức 85% của phiên bản chọn một trong hai (ở một nhóm sinh viên khác). Tversky và Kahneman giải thích chênh lệch này thế nào?"; "không bao giờ kém cược vào (b)"; giải thích nói rõ là phỏng đoán'
+    ly_do: 'Review: hồ sơ n72.'

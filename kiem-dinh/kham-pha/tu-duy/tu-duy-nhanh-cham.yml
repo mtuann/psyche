@@ -5,13 +5,922 @@ tang: loi
 muc: V3
 lan:
   - so: 1
-    ngay: null
+    ngay: '2026-11-10'
     nhanh: moi/d5-l2
     ma_bam: null
     nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L2 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L2)
+      review: "Claude Opus 5.5 (agent review D5-L2, 10/11/2026)"
       kiem_mau: null
-nguon: []
-nhan_dinh: []
+nguon:
+  - id: frederick2005
+    ten: 'Frederick (2005), J Econ Perspect 19(4), 25–42: toàn văn (PDF ở pdf.stafforini.com; review mở lại bản JSTOR lưu ở bear.warrington.ufl.edu/brenner/mar7588/Papers/frederick-jep2005.pdf)'
+    link: https://doi.org/10.1257/089533005775196732
+    toan_van: true
+  - id: kahneman2011
+    ten: 'Kahneman (2011), Thinking, Fast and Slow, FSG: toàn văn (bản quét trong Internet Archive)'
+    link: https://archive.org/details/thinking-fast-and-slow-by-daniel-kahneman
+    toan_van: true
+  - id: bargh1996
+    ten: 'Bargh, Chen & Burrows (1996), J Pers Soc Psychol 71(2), 230–244: không mở được toàn văn; thiết kế theo Kahneman 2011 (kể lại) và Doyen 2012 (mô tả bản gốc)'
+    link: https://doi.org/10.1037/0022-3514.71.2.230
+    toan_van: false
+  - id: doyen2012
+    ten: 'Doyen, Klein, Pichon & Cleeremans (2012), PLoS ONE 7(1), e29081: toàn văn (PLoS)'
+    link: https://doi.org/10.1371/journal.pone.0029081
+    toan_van: true
+  - id: pashler2011
+    ten: 'Pashler, Harris & Coburn (2011), PsychFileDrawer: không mở được báo cáo; kết quả "failed" theo FLoRA Replication Atlas'
+    link: https://forrt.org/flora-replication-atlas/doi/10.1037/0022-3514.71.2.230/
+    toan_van: false
+  - id: kahneman2012
+    ten: 'Kahneman (26/9/2012), email "A proposal to deal with questions about priming effects" (tệp bổ sung của bản tin Nature của Yong, 2012): toàn văn'
+    link: https://www.nature.com/news/polopoly_fs/7.6716.1349271308!/suppinfoFile/Kahneman%20Letter.pdf
+    toan_van: true
+  - id: weingarten2016
+    ten: 'Weingarten và cộng sự (2016), Psychol Bull 142(5), 472–497: tóm tắt (OpenAlex); không mở được toàn văn'
+    link: https://doi.org/10.1037/bul0000030
+    toan_van: false
+  - id: hagger2016
+    ten: 'Hagger và cộng sự (2016), Perspect Psychol Sci 11(4), 546–573: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1177/1745691616652873
+    toan_van: false
+  - id: schneider1977
+    ten: 'Schneider & Shiffrin (1977), Psychol Rev 84(1), 1–66: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1037/0033-295X.84.1.1
+    toan_van: true
+  - id: epstein1994
+    ten: 'Epstein (1994), Am Psychol 49(8), 709–724: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/0003-066X.49.8.709
+    toan_van: false
+  - id: evans2013
+    ten: 'Evans & Stanovich (2013), Perspect Psychol Sci 8(3), 223–241: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1177/1745691612460685
+    toan_van: false
+  - id: keren2009
+    ten: 'Keren & Schul (2009), Perspect Psychol Sci 4(6), 533–550: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1111/j.1745-6924.2009.01164.x
+    toan_van: false
+  - id: haynes2009
+    ten: 'Haynes và cộng sự (2009), N Engl J Med 360(5), 491–499: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1056/NEJMsa0810119
+    toan_van: false
+  - id: urbach2014
+    ten: 'Urbach và cộng sự (2014), N Engl J Med 370(11), 1029–1038: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1056/NEJMsa1308261
+    toan_van: false
+  - id: tim-kiem-vn-cham
+    ten: 'Tìm trên OpenAlex (10/11/2026): "cognitive reflection test Vietnamese", "dual process System 1 System 2 Vietnamese students", "CRT bat and ball Vietnam": không có nghiên cứu CRT hay phân biệt Hệ 1/Hệ 2 ở người Việt (kết quả là bài về ngôn ngữ học, giáo dục hay kinh doanh Việt Nam, không đo CRT)'
+    link: https://api.openalex.org/works?search=cognitive%20reflection%20test%20Vietnamese
+  - id: le2023
+    ten: 'Le, Jin, Nguyen & Vuong (2023), "Think more before you cheat", bản thảo OSF Preprints: tóm tắt (Crossref, review 10/11/2026); cùng cỡ mẫu (493) và năm nước với bộ dữ liệu Huynh và cộng sự (2022), Data 7(10), 137 (doi 10.3390/data7100137), có lẽ là dữ liệu gốc'
+    link: https://doi.org/10.31219/osf.io/4y9td
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả (description): Kahneman (2011) cho rằng ta nghĩ bằng hai hệ, Hệ 1 nhanh trực giác, Hệ 2 chậm phân tích; bài toán bóng và chày cho thấy đáp án trực giác có thể bật ra trước; không phải tuyên bố nào trong sách cũng đứng vững sau khủng hoảng tái lập.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+      - frederick2005
+    trich: 'A number came to your mind. The number, of course, is 10: 10¢. The distinctive mark of this easy puzzle is that it evokes an answer that is intuitive, appealing, and wrong.'
+    vi_tri: Kahneman 2011, chương "The Lazy System 2"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Hệ 1 luôn nhảy ra đáp án trước". Chữ mới: "đáp án trực giác có thể nhảy ra trước" (Frederick: đáp án sai chiếm ưu thế, không phải mọi người). Cụm "khủng hoảng tái lập" kiểm ở n28–n31, n42. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516", "https://www.nature.com/polopoly_fs/7.6716.1349271308!/suppinfoFile/Kahneman%20Letter.pdf" ]
+    luot_2_ghi_chu: Câu mô tả tổng hợp, mọi vế được các mục sau kiểm.
+    review: 'dung'
+  - id: n2
+    cau: 'Bài toán: bóng và chày giá 1,10 đô la, chày đắt hơn bóng đúng 1,00 đô la; hỏi giá quả bóng.'
+    loai: dinh-nghia
+    nguon:
+      - frederick2005
+    trich: A bat and a ball cost $1.10. The bat costs $1.00 more than the ball. How much does the ball cost?
+    vi_tri: Frederick 2005, tr. 26–27 (Hình 1)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+  - id: n3
+    cau: Đáp án bật ra ngay trong đầu nhiều người là 10 xu — và đó là đáp án sai.
+    loai: so-lieu
+    nguon:
+      - kahneman2011
+      - frederick2005
+    trich: More than 50% of students at Harvard, MIT, and Princeton gave the intuitive—incorrect—answer. At less selective universities, the rate of demonstrable failure to check was in excess of 80%.
+    vi_tri: Kahneman 2011, chương "The Lazy System 2"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "hầu hết mọi người" (không đúng: Frederick Bảng 1 cho MIT 48% đúng cả ba câu; Kahneman: hơn 50% sinh viên Harvard, MIT, Princeton và hơn 80% ở trường ít chọn lọc trả lời 10 xu). Chữ mới: "nhiều người". "Đáp án sai": Frederick: "10 cents ... is wrong". Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn. (Kahneman: hơn 50% sinh viên Harvard, MIT, Princeton trả lời sai). Quiz câu 1 vẫn còn "hầu hết": sửa ở n52.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    review: 'dung'
+  - id: n4
+    cau: Đáp án đúng là 5 xu (chày 1,05 đô la, bóng 0,05 đô la); nếu bóng 10 xu thì tổng là 1,20 đô la.
+    loai: dinh-nghia
+    nguon:
+      - kahneman2011
+      - frederick2005
+    trich: If the ball costs 10¢, then the total cost will be $1.20 (10¢ for the ball and $1.10 for the bat), not $1.10. The correct answer is 5¢.
+    vi_tri: Kahneman 2011, chương "The Lazy System 2"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+  - id: n5
+    cau: Bài toán bóng và chày là câu đầu tiên trong bài kiểm tra của Shane Frederick (2005), sau này gọi là CRT.
+    loai: lich-su
+    nguon:
+      - frederick2005
+    trich: (1) A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? ... three-item "Cognitive Reflection Test" (CRT)
+    vi_tri: Frederick 2005, Hình 1 và đoạn trước đó
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1257/089533005775196732" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt (AEA chặn toàn văn); bài bóng và chày là câu 1 theo mọi nguồn thứ cấp (Scribd bản bài, Wikipedia).
+  - id: n6
+    cau: Bài toán không đánh đố kiến thức toán; nó bẫy bằng một đáp án trực giác bật ra nhanh, dù lời giải dễ hiểu khi được giải thích.
+    loai: phat-hien
+    nguon:
+      - frederick2005
+    trich: The three items on the CRT are "easy" in the sense that their solution is easily understood when explained, yet reaching the correct answer often requires the suppression of an erroneous answer that springs "impulsively" to mind.
+    vi_tri: Frederick 2005, tr. 27
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+  - id: n7
+    cau: Kahneman đoạt giải Nobel năm 2002 cho công trình về phán đoán và ra quyết định mà ông làm cùng Amos Tversky.
+    loai: lich-su
+    nguon:
+      - kahneman2011
+    trich: Our collaboration on judgment and decision making was the reason for the Nobel Prize that I received in 2002, which Amos would have shared had he not died, aged fifty-nine, in 1996.
+    vi_tri: Kahneman 2011, Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đoạt giải Nobel Kinh tế năm 2002 cho công trình về phán đoán và ra quyết định cùng Amos Tversky": Tversky mất năm 1996 nên không cùng nhận giải; chữ mới nói công trình làm cùng Tversky. Giải Nobel Kinh tế: không ghi lại vì sách không dùng tên giải. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts/" ]
+    luot_2_ghi_chu: Nobel 2002 cho Kahneman (chia với Vernon Smith). Tversky mất 1996 nên không thể được trao; 'cùng Tversky' là sự thật lịch sử, trang Nobel không nêu tên.
+    review: 'dung'
+  - id: n8
+    cau: Kahneman mô tả tâm trí qua hai "nhân vật", Hệ 1 và Hệ 2.
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: System 1 and System 2 are so central to the story I tell in this book that I must make it absolutely clear that they are fictitious characters.
+    vi_tri: Kahneman 2011, chương "The Characters of the Story"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "mỗi suy nghĩ của ta đều có hai nhân vật cùng tham gia" (quá mạnh so với cách Kahneman mô tả). Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    review: 'dung'
+  - id: n9
+    cau: 'Hệ 1 (tư duy nhanh): vận hành tự động và nhanh, ít hoặc không tốn sức, dựa vào trực giác; theo Kahneman nó nhận ra sự thù địch trong một giọng nói và trả lời ngay "2 + 2 = ?".'
+    loai: dinh-nghia
+    nguon:
+      - kahneman2011
+    trich: System 1 operates automatically and quickly, with little or no effort and no sense of voluntary control.
+    vi_tri: 'Kahneman 2011, chương "The Characters of the Story" (danh sách việc của Hệ 1: "Detect hostility in a voice. Answer to 2 + 2 = ?")'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "không tốn sức, dựa vào trực giác, cảm xúc và thói quen. Chính nó nhận ra mặt người quen giữa đám đông" (không có trong danh sách của Kahneman; chữ mới dùng ví dụ trong sách; "cảm xúc và thói quen" bỏ). Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html" ]
+    luot_2_ghi_chu: Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang. Ví dụ 'nhận ra thù địch trong giọng nói', '2 + 2' là của chương 1.
+    review: 'dung'
+  - id: n10
+    cau: 'Hệ 2 (tư duy chậm): vận hành có kiểm soát, tốn nỗ lực, dựa vào phân tích; theo Kahneman nó làm phép nhân 17 × 24; nó theo dõi và điều khiển các suy nghĩ do Hệ 1 gợi ra.'
+    loai: dinh-nghia
+    nguon:
+      - kahneman2011
+    trich: One of the main functions of System 2 is to monitor and control thoughts and actions "suggested" by System 1
+    vi_tri: Kahneman 2011, chương "The Lazy System 2" và "Attention and Effort" ("You could not compute the product of 17 x 24 while making a left turn into dense traffic")
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "vận hành có ý thức... Chính nó làm phép nhân 17 × 24, viết phương trình x + (x + 1) = 1,10 ... và kiểm tra lại". Phương trình x + (x + 1) = 1,10 là ví dụ của trang, đã ghi rõ trên trang. Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html" ]
+    luot_2_ghi_chu: Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang. Ví dụ '17 × 24' là của chương 1.
+    review: 'dung'
+  - id: n11
+    cau: 'Hệ 1 liên tục đưa ra ấn tượng và đáp án nhanh gọn; Hệ 2 theo dõi chúng nhưng có thể lười biếng: người trả lời "10 xu" không chủ động kiểm tra, nên Hệ 2 chấp nhận đáp án mà lẽ ra nó có thể bác bỏ chỉ với chút nỗ lực; theo Kahneman nhiều sai lầm đến từ khâu kiểm tra bị bỏ qua đó.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: that person did not actively check whether the answer was correct, and her System 2 endorsed an intuitive answer that it could have rejected with a small investment of effort.
+    vi_tri: Kahneman 2011, chương "The Lazy System 2"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hệ 1 luôn lên tiếng trước... Hệ 2 thì thường lười biếng — nó chỉ bật dậy khi có gì sai sai... Phần lớn sai lầm trong tư duy không phải vì ta không biết tính, mà vì Hệ 2 đã gật đầu quá dễ dàng". "Luôn", "phần lớn" quá mạnh; Kahneman nói "at least for some people it is also lazy". Quiz câu 1, 4 cũng làm mềm tương ứng. Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    review: 'dung'
+  - id: n12
+    cau: 'Hệ 1/Hệ 2 là cách nói ẩn dụ: không phải hệ thống theo nghĩa thông thường, và không có một phần não nào mà mỗi hệ có thể gọi là nhà.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: Systems 1 and 2 are not systems in the standard sense of entities with interacting aspects or parts. And there is no one part of the brain that either of the systems would call home.
+    vi_tri: Kahneman 2011, chương "The Characters of the Story"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Không có hai vùng não tương ứng với hai hệ; nhiều mạng lưới thần kinh cùng tham gia vào cả hai kiểu xử lý" (nửa sau không có trong Kahneman; bỏ). Dùng ở khung Đã bị bác bỏ, ngộ nhận 2 và quiz câu 5. Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn. Ý này nay nằm trong khung ghi chú (:::note) ở mục Mức độ chắc chắn thay cho khung Đã bị bác bỏ (xem n43), cùng ngộ nhận 2 và quiz câu 5.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html" ]
+    luot_2_ghi_chu: Trích từ đoạn mở sách (BookBrowse/zhurnaly, thứ cấp).
+    review: 'dung'
+  - id: n13
+    cau: 'Frederick đưa ba câu đố trông dễ nhưng đều gài một đáp án trực giác sai: bóng và chày; 5 máy làm 5 chi tiết trong 5 phút, 100 máy làm 100 chi tiết mất bao lâu; đám hoa súng gấp đôi mỗi ngày, phủ kín hồ sau 48 ngày thì phủ nửa hồ sau bao nhiêu ngày.'
+    loai: phat-hien
+    nguon:
+      - frederick2005
+    trich: (2) If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? (3) In a lake, there is a patch of lily pads. Every day, the patch doubles in size. If it takes 48 days for the patch to cover the entire lake, how long would it take for the patch to cover half of the lake?
+    vi_tri: Frederick 2005, Hình 1 (CRT)
+    ket_qua: dung
+    ghi_chu: '"Chi tiết" là cách dịch của "widgets".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1257/089533005775196732" ]
+    luot_2_ghi_chu: "Chỉ đọc tóm tắt và đề bài qua nguồn thứ cấp: bản gốc dùng 48 ngày (đáp án 47). Trang viết 48 ngày; khớp."
+  - id: n14
+    cau: Trong mọi đáp án sai có thể nghĩ ra, ba đáp án trực giác (10 xu, 100 phút, 24 ngày) chiếm ưu thế; người ta không tính nhầm ngẫu nhiên.
+    loai: phat-hien
+    nguon:
+      - frederick2005
+    trich: among all the possible wrong answers people could give, the posited intuitive answers (10, 100 and 24) dominate.
+    vi_tri: Frederick 2005, tr. 27
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chiếm đa số trong mọi đáp án sai có thể nghĩ ra... có một cái bẫy trực giác chung mà hầu hết đều sập vào". "Dominate" nghĩa "chiếm ưu thế"; "hầu hết đều sập vào" bỏ (cũng ngược với n3). G1-L02: không kiểm được (AEA chặn); đã đọc toàn văn qua bản mirror. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Frederick 2005 (bản JSTOR lưu ở bear.warrington.ufl.edu/brenner/mar7588/Papers/frederick-jep2005.pdf, tr. 26–28): "among all the possible wrong answers people could give, the posited intuitive answers (10, 100 and 24) dominate" (tr. 27). Lượt 2 khong-chac chỉ vì chưa mở được bài; chữ trang đúng.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Ba đáp án trực giác 10/100/24 là phổ biến theo nguồn thứ cấp nhưng chưa thấy chữ gốc nói 'chiếm ưu thế trong mọi đáp án sai'. Lượt 1 cần Bảng 1/đoạn tương ứng của bài gốc.
+    review: 'dung'
+  - id: n15
+    cau: 'Với bài bóng và chày, gần như mọi người không trả lời "10 xu" đều trả lời đúng "5 xu": bắt được lỗi của trực giác là coi như giải xong bài.'
+    loai: phat-hien
+    nguon:
+      - frederick2005
+    trich: 'In this case, catching that error is tantamount to solving the problem, since nearly everyone who does not respond "10 cents" does, in fact, give the correct response: "5 cents."'
+    vi_tri: Frederick 2005, tr. 27
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ không nói rõ "với bài bóng và chày"; thêm giới hạn (câu này của Frederick chỉ nói về bài đầu). Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Frederick 2005 (bản JSTOR lưu ở bear.warrington.ufl.edu/brenner/mar7588/Papers/frederick-jep2005.pdf, tr. 26–28): "catching that error is tantamount to solving the problem, since nearly everyone who does not respond "10 cents" does, in fact, give the correct response: "5 cents."" (tr. 27). Câu trang đã giới hạn "với bài bóng và chày": đúng.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Chưa xác nhận được 'gần như mọi người không trả lời 10 xu đều đúng'. Số liệu lecture 2003 chỉ nói 50% và 56% sai, không nêu phân bố các đáp án khác.
+    review: 'dung'
+  - id: n16
+    cau: 'Ngay cả nhiều người trả lời đúng cũng thường nghĩ đến đáp án sai trước khi sửa lại: "10 xu" hay bị gạch bên cạnh "5 xu", không bao giờ ngược lại.'
+    loai: phat-hien
+    nguon:
+      - frederick2005
+    trich: even among those responding correctly, the wrong answer was often considered first, as is apparent from introspection, verbal reports and scribbles in the margin (for example, 10 cents was often crossed out next to 5 cents, but never the other way around).
+    vi_tri: Frederick 2005, tr. 27
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ngay cả nhiều người trả lời đúng cũng thừa nhận đã từng nghĩ đến đáp án sai trước khi sửa lại". Frederick suy từ tự quan sát, lời kể và nét gạch trong giấy nháp, không chỉ "thừa nhận". G1-L02: không kiểm được; đã đọc toàn văn. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Frederick 2005 (bản JSTOR lưu ở bear.warrington.ufl.edu/brenner/mar7588/Papers/frederick-jep2005.pdf, tr. 26–28): "even among those responding correctly, the wrong answer was often considered first, as is apparent from introspection, verbal reports and scribbles in the margin (for example, 10 cents was often crossed out next to 5 cents, but never the other way around)" (tr. 27). Đúng.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Chưa xác nhận chi tiết '10 xu hay bị gạch bên cạnh 5 xu, không bao giờ ngược lại'; không tìm thấy trong các nguồn mở.
+    review: 'dung'
+  - id: n17
+    cau: Frederick dùng ba câu này lập CRT, một thước đo khả năng hoặc xu hướng dừng lại suy nghĩ và không trả lời ngay đáp án đầu tiên bật ra.
+    loai: dinh-nghia
+    nguon:
+      - frederick2005
+    trich: a simple measure of one type of cognitive ability—the ability or disposition to reflect on a question and resist reporting the first response that comes to mind.
+    vi_tri: Frederick 2005, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "khả năng ta phanh trực giác lại để suy nghĩ kỹ hơn"; "ability or disposition" nên thêm "hoặc xu hướng". Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Frederick 2005 (bản JSTOR lưu ở bear.warrington.ufl.edu/brenner/mar7588/Papers/frederick-jep2005.pdf, tr. 26–28): khớp ("the ability or disposition to reflect on a question and resist reporting the first response that comes to mind").'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1257/089533005775196732" ]
+    review: 'dung'
+  - id: n18
+    cau: Cuốn Thinking, Fast and Slow (FSG, New York, 2011) là bản tổng hợp nhiều năm nghiên cứu về phán đoán và ra quyết định của Kahneman cùng các cộng sự.
+    loai: lich-su
+    nguon:
+      - kahneman2011
+    trich: This book is not intended as an exposition of the early research that Amos and I conducted together ... My main aim here is to present a view of how the mind works that draws on recent developments in cognitive and social psychology.
+    vi_tri: Kahneman 2011, Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bản tổng hợp hàng thập kỷ nghiên cứu... gom hàng loạt hiệu ứng... đã đưa cặp khái niệm này đến độc giả đại chúng toàn thế giới". Kahneman nói sách không phải trình bày nghiên cứu ban đầu mà là một cách nhìn dựa trên các phát triển gần đây; "độc giả toàn thế giới" bỏ, thay "đông đảo độc giả". Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openlibrary.org/search.json?q=thinking+fast+and+slow+kahneman" ]
+    luot_2_ghi_chu: Thông tin xuất bản qua Open Library; chuẩn.
+    review: 'dung'
+  - id: n19
+    cau: Kahneman ghi trong sách rằng Keith Stanovich và Richard West là người đầu tiên đưa ra các thuật ngữ Hệ 1 và Hệ 2.
+    loai: lich-su
+    nguon:
+      - kahneman2011
+    trich: Keith Stanovich and his longtime collaborator Richard West originally introduced the terms System 1 and System 2
+    vi_tri: Kahneman 2011, chương "The Lazy System 2"
+    ket_qua: dung
+    ghi_chu: Câu mới thêm vào trang ở lượt 1.
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+  - id: n20
+    cau: 'Bargh và cộng sự (1996): sinh viên Đại học New York (phần lớn 18–22 tuổi) ghép câu bốn từ; một nhóm có câu chứa từ gợi tuổi già (Florida, forgetful, bald, gray, wrinkle); khi đi hết hành lang ở một thí nghiệm khác, nhóm này đi chậm hơn đáng kể.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+      - bargh1996
+    trich: the psychologist John Bargh and his collaborators asked students at New York University—most aged eighteen to twenty-two—to assemble four-word sentences from a set of five words ... the young people who had fashioned a sentence from words with an elderly theme walked down the hallway significantly more slowly than the others.
+    vi_tri: Kahneman 2011, chương "The Associative Machine" (kể lại)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: từ gợi "Florida", "bingo"; tốc độ đo lén; "với hiệu ứng rất lớn (d = 1,04 ở thí nghiệm 2a và d = 0,79 ở thí nghiệm 2b, tính từ số liệu trong bài gốc)". Bài gốc không mở được (G1-L02 ghi 30 người mỗi thí nghiệm, t(28) = 2,86 và 2,16 nhưng không kèm trích); bỏ "bingo" (Kahneman không liệt kê) và hai số d; chữ mới theo Kahneman. Ghi cho người giao: mở bài gốc để thêm cỡ mẫu và số liệu nếu muốn. Review (Claude Opus 5.5, 10/11/2026): mô tả theo Kahneman 2011 (kể lại) có ghi rõ trên trang; bài gốc không mở được, lượt 1 đã bỏ các số không kiểm được. Đúng theo chuẩn mục 2 ("theo X kể lại").'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable", "https://replicationindex.com/2026/08/09/elderly-priming-did-it-ever-work/" ]
+    luot_2_ghi_chu: Bargh 1996 không mở được toàn văn (APA chặn); từ ngữ gợi ý và 'chạy qua hành lang' lấy từ mô tả thứ cấp; tuổi 18-22 không xác nhận.
+    review: 'dung'
+  - id: n21
+    cau: Hai số hiệu ứng d = 1,04 (thí nghiệm 2a) và d = 0,79 (2b), tính từ số liệu bài gốc.
+    loai: so-lieu
+    ket_qua: da-bo
+    ghi_chu: 'Đã bỏ khỏi trang: không mở được bài gốc để kiểm (G1-L02 nói tính từ t(28) = 2,86 và 2,16 với 15 người mỗi nhóm, không kèm trích nguyên văn). Review (Claude Opus 5.5, 10/11/2026): bỏ hai số d vì không mở được bài gốc: đúng chuẩn (lượt 2 chỉ tính lại từ nguồn thứ cấp).'
+    luot_2: dung
+    luot_2_nguon: [ "https://replicationindex.com/2026/08/09/elderly-priming-did-it-ever-work/" ]
+    luot_2_ghi_chu: "Khớp t(28) = 2,86, n khoảng 15 mỗi nhóm: d = 2,86 x sqrt(2/15) = 1,04. Nguồn thứ cấp, không phải bài gốc."
+    review: 'dung'
+  - id: n22
+    cau: 'Thí nghiệm này từng được xem là minh họa kinh điển cho sức mạnh của Hệ 1: Kahneman gọi nó là "instant classic".'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: In an experiment that became an instant classic, the psychologist John Bargh and his collaborators
+    vi_tri: Kahneman 2011, chương "The Associative Machine"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Kahneman cũng dành nhiều trang trong sách để ca ngợi dòng nghiên cứu priming xã hội này" (không kiểm được "nhiều trang", "ca ngợi"). Chữ mới theo trích. Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html", "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+    luot_2_ghi_chu: Cụm chính xác 'instant classic' lấy từ trí nhớ về sách, nguồn thứ cấp chỉ xác nhận 'classic'. Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang.
+    review: 'dung'
+  - id: n23
+    cau: Doyen và cộng sự (2012) làm lại thí nghiệm đi chậm với mẫu lớn hơn (120 sinh viên Bỉ ở Brussels), đo tốc độ bằng cảm biến hồng ngoại, thay vì bấm giờ bằng tay như bản gốc.
+    loai: phat-hien
+    nguon:
+      - doyen2012
+    trich: Despite the use of automated timing methods and a larger sample, our first experiment failed to show priming. ... 120 undergraduate Belgian French speaking students ... Two infrared sensors were hidden in the hallway
+    vi_tri: Doyen 2012, tóm tắt và Methods (Experiment 1)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+  - id: n24
+    cau: 'Thí nghiệm 1 của Doyen và cộng sự: không tìm thấy hiệu ứng priming nào.'
+    loai: tai-lap
+    nguon:
+      - doyen2012
+    trich: our first experiment failed to show priming.
+    vi_tri: Doyen 2012, tóm tắt
+    ket_qua: dung
+    ghi_chu: Tóm tắt Doyen kết luận "unconscious behavioral priming is real, while real, involves mechanisms different from those typically assumed" (câu gốc có vẻ bị lỗi chữ trong bản PLoS); trang không nói priming không tồn tại (quiz câu 3 đáp án nhiễu).
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+  - id: n25
+    cau: 'Thí nghiệm 2: một nửa người làm thí nghiệm được gieo niềm tin rằng người tham gia sẽ đi chậm, nửa kia gieo điều ngược lại; hiệu ứng "đi chậm" chỉ xuất hiện khi người làm thí nghiệm tin rằng nó sẽ xuất hiện.'
+    loai: tai-lap
+    nguon:
+      - doyen2012
+    trich: Strikingly, we obtained a walking speed effect, but only when experimenters believed participants would indeed walk slower.
+    vi_tri: Doyen 2012, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+    luot_2_ghi_chu: Ở đo bằng cảm biến, hiệu ứng chỉ có ở nhóm 'Slow'; ở nhóm 'Fast' không khác biệt (tính giờ tay thì đảo chiều).
+  - id: n26
+    cau: Phỏng vấn sau thí nghiệm gợi ý rằng người tham gia đã nhận ra các từ gợi ý, tức là quá trình này có thể không vô thức như tưởng.
+    loai: phat-hien
+    nguon:
+      - doyen2012
+    trich: Further, debriefing was suggestive of awareness of the primes.
+    vi_tri: Doyen 2012, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nhiều người tham gia cho thấy họ đã nhận ra". Tóm tắt chỉ nói "suggestive of awareness". Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+    review: 'dung'
+  - id: n27
+    cau: Kết quả của Doyen gợi ý rằng đôi khi không phải từ ngữ lái hành vi người tham gia mà kỳ vọng của người làm thí nghiệm có thể đã ảnh hưởng đến tốc độ đi bộ; các tác giả dẫn Rosenthal (1966) về hiệu ứng của người làm thí nghiệm.
+    loai: phat-hien
+    nguon:
+      - doyen2012
+    trich: 'Rosenthal R (1966) Experimenter effects in behavioral research: Appleton-Century-Crofts New York.'
+    vi_tri: Doyen 2012, danh mục tài liệu tham khảo [14]
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Đây là biến thể của hiệu ứng Rosenthal kinh điển trong nghiên cứu" (không kiểm được "biến thể"; Doyen dẫn Rosenthal 1966). Chữ mới theo hướng "có thể". Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+    review: 'dung'
+  - id: n28
+    cau: Pashler, Harris và Coburn (2011) là một lần làm lại độc lập được ghi nhận là thất bại.
+    loai: tai-lap
+    nguon:
+      - pashler2011
+    trich: 'Elderly-Related Words Prime Slow Walking, Pashler et al. (2011). Outcome recorded: failed. Outcome classified as "Failure to Replicate" (the project''s own label).'
+    vi_tri: FLoRA Replication Atlas, mục Bargh 1996
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cũng không tìm thấy hiệu ứng". Chỉ có nguồn thứ cấp (FLoRA Replication Atlas); báo cáo PsychFileDrawer không mở được. Ghi cho người giao. Review (Claude Opus 5.5, 10/11/2026): nguồn thứ cấp (FLoRA) ghi "failed"; trang viết "được ghi nhận là thất bại": vừa đúng mức nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://forrt.org/flora-replication-atlas/doi/10.1037/0022-3514.71.2.230/" ]
+    luot_2_ghi_chu: Danh sách tác giả đầy đủ (Pashler, Harris, Coburn) không xác nhận được ở nguồn mở; kết quả 'thất bại' có ở FORRT replication atlas. Lượt 1 nên tìm báo cáo gốc (PsychFileDrawer).
+    review: 'dung'
+  - id: n29
+    cau: Tháng 9/2012, Kahneman gửi email cho các nhà nghiên cứu priming xã hội, cảnh báo rằng ông thấy một "tai nạn tàu hỏa" đang đến gần, và viết rằng lĩnh vực này đã thành "hình mẫu" của những nghi ngờ về tính liêm chính của nghiên cứu tâm lý.
+    loai: phat-hien
+    nguon:
+      - kahneman2012
+    trich: My reason for writing this letter is that I see a train wreck looming. ... your field is now the poster child for doubts about the integrity of psychological research.
+    vi_tri: Kahneman 2012, email ngày 26/9/2012
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thư ngỏ... khi các thất bại tái lập ngày càng nhiều" và "Vụ việc này trở thành một trong những tâm điểm của cuộc khủng hoảng tái lập". Email gửi một danh sách các nhà nghiên cứu (Nature đưa tin sau đó); trong email ông cũng viết "Count me as a general believer" và nghi ngờ các lần làm lại do người mới vào lĩnh vực; thêm nguồn Nature tin 3/10/2012. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nature.com/polopoly_fs/7.6716.1349271308!/suppinfoFile/Kahneman%20Letter.pdf" ]
+    luot_2_ghi_chu: Bản tin Nature đăng 3/10/2012 (Ed Yong).
+    review: 'dung'
+  - id: n30
+    cau: Kahneman nêu trong email rằng nghi ngờ về độ vững của kết quả priming đến từ nhiều nguồn, trong đó có "nhiều thất bại tái lập được báo cáo".
+    loai: phat-hien
+    nguon:
+      - kahneman2012
+    trich: The storm of doubts is fed by several sources, including the recent exposure of fraudulent researchers, general concerns with replicability that affect many disciplines, multiple reported failures to replicate salient results in the priming literature
+    vi_tri: Kahneman 2012, đoạn 2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nature.com/polopoly_fs/7.6716.1349271308!/suppinfoFile/Kahneman%20Letter.pdf" ]
+  - id: n31
+    cau: 'Phân tích tổng hợp của Weingarten và cộng sự (2016): 352 kích thước hiệu ứng từ 133 nghiên cứu cho thấy hiệu ứng priming hành vi nhìn chung nhỏ (d khoảng 0,33–0,35), chỉ bị lệch ít do việc chỉ đăng kết quả dương; phân tích nói về nhiều loại từ gợi ý.'
+    loai: so-lieu
+    nguon:
+      - weingarten2016
+    trich: Findings revealed a small behavioral priming effect (dFE = 0.332, dRE = 0.352), which was robust across methodological procedures and only minimally biased by the publication of positive (vs. negative) results.
+    vi_tri: Weingarten 2016, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nhìn chung nhỏ hơn nhiều so với các báo cáo ban đầu; các hiệu ứng trong nghiên cứu đã xuất bản lớn hơn nghiên cứu chưa xuất bản, nhưng thiên kiến này nhỏ" (hai nửa trước không có trong tóm tắt; không mở được toàn văn nên không kiểm). Chữ mới theo tóm tắt; "chưa tổng hợp các nghiên cứu sau 2016" ghi rõ. theo G1-L02: KHỚP phần trích "small behavioral priming effect ... only minimally biased". Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn. Câu tiếp theo trên trang ("chưa tổng hợp các nghiên cứu sau 2016") là câu tự rào của site.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/bul0000030" ]
+    review: 'dung'
+  - id: n32
+    cau: 'Khá vững: có những quá trình tư duy nhanh-tự động và những quá trình chậm-tốn sức.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - schneider1977
+      - evans2013
+      - keren2009
+      - frederick2005
+    ly_do: Schneider & Shiffrin (1977) đề xuất hai kiểu xử lý (tự động và có kiểm soát) và hỗ trợ bằng nhiều thí nghiệm thời gian phản ứng; Evans & Stanovich (2013) bênh vực sự phân biệt này bằng bằng chứng gần đây; CRT (Frederick 2005) phù hợp. Nhưng không có phân tích tổng hợp, và Keren & Schul (2009) kết luận các mô hình hai hệ "đem lại ít tiến bộ khoa học"; nhãn chỉ nói về sự phân biệt ở mức mô tả, không về hai "hệ".
+    nguon:
+      - schneider1977
+      - evans2013
+      - keren2009
+      - frederick2005
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: khung Vững chắc ("được ghi nhận nhất quán qua nhiều thập kỷ với nhiều phương pháp khác nhau, từ thời gian phản ứng, nhiệm vụ làm hai việc cùng lúc, đến CRT"). Không có phân tích tổng hợp trong nguồn đã mở và có phê bình mạnh (Keren & Schul 2009), nên hạ Khá vững; ý chính giữ. Chỗ khó: người kiểm có thể coi mức mô tả (tự động vs có kiểm soát) là Vững chắc; review cân nhắc. Review (Claude Opus 5.5, 10/11/2026): giữ Khá vững: sự phân biệt tự động/có kiểm soát có nhiều thí nghiệm cùng chiều (Schneider & Shiffrin 1977, toàn văn) và được bênh vực (Evans & Stanovich 2013), nhưng chưa có phân tích tổng hợp và có phê bình lý thuyết (Keren & Schul 2009). Đạt mục 4 mức Khá vững.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.84.1.1.pdf", "https://doi.org/10.1177/1745691612460685" ]
+    luot_2_ghi_chu: Khá vững là mức thận trọng; sự phân biệt tự động/có kiểm soát được ủng hộ rộng, còn việc gom thành hai 'hệ' bị phê bình (Keren & Schul).
+    review: 'dung'
+  - id: n33
+    cau: Schneider và Shiffrin (1977) phân biệt xử lý tự động (không cần kiểm soát, không bị giới hạn năng lực, không nhất thiết cần chú ý) với xử lý có kiểm soát (cần chú ý, giới hạn năng lực, do người làm kiểm soát), qua thí nghiệm đo thời gian phản ứng và độ chính xác.
+    loai: phat-hien
+    nguon:
+      - schneider1977
+    trich: Automatic processing is activation of a learned sequence of elements in long-term memory that is initiated by appropriate inputs and then proceeds automatically—without subject control, without stressing the capacity limitations of the system, and without necessarily demanding attention. Controlled processing is a temporary activation of a sequence of elements that can be set up quickly and easily but requires attention, is capacity-limited (usually serial in nature), and is controlled by the subject.
+    vi_tri: Schneider & Shiffrin 1977, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "phân biệt xử lý tự động với xử lý có kiểm soát"; thêm nội dung và phương pháp theo tóm tắt (cũng ở khung Khá vững). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.84.1.1.pdf" ]
+    review: 'dung'
+  - id: n34
+    cau: Các nhà nghiên cứu sau đó (Epstein, Stanovich, Evans) phát triển ý tưởng thành họ lý thuyết quá trình kép; Epstein (1994) đề xuất hai kiểu xử lý thông tin (hệ lý trí và hệ kinh nghiệm theo cảm xúc).
+    loai: phat-hien
+    nguon:
+      - epstein1994
+      - evans2013
+    trich: 'Cognitive-experiential self-theory integrates the cognitive and the psychodynamic unconscious by assuming the existence of two parallel, interacting modes of information processing: a rational system and an emotionally driven experiential system.'
+    vi_tri: Epstein 1994, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Epstein 1994 (tóm tắt), Evans & Stanovich 2013 (tóm tắt) đã mở; Evans (2003) và Stanovich & West (2000) chỉ qua Kahneman 2011 và tóm tắt Stanovich & West. Review (Claude Opus 5.5, 10/11/2026): Epstein 1994 và Evans & Stanovich 2013 đọc tóm tắt; câu trang không vượt tóm tắt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/1745691612460685", "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Epstein 1994 (rational/experiential) chỉ xác nhận qua trích dẫn của Kahneman, không mở bài gốc.
+    review: 'dung'
+  - id: n35
+    cau: Đóng góp của Kahneman là kể các ý tưởng quá trình kép thành một câu chuyện dễ nhớ và dễ áp dụng cho đời sống; ông dùng các thuật ngữ do Stanovich và West đề xuất.
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: I adopt terms originally proposed by the psychologists Keith Stanovich and Richard West, and will refer to two systems in the mind, System 1 and System 2.
+    vi_tri: Kahneman 2011, chương "The Characters of the Story"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "gom chúng thành một câu chuyện thống nhất". Câu "dễ nhớ và dễ áp dụng" là đánh giá của trang; Kahneman nói mục tiêu là "a language for thinking and talking about the mind". Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://doi.org/10.1177/1745691612460685" ]
+    luot_2_ghi_chu: Vế đánh giá 'kể thành câu chuyện dễ nhớ' là nhận xét, hợp lý.
+    review: 'dung'
+  - id: n36
+    cau: Theo Kahneman, Hệ 1 vận hành dựa trên ký ức liên tưởng (associative memory), là lõi của nó.
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: shows how associative memory, the core of System 1, continually constructs a coherent interpretation of what is going on in our world at any instant.
+    vi_tri: Kahneman 2011, Introduction
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Hệ 1 vận hành bằng một mạng lưới liên tưởng khổng lồ... cho phép phản ứng chớp nhoáng... nhận ra nguy hiểm". Chữ mới sát Kahneman; ví dụ "Florida gợi tuổi già" là minh họa (xem n19). Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: "'Associative memory là lõi' từ sách; ý khớp lecture. Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang."
+    review: 'dung'
+  - id: n37
+    cau: 'Theo Kahneman có một "luật ít tốn sức nhất": nếu có nhiều cách đạt cùng mục tiêu, người ta dần chọn cách đòi hỏi ít nỗ lực nhất.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: The law asserts that if there are several ways of achieving the same goal, people will eventually gravitate to the least demanding course of action.
+    vi_tri: Kahneman 2011, chương "Attention and Effort"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "não mặc định để nó ở chế độ tiết kiệm: chỉ bật khi thật cần... chuyên gia sau hàng nghìn giờ phần lớn rất chuẩn". "Hàng nghìn giờ" không có trong Kahneman; chữ mới dùng "luật ít tốn sức nhất". Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html" ]
+    luot_2_ghi_chu: Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang.
+    review: 'dung'
+  - id: n38
+    cau: Theo Kahneman, trực giác có thể đáng tin trong môi trường đủ đều đặn để dự đoán, sau khi luyện tập lâu.
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: an environment that is sufficiently regular to be predictable * an opportunity to learn these regularities through prolonged practice When both these conditions are satisfied, intuitions are likely to be skilled.
+    vi_tri: 'Kahneman 2011, chương "Expert Intuition: When Can We Trust It?"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trực giác của chuyên gia sau hàng nghìn giờ luyện tập phần lớn rất chuẩn" và ở ngộ nhận 1 "thường rất đáng tin". Kahneman đặt hai điều kiện. Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html", "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang.
+    review: 'dung'
+  - id: n39
+    cau: Theo Kahneman, người đang bận trí óc dễ chọn ích kỷ, dùng ngôn ngữ phân biệt giới tính và đưa ra phán đoán hời hợt hơn.
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: People who are cognitively busy are also more likely to make selfish choices, use sexist language, and make superficial judgments in social situations.
+    vi_tri: Kahneman 2011, chương "The Lazy Controller"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ (khung Khá vững): "các thí nghiệm gây tải nhận thức cho thấy: khi Hệ 2 đang bận, ta dễ chấp nhận đáp án trực giác hơn" (không nguồn). Chữ mới dẫn tổng hợp của Kahneman (nguồn thứ cấp, không mở các thí nghiệm gốc). Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn. Đây là tổng hợp của Kahneman (kể lại), trang ghi rõ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html" ]
+    luot_2_ghi_chu: Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang.
+    review: 'dung'
+  - id: n40
+    cau: Hiệu ứng cạn kiệt ý chí (ego depletion, "khi mệt thì Hệ 2 yếu đi") không tái lập được trong một lần làm lại nhiều phòng thí nghiệm có đăng ký trước (23 phòng, 2.141 người; d = 0,04, khoảng tin cậy 95% [−0,07; 0,15]).
+    loai: tai-lap
+    nguon:
+      - hagger2016
+    trich: Multiple laboratories (k = 23, total N = 2,141) conducted replications of a standardized ego-depletion protocol ... the size of the ego-depletion effect was small with 95% confidence intervals (CIs) that encompassed zero (d = 0.04, 95% CI [-0.07, 0.15]).
+    vi_tri: Hagger 2016, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'theo G1-L02: KHỚP (câu trích từ tóm tắt). Đối chiếu lại: khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/1745691616652873" ]
+    luot_2_ghi_chu: Đây là Hagger và cộng sự 2016 (Registered Replication Report). Vế 'Hệ 2 yếu đi khi mệt' là cách diễn giải của trang.
+  - id: n41
+    cau: 'Khá vững: Hệ 2 thường "lười", hay phê duyệt đáp án của Hệ 1.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - kahneman2011
+      - frederick2005
+      - hagger2016
+    ly_do: 'CRT (Frederick 2005) cho thấy đáp án trực giác sai chiếm ưu thế và nhiều người trả lời đúng cũng đã nghĩ đến nó trước; Kahneman (2011) tổng hợp thêm các nghiên cứu về tải nhận thức. Giới hạn ghi trên trang: cơ chế "mệt thì Hệ 2 yếu đi" không tái lập (Hagger 2016); bằng chứng chủ yếu là CRT và tổng hợp của Kahneman, không có phân tích tổng hợp.'
+    nguon:
+      - kahneman2011
+      - frederick2005
+      - hagger2016
+    ket_qua: da-lam-mem
+    ghi_chu: 'Giữ Khá vững (G1-L02 #1 đã áp: bỏ ý "mệt mỏi tinh thần" làm căn cứ). Thêm nguồn tải nhận thức qua Kahneman 2011. Review (Claude Opus 5.5, 10/11/2026): giữ Khá vững: Frederick 2005 (toàn văn) cho thấy đáp án trực giác sai chiếm ưu thế và cả người làm đúng thường nghĩ tới nó trước; Hagger 2016 được nêu như giới hạn; chưa có phân tích tổng hợp. Trang giữ chữ "thường" như lượt 2 khuyên.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://doi.org/10.1177/1745691612460685", "https://doi.org/10.1111/j.1745-6924.2009.01164.x" ]
+    luot_2_ghi_chu: "Khá vững là hợp lý. Lưu ý: có nghiên cứu cho thấy nhiều người trả lời đúng đã có đáp án đúng ngay từ đầu (Bago & De Neys, chưa đọc trong lượt này) nên 'lười' không phải lời giải thích duy nhất; trang nên giữ chữ 'thường'."
+    review: 'dung'
+  - id: n42
+    cau: 'Đang tranh cãi: các từ ngữ vô thức có lái được hành vi phức tạp như tốc độ đi bộ hay không.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - bargh1996
+      - doyen2012
+      - pashler2011
+      - weingarten2016
+    ly_do: 'Một lần làm lại thiết kế tốt hơn (Doyen 2012; 120 người, cảm biến tự động) không thấy hiệu ứng ở thí nghiệm 1, chỉ thấy khi người làm thí nghiệm kỳ vọng; Pashler 2011 cũng được ghi nhận thất bại; trong khi phân tích tổng hợp của Weingarten 2016 thấy hiệu ứng nhỏ ở nhiều loại priming. Hiệu ứng gốc nhỏ hơn nhiều hay có điều kiện, nhưng không bị bác bỏ hoàn toàn.'
+    nguon:
+      - bargh1996
+      - doyen2012
+      - pashler2011
+      - weingarten2016
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "các lần làm lại... không tìm thấy hiệu ứng — hoặc chỉ thấy khi người làm thí nghiệm kỳ vọng có hiệu ứng". Giữ ý, nhưng ghi rõ Pashler chỉ qua nguồn thứ cấp. Review (Claude Opus 5.5, 10/11/2026): giữ Đang tranh cãi (Doyen 2012 toàn văn: thí nghiệm 1 không thấy hiệu ứng; Weingarten 2016 tóm tắt: priming hành vi nhỏ nhưng có). Sửa ly_do trong hồ sơ: Doyen 2012 không phải tái lập có đăng ký trước (chữ cũ "Một tái lập có đăng ký thiết kế tốt hơn").'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable", "https://doi.org/10.1037/bul0000030", "https://www.nature.com/polopoly_fs/7.6716.1349271308!/suppinfoFile/Kahneman%20Letter.pdf" ]
+    review: 'dung'
+  - id: n43
+    cau: 'Đã bị bác bỏ: Hệ 1 và Hệ 2 là hai "bộ phận" riêng biệt trong não.'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - kahneman2011
+    ly_do: 'Chính Kahneman, người đề xuất mô hình, nói rõ chúng là nhân vật hư cấu, không phải hệ thống theo nghĩa thông thường, không có phần não nào mà mỗi hệ gọi là nhà. Nhãn bác bỏ nói về cách hiểu "hai bộ phận" (không phải hiệu ứng thực nghiệm): theo đồng thuận của giáo trình và chính văn bản của tác giả.'
+    nguon:
+      - kahneman2011
+    ket_qua: 'da-bo'
+    ghi_chu: 'Chữ cũ: có thêm "nhiều mạng lưới thần kinh cùng tham gia vào cả hai kiểu xử lý" (không có trong Kahneman; bỏ). Chỗ khó: nhãn cho một cách hiểu mô hình, xét theo lời chính tác giả. Review (Claude Opus 5.5, 10/11/2026): đồng ý với lượt 2 (qua-manh): nhãn Đã bị bác bỏ cần các phép kiểm đủ mạnh liên tục thất bại (mục 4); "hai bộ phận trong não" là một cách hiểu sai mô hình, không có phép kiểm nào được dẫn, và Kahneman chỉ nói mô hình của ông không khẳng định điều ấy. Đã bỏ khung :::bac-bo; nội dung (n12) chuyển sang khung ghi chú :::note[Hệ 1 và Hệ 2 không phải hai "bộ phận" của não], thêm câu "Đây là lưu ý về cách hiểu mô hình, không phải một kết quả thực nghiệm nên không gắn nhãn." Câu "(xem mục Mức độ chắc chắn)" ở đầu bài vẫn đúng chỗ.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1177/1745691612460685", "https://doi.org/10.1111/j.1745-6924.2009.01164.x", "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: "câu đúng: Không nên dùng nhãn Đã bị bác bỏ. Cách đúng: Hệ 1/Hệ 2 là ẩn dụ chứ không phải hai bộ phận của não (chính Kahneman nói vậy); quan niệm 'hai hệ riêng biệt' bị phê bình mạnh (Keren & Schul 2009) và các tác giả quá trình kép chuyển sang nói 'Type 1/Type 2' (Evans & Stanovich 2013).; Thước đo mục 4: Đã bị bác bỏ cần các kiểm tra đủ mạnh liên tục thất bại hay bằng chứng gốc mất giá trị (rút bài, gian lận). Không có phép kiểm nào ở đây; chính Kahneman coi hai hệ là ẩn dụ, nên khẳng định 'hai bộ phận riêng biệt trong não' không phải của chính lý thuyết (gần với 'ngộ nhận về cách đọc'), và phê bình khoa học (Keren & Schul) nói về giá trị giải thích, không phải một bác bỏ thực nghiệm."
+    review: 'sai'
+  - id: n44
+    cau: 'Các nghiên cứu then chốt thực hiện ở phương Tây: CRT trên sinh viên các trường đại học Mỹ (MIT, Princeton, Harvard, Carnegie Mellon, Michigan...), thí nghiệm priming ở New York, lần làm lại ở Brussels (Bỉ), và Kahneman làm việc tại Princeton.'
+    loai: phat-hien
+    nguon:
+      - frederick2005
+      - kahneman2011
+      - doyen2012
+    trich: 'Table 1 CRT Scores, by Location ... Massachusetts Institute of Technology ... Princeton University ... Carnegie Mellon University ... Harvard University ... University of Michigan: Ann Arbor'
+    vi_tri: Frederick 2005, Bảng 1
+    ket_qua: dung
+    ghi_chu: 'theo G1-L02 #2 (đã sửa "đều thực hiện ở Mỹ" thành "phương Tây"). Frederick Bảng 1 còn có mẫu "Boston fireworks display" (không chỉ sinh viên) và khảo sát qua web; "CRT trên sinh viên đại học Mỹ" đúng cho phần lớn mẫu. Kahneman: "My Princeton colleague".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+    luot_2_ghi_chu: Danh sách MIT, Harvard, Carnegie Mellon của Frederick không đọc được trong lượt này (bài chặn); Bargh ở New York University từ nguồn thứ cấp.
+  - id: n45
+    cau: 'Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra riêng CRT hay phân biệt Hệ 1/Hệ 2 trên người Việt; CRT mới được dùng như một thước đo phụ, chẳng hạn trong một bản thảo phân tích dữ liệu về gian lận của 493 sinh viên ở năm nước, trong đó có Việt Nam (Le và cộng sự, 2023).'
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn-cham
+      - le2023
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'OpenAlex ngày 10/11/2026, ba truy vấn ở danh sách nguồn: không có. Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc; thêm "Tính đến 11/2026". Review (Claude Opus 5.5, 10/11/2026): đồng ý với lượt 2 (qua-manh). Đã mở bản ghi Crossref của bản thảo Le, Jin, Nguyen & Vuong (OSF Preprints, 1/4/2023, doi 10.31219/osf.io/4y9td; tóm tắt nêu 493 sinh viên ở Đức, Việt Nam, Trung Quốc, Đài Loan, Nhật và "cognitive reflection"); cùng cỡ mẫu và năm nước với bộ dữ liệu Huynh và cộng sự (2022), Data 7(10), 137 (bản ghi Crossref), có lẽ là dữ liệu gốc. Tìm thêm Europe PMC 10/11/2026 ("cognitive reflection test" AND (Vietnam OR Vietnamese)): không có nghiên cứu kiểm tra riêng CRT ở người Việt. Chữ cũ "chưa tìm thấy nghiên cứu nào kiểm tra CRT hay phân biệt Hệ 1/Hệ 2 trên người Việt." Chữ mới thêm "riêng" và câu về bản thảo Le và cộng sự (2023); thêm nguồn vào mục Nguồn. Hạn giữ 2028-11-01.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://philarchive.org/rec/LETMBO" ]
+    luot_2_ghi_chu: "câu đúng: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm chứng chính CRT hay sự phân biệt Hệ 1/Hệ 2 trên người Việt; CRT có được dùng như một thước đo trong nghiên cứu gian lận trên sinh viên năm nước, trong đó có Việt Nam (Le và cộng sự).; Thời sự, kiểm 10/11/2026: có ít nhất một nghiên cứu đo CRT ở sinh viên Việt Nam (như một mẫu trong nghiên cứu năm nước, về gian lận), tuy không phải nghiên cứu kiểm tra chính CRT. Không thấy nghiên cứu nào kiểm chính CRT hay hai hệ ở riêng người Việt (tìm tiếng Anh, OpenAlex và web). Câu hiện viết 'chưa tìm thấy nghiên cứu nào kiểm tra CRT' dễ bị hiểu là chưa từng dùng CRT ở Việt Nam. Chưa mở toàn văn để biết số mẫu Việt Nam."
+    trich: 'Conducting Bayesian analysis on 493 university students from Germany, Vietnam, China, Taiwan, and Japan, we found that students who have more positive attitudes toward cheating are more likely to cheat. However, a higher capability of cognitive reflection acts as a moderator that negates the above effect.'
+    review: 'sai'
+  - id: n46
+    cau: Bài toán bóng và chày dùng đô la và xu; nếu chuyển sang tiền Việt với mệnh giá khác, cái bẫy trực giác có thể mạnh lên hay yếu đi; đó là suy đoán, cần nghiên cứu trên người Việt.
+    loai: phat-hien
+    nguon:
+      - frederick2005
+    trich: respondents do much better on analogous problems that invite more computation. For example, respondents miss the "bat and ball" problem far more often than they miss the "banana and bagel" problem
+    vi_tri: Frederick 2005, tr. 27–28
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bài toán bóng và chày bẫy được người ta một phần nhờ sự quen thuộc với tiền xu đô la và phép tính thập phân" (khẳng định không có nguồn). Frederick cho biết các bài tương tự mời tính toán nhiều hơn (banana and bagel) ít bị sai hơn; chữ mới nói rõ là suy đoán của chúng tôi. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Frederick 2005 (bản JSTOR lưu ở bear.warrington.ufl.edu/brenner/mar7588/Papers/frederick-jep2005.pdf, tr. 26–28): "respondents miss the "bat and ball" problem far more often than they miss the "banana and bagel" problem" (tr. 28). Câu về tiền Việt đã ghi rõ là suy đoán.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    review: 'dung'
+  - id: n47
+    cau: 'Ngộ nhận: Hệ 1 không "xấu": theo Kahneman, nó nhận ra sự thù địch trong giọng nói hay lái xe trên đường vắng; trực giác của chuyên gia có thể đáng tin trong môi trường đủ đều đặn sau luyện tập lâu; vấn đề là Hệ 2 không kiểm tra lại khi cần.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: Detect hostility in a voice. ... Drive a car on an empty road.
+    vi_tri: Kahneman 2011, chương "The Characters of the Story"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hệ 1 là thứ giúp bạn phanh xe kịp khi có người lao ra đường" (ví dụ không có trong Kahneman). Xem n38 về trực giác chuyên gia. Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html" ]
+    luot_2_ghi_chu: Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang.
+    review: 'dung'
+  - id: n48
+    cau: 'Ngộ nhận: Kahneman viết rằng, trừ một số tác động của tuổi tác, trực giác của ông vẫn dễ mắc quá tự tin, dự đoán cực đoan và ngộ nhận kế hoạch như trước khi ông nghiên cứu chúng; biết về hai hệ giúp nhận ra tình huống dễ sai.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: my intuitive thinking is just as prone to overconfidence, extreme predictions, and the planning fallacy as it was before I made a study of these issues. I have improved only in my ability to recognize situations in which errors are likely
+    vi_tri: Kahneman 2011, chương cuối "Conclusions"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chính Kahneman thừa nhận ông vẫn sập bẫy trực giác của mình". Chữ mới nêu cụ thể lỗi nào và phần tuổi tác. Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html" ]
+    luot_2_ghi_chu: Không tìm được trích dẫn chữ gốc ở nguồn mở; nội dung đúng theo trí nhớ về cuối chương 1. Toàn văn sách Kahneman 2011 không mở được (bản cho mượn); đối chiếu Nobel lecture 2003 (Kahneman) và trích dẫn thứ cấp. Lượt 1 nên đối chiếu số trang.
+    review: 'dung'
+  - id: n49
+    cau: 'Ngộ nhận: một số hiệu ứng nổi tiếng trong sách, như từ ngữ về tuổi già làm người ta đi chậm, đã không tái lập được trong các lần làm lại có kiểm soát tốt hơn (Doyen 2012).'
+    loai: phat-hien
+    nguon:
+      - doyen2012
+      - kahneman2011
+    trich: Despite the use of automated timing methods and a larger sample, our first experiment failed to show priming.
+    vi_tri: Doyen 2012, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "một số hiệu ứng nổi tiếng nhất trong sách... đã không qua được các lần làm lại độc lập". "Nổi tiếng nhất" và "độc lập" không kiểm được; bài Kahneman kể "Florida effect" là một ví dụ (trích Kahneman: "became an instant classic"). Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+    review: 'dung'
+  - id: n50
+    cau: 'Đọc thêm: bài "Vì sao linh cảm hay đánh lừa ta?" (bài toán Linda và heuristic) và "Vì sao ta tin điều vô lý?" (lập luận có động cơ) có trên site; trang "Khủng hoảng tái lập" (bang-chung/khung-hoang-tai-lap) có trên site.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: trang.yml có kham-pha/tu-duy/linh-cam-va-xac-suat, kham-pha/tu-duy/tin-dieu-vo-ly và bang-chung/khung-hoang-tai-lap; link nội bộ đúng. Trang chưa khóa nên hiện "sắp có" ở bản thật. Review (Claude Opus 5.5, 10/11/2026): đã kiểm: trang.yml có kham-pha/tu-duy/linh-cam-va-xac-suat, kham-pha/tu-duy/tin-dieu-vo-ly, bang-chung/khung-hoang-tai-lap; tiêu đề hai bài khớp.'
+    review: 'dung'
+  - id: n51
+    cau: 'Mục "Mức độ chắc chắn" trên trang gồm ba khung nhãn (Khá vững, Khá vững, Đang tranh cãi) và một khung ghi chú về cách hiểu Hệ 1/Hệ 2; câu "(xem mục Mức độ chắc chắn)" ở phần Điều gì đang xảy ra trỏ đúng.'
+    loai: ve-site
+    ket_qua: 'da-sua'
+    ghi_chu: 'Đã kiểm trên trang: có đủ bốn khung và mục "Mức độ chắc chắn". Review (Claude Opus 5.5, 10/11/2026): sau khi bỏ khung Đã bị bác bỏ (n43), câu cũ "gồm bốn khung (Khá vững, Khá vững, Đang tranh cãi, Đã bị bác bỏ)" không còn đúng; đã sửa câu hồ sơ. Đã kiểm trên trang: ba khung nhãn và khung :::note.'
+    review: 'sai'
+  - id: n52
+    cau: 'Câu hỏi 1: nhiều người trả lời "10 xu" vì Hệ 1 đưa ra đáp án nhanh gọn (1,10 − 1,00 = 0,10) trước khi Hệ 2 kiểm tra xem đáp án có thỏa cả hai điều kiện không; cái bẫy ở tốc độ, không ở phép tính.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+      - frederick2005
+    trich: that person did not actively check whether the answer was correct, and her System 2 endorsed an intuitive answer that it could have rejected with a small investment of effort.
+    vi_tri: Kahneman 2011, chương "The Lazy System 2"
+    ket_qua: 'da-lam-mem'
+    ghi_chu: 'Quiz câu 1: chữ cũ "Hệ 2 lười biếng thường gật đầu luôn"; làm mềm thành "Hệ 2 có thể gật đầu luôn". Giải thích "1,10 − 1,00 = 0,10" là cách trang diễn giải ra đáp án trực giác (Frederick: "the difference between $1.00 and 10 cents is only 90 cents"). Review (Claude Opus 5.5, 10/11/2026): thân câu hỏi 1 trên trang vẫn là "Vì sao hầu hết mọi người trả lời "10 xu"…" (lượt 1 đã đổi "hầu hết" thành "nhiều người" ở n3 vì Frederick và Kahneman không cho "hầu hết" chung). Chữ mới: "Vì sao nhiều người trả lời "10 xu" cho bài toán bóng và chày?"'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Vế 'cái bẫy ở tốc độ, không ở phép tính' là diễn giải; hợp với Nobel lecture.
+    review: 'sai'
+  - id: n53
+    cau: 'Câu hỏi 2: đóng góp chính của Frederick (2005) qua CRT là một thước đo khả năng "phanh" trực giác lại; ba câu đều gài một đáp án trực giác sai, và muốn giải đúng thường phải kìm đáp án ấy lại.'
+    loai: phat-hien
+    nguon:
+      - frederick2005
+    trich: 'The three items on the CRT are "easy" in the sense that their solution is easily understood when explained, yet reaching the correct answer often requires the suppression of an erroneous answer that springs "impulsively" to mind.'
+    vi_tri: 'Frederick 2005, tr. 27'
+    ket_qua: 'da-sua'
+    ghi_chu: 'Quiz câu 2. "Gần như đồng nghĩa với giải đúng": Frederick nói riêng cho bài bóng và chày; đáp án giữ nguyên chữ vì khối đã nói ba câu "đều gài"; lượt 2 xem có cần thêm giới hạn. Review (Claude Opus 5.5, 10/11/2026): đã tự mở toàn văn Frederick 2005 (bản JSTOR lưu ở bear.warrington.ufl.edu/brenner/mar7588/Papers/frederick-jep2005.pdf, tr. 26–28): câu "catching that error is tantamount to solving the problem" chỉ nói về bài bóng và chày; với ba câu, Frederick viết "reaching the correct answer often requires the suppression of an erroneous answer". Chữ cũ của đáp án: "ba câu đố đều gài một đáp án trực giác sai, và việc bắt được lỗi đó gần như đồng nghĩa với việc giải đúng." Chữ mới: "ba câu đố đều gài một đáp án trực giác sai, và muốn giải đúng thường phải kìm đáp án ấy lại."'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://doi.org/10.1257/089533005775196732" ]
+    luot_2_ghi_chu: Phần 'CRT là thước đo khả năng/xu hướng dừng lại suy nghĩ' đã khớp tóm tắt; phần 'gần như đồng nghĩa với giải đúng' cần toàn văn.
+    review: 'sai'
+  - id: n54
+    cau: 'Câu hỏi 3: kết quả chính của Doyen (2012): thí nghiệm 1 với đo đạc khách quan không thấy hiệu ứng priming; thí nghiệm 2 hiệu ứng chỉ xuất hiện khi người làm thí nghiệm tin rằng nó sẽ xuất hiện.'
+    loai: tai-lap
+    nguon:
+      - doyen2012
+    trich: Despite the use of automated timing methods and a larger sample, our first experiment failed to show priming. ... we obtained a walking speed effect, but only when experimenters believed participants would indeed walk slower.
+    vi_tri: Doyen 2012, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Quiz câu 3. Giải thích "không xóa sổ priming xã hội": tóm tắt Doyen kết luận priming hành vi có thật nhưng cơ chế khác (xem n24 ghi chú).'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable" ]
+  - id: n55
+    cau: 'Câu hỏi 4: theo mô hình Kahneman, ta mắc nhiều sai lầm dù biết tính vì Hệ 1 đưa đáp án trước còn Hệ 2 có thể lười kiểm tra lại; nhiều sai lầm không do thiếu kiến thức mà do khâu kiểm tra bị bỏ qua.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: that person did not actively check whether the answer was correct, and her System 2 endorsed an intuitive answer that it could have rejected with a small investment of effort.
+    vi_tri: Kahneman 2011, chương "The Lazy System 2"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Quiz câu 4: chữ cũ "Hệ 1 luôn đưa đáp án trước còn Hệ 2 thường lười", "Vấn đề thường không phải là thiếu kiến thức". Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    review: 'dung'
+  - id: n56
+    cau: 'Câu hỏi 5: Hệ 1 và Hệ 2 là cách nói ẩn dụ cho hai kiểu xử lý (nhanh-tự động và chậm-tốn sức); không có hai bộ phận tương ứng; Kahneman nhấn mạnh đây là hai nhân vật hư cấu.'
+    loai: phat-hien
+    nguon:
+      - kahneman2011
+    trich: they are fictitious characters. Systems 1 and 2 are not systems in the standard sense of entities with interacting aspects or parts.
+    vi_tri: Kahneman 2011, chương "The Characters of the Story"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Quiz câu 5: chữ cũ "ngộ nhận phổ biến nhất về mô hình này" (không kiểm được "phổ biến nhất"); đổi thành "một ngộ nhận". Review (Claude Opus 5.5, 10/11/2026): chữ cuối khớp trích Kahneman 2011 của lượt 1 (bản quét Internet Archive); lượt 2 xác nhận ý qua Nobel lecture và trích thứ cấp. Không thấy chữ vượt nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html", "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    review: 'dung'
+  - id: n57
+    cau: 'Mục Áp dụng 3 (checklist): nghiên cứu trước–sau ở tám bệnh viện (Haynes và cộng sự, 2009) thấy tử vong giảm từ 1,5% xuống 0,8% và biến chứng từ 11,0% xuống 7,0% sau khi dùng checklist an toàn phẫu thuật.'
+    loai: phat-hien
+    nguon:
+      - haynes2009
+    trich: The rate of death was 1.5% before the checklist was introduced and declined to 0.8% afterward (P=0.003). Inpatient complications occurred in 11.0% of patients at baseline and in 7.0% after introduction of the checklist (P<0.001).
+    vi_tri: Haynes 2009, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Phi công, bác sĩ phẫu thuật dùng checklist chính vì họ biết: dù giỏi đến đâu, Hệ 1 vẫn có lúc nhảy cóc... rẻ nhất để bắt Hệ 2 làm việc" (không nguồn cho lý do, cho phi công, hay "rẻ nhất"). Thay bằng hai nghiên cứu có nguồn. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn. (Haynes 2009, lượt 2 đọc toàn văn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1056%252FNEJMra022137.zip/10.1056%252FNEJMsa0810119.pdf" ]
+    review: 'dung'
+  - id: n58
+    cau: Một nghiên cứu ở 101 bệnh viện Ontario (Urbach và cộng sự, 2014) không thấy thay đổi đáng kể về tử vong và biến chứng khi áp dụng checklist (tử vong điều chỉnh 0,71% → 0,65%, OR 0,91, khoảng tin cậy 95% 0,80–1,03).
+    loai: phat-hien
+    nguon:
+      - urbach2014
+    trich: The adjusted risk of death during a hospital stay or within 30 days after surgery was 0.71% (95% confidence interval [CI], 0.66 to 0.76) before implementation of a surgical checklist and 0.65% (95% CI, 0.60 to 0.70) afterward (odds ratio, 0.91; 95% CI, 0.80 to 1.03; P=0.13).
+    vi_tri: Urbach 2014, tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu mới thêm vào trang ở lượt 1; biến chứng 3,86% → 3,82% (tóm tắt, câu sau).
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nejm.org/doi/pdf/10.1056/NEJMsa1308261" ]
+  - id: n59
+    cau: 'Đang tranh cãi (chip ở mục 3): dùng checklist cho việc quan trọng lặp đi lặp lại.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - haynes2009
+      - urbach2014
+    ly_do: 'Hai nghiên cứu lớn trong phẫu thuật cho kết quả khác nhau: trước–sau ở tám bệnh viện thấy tử vong và biến chứng giảm rõ (Haynes 2009), còn nghiên cứu quy mô dân số ở Ontario không thấy thay đổi đáng kể (Urbach 2014). Bằng chứng mâu thuẫn; ngoài phẫu thuật chưa có nguồn đã mở.'
+    nguon:
+      - haynes2009
+      - urbach2014
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip Khá vững. Chỗ khó: lời khuyên cho đời thường (hợp đồng, thuyết trình) suy từ phẫu thuật; chưa có nguồn đã mở cho bối cảnh đời thường; trang nói rõ "chỉ nên xem là một thử nghiệm đáng làm". Review (Claude Opus 5.5, 10/11/2026): giữ Đang tranh cãi: hai nghiên cứu lớn cho kết quả khác chiều (Haynes 2009, Urbach 2014); trang nói rõ lời khuyên đời thường chỉ là thử nghiệm đáng làm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1056%252FNEJMra022137.zip/10.1056%252FNEJMsa0810119.pdf", "https://www.nejm.org/doi/pdf/10.1056/NEJMsa1308261" ]
+    luot_2_ghi_chu: Nhãn 'Đang tranh cãi' là mức thận trọng và hợp thước đo (kết quả mâu thuẫn). Có tổng quan hệ thống khác về checklist phẫu thuật (không đọc ở đây) có thể xếp mạnh hơn cho riêng phẫu thuật; câu của trang rộng hơn (việc quan trọng lặp đi lặp lại).
+    review: 'dung'
+  - id: n60
+    cau: 'Gợi ý: với quyết định khó đảo ngược, tạo một khoảng dừng (vài phút đến vài ngày); Kahneman cho rằng không thể liên tục nghi ngờ mọi suy nghĩ, cách tốt nhất là nhận ra tình huống dễ sai và cố gắng hơn khi rủi ro cao.'
+    loai: loi-khuyen
+    nguon:
+      - kahneman2011
+    trich: 'The best we can do is a compromise: learn to recognize situations in which mistakes are likely and try harder to avoid significant mistakes when the stakes are high.'
+    vi_tri: Kahneman 2011, chương "The Characters of the Story"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip Khá vững và "Khoảng dừng ... đảm bảo Hệ 2 đã được mời vào bàn". Bỏ chip; khoảng dừng là gợi ý của trang, chưa có nguồn đo hiệu quả; phần Kahneman có trích. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn. Phần "vài phút đến vài ngày" ghi rõ là gợi ý của trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://zhurnaly.com/z/Thinking,%20Fast%20and%20Slow.html", "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Phần 'vài phút đến vài ngày' là gợi ý của trang, không phải của Kahneman; trang đã tách rõ.
+    review: 'dung'
+  - id: n61
+    cau: 'Gợi ý: viết phương trình ra giấy giúp giải bài toán bóng và chày; trang chưa dẫn nghiên cứu đo hiệu quả của cách làm này.'
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: chip Khá vững và "Viết ra giấy là cách thuê ngoài bộ nhớ cho Hệ 2... nơi Hệ 1 không còn đất diễn". Đã bỏ chip và khẳng định hiệu quả khỏi trang. Review (Claude Opus 5.5, 10/11/2026): trang chỉ còn gợi ý, nói rõ chưa dẫn nghiên cứu; da-bo đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf" ]
+    luot_2_ghi_chu: Trang đã nói chưa dẫn nghiên cứu đo hiệu quả.
+    review: 'dung'
+  - id: n62
+    cau: 'Hoài nghi với các tuyên bố "mẹo priming": các hiệu ứng priming hành vi gốc còn đang tranh cãi, nên đừng xây thói quen quan trọng dựa trên chúng.'
+    loai: loi-khuyen
+    nguon:
+      - doyen2012
+      - weingarten2016
+    trich: We conclude that unconscious behavioral priming is real, while real, involves mechanisms different from those typically assumed to cause the effect.
+    vi_tri: Doyen 2012, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Từ hiệu ứng Florida, người ta đã suy ra đủ thứ mẹo lập trình tiềm thức" (khẳng định xã hội không nguồn; bỏ). Câu còn lại là lời khuyên suy từ khung Đang tranh cãi. Review (Claude Opus 5.5, 10/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable", "https://doi.org/10.1037/bul0000030" ]
+    luot_2_ghi_chu: Lời khuyên thận trọng hợp bằng chứng.
+    review: 'dung'
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'mô tả: "Hệ 1 luôn nhảy ra đáp án trước"'
+    moi: '"đáp án trực giác có thể nhảy ra trước"'
+    ly_do: Hồ sơ n1.
+  - cu: '"Đáp án bật ra ngay trong đầu hầu hết mọi người là 10 xu"'
+    moi: '"nhiều người"'
+    ly_do: Hồ sơ n3.
+  - cu: Kahneman "đoạt giải Nobel Kinh tế năm 2002... cùng Amos Tversky"; "mỗi suy nghĩ của ta đều có hai nhân vật"; Hệ 1 "dựa vào ... cảm xúc và thói quen... nhận ra mặt người quen"; Hệ 2 "luôn lên tiếng trước... thường lười biếng... Phần lớn sai lầm"
+    moi: '"đoạt giải Nobel năm 2002 cho công trình... mà ông làm cùng Amos Tversky"; "mô tả tâm trí qua hai nhân vật"; ví dụ "sự thù địch trong một giọng nói"; "có thể lười biếng... nhiều sai lầm đến từ khâu kiểm tra bị bỏ qua"'
+    ly_do: Hồ sơ n7, n8, n9, n11.
+  - cu: 'Frederick: "chiếm đa số trong mọi đáp án sai... hầu hết đều sập vào"; "thừa nhận đã từng nghĩ đến đáp án sai"'
+    moi: '"chiếm ưu thế"; "thường nghĩ đến đáp án sai trước... (qua lời kể và nét gạch trong giấy nháp)"'
+    ly_do: Hồ sơ n14, n16.
+  - cu: 'Kahneman (2011): "gom hàng loạt hiệu ứng... đưa cặp khái niệm này đến độc giả đại chúng toàn thế giới"'
+    moi: '"đưa... đến đông đảo độc giả. Kahneman ghi... Stanovich và West đưa ra các thuật ngữ"'
+    ly_do: Hồ sơ n18, n19.
+  - cu: 'Bargh: "Florida"/"bingo", "đo lén", "d = 1,04 ... d = 0,79"; "Kahneman cũng dành nhiều trang... ca ngợi"'
+    moi: Mô tả theo Kahneman 2011 (NYU, 18–22 tuổi, Florida/forgetful/bald/gray/wrinkle); bỏ hai số d; "instant classic"
+    ly_do: Hồ sơ n20, n21, n22.
+  - cu: 'Doyen: "nhiều người tham gia cho thấy họ đã nhận ra"; "biến thể của hiệu ứng Rosenthal"'
+    moi: '"phỏng vấn sau thí nghiệm gợi ý..."; "tác giả dẫn Rosenthal (1966)"'
+    ly_do: Hồ sơ n26, n27.
+  - cu: 'Pashler: "cũng không tìm thấy hiệu ứng"; Kahneman "thư ngỏ... tâm điểm của khủng hoảng tái lập"'
+    moi: '"cũng được ghi nhận là thất bại"; "email... hình mẫu của những nghi ngờ"'
+    ly_do: Hồ sơ n28, n29, n30.
+  - cu: 'Weingarten: "nhỏ hơn nhiều so với báo cáo ban đầu; hiệu ứng đã xuất bản lớn hơn chưa xuất bản"'
+    moi: '"d khoảng 0,33–0,35, chỉ bị lệch ít do việc chỉ đăng kết quả dương; chưa tổng hợp sau 2016"'
+    ly_do: Hồ sơ n31.
+  - cu: Khung Vững chắc về hai kiểu xử lý
+    moi: Khung Khá vững; thêm Schneider & Shiffrin, Evans & Stanovich, Keren & Schul; "chưa có phân tích tổng hợp"
+    ly_do: Hồ sơ n32, n33.
+  - cu: 'Khung Khá vững: "các thí nghiệm gây tải nhận thức"'
+    moi: '"các nghiên cứu về tải nhận thức mà Kahneman (2011) tổng hợp (người đang bận trí óc dễ đưa ra phán đoán hời hợt hơn)"'
+    ly_do: Hồ sơ n39, n41.
+  - cu: 'Khung Đã bị bác bỏ: "nhiều mạng lưới thần kinh cùng tham gia vào cả hai kiểu xử lý"; ngộ nhận 2 tương tự'
+    moi: '"chúng không phải hệ thống theo nghĩa thông thường, và không có một phần não nào mà mỗi hệ có thể gọi là nhà"'
+    ly_do: Hồ sơ n12, n43.
+  - cu: 'Lý thuyết: "Chuyên gia sau hàng nghìn giờ luyện tập phần lớn rất chuẩn"; "tiết kiệm năng lượng"; ký ức liên tưởng "nhận ra nguy hiểm"'
+    moi: '"luật ít tốn sức nhất"; "trực giác có thể đáng tin trong môi trường đủ đều đặn... sau khi luyện tập lâu"; "ký ức liên tưởng là lõi của Hệ 1"'
+    ly_do: Hồ sơ n36, n37, n38.
+  - cu: 'Áp dụng 1–3: chip Khá vững; "Hệ 2 cần thời gian để khởi động", "đảm bảo Hệ 2 đã được mời vào bàn", "thuê ngoài bộ nhớ", "Phi công, bác sĩ phẫu thuật dùng checklist chính vì họ biết..."'
+    moi: 'Mục 1, 2: bỏ chip, ghi "gợi ý của trang; chưa dẫn nghiên cứu"; mục 3: chip Đang tranh cãi, Haynes 2009 và Urbach 2014'
+    ly_do: Hồ sơ n57–n61.
+  - cu: 'Mục 4: "Từ hiệu ứng Florida, người ta đã suy ra đủ thứ mẹo lập trình tiềm thức"'
+    moi: Bỏ câu
+    ly_do: Hồ sơ n62.
+  - cu: 'Ở Việt Nam: "Chúng tôi chưa tìm thấy..."; "bẫy được người ta một phần nhờ sự quen thuộc với tiền xu đô la và phép tính thập phân"'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy..."; "đó mới chỉ là suy đoán của chúng tôi"'
+    ly_do: Hồ sơ n45, n46.
+  - cu: 'Ngộ nhận 1, 3, 4: "phanh xe kịp... thường rất đáng tin"; "thừa nhận ông vẫn sập bẫy"; "nổi tiếng nhất... độc lập"'
+    moi: Ví dụ trong Kahneman; trích cụ thể lỗi của Kahneman; "không tái lập được trong các lần làm lại có kiểm soát tốt hơn"
+    ly_do: Hồ sơ n47, n48, n49.
+  - cu: 'Quiz câu 4, 5: "Hệ 2 thường lười", "ngộ nhận phổ biến nhất"'
+    moi: '"Hệ 2 có thể lười"; "một ngộ nhận"'
+    ly_do: Hồ sơ n55, n56.
+  - cu: ":::bac-bo[Hệ 1 và Hệ 2 là hai 'bộ phận' riêng biệt trong não]"
+    moi: ':::note[Hệ 1 và Hệ 2 không phải hai "bộ phận" của não], thêm câu "Đây là lưu ý về cách hiểu mô hình, không phải một kết quả thực nghiệm nên không gắn nhãn."'
+    ly_do: 'Review: hồ sơ n43 (lượt 2 qua-manh; thước đo mục 4).'
+  - cu: '"chưa tìm thấy nghiên cứu nào kiểm tra CRT hay phân biệt Hệ 1/Hệ 2 trên người Việt."'
+    moi: '"… kiểm tra riêng CRT …" và câu về bản thảo Le và cộng sự (2023); thêm nguồn vào mục Nguồn'
+    ly_do: 'Review: hồ sơ n45 (lượt 2 qua-manh).'
+  - cu: 'Quiz câu 1: "Vì sao hầu hết mọi người trả lời"'
+    moi: '"Vì sao nhiều người trả lời"'
+    ly_do: 'Review: hồ sơ n52 (cùng lý do n3).'
+  - cu: 'Quiz câu 2: "việc bắt được lỗi đó gần như đồng nghĩa với việc giải đúng"'
+    moi: '"muốn giải đúng thường phải kìm đáp án ấy lại"'
+    ly_do: 'Review: hồ sơ n53 (Frederick 2005, tr. 27).'

@@ -5,13 +5,1029 @@ tang: loi
 muc: V3
 lan:
   - so: 1
-    ngay: null
+    ngay: '2026-11-10'
     nhanh: moi/d5-l2
     ma_bam: null
     nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L2 phần 2/2); bài lõi, kiểm đủ
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L2)
+      review: "Claude Sonnet 5.5 (agent review D5-L2, 10/11/2026)"
       kiem_mau: null
-nguon: []
-nhan_dinh: []
+nguon:
+  - id: kunda1990
+    ten: 'Kunda (1990), Psychol Bull 108(3), 480–498: toàn văn (Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1037/0033-2909.108.3.480
+    toan_van: true
+  - id: taber2006
+    ten: 'Taber & Lodge (2006), Am J Polit Sci 50(3), 755–769: tóm tắt (OpenAlex); toàn văn không mở được'
+    link: https://doi.org/10.1111/j.1540-5907.2006.00214.x
+    toan_van: false
+  - id: kahan2017
+    ten: 'Kahan, Peters, Dawson & Slovic (2017), Behav Public Policy 1(1), 54–86: toàn văn bản tác giả (scholarsbank.uoregon.edu)'
+    link: https://doi.org/10.1017/bpp.2016.2
+    toan_van: true
+  - id: kahan2013
+    ten: 'Kahan (2013), Judgm Decis Mak 8(4), 407–424: toàn văn (journal.sjdm.org)'
+    link: https://doi.org/10.1017/s1930297500005271
+    toan_van: true
+  - id: persson2021
+    ten: 'Persson và cộng sự (2021), Cognition 214, 104768: tóm tắt (OpenAlex/Europe PMC); toàn văn chưa mở'
+    link: https://doi.org/10.1016/j.cognition.2021.104768
+    toan_van: false
+  - id: stanovich2013
+    ten: 'Stanovich, West & Toplak (2013), Curr Dir Psychol Sci 22(4), 259–264: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1177/0963721413480174
+    toan_van: true
+  - id: guess2020
+    ten: 'Guess & Coppock (2020), Br J Polit Sci 50(4), 1497–1515: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1017/S0007123418000327
+    toan_van: false
+  - id: miller1993
+    ten: 'Miller và cộng sự (1993), J Pers Soc Psychol 64(4), 561–574: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1037/0022-3514.64.4.561
+    toan_van: true
+  - id: kuhn1996
+    ten: 'Kuhn & Lao (1996), Psychol Sci 7(2), 115–120: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1111/j.1467-9280.1996.tb00340.x
+    toan_van: true
+  - id: lord1979
+    ten: 'Lord, Ross & Lepper (1979), J Pers Soc Psychol 37(11), 2098–2109: tóm tắt (OpenAlex); chi tiết thiết kế qua Miller và cộng sự (1993). Nghiên cứu đã có trang nhà ở thien-kien-xac-nhan'
+    link: https://doi.org/10.1037/0022-3514.37.11.2098
+    toan_van: false
+  - id: frederick2005
+    ten: 'Frederick (2005), J Econ Perspect 19(4), 25–42: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1257/089533005775196732
+    toan_van: false
+  - id: ditto2019
+    ten: 'Ditto và cộng sự (2019), Perspect Psychol Sci 14(2), 273–291: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1177/1745691617746796
+    toan_van: false
+  - id: tappin2021
+    ten: 'Tappin, Pennycook & Rand (2021), J Exp Psychol Gen 150(6), 1095–1114: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/xge0000974
+    toan_van: false
+  - id: bago2023
+    ten: 'Bago, Rand & Pennycook (2023), PNAS Nexus 2(5): tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1093/pnasnexus/pgad100
+    toan_van: false
+  - id: lord1984
+    ten: 'Lord, Lepper & Preston (1984), J Pers Soc Psychol 47(6), 1231–1243: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/0022-3514.47.6.1231
+    toan_van: false
+  - id: greitemeyer2023
+    ten: 'Greitemeyer (2023), J Appl Soc Psychol 53(8), 785–795: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1111/jasp.12968
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "motivated reasoning Vietnam", "motivated reasoning Vietnamese participants", "politically motivated reasoning Vietnam", "motivated numeracy Vietnam", "identity-protective cognition Vietnam", "biased assimilation attitude polarization Vietnamese": không có nghiên cứu kiểm tra chính trị hay số học có động cơ trên người Việt'
+    link: https://api.openalex.org/works?search=motivated%20reasoning%20Vietnam
+    toan_van: false
+nhan_dinh:
+  - id: t1
+    cau: 'Mô tả: Kunda (1990) nêu rằng ta dễ đi đến kết luận mình muốn, trong giới hạn của việc dựng được lý do nghe hợp lý; ví như luật sư bào chữa hơn thẩm phán vô tư là cách nói của trang, không phải của Kunda.'
+    loai: dinh-nghia
+    nguon:
+      - kunda1990
+    trich: There is considerable evidence that people are more likely to arrive at conclusions that they want to arrive at, but their ability to do so is constrained by their ability to construct seemingly reasonable justifications for these conclusions.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Mô tả (description). Phép ẩn dụ thẩm phán/luật sư là của site. Theo G1-L02: KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Kunda (1990) nêu lập luận có động cơ: ta suy luận không như thẩm phán vô tư mà như luật sư bào chữa" -> mô tả trang nay nói đó là cách ví von của trang; nguồn chỉ cho phần "đi đến kết luận mình muốn, bị giới hạn bởi việc dựng lý do hợp lý". Thêm cả ở thân bài.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn. Ẩn dụ 'luật sư' không có trong bài Kunda, là cách diễn đạt của site; nội dung đúng.
+    review: sai
+  - id: t2
+    cau: 'Mô tả: một số nghiên cứu thấy người giỏi suy luận còn bào chữa giỏi hơn, nhưng bằng chứng này chưa chắc.'
+    loai: phat-hien
+    nguon:
+      - kahan2013
+      - persson2021
+    trich: We did not find good evidence for motivated numeracy; there are distinct patterns in our data at odds with the core predictions of the theory
+    vi_tri: Persson và cộng sự (2021), tóm tắt; Kahan 2013 (xem t30)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "và người càng giỏi suy luận đôi khi càng bào chữa giỏi hơn" (khẳng định không kèm lưu ý). Chữ mới thêm "nhưng bằng chứng này chưa chắc" theo Persson 2021 và Tappin 2021 (t32). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Persson 2021 và Tappin 2021, đã làm mềm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf", "https://osf.io/yuzfj", "https://doi.org/10.1016/j.cognition.2021.104768" ]
+    luot_2_ghi_chu: "Câu đã nói 'chưa chắc': đúng."
+    review: dung
+  - id: t3
+    cau: 'Khung "Tự trải nghiệm" (đáp án): một phản ứng đã được ghi nhận, khớp "thiên kiến phủ nhận" của Taber và Lodge (2006), là phản biện lập luận trái chiều bằng một loạt câu hỏi soi mói, chứ không phải "mình sai rồi".'
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: participants (Ps) counterargue the contrary arguments and uncritically accept supporting arguments, evidence of a disconfirmation bias.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Với hầu hết mọi người, phản ứng đầu tiên không phải là ''ồ, vậy là mình sai rồi'' — mà là một loạt câu hỏi soi mói". Bỏ "hầu hết mọi người" (không số liệu), gắn với kết quả của Taber và Lodge. Các câu hỏi mẫu (mẫu bao nhiêu, ai tài trợ) là ví dụ giả định (gia-dinh). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Phản ứng thường gặp, khớp ..." -> "Một phản ứng đã được ghi nhận, khớp ...": Taber và Lodge không đo tần suất "thường gặp" trong đời sống.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: sai
+  - id: t4
+    cau: 'Khi suy luận, ta tìm luận cứ có lợi và đánh giá bất đối xứng: phản biện lập luận trái chiều, dễ dãi với lập luận cùng phe (ẩn dụ "luật sư bào chữa").'
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: participants (Ps) counterargue the contrary arguments and uncritically accept supporting arguments, evidence of a disconfirmation bias.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Phần ẩn dụ và "toàn bộ năng lực suy luận được huy động" là diễn giải của site; phần đánh giá bất đối xứng khớp Taber và Lodge. Theo G1-L02: không nêu vấn đề.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf", "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Ẩn dụ luật sư là của site.
+  - id: t5
+    cau: Ziva Kunda gọi sự bất đối xứng này là lập luận có động cơ (motivated reasoning) trong bài tổng quan năm 1990.
+    loai: lich-su
+    nguon:
+      - kunda1990
+    trich: The case for motivated reasoning Ziva Kunda Princeton University
+    vi_tri: Trang đầu bài (Psychological Bulletin 108(3), 480–498)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "bài tổng quan nổi tiếng năm 1990". Bỏ "nổi tiếng" (không đo được). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: Kunda 1990 là bài đặt tên khung này.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t6
+    cau: 'Điểm tinh tế trong lý thuyết của Kunda: ta không thể tin bất cứ điều gì mình muốn; khả năng đó bị giới hạn bởi khả năng bịa ra một lý do nghe có vẻ hợp lý.'
+    loai: phat-hien
+    nguon:
+      - kunda1990
+    trich: their ability to do so is constrained by their ability to construct seemingly reasonable justifications for these conclusions.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t7
+    cau: 'Lập luận có động cơ và thiên kiến xác nhận giao nhau chứ không lồng nhau: lập luận có động cơ nhấn vào điều ta muốn tin và chi phối, theo Kunda, cả cách ta truy xuất, xây dựng và đánh giá niềm tin; thiên kiến xác nhận có thể xảy ra mà không cần ta muốn kết luận nào.'
+    loai: dinh-nghia
+    nguon:
+      - kunda1990
+      - taber2006
+    trich: strategies for accessing, constructing, and evaluating beliefs.
+    vi_tri: Kunda (1990), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "lập luận có động cơ còn đi xa hơn — đánh giá, bẻ cong và ghi nhớ bằng chứng theo hướng có lợi cho phe mình". Chữ mới bám tóm tắt của Kunda (accessing, constructing, evaluating beliefs); bỏ "bẻ cong" và "ghi nhớ" (không có trong tóm tắt). Thiên kiến xác nhận = "the seeking out of confirmatory evidence" (Taber 2006). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "thiên kiến xác nhận là một phần hẹp hơn" (lượt 2: hai khái niệm giao nhau chứ không lồng nhau; thiên kiến xác nhận có thể không cần động cơ, Nickerson dẫn Evans 1989). Chữ mới trên trang: "giao nhau ... không nằm gọn trong nhau".'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480", "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: "câu đúng: Theo Kunda, động cơ ảnh hưởng suy luận qua việc truy xuất, xây dựng và đánh giá niềm tin; kiểm chứng giả thuyết theo hướng xác nhận là một trong các cơ chế, còn thiên kiến xác nhận (Nickerson) cũng xảy ra khi không có động cơ, nên hai khái niệm giao nhau chứ không lồng nhau.; Phần 'chi phối cả truy xuất, xây dựng, đánh giá niềm tin' đúng theo Kunda. Nhưng 'thiên kiến xác nhận là một phần hẹp hơn' không phải kết luận của Kunda; Nickerson chỉ rõ thiên kiến xác nhận cũng xảy ra khi không có động cơ, nên hai khái niệm giao nhau, không lồng nhau."
+    review: sai
+  - id: t8
+    cau: Kunda (1990) là bài tổng quan lý thuyết trên Psychological Bulletin, gom nhiều nghiên cứu rải rác về cách động cơ ảnh hưởng đến suy luận thành một khung chung.
+    loai: lich-su
+    nguon:
+      - kunda1990
+    trich: I review a large and diverse body of research that has
+    vi_tri: Introduction (đoạn "I review …")
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02: KHỚP (kể đúng như tóm tắt gốc).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t9
+    cau: 'Kunda phân biệt hai loại động cơ: đi đến kết luận đúng (accuracy goals) và đi đến kết luận mình muốn (directional goals).'
+    loai: dinh-nghia
+    nguon:
+      - kunda1990
+    trich: those in which the motive is to arrive at an accurate conclusion, whatever it may be, and those in which the motive is to arrive at a particular, directional conclusion.
+    vi_tri: Introduction
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t10
+    cau: 'Khi động cơ muốn kết luận X chiếm ưu thế, ta dùng những niềm tin và chiến lược dễ dẫn đến X nhất, qua ba con đường: truy xuất, xây dựng và đánh giá niềm tin, kể cả tìm kiếm thiên lệch trong trí nhớ.'
+    loai: phat-hien
+    nguon:
+      - kunda1990
+    trich: directional goals lead to the use of those that are considered most likely to yield the desired conclusion.
+    vi_tri: Introduction; mục "biased memory search"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "ba con đường: tìm kiếm trong trí nhớ một cách thiên lệch, xây dựng niềm tin một cách thiên lệch, và đánh giá bằng chứng một cách thiên lệch". Chữ mới bám tóm tắt (accessing, constructing, evaluating beliefs) và nêu tìm kiếm trong trí nhớ là một dạng (bài: "biased memory search"). Tiếp trích: "this process of memory search and belief construction". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Kunda.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t11
+    cau: Ta chỉ tin được điều mình muốn khi nào dựng được một lý do biện minh nghe có vẻ hợp lý ("phanh" của lý thuyết).
+    loai: phat-hien
+    nguon:
+      - kunda1990
+    trich: their ability to do so is constrained by their ability to construct seemingly reasonable justifications for these conclusions.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t12
+    cau: Chính "phanh" này giải thích vì sao ta vừa thiên lệch vừa luôn cảm thấy mình rất có lý.
+    loai: phat-hien
+    nguon:
+      - kunda1990
+    trich: their ability to do so is constrained by their ability to construct seemingly reasonable justifications for these conclusions.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Diễn giải của site (hệ quả của t11); "luôn cảm thấy" là cách nói, ghi nhận mức diễn giải.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t13
+    cau: 'Taber và Lodge (2006): hai thí nghiệm về cách người ta đánh giá lập luận về chính sách ưu tiên và kiểm soát súng; người tham gia đọc lập luận ủng hộ và phản đối rồi đánh giá chúng.'
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: Two experimental studies explore how citizens evaluate arguments about affirmative action and gun control
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hai thí nghiệm trên sinh viên: … được biên tập để hai phía cân bằng về độ dài và cấu trúc, rồi đánh giá mức độ thuyết phục của từng lập luận". Chỉ có tóm tắt (toàn văn không mở được): "trên sinh viên" và "cân bằng về độ dài và cấu trúc" không kiểm được nên bỏ; bỏ cả "mức độ thuyết phục của từng lập luận" (tóm tắt: "evaluate arguments"). Cỡ mẫu không nêu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Taber và Lodge.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn (Study 1 N = 126, Study 2 N = 136, sinh viên Stony Brook).
+    review: dung
+  - id: t14
+    cau: Ở một phần của nghiên cứu, người tham gia được tự chọn nguồn của các lập luận mình đọc.
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: when Ps are free to self-select the source of the arguments they read.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "họ còn được tự chọn đọc lập luận từ nguồn ''cùng phe'' hay ''khác phe''"; chữ mới bám tóm tắt (tự chọn nguồn). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t15
+    cau: 'Hiệu ứng thái độ có sẵn: lập luận cùng quan điểm sẵn có được đánh giá là mạnh hơn lập luận trái quan điểm.'
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: finding strong evidence of a prior attitude effect such that attitudinally congruent arguments are evaluated as stronger than attitudinally incongruent arguments.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "lập luận cùng phe luôn được chấm là thuyết phục hơn" (bỏ "luôn"; "cùng phe" thành "cùng quan điểm sẵn có"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t16
+    cau: 'Thiên kiến phủ nhận: người đọc phản biện các lập luận trái chiều và chấp nhận lập luận cùng chiều mà không xét nét.'
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: participants (Ps) counterargue the contrary arguments and uncritically accept supporting arguments, evidence of a disconfirmation bias.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "người đọc vặn vẹo, phản biện gay gắt các lập luận trái chiều nhưng nuốt trôi …". Chữ mới bám "counterargue … uncritically accept". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t17
+    cau: 'Thiên kiến xác nhận: khi được tự chọn nguồn, người tham gia tìm bằng chứng ủng hộ quan điểm sẵn có.'
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: We also find a confirmation bias-the seeking out of confirmatory evidence-when Ps are free to self-select the source of the arguments they read.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "họ chủ động tìm đọc nguồn cùng phe". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t18
+    cau: Theo các tác giả, cả thiên kiến xác nhận lẫn thiên kiến phủ nhận đều dẫn đến phân cực thái độ (thái độ sau mạnh hơn thái độ trước).
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: Both the confirmation and disconfirmation biases lead to attitude polarization-the strengthening of t 2 over t 1 attitudes
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "sau khi đọc cả hai phía, hai phe không xích lại gần nhau mà càng xa nhau hơn — hiện tượng phân cực thái độ". Tóm tắt nói "strengthening of t2 over t1 attitudes" (thái độ mạnh hơn trước), không nói "hai phe càng xa nhau"; chữ mới bám tóm tắt. Xem t19. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích ("strengthening of t2 over t1 attitudes").'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t19
+    cau: Điều này rõ nhất ở những người có quan điểm ban đầu mạnh nhất và am hiểu chính trị nhất.
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: especially among those with the strongest priors and highest levels of political sophistication.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 3: KHỚP. Trích đủ: "Both the confirmation and disconfirmation biases lead to attitude polarization—the strengthening of t2 over t1 attitudes—especially among those with the strongest priors and highest levels of political sophistication."'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t20
+    cau: 'Kahan và cộng sự (2017): khoảng 1.100 người Mỹ trưởng thành (1.111) làm một bài toán suy luận nhân quả từ bảng số liệu 2×2.'
+    loai: so-lieu
+    nguon:
+      - kahan2017
+    trich: The subjects for the study consisted of a nationally diverse sample of 1111 U.S. adults.
+    vi_tri: Mục 3.2 (Sample)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ không nêu cỡ mẫu ("Người tham gia được cho một bảng số liệu 2×2"); chữ mới thêm "khoảng 1.100 người Mỹ trưởng thành" (1.111). Đọc bản tác giả toàn văn (scholarsbank.uoregon.edu). Review (Claude Sonnet 5.5, 10/11/2026): dung. 1.111 làm tròn "khoảng 1.100", khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf" ]
+    luot_2_ghi_chu: Đọc bản thảo của tác giả (nội dung tóm tắt khớp bản Behavioural Public Policy 2017).
+    review: dung
+  - id: t21
+    cau: Một nhóm thấy dữ liệu được giới thiệu là về thuốc trị ban da mới (chủ đề trung tính); nhóm khác thấy bảng số liệu tương tự được giới thiệu là về lệnh cấm súng.
+    loai: phat-hien
+    nguon:
+      - kahan2017
+    trich: subjects' responses became politically polarized - and even less accurate - when the same data were presented as results from the study of a gun control ban.
+    vi_tri: Tóm tắt (abstract); mục 3.3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Một nửa thấy … nửa còn lại thấy cùng một bảng số liệu đó". Thiết kế thật có bốn điều kiện (hai chủ đề, hai chiều của số liệu), nên đổi "một nửa" thành "một nhóm" và "cùng một bảng" thành "bảng tương tự". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf" ]
+    luot_2_ghi_chu: Đọc bản thảo tác giả.
+    review: dung
+  - id: t22
+    cau: Với chủ đề thuốc trị ban da, người có năng lực tính toán cao làm đúng hơn hẳn người thấp.
+    loai: phat-hien
+    nguon:
+      - kahan2017
+    trich: subjects highest in numeracy - a measure of the ability and disposition to make use of quantitative information - did substantially better than less numerate ones when the data were presented as results from a study of a new skin rash treatment.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf" ]
+    luot_2_ghi_chu: Đọc bản thảo tác giả.
+  - id: t23
+    cau: Với chủ đề lệnh cấm súng, sự phân cực chính trị không giảm ở nhóm giỏi tính toán mà còn tăng lên.
+    loai: phat-hien
+    nguon:
+      - kahan2017
+    trich: such polarization did not abate among subjects highest in numeracy; instead, it increased.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 4: kể đúng nghiên cứu gốc; lưu ý về lần làm lại đã thêm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf" ]
+    luot_2_ghi_chu: Đọc bản thảo tác giả.
+  - id: t24
+    cau: 'Các tác giả gọi đây là số học có động cơ (motivated numeracy): động cơ bảo vệ bản sắc lái cách đọc số.'
+    loai: dinh-nghia
+    nguon:
+      - kahan2017
+    trich: such polarization did not abate among subjects highest in numeracy; instead, it increased. This outcome supported ICT, which predicted that more numerate subjects would use their quantitative-reasoning capacity selectively to conform their interpretation of the data to the result most consistent with their political outlooks.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: '"ICT" = identity-protective cognition thesis. Tên "motivated numeracy" là tên bài.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf" ]
+    luot_2_ghi_chu: Đọc bản thảo tác giả.
+  - id: t25
+    cau: Một lần làm lại lớn có đăng ký trước vẫn thấy người ta đọc số theo phe, nhưng không thấy xu hướng này tăng đều theo năng lực tính toán; nó chỉ rõ ở nhóm tính toán giỏi nhất (Persson và cộng sự, 2021).
+    loai: tai-lap
+    nguon:
+      - persson2021
+    trich: there is ideologically congruent responding that is not moderated by numeracy, and (ii) when there is moderation, ideologically congruent responding occurs only at the highest levels of numeracy.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 4: đã thêm lưu ý. Bài mô tả "pre-specified analysis plan"; chỉ đọc tóm tắt (bản CC BY trên ScienceDirect chưa mở).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/j.cognition.2021.104768" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt (qua OpenAlex); Cognition 2021, đăng ký trước, quy mô lớn.
+  - id: t26
+    cau: 'Kahan (2013): khoảng 1.750 người Mỹ làm Bài kiểm tra phản xạ nhận thức (CRT) của Frederick (2005).'
+    loai: so-lieu
+    nguon:
+      - kahan2013
+    trich: Subjects for the study consisted of a nationally diverse sample of 1750 U.S. adults.
+    vi_tri: Mục 3.1 (Sample)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ không nêu cỡ mẫu; đã thêm "khoảng 1.750 người Mỹ". Đọc toàn văn (journal.sjdm.org). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích (1750).'
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t27
+    cau: CRT là bài kiểm tra phản xạ nhận thức của Frederick (2005); bài toán bóng và chày là một câu của nó.
+    loai: dinh-nghia
+    nguon:
+      - frederick2005
+    trich: This paper introduces a three-item "Cognitive Reflection Test" (CRT) as a simple measure of one type of cognitive ability
+    vi_tri: Frederick (2005), tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Frederick: ba câu hỏi; "bóng và chày" là câu đầu của CRT (kiểm ở trang tu-duy-nhanh-cham, hồ sơ phần 1). Chỉ đọc tóm tắt của Frederick; câu "chính bài toán bóng và chày" đổi thành "ở bài về hai chế độ nghĩ" để không nói "bài trước".'
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn; CRT của Frederick (2005) được Kahan dẫn.
+  - id: t28
+    cau: Sau khi làm CRT, người tham gia được cho biết một nghiên cứu (giả định) thấy người tin hay người không tin vào biến đổi khí hậu đạt điểm CRT cao hơn, rồi được hỏi CRT có đo được sự cởi mở không.
+    loai: phat-hien
+    nguon:
+      - kahan2013
+    trich: people who accept evidence of climate change tend to get more answers correct than those who reject evidence of climate change
+    vi_tri: Mục 3.3 (Experimental component)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "rồi đo mức độ suy luận theo động cơ chính trị của họ" (mơ hồ). Chữ mới mô tả đúng thiết kế (ba điều kiện: đối chứng, "skeptic-is-biased", "believer-is-biased"; câu hỏi "I think the word-problem test I just took supplies good evidence of how reflective and open-minded someone is"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp thiết kế Kahan 2013.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t29
+    cau: Người có quan điểm chính trị khác nhau đánh giá CRT khác nhau tùy kết quả được nêu.
+    loai: phat-hien
+    nguon:
+      - kahan2013
+    trich: right-wing subjects were less inclined to treat the CRT as valid (M = 2.4, SEM = 0.2), and left-wing ones more inclined to do so (M = 3.5, SEM = 0.2), when told that climate-change skeptics generally score lower on the test.
+    vi_tri: Mục 4.1 (Results)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t30
+    cau: Theo tóm tắt, những người đạt điểm CRT cao nhất lại là những người dễ thể hiện suy luận có động cơ nhất.
+    loai: phat-hien
+    nguon:
+      - kahan2013
+    trich: subjects who scored highest in cognitive reflection were the most likely to display ideologically motivated cognition.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Năng lực tư duy phản biện không bảo vệ ta khỏi thiên lệch; nó chỉ giúp ta bào chữa cho thiên lệch của mình một cách tinh vi hơn" (diễn giải mạnh hơn kết quả; CRT đo phản xạ nhận thức, không phải "tư duy phản biện"); đã bỏ và thêm lưu ý của Tappin 2021 (t32). Heading cũ "càng cao, càng dễ suy luận theo phe" đổi thành câu hỏi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t31
+    cau: 'Tappin, Pennycook và Rand (2021): khi kiểm soát niềm tin có sẵn, bản sắc chính trị vẫn có tác động trực tiếp lên suy luận.'
+    loai: phat-hien
+    nguon:
+      - tappin2021
+    trich: We observed a robust direct effect of political group identity on reasoning but found no evidence that cognitive sophistication magnified this effect.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Chỉ đọc tóm tắt (bản preprint/APA).
+    luot_2: dung
+    luot_2_nguon: [ "https://osf.io/yuzfj" ]
+    luot_2_ghi_chu: Đọc toàn văn bản thảo (JEP:General 2021).
+  - id: t32
+    cau: Tappin, Pennycook và Rand (2021) không thấy bằng chứng rõ rằng sự tinh tường nhận thức làm tăng tác động của bản sắc chính trị lên suy luận.
+    loai: phat-hien
+    nguon:
+      - tappin2021
+    trich: Our results suggest that there is currently a lack of clear empirical evidence that cognitive sophistication magnifies politically motivated reasoning as commonly understood
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Câu mới thêm ở lượt này (đoạn Kahan 2013, lý thuyết Kahan, ngộ nhận "người thông minh").
+    luot_2: dung
+    luot_2_nguon: [ "https://osf.io/yuzfj" ]
+    luot_2_ghi_chu: Đọc toàn văn bản thảo.
+  - id: t33
+    cau: 'Nhãn Khá vững: ta có xu hướng đánh giá thông tin theo hướng có lợi cho điều mình muốn tin.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - kunda1990
+      - ditto2019
+      - persson2021
+    ly_do: 'Cơ sở: tổng quan Kunda 1990; phân tích tổng hợp 51 thí nghiệm, hơn 18.000 người, thấy thiên lệch theo phe rõ (r = 0,245) và tương đương ở người thiên tả/thiên hữu (Ditto và cộng sự 2019); lần làm lại lớn có đăng ký trước vẫn thấy người ta đọc số theo phe (Persson 2021). Theo mục 4, Vững chắc cần ít nhất một phân tích tổng hợp, không có thất bại tái lập chưa giải thích, đúng ở nhiều quần thể: các nghiên cứu này chủ yếu hỏi về chính trị Mỹ và chưa mở được chi tiết mẫu của Ditto (chỉ tóm tắt), nên giữ Khá vững. Phần Persson 2021: không xác nhận số học có động cơ (xem t39).'
+    nguon:
+      - kunda1990
+      - ditto2019
+      - persson2021
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: chữ cũ là :::vung-chac với "đã được củng cố bởi hàng thập kỷ nghiên cứu tiếp theo" (không nguồn). Đổi sang :::kha-vung vì nguồn mạnh nhất là phân tích tổng hợp chủ yếu về chính trị Mỹ; lượt 2 và review cân nhắc có đủ cho Vững chắc không (phân tích tổng hợp của Ditto đã có, thiếu kiểm "nhiều quần thể"). Theo G1-L02: nhãn không bị nêu lỗi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khá vững hợp thước đo mục 4: có phân tích tổng hợp (Ditto 2019) và tái lập lớn, nhưng chủ yếu mẫu chính trị Mỹ, chưa có bằng chứng nhiều quần thể.'
+    luot_2: dung
+    luot_2_nguon: [ "https://sites.uci.edu/peterdittolab/files/2018/06/Ditto-et-al.-2018-At-Least-Bias-is-Bipartisan-A-Meta-Analytic-Comparison-of-Partisan-Bias-in-Liberals-Conservatives.pdf", "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf", "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: "Nhiều nghiên cứu cùng chiều, chủ yếu mẫu Mỹ, chưa có tái lập lớn: hợp Khá vững."
+    review: dung
+  - id: t34
+    cau: 'Ditto và cộng sự (2019): phân tích tổng hợp 51 thí nghiệm, hơn 18.000 người, thấy thiên lệch theo phe rõ (r = 0,245), tương đương ở người thiên tả (r = 0,235) và thiên hữu (r = 0,255).'
+    loai: so-lieu
+    nguon:
+      - ditto2019
+    trich: we meta-analyzed the results of 51 experimental studies, involving over 18,000 participants
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Chỉ đọc tóm tắt (toan_van: false). Trích tiếp: "Mean overall partisan bias was robust ( r = .245), and there was strong support for the symmetry hypothesis: Liberals ( r = .235) and conservatives ( r = .255) showed no difference in mean levels of bias across studies."'
+    luot_2: dung
+    luot_2_nguon: [ "https://sites.uci.edu/peterdittolab/files/2018/06/Ditto-et-al.-2018-At-Least-Bias-is-Bipartisan-A-Meta-Analytic-Comparison-of-Partisan-Bias-in-Liberals-Conservatives.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn bản chấp nhận.
+  - id: t35
+    cau: 'Nhãn Đang tranh cãi: đọc bằng chứng trái chiều có khiến hai phe càng xa nhau không?'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - taber2006
+      - lord1979
+      - miller1993
+      - kuhn1996
+      - guess2020
+    ly_do: 'Bằng chứng chất lượng cao mâu thuẫn (mục 4): Taber và Lodge (2006) thấy phân cực thái độ, rõ nhất ở người quan điểm mạnh và am hiểu chính trị; Lord và cộng sự (1979) báo cáo phân cực nhưng do tự báo cáo; Miller và cộng sự (1993) không thấy trong thiết kế trước–sau; Kuhn và Lao (1996) thấy phân cực thật có thật nhưng hiếm; Guess và Coppock (2020), ba thí nghiệm khảo sát, không thấy bằng chứng của phản tác dụng. Khớp đề xuất G1-L02 (đổi từ Khá vững sang Đang tranh cãi).'
+    nguon:
+      - taber2006
+      - lord1979
+      - miller1993
+      - kuhn1996
+      - guess2020
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 2 (ĐÁNG NGỜ): nhãn đã đổi trong trang cũ; đối chiếu lại các tóm tắt. Chữ cũ "Điều vững hơn là ta đánh giá bằng chứng thiên lệch về phía mình" giữ (t33). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp: bằng chứng chất lượng cao mâu thuẫn (Taber, Miller, Kuhn & Lao, Guess & Coppock).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1017/S0007123418000327", "https://doi.org/10.1037/0022-3514.64.4.561", "https://doi.org/10.1111/j.1467-9280.1996.tb00340.x" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi hợp thước đo. Chỉ đọc tóm tắt.
+    review: dung
+  - id: t36
+    cau: 'Lord, Ross và Lepper (1979): người ủng hộ và phản đối án tử hình xem hai nghiên cứu (giả định) và báo cáo thái độ chuyển theo hướng ban đầu; "phân cực" là do người tham gia tự báo cáo.'
+    loai: phat-hien
+    nguon:
+      - lord1979
+      - miller1993
+    trich: subjects reported that their attitudes had become more extreme in the direction of their initial point of view after evaluating the research evidence
+    vi_tri: 'Miller và cộng sự (1993), Introduction mô tả Lord 1979; Lord 1979, tóm tắt: "they reported corresponding shifts in their beliefs"'
+    ket_qua: dung
+    ghi_chu: Nghiên cứu đã có trang nhà ở thien-kien-xac-nhan; trang này chỉ nhắc một câu và link về. Chỉ đọc tóm tắt của Lord 1979; chi tiết lấy từ Miller 1993 (toàn văn).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.37.11.2098", "https://doi.org/10.1037/0022-3514.64.4.561" ]
+    luot_2_ghi_chu: Chỉ tóm tắt; Miller 1993 mô tả đây là thay đổi tự báo cáo.
+  - id: t37
+    cau: Khi đo thái độ trước và sau, Miller và cộng sự (1993) không thấy phân cực; Kuhn và Lao (1996) thấy phân cực thật là kết quả có thật nhưng hiếm gặp.
+    loai: phat-hien
+    nguon:
+      - miller1993
+      - kuhn1996
+    trich: Polarization was not indicated in a pre-post measurement design.
+    vi_tri: 'Miller và cộng sự (1993), tóm tắt; Kuhn & Lao (1996): "genuine polarization is a real but infrequent outcome of exposure to mixed evidence"'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "các lần làm lại thường không thấy (Miller …), và phân cực thật chỉ là kết quả hiếm gặp (Kuhn …)". Miller 1993 thấy phân cực khi báo cáo thay đổi (án tử hình) nhưng không thấy ở thiết kế trước–sau; không phải "các lần làm lại thường không thấy". Theo G1-L02 mục 2 đã sửa. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: Miller 1993 (thiết kế trước-sau) và Kuhn & Lao 1996 ("real but infrequent") đúng tóm tắt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.64.4.561", "https://doi.org/10.1111/j.1467-9280.1996.tb00340.x" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt.
+    review: dung
+  - id: t38
+    cau: Ba thí nghiệm khảo sát lớn gần đây không thấy bằng chứng của "phản tác dụng" (người ta đổi ý theo hướng ngược với bằng chứng trái chiều) (Guess và Coppock, 2020).
+    loai: phat-hien
+    nguon:
+      - guess2020
+    trich: three survey experiments - two on Mechanical Turk and one on a nationally representative sample - that find no evidence of backlash, even under theoretically favorable conditions.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Theo G1-L02 mục 2: KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "không thấy người ta tin chắc hơn sau khi đọc bằng chứng trái chiều" -> "không thấy bằng chứng của phản tác dụng (backlash...)": đúng chữ tóm tắt Guess và Coppock ("find no evidence of backlash").'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1017/S0007123418000327" ]
+    luot_2_ghi_chu: Chỉ tóm tắt; đăng BJPS 2020 (bản online 2018).
+    review: sai
+  - id: t39
+    cau: Điều vững hơn là ta đánh giá bằng chứng thiên lệch về phía mình.
+    loai: phat-hien
+    nguon:
+      - ditto2019
+      - persson2021
+    trich: there is ideologically congruent responding that is not moderated by numeracy
+    vi_tri: Persson và cộng sự (2021), tóm tắt; Ditto và cộng sự (2019)
+    ket_qua: dung
+    ghi_chu: Cùng cơ sở với t33.
+    luot_2: dung
+    luot_2_nguon: [ "https://sites.uci.edu/peterdittolab/files/2018/06/Ditto-et-al.-2018-At-Least-Bias-is-Bipartisan-A-Meta-Analytic-Comparison-of-Partisan-Bias-in-Liberals-Conservatives.pdf", "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t40
+    cau: 'Nhãn Đang tranh cãi: ranh giới giữa suy luận có động cơ và đánh giá hợp lý.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - tappin2021
+      - bago2023
+    ly_do: 'Nhiều thiết kế thí nghiệm lẫn bản sắc chính trị với niềm tin có sẵn; khi kiểm soát niềm tin có sẵn, Tappin và cộng sự (2021, ba nghiên cứu) vẫn thấy tác động trực tiếp của bản sắc; Bago và cộng sự (2023, thao túng mức suy luận) không thấy hỗ trợ cho việc suy luận nhiều hơn làm tăng tác động bản sắc. Nghiên cứu chất lượng cao, giải thích còn mâu thuẫn; mục 4: Đang tranh cãi.'
+    nguon:
+      - tappin2021
+      - bago2023
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ của khung: câu hỏi mở không nguồn ("Các nhà nghiên cứu còn tranh luận … Một nghiên cứu về vaccine xứng đáng bị soi kỹ hơn … độ giòn của bánh quy"). Chữ mới có nguồn Tappin 2021 và Bago 2023; bỏ ví dụ vaccine/bánh quy (giả định). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp: nghiên cứu chất lượng cao, giải thích còn mâu thuẫn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://osf.io/yuzfj", "https://doi.org/10.1093/pnasnexus/pgad100" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi hợp thước đo (bằng chứng chất lượng cao mâu thuẫn).
+    review: dung
+  - id: t41
+    cau: Bago và cộng sự (2023), về biến đổi khí hậu, không thấy hỗ trợ cho việc suy luận nhiều hơn làm tăng tác động của bản sắc chính trị so với các cách giải thích khác.
+    loai: phat-hien
+    nguon:
+      - bago2023
+    trich: The results provide no support for the politically motivated system 2 reasoning account over other accounts
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Chỉ đọc tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1093/pnasnexus/pgad100" ]
+    luot_2_ghi_chu: Đọc tóm tắt (PNAS Nexus 2023).
+  - id: t42
+    cau: 'Nhãn Đã bị bác bỏ: cứ đưa đủ sự thật là người ta sẽ đổi ý (bác bỏ ý "chỉ cần đủ sự thật là đủ", không bác bỏ việc thông tin có tác dụng).'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - kahan2017
+      - persson2021
+      - taber2006
+      - guess2020
+      - tappin2021
+    ly_do: 'Các kiểm tra liên tiếp cho thấy đánh giá thông tin lệch theo phe ngay cả khi có dữ liệu: người giỏi tính toán hơn không bớt phân cực (Kahan 2017), lần làm lại vẫn thấy đọc số theo phe (Persson 2021), bản sắc chính trị có tác động trực tiếp lên suy luận (Tappin 2021), người có quan điểm mạnh phản biện lập luận trái chiều (Taber 2006). Giới hạn: Guess và Coppock (2020) không thấy phản tác dụng, tức thông tin không vô ích; khung nói "không đủ" chứ không nói "vô ích". Khẳng định tuyệt đối "cứ đưa đủ sự thật là người ta sẽ đổi ý" không đứng được.'
+    nguon:
+      - kahan2017
+      - persson2021
+      - taber2006
+      - guess2020
+      - tappin2021
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: bác bỏ khẳng định tuyệt đối, không bác bỏ việc thông tin có tác dụng. Chữ cũ: "Mô hình thiếu thông tin … quá đơn giản. Thông tin mới thường chỉ làm người ta nhích quan điểm một chút" (không nguồn). Chữ mới thay bằng Kahan 2017, Persson 2021, Taber 2006, Guess 2020. Theo G1-L02 mục 3: khung phải sửa lý do (Taber và Lodge không nói "mọi người" cùng đọc một bộ bằng chứng). Lượt 2 cân nhắc đổi thành Đang tranh cãi. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: chỉ có ý chính "cứ đưa đủ sự thật là người ta sẽ đổi ý" -> thêm câu mở khung: điều bị bác bỏ là ý "chỉ cần đủ sự thật là đủ", không phải "thông tin vô ích" (theo lượt 2; Guess và Coppock không thấy phản tác dụng).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0963662506070159", "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf", "https://doi.org/10.1016/j.cognition.2021.104768", "https://doi.org/10.1017/S0007123418000327" ]
+    luot_2_ghi_chu: "Nhãn 'Đã bị bác bỏ' nói về ý 'chỉ cần đủ sự thật thì sẽ đổi ý': kiến thức chỉ tương quan yếu với thái độ, người giỏi tính toán vẫn đọc số theo phe. Nhưng thông tin có tác dụng khiêm tốn (Guess & Coppock không thấy phản tác dụng), nên đúng ở chỗ 'không đủ', không phải 'vô ích'. Chỉ đọc tóm tắt Allum, Persson."
+    review: sai
+  - id: t43
+    cau: 'Kunda phân biệt hai loại mục tiêu: đúng và đạt kết luận mình muốn; mục tiêu chính xác dùng niềm tin và chiến lược hợp lý nhất, mục tiêu định hướng dùng những cái dễ dẫn đến kết luận mong muốn.'
+    loai: dinh-nghia
+    nguon:
+      - kunda1990
+    trich: accuracy goals lead to the use of those beliefs and strategies that are considered most appropriate, whereas directional goals lead to the use of those that are considered most likely to yield the desired conclusion.
+    vi_tri: Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Não ta luôn cân giữa hai mục tiêu: đúng và muốn. Khi cái giá của việc sai là thấp nhưng cái giá của việc đổi ý là cao (mất mặt, phản bội nhóm của mình, thừa nhận bao năm qua mình ngu), cán cân nghiêng về phía muốn. Ta không chọn thiên lệch một cách có ý thức — các chiến lược … chạy gần như tự động." Phần "mất mặt, phản bội nhóm, mình ngu" và "gần như tự động" không có trong Kunda; đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích Kunda.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t44
+    cau: Theo Kunda, các nghiên cứu thường tạo mục tiêu chính xác bằng cách tăng cái giá của việc phán đoán sai.
+    loai: phat-hien
+    nguon:
+      - kunda1990
+    trich: accuracy goals are typically created by increasing the stakes involved in making a wrong judgment or in drawing the wrong conclusion
+    vi_tri: Introduction (mục "Reasoning Driven by Accuracy Goals")
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t45
+    cau: 'Nhận thức bảo vệ bản sắc (Kahan): trong các tranh cãi công cộng (biến đổi khí hậu, bạo lực súng đạn, an ninh quốc gia), niềm tin của ta là dấu hiệu lòng trung thành với nhóm; đổi ý đe dọa vị trí trong cộng đồng.'
+    loai: phat-hien
+    nguon:
+      - kahan2013
+    trich: ideologically motivated cognition as a form of information processing that promotes individuals' interests in forming and maintaining beliefs that signify their loyalty to important affinity groups.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(vaccine, biến đổi khí hậu, kiểm soát súng)": vaccine không có trong tóm tắt của Kahan 2013 (có climate change, gun violence, national security); chữ mới theo nguồn. "Huy hiệu" là ẩn dụ của site; "đe dọa vị trí của ta trong cộng đồng" là diễn giải của site (từ "loyalty to important affinity groups"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Kahan 2013; "huy hiệu" và "đe dọa vị trí" là diễn giải của trang, câu tiếp theo mở bằng "Theo luận điểm này".'
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t46
+    cau: Theo luận điểm bảo vệ bản sắc, năng lực suy luận được huy động để bảo vệ huy hiệu đó, và người giỏi suy luận có thể bảo vệ giỏi hơn (Kahan và cộng sự, 2017); lần làm lại năm 2021 chưa xác nhận rõ.
+    loai: phat-hien
+    nguon:
+      - kahan2017
+      - persson2021
+    trich: We did not find good evidence for motivated numeracy
+    vi_tri: Persson và cộng sự (2021), tóm tắt; Kahan 2017, tóm tắt (ICT)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Vì vậy, năng lực suy luận được huy động để bảo vệ huy hiệu đó, và người giỏi suy luận có khi còn bảo vệ giỏi hơn, như Kahan và cộng sự (2017) đã đo được (dù lần làm lại năm 2021 chưa xác nhận rõ)". Chữ mới: "Theo luận điểm này …" (quy cho luận điểm), thêm Tappin 2021. Theo G1-L02 mục 4. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp, đã quy cho luận điểm và nêu lần làm lại.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf", "https://doi.org/10.1016/j.cognition.2021.104768" ]
+    luot_2_ghi_chu: Phần 2021 chỉ đọc tóm tắt.
+    review: dung
+  - id: t47
+    cau: 'Stanovich, West và Toplak (2013): thiên lệch phe mình (myside bias) liên quan rất ít đến trí thông minh; người thông minh hơn không hẳn ít thiên lệch hơn.'
+    loai: phat-hien
+    nguon:
+      - stanovich2013
+    trich: The magnitude of the myside bias shows very little relation to intelligence.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0963721413480174" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt (Current Directions in Psychological Science 2013).
+  - id: t48
+    cau: 'Gợi ý 1: viết ra một bằng chứng cụ thể mà nếu tồn tại sẽ khiến bạn bỏ quan điểm hiện tại; không nghĩ ra thì có thể nên xem lại mình đang tìm sự thật hay bảo vệ lập trường (gợi ý của site, không phải kết quả nghiên cứu).'
+    loai: loi-khuyen
+    nguon:
+      - lord1984
+    trich: Individuals who are induced to consider the opposite, therefore, should display less bias in social judgment.
+    vi_tri: Lord, Lepper & Preston (1984), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: tiêu đề kèm chip :nhan[kha-vung]; "Nếu bạn không nghĩ ra được bằng chứng nào như vậy, đó là dấu hiệu bạn đang bảo vệ bản sắc chứ không phải đang tìm sự thật — vì một niềm tin không thể bị bác bỏ …". Chữ mới bỏ chip, ghi "gợi ý của chúng tôi", nói "có thể". Nguồn chỉ liên quan (consider the opposite), không kiểm trực tiếp cách này. Review (Claude Sonnet 5.5, 10/11/2026): dung. Là gợi ý của trang, nói rõ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231" ]
+    luot_2_ghi_chu: Khớp tinh thần 'xét điều ngược lại'; đã ghi rõ nguồn là site.
+    review: dung
+  - id: t49
+    cau: 'Gợi ý 2 (chip Khá vững): cân nhắc điều ngược lại giúp giảm thiên lệch khi đánh giá bằng chứng.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - lord1984
+      - greitemeyer2023
+    ly_do: 'Lord, Lepper và Preston (1984), hai thí nghiệm: chỉ dẫn "consider the opposite" sửa thiên lệch đánh giá bằng chứng tốt hơn lời dặn "hãy công bằng"; Greitemeyer (2023), hai nghiên cứu (N = 262 và 250): "considering the opposite had a corrective effect on biased assimilation and perceived attitude polarization", dù các cách sửa khác cho kết quả lẫn lộn. Ít nghiên cứu, mẫu Mỹ/Đức, chưa có phân tích tổng hợp: theo mục 4 chỉ Khá vững.'
+    nguon:
+      - lord1984
+      - greitemeyer2023
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: chỉ vài nghiên cứu, không có phân tích tổng hợp; "viết lập luận mạnh nhất cho phe kia" (steelmanning) là vận dụng của site chưa được kiểm riêng. Lượt 2 cân nhắc bỏ chip hay giữ Khá vững. Chữ cũ: chip :nhan[kha-vung] cho "Thử đảo vai: bào chữa cho phía bên kia", "Hệ 2 … liều thuốc trực tiếp cho thiên kiến phủ nhận". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khá vững hợp: hai thí nghiệm (Lord 1984; Greitemeyer 2023), chưa có phân tích tổng hợp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231", "https://doi.org/10.1111/jasp.12968" ]
+    luot_2_ghi_chu: Nhãn Khá vững hợp.
+    review: dung
+  - id: t50
+    cau: Lord, Lepper và Preston (1984) thấy chỉ dẫn "hãy cân nhắc điều ngược lại" giảm thiên lệch khi đánh giá bằng chứng nhiều hơn lời dặn "hãy công bằng".
+    loai: phat-hien
+    nguon:
+      - lord1984
+    trich: In both experiments the induction of a consider-the-opposite strategy had greater corrective effect than more demand-laden alternative instructions to be as fair and unbiased as possible.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: Chỉ đọc tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt.
+  - id: t51
+    cau: Một nghiên cứu năm 2023 về COVID-19 thấy cân nhắc điều ngược lại sửa được phần nào thiên lệch, dù các cách sửa khác cho kết quả lẫn lộn (Greitemeyer, 2023).
+    loai: phat-hien
+    nguon:
+      - greitemeyer2023
+    trich: Whereas considering the opposite had a corrective effect on biased assimilation and perceived attitude polarization, counter explanation depolarized actual attitude change.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Chỉ đọc tóm tắt. Trích đầu: "evidence for overcoming these biases was mixed."'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/jasp.12968" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt.
+  - id: t52
+    cau: Viết ra lập luận mạnh nhất cho quan điểm mình phản đối ("steelmanning") là một cách vận dụng ý này; chúng tôi không tìm thấy nghiên cứu nào kiểm tra riêng cách ấy.
+    loai: loi-khuyen
+    nguon:
+      - lord1984
+    trich: 'Subjects were induced to consider the opposite in two ways: through explicit instructions to do so and through stimulus materials that made opposite possibilities more salient.'
+    vi_tri: Lord, Lepper & Preston (1984), tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Vận dụng của site, đã ghi rõ trên trang. Chưa tìm Google Scholar cho "steelmanning" thực nghiệm; chỉ OpenAlex trong phiên này (chưa ghi lại truy vấn). Review (Claude Sonnet 5.5, 10/11/2026): dung. Là vận dụng của trang, nói rõ chưa có nghiên cứu riêng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231" ]
+    luot_2_ghi_chu: Câu đã rào 'chúng tôi không tìm thấy'. Kiểm 10/11/2026.
+    review: dung
+  - id: t53
+    cau: 'Gợi ý 3: khi nổi nóng vì một số liệu, tự hỏi giận vì số liệu sai hay vì nó khiến "phe mình" trông tệ; phân biệt được giúp biết mình đang xét số liệu hay bảo vệ bản sắc (gợi ý của site).'
+    loai: loi-khuyen
+    nguon:
+      - kahan2013
+    trich: ideologically motivated cognition as a form of information processing that promotes individuals' interests in forming and maintaining beliefs that signify their loyalty to important affinity groups.
+    vi_tri: Kahan (2013), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cơn giận thuộc loại thứ hai là tín hiệu cho thấy nhận thức bảo vệ bản sắc đang lái xe. Đặt tên được cho cảm xúc đó đã là một nửa của việc kiểm soát nó." (không nguồn; "một nửa" là cách nói). Chữ mới nói là gợi ý của chúng tôi; nguồn chỉ cho tiền đề (bản sắc nhóm). Review (Claude Sonnet 5.5, 10/11/2026): dung. Là gợi ý của trang, nói rõ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://journal.sjdm.org/13/13313/jdm13313.pdf" ]
+    luot_2_ghi_chu: Câu đã ghi rõ là gợi ý của site; không mâu thuẫn bằng chứng.
+    review: dung
+  - id: t54
+    cau: 'Gợi ý 4: tìm người cùng quan điểm nhưng có tiếng là công bằng với bằng chứng ("Hệ 2 thuê ngoài").'
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Tìm người cùng phe nhưng trung thực … Họ là Hệ 2 thuê ngoài đáng tin cậy nhất của bạn." Không có nguồn cho lời khuyên hay cho "đáng tin cậy nhất"; đã bỏ cả mục. Review (Claude Sonnet 5.5, 10/11/2026): dung. Mục đã bỏ khỏi trang vì không có nguồn; đúng, trang nay còn ba gợi ý và câu mở nói "vài gợi ý".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0963721413480174" ]
+    luot_2_ghi_chu: Lời khuyên hợp lý, không khẳng định kết quả nghiên cứu.
+    review: dung
+  - id: t55
+    cau: 'Câu mở đầu mục: chúng tôi không biết cách nào tắt hẳn được lập luận có động cơ, nhưng có vài gợi ý giúp nhận ra khi nào mình đang bào chữa thay vì xét xử.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Không có công tắc nào tắt được lập luận có động cơ, nhưng …" (khẳng định không nguồn). Chữ mới là phát biểu của site về điều site không biết; số gợi ý nay còn ba (đã bỏ mục 4). Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu trên trang khớp ("Chúng tôi không biết cách nào tắt hẳn ...").'
+    review: dung
+  - id: t56
+    cau: Taber và Lodge (2006) hỏi về hai chủ đề chính trị Mỹ (kiểm soát súng, chính sách ưu tiên); Kahan và cộng sự (2017) khảo sát người Mỹ trưởng thành; Kunda (1990) là bài tổng quan của một tác giả ở Đại học Princeton (Mỹ).
+    loai: phat-hien
+    nguon:
+      - taber2006
+      - kahan2017
+      - kunda1990
+    trich: affirmative action and gun control
+    vi_tri: Taber 2006, tóm tắt; Kahan 2017, mục 3.2; Kunda, trang đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Các nghiên cứu then chốt — Kunda (1990), Taber và Lodge (2006), Kahan và cộng sự (2017) — đều thực hiện ở Mỹ, trên các chủ đề chính trị Mỹ". Kunda là bài tổng quan (không phải thí nghiệm ở Mỹ trên chủ đề Mỹ); tóm tắt Taber không nêu nơi tuyển mẫu. Chữ mới nói đúng phạm vi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf", "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf", "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn từng bài.
+    review: dung
+  - id: t57
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu công bố nào kiểm tra lập luận có động cơ về chính trị hay số học có động cơ trên người Việt.
+    loai: thoi-su
+    het_han: '2028-11-01'
+    nguon:
+      - tim-kiem-vn
+    ket_qua: dung
+    ghi_chu: 'Tìm trên OpenAlex ngày 10/11/2026: "motivated reasoning Vietnam", "motivated reasoning Vietnamese participants", "politically motivated reasoning Vietnam", "motivated numeracy Vietnam", "identity-protective cognition Vietnam", "biased assimilation attitude polarization Vietnamese": không có nghiên cứu kiểm tra chính trị hay số học có động cơ trên người Việt. Có một mục đăng ký thử nghiệm (Kiesel, AEA RCT Registry rct.10541, "Biased Beliefs, Motivated Reasoning, and Consumer Valuation of Vegetable Labels in Vietnam", 2022) về nhãn rau của người tiêu dùng: không phải chính trị hay số học, và không thấy bài có kết quả. Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra lập luận có động cơ hay số học có động cơ trên người Việt." (không mốc, không hạn; phạm vi rộng hơn nên mục đăng ký trên có thể là ngoại lệ; đã thu hẹp sang chính trị và số học). Chưa tìm Google Scholar hay tạp chí trong nước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.71374/jfar.v26.i2.75" ]
+    luot_2_ghi_chu: Kiểm ngày 10/11/2026. Chỉ có một mục đăng ký thử nghiệm về niềm tin lệch và nhãn rau ở Việt Nam (2022), không phải chính trị hay số học.
+  - id: t58
+    cau: 'Dự đoán (suy luận của site): nếu niềm tin là dấu hiệu lòng trung thành với nhóm, thì ở những nền văn hóa coi trọng hòa hợp tập thể và "giữ thể diện", động cơ này có thể mạnh hơn; cần nghiên cứu thực nghiệm trên người Việt.'
+    loai: phat-hien
+    nguon:
+      - kahan2013
+    trich: ideologically motivated cognition as a form of information processing that promotes individuals' interests in forming and maintaining beliefs that signify their loyalty to important affinity groups.
+    vi_tri: 'Kahan (2013), tóm tắt (tiền đề: lòng trung thành với nhóm)'
+    ket_qua: da-sua
+    ghi_chu: 'Suy luận của site, đã ghi rõ trên trang. Chữ cũ: "ở những nền văn hóa coi trọng hòa hợp tập thể … có thể khiến hiệu ứng này mạnh hơn … chúng tôi sẽ cập nhật bài này khi có dữ liệu" (có lời hứa cập nhật, đã bỏ). Nguồn chỉ cho tiền đề, không cho phần văn hóa. Review (Claude Sonnet 5.5, 10/11/2026): dung. Là dự đoán của trang, ghi rõ; không có nguồn cho phần văn hóa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/1088868306294587" ]
+    luot_2_ghi_chu: Câu tự ghi là dự đoán, và nói cần nghiên cứu.
+    review: dung
+  - id: t59
+    cau: 'Ngộ nhận: người thông minh, học cao thì không bị. Stanovich và cộng sự (2013) thấy thiên lệch phe mình liên quan rất ít đến trí thông minh; Kahan (2013) thấy người điểm CRT cao nhất dễ suy luận theo động cơ nhất, nhưng Tappin và cộng sự (2021) không thấy bằng chứng rõ cho việc sự tinh tường làm tăng hiệu ứng này.'
+    loai: phat-hien
+    nguon:
+      - stanovich2013
+      - kahan2013
+      - tappin2021
+    trich: The magnitude of the myside bias shows very little relation to intelligence.
+    vi_tri: Stanovich (2013), tóm tắt; Kahan (2013); Tappin (2021)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ngược lại mới đúng một nửa: Kahan (2013) cho thấy … Trí thông minh không miễn nhiễm — nó chỉ giúp bạn bào chữa tinh vi hơn." Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Stanovich 2013, Kahan 2013, Tappin 2021.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0963721413480174", "https://journal.sjdm.org/13/13313/jdm13313.pdf", "https://osf.io/yuzfj" ]
+    luot_2_ghi_chu: Đúng các nguồn đã mở.
+    review: dung
+  - id: t60
+    cau: 'Ngộ nhận: lập luận có động cơ nghĩa là cố tình nói dối. Không: Kunda mô tả quá trình dựng lý do nghe hợp lý; Kahan (2013) mô tả áp lực này là vô thức (unconscious pressure); người đọc phản biện lập luận trái chiều và chấp nhận lập luận cùng chiều mà không xét nét.'
+    loai: phat-hien
+    nguon:
+      - kahan2013
+      - kunda1990
+    trich: less likely to avoid the unconscious pressure to fit their assessments of the evidence at hand
+    vi_tri: Kahan (2013), mục 3.3 (Hypotheses); Kunda, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Phần lớn quá trình diễn ra ngoài ý thức: bạn thực sự cảm thấy nghiên cứu trái chiều kia có vấn đề … Vấn đề là bạn không bao giờ áp dụng cùng tiêu chuẩn đó cho nghiên cứu cùng chiều." "Phần lớn … ngoài ý thức" không có trong Kunda; Kahan 2013 nói "unconscious pressure". "Không bao giờ" thay bằng kết quả của Taber (t16). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Kahan 2013 ("unconscious pressure") và Taber.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480", "https://journal.sjdm.org/13/13313/jdm13313.pdf", "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn Kahan 2013 (có chữ 'unconscious pressure').
+    review: dung
+  - id: t61
+    cau: 'Ngộ nhận: chỉ phe bên kia mới thiên lệch. Phân tích tổng hợp 51 thí nghiệm (Ditto và cộng sự, 2019) thấy mức thiên lệch theo phe tương đương ở người thiên tả và thiên hữu.'
+    loai: phat-hien
+    nguon:
+      - ditto2019
+    trich: Liberals ( r = .235) and conservatives ( r = .255) showed no difference in mean levels of bias across studies.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "mỗi phe đều thấy rõ sự thiên lệch của phe kia và mù tịt sự thiên lệch của phe mình. Nếu bạn chưa bao giờ nghi ngờ sự khách quan của chính mình, đó không phải bằng chứng bạn khách quan." (không nguồn); thay bằng Ditto 2019. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Ditto 2019 (r = .235 và .255, không khác biệt).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sites.uci.edu/peterdittolab/files/2018/06/Ditto-et-al.-2018-At-Least-Bias-is-Bipartisan-A-Meta-Analytic-Comparison-of-Partisan-Bias-in-Liberals-Conservatives.pdf" ]
+    luot_2_ghi_chu: Có phản biện của Baron & Jost (2019) nhưng kết quả phân tích đúng như câu.
+    review: dung
+  - id: t62
+    cau: 'Ngộ nhận: tin điều vô lý vì thiếu thông tin. Mô hình "thiếu thông tin" một mình không đủ giải thích: người giỏi tính toán hơn không bớt phân cực (Kahan 2017) và người ta vẫn đọc số theo phe (Persson 2021); nhưng thông tin không vô ích (Guess và Coppock 2020 không thấy "phản tác dụng").'
+    loai: phat-hien
+    nguon:
+      - kahan2017
+      - persson2021
+      - guess2020
+    trich: such polarization did not abate among subjects highest in numeracy; instead, it increased.
+    vi_tri: Kahan 2017, tóm tắt; Persson 2021; Guess 2020
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Mô hình thiếu thông tin đã bị bác bỏ: trong các thí nghiệm trên, cùng một lập luận được mỗi phe chấm điểm rất khác nhau. Thêm thông tin vào một bộ não đang ở chế độ bào chữa đôi khi chỉ cung cấp thêm đạn dược cho nó." Bỏ "đã bị bác bỏ" (xem nhãn t42) và "đạn dược" (ẩn dụ không nguồn). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf", "https://doi.org/10.1016/j.cognition.2021.104768", "https://doi.org/10.1017/S0007123418000327" ]
+    luot_2_ghi_chu: Đúng các nguồn.
+    review: dung
+  - id: t63
+    cau: 'Đọc thêm: link /psyche/kham-pha/tu-duy/thien-kien-xac-nhan/ ("Vì sao ta chỉ thấy điều mình muốn thấy?") — thiên kiến xác nhận.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: trang thien-kien-xac-nhan có trong src/data/trang.yml (kham-pha/tu-duy), tiêu đề đúng; tests/link.test.mjs kiểm link. Link cũng có ở đoạn "Điều gì đang xảy ra?" và khung Đang tranh cãi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Link đúng, trang có trong trang.yml.'
+    review: dung
+  - id: t64
+    cau: 'Đọc thêm: link /psyche/kham-pha/tu-duy/tu-duy-nhanh-cham/ ("Não có hai chế độ nghĩ?") — Hệ 1 và Hệ 2 của Kahneman.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: trang tu-duy-nhanh-cham có trong trang.yml, tiêu đề đúng "Não có hai chế độ nghĩ?"; bài toán bóng và chày (câu CRT) có ở trang đó (dòng "Bài toán bóng và chày này là câu đầu tiên trong bài kiểm tra nổi tiếng của Shane Frederick (2005)"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Link đúng, trang có trong trang.yml, tiêu đề khớp.'
+    review: dung
+  - id: t65
+    cau: 'Quiz 1: điểm khác biệt cốt lõi: thẩm phán cân nhắc bằng chứng để đi đến kết luận, còn luật sư đã có sẵn kết luận cần bảo vệ rồi mới đi tìm bằng chứng phục vụ nó; lập luận có động cơ là thứ tự bị đảo ngược.'
+    loai: dinh-nghia
+    nguon:
+      - kunda1990
+    trich: The motivation to be accurate enhances use of those beliefs and strategies that are considered most appropriate, whereas the motivation to arrive at particular conclusions enhances use of those that are considered most likely to yield the desired conclusion.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Phép ẩn dụ là của site. Theo G1-L02: đáp án khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Quiz diễn giải đúng ý Kunda; ẩn dụ là của site.
+  - id: t66
+    cau: 'Quiz 2: theo Kunda (1990), điều giới hạn khả năng "tin điều mình muốn" là khả năng dựng được một lý do biện minh nghe có vẻ hợp lý.'
+    loai: phat-hien
+    nguon:
+      - kunda1990
+    trich: their ability to do so is constrained by their ability to construct seemingly reasonable justifications for these conclusions.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02: đáp án khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.108.3.480" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: t67
+    cau: 'Quiz 3: với bảng số liệu về lệnh cấm súng, nhóm giỏi tính toán nhất phân cực mạnh nhất; một lần làm lại năm 2021 chưa xác nhận rõ phần "càng giỏi càng lái khéo".'
+    loai: phat-hien
+    nguon:
+      - kahan2017
+      - persson2021
+    trich: such polarization did not abate among subjects highest in numeracy; instead, it increased.
+    vi_tri: Kahan 2017, tóm tắt; Persson 2021, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L02 mục 4: lưu ý đã thêm vào lời giải thích. Chữ "nhóm giỏi nhất phân cực mạnh nhất" bám "polarization did not abate among subjects highest in numeracy; instead, it increased".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf", "https://doi.org/10.1016/j.cognition.2021.104768" ]
+    luot_2_ghi_chu: Đúng.
+  - id: t68
+    cau: 'Quiz 4: trong Taber và Lodge (2006), thái độ của người tham gia trở nên mạnh hơn trước (phân cực thái độ), rõ nhất ở người có quan điểm ban đầu mạnh nhất và am hiểu chính trị nhất; thiên kiến phủ nhận: phản biện bằng chứng trái chiều, dễ dãi với bằng chứng cùng chiều.'
+    loai: phat-hien
+    nguon:
+      - taber2006
+    trich: especially among those with the strongest priors and highest levels of political sophistication.
+    vi_tri: Tóm tắt (abstract)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hai phe càng xa nhau hơn (phân cực thái độ) …"; câu hỏi "đọc các lập luận ủng hộ và phản đối được cân bằng"; giải thích "rồi kết luận rằng mình càng có lý hơn trước". Chữ mới bám tóm tắt (thái độ mạnh hơn); bỏ "được cân bằng" (không kiểm được) và vế "càng có lý hơn". Phương án nhiễu: "trung lập hơn", "đổi sang phía có lập luận dài hơn". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích Taber và Lodge.'
+    luot_2: dung
+    luot_2_nguon: [ "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: t69
+    cau: 'Quiz 5: mô hình "thiếu thông tin" không đủ để giải thích, vì người có quan điểm khác nhau đánh giá thông tin lệch theo phe, kể cả người giỏi tính toán; nếu cách đánh giá đã lệch theo phe, thêm thông tin chưa chắc làm người ta đổi ý, nhưng không có nghĩa thông tin vô ích.'
+    loai: phat-hien
+    nguon:
+      - kahan2017
+      - persson2021
+      - guess2020
+    trich: such polarization did not abate among subjects highest in numeracy; instead, it increased.
+    vi_tri: Kahan 2017; Persson 2021; Guess 2020
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: câu hỏi "… bị bác bỏ?", đáp án "cùng một lập luận được mỗi phe đánh giá rất khác nhau, và người có quan điểm mạnh còn có thể cứng rắn hơn", giải thích "đôi khi chỉ cung cấp thêm đạn dược cho nó, chứ không làm nó đổi phe". Đã đổi như trong t62 (xem khung t42). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.engineering.iastate.edu/~shermanp/STAT447/Lectures/Motivated%20Numeracy%20by%20Kahan%20et%20al.pdf", "https://doi.org/10.1016/j.cognition.2021.104768", "https://doi.org/10.1017/S0007123418000327" ]
+    luot_2_ghi_chu: Diễn giải khớp.
+    review: dung
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Mô tả: "người càng giỏi suy luận đôi khi càng bào chữa giỏi hơn"'
+    moi: '"Một số nghiên cứu thấy người giỏi suy luận còn bào chữa giỏi hơn, nhưng bằng chứng này chưa chắc."'
+    ly_do: Hồ sơ t2.
+  - cu: 'Tự trải nghiệm: "Với hầu hết mọi người, phản ứng đầu tiên không phải là …"'
+    moi: '"Phản ứng thường gặp, khớp với thiên kiến phủ nhận mà Taber và Lodge (2006) mô tả …"'
+    ly_do: Hồ sơ t3.
+  - cu: '"bài tổng quan nổi tiếng năm 1990"; "đánh giá, bẻ cong và ghi nhớ"'
+    moi: '"bài tổng quan năm 1990"; "truy xuất, xây dựng và đánh giá niềm tin"'
+    ly_do: Hồ sơ t5, t7, t10.
+  - cu: 'Taber và Lodge: "hai thí nghiệm trên sinh viên … cân bằng về độ dài và cấu trúc"; "hai phe … càng xa nhau hơn"; "luôn"; "vặn vẹo, phản biện gay gắt"'
+    moi: bám tóm tắt (thái độ mạnh hơn trước; tự chọn nguồn; "phản biện … chấp nhận không xét nét")
+    ly_do: Hồ sơ t13–t19.
+  - cu: 'Kahan 2017: "Một nửa … nửa còn lại thấy cùng một bảng số liệu"; không nêu cỡ mẫu'
+    moi: '"Khoảng 1.100 người Mỹ trưởng thành"; "một nhóm … nhóm khác … bảng tương tự"'
+    ly_do: Hồ sơ t20, t21.
+  - cu: 'Kahan 2013: "Năng lực tư duy phản biện không bảo vệ ta … bào chữa … tinh vi hơn"; heading "càng cao, càng dễ suy luận theo phe"'
+    moi: Mô tả đúng thiết kế (1.750 người, ba điều kiện); heading dạng câu hỏi; thêm lưu ý của Tappin 2021
+    ly_do: Hồ sơ t26–t32.
+  - cu: Khung Vững chắc "ta có xu hướng suy luận theo hướng bảo vệ kết luận mình muốn" (không nguồn)
+    moi: Khung Khá vững "ta có xu hướng đánh giá thông tin theo hướng có lợi cho điều mình muốn tin" + Ditto 2019, Persson 2021
+    ly_do: Hồ sơ t33, t34.
+  - cu: 'Khung Đang tranh cãi (phân cực): "các lần làm lại thường không thấy (Miller …)"'
+    moi: '"Miller và cộng sự (1993) không thấy phân cực" (thiết kế trước–sau); Kuhn và Lao: "có thật nhưng hiếm"'
+    ly_do: Hồ sơ t35–t37.
+  - cu: 'Khung Đang tranh cãi (ranh giới): không nguồn; ví dụ vaccine, bánh quy'
+    moi: Tappin 2021; Bago 2023
+    ly_do: Hồ sơ t40, t41.
+  - cu: 'Khung Đã bị bác bỏ: "Thông tin mới thường chỉ làm người ta nhích quan điểm một chút"'
+    moi: Kahan 2017, Persson 2021, Taber 2006; Guess và Coppock 2020 (không phản tác dụng)
+    ly_do: Hồ sơ t42.
+  - cu: 'Lý thuyết: "cái giá của việc sai là thấp … mất mặt, phản bội nhóm … chạy gần như tự động"; "(vaccine, …)"'
+    moi: Bám Kunda 1990 và tóm tắt Kahan 2013; thêm Tappin 2021
+    ly_do: Hồ sơ t43–t46.
+  - cu: Lời khuyên 1–4 (chip kha-vung ở 1, 2; "đó là dấu hiệu …"; "một nửa của việc kiểm soát"; "Hệ 2 thuê ngoài")
+    moi: Lời khuyên 1, 3 là gợi ý của site, không chip; lời khuyên 2 dựa Lord, Lepper & Preston (1984), Greitemeyer (2023), chip Khá vững; bỏ lời khuyên 4
+    ly_do: Hồ sơ t48–t55.
+  - cu: 'Ở Việt Nam: "Kunda (1990) … đều thực hiện ở Mỹ"; "Chúng tôi chưa tìm thấy …" (không mốc); "chúng tôi sẽ cập nhật bài này khi có dữ liệu"'
+    moi: Phạm vi đúng cho từng nghiên cứu; "Tính đến 11/2026 …" kèm hạn; dự đoán ghi rõ là suy luận
+    ly_do: Hồ sơ t56–t58.
+  - cu: 'Ngộ nhận: 4 điểm ("Ngược lại mới đúng một nửa", "Phần lớn quá trình diễn ra ngoài ý thức", "mù tịt sự thiên lệch của phe mình", "đã bị bác bỏ … đạn dược")'
+    moi: 'Có nguồn: Stanovich 2013, Kahan 2013, Tappin 2021, Ditto 2019, Kahan 2017, Persson 2021, Guess 2020'
+    ly_do: Hồ sơ t59–t62.
+  - cu: 'Quiz câu 4 và 5: "được cân bằng"; "hai phe càng xa nhau hơn"; "rồi kết luận rằng mình càng có lý hơn"; "bị bác bỏ"; "đạn dược"'
+    moi: Bám tóm tắt Taber 2006; "không đủ để giải thích"
+    ly_do: Hồ sơ t68, t69.
+  - cu: Nguồn (11 mục)
+    moi: 'Nguồn thêm: Bago 2023, Ditto 2019, Greitemeyer 2023, Lord, Lepper & Preston 1984, Tappin 2021'
+    ly_do: Hồ sơ t33–t55.
+  - cu: 'Mô tả: "ta suy luận không phải như thẩm phán vô tư mà như luật sư bào chữa" (như lời của Kunda)'
+    moi: 'Mô tả nói đó là cách ví von của trang; thân bài ghi "không phải của Kunda"'
+    ly_do: Hồ sơ t1 (review).
+  - cu: 'Đáp án mở đầu: "Phản ứng thường gặp"; "thiên kiến xác nhận ... anh em gần ... lập luận có động cơ rộng hơn"'
+    moi: '"Một phản ứng đã được ghi nhận"; "giao nhau ... không nằm gọn trong nhau"'
+    ly_do: Hồ sơ t3, t7 (review).
+  - cu: 'Khung Đang tranh cãi: "không thấy người ta tin chắc hơn sau khi đọc bằng chứng trái chiều"; khung Đã bị bác bỏ không có câu mở'
+    moi: '"không thấy bằng chứng của phản tác dụng"; thêm câu mở: điều bị bác bỏ là "chỉ cần đủ sự thật là đủ", không phải "thông tin vô ích"'
+    ly_do: Hồ sơ t38, t42 (review).

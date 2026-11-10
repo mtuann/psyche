@@ -5,13 +5,868 @@ tang: loi
 muc: V3
 lan:
   - so: 1
-    ngay: null
+    ngay: '2026-11-10'
     nhanh: moi/d5-l2
     ma_bam: null
     nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L2 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L2)
+      review: "Claude Sonnet 5.5 (agent review D5-L2, 10/11/2026)"
       kiem_mau: null
-nguon: []
-nhan_dinh: []
+nguon:
+  - id: wason1960
+    ten: 'Wason (1960), Q J Exp Psychol 12(3), 129–140: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1080/17470216008416717
+    toan_van: true
+  - id: nickerson1998
+    ten: 'Nickerson (1998), Rev Gen Psychol 2(2), 175–220: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1037/1089-2680.2.2.175
+    toan_van: true
+  - id: klayman1987
+    ten: 'Klayman & Ha (1987), Psychol Rev 94(2), 211–228: tóm tắt (OpenAlex); các nhận xét về bài này trong Nickerson 1998 đã mở'
+    link: https://doi.org/10.1037/0033-295X.94.2.211
+    toan_van: false
+  - id: lord1979
+    ten: 'Lord, Ross & Lepper (1979), J Pers Soc Psychol 37(11), 2098–2109: tóm tắt (OpenAlex); kết quả thêm qua Miller và cộng sự 1993'
+    link: https://doi.org/10.1037/0022-3514.37.11.2098
+    toan_van: false
+  - id: lord1984
+    ten: 'Lord, Lepper & Preston (1984), J Pers Soc Psychol 47(6), 1231–1243: tóm tắt (OpenAlex); không mở được toàn văn'
+    link: https://doi.org/10.1037/0022-3514.47.6.1231
+    toan_van: false
+  - id: miller1993
+    ten: 'Miller, McHoskey, Bane & Dowd (1993), J Pers Soc Psychol 64(4), 561–574: tóm tắt và đoạn mở bài (OpenAlex)'
+    link: https://doi.org/10.1037/0022-3514.64.4.561
+    toan_van: false
+  - id: hart2009
+    ten: 'Hart và cộng sự (2009), Psychol Bull 135(4), 555–588: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/a0015701
+    toan_van: false
+  - id: nemeth2001
+    ten: 'Nemeth, Brown & Rogers (2001), Eur J Soc Psychol 31(6), 707–720: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1002/ejsp.58
+    toan_van: false
+  - id: vn30-2026
+    ten: 'Phân tích các yếu tố tâm lý trong quyết định đầu tư cổ phiếu VN30 của nhà đầu tư cá nhân (2026), J Financ Account Res 26(2): tóm tắt (OpenAlex); khảo sát SEM tự báo cáo'
+    link: https://doi.org/10.71374/jfar.v26.i2.75
+    toan_van: false
+  - id: tim-kiem-vn-tkxn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "confirmation bias Vietnamese participants", "Wason selection task Vietnamese students": không có nghiên cứu về thiên kiến xác nhận hay nhiệm vụ Wason ở người Việt (kết quả đầu là bài không liên quan, hoặc nghiên cứu hành vi nhà đầu tư Việt Nam 2025 không đo thiên kiến xác nhận)'
+    link: https://api.openalex.org/works?search=confirmation%20bias%20Vietnamese%20participants
+nhan_dinh:
+  - id: n1
+    cau: Nhiệm vụ 2–4–6 của Wason (1960) cho thấy ta có xu hướng tìm bằng chứng ủng hộ giả thuyết của mình thay vì tìm cách bác bỏ nó (mô tả của trang).
+    loai: phat-hien
+    nguon:
+      - wason1960
+      - nickerson1998
+    trich: People typically tested hypothesized rules by producing only triplets that were consistent with them.
+    vi_tri: Nickerson 1998, mô tả nhiệm vụ của Wason (1960)
+    ket_qua: dung
+    ghi_chu: Mô tả (description). "Cái giá của thói quen đó" là lời dẫn chung, được các câu sau của trang kiểm.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+  - id: n2
+    cau: Quy tắc thật của Wason chỉ là ba số tăng dần bất kỳ; dãy 2–3–4 đúng, dãy 1–5–100 cũng đúng.
+    loai: dinh-nghia
+    nguon:
+      - wason1960
+    trich: In the experiment the concept to be attained is "three numbers in increasing order of magnitude."
+    vi_tri: Wason 1960, mở bài
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+  - id: n3
+    cau: Nhiều người đoán một quy tắc hẹp hơn quy tắc thật, chẳng hạn mỗi số hơn số trước 2 đơn vị; trong thí nghiệm của Wason gần như mọi quy tắc sai đều thuộc kiểu hẹp hơn.
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: (In nearly all cases incorrect rules were sufficient ones, e.g. "increasing intervals of two.")
+    vi_tri: Wason 1960, Results (a)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Hầu hết mọi người đoán quy tắc là "số chẵn, mỗi số hơn số trước 2 đơn vị"". Chữ mới theo chữ của Wason: quy tắc sai gần như luôn là quy tắc "đủ" (hẹp hơn quy tắc thật), ví dụ "tăng đều 2 đơn vị"; Wason không nói "số chẵn" hay "hầu hết mọi người". Review (Claude Sonnet 5.5, 10/11/2026): dung. Chữ cuối khớp Wason (Results a).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n4
+    cau: Các dãy như 8–10–12, 20–22–24, 100–102–104 đều nhận "đúng" vì thỏa quy tắc thật, nên không dãy nào cho thấy phỏng đoán "số chẵn tăng đều" là sai.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: the strategy of using only sets of successive even numbers would not reveal the incorrectness of the hypothesis because every test item would get a positive response.
+    vi_tri: Nickerson 1998, mục về nhiệm vụ của Wason
+    ket_qua: dung
+    ghi_chu: Các dãy 8–10–12, 20–22–24, 100–102–104 là ví dụ minh họa của trang; phần logic theo Nickerson.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản). Các dãy 8-10-12... đều tăng dần nên được nhận 'đúng', và cũng phù hợp phỏng đoán hẹp.
+  - id: n5
+    cau: Họ thường nêu quy tắc sai chỉ sau vài lần thử (trung bình 3,7 dãy trước lần nêu sai đầu tiên).
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: the mean number before making a first incorrect announcement was 3-68 (range I to 7).
+    vi_tri: Wason 1960, Results (b)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "càng thử họ càng tin mình đã tìm ra quy tắc" (không có trong Wason). Chữ mới theo số liệu: nêu sai sau trung bình 3,68 dãy (khoảng 1–7; OCR in "3-68", "I to 7"). Review (Claude Sonnet 5.5, 10/11/2026): dung. 3,68 làm tròn 3,7, khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n6
+    cau: Dãy đáng thử nhất là dãy có khả năng làm phỏng đoán sụp đổ, ví dụ 2–3–4 (không còn là số chẵn cách nhau 2); nếu dãy đó vẫn "đúng" thì phỏng đoán quá hẹp.
+    loai: loi-khuyen
+    nguon:
+      - wason1960
+    trich: no confirming instance of a law is a verifying instance, but that any disconfirming instance is a falsifying instance.
+    vi_tri: Wason 1960, mở bài (trích Von Wright, 1951)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "2–3–4 (số lẻ, tăng không đều)": sai, 2–3–4 tăng đều 1 và chỉ có một số lẻ. Chữ mới: "không còn là số chẵn cách nhau 2". Mở rộng: Wason lưu ý một dãy không tuân thủ quy tắc thật cũng chưa chắc loại được quy tắc đủ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp logic Wason (quy tắc đủ chỉ bị loại bởi dãy dương tính trái phỏng đoán).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717", "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản). Lời khuyên hợp với logic của Wason; 2-3-4 thỏa quy tắc thật nhưng trái phỏng đoán 'số chẵn'.
+    review: dung
+  - id: n7
+    cau: 'Thiên kiến xác nhận (confirmation bias): xu hướng tìm hoặc diễn giải bằng chứng theo hướng có lợi cho niềm tin, kỳ vọng hay giả thuyết sẵn có.'
+    loai: dinh-nghia
+    nguon:
+      - nickerson1998
+    trich: Confirmation bias, as the term is typically used in the psychological literature, connotes the seeking or interpreting of evidence in ways that are partial to existing beliefs, expectations, or a hypothesis in hand.
+    vi_tri: Nickerson 1998, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: n8
+    cau: Khi đã có giả thuyết, ta còn có xu hướng ghi nhớ chi tiết "cùng phe" và xem nhẹ hay quên bằng chứng trái chiều.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: participants were likely to recall the evidence as being more consistent with the theories than it actually was.
+    vi_tri: Nickerson 1998, mục về tìm kiếm và diễn giải thông tin (dẫn Kuhn, 1989)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Nickerson dẫn Kuhn 1989: người tham gia nhớ bằng chứng là nhất quán với lý thuyết hơn thực tế; "bỏ qua, xem nhẹ" khớp trích "failed to acknowledge discrepant evidence". "Quên mất bằng chứng trái ngược" viết thành "xem nhẹ hay quên" (làm mềm). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Nickerson (dẫn Kuhn 1989) cho phần nhớ; "xem nhẹ hay quên" là mức làm mềm đủ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Nickerson có mục Memory về nhớ có chọn lọc.
+    review: dung
+  - id: n9
+    cau: 'Thiên kiến xác nhận thường không phải cố tình tự lừa dối mình: Nickerson mô tả nó là sự chọn lọc không chủ ý trong việc thu thập và dùng bằng chứng.'
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: It refers usually to unwitting selectivity in the acquisition and use of evidence.
+    vi_tri: Nickerson 1998, mở bài
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "không đòi hỏi ta phải cố tình tự lừa dối mình. Trong trò chơi 2–4–6, người tham gia không hề gian lận: họ thực sự tin rằng mình đang kiểm tra giả thuyết một cách nghiêm túc". Wason không báo cáo điều người tham gia "tin"; chữ mới dựa vào Nickerson. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: n10
+    cau: Ở nhiệm vụ 2–4–6, có cách giải thích rằng người tham gia xác nhận không phải vì muốn, mà vì không nghĩ ra cách bác bỏ (Evans, theo Nickerson).
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: Subjects confirm, not because they want to, but because they cannot think of the way to falsify.
+    vi_tri: Nickerson 1998, mục giải thích (trích Evans, 1989, tr. 42)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: n11
+    cau: Chỉ thử những dãy "khớp" với một phỏng đoán hẹp hơn quy tắc thật thì về mặt logic không thể cho thấy phỏng đoán đó sai.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: they precluded themselves from discovering that it was incorrect if the triplets it prescribed constituted a subset of those prescribed by the actual rule.
+    vi_tri: Nickerson 1998, mục về nhiệm vụ của Wason
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Suy ra từ logic Wason trình bày.
+  - id: n12
+    cau: Peter Wason làm thí nghiệm 2–4–6 ở University College London, năm 1960.
+    loai: lich-su
+    nguon:
+      - wason1960
+    trich: From the Medical Research Council Industrial Psychology Research Group, University College, London
+    vi_tri: Wason 1960, đầu bài
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nhà tâm lý học người Anh Peter Wason" và "ở Anh". Bài ghi cơ quan ở Luân Đôn; quốc tịch của Wason không có trong bài, nên chữ mới dùng nơi làm việc. Review (Claude Sonnet 5.5, 10/11/2026): dung. UCL, 1960 khớp trang bài.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n13
+    cau: Người tham gia là 29 sinh viên đại học ngành tâm lý (17 nam, 12 nữ), được thử riêng từng người.
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: The subjects, z.9 psychology undergraduates (17 men and 12 women), were examined individually and instructed as follows
+    vi_tri: Wason 1960, Procedure
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "29 người trưởng thành". Chữ mới: 29 sinh viên đại học ngành tâm lý (OCR in "z.9" cho 29; Bảng I ghi n = 29); thêm giới tính. Review (Claude Sonnet 5.5, 10/11/2026): dung. 29, 17 nam 12 nữ khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n14
+    cau: Người tham gia viết ra từng dãy ba số kèm lý do chọn; sau mỗi dãy, Wason cho biết dãy đó có tuân theo quy tắc hay không; họ chỉ nêu quy tắc khi đã rất tự tin.
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: Your aim is to discover this rule by writing down sets of three numbers, together with reasons for your choice of them. After you have written down each set, I shall tell you whether your numbers conform to the rule or not
+    vi_tri: Wason 1960, Procedure
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Họ được yêu cầu ghi lại các giả thuyết của mình trong quá trình thử". Wason yêu cầu ghi lý do chọn mỗi dãy, không phải ghi giả thuyết; "when you feel highly confident ... you are to write it down" khớp "chỉ công bố khi đã chắc". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n15
+    cau: Nếu quy tắc nêu ra sai thì người tham gia được báo rồi thử tiếp; buổi thử dừng khi họ nêu đúng, quá 45 phút, hay muốn bỏ cuộc.
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: The experiment continued until the correct rule was announced, or the time for the session exceeded 45 minutes, or the subject expressed a wish to give up.
+    vi_tri: Wason 1960, Procedure
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "được đề xuất bao nhiêu dãy ba số tùy thích": bài ghi không giới hạn số dãy, nhưng buổi thử có dừng; chữ mới nêu điều kiện dừng. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n16
+    cau: Trong 29 người, 6 người tìm ra quy tắc đúng mà không nêu sai lần nào trước đó; 13 người nêu sai một lần; 9 người nêu sai từ hai lần trở lên; 1 người không đưa ra kết luận nào.
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: Six out of 29 subjects reached the correct conclusion without previous incorrect ones, 13 reached one incorrect conclusion, nine reached two or more incorrect conclusions, and one reached no conclusion.
+    vi_tri: Wason 1960, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'theo G1-L02: KHỚP (tóm tắt); đối chiếu lại tóm tắt và Bảng I trong toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+  - id: n17
+    cau: Gần như mọi quy tắc sai là quy tắc hẹp hơn quy tắc thật, ví dụ "tăng đều 2 đơn vị".
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: (In nearly all cases incorrect rules were sufficient ones, e.g. "increasing intervals of two.")
+    vi_tri: Wason 1960, Results (a)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "gần như chỉ đề xuất các dãy phù hợp với giả thuyết của mình (ví dụ toàn số chẵn tăng đều)... Những dãy có thể bác bỏ giả thuyết — như dãy gồm số lẻ tăng dần — hiếm khi được thử". Chữ mới theo số liệu của Wason (n18, n19); "số chẵn" và "số lẻ tăng dần" không có trong Wason. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n18
+    cau: Những người nêu quy tắc sai ngay lần đầu thử trung bình 3,7 dãy trước khi nêu, so với 8,0 dãy ở 6 người nêu đúng ngay.
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: The mean number of instances generated before making the immediate correct announcement was 8.0 (range 5 to g), and the mean number before making a first incorrect announcement was 3-68 (range I to 7).
+    vi_tri: Wason 1960, Results (b)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+  - id: n19
+    cau: Tỉ lệ dãy không tuân theo quy tắc thật trong các dãy họ thử là 0,04 ở nhóm nêu sai ngay lần đầu, so với 0,21 ở nhóm nêu đúng ngay.
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: The mean ratio was 0.21 (n = 6 ) for those who made the immediate correct announcement and 0.04 (n = 22) for those who made a first incorrect announcement.
+    vi_tri: Wason 1960, Results (c)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+  - id: n20
+    cau: Wason kết luận rằng những người nêu sai từ hai lần trở lên không thể hoặc không muốn kiểm tra giả thuyết của mình theo cách có thể loại trừ nó.
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: The results showed that those subjects, who reached two or more incorrect conclusions, were unable, or unwilling to test their hypotheses.
+    vi_tri: Wason 1960, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "người tham gia thất bại trong việc tìm kiếm các phép thử có khả năng loại trừ giả thuyết sai" (nói về mọi người tham gia). Chữ mới theo tóm tắt: kết luận nói về nhóm nêu sai từ hai lần trở lên. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+    review: dung
+  - id: n21
+    cau: Gần bốn thập kỷ sau Wason, Nickerson (1998) công bố bài tổng quan trên Review of General Psychology.
+    loai: lich-su
+    nguon:
+      - nickerson1998
+      - wason1960
+    trich: Review of General Psychology 1998, Vol. 2, No. 2, 175-220
+    vi_tri: Nickerson 1998, đầu bài
+    ket_qua: dung
+    ghi_chu: 1998 − 1960 = 38 năm.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: 1998 - 1960 = 38 năm.
+  - id: n22
+    cau: Bài tổng quan gom các phát hiện về thiên kiến xác nhận (tìm kiếm và diễn giải bằng chứng, ghi nhớ có chọn lọc, các ví dụ ngoài phòng thí nghiệm) thành một khung chung.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: The author reviews evidence of such a bias in a variety of guises and gives examples of its operation in several practical contexts.
+    vi_tri: Nickerson 1998, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "kiểm tra giả thuyết, diễn giải bằng chứng, ghi nhớ, ra quyết định" và "bác sĩ diễn giải kết quả xét nghiệm... lướt tin tức mỗi ngày". Chữ mới theo tóm tắt; "ra quyết định" và "lướt tin tức" không phải mục của bài 1998. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Có các mục tìm kiếm/diễn giải bằng chứng, bộ nhớ, ngữ cảnh thực tế.
+    review: dung
+  - id: n23
+    cau: Bài tổng quan nêu ví dụ thiên kiến xác nhận ở các bối cảnh như chẩn đoán y khoa, xét xử và khoa học.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: A hypothesis in hand also can bias the interpretation of subsequently acquired data
+    vi_tri: Nickerson 1998, mục "Confirmation Bias in Real-World Contexts" (Medical diagnosis, Judicial Reasoning, Science)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Các mục "Judicial Reasoning" và "Science" có trong bài; chẩn đoán y khoa nằm trong mục "Number Mysticism... Medical diagnosis". Chữ cũ: "bác sĩ diễn giải kết quả xét nghiệm" (Nickerson nói về dữ liệu chẩn đoán, không riêng xét nghiệm). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp các mục Judicial Reasoning, Science và chẩn đoán y khoa của Nickerson.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: n24
+    cau: Trong thí nghiệm của Lord, Ross và Lepper, người ủng hộ và phản đối án tử hình đọc hai nghiên cứu (được giới thiệu là thật), một ủng hộ và một phản đối tính răn đe; cả hai phe đánh giá nghiên cứu ủng hộ quan điểm của mình là thuyết phục hơn.
+    loai: phat-hien
+    nguon:
+      - lord1979
+    trich: both proponents and opponents of capital punishment rated those results and procedures that confirmed their own beliefs to be the more convincing and probative ones
+    vi_tri: Lord 1979, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "đọc cùng hai nghiên cứu"; thêm "được giới thiệu là thật" (tóm tắt: "purported studies"). theo G1-L02: KHỚP phần đánh giá. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chữ trang khớp tóm tắt Lord 1979.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.37.11.2098", "https://doi.org/10.1037/0022-3514.64.4.561" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt của Lord 1979 (bài gốc không mở được); mô tả thiết kế đối chiếu với Miller 1993 (đọc tóm tắt).
+    review: dung
+  - id: n25
+    cau: Sau khi đọc, cả hai phe đều nói rằng thái độ của mình đã cực đoan hơn theo hướng quan điểm ban đầu, nên bằng chứng "hỗn hợp" không làm ai lung lay.
+    loai: phat-hien
+    nguon:
+      - lord1979
+      - miller1993
+    trich: subjects reported that their attitudes had become more extreme in the direction of their initial point of view after evaluating the research evidence
+    vi_tri: Miller 1993, đoạn mở bài (tóm Lord 1979)
+    ket_qua: da-sua
+    ghi_chu: 'Lord 1979, tóm tắt: "they reported corresponding shifts in their beliefs". "Tin chắc hơn" là cách nói của trang cho "attitudes more extreme" tự báo cáo; Miller 1993 chỉ ra đây là phân cực tự báo cáo. Review (Claude Sonnet 5.5, 10/11/2026): sai. Trang viết "tin chắc hơn trước"; tóm tắt Lord 1979 chỉ nói họ tự báo cáo thái độ cực đoan hơn theo hướng ban đầu. Chữ cũ: "cả hai đều nói rằng mình tin chắc hơn trước" -> chữ mới: "cả hai đều nói rằng thái độ của mình đã cực đoan hơn theo hướng quan điểm ban đầu" (trang và quiz câu 4).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.37.11.2098", "https://doi.org/10.1037/0022-3514.64.4.561" ]
+    luot_2_ghi_chu: Chỉ tóm tắt. Đây là thay đổi do người tham gia tự báo cáo.
+    review: sai
+  - id: n26
+    cau: 'Phần "hai phe càng xa nhau hơn" mong manh hơn: trong một loạt nghiên cứu làm lại, khi đo thái độ trước và sau thì không thấy phân cực.'
+    loai: tai-lap
+    nguon:
+      - miller1993
+    trich: Polarization was not indicated in a pre-post measurement design.
+    vi_tri: Miller 1993, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'theo G1-L02 (mục 1, ĐÁNG NGỜ): đã áp vào trang cũ; đối chiếu lại tóm tắt Miller. Chữ cũ: "các lần làm lại thường không thấy nó"; chữ mới: "trong một loạt nghiên cứu làm lại" (Miller 1993 gồm bốn nghiên cứu; Kuhn & Lao 1996 chưa mở nên không dẫn). Miller cũng thấy phân cực tự báo cáo với án tử hình nhưng không thấy với chính sách ưu tiên (affirmative action). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Miller 1993 ("pre-post").'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.64.4.561", "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf", "https://doi.org/10.1111/j.1467-9280.1996.tb00340.x" ]
+    luot_2_ghi_chu: Miller 1993 đọc tóm tắt; Taber & Lodge đọc toàn văn.
+    review: dung
+  - id: n27
+    cau: Thiên kiến xác nhận không chỉ nằm ở khâu tìm kiếm bằng chứng mà còn ở khâu diễn giải bằng chứng.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: the seeking or interpreting of evidence in ways that are partial to existing beliefs, expectations, or a hypothesis in hand.
+    vi_tri: Nickerson 1998, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175", "https://fbaum.unc.edu/teaching/articles/AJPS-2006-Taber.pdf" ]
+    luot_2_ghi_chu: Hợp với Nickerson (tìm kiếm + diễn giải) và Taber & Lodge (hai khâu).
+  - id: n28
+    cau: 'Khá vững: ta có xu hướng ưu tiên tìm và chọn thông tin phù hợp với niềm tin hay giả thuyết sẵn có.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - hart2009
+      - nickerson1998
+      - klayman1987
+      - wason1960
+    ly_do: Phân tích tổng hợp Hart và cộng sự (2009) thấy mức ưu tiên vừa phải (d = 0,36), cùng chiều với hai bài tổng quan lớn (Klayman & Ha 1987; Nickerson 1998) và thí nghiệm Wason; nhưng mẫu chủ yếu ở phương Tây, hiệu ứng đổi theo hoàn cảnh, chưa có tái lập lớn đăng ký trước hay bằng chứng đa văn hóa; thước đo mục 4 đòi "đúng ở nhiều quần thể" cho Vững chắc, nên là Khá vững.
+    nguon:
+      - hart2009
+      - nickerson1998
+      - klayman1987
+      - wason1960
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đã được tìm thấy lại nhiều lần trong hơn 60 năm, ở nhiều bối cảnh và nhóm người khác nhau" (không có nguồn đã mở cho "hơn 60 năm", "nhóm người khác nhau"); ý chính đổi từ "kiểm tra giả thuyết bằng bằng chứng phù hợp với nó" sang "tìm và chọn thông tin phù hợp" vì phân tích tổng hợp duy nhất đo việc chọn thông tin. Chỗ khó: Nickerson (1998) và Klayman & Ha (1987) là tổng quan kể, không hệ thống; thước đo Vững chắc nhờ phân tích tổng hợp Hart. Review cân nhắc. Review (Claude Sonnet 5.5, 10/11/2026): sai. Nhãn Vững chắc quá cao (theo lượt 2, mẫu của Hart 2009 chủ yếu phương Tây, tôi không mở được toàn văn để đếm nước). Chữ cũ: "Vững chắc: ..." -> "Khá vững: ..."; trang thêm câu giới hạn.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4797953/", "https://sites.uci.edu/peterdittolab/files/2018/06/Ditto-et-al.-2018-At-Least-Bias-is-Bipartisan-A-Meta-Analytic-Comparison-of-Partisan-Bias-in-Liberals-Conservatives.pdf" ]
+    luot_2_ghi_chu: "câu đúng: Có phân tích tổng hợp (Hart 2009, d = 0,36) cho thấy ưu tiên thông tin hợp niềm tin sẵn có, nhưng mẫu chủ yếu phương Tây và hiệu ứng thay đổi theo hoàn cảnh; nhãn phù hợp hơn là Khá vững.; Hart và cộng sự (2009) là phân tích tổng hợp tốt, d=0,36, nhưng chỉ gồm mẫu Mỹ, Canada, Đức, Úc, Ý và hiệu ứng thay đổi mạnh theo biến điều tiết; chưa có tái lập lớn có đăng ký trước hay bằng chứng đa văn hóa. Theo thước đo mục 4, 'Vững chắc' đòi 'đúng ở nhiều quần thể'; mẫu chủ yếu phương Tây là điều kiện của 'Khá vững'."
+    review: sai
+  - id: n29
+    cau: Kiểu hành vi trong nhiệm vụ 2–4–6 được thấy ở thí nghiệm gốc của Wason và được các bài tổng quan sau đó ghi nhận (Klayman và Ha, 1987; Nickerson, 1998).
+    loai: phat-hien
+    nguon:
+      - klayman1987
+      - nickerson1998
+      - wason1960
+    trich: there is a tendency to test cases that are expected (or known) to have the property of interest rather than those expected (or known) to lack that property.
+    vi_tri: Klayman & Ha 1987, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "được tìm thấy lại nhiều lần trong hơn 60 năm, ở nhiều bối cảnh và nhóm người khác nhau"; làm mềm theo các nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717", "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf", "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn Nickerson và Klayman & Ha.
+    review: dung
+  - id: n30
+    cau: Một phân tích tổng hợp về việc chọn thông tin (Hart và cộng sự, 2009) thấy mức ưu tiên vừa phải cho thông tin hợp với niềm tin sẵn có (d = 0,36).
+    loai: so-lieu
+    nguon:
+      - hart2009
+    trich: Analyses indicated a moderate preference for congenial over uncongenial information (d=0.36).
+    vi_tri: Hart 2009, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4797953/" ]
+    luot_2_ghi_chu: Đọc toàn văn bản tác giả (PMC).
+  - id: n31
+    cau: Mức ưu tiên ấy yếu đi khi niềm tin không quan trọng với người đó hay không được giữ chắc, và khi thông tin sẵn có kém chất lượng.
+    loai: phat-hien
+    nguon:
+      - hart2009
+    trich: the congeniality bias was weaker when participants' attitudes, beliefs, or behaviors were not relevant to their values or not held with conviction; when the available information was low in quality
+    vi_tri: Hart 2009, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ mới của khung (câu thêm); lấy từ các điều kiện làm yếu hiệu ứng trong tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích Hart 2009.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4797953/" ]
+    luot_2_ghi_chu: Đọc toàn văn bản tác giả (PMC). Hart ghi 'yếu hơn khi chất lượng thông tin thấp', khớp câu.
+    review: dung
+  - id: n32
+    cau: 'Đang tranh cãi: đó có phải là một thiên kiến có hại hay không.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - klayman1987
+      - nickerson1998
+    ly_do: Klayman & Ha (1987) lập luận nhiều hiện tượng gọi là "thiên kiến xác nhận" hiểu tốt hơn như chiến lược kiểm tra tích cực, có thể rất tốt trong điều kiện thực tế dù đôi khi gây lỗi hệ thống; Nickerson (1998) nêu câu hỏi về lợi và hại của nó và xem xét cả hai phía. Bằng chứng hai phía đều có, chưa có kết luận chung về việc nó "có hại" hay "hợp lý".
+    nguon:
+      - klayman1987
+      - nickerson1998
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Đang tranh cãi hợp thước đo: hai bài tổng quan lớn bàn cả lợi lẫn hại, chưa có kết luận chung.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf", "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: "Nhãn 'Đang tranh cãi' hợp: Klayman & Ha và Nickerson đều bàn về lợi/hại."
+    review: dung
+  - id: n33
+    cau: 'Klayman và Ha (1987) lập luận rằng nhiều hiện tượng gọi là thiên kiến xác nhận thực chất là chiến lược kiểm tra tích cực: thử những trường hợp được cho là có đặc tính cần kiểm tra thay vì những trường hợp được cho là không có.'
+    loai: phat-hien
+    nguon:
+      - klayman1987
+    trich: many phenomena labeled "confirmation bias" are better understood in terms of a general positive test strategy. With this strategy, there is a tendency to test cases that are expected (or known) to have the property of interest rather than those expected (or known) to lack that property.
+    vi_tri: Klayman & Ha 1987, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: n34
+    cau: Theo Klayman và Ha, trong điều kiện thực tế chiến lược này có thể là một cách làm rất tốt để xác định giả thuyết đúng hay sai, dù vẫn có thể gây lỗi hệ thống hay kém hiệu quả, như ở nhiệm vụ 2–4–6.
+    loai: phat-hien
+    nguon:
+      - klayman1987
+    trich: the positive test strategy can be a very good heuristic for determining the truth or falsity of a hypothesis under realistic conditions. It can, however, lead to systematic errors or inefficiencies.
+    vi_tri: Klayman & Ha 1987, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "rẻ, nhanh và khá hợp lý... chỉ gây ra lỗi hệ thống trong những nhiệm vụ được thiết kế để bẫy nó". "Rẻ, nhanh" không có trong tóm tắt; "chỉ" quá mạnh so với "systematic errors or inefficiencies". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: n35
+    cau: Các nhà nghiên cứu còn tranh luận xem đây là một khiếm khuyết cần sửa hay một lối tắt tư duy chỉ thỉnh thoảng phản tác dụng.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+      - klayman1987
+    trich: Possible explanations are considered, and the question of its utility or disutility is discussed.
+    vi_tri: Nickerson 1998, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ bắt đầu "Nói cách khác,": bỏ cụm nối vì chữ trước đã đổi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf", "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Cả hai bài đều bàn tranh luận này.
+    review: dung
+  - id: n36
+    cau: 'Thiên kiến xác nhận theo nghĩa hẹp (Nickerson): xu hướng có hệ thống tìm thông tin ủng hộ niềm tin sẵn có, diễn giải thông tin mơ hồ theo hướng có lợi cho nó, và nhớ lại có chọn lọc.'
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: People tend to seek information that they consider supportive of favored hypotheses or existing beliefs and to interpret information in ways that are partial to those hypotheses or beliefs.
+    vi_tri: Nickerson 1998, mục "Hypothesis-Determined Information Seeking and Interpretation"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ có thêm: "Ba khâu này củng cố lẫn nhau thành một vòng lặp khép kín": bỏ, vì không thấy trong Nickerson. Phần "diễn giải thông tin mơ hồ" khớp trích ("interpret information in ways that are partial"); phần "nhớ có chọn lọc" khớp n8. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: n37
+    cau: Vấn đề chỉ nảy sinh khi giả thuyết quá hẹp so với sự thật, như trong nhiệm vụ 2–4–6, nơi quy tắc thật rộng hơn nhiều so với phỏng đoán "số chẵn tăng đều".
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+      - wason1960
+    trich: if the triplets it prescribed constituted a subset of those prescribed by the actual rule.
+    vi_tri: Nickerson 1998, mục về nhiệm vụ của Wason
+    ket_qua: dung
+    ghi_chu: 'Phỏng đoán "số chẵn tăng đều": ví dụ của Nickerson ("successive even numbers"). "Chỉ nảy sinh" suy luận từ trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf", "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: "Khớp phần lập luận của Klayman & Ha. Chữ 'chỉ' hơi mạnh: Klayman & Ha còn nêu các trường hợp kém hiệu quả khác, nhưng trong ngữ cảnh chiến lược kiểm tra dương tính thì đúng."
+  - id: n38
+    cau: Khi muốn biết "thuốc này có chữa được bệnh không", cách tự nhiên là thử thuốc lên người bệnh chứ không phải lên người khỏe; theo Klayman và Ha, thói quen thử trường hợp "dương tính" như vậy thường là cách làm tốt trong điều kiện thực tế.
+    loai: dinh-nghia
+    nguon:
+      - klayman1987
+    trich: there is a tendency to test cases that are expected (or known) to have the property of interest rather than those expected (or known) to lack that property.
+    vi_tri: Klayman & Ha 1987, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "thường cho nhiều thông tin với chi phí thấp". "Chi phí thấp" không có trong tóm tắt. Ví dụ thuốc là minh họa của trang (không phải kết quả nghiên cứu). Review (Claude Sonnet 5.5, 10/11/2026): dung. Ví dụ thuốc là minh họa của trang, phần Klayman và Ha khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf" ]
+    luot_2_ghi_chu: Ví dụ thuốc là minh họa của site; điều khẳng định theo Klayman & Ha đúng.
+    review: dung
+  - id: n39
+    cau: Theo Nickerson, ta dễ tin điều mình mong là đúng hơn điều mình muốn nó sai; ta có thể chọn lọc bằng chứng tìm kiếm và "nghiêng cán cân" khi cân nhắc, nhưng không thể phớt lờ hoàn toàn bằng chứng trái chiều.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: We can be selective with respect to the evidence we seek, and we can tilt the scales when we weigh what we find, but we cannot completely ignore counterindicative evidence
+    vi_tri: Nickerson 1998, mục "The Desire to Believe"
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Khi niềm tin gắn với bản sắc (quan điểm chính trị, niềm tin tôn giáo, lòng tự trọng nghề nghiệp), việc thừa nhận mình sai trở nên "đắt" về mặt tâm lý... tích cực bẻ cong bằng chứng". Các ví dụ bản sắc, tôn giáo, "đắt" không có trong mục; chữ mới theo Nickerson. "Nhiều người cho rằng": Nickerson nêu bằng chứng khá mạnh rằng sở thích ảnh hưởng đến niềm tin "at least to some degree". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích Nickerson.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: n40
+    cau: Điều này khớp với thí nghiệm của Lord, Ross và Lepper (1979), nơi mỗi phe đánh giá nghiên cứu ủng hộ quan điểm mình là thuyết phục hơn.
+    loai: phat-hien
+    nguon:
+      - lord1979
+    trich: both proponents and opponents of capital punishment rated those results and procedures that confirmed their own beliefs to be the more convincing and probative ones
+    vi_tri: Lord 1979, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "mỗi phe "soi" rất kỹ nghiên cứu của phe kia mà dễ dãi với nghiên cứu của phe mình": "soi kỹ" là giả thuyết trong tóm tắt, kết quả đo là mức thuyết phục. Chữ mới theo kết quả. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp, là phép so sánh của trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175", "https://doi.org/10.1037/0022-3514.37.11.2098" ]
+    luot_2_ghi_chu: Đọc toàn văn Nickerson.
+    review: dung
+  - id: n41
+    cau: Trước khi thu thập thêm bằng chứng ủng hộ, hãy viết ra một quan sát cụ thể mà nếu xảy ra sẽ khiến bạn bỏ giả thuyết; ở nhiệm vụ 2–4–6, đừng chỉ thử 8–10–12, hãy thử 2–3–4.
+    loai: loi-khuyen
+    nguon:
+      - wason1960
+      - klayman1987
+    trich: The mean ratio was 0.21 (n = 6 ) for those who made the immediate correct announcement and 0.04 (n = 22) for those who made a first incorrect announcement.
+    vi_tri: 'Wason 1960, Results (b): chỉ số loại trừ/liệt kê'
+    ket_qua: dung
+    ghi_chu: 'Gợi ý có cơ sở logic và tương quan trong Wason (người nêu đúng ngay có chỉ số loại trừ cao hơn nhiều); bằng chứng thực nghiệm về hiệu quả của lời khuyên này là trộn lẫn (n42, n43). (Trích sửa ở review: dòng cũ 1.79/0.24 là chỉ số khác, không dùng trên trang.) Review (Claude Sonnet 5.5, 10/11/2026): dung. Lời khuyên hợp logic Wason và tương quan ở trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Lời khuyên khớp logic Wason.
+    review: dung
+  - id: n42
+    cau: 'Đang tranh cãi (chip ở mục 1): hỏi "Điều gì sẽ chứng minh tôi sai?" giúp giảm thiên kiến xác nhận.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - wason1960
+      - nickerson1998
+    ly_do: Trong Wason (1960), người nêu đúng ngay có xu hướng loại trừ cao hơn (n = 6 so với 22, chỉ tương quan). Nhưng Nickerson (1998, dẫn Evans 1989) ghi các thí nghiệm hướng dẫn người ta tìm bằng chứng bác bỏ đôi khi đổi hành vi nhưng thường không cải thiện thành tích. Bằng chứng không nhất quán nên không thể xếp Khá vững.
+    nguon:
+      - wason1960
+      - nickerson1998
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip "Khá vững". Hạ xuống Đang tranh cãi và thêm lưu ý vào trang. Chỗ khó: nhãn cho một lời khuyên thực hành; xét theo thước đo mục 4 vì bằng chứng về hiệu quả không nhất quán. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đang tranh cãi hợp thước đo mục 4: bằng chứng hiệu quả không nhất quán (Evans 1989 qua Nickerson).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi không cao hơn thước đo.
+    review: dung
+  - id: n43
+    cau: Theo Nickerson (dẫn Evans, 1989), các thí nghiệm hướng dẫn người tham gia tìm bằng chứng bác bỏ đôi khi làm đổi hành vi nhưng thường không cải thiện thành tích.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: He noted that although behavioral changes were sometimes induced, more often performance was not improved.
+    vi_tri: Nickerson 1998, mục giải thích (tr. 202)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+  - id: n44
+    cau: Trong thí nghiệm của Lord, Lepper và Preston (1984), người được yêu cầu xét điều ngược lại đã bớt thiên lệch khi đánh giá bằng chứng hơn so với những người chỉ được dặn hãy công bằng, không thiên vị.
+    loai: phat-hien
+    nguon:
+      - lord1984
+    trich: the induction of a consider-the-opposite strategy had greater corrective effect than more demand-laden alternative instructions to be as fair and unbiased as possible.
+    vi_tri: Lord 1984, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "đã đánh giá bằng chứng công bằng hơn hẳn" (không nói so với gì, "hơn hẳn" không có trong tóm tắt). theo G1-L02: KHỚP (tóm tắt). Lời giải thích của câu hỏi 5 ("cũng đủ làm giảm sự diễn giải thiên lệch... chỉ đảm bảo bạn đã thực sự lắng nghe") cũng viết lại. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt.
+    review: dung
+  - id: n45
+    cau: Khi đọc một bài báo hoàn toàn đồng tình với quan điểm của bạn, hãy dành vài phút xét vì sao điều ngược lại có thể đúng (tưởng tượng mình phải viết bài phản biện).
+    loai: loi-khuyen
+    nguon:
+      - lord1984
+      - nickerson1998
+    trich: making these other types of possible errors more salient may have a debiasing effect.
+    vi_tri: Nickerson 1998, mục giải thích (dẫn Lord 1984)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: tự hỏi "nếu kết quả ra ngược lại thì tôi sẽ giải thích thế nào?" (nguyên văn câu hỏi của Lord 1984 chưa mở được). Chữ mới: "xét vì sao điều ngược lại có thể đúng" (Nickerson: reasons why the complement of the hypothesis might be true). Chỗ khó: ví dụ "viết bài phản biện" là gợi ý của trang. Review (Claude Sonnet 5.5, 10/11/2026): dung. Là lời khuyên của trang, dựa trên ý của Lord 1984 và Nickerson.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231" ]
+    luot_2_ghi_chu: Lời khuyên khớp can thiệp của Lord, Lepper, Preston 1984 (chỉ tóm tắt).
+    review: dung
+  - id: n46
+    cau: 'Khá vững (chip ở mục 2): "xét điều ngược lại" giúp đánh giá bằng chứng bớt thiên lệch.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - lord1984
+      - nickerson1998
+    ly_do: Lord, Lepper & Preston (1984) có hai thí nghiệm song song cùng chiều, và Nickerson (1998) dẫn thêm các nghiên cứu khác (C. A. Anderson 1982, Anderson & Sechler 1986) cùng gợi ý cách này có thể hiệu quả; chưa có phân tích tổng hợp hay tái lập lớn nên chưa Vững chắc.
+    nguon:
+      - lord1984
+      - nickerson1998
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Khá vững hợp thước đo mục 4: hai thí nghiệm cùng chiều cộng bằng chứng dẫn trong Nickerson, chưa có phân tích tổng hợp hay tái lập lớn; mẫu sinh viên Mỹ nên không lên Vững chắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231", "https://doi.org/10.1111/jasp.12968" ]
+    luot_2_ghi_chu: "Nhãn Khá vững hợp: vài nghiên cứu cùng chiều, chưa có tái lập lớn đăng ký trước, kết quả các cách sửa khác lẫn lộn. Chỉ đọc tóm tắt."
+    review: dung
+  - id: n47
+    cau: Gợi ý viết ra dự đoán của mình trước khi xem dữ liệu, để đối chiếu với dự đoán đã ghi thay vì với trí nhớ.
+    loai: loi-khuyen
+    nguon:
+      - wason1960
+    trich: Subjects then wrote down their first set of numbers, under the numbers 2, 4, 6, on the record sheet (see Fig. I), together with the reasons why they had chosen them.
+    vi_tri: Wason 1960, Procedure
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Wason đã yêu cầu ghi lại giả thuyết trước khi thử dãy mới: một dạng "đăng ký trước" thô sơ... Khi dự đoán đã nằm trên giấy, ta khó "nhớ lại" rằng mình đã đoán đúng ngay từ đầu hơn." Wason cho ghi lý do chọn mỗi dãy; "đăng ký trước" và hiệu quả với trí nhớ không có nguồn. Bỏ chip "Khá vững", ghi rõ chưa có nghiên cứu được dẫn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Là gợi ý thực hành, trang nói rõ chưa dẫn nghiên cứu đo hiệu quả.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Lời khuyên hợp lý, dựa trên lập luận về trí nhớ chọn lọc; hiệu quả của việc ghi dự đoán trước chưa có nghiên cứu riêng, nhưng câu không nêu hiệu quả đo được.
+    review: dung
+  - id: n48
+    cau: 'Đang tranh cãi (chip ở mục 4): chỉ định người phản biện (devil''s advocate) giúp đưa bằng chứng trái chiều vào bàn.'
+    loai: nhan
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip "Khá vững" và "Kỹ thuật này không xóa được thiên kiến của từng cá nhân, nhưng...". Không mở được nguồn đo hiệu quả (Schwenk 1990 là phân tích tổng hợp về devil''s advocacy nhưng chỉ tra được tên, không có tóm tắt). Đã bỏ chip và khẳng định hiệu quả khỏi trang; câu còn lại chỉ là gợi ý thực hành, nói rõ chưa dẫn nghiên cứu. Review (Claude Sonnet 5.5, 10/11/2026): sai (câu lượt 1 bỏ chip; lượt 2 chỉ ra nhãn phải là Đang tranh cãi và có Nemeth 2001). Chữ cũ: "chưa dẫn nghiên cứu đo hiệu quả của nó" -> chip Đang tranh cãi và câu về Nemeth 2001. Chỉ đọc tóm tắt.'
+    nhan: tranh-cai
+    co_so: [ "nemeth2001" ]
+    nguon: [ "nemeth2001" ]
+    trich: In a prior study comparing these two processes, devil's advocate appeared to foster thinking that was primarily aimed at cognitive bolstering of the initial viewpoint ... the authentic minority was superior to all three forms of devil's advocate.
+    vi_tri: Nemeth, Brown & Rogers 2001, tóm tắt (OpenAlex)
+    ly_do: Nemeth và cộng sự (2001) thấy bất đồng thật vượt cả ba dạng phản biện đóng vai và nêu nghiên cứu trước cho thấy vai này có vẻ chủ yếu củng cố ý ban đầu; không có nguồn đã mở cho thấy hiệu quả nhất quán. Bằng chứng không đồng nhất nên Đang tranh cãi.
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1002/ejsp.58" ]
+    luot_2_ghi_chu: "câu đúng: Kỹ thuật chỉ định người phản biện cho kết quả lẫn lộn: có nghiên cứu thấy nó chỉ củng cố ý kiến ban đầu và kém hơn ý kiến bất đồng thật (Nemeth và cộng sự, 2001); nhãn phù hợp hơn là Đang tranh cãi.; Nemeth, Brown & Westall (2001) thấy vai phản biện đóng vai (devil's advocate) có thể chỉ củng cố ý ban đầu, kém hơn bất đồng thật. Bằng chứng mâu thuẫn nên chip 'Khá vững' quá cao; tóm tắt đọc qua OpenAlex."
+    review: sai
+  - id: n49
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu thực nghiệm nào dùng nhiệm vụ 2–4–6 hay đo thiên kiến xác nhận bằng hành vi trên người Việt; chỉ thấy một khảo sát tự báo cáo năm 2026 ở nhà đầu tư VN30; chưa có dữ liệu để kết luận người Việt "miễn nhiễm" hay "dễ mắc hơn".
+    loai: thoi-su
+    nguon: [ "tim-kiem-vn-tkxn", "vn30-2026" ]
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'OpenAlex ngày 10/11/2026, hai truy vấn ở danh sách nguồn: không có. Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc thời gian ("Chúng tôi chưa tìm thấy..."); thêm "Tính đến 11/2026" và ghi rõ nơi tìm ở trang. Chữ cũ cũng nói "các lần làm lại sau đó chủ yếu dùng người tham gia ở các nước phương Tây" (không kiểm được, đã bỏ). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "các dạng thiên kiến xác nhận tương tự" quá rộng (có khảo sát VN30 2026, DOI 10.71374/jfar.v26.i2.75, tóm tắt OpenAlex) -> thu hẹp thành nghiên cứu thực nghiệm hay hành vi, nêu khảo sát đó. Hạn 2028-11-01 giữ.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.71374/jfar.v26.i2.75" ]
+    luot_2_ghi_chu: "câu đúng: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu thực nghiệm nào dùng nhiệm vụ 2-4-6 hay kiểm tra thiên kiến xác nhận bằng hành vi trên người Việt; chỉ thấy khảo sát tự báo cáo về thiên kiến xác nhận ở nhà đầu tư chứng khoán (2026) và chưa đủ để kết luận người Việt 'miễn nhiễm' hay 'dễ mắc hơn'.; Kiểm ngày 10/11/2026 qua OpenAlex: không thấy nghiên cứu 2-4-6 trên người Việt (đúng). Nhưng có khảo sát tự báo cáo (SEM) về 'thiên kiến xác nhận' ở nhà đầu tư VN30 (2026), nên 'các dạng thiên kiến xác nhận tương tự' là quá rộng. Chỉ đọc tóm tắt."
+    review: sai
+  - id: n50
+    cau: Sự phân cực do người tham gia tự báo cáo về án tử hình rõ hơn ở người có quan điểm ban đầu cực đoan so với vừa phải (Miller và cộng sự, 1993); ở những chủ đề người Việt có niềm tin mạnh, ta có thể dự đoán hiệu ứng tương tự, nhưng đó chỉ là dự đoán.
+    loai: phat-hien
+    nguon:
+      - miller1993
+    trich: Polarization was observed for reported attitude change on capital punishment and generally stronger in Ss with extreme than moderate attitudes.
+    vi_tri: Miller 1993, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "phân cực rõ hơn ở người có quan điểm ban đầu cực đoan"; thêm "do người tham gia tự báo cáo về án tử hình" và "so với vừa phải" cho đúng tóm tắt (Miller: tự báo cáo, chủ đề án tử hình, "generally stronger"). theo G1-L02: không có khớp từ Lord 1979 gốc; nguồn đúng là Miller. Câu dự đoán đã ghi rõ là suy luận. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp trích Miller 1993; phần dự đoán nói rõ là dự đoán.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.64.4.561" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt; phần 'dự đoán' được ghi rõ là dự đoán.
+    review: dung
+  - id: n51
+    cau: Người tham gia của Wason là sinh viên được mô tả là thông minh, và Nickerson (1998) nhấn mạnh thiên kiến này cũng được thấy ở những người làm khoa học.
+    loai: phat-hien
+    nguon:
+      - wason1960
+      - nickerson1998
+    trich: This investigation examines the extent to which intelligent young adults seek (i) confirming evidence alone (enumerative induction) or (ii) confirming and discontinuing evidence (eliminative induction)
+    vi_tri: Wason 1960, tóm tắt; Nickerson 1998 mục "Science"
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "được ghi nhận ở rất nhiều nhóm người khác nhau". Chữ mới theo hai nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717", "https://doi.org/10.1037/1089-2680.2.2.175" ]
+    luot_2_ghi_chu: Đọc toàn văn cả hai.
+    review: dung
+  - id: n52
+    cau: Mười dãy số chẵn tăng đều đều "đúng" cũng không loại trừ được quy tắc thật; số lượng bằng chứng khẳng định không bù được cho sự vắng mặt của một phép thử bác bỏ.
+    loai: loi-khuyen
+    nguon:
+      - nickerson1998
+      - wason1960
+    trich: they precluded themselves from discovering that it was incorrect if the triplets it prescribed constituted a subset of those prescribed by the actual rule.
+    vi_tri: Nickerson 1998, mục về nhiệm vụ của Wason
+    ket_qua: dung
+    ghi_chu: Suy luận logic từ trích; "mười dãy" là ví dụ của trang.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Lời khuyên khớp logic Wason.
+  - id: n53
+    cau: 'Đọc thêm: bài "Vì sao ta tin điều vô lý?" (lập luận có động cơ) và "Vì sao ta khó đổi ý khi đã chọn?" (bất hòa nhận thức) có trên site.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: trang.yml có kham-pha/tu-duy/tin-dieu-vo-ly và kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc; link nội bộ đúng. Trang sau chưa khóa nên hiện "sắp có" ở bản thật. Review (Claude Sonnet 5.5, 10/11/2026): dung. Link đúng, trang có trong trang.yml.'
+    review: dung
+  - id: n54
+    cau: Phần "Mức độ chắc chắn" của trang gắn nhãn tranh cãi cho cách diễn giải hiện tượng (hành vi vững chắc, gọi là "thiên kiến có hại" hay "lối tắt hợp lý" thì còn bàn cãi).
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trên trang: có khung Vững chắc và khung Đang tranh cãi trong mục "Mức độ chắc chắn". Review (Claude Sonnet 5.5, 10/11/2026): dung. Trang có khung Đang tranh cãi ở mục Mức độ chắc chắn. Sau review khung hành vi là Khá vững: đã sửa chữ "hành vi thì vững chắc" trong giải thích quiz thành "khá vững".'
+    review: dung
+  - id: n55
+    cau: 'Câu hỏi 1: các dãy như 8–10–12, 20–22–24 không giúp vì chúng phù hợp cả với phỏng đoán sai ("số chẵn tăng đều") lẫn quy tắc thật ("ba số tăng dần bất kỳ"), nên không loại trừ được gì; một phép thử chỉ có giá trị khi có khả năng chứng minh bạn sai.'
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+      - wason1960
+    trich: the strategy of using only sets of successive even numbers would not reveal the incorrectness of the hypothesis because every test item would get a positive response.
+    vi_tri: Nickerson 1998, mục về nhiệm vụ của Wason
+    ket_qua: dung
+    ghi_chu: Quiz câu 1 (đáp án đúng và giải thích).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: Câu quiz khớp bài gốc.
+  - id: n56
+    cau: 'Câu hỏi 2: chỉ 6 trong 29 người tìm ra quy tắc đúng mà không nêu sai lần nào; phần lớn nêu sai ít nhất một lần (13 + 9 = 22 người).'
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: Six out of 29 subjects reached the correct conclusion without previous incorrect ones, 13 reached one incorrect conclusion, nine reached two or more incorrect conclusions, and one reached no conclusion.
+    vi_tri: Wason 1960, tóm tắt
+    ket_qua: dung
+    ghi_chu: Quiz câu 2. Giải thích "chỉ thử những dãy phù hợp phỏng đoán" khớp n17–n19.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/17470216008416717" ]
+    luot_2_ghi_chu: 13 + 9 = 22. Đọc toàn văn qua Internet Archive (bản PDF của nhà xuất bản).
+  - id: n57
+    cau: 'Câu hỏi 3: theo Klayman và Ha (1987), nhiều hiện tượng gọi là "thiên kiến xác nhận" thực chất là chiến lược kiểm tra tích cực, có thể là cách làm tốt trong điều kiện thực tế nhưng đôi khi gây lỗi hệ thống.'
+    loai: phat-hien
+    nguon:
+      - klayman1987
+    trich: the positive test strategy can be a very good heuristic for determining the truth or falsity of a hypothesis under realistic conditions. It can, however, lead to systematic errors or inefficiencies.
+    vi_tri: Klayman & Ha 1987, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Quiz câu 3: chữ cũ "thường hợp lý, chỉ gây lỗi trong một số nhiệm vụ"; chữ mới theo tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pages.ucsd.edu/~mckenzie/KlaymanHaPsychReview1987.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn.
+    review: dung
+  - id: n58
+    cau: 'Câu hỏi 4: mỗi phe đánh giá nghiên cứu ủng hộ mình là thuyết phục hơn, và cả hai đều nói thái độ của mình cực đoan hơn theo hướng ban đầu (tự báo cáo).'
+    loai: phat-hien
+    nguon:
+      - lord1979
+      - miller1993
+    trich: subjects reported that their attitudes had become more extreme in the direction of their initial point of view after evaluating the research evidence
+    vi_tri: Miller 1993, đoạn mở bài (tóm Lord 1979)
+    ket_qua: da-sua
+    ghi_chu: 'Quiz câu 4 (đáp án đúng); theo G1-L02 đã làm mềm "hai phe càng xa nhau" thành "nói mình tin chắc hơn". Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "cả hai đều nói mình tin chắc hơn trước"; sửa cho khớp tóm tắt Lord 1979 (attitudes more extreme, reported).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.37.11.2098", "https://doi.org/10.1037/0022-3514.64.4.561" ]
+    luot_2_ghi_chu: Chỉ tóm tắt. Lord đo 'cực đoan hơn' do tự báo cáo; 'tin chắc hơn' trong ngoặc được giải thích đúng là cực đoan hơn.
+    review: sai
+  - id: n59
+    cau: 'Câu hỏi 5: kỹ thuật "xét điều ngược lại" giúp đánh giá bằng chứng bớt thiên lệch hơn lời dặn chung chung hãy công bằng; nó không đảm bảo bạn sẽ đổi ý.'
+    loai: phat-hien
+    nguon:
+      - lord1984
+    trich: the induction of a consider-the-opposite strategy had greater corrective effect than more demand-laden alternative instructions to be as fair and unbiased as possible.
+    vi_tri: Lord 1984, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Quiz câu 5. Chữ cũ: "cũng đủ làm giảm sự diễn giải thiên lệch... chỉ đảm bảo bạn đã thực sự lắng nghe phía bên kia". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.47.6.1231", "https://doi.org/10.1111/jasp.12968" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt; câu 'không đảm bảo đổi ý' đúng vì thiết kế đo độ thiên lệch, không đo đổi ý.
+    review: dung
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Mục Nghiên cứu then chốt (Wason 1960): "nhà tâm lý học người Anh", "29 người trưởng thành", "ghi lại các giả thuyết", "toàn số chẵn tăng đều... hiếm khi được thử... dãy gồm số lẻ tăng dần"'
+    moi: University College London; 29 sinh viên tâm lý (17 nam, 12 nữ); ghi lý do chọn mỗi dãy; số liệu 3,7 và 8,0 dãy, 0,04 và 0,21; "không thể hoặc không muốn"
+    ly_do: Hồ sơ n3, n5, n12–n14, n17–n20.
+  - cu: 'Đáp án mở đầu: "Hầu hết mọi người đoán...", "càng thử họ càng tin", "2–3–4 (số lẻ, tăng không đều)"'
+    moi: '"Nhiều người đoán một quy tắc hẹp hơn...", "họ thường nêu quy tắc sai chỉ sau vài lần thử", "2–3–4 (không còn là số chẵn cách nhau 2)"'
+    ly_do: Hồ sơ n3, n5, n6.
+  - cu: '"người tham gia không hề gian lận: họ thực sự tin rằng mình đang kiểm tra giả thuyết một cách nghiêm túc"; ngộ nhận 1 tương tự'
+    moi: Nickerson mô tả sự chọn lọc không chủ ý; có cách giải thích rằng họ không nghĩ ra cách bác bỏ (Evans)
+    ly_do: Hồ sơ n9, n10.
+  - cu: 'Nickerson (1998): "kiểm tra giả thuyết, diễn giải bằng chứng, ghi nhớ, ra quyết định"; "bác sĩ diễn giải kết quả xét nghiệm... lướt tin tức mỗi ngày"'
+    moi: '"tìm kiếm và diễn giải bằng chứng, ghi nhớ có chọn lọc, các ví dụ ngoài phòng thí nghiệm"; ví dụ chẩn đoán y khoa, xét xử, khoa học'
+    ly_do: Hồ sơ n22, n23.
+  - cu: 'Khung Vững chắc: ý chính "kiểm tra giả thuyết bằng bằng chứng phù hợp với nó", "hơn 60 năm, nhiều nhóm người"'
+    moi: Ý chính "ưu tiên tìm và chọn thông tin phù hợp với niềm tin hay giả thuyết sẵn có"; thêm Hart và cộng sự (2009), d = 0,36; bỏ "hơn 60 năm"
+    ly_do: Hồ sơ n28–n31. Thêm Hart 2009 vào Nguồn.
+  - cu: 'Klayman và Ha: "rẻ, nhanh và khá hợp lý... chỉ gây ra lỗi hệ thống"'
+    moi: '"một cách làm rất tốt... dù vẫn có thể gây lỗi hệ thống hay kém hiệu quả"'
+    ly_do: Hồ sơ n34, n38.
+  - cu: '"Có ba cách giải thích chính"; "Ba khâu này củng cố lẫn nhau thành một vòng lặp khép kín"'
+    moi: '"Có ba cách giải thích thường được nêu"; bỏ câu về vòng lặp'
+    ly_do: Hồ sơ n36.
+  - cu: '"Động cơ bảo vệ bản thân": bản sắc, tôn giáo, lòng tự trọng nghề nghiệp; "soi rất kỹ... dễ dãi"'
+    moi: '"Mong muốn tin điều mình thích (Nickerson, 1998)"'
+    ly_do: Hồ sơ n39, n40.
+  - cu: 'Mục Áp dụng 1: chip Khá vững'
+    moi: Chip Đang tranh cãi; thêm lưu ý về Evans 1989 (dẫn Nickerson)
+    ly_do: Hồ sơ n42, n43.
+  - cu: 'Mục Áp dụng 2: "đánh giá bằng chứng công bằng hơn hẳn"; tự hỏi "nếu kết quả ra ngược lại thì tôi sẽ giải thích thế nào?"'
+    moi: '"bớt thiên lệch hơn so với những người chỉ được dặn hãy công bằng"; "xét vì sao điều ngược lại có thể đúng"'
+    ly_do: Hồ sơ n44–n46.
+  - cu: 'Mục Áp dụng 3 và 4: chip Khá vững, "đăng ký trước", "ta khó nhớ lại mình đã đoán đúng", "không xóa được thiên kiến của từng cá nhân"'
+    moi: Bỏ chip; ghi là gợi ý thực hành chưa có nghiên cứu được dẫn
+    ly_do: Hồ sơ n47, n48.
+  - cu: 'Phần "hai phe càng xa nhau hơn": "các lần làm lại thường không thấy nó"'
+    moi: '"trong một loạt nghiên cứu làm lại... người ta không thấy nó"'
+    ly_do: Hồ sơ n26.
+  - cu: 'Ở Việt Nam: "Chúng tôi chưa tìm thấy...", "các lần làm lại sau đó chủ yếu dùng người tham gia ở các nước phương Tây", "phân cực rõ hơn ở người có quan điểm ban đầu cực đoan"'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy..."; bỏ câu về các lần làm lại; "sự phân cực do người tham gia tự báo cáo về án tử hình rõ hơn ... so với vừa phải"'
+    ly_do: Hồ sơ n49, n50.
+  - cu: Quiz câu 3 ("thường hợp lý, chỉ gây lỗi trong một số nhiệm vụ"), câu 5 ("chỉ đảm bảo bạn đã thực sự lắng nghe")
+    moi: '"có thể là cách làm tốt trong điều kiện thực tế nhưng đôi khi gây lỗi hệ thống"; "giảm thiên lệch hơn lời dặn chung chung hãy công bằng"'
+    ly_do: Hồ sơ n57, n59.
+  - cu: 'Khung nhãn hành vi: "Vững chắc"; quiz câu 3: "hành vi thì vững chắc"'
+    moi: 'Khá vững; thêm câu giới hạn (mẫu chủ yếu phương Tây, chưa có tái lập lớn đăng ký trước)'
+    ly_do: Hồ sơ n28 (review).
+  - cu: 'Lord, Ross và Lepper: "cả hai đều nói rằng mình tin chắc hơn trước" (mục nghiên cứu và quiz câu 4)'
+    moi: '"cả hai đều nói rằng thái độ của mình đã cực đoan hơn theo hướng quan điểm ban đầu"'
+    ly_do: Hồ sơ n25, n58 (review).
+  - cu: 'Mục Áp dụng 4: "chưa dẫn nghiên cứu đo hiệu quả của nó", không có chip'
+    moi: 'Chip Đang tranh cãi; thêm Nemeth và cộng sự (2001) vào Nguồn'
+    ly_do: Hồ sơ n48 (review, theo lượt 2).
+  - cu: 'Ở Việt Nam: "chưa tìm thấy nghiên cứu nào kiểm tra nhiệm vụ 2–4–6 hay các dạng thiên kiến xác nhận tương tự trên người Việt"'
+    moi: '"chưa tìm thấy nghiên cứu thực nghiệm nào dùng nhiệm vụ 2–4–6 hay đo thiên kiến xác nhận bằng hành vi"; nêu khảo sát tự báo cáo nhà đầu tư VN30 (2026)'
+    ly_do: Hồ sơ n49 (review, theo lượt 2).
