@@ -4,14 +4,932 @@ nguon_cu: ../psyche-zero/docs/kham-pha/cang-thang-giac-ngu/doi-pho-stress.md
 tang: loi
 muc: V3
 lan:
-  - so: 1
-    ngay: null
-    nhanh: moi/d6-l1
-    ma_bam: null
-    nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
-      kiem_mau: null
-nguon: []
-nhan_dinh: []
+- so: 1
+  ngay: '2026-11-10'
+  nhanh: moi/d6-l1
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L1 phần 1/2)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: folkman1986
+  ten: 'Folkman, Lazarus, Gruen & DeLongis (1986), J Pers Soc Psychol 50(3), 571–579: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+  link: https://doi.org/10.1037/0022-3514.50.3.571
+  toan_van: true
+- id: forsythe1987
+  ten: 'Forsythe & Compas (1987), Cogn Ther Res 11(4), 473–485: toàn văn (bản PDF do nhóm Compas, Đại học Vanderbilt, đăng)'
+  link: https://doi.org/10.1007/BF01175357
+  toan_van: true
+- id: finkel2025
+  ten: 'Finkel, Fougea & Le Roux (2025), arXiv:2501.05185: toàn văn; bài này trích nguyên văn và ghi số trang của sách Lazarus & Folkman (1984), nên là nguồn thứ cấp ''theo X kể lại'''
+  link: https://arxiv.org/abs/2501.05185
+  toan_van: true
+- id: lazarus1984
+  ten: 'Lazarus & Folkman (1984), Stress, Appraisal, and Coping, Springer: sách in, không mở được toàn văn; kiểm qua Folkman 1986, Forsythe & Compas 1987 (trích định nghĩa coping, tr. 141) và Finkel 2025 (theo X kể lại)'
+  link: null
+  toan_van: false
+- id: folkman1988
+  ten: 'Folkman & Lazarus (1988), Soc Sci Med 26(3), 309–317: tóm tắt (PubMed, PMID 3279520)'
+  link: https://doi.org/10.1016/0277-9536(88)90395-4
+  toan_van: false
+- id: kendall2008
+  ten: 'Kendall & Terry (2008), Soc Sci Med 67(8), 1217–1224: tóm tắt (Europe PMC, PMID 18625542)'
+  link: https://doi.org/10.1016/j.socscimed.2008.05.033
+  toan_van: false
+- id: conway1992
+  ten: 'Conway & Terry (1992), Aust J Psychol 44(1), 1–7: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1080/00049539208260155
+  toan_van: false
+- id: zakowski2001
+  ten: 'Zakowski, Hall, Klein & Baum (2001), Ann Behav Med 23(3), 158–165: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1207/S15324796ABM2303_3
+  toan_van: false
+- id: bonanno2013
+  ten: 'Bonanno & Burton (2013), Perspect Psychol Sci 8(6), 591–612: tóm tắt (OpenAlex, Europe PMC PMID 26173226); không mở được toàn văn'
+  link: https://doi.org/10.1177/1745691613504116
+  toan_van: false
+- id: cheng2014
+  ten: 'Cheng, Lau & Chan (2014), Psychol Bull 140(6), 1582–1607: tóm tắt (OpenAlex, Europe PMC PMID 25222637)'
+  link: https://doi.org/10.1037/a0037913
+  toan_van: false
+- id: penley2002
+  ten: 'Penley, Tomaka & Wiebe (2002), J Behav Med 25(6), 551–603: tóm tắt (Europe PMC, PMID 12462958)'
+  link: https://doi.org/10.1023/A:1020641400589
+  toan_van: false
+- id: webb2012
+  ten: 'Webb, Miles & Sheeran (2012), Psychol Bull 138(4), 775–808: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1037/a0027600
+  toan_van: false
+- id: kuo2013
+  ten: 'Kuo (2013), Int J Psychol 48(3), 374–388: tóm tắt (Europe PMC, PMID 22335198)'
+  link: https://doi.org/10.1080/00207594.2011.640681
+  toan_van: false
+- id: nhs-stress
+  ten: 'NHS (Anh), trang Stress: trang chính thức, đọc ngày 10/11/2026'
+  link: https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/
+  toan_van: true
+- id: tim-kiem-vn
+  ten: 'Tìm trên Europe PMC ngày 10/11/2026: (TITLE_ABS "goodness of fit" hoặc "goodness-of-fit") AND coping AND (Vietnam* OR Vietnamese): 1 kết quả, là nghiên cứu cựu tù binh Mỹ thời chiến tranh Việt Nam, không phải người Việt; TITLE_ABS "coping flexibility" AND (Vietnam* OR Vietnamese): 0; coping AND ("problem-focused" OR "emotion-focused") AND (Vietnam* OR Vietnamese) AND (controllab* OR appraisal): 0. OpenAlex hết hạn mức ngày 10/11/2026 nên không dùng được'
+  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22coping%20flexibility%22%20AND%20TITLE_ABS%3A(Vietnam*%20OR%20Vietnamese)
+  toan_van: false
+nhan_dinh:
+- id: n1
+  cau: 'Mô tả: Lazarus và Folkman (1984) đề xuất rằng hiệu quả của cách đối phó phụ thuộc vào tình huống; đối phó tập trung vào vấn đề được cho là hợp với việc thay đổi được, đối phó cảm xúc hợp với việc không thay đổi được.'
+  loai: phat-hien
+  nguon:
+  - kendall2008
+  - zakowski2001
+  - forsythe1987
+  trich: The hypothesis suggests that the nature and success of specific coping strategies will be associated with the controllability of the event. If an event is relatively uncontrollable, then emotion-focused or perception-focused coping may be more effective than problem-focused coping. In contrast, a controllable event may be best managed through problem-focused coping. [Kendall & Terry 2008, tóm tắt, nói đây là giả thuyết rút từ lý thuyết Lazarus & Folkman 1984]
+  vi_tri: Kendall & Terry 2008, tóm tắt; Zakowski 2001, tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ (mô tả): "Lazarus và Folkman (1984) chỉ ra rằng không có cách đối phó stress nào tốt cho mọi tình huống — đối phó tập trung vào vấn đề hợp với việc thay đổi được, đối phó cảm xúc hợp với việc không thay đổi được. Linh hoạt mới là chìa khóa." Chữ mới: "…đề xuất rằng hiệu quả… phụ thuộc vào tình huống… Bằng chứng cho sự khớp này còn lẫn lộn, và tính linh hoạt được xem là hướng hứa hẹn hơn." Lý do: "chỉ ra" và "Linh hoạt mới là chìa khóa" mạnh hơn bằng chứng (Kendall 2008 không ủng hộ, Conway 1992 và Zakowski 2001 ủng hộ một phần).'
+- id: n2
+  cau: Bằng chứng cho sự khớp giữa cách đối phó và tình huống còn lẫn lộn, và tính linh hoạt được xem là hướng hứa hẹn hơn (mô tả).
+  loai: phat-hien
+  nguon:
+  - kendall2008
+  - conway1992
+  - zakowski2001
+  - forsythe1987
+  - cheng2014
+  trich: No support was found for the Goodness-of-Fit model, either in the short term or the long term. [Kendall & Terry]; provided some support for these hypotheses [Conway & Terry]; the goodness-of-fit hypothesis was partly confirmed [Zakowski et al.]; Studies adopting the perceived ability or strategy-situation fit conceptualization yielded moderate effect sizes [Cheng et al.]
+  vi_tri: tóm tắt của từng bài
+  ket_qua: dung
+  ghi_chu: Khớp nhãn tranh-cai ở khung 'Mức độ chắc chắn'. 'Hướng hứa hẹn' = ý kiến của trang, dựa vào Cheng 2014 (k = 329, r = 0,23).
+- id: n3
+  cau: Hai người (Lan, Minh) là ví dụ giả định của chúng tôi.
+  loai: ve-site
+  review: dung
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: Lan và Minh là ví dụ giả định, đã ghi rõ trên trang (''ví dụ giả định của chúng tôi''). Nội dung các ví dụ không trái với nhận định nào của trang. Đã kiểm trên trang.'
+- id: n4
+  cau: Câu hỏi 'Ai đang đối phó đúng?' đặt bẫy, vì giả định có một đáp án đúng cho mọi tình huống.
+  loai: loi-khuyen
+  nguon:
+  - cheng2014
+  - penley2002
+  trich: type of health outcome ... and situational characteristics (i.e., stressor type, controllability, and duration) moderated many of the overall associations. [Penley 2002]
+  vi_tri: Penley 2002, tóm tắt
+  ket_qua: dung
+  ghi_chu: Ý nhận xét của trang, cùng ý với khung kha-vung n29 (không có chiến lược tốt cho mọi tình huống).
+- id: n5
+  cau: Lan dùng cách đối phó tập trung vào cảm xúc cho một vấn đề thay đổi được (kỳ thi, càng ôn càng cải thiện được); Minh dùng cách tập trung vào vấn đề cho một việc không thay đổi được (bệnh không thể chữa khỏi).
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: 'Coping has two major functions: dealing with the problem that is causing the distress (problem-focused coping) and regulating emotion (emotion-focused coping).'
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: mô tả phân loại ví dụ giả định theo định nghĩa hai họ đối phó (n9, n10); không phải điều nghiên cứu nào đã thấy. Đã kiểm trên trang. Chữ ''bệnh nan y'' giữ ở mức giáo dục, không phải lời khuyên điều trị.'
+- id: n6
+  cau: Theo giả thuyết khớp nhau, Lan và Minh dùng cách đối phó lệch với tình huống, và lệch pha như vậy có thể làm họ kiệt sức hơn.
+  loai: loi-khuyen
+  nguon:
+  - forsythe1987
+  trich: symptomatology was high when there was a poor fit between appraisals and coping (e.g., trying to change a stressor that was appraised as uncontrollable)
+  vi_tri: Forsythe & Compas 1987, tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Cả hai đều đang dùng sai vũ khí cho trận địa của mình — và cả hai đều sẽ kiệt sức." Chữ mới: "Theo giả thuyết khớp nhau, cả hai đang dùng cách đối phó lệch với tình huống của mình — và lệch pha như vậy có thể làm họ kiệt sức hơn." Lý do: chắc chắn ("sẽ kiệt sức") mạnh hơn bằng chứng (Forsythe & Compas chỉ thấy triệu chứng cao hơn với sự kiện lớn, không thấy ở chuyện hằng ngày; Kendall & Terry không xác nhận); "kiệt sức" không phải kết quả đo.'
+- id: n7
+  cau: Trong đời thực ranh giới giữa việc thay đổi được và không thay đổi được thường mờ; chăm sóc giảm nhẹ cho cha vẫn là điều Minh có thể làm.
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: situational appraisals of control may be more variable than stable
+  vi_tri: 'Folkman 1986, tr. 572 (tóm lược các nghiên cứu trước); bảng 2: ''Could change'' có tự tương quan thấp'
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: phần về Minh là ví dụ giả định; phần ''ranh giới thường mờ'' dựa vào việc đánh giá kiểm soát biến động giữa các tình huống (Folkman 1986). Mức vừa phải (''thường mờ'' là suy ra từ biến động, không phải kết quả đo trực tiếp).'
+- id: n8
+  cau: 'Đáp án của giả thuyết khớp nhau: điều quan trọng là sự khớp nhau giữa cách đối phó và bản chất tình huống; đây là giả thuyết có bằng chứng lẫn lộn.'
+  loai: phat-hien
+  nguon:
+  - forsythe1987
+  - kendall2008
+  - conway1992
+  - zakowski2001
+  trich: Results were generally consistent with cognitive-transactional models of stress and coping. [Forsythe & Compas]; No support was found for the Goodness-of-Fit model [Kendall & Terry]
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Đáp án của tâm lý học hiện đại: không có cách nào tốt cho mọi tình huống. Cái đúng là sự khớp nhau giữa cách đối phó và bản chất của tình huống." Chữ mới: "Đáp án của giả thuyết khớp nhau: … Nhưng đây là một giả thuyết có bằng chứng lẫn lộn…" Lý do: "đáp án của tâm lý học hiện đại" và "cái đúng là" khẳng định chắc điều mà nhãn của chính trang là tranh cãi.'
+- id: n9
+  cau: Một điểm xuất phát của lý thuyết đánh giá nhận thức về stress là nhận xét rằng cùng một sự việc, mỗi người phản ứng một khác.
+  loai: lich-su
+  nguon:
+  - finkel2025
+  - lazarus1984
+  trich: These definitions fail to explain the discrepancies in response between persons to the same stimulus (p.19).
+  vi_tri: Finkel và cộng sự 2025, mục 3, kể lại Lazarus & Folkman 1984, tr. 19 (theo X kể lại)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Điểm khởi đầu của mọi lý thuyết hiện đại về stress là một phát hiện đơn giản: cùng một sự việc, người thì sụp đổ, người thì vượt qua." Chữ mới: "Một điểm xuất phát của lý thuyết đánh giá nhận thức về stress là nhận xét: cùng một sự việc, mỗi người phản ứng một khác." Lý do: "mọi lý thuyết hiện đại" và "phát hiện" không kiểm được; nguồn kể lại chỉ nói định nghĩa stress cũ không giải thích được khác biệt giữa người với người. Theo Finkel 2025 kể lại, không đọc sách gốc.'
+- id: n10
+  cau: Lazarus và Folkman cho rằng một phần câu trả lời nằm ở đánh giá (appraisal), cách mỗi người diễn giải tình huống, chứ không chỉ ở bản thân sự việc.
+  loai: lich-su
+  nguon:
+  - folkman1986
+  - finkel2025
+  trich: The theory identifies two processes, cognitive appraisal and coping, as critical mediators of stressful person-environment relationships and their immediate and long-term outcomes.
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "câu trả lời nằm ở đánh giá … chứ không nằm ở bản thân sự việc". Chữ mới: "một phần câu trả lời … chứ không chỉ ở bản thân sự việc". Lý do: nguồn nói đánh giá và đối phó là "khâu trung gian then chốt", không nói sự việc không đóng vai trò.'
+- id: n11
+  cau: 'Mô hình gồm hai bước đánh giá đan xen nhau: đánh giá ban đầu (primary) và đánh giá thứ cấp (secondary).'
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  - finkel2025
+  trich: 'There are two kinds of cognitive appraisal: primary and secondary.'
+  vi_tri: 'Folkman 1986, tr. 572; Finkel 2025: ''cannot be considered as separate'' (L&F 1984, tr. 43, theo X kể lại)'
+  ket_qua: dung
+- id: n12
+  cau: 'Đánh giá ban đầu: ''chuyện này có ảnh hưởng gì đến mình không?''; kỳ thi có thể bị đánh giá là mối đe dọa, điều có lợi, hoặc chuyện chẳng đáng bận tâm.'
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  - finkel2025
+  trich: In primary appraisal, the person evaluates whether he or she has anything at stake in this encounter. [Folkman 1986]; whether a particular stimulus is beneficial, irrelevant or stressful (p.32). [Finkel 2025, kể lại L&F 1984]
+  vi_tri: Folkman 1986, tr. 572; Finkel 2025, mục 3
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Chuyện này có đe dọa gì đến mình không?… Một kỳ thi có thể là mối đe dọa, là thử thách ("cơ hội chứng tỏ bản thân"), hoặc là chuyện chẳng đáng bận tâm." Chữ mới: "…có ảnh hưởng gì đến mình không?… mối đe dọa, điều có lợi, hoặc chuyện chẳng đáng bận tâm." Lý do: nguồn đã mở nói ba loại kết quả đánh giá là có lợi, không liên quan, gây stress; "thử thách" (challenge) không có trong nguồn đọc được; ví dụ kỳ thi là minh họa của trang.'
+- id: n13
+  cau: 'Đánh giá thứ cấp: ''mình có thể làm được gì? việc này có thay đổi được không?''; cân nhắc thay đổi tình huống, chấp nhận nó, tìm thêm thông tin hay kìm lại chưa hành động.'
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  trich: In secondary appraisal the person evaluates what, if anything, can be done to overcome or prevent harm or to improve the prospects for benefit. Various coping options are evaluated, such as changing the situation, accepting it, seeking more information, or holding back from acting impulsively.
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Mình có nguồn lực gì? Việc này có thay đổi được không?" Chữ mới: "Mình có thể làm được gì? Việc này có thay đổi được không?" cùng danh sách các lựa chọn. Lý do: nguồn nói đánh giá thứ cấp là đánh giá các lựa chọn đối phó, không nhắc "nguồn lực" như câu hỏi riêng.'
+- id: n14
+  cau: Đối phó (coping) là những nỗ lực nhận thức và hành vi liên tục thay đổi nhằm quản lý các đòi hỏi được đánh giá là vượt quá nguồn lực của bản thân.
+  loai: dinh-nghia
+  nguon:
+  - forsythe1987
+  - finkel2025
+  - folkman1986
+  trich: constantly changing cognitive and behavioral efforts to manage specific external and or internal demands that are appraised as taxing or exceeding the resources of the person (p. 141)
+  vi_tri: Forsythe & Compas 1987, tr. 474, trích Lazarus & Folkman 1984, tr. 141; Finkel 2025 trích cùng câu (theo X kể lại). Câu 'quiz 1' và đáp án đúng của câu hỏi 1 trùng nhận định này
+  ket_qua: dung
+  ghi_chu: Định nghĩa nguyên văn qua hai bài đã mở (không mở được sách gốc). 'taxing or exceeding' dịch 'vượt quá'.
+- id: n15
+  cau: 'Hai họ chiến lược đối phó: tập trung vào vấn đề (problem-focused) và tập trung vào cảm xúc (emotion-focused).'
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  trich: 'Coping has two major functions: dealing with the problem that is causing the distress (problem-focused coping) and regulating emotion (emotion-focused coping).'
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: dung
+- id: n16
+  cau: Đối phó tập trung vào vấn đề tấn công trực tiếp vào nguồn stress (ví dụ lập kế hoạch ôn thi, thương lượng lại deadline, tìm thông tin).
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  trich: problem-focused forms of coping include aggressive interpersonal efforts to alter the situation, as well as cool, rational, deliberate efforts to problem solve
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: dung
+  ghi_chu: Ví dụ ôn thi, thương lượng deadline là minh họa của trang (gia-dinh), cùng loại với 'planful problem solving'.
+- id: n17
+  cau: Đối phó tập trung vào cảm xúc điều chỉnh phản ứng cảm xúc (ví dụ tìm sự hỗ trợ, nhìn nhận lại theo hướng tích cực, giữ khoảng cách, tạm thời phân tâm).
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  trich: emotion-focused forms of coping include distancing, self-controlling, seeking social support, escape-avoidance, accepting responsibility, and positive reappraisal
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "xoa dịu phản ứng cảm xúc: tìm sự an ủi, chấp nhận, tìm ý nghĩa, tạm thời phân tâm." Chữ mới: "điều chỉnh phản ứng cảm xúc — ví dụ tìm sự hỗ trợ, nhìn nhận lại theo hướng tích cực, giữ khoảng cách, tạm thời phân tâm." Lý do: khớp danh sách các dạng của Folkman 1986 (seeking social support, positive reappraisal, distancing); "tìm ý nghĩa" gần positive reappraisal nhưng không giống hẳn; "chấp nhận" bỏ vì nguồn xếp accepting responsibility (nhận trách nhiệm), không phải chấp nhận thực tế.'
+- id: n18
+  cau: Theo mô hình, đối phó thay đổi theo những đánh giá liên tục về mối quan hệ người–môi trường đang biến đổi.
+  loai: phat-hien
+  nguon:
+  - finkel2025
+  - lazarus1984
+  trich: a function of the continuous appraisals (...) of the evolving person-environment relationship (p.142, l.32)
+  vi_tri: Finkel 2025, mục 3, kể lại L&F 1984, tr. 142 (theo X kể lại)
+  ket_qua: dung
+  ghi_chu: Theo Finkel và cộng sự 2025 kể lại, không đọc sách gốc.
+- id: n19
+  cau: Vì vậy sau khi đối phó ta có thể đánh giá lại ('cách này có hiệu quả không?') rồi điều chỉnh tiếp.
+  loai: phat-hien
+  nguon:
+  - finkel2025
+  - bonanno2013
+  trich: The system loops between states pa and sa for a while [Finkel 2025, tr. 6]; responsiveness to feedback [Bonanno & Burton 2013, tóm tắt]
+  vi_tri: Finkel 2025, mục 4
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Và vòng lặp không dừng ở đó: sau khi đối phó, ta đánh giá lại (reappraisal) … rồi điều chỉnh tiếp." Chữ mới: bỏ thuật ngữ "(reappraisal)" ở đây, nói "ta có thể đánh giá lại", gắn với mô hình đánh giá liên tục. Lý do: các nguồn đã mở không có thuật ngữ reappraisal như một bước của mô hình gốc; (positive reappraisal là một dạng đối phó khác, Folkman 1986).'
+- id: n20
+  cau: Đối phó được xem chủ yếu là một quá trình động, chứ không chỉ là một 'tính cách' cố định.
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: Our research suggests that on the whole these processes tend to be more variable than stable
+  vi_tri: Folkman 1986, tr. 578 (Conclusion)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Đối phó vì thế là một quá trình động, không phải một "tính cách" cố định." Chữ mới: "…được xem chủ yếu là một quá trình động, chứ không chỉ là một tính cách cố định." Lý do: cũng bài này nói "people have characteristic ways of appraising and coping" (có phần ổn định), nên "không phải" mạnh hơn nguồn.'
+- id: n21
+  cau: 'Lazarus và Folkman (1984) viết cuốn Stress, Appraisal, and Coping (New York: Springer Publishing Company).'
+  loai: lich-su
+  nguon:
+  - lazarus1984
+  - forsythe1987
+  trich: 'Lazarus, R. S., & Folkman, S. (1984). Stress, appraisal, and coping. New York: Springer.'
+  vi_tri: Forsythe & Compas 1987, tài liệu tham khảo (tr. 484); Folkman 1986, tr. 571
+  ket_qua: dung
+  ghi_chu: Nhà xuất bản Springer ghi theo cả hai bài; 'Springer Publishing Company' là tên đầy đủ (không kiểm thêm).
+- id: n22
+  cau: 'Họ đề xuất mô hình giao dịch: stress không nằm ở môi trường, cũng không nằm ở con người, mà nằm ở mối quan hệ giữa người và môi trường, mối quan hệ mà người ấy đánh giá là vượt quá nguồn lực của mình và đe dọa sức khỏe tinh thần.'
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  - finkel2025
+  trich: Stress is conceptualized as a relationship between the person and the environment that is appraised by the person as taxing or exceeding his or her resources and as endangering well-being. [Folkman 1986]; Psychological stress is a particular relationship between the person and the environment that is appraised by the person as taxing or exceeding his or her resources and endangering his or her well-being (p.19, l.26). [Finkel 2025]
+  vi_tri: Folkman 1986, tr. 572; Finkel 2025, mục 3
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "hệ thống hóa hai thập kỷ nghiên cứu thành mô hình giao dịch … cụ thể là ở cách con người đánh giá mối quan hệ đó". Chữ mới: bỏ "hệ thống hóa hai thập kỷ nghiên cứu" (không kiểm được), nói "mối quan hệ mà người ấy đánh giá là vượt quá nguồn lực … và đe dọa sức khỏe tinh thần". Lý do: khớp định nghĩa nguyên văn; "hai thập kỷ" không có trong nguồn đã mở. "Mô hình giao dịch" (transactional) khớp Folkman 1986, tr. 572.'
+- id: n23
+  cau: 'Ba ý cốt lõi vẫn còn được dùng đến hôm nay: (1) đánh giá của cá nhân là khâu trung gian then chốt của phản ứng stress; (2) đối phó chủ yếu là quá trình thay đổi theo tình huống, không chỉ là đặc điểm tính cách ổn định; (3) không nên đánh giá một chiến lược đối phó mà không xét bối cảnh dùng nó.'
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: it is important not to value a particular form of coping without reference to the context in which it is used
+  vi_tri: Folkman 1986, tr. 578
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Ba đóng góp cốt lõi còn nguyên giá trị đến hôm nay: (1) đánh giá … — chứ không phải sự việc khách quan — quyết định phản ứng stress; (2) … không phải một đặc điểm tính cách ổn định; (3) không có chiến lược đối phó nào tốt hay xấu một cách tuyệt đối". Chữ mới nói "vẫn còn được dùng đến hôm nay", "khâu trung gian then chốt", "chủ yếu", "không nên đánh giá … mà không xét bối cảnh". Lý do: "quyết định", "còn nguyên giá trị", "tuyệt đối" mạnh hơn bằng chứng; điểm (3) trong Folkman 1986 là lời khuyên thận trọng của chính các tác giả. Không kiểm được "ba đóng góp cốt lõi" của sách gốc.'
+- id: n24
+  cau: 'Trước đây đối phó thường được xem là phản ứng đối với cảm xúc; Folkman và Lazarus (1988) đề xuất cách nhìn rộng hơn: cảm xúc và đối phó ảnh hưởng lẫn nhau trong một mối quan hệ động, hai chiều.'
+  loai: phat-hien
+  nguon:
+  - folkman1988
+  trich: Historically, coping has been viewed as a response to emotion. Our purpose here is to evaluate this idea and offer a broader view ... a dynamic, mutually reciprocal relationship.
+  vi_tri: Tóm tắt (PubMed PMID 3279520)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Trong một bài tổng quan, hai tác giả chỉ ra mối quan hệ hai chiều: cảm xúc không chỉ là kết quả cần đối phó, mà chính cảm xúc cũng định hình cách ta đánh giá và chọn chiến lược — và mỗi nỗ lực đối phó lại làm nảy sinh cảm xúc mới." Chữ mới: bỏ "bài tổng quan" (bài tự nói là đánh giá một ý tưởng và đề xuất cách nhìn rộng hơn) và bỏ chi tiết cơ chế (đánh giá, chọn chiến lược, cảm xúc mới) vì chỉ có tóm tắt. Chỗ này chỉ kiểm được tóm tắt.'
+- id: n25
+  cau: Vì vậy đừng hình dung đối phó như công thức tuyến tính 'stress → chọn cách → xong'.
+  loai: loi-khuyen
+  nguon:
+  - folkman1988
+  trich: a dynamic, mutually reciprocal relationship
+  vi_tri: Folkman & Lazarus 1988, tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: Rút ra của trang từ quan hệ hai chiều; giữ nguyên, ở mức cách hình dung, không có số liệu.
+- id: n26
+  cau: Nghiên cứu Folkman và cộng sự (1986) trên 150 người trưởng thành trong cộng đồng (75 cặp vợ chồng); mỗi người kể về sự việc căng thẳng nhất của tuần vừa qua trong năm lần phỏng vấn cách nhau một tháng.
+  loai: so-lieu
+  nguon:
+  - folkman1986
+  trich: a sample of 150 community-residing adults ... five different stressful situations [tóm tắt]; a final sample of 75 couples ... Subjects were interviewed in their homes once a month for 6 months ... The data reported in this article were gathered during the second through sixth interviews.
+  vi_tri: Tóm tắt; Method, tr. 573
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "được theo dõi qua 5 tình huống stress khác nhau trong đời sống hằng ngày". Chữ mới: thêm 75 cặp vợ chồng, sự việc căng thẳng nhất của tuần vừa qua, năm lần phỏng vấn cách nhau một tháng. Lý do: chữ cũ không sai nhưng thiếu cách thu thập; bổ sung từ phần Method. Nhóm gồm cả chồng và vợ (vợ tuổi 35–45).'
+- id: n27
+  cau: Các quá trình đánh giá và đối phó (gộp qua năm tình huống) cùng các đặc điểm tính cách giải thích được một phần đáng kể các triệu chứng tâm lý, nhưng không giải thích được đáng kể tình trạng sức khỏe thể chất.
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: The variables did not explain a significant amount of the variance in somatic health status, but they did explain a significant amount of the variance in psychological symptoms.
+  vi_tri: Tóm tắt; Results, tr. 575 (R² = .43)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "các quá trình đánh giá và đối phó giải thích được một phần đáng kể các triệu chứng tâm lý". Chữ mới thêm "cùng các đặc điểm tính cách" và vế "không giải thích được đáng kể sức khỏe thể chất". Lý do: kết quả gộp cả tính cách (mastery, trust); bỏ vế sức khỏe thể chất là bỏ sót kết quả của bài.'
+- id: n28
+  cau: Đánh giá và đối phó biến động từ tình huống này sang tình huống khác nhiều hơn là ổn định.
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: Our research suggests that on the whole these processes tend to be more variable than stable
+  vi_tri: 'Folkman 1986, tr. 578; tóm tắt: ''Certain processes (e.g., secondary appraisal) were highly variable, whereas others (e.g., emotion-focused forms of coping) were moderately stable'''
+  ket_qua: dung
+  ghi_chu: Câu mới thêm trong đợt này (không có ở bản cũ).
+- id: n29
+  cau: Các tác giả nhấn mạnh rằng không nên coi một dạng đối phó là tốt hay xấu mà không xét bối cảnh dùng nó; hiệu quả của một chiến lược có thể tùy thuộc vào tình huống, một ý tưởng sau này được kiểm chứng trực tiếp ở các nghiên cứu về sự khớp nhau.
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: it is important not to value a particular form of coping without reference to the context in which it is used
+  vi_tri: Folkman 1986, tr. 578
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Quan trọng hơn, nhóm tác giả đề xuất ý tưởng nền tảng cho cả hướng nghiên cứu sau này: hiệu quả của một chiến lược đối phó phụ thuộc vào sự đánh giá tình huống — tức là cùng một chiến lược có thể tốt trong bối cảnh này nhưng tệ trong bối cảnh khác." Chữ mới: "nhấn mạnh rằng không nên coi… mà không xét bối cảnh… hiệu quả … có thể tùy thuộc vào tình huống, một ý tưởng sau này được kiểm chứng …". Lý do: bài chỉ là lời thận trọng ở phần Discussion, không phải một đề xuất kiểm định "phụ thuộc vào sự đánh giá tình huống"; bài không kiểm tra sự khớp. Cũng sửa tiêu đề mục: "hiệu quả tùy thuộc vào đánh giá" -> "đánh giá và đối phó qua nhiều tình huống".'
+- id: n30
+  cau: 'Tiêu đề mục: Folkman, Lazarus, Gruen và DeLongis (1986): đánh giá và đối phó qua nhiều tình huống.'
+  loai: ve-site
+  review: dung
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: ''(1986): hiệu quả tùy thuộc vào đánh giá''. Đã kiểm trên trang: không có link nào tới id cũ của mục này (grep ''doi-pho-stress#'' trong src: không có). Phần nội dung của mục xem n26–n29.'
+- id: n31
+  cau: Forsythe và Compas kiểm chứng giả thuyết khớp nhau trên 84 sinh viên đại học (tuổi trung bình 19).
+  loai: so-lieu
+  nguon:
+  - forsythe1987
+  trich: Subjects were 84 college students (32 male and 52 female) with a mean age of 19 years enrolled in an introductory psychology course.
+  vi_tri: Method, Subjects, tr. 475
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "trên 84 sinh viên" (cùng câu với n32–n33). Chữ mới thêm "đại học, tuổi trung bình 19". Số 84 đúng.'
+- id: n32
+  cau: Mỗi người kể về sự kiện lớn gây khổ sở nhất trong 6 tháng qua (thường là bệnh hay qua đời của người thân, hoặc chuyển đi học đại học) và chuyện phiền toái hằng ngày gây khổ nhất trong 2 tuần qua (thường là chuyện ở trường như làm bài kém).
+  loai: phat-hien
+  nguon:
+  - forsythe1987
+  trich: The most frequently selected daily events involved school hassles (e.g., 'doing poorly on an exam or paper') ... The most frequently selected major events were concerned with illness or death of a family member and moving away from home to enter college, chosen by 40% of the sample.
+  vi_tri: Method, Materials, tr. 476
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "với cả sự kiện lớn (người thân qua đời) và sự kiện nhỏ (bị điểm kém)". Chữ mới nêu đúng loại sự kiện và khung thời gian. Lý do: "sự kiện nhỏ (bị điểm kém)" không chính xác: là chuyện phiền toái hằng ngày được chọn nhiều nhất (44%), và sự kiện lớn gồm bệnh/qua đời của người thân và chuyển đi học (40%).'
+- id: n33
+  cau: Với sự kiện lớn, triệu chứng tâm lý cao khi có lệch pha giữa cách đối phó và mức kiểm soát được cảm nhận (ví dụ cố thay đổi trực tiếp một sự kiện được cho là ngoài tầm kiểm soát) và thấp khi hai thứ khớp nhau; với chuyện phiền toái hằng ngày, không thấy hiệu ứng nào.
+  loai: phat-hien
+  nguon:
+  - forsythe1987
+  trich: In relation to major life events, symptomatology was high when there was a poor fit between appraisals and coping (e.g., trying to change a stressor that was appraised as uncontrollable) and low when there was a good fit ... No effects were found in relation to daily hassles.
+  vi_tri: Tóm tắt; Results, tr. 481–482
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "với cả sự kiện lớn … và sự kiện nhỏ …: triệu chứng tâm lý cao nhất khi có sự lệch pha …". Chữ mới thêm vế "với chuyện phiền toái hằng ngày không thấy hiệu ứng". Lý do: chữ cũ nói hiệu ứng có ở cả hai loại sự kiện, sai: bài ghi "No significant main or interaction effects were found for daily events. Thus, the goodness of fit was not supported for daily events." "cao nhất" (lệch pha) đổi thành "cao" cho khớp tóm tắt.'
+- id: n34
+  cau: Giả thuyết cho rằng đối phó tập trung vào vấn đề phát huy tác dụng với việc thay đổi được, còn đối phó cảm xúc thích hợp hơn với việc không thay đổi được, vì khi đó trạng thái bên trong của ta là thứ duy nhất còn có thể thay đổi.
+  loai: dinh-nghia
+  nguon:
+  - forsythe1987
+  - kendall2008
+  trich: If an event is relatively uncontrollable, then emotion-focused or perception-focused coping may be more effective than problem-focused coping. In contrast, a controllable event may be best managed through problem-focused coping. [Kendall & Terry, tóm tắt]
+  vi_tri: Kendall & Terry 2008, tóm tắt; Forsythe & Compas 1987, tr. 482
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "đối phó tập trung vào vấn đề phát huy tác dụng với việc thay đổi được; đối phó tập trung vào cảm xúc thích hợp hơn với việc không thay đổi được — vì khi đó…" như một điều đã được chứng minh. Chữ mới: "giả thuyết cho rằng…". Lý do: là nội dung của giả thuyết, các kiểm chứng lẫn lộn. Vế "vì khi đó, trạng thái bên trong là thứ duy nhất còn có thể thay đổi" là lời giải thích của trang, không có trong nguồn; giữ như lời giải thích gắn với giả thuyết.'
+- id: n35
+  cau: Conway và Terry (1992, 101 sinh viên và người dân trong cộng đồng) thấy đối phó tập trung vào vấn đề đi cùng đánh giá hiệu quả đối phó tốt hơn chỉ ở những tình huống được đánh giá là kiểm soát được, nhưng không thấy đối phó cảm xúc thích ứng hơn ở tình huống không kiểm soát được.
+  loai: phat-hien
+  nguon:
+  - conway1992
+  trich: High relative levels of problem-focused coping were associated with favourable ratings of coping efficacy only in situations appraised to be controllable ... There was, however, no support for the expectation that high levels of problem-focused coping would be maladaptive in situations appraised to be uncontrollable, or for the expectation that the use of emotion-focused coping would be adaptive in such situations.
+  vi_tri: Tóm tắt (OpenAlex); không mở được toàn văn
+  ket_qua: da-sua
+  ghi_chu: 'Câu mới, thay cho câu cũ chỉ nhắc Conway và Terry (1992) như nguồn ủng hộ ở mục Các lý thuyết giải thích (trước đó bài này không có trong danh sách Nguồn). Chữ cũ: "Giả thuyết khớp nhau (Folkman, Lazarus, Gruen và DeLongis, 1986; Conway và Terry, 1992). … khi tình huống không kiểm soát được, cố thay đổi nó chỉ tạo thêm thất vọng". Lý do: Conway và Terry không ủng hộ phần đó. Đã thêm Conway & Terry vào mục Nguồn.'
+- id: n36
+  cau: 'Zakowski, Hall, Klein và Baum (2001, 72 người trưởng thành trong cộng đồng) ủng hộ giả thuyết khớp nhau một phần: có tương tác giữa mức kiểm soát được cảm nhận và đối phó cảm xúc trong việc dự báo mức stress.'
+  loai: phat-hien
+  nguon:
+  - zakowski2001
+  trich: Although the main-effects hypothesis was not supported, the goodness-of-fit hypothesis was partly confirmed by a significant control by emotion-focused coping interaction predicting both self-report and behavioral measures of stress.
+  vi_tri: Tóm tắt (OpenAlex); không mở được toàn văn
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "(ví dụ Zakowski, Hall, Klein và Baum, 2001 trên người trưởng thành trong cộng đồng) cũng tìm thấy sự ủng hộ cho giả thuyết này". Chữ mới: "ủng hộ một phần…" kèm n = 72 và loại tương tác. Lý do: tóm tắt nói "partly confirmed", không phải ủng hộ đầy đủ. Mẫu 72 người, 2 lần đo cách nhau khoảng 2 tháng.'
+- id: n37
+  cau: Kendall và Terry theo dõi 90 người bị chấn thương sọ não cùng người thân trong một nghiên cứu dọc, và không tìm thấy sự ủng hộ cho giả thuyết khớp nhau, cả ngắn hạn lẫn dài hạn.
+  loai: phat-hien
+  nguon:
+  - kendall2008
+  trich: Ninety people with traumatic brain injury, drawn from the inpatient rehabilitation unit of a major metropolitan hospital in Australia, and their relatives participated in this longitudinal study. No support was found for the Goodness-of-Fit model, either in the short term or the long term.
+  vi_tri: Tóm tắt (Europe PMC); không mở được toàn văn
+  ket_qua: dung
+  ghi_chu: Chỉ có tóm tắt.
+- id: n38
+  cau: Đối phó tập trung vào vấn đề có liên quan tích cực đến hoạt động theo vai trò (role functioning), nhưng việc kiên trì dùng nó trước những khó khăn do chấn thương gây ra có thể đi cùng suy sụp cảm xúc về lâu dài.
+  loai: phat-hien
+  nguon:
+  - kendall2008
+  trich: Although the use of problem-focused coping strategies was positively associated with short-term and long-term role functioning, it was not associated with long-term emotional well-being if the situation was perceived to be controllable. The findings suggest that the persistent use of problem-focused coping in response to the difficulties created by traumatic brain injury can be associated with emotional distress in the long term.
+  vi_tri: Tóm tắt (Europe PMC)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Thậm chí, việc kiên trì dùng đối phó tập trung vào vấn đề trước những khó khăn khó thay đổi còn đi cùng suy sụp cảm xúc về lâu dài." Chữ mới: bỏ "khó thay đổi" (tóm tắt nói "difficulties created by TBI"), đổi "đi cùng" thành "có thể đi cùng", thêm vế liên hệ tích cực với role functioning. Lý do: chữ cũ khẳng định chắc và bỏ sót kết quả trái chiều của bài. Cũng sửa ở câu hỏi quiz 4 và mục Ngộ nhận.'
+- id: n39
+  cau: Mức kiểm soát được cảm nhận thay đổi nhiều giữa các tình huống (Folkman 1986 thấy các đánh giá kiểu này biến động nhiều hơn ổn định), nên ranh giới đổi được/không đổi được có thể mờ.
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  trich: situational appraisals of control may be more variable than stable
+  vi_tri: Folkman 1986, tr. 572–573; tr. 577
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "ranh giới đổi được/không đổi được trong đời thực thường mờ và thay đổi theo thời gian" (không nguồn). Chữ mới có căn cứ ở Folkman 1986 và nói "có thể mờ". "Thay đổi theo thời gian" bỏ (nguồn nói biến động giữa các tình huống).'
+- id: n40
+  cau: Một số chiến lược thường xếp vào nhóm tập trung vào cảm xúc, như trốn tránh hay mong ước viển vông, nhìn chung đi cùng sức khỏe kém hơn chứ không phải cách đối phó lành mạnh (phân tích tổng hợp của Penley, Tomaka và Wiebe, 2002).
+  loai: so-lieu
+  nguon:
+  - penley2002
+  trich: problem-focused coping was positively correlated with overall health outcomes, whereas confrontive coping, distancing, self-control, seeking social support, accepting responsibility, avoidance, and wishful thinking were each negatively correlated with overall health outcomes.
+  vi_tri: Tóm tắt (Europe PMC)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "nhiều chiến lược gán nhãn tập trung vào cảm xúc (như mong ước viển vông) thực chất gần với triệu chứng suy sụp hơn là cách đối phó lành mạnh" (không nguồn). Chữ mới có nguồn (tổng hợp) và nói "đi cùng", kèm trốn tránh. Lưu ý: tổng hợp cho thấy liên hệ (phần lớn tương quan), không chứng minh nhân quả; theo tóm tắt, cả distancing và seeking social support cũng có liên hệ âm, nên không được hiểu là mọi dạng cảm xúc đều xấu.'
+- id: n41
+  cau: Bonanno và Burton cho rằng các nhà nghiên cứu hay ngầm giả định một chiến lược nào đó lúc nào cũng có lợi hoặc lúc nào cũng có hại, và gọi giả định này là ngộ nhận hiệu quả đồng nhất (fallacy of uniform efficacy).
+  loai: phat-hien
+  nguon:
+  - bonanno2013
+  trich: researchers have tended to assume that particular regulatory strategies are consistently beneficial or maladaptive. We label this assumption the fallacy of uniform efficacy
+  vi_tri: Tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "đề xuất thay câu hỏi chiến lược nào tốt nhất bằng ai linh hoạt nhất? Họ gọi sai lầm một chiến lược tốt cho mọi lúc là ngộ nhận hiệu quả đồng nhất". Chữ mới bám tóm tắt: "giả định" (assumption), không "sai lầm"; "đề xuất nhìn vào khác biệt giữa người với người về tính linh hoạt" thay cho câu hỏi "ai linh hoạt nhất". Chỉ có tóm tắt (không mở được toàn văn).'
+- id: n42
+  cau: 'Họ đề xuất khái niệm linh hoạt điều tiết (regulatory flexibility) qua ba thành phần: nhạy cảm với bối cảnh, vốn chiến lược đa dạng, nhạy với phản hồi.'
+  loai: dinh-nghia
+  nguon:
+  - bonanno2013
+  trich: 'three sequential components of flexibility for which propensities and abilities vary: sensitivity to context, availability of a diverse repertoire of regulatory strategies, and responsiveness to feedback.'
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: Phần giải thích từng thành phần trong danh sách đánh số (đọc được tình huống; nhiều cách trong túi đồ nghề; theo dõi và đổi cách) là diễn giải của trang; khớp tên thành phần của tóm tắt. Quiz 5 nhắc lại cùng ba thành phần.
+- id: n43
+  cau: Theo khung nhìn này, người điều tiết tốt không phải người luôn đối mặt hay luôn buông bỏ, mà là người biết khi nào đối mặt, khi nào buông, và khi nào đổi chiến lược.
+  loai: phat-hien
+  nguon:
+  - bonanno2013
+  trich: particular regulatory strategies are consistently beneficial or maladaptive. We label this assumption the fallacy of uniform efficacy
+  vi_tri: Tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Người vững vàng trước stress, theo khung nhìn này, không phải người luôn đối mặt hay luôn buông bỏ…". Chữ mới: "người điều tiết tốt". Lý do: tóm tắt không dùng khái niệm "vững vàng trước stress"; chỉ có tóm tắt.'
+- id: n44
+  cau: Một phân tích tổng hợp 329 nghiên cứu (Cheng, Lau và Chan, 2014) thấy tính linh hoạt khi đối phó có liên hệ dương, ở mức nhỏ đến vừa (r = 0,23), với sự thích ứng tâm lý; mức liên hệ khác nhau nhiều giữa các nghiên cứu và tùy cách định nghĩa linh hoạt.
+  loai: so-lieu
+  nguon:
+  - cheng2014
+  trich: a small to moderate overall mean effect size (r = .23, 95% CI [.19, .28], 80% CRI [-.02, .49], k = 329, N = 58,946). More important, the magnitude of the positive link between coping flexibility and psychological adjustment varied with the conceptualization of such flexibility.
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: Câu mới thêm trong đợt này. Chỉ có tóm tắt.
+- id: n45
+  cau: 'Khung: Khá vững: không có chiến lược đối phó nào tốt cho mọi tình huống.'
+  loai: nhan
+  nguon:
+  - penley2002
+  - cheng2014
+  - bonanno2013
+  - forsythe1987
+  - kendall2008
+  trich: situational characteristics (i.e., stressor type, controllability, and duration) moderated many of the overall associations [Penley]; the positive link between coping flexibility and psychological adjustment varied with the conceptualization of such flexibility [Cheng]
+  vi_tri: tóm tắt Penley 2002; tóm tắt Cheng 2014
+  nhan: kha-vung
+  co_so:
+  - penley2002
+  - cheng2014
+  - bonanno2013
+  - kendall2008
+  - forsythe1987
+  ly_do: 'Hai phân tích tổng hợp cùng chiều: Penley, Tomaka & Wiebe 2002 (liên hệ giữa các kiểu đối phó và sức khỏe thay đổi theo mức kiểm soát được, loại stress, thời gian) và Cheng, Lau & Chan 2014 (k = 329, r = 0,23; mức khác nhau nhiều giữa các nghiên cứu, khoảng dự đoán 80% từ −0,02 đến 0,49; cách định nghĩa ''khớp chiến lược–tình huống'' cho mức vừa; mạnh hơn ở nước ít cá nhân chủ nghĩa). Chưa đạt Vững chắc: dữ liệu chủ yếu tự báo cáo, tương quan; các kiểm tra trực tiếp sự khớp lẫn lộn (Kendall 2008 không ủng hộ; Conway 1992, Zakowski 2001 ủng hộ một phần; Forsythe 1987 chỉ ở sự kiện lớn). Theo thước đo mục 4: có tổng hợp nhưng kết quả khác nhau nhiều giữa các nghiên cứu nên Khá vững.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: khung "Vững chắc: không có chiến lược đối phó nào tốt cho mọi tình huống. Đây là điểm đồng thuận bền vững nhất của lĩnh vực suốt bốn thập kỷ … Mọi nỗ lực xếp hạng cách tốt nhất độc lập với bối cảnh đều thất bại." Chữ mới: Khá vững, bỏ "đồng thuận bền vững nhất suốt bốn thập kỷ" và "mọi nỗ lực … đều thất bại" (không kiểm được; còn tổng hợp Penley thấy đối phó vấn đề liên hệ dương với sức khỏe nói chung), thêm hai tổng hợp và giới hạn. Lý do: khung gộp với phần khớp nhau đang tranh cãi; hạ nhãn. Sách 1984 không mở được.'
+- id: n46
+  cau: 'Khung: Khá vững: cách ta đánh giá tình huống định hình phản ứng stress.'
+  loai: nhan
+  nguon:
+  - folkman1986
+  - webb2012
+  trich: cognitive change had a small-to-medium effect (d(+) = 0.36) [Webb 2012]
+  vi_tri: tóm tắt Webb 2012
+  nhan: kha-vung
+  co_so:
+  - webb2012
+  - folkman1986
+  ly_do: 'Tổng hợp Webb, Miles & Sheeran 2012 (306 so sánh thực nghiệm): thay đổi cách nhìn nhận (cognitive change) làm đổi kết quả cảm xúc ở mức nhỏ đến vừa (d+ = 0,36). Folkman 1986: đánh giá và đối phó đi cùng triệu chứng tâm lý (quan sát, mẫu 150 người). Chưa đạt Vững chắc: phần lớn bằng chứng là tương quan hoặc thí nghiệm ngắn, mức tác động nhỏ đến vừa, mẫu chủ yếu phương Tây; chưa có tổng hợp nói thẳng ''đánh giá định hình phản ứng stress'' trong đời thực.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: khung "Vững chắc: … là phát hiện được lặp lại nhiều nhất trong nghiên cứu stress — cùng một sự việc khách quan có thể gây ra phản ứng hoàn toàn khác nhau …, và can thiệp vào cách đánh giá là cơ sở của nhiều liệu pháp tâm lý hiệu quả." Chữ mới: Khá vững; bỏ "được lặp lại nhiều nhất", "hoàn toàn khác nhau" và vế về liệu pháp (không kiểm được ở đây). Lý do: không có tổng hợp được mở cho cả khẳng định; hạ nhãn.'
+- id: n47
+  cau: 'Khung: Đang tranh cãi: giả thuyết ''khớp nhau'' đúng đến mức nào? (Forsythe và Compas 1987 ủng hộ ở sự kiện lớn, Conway và Terry 1992 và Zakowski 2001 ủng hộ một phần, Kendall và Terry 2008 không ủng hộ.)'
+  loai: nhan
+  nguon:
+  - forsythe1987
+  - conway1992
+  - zakowski2001
+  - kendall2008
+  - cheng2014
+  trich: the goodness-of-fit hypothesis was partly confirmed [Zakowski]; No support was found for the Goodness-of-Fit model, either in the short term or the long term. [Kendall & Terry]
+  vi_tri: tóm tắt
+  nhan: tranh-cai
+  co_so:
+  - forsythe1987
+  - conway1992
+  - zakowski2001
+  - kendall2008
+  - cheng2014
+  ly_do: 'Bằng chứng mâu thuẫn: kiểm tra trực tiếp cho kết quả khác nhau (ủng hộ ở sự kiện lớn nhưng không ở chuyện hằng ngày: Forsythe & Compas; ủng hộ một phần: Conway & Terry, Zakowski; không ủng hộ ngắn và dài hạn: Kendall & Terry). Tổng hợp Cheng 2014 cho thấy ''khớp chiến lược–tình huống'' có liên hệ vừa với thích ứng, nhưng đó là liên hệ gián tiếp. Theo thước đo mục 4: đang tranh cãi.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Forsythe và Compas (1987) tìm thấy sự ủng hộ rõ rệt, nhưng Kendall và Terry (2008) không tìm thấy gì cả… Một phần vấn đề nằm ở cách đo: phân loại nhị phân … quá thô — trong nhóm cảm xúc có cả chấp nhận lành mạnh lẫn mong ước viển vông … Các nhà nghiên cứu hiện nay có xu hướng chuyển…". Chữ mới: thêm Conway 1992 và Zakowski 2001; "ủng hộ ở sự kiện lớn (không ở chuyện hằng ngày)"; "Có ý kiến cho rằng một phần vấn đề nằm ở cách đo"; bỏ "chấp nhận lành mạnh" (không có nguồn), thay "trốn tránh hay mong ước viển vông đi cùng sức khỏe kém hơn" (Penley 2002); "Một số nhà nghiên cứu hiện nay" thay "các nhà nghiên cứu hiện nay có xu hướng". Lý do: "ủng hộ rõ rệt" và "không tìm thấy gì cả" sai/ mạnh; "xu hướng chung" không kiểm được.'
+- id: n48
+  cau: Một số nhà nghiên cứu hiện nay chuyển từ câu hỏi 'chiến lược nào khớp?' sang 'ai linh hoạt trong việc chuyển chiến lược?' (Bonanno và Burton, 2013; Cheng và cộng sự, 2014).
+  loai: phat-hien
+  nguon:
+  - bonanno2013
+  - cheng2014
+  trich: Coping flexibility has received relatively scant research attention, although more such studies have begun to emerge recently. [Cheng 2014]
+  vi_tri: Cheng 2014, tóm tắt; Bonanno 2013, tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: Chữ 'các nhà nghiên cứu hiện nay có xu hướng' -> 'một số nhà nghiên cứu hiện nay'. Chỉ có tóm tắt.
+- id: n49
+  cau: 'Mô hình giao dịch: stress là một mối quan hệ, không phải một sự vật; hai người cùng gặp một khối lượng công việc có thể đánh giá khác nhau và có thể phản ứng khác nhau.'
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  - finkel2025
+  trich: Stress is conceptualized as a relationship between the person and the environment that is appraised by the person as taxing or exceeding his or her resources
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "…người đánh giá mình làm được, đây là cơ hội sẽ có phản ứng sinh lý và hành vi khác hẳn người đánh giá mình sẽ thất bại thảm hại. Mọi can thiệp hiệu quả đều phải đi qua cửa đánh giá này." Chữ mới: "có thể đánh giá khác nhau … có thể phản ứng khác nhau"; bỏ câu "Mọi can thiệp hiệu quả đều phải đi qua cửa đánh giá này" (da-bo, không kiểm được, phủ định mạnh); bỏ "sinh lý" (không có nguồn mở nào đo). Ví dụ làm được/thất bại là minh họa (gia-dinh).'
+- id: n50
+  cau: Câu 'Mọi can thiệp hiệu quả đều phải đi qua cửa đánh giá này.' (đã bỏ khỏi trang).
+  loai: loi-khuyen
+  ket_qua: da-bo
+  ghi_chu: 'Đã bỏ khỏi mục Các lý thuyết giải thích: khẳng định phổ quát (mọi can thiệp hiệu quả), không có nguồn đã mở. Xem n49.'
+- id: n51
+  cau: 'Giả thuyết khớp nhau (Lazarus và Folkman, 1984; được kiểm chứng ở Forsythe và Compas, 1987; Conway và Terry, 1992): hiệu quả = chiến lược × bối cảnh; khi tình huống kiểm soát được, nỗ lực thay đổi tình huống có đất phát huy; khi không kiểm soát được, giả thuyết cho rằng điều chỉnh phản ứng bên trong sẽ thích ứng hơn; các kiểm chứng ủng hộ chỉ một phần.'
+  loai: dinh-nghia
+  nguon:
+  - kendall2008
+  - zakowski2001
+  - forsythe1987
+  - conway1992
+  trich: The theory postulates that coping strategies used tend to match the level of appraised controllability of the stressor (matching hypothesis). It further states that the effects of problem-focused versus emotion-focused coping are moderated by the appraised controllability of the stressor (goodness-of-fit hypothesis). [Zakowski 2001]; the Goodness-of-Fit hypothesis, drawn from the Lazarus and Folkman (1984) theory [Kendall & Terry]
+  vi_tri: Zakowski 2001, tóm tắt; Kendall & Terry 2008, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Giả thuyết khớp nhau (Folkman, Lazarus, Gruen và DeLongis, 1986; Conway và Terry, 1992). Hiệu quả = chiến lược × bối cảnh. … khi tình huống không kiểm soát được, cố thay đổi nó chỉ tạo thêm thất vọng — lúc đó điều chỉnh phản ứng bên trong (đối phó cảm xúc) là thích ứng hơn." Chữ mới: gán giả thuyết cho Lazarus & Folkman 1984 (theo Zakowski 2001 và Kendall & Terry 2008) thay vì Folkman 1986 (bài này không kiểm sự khớp), nói "giả thuyết cho rằng", thêm "các kiểm chứng chỉ ủng hộ một phần". Lý do: Folkman 1986 không đề xuất hay kiểm giả thuyết khớp; "chỉ tạo thêm thất vọng" không có nguồn.'
+- id: n52
+  cau: 'Linh hoạt điều tiết (Bonanno và Burton, 2013): không chỉ chọn đúng chiến lược cho tình huống mà còn theo dõi và đổi chiến lược khi tình huống thay đổi; ba thành phần được đề xuất để giải thích vì sao cùng một chiến lược có thể cho kết quả khác nhau ở những người khác nhau.'
+  loai: dinh-nghia
+  nguon:
+  - bonanno2013
+  trich: People respond to stressful events in different ways, depending on the event and on the regulatory strategies they choose. ... these two factors, the person and the situation, interact over time to inform adaptation.
+  vi_tri: Tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "…giải thích vì sao cùng một chiến lược cho kết quả khác nhau ở những người khác nhau." Chữ mới: "được đề xuất để giải thích … có thể cho kết quả khác nhau". Lý do: ba thành phần là khung đề xuất để nghiên cứu, không phải giải thích đã được chứng minh. Chỉ có tóm tắt.'
+- id: n53
+  cau: Ba lớp lý thuyết xếp chồng lên nhau, từ tổng quát đến cụ thể.
+  loai: ve-site
+  review: dung
+  ket_qua: dung
+  ghi_chu: 'Câu giới thiệu cấu trúc của chính mục Các lý thuyết giải thích (ba gạch đầu dòng), đã kiểm trên trang: đúng ba mục, theo thứ tự mô hình giao dịch, giả thuyết khớp nhau, linh hoạt điều tiết.'
+- id: n54
+  cau: 'Khung nhãn mục 1: ''Hỏi trước tiên: việc này có thay đổi được không?'' là khá vững; câu trả lời, dù chỉ là ước lượng, có thể là la bàn cho các bước tiếp theo.'
+  loai: nhan
+  nguon:
+  - penley2002
+  - zakowski2001
+  - kendall2008
+  trich: Appraised control significantly predicted type of coping such that greater control was associated with more problem-focused and less emotion-focused coping.
+  vi_tri: Zakowski 2001, tóm tắt
+  nhan: kha-vung
+  co_so:
+  - penley2002
+  - zakowski2001
+  - kendall2008
+  ly_do: 'Lời khuyên đời thường dựa trên ý ''kiểm soát được hay không'' điều tiết hiệu quả đối phó: Penley 2002 (tổng hợp) thấy mức kiểm soát được điều tiết nhiều liên hệ giữa đối phó và sức khỏe; Zakowski 2001: kiểm soát cảm nhận dự báo kiểu đối phó. Kiểm tra trực tiếp sự khớp lẫn lộn (Kendall 2008). Gộp hai ý (đánh giá kiểm soát được, dùng nó để chọn cách) theo ý yếu hơn: Khá vững. Nhãn xét theo thước đo mục 4.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: nhãn Vững chắc; "là la bàn cho mọi bước tiếp theo, đúng như giả thuyết khớp nhau gợi ý". Chữ mới: Khá vững; "có thể là la bàn cho các bước tiếp theo, … (với bằng chứng còn lẫn lộn)". Lý do: gắn với giả thuyết khớp nhau đang tranh cãi.'
+- id: n55
+  cau: 'Khung nhãn mục 2: ''Thay đổi được → hành động cụ thể, chia nhỏ'' là khá vững; với việc thay đổi được, đối phó tập trung vào vấn đề thường là lựa chọn hợp lý trước tiên (lập kế hoạch, chia việc lớn thành việc nhỏ, tìm thông tin).'
+  loai: nhan
+  nguon:
+  - penley2002
+  - conway1992
+  - kendall2008
+  trich: problem-focused coping was positively correlated with overall health outcomes [Penley]; High relative levels of problem-focused coping were associated with favourable ratings of coping efficacy only in situations appraised to be controllable [Conway & Terry]
+  vi_tri: tóm tắt
+  nhan: kha-vung
+  co_so:
+  - penley2002
+  - conway1992
+  - kendall2008
+  ly_do: 'Penley 2002 (tổng hợp): đối phó tập trung vào vấn đề liên hệ dương với sức khỏe nói chung; Conway & Terry 1992: liên hệ với hiệu quả đối phó chỉ ở tình huống kiểm soát được; Kendall & Terry 2008: liên hệ dương với hoạt động vai trò. Có tổng hợp, nhưng hầu hết là tương quan, và vế ''chia nhỏ'' là kỹ thuật thực hành không có nguồn riêng: Khá vững, theo thước đo mục 4 (cùng chiều nhưng còn giới hạn).'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: nhãn Vững chắc; "đối phó tập trung vào vấn đề là lựa chọn hàng đầu". Chữ mới: Khá vững; "thường là lựa chọn hợp lý trước tiên". Lý do: "hàng đầu" mạnh hơn bằng chứng tương quan; Kendall 2008 thấy mặt trái dài hạn. Ví dụ ôn thi, lưu ý "bận rộn giả tạo" là minh họa/ lời khuyên thường thức của trang (gia-dinh), đã giữ.'
+- id: n56
+  cau: 'Khung nhãn mục 3: ''Không thay đổi được → điều chỉnh phản ứng bên trong, nhưng đừng trốn tránh'' là đang tranh cãi; một số nghiên cứu gợi ý điều chỉnh phản ứng bên trong, chẳng hạn chấp nhận thực tế, có thể thích ứng hơn việc cố sửa tình huống; thường đi cùng sức khỏe kém hơn là các dạng trốn tránh hay mong ước viển vông.'
+  loai: nhan
+  nguon:
+  - forsythe1987
+  - zakowski2001
+  - conway1992
+  - kendall2008
+  - penley2002
+  trich: There was, however, no support for ... the expectation that the use of emotion-focused coping would be adaptive in such situations. [Conway & Terry]
+  vi_tri: Conway & Terry 1992, tóm tắt
+  nhan: tranh-cai
+  co_so:
+  - forsythe1987
+  - zakowski2001
+  - conway1992
+  - kendall2008
+  - penley2002
+  ly_do: 'Đây là nửa của giả thuyết khớp nhau bị tranh cãi nhiều nhất: ủng hộ ở sự kiện lớn (Forsythe 1987) và một phần (Zakowski 2001), nhưng Conway 1992 không thấy đối phó cảm xúc thích ứng hơn khi kiểm soát thấp, và Kendall 2008 không thấy sự khớp. Penley 2002: trốn tránh, mong ước viển vông có liên hệ âm với sức khỏe. Khung gộp hai ý theo ý yếu hơn; theo thước đo mục 4: đang tranh cãi.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: nhãn Khá vững; "Với việc không thay đổi được …, những cách sau thường thích ứng hơn việc cố sửa tình huống: chấp nhận thực tế, tìm ý nghĩa (dành thời gian chất lượng bên người thân), chia sẻ cảm xúc với người tin cậy, và chăm sóc cơ thể. Đây là đối phó cảm xúc lành mạnh — khác hẳn né tránh hay mong ước viển vông." Chữ mới: Đang tranh cãi; "một số nghiên cứu gợi ý … chẳng hạn chấp nhận thực tế"; bỏ "tìm ý nghĩa", "chia sẻ cảm xúc", "chăm sóc cơ thể" (không có nguồn đã mở; Penley 2002 thấy tìm hỗ trợ xã hội liên hệ âm). Tiêu đề mục cũng đổi: "chăm sóc cảm xúc một cách chủ động" -> "điều chỉnh phản ứng bên trong, nhưng đừng trốn tránh". Giữ ở mức giáo dục, không phải lời khuyên điều trị.'
+- id: n57
+  cau: 'Khung nhãn mục 4: ''Đánh giá lại sau mỗi vòng'' là khá vững; mỗi vài ngày hãy tự hỏi ''cách mình đang dùng có giúp gì không? tình hình đã khác chưa?''; điều này gần với thành phần ''nhạy với phản hồi'' và với ý đối phó thay đổi theo đánh giá liên tục trong mô hình của Lazarus và Folkman.'
+  loai: nhan
+  nguon:
+  - bonanno2013
+  - cheng2014
+  - finkel2025
+  trich: the positive link between coping flexibility and psychological adjustment ... r = .23 [Cheng]; responsiveness to feedback [Bonanno & Burton]
+  vi_tri: tóm tắt
+  nhan: kha-vung
+  co_so:
+  - bonanno2013
+  - cheng2014
+  - finkel2025
+  ly_do: 'Có tổng hợp Cheng 2014 (k = 329) liên hệ dương, nhỏ đến vừa, giữa linh hoạt đối phó và thích ứng; ''nhạy với phản hồi'' là một thành phần đề xuất của Bonanno & Burton 2013 (tổng quan khái niệm), chưa có tái lập lớn hay thử nghiệm đối chứng cho lời khuyên cụ thể ''mỗi vài ngày tự hỏi''. Theo thước đo mục 4: Khá vững.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: nhãn Vững chắc; "Đây chính là thành phần nhạy với phản hồi … và cũng là vòng reappraisal trong mô hình gốc". Chữ mới: Khá vững; "Đây gần với … và với ý rằng đối phó thay đổi theo đánh giá liên tục". Lý do: "chính là" mạnh; thuật ngữ reappraisal không kiểm được trong nguồn đã mở. "Mỗi vài ngày" là lời khuyên thực hành của trang, không có số liệu riêng.'
+- id: n58
+  cau: 'Khung nhãn mục 5: ''Xây vốn nhiều cách, đừng chỉ một chiêu'' là khá vững; người chỉ biết một cách đối phó có thể lúng túng khi gặp tình huống không hợp; hãy mở rộng kỹ năng giải quyết vấn đề và kỹ năng xoa dịu cảm xúc.'
+  loai: nhan
+  nguon:
+  - cheng2014
+  - bonanno2013
+  trich: those adopting the broad repertoire, balanced profile, or cross-situational variability conceptualization yielded small effect sizes [Cheng 2014]
+  vi_tri: Cheng 2014, tóm tắt
+  nhan: kha-vung
+  co_so:
+  - cheng2014
+  - bonanno2013
+  ly_do: 'Cheng 2014: cách định nghĩa ''broad coping repertoire'' cho mức liên hệ nhỏ với thích ứng; Bonanno & Burton 2013: ''availability of a diverse repertoire'' là một thành phần đề xuất. Có tổng hợp nhưng mức nhỏ và không đồng nhất: Khá vững.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "sẽ lúng túng … và mạng lưới hỗ trợ xã hội". Chữ mới: "có thể lúng túng"; bỏ "và mạng lưới hỗ trợ xã hội" (không có nguồn; Penley 2002 thấy tìm hỗ trợ xã hội liên hệ âm với sức khỏe trong dữ liệu tương quan). Nhãn Khá vững giữ như cũ.'
+- id: n59
+  cau: 'Khung nhãn mục 6: ''Khi khó xoay xở với stress, hãy tìm sự giúp đỡ chuyên nghiệp'' là vững chắc theo đồng thuận của hướng dẫn chính thức: nếu thấy khó xoay xở với stress, hoặc những cách tự làm không giúp được, hãy tìm chuyên gia tâm lý hoặc bác sĩ.'
+  loai: nhan
+  nguon:
+  - nhs-stress
+  trich: 'See a GP if: you''re struggling to cope with stress; things you''re trying yourself are not helping you'
+  vi_tri: NHS, trang Stress, khung 'Non-urgent advice'
+  nhan: vung-chac
+  co_so:
+  - nhs-stress
+  ly_do: 'Nhãn cho chuẩn mực hợp lý xét theo đồng thuận của văn bản chính thức (chuẩn mục 4 và lời giao), không theo hiệu ứng nghiên cứu. NHS: ''Non-urgent advice: See a GP if: you''re struggling to cope with stress; things you''re trying yourself are not helping you''. Nội dung này là lời khuyên thông thường, không phải khẳng định về hiệu quả điều trị.'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nếu stress kéo dài nhiều tuần, đi kèm mất ngủ triền miên, kiệt sức, hoặc suy nghĩ làm hại bản thân, đó là lúc cần chuyên gia tâm lý hoặc bác sĩ — không phải thêm một mẹo tự đối phó nào nữa." Chữ mới như trên, thêm link trang Hỗ trợ khi có ý nghĩ làm hại bản thân hoặc cần giúp đỡ khẩn cấp. Lý do: "nhiều tuần", "mất ngủ triền miên, kiệt sức" là ngưỡng không có trong nguồn; NHS dùng "khó xoay xở" và "cách tự làm không giúp". Đã đối chiếu trang Hỗ trợ (src/content/docs/ho-tro/index.md, tầng co-han): 115 cho tình huống nguy hiểm; chưa chạm.'
+- id: n60
+  cau: Tìm kiếm sự giúp đỡ có thể xem là một cách đối phó chủ động.
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  - nhs-stress
+  trich: seeking social support (Folkman 1986, liệt kê trong các dạng đối phó, tr. 572); Do try talking about your feelings to a friend, family member or health professional (NHS)
+  vi_tri: Folkman 1986, tr. 572; NHS
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Tìm kiếm sự giúp đỡ chuyên nghiệp cũng là một chiến lược đối phó — và là một chiến lược tốt." Chữ mới: "có thể xem là một cách đối phó chủ động". Lý do: "một chiến lược tốt" là đánh giá hiệu quả không có nguồn; Penley 2002 thấy tìm hỗ trợ xã hội liên hệ âm trong dữ liệu tương quan (có thể do người căng thẳng hơn tìm nhiều hơn). Câu giữ ở mức phân loại.'
+- id: n61
+  cau: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn.
+  loai: ve-site
+  review: dung
+  ket_qua: dung
+  ghi_chu: 'Kiểm bằng node tools/khoa.mjs xuat kham-pha/cang-thang-giac-ngu/doi-pho-stress và ::tom-tat trong trang: không có chữ riêng, dựng từ ba khung nhãn (khá vững, khá vững, đang tranh cãi).'
+- id: n62
+  cau: 'Lưu ý quan trọng: bài mang tính giáo dục, không phải lời khuyên y khoa hay tâm lý cho trường hợp cá nhân; nếu stress ảnh hưởng nghiêm trọng, hãy tìm chuyên gia tâm lý hoặc bác sĩ; xem trang Hỗ trợ.'
+  loai: ve-site
+  review: dung
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm: link /psyche/ho-tro/ trỏ tới src/content/docs/ho-tro/index.md (id ho-tro/index trong src/data/trang.yml). Lời nhắc tìm chuyên gia khớp NHS (n59); chữ cũ không có link Hỗ trợ, đã thêm.'
+- id: n63
+  cau: Các nghiên cứu nền tảng về đối phó stress thực hiện chủ yếu ở phương Tây, trên các mẫu phương Tây (Mỹ, Úc, châu Âu).
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  - forsythe1987
+  - kendall2008
+  - kuo2013
+  trich: a burgeoning body of cultural coping research ... provide a critical counterpoint to the prevailing Western, individualistic stress and coping paradigm. [Kuo 2013]
+  vi_tri: Kuo 2013, tóm tắt; Folkman 1986 (cộng đồng California), Forsythe 1987 (sinh viên da trắng), Kendall 2008 (Úc)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "…trên các mẫu người Mỹ và châu Âu." Chữ mới: "…trên các mẫu phương Tây (Mỹ, Úc, châu Âu)." Lý do: Kendall & Terry 2008 là mẫu Úc, Folkman 1986 và Forsythe & Compas 1987 là mẫu Mỹ; Kuo 2013 nói khung chủ đạo là phương Tây, cá nhân chủ nghĩa. "Chủ yếu" không thống kê tổng thể.'
+- id: n64
+  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra trực tiếp giả thuyết khớp nhau hay linh hoạt đối phó trên người Việt.
+  loai: thoi-su
+  nguon:
+  - tim-kiem-vn
+  het_han: '2028-11-01'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra trực tiếp giả thuyết khớp nhau hay linh hoạt đối phó trên người Việt." (không mốc). Chữ mới thêm "Tính đến 11/2026". Tìm trên Europe PMC ngày 10/11/2026 (ba truy vấn nêu ở danh sách nguồn): không có nghiên cứu nào đúng thiết kế (1 kết quả là cựu tù binh Mỹ thời chiến tranh Việt Nam, không phải người Việt). OpenAlex hết hạn mức trong ngày nên chưa dùng; chưa tìm Google Scholar hay tạp chí trong nước. Có nhiều nghiên cứu khác về đối phó của người Việt không kiểm giả thuyết này.'
+- id: n65
+  cau: Một tổng quan về đối phó tập thể (Kuo, 2013) thấy các hành vi đối phó tập thể phổ biến ở nhiều nhóm văn hóa, nhất là người châu Á, và gắn với giá trị tập thể.
+  loai: phat-hien
+  nguon:
+  - kuo2013
+  trich: growing evidence for the prominence of collective coping behaviors particularly among Asian nationals, Asian Americans/Canadians and African Americans/Canadians; (c) preference for collective coping behaviors as a function of collectivism and interdependent cultural value and orientation
+  vi_tri: Kuo 2013, tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: Câu mới (căn cứ cho phần suy luận về Việt Nam). Chỉ có tóm tắt.
+- id: n66
+  cau: Phân tích tổng hợp của Cheng và cộng sự (2014) thấy liên hệ giữa linh hoạt đối phó và thích ứng mạnh hơn ở các mẫu từ nước ít cá nhân chủ nghĩa hơn.
+  loai: so-lieu
+  nguon:
+  - cheng2014
+  trich: the positive link between coping flexibility and psychological adjustment was stronger in samples from countries lower (vs. higher) in individualism and samples with higher (vs. lower) average ages. Individualism and age explained 10% and 13% of the variance, respectively.
+  vi_tri: Tóm tắt
+  ket_qua: dung
+  ghi_chu: Câu mới. Chỉ có tóm tắt.
+- id: n67
+  cau: Nếu Việt Nam được xem là xã hội thiên về tập thể, vốn đối phó của người Việt có thể mang tính tập thể nhiều hơn (tìm đến gia đình, họ hàng) thay vì mô hình cá nhân tự xử lý phổ biến trong nghiên cứu phương Tây; cần nghiên cứu thực nghiệm trên người Việt.
+  loai: phat-hien
+  nguon:
+  - kuo2013
+  - cheng2014
+  trich: collective coping behaviors are conceived as a product of the communal/relational norms and values of a cultural group across studies [Kuo 2013]
+  vi_tri: Kuo 2013, tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "văn hóa Việt Nam đề cao gia đình và cộng đồng, nên vốn đối phó của người Việt có thể mang tính tập thể nhiều hơn — tìm đến gia đình, họ hàng, hoặc niềm tin tâm linh". Chữ mới: "Nếu Việt Nam được xem là xã hội thiên về tập thể…", bỏ "niềm tin tâm linh" (không có nguồn đã mở), có hai căn cứ (Kuo 2013; Cheng 2014). Đã ghi rõ là suy luận chưa kiểm chứng. Chưa tìm số liệu riêng về Việt Nam; "Việt Nam thiên về tập thể" không được kiểm ở đây nên đặt trong "nếu".'
+- id: n68
+  cau: 'Ngộ nhận 1: ''Đối phó tập trung vào cảm xúc là yếu đuối, là trốn tránh.'' Không hẳn: Forsythe và Compas (1987) thấy đối phó cảm xúc đi cùng triệu chứng thấp hơn ở sự kiện lớn được cảm nhận là ít kiểm soát được, dù Kendall và Terry (2008) và Conway và Terry (1992) không xác nhận; nhưng trốn tránh và mong ước viển vông nhìn chung đi cùng sức khỏe kém hơn (Penley và cộng sự, 2002).'
+  loai: phat-hien
+  nguon:
+  - forsythe1987
+  - kendall2008
+  - conway1992
+  - penley2002
+  trich: The use of relatively more emotion-focused coping strategies to palliate one's reaction to a stressor displayed the converse pattern. These coping methods were associated with lower symptom levels when events were perceived as low in controllability [Forsythe & Compas, Discussion, tr. 482]
+  vi_tri: Forsythe & Compas 1987, tr. 482; tóm tắt Kendall, Conway, Penley
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Sai. Khi tình huống không thay đổi được, xoa dịu và chấp nhận cảm xúc là cách thích ứng — ngược lại, cứ lao vào giải quyết một việc không thể giải quyết mới là con đường dẫn đến kiệt sức, như trường hợp của Minh và như nghiên cứu của Kendall và Terry (2008) cho thấy." Chữ mới như trên. Lý do: "Sai" và "là cách thích ứng" mạnh; Kendall & Terry 2008 không ủng hộ giả thuyết khớp mà chỉ thấy kiên trì dùng đối phó vấn đề có thể đi cùng suy sụp, không so sánh với cảm xúc; "chấp nhận" không có nguồn riêng.'
+- id: n69
+  cau: 'Ngộ nhận 2: ''Cứ hành động là tốt, đừng ngồi yên.'' Chỉ hợp lý khi hành động đó có thể thay đổi tình huống; Forsythe và Compas (1987) thấy triệu chứng cao hơn khi dùng nhiều đối phó vấn đề với sự kiện được cảm nhận là ít kiểm soát được, và Kendall và Terry (2008) thấy kiên trì dùng nó trước khó khăn do chấn thương có thể đi cùng suy sụp cảm xúc về lâu dài.'
+  loai: phat-hien
+  nguon:
+  - forsythe1987
+  - kendall2008
+  trich: these same coping strategies were associated with higher levels of distress when used to deal with events over which individuals believed they had little control [Forsythe & Compas, tr. 482]
+  vi_tri: Forsythe & Compas 1987, tr. 482; Kendall & Terry 2008, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Chỉ đúng khi hành động đó có thể thay đổi tình huống. Với việc không kiểm soát được, hành động dai dẳng không những vô ích mà còn tạo thêm thất vọng và tuyệt vọng (đây chính là lý do các tác giả cảnh báo về lệch pha …)". Chữ mới như trên. Lý do: "vô ích", "thất vọng và tuyệt vọng" không đo trong nguồn; thay bằng kết quả cụ thể của hai nghiên cứu.'
+- id: n70
+  cau: 'Ngộ nhận 3: ''Stress là do hoàn cảnh gây ra, nên chỉ cần đổi hoàn cảnh là hết.'' Theo mô hình giao dịch, stress là mối quan hệ giữa người và môi trường mà người ấy đánh giá là vượt quá nguồn lực; nên đổi hoàn cảnh có thể giúp, nhưng cách đánh giá của mỗi người cũng đóng vai trò, và hai người có thể phản ứng khác nhau trước cùng một tình huống.'
+  loai: phat-hien
+  nguon:
+  - folkman1986
+  - finkel2025
+  trich: Stress is conceptualized as a relationship between the person and the environment that is appraised by the person as taxing or exceeding his or her resources
+  vi_tri: Folkman 1986, tr. 572
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "…đánh giá của ta mới là cửa ngõ: cùng một khối lượng việc, người thấy thử thách và người thấy đe dọa sẽ có phản ứng stress khác nhau một trời một vực. Đổi hoàn cảnh mà không đổi cách đánh giá thì stress sẽ đi theo bạn sang hoàn cảnh mới." Chữ mới như trên. Lý do: "một trời một vực" và "stress sẽ đi theo bạn" không có nguồn (không đo trong nguồn đã mở); mô hình chỉ nói stress là quan hệ.'
+- id: n71
+  cau: 'Đọc thêm: ba link tới các trang Stress có luôn có hại?, Nén cảm xúc có tốt?, ''Cháy'' hết mình là gì? (mô tả ngắn từng link).'
+  loai: ve-site
+  review: dung
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm: stress-co-hai có trong src/content/docs (title ''Stress có luôn có hại?''); dong-chay-flow có (title "''Cháy'' hết mình là gì?"); dieu-tiet-cam-xuc chưa có trong worktree này nhưng có id trong src/data/trang.yml (kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc, tầng loi) và trang cũ ../psyche-zero/docs/kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc.md có title ''Nén cảm xúc có tốt?'', mô tả về điều tiết cảm xúc (Gross 1998): khớp.'
+- id: q1
+  cau: 'Câu hỏi 1: Theo Lazarus và Folkman (1984), đối phó (coping) là những nỗ lực nhận thức và hành vi liên tục thay đổi nhằm quản lý các đòi hỏi được đánh giá là vượt quá nguồn lực của bản thân. Lời giải thích: từ khóa là ''liên tục thay đổi'' và ''được đánh giá'': đối phó là một quá trình động, không phải một tính cách cố định, và nó bắt đầu từ cách ta đánh giá tình huống.'
+  loai: dinh-nghia
+  nguon:
+  - forsythe1987
+  - finkel2025
+  trich: constantly changing cognitive and behavioral efforts to manage specific external and or internal demands that are appraised as taxing or exceeding the resources of the person (p. 141)
+  vi_tri: Forsythe & Compas 1987, tr. 474
+  ket_qua: da-lam-mem
+  ghi_chu: Đáp án đúng khớp định nghĩa (n14). Lời giải thích giữ; "không phải một tính cách cố định" đã làm mềm ở n20 trên trang nhưng ở đây là cách nói về định nghĩa (không có chữ "chủ yếu"), giữ vì định nghĩa là "constantly changing efforts". Hai phương án nhiễu sai (tính cách ổn định; phản ứng tự động của cơ thể) là phương án nhiễu (gia-dinh).
+- id: q2
+  cau: 'Câu hỏi 2: Đánh giá ban đầu: ''chuyện này có ảnh hưởng gì đến mình không?''; đánh giá thứ cấp: ''mình có thể làm được gì, việc này có thay đổi được không?''. Giải thích: hai bước đan xen; đánh giá xem tình huống có thay đổi được không là thông tin giả thuyết khớp nhau dùng để chọn chiến lược.'
+  loai: dinh-nghia
+  nguon:
+  - folkman1986
+  - finkel2025
+  trich: In primary appraisal, the person evaluates whether he or she has anything at stake ... In secondary appraisal the person evaluates what, if anything, can be done
+  vi_tri: 'Folkman 1986, tr. 572; Finkel 2025: ''cannot be considered as separate'' (L&F 1984 tr. 43, theo X kể lại)'
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: đáp án "đe dọa gì đến mình không?" / "mình có nguồn lực gì, việc này có thay đổi được không?"; giải thích "Hai bước này đan xen và lặp lại liên tục. Đặc biệt, đánh giá thứ cấp về tính kiểm soát được chính là la bàn để chọn chiến lược đối phó phù hợp." Chữ mới như trên. Lý do: khớp n12–n13; "chính là la bàn" mạnh, đổi thành "là thông tin mà giả thuyết khớp nhau dùng".'
+- id: q3
+  cau: 'Câu hỏi 3: Giả thuyết khớp nhau nói rằng hiệu quả của chiến lược đối phó phụ thuộc vào sự khớp nhau với tình huống: đối phó vấn đề hợp với việc thay đổi được, đối phó cảm xúc hợp với việc không thay đổi được; lệch pha thì được dự đoán là triệu chứng nặng hơn. Giải thích: theo giả thuyết này Lan và Minh không sai ở cách mà ở lệch pha; đây là giả thuyết có bằng chứng lẫn lộn, không phải định luật.'
+  loai: dinh-nghia
+  nguon:
+  - kendall2008
+  - zakowski2001
+  - forsythe1987
+  trich: The hypothesis suggests that the nature and success of specific coping strategies will be associated with the controllability of the event.
+  vi_tri: Kendall & Terry 2008, tóm tắt; Zakowski 2001, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: đáp án "…; lệch pha thì triệu chứng nặng hơn." Giải thích: "Lan và Minh không sai ở cách, mà sai ở sự lệch pha giữa cách và tình huống của mình." Chữ mới như trên (thêm "được dự đoán", "theo giả thuyết này", "có bằng chứng lẫn lộn"). Lý do: chữ cũ nói như đã chứng minh, trái với nhãn Đang tranh cãi.'
+- id: q4
+  cau: 'Câu hỏi 4: Kendall và Terry (2008) trên người bị chấn thương sọ não không tìm thấy sự ủng hộ cho giả thuyết khớp nhau; việc kiên trì dùng đối phó tập trung vào vấn đề trước những khó khăn do chấn thương gây ra có thể đi cùng suy sụp cảm xúc về lâu dài. Giải thích: công thức ''đổi được → giải quyết'' là một gợi ý, không phải định luật: kiểm chứng trực tiếp cho kết quả lẫn lộn, và mức kiểm soát cảm nhận thay đổi giữa các tình huống.'
+  loai: phat-hien
+  nguon:
+  - kendall2008
+  - folkman1986
+  trich: No support was found for the Goodness-of-Fit model, either in the short term or the long term ... the persistent use of problem-focused coping in response to the difficulties created by traumatic brain injury can be associated with emotional distress in the long term.
+  vi_tri: Kendall & Terry 2008, tóm tắt; Folkman 1986, tr. 572
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: đáp án "…trước những khó khăn khó thay đổi còn đi cùng suy sụp cảm xúc về lâu dài." Giải thích: "…hướng dẫn hữu ích nhưng không phải định luật — ranh giới đổi được/không đổi được trong đời thực thường mờ và thay đổi theo thời gian." Chữ mới như trên. Lý do: đồng bộ với n38, n39. Phương án nhiễu "Giả thuyết khớp nhau đúng trong mọi trường hợp" và "không cần đối phó gì cả" là phương án nhiễu (gia-dinh).'
+- id: q5
+  cau: 'Câu hỏi 5: Ngộ nhận hiệu quả đồng nhất là giả định rằng một chiến lược điều tiết lúc nào cũng có lợi (hoặc lúc nào cũng có hại); linh hoạt điều tiết gồm nhạy cảm với bối cảnh, vốn chiến lược đa dạng, và nhạy với phản hồi. Giải thích: thay vì chỉ hỏi chiến lược nào tốt nhất, Bonanno và Burton đề xuất nhìn vào khác biệt giữa người với người về tính linh hoạt.'
+  loai: dinh-nghia
+  nguon:
+  - bonanno2013
+  trich: researchers have tended to assume that particular regulatory strategies are consistently beneficial or maladaptive. We label this assumption the fallacy of uniform efficacy ... sensitivity to context, availability of a diverse repertoire of regulatory strategies, and responsiveness to feedback.
+  vi_tri: Bonanno & Burton 2013, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: đáp án "Ngộ nhận rằng một chiến lược điều tiết là tốt (hoặc xấu) cho mọi lúc mọi nơi; … nhạy với phản hồi để dám đổi cách khi cần." Giải thích: "Câu hỏi then chốt không phải chiến lược nào tốt nhất mà là ai linh hoạt nhất?" Chữ mới như trên. Lý do: đồng bộ với n41 (giả định, không "ngộ nhận" chung). Phương án nhiễu (ngộ nhận mọi người stress như nhau, tránh né…) là phương án nhiễu (gia-dinh).'
+- id: n72
+  cau: 'Mục Nguồn: danh sách các nguồn có trong bài (Bonanno và Burton 2013; Cheng, Lau và Chan 2014; Conway và Terry 1992; Folkman và Lazarus 1988; Folkman và cộng sự 1986; Forsythe và Compas 1987; Kendall và Terry 2008; Kuo 2013; Lazarus và Folkman 1984; NHS; Penley, Tomaka và Wiebe 2002; Webb, Miles và Sheeran 2012; Zakowski và cộng sự 2001).'
+  loai: ve-site
+  review: dung
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm: mỗi nguồn được nhắc ở thân bài có mặt trong danh sách (kiểm bằng cách đọc trang); chi tiết thư mục (tập, trang) đối chiếu Crossref/Europe PMC ngày 10/11/2026: Bonanno 8(6) 591–612 (ghi theo trang cũ, chưa đối chiếu lại), Cheng 140(6) 1582–1607, Conway 44(1) 1–7, Folkman 1988 26(3) 309–317, Kuo 48(3) 374–388, Penley 25(6) 551–603, Webb 138(4) 775–808, Kendall 67(8) 1217–1224. Trước đó thiếu Conway & Terry 1992 (được nhắc nhưng không có trong danh sách) và chưa có DOI của Forsythe & Compas và Kendall & Terry: đã thêm.'
+doi_chu:
+- cu: (không có)
+  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+  ly_do: Bố cục C (kế hoạch).
+- cu: 'mô tả: "Lazarus và Folkman (1984) chỉ ra rằng không có cách đối phó stress nào tốt cho mọi tình huống … Linh hoạt mới là chìa khóa."'
+  moi: '"…đề xuất rằng hiệu quả của cách đối phó phụ thuộc vào tình huống… Bằng chứng cho sự khớp này còn lẫn lộn, và tính linh hoạt được xem là hướng hứa hẹn hơn."'
+  ly_do: Hồ sơ n1.
+- cu: '"Đáp án của tâm lý học hiện đại: không có cách nào tốt cho mọi tình huống. Cái đúng là sự khớp nhau…"; "cả hai đều sẽ kiệt sức"'
+  moi: '"Đáp án của giả thuyết khớp nhau: … Nhưng đây là một giả thuyết có bằng chứng lẫn lộn"; "lệch pha như vậy có thể làm họ kiệt sức hơn"'
+  ly_do: Hồ sơ n6, n8.
+- cu: '"Điểm khởi đầu của mọi lý thuyết hiện đại về stress là một phát hiện đơn giản…"; "cách mỗi người diễn giải … chứ không nằm ở bản thân sự việc"'
+  moi: '"Một điểm xuất phát của lý thuyết đánh giá nhận thức về stress là nhận xét…"; "một phần câu trả lời … chứ không chỉ ở bản thân sự việc"'
+  ly_do: Hồ sơ n9, n10.
+- cu: 'Đánh giá ban đầu/thứ cấp: "đe dọa", "thử thách", "Mình có nguồn lực gì?"; đối phó cảm xúc: "tìm sự an ủi, chấp nhận, tìm ý nghĩa"'
+  moi: '"ảnh hưởng gì đến mình", "mối đe dọa, điều có lợi, chẳng đáng bận tâm", "Mình có thể làm được gì?"; "tìm sự hỗ trợ, nhìn nhận lại theo hướng tích cực, giữ khoảng cách, tạm thời phân tâm"'
+  ly_do: Hồ sơ n12, n13, n17.
+- cu: '"Và vòng lặp không dừng ở đó … đánh giá lại (reappraisal) … Đối phó vì thế là một quá trình động, không phải một tính cách cố định."'
+  moi: '"Theo mô hình này, đối phó thay đổi theo những đánh giá liên tục … ta có thể đánh giá lại … được xem chủ yếu là một quá trình động, chứ không chỉ là một tính cách cố định."'
+  ly_do: Hồ sơ n19, n20.
+- cu: '"hệ thống hóa hai thập kỷ nghiên cứu"; "Ba đóng góp cốt lõi còn nguyên giá trị đến hôm nay … quyết định phản ứng stress … không có chiến lược đối phó nào tốt hay xấu một cách tuyệt đối"'
+  moi: '"đề xuất mô hình giao dịch"; "Ba ý cốt lõi vẫn còn được dùng đến hôm nay … khâu trung gian then chốt … không nên đánh giá một chiến lược đối phó mà không xét bối cảnh dùng nó"'
+  ly_do: Hồ sơ n22, n23.
+- cu: 'Folkman và Lazarus 1988: "Trong một bài tổng quan … cảm xúc … định hình cách ta đánh giá và chọn chiến lược — và mỗi nỗ lực đối phó lại làm nảy sinh cảm xúc mới"'
+  moi: '"Trong một bài viết lý thuyết … cảm xúc và đối phó ảnh hưởng lẫn nhau trong một mối quan hệ động, hai chiều"'
+  ly_do: Hồ sơ n24.
+- cu: 'Folkman 1986: tiêu đề "hiệu quả tùy thuộc vào đánh giá"; "đề xuất ý tưởng nền tảng … hiệu quả … phụ thuộc vào sự đánh giá tình huống"'
+  moi: tiêu đề "đánh giá và đối phó qua nhiều tình huống"; "nhấn mạnh rằng không nên coi một dạng đối phó là tốt hay xấu mà không xét bối cảnh dùng nó"; thêm 75 cặp vợ chồng, năm lần phỏng vấn, kết quả sức khỏe thể chất
+  ly_do: Hồ sơ n26–n30. Bài này không kiểm sự khớp; id cũ của tiêu đề mục không còn (không có link tới id đó).
+- cu: 'Forsythe và Compas: "với cả sự kiện lớn (người thân qua đời) và sự kiện nhỏ (bị điểm kém): triệu chứng tâm lý cao nhất khi có sự lệch pha"'
+  moi: '"… sự kiện lớn gây khổ sở nhất trong 6 tháng qua … chuyện phiền toái hằng ngày … Với sự kiện lớn, triệu chứng tâm lý cao khi có sự lệch pha … Với chuyện phiền toái hằng ngày, họ không thấy hiệu ứng nào"'
+  ly_do: 'Hồ sơ n31–n33 (bài mở rộng stress-co-hai dựa trên bài này: xem báo cáo).'
+- cu: '"đối phó tập trung vào vấn đề phát huy tác dụng với việc thay đổi được; … Các nghiên cứu sau này (ví dụ Zakowski …) cũng tìm thấy sự ủng hộ"'
+  moi: '"giả thuyết cho rằng …"; thêm Conway và Terry 1992 (ủng hộ một phần); Zakowski "ủng hộ một phần"'
+  ly_do: Hồ sơ n34–n36.
+- cu: 'Kendall và Terry: "trước những khó khăn khó thay đổi còn đi cùng suy sụp cảm xúc về lâu dài"; "ranh giới … thường mờ và thay đổi theo thời gian"; "nhiều chiến lược gán nhãn tập trung vào cảm xúc … thực chất gần với triệu chứng suy sụp"'
+  moi: '"trước những khó khăn do chấn thương gây ra có thể đi cùng suy sụp cảm xúc về lâu dài" (kèm liên hệ tích cực với role functioning); "ranh giới … có thể mờ"; "trốn tránh hay mong ước viển vông, nhìn chung đi cùng sức khỏe kém hơn (Penley … 2002)"'
+  ly_do: Hồ sơ n38–n40, q4.
+- cu: 'Bonanno và Burton: "đề xuất thay câu hỏi chiến lược nào tốt nhất bằng ai linh hoạt nhất? Họ gọi sai lầm …"; "Người vững vàng trước stress …"'
+  moi: '"cho rằng các nhà nghiên cứu hay ngầm giả định … gọi giả định này là ngộ nhận hiệu quả đồng nhất"; "người điều tiết tốt"; thêm tổng hợp Cheng 2014'
+  ly_do: Hồ sơ n41, n43, n44, q5.
+- cu: 'Khung "Vững chắc: không có chiến lược đối phó nào tốt cho mọi tình huống … điểm đồng thuận bền vững nhất … Mọi nỗ lực xếp hạng … đều thất bại."'
+  moi: 'Khung "Khá vững: …" với căn cứ Penley 2002, Cheng 2014 và giới hạn'
+  ly_do: Hạ nhãn, hồ sơ n45.
+- cu: 'Khung "Vững chắc: cách ta đánh giá tình huống định hình phản ứng stress … phát hiện được lặp lại nhiều nhất … cơ sở của nhiều liệu pháp tâm lý hiệu quả"'
+  moi: 'Khung "Khá vững: …" căn cứ Webb 2012, Folkman 1986; bỏ vế liệu pháp'
+  ly_do: Hạ nhãn, hồ sơ n46.
+- cu: 'Khung "Đang tranh cãi: Forsythe và Compas (1987) tìm thấy sự ủng hộ rõ rệt, nhưng Kendall và Terry (2008) không tìm thấy gì cả … chấp nhận lành mạnh lẫn mong ước viển vông … Các nhà nghiên cứu hiện nay có xu hướng chuyển"'
+  moi: '"… ủng hộ ở sự kiện lớn …, Conway và Terry và Zakowski ủng hộ một phần, Kendall và Terry không ủng hộ … Có ý kiến cho rằng … Một số nhà nghiên cứu hiện nay chuyển …"'
+  ly_do: Hồ sơ n47, n48.
+- cu: 'Các lý thuyết giải thích: "Mô hình giao dịch … phản ứng sinh lý và hành vi khác hẳn … Mọi can thiệp hiệu quả đều phải đi qua cửa đánh giá này."; "Giả thuyết khớp nhau (Folkman, Lazarus, Gruen và DeLongis, 1986; Conway và Terry, 1992) … chỉ tạo thêm thất vọng"; "giải thích vì sao"'
+  moi: bỏ câu "Mọi can thiệp …"; "Giả thuyết khớp nhau (Lazarus và Folkman, 1984; được kiểm chứng ở Forsythe và Compas, 1987; Conway và Terry, 1992) … giả thuyết cho rằng … ủng hộ chỉ một phần"; "được đề xuất để giải thích"
+  ly_do: Hồ sơ n49–n52.
+- cu: 'Áp dụng, nhãn các mục: 1 Vững chắc, 2 Vững chắc, 3 Khá vững, 4 Vững chắc, 5 Khá vững, 6 Vững chắc'
+  moi: 1 Khá vững, 2 Khá vững, 3 Đang tranh cãi, 4 Khá vững, 5 Khá vững, 6 Vững chắc (theo đồng thuận của hướng dẫn NHS)
+  ly_do: Hồ sơ n54–n59. Khung gộp hai ý theo ý yếu hơn; mục 1, 2 gắn với giả thuyết khớp nhau đang tranh cãi.
+- cu: 'Mục 3: "Không thay đổi được → chăm sóc cảm xúc một cách chủ động … tìm ý nghĩa …, chia sẻ cảm xúc …, chăm sóc cơ thể. Đây là đối phó cảm xúc lành mạnh"'
+  moi: '"Không thay đổi được → điều chỉnh phản ứng bên trong, nhưng đừng trốn tránh" … "một số nghiên cứu gợi ý … chẳng hạn chấp nhận thực tế"'
+  ly_do: Hồ sơ n56. Tiêu đề mục đổi (id tự sinh đổi theo; không có link tới id cũ).
+- cu: 'Mục 4: "Đây chính là thành phần nhạy với phản hồi … và cũng là vòng reappraisal trong mô hình gốc"; Mục 5: "sẽ lúng túng … và mạng lưới hỗ trợ xã hội"'
+  moi: '"Đây gần với thành phần … và với ý rằng đối phó thay đổi theo đánh giá liên tục"; "có thể lúng túng"; bỏ mạng lưới hỗ trợ xã hội'
+  ly_do: Hồ sơ n57, n58.
+- cu: 'Mục 6 (tiêu đề "Khi stress vượt quá sức…"): "Nếu stress kéo dài nhiều tuần, đi kèm mất ngủ triền miên, kiệt sức … — và là một chiến lược tốt."'
+  moi: '"Khi khó xoay xở với stress, hãy tìm sự giúp đỡ chuyên nghiệp": "Nếu bạn thấy khó xoay xở …, hoặc những cách tự làm không giúp được …"; thêm link Hỗ trợ; "có thể xem là một cách đối phó chủ động"'
+  ly_do: Hồ sơ n59, n60; thêm link /psyche/ho-tro/ ở khung Lưu ý quan trọng (n62).
+- cu: 'Ở Việt Nam: "Chúng tôi chưa tìm thấy …" (không mốc); "văn hóa Việt Nam đề cao gia đình và cộng đồng … hoặc niềm tin tâm linh"'
+  moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy …"; "Nếu Việt Nam được xem là xã hội thiên về tập thể …" kèm Kuo 2013 và Cheng 2014'
+  ly_do: Hồ sơ n64–n67.
+- cu: 'Ngộ nhận: "Sai. Khi tình huống không thay đổi được …"; "hành động dai dẳng không những vô ích mà còn tạo thêm thất vọng và tuyệt vọng"; "một trời một vực"'
+  moi: '"Không hẳn. …" với Forsythe và Compas, Kendall và Terry, Conway và Terry, Penley; mô hình giao dịch làm mềm'
+  ly_do: Hồ sơ n68–n70.
+- cu: 'Quiz: đáp án và giải thích của câu 2, 3, 4, 5'
+  moi: Làm mềm đồng bộ với thân bài (đánh giá ban đầu/thứ cấp; "được dự đoán", "có bằng chứng lẫn lộn"; "do chấn thương gây ra có thể đi cùng"; "giả định")
+  ly_do: Hồ sơ q2–q5.
+- cu: 'Mục Nguồn: thiếu Conway và Terry (1992); thiếu DOI của Forsythe và Compas, Kendall và Terry'
+  moi: Thêm Conway và Terry, Cheng, Kuo, NHS, Penley, Webb; thêm DOI
+  ly_do: Hồ sơ n72.
