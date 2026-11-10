@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/greenland2016#…
+ban_ghi: nguon/greenland2016
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1007/s10654-016-0149-3
+    link: https://api.crossref.org/works/10.1007%2Fs10654-016-0149-3
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1007/s10654-016-0149-3
+    link: https://api.openalex.org/works/doi:10.1007%2Fs10654-016-0149-3
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Greenland, S., Senn, S. J., Rothman, K. J., Carlin, J. B., Poole, C., Goodman, S. N., & Altman, D. G."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Greenland, Sander; Senn, Stephen J.; Rothman, Kenneth J.; Carlin, John B.; Poole, Charles; Goodman, Steven N.; Altman, Douglas G.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10654-016-0149-3
+    luot_2_trich: Sander Greenland; Stephen John Senn; Kenneth Jay Rothman; John B. Carlin; Charles Poole; Steven N. Goodman; Douglas G. Altman
+  - id: n2
+    cau: "Năm xuất bản: 2016"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2016; các năm Crossref ghi: 2016"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10654-016-0149-3
+  - id: n3
+    cau: "Tên: Statistical tests, P values, confidence intervals, and power: A guide to misinterpretations"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10654-016-0149-3
+  - id: n4
+    cau: "Nơi đăng: European Journal of Epidemiology, 31(4), 337–350"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: European Journal of Epidemiology, tập 31, số 4, trang 337-350
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10654-016-0149-3
+  - id: n5
+    cau: DOI 10.1007/s10654-016-0149-3 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs10654-016-0149-3

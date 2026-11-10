@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/nosek2022#…
+ban_ghi: nguon/nosek2022
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1146/annurev-psych-020821-114157
+    link: https://api.crossref.org/works/10.1146%2Fannurev-psych-020821-114157
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1146/annurev-psych-020821-114157
+    link: https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-020821-114157
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Nosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., Fidler, F., Hilgard, J., Kline Struhl, M., Nuijten, M. B., Rohrer, J. M., Romero, F., Scheel, A. M., Scherer, L. D., Schönbrodt, F. D., & Vazire, S."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Nosek, Brian A.; Hardwicke, Tom E.; Moshontz, Hannah; Allard, Aurélien; Corker, Katherine S.; Dreber, Anna; Fidler, Fiona; Hilgard, Joe; Kline Struhl, Melissa; Nuijten, Michèle B.; Rohrer, Julia M.; Romero, Felipe; Scheel, Anne M.; Scherer, Laura D.; Schönbrodt, Felix D.; Vazire, Simine
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-020821-114157
+    luot_2_trich: Brian A. Nosek; Tom Elis Hardwicke; Hannah Moshontz; Aurélien Allard; Katherine S. Corker; Anna Dreber; Fiona M. Fidler; Joe Hilgard; Melissa Kline Struhl; Michèle B. Nuijten; Julia M. Rohrer; Felipe Romero; Anne M. Scheel; Laura Danielle Scherer; Felix D. Schönbrodt; Simine Vazire
+  - id: n2
+    cau: "Năm xuất bản: 2022"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2022; các năm Crossref ghi: 2022"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1146/annurev-psych-020821-114157&resultType=core&format=json
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2021, bản ghi 2022. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2022 (tập 73, tr. 719-748), trực tuyến 2021-10-19; đủ 16 tác giả, khớp bản ghi. Năm 2021 của OpenAlex là năm trực tuyến."
+  - id: n3
+    cau: "Tên: Replicability, robustness, and reproducibility in psychological science"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Replicability, Robustness, and Reproducibility in Psychological Science
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-020821-114157
+  - id: n4
+    cau: "Nơi đăng: Annual Review of Psychology, 73, 719–748"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Annual Review of Psychology, tập 73, số 1, trang 719-748
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-020821-114157
+  - id: n5
+    cau: DOI 10.1146/annurev-psych-020821-114157 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-psych-020821-114157

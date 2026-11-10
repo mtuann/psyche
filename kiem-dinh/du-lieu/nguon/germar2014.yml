@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/germar2014#…
+ban_ghi: nguon/germar2014
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/0146167213508985
+    link: https://api.crossref.org/works/10.1177%2F0146167213508985
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/0146167213508985
+    link: https://api.openalex.org/works/doi:10.1177%2F0146167213508985
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Germar, M., Schlemmer, A., Krug, K., Voss, A., & Mojzisch, A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Germar, Markus; Schlemmer, Alexander; Krug, Kristine; Voss, Andreas; Mojzisch, Andreas
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: &a1
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1177/0146167213508985&resultType=core&format=json
+      - https://api.semanticscholar.org/graph/v1/paper/DOI:10.1177/0146167213508985?fields=title,authors,year,venue,publicationDate,journal
+      - https://api.crossref.org/works/10.1177/0146167213508985
+    luot_2_ghi_chu: 'OpenAlex: tác giả: danh sách tác giả: tác giả thứ 4 của bản ghi là "Voss", nguồn ghi "Andreas Voß". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC, Semantic Scholar và Crossref đều ghi tác giả thứ tư là Voss (chỉ OpenAlex ghi Voß); in 2014 Feb (tập 40 số 2, tr. 217-231), trực tuyến 2013-10-23.'
+    luot_2_trich: Markus Germar; Alexander Schlemmer; Kristine Krug; Andreas Voß; Andreas Mojzisch
+  - id: n2
+    cau: "Năm xuất bản: 2014"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2014; các năm Crossref ghi: 2013, 2014"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: *a1
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2013, bản ghi 2014. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC, Semantic Scholar và Crossref đều ghi tác giả thứ tư là Voss (chỉ OpenAlex ghi Voß); in 2014 Feb (tập 40 số 2, tr. 217-231), trực tuyến 2013-10-23."
+  - id: n3
+    cau: "Tên: Social influence and perceptual decision making: A diffusion model analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Social Influence and Perceptual Decision Making: A Diffusion Model Analysis"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167213508985
+  - id: n4
+    cau: "Nơi đăng: Personality and Social Psychology Bulletin, 40(2), 217–231"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Personality and Social Psychology Bulletin, tập 40, số 2, trang 217-231
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167213508985
+  - id: n5
+    cau: DOI 10.1177/0146167213508985 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F0146167213508985

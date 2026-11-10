@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/barnett2005#…
+ban_ghi: nguon/barnett2005
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1093/ije/dyh299
+    link: https://api.crossref.org/works/10.1093%2Fije%2Fdyh299
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1093/ije/dyh299
+    link: https://api.openalex.org/works/doi:10.1093%2Fije%2Fdyh299
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Barnett, A. G., van der Pols, J. C., & Dobson, A. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Barnett, A. G
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: &a1
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1093/ije/dyh299&resultType=core&format=json
+    luot_2_ghi_chu: 'Crossref: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "van der Pols", nguồn ghi "(không có)"; OpenAlex: tác giả: danh sách tác giả: tác giả thứ 2 của bản ghi là "van der Pols", nguồn ghi "(không có)". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: tác giả Barnett AG, van der Pols JC, Dobson AJ (đủ ba người); in 2005 Feb (tập 34 số 1, tr. 215-220), trực tuyến 2004-08-27. Crossref thiếu tác giả; năm 2004 là năm trực tuyến.'
+    luot_2_trich: Adrian Gerard Barnett
+  - id: n2
+    cau: "Năm xuất bản: 2005"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2004; các năm Crossref ghi: 2004"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: *a1
+    luot_2_ghi_chu: "Crossref: năm: nguồn ghi 2004, bản ghi 2005; OpenAlex: năm: nguồn ghi 2004, bản ghi 2005. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: tác giả Barnett AG, van der Pols JC, Dobson AJ (đủ ba người); in 2005 Feb (tập 34 số 1, tr. 215-220), trực tuyến 2004-08-27. Crossref thiếu tác giả; năm 2004 là năm trực tuyến."
+  - id: n3
+    cau: "Tên: Regression to the mean: What it is and how to deal with it"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Regression to the mean: what it is and how to deal with it"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1093%2Fije%2Fdyh299
+  - id: n4
+    cau: "Nơi đăng: International Journal of Epidemiology, 34(1), 215–220"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: International Journal of Epidemiology, tập 34, số 1, trang 215-220
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1093%2Fije%2Fdyh299
+  - id: n5
+    cau: DOI 10.1093/ije/dyh299 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1093%2Fije%2Fdyh299

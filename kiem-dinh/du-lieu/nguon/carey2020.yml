@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/carey2020#…
+ban_ghi: nguon/carey2020
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1371/journal.pcbi.1008032
+    link: https://api.crossref.org/works/10.1371%2Fjournal.pcbi.1008032
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1371/journal.pcbi.1008032
+    link: https://api.openalex.org/works/doi:10.1371%2Fjournal.pcbi.1008032
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Carey, M. A., Steiner, K. L., & Petri, W. A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Carey, Maureen A.; Steiner, Kevin L.; Petri, William A.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pcbi.1008032
+    luot_2_trich: Maureen A. Carey; Kevin Steiner; William A. Petri
+  - id: n2
+    cau: "Năm xuất bản: 2020"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2020; các năm Crossref ghi: 2020"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pcbi.1008032
+  - id: n3
+    cau: "Tên: Ten simple rules for reading a scientific paper"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Ten simple rules for reading a scientific paper
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pcbi.1008032
+  - id: n4
+    cau: "Nơi đăng: PLOS Computational Biology, 16(7), e1008032"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: PLOS Computational Biology, tập 16, số 7, trang e1008032
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pcbi.1008032
+  - id: n5
+    cau: DOI 10.1371/journal.pcbi.1008032 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1371%2Fjournal.pcbi.1008032

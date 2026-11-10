@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/vervliet2013#…
+ban_ghi: nguon/vervliet2013
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1146/annurev-clinpsy-050212-185542
+    link: https://api.crossref.org/works/10.1146%2Fannurev-clinpsy-050212-185542
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1146/annurev-clinpsy-050212-185542
+    link: https://api.openalex.org/works/doi:10.1146%2Fannurev-clinpsy-050212-185542
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Vervliet, B., Craske, M. G., & Hermans, D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Vervliet, Bram; Craske, Michelle G.; Hermans, Dirk
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-clinpsy-050212-185542
+    luot_2_trich: Bram Vervliet; Michelle G. Craske; Dirk Hermans
+  - id: n2
+    cau: "Năm xuất bản: 2013"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2013; các năm Crossref ghi: 2013"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-clinpsy-050212-185542
+  - id: n3
+    cau: "Tên: Fear extinction and relapse: State of the art"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Fear Extinction and Relapse: State of the Art"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-clinpsy-050212-185542
+  - id: n4
+    cau: "Nơi đăng: Annual Review of Clinical Psychology, 9, 215–248"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Annual Review of Clinical Psychology, tập 9, số 1, trang 215-248
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-clinpsy-050212-185542
+  - id: n5
+    cau: DOI 10.1146/annurev-clinpsy-050212-185542 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1146%2Fannurev-clinpsy-050212-185542

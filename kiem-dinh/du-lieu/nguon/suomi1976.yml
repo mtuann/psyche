@@ -1,0 +1,88 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/suomi1976#…
+ban_ghi: nguon/suomi1976
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1176/ajp.133.11.1279
+    link: https://api.crossref.org/works/10.1176%2Fajp.133.11.1279
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1176/ajp.133.11.1279
+    link: https://api.openalex.org/works/doi:10.1176%2Fajp.133.11.1279
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Suomi, S. J., Delizio, R., & Harlow, H. F."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: (Crossref không ghi tác giả)
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1176/ajp.133.11.1279&resultType=core&format=json
+    luot_2_ghi_chu: "Crossref: tác giả: nguồn không ghi tác giả. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC (PubMed): tác giả Suomi SJ, Delizio R, Harlow HF; in 1976-11 (tập 133 số 11, tr. 1279-1285). Crossref thiếu tác giả, bản ghi đúng."
+    luot_2_trich: Stephen J. Suomi; Roberta DeLizio; Harry F. Harlow
+    ghi_chu: 'đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, tac_gia): bản ghi ghép nhầm: tên bài là của Suomi, Delizio & Harlow (1976), American Journal of Psychiatry, 133(11), 1279–1285 (PubMed 824960, Crossref DOI 10.1176/ajp.133.11.1279), còn tác giả, năm, tập lấy sai. Không có bài 1972 nào tên này: PubMed (Suomi SJ và Harlow HF, 1972) chỉ có 5 bài, bài ở AJP là "Monkey psychiatrists", 128(8), 927–932; Crossref tìm theo tên chỉ ra bài 1976. Một nguồn, nên sửa thành bài 1976 và đổi id thành suomi1976 (id phải có năm; không trang, hồ sơ hay bộ dữ liệu nào dẫn suomi1972; hồ sơ thi-nghiem/harlow và trang dẫn suomi1976). Tác giả theo PubMed (Crossref không ghi tác giả)'
+  - id: n2
+    cau: "Năm xuất bản: 1976"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1976; các năm Crossref ghi: 1976"
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1176%2Fajp.133.11.1279
+    ghi_chu: 'đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, nam): bản ghi ghép nhầm: tên bài là của Suomi, Delizio & Harlow (1976), American Journal of Psychiatry, 133(11), 1279–1285 (PubMed 824960, Crossref DOI 10.1176/ajp.133.11.1279), còn tác giả, năm, tập lấy sai. Không có bài 1972 nào tên này: PubMed (Suomi SJ và Harlow HF, 1972) chỉ có 5 bài, bài ở AJP là "Monkey psychiatrists", 128(8), 927–932; Crossref tìm theo tên chỉ ra bài 1976. Một nguồn, nên sửa thành bài 1976 và đổi id thành suomi1976 (id phải có năm; không trang, hồ sơ hay bộ dữ liệu nào dẫn suomi1972; hồ sơ thi-nghiem/harlow và trang dẫn suomi1976). Tác giả theo PubMed (Crossref không ghi tác giả)'
+  - id: n3
+    cau: "Tên: Social rehabilitation of separation-induced depressive disorders in monkeys"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Social rehabilitation of separation-induced depressive disorders in monkeys
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1176%2Fajp.133.11.1279
+  - id: n4
+    cau: "Nơi đăng: American Journal of Psychiatry, 133(11), 1279–1285"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: American Journal of Psychiatry, tập 133, số 11, trang 1279-1285
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1176%2Fajp.133.11.1279
+    ghi_chu: 'đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, noi_dang): bản ghi ghép nhầm: tên bài là của Suomi, Delizio & Harlow (1976), American Journal of Psychiatry, 133(11), 1279–1285 (PubMed 824960, Crossref DOI 10.1176/ajp.133.11.1279), còn tác giả, năm, tập lấy sai. Không có bài 1972 nào tên này: PubMed (Suomi SJ và Harlow HF, 1972) chỉ có 5 bài, bài ở AJP là "Monkey psychiatrists", 128(8), 927–932; Crossref tìm theo tên chỉ ra bài 1976. Một nguồn, nên sửa thành bài 1976 và đổi id thành suomi1976 (id phải có năm; không trang, hồ sơ hay bộ dữ liệu nào dẫn suomi1972; hồ sơ thi-nghiem/harlow và trang dẫn suomi1976). Tác giả theo PubMed (Crossref không ghi tác giả)'
+  - id: n5
+    cau: DOI 10.1176/ajp.133.11.1279 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1176%2Fajp.133.11.1279
+    ghi_chu: 'đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, doi): bản ghi ghép nhầm: tên bài là của Suomi, Delizio & Harlow (1976), American Journal of Psychiatry, 133(11), 1279–1285 (PubMed 824960, Crossref DOI 10.1176/ajp.133.11.1279), còn tác giả, năm, tập lấy sai. Không có bài 1972 nào tên này: PubMed (Suomi SJ và Harlow HF, 1972) chỉ có 5 bài, bài ở AJP là "Monkey psychiatrists", 128(8), 927–932; Crossref tìm theo tên chỉ ra bài 1976. Một nguồn, nên sửa thành bài 1976 và đổi id thành suomi1976 (id phải có năm; không trang, hồ sơ hay bộ dữ liệu nào dẫn suomi1972; hồ sơ thi-nghiem/harlow và trang dẫn suomi1976). Tác giả theo PubMed (Crossref không ghi tác giả)'

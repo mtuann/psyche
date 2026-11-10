@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/cochondrouet2023#…
+ban_ghi: nguon/cochondrouet2023
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.3389/fpsyg.2023.1216437
+    link: https://api.crossref.org/works/10.3389%2Ffpsyg.2023.1216437
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.3389/fpsyg.2023.1216437
+    link: https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1216437
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Cochon Drouet, O., Lentillon-Kaestner, V., & Margas, N."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Cochon Drouet, Océane; Lentillon-Kaestner, Vanessa; Margas, Nicolas
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.3389/fpsyg.2023.1216437&resultType=core&format=json
+    luot_2_ghi_chu: "OpenAlex: tác giả: danh sách tác giả: tác giả thứ 1 của bản ghi là \"Cochon Drouet\", nguồn ghi \"Océane Drouet\". Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: tác giả đầu 'Cochon Drouet O' (họ Cochon Drouet), cùng Lentillon-Kaestner V, Margas N; 2023, tập 14, số bài 1216437."
+    luot_2_trich: Océane Drouet; Vanessa Lentillon‐Kaestner; Nicolas Margas
+  - id: n2
+    cau: "Năm xuất bản: 2023"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1216437
+  - id: n3
+    cau: "Tên: Effects of the Jigsaw method on student educational outcomes: Systematic review and meta-analyses"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Effects of the Jigsaw method on student educational outcomes: systematic review and meta-analyses"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1216437
+  - id: n4
+    cau: "Nơi đăng: Frontiers in Psychology, 14, 1216437"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Frontiers in Psychology, tập 14, trang 1216437
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1216437
+  - id: n5
+    cau: DOI 10.3389/fpsyg.2023.1216437 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1216437

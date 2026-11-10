@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/sperber2024#…
+ban_ghi: nguon/sperber2024
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/cdev.14129
+    link: https://api.crossref.org/works/10.1111%2Fcdev.14129
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/cdev.14129
+    link: https://api.openalex.org/works/doi:10.1111%2Fcdev.14129
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Sperber, J. F., Vandell, D. L., Duncan, G. J., & Watts, T. W."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Sperber, Jessica F; Vandell, Deborah Lowe; Duncan, Greg J; Watts, Tyler W
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.14129
+    luot_2_trich: Jessica F. Sperber; Deborah Lowe Vandell; Greg J. Duncan; Tyler W. Watts
+  - id: n2
+    cau: "Năm xuất bản: 2024"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2024; các năm Crossref ghi: 2024"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.14129
+  - id: n3
+    cau: "Tên: Delay of gratification and adult outcomes: The Marshmallow Test does not reliably predict adult functioning"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Delay of gratification and adult outcomes: The Marshmallow Test does not reliably predict adult functioning"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.14129
+  - id: n4
+    cau: "Nơi đăng: Child Development, 95(6), 2015–2029"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Child Development, tập 95, số 6, trang 2015-2029
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.14129
+  - id: n5
+    cau: DOI 10.1111/cdev.14129 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fcdev.14129

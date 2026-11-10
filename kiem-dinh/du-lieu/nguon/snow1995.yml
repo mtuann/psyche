@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/snow1995#…
+ban_ghi: nguon/snow1995
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/1467-8721.ep10772605
+    link: https://api.crossref.org/works/10.1111%2F1467-8721.ep10772605
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/1467-8721.ep10772605
+    link: https://api.openalex.org/works/doi:10.1111%2F1467-8721.ep10772605
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Snow, R. E."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Snow, Richard E.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-8721.ep10772605
+    luot_2_trich: Richard E. Snow
+  - id: n2
+    cau: "Năm xuất bản: 1995"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1995; các năm Crossref ghi: 1995"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-8721.ep10772605
+  - id: n3
+    cau: "Tên: Pygmalion and intelligence?"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Pygmalion and Intelligence?
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-8721.ep10772605
+  - id: n4
+    cau: "Nơi đăng: Current Directions in Psychological Science, 4(6), 169–171"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Current Directions in Psychological Science, tập 4, số 6, trang 169-171
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-8721.ep10772605
+  - id: n5
+    cau: DOI 10.1111/1467-8721.ep10772605 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2F1467-8721.ep10772605

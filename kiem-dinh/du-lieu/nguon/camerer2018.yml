@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/camerer2018#…
+ban_ghi: nguon/camerer2018
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/nguon-don
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/s41562-018-0399-z
+    link: https://api.crossref.org/works/10.1038%2Fs41562-018-0399-z
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/s41562-018-0399-z
+    link: https://api.openalex.org/works/doi:10.1038%2Fs41562-018-0399-z
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., … Wu, H."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Camerer, Colin F.; Dreber, Anna; Holzmeister, Felix; Ho, Teck-Hua; Huber, Jürgen; Johannesson, Magnus; Kirchler, Michael; Nave, Gideon; Nosek, Brian A.; Pfeiffer, Thomas; Altmejd, Adam; Buttrick, Nick; Chan, Taizan; Chen, Yiling; Forsell, Eskil; Gampa, Anup; Heikensten, Emma; Hummer, Lily; Imai, Taisuke; Isaksson, Siri; Manfredi, Dylan; Rose, Julia; Wagenmakers, Eric-Jan; Wu, Hang
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-018-0399-z
+    luot_2_trich: Colin F. Camerer; Anna Dreber; Felix Holzmeister; Teck‐Hua Ho; Jürgen Huber; Magnus Johannesson; Michael Kirchler; Gideon Nave; Brian A. Nosek; Thomas Pfeiffer; Adam Altmejd; Nick Buttrick; Taizan Chan; Yiling Chen; Eskil Forsell; Anup Gampa; Emma Heikensten; Lily Hummer; Taisuke Imai; Siri Isaksson; Dylan Manfredi; Julia Rose; Eric‐Jan Wagenmakers; Hang Wu
+  - id: n2
+    cau: "Năm xuất bản: 2018"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2018; các năm Crossref ghi: 2018"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-018-0399-z
+  - id: n3
+    cau: "Tên: Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-018-0399-z
+  - id: n4
+    cau: "Nơi đăng: Nature Human Behaviour, 2(9), 637–644"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Nature Human Behaviour, tập 2, số 9, trang 637-644
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-018-0399-z
+  - id: n5
+    cau: DOI 10.1038/s41562-018-0399-z trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-018-0399-z
