@@ -40,7 +40,7 @@ Năm 1984, James R. Flynn, nhà nghiên cứu ở Đại học Otago (New Zealan
 
 ### Pietschnig và Voracek (2015): phân tích tổng hợp gần 4 triệu người
 
-**Thiết kế.** Phân tích tổng hợp chính thức đầu tiên về hiệu ứng Flynn: 271 mẫu độc lập, gần 4 triệu người tham gia, từ 31 quốc gia, bao phủ giai đoạn 1909–2013.
+**Thiết kế.** Một phân tích tổng hợp lớn về hiệu ứng Flynn, công bố sau phân tích tổng hợp của Trahan và cộng sự (2014): 271 mẫu độc lập, gần 4 triệu người tham gia, từ 31 quốc gia, bao phủ giai đoạn 1909–2013.
 
 **Kết quả.** Mức tăng trung bình toàn cầu là **2,8 điểm mỗi thập kỷ**; tách theo lĩnh vực, trí thông minh lưu động tăng **0,41 điểm/năm** — gấp đôi trí thông minh kết tinh (0,21 điểm/năm) ([Pietschnig và Voracek, 2015](https://doi.org/10.1177/1745691615577701)). Phân tích này cũng xác nhận: mức tăng **mạnh hơn ở người trưởng thành** so với trẻ em, và đã **giảm dần trong những thập niên gần đây**.
 
@@ -86,7 +86,7 @@ Bốn họ giải thích cụ thể được bàn đến nhiều nhất:
 
 - **Dinh dưỡng và sức khỏe.** Dinh dưỡng, y tế tốt hơn, ít bệnh tật và ít phơi nhiễm chì hơn là những yếu tố đã được đề xuất; ở Na Uy, mức tăng chiều cao tương quan chặt với mức tăng điểm cho đến khi chiều cao ngừng tăng cuối thập niên 1980 (Sundet và cộng sự, 2004). Pietschnig và Voracek (2015) cho rằng các yếu tố gắn với "tốc độ lịch sử sống" — gia đình ít con hơn, dinh dưỡng và y tế tốt hơn — dường như là nguyên nhân chính của quỹ đạo chung của hiệu ứng.
 
-- **Môi trường nhận thức ngày càng đòi hỏi tư duy trừu tượng.** Dickens và Flynn (2001) lập luận rằng công nghiệp hóa, công nghệ và nghề nghiệp ngày càng đòi hỏi nhiều hơn ở nhận thức, và con người tự chọn hay được đặt vào những môi trường đòi hỏi hơn — đúng kiểu tư duy mà bài Raven đo lường. Cách hiểu này nhấn mạnh *thói quen tư duy* thay đổi chứ không phải não bộ "tốt hơn".
+- **Môi trường nhận thức ngày càng đòi hỏi tư duy trừu tượng.** Dickens và Flynn (2001) gợi ý vài yếu tố có thể đã khởi động hiệu ứng: công nghiệp hóa làm công việc phức tạp hơn, nhiều thời gian rảnh hơn cho đọc sách và trò chơi trí tuệ, máy móc quanh ta đòi hỏi nhận thức nhiều hơn, gia đình ít con hơn. Theo họ, những thay đổi này có thể khiến thế hệ sau coi trọng việc giải quyết vấn đề trừu tượng hơn hẳn thế hệ trước, rồi được hiệu ứng bội số khuếch đại. Chính họ nói rõ chưa chứng minh được yếu tố nào trong số này thật sự góp phần.
 
 - **Quen thuộc với bài kiểm tra.** Người hiện đại làm bài trắc nghiệm từ nhỏ nên một phần của "tăng điểm" có thể là tăng ở *kỹ năng làm bài*. Nhưng người làm lại cùng một bài chỉ tăng khoảng 5–6 điểm, và các giải thích dựa vào học đường lại dự đoán mức tăng lớn nhất ở bài gần chương trình học — trái với dữ liệu — nên giải thích này không đủ (Neisser, 1997).
 

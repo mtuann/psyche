@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L1 phần 2/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D5-L1)
+      review: Claude Opus 5.5 (agent review D5-L1, 09/11/2026)
       kiem_mau: null
 nguon:
   - id: spearman1904
@@ -90,6 +90,22 @@ nguon:
     ten: 'OpenAlex, tìm 09/11/2026 (intelligence IQ predicts academic achievement income Vietnam; IQ Vietnamese school performance; cognitive ability earnings Vietnam Young Lives): không thấy nghiên cứu dự báo của IQ với học tập, nghề nghiệp, thu nhập trên người Việt'
     link: https://api.openalex.org/works?search=intelligence%20IQ%20predicts%20academic%20achievement%20income%20Vietnam
     toan_van: true
+  - id: pearson-wais5
+    ten: "Pearson (2024), WAIS-5 Overview brochure (tài liệu giới thiệu của nhà phát hành): toàn văn (PDF, review mở 09/11/2026)"
+    link: https://www.pearsonassessments.com/content/dam/school/global/clinical/us/assets/wais-5/wais-5-overview-brochure.pdf
+    toan_van: true
+  - id: trahan2014
+    ten: "Trahan, Stuebing, Fletcher & Hiscock (2014), Psychol Bull 140(5), 1332–1360, The Flynn effect: A meta-analysis: tóm tắt (OpenAlex)"
+    link: https://doi.org/10.1037/a0037173
+    toan_van: false
+  - id: sackett2022
+    ten: "Sackett, Zhang, Berry & Lievens (2022), J Appl Psychol 107(11), 2040–2068: tóm tắt (OpenAlex)"
+    link: https://doi.org/10.1037/apl0000994
+    toan_van: false
+  - id: mcgill2018
+    ten: "McGill, Dombrowski & Canivez (2018), J Sch Psychol 71, 108–121, Cognitive profile analysis in school psychology: tóm tắt (Europe PMC, PubMed 30463666)"
+    link: https://pubmed.ncbi.nlm.nih.gov/30463666/
+    toan_van: false
 nhan_dinh:
   - id: n1
     cau: IQ đo một khía cạnh của trí thông minh (khả năng nhận thức trừu tượng như lý luận, trí nhớ, tốc độ xử lý); sự tháo vát, khả năng thuyết phục, óc sáng tạo, sự kiên trì nằm ngoài những gì bài test IQ đo.
@@ -100,10 +116,11 @@ nhan_dinh:
     trich: Other individual characteristics--interpersonal skills, aspects of personality, etc.--are probably of equal or greater importance, but at this point we do not have equally reliable instruments to measure them. | verbal comprehension, perceptual reasoning, working memory, and processing speed
     vi_tri: Neisser và cộng sự 1996, mục Job performance; Pearson, trang WAIS-IV
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Sự tháo vát của Bình, khả năng thuyết phục, óc sáng tạo, sự kiên trì — tất cả nằm ngoài những gì bài test IQ đo". Ví dụ An và Bình là giả định (gia-dinh). "Sáng tạo" liên hệ yếu với IQ (r = .17, Strenze 2015) chứ không "nằm ngoài" hoàn toàn: đã giữ câu chung ("khía cạnh") và để chi tiết ở mục Strenze.'
+    ghi_chu: 'Chữ cũ: "Sự tháo vát của Bình, khả năng thuyết phục, óc sáng tạo, sự kiên trì — tất cả nằm ngoài những gì bài test IQ đo". Ví dụ An và Bình là giả định (gia-dinh). "Sáng tạo" liên hệ yếu với IQ (r = .17, Strenze 2015) chứ không "nằm ngoài" hoàn toàn: đã giữ câu chung ("khía cạnh") và để chi tiết ở mục Strenze. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf", "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
     luot_2_ghi_chu: Neisser 1996 nêu sáng tạo, óc thực tế, nhạy cảm xã hội nằm ngoài bài test và kiên trì là đặc điểm khác trí tuệ; 'tháo vát', 'thuyết phục' không có nguyên văn nhưng cùng tinh thần (practical sense, social sensitivity).
+    review: dung
   - id: n2
     cau: Năm 1904, Charles Spearman thấy khi so điểm các môn học (cổ ngữ, tiếng Pháp, tiếng Anh, toán) với khả năng phân biệt âm thanh, ánh sáng, trọng lượng và năng khiếu âm nhạc của học sinh, các cặp phép đo tương quan dương với nhau.
     loai: phat-hien
@@ -113,10 +130,11 @@ nhan_dinh:
     trich: 'In view of this community being discovered between such diverse functions as in-school Cleverness, out-of-school Common Sense, Sensory Discrimination, and Musical Talent... | Discrimination correlates with Talent in the four branches of study, Classics, French, English, and Mathematics, by an average of 0.51 | the British psychologist Charles Spearman | The whole thus forms a perfectly constant Hierarchy in the following order: Classics, French, English, and Mathematics.'
     vi_tri: Spearman 1904, các mục III–V (psychclassics, chap1)
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 1): "toán, ngôn ngữ, trí nhớ, phân loại hình ảnh". Spearman không dùng bài trí nhớ hay phân loại hình ảnh. Chữ trên trang hiện khớp đề xuất của G1; đã đối chiếu lại toàn văn. Quốc tịch "người Anh" của Spearman: Neisser 1997 ("the British psychologist Charles Spearman").'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 1): "toán, ngôn ngữ, trí nhớ, phân loại hình ảnh". Spearman không dùng bài trí nhớ hay phân loại hình ảnh. Chữ trên trang hiện khớp đề xuất của G1; đã đối chiếu lại toàn văn. Quốc tịch "người Anh" của Spearman: Neisser 1997 ("the British psychologist Charles Spearman"). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "http://psychclassics.yorku.ca/Spearman/chap5.htm" ]
     luot_2_ghi_chu: Phân biệt ánh sáng, trọng lượng ở các loạt thí nghiệm đầu; âm thanh (pitch), môn học và năng khiếu âm nhạc ở loạt IV; mọi tương quan báo cáo đều dương.
+    review: dung
   - id: n3
     cau: Về sau, hiện tượng các bài kiểm tra nhận thức tương quan dương với nhau được gọi là positive manifold (đa tạp dương).
     loai: dinh-nghia
@@ -126,9 +144,10 @@ nhan_dinh:
     trich: all such correlations are typically positive and form what is called a "positive manifold." Spearman (1927) showed that in any such manifold, some portion of the variance of scores on each test can be mathematically attributed to a "general factor," or g.
     vi_tri: Neisser và cộng sự 1996, mục Intelligence tests (Spearman 1904 không có từ "manifold")
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 2): "Ông gọi hiện tượng này là positive manifold". Từ "manifold" không có trong toàn văn Spearman (1904); chữ trên trang hiện: "Về sau, ... được gọi là". Thuật ngữ do Neisser và cộng sự (1996) dùng (không gán cho Spearman 1904).'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 2): "Ông gọi hiện tượng này là positive manifold". Từ "manifold" không có trong toàn văn Spearman (1904); chữ trên trang hiện: "Về sau, ... được gọi là". Thuật ngữ do Neisser và cộng sự (1996) dùng (không gán cho Spearman 1904). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
+    review: dung
   - id: n4
     cau: Spearman đề xuất rằng đằng sau mọi hoạt động trí tuệ có một chức năng chung (về sau gọi là g) cộng với các yếu tố riêng của từng hoạt động (về sau gọi là s); cách giải thích này về sau gọi là thuyết hai nhân tố.
     loai: lich-su
@@ -138,10 +157,11 @@ nhan_dinh:
     trich: all branches of intellectual activity have in common one fundamental function ( or group of functions ), whereas the remaining or specific elements of the activity seem in every case to be wholly different from that in all the others | Some theorists (e.g., Spearman, 1927) have emphasized the importance of a general factor, g
     vi_tri: Spearman 1904, mục kết luận IV; Neisser và cộng sự 1996
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Spearman đề xuất thuyết hai nhân tố: ... yếu tố chung g ... yếu tố riêng s". Ký hiệu g và tên "thuyết hai nhân tố" là cách gọi về sau (Spearman 1927); bài 1904 nói "một chức năng nền chung" cộng "các yếu tố riêng". Đã viết lại cho đúng.'
+    ghi_chu: 'Chữ cũ: "Spearman đề xuất thuyết hai nhân tố: ... yếu tố chung g ... yếu tố riêng s". Ký hiệu g và tên "thuyết hai nhân tố" là cách gọi về sau (Spearman 1927); bài 1904 nói "một chức năng nền chung" cộng "các yếu tố riêng". Đã viết lại cho đúng. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "http://psychclassics.yorku.ca/Spearman/chap5.htm", "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
     luot_2_ghi_chu: "Ký hiệu g, s và tên 'thuyết hai nhân tố' có sau 1904 (Neisser 1997: 'Spearman christened it g')."
+    review: dung
   - id: n5
     cau: Điểm toán của An cao một phần vì g của An cao, một phần vì năng khiếu toán riêng (s) của An tốt.
     loai: phat-hien
@@ -185,22 +205,25 @@ nhan_dinh:
     trich: By convention, overall intelligence test scores are usually converted to a scale in which the mean is 100 and the standard deviation is 15.
     vi_tri: Neisser và cộng sự 1996
     ket_qua: da-lam-mem
-    ghi_chu: Điểm chuẩn hóa là vị trí so với nhóm chuẩn; câu "thang thứ bậc, không phải thang tỉ lệ" là diễn giải thống kê chuẩn; nguồn chỉ cung cấp quy ước thang. Đã giữ vì đúng định nghĩa; ghi lại cho review.
+    ghi_chu: 'Điểm chuẩn hóa là vị trí so với nhóm chuẩn; câu "thang thứ bậc, không phải thang tỉ lệ" là diễn giải thống kê chuẩn; nguồn chỉ cung cấp quy ước thang. Đã giữ vì đúng định nghĩa; ghi lại cho review. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
     luot_2_ghi_chu: Phần 'không phải thang tỉ lệ' chắc chắn đúng; IQ là thang thứ bậc hay khoảng thì giới đo lường còn bàn, nên có thể viết 'IQ cho biết thứ hạng tương đối, không phải thang tỉ lệ'.
+    review: dung
   - id: n9
-    cau: 'Thang Wechsler dành cho người lớn (WAIS) cho bốn chỉ số: hiểu ngôn ngữ, lý luận tri giác, trí nhớ làm việc, tốc độ xử lý.'
+    cau: 'Bản thứ tư của thang Wechsler dành cho người lớn (WAIS-IV) cho bốn chỉ số: hiểu ngôn ngữ, lý luận tri giác, trí nhớ làm việc, tốc độ xử lý; bản thứ năm (WAIS-5, 2024) có năm chỉ số chính: hiểu ngôn ngữ, thị giác–không gian, lý luận lỏng, trí nhớ làm việc, tốc độ xử lý.'
     loai: dinh-nghia
     nguon:
       - pearson-wais
-    trich: verbal comprehension, perceptual reasoning, working memory, and processing speed
-    vi_tri: Pearson, trang sản phẩm WAIS-IV
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "đo bốn nhóm năng lực". Thay "đo bốn nhóm năng lực" bằng "cho bốn chỉ số" (đúng tên của nhà phát hành); nguồn là trang nhà sản xuất đọc qua công cụ web (bậc 2, chưa đọc tài liệu kỹ thuật); ghi trong phần nguồn.'
+      - pearson-wais5
+    trich: verbal comprehension, perceptual reasoning, working memory, and processing speed (WAIS-IV) | Consisting of a primary battery of 10 subtests that are used to appraise intellect and five cognitive domains — verbal comprehension, visual spatial, fluid reasoning, working memory, and processing speed (WAIS-5) | Publication date 2024
+    vi_tri: Pearson, trang sản phẩm WAIS-IV; Pearson, WAIS-5 Overview brochure, tr. 1–2 (Primary index scales)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đo bốn nhóm năng lực". Thay "đo bốn nhóm năng lực" bằng "cho bốn chỉ số" (đúng tên của nhà phát hành); nguồn là trang nhà sản xuất đọc qua công cụ web (bậc 2, chưa đọc tài liệu kỹ thuật); ghi trong phần nguồn. Review (Claude Opus 5.5, 09/11/2026): Lượt 2 đúng: bốn chỉ số là của WAIS-IV; WAIS-5 (Pearson, 2024, chuẩn hóa 2023–2024) có năm chỉ số chính (đã mở tài liệu giới thiệu của Pearson). Trang trước review vẫn ghi "(WAIS) đo bốn nhóm năng lực" (sửa của lượt 1 chưa vào trang). Chữ mới: "Bản thứ tư của thang Wechsler dành cho người lớn (WAIS-IV) cho bốn chỉ số: hiểu ngôn ngữ, lý luận tri giác (xử lý hình ảnh, không gian), trí nhớ làm việc và tốc độ xử lý. Bản thứ năm (WAIS-5, 2024) có năm chỉ số chính: hiểu ngôn ngữ, thị giác–không gian, lý luận lỏng, trí nhớ làm việc và tốc độ xử lý." Thêm tài liệu Pearson vào mục Nguồn.'
     luot_2: sai
     luot_2_nguon: [ "https://www.pearsonassessments.com/content/dam/school/global/clinical/us/assets/wais-5/wais-5-overview-brochure.pdf" ]
     luot_2_ghi_chu: "câu đúng: Thang Wechsler dành cho người lớn bản thứ tư (WAIS-IV, 2008) cho bốn chỉ số: hiểu ngôn ngữ, lý luận tri giác, trí nhớ làm việc, tốc độ xử lý; bản thứ năm (WAIS-5, 2024) có năm chỉ số chính: hiểu ngôn ngữ, thị giác–không gian, lý luận lỏng, trí nhớ làm việc, tốc độ xử lý.; Bốn chỉ số là của WAIS-IV (2008). WAIS-5 (Pearson, chuẩn hóa 2023–2024) có năm chỉ số chính: lý luận tri giác tách thành thị giác–không gian và lý luận lỏng."
+    review: sai
   - id: n10
     cau: Ma trận Raven (dạng bài điền hình còn thiếu vào dãy hình) hầu như không dùng ngôn ngữ, được thiết kế để ít phụ thuộc văn hóa và học vấn (culturally reduced), thường dùng làm phép đo khả năng suy luận trừu tượng "ít chữ", dù điểm Raven vẫn thay đổi mạnh theo thế hệ.
     loai: phat-hien
@@ -209,9 +232,10 @@ nhan_dinh:
     trich: Culturally reduced content has maximized culturally influenced performance. That is, the effort to avoid culturally loaded words or symbols has made the test the purest measure of those problem-solving skills that are most subject to cultural determination.
     vi_tri: Flynn 1987, mục Dutch data (Assessment)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(Raven, 1938) ... nên ít phụ thuộc vào trình độ học vấn và văn hóa hơn, và được xem là một trong những phép đo ''sạch'' nhất của khả năng suy luận trừu tượng". Bỏ năm 1938 (không kiểm được trong hồ sơ), đổi "sạch" thành "ít phụ thuộc văn hóa (culturally reduced)" và thêm "dù điểm Raven vẫn thay đổi mạnh theo thế hệ" vì Flynn (1987) nói chính vì vậy bài này phản ánh kỹ năng chịu ảnh hưởng văn hóa nhất.'
+    ghi_chu: 'Chữ cũ: "(Raven, 1938) ... nên ít phụ thuộc vào trình độ học vấn và văn hóa hơn, và được xem là một trong những phép đo ''sạch'' nhất của khả năng suy luận trừu tượng". Bỏ năm 1938 (không kiểm được trong hồ sơ), đổi "sạch" thành "ít phụ thuộc văn hóa (culturally reduced)" và thêm "dù điểm Raven vẫn thay đổi mạnh theo thế hệ" vì Flynn (1987) nói chính vì vậy bài này phản ánh kỹ năng chịu ảnh hưởng văn hóa nhất. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.101.2.171.pdf", "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
+    review: dung
   - id: n11
     cau: Spearman thu thập điểm số của học sinh ở nhiều môn học và nhiều phép đo khác (phân biệt âm thanh, ánh sáng, trọng lượng; năng khiếu âm nhạc; đánh giá "óc thực tế"), rồi tính hệ số tương quan giữa các cặp phép đo.
     loai: phat-hien
@@ -220,10 +244,11 @@ nhan_dinh:
     trich: In view of this community being discovered between such diverse functions as in-school Cleverness, out-of-school Common Sense, Sensory Discrimination, and Musical Talent...
     vi_tri: Spearman 1904
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ: "nhiều bài kiểm tra nhận thức và môn học ... tính ma trận tương quan — một kỹ thuật thống kê mà ông gần như phát minh ra (tiền thân của phân tích nhân tố ngày nay)". Vế "gần như phát minh ... tiền thân của phân tích nhân tố" không có nguồn trong hồ sơ nên bỏ; "bài kiểm tra nhận thức" (trong đó có trí nhớ) không khớp G1, đã liệt kê đúng các phép đo.'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ: "nhiều bài kiểm tra nhận thức và môn học ... tính ma trận tương quan — một kỹ thuật thống kê mà ông gần như phát minh ra (tiền thân của phân tích nhân tố ngày nay)". Vế "gần như phát minh ... tiền thân của phân tích nhân tố" không có nguồn trong hồ sơ nên bỏ; "bài kiểm tra nhận thức" (trong đó có trí nhớ) không khớp G1, đã liệt kê đúng các phép đo. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "http://psychclassics.yorku.ca/Spearman/chap5.htm" ]
     luot_2_ghi_chu: "'Óc thực tế' tương ứng Common Sense."
+    review: dung
   - id: n12
     cau: Tương quan dương xuất hiện giữa các cặp phép đo, từ đó Spearman đề xuất mọi hoạt động trí tuệ có chung một chức năng nền cộng các yếu tố riêng; bài báo này thường được coi là điểm khởi đầu của nghiên cứu về g.
     loai: lich-su
@@ -233,9 +258,10 @@ nhan_dinh:
     trich: Early in this century, the British psychologist Charles Spearman made the first formal factor analyses of such correlation matrices. He concluded that a single common factor accounted for the positive correlations among tests
     vi_tri: Spearman 1904; Neisser 1997, trang 2 của bản lưu
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Bài báo này đặt nền móng cho cả một thế kỷ nghiên cứu về trí thông minh". Đã làm mềm thành "thường được coi là điểm khởi đầu của nghiên cứu về g" (Neisser 1997: Spearman làm phân tích nhân tố hình thức đầu tiên). Neisser 1997 gán Spearman là "nhà tâm lý học người Anh" và "đầu thế kỷ này": hỗ trợ cả câu "người Anh" ở mục trên.'
+    ghi_chu: 'Chữ cũ: "Bài báo này đặt nền móng cho cả một thế kỷ nghiên cứu về trí thông minh". Đã làm mềm thành "thường được coi là điểm khởi đầu của nghiên cứu về g" (Neisser 1997: Spearman làm phân tích nhân tố hình thức đầu tiên). Neisser 1997 gán Spearman là "nhà tâm lý học người Anh" và "đầu thế kỷ này": hỗ trợ cả câu "người Anh" ở mục trên. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "http://psychclassics.yorku.ca/Spearman/chap5.htm", "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
+    review: dung
   - id: n13
     cau: Strenze (2007) gom các nghiên cứu dọc (đo IQ trước, theo dõi kết quả nhiều năm sau) và phân tích tổng hợp mối liên hệ giữa IQ với học vấn, địa vị nghề nghiệp và thu nhập.
     loai: phat-hien
@@ -273,17 +299,19 @@ nhan_dinh:
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1016%252Fj.indcrop.2012.02.030.zip/10.1016%252Fj.intell.2006.09.004.pdf" ]
     luot_2_ghi_chu: Phép tính .56² ≈ .31 và .20² = .04 đúng.
   - id: n16
-    cau: Hiệu suất công việc theo đánh giá của cấp trên r = .53; sáng tạo r = .17; hạnh phúc r = .05.
+    cau: Hiệu suất công việc theo đánh giá của cấp trên r = .53 (ước lượng cũ của Hunter và Hunter, 1984; một phân tích lại gần đây cho số thấp hơn, Sackett và cộng sự, 2022); sáng tạo r = .17; hạnh phúc r = .05.
     loai: so-lieu
     nguon:
       - strenze2015
+      - sackett2022
     trich: Job performance (supervisory rating) .53 425 32,124 Hunter and Hunter (1984) | Creativity .17 447 Kim (2005) | Happiness .05 19 2,546 DeNeve & Cooper (1998)
     vi_tri: Strenze 2015, Bảng 25.1
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 3): "số liệu gốc từ Strenze (2007)" cho cả .53/.17/.05. Bảng 25.1 ghi .53 lấy từ Hunter & Hunter (1984), .17 từ Kim (2005), .05 từ DeNeve & Cooper (1998). Chữ trên trang hiện: "tổng hợp kết quả của nhiều phân tích tổng hợp" và mục Nguồn đã sửa. Đã mở toàn văn PDF Strenze 2015.'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 3): "số liệu gốc từ Strenze (2007)" cho cả .53/.17/.05. Bảng 25.1 ghi .53 lấy từ Hunter & Hunter (1984), .17 từ Kim (2005), .05 từ DeNeve & Cooper (1998). Chữ trên trang hiện: "tổng hợp kết quả của nhiều phân tích tổng hợp" và mục Nguồn đã sửa. Đã mở toàn văn PDF Strenze 2015. Review (Claude Opus 5.5, 09/11/2026): Số trong Bảng 25.1 đúng. Theo lưu ý của lượt 2 (và để khớp khung Khá vững, n29), đã thêm vào sau "r = .53": "(ước lượng cũ của Hunter và Hunter, 1984; một phân tích lại gần đây cho số thấp hơn — Sackett và cộng sự, 2022)". Sackett 2022, tóm tắt: các ước lượng hiệu lực tuyển chọn cũ bị hiệu chỉnh quá tay, giảm .10–.20.'
     luot_2: dung
     luot_2_nguon: [ "https://gwern.net/doc/iq/2015-strenze.pdf", "https://api.openalex.org/works/doi:10.1037/apl0000994" ]
     luot_2_ghi_chu: "Số đúng như bảng 25.1 của Strenze 2015. Lưu ý: .53 là ước lượng của Hunter & Hunter 1984; Sackett và cộng sự (2022, J Appl Psychol) cho thấy hiệu chỉnh giới hạn khoảng đo trước đây bị làm quá, độ hiệu lực giảm khoảng .10–.20. Nên ghi nguồn gốc con số."
+    review: dung
   - id: n17
     cau: IQ liên hệ khá mạnh với học vấn và hiệu suất công việc, liên hệ yếu với sáng tạo và gần như không liên hệ với hạnh phúc.
     loai: phat-hien
@@ -292,9 +320,10 @@ nhan_dinh:
     trich: Educational attainment .56 | Job performance (supervisory rating) .53 | Creativity .17 | Happiness .05
     vi_tri: Strenze 2015, Bảng 25.1
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "IQ dự báo tốt những gì liên quan đến xử lý thông tin trừu tượng (học tập, công việc phức tạp), và gần như không dự báo những gì nằm ngoài phạm vi đó". Diễn giải "công việc phức tạp" và "ngoài phạm vi" mạnh hơn bảng; đã viết theo các hệ số.'
+    ghi_chu: 'Chữ cũ: "IQ dự báo tốt những gì liên quan đến xử lý thông tin trừu tượng (học tập, công việc phức tạp), và gần như không dự báo những gì nằm ngoài phạm vi đó". Diễn giải "công việc phức tạp" và "ngoài phạm vi" mạnh hơn bảng; đã viết theo các hệ số. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://gwern.net/doc/iq/2015-strenze.pdf" ]
+    review: dung
   - id: n18
     cau: Tucker-Drob và Briley (2014) phân tích tổng hợp 15 mẫu nghiên cứu dọc độc lập (sinh đôi nuôi chung và nuôi riêng, con nuôi), từ sơ sinh đến tuổi già, về độ ổn định theo thời gian của ảnh hưởng gen và môi trường lên khả năng nhận thức.
     loai: so-lieu
@@ -303,9 +332,10 @@ nhan_dinh:
     trich: We identified 150 combinations of time points and measures from 15 independent longitudinal samples. ... ranging in age from infancy through late adulthood.
     vi_tri: Tucker-Drob & Briley 2014, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 4): bài bị gán hai phát hiện không phải của nó (tỉ lệ di truyền tăng theo tuổi, tương tác gen–SES); nghiên cứu chỉ đo độ ổn định. Chữ trên trang hiện đã viết lại "xem ảnh hưởng ... ổn định đến đâu theo thời gian". Đã mở toàn văn.'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 4): bài bị gán hai phát hiện không phải của nó (tỉ lệ di truyền tăng theo tuổi, tương tác gen–SES); nghiên cứu chỉ đo độ ổn định. Chữ trên trang hiện đã viết lại "xem ảnh hưởng ... ổn định đến đâu theo thời gian". Đã mở toàn văn. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4069230/" ]
+    review: dung
   - id: n19
     cau: Ảnh hưởng của gen lên khả năng nhận thức rất kém ổn định ở trẻ nhỏ rồi ổn định dần, giữ ở mức cao từ tuổi thiếu niên đến cuối đời; việc thứ bậc nhận thức ngày càng ổn định trong thời thơ ấu gần như hoàn toàn nhờ gen.
     loai: phat-hien
@@ -314,10 +344,11 @@ nhan_dinh:
     trich: Cross-time correlations for genetic and shared environmental components were low during early childhood, increased sharply over child development, and remained relatively high from adolescence through late adulthood. ... Increasing phenotypic stability over child development was almost entirely mediated by genetic factors.
     vi_tri: Tucker-Drob & Briley 2014, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ: "Ảnh hưởng của gen tăng dần theo tuổi, môi trường chung giảm dần; tương tác gen–môi trường". Đã thay bằng kết quả đúng (độ ổn định). Nguồn gốc của câu "tỉ lệ di truyền tăng theo tuổi": xem Haworth 2010.'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ: "Ảnh hưởng của gen tăng dần theo tuổi, môi trường chung giảm dần; tương tác gen–môi trường". Đã thay bằng kết quả đúng (độ ổn định). Nguồn gốc của câu "tỉ lệ di truyền tăng theo tuổi": xem Haworth 2010. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4069230/" ]
     luot_2_ghi_chu: Bài nói cùng mẫu hình cho cả môi trường chung, câu chỉ nói gen nhưng không sai.
+    review: dung
   - id: n20
     cau: Tỉ lệ di truyền của khả năng nhận thức tăng theo tuổi, từ khoảng 41% ở tuổi 9 lên 66% ở tuổi 17 (mẫu 11.000 cặp sinh đôi ở bốn nước).
     loai: so-lieu
@@ -337,9 +368,10 @@ nhan_dinh:
     trich: 'We suggest that the answer lies with genotype–environment correlation: as children grow up, they increasingly select, modify and even create their own experiences in part based on their genetic propensities.'
     vi_tri: Haworth và cộng sự 2010, tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Là lời giải thích do các tác giả đề xuất ("We suggest"), không phải kết quả; trang viết "giải thích thường gặp": giữ, thêm lưu ý cho review.'
+    ghi_chu: 'Là lời giải thích do các tác giả đề xuất ("We suggest"), không phải kết quả; trang viết "giải thích thường gặp": giữ, thêm lưu ý cho review. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC2889158/" ]
+    review: dung
   - id: n22
     cau: Một nghiên cứu sinh đôi ở Mỹ trên trẻ 7 tuổi thấy ở những gia đình rất khó khăn ảnh hưởng của gen lên IQ gần như bằng không; một cách hiểu là môi trường thiếu thốn chặn mất con đường phát huy.
     loai: phat-hien
@@ -348,9 +380,10 @@ nhan_dinh:
     trich: The models suggest that in impoverished families, 60% of the variance in IQ is accounted for by the shared environment, and the contribution of genes is close to zero; in affluent families, the result is almost exactly the reverse.
     vi_tri: Turkheimer và cộng sự 2003, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Một số nghiên cứu ở Mỹ còn thấy ... không phải vì gen của các em kém hơn, mà vì môi trường thiếu thốn chặn mất con đường phát huy". Chỉ một nghiên cứu (mẫu NCPP, 7 tuổi); đã đổi "một số" thành "một", và lời giải thích thành "một cách hiểu".'
+    ghi_chu: 'Chữ cũ: "Một số nghiên cứu ở Mỹ còn thấy ... không phải vì gen của các em kém hơn, mà vì môi trường thiếu thốn chặn mất con đường phát huy". Chỉ một nghiên cứu (mẫu NCPP, 7 tuổi); đã đổi "một số" thành "một", và lời giải thích thành "một cách hiểu". Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1046%252Fj.0001-2815.2002.00008.x.zip/10.1046%252Fj.0956-7976.2003.psci_1475.x.pdf" ]
+    review: dung
   - id: n23
     cau: 'Kết quả của Turkheimer không lặp lại ở mọi nơi: một mẫu lớn ở Anh (8.716 cặp sinh đôi) gần như không thấy tương tác gen–môi trường.'
     loai: phat-hien
@@ -364,17 +397,19 @@ nhan_dinh:
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1371/journal.pone.0030320" ]
     luot_2_ghi_chu: Đọc tóm tắt (OpenAlex) của Hanscombe và cộng sự 2012, PLoS One.
   - id: n24
-    cau: 'Pietschnig và Voracek (2015) là phân tích tổng hợp chính thức đầu tiên về hiệu ứng Flynn: 271 mẫu độc lập, gần 4 triệu người, 31 quốc gia, 1909–2013.'
+    cau: 'Pietschnig và Voracek (2015) là một phân tích tổng hợp lớn về hiệu ứng Flynn: 271 mẫu độc lập, gần 4 triệu người, 31 quốc gia, 1909–2013.'
     loai: so-lieu
     nguon:
       - pietschnig2015
-    trich: This first formal meta-analysis on the topic revealed worldwide IQ gains across more than one century (1909–2013), based on 271 independent samples, totaling almost 4 million participants, from 31 countries.
-    vi_tri: Pietschnig & Voracek 2015, tóm tắt
-    ket_qua: dung
-    ghi_chu: theo G1-L01 (22/10/2026). Đã mở toàn văn.
+      - trahan2014
+    trich: This first formal meta-analysis on the topic revealed worldwide IQ gains across more than one century (1909–2013), based on 271 independent samples, totaling almost 4 million participants, from 31 countries. | (Trahan 2014) We conducted a meta-analysis to determine the magnitude of the Flynn effect ... Across 285 studies (N = 14,031) since 1951
+    vi_tri: Pietschnig & Voracek 2015, tóm tắt; Trahan và cộng sự 2014 (Psychol Bull 140(5)), tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'theo G1-L01 (22/10/2026). Đã mở toàn văn. Review (Claude Opus 5.5, 09/11/2026): Lượt 2 đúng: "chính thức đầu tiên" là lời tự nhận của tác giả; Trahan và cộng sự đã đăng một phân tích tổng hợp về hiệu ứng Flynn trên Psychological Bulletin năm 2014 (OpenAlex). Chữ cũ: "Phân tích tổng hợp chính thức đầu tiên về hiệu ứng Flynn". Chữ mới: "Một phân tích tổng hợp lớn về hiệu ứng Flynn". Các con số giữ nguyên (khớp tóm tắt).'
     luot_2: qua-manh
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1177%252F1461444812470428.zip/10.1177%252F1745691615577701.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4152423/" ]
     luot_2_ghi_chu: "câu đúng: Pietschnig và Voracek (2015) là một phân tích tổng hợp lớn về hiệu ứng Flynn (các tác giả gọi là phân tích tổng hợp chính thức đầu tiên): 271 mẫu độc lập, gần 4 triệu người, 31 quốc gia, 1909–2013.; Các con số đúng, nhưng 'đầu tiên' là lời tự mô tả của tác giả: Trahan và cộng sự (2014, Psychological Bulletin, 'The Flynn effect: a meta-analysis', 285 nghiên cứu) đã đăng trước đó."
+    review: sai
   - id: n25
     cau: 'Điểm IQ các thế hệ sau cao hơn thế hệ trước: tăng mạnh nhất ở suy luận trừu tượng (khoảng 0,41 điểm mỗi năm, khoảng 4 điểm mỗi thập kỷ), yếu nhất ở kiến thức kết tinh (khoảng 0,21 điểm mỗi năm).'
     loai: so-lieu
@@ -395,9 +430,10 @@ nhan_dinh:
     trich: Factors associated with life history speed seem mainly responsible for the Flynn effect's general trajectory | These gains are far too rapid to result from genetic changes.
     vi_tri: Pietschnig & Voracek 2015, tóm tắt; Neisser 1997, trang 4
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "đà tăng này bắt buộc phải đến từ môi trường: giáo dục phổ cập, dinh dưỡng, y tế tốt hơn (Pietschnig và Voracek, 2015)". Pietschnig và Voracek không nói "bắt buộc" hay "giáo dục phổ cập" (họ nói giáo dục không giải thích được mức tăng lớn của IQ lưu động); đã làm mềm và nêu đúng kết luận của họ.'
+    ghi_chu: 'Chữ cũ: "đà tăng này bắt buộc phải đến từ môi trường: giáo dục phổ cập, dinh dưỡng, y tế tốt hơn (Pietschnig và Voracek, 2015)". Pietschnig và Voracek không nói "bắt buộc" hay "giáo dục phổ cập" (họ nói giáo dục không giải thích được mức tăng lớn của IQ lưu động); đã làm mềm và nêu đúng kết luận của họ. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1177%252F1461444812470428.zip/10.1177%252F1745691615577701.pdf", "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
+    review: dung
   - id: n27
     cau: 'Khung "Vững chắc": các bài kiểm tra nhận thức khác nhau tương quan dương với nhau (positive manifold).'
     loai: nhan
@@ -409,10 +445,16 @@ nhan_dinh:
       - visser2006
     ly_do: 'Neisser và cộng sự 1996 (báo cáo APA) mô tả tương quan dương giữa các bài; Warne & Burningham 2019 (Psychol Bull) thấy một yếu tố chung xuất hiện trong 97 mẫu từ 31 nước ngoài phương Tây (tóm tắt), tương tự mẫu phương Tây; Visser 2006 thấy tương quan dương giữa các bài thuộc tám "trí tuệ". Thước đo mục 4: có tổng hợp/tổng quan chất lượng tốt, cùng chiều, đúng ở nhiều quần thể.'
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "được tái hiện liên tục trong hơn 120 năm, trên mọi châu lục và mọi lứa tuổi. Đây là một trong những phát hiện vững chắc nhất của tâm lý học". "Mọi châu lục", "mọi lứa tuổi", "vững chắc nhất" không kiểm được; đã thay bằng "từ Spearman (1904) đến nay, kể cả trong 97 mẫu từ 31 nước ngoài phương Tây (Warne và Burningham, 2019)". Warne & Burningham chỉ đọc tóm tắt.'
+    ghi_chu: 'Chữ cũ: "được tái hiện liên tục trong hơn 120 năm, trên mọi châu lục và mọi lứa tuổi. Đây là một trong những phát hiện vững chắc nhất của tâm lý học". "Mọi châu lục", "mọi lứa tuổi", "vững chắc nhất" không kiểm được; đã thay bằng "từ Spearman (1904) đến nay, kể cả trong 97 mẫu từ 31 nước ngoài phương Tây (Warne và Burningham, 2019)". Warne & Burningham chỉ đọc tóm tắt. Review (Claude Opus 5.5, 09/11/2026): Đạt Vững chắc: báo cáo APA (Neisser 1996, toàn văn) và Warne & Burningham 2019 (Psychol Bull, 97 mẫu ở 31 nước ngoài phương Tây, tóm tắt) cùng chiều, nhiều quần thể; không có thất bại tái lập lớn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf", "https://api.openalex.org/works/doi:10.1037/bul0000184" ]
     luot_2_ghi_chu: Hiện tượng được ghi nhận nhất quán ở phương Tây và 97 mẫu ngoài phương Tây; đạt thước đo Vững chắc.
+    review: dung
+    nguon:
+      - neisser1996
+      - warne2019
+      - pietschnig2015
+      - visser2006
   - id: n28
     cau: 97 mẫu dữ liệu từ 31 nước ngoài phương Tây cho thấy yếu tố chung (g) xuất hiện.
     loai: so-lieu
@@ -426,19 +468,26 @@ nhan_dinh:
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/bul0000184" ]
     luot_2_ghi_chu: Đọc tóm tắt (OpenAlex).
   - id: n29
-    cau: 'Khung "Khá vững": IQ dự báo kết quả học tập và công việc ở mức vừa phải (r ≈ .4–.6 với học vấn và hiệu suất công việc).'
+    cau: 'Khung "Khá vững": IQ dự báo kết quả học tập và công việc ở mức vừa phải (r = .56 với học vấn; với hiệu suất công việc, ước lượng cũ r = .53, một phân tích lại gần đây cho rằng các ước lượng kiểu này bị hiệu chỉnh quá tay và thấp hơn khoảng .10–.20).'
     loai: nhan
     nhan: kha-vung
     co_so:
       - strenze2007
       - strenze2015
+      - sackett2022
       - ritchie2018
-    ly_do: 'Strenze 2007 (phân tích tổng hợp nghiên cứu dọc): r = .56 với học vấn, .43 với nghề nghiệp; Strenze 2015: .53 với hiệu suất công việc (cấp trên đánh giá). Mẫu chủ yếu phương Tây; mức giữa các nghiên cứu khác nhau (khoảng tin cậy rộng ở Strenze 2007); quan hệ hai chiều (Ritchie 2018). Khá vững theo thước đo.'
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "IQ cao giúp học tốt hơn, nhưng học tốt (và môi trường tốt) cũng giúp điểm IQ cao hơn". Đã thay bằng "học thêm cũng làm điểm IQ cao hơn (mỗi năm đi học thêm khoảng 1–5 điểm — Ritchie và Tucker-Drob, 2018)", có nguồn. "Môi trường tốt" bỏ (không nguồn).'
+    ly_do: 'Strenze 2007 (phân tích tổng hợp nghiên cứu dọc): r = .56 với học vấn, .43 với nghề nghiệp. Với hiệu suất công việc, .53 (Hunter & Hunter 1984, qua Strenze 2015) là ước lượng cũ; Sackett và cộng sự 2022 cho rằng các ước lượng hiệu lực tuyển chọn bị hiệu chỉnh quá tay, thấp hơn .10–.20. Mẫu chủ yếu phương Tây; quan hệ hai chiều (Ritchie 2018). Nhiều nghiên cứu cùng chiều nhưng độ lớn còn bàn: khá vững.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "IQ cao giúp học tốt hơn, nhưng học tốt (và môi trường tốt) cũng giúp điểm IQ cao hơn". Đã thay bằng "học thêm cũng làm điểm IQ cao hơn (mỗi năm đi học thêm khoảng 1–5 điểm — Ritchie và Tucker-Drob, 2018)", có nguồn. "Môi trường tốt" bỏ (không nguồn). Review (Claude Opus 5.5, 09/11/2026): Nhãn Khá vững giữ; thân khung sửa theo lượt 2. Chữ cũ: "Các phân tích tổng hợp cho tương quan r ≈ .4–.6 với học vấn và hiệu suất công việc." Chữ mới: "Phân tích tổng hợp các nghiên cứu dọc cho tương quan r = .56 với học vấn (Strenze, 2007). Với hiệu suất công việc, ước lượng cũ là r = .53 (Hunter và Hunter, 1984); một phân tích lại gần đây cho rằng các ước lượng kiểu này đã bị hiệu chỉnh quá tay, và độ hiệu lực thật của các phương pháp tuyển chọn thấp hơn khoảng .10–.20 (Sackett và cộng sự, 2022)." Chỉ dùng điều tóm tắt Sackett nói (không ghi con số riêng cho IQ vì chưa đọc toàn văn). Thêm Sackett và cộng sự (2022) vào mục Nguồn.'
     luot_2: qua-manh
     luot_2_nguon: [ "https://gwern.net/doc/iq/2015-strenze.pdf", "https://api.openalex.org/works/doi:10.1037/apl0000994", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
     luot_2_ghi_chu: 'câu đúng: Khung "Khá vững": IQ dự báo kết quả học tập và công việc ở mức vừa phải (r ≈ .5 với số năm học; với hiệu suất công việc khoảng .3–.5 tùy cách hiệu chỉnh).; Nhãn Khá vững hợp, nhưng khoảng r ≈ .4–.6 cho hiệu suất công việc dựa vào ước lượng cũ (Hunter & Hunter 1984, .53); phân tích lại của Sackett và cộng sự (2022) hạ độ hiệu lực của các phép tuyển chọn khoảng .10–.20. Với học vấn .56 (Strenze 2007) thì đúng.'
+    nguon:
+      - strenze2007
+      - strenze2015
+      - sackett2022
+      - ritchie2018
+    review: sai
   - id: n30
     cau: Mỗi năm đi học thêm làm điểm IQ tăng khoảng 1–5 điểm.
     loai: so-lieu
@@ -451,7 +500,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6088505/" ]
   - id: n31
-    cau: 'Khung "Đang tranh cãi": khác biệt IQ giữa người với người do gen quyết định bao nhiêu phần.'
+    cau: 'Khung "Đang tranh cãi": khác biệt IQ giữa người với người gắn với khác biệt gen đến mức nào.'
     loai: nhan
     nhan: tranh-cai
     co_so:
@@ -460,11 +509,17 @@ nhan_dinh:
       - hanscombe2012
       - turkheimer2003
     ly_do: 'Heritability có thật và tăng theo tuổi (Neisser 1996; Haworth 2010: 41% đến 66%); con số thay đổi theo quần thể, độ tuổi, môi trường; nghiên cứu về tương tác gen–SES mâu thuẫn (Turkheimer 2003 so với Hanscombe 2012). Bằng chứng chất lượng cao mâu thuẫn: tranh cãi.'
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "bản thân khái niệm này nằm trong số những khái niệm bị hiểu sai nhiều nhất trong tâm lý học". Đổi thành "hay bị hiểu sai": "nhiều nhất" không kiểm được; Neisser 1996 nêu các hiểu sai thường gặp.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "bản thân khái niệm này nằm trong số những khái niệm bị hiểu sai nhiều nhất trong tâm lý học". Đổi thành "hay bị hiểu sai": "nhiều nhất" không kiểm được; Neisser 1996 nêu các hiểu sai thường gặp. Review (Claude Opus 5.5, 09/11/2026): Nhãn Đang tranh cãi giữ (ước lượng khác nhau theo tuổi, quần thể, phương pháp; tương tác gen–hoàn cảnh không lặp lại nhất quán: Turkheimer 2003 so với Hanscombe 2012). Ý chính sửa theo lượt 2: "do gen quyết định bao nhiêu phần" là cách nói định mệnh mà chính trang bác (mục Lý thuyết, Ngộ nhận). Chữ cũ: "khác biệt IQ giữa người với người do gen quyết định bao nhiêu phần". Chữ mới: "khác biệt IQ giữa người với người gắn với khác biệt gen đến mức nào" (hộp tóm tắt đầu trang tự dựng lại từ ý chính).'
     luot_2: qua-manh
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC2889158/", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1046%252Fj.0001-2815.2002.00008.x.zip/10.1046%252Fj.0956-7976.2003.psci_1475.x.pdf" ]
     luot_2_ghi_chu: "câu đúng: Khung \"Đang tranh cãi\": khác biệt IQ giữa người với người gắn với khác biệt gen đến mức nào (ước lượng thay đổi theo tuổi, quần thể và phương pháp).; Nhãn Đang tranh cãi chấp nhận được (ước lượng khác nhau theo tuổi, quần thể, phương pháp), nhưng chữ 'do gen quyết định' là cách nói nhân quả–định mệnh mà chính trang (n36, n54) bác; với chủ đề nhạy nên viết như tỉ lệ phương sai."
+    review: sai
+    nguon:
+      - neisser1996
+      - haworth2010
+      - hanscombe2012
+      - turkheimer2003
   - id: n32
     cau: 'Khung "Đã bị bác bỏ": "IQ cao đảm bảo thành công và hạnh phúc trong đời".'
     loai: nhan
@@ -475,10 +530,15 @@ nhan_dinh:
       - neisser1996
     ly_do: 'Dữ liệu tổng hợp: IQ chỉ r = .20 với thu nhập, .17 với sáng tạo, .05 với hạnh phúc (Strenze 2007, 2015); báo cáo APA: bài test dự báo dưới một nửa phương sai của kết quả công việc, các đặc điểm khác có thể quan trọng ngang hoặc hơn. Khẳng định "đảm bảo" bị bác bỏ bởi chính các hệ số này.'
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "IQ không đo trí tuệ cảm xúc, kỹ năng xã hội, sự kiên trì hay may mắn — mà đời sống thì cần tất cả những thứ đó". Liệt kê "trí tuệ cảm xúc, sự kiên trì, may mắn" không có nguồn; đã thay bằng nhận xét của báo cáo APA (kỹ năng giao tiếp, tính cách).'
+    ghi_chu: 'Chữ cũ: "IQ không đo trí tuệ cảm xúc, kỹ năng xã hội, sự kiên trì hay may mắn — mà đời sống thì cần tất cả những thứ đó". Liệt kê "trí tuệ cảm xúc, sự kiên trì, may mắn" không có nguồn; đã thay bằng nhận xét của báo cáo APA (kỹ năng giao tiếp, tính cách). Review (Claude Opus 5.5, 09/11/2026): Khẳng định bị bác là "đảm bảo"; các phân tích tổng hợp (Strenze 2007, 2015) cho tương quan nhỏ với thu nhập và gần 0 với hạnh phúc, kiểm tra đủ mạnh và nhất quán: Đã bị bác bỏ hợp.'
     luot_2: dung
     luot_2_nguon: [ "https://gwern.net/doc/iq/2015-strenze.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1016%252Fj.indcrop.2012.02.030.zip/10.1016%252Fj.intell.2006.09.004.pdf" ]
     luot_2_ghi_chu: Tương quan nhỏ với thu nhập và gần không với hạnh phúc trong các phân tích tổng hợp bác bỏ chữ 'đảm bảo'.
+    review: dung
+    nguon:
+      - strenze2007
+      - strenze2015
+      - neisser1996
   - id: n33
     cau: Một báo cáo của nhóm chuyên gia APA nhận xét rằng bài test IQ dự báo dưới một nửa phương sai của kết quả công việc và các đặc điểm khác (kỹ năng giao tiếp, tính cách) có thể quan trọng ngang hoặc hơn.
     loai: phat-hien
@@ -499,10 +559,11 @@ nhan_dinh:
     trich: As we shall see in Section 2, one common view today envisages something like a hierarchy | We observed the previously-reported pattern of earlier peaks for fluid intelligence than crystalized intelligence (Baltes, 1987; Cattell, 1971)
     vi_tri: Neisser và cộng sự 1996; Hartshorne & Germine 2015
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Ngày nay hầu hết các nhà nghiên cứu chấp nhận một mô hình phân tầng". Đã làm mềm thành "một quan điểm phổ biến" (Neisser 1996: "one common view today").'
+    ghi_chu: 'Chữ cũ: "Ngày nay hầu hết các nhà nghiên cứu chấp nhận một mô hình phân tầng". Đã làm mềm thành "một quan điểm phổ biến" (Neisser 1996: "one common view today"). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
     luot_2_ghi_chu: "'Nổi tiếng nhất' là nhận xét, chấp nhận được."
+    review: dung
   - id: n35
     cau: Theo một nghiên cứu lớn (gần 50 nghìn người làm bài trực tuyến cùng dữ liệu chuẩn hóa của các bài test), các năng lực kiểu "lỏng" đạt đỉnh sớm ở tuổi trưởng thành, các năng lực kiểu "kết tinh" như từ vựng đạt đỉnh muộn hơn ở tuổi trung niên, nhưng thời điểm đạt đỉnh khác nhau khá nhiều giữa từng năng lực.
     loai: phat-hien
@@ -511,10 +572,11 @@ nhan_dinh:
     trich: 'it has long been known that this intuition cannot be quite right: Measures of fluid intelligence (e.g., short-term memory) peak early in adulthood, whereas measures of crystalized intelligence (e.g., vocabulary) peak in middle age | Our results reveal considerable heterogeneity in when cognitive abilities peak'
     vi_tri: Hartshorne & Germine 2015, mục mở đầu và tóm tắt (48.537 người tham gia trực tuyến)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Trí tuệ lỏng đạt đỉnh sớm và giảm dần theo tuổi; trí tuệ kết tinh tiếp tục tăng đến tuổi trung niên" (không nguồn). Đã viết theo Hartshorne & Germine (2015), kèm lưu ý họ thấy thời điểm đạt đỉnh khác nhau nhiều.'
+    ghi_chu: 'Chữ cũ: "Trí tuệ lỏng đạt đỉnh sớm và giảm dần theo tuổi; trí tuệ kết tinh tiếp tục tăng đến tuổi trung niên" (không nguồn). Đã viết theo Hartshorne & Germine (2015), kèm lưu ý họ thấy thời điểm đạt đỉnh khác nhau nhiều. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4441622/" ]
     luot_2_ghi_chu: Từ vựng đạt đỉnh khoảng tuổi 50 trở lên trong dữ liệu của bài.
+    review: dung
   - id: n36
     cau: '"Tính di truyền của IQ là 70%" không có nghĩa 70% trí tuệ của bạn do gen quyết định: nó nói về 70% khác biệt giữa mọi người trong quần thể được nghiên cứu gắn với khác biệt gen; đổi quần thể thì con số đổi; heritability cao không có nghĩa môi trường vô dụng.'
     loai: dinh-nghia
@@ -534,9 +596,10 @@ nhan_dinh:
     trich: This first formal meta-analysis on the topic revealed worldwide IQ gains across more than one century (1909–2013)
     vi_tri: Pietschnig & Voracek 2015, tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "chỉ cần cải thiện môi trường, điểm trung bình của cả thế hệ vẫn tăng vù vù". Đã bỏ "vù vù" và đổi "vẫn tăng" thành "vẫn có thể tăng đáng kể".'
+    ghi_chu: 'Chữ cũ: "chỉ cần cải thiện môi trường, điểm trung bình của cả thế hệ vẫn tăng vù vù". Đã bỏ "vù vù" và đổi "vẫn tăng" thành "vẫn có thể tăng đáng kể". Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
+    review: dung
   - id: n38
     cau: Howard Gardner (1983) đề xuất con người có nhiều loại trí tuệ độc lập (ngôn ngữ, logic–toán, âm nhạc, vận động, giao tiếp...).
     loai: lich-su
@@ -559,34 +622,42 @@ nhan_dinh:
     trich: (Critics of the theory argue, however, that some of these are more appropriately described as special talents than as forms of "intelligence.") | these theories lack adequate empirical support and should not be the basis for educational practice | Factor analysis revealed a large g factor having substantial loadings for tests assessing purely cognitive abilities
     vi_tri: Neisser và cộng sự 1996; Waterhouse 2006, tóm tắt; Visser và cộng sự 2006, tóm tắt (200 người lớn, 8 miền)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "các trí tuệ này thiếu bằng chứng là độc lập và đo được riêng rẽ — chúng vẫn tương quan với nhau"; "g vẫn là mô hình có bằng chứng thực nghiệm mạnh nhất". Đã thay bằng ba phê bình có nguồn; "g ... có nhiều bằng chứng nhất cho cấu trúc của các bài kiểm tra nhận thức" (Neisser 1996, Warne 2019, Visser 2006).'
+    ghi_chu: 'Chữ cũ: "các trí tuệ này thiếu bằng chứng là độc lập và đo được riêng rẽ — chúng vẫn tương quan với nhau"; "g vẫn là mô hình có bằng chứng thực nghiệm mạnh nhất". Đã thay bằng ba phê bình có nguồn; "g ... có nhiều bằng chứng nhất cho cấu trúc của các bài kiểm tra nhận thức" (Neisser 1996, Warne 2019, Visser 2006). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1207.zip/10.1207%252Fs15326985ep4104_1.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1016%252Fj.indcrop.2012.02.030.zip/10.1016%252Fj.intell.2006.02.004.pdf" ]
     luot_2_ghi_chu: "Visser: tải g thấp ở các bài vận động, âm nhạc, nội tâm; câu đã có 'nhất là các bài về năng lực nhận thức thuần túy' nên chấp nhận được."
+    review: dung
   - id: n40
-    cau: Các bài test IQ cho nhiều điểm thành phần, nên có thể dùng để mô tả điểm mạnh và yếu nhận thức (một người có thể làm bài ngôn ngữ tốt hơn bài không gian và ngược lại); dùng điểm số để dán nhãn "thông minh/dốt" là lạm dụng vì test chỉ đo một lát cắt.
+    cau: Các bài test IQ cho nhiều điểm thành phần ngoài điểm chung (một người có thể làm bài ngôn ngữ tốt hơn bài không gian và ngược lại), nhưng việc đọc điểm mạnh, điểm yếu từ chênh lệch giữa các điểm thành phần để chẩn đoán hay chọn cách dạy đã bị nhiều nghiên cứu và tổng quan đặt nghi vấn; dùng điểm số để dán nhãn "thông minh/dốt" là lạm dụng vì test chỉ đo một lát cắt.
     loai: loi-khuyen
     nguon:
       - neisser1996
-    trich: Their performance can then be scored to yield several subscores as well as an overall score. | do relatively better on verbal than on spatial items, for example, while another may show the opposite pattern
-    vi_tri: Neisser và cộng sự 1996, mục Intelligence tests
+      - mcgill2018
+    trich: Their performance can then be scored to yield several subscores as well as an overall score. | do relatively better on verbal than on spatial items, for example, while another may show the opposite pattern | cognitive profile analysis, a class of interpretive methods that encourage practitioners to make diagnostic decisions and/or treatment recommendations based on the strengths and weaknesses observed in ability score profiles. Whereas numerous empirical studies and reviews have challenged long-standing assumptions about the utility of these methods
+    vi_tri: Neisser và cộng sự 1996, mục Intelligence tests; McGill, Dombrowski & Canivez 2018, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Giá trị thực tế lớn nhất của test IQ là chẩn đoán: một học sinh đọc kém nhưng lý luận tốt cần cách dạy khác ... nhãn dán có thể trở thành lời tiên tri tự ứng nghiệm". "Lớn nhất", ví dụ học sinh đọc kém, "tự ứng nghiệm" không có nguồn; đã bỏ và viết theo Neisser (1996). Không viết như lời khuyên can thiệp.'
+    ghi_chu: 'Chữ cũ: "Giá trị thực tế lớn nhất của test IQ là chẩn đoán: một học sinh đọc kém nhưng lý luận tốt cần cách dạy khác ... nhãn dán có thể trở thành lời tiên tri tự ứng nghiệm". "Lớn nhất", ví dụ học sinh đọc kém, "tự ứng nghiệm" không có nguồn; đã bỏ và viết theo Neisser (1996). Không viết như lời khuyên can thiệp. Review (Claude Opus 5.5, 09/11/2026): Lượt 2 đúng: dùng điểm thành phần để mô tả điểm mạnh–yếu (phân tích hồ sơ nhận thức) bị nhiều nghiên cứu nghi ngờ (McGill và cộng sự 2018, tóm tắt Europe PMC). Chữ cũ: tiêu đề "Dùng IQ để hiểu điểm mạnh–yếu nhận thức, không để dán nhãn"; "Các bài test IQ cho nhiều điểm thành phần, nên có thể dùng để mô tả điểm mạnh và điểm yếu nhận thức". Chữ mới: tiêu đề "Đừng dùng điểm IQ để dán nhãn" (giữ id cũ { #1-dung-iq-de-hieu-diem-manhyeu-nhan-thuc-khong-de-dan-nhan-vung-chac }); "Các bài test IQ cho nhiều điểm thành phần ngoài điểm chung: ... (Neisser và cộng sự, 1996). Nhưng việc đọc "điểm mạnh, điểm yếu" từ chênh lệch giữa các điểm thành phần để chẩn đoán hay chọn cách dạy đã bị nhiều nghiên cứu và tổng quan đặt nghi vấn (McGill và cộng sự, 2018). Còn dùng điểm số để dán nhãn ...". Không dùng vế "kém tin cậy hơn điểm chung" của câu đề xuất vì tóm tắt McGill không nói. Thêm McGill và cộng sự (2018) vào mục Nguồn.'
     luot_2: qua-manh
     luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1016/j.jsp.2018.10.007&resultType=core", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
     luot_2_ghi_chu: "câu đúng: Các bài test IQ cho nhiều điểm thành phần, nhưng chênh lệch giữa các điểm này thường kém tin cậy hơn điểm chung, nên chỉ chuyên gia mới diễn giải điểm mạnh–yếu, và thận trọng; dùng điểm số để dán nhãn \"thông minh/dốt\" là lạm dụng vì test chỉ đo một lát cắt.; Phần 'dán nhãn là lạm dụng' đúng; nhưng dùng điểm thành phần để mô tả điểm mạnh–yếu (phân tích hồ sơ nhận thức) bị nhiều nghiên cứu nghi ngờ về độ tin cậy và giá trị thêm so với điểm chung (McGill, Dombrowski & Canivez 2018)."
+    review: sai
   - id: n41
-    cau: 'Tiêu đề lời khuyên 1 (dùng IQ để hiểu điểm mạnh–yếu, không để dán nhãn): Vững chắc.'
+    cau: 'Tiêu đề lời khuyên 1 (đừng dùng điểm IQ để dán nhãn): Khá vững.'
     loai: nhan
-    nhan: vung-chac
+    nhan: kha-vung
     co_so:
       - neisser1996
-    ly_do: Nguyên tắc dùng thận trọng điểm số được báo cáo APA (Neisser 1996) nêu; nhãn cho nguyên tắc sử dụng xét theo đồng thuận của văn bản chính thức (ghi rõ theo chuẩn kiểm định), không phải bằng chứng thực nghiệm riêng.
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Vững chắc" giữ nguyên; nội dung đã làm mềm (xem nhận định trên). Review nên xem nhãn có còn hợp: có thể hạ "Khá vững".'
+      - mcgill2018
+    ly_do: "Lời khuyên dựa trên báo cáo APA (Neisser 1996: bài test chỉ đo một phần các phẩm chất, dự báo dưới một nửa phương sai kết quả) và tổng quan về phân tích hồ sơ nhận thức (McGill 2018); là nguyên tắc dùng test suy ra từ bằng chứng, không có nghiên cứu can thiệp về tác hại của việc dán nhãn trong hồ sơ: khá vững."
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Vững chắc" giữ nguyên; nội dung đã làm mềm (xem nhận định trên). Review nên xem nhãn có còn hợp: có thể hạ "Khá vững". Review (Claude Opus 5.5, 09/11/2026): Lượt 2 đúng: vế "dùng IQ để hiểu điểm mạnh–yếu" (phân tích hồ sơ) đang bị tranh cãi nên cả tiêu đề cũ không đạt Vững chắc. Đã đổi tiêu đề (xem n40) và chip :nhan[vung-chac] thành :nhan[kha-vung].'
     luot_2: qua-manh
     luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1016/j.jsp.2018.10.007&resultType=core" ]
     luot_2_ghi_chu: "câu đúng: Tiêu đề lời khuyên 1 (đừng dùng IQ để dán nhãn; diễn giải điểm thành phần cần thận trọng): Khá vững.; Vế 'không dán nhãn' có cơ sở; vế 'dùng IQ để hiểu điểm mạnh–yếu' là phân tích hồ sơ, đang bị tranh cãi, nên toàn tiêu đề không đạt Vững chắc."
+    nguon:
+      - neisser1996
+      - mcgill2018
+    review: sai
   - id: n42
     cau: Hiệu ứng Flynn cho thấy điểm số của cả thế hệ có thể dịch chuyển khi môi trường thay đổi; mỗi năm đi học thêm làm điểm IQ tăng khoảng 1–5 điểm; bằng chứng về việc môi trường thiếu thốn "chặn" tiềm năng di truyền chưa nhất quán.
     loai: phat-hien
@@ -598,9 +669,10 @@ nhan_dinh:
     trich: IQ gains vary according to domain ... | of approximately 1 to 5 IQ points for an additional year of education. | The evidence however is inconsistent.
     vi_tri: Pietschnig 2015; Ritchie 2018; Hanscombe 2012, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Ở cấp độ cá nhân, can thiệp giáo dục sớm, dinh dưỡng đầy đủ và môi trường học tập phong phú đều giúp trẻ phát huy tiềm năng tốt hơn — đặc biệt ở những trẻ thiệt thòi" (không nguồn). Đã thay bằng phân tích tổng hợp Ritchie & Tucker-Drob (2018).'
+    ghi_chu: 'Chữ cũ: "Ở cấp độ cá nhân, can thiệp giáo dục sớm, dinh dưỡng đầy đủ và môi trường học tập phong phú đều giúp trẻ phát huy tiềm năng tốt hơn — đặc biệt ở những trẻ thiệt thòi" (không nguồn). Đã thay bằng phân tích tổng hợp Ritchie & Tucker-Drob (2018). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6088505/", "https://api.openalex.org/works/doi:10.1371/journal.pone.0030320" ]
+    review: dung
   - id: n43
     cau: 'Tiêu đề lời khuyên 2 (điểm IQ không phải án chung thân): Khá vững.'
     loai: nhan
@@ -613,6 +685,11 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6088505/", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1177%252F1461444812470428.zip/10.1177%252F1745691615577701.pdf" ]
     luot_2_ghi_chu: Có phân tích tổng hợp bán thực nghiệm và phân tích tổng hợp hiệu ứng Flynn; Khá vững không cao hơn thước đo.
+    ghi_chu: "Review (Claude Opus 5.5, 09/11/2026): Hai phân tích tổng hợp (Ritchie 2018; Pietschnig 2015) cho thấy điểm dịch chuyển; tác động của can thiệp cụ thể ở cá nhân chưa có: Khá vững hợp."
+    review: dung
+    nguon:
+      - pietschnig2015
+      - ritchie2018
   - id: n44
     cau: 'Điểm IQ chỉ có nghĩa khi so với nhóm chuẩn hóa của chính bài test: điểm 100 là trung bình của nhóm ấy; bài test không công bố cách chuẩn hóa thì con số không thể so với chuẩn IQ 100.'
     loai: loi-khuyen
@@ -621,9 +698,10 @@ nhan_dinh:
     trich: By convention, overall intelligence test scores are usually converted to a scale in which the mean is 100 and the standard deviation is 15.
     vi_tri: Neisser và cộng sự 1996, mục Intelligence tests
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Hầu hết các bài test IQ trên mạng không được chuẩn hóa, không có nhóm đối chứng ... Một bài test nghiêm túc phải được thực hiện bởi người có chuyên môn, trong điều kiện chuẩn". "Hầu hết ... trên mạng" là khẳng định thực nghiệm không có nguồn; "người có chuyên môn" không kiểm được. Đã viết lại thành điều kiện dựa trên định nghĩa chuẩn hóa. Không tự chẩn đoán: giữ.'
+    ghi_chu: 'Chữ cũ: "Hầu hết các bài test IQ trên mạng không được chuẩn hóa, không có nhóm đối chứng ... Một bài test nghiêm túc phải được thực hiện bởi người có chuyên môn, trong điều kiện chuẩn". "Hầu hết ... trên mạng" là khẳng định thực nghiệm không có nguồn; "người có chuyên môn" không kiểm được. Đã viết lại thành điều kiện dựa trên định nghĩa chuẩn hóa. Không tự chẩn đoán: giữ. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
+    review: dung
   - id: n45
     cau: 'Tiêu đề lời khuyên 3 (cảnh giác với "test IQ online"): Vững chắc.'
     loai: nhan
@@ -632,10 +710,13 @@ nhan_dinh:
       - neisser1996
     ly_do: Nguyên tắc về chuẩn hóa là định nghĩa của thang IQ (Neisser 1996); nhãn xét theo đồng thuận của văn bản chính thức, không đánh giá chất lượng một bài test online cụ thể.
     ket_qua: da-lam-mem
-    ghi_chu: Giữ "Vững chắc" vì chỉ nói điều kiện định nghĩa; đã bỏ khẳng định "hầu hết".
+    ghi_chu: 'Giữ "Vững chắc" vì chỉ nói điều kiện định nghĩa; đã bỏ khẳng định "hầu hết". Review (Claude Opus 5.5, 09/11/2026): Nhãn cho nguyên tắc định nghĩa (điểm chuẩn hóa chỉ có nghĩa so với nhóm chuẩn), theo đồng thuận văn bản chính thức như D4-L2; không khẳng định gì về một bài test online cụ thể: Vững chắc chấp nhận được.'
     luot_2: dung
     luot_2_nguon: [ "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4152423/" ]
     luot_2_ghi_chu: Là hệ quả của định nghĩa điểm chuẩn hóa hơn là phát hiện thực nghiệm; nhãn Vững chắc chấp nhận được.
+    review: dung
+    nguon:
+      - neisser1996
   - id: n46
     cau: IQ liên hệ với hiệu suất công việc (r = .53 theo đánh giá của cấp trên) nhưng chỉ giải thích dưới một nửa phương sai của kết quả công việc, và các đặc điểm khác như kỹ năng giao tiếp, tính cách có thể quan trọng ngang hoặc hơn.
     loai: loi-khuyen
@@ -645,10 +726,11 @@ nhan_dinh:
     trich: Job performance (supervisory rating) .53 | such tests predict considerably less than half the variance of job-related measures. Other individual characteristics--interpersonal skills, aspects of personality, etc.--are probably of equal or greater importance
     vi_tri: Strenze 2015, Bảng 25.1; Neisser và cộng sự 1996
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (tiêu đề "Muốn giỏi việc gì, luyện đúng việc đó"): "IQ dự báo điểm xuất phát và tốc độ tiếp thu ban đầu, nhưng không thay thế được luyện tập có chủ đích. ... kiến thức chuyên môn, kỹ năng giao tiếp và sự kiên trì thường quyết định nhiều hơn một con số g". Các vế về "tốc độ tiếp thu", "luyện tập có chủ đích", "quyết định nhiều hơn" không nguồn; đã thay bằng nhận xét có nguồn và đổi tiêu đề thành "IQ chỉ là một phần của câu chuyện".'
+    ghi_chu: 'Chữ cũ (tiêu đề "Muốn giỏi việc gì, luyện đúng việc đó"): "IQ dự báo điểm xuất phát và tốc độ tiếp thu ban đầu, nhưng không thay thế được luyện tập có chủ đích. ... kiến thức chuyên môn, kỹ năng giao tiếp và sự kiên trì thường quyết định nhiều hơn một con số g". Các vế về "tốc độ tiếp thu", "luyện tập có chủ đích", "quyết định nhiều hơn" không nguồn; đã thay bằng nhận xét có nguồn và đổi tiêu đề thành "IQ chỉ là một phần của câu chuyện". Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://gwern.net/doc/iq/2015-strenze.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
     luot_2_ghi_chu: "Như n16: .53 là ước lượng Hunter & Hunter 1984, các phân tích lại gần đây cho số thấp hơn; điều đó chỉ làm vế 'dưới một nửa phương sai' đúng hơn."
+    review: dung
   - id: n47
     cau: 'Tiêu đề lời khuyên 4 (IQ chỉ là một phần của câu chuyện): Khá vững.'
     loai: nhan
@@ -660,17 +742,23 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://gwern.net/doc/iq/2015-strenze.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
+    ghi_chu: 'Review (Claude Opus 5.5, 09/11/2026): Hệ số tổng hợp và nhận xét "probably" của báo cáo APA; độ lớn với công việc còn bàn (Sackett 2022): Khá vững hợp.'
+    review: dung
+    nguon:
+      - strenze2015
+      - neisser1996
   - id: n48
-    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu công bố nào về khả năng dự báo của IQ (với học tập, nghề nghiệp, thu nhập) trên người Việt.
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu công bố nào dùng bài test IQ chuẩn hóa để đo khả năng dự báo của IQ (với học tập, nghề nghiệp, thu nhập) trên người Việt.
     loai: thoi-su
     het_han: '2028-11-01'
     nguon:
       - tim-kiem-vn
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy ..." (không mốc). Đã thêm "Tính đến 11/2026". Lần tìm 09/11/2026 trên OpenAlex (ba truy vấn, mỗi truy vấn xem 8 kết quả đầu): không thấy bài nào đo khả năng dự báo của IQ trên người Việt; có nghiên cứu về thành tích giáo dục của Việt Nam, vân tay và IQ ở sinh viên Việt (không phải dự báo), và dữ liệu Young Lives. Chưa tìm Google Scholar hay tạp chí trong nước.'
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy ..." (không mốc). Đã thêm "Tính đến 11/2026". Lần tìm 09/11/2026 trên OpenAlex (ba truy vấn, mỗi truy vấn xem 8 kết quả đầu): không thấy bài nào đo khả năng dự báo của IQ trên người Việt; có nghiên cứu về thành tích giáo dục của Việt Nam, vân tay và IQ ở sinh viên Việt (không phải dự báo), và dữ liệu Young Lives. Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Opus 5.5, 09/11/2026): Theo lưu ý của lượt 2: lần tìm 09/11/2026 của lượt 2 thấy một khảo sát cắt ngang (2020, 623 quản lý doanh nghiệp dệt may) gọi bài CRT là "IQ" và liên hệ với hiệu quả doanh nghiệp; câu cũ "chưa tìm thấy nghiên cứu công bố nào về khả năng dự báo của IQ" vì vậy có thể bị phản bác. Chữ mới thêm "dùng bài test IQ chuẩn hóa để đo". het_han giữ.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works?search=IQ%20Vietnam%20academic%20achievement", "https://api.openalex.org/works?search=cognitive%20ability%20earnings%20Vietnam", "https://api.openalex.org/works/doi:10.1080/23311975.2020.1829272" ]
     luot_2_ghi_chu: "Tìm 09/11/2026 không thấy nghiên cứu dùng bài IQ chuẩn hóa dự báo học tập, nghề nghiệp, thu nhập ở người Việt. Gần nhất: một khảo sát cắt ngang 623 quản lý doanh nghiệp dệt may (2020) dùng bài CRT gọi là 'IQ' liên hệ với hiệu quả doanh nghiệp; nên cân nhắc viết 'chưa tìm thấy nghiên cứu dùng bài test IQ chuẩn hóa'."
+    review: sai
   - id: n49
     cau: Mọi con số r = .56/.43/.20 trên trang đều đến từ các nghiên cứu ở nước ngoài.
     loai: phat-hien
@@ -691,10 +779,11 @@ nhan_dinh:
     trich: By convention, overall intelligence test scores are usually converted to a scale in which the mean is 100 and the standard deviation is 15.
     vi_tri: Neisser và cộng sự 1996, mục Intelligence tests
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "các bài test IQ được chuẩn hóa trên quần thể phương Tây ... sai lầm phương pháp nghiêm trọng — lịch sử tâm lý học đã có những ví dụ đau đớn về việc này". Đã bỏ câu "ví dụ đau đớn" (không nguồn) và "nghiêm trọng"; "nhiều bài phổ biến chuẩn hóa ở phương Tây" là nhận xét chung (Neisser 1996 nói về mẫu chuẩn hóa Mỹ), ghi lại cho review.'
+    ghi_chu: 'Chữ cũ: "các bài test IQ được chuẩn hóa trên quần thể phương Tây ... sai lầm phương pháp nghiêm trọng — lịch sử tâm lý học đã có những ví dụ đau đớn về việc này". Đã bỏ câu "ví dụ đau đớn" (không nguồn) và "nghiêm trọng"; "nhiều bài phổ biến chuẩn hóa ở phương Tây" là nhận xét chung (Neisser 1996 nói về mẫu chuẩn hóa Mỹ), ghi lại cho review. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.101.2.171.pdf" ]
     luot_2_ghi_chu: Lời khuyên phương pháp, có cơ sở.
+    review: dung
   - id: n51
     cau: 'Ngay cả bài "ít văn hóa" như ma trận Raven cũng không miễn nhiễm với môi trường: điểm Raven vẫn thay đổi mạnh theo thế hệ.'
     loai: phat-hien
@@ -703,9 +792,10 @@ nhan_dinh:
     trich: Culturally reduced content has maximized culturally influenced performance.
     vi_tri: Flynn 1987, mục Dutch data (Assessment)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "kinh nghiệm với dạng bài suy luận trừu tượng trên giấy vẫn chịu ảnh hưởng của schooling". Flynn (1987) nói về ảnh hưởng văn hóa nói chung, không riêng "schooling"; đã viết lại.'
+    ghi_chu: 'Chữ cũ: "kinh nghiệm với dạng bài suy luận trừu tượng trên giấy vẫn chịu ảnh hưởng của schooling". Flynn (1987) nói về ảnh hưởng văn hóa nói chung, không riêng "schooling"; đã viết lại. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.101.2.171.pdf" ]
+    review: dung
   - id: n52
     cau: Chưa có dữ liệu Việt Nam thì không kết luận gì về người Việt; chỉ có thể nói positive manifold nhiều khả năng cũng có ở người Việt, vì đã được thấy trong 97 mẫu từ 31 nước ngoài phương Tây.
     loai: phat-hien
@@ -714,10 +804,11 @@ nhan_dinh:
     trich: These results show that g appears in many cultures and is likely a universal phenomenon in humans.
     vi_tri: Warne & Burningham 2019, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "các cơ chế (positive manifold, tương tác gen–môi trường) nhiều khả năng cũng đúng, vì chúng đã được tái hiện ở rất nhiều quần thể". Tương tác gen–môi trường không lặp lại nhất quán (Hanscombe 2012), nên bỏ; giữ positive manifold. Đây là suy luận (nêu rõ "nhiều khả năng") dựa trên nguồn.'
+    ghi_chu: 'Chữ cũ: "các cơ chế (positive manifold, tương tác gen–môi trường) nhiều khả năng cũng đúng, vì chúng đã được tái hiện ở rất nhiều quần thể". Tương tác gen–môi trường không lặp lại nhất quán (Hanscombe 2012), nên bỏ; giữ positive manifold. Đây là suy luận (nêu rõ "nhiều khả năng") dựa trên nguồn. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/bul0000184" ]
     luot_2_ghi_chu: Câu đã viết thận trọng ('nhiều khả năng'); 31 nước của Warne & Burningham là nước ngoài phương Tây, công nghiệp hóa thấp.
+    review: dung
   - id: n53
     cau: IQ 130 nghĩa là bạn làm tốt hơn khoảng 98% nhóm chuẩn hóa.
     loai: so-lieu
@@ -726,10 +817,11 @@ nhan_dinh:
     trich: about 2.25 percent of the population can be expected to fall into each of those categories
     vi_tri: Neisser 1997, trang 4
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "IQ 130 chỉ có nghĩa bạn làm tốt hơn khoảng 98% ..." đã bỏ "chỉ có nghĩa" (giọng khẳng định). 100 − 2,25 ≈ 98% (làm tròn).'
+    ghi_chu: 'Chữ cũ: "IQ 130 chỉ có nghĩa bạn làm tốt hơn khoảng 98% ..." đã bỏ "chỉ có nghĩa" (giọng khẳng định). 100 − 2,25 ≈ 98% (làm tròn). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://web.archive.org/web/20161104214157/http://www.americanscientist.org/issues/feature/rising-scores-on-intelligence-tests/99999" ]
     luot_2_ghi_chu: 130 ứng với bách phân vị khoảng 97,7.
+    review: dung
   - id: n54
     cau: 'Tính di truyền 80% ở người trưởng thành không có nghĩa môi trường chỉ đóng góp 20% vào trí tuệ của một cá nhân: heritability nói về nguồn gốc của khác biệt giữa mọi người trong quần thể, và tính trong một môi trường cụ thể.'
     loai: dinh-nghia
@@ -752,26 +844,30 @@ nhan_dinh:
     trich: The longitudinal rank-order stability of cognitive ability increases dramatically over the lifespan. | of approximately 1 to 5 IQ points for an additional year of education.
     vi_tri: Tucker-Drob & Briley 2014, tóm tắt; Ritchie & Tucker-Drob 2018
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "can thiệp môi trường vẫn tạo ra khác biệt — nhất là ở trẻ nhỏ và trẻ thiệt thòi" (không nguồn). Đã thay bằng số liệu của Ritchie & Tucker-Drob (2018).'
+    ghi_chu: 'Chữ cũ: "can thiệp môi trường vẫn tạo ra khác biệt — nhất là ở trẻ nhỏ và trẻ thiệt thòi" (không nguồn). Đã thay bằng số liệu của Ritchie & Tucker-Drob (2018). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4069230/", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1177%252F1461444812470428.zip/10.1177%252F1745691615577701.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6088505/" ]
+    review: dung
   - id: n56
-    cau: IQ là một yếu tố dự báo khá mạnh kết quả học tập và công việc, nhưng không vượt trội hẳn so với điểm học bạ hay hoàn cảnh gia đình; EQ và IQ đo hai thứ khác nhau và không thay thế nhau.
+    cau: "EQ không thay thế được IQ: điểm các bài đo EQ tương quan dương với IQ, chưa được tách rõ khỏi tính cách và trí thông minh chung, và bằng chứng cho EQ như một năng lực riêng còn thiếu; IQ là một yếu tố dự báo khá mạnh kết quả học tập và công việc nhưng không vượt trội hẳn so với điểm học bạ hay hoàn cảnh gia đình."
     loai: phat-hien
     nguon:
+      - waterhouse2006
       - strenze2007
-    trich: The results demonstrate that intelligence is a powerful predictor of success but, on the whole, not an overwhelmingly better predictor than parental SES or grades.
-    vi_tri: Strenze 2007, tóm tắt
+    trich: EI was not successfully differentiated from personality constructs and general intelligence | the repeated findings for significant positive correlations between EI and IQ | this available evidence has clearly identified a lack of conclusive supporting data for EI, either as a single construct or as a defined set of specific abilities | The results demonstrate that intelligence is a powerful predictor of success but, on the whole, not an overwhelmingly better predictor than parental SES or grades.
+    vi_tri: Waterhouse 2006, mục Emotional intelligence (tr. 216–217); Strenze 2007, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "IQ vẫn là một trong những yếu tố dự báo kết quả học tập và công việc tốt nhất mà tâm lý học từng tìm ra". Strenze (2007): "mạnh nhưng không vượt trội so với SES của cha mẹ hay điểm học bạ"; đã sửa. Vế "EQ và IQ đo hai thứ khác nhau" là định nghĩa chung, không kiểm riêng (xem trang EQ).'
+    ghi_chu: 'Chữ cũ: "IQ vẫn là một trong những yếu tố dự báo kết quả học tập và công việc tốt nhất mà tâm lý học từng tìm ra". Strenze (2007): "mạnh nhưng không vượt trội so với SES của cha mẹ hay điểm học bạ"; đã sửa. Vế "EQ và IQ đo hai thứ khác nhau" là định nghĩa chung, không kiểm riêng (xem trang EQ). Review (Claude Opus 5.5, 09/11/2026): Lượt 2 đúng: "hai khái niệm đo hai thứ khác nhau" nói mạnh. Đã mở Waterhouse 2006 (toàn văn, IA). Chữ cũ: "Hai khái niệm đo hai thứ khác nhau và không thay thế nhau. IQ là ...". Chữ mới: "EQ không thay thế được IQ. Điểm các bài đo EQ tương quan dương với IQ, chưa được tách rõ khỏi tính cách và trí thông minh chung, và bằng chứng cho EQ như một năng lực riêng còn thiếu (Waterhouse, 2006). Còn IQ là ...".'
     luot_2: qua-manh
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1016%252Fj.indcrop.2012.02.030.zip/10.1016%252Fj.intell.2006.09.004.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1207.zip/10.1207%252Fs15326985ep4104_1.pdf" ]
     luot_2_ghi_chu: "câu đúng: IQ là một yếu tố dự báo khá mạnh kết quả học tập và công việc, nhưng không vượt trội hẳn so với điểm học bạ hay hoàn cảnh gia đình; EQ không thay thế được IQ: các thang đo EQ có tương quan một phần với IQ và tính cách, và bằng chứng cho EQ như một năng lực riêng còn yếu.; Vế IQ đúng (Strenze 2007). Vế 'EQ và IQ đo hai thứ khác nhau' nói mạnh: các thang EI tương quan dương với IQ và chưa tách rõ khỏi IQ cộng tính cách (Waterhouse 2006)."
+    review: sai
   - id: n57
-    cau: 'Đọc thêm: ba trang kham-pha/tri-tue/hieu-ung-flynn, kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc, kham-pha/co-so-sinh-hoc/gen-va-tinh-cach có trong trang.yml; mô tả ngắn đúng chủ đề (điểm IQ tăng 3 điểm mỗi thập kỷ; EQ; gen và trí tuệ).'
+    cau: 'Đọc thêm: ba trang kham-pha/tri-tue/hieu-ung-flynn, kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc, kham-pha/co-so-sinh-hoc/gen-va-tinh-cach có trong trang.yml; chữ link khớp tiêu đề; mô tả ngắn đúng chủ đề (điểm IQ tăng khoảng 3 điểm mỗi thập kỷ; EQ; gen và trí tuệ).'
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: 'Đã kiểm src/data/trang.yml: ba id có. Hai trang cam-xuc-dong-luc và co-so-sinh-hoc chưa chắc đã lên bản thật; link tự thành chữ "sắp có" khi chưa có (src/plugins/sap-co.mjs).'
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm src/data/trang.yml: ba id có. Hai trang cam-xuc-dong-luc và co-so-sinh-hoc chưa chắc đã lên bản thật; link tự thành chữ "sắp có" khi chưa có (src/plugins/sap-co.mjs). Review (Claude Opus 5.5, 09/11/2026): Đã kiểm: trang.yml có ba id; tiêu đề "Người nay thông minh hơn xưa?" (src/content/docs/kham-pha/tri-tue/hieu-ung-flynn.md), "EQ có thật không?" và "Gen quyết định bao nhiêu phần con người ta?" (trang cũ ở ../psyche-zero, chưa chuyển nên link hiện "sắp có") khớp chữ link. Mô tả "điểm IQ tăng 3 điểm mỗi thập kỷ" chắc hơn trang Flynn ("khoảng 3"; Trahan 2014: 2,31, Pietschnig 2015: 2,8): đã thêm "khoảng".'
+    review: sai
   - id: n58
     cau: 'Quiz 1–5: positive manifold là xu hướng điểm các bài kiểm tra nhận thức khác nhau tương quan dương; Strenze: IQ tương quan mạnh nhất với học vấn (.56), rồi nghề nghiệp (.43), thu nhập .20; r = .20 nghĩa là giải thích khoảng 4%; hiệu ứng Flynn là bằng chứng cho môi trường (Pietschnig và Voracek: gần 4 triệu người, 31 nước); heritability là thống kê về quần thể trong một môi trường, tăng theo tuổi.'
     loai: phat-hien
@@ -783,9 +879,10 @@ nhan_dinh:
     trich: all such correlations are typically positive and form what is called a "positive manifold." | .56, .43, and .20, respectively | almost 4 million participants, from 31 countries | The heritability of general cognitive ability increases significantly and linearly
     vi_tri: Các nguồn như các nhận định tương ứng ở trên
     ket_qua: da-sua
-    ghi_chu: 'Năm câu quiz lặp lại các nhận định trên; câu 4 đã sửa: đáp án đúng cũ "không thể thay đổi ... bắt buộc phải đến từ môi trường (giáo dục, dinh dưỡng, y tế)" thành "khó thay đổi ... được cho là chủ yếu đến từ môi trường (dinh dưỡng, sức khỏe, học hành)"; giải thích cũ "ở hầu hết các dạng bài" thành "cả bốn nhóm bài". Các câu còn lại khớp.'
+    ghi_chu: 'Năm câu quiz lặp lại các nhận định trên; câu 4 đã sửa: đáp án đúng cũ "không thể thay đổi ... bắt buộc phải đến từ môi trường (giáo dục, dinh dưỡng, y tế)" thành "khó thay đổi ... được cho là chủ yếu đến từ môi trường (dinh dưỡng, sức khỏe, học hành)"; giải thích cũ "ở hầu hết các dạng bài" thành "cả bốn nhóm bài". Các câu còn lại khớp. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1016%252Fj.indcrop.2012.02.030.zip/10.1016%252Fj.intell.2006.09.004.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1177%252F1461444812470428.zip/10.1177%252F1745691615577701.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0002-9432.71.2.245.zip/10.1037%252F0003-066X.51.2.77.pdf" ]
+    review: dung
 doi_chu:
   - cu: (trang cũ không có hộp tóm tắt đầu trang)
     moi: Hộp ::tom-tat tự dựng từ ý chính của bốn khung nhãn của trang (bản mới thêm).
@@ -823,3 +920,27 @@ doi_chu:
   - cu: '"Ma trận Raven (Raven, 1938) ... được xem là một trong những phép đo sạch nhất"; Ngộ nhận: "IQ vẫn là một trong những yếu tố dự báo ... tốt nhất mà tâm lý học từng tìm ra"; "can thiệp môi trường ... nhất là ở trẻ nhỏ và trẻ thiệt thòi"'
     moi: Bỏ năm 1938; "culturally reduced ... điểm Raven vẫn thay đổi mạnh theo thế hệ"; "khá mạnh ... không vượt trội hẳn so với điểm học bạ hay hoàn cảnh gia đình — Strenze, 2007"; "mỗi năm đi học thêm ... 1–5 điểm"
     ly_do: Flynn 1987; Strenze 2007; Ritchie 2018.
+  - cu: '"Thang Wechsler dành cho người lớn (WAIS) đo bốn nhóm năng lực: hiểu ngôn ngữ, lý luận tri giác (xử lý hình ảnh, không gian), trí nhớ làm việc, và tốc độ xử lý."'
+    moi: '"Bản thứ tư của thang Wechsler dành cho người lớn (WAIS-IV) cho bốn chỉ số: ... Bản thứ năm (WAIS-5, 2024) có năm chỉ số chính: hiểu ngôn ngữ, thị giác–không gian, lý luận lỏng, trí nhớ làm việc và tốc độ xử lý."; thêm Pearson (2024) vào mục Nguồn'
+    ly_do: "Review: xem ghi_chu n9."
+  - cu: '"hiệu suất công việc theo đánh giá của cấp trên r = .53; nhưng"; khung Khá vững: "Các phân tích tổng hợp cho tương quan r ≈ .4–.6 với học vấn và hiệu suất công việc."'
+    moi: 'thêm "(ước lượng cũ của Hunter và Hunter, 1984; một phân tích lại gần đây cho số thấp hơn — Sackett và cộng sự, 2022)"; khung: "r = .56 với học vấn (Strenze, 2007). Với hiệu suất công việc, ước lượng cũ là r = .53 ...; ... thấp hơn khoảng .10–.20 (Sackett và cộng sự, 2022)."; thêm Sackett và cộng sự (2022) vào mục Nguồn'
+    ly_do: "Review: xem ghi_chu n16, n29."
+  - cu: '"Phân tích tổng hợp chính thức đầu tiên về hiệu ứng Flynn"'
+    moi: '"Một phân tích tổng hợp lớn về hiệu ứng Flynn"'
+    ly_do: "Review: Trahan và cộng sự (2014) có trước (xem ghi_chu n24)."
+  - cu: 'khung Đang tranh cãi: "khác biệt IQ giữa người với người do gen quyết định bao nhiêu phần"'
+    moi: '"khác biệt IQ giữa người với người gắn với khác biệt gen đến mức nào"'
+    ly_do: "Review: xem ghi_chu n31."
+  - cu: '"### 1. Dùng IQ để hiểu điểm mạnh–yếu nhận thức, không để dán nhãn :nhan[vung-chac]"; "Các bài test IQ cho nhiều điểm thành phần, nên có thể dùng để mô tả điểm mạnh và điểm yếu nhận thức"'
+    moi: '"### 1. Đừng dùng điểm IQ để dán nhãn :nhan[kha-vung] { #1-dung-iq-de-hieu-diem-manhyeu-nhan-thuc-khong-de-dan-nhan-vung-chac }"; thêm câu về phân tích hồ sơ (McGill và cộng sự, 2018); thêm McGill và cộng sự (2018) vào mục Nguồn'
+    ly_do: "Review: xem ghi_chu n40, n41."
+  - cu: '"chưa tìm thấy nghiên cứu công bố nào về khả năng dự báo của IQ"'
+    moi: '"chưa tìm thấy nghiên cứu công bố nào dùng bài test IQ chuẩn hóa để đo khả năng dự báo của IQ"'
+    ly_do: "Review: xem ghi_chu n48."
+  - cu: '"Hai khái niệm đo hai thứ khác nhau và không thay thế nhau. IQ là"'
+    moi: '"EQ không thay thế được IQ. Điểm các bài đo EQ tương quan dương với IQ, chưa được tách rõ khỏi tính cách và trí thông minh chung, và bằng chứng cho EQ như một năng lực riêng còn thiếu (Waterhouse, 2006). Còn IQ là"'
+    ly_do: "Review: xem ghi_chu n56."
+  - cu: '"— điểm IQ tăng 3 điểm mỗi thập kỷ"'
+    moi: '"— điểm IQ tăng khoảng 3 điểm mỗi thập kỷ"'
+    ly_do: "Review: xem ghi_chu n57."

@@ -34,7 +34,7 @@ Quên không hẳn là lỗi của trí nhớ. Một bài tổng quan cho rằng
 
 ### Murre và Dros (2015): làm lại sau 130 năm
 
-Hai nhà nghiên cứu ở Hà Lan làm lại thí nghiệm theo cách gần giống nhất có thể. Một người (chính đồng tác giả Dros) tự học 70 danh sách âm tiết vô nghĩa trong khoảng 70 giờ, từ tháng 12/2011 đến tháng 2/2012 ([Murre và Dros, 2015](https://doi.org/10.1371/journal.pone.0120644)). Đường cong rất giống của Ebbinghaus; khác biệt lớn nhất là ở mốc 31 ngày.
+Hai nhà nghiên cứu ở Hà Lan làm lại thí nghiệm, cố bám sát bản gốc trong điều kiện cho phép. Một người (chính đồng tác giả Dros) tự học 70 danh sách âm tiết vô nghĩa trong khoảng 70 giờ, từ tháng 12/2011 đến tháng 2/2012 ([Murre và Dros, 2015](https://doi.org/10.1371/journal.pone.0120644)). Đường cong rất giống của Ebbinghaus; khác biệt lớn nhất là ở mốc 31 ngày.
 
 ::hinh{ten="duong-cong-quen"}
 
@@ -70,7 +70,7 @@ Khoảng cách bao nhiêu là tốt? Trong một nghiên cứu trực tuyến v�
 
 ### 2. Tự kiểm tra thay vì đọc lại :nhan[vung-chac]
 
-Cố nhớ lại một điều, kể cả khi nhớ không ra, giúp củng cố trí nhớ hơn là đọc lại nó. Trong một thí nghiệm kinh điển với 120 sinh viên ([Roediger và Karpicke, 2006](https://doi.org/10.1111/j.1467-9280.2006.01693.x)):
+Cố nhớ lại một điều giúp củng cố trí nhớ hơn là đọc lại nó. Nếu sau đó bạn xem đáp án đúng thì kể cả khi lần thử nhớ thất bại, nó vẫn giúp lần học tiếp theo ([Kornell và cộng sự, 2009](https://doi.org/10.1037/a0015729)). Trong một thí nghiệm kinh điển với 120 sinh viên ([Roediger và Karpicke, 2006](https://doi.org/10.1111/j.1467-9280.2006.01693.x)):
 
 | Kiểm tra sau | Đọc lại hai lần | Đọc một lần, tự kiểm tra một lần |
 |---|---|---|
@@ -93,7 +93,7 @@ Một gợi ý từ dự án tái lập Many Labs 2: khi làm lại 28 hiệu �
 ## Ngộ nhận liên quan
 
 - **"Đọc lại nhiều lần là cách ôn bài tốt nhất."** Đọc lại tạo cảm giác quen thuộc, nhưng tự kiểm tra hiệu quả hơn về lâu dài.
-- **"Hay quên là dấu hiệu trí nhớ kém."** Ai cũng quên theo một hình dạng giống nhau: nhanh lúc đầu, chậm dần về sau. Quên những chi tiết không dùng đến là bình thường. Nếu bạn lo lắng về việc quên bất thường, hãy trao đổi với bác sĩ.
+- **"Hay quên là dấu hiệu trí nhớ kém."** Nhiều nghiên cứu thấy quên theo cùng một hình dạng: nhanh lúc đầu, chậm dần về sau. Quên những chi tiết không dùng đến là bình thường. Nếu bạn lo lắng về việc quên bất thường, hãy trao đổi với bác sĩ.
 - **"Ebbinghaus cho thấy sau một ngày ta quên 70% những gì đã học."** Con số của Ebbinghaus đo thời gian tiết kiệm khi học lại âm tiết vô nghĩa, không phải tỉ lệ kiến thức còn nhớ.
 
 ### Đọc thêm
@@ -139,6 +139,7 @@ Một gợi ý từ dự án tái lập Many Labs 2: khi làm lại 28 hiệu �
 - Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques. *Psychological Science in the Public Interest*, 14(1), 4–58. <https://doi.org/10.1177/1529100612453266>
 - Ebbinghaus, H. (1885/1913). *Memory: A contribution to experimental psychology* (bản dịch tiếng Anh của Ruger & Bussenius). Chương 7. <https://psychclassics.yorku.ca/Ebbinghaus/memory7.htm>
 - Klein, R. A., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. *Advances in Methods and Practices in Psychological Science*, 1(4), 443–490. <https://doi.org/10.1177/2515245918810225>
+- Kornell, N., Hays, M. J., & Bjork, R. A. (2009). Unsuccessful retrieval attempts enhance subsequent learning. *Journal of Experimental Psychology: Learning, Memory, and Cognition*, 35(4), 989–998. <https://doi.org/10.1037/a0015729>
 - Murre, J. M. J., & Dros, J. (2015). Replication and analysis of Ebbinghaus' forgetting curve. *PLOS ONE*, 10(7), e0120644. <https://doi.org/10.1371/journal.pone.0120644>
 - Nørby, S. (2015). Why forget? On the adaptive value of memory loss. *Perspectives on Psychological Science*, 10(5), 551–578. <https://doi.org/10.1177/1745691615596787>
 - OpenStax. (2020). *Psychology 2e*, mục 8.3 Problems with Memory. <https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory>

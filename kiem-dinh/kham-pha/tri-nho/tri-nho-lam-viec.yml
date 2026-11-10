@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L1 phần 2/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L1)
+      review: Claude Opus 5.5 (agent review D5-L1, 09/11/2026)
       kiem_mau: null
 nguon:
   - id: baddeley2021
@@ -35,21 +35,21 @@ nguon:
     link: https://labs.la.utexas.edu/gilden/files/2016/03/1-s2.0-S0022537175800454-main.pdf
     toan_van: true
   - id: baddeley2000
-    ten: 'Baddeley (2000), Trends Cogn Sci 4(11), 417–423: chỉ đọc tóm tắt (PubMed 11058819); phần còn lại theo Baddeley (2021) kể lại'
-    link: https://pubmed.ncbi.nlm.nih.gov/11058819/
-    toan_van: false
+    ten: 'Baddeley (2000), Trends Cogn Sci 4(11), 417–423: toàn văn (PDF ở Internet Archive, bộ wikipedia-scholarly-sources-corpus; review mở 09/11/2026, gồm Hình 1)'
+    link: https://doi.org/10.1016/S1364-6613(00)01538-2
+    toan_van: true
   - id: bh1974
-    ten: 'Baddeley & Hitch (1974), chương sách (Psychology of Learning and Motivation, tập 8): chưa mở được toàn văn; chỉ dùng theo Baddeley (2021) kể lại'
-    link: https://doi.org/10.1016/S0079-7421(08)60452-1
-    toan_van: false
+    ten: 'Baddeley & Hitch (1974), chương sách (Psychology of Learning and Motivation, tập 8, tr. 47–89): toàn văn (PDF tại app.nova.edu; review mở 09/11/2026)'
+    link: https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf
+    toan_van: true
   - id: bpv1988
     ten: 'Baddeley, Papagno & Vallar (1988), J Mem Lang 27(5), 586–595: chưa mở được toàn văn; chỉ dùng theo Baddeley (2021) kể lại'
     link: https://doi.org/10.1016/0749-596X(88)90028-9
     toan_van: false
   - id: gb1989
-    ten: 'Gathercole & Baddeley (1989), J Mem Lang 28(2), 200–213: chưa mở được toàn văn; chỉ dùng theo Baddeley (2021) kể lại'
+    ten: 'Gathercole & Baddeley (1989), J Mem Lang 28(2), 200–213: toàn văn (PDF ở Internet Archive, bộ wikipedia-scholarly-sources-corpus; review mở 09/11/2026)'
     link: https://doi.org/10.1016/0749-596X(89)90044-2
-    toan_van: false
+    toan_van: true
   - id: cowan2001
     ten: 'Cowan (2001), Behav Brain Sci 24(1), 87–114: toàn văn (PDF tại memory.psych.missouri.edu)'
     link: https://memory.psych.missouri.edu/assets/doc/articles/2001/cowan-bbs-2001.pdf
@@ -70,6 +70,14 @@ nguon:
     ten: 'OpenAlex, tìm 09/11/2026 (working memory Baddeley model Vietnamese; phonological loop Vietnamese children; digit span Vietnamese): không thấy nghiên cứu kiểm tra mô hình Baddeley trên người Việt; chỉ thấy dữ liệu chuẩn digit span lâm sàng và nghiên cứu học ngoại ngữ'
     link: https://api.openalex.org/works?search=working%20memory%20Baddeley%20model%20Vietnamese%20participants
     toan_van: true
+  - id: gathercole1992
+    ten: "Gathercole, Willis, Emslie & Baddeley (1992), Dev Psychol 28(5), 887–898: toàn văn (PDF ở Internet Archive, bộ wikipedia-scholarly-sources-corpus)"
+    link: https://doi.org/10.1037/0012-1649.28.5.887
+    toan_van: true
+  - id: blv1984
+    ten: "Baddeley, Lewis & Vallar (1984), Q J Exp Psychol A 36(2), 233–252: chỉ đọc tóm tắt (OpenAlex); điều kiện biên cũng có trong Oberauer và cộng sự (2018), Benchmark 7"
+    link: https://doi.org/10.1080/14640748408402157
+    toan_van: false
 nhan_dinh:
   - id: n1
     cau: Nhiều người thấy việc giữ một dãy số trong đầu khó hơn khi đồng thời nhẩm hát một bài có lời.
@@ -80,10 +88,11 @@ nhan_dinh:
     trich: Distractor processing can involve concurrent articulation of unrelated verbal material, often referred to as "articulatory suppression" | The disruption of memory caused by concurrent processing of distractors is substantial when the memory items and distractors come from the same content domain
     vi_tri: Oberauer và cộng sự 2018, Benchmark 5.2.1; Baddeley và cộng sự 1975, thí nghiệm ức chế phát âm
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Hầu hết mọi người làm việc 1 khá dễ, còn việc 2 thì các con số ''bay'' mất". Chữ mới: "Nhiều người thấy việc 1 khá dễ, còn việc 2 thì các con số dễ ''rơi'' mất". Lý do: "hầu hết" không có số liệu; đây là bài tập minh họa (gia-dinh), nguyên lý (nhiệm vụ lời nói chen vào trí nhớ lời nói) có nguồn.'
+    ghi_chu: 'Chữ cũ: "Hầu hết mọi người làm việc 1 khá dễ, còn việc 2 thì các con số ''bay'' mất". Chữ mới: "Nhiều người thấy việc 1 khá dễ, còn việc 2 thì các con số dễ ''rơi'' mất". Lý do: "hầu hết" không có số liệu; đây là bài tập minh họa (gia-dinh), nguyên lý (nhiệm vụ lời nói chen vào trí nhớ lời nói) có nguồn. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
     luot_2_ghi_chu: '"Nhiều người thấy" là câu hedge.'
+    review: dung
   - id: n2
     cau: Theo mô hình trí nhớ làm việc, giữ dãy số bằng lời và hát nhẩm lời bài hát cùng dùng một ngăn xử lý âm thanh nên hai việc tranh nhau ngăn đó.
     loai: phat-hien
@@ -93,9 +102,10 @@ nhan_dinh:
     trich: This comprised an acoustic-verbal temporary store in which information would fade unless refreshed by vocal or sub-vocal rehearsal. | The disruption of memory caused by concurrent processing of distractors is substantial when the memory items and distractors come from the same content domain
     vi_tri: Baddeley 2021, mục mô hình vòng lặp; Oberauer và cộng sự 2018, Benchmark 5.2.1
     ket_qua: da-lam-mem
-    ghi_chu: 'Thêm "theo mô hình trí nhớ làm việc": cách giải thích bằng "ngăn" là của mô hình; thuyết khác (Cowan) giải thích theo chú ý chung (xem khung "Đang tranh cãi").'
+    ghi_chu: 'Thêm "theo mô hình trí nhớ làm việc": cách giải thích bằng "ngăn" là của mô hình; thuyết khác (Cowan) giải thích theo chú ý chung (xem khung "Đang tranh cãi"). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf", "https://doi.org/10.1111/j.2044-8295.1964.tb00899.x" ]
+    review: dung
   - id: n3
     cau: Giữ dãy số trong khi hình dung đường đi (việc hình ảnh–không gian) thường ít chen lấn hơn so với hát nhẩm lời, vì hai việc dùng hai ngăn khác nhau.
     loai: phat-hien
@@ -105,10 +115,11 @@ nhan_dinh:
     trich: The disruption of memory caused by concurrent processing of distractors is less serious, but still present, when the memory items and distractors come from different domains | tracking disrupted the visuo-spatial but not the verbal STM task
     vi_tri: Oberauer và cộng sự 2018, Benchmark 5.2.2; Baddeley 2021, mục bảng phác họa
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Việc này thường dễ hơn việc 2, vì hình ảnh không gian dùng một ngăn khác, không chen lấn". Chữ mới: "nên ít chen lấn ... hơn". Lý do: khác kênh vẫn gây nhiễu, chỉ ít hơn (Benchmark 5.2.2). Tình huống là minh họa (gia-dinh).'
+    ghi_chu: 'Chữ cũ: "Việc này thường dễ hơn việc 2, vì hình ảnh không gian dùng một ngăn khác, không chen lấn". Chữ mới: "nên ít chen lấn ... hơn". Lý do: khác kênh vẫn gây nhiễu, chỉ ít hơn (Benchmark 5.2.2). Tình huống là minh họa (gia-dinh). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
     luot_2_ghi_chu: Dẫn qua tổng kết của B&H.
+    review: dung
   - id: n4
     cau: Trí nhớ làm việc (working memory) là nơi não vừa giữ thông tin trong vài giây vừa thao tác với nó, khác với cách nhìn trí nhớ ngắn hạn như một kho chứa thụ động.
     loai: dinh-nghia
@@ -140,9 +151,10 @@ nhan_dinh:
     trich: Our basic paradigm was to require participants to hear and repeat back sequences of digits varying in length from zero to eight digits while at the same time requiring them to perform tasks involving processes that might reasonably be assumed to depend on the hypothetical working memory system.
     vi_tri: Baddeley 2021, mục thí nghiệm nhiệm vụ kép
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Baddeley và Hitch tổng hợp một loạt thí nghiệm". Theo Baddeley (2021) đây là loạt thí nghiệm của chính họ (ba việc: suy luận bằng lời, hiểu văn bản, học danh sách từ), không phải tổng hợp nghiên cứu của người khác; đã viết "thực hiện một loạt thí nghiệm".'
+    ghi_chu: 'Chữ cũ: "Baddeley và Hitch tổng hợp một loạt thí nghiệm". Theo Baddeley (2021) đây là loạt thí nghiệm của chính họ (ba việc: suy luận bằng lời, hiểu văn bản, học danh sách từ), không phải tổng hợp nghiên cứu của người khác; đã viết "thực hiện một loạt thí nghiệm". Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
+    review: dung
   - id: n7
     cau: Nếu trí nhớ ngắn hạn là một ngăn duy nhất thì việc nào chiếm chỗ cũng làm việc khác kém đi; nếu mô hình kho chung đúng, hiệu suất phải sụp đổ khi tải gần bằng độ dài dãy số.
     loai: phat-hien
@@ -155,17 +167,19 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
   - id: n8
-    cau: Khi phải giữ tới 8 chữ số trong lúc suy luận bằng lời, người tham gia chậm hơn khoảng một nửa nhưng tỉ lệ sai gần như không đổi (khoảng 5%).
+    cau: Trong thí nghiệm III của Baddeley và Hitch (1974), khi người tham gia vừa suy luận bằng lời vừa liên tục đọc to một dãy 6 chữ số ngẫu nhiên (gần bằng sức chứa của nhiều người), thời gian suy luận tăng từ 2,79 lên 4,27 giây (chậm hơn khoảng một nửa), còn tỉ lệ sai chỉ từ 8,1% lên 10,3%.
     loai: so-lieu
     nguon:
+      - bh1974
       - baddeley2021
-    trich: In the reasoning task for example, response times became systematically slower as concurrent digit load increased, but only by about 50% at the maximum load of eight digits while even more surprisingly, error rates remained constant at around 5%.
-    vi_tri: Baddeley 2021, mục thí nghiệm nhiệm vụ kép (kể lại Baddeley & Hitch 1974)
+    trich: "In the fourth condition, S was given a random six-digit sequence to repeat cyclically at a four- to five-digit per second rate. | Table III: Control 2.79 s, 8.1% errors; Random 6-digit No. 4.27 s, 10.3% errors | increasing the preload from two to six letters, a load which approaches the memory span for many Ss"
+    vi_tri: Baddeley & Hitch 1974, thí nghiệm III và Bảng III (tr. 54); thí nghiệm II (tr. 53) cho "gần bằng sức chứa"
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 3): "năng lực suy luận chỉ giảm nhẹ", kèm link hỏng "[Baddeley và Hitch, 1974]". Chữ trên trang hiện khớp đề xuất của G1 (đối chiếu lại Baddeley 2021): chậm khoảng một nửa, sai khoảng 5%; link DOI chương sách đã thêm. Số liệu theo Baddeley kể lại, chưa mở chương gốc.'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 3): "năng lực suy luận chỉ giảm nhẹ", kèm link hỏng "[Baddeley và Hitch, 1974]". Chữ trên trang hiện khớp đề xuất của G1 (đối chiếu lại Baddeley 2021): chậm khoảng một nửa, sai khoảng 5%; link DOI chương sách đã thêm. Số liệu theo Baddeley kể lại, chưa mở chương gốc. Review (Claude Opus 5.5, 09/11/2026): Lượt 2 đúng. Đã mở chương 1974 (PDF nova.edu): thí nghiệm III cho đọc to lặp lại một dãy 6 chữ số ngẫu nhiên (4–5 chữ số mỗi giây) trong lúc suy luận; thời gian 2,79 s (đối chứng) lên 4,27 s, tỉ lệ sai 8,1% lên 10,3% (Bảng III); chương không có điều kiện 8 chữ số. "8 chữ số, chậm khoảng 50%, sai khoảng 5%" là Baddeley (2021) nhớ lại, không khớp chương gốc mà trang dẫn. Chữ cũ: "giữ trong đầu một dãy chữ số ... khi phải giữ tới 8 chữ số ... chậm hơn khoảng một nửa, nhưng tỉ lệ sai gần như không đổi (khoảng 5%)". Chữ mới: "liên tục đọc to, lặp đi lặp lại một dãy 6 chữ số ngẫu nhiên — gần bằng sức chứa trí nhớ ngắn hạn của nhiều người ... thời gian suy luận tăng từ khoảng 2,8 lên 4,3 giây (chậm hơn khoảng một nửa), nhưng tỉ lệ sai chỉ nhích từ khoảng 8% lên 10%".'
     luot_2: khong-chac
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
     luot_2_ghi_chu: Không tìm thấy trong chương 1974 mức tải "tới 8 chữ số" và "sai khoảng 5%"; số liệu chương cho 6 chữ số, sai 8-10%. Có thể số này lấy từ tổng kết sau của Baddeley (chưa mở được). Cần lượt 1 chỉ ra nguồn chính xác hoặc sửa theo số liệu chương.
+    review: sai
   - id: n9
     cau: Vòng lặp âm vị gồm một kho âm thanh nơi vết âm thanh phai dần nếu không được làm mới và một quá trình nhẩm lại ("giọng nói trong đầu") làm mới vết đó.
     loai: dinh-nghia
@@ -174,9 +188,10 @@ nhan_dinh:
     trich: This comprised an acoustic-verbal temporary store in which information would fade unless refreshed by vocal or sub-vocal rehearsal.
     vi_tri: Baddeley 2021, mục mô hình vòng lặp
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "vết âm thanh phai dần trong khoảng 2 giây". Lý do: G1 xếp "khoảng 2 giây" là KHÔNG KIỂM ĐƯỢC; Baddeley (2021) chỉ nói phai dần nếu không làm mới. Con số 2 giây có ở Baddeley, Thomson & Buchanan (1975) nhưng là dung lượng tính theo lượng lời đọc được, không phải thời gian phai: tách thành nhận định riêng về dung lượng 2 giây.'
+    ghi_chu: 'Chữ cũ: "vết âm thanh phai dần trong khoảng 2 giây". Lý do: G1 xếp "khoảng 2 giây" là KHÔNG KIỂM ĐƯỢC; Baddeley (2021) chỉ nói phai dần nếu không làm mới. Con số 2 giây có ở Baddeley, Thomson & Buchanan (1975) nhưng là dung lượng tính theo lượng lời đọc được, không phải thời gian phai: tách thành nhận định riêng về dung lượng 2 giây. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf", "https://doi.org/10.1017/S0140525X01003922" ]
+    review: dung
   - id: n10
     cau: Dung lượng của vòng lặp âm vị ước chừng bằng số từ người đó đọc được trong khoảng 2 giây.
     loai: so-lieu
@@ -185,10 +200,11 @@ nhan_dinh:
     trich: Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec
     vi_tri: Baddeley và cộng sự 1975, tóm tắt (3)
     ket_qua: da-sua
-    ghi_chu: 'Chữ mới thêm vào trang (G1 xếp mục "khoảng 2 giây" KHÔNG KIỂM ĐƯỢC vì chưa mở được tóm tắt bài 1975). Đã mở toàn văn PDF: tóm tắt ghi đúng như trích.'
+    ghi_chu: 'Chữ mới thêm vào trang (G1 xếp mục "khoảng 2 giây" KHÔNG KIỂM ĐƯỢC vì chưa mở được tóm tắt bài 1975). Đã mở toàn văn PDF: tóm tắt ghi đúng như trích. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922", "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
     luot_2_ghi_chu: Không mở được toàn văn Baddeley, Thomson, Buchanan 1975.
+    review: dung
   - id: n11
     cau: Bảng phác họa không gian–thị giác giữ hình ảnh và vị trí trong không gian.
     loai: dinh-nghia
@@ -208,10 +224,11 @@ nhan_dinh:
     trich: any adequate executive system would need to focus attention and to inhibit the processing of irrelevant distractors. It would need to be able to divide attention ... and where necessary to switch attention between tasks. Finally it would require the capacity to access and manipulate information from LTM | a single executive system of limited attentional capacity
     vi_tri: Baddeley 2021, mục cơ chế điều hành
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "ông chủ ... quyết định thông tin nào được giữ, chuyển sự tập trung giữa các việc, và kết nối với trí nhớ dài hạn". Bỏ "quyết định thông tin nào được giữ" (cách nói ví von, không có trong nguồn) và "chuyển sự tập trung" (Baddeley 2021: đề xuất chức năng chuyển chú ý chưa được ủng hộ mạnh); giữ tập trung, chia chú ý, kết nối trí nhớ dài hạn, dung lượng chú ý hạn chế.'
+    ghi_chu: 'Chữ cũ: "ông chủ ... quyết định thông tin nào được giữ, chuyển sự tập trung giữa các việc, và kết nối với trí nhớ dài hạn". Bỏ "quyết định thông tin nào được giữ" (cách nói ví von, không có trong nguồn) và "chuyển sự tập trung" (Baddeley 2021: đề xuất chức năng chuyển chú ý chưa được ủng hộ mạnh); giữ tập trung, chia chú ý, kết nối trí nhớ dài hạn, dung lượng chú ý hạn chế. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
     luot_2_ghi_chu: Phần "kết nối LTM" là thêm sau, không kiểm.
+    review: dung
   - id: n13
     cau: Conrad cho 387 người xem các dãy 6 chữ cái trình bày bằng mắt rồi nhớ lại ngay.
     loai: so-lieu
@@ -242,9 +259,10 @@ nhan_dinh:
     trich: The following letters were used; BCPTVFMNSX. | confusions are relatively high within the two groups BCPTV and FMNSX and relatively low between them | when an error of recall is made, the substituted letter is likely to be one which sounds like the correct letter
     vi_tri: Conrad 1964, mục Method và mục Results (tr. 77–78)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "nghe giống nhau — B nhầm thành C, D, P, T" và quiz "(B–C–D–P–T)" (G1, mục 2: ĐÁNG NGỜ). Đã mở toàn văn: bộ chữ cái là BCPTVFMNSX, không có D; chữ trên trang hiện ("như B, P, T, V") đúng với nhóm BCPTV. Quiz đã sửa tương ứng.'
+    ghi_chu: 'Chữ cũ: "nghe giống nhau — B nhầm thành C, D, P, T" và quiz "(B–C–D–P–T)" (G1, mục 2: ĐÁNG NGỜ). Đã mở toàn văn: bộ chữ cái là BCPTVFMNSX, không có D; chữ trên trang hiện ("như B, P, T, V") đúng với nhóm BCPTV. Quiz đã sửa tương ứng. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.2044-8295.1964.tb00899.x" ]
+    review: dung
   - id: n16
     cau: Chữ cái được chiếu bằng mắt, nhưng lỗi vẫn tập trung vào chữ nghe giống nhau; theo Conrad, điều này cho thấy đa số người tham gia nhẩm tên chữ cái thay vì giữ hình dạng.
     loai: phat-hien
@@ -253,9 +271,10 @@ nhan_dinh:
     trich: There is of course no mystery in the fact that visually presented memory material should yield acoustically related errors. It merely indicates that the majority of subjects verbalize the stimuli, rather than attempting to store them in visual form.
     vi_tri: Conrad 1964, mục Discussion (tr. 78)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "chứ không phải những chữ cái trông giống nhau ... Kết luận: dù thông tin đi vào bằng mắt, não vẫn chuyển nó thành mã âm thanh". Conrad không đặt phép so sánh trực tiếp với độ giống hình dạng của chữ cái, và nói "đa số người" nhẩm tên; đã bỏ vế "chứ không phải trông giống" và viết đúng mức Conrad nói. Quiz đổi "chứng tỏ não mã hóa" thành "cho thấy đa số người nhớ ... dưới dạng âm thanh".'
+    ghi_chu: 'Chữ cũ: "chứ không phải những chữ cái trông giống nhau ... Kết luận: dù thông tin đi vào bằng mắt, não vẫn chuyển nó thành mã âm thanh". Conrad không đặt phép so sánh trực tiếp với độ giống hình dạng của chữ cái, và nói "đa số người" nhẩm tên; đã bỏ vế "chứ không phải trông giống" và viết đúng mức Conrad nói. Quiz đổi "chứng tỏ não mã hóa" thành "cho thấy đa số người nhớ ... dưới dạng âm thanh". Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.2044-8295.1964.tb00899.x" ]
+    review: dung
   - id: n17
     cau: Mẫu lỗi khi nhớ lại trùng khớp với mẫu nhầm lẫn khi nghe các chữ cái trong tiếng ồn trắng (tương quan hạng +0,64).
     loai: so-lieu
@@ -287,10 +306,11 @@ nhan_dinh:
     trich: There was a large adverse effect of acoustic similarity on STM (72.5 per cent.) which was significantly greater (p < 0.001) than the small (6.3 per cent.) but reliable effect (p < 0.05) of semantic similarity.
     vi_tri: Baddeley 1966a, tóm tắt thí nghiệm I
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 1): "sự giống nhau về ý nghĩa thì không [ảnh hưởng]", DOI dẫn tới bài trí nhớ dài hạn. Chữ trên trang hiện: "chỉ ảnh hưởng chút ít", dẫn DOI …400055 (1966a). Đã mở toàn văn và đối chiếu.'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 1): "sự giống nhau về ý nghĩa thì không [ảnh hưởng]", DOI dẫn tới bài trí nhớ dài hạn. Chữ trên trang hiện: "chỉ ảnh hưởng chút ít", dẫn DOI …400055 (1966a). Đã mở toàn văn và đối chiếu. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
     luot_2_ghi_chu: Không mở Baddeley 1966 trực tiếp; đối chiếu qua B&H 1974.
+    review: dung
   - id: n20
     cau: 'Với trí nhớ dài hạn thì ngược lại: ý nghĩa mới là thứ gây nhầm lẫn.'
     loai: phat-hien
@@ -299,9 +319,10 @@ nhan_dinh:
     trich: Unlike STM, LTM proved to be impaired by semantic similarity but not by acoustic similarity
     vi_tri: Baddeley 1966b, tóm tắt
     ket_qua: da-sua
-    ghi_chu: theo G1-L01 (22/10/2026). Tách 1966a/1966b với DOI đúng (…400055 là trí nhớ ngắn hạn, …400047 là trí nhớ dài hạn); đã mở toàn văn cả hai.
+    ghi_chu: "theo G1-L01 (22/10/2026). Tách 1966a/1966b với DOI đúng (…400055 là trí nhớ ngắn hạn, …400047 là trí nhớ dài hạn); đã mở toàn văn cả hai. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn."
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
+    review: dung
   - id: n21
     cau: Baddeley, Thomson và Buchanan (1975) kiểm tra dự đoán rằng độ dài trí nhớ tính theo thời gian đọc các từ chứ không theo số từ.
     loai: phat-hien
@@ -350,42 +371,47 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
   - id: n25
-    cau: Khi bắt người tham gia lặp đi lặp lại một âm không liên quan trong lúc học (ức chế phát âm), hiệu ứng độ dài từ biến mất với tài liệu nhìn thấy nhưng vẫn còn với tài liệu nghe.
+    cau: Khi bắt người tham gia lặp đi lặp lại một âm không liên quan trong lúc học (ức chế phát âm), hiệu ứng độ dài từ biến mất với tài liệu nhìn thấy nhưng vẫn còn với tài liệu nghe; về sau Baddeley, Lewis và Vallar (1984) thấy hiệu ứng mất cả với tài liệu nghe nếu ức chế kéo dài sang cả lúc nhớ lại.
     loai: phat-hien
     nguon:
       - btb1975
-      - baddeley2021
-    trich: When articulation is suppressed by requiring the subject to articulate an irrelevant sound, the word length effect disappears with visual presentation, but remains when presentation is auditory.
-    vi_tri: Baddeley và cộng sự 1975, tóm tắt (4); thí nghiệm ức chế (người tham gia đếm đi đếm lại từ 1 đến 8)
+      - blv1984
+      - oberauer2018
+    trich: When articulation is suppressed by requiring the subject to articulate an irrelevant sound, the word length effect disappears with visual presentation, but remains when presentation is auditory. | the tendency for long words to be less well remembered than short is abolished by articulatory suppression, even when presentation is auditory, provided suppression occurs during both input and recall | articulatory suppression during presentation reduces or eliminates the word length effect with visual presentation but not with auditory presentation ... unless articulatory suppression also occurs during recall
+    vi_tri: Baddeley và cộng sự 1975, tóm tắt (4) và thí nghiệm VIII; Baddeley, Lewis & Vallar 1984, tóm tắt; Oberauer và cộng sự 2018, Benchmark 7, Boundary conditions
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "nói một âm vô nghĩa" (trang và quiz). Tóm tắt ghi "irrelevant sound" (âm không liên quan); thí nghiệm cụ thể cho người tham gia đếm từ một đến tám. Đã đổi "vô nghĩa" thành "không liên quan" và thêm vế "vẫn còn với tài liệu nghe".'
+    ghi_chu: 'Chữ cũ: "nói một âm vô nghĩa" (trang và quiz). Tóm tắt ghi "irrelevant sound" (âm không liên quan); thí nghiệm cụ thể cho người tham gia đếm từ một đến tám. Đã đổi "vô nghĩa" thành "không liên quan" và thêm vế "vẫn còn với tài liệu nghe". Review (Claude Opus 5.5, 09/11/2026): Câu về bài 1975 đúng (tóm tắt (4); thí nghiệm VII–VIII: người tham gia đếm 1–8 từ trước khi danh sách hiện đến hết danh sách, tức chỉ lúc học; trang đã ghi "trong lúc học"). Lượt 2 đúng ở chỗ thiếu điều kiện: Baddeley, Lewis & Vallar (1984, tóm tắt) và Oberauer và cộng sự (2018, toàn văn) ghi hiệu ứng mất cả với tài liệu nghe nếu ức chế kéo dài sang lúc nhớ lại. Đã thêm câu "Về sau, Baddeley, Lewis và Vallar (1984) thấy hiệu ứng mất cả với tài liệu nghe nếu ức chế kéo dài sang cả lúc nhớ lại." và mục nguồn tương ứng.'
     luot_2: khong-chac
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
     luot_2_ghi_chu: Tóm tắt thứ cấp (không mở được) của Baddeley, Lewis, Vallar 1984 cho rằng ức chế xóa hiệu ứng độ dài từ cả với trình bày nghe nếu ức chế ở cả lúc học và nhớ lại; câu "vẫn còn với tài liệu nghe" có thể sai hay thiếu điều kiện. Cần mở BTB 1975 và BLV 1984. Chỗ cần Opus xem.
+    review: sai
   - id: n26
     cau: Hiệu ứng độ dài từ là một trong những bằng chứng chính cho vòng lặp âm vị, dù cơ chế của nó còn được giải thích theo nhiều cách.
-    loai: nhan
+    loai: phat-hien
     nguon:
       - mattys2018
       - oberauer2018
     trich: While the syllabic word-length effect itself is robust (Tehan, Hendry, & Kocinski, 2001), its interpretation remains controversial. | The syllable-based word-length effect is a key finding for theories of verbal WM and has been observed consistently in various languages.
     vi_tri: Mattys và cộng sự 2018, phần mở đầu; Oberauer và cộng sự 2018, Benchmark 7
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Đây là bằng chứng ''khó cãi'' cho vòng lặp âm vị ... được kiểm tra và đúng". Chữ mới: "một trong những bằng chứng chính ... dù cơ chế vẫn được giải thích theo nhiều cách". Lý do: Mattys (2018) nói cách giải thích còn tranh cãi; Oberauer xếp hiệu ứng ở mức B.'
+    ghi_chu: 'Chữ cũ: "Đây là bằng chứng ''khó cãi'' cho vòng lặp âm vị ... được kiểm tra và đúng". Chữ mới: "một trong những bằng chứng chính ... dù cơ chế vẫn được giải thích theo nhiều cách". Lý do: Mattys (2018) nói cách giải thích còn tranh cãi; Oberauer xếp hiệu ứng ở mức B. Review (Claude Opus 5.5, 09/11/2026): Soát loại: câu ở thân bài, không phải khung nhãn, và hồ sơ không có nhan, co_so, ly_do: đổi loai từ nhan sang phat-hien (lượt 2 đã kiểm: dung). Oberauer 2018, Benchmark 7: hiệu ứng độ dài từ theo số âm tiết "robust", xếp B; Mattys 2018: cách giải thích còn tranh cãi. Câu khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
     luot_2_ghi_chu: Hiệu ứng có nhiều cách giải thích, khớp "dù cơ chế còn được giải thích nhiều cách".
+    review: dung
   - id: n27
     cau: Hai bệnh nhân mất trí nhớ nặng vẫn nhớ tốt một câu chuyện ngắn ngay sau khi nghe, dài hơn nhiều so với sức chứa của vòng lặp âm vị; điều này đòi hỏi một nơi "buộc" thông tin lại.
     loai: phat-hien
     nguon:
       - baddeley2021
+      - baddeley2000
     trich: We were also puzzled by data from two highly intelligent but densely amnesic patients who as expected scored zero on both the Rivermead Behavioral Memory Test and on the delayed prose recall of the WMS. Atypically however, they performed well on immediate recall of the short story component of the Rivermead test
     vi_tri: Baddeley 2021, mục bộ đệm tập
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "một số bệnh nhân mất trí nhớ ... vẫn nhớ được cả một câu chuyện dài hơn nhiều so với sức chứa". Theo Baddeley (2021): hai bệnh nhân, "câu chuyện ngắn" (phần truyện của bài Rivermead). Đã viết "hai bệnh nhân ... câu chuyện ngắn ngay sau khi nghe". Quiz câu 4 giữ ý tương tự (nói "bệnh nhân mất trí nhớ vẫn nhớ được cả câu chuyện dài hơn nhiều"): ghi lại cho review.'
+    ghi_chu: 'Chữ cũ: "một số bệnh nhân mất trí nhớ ... vẫn nhớ được cả một câu chuyện dài hơn nhiều so với sức chứa". Theo Baddeley (2021): hai bệnh nhân, "câu chuyện ngắn" (phần truyện của bài Rivermead). Đã viết "hai bệnh nhân ... câu chuyện ngắn ngay sau khi nghe". Quiz câu 4 giữ ý tương tự (nói "bệnh nhân mất trí nhớ vẫn nhớ được cả câu chuyện dài hơn nhiều"): ghi lại cho review. Review (Claude Opus 5.5, 09/11/2026): Baddeley 2021 (toàn văn PMC, mở lại): hai bệnh nhân mất trí nhớ nặng, điểm 0 ở bài Rivermead và nhớ lại văn xuôi trì hoãn, nhưng nhớ ngay phần truyện ngắn của bài Rivermead tốt (điểm 12 và 9,5); "How could our model of working memory hold an extended paragraph?". Baddeley 2000 (toàn văn, IA), mục Prose recall: một đoạn văn 15–20 ý, ở một số bệnh nhân mất trí nhớ nặng nhớ ngay có thể gần bình thường, vượt xa sức chứa giả định của các hệ phụ. Câu khớp.'
     luot_2: khong-chac
     luot_2_ghi_chu: Không mở được Baddeley 2000 và Baddeley & Wilson 2002; chỉ thấy tên bài. Con số "hai bệnh nhân" chưa kiểm.
+    review: dung
   - id: n28
     cau: 'Baddeley (2000) là bài lý thuyết: rà soát các hiện tượng mô hình ba thành phần chưa giải thích được rồi đề xuất thành phần thứ tư.'
     loai: lich-su
@@ -406,9 +432,10 @@ nhan_dinh:
     trich: It comprises a limited capacity system that provides temporary storage of information held in a multimodal code, which is capable of binding information from the subsidiary systems, and from long-term memory, into a unitary episodic representation.
     vi_tri: Baddeley 2000, tóm tắt
     ket_qua: dung
-    ghi_chu: theo G1-L01 (22/10/2026). Tóm tắt PubMed đã mở lại.
+    ghi_chu: "theo G1-L01 (22/10/2026). Tóm tắt PubMed đã mở lại. Review (Claude Opus 5.5, 09/11/2026): Đã mở toàn văn Baddeley 2000 (IA): tóm tắt và mục The episodic buffer khớp từng ý (dung lượng hạn chế, mã đa chiều, buộc thông tin từ các hệ phụ và trí nhớ dài hạn thành một biểu diễn thống nhất)."
     luot_2: khong-chac
     luot_2_ghi_chu: Không mở được Baddeley 2000.
+    review: dung
   - id: n30
     cau: Việc lấy thông tin ra khỏi bộ đệm được cho là diễn ra qua ý thức; ban đầu Baddeley giả định truy cập bộ đệm phụ thuộc cơ chế điều hành, về sau nhóm ông thấy cơ chế điều hành không bắt buộc.
     loai: phat-hien
@@ -418,9 +445,10 @@ nhan_dinh:
     trich: Conscious awareness is assumed to be the principal mode of retrieval from the buffer. | A final tentative proposal was that access to the buffer was dependent entirely on the central executive. ... the central executive is not essential for providing access
     vi_tri: Baddeley 2000, tóm tắt; Baddeley 2021, mục bộ đệm tập
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "nó phụ thuộc nhiều vào cơ chế điều hành trung ương" (G1 xếp phần này KHỚP, nhưng chính G1 ghi nhóm Baddeley về sau thấy điều hành không bắt buộc). Đã viết lại để nêu cả giả định ban đầu lẫn kết quả về sau, theo Baddeley (2021).'
+    ghi_chu: 'Chữ cũ: "nó phụ thuộc nhiều vào cơ chế điều hành trung ương" (G1 xếp phần này KHỚP, nhưng chính G1 ghi nhóm Baddeley về sau thấy điều hành không bắt buộc). Đã viết lại để nêu cả giả định ban đầu lẫn kết quả về sau, theo Baddeley (2021). Review (Claude Opus 5.5, 09/11/2026): Baddeley 2000 (toàn văn): "Conscious awareness is assumed to be the principal mode of retrieval from the buffer"; bộ đệm "assumed to be controlled by the central executive". Baddeley 2021 (toàn văn): "A final tentative proposal was that access to the buffer was dependent entirely on the central executive ... the central executive is not essential for providing access". Đủ cho câu; không cần mở Allen 2012.'
     luot_2: khong-chac
     luot_2_ghi_chu: Không mở được Baddeley 2000 và các bài nhóm sau (Allen 2012).
+    review: dung
   - id: n31
     cau: 'Hình "Mô hình trí nhớ làm việc (Baddeley)": cơ chế điều hành trung ương ("ông chủ" phân bổ chú ý) điều phối vòng lặp âm vị (âm thanh, lời nói), bảng phác họa (không gian–thị giác: hình ảnh, vị trí) và bộ đệm tập (buộc thành biểu diễn thống nhất).'
     loai: dinh-nghia
@@ -438,18 +466,21 @@ nhan_dinh:
     cau: 'Chú thích của hình: các ngăn trao đổi hai chiều với cơ chế điều hành trung ương.'
     loai: phat-hien
     nguon:
+      - baddeley2000
       - baddeley2021
-    trich: Evidence for the role of the phonological loop in long-term language acquisition leads to specifying a two way link between working memory and LTM.
-    vi_tri: Baddeley 2021, Hình 2 (liên kết hai chiều giữa các kho con và trí nhớ dài hạn)
-    ket_qua: null
-    ghi_chu: 'chưa chắc: Baddeley (2021) nói liên kết hai chiều giữa kho con và trí nhớ dài hạn, không nói rõ "hai chiều với cơ chế điều hành". Hình là của người giao (không sửa); đề nghị người giao sửa chú thích ("Các thành phần liên hệ với nhau và với trí nhớ dài hạn") hay xác nhận bằng Baddeley (2000), Hình 4.'
+    trich: "Hình 1 (The current version of the multi-component working memory model): mũi tên hai đầu nối Central executive với Visuospatial sketchpad, Episodic buffer và Phonological loop | The episodic buffer can be accessed by the central executive ... The executive can, furthermore, influence the content of the store"
+    vi_tri: Baddeley 2000, Hình 1 (tr. 421) và mục The episodic buffer
+    ket_qua: dung
+    ghi_chu: 'chưa chắc: Baddeley (2021) nói liên kết hai chiều giữa kho con và trí nhớ dài hạn, không nói rõ "hai chiều với cơ chế điều hành". Hình là của người giao (không sửa); đề nghị người giao sửa chú thích ("Các thành phần liên hệ với nhau và với trí nhớ dài hạn") hay xác nhận bằng Baddeley (2000), Hình 4. Review (Claude Opus 5.5, 09/11/2026): Đã dựng trang 421 của Baddeley (2000) thành ảnh và xem Hình 1: ba thành phần đều nối với cơ chế điều hành trung ương bằng mũi tên hai đầu. Chú thích "Các ngăn trao đổi hai chiều với cơ chế điều hành trung ương" khớp hình gốc; không sửa hình, không cần thêm vào HINH_DA_SUA. Hình của site bỏ tầng trí nhớ dài hạn (đã ghi minh họa ước lệ).'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
+    review: dung
   - id: n33
     cau: Sơ đồ trong hình là minh họa ước lệ, không theo tỉ lệ số liệu.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã xem src/hinh/baddeley-model.html: chú thích ghi đúng như vậy, không có số liệu.'
+    ghi_chu: 'Đã xem src/hinh/baddeley-model.html: chú thích ghi đúng như vậy, không có số liệu. Review (Claude Opus 5.5, 09/11/2026): Đã xem src/hinh/baddeley-model.html: figcaption mở đầu "Sơ đồ minh họa ước lệ, không theo tỉ lệ số liệu."; hình không có số liệu.'
+    review: dung
   - id: n34
     cau: 'Khung "Vững chắc": hai việc cùng "kênh" gây nhiễu cho nhau nhiều hơn hai việc khác kênh.'
     loai: nhan
@@ -459,10 +490,14 @@ nhan_dinh:
       - baddeley2021
     ly_do: 'Tổng quan 16 chuyên gia (Oberauer 2018) xếp "nhiễu nhiều hơn khi cùng lĩnh vực" (Benchmark 5.2.1) và "vẫn nhiễu, ít hơn, khi khác lĩnh vực" (5.2.2) ở mức A, quan sát được ở nhiều nhiệm vụ và chất liệu; Baddeley (2021) kể lại loạt thí nghiệm nhiệm vụ kép và nghiên cứu bệnh nhân. Thước đo mục 4: một tổng quan hệ thống chất lượng tốt, cùng chiều, không có thất bại tái lập lớn. Giới hạn nêu trên trang: khác kênh vẫn nhiễu.'
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (ý chính): "trí nhớ làm việc gồm nhiều thành phần riêng biệt", kèm "Mô hình ... có ảnh hưởng nhất trong lĩnh vực này", "50 năm". Lý do: khẳng định "gồm nhiều thành phần riêng biệt" là về lý thuyết (còn tranh luận: Cowan, tài nguyên chung); điều có bằng chứng vững là hiệu ứng cùng kênh/khác kênh. Đã đổi ý chính, nêu thêm khác kênh vẫn nhiễu, đổi "có ảnh hưởng nhất" thành "một trong những khung ... có ảnh hưởng nhất".'
+    ghi_chu: 'Chữ cũ (ý chính): "trí nhớ làm việc gồm nhiều thành phần riêng biệt", kèm "Mô hình ... có ảnh hưởng nhất trong lĩnh vực này", "50 năm". Lý do: khẳng định "gồm nhiều thành phần riêng biệt" là về lý thuyết (còn tranh luận: Cowan, tài nguyên chung); điều có bằng chứng vững là hiệu ứng cùng kênh/khác kênh. Đã đổi ý chính, nêu thêm khác kênh vẫn nhiễu, đổi "có ảnh hưởng nhất" thành "một trong những khung ... có ảnh hưởng nhất". Review (Claude Opus 5.5, 09/11/2026): Giữ Vững chắc. Oberauer và cộng sự 2018 là tổng quan đồng thuận của 16 chuyên gia trên Psychological Bulletin, tiêu chí chọn ghi rõ (phải tái lập được, tốt nhất ở nhiều phòng thí nghiệm; khái quát qua phương pháp, chất liệu, quần thể); Benchmark 5.2.1 và 5.2.2 xếp A vì thấy nhất quán ở miền lời nói, không gian, thị giác và nhiều mô hình thí nghiệm (complex span, serial recall, Brown-Peterson). Đạt thước đo mục 4 (tổng quan chất lượng tốt, cùng chiều, không có thất bại tái lập lớn). Lượt 2 đòi phân tích tổng hợp, nhưng thước đo chấp nhận tổng quan; khung đã nêu giới hạn (khác kênh vẫn nhiễu).'
     luot_2: khong-chac
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf", "https://doi.org/10.1017/S0140525X01003922" ]
     luot_2_ghi_chu: Không tìm phân tích tổng hợp hay tái lập lớn cho "cùng kênh nhiễu hơn khác kênh"; theo thước đo mục 4 thì Vững chắc cần chúng; nên hạ Khá vững hoặc nêu nguồn tổng hợp.
+    review: dung
+    nguon:
+      - oberauer2018
+      - baddeley2021
   - id: n35
     cau: 'Khung "Vững chắc": trí nhớ ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh của từ (giống âm thì nhớ kém, từ dài thì nhớ ít).'
     loai: nhan
@@ -474,10 +509,16 @@ nhan_dinh:
       - btb1975
     ly_do: 'Oberauer 2018: hiệu ứng tương tự âm thanh (Benchmark 8.1.1) xếp A; hiệu ứng độ dài từ (Benchmark 7) xếp B, vững và quan sát ở nhiều ngôn ngữ. Các bài gốc (Conrad 1964; Baddeley 1966a; Baddeley và cộng sự 1975) mô tả hiệu ứng. Cách giải thích (vòng lặp âm vị) còn tranh luận riêng với độ dài từ (Mattys 2018), nên khung chỉ khẳng định hiệu ứng, không khẳng định cơ chế.'
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "thông tin lời nói được giữ dưới dạng mã âm thanh"; "sức chứa dự đoán được từ tốc độ đọc trong 2 giây — rất khó giải thích nếu không có vòng lặp âm vị". Lý do: "rất khó giải thích" mạnh hơn bằng chứng (cách giải thích độ dài từ còn tranh cãi). Đã viết lại ý chính theo hiệu ứng quan sát được.'
+    ghi_chu: 'Chữ cũ: "thông tin lời nói được giữ dưới dạng mã âm thanh"; "sức chứa dự đoán được từ tốc độ đọc trong 2 giây — rất khó giải thích nếu không có vòng lặp âm vị". Lý do: "rất khó giải thích" mạnh hơn bằng chứng (cách giải thích độ dài từ còn tranh cãi). Đã viết lại ý chính theo hiệu ứng quan sát được. Review (Claude Opus 5.5, 09/11/2026): Giữ Vững chắc, không theo câu đề xuất của lượt 2. Khung khẳng định hiệu ứng, không khẳng định cơ chế: tương tự âm (Oberauer 2018, Benchmark 8.1.1, A; Conrad 1964; Baddeley 1966a) và độ dài từ theo số âm tiết (Benchmark 7: "robust", "observed consistently in various languages"; xếp B vì chỉ thuộc miền lời nói, không vì yếu). Chỗ còn tranh cãi là cơ chế và hiệu ứng theo thời lượng phát âm (n23, n26); thân khung đã nói rõ.'
     luot_2: qua-manh
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
     luot_2_ghi_chu: 'câu đúng: Khá vững: ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh (giống âm thì nhớ kém); hiệu ứng độ dài từ thấy được nhưng còn tranh cãi về cơ chế.; Giống âm làm nhớ kém rất vững; "từ dài thì nhớ ít" thì cơ chế và tính tổng quát còn tranh cãi (n26 trên cùng trang), chưa tìm tái lập lớn hay phân tích tổng hợp.'
+    review: dung
+    nguon:
+      - oberauer2018
+      - conrad1964
+      - baddeley1966a
+      - btb1975
   - id: n36
     cau: 'Khung "Khá vững": bộ đệm tập (episodic buffer).'
     loai: nhan
@@ -487,9 +528,13 @@ nhan_dinh:
       - baddeley2021
     ly_do: 'Đề xuất của Baddeley (2000), có thêm thực nghiệm (Baddeley 2021 kể lại: cơ chế điều hành không bắt buộc cho truy cập bộ đệm). Chưa có tổng quan hệ thống riêng cho riêng thành phần này trong hồ sơ; vai trò chính xác còn được làm rõ. Mức "khá vững" theo thước đo: nhiều nghiên cứu cùng chiều nhưng còn giới hạn.'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "được cộng đồng nghiên cứu chấp nhận rộng rãi". Đã viết "được nhiều nhà nghiên cứu dùng": không có nguồn đo mức chấp nhận.'
+    ghi_chu: 'Chữ cũ: "được cộng đồng nghiên cứu chấp nhận rộng rãi". Đã viết "được nhiều nhà nghiên cứu dùng": không có nguồn đo mức chấp nhận. Review (Claude Opus 5.5, 09/11/2026): Giữ Khá vững. Đã mở toàn văn Baddeley 2000: căn cứ gồm nhớ ngay đoạn văn ở bệnh nhân mất trí nhớ nặng, PV nhớ được 1 từ rời nhưng 5 từ trong câu, ảnh hưởng của độ giống hình ảnh lên nhớ lời, nhớ câu có nghĩa đến 16 từ; Baddeley 2021 kể loạt thí nghiệm nhiệm vụ kép sau đó (sửa giả định truy cập qua điều hành). Chưa có tổng quan hệ thống riêng, và mô hình cạnh tranh (Cowan) giải thích cùng hiện tượng bằng trí nhớ dài hạn được kích hoạt, nên không lên Vững chắc; chưa có bằng chứng chất lượng cao bác bỏ, nên không xuống Đang tranh cãi. Khung đã nêu bằng chứng trực tiếp ít hơn và vai trò còn được làm rõ.'
     luot_2: khong-chac
     luot_2_ghi_chu: Không mở được Baddeley 2000/2012/2021; chưa có phân tích tổng hợp trong tay để xác nhận Khá vững (có quan điểm Cowan/Oberauer không cần bộ đệm riêng). Cần Opus xem nhãn.
+    review: dung
+    nguon:
+      - baddeley2000
+      - baddeley2021
   - id: n37
     cau: 'Khung "Đang tranh cãi": giới hạn của bàn nháp là bao nhiêu, và bản chất của nó là gì.'
     loai: nhan
@@ -502,6 +547,12 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
+    ghi_chu: "Review (Claude Opus 5.5, 09/11/2026): Nhãn đạt thước đo mục 4: Cowan 2001 (toàn văn) đối lại Miller 1956 về con số, và hai hướng giải thích (ngăn riêng hay tâm điểm chú ý trên trí nhớ dài hạn kích hoạt) đều có bằng chứng chất lượng cao."
+    review: dung
+    nguon:
+      - cowan2001
+      - miller1956
+      - baddeley2021
   - id: n38
     cau: Cowan (2001) hiệu chỉnh con số 7 ± 2 của Miller xuống khoảng 4 "cục" thông tin khi loại bỏ các mẹo gom nhóm.
     loai: phat-hien
@@ -532,21 +583,24 @@ nhan_dinh:
     trich: working memory reflects the focus of attention on an activated portion of LTM
     vi_tri: Baddeley 2021, mục bộ đệm tập (tả mô hình Cowan 1988)
     ket_qua: da-lam-mem
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ: "thậm chí đề xuất không cần các ngăn riêng: trí nhớ làm việc chỉ là phần trí nhớ dài hạn đang được kích hoạt, cộng với tâm điểm chú ý"; chữ mới: "đề xuất một hướng khác: thay vì các ngăn riêng, ...". Lý do: Baddeley (2021) chỉ nói mô hình coi trí nhớ làm việc là tâm điểm chú ý trên phần được kích hoạt của trí nhớ dài hạn, và hai mô hình tương đồng; "không cần" là diễn giải mạnh. Trang dẫn Cowan (1999), chương sách chưa mở; Baddeley gán mô hình cho Cowan (1988).'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ: "thậm chí đề xuất không cần các ngăn riêng: trí nhớ làm việc chỉ là phần trí nhớ dài hạn đang được kích hoạt, cộng với tâm điểm chú ý"; chữ mới: "đề xuất một hướng khác: thay vì các ngăn riêng, ...". Lý do: Baddeley (2021) chỉ nói mô hình coi trí nhớ làm việc là tâm điểm chú ý trên phần được kích hoạt của trí nhớ dài hạn, và hai mô hình tương đồng; "không cần" là diễn giải mạnh. Trang dẫn Cowan (1999), chương sách chưa mở; Baddeley gán mô hình cho Cowan (1988). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
+    review: dung
   - id: n41
     cau: Bệnh nhân PV có vòng lặp âm vị bị tổn thương (trí nhớ dài hạn còn nguyên) học cặp từ tiếng mẹ đẻ bình thường nhưng gần như không học được từ mới của ngoại ngữ.
     loai: phat-hien
     nguon:
       - baddeley2021
+      - gb1989
       - bpv1988
-    trich: PV learned the pairs in her native language at a normal rate while completely failing to master any of a set of eight Italian-Russian pairs by the time all of the controls had learnt the whole set
-    vi_tri: Baddeley 2021, mục vòng lặp âm vị (kể lại Baddeley, Papagno & Vallar 1988)
+    trich: PV learned the pairs in her native language at a normal rate while completely failing to master any of a set of eight Italian-Russian pairs by the time all of the controls had learnt the whole set | although PV had a normal capacity for learning to associate pairs of meaningful words, she nevertheless was completely unable to learn associations between words and nonwords
+    vi_tri: Baddeley 2021, mục vòng lặp âm vị; Gathercole & Baddeley 1989, phần mở đầu (cả hai kể lại Baddeley, Papagno & Vallar 1988)
     ket_qua: dung
-    ghi_chu: theo G1-L01 (22/10/2026). Bài gốc 1988 chưa mở được; theo Baddeley (2021) kể lại.
+    ghi_chu: 'theo G1-L01 (22/10/2026). Bài gốc 1988 chưa mở được; theo Baddeley (2021) kể lại. Review (Claude Opus 5.5, 09/11/2026): Bài 1988 không có trong bộ IA, OpenAlex ghi đóng. Hai bài toàn văn của chính nhóm tác giả kể cùng kết quả (Baddeley 2021; Gathercole & Baddeley 1989: PV học cặp từ có nghĩa bình thường nhưng hoàn toàn không học được cặp từ–từ vô nghĩa). Câu trên trang ("gần như không học được từ mới của ngoại ngữ") khớp, mềm hơn "completely".'
     luot_2: khong-chac
     luot_2_ghi_chu: Không mở được Baddeley, Papagno & Vallar 1988.
+    review: dung
   - id: n42
     cau: 'Một giả thuyết có sức nặng: chức năng quan trọng của vòng lặp âm vị là giúp học ngôn ngữ.'
     loai: phat-hien
@@ -555,23 +609,26 @@ nhan_dinh:
     trich: This provided clear support to the hypothesis of the phonological loop as a language learning device.
     vi_tri: Baddeley 2021, mục vòng lặp âm vị
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "vòng lặp âm vị tiến hóa để phục vụ học ngôn ngữ". Lý do: nguồn nói giả thuyết về chức năng ("language learning device"), không nói về tiến hóa; đã viết lại.'
+    ghi_chu: 'Chữ cũ: "vòng lặp âm vị tiến hóa để phục vụ học ngôn ngữ". Lý do: nguồn nói giả thuyết về chức năng ("language learning device"), không nói về tiến hóa; đã viết lại. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0012-1649.28.5.887" ]
     luot_2_ghi_chu: Câu hedge "giả thuyết có sức nặng"; Gathercole 1992 ủng hộ phần nào nhưng quan hệ về sau hai chiều.
+    review: dung
   - id: n43
-    cau: Ở trẻ em, khả năng lặp lại một từ vô nghĩa vừa nghe có liên quan chặt với vốn từ vựng và dự báo vốn từ một năm sau chứ không phải ngược lại.
+    cau: "Ở trẻ 4–5 tuổi, khả năng lặp lại từ vô nghĩa vừa nghe tương quan chặt với vốn từ và dự báo vốn từ một năm sau (Gathercole và Baddeley, 1989); từ khoảng 5 tuổi trở đi chiều ngược lại trội hơn: vốn từ dẫn dắt mối quan hệ (Gathercole và cộng sự, 1992)."
     loai: phat-hien
     nguon:
-      - baddeley2021
       - gb1989
-    trich: Here we found a robust association between our non-word repetition test and vocabulary ... A longitudinal study suggested that this was driven initially by phonological loop capacity with our non-word recognition test predicting vocabulary a year later rather than the reverse.
-    vi_tri: Baddeley 2021, mục vòng lặp âm vị (kể lại Gathercole & Baddeley 1989)
+      - gathercole1992
+      - baddeley2021
+    trich: the vocabulary skills of 104 children entering school between the ages of 4 and 5 were tested and retested 1 year later ... The phonological memory score was highly correlated with vocabulary at both age 4 (r = .525) and age 5 (r = .572) ... Phonological memory at age 4 also accounted for a significant amount of variance in vocabulary score at age 5, over and above that accounted for by the vocabulary score the previous year. | Between 4 and 5 years, phonological memory skills appeared to exert a direct causal influence on vocabulary acquisition. Subsequently, though, vocabulary knowledge became the major pacemaker in the developmental relationship
+    vi_tri: Gathercole & Baddeley 1989, tóm tắt; Gathercole và cộng sự 1992, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "năng lực lặp lại âm thanh dự báo tốt khả năng học từ vựng, tốt hơn cả chỉ số thông minh chung" (G1: không có nguồn trong bài). Vế "tốt hơn cả chỉ số thông minh chung" không kiểm được (bài gốc 1989 chưa mở) nên bỏ; vế còn lại viết theo Baddeley (2021).'
+    ghi_chu: 'Chữ cũ: "năng lực lặp lại âm thanh dự báo tốt khả năng học từ vựng, tốt hơn cả chỉ số thông minh chung" (G1: không có nguồn trong bài). Vế "tốt hơn cả chỉ số thông minh chung" không kiểm được (bài gốc 1989 chưa mở) nên bỏ; vế còn lại viết theo Baddeley (2021). Review (Claude Opus 5.5, 09/11/2026): Lượt 2 đúng: câu cũ viết như đúng cho mọi trẻ em. Đã mở toàn văn hai bài (IA). Chữ cũ: "Ở trẻ em, ... dự báo vốn từ một năm sau chứ không phải ngược lại (theo Baddeley, 2021, kể lại nghiên cứu của Gathercole và Baddeley, 1989)". Chữ mới: "Ở trẻ 4–5 tuổi, ... dự báo vốn từ một năm sau (Gathercole và Baddeley, 1989). Từ khoảng 5 tuổi trở đi thì chiều ngược lại trội hơn: vốn từ trở thành yếu tố dẫn dắt mối quan hệ này (Gathercole và cộng sự, 1992)". Thêm Gathercole và cộng sự (1992) vào mục Nguồn.'
     luot_2: qua-manh
     luot_2_nguon: [ "https://doi.org/10.1037/0012-1649.28.5.887" ]
     luot_2_ghi_chu: "câu đúng: Ở trẻ 4 đến 5 tuổi, khả năng lặp từ vô nghĩa dự báo vốn từ một năm sau; từ khoảng 5 tuổi trở đi chiều ngược lại (vốn từ dẫn dắt) trội hơn.; Câu viết như đúng cho mọi trẻ em."
+    review: sai
   - id: n44
     cau: 'Một cách giải thích (còn tranh luận) cho việc có nhiều ngăn là góc nhìn tài nguyên: hai việc cùng kênh tranh nhau cùng nguồn tài nguyên, hai việc khác kênh dùng nguồn khác.'
     loai: phat-hien
@@ -580,9 +637,10 @@ nhan_dinh:
     trich: The observation of more severe memory disruption when memory and processing items pertain to the same domain, together with the observation of memory disruption even when processing pertains to another domain, is theoretically relevant for resource theories of WM (e.g., supporting the existence of domain-specific vs. domain-general resources)
     vi_tri: Oberauer và cộng sự 2018, Benchmark 5.2.2
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Góc nhìn tài nguyên: chú ý là tài nguyên hạn chế ...". Đã thêm "một cách giải thích (còn tranh luận)": Oberauer nói có hai cách giải thích cạnh tranh (tài nguyên riêng theo lĩnh vực hay tài nguyên chung).'
+    ghi_chu: 'Chữ cũ: "Góc nhìn tài nguyên: chú ý là tài nguyên hạn chế ...". Đã thêm "một cách giải thích (còn tranh luận)": Oberauer nói có hai cách giải thích cạnh tranh (tài nguyên riêng theo lĩnh vực hay tài nguyên chung). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf", "https://doi.org/10.1017/S0140525X01003922" ]
+    review: dung
   - id: n45
     cau: Dù con số chính xác còn tranh cãi (7 ± 2 hay 4 ± 1), các bên đều thừa nhận giới hạn của trí nhớ làm việc rất nhỏ so với lượng thông tin ta gặp mỗi ngày.
     loai: phat-hien
@@ -592,9 +650,10 @@ nhan_dinh:
     trich: people can remember about seven chunks in short-term memory (STM) tasks ... the smaller capacity limit is real
     vi_tri: Cowan 2001, tóm tắt; Miller 1956
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "không ai tranh cãi"; đã đổi thành "các bên đều thừa nhận"; đã bỏ câu "giới hạn này không phải lỗi thiết kế mà là đặc điểm — buộc não phải chọn lọc" (khẳng định về mục đích tiến hóa, không có nguồn; da-bo).'
+    ghi_chu: 'Chữ cũ: "không ai tranh cãi"; đã đổi thành "các bên đều thừa nhận"; đã bỏ câu "giới hạn này không phải lỗi thiết kế mà là đặc điểm — buộc não phải chọn lọc" (khẳng định về mục đích tiến hóa, không có nguồn; da-bo). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922", "https://psychclassics.yorku.ca/Miller/" ]
+    review: dung
   - id: n46
     cau: Nhẩm lại là cách dùng đúng vòng lặp âm vị; vừa giữ số vừa nghe ai đó nói hoặc nghe bài hát có lời gây xung đột.
     loai: loi-khuyen
@@ -617,6 +676,10 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf", "https://doi.org/10.1017/S0140525X01003922" ]
     luot_2_ghi_chu: Khá vững hợp lý.
+    ghi_chu: "Review (Claude Opus 5.5, 09/11/2026): Benchmark 6.1 xếp B; tình huống đời thực là suy ra: Khá vững hợp."
+    review: dung
+    nguon:
+      - oberauer2018
   - id: n48
     cau: Bàn nháp chỉ giữ được vài "cục" thông tin (khoảng 4); từ đó suy ra nên đưa việc quan trọng ra khỏi đầu bằng ghi chú, nhắc nhở.
     loai: loi-khuyen
@@ -625,9 +688,10 @@ nhan_dinh:
     trich: A single, central capacity limit averaging about four chunks is implicated
     vi_tri: Cowan 2001, tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "chỉ giữ được vài cục thông tin trong vài chục giây ... hãy đưa ra khỏi đầu càng sớm càng tốt ... cách dùng đúng". Bỏ "vài chục giây" (không có nguồn trong hồ sơ), thêm "suy ra từ giới hạn dung lượng, không phải kết quả của một thử nghiệm riêng về ghi chú".'
+    ghi_chu: 'Chữ cũ: "chỉ giữ được vài cục thông tin trong vài chục giây ... hãy đưa ra khỏi đầu càng sớm càng tốt ... cách dùng đúng". Bỏ "vài chục giây" (không có nguồn trong hồ sơ), thêm "suy ra từ giới hạn dung lượng, không phải kết quả của một thử nghiệm riêng về ghi chú". Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
+    review: dung
   - id: n49
     cau: 'Tiêu đề lời khuyên 2 (viết ra thay vì giữ trong đầu): Khá vững.'
     loai: nhan
@@ -639,18 +703,23 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
     luot_2_ghi_chu: Khá vững hợp lý cho lời khuyên suy từ giới hạn; không có nghiên cứu "ghi chú" trực tiếp đã mở.
+    ghi_chu: "Review (Claude Opus 5.5, 09/11/2026): Lời khuyên suy ra từ giới hạn dung lượng, trang ghi rõ không có thử nghiệm riêng: Khá vững hợp."
+    review: dung
+    nguon:
+      - cowan2001
   - id: n50
-    cau: Vừa nghe giảng vừa đọc tin nhắn (cùng kênh ngôn ngữ) gây nhiễu nhau; nghe nhạc không lời thường ít gây hại hơn với việc hình ảnh, nhưng với việc đòi hỏi ngôn ngữ nhạc không lời cũng có thể gây nhiễu nhẹ.
+    cau: Vừa nghe giảng vừa đọc tin nhắn (cùng kênh ngôn ngữ) gây xung đột; nghe nhạc không lời trong lúc làm việc hình ảnh thường ít gây hại hơn vì nhiễu do âm thanh chủ yếu thấy ở việc ghi nhớ bằng lời; nhưng với việc phải nhớ chữ hay số theo đúng thứ tự, ngay cả nhạc không lời cũng có thể làm nhớ kém đi.
     loai: loi-khuyen
     nguon:
       - oberauer2018
-    trich: it has also been observed with non-speech sounds such as tones (Jones & Macken, 1993) or instrumental music (e.g., Klatte, Kilcher, & Hellbrück, 1995; Salamé & Baddeley, 1989 ...) | The disruption of memory caused by concurrent processing of distractors is less serious, but still present, when the memory items and distractors come from different domains
-    vi_tri: Oberauer và cộng sự 2018, Benchmark 6.1 và 5.2.2
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "ngăn âm thanh-ngôn ngữ"; đổi thành "kênh ngôn ngữ". "Việc hình ảnh thường ít gây hại hơn" suy ra từ Benchmark 5.2.2 (khác kênh vẫn nhiễu, ít hơn); Benchmark 6.1 cho thấy âm thanh không liên quan còn có thể ảnh hưởng một số nhiệm vụ thị giác–không gian. "Quy tắc ngón tay cái" nay ghi rõ là suy ra.'
+    trich: Serial recall of the list is poorer when during encoding or during the retention interval participants are exposed to auditory material that they are supposed to ignore ... it has also been observed with non-speech sounds such as tones ... or instrumental music | The irrelevant sound effect has been predominantly observed with verbal memory materials ... and in a visuospatial WM task (a few studies) | its replicability and robustness hold, so far, only for verbal WM tasks with a strong serial-order component | the disruption of memory caused by concurrent processing of distractors is substantial when the memory items and distractors come from the same content domain
+    vi_tri: Oberauer và cộng sự 2018, Benchmark 6.1 và 5.2.1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ngăn âm thanh-ngôn ngữ"; đổi thành "kênh ngôn ngữ". "Việc hình ảnh thường ít gây hại hơn" suy ra từ Benchmark 5.2.2 (khác kênh vẫn nhiễu, ít hơn); Benchmark 6.1 cho thấy âm thanh không liên quan còn có thể ảnh hưởng một số nhiệm vụ thị giác–không gian. "Quy tắc ngón tay cái" nay ghi rõ là suy ra. Review (Claude Opus 5.5, 09/11/2026): Chữ cũ: "Ngược lại, nghe nhạc không lời trong lúc làm việc hình ảnh thường ít gây hại hơn — dù với việc đòi hỏi ngôn ngữ, ngay cả nhạc không lời cũng có thể gây nhiễu nhẹ". "Việc đòi hỏi ngôn ngữ" rộng hơn nguồn (hiệu ứng âm thanh không liên quan chỉ vững ở việc nhớ lời có thành phần thứ tự) và "nhẹ" không có nguồn (âm thanh có biến đổi về thời gian, phổ như nhạc gây nhiễu rõ). Chữ mới: "Nghe nhạc không lời trong lúc làm việc hình ảnh thường ít gây hại hơn, vì nhiễu do âm thanh chủ yếu thấy ở các việc ghi nhớ bằng lời. Nhưng với việc phải nhớ chữ hay số theo đúng thứ tự, ngay cả nhạc không lời cũng có thể làm nhớ kém đi." Lượt 2 không mở được nguồn cho phần nhạc: Oberauer 2018 toàn văn có.'
     luot_2: khong-chac
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
     luot_2_ghi_chu: Phần nghe giảng + đọc tin nhắn khớp B&H; phần nhạc không lời (hiệu ứng lời nói không liên quan) không có nguồn mở được.
+    review: sai
   - id: n51
     cau: 'Tiêu đề lời khuyên 3 (đừng bắt hai việc cùng kênh chạy song song): Khá vững.'
     loai: nhan
@@ -661,6 +730,10 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
+    ghi_chu: "Review (Claude Opus 5.5, 09/11/2026): Nhiễu cùng kênh xếp A (Benchmark 5.2.1); phần nhạc không lời giới hạn ở nhớ lời theo thứ tự (6.1, B): Khá vững hợp."
+    review: dung
+    nguon:
+      - oberauer2018
   - id: n52
     cau: Gom nhóm biến nhiều ký tự thành ít "cục", giúp nhớ được nhiều ký tự hơn; ví dụ dãy 0912345678 (10 ký tự) gom thành 0912–345–678 là 3 cục.
     loai: loi-khuyen
@@ -670,10 +743,11 @@ nhan_dinh:
     trich: Since the memory span is a fixed number of chunks, we can increase the number of bits of information that it contains simply by building larger and larger chunks, each chunk containing more information than before.
     vi_tri: Miller 1956, mục Recoding
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ có thêm: "Số điện thoại, số tài khoản, mật khẩu đều được thiết kế (vô tình hay hữu ý) theo nguyên tắc này". Bỏ vế mật khẩu và "thiết kế" (không nguồn); đổi thành "Số điện thoại và số tài khoản thường được viết thành nhóm, đúng tinh thần này" (nhận xét về cách viết, gia-dinh). Phép tính 4+3+3 = 10 ký tự, 3 nhóm đúng.'
+    ghi_chu: 'Chữ cũ có thêm: "Số điện thoại, số tài khoản, mật khẩu đều được thiết kế (vô tình hay hữu ý) theo nguyên tắc này". Bỏ vế mật khẩu và "thiết kế" (không nguồn); đổi thành "Số điện thoại và số tài khoản thường được viết thành nhóm, đúng tinh thần này" (nhận xét về cách viết, gia-dinh). Phép tính 4+3+3 = 10 ký tự, 3 nhóm đúng. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://psychclassics.yorku.ca/Miller/" ]
     luot_2_ghi_chu: Phép đếm 4+3+3 = 10 ký tự, 3 cục.
+    review: dung
   - id: n53
     cau: 'Tiêu đề lời khuyên 4 (gom nhóm): Khá vững.'
     loai: nhan
@@ -685,11 +759,17 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://psychclassics.yorku.ca/Miller/", "https://doi.org/10.1017/S0140525X01003922" ]
+    ghi_chu: "Review (Claude Opus 5.5, 09/11/2026): Gom nhóm có từ Miller 1956, Cowan 2001 tách giới hạn theo cục; chưa có tổng quan riêng cho lợi ích thực hành: Khá vững hợp."
+    review: dung
+    nguon:
+      - miller1956
+      - cowan2001
   - id: n54
-    cau: Trang trai-nghiem/do-dai-tri-nho là công cụ đo độ dài trí nhớ chữ số (nhớ xuôi và nhớ ngược).
+    cau: Trang trai-nghiem/do-dai-tri-nho (công cụ đo độ dài trí nhớ chữ số, nhớ xuôi và nhớ ngược) có trong trang.yml nhưng chưa lên site; trang viết "Khi công cụ ... lên site, bạn có thể tự đo cả nhớ xuôi lẫn nhớ ngược".
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: 'Đã kiểm src/data/trang.yml: id trai-nghiem/do-dai-tri-nho, tang cong-cu, linh_vuc tri-nho. Chưa có file src/content/docs/trai-nghiem/do-dai-tri-nho.md (chỉ có stroop.md), nên link hiện thành chữ "sắp có" cho đến khi công cụ lên; câu "Site có công cụ" đúng khi công cụ lên. Người giao xem có đổi sang "sẽ có" không. Phần "bạn sẽ thấy con số của mình nằm đâu so với nghiên cứu" nói về nội dung công cụ chưa có: ghi lại để kiểm khi công cụ lên.'
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm src/data/trang.yml: id trai-nghiem/do-dai-tri-nho, tang cong-cu, linh_vuc tri-nho. Chưa có file src/content/docs/trai-nghiem/do-dai-tri-nho.md (chỉ có stroop.md), nên link hiện thành chữ "sắp có" cho đến khi công cụ lên; câu "Site có công cụ" đúng khi công cụ lên. Người giao xem có đổi sang "sẽ có" không. Phần "bạn sẽ thấy con số của mình nằm đâu so với nghiên cứu" nói về nội dung công cụ chưa có: ghi lại để kiểm khi công cụ lên. Review (Claude Opus 5.5, 09/11/2026): Đã kiểm: src/data/trang.yml có id trai-nghiem/do-dai-tri-nho (tang cong-cu); src/content/docs/trai-nghiem/ chỉ có stroop.md, nên link hiện thành "sắp có". Câu cũ "Site có công cụ ... Thử làm rồi đọc phần giải thích: bạn sẽ thấy con số của mình nằm đâu so với nghiên cứu, và vì sao 7 ± 2 không hẳn đúng với mọi người" sai lúc này và tả nội dung một công cụ chưa có. Chữ mới: "Khi công cụ [đo độ dài trí nhớ chữ số] lên site, bạn có thể tự đo cả nhớ xuôi lẫn nhớ ngược." (trang công cụ ở site cũ có đo xuôi, ngược). Bỏ chip :nhan[kha-vung] của tiêu đề mục 5: không có nhận định loại nhan nào cho nó, mục chỉ là lời dẫn tới công cụ và một định nghĩa; giữ id cũ { #5-tu-do-ban-nhap-cua-minh-kha-vung } (id của site cũ trong .cache/site-cu).'
+    review: sai
   - id: n55
     cau: 'Vì sao "7 ± 2" không hẳn đúng với mọi người: đó là ước lượng ban đầu của Miller, thực chất là giới hạn gộp khi chưa chặn gom nhóm.'
     loai: phat-hien
@@ -697,10 +777,11 @@ nhan_dinh:
       - cowan2001
     trich: The present stance is that the number seven estimates a commonly obtained, compound capacity limit, rather than a pure capacity limit in which chunking has been eliminated.
     vi_tri: Cowan 2001, mục 4.3.1
-    ket_qua: dung
-    ghi_chu: Phần "vì sao 7 ± 2 không hẳn đúng" của đoạn công cụ; trùng nội dung nhận định Cowan 2001 ở trên.
+    ket_qua: da-bo
+    ghi_chu: 'Phần "vì sao 7 ± 2 không hẳn đúng" của đoạn công cụ; trùng nội dung nhận định Cowan 2001 ở trên. Review (Claude Opus 5.5, 09/11/2026): Câu đúng nguồn (Cowan 2001), nhưng nó tả phần giải thích của công cụ chưa có; đã bỏ cùng câu dẫn công cụ (n54). Ý "7 ± 2 là giới hạn gộp" vẫn có ở mục Ngộ nhận (n64).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922", "https://psychclassics.yorku.ca/Miller/" ]
+    review: dung
   - id: n56
     cau: Nhớ ngược đòi hỏi vừa giữ vừa đảo thứ tự (xử lý), nên gần với nghĩa "làm việc" của trí nhớ làm việc hơn nhớ xuôi.
     loai: dinh-nghia
@@ -709,9 +790,10 @@ nhan_dinh:
     trich: the essence of working memory is the capacity to maintain information while simultaneously processing it
     vi_tri: Baddeley 2021, mục tác nhân điều hành (kể lại Daneman & Carpenter 1980)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Nhớ ngược khó hơn vì nó đòi hỏi cả giữ lẫn xử lý" (khẳng định mức độ khó hơn, không nguồn trong hồ sơ). Đã bỏ "khó hơn vì", giữ định nghĩa.'
+    ghi_chu: 'Chữ cũ: "Nhớ ngược khó hơn vì nó đòi hỏi cả giữ lẫn xử lý" (khẳng định mức độ khó hơn, không nguồn trong hồ sơ). Đã bỏ "khó hơn vì", giữ định nghĩa. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
+    review: dung
   - id: n57
     cau: Mô hình của Baddeley và Hitch được xây dựng và kiểm tra chủ yếu ở Anh, Mỹ và châu Âu.
     loai: lich-su
@@ -720,9 +802,10 @@ nhan_dinh:
     trich: The three components comprised the Central Executive ... Work on the model started in Sussex, continued through a very fruitful 2-year period at the University of Stirling and was finally published from the APU in Cambridge
     vi_tri: Baddeley 2021, mục thí nghiệm nhiệm vụ kép
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "xây dựng và kiểm tra chủ yếu ở Anh, Mỹ và châu Âu" (nhận định chung, không đếm được). Đã thu hẹp: mô hình ra đời ở Anh (Sussex, Stirling, Cambridge theo Baddeley 2021); các nghiên cứu nền tảng kể trên là của nhóm ở Anh (Conrad, Baddeley, Mattys) và Mỹ (Cowan).'
+    ghi_chu: 'Chữ cũ: "xây dựng và kiểm tra chủ yếu ở Anh, Mỹ và châu Âu" (nhận định chung, không đếm được). Đã thu hẹp: mô hình ra đời ở Anh (Sussex, Stirling, Cambridge theo Baddeley 2021); các nghiên cứu nền tảng kể trên là của nhóm ở Anh (Conrad, Baddeley, Mattys) và Mỹ (Cowan). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf", "https://doi.org/10.1111/j.2044-8295.1964.tb00899.x" ]
+    review: dung
   - id: n58
     cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra trực tiếp mô hình này trên người Việt.
     loai: thoi-su
@@ -730,10 +813,11 @@ nhan_dinh:
     nguon:
       - tim-kiem-vn
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy ..." (không mốc). Đã thêm "Tính đến 11/2026". Lần tìm 09/11/2026 trên OpenAlex (ba truy vấn; mỗi truy vấn xem 8 kết quả đầu): không có bài kiểm tra mô hình Baddeley trên người Việt; có dữ liệu chuẩn digit span ở người Việt cho đánh giá lâm sàng (2023, 2025) và nghiên cứu về học ngoại ngữ ở người học Việt. Chưa tìm Google Scholar hay tạp chí trong nước.'
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy ..." (không mốc). Đã thêm "Tính đến 11/2026". Lần tìm 09/11/2026 trên OpenAlex (ba truy vấn; mỗi truy vấn xem 8 kết quả đầu): không có bài kiểm tra mô hình Baddeley trên người Việt; có dữ liệu chuẩn digit span ở người Việt cho đánh giá lâm sàng (2023, 2025) và nghiên cứu về học ngoại ngữ ở người học Việt. Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works?search=working%20memory%20Vietnamese" ]
     luot_2_ghi_chu: Câu có từ "trực tiếp", nên đúng; không có link bài đã mở ngoài tìm kiếm.
+    review: dung
   - id: n59
     cau: Độ dài trí nhớ chữ số khác nhau giữa các ngôn ngữ, một phần vì thời gian đọc các chữ số (người song ngữ xứ Wales nhớ được nhiều chữ số tiếng Anh hơn chữ số tiếng Wales, vốn dài hơn), dù thời gian phát âm không giải thích được hết.
     loai: phat-hien
@@ -742,9 +826,10 @@ nhan_dinh:
     trich: Ellis and Hennelly (1980) pointed out the potential importance of the word-length effect for the practical question of comparing digit spans across languages, demonstrating that bilingual Welsh speakers had a longer span in English than in Welsh, a language that has syllabically longer digits. | Further analysis suggested that speed of rehearsal did not provide an adequate account of differences between Mandarin and English spans or for the advantage of digits over words.
     vi_tri: Mattys và cộng sự 2018, phần mở đầu và tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 4): "vì vòng lặp âm vị hoạt động theo thời gian phát âm, độ dài trí nhớ chữ số phụ thuộc vào ngôn ngữ. Chữ số tiếng Việt phần lớn là một âm tiết đọc nhanh". Chữ trên trang hiện khớp đề xuất của G1; đã mở toàn văn Mattys (2018).'
+    ghi_chu: 'theo G1-L01 (22/10/2026). Chữ cũ (G1, mục 4): "vì vòng lặp âm vị hoạt động theo thời gian phát âm, độ dài trí nhớ chữ số phụ thuộc vào ngôn ngữ. Chữ số tiếng Việt phần lớn là một âm tiết đọc nhanh". Chữ trên trang hiện khớp đề xuất của G1; đã mở toàn văn Mattys (2018). Review (Claude Opus 5.5, 09/11/2026): Mattys và cộng sự 2018 (toàn văn PMC, mở lại) kể Ellis & Hennelly (1980): người song ngữ xứ Wales có độ dài nhớ chữ số tiếng Anh dài hơn tiếng Wales, ngôn ngữ có chữ số nhiều âm tiết hơn; cùng bài dẫn Murray & Jones (2002): khác biệt Wales–Anh không do thời gian đọc từng chữ số mà do nối âm giữa các từ; tóm tắt: tốc độ nhẩm không giải thích đủ khác biệt Quan thoại–Anh. "Một phần vì thời gian đọc ..., dù thời gian phát âm không giải thích được hết" khớp. Bài 1980 không có trong bộ IA; câu dẫn theo Mattys (bậc 1, kể lại), đủ.'
     luot_2: khong-chac
     luot_2_ghi_chu: Không mở được Ellis & Hennelly 1980; chỉ thấy luận văn dẫn kết quả "digit span lower ... translation required". Chưa xác nhận "tiếng Wales dài hơn" và "thời gian phát âm không giải thích hết".
+    review: dung
   - id: n60
     cau: Vì vậy, theo suy luận từ các kết quả trên, không nên lấy chuẩn của người nói tiếng Anh áp thẳng cho người nói ngôn ngữ khác, kể cả tiếng Việt, và ngược lại; công cụ đo trên site chỉ nên dùng để tự khám phá, không so máy móc với chuẩn nước ngoài.
     loai: phat-hien
@@ -753,9 +838,10 @@ nhan_dinh:
     trich: Ellis and Hennelly (1980) pointed out the potential importance of the word-length effect for the practical question of comparing digit spans across languages
     vi_tri: Mattys và cộng sự 2018, phần mở đầu
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Chữ số tiếng Việt đều là từ một âm tiết, nên không thể lấy chuẩn của người nói tiếng Anh áp thẳng cho người Việt" (G1 xếp ĐÁNG NGỜ). Đã bỏ khẳng định về chữ số tiếng Việt (không nguồn trong hồ sơ), thêm "theo suy luận từ các kết quả trên" và nguồn Mattys (2018). Vế về công cụ là khuyến nghị của site.'
+    ghi_chu: 'Chữ cũ: "Chữ số tiếng Việt đều là từ một âm tiết, nên không thể lấy chuẩn của người nói tiếng Anh áp thẳng cho người Việt" (G1 xếp ĐÁNG NGỜ). Đã bỏ khẳng định về chữ số tiếng Việt (không nguồn trong hồ sơ), thêm "theo suy luận từ các kết quả trên" và nguồn Mattys (2018). Vế về công cụ là khuyến nghị của site. Review (Claude Opus 5.5, 09/11/2026): Là suy luận, trang ghi rõ "theo suy luận từ các kết quả trên"; Mattys 2018 nêu chính ý này khi kể Ellis & Hennelly ("the practical question of comparing digit spans across languages"; tên bài 1980 có "Implications for intelligence testing"). Vế công cụ là khuyến nghị của site.'
     luot_2: khong-chac
     luot_2_ghi_chu: Suy diễn từ n59 chưa kiểm.
+    review: dung
   - id: n61
     cau: Mô hình một ngăn (như mô hình đa kho của Atkinson và Shiffrin, 1968) không giải thích được vì sao hai việc khác kênh ít gây nhiễu nhau hơn hai việc cùng kênh; nhiều bằng chứng ủng hộ các ngăn chuyên biệt, dù cách giải thích còn bàn cãi.
     loai: phat-hien
@@ -765,9 +851,10 @@ nhan_dinh:
     trich: prompting us to revise our views of STM, abandoning the assumption of a simple unitary store and replacing it with a three component model | The STS was assumed to act as working memory, being responsible not only for holding information while it is transferred to LTM, but also for performing a range of control processes
     vi_tri: Baddeley 2021, mục mô hình đa kho và thí nghiệm nhiệm vụ kép
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Bằng chứng 50 năm qua ủng hộ nhiều ngăn chuyên biệt". Đã đổi thành "nhiều bằng chứng ... dù cách giải thích còn bàn cãi". Atkinson & Shiffrin (1968) chưa mở; theo Baddeley (2021) kể lại.'
+    ghi_chu: 'Chữ cũ: "Bằng chứng 50 năm qua ủng hộ nhiều ngăn chuyên biệt". Đã đổi thành "nhiều bằng chứng ... dù cách giải thích còn bàn cãi". Atkinson & Shiffrin (1968) chưa mở; theo Baddeley (2021) kể lại. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
+    review: dung
   - id: n62
     cau: Giới hạn của trí nhớ làm việc là đặc điểm chung của mọi người, không phải dấu hiệu của trí nhớ kém; gom nhóm giúp nhớ được nhiều ký tự hơn (Miller, 1956); ghi chú giúp khỏi phải giữ trong đầu.
     loai: phat-hien
@@ -777,10 +864,11 @@ nhan_dinh:
     trich: we can increase the number of bits of information that it contains simply by building larger and larger chunks | A single, central capacity limit averaging about four chunks is implicated
     vi_tri: Miller 1956, mục Recoding; Cowan 2001, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "thiên tài cũng không giữ được 20 chữ số rời rạc trong đầu. Khác biệt giữa người với người nằm ở cách họ dùng chiến lược ..., không phải ở kích thước hộp". Hai vế không có nguồn (và Cowan 2001 thấy giới hạn trung bình khoảng 4 nhưng có khác biệt giữa người), nên bỏ.'
+    ghi_chu: 'Chữ cũ: "thiên tài cũng không giữ được 20 chữ số rời rạc trong đầu. Khác biệt giữa người với người nằm ở cách họ dùng chiến lược ..., không phải ở kích thước hộp". Hai vế không có nguồn (và Cowan 2001 thấy giới hạn trung bình khoảng 4 nhưng có khác biệt giữa người), nên bỏ. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://psychclassics.yorku.ca/Miller/", "https://doi.org/10.1017/S0140525X01003922" ]
     luot_2_ghi_chu: Phần ghi chú là suy diễn hợp lý.
+    review: dung
   - id: n63
     cau: Hai việc cùng kênh gây nhiễu nhau rõ rệt trong các thí nghiệm nhiệm vụ kép, dù người tham gia đã cố gắng hết sức.
     loai: phat-hien
@@ -789,9 +877,10 @@ nhan_dinh:
     trich: It is typically observed that the disruption of memory caused by concurrent processing of distractors is substantial when the memory items and distractors come from the same content domain
     vi_tri: Oberauer và cộng sự 2018, Benchmark 5.2.1
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Hai việc cùng kênh nhất định xung đột ở mức xử lý — ta chỉ có thể luân phiên nhanh giữa chúng, không thể làm thật sự song song". Hai vế sau (luân phiên nhanh, không thể song song) mạnh hơn nguồn nói; đã bỏ.'
+    ghi_chu: 'Chữ cũ: "Hai việc cùng kênh nhất định xung đột ở mức xử lý — ta chỉ có thể luân phiên nhanh giữa chúng, không thể làm thật sự song song". Hai vế sau (luân phiên nhanh, không thể song song) mạnh hơn nguồn nói; đã bỏ. Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://app.nova.edu/toolbox/instructionalproducts/edd8124/articles/1974-Baddeley_and_Hitch.pdf" ]
+    review: dung
   - id: n64
     cau: Mô hình Miller (1956) 7 ± 2 là ước lượng ban đầu, đã tính cả các mẹo gom nhóm; ước lượng hiện đại thận trọng hơn là khoảng 4 "cục"; giới hạn còn tùy loại thông tin, cách đo, và từng người.
     loai: phat-hien
@@ -809,7 +898,8 @@ nhan_dinh:
     cau: 'Đọc thêm: trang kham-pha/tri-nho/bang-ghi-hinh và trang kham-pha/tri-nho/duong-cong-quen tồn tại; mô tả ngắn của từng trang đúng chủ đề.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm src/data/trang.yml: hai id có (tầng loi, linh_vuc tri-nho); tiêu đề trang bang-ghi-hinh và duong-cong-quen khớp mô tả ("Trí nhớ có giống cuốn băng ghi hình?", "Học dồn có nhớ lâu?").'
+    ghi_chu: 'Đã kiểm src/data/trang.yml: hai id có (tầng loi, linh_vuc tri-nho); tiêu đề trang bang-ghi-hinh và duong-cong-quen khớp mô tả ("Trí nhớ có giống cuốn băng ghi hình?", "Học dồn có nhớ lâu?"). Review (Claude Opus 5.5, 09/11/2026): Đã kiểm: trang.yml có hai id; tiêu đề bang-ghi-hinh "Trí nhớ có giống cuốn băng ghi hình?" và duong-cong-quen "Học dồn có nhớ lâu?" khớp chữ link; mô tả ngắn đúng chủ đề.'
+    review: dung
   - id: n66
     cau: 'Quiz 1: vừa giữ dãy số vừa hát nhẩm lời khó vì cả hai việc dùng chung vòng lặp âm vị; xung đột theo "kênh", không theo mức cố gắng chung chung.'
     loai: phat-hien
@@ -829,9 +919,10 @@ nhan_dinh:
     trich: when an error of recall is made, the substituted letter is likely to be one which sounds like the correct letter | It merely indicates that the majority of subjects verbalize the stimuli
     vi_tri: Conrad 1964, tr. 77–78
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(như B, P, T, V), chứng tỏ não mã hóa chúng thành âm thanh"; "bằng chứng mạnh rằng". Đã làm mềm (xem nhận định Conrad về mã âm thanh).'
+    ghi_chu: 'Chữ cũ: "(như B, P, T, V), chứng tỏ não mã hóa chúng thành âm thanh"; "bằng chứng mạnh rằng". Đã làm mềm (xem nhận định Conrad về mã âm thanh). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.2044-8295.1964.tb00899.x" ]
+    review: dung
   - id: n68
     cau: 'Quiz 3: hiệu ứng độ dài từ: số từ nhớ được tính theo thời gian đọc, dự đoán từ số từ đọc được trong khoảng 2 giây; ức chế phát âm làm hiệu ứng biến mất với tài liệu nhìn thấy.'
     loai: phat-hien
@@ -853,9 +944,10 @@ nhan_dinh:
     trich: a fourth component to the model, the episodic buffer, is proposed. | We were also puzzled by data from two highly intelligent but densely amnesic patients ... they performed well on immediate recall of the short story component
     vi_tri: Baddeley 2000, tóm tắt; Baddeley 2021
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ (đáp án đúng): "bệnh nhân mất trí nhớ vẫn nhớ được cả câu chuyện dài hơn nhiều"; chữ mới: "hai bệnh nhân mất trí nhớ nặng vẫn nhớ tốt một câu chuyện ngắn, dài hơn nhiều so với sức chứa" (theo Baddeley 2021: hai bệnh nhân, câu chuyện ngắn).'
+    ghi_chu: 'Chữ cũ (đáp án đúng): "bệnh nhân mất trí nhớ vẫn nhớ được cả câu chuyện dài hơn nhiều"; chữ mới: "hai bệnh nhân mất trí nhớ nặng vẫn nhớ tốt một câu chuyện ngắn, dài hơn nhiều so với sức chứa" (theo Baddeley 2021: hai bệnh nhân, câu chuyện ngắn). Review (Claude Opus 5.5, 09/11/2026): Đáp án quiz 4 trên trang đã viết "hai bệnh nhân mất trí nhớ nặng vẫn nhớ tốt một câu chuyện ngắn"; khớp Baddeley 2021 và Baddeley 2000 (xem n27, n29). Giải thích không dựa vào vị trí lựa chọn.'
     luot_2: khong-chac
     luot_2_ghi_chu: Gồm phần bệnh nhân (như n27) chưa kiểm được.
+    review: dung
   - id: n70
     cau: 'Quiz 5: giới hạn của trí nhớ làm việc gắn nhãn "Đang tranh cãi" vì con số còn bàn cãi (7 ± 2 của Miller so với khoảng 4 của Cowan) và có mô hình khác (Cowan) cho rằng, thay vì các "ngăn" riêng, trí nhớ làm việc là phần trí nhớ dài hạn đang kích hoạt cộng tâm điểm chú ý; mô hình đa thành phần vẫn có ảnh hưởng, chỗ tranh luận là "bao nhiêu" và "vì sao".'
     loai: phat-hien
@@ -865,9 +957,10 @@ nhan_dinh:
     trich: A single, central capacity limit averaging about four chunks is implicated | working memory reflects the focus of attention on an activated portion of LTM
     vi_tri: Cowan 2001; Baddeley 2021
     ket_qua: da-lam-mem
-    ghi_chu: Cùng nội dung với các nhận định Cowan ở mục Mức độ chắc chắn; đáp án đã đổi "không cần các ngăn riêng — chỉ là" thành "thay vì các ngăn riêng, ... là" (xem nhận định về mô hình nhúng).
+    ghi_chu: 'Cùng nội dung với các nhận định Cowan ở mục Mức độ chắc chắn; đáp án đã đổi "không cần các ngăn riêng — chỉ là" thành "thay vì các ngăn riêng, ... là" (xem nhận định về mô hình nhúng). Review (Claude Opus 5.5, 09/11/2026): chữ cuối trên trang khớp trích và nguồn đã dẫn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922", "https://psychclassics.yorku.ca/Miller/" ]
+    review: dung
 doi_chu:
   - cu: (trang cũ không có hộp tóm tắt đầu trang)
     moi: Hộp ::tom-tat tự dựng từ ý chính bốn khung nhãn của trang (bản mới thêm).
@@ -914,3 +1007,18 @@ doi_chu:
   - cu: 'Ngộ nhận: "Bằng chứng 50 năm qua ủng hộ nhiều ngăn chuyên biệt"; "thiên tài cũng không giữ được 20 chữ số"; "ta chỉ có thể luân phiên nhanh ... không thể làm thật sự song song"'
     moi: '"Nhiều bằng chứng ... dù cách giải thích còn bàn cãi"; "đặc điểm chung của mọi người ... gom nhóm giúp nhớ nhiều ký tự hơn"; "gây nhiễu nhau rõ rệt trong các thí nghiệm nhiệm vụ kép"'
     ly_do: Xem ghi_chu của nhận định tương ứng.
+  - cu: '"trong khi đồng thời giữ trong đầu một dãy chữ số. Kết quả: khi phải giữ tới 8 chữ số, người tham gia suy luận chậm hơn khoảng một nửa, nhưng tỉ lệ sai gần như không đổi (khoảng 5%)"'
+    moi: '"trong khi liên tục đọc to, lặp đi lặp lại một dãy 6 chữ số ngẫu nhiên — gần bằng sức chứa trí nhớ ngắn hạn của nhiều người. Kết quả: thời gian suy luận tăng từ khoảng 2,8 lên 4,3 giây (chậm hơn khoảng một nửa), nhưng tỉ lệ sai chỉ nhích từ khoảng 8% lên 10%"'
+    ly_do: "Review: số liệu theo Bảng III của chương 1974 (xem ghi_chu n8)."
+  - cu: (không có)
+    moi: '"Về sau, Baddeley, Lewis và Vallar (1984) thấy hiệu ứng mất cả với tài liệu nghe nếu ức chế kéo dài sang cả lúc nhớ lại."; thêm Baddeley, Lewis & Vallar (1984) vào mục Nguồn'
+    ly_do: "Review: điều kiện biên của hiệu ứng (xem ghi_chu n25)."
+  - cu: '"Ở trẻ em, ... dự báo vốn từ một năm sau chứ không phải ngược lại (theo Baddeley, 2021, kể lại nghiên cứu của Gathercole và Baddeley, 1989)"'
+    moi: '"Ở trẻ 4–5 tuổi, ... dự báo vốn từ một năm sau (Gathercole và Baddeley, 1989). Từ khoảng 5 tuổi trở đi thì chiều ngược lại trội hơn ... (Gathercole và cộng sự, 1992)"; thêm Gathercole và cộng sự (1992) vào mục Nguồn'
+    ly_do: "Review: xem ghi_chu n43."
+  - cu: '"Ngược lại, nghe nhạc không lời ... thường ít gây hại hơn — dù với việc đòi hỏi ngôn ngữ, ngay cả nhạc không lời cũng có thể gây nhiễu nhẹ."'
+    moi: '"Nghe nhạc không lời ... thường ít gây hại hơn, vì nhiễu do âm thanh chủ yếu thấy ở các việc ghi nhớ bằng lời. Nhưng với việc phải nhớ chữ hay số theo đúng thứ tự, ngay cả nhạc không lời cũng có thể làm nhớ kém đi."'
+    ly_do: "Review: xem ghi_chu n50."
+  - cu: '"### 5. Tự đo bàn nháp của mình :nhan[kha-vung]"; "Site có công cụ [đo độ dài trí nhớ chữ số] (nhớ xuôi và nhớ ngược). Thử làm rồi đọc phần giải thích: bạn sẽ thấy con số của mình nằm đâu so với nghiên cứu, và vì sao 7 ± 2 không hẳn đúng với mọi người."'
+    moi: '"### 5. Tự đo bàn nháp của mình { #5-tu-do-ban-nhap-cua-minh-kha-vung }"; "Khi công cụ [đo độ dài trí nhớ chữ số] lên site, bạn có thể tự đo cả nhớ xuôi lẫn nhớ ngược."'
+    ly_do: "Review: công cụ chưa lên site; tiêu đề không có nhận định nhãn; giữ id cũ (xem ghi_chu n54, n55)."

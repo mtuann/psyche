@@ -34,7 +34,7 @@ Câu hỏi lớn là: cái bàn nháp này là một mặt bàn duy nhất, hay 
 
 **Thiết kế.** Thay vì một thí nghiệm đơn lẻ, Baddeley và Hitch thực hiện một loạt thí nghiệm dùng **nhiệm vụ kép** (dual-task): bắt người tham gia làm hai việc cùng lúc, rồi xem việc này làm việc kia "hỏng" đến đâu. Logic rất đẹp: nếu trí nhớ ngắn hạn là một ngăn duy nhất, thì bất kỳ việc nào chiếm chỗ cũng phải làm mọi việc khác tệ đi như nhau. Nếu nó gồm nhiều ngăn riêng, thì hai việc dùng *hai ngăn khác nhau* sẽ ít ảnh hưởng nhau hơn hai việc chen chung *một ngăn*.
 
-Một thí nghiệm điển hình: người tham gia làm bài suy luận bằng lời trong khi đồng thời giữ trong đầu một dãy chữ số. Kết quả: khi phải giữ tới 8 chữ số, người tham gia suy luận chậm hơn khoảng một nửa, nhưng tỉ lệ sai gần như **không đổi** (khoảng 5%) — điều khó xảy ra nếu mọi thứ chen chung một ngăn duy nhất ([Baddeley và Hitch, 1974](https://doi.org/10.1016/S0079-7421(08)60452-1)).
+Một thí nghiệm điển hình: người tham gia làm bài suy luận bằng lời trong khi liên tục đọc to, lặp đi lặp lại một dãy 6 chữ số ngẫu nhiên — gần bằng sức chứa trí nhớ ngắn hạn của nhiều người. Kết quả: thời gian suy luận tăng từ khoảng 2,8 lên 4,3 giây (chậm hơn khoảng một nửa), nhưng tỉ lệ sai chỉ nhích từ khoảng 8% lên 10% — điều khó xảy ra nếu mọi thứ chen chung một ngăn duy nhất ([Baddeley và Hitch, 1974](https://doi.org/10.1016/S0079-7421(08)60452-1)).
 
 **Mô hình.** Từ các kết quả này, họ đề xuất ba thành phần:
 
@@ -59,7 +59,7 @@ Hai nghiên cứu năm 1966 của Baddeley mở rộng phát hiện này: với 
 - Trí nhớ tỉ lệ nghịch với độ dài từ: nhớ được nhiều từ ngắn hơn từ dài, trên nhiều loại tài liệu.
 - Khi số âm tiết giữ nguyên mà thời gian phát âm khác nhau, từ đọc nhanh hơn vẫn nhớ tốt hơn.
 - Số từ nhớ được **dự đoán được từ số từ người đó đọc được trong khoảng 2 giây**.
-- Khi bịt "giọng nói trong đầu" bằng cách bắt người tham gia lặp đi lặp lại một âm không liên quan trong lúc học (ức chế phát âm), hiệu ứng độ dài từ **biến mất** với tài liệu nhìn thấy (nhưng vẫn còn với tài liệu nghe) — đúng như dự đoán, vì không nhẩm lại được thì độ dài từ không còn ý nghĩa.
+- Khi bịt "giọng nói trong đầu" bằng cách bắt người tham gia lặp đi lặp lại một âm không liên quan trong lúc học (ức chế phát âm), hiệu ứng độ dài từ **biến mất** với tài liệu nhìn thấy (nhưng vẫn còn với tài liệu nghe) — đúng như dự đoán, vì không nhẩm lại được thì độ dài từ không còn ý nghĩa. Về sau, Baddeley, Lewis và Vallar (1984) thấy hiệu ứng mất cả với tài liệu nghe nếu ức chế kéo dài sang cả lúc nhớ lại.
 
 Đây là một trong những bằng chứng chính cho vòng lặp âm vị: một dự đoán phản trực giác, được kiểm tra và đúng — dù cơ chế đằng sau hiệu ứng độ dài từ vẫn được giải thích theo nhiều cách (Mattys và cộng sự, 2018).
 
@@ -93,7 +93,7 @@ Con số "7 ± 2" nổi tiếng của Miller (1956) đã được Cowan (2001) h
 
 ## Các lý thuyết giải thích
 
-Vì sao não lại "nói" bằng âm thanh khi giữ thông tin bằng lời? Một giả thuyết có sức nặng: chức năng quan trọng của vòng lặp âm vị là giúp **học ngôn ngữ**. Bằng chứng từ bệnh nhân: một bệnh nhân có vòng lặp âm vị bị tổn thương (nhưng trí nhớ dài hạn còn nguyên) vẫn học được những điều có thể mã hóa bằng ý nghĩa, nhưng gần như không học được **từ mới của ngoại ngữ** — đúng loại thông tin mà ý nghĩa chưa giúp được gì, phải "nhẩm" âm thanh mới giữ được ([Baddeley, Papagno và Vallar, 1988](https://doi.org/10.1016/0749-596X(88)90028-9)). Ở trẻ em, khả năng lặp lại một từ vô nghĩa vừa nghe có liên quan chặt với vốn từ vựng, và dự báo vốn từ một năm sau chứ không phải ngược lại (theo Baddeley, 2021, kể lại nghiên cứu của Gathercole và Baddeley, 1989).
+Vì sao não lại "nói" bằng âm thanh khi giữ thông tin bằng lời? Một giả thuyết có sức nặng: chức năng quan trọng của vòng lặp âm vị là giúp **học ngôn ngữ**. Bằng chứng từ bệnh nhân: một bệnh nhân có vòng lặp âm vị bị tổn thương (nhưng trí nhớ dài hạn còn nguyên) vẫn học được những điều có thể mã hóa bằng ý nghĩa, nhưng gần như không học được **từ mới của ngoại ngữ** — đúng loại thông tin mà ý nghĩa chưa giúp được gì, phải "nhẩm" âm thanh mới giữ được ([Baddeley, Papagno và Vallar, 1988](https://doi.org/10.1016/0749-596X(88)90028-9)). Ở trẻ 4–5 tuổi, khả năng lặp lại một từ vô nghĩa vừa nghe có liên quan chặt với vốn từ vựng, và dự báo vốn từ một năm sau ([Gathercole và Baddeley, 1989](https://doi.org/10.1016/0749-596X(89)90044-2)). Từ khoảng 5 tuổi trở đi thì chiều ngược lại trội hơn: vốn từ trở thành yếu tố dẫn dắt mối quan hệ này ([Gathercole và cộng sự, 1992](https://doi.org/10.1037/0012-1649.28.5.887)).
 
 Vì sao lại chia thành nhiều ngăn thay vì một ngăn chung? Một cách giải thích (còn tranh luận) là góc nhìn tài nguyên: chú ý là tài nguyên hạn chế, và não phân bổ nó theo từng "kênh" xử lý. Hai việc cùng kênh phải chia nhau cùng một nguồn tài nguyên nên xung đột; hai việc khác kênh dùng hai nguồn khác nhau nên ít ảnh hưởng nhau. Đây chính là logic đằng sau phần "Tự trải nghiệm" ở đầu bài: hát nhẩm lời bài hát (kênh âm thanh) phá dãy số (kênh âm thanh), còn hình dung đường đi (kênh hình ảnh-không gian) thì không.
 
@@ -113,15 +113,15 @@ Bàn nháp chỉ giữ được vài "cục" thông tin (khoảng 4 theo Cowan, 
 
 ### 3. Đừng bắt hai việc cùng "kênh" chạy song song :nhan[kha-vung]
 
-Vừa nghe giảng vừa đọc tin nhắn (cùng kênh ngôn ngữ) là công thức của xung đột. Ngược lại, nghe nhạc **không lời** trong lúc làm việc hình ảnh thường ít gây hại hơn — dù với việc đòi hỏi ngôn ngữ, ngay cả nhạc không lời cũng có thể gây nhiễu nhẹ. Quy tắc ngón tay cái, suy ra từ những kết quả trên: càng giống nhau về "kênh", càng nên tránh làm cùng lúc.
+Vừa nghe giảng vừa đọc tin nhắn (cùng kênh ngôn ngữ) là công thức của xung đột. Nghe nhạc **không lời** trong lúc làm việc hình ảnh thường ít gây hại hơn, vì nhiễu do âm thanh chủ yếu thấy ở các việc ghi nhớ bằng lời. Nhưng với việc phải nhớ chữ hay số theo đúng thứ tự, ngay cả nhạc không lời cũng có thể làm nhớ kém đi. Quy tắc ngón tay cái, suy ra từ những kết quả trên: càng giống nhau về "kênh", càng nên tránh làm cùng lúc.
 
 ### 4. Gom nhóm (chunking): biến nhiều thành ít :nhan[kha-vung]
 
 Giới hạn của bàn nháp tính theo "cục" thông tin, không tính theo ký tự. Dãy 0912345678 là 10 ký tự rời rạc, nhưng gom thành **0912 – 345 – 678** thì chỉ còn 3 "cục". Số điện thoại và số tài khoản thường được viết thành nhóm, đúng tinh thần này.
 
-### 5. Tự đo bàn nháp của mình :nhan[kha-vung]
+### 5. Tự đo bàn nháp của mình { #5-tu-do-ban-nhap-cua-minh-kha-vung }
 
-Site có công cụ [đo độ dài trí nhớ chữ số](/psyche/trai-nghiem/do-dai-tri-nho/) (nhớ xuôi và nhớ ngược). Thử làm rồi đọc phần giải thích: bạn sẽ thấy con số của mình nằm đâu so với nghiên cứu, và vì sao "7 ± 2" không hẳn đúng với mọi người. Nhớ ngược đòi hỏi vừa *giữ* vừa *đảo thứ tự* (xử lý), nên gần với nghĩa "làm việc" của trí nhớ làm việc hơn nhớ xuôi.
+Khi công cụ [đo độ dài trí nhớ chữ số](/psyche/trai-nghiem/do-dai-tri-nho/) lên site, bạn có thể tự đo cả nhớ xuôi lẫn nhớ ngược. Nhớ ngược đòi hỏi vừa *giữ* vừa *đảo thứ tự* (xử lý), nên gần với nghĩa "làm việc" của trí nhớ làm việc hơn nhớ xuôi.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
@@ -179,12 +179,14 @@ Có một chi tiết đáng lưu ý: độ dài trí nhớ chữ số **khác nh
 - Baddeley, A. D. (2000). The episodic buffer: A new component of working memory? *Trends in Cognitive Sciences*, 4(11), 417–423. <https://doi.org/10.1016/S1364-6613(00)01538-2>
 - Baddeley, A. D. (2021). Developing the concept of working memory: The role of neuropsychology. *Archives of Clinical Neuropsychology*, 36(6), 861–873. <https://doi.org/10.1093/arclin/acab060>
 - Baddeley, A. D., & Hitch, G. (1974). Working memory. Trong G. H. Bower (Chủ biên), *The psychology of learning and motivation: Advances in research and theory* (Tập 8, tr. 47–89). New York: Academic Press. <https://doi.org/10.1016/S0079-7421(08)60452-1>
+- Baddeley, A. D., Lewis, V., & Vallar, G. (1984). Exploring the articulatory loop. *Quarterly Journal of Experimental Psychology Section A*, 36(2), 233–252. <https://doi.org/10.1080/14640748408402157>
 - Baddeley, A. D., Papagno, C., & Vallar, G. (1988). When long-term learning depends on short-term storage. *Journal of Memory and Language*, 27(5), 586–595. <https://doi.org/10.1016/0749-596X(88)90028-9>
 - Baddeley, A. D., Thomson, N., & Buchanan, M. (1975). Word length and the structure of short-term memory. *Journal of Verbal Learning and Verbal Behavior*, 14(6), 575–589. <https://doi.org/10.1016/S0022-5371(75)80045-4>
 - Conrad, R. (1964). Acoustic confusions in immediate memory. *British Journal of Psychology*, 55(1), 75–84. <https://doi.org/10.1111/j.2044-8295.1964.tb00899.x>
 - Cowan, N. (1999). An embedded-processes model of working memory. Trong A. Miyake & P. Shah (Chủ biên), *Models of working memory: Mechanisms of active maintenance and executive control* (tr. 62–101). Cambridge: Cambridge University Press.
 - Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. *Behavioral and Brain Sciences*, 24(1), 87–114. <https://doi.org/10.1017/S0140525X01003922>
 - Gathercole, S. E., & Baddeley, A. D. (1989). Evaluation of the role of phonological STM in the development of vocabulary in children: A longitudinal study. *Journal of Memory and Language*, 28(2), 200–213. <https://doi.org/10.1016/0749-596X(89)90044-2>
+- Gathercole, S. E., Willis, C. S., Emslie, H., & Baddeley, A. D. (1992). Phonological memory and vocabulary development during the early school years: A longitudinal study. *Developmental Psychology*, 28(5), 887–898. <https://doi.org/10.1037/0012-1649.28.5.887>
 - Mattys, S. L., Baddeley, A., & Trenkic, D. (2018). Is the superior verbal memory span of Mandarin speakers due to faster rehearsal? *Memory & Cognition*, 46(3), 361–369. <https://doi.org/10.3758/s13421-017-0770-8>
 - Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. *Psychological Review*, 63(2), 81–97. <https://doi.org/10.1037/h0043158>
 - Oberauer, K., Lewandowsky, S., Awh, E., Brown, G. D. A., Conway, A., Cowan, N., … Ward, G. (2018). Benchmarks for models of short-term and working memory. *Psychological Bulletin*, 144(9), 885–958. <https://doi.org/10.1037/bul0000153>

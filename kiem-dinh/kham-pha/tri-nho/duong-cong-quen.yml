@@ -7,12 +7,12 @@ lan:
   - so: 1
     ngay: '2026-11-09'
     nhanh: moi/d5-l1
-    ma_bam: null
+    ma_bam:
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L1 phần 1/2)
-      luot_2: null
-      review: null
-      kiem_mau: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L1)
+      review: Claude Sonnet 5.5 (agent review D5-L1, 09/11/2026)
+      kiem_mau:
 nguon:
   - id: ebbinghaus1885
     ten: 'Ebbinghaus (1885/1913), Memory, chương 7: toàn văn (psychclassics.yorku.ca); chương 8 theo G1-L01'
@@ -35,9 +35,9 @@ nguon:
     link: https://doi.org/10.1037/a0037559
     toan_van: false
   - id: adesope2017
-    ten: 'Adesope và cộng sự (2017), Rev Educ Res 87(3), 659–701: theo G1-L01 (G1 đọc bản lưu của tác giả)'
+    ten: 'Adesope và cộng sự (2017), Rev Educ Res 87(3), 659–701: toàn văn (bản WSU lưu ở Wayback Machine, đọc lại ở review 09/11/2026)'
     link: https://doi.org/10.3102/0034654316689306
-    toan_van: false
+    toan_van: true
   - id: dunlosky2013
     ten: 'Dunlosky và cộng sự (2013), Psychol Sci Public Interest 14(1), 4–58: tóm tắt (Europe PMC); các câu khác theo G1-L01'
     link: https://doi.org/10.1177/1529100612453266
@@ -59,8 +59,12 @@ nguon:
     link: https://doi.org/10.1037/0033-295X.103.4.734
     toan_van: false
   - id: tim-kiem-vn
-    ten: 'Tìm trên OpenAlex (9/11/2026): "spaced repetition Vietnamese students distributed practice", "testing effect Vietnamese students", "forgetting curve Vietnamese participants": không có nghiên cứu về học ngắt quãng hay tự kiểm tra trên người Việt'
+    ten: 'Tìm trên OpenAlex (9/11/2026): "spaced repetition Vietnamese students distributed practice", "testing effect Vietnamese students", "forgetting curve Vietnamese participants", và ở review: "spaced repetition Vietnamese students", "testing effect Vietnamese students retrieval practice", "distributed practice Vietnam learners vocabulary", "spacing effect Vietnamese EFL learners": không có nghiên cứu kiểm tra riêng học ngắt quãng hay tự kiểm tra trên người Việt; có nghiên cứu ứng dụng Memrise'
     link: https://api.openalex.org/works?search=spaced%20repetition%20Vietnamese%20students%20distributed%20practice
+  - id: memrise-vn2026
+    ten: 'Nguyễn & Nguyễn (2026), Int J Adv Multidiscip Res Stud 6(2), 31–40: tóm tắt (OpenAlex); nghiên cứu Memrise ở học sinh lớp 10 Việt Nam, ứng dụng gộp ôn ngắt quãng và trò chơi hóa'
+    link: https://doi.org/10.62225/2583049x.2026.6.2.5923
+    toan_van: false
 nhan_dinh:
   - id: n1
     cau: Học ngắt quãng giúp nhớ lâu hơn học dồn trong một đêm, và tự kiểm tra giúp nhớ lâu hơn đọc lại (mô tả của trang).
@@ -71,23 +75,25 @@ nhan_dinh:
     trich: Many spacing studies have shown that no gap results in worse final test performance than does a brief gap.
     vi_tri: Cepeda 2008, mở bài; Rowland 2014, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Mô tả (description). Chữ cũ: "Học ngắt quãng và tự kiểm tra giúp nhớ lâu hơn học dồn trong một đêm"; chữ mới tách hai so sánh (tự kiểm tra so với đọc lại, không so với học dồn). Lý do: tự kiểm tra được so với đọc lại (Rowland 2014; Roediger & Karpicke 2006), không so với học dồn.'
+    ghi_chu: 'Mô tả (description). Chữ cũ: "Học ngắt quãng và tự kiểm tra giúp nhớ lâu hơn học dồn trong một đêm"; chữ mới tách hai so sánh (tự kiểm tra so với đọc lại, không so với học dồn). Lý do: tự kiểm tra được so với đọc lại (Rowland 2014; Roediger & Karpicke 2006), không so với học dồn. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
     luot_2_ghi_chu: Gộp ý của hai bài đã mở.
+    review: dung
   - id: n2
-    cau: Ngay sau khi học xong, An (học dồn) có thể làm tốt hơn một chút vì kiến thức còn "nóng"; một tuần sau, nhiều khả năng Bình (học rải) nhớ tốt hơn.
+    cau: Một tuần sau, nhiều khả năng Bình (học rải) nhớ tốt hơn An (học dồn); ngay sau khi học xong, chưa chắc An hơn Bình, vì các tổng hợp không thấy học dồn thắng ổn định ở bài kiểm tra ngay sau đó.
     loai: loi-khuyen
     nguon:
       - cepeda2006
       - cepeda2008
-    trich: The 7-, 35-, 70-, and 350-day RIs yielded 10, 59, 111, and 77% improvement in recall for the optimal gap, as compared with the zero-day gap.
+    trich: For retention intervals less than 1 min, spaced presentations improved final-test performance by 9%, compared with massed presentations ... there is no hint that massed presentation was preferable to spaced, whether retention interval was very short (less than 1 min) or very long (over 30 days).
     vi_tri: 'Cepeda 2008, Results; Cepeda 2006 tóm tắt: "the ISI producing maximal retention increased as retention interval increased"'
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Bình nhớ tốt hơn hẳn". Chữ mới: "nhiều khả năng Bình nhớ tốt hơn". Lý do: ở mốc 7 ngày, khoảng cách tối ưu chỉ cải thiện 10% so với khoảng cách 0 ngày (Cepeda 2008). Hai bạn An và Bình, 4 tiếng, 4 tối là tình huống giả định (gia-dinh); "An có thể làm tốt hơn một chút" suy từ việc khoảng cách tối ưu tăng theo thời gian cần nhớ (nên ở thời gian rất ngắn khoảng cách ngắn là tối ưu). Không có số đo trực tiếp cho đúng tình huống này.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Bình nhớ tốt hơn hẳn". Chữ mới: "nhiều khả năng Bình nhớ tốt hơn". Lý do: ở mốc 7 ngày, khoảng cách tối ưu chỉ cải thiện 10% so với khoảng cách 0 ngày (Cepeda 2008). Hai bạn An và Bình, 4 tiếng, 4 tối là tình huống giả định (gia-dinh); "An có thể làm tốt hơn một chút" suy từ việc khoảng cách tối ưu tăng theo thời gian cần nhớ (nên ở thời gian rất ngắn khoảng cách ngắn là tối ưu). Không có số đo trực tiếp cho đúng tình huống này. Review (Claude Sonnet 5.5, 09/11/2026): sai. Chữ cũ: "ngay sau khi học xong, An có thể làm tốt hơn một chút vì kiến thức còn nóng". Mở lại Cepeda 2006 (toàn văn, mục massed vs spaced): 271 phép so sánh, học rải hơn học dồn cả ở khoảng giữ dưới 1 phút (+9%), chỉ 12 trong 271 phép không thấy lợi; lợi thế của học dồn chỉ thấy ở khoảng giữ vài giây (Peterson). Lượt 2 đúng. Chữ mới: "chưa chắc An hơn Bình". Cũng sửa câu hỏi Tự trải nghiệm ("ai làm tốt hơn") cho khỏi gài sẵn An thắng. Lưu ý: tổng hợp so học dồn với khoảng cách ngắn nhất cho cùng một mục, không đúng 1:1 với tình huống 4 giờ so 4 buổi.'
     luot_2: qua-manh
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
     luot_2_ghi_chu: 'câu đúng: Một tuần sau, nhiều khả năng Bình (học rải) nhớ tốt hơn An (học dồn); ngay sau khi học, hai bạn có thể ngang nhau, và học dồn chỉ tạo cảm giác thành thạo cao hơn thực tế (Cepeda 2006, 2008).; Phần "một tuần sau Bình nhớ tốt hơn" đúng. Phần "ngay sau khi học An có thể làm tốt hơn" không có trong dữ liệu tổng hợp: Cepeda 2006 thấy học rải hơn học dồn cả ở khoảng giữ dưới 1 phút (+9%); chỉ vài trong 271 phép so sánh không thấy lợi (12/271). Lợi thế tức thời của học dồn chỉ thấy ở khoảng giữ vài giây (Peterson).'
+    review: sai
   - id: n3
     cau: Hiệu ứng thời điểm của các buổi học đã được đo đạc trong hàng trăm thí nghiệm.
     loai: so-lieu
@@ -103,7 +109,8 @@ nhan_dinh:
     cau: Còn hình dạng của việc quên theo thời gian được trình bày kỹ trong bài "Vì sao ta quên?".
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: kham-pha/tri-nho/vi-sao-ta-quen có mục Nghiên cứu then chốt về đường cong quên (bản xem).'
+    ghi_chu: 'Đã kiểm: kham-pha/tri-nho/vi-sao-ta-quen có mục Nghiên cứu then chốt về đường cong quên (bản xem). Review (Claude Sonnet 5.5, 09/11/2026): dung. vi-sao-ta-quen có mục "Nghiên cứu then chốt" về đường cong quên; link đúng.'
+    review: dung
   - id: n5
     cau: Học dồn (massed practice) là nhồi mọi thứ vào một buổi dài; học ngắt quãng (spaced/distributed practice) là chia thành nhiều buổi cách nhau bởi những khoảng nghỉ.
     loai: dinh-nghia
@@ -123,10 +130,11 @@ nhan_dinh:
     trich: subjects in the SSSS condition were more confident that they would remember the passage in 1 week than were subjects in the SSST or STTT condition
     vi_tri: Experiment 2, Results
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Trực giác của hầu hết chúng ta nghiêng về học dồn: học liền một mạch cảm thấy hiệu quả…" (khẳng định về trực giác của "hầu hết", không nguồn đã mở). Chữ mới bỏ "trực giác của hầu hết", dựa vào kết quả có thật: nhóm đọc dồn (SSSS) tin mình sẽ nhớ tốt hơn nhưng sau 1 tuần nhớ kém hơn (40% so với 61%).'
+    ghi_chu: 'Chữ cũ: "Trực giác của hầu hết chúng ta nghiêng về học dồn: học liền một mạch cảm thấy hiệu quả…" (khẳng định về trực giác của "hầu hết", không nguồn đã mở). Chữ mới bỏ "trực giác của hầu hết", dựa vào kết quả có thật: nhóm đọc dồn (SSSS) tin mình sẽ nhớ tốt hơn nhưng sau 1 tuần nhớ kém hơn (40% so với 61%). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x", "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
     luot_2_ghi_chu: '"Không dự báo được" hơi mạnh nhưng được R&K đo trực tiếp (dự đoán ngược với kết quả).'
+    review: dung
   - id: n7
     cau: 'Từ thế kỷ 19, Ebbinghaus (1885) đặt vấn đề ấy một cách khoa học: ông tự làm người tham gia duy nhất, học thuộc các danh sách âm tiết vô nghĩa, rồi đo xem mình quên nhanh đến đâu bằng phương pháp "tiết kiệm" (học lại nhanh hơn lần đầu bao nhiêu phần trăm).'
     loai: lich-su
@@ -137,10 +145,11 @@ nhan_dinh:
     trich: In all experiments reported by Ebbinghaus [9], he used only himself as a subject.
     vi_tri: 'Murre & Dros, Introduction; Cepeda 2008: "there is a large literature on such effects going back to the 19th century"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Người đầu tiên đặt vấn đề này một cách khoa học là Hermann Ebbinghaus (1885)". Chữ mới: "Từ thế kỷ 19, … đã đặt vấn đề", vì Cepeda 2008 chỉ nói văn liệu về hiệu ứng ngắt quãng "going back to the 19th century", không nói ai đầu tiên. Âm tiết "DAX", "BOK", "ZUF" là ví dụ minh họa của trang (gia-dinh).'
+    ghi_chu: 'Chữ cũ: "Người đầu tiên đặt vấn đề này một cách khoa học là Hermann Ebbinghaus (1885)". Chữ mới: "Từ thế kỷ 19, … đã đặt vấn đề", vì Cepeda 2008 chỉ nói văn liệu về hiệu ứng ngắt quãng "going back to the 19th century", không nói ai đầu tiên. Âm tiết "DAX", "BOK", "ZUF" là ví dụ minh họa của trang (gia-dinh). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://psychclassics.yorku.ca/Ebbinghaus/memory8.htm" ]
     luot_2_ghi_chu: Đọc chương VIII và các chương khác trên psychclassics; đặc điểm tự làm đối tượng và âm tiết vô nghĩa quen thuộc, chương VIII nói "for my own personality".
+    review: dung
   - id: n8
     cau: Ebbinghaus cũng nhận thấy việc rải các buổi học ra nhiều ngày giúp ông tốn ít công sức học lại hơn.
     loai: phat-hien
@@ -149,21 +158,24 @@ nhan_dinh:
     trich: with any considerable number of repetitions a suitable distribution of them over a space of time is decidedly more advantageous than the massing of them at a single time
     vi_tri: Chương 8 (psychclassics.yorku.ca/Ebbinghaus/memory8.htm)
     ket_qua: dung
-    ghi_chu: 'theo G1-L01 (22/10/2026): KHỚP (L32; nguồn của trang đang link chương 7, câu nằm ở chương 8; đã thêm chương 8 vào mục Nguồn).'
+    ghi_chu: 'theo G1-L01 (22/10/2026): KHỚP (L32; nguồn của trang đang link chương 7, câu nằm ở chương 8; đã thêm chương 8 vào mục Nguồn). Review (Claude Sonnet 5.5, 09/11/2026): dung. Ebbinghaus ch. 8 (đã mở): "38 repetitions, distributed in a certain way over the three preceding days, had just as favorable an effect as 68 repetitions made on the day just previous" nên "tốn ít công sức học lại hơn" đúng; ông nói điều này chỉ cho điều kiện rất hạn chế.'
     luot_2: dung
     luot_2_nguon: [ "https://psychclassics.yorku.ca/Ebbinghaus/memory8.htm" ]
+    review: dung
   - id: n9
-    cau: Phải hơn một thế kỷ sau, các nhà nghiên cứu mới trả lời được câu hỏi của ông bằng hàng trăm thí nghiệm.
+    cau: Ebbinghaus chỉ là một người, với âm tiết vô nghĩa; hơn một thế kỷ sau, hàng trăm thí nghiệm đã kiểm tra lại điều ông thấy.
     loai: lich-su
     nguon:
+      - ebbinghaus1885
       - cepeda2006
-    trich: This review found 839 assessments of distributed practice in 317 experiments located in 184 articles.
+    trich: 38 repetitions, distributed in a certain way over the three preceding days, had just as favorable an effect as 68 repetitions made on the day just previous. [Ebbinghaus, ch. 8] | This review found 839 assessments of distributed practice in 317 experiments located in 184 articles. [Cepeda 2006]
     vi_tri: Tóm tắt (Cepeda 2006)
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…bằng hàng trăm thí nghiệm trên hàng nghìn người" (không có tổng số người trong nguồn đã mở); chữ mới bỏ "trên hàng nghìn người". "Hơn một thế kỷ": 1885 đến 2006.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…bằng hàng trăm thí nghiệm trên hàng nghìn người" (không có tổng số người trong nguồn đã mở); chữ mới bỏ "trên hàng nghìn người". "Hơn một thế kỷ": 1885 đến 2006. Review (Claude Sonnet 5.5, 09/11/2026): sai. Chữ cũ: "Phải hơn một thế kỷ sau, các nhà nghiên cứu mới trả lời được câu hỏi của ông bằng hàng trăm thí nghiệm." Lượt 2 đúng: mâu thuẫn với n8 (chính Ebbinghaus ở chương 8 đã thấy 38 lần lặp rải trong 3 ngày bằng 68 lần lặp dồn một ngày) và nghiên cứu liên tục từ Jost 1897; điều chưa trả lời được lâu là khoảng cách tối ưu. Đã mở chương 8 psychclassics.yorku.ca.'
     luot_2: qua-manh
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://psychclassics.yorku.ca/Ebbinghaus/memory8.htm" ]
     luot_2_ghi_chu: 'câu đúng: Ebbinghaus (1885) đã thấy lợi ích của rải học; qua hơn một thế kỷ nghiên cứu, hàng trăm thí nghiệm (317 trong Cepeda 2006) xác nhận hiệu ứng, và các nghiên cứu như Cepeda 2008 mới bắt đầu đo khoảng cách tối ưu.; Câu nói "phải hơn một thế kỷ sau mới trả lời được" mâu thuẫn với n8 và với lịch sử: Ebbinghaus đã thấy lợi ích của rải học, nghiên cứu liên tục từ Jost 1897. Điều hơn một thế kỷ chưa trả lời được là khoảng cách tối ưu (Cepeda 2008: vẫn chưa nói chắc được).'
+    review: sai
   - id: n10
     cau: Cepeda và cộng sự (2006) là một phân tích tổng hợp, gom các nghiên cứu so sánh học ngắt quãng với học dồn trong các nhiệm vụ nhớ bằng lời, rồi phân tích gộp.
     loai: dinh-nghia
@@ -172,9 +184,10 @@ nhan_dinh:
     trich: The authors performed a meta-analysis of the distributed practice effect to illuminate the effects of temporal variables that have been neglected in previous reviews.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "gom mọi nghiên cứu so sánh…". Chữ mới bỏ "mọi" (nhóm tìm được; Cepeda 2008 nói tổng hợp xem "more than 400 reports").'
+    ghi_chu: 'Chữ cũ: "gom mọi nghiên cứu so sánh…". Chữ mới bỏ "mọi" (nhóm tìm được; Cepeda 2008 nói tổng hợp xem "more than 400 reports"). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
+    review: dung
   - id: n11
     cau: Tổng cộng 839 phép so sánh, từ 317 thí nghiệm, trong 184 bài báo.
     loai: so-lieu
@@ -195,10 +208,11 @@ nhan_dinh:
     trich: Many spacing studies have shown that no gap results in worse final test performance than does a brief gap.
     vi_tri: 'Cepeda 2008, mở bài; Cepeda 2006 (theo G1 L40): tài liệu gồm "list recall, fact recall, or paragraph recall"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…tìm thấy trong hàng trăm bối cảnh". Chữ mới: "nhiều bối cảnh" (không đếm được "hàng trăm bối cảnh"; 317 là số thí nghiệm). theo G1-L01 (22/10/2026): KHỚP phần loại tài liệu. Chỗ khó: câu "thắng một cách nhất quán" không có câu trích trực tiếp từ toàn văn Cepeda 2006 (không mở được bản toàn văn lượt này); dựa vào Cepeda 2008 ("many spacing studies") và G1.'
+    ghi_chu: 'Chữ cũ: "…tìm thấy trong hàng trăm bối cảnh". Chữ mới: "nhiều bối cảnh" (không đếm được "hàng trăm bối cảnh"; 317 là số thí nghiệm). theo G1-L01 (22/10/2026): KHỚP phần loại tài liệu. Chỗ khó: câu "thắng một cách nhất quán" không có câu trích trực tiếp từ toàn văn Cepeda 2006 (không mở được bản toàn văn lượt này); dựa vào Cepeda 2008 ("many spacing studies") và G1. Review (Claude Sonnet 5.5, 09/11/2026): dung. Mở toàn văn Cepeda 2006: "Only 12 of 271 comparisons of massed and spaced performance showed no effect or a negative effect from spacing, making the spacing effect quite robust" và "85 percent" dữ liệu là người trẻ; đủ cho "thắng một cách nhất quán".'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
     luot_2_ghi_chu: Nhiệm vụ gồm list recall, paired associates, fact recall, paragraph recall.
+    review: dung
   - id: n13
     cau: Khoảng cách tối ưu giữa các buổi học không cố định mà tăng theo thời gian cần nhớ.
     loai: phat-hien
@@ -218,9 +232,10 @@ nhan_dinh:
     trich: For the RIs of 7, 35, 70, and 350 days, the optimal gaps (of those included in the study) were 1, 11, 21, and 21 days, respectively, for recall data
     vi_tri: Results (Cepeda 2008)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "khoảng cách vài ngày là đủ"; chữ mới: "chừng một đến vài ngày" (khoảng cách tối ưu đo được ở mốc 7 ngày là 1 ngày). Với cả năm: tối ưu đo được 21 ngày (RI 350 ngày). G1 gợi ý sửa tương tự (L46/L111).'
+    ghi_chu: 'Chữ cũ: "khoảng cách vài ngày là đủ"; chữ mới: "chừng một đến vài ngày" (khoảng cách tối ưu đo được ở mốc 7 ngày là 1 ngày). Với cả năm: tối ưu đo được 21 ngày (RI 350 ngày). G1 gợi ý sửa tương tự (L46/L111). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
+    review: dung
   - id: n15
     cau: Khoảng cách quá ngắn thì gần như học dồn; khoảng cách dài quá mức tối ưu thì kết quả giảm đi, nhưng thường giảm chậm hơn.
     loai: phat-hien
@@ -229,9 +244,10 @@ nhan_dinh:
     trich: Recall success (for both facts and names) was best for a 1-month gap, being much worse for shorter gaps and slightly poorer for longer ones.
     vi_tri: Mở bài, tóm tắt nghiên cứu trước của nhóm
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "khoảng cách quá dài thì buổi trước đã quên gần hết, buổi sau gần như học mới" (không có nguồn; Cepeda 2008 thấy giảm nhẹ khi gap dài hơn tối ưu). Chữ mới: giảm nhưng thường chậm hơn. Câu trích về nghiên cứu trước của nhóm (gap 10 phút–6 tháng, kiểm tra 6 tháng sau); trong thí nghiệm 2008 "the optimal gap" cũng theo dạng không đơn điệu: "At any given test delay, an increase in the interstudy gap at first increased, and then gradually reduced, final test performance."'
+    ghi_chu: 'Chữ cũ: "khoảng cách quá dài thì buổi trước đã quên gần hết, buổi sau gần như học mới" (không có nguồn; Cepeda 2008 thấy giảm nhẹ khi gap dài hơn tối ưu). Chữ mới: giảm nhưng thường chậm hơn. Câu trích về nghiên cứu trước của nhóm (gap 10 phút–6 tháng, kiểm tra 6 tháng sau); trong thí nghiệm 2008 "the optimal gap" cũng theo dạng không đơn điệu: "At any given test delay, an increase in the interstudy gap at first increased, and then gradually reduced, final test performance." Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
+    review: dung
   - id: n16
     cau: 'Cepeda và cộng sự (2008) làm một thí nghiệm trực tuyến với hơn một nghìn người: học 32 sự thật lạ nhưng có thật (ví dụ "ai là người phát minh ra golf trên tuyết"), ôn lại sau nhiều khoảng cách khác nhau, rồi kiểm tra sau nhiều khoảng thời gian khác nhau.'
     loai: phat-hien
@@ -261,9 +277,10 @@ nhan_dinh:
     trich: However, when measured as a proportion of test delay, the optimal gap declined from about 20 to 40% of a 1-week test delay to about 5 to 10% of a 1-year test delay.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "thi tuần sau thì ôn cách vài ngày". Chữ mới: "một đến vài ngày". Tỉ lệ gap/RI giảm khi RI dài (không cố định), nên chỉ là quy tắc gần đúng; Cepeda 2008 nói "linearity cannot be assumed".'
+    ghi_chu: 'Chữ cũ: "thi tuần sau thì ôn cách vài ngày". Chữ mới: "một đến vài ngày". Tỉ lệ gap/RI giảm khi RI dài (không cố định), nên chỉ là quy tắc gần đúng; Cepeda 2008 nói "linearity cannot be assumed". Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
+    review: dung
   - id: n19
     cau: 'Roediger và Karpicke (2006): 180 sinh viên học một đoạn văn khoa học ngắn trong 4 phiên.'
     loai: so-lieu
@@ -272,9 +289,10 @@ nhan_dinh:
     trich: One hundred eighty Washington University undergraduates, ages 18 to 24, participated in partial fulfillment of course requirements.
     vi_tri: Experiment 2, Subjects and Materials
     ket_qua: da-sua
-    ghi_chu: 'G1-L01 (#1): thiết kế SSSS/STTT là Thí nghiệm 2: 180 sinh viên, không phải 120. Đoạn văn: hai bài từ sách luyện thi TOEFL, "The Sun" (256 từ) và "Sea Otters" (275 từ).'
+    ghi_chu: 'G1-L01 (#1): thiết kế SSSS/STTT là Thí nghiệm 2: 180 sinh viên, không phải 120. Đoạn văn: hai bài từ sách luyện thi TOEFL, "The Sun" (256 từ) và "Sea Otters" (275 từ). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
+    review: dung
   - id: n20
     cau: Một nhóm đọc đi đọc lại cả 4 phiên (SSSS); nhóm kia đọc 1 phiên rồi tự kiểm tra, viết ra mọi điều nhớ được, trong 3 phiên còn lại (STTT).
     loai: phat-hien
@@ -305,9 +323,10 @@ nhan_dinh:
     trich: Ninety subjects were given a final recall test following a 5-min retention interval, and 90 took a final test after 1 week.
     vi_tri: Experiment 2, Design
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (G1 #1): "…làm bài kiểm tra cuối sau 5 phút, 2 ngày, hoặc 1 tuần"; chữ mới: 5 phút hoặc 1 tuần. Không có mốc 2 ngày ở Thí nghiệm 2.'
+    ghi_chu: 'Chữ cũ (G1 #1): "…làm bài kiểm tra cuối sau 5 phút, 2 ngày, hoặc 1 tuần"; chữ mới: 5 phút hoặc 1 tuần. Không có mốc 2 ngày ở Thí nghiệm 2. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
+    review: dung
   - id: n23
     cau: 'Kết quả bảng: sau 5 phút, nhóm đọc lại 83%, nhóm tự kiểm tra 71%.'
     loai: so-lieu
@@ -316,9 +335,10 @@ nhan_dinh:
     trich: 'On the 5-min test, recall was correlated with repeated studying: The SSSS group recalled more than the SSST group (83% vs. 78%), who in turn recalled more than the STTT group (71%).'
     vi_tri: Experiment 2, Results
     ket_qua: da-sua
-    ghi_chu: 'G1 #2: chữ cũ "81% / 75%" (số của Thí nghiệm 1: so sánh SS với ST) ghép với số 1 tuần của Thí nghiệm 2; hàng "2 ngày" không có ở Thí nghiệm 2. Chữ mới: 83% / 71%, bỏ hàng 2 ngày.'
+    ghi_chu: 'G1 #2: chữ cũ "81% / 75%" (số của Thí nghiệm 1: so sánh SS với ST) ghép với số 1 tuần của Thí nghiệm 2; hàng "2 ngày" không có ở Thí nghiệm 2. Chữ mới: 83% / 71%, bỏ hàng 2 ngày. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
+    review: dung
   - id: n24
     cau: 'Sau 1 tuần: nhóm đọc lại 40%, nhóm tự kiểm tra 61%.'
     loai: so-lieu
@@ -350,10 +370,11 @@ nhan_dinh:
     trich: Most students report rereading and highlighting, yet these techniques do not consistently boost students' performance
     vi_tri: 'Dunlosky 2013, tóm tắt: sinh viên báo cáo dựa nhiều vào đọc lại; Roediger & Karpicke: "the SSSS group recalled more than the SSST group (83% vs. 78%)" ở 5 phút'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "chính cái "thắng lợi" ngắn hạn này khiến nhiều người tin rằng đọc lại là cách học tốt" (khẳng định nguyên nhân, không nguồn). Chữ mới: "có thể khiến" (nguồn đã mở chỉ cho thấy sinh viên dùng nhiều đọc lại (Dunlosky) và nhóm đọc lại tự tin hơn (R&K), không chứng minh nguyên nhân).'
+    ghi_chu: 'Chữ cũ: "chính cái "thắng lợi" ngắn hạn này khiến nhiều người tin rằng đọc lại là cách học tốt" (khẳng định nguyên nhân, không nguồn). Chữ mới: "có thể khiến" (nguồn đã mở chỉ cho thấy sinh viên dùng nhiều đọc lại (Dunlosky) và nhóm đọc lại tự tin hơn (R&K), không chứng minh nguyên nhân). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
     luot_2_ghi_chu: Phần "có thể khiến nhiều người tin" là suy diễn có hedge, khớp với dữ liệu dự đoán.
+    review: dung
   - id: n27
     cau: Hiện tượng "cố nhớ lại giúp nhớ lâu hơn" được gọi là hiệu ứng kiểm tra (testing effect).
     loai: dinh-nghia
@@ -362,9 +383,10 @@ nhan_dinh:
     trich: a phenomenon referred to as the testing effect.
     vi_tri: Tóm tắt (Rowland 2014)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…hay luyện tập truy xuất (retrieval practice)". Đã bỏ vế "luyện tập truy xuất": không có nguồn đã mở dùng đúng tên ấy (Dunlosky dùng "practice testing").'
+    ghi_chu: 'Chữ cũ: "…hay luyện tập truy xuất (retrieval practice)". Đã bỏ vế "luyện tập truy xuất": không có nguồn đã mở dùng đúng tên ấy (Dunlosky dùng "practice testing"). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/a0037559" ]
+    review: dung
   - id: n28
     cau: Rowland (2014) gộp các nghiên cứu so sánh tự kiểm tra với đọc lại, cho độ lớn hiệu ứng trung bình g = 0,50, mức trung bình theo cách đọc độ lớn hiệu ứng của site.
     loai: so-lieu
@@ -378,17 +400,18 @@ nhan_dinh:
     luot_2_nguon: [ "https://doi.org/10.1037/a0037559" ]
     luot_2_ghi_chu: '"Trung bình" là cách đọc Cohen quen thuộc.'
   - id: n29
-    cau: Adesope và cộng sự (2017) gộp 118 bài báo, 272 hiệu ứng, 15.427 người tham gia, cho g = 0,61 khi so với mọi cách học không kiểm tra, và g = 0,51 khi so riêng với đọc lại, ở mức trung bình đến lớn.
+    cau: Adesope và cộng sự (2017) gộp 118 bài báo, 272 hiệu ứng, 15.427 người tham gia, cho g = 0,61 khi so với mọi cách học không kiểm tra (theo mô hình hiệu ứng cố định mà họ chọn; mô hình hiệu ứng ngẫu nhiên cho 0,70), và g = 0,51 khi so riêng với đọc lại, ở mức trung bình đến lớn.
     loai: so-lieu
     nguon:
       - adesope2017
-    trich: overall weighted mean effect size was moderately large and statistically significant, indicating the effectiveness of learning with practice tests (g = 0.61, p < .001) · mean effect size compared to restudying (g = 0.51), and a much larger weighted mean effect size (g = 0.93) when compared with filler or no activities.
+    trich: 'A total of 118 articles yielding 272 independent effect sizes involving 15,427 participants ... Under a fixed-effects model, ... g = 0.61 ... The overall result with a random-effects model showed a larger effect size ... (g = 0.70) ... we decided to use the fixed-effects model for all analyses. [Table 1: Restudying/rereading k = 195, g = 0.51]'
     vi_tri: Adesope và cộng sự (2017), theo G1-L01
     ket_qua: da-sua
-    ghi_chu: 'G1 #5: g = 0,61 là so với mọi điều kiện không kiểm tra; so riêng với đọc lại là 0,51. Chữ mới ghi cả hai. theo G1-L01 (22/10/2026): "118 articles yielding 272 independent effect sizes involving 15,427 participants" (KHỚP, L69).'
+    ghi_chu: 'G1 #5: g = 0,61 là so với mọi điều kiện không kiểm tra; so riêng với đọc lại là 0,51. Chữ mới ghi cả hai. theo G1-L01 (22/10/2026): "118 articles yielding 272 independent effect sizes involving 15,427 participants" (KHỚP, L69). Review (Claude Sonnet 5.5, 09/11/2026): sai. Mở toàn văn Adesope 2017 (bản WSU lưu ở Wayback Machine): xác nhận 15.427 người (một số trang thứ cấp ghi 15.472 là sai chữ số), g = 0,61 là hiệu ứng cố định, hiệu ứng ngẫu nhiên là 0,70, so với đọc lại 0,51 (hiệu ứng cố định, 195 hiệu ứng); I2 = 81%. Đã ghi mô hình trên trang. Nguồn nâng lên toàn văn.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.3102/0034654316689306" ]
     luot_2_ghi_chu: Mô hình hiệu ứng ngẫu nhiên cho g = 0,70; Adesope dùng 0,61 làm số chính. "Trung bình đến lớn" là cách diễn giải.
+    review: sai
   - id: n30
     cau: Dunlosky và cộng sự (2013) đánh giá 10 kỹ thuật học phổ biến, xếp ôn tập ngắt quãng và tự kiểm tra vào nhóm "hiệu quả cao", đọc lại và tô đậm vào nhóm "hiệu quả thấp".
     loai: phat-hien
@@ -411,10 +434,11 @@ nhan_dinh:
     ly_do: 'Phân tích tổng hợp 839 phép so sánh (317 thí nghiệm, 184 bài báo) cùng chiều trong nhiều loại tài liệu, cộng thí nghiệm lớn 1.350 người (Cepeda 2008) và nhiều nghiên cứu cùng chiều ("Many spacing studies"); không có thất bại tái lập lớn nào chưa giải thích trong các nguồn đã mở. Giới hạn ghi trên trang: 85% dữ liệu là người trẻ; các nhiệm vụ nhớ bằng lời.'
     nguon: *id001
     ket_qua: dung
-    ghi_chu: 'G1 L76 KHỚP; phần "nhiều nhóm người học" đã làm mềm theo G1 #6.'
+    ghi_chu: 'G1 L76 KHỚP; phần "nhiều nhóm người học" đã làm mềm theo G1 #6. Review (Claude Sonnet 5.5, 09/11/2026): dung. Vững chắc cho học rải: tổng hợp Cepeda 2006 + khớp nhãn ví dụ ở bat-dau/doc-nhan-chac-chan; giới hạn (nhiệm vụ nhớ bằng lời, 85% người trẻ) đã nêu trên trang.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1177/1529100612453266" ]
     luot_2_ghi_chu: "Đạt thước đo Vững chắc: có phân tích tổng hợp, nhất quán, có dữ liệu trẻ em dù 85% là người trẻ."
+    review: dung
   - id: n32
     cau: Học ngắt quãng vượt trội học dồn một cách nhất quán trong nhiều loại tài liệu, dù phần lớn dữ liệu đến từ người trẻ tuổi.
     loai: phat-hien
@@ -423,9 +447,10 @@ nhan_dinh:
     trich: Almost all distributed practice data in our analysis (85 percent) are based on performance of young adults
     vi_tri: 'Cepeda 2006 (theo G1 #6); "we cannot say for certain that children’s long-term memory will benefit from distributed practice."'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…trong nhiều loại tài liệu và nhiều nhóm người học." Chữ mới: "…nhiều loại tài liệu, dù phần lớn dữ liệu đến từ người trẻ tuổi" (G1-L01 #6).'
+    ghi_chu: 'Chữ cũ: "…trong nhiều loại tài liệu và nhiều nhóm người học." Chữ mới: "…nhiều loại tài liệu, dù phần lớn dữ liệu đến từ người trẻ tuổi" (G1-L01 #6). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
+    review: dung
   - id: n33
     cau: Hiệu ứng ngắt quãng đã được tìm thấy trong hàng trăm thí nghiệm.
     loai: so-lieu
@@ -434,9 +459,10 @@ nhan_dinh:
     trich: This review found 839 assessments of distributed practice in 317 experiments located in 184 articles.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Đây là một trong những phát hiện được lặp lại nhiều nhất trong tâm lý học học tập." (so sánh tối cấp không nguồn); chữ mới nói số thí nghiệm.'
+    ghi_chu: 'Chữ cũ: "Đây là một trong những phát hiện được lặp lại nhiều nhất trong tâm lý học học tập." (so sánh tối cấp không nguồn); chữ mới nói số thí nghiệm. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
+    review: dung
   - id: n34
     cau: 'Vững chắc: tự kiểm tra giúp nhớ lâu hơn đọc lại.'
     loai: nhan
@@ -448,10 +474,11 @@ nhan_dinh:
     ly_do: 'Phân tích tổng hợp Rowland (2014; 159 hiệu ứng, 61 nghiên cứu, g = 0,50) và Adesope và cộng sự (2017; 118 bài báo, g = 0,51 so với đọc lại) cùng chiều với thí nghiệm gốc (Roediger & Karpicke 2006, d = 0,83–0,95 ở các mốc trễ); lợi ích thấy ở nhiều lứa tuổi theo Dunlosky (2013); không có tái lập lớn thất bại trong nguồn đã mở. Khớp nhãn "tự kiểm tra so với đọc lại: Vững chắc" ở bang-chung/do-lon-hieu-ung (đã khóa).'
     nguon: *id002
     ket_qua: dung
-    ghi_chu: 'Đã đối chiếu nhãn với bang-chung/do-lon-hieu-ung (bảng "Vài ví dụ", Rowland g = 0,50, Vững chắc): khớp. G1 L79 KHỚP.'
+    ghi_chu: 'Đã đối chiếu nhãn với bang-chung/do-lon-hieu-ung (bảng "Vài ví dụ", Rowland g = 0,50, Vững chắc): khớp. G1 L79 KHỚP. Review (Claude Sonnet 5.5, 09/11/2026): dung. Vững chắc: Rowland 2014 (g = 0,50; 159 hiệu ứng) và Adesope 2017 (g = 0,51 so với đọc lại, đối chiếu toàn văn). Khớp bang-chung/do-lon-hieu-ung (Rowland, Vững chắc). Trang nói rõ "kể cả không nhận được phản hồi" theo R&K 2006.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/a0037559", "https://doi.org/10.3102/0034654316689306" ]
     luot_2_ghi_chu: Đạt Vững chắc theo thước đo (phân tích tổng hợp, nhiều quần thể).
+    review: dung
   - id: n35
     cau: Thí nghiệm của Roediger và Karpicke (2006), hai phân tích tổng hợp (Rowland, 2014; Adesope và cộng sự, 2017) cho thấy việc cố nhớ lại củng cố trí nhớ dài hạn tốt hơn đọc lại, kể cả khi người học đọc ít hơn nhiều và không nhận được phản hồi.
     loai: phat-hien
@@ -476,10 +503,11 @@ nhan_dinh:
     ly_do: Tổng hợp Cepeda 2006 thấy khoảng cách tối ưu tăng cùng thời gian cần nhớ; Cepeda 2008 đo "đường gờ" cụ thể (hơn 1.350 người) nhưng là một thí nghiệm duy nhất, làm qua mạng với kiến thức chung, nên các con số cụ thể (20–40%, 5–10%, 1 / 11 / 21 / 21 ngày) chưa có tái lập độc lập.
     nguon: *id003
     ket_qua: dung
-    ghi_chu: 'Chỗ khó: chiều của quan hệ (tối ưu tăng theo RI) có cả phân tích tổng hợp ủng hộ, nên có thể đủ Vững chắc; giữ Khá vững vì các con số cụ thể dựa một thí nghiệm. Lượt 2 và review cân nhắc.'
+    ghi_chu: 'Chỗ khó: chiều của quan hệ (tối ưu tăng theo RI) có cả phân tích tổng hợp ủng hộ, nên có thể đủ Vững chắc; giữ Khá vững vì các con số cụ thể dựa một thí nghiệm. Lượt 2 và review cân nhắc. Review (Claude Sonnet 5.5, 09/11/2026): dung. Khá vững hợp lý: chiều của quan hệ (khoảng cách tối ưu tăng theo thời gian cần nhớ) có Cepeda 2006 (tổng hợp) ủng hộ, nhưng các con số cụ thể dựa một thí nghiệm (Cepeda 2008). Có thể xét Vững chắc cho phần chiều, nhưng nhãn đang gắn với khoảng cách "ôn tối ưu", nên giữ Khá vững.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
     luot_2_ghi_chu: "Khá vững hợp lý: chưa tái lập lớn, RI dài ít, chủ yếu người trẻ phương Tây."
+    review: dung
   - id: n37
     cau: Cepeda và cộng sự (2008) đo được "đường gờ" khoảng cách tối ưu dịch ra xa khi thời gian cần nhớ dài ra; kết quả này vững trong một nghiên cứu có kiểm soát (làm qua mạng) với tài liệu dạng sự kiện kiến thức chung; việc áp dụng con số cụ thể vào lớp học thực tế còn cần thêm nghiên cứu.
     loai: phat-hien
@@ -488,9 +516,10 @@ nhan_dinh:
     trich: This experiment was conducted on a web server
     vi_tri: 'Methods (Cepeda 2008); Tóm tắt: "many educational and practical contexts" (hàm ý áp dụng chưa kiểm)'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "vững trong điều kiện phòng thí nghiệm". Chữ mới: "một nghiên cứu có kiểm soát (làm qua mạng)" (G1 L82).'
+    ghi_chu: 'Chữ cũ: "vững trong điều kiện phòng thí nghiệm". Chữ mới: "một nghiên cứu có kiểm soát (làm qua mạng)" (G1 L82). Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
+    review: dung
   - id: n38
     cau: 'Đang tranh cãi: vì sao học ngắt quãng lại hiệu quả (cơ chế).'
     loai: nhan
@@ -501,9 +530,10 @@ nhan_dinh:
     ly_do: 'Cepeda 2008: các thuyết "deficient-processing" và "all-or-none" khó khớp dữ liệu; "encoding variability" và "study-phase retrieval" "potentially consistent"; mô phỏng ACT-R và SAM không khớp cả hai quy luật; Rowland 2014: "existing theories have not yet provided a cohesive account of testing phenomena". Hiện tượng vững, cơ chế chưa ngã ngũ.'
     nguon: *id004
     ket_qua: dung
-    ghi_chu: 'Đã kiểm lại (G1 xếp "không kiểm được", diễn giải chung không nguồn): nay có hai nguồn.'
+    ghi_chu: 'Đã kiểm lại (G1 xếp "không kiểm được", diễn giải chung không nguồn): nay có hai nguồn. Review (Claude Sonnet 5.5, 09/11/2026): dung. Đang tranh cãi cho cơ chế: Rowland 2014 ("existing theories have not yet provided a cohesive account") và Cepeda 2008 (so các thuyết). Phù hợp thước đo vì hiện tượng vững, cơ chế chưa ngã ngũ; khung nói rõ hai tầng.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
+    review: dung
   - id: n39
     cau: Có nhiều lý thuyết cạnh tranh về cơ chế (mã hóa đa dạng ngữ cảnh, lần ôn gắng sức hơn vì đã quên một phần, củng cố giữa các buổi) và chưa có đồng thuận về cơ chế chính.
     loai: phat-hien
@@ -537,9 +567,10 @@ nhan_dinh:
     trich: Key results indicate support for the role of effortful processing as a contributor to the testing effect, with initial recall tests yielding larger testing benefits than recognition tests.
     vi_tri: 'Tóm tắt (Rowland 2014); Cepeda 2008: "study-phase retrieval (Murray, 1983)"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…chính nỗ lực đó củng cố dấu vết trí nhớ mạnh hơn. Đây cũng là lý do tự kiểm tra hiệu quả…" (khẳng định chắc). Chữ mới: "được cho là" và "một cách giải thích", kèm Rowland.'
+    ghi_chu: 'Chữ cũ: "…chính nỗ lực đó củng cố dấu vết trí nhớ mạnh hơn. Đây cũng là lý do tự kiểm tra hiệu quả…" (khẳng định chắc). Chữ mới: "được cho là" và "một cách giải thích", kèm Rowland. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1037/a0037559" ]
+    review: dung
   - id: n42
     cau: Giữa các buổi học, não tiếp tục củng cố những gì đã học, đặc biệt trong lúc ngủ; học dồn tước đi những khoảng nghỉ này; đây là một giả thuyết chưa được kiểm tra riêng trong các nghiên cứu trên.
     loai: phat-hien
@@ -549,9 +580,10 @@ nhan_dinh:
     trich: Sleep has been identified as a state that optimizes the consolidation of newly acquired information in memory, depending on the specific conditions of learning and the timing of sleep.
     vi_tri: 'Tóm tắt (Diekelmann & Born 2010); Murre & Dros: "there is now very strong evidence that sleep does indeed have an effect on memory independent of the effects of, say, rest or lack of interference"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ không có câu "Đây là một giả thuyết chưa được kiểm tra riêng…": đã thêm, vì nguồn đã mở nói giấc ngủ củng cố trí nhớ, không nói đó là cơ chế của hiệu ứng ngắt quãng.'
+    ghi_chu: 'Chữ cũ không có câu "Đây là một giả thuyết chưa được kiểm tra riêng…": đã thêm, vì nguồn đã mở nói giấc ngủ củng cố trí nhớ, không nói đó là cơ chế của hiệu ứng ngắt quãng. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1038/nrn2762" ]
+    review: dung
   - id: n43
     cau: 'Tự kiểm tra có thể thắng đọc lại còn vì giúp ta nhận ra điều mình chưa thuộc: nhóm đọc lại tin rằng mình sẽ nhớ tốt hơn nhóm tự kiểm tra, nhưng sau 1 tuần lại nhớ kém hơn.'
     loai: phat-hien
@@ -560,10 +592,11 @@ nhan_dinh:
     trich: subjects in the SSSS condition were more confident that they would remember the passage in 1 week than were subjects in the SSST or STTT condition
     vi_tri: Experiment 2, Results
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "việc cố nhớ lại còn giúp ta hiệu chỉnh cảm giác của mình… Tự kiểm tra phơi bày khoảng trống đó ngay lập tức" (lập luận không nguồn). Chữ mới ghi là "một khả năng" và dẫn kết quả có thật của R&K.'
+    ghi_chu: 'Chữ cũ: "việc cố nhớ lại còn giúp ta hiệu chỉnh cảm giác của mình… Tự kiểm tra phơi bày khoảng trống đó ngay lập tức" (lập luận không nguồn). Chữ mới ghi là "một khả năng" và dẫn kết quả có thật của R&K. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
     luot_2_ghi_chu: Vế dữ liệu đúng; vế cơ chế ("còn vì giúp nhận ra điều chưa thuộc") là giả thuyết có hedge, R&K không kiểm tra.
+    review: dung
   - id: n44
     cau: 'Vững chắc (chip): chia buổi học thành nhiều phiên ngắn, cách nhau.'
     loai: nhan
@@ -576,6 +609,8 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354" ]
+    ghi_chu: 'Review (Claude Sonnet 5.5, 09/11/2026): dung. Như n31.'
+    review: dung
   - id: n45
     cau: 'Thay vì một buổi 4 tiếng đêm trước thi, học 1 tiếng mỗi tối trong 4 tối: tổng thời gian như nhau, trí nhớ một tuần sau nhiều khả năng tốt hơn; đây là ứng dụng của phát hiện trong phân tích tổng hợp Cepeda và cộng sự (2006).'
     loai: loi-khuyen
@@ -585,9 +620,10 @@ nhan_dinh:
     trich: The 7-, 35-, 70-, and 350-day RIs yielded 10, 59, 111, and 77% improvement in recall for the optimal gap, as compared with the zero-day gap.
     vi_tri: Cepeda 2008, Results
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…tốt hơn hẳn. Đây là ứng dụng trực tiếp nhất của…". Chữ mới: "nhiều khả năng tốt hơn", "ứng dụng của phát hiện". Ở mốc 7 ngày, cải thiện 10% so với gap 0.'
+    ghi_chu: 'Chữ cũ: "…tốt hơn hẳn. Đây là ứng dụng trực tiếp nhất của…". Chữ mới: "nhiều khả năng tốt hơn", "ứng dụng của phát hiện". Ở mốc 7 ngày, cải thiện 10% so với gap 0. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
+    review: dung
   - id: n46
     cau: 'Vững chắc (chip): gấp sách lại và tự kiểm tra.'
     loai: nhan
@@ -601,6 +637,8 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/a0037559", "https://doi.org/10.3102/0034654316689306" ]
+    ghi_chu: 'Review (Claude Sonnet 5.5, 09/11/2026): dung. Như n34.'
+    review: dung
   - id: n47
     cau: Kể cả khi nhớ không ra, nỗ lực nhớ lại thất bại vẫn có ích, vì nó làm lần gặp lại sau đó hiệu quả hơn (Kornell, Hays và Bjork, 2009).
     loai: phat-hien
@@ -625,6 +663,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
     luot_2_ghi_chu: Khá vững thấp hơn thước đo, hợp lý.
+    ghi_chu: 'Review (Claude Sonnet 5.5, 09/11/2026): dung. Như n36.'
+    review: dung
   - id: n49
     cau: 'Theo Cepeda và cộng sự (2008): thi tuần sau thì ôn lại sau chừng một đến hai ngày; thi cuối kỳ sau vài tháng thì rải các lần ôn ra vài tuần; cần nhớ càng lâu, khoảng cách giữa các lần ôn càng dài; đừng ôn dồn mọi thứ vào tuần cuối trước kỳ thi lớn.'
     loai: loi-khuyen
@@ -633,10 +673,11 @@ nhan_dinh:
     trich: For the RIs of 7, 35, 70, and 350 days, the optimal gaps (of those included in the study) were 1, 11, 21, and 21 days, respectively, for recall data
     vi_tri: Results (Cepeda 2008)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "ôn lại sau vài ngày". Chữ mới: "chừng một đến hai ngày" (tối ưu đo được 1 ngày; 20–40% của 7 ngày là 1,4–2,8 ngày). "Vài tháng → vài tuần": RI 70 ngày tối ưu 21 ngày; RI 350 ngày tối ưu 21 ngày. Vế "đừng ôn dồn…" là hệ quả lời khuyên.'
+    ghi_chu: 'Chữ cũ: "ôn lại sau vài ngày". Chữ mới: "chừng một đến hai ngày" (tối ưu đo được 1 ngày; 20–40% của 7 ngày là 1,4–2,8 ngày). "Vài tháng → vài tuần": RI 70 ngày tối ưu 21 ngày; RI 350 ngày tối ưu 21 ngày. Vế "đừng ôn dồn…" là hệ quả lời khuyên. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
     luot_2_ghi_chu: '"Vài tuần" cho vài tháng khớp 5-10% của RI.'
+    review: dung
   - id: n50
     cau: 'Khá vững (chip): ngủ đủ giấc giữa các buổi học.'
     loai: nhan
@@ -647,10 +688,11 @@ nhan_dinh:
     ly_do: 'Giấc ngủ củng cố trí nhớ: tổng quan Diekelmann & Born (2010) ("sleep ... optimizes the consolidation of newly acquired information in memory") và Murre & Dros (2015): "very strong evidence that sleep does indeed have an effect on memory". Khá vững vì hai nguồn nói về giấc ngủ và củng cố trí nhớ nói chung; chưa có nguồn đã mở đo trực tiếp việc ngủ giữa các buổi học ngắt quãng có làm kết quả học ngắt quãng tốt hơn không.'
     nguon: *id008
     ket_qua: dung
-    ghi_chu: 'Chỗ khó: nhãn Khá vững cho lời khuyên (ngủ đủ giấc giữa các buổi học) dựa trên nghiên cứu về giấc ngủ nói chung. Lượt 2/review cân nhắc.'
+    ghi_chu: 'Chỗ khó: nhãn Khá vững cho lời khuyên (ngủ đủ giấc giữa các buổi học) dựa trên nghiên cứu về giấc ngủ nói chung. Lượt 2/review cân nhắc. Review (Claude Sonnet 5.5, 09/11/2026): dung. Khá vững cho lời khuyên ngủ đủ giấc giữa các buổi học: Diekelmann & Born 2010 (tổng quan, giấc ngủ củng cố trí nhớ) cùng chiều; trang nói rõ các nghiên cứu về học ngắt quãng chưa tách vai trò giấc ngủ. Không cao hơn Khá vững là đúng.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1038/nrn2762" ]
     luot_2_ghi_chu: Khá vững hợp lý cho khuyến nghị gắn với học rải (chưa nghiên cứu trực tiếp).
+    review: dung
   - id: n51
     cau: Học dồn thâu đêm vừa không có khoảng nghỉ giữa các buổi, vừa lấy bớt thời gian ngủ, mà giấc ngủ là lúc nhiều quá trình củng cố trí nhớ diễn ra; một lịch học ngắt quãng "tự nhiên" đã bao gồm các đêm ngủ ở giữa; đó có thể là một phần lý do nó hiệu quả, nhưng các nghiên cứu về học ngắt quãng chưa tách riêng vai trò của giấc ngủ.
     loai: loi-khuyen
@@ -660,9 +702,10 @@ nhan_dinh:
     trich: Sleep has been identified as a state that optimizes the consolidation of newly acquired information in memory
     vi_tri: Tóm tắt (Diekelmann & Born 2010)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Học dồn thâu đêm vừa tước đi khoảng nghỉ giữa các buổi, vừa tước đi giấc ngủ — mà giấc ngủ là lúc não củng cố trí nhớ. … đó là một phần lý do nó hiệu quả." Chữ mới: "lấy bớt thời gian ngủ", "nhiều quá trình củng cố", "có thể là một phần lý do", và thêm câu giới hạn. Lý do: nguồn đã mở không nói giấc ngủ là lý do của hiệu ứng ngắt quãng.'
+    ghi_chu: 'Chữ cũ: "Học dồn thâu đêm vừa tước đi khoảng nghỉ giữa các buổi, vừa tước đi giấc ngủ — mà giấc ngủ là lúc não củng cố trí nhớ. … đó là một phần lý do nó hiệu quả." Chữ mới: "lấy bớt thời gian ngủ", "nhiều quá trình củng cố", "có thể là một phần lý do", và thêm câu giới hạn. Lý do: nguồn đã mở không nói giấc ngủ là lý do của hiệu ứng ngắt quãng. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.3.354", "https://doi.org/10.1111/j.1467-9280.2008.02209.x", "https://doi.org/10.1038/nrn2762" ]
+    review: dung
   - id: n52
     cau: Thí nghiệm của Roediger và Karpicke làm với sinh viên một trường đại học ở Mỹ; trong phân tích tổng hợp của Cepeda và cộng sự (2006), 85% dữ liệu đến từ người trẻ tuổi.
     loai: phat-hien
@@ -672,19 +715,22 @@ nhan_dinh:
     trich: One hundred eighty Washington University undergraduates, ages 18 to 24
     vi_tri: 'Experiment 2, Subjects; Cepeda 2006 (theo G1): "Almost all distributed practice data in our analysis (85 percent) are based on performance of young adults"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Phần lớn nghiên cứu… được thực hiện ở Mỹ và châu Âu, trên sinh viên đại học." Chữ mới chỉ nói điều kiểm được. "Washington University" ở St. Louis (Mỹ) suy từ tên trường, không nêu thành phố trong bài.'
+    ghi_chu: 'Chữ cũ: "Phần lớn nghiên cứu… được thực hiện ở Mỹ và châu Âu, trên sinh viên đại học." Chữ mới chỉ nói điều kiểm được. "Washington University" ở St. Louis (Mỹ) suy từ tên trường, không nêu thành phố trong bài. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x", "https://doi.org/10.1037/0033-2909.132.3.354" ]
+    review: dung
   - id: n53
-    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra các hiệu ứng này trên người Việt.
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên người Việt kiểm tra riêng các hiệu ứng này; có vài nghiên cứu về ứng dụng học từ vựng có ôn ngắt quãng (như Memrise) với học sinh Việt Nam, nhưng ứng dụng gộp nhiều yếu tố nên không cho biết riêng hiệu ứng ngắt quãng.
     loai: thoi-su
     nguon:
       - tim-kiem-vn
+      - memrise-vn2026
     het_han: '2028-11-01'
-    ket_qua: dung
-    ghi_chu: 'OpenAlex ngày 9/11/2026, ba truy vấn nêu ở danh sách nguồn: không có. Chưa tìm Google Scholar hay tạp chí trong nước.'
+    ket_qua: da-sua
+    ghi_chu: 'OpenAlex ngày 9/11/2026, ba truy vấn nêu ở danh sách nguồn: không có. Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Sonnet 5.5, 09/11/2026): sai. Chạy lại OpenAlex 9/11/2026 (bốn truy vấn mới: "spaced repetition Vietnamese students", "testing effect Vietnamese students retrieval practice", "distributed practice Vietnam learners vocabulary", "spacing effect Vietnamese EFL learners"): không có nghiên cứu thiết kế để kiểm tra riêng hiệu ứng ngắt quãng hay tự kiểm tra ở người Việt, nhưng có nhiều nghiên cứu Memrise ở học sinh, sinh viên Việt (ví dụ Nguyễn & Nguyễn 2026, 58 học sinh lớp 10, doi 10.62225/2583049x.2026.6.2.5923: "integrating spaced repetition and gamified practice"). Lượt 2 đúng khi nói có nghiên cứu gần kề. Chữ cũ: "chưa tìm thấy nghiên cứu nào kiểm tra các hiệu ứng này trên người Việt" có thể bị hiểu là không có gì liên quan. Chưa tìm Google Scholar hay tạp chí trong nước.'
     luot_2: khong-chac
     luot_2_ghi_chu: Câu có "chúng tôi chưa tìm thấy" nên không sai, nhưng có các nghiên cứu gần kề; nên thêm "kiểm tra trực tiếp" hay nêu giới hạn.
+    review: sai
   - id: n54
     cau: Dunlosky và cộng sự (2013) nhận xét rằng ôn tập ngắt quãng và tự kiểm tra có lợi cho người học ở nhiều lứa tuổi và năng lực khác nhau.
     loai: phat-hien
@@ -693,23 +739,25 @@ nhan_dinh:
     trich: they benefit learners of different ages and abilities and have been shown to boost students' performance across many criterion tasks and even in educational contexts.
     vi_tri: Tóm tắt (Dunlosky 2013)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "các hiệu ứng đã được tìm thấy lại ở nhiều quốc gia, lứa tuổi và môn học khác nhau, từ tiểu học đến y khoa" (G1: nguồn chỉ nói "different ages"; không có "nhiều quốc gia", "tiểu học đến y khoa"). Đã bỏ; câu "cách học dồn đêm trước thi lại đặc biệt phổ biến trong văn hóa thi cử nặng nề" cũng bỏ (không nguồn). Câu "đáng thử, không phải chân lý đã chứng minh trên người Việt" giữ: là lời thận trọng, không khẳng định thực nghiệm.'
+    ghi_chu: 'Chữ cũ: "các hiệu ứng đã được tìm thấy lại ở nhiều quốc gia, lứa tuổi và môn học khác nhau, từ tiểu học đến y khoa" (G1: nguồn chỉ nói "different ages"; không có "nhiều quốc gia", "tiểu học đến y khoa"). Đã bỏ; câu "cách học dồn đêm trước thi lại đặc biệt phổ biến trong văn hóa thi cử nặng nề" cũng bỏ (không nguồn). Câu "đáng thử, không phải chân lý đã chứng minh trên người Việt" giữ: là lời thận trọng, không khẳng định thực nghiệm. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/1529100612453266" ]
+    review: dung
   - id: n55
-    cau: Học dồn có thể cho kết quả tốt ở bài kiểm tra ngay sau đó, nhưng trí nhớ một tuần sau thường kém hơn học rải.
+    cau: 'Ngộ nhận: học dồn cho cảm giác thuộc bài ngay lúc đó, nhưng trí nhớ một tuần sau thường kém hơn học rải.'
     loai: phat-hien
     nguon:
       - cepeda2008
       - roediger2006
       - cepeda2006
-    trich: Many spacing studies have shown that no gap results in worse final test performance than does a brief gap.
+    trich: Spaced presentations led to markedly better final-test performance, compared with massed presentations. For retention intervals less than 1 min, spaced presentations improved final-test performance by 9% [Cepeda 2006]
     vi_tri: 'Cepeda 2008, mở bài; Roediger & Karpicke Exp. 2: sau 5 phút nhóm đọc lại 83% so với 71%'
-    ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Đúng cho bài kiểm tra ngay hôm sau, sai cho trí nhớ một tuần sau. Học dồn tối ưu cho kỳ thi, không tối ưu cho kiến thức." Chữ mới bỏ câu khẩu hiệu cuối và nói đúng mức: kết quả tốt ngay sau đó, trí nhớ một tuần sau "thường" kém hơn. Chú ý: "ngay hôm sau" cũ không có nguồn (nguồn nói 5 phút).'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đúng cho bài kiểm tra ngay hôm sau, sai cho trí nhớ một tuần sau. Học dồn tối ưu cho kỳ thi, không tối ưu cho kiến thức." Chữ mới bỏ câu khẩu hiệu cuối và nói đúng mức: kết quả tốt ngay sau đó, trí nhớ một tuần sau "thường" kém hơn. Chú ý: "ngay hôm sau" cũ không có nguồn (nguồn nói 5 phút). Review (Claude Sonnet 5.5, 09/11/2026): sai. Chữ cũ: "Học dồn có thể cho kết quả tốt ở bài kiểm tra ngay sau đó, nhưng…". Cepeda 2006 không thấy học dồn thắng ở bất kỳ khoảng giữ nào từ vài chục giây trở lên, nên "kết quả tốt ngay sau đó" thành lợi thế cho học dồn là quá mạnh (cùng lỗi với n2). Chữ mới chỉ nói cảm giác thuộc (R&K 2006: nhóm đọc lại tự tin hơn) và kết quả sau một tuần.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x", "https://doi.org/10.1037/0033-2909.132.3.354" ]
     luot_2_ghi_chu: Cepeda 2006 không thấy lợi thế học dồn ở khoảng giữ dưới 1 phút; câu "có thể" dựa vào Cepeda 2008, hợp lý.
+    review: sai
   - id: n56
     cau: Đọc lại tạo cảm giác quen thuộc, dễ nhầm với "đã thuộc"; trong thí nghiệm của Roediger và Karpicke, nhóm đọc lại tin rằng mình sẽ nhớ tốt hơn, nhưng sau 1 tuần lại nhớ kém hơn.
     loai: phat-hien
@@ -718,9 +766,10 @@ nhan_dinh:
     trich: subjects in the SSSS condition were more confident that they would remember the passage in 1 week than were subjects in the SSST or STTT condition
     vi_tri: Experiment 2, Results
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…Cảm giác trơn tru lúc học không dự báo trí nhớ dài hạn." Chữ mới dẫn kết quả cụ thể. "Cảm giác quen thuộc, dễ nhầm với đã thuộc" là mô tả của trang; R&K chỉ đo dự đoán nhớ sau 1 tuần.'
+    ghi_chu: 'Chữ cũ: "…Cảm giác trơn tru lúc học không dự báo trí nhớ dài hạn." Chữ mới dẫn kết quả cụ thể. "Cảm giác quen thuộc, dễ nhầm với đã thuộc" là mô tả của trang; R&K chỉ đo dự đoán nhớ sau 1 tuần. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
+    review: dung
   - id: n57
     cau: 'Chính hành động cố nhớ lại đã củng cố trí nhớ: kiểm tra là một cách học, không chỉ một cách chấm điểm.'
     loai: phat-hien
@@ -742,14 +791,16 @@ nhan_dinh:
     trich: The best fits were to the logarithmic function, the power function, the exponential in the square root of time, and the hyperbola in the square root of time.
     vi_tri: 'Rubin & Wenzel (1996), tóm tắt; Cepeda 2008: "The forgetting function for each gap is a power function" (chú thích Hình 4)'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "…nó chỉ làm mỗi lần ôn sau hiệu quả hơn lần trước." Chữ mới: "làm việc quên chậm hơn so với học dồn". Link tới vi-sao-ta-quen đã kiểm (n4).'
+    ghi_chu: 'Chữ cũ: "…nó chỉ làm mỗi lần ôn sau hiệu quả hơn lần trước." Chữ mới: "làm việc quên chậm hơn so với học dồn". Link tới vi-sao-ta-quen đã kiểm (n4). Review (Claude Sonnet 5.5, 09/11/2026): dung. Cepeda 2006 (toàn văn): "ISI, in contrast, has a large effect on the rate of forgetting. Specifically, as ISI increases, the rate of decay decreases, which is to say that longer ISIs produce more gradual forgetting curves." Khớp "làm việc quên chậm hơn".'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2008.02209.x" ]
+    review: dung
   - id: n59
     cau: 'Đọc thêm: ba trang "Vì sao ta quên?", "Ngủ có giúp nhớ bài?" và "Mỗi người có một phong cách học?" với mô tả ngắn.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: kham-pha/tri-nho/vi-sao-ta-quen, kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho, kham-pha/tri-nho/phong-cach-hoc có trong src/data/trang.yml với tiêu đề tương ứng; trang "Ngủ có giúp nhớ bài?" chưa lên bản build: thành chữ "sắp có". Câu "Ngủ và trí nhớ" ở mục Các lý thuyết cũng trỏ trang này.'
+    ghi_chu: 'Đã kiểm: kham-pha/tri-nho/vi-sao-ta-quen, kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho, kham-pha/tri-nho/phong-cach-hoc có trong src/data/trang.yml với tiêu đề tương ứng; trang "Ngủ có giúp nhớ bài?" chưa lên bản build: thành chữ "sắp có". Câu "Ngủ và trí nhớ" ở mục Các lý thuyết cũng trỏ trang này. Review (Claude Sonnet 5.5, 09/11/2026): dung. Ba trang có trong trang.yml, tiêu đề khớp (phong-cach-hoc: Mỗi người có một "phong cách học"?; vi-sao-ta-quen: Vì sao ta quên?; ngu-va-tri-nho: Ngủ có giúp nhớ bài?, trang cũ); trang chưa chuyển thì link thành "sắp có".'
+    review: dung
   - id: n60
     cau: 'Quiz 1: trong thí nghiệm của Roediger và Karpicke (2006), nhóm đọc lại thắng ở bài kiểm tra sau 5 phút (83% so với 71%) nhưng thua đậm sau 1 tuần (40% so với 61%).'
     loai: so-lieu
@@ -758,14 +809,16 @@ nhan_dinh:
     trich: 'On the 5-min test, recall was correlated with repeated studying: The SSSS group recalled more than the SSST group (83% vs. 78%), who in turn recalled more than the STTT group (71%).'
     vi_tri: Experiment 2, Results
     ket_qua: da-sua
-    ghi_chu: 'G1 #3: chữ cũ "81% so với 75%". Chữ mới 83% so với 71%.'
+    ghi_chu: 'G1 #3: chữ cũ "81% so với 75%". Chữ mới 83% so với 71%. Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
+    review: dung
   - id: n61
     cau: 'Quiz 2: phân tích tổng hợp của Cepeda (2006) là phân tích tổng hợp, không phải một thí nghiệm đơn lẻ; quy mô của nó là lý do kết luận "học ngắt quãng thắng học dồn" được gắn nhãn vững chắc.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: khung nhãn Vững chắc đầu tiên của trang dẫn đúng phân tích tổng hợp này (hồ sơ n31); số liệu 839/317/184 kiểm ở n11. Quy mô là một lý do trong n31 (không phải lý do duy nhất).'
+    ghi_chu: 'Đã kiểm: khung nhãn Vững chắc đầu tiên của trang dẫn đúng phân tích tổng hợp này (hồ sơ n31); số liệu 839/317/184 kiểm ở n11. Quy mô là một lý do trong n31 (không phải lý do duy nhất). Review (Claude Sonnet 5.5, 09/11/2026): dung. Nhãn Vững chắc đầu tiên của trang dẫn Cepeda 2006 với 839/317/184 (n11/n31); quy mô là một lý do chứ không phải lý do duy nhất, lời giải thích viết "là lý do" của kết luận được gắn nhãn, chấp nhận được.'
+    review: dung
   - id: n62
     cau: 'Quiz 3: các bài tự kiểm tra không có phản hồi đúng/sai, và bài kiểm tra cuối được làm sau 5 phút hoặc 1 tuần; học ít hơn mà nhớ lâu hơn.'
     loai: phat-hien
@@ -774,9 +827,10 @@ nhan_dinh:
     trich: Ninety subjects were given a final recall test following a 5-min retention interval, and 90 took a final test after 1 week.
     vi_tri: Experiment 2, Design
     ket_qua: da-sua
-    ghi_chu: 'G1 #4: chữ cũ "sau 5 phút, 2 ngày hoặc 1 tuần". Chữ mới "5 phút hoặc 1 tuần".'
+    ghi_chu: 'G1 #4: chữ cũ "sau 5 phút, 2 ngày hoặc 1 tuần". Chữ mới "5 phút hoặc 1 tuần". Review (Claude Sonnet 5.5, 09/11/2026): dung. Chữ cuối trên trang khớp trích và nguồn đã ghi (đối chiếu lại).'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1111/j.1467-9280.2006.01693.x" ]
+    review: dung
   - id: n63
     cau: 'Quiz 4: với khoảng cần nhớ dài (vài tháng), nên rải các lần ôn ra với khoảng cách dài hơn; khoảng cách tối ưu tăng theo thời gian cần nhớ, là quy tắc gần đúng, không phải công thức chính xác cho từng người.'
     loai: loi-khuyen
@@ -882,3 +936,18 @@ doi_chu:
   - cu: 'Giải thích quiz 1: "81% so với 75%"; quiz 3: "sau 5 phút, 2 ngày hoặc 1 tuần"; bảng Roediger và Karpicke: 120 sinh viên, hàng 5 phút 81%/75%, hàng 2 ngày'
     moi: 83% so với 71%; "5 phút hoặc 1 tuần"; 180 sinh viên, 83%/71%, bỏ hàng 2 ngày; g Adesope 0,61 so với mọi cách không kiểm tra, 0,51 so với đọc lại; khung Cepeda "dù phần lớn dữ liệu đến từ người trẻ tuổi"
     ly_do: Các sửa của G1-L01 đã áp trên trang cũ nên trang chuyển sang đã có (n19, n22, n23, n29, n32, n60, n62); ghi lại ở đây để hồ sơ đủ.
+  - cu: '"Ngay sau khi học xong, An có thể làm tốt hơn một chút — kiến thức còn "nóng"." và câu hỏi "Ở bài kiểm tra nào thì An làm tốt hơn, và ở bài kiểm tra nào thì Bình làm tốt hơn?"'
+    moi: '"Ngay sau khi học xong, chưa chắc An hơn Bình: các tổng hợp không thấy học dồn thắng ổn định ở bài kiểm tra ngay sau đó, dù kiến thức còn "nóng" khiến An dễ cảm thấy mình đã thuộc." và "Ở bài kiểm tra nào hai bạn khác nhau rõ nhất, và ai làm tốt hơn?"'
+    ly_do: Review n2.
+  - cu: '"Phải hơn một thế kỷ sau, các nhà nghiên cứu mới trả lời được câu hỏi của ông bằng hàng trăm thí nghiệm."'
+    moi: '"Hơn một thế kỷ sau, hàng trăm thí nghiệm đã kiểm tra lại điều ông thấy."'
+    ly_do: 'Review n9: Ebbinghaus đã thấy lợi ích của rải học.'
+  - cu: '"…cho g = 0,61 khi so với mọi cách học không kiểm tra, và g = 0,51 khi so riêng với đọc lại"'
+    moi: '"…(theo mô hình hiệu ứng cố định mà họ chọn; mô hình hiệu ứng ngẫu nhiên cho 0,70)…"'
+    ly_do: Review n29.
+  - cu: '"Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra các hiệu ứng này trên người Việt."'
+    moi: '"…chưa tìm thấy nghiên cứu nào trên người Việt kiểm tra riêng các hiệu ứng này." kèm câu về nghiên cứu Memrise và mục Nguồn'
+    ly_do: Review n53.
+  - cu: '"Học dồn có thể cho kết quả tốt ở bài kiểm tra ngay sau đó, nhưng trí nhớ một tuần sau thường kém hơn học rải."'
+    moi: '"Học dồn cho cảm giác thuộc bài ngay lúc đó, nhưng trí nhớ một tuần sau thường kém hơn học rải."'
+    ly_do: Review n55.

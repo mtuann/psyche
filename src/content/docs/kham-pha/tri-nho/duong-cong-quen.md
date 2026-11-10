@@ -15,10 +15,10 @@ Hai bạn cùng lớp ôn thi môn lịch sử, tổng thời gian học như nh
 
 Ngay sau buổi học cuối, cả hai làm thử một bài kiểm tra. Một tuần sau, cả hai làm lại bài kiểm tra đó. Hãy đoán:
 
-> Ở bài kiểm tra nào thì An làm tốt hơn, và ở bài kiểm tra nào thì Bình làm tốt hơn? Vì sao?
+> Ở bài kiểm tra nào hai bạn khác nhau rõ nhất, và ai làm tốt hơn? Vì sao?
 
 :::thu-gon[Xem đáp án]
-Ngay sau khi học xong, **An có thể làm tốt hơn một chút** — kiến thức còn "nóng". Nhưng một tuần sau, **nhiều khả năng Bình nhớ tốt hơn**. Đây không phải chuyện ý chí hay thông minh: đó là cách trí nhớ phản ứng với *thời điểm* của các buổi học, một hiệu ứng đã được đo đạc trong hàng trăm thí nghiệm.
+Ngay sau khi học xong, **chưa chắc An hơn Bình**: các tổng hợp không thấy học dồn thắng ổn định ở bài kiểm tra ngay sau đó, dù kiến thức còn "nóng" khiến An dễ *cảm thấy* mình đã thuộc. Nhưng một tuần sau, **nhiều khả năng Bình nhớ tốt hơn**. Đây không phải chuyện ý chí hay thông minh: đó là cách trí nhớ phản ứng với *thời điểm* của các buổi học, một hiệu ứng đã được đo đạc trong hàng trăm thí nghiệm.
 
 Bài này tập trung vào câu hỏi "học dồn hay học ngắt quãng"; còn *hình dạng* của việc quên theo thời gian được trình bày kỹ trong bài [Vì sao ta quên?](/psyche/kham-pha/tri-nho/vi-sao-ta-quen/).
 :::
@@ -27,7 +27,7 @@ Bài này tập trung vào câu hỏi "học dồn hay học ngắt quãng"; cò
 
 **Học dồn** (massed practice) là nhồi mọi thứ vào một buổi dài duy nhất. **Học ngắt quãng** (spaced/distributed practice) là chia cùng tổng thời gian thành nhiều buổi ngắn, cách nhau bởi những khoảng nghỉ. Học liền một mạch dễ *cảm thấy* hiệu quả, vì kiến thức còn tươi và ta làm bài tập trơn tru ngay lúc đó.
 
-Vấn đề là cảm giác trơn tru lúc học không dự báo được trí nhớ một tuần sau. Từ thế kỷ 19, Hermann Ebbinghaus (1885) đã đặt vấn đề này một cách khoa học: ông tự làm người tham gia duy nhất, học thuộc các danh sách âm tiết vô nghĩa (ví dụ minh họa của chúng tôi: "DAX", "BOK", "ZUF"), rồi đo xem mình quên nhanh đến đâu bằng phương pháp "tiết kiệm" — học lại nhanh hơn lần đầu bao nhiêu phần trăm. Ông cũng nhận thấy việc rải các buổi học ra nhiều ngày giúp ông tốn ít công sức học lại hơn. Nhưng Ebbinghaus chỉ là một người, với âm tiết vô nghĩa. Phải hơn một thế kỷ sau, các nhà nghiên cứu mới trả lời được câu hỏi của ông bằng hàng trăm thí nghiệm.
+Vấn đề là cảm giác trơn tru lúc học không dự báo được trí nhớ một tuần sau. Từ thế kỷ 19, Hermann Ebbinghaus (1885) đã đặt vấn đề này một cách khoa học: ông tự làm người tham gia duy nhất, học thuộc các danh sách âm tiết vô nghĩa (ví dụ minh họa của chúng tôi: "DAX", "BOK", "ZUF"), rồi đo xem mình quên nhanh đến đâu bằng phương pháp "tiết kiệm" — học lại nhanh hơn lần đầu bao nhiêu phần trăm. Ông cũng nhận thấy việc rải các buổi học ra nhiều ngày giúp ông tốn ít công sức học lại hơn. Nhưng Ebbinghaus chỉ là một người, với âm tiết vô nghĩa. Hơn một thế kỷ sau, hàng trăm thí nghiệm đã kiểm tra lại điều ông thấy.
 
 ## Nghiên cứu then chốt
 
@@ -63,7 +63,7 @@ Hiện tượng "cố nhớ lại giúp nhớ lâu hơn" được gọi là **hi
 Hai phân tích tổng hợp lớn xác nhận hiệu ứng này không phải chuyện riêng của một thí nghiệm:
 
 - Rowland (2014) gộp các nghiên cứu so sánh tự kiểm tra với đọc lại, cho độ lớn hiệu ứng trung bình **g = 0,50** — ở mức trung bình theo [cách đọc độ lớn hiệu ứng](/psyche/bang-chung/do-lon-hieu-ung/) ([Rowland, 2014](https://doi.org/10.1037/a0037559)).
-- Adesope và cộng sự (2017) gộp **118 bài báo, 272 hiệu ứng, 15.427 người tham gia**, cho **g = 0,61** khi so với mọi cách học không kiểm tra, và g = 0,51 khi so riêng với đọc lại — ở mức trung bình đến lớn ([Adesope và cộng sự, 2017](https://doi.org/10.3102/0034654316689306)).
+- Adesope và cộng sự (2017) gộp **118 bài báo, 272 hiệu ứng, 15.427 người tham gia**, cho **g = 0,61** khi so với mọi cách học không kiểm tra (theo mô hình hiệu ứng cố định mà họ chọn; mô hình hiệu ứng ngẫu nhiên cho 0,70), và g = 0,51 khi so riêng với đọc lại — ở mức trung bình đến lớn ([Adesope và cộng sự, 2017](https://doi.org/10.3102/0034654316689306)).
 
 Và trong bài tổng quan đánh giá 10 kỹ thuật học phổ biến, Dunlosky và cộng sự (2013) xếp **ôn tập ngắt quãng** và **tự kiểm tra** vào nhóm "hiệu quả cao", trong khi **đọc lại** và **tô đậm** rơi vào nhóm "hiệu quả thấp" ([Dunlosky và cộng sự, 2013](https://doi.org/10.1177/1529100612453266)).
 
@@ -117,13 +117,13 @@ Học dồn thâu đêm vừa không có khoảng nghỉ giữa các buổi, v�
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Thí nghiệm của Roediger và Karpicke làm với sinh viên một trường đại học ở Mỹ; trong phân tích tổng hợp của Cepeda và cộng sự (2006), 85% dữ liệu đến từ người trẻ tuổi. **Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra các hiệu ứng này trên người Việt.**
+Thí nghiệm của Roediger và Karpicke làm với sinh viên một trường đại học ở Mỹ; trong phân tích tổng hợp của Cepeda và cộng sự (2006), 85% dữ liệu đến từ người trẻ tuổi. **Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào trên người Việt kiểm tra riêng các hiệu ứng này.** Có vài nghiên cứu về ứng dụng học từ vựng có ôn ngắt quãng (như Memrise) với học sinh Việt Nam, nhưng ứng dụng gộp nhiều yếu tố (ví dụ trò chơi hóa), nên chúng không cho biết riêng hiệu ứng ngắt quãng (ví dụ: [Memrise với học sinh lớp 10 ở Việt Nam, 2026](https://doi.org/10.62225/2583049x.2026.6.2.5923)).
 
 Điều này không có nghĩa là kết quả không áp dụng được cho học sinh, sinh viên Việt Nam: Dunlosky và cộng sự (2013) nhận xét rằng ôn tập ngắt quãng và tự kiểm tra có lợi cho người học ở nhiều lứa tuổi và năng lực khác nhau. Nhưng một nghiên cứu trực tiếp trên học sinh, sinh viên Việt Nam sẽ rất có giá trị thực tiễn. Cho đến lúc đó, đây là những kỹ thuật đáng thử, không phải "chân lý đã chứng minh trên người Việt".
 
 ## Ngộ nhận liên quan
 
-- **"Học dồn đêm trước thi là hiệu quả vì sáng hôm sau ta nhớ được nhiều."** Học dồn có thể cho kết quả tốt ở bài kiểm tra ngay sau đó, nhưng trí nhớ một tuần sau thường kém hơn học rải.
+- **"Học dồn đêm trước thi là hiệu quả vì sáng hôm sau ta nhớ được nhiều."** Học dồn cho cảm giác thuộc bài ngay lúc đó, nhưng trí nhớ một tuần sau thường kém hơn học rải.
 - **"Đọc lại nhiều lần cho 'thấm'."** Đọc lại tạo cảm giác quen thuộc, dễ nhầm với "đã thuộc". Trong thí nghiệm của Roediger và Karpicke, nhóm đọc lại tin rằng mình sẽ nhớ tốt hơn, nhưng sau 1 tuần lại nhớ kém hơn.
 - **"Tự kiểm tra chỉ để đánh giá, không phải để học."** Chính hành động cố nhớ lại đã củng cố trí nhớ — kiểm tra là một *cách học*, không chỉ là một *cách chấm điểm*.
 - **"Quên nhanh lúc đầu nghĩa là mình học sai cách."** Quên nhanh lúc đầu là hình dạng chung của trí nhớ con người (xem [Vì sao ta quên?](/psyche/kham-pha/tri-nho/vi-sao-ta-quen/)). Học ngắt quãng không ngăn được việc quên, nó chỉ làm việc quên chậm hơn so với học dồn.
@@ -173,5 +173,6 @@ Thí nghiệm của Roediger và Karpicke làm với sinh viên một trường 
 - Ebbinghaus, H. (1885/1913). *Memory: A contribution to experimental psychology* (bản dịch tiếng Anh của Ruger & Bussenius). Chương 7 và 8. <https://psychclassics.yorku.ca/Ebbinghaus/memory7.htm>, <https://psychclassics.yorku.ca/Ebbinghaus/memory8.htm>
 - Diekelmann, S., & Born, J. (2010). The memory function of sleep. *Nature Reviews Neuroscience*, 11(2), 114–126. <https://doi.org/10.1038/nrn2762>
 - Kornell, N., Hays, M. J., & Bjork, R. A. (2009). Unsuccessful retrieval attempts enhance subsequent learning. *Journal of Experimental Psychology: Learning, Memory, and Cognition*, 35(4), 989–998. <https://doi.org/10.1037/a0015729>
+- Nguyễn, T. C., & Nguyễn, Q. N. (2026). Effects of the Memrise platform on vocabulary learning among Vietnamese Grade 10 EFL learners. *International Journal of Advanced Multidisciplinary Research and Studies*, 6(2), 31–40. <https://doi.org/10.62225/2583049x.2026.6.2.5923>
 - Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science*, 17(3), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>
 - Rowland, C. A. (2014). The effect of testing versus restudy on retention: A meta-analytic review of the testing effect. *Psychological Bulletin*, 140(6), 1432–1463. <https://doi.org/10.1037/a0037559>

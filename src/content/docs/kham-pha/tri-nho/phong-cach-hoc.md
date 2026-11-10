@@ -41,7 +41,7 @@ Kết luận của họ: rất ít nghiên cứu dùng thiết kế này, và tr
 ### Các tổng hợp gần đây
 
 - Một phân tích tổng hợp năm 2024 gộp 21 nghiên cứu (1.712 người) tìm thấy một lợi ích nhỏ trung bình (g = 0,31), nhưng chỉ **26%** số phép đo cho thấy kiểu kết quả bắt chéo cần thiết, và chất lượng nghiên cứu thấp. Chính các tác giả kết luận lợi ích này "quá nhỏ và quá hiếm" để áp dụng rộng rãi ([Clinton-Lisell và Litzinger, 2024](https://doi.org/10.3389/fpsyg.2024.1428732)).
-- Một tổng hợp năm 2025 dựa trên 17 phân tích tổng hợp thấy rằng ở các nghiên cứu thật sự kiểm tra việc dạy khớp phong cách, hiệu ứng gần bằng 0 (**d = 0,04**) ([Hattie và O'Leary, 2025](https://doi.org/10.1007/s10648-025-10002-w)).
+- Một tổng quan năm 2025 gộp 17 phân tích tổng hợp. Trong đó, bốn phân tích tổng hợp kiểm tra trực tiếp việc dạy khớp phong cách (143 nghiên cứu, 401 hiệu ứng) cho hiệu ứng gần bằng 0 (**d = 0,04**) ([Hattie và O'Leary, 2025](https://doi.org/10.1007/s10648-025-10002-w)).
 
 ### Nhưng gần như ai cũng tin
 
@@ -54,8 +54,8 @@ Kết luận của họ: rất ít nghiên cứu dùng thiết kế này, và tr
 Các nghiên cứu có thiết kế phù hợp gần như không tìm thấy lợi ích, và các tổng hợp gần nhất cho hiệu ứng từ nhỏ đến gần bằng 0 (các tác giả của phân tích tổng hợp 2024 cũng không khuyên áp dụng rộng rãi). Nói chính xác: nhiều phiên bản của ý tưởng này chưa bao giờ được kiểm tra đúng cách, nên khoa học không "chứng minh nó sai" theo nghĩa tuyệt đối. Nhưng sau hơn 15 năm tìm kiếm mà không thấy bằng chứng, việc dùng nó để thiết kế việc dạy và học là không có cơ sở.
 :::
 
-:::vung-chac[người ta có sở thích học khác nhau]
-Sở thích là có thật. Chỉ là các nghiên cứu cho đến nay gần như không thấy học theo cách mình thích làm mình học tốt hơn.
+:::kha-vung[người ta có sở thích học khác nhau]
+Khi được hỏi, trẻ em và người lớn đều nói ra sở thích về cách họ muốn được học ([Pashler và cộng sự, 2008](https://doi.org/10.1111/j.1539-6053.2009.01038.x)). Đây là bằng chứng từ tự khai, và chúng tôi chưa tìm thấy phân tích tổng hợp riêng cho điều này, nên chỉ xếp ở mức khá vững. Còn việc học theo cách mình thích có làm mình học tốt hơn hay không là chuyện khác: các nghiên cứu cho đến nay gần như không thấy (xem khung trên).
 :::
 
 ## Các lý thuyết giải thích

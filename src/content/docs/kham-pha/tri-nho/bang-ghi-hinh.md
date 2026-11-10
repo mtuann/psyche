@@ -36,7 +36,7 @@ Bằng chứng tâm lý học cho một hình ảnh khác: khi nhớ lại, ta t
 | *hit* (tông) | 34,0 |
 | *contacted* (chạm) | 31,8 |
 
-Cùng một đoạn phim, chỉ đổi một từ, ước lượng chênh nhau khoảng 9 dặm/giờ (khoảng 14 km/giờ). Trong khi đó, tốc độ thật của các xe lại ảnh hưởng rất ít: với bốn vụ va chạm dàn dựng ở 20, 30 và 40 dặm/giờ, ước lượng trung bình chỉ dao động từ 36,1 đến 39,7.
+Cùng một đoạn phim, chỉ đổi một từ, ước lượng chênh nhau khoảng 9 dặm/giờ (khoảng 14,5 km/giờ). Trong khi đó, tốc độ thật của các xe lại ảnh hưởng rất ít: với bốn vụ va chạm dàn dựng ở 20, 30 và 40 dặm/giờ, ước lượng trung bình chỉ dao động từ 36,1 đến 39,7.
 ::hinh{ten="loftus-verbs"}
 
 
@@ -53,11 +53,11 @@ Những người được hỏi bằng từ "đâm sầm" "nhớ" ra một chi t
 ## Mức độ chắc chắn
 
 :::vung-chac[trí nhớ được dựng lại và có thể bị thông tin sau sự kiện làm sai lệch]
-Hiện tượng thông tin sai lệch (*misinformation effect*) đã được nghiên cứu trong nhiều thập kỷ với nhiều kiểu thí nghiệm khác nhau; bài tổng quan của Elizabeth Loftus năm 2005 tổng kết 30 năm nghiên cứu về chủ đề này ([Loftus, 2005](https://doi.org/10.1101/lm.94705)).
+Hiện tượng thông tin sai lệch (*misinformation effect*) đã được nghiên cứu trong nhiều thập kỷ với nhiều kiểu thí nghiệm khác nhau; bài tổng quan của Elizabeth Loftus năm 2005 tổng kết 30 năm nghiên cứu về chủ đề này ([Loftus, 2005](https://doi.org/10.1101/lm.94705)). Một phân tích tổng hợp năm 2014 gộp 25 nghiên cứu cho thấy cảnh báo sau sự kiện giảm hiệu ứng thông tin sai lệch xuống còn dưới một nửa mức ban đầu ([Blank và Launay, 2014](https://doi.org/10.1037/h0101798)). Một phân tích tổng hợp 480 nghiên cứu (bản thảo chưa qua bình duyệt, 2026) thấy hiệu ứng trung bình khá lớn (g ≈ 0,69) nhưng rất không đồng đều giữa các nghiên cứu ([Edmar và cộng sự, 2026](https://doi.org/10.31234/osf.io/m68kf_v6)).
 :::
 
 :::kha-vung[kết quả cụ thể của thí nghiệm Loftus và Palmer]
-Kết quả gốc rõ ràng và phù hợp với rất nhiều nghiên cứu sau đó. Nhưng mẫu nhỏ (9 người mỗi động từ ở thí nghiệm 1), và tính đến 11/2026, theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại trong một dự án tái lập quy mô lớn, đăng ký trước. Bản thân các tác giả cũng nêu hai cách giải thích (xem dưới).
+Kết quả gốc rõ ràng và phù hợp với rất nhiều nghiên cứu sau đó. Nhưng mẫu nhỏ (9 người mỗi động từ ở thí nghiệm 1). Tính đến 11/2026, theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa có kết quả tái lập quy mô lớn, đăng ký trước. Một bản làm lại nhỏ năm 2021 không thấy cách đặt câu hỏi ("chạm" hay "đâm sầm") ảnh hưởng đến ước lượng tốc độ ([Raghunath và cộng sự, 2021](https://doi.org/10.1177/1071181321651302)), và một dự án tái lập quốc tế khoảng 20 ngôn ngữ đang được chuẩn bị ([Zwaan, 6/2026](https://rolfzwaan.substack.com/p/replication-through-a-kaleidoscope)). Bản thân các tác giả cũng nêu hai cách giải thích (xem dưới).
 :::
 
 ## Các lý thuyết giải thích
@@ -120,6 +120,10 @@ Xem thêm các ngộ nhận khác ở trang [Ngộ nhận](/psyche/ngo-nhan/).
 
 ## Nguồn
 
+- Blank, H., & Launay, C. (2014). How to protect eyewitness memory against the misinformation effect: A meta-analysis of post-warning studies. *Journal of Applied Research in Memory and Cognition*, 3(2), 77–88. <https://doi.org/10.1037/h0101798>
+- Edmar, B. A., Enquist, N. S. A., & Luke, T. J. (2026). What fifty years of research on the misinformation effect can tell us: A meta-analytic review [bản thảo chưa qua bình duyệt]. *PsyArXiv*. <https://doi.org/10.31234/osf.io/m68kf_v6>
 - Loftus, E. F., & Palmer, J. C. (1974). Reconstruction of automobile destruction: An example of the interaction between language and memory. *Journal of Verbal Learning and Verbal Behavior*, 13(5), 585–589. <https://doi.org/10.1016/S0022-5371(74)80011-3> (số liệu đối chiếu trực tiếp từ Bảng 1, Bảng 2 và phần Kết quả của bài báo gốc)
 - Loftus, E. F. (2005). Planting misinformation in the human mind: A 30-year investigation of the malleability of memory. *Learning & Memory*, 12(4), 361–366. <https://doi.org/10.1101/lm.94705>
+- Raghunath, N., Fultz, A. A., & Sanchez, C. A. (2021). Car crash speed estimates not biased by leading questions. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting*, 65(1), 848–853. <https://doi.org/10.1177/1071181321651302>
 - Simons, D. J., & Chabris, C. F. (2011). What people believe about how memory works: A representative survey of the U.S. population. *PLoS ONE*, 6(8), e22757. <https://doi.org/10.1371/journal.pone.0022757>
+- Zwaan, R. A. (2026, 2 tháng 6). Replication through a kaleidoscope [bài blog]. <https://rolfzwaan.substack.com/p/replication-through-a-kaleidoscope>
