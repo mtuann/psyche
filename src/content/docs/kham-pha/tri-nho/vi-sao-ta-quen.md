@@ -4,6 +4,8 @@ description: Đường cong quên của Ebbinghaus, lần tái lập năm 2015, 
 in_duoc: true
 ---
 
+::tom-tat
+
 ## Tự trải nghiệm
 
 Năm 1879, một nhà nghiên cứu người Đức tên Hermann Ebbinghaus tự học thuộc các danh sách âm tiết vô nghĩa như "DAX", "BOK", "ZUF", rồi đo xem mình quên nhanh đến đâu. Hãy đoán:
