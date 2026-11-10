@@ -71,3 +71,14 @@ Nguồn mới mở ở review (toàn văn): Amir & Firestone 2026 (bản chấp 
 7. Bốn bản kiểm định này sửa trang nên **mở khóa là không cần** (chưa khóa); khi khóa, `khoa.mjs` sẽ tính lại mã băm.
 
 Model: Claude Sonnet 5.5. File chạm: bốn trang `.md` và bốn hồ sơ `.yml` của lô; báo cáo này.
+
+## Review lần 2 (sau lượt 2 cả trang)
+
+Ngày 10/11/2026, Claude Sonnet 5.5. Phạm vi: bốn câu `da-nhiem-so` mà lượt 2 phần còn lại (`luot-2-c.yml`) chấm quá mạnh: n6, n31, n42, n44. Cả bốn đã được bỏ khỏi trang (`ket_qua: da-bo`) ở review lần 1; lượt 2 chấm chữ gốc của hồ sơ. Đã đối chiếu lại trang: không còn câu nào trong bốn câu, quiz và hộp tóm tắt không dựa vào chúng.
+
+- n6: dung (bỏ là đúng). "Các nền tảng bán chú ý… mỗi thông báo là cái móc câu… ngành nghìn tỷ đô" đã bỏ; trang chỉ giữ Simon (1971). Không thêm câu thay vì số Magna/GroupM chưa mở toàn văn.
+- n31: dung. "Vòng xoáy chú ý: nền tảng khai thác kẽ hở → kiểm tra liên tục → suy yếu chú ý" đã bỏ; n26, n28 trên trang đã nêu hai chiều, "chưa có bằng chứng quyết định".
+- n42: dung. "Nền kinh tế chú ý vận hành ở Việt Nam với cường độ không kém nơi nào" đã bỏ; mục "Ở Việt Nam" chỉ nói "Tính đến 11/2026, chưa tìm thấy nghiên cứu thực nghiệm… trên người Việt".
+- n44: dung. "Nhạc không lời… che tiếng ồn; nhạc có lời… luôn tranh chú ý" đã bỏ; ngộ nhận nghe nhạc không còn trên trang.
+
+Không sửa trang. Chỉ thêm "Review lần 2 (Claude Sonnet 5.5, 10/11/2026): dung…" vào cuối `ghi_chu` của bốn câu trong hồ sơ.
