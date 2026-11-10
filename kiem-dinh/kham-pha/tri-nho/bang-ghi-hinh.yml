@@ -4,570 +4,653 @@ nguon_cu: ../psyche-zero/docs/kham-pha/tri-nho/bang-ghi-hinh.md
 tang: loi
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-09'
-  nhanh: moi/d5-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L1 phần 1/2)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-09'
+    nhanh: moi/d5-l1
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L1 phần 1/2)
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
-- id: loftus1974
-  ten: 'Loftus & Palmer (1974), J Verbal Learn Verbal Behav 13(5), 585–589: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
-  link: https://doi.org/10.1016/S0022-5371(74)80011-3
-  toan_van: true
-- id: loftus2005
-  ten: 'Loftus (2005), Learn Mem 12(4), 361–366: tóm tắt (Europe PMC, PubMed 16027179); các câu khác theo G1-L01'
-  link: https://doi.org/10.1101/lm.94705
-  toan_van: false
-- id: blank2014
-  ten: 'Blank & Launay (2014), J Appl Res Mem Cogn 3(2): tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1037/h0101798
-  toan_van: false
-- id: simons2011
-  ten: 'Simons & Chabris (2011), PLoS ONE 6(8), e22757: toàn văn (PMC3149610)'
-  link: https://doi.org/10.1371/journal.pone.0022757
-  toan_van: true
-- id: zwaan2025
-  ten: Zwaan (8/9/2025), blog "Memory, misinformation and the need for replication" (bậc 3; ý kiến của một nhà nghiên cứu về tái lập, dùng cho câu thời sự)
-  link: https://rolfzwaan.substack.com/p/memory-misinformation-and-the-need
-  toan_van: true
-- id: lamb2007
-  ten: 'Lamb và cộng sự (2007), Child Abuse Negl 31(11–12), 1201–1231: tóm tắt (Europe PMC, PubMed)'
-  link: https://doi.org/10.1016/j.chiabu.2007.03.021
-  toan_van: false
-- id: tim-kiem-vn
-  ten: 'Tìm trên OpenAlex (9/11/2026): "replication Loftus Palmer 1974 smashed broken glass", "Loftus Palmer multi-lab replication leading question", "memory misinformation Vietnamese participants":
-    không có tái lập lớn đăng ký trước; không có nghiên cứu trên người Việt'
-  link: https://api.openalex.org/works?search=replication%20Loftus%20Palmer%201974%20smashed%20broken%20glass
+  - id: loftus1974
+    ten: 'Loftus & Palmer (1974), J Verbal Learn Verbal Behav 13(5), 585–589: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1016/S0022-5371(74)80011-3
+    toan_van: true
+  - id: loftus2005
+    ten: 'Loftus (2005), Learn Mem 12(4), 361–366: tóm tắt (Europe PMC, PubMed 16027179); các câu khác theo G1-L01'
+    link: https://doi.org/10.1101/lm.94705
+    toan_van: false
+  - id: blank2014
+    ten: 'Blank & Launay (2014), J Appl Res Mem Cogn 3(2): tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/h0101798
+    toan_van: false
+  - id: simons2011
+    ten: 'Simons & Chabris (2011), PLoS ONE 6(8), e22757: toàn văn (PMC3149610)'
+    link: https://doi.org/10.1371/journal.pone.0022757
+    toan_van: true
+  - id: zwaan2025
+    ten: Zwaan (8/9/2025), blog "Memory, misinformation and the need for replication" (bậc 3; ý kiến của một nhà nghiên cứu về tái lập, dùng cho câu thời sự)
+    link: https://rolfzwaan.substack.com/p/memory-misinformation-and-the-need
+    toan_van: true
+  - id: lamb2007
+    ten: 'Lamb và cộng sự (2007), Child Abuse Negl 31(11–12), 1201–1231: tóm tắt (Europe PMC, PubMed)'
+    link: https://doi.org/10.1016/j.chiabu.2007.03.021
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (9/11/2026): "replication Loftus Palmer 1974 smashed broken glass", "Loftus Palmer multi-lab replication leading question", "memory misinformation Vietnamese participants": không có tái lập lớn đăng ký trước; không có nghiên cứu trên người Việt'
+    link: https://api.openalex.org/works?search=replication%20Loftus%20Palmer%201974%20smashed%20broken%20glass
 nhan_dinh:
-- id: n1
-  cau: Thí nghiệm Loftus và Palmer (1974) cho thấy chỉ một động từ trong câu hỏi cũng làm thay đổi điều nhân chứng ước lượng và có thể cả điều họ nhớ.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: The question, "About how fast were the cars going when they smashed into each other ?" elicited higher estimates of speed than questions which used the verbs collided, bumped, contacted,
-    or hit in place of smashed.
-  vi_tri: Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Mô tả (description) của trang. Chữ cũ: "…làm thay đổi ký ức của nhân chứng"; chữ mới: "…thay đổi điều nhân chứng ước lượng và có thể cả điều họ nhớ". Lý do: các tác giả viết "consistent
-    with the view that the questions asked subsequent to an event can cause a reconstruction in one''s memory" (phù hợp với quan điểm), không viết là đã chứng minh.'
-- id: n2
-  cau: Nếu bạn bắt đầu "thấy" lại bát canh trong đầu, đó có thể là ký ức thật, hoặc là một mảnh vừa được câu hỏi ghép thêm; rất khó phân biệt hai trường hợp từ bên trong.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: Over time, information from these two sources may be integrated in such a way that we are unable to tell from which source some specific detail is recalled.
-  vi_tri: Mục Discussion, tr. 588
-  ket_qua: dung
-  ghi_chu: Tình huống bữa canh là ví dụ giả định (gia-dinh) của trang; chỉ phần nhận định chung "khó phân biệt nguồn của chi tiết" được kiểm.
-- id: n3
-  cau: 'Điều thí nghiệm dưới đây đo được: người nghe câu hỏi có từ dẫn dắt "nhớ" ra chi tiết không có trong sự kiện.'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: those subjects who received the verb smashed were more likely to say "yes" to the question, "Did you see any broken glass?", even though broken glass was not present in the film.
-  vi_tri: Tóm tắt
-  ket_qua: dung
-- id: n4
-  cau: 'Nhiều người hình dung trí nhớ như một cuốn băng: sự kiện được ghi lại nguyên vẹn, ký ức có thể mờ đi nhưng không bị sửa.'
-  loai: phat-hien
-  nguon:
-  - simons2011
-  trich: 'Video Memory: 63.0% agreed that “human memory works like a video camera, accurately recording the events we see and hear so that we can review and inspect them later.”'
-  vi_tri: Results, mục Video Memory
-  ket_qua: dung
-  ghi_chu: Câu mô tả niềm tin phổ biến; dựa vào mục khảo sát. Vế "không bị sửa" là cách diễn giải của trang cho "ghi lại chính xác".
-- id: n5
-  cau: Trong một khảo sát đại diện ở Mỹ, 63% người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim.
-  loai: so-lieu
-  nguon:
-  - simons2011
-  trich: 'Video Memory: 63.0% agreed that “human memory works like a video camera, accurately recording the events we see and hear so that we can review and inspect them later.”'
-  vi_tri: Results, mục Video Memory
-  ket_qua: dung
-  ghi_chu: 'theo G1-L01 (22/10/2026): KHỚP (Simons & Chabris, 2011).'
-- id: n6
-  cau: Khảo sát ấy làm năm 2009 và công bố năm 2011.
-  loai: lich-su
-  nguon:
-  - simons2011
-  trich: We hired SurveyUSA to poll a nationally representative sample of the United States population during a one-week period in June 2009
-  vi_tri: Methods, Study sample
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "khảo sát đại diện ở Mỹ năm 2011"; chữ mới: "làm năm 2009, công bố năm 2011". Lý do: G1-L01 mục Cần sửa #1 (22/10/2026); đã kiểm lại ở toàn văn PMC. Năm công bố 2011 theo thông
-    tin của bài (PLoS ONE 6(8), e22757).'
-- id: n7
-  cau: 'Khi nhớ lại, ta thường dựng lại sự kiện từ các mảnh: một phần từ những gì thật sự đã thấy, một phần từ thông tin đến sau sự kiện, kể cả điều người khác kể và chính câu hỏi khiến ta phải
-    nhớ.'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  - loftus2005
-  trich: we would like to propose that two kinds of information go into one's memory for some complex occurrence. The first is information gleaned during the perception of the original event;
-    the second is external information supplied after the fact.
-  vi_tri: Loftus & Palmer, Discussion, tr. 588
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "mỗi lần nhớ lại, ta dựng lại sự kiện từ các mảnh: một phần từ những gì thật sự đã thấy, một phần từ hiểu biết chung, từ điều người khác kể, và từ chính câu hỏi… Phần lớn thời
-    gian, việc dựng lại này đủ chính xác." Chữ mới bỏ "hiểu biết chung" (nguồn đã mở không nói), đổi "mỗi lần" thành "thường", bỏ "phần lớn thời gian… đủ chính xác" (không có nguồn đã mở nói điều
-    ấy).'
-- id: n8
-  cau: Việc dựng lại này có thể bị dẫn dắt.
-  loai: phat-hien
-  nguon:
-  - loftus2005
-  trich: The misinformation effect refers to the impairment in memory for the past that arises after exposure to misleading information.
-  vi_tri: Tóm tắt (Europe PMC)
-  ket_qua: dung
-- id: n9
-  cau: Thí nghiệm 1 có 45 sinh viên.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Forty-five students participated in groups of various sizes.
-  vi_tri: Experiment I, Method
-  ket_qua: dung
-- id: n10
-  cau: Họ xem 7 đoạn phim ngắn (5–30 giây) về tai nạn giao thông.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Seven films were shown, each depicting a traffic accident. [...] The length of the film segments ranged from 5 to 30 sec.
-  vi_tri: Experiment I, Method
-  ket_qua: dung
-- id: n11
-  cau: Họ trả lời câu hỏi về tốc độ của hai xe khi "va" nhau, trong đó động từ thay đổi giữa các nhóm.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: About how fast were the cars going when they smashed into each other?
-  vi_tri: Experiment I, Method; tr. 586
-  ket_qua: dung
-  ghi_chu: Câu hỏi gốc bằng tiếng Anh; câu tiếng Việt của trang là bản dịch minh họa (xem n47).
-- id: n12
-  cau: Mỗi nhóm 9 người nhận một động từ khác nhau.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Nine subjects were asked, "About how fast were the cars going when they hit each other?" Equal numbers of the remaining subjects were interrogated with the verbs smashed, collided, bumped,
-    and contacted in place of hit.
-  vi_tri: Experiment I, Method
-  ket_qua: dung
-  ghi_chu: '45 người chia đều cho 5 động từ: 9 người mỗi động từ.'
-- id: n13
-  cau: 'Tốc độ ước lượng trung bình (dặm/giờ): smashed 40,8; collided 39,3; bumped 38,1; hit 34,0; contacted 31,8.'
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Smashed 40.8 Collided 39.3 Bumped 38.1 Hit 34.0 Contacted 31.8
-  vi_tri: Table 1, Experiment I, Results
-  ket_qua: dung
-  ghi_chu: 'Cũng là số trong hình loftus-verbs (cột 31,8 / 34,0 / 38,1 / 39,3 / 40,8, thứ tự tăng dần): khớp Bảng 1; chữ hình "dặm/giờ", tên năm động từ, tiêu đề trục và chú thích đúng. Hình đúng,
-    không cần sửa.'
-- id: n14
-  cau: 'Bản dịch tiếng Việt: smashed là "đâm sầm", collided "va chạm", bumped "đụng", hit "tông", contacted "chạm".'
-  loai: dinh-nghia
-  nguon:
-  - loftus1974
-  trich: Smashed 40.8 Collided 39.3 Bumped 38.1 Hit 34.0 Contacted 31.8
-  vi_tri: Table 1
-  ket_qua: dung
-  ghi_chu: 'Bản dịch minh họa của trang; trang tự ghi là minh họa (mục Ở Việt Nam). Kiểm: năm động từ gốc đúng và đủ.'
-- id: n15
-  cau: Cùng một đoạn phim, chỉ đổi một từ, ước lượng chênh nhau khoảng 9 dặm/giờ (khoảng 14 km/giờ).
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Smashed 40.8 ... Contacted 31.8
-  vi_tri: Table 1
-  ket_qua: dung
-  ghi_chu: 'theo G1-L01 (22/10/2026): 40,8 − 31,8 = 9 dặm/giờ ≈ 14,5 km/giờ (1 dặm = 1,609 km). Kiểm lại phép tính. Các nhóm xem cùng bộ phim (mỗi nhóm một thứ tự phim khác nhau): "A different
-    ordering of the films was presented to each group of subjects."'
-- id: n16
-  cau: Bốn trong bảy đoạn phim là va chạm dàn dựng ở 20, 30 và 40 dặm/giờ.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Four of the seven films were staged crashes; [...] One collision took place at 20 mph, one at 30, and two at 40.
-  vi_tri: Experiment I, Results
-  ket_qua: dung
-- id: n17
-  cau: Với các vụ va chạm dàn dựng ấy, ước lượng trung bình chỉ dao động từ 36,1 đến 39,7 dặm/giờ.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: 'The mean estimates of speed for these four films were: 37.7, 36.2, 39.7, and 36.1 mph, respectively.'
-  vi_tri: Experiment I, Results
-  ket_qua: dung
-  ghi_chu: Giá trị nhỏ nhất 36,1, lớn nhất 39,7.
-- id: n18
-  cau: Tốc độ thật của các xe ảnh hưởng rất ít đến ước lượng, còn cách đặt câu hỏi ảnh hưởng nhiều.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: The actual speed of the vehicles controlled little variance in subject reporting, while the phrasing of the question controlled considerable variance.
-  vi_tri: Experiment I, Discussion
-  ket_qua: dung
-- id: n19
-  cau: Có thể người tham gia chỉ "chiều theo" từ ngữ của câu hỏi, còn ký ức thì không đổi.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: A subject is uncertain whether to say 30 mph or 40 mph, for example, and the verb smashed biases his response towards the higher estimate.
-  vi_tri: Experiment I, Discussion
-  ket_qua: dung
-  ghi_chu: Cách giải thích thứ nhất của các tác giả (response bias); là điều trang nêu như một khả năng.
-- id: n20
-  cau: Thí nghiệm 2 có 150 sinh viên xem một đoạn phim về một vụ tai nạn.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: One hundred and fifty students participated in this experiment, in groups of various sizes. A film depicting a multiple car accident was shown, followed by a questionnaire.
-  vi_tri: Experiment II, Method
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "150 sinh viên khác xem…"; chữ mới bỏ "khác": bài không nói nhóm này khác nhóm ở thí nghiệm 1.'
-- id: n21
-  cau: 50 người được hỏi với từ "smashed" (đâm sầm), 50 người với "hit" (tông), 50 người không được hỏi về tốc độ.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Fifty subjects were asked, "About how fast were the cars going when they smashed into each other?" Fifty subjects were asked, "About how fast were the cars going when they hit each other?"
-    Fifty subjects were not interrogated about vehicular speed.
-  vi_tri: Experiment II, Method
-  ket_qua: dung
-- id: n22
-  cau: 'Một tuần sau, tất cả được hỏi: "Bạn có thấy kính vỡ không?"'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: One week later, the subjects returned and without viewing the film again they answered a series of questions about the accident. The critical question here was, "Did you see any broken
-    glass ?"
-  vi_tri: Experiment II, Method
-  ket_qua: dung
-- id: n23
-  cau: Trong phim không có kính vỡ.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: There was no broken glass in the accident
-  vi_tri: Experiment II, Method
-  ket_qua: dung
-- id: n24
-  cau: 'Số người trả lời "Có": nhóm đâm sầm 16/50 (32%), nhóm tông 7/50 (14%), nhóm không hỏi tốc độ 6/50 (12%).'
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Yes 16 7 6 No 34 43 44 [...] the probability of saying "yes," P(Y), to the question about broken glass is .32 when the verb smashed is used, and .14 with hit.
-  vi_tri: Table 2 và Experiment II, Results
-  ket_qua: dung
-  ghi_chu: 12% = 6/50 là phép tính của trang (bài chỉ ghi .32 và .14).
-- id: n25
-  cau: Những người được hỏi bằng từ "đâm sầm" "nhớ" ra một chi tiết không hề tồn tại với tỉ lệ hơn gấp đôi so với hai nhóm còn lại.
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Yes 16 7 6
-  vi_tri: Table 2
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Một động từ được nghe một tuần trước đã khiến gấp đôi số người nhớ ra một chi tiết không hề tồn tại." Chữ mới tả đúng phép so sánh: 32% so với 14% và 12% (2,3 và 2,7 lần),
-    và không nói "đã khiến" (nhân quả) trong một câu số liệu. Bài chỉ báo chi-square toàn bảng (χ²(2) = 7,76), không kiểm riêng từng cặp.'
-- id: n26
-  cau: Hiện tượng thông tin sai lệch (misinformation effect) đã được nghiên cứu trong nhiều thập kỷ với nhiều kiểu thí nghiệm khác nhau.
-  loai: phat-hien
-  nguon:
-  - loftus2005
-  - blank2014
-  trich: The phenomenon has been investigated for at least 30 years
-  vi_tri: 'Loftus (2005), tóm tắt; Blank & Launay (2014): "Four decades of research and hundreds of studies speak to the power of post-event misinformation"'
-  ket_qua: dung
-  ghi_chu: theo G1-L01 (22/10/2026) (Loftus 2005); thêm Blank & Launay 2014.
-- id: n27
-  cau: Bài tổng quan của Elizabeth Loftus năm 2005 tổng kết 30 năm nghiên cứu về chủ đề này.
-  loai: lich-su
-  nguon:
-  - loftus2005
-  trich: 'Planting misinformation in the human mind: A 30-year investigation of the malleability of memory'
-  vi_tri: Tên bài
-  ket_qua: dung
-- id: n28
-  cau: 'Vững chắc: trí nhớ được dựng lại và có thể bị thông tin sau sự kiện làm sai lệch.'
-  loai: nhan
-  nhan: vung-chac
-  co_so: &id001
-  - loftus2005
-  - blank2014
-  - loftus1974
-  ly_do: 'Hiện tượng thông tin sai lệch được nhiều thập kỷ nghiên cứu xác nhận ở nhiều kiểu thí nghiệm và cả ở loài khác (Loftus 2005: "observed in a variety of human and nonhuman species"); phân
-    tích tổng hợp 25 nghiên cứu (155 hiệu ứng) về cảnh báo sau sự kiện (Blank & Launay 2014) xuất phát từ hiệu ứng đã được xác lập qua "hundreds of studies" và vẫn thấy hiệu ứng còn lại sau cảnh
-    báo (giảm còn dưới một nửa). Nhãn chỉ nói hiệu ứng có thật và có thể xảy ra, không nói độ lớn hay tần suất ngoài đời.'
-  nguon: *id001
-  ket_qua: dung
-  ghi_chu: 'Chỗ khó: thước đo mục 4 đòi phân tích tổng hợp hay tổng quan hệ thống chất lượng tốt; Loftus 2005 là tổng quan kể (narrative), Blank & Launay là phân tích tổng hợp về một mặt khác
-    (cảnh báo). Không tìm được phân tích tổng hợp trực tiếp về độ lớn hiệu ứng thông tin sai lệch mở được. Giữ Vững chắc vì nhãn hẹp (hiệu ứng có thật); lượt 2 và review cân nhắc.'
-- id: n29
-  cau: 'Khá vững: kết quả cụ thể của thí nghiệm Loftus và Palmer.'
-  loai: nhan
-  nhan: kha-vung
-  co_so: &id002
-  - loftus1974
-  - zwaan2025
-  ly_do: Một thí nghiệm có mẫu nhỏ (9 người mỗi động từ ở thí nghiệm 1; 50 người mỗi nhóm ở thí nghiệm 2), kết quả gốc rõ và cùng chiều với rất nhiều nghiên cứu sau, nhưng chưa có tái lập lớn
-    đăng ký trước (Zwaan, 2025), và chính các tác giả nêu hai cách giải thích còn mở.
-  nguon: *id002
-  ket_qua: dung
-- id: n30
-  cau: Kết quả gốc rõ ràng và phù hợp với rất nhiều nghiên cứu sau đó.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  - blank2014
-  trich: Four decades of research and hundreds of studies speak to the power of post-event misinformation to bias eyewitness accounts of events
-  vi_tri: 'Blank & Launay (2014), tóm tắt; Loftus & Palmer: kết quả ở Bảng 1 và 2'
-  ket_qua: dung
-- id: n31
-  cau: 'Mẫu nhỏ: 9 người mỗi động từ ở thí nghiệm 1.'
-  loai: so-lieu
-  nguon:
-  - loftus1974
-  trich: Nine subjects were asked [...] Equal numbers of the remaining subjects
-  vi_tri: Experiment I, Method
-  ket_qua: dung
-- id: n32
-  cau: Tính đến 11/2026, theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại trong một dự án tái lập quy mô lớn, đăng ký trước.
-  loai: thoi-su
-  nguon:
-  - zwaan2025
-  - tim-kiem-vn
-  het_han: '2027-11-01'
-  ket_qua: dung
-  ghi_chu: 'Zwaan (8/9/2025): "the study has never been directly replicated at scale using modern methods"; ông và Eerland nộp đề xuất tái lập nhiều phòng thí nghiệm (chờ tài trợ). OpenAlex tìm
-    ngày 9/11/2026: chỉ thấy một bản làm lại nhỏ (60 học sinh một trường quốc tế ở Hàng Châu, doi 10.63313/ssh.9104, tạp chí không rõ, không đăng ký trước), không phải tái lập lớn. G1-L01 ghi
-    lại câu trích của Zwaan; Zwaan là blog (bậc 3), nên đây là câu thời sự có hạn chứ không phải căn cứ chính của nhãn.'
-- id: n33
-  cau: Bản thân các tác giả cũng nêu hai cách giải thích.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: Two interpretations of this finding are possible.
-  vi_tri: Experiment I, Discussion, tr. 586
-  ket_qua: dung
-- id: n34
-  cau: 'Thiên lệch khi trả lời: người tham gia không chắc xe chạy 30 hay 40 dặm/giờ, và từ "đâm sầm" đẩy câu trả lời lên cao hơn, còn ký ức thì không đổi.'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: A subject is uncertain whether to say 30 mph or 40 mph, for example, and the verb smashed biases his response towards the higher estimate.
-  vi_tri: Experiment I, Discussion
-  ket_qua: dung
-- id: n35
-  cau: 'Ký ức thật sự thay đổi: từ "đâm sầm" khiến người ta lưu lại một phiên bản "nghiêm trọng hơn" của vụ tai nạn, rồi một tuần sau phiên bản ấy "gợi ra" cả mảnh kính vỡ.'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: The verb smashed may change a subject's memory such that he "sees" the accident as being more severe than it actually was. [...] Since broken glass is commensurate with a severe accident,
-    the subject is more likely to think that broken glass was present.
-  vi_tri: Experiment I, Discussion; Experiment II, Discussion, tr. 586–588
-  ket_qua: dung
-- id: n36
-  cau: Thí nghiệm 2 được thiết kế để cho thêm manh mối giữa hai khả năng ấy, và kết quả phù hợp với khả năng thứ hai.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: The second experiment was designed to provide additional insights into the origin of the differential speed estimates. [...] These results are consistent with the view that the questions
-    asked subsequent to an event can cause a reconstruction in one's memory of that event.
-  vi_tri: Tr. 587; Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Thí nghiệm 2 được thiết kế để ủng hộ khả năng thứ hai"; chữ mới theo chữ của bài ("additional insights") và "consistent with" (phù hợp với), không "ủng hộ chắc chắn".'
-- id: n37
-  cau: Câu hỏi ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn được nghiên cứu trong nhiều năm sau đó.
-  loai: phat-hien
-  nguon:
-  - loftus2005
-  trich: investigators have explored the fate of the original memory traces after exposure to misinformation appears to have made them inaccessible.
-  vi_tri: Tóm tắt (Europe PMC)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "tranh luận về việc ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn tiếp tục trong nhiều năm sau đó"; chữ mới bỏ "tranh luận" (tóm tắt Loftus 2005 chỉ nói các nhà nghiên cứu
-    đã khảo sát số phận của dấu vết gốc); không dựa vào toàn văn.'
-- id: n38
-  cau: Khi hỏi người khác về một sự việc, đặc biệt là trẻ em, nên dùng câu hỏi mở thay vì câu hỏi gài sẵn câu trả lời; đây là suy luận từ nghiên cứu thông tin sai lệch.
-  loai: loi-khuyen
-  nguon:
-  - loftus1974
-  - lamb2007
-  trich: the form of a question (in this case, changes in a single word) can markedly and systematically affect a witness's answer to that question.
-  vi_tri: 'Loftus & Palmer, Experiment I, Discussion, tr. 586; Lamb và cộng sự (2007), tóm tắt: quy trình phỏng vấn có cấu trúc cải thiện chất lượng phỏng vấn trẻ em'
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ kết bằng "Đây là áp dụng trực tiếp từ các nghiên cứu về thông tin sai lệch"; chữ mới ghi là suy luận, chưa phải kết quả so sánh trực tiếp hai kiểu hỏi. Ví dụ "Nó đánh con phải
-    không?" là minh họa giả định (gia-dinh), không phải trích dẫn. Lamb 2007 chỉ đọc tóm tắt: nói quy trình có cấu trúc cải thiện phỏng vấn trẻ em, không nói riêng "câu hỏi mở".'
-- id: n39
-  cau: 'Cảm giác chắc chắn không đảm bảo ký ức đúng: ký ức sai có thể sống động và đi kèm cảm giác rất tự tin; khi hai người nhớ khác nhau về cùng một chuyện, có thể không ai nói dối.'
-  loai: phat-hien
-  nguon:
-  - simons2011
-  - loftus2005
-  trich: most memory experts agree that an isolated expression of confidence is at best a limited predictor of memory accuracy
-  vi_tri: 'Simons & Chabris (2011), Discussion, mục Confident Testimony; Loftus (2005), tóm tắt: người ta có thể "come to believe falsely that they experienced rich complex events that never,
-    in fact, occurred"'
-  ket_qua: dung
-  ghi_chu: 'Vế "có thể không ai nói dối" là suy luận hợp lý từ hai nguồn trên (một người có thể tin điều sai mà không cố ý); trang đã viết "có thể". Chỗ khó: vế "sống động" chỉ được tóm tắt Loftus
-    2005 ủng hộ gián tiếp (các "rich" false memories).'
-- id: n40
-  cau: Nếu một sự kiện quan trọng, ghi chép lại sớm, trước khi trao đổi với người khác, giúp giữ phiên bản ít bị pha trộn hơn; đây là suy luận, chưa phải một phát hiện được kiểm tra riêng.
-  loai: loi-khuyen
-  nguon:
-  - loftus1974
-  trich: Over time, information from these two sources may be integrated in such a way that we are unable to tell from which source some specific detail is recalled.
-  vi_tri: Mục Discussion, tr. 588
-  ket_qua: dung
-  ghi_chu: Câu đã tự ghi là suy luận; nguồn nói ngoại lực sau sự kiện hòa vào ký ức theo thời gian, từ đó suy ra lợi ích của ghi chép sớm. Không có nguồn kiểm chính điều ghi chép sớm có giúp hay
-    không.
-- id: n41
-  cau: Thí nghiệm dùng đoạn phim ngắn cho sinh viên xem, không phải một vụ tai nạn thật xảy ra trước mắt nhân chứng; vì thế mức độ sai lệch ngoài đời có thể khác.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: These films were segments from longer driver's education films borrowed from the Evergreen Safety Council and the Seattle Police Department.
-  vi_tri: Experiment I, Method
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Thí nghiệm dùng phim ngắn trong phòng thí nghiệm; người xem không bị căng thẳng như nhân chứng thật và biết hậu quả của câu trả lời không lớn." Chữ mới bỏ hai vế tâm lý (căng
-    thẳng, hậu quả) không có nguồn đã mở; giữ phần bài nói được: phim cho sinh viên xem.'
-- id: n42
-  cau: Thí nghiệm gốc được làm với sinh viên Mỹ, bằng tiếng Anh.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: University of Washington [...] Forty-five students participated in groups of various sizes.
-  vi_tri: Tr. 585–586
-  ket_qua: dung
-  ghi_chu: '"Mỹ" suy từ University of Washington; "tiếng Anh" suy từ câu hỏi gốc.'
-- id: n43
-  cau: Các bản dịch trong bảng chỉ để minh họa, không phải câu hỏi gốc.
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: Smashed 40.8 Collided 39.3 Bumped 38.1 Hit 34.0 Contacted 31.8
-  vi_tri: Table 1
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "…trong tiếng Việt, "đâm sầm", "tông", "đụng", "chạm" mang sắc thái khác nhau theo cách không hoàn toàn trùng với tiếng Anh." Đã bỏ vì không có nguồn đã mở nói về sắc thái
-    các động từ tiếng Việt; chữ mới chỉ nói điều kiểm được (bản gốc dùng động từ tiếng Anh).'
-- id: n44
-  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào lặp lại thí nghiệm này với người Việt.
-  loai: thoi-su
-  nguon:
-  - tim-kiem-vn
-  het_han: '2028-11-01'
-  ket_qua: dung
-  ghi_chu: 'Tìm OpenAlex ngày 9/11/2026 ("memory misinformation Vietnamese participants" và các truy vấn Loftus–Palmer): không thấy. Chưa tìm Google Scholar hay tạp chí trong nước.'
-- id: n45
-  cau: 'Đã bị bác bỏ: "Trí nhớ hoạt động như máy quay phim."'
-  loai: nhan
-  nhan: bac-bo
-  co_so: &id003
-  - loftus2005
-  - blank2014
-  - simons2011
-  ly_do: 'Mô hình "máy quay phim" (ghi lại chính xác, không bị sửa) trái với hiện tượng thông tin sai lệch đã được xác lập qua nhiều thập kỷ (Loftus 2005; Blank & Launay 2014) và với đồng thuận
-    chuyên gia: cả 16 chuyên gia trong khảo sát của Simons & Chabris (2011) không đồng ý với mệnh đề "human memory works like a video camera, accurately recording the events we see and hear".
-    Thẻ ngộ nhận tri-nho-may-quay của site có cùng nhãn.'
-  nguon: *id003
-  ket_qua: dung
-  ghi_chu: Đây là nhãn của ngộ nhận (niềm tin sai). Đồng thuận chuyên gia (16 người) là bằng chứng bậc 2 yếu hơn phân tích tổng hợp; xem n28 về chỗ khó của nền tảng.
-- id: n46
-  cau: Độ sống động và cảm giác chắc chắn có thể đi kèm cả ký ức sai.
-  loai: phat-hien
-  nguon:
-  - simons2011
-  - loftus2005
-  trich: When people are wrongly convicted of crimes and later exonerated by DNA testing, the primary evidence often came in the form of a confident, but faulty, eyewitness identification
-  vi_tri: Simons & Chabris (2011), Discussion, mục Confident Testimony
-  ket_qua: dung
-  ghi_chu: 'Chỗ khó như n39: "sống động" (vividness) không có nguồn đã mở nói trực tiếp; nguồn nói về sự tự tin (confidence) và về các ký ức sai "phong phú" (Loftus 2005).'
-- id: n47
-  cau: Xem thêm các ngộ nhận khác ở trang Ngộ nhận.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm: link /psyche/ngo-nhan/ trỏ trang Ngộ nhận (trang ngo-nhan/index có trong src/data/trang.yml; link nội bộ do tests/link.test.mjs kiểm); thẻ ngộ nhận tri-nho-may-quay trỏ về
-    trang này (src/data/ngo-nhan.yml dòng 49–55).'
-- id: n48
-  cau: 'Đọc thêm: "Vì sao ta quên?" nói vì sao ký ức phai dần theo thời gian; "Não nháp thông tin thế nào?" nói về trí nhớ làm việc, nơi ký ức được "nháp".'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm: kham-pha/tri-nho/vi-sao-ta-quen (title "Vì sao ta quên?") và kham-pha/tri-nho/tri-nho-lam-viec (title "Não "nháp" thông tin thế nào?") có trong src/data/trang.yml và src/content/docs/.'
-- id: n49
-  cau: 'Quiz 1: điều thay đổi giữa các nhóm trong thí nghiệm 1 là một động từ trong câu hỏi về tốc độ; mọi người xem cùng các đoạn phim.'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: Nine subjects were asked, "About how fast were the cars going when they hit each other?" Equal numbers of the remaining subjects were interrogated with the verbs smashed, collided, bumped,
-    and contacted in place of hit.
-  vi_tri: Experiment I, Method
-  ket_qua: dung
-  ghi_chu: Câu hỏi 1 và lời giải thích ("Mọi người xem cùng các đoạn phim; chỉ động từ khác"). Nhóm có thứ tự phim khác nhau nhưng cùng bộ phim.
-- id: n50
-  cau: 'Quiz 2: thí nghiệm 2 hỏi về kính vỡ để kiểm tra xem ký ức về vụ tai nạn có thật sự thay đổi hay không, chứ không chỉ cách trả lời về tốc độ; phim không có kính vỡ.'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: The second experiment was designed to provide additional insights into the origin of the differential speed estimates.
-  vi_tri: Experiment I, Discussion, tr. 587; Experiment II, Method
-  ket_qua: dung
-  ghi_chu: 'Lời giải thích: "Nếu người nghe chữ "đâm sầm" "nhớ" ra kính vỡ nhiều hơn, đó là dấu hiệu ký ức của họ đã khác đi": đúng ý bài, nhưng bài chỉ nói "consistent with" (n36).'
-- id: n51
-  cau: 'Quiz 3: nhóm "không hỏi tốc độ" là nhóm đối chứng, cho biết tỉ lệ nhớ nhầm kính vỡ khi không có từ dẫn dắt (12%); nhờ đó thấy "đâm sầm" làm tăng tỉ lệ nhớ nhầm còn "tông" thì gần như không.'
-  loai: phat-hien
-  nguon:
-  - loftus1974
-  trich: Response Smashed Hit Control Yes 16 7 6 No 34 43 44
-  vi_tri: Table 2
-  ket_qua: dung
-  ghi_chu: Bài gọi nhóm này là "Control". "Gần như không" so 14% với 12% là cách diễn đạt mô tả của trang (bài không kiểm riêng cặp này). Link "Vì sao cần nhóm đối chứng?" (/psyche/bang-chung/thi-nghiem-doi-chung/)
-    đã kiểm có trong site.
-- id: n52
-  cau: 'Quiz 4: câu hỏi gợi ý có thể làm thay đổi điều người ta nhớ, nên cần cẩn thận khi hỏi và khi đánh giá lời khai; nghiên cứu cho thấy trí nhớ có thể bị dẫn dắt chứ không cho thấy nó luôn
-    sai.'
-  loai: loi-khuyen
-  nguon:
-  - loftus1974
-  - loftus2005
-  trich: These results are consistent with the view that the questions asked subsequent to an event can cause a reconstruction in one's memory of that event.
-  vi_tri: Tóm tắt (Loftus & Palmer)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ của lời giải thích: "Phần lớn ký ức của ta đủ chính xác cho đời sống hằng ngày. Nghiên cứu cho thấy trí nhớ có thể bị dẫn dắt, chứ không phải nó luôn sai." Đã bỏ câu đầu (không
-    nguồn đã mở nói tỉ lệ chính xác); câu sau giữ.'
+  - id: n1
+    cau: Thí nghiệm Loftus và Palmer (1974) cho thấy chỉ một động từ trong câu hỏi cũng làm thay đổi điều nhân chứng ước lượng và có thể cả điều họ nhớ.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: The question, "About how fast were the cars going when they smashed into each other ?" elicited higher estimates of speed than questions which used the verbs collided, bumped, contacted, or hit in place of smashed.
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Mô tả (description) của trang. Chữ cũ: "…làm thay đổi ký ức của nhân chứng"; chữ mới: "…thay đổi điều nhân chứng ước lượng và có thể cả điều họ nhớ". Lý do: các tác giả viết "consistent with the view that the questions asked subsequent to an event can cause a reconstruction in one''s memory" (phù hợp với quan điểm), không viết là đã chứng minh.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: "'Có thể cả điều họ nhớ': bài nêu hai cách giải thích, câu viết đã rào đón."
+  - id: n2
+    cau: Nếu bạn bắt đầu "thấy" lại bát canh trong đầu, đó có thể là ký ức thật, hoặc là một mảnh vừa được câu hỏi ghép thêm; rất khó phân biệt hai trường hợp từ bên trong.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: Over time, information from these two sources may be integrated in such a way that we are unable to tell from which source some specific detail is recalled.
+    vi_tri: Mục Discussion, tr. 588
+    ket_qua: dung
+    ghi_chu: Tình huống bữa canh là ví dụ giả định (gia-dinh) của trang; chỉ phần nhận định chung "khó phân biệt nguồn của chi tiết" được kiểm.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n3
+    cau: 'Điều thí nghiệm dưới đây đo được: người nghe câu hỏi có từ dẫn dắt "nhớ" ra chi tiết không có trong sự kiện.'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: those subjects who received the verb smashed were more likely to say "yes" to the question, "Did you see any broken glass?", even though broken glass was not present in the film.
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n4
+    cau: 'Nhiều người hình dung trí nhớ như một cuốn băng: sự kiện được ghi lại nguyên vẹn, ký ức có thể mờ đi nhưng không bị sửa.'
+    loai: phat-hien
+    nguon:
+      - simons2011
+    trich: 'Video Memory: 63.0% agreed that “human memory works like a video camera, accurately recording the events we see and hear so that we can review and inspect them later.”'
+    vi_tri: Results, mục Video Memory
+    ket_qua: dung
+    ghi_chu: Câu mô tả niềm tin phổ biến; dựa vào mục khảo sát. Vế "không bị sửa" là cách diễn giải của trang cho "ghi lại chính xác".
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+  - id: n5
+    cau: Trong một khảo sát đại diện ở Mỹ, 63% người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim.
+    loai: so-lieu
+    nguon:
+      - simons2011
+    trich: 'Video Memory: 63.0% agreed that “human memory works like a video camera, accurately recording the events we see and hear so that we can review and inspect them later.”'
+    vi_tri: Results, mục Video Memory
+    ket_qua: dung
+    ghi_chu: 'theo G1-L01 (22/10/2026): KHỚP (Simons & Chabris, 2011).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: Mẫu 1.838 người, đại diện theo điều tra dân số Mỹ.
+  - id: n6
+    cau: Khảo sát ấy làm năm 2009 và công bố năm 2011.
+    loai: lich-su
+    nguon:
+      - simons2011
+    trich: We hired SurveyUSA to poll a nationally representative sample of the United States population during a one-week period in June 2009
+    vi_tri: Methods, Study sample
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khảo sát đại diện ở Mỹ năm 2011"; chữ mới: "làm năm 2009, công bố năm 2011". Lý do: G1-L01 mục Cần sửa #1 (22/10/2026); đã kiểm lại ở toàn văn PMC. Năm công bố 2011 theo thông tin của bài (PLoS ONE 6(8), e22757).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+  - id: n7
+    cau: 'Khi nhớ lại, ta thường dựng lại sự kiện từ các mảnh: một phần từ những gì thật sự đã thấy, một phần từ thông tin đến sau sự kiện, kể cả điều người khác kể và chính câu hỏi khiến ta phải nhớ.'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+      - loftus2005
+    trich: we would like to propose that two kinds of information go into one's memory for some complex occurrence. The first is information gleaned during the perception of the original event; the second is external information supplied after the fact.
+    vi_tri: Loftus & Palmer, Discussion, tr. 588
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "mỗi lần nhớ lại, ta dựng lại sự kiện từ các mảnh: một phần từ những gì thật sự đã thấy, một phần từ hiểu biết chung, từ điều người khác kể, và từ chính câu hỏi… Phần lớn thời gian, việc dựng lại này đủ chính xác." Chữ mới bỏ "hiểu biết chung" (nguồn đã mở không nói), đổi "mỗi lần" thành "thường", bỏ "phần lớn thời gian… đủ chính xác" (không có nguồn đã mở nói điều ấy).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3", "https://doi.org/10.1101/lm.94705" ]
+  - id: n8
+    cau: Việc dựng lại này có thể bị dẫn dắt.
+    loai: phat-hien
+    nguon:
+      - loftus2005
+    trich: The misinformation effect refers to the impairment in memory for the past that arises after exposure to misleading information.
+    vi_tri: Tóm tắt (Europe PMC)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3", "https://doi.org/10.1101/lm.94705" ]
+  - id: n9
+    cau: Thí nghiệm 1 có 45 sinh viên.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Forty-five students participated in groups of various sizes.
+    vi_tri: Experiment I, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n10
+    cau: Họ xem 7 đoạn phim ngắn (5–30 giây) về tai nạn giao thông.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Seven films were shown, each depicting a traffic accident. [...] The length of the film segments ranged from 5 to 30 sec.
+    vi_tri: Experiment I, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n11
+    cau: Họ trả lời câu hỏi về tốc độ của hai xe khi "va" nhau, trong đó động từ thay đổi giữa các nhóm.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: About how fast were the cars going when they smashed into each other?
+    vi_tri: Experiment I, Method; tr. 586
+    ket_qua: dung
+    ghi_chu: Câu hỏi gốc bằng tiếng Anh; câu tiếng Việt của trang là bản dịch minh họa (xem n47).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n12
+    cau: Mỗi nhóm 9 người nhận một động từ khác nhau.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Nine subjects were asked, "About how fast were the cars going when they hit each other?" Equal numbers of the remaining subjects were interrogated with the verbs smashed, collided, bumped, and contacted in place of hit.
+    vi_tri: Experiment I, Method
+    ket_qua: dung
+    ghi_chu: '45 người chia đều cho 5 động từ: 9 người mỗi động từ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: 45 chia cho 5 nhóm = 9.
+  - id: n13
+    cau: 'Tốc độ ước lượng trung bình (dặm/giờ): smashed 40,8; collided 39,3; bumped 38,1; hit 34,0; contacted 31,8.'
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Smashed 40.8 Collided 39.3 Bumped 38.1 Hit 34.0 Contacted 31.8
+    vi_tri: Table 1, Experiment I, Results
+    ket_qua: dung
+    ghi_chu: 'Cũng là số trong hình loftus-verbs (cột 31,8 / 34,0 / 38,1 / 39,3 / 40,8, thứ tự tăng dần): khớp Bảng 1; chữ hình "dặm/giờ", tên năm động từ, tiêu đề trục và chú thích đúng. Hình đúng, không cần sửa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n14
+    cau: 'Bản dịch tiếng Việt: smashed là "đâm sầm", collided "va chạm", bumped "đụng", hit "tông", contacted "chạm".'
+    loai: dinh-nghia
+    nguon:
+      - loftus1974
+    trich: Smashed 40.8 Collided 39.3 Bumped 38.1 Hit 34.0 Contacted 31.8
+    vi_tri: Table 1
+    ket_qua: dung
+    ghi_chu: 'Bản dịch minh họa của trang; trang tự ghi là minh họa (mục Ở Việt Nam). Kiểm: năm động từ gốc đúng và đủ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: Bản dịch tiếng Việt không có trong nguồn; chấp nhận được và trang ghi là minh họa.
+  - id: n15
+    cau: Cùng một đoạn phim, chỉ đổi một từ, ước lượng chênh nhau khoảng 9 dặm/giờ (khoảng 14 km/giờ).
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Smashed 40.8 ... Contacted 31.8
+    vi_tri: Table 1
+    ket_qua: dung
+    ghi_chu: 'theo G1-L01 (22/10/2026): 40,8 − 31,8 = 9 dặm/giờ ≈ 14,5 km/giờ (1 dặm = 1,609 km). Kiểm lại phép tính. Các nhóm xem cùng bộ phim (mỗi nhóm một thứ tự phim khác nhau): "A different ordering of the films was presented to each group of subjects."'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: 9 mph = 14,5 km/giờ; 'khoảng 14' hơi thấp, có thể ghi 'khoảng 14-15'. Không đáng kể.
+  - id: n16
+    cau: Bốn trong bảy đoạn phim là va chạm dàn dựng ở 20, 30 và 40 dặm/giờ.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Four of the seven films were staged crashes; [...] One collision took place at 20 mph, one at 30, and two at 40.
+    vi_tri: Experiment I, Results
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n17
+    cau: Với các vụ va chạm dàn dựng ấy, ước lượng trung bình chỉ dao động từ 36,1 đến 39,7 dặm/giờ.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: 'The mean estimates of speed for these four films were: 37.7, 36.2, 39.7, and 36.1 mph, respectively.'
+    vi_tri: Experiment I, Results
+    ket_qua: dung
+    ghi_chu: Giá trị nhỏ nhất 36,1, lớn nhất 39,7.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n18
+    cau: Tốc độ thật của các xe ảnh hưởng rất ít đến ước lượng, còn cách đặt câu hỏi ảnh hưởng nhiều.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: The actual speed of the vehicles controlled little variance in subject reporting, while the phrasing of the question controlled considerable variance.
+    vi_tri: Experiment I, Discussion
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n19
+    cau: Có thể người tham gia chỉ "chiều theo" từ ngữ của câu hỏi, còn ký ức thì không đổi.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: A subject is uncertain whether to say 30 mph or 40 mph, for example, and the verb smashed biases his response towards the higher estimate.
+    vi_tri: Experiment I, Discussion
+    ket_qua: dung
+    ghi_chu: Cách giải thích thứ nhất của các tác giả (response bias); là điều trang nêu như một khả năng.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n20
+    cau: Thí nghiệm 2 có 150 sinh viên xem một đoạn phim về một vụ tai nạn.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: One hundred and fifty students participated in this experiment, in groups of various sizes. A film depicting a multiple car accident was shown, followed by a questionnaire.
+    vi_tri: Experiment II, Method
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "150 sinh viên khác xem…"; chữ mới bỏ "khác": bài không nói nhóm này khác nhóm ở thí nghiệm 1.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n21
+    cau: 50 người được hỏi với từ "smashed" (đâm sầm), 50 người với "hit" (tông), 50 người không được hỏi về tốc độ.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Fifty subjects were asked, "About how fast were the cars going when they smashed into each other?" Fifty subjects were asked, "About how fast were the cars going when they hit each other?" Fifty subjects were not interrogated about vehicular speed.
+    vi_tri: Experiment II, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n22
+    cau: 'Một tuần sau, tất cả được hỏi: "Bạn có thấy kính vỡ không?"'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: One week later, the subjects returned and without viewing the film again they answered a series of questions about the accident. The critical question here was, "Did you see any broken glass ?"
+    vi_tri: Experiment II, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n23
+    cau: Trong phim không có kính vỡ.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: There was no broken glass in the accident
+    vi_tri: Experiment II, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n24
+    cau: 'Số người trả lời "Có": nhóm đâm sầm 16/50 (32%), nhóm tông 7/50 (14%), nhóm không hỏi tốc độ 6/50 (12%).'
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Yes 16 7 6 No 34 43 44 [...] the probability of saying "yes," P(Y), to the question about broken glass is .32 when the verb smashed is used, and .14 with hit.
+    vi_tri: Table 2 và Experiment II, Results
+    ket_qua: dung
+    ghi_chu: 12% = 6/50 là phép tính của trang (bài chỉ ghi .32 và .14).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n25
+    cau: Những người được hỏi bằng từ "đâm sầm" "nhớ" ra một chi tiết không hề tồn tại với tỉ lệ hơn gấp đôi so với hai nhóm còn lại.
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Yes 16 7 6
+    vi_tri: Table 2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Một động từ được nghe một tuần trước đã khiến gấp đôi số người nhớ ra một chi tiết không hề tồn tại." Chữ mới tả đúng phép so sánh: 32% so với 14% và 12% (2,3 và 2,7 lần), và không nói "đã khiến" (nhân quả) trong một câu số liệu. Bài chỉ báo chi-square toàn bảng (χ²(2) = 7,76), không kiểm riêng từng cặp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: 32% so với 14% và 12% là gấp hơn hai lần.
+  - id: n26
+    cau: Hiện tượng thông tin sai lệch (misinformation effect) đã được nghiên cứu trong nhiều thập kỷ với nhiều kiểu thí nghiệm khác nhau.
+    loai: phat-hien
+    nguon:
+      - loftus2005
+      - blank2014
+    trich: The phenomenon has been investigated for at least 30 years
+    vi_tri: 'Loftus (2005), tóm tắt; Blank & Launay (2014): "Four decades of research and hundreds of studies speak to the power of post-event misinformation"'
+    ket_qua: dung
+    ghi_chu: theo G1-L01 (22/10/2026) (Loftus 2005); thêm Blank & Launay 2014.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1101/lm.94705", "https://doi.org/10.1037/h0101798" ]
+  - id: n27
+    cau: Bài tổng quan của Elizabeth Loftus năm 2005 tổng kết 30 năm nghiên cứu về chủ đề này.
+    loai: lich-su
+    nguon:
+      - loftus2005
+    trich: 'Planting misinformation in the human mind: A 30-year investigation of the malleability of memory'
+    vi_tri: Tên bài
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1101/lm.94705" ]
+  - id: n28
+    cau: 'Vững chắc: trí nhớ được dựng lại và có thể bị thông tin sau sự kiện làm sai lệch.'
+    loai: nhan
+    nhan: vung-chac
+    co_so: &id001
+      - loftus2005
+      - blank2014
+      - loftus1974
+    ly_do: 'Hiện tượng thông tin sai lệch được nhiều thập kỷ nghiên cứu xác nhận ở nhiều kiểu thí nghiệm và cả ở loài khác (Loftus 2005: "observed in a variety of human and nonhuman species"); phân tích tổng hợp 25 nghiên cứu (155 hiệu ứng) về cảnh báo sau sự kiện (Blank & Launay 2014) xuất phát từ hiệu ứng đã được xác lập qua "hundreds of studies" và vẫn thấy hiệu ứng còn lại sau cảnh báo (giảm còn dưới một nửa). Nhãn chỉ nói hiệu ứng có thật và có thể xảy ra, không nói độ lớn hay tần suất ngoài đời.'
+    nguon: *id001
+    ket_qua: dung
+    ghi_chu: 'Chỗ khó: thước đo mục 4 đòi phân tích tổng hợp hay tổng quan hệ thống chất lượng tốt; Loftus 2005 là tổng quan kể (narrative), Blank & Launay là phân tích tổng hợp về một mặt khác (cảnh báo). Không tìm được phân tích tổng hợp trực tiếp về độ lớn hiệu ứng thông tin sai lệch mở được. Giữ Vững chắc vì nhãn hẹp (hiệu ứng có thật); lượt 2 và review cân nhắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1101/lm.94705", "https://doi.org/10.1037/h0101798", "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: "Nhãn Vững chắc ở mức chấp nhận: có tổng quan 30 năm (tự thuật, không hệ thống) và phân tích tổng hợp 25 nghiên cứu (Blank và Launay 2014). Chưa thấy phân tích tổng hợp riêng hiệu ứng chính; nên giữ cách nói 'có thể bị làm sai lệch'."
+  - id: n29
+    cau: 'Khá vững: kết quả cụ thể của thí nghiệm Loftus và Palmer.'
+    loai: nhan
+    nhan: kha-vung
+    co_so: &id002
+      - loftus1974
+      - zwaan2025
+    ly_do: Một thí nghiệm có mẫu nhỏ (9 người mỗi động từ ở thí nghiệm 1; 50 người mỗi nhóm ở thí nghiệm 2), kết quả gốc rõ và cùng chiều với rất nhiều nghiên cứu sau, nhưng chưa có tái lập lớn đăng ký trước (Zwaan, 2025), và chính các tác giả nêu hai cách giải thích còn mở.
+    nguon: *id002
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3", "https://doi.org/10.1177/1071181321651302" ]
+    luot_2_ghi_chu: "Khá vững hợp lý: kết quả gốc mẫu nhỏ và có một lần không tái hiện hiệu ứng tốc độ (bài hội nghị 2021)."
+  - id: n30
+    cau: Kết quả gốc rõ ràng và phù hợp với rất nhiều nghiên cứu sau đó.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+      - blank2014
+    trich: Four decades of research and hundreds of studies speak to the power of post-event misinformation to bias eyewitness accounts of events
+    vi_tri: 'Blank & Launay (2014), tóm tắt; Loftus & Palmer: kết quả ở Bảng 1 và 2'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3", "https://doi.org/10.1101/lm.94705" ]
+    luot_2_ghi_chu: Phần 'phù hợp rất nhiều nghiên cứu sau đó' đúng với hiệu ứng thông tin sai lệch nói chung; hiệu ứng tốc độ cụ thể đã có một lần không tái hiện (2021).
+  - id: n31
+    cau: 'Mẫu nhỏ: 9 người mỗi động từ ở thí nghiệm 1.'
+    loai: so-lieu
+    nguon:
+      - loftus1974
+    trich: Nine subjects were asked [...] Equal numbers of the remaining subjects
+    vi_tri: Experiment I, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n32
+    cau: Tính đến 11/2026, theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại trong một dự án tái lập quy mô lớn, đăng ký trước.
+    loai: thoi-su
+    nguon:
+      - zwaan2025
+      - tim-kiem-vn
+    het_han: '2027-11-01'
+    ket_qua: dung
+    ghi_chu: 'Zwaan (8/9/2025): "the study has never been directly replicated at scale using modern methods"; ông và Eerland nộp đề xuất tái lập nhiều phòng thí nghiệm (chờ tài trợ). OpenAlex tìm ngày 9/11/2026: chỉ thấy một bản làm lại nhỏ (60 học sinh một trường quốc tế ở Hàng Châu, doi 10.63313/ssh.9104, tạp chí không rõ, không đăng ký trước), không phải tái lập lớn. G1-L01 ghi lại câu trích của Zwaan; Zwaan là blog (bậc 3), nên đây là câu thời sự có hạn chứ không phải căn cứ chính của nhãn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://rolfzwaan.substack.com/p/replication-through-a-kaleidoscope", "https://doi.org/10.1177/1071181321651302" ]
+    luot_2_ghi_chu: Kiểm 9/11/2026. Chưa có tái lập lớn đã công bố; nên ghi thêm rằng một dự án quốc tế đang làm (Zwaan, 6/2026, không rõ có đăng ký trước hay không) và có tái lập nhỏ năm 2021 không thấy hiệu ứng tốc độ.
+  - id: n33
+    cau: Bản thân các tác giả cũng nêu hai cách giải thích.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: Two interpretations of this finding are possible.
+    vi_tri: Experiment I, Discussion, tr. 586
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n34
+    cau: 'Thiên lệch khi trả lời: người tham gia không chắc xe chạy 30 hay 40 dặm/giờ, và từ "đâm sầm" đẩy câu trả lời lên cao hơn, còn ký ức thì không đổi.'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: A subject is uncertain whether to say 30 mph or 40 mph, for example, and the verb smashed biases his response towards the higher estimate.
+    vi_tri: Experiment I, Discussion
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n35
+    cau: 'Ký ức thật sự thay đổi: từ "đâm sầm" khiến người ta lưu lại một phiên bản "nghiêm trọng hơn" của vụ tai nạn, rồi một tuần sau phiên bản ấy "gợi ra" cả mảnh kính vỡ.'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: The verb smashed may change a subject's memory such that he "sees" the accident as being more severe than it actually was. [...] Since broken glass is commensurate with a severe accident, the subject is more likely to think that broken glass was present.
+    vi_tri: Experiment I, Discussion; Experiment II, Discussion, tr. 586–588
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n36
+    cau: Thí nghiệm 2 được thiết kế để cho thêm manh mối giữa hai khả năng ấy, và kết quả phù hợp với khả năng thứ hai.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: The second experiment was designed to provide additional insights into the origin of the differential speed estimates. [...] These results are consistent with the view that the questions asked subsequent to an event can cause a reconstruction in one's memory of that event.
+    vi_tri: Tr. 587; Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Thí nghiệm 2 được thiết kế để ủng hộ khả năng thứ hai"; chữ mới theo chữ của bài ("additional insights") và "consistent with" (phù hợp với), không "ủng hộ chắc chắn".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: Kết quả phù hợp với khả năng thứ hai nhưng không loại hẳn khả năng thiên lệch trả lời; bài nói 'appears to be'.
+  - id: n37
+    cau: Câu hỏi ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn được nghiên cứu trong nhiều năm sau đó.
+    loai: phat-hien
+    nguon:
+      - loftus2005
+    trich: investigators have explored the fate of the original memory traces after exposure to misinformation appears to have made them inaccessible.
+    vi_tri: Tóm tắt (Europe PMC)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "tranh luận về việc ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn tiếp tục trong nhiều năm sau đó"; chữ mới bỏ "tranh luận" (tóm tắt Loftus 2005 chỉ nói các nhà nghiên cứu đã khảo sát số phận của dấu vết gốc); không dựa vào toàn văn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1101/lm.94705" ]
+  - id: n38
+    cau: Khi hỏi người khác về một sự việc, đặc biệt là trẻ em, nên dùng câu hỏi mở thay vì câu hỏi gài sẵn câu trả lời; đây là suy luận từ nghiên cứu thông tin sai lệch.
+    loai: loi-khuyen
+    nguon:
+      - loftus1974
+      - lamb2007
+    trich: the form of a question (in this case, changes in a single word) can markedly and systematically affect a witness's answer to that question.
+    vi_tri: 'Loftus & Palmer, Experiment I, Discussion, tr. 586; Lamb và cộng sự (2007), tóm tắt: quy trình phỏng vấn có cấu trúc cải thiện chất lượng phỏng vấn trẻ em'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ kết bằng "Đây là áp dụng trực tiếp từ các nghiên cứu về thông tin sai lệch"; chữ mới ghi là suy luận, chưa phải kết quả so sánh trực tiếp hai kiểu hỏi. Ví dụ "Nó đánh con phải không?" là minh họa giả định (gia-dinh), không phải trích dẫn. Lamb 2007 chỉ đọc tóm tắt: nói quy trình có cấu trúc cải thiện phỏng vấn trẻ em, không nói riêng "câu hỏi mở".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: Đã ghi rõ là suy luận; hợp lý với bài.
+  - id: n39
+    cau: 'Cảm giác chắc chắn không đảm bảo ký ức đúng: ký ức sai có thể sống động và đi kèm cảm giác rất tự tin; khi hai người nhớ khác nhau về cùng một chuyện, có thể không ai nói dối.'
+    loai: phat-hien
+    nguon:
+      - simons2011
+      - loftus2005
+    trich: most memory experts agree that an isolated expression of confidence is at best a limited predictor of memory accuracy
+    vi_tri: 'Simons & Chabris (2011), Discussion, mục Confident Testimony; Loftus (2005), tóm tắt: người ta có thể "come to believe falsely that they experienced rich complex events that never, in fact, occurred"'
+    ket_qua: dung
+    ghi_chu: 'Vế "có thể không ai nói dối" là suy luận hợp lý từ hai nguồn trên (một người có thể tin điều sai mà không cố ý); trang đã viết "có thể". Chỗ khó: vế "sống động" chỉ được tóm tắt Loftus 2005 ủng hộ gián tiếp (các "rich" false memories).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/1467-9280.02453", "https://doi.org/10.1101/lm.94705" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt Talarico và Rubin 2003 (độ tin tăng, độ chính xác không); 'không ai nói dối' là suy luận hợp lý.
+  - id: n40
+    cau: Nếu một sự kiện quan trọng, ghi chép lại sớm, trước khi trao đổi với người khác, giúp giữ phiên bản ít bị pha trộn hơn; đây là suy luận, chưa phải một phát hiện được kiểm tra riêng.
+    loai: loi-khuyen
+    nguon:
+      - loftus1974
+    trich: Over time, information from these two sources may be integrated in such a way that we are unable to tell from which source some specific detail is recalled.
+    vi_tri: Mục Discussion, tr. 588
+    ket_qua: dung
+    ghi_chu: Câu đã tự ghi là suy luận; nguồn nói ngoại lực sau sự kiện hòa vào ký ức theo thời gian, từ đó suy ra lợi ích của ghi chép sớm. Không có nguồn kiểm chính điều ghi chép sớm có giúp hay không.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: Đã ghi rõ là suy luận; không có thí nghiệm riêng.
+  - id: n41
+    cau: Thí nghiệm dùng đoạn phim ngắn cho sinh viên xem, không phải một vụ tai nạn thật xảy ra trước mắt nhân chứng; vì thế mức độ sai lệch ngoài đời có thể khác.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: These films were segments from longer driver's education films borrowed from the Evergreen Safety Council and the Seattle Police Department.
+    vi_tri: Experiment I, Method
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Thí nghiệm dùng phim ngắn trong phòng thí nghiệm; người xem không bị căng thẳng như nhân chứng thật và biết hậu quả của câu trả lời không lớn." Chữ mới bỏ hai vế tâm lý (căng thẳng, hậu quả) không có nguồn đã mở; giữ phần bài nói được: phim cho sinh viên xem.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n42
+    cau: Thí nghiệm gốc được làm với sinh viên Mỹ, bằng tiếng Anh.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: University of Washington [...] Forty-five students participated in groups of various sizes.
+    vi_tri: Tr. 585–586
+    ket_qua: dung
+    ghi_chu: '"Mỹ" suy từ University of Washington; "tiếng Anh" suy từ câu hỏi gốc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: "Nơi nghiên cứu: Đại học Washington, Mỹ."
+  - id: n43
+    cau: Các bản dịch trong bảng chỉ để minh họa, không phải câu hỏi gốc.
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: Smashed 40.8 Collided 39.3 Bumped 38.1 Hit 34.0 Contacted 31.8
+    vi_tri: Table 1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "…trong tiếng Việt, "đâm sầm", "tông", "đụng", "chạm" mang sắc thái khác nhau theo cách không hoàn toàn trùng với tiếng Anh." Đã bỏ vì không có nguồn đã mở nói về sắc thái các động từ tiếng Việt; chữ mới chỉ nói điều kiểm được (bản gốc dùng động từ tiếng Anh).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n44
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào lặp lại thí nghiệm này với người Việt.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    het_han: '2028-11-01'
+    ket_qua: dung
+    ghi_chu: 'Tìm OpenAlex ngày 9/11/2026 ("memory misinformation Vietnamese participants" và các truy vấn Loftus–Palmer): không thấy. Chưa tìm Google Scholar hay tạp chí trong nước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: Dự án quốc tế đang làm (Zwaan 2026) chạy ở khoảng 20 ngôn ngữ; chưa rõ có tiếng Việt. Câu chỉ nói 'chưa tìm thấy', nên đúng.
+  - id: n45
+    cau: 'Đã bị bác bỏ: "Trí nhớ hoạt động như máy quay phim."'
+    loai: nhan
+    nhan: bac-bo
+    co_so: &id003
+      - loftus2005
+      - blank2014
+      - simons2011
+    ly_do: 'Mô hình "máy quay phim" (ghi lại chính xác, không bị sửa) trái với hiện tượng thông tin sai lệch đã được xác lập qua nhiều thập kỷ (Loftus 2005; Blank & Launay 2014) và với đồng thuận chuyên gia: cả 16 chuyên gia trong khảo sát của Simons & Chabris (2011) không đồng ý với mệnh đề "human memory works like a video camera, accurately recording the events we see and hear". Thẻ ngộ nhận tri-nho-may-quay của site có cùng nhãn.'
+    nguon: *id003
+    ket_qua: dung
+    ghi_chu: Đây là nhãn của ngộ nhận (niềm tin sai). Đồng thuận chuyên gia (16 người) là bằng chứng bậc 2 yếu hơn phân tích tổng hợp; xem n28 về chỗ khó của nền tảng.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: "Đạt Đã bị bác bỏ: hiểu biết chuyên gia và nhiều thí nghiệm cho thấy trí nhớ không ghi nguyên vẹn."
+  - id: n46
+    cau: Độ sống động và cảm giác chắc chắn có thể đi kèm cả ký ức sai.
+    loai: phat-hien
+    nguon:
+      - simons2011
+      - loftus2005
+    trich: When people are wrongly convicted of crimes and later exonerated by DNA testing, the primary evidence often came in the form of a confident, but faulty, eyewitness identification
+    vi_tri: Simons & Chabris (2011), Discussion, mục Confident Testimony
+    ket_qua: dung
+    ghi_chu: 'Chỗ khó như n39: "sống động" (vividness) không có nguồn đã mở nói trực tiếp; nguồn nói về sự tự tin (confidence) và về các ký ức sai "phong phú" (Loftus 2005).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/1467-9280.02453" ]
+    luot_2_ghi_chu: Chỉ đọc tóm tắt; 'có thể đi kèm' là rào đón thích hợp.
+  - id: n47
+    cau: Xem thêm các ngộ nhận khác ở trang Ngộ nhận.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: link /psyche/ngo-nhan/ trỏ trang Ngộ nhận (trang ngo-nhan/index có trong src/data/trang.yml; link nội bộ do tests/link.test.mjs kiểm); thẻ ngộ nhận tri-nho-may-quay trỏ về trang này (src/data/ngo-nhan.yml dòng 49–55).'
+  - id: n48
+    cau: 'Đọc thêm: "Vì sao ta quên?" nói vì sao ký ức phai dần theo thời gian; "Não nháp thông tin thế nào?" nói về trí nhớ làm việc, nơi ký ức được "nháp".'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: kham-pha/tri-nho/vi-sao-ta-quen (title "Vì sao ta quên?") và kham-pha/tri-nho/tri-nho-lam-viec (title "Não "nháp" thông tin thế nào?") có trong src/data/trang.yml và src/content/docs/.'
+  - id: n49
+    cau: 'Quiz 1: điều thay đổi giữa các nhóm trong thí nghiệm 1 là một động từ trong câu hỏi về tốc độ; mọi người xem cùng các đoạn phim.'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: Nine subjects were asked, "About how fast were the cars going when they hit each other?" Equal numbers of the remaining subjects were interrogated with the verbs smashed, collided, bumped, and contacted in place of hit.
+    vi_tri: Experiment I, Method
+    ket_qua: dung
+    ghi_chu: Câu hỏi 1 và lời giải thích ("Mọi người xem cùng các đoạn phim; chỉ động từ khác"). Nhóm có thứ tự phim khác nhau nhưng cùng bộ phim.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n50
+    cau: 'Quiz 2: thí nghiệm 2 hỏi về kính vỡ để kiểm tra xem ký ức về vụ tai nạn có thật sự thay đổi hay không, chứ không chỉ cách trả lời về tốc độ; phim không có kính vỡ.'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: The second experiment was designed to provide additional insights into the origin of the differential speed estimates.
+    vi_tri: Experiment I, Discussion, tr. 587; Experiment II, Method
+    ket_qua: dung
+    ghi_chu: 'Lời giải thích: "Nếu người nghe chữ "đâm sầm" "nhớ" ra kính vỡ nhiều hơn, đó là dấu hiệu ký ức của họ đã khác đi": đúng ý bài, nhưng bài chỉ nói "consistent with" (n36).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+  - id: n51
+    cau: 'Quiz 3: nhóm "không hỏi tốc độ" là nhóm đối chứng, cho biết tỉ lệ nhớ nhầm kính vỡ khi không có từ dẫn dắt (12%); nhờ đó thấy "đâm sầm" làm tăng tỉ lệ nhớ nhầm còn "tông" thì gần như không.'
+    loai: phat-hien
+    nguon:
+      - loftus1974
+    trich: Response Smashed Hit Control Yes 16 7 6 No 34 43 44
+    vi_tri: Table 2
+    ket_qua: dung
+    ghi_chu: Bài gọi nhóm này là "Control". "Gần như không" so 14% với 12% là cách diễn đạt mô tả của trang (bài không kiểm riêng cặp này). Link "Vì sao cần nhóm đối chứng?" (/psyche/bang-chung/thi-nghiem-doi-chung/) đã kiểm có trong site.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3" ]
+    luot_2_ghi_chu: 12% đối chứng; 'tông' 14%, gần như không khác.
+  - id: n52
+    cau: 'Quiz 4: câu hỏi gợi ý có thể làm thay đổi điều người ta nhớ, nên cần cẩn thận khi hỏi và khi đánh giá lời khai; nghiên cứu cho thấy trí nhớ có thể bị dẫn dắt chứ không cho thấy nó luôn sai.'
+    loai: loi-khuyen
+    nguon:
+      - loftus1974
+      - loftus2005
+    trich: These results are consistent with the view that the questions asked subsequent to an event can cause a reconstruction in one's memory of that event.
+    vi_tri: Tóm tắt (Loftus & Palmer)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ của lời giải thích: "Phần lớn ký ức của ta đủ chính xác cho đời sống hằng ngày. Nghiên cứu cho thấy trí nhớ có thể bị dẫn dắt, chứ không phải nó luôn sai." Đã bỏ câu đầu (không nguồn đã mở nói tỉ lệ chính xác); câu sau giữ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/S0022-5371(74)80011-3", "https://doi.org/10.1101/lm.94705" ]
+    luot_2_ghi_chu: "Câu rào đón đúng: nghiên cứu cho thấy trí nhớ có thể bị dẫn dắt, không phải luôn sai."
 doi_chu:
-- cu: (không có)
-  moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
-  ly_do: Bố cục C (kế hoạch).
-- cu: 'mô tả: "…làm thay đổi ký ức của nhân chứng."'
-  moi: '"…làm thay đổi điều nhân chứng ước lượng và có thể cả điều họ nhớ."'
-  ly_do: 'Hồ sơ n1: bài gốc nói "consistent with the view", không chứng minh ký ức đổi.'
-- cu: '"mỗi lần nhớ lại, ta dựng lại sự kiện từ các mảnh: … một phần từ hiểu biết chung… Phần lớn thời gian, việc dựng lại này đủ chính xác. Nhưng nó có thể bị dẫn dắt."'
-  moi: '"khi nhớ lại, ta thường dựng lại sự kiện từ các mảnh: … một phần từ thông tin đến sau sự kiện, kể cả điều người khác kể và chính câu hỏi… Việc dựng lại này có thể bị dẫn dắt."'
-  ly_do: 'Hồ sơ n7: nguồn đã mở không nói "hiểu biết chung" hay "phần lớn thời gian… đủ chính xác".'
-- cu: '"150 sinh viên khác xem một đoạn phim"'
-  moi: '"150 sinh viên xem một đoạn phim"'
-  ly_do: 'Hồ sơ n20: bài không nói nhóm khác nhóm thí nghiệm 1.'
-- cu: '"Một động từ được nghe một tuần trước đã khiến gấp đôi số người "nhớ" ra một chi tiết không hề tồn tại."'
-  moi: '"Những người được hỏi bằng từ "đâm sầm" "nhớ" ra một chi tiết không hề tồn tại với tỉ lệ hơn gấp đôi so với hai nhóm còn lại."'
-  ly_do: Hồ sơ n25.
-- cu: '"…theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại…"'
-  moi: '"…và tính đến 11/2026, theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại…"'
-  ly_do: Khẳng định thời sự cần mốc (n32).
-- cu: '"Thí nghiệm 2 được thiết kế để ủng hộ khả năng thứ hai, nhưng tranh luận về việc ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn tiếp tục trong nhiều năm sau đó."'
-  moi: '"Thí nghiệm 2 được thiết kế để cho thêm manh mối giữa hai khả năng ấy, và kết quả phù hợp với khả năng thứ hai; nhưng câu hỏi ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn được nghiên
-    cứu trong nhiều năm sau đó."'
-  ly_do: Hồ sơ n36, n37.
-- cu: '"Đây là áp dụng trực tiếp từ các nghiên cứu về thông tin sai lệch."'
-  moi: '"Đây là suy luận từ các nghiên cứu về thông tin sai lệch, chưa phải kết quả của một nghiên cứu so sánh trực tiếp hai kiểu hỏi."'
-  ly_do: Hồ sơ n38.
-- cu: '"Thí nghiệm dùng phim ngắn trong phòng thí nghiệm; người xem không bị căng thẳng như nhân chứng thật và biết hậu quả của câu trả lời không lớn."'
-  moi: '"Thí nghiệm dùng đoạn phim ngắn cho sinh viên xem, không phải một vụ tai nạn thật xảy ra trước mắt nhân chứng."'
-  ly_do: Hồ sơ n41.
-- cu: '"…trong tiếng Việt, "đâm sầm", "tông", "đụng", "chạm" mang sắc thái khác nhau theo cách không hoàn toàn trùng với tiếng Anh. Chúng tôi chưa tìm thấy nghiên cứu nào…"'
-  moi: '"Các bản dịch… chỉ để minh họa, không phải câu hỏi gốc. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào…"'
-  ly_do: Hồ sơ n43, n44.
-- cu: 'Giải thích quiz 4: "Phần lớn ký ức của ta đủ chính xác cho đời sống hằng ngày. Nghiên cứu cho thấy…"'
-  moi: '"Nghiên cứu cho thấy trí nhớ có thể bị dẫn dắt, chứ không cho thấy nó luôn sai."'
-  ly_do: Hồ sơ n52.
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'mô tả: "…làm thay đổi ký ức của nhân chứng."'
+    moi: '"…làm thay đổi điều nhân chứng ước lượng và có thể cả điều họ nhớ."'
+    ly_do: 'Hồ sơ n1: bài gốc nói "consistent with the view", không chứng minh ký ức đổi.'
+  - cu: '"mỗi lần nhớ lại, ta dựng lại sự kiện từ các mảnh: … một phần từ hiểu biết chung… Phần lớn thời gian, việc dựng lại này đủ chính xác. Nhưng nó có thể bị dẫn dắt."'
+    moi: '"khi nhớ lại, ta thường dựng lại sự kiện từ các mảnh: … một phần từ thông tin đến sau sự kiện, kể cả điều người khác kể và chính câu hỏi… Việc dựng lại này có thể bị dẫn dắt."'
+    ly_do: 'Hồ sơ n7: nguồn đã mở không nói "hiểu biết chung" hay "phần lớn thời gian… đủ chính xác".'
+  - cu: '"150 sinh viên khác xem một đoạn phim"'
+    moi: '"150 sinh viên xem một đoạn phim"'
+    ly_do: 'Hồ sơ n20: bài không nói nhóm khác nhóm thí nghiệm 1.'
+  - cu: '"Một động từ được nghe một tuần trước đã khiến gấp đôi số người "nhớ" ra một chi tiết không hề tồn tại."'
+    moi: '"Những người được hỏi bằng từ "đâm sầm" "nhớ" ra một chi tiết không hề tồn tại với tỉ lệ hơn gấp đôi so với hai nhóm còn lại."'
+    ly_do: Hồ sơ n25.
+  - cu: '"…theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại…"'
+    moi: '"…và tính đến 11/2026, theo những gì chúng tôi tìm được, thí nghiệm cụ thể này chưa được làm lại…"'
+    ly_do: Khẳng định thời sự cần mốc (n32).
+  - cu: '"Thí nghiệm 2 được thiết kế để ủng hộ khả năng thứ hai, nhưng tranh luận về việc ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn tiếp tục trong nhiều năm sau đó."'
+    moi: '"Thí nghiệm 2 được thiết kế để cho thêm manh mối giữa hai khả năng ấy, và kết quả phù hợp với khả năng thứ hai; nhưng câu hỏi ký ức gốc bị ghi đè hay chỉ khó truy cập hơn vẫn được nghiên cứu trong nhiều năm sau đó."'
+    ly_do: Hồ sơ n36, n37.
+  - cu: '"Đây là áp dụng trực tiếp từ các nghiên cứu về thông tin sai lệch."'
+    moi: '"Đây là suy luận từ các nghiên cứu về thông tin sai lệch, chưa phải kết quả của một nghiên cứu so sánh trực tiếp hai kiểu hỏi."'
+    ly_do: Hồ sơ n38.
+  - cu: '"Thí nghiệm dùng phim ngắn trong phòng thí nghiệm; người xem không bị căng thẳng như nhân chứng thật và biết hậu quả của câu trả lời không lớn."'
+    moi: '"Thí nghiệm dùng đoạn phim ngắn cho sinh viên xem, không phải một vụ tai nạn thật xảy ra trước mắt nhân chứng."'
+    ly_do: Hồ sơ n41.
+  - cu: '"…trong tiếng Việt, "đâm sầm", "tông", "đụng", "chạm" mang sắc thái khác nhau theo cách không hoàn toàn trùng với tiếng Anh. Chúng tôi chưa tìm thấy nghiên cứu nào…"'
+    moi: '"Các bản dịch… chỉ để minh họa, không phải câu hỏi gốc. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào…"'
+    ly_do: Hồ sơ n43, n44.
+  - cu: 'Giải thích quiz 4: "Phần lớn ký ức của ta đủ chính xác cho đời sống hằng ngày. Nghiên cứu cho thấy…"'
+    moi: '"Nghiên cứu cho thấy trí nhớ có thể bị dẫn dắt, chứ không cho thấy nó luôn sai."'
+    ly_do: Hồ sơ n52.
