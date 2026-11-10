@@ -1,0 +1,1265 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/cang-thang-giac-ngu/stress-co-hai
+trang: src/content/docs/kham-pha/cang-thang-giac-ngu/stress-co-hai.md
+nguon_cu: ../psyche-zero/docs/kham-pha/cang-thang-giac-ngu/stress-co-hai.md
+tang: mo-rong
+muc: V2
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d6-l1
+    ma_bam: sha256:221bbf119134b6f1882ff888ad4e496a38ac805154fa51ec8d335a91f718061e
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L1 phần 1/2); bài mở rộng, kiểm đủ như lõi ở lượt 1
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L1)
+      review: Claude Opus 5.5 (agent review D6-L1, 10/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d6-l1-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: crum2013
+    ten: 'Crum, Salovey & Achor (2013), JPSP 104(4), 716–733: toàn văn (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1037/a0031201
+    toan_van: true
+  - id: keller2012
+    ten: 'Keller và cộng sự (2012), Health Psychol 31(5), 677–684: toàn văn bản thảo tác giả (PMC3374921)'
+    link: https://doi.org/10.1037/a0026743
+    toan_van: true
+  - id: selye1936
+    ten: 'Selye (1936), Nature 138, 32: chỉ xem trước (tóm tắt, địa chỉ tác giả) trên trang nhà xuất bản; nội dung theo Szabo 2012 kể lại'
+    link: https://doi.org/10.1038/138032a0
+    toan_van: false
+  - id: szabo2012
+    ten: 'Szabo, Tache & Somogyi (2012), Stress 15(5), 472–478: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.3109/10253890.2012.710919
+    toan_van: false
+  - id: os141
+    ten: OpenStax Psychology 2e, 14.1 (đọc 10/11/2026)
+    link: https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress
+    toan_van: true
+  - id: os142
+    ten: OpenStax Psychology 2e, 14.2 (đọc 10/11/2026)
+    link: https://openstax.org/books/psychology-2e/pages/14-2-stressors
+    toan_van: true
+  - id: os144
+    ten: OpenStax Psychology 2e, 14.4 (đọc 10/11/2026)
+    link: https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress
+    toan_van: true
+  - id: crum2023
+    ten: 'Crum và cộng sự (2023), JEP: General 152(9), 2603–2622: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/xge0001396
+    toan_van: false
+  - id: yeager2022
+    ten: 'Yeager và cộng sự (2022), Nature 607, 512–520: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1038/s41586-022-04907-7
+    toan_van: false
+  - id: langrafe2025
+    ten: 'Langrafe Junior và cộng sự (2025), Front Behav Neurosci 19, 1685319: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.3389/fnbeh.2025.1685319
+    toan_van: false
+  - id: liu2019
+    ten: 'Liu và cộng sự (2019), PLoS ONE 14(2), e0212854: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1371/journal.pone.0212854
+    toan_van: false
+  - id: bosshard2024
+    ten: 'Bosshard & Gomez (2024), Sci Rep 14, 7923: tóm tắt (Europe PMC); tên bài theo Crossref'
+    link: https://doi.org/10.1038/s41598-024-58408-w
+    toan_van: false
+  - id: nguyen2023
+    ten: 'Nguyen và cộng sự (2023), BMC Med Educ 23, 587: toàn văn (PMC10439558)'
+    link: https://doi.org/10.1186/s12909-023-04559-9
+    toan_van: true
+  - id: wu2026
+    ten: 'Wu và cộng sự (2026), Appl Psychol Health Well-Being 18(4), e70188: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1111/aphw.70188
+    toan_van: false
+  - id: kivimaki2012
+    ten: 'Kivimäki và cộng sự (2012), Lancet 380, 1491–1497: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/S0140-6736(12)60994-5
+    toan_van: false
+  - id: richardson2012
+    ten: 'Richardson và cộng sự (2012), Am J Cardiol 110(12), 1711–1716: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.amjcard.2012.08.004
+    toan_van: false
+  - id: wendsche2016
+    ten: 'Wendsche & Lohmann-Haislah (2016), Front Psychol 7, 2072: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.3389/fpsyg.2016.02072
+    toan_van: false
+  - id: mcewen1993
+    ten: 'McEwen & Stellar (1993), Arch Intern Med 153(18), 2093–2101: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1001/archinte.1993.00410180039004
+    toan_van: false
+  - id: tim-tai-lap
+    ten: 'Tìm trên Europe PMC (10/11/2026): "stress mindset" AND replication / (meta-analysis OR systematic review) / registered report: không thấy tái lập lớn có đăng ký trước của video 2013 (đã xem tiêu đề đầu danh sách, chưa đọc hết)'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22stress%20mindset%22%20AND%20replication
+    toan_van: false
+  - id: tim-vn
+    ten: 'Tìm trên Europe PMC (10/11/2026): "stress mindset" AND (Vietnam OR Vietnamese): 6 kết quả; một nghiên cứu về niềm tin stress ở người Việt (Nguyen 2023)'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22stress%20mindset%22%20AND%20(Vietnam%20OR%20Vietnamese)
+    toan_van: false
+  - id: nhs-stress
+    ten: "NHS (Anh), trang Stress: trang chính thức (lượt 2 đọc 10/11/2026)"
+    link: https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả: hội chứng thích ứng chung của Selye (1936) và nghiên cứu stress mindset của Crum và cộng sự (2013).'
+    loai: lich-su
+    nguon:
+      - selye1936
+    trich: A syndrome produced by diverse nocuous agents
+    vi_tri: Nature 138, 32 (1936)
+    ket_qua: dung
+    ghi_chu: 'Crossref 10.1038/138032a0: Nature 138(3479) tr. 32, 1936; Crum, Salovey & Achor: JPSP 104(4) 716–733 (2013).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22845714", "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n2
+    cau: 'Mô tả: liệu niềm tin về stress có thay đổi cách ta phản ứng với nó không.'
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: stress mindsets can be altered by watching short, multimedia film clips
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "niềm tin về stress thay đổi phản ứng của cơ thể ra sao". Chữ mới: "liệu niềm tin về stress có thay đổi cách ta phản ứng với nó không". Lý do: bằng chứng về phản ứng cơ thể chưa nhất quán (n41–n44). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+    luot_2_ghi_chu: Câu mô tả câu hỏi của bài.
+    review: dung
+  - id: n3
+    cau: 'Đáp án thu gọn: tim đập nhanh của An là phản ứng báo động bình thường; các nghiên cứu theo dõi dài hạn thấy mức căng thẳng cao (như căng thẳng trong công việc) đi kèm nguy cơ bệnh tim mạch cao hơn, và mô hình của Selye gợi ý điều đáng lo là căng thẳng kéo dài mà không có lúc phục hồi.'
+    loai: phat-hien
+    nguon:
+      - os141
+      - kivimaki2012
+      - richardson2012
+    trich: Prolonged stress ultimately results in exhaustion. [OpenStax 14.1] | the hazard ratio for job strain versus no job strain was 1·23 [Kivimäki 2012]
+    vi_tri: OpenStax 14.1; tóm tắt Kivimäki 2012, Richardson 2012
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nó chỉ thành vấn đề khi căng thẳng kéo dài mà không có lúc phục hồi". Chữ mới: "Điều nghiên cứu liên hệ với nguy cơ sức khỏe là căng thẳng kéo dài…". Lý do: các nghiên cứu là quan sát (n52); phần "không có lúc phục hồi" là diễn giải từ mô hình (xem n52). Review (Claude Opus 5.5, 10/11/2026): sai. Chữ "Điều nghiên cứu liên hệ với nguy cơ sức khỏe là căng thẳng kéo dài mà không có lúc phục hồi" gán cho nghiên cứu điều chúng không đo: Kivimäki 2012 và Richardson 2012 (tóm tắt) đo mức căng thẳng một lần lúc đầu, không đo thời gian kéo dài hay việc phục hồi (cùng lý do lượt 2 nêu ở n53). Chữ mới tách hai ý: nghiên cứu theo dõi thấy mức căng thẳng cao đi kèm nguy cơ tim mạch cao hơn; mô hình Selye gợi ý điều đáng lo là căng thẳng kéo dài không phục hồi.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress", "https://europepmc.org/article/MED/22981903", "https://europepmc.org/article/MED/8379800" ]
+    review: sai
+  - id: n4
+    cau: 'Đáp án thu gọn: một số thử nghiệm cho thấy niềm tin "stress có thể giúp ích" thay đổi cách người ta cảm nhận và phản ứng với stress, nhưng bằng chứng về phản ứng của cơ thể chưa nhất quán; nó không phải phép màu chữa bệnh.'
+    loai: phat-hien
+    nguon:
+      - liu2019
+    trich: reappraisal interventions are effective in attenuating subjective responsivity to stress [...] did not outperform control groups on measures of physiological stress
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nghiên cứu cho thấy nó thật sự làm thay đổi phản ứng của cơ thể". Chữ mới: "một số thử nghiệm cho thấy nó thay đổi cách người ta cảm nhận và phản ứng với stress, nhưng bằng chứng về phản ứng của cơ thể chưa nhất quán". Lý do: Liu 2019 không thấy khác biệt sinh lý. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf", "https://europepmc.org/article/MED/37199967", "https://europepmc.org/article/MED/30811484" ]
+    review: dung
+  - id: n5
+    cau: Link tới trang Hỗ trợ trong đáp án thu gọn ("Nếu bạn thấy mình giống Bình, xem trang Hỗ trợ").
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm: id ho-tro có trong src/data/trang.yml; câu chỉ dẫn, không chẩn đoán. Cần trang Hỗ trợ lên trước khi khóa. Ví dụ Bình (ba tháng làm việc đến khuya) là tình huống giả định (gia-dinh). Review (Claude Opus 5.5, 10/11/2026): dung. Link /psyche/ho-tro/ theo quy ước AGENTS.md và các trang đã khóa; ho-tro/index có trong trang.yml và khoa.json.'
+    review: dung
+  - id: n6
+    cau: Năm 1936, Hans Selye ở Đại học McGill (Canada) nhận thấy dù gây hại cho chuột bằng cách nào, cơ thể chúng đều đáp lại bằng cùng một bộ triệu chứng.
+    loai: lich-su
+    nguon:
+      - selye1936
+    trich: Department of Biochemistry, McGill University, Montreal, Canada [...] EXPERIMENTS on rats show that if the organism is severely damaged by acute non-specific nocuous agents
+    vi_tri: trang Nature 138, 32 (siêu dữ liệu tác giả; tóm tắt)
+    ket_qua: dung
+    ghi_chu: Toàn văn bài 1936 không mở được (chỉ xem trước); câu dựa vào tóm tắt và địa chỉ tác giả trên trang nhà xuất bản.
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress", "https://europepmc.org/article/MED/22845714" ]
+    luot_2_ghi_chu: Năm 1936 theo Szabo; chỉ đọc tóm tắt và OpenStax, không mở thư gốc (có tường phí).
+  - id: n7
+    cau: Các tác nhân gây hại gồm nhiễm lạnh, phẫu thuật, vận động quá sức, hay tiêm đủ loại thuốc.
+    loai: phat-hien
+    nguon:
+      - selye1936
+    trich: exposure to cold, surgical injury, production of spinal shock (transcision of the cord), excessive muscular exercise, or intoxications with sublethal doses of diverse drugs
+    vi_tri: Nature 138, 32, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+    luot_2_ghi_chu: Mục "tiêm đủ loại thuốc" không có trong OpenStax; bản thư gốc của Selye có tường phí nên không mở; nhan đề "diverse nocuous agents" ủng hộ ý chung.
+  - id: n8
+    cau: 'Bộ triệu chứng chung: tuyến thượng thận phì đại, tuyến ức và hạch bạch huyết teo lại, loét hay xói mòn dạ dày.'
+    loai: phat-hien
+    nguon:
+      - szabo2012
+    trich: the triad of enlarged adrenal glands, lymph node and thymic atrophy, and gastric erosions/ulcers
+    vi_tri: tóm tắt Szabo và cộng sự (2012) kể lại bài 1936
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "xuất huyết và loét dạ dày–ruột". Chữ mới: "loét hay xói mòn dạ dày". Lý do: Szabo 2012 mô tả "gastric erosions/ulcers" (dạ dày, không phải dạ dày–ruột); bài 1936 chỉ đọc được tóm tắt, nên ghi theo Szabo kể lại. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22845714", "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+    review: dung
+  - id: n9
+    cau: 'Phản ứng của cơ thể không đặc hiệu: không phụ thuộc loại tác nhân mà là phản ứng chung.'
+    loai: phat-hien
+    nguon:
+      - selye1936
+    trich: the symptoms of which are independent of the nature of the damaging agent or the pharmacological type of the drug employed, and represent rather a response to damage as such
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22845714", "https://doi.org/10.1038/138032a0" ]
+    luot_2_ghi_chu: Chỉ đọc nhan đề, tóm tắt và tổng quan Szabo; thư gốc có tường phí.
+  - id: n10
+    cau: Selye định nghĩa stress là "phản ứng của cơ thể trước mọi đòi hỏi, dù đòi hỏi ấy gây ra hay dẫn đến điều dễ chịu hay khó chịu" (Selye, 1976, theo OpenStax).
+    loai: dinh-nghia
+    nguon:
+      - os141
+    trich: response of the body to any demand, whether it is caused by, or results in, pleasant or unpleasant conditions
+    vi_tri: OpenStax Psychology 2e, 14.1 (trích Selye 1976, tr. 74)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phản ứng không đặc hiệu của cơ thể trước mọi đòi hỏi đặt ra cho nó — kể cả đòi hỏi dễ chịu (như háo hức trước một chuyến đi)"; và câu "Từ stress ông mượn từ vật lý". Chữ mới: trích đúng bản OpenStax. Lý do: trích nguyên văn theo nguồn đã mở; câu mượn từ vật lý không kiểm được nên bỏ. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+    review: dung
+  - id: n11
+    cau: Cả những sự kiện vui như đám cưới hay kỳ nghỉ cũng đòi hỏi cơ thể thích nghi.
+    loai: phat-hien
+    nguon:
+      - os142
+    trich: Examples include death of a close family member, marriage, divorce, and moving [...] vacation (13 LCUs)
+    vi_tri: OpenStax Psychology 2e, 14.2 (thang Holmes–Rahe)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "kể cả đòi hỏi dễ chịu (như háo hức trước một chuyến đi)". Chữ mới: "cả những sự kiện vui như đám cưới hay kỳ nghỉ cũng đòi hỏi cơ thể thích nghi". Lý do: OpenStax 14.2 đưa hôn nhân (50 LCU) và kỳ nghỉ (13 LCU) vào thang thay đổi cuộc sống, tức đòi hỏi thích nghi; "đòi hỏi cơ thể thích nghi" là diễn giải từ thang đo. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+    luot_2_ghi_chu: Ví dụ đám cưới, kỳ nghỉ là minh họa của trang, không có trong OpenStax.
+    review: dung
+  - id: n12
+    cau: 'Hội chứng thích ứng chung gồm ba giai đoạn: báo động, kháng cự, kiệt sức.'
+    loai: dinh-nghia
+    nguon:
+      - os141
+    trich: 'consists of three stages: (1) alarm reaction, (2) stage of resistance, and (3) stage of exhaustion'
+    vi_tri: OpenStax 14.1 (Selye 1936; 1976)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+  - id: n13
+    cau: 'Báo động: tim đập nhanh, adrenaline tăng, tương tự phản ứng "chiến hay chạy" mà Walter Cannon đã mô tả trước đó.'
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: Alarm reaction describes the body's immediate reaction upon facing a threatening situation or emergency, and it is roughly analogous to the fight-or-flight response described by Cannon.
+    vi_tri: OpenStax 14.1
+    ket_qua: dung
+    ghi_chu: '"Tim đập nhanh, adrenaline tăng" là ví dụ minh họa của OpenStax cho phản ứng báo động.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+    luot_2_ghi_chu: Chi tiết adrenaline tăng không có trong đoạn đã đọc; ý chung đúng.
+  - id: n14
+    cau: 'Kháng cự: nếu tác nhân còn đó, cơ thể cố thích nghi; kiệt sức: nếu kéo dài quá lâu, nguồn lực cạn dần, chức năng suy giảm, bệnh tật dễ xuất hiện.'
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: stage of exhaustion
+    vi_tri: OpenStax 14.1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Mô tả giai đoạn theo OpenStax. Chữ cũ của câu mô hình: "Mô hình này giải thích vì sao stress ngắn hạn … thường vô hại, thậm chí hữu ích". Chữ mới: "gợi ý rằng điều đáng lo là stress kéo dài…" (n15). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress", "https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress" ]
+    review: dung
+  - id: n15
+    cau: Mô hình gợi ý rằng điều đáng lo là stress kéo dài không lối thoát, chứ không phải một đợt căng thẳng ngắn (như trước giờ thi).
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: Prolonged stress ultimately results in exhaustion. [...] If exposure to a stressor continues over a longer period of time, the stage of exhaustion ensues.
+    vi_tri: OpenStax 14.1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "giải thích vì sao stress ngắn hạn … thường vô hại, thậm chí hữu ích, còn stress kéo dài không lối thoát mới là vấn đề". Chữ mới: "gợi ý …". Lý do: mô hình GAS dựa trên chuột và tác nhân nặng; không "giải thích" cho người. Review (Claude Opus 5.5, 10/11/2026): dung. OpenStax Psychology 2e, mục 14.1 (đọc lại 10/11/2026): "Prolonged stress ultimately results in exhaustion"; "If exposure to a stressor continues over a longer period of time, the stage of exhaustion ensues"; eustress: "students may experience similar beneficial stress before a major exam". Lượt 2 không chắc chỉ vì không thấy trang. Đúng.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Không thấy trang nên không biết "mô hình" nào; không kiểm được.
+    review: dung
+  - id: n16
+    cau: Selye nghiên cứu trên chuột với các tác nhân gây hại nặng.
+    loai: phat-hien
+    nguon:
+      - selye1936
+    trich: if the organism is severely damaged by acute non-specific nocuous agents
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "các tác nhân vật lý cực đoan". Chữ mới: "các tác nhân gây hại nặng". Lý do: tác nhân gồm cả thuốc (n7). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress", "https://europepmc.org/article/MED/22845714" ]
+    review: dung
+  - id: n17
+    cau: 'Hình "gas-curve": sơ đồ ba giai đoạn báo động, kháng cự, kiệt sức; "sơ đồ minh họa ước lệ, không theo tỉ lệ số liệu".'
+    loai: cong-cu
+    ket_qua: dung
+    ghi_chu: 'Đã mở src/hinh/gas-curve.html: không có số liệu; chữ trong hình khớp n12–n14 và nói rõ là ước lệ. Hình không sai, không sửa. Review (Claude Opus 5.5, 10/11/2026): dung. Hình ba giai đoạn khớp OpenStax 14.1 (Hình 14.10: "The three stages of Selye’s general adaptation syndrome … Prolonged stress ultimately results in exhaustion"); chú thích ghi rõ là sơ đồ ước lệ, không có số liệu. Thêm nguồn os141.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Hình minh họa của trang, không thấy trang để kiểm; ba giai đoạn đã xác nhận (OpenStax 14.1).
+    nguon:
+      - os141
+    review: dung
+  - id: n18
+    cau: 'Bài "Rethinking stress: The role of mindsets in determining the stress response", Journal of Personality and Social Psychology, 104(4), 716–733 (Crum, Salovey & Achor, 2013), gồm ba nghiên cứu.'
+    loai: lich-su
+    nguon:
+      - crum2013
+    trich: This article describes 3 studies that explore the role of mindsets in the context of stress.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Siêu dữ liệu khớp Crossref 10.1037/a0031201.
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n19
+    cau: 'Nghiên cứu 1: thang đo 8 câu Stress Mindset Measure đo niềm tin stress có lợi hay có hại, ở ba khía cạnh: sức khỏe, hiệu suất, học hỏi–phát triển; kiểm tra trên nhân viên một tổ chức tài chính quốc tế lớn.'
+    loai: cong-cu
+    nguon:
+      - crum2013
+    trich: an 8-item instrument, the Stress Mindset Measure (SMM), designed to assess the extent to which an individual believes that the effects of stress are either enhancing or debilitating
+    vi_tri: 'tóm tắt; Study 1 (nhân viên tổ chức tài chính: mục Study 2 "the large international financial institution recruited in Study 1")'
+    ket_qua: dung
+    ghi_chu: Ba khía cạnh của câu hỏi (sức khỏe, hiệu suất, học hỏi) theo mô tả video ở Study 2; không kiểm riêng từng câu của thang.
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n20
+    cau: 'Nghiên cứu 2: nhân viên được chia ngẫu nhiên thành ba nhóm: video "có lợi" (N = 163), "có hại" (N = 164), đối chứng không xem gì (N = 61).'
+    loai: so-lieu
+    nguon:
+      - crum2013
+    trich: participants were randomized into a "stress-is-enhancing" [...] a "stress-is-debilitating" [...] or a "control" condition
+    vi_tri: Study 2, mục Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n21
+    cau: Trong một tuần, mỗi người ở hai nhóm đầu xem ba video ngắn khoảng 3 phút (gửi qua email) về tác động của stress lên sức khỏe, hiệu suất và khả năng học hỏi.
+    loai: so-lieu
+    nguon:
+      - crum2013
+    trich: These videos were approximately 3 min in length [...] The three videos were delivered via e-mail in 2- to 3-day intervals.
+    vi_tri: Study 2, mục Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n22
+    cau: Vài ngày sau video cuối, họ làm lại các bài đo.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: days after the third stress mindset video, participants were invited to complete a set of follow-up measures
+    vi_tri: Study 2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n23
+    cau: 'Niềm tin về stress thay đổi được: nhóm xem video "có lợi" chuyển sang tin stress có ích hơn, nhóm xem video "có hại" chuyển theo hướng ngược lại.'
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: the SMM increased over time for those in the enhancing condition [...] it decreased over time for those in the debilitating condition, [...] and did not change for those in the control condition
+    vi_tri: Study 2, Results
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n24
+    cau: Nhóm "có lợi" báo cáo ít triệu chứng tâm lý hơn (thang MASQ), trong khi hai nhóm còn lại không thay đổi đáng kể.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: participants in the enhancing condition reported improved psychological symptoms and better work performance, whereas their counterparts in the control or debilitating conditions did not
+    vi_tri: Study 2, Discussion
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n25
+    cau: Nhóm "có lợi" tự đánh giá hiệu suất làm việc cao hơn (thang WPS), với xu hướng tương tự ở cả kỹ năng "cứng" và "mềm"; hai nhóm còn lại không thay đổi.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: WPS increased over time for the enhancing condition [...] the control and debilitating condition showed no significant change
+    vi_tri: Study 2, Results
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cả kỹ năng cứng … lẫn kỹ năng mềm". Chữ mới: "với xu hướng tương tự ở cả …". Lý do: bài viết "Similar trends were found with respect to both hard skills… and soft skills". Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+    review: dung
+  - id: n26
+    cau: Độ lớn hiệu ứng của can thiệp nhỏ (η² = 0,02 với triệu chứng và 0,04 với hiệu suất tự đánh giá).
+    loai: so-lieu
+    nguon:
+      - crum2013
+    trich: Repeated measures GLM yielded a reliable condition by time effect for MASQ, F(1, 269) = 3.20, p < .04, η² = .02 […] for the scale as a whole, F(1, 293) = 5.10, p < .01, η² = .04
+    vi_tri: 'Study 2, Results (WPS η² = .04; MASQ η² = .02: F(1, 269) = 3.20)'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Độ lớn hiệu ứng của can thiệp là nhỏ." Chữ mới: thêm η² = 0,02 (MASQ) và 0,04 (WPS); "từ nhỏ đến vừa" theo quy ước η². Lý do: nêu số theo bài. Chưa đối chiếu η² của MASQ từng chữ (bản OCR thiếu ký hiệu). Review (Claude Opus 5.5, 10/11/2026): sai. Mở lại toàn văn Crum 2013 (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus). Study 2: MASQ "F(1, 269) = 3.20, p < .04, η² = .02"; WPS "F(1, 293) = 5.10, p < .01, η² = .04". Theo quy ước Cohen cả hai ở mức nhỏ (vừa ≈ 0,06); lượt 2 cũng nêu. Chữ cũ: "từ nhỏ đến vừa". Chữ mới: "nhỏ".'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+    luot_2_ghi_chu: '"Từ nhỏ đến vừa" hơi rộng: cả hai gần mức nhỏ.'
+    review: sai
+  - id: n27
+    cau: Mọi kết quả ở nghiên cứu 2 đều là tự báo cáo; chính các tác giả thừa nhận đây là điểm yếu.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: a primary limitation in Studies 1 and 2 was that all of the measures used were obtained via self-report
+    vi_tri: Study 2, Discussion
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n28
+    cau: Người tham gia là nhân viên tự nguyện đăng ký chương trình quản lý stress.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: Participants were then enrolled in a workshop designed specifically to address stress management
+    vi_tri: Study 1, Method
+    ket_qua: dung
+    ghi_chu: 'Bài: nhân viên được mời, đăng ký workshop quản lý stress và làm bộ đo trực tuyến trước khi dự.'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n29
+    cau: Hiệu quả của nghiên cứu 2 chỉ được đo khoảng hai tuần sau can thiệp.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: The study did not assess how long the stress mindset effects lasted beyond 2 weeks.
+    vi_tri: Study 2, Discussion
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+    luot_2_ghi_chu: Đo lại 2-3 ngày sau video cuối.
+  - id: n30
+    cau: Ngay trong nghiên cứu 1, khi kiểm soát các biến khác, niềm tin về stress không giải thích thêm được sự khác biệt về hiệu suất làm việc.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: counter to our predictions, the SMM did not explain a statistically significant portion of additional variance in work performance
+    vi_tri: Study 1, Results (tr. 722)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n31
+    cau: 'Nghiên cứu 3: 63 sinh viên (trong số 109 sinh viên của một lớp tâm lý học) chuẩn bị bài thuyết trình trước lớp, biết rằng có thể bị chọn ngẫu nhiên để nói, bị quay video và chấm điểm.'
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: There were a total of 109 students in the class, of which 63 completed all sets of measures [...] five of them would be randomly selected to give their speech to the class [...] they would be videotaped and that a team of experts from the business school would assess their ability
+    vi_tri: Study 3, chú thích 7 và Method
+    ket_qua: dung
+    ghi_chu: '"Một lớp tâm lý học" theo mô tả lớp của bài; chưa kiểm tên môn trong bài (có thể là lớp của trường kinh doanh): chỗ này không dựa vào bài, xem n32.'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n32
+    cau: Cortisol trong nước bọt được đo vào một ngày học bình thường và vào ngày căng thẳng.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: The first three cortisol samples were administered at the beginning (0 min), middle (30 min) and end (60 min) of a normal class day
+    vi_tri: Study 3, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n33
+    cau: Người có niềm tin "stress có lợi" (niềm tin được đo từ trước, không phải do can thiệp) muốn nhận phản hồi về bài nói của mình hơn, tức họ chọn tiếp cận thay vì né tránh.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: a stress-is-enhancing mindset is associated with moderate cortisol reactivity and high desire for feedback under stress
+    vi_tri: tóm tắt; Study 3
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: không có "(niềm tin được đo từ trước, không phải do can thiệp)". Chữ mới: thêm. Lý do: nghiên cứu 3 là tương quan, không can thiệp. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+    review: dung
+  - id: n34
+    cau: 'Về cortisol, kết quả chỉ ở mức "gần có ý nghĩa thống kê": niềm tin có lợi đi kèm phản ứng cortisol vừa phải, không quá cao cũng không quá thấp.'
+    loai: so-lieu
+    nguon:
+      - crum2013
+    trich: there is a marginally significant interaction between stress mindset and cortisol reactivity such that a stress-is-enhancing mindset boosts cortisol response to stress for low cortisol responders and buffers cortisol response to stress for high cortisol responders
+    vi_tri: Study 3, Results (p = .07)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+  - id: n35
+    cau: 'Keller và cộng sự (2012): quan sát trên 28.753 người Mỹ trưởng thành (khảo sát sức khỏe quốc gia 1998, theo dõi tử vong đến 2006).'
+    loai: so-lieu
+    nguon:
+      - keller2012
+    trich: Data from the 1998 National Health Interview Survey were linked to prospective National Death Index mortality data through 2006 [...] (unweighted [...])
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22201278" ]
+  - id: n36
+    cau: Người vừa báo cáo nhiều stress vừa tin rằng stress ảnh hưởng nhiều đến sức khỏe có nguy cơ tử vong sớm cao hơn 43% (HR = 1,43; KTC 95% 1,2–1,7) so với nhóm gần như không có stress và cho rằng stress hầu như không ảnh hưởng đến sức khỏe.
+    loai: so-lieu
+    nguon:
+      - keller2012
+    trich: "Almost no stress in last 12 months / Hardly any, or No perception that stress affects health: 1.00 reference […] A lot of stress […] Perception that stress affects health a lot 1.43 1.2 1.7"
+    vi_tri: Keller 2012, bảng hồi quy Cox (bản thảo tác giả PMC3374921)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "so với nhóm tham chiếu". Chữ mới: "so với nhóm không báo cáo nhiều stress lẫn không tin rằng stress ảnh hưởng đến sức khỏe". Lý do: nêu rõ nhóm so sánh; nhóm tham chiếu của mô hình Cox được mô tả là mức stress thấp và không tin stress ảnh hưởng (theo bài; chưa trích nguyên văn). Review (Claude Opus 5.5, 10/11/2026): sai. Mở toàn văn bản thảo tác giả Keller 2012 (PMC3374921): bảng Cox, nhóm tham chiếu là "Almost no stress in last 12 months" và "Hardly any, or No perception that stress affects health". Chữ cũ "so với nhóm không báo cáo nhiều stress lẫn không tin rằng stress ảnh hưởng đến sức khỏe" rộng hơn nhóm tham chiếu. Chữ mới: "so với nhóm gần như không có stress và cho rằng stress hầu như không ảnh hưởng đến sức khỏe".'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22201278" ]
+    review: sai
+  - id: n37
+    cau: Đây là nghiên cứu tương quan; các tác giả lưu ý nhân quả ngược có thể giải thích một phần (người sức khỏe kém dễ cho rằng stress ảnh hưởng đến mình).
+    loai: phat-hien
+    nguon:
+      - keller2012
+    trich: reverse causality may partially explain the findings in this study. Adults who reported poor health may have been more likely to report that stress impacts their health
+    vi_tri: mục Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nó cho thấy lo lắng về stress tự nó có thể là một gánh nặng". Chữ mới: "chính các tác giả lưu ý nhân quả ngược…". Lý do: câu cũ là diễn giải nhân quả mà tác giả không đưa ra. Review (Claude Opus 5.5, 10/11/2026): dung. Mở toàn văn bản thảo tác giả Keller 2012 (PMC3374921, qua NCBI E-utilities): "reverse causality may partially explain the findings in this study. Adults who reported poor health may have been more likely to report that stress impacts their health". Đúng.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22201278" ]
+    luot_2_ghi_chu: Tóm tắt xác nhận thiết kế quan sát; chưa mở được toàn văn nên không xác nhận được lời lưu ý nhân quả ngược của các tác giả.
+    review: dung
+  - id: n38
+    cau: 'Crum 2023: ba thử nghiệm đối chứng ngẫu nhiên về can thiệp "siêu nhận thức": cung cấp thông tin cân bằng hai mặt của stress và hướng dẫn tự chọn góc nhìn thích ứng.'
+    loai: phat-hien
+    nguon:
+      - crum2023
+    trich: participants are given more balanced information about the nature of stress along with metacognitive information on the power of their mindsets aimed at empowering them to choose a more adaptive mindset
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: tóm gọn một câu ("Ba thử nghiệm đối chứng ngẫu nhiên cho thấy …"). Chữ mới: mô tả từng thử nghiệm. Lý do: viết đúng thiết kế theo tóm tắt (toàn văn không mở được). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/37199967" ]
+    review: dung
+  - id: n39
+    cau: 'Thử nghiệm 1 (nhân viên công ty tài chính lớn): nhóm can thiệp tăng niềm tin "stress có lợi" nhiều hơn nhóm chờ, 4 tuần sau báo cáo cải thiện triệu chứng sức khỏe thể chất và hiệu suất (kỹ năng liên cá nhân), đều tự báo cáo.'
+    loai: phat-hien
+    nguon:
+      - crum2023
+    trich: employees of a large finance company randomized to the metacognitive mindset intervention reported greater increases in stress-is-enhancing mindsets and greater improvements in self-reported measures of physical health symptoms and interpersonal-skill work performance 4 weeks later compared to a waitlist control
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hiệu suất làm việc (kỹ năng giao tiếp) tự báo cáo". Chữ mới: "kỹ năng liên cá nhân" (interpersonal-skill). Lý do: dịch đúng. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/37199967" ]
+    review: dung
+  - id: n40
+    cau: Thử nghiệm 2 (mô-đun đa phương tiện trực tuyến) lặp lại hiệu ứng lên niềm tin và triệu chứng; thử nghiệm 3 so với can thiệp truyền thống thấy niềm tin tăng nhiều hơn và vẫn giữ sau khi gặp thông tin trái chiều.
+    loai: phat-hien
+    nguon:
+      - crum2023
+    trich: Experiment 2, adapted to be distributed electronically via multimedia modules, replicates the effects on stress mindset and symptoms. [...] these increases were sustained after exposure to contradictory information
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/37199967" ]
+  - id: n41
+    cau: Đây là bằng chứng củng cố hơn, nhưng cùng nhóm nghiên cứu thực hiện, và là phiên bản can thiệp đã được cải tiến, không phải bản sao y hệt giao thức 2013.
+    loai: phat-hien
+    nguon:
+      - crum2023
+    trich: Thus, the traditional approach of focusing on the more "desired" mindset without arming participants against encounters with the less desired mindsets may not be sustainable
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Đây là bằng chứng củng cố, nhưng …". Chữ mới: "bằng chứng củng cố hơn … cùng nhóm nghiên cứu thực hiện". Lý do: nêu thêm giới hạn độc lập (tác giả Crum, Salovey, Achor… đều thuộc nhóm). Review (Claude Opus 5.5, 10/11/2026): dung. Crum 2023 (tóm tắt): tác giả gồm Crum, Salovey, Achor (cùng nhóm 2013); can thiệp "metacognitive" khác cách "traditional". "Đây" trên trang chỉ nghiên cứu 2023 (cùng đoạn). Đúng.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Không thấy trang nên không biết "đây" chỉ nghiên cứu nào (câu không nêu); không kiểm được.
+    review: dung
+  - id: n42
+    cau: 'Yeager và cộng sự (2022): chương trình "synergistic mindsets" ở học sinh, sinh viên Mỹ, sáu thử nghiệm ngẫu nhiên mù đôi, thấy cải thiện nhận thức về stress, phản ứng tim mạch, cortisol hằng ngày, sức khỏe tinh thần, thành tích học tập, triệu chứng lo âu thời COVID-19; lợi ích phụ thuộc vào việc nhắm cả hai niềm tin.'
+    loai: so-lieu
+    nguon:
+      - yeager2022
+    trich: In six double-blind, randomized, controlled experiments [...] improved stress-related cognitions [...] cardiovascular reactivity [...] daily cortisol levels [...] psychological well-being [...] academic success [...] anxiety symptoms during the 2020 COVID-19 lockdowns
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: '"Depended on addressing both mindsets" cũng ở tóm tắt. Review (Claude Opus 5.5, 10/11/2026): dung. Đọc lại tóm tắt Yeager 2022 (Europe PMC): "secondary and post-secondary students in the United States"; trang sửa "học sinh Mỹ" thành "học sinh, sinh viên Mỹ" (review, sửa nhỏ), các chỉ số khác khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35794485" ]
+    review: dung
+  - id: n43
+    cau: 'Langrafe Junior và cộng sự (2025): thử nghiệm ngẫu nhiên nhỏ ở 63 giáo viên Brazil, chuỗi video 8 ngày (Mind and Body Lab, Stanford): niềm tin đổi và cortisol giảm ngay sau can thiệp, nhưng không còn khác sau 30 ngày.'
+    loai: so-lieu
+    nguon:
+      - langrafe2025
+    trich: randomized controlled trial was conducted with 63 teachers [...] 8-days series of short educational videos developed by Stanford University's Mind and Body Lab [...] Cortisol concentrations decreased significantly in the intervention group post-intervention (p = 0.004; ε 2 = 0.262), though the effect was not maintained after 30 days
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chuỗi video 8 ngày của phòng thí nghiệm Stanford nơi Crum làm việc". Chữ mới: "do phòng thí nghiệm Mind and Body của Đại học Stanford phát triển". Lý do: tóm tắt không nói Crum làm việc ở đó; chỉ nêu tên phòng thí nghiệm. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/41445823" ]
+    review: dung
+  - id: n44
+    cau: 'Liu và cộng sự (2019): phân tích tổng hợp 14 bài, 36 mẫu độc lập: can thiệp "đánh giá lại" stress làm giảm phản ứng stress chủ quan (độ chênh chuẩn hóa 0,43; KTC 95% 0,07–0,79) nhưng không khác biệt ở chỉ số sinh lý (−0,08; −0,35 đến 0,18), kết quả khác nhau nhiều giữa các nghiên cứu.'
+    loai: so-lieu
+    nguon:
+      - liu2019
+    trich: A total of 14 articles with 36 independent samples were included in the meta-analysis [...] Standard differences in means across groups are 0.429 (SE = 0.185, 95% CI = 0.067 to 0.791; z = 2.320, p = .020). However, reappraisal intervention groups did not outperform control groups on measures of physiological stress, with standard differences of -0.084
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: '"Khác nhau nhiều" theo "heterogeneous effects suggesting large variability in findings".'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30811484" ]
+  - id: n45
+    cau: 'Bosshard & Gomez (2024): phân tích tổng hợp 44 hiệu ứng thấy các can thiệp cải thiện nhẹ thành tích khi làm nhiệm vụ (d = 0,23), còn riêng can thiệp niềm tin "stress có lợi" (6 hiệu ứng) d = 0,18, chưa có ý nghĩa thống kê (p = 0,22).'
+    loai: so-lieu
+    nguon:
+      - bosshard2024
+    trich: The literature search yielded 44 effect sizes [...] overall small significant improvement in task performance (d = 0.23, p < 0.001) [...] SIE mindset-only interventions (k = 6, d = 0.18, p = 0.22)
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/38575696" ]
+    luot_2_ghi_chu: Bài gộp can thiệp SAR và SIE; câu của trang gọi chung là "can thiệp".
+  - id: n46
+    cau: Từ 2013 nhiều nhóm khác đã thử các can thiệp tương tự (Yeager 2022; Langrafe Junior 2025; Nguyen 2023; Wu 2026).
+    loai: lich-su
+    nguon:
+      - wu2026
+    trich: A randomized controlled trial was conducted in a middle school in China
+    vi_tri: tóm tắt Wu 2026 và các nguồn ở n42–n45
+    ket_qua: dung
+    ghi_chu: Câu tổng quát, kiểm qua n42–n45 và n63.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/35794485", "https://europepmc.org/article/MED/41445823", "https://europepmc.org/article/MED/37596565", "https://europepmc.org/article/MED/42400189" ]
+  - id: n47
+    cau: 'Mục Nguồn: Bosshard & Gomez (2024), Sci Rep 14, 7923, tên bài "…task performance outcomes: A meta-analysis of randomized controlled trials".'
+    loai: lich-su
+    nguon:
+      - bosshard2024
+    trich: 'Effectiveness of stress arousal reappraisal and stress-is-enhancing mindset interventions on task performance outcomes: a meta-analysis of randomized controlled trials'
+    vi_tri: Crossref 10.1038/s41598-024-58408-w; tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "A systematic review and meta-analysis". Chữ mới: "A meta-analysis of randomized controlled trials". Lý do: Crossref và tóm tắt. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/38575696" ]
+    review: dung
+  - id: n48
+    cau: 'Khung "Khá vững: niềm tin về stress có thể thay đổi qua can thiệp ngắn".'
+    loai: nhan
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Hai chương trình nghiên cứu (2013 và 2023) đều cho thấy … duy trì được ít nhất vài tuần. Giới hạn: người tham gia đều tự nguyện …". Chữ mới: nhiều nhóm và nước, mốc 4 tuần / 30 ngày / 6 tháng, giới hạn "chưa có tái lập lớn đăng ký trước". Lý do: cập nhật thêm thử nghiệm độc lập; "duy trì vài tuần" chỉ ở một số thử nghiệm. Review (Claude Opus 5.5, 10/11/2026): dung. Khá vững đạt: nhiều thử nghiệm có đối chứng của nhiều nhóm, nhiều nước (Crum 2013 toàn văn: SMM tăng ở nhóm có lợi; Crum 2023, Yeager 2022, Langrafe 2025, Wu 2026, Nguyen 2023 tóm tắt) cùng chiều; giới hạn đã nêu.'
+    nhan: kha-vung
+    co_so:
+      - crum2013
+      - crum2023
+      - yeager2022
+      - langrafe2025
+      - nguyen2023
+      - wu2026
+      - liu2019
+    ly_do: 'Nhiều thử nghiệm có đối chứng của nhiều nhóm, nhiều nước thấy niềm tin "stress có lợi" tăng sau can thiệp ngắn, nhưng chưa có phân tích tổng hợp riêng cho niềm tin, thang đo tự báo cáo, nhiều thử nghiệm nhỏ hay không ngẫu nhiên cấp cá nhân, và chưa thấy tái lập lớn có đăng ký trước: Khá vững.'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf", "https://europepmc.org/article/MED/37199967", "https://europepmc.org/article/MED/35794485", "https://europepmc.org/article/MED/41445823", "https://europepmc.org/article/MED/42400189", "https://europepmc.org/article/MED/37596565" ]
+    luot_2_ghi_chu: "Khá vững hợp thước đo: nhiều nghiên cứu cùng chiều, mẫu chủ yếu phương Tây, phần lớn tự báo cáo."
+    nguon:
+      - crum2013
+      - crum2023
+      - yeager2022
+      - langrafe2025
+      - nguyen2023
+      - wu2026
+      - liu2019
+    review: dung
+  - id: n49
+    cau: 'Ở các thử nghiệm có đo lại, sự dịch chuyển còn thấy sau vài tuần: 4 tuần (Crum 2023), 30 ngày (Brazil 2025), 6 tháng (Việt Nam 2023, với một số chỉ số giảm bớt).'
+    loai: phat-hien
+    nguon:
+      - nguyen2023
+    trich: At T2, effects of the TSP were found decreased in some domains (Avoidance, Substance use, and Self-blame) compared to T1, but largely remained significantly better than T0.
+    vi_tri: tóm tắt Nguyen 2023
+    ket_qua: dung
+    ghi_chu: '4 tuần: Crum 2023 tóm tắt; 30 ngày: Langrafe 2025 tóm tắt ("improved stress mindset scores immediately after the intervention and at follow-up"). Giá trị 6 tháng của Nguyen: "largely remained significantly better".'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/37199967", "https://europepmc.org/article/MED/41445823", "https://europepmc.org/article/MED/37596565" ]
+  - id: n50
+    cau: 'Khung "Đang tranh cãi: đổi niềm tin có giúp khỏe hơn và làm việc tốt hơn?".'
+    loai: nhan
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Mới chỉ có một thử nghiệm can thiệp tại nơi làm việc (2013) và ba thử nghiệm với phiên bản cải tiến (2023) … tất cả các biến kết quả đều là tự báo cáo". Chữ mới: thêm các nhóm khác và tổng hợp, bỏ "tất cả … tự báo cáo". Lý do: Yeager 2022 và Langrafe 2025 có đo sinh lý. Review (Claude Opus 5.5, 10/11/2026): dung. Đang tranh cãi đạt: Liu 2019 (tóm tắt: chủ quan 0,429 [0,067; 0,791], sinh lý −0,084 [−0,349; 0,180], dị biệt lớn) và Bosshard 2024 (d = 0,23; SIE-only k = 6, d = 0,18, p = 0,22) khớp số trên trang; Yeager 2022 có cải thiện sinh lý nhưng là can thiệp kết hợp.'
+    nhan: tranh-cai
+    co_so:
+      - crum2013
+      - crum2023
+      - liu2019
+      - bosshard2024
+      - yeager2022
+      - langrafe2025
+    ly_do: Kết quả tích cực của Crum chủ yếu tự báo cáo; phân tích tổng hợp 2019 không thấy khác biệt sinh lý, hiệu ứng nhỏ (d 0,23; stress-có-lợi d 0,18 chưa có ý nghĩa); Yeager 2022 thấy cải thiện sinh lý nhưng là can thiệp kết hợp hai niềm tin; Brazil 2025 cortisol hết sau 30 ngày; chưa thấy tái lập lớn, độc lập, có đăng ký trước của thử nghiệm video 2013.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30811484", "https://europepmc.org/article/MED/38575696", "https://europepmc.org/article/MED/41445823", "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+    luot_2_ghi_chu: Đang tranh cãi hợp thước đo.
+    nguon:
+      - crum2013
+      - crum2023
+      - liu2019
+      - bosshard2024
+      - yeager2022
+      - langrafe2025
+    review: dung
+  - id: n51
+    cau: Tính đến 11/2026, chưa tìm thấy tái lập lớn, đăng ký trước, độc lập của thử nghiệm video 2013.
+    loai: thoi-su
+    nguon:
+      - tim-tai-lap
+    vi_tri: Europe PMC, 10/11/2026
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "tính đến thời điểm chúng tôi tra cứu, chưa thấy công bố tái lập đúng giao thức video gốc 2013". Chữ mới: mốc 11/2026. Lần tìm: Europe PMC 10/11/2026: ("stress mindset" AND replication) 30 kết quả, ("stress mindset" AND (meta-analysis OR systematic review)) 103, ("stress mindset" AND "registered report") 5; đã xem tiêu đề đầu danh sách: không có tái lập trực tiếp video 2013 có đăng ký trước. Chưa đọc hết danh sách. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    het_han: '2028-11-01'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22stress%20mindset%22%20AND%20(TITLE%3A%22replicat*%22%20OR%20TITLE%3A%22registered%22)&format=json", "https://europepmc.org/article/MED/35794485" ]
+    luot_2_ghi_chu: Tìm kiếm có giới hạn.
+    review: dung
+  - id: n52
+    cau: 'Khung "Khá vững: mức căng thẳng cao, như căng thẳng trong công việc, đi kèm nguy cơ bệnh tim mạch vành cao hơn".'
+    loai: nhan
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: ":::kha-vung[stress cực độ, kéo dài mà không được phục hồi thì có hại] … Ranh giới chính xác "bao nhiêu là quá nhiều" thì vẫn đang được làm rõ". Chữ mới: đổi tiêu đề và thêm hai phân tích tổng hợp, giới hạn. Lý do: khung cũ không có nguồn; các nghiên cứu đo mức căng thẳng chứ không đo "không phục hồi" (n3). Review (Claude Opus 5.5, 10/11/2026): sai. Theo n53: các phân tích tổng hợp đo mức căng thẳng tại một thời điểm, nên tiêu đề khung "stress mạn tính, kéo dài liên quan đến nguy cơ sức khỏe cao hơn" nói hơn dữ liệu. Nhãn Khá vững giữ (hai phân tích tổng hợp quan sát cùng chiều, có thiên lệch xuất bản). Chữ cũ tiêu đề: "stress mạn tính, kéo dài liên quan đến nguy cơ sức khỏe cao hơn"; chữ mới: "mức căng thẳng cao, như căng thẳng trong công việc, đi kèm nguy cơ bệnh tim mạch vành cao hơn"; giới hạn thêm "đo mức căng thẳng tại một thời điểm, không đo trực tiếp căng thẳng kéo dài bao lâu". Hộp Tóm tắt nhanh đổi theo.'
+    nhan: kha-vung
+    co_so:
+      - kivimaki2012
+      - richardson2012
+      - mcewen1993
+    ly_do: 'Hai phân tích tổng hợp nghiên cứu quan sát (Kivimäki 2012, dữ liệu 13 nhóm theo dõi, HR 1,23; Richardson 2012, 6 nghiên cứu, RR 1,27) cùng chiều ở bệnh tim mạch vành, mức vừa; nhưng là quan sát (không chứng minh nhân quả), chỉ bệnh mạch vành, thiên lệch xuất bản (1,43 so với 1,16), và chưa tách riêng việc phục hồi: Khá vững chứ chưa Vững chắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22981903", "https://europepmc.org/article/MED/22975465", "https://europepmc.org/article/MED/8379800" ]
+    luot_2_ghi_chu: "Khá vững hợp thước đo: tương quan, quan sát, có thiên lệch xuất bản."
+    nguon:
+      - kivimaki2012
+      - richardson2012
+      - mcewen1993
+    review: sai
+  - id: n53
+    cau: Căng thẳng trong công việc (job strain, đo lúc bắt đầu theo dõi) đi kèm nguy cơ bệnh tim mạch vành cao hơn (HR 1,23; Kivimäki và cộng sự, 2012).
+    loai: so-lieu
+    nguon:
+      - kivimaki2012
+    trich: the hazard ratio for job strain versus no job strain was 1.23 (95% CI 1.10-1.37)
+    vi_tri: Lancet 380, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Tóm tắt (Europe PMC); là dữ liệu cá nhân 13 nhóm theo dõi châu Âu, 197.473 người. Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2 đúng: Kivimäki 2012 (tóm tắt) đo job strain một lần lúc bắt đầu ("employed at time of baseline assessment"), HR 1,23 (KTC 95% 1,10–1,37) sau hiệu chỉnh tuổi, giới; không đo "kéo dài". Chữ cũ: "căng thẳng nghề nghiệp kéo dài (HR 1,23; Kivimäki …)". Chữ mới: "căng thẳng trong công việc (job strain, đo lúc bắt đầu theo dõi; HR 1,23; …)".'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22981903" ]
+    luot_2_ghi_chu: 'câu đúng: Căng thẳng công việc (job strain, đo lúc bắt đầu) đi kèm nguy cơ bệnh tim mạch vành cao hơn, HR 1,23 (KTC 95% 1,10-1,37) sau hiệu chỉnh tuổi và giới; đây là tương quan trong nghiên cứu quan sát.; Kivimäki 2012: job strain đo lúc đầu (có/không), HR 1,23 (KTC 95% 1,10-1,37), không đo "kéo dài".'
+    review: sai
+  - id: n54
+    cau: Stress tự cảm nhận cao đi kèm nguy cơ bệnh tim mạch vành cao hơn ở mức vừa phải (RR 1,27; Richardson và cộng sự, 2012).
+    loai: so-lieu
+    nguon:
+      - richardson2012
+    trich: Meta-analysis yielded an aggregate risk ratio of 1.27 (95% confidence interval 1.12 to 1.45) for the magnitude of the relation between high perceived stress and incident CHD
+    vi_tri: tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22975465" ]
+  - id: n55
+    cau: Ước lượng từ các nghiên cứu đã công bố cao hơn từ các nghiên cứu chưa công bố (1,43 so với 1,16), gợi ý thiên lệch xuất bản.
+    loai: so-lieu
+    nguon:
+      - kivimaki2012
+    trich: This effect estimate was higher in published (1.43, 1.15-1.77) than unpublished (1.16, 1.02-1.32) studies.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: '"Gợi ý thiên lệch xuất bản" theo phần Background của tóm tắt ("subject to publication bias").'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22981903" ]
+    luot_2_ghi_chu: Con số này thuộc Kivimäki 2012, không phải Richardson 2012; câu của trang đứng riêng nên đúng.
+  - id: n56
+    cau: '"Tải trọng thích ứng" (allostatic load) của McEwen và Stellar (1993): cái giá của sự phơi nhiễm mạn tính với phản ứng thần kinh/nội tiết tăng cao do thách thức lặp lại.'
+    loai: dinh-nghia
+    nguon:
+      - mcewen1993
+    trich: we define allostatic load as the cost of chronic exposure to fluctuating or heightened neural or neuroendocrine response resulting from repeated or chronic environmental challenge
+    vi_tri: tóm tắt (Europe PMC)
+    ket_qua: dung
+    ghi_chu: Chỉ đọc tóm tắt; câu trên trang ("căng thẳng mạn tính để lại cái giá cho cơ thể") là mức tóm tắt xác nhận được.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/8379800" ]
+  - id: n57
+    cau: Các nghiên cứu về căng thẳng nghề nghiệp và stress tự cảm nhận chỉ nói về bệnh tim mạch vành; chúng đo mức căng thẳng, không đo riêng việc có được phục hồi hay không.
+    loai: phat-hien
+    nguon:
+      - richardson2012
+    trich: Prospective observational cohort studies were selected that measured self-reported perceived stress and assessed incident CHD at ≥6 months.
+    vi_tri: tóm tắt
+    ket_qua: dung
+    ghi_chu: Khẳng định giới hạn của hai nguồn dẫn; không khẳng định gì về toàn bộ văn liệu.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22981903", "https://europepmc.org/article/MED/28133454" ]
+  - id: n58
+    cau: Theo mô hình, ngắn thì cơ thể thích nghi được, kéo dài thì nguồn lực cạn dần (Selye).
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: If the stress remains excessive, health may begin to erode as well
+    vi_tri: OpenStax 14.1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "ngắn thì thích nghi được, dài thì cạn kiệt". Chữ mới: "theo mô hình, … kéo dài thì nguồn lực cạn dần". Lý do: nêu rõ là mô hình. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress", "https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress" ]
+    review: dung
+  - id: n59
+    cau: 'Thuyết đánh giá (Lazarus): stress phụ thuộc vào cách ta đánh giá sự việc chứ không chỉ vào bản thân sự việc; cùng một kỳ thi, người thấy "thử thách" và người thấy "mối đe dọa" có thể phản ứng khác nhau.'
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: A critical element of this definition is that it emphasizes the importance of how we appraise—that is, judge—demanding or threatening events
+    vi_tri: OpenStax 14.1 (Lazarus & Folkman 1984)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "stress không nằm ở sự việc mà ở cách ta đánh giá nó … phản ứng hoàn toàn khác nhau". Chữ mới: "phụ thuộc vào … chứ không chỉ vào … có thể phản ứng khác nhau". Lý do: mềm; khớp bài doi-pho-stress (khung Khá vững "đánh giá định hình phản ứng stress"). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://arxiv.org/abs/2501.05185" ]
+    luot_2_ghi_chu: Ví dụ thử thách/đe dọa là minh họa; primary appraisal gồm beneficial/irrelevant/stressful (p.32).
+    review: dung
+  - id: n60
+    cau: Theo giả thuyết của Crum và cộng sự (2013), niềm tin stress có lợi hay có hại định hướng ta tiếp cận hay né tránh tình huống căng thẳng, từ đó có thể thay đổi hành vi lẫn phản ứng sinh lý; bằng chứng cho vế sinh lý còn chưa nhất quán.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: a stress-is-enhancing mindset is associated with moderate cortisol reactivity and high desire for feedback under stress
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "định hướng ta tiếp cận hay né tránh …, từ đó thay đổi cả hành vi lẫn phản ứng sinh lý." Chữ mới: "theo giả thuyết …, có thể thay đổi … (bằng chứng cho vế sinh lý còn chưa nhất quán)". Lý do: n34, n44. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf", "https://europepmc.org/article/MED/30811484" ]
+    luot_2_ghi_chu: Chỉ đọc phần liên quan; giả thuyết tiếp cận/né tránh là của trang theo Crum.
+    review: dung
+  - id: n61
+    cau: 'Mục Áp dụng 1: "xem cảm giác hồi hộp là tín hiệu chuẩn bị" :nhan[tranh-cai].'
+    loai: nhan
+    ket_qua: dung
+    ghi_chu: "Nhãn không đổi so với trang cũ (:nhan[tranh-cai]); nội dung đổi (n62). Review (Claude Opus 5.5, 10/11/2026): dung. Đang tranh cãi đạt, cùng căn cứ n50."
+    nhan: tranh-cai
+    co_so:
+      - liu2019
+      - bosshard2024
+      - yeager2022
+    ly_do: 'Cùng ý với khung "Đang tranh cãi" (n50): hiệu ứng nhỏ, sinh lý không nhất quán; khung gộp theo ý yếu hơn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/21942377", "https://europepmc.org/article/MED/30811484", "https://europepmc.org/article/MED/38575696" ]
+    luot_2_ghi_chu: "Đang tranh cãi chịu được: hiệu ứng nhỏ, sinh lý không nhất quán."
+    nguon:
+      - liu2019
+      - bosshard2024
+      - yeager2022
+    review: dung
+  - id: n62
+    cau: Các phân tích tổng hợp thấy can thiệp "đánh giá lại" stress giúp giảm nhẹ phản ứng stress tự cảm nhận và cải thiện nhẹ thành tích khi làm nhiệm vụ (phần lớn trong thí nghiệm), hiệu ứng nhỏ, khác nhau nhiều giữa các nghiên cứu, chưa thấy lợi ích rõ ở chỉ số sinh lý.
+    loai: loi-khuyen
+    nguon:
+      - bosshard2024
+    trich: Although SAR and SIE mindset interventions are not "silver bullets" [...] overall small significant improvement in task performance (d = 0.23, p < 0.001)
+    vi_tri: tóm tắt Bosshard 2024; Liu 2019 (n44)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nghiên cứu 2013 gợi ý cách nhìn này đi kèm phản ứng sinh lý điều hòa hơn và xu hướng tiếp cận thử thách thay vì né tránh." Chữ mới: tóm các phân tích tổng hợp. Lý do: bằng chứng sinh lý 2013 chỉ gần có ý nghĩa (n34). Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30811484", "https://europepmc.org/article/MED/38575696" ]
+    review: dung
+  - id: n63
+    cau: 'Mục Áp dụng 2: "Cho cơ thể những lúc phục hồi sau giai đoạn căng thẳng" :nhan[kha-vung].'
+    loai: nhan
+    ket_qua: dung
+    ghi_chu: "Nhãn giữ nguyên. Nội dung sửa ở n64. Review (Claude Opus 5.5, 10/11/2026): dung. Khá vững đạt: Wendsche 2017 (tổng hợp tương quan) và OpenStax 14.4 cùng chiều; không có thử nghiệm nhân quả. Câu mở đầu đoạn đã sửa (xem n64)."
+    nhan: kha-vung
+    co_so:
+      - wendsche2016
+      - os144
+      - kivimaki2012
+    ly_do: 'Phân tích tổng hợp tách khỏi công việc (86 công bố, 91 mẫu) cho liên hệ tương quan, tự báo cáo; OpenStax nêu vận động, ngủ, kết nối xã hội; không có thử nghiệm chứng minh nhân quả: Khá vững.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/28133454", "https://europepmc.org/article/MED/22981903" ]
+    luot_2_ghi_chu: "Khá vững hợp thước đo: tương quan, tự báo cáo."
+    nguon:
+      - wendsche2016
+      - os144
+      - kivimaki2012
+    review: dung
+  - id: n64
+    cau: 'Mô hình của Selye gợi ý đáng lo là stress không có điểm dừng; phân tích tổng hợp (Wendsche & Lohmann-Haislah, 2017): tách khỏi công việc ngoài giờ đi kèm ít kiệt sức hơn và ngủ tốt hơn (tương quan, tự báo cáo).'
+    loai: so-lieu
+    nguon:
+      - wendsche2016
+      - os141
+    trich: average positive correlations between detachment and self-reported mental (i.e., less exhaustion, higher life satisfaction, more well-being, better sleep)
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Bài học chắc chắn nhất từ mô hình của Selye … Giấc ngủ đầy đủ, vận động đều đặn và duy trì kết nối xã hội là những cách phục hồi được nhiều nghiên cứu ủng hộ." Chữ mới: dẫn Wendsche 2016 (tương quan) và OpenStax. Lý do: câu cũ không có nguồn trực tiếp. Năm: Crossref ghi bài đăng 1/2017, tập 7 (2016). Review (Claude Opus 5.5, 10/11/2026): sai. Câu đứng trước trong cùng đoạn "Điều dễ rút ra nhất từ mô hình của Selye và từ các nghiên cứu về stress mạn tính: vấn đề … là stress không có điểm dừng" gán cho các nghiên cứu (Kivimäki, Richardson) điều chúng không đo (xem n53). Chữ mới: "Điều mô hình của Selye gợi ý: đáng lo không phải đợt stress ngắn mà là stress không có điểm dừng." Năm Wendsche: Crossref ghi 13/01/2017 (tập 7), đổi 2016 thành 2017.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/28133454" ]
+    review: sai
+  - id: n65
+    cau: Giáo trình OpenStax Psychology 2e nêu vận động đều đặn, ngủ đủ và kết nối xã hội là những cách hỗ trợ đối phó với stress.
+    loai: loi-khuyen
+    nguon:
+      - os144
+    trich: Adequate, consistent sleep is equally critical, as sleep deprivation dramatically amplifies the stress response
+    vi_tri: OpenStax 14.4
+    ket_qua: dung
+    ghi_chu: 'Vận động: "regular physical activity is one of the most well-supported interventions available" (14.4). Kết nối xã hội: mục "social support" 14.4. Câu trích về ngủ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress" ]
+  - id: n66
+    cau: Đừng chỉ hỏi "làm sao hết stress", hãy hỏi "mình đã cho cơ thể nghỉ ngơi đủ chưa".
+    loai: loi-khuyen
+    ket_qua: dung
+    ghi_chu: "Câu gợi ý có tính tu từ, là diễn giải của n63; không kiểm riêng. Giữ vì cùng nhãn Khá vững với n63. Review (Claude Opus 5.5, 10/11/2026): dung. Lời khuyên cách đặt câu hỏi, cùng căn cứ n63; thêm nguồn."
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/28133454", "https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress" ]
+    luot_2_ghi_chu: Lời khuyên cách đặt câu hỏi.
+    nguon:
+      - wendsche2016
+      - os144
+    review: dung
+  - id: n67
+    cau: 'Mục Áp dụng 3 (không gắn nhãn): đừng dùng "tư duy tích cực" để phủ nhận vấn đề thật; chính nhóm Crum coi niềm tin này không phải một chiến lược đối phó, và nó không thay thế việc giải quyết nguyên nhân.'
+    loai: loi-khuyen
+    ket_qua: dung
+    nhan: kha-vung
+    co_so:
+      - crum2013
+      - crum2023
+    ly_do: Là nguyên tắc rút từ cách các tác giả nói về giới hạn niềm tin stress (không phải chiến lược đối phó; thông tin cân bằng hai mặt), theo văn bản của chính nghiên cứu; không có thử nghiệm riêng; không viết lời khuyên điều trị.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/12462958", "https://europepmc.org/article/MED/37199967" ]
+    luot_2_ghi_chu: Khá vững hợp thước đo cho nhận định này là lời khuyên suy từ các bằng chứng gián tiếp.
+    nguon:
+      - crum2013
+      - crum2023
+    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): sai. Nhãn Khá vững cho lời khuyên không có phép kiểm tra nào: ly_do của chính hồ sơ ghi "không có thử nghiệm riêng"; không đạt thước đo mục 4 (cần nhiều nghiên cứu cùng chiều). Bỏ chip (giữ id cũ { #3-dung-dung-tu-duy-tich-cuc-de-phu-nhan-van-de-that-kha-vung }), đổi loại nhan thành loi-khuyen; thân mục dẫn Crum 2013, 2023 như cũ.'
+    review: sai
+  - id: n68
+    cau: Chính nhóm Crum coi niềm tin "stress có lợi" không phải một chiến lược đối phó (Crum và cộng sự, 2013), và thử nghiệm 2023 dùng thông tin cân bằng cả hai mặt của stress.
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: In our view, there are three key limitations to the current approach to understanding coping and stress.
+    vi_tri: Mở đầu bài 2013; Crum 2023 tóm tắt (n38)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Niềm tin "stress có lợi" không có nghĩa mọi áp lực đều tốt, càng không thay thế việc giải quyết nguyên nhân". Chữ mới: dẫn Crum 2013 và 2023. Lý do: khẳng định "không phải một chiến lược đối phó" chỉ kiểm được gián tiếp: bài 2013 nói mindset là biến riêng, không phải coping (n30, mục Study 1: SMM tách khỏi coping); mức này "theo bài kể lại". Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf", "https://europepmc.org/article/MED/37199967" ]
+    review: dung
+  - id: n69
+    cau: Khối lượng công việc quá tải, môi trường độc hại, hay các vấn đề sức khỏe tâm thần cần hỗ trợ chuyên môn; nếu đã thử nhiều cách mà tình trạng không cải thiện thì cần giúp đỡ chuyên nghiệp (xem trang Hỗ trợ).
+    loai: loi-khuyen
+    ket_qua: da-sua
+    ghi_chu: 'Câu chỉ dẫn đến người có chuyên môn, không chẩn đoán/điều trị; không cần nguồn khác. Link Hỗ trợ: xem n5. Review (Claude Opus 5.5, 10/11/2026): dung. Lời khuyên an toàn, chỉ dẫn tới người có chuyên môn và trang Hỗ trợ; nguồn NHS (trang Stress: "See a GP if … things you''re trying yourself are not helping you").'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/" ]
+    nguon:
+      - nhs-stress
+    review: dung
+  - id: n70
+    cau: 'Lưu ý đầu mục Áp dụng: "không phải lời khuyên y tế … xem trang Hỗ trợ".'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm trên trang: đúng; link /psyche/ho-tro/ như n5. Review (Claude Opus 5.5, 10/11/2026): dung. Như n5.'
+    review: dung
+  - id: n71
+    cau: 'Tính đến 11/2026, tìm thấy một nghiên cứu về niềm tin stress trên người Việt: bán thực nghiệm trên 409 sinh viên y năm nhất ở TP. Hồ Chí Minh, chương trình 10 tuần "Transforming Stress Program" (dựa trên liệu pháp hành vi biện chứng và chánh niệm); nhóm can thiệp tăng điểm niềm tin "stress có lợi", nhóm đối chứng không đổi.'
+    loai: thoi-su
+    nguon:
+      - nguyen2023
+    trich: A total of 409 first-year students at the Faculty of Medicine were divided into intervention group (205 students) and control group (204 students). The 10-week TSP was delivered as an extra-curricular course. The training adopts psychoeducation based on Dialectical Behavioral Therapy with mindfulness
+    vi_tri: tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu về niềm tin stress trên người Việt …" (cả đoạn). Chữ mới: câu hiện tại. Lý do: tìm thấy Nguyen 2023 qua Europe PMC (10/11/2026; truy vấn "stress mindset" AND (Vietnam OR Vietnamese): 6 kết quả, trong đó chỉ một nghiên cứu về mindset ở người Việt). Cũng ghi vào nguon "tim-vn". Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    het_han: '2028-11-01'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/37596565" ]
+    luot_2_ghi_chu: Tìm Europe PMC ngày 10/11/2026.
+    review: dung
+  - id: n72
+    cau: Đây không phải can thiệp video kiểu Crum; các nhóm được chia theo lớp chứ không ngẫu nhiên ở cấp cá nhân; chương trình gồm nhiều thành phần nên không tách riêng được tác dụng của việc đổi niềm tin.
+    loai: phat-hien
+    nguon:
+      - nguyen2023
+    trich: we divided the intervention group and control group along the line of their class assignment
+    vi_tri: mục Discussion/Methods
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/37596565" ]
+  - id: n73
+    cau: Chưa tìm thấy nghiên cứu nào ở Việt Nam thử lại can thiệp video của Crum và cộng sự.
+    loai: thoi-su
+    nguon:
+      - tim-vn
+    vi_tri: Europe PMC, 10/11/2026
+    ket_qua: dung
+    ghi_chu: 'Cùng lần tìm ở n71: kết quả liên quan Việt Nam gồm Nguyen 2023 (không phải video) và Wu 2026 (Trung Quốc, không phải Việt Nam). Không tìm tạp chí trong nước.'
+    het_han: '2028-11-01'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(Vietnam*%20OR%20Vietnamese)%20AND%20(%22stress%20mindset%22%20OR%20%22stress%20mindsets%22)&format=json", "https://europepmc.org/article/MED/37596565" ]
+    luot_2_ghi_chu: Tìm kiếm có giới hạn.
+  - id: n74
+    cau: Các nghiên cứu then chốt của Crum ở Mỹ, trên sinh viên và nhân viên một tổ chức tài chính quốc tế; Brazil (63 giáo viên, 2025) và Trung Quốc (155 học sinh trung học cơ sở, 2026) cũng thấy niềm tin "stress có lợi" tăng sau can thiệp.
+    loai: phat-hien
+    nguon:
+      - wu2026
+    trich: Bayesian Causal Forest (BCF) analysis showed that, compared to the control group, the intervention group exhibited a 0.46 standard deviation increase in stress-is-enhancing mindset
+    vi_tri: tóm tắt Wu 2026 (155 học sinh, Trung Quốc); Langrafe 2025 (n43)
+    ket_qua: dung
+    ghi_chu: 'Crum 2013 ở Mỹ: đối chiếu mô tả mẫu (nhân viên tổ chức tài chính quốc tế; sinh viên: Study 3). Review (Claude Opus 5.5, 10/11/2026): dung. Wu 2026 (tóm tắt Europe PMC): 155 học sinh trung học cơ sở ở Trung Quốc, niềm tin "stress có lợi" tăng 0,46 SD. Review thêm link Wu 2026 ở thân bài và vào mục Nguồn (n81).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf", "https://europepmc.org/article/MED/41445823", "https://europepmc.org/article/MED/42400189" ]
+    review: dung
+  - id: n75
+    cau: Bối cảnh ở Việt Nam có thể khác các bối cảnh trên, nên chưa thể suy ra kết quả sẽ giống nhau.
+    loai: phat-hien
+    ket_qua: dung
+    ghi_chu: "Câu thận trọng, không khẳng định điều cần nguồn; nhãn suy luận. Review (Claude Opus 5.5, 10/11/2026): dung. Câu thận trọng; căn cứ: chỉ có một nghiên cứu ở Việt Nam, khác thiết kế (Nguyen 2023), theo lần tìm tim-vn."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1080/00207594.2011.640681" ]
+    luot_2_ghi_chu: Câu hợp lý, không có số liệu để kiểm.
+    nguon:
+      - nguyen2023
+      - tim-vn
+    review: dung
+  - id: n76
+    cau: 'Ngộ nhận "stress nào cũng có hại": stress ngắn hạn là phản ứng thích nghi bình thường; điều đáng lo hơn là stress kéo dài mà không được phục hồi.'
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: A moderate amount of stress can be beneficial in challenging situations.
+    vi_tri: OpenStax 14.1 (eustress)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Vấn đề nằm ở stress kéo dài mà không được phục hồi." Chữ mới: "Điều đáng lo hơn là …". Lý do: mềm. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress", "https://europepmc.org/article/MED/8379800", "https://europepmc.org/article/MED/22981903" ]
+    review: dung
+  - id: n77
+    cau: 'Ngộ nhận "cứ nghĩ tích cực là hết bệnh": niềm tin về stress có thể ảnh hưởng đến cách ta phản ứng với stress; các thử nghiệm của Crum chủ yếu đo triệu chứng tự báo cáo và hiệu suất tự đánh giá; vài thử nghiệm khác có đo chỉ số sinh lý nhưng kết quả chưa nhất quán.'
+    loai: phat-hien
+    nguon:
+      - liu2019
+    trich: did not outperform control groups on measures of physiological stress
+    vi_tri: tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Niềm tin về stress là yếu tố điều tiết … Nghiên cứu chỉ đo được triệu chứng tự báo cáo và hiệu suất tự đánh giá." Chữ mới: câu hiện tại. Lý do: n42, n43 có đo sinh lý. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf", "https://europepmc.org/article/MED/41445823", "https://europepmc.org/article/MED/30811484", "https://europepmc.org/article/MED/35794485" ]
+    review: dung
+  - id: n78
+    cau: 'Ngộ nhận "Selye nói stress là phản ứng trước chuyện xấu": Selye định nghĩa stress là phản ứng của cơ thể trước mọi đòi hỏi, kể cả chuyện vui; ông sau này còn phân biệt "eustress" với "distress".'
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: This kind of stress, which Selye called eustress (from the Greek eu = "good")
+    vi_tri: OpenStax 14.1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Định nghĩa gốc của Selye là phản ứng không đặc hiệu trước mọi đòi hỏi — kể cả chuyện vui, háo hức." Chữ mới: câu hiện tại. Lý do: theo định nghĩa 1976 (n10); "distress" cũng ở OpenStax 14.1. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+    review: dung
+  - id: n79
+    cau: 'Hai mục "Đọc thêm": Đối phó stress thế nào cho đúng?; Nén cảm xúc có tốt? (kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'doi-pho-stress: trang cùng lô, có. dieu-tiet-cam-xuc: có id trong src/data/trang.yml (chưa có trong worktree); cần trang ấy lên trước khi khóa. Review (Claude Opus 5.5, 10/11/2026): dung. doi-pho-stress có trong worktree đúng tiêu đề; dieu-tiet-cam-xuc có trong trang.yml (chưa có trang, hiện "sắp có" tới khi lên).'
+    review: dung
+  - id: n80
+    cau: Câu 5 của quiz dẫn link "Tương quan và nhân quả" (/psyche/bang-chung/tuong-quan-nhan-qua/).
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Kiểm: id bang-chung/tuong-quan-nhan-qua có trong src/data/trang.yml và trang đã khóa ở đợt trước. Review (Claude Opus 5.5, 10/11/2026): dung. bang-chung/tuong-quan-nhan-qua có trong trang.yml và khoa.json (đã khóa).'
+    review: dung
+  - id: q1
+    cau: 'Câu hỏi 1: phát hiện khởi đầu của Selye (1936): dù gây hại bằng cách nào, chuột đều đáp lại bằng cùng một bộ triệu chứng; "bộ ba" tuyến thượng thận phì đại, tuyến ức–hạch teo, loét dạ dày.'
+    loai: phat-hien
+    nguon:
+      - szabo2012
+    trich: the triad of enlarged adrenal glands, lymph node and thymic atrophy, and gastric erosions/ulcers
+    vi_tri: tóm tắt Szabo 2012; Selye 1936 tóm tắt (n9)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "loét dạ dày–ruột". Chữ mới: "loét dạ dày". Lý do: như n8. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22845714", "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress" ]
+    review: dung
+  - id: q2
+    cau: 'Câu hỏi 2: nghiên cứu 2 của Crum (2013): nhóm "có lợi" báo cáo ít triệu chứng tâm lý hơn và tự đánh giá hiệu suất cao hơn; nghiên cứu 2 không đo cortisol; các thước đo đều tự báo cáo; bài không báo cáo rằng lượng stress giảm.'
+    loai: phat-hien
+    nguon:
+      - crum2013
+    trich: participants in the enhancing condition reported improved psychological symptoms and better work performance
+    vi_tri: Study 2, Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "> Lượng stress không hề giảm — chỉ niềm tin và phản ứng thay đổi. Và mọi kết quả đều là tự báo cáo." Chữ mới: "Nghiên cứu 2 không đo cortisol, … bài không báo cáo rằng lượng stress giảm." Lý do: câu cũ khẳng định điều bài không đo/nói; cortisol chỉ đo ở nghiên cứu 3. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/crum_et_al._2013_-_rethinking_stress.pdf" ]
+    review: dung
+  - id: q3
+    cau: 'Câu hỏi 3: khẳng định "đổi niềm tin về stress giúp khỏe hơn" mang nhãn "Đang tranh cãi" vì kết quả chưa nhất quán (nhất là chỉ số sinh lý), nhiều kết quả tự báo cáo, hiệu ứng nhỏ, và tính đến 11/2026 chưa thấy tái lập lớn có đăng ký trước.'
+    loai: phat-hien
+    nguon:
+      - liu2019
+    trich: did not outperform control groups on measures of physiological stress
+    vi_tri: tóm tắt; xem n50, n51
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Vì bằng chứng mới chỉ gồm một vài thử nghiệm, tất cả dùng biến tự báo cáo, hiệu ứng nhỏ…". Chữ mới: câu hiện tại. Lý do: nhất quán nhãn n50. Review (Claude Opus 5.5, 10/11/2026): dung. Lời giải thích khớp khung n50.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/30811484", "https://europepmc.org/article/MED/38575696", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22stress%20mindset%22%20AND%20(TITLE%3A%22replicat*%22%20OR%20TITLE%3A%22registered%22)&format=json" ]
+    luot_2_ghi_chu: Tìm kiếm có giới hạn.
+    review: dung
+  - id: q4
+    cau: 'Câu hỏi 4: theo mô hình GAS, stress trở nên nguy hiểm khi kéo dài đến giai đoạn kiệt sức, cơ thể không còn nguồn lực thích nghi; tim đập nhanh là giai đoạn báo động.'
+    loai: phat-hien
+    nguon:
+      - os141
+    trich: stage of exhaustion
+    vi_tri: OpenStax 14.1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nguy hiểm nằm ở căng thẳng kéo dài mà không được phục hồi." (giải thích; đã giữ vì n15). Giải thích câu hỏi còn dùng "theo mô hình" cho khớp n15. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối trên trang khớp câu ghi ở hồ sơ và nguồn đã dẫn (đối chiếu lại).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress", "https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress" ]
+    review: dung
+  - id: q5
+    cau: 'Câu hỏi 5: Keller và cộng sự (2012): người vừa nhiều stress vừa tin stress hại sức khỏe có nguy cơ tử vong sớm cao hơn 43%; nghiên cứu tương quan, không chứng minh nhân quả; nghiên cứu quan sát không loại trừ được yếu tố nhiễu.'
+    loai: phat-hien
+    nguon:
+      - keller2012
+    trich: had a 43% increased risk of premature death (HR = 1.43
+    vi_tri: tóm tắt Keller 2012
+    ket_qua: dung
+    ghi_chu: 'Chữ trên trang không đổi so với trang cũ. "Không loại trừ yếu tố nhiễu": nguyên tắc chung về nghiên cứu quan sát; Keller kiểm soát biến nhân khẩu, hành vi sức khỏe và tiếp cận chăm sóc (tóm tắt).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22201278" ]
+  - id: n81
+    cau: 'Mục Nguồn: Crum 2013, Keller 2012, Selye 1936, Crum 2023, Yeager 2022, Langrafe 2025, Liu 2019, Bosshard 2024, Nguyen 2023, Kivimäki 2012, Richardson 2012, Wendsche 2016, Szabo 2012, McEwen & Stellar 1993, Lazarus & Folkman 1984, OpenStax Psychology 2e (14.1, 14.2, 14.4) có tên, tạp chí, tập, trang, DOI đúng.'
+    loai: lich-su
+    ket_qua: da-sua
+    ghi_chu: 'Đối chiếu Crossref (10/11/2026): tất cả khớp, trừ tên bài Bosshard (đã sửa, n47). Wendsche: Crossref ghi đăng 2017, tập 7 (2016) trên trang ghi 2016: chấp nhận theo tập. McEwen & Stellar 1993: Arch Intern Med 153(18), 2093–2101 (Europe PMC, DOI 10.1001/archinte.1993.00410180039004); trang chưa ghi DOI, nên thêm khi dọn nguồn. Lazarus & Folkman 1984 là sách, không kiểm Crossref. Review (Claude Opus 5.5, 10/11/2026): sai. Đối chiếu Crossref (10/11/2026): Selye 1936 thiếu số (3479); Yeager 2022 ghi "et al." với 9 tác giả và thiếu số (7919): ghi đủ tác giả (Europe PMC); Bosshard thiếu số (1); McEwen & Stellar chưa có DOI: thêm 10.1001/archinte.1993.00410180039004; Wendsche: Crossref ghi đăng 13/01/2017 (tập 7): đổi năm thành 2017 ở thân bài và mục Nguồn; Wu 2026 được nhắc ở thân bài nhưng thiếu trong mục Nguồn: thêm (Crossref, Europe PMC) và link ở thân bài. Các mục khác khớp.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Không được xem trang. Đã kiểm riêng, đều có thật: Crum 2013 (JPSP 104, 716-733), Keller 2012 (Health Psychol 31, 677-684), Selye 1936 (Nature 138, 32), Crum 2023 (J Exp Psychol Gen 152, 2603-2622), Yeager 2022 (Nature 607, 512-520), Langrafe 2025 (Front Behav Neurosci 19, 1685319), Liu 2019 (PLoS One 14, e0212854), Bosshard 2024 (Sci Rep 14, 7923), Nguyen 2023 (BMC Med Educ 23, 587), Kivimäki 2012 (Lancet 380, 1491-1497), Richardson 2012 (Am J Cardiol 110, 1711-1716), Wendsche 2016 (Front Psychol 7, 2072), Szabo 2012 (Stress 15, 472-478), McEwen & Stellar 1993 (Arch Intern Med 153, 2093-2101)."
+    nguon:
+      - crum2013
+      - keller2012
+      - selye1936
+      - szabo2012
+      - os141
+      - os142
+      - os144
+      - crum2023
+      - yeager2022
+      - langrafe2025
+      - liu2019
+      - bosshard2024
+      - nguyen2023
+      - wu2026
+      - kivimaki2012
+      - richardson2012
+      - wendsche2016
+      - mcewen1993
+    review: sai
+doi_chu:
+  - cu: niềm tin về stress thay đổi phản ứng của cơ thể ra sao, và ranh giới nằm ở đâu."
+    moi: liệu niềm tin về stress có thay đổi cách ta phản ứng với nó không, và ranh giới nằm ở đâu."
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'Tim đập nhanh của An là **phản ứng báo động bình thường**: cơ thể huy động năng lượng để đối phó. Nó chỉ thành vấn đề khi căng thẳng **kéo dài mà không có lúc phục hồi**, như trường hợp của Bình. Còn niềm tin "stress có thể giúp ích" — nghiên cứu cho thấy nó thật sự làm thay đổi phản ứng của cơ thể, nhưng **không phải phép màu chữa bệnh**.'
+    moi: 'Tim đập nhanh của An là **phản ứng báo động bình thường**: cơ thể huy động năng lượng để đối phó. Điều nghiên cứu liên hệ với nguy cơ sức khỏe là căng thẳng **kéo dài mà không có lúc phục hồi**, như trường hợp của Bình. Còn niềm tin "stress có thể giúp ích" — một số thử nghiệm cho thấy nó thay đổi cách người ta cảm nhận và phản ứng với stress, nhưng bằng chứng về phản ứng của cơ thể chưa nhất quán, và nó **không phải…'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Từ "stress" ngày nay ai cũng dùng, nhưng ít người biết nó bắt đầu từ những con chuột bạch. Năm 1936,
+    moi: Từ "stress" ngày nay ai cũng dùng, nhưng một cột mốc của nghiên cứu về nó là thí nghiệm trên chuột. Năm 1936,
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: tuyến ức và hạch bạch huyết teo lại, xuất huyết và loét dạ dày–ruột ([Selye, 1936]
+    moi: tuyến ức và hạch bạch huyết teo lại, loét hay xói mòn dạ dày ([Selye, 1936]
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Từ "stress" ông mượn từ vật lý, nơi nó chỉ lực tác động lên vật liệu. Về sau Selye định nghĩa stress là "phản ứng không đặc hiệu của cơ thể trước mọi đòi hỏi đặt ra cho nó" — kể cả đòi hỏi dễ chịu (như háo hức trước một chuyến đi), chứ không chỉ chuyện xấu.
+    moi: 'Về sau Selye định nghĩa stress là "phản ứng của cơ thể trước mọi đòi hỏi, dù đòi hỏi ấy gây ra hay dẫn đến điều dễ chịu hay khó chịu" (Selye, 1976, theo giáo trình OpenStax *Psychology 2e*) — tức không chỉ chuyện xấu: cả những sự kiện vui như đám cưới hay kỳ nghỉ cũng đòi hỏi cơ thể thích nghi.'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Mô hình này giải thích vì sao stress ngắn hạn (như trước giờ thi) thường vô hại, thậm chí hữu ích, còn stress kéo dài không lối thoát mới là vấn đề. Nhưng Selye nghiên cứu trên chuột với các tác nhân vật lý cực đoan
+    moi: Mô hình này gợi ý rằng điều đáng lo là stress kéo dài không lối thoát, chứ không phải một đợt căng thẳng ngắn (như trước giờ thi). Nhưng Selye nghiên cứu trên chuột với các tác nhân gây hại nặng
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Độ lớn hiệu ứng của can thiệp là nhỏ.
+    moi: Độ lớn hiệu ứng của can thiệp từ nhỏ đến vừa (η² = 0,02 với triệu chứng và 0,04 với hiệu suất tự đánh giá).
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: — cả kỹ năng "cứng" (chất lượng, hiệu quả, độ chính xác) lẫn kỹ năng "mềm" (tập trung, sáng tạo, hợp tác); hai nhóm còn lại không thay đổi.
+    moi: — với xu hướng tương tự ở cả kỹ năng "cứng" (chất lượng, hiệu quả, độ chính xác) lẫn kỹ năng "mềm" (tập trung, sáng tạo, hợp tác); hai nhóm còn lại không thay đổi.
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Người có niềm tin "stress có lợi" **muốn nhận phản hồi về bài nói của mình hơn** — tức họ chọn *tiếp cận* thay vì *né tránh* tình huống căng thẳng.
+    moi: Người có niềm tin "stress có lợi" (niềm tin được đo từ trước, không phải do can thiệp) **muốn nhận phản hồi về bài nói của mình hơn** — tức họ chọn *tiếp cận* thay vì *né tránh* tình huống căng thẳng.
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: so với nhóm tham chiếu ([Keller và cộng sự, 2012](https://doi.org/10.1037/a0026743)). Đây là nghiên cứu **tương quan**, không chứng minh niềm tin *gây ra* tử vong — nhưng nó cho thấy "lo lắng về stress" tự nó có thể là một gánh nặng.
+    moi: 'so với nhóm không báo cáo nhiều stress lẫn không tin rằng stress ảnh hưởng đến sức khỏe ([Keller và cộng sự, 2012](https://doi.org/10.1037/a0026743)). Đây là nghiên cứu **tương quan**, không chứng minh niềm tin *gây ra* tử vong: chính các tác giả lưu ý nhân quả ngược có thể giải thích một phần (người sức khỏe kém dễ cho rằng stress ảnh hưởng đến mình).'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'Ba thử nghiệm đối chứng ngẫu nhiên cho thấy can thiệp này giúp tăng niềm tin "stress có lợi", đồng thời cải thiện **triệu chứng sức khỏe thể chất tự báo cáo** và **hiệu suất làm việc (kỹ năng giao tiếp) tự báo cáo** sau 4 tuần so với nhóm chờ (Crum và cộng sự, 2023, *Journal of Experimental Psychology: General*, 152(9), 2603–2622). Đây là bằng chứng củng cố, nhưng cần lưu ý: đây là phiên bản can thiệp *đã được cải ti…'
+    moi: 'Trong ba thử nghiệm đối chứng ngẫu nhiên: ở thử nghiệm 1 (nhân viên một công ty tài chính lớn), nhóm can thiệp tăng niềm tin "stress có lợi" nhiều hơn nhóm chờ và, 4 tuần sau, báo cáo cải thiện **triệu chứng sức khỏe thể chất** và **hiệu suất làm việc (kỹ năng liên cá nhân)**, đều **tự báo cáo**; thử nghiệm 2 (mô-đun đa phương tiện trực tuyến) lặp lại hiệu ứng lên niềm tin và triệu chứng; thử nghiệm 3 so với cách can…'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: ':::kha-vung[niềm tin về stress có thể thay đổi qua can thiệp ngắn] Hai chương trình nghiên cứu (2013 và 2023) đều cho thấy chỉ vài video hoặc bài học ngắn cũng đủ làm dịch chuyển niềm tin về stress theo hướng mong muốn, và sự dịch chuyển này duy trì được ít nhất vài tuần. Giới hạn: người tham gia đều tự nguyện, và chưa rõ hiệu quả kéo dài bao lâu nếu không được nhắc lại. :::'
+    moi: ':::kha-vung[niềm tin về stress có thể thay đổi qua can thiệp ngắn] Nhiều thử nghiệm có đối chứng, của nhiều nhóm và ở nhiều nước (Mỹ, Brazil, Trung Quốc, Việt Nam), thấy niềm tin "stress có lợi" tăng sau một can thiệp ngắn (vài video, vài bài học hay một chương trình vài tuần). Ở các thử nghiệm có đo lại, sự dịch chuyển còn thấy sau vài tuần: 4 tuần (Crum và cộng sự, 2023), 30 ngày (Brazil, 2025), 6 tháng (Việt Nam, …'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: :::tranh-cai[đổi niềm tin có giúp khỏe hơn và làm việc tốt hơn?] Mới chỉ có một thử nghiệm can thiệp tại nơi làm việc (2013) và ba thử nghiệm với phiên bản cải tiến (2023) cho kết quả tích cực — nhưng **tất cả** các biến kết quả đều là tự báo cáo, hiệu ứng nhỏ, và tính đến thời điểm chúng tôi tra cứu, chưa thấy công bố tái lập đúng giao thức video gốc 2013. Kết quả cortisol ở nghiên cứu 3 cũng chỉ dừng ở ngưỡng gần c…
+    moi: ':::tranh-cai[đổi niềm tin có giúp khỏe hơn và làm việc tốt hơn?] Các thử nghiệm của Crum và cộng sự (2013, 2023) cho kết quả tích cực, nhưng ở các biến sức khỏe và hiệu suất đó chủ yếu là **tự báo cáo**. Các nhóm khác thấy kết quả chưa nhất quán, nhất là ở chỉ số sinh lý: một phân tích tổng hợp (2019) không thấy khác biệt sinh lý; thử nghiệm của Yeager và cộng sự (2022) thấy cải thiện phản ứng tim mạch và cortisol, n…'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: :::kha-vung[stress cực độ, kéo dài mà không được phục hồi thì có hại] Từ giai đoạn "kiệt sức" trong mô hình của Selye đến khái niệm "tải trọng thích ứng" (allostatic load) trong y học hiện đại, bằng chứng cho thấy căng thẳng nghiêm trọng và kéo dài mà không có lúc phục hồi liên quan đến nhiều vấn đề sức khỏe. Ranh giới chính xác "bao nhiêu là quá nhiều" thì vẫn đang được làm rõ — và nó khác nhau ở mỗi người, mỗi hoàn…
+    moi: :::kha-vung[stress mạn tính, kéo dài liên quan đến nguy cơ sức khỏe cao hơn] Từ giai đoạn "kiệt sức" trong mô hình của Selye đến khái niệm "tải trọng thích ứng" (allostatic load) của McEwen và Stellar (1993), người ta cho rằng căng thẳng mạn tính để lại "cái giá" cho cơ thể. Các phân tích tổng hợp nghiên cứu quan sát thấy căng thẳng nghề nghiệp kéo dài (HR 1,23; Kivimäki và cộng sự, 2012) và stress tự cảm nhận cao (R…
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'Góc nhìn này nhấn mạnh *thời gian và cường độ*: ngắn thì thích nghi được, dài thì cạn kiệt.'
+    moi: 'Góc nhìn này nhấn mạnh *thời gian và cường độ*: theo mô hình, ngắn thì cơ thể thích nghi được, kéo dài thì nguồn lực cạn dần.'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'stress không nằm ở sự việc mà ở *cách ta đánh giá* nó: đòi hỏi có vượt quá nguồn lực của mình không? Cùng một kỳ thi, người thấy "thử thách vừa sức" và người thấy "mối đe dọa" phản ứng hoàn toàn khác nhau.'
+    moi: 'stress phụ thuộc vào *cách ta đánh giá* sự việc chứ không chỉ vào bản thân sự việc: nó có đe dọa hay quá sức mình không? Cùng một kỳ thi, người thấy "thử thách" và người thấy "mối đe dọa" có thể phản ứng khác nhau.'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: niềm tin "stress có lợi hay có hại" như một chiếc kính lọc — định hướng ta *tiếp cận* hay *né tránh* tình huống căng thẳng, từ đó thay đổi cả hành vi lẫn phản ứng sinh lý.
+    moi: niềm tin "stress có lợi hay có hại" như một chiếc kính lọc — theo giả thuyết của Crum và cộng sự (2013), nó định hướng ta *tiếp cận* hay *né tránh* tình huống căng thẳng, từ đó có thể thay đổi cả hành vi lẫn phản ứng sinh lý (bằng chứng cho vế sinh lý còn chưa nhất quán, xem phần Mức độ chắc chắn).
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: hãy trao đổi với chuyên gia sức khỏe tâm thần.
+    moi: hãy trao đổi với chuyên gia sức khỏe tâm thần; xem trang [Hỗ trợ](/psyche/ho-tro/).
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'Nghiên cứu 2013 gợi ý cách nhìn này đi kèm phản ứng sinh lý điều hòa hơn và xu hướng tiếp cận thử thách thay vì né tránh. Nhưng hãy nhớ: đây là thay đổi *góc nhìn*, không phải thuốc chữa bệnh — và bằng chứng vẫn đang được củng cố thêm.'
+    moi: 'Các phân tích tổng hợp thấy những can thiệp "đánh giá lại" stress như vậy giúp giảm nhẹ phản ứng stress tự cảm nhận và cải thiện nhẹ thành tích khi làm nhiệm vụ (phần lớn trong thí nghiệm), nhưng hiệu ứng nhỏ, khác nhau nhiều giữa các nghiên cứu, và chưa thấy lợi ích rõ ở chỉ số sinh lý. Hãy nhớ: đây là thay đổi *góc nhìn*, không phải thuốc chữa bệnh — và bằng chứng vẫn đang được củng cố thêm.'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'Bài học chắc chắn nhất từ mô hình của Selye: vấn đề không phải stress ngắn hạn mà là stress **không có điểm dừng**. Giấc ngủ đầy đủ, vận động đều đặn và duy trì kết nối xã hội là những cách phục hồi được nhiều nghiên cứu ủng hộ. Đừng chỉ hỏi "làm sao hết stress", hãy hỏi "mình đã cho cơ thể nghỉ ngơi đủ chưa".'
+    moi: 'Điều dễ rút ra nhất từ mô hình của Selye và từ các nghiên cứu về stress mạn tính: vấn đề không phải đợt stress ngắn mà là stress **không có điểm dừng**. Một phân tích tổng hợp (Wendsche & Lohmann-Haislah, 2016) thấy việc tách khỏi công việc ngoài giờ đi kèm ít kiệt sức hơn và ngủ tốt hơn (mối liên hệ tương quan, tự báo cáo). Giáo trình OpenStax *Psychology 2e* cũng nêu vận động đều đặn, ngủ đủ và kết nối xã hội là nh…'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'Niềm tin "stress có lợi" **không** có nghĩa mọi áp lực đều tốt, càng không thay thế việc giải quyết nguyên nhân: khối lượng công việc quá tải, môi trường độc hại, hay các vấn đề sức khỏe tâm thần cần hỗ trợ chuyên môn. Nếu đã thử nhiều cách mà tình trạng không cải thiện, đó là lúc cần sự giúp đỡ chuyên nghiệp — chứ không phải lúc tự trách mình "chưa đủ tích cực".'
+    moi: 'Niềm tin "stress có lợi" **không** có nghĩa mọi áp lực đều tốt: chính nhóm Crum coi niềm tin này không phải một chiến lược đối phó (Crum và cộng sự, 2013), và thử nghiệm 2023 dùng thông tin cân bằng cả hai mặt của stress. Nó càng không thay thế việc giải quyết nguyên nhân: khối lượng công việc quá tải, môi trường độc hại, hay các vấn đề sức khỏe tâm thần cần hỗ trợ chuyên môn. Nếu đã thử nhiều cách mà tình trạng khôn…'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Stress ngắn hạn là phản ứng thích nghi bình thường. Vấn đề nằm ở stress kéo dài mà không được phục hồi.
+    moi: Stress ngắn hạn là phản ứng thích nghi bình thường. Điều đáng lo hơn là stress kéo dài mà không được phục hồi.
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Niềm tin về stress là *yếu tố điều tiết*, không phải phép chữa bệnh. Nghiên cứu chỉ đo được triệu chứng *tự báo cáo* và hiệu suất *tự đánh giá*.
+    moi: Niềm tin về stress là một yếu tố có thể ảnh hưởng đến cách ta phản ứng với stress, không phải phép chữa bệnh. Các thử nghiệm của Crum chủ yếu đo triệu chứng *tự báo cáo* và hiệu suất *tự đánh giá*; vài thử nghiệm khác có đo chỉ số sinh lý nhưng kết quả chưa nhất quán.
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: Định nghĩa gốc của Selye là phản ứng không đặc hiệu trước *mọi* đòi hỏi — kể cả chuyện vui, háo hức.
+    moi: Định nghĩa của Selye là phản ứng của cơ thể trước *mọi* đòi hỏi — kể cả chuyện vui.
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: cùng một "bộ ba" tuyến thượng thận phì đại, tuyến ức–hạch teo, loét dạ dày–ruột dù tác nhân khác nhau
+    moi: cùng một "bộ ba" tuyến thượng thận phì đại, tuyến ức–hạch teo, loét dạ dày dù tác nhân khác nhau
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: '> Lượng stress không hề giảm — chỉ *niềm tin* và *phản ứng* thay đổi. Và mọi kết quả đều là tự báo cáo.'
+    moi: '> Nghiên cứu 2 không đo cortisol, và các thước đo là niềm tin, triệu chứng và hiệu suất — đều tự báo cáo; bài không báo cáo rằng lượng stress giảm. Cái thay đổi là *niềm tin* và cách người tham gia tự đánh giá.'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: + Vì bằng chứng mới chỉ gồm một vài thử nghiệm, tất cả dùng biến tự báo cáo, hiệu ứng nhỏ, và tính đến thời điểm tra cứu chưa thấy công bố tái lập đúng giao thức gốc.
+    moi: + Vì kết quả giữa các nghiên cứu chưa nhất quán (nhất là ở chỉ số sinh lý), nhiều kết quả quan trọng chỉ là tự báo cáo, hiệu ứng nhỏ, và tính đến 11/2026 chưa thấy tái lập lớn có đăng ký trước.
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: '- Crum, A. J., Santoro, E., Handley-Miner, I., Smith, E. N., Evans, K., Moraveji, N., Achor, S., & Salovey, P. (2023). Evaluation of the "rethink stress" mindset intervention: A metacognitive approach to changing mindsets. *Journal of Experimental Psychology: General*, 152(9), 2603–2622.'
+    moi: '- Crum, A. J., Santoro, E., Handley-Miner, I., Smith, E. N., Evans, K., Moraveji, N., Achor, S., & Salovey, P. (2023). Evaluation of the "rethink stress" mindset intervention: A metacognitive approach to changing mindsets. *Journal of Experimental Psychology: General*, 152(9), 2603–2622. <https://doi.org/10.1037/xge0001396> - Yeager, D. S., Bryan, C. J., Gross, J. J., Murray, J. S., Krettek Cobb, D., H. F. Santos, P.…'
+    ly_do: Sửa theo nguồn đã đọc; xem ghi_chu của các nhận định tương ứng trong hồ sơ này (D6-L1, lượt 1).
+  - cu: 'Tên bài Bosshard & Gomez (2024) trong mục Nguồn: "…task performance outcomes: A systematic review and meta-analysis."'
+    moi: '"…task performance outcomes: A meta-analysis of randomized controlled trials."'
+    ly_do: 'Crossref: tiêu đề đúng là "…a meta-analysis of randomized controlled trials"; nhận định n47.'
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: khung :::kha-vung[stress cực độ, kéo dài mà không được phục hồi thì có hại]
+    moi: :::kha-vung[stress mạn tính, kéo dài liên quan đến nguy cơ sức khỏe cao hơn]
+    ly_do: Tiêu đề khung đổi (nhận định n52); hộp tóm tắt đổi theo.
+  - cu: 'quiz 2: "Lượng stress không hề giảm — chỉ niềm tin và phản ứng thay đổi. Và mọi kết quả đều là tự báo cáo."'
+    moi: '"Nghiên cứu 2 không đo cortisol, và các thước đo là niềm tin, triệu chứng và hiệu suất — đều tự báo cáo; bài không báo cáo rằng lượng stress giảm."'
+    ly_do: q2.
+  - cu: '"Điều nghiên cứu liên hệ với nguy cơ sức khỏe là căng thẳng kéo dài mà không có lúc phục hồi"'
+    moi: '"Các nghiên cứu theo dõi dài hạn thấy mức căng thẳng cao … và mô hình của Selye gợi ý rằng điều đáng lo là căng thẳng kéo dài mà không có lúc phục hồi"'
+    ly_do: Review, n3.
+  - cu: '"Độ lớn hiệu ứng của can thiệp từ nhỏ đến vừa"'
+    moi: '"… nhỏ"'
+    ly_do: Review, n26.
+  - cu: '"so với nhóm không báo cáo nhiều stress lẫn không tin rằng stress ảnh hưởng đến sức khỏe"'
+    moi: '"so với nhóm gần như không có stress và cho rằng stress hầu như không ảnh hưởng đến sức khỏe"'
+    ly_do: Review, n36.
+  - cu: :::kha-vung[stress mạn tính, kéo dài liên quan đến nguy cơ sức khỏe cao hơn]; "căng thẳng nghề nghiệp kéo dài (HR 1,23 …)"
+    moi: :::kha-vung[mức căng thẳng cao, như căng thẳng trong công việc, đi kèm nguy cơ bệnh tim mạch vành cao hơn]; "căng thẳng trong công việc (job strain, đo lúc bắt đầu theo dõi; HR 1,23 …)"
+    ly_do: Review, n52, n53.
+  - cu: '"Điều dễ rút ra nhất từ mô hình của Selye và từ các nghiên cứu về stress mạn tính: …"'
+    moi: '"Điều mô hình của Selye gợi ý: …"'
+    ly_do: Review, n64.
+  - cu: Áp dụng 3 :nhan[kha-vung]
+    moi: không gắn nhãn, giữ id cũ
+    ly_do: Review, n67.
+  - cu: '"ở học sinh Mỹ"'
+    moi: '"ở học sinh, sinh viên Mỹ"'
+    ly_do: Review, n42.
+  - cu: 'Nguồn: Selye 138; Yeager "et al.", 607; Bosshard 14; McEwen không DOI; Wendsche 2016; thiếu Wu 2026'
+    moi: 138(3479); đủ tác giả, 607(7919); 14(1); thêm DOI; 2017; thêm Wu 2026 (và link ở thân bài)
+    ly_do: Review, n81.

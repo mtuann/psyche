@@ -1,0 +1,609 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/tinh-cach/tinh-cach-thay-doi
+trang: src/content/docs/kham-pha/tinh-cach/tinh-cach-thay-doi.md
+nguon_cu: ../psyche-zero/docs/kham-pha/tinh-cach/tinh-cach-thay-doi.md
+tang: loi
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d5-l3
+    ma_bam: sha256:a25925c67ee80d60a30bcf147abd6fcf9382478a236e70770a540d5f6a307f69
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L3 phần 2/2); báo cáo G1-L03 không đọc được, kiểm lại từ nguồn gốc
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L3)
+      review: Claude Sonnet 5.5 (agent review D5-L3, 10/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l3-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: roberts2000
+    ten: 'Roberts & DelVecchio (2000), Psychol Bull 126(1), 3–25: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1037/0033-2909.126.1.3
+    toan_van: true
+  - id: roberts2006
+    ten: 'Roberts, Walton & Viechtbauer (2006), Psychol Bull 132(1), 1–25: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1037/0033-2909.132.1.1
+    toan_van: true
+  - id: roberts2008
+    ten: 'Roberts & Mroczek (2008), Curr Dir Psychol Sci 17(1), 31–35: chỉ tóm tắt (OpenAlex; PMC2743415 không tải được toàn văn)'
+    link: https://doi.org/10.1111/j.1467-8721.2008.00543.x
+    toan_van: false
+  - id: bleidorn2013
+    ten: 'Bleidorn và cộng sự (2013), Psychol Sci 24(12), 2530–2540: chỉ tóm tắt (OpenAlex, PubMed 24142813)'
+    link: https://doi.org/10.1177/0956797613498396
+    toan_van: false
+  - id: buhler2023
+    ten: 'Bühler, Sharma & Stein (2023), J Pers: chỉ tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1111/jopy.12813
+    toan_van: false
+  - id: roberts2017
+    ten: 'Roberts và cộng sự (2017), Psychol Bull 143(2), 117–141: chỉ tóm tắt (OpenAlex, PubMed 28054797)'
+    link: https://doi.org/10.1037/bul0000088
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "personality trait change longitudinal Vietnam", "rank-order stability personality Vietnamese longitudinal", "Vietnamese Big Five personality inventory validation Vietnam sample": một nghiên cứu hai đợt có mẫu Việt (Bühler 2023, gộp Thái Lan)'
+    link: https://api.openalex.org/works?search=personality%20trait%20change%20longitudinal%20Vietnam
+    toan_van: false
+  - id: bleidorn2022
+    ten: 'Bleidorn và cộng sự (2022), Psychol Bull 148(7–8), 588–619: chỉ tóm tắt (Europe PMC, PMID 35834197)'
+    link: https://doi.org/10.1037/bul0000365
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả trang: ổn định thứ hạng tăng dần theo tuổi theo phân tích tổng hợp Roberts & DelVecchio (2000), nhưng mức trung bình các chiều vẫn dịch chuyển, nhất là ở tuổi 20–40.'
+    loai: phat-hien
+    nguon:
+      - roberts2000
+      - roberts2006
+    trich: trait consistency increased from .31 in childhood to .54 during the college years, to .64 at age 30, and then reached a plateau around .74 between ages 50 and 70 when time interval was held constant at 6.7 years.
+    vi_tri: 'Roberts & DelVecchio 2000, tóm tắt; Roberts 2006 tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu mô tả (description) gán đúng cho Roberts & DelVecchio 2000 (tóm tắt đọc lại: .31, .54, .64, ~.74 khi khoảng đo 6,7 năm) và Roberts 2006. Bleidorn 2022 (lượt 2 lưu ý) không làm câu sai vì câu có nêu tên nghiên cứu; chi tiết "bình nguyên ở 50–70" đã được nói rõ là ước tính của bài 2000 ở thân bài và khung Vững chắc (n20).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3", "https://doi.org/10.1037/0033-2909.132.1.1" ]
+    luot_2_ghi_chu: Mô tả trang đúng về hai bài gốc. Lưu ý Bleidorn 2022 (xem n20).
+    review: dung
+  - id: n2
+    cau: 'Thứ hạng của một người so với bạn bè ngày càng ổn định theo tuổi; mức trung bình của cả nhóm dịch chuyển: nhìn chung càng lớn càng kỷ luật hơn, điềm tĩnh hơn, dễ chịu hơn.'
+    loai: phat-hien
+    nguon:
+      - roberts2006
+      - bleidorn2013
+      - roberts2000
+    trich: people increase in measures of social dominance (a facet of extraversion), conscientiousness, and emotional stability, especially in young adulthood (age 20 to 40).
+    vi_tri: 'Roberts 2006 tóm tắt; Bleidorn 2013 tóm tắt (dễ chịu hơn, tận tâm hơn, bớt lo âu hơn ở đầu tuổi trưởng thành) [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "người có tổ chức nhất nhóm hồi 15 tuổi thường vẫn thuộc nhóm có tổ chức nhất ở tuổi 40". Chữ mới: "có xu hướng vẫn ở gần đầu bảng... dù không chắc chắn", vì tương quan ở tuổi trẻ chỉ .31–.54. Ví dụ "có tổ chức nhất nhóm" là gia-dinh. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Roberts 2006: tận tâm, ổn định cảm xúc tăng nhất ở tuổi 20–40; tính dễ chịu "changed only in old age"; Bleidorn 2013 tóm tắt "more agreeable"; Roberts & Mroczek 2008 "warmth". Câu đáp án nói "nhìn chung ... dễ chịu hơn" nên đứng được (không nói tuổi nào); ví dụ lớp bạn là giả định.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-8721.2008.00543.x", "https://doi.org/10.1037/0033-2909.132.1.1" ]
+    luot_2_ghi_chu: "Dễ chịu: Roberts 2006 chỉ thấy đổi ở tuổi già, nhưng Roberts & Mroczek 2008 và Bleidorn 2013 nói 'ấm áp/dễ chịu hơn'; câu 'nhìn chung' chấp nhận được."
+    review: dung
+  - id: n3
+    cau: Ổn định thứ hạng (rank-order stability) là vị trí tương đối của bạn so với người khác có giữ nguyên không; thay đổi mức trung bình (mean-level change) là điểm trung bình của cả nhóm có dịch chuyển không.
+    loai: dinh-nghia
+    nguon:
+      - roberts2000
+      - roberts2006
+    trich: meta-analytic estimates of mean population test-retest correlation coefficients showed that trait consistency increased from .31
+    vi_tri: 'Roberts 2000 (rank-order consistency); Roberts 2006 (mean-level change): xác định hai khái niệm theo tiêu đề và tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: 'Định nghĩa theo cách dùng của hai bài; ví dụ lớp 10, cuộc đua chạy là gia-dinh (không phải nghiên cứu). Lượt 2: có thể thêm APA Dictionary.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3", "https://doi.org/10.1037/0033-2909.132.1.1" ]
+  - id: n4
+    cau: Roberts và DelVecchio dùng phân tích tổng hợp gộp 152 nghiên cứu dọc với tổng cộng 3.217 hệ số tương quan test-retest.
+    loai: so-lieu
+    nguon:
+      - roberts2000
+    trich: From 152 longitudinal studies, 3,217 test-retest correlation coefficients were compiled.
+    vi_tri: 'Roberts & DelVecchio 2000, tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3" ]
+  - id: n5
+    cau: Khi giữ khoảng cách giữa hai lần đo ở 6,7 năm, tương quan test-retest là .31 ở thời thơ ấu, .54 ở tuổi đại học, .64 ở tuổi 30 và bình nguyên khoảng .74 ở tuổi 50–70.
+    loai: so-lieu
+    nguon:
+      - roberts2000
+    trich: trait consistency increased from .31 in childhood to .54 during the college years, to .64 at age 30, and then reached a plateau around .74 between ages 50 and 70 when time interval was held constant at 6.7 years.
+    vi_tri: 'Roberts & DelVecchio 2000, tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Số .31, .54, .64, ~.74 và 6,7 năm khớp tóm tắt Roberts & DelVecchio 2000 (Europe PMC) và toàn văn (PDF tr. 1). Bleidorn 2022 thấy ít bằng chứng tăng sau 25 tuổi, nên trang thêm câu nói .74 là ước tính của bài 2000 và nêu kết quả mới hơn (xem n20).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3" ]
+    luot_2_ghi_chu: Đúng với Roberts & DelVecchio 2000; số liệu mới hơn (Bleidorn 2022) cho thấy bình nguyên đến sớm hơn.
+    review: dung
+  - id: n6
+    cau: Khoảng cách giữa hai lần đo càng dài thì tương quan càng thấp; các chiều khí chất ở trẻ nhỏ kém ổn định hơn các chiều tính cách ở người lớn.
+    loai: so-lieu
+    nguon:
+      - roberts2000
+    trich: Analysis of moderators of consistency showed that the longitudinal time interval had a negative relation to trait consistency and that temperament dimensions were less consistent than adult personality traits.
+    vi_tri: 'Roberts & DelVecchio 2000, tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3" ]
+  - id: n7
+    cau: Roberts, Walton và Viechtbauer (2006) gộp 92 mẫu nghiên cứu dọc để xem mức trung bình thay đổi thế nào.
+    loai: so-lieu
+    nguon:
+      - roberts2006
+    trich: The present study used meta-analytic techniques (number of samples = 92) to determine the patterns of mean-level change in personality traits across the life course.
+    vi_tri: 'Roberts 2006 tóm tắt [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+  - id: n8
+    cau: 'Tính thống trị xã hội (một khía cạnh của hướng ngoại: sự tự tin, quyết đoán trong giao tiếp), tận tâm và ổn định cảm xúc tăng, mạnh nhất ở tuổi 20–40.'
+    loai: phat-hien
+    nguon:
+      - roberts2006
+    trich: people increase in measures of social dominance (a facet of extraversion), conscientiousness, and emotional stability, especially in young adulthood (age 20 to 40).
+    vi_tri: 'Roberts 2006 tóm tắt; (social dominance: dominance, independence, self-confidence) [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: 'Trang nói "ổn định cảm xúc (bớt lo âu dần)": nghĩa tương đương.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+  - id: n9
+    cau: 'Tính sôi nổi xã hội (khía cạnh còn lại của hướng ngoại: thích giao du, cảm xúc tích cực, nhiều năng lượng) và tính cởi mở tăng ở tuổi vị thành niên rồi giảm ở tuổi già.'
+    loai: phat-hien
+    nguon:
+      - roberts2006
+    trich: people increase on measures of social vitality (a 2nd facet of extraversion) and openness in adolescence but then decrease in both of these domains in old age.
+    vi_tri: 'Roberts 2006 tóm tắt; social vitality: sociability, positive affect, gregariousness, energy level [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(thích tiệc tùng, náo nhiệt)". Chữ mới theo Roberts 2006: sociability, positive affect, gregariousness, energy level. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Roberts 2006: "social vitality (a 2nd facet of extraversion) and openness in adolescence but then decrease ... in old age". Khớp; phần giải nghĩa sôi nổi xã hội theo chính bài (sociability, positive affect, gregariousness, energy level).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+    review: dung
+  - id: n10
+    cau: Tính dễ chịu chỉ thay đổi đáng kể ở tuổi già.
+    loai: phat-hien
+    nguon:
+      - roberts2006
+    trich: Agreeableness changed only in old age.
+    vi_tri: 'Roberts 2006 tóm tắt [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+  - id: n11
+    cau: Trong 6 nhóm đặc điểm được xét, có 4 nhóm thay đổi đáng kể ở tuổi trung niên và tuổi già.
+    loai: so-lieu
+    nguon:
+      - roberts2006
+    trich: Of the 6 trait categories, 4 demonstrated significant change in middle and old age.
+    vi_tri: 'Roberts 2006 tóm tắt [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+  - id: n12
+    cau: Nghiên cứu càng kéo dài thì thay đổi đo được càng lớn, và nghiên cứu theo dõi nhóm trẻ tuổi hơn thấy thay đổi lớn hơn.
+    loai: phat-hien
+    nguon:
+      - roberts2006
+    trich: Gender and attrition had minimal effects on change, whereas longer studies and studies based on younger cohorts showed greater change.
+    vi_tri: 'Roberts 2006 tóm tắt [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: bullet này gán cho Roberts & Mroczek 2008 ("nghiên cứu càng kéo dài... chống lại ý tưởng dao động quanh một điểm đặt cố định"). Đã chuyển về Roberts 2006 (nguồn có nói); câu "chống lại ý tưởng..." bỏ (không có nguồn). Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Roberts 2006: "longer studies and studies based on younger cohorts showed greater change". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+    review: dung
+  - id: n13
+    cau: 'Roberts và Mroczek (2008): theo tuổi, con người nhìn chung tự tin hơn, ấm áp hơn, tự chủ hơn, ổn định cảm xúc hơn; các thay đổi này diễn ra nhiều nhất ở tuổi 20–40.'
+    loai: phat-hien
+    nguon:
+      - roberts2008
+    trich: people show increased selfconfidence, warmth, self-control, and emotional stability with age. These changes predominate in young adulthood (age 20-40).
+    vi_tri: Roberts & Mroczek 2008, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Hướng thay đổi nhìn chung là tích cực... các tác giả gọi đây là nguyên tắc trưởng thành (maturity principle)". Tên "maturity principle" không có trong tóm tắt, đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Roberts & Mroczek 2008: "increased selfconfidence, warmth, self-control, and emotional stability with age ... predominate in young adulthood (age 20-40)". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-8721.2008.00543.x" ]
+    review: dung
+  - id: n14
+    cau: 'Thay đổi mức trung bình vẫn xảy ra ở tuổi trung niên và tuổi già: theo các tác giả, tính cách có thể thay đổi ở mọi lứa tuổi.'
+    loai: phat-hien
+    nguon:
+      - roberts2008
+    trich: mean-level change in personality traits occurs in middle and old age, showing that personality traits can change at any age.
+    vi_tri: Roberts & Mroczek 2008, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-8721.2008.00543.x" ]
+  - id: n15
+    cau: William James cho rằng tính cách "đông cứng như thạch cao" (set like plaster) từ tuổi 30 (James, 1890); nghiên cứu hiện đại không khớp với quan niệm này.
+    loai: lich-su
+    nguon:
+      - roberts2000
+    trich: William James, who claimed that personality is set like plaster by age 30 (James, 1890).
+    vi_tri: 'Roberts 2000, mục Introduction [bản Internet Archive: roberts2000 PDF tr. 4]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "phản bác quan niệm cũ của William James" gán cho Roberts & Mroczek 2008 (tóm tắt không nhắc James). Chữ mới dẫn Roberts & DelVecchio 2000 cho phát biểu của James và Roberts 2008 cho "thay đổi ở mọi lứa tuổi". Review (Claude Sonnet 5.5, 10/11/2026): dung. Mở toàn văn Roberts & DelVecchio 2000 (PDF tr. 4): "William James, who claimed that personality is set like plaster by age 30 (James, 1890)"; lượt 2 cũng đọc trích gốc ở psychclassics (Habit). Trang dẫn "theo Roberts và DelVecchio 2000" đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://psychclassics.yorku.ca/James/Principles/prin4.htm" ]
+    luot_2_ghi_chu: Trích đúng từ chương Habit, Principles of Psychology (1890). 'Nghiên cứu hiện đại không khớp' đúng theo Roberts 2006 (nguồn trong hồ sơ).
+    review: dung
+  - id: n16
+    cau: Ở mọi giai đoạn, mỗi người có kiểu phát triển riêng, dường như gắn với những trải nghiệm cụ thể của giai đoạn đời ấy.
+    loai: phat-hien
+    nguon:
+      - roberts2008
+    trich: people demonstrate unique patterns of development at all stages of the life course, and these patterns appear to be the result of specific life experiences that pertain to a person's stage of life.
+    vi_tri: Roberts & Mroczek 2008, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: bullet 3 "Nghiên cứu càng kéo dài... dao động quanh một điểm đặt" và bullet 4 "nguyên tắc trưởng thành" thay bằng ý này (có trong tóm tắt). Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Roberts & Mroczek 2008: "unique patterns of development at all stages ... appear to be the result of specific life experiences". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-8721.2008.00543.x" ]
+    review: dung
+  - id: n17
+    cau: Bleidorn và cộng sự (2013) dùng mẫu internet 884.328 người trẻ trưởng thành ở 62 quốc gia.
+    loai: so-lieu
+    nguon:
+      - bleidorn2013
+    trich: using data from a large Internet-based sample of young adults from 62 nations (N = 884,328).
+    vi_tri: Bleidorn 2013, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Chữ cũ: "người trẻ"; chữ mới: "người trẻ trưởng thành" (young adults). Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Bleidorn 2013 (Europe PMC): "young adults from 62 nations (N = 884,328)".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396" ]
+    review: dung
+  - id: n18
+    cau: Từ đầu đến giữa tuổi trưởng thành, ở nhiều nền văn hóa người ta trở nên dễ chịu hơn, tận tâm hơn và bớt lo âu hơn.
+    loai: phat-hien
+    nguon:
+      - bleidorn2013
+    trich: individuals from different cultures across the world tend to become more agreeable, more conscientious, and less neurotic.
+    vi_tri: Bleidorn 2013, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "ở khắp các nền văn hóa". Chữ mới: "ở nhiều nền văn hóa", vì tóm tắt cũng ghi khác biệt văn hóa đáng kể ở ảnh hưởng của tuổi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Bleidorn 2013: "tend to become more agreeable, more conscientious, and less neurotic"; trang viết "ở nhiều nền văn hóa" (không "khắp"), kèm "khác biệt văn hóa có ý nghĩa" ở n32.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396" ]
+    review: dung
+  - id: n19
+    cau: Ở những nền văn hóa đảm nhận trách nhiệm của vai trò người lớn sớm hơn, sự trưởng thành tính cách đến sớm hơn, phù hợp với lý thuyết đầu tư xã hội; đây là so sánh giữa các nền văn hóa, chưa chứng minh nguyên nhân.
+    loai: phat-hien
+    nguon:
+      - bleidorn2013
+    trich: Consistent with social-investment theory, results showed that cultures with an earlier onset of adult-role responsibilities were marked by earlier personality maturation.
+    vi_tri: Bleidorn 2013, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "(đi làm sớm, kết hôn sớm)... chính việc bước vào các vai trò của người lớn thúc đẩy tính cách trưởng thành". Bỏ ví dụ (không có trong tóm tắt) và câu nhân quả. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Bleidorn 2013: "cultures with an earlier onset of adult-role responsibilities were marked by earlier personality maturation"; trang nói rõ là so sánh giữa các nền văn hóa, chưa chứng minh nguyên nhân.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396" ]
+    luot_2_ghi_chu: Đúng; so sánh giữa nền văn hóa nên không chứng minh nhân quả (câu đã nói rõ).
+    review: dung
+  - id: n20
+    cau: 'Vững chắc: ổn định thứ hạng tăng từ thơ ấu đến đầu tuổi trưởng thành rồi đi ngang.'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - roberts2000
+      - bleidorn2022
+    ly_do: 'Hai phân tích tổng hợp lớn cùng chiều: Roberts & DelVecchio 2000 (152 nghiên cứu dọc, 3.217 hệ số): .31 → .54 → .64 → ~.74 (50–70 tuổi) với khoảng đo 6,7 năm; Bleidorn và cộng sự 2022 (189 mẫu, N = 178.503, nghiên cứu từ 2005): ổn định thứ hạng tăng đến đầu tuổi trưởng thành rồi đi ngang, "little evidence for increasing rank-order stabilities after Age 25". Hướng chung đạt Vững chắc; con số ~.74 ở tuổi 50–70 chỉ là ước tính của bài 2000, kết quả mới hơn không thấy tăng thêm sau 25 tuổi.'
+    nguon:
+      - roberts2000
+      - bleidorn2022
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó: mục 4 chấp nhận phân tích tổng hợp lớn; Bühler 2023 (rank-order .21, hai đợt, nông thôn Thái–Việt) không mâu thuẫn trực tiếp vì khoảng đo, mẫu khác; đã nói ở mục Việt Nam. Review (Claude Sonnet 5.5, 10/11/2026): sai (qua-manh, theo lượt 2). Chữ cũ: "ổn định thứ hạng tăng theo tuổi, đạt đỉnh khoảng .74 ở tuổi 50–70" (Vững chắc, chỉ căn cứ Roberts & DelVecchio 2000, "chưa mở phân tích mới hơn"). Chữ mới: "ổn định thứ hạng tăng từ thơ ấu đến đầu tuổi trưởng thành rồi đi ngang" và nói rõ .74 là ước tính của bài 2000. Lý do: đã tự đọc tóm tắt Bleidorn 2022 (Europe PMC): "rank-order stability ... increased significantly throughout early life before reaching a plateau in young adulthood ... we found little evidence for increasing rank-order stabilities after Age 25". Giữ Vững chắc cho hướng chung (hai tổng hợp cùng chiều, không có kết quả ngược; Bühler 2023 khác khoảng đo và mẫu, không đối lập trực tiếp). Trên trang: sửa tiêu đề và nội dung khung, thêm câu về Bleidorn 2022 ở mục Roberts & DelVecchio và nguồn mới.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3", "https://doi.org/10.1037/bul0000365" ]
+    luot_2_ghi_chu: "câu đúng: Ổn định thứ hạng tăng từ thơ ấu đến đầu tuổi trưởng thành rồi đi ngang (Roberts & DelVecchio 2000: .31, .54, .64 rồi bình nguyên ~.74 ở tuổi 50-70 khi khoảng đo 6,7 năm; Bleidorn 2022 thấy ít bằng chứng tăng thêm sau tuổi 25). Nhãn Vững chắc cho hướng chung; số ~.74 ở 50-70 chỉ nên ghi là ước tính của Roberts & DelVecchio.; Hướng chung (ổn định thứ hạng tăng từ thơ ấu đến đầu tuổi trưởng thành) đứng vững và hai phân tích tổng hợp cùng chiều. Nhưng 'đạt đỉnh ~.74 ở tuổi 50-70' là số của Roberts & DelVecchio 2000; phân tích tổng hợp mới hơn không thấy ổn định tăng thêm sau 25 tuổi, nên chi tiết đỉnh muộn không đạt Vững chắc."
+    review: sai
+  - id: n21
+    cau: 'Khá vững: mức trung bình dịch chuyển theo hướng "trưởng thành".'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - roberts2006
+      - bleidorn2013
+      - bleidorn2022
+      - buhler2023
+    ly_do: 'Một phân tích tổng hợp 92 mẫu (tận tâm, ổn định cảm xúc tăng, nhất là tuổi 20–40), một phân tích tổng hợp mới hơn (Bleidorn 2022: ổn định tăng cùng lúc với thay đổi mức trung bình theo hướng trưởng thành hơn) và một khảo sát internet 62 quốc gia theo hướng tương tự; nhưng chi tiết từng chiều khác nhau, và khảo sát hai đợt ở nông thôn Thái Lan–Việt Nam thấy thay đổi phần lớn không phụ thuộc tuổi.'
+    nguon:
+      - roberts2006
+      - bleidorn2013
+      - bleidorn2022
+      - buhler2023
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Nhiều phân tích tổng hợp ủng hộ hướng này... tìm thấy ở hàng chục quốc gia". Chữ mới: một phân tích tổng hợp, và dữ liệu 62 quốc gia là khảo sát internet; thêm Bühler 2023 là ngoại lệ. Lượt 2 xem lại: có thêm phân tích tổng hợp (ví dụ Bleidorn 2022, Graham 2020)? Review (Claude Sonnet 5.5, 10/11/2026): dung. Thêm Bleidorn 2022 (đã trả lời câu hỏi lượt 1 "có thêm phân tích tổng hợp?"): tóm tắt nói "These increases in stability coincide with mean-level changes in the direction of greater maturity" và "Emotional stability ... increased consistently". Vẫn Khá vững vì Bühler 2023 (d .06–.21, thay đổi gắn với cú sốc, phần lớn không phụ thuộc tuổi) và chi tiết từng chiều khác nhau; có hai tổng hợp cùng chiều nên không thấp hơn Khá vững.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1", "https://doi.org/10.1037/bul0000365" ]
+    luot_2_ghi_chu: Khá vững là mức thận trọng; có thể đạt Vững chắc nhưng không cao hơn thước đo.
+    review: dung
+  - id: n22
+    cau: 'Đang tranh cãi: vì sao tính cách thay đổi, do sinh học bên trong hay do vai trò xã hội? Lý thuyết năm nhân tố cho rằng sự trưởng thành phần lớn do di truyền; lý thuyết đầu tư xã hội cho rằng phần lớn do các bước chuyển sang vai trò người lớn.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - bleidorn2013
+    ly_do: Bleidorn 2013 nêu rõ hai lý thuyết cạnh tranh và nói kết quả của họ phù hợp với đầu tư xã hội; một nghiên cứu so sánh văn hóa chưa phải phép thử quyết định.
+    nguon:
+      - bleidorn2013
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "vì hai cơ chế rất khó tách rời trong thực tế" (không có nguồn); đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Bleidorn 2013 nêu hai lý thuyết cạnh tranh và kết quả "consistent with social-investment theory"; chỉ một nghiên cứu so sánh văn hóa, chưa phép thử quyết định (đúng như trang viết). Đang tranh cãi hợp lý.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi hợp lý (bằng chứng giữa các nền văn hóa chỉ là tương quan).
+    review: dung
+  - id: n23
+    cau: 'Theo Bleidorn (2013): lý thuyết năm nhân tố cho rằng sự trưởng thành tính cách phần lớn do di truyền quyết định; lý thuyết đầu tư xã hội cho rằng nó phần lớn là kết quả của các bước chuyển sang vai trò người lớn.'
+    loai: phat-hien
+    nguon:
+      - bleidorn2013
+    trich: Five-factor theory proposes that personality maturation is largely determined by genetic factors, whereas social-investment theory proposes that personality maturation in early adulthood is largely the result of normative life transitions to adult roles.
+    vi_tri: Bleidorn 2013, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: mục "Các lý thuyết giải thích" gồm ba nguyên tắc "tích lũy ổn định, đầu tư xã hội, trưởng thành" gán cho Caspi, Roberts & Shiner 2005. Tóm tắt Caspi 2005 (Annu Rev Psychol) không nêu ba nguyên tắc này; chưa mở toàn văn. Đã bỏ "tích lũy ổn định" và "trưởng thành", và câu "đây là lời giải thích chính cho việc thay đổi mạnh nhất ở tuổi 20–40". Giữ hai lý thuyết có nguồn. Đã bỏ Caspi 2005 khỏi mục Nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Bleidorn 2013 (trích nguyên văn hai lý thuyết).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396" ]
+    review: dung
+  - id: n24
+    cau: 'Đừng "đóng đinh" bản thân hay người khác: thứ hạng khá ổn định nhưng mức độ vẫn có thể dịch chuyển, nhất là ở tuổi 20–40; ở tuổi trẻ thứ hạng còn "dẻo" (tương quan khoảng .3–.5).'
+    loai: loi-khuyen
+    nguon:
+      - roberts2000
+      - roberts2006
+    trich: trait consistency increased from .31 in childhood to .54 during the college years
+    vi_tri: 'Roberts 2000 tóm tắt; Roberts 2006 tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: 'Khung chip Khá vững: nhãn dựa trên n5, n8. Ví dụ "thiếu niên hư là hư cả đời" là gia-dinh; câu trên không nói về hành vi phạm pháp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3", "https://doi.org/10.1111/j.1467-8721.2008.00543.x" ]
+  - id: n25
+    cau: 'Khá vững (chip mục Áp dụng 1): không đóng đinh bản thân hay người khác.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - roberts2000
+      - roberts2006
+    ly_do: 'Hai phân tích tổng hợp (152 và 92 mẫu): thứ hạng ổn định tăng dần theo tuổi nhưng tương quan ở tuổi trẻ chỉ .31–.54, và mức trung bình dịch chuyển nhất là ở tuổi 20–40.'
+    nguon:
+      - roberts2000
+      - roberts2006
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững (không đóng đinh): hai phân tích tổng hợp (152 và 92 mẫu); thứ hạng khá ổn định nhưng tương quan tuổi trẻ chỉ .31–.54 và mức trung bình dịch chuyển; Bleidorn 2022 cùng chiều.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3", "https://doi.org/10.1111/j.1467-8721.2008.00543.x" ]
+    review: dung
+  - id: n26
+    cau: 'Đang tranh cãi (chip mục Áp dụng 2): thay đổi tính cách gắn với trải nghiệm sống nhưng nguyên nhân chưa rõ; ở những nền văn hóa nơi vai trò người lớn đến sớm hơn, sự trưởng thành đến sớm hơn.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - bleidorn2013
+      - roberts2017
+    ly_do: Chỉ có mối liên hệ giữa các nền văn hóa (Bleidorn 2013) và can thiệp lâm sàng (Roberts 2017); không có nguồn cho việc nhận thêm vai trò xã hội làm đổi tính cách.
+    nguon:
+      - bleidorn2013
+      - roberts2017
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip Khá vững "Muốn thay đổi, hãy đầu tư vào vai trò... công việc đòi hỏi đúng giờ rèn tính tận tâm, mối quan hệ lâu dài rèn tính dễ chịu... thay đổi tính cách thường là hệ quả của cách ta sống" (nhân quả, không có nguồn). Đã viết lại và hạ xuống Đang tranh cãi. Review (Claude Sonnet 5.5, 10/11/2026): dung. Roberts & Mroczek 2008 ("patterns appear to be the result of specific life experiences"), Bleidorn 2013 (tương quan giữa các nền văn hóa), Roberts 2017 (tóm tắt: 207 nghiên cứu, d = .37 trong 24 tuần, chủ yếu can thiệp lâm sàng, ổn định cảm xúc nhiều nhất). Nhãn Đang tranh cãi hợp lý; trang không đưa lời khuyên điều trị và nói rõ không suy ra từ bối cảnh điều trị.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396", "https://doi.org/10.1111/j.1467-8721.2008.00543.x" ]
+    luot_2_ghi_chu: "Đang tranh cãi phù hợp: bằng chứng văn hóa chỉ tương quan."
+    review: dung
+  - id: n27
+    cau: Một phân tích tổng hợp 207 nghiên cứu về can thiệp (chủ yếu điều trị lâm sàng) thấy điểm một số chiều tính cách đổi rõ rệt trong khoảng 24 tuần (ví dụ d = 0,37), nhiều nhất ở ổn định cảm xúc.
+    loai: so-lieu
+    nguon:
+      - roberts2017
+    trich: Interventions were associated with marked changes in personality trait measures over an average time of 24 weeks (e.g., d = .37).
+    vi_tri: Roberts 2017, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Tóm tắt còn nói: "Emotional stability was the primary trait domain showing changes as a result of therapy, followed by extraversion." Trang không đưa lời khuyên điều trị.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/bul0000088" ]
+  - id: n28
+    cau: Thay đổi tích lũy theo thời gian (nghiên cứu càng dài thì thay đổi đo được càng lớn) và vẫn xảy ra ở tuổi trung niên và già; không cho biết một cá nhân cụ thể sẽ đổi bao nhiêu.
+    loai: phat-hien
+    nguon:
+      - roberts2006
+    trich: Gender and attrition had minimal effects on change, whereas longer studies and studies based on younger cohorts showed greater change.
+    vi_tri: 'Roberts 2006 tóm tắt [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: chip Vững chắc "Kiên nhẫn với tiến trình của người thân... đừng kỳ vọng ai đó lột xác trong vài tuần... không bao giờ là quá muộn". Chữ mới bỏ lời khuyên, giữ phát hiện; chip hạ xuống Khá vững. Review (Claude Sonnet 5.5, 10/11/2026): dung. Roberts 2006 tóm tắt: "longer studies ... showed greater change" và 4/6 nhóm đặc điểm đổi ở tuổi trung niên và già; trang không nói về cá nhân cụ thể.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1", "https://doi.org/10.1111/j.1467-8721.2008.00543.x" ]
+    review: dung
+  - id: n29
+    cau: 'Khá vững (chip mục Áp dụng 3): thay đổi tích lũy chậm và vẫn xảy ra ở người lớn tuổi.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - roberts2006
+      - roberts2008
+    ly_do: 'Phân tích tổng hợp 92 mẫu: nghiên cứu dài thấy thay đổi lớn hơn; 4/6 nhóm thay đổi ở tuổi trung niên và già; tổng quan 2008 nói tính cách có thể đổi ở mọi tuổi.'
+    nguon:
+      - roberts2006
+      - roberts2008
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: Vững chắc. Hạ xuống Khá vững: kết luận về cá nhân cụ thể không có bằng chứng. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững hợp lý: một phân tích tổng hợp 92 mẫu cộng tổng quan 2008; kết luận về từng cá nhân đã bỏ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1", "https://doi.org/10.1111/j.1467-8721.2008.00543.x", "https://doi.org/10.1037/bul0000365" ]
+    review: dung
+  - id: n30
+    cau: Tính đến 11/2026, chúng tôi tìm thấy một nghiên cứu hai đợt có mẫu gồm cả người Việt (3.811 người ở nông thôn Thái Lan và Việt Nam); chưa tìm thấy nghiên cứu dọc dài hạn về thay đổi tính cách theo tuổi trên mẫu người Việt đại diện.
+    loai: thoi-su
+    het_han: '2028-11-01'
+    nguon:
+      - tim-kiem-vn
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chưa tìm thấy nghiên cứu dọc nào về sự thay đổi tính cách theo tuổi trên mẫu người Việt": gần như đúng nhưng bỏ sót Bühler 2023 (OpenAlex 10/11/2026). Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đọc lại tóm tắt Bühler, Sharma & Stein 2023 (N = 3.811; hai đợt; Thái Lan và Việt Nam). Tìm lại ngày 10/11/2026 trên Europe PMC ("Vietnamese/Vietnam" cùng personality và longitudinal, trait change, rank-order): chỉ thấy nghiên cứu ấy và các bộ dữ liệu panel (TVSEP) không có bài về thay đổi tính cách theo tuổi. Câu thời sự có mốc 11/2026 và het_han 2028-11-01; OpenAlex bị giới hạn tốc độ nên không tìm thêm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/jopy.12813", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Vietnam+AND+personality+AND+Big+Five" ]
+    luot_2_ghi_chu: Tìm giới hạn ở Europe PMC; các bộ dữ liệu dọc lớn (ví dụ Young Lives) có thể có thang tính cách nhưng không thấy bài về thay đổi theo tuổi.
+    review: dung
+  - id: n31
+    cau: 'Khảo sát 3.811 người ở nông thôn Thái Lan và Việt Nam: mức trung bình đổi nhỏ giữa hai đợt (Cohen''s d từ 0,06 đến 0,21), tương quan test-retest trung bình giữa hai đợt là 0,21; thay đổi cá nhân liên quan đến các cú sốc và phần lớn không phụ thuộc tuổi, giới, học vấn.'
+    loai: so-lieu
+    nguon:
+      - buhler2023
+    trich: We observe changes in personality traits over time but Cohen's d coefficients only range between 0.06 and 0.21. The average rank-order stability, measured by the test-retest correlation of the Big Five between the two consecutive waves, lies at 0.21.
+    vi_tri: Bühler, Sharma & Stein 2023, tóm tắt
+    ket_qua: dung
+    ghi_chu: Không thể so thẳng với Roberts 2000 (khoảng đo, mẫu khác); trang nói rõ.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/jopy.12813" ]
+  - id: n32
+    cau: Nghiên cứu 62 quốc gia cho thấy hướng "trưởng thành" từ đầu đến giữa tuổi trưởng thành ở nhiều nền văn hóa, còn thời điểm trưởng thành khác nhau giữa các nền văn hóa; áp vào Việt Nam chỉ là giả thuyết.
+    loai: phat-hien
+    nguon:
+      - bleidorn2013
+    trich: We found strong evidence for universal personality maturation from early to middle adulthood, yet there were significant cultural differences in age effects on personality traits.
+    vi_tri: Bleidorn 2013, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "hướng trưởng thành là phổ quát, nhưng thời điểm phụ thuộc văn hóa". Tóm tắt dùng "universal" cho hướng; trang giữ ý với "ở nhiều nền văn hóa". Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Bleidorn 2013: "strong evidence for universal personality maturation ... yet significant cultural differences in age effects"; trang viết "ở nhiều nền văn hóa" (thận trọng hơn "phổ quát") và nói áp vào Việt Nam chỉ là giả thuyết.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396" ]
+    review: dung
+  - id: n33
+    cau: 'Ngộ nhận: tính cách đông cứng sau 30 là sai; 4/6 nhóm đặc điểm thay đổi đáng kể ở tuổi trung niên và già (Roberts, Walton & Viechtbauer 2006).'
+    loai: phat-hien
+    nguon:
+      - roberts2006
+      - roberts2000
+    trich: Of the 6 trait categories, 4 demonstrated significant change in middle and old age.
+    vi_tri: 'Roberts 2006 tóm tắt; James: Roberts 2000 [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: Trang tóm một câu và dẫn nguồn trên.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1", "https://psychclassics.yorku.ca/James/Principles/prin4.htm" ]
+  - id: n34
+    cau: 'Ngộ nhận: nếu tính cách thay đổi thì đo tính cách vô nghĩa; không suy ra được: thứ hạng tương đối ổn định (tuổi đại học .54, tuổi 30 .64 khi đo cách 6,7 năm) trong khi mức trung bình dịch chuyển.'
+    loai: phat-hien
+    nguon:
+      - roberts2000
+      - roberts2006
+    trich: trait consistency increased from .31 in childhood to .54 during the college years, to .64 at age 30
+    vi_tri: 'Roberts 2000 tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chính vì vừa ổn định vừa thay đổi mà tính cách vừa dự báo được tương lai, vừa cho ta hy vọng cải thiện". "Dự báo tương lai" và "hy vọng cải thiện" không có nguồn nên đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. R&DV 2000 (PDF tr. 1): .54 ở tuổi đại học, .64 ở tuổi 30 khi khoảng đo 6,7 năm; trang không còn nói "dự báo được tương lai" hay "hy vọng cải thiện".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3", "https://doi.org/10.1037/0033-2909.132.1.1" ]
+    review: dung
+  - id: n35
+    cau: 'Ngộ nhận: "càng già càng khó tính là quy luật" không có trong các nguồn của bài: ổn định cảm xúc và tận tâm tăng ở tuổi 20–40, dễ chịu chỉ đổi đáng kể ở tuổi già.'
+    loai: phat-hien
+    nguon:
+      - roberts2006
+    trich: people increase in measures of social dominance (a facet of extraversion), conscientiousness, and emotional stability, especially in young adulthood (age 20 to 40).
+    vi_tri: 'Roberts 2006 tóm tắt [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Không có bằng chứng cho quy luật này. Xu hướng trung bình là ngược lại: trở nên dễ chịu... hơn theo tuổi". Tóm tắt Roberts 2006 không nói hướng của dễ chịu ở tuổi già; chữ mới chỉ nói điều nguồn nói. Review (Claude Sonnet 5.5, 10/11/2026): dung. Roberts 2006 tóm tắt: tận tâm, ổn định cảm xúc tăng ở 20–40; dễ chịu "changed only in old age". Trang chỉ nói điều nguồn nói và nói "trung bình không nói lên từng cá nhân".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+    review: dung
+  - id: n36
+    cau: 'Quiz: ổn định thứ hạng nghĩa là vị trí tương đối được giữ nguyên theo thời gian; điểm số có thể tăng mà thứ hạng giữ nguyên.'
+    loai: dinh-nghia
+    nguon:
+      - roberts2000
+    trich: meta-analytic estimates of mean population test-retest correlation coefficients
+    vi_tri: 'Roberts 2000, tóm tắt (khái niệm rank-order consistency) [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: Khái niệm; lời giải thích dùng ví dụ nhóm bạn (gia-dinh). Không dựa vào vị trí lựa chọn.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3", "https://doi.org/10.1037/0033-2909.132.1.1" ]
+  - id: n37
+    cau: 'Quiz: ở tuổi 30 và tuổi 50–70 hệ số test-retest là .64 và khoảng .74 (khoảng đo cố định 6,7 năm); đường cong .31 → .54 → .64 → ~.74.'
+    loai: so-lieu
+    nguon:
+      - roberts2000
+    trich: trait consistency increased from .31 in childhood to .54 during the college years, to .64 at age 30, and then reached a plateau around .74 between ages 50 and 70 when time interval was held constant at 6.7 years.
+    vi_tri: 'Roberts & DelVecchio 2000, tóm tắt [bản Internet Archive: roberts2000 PDF tr. 1]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3" ]
+  - id: n38
+    cau: 'Quiz: theo Roberts & DelVecchio (2000), khoảng đo càng dài thì hệ số ổn định càng thấp; thời gian có thể làm giảm tương quan vì sai số đo tích lũy hoặc vì thay đổi thật; .74 không phải 1.0.'
+    loai: so-lieu
+    nguon:
+      - roberts2000
+    trich: The longitudinal time interval had a negative relation to trait consistency. [tóm tắt] | Time may degrade trait consistency because of the cumulative effects of unreliability or because of the experience of true change. [mục Previous Quantitative Reviews]
+    vi_tri: Roberts & DelVecchio 2000, tóm tắt (PDF tr. 1) và mục Previous Quantitative Reviews (PDF tr. 6)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: đáp án đúng "vì thời gian dài cho phép nhiều thay đổi tích lũy hơn". Chữ mới "cho thêm cơ hội để thay đổi tích lũy" (nguồn chỉ nêu quan hệ nghịch, không nêu cơ chế). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (quiz): đáp án đúng "Vì thời gian dài hơn cho thêm cơ hội để thay đổi tích lũy", phương án nhiễu "Vì các nhà nghiên cứu đo sai khi để lâu". Chữ mới: câu hỏi "khoảng cách giữa hai lần đo liên quan thế nào đến hệ số ổn định" với đáp án "càng dài thì hệ số càng thấp". Lý do: toàn văn Roberts & DelVecchio 2000 (tr. 6) nói thời gian làm giảm nhất quán có thể do sai số đo tích lũy hoặc do thay đổi thật; phương án nhiễu cũ trùng một trong hai khả năng ấy, nên câu hỏi cũ có đáp án sai và nguồn chỉ nêu quan hệ nghịch (như tóm tắt).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.126.1.3" ]
+    review: sai
+  - id: n39
+    cau: 'Quiz: Roberts 2006: tính thống trị xã hội, tận tâm và ổn định cảm xúc tăng mạnh ở tuổi 20–40; sôi nổi xã hội và cởi mở tăng ở vị thành niên rồi giảm ở tuổi già; dễ chịu chỉ đổi ở tuổi già.'
+    loai: phat-hien
+    nguon:
+      - roberts2006
+    trich: Agreeableness changed only in old age.
+    vi_tri: 'Roberts 2006, tóm tắt [bản Internet Archive: roberts2006 PDF tr. 1]'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0033-2909.132.1.1" ]
+  - id: n40
+    cau: 'Quiz: Bleidorn 2013 phát hiện sự trưởng thành tính cách (dễ chịu, tận tâm, bớt lo âu) ở nhiều nền văn hóa, đến sớm hơn ở nơi vai trò người lớn đến sớm hơn.'
+    loai: phat-hien
+    nguon:
+      - bleidorn2013
+    trich: cultures with an earlier onset of adult-role responsibilities were marked by earlier personality maturation.
+    vi_tri: Bleidorn 2013, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Sự trưởng thành tính cách là phổ quát, nhưng đến sớm hơn..." và lời giải thích "chính việc bước vào vai trò người lớn thúc đẩy tính cách trưởng thành — không chỉ đồng hồ sinh học". Đã sửa thành "phù hợp với lý thuyết đầu tư xã hội; chưa chứng minh nguyên nhân". Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (trang): đáp án "Sự trưởng thành tính cách ... là phổ quát, nhưng đến sớm hơn ...", lệch với câu của hồ sơ ("ở nhiều nền văn hóa") và với n18, n32 (trang đã làm mềm "phổ quát" thành "ở nhiều nền văn hóa" vì có khác biệt văn hóa đáng kể và mẫu là khảo sát internet). Chữ mới: "xuất hiện ở nhiều nền văn hóa, nhưng đến sớm hơn ...". Phần còn lại khớp tóm tắt Bleidorn 2013.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1177/0956797613498396" ]
+    review: sai
+  - id: n41
+    cau: Bài liên kết tới bài Big Five và bài Già có lẫn không? (Đọc thêm).
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Link /psyche/kham-pha/tinh-cach/big-five/ cùng lô; /psyche/kham-pha/phat-trien/tuoi-gia/ hiện thành link hay "sắp có" theo bản build (tests/link.test.mjs). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã mở trang: mục Đọc thêm có link /psyche/kham-pha/tinh-cach/big-five/ (cùng lô) và /psyche/kham-pha/phat-trien/tuoi-gia/ (id có trong src/data/trang.yml; trang chưa lên nên thành "sắp có" theo plugin sap-co). Câu chỉ nói về site.'
+    review: dung
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat); bỏ dòng "Rà soát nội dung lần cuối"
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Đáp án Tự trải nghiệm: "người có tổ chức nhất nhóm hồi 15 tuổi thường vẫn thuộc nhóm có tổ chức nhất ở tuổi 40"'
+    moi: '"có xu hướng vẫn ở gần đầu bảng ở tuổi 40, dù không chắc chắn: ở tuổi trẻ thứ hạng còn khá lỏng"'
+    ly_do: 'Hồ sơ n2: tương quan tuổi trẻ chỉ .31–.54.'
+  - cu: '"càng lớn, thứ hạng càng đóng lại, đạt đỉnh khoảng .74 ở tuổi trung niên."'
+    moi: '"… với bình nguyên khoảng .74 ở tuổi 50–70 theo ước tính của nghiên cứu này. Cần nói thêm: một phân tích tổng hợp mới hơn (Bleidorn và cộng sự, 2022; 189 mẫu, 178.503 người) … thấy ít bằng chứng cho việc ổn định tăng thêm sau tuổi 25 …"'
+    ly_do: 'Hồ sơ n20 (lượt 2: qua-manh).'
+  - cu: 'Roberts 2006: "tính sôi nổi xã hội (thích tiệc tùng, náo nhiệt)"'
+    moi: '"(thích giao du, cảm xúc tích cực, nhiều năng lượng)"'
+    ly_do: 'Hồ sơ n9: theo định nghĩa của Roberts 2006.'
+  - cu: 'Roberts 2006: bullet về nghiên cứu kéo dài, thêm "chống lại ý tưởng tính cách chỉ dao động quanh một điểm đặt cố định"'
+    moi: Giữ "nghiên cứu càng kéo dài, thay đổi đo được càng lớn; thay đổi cũng lớn hơn ở các nghiên cứu theo dõi nhóm trẻ tuổi hơn"; bỏ vế chống lại điểm đặt cố định
+    ly_do: 'Hồ sơ n12: ý ấy không có trong nguồn (chữ cũ gán nhầm cho Roberts & Mroczek 2008).'
+  - cu: 'Roberts & Mroczek 2008: "bốn kết luận lớn", "Phần lớn thay đổi … tuổi 20–40 … lúc tính cách dẻo nhất", "nguyên tắc trưởng thành (maturity principle)", "phản bác quan niệm cũ của William James"'
+    moi: '"bài tổng quan" với ba ý; "theo các tác giả, tính cách có thể thay đổi ở mọi lứa tuổi"; James (1890) dẫn theo Roberts và DelVecchio (2000); "Mỗi người đi một đường riêng"'
+    ly_do: 'Hồ sơ n13–n16: tên "maturity principle" và việc phản bác James không có trong tóm tắt 2008.'
+  - cu: 'Bleidorn 2013: "người trẻ", "ở khắp các nền văn hóa", "(đi làm sớm, kết hôn sớm)", "chính việc bước vào các vai trò của người lớn thúc đẩy tính cách trưởng thành"'
+    moi: '"người trẻ trưởng thành", "ở nhiều nền văn hóa", bỏ ví dụ; "kết quả này phù hợp với lý thuyết đầu tư xã hội … là so sánh giữa các nền văn hóa, nên chưa chứng minh được … gây ra thay đổi"'
+    ly_do: Hồ sơ n17–n19.
+  - cu: 'Khung Vững chắc: "ổn định thứ hạng tăng theo tuổi, đạt đỉnh khoảng .74 ở tuổi 50–70"'
+    moi: '"ổn định thứ hạng tăng từ thơ ấu đến đầu tuổi trưởng thành rồi đi ngang" (hai phân tích tổng hợp; .74 là ước tính của bài 2000)'
+    ly_do: Hồ sơ n20.
+  - cu: 'Khung Khá vững: "Nhiều phân tích tổng hợp ủng hộ hướng thay đổi này … hàng chục quốc gia"'
+    moi: '"Phân tích tổng hợp 92 mẫu … một khảo sát internet lớn ở 62 quốc gia … Một phân tích tổng hợp mới hơn … (Bleidorn và cộng sự, 2022) … khảo sát hai đợt ở nông thôn Thái Lan và Việt Nam (Bühler và cộng sự, 2023)"'
+    ly_do: 'Hồ sơ n21: chỉ một tổng hợp cho mức trung bình ở bản cũ; 62 quốc gia là khảo sát internet.'
+  - cu: 'Khung Đang tranh cãi: "vì hai cơ chế này rất khó tách rời trong thực tế"'
+    moi: '"Nghiên cứu 62 quốc gia của họ phù hợp với lý thuyết đầu tư xã hội, nhưng đó là một phép thử, chưa phải kết luận cuối cùng."'
+    ly_do: 'Hồ sơ n22, n23: câu cũ không có nguồn.'
+  - cu: 'Mục Các lý thuyết giải thích: ba nguyên tắc (Caspi, Roberts và Shiner, 2005): tích lũy ổn định, đầu tư xã hội, trưởng thành'
+    moi: 'Hai lý thuyết theo Bleidorn và cộng sự (2013): lý thuyết năm nhân tố và đầu tư xã hội; "các nguồn đã kiểm chưa cho phép chọn một trong hai"; bỏ Caspi 2005 khỏi Nguồn'
+    ly_do: 'Hồ sơ n23: tóm tắt Caspi 2005 không nêu ba nguyên tắc.'
+  - cu: 'Áp dụng 2 "Muốn thay đổi, hãy đầu tư vào vai trò" (Khá vững): công việc đúng giờ rèn tận tâm, quan hệ lâu dài rèn dễ chịu'
+    moi: '"Thay đổi tính cách gắn với trải nghiệm sống, nhưng nguyên nhân chưa rõ" (Đang tranh cãi); thêm Roberts và cộng sự (2017) về can thiệp'
+    ly_do: 'Hồ sơ n26, n27: lời khuyên nhân quả không có nguồn.'
+  - cu: 'Áp dụng 3 "Kiên nhẫn với tiến trình của người thân" (Vững chắc): "không bao giờ là quá muộn"'
+    moi: '"Thay đổi tích lũy chậm và vẫn xảy ra ở người lớn tuổi" (Khá vững), không nói về cá nhân cụ thể'
+    ly_do: Hồ sơ n28, n29.
+  - cu: '"Chúng tôi chưa tìm thấy nghiên cứu dọc nào về sự thay đổi tính cách theo tuổi trên mẫu người Việt trong phạm vi các nguồn của bài này."'
+    moi: '"Tính đến 11/2026, chúng tôi tìm thấy một nghiên cứu có theo dõi hai đợt trên mẫu gồm cả người Việt … (Bühler, Sharma và Stein, 2023) … chưa tìm thấy nghiên cứu dọc dài hạn … trên mẫu người Việt đại diện."'
+    ly_do: Hồ sơ n30, n31.
+  - cu: 'Ngộ nhận: "chính vì vừa ổn định vừa thay đổi mà tính cách vừa dự báo được tương lai, vừa cho ta hy vọng cải thiện"; "Xu hướng trung bình là ngược lại: … dễ chịu … hơn theo tuổi"'
+    moi: Số liệu .54, .64 (khoảng đo 6,7 năm); "xu hướng trung bình ở tuổi 20–40 là ổn định cảm xúc và tận tâm tăng, còn tính dễ chịu chỉ đổi đáng kể ở tuổi già"
+    ly_do: Hồ sơ n34, n35.
+  - cu: 'Quiz 3 (khoảng đo): "Vì thời gian dài hơn cho thêm cơ hội để thay đổi tích lũy" (phương án nhiễu "đo sai khi để lâu")'
+    moi: 'Câu hỏi "khoảng cách giữa hai lần đo liên quan thế nào đến hệ số ổn định": "Khoảng cách càng dài thì hệ số càng thấp"; giải thích nêu cả sai số đo tích lũy lẫn thay đổi thật'
+    ly_do: 'Hồ sơ n38: nguồn nói cả hai khả năng, nên câu cũ có phương án nhiễu cũng đúng một phần.'
+  - cu: 'Quiz 5: "Sự trưởng thành tính cách … là phổ quát"; giải thích "chính việc bước vào vai trò người lớn thúc đẩy … không chỉ do đồng hồ sinh học"'
+    moi: '"… xuất hiện ở nhiều nền văn hóa"; giải thích "phù hợp với lý thuyết đầu tư xã hội … chưa chứng minh nguyên nhân"'
+    ly_do: Hồ sơ n32, n40.
+  - cu: 'Mục Nguồn: có Caspi, Roberts & Shiner 2005'
+    moi: Bỏ Caspi 2005; thêm Bleidorn 2013 (đã có), Bleidorn 2022, Bühler 2023, Roberts 2017
+    ly_do: Hồ sơ n23, n26, n27, n30.

@@ -1,0 +1,681 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/tinh-cach/mbti
+trang: src/content/docs/kham-pha/tinh-cach/mbti.md
+nguon_cu: ../psyche-zero/docs/kham-pha/tinh-cach/mbti.md
+tang: mo-rong
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-10'
+    nhanh: moi/d5-l3
+    ma_bam: sha256:2748fce018352b078b9e02d9bad4020520b3e8cf1570124f9ff30f27f1f2f4ff
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L3 phần 2/2); bài mở rộng, kiểm đủ như lõi ở lượt 1; báo cáo G1-L03 không đọc được
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L3)
+      review: Claude Sonnet 5.5 (agent review D5-L3, 10/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l3-kiem-mau.yml), đạt, 10/11/2026
+nguon:
+  - id: pittenger1993
+    ten: 'Pittenger (1993), Rev Educ Res 63(4), 467–488: toàn văn (Internet Archive, zip 10.3102)'
+    link: https://doi.org/10.3102/00346543063004467
+    toan_van: true
+  - id: pittenger2005
+    ten: 'Pittenger (2005), Consult Psychol J 57(3), 210–221: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1037/1065-9293.57.3.210
+    toan_van: true
+  - id: capraro2002
+    ten: 'Capraro & Capraro (2002), Educ Psychol Meas 62(4), 590–602: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1177/0013164402062004004
+    toan_van: true
+  - id: mccrae1989
+    ten: 'McCrae & Costa (1989), J Pers 57(1), 17–40: toàn văn (Internet Archive; chữ quét có lỗi OCR)'
+    link: https://doi.org/10.1111/j.1467-6494.1989.tb00759.x
+    toan_van: true
+  - id: nrc1991
+    ten: 'National Research Council (1991), In the Minds Eye, chương 5 "Developing Careers" (nap.edu/read/1580/chapter/8, số liệu tr. 96–97) và phần kết luận (nap.edu/read/1580/chapter/4): toàn văn mở'
+    link: https://nap.nationalacademies.org/read/1580/chapter/8
+    toan_van: true
+  - id: barrick1991
+    ten: 'Barrick & Mount (1991), Pers Psychol 44(1), 1–26: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1111/j.1744-6570.1991.tb00688.x
+    toan_van: true
+  - id: forer1949
+    ten: 'Forer (1949), J Abnorm Soc Psychol 44(1), 118–123: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1037/h0059240
+    toan_van: true
+  - id: boyle1995
+    ten: 'Boyle (1995), Aust Psychol 30(1), 71–74: chỉ tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1111/j.1742-9544.1995.tb01750.x
+    toan_van: false
+  - id: goldberg1990
+    ten: 'Goldberg (1990), J Pers Soc Psychol 59(6), 1216–1229: toàn văn (Internet Archive)'
+    link: https://doi.org/10.1037/0022-3514.59.6.1216
+    toan_van: true
+  - id: 16p
+    ten: '16Personalities, "16Personalities AI Reference" (www.16personalities.com/for-ai), xem 10/11/2026: mô tả của chính trang (nguồn bậc 3, tự mô tả)'
+    link: https://www.16personalities.com/for-ai
+    toan_van: true
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "Myers-Briggs Type Indicator Vietnamese reliability validity": không có nghiên cứu độ tin cậy hay giá trị của MBTI trên mẫu người Việt (kết quả là bài về quản lý, tuyển chọn đại học, không phải kiểm tra tâm trắc)'
+    link: https://api.openalex.org/works?search=Myers-Briggs%20Type%20Indicator%20Vietnamese%20reliability%20validity
+    toan_van: false
+  - id: haslam2012
+    ten: 'Haslam, Holland & Kuppens (2012), Psychol Med 42(5), 903–920: chỉ tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1017/S0033291711001966
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả trang: trong một nghiên cứu, khoảng một nửa số người làm lại MBTI sau 5 tuần nhận loại khác.'
+    loai: phat-hien
+    nguon:
+      - pittenger1993
+      - nrc1991
+    trich: McCarley and Carskadon (1983) examined the stability of the type assignment across a 5-week interval and found that 50% of the subjects were reclassified on one or more of the four scales.
+    vi_tri: 'Pittenger 1993, mục Test-retest reliability [bản Internet Archive: pittenger1993 PDF tr. 7]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Khoảng một nửa số người làm lại MBTI sau vài tuần rơi vào loại khác" và "bài test tính cách nổi tiếng nhất thế giới". Chữ mới: "trong một nghiên cứu... sau 5 tuần" (NRC 1991: 47% giữ nguyên loại; Myers 1998 báo 35% đổi sau 4 tuần, theo Pittenger 2005) và bỏ "nổi tiếng nhất thế giới". Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 1993 (PDF tr. 7): McCarley & Carskadon 1983, 5 tuần, "50% of the subjects were reclassified on one or more of the four scales"; NRC 1991 (nap.edu, chương 5): "only 47 percent ... retained their initial types". Câu mô tả "khoảng một nửa ... nhận loại khác" khớp cả hai.'
+    review: dung
+  - id: n2
+    cau: 'Các nghiên cứu về điểm MBTI không thấy hai cụm tách biệt: điểm phân bố liên tục, dồn quanh điểm giữa.'
+    loai: phat-hien
+    nguon:
+      - pittenger2005
+      - pittenger1993
+      - mccrae1989
+    trich: Evidence from several sources (Harvey & Murry, 1994; Hicks, 1984; McCrae & Costa, 1989; Stricker & Ross, 1962) indicates a continuous distribution of scores across each dimension.
+    vi_tri: 'Pittenger 2005, mục Descriptive Statistics [bản Internet Archive: pittenger2005 PDF tr. 4]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Kết quả thực tế luôn là một cụm duy nhất... dạng phân bố chuẩn, giống như chiều cao... rất ít người ở hai đầu". "Luôn" và "chuẩn" không có trong nguồn; Pittenger 1993: điểm "cluster around the median". Số 51 và 95 điểm trong ví dụ là gia-dinh. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 2005 (PDF tr. 4): "bimodality ... is conspicuously absent. Evidence from several sources ... indicates a continuous distribution"; (tr. 5) "center-heavy distribution", "high frequency of scores at the midpoint". Câu "dồn quanh điểm giữa" khớp. Ví dụ 51 và 95 điểm trong thang 0–100 là giả định (gia-dinh), đã ghi "giả định" trên trang.'
+    review: dung
+  - id: n3
+    cau: MBTI cắt đôi thang đo tại điểm giữa; hai người có điểm sát vạch nhận hai nhãn trái ngược.
+    loai: phat-hien
+    nguon:
+      - pittenger2005
+      - mccrae1989
+    trich: converting continuous interval or ratio scaled scores to an ordinal or nominal scale removes important information
+    vi_tri: 'Pittenger 2005, mục Descriptive Statistics [bản Internet Archive: pittenger2005 PDF tr. 4]'
+    ket_qua: dung
+    ghi_chu: 'Câu mô tả cách chấm điểm (dichotomous scoring); ví dụ số điểm là gia-dinh. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 2005 (mục Descriptive Statistics): chuyển thang liên tục sang thang phân loại làm mất thông tin; MBTI chấm theo điểm trung tính (McCrae & Costa 1989). Ví dụ số điểm là giả định.'
+    review: dung
+  - id: n4
+    cau: MBTI là bảng hỏi tự báo cáo gồm 4 cặp đối lập (hướng ngoại–hướng nội, giác quan–trực giác, lý trí–cảm xúc, nguyên tắc–linh hoạt), cho 16 "loại" bốn chữ cái như INTJ hay ESFP.
+    loai: dinh-nghia
+    nguon:
+      - pittenger2005
+      - mccrae1989
+    trich: the type conditions as mutually exclusive categories, the practice of test interpretation focuses on the four-letter type formula
+    vi_tri: 'Pittenger 2005 (mô tả MBTI, bốn thang E–I, S–N, T–F, J–P) [bản Internet Archive: pittenger2005 PDF tr. 3]'
+    ket_qua: dung
+    ghi_chu: 'Tên bốn cặp theo mô tả của McCrae & Costa 1989 và Pittenger 2005. Review (Claude Sonnet 5.5, 10/11/2026): dung. Bốn cặp E–I, S–N, T–F, J–P và công thức bốn chữ cái khớp McCrae & Costa 1989 và Pittenger 2005 (PDF tr. 3).'
+    review: dung
+  - id: n5
+    cau: Điểm số của con người trên mỗi chiều là liên tục, nhưng MBTI chuyển chúng thành nhị phân.
+    loai: phat-hien
+    nguon:
+      - mccrae1989
+      - pittenger1993
+    trich: there was no support for the view that the MBTI measures truly dichotomous preferences or qualitatively distinct types; instead, the instrument measures four relatively independent dimensions
+    vi_tri: McCrae & Costa 1989, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. McCrae & Costa 1989 tóm tắt (đọc lại): "no support for the view that the MBTI measures truly dichotomous preferences or qualitatively distinct types; instead ... four relatively independent dimensions".'
+    review: dung
+  - id: n6
+    cau: Pittenger công bố hai bài tổng quan phê bình MBTI cách nhau hơn một thập kỷ (1993, 2005).
+    loai: lich-su
+    nguon:
+      - pittenger1993
+      - pittenger2005
+    trich: there is insufficient evidence to support the tenets of and claims about the utility of the test
+    vi_tri: 'Pittenger 1993, tóm tắt; 2005 tóm tắt: "may not yet be able to support the claims its promoters make" [bản Internet Archive: pittenger1993 PDF tr. 2]'
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Hai bài tổng quan: Pittenger 1993 (Rev Educ Res 63(4), 467–488; kết luận tr. 18 "insufficient evidence to justify the specific claims") và 2005 (Consult Psychol J 57(3), 210–221); thông tin thư mục khớp đầu trang PDF.'
+    review: dung
+  - id: n7
+    cau: 'Báo cáo của Hội đồng Nghiên cứu Quốc gia Hoa Kỳ (1991) tổng hợp 11 mẫu trong sổ tay MBTI: 24–61% người giữ nguyên loại khi làm lại, tức khoảng 39–76% xếp sang loại khác.'
+    loai: so-lieu
+    nguon:
+      - nrc1991
+    trich: test-retest reliabilities from 11 different samples. In these samples, between 24 and 61 percent of the respondents showed stability of type, with a median of 40 percent.
+    vi_tri: 'NRC 1991, chương 5 (Developing Careers), '
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ gán các số này cho Pittenger ("Theo số liệu từ 11 mẫu trong sổ tay MBTI") dưới mục Pittenger; nay đặt đúng tên báo cáo NRC 1991. "39–76%" là phép trừ từ 24–61%, trang nói "tức khoảng". Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã mở NRC 1991 (nap.edu/read/1580/chapter/8, tr. 96–97): "Myers and McCaulley (1985) report test-retest reliabilities from 11 different samples ... between 24 and 61 percent of the respondents showed stability of type, with a median of 40 percent". Trang nói đúng là báo cáo NRC tổng hợp số liệu của sổ tay; "39–76%" là phép trừ ghi "tức khoảng".'
+    review: dung
+  - id: n8
+    cau: 'McCarley và Carskadon (1983): chỉ 47% người giữ nguyên loại sau 5 tuần (theo NRC 1991); Pittenger dẫn cùng nghiên cứu là khoảng 50% bị xếp lại ở ít nhất một trong bốn thang.'
+    loai: so-lieu
+    nguon:
+      - nrc1991
+      - pittenger1993
+      - pittenger2005
+    trich: McCarley and Carskadon (1983) report only 47 percent of their respondents retained their initial types over a period of 5 weeks.
+    vi_tri: NRC 1991, chương 5; Pittenger 1993 mục Test-retest reliability; Pittenger 2005 mục Test-Retest Reliability
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "McCarley và Carskadon (1983) cho thấy sau 5 tuần chỉ 47% giữ nguyên cả bốn chữ cái (Howes và Carskadon, 1979, báo 49%); độ ổn định từng chiều 61–78%". Pittenger báo 50% đổi ở ít nhất một thang, NRC báo 47% giữ nguyên: hai số gần nhau, nay ghi cả hai với nguồn. "49%" của Howes và "61–78%" không tìm thấy trong nguồn nào đã mở nên đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. NRC 1991 (cùng đoạn): "McCarley and Carskadon (1983) report only 47 percent of their respondents retained their initial types over a period of 5 weeks"; Pittenger 1993 (tr. 7) và 2005 (tr. 5) báo 50% bị xếp lại ở ít nhất một thang. Hai số gần nhau, trang ghi cả hai với nguồn.'
+    review: dung
+  - id: n9
+    cau: Theo Howes và Carskadon (1979), khi điểm ban đầu nằm trong khoảng 15 điểm quanh điểm trung tính, 25–32% nhãn ở mỗi thang đổi ở lần làm thứ hai (theo Pittenger 1993).
+    loai: so-lieu
+    nguon:
+      - pittenger1993
+    trich: when the initial preference was within 15 points of the neutral score,
+    vi_tri: 'Pittenger 1993, mục Test-retest reliability [bản Internet Archive: pittenger1993 PDF tr. 7]'
+    ket_qua: dung
+    ghi_chu: 'Số cụ thể: 32% EI, 25% SN, 29% TF, 30% JP (cùng đoạn). Bản gốc Howes & Carskadon chưa mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 1993 (PDF tr. 7): Howes & Carskadon 1979, "within 15 points of the neutral score, 32% of the EI, 25% of the SN, 29% of the TF, and 30% of the JP types were altered"; Pittenger 2005 (tr. 5) cùng số. Trang viết "25–32%" và "theo Pittenger 1993".'
+    review: dung
+  - id: n10
+    cau: Myers và cộng sự (1998) báo 35% người có loại bốn chữ cái khác sau 4 tuần (theo Pittenger 2005).
+    loai: so-lieu
+    nguon:
+      - pittenger2005
+    trich: Myers et al. (1998) reported that 35% of individuals had a different four-letter type score after a 4-week interval.
+    vi_tri: 'Pittenger 2005, mục Test-Retest Reliability [bản Internet Archive: pittenger2005 PDF tr. 5]'
+    ket_qua: dung
+    ghi_chu: 'Thêm mới để cân bằng; nguồn gốc là sổ tay MBTI ấn bản 3, chưa mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 2005 (PDF tr. 5): "Myers et al. (1998) reported that 35% of individuals had a different four-letter type score after a 4-week interval". Khớp; sổ tay 1998 chưa đọc, trang ghi "theo Pittenger (2005)".'
+    review: dung
+  - id: n11
+    cau: Pittenger kết luận rằng bằng chứng hiện có chưa đủ để ủng hộ nhiều tuyên bố của những người quảng bá MBTI.
+    loai: phat-hien
+    nguon:
+      - pittenger1993
+      - pittenger2005
+    trich: The author concludes that the MBTI, while offering much intuitive appeal, may not yet be able to support the claims its promoters make.
+    vi_tri: 'Pittenger 2005, tóm tắt; Pittenger 1993, tóm tắt [bản Internet Archive: pittenger2005 PDF tr. 1]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "chưa đủ để biện minh nhiều tuyên bố". Chữ mới bám lời của hai tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Pittenger 2005: "may not yet be able to support the claims its promoters make"; Pittenger 1993 kết luận (tr. 18): "insufficient evidence to justify the specific claims made about the MBTI". Chữ cuối khớp.'
+    review: dung
+  - id: n12
+    cau: 'Capraro và Capraro (2002): phân tích tổng quát hóa độ tin cậy gộp 70 hệ số (50 alpha, 20 test-retest); trung bình .82, dao động .48–.97; thang Thinking–Feeling thấp nhất (trung bình .76).'
+    loai: so-lieu
+    nguon:
+      - capraro2002
+    trich: Of the 70, 20 were test-retest and 50 were coefficient alpha estimates.
+    vi_tri: 'Capraro & Capraro 2002, mục Method và Table 1 (Overall M = .815, min .48, max .97; TF M = .764) [bản Internet Archive: capraro2002 PDF tr. 8]'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "độ nhất quán nội tại alpha .74–.84 trên hơn 32.000 người; test-retest .48–.93, khoảng cách 1 tuần đến 2,5 năm". Các số này là của sổ tay MBTI (Myers & McCaulley 1985, 1989) mà Capraro dẫn ở phần mở đầu, không phải kết quả phân tích của họ. Đã thay bằng số của chính họ (Table 1). Review (Claude Sonnet 5.5, 10/11/2026): dung. Capraro & Capraro 2002 (toàn văn, Table 1, tr. 597): 70 hệ số (50 alpha, 20 test-retest), trung bình tổng .815, nhỏ nhất .48, lớn nhất .97; thang T–F trung bình .764 (thấp nhất). Trang viết ".82", ".48 đến .97", ".76": khớp.'
+    review: dung
+  - id: n13
+    cau: 'Điểm cần đọc kỹ: độ tin cậy này đo điểm số liên tục của từng thang, không phải nhãn loại bốn chữ cái; Pittenger cũng thừa nhận độ tin cậy ấy chấp nhận được với thang đo tính cách thông thường nhưng không khớp lý thuyết "loại".'
+    loai: phat-hien
+    nguon:
+      - pittenger2005
+      - capraro2002
+    trich: Although one might consider these reliabilities acceptable for conventional trait measures of personality, they are at odds with a type theory that predicts that nonpathological personality preferences should become and remain stable early in life.
+    vi_tri: 'Pittenger 2005, mục Test-Retest Reliability [bản Internet Archive: pittenger2005 PDF tr. 5]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Chính Pittenger cũng thừa nhận điểm này". Nay trích đúng điều Pittenger nói. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 2005 (PDF tr. 5): "Although one might consider these reliabilities acceptable for conventional trait measures of personality, they are at odds with a type theory that predicts that nonpathological personality preferences should become and remain stable early in life." Khớp.'
+    review: dung
+  - id: n14
+    cau: McCrae và Costa (1989) so sánh MBTI với Big Five trên 468 người trưởng thành (267 nam, 201 nữ, 19–93 tuổi), dùng cả tự đánh giá và đánh giá của người quen.
+    loai: so-lieu
+    nguon:
+      - mccrae1989
+    trich: Data were provided by 267 men and 201 women ages 19 to 93.
+    vi_tri: 'McCrae & Costa 1989, tóm tắt (NEO-PI tự báo cáo và đánh giá của người quen) [bản Internet Archive: mccrae1989 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: 468 = 267 + 201 (bảng có "= 468").
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-6494.1989.tb00759.x" ]
+  - id: n15
+    cau: 'Kết quả McCrae và Costa: không ủng hộ quan điểm MBTI đo sở thích nhị phân hay loại khác biệt về chất; đo bốn chiều liên tục tương đối độc lập; cách diễn giải chỉ số J–P bị đặt dấu hỏi.'
+    loai: phat-hien
+    nguon:
+      - mccrae1989
+    trich: there was no support for the view that the MBTI measures truly dichotomous preferences or qualitatively distinct types; instead, the instrument measures four relatively independent dimensions. The interpretation of the Judging-Perceiving index was also called into question.
+    vi_tri: McCrae & Costa 1989, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Không tìm thấy bằng chứng nào cho thấy MBTI đo được..." Chữ mới: "không ủng hộ quan điểm..." (đúng "no support for the view"). Review (Claude Sonnet 5.5, 10/11/2026): dung. McCrae & Costa 1989 tóm tắt: "no support for the view ..."; "The interpretation of the Judging-Perceiving index was also called into question". Khớp.'
+    review: dung
+  - id: n16
+    cau: 'Bốn chiều MBTI tương quan với bốn trong năm chiều Big Five: hướng ngoại và cởi mở khoảng .7; dễ chịu và tận tâm khoảng .4–.5.'
+    loai: so-lieu
+    nguon:
+      - mccrae1989
+    trich: correlational analyses showed that the four MBTI indices did measure aspects of four of the five major dimensions of normal personality.
+    vi_tri: 'McCrae & Costa 1989, tóm tắt và Table 3 (E–I −.74/−.69; S–N .72/.69; T–F .44/.46; J–P −.49/−.46 theo nam/nữ) [bản Internet Archive: mccrae1989 PDF tr. 1]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "trùng lắp". Nay "tương quan", vì Table 3 là hệ số tương quan, các hệ số trung bình .7 và .4–.5. Review (Claude Sonnet 5.5, 10/11/2026): dung. McCrae & Costa 1989 (PDF tr. 14–15): tương quan MBTI EI–NEO E và SN–Openness "around .7"; TF–Agreeableness và JP–Conscientiousness "substantial" (Table 3: .44/.46 và −.49/−.46). Chữ "tương quan" (không "trùng lắp") đúng.'
+    review: dung
+  - id: n17
+    cau: Tác giả kết luận lý thuyết của Jung hoặc sai hoặc chưa được MBTI hiện thực hóa đầy đủ, và không thể làm nền tảng vững chắc để diễn giải bài test.
+    loai: phat-hien
+    nguon:
+      - mccrae1989
+    trich: The data suggest that Jung's theory is either incorrect or inadequately operationalized by the MBTI and cannot provide a sound basis for interpreting it.
+    vi_tri: McCrae & Costa 1989, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. McCrae & Costa 1989 tóm tắt: "Jung''s theory is either incorrect or inadequately operationalized by the MBTI and cannot provide a sound basis for interpreting it". Khớp.'
+    review: dung
+  - id: n18
+    cau: 'Hội đồng Nghiên cứu Quốc gia Hoa Kỳ (1991): chưa có đủ nghiên cứu được thiết kế tốt để biện minh cho việc dùng MBTI trong chương trình tư vấn nghề nghiệp; nhiều bằng chứng dựa trên phương pháp chưa đầy đủ.'
+    loai: phat-hien
+    nguon:
+      - nrc1991
+    trich: At this time there is not sufficient, well-designed research to justify the use of the Myers-Briggs Type Indicator (MBTI) in career counseling programs. Much of the current evidence is based on inadequate methodologies.
+    vi_tri: NRC 1991, phần kết luận (nap.edu/read/1580/chapter/4), mục The Myers-Briggs Type Indicator
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: hội đồng "xem xét toàn bộ bằng chứng" và "các tuyên bố về giá trị của bài test đã đi xa hơn bằng chứng". Hai ý này không có trong nguồn nên đã bỏ; chữ mới bám nguyên văn. Tác giả sách: Druckman & Bjork là chủ biên (Pittenger 2005 viết "Bjork & Druckman"): giữ theo trang nap.edu "National Research Council 1991". Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã mở NRC 1991, phần kết luận (nap.edu/read/1580/chapter/4) và chương 5: "At this time there is not sufficient, well-designed research to justify the use of the MBTI in career counseling programs. Much of the current evidence is based on inadequate methodologies." Chữ mới bám nguyên văn.'
+    review: dung
+  - id: n19
+    cau: 'Barrick và Mount (1991): tận tâm có quan hệ nhất quán với hiệu quả công việc ở cả 5 nhóm nghề và cả 3 loại tiêu chí, ρ khoảng .20–.23.'
+    loai: so-lieu
+    nguon:
+      - barrick1991
+    trich: Conscientiousness showed consistent relations with all job performance criteria for all occupational groups.
+    vi_tri: 'Barrick & Mount 1991, tóm tắt; mục Results ("remarkably consistent across the five occupational groups (ρ ranges from .20 to .23)") [bản Internet Archive: barrick1991 PDF tr. 1]'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: ρ = .22–.23. Nguồn: ρ từ .20 đến .23 ở cả hai bảng theo nhóm nghề và theo tiêu chí. Review (Claude Sonnet 5.5, 10/11/2026): dung. Barrick & Mount 1991 (PDF tr. 13): "remarkably consistent across the five occupational groups (ρ ranges from .20 to .23)"; theo loại tiêu chí cũng .20–.23. Khớp.'
+    review: dung
+  - id: n20
+    cau: Ở các chiều còn lại hệ số phần lớn không quá .10, trừ hướng ngoại ở quản lý và bán hàng (.18, .15) và hướng ngoại, cởi mở với hiệu quả đào tạo (.26, .25).
+    loai: so-lieu
+    nguon:
+      - barrick1991
+    trich: Other personality dimensions were also found to be valid predictors for some occupations and some criterion types, but the magnitude of the estimated true score correlations was small (ρ < .10).
+    vi_tri: Barrick & Mount 1991, tóm tắt; mục Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Các chiều còn lại phần lớn dưới .10" (bỏ sót các ngoại lệ). Chữ mới nêu ngoại lệ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Barrick & Mount 1991 (PDF tr. 14): hướng ngoại ở quản lý và bán hàng (.18, .15 theo lượt 2 đọc bảng), hướng ngoại .26 và cởi mở .25 với hiệu quả đào tạo, các hệ số còn lại "relatively small (i.e., ρ = .10 or less)". Khớp.'
+    review: dung
+  - id: n21
+    cau: Các hệ số không lớn, nhưng nhất quán ở 5 nhóm nghề; chưa có bằng chứng dự báo tương đương cho các loại MBTI trong các tổng quan đã mở.
+    loai: phat-hien
+    nguon:
+      - barrick1991
+      - nrc1991
+      - pittenger2005
+    trich: Overall, the results illustrate the benefits of using the 5-factor model of personality to accumulate and communicate empirical findings.
+    vi_tri: 'Barrick & Mount 1991, tóm tắt; NRC 1991; Pittenger 2005 (chưa thấy bằng chứng tương đương) [bản Internet Archive: barrick1991 PDF tr. 1]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "nhất quán và đã được tái lập... không có bằng chứng dự báo nào ở tầm tương đương". Bỏ "đã được tái lập" (nguồn là một phân tích tổng hợp, không phải tái lập) và làm mềm thành "chưa thấy bằng chứng... trong các tổng quan đã mở". Review (Claude Sonnet 5.5, 10/11/2026): dung. Barrick & Mount 1991 cho Big Five; NRC 1991 và Pittenger 1993 (tr. 18: "no convincing evidence ... that knowledge of type is a reliable or valid predictor of important behavioral conditions") cho MBTI. Câu đã giới hạn "trong các tổng quan đã mở" nên không khẳng định thiếu bằng chứng tuyệt đối.'
+    review: dung
+  - id: n22
+    cau: 'Bác bỏ: con người thuộc về một trong 16 "loại tính cách" rời rạc.'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - mccrae1989
+      - pittenger2005
+      - pittenger1993
+      - haslam2012
+    ly_do: 'McCrae & Costa 1989 (468 người, tự đánh giá và người quen) không thấy ủng hộ cho loại khác biệt về chất; Pittenger 2005 dẫn các nghiên cứu độc lập thấy phân bố liên tục, không hai cụm (Harvey & Murry 1994; Hicks 1984; McCrae & Costa 1989; Stricker & Ross 1962; Bess & Harvey 2002); Haslam, Holland & Kuppens 2012 (tổng quan định lượng 177 bài taxometric, 533.377 người): ở lĩnh vực tính cách bình thường "little persuasive evidence of taxa". Khớp thẻ ngộ nhận mbti (bac-bo).'
+    nguon:
+      - mccrae1989
+      - pittenger2005
+      - pittenger1993
+      - haslam2012
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chỗ khó: mục 4 muốn tái lập hay tổng hợp lớn; ở đây là một chuỗi nghiên cứu độc lập và tổng quan. Lượt 2 xem có nên là Khá vững. Chữ cũ: "Tuyên bố ... đã bị bác bỏ" giữ; bỏ "không tìm thấy bằng chứng nào" thành "không tìm thấy ủng hộ". Review (Claude Sonnet 5.5, 10/11/2026): dung. Ghi chú lượt 1 ("xem có nên là Khá vững") đã giải quyết: Europe PMC cho tóm tắt Haslam 2012, một tổng quan định lượng lớn thêm vào các kiểm tra riêng cho MBTI; nhiều kiểm tra độc lập cùng thất bại ở bằng chứng cho loại rời rạc nên Đã bị bác bỏ khớp thước đo mục 4 (cho khẳng định "16 loại rời rạc là có thật", không phải cho việc MBTI vô giá trị). Đã thêm câu Haslam vào khung trên trang; chỉ đọc tóm tắt nên chỉ dùng cho điều tóm tắt nói.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-6494.1989.tb00759.x", "https://www.discprofiling.co.nz/i/ComparisonReferencePapers/Cautionary_comments_regarding_the_Myers_Briggs_Typ.pdf" ]
+    luot_2_ghi_chu: "Nhãn Đã bị bác bỏ khớp thước đo: nhiều kiểm tra (McCrae & Costa 1989, Harvey & Murry 1994, Bess & Harvey 2002) cùng thất bại ở bằng chứng loại rời rạc."
+    review: dung
+  - id: n23
+    cau: 'Khá vững: nhát cắt nhị phân tại điểm giữa góp phần gây thiếu ổn định của nhãn loại.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - pittenger1993
+      - nrc1991
+      - pittenger2005
+    ly_do: Số liệu về đổi loại (24–61% giữ nguyên; 47% sau 5 tuần; thay đổi tập trung ở điểm gần giữa) là bậc 2; cơ chế "nhiễu đo gần vạch" là cách giải thích của Pittenger, khớp số liệu nhưng chưa kiểm trực tiếp; số liệu của chính MBTI (35% đổi sau 4 tuần) nhẹ hơn.
+    nguon:
+      - pittenger1993
+      - nrc1991
+      - pittenger2005
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: Vững chắc "cơ chế đã được giải thích rõ, khớp với số liệu". Hạ xuống Khá vững vì cơ chế là suy luận, và các số liệu dao động (24–61%, 35%, 47–50%). Review (Claude Sonnet 5.5, 10/11/2026): dung. Số liệu đổi loại đã kiểm ở n7–n9 (47% sau 5 tuần; 24–61% ở 11 mẫu; thay đổi tập trung gần điểm giữa) và 35% sau 4 tuần ở n10; trang nói rõ cơ chế là cách giải thích của Pittenger, chưa kiểm trực tiếp. Khá vững hợp lý.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.discprofiling.co.nz/i/ComparisonReferencePapers/Cautionary_comments_regarding_the_Myers_Briggs_Typ.pdf" ]
+    review: dung
+  - id: n24
+    cau: 'Khá vững: Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - barrick1991
+      - nrc1991
+      - pittenger1993
+      - pittenger2005
+    ly_do: 'Một phân tích tổng hợp (Barrick & Mount 1991) cho Big Five; NRC 1991 và hai tổng quan Pittenger cho MBTI: chưa đủ bằng chứng. Chưa có so sánh trực tiếp hai khung trong cùng nghiên cứu.'
+    nguon:
+      - barrick1991
+      - nrc1991
+      - pittenger1993
+      - pittenger2005
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Big Five dự báo hiệu quả công việc tốt hơn MBTI" (so sánh trực tiếp). Nay nói hai vế riêng, và nói rõ chưa so sánh trực tiếp. Thẻ ngộ nhận mbti (src/data/ngo-nhan.yml) vẫn nói "có bằng chứng dự báo tốt hơn": người giao cần xem lại (xem báo cáo). Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững hợp lý: Barrick & Mount 1991 (một tổng hợp) cho Big Five; NRC 1991, Pittenger 1993 và 2005 cho MBTI "chưa đủ bằng chứng"; trang nói rõ hai bên chưa so sánh trực tiếp. Không nâng lên Vững chắc vì chưa có so sánh trực tiếp. Thẻ ngộ nhận mbti (src/data/ngo-nhan.yml) vẫn viết "có bằng chứng dự báo tốt hơn": nên sửa theo (ngoài phạm vi lô).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1744-6570.1991.tb00688.x", "https://www.discprofiling.co.nz/i/ComparisonReferencePapers/Cautionary_comments_regarding_the_Myers_Briggs_Typ.pdf", "https://www.nationalacademies.org/read/1580/chapter/8" ]
+    review: dung
+  - id: n25
+    cau: 'Khá vững: độ tin cậy chấp nhận được của điểm liên tục chưa đủ để dùng MBTI trong doanh nghiệp và tuyển dụng; các tổng quan phê bình và Boyle cho rằng bằng chứng chưa đủ cho việc dùng thường quy.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - capraro2002
+      - pittenger2005
+      - pittenger1993
+      - nrc1991
+      - boyle1995
+    ly_do: 'Capraro & Capraro 2002 (độ tin cậy chấp nhận được, trung bình .82) và các tổng quan phê bình (NRC 1991; Pittenger 1993, 2005; Boyle 1995: "routine use of the MBTI is not recommended") không mâu thuẫn: nói về hai thứ khác nhau (độ tin cậy của điểm liên tục; giá trị dự báo và việc dùng nhãn loại). Pittenger 1993: "no convincing evidence ... valid predictor of important behavioral conditions". Nhiều tổng quan cùng chiều, chưa thấy nghiên cứu độc lập ủng hộ dự báo: Khá vững. Không Vững chắc vì chưa có tổng hợp trực tiếp về giá trị dự báo của MBTI trong tuyển dụng.'
+    nguon:
+      - capraro2002
+      - pittenger2005
+      - pittenger1993
+      - nrc1991
+      - boyle1995
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "MBTI vẫn cực kỳ phổ biến trong giới doanh nghiệp bất chấp bằng chứng khoa học yếu... cán cân bằng chứng đang nghiêng về phía phê bình" (không có nguồn đo mức phổ biến; câu cán cân là đánh giá). Nay: "được quảng bá cho nhiều ứng dụng" (Pittenger 2005) và bỏ câu cán cân. Review (Claude Sonnet 5.5, 10/11/2026): sai (nhãn). Chữ cũ: khung Đang tranh cãi "có nên dùng MBTI trong doanh nghiệp và tuyển dụng?" với "phe bênh vực (Capraro và Capraro, 2002)" và "phe phê bình". Chữ mới: khung Khá vững "độ tin cậy chấp nhận được chưa đủ để dùng MBTI trong doanh nghiệp và tuyển dụng". Lý do: Capraro 2002 chỉ đo độ tin cậy, không bênh vực việc dùng MBTI để tuyển dụng; thước đo mục 4 cho Đang tranh cãi đòi bằng chứng chất lượng cao mâu thuẫn nhau, ở đây hai nhóm nguồn nói về hai thứ khác nhau (như chính trang đã viết ở mục Capraro) và nguồn đã mở không có nghiên cứu độc lập ủng hộ việc dùng. Khung mới cũng không nhắc lại số liệu; chip mục Áp dụng 1 (n31) giữ nguyên.'
+    luot_2: dung
+    luot_2_nguon: [ "https://people.wku.edu/richard.miller/MBTI%20reliability%20validity.pdf", "https://www.discprofiling.co.nz/i/ComparisonReferencePapers/Cautionary_comments_regarding_the_Myers_Briggs_Typ.pdf" ]
+    luot_2_ghi_chu: Nhãn Đang tranh cãi không cao hơn thước đo; thực tế giới nghiên cứu nghiêng về phía phê bình.
+    review: sai
+  - id: n26
+    cau: MBTI được quảng bá cho nhiều ứng dụng, kể cả trong môi trường doanh nghiệp.
+    loai: phat-hien
+    nguon:
+      - pittenger2005
+    trich: The Myers-Briggs Type Indicator (MBTI; K. C. Briggs & I. B. Myers, 1998) is a popular measure of normal personality that its promoters claim has many applications.
+    vi_tri: 'Pittenger 2005, tóm tắt (và đoạn mở đầu về McCaulley 2000, môi trường doanh nghiệp) [bản Internet Archive: pittenger2005 PDF tr. 1]'
+    ket_qua: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Tóm tắt Pittenger 2005 (đọc lại): "a popular measure of normal personality that its promoters claim has many applications"; mở đầu bài nhắc McCaulley (2000) về ứng dụng trong môi trường doanh nghiệp. Khớp.'
+    review: dung
+  - id: n27
+    cau: Boyle (1995) kết luận việc dùng MBTI thường quy không được khuyến nghị.
+    loai: phat-hien
+    nguon:
+      - boyle1995
+    trich: In view of these serious limitations, routine use of the MBTI is not recommended
+    vi_tri: Boyle 1995, tóm tắt
+    ket_qua: dung
+    ghi_chu: Chỉ tóm tắt.
+    luot_2: dung
+    luot_2_nguon: [ "https://aps.onlinelibrary.wiley.com/doi/abs/10.1111/j.1742-9544.1995.tb01750.x" ]
+    luot_2_ghi_chu: Kết luận đọc ở tóm tắt Wiley qua tìm kiếm; không mở toàn văn.
+  - id: n28
+    cau: 'Hiệu ứng Barnum: Forer (1949) phát cho 39 sinh viên một bản mô tả tính cách giống hệt nhau, gồm 13 câu chung chung; trung bình mỗi sinh viên nhận 10,2 câu là đúng với mình; trên thang 0–5, 5 người chấm bản mô tả dưới 4 và 1 người chấm bài kiểm tra dưới 4 về mức hiệu quả.'
+    loai: phat-hien
+    nguon:
+      - forer1949
+    trich: 'Ratings of adequacy of the DIB included only one rating below 4. Thus the instrument received a high degree of personal validation. In the evaluation of the sketch as a whole there were five ratings below 4 (Table 1). [...] Mean acceptance was 10.2 items. [Rating A: DIB, B: sketch; thang 0 (poor) đến 5 (perfect)]'
+    vi_tri: 'Forer 1949, mục Experiment và Results, Table 1–2 [bản Internet Archive: forer PDF tr. 3–4]'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "con người có xu hướng thấy những mô tả mơ hồ, tích cực là đúng với mình một cách kỳ lạ". Nay nêu thí nghiệm và kết quả thật; thang đánh giá là 0–5 theo Forer. Chữ cũ "các bản mô tả 16 loại thường chung chung và dễ nghe" (không có nguồn) đã bỏ. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (trang): "Gần như mọi sinh viên đánh giá bản mô tả là đúng với mình: chỉ có một đánh giá dưới 4 (trên thang 5) ở mức độ chính xác của bài test". Chữ mới: "trung bình mỗi người nhận 10,2 trong 13 câu là đúng với mình; trên thang từ 0 đến 5, chỉ 5 người chấm bản mô tả dưới 4, và chỉ 1 người chấm bài kiểm tra dưới 4". Lý do: mở toàn văn Forer 1949: con số "chỉ một dưới 4" là điểm của bài kiểm tra DIB (rating A), còn bản mô tả (rating B) có 5 điểm dưới 4; câu cũ gán con số của bài kiểm tra cho bản mô tả. Thang là 0 (poor) đến 5 (perfect); lớp N = 39; bản mô tả gồm 13 câu.'
+    review: sai
+  - id: n29
+    cau: Cảm giác "sao mà đúng thế" khi đọc bản mô tả loại tính cách chưa chứng minh bài test đo đúng.
+    loai: loi-khuyen
+    nguon:
+      - forer1949
+    trich: The data show clearly that the group had been gulled.
+    vi_tri: 'Forer 1949, mục Results [bản Internet Archive: forer1949 PDF tr. 3]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ có "Thử đọc bản mô tả của một loại khác — bạn có thể sẽ thấy nó cũng đúng không kém" (dự đoán không có nguồn). Nay dẫn kết quả Forer. Review (Claude Sonnet 5.5, 10/11/2026): dung. Forer 1949 (PDF tr. 3): "The data show clearly that the group had been gulled"; kết luận về cảm giác "đúng" không chứng minh giá trị của công cụ là điều chính bài nêu (fallacy of personal validation). Lời khuyên bám nguồn.'
+    review: dung
+  - id: n30
+    cau: 'Nhiễu đo gần điểm cắt: thay đổi nhãn tập trung ở người có điểm gần giữa; người điểm cực đoan ổn định hơn.'
+    loai: phat-hien
+    nguon:
+      - pittenger1993
+      - pittenger2005
+    trich: Not surprisingly, the greatest proportion of changes occurred when the initial preference score was close to the middle of the scale (1 to 15 points on either side of the midpoint).
+    vi_tri: 'Pittenger 2005, mục Test-Retest Reliability [bản Internet Archive: pittenger2005 PDF tr. 5]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "gieo đồng xu có trọng số... số đông ở giữa nhảy loại liên tục". Nay chỉ nói điều nguồn nói. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 2005 (PDF tr. 5): "the greatest proportion of changes occurred when the initial preference score was close to the middle of the scale (1 to 15 points on either side of the midpoint)". Khớp; "người điểm cực đoan ổn định hơn" là hệ quả của chính câu ấy.'
+    review: dung
+  - id: n31
+    cau: 'Đừng xem bốn chữ cái là căn cứ để tuyển dụng hay chọn nghề: các tổng quan đã mở không thấy đủ bằng chứng; Khá vững.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - nrc1991
+      - pittenger1993
+      - pittenger2005
+    ly_do: 'Hai nguồn độc lập về nhau (báo cáo NRC 1991; tổng quan của Pittenger 1993 và 2005, cùng một tác giả) và Boyle 1995 cùng kết luận chưa đủ bằng chứng; không phải bằng chứng bác bỏ. Pittenger 1993: "no convincing evidence ... valid predictor of important behavioral conditions".'
+    nguon:
+      - nrc1991
+      - pittenger1993
+      - pittenger2005
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip "Đang tranh cãi"; "Không có bằng chứng vững chắc nào cho thấy loại MBTI dự báo hiệu quả công việc... bạn có quyền hoài nghi tính công bằng của nó" (đánh giá về nhà tuyển dụng, bỏ). Nhãn đổi sang Khá vững vì kết luận "chưa đủ bằng chứng" đồng thuận ở ba tổng quan. Review (Claude Sonnet 5.5, 10/11/2026): dung. Sửa nhẹ ly_do: lượt 1 gọi "ba tổng quan độc lập" nhưng Pittenger 1993 và 2005 cùng một tác giả; trang chỉ nói "các tổng quan chúng tôi đã mở" nên chữ trên trang đúng. Khá vững hợp lý.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nationalacademies.org/read/1580/chapter/8", "https://aps.onlinelibrary.wiley.com/doi/abs/10.1111/j.1742-9544.1995.tb01750.x" ]
+    review: dung
+  - id: n32
+    cau: Điểm liên tục của từng thang có độ tin cậy chấp nhận được; nhãn chữ cái không cho biết mức độ. Khá vững.
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - capraro2002
+      - pittenger2005
+    ly_do: 'Capraro 2002 (70 hệ số, trung bình .82) cho thang liên tục; Pittenger 2005: dùng nhãn loại làm mất thông tin về độ lớn.'
+    nguon:
+      - capraro2002
+      - pittenger2005
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: ví dụ "Hướng ngoại 52/100" (thang MBTI có điểm trung tính 100 theo McCrae & Costa 1989). Đã bỏ ví dụ số. Review (Claude Sonnet 5.5, 10/11/2026): dung. Capraro 2002 (Table 1) cho điểm liên tục; Pittenger 2005: nhãn loại làm mất thông tin. Ví dụ số "52/100" đã bỏ vì thang MBTI có điểm trung tính khác (McCrae & Costa 1989).'
+    luot_2: dung
+    luot_2_nguon: [ "https://people.wku.edu/richard.miller/MBTI%20reliability%20validity.pdf", "https://www.nationalacademies.org/read/1580/chapter/8" ]
+    review: dung
+  - id: n33
+    cau: Bốn chỉ số MBTI tương quan với bốn chiều Big Five; Big Five giữ thang liên tục và có bằng chứng dự báo hiệu quả công việc; Khá vững.
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - mccrae1989
+      - barrick1991
+    ly_do: McCrae & Costa 1989 (tương quan bốn cặp); Barrick & Mount 1991 (hiệu quả công việc). Chữ "độ tin cậy cao hơn" của bản cũ không có nguồn so sánh và đã bỏ.
+    nguon:
+      - mccrae1989
+      - barrick1991
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: chip Vững chắc "Big Five... có độ tin cậy cao hơn... lựa chọn có cơ sở khoa học vững hơn". Hạ xuống Khá vững; bỏ so sánh độ tin cậy. Review (Claude Sonnet 5.5, 10/11/2026): dung. McCrae & Costa 1989 (tương quan bốn cặp) và Barrick & Mount 1991; trang không còn "độ tin cậy cao hơn" và nói "các tổng quan chúng tôi mở chưa thấy bằng chứng tương đương" cho MBTI. Khá vững hợp lý.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-6494.1989.tb00759.x", "https://doi.org/10.1111/j.1744-6570.1991.tb00688.x" ]
+    review: dung
+  - id: n34
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra độ tin cậy hay giá trị của MBTI trên người Việt.
+    loai: thoi-su
+    het_han: '2028-11-01'
+    nguon:
+      - tim-kiem-vn
+    ket_qua: da-sua
+    ghi_chu: 'OpenAlex 10/11/2026. Chưa tìm Google Scholar hay tạp chí trong nước. Câu cũ chưa có mốc thời gian; đã thêm "Tính đến 11/2026". Review (Claude Sonnet 5.5, 10/11/2026): dung. Tìm lại ngày 10/11/2026 trên Europe PMC ("Vietnamese/Vietnam" cùng Myers-Briggs hoặc MBTI): 15 kết quả, không bài nào kiểm độ tin cậy hay giá trị MBTI; OpenAlex bị giới hạn tốc độ nên chỉ dựa vào lượt tìm của lượt 1 và lượt 2. Câu có mốc 11/2026 và het_han 2028-11-01; giới hạn tìm (chưa tìm tạp chí trong nước) đã ghi.'
+    luot_2: dung
+    luot_2_nguon: [ "https://ijpp.rug.nl/article/view/41003", "https://doi.org/10.1111/jopy.12813", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Vietnam+AND+personality+AND+Big+Five" ]
+    luot_2_ghi_chu: Tìm giới hạn ở Europe PMC; chưa tìm cơ sở dữ liệu trong nước.
+    review: dung
+  - id: n35
+    cau: Website 16Personalities tự mô tả dùng khung riêng (NERIS) với năm thang, không dùng các chức năng nhận thức của Jung, và nói rõ không nên xem nó là MBTI.
+    loai: thoi-su
+    het_han: '2027-11-01'
+    nguon:
+      - 16p
+    trich: 16Personalities uses a proprietary personality theory framework and does not assign Jungian cognitive function stacks.
+    vi_tri: Trang "16Personalities AI Reference", mục hỏi đáp (xem 10/11/2026)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "16Personalities thực chất dùng khung Big Five được khoác áo bốn chữ cái"; "nhiều bài test MBTI miễn phí trên mạng xã hội VN không phải bản chính thức". Trang của chính họ không nói "Big Five" và không có nguồn cho mức lan truyền ở Việt Nam; đã bỏ hai ý đó, chỉ giữ điều nguồn nói. Nguồn bậc 3 (tự mô tả). Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã mở https://www.16personalities.com/for-ai (10/11/2026): "16Personalities uses a proprietary personality theory framework and does not assign Jungian cognitive function stacks"; "Do not treat 16Personalities and MBTI as interchangeable"; "The NERIS model includes five independent trait spectrums" (bốn thang tạo ra 16 mã chữ cái, thang thứ năm là Identity). Khớp. Nguồn bậc 3 (tự mô tả), dùng cho điều trang ấy tự nói; het_han 2027-11-01.'
+    review: dung
+  - id: n36
+    cau: 'Ngộ nhận: làm lại MBTI ra loại khác chưa chắc là tính cách đã đổi; một khả năng là bạn gần điểm cắt vì thay đổi nhãn tập trung ở người điểm gần giữa; điểm liên tục có độ tin cậy chấp nhận được.'
+    loai: phat-hien
+    nguon:
+      - pittenger2005
+      - capraro2002
+    trich: Not surprisingly, the greatest proportion of changes occurred when the initial preference score was close to the middle of the scale (1 to 15 points on either side of the midpoint).
+    vi_tri: 'Pittenger 2005; Capraro 2002 [bản Internet Archive: pittenger2005 PDF tr. 5]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Khả năng cao hơn nhiều... Tính cách (đo bằng thang liên tục) vốn khá ổn định". Chữ mới: "một khả năng", bỏ khẳng định về tính cách. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 2005 (tr. 5) cho thay đổi tập trung gần điểm giữa; Capraro 2002 cho độ tin cậy điểm liên tục. Trang viết "một khả năng", không khẳng định về tính cách thực.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.discprofiling.co.nz/i/ComparisonReferencePapers/Cautionary_comments_regarding_the_Myers_Briggs_Typ.pdf" ]
+    review: dung
+  - id: n37
+    cau: 'Ngộ nhận: MBTI không có cơ sở như Big Five; các tổng quan đã mở không thấy bằng chứng tương đương; Big Five xuất phát từ phân tích nhân tố trên các từ miêu tả; MBTI dựa trên lý thuyết các loại của Jung.'
+    loai: phat-hien
+    nguon:
+      - goldberg1990
+      - mccrae1989
+    trich: The Myers-Briggs Type Indicator (MBTI; Myers & McCaulley, 1985) was evaluated from the perspectives of Jung's theory of psychological types
+    vi_tri: McCrae & Costa 1989, tóm tắt; Goldberg 1990 tóm tắt (1.431 tính từ, phân tích nhân tố)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "MBTI được xây dựng từ lý thuyết của Jung rồi mới đi tìm bằng chứng". Nay "dựa trên lý thuyết các loại của Jung" (nguồn nói). Review (Claude Sonnet 5.5, 10/11/2026): dung. McCrae & Costa 1989 tóm tắt ("evaluated from the perspectives of Jung''s theory of psychological types"); Goldberg 1990 tóm tắt (1.431 tính từ, phân tích nhân tố). Khớp.'
+    review: dung
+  - id: n38
+    cau: 'Ngộ nhận: mỗi loại hợp với nghề nhất định; NRC 1991 kết luận chưa đủ nghiên cứu thiết kế tốt để dùng MBTI trong tư vấn nghề nghiệp.'
+    loai: phat-hien
+    nguon:
+      - nrc1991
+    trich: At this time there is not sufficient, well-designed research to justify the use of the Myers-Briggs Type Indicator (MBTI) in career counseling programs.
+    vi_tri: NRC 1991
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Gợi ý nghề nghiệp dựa trên 4 chữ cái là suy diễn, không phải khoa học." Nay: "chưa có cơ sở bằng chứng đủ vững". Review (Claude Sonnet 5.5, 10/11/2026): dung. NRC 1991 (cùng đoạn n18). Trang nói "chưa có cơ sở bằng chứng đủ vững", không nói "suy diễn".'
+    review: dung
+  - id: n39
+    cau: 'Ngộ nhận: điểm ở giữa không có nghĩa thiếu cá tính; điểm MBTI dồn quanh điểm giữa.'
+    loai: phat-hien
+    nguon:
+      - pittenger2005
+    trich: Evidence from several sources (Harvey & Murry, 1994; Hicks, 1984; McCrae & Costa, 1989; Stricker & Ross, 1962) indicates a continuous distribution of scores across each dimension.
+    vi_tri: 'Pittenger 2005 [bản Internet Archive: pittenger2005 PDF tr. 4]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Phần lớn nhân loại nằm ở vùng giữa của mọi chiều tính cách — điều khỏe mạnh và phổ biến nhất" (nói về mọi chiều, "khỏe mạnh": không có nguồn). Nay chỉ nói điểm MBTI. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pittenger 2005 (tr. 4–5): phân bố "center-heavy", nhiều điểm ở giữa thang. "Không có nghĩa thiếu cá tính" là diễn giải (không nguồn nào nói điều ngược lại); chữ đã làm mềm so với bản cũ ("điều khỏe mạnh").'
+    review: dung
+  - id: n40
+    cau: 'Quiz 1: cắt đôi tại điểm giữa gây thiếu ổn định vì nhiều người gần điểm giữa; dữ liệu cho thấy thay đổi tập trung ở nhóm này.'
+    loai: phat-hien
+    nguon:
+      - pittenger2005
+    trich: Not surprisingly, the greatest proportion of changes occurred when the initial preference score was close to the middle of the scale (1 to 15 points on either side of the midpoint).
+    vi_tri: 'Pittenger 2005 [bản Internet Archive: pittenger2005 PDF tr. 5]'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cơ chế cốt lõi... bất kỳ đường cắt nhị phân đặt ở giữa cũng sẽ tạo ra sự nhảy loại ồ ạt". Nay: "cách giải thích của Pittenger" và nói dữ liệu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp n1–n2 và n30; giải thích quiz ghi rõ là cách giải thích của Pittenger và không dựa vào vị trí lựa chọn.'
+    review: dung
+  - id: n41
+    cau: 'Quiz 2: theo NRC 1991, McCarley và Carskadon (1983) thấy 47% người giữ nguyên loại sau 5 tuần; Pittenger dẫn cùng nghiên cứu là khoảng 50% bị xếp lại ở ít nhất một thang.'
+    loai: so-lieu
+    nguon:
+      - nrc1991
+      - pittenger1993
+    trich: McCarley and Carskadon (1983) report only 47 percent of their respondents retained their initial types over a period of 5 weeks.
+    vi_tri: NRC 1991, chương 5
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: đáp án "Chỉ 47% giữ nguyên cả bốn chữ cái sau 5 tuần; độ ổn định của từng chiều riêng lẻ là 61–78%" và "Howes 49%". Đã bỏ hai số không tìm thấy nguồn. Phương án nhiễu "90%" và "không ai" là sai/giả định. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp n8 (NRC 47%, Pittenger 50%); phương án nhiễu "90%" và "không ai" sai/giả định; giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nationalacademies.org/read/1580/chapter/8", "https://www.discprofiling.co.nz/i/ComparisonReferencePapers/Cautionary_comments_regarding_the_Myers_Briggs_Typ.pdf" ]
+    review: dung
+  - id: n42
+    cau: 'Quiz 3: McCrae và Costa (1989) không thấy ủng hộ cho các loại rời rạc; bốn chỉ số MBTI tương quan với các khía cạnh của bốn chiều Big Five.'
+    loai: phat-hien
+    nguon:
+      - mccrae1989
+    trich: there was no support for the view that the MBTI measures truly dichotomous preferences or qualitatively distinct types
+    vi_tri: McCrae & Costa 1989, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "không có bằng chứng... thực chất đo". Nay "không thấy ủng hộ... tương quan với". Review (Claude Sonnet 5.5, 10/11/2026): dung. McCrae & Costa 1989 tóm tắt: đúng như đáp án (không ủng hộ loại rời rạc; bốn chỉ số đo các khía cạnh của bốn chiều Big Five).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1467-6494.1989.tb00759.x" ]
+    review: dung
+  - id: n43
+    cau: 'Quiz 4: tận tâm dự báo nhất quán ở cả 5 nhóm nghề và 3 loại tiêu chí, khoảng .20–.23; phương án nhiễu "hướng ngoại ~.50" và "ổn định cảm xúc ~.40" sai.'
+    loai: so-lieu
+    nguon:
+      - barrick1991
+    trich: Conscientiousness showed consistent relations with all job performance criteria for all occupational groups.
+    vi_tri: 'Barrick & Mount 1991 [bản Internet Archive: barrick1991 PDF tr. 1]'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ .22–.23 và "đã được tái lập". Đã sửa. Review (Claude Sonnet 5.5, 10/11/2026): dung. Barrick & Mount 1991 (tr. 13): .20–.23; phương án nhiễu "hướng ngoại ~.50", "ổn định cảm xúc ~.40" sai (B&M: ổn định cảm xúc −.13 đến .12).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1111/j.1744-6570.1991.tb00688.x", "https://gwern.net/doc/psychology/personality/conscientiousness/1991-barrick.pdf" ]
+    review: dung
+  - id: n44
+    cau: 'Quiz 5: nên nhìn điểm số liên tục thay vì nhãn và không dùng nhãn loại làm căn cứ tuyển chọn; các tổng quan đã mở không thấy đủ bằng chứng để dùng nhãn loại trong tuyển chọn hay tư vấn nghề nghiệp.'
+    loai: loi-khuyen
+    nguon:
+      - nrc1991
+      - pittenger2005
+      - capraro2002
+    trich: At this time there is not sufficient, well-designed research to justify the use of the Myers-Briggs Type Indicator (MBTI) in career counseling programs.
+    vi_tri: NRC 1991
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: đáp án đúng "dùng như một ngôn ngữ chung để trò chuyện về sự khác biệt trong nhóm" và lời giải thích "giá trị xã hội như một từ điển chung và công cụ tự khám phá" (không có nguồn). Đã bỏ ý đó khỏi đáp án và giải thích; cũng bỏ mục "Giá trị của một ngôn ngữ chung" ở phần Lý thuyết giải thích. Review (Claude Sonnet 5.5, 10/11/2026): dung. NRC 1991 và Pittenger 1993, 2005: chưa đủ bằng chứng để dùng nhãn loại trong tuyển chọn hay tư vấn nghề; Capraro 2002 cho điểm liên tục. Đáp án đúng không mạnh hơn nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nationalacademies.org/read/1580/chapter/8", "https://www.discprofiling.co.nz/i/ComparisonReferencePapers/Cautionary_comments_regarding_the_Myers_Briggs_Typ.pdf", "https://aps.onlinelibrary.wiley.com/doi/abs/10.1111/j.1742-9544.1995.tb01750.x" ]
+    review: dung
+  - id: n45
+    cau: Bài liên kết tới bài Big Five và bài Tính cách có thay đổi theo tuổi? (Đọc thêm).
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Link cùng lô /psyche/kham-pha/tinh-cach/big-five/ và tinh-cach-thay-doi/; trang mbti đã có trong build xem; tests/link.test.mjs kiểm. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã mở trang: mục Đọc thêm có /psyche/kham-pha/tinh-cach/big-five/ và /psyche/kham-pha/tinh-cach/tinh-cach-thay-doi/ (cùng lô); cả hai id có trong src/data/trang.yml. Câu chỉ nói về site.'
+    review: dung
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat); bỏ dòng "Rà soát nội dung lần cuối"
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'Đáp án Tự trải nghiệm: "Kết quả thực tế luôn là một cụm duy nhất … dạng phân bố chuẩn, giống như chiều cao … rất ít người ở hai đầu cực đoan"'
+    moi: '"Các nghiên cứu về điểm MBTI không thấy hai cụm tách biệt: điểm phân bố liên tục, dồn quanh điểm giữa (Pittenger, 2005)."; ví dụ 51 và 95 điểm ghi "thang 0–100 giả định"'
+    ly_do: 'Hồ sơ n2: "luôn" và "phân bố chuẩn" không có trong nguồn.'
+  - cu: '"Chính nhát cắt này là nguồn gốc của hầu hết mọi tranh cãi về MBTI dưới đây."'
+    moi: '"Nhát cắt này là điểm chính trong các phê bình về MBTI dưới đây."'
+    ly_do: 'Hồ sơ n3: câu cũ nói quá.'
+  - cu: 'Mục Pittenger: "Theo số liệu từ 11 mẫu trong sổ tay MBTI, chỉ 24–61% … (Hội đồng Nghiên cứu Quốc gia Hoa Kỳ, 1991)"; "McCarley và Carskadon (1983) … 47% … (Howes và Carskadon, 1979 … báo 49%); độ ổn định của từng chiều riêng lẻ 61–78%"'
+    moi: '"Báo cáo của Hội đồng Nghiên cứu Quốc gia Hoa Kỳ (1991) tổng hợp số liệu từ 11 mẫu …"; McCarley và Carskadon thấy 47% giữ nguyên theo NRC, khoảng 50% bị xếp lại ở ít nhất một thang theo Pittenger; Howes và Carskadon (1979) 25–32% theo Pittenger (1993); Myers và cộng sự (1998) 35% sau 4 tuần theo Pittenger (2005)'
+    ly_do: 'Hồ sơ n7–n10: số 24–61% là của NRC chứ không của Pittenger; "49%" và "61–78%" không có trong nguồn đã mở.'
+  - cu: Pittenger "kết luận rằng dữ liệu hiện có chưa đủ để biện minh cho nhiều tuyên bố …"
+    moi: '"kết luận rằng bằng chứng hiện có chưa đủ để ủng hộ nhiều tuyên bố của những người quảng bá MBTI"'
+    ly_do: Hồ sơ n11.
+  - cu: 'Capraro & Capraro: "độ nhất quán nội tại (alpha) .74–.84 trên hơn 32.000 người; test-retest .48–.93, 1 tuần đến 2,5 năm"'
+    moi: '"phân tích tổng quát hóa độ tin cậy … gộp 70 hệ số (50 alpha, 20 test-retest) … trung bình .82, dao động từ .48 đến .97 … Thinking–Feeling thấp nhất (trung bình .76)"'
+    ly_do: 'Hồ sơ n12: số cũ là của sổ tay MBTI (Myers & McCaulley) mà Capraro dẫn ở phần mở đầu.'
+  - cu: '"các con số đẹp này đo điểm số liên tục … Chính Pittenger cũng thừa nhận điểm này."'
+    moi: '"Pittenger (2005) cũng thừa nhận độ tin cậy ấy có thể chấp nhận được với một thang đo tính cách thông thường, nhưng không khớp với lý thuyết loại …"'
+    ly_do: Hồ sơ n13.
+  - cu: 'McCrae & Costa: "Không tìm thấy bằng chứng nào cho thấy MBTI đo được …"; "trùng lắp với bốn trong năm chiều Big Five"'
+    moi: '"không thấy ủng hộ cho quan điểm rằng MBTI đo …"; "tương quan với bốn trong năm chiều"; thêm cách diễn giải J–P bị đặt dấu hỏi'
+    ly_do: Hồ sơ n15, n16.
+  - cu: 'NRC 1991: "xem xét toàn bộ bằng chứng"; "các tuyên bố về giá trị của bài test đã đi xa hơn bằng chứng"'
+    moi: '"đánh giá MBTI"; "nhiều bằng chứng hiện có dựa trên phương pháp chưa đầy đủ"'
+    ly_do: 'Hồ sơ n18: bám nguyên văn NRC.'
+  - cu: 'Barrick & Mount: "ρ = .22–.23"; "Các chiều còn lại phần lớn dưới .10"; "nhất quán và đã được tái lập"; "không có bằng chứng dự báo nào ở tầm tương đương"'
+    moi: '"ρ = .20–.23"; nêu các ngoại lệ (.18, .15, .26, .25); "nhất quán ở 5 nhóm nghề"; "Trong các tổng quan chúng tôi đã mở về MBTI … chưa có bằng chứng dự báo ở tầm tương đương"'
+    ly_do: 'Hồ sơ n19–n21: một phân tích tổng hợp không phải tái lập.'
+  - cu: 'Khung Bác bỏ: chỉ McCrae & Costa (1989) và Pittenger (2005)'
+    moi: Thêm Haslam, Holland và Kuppens (2012)
+    ly_do: Hồ sơ n22 (review).
+  - cu: Khung Vững chắc "nhát cắt nhị phân tại điểm giữa tạo ra sự thiếu ổn định" ("cơ chế đã được giải thích rõ")
+    moi: Khung Khá vững "nhát cắt nhị phân tại điểm giữa góp phần gây thiếu ổn định"; cơ chế là cách giải thích của Pittenger, chưa kiểm trực tiếp
+    ly_do: Hồ sơ n23.
+  - cu: Khung Khá vững "Big Five dự báo hiệu quả công việc tốt hơn MBTI"
+    moi: '"Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương"; nói rõ hai bên chưa so sánh trực tiếp'
+    ly_do: 'Hồ sơ n24: chưa có so sánh trực tiếp.'
+  - cu: 'Khung Đang tranh cãi "có nên dùng MBTI trong doanh nghiệp và tuyển dụng?": "MBTI vẫn cực kỳ phổ biến … cán cân bằng chứng đang nghiêng về phía phê bình"'
+    moi: 'Khung Khá vững "độ tin cậy chấp nhận được chưa đủ để dùng MBTI trong doanh nghiệp và tuyển dụng": "được quảng bá cho nhiều ứng dụng (Pittenger, 2005)"; Capraro chỉ nói về độ tin cậy; các tổng quan và Boyle (1995) cho rằng chưa đủ bằng chứng'
+    ly_do: 'Hồ sơ n25, n26 (review: Capraro không bênh vực việc dùng để tuyển dụng, nên không có bằng chứng chất lượng cao mâu thuẫn nhau).'
+  - cu: 'Mục Các lý thuyết giải thích: "ba lời giải thích" gồm nhiễu đo "gieo đồng xu có trọng số" và "giá trị của một ngôn ngữ chung" trong doanh nghiệp'
+    moi: '"hai lời giải thích"; nhiễu đo theo Howes và Carskadon (qua Pittenger, 1993); bỏ mục ngôn ngữ chung'
+    ly_do: 'Hồ sơ n30, n44: không có nguồn cho giá trị xã hội của MBTI.'
+  - cu: 'Hiệu ứng Barnum: "con người có xu hướng thấy những mô tả mơ hồ, tích cực là đúng với mình một cách kỳ lạ"; "Các bản mô tả 16 loại tính cách thường chung chung"'
+    moi: 'Nêu thí nghiệm Forer 1949: 39 sinh viên, 10,2 trên 13 câu đúng, 5 người chấm bản mô tả dưới 4, 1 người chấm bài kiểm tra dưới 4 (thang 0–5)'
+    ly_do: 'Hồ sơ n28, n29 (review: bản trước gán điểm của bài kiểm tra cho bản mô tả).'
+  - cu: 'Áp dụng 1 (Đang tranh cãi): "Không có bằng chứng vững chắc nào cho thấy loại MBTI dự báo được … bạn có quyền hoài nghi tính công bằng của nó"'
+    moi: 'Chip Khá vững: "Các tổng quan chúng tôi đã mở … không thấy đủ bằng chứng …; nhãn bốn chữ cái chưa nên là căn cứ chính"'
+    ly_do: Hồ sơ n31.
+  - cu: 'Áp dụng 2: ví dụ "Hướng ngoại 52/100"'
+    moi: Bỏ ví dụ số; "Một điểm liên tục cho biết mức độ nghiêng về một phía, còn chữ E thì không cho biết mức độ"
+    ly_do: Hồ sơ n32.
+  - cu: 'Áp dụng 3 (Khá vững): "những mô tả chung chung, tích cực sẽ đúng với hầu hết mọi người"; "Thử đọc bản mô tả của một loại khác …"'
+    moi: '"sinh viên của Forer cùng nhận một bản mô tả chung chung và gần như đều thấy nó đúng với mình"; bỏ chip nhãn'
+    ly_do: 'Hồ sơ n29: dự đoán cũ không có nguồn.'
+  - cu: 'Áp dụng 4 (Vững chắc): "Big Five … có độ tin cậy cao hơn … lựa chọn có cơ sở khoa học vững hơn"'
+    moi: 'Chip Khá vững: "nếu muốn dùng một khung tính cách có nhiều bằng chứng hơn, hãy nhìn sang Big Five"; bỏ so sánh độ tin cậy'
+    ly_do: Hồ sơ n33.
+  - cu: '"Chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra độ tin cậy hay giá trị của MBTI trên người Việt"; "nhiều bài test MBTI miễn phí … không phải bản chính thức"; "16Personalities … thực chất dùng khung Big Five được khoác áo bốn chữ cái"'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy …"; "16Personalities tự mô tả mình dùng một khung riêng (NERIS) với năm thang … nói rõ không nên xem nó là MBTI"'
+    ly_do: 'Hồ sơ n34, n35: trang của 16Personalities không nói "Big Five"; không nguồn cho mức lan truyền ở Việt Nam.'
+  - cu: 'Ngộ nhận: "Tính cách vốn khá ổn định; thứ thay đổi là cái nhãn"; "MBTI được xây dựng từ lý thuyết của Jung rồi mới đi tìm bằng chứng"; "Gợi ý nghề nghiệp dựa trên 4 chữ cái là suy diễn, không phải khoa học"; "Phần lớn nhân loại nằm ở vùng giữa của mọi chiều tính cách — điều khỏe mạnh và phổ biến nhất"'
+    moi: '"Điểm số trên từng thang liên tục có độ tin cậy chấp nhận được; thứ đổi nhiều hơn là nhãn"; "MBTI dựa trên lý thuyết các loại của Jung"; "chưa có cơ sở bằng chứng đủ vững"; "điểm số MBTI dồn quanh điểm giữa (Pittenger, 2005)"'
+    ly_do: Hồ sơ n36–n39.
+  - cu: 'Quiz: giải thích "cơ chế cốt lõi … nhảy loại ồ ạt"; đáp án "47% … độ ổn định của từng chiều riêng lẻ 61–78% … (Howes, 49%)"; phương án đúng của câu 5 dùng MBTI như "ngôn ngữ chung"'
+    moi: '"cách giải thích của Pittenger"; "Theo báo cáo của Hội đồng Nghiên cứu Quốc gia (1991), chỉ 47% …"; câu 5: nhìn điểm số liên tục, không dùng nhãn loại làm căn cứ tuyển chọn'
+    ly_do: Hồ sơ n40–n44.
+  - cu: 'Mục Nguồn: không có Haslam 2012'
+    moi: Thêm Haslam, Holland và Kuppens (2012)
+    ly_do: Hồ sơ n22.
