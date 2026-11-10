@@ -5,13 +5,1028 @@ tang: loi
 muc: V3
 lan:
   - so: 1
-    ngay: null
+    ngay: '2026-11-10'
     nhanh: moi/d6-l3
     ma_bam: null
     nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D6-L3 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L3)
+      review: Claude Opus 5.5 (agent review D6-L3, 10/11/2026)
       kiem_mau: null
-nguon: []
-nhan_dinh: []
+nguon:
+  - id: kuhl2003
+    ten: 'Kuhl, Tsao & Liu (2003), PNAS 100(15), 9096–9101: toàn văn (PDF của phòng thí nghiệm Kuhl, ilabs.uw.edu)'
+    link: https://doi.org/10.1073/pnas.1532872100
+    toan_van: true
+  - id: kuhl2006
+    ten: 'Kuhl và cộng sự (2006), Dev Sci 9(2), F13–F21: toàn văn (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1111/j.1467-7687.2006.00468.x
+    toan_van: true
+  - id: werker1984
+    ten: 'Werker & Tees (1984), Infant Behav Dev 7, 49–63: chưa mở được bài hay tóm tắt; chỉ đọc lời kể lại của Kuhl và cộng sự (2006)'
+    link: https://doi.org/10.1016/S0163-6383(84)80022-3
+    toan_van: false
+  - id: tsuji2014
+    ten: 'Tsuji & Cristia (2014), Dev Psychobiol 56(2), 179–191: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1002/dev.21179
+    toan_van: false
+  - id: mattock2006
+    ten: 'Mattock & Burnham (2006), Infancy 10(3), 241–265: tóm tắt (Crossref)'
+    link: https://doi.org/10.1207/s15327078in1003_3
+    toan_van: false
+  - id: strouse2021
+    ten: 'Strouse & Samson (2021), Child Dev 92(1), e20–e38 (video deficit): tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1111/cdev.13429
+    toan_van: false
+  - id: sperry2019
+    ten: 'Sperry, Sperry & Miller (2019), Child Dev 90(4), 1303–1318: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1111/cdev.13072
+    toan_van: false
+  - id: golinkoff2019
+    ten: 'Golinkoff và cộng sự (2019), Child Dev 90(3), 985–992: toàn văn (PubMed Central, qua NCBI E-utilities)'
+    link: https://doi.org/10.1111/cdev.13128
+    toan_van: true
+  - id: fenson1994
+    ten: 'Fenson và cộng sự (1994), Monogr Soc Res Child Dev 59(5), 1–173: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.2307/1166093
+    toan_van: false
+  - id: bergelson2012
+    ten: 'Bergelson & Swingley (2012), PNAS 109(9), 3253–3258: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1073/pnas.1113380109
+    toan_van: false
+  - id: madigan2019
+    ten: 'Madigan và cộng sự (2019), Pediatrics 144(4), e20183556: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1542/peds.2018-3556
+    toan_van: false
+  - id: tomasello1986
+    ten: 'Tomasello & Farrar (1986), Child Dev 57(6), 1454–1463: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1111/j.1467-8624.1986.tb00470.x
+    toan_van: false
+  - id: openstax-9
+    ten: OpenStax, Psychology 2e, mục 9.1 và 9.3 (giáo trình mở), đọc ngày 10/11/2026
+    link: https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development
+    toan_van: true
+  - id: long2024
+    ten: 'Long và cộng sự (2024), Autism 28(12), 3078–3091 (bản đọc PMC): tóm tắt dễ hiểu (Europe PMC); mốc bập bẹ chuẩn ở trẻ phát triển điển hình'
+    link: https://doi.org/10.1177/13623613241253908
+    toan_van: false
+  - id: wiki-viet
+    ten: 'Wikipedia, "Vietnamese language" (bậc 3): chỉ dùng cho số thanh của tiếng Việt'
+    link: https://en.wikipedia.org/wiki/Vietnamese_language
+    toan_van: false
+  - id: tim-vn-noi
+    ten: 'Tìm ngày 10/11/2026 trên Crossref và Europe PMC: "Vietnamese infants speech perception native language"; "Vietnamese toddlers vocabulary development MacArthur communicative": không thấy nghiên cứu về hẹp dần thính giác hay lộ trình học nói ở trẻ Việt Nam (OpenAlex bị giới hạn lượt trong ngày)'
+    link: https://api.crossref.org/works?query.bibliographic=Vietnamese+infants+speech+perception+native+language
+    toan_van: false
+  - id: openstax-ls-3-5
+    ten: "OpenStax, Lifespan Development (2024), mục 3.5 Language in Infants and Toddlers (bảng 3.10): giáo trình mở, đọc ở review 10/11/2026"
+    link: https://openstax.org/books/lifespan-development/pages/3-5-language-in-infants-and-toddlers
+    toan_van: true
+  - id: zhu2023
+    ten: "Zhu, Chen, Chen, Yang & Georgiou (2023), PLOS ONE 18(9), e0291828: toàn văn (PubMed Central PMC10513246, qua NCBI E-utilities; lượt 2 tìm, review đọc lại 10/11/2026)"
+    link: https://doi.org/10.1371/journal.pone.0291828
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: 'Trang mô tả: vì sao trẻ sơ sinh phân biệt được âm của nhiều ngôn ngữ rồi hẹp dần theo tiếng mẹ đẻ, và lộ trình từ bập bẹ đến từ đầu tiên.'
+    loai: ve-site
+    ket_qua: da-lam-mem
+    ghi_chu: 'Mô tả (description). Chữ cũ: "âm của mọi ngôn ngữ". Chữ mới: "nhiều ngôn ngữ". Lý do: nguồn không nói "mọi". Review (Claude Opus 5.5, 10/11/2026): Đổi loại phat-hien thành ve-site: câu là mô tả (description) nội dung của chính trang. Đã kiểm trên trang: có mục hẹp dần theo tiếng mẹ đẻ và lộ trình từ bập bẹ đến từ đầu tiên; khớp.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Câu mô tả trang (ve-site): không qua lượt 2 (câu về chính trang, ví dụ giả định hay lời dẫn)"
+    review: dung
+  - id: n2
+    cau: Người lớn học ngoại ngữ chật vật với những âm lạ, như người Nhật phân biệt /r/ và /l/ trong tiếng Anh.
+    loai: phat-hien
+    nguon:
+      - kuhl2006
+    trich: by adulthood, universal phonetic capacity is no longer in place – nonnative phonetic discrimination can be very difficult
+    vi_tri: Kuhl 2006, mở bài (dẫn Iverson 2003; Miyawaki 1975)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://europepmc.org/article/MED/16472309" ]
+    luot_2_ghi_chu: Kuhl 2006 dùng cặp /r/–/l/ làm phụ âm bản ngữ của Mỹ và không bản ngữ của Nhật; người lớn Nhật khó phân biệt /r/–/l/ theo các nghiên cứu họ trích (Miyawaki 1975; Iverson 2003).
+  - id: n3
+    cau: Em bé 6 tháng trong gia đình chỉ nói tiếng Anh, chưa từng nghe một thứ tiếng khác, nhiều khả năng phân biệt được các cặp âm lạ; gần 12 tháng khả năng ấy giảm rõ rệt (nếu chỉ nghe tiếng mẹ đẻ).
+    loai: phat-hien
+    nguon:
+      - kuhl2006
+      - werker1984
+    trich: a decrease in nonnative consonant perception occurs between 6–8 and 10–12 months of age (Werker & Tees, 1984)
+    vi_tri: Kuhl 2006, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một em bé 6 tháng tuổi người Việt… Ở 12 tháng tuổi: gần như không còn, nếu em chỉ nghe tiếng Việt." Chữ mới: trẻ nghe tiếng Anh; "nhiều khả năng có"; "giảm rõ rệt". Lý do: chưa có nghiên cứu trên trẻ Việt; "gần như không còn" nói chắc hơn nguồn; hai mức "6 tháng" và "12 tháng" là minh họa (gia-dinh). Hindi: xem nhận định về Werker & Tees. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Tình huống là minh họa (gia-dinh); Hindi chỉ là ví dụ trong câu hỏi, không gán cho Werker & Tees.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/12861072", "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: Câu dùng "nhiều khả năng", và điều kiện "nếu chỉ nghe tiếng mẹ đẻ" đúng.
+    review: dung
+  - id: n4
+    cau: Trong năm đầu, trẻ dần giỏi phân biệt âm tiếng mẹ đẻ và mất dần khả năng phân biệt âm không có trong tiếng mẹ đẻ, từ khoảng 6 đến 12 tháng.
+    loai: phat-hien
+    nguon:
+      - kuhl2006
+      - kuhl2003
+    trich: The results show a significant increase in performance for the native-language contrast in the first year, a decline in nonnative perception over the same time period
+    vi_tri: 'Kuhl 2006, tóm tắt; Kuhl 2003: "decline sharply between 6 and 12 mo of age"'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/16472309", "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf" ]
+  - id: n5
+    cau: Trong nửa đầu năm đầu đời trẻ phân biệt được nhiều cặp âm của các ngôn ngữ trên thế giới.
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: early in life, infants readily discern differences among the phonetic units used in the world's languages
+    vi_tri: Kuhl 2003, mở bài
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "trong 6 tháng đầu đời, trẻ phân biệt được các cặp âm của hầu hết mọi ngôn ngữ, kể cả những cặp âm người lớn bản ngữ không nghe ra". Chữ mới nói theo nguồn. Lý do: "6 tháng đầu", "hầu hết mọi" và "người lớn bản ngữ không nghe ra" không có trong nguồn; Kuhl 2003 chỉ nói "early in life". Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/12861072", "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: Câu dùng "nhiều khả năng", và điều kiện "nếu chỉ nghe tiếng mẹ đẻ" đúng.
+    review: dung
+  - id: n6
+    cau: 'Lộ trình phát âm: từ khóc và gừ gừ, đến bập bẹ có âm tiết rõ ràng, từ đầu tiên vào khoảng sinh nhật đầu tiên, ghép từ vào khoảng 18 tháng.'
+    loai: phat-hien
+    nguon:
+      - openstax-9
+      - openstax-ls-3-5
+    trich: When babies are about 12 months old, we expect them to say their first word for meaning, and to start combining words for meaning at about 18 months.
+    vi_tri: OpenStax 9.3, mục ngôn ngữ
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giai đoạn ''bùng nổ từ vựng'' vào khoảng 18 tháng tuổi". Chữ mới: "việc bắt đầu ghép từ vào khoảng 18 tháng". Lý do: giáo trình nêu ghép từ ở 18 tháng, không nêu bùng nổ từ vựng. "khóc và gừ gừ… bập bẹ có âm tiết rõ ràng" khớp mô tả cooing → babbling. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Cùng đoạn, câu dẫn danh sách mốc "Các mốc phát âm được ghi nhận khá ổn định" không có nguồn và bullet "Những tháng đầu: cooing": đã sửa thành "Trẻ thường đi qua các mốc phát âm theo thứ tự sau; mốc tuổi chỉ là gần đúng" và "Từ khoảng 2 tháng", dẫn OpenStax Lifespan Development (2024), mục 3.5 ("Infants and toddlers typically progress through several milestones…", "By two months of age… they also start cooing"); thêm openstax-ls-3-5 vào nguon; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development", "https://www.nidcd.nih.gov/health/speech-and-language", "https://europepmc.org/article/MED/22331874" ]
+    luot_2_ghi_chu: "Bergelson & Swingley 2012: trẻ 6–9 tháng đã biết nghĩa vài danh từ quen."
+    review: sai
+  - id: n7
+    cau: Trẻ thường hiểu một số từ trước khi nói được.
+    loai: phat-hien
+    nguon:
+      - bergelson2012
+    trich: infants already know the meanings of several common words from the age of 6 mo onward
+    vi_tri: Bergelson & Swingley 2012, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "trẻ hiểu trước khi nói được" (chắc). Chữ mới: "thường hiểu một số từ trước khi nói được". Lý do: tóm tắt nói trẻ 6 tháng đã hiểu một số từ thông dụng; không đo "nói". Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development", "https://www.nidcd.nih.gov/health/speech-and-language", "https://europepmc.org/article/MED/22331874" ]
+    luot_2_ghi_chu: "Bergelson & Swingley 2012: trẻ 6–9 tháng đã biết nghĩa vài danh từ quen."
+    review: dung
+  - id: n8
+    cau: 'Hình lo-trinh-hoc-noi: các mốc 0, 6, 12, 18, 24 tháng; "~2 tháng: cooing (ê a)".'
+    loai: so-lieu
+    nguon:
+      - openstax-ls-3-5
+    trich: "By two months of age, they are making facial expressions and smiling during social exchanges, and they also start cooing | Table 3.10: 2 months — Infants coo as they begin to practice vocalizations."
+    ket_qua: da-sua
+    ghi_chu: 'Chỗ khó, hình không sửa: không mở được nguồn nào cho mốc 2–4 tháng (giáo trình chỉ nói cooing đến trước bập bẹ); trang đã đổi bullet thành "những tháng đầu". Người giao quyết định đổi chữ hình. Review (Claude Opus 5.5, 10/11/2026): Tìm được nguồn bậc 2: OpenStax Lifespan Development (2024), mục 3.5 ghi cooing từ khoảng 2 tháng; "2–4 tháng" không có nguồn. Đã sửa chữ hình thành "~2 tháng: cooing (ê a)" và dời chấm về mốc 2 tháng; doi_chu.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'Mốc "2–4 tháng cooing": OpenStax nói trẻ "coo almost immediately", NIDCD gom 0–3 tháng "Coos and makes pleasure sounds"; khoảng 2–4 tháng không được nguồn đã mở xác nhận chính xác.'
+    vi_tri: OpenStax Lifespan Development (2024), mục 3.5, mục Crying and Cooing và bảng 3.10
+    review: sai
+  - id: n9
+    cau: 'Hình: "6–8 tháng: bập bẹ chuẩn" và "6–12 tháng: hẹp dần theo tiếng mẹ đẻ"; "~12 tháng: từ đầu tiên".'
+    loai: so-lieu
+    nguon:
+      - long2024
+      - kuhl2006
+      - openstax-9
+      - openstax-ls-3-5
+    trich: When babies are about 12 months old, we expect them to say their first word for meaning
+    vi_tri: 'OpenStax 9.3; Kuhl 2006 (6–12 tháng); Long 2024: "Babies usually start producing mature babbling at 7 months of age"'
+    ket_qua: dung
+    ghi_chu: 'Khớp các nguồn. Hình không sửa. Review (Claude Opus 5.5, 10/11/2026): Bập bẹ chuẩn: tóm tắt dễ hiểu của Long 2024 (Europe PMC) "Babies usually start producing mature babbling at 7 months", khớp 6–8 tháng; OpenStax Lifespan Development (2024), mục 3.5 ghi bập bẹ bắt đầu khoảng 4–6 tháng (bập bẹ nói chung, không phải bập bẹ chuẩn). Hẹp dần 6–12 tháng (Kuhl 2006) và từ đầu tiên khoảng 12 tháng (OpenStax 2e 9.3; Lifespan 3.5: "around twelve months is typical") khớp.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: '"6–8 tháng bập bẹ chuẩn": NIDCD ghi bập bẹ giống tiếng nói ở 4–6 tháng và chuỗi âm dài–ngắn ở 7–12 tháng; không khớp chính xác. "6–12 tháng hẹp dần" và "~12 tháng từ đầu tiên" thì khớp (Kuhl 2003; OpenStax).'
+    review: dung
+  - id: n10
+    cau: 'Hình: "16–24 tháng: ghép từ, vốn từ tăng nhanh"; chú thích "Trẻ thường đi qua các mốc theo thứ tự này, nhưng các mốc tuổi chỉ là gần đúng và thời điểm khác nhau rất nhiều giữa các trẻ".'
+    loai: so-lieu
+    nguon:
+      - openstax-ls-3-5
+      - fenson1994
+    trich: Around sixteen to twenty-four months of age, children experience a vocabulary growth spurt | Infants and toddlers typically progress through several milestones in communication and language development [Lifespan 3.5] | Extensive variability exists in the rate of lexical, gestural, and grammatical development [Fenson 1994]
+    ket_qua: da-sua
+    ghi_chu: 'Hình sai/thiếu nguồn: giáo trình nêu "ghép từ ~18 tháng", không nêu "bùng nổ từ vựng" (trang đã sửa chữ tương ứng); "thứ tự rất ổn định" cũng chưa có nguồn. Hình không sửa: người giao quyết định đổi chữ hình thành "~18 tháng: bắt đầu ghép từ" và "thứ tự các mốc thường ổn định". Review (Claude Opus 5.5, 10/11/2026): Đồng ý lượt 2 (quá mạnh). OpenStax Lifespan Development (2024), mục 3.5 đặt "vocabulary growth spurt" ở 16–24 tháng (không phải mốc 18 tháng) và chỉ nói trẻ "typically progress through" các mốc; Fenson 1994: biến thiên rất rộng. Đã sửa chữ hình và chú thích theo cau_dung của lượt 2; doi_chu.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development", "https://europepmc.org/article/MED/7845413" ]
+    luot_2_ghi_chu: 'câu đúng: Thứ tự các mốc đầu (cooing, bập bẹ, từ đầu, ghép từ) tương đối ổn định, nhưng thời điểm biến thiên rất rộng giữa trẻ; "bùng nổ từ vựng" ở khoảng 18 tháng chỉ có ở một số trẻ.; Chú thích hình nói "thứ tự các mốc rất ổn định" và vẽ "bùng nổ từ vựng ~18 tháng" như điểm cố định. Fenson (1.803 trẻ) cho thấy thời điểm và tốc độ biến thiên rất rộng; OpenStax lưu ý bùng nổ từ vựng không phổ quát.'
+    review: sai
+  - id: n11
+    cau: Werker và Tees (1984) cho trẻ học tiếng Anh nghe các cặp phụ âm không có trong tiếng Anh, ở nhiều độ tuổi trong năm đầu.
+    loai: phat-hien
+    nguon:
+      - kuhl2006
+    trich: Werker and her colleagues demonstrated that a decrease in nonnative consonant perception occurs between 6–8 and 10–12 months of age (Werker & Tees, 1984).
+    vi_tri: Kuhl 2006, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "theo dõi dọc cùng một nhóm trẻ học tiếng Anh, cho nghe các cặp phụ âm của tiếng Hindi và tiếng Salish… Trẻ được dạy quay đầu… nhận thưởng" (cũng ở Tự trải nghiệm và câu hỏi 2: "tiếng Hindi"). Chữ mới bỏ các chi tiết ấy. Lý do: chưa mở được bài gốc (không có tóm tắt ở Europe PMC, Crossref, OpenAlex; một bài tìm web chỉ trả lời kể thứ cấp), Kuhl 2006 chỉ nêu "nonnative consonant" và độ tuổi. Chỗ khó: Hindi và Salish rất có thể đúng; lượt 2 tìm bản đọc được để đưa lại. Review (Claude Opus 5.5, 10/11/2026): Review thử mở Werker & Tees 1984 ở Internet Archive (bộ wikipedia-scholarly-sources-corpus): không có tệp; trang ghi rõ "theo lời kể lại của Kuhl và cộng sự, 2006"; OpenStax Lifespan Development (2024), mục 3.5 cũng dẫn Werker & Tees 1984 cho việc giảm khả năng phân biệt âm lạ ở 10–12 tháng. Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://europepmc.org/article/MED/16472309" ]
+    luot_2_ghi_chu: Bài Werker & Tees 1984 (Infant Behavior and Development) không mở được toàn văn (Elsevier đóng, tóm tắt trống); xác nhận gián tiếp qua Kuhl 2006. Chi tiết "nhiều độ tuổi" khớp "6–8 and 10–12 months".
+    review: dung
+  - id: n12
+    cau: Khả năng phân biệt phụ âm không có trong tiếng mẹ đẻ giảm từ 6–8 tháng sang 10–12 tháng tuổi; trẻ vẫn phân biệt tốt phụ âm tiếng Anh.
+    loai: phat-hien
+    nguon:
+      - kuhl2006
+    trich: Werker and her colleagues demonstrated that a decrease in nonnative consonant perception occurs between 6–8 and 10–12 months of age (Werker & Tees, 1984).
+    vi_tri: Kuhl 2006, mở bài (kể lại Werker & Tees)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ở 6–8 tháng tuổi, gần như tất cả trẻ đều phân biệt được… chỉ còn rất ít trẻ làm được". Chữ mới: "giảm". Lý do: tỉ lệ trẻ ở bài gốc chưa kiểm; vế "vẫn phân biệt tốt phụ âm tiếng Anh" là điều Kuhl 2006 nói về nhóm bản ngữ nói chung, giữ ở mức đó. Review (Claude Opus 5.5, 10/11/2026): Khớp Kuhl 2006 (kể lại Werker & Tees) và OpenStax Lifespan Development (2024), mục 3.5.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf" ]
+    luot_2_ghi_chu: Phần "vẫn phân biệt tốt phụ âm tiếng Anh" không được Kuhl 2006 nêu riêng cho Werker & Tees nhưng khớp kết quả chung (khả năng bản ngữ tăng); xác nhận gián tiếp.
+    review: dung
+  - id: n13
+    cau: Kuhl và cộng sự (2006) kiểm tra trẻ 6–8 và 10–12 tháng ở Mỹ (32 trẻ) và Nhật (32 trẻ) với cặp /r/–/l/ có trong tiếng Anh nhưng không có trong tiếng Nhật.
+    loai: so-lieu
+    nguon:
+      - kuhl2006
+    trich: Participants were 32 American infants tested in Seattle and 32 Japanese infants tested in Tokyo with identical experimenters, equipment and stimuli.
+    vi_tri: Kuhl 2006, Method
+    ket_qua: dung
+    ghi_chu: 'Trang không nêu cỡ mẫu; câu mới thêm số. Cũng có 144 trẻ khác bị loại khỏi mẫu cuối (cùng mục Subjects, "An additional 144 infants did not…"): ghi cho người giao nếu muốn nêu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://europepmc.org/article/MED/16472309" ]
+    luot_2_ghi_chu: Đọc toàn văn Kuhl và cộng sự 2006 (Developmental Science 9, F13–F21) qua bản tác giả trên Wayback Machine (bản lưu 2016).
+  - id: n14
+    cau: Ở 6–8 tháng trẻ Mỹ và Nhật phân biệt /r/–/l/ ngang nhau, khoảng 65% đúng.
+    loai: so-lieu
+    nguon:
+      - kuhl2006
+    trich: between 6 and 8 months of age, American and Japanese infants are equivalent in their discrimination of the American English /ra-la/ stimuli, performing at approximately 65% correct
+    vi_tri: Kuhl 2006, Results, tr. F16–F17
+    ket_qua: da-lam-mem
+    ghi_chu: 'Số "khoảng 65% đúng" thêm vào trang. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl và cộng sự 2006 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://europepmc.org/article/MED/16472309" ]
+    luot_2_ghi_chu: Đọc toàn văn Kuhl và cộng sự 2006 (Developmental Science 9, F13–F21) qua bản tác giả trên Wayback Machine (bản lưu 2016).
+    review: dung
+  - id: n15
+    cau: Đến 10–12 tháng trẻ Mỹ giỏi lên (63,7% lên 73,8% đúng); trẻ Nhật có xu hướng kém đi (64,7% xuống 59,9%), mức giảm riêng của nhóm Nhật không có ý nghĩa thống kê và vẫn trên mức ngẫu nhiên.
+    loai: so-lieu
+    nguon:
+      - kuhl2006
+    trich: American infants demonstrate a substantial increase in their performance on the discrimination task, from 63.7% correct to 73.8% correct. In contrast, Japanese infants showed a decrease from 64.7% correct to 59.9% correct.
+    vi_tri: 'Kuhl 2006, Results, tr. F17 (simple effects: Mỹ F(1,24) = 4,32, p < 0,05; Nhật F(1,24) = 1,26, p > 0,10)'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trẻ Mỹ giỏi lên rõ rệt, còn trẻ Nhật kém đi". Chữ mới thêm số và nêu mức giảm của nhóm Nhật không có ý nghĩa thống kê. Cũng sửa lời giải thích câu hỏi 1. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl và cộng sự 2006 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://europepmc.org/article/MED/16472309" ]
+    luot_2_ghi_chu: Đọc toàn văn Kuhl và cộng sự 2006 (Developmental Science 9, F13–F21) qua bản tác giả trên Wayback Machine (bản lưu 2016).
+    review: dung
+  - id: n16
+    cau: 'Nhóm tác giả giải thích bằng "cam kết thần kinh" với đặc tính âm thanh của tiếng mẹ đẻ: kinh nghiệm tăng cường khả năng nghe âm quen và làm giảm khả năng nghe âm lạ.'
+    loai: phat-hien
+    nguon:
+      - kuhl2006
+    trich: We argue that neural commitment to native-language phonetic properties explains the pattern of developmental change in the first year.
+    vi_tri: Kuhl 2006, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cùng một quá trình… Nhóm tác giả gọi đây là sự cam kết thần kinh". Chữ mới: "giải thích bằng". Lý do: tóm tắt viết "We argue", là lập luận của tác giả. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl và cộng sự 2006 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://europepmc.org/article/MED/16472309" ]
+    luot_2_ghi_chu: Đọc toàn văn Kuhl và cộng sự 2006 (Developmental Science 9, F13–F21) qua bản tác giả trên Wayback Machine (bản lưu 2016).
+    review: dung
+  - id: n17
+    cau: 'Thí nghiệm 1: 32 trẻ Mỹ khoảng 9 tháng bắt đầu, 21 trẻ hoàn thành (10 nhóm Quan Thoại, 11 nhóm đối chứng); 12 buổi trong 4 tuần, mỗi buổi 25 phút (10 phút đọc sách, 15 phút chơi đồ chơi) với người bản ngữ.'
+    loai: so-lieu
+    nguon:
+      - kuhl2003
+    trich: Of the 32 infants who began the exposure sessions, 21 completed all 12 of the exposure sessions and the behavioral testing (10 in the Mandarin exposure group and 11 in the control group).
+    vi_tri: Kuhl 2003, Experiment 1, Subjects và Language exposure sessions
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "32 trẻ Mỹ 9 tháng tuổi được tiếp xúc… qua 12 buổi, mỗi buổi 25 phút" (thiếu: 21 trẻ hoàn thành; 4 tuần; 10 + 15 phút). Lý do: số trẻ thực sự được phân tích là 21. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl, Tsao & Liu 2003 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn Kuhl, Tsao & Liu 2003 (PNAS) qua bản tác giả trên Wayback Machine.
+    review: dung
+  - id: n18
+    cau: Nhóm đối chứng đến đủ 12 buổi nhưng chỉ nghe tiếng Anh.
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: A control group also participated in 12 language sessions but heard only English.
+    vi_tri: Kuhl 2003, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: Đọc toàn văn Kuhl, Tsao & Liu 2003 (PNAS) qua bản tác giả trên Wayback Machine.
+  - id: n19
+    cau: 'Thí nghiệm 2: 32 trẻ khác (28 hoàn thành), xem DVD có hình và tiếng (AV) hay chỉ nghe tiếng (A), cùng người nói và tài liệu.'
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: infants were exposed to the same foreign-language speakers and materials via audiovisual or audio-only recordings
+    vi_tri: Kuhl 2003, tóm tắt; Experiment 2, Subjects
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phát qua TV hoặc băng tiếng". Chữ mới: DVD qua TV có hình và tiếng, hoặc chỉ tiếng; 32 trẻ riêng (28 hoàn thành). Lý do: nguồn dùng DVD (nhóm A là âm thanh của DVD). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl, Tsao & Liu 2003 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    review: dung
+  - id: n20
+    cau: Sau 12 buổi trực tiếp (5 giờ), trẻ Mỹ phân biệt cặp phụ âm Quan Thoại ngang với trẻ cùng tuổi ở Đài Loan (so với số liệu đã công bố trước).
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: the performance of the American infants exposed to Mandarin in the present study was statistically equivalent to that of infants tested in Taiwan who had listened to Mandarin their entire lives, t(57) = 0.67, P > 0.10
+    vi_tri: Kuhl 2003, Experiment 1, Results
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "ngang với trẻ cùng tuổi ở Đài Loan" (như thể trong cùng thí nghiệm). Chữ mới thêm "so với số liệu đã công bố trước". "Tổng cộng khoảng 5 giờ" khớp (12 × 25 phút). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl, Tsao & Liu 2003 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: 12 buổi x 25 phút = 5 giờ; so với số liệu Đài Loan đã công bố trước (đúng như câu).
+    review: dung
+  - id: n21
+    cau: Nhóm xem TV hoặc nghe băng không cho thấy việc học nào; kết quả không khác nhóm đối chứng.
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: Foreign-language intervention in the AV and A conditions of Experiment 2 had no effect on phonetic perception.
+    vi_tri: Kuhl 2003, Experiment 2, Results
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "không học được gì" Chữ mới: "không cho thấy việc học nào". Lý do: nguồn viết "had no effect"; dùng chữ gần hơn. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl, Tsao & Liu 2003 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf", "https://europepmc.org/article/MED/12861072" ]
+    review: dung
+  - id: n22
+    cau: Nhóm DVD nghe cùng thời gian nhưng nhiều âm tiết hơn nhóm gặp người thật; chỉ khác ở chỗ có người thật tương tác hay không.
+    loai: so-lieu
+    nguon:
+      - kuhl2003
+    trich: infants heard significantly more syllables in Experiment 2 when compared with Experiment 1 (P < 0.01)
+    vi_tri: Kuhl 2003, Experiment 2, đoạn Language exposure sessions
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Cùng một lượng âm thanh" (cũng ở khung Bác bỏ: "lượng âm thanh y hệt"). Chữ mới: "cùng thời gian tiếp xúc (thậm chí nhiều âm tiết hơn)". Lý do: nhóm DVD nghe nhiều âm tiết hơn (trung bình 49.866 so với 33.120 ở TN1), thời gian bằng nhau. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl, Tsao & Liu 2003 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu. Câu hỏi 3 còn chữ cũ "nghe cùng lượng âm thanh": đã sửa ở n57.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: 'Nhỏ: "chỉ khác ở chỗ có người thật" hơi mạnh vì phương tiện (DVD) cũng khác, nhưng đó là cách tác giả thiết kế.'
+    review: dung
+  - id: n23
+    cau: 'Hiện tượng hẹp dần: bảy trong chín tương phản phụ âm đã công bố cho thấy suy giảm giữa 6–8 và 10–12 tháng; hai thì không (tiếng "click" châu Phi; /d/–/th/ ở trẻ Pháp).'
+    loai: tai-lap
+    nguon:
+      - kuhl2006
+    trich: Data on nine contrasts have now been published, seven of which show a decline in performance with age ... Two studies failed to show a decline
+    vi_tri: Kuhl 2006, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đã được lặp lại ở nhiều cặp ngôn ngữ (Anh–Hindi, Anh–Nhật, Tây Ban Nha–Catalan…), bằng nhiều phương pháp đo, và là một trong những phát hiện ổn định nhất". Chữ mới nêu 7/9. Lý do: nguồn không nêu Tây Ban Nha–Catalan; có hai trường hợp không suy giảm. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl và cộng sự 2006 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf" ]
+    review: dung
+  - id: n24
+    cau: Một phân tích tổng hợp về nguyên âm thấy hiệu ứng khi phân biệt nguyên âm bản ngữ và không bản ngữ đổi theo hai chiều ngược nhau theo tuổi trong năm đầu.
+    loai: phat-hien
+    nguon:
+      - tsuji2014
+    trich: An analysis of effect sizes for native and non-native vowel discrimination over the first year of life revealed that they changed with age in opposite directions
+    vi_tri: Tsuji & Cristia 2014, tóm tắt
+    ket_qua: dung
+    ghi_chu: Chữ trên trang thêm vào (khung Vững chắc).
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/24273029" ]
+    luot_2_ghi_chu: Tsuji & Cristia 2014, Developmental Psychobiology.
+  - id: n25
+    cau: 'Hẹp dần cũng thấy với thanh điệu: trẻ Trung Quốc 6 và 9 tháng phân biệt thanh tốt như nhau, trẻ Anh kém đi giữa 6 và 9 tháng.'
+    loai: phat-hien
+    nguon:
+      - mattock2006
+    trich: Chinese infants performed equally well at 6 and 9 months for both speech and nonspeech tone discrimination. Conversely, English infants' discrimination of lexical tone declined between 6 and 9 months of age
+    vi_tri: Mattock & Burnham 2006, tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu thêm vào trang (mục Việt Nam và khung Vững chắc).
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1207/s15327078in1003_3" ]
+    luot_2_ghi_chu: Mattock & Burnham 2006, Infancy.
+  - id: n26
+    cau: 'Khung Vững chắc: hẹp dần theo tiếng mẹ đẻ trong khoảng 6–12 tháng tuổi.'
+    loai: nhan
+    nguon: &id001
+      - kuhl2006
+      - tsuji2014
+      - mattock2006
+    nhan: vung-chac
+    co_so: *id001
+    ly_do: Phân tích tổng hợp (Tsuji & Cristia 2014, nguyên âm; hai chiều ngược nhau) cùng chiều với Kuhl 2006 (7/9 tương phản phụ âm suy giảm) và Mattock & Burnham 2006 (thanh điệu); đúng ở trẻ nói tiếng Anh, Nhật, Trung Quốc, Pháp; hai tương phản không suy giảm được nêu (tiếng "click" châu Phi, /d/–/th/ trẻ Pháp) và trang nêu là giới hạn. Không có thất bại tái lập lớn chưa giải thích trong nguồn đã mở. Chưa có phân tích tổng hợp riêng cho phụ âm (nguồn dùng là tổng quan trong bài Kuhl 2006).
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "đã được lặp lại ở nhiều cặp ngôn ngữ (Anh–Hindi, Anh–Nhật, Tây Ban Nha–Catalan…)… một trong những phát hiện ổn định nhất… Trẻ nào cũng trải qua". Chữ mới theo Kuhl 2006, Tsuji & Cristia 2014, Mattock & Burnham 2006. Chỗ khó: Vững chắc giữ vì có phân tích tổng hợp (nguyên âm) và nhiều nhóm; review cân nhắc có nên hạ Khá vững vì chưa có tổng hợp cho phụ âm. Review (Claude Opus 5.5, 10/11/2026): Nhãn Vững chắc đạt thước đo mục 4: có phân tích tổng hợp (Tsuji & Cristia 2014, nguyên âm, cả phương pháp hành vi và đo não; tóm tắt Europe PMC: hai chiều ngược nhau, có ý nghĩa từ khoảng 6 tháng), cùng chiều với tổng quan 7/9 tương phản phụ âm (Kuhl 2006) và thanh điệu (Mattock & Burnham 2006), ở trẻ Mỹ, Nhật, Anh, Trung Quốc, Pháp; giáo trình bậc 2 (OpenStax Lifespan Development (2024), mục 3.5) trình bày như kết luận chung. Hai tương phản không suy giảm được trang nêu là giới hạn; khung không nói "mọi cặp âm". Giữ Vững chắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/24273029", "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://api.crossref.org/works/10.1207/s15327078in1003_3" ]
+    luot_2_ghi_chu: 'Vững chắc có phân tích tổng hợp (nguyên âm) và nhiều quần thể (Mỹ, Nhật, Anh, Trung Quốc). Giới hạn: 2 trong 9 tương phản phụ âm không giảm; giữ cách viết tổng quát "hẹp dần", không nói mọi cặp âm.'
+    review: dung
+  - id: n27
+    cau: 'Khung Khá vững: tương tác trực tiếp với người thật giúp trẻ học âm mới hiệu quả hơn nghe thụ động; tổng hợp video deficit khoảng nửa độ lệch chuẩn, có thể ước lượng quá cao, nhỏ dần khi trẻ lớn hơn; không nên trông vào video dạy ngoại ngữ để trẻ sơ sinh tự "thấm" âm.'
+    loai: nhan
+    nguon: &id002
+      - kuhl2003
+      - strouse2021
+    nhan: kha-vung
+    co_so: *id002
+    ly_do: 'Một thí nghiệm hai phần có nhóm đối chứng (Kuhl 2003; 21 và 28 trẻ hoàn thành) chưa có tái lập có đăng ký trước, cùng chiều với tổng hợp "video deficit" (122 hiệu ứng, 59 báo cáo, khoảng nửa độ lệch chuẩn, có thể ước lượng quá cao); giới hạn nêu trên trang: chỉ một cặp âm, chưa rõ cơ chế. Khá vững, chưa tới Vững chắc.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nhãn Khá vững giữ nguyên; chữ trong khung thêm số trẻ và tổng hợp Strouse & Samson 2021. Lý do: làm căn cứ cho nhãn. Review (Claude Opus 5.5, 10/11/2026): Nhãn Khá vững đạt thước đo. Nhưng trang còn chữ "hiệu quả hơn hẳn" trong ý chính trong khi hồ sơ ghi "hiệu quả hơn" (Strouse 2021: khoảng nửa độ lệch chuẩn, có thể bị ước lượng quá cao): đã bỏ "hẳn". Khung nhận thêm từ khung Đã bị bác bỏ (n29, đã bỏ) vế "khoảng chênh nhỏ dần khi trẻ lớn hơn" (Strouse 2021: "the deficit decreased with age") và câu "không nên trông vào video dạy ngoại ngữ để trẻ sơ sinh tự “thấm” âm"; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/12861072", "https://europepmc.org/article/MED/33491209" ]
+    luot_2_ghi_chu: "Khá vững: một thí nghiệm nhỏ cộng tổng hợp video deficit; hợp thước đo."
+    review: sai
+  - id: n28
+    cau: 'Tổng hợp video deficit (59 báo cáo, 122 hiệu ứng, trẻ 0–6 tuổi): trẻ nhìn chung học kém hơn từ video, khoảng nửa độ lệch chuẩn, có thể bị ước lượng quá cao; deficit giảm theo tuổi.'
+    loai: so-lieu
+    nguon:
+      - strouse2021
+    trich: An average deficit of about half of a standard deviation was reported across 122 independent effect sizes from 59 reports, involving children ages 0-6 years.
+    vi_tri: Strouse & Samson 2021, tóm tắt
+    ket_qua: dung
+    ghi_chu: Câu thêm vào trang.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/33491209" ]
+    luot_2_ghi_chu: Strouse & Samson 2021, Child Development.
+  - id: n29
+    cau: 'Khung Đã bị bác bỏ: cho trẻ xem video dạy ngoại ngữ là đủ để trẻ "thấm" âm.'
+    loai: nhan
+    nguon: &id003
+      - kuhl2003
+      - strouse2021
+    nhan: bac-bo
+    co_so: *id003
+    ly_do: Thí nghiệm có đối chứng của Kuhl 2003 (không thấy việc học khi xem DVD hay nghe tiếng) và tổng hợp video deficit cùng chiều; nhưng đây là một thí nghiệm nhỏ và deficit giảm theo tuổi, nên khung chỉ nói "không cho thấy tác dụng trong thí nghiệm" chứ không "không có tác dụng".
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "nội dung ghi sẵn không có tác dụng dù lượng âm thanh y hệt. Trẻ học ngôn ngữ qua con người, không phải qua loa." Chữ mới mềm hơn. Chỗ khó: thước đo Đã bị bác bỏ cần các kiểm tra mạnh liên tục thất bại; ở đây là một thí nghiệm cộng một tổng hợp về video nói chung; review cân nhắc có nên hạ xuống Khá vững / Đang tranh cãi. Review (Claude Opus 5.5, 10/11/2026): Đồng ý lượt 2 (quá mạnh): Đã bị bác bỏ cần các kiểm tra đủ mạnh liên tục thất bại; ở đây chỉ một thí nghiệm nhỏ (Kuhl 2003) và một tổng hợp thấy video kém hơn khoảng nửa độ lệch chuẩn, không phải bằng 0. Câu đúng của lượt 2 (Khá vững) trùng với khung Khá vững ngay trên (n27), nên bỏ khung này và chuyển ý còn lại vào n27. Vế cũ "video có phản hồi theo trẻ thì khác video thường" không có trong nguồn đã dẫn (Strouse 2021 còn thấy video trực tiếp và ghi sẵn không khác nhau): bỏ theo khung; doi_chu.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://europepmc.org/article/MED/12861072", "https://europepmc.org/article/MED/33491209" ]
+    luot_2_ghi_chu: 'câu đúng: Khung nên là Khá vững: trẻ học âm ngoại ngữ từ người thật tốt hơn từ video; thí nghiệm Kuhl 2003 không thấy học từ DVD, tổng hợp cho thấy học từ video kém hơn khoảng nửa độ lệch chuẩn.; Nhãn Đã bị bác bỏ cần các kiểm tra mạnh liên tục thất bại. Chỉ có một thí nghiệm nhỏ (28 trẻ, một ngôn ngữ) cộng một tổng hợp thấy "deficit" khoảng nửa độ lệch chuẩn (không phải bằng 0, có thể ước lượng quá cao, giảm theo tuổi). Bằng chứng ủng hộ Khá vững hơn là "bác bỏ".'
+    review: sai
+  - id: n30
+    cau: Hart và Risley (1995) ước tính đến 4 tuổi, trẻ nhóm hưởng trợ cấp nghe ít hơn trẻ nhóm gia đình trí thức khoảng 30 triệu từ hướng tới trẻ.
+    loai: phat-hien
+    nguon:
+      - golinkoff2019
+    trich: HR estimated that by the age of 4 years, the most advantaged children had heard 30 million more words addressed to them than the least advantaged children.
+    vi_tri: Golinkoff 2019, mục Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trẻ gia đình thu nhập thấp nghe ít hơn trẻ gia đình trí thức khoảng 30 triệu từ trước 3 tuổi". Chữ mới: "đến 4 tuổi… nhóm welfare… professional". Lý do: Golinkoff viết "by the age of 4 years" và nhóm "welfare" / "professional". Sách gốc chưa mở (theo Golinkoff kể lại). Review (Claude Opus 5.5, 10/11/2026): Khớp Golinkoff 2019 (toàn văn PMC); sách Hart & Risley chưa mở, trang ghi theo Golinkoff kể lại ở mức con số và nhóm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&rettype=xml&id=10370358", "https://europepmc.org/article/MED/30102419", "https://europepmc.org/article/MED/29707767" ]
+    luot_2_ghi_chu: Bài gốc Hart & Risley 1995 (sách) không mở được; xác nhận qua Golinkoff 2019 (đọc toàn văn PMC) và Sperry 2019.
+    review: dung
+  - id: n31
+    cau: Con số 30 triệu từ khơi ra nhiều nghiên cứu lặp lại và cả tranh luận.
+    loai: lich-su
+    nguon:
+      - golinkoff2019
+    trich: sparked much research and multiple replications of their findings
+    vi_tri: Golinkoff 2019, Introduction
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đã định hình nhiều chính sách giáo dục mầm non" (không nguồn). Chữ mới theo Golinkoff. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&rettype=xml&id=10370358" ]
+    luot_2_ghi_chu: Golinkoff và cộng sự 2019 mô tả Hart & Risley khơi nhiều nghiên cứu và lặp lại; tranh luận thể hiện bởi Sperry 2019.
+    review: dung
+  - id: n32
+    cau: 'Sperry, Sperry và Miller (2019): năm cộng đồng ở Mỹ, quan sát tại nhà 42 trẻ 18–48 tháng, không ủng hộ khẳng định của Hart và Risley, thấy khác biệt lớn trong từng nhóm thu nhập; cách định nghĩa loại trừ nhiều người chăm sóc và lời nghe lỏm làm đánh giá thấp lượng từ trẻ thu nhập thấp nghe.'
+    loai: phat-hien
+    nguon:
+      - sperry2019
+    trich: Results do not support Hart and Risley's claim, reveal substantial variation in vocabulary environments within each socioeconomic stratum, and suggest that definitions of verbal environments that exclude multiple caregivers and bystander talk disproportionately underestimate the number of words to which low-income children are exposed.
+    vi_tri: Sperry 2019, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ghi âm trong các cộng đồng thu nhập thấp và thấy trẻ nghe được nhiều hơn hẳn con số Hart và Risley báo cáo". Chữ mới theo tóm tắt (không ghi âm/nhiều hơn hẳn; năm cộng đồng trải theo thu nhập; 42 trẻ). Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/29707767", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&rettype=xml&id=10370358" ]
+    luot_2_ghi_chu: Sperry, Sperry & Miller 2019, Child Development.
+    review: dung
+  - id: n33
+    cau: Golinkoff và cộng sự (2019) phản biện rằng điều quan trọng là chất lượng lời nói hướng trực tiếp vào trẻ, không phải lời nghe lỏm.
+    loai: phat-hien
+    nguon:
+      - golinkoff2019
+    trich: the vital ingredient to language learning—quality speech directed to children rather than overheard speech
+    vi_tri: Golinkoff 2019, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&rettype=xml&id=10370358" ]
+    luot_2_ghi_chu: Golinkoff, Hoff, Rowe, Tamis-LeMonda & Hirsh-Pasek 2019, Child Development.
+  - id: n34
+    cau: 'Khung Đang tranh cãi: "khoảng cách 30 triệu từ".'
+    loai: nhan
+    nguon: &id004
+      - sperry2019
+      - golinkoff2019
+    nhan: tranh-cai
+    co_so: *id004
+    ly_do: 'Một nghiên cứu mới (Sperry 2019, 42 trẻ, năm cộng đồng) không ủng hộ khẳng định gốc; bình luận phản biện (Golinkoff 2019) bảo vệ ý nghĩa của khoảng cách về chất lượng lời nói và nêu rằng có "multiple replications" của Hart & Risley: bằng chứng mâu thuẫn, chưa có tái lập lớn có đăng ký trước: Đang tranh cãi.'
+    ket_qua: da-sua
+    ghi_chu: 'Bỏ "Điểm đồng thuận hiếm hoi: trò chuyện trực tiếp, đáp lại trẻ thì tốt…" (không nguồn nào nêu sự đồng thuận ấy). Lý do: Golinkoff nhấn mạnh chất lượng lời nói hướng vào trẻ; Sperry không bàn. Review (Claude Opus 5.5, 10/11/2026): Nhãn Đang tranh cãi đạt thước đo: hai nguồn bình duyệt mâu thuẫn (Sperry 2019, Golinkoff 2019), không có tái lập lớn có đăng ký trước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/29707767", "https://europepmc.org/article/MED/30102419" ]
+    luot_2_ghi_chu: "Hai nguồn bình duyệt mâu thuẫn nhau: nhãn Đang tranh cãi khớp thước đo."
+    review: dung
+  - id: n35
+    cau: 'Học thống kê: trẻ 6–8 tháng tách từ qua xác suất chuyển tiếp giữa các âm tiết; Kuhl và cộng sự đề xuất kinh nghiệm với tiếng mẹ đẻ dẫn đến cam kết thần kinh.'
+    loai: lich-su
+    nguon:
+      - kuhl2003
+    trich: Between 6 and 8 mo, infants segment words from ongoing speech by detecting transitional probabilities between syllables
+    vi_tri: Kuhl 2003, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Kuhl cho rằng chính việc thống kê này dẫn đến cam kết thần kinh". Chữ mới tách hai ý riêng của Kuhl 2003. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf", "https://europepmc.org/article/MED/16472309" ]
+    luot_2_ghi_chu: Kuhl 2003 trích nghiên cứu học thống kê cho tách từ ở 6–8 tháng; Kuhl 2006 đề xuất cam kết thần kinh.
+    review: dung
+  - id: n36
+    cau: Chomsky đề xuất trẻ sinh ra đã có năng lực học ngôn ngữ; các mốc đầu giống nhau ở nhiều nền văn hóa.
+    loai: lich-su
+    nguon:
+      - openstax-9
+      - openstax-ls-3-5
+    trich: Noam Chomsky (1957) criticized Skinner’s theory and proposed that we are all born with an innate capacity to learn language. [OpenStax 2e 9.3] | infants in different cultures achieve language development milestones at about the same ages, suggesting biological influences on language development [Lifespan 3.5]
+    vi_tri: 'OpenStax 9.3, mục ngôn ngữ; OpenStax 9.1: "Infants in all cultures coo before they babble… utter their first word around 12 months"'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giải thích tốc độ học nhanh và các mốc chung ở mọi nền văn hóa, nhưng khó giải thích chi tiết quá trình hẹp dần". Chữ mới: "hợp với việc các mốc đầu… ở nhiều nền văn hóa (theo giáo trình)". Lý do: hai đánh giá kia không có nguồn. Review (Claude Opus 5.5, 10/11/2026): OpenStax 2e 9.3 chỉ nói thứ tự học cấu trúc ngôn ngữ nhất quán giữa các văn hóa; ý "độ tuổi gần như nhau ở nhiều nền văn hóa" có ở OpenStax Lifespan Development (2024), mục 3.5. Thêm nguồn; câu trên trang viết lại theo đúng chữ giáo trình và dẫn link thay cho "(theo giáo trình)"; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    luot_2_ghi_chu: 'OpenStax 9.3. Câu "khung hiện nay không dừng ở bắt chước": OpenStax nói ngôn ngữ vừa bẩm sinh vừa học qua tương tác.'
+    review: dung
+  - id: n37
+    cau: Kuhl và cộng sự (2003) gợi ý tương tác xã hội đóng vai trò quan trọng trong học ngôn ngữ ở trẻ nhỏ, có thể giống vai trò của tương tác xã hội trong việc chim học hót.
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: suggesting an important role for social interaction in early language learning, perhaps analogous to the role social interaction plays in avian song learning
+    vi_tri: Kuhl 2003, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Giả thuyết của Kuhl: bộ não trẻ chỉ ''mở cổng'' học ngôn ngữ tối đa khi có tương tác xã hội — ánh mắt, nụ cười, sự đáp lại. Điều này giải thích vì sao…". Chữ mới theo bài 2003. Lý do: bài viết "suggesting… perhaps analogous"; "cổng xã hội" là cách nói của bài khác chưa mở. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf", "https://europepmc.org/article/MED/12861072" ]
+    luot_2_ghi_chu: Câu dùng "gợi ý", đúng mức.
+    review: dung
+  - id: n38
+    cau: 'Tomasello và Farrar (1986), 24 trẻ: trong lúc mẹ và trẻ cùng chú ý vào một vật, cả hai nói nhiều hơn.'
+    loai: phat-hien
+    nguon:
+      - tomasello1986
+    trich: Inside, as opposed to outside, these episodes both mothers and children produced more utterances
+    vi_tri: Tomasello & Farrar 1986, tóm tắt (24 trẻ, 15 và 21 tháng)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Tomasello nhấn mạnh trẻ học ngôn ngữ để làm việc với người khác: chỉ trỏ, nhờ vả, chia sẻ chú ý. Theo hướng này, từ đầu tiên… là những từ dùng được nhất". Chữ mới theo tóm tắt Tomasello & Farrar 1986. Lý do: chữ cũ không có nguồn đã mở. Tomasello & Farrar 1986 không phải trình bày đầy đủ của thuyết "dùng ngôn ngữ"; viết ở mức tóm tắt. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/3802971" ]
+    luot_2_ghi_chu: Tomasello & Farrar 1986, Child Development (tóm tắt).
+    review: dung
+  - id: n39
+    cau: Các khung lý thuyết không loại trừ nhau.
+    loai: lich-su
+    trich: Researchers now believe that language acquisition is partially inborn and partially learned through our interactions with our linguistic environment
+    ket_qua: dung
+    ghi_chu: 'Câu tổng kết do trang viết, không có điều cần nguồn ngoài; giữ vì nội dung các khung trên đã kiểm. (Loại ghi lich-su cho đủ cột.) Review (Claude Opus 5.5, 10/11/2026): Lượt 2 cho rằng câu chung chung. Câu trên trang cụ thể ("vừa có sẵn nền tảng sinh học, vừa học thống kê từ môi trường, vừa cần tương tác xã hội"), và OpenStax 2e 9.3 nói đúng ý ấy ở mức chung: thêm nguồn. Giữ loại lich-su (câu tổng hợp các khung lý thuyết).'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Câu chung chung ("các khung lý thuyết không loại trừ nhau"), không kiểm được theo mục 1 của chuẩn; OpenStax 9.3 nói ngôn ngữ vừa bẩm sinh vừa học, nhưng câu cần viết lại cụ thể.
+    nguon:
+      - openstax-9
+    vi_tri: OpenStax 2e 9.3, đoạn về Skinner và Chomsky
+    review: dung
+  - id: n40
+    cau: 'Mục 1: nói chuyện trực tiếp, đáp lại bập bẹ (Khá vững).'
+    loai: nhan
+    nguon: &id005
+      - madigan2019
+    nhan: kha-vung
+    co_so: *id005
+    ly_do: 'Tổng hợp 37 nghiên cứu quan sát (36 hiệu ứng) thấy đáp ứng nhạy bén của cha mẹ gắn với ngôn ngữ của trẻ (r = 0,27); tác giả nói rõ kết quả "cannot speak to causal processes" và giới hạn ở mẫu phát triển điển hình, cặp mẹ–con: Khá vững, chưa Vững chắc.'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: nhãn Vững chắc, "đúng cơ chế cổng xã hội". Chữ mới: Khá vững, dẫn Madigan 2019; id mục giữ nguyên { #1-noi-chuyen-truc-tiep-dap-lai-tieng-bap-be-cua-tre-vung-chac }. Review (Claude Opus 5.5, 10/11/2026): Nhãn Khá vững đạt thước đo (một phân tích tổng hợp tương quan, tác giả nói rõ không suy ra nhân quả); id mục cũ giữ bằng { #1-noi-chuyen-truc-tiep-dap-lai-tieng-bap-be-cua-tre-vung-chac } (đã kiểm trên trang).'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/31551396", "https://europepmc.org/article/MED/3802971" ]
+    luot_2_ghi_chu: "Khá vững là hợp lý: tương quan quan sát, không chứng minh nhân quả."
+    review: dung
+  - id: n41
+    cau: 'Tổng hợp 36 nghiên cứu: đáp ứng nhạy bén của cha mẹ gắn với ngôn ngữ của trẻ, r = 0,27; chưa nói được nhân quả.'
+    loai: so-lieu
+    nguon:
+      - madigan2019
+    trich: 'the association between sensitive-responsive parenting and child language (k = 36; r = 0.27; 95% confidence interval: 0.21 to 0.33)'
+    vi_tri: 'Madigan 2019, tóm tắt (Results; Limitations: "Findings cannot speak to causal processes")'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/31551396" ]
+    luot_2_ghi_chu: "Madigan và cộng sự 2019, Pediatrics (dữ liệu từ 37 nghiên cứu, k = 36 cho phân tích này). Quan sát, không nhân quả: đúng như câu."
+  - id: n42
+    cau: 'Mục 2: đừng lo khi trẻ hiểu nhiều hơn nói (Khá vững).'
+    loai: nhan
+    nguon: &id006
+      - bergelson2012
+      - fenson1994
+    nhan: kha-vung
+    co_so: *id006
+    ly_do: 'Bergelson & Swingley 2012 (trẻ 6–9 tháng hiểu một số từ), Fenson 1994 (1.803 trẻ, biến thiên rất rộng): hai nghiên cứu lớn cùng chiều, chưa có tổng hợp; Khá vững.'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "hiểu hàng chục từ nhưng chỉ nói được vài từ là hoàn toàn bình thường — kho từ hiểu luôn đi trước". Chữ mới: "có thể hiểu một số từ… điều thường gặp". Lý do: số "hàng chục" và "luôn" không kiểm được; "hoàn toàn bình thường" gần với đánh giá cho từng trẻ. Review (Claude Opus 5.5, 10/11/2026): Nhãn Khá vững đạt thước đo (hai nghiên cứu lớn cùng chiều, chưa có tổng hợp); không viết như đánh giá cho từng trẻ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/7845413", "https://www.nidcd.nih.gov/health/speech-and-language", "https://europepmc.org/article/MED/22331874" ]
+    luot_2_ghi_chu: Khá vững hợp lý.
+    review: dung
+  - id: n43
+    cau: 'Fenson và cộng sự (1994): 1.803 trẻ 8–30 tháng, biến thiên rất rộng về thời điểm và tốc độ phát triển từ vựng, cử chỉ và ngữ pháp.'
+    loai: so-lieu
+    nguon:
+      - fenson1994
+    trich: Extensive variability exists in the rate of lexical, gestural, and grammatical development.
+    vi_tri: Fenson 1994, tóm tắt
+    ket_qua: dung
+    ghi_chu: Số 1.803 và độ tuổi 8–30 tháng khớp tóm tắt. Câu thêm vào trang.
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/7845413" ]
+    luot_2_ghi_chu: Fenson và cộng sự 1994, Monographs of the SRCD. Dữ liệu báo cáo của cha mẹ (CDI).
+  - id: n44
+    cau: 'Mục 3: cẩn trọng với "video dạy nói" cho trẻ dưới 1 tuổi (Khá vững).'
+    loai: nhan
+    nguon: &id007
+      - kuhl2003
+      - strouse2021
+    nhan: kha-vung
+    co_so: *id007
+    ly_do: 'Như khung Khá vững về học qua người thật: một thí nghiệm có đối chứng và một tổng hợp video deficit; phần "thay thời gian xem màn hình bằng chơi và trò chuyện" là suy ra, trang nói rõ.'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "không thay thế được người thật. Thời gian xem màn hình… tốt nhất nên được thay bằng… có bằng chứng trực tiếp". Chữ mới nêu phần suy ra. Review (Claude Opus 5.5, 10/11/2026): Nhãn Khá vững đạt thước đo; phần suy ra được nói rõ trên trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/33491209", "https://europepmc.org/article/MED/12861072" ]
+    luot_2_ghi_chu: Khá vững hợp lý.
+    review: dung
+  - id: n45
+    cau: Lời dẫn tới người có chuyên môn (bác sĩ nhi khoa, chuyên viên ngôn ngữ trị liệu) và link Hỗ trợ khi lo về phát triển ngôn ngữ của một em bé cụ thể.
+    loai: ve-site
+    trich: '(không áp dụng: lời dẫn của trang)'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ví dụ sau 18 tháng vẫn chưa có từ nào có nghĩa, hãy trao đổi với bác sĩ nhi khoa". Chữ mới bỏ ngưỡng 18 tháng (mốc lâm sàng không có nguồn, dễ đọc như tiêu chí chẩn đoán) và thêm chuyên viên ngôn ngữ trị liệu và link [Hỗ trợ](/psyche/ho-tro/) (trang có tại src/content/docs/ho-tro/). Review (Claude Opus 5.5, 10/11/2026): Đổi loại loi-khuyen thành ve-site: lời dẫn của trang tới người có chuyên môn và [Hỗ trợ](/psyche/ho-tro/), không có khẳng định cần nguồn. Đã kiểm trên trang (đoạn Giới hạn): không còn ngưỡng 18 tháng, không chẩn đoán; link Hỗ trợ đúng.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: "Lời dẫn tới chuyên gia và Hỗ trợ khi lo về một em bé cụ thể: không qua lượt 2 (câu về chính trang, ví dụ giả định hay lời dẫn)"
+    review: dung
+  - id: n46
+    cau: Các mốc tuổi trong bài là gần đúng; trẻ khác nhau đi với tốc độ khác nhau.
+    loai: phat-hien
+    nguon:
+      - fenson1994
+    trich: The wide variability across children in the time of onset and course of acquisition of these skills challenges the meaningfulness of the concept of the modal child.
+    vi_tri: Fenson 1994, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/7845413" ]
+  - id: n47
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào về hiện tượng hẹp dần thính giác hay lộ trình học nói trên trẻ em Việt Nam.
+    loai: thoi-su
+    nguon:
+      - tim-vn-noi
+    trich: '(không áp dụng: kết quả tìm kiếm)'
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ thiếu mốc ("Chúng tôi chưa tìm thấy…"); thêm "Tính đến 11/2026". Lần tìm 10/11/2026 trên Crossref và Europe PMC (xem nguồn). Kết quả: không có bài về trẻ Việt. Review (Claude Opus 5.5, 10/11/2026): Có mốc "Tính đến 11/2026", het_han 2028-11-01; lượt 2 tìm lại cùng kết quả.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Piaget+Vietnam+conservation&format=json", "https://api.crossref.org/works?query.bibliographic=Piaget+conservation+Vietnamese+children" ]
+    luot_2_ghi_chu: "Kiểm lại 2026-11-10 bằng Europe PMC và Crossref (từ khóa Vietnamese, infants, speech perception, vocabulary, first words): không thấy nghiên cứu về hẹp dần thính giác hay lộ trình học nói của trẻ Việt. Giới hạn: chưa tìm tạp chí trong nước; bản CDI tiếng Việt có thể tồn tại ngoài các cơ sở dữ liệu này. het_han: 2027-11."
+    review: dung
+  - id: n48
+    cau: Tiếng Việt là ngôn ngữ thanh điệu với 6 thanh.
+    loai: dinh-nghia
+    nguon:
+      - zhu2023
+    trich: the six contrastive lexical tones in Vietnamese are characterized not only by pitch contours but also by voice quality
+    vi_tri: Zhu và cộng sự 2023, mục Introduction (đoạn về Fig 1)
+    ket_qua: dung
+    ghi_chu: 'Chỗ khó: chỉ có nguồn bậc 3 (Wikipedia); kiến thức ngôn ngữ học cơ bản, không dùng làm nguồn cho điều nghiên cứu nào. Lượt 2 tìm nguồn bậc 2 (giáo trình ngôn ngữ học). Review (Claude Opus 5.5, 10/11/2026): Thay nguồn bậc 3 (Wikipedia) bằng bài bình duyệt lượt 2 tìm được (Zhu và cộng sự 2023, PLOS ONE, đọc lại toàn văn PMC): "six contrastive lexical tones in Vietnamese". Trang thêm dẫn (Zhu và cộng sự, 2023) và mục Nguồn; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&rettype=xml&id=10513246" ]
+    luot_2_ghi_chu: Zhu và cộng sự 2023, PLOS ONE. Sáu thanh là mô tả tiếng Việt chuẩn (Bắc/Hà Nội).
+    review: dung
+  - id: n49
+    cau: Nghiên cứu về trẻ sơ sinh vốn tập trung vào phụ âm và nguyên âm hơn là thanh điệu.
+    loai: phat-hien
+    nguon:
+      - mattock2006
+    trich: infant speech perception research has typically focused on consonants and vowels
+    vi_tri: Mattock & Burnham 2006, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "phần lớn nghiên cứu về hẹp dần được làm trên các ngôn ngữ không thanh điệu (tiếng Anh, tiếng Nhật)". Chữ mới theo tóm tắt Mattock & Burnham 2006. Lý do: không kiểm được "ngôn ngữ không thanh điệu" như một tỉ lệ. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://api.crossref.org/works/10.1207/s15327078in1003_3" ]
+    review: dung
+  - id: n50
+    cau: 'Ngộ nhận "Trẻ 6 tháng nghe gì cũng như nhau, cứ bật loa ngoại ngữ là con tự thấm": trong thí nghiệm của Kuhl 2003 trẻ 9 tháng học được âm mới từ người thật nhưng không từ DVD hay băng tiếng.'
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: Between 9 and 10 mo of age, infants show phonetic learning from live, but not prerecorded, exposure to a foreign language
+    vi_tri: Kuhl 2003, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Để giữ được khả năng phân biệt âm của một ngôn ngữ, trẻ cần tương tác trực tiếp với người nói thứ tiếng ấy — nghe loa thụ động không đủ". Chữ mới mềm hơn: thí nghiệm về học lại cặp âm ở 9–10 tháng, không phải "giữ". Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl, Tsao & Liu 2003 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: Kuhl 2003 dùng trẻ Mỹ 9 tháng, tiếng Quan Thoại.
+    review: dung
+  - id: n51
+    cau: 'Ngộ nhận "Trẻ nhà nghèo nghe ít hơn trẻ nhà giàu đúng 30 triệu từ": con số đến từ một nghiên cứu năm 1995 và đang bị tranh cãi.'
+    loai: lich-su
+    nguon:
+      - sperry2019
+      - golinkoff2019
+    trich: Amid growing controversy about the oft-cited "30-million-word gap"
+    vi_tri: Sperry 2019, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một nghiên cứu năm 1995 với mẫu nhỏ và đang bị tranh cãi mạnh". Chữ mới bỏ "mẫu nhỏ" (không kiểm được) và "mạnh". Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&rettype=xml&id=10370358", "https://europepmc.org/article/MED/29707767" ]
+    luot_2_ghi_chu: Con số 30 triệu từ có từ 1995 và đang bị tranh luận.
+    review: dung
+  - id: n52
+    cau: 'Ngộ nhận "Bập bẹ chỉ là tiếng ồn vô nghĩa": bập bẹ là một mốc trong phát triển tiếng nói, thường đến trước từ đầu tiên; giáo trình ghi âm điệu của trẻ theo tiếng mẹ đẻ.'
+    loai: phat-hien
+    nguon:
+      - openstax-9
+      - long2024
+    trich: A baby whose parents speak French will coo in a different tone than a baby whose parents speak Spanish or Urdu.
+    vi_tri: 'OpenStax 9.3; Long 2024: bập bẹ chuẩn trước từ đầu tiên'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Bập bẹ chuẩn (6–8 tháng) cho thấy bộ máy phát âm của trẻ đã sẵn sàng cho ngôn ngữ, và âm sắc của tiếng bập bẹ đã mang màu của tiếng mẹ đẻ. Đó là luyện tập, không phải tiếng ồn." Chữ mới theo giáo trình (âm điệu ở giai đoạn cooing). Lý do: ý "bộ máy sẵn sàng", "luyện tập" không có nguồn. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Mốc 6–8 tháng khớp Long 2024 (bập bẹ chuẩn thường bắt đầu khoảng 7 tháng).'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    review: dung
+  - id: n53
+    cau: 'Ngộ nhận "Trẻ học nói bằng cách bắt chước như vẹt": Skinner nghĩ trẻ học qua củng cố, Chomsky phê bình và đề xuất năng lực bẩm sinh; khung hiện nay không dừng ở bắt chước.'
+    loai: lich-su
+    nguon:
+      - openstax-9
+    trich: Skinner thought that we learn language in response to reinforcement or feedback, such as through parental approval or through being understood.
+    vi_tri: OpenStax 9.3
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trẻ không chỉ nhại lại: các em tự tạo ra những câu chưa từng nghe và sửa dần theo quy tắc ngôn ngữ. Bắt chước chỉ là một phần." Lý do: không có nguồn đã mở; thay bằng điều giáo trình nói về hai khung. Review (Claude Opus 5.5, 10/11/2026): Khớp OpenStax 2e 9.3 ("partially inborn and partially learned").'
+    luot_2: dung
+    luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development" ]
+    luot_2_ghi_chu: 'OpenStax 9.3. Câu "khung hiện nay không dừng ở bắt chước": OpenStax nói ngôn ngữ vừa bẩm sinh vừa học qua tương tác.'
+    review: dung
+  - id: n54
+    cau: 'Đọc thêm: Trẻ con học khác người lớn thế nào? (tre-hoc-the-nao) và Bé bám mẹ là tốt hay xấu? (gan-bo).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: cả hai trang có trong src/content/docs/kham-pha/phat-trien/ với tiêu đề khớp. Review (Claude Opus 5.5, 10/11/2026): Hai trang có trong src/content/docs/kham-pha/phat-trien/, tiêu đề khớp ("Trẻ con học khác người lớn thế nào?", "Bé bám mẹ là tốt hay xấu?"), link đúng.'
+    review: dung
+  - id: n55
+    cau: 'Câu 1: hẹp dần theo ngôn ngữ mẹ đẻ là trẻ ngày càng giỏi phân biệt âm tiếng mẹ đẻ và mất dần khả năng phân biệt âm không có trong tiếng mẹ đẻ.'
+    loai: dinh-nghia
+    nguon:
+      - kuhl2006
+    trich: The results show a significant increase in performance for the native-language contrast in the first year, a decline in nonnative perception over the same time period
+    vi_tri: Kuhl 2006, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ trong lời giải thích: "trẻ Nhật kém dần". Chữ mới: "có xu hướng kém đi". Lý do: mức giảm ở trẻ Nhật không có ý nghĩa thống kê riêng. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối khớp Kuhl và cộng sự 2006 (lượt 1 và lượt 2 cùng đọc toàn văn); trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/16472309" ]
+    review: dung
+  - id: n56
+    cau: 'Câu 2: ở trẻ học tiếng Anh nghe phụ âm không có trong tiếng Anh, khả năng phân biệt giảm rõ rệt từ 6–8 sang 10–12 tháng; giảm trong khoảng 6–12 tháng nếu âm không có trong môi trường của trẻ.'
+    loai: phat-hien
+    nguon:
+      - kuhl2006
+      - werker1984
+    trich: a decrease in nonnative consonant perception occurs between 6–8 and 10–12 months of age (Werker & Tees, 1984)
+    vi_tri: Kuhl 2006, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "gần như không còn"; lời giải thích "mất đi trong khoảng 8–10 tháng". Chữ mới theo Kuhl 2006. Đã bỏ "tiếng Hindi" ở câu hỏi (xem nhận định về Werker & Tees). Lời giải thích không dựa vào vị trí lựa chọn. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu. Câu hỏi không còn "tiếng Hindi".'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2006.pdf", "https://europepmc.org/article/MED/12861072" ]
+    review: dung
+  - id: n57
+    cau: "Câu 3: nhóm xem TV không học được dù nghe cùng thời gian (thậm chí nhiều âm tiết hơn) với nhóm gặp người thật; đáp án: không có tương tác xã hội trực tiếp, yếu tố mà các tác giả cho là quan trọng với việc học ngôn ngữ ở trẻ nhỏ."
+    loai: phat-hien
+    nguon:
+      - kuhl2003
+    trich: infants heard significantly more syllables in Experiment 2 when compared with Experiment 1 | suggesting an important role for social interaction in early language learning
+    vi_tri: Kuhl 2003, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Đáp án "vì không có tương tác xã hội trực tiếp — yếu tố mở cổng cho việc học ngôn ngữ" là diễn giải của tác giả ("suggesting…"); khớp mức "gợi ý". Chỗ khó: cách nói "yếu tố mở cổng" mạnh hơn nguồn ("an important role"); lượt 2 xét nếu cần sửa chữ đáp án. Review (Claude Opus 5.5, 10/11/2026): Câu hỏi còn chữ cũ "dù nghe cùng lượng âm thanh" mà n22 đã sửa ở thân bài (nhóm DVD nghe nhiều âm tiết hơn); đáp án "yếu tố “mở cổng” cho việc học ngôn ngữ" mạnh hơn nguồn ("an important role", lượt 1 đã ghi chỗ khó). Đã sửa câu hỏi và đáp án; doi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2016/http://ilabs.washington.edu/kuhl/pdf/Kuhl_etal_2003.pdf" ]
+    luot_2_ghi_chu: '"Yếu tố đề xuất": tác giả gợi ý tương tác xã hội; đúng mức.'
+    review: sai
+  - id: n58
+    cau: 'Câu 4: trẻ có thể hiểu một số từ từ khoảng 6 tháng, khi chưa nói được từ nào; nghe hiểu thường đi trước nói; đếm từ nói được có thể đánh giá thấp những gì trẻ biết.'
+    loai: phat-hien
+    nguon:
+      - bergelson2012
+    trich: infants already know the meanings of several common words from the age of 6 mo onward
+    vi_tri: Bergelson & Swingley 2012, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ở 10–11 tháng tuổi, trẻ hiểu được hàng chục từ… nhiều tháng… quy luật chung… Cha mẹ nên đọc tín hiệu…". Chữ mới theo Bergelson & Swingley; bỏ lời khuyên không nhãn. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/22331874", "https://www.nidcd.nih.gov/health/speech-and-language" ]
+    review: dung
+  - id: n59
+    cau: 'Câu 5: con số 30 triệu từ gắn nhãn Đang tranh cãi vì Sperry và cộng sự (2019) không ủng hộ khẳng định của Hart và Risley, và học giới tranh luận về cách đo và ý nghĩa.'
+    loai: phat-hien
+    nguon:
+      - sperry2019
+      - golinkoff2019
+    trich: Results do not support Hart and Risley's claim
+    vi_tri: Sperry 2019, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trẻ… nghe được nhiều hơn hẳn", "dựa trên mẫu nhỏ", "Điểm đồng thuận hiện nay…". Chữ mới theo Sperry và Golinkoff. Review (Claude Opus 5.5, 10/11/2026): Chữ cuối trên trang khớp nguồn và câu trích; trang đã sửa đúng như ghi_chu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://europepmc.org/article/MED/29707767", "https://europepmc.org/article/MED/30102419" ]
+    review: dung
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: Vì sao trẻ sơ sinh phân biệt được âm của mọi ngôn ngữ rồi hẹp dần theo tiếng mẹ đẻ
+    moi: Vì sao trẻ sơ sinh phân biệt được âm của nhiều ngôn ngữ rồi hẹp dần theo tiếng mẹ đẻ
+    ly_do: '"mọi ngôn ngữ" nói chắc hơn nguồn (Kuhl 2003: "many, if not all" trong tổng quan; chưa kiểm cho mọi ngôn ngữ).'
+  - cu: '> Một em bé 6 tháng tuổi người Việt, chưa từng nghe tiếng Hindi, có phân biệt được hai âm "t" của tiếng Hindi không? Và khi em được 12 tháng tuổi, khả năng đó còn không?'
+    moi: '> Một em bé 6 tháng tuổi trong gia đình chỉ nói tiếng Anh, chưa từng nghe một thứ tiếng khác (chẳng hạn tiếng Hindi), có phân biệt được hai âm lạ của thứ tiếng ấy không? Và khi em gần 12 tháng tuổi, khả năng đó còn không?'
+    ly_do: 'Câu hỏi nói về "em bé người Việt", nhưng chưa có nghiên cứu nào trên trẻ Việt (xem thời sự); đổi sang trẻ nghe tiếng Anh, đúng nhóm các nghiên cứu về hẹp dần. Bỏ "hai âm t của tiếng Hindi": chưa mở được bài Werker & Tees nên không kiểm được âm cụ thể; Hindi chỉ còn là ví dụ về một thứ tiếng lạ.'
+  - cu: 'Ở 6 tháng tuổi: **có** — trẻ phân biệt được, dù chưa từng nghe tiếng Hindi bao giờ. Ở 12 tháng tuổi: **gần như không còn**, nếu em chỉ nghe tiếng Việt. Trẻ sinh ra với đôi tai "quốc tế", rồi trong năm đầu đời đôi tai ấy dần trở thành "chuyên gia" của riêng tiếng mẹ đẻ.'
+    moi: 'Ở 6–8 tháng tuổi: nhiều khả năng **có** — các nghiên cứu cho thấy trẻ phân biệt được các cặp âm không có trong tiếng mẹ đẻ. Ở 10–12 tháng tuổi: khả năng ấy **giảm rõ rệt**, nếu em chỉ nghe tiếng mẹ đẻ. Trong năm đầu đời, đôi tai của trẻ dần trở thành "chuyên gia" của riêng tiếng mẹ đẻ.'
+    ly_do: Chữ cũ nói chắc cho một em bé cụ thể ("có", "gần như không còn", "người Việt"); nguồn nói về nhóm trẻ và mức suy giảm, không phải mọi trẻ. Bỏ "sinh ra với đôi tai quốc tế" (chưa có nguồn cho trẻ sơ sinh).
+  - cu: trong 6 tháng đầu đời, trẻ phân biệt được các cặp âm của hầu hết mọi ngôn ngữ, kể cả những cặp âm người lớn bản ngữ không nghe ra.
+    moi: trong nửa đầu năm đầu đời, trẻ phân biệt được nhiều cặp âm của các ngôn ngữ trên thế giới, kể cả những cặp âm người lớn khó phân biệt.
+    ly_do: 'Kuhl 2003: "infants readily discern differences among the phonetic units used in the world''s languages"; "6 tháng đầu", "hầu hết mọi", "người lớn bản ngữ không nghe ra" nói chắc hơn nguồn.'
+  - cu: 'rồi từ đầu tiên vào khoảng sinh nhật đầu tiên và giai đoạn "bùng nổ từ vựng" vào khoảng 18 tháng tuổi. Điểm then chốt: **trẻ hiểu trước khi nói được**.'
+    moi: 'rồi từ đầu tiên vào khoảng sinh nhật đầu tiên và việc bắt đầu ghép từ vào khoảng 18 tháng tuổi. Điểm then chốt: **trẻ thường hiểu một số từ trước khi nói được**.'
+    ly_do: 'Giáo trình nêu từ đầu tiên ~12 tháng và ghép từ ~18 tháng, không nêu "bùng nổ từ vựng"; Bergelson & Swingley: hiểu từ từ khoảng 6 tháng.'
+  - cu: '**Thiết kế.** Janet Werker và Richard Tees theo dõi dọc cùng một nhóm trẻ học tiếng Anh, cho nghe các cặp phụ âm của tiếng Hindi và tiếng Salish — những âm không tồn tại trong tiếng Anh. Trẻ được dạy quay đầu về phía loa khi nghe thấy âm thay đổi để nhận thưởng.'
+    moi: '**Thiết kế.** Janet Werker và Richard Tees cho trẻ học tiếng Anh nghe các cặp phụ âm không có trong tiếng Anh, ở nhiều độ tuổi trong năm đầu đời.'
+    ly_do: 'Chưa mở được bài gốc nên bỏ: "theo dõi dọc cùng một nhóm", tên hai ngôn ngữ (Hindi, Salish) và chi tiết quay đầu nhận thưởng. Giữ điều Kuhl 2006 nói: Werker & Tees thấy phụ âm không phải tiếng mẹ đẻ giảm giữa 6–8 và 10–12 tháng.'
+  - cu: '**Kết quả.** Ở 6–8 tháng tuổi, gần như tất cả trẻ đều phân biệt được các cặp âm lạ. Nhưng đến 10–12 tháng tuổi, chỉ còn rất ít trẻ làm được, dù các em vẫn phân biệt tốt các phụ âm tiếng Anh'
+    moi: '**Kết quả.** Khả năng phân biệt phụ âm không có trong tiếng mẹ đẻ giảm từ 6–8 tháng sang 10–12 tháng tuổi (theo lời kể lại của Kuhl và cộng sự, 2006); trẻ vẫn phân biệt tốt các phụ âm tiếng Anh'
+    ly_do: Bỏ "gần như tất cả" và "rất ít" (tỉ lệ chưa kiểm được ở bài gốc); giữ chiều của kết quả theo Kuhl 2006.
+  - cu: 'Ở 6–8 tháng tuổi, trẻ Mỹ và trẻ Nhật phân biệt /r/–/l/ ngang nhau. Đến 10–12 tháng tuổi, trẻ Mỹ **giỏi lên** rõ rệt, còn trẻ Nhật **kém đi** — cùng một quá trình: kinh nghiệm với tiếng mẹ đẻ vừa *tăng cường* khả năng nghe âm quen, vừa *làm mờ* khả năng nghe âm lạ. Nhóm tác giả gọi đây là sự "cam kết thần kinh" với các đặc tính âm thanh của tiếng mẹ đẻ'
+    moi: 'Ở 6–8 tháng tuổi, trẻ Mỹ và trẻ Nhật phân biệt /r/–/l/ ngang nhau (khoảng 65% đúng). Đến 10–12 tháng tuổi, trẻ Mỹ **giỏi lên** (63,7% lên 73,8%), còn trẻ Nhật có xu hướng **kém đi** (64,7% xuống 59,9%; mức giảm riêng của nhóm Nhật không có ý nghĩa thống kê, và trẻ Nhật vẫn trên mức ngẫu nhiên). Nhóm tác giả giải thích bằng sự "cam kết thần kinh" với các đặc tính âm thanh của tiếng mẹ đẻ: kinh nghiệm với tiếng mẹ đẻ vừa *tăng cường* khả năng nghe âm quen, vừa làm giảm khả năng nghe âm lạ'
+    ly_do: 'Chữ cũ: "trẻ Nhật kém đi" và "cùng một quá trình…" nói chắc hơn nguồn: ở nhóm Nhật mức giảm không có ý nghĩa thống kê (F(1,24) = 1,26); tương tác tuổi × ngôn ngữ có ý nghĩa. Thêm số liệu.'
+  - cu: '**Thiết kế.** 32 trẻ Mỹ 9 tháng tuổi được tiếp xúc với tiếng Quan Thoại qua 12 buổi, mỗi buổi 25 phút: người bản ngữ đọc sách và chơi cùng trẻ. Nhóm đối chứng cũng đến phòng thí nghiệm đủ 12 buổi nhưng chỉ nghe tiếng Anh. Thí nghiệm 2 lặp lại với cùng nội dung nhưng phát qua **TV hoặc băng tiếng** — không có người tương tác.'
+    moi: '**Thiết kế.** Thí nghiệm 1: 32 trẻ Mỹ khoảng 9 tháng tuổi bắt đầu chương trình tiếp xúc với tiếng Quan Thoại (21 trẻ hoàn thành và được kiểm tra) qua 12 buổi trong 4 tuần, mỗi buổi 25 phút: người bản ngữ đọc sách 10 phút và chơi đồ chơi cùng trẻ 15 phút. Nhóm đối chứng cũng đến đủ 12 buổi nhưng chỉ nghe tiếng Anh. Thí nghiệm 2 dùng 32 trẻ khác (28 trẻ hoàn thành), xem các đoạn phim DVD có cùng người nói và tài liệu, phát qua **TV có hình và tiếng, hoặc chỉ tiếng** — không có người tương tác.'
+    ly_do: Chữ cũ "32 trẻ" là số bắt đầu ở TN1; chỉ 21 trẻ hoàn thành (10 + 11). Thêm 10 + 15 phút đọc/chơi, "băng tiếng" thành DVD chỉ tiếng (nhóm A), TN2 có 32 trẻ riêng.
+  - cu: Sau 12 buổi tiếp xúc trực tiếp (tổng cộng khoảng 5 giờ nghe), trẻ Mỹ phân biệt được cặp phụ âm tiếng Quan Thoại **ngang với trẻ cùng tuổi ở Đài Loan**. Nhưng nhóm xem TV hoặc nghe băng **không học được gì** — kết quả ngang với nhóm đối chứng chưa từng nghe tiếng Quan Thoại. Cùng một lượng âm thanh, chỉ khác ở chỗ có người thật tương tác hay không
+    moi: Sau 12 buổi tiếp xúc trực tiếp (tổng cộng 5 giờ), trẻ Mỹ phân biệt được cặp phụ âm tiếng Quan Thoại **ngang với trẻ cùng tuổi ở Đài Loan** (so với số liệu đã công bố trước đó của nhóm tác giả). Nhưng nhóm xem TV hoặc nghe băng **không cho thấy việc học nào** — kết quả không khác nhóm đối chứng chưa từng nghe tiếng Quan Thoại. Cùng thời gian tiếp xúc (thậm chí nhiều âm tiết hơn), chỉ khác ở chỗ có người thật tương tác hay không
+    ly_do: '"Không học được gì" thành "không cho thấy việc học nào"; "cùng một lượng âm thanh" sai: nhóm DVD nghe nhiều âm tiết hơn nhóm trực tiếp (P < 0,01), cùng thời gian 5 giờ; Đài Loan là so với dữ liệu trước (t(57) = 0,67), không phải cùng thí nghiệm.'
+  - cu: '- **2–4 tháng:** tiếng "gừ gừ", ê a nguyên âm (cooing).'
+    moi: '- **Những tháng đầu:** tiếng "gừ gừ", ê a nguyên âm (cooing).'
+    ly_do: Chưa có nguồn đã mở cho mốc 2–4 tháng; giáo trình chỉ nói cooing đến trước bập bẹ.
+  - cu: '- **~18 tháng:** **bùng nổ từ vựng** — tốc độ học từ mới tăng vọt; trẻ bắt đầu ghép hai từ ("mẹ bế", "ăn nữa").'
+    moi: '- **~18 tháng:** trẻ bắt đầu ghép các từ ("mẹ bế", "ăn nữa").'
+    ly_do: Giáo trình chỉ nêu ghép từ ở ~18 tháng; "bùng nổ từ vựng, tốc độ học từ tăng vọt" chưa có nguồn. Hình lo-trinh-hoc-noi vẫn ghi "bùng nổ từ vựng" (hình không sửa, ghi cho người giao).
+  - cu: 'Một chi tiết quan trọng: ở 10–11 tháng tuổi, trẻ hiểu được hàng chục từ nhưng gần như chưa nói được từ nào — kho từ "hiểu" luôn vượt xa kho từ "nói" ([Fenson và cộng sự, 1994](https://doi.org/10.2307/1166093)). Vì thế, đếm số từ trẻ *nói được* sẽ đánh giá thấp những gì trẻ thật sự *biết*.'
+    moi: 'Một chi tiết quan trọng: trẻ có thể hiểu một số từ thông dụng từ khoảng 6 tháng tuổi, khi chưa nói được từ nào ([Bergelson và Swingley, 2012](https://doi.org/10.1073/pnas.1113380109)); tốc độ phát triển giao tiếp của từng trẻ khác nhau rất nhiều ([Fenson và cộng sự, 1994](https://doi.org/10.2307/1166093)). Vì thế, đếm số từ trẻ *nói được* có thể đánh giá thấp những gì trẻ thật sự *biết*.'
+    ly_do: Chữ cũ ("10–11 tháng… hàng chục từ… luôn vượt xa") không kiểm được ở tóm tắt của Fenson (chỉ nói biến thiên rất rộng); thay bằng Bergelson & Swingley (hiểu từ từ 6 tháng) và Fenson (biến thiên).
+  - cu: ':::vung-chac[hẹp dần theo tiếng mẹ đẻ trong khoảng 6–12 tháng tuổi]
+
+      Hiện tượng này đã được lặp lại ở nhiều cặp ngôn ngữ (Anh–Hindi, Anh–Nhật, Tây Ban Nha–Catalan…), bằng nhiều phương pháp đo, và là một trong những phát hiện ổn định nhất của tâm lý học phát triển ngôn ngữ. Trẻ nào cũng trải qua: tai nghe "quốc tế" lúc 6 tháng, "chuyên gia tiếng mẹ đẻ" lúc 12 tháng.
+
+      :::'
+    moi: ':::vung-chac[hẹp dần theo tiếng mẹ đẻ trong khoảng 6–12 tháng tuổi]
+
+      Trong chín tương phản phụ âm đã công bố, bảy cho thấy suy giảm giữa 6–8 và 10–12 tháng tuổi (hai thì không: tiếng "click" châu Phi và /d/–/th/ ở trẻ Pháp), và một phân tích tổng hợp về nguyên âm thấy khả năng phân biệt âm bản ngữ và không bản ngữ đổi theo hai chiều ngược nhau trong năm đầu; hiện tượng cũng được thấy với thanh điệu. Giới hạn: không phải mọi tương phản đều suy giảm, và phần lớn dữ liệu là ở trẻ nói tiếng Anh, Nhật.
+
+      :::'
+    ly_do: Chữ cũ liệt kê "Tây Ban Nha–Catalan" và "Anh–Hindi" mà không nguồn đã mở nào nêu; "trẻ nào cũng trải qua" và "một trong những phát hiện ổn định nhất" bỏ. Thay bằng điều Kuhl 2006 (7/9 tương phản suy giảm), Tsuji & Cristia 2014 và Mattock & Burnham 2006 nói.
+  - cu: 'Thí nghiệm của Kuhl và cộng sự (2003) cho thấy 12 buổi chơi cùng người bản ngữ giúp trẻ 9 tháng tuổi học được cặp âm mới, trong khi xem TV hoặc nghe băng với cùng nội dung thì không. Giới hạn: cơ chế chính xác (sự chú ý, tín hiệu xã hội, hay điều gì khác) vẫn đang được làm rõ.'
+    moi: 'Thí nghiệm của Kuhl và cộng sự (2003) cho thấy 12 buổi chơi cùng người bản ngữ giúp trẻ 9 tháng tuổi học được cặp âm mới, trong khi xem TV hoặc nghe băng với cùng nội dung thì không; một tổng hợp về "video deficit" ở trẻ 0–6 tuổi cũng thấy trẻ nhìn chung học kém hơn từ video so với người thật, mức khoảng nửa độ lệch chuẩn nhưng có thể bị ước lượng quá cao (Strouse và Samson, 2021). Giới hạn: thí nghiệm gốc nhỏ (21 và 28 trẻ hoàn thành) và chỉ đo học một cặp âm; cơ chế chính xác (sự chú ý, tín hiệu xã hội, hay điều gì khác) vẫn đang được làm rõ.'
+    ly_do: Thêm cỡ mẫu và tổng hợp Strouse & Samson 2021 làm căn cứ cho nhãn Khá vững.
+  - cu: 'Ít nhất với việc học phân biệt âm vị ở cuối năm đầu đời, nội dung ghi sẵn không có tác dụng dù lượng âm thanh y hệt. Trẻ học ngôn ngữ qua **con người**, không phải qua loa. (Lưu ý: kết luận này áp dụng cho học âm vị ở trẻ sơ sinh; với trẻ lớn hơn học từ vựng qua video có tương tác, bức tranh phức tạp hơn.)'
+    moi: 'Ít nhất với việc học phân biệt âm vị ở cuối năm đầu đời, nội dung ghi sẵn không cho thấy tác dụng trong thí nghiệm của Kuhl và cộng sự (2003), dù thời gian nghe y hệt. Trẻ học ngôn ngữ tốt hơn qua **con người** so với qua loa. (Lưu ý: kết luận này áp dụng cho học âm vị ở trẻ sơ sinh; với trẻ lớn hơn, khoảng cách giữa video và người thật nhỏ đi, và video có phản hồi theo trẻ thì khác video thường, nên bức tranh phức tạp hơn: Strouse và Samson, 2021; Golinkoff và cộng sự, 2019.)'
+    ly_do: '"Không có tác dụng" và "không phải qua loa" nói chắc hơn nguồn: một thí nghiệm; tổng hợp 2021 thấy "deficit" giảm theo tuổi. "Cùng lượng âm thanh" sai (xem n về TN2): thành "thời gian nghe".'
+  - cu: 'Năm 1995, Betty Hart và Todd Risley ước tính trẻ gia đình thu nhập thấp nghe ít hơn trẻ gia đình trí thức khoảng **30 triệu từ** trước 3 tuổi — con số nổi tiếng này đã định hình nhiều chính sách giáo dục mầm non. Nhưng văn liệu sau này tranh cãi mạnh: Sperry, Sperry và Miller (2019) ghi âm trong các cộng đồng thu nhập thấp và thấy trẻ nghe được **nhiều hơn hẳn** con số Hart và Risley báo cáo, với khác biệt lớn giữa các cộng đồng; đổi lại, Golinkoff và cộng sự (2019) phản biện rằng điều quan trọng là **chất lượng lời nói hướng trực tiếp vào trẻ**, không phải tổng số từ nghe lỏm được ([Sperry, Sperry và Miller, 2019](https://doi.org/10.1111/cdev.13072); [Golinkoff và cộng sự, 2019](https://doi.org/10.1111/cdev.13128)). Điểm đồng thuận hiếm hoi: trò chuyện trực tiếp, đáp lại trẻ thì tốt cho ngôn ngữ của trẻ — còn con số "30 triệu" thì không nên dùng như sự thật đã chốt.'
+    moi: 'Năm 1995, Betty Hart và Todd Risley ước tính rằng đến 4 tuổi, trẻ ở nhóm hưởng trợ cấp ("welfare") đã nghe ít hơn trẻ ở nhóm gia đình trí thức ("professional") khoảng **30 triệu từ** hướng tới trẻ — con số nổi tiếng này khơi ra nhiều nghiên cứu lặp lại và cả tranh luận. Nhưng văn liệu sau này tranh cãi: Sperry, Sperry và Miller (2019), với dữ liệu từ năm cộng đồng ở Mỹ (quan sát tại nhà 42 trẻ từ 18 đến 48 tháng), không ủng hộ khẳng định của Hart và Risley, thấy khác biệt lớn trong từng nhóm thu nhập, và cho rằng cách định nghĩa môi trường lời nói loại trừ nhiều người chăm sóc và lời nói nghe lỏm làm đánh giá thấp lượng từ trẻ thu nhập thấp nghe; đổi lại, Golinkoff và cộng sự (2019) phản biện rằng điều quan trọng là **chất lượng lời nói hướng trực tiếp vào trẻ**, không phải lời nghe lỏm ([Sperry, Sperry và Miller, 2019](https://doi.org/10.1111/cdev.13072); [Golinkoff và cộng sự, 2019](https://doi.org/10.1111/cdev.13128)). Vì vậy con số "30 triệu" không nên dùng như sự thật đã chốt.'
+    ly_do: 'Chữ cũ: "trước 3 tuổi" (Golinkoff: "by the age of 4 years"), "đã định hình nhiều chính sách" (không nguồn), "ghi âm", "nhiều hơn hẳn" (tóm tắt Sperry nói "không ủng hộ", "bystander talk… underestimate"), "Điểm đồng thuận hiếm hoi" (không nguồn nào nói hai phía đồng thuận). Hart & Risley 1995 là sách, chưa mở; theo lời kể của Golinkoff và Sperry.'
+  - cu: Kuhl cho rằng chính việc thống kê này dẫn đến "cam kết thần kinh" với tiếng mẹ đẻ.
+    moi: Kuhl và cộng sự đề xuất rằng kinh nghiệm với tiếng mẹ đẻ dẫn đến "cam kết thần kinh" với âm của nó, và nêu việc trẻ 6–8 tháng tách từ bằng xác suất chuyển tiếp giữa các âm tiết như một ví dụ của học thống kê.
+    ly_do: 'Chữ cũ nói chính học thống kê dẫn đến cam kết thần kinh: Kuhl 2003 chỉ nêu hai điều riêng (học thống kê; cam kết thần kinh).'
+  - cu: Khung này giải thích tốc độ học nhanh và các mốc chung ở mọi nền văn hóa, nhưng khó giải thích chi tiết quá trình hẹp dần theo kinh nghiệm.
+    moi: Khung này hợp với việc các mốc đầu (ê a, bập bẹ, từ đầu tiên) xuất hiện ở độ tuổi gần như nhau ở trẻ nhiều nền văn hóa (theo giáo trình).
+    ly_do: Chữ cũ về "tốc độ học nhanh" và "khó giải thích hẹp dần" là đánh giá không có nguồn; giáo trình nói trẻ ở mọi nền văn hóa bập bẹ vào độ tuổi như nhau và nói từ đầu tiên ~12 tháng.
+  - cu: 'Giả thuyết của Kuhl: bộ não trẻ chỉ "mở cổng" học ngôn ngữ tối đa khi có tương tác xã hội — ánh mắt, nụ cười, sự đáp lại. Điều này giải thích vì sao cùng một nội dung, người thật dạy được mà TV thì không.'
+    moi: Kuhl và cộng sự (2003) gợi ý tương tác xã hội đóng vai trò quan trọng trong học ngôn ngữ ở trẻ nhỏ, có thể giống vai trò của tương tác xã hội trong việc chim học hót; điều này phù hợp với việc cùng nội dung, người thật dạy được mà TV thì không (chưa rõ do yếu tố nào của người thật).
+    ly_do: Chữ cũ ("chỉ mở cổng", "ánh mắt, nụ cười, sự đáp lại", "giải thích") không có trong bài 2003 (tác giả viết "suggesting an important role… perhaps analogous to avian song learning"). Từ "cổng xã hội" thuộc bài khác của Kuhl, chưa mở.
+  - cu: 'Michael Tomasello nhấn mạnh trẻ học ngôn ngữ để **làm việc** với người khác: chỉ trỏ, nhờ vả, chia sẻ chú ý. Theo hướng này, từ đầu tiên của trẻ thường là những từ "dùng được" nhất trong đời sống của em.'
+    moi: 'Michael Tomasello nhấn mạnh vai trò của sự **chú ý chung** với người chăm sóc: trong nghiên cứu của Tomasello và Farrar (1986) trên 24 trẻ, trong những lúc mẹ và trẻ cùng chú ý vào một vật, cả mẹ lẫn trẻ nói nhiều hơn.'
+    ly_do: Chữ cũ ("để làm việc với người khác", "từ đầu tiên là những từ dùng được nhất") không có nguồn đã mở; thay bằng điều tóm tắt Tomasello & Farrar 1986 nói.
+  - cu: '### 1. Nói chuyện trực tiếp, đáp lại tiếng bập bẹ của trẻ :nhan[vung-chac]
+
+
+      Khi trẻ "ba-ba", hãy đáp lại như một cuộc trò chuyện thật: "Ừ, ba-ba hả con?" Sự đáp lại kịp thời dạy trẻ rằng âm thanh có sức mạnh giao tiếp — đúng cơ chế "cổng xã hội" mà nghiên cứu của Kuhl chỉ ra.'
+    moi: '### 1. Nói chuyện trực tiếp, đáp lại tiếng bập bẹ của trẻ :nhan[kha-vung] { #1-noi-chuyen-truc-tiep-dap-lai-tieng-bap-be-cua-tre-vung-chac }
+
+
+      Khi trẻ "ba-ba", hãy đáp lại như một cuộc trò chuyện thật: "Ừ, ba-ba hả con?" Các nghiên cứu quan sát thấy cha mẹ đáp lại nhạy bén gắn với ngôn ngữ của trẻ tốt hơn (tổng hợp 36 nghiên cứu, r = 0,27); đây là tương quan, chưa nói được nhân quả (Madigan và cộng sự, 2019).'
+    ly_do: 'Chữ cũ: Vững chắc; "dạy trẻ rằng âm thanh có sức mạnh giao tiếp — đúng cơ chế cổng xã hội". Chữ mới: Khá vững; dẫn Madigan 2019 (tương quan, "cannot speak to causal processes"). Giữ id mục cũ.'
+  - cu: Trẻ 1 tuổi hiểu được hàng chục từ nhưng chỉ nói được vài từ là hoàn toàn bình thường — kho từ hiểu luôn đi trước kho từ nói.
+    moi: Trẻ nhỏ có thể hiểu một số từ (từ khoảng 6 tháng) trước khi nói được từ nào, và tốc độ nói của từng trẻ khác nhau rất nhiều — nên việc trẻ hiểu nhiều hơn nói là điều thường gặp (Bergelson và Swingley, 2012; Fenson và cộng sự, 1994).
+    ly_do: Chữ cũ "hàng chục từ… vài từ… hoàn toàn bình thường… luôn đi trước" nói chắc hơn và gần như một nhận định về bình thường/bất thường cho từng trẻ; thay bằng điều hai nguồn nói.
+  - cu: Với việc học âm vị ở cuối năm đầu đời, video và băng tiếng không thay thế được người thật. Thời gian xem màn hình của trẻ sơ sinh tốt nhất nên được thay bằng thời gian chơi và trò chuyện cùng người thân — điều này có bằng chứng trực tiếp từ thí nghiệm của Kuhl và cộng sự (2003).
+    moi: Với việc học âm vị ở cuối năm đầu đời, trong thí nghiệm của Kuhl và cộng sự (2003) video và băng tiếng không thay được người thật, và tổng hợp về "video deficit" cũng thấy trẻ nhỏ học kém hơn từ video (Strouse và Samson, 2021). Vì vậy nên ưu tiên thời gian chơi và trò chuyện cùng người thân cho trẻ sơ sinh; bằng chứng trực tiếp là thí nghiệm của Kuhl, còn việc "thay thời gian xem màn hình" là suy ra từ đó.
+    ly_do: 'Chữ cũ "không thay thế được", "tốt nhất nên được thay", "bằng chứng trực tiếp" nói chắc hơn: một thí nghiệm về học âm, không đo việc thay thời gian xem màn hình.'
+  - cu: Nếu lo lắng về sự chậm nói của trẻ (ví dụ sau 18 tháng vẫn chưa có từ nào có nghĩa), hãy trao đổi với bác sĩ nhi khoa thay vì tự kết luận từ bài viết này.
+    moi: Nếu bạn lo lắng về sự phát triển ngôn ngữ của một em bé cụ thể, hãy trao đổi với bác sĩ nhi khoa hay chuyên viên ngôn ngữ trị liệu thay vì tự kết luận từ bài viết này; xem thêm [Hỗ trợ](/psyche/ho-tro/).
+    ly_do: Bỏ ngưỡng "sau 18 tháng chưa có từ nào" (một mốc lâm sàng không có nguồn đã mở, dễ bị đọc như tiêu chí chẩn đoán); thêm link Hỗ trợ.
+  - cu: Chúng tôi chưa tìm thấy nghiên cứu nào về hiện tượng hẹp dần thính giác hay lộ trình học nói được thực hiện trên trẻ em Việt Nam.
+    moi: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào về hiện tượng hẹp dần thính giác hay lộ trình học nói được thực hiện trên trẻ em Việt Nam.
+    ly_do: Thêm mốc thời gian (thoi-su).
+  - cu: 'Một điểm đáng lưu ý: tiếng Việt là **ngôn ngữ thanh điệu** với 6 thanh, còn phần lớn nghiên cứu về hẹp dần được làm trên các ngôn ngữ không thanh điệu (tiếng Anh, tiếng Nhật). Lộ trình chi tiết ở trẻ Việt — ví dụ mốc hẹp dần với thanh điệu so với phụ âm — có thể khác, và cần nghiên cứu trực tiếp trên trẻ Việt Nam mới trả lời được.'
+    moi: 'Một điểm đáng lưu ý: tiếng Việt là **ngôn ngữ thanh điệu** với 6 thanh, còn nghiên cứu về trẻ sơ sinh vốn tập trung vào phụ âm và nguyên âm (Mattock và Burnham, 2006). Với thanh điệu, trẻ Trung Quốc 6 và 9 tháng phân biệt tốt như nhau, còn trẻ Anh kém đi giữa 6 và 9 tháng, nên hẹp dần cũng thấy ở thanh điệu; lộ trình chi tiết ở trẻ Việt thì cần nghiên cứu trực tiếp trên trẻ Việt Nam mới trả lời được.'
+    ly_do: Chữ cũ "phần lớn nghiên cứu… ngôn ngữ không thanh điệu (Anh, Nhật)" không kiểm được; thay bằng điều Mattock & Burnham 2006 nói (kể cả kết quả cho thanh điệu).
+  - cu: Để *giữ* được khả năng phân biệt âm của một ngôn ngữ, trẻ cần tương tác trực tiếp với người nói thứ tiếng ấy — nghe loa thụ động không đủ (Kuhl và cộng sự, 2003).
+    moi: Trong thí nghiệm của Kuhl và cộng sự (2003), trẻ 9 tháng học được cặp âm mới khi tiếp xúc với người thật nhưng không thấy việc học khi xem DVD hay chỉ nghe tiếng; nên chưa thể nói bật loa ngoại ngữ là đủ.
+    ly_do: 'Chữ cũ nói về "giữ được" khả năng phân biệt và "không đủ" (chắc hơn nguồn: thí nghiệm về học lại cặp âm ở 9–10 tháng).'
+  - cu: Con số này đến từ một nghiên cứu năm 1995 với mẫu nhỏ và đang bị tranh cãi mạnh trong văn liệu.
+    moi: Con số này đến từ một nghiên cứu năm 1995 và đang bị tranh cãi trong văn liệu.
+    ly_do: Bỏ "mẫu nhỏ" (cỡ mẫu của Hart & Risley chưa kiểm được trong nguồn đã mở).
+  - cu: Bập bẹ chuẩn (6–8 tháng) cho thấy bộ máy phát âm của trẻ đã sẵn sàng cho ngôn ngữ, và âm sắc của tiếng bập bẹ đã mang "màu" của tiếng mẹ đẻ. Đó là luyện tập, không phải tiếng ồn.
+    moi: Bập bẹ (khoảng 6–8 tháng) là một mốc trong phát triển tiếng nói, thường đến trước từ đầu tiên; giáo trình ghi âm điệu trẻ phát ra đã theo tiếng mẹ đẻ của gia đình (giáo trình nói về giai đoạn cooing).
+    ly_do: Chữ cũ "bộ máy phát âm sẵn sàng", "âm sắc… mang màu của tiếng mẹ đẻ" (cho bập bẹ), "Đó là luyện tập" chưa có nguồn; giáo trình nói âm điệu theo tiếng mẹ đẻ ở cooing.
+  - cu: 'Trẻ không chỉ nhại lại: các em tự tạo ra những câu chưa từng nghe và sửa dần theo quy tắc ngôn ngữ. Bắt chước chỉ là một phần.'
+    moi: Giáo trình ghi Skinner cho rằng trẻ học ngôn ngữ qua củng cố và phản hồi, còn Chomsky (1957) phê bình và đề xuất trẻ sinh ra đã có năng lực học ngôn ngữ; các khung giải thích hiện nay (xem mục "Các lý thuyết giải thích") không dừng ở bắt chước.
+    ly_do: Chữ cũ ("tự tạo ra những câu chưa từng nghe và sửa dần theo quy tắc") không có nguồn đã mở; thay bằng điều giáo trình nói.
+  - cu: '> Đây là quá trình "được cái này, mất cái kia": Kuhl và cộng sự (2006) cho thấy trẻ Mỹ giỏi dần cặp /r/–/l/ trong khi trẻ Nhật kém dần — cùng một quá trình cam kết thần kinh với tiếng mẹ đẻ.'
+    moi: '> Đây là quá trình "được cái này, mất cái kia": Kuhl và cộng sự (2006) thấy trẻ Mỹ giỏi lên ở cặp /r/–/l/ trong khi trẻ Nhật có xu hướng kém đi; các tác giả giải thích bằng sự cam kết thần kinh với tiếng mẹ đẻ.'
+    ly_do: Khớp mức của nguồn (mức giảm ở trẻ Nhật không có ý nghĩa thống kê riêng).
+  - cu: '? Trong thí nghiệm của Werker và Tees (1984), điều gì xảy ra với trẻ học tiếng Anh khi nghe các cặp phụ âm tiếng Hindi?'
+    moi: '? Trong thí nghiệm của Werker và Tees (1984), điều gì xảy ra với trẻ học tiếng Anh khi nghe các cặp phụ âm không có trong tiếng Anh?'
+    ly_do: 'Bỏ "tiếng Hindi" trong câu hỏi: chưa mở được bài gốc nên không kiểm được ngôn ngữ cụ thể.'
+  - cu: '+ Trẻ 6–8 tháng tuổi phân biệt được, nhưng đến 10–12 tháng tuổi thì gần như không còn.
+
+      > Khả năng phân biệt âm lạ mất đi trong khoảng 8–10 tháng tuổi nếu âm đó không xuất hiện trong môi trường của trẻ.'
+    moi: '+ Trẻ 6–8 tháng tuổi phân biệt được, nhưng đến 10–12 tháng tuổi thì khả năng ấy giảm rõ rệt.
+
+      > Khả năng phân biệt âm lạ giảm trong khoảng 6–12 tháng tuổi nếu âm đó không xuất hiện trong môi trường của trẻ.'
+    ly_do: '"gần như không còn" và "8–10 tháng" nói chắc hơn nguồn (Kuhl 2006: giảm giữa 6–8 và 10–12 tháng).'
+  - cu: '? Ở 10–11 tháng tuổi, trẻ hiểu được hàng chục từ nhưng gần như chưa nói được từ nào. Điều này cho thấy gì?
+
+      - Trẻ chậm phát triển ngôn ngữ.
+
+      + Khả năng nghe hiểu đi trước khả năng phát âm nhiều tháng; đếm từ nói được sẽ đánh giá thấp những gì trẻ biết.
+
+      - Trẻ cố tình không chịu nói.
+
+      > Hiểu trước, nói sau là quy luật chung. Cha mẹ nên đọc tín hiệu từ những gì trẻ hiểu (quay lại khi gọi tên, chỉ đúng đồ vật) chứ không chỉ đếm từ trẻ nói ra.'
+    moi: '? Nghiên cứu cho thấy trẻ có thể hiểu một số từ từ khoảng 6 tháng tuổi, khi chưa nói được từ nào. Điều này cho thấy gì?
+
+      - Trẻ chậm phát triển ngôn ngữ.
+
+      + Khả năng nghe hiểu thường đi trước khả năng nói; chỉ đếm từ nói được có thể đánh giá thấp những gì trẻ biết.
+
+      - Trẻ cố tình không chịu nói.
+
+      > Bergelson và Swingley (2012) thấy trẻ 6–9 tháng nhìn đúng hình khi nghe tên các vật quen thuộc, tức đã hiểu một số từ trước khi nói được.'
+    ly_do: Câu cũ ("hàng chục từ", "nhiều tháng", "quy luật chung", lời khuyên đọc tín hiệu) không kiểm được hay là lời khuyên thiếu nhãn; viết lại theo Bergelson & Swingley.
+  - cu: '+ Vì các nghiên cứu sau này (ví dụ Sperry, Sperry và Miller, 2019) ghi nhận trẻ ở cộng đồng thu nhập thấp nghe được nhiều hơn hẳn, và học giới tranh luận về cách đo lẫn ý nghĩa của con số.
+
+      - Vì 30 triệu là con số quá nhỏ so với thực tế.
+
+      > Con số nổi tiếng này dựa trên mẫu nhỏ và cách ngoại suy gây tranh cãi. Điểm đồng thuận hiện nay chỉ dừng ở: trò chuyện trực tiếp, đáp lại trẻ thì tốt cho ngôn ngữ của trẻ — còn con số cụ thể thì chưa chốt được.'
+    moi: '+ Vì các nghiên cứu sau này (ví dụ Sperry, Sperry và Miller, 2019) không ủng hộ khẳng định của Hart và Risley, và học giới tranh luận về cách đo lẫn ý nghĩa của con số.
+
+      - Vì 30 triệu là con số quá nhỏ so với thực tế.
+
+      > Sperry và cộng sự (2019) thấy khác biệt lớn trong từng nhóm thu nhập và cho rằng cách đo của Hart và Risley bỏ sót lời nói của nhiều người chăm sóc; Golinkoff và cộng sự (2019) đáp rằng chất lượng lời nói hướng vào trẻ mới là điều quan trọng. Con số cụ thể vì thế chưa chốt được.'
+    ly_do: 'Chữ cũ: "nghe được nhiều hơn hẳn", "dựa trên mẫu nhỏ", "Điểm đồng thuận hiện nay…" (không có nguồn); viết lại theo Sperry 2019 và Golinkoff 2019.'
+  - cu: '- Fenson, L., Dale'
+    moi: '- Bergelson, E., & Swingley, D. (2012). At 6–9 months, human infants know the meanings of many common nouns. *Proceedings of the National Academy of Sciences*, 109(9), 3253–3258. <https://doi.org/10.1073/pnas.1113380109>
+
+      - Fenson, L., Dale'
+    ly_do: Thêm nguồn mới dùng ở trên (xếp theo chữ cái).
+  - cu: '- Hart, B., & Risley'
+    moi: '- Madigan, S., Prime, H., Graham, S. A., Rodrigues, M., Anderson, N., Khoury, J., & Jenkins, J. M. (2019). Parenting behavior and child language: A meta-analysis. *Pediatrics*, 144(4), e20183556. <https://doi.org/10.1542/peds.2018-3556>
+
+      - Mattock, K., & Burnham, D. (2006). Chinese and English infants'' tone perception: Evidence for perceptual reorganization. *Infancy*, 10(3), 241–265. <https://doi.org/10.1207/s15327078in1003_3>
+
+      - OpenStax. (2020). *Psychology 2e*, chương 9: Lifespan Development. <https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development>
+
+      - Hart, B., & Risley'
+    ly_do: Thêm nguồn mới dùng ở trên.
+  - cu: '- Sperry, D. E., Sperry, L. L., & Miller'
+    moi: '- Strouse, G. A., & Samson, M. (2021). Learning from video: A meta-analysis of the video deficit in children ages 0 to 6 years. *Child Development*, 92(1), e20–e38. <https://doi.org/10.1111/cdev.13429>
+
+      - Tomasello, M., & Farrar, M. J. (1986). Joint attention and early language. *Child Development*, 57(6), 1454–1463. <https://doi.org/10.1111/j.1467-8624.1986.tb00470.x>
+
+      - Tsuji, S., & Cristia, A. (2014). Perceptual attunement in vowels: A meta-analysis. *Developmental Psychobiology*, 56(2), 179–191. <https://doi.org/10.1002/dev.21179>
+
+      - Sperry, D. E., Sperry, L. L., & Miller'
+    ly_do: Thêm nguồn mới dùng ở trên.
+  - cu: 'Hình lo-trinh-hoc-noi: "2–4 tháng: cooing" (chấm ở 1,5 tháng); "~18 tháng: bùng nổ từ vựng"; chú thích "…Các mốc là gần đúng và khác nhau ở từng trẻ; thứ tự các mốc thì rất ổn định."'
+    moi: '"~2 tháng: cooing (ê a)" (chấm ở 2 tháng); "16–24 tháng: ghép từ, vốn từ tăng nhanh"; chú thích "…Trẻ thường đi qua các mốc theo thứ tự này, nhưng các mốc tuổi chỉ là gần đúng và thời điểm khác nhau rất nhiều giữa các trẻ."'
+    ly_do: Review D6-L3, hồ sơ n8, n10 (OpenStax Lifespan Development 3.5; Fenson 1994; lượt 2 quá mạnh ở n10).
+  - cu: '"Các mốc phát âm được ghi nhận khá ổn định:" và "**Những tháng đầu:** tiếng “gừ gừ”…"'
+    moi: '"Trẻ thường đi qua các mốc phát âm theo thứ tự sau; mốc tuổi chỉ là gần đúng ([OpenStax Lifespan Development, mục 3.5](…)):" và "**Từ khoảng 2 tháng:** …"'
+    ly_do: Review D6-L3, hồ sơ n6.
+  - cu: ":::kha-vung[tương tác trực tiếp với người thật giúp trẻ học âm mới hiệu quả hơn hẳn nghe thụ động] … (Strouse và Samson, 2021). Giới hạn: …"
+    moi: ":::kha-vung[… hiệu quả hơn nghe thụ động] … có thể bị ước lượng quá cao, và khoảng chênh nhỏ dần khi trẻ lớn hơn (Strouse và Samson, 2021). Vì vậy không nên trông vào video dạy ngoại ngữ để trẻ sơ sinh tự “thấm” âm. Giới hạn: …"
+    ly_do: Review D6-L3, hồ sơ n27, n29.
+  - cu: ":::bac-bo[cho trẻ xem video dạy ngoại ngữ là đủ để trẻ 'thấm' âm] … :::"
+    moi: (bỏ cả khung; ý chính chuyển vào khung Khá vững ngay trên)
+    ly_do: "Review D6-L3, hồ sơ n29: không đạt thước đo Đã bị bác bỏ; lượt 2 quá mạnh."
+  - cu: '"Khung này hợp với việc các mốc đầu (ê a, bập bẹ, từ đầu tiên) xuất hiện ở độ tuổi gần như nhau ở trẻ nhiều nền văn hóa (theo giáo trình)."'
+    moi: '"Khung này hợp với việc trẻ ở các nền văn hóa khác nhau đạt các mốc ngôn ngữ ở độ tuổi gần như nhau ([OpenStax Lifespan Development, mục 3.5](…))."'
+    ly_do: Review D6-L3, hồ sơ n36.
+  - cu: '"tiếng Việt là **ngôn ngữ thanh điệu** với 6 thanh, còn…"'
+    moi: '"… với 6 thanh (Zhu và cộng sự, 2023), còn…"; thêm Zhu và cộng sự (2023) và OpenStax Lifespan Development vào mục Nguồn'
+    ly_do: "Review D6-L3, hồ sơ n48: nguồn bình duyệt thay Wikipedia."
+  - cu: 'Câu 3: "…dù nghe cùng lượng âm thanh với nhóm gặp người thật?"; đáp án "Vì không có tương tác xã hội trực tiếp — yếu tố “mở cổng” cho việc học ngôn ngữ ở trẻ sơ sinh."'
+    moi: '"…dù nghe cùng thời gian (thậm chí nhiều âm tiết hơn) với nhóm gặp người thật?"; "Vì không có tương tác xã hội trực tiếp, yếu tố mà các tác giả cho là quan trọng với việc học ngôn ngữ ở trẻ nhỏ."'
+    ly_do: Review D6-L3, hồ sơ n57, n22.
