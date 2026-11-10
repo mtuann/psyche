@@ -13,6 +13,7 @@ import { idCu } from './src/plugins/id-cu.mjs';
 import { psycheMarkdown } from './src/plugins/psyche-markdown.mjs';
 import { sapCo } from './src/plugins/sap-co.mjs';
 import { timKiemKhongDau } from './src/tim-kiem/tich-hop.mjs';
+import { XEP_HANG } from './src/tim-kiem/xep-hang.mjs';
 
 const site = 'https://mtuann.github.io';
 const base = DUONG_GOC.replace(/\/$/, ''); // '/psyche'
@@ -61,6 +62,8 @@ export default defineConfig({
 			description: 'Tâm lý học bằng bằng chứng, bằng tiếng Việt, cho người không học chuyên ngành.',
 			defaultLocale: 'root',
 			locales: { root: { label: 'Tiếng Việt', lang: 'vi' } },
+			// Xếp hạng tìm kiếm: src/tim-kiem/xep-hang.mjs
+			pagefind: { ranking: XEP_HANG },
 			// Dấu ψ của site cũ (favicon), vẽ bằng nét để không phụ thuộc font có chữ Hy Lạp
 			logo: { src: './src/assets/logo.svg' },
 			favicon: '/favicon.svg',
