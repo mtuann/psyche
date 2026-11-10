@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/metsamuuronen2025#…
+ban_ghi: nguon/metsamuuronen2025
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:194a24d1dc91b132284f08b99d9d660c545360ebb44acc8b63a3e9962307821a
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/01466216251350159
+    link: https://api.crossref.org/works/10.1177%2F01466216251350159
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/01466216251350159
+    link: https://api.openalex.org/works/doi:10.1177%2F01466216251350159
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Metsämuuronen, J., & Niemensivu, T."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Metsämuuronen, Jari; Niemensivu, Timi
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F01466216251350159
+    luot_2_trich: Jari Metsämuuronen; Timi Niemensivu
+  - id: n2
+    cau: "Năm xuất bản: 2025"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2025; các năm Crossref ghi: 2025"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F01466216251350159
+  - id: n3
+    cau: "Tên: How to make sense of reliability? Common language interpretation of reliability and the relation of reliability to effect size"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: How to Make Sense of Reliability? Common Language Interpretation of Reliability and the Relation of Reliability to Effect Size
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F01466216251350159
+  - id: n4
+    cau: "Nơi đăng: Applied Psychological Measurement, 49(7), 396–416"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Applied Psychological Measurement, tập 49, số 7, trang 396-416
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F01466216251350159
+  - id: n5
+    cau: DOI 10.1177/01466216251350159 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F01466216251350159

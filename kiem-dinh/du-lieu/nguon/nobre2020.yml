@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/nobre2020#…
+ban_ghi: nguon/nobre2020
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:bfd21b98499b8c45f714e9a8547987f908823efe74b3566d31bc402cc5075c79
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.neubiorev.2020.10.005
+    link: https://api.crossref.org/works/10.1016%2Fj.neubiorev.2020.10.005
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.neubiorev.2020.10.005
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2020.10.005
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Nobre, A. D. P., de Melo, G. M., Gauer, G., & Wagemans, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Nobre, Alexandre de Pontes; de Melo, Gabriela Mueller; Gauer, Gustavo; Wagemans, Johan
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2020.10.005
+    luot_2_trich: Alexandre de Pontes Nobre; Gabriela Mueller de Melo; Gustavo Gauer; Johan P. Wagemans
+  - id: n2
+    cau: "Năm xuất bản: 2020"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2020; các năm Crossref ghi: 2020"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2020.10.005
+  - id: n3
+    cau: "Tên: Implicit processing during inattentional blindness: A systematic review and meta-analysis"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Implicit processing during inattentional blindness: A systematic review and meta-analysis"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2020.10.005
+  - id: n4
+    cau: "Nơi đăng: Neuroscience & Biobehavioral Reviews, 119, 355–375"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Neuroscience &amp; Biobehavioral Reviews, tập 119, trang 355-375
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2020.10.005
+  - id: n5
+    cau: DOI 10.1016/j.neubiorev.2020.10.005 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2020.10.005

@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/daderman2023#…
+ban_ghi: nguon/daderman2023
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:67442ac36e90feddb6548aba76ab717c9ef2cc86712851819d7c0639c88ff4b5
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1007/s12144-022-03767-8
+    link: https://api.crossref.org/works/10.1007%2Fs12144-022-03767-8
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1007/s12144-022-03767-8
+    link: https://api.openalex.org/works/doi:10.1007%2Fs12144-022-03767-8
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Dåderman, A. M., Kajonius, P. J., Hallberg, A., Skog, S., & Hellström, Å."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Dåderman, Anna Maria; Kajonius, Petri Juhani; Hallberg, Angela; Skog, Sandra; Hellström, Åke
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs12144-022-03767-8
+    luot_2_trich: Anna Maria Dåderman; Petri Kajonius; Angela Hallberg; Sandra Skog; Åke Hellström
+  - id: n2
+    cau: "Năm xuất bản: 2023"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2022, 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://link.springer.com/article/10.1007/s12144-022-03767-8
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1007/s12144-022-03767-8&resultType=core&format=json
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2022, bản ghi 2023. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Trang Springer: citation_volume 42, issue 33, tr. 29559-29580, ngày in 2023/11, trực tuyến 2022/11/21. Bản ghi dùng năm in 2023. Europe PMC và Semantic Scholar chỉ có bản trực tuyến 2022 (tr. 1-22)."
+  - id: n3
+    cau: "Tên: Leading with a cool head and a warm heart: Trait-based leadership resources linked to task performance, perceived stress, and work engagement"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Leading with a cool head and a warm heart: trait-based leadership resources linked to task performance, perceived stress, and work engagement"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs12144-022-03767-8
+  - id: n4
+    cau: "Nơi đăng: Current Psychology, 42(33), 29559–29580"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Current Psychology, tập 42, số 33, trang 29559-29580
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs12144-022-03767-8
+  - id: n5
+    cau: DOI 10.1007/s12144-022-03767-8 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs12144-022-03767-8

@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/treur2024#…
+ban_ghi: nguon/treur2024
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:7e78bbf90513fff0351c10fd005379ad665247270d5061d5b8ca9afb15588fcf
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1017/s2045796024000623
+    link: https://api.crossref.org/works/10.1017%2Fs2045796024000623
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1017/s2045796024000623
+    link: https://api.openalex.org/works/doi:10.1017%2Fs2045796024000623
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Treur, J. L., Lukas, E., Sallis, H. M., & Wootton, R. E."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Treur, Jorien L.; Lukas, Eva; Sallis, Hannah M.; Wootton, Robyn E.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs2045796024000623
+    luot_2_trich: Jorien L. Treur; Eva Lukas; Hannah Sallis; Robyn E. Wootton
+  - id: n2
+    cau: "Năm xuất bản: 2024"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2024; các năm Crossref ghi: 2024"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs2045796024000623
+  - id: n3
+    cau: "Tên: A guide for planning triangulation studies to investigate complex causal questions in behavioural and psychiatric research"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: A guide for planning triangulation studies to investigate complex causal questions in behavioural and psychiatric research
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs2045796024000623
+  - id: n4
+    cau: "Nơi đăng: Epidemiology and Psychiatric Sciences, 33, e61"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Epidemiology and Psychiatric Sciences, tập 33, trang e61
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs2045796024000623
+  - id: n5
+    cau: DOI 10.1017/s2045796024000623 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1017%2Fs2045796024000623

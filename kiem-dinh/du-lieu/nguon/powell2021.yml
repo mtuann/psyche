@@ -1,0 +1,86 @@
+# Hồ sơ kiểm định (việc dọn nguồn 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/powell2021#…
+ban_ghi: nguon/powell2021
+muc: V1
+lan:
+  - so: 1
+    ngay: 2026-11-09
+    nhanh: them/nguon-don
+    ma_bam: sha256:c95e9c3bd0651864a7e5203eba91576ac1ecde7ff72dc02b19763e2c825ea693
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Opus 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); Claude Sonnet 5.5 (agent riêng) xem Europe PMC, PubMed, Semantic Scholar hay trang nhà xuất bản ở chỗ lệch (plans/lam-lai/bao-cao/don-nguon/doi-luot-2.yml)
+      review: Claude Sonnet 5.5 (agent review dọn nguồn, không làm lượt 1 hay lượt 2), 09/11/2026
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/don-nguon-kiem-mau.yml), đạt, 09/11/2026
+    truong: [ doi, loai, nam, noi_dang, tac_gia, ten ]
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/hop0000176
+    link: https://api.crossref.org/works/10.1037%2Fhop0000176
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/hop0000176
+    link: https://api.openalex.org/works/doi:10.1037%2Fhop0000176
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Powell, R. A., & Schmaltz, R. M."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Powell, Russell A.; Schmaltz, Rodney M.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fhop0000176
+    luot_2_trich: Russell A. Powell; Rodney M. Schmaltz
+  - id: n2
+    cau: "Năm xuất bản: 2021"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2021; các năm Crossref ghi: 2021"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1037/hop0000176&resultType=core&format=json
+    luot_2_ghi_chu: "OpenAlex: năm: nguồn ghi 2020, bản ghi 2021. Người kiểm lượt 2 (Europe PMC, Semantic Scholar hay trang nhà xuất bản): Europe PMC: in 2021 (History of Psychology tập 24 số 2, tr. 164-181), trực tuyến 2020-10-22; tác giả Powell, Schmaltz. Năm 2020 của OpenAlex là năm trực tuyến."
+  - id: n3
+    cau: "Tên: Did Little Albert actually acquire a conditioned fear of furry animals? What the film evidence tells us"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Did Little Albert actually acquire a conditioned fear of furry animals? What the film evidence tells us.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fhop0000176
+  - id: n4
+    cau: "Nơi đăng: History of Psychology, 24(2), 164–181"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: History of Psychology, tập 24, số 2, trang 164-181
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fhop0000176
+  - id: n5
+    cau: DOI 10.1037/hop0000176 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: da-sua
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fhop0000176
+    ghi_chu: "đã sửa (plans/lam-lai/bao-cao/don-nguon/sua.yml, doi): thiếu DOI; hồ sơ thi-nghiem/little-albert dẫn DOI 10.1037/hop0000176, Crossref khớp bản ghi"
