@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L4 phần 1/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L4)
+      review: Claude Sonnet 5.5 (agent review D5-L4, 10/11/2026)
       kiem_mau: null
 nguon:
   - id: petty1986
@@ -50,19 +50,28 @@ nguon:
     ten: 'Tìm kiếm ngày 10/11/2026: Crossref (query.bibliographic), kết quả ghi ở ghi_chu của từng nhận định'
     link: https://api.crossref.org/works
     toan_van: false
+  - id: kruglanski1999
+    ten: "Kruglanski & Thompson (1999), Persuasion by a single route: A view from the unimodel, Psychological Inquiry 10(2), 83-109: tóm tắt (OpenAlex)"
+    link: https://doi.org/10.1207/s15327965pl100201
+    toan_van: false
+  - id: haugtvedt1992
+    ten: "Haugtvedt & Petty (1992), J Pers Soc Psychol 63(2), 308-319: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus); đọc ở review để kiểm độ vững của nhãn n22, không dẫn trên trang"
+    link: https://doi.org/10.1037/0022-3514.63.2.308
+    toan_van: true
 nhan_dinh:
   - id: n1
-    cau: 'Mô tả (description): mô hình ELM của Petty và Cacioppo (1986) cho thấy quảng cáo tác động qua hai đường — trung tâm (lập luận) và ngoại vi (người nổi tiếng, cảm xúc, số lượng lập luận) — tùy việc ta có suy nghĩ kỹ hay không.'
+    cau: "Mô tả (description): mô hình ELM của Petty và Cacioppo (1986) mô tả hai đường mà quảng cáo có thể tác động lên ta — trung tâm (lập luận) và ngoại vi (người nổi tiếng, cảm xúc, số lượng lập luận) — tùy việc ta có suy nghĩ kỹ hay không."
     loai: phat-hien
     nguon:
       - petty1986
     trich: Fig. 1. Central and peripheral routes to persuasion.
     vi_tri: Hình 1
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "cho thấy quảng cáo tác động lên ta qua hai đường". Chữ mới: "mô hình ELM… mô tả"; giữ mô tả. Lý do: ELM là mô hình, "cho thấy" mạnh hơn.'
+    ghi_chu: 'Chữ cũ: "cho thấy quảng cáo tác động lên ta qua hai đường". Chữ mới: "mô hình ELM… mô tả"; giữ mô tả. Lý do: ELM là mô hình, "cho thấy" mạnh hơn. Review (Claude Sonnet 5.5, 10/11/2026): sai (không khớp chữ): hồ sơ ghi chữ mới là "mô tả" nhưng description trên trang vẫn viết "cho thấy quảng cáo tác động lên ta qua hai đường", mạnh hơn nguồn (ELM là mô hình). Đã sửa description thành "mô tả hai đường mà quảng cáo có thể tác động lên ta".'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf", "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion" ]
     luot_2_ghi_chu: Cột 'số lượng lập luận' là dấu hiệu ngoại vi theo Petty & Cacioppo 1984 (n14).
+    review: sai
   - id: n2
     cau: Con đường ta đi không do quảng cáo quyết định một mình mà phụ thuộc vào việc ta có muốn (động lực) và có thể (khả năng) suy nghĩ kỹ hay không.
     loai: phat-hien
@@ -71,9 +80,10 @@ nhan_dinh:
     trich: 'Variables can affect the amount and direction of attitude change by: (A) serving as persuasive arguments, (B) serving as peripheral cues, and/or (C) affecting the extent or direction of issue and argument elaboration.'
     vi_tri: Postulate 3 (mục IV)
     ket_qua: dung
-    ghi_chu: 'G1: khớp. Động lực và khả năng là hai điều kiện của ELM (Fig. 1: "motivation to process", "ability to process").'
+    ghi_chu: 'G1: khớp. Động lực và khả năng là hai điều kiện của ELM (Fig. 1: "motivation to process", "ability to process"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Petty & Cacioppo 1986, Postulate 3 và Hình 1 (động lực và khả năng xử lý).'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
   - id: n3
     cau: 'ELM: khả năng xử lý sâu một thông điệp phụ thuộc vào động lực (vấn đề có liên quan đến ta không) và khả năng (thời gian, kiến thức, sự tập trung); từ đó có hai đường thuyết phục.'
     loai: dinh-nghia
@@ -84,6 +94,8 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. mô tả ELM khớp Hình 1 và mục Introduction của Petty & Cacioppo 1986."
   - id: n4
     cau: 'Đường trung tâm: khi động lực và khả năng đều cao, ta xem xét cẩn thận lập luận; lập luận mạnh hay yếu có ảnh hưởng rõ rệt đến việc thuyết phục.'
     loai: phat-hien
@@ -93,9 +105,10 @@ nhan_dinh:
     trich: influenced primarily by the quality of the arguments in the message
     vi_tri: Petty, Cacioppo & Goldman 1981, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Thuyết phục chỉ xảy ra nếu lập luận thực sự mạnh." Chữ mới: "Lập luận mạnh hay yếu có ảnh hưởng rõ rệt đến việc thuyết phục có xảy ra hay không." Lý do: nguồn chỉ nói lập luận mạnh thuyết phục hơn yếu ở nhóm liên quan cao; "chỉ xảy ra nếu" quá mạnh.'
+    ghi_chu: 'Chữ cũ: "Thuyết phục chỉ xảy ra nếu lập luận thực sự mạnh." Chữ mới: "Lập luận mạnh hay yếu có ảnh hưởng rõ rệt đến việc thuyết phục có xảy ra hay không." Lý do: nguồn chỉ nói lập luận mạnh thuyết phục hơn yếu ở nhóm liên quan cao; "chỉ xảy ra nếu" quá mạnh. Review (Claude Sonnet 5.5, 10/11/2026): dung. Petty, Cacioppo & Goldman 1981 (tóm tắt, bản quét đã OCR): ở liên quan cao thái độ chủ yếu chịu ảnh hưởng của chất lượng lập luận; chữ trên trang không nói "chỉ".'
     luot_2: dung
     luot_2_nguon: [ "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/attitudesandsocialjudgment/petty_cacioppo_goldman_1981_jpsp.pdf", "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
+    review: dung
   - id: n5
     cau: 'Đường ngoại vi: khi động lực hoặc khả năng thấp, ta dựa vào dấu hiệu ngoại vi: người nói nổi tiếng hay đáng tin, cảm xúc dễ chịu, số lượng lập luận, nhạc nền dễ chịu.'
     loai: dinh-nghia
@@ -104,10 +117,11 @@ nhan_dinh:
     trich: number of arguments, pleasant music, visual salience
     vi_tri: Mục VII (các biến ngoại vi); Fig. 1 liệt kê "positive/negative affect; attractive/expert sources; distraction; repetition; number of arguments"
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "người nói có nổi tiếng không, giọng điệu có dễ chịu không, lập luận có nhiều không" và "ai nói, giọng điệu ra sao, nhạc nền có bắt tai không". Chữ mới: "nổi tiếng hay đáng tin, cảm xúc dễ chịu hay không…" và "nhạc nền có dễ chịu không". Lý do: Petty & Cacioppo (1986) không liệt kê "giọng điệu"; liệt kê cảm xúc, nguồn hấp dẫn/chuyên gia, số lập luận, nhạc dễ chịu.'
+    ghi_chu: 'Chữ cũ: "người nói có nổi tiếng không, giọng điệu có dễ chịu không, lập luận có nhiều không" và "ai nói, giọng điệu ra sao, nhạc nền có bắt tai không". Chữ mới: "nổi tiếng hay đáng tin, cảm xúc dễ chịu hay không…" và "nhạc nền có dễ chịu không". Lý do: Petty & Cacioppo (1986) không liệt kê "giọng điệu"; liệt kê cảm xúc, nguồn hấp dẫn/chuyên gia, số lập luận, nhạc dễ chịu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Petty & Cacioppo 1986: số lập luận, nhạc dễ chịu, nguồn hấp dẫn/chuyên gia, cảm xúc là dấu hiệu ngoại vi; không còn "giọng điệu".'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: "'Nhạc nền' là ví dụ về cue cảm xúc (chương nêu 'theme music ... induced a general pleasantness')."
+    review: dung
   - id: n6
     cau: 'Postulate 7: thái độ hình thành qua đường trung tâm bền hơn, khó lung lay hơn trước phản biện, dự đoán hành vi tốt hơn.'
     loai: phat-hien
@@ -117,10 +131,11 @@ nhan_dinh:
     trich: Attitude changes that result mostly from processing issue-relevant arguments (central route) will show greater temporal persistence, greater prediction of behavior, and greater resistance to counterpersuasion
     vi_tri: Petty & Cacioppo 1986, mục VIII; Petty & Wegener 1999, Postulate 7
     ket_qua: dung
-    ghi_chu: 'G1: khớp. Đây là giả thuyết của ELM; đánh giá bằng chứng ở khung nhãn (n22).'
+    ghi_chu: 'G1: khớp. Đây là giả thuyết của ELM; đánh giá bằng chứng ở khung nhãn (n22). Review (Claude Sonnet 5.5, 10/11/2026): sai (trình bày như sự thật): trang viết "Hệ quả quan trọng nhất: thái độ hình thành qua đường trung tâm thường bền hơn…" như điều đã chứng minh, trong khi đó là giả thuyết (Postulate 7) mà khung nhãn xếp Khá vững. Đã sửa thành "Theo ELM, thái độ hình thành qua đường trung tâm thường bền hơn…".'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Đây là giả định của mô hình, không phải kết quả đã chứng minh riêng.
+    review: sai
   - id: n7
     cau: 'Hình elm-routes: sơ đồ ước lệ (động lực và khả năng cao → đường trung tâm → thái độ bền vững, khó lung lay; thấp → đường ngoại vi → thái độ mong manh, dễ đổi).'
     loai: dinh-nghia
@@ -129,9 +144,10 @@ nhan_dinh:
     trich: Attitude changes that result mostly from processing issue-relevant arguments (central route) will show greater temporal persistence
     vi_tri: Fig. 1 và Postulate 7
     ket_qua: dung
-    ghi_chu: 'G1: hình khớp Hình 1 của Petty & Cacioppo (1986); không có số. Lời chú tự nhận là sơ đồ ước lệ.'
+    ghi_chu: 'G1: hình khớp Hình 1 của Petty & Cacioppo (1986); không có số. Lời chú tự nhận là sơ đồ ước lệ. Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): hình ghi "Thái độ bền vững, khó bị lung lay" và "Thái độ mong manh, dễ đổi" như tuyệt đối; Hình 1 của Petty & Cacioppo (1986) ghi "relatively enduring" và "relatively temporary". Đã sửa hình thành "tương đối bền, khó bị lung lay hơn" và "tương đối mong manh, dễ đổi hơn", cả chú thích; thêm elm-routes vào HINH_DA_SUA ở tests/chuyen.test.mjs.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: sai
   - id: n8
     cau: ELM được Petty và Cacioppo đề xuất lần đầu trong cuốn Attitudes and Persuasion (1981), rồi trình bày đầy đủ trong bài tổng quan Advances in Experimental Social Psychology tập 19, tr. 123–205 (1986), và trong sách Communication and Persuasion (Springer, 1986).
     loai: lich-su
@@ -140,10 +156,11 @@ nhan_dinh:
     trich: the ELM, which is based on these two routes (Petty & Cacioppo, 1981a)
     vi_tri: Mục Introduction
     ket_qua: dung
-    ghi_chu: Thông tin xuất bản đã khớp Crossref (V1, site cũ). Sách Springer không mở được.
+    ghi_chu: 'Thông tin xuất bản đã khớp Crossref (V1, site cũ). Sách Springer không mở được. Review (Claude Sonnet 5.5, 10/11/2026): dung. Petty & Cacioppo 1986 gán tên ELM cho sách 1981; thông tin xuất bản khớp Crossref (V1). Ý hai đường có trước từ 1977–1978, trang nói "đề xuất lần đầu trong cuốn sách 1981" theo cách chính chương 1986 dẫn; chấp nhận.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Ý hai đường đã có trước từ Petty 1977 và Petty & Cacioppo 1978; chương 1986 gán tên ELM cho sách 1981.
+    review: dung
   - id: n9
     cau: 'Điểm cốt lõi của bài 1986: cùng một biến số (ví dụ uy tín nguồn tin) có thể tác động qua đường trung tâm hoặc ngoại vi tùy mức xử lý.'
     loai: phat-hien
@@ -154,6 +171,8 @@ nhan_dinh:
     ket_qua: dung
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. khớp Postulate 3 (biến số có thể là lập luận, dấu hiệu ngoại vi, hoặc ảnh hưởng mức xử lý)."
   - id: n10
     cau: 'Petty, Cacioppo và Goldman (1981): sinh viên nghe bài phát biểu ủng hộ kỳ thi tổng hợp cuối khóa; liên quan cá nhân (áp dụng từ năm sau tại chính trường họ, hoặc sau 10 năm khi họ đã ra trường); 8 lập luận mạnh hoặc 8 yếu; nguồn là báo cáo của ủy ban do giáo sư Princeton chủ trì hoặc của một lớp trung học địa phương.'
     loai: phat-hien
@@ -163,10 +182,11 @@ nhan_dinh:
     trich: half of the students heard eight cogent arguments in favor of the recommendation and half heard eight weak arguments
     vi_tri: Petty & Cacioppo 1986, mục VI.A.1 (mô tả lại); bản gốc 1981 mục Method
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "(chính sách áp dụng ngay tại trường của họ từ năm sau, hoặc tại một trường xa lạ sau 10 năm nữa)" (G1: SAI). Chữ mới: "áp dụng tại chính trường của họ từ năm sau, hoặc chỉ có hiệu lực sau 10 năm nữa, khi họ đã ra trường". Lý do: cả hai nhóm nghe về chính trường của mình; chỉ thời điểm khác. Đối chiếu lại: Petty & Cacioppo 1986: "begin in 10 years, thereby affecting no current students".'
+    ghi_chu: 'Chữ cũ: "(chính sách áp dụng ngay tại trường của họ từ năm sau, hoặc tại một trường xa lạ sau 10 năm nữa)" (G1: SAI). Chữ mới: "áp dụng tại chính trường của họ từ năm sau, hoặc chỉ có hiệu lực sau 10 năm nữa, khi họ đã ra trường". Lý do: cả hai nhóm nghe về chính trường của mình; chỉ thời điểm khác. Đối chiếu lại: Petty & Cacioppo 1986: "begin in 10 years, thereby affecting no current students". Review (Claude Sonnet 5.5, 10/11/2026): dung. đọc lại Petty, Cacioppo & Goldman 1981 (bản quét, OCR): thay đổi chính sách trong năm sau hay sau 10 năm; 8 lập luận; Carnegie Commission do giáo sư giáo dục ở Princeton chủ trì hay lớp trung học địa phương.'
     luot_2: dung
     luot_2_nguon: [ "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/attitudesandsocialjudgment/petty_cacioppo_goldman_1981_jpsp.pdf" ]
     luot_2_ghi_chu: "'sau 10 năm khi họ đã ra trường' là suy diễn hợp lý; bài nói thay đổi có hiệu lực sau 10 năm."
+    review: dung
   - id: n11
     cau: 'Kết quả 1981: ở nhóm liên quan cao, lập luận mạnh thuyết phục hơn yếu và nguồn tin không tạo khác biệt có ý nghĩa; ở nhóm liên quan thấp, uy tín nguồn tin có tác dụng còn lập luận mạnh hay yếu không tạo khác biệt có ý nghĩa.'
     loai: phat-hien
@@ -175,9 +195,10 @@ nhan_dinh:
     trich: a source of high expertise produced significantly more agreement than a source of low expertise only under the low-involvement conditions
     vi_tri: Mục Results (Newman-Keuls)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "uy tín nguồn tin quyết định thái độ, còn lập luận mạnh hay yếu không tạo khác biệt đáng kể". Chữ mới: "nguồn tin không tạo khác biệt có ý nghĩa thống kê" (nhóm cao); "uy tín nguồn tin có tác dụng… không tạo khác biệt có ý nghĩa" (nhóm thấp, trong phần quiz). Lý do: "gần như không quan trọng", "quyết định" mạnh hơn kết quả kiểm định; Petty & Cacioppo 1986 ghi tương tác (quality là yếu tố quyết định quan trọng hơn ở nhóm cao so với nhóm thấp).'
+    ghi_chu: 'Chữ cũ: "uy tín nguồn tin quyết định thái độ, còn lập luận mạnh hay yếu không tạo khác biệt đáng kể". Chữ mới: "nguồn tin không tạo khác biệt có ý nghĩa thống kê" (nhóm cao); "uy tín nguồn tin có tác dụng… không tạo khác biệt có ý nghĩa" (nhóm thấp, trong phần quiz). Lý do: "gần như không quan trọng", "quyết định" mạnh hơn kết quả kiểm định; Petty & Cacioppo 1986 ghi tương tác (quality là yếu tố quyết định quan trọng hơn ở nhóm cao so với nhóm thấp). Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): "uy tín nguồn tin quyết định thái độ" mạnh hơn nguồn. Tóm tắt 1981: "attitudes were influenced primarily by the expertise of the source"; Newman-Keuls: nguồn chuyên gia thuyết phục hơn chỉ ở liên quan thấp. Đã sửa thành "thái độ chủ yếu chịu ảnh hưởng của uy tín nguồn tin" và "lập luận … không tạo khác biệt có ý nghĩa thống kê".'
     luot_2: dung
     luot_2_nguon: [ "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/attitudesandsocialjudgment/petty_cacioppo_goldman_1981_jpsp.pdf" ]
+    review: sai
   - id: n12
     cau: 'Petty, Cacioppo và Schumann (1983): quảng cáo tạp chí cho dao cạo dùng một lần hư cấu ("Edge"); lập luận mạnh/yếu × người chứng thực (vận động viên nổi tiếng/người dân thường) × mức quan tâm (cao/thấp).'
     loai: phat-hien
@@ -186,9 +207,10 @@ nhan_dinh:
     trich: was the crucial fictitious
     vi_tri: Mục Method (Experiment)
     ket_qua: dung
-    ghi_chu: 'G1: khớp ("average citizens of Bakersfield, California").'
+    ghi_chu: 'G1: khớp ("average citizens of Bakersfield, California"). Review (Claude Sonnet 5.5, 10/11/2026): dung. 1983 (bản quét, OCR): quảng cáo dao cạo Edge hư cấu; lập luận mạnh/yếu × người nổi tiếng/người dân; quan tâm cao/thấp.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1983-jcr-pettycaciopposchumann.pdf", "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
   - id: n13
     cau: 'Kết quả 1983: người quan tâm cao chỉ bị thuyết phục bởi lập luận mạnh, bất kể ai chứng thực; người quan tâm thấp: người nổi tiếng làm thái độ tốt lên rõ rệt, còn lập luận mạnh hay yếu vẫn có ảnh hưởng nhưng nhỏ hơn nhiều.'
     loai: phat-hien
@@ -197,9 +219,10 @@ nhan_dinh:
     trich: The manipulation of argument quality had a greater impact on attitudes under high than low involvement, but the manipulation of product endorser had a greater impact under low than high involvement.
     vi_tri: Tóm tắt (OpenAlex) và mục Results
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (G1: SAI): "người nổi tiếng chứng thực là đủ, lập luận mạnh yếu không quan trọng" và quiz 2 đáp án "lập luận mạnh hay yếu không tạo khác biệt". Trang đã áp sửa; đối chiếu lại bản quét OCR: Involvement × Endorser F(1,148) = 5,94; ở nhóm thấp chất lượng lập luận vẫn có tác động. Chữ trên trang khớp. Quiz 2 đã sửa (G1) thành "Nhóm ít quan tâm: yếu tố nào có tác dụng mà nhóm cao không → người chứng thực".'
+    ghi_chu: 'Chữ cũ (G1: SAI): "người nổi tiếng chứng thực là đủ, lập luận mạnh yếu không quan trọng" và quiz 2 đáp án "lập luận mạnh hay yếu không tạo khác biệt". Trang đã áp sửa; đối chiếu lại bản quét OCR: Involvement × Endorser F(1,148) = 5,94; ở nhóm thấp chất lượng lập luận vẫn có tác động. Chữ trên trang khớp. Quiz 2 đã sửa (G1) thành "Nhóm ít quan tâm: yếu tố nào có tác dụng mà nhóm cao không → người chứng thực". Review (Claude Sonnet 5.5, 10/11/2026): dung. OCR 1983: tương tác Involvement × Endorser F(1,148) = 5,94; người chứng thực có tác động có ý nghĩa chỉ ở quan tâm thấp (F = 5,96, p < .02), chất lượng lập luận có tác động ở cả hai mức (F = 5,40 thấp; 71,36 cao) và lớn hơn ở mức cao. Đã đổi "rõ rệt" thành "có ý nghĩa thống kê" cho sát nguồn.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1983-jcr-pettycaciopposchumann.pdf" ]
+    review: dung
   - id: n14
     cau: 'Petty và Cacioppo (1984): khi quan tâm thấp, số lượng lập luận ảnh hưởng đến sự thuyết phục bất kể chất lượng; khi quan tâm cao, chỉ chất lượng có tác dụng.'
     loai: phat-hien
@@ -208,9 +231,10 @@ nhan_dinh:
     trich: under low involvement, attitudes were affected by number of arguments but not quality, and under high involvement, attitudes were affected by quality but not by number.
     vi_tri: Mục Results, Attitudes and Thoughts
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Petty & Cacioppo 1984 toàn văn (Internet Archive): ở quan tâm thấp thái độ chịu ảnh hưởng của số lập luận, không của chất lượng; ở cao thì ngược lại.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
+    review: dung
   - id: n15
     cau: Theo cách giải thích của Petty và Cacioppo, ở nhóm quan tâm thấp, "số lượng" lập luận hoạt động như một dấu hiệu đơn giản dẫn đến chấp nhận.
     loai: phat-hien
@@ -219,9 +243,10 @@ nhan_dinh:
     trich: the number of arguments in a message could affect agreement with a communication by serving as a simple acceptance cue when personal involvement was low
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Một danh sách dài các lý do tầm thường có thể ''qua mặt'' người xem lười suy nghĩ — đơn giản vì ''nhiều'' tạo cảm giác ''chắc có lý''". Chữ mới: câu trên. Lý do: "qua mặt", "lười suy nghĩ", "chắc có lý" là cách nói ví von, không có trong nguồn.'
+    ghi_chu: 'Chữ cũ: "Một danh sách dài các lý do tầm thường có thể ''qua mặt'' người xem lười suy nghĩ — đơn giản vì ''nhiều'' tạo cảm giác ''chắc có lý''". Chữ mới: câu trên. Lý do: "qua mặt", "lười suy nghĩ", "chắc có lý" là cách nói ví von, không có trong nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. 1984 tóm tắt: số lập luận có thể là "simple acceptance cue" khi quan tâm thấp.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
+    review: dung
   - id: n16
     cau: 'Trong thí nghiệm 1984, nhóm quan tâm thấp: trung bình thái độ với 9 lập luận yếu là 7,71, với 3 lập luận mạnh là 4,95 (so sánh không được kiểm định riêng).'
     loai: so-lieu
@@ -230,10 +255,11 @@ nhan_dinh:
     trich: conditions, F(l, 158) = 9.12, p < .01, but not
     vi_tri: Mục Results; Table 1 (trung bình các ô; bảng đọc từ ảnh trang)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (Áp dụng 4): "một danh sách 10 lý do tầm thường có sức thuyết phục ngang 3 lý do sắc bén". Chữ mới: "9 lập luận làm thái độ thuận hơn 3 lập luận, bất kể mạnh hay yếu; trung bình… 7,71 … 4,95". Lý do: G1 coi "ngang" khớp số gốc, nhưng Table 1 cho 9 yếu (7,71) cao hơn 3 mạnh (4,95); "10 lý do" cũng không đúng (thí nghiệm dùng 9).'
+    ghi_chu: 'Chữ cũ (Áp dụng 4): "một danh sách 10 lý do tầm thường có sức thuyết phục ngang 3 lý do sắc bén". Chữ mới: "9 lập luận làm thái độ thuận hơn 3 lập luận, bất kể mạnh hay yếu; trung bình… 7,71 … 4,95". Lý do: G1 coi "ngang" khớp số gốc, nhưng Table 1 cho 9 yếu (7,71) cao hơn 3 mạnh (4,95); "10 lý do" cũng không đúng (thí nghiệm dùng 9). Review (Claude Sonnet 5.5, 10/11/2026): sai (thiếu giới hạn trên trang): số 7,71 (9 lập luận yếu) và 4,95 (3 lập luận mạnh) khớp bảng 1 (quan tâm thấp), nhưng so sánh hai ô này bài không kiểm định riêng; trang chưa nói điều đó. Đã thêm "bài không kiểm định riêng so sánh này".'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Số khớp; so sánh yếu-9 với mạnh-3 không phải phép kiểm của bài.
+    review: sai
   - id: n17
     cau: 'Lập luận "12 lợi ích vượt trội" trong quảng cáo: hãy đếm xem có bao nhiêu lợi ích thực sự khác nhau.'
     loai: loi-khuyen
@@ -242,10 +268,11 @@ nhan_dinh:
     trich: increasing the number of arguments in a message could affect persuasion whether or not the actual content of the arguments was scrutinized.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Lời khuyên suy ra từ kết quả n14; ví dụ "12 lợi ích" là minh họa. Chữ cũ: "Lần tới khi thấy quảng cáo liệt kê… hãy đếm xem" giữ; chữ trước đó bỏ "đơn giản vì nhiều tạo cảm giác chắc có lý" (n15). Làm mềm vì chỉ là gợi ý, chưa kiểm trực tiếp.'
+    ghi_chu: 'Lời khuyên suy ra từ kết quả n14; ví dụ "12 lợi ích" là minh họa. Chữ cũ: "Lần tới khi thấy quảng cáo liệt kê… hãy đếm xem" giữ; chữ trước đó bỏ "đơn giản vì nhiều tạo cảm giác chắc có lý" (n15). Làm mềm vì chỉ là gợi ý, chưa kiểm trực tiếp. Review (Claude Sonnet 5.5, 10/11/2026): sai (thiếu giới hạn trên trang): hồ sơ ghi "chưa kiểm trực tiếp" nhưng mục 4 "Cảnh giác với danh sách dài" trên trang không có. Đã thêm "Gợi ý suy ra từ kết quả ấy (chưa kiểm trực tiếp)".'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Lời khuyên là hệ quả trực tiếp của kết quả n14/n16; chưa thấy nghiên cứu thử chính lời khuyên 'đếm lợi ích'.
+    review: sai
   - id: n18
     cau: 'Khung Khá vững: hai đường thuyết phục và vai trò của mức độ liên quan cá nhân (tổng hợp k = 134 nhất quán với dự đoán; phần dấu hiệu ngoại vi dựa vào từng thí nghiệm; Johnson & Eagly 1989: kết quả phụ thuộc loại liên quan; mẫu sinh viên Mỹ).'
     loai: nhan
@@ -256,7 +283,7 @@ nhan_dinh:
       - petty1983
       - petty1984
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: nhãn Vững chắc: "đã được kiểm chứng trong hàng chục thí nghiệm suốt bốn thập kỷ, trong quảng cáo, truyền thông sức khỏe và chính trị. Đây là một trong những mô hình hai-quá-trình được tái lập tốt nhất". Chữ mới: nhãn Khá vững với nội dung ở cột bên. Lý do: G1 KHÔNG KIỂM ĐƯỢC (câu đánh giá chung không nguồn). Tìm được Carpenter 2015 (k = 134, tương tác chất lượng lập luận × kiểu xử lý "generally consistent") và Johnson & Eagly 1989 (kết quả phụ thuộc loại liên quan). Không có nguồn cho "truyền thông sức khỏe và chính trị" hay "được tái lập tốt nhất": bỏ.'
+    ghi_chu: 'Chữ cũ: nhãn Vững chắc: "đã được kiểm chứng trong hàng chục thí nghiệm suốt bốn thập kỷ, trong quảng cáo, truyền thông sức khỏe và chính trị. Đây là một trong những mô hình hai-quá-trình được tái lập tốt nhất". Chữ mới: nhãn Khá vững với nội dung ở cột bên. Lý do: G1 KHÔNG KIỂM ĐƯỢC (câu đánh giá chung không nguồn). Tìm được Carpenter 2015 (k = 134, tương tác chất lượng lập luận × kiểu xử lý "generally consistent") và Johnson & Eagly 1989 (kết quả phụ thuộc loại liên quan). Không có nguồn cho "truyền thông sức khỏe và chính trị" hay "được tái lập tốt nhất": bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững chốt (hạ từ Vững chắc đúng): có phân tích tổng hợp (Carpenter 2015, k = 134, "generally consistent with the hypothesized interaction"; Johnson & Eagly 1989: kết quả phụ thuộc loại liên quan) nhưng chỉ phủ phần chất lượng lập luận × kiểu xử lý; phần dấu hiệu ngoại vi dựa thí nghiệm riêng lẻ; mẫu gốc sinh viên Mỹ; không có tái lập lớn có đăng ký trước. Khớp mục 4 "Khá vững", không đạt "Vững chắc".'
     nhan: kha-vung
     co_so:
       - carpenter2015
@@ -268,6 +295,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1111/hcre.12054", "https://api.openalex.org/works/doi:10.1037/0033-2909.106.2.290", "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: "Nhãn Khá vững đạt thước đo: có phân tích tổng hợp nhưng phần dấu hiệu ngoại vi dựa từng thí nghiệm, mẫu sinh viên Mỹ."
+    review: dung
   - id: n19
     cau: 'Dự đoán cốt lõi: chất lượng lập luận có ảnh hưởng mạnh hơn khi người nhận xử lý kỹ, nhìn chung nhất quán trong một phân tích tổng hợp (k = 134; Carpenter, 2015).'
     loai: tai-lap
@@ -276,10 +304,11 @@ nhan_dinh:
     trich: The data were generally consistent with the hypothesized interaction.
     vi_tri: Tóm tắt
     ket_qua: dung
-    ghi_chu: Chỉ đọc tóm tắt (OpenAlex; toàn văn không mở được), nên chỉ dùng cho điều tóm tắt nói.
+    ghi_chu: 'Chỉ đọc tóm tắt (OpenAlex; toàn văn không mở được), nên chỉ dùng cho điều tóm tắt nói. Review (Claude Sonnet 5.5, 10/11/2026): dung. tóm tắt Carpenter 2015 (OpenAlex): k = 134, "generally consistent with the hypothesized interaction"; Human Communication Research 41(4).'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1111/hcre.12054" ]
     luot_2_ghi_chu: Chỉ đọc được tóm tắt; xuất bản trên Human Communication Research 41(4), 2015.
+    review: dung
   - id: n20
     cau: 'Johnson và Eagly (1989): kết quả của "liên quan" phụ thuộc loại liên quan (giá trị, kết quả cá nhân, ấn tượng với người khác).'
     loai: phat-hien
@@ -288,10 +317,11 @@ nhan_dinh:
     trich: were less persuaded than low-involvement subjects
     vi_tri: Tóm tắt
     ket_qua: dung
-    ghi_chu: Chỉ đọc tóm tắt.
+    ghi_chu: "Chỉ đọc tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. tóm tắt Johnson & Eagly 1989 (OpenAlex): kết quả khác nhau theo ba loại liên quan (giá trị, kết quả, ấn tượng)."
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0033-2909.106.2.290" ]
     luot_2_ghi_chu: Chỉ đọc được tóm tắt.
+    review: dung
   - id: n21
     cau: Các thí nghiệm gốc của ELM làm trên sinh viên Mỹ những năm 1980.
     loai: lich-su
@@ -302,45 +332,52 @@ nhan_dinh:
     trich: Subjects were tested in groups of
     vi_tri: Mục Method của ba bài
     ket_qua: dung
-    ghi_chu: 'G1: khớp (Đại học Missouri, 1981–1984). "Sinh viên" ("undergraduates") theo tóm tắt 1981 và 1983; Missouri/Iowa theo bìa các bài.'
+    ghi_chu: 'G1: khớp (Đại học Missouri, 1981–1984). "Sinh viên" ("undergraduates") theo tóm tắt 1981 và 1983; Missouri/Iowa theo bìa các bài. Review (Claude Sonnet 5.5, 10/11/2026): dung. đúng: ba thí nghiệm gốc làm trên sinh viên đại học Mỹ vào 1981–1984; "những năm 1980" khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/attitudesandsocialjudgment/petty_cacioppo_goldman_1981_jpsp.pdf", "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf", "https://richardepetty.com/wp-content/uploads/2019/01/1983-jcr-pettycaciopposchumann.pdf" ]
+    review: dung
   - id: n22
     cau: 'Khung Khá vững: thái độ qua đường trung tâm bền hơn và dự đoán hành vi tốt hơn (Petty và Wegener 1999 nêu như một giả thuyết); "bền hơn" không có nghĩa là vĩnh viễn.'
     loai: nhan
     nguon:
       - petty1999
       - chaiken1980
+      - haugtvedt1992
     trich: Attitude changes that result mostly from processing issue-relevant arguments (central route) will show greater temporal persistence, greater prediction of behavior, and greater resistance to counterpersuasion
     vi_tri: Postulate 7
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Bài tổng quan của Petty và Wegener (1999) tóm tắt: thái độ hình thành sau khi suy nghĩ kỹ thường tồn tại lâu hơn…". Chữ mới: "…nêu giả thuyết: …". Lý do: Postulate 7 là một giả thuyết của ELM; nguồn đã mở là bài của chính các tác giả. Chaiken (1980, tóm tắt): "content-mediated opinion change would show greater persistence" cùng chiều.'
+    ghi_chu: 'Chữ cũ: "Bài tổng quan của Petty và Wegener (1999) tóm tắt: thái độ hình thành sau khi suy nghĩ kỹ thường tồn tại lâu hơn…". Chữ mới: "…nêu giả thuyết: …". Lý do: Postulate 7 là một giả thuyết của ELM; nguồn đã mở là bài của chính các tác giả. Chaiken (1980, tóm tắt): "content-mediated opinion change would show greater persistence" cùng chiều. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững chốt nhưng sát ranh: nền là Postulate 7 (bài của chính các tác giả), Chaiken 1980 cùng chiều ở mô hình khác, và Haugtvedt & Petty (1992, toàn văn đọc ở review: người nhu cầu nhận thức cao giữ thái độ lâu hơn và chống phản biện tốt hơn) là thêm một nhóm thí nghiệm cùng chiều; chưa có phân tích tổng hợp riêng. Trang ghi rõ "nêu giả thuyết".'
     nhan: kha-vung
     co_so:
       - petty1999
       - chaiken1980
+      - haugtvedt1992
     ly_do: 'Cùng chiều ở hai mô hình độc lập (ELM Postulate 7; Chaiken 1980: thay đổi qua nội dung bền hơn qua nguồn), nhưng nguồn đã mở là bài của chính các tác giả mô hình và thí nghiệm gốc; chưa mở phân tích tổng hợp về độ bền/dự đoán hành vi; mẫu sinh viên Mỹ. Khớp mức Khá vững.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Nhãn Khá vững chấp nhận được; vế 'Petty và Wegener 1999 nêu như giả thuyết' chưa mở được bài đó.
+    review: dung
   - id: n23
-    cau: 'Khung Đang tranh cãi: hai đường có thực sự tách biệt? ELM mô tả hai đầu một đường liên tục; sự đánh đổi không nằm ở việc quá trình có xảy ra hay không mà ở mức tác động lên thái độ, nên hai quá trình có thể cùng chạy; Chaiken (1980) mô tả hai kiểu xử lý tương tự.'
+    cau: "Khung Đang tranh cãi: hai đường có thực sự tách biệt? ELM mô tả hai đầu một đường liên tục; sự đánh đổi không nằm ở việc quá trình có xảy ra hay không mà ở mức tác động lên thái độ, nên hai quá trình có thể cùng chạy; Chaiken (1980) mô tả hai kiểu xử lý tương tự; mô hình đơn đường (Kruglanski & Thompson 1999) cho rằng lập luận và dấu hiệu ngoại vi được xử lý theo cùng một cách."
     loai: nhan
     nguon:
       - petty1999
       - chaiken1980
+      - kruglanski1999
     trich: the postulated tradeoff is not in the occurrence of central and peripheral processes, but in the impact of these processes on attitudes and judgments
     vi_tri: Petty & Wegener 1999, Postulate 6
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "hai quá trình thường chạy đồng thời và tương tác với nhau, chứ không rạch ròi như trong phòng thí nghiệm… hai mô hình bổ sung cho nhau hơn là loại trừ lẫn nhau". Chữ mới: dẫn đúng Postulate 6, bỏ "thường", "bổ sung cho nhau hơn là loại trừ". Lý do: Petty & Wegener chỉ nói quá trình không loại trừ nhau về việc xảy ra; "thường" và quan hệ bổ sung với HSM không có nguồn đã mở.'
+    ghi_chu: 'Chữ cũ: "hai quá trình thường chạy đồng thời và tương tác với nhau, chứ không rạch ròi như trong phòng thí nghiệm… hai mô hình bổ sung cho nhau hơn là loại trừ lẫn nhau". Chữ mới: dẫn đúng Postulate 6, bỏ "thường", "bổ sung cho nhau hơn là loại trừ". Lý do: Petty & Wegener chỉ nói quá trình không loại trừ nhau về việc xảy ra; "thường" và quan hệ bổ sung với HSM không có nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): sai (khung không nói bằng chứng nào mâu thuẫn): khung nhãn Đang tranh cãi chỉ trích Petty & Wegener (1999) và Chaiken (1980), vốn là các mô hình hai quá trình cùng phía, nên người đọc không thấy vì sao "tranh cãi". Tranh cãi thật là mô hình đơn đường (Kruglanski & Thompson 1999, Psychological Inquiry 10(2), 83–109; tóm tắt đọc qua OpenAlex): lập luận và dấu hiệu ngoại vi là hai loại bằng chứng xử lý như nhau, không có hai đường khác bản chất. Đã thêm câu này và nguồn vào khung. Nhãn Đang tranh cãi chốt: hai mô hình cạnh tranh chưa phân xử, không có tổng hợp hay tái lập lớn.'
     nhan: tranh-cai
     co_so:
       - petty1999
       - chaiken1980
+      - kruglanski1999
     ly_do: Chưa có bằng chứng ngã ngũ về việc hai đường có tách biệt hay là một liên tục; bài gốc nêu đánh đổi là ở mức tác động; hai mô hình khác nhau (ELM, HSM) mô tả hiện tượng tương tự. Nhãn tranh cãi được giữ như cũ (G1 không phản đối).
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf", "https://api.openalex.org/works/doi:10.1037/0022-3514.39.5.752" ]
     luot_2_ghi_chu: "Nhãn Đang tranh cãi chấp nhận được: mô hình đơn đường (Kruglanski) cạnh tranh; không có tổng hợp phân xử."
+    review: sai
   - id: n24
     cau: 'Nguyên tắc đa vai trò: cùng một biến số có thể là lập luận, dấu hiệu ngoại vi, hoặc làm tăng hay giảm mức xử lý; không biến số nào "mãi mãi là ngoại vi".'
     loai: phat-hien
@@ -349,9 +386,10 @@ nhan_dinh:
     trich: 'Variables can affect the amount and direction of attitude change by: (A) serving as persuasive arguments, (B) serving as peripheral cues, and/or (C) affecting the extent or direction of issue and argument elaboration.'
     vi_tri: Postulate 3
     ket_qua: dung
-    ghi_chu: 'G1: khớp. Ví dụ "chuyên gia nói vậy thì chắc có cơ sở" là minh họa (gia-dinh).'
+    ghi_chu: 'G1: khớp. Ví dụ "chuyên gia nói vậy thì chắc có cơ sở" là minh họa (gia-dinh). Review (Claude Sonnet 5.5, 10/11/2026): dung. khớp Postulate 3.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
   - id: n25
     cau: 'Xử lý khách quan và thiên lệch: khi suy nghĩ kỹ ta có thể xử lý khách quan hoặc thiên lệch; người đã ghét một thương hiệu có thể soi quảng cáo kỹ hơn để tìm điểm chê (ví dụ giả định).'
     loai: phat-hien
@@ -360,10 +398,11 @@ nhan_dinh:
     trich: In relatively
     vi_tri: Postulate 4, mục V
     ket_qua: dung
-    ghi_chu: 'G1: khớp Postulate 4 (objective vs. biased elaboration, đoạn "relatively objective or a relatively biased manner (Petty & Cacioppo 1981a)"). Ví dụ thương hiệu là giả định (gia-dinh).'
+    ghi_chu: 'G1: khớp Postulate 4 (objective vs. biased elaboration, đoạn "relatively objective or a relatively biased manner (Petty & Cacioppo 1981a)"). Ví dụ thương hiệu là giả định (gia-dinh). Review (Claude Sonnet 5.5, 10/11/2026): dung. khớp Postulate 4 (xử lý khách quan hay thiên lệch); ví dụ thương hiệu là giả định.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Ví dụ thương hiệu là giả định (gia-dinh).
+    review: dung
   - id: n26
     cau: 'Mô hình heuristic-systematic (Chaiken, 1980): xử lý có hệ thống (gần đường trung tâm) và xử lý theo lối tắt (gần đường ngoại vi, dựa vào quy tắc đơn giản như "tôi đồng ý với người tôi quý").'
     loai: phat-hien
@@ -373,10 +412,11 @@ nhan_dinh:
     trich: These findings support the idea that high involvement leads message recipients to employ a systematic information processing strategy
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Người anh em song sinh của ELM… HSM nhấn mạnh nguyên tắc ''đủ dùng'': ta chỉ suy nghĩ đến khi đủ tự tin với kết luận của mình thì dừng", ví dụ "chuyên gia thường đúng". Chữ mới: "Một mô hình tương tự ELM… quy tắc như ''tôi đồng ý với người tôi quý''". Lý do: nguyên tắc "đủ dùng" (sufficiency) không có trong bài 1980 (tìm "sufficien" trong toàn văn: không có); ví dụ "tôi đồng ý với người tôi quý" là ví dụ Petty & Wegener (1999) dẫn Chaiken (1980).'
+    ghi_chu: 'Chữ cũ: "Người anh em song sinh của ELM… HSM nhấn mạnh nguyên tắc ''đủ dùng'': ta chỉ suy nghĩ đến khi đủ tự tin với kết luận của mình thì dừng", ví dụ "chuyên gia thường đúng". Chữ mới: "Một mô hình tương tự ELM… quy tắc như ''tôi đồng ý với người tôi quý''". Lý do: nguyên tắc "đủ dùng" (sufficiency) không có trong bài 1980 (tìm "sufficien" trong toàn văn: không có); ví dụ "tôi đồng ý với người tôi quý" là ví dụ Petty & Wegener (1999) dẫn Chaiken (1980). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chaiken 1980 toàn văn (Internet Archive, mở lại): xử lý có hệ thống khi quan tâm cao; người truyền thông được ưa thích (likable communicator) là ví dụ cue lối tắt; không có nguyên tắc "đủ dùng" (sufficiency) trong bài.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.39.5.752", "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Quy tắc 'tôi đồng ý với người tôi quý' là ví dụ thường gặp; tóm tắt nêu 'likable communicator'.
+    review: dung
   - id: n27
     cau: 'Áp dụng 1: với món đắt tiền hay ảnh hưởng lâu dài hãy đi đường trung tâm; với món rẻ, mua nhanh theo cảm tính không phải là "dại" vì không phải thông điệp nào cũng đáng xử lý sâu; lời khuyên suy ra từ ELM, chưa kiểm trực tiếp. (nhãn Khá vững)'
     loai: nhan
@@ -385,7 +425,7 @@ nhan_dinh:
     trich: 'Variables can affect the amount and direction of attitude change by: (A) serving as persuasive arguments, (B) serving as peripheral cues, and/or (C) affecting the extent or direction of issue and argument elaboration.'
     vi_tri: Postulate 3
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "đó là cách não tiết kiệm năng lượng hợp lý". Chữ mới: "theo ELM, không phải thông điệp nào cũng đáng xử lý sâu… (suy ra từ ELM, chưa được kiểm trực tiếp)". Lý do: "tiết kiệm năng lượng" là suy diễn không nguồn.'
+    ghi_chu: 'Chữ cũ: "đó là cách não tiết kiệm năng lượng hợp lý". Chữ mới: "theo ELM, không phải thông điệp nào cũng đáng xử lý sâu… (suy ra từ ELM, chưa được kiểm trực tiếp)". Lý do: "tiết kiệm năng lượng" là suy diễn không nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Trang đã ghi "Lời khuyên này suy ra từ ELM, chưa được kiểm trực tiếp"; nhãn Khá vững áp cho nền của lời khuyên (ELM), không cho hiệu quả của lời khuyên (sát ranh, xem n29).'
     nhan: kha-vung
     co_so:
       - petty1983
@@ -395,6 +435,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Lời khuyên suy từ mô hình, trang đã ghi chưa kiểm trực tiếp; nhãn Khá vững áp cho mô hình, không cho từng lời khuyên.
+    review: dung
   - id: n28
     cau: 'Áp dụng 2: theo ELM, thông điệp nhắm vào đường ngoại vi dựa vào dấu hiệu như người nổi tiếng, nhạc dễ chịu, số lượng lập luận; gợi ý (suy ra từ ELM): tăng động lực và khả năng xử lý — dừng lại, tìm nguồn gốc, hỏi lập luận và bằng chứng là gì.'
     loai: nhan
@@ -403,7 +444,7 @@ nhan_dinh:
     trich: number of arguments, pleasant music, visual salience
     vi_tri: Mục VII
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Các chiến dịch nhắm vào đường ngoại vi thường dùng: hình ảnh cảm xúc mạnh, khẩu hiệu ngắn gọn, nhạc nền, người nổi tiếng ủng hộ. Cách tự vệ theo ELM rất đơn giản…". Chữ mới: bỏ khẳng định về các chiến dịch thực tế và "rất đơn giản"; nêu là gợi ý. Lý do: không nguồn về chiến dịch thực tế; "khẩu hiệu ngắn gọn, hình ảnh cảm xúc mạnh" không có trong nguồn.'
+    ghi_chu: 'Chữ cũ: "Các chiến dịch nhắm vào đường ngoại vi thường dùng: hình ảnh cảm xúc mạnh, khẩu hiệu ngắn gọn, nhạc nền, người nổi tiếng ủng hộ. Cách tự vệ theo ELM rất đơn giản…". Chữ mới: bỏ khẳng định về các chiến dịch thực tế và "rất đơn giản"; nêu là gợi ý. Lý do: không nguồn về chiến dịch thực tế; "khẩu hiệu ngắn gọn, hình ảnh cảm xúc mạnh" không có trong nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Trang đã ghi "Một gợi ý suy ra từ ELM (chưa kiểm trực tiếp)"; nhãn như n27.'
     nhan: kha-vung
     co_so:
       - petty1983
@@ -413,6 +454,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf", "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Suy luận từ mô hình; trang đã ghi.
+    review: dung
   - id: n29
     cau: 'Áp dụng 3: khi bạn muốn thuyết phục: sếp đang cân nhắc kỹ thì đầu tư vào số liệu và lập luận chắc; khách lướt qua trong 3 giây thì thông điệp dễ nhớ, nguồn đáng tin; đi đường ngoại vi không phải giấy phép để lừa dối.'
     loai: nhan
@@ -422,7 +464,7 @@ nhan_dinh:
     trich: The manipulation of argument quality had a greater impact on attitudes under high than low involvement, but the manipulation of product endorser had a greater impact under low than high involvement.
     vi_tri: Petty, Cacioppo & Schumann 1983, tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Giữ chữ; suy ra từ kết quả 1981, 1983 (liên quan cao: lập luận; thấp: người chứng thực). "3 giây", "dễ nhớ, hình ảnh đẹp" là minh họa. Làm mềm: đây là gợi ý, không kiểm trực tiếp; lời "không phải giấy phép để lừa dối" là lời khuyên đạo đức của trang.'
+    ghi_chu: 'Giữ chữ; suy ra từ kết quả 1981, 1983 (liên quan cao: lập luận; thấp: người chứng thực). "3 giây", "dễ nhớ, hình ảnh đẹp" là minh họa. Làm mềm: đây là gợi ý, không kiểm trực tiếp; lời "không phải giấy phép để lừa dối" là lời khuyên đạo đức của trang. Review (Claude Sonnet 5.5, 10/11/2026): sai (thiếu giới hạn trên trang): mục "Khi bạn là người muốn thuyết phục" không ghi chưa kiểm trực tiếp như hồ sơ nói. Đã thêm "(Gợi ý này suy ra từ ELM, chưa được kiểm trực tiếp.)". Nhãn Khá vững gắn với nền ELM, chốt nhưng sát ranh vì chính lời khuyên chưa có thí nghiệm.'
     nhan: kha-vung
     co_so:
       - petty1983
@@ -432,6 +474,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1983-jcr-pettycaciopposchumann.pdf", "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/attitudesandsocialjudgment/petty_cacioppo_goldman_1981_jpsp.pdf" ]
     luot_2_ghi_chu: "'Khách lướt 3 giây' là ví dụ minh họa."
+    review: sai
   - id: n30
     cau: 'Áp dụng 4: lời khuyên cảnh giác với danh sách dài (xem n16).'
     loai: nhan
@@ -440,7 +483,7 @@ nhan_dinh:
     trich: increasing the number of arguments in a message could affect persuasion whether or not the actual content of the arguments was scrutinized.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: Như n16–n17.
+    ghi_chu: 'Như n16–n17. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững cho nền kết quả 1984 (số lập luận là dấu hiệu ngoại vi khi quan tâm thấp); đã thêm "chưa kiểm trực tiếp" cho lời khuyên (xem n17).'
     nhan: kha-vung
     co_so:
       - petty1983
@@ -449,17 +492,19 @@ nhan_dinh:
     ly_do: 'Nhãn của mục Áp dụng: lời khuyên suy ra từ ELM; các thí nghiệm gốc (1981, 1983, 1984) cùng chiều nhưng là thí nghiệm riêng lẻ trên sinh viên Mỹ, lời khuyên chưa kiểm trực tiếp ngoài phòng thí nghiệm. Khá vững (khớp khung n18).'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
+    review: dung
   - id: n31
     cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm chứng ELM trực tiếp (thao túng chất lượng lập luận và mức liên quan) trên người Việt.
     loai: thoi-su
     nguon:
       - tim-kiem-vn
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu nào kiểm chứng ELM trực tiếp trên người Việt." Chữ mới thêm mốc và nêu rõ "trực tiếp" nghĩa là thao túng chất lượng lập luận và mức liên quan. Tìm 10/11/2026 trên Crossref: "elaboration likelihood model experiment Vietnamese participants argument quality", "elaboration likelihood model Vietnam consumers": có các nghiên cứu khảo sát dùng khung ELM (ví dụ mua hàng qua livestream, đánh giá trực tuyến) nhưng không thấy thí nghiệm thao túng như thiết kế gốc. Chưa tìm Google Scholar hay tạp chí trong nước.'
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu nào kiểm chứng ELM trực tiếp trên người Việt." Chữ mới thêm mốc và nêu rõ "trực tiếp" nghĩa là thao túng chất lượng lập luận và mức liên quan. Tìm 10/11/2026 trên Crossref: "elaboration likelihood model experiment Vietnamese participants argument quality", "elaboration likelihood model Vietnam consumers": có các nghiên cứu khảo sát dùng khung ELM (ví dụ mua hàng qua livestream, đánh giá trực tuyến) nhưng không thấy thí nghiệm thao túng như thiết kế gốc. Chưa tìm Google Scholar hay tạp chí trong nước. Review (Claude Sonnet 5.5, 10/11/2026): dung. thời sự có mốc 11/2026, hạn 2027-11-01, nguồn tim-kiem-vn; câu nói rõ "kiểm chứng trực tiếp" nghĩa là gì.'
     het_han: '2027-11-01'
     luot_2: dung
     luot_2_nguon: [ "https://api.crossref.org/works?query=elaboration%20likelihood%20model%20Vietnam%20consumers%20argument%20quality&rows=6" ]
     luot_2_ghi_chu: Câu 'chưa tìm thấy' có mốc 11/2026; tìm kiếm hạn chế.
+    review: dung
   - id: n32
     cau: 'Ví dụ giả định: món rẻ → người mua có thể chọn theo người nổi tiếng chứng thực; quyết định lớn (mua nhà, chọn trường cho con) → hỏi kỹ, so sánh nhiều nguồn; suy luận từ ELM, chưa phải kết quả nghiên cứu trên người Việt.'
     loai: phat-hien
@@ -468,10 +513,11 @@ nhan_dinh:
     trich: The manipulation of argument quality had a greater impact on attitudes under high than low involvement, but the manipulation of product endorser had a greater impact under low than high involvement.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "quảng cáo ở Việt Nam dùng người nổi tiếng và KOL chứng thực rất phổ biến — mỹ phẩm, điện thoại, thực phẩm chức năng — đúng như dự đoán của ELM… người Việt thường hỏi han kỹ người quen". Chữ mới: ví dụ giả định có điều kiện. Lý do: các quan sát về quảng cáo ở Việt Nam không có nguồn.'
+    ghi_chu: 'Chữ cũ: "quảng cáo ở Việt Nam dùng người nổi tiếng và KOL chứng thực rất phổ biến — mỹ phẩm, điện thoại, thực phẩm chức năng — đúng như dự đoán của ELM… người Việt thường hỏi han kỹ người quen". Chữ mới: ví dụ giả định có điều kiện. Lý do: các quan sát về quảng cáo ở Việt Nam không có nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. ví dụ giả định có điều kiện "có thể", ghi rõ suy luận từ ELM, chưa phải kết quả trên người Việt.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: Không trái nhận định nào; ghi 'chưa phải kết quả trên người Việt'.
+    review: dung
   - id: n33
     cau: 'Ngộ nhận: ELM không phán xét đạo đức; đường ngoại vi là lối tắt hợp lý khi thiếu thời gian, kiến thức hoặc vấn đề không đáng suy nghĩ nhiều; không ai có thể đi đường trung tâm cho mọi quyết định.'
     loai: phat-hien
@@ -480,9 +526,10 @@ nhan_dinh:
     trich: 'Variables can affect the amount and direction of attitude change by: (A) serving as persuasive arguments, (B) serving as peripheral cues, and/or (C) affecting the extent or direction of issue and argument elaboration.'
     vi_tri: Postulate 3 (động lực và khả năng quyết định mức xử lý)
     ket_qua: da-lam-mem
-    ghi_chu: 'Giữ chữ nhưng làm mềm "hợp lý" thành điều theo ELM (mô hình mô tả, không đánh giá). Lý do: "không ai… có thể" là phát biểu chung không đo trực tiếp.'
+    ghi_chu: 'Giữ chữ nhưng làm mềm "hợp lý" thành điều theo ELM (mô hình mô tả, không đánh giá). Lý do: "không ai… có thể" là phát biểu chung không đo trực tiếp. Review (Claude Sonnet 5.5, 10/11/2026): dung. câu chung "không ai có thể… đi đường trung tâm cho mọi quyết định" là nhận xét hợp lý đi kèm mô tả ELM (động lực và khả năng giới hạn); chấp nhận.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
   - id: n34
     cau: 'Ngộ nhận "Quảng cáo chỉ dùng đường ngoại vi": một quảng cáo có thể đưa thông số chi tiết (đường trung tâm) hoặc dùng người nổi tiếng (ngoại vi); thí nghiệm 1983 thấy cả chất lượng lập luận lẫn người chứng thực có tác động, tùy mức quan tâm.'
     loai: phat-hien
@@ -491,9 +538,10 @@ nhan_dinh:
     trich: The manipulation of argument quality had a greater impact on attitudes under high than low involvement, but the manipulation of product endorser had a greater impact under low than high involvement.
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Quảng cáo ô tô, bảo hiểm, bất động sản thường đầy ắp thông số và so sánh chi tiết… vì người mua những thứ này thường suy nghĩ kỹ." Chữ mới: câu trên. Lý do: khẳng định về quảng cáo thực tế (ô tô, bảo hiểm, bất động sản) không có nguồn; thay bằng kết quả 1983.'
+    ghi_chu: 'Chữ cũ: "Quảng cáo ô tô, bảo hiểm, bất động sản thường đầy ắp thông số và so sánh chi tiết… vì người mua những thứ này thường suy nghĩ kỹ." Chữ mới: câu trên. Lý do: khẳng định về quảng cáo thực tế (ô tô, bảo hiểm, bất động sản) không có nguồn; thay bằng kết quả 1983. Review (Claude Sonnet 5.5, 10/11/2026): dung. 1983: cả chất lượng lập luận lẫn người chứng thực đều có tác động tùy mức quan tâm (xem n13).'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1983-jcr-pettycaciopposchumann.pdf" ]
+    review: dung
   - id: n35
     cau: 'Ngộ nhận "Bị thuyết phục qua đường ngoại vi thì quyết định vô giá trị": theo ELM, thái độ qua đường ngoại vi kém bền, kém dự đoán hành vi và dễ đổi hơn, nhưng đó là mức độ chứ không phải vô giá trị.'
     loai: phat-hien
@@ -502,10 +550,11 @@ nhan_dinh:
     trich: Attitude changes that result mostly from processing issue-relevant arguments (central route) will show greater temporal persistence, greater prediction of behavior, and greater resistance to counterpersuasion than attitude changes that result mostly from peripheral cues.
     vi_tri: Postulate 7
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Thái độ hình thành qua đường ngoại vi vẫn ảnh hưởng hành vi trong ngắn hạn (ví dụ mua hàng bốc đồng khi đang vui). Nó chỉ kém bền và dễ đổi hơn." Chữ mới: câu trên. Lý do: ví dụ "mua hàng bốc đồng" và khẳng định ảnh hưởng hành vi ngắn hạn không có nguồn; Postulate 7 nói "kém dự đoán hành vi" so với đường trung tâm, không nói "vẫn ảnh hưởng".'
+    ghi_chu: 'Chữ cũ: "Thái độ hình thành qua đường ngoại vi vẫn ảnh hưởng hành vi trong ngắn hạn (ví dụ mua hàng bốc đồng khi đang vui). Nó chỉ kém bền và dễ đổi hơn." Chữ mới: câu trên. Lý do: ví dụ "mua hàng bốc đồng" và khẳng định ảnh hưởng hành vi ngắn hạn không có nguồn; Postulate 7 nói "kém dự đoán hành vi" so với đường trung tâm, không nói "vẫn ảnh hưởng". Review (Claude Sonnet 5.5, 10/11/2026): dung. Postulate 7: kém bền, kém dự đoán hành vi và kém chống phản biện "tương đối" (mostly); trang viết "mức độ".'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
     luot_2_ghi_chu: "'Mức độ' đúng chữ; chương nói 'mostly'."
+    review: dung
   - id: n36
     cau: 'Ngộ nhận "Cùng quảng cáo thì mọi người đi chung một đường": đường nào phụ thuộc vào động lực và khả năng của từng người xem; quảng cáo đầy số liệu vẫn có thể chỉ tác động qua dấu hiệu ngoại vi nếu người xem thiếu động lực hay khả năng xử lý (sự phân tâm là một yếu tố ELM nêu).'
     loai: phat-hien
@@ -514,25 +563,28 @@ nhan_dinh:
     trich: distraction; repetition
     vi_tri: Fig. 1, mục IV.C và V.A (Distraction)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "…chỉ tác động qua... nhạc nền bắt tai, nếu người xem đang mệt." Chữ mới: "nếu người xem thiếu động lực hay khả năng xử lý (ELM nêu cả sự phân tâm…)". Lý do: "đang mệt" không có trong nguồn; sự phân tâm (distraction) có.'
+    ghi_chu: 'Chữ cũ: "…chỉ tác động qua... nhạc nền bắt tai, nếu người xem đang mệt." Chữ mới: "nếu người xem thiếu động lực hay khả năng xử lý (ELM nêu cả sự phân tâm…)". Lý do: "đang mệt" không có trong nguồn; sự phân tâm (distraction) có. Review (Claude Sonnet 5.5, 10/11/2026): dung. Hình 1 và mục V.A: sự phân tâm (distraction) làm giảm xử lý.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
   - id: n37
     cau: 'Đọc thêm: Vì sao ta làm theo số đông? (sự phù hợp qua thí nghiệm Asch); Định kiến hình thành thế nào? (phân loại nhóm, tiếp xúc liên nhóm và thiên kiến ngầm).'
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "bằng chứng xã hội trong thuyết phục"; "thuyết phục có thay đổi được định kiến?". Chữ mới: mô tả đúng nội dung hai trang. Đã kiểm trang phu-hop-so-dong (không bàn "bằng chứng xã hội" trong quảng cáo) và dinh-kien (không bàn thuyết phục).'
+    ghi_chu: 'Chữ cũ: "bằng chứng xã hội trong thuyết phục"; "thuyết phục có thay đổi được định kiến?". Chữ mới: mô tả đúng nội dung hai trang. Đã kiểm trang phu-hop-so-dong (không bàn "bằng chứng xã hội" trong quảng cáo) và dinh-kien (không bàn thuyết phục). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: kham-pha/tam-ly-xa-hoi/phu-hop-so-dong (sự phù hợp qua Asch) và dinh-kien (phân loại nhóm, tiếp xúc, thiên kiến ngầm) có trong trang.yml và tồn tại; mô tả khớp nội dung.'
+    review: dung
   - id: n38
-    cau: 'Quiz 1: yếu tố quyết định sinh viên bị thuyết phục bởi chất lượng lập luận hay uy tín nguồn là mức độ liên quan cá nhân (cao: lập luận; thấp: uy tín nguồn).'
+    cau: "Quiz 1: yếu tố quyết định sinh viên chủ yếu bị thuyết phục bởi chất lượng lập luận hay bởi uy tín nguồn là mức độ liên quan cá nhân (cao: lập luận; thấp: uy tín nguồn)."
     loai: phat-hien
     nguon:
       - petty1981
     trich: influenced primarily by the quality of the arguments in the message | influenced primarily by the expertise of the
     vi_tri: Tóm tắt (OpenAlex) bài 1981
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh nhẹ): đáp án "liên quan cao thì chất lượng lập luận quyết định, liên quan thấp thì uy tín nguồn tin quyết định" mạnh hơn nguồn ("influenced primarily by"). Đã sửa thành "chủ yếu chịu ảnh hưởng của".'
     luot_2: dung
     luot_2_nguon: [ "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/attitudesandsocialjudgment/petty_cacioppo_goldman_1981_jpsp.pdf" ]
+    review: sai
   - id: n39
     cau: 'Quiz 2: với nhóm ít quan tâm, người chứng thực nổi tiếng làm thay đổi thái độ mà ở nhóm quan tâm cao thì không; chất lượng lập luận có tác dụng ở cả hai nhóm nhưng mạnh hơn nhiều ở nhóm cao.'
     loai: phat-hien
@@ -541,9 +593,10 @@ nhan_dinh:
     trich: The manipulation of argument quality had a greater impact on attitudes under high than low involvement, but the manipulation of product endorser had a greater impact under low than high involvement.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ (G1: SAI): "…lập luận mạnh hay yếu không tạo khác biệt." Trang đã áp sửa G1; thêm "có ý nghĩa thống kê" vào lời giải thích để khớp "only under low involvement (F(1,148) = 5,94…)" (tương tác); "nổi tiếng" thay cho "chứng thực" giữ.'
+    ghi_chu: 'Chữ cũ (G1: SAI): "…lập luận mạnh hay yếu không tạo khác biệt." Trang đã áp sửa G1; thêm "có ý nghĩa thống kê" vào lời giải thích để khớp "only under low involvement (F(1,148) = 5,94…)" (tương tác); "nổi tiếng" thay cho "chứng thực" giữ. Review (Claude Sonnet 5.5, 10/11/2026): dung. 1983 OCR: người chứng thực có tác động có ý nghĩa chỉ ở quan tâm thấp; lập luận có tác động ở cả hai mức nhưng lớn hơn rõ ở mức cao; giải thích quiz khớp, không dựa vào vị trí lựa chọn.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1983-jcr-pettycaciopposchumann.pdf" ]
+    review: dung
   - id: n40
     cau: 'Quiz 3: thái độ qua đường trung tâm bền hơn theo thời gian, khó bị lung lay hơn bởi lập luận phản biện, và dự đoán hành vi tốt hơn (theo ELM).'
     loai: phat-hien
@@ -552,9 +605,10 @@ nhan_dinh:
     trich: Attitude changes that result mostly from processing issue-relevant arguments (central route) will show greater temporal persistence, greater prediction of behavior, and greater resistance to counterpersuasion
     vi_tri: Postulate 7
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Postulate 7; trang ghi "Theo ELM".'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
   - id: n41
     cau: 'Quiz 4: khi người nghe ít suy nghĩ kỹ, liệt kê nhiều lập luận càng thuyết phục, bất kể mạnh hay yếu.'
     loai: phat-hien
@@ -563,9 +617,10 @@ nhan_dinh:
     trich: under low involvement, attitudes were affected by number of arguments but not quality
     vi_tri: Mục Results
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. 1984: khi quan tâm thấp, số lập luận ảnh hưởng, chất lượng thì không.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1984-jpsp-pettycacioppo.pdf" ]
+    review: dung
   - id: n42
     cau: 'Quiz 5: nguyên tắc đa vai trò: cùng một yếu tố có thể là dấu hiệu ngoại vi khi ta lười suy nghĩ, nhưng thành lập luận được cân nhắc khi ta suy nghĩ kỹ.'
     loai: phat-hien
@@ -574,14 +629,16 @@ nhan_dinh:
     trich: serving as persuasive arguments, (B) serving as peripheral cues
     vi_tri: Postulate 3
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Postulate 3; "lười suy nghĩ" là cách nói thường, chấp nhận.'
     luot_2: dung
     luot_2_nguon: [ "https://richardepetty.com/wp-content/uploads/2019/01/1986-advances-pettycacioppo.pdf" ]
+    review: dung
   - id: n43
     cau: Hộp "Tóm tắt nhanh" (::tom-tat) dựng từ ý chính của các khung nhãn của trang.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: ::tom-tat đọc các khung nhãn của trang (src/plugins/thanh-phan.mjs).'
+    ghi_chu: 'Đã kiểm: ::tom-tat đọc các khung nhãn của trang (src/plugins/thanh-phan.mjs). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: ::tom-tat dựng từ các khung nhãn (src/plugins/thanh-phan.mjs).'
+    review: dung
 doi_chu:
   - cu: (không có)
     moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
@@ -616,3 +673,27 @@ doi_chu:
   - cu: '"Đọc thêm" (bằng chứng xã hội; thuyết phục thay đổi định kiến)'
     moi: Mô tả đúng nội dung hai trang
     ly_do: n37.
+  - cu: 'description: "Mô hình ELM … cho thấy quảng cáo tác động lên ta qua hai đường — …"'
+    moi: '"Mô hình ELM … mô tả hai đường mà quảng cáo có thể tác động lên ta — …"'
+    ly_do: Review n1.
+  - cu: '"Hệ quả quan trọng nhất: thái độ hình thành qua đường trung tâm thường bền hơn, …"'
+    moi: '"Theo ELM, thái độ hình thành qua đường trung tâm thường bền hơn, …"'
+    ly_do: Review n6.
+  - cu: 'hình elm-routes: "Thái độ bền vững / khó bị lung lay", "Thái độ mong manh / dễ đổi", chú thích tương ứng'
+    moi: '"Thái độ tương đối bền / khó bị lung lay hơn", "Thái độ tương đối mong manh / dễ đổi hơn"; chú thích "thường tạo thái độ tương đối bền …"'
+    ly_do: 'Review n7: Petty & Cacioppo 1986 Hình 1 dùng "relatively".'
+  - cu: 'Petty–Cacioppo–Goldman 1981: "uy tín nguồn tin quyết định thái độ, còn lập luận mạnh hay yếu không tạo khác biệt đáng kể"; quiz 1: "chất lượng lập luận quyết định … uy tín nguồn tin quyết định"'
+    moi: '"thái độ chủ yếu chịu ảnh hưởng của uy tín nguồn tin, còn lập luận … không tạo khác biệt có ý nghĩa thống kê"; quiz: "chủ yếu chịu ảnh hưởng của …"'
+    ly_do: Review n11, n38.
+  - cu: '1983: "người nổi tiếng chứng thực làm thái độ tốt lên rõ rệt"'
+    moi: '"… làm thái độ tốt lên có ý nghĩa thống kê"'
+    ly_do: Review n13.
+  - cu: 'Áp dụng 4: "trung bình … 9 lập luận yếu (7,71) cao hơn … 3 lập luận mạnh (4,95). Lần tới khi thấy quảng cáo …, hãy đếm …"'
+    moi: 'thêm "bài không kiểm định riêng so sánh này. Gợi ý suy ra từ kết quả ấy (chưa kiểm trực tiếp): …"'
+    ly_do: Review n16, n17.
+  - cu: Áp dụng 3 không ghi giới hạn
+    moi: thêm "(Gợi ý này suy ra từ ELM, chưa được kiểm trực tiếp.)"
+    ly_do: Review n29.
+  - cu: "Khung Đang tranh cãi: chỉ nêu ELM, Petty & Wegener, Chaiken"
+    moi: thêm mô hình đơn đường (Kruglanski & Thompson, 1999) và dòng trong Nguồn
+    ly_do: "Review n23: khung cần nói điều gì tạo tranh cãi."

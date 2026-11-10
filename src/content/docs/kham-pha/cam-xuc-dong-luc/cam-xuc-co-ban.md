@@ -95,7 +95,7 @@ Nhiều công ty quảng cáo phần mềm nhận biết cảm xúc từ khuôn 
 
 ### 3. Chú ý "quy tắc biểu hiện" khi giao tiếp đa văn hóa :nhan[kha-vung]
 
-Chính Ekman cũng thừa nhận: văn hóa quy định cảm xúc nào được phép thể hiện, với ai, lúc nào. Một khảo sát ở 32 nước thấy ở đâu người ta cũng biểu lộ nhiều hơn với người trong nhóm so với người ngoài nhóm, còn mức biểu lộ chung và chuẩn mực cho từng cảm xúc khác nhau giữa văn hóa đề cao cá nhân và văn hóa đề cao tập thể (Matsumoto và cộng sự, 2008). Hiểu điều này giúp ta tránh suy diễn "họ lạnh lùng" hay "họ không quan tâm" chỉ vì nét mặt ít biểu cảm.
+Chính Ekman cũng thừa nhận: văn hóa quy định cảm xúc nào được phép thể hiện, với ai, lúc nào. Một khảo sát ở 32 nước thấy ở đâu người ta cũng biểu lộ nhiều hơn với người trong nhóm so với người ngoài nhóm, còn mức biểu lộ chung và chuẩn mực cho từng cảm xúc khác nhau giữa văn hóa đề cao cá nhân và văn hóa đề cao tập thể (Matsumoto và cộng sự, 2008). Biết điều này có thể giúp ta bớt vội suy diễn "họ lạnh lùng" hay "họ không quan tâm" chỉ vì nét mặt ít biểu cảm.
 
 ### 4. Mở rộng vốn từ cảm xúc của bản thân :nhan[tranh-cai]
 
@@ -103,9 +103,9 @@ Barrett cho rằng khái niệm cảm xúc ta học được sẽ định hình 
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Nghiên cứu gốc của Ekman (1969) không có mẫu người Việt Nam, và chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra việc nhận diện nét mặt cảm xúc trên người Việt. Theo Barrett và cộng sự (2019), phần lớn người tham gia các nghiên cứu được gộp năm 2002 đến từ các nước công nghiệp hóa; còn lại là một số cộng đồng nhỏ, biệt lập (Papua New Guinea, Borneo và nơi khác).
+Nghiên cứu gốc của Ekman (1969) không có mẫu người Việt Nam. Tính đến 11/2026, chúng tôi chỉ thấy rất ít nghiên cứu nhận diện nét mặt cảm xúc có người Việt tham gia. Một ví dụ nằm trong phân tích tổng hợp năm 2002: một mẫu 34 người Việt Nam xem ảnh nét mặt dàn dựng của người Mỹ và người Nhật, và gọi đúng khoảng 80% (Biehl và cộng sự, 1997, theo bảng của Elfenbein và Ambady, 2002). Theo Barrett và cộng sự (2019), phần lớn người tham gia phân tích tổng hợp ấy (87 thí nghiệm, hơn 22.000 người) đến từ các nước quy mô lớn hay đã phát triển.
 
-Gợi ý gần nhất cho độc giả Việt Nam đến từ nghiên cứu của Jack và cộng sự (2012): **người Đông Á** có "hình ảnh trong đầu" về nét mặt cảm xúc khác người phương Tây và dựa nhiều vào vùng mắt. Vì người Việt có thể gần người Đông Á về văn hóa, cách người Việt đọc nét mặt có thể chịu ảnh hưởng tương tự — nhưng **chưa có bằng chứng trực tiếp trên người Việt**, nên không thể khẳng định.
+Một gợi ý khác đến từ nghiên cứu của Jack và cộng sự (2012): **người Đông Á** có "hình ảnh trong đầu" về nét mặt cảm xúc khác người phương Tây và dựa nhiều vào vùng mắt. Vì người Việt có thể gần người Đông Á về văn hóa, cách người Việt đọc nét mặt có thể chịu ảnh hưởng tương tự — nhưng **chưa có nghiên cứu kiểu này trên người Việt**, nên không thể khẳng định.
 
 ## Ngộ nhận liên quan
 
@@ -152,6 +152,7 @@ Gợi ý gần nhất cho độc giả Việt Nam đến từ nghiên cứu củ
 
 - Barrett, L. F. (2017). *How Emotions Are Made: The Secret Life of the Brain*. Houghton Mifflin Harcourt.
 - Barrett, L. F., Adolphs, R., Marsella, S., Martinez, A. M., & Pollak, S. D. (2019). Emotional expressions reconsidered: Challenges to inferring emotion from human facial movements. *Psychological Science in the Public Interest*, 20(1), 1–68. <https://doi.org/10.1177/1529100619832930>
+- Biehl, M., Matsumoto, D., Ekman, P., Hearn, V., Heider, K., Kudoh, T., & Ton, V. (1997). Matsumoto and Ekman's Japanese and Caucasian Facial Expressions of Emotion (JACFEE): Reliability data and cross-national differences. *Journal of Nonverbal Behavior*, 21(1), 3–21. <https://doi.org/10.1023/A:1024902500935>
 - Ekman, P., & Friesen, W. V. (1971). Constants across cultures in the face and emotion. *Journal of Personality and Social Psychology*, 17(2), 124–129. <https://doi.org/10.1037/h0030377>
 - Ekman, P., Sorenson, E. R., & Friesen, W. V. (1969). Pan-cultural elements in facial displays of emotion. *Science*, 164(3875), 86–88. <https://doi.org/10.1126/science.164.3875.86>
 - Elfenbein, H. A., & Ambady, N. (2002). On the universality and cultural specificity of emotion recognition: A meta-analysis. *Psychological Bulletin*, 128(2), 203–235. <https://doi.org/10.1037/0033-2909.128.2.203>

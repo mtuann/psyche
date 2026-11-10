@@ -32,23 +32,23 @@ Ba khái niệm cần phân biệt ngay từ đầu:
 
 ### Allport (1954): 5 mức biểu hiện và giả thuyết tiếp xúc
 
-Theo cách tóm tắt thường gặp của thang do Gordon Allport nêu trong cuốn *The Nature of Prejudice* (Addison-Wesley, 1954) (chúng tôi chưa mở được sách gốc, xem mục Nguồn), định kiến có thể biểu hiện ở 5 mức độ, từ nhẹ đến cực đoan:
+Theo cách tóm tắt thường gặp của thang do Gordon Allport nêu trong cuốn *The Nature of Prejudice* (Addison-Wesley, 1954), chẳng hạn trong tổng quan hệ thống của [Windisch và cộng sự, 2022](https://doi.org/10.1002/cl2.1243) (chúng tôi chưa mở được sách gốc, xem mục Nguồn), định kiến có thể biểu hiện ở 5 mức độ, từ nhẹ đến cực đoan:
 
-1. **Nói xấu (antilocution):** lời lẽ miệt thị, đùa cợt về một nhóm — thường được xem là "vô hại".
+1. **Nói xấu (antilocution):** bày tỏ định kiến bằng lời lẽ tiêu cực về một nhóm, với bạn bè hay với người lạ.
 2. **Tránh né (avoidance):** chủ động tránh tiếp xúc với thành viên nhóm bị ghét.
 3. **Phân biệt đối xử (discrimination):** từ chối cơ hội, dịch vụ, việc làm vì lý do nhóm.
 4. **Tấn công thân thể (physical attack):** bạo lực với người hoặc tài sản của nhóm bị ghét.
 5. **Diệt chủng (extermination):** tìm cách xóa sổ cả nhóm.
 
-Theo các tóm tắt ấy, nói xấu tự nó có thể không gây hại nhưng "tạo đất" cho các mức nặng hơn.
+Theo Windisch và cộng sự (2022), thang này cho thấy các hình thức bạo lực nặng hơn dựa trên những hành vi định kiến ở mức thấp hơn, và nói xấu chỉ là điểm khởi đầu.
 
-Cùng trong cuốn sách, Allport đưa ra **giả thuyết tiếp xúc** (contact hypothesis): tiếp xúc giữa các nhóm có thể làm giảm định kiến — nhưng chỉ khi hội đủ bốn điều kiện (theo cách Pettigrew và Tropp, 2006, tóm lại): (1) **địa vị ngang nhau** trong tình huống tiếp xúc; (2) **mục tiêu chung**; (3) **hợp tác** giữa các nhóm (chứ không phải cạnh tranh); (4) được **ủng hộ bởi thể chế, luật pháp hoặc phong tục**.
+Cùng trong cuốn sách, Allport đưa ra **giả thuyết tiếp xúc** (contact hypothesis): tiếp xúc giữa các nhóm có thể làm giảm định kiến khi hội đủ bốn điều kiện (theo cách Pettigrew và Tropp, 2006, tóm lại; phân tích của chính họ lại thấy các điều kiện này không bắt buộc, xem mục dưới): (1) **địa vị ngang nhau** trong tình huống tiếp xúc; (2) **mục tiêu chung**; (3) **hợp tác** giữa các nhóm (chứ không phải cạnh tranh); (4) được **ủng hộ bởi thể chế, luật pháp hoặc phong tục**.
 
 ### Pettigrew và Tropp (2006): 515 nghiên cứu nói gì về tiếp xúc?
 
 Thomas Pettigrew và Linda Tropp gom **713 mẫu độc lập từ 515 nghiên cứu** về tiếp xúc liên nhóm và kiểm tra bằng phân tích tổng hợp ([Pettigrew & Tropp, 2006](https://doi.org/10.1037/0022-3514.90.5.751)).
 
-Kết quả chính: tiếp xúc liên nhóm **nhìn chung làm giảm định kiến** — hiệu ứng có ý nghĩa thống kê, không phải do thiên lệch chọn mẫu hay thiên lệch xuất bản. Khi bốn điều kiện của Allport được đáp ứng, hiệu ứng **mạnh hơn**; nhưng ngay cả khi thiếu các điều kiện đó, tiếp xúc vẫn có tác dụng — tức các điều kiện là "tốt để có" chứ không "bắt buộc phải có". Ngoài ra, hiệu ứng lan tỏa: thái độ tích cực với một vài cá nhân cụ thể có thể mở rộng ra cả nhóm ngoài nói chung.
+Kết quả chính: tiếp xúc liên nhóm **nhìn chung làm giảm định kiến** — hiệu ứng có ý nghĩa thống kê, và nhiều phép kiểm cho thấy dường như không do thiên lệch chọn mẫu hay thiên lệch xuất bản. Khi bốn điều kiện của Allport được đáp ứng, hiệu ứng **mạnh hơn**; nhưng ngay cả khi thiếu các điều kiện đó, tiếp xúc vẫn có tác dụng — tức các điều kiện là "tốt để có" chứ không "bắt buộc phải có". Ngoài ra, hiệu ứng lan tỏa: thái độ tích cực với một vài cá nhân cụ thể có thể mở rộng ra cả nhóm ngoài nói chung.
 
 ### Greenwald, McGhee và Schwartz (1998): bài kiểm tra IAT ra đời
 
@@ -58,7 +58,7 @@ IAT được dùng rất rộng rãi (riêng một trang web trình diễn thu h
 
 ### Oswald và cộng sự (2013): IAT dự đoán hành vi kém đến mức nào?
 
-Oswald, Mitchell, Blanton, Jaccard và Tetlock gom các nghiên cứu kiểm tra khả năng **dự đoán** của IAT: điểm IAT có đoán được ai sẽ phân biệt đối xử trong đời thực không? Kết quả: tương quan trung bình giữa điểm IAT và các thước đo hành vi chỉ khoảng **r = 0,14** — và với các "vi hành vi" (ngôn ngữ cơ thể, khoảng cách giao tiếp...) chỉ còn khoảng **r = 0,07**, tức IAT giải thích chưa tới 1% sự khác biệt về vi hành vi, và **không dự đoán tốt hơn** các biện pháp hỏi trực tiếp. Nhóm tác giả kết luận rằng IAT cho ta rất ít thông tin về việc ai sẽ phân biệt đối xử với ai ([Oswald và cộng sự, 2013](https://doi.org/10.1037/a0032734)). (Một phân tích tổng hợp trước đó của Greenwald và cộng sự, 2009, từng đưa ra con số lạc quan hơn — trung bình r ≈ 0,236 — chủ yếu do dùng tiêu chí chọn nghiên cứu khác nhau.)
+Oswald, Mitchell, Blanton, Jaccard và Tetlock gom các nghiên cứu kiểm tra khả năng **dự đoán** của IAT: điểm IAT có đoán được ai sẽ phân biệt đối xử trong đời thực không? Kết quả: tương quan trung bình giữa điểm IAT và các thước đo hành vi chỉ khoảng **r = 0,14** — và với các "vi hành vi" (ngôn ngữ cơ thể, khoảng cách giao tiếp...) chỉ còn khoảng **r = 0,07**, tức IAT giải thích chưa tới 1% sự khác biệt về vi hành vi, và **không dự đoán tốt hơn** các biện pháp hỏi trực tiếp. Nhóm tác giả kết luận rằng IAT cho ta rất ít thông tin về việc ai sẽ phân biệt đối xử với ai ([Oswald và cộng sự, 2013](https://doi.org/10.1037/a0032734)). (Một phân tích tổng hợp trước đó của Greenwald và cộng sự, 2009, từng đưa ra con số lạc quan hơn — trung bình r ≈ 0,236 cho các bài về thái độ và khuôn mẫu da đen–da trắng — chủ yếu do dùng tiêu chí chọn nghiên cứu khác nhau, theo Greenwald, Banaji và Nosek, 2015.)
 
 ### Greenwald, Banaji và Nosek (2015): phía bênh vực IAT
 
@@ -67,15 +67,15 @@ Nhóm ủng hộ IAT phản biện: hiệu ứng thống kê nhỏ không đồn
 ## Mức độ chắc chắn
 
 :::vung-chac[tiếp xúc liên nhóm thường làm giảm định kiến]
-Phân tích tổng hợp 515 nghiên cứu của Pettigrew và Tropp (2006) cho thấy tiếp xúc giữa các nhóm nhìn chung cải thiện thái độ với nhóm ngoài, hiệu ứng không phải do thiên lệch xuất bản, và các nghiên cứu chặt chẽ cho hiệu ứng lớn hơn. Phân tích tổng hợp 27 thí nghiệm ngẫu nhiên sau đó (Paluck và cộng sự, 2019) cũng thấy tiếp xúc nhìn chung làm giảm định kiến, nhưng yếu hơn đáng kể với định kiến chủng tộc, sắc tộc.
+Phân tích tổng hợp 515 nghiên cứu của Pettigrew và Tropp (2006) cho thấy tiếp xúc giữa các nhóm nhìn chung cải thiện thái độ với nhóm ngoài, hiệu ứng dường như không do thiên lệch xuất bản, và các nghiên cứu chặt chẽ cho hiệu ứng lớn hơn. Phân tích tổng hợp 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian (Paluck và cộng sự, 2019) cũng thấy tiếp xúc nhìn chung làm giảm định kiến, nhưng yếu hơn đáng kể với định kiến chủng tộc, sắc tộc, và chưa có nghiên cứu nào về định kiến chủng tộc, sắc tộc của người trưởng thành.
 :::
 
 :::kha-vung[bốn điều kiện của Allport làm tiếp xúc hiệu quả hơn]
-Tiếp xúc trong điều kiện địa vị ngang nhau, mục tiêu chung, hợp tác và được thể chế ủng hộ cho hiệu ứng giảm định kiến lớn hơn (Pettigrew và Tropp, 2006). Tuy vậy, bằng chứng này chủ yếu đến từ so sánh giữa các nghiên cứu; chưa có thí nghiệm ngẫu nhiên nào thao túng có hệ thống bốn điều kiện ([Paluck và cộng sự, 2019](https://doi.org/10.1017/bpp.2018.25)). Ranh giới "thế nào là đủ ngang nhau, đủ hợp tác" trong đời thực không phải lúc nào cũng rõ ràng, nên việc áp dụng cần linh hoạt chứ không thể máy móc.
+Tiếp xúc trong điều kiện địa vị ngang nhau, mục tiêu chung, hợp tác và được thể chế ủng hộ cho hiệu ứng giảm định kiến lớn hơn (Pettigrew và Tropp, 2006). Tuy vậy, bằng chứng này chủ yếu đến từ so sánh giữa các nghiên cứu; trong 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian mà Paluck và cộng sự tập hợp, chưa có thí nghiệm nào thao túng có hệ thống bốn điều kiện ([Paluck và cộng sự, 2019](https://doi.org/10.1017/bpp.2018.25)). Ranh giới "thế nào là đủ ngang nhau, đủ hợp tác" trong đời thực không phải lúc nào cũng rõ ràng, nên việc áp dụng cần linh hoạt chứ không thể máy móc.
 :::
 
 :::tranh-cai[IAT đo được gì, và có nên dùng nó để 'chẩn đoán' con người?]
-Phe phê bình (Oswald và cộng sự, 2013; Payne và cộng sự, 2017) chỉ ra: điểm IAT thiếu ổn định qua vài tuần, phần lớn phương sai mang tính tình huống, và dự đoán hành vi phân biệt đối xử ở mức yếu (khoảng r = 0,14; với vi hành vi chỉ khoảng r = 0,07) — không hơn các biện pháp hỏi trực tiếp đơn giản. Ngay cả người da đen làm bài, dù tự báo cáo ưu ái nhóm mình rõ rệt, trên IAT tính trung bình lại không ưu ái nhóm mình, thậm chí hơi nghiêng về phía da trắng ([Nosek và cộng sự, 2002](https://doi.org/10.1037/1089-2699.6.1.101)), gợi ý rằng điểm IAT có thể phản ánh các đánh giá văn hóa mà người làm bài không tán thành (một cách diễn giải của chính nhóm tác giả), chứ không hẳn là thái độ của cá nhân. Phe bênh vực (Greenwald và cộng sự, 2015) đáp lại: ở cấp độ tập thể, hiệu ứng nhỏ nhân với hàng triệu quyết định vẫn tạo ra hậu quả xã hội đáng kể; và IAT vẫn hữu ích để thăm dò các liên tưởng tự động.
+Phe phê bình (Oswald và cộng sự, 2013; Payne và cộng sự, 2017) chỉ ra: điểm IAT thiếu ổn định qua vài tuần, phần lớn phương sai mang tính tình huống, và dự đoán hành vi phân biệt đối xử ở mức yếu (khoảng r = 0,14; với vi hành vi chỉ khoảng r = 0,07) — không hơn các biện pháp hỏi trực tiếp đơn giản. Ngay cả người da đen làm bài, dù tự báo cáo ưu ái nhóm mình rõ rệt, trên IAT tính trung bình lại không ưu ái nhóm mình, thậm chí hơi nghiêng về phía da trắng ([Nosek và cộng sự, 2002](https://doi.org/10.1037/1089-2699.6.1.101)), gợi ý rằng điểm IAT có thể phản ánh các đánh giá văn hóa mà người làm bài không tán thành (một cách diễn giải của chính nhóm tác giả), chứ không hẳn là thái độ của cá nhân. Phe bênh vực (Greenwald và cộng sự, 2015) đáp lại: hiệu ứng nhỏ vẫn có thể gây hậu quả xã hội đáng kể khi ảnh hưởng nhiều người cùng lúc hoặc lặp lại với cùng một người; và độ tin cậy hạn chế cùng hiệu ứng nhỏ ít gây vấn đề khi phân tích phân biệt đối xử ở cấp hệ thống, nơi mẫu lớn.
 
 Điểm đồng thuận hiếm hoi giữa hai phe: không nên dùng điểm IAT của một cá nhân để kết luận người đó "có định kiến"; chính nhóm bênh vực IAT cảnh báo rằng dùng các thước đo này để chẩn đoán cá nhân có nguy cơ phân loại sai cao. IAT không phải công cụ chẩn đoán cá nhân.
 :::
@@ -84,7 +84,7 @@ Phe phê bình (Oswald và cộng sự, 2013; Payne và cộng sự, 2017) chỉ
 
 Vì sao định kiến hình thành? Bốn cách giải thích chính, và chúng không loại trừ nhau:
 
-- **Phân loại xã hội.** Não ta tự động chia thế giới thành "phe mình" và "phe họ". Trong các thí nghiệm "nhóm tối thiểu" của Tajfel (1971), chỉ cần xếp người tham gia vào hai nhóm trên một cơ sở rất tầm thường (họ được cho biết là theo sở thích tranh Klee hay Kandinsky, thực tế xếp ngẫu nhiên), họ đã có xu hướng ưu ái nhóm mình.
+- **Phân loại xã hội.** Ta có xu hướng chia người khác thành "phe mình" và "phe họ". Trong các thí nghiệm "nhóm tối thiểu" của Tajfel (1971), chỉ cần xếp người tham gia vào hai nhóm trên một cơ sở rất tầm thường (họ được cho biết là theo sở thích tranh Klee hay Kandinsky, thực tế xếp ngẫu nhiên), họ đã có xu hướng ưu ái nhóm mình.
 - **Học tập xã hội.** Theo OpenStax, trẻ em học thái độ định kiến từ cha mẹ, thầy cô, bạn bè và truyền thông, và định kiến duy trì nhờ học tập xã hội cùng sự tuân theo chuẩn mực xã hội.
 - **Xung đột lợi ích và mối đe dọa.** Một phân tích tổng hợp (Riek và cộng sự, 2006, theo trang thí nghiệm Robbers Cave) thấy nhiều loại đe dọa liên hệ dương với thái độ tiêu cực với nhóm ngoài. Ngược lại, mục tiêu chung buộc các nhóm phải hợp tác là một trong bốn điều kiện của tiếp xúc làm giảm định kiến, như trong thí nghiệm trại hè Robbers Cave của Sherif (xem [trang thí nghiệm](/psyche/thi-nghiem/robbers-cave/)).
 - **Cơ chế của tiếp xúc (Pettigrew, 1998).** Vì sao tiếp xúc lại hiệu quả? Bốn cơ chế trung gian được đề xuất: hiểu biết hơn về nhóm ngoài, thay đổi hành vi trong lúc tiếp xúc, gắn kết cảm xúc (hình thành tình bạn), và đánh giá lại chính nhóm mình ([Pettigrew, 1998](https://doi.org/10.1146/annurev.psych.49.1.65)).
@@ -93,7 +93,7 @@ Vì sao định kiến hình thành? Bốn cách giải thích chính, và chún
 
 ### 1. Tạo ra tiếp xúc "có chất lượng", không phải tiếp xúc cho có :nhan[kha-vung]
 
-Cùng học, cùng làm dự án, cùng đội thể thao với người thuộc nhóm khác — trong đó mọi người bình đẳng và hợp tác vì mục tiêu chung — hiệu quả hơn nhiều so với việc chỉ "ở gần nhau". Nếu bạn tổ chức hoạt động giao lưu, hãy thiết kế sao cho bốn điều kiện của Allport được đáp ứng.
+Cùng học, cùng làm dự án, cùng đội thể thao với người thuộc nhóm khác — trong đó mọi người bình đẳng và hợp tác vì mục tiêu chung — có thể hiệu quả hơn việc chỉ "ở gần nhau": theo Pettigrew và Tropp (2006), hiệu ứng giảm định kiến lớn hơn khi các điều kiện của Allport được đáp ứng, dù chúng không bắt buộc. Một gợi ý suy ra từ đó (chưa kiểm trực tiếp): nếu bạn tổ chức hoạt động giao lưu, hãy thiết kế sao cho bốn điều kiện ấy được đáp ứng.
 
 ### 2. Kết bạn, đừng chỉ "tiếp xúc" :nhan[kha-vung]
 
@@ -111,7 +111,7 @@ Pettigrew (1998) coi tình bạn liên nhóm là một con đường tiếp xúc
 
 Phân tích tổng hợp của Pettigrew và Tropp bao gồm 38 quốc gia, nhưng **tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm chứng giả thuyết tiếp xúc trực tiếp trên người Việt**, và cũng chưa tìm thấy dữ liệu IAT trên mẫu Việt Nam.
 
-Điều đó không có nghĩa là Việt Nam "không có định kiến": chỉ là bài này không có bằng chứng thực nghiệm về người Việt để dẫn. Để biết giả thuyết tiếp xúc có đúng ở Việt Nam hay không cần nghiên cứu có thiết kế (đo trước và sau, có nhóm đối chứng); Paluck và cộng sự (2019) cũng chỉ ra khoảng trống lớn ở các nghiên cứu về định kiến của người trưởng thành.
+Điều đó không có nghĩa là Việt Nam "không có định kiến": chỉ là bài này không có bằng chứng thực nghiệm về người Việt để dẫn. Để biết giả thuyết tiếp xúc có đúng ở Việt Nam hay không cần nghiên cứu có thiết kế (đo trước và sau, có nhóm đối chứng); Paluck và cộng sự (2019) cũng chỉ ra khoảng trống lớn: chưa có thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian về định kiến chủng tộc, sắc tộc của người trưởng thành.
 
 ## Ngộ nhận liên quan
 
@@ -132,7 +132,7 @@ Phân tích tổng hợp của Pettigrew và Tropp bao gồm 38 quốc gia, như
 - Tránh né → nói xấu → phân biệt đối xử → tấn công thân thể → diệt chủng.
 + Nói xấu (antilocution) → tránh né → phân biệt đối xử → tấn công thân thể → diệt chủng (extermination).
 - Phân biệt đối xử → nói xấu → tránh né → diệt chủng → tấn công thân thể.
-> Theo các tóm tắt của thang: nói xấu tự nó có thể không gây hại nhưng tạo đất cho các mức nặng hơn.
+> Theo cách tóm tắt thường gặp của thang (Windisch và cộng sự, 2022): nói xấu là điểm khởi đầu, và các hình thức bạo lực nặng hơn dựa trên những hành vi định kiến ở mức thấp hơn.
 ? Bốn điều kiện để tiếp xúc liên nhóm giảm định kiến hiệu quả, theo Allport, là gì?
 - Cùng ngôn ngữ, cùng tôn giáo, cùng độ tuổi, cùng sở thích.
 + Địa vị ngang nhau, mục tiêu chung, hợp tác giữa các nhóm, và được thể chế/luật pháp/phong tục ủng hộ.
@@ -142,7 +142,7 @@ Phân tích tổng hợp của Pettigrew và Tropp bao gồm 38 quốc gia, như
 - Tiếp xúc liên nhóm nhìn chung làm tăng định kiến.
 + Trên 713 mẫu độc lập từ 515 nghiên cứu, tiếp xúc liên nhóm nhìn chung làm giảm định kiến; hiệu ứng mạnh hơn khi bốn điều kiện của Allport được đáp ứng, nhưng các điều kiện đó không bắt buộc.
 - Chỉ có tiếp xúc trong phòng thí nghiệm mới có tác dụng.
-> Một phân tích tổng hợp lớn, sau đó được kiểm lại trên 27 thí nghiệm ngẫu nhiên (Paluck và cộng sự, 2019), nơi hiệu ứng với định kiến chủng tộc, sắc tộc yếu hơn đáng kể.
+> Một phân tích tổng hợp lớn, sau đó được kiểm lại trên 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian (Paluck và cộng sự, 2019), nơi hiệu ứng với định kiến chủng tộc, sắc tộc yếu hơn đáng kể.
 ? Bài kiểm tra IAT đo lường điều gì?
 - Mức độ thù ghét có ý thức của một người đối với nhóm ngoài.
 + Tốc độ phản ứng khi ghép cặp các khái niệm (ví dụ "da trắng–tốt" so với "da đen–tốt"), được diễn giải là độ mạnh của liên tưởng tự động.
@@ -157,7 +157,7 @@ Phân tích tổng hợp của Pettigrew và Tropp bao gồm 38 quốc gia, như
 
 ## Nguồn
 
-- Allport, G. W. (1954). *The nature of prejudice*. Reading, MA: Addison-Wesley.
+- Allport, G. W. (1954). *The nature of prejudice*. Reading, MA: Addison-Wesley. (Sách gốc không có bản mở: thang 5 mức dẫn theo Windisch và cộng sự, 2022.)
 - Bertrand, M., & Mullainathan, S. (2004). Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination. *American Economic Review*, 94(4), 991–1013. <https://doi.org/10.1257/0002828042002561>
 - Greenwald, A. G., Banaji, M. R., & Nosek, B. A. (2015). Statistically small effects of the Implicit Association Test can have societally large effects. *Journal of Personality and Social Psychology*, 108(4), 553–561. <https://doi.org/10.1037/pspa0000016>
 - Greenwald, A. G., McGhee, D. E., & Schwartz, J. L. K. (1998). Measuring individual differences in implicit cognition: The implicit association test. *Journal of Personality and Social Psychology*, 74(6), 1464–1480. <https://doi.org/10.1037/0022-3514.74.6.1464>
@@ -168,7 +168,7 @@ Phân tích tổng hợp của Pettigrew và Tropp bao gồm 38 quốc gia, như
 - Payne, B. K., Vuletich, H. A., & Lundberg, K. B. (2017). The bias of crowds: How implicit bias bridges personal and systemic prejudice. *Psychological Inquiry*, 28(4), 233–248. <https://doi.org/10.1080/1047840X.2017.1335568>
 - Pettigrew, T. F. (1998). Intergroup contact theory. *Annual Review of Psychology*, 49, 65–85. <https://doi.org/10.1146/annurev.psych.49.1.65>
 - Pettigrew, T. F., & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. *Journal of Personality and Social Psychology*, 90(5), 751–783. <https://doi.org/10.1037/0022-3514.90.5.751>
+- Windisch, S., Wiedlitzka, S., Olaghere, A., & Jenaway, E. (2022). Online interventions for reducing hate speech and cyberhate: A systematic review. *Campbell Systematic Reviews*, 18(2), e1243. <https://doi.org/10.1002/cl2.1243>
 - Tajfel, H., Billig, M. G., Bundy, R. P., & Flament, C. (1971). Social categorization and intergroup behaviour. *European Journal of Social Psychology*, 1(2), 149–178. <https://doi.org/10.1002/ejsp.2420010202>
-- Allport, G. W. (1954). *The nature of prejudice* (thang 5 mức được dẫn theo tóm tắt thứ cấp: sách gốc không có bản mở).
 - Forscher, P. S., Lai, C. K., Axt, J. R., và cộng sự (2019). A meta-analysis of procedures to change implicit measures. *Journal of Personality and Social Psychology*, 117(3), 522–559. <https://doi.org/10.1037/pspa0000160>
 - OpenStax (2020). *Psychology 2e*, mục 12.5 Prejudice and Discrimination. <https://openstax.org/books/psychology-2e/pages/12-5-prejudice-and-discrimination>

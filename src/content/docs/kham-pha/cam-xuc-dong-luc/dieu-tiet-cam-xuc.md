@@ -79,12 +79,12 @@ Một phân tích tổng hợp trên các nghiên cứu tương quan về tâm b
 
 ## Mức độ chắc chắn
 
-:::vung-chac[kìm nén giảm biểu hiện bên ngoài, nhưng không giảm trải nghiệm cảm xúc tiêu cực bên trong]
-Kết quả cốt lõi của Gross (1998) — cả hai chiến lược đều che được "mặt", chỉ tái đánh giá làm dịu được "lòng" — được củng cố bởi phân tích tổng hợp của Webb và cộng sự (2012): kìm nén biểu hiện có hiệu quả (d+ = 0,32), còn kìm nén trải nghiệm cảm xúc thì không (d+ = −0,04). Riêng với cảm xúc tích cực, kìm nén lại làm giảm cả trải nghiệm (Gross và John, 2003).
+:::kha-vung[kìm nén giảm biểu hiện bên ngoài, nhưng không giảm trải nghiệm cảm xúc tiêu cực bên trong]
+Kết quả cốt lõi của Gross (1998): cả hai chiến lược đều che được "mặt", chỉ tái đánh giá làm dịu được "lòng". Gross và John (2003) tóm lại rằng các thí nghiệm khác cũng thấy kìm nén cảm xúc tiêu cực không làm giảm trải nghiệm. Phân tích tổng hợp của Webb và cộng sự (2012) thấy kìm nén biểu hiện có hiệu quả chung (d+ = 0,32), nhưng con số này gộp nhiều loại kết quả; còn d+ = −0,04 là của một chiến lược khác (cố nén chính trải nghiệm cảm xúc), nên chưa phải bằng chứng tổng hợp trực tiếp cho ý này. Giới hạn: chủ yếu là thí nghiệm của cùng một nhóm, trên mẫu phương Tây. Riêng với cảm xúc tích cực, kìm nén lại làm giảm cả trải nghiệm (Gross và John, 2003).
 :::
 
 :::kha-vung[kìm nén đi kèm cái giá sinh lý và nhận thức]
-Kìm nén làm tăng hoạt động hệ thần kinh giao cảm (Gross, 1998), làm trí nhớ về thông tin đi kèm kém đi trong phòng thí nghiệm và ở người có thói quen kìm nén (Richards và Gross, 2000), và người hay kìm nén có các mối quan hệ xã hội kém hơn (Gross và John, 2003). Giới hạn: phần lớn là các thí nghiệm đơn lẻ của cùng một nhóm nghiên cứu và các nghiên cứu tương quan, chưa có phân tích tổng hợp riêng cho từng cái giá này.
+Kìm nén làm tăng hoạt động hệ thần kinh giao cảm (Gross, 1998), làm trí nhớ về thông tin đi kèm kém đi trong phòng thí nghiệm và ở người có thói quen kìm nén (Richards và Gross, 2000), và người hay kìm nén có các mối quan hệ xã hội kém hơn (Gross và John, 2003). Giới hạn: cái giá sinh lý và trí nhớ dựa chủ yếu vào thí nghiệm của cùng một nhóm nghiên cứu. Cái giá xã hội có một phân tích tổng hợp (Chervonsky và Hunt, 2017: 43 bài; kìm nén đi cùng hỗ trợ xã hội và chất lượng quan hệ thấp hơn), nhưng các nghiên cứu được gộp là tương quan.
 :::
 
 :::kha-vung[không chiến lược nào luôn tốt hay luôn xấu: hiệu quả phụ thuộc bối cảnh]
@@ -103,7 +103,7 @@ Vì sao can thiệp sớm và can thiệp muộn lại cho kết quả khác nha
 
 ## Áp dụng vào đời sống
 
-### 1. Can thiệp sớm: diễn giải lại trước khi cảm xúc bùng lên :nhan[kha-vung]
+### 1. Can thiệp sớm: diễn giải lại trước khi cảm xúc bùng lên :nhan[kha-vung] { #1-can-thiep-som-dien-giai-lai-truoc-khi-cam-xuc-bung-len-vung-chac }
 
 Khi nhận ra một tình huống sắp khiến mình nổi nóng, hãy thử đặt câu hỏi: "Còn cách hiểu nào khác về chuyện này không? Nếu là một người ngoài cuộc bình tĩnh, họ sẽ thấy gì?" Theo mô hình quá trình, can thiệp càng sớm thì càng có thể thay đổi nhiều khâu của cảm xúc, nên hãy thử diễn giải lại ngay từ đầu thay vì đợi đến lúc "máu đã dồn lên mặt".
 
@@ -171,6 +171,7 @@ Về văn hóa, Butler, Lee và Gross (2007) thấy rằng hậu quả xã hội
 
 - Aldao, A., Nolen-Hoeksema, S., & Schweizer, S. (2010). Emotion-regulation strategies across psychopathology: A meta-analytic review. *Clinical Psychology Review*, 30(2), 217–237. <https://doi.org/10.1016/j.cpr.2009.11.004>
 - Butler, E. A., Lee, T. L., & Gross, J. J. (2007). Emotion regulation and culture: Are the social consequences of emotion suppression culture-specific? *Emotion*, 7(1), 30–48. <https://doi.org/10.1037/1528-3542.7.1.30>
+- Chervonsky, E., & Hunt, C. (2017). Suppression and expression of emotion in social and interpersonal outcomes: A meta-analysis. *Emotion*, 17(4), 669–683. <https://doi.org/10.1037/emo0000270>
 - Gross, J. J. (1998). Antecedent- and response-focused emotion regulation: Divergent consequences for experience, expression, and physiology. *Journal of Personality and Social Psychology*, 74(1), 224–237. <https://doi.org/10.1037/0022-3514.74.1.224>
 - Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. *Review of General Psychology*, 2(3), 271–299. <https://doi.org/10.1037/1089-2680.2.3.271>
 - Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being. *Journal of Personality and Social Psychology*, 85(2), 348–362. <https://doi.org/10.1037/0022-3514.85.2.348>

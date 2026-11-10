@@ -24,7 +24,7 @@ Hai nghĩa này nghe giống nhau, nhưng khoa học đo chúng bằng hai cách
 
 Năm 1990, hai nhà tâm lý học Peter Salovey và John D. Mayer đăng một bài báo lý thuyết đặt ra khái niệm **trí tuệ cảm xúc** (emotional intelligence): một tập hợp kỹ năng xử lý thông tin liên quan đến cảm xúc. Khái niệm này chỉ đến được với đông đảo công chúng sau năm 1995.
 
-Năm 1995, nhà báo khoa học Daniel Goleman xuất bản cuốn *Emotional Intelligence: Why It Can Matter More Than IQ* (Trí tuệ cảm xúc: Vì sao nó có thể quan trọng hơn IQ). Số ra ngày 2 tháng 10 năm 1995, tạp chí Time đưa câu hỏi "What's Your EQ?" (EQ của bạn là bao nhiêu?) lên trang bìa, kèm lời quảng bá rằng trí tuệ cảm xúc có thể là yếu tố dự báo thành công trong đời mạnh nhất. Cuốn sách nằm trong danh sách bán chạy của New York Times hơn một năm, và từ viết tắt EQ lan nhanh trên báo chí.
+Năm 1995, nhà báo khoa học Daniel Goleman xuất bản cuốn *Emotional Intelligence: Why It Can Matter More Than IQ* (Trí tuệ cảm xúc: Vì sao nó có thể quan trọng hơn IQ). Số ra ngày 2 tháng 10 năm 1995, tạp chí Time đưa câu hỏi "What's Your EQ?" (EQ của bạn là bao nhiêu?) lên trang bìa, kèm lời quảng bá rằng trí tuệ cảm xúc có thể là yếu tố dự báo thành công trong đời tốt nhất. Từ viết tắt EQ lan nhanh trên báo chí.
 
 Nhưng nhiều nhà nghiên cứu sớm phê bình khái niệm này, và cuộc tranh luận vẫn chưa ngã ngũ. Vấn đề nằm ở chỗ từ "EQ" đang được dùng để chỉ **ba thứ khác nhau**:
 
@@ -89,11 +89,11 @@ EQ dạng năng lực (MSCEIT) tương quan có ý nghĩa với IQ, đặc biệ
 :::
 
 :::tranh-cai[EQ có dự báo hiệu suất công việc vượt ra ngoài IQ và tính cách hay không]
-Phe ủng hộ (O'Boyle và cộng sự, 2011) gom nhiều nghiên cứu hơn và thấy cả ba dòng đo EQ đều tương quan hiệu chỉnh .24–.30 với hiệu suất, và hai dòng dựa trên tự báo cáo (dòng 2 và 3) có giá trị dự báo gia tăng lớn nhất sau khi kiểm soát IQ và Big Five. Phe hoài nghi (Joseph và cộng sự, 2015) chỉ ra rằng với dòng mixed EI, giá trị gia tăng đó sụp đổ về gần bằng không (β = -.02) khi kiểm soát đầy đủ. Một điểm các nghiên cứu cùng thấy: hiệu quả của EQ **phụ thuộc loại công việc** — việc càng đòi hỏi lao động cảm xúc, EQ càng có đất dụng võ (Joseph và Newman, 2010; Côté, 2014).
+Phe ủng hộ (O'Boyle và cộng sự, 2011) gom nhiều nghiên cứu hơn và thấy cả ba dòng đo EQ đều tương quan hiệu chỉnh .24–.30 với hiệu suất, và hai dòng dựa trên tự báo cáo (dòng 2 và 3) có giá trị dự báo gia tăng lớn nhất sau khi kiểm soát IQ và Big Five. Phe hoài nghi (Joseph và cộng sự, 2015) chỉ ra rằng với dòng mixed EI, giá trị gia tăng đó sụp đổ về gần bằng không (β = -.02) khi kiểm soát đầy đủ. Một điểm đáng chú ý: theo Joseph và Newman (2010), EQ năng lực dự báo hiệu suất ở công việc đòi hỏi nhiều lao động cảm xúc (r = .22) nhưng không ở công việc ít đòi hỏi (r = .00), dù mỗi nhóm chỉ có 3–4 nghiên cứu; Côté (2014) cũng cho rằng cần tính đến **bối cảnh công việc**.
 :::
 
-:::bac-bo[EQ là yếu tố dự báo thành công trong đời tốt nhất, quan trọng hơn IQ]
-Đây là thông điệp trên trang bìa Time năm 1995 (EQ có thể là yếu tố dự báo thành công trong đời mạnh nhất), không phải kết luận khoa học. Chúng tôi không tìm thấy phân tích tổng hợp nào ủng hộ nó: trong Joseph và Newman (2010), EQ năng lực tương quan với hiệu suất công việc ở mức ρ ≈ .17, thấp hơn năng lực nhận thức (≈ .40); EQ mixed cho con số cao hơn (≈ .42) nhưng Joseph và cộng sự (2015) cho thấy phần lớn là tính cách, sự tự tin và IQ "đội lốt". EQ không phải cây đũa thần thay thế IQ.
+:::tranh-cai[EQ là yếu tố dự báo thành công trong đời tốt nhất, quan trọng hơn IQ]
+Đây là thông điệp trên trang bìa Time năm 1995 (EQ có thể là yếu tố dự báo thành công trong đời tốt nhất), không phải kết luận khoa học. Chưa có nghiên cứu nào đo thẳng "thành công trong đời"; dữ liệu tổng hợp chủ yếu nói về hiệu suất công việc, và ở đó chúng tôi không tìm thấy phân tích tổng hợp nào ủng hộ thông điệp ấy: trong Joseph và Newman (2010), EQ năng lực tương quan với hiệu suất công việc ở mức ρ ≈ .17, thấp hơn năng lực nhận thức (≈ .40); EQ mixed cho con số cao hơn (≈ .42) nhưng Joseph và cộng sự (2015) cho thấy phần lớn là tính cách, sự tự tin và IQ "đội lốt". Hiệu ứng nhỏ hơn nhiều so với lời quảng bá; vì dữ liệu chỉ về công việc nên chúng tôi xếp "Đang tranh cãi", không xếp "Đã bị bác bỏ". EQ không phải cây đũa thần thay thế IQ.
 :::
 
 ## Các lý thuyết giải thích
@@ -112,9 +112,9 @@ Phe ủng hộ (O'Boyle và cộng sự, 2011) gom nhiều nghiên cứu hơn v�
 
 Các bảng hỏi EQ dạng tự báo cáo (như EQ-i, thang 33 câu của Schutte) là bạn tự chấm mình khéo léo, điềm tĩnh, đồng cảm đến đâu. Kết quả phản ánh **cách bạn nhìn mình** (và một phần tính cách Big Five của bạn) nhiều hơn là năng lực xử lý cảm xúc thật sự: điểm tự báo cáo về "năng lực" chỉ tương quan yếu (r = .12) với điểm đo bằng bài test năng lực. Dùng nó để giải trí thì vui; dùng nó để quyết định tuyển ai, cho con học gì thì nên hết sức thận trọng.
 
-### 2. Muốn cải thiện quan hệ, luyện kỹ năng cụ thể thay vì "nâng EQ" chung chung :nhan[kha-vung]
+### 2. Nhắm vào kỹ năng cụ thể thay vì "nâng EQ" chung chung :nhan[tranh-cai] { #2-muon-cai-thien-quan-he-luyen-ky-nang-cu-the-thay-vi-nang-eq-chung-chung-kha-vung }
 
-Mô hình thác của Joseph và Newman gợi ý một thứ tự ưu tiên: muốn làm việc với người khác tốt hơn, khâu quyết định là **điều tiết cảm xúc** — khả năng giữ bình tĩnh và phản ứng phù hợp khi căng thẳng. Đây là gợi ý từ một mô hình tổng hợp tương quan, chưa phải kết quả của thử nghiệm huấn luyện; cách điều tiết cảm xúc được bàn ở bài [Nén cảm xúc có tốt?](/psyche/kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc/). Mục tiêu cụ thể như vậy rõ ràng hơn mục tiêu mơ hồ "nâng EQ lên 10 điểm".
+Mô hình thác của Joseph và Newman gợi ý một thứ tự: trong các nhánh EQ năng lực, chỉ **điều tiết cảm xúc** liên hệ trực tiếp với hiệu suất công việc. Đây là gợi ý từ một mô hình tổng hợp tương quan về hiệu suất công việc (không phải về các mối quan hệ), chưa phải kết quả của thử nghiệm huấn luyện; cách điều tiết cảm xúc được bàn ở bài [Nén cảm xúc có tốt?](/psyche/kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc/). Mục tiêu cụ thể như vậy rõ ràng hơn mục tiêu mơ hồ "nâng EQ lên 10 điểm".
 
 ### 3. Tuyển dụng: đừng để test EQ tự báo cáo qua mặt :nhan[tranh-cai]
 
@@ -186,7 +186,7 @@ Về nghiên cứu trên người Việt: **đã có một số nghiên cứu**,
 - Mayer, J. D., & Salovey, P. (1997). What is emotional intelligence? Trong P. Salovey & D. J. Sluyter (Chủ biên), *Emotional development and emotional intelligence: Educational implications* (tr. 3–31). New York: Basic Books. (chương sách)
 - Mayer, J. D., Salovey, P., & Caruso, D. R. (2008). Emotional intelligence: New ability or eclectic traits? *American Psychologist*, 63(6), 503–517. <https://doi.org/10.1037/0003-066X.63.6.503>
 - Mayer, J. D., Salovey, P., Caruso, D. R., & Sitarenios, G. (2003). Measuring emotional intelligence with the MSCEIT V2.0. *Emotion*, 3(1), 97–105. <https://doi.org/10.1037/1528-3542.3.1.97>
-- Nguyen, Q.-A. N., Tran, T., Tran, T.-A. T., Nguyen, T. A. T., & Fisher, J. (2020). Perceived parenting styles and emotional intelligence among adolescents in Vietnam. *The Family Journal*. <https://doi.org/10.1177/1066480719896558> (n = 1.593 thanh thiếu niên Việt Nam, thang TEIQue bản tiếng Việt)
+- Nguyen, Q.-A. N., Tran, T., Tran, T.-A. T., Nguyen, T. A. T., & Fisher, J. (2020). Perceived parenting styles and emotional intelligence among adolescents in Vietnam. *The Family Journal*, 28(4), 441–454. <https://doi.org/10.1177/1066480719896558> (n = 1.593 thanh thiếu niên Việt Nam, thang TEIQue bản tiếng Việt)
 - Nguyen Minh Anh, Đinh Thu Phương, & Trần Đình Chiến (2025). Ảnh hưởng của trí tuệ cảm xúc đến kết quả học tập của sinh viên năm thứ nhất, Khoa Giáo dục Tiểu học và Mầm non, Trường Đại học Hùng Vương. *Tạp chí Khoa học và Công nghệ Trường Đại học Hùng Vương*, 11(2), 65–75. <https://doi.org/10.59775/1859-3968.273> (thang BarOn EQ-i, n = 164)
 - O'Boyle, E. H., Humphrey, R. H., Pollack, J. M., Hawver, T. H., & Story, P. A. (2011). The relation between emotional intelligence and job performance: A meta-analysis. *Journal of Organizational Behavior*, 32(5), 788–818. <https://doi.org/10.1002/job.714>
 - Petrides, K. V., & Furnham, A. (2001). Trait emotional intelligence: Psychometric investigation with reference to established trait taxonomies. *European Journal of Personality*, 15(6), 425–448. <https://doi.org/10.1002/per.416>

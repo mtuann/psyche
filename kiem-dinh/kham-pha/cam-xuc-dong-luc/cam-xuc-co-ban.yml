@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L4 phần 2/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L4)
+      review: Claude Opus 5.5 (agent review D5-L4, 10/11/2026)
       kiem_mau: null
 nguon:
   - id: ekman1969
@@ -62,6 +62,10 @@ nguon:
     ten: 'Lần tìm ngày 10/11/2026: Europe PMC và Crossref (truy vấn ghi ở n66); OpenAlex bị giới hạn lượt'
     link: https://www.ebi.ac.uk/europepmc/
     toan_van: false
+  - id: biehl1997
+    ten: "Biehl và cộng sự (1997), J Nonverbal Behav 21(1), 3–21 (JACFEE): siêu dữ liệu (OpenAlex), không có tóm tắt; số liệu mẫu Việt Nam theo Bảng 1 của Elfenbein & Ambady 2002 (toàn văn)"
+    link: https://doi.org/10.1023/A:1024902500935
+    toan_van: false
 nhan_dinh:
   - id: n1
     cau: 'Mô tả của trang: nghiên cứu của Ekman (1969) với người Fore ở Papua New Guinea, danh sách 6 cảm xúc cơ bản, và phê bình của Lisa Feldman Barrett về việc nét mặt có phải "chữ viết chung" của cảm xúc.'
@@ -84,10 +88,11 @@ nhan_dinh:
     trich: The data from the three literate samples support our contention of a pan-cultural element in facial affect display.
     vi_tri: 'Ekman 1969, Bảng 1 (cột Mỹ, Brazil, Nhật: 63–97%) và tr. 88'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Hầu như ai cũng đoán đúng." Chữ mới: "Với bộ ảnh nét mặt chuẩn trong nghiên cứu sắp kể, phần lớn người xem ở Mỹ, Brazil và Nhật cũng chọn đúng nhãn dự kiến." Lý do: câu cũ nói về mọi người, nguồn chỉ có ba mẫu sinh viên đại học và đáp đúng 63–97% tùy cảm xúc.'
+    ghi_chu: 'Chữ cũ: "Hầu như ai cũng đoán đúng." Chữ mới: "Với bộ ảnh nét mặt chuẩn trong nghiên cứu sắp kể, phần lớn người xem ở Mỹ, Brazil và Nhật cũng chọn đúng nhãn dự kiến." Lý do: câu cũ nói về mọi người, nguồn chỉ có ba mẫu sinh viên đại học và đáp đúng 63–97% tùy cảm xúc. Review (Claude Opus 5.5, 10/11/2026): dung. Chữ cuối khớp Bảng 1 Ekman 1969 (đã mở PDF Internet Archive): ba mẫu biết chữ, đúng 63–97%.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
     luot_2_ghi_chu: Đọc toàn văn Science 1969 (bản trong kho Internet Archive).
+    review: dung
   - id: n3
     cau: Khuôn mặt "mắt trợn tròn miệng há hốc" có thể bị gọi là sợ hay ngạc nhiên (chỗ nhập nhằng sẽ gặp ở dưới).
     loai: phat-hien
@@ -108,10 +113,11 @@ nhan_dinh:
     trich: We studied the Fore most influenced by contacts with Westerners ... as well as those least influenced by these recent contacts who have preferred to remain in their isolated hamlets in the mountains.
     vi_tri: 'Ekman 1969, tr. 87 (nhận 17/10/1968, đăng 4/1969); Ekman & Friesen 1971, mục Subjects: "South East Highlands of New Guinea"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "mang chính câu hỏi này đến một bộ tộc sống tách biệt trong rừng núi Papua New Guinea" và "một người chưa từng tiếp xúc với văn hóa phương Tây". Chữ mới: "người Fore ở vùng núi", "một người ít tiếp xúc". Lý do: mẫu 1969 đã tiếp xúc nhiều với phương Tây (G1; Ekman & Friesen 1971); nhất quán với phần Điều gì đang xảy ra.'
+    ghi_chu: 'Chữ cũ: "mang chính câu hỏi này đến một bộ tộc sống tách biệt trong rừng núi Papua New Guinea" và "một người chưa từng tiếp xúc với văn hóa phương Tây". Chữ mới: "người Fore ở vùng núi", "một người ít tiếp xúc". Lý do: mẫu 1969 đã tiếp xúc nhiều với phương Tây (G1; Ekman & Friesen 1971); nhất quán với phần Điều gì đang xảy ra. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp Ekman 1969 và Ekman & Friesen 1971.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
     luot_2_ghi_chu: Thời điểm thực địa 1967–69 (bài nộp 1968) khớp 'cuối thập niên 1960'.
+    review: dung
   - id: n5
     cau: Nếu người ở mọi nền văn hóa đều đọc nét mặt giống nhau, cảm xúc có thể là "phần cứng" sinh học chung; nếu không, cảm xúc có thể là thứ học từ văn hóa.
     loai: phat-hien
@@ -142,10 +148,11 @@ nhan_dinh:
     trich: This finding contradicts (i) the theory (1) that facial displays of emotion are socially learned and therefore culturally variable
     vi_tri: 'Ekman 1969, tr. 86 (tài liệu 1: Klineberg 1940, La Barre 1947); Ekman & Friesen 1971, tr. 124'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "nhiều nhà nhân học cho rằng". Chữ mới: "nhiều học giả cho rằng". Lý do: nguồn dẫn Klineberg (tâm lý xã hội) và La Barre (nhân học), Birdwhistell; không chỉ nhà nhân học.'
+    ghi_chu: 'Chữ cũ: "nhiều nhà nhân học cho rằng". Chữ mới: "nhiều học giả cho rằng". Lý do: nguồn dẫn Klineberg (tâm lý xã hội) và La Barre (nhân học), Birdwhistell; không chỉ nhà nhân học. Review (Claude Opus 5.5, 10/11/2026): dung. Bài 1969 dẫn cả Klineberg, La Barre, Birdwhistell; "nhiều học giả" đúng mức.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
     luot_2_ghi_chu: "'Nhiều học giả' hơi khái quát nhưng khớp với cách bài gốc mô tả lập trường đối lập."
+    review: dung
   - id: n8
     cau: 'Ekman kiểm tra trực tiếp: cho người ở các nền văn hóa khác nhau xem cùng một bộ ảnh nét mặt và yêu cầu chọn từ chỉ cảm xúc.'
     loai: phat-hien
@@ -176,10 +183,11 @@ nhan_dinh:
     trich: members of two preliterate cultures who had extensive contact with Western cultures (the Sadong of Borneo and the Fore of New Guinea), although the latter results were not as strong (Ekman, Sorenson, & Friesen, 1969)
     vi_tri: 'Ekman & Friesen 1971, tr. 125; Ekman 1969, tr. 87: "We report in detail only on the most Westernized Fore"'
     ket_qua: da-sua
-    ghi_chu: 'G1 (SAI, đã áp vào trang): chữ cũ nói mẫu Fore 1969 là người "gần như chưa tiếp xúc"; chữ mới như trên. Đối chiếu lại: chữ hiện trên trang khớp trích của Ekman & Friesen 1971 và Ekman 1969.'
+    ghi_chu: 'G1 (SAI, đã áp vào trang): chữ cũ nói mẫu Fore 1969 là người "gần như chưa tiếp xúc"; chữ mới như trên. Đối chiếu lại: chữ hiện trên trang khớp trích của Ekman & Friesen 1971 và Ekman 1969. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích Ekman & Friesen 1971.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
     luot_2_ghi_chu: "Lưu ý: 1969 cũng có nghiên cứu nhóm Fore ít Tây hóa nhưng chỉ tóm tắt; 'mới chọn riêng' ở 1971 vẫn đúng ở mức báo cáo chi tiết."
+    review: dung
   - id: n11
     cau: Người tham gia ở 5 mẫu xem cùng một bộ ảnh nét mặt của người phương Tây, rồi chọn từ cảm xúc phù hợp.
     loai: phat-hien
@@ -216,9 +224,10 @@ nhan_dinh:
     trich: Happy (H) 97 H ... 82 H; Fear 88 F ... 54 F; Anger 69 A ... 50 A; Disgust-contempt 82 D ... 44 D
     vi_tri: Ekman 1969, Bảng 1, cột United States và Fore responses
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Người Fore nhận diện đúng ở tỉ lệ trên mức may rủi trong mọi cảm xúc. Nhưng có hai điểm đáng chú ý:". Chữ mới: chỉ nói vui, sợ, giận, ghê tởm trên may rủi, và tách riêng ngạc nhiên, buồn (n17). Lý do: ở nhóm trả lời bằng tiếng Fore, nhãn được chọn nhiều nhất cho ngạc nhiên là "sợ" (45%) và cho buồn là "giận" (56%); bài 1969 nói ngạc nhiên và buồn chỉ nhận ra ở 2/3 mẫu. Mức may rủi 1/6 = 16,7% là phép tính từ 6 lựa chọn.'
+    ghi_chu: 'Chữ cũ: "Người Fore nhận diện đúng ở tỉ lệ trên mức may rủi trong mọi cảm xúc. Nhưng có hai điểm đáng chú ý:". Chữ mới: chỉ nói vui, sợ, giận, ghê tởm trên may rủi, và tách riêng ngạc nhiên, buồn (n17). Lý do: ở nhóm trả lời bằng tiếng Fore, nhãn được chọn nhiều nhất cho ngạc nhiên là "sợ" (45%) và cho buồn là "giận" (56%); bài 1969 nói ngạc nhiên và buồn chỉ nhận ra ở 2/3 mẫu. Mức may rủi 1/6 = 16,7% là phép tính từ 6 lựa chọn. Review (Claude Opus 5.5, 10/11/2026): dung. Đối chiếu Bảng 1 Ekman 1969 (đã mở): Fore 82/54/50/44, Mỹ 97/88/69/82; Pidgin 99/46/56/29 khớp dòng 42 của trang.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
+    review: dung
   - id: n15
     cau: 'Bảng của trang: Fore gọi đúng vui 82%, sợ 54%, giận 50%, ghê tởm 44%; Mỹ gọi đúng vui 97%, sợ 88%, giận 69%, ghê tởm 82%.'
     loai: so-lieu
@@ -245,9 +254,10 @@ nhan_dinh:
     trich: Surprise (SU) ... 45 F ... Sadness (SA) ... 56 A
     vi_tri: Ekman 1969, Bảng 1, cột Fore responses
     ket_qua: da-sua
-    ghi_chu: 'Chữ mới thêm; thay câu cũ "nét mặt ngạc nhiên thường bị người Fore gọi là sợ" (đúng ở nhóm Fore, không đúng ở nhóm Pidgin: ngạc nhiên 38%, sợ 30%), G1 KHÔNG KIỂM ĐƯỢC câu này; đã kiểm từ toàn văn.'
+    ghi_chu: 'Chữ mới thêm; thay câu cũ "nét mặt ngạc nhiên thường bị người Fore gọi là sợ" (đúng ở nhóm Fore, không đúng ở nhóm Pidgin: ngạc nhiên 38%, sợ 30%), G1 KHÔNG KIỂM ĐƯỢC câu này; đã kiểm từ toàn văn. Review (Claude Opus 5.5, 10/11/2026): dung. Bảng 1: cột Fore, ngạc nhiên 45 F, buồn 56 A.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
+    review: dung
   - id: n18
     cau: Nét mặt vui được nhận diện tốt nhất (hoặc ngang tốt nhất) ở cả sáu nhóm, với 82–99%.
     loai: so-lieu
@@ -255,10 +265,11 @@ nhan_dinh:
     trich: Happy (H) 97 H 97 H 87 H 99 H 82 H 92 H
     vi_tri: Ekman 1969, Bảng 1
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "được nhận diện tốt nhất ở mọi nền văn hóa". Chữ mới thêm "hoặc ngang tốt nhất" và "cả sáu nhóm". Lý do: ở Nhật, vui và ngạc nhiên cùng 87%.'
+    ghi_chu: 'Chữ cũ: "được nhận diện tốt nhất ở mọi nền văn hóa". Chữ mới thêm "hoặc ngang tốt nhất" và "cả sáu nhóm". Lý do: ở Nhật, vui và ngạc nhiên cùng 87%. Review (Claude Opus 5.5, 10/11/2026): dung. Bảng 1: vui 97, 97, 87, 99, 82, 92; Nhật ngạc nhiên cũng 87.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
     luot_2_ghi_chu: Cao nhất hoặc ngang cao nhất ở cả sáu nhóm; khoảng 82–99%.
+    review: dung
   - id: n19
     cau: 'Ở người Fore, các cảm xúc tiêu cực thấp hơn rõ rệt và hay bị gọi nhầm sang cảm xúc khác: ghê tởm lẫn với giận, sợ lẫn với giận hoặc ngạc nhiên.'
     loai: so-lieu
@@ -266,10 +277,11 @@ nhan_dinh:
     trich: Fear ... 54 F 25 A; Disgust-contempt ... 44 D 30 A; Anger ... 50 A 25 F
     vi_tri: Ekman 1969, Bảng 1, cột Fore responses (hàng phụ là lựa chọn nhiều thứ hai)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "các nét mặt giận – sợ – ghê tởm – buồn cũng dễ bị nhầm lẫn." Chữ mới nêu cặp nhầm cụ thể theo bảng (ghê tởm → giận 30%, sợ → giận 25%, ngạc nhiên và Nhật: sợ → ngạc nhiên 26%). "Ngạc nhiên" không phải cảm xúc tiêu cực nên bỏ khỏi nhóm "tiêu cực".'
+    ghi_chu: 'Chữ cũ: "các nét mặt giận – sợ – ghê tởm – buồn cũng dễ bị nhầm lẫn." Chữ mới nêu cặp nhầm cụ thể theo bảng (ghê tởm → giận 30%, sợ → giận 25%, ngạc nhiên và Nhật: sợ → ngạc nhiên 26%). "Ngạc nhiên" không phải cảm xúc tiêu cực nên bỏ khỏi nhóm "tiêu cực". Review (Claude Opus 5.5, 10/11/2026): dung. Bảng 1 (Fore): ghê tởm 30% gọi giận, sợ 25% gọi giận; sợ lẫn ngạc nhiên ở Fore là theo chiều ngạc nhiên bị gọi sợ (45%), "lẫn với" chấp nhận được.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
     luot_2_ghi_chu: Sợ lẫn với giận khớp ở nhóm Fore; sợ lẫn với ngạc nhiên thấy ở Nhật (26%) và Borneo (33%), còn ở Fore chiều ngược lại (ngạc nhiên bị gọi sợ). Không đổi nhãn.
+    review: dung
   - id: n20
     cau: Ở các mẫu biết chữ, tỉ lệ đúng cao hơn hẳn (63–97% tùy cảm xúc).
     loai: so-lieu
@@ -309,10 +321,11 @@ nhan_dinh:
     trich: This list of affects includes all of Tomkins' primary affect categories except for interest and shame
     vi_tri: 'Ekman 1969, tr. 87; Barrett 2019: "the six most popular emotion categories used by consumers of emotion research"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Chính từ dòng nghiên cứu này, Ekman đề xuất danh sách sáu cảm xúc cơ bản". Chữ mới nói bộ ảnh chia theo sáu loại, lấy từ Tomkins. Lý do: bài 1969 nói rõ lấy từ danh sách sơ cấp của Tomkins (tám loại: hứng thú, vui, ngạc nhiên, sợ, giận, đau khổ, ghê tởm–khinh miệt, xấu hổ). Lý lịch ai "đề xuất" không xác nhận được từ bài.'
+    ghi_chu: 'Chữ cũ: "Chính từ dòng nghiên cứu này, Ekman đề xuất danh sách sáu cảm xúc cơ bản". Chữ mới nói bộ ảnh chia theo sáu loại, lấy từ Tomkins. Lý do: bài 1969 nói rõ lấy từ danh sách sơ cấp của Tomkins (tám loại: hứng thú, vui, ngạc nhiên, sợ, giận, đau khổ, ghê tởm–khinh miệt, xấu hổ). Lý lịch ai "đề xuất" không xác nhận được từ bài. Review (Claude Opus 5.5, 10/11/2026): dung. Ekman 1969: danh sách lấy từ các loại sơ cấp của Tomkins trừ hứng thú và xấu hổ.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
     luot_2_ghi_chu: Cách gọi 'sáu cảm xúc cơ bản của Ekman' là quy ước về sau; bài 1969 không dùng cụm đó.
+    review: dung
   - id: n24
     cau: Danh sách sáu cảm xúc cơ bản là một trong những ý tưởng nổi tiếng và gây tranh cãi nhất của tâm lý học.
     loai: lich-su
@@ -333,9 +346,10 @@ nhan_dinh:
     trich: Those selected had seen no movies, neither spoke nor understood English or Pidgin, had not lived in any of the Western settlement or government towns, and had never worked for a Caucasian
     vi_tri: Ekman & Friesen 1971, Method, Subjects
     ket_qua: da-sua
-    ghi_chu: 'theo G1-L04: đã sửa; đối chiếu lại: chữ trên trang khớp trích (trang bỏ vế "chưa từng làm việc cho người da trắng", không sai). Chữ cũ của G1: Dòng 54 nói đổi phương pháp loại trừ việc "đã vô tình thấy ảnh phương Tây"; chữ mới: tiêu chí chọn người loại trừ, kể chuyện là cách hỏi.'
+    ghi_chu: 'theo G1-L04: đã sửa; đối chiếu lại: chữ trên trang khớp trích (trang bỏ vế "chưa từng làm việc cho người da trắng", không sai). Chữ cũ của G1: Dòng 54 nói đổi phương pháp loại trừ việc "đã vô tình thấy ảnh phương Tây"; chữ mới: tiêu chí chọn người loại trừ, kể chuyện là cách hỏi. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích Ekman & Friesen 1971.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
+    review: dung
   - id: n26
     cau: 'Cách hỏi năm 1971 khác: kể một câu chuyện rồi yêu cầu chọn khuôn mặt phù hợp trong ba bức ảnh (người lớn).'
     loai: phat-hien
@@ -343,10 +357,11 @@ nhan_dinh:
     trich: showing them a set of three faces, and asking them to select the face which showed the emotion appropriate to the story
     vi_tri: Ekman & Friesen 1971, tóm tắt; mục Story-Photographs Trial (người lớn 2 ảnh sai, trẻ em 1 ảnh sai)
     ket_qua: da-lam-mem
-    ghi_chu: Thêm "(người lớn)" vì trẻ em chỉ có hai ảnh.
+    ghi_chu: 'Thêm "(người lớn)" vì trẻ em chỉ có hai ảnh. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
     luot_2_ghi_chu: Trẻ em chỉ có 2 ảnh; câu của trang chỉ nói người lớn nên đúng.
+    review: dung
   - id: n27
     cau: 'Ví dụ câu chuyện năm 1971: "con của anh ta vừa chết" (cho nét mặt buồn).'
     loai: phat-hien
@@ -354,9 +369,10 @@ nhan_dinh:
     trich: 'Sadness: His (her) child (mother) has died, and he (she) feels very sad.'
     vi_tri: Ekman & Friesen 1971, mục Emotion Stories, tr. 126
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "một người bạn của anh ta vừa chết". Chữ mới: "con của anh ta vừa chết", cho nét mặt buồn. Lý do: trong bài, truyện buồn là con (hay mẹ) chết; "friends have come" là truyện cho vui. G1 không bắt lỗi này.'
+    ghi_chu: 'Chữ cũ: "một người bạn của anh ta vừa chết". Chữ mới: "con của anh ta vừa chết", cho nét mặt buồn. Lý do: trong bài, truyện buồn là con (hay mẹ) chết; "friends have come" là truyện cho vui. G1 không bắt lỗi này. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích (truyện buồn: con hay mẹ chết).'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
+    review: dung
   - id: n28
     cau: Ở nghiên cứu 1971 người Fore chọn đúng ở trên mức may rủi trong mọi phép phân biệt, trừ sợ so với ngạc nhiên.
     loai: phat-hien
@@ -364,9 +380,10 @@ nhan_dinh:
     trich: A binomial test of significance assuming chance performance to be one in three showed that the correct face was chosen at a significant level for all of the discriminations (rows) except that of fear from surprise.
     vi_tri: Ekman & Friesen 1971, Results, tr. 127; Discussion
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Tỉ lệ đúng đa số ở trên mức may rủi — nhưng cặp sợ – ngạc nhiên vẫn là chỗ khó phân biệt nhất". Chữ mới theo bài: mọi phép phân biệt trên may rủi trừ sợ so với ngạc nhiên (không phân biệt được sợ khỏi ngạc nhiên, nhưng phân biệt được ngạc nhiên khỏi sợ). "Đa số" mơ hồ.'
+    ghi_chu: 'Chữ cũ: "Tỉ lệ đúng đa số ở trên mức may rủi — nhưng cặp sợ – ngạc nhiên vẫn là chỗ khó phân biệt nhất". Chữ mới theo bài: mọi phép phân biệt trên may rủi trừ sợ so với ngạc nhiên (không phân biệt được sợ khỏi ngạc nhiên, nhưng phân biệt được ngạc nhiên khỏi sợ). "Đa số" mơ hồ. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp kiểm định nhị thức trong Ekman & Friesen 1971.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
+    review: dung
   - id: n29
     cau: Elfenbein và Ambady (2002) là phân tích tổng hợp về nhận diện cảm xúc trong và giữa các nền văn hóa.
     loai: lich-su
@@ -386,9 +403,10 @@ nhan_dinh:
     trich: only 3.1% of the samples (5 out of 162 reporting sufficient information) showed cross-cultural accuracy that was no better than chance for any individual emotion
     vi_tri: 'Elfenbein & Ambady 2002, mục Results, Sign test; tóm tắt: "Emotions were universally recognized at better-than-chance levels"'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "ở mọi nền văn hóa được nghiên cứu". Chữ mới thêm giới hạn "những nghiên cứu được gộp" và con số. Lý do: tóm tắt nói "universally", nhưng các mẫu chủ yếu từ nước công nghiệp hóa (Barrett 2019) và vẫn có 5/162 mẫu không hơn may rủi cho một cảm xúc.'
+    ghi_chu: 'Chữ cũ: "ở mọi nền văn hóa được nghiên cứu". Chữ mới thêm giới hạn "những nghiên cứu được gộp" và con số. Lý do: tóm tắt nói "universally", nhưng các mẫu chủ yếu từ nước công nghiệp hóa (Barrett 2019) và vẫn có 5/162 mẫu không hơn may rủi cho một cảm xúc. Review (Claude Opus 5.5, 10/11/2026): dung. Elfenbein & Ambady 2002 (đã mở PDF): "only 3.1% of the samples (5 out of 162 ...)".'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf" ]
+    review: dung
   - id: n31
     cau: Người ta nhận diện cảm xúc của người cùng nền văn hóa với mình chính xác hơn người khác nền văn hóa, gọi là "lợi thế trong nhóm".
     loai: phat-hien
@@ -462,10 +480,11 @@ nhan_dinh:
       - barrett2019
     ly_do: 'Phân tích tổng hợp 2002 (87 bài, 97 nghiên cứu, hơn 20 nước) cùng chiều: 5/162 mẫu không hơn may rủi cho một cảm xúc; Ekman & Friesen 1971 làm lại bằng cách hỏi khác và chọn người ít tiếp xúc; Barrett 2019 thừa nhận kết quả với nhiệm vụ chọn từ danh sách. Giới hạn ghi trên trang: tỉ lệ khác nhau theo cảm xúc, cộng đồng nhỏ biệt lập từ 2008 yếu hơn. Phạm vi chữ thu hẹp theo Barrett 2019 (nhiệm vụ ít ràng buộc cho kết quả yếu hơn nhiều).'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "nét mặt cảm xúc được nhận diện đúng ở trên mức may rủi trong nhiều nền văn hóa". Chữ mới thu hẹp phạm vi: "khi chọn nhãn cảm xúc từ một danh sách cho sẵn ... ảnh nét mặt dàn dựng". Lý do: Barrett 2019 báo kết quả "considerably less support" ở nhiệm vụ gọi tên tự do; 95% nghiên cứu trong tổng hợp 2002 dùng nét mặt dàn dựng. Giữ nhãn Vững chắc (đã có tổng hợp; nhưng người giao cân nhắc hạ xuống Khá vững vì kết quả ở cộng đồng nhỏ, biệt lập yếu hơn). G1 đã đề xuất thêm câu giới hạn; đã áp.'
+    ghi_chu: 'Chữ cũ: "nét mặt cảm xúc được nhận diện đúng ở trên mức may rủi trong nhiều nền văn hóa". Chữ mới thu hẹp phạm vi: "khi chọn nhãn cảm xúc từ một danh sách cho sẵn ... ảnh nét mặt dàn dựng". Lý do: Barrett 2019 báo kết quả "considerably less support" ở nhiệm vụ gọi tên tự do; 95% nghiên cứu trong tổng hợp 2002 dùng nét mặt dàn dựng. Giữ nhãn Vững chắc (đã có tổng hợp; nhưng người giao cân nhắc hạ xuống Khá vững vì kết quả ở cộng đồng nhỏ, biệt lập yếu hơn). G1 đã đề xuất thêm câu giới hạn; đã áp. Review (Claude Opus 5.5, 10/11/2026): dung. Chốt Vững chắc. Lượt 2 ghi sát thước đo; xét lại: có phân tích tổng hợp chất lượng tốt (Psychol Bull, 87 bài) cùng chiều, không có tái lập lớn thất bại; phạm vi câu đã thu hẹp vào nhiệm vụ chọn từ danh sách và ảnh dàn dựng, đúng phần Barrett 2019 cũng thừa nhận ("All five samples performing some version of a choice-from-array task provided strong evidence in support of cross-cultural reliability"); giới hạn ở cộng đồng nhỏ sau 2008 đã ghi trong khung. Để chủ repo duyệt vì sát ranh.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
     luot_2_ghi_chu: "Khung 'vững chắc' có phân tích tổng hợp (Psych Bull) cùng chiều; câu đã giới hạn ở 'chọn nhãn từ danh sách' và 'ảnh dàn dựng', đúng với phạm vi bằng chứng. Giới hạn: sau 2008 các cộng đồng nhỏ, biệt lập cho kết quả yếu hơn (xem n38), mẫu 2002 chủ yếu từ nước lớn/phát triển; ranh giới hơi sát thước đo nhưng chưa vượt."
+    review: dung
   - id: n37
     cau: Phát hiện gốc năm 1969 đã được làm lại bằng phương pháp khác (Ekman và Friesen, 1971) và được ủng hộ bởi phân tích tổng hợp toàn lĩnh vực (Elfenbein và Ambady, 2002).
     loai: lich-su
@@ -503,6 +522,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf" ]
     luot_2_ghi_chu: "'Khá vững' nằm dưới trần (có phân tích tổng hợp, còn hạn chế về thiết kế và giải thích); không vượt thước đo."
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Khá vững: một phân tích tổng hợp, chưa tái lập lớn, mẫu chủ yếu nước công nghiệp hóa: đúng thước đo."
+    review: dung
   - id: n40
     cau: '"Lợi thế trong nhóm" xuất hiện ổn định trong phân tích tổng hợp 2002: ta giỏi đọc mặt người cùng văn hóa hơn.'
     loai: phat-hien
@@ -523,10 +544,11 @@ nhan_dinh:
     trich: Using a unique computer graphics platform ... reconstructed their mental representations
     vi_tri: Jack 2012, tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Đây là một phần lý do vì sao người Đông Á và người phương Tây có thể "thấy" khác nhau". Chữ mới nói là hướng giải thích liên quan, chưa kiểm chứng riêng. Lý do: không nguồn nào nối trực tiếp lợi thế trong nhóm với kết quả Jack.'
+    ghi_chu: 'Chữ cũ: "Đây là một phần lý do vì sao người Đông Á và người phương Tây có thể "thấy" khác nhau". Chữ mới nói là hướng giải thích liên quan, chưa kiểm chứng riêng. Lý do: không nguồn nào nối trực tiếp lợi thế trong nhóm với kết quả Jack. Review (Claude Opus 5.5, 10/11/2026): dung. Đã ghi rõ là hướng giải thích chưa kiểm chứng riêng.'
     luot_2: dung
     luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/22509011/" ]
     luot_2_ghi_chu: Câu tự ghi là hướng giải thích chưa kiểm chứng riêng; hợp với phạm vi tóm tắt.
+    review: dung
   - id: n42
     cau: 'Câu hỏi cảm xúc có phải "chương trình" sinh học phổ quát vẫn chưa ngã ngũ: tranh cãi.'
     loai: nhan
@@ -543,6 +565,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf" ]
     luot_2_ghi_chu: "Nhãn 'đang tranh cãi' phù hợp: có bằng chứng chất lượng cao ở cả hai phía."
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Đang tranh cãi: bằng chứng chất lượng cao hai phía (Barrett 2019; Ekman 2016; Jack 2012): đúng thước đo."
+    review: dung
   - id: n43
     cau: Phe Ekman cho rằng sáu cảm xúc cơ bản là sản phẩm tiến hóa, có nét mặt đặc trưng chung cho loài người.
     loai: phat-hien
@@ -624,9 +648,10 @@ nhan_dinh:
     trich: Barrett, L. F., Adolphs, R., Marsella, S., Martinez, A. M., & Pollak, S. D. (2019)
     vi_tri: Barrett 2019, trang tên bài, năm nhà khoa học
     ket_qua: da-lam-mem
-    ghi_chu: 'G1 (ĐÁNG NGỜ, đã áp): chữ cũ nêu "hơn 1.000 công trình" và "quan điểm ban đầu khác nhau"; chữ mới "một khối lượng lớn". Đối chiếu lại: bài có năm tác giả; không có "1.000" trong toàn văn PMC.'
+    ghi_chu: 'G1 (ĐÁNG NGỜ, đã áp): chữ cũ nêu "hơn 1.000 công trình" và "quan điểm ban đầu khác nhau"; chữ mới "một khối lượng lớn". Đối chiếu lại: bài có năm tác giả; không có "1.000" trong toàn văn PMC. Review (Claude Opus 5.5, 10/11/2026): dung. PMC6640856: năm tác giả.'
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1177/1529100619832930", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/" ]
+    review: dung
   - id: n50
     cau: 'Tổng quan 2019: người ta có cười khi vui, cau mày khi buồn nhiều hơn mức may rủi, nhưng không đủ ổn định và đặc trưng giữa các bối cảnh, cá nhân và nền văn hóa để coi bất kỳ mẫu nét mặt nào là "biểu hiện chuẩn" của một cảm xúc.'
     loai: phat-hien
@@ -652,6 +677,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/" ]
     luot_2_ghi_chu: Nhãn 'đang tranh cãi' phù hợp (còn phe Keltner/Cordaro phản bác); là nhãn thấp hơn trần.
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Nhãn dựa vào kết luận còn tranh cãi của Barrett 2019: Đang tranh cãi phù hợp."
+    review: dung
   - id: n52
     cau: Một cái chau mày có thể là giận, tập trung, hoặc đau đầu; nét mặt là một manh mối, không phải bằng chứng.
     loai: phat-hien
@@ -677,6 +704,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/" ]
     luot_2_ghi_chu: Nhãn 'đang tranh cãi' là nhãn thấp hơn trần.
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Như n51."
+    review: dung
   - id: n54
     cau: Nhiều công ty quảng cáo phần mềm nhận biết cảm xúc từ khuôn mặt; niềm tin rằng nét mặt cho biết cảm xúc còn ảnh hưởng tới quyết định pháp lý, an ninh và giáo dục.
     loai: phat-hien
@@ -685,9 +714,10 @@ nhan_dinh:
     trich: This assumption influences legal judgments, policy decisions, national security protocols, and educational practices
     vi_tri: Barrett 2019, tóm tắt; mục mở đầu ("Technology companies are investing ... Microsoft's Emotion API")
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Nhiều hệ thống AI quảng cáo khả năng nhận biết cảm xúc từ khuôn mặt để tuyển dụng, giám sát lớp học hay an ninh." Chữ mới: bỏ "tuyển dụng" và "giám sát lớp học" (không có trong Barrett 2019), thay bằng các lĩnh vực nguồn nêu. Lý do: không có nguồn đã mở cho "tuyển dụng".'
+    ghi_chu: 'Chữ cũ: "Nhiều hệ thống AI quảng cáo khả năng nhận biết cảm xúc từ khuôn mặt để tuyển dụng, giám sát lớp học hay an ninh." Chữ mới: bỏ "tuyển dụng" và "giám sát lớp học" (không có trong Barrett 2019), thay bằng các lĩnh vực nguồn nêu. Lý do: không có nguồn đã mở cho "tuyển dụng". Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích Barrett 2019.'
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/" ]
+    review: dung
   - id: n55
     cau: Barrett và cộng sự (2019) kết luận không thể tự tin suy ra cảm xúc từ một cái cười hay cau mày; một sản phẩm thương mại quảng cáo rằng các cảm xúc ấy được truyền đạt bằng nét mặt riêng biệt, phổ quát.
     loai: phat-hien
@@ -696,9 +726,10 @@ nhan_dinh:
     trich: It is not possible to confidently infer happiness from just a smile, anger from a scowl, or sadness from a frown, as numerous technology tries to do
     vi_tri: 'Barrett 2019, mục kết luận; mục mở đầu (Microsoft Emotion API: "understood to be cross-culturally and universally communicated with particular facial expressions")'
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "cơ sở khoa học ... còn yếu hơn nhiều so với quảng cáo". Chữ mới bám chữ trong bài. Lý do: "yếu hơn nhiều so với quảng cáo" là suy diễn của trang.'
+    ghi_chu: 'Chữ cũ: "cơ sở khoa học ... còn yếu hơn nhiều so với quảng cáo". Chữ mới bám chữ trong bài. Lý do: "yếu hơn nhiều so với quảng cáo" là suy diễn của trang. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích Barrett 2019.'
     luot_2: dung
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/" ]
+    review: dung
   - id: n56
     cau: Dùng công nghệ này để ra quyết định quan trọng về con người là điều đáng cân nhắc kỹ.
     loai: loi-khuyen
@@ -727,6 +758,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://repositorium.uminho.pt/bitstreams/6126df7b-bf23-4db6-9fab-2870a6be90e0/download", "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
     luot_2_ghi_chu: Nhãn 'khá vững' phù hợp (khảo sát tự báo cáo ở sinh viên, nhiều nước).
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Khá vững: khảo sát tự báo cáo nhiều nước, chưa có tổng hợp: đúng thước đo."
+    review: dung
   - id: n58
     cau: Chính Ekman thừa nhận văn hóa quy định cảm xúc nào được phép thể hiện, với ai, lúc nào.
     loai: phat-hien
@@ -745,23 +778,25 @@ nhan_dinh:
     trich: More than 5,000 respondents in 32 countries completed the Display Rule Assessment Inventory ... greater expression toward in-groups versus out-groups ... Individualistic and collectivistic cultures differed on overall expressivity endorsement and in norms concerning specific emotions
     vi_tri: Matsumoto và cộng sự 2008, J Cross-Cult Psychol 39(1), tóm tắt (Crossref)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Ở nhiều nền văn hóa châu Á, người ta có xu hướng tiết chế biểu lộ cảm xúc tiêu cực trước người ngoài hơn người phương Tây." Chữ mới như trên. Lý do: không nguồn đã mở nói chiều đó cho người ngoài nhóm; tóm tắt chỉ nói khác biệt giữa văn hóa cá nhân và tập thể. Chỉ có tóm tắt (toàn văn không mở được).'
+    ghi_chu: 'Chữ cũ: "Ở nhiều nền văn hóa châu Á, người ta có xu hướng tiết chế biểu lộ cảm xúc tiêu cực trước người ngoài hơn người phương Tây." Chữ mới như trên. Lý do: không nguồn đã mở nói chiều đó cho người ngoài nhóm; tóm tắt chỉ nói khác biệt giữa văn hóa cá nhân và tập thể. Chỉ có tóm tắt (toàn văn không mở được). Review (Claude Opus 5.5, 10/11/2026): dung. Khớp tóm tắt Matsumoto 2008.'
     luot_2: dung
     luot_2_nguon: [ "https://repositorium.uminho.pt/bitstreams/6126df7b-bf23-4db6-9fab-2870a6be90e0/download" ]
     luot_2_ghi_chu: Mẫu là sinh viên đại học trả lời bảng hỏi (DRAI).
+    review: dung
   - id: n60
-    cau: Hiểu quy tắc biểu hiện giúp ta tránh suy diễn "họ lạnh lùng" hay "họ không quan tâm" chỉ vì nét mặt ít biểu cảm.
+    cau: Biết rằng quy tắc biểu hiện khác nhau giữa các văn hóa có thể giúp ta bớt vội suy diễn "họ lạnh lùng" hay "họ không quan tâm" chỉ vì nét mặt ít biểu cảm.
     loai: loi-khuyen
     nguon:
       - matsumoto2008
       - barrett2019
     trich: norms concerning specific emotions in in-group and out-group situations
     vi_tri: 'Matsumoto 2008, tóm tắt; Barrett 2019: nét mặt không phải biểu hiện chuẩn của cảm xúc'
-    ket_qua: dung
-    ghi_chu: Lời khuyên giao tiếp, cùng cơ sở với nhãn n57.
+    ket_qua: da-lam-mem
+    ghi_chu: 'Lời khuyên giao tiếp, cùng cơ sở với nhãn n57. Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2 đúng (quá mạnh): không có nghiên cứu nào kiểm việc hiểu quy tắc biểu hiện làm giảm suy diễn sai; đây là suy luận từ khảo sát về quy tắc biểu hiện. Chữ cũ: "Hiểu điều này giúp ta tránh suy diễn ...". Chữ mới: "Biết điều này có thể giúp ta bớt vội suy diễn ...".'
     luot_2: qua-manh
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf", "https://repositorium.uminho.pt/bitstreams/6126df7b-bf23-4db6-9fab-2870a6be90e0/download" ]
     luot_2_ghi_chu: "câu đúng: Biết rằng chuẩn mực biểu hiện khác nhau giữa các văn hóa có thể giúp ta bớt vội suy diễn 'họ lạnh lùng' hay 'họ không quan tâm' từ nét mặt ít biểu cảm; điều này hợp lý từ các nghiên cứu về quy tắc biểu hiện, nhưng chưa có thử nghiệm huấn luyện kiểm chứng.; Không thấy nghiên cứu nào cho thấy hiểu quy tắc biểu hiện làm giảm suy diễn sai về người ít biểu cảm; 'giúp ta tránh' nói mạnh hơn bằng chứng đọc được."
+    review: sai
   - id: n61
     cau: 'Đừng gộp tất cả cảm xúc khó chịu thành "buồn": Barrett cho rằng khái niệm cảm xúc ta học được sẽ định hình cảm xúc ta trải nghiệm.'
     loai: phat-hien
@@ -782,10 +817,11 @@ nhan_dinh:
     trich: upon experiencing intense distress, individuals who experience their emotions with more granularity are less likely to resort to maladaptive self-regulatory strategies such as binge drinking, aggression, and self-injurious behavior
     vi_tri: Kashdan, Barrett & McKnight 2015, Curr Dir Psychol Sci, tóm tắt (Crossref)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "người phân biệt được bực, thất vọng, tủi thân ... có thể điều tiết cảm xúc tốt hơn. Đây là đề xuất từ lý thuyết kiến tạo, chưa phải lời khuyên đã được kiểm chứng bằng thử nghiệm — nhưng ... vô hại và có thể hữu ích." Chữ mới dẫn Kashdan và cộng sự 2015 và bỏ "vô hại". Lý do: tóm tắt có nói bằng chứng cho can thiệp, nên "chưa kiểm chứng bằng thử nghiệm" quá mạnh; "vô hại" không có nguồn. Chỉ tóm tắt. Ví dụ "bực, thất vọng, tủi thân" là giả định.'
+    ghi_chu: 'Chữ cũ: "người phân biệt được bực, thất vọng, tủi thân ... có thể điều tiết cảm xúc tốt hơn. Đây là đề xuất từ lý thuyết kiến tạo, chưa phải lời khuyên đã được kiểm chứng bằng thử nghiệm — nhưng ... vô hại và có thể hữu ích." Chữ mới dẫn Kashdan và cộng sự 2015 và bỏ "vô hại". Lý do: tóm tắt có nói bằng chứng cho can thiệp, nên "chưa kiểm chứng bằng thử nghiệm" quá mạnh; "vô hại" không có nguồn. Chỉ tóm tắt. Ví dụ "bực, thất vọng, tủi thân" là giả định. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp tóm tắt Kashdan 2015; trang đã nói đó chưa phải lời khuyên chắc chắn.'
     luot_2: dung
     luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/20696854/", "https://pubmed.ncbi.nlm.nih.gov/34264705/" ]
     luot_2_ghi_chu: Chỉ đọc tóm tắt; tương quan, không chứng minh nhân quả.
+    review: dung
   - id: n63
     cau: Đó chưa phải lời khuyên chắc chắn rằng gọi tên cảm xúc thì điều tiết tốt hơn; thử gọi tên cảm xúc cụ thể hơn là việc dễ làm và có thể hữu ích.
     loai: loi-khuyen
@@ -813,6 +849,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/34264705/", "https://pubmed.ncbi.nlm.nih.gov/20696854/" ]
     luot_2_ghi_chu: Nhãn thấp hơn trần, chấp nhận được.
+    ghi_chu: "Review (Claude Opus 5.5, 10/11/2026): dung. Đang tranh cãi: chủ yếu bằng chứng tương quan, lý thuyết nền còn tranh luận; nhãn không vượt thước đo."
+    review: dung
   - id: n65
     cau: Nghiên cứu gốc của Ekman (1969) không có mẫu người Việt Nam.
     loai: phat-hien
@@ -823,28 +861,34 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf" ]
   - id: n66
-    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra việc nhận diện nét mặt cảm xúc trên người Việt.
+    cau: "Tính đến 11/2026, chúng tôi chỉ thấy rất ít nghiên cứu nhận diện nét mặt cảm xúc có người Việt tham gia; một ví dụ nằm trong phân tích tổng hợp năm 2002: một mẫu 34 người Việt Nam xem ảnh nét mặt dàn dựng của người Mỹ và người Nhật và gọi đúng khoảng 80% (Biehl và cộng sự, 1997)."
     loai: thoi-su
     nguon:
       - tim-kiem-vn
+      - elfenbein2002
+      - biehl1997
     het_han: '2028-11-01'
-    ket_qua: dung
-    ghi_chu: 'Lần tìm 10/11/2026: Europe PMC (4 truy vấn: "Vietnamese" với "facial expression" hay "emotion recognition", "universality", "basic emotions"; 0 kết quả về người Việt, chỉ có nghiên cứu mô hình học sâu hay robot); Crossref (6 truy vấn tiếng Anh và tiếng Việt, chỉ có một bài về học sâu "Nhận diện cảm xúc khuôn mặt của trẻ em bằng mô hình học sâu", Tạp chí Khoa học Nông nghiệp Việt Nam 2026, là phần mềm, không phải người đọc nét mặt). OpenAlex bị giới hạn lượt ngày 10/11/2026 (HTTP 429) nên không dùng. Chưa tìm Google Scholar hay tạp chí tâm lý trong nước. Câu đã nêu "chúng tôi chưa tìm thấy".'
+    ket_qua: da-sua
+    ghi_chu: 'Lần tìm 10/11/2026: Europe PMC (4 truy vấn: "Vietnamese" với "facial expression" hay "emotion recognition", "universality", "basic emotions"; 0 kết quả về người Việt, chỉ có nghiên cứu mô hình học sâu hay robot); Crossref (6 truy vấn tiếng Anh và tiếng Việt, chỉ có một bài về học sâu "Nhận diện cảm xúc khuôn mặt của trẻ em bằng mô hình học sâu", Tạp chí Khoa học Nông nghiệp Việt Nam 2026, là phần mềm, không phải người đọc nét mặt). OpenAlex bị giới hạn lượt ngày 10/11/2026 (HTTP 429) nên không dùng. Chưa tìm Google Scholar hay tạp chí tâm lý trong nước. Câu đã nêu "chúng tôi chưa tìm thấy". Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2 đúng. Đã mở Elfenbein & Ambady 2002 (PDF Internet Archive), Bảng 1: "Biehl et al. (1997) ... U.S., Japan | Vietnam | 34 | 80.4" (người biểu lộ Mỹ và Nhật, người xem Việt Nam, 34 người, đúng 80,4%); siêu dữ liệu Biehl 1997 qua OpenAlex. Trang cũng thiếu mốc "Tính đến 11/2026" (hồ sơ có, trang không). Chữ cũ: "chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra việc nhận diện nét mặt cảm xúc trên người Việt". Chữ mới: "Tính đến 11/2026, chúng tôi chỉ thấy rất ít nghiên cứu nhận diện nét mặt cảm xúc có người Việt tham gia. Một ví dụ nằm trong phân tích tổng hợp năm 2002: một mẫu 34 người Việt Nam ... gọi đúng khoảng 80% (Biehl và cộng sự, 1997, theo bảng của Elfenbein và Ambady, 2002)." Thêm Biehl 1997 vào mục Nguồn của trang.'
     luot_2: sai
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf" ]
     luot_2_ghi_chu: "câu đúng: Tính đến 11/2026, chúng tôi chỉ thấy rất ít nghiên cứu nhận diện nét mặt cảm xúc có mẫu người Việt: một ví dụ là Biehl và cộng sự (1997, bộ ảnh JACFEE; mẫu Việt Nam 34 người, đúng khoảng 80% theo bảng của Elfenbein & Ambady 2002); chưa thấy nghiên cứu nào dùng các thiết kế mới (như Jack 2012) trên người Việt.; Ngày kiểm: 2026-11-10. Đã có ít nhất một nghiên cứu có mẫu người Việt (Biehl và cộng sự 1997; mẫu 34 người theo bảng của Elfenbein & Ambady 2002). Cũng tìm Europe PMC và Crossref cùng ngày: thêm một nghiên cứu ERP trên trẻ Việt (Dev Sci 2022) không phải kiểm tra nhận diện nét mặt."
+    trich: Biehl et al. (1997) | U.S., Japan | Vietnam | S | 34 | 80.4
+    vi_tri: "Elfenbein & Ambady 2002, Bảng 1 (tr. 208): nhóm biểu lộ U.S., Japan; nhóm xem Vietnam; n = 34; độ chính xác xuyên văn hóa 80,4%"
+    review: sai
   - id: n67
-    cau: Theo Barrett và cộng sự (2019), phần lớn người tham gia các nghiên cứu được gộp năm 2002 đến từ các nước công nghiệp hóa; còn lại là một số cộng đồng nhỏ, biệt lập.
+    cau: Theo Barrett và cộng sự (2019), phần lớn người tham gia phân tích tổng hợp năm 2002 (87 thí nghiệm, hơn 22.000 người) đến từ các nước quy mô lớn hay đã phát triển.
     loai: so-lieu
     nguon:
       - barrett2019
-    trich: The majority of participants were sampled from larger-scale or developed countries
+    trich: It statistically summarized 87 experiments in which over 22,000 participants from over 20 cultures around the world inferred emotional meaning in facial configurations and other stimuli (such as posed vocalizations). The majority of participants were sampled from larger-scale or developed countries
     vi_tri: Barrett 2019, mục Studies of Healthy Adults From the U.S. and Other Developed Nations
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Phần lớn bằng chứng đến từ Mỹ, châu Âu, Nhật Bản, Papua New Guinea và một số cộng đồng biệt lập khác." Chữ mới như trên. Lý do: Barrett liệt kê hơn 20 nước (gồm Brazil, Trung Quốc, Ethiopia, Zambia...), không chỉ Mỹ, châu Âu, Nhật.'
+    ghi_chu: 'Chữ cũ: "Phần lớn bằng chứng đến từ Mỹ, châu Âu, Nhật Bản, Papua New Guinea và một số cộng đồng biệt lập khác." Chữ mới như trên. Lý do: Barrett liệt kê hơn 20 nước (gồm Brazil, Trung Quốc, Ethiopia, Zambia...), không chỉ Mỹ, châu Âu, Nhật. Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2 đúng (quá mạnh). Barrett 2019 (PMC6640856, đã mở): "It statistically summarized 87 experiments in which over 22,000 participants from over 20 cultures ... The majority of participants were sampled from larger-scale or developed countries, including ... Ethiopia ... Indonesia ... Zambia". Không có vế "còn lại là cộng đồng nhỏ, biệt lập". Chữ cũ: "... đến từ các nước công nghiệp hóa; còn lại là một số cộng đồng nhỏ, biệt lập (Papua New Guinea, Borneo và nơi khác)". Chữ mới: "... phần lớn người tham gia phân tích tổng hợp ấy (87 thí nghiệm, hơn 22.000 người) đến từ các nước quy mô lớn hay đã phát triển."'
     luot_2: qua-manh
     luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/" ]
     luot_2_ghi_chu: "câu đúng: Theo Barrett và cộng sự (2019), phần lớn người tham gia trong 87 thí nghiệm được phân tích tổng hợp năm 2002 (hơn 22.000 người, hơn 20 nền văn hóa) đến từ các nước quy mô lớn hay đã phát triển; chỉ một số ít mẫu là cộng đồng nhỏ, tiền biết chữ.; Nửa đầu đúng (đa số từ nước lớn/phát triển). Nửa sau ('còn lại là một số cộng đồng nhỏ, biệt lập') không có trong Barrett: danh sách gồm cả Ethiopia, Zambia, Indonesia... chứ không chỉ cộng đồng nhỏ biệt lập; các mẫu tiền biết chữ của Ekman chỉ là số ít."
+    review: sai
   - id: n68
     cau: 'Jack và cộng sự (2012): người Đông Á có "hình ảnh trong đầu" về nét mặt cảm xúc khác người phương Tây và dựa nhiều vào vùng mắt.'
     loai: phat-hien
@@ -858,17 +902,19 @@ nhan_dinh:
     luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/22509011/" ]
     luot_2_ghi_chu: Chỉ đọc tóm tắt.
   - id: n69
-    cau: Người Việt có thể gần người Đông Á về văn hóa nên cách đọc nét mặt có thể chịu ảnh hưởng tương tự, nhưng chưa có bằng chứng trực tiếp trên người Việt.
+    cau: Người Việt có thể gần người Đông Á về văn hóa nên cách đọc nét mặt có thể chịu ảnh hưởng tương tự, nhưng chưa có nghiên cứu kiểu Jack và cộng sự (2012) trên người Việt.
     loai: phat-hien
     nguon:
       - jack2012
+      - elfenbein2002
     trich: Easterners represent emotional intensity with distinctive dynamic eye activity.
     vi_tri: Jack 2012; n65
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Vì Việt Nam thuộc khu vực văn hóa Đông Á, cách người Việt đọc nét mặt có thể chịu ảnh hưởng tương tự". Chữ mới: "người Việt có thể gần người Đông Á về văn hóa". Lý do: "thuộc khu vực văn hóa Đông Á" là khẳng định về văn hóa không có nguồn; giữ "có thể" đã ghi rõ suy luận, nguồn là Jack 2012 (cho điều đang suy rộng).'
+    ghi_chu: 'Chữ cũ: "Vì Việt Nam thuộc khu vực văn hóa Đông Á, cách người Việt đọc nét mặt có thể chịu ảnh hưởng tương tự". Chữ mới: "người Việt có thể gần người Đông Á về văn hóa". Lý do: "thuộc khu vực văn hóa Đông Á" là khẳng định về văn hóa không có nguồn; giữ "có thể" đã ghi rõ suy luận, nguồn là Jack 2012 (cho điều đang suy rộng). Review (Claude Opus 5.5, 10/11/2026): sai. Lượt 2 đúng (quá mạnh): đã có mẫu người Việt nhận diện ảnh chuẩn (Biehl 1997, n66), nên "chưa có bằng chứng trực tiếp trên người Việt" quá rộng; điều chưa có là nghiên cứu kiểu Jack 2012. Chữ cũ: "chưa có bằng chứng trực tiếp trên người Việt". Chữ mới: "chưa có nghiên cứu kiểu này trên người Việt". Câu dẫn đổi "Gợi ý gần nhất cho độc giả Việt Nam" thành "Một gợi ý khác" (vì Biehl 1997 gần hơn).'
     luot_2: qua-manh
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf", "https://pubmed.ncbi.nlm.nih.gov/22509011/" ]
     luot_2_ghi_chu: "câu đúng: Người Việt có thể gần người Đông Á về văn hóa nên cách đọc nét mặt có thể chịu ảnh hưởng tương tự, nhưng chưa có bằng chứng trực tiếp về kiểu 'hình ảnh trong đầu' hay cách dùng vùng mắt như Jack 2012 trên người Việt; chỉ có một mẫu nhỏ người Việt nhận diện đúng khoảng 80% ảnh chuẩn (Biehl 1997).; Đã có bằng chứng trực tiếp (nhận diện ảnh chuẩn) trên một mẫu người Việt, dù nhỏ và là thiết kế khác Jack 2012; câu 'chưa có bằng chứng trực tiếp' nói quá rộng. Phần dự đoán 'có thể tương tự người Đông Á' là suy đoán đúng chỗ."
+    review: sai
   - id: n70
     cau: 'Ngộ nhận "có đúng 6 cảm xúc cơ bản": sáu là con số từ danh sách của Ekman, lấy từ danh sách tám cảm xúc sơ cấp của Tomkins (bỏ hứng thú và xấu hổ); các lý thuyết khác đề xuất danh sách khác; ranh giới "cơ bản" là một phần của tranh cãi.'
     loai: phat-hien
@@ -878,9 +924,10 @@ nhan_dinh:
     trich: Tomkins' primary affect categories except for interest and shame
     vi_tri: 'Ekman 1969, tr. 87 (tám loại: interest, joy, surprise, fear, anger, distress, disgust-contempt, shame); Ortony & Turner 1990, tóm tắt'
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "các lý thuyết khác đề xuất danh sách khác nhau, dài hơn hoặc ngắn hơn". Chữ mới bỏ "dài hơn hoặc ngắn hơn" (chỉ có nguồn cho danh sách dài hơn: Tomkins tám, Ekman & Friesen 1971 bảy gồm hứng thú) và thêm xuất xứ.'
+    ghi_chu: 'Chữ cũ: "các lý thuyết khác đề xuất danh sách khác nhau, dài hơn hoặc ngắn hơn". Chữ mới bỏ "dài hơn hoặc ngắn hơn" (chỉ có nguồn cho danh sách dài hơn: Tomkins tám, Ekman & Friesen 1971 bảy gồm hứng thú) và thêm xuất xứ. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp Ekman 1969 và Ortony & Turner 1990 (tóm tắt).'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1126%252Fscience.1251135.zip/10.1126%252Fscience.164.3875.86.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/" ]
+    review: dung
   - id: n71
     cau: 'Ngộ nhận "nhìn mặt là biết người ta đang cảm thấy gì": nét mặt cho ta một xác suất, không phải đáp án chắc chắn.'
     loai: phat-hien
@@ -909,7 +956,8 @@ nhan_dinh:
     cau: 'Mục Đọc thêm: "Nén cảm xúc có tốt?" trỏ tới bài Nén cảm xúc có tốt? và "EQ có thật không?" trỏ tới bài EQ có thật không?'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc (title: Nén cảm xúc có tốt?) và tri-tue-cam-xuc (title: EQ có thật không?) có trong src/data/trang.yml và src/content/docs; liên kết khớp.'
+    ghi_chu: 'Đã kiểm: kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc (title: Nén cảm xúc có tốt?) và tri-tue-cam-xuc (title: EQ có thật không?) có trong src/data/trang.yml và src/content/docs; liên kết khớp. Review (Claude Opus 5.5, 10/11/2026): dung. Kiểm trên trang: hai link /psyche/kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc/ và /tri-tue-cam-xuc/ có trong src/data/trang.yml; title khớp.'
+    review: dung
   - id: n74
     cau: 'Quiz 1: Ekman và Friesen (1971) chọn người Fore chưa từng xem phim, không nói tiếng Anh hay Pidgin, chưa từng sống ở thị trấn của người phương Tây.'
     loai: phat-hien
@@ -917,9 +965,10 @@ nhan_dinh:
     trich: Those selected had seen no movies, neither spoke nor understood English or Pidgin, had not lived in any of the Western settlement or government towns
     vi_tri: Ekman & Friesen 1971, Subjects
     ket_qua: da-sua
-    ghi_chu: 'G1 (SAI, đã áp): câu hỏi cũ hỏi mẫu 1969 "sống tách biệt". Đối chiếu lại: chữ hiện khớp trích.'
+    ghi_chu: 'G1 (SAI, đã áp): câu hỏi cũ hỏi mẫu 1969 "sống tách biệt". Đối chiếu lại: chữ hiện khớp trích. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích Ekman & Friesen 1971.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
+    review: dung
   - id: n75
     cau: 'Quiz 1, giải thích: mẫu Fore 1969 đã tiếp xúc nhiều với người phương Tây; với người gần như chưa tiếp xúc, kết quả 1971 vẫn trên mức may rủi (trừ sợ với ngạc nhiên).'
     loai: phat-hien
@@ -958,9 +1007,10 @@ nhan_dinh:
     trich: Fear faces may not have been distinguished from surprise faces, because in this culture fearful events are almost always also surprising
     vi_tri: Ekman & Friesen 1971, Discussion, tr. 128–129
     ket_qua: da-sua
-    ghi_chu: 'G1 (ĐÁNG NGỜ, đã áp): đáp án cũ: hai nét mặt dùng chung chuyển động cơ mặt. Chữ hiện khớp trích: đối chiếu lại.'
+    ghi_chu: 'G1 (ĐÁNG NGỜ, đã áp): đáp án cũ: hai nét mặt dùng chung chuyển động cơ mặt. Chữ hiện khớp trích: đối chiếu lại. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
+    review: dung
   - id: n79
     cau: 'Quiz 3, giải thích: đây là cách giải thích Ekman và Friesen đề xuất; người Fore phân biệt được ngạc nhiên với sợ, chỉ không phân biệt được sợ với ngạc nhiên.'
     loai: phat-hien
@@ -968,9 +1018,10 @@ nhan_dinh:
     trich: The failure of the New Guinean adults to discriminate fear from surprise, while succeeding in discriminating surprise from fear, and fear from other emotions
     vi_tri: Ekman & Friesen 1971, Discussion
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đây là cách giải thích của chính Ekman và Friesen (1971). Hai nét mặt cũng có điểm chung (mắt mở to), nhưng ... chỉ nhầm theo chiều ngược lại". Chữ mới bỏ "mắt mở to" (không có trong nguồn) và nói rõ chiều. Lý do: tác giả chỉ nói "may not have been", không chắc.'
+    ghi_chu: 'Chữ cũ: "Đây là cách giải thích của chính Ekman và Friesen (1971). Hai nét mặt cũng có điểm chung (mắt mở to), nhưng ... chỉ nhầm theo chiều ngược lại". Chữ mới bỏ "mắt mở to" (không có trong nguồn) và nói rõ chiều. Lý do: tác giả chỉ nói "may not have been", không chắc. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252Fa0017364.zip/10.1037%252Fh0030377.pdf" ]
+    review: dung
   - id: n80
     cau: Quiz 3, các đáp án nhiễu ("tiếng Fore không có từ", "chưa bao giờ cảm thấy sợ hay ngạc nhiên") là phương án sai giả định.
     loai: phat-hien
@@ -1025,10 +1076,11 @@ nhan_dinh:
     trich: The in-group advantage can be construed in terms of display and decoding rules because accuracy is higher when display rules and decoding rules are congruent.
     vi_tri: Elfenbein & Ambady 2002, phần Introduction (tr. 204)
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Ta giỏi đọc mặt "người nhà" hơn vì quen với cách họ biểu hiện và vì chia sẻ cùng quy tắc biểu hiện văn hóa. Đây là một trong những bằng chứng cho thấy văn hóa thực sự can thiệp". Chữ mới nói "có thể liên quan", "gợi ý". Lý do: nguồn nêu cách hiểu, không nêu nguyên nhân chắc.'
+    ghi_chu: 'Chữ cũ: "Ta giỏi đọc mặt "người nhà" hơn vì quen với cách họ biểu hiện và vì chia sẻ cùng quy tắc biểu hiện văn hóa. Đây là một trong những bằng chứng cho thấy văn hóa thực sự can thiệp". Chữ mới nói "có thể liên quan", "gợi ý". Lý do: nguồn nêu cách hiểu, không nêu nguyên nhân chắc. Review (Claude Opus 5.5, 10/11/2026): dung. Khớp trích Elfenbein & Ambady 2002.'
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-2909.128.2.203.pdf" ]
     luot_2_ghi_chu: Câu dùng 'có thể liên quan', khớp.
+    review: dung
   - id: n85
     cau: 'Nguồn của trang: thông tin thư mục (tác giả, năm, tạp chí, tập, trang, DOI) của Ekman, Sorenson & Friesen 1969; Ekman & Friesen 1971; Elfenbein & Ambady 2002; Jack và cộng sự 2012; Barrett và cộng sự 2019.'
     loai: lich-su
@@ -1112,3 +1164,15 @@ doi_chu:
   - cu: '"hơn 1.000 công trình"; "năm nhà khoa học có quan điểm ban đầu khác nhau"'
     moi: '"một khối lượng lớn nghiên cứu"'
     ly_do: Hồ sơ n49 (đã áp từ G1-L04).
+  - cu: '"Nghiên cứu gốc của Ekman (1969) không có mẫu người Việt Nam, và chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra việc nhận diện nét mặt cảm xúc trên người Việt. Theo Barrett và cộng sự (2019), phần lớn người tham gia các nghiên cứu được gộp năm 2002 đến từ các nước công nghiệp hóa; còn lại là một số cộng đồng nhỏ, biệt lập (Papua New Guinea, Borneo và nơi khác)."'
+    moi: '"... Tính đến 11/2026, chúng tôi chỉ thấy rất ít nghiên cứu ... một mẫu 34 người Việt Nam ... gọi đúng khoảng 80% (Biehl và cộng sự, 1997, theo bảng của Elfenbein và Ambady, 2002). Theo Barrett và cộng sự (2019), phần lớn người tham gia phân tích tổng hợp ấy (87 thí nghiệm, hơn 22.000 người) đến từ các nước quy mô lớn hay đã phát triển."'
+    ly_do: "Review: hồ sơ n66, n67."
+  - cu: '"Gợi ý gần nhất cho độc giả Việt Nam ... chưa có bằng chứng trực tiếp trên người Việt"'
+    moi: '"Một gợi ý khác ... chưa có nghiên cứu kiểu này trên người Việt"'
+    ly_do: "Review: hồ sơ n69."
+  - cu: '"Hiểu điều này giúp ta tránh suy diễn ..."'
+    moi: '"Biết điều này có thể giúp ta bớt vội suy diễn ..."'
+    ly_do: "Review: hồ sơ n60."
+  - cu: (không có)
+    moi: Mục Nguồn thêm Biehl và cộng sự (1997)
+    ly_do: "Review: hồ sơ n66."

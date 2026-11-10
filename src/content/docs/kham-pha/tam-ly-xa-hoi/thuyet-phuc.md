@@ -1,6 +1,6 @@
 ---
 title: Quảng cáo thuyết phục ta thế nào?
-description: Mô hình ELM của Petty và Cacioppo (1986) cho thấy quảng cáo tác động lên ta qua hai đường — đường trung tâm dựa vào lập luận, và đường ngoại vi dựa vào người nổi tiếng, cảm xúc, số lượng lập luận — tùy vào việc ta có suy nghĩ kỹ hay không.
+description: Mô hình ELM của Petty và Cacioppo (1986) mô tả hai đường mà quảng cáo có thể tác động lên ta — đường trung tâm dựa vào lập luận, và đường ngoại vi dựa vào người nổi tiếng, cảm xúc, số lượng lập luận — tùy vào việc ta có suy nghĩ kỹ hay không.
 in_duoc: true
 ---
 
@@ -33,7 +33,7 @@ Mô hình khả năng xử lý thông tin (Elaboration Likelihood Model, ELM) c�
 - **Đường trung tâm (central route):** khi động lực và khả năng đều cao, ta xem xét cẩn thận chất lượng lập luận. Lập luận mạnh hay yếu có ảnh hưởng rõ rệt đến việc thuyết phục có xảy ra hay không.
 - **Đường ngoại vi (peripheral route):** khi động lực hoặc khả năng thấp, ta dựa vào các "dấu hiệu ngoại vi" — người nói có nổi tiếng hay đáng tin không, cảm xúc dễ chịu hay không, lập luận có nhiều không.
 
-Hệ quả quan trọng nhất: thái độ hình thành qua đường trung tâm thường **bền hơn**, khó bị lung lay hơn khi gặp lập luận phản biện, và dự đoán hành vi thực tế tốt hơn.
+Theo ELM, thái độ hình thành qua đường trung tâm thường **bền hơn**, khó bị lung lay hơn khi gặp lập luận phản biện, và dự đoán hành vi thực tế tốt hơn.
 
 ::hinh{ten="elm-routes"}
 
@@ -49,13 +49,13 @@ ELM được Petty và Cacioppo đề xuất lần đầu trong cuốn sách *At
 
 **Thiết kế.** Sinh viên nghe một bài phát biểu ủng hộ chính sách "thi tốt nghiệp tổng hợp". Ba yếu tố được thao túng độc lập: *mức độ liên quan cá nhân* (chính sách áp dụng tại chính trường của họ từ năm sau, hoặc chỉ có hiệu lực sau 10 năm nữa, khi họ đã ra trường); *chất lượng lập luận* (8 lập luận mạnh hoặc 8 lập luận yếu); *uy tín nguồn tin* (báo cáo của ủy ban do giáo sư Princeton chủ trì, hoặc của một lớp học trung học địa phương).
 
-**Kết quả.** Ở nhóm liên quan cao, lập luận mạnh thuyết phục hơn lập luận yếu — nguồn tin là ai không tạo khác biệt có ý nghĩa thống kê (đường trung tâm). Ở nhóm liên quan thấp thì ngược lại: uy tín nguồn tin quyết định thái độ, còn lập luận mạnh hay yếu không tạo khác biệt đáng kể (đường ngoại vi) ([Petty và cộng sự, 1981](https://doi.org/10.1037/0022-3514.41.5.847)).
+**Kết quả.** Ở nhóm liên quan cao, lập luận mạnh thuyết phục hơn lập luận yếu — nguồn tin là ai không tạo khác biệt có ý nghĩa thống kê (đường trung tâm). Ở nhóm liên quan thấp thì ngược lại: thái độ chủ yếu chịu ảnh hưởng của uy tín nguồn tin, còn lập luận mạnh hay yếu không tạo khác biệt có ý nghĩa thống kê (đường ngoại vi) ([Petty và cộng sự, 1981](https://doi.org/10.1037/0022-3514.41.5.847)).
 
 ### Petty, Cacioppo và Schumann (1983): kiểm chứng trong quảng cáo
 
 **Thiết kế.** Quảng cáo in cho một nhãn hiệu dao cạo dùng một lần (hư cấu), thao túng: chất lượng lập luận (mạnh/yếu) × người chứng thực (vận động viên nổi tiếng/người dân bình thường) × mức độ quan tâm của người xem (cao/thấp).
 
-**Kết quả.** Đúng như ELM dự đoán: người quan tâm cao chỉ bị thuyết phục bởi lập luận mạnh, bất kể ai chứng thực; người quan tâm thấp thì khác — người nổi tiếng chứng thực làm thái độ tốt lên rõ rệt, còn lập luận mạnh hay yếu vẫn có ảnh hưởng nhưng nhỏ hơn nhiều ([Petty và cộng sự, 1983](https://doi.org/10.1086/208954)).
+**Kết quả.** Đúng như ELM dự đoán: người quan tâm cao chỉ bị thuyết phục bởi lập luận mạnh, bất kể ai chứng thực; người quan tâm thấp thì khác — người nổi tiếng chứng thực làm thái độ tốt lên có ý nghĩa thống kê, còn lập luận mạnh hay yếu vẫn có ảnh hưởng nhưng nhỏ hơn nhiều ([Petty và cộng sự, 1983](https://doi.org/10.1086/208954)).
 
 ### Petty và Cacioppo (1984): "nhiều lập luận" cũng chỉ là dấu hiệu ngoại vi
 
@@ -72,7 +72,7 @@ Bài tổng quan của Petty và Wegener (1999) nêu giả thuyết: thái độ
 :::
 
 :::tranh-cai[hai đường có thực sự tách biệt?]
-ELM mô tả hai đường như hai đầu của một đường liên tục — và các tác giả nhấn mạnh sự đánh đổi không nằm ở việc quá trình trung tâm hay ngoại vi có xảy ra hay không, mà ở mức tác động của chúng lên thái độ (Petty và Wegener, 1999), nên hai quá trình có thể cùng chạy. Mô hình heuristic-systematic của Chaiken (1980) cũng mô tả hai kiểu xử lý tương tự (có hệ thống và theo lối tắt).
+ELM mô tả hai đường như hai đầu của một đường liên tục — và các tác giả nhấn mạnh sự đánh đổi không nằm ở việc quá trình trung tâm hay ngoại vi có xảy ra hay không, mà ở mức tác động của chúng lên thái độ (Petty và Wegener, 1999), nên hai quá trình có thể cùng chạy. Mô hình heuristic-systematic của Chaiken (1980) cũng mô tả hai kiểu xử lý tương tự (có hệ thống và theo lối tắt). Ngược lại, mô hình đơn đường (unimodel) cho rằng lập luận và dấu hiệu ngoại vi chỉ là hai loại bằng chứng được xử lý theo cùng một cách, nên không có hai đường khác nhau về bản chất ([Kruglanski và Thompson, 1999](https://doi.org/10.1207/s15327965pl100201)).
 :::
 
 ## Các lý thuyết giải thích
@@ -93,11 +93,11 @@ Theo ELM, thông điệp nhắm vào đường ngoại vi dựa vào các dấu 
 
 ### 3. Khi bạn là người muốn thuyết phục :nhan[kha-vung]
 
-Hãy đoán xem đối phương đang ở "đường" nào. Sếp đang cân nhắc kỹ một đề xuất? Đầu tư vào số liệu và lập luận chắc. Khách hàng lướt qua quảng cáo trong 3 giây? Hãy làm thông điệp dễ nhớ, hình ảnh đẹp, nguồn đáng tin — và trung thực, vì đi đường ngoại vi không phải là giấy phép để lừa dối.
+Hãy đoán xem đối phương đang ở "đường" nào. Sếp đang cân nhắc kỹ một đề xuất? Đầu tư vào số liệu và lập luận chắc. Khách hàng lướt qua quảng cáo trong 3 giây? Hãy làm thông điệp dễ nhớ, hình ảnh đẹp, nguồn đáng tin — và trung thực, vì đi đường ngoại vi không phải là giấy phép để lừa dối. (Gợi ý này suy ra từ ELM, chưa được kiểm trực tiếp.)
 
 ### 4. Cảnh giác với "danh sách dài" :nhan[kha-vung]
 
-Trong thí nghiệm của Petty và Cacioppo (1984), khi người nghe ít quan tâm, 9 lập luận làm thái độ thuận hơn 3 lập luận, bất kể mạnh hay yếu; trung bình thái độ với 9 lập luận yếu (7,71) cao hơn với 3 lập luận mạnh (4,95). Lần tới khi thấy quảng cáo liệt kê "12 lợi ích vượt trội", hãy đếm xem có bao nhiêu lợi ích thực sự khác nhau.
+Trong thí nghiệm của Petty và Cacioppo (1984), khi người nghe ít quan tâm, 9 lập luận làm thái độ thuận hơn 3 lập luận, bất kể mạnh hay yếu; trung bình thái độ với 9 lập luận yếu (7,71) cao hơn với 3 lập luận mạnh (4,95); bài không kiểm định riêng so sánh này. Gợi ý suy ra từ kết quả ấy (chưa kiểm trực tiếp): lần tới khi thấy quảng cáo liệt kê "12 lợi ích vượt trội", hãy đếm xem có bao nhiêu lợi ích thực sự khác nhau.
 
 ## Ở Việt Nam và các nền văn hóa khác
 
@@ -122,7 +122,7 @@ Ví dụ giả định: với món rẻ, người mua có thể chọn theo ngư
 ```quiz
 ? Trong thí nghiệm của Petty, Cacioppo và Goldman (1981), yếu tố nào quyết định sinh viên bị thuyết phục bởi chất lượng lập luận hay bởi uy tín nguồn tin?
 - Giới tính của sinh viên.
-+ Mức độ liên quan cá nhân: liên quan cao thì chất lượng lập luận quyết định, liên quan thấp thì uy tín nguồn tin quyết định.
++ Mức độ liên quan cá nhân: liên quan cao thì thái độ chủ yếu chịu ảnh hưởng của chất lượng lập luận, liên quan thấp thì chủ yếu của uy tín nguồn tin.
 - Số lượng lập luận trong bài phát biểu.
 > Cùng một thông điệp, "đường" thuyết phục thay đổi theo việc vấn đề có động chạm đến người nghe hay không.
 ? Trong nghiên cứu quảng cáo của Petty, Cacioppo và Schumann (1983), với nhóm người xem ít quan tâm đến sản phẩm, yếu tố nào có tác dụng mà ở nhóm quan tâm cao lại không?
@@ -159,3 +159,4 @@ Ví dụ giả định: với món rẻ, người mua có thể chọn theo ngư
 - Petty, R. E., Cacioppo, J. T., & Schumann, D. (1983). Central and peripheral routes to advertising effectiveness: The moderating role of involvement. *Journal of Consumer Research*, 10(2), 135–146. <https://doi.org/10.1086/208954>
 - Petty, R. E., & Wegener, D. T. (1999). The elaboration likelihood model: Current status and controversies. In S. Chaiken & Y. Trope (Eds.), *Dual-process theories in social psychology* (pp. 41–72). New York: Guilford Press.
 - Johnson, B. T., & Eagly, A. H. (1989). Effects of involvement on persuasion: A meta-analysis. *Psychological Bulletin*, 106(2), 290–314. <https://doi.org/10.1037/0033-2909.106.2.290>
+- Kruglanski, A. W., & Thompson, E. P. (1999). Persuasion by a single route: A view from the unimodel. *Psychological Inquiry*, 10(2), 83–109. <https://doi.org/10.1207/s15327965pl100201>

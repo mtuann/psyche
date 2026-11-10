@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L4 phần 1/2)
-      luot_2: null
-      review: null
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L4)
+      review: Claude Sonnet 5.5 (agent review D5-L4, 10/11/2026)
       kiem_mau: null
 nguon:
   - id: ptt2006
@@ -79,6 +79,10 @@ nguon:
     ten: 'Tìm kiếm ngày 10/11/2026: Crossref (query.bibliographic), kết quả ghi ở ghi_chu của từng nhận định'
     link: https://api.crossref.org/works
     toan_van: false
+  - id: windisch2022
+    ten: "Windisch, Wiedlitzka, Olaghere & Jenaway (2022), Online interventions for reducing hate speech and cyberhate: A systematic review, Campbell Syst Rev 18(2): e1243: toàn văn (PMC9133687, Europe PMC); mô tả thang 5 mức của Allport (1954) làm nền cho tổng quan; PNAS 2025 (PMC12684897) mô tả lại cùng thang"
+    link: https://doi.org/10.1002/cl2.1243
+    toan_van: true
 nhan_dinh:
   - id: n1
     cau: 'Mô tả (description): 5 mức biểu hiện định kiến của Allport (1954), giả thuyết tiếp xúc và phân tích tổng hợp 515 nghiên cứu của Pettigrew và Tropp (2006), tranh luận chưa ngã ngũ về thiên kiến ngầm và IAT.'
@@ -89,10 +93,11 @@ nhan_dinh:
     trich: With 713 independent samples from 515 studies, the meta-analysis finds that intergroup contact typically reduces intergroup prejudice.
     vi_tri: Tóm tắt Pettigrew & Tropp 2006
     ket_qua: dung
-    ghi_chu: '"5 mức" xem n6 (chỗ khó về nguồn Allport).'
+    ghi_chu: '"5 mức" xem n6 (chỗ khó về nguồn Allport). Review (Claude Sonnet 5.5, 10/11/2026): dung. "5 mức" nay có nguồn bậc 2 (n6); phân tích tổng hợp 515 nghiên cứu khớp tóm tắt P&T 2006.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751", "https://api.openalex.org/works/doi:10.1037/0022-3514.74.6.1464", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
     luot_2_ghi_chu: Mức 5 bậc của Allport chưa mở được nguồn gốc (xem n6).
+    review: dung
   - id: n2
     cau: 'Bertrand và Mullainathan (2004): gửi gần 5.000 hồ sơ giả tới tin tuyển dụng ở Boston và Chicago, tên gợi người da trắng hoặc người Mỹ gốc Phi được gán ngẫu nhiên; hồ sơ tên da trắng nhận nhiều hơn 50% lời mời phỏng vấn.'
     loai: phat-hien
@@ -101,10 +106,11 @@ nhan_dinh:
     trich: White names receive 50 percent more callbacks for interviews.
     vi_tri: Tóm tắt; NBER WP 9873 mục Introduction ("nearly 5000 resumes")
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "hàng nghìn hồ sơ giả (gần như giống hệt nhau, chỉ khác tên)". Chữ mới: "gần 5.000 hồ sơ giả (cùng kiểu, tên được gán ngẫu nhiên)". Lý do: "gần như giống hệt" không đúng: hồ sơ có hai mức chất lượng được tạo ra, tên mới là yếu tố gán ngẫu nhiên; số "gần 5.000" từ nguồn. Năm 2004 là năm công bố (G1: thí nghiệm làm 2001–2002); trang đã viết "công bố năm 2004".'
+    ghi_chu: 'Chữ cũ: "hàng nghìn hồ sơ giả (gần như giống hệt nhau, chỉ khác tên)". Chữ mới: "gần 5.000 hồ sơ giả (cùng kiểu, tên được gán ngẫu nhiên)". Lý do: "gần như giống hệt" không đúng: hồ sơ có hai mức chất lượng được tạo ra, tên mới là yếu tố gán ngẫu nhiên; số "gần 5.000" từ nguồn. Năm 2004 là năm công bố (G1: thí nghiệm làm 2001–2002); trang đã viết "công bố năm 2004". Review (Claude Sonnet 5.5, 10/11/2026): dung. Bertrand & Mullainathan 2004: "White names receive 50 percent more callbacks"; gần 5.000 hồ sơ (NBER 9873); Boston và Chicago.'
     luot_2: dung
     luot_2_nguon: [ "https://www.nber.org/system/files/working_papers/w9873/w9873.pdf" ]
     luot_2_ghi_chu: Bản đọc là bản NBER 9873 (7/2003); tên bài in AER 2004. 'Hồ sơ giả' = fictitious resumes.
+    review: dung
   - id: n3
     cau: Thí nghiệm thực địa làm từ tháng 7/2001 đến 1/2002 (Boston) và 5/2002 (Chicago); bài công bố năm 2004.
     loai: lich-su
@@ -113,9 +119,10 @@ nhan_dinh:
     trich: The experiment was carried on between July 2001 and January 2002 in Boston
     vi_tri: NBER WP 9873, mục Experimental design
     ket_qua: dung
-    ghi_chu: 'G1 đã sửa trang cũ ("Trong một nghiên cứu công bố năm 2004"); đối chiếu lại bản NBER: khớp. Trang không nêu năm làm thực địa; ghi lại để nhất quán.'
+    ghi_chu: 'G1 đã sửa trang cũ ("Trong một nghiên cứu công bố năm 2004"); đối chiếu lại bản NBER: khớp. Trang không nêu năm làm thực địa; ghi lại để nhất quán. Review (Claude Sonnet 5.5, 10/11/2026): dung. không nằm trên trang; khớp NBER 9873.'
     luot_2: dung
     luot_2_nguon: [ "https://www.nber.org/system/files/working_papers/w9873/w9873.pdf" ]
+    review: dung
   - id: n4
     cau: Nghiên cứu cho thấy sự khác biệt trong đối xử, chứ không cho biết nhà tuyển dụng có ý thức về điều đó hay không.
     loai: phat-hien
@@ -124,9 +131,10 @@ nhan_dinh:
     trich: We find little evidence that our results are driven by employers inferring something other than race
     vi_tri: Tóm tắt (OpenAlex)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Định kiến không phải lúc nào cũng là sự thù ghét có ý thức — nó thường len lỏi qua những phán đoán tưởng chừng ''khách quan''." Chữ mới: câu trên. Lý do: bài không đo ý thức của nhà tuyển dụng; "thường len lỏi" là khẳng định không nguồn.'
+    ghi_chu: 'Chữ cũ: "Định kiến không phải lúc nào cũng là sự thù ghét có ý thức — nó thường len lỏi qua những phán đoán tưởng chừng ''khách quan''." Chữ mới: câu trên. Lý do: bài không đo ý thức của nhà tuyển dụng; "thường len lỏi" là khẳng định không nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. câu chỉ nói nghiên cứu cho thấy khác biệt đối xử, không đo ý thức; đúng với thiết kế.'
     luot_2: dung
     luot_2_nguon: [ "https://www.nber.org/system/files/working_papers/w9873/w9873.pdf" ]
+    review: dung
   - id: n5
     cau: 'Ba khái niệm: khuôn mẫu (niềm tin về nhóm), định kiến (thái độ và cảm xúc dành cho một người vì họ thuộc nhóm), phân biệt đối xử (hành vi đối xử bất công vì tư cách nhóm).'
     loai: dinh-nghia
@@ -135,20 +143,23 @@ nhan_dinh:
     trich: Prejudice is common against people who are members of an unfamiliar cultural group.
     vi_tri: OpenStax 12.5
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Định kiến: thái độ (thường là tiêu cực) dành cho một nhóm người". Chữ mới: "thái độ và cảm xúc dành cho một người dựa trên việc họ thuộc một nhóm (ở bài này ta bàn chủ yếu về định kiến tiêu cực)". Lý do: OpenStax nêu định kiến có thể tích cực hay tiêu cực ("both positive and negative"); định nghĩa: "attitude and feeling toward an individual based solely on one''s membership in a particular social group".'
+    ghi_chu: 'Chữ cũ: "Định kiến: thái độ (thường là tiêu cực) dành cho một nhóm người". Chữ mới: "thái độ và cảm xúc dành cho một người dựa trên việc họ thuộc một nhóm (ở bài này ta bàn chủ yếu về định kiến tiêu cực)". Lý do: OpenStax nêu định kiến có thể tích cực hay tiêu cực ("both positive and negative"); định nghĩa: "attitude and feeling toward an individual based solely on one''s membership in a particular social group". Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.5 (đọc lại): định kiến là thái độ và cảm xúc dành cho một người dựa trên tư cách nhóm.'
     luot_2: dung
     luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-5-prejudice-and-discrimination" ]
+    review: dung
   - id: n6
-    cau: 'Theo thang tóm tắt thường gặp của Allport (1954), định kiến biểu hiện ở 5 mức: nói xấu, tránh né, phân biệt đối xử, tấn công thân thể, diệt chủng; nói xấu tự nó có thể không gây hại nhưng tạo đất cho mức nặng hơn.'
+    cau: "Theo cách tóm tắt thường gặp của thang do Allport (1954) nêu (Windisch và cộng sự, 2022), định kiến biểu hiện ở 5 mức: nói xấu, tránh né, phân biệt đối xử, tấn công thân thể, diệt chủng; các hình thức bạo lực nặng hơn dựa trên những hành vi định kiến ở mức thấp hơn, nói xấu chỉ là điểm khởi đầu."
     loai: lich-su
     nguon:
+      - windisch2022
       - allport-tomtat
-    trich: Antilocution itself MAY not be harmful, but it sets the stage for more severe outlets for prejudice.
-    vi_tri: Ghi chú giảng Indiana-Purdue Fort Wayne (Wayback 2006), mục "Ways of Expressing Prejudice I–II"
+    trich: Allport's (1954) scale of prejudice makes it clear how hate speech/cyberhate is connected to more extreme forms of violence motivated by specific biases, with hate speech (or antilocution) being only the starting point.
+    vi_tri: Windisch và cộng sự 2022, mục Introduction (mô tả năm mức); sách Allport 1954 không mở được
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Gordon Allport mô tả… Allport cảnh báo: các mức độ này không tách rời — mức 1 tạo ''đất'' cho các mức sau leo thang." Chữ mới: "Theo cách tóm tắt thường gặp của thang… (chưa mở được sách gốc)"; "Theo các tóm tắt ấy, nói xấu tự nó có thể không gây hại nhưng tạo đất…". Lý do: sách Allport (1954) khóa mượn trên Internet Archive (HTTP 401/403); thứ tự 5 mức và câu "sets the stage" chỉ đối chiếu qua nguồn thứ cấp bậc 3 (ghi chú giảng, và Wikipedia dẫn Watson 2007, tr. 45–46). CHỖ KHÓ cho review: nhận định này chỉ có nguồn phụ; chuẩn mục 2 đòi thêm một nguồn bậc 1–2 đọc được. Đã thử Dovidio, Glick & Rudman (2005) và Mullen & Leader (2005): không mở được. Đề nghị: giữ chữ "theo tóm tắt", hoặc chủ repo duyệt nguồn.'
+    ghi_chu: 'Chữ cũ: "Gordon Allport mô tả… Allport cảnh báo: các mức độ này không tách rời — mức 1 tạo ''đất'' cho các mức sau leo thang." Chữ mới: "Theo cách tóm tắt thường gặp của thang… (chưa mở được sách gốc)"; "Theo các tóm tắt ấy, nói xấu tự nó có thể không gây hại nhưng tạo đất…". Lý do: sách Allport (1954) khóa mượn trên Internet Archive (HTTP 401/403); thứ tự 5 mức và câu "sets the stage" chỉ đối chiếu qua nguồn thứ cấp bậc 3 (ghi chú giảng, và Wikipedia dẫn Watson 2007, tr. 45–46). CHỖ KHÓ cho review: nhận định này chỉ có nguồn phụ; chuẩn mục 2 đòi thêm một nguồn bậc 1–2 đọc được. Đã thử Dovidio, Glick & Rudman (2005) và Mullen & Leader (2005): không mở được. Đề nghị: giữ chữ "theo tóm tắt", hoặc chủ repo duyệt nguồn. Review (Claude Sonnet 5.5, 10/11/2026): sai (không đúng nguồn): vế "nói xấu tự nó có thể không gây hại nhưng tạo đất" và "lời lẽ miệt thị, đùa cợt … thường được xem là vô hại" chỉ có ở ghi chú giảng bậc 3, không có ở nguồn bậc 2. Đã tìm được nguồn bậc 2 mở được: tổng quan hệ thống Windisch, Wiedlitzka, Olaghere & Jenaway (2022, Campbell Syst Rev 18(2): e1243, toàn văn PMC9133687) mô tả đủ năm mức theo Allport (1954): antilocution, avoidance, discrimination, physical attack, extermination, và nói "hate speech (or antilocution) being only the starting point"; hình thức nặng hơn dựa trên mức thấp hơn. PNAS 2025 (PMC12684897) mô tả lại thang cùng thứ tự. Quyết giữ thang với chữ "theo cách tóm tắt thường gặp", dẫn Windisch 2022; bỏ hai vế không nguồn; mục Nguồn gộp một dòng Allport kèm ghi chú.'
     luot_2: khong-chac
     luot_2_ghi_chu: Không mở được toàn văn Allport (1954) (Internet Archive trả 401, mượn có kiểm soát); bài của Sage xác nhận antilocution là hình thức đầu và 'most elementary', nhưng thang năm mức đủ thứ tự chưa kiểm được ở nguồn bậc 1–2.
+    review: sai
   - id: n7
     cau: 'Giả thuyết tiếp xúc của Allport: tiếp xúc giữa các nhóm giảm định kiến khi có bốn điều kiện: địa vị ngang nhau, mục tiêu chung, hợp tác giữa các nhóm, được thể chế, luật pháp hoặc phong tục ủng hộ.'
     loai: lich-su
@@ -157,9 +168,10 @@ nhan_dinh:
     trich: equal status between the groups in the situation; common goals; intergroup cooperation; and the support of authorities, law, or custom.
     vi_tri: Pettigrew & Tropp 2006, mục Introduction
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Cùng trong cuốn sách, Allport đưa ra giả thuyết tiếp xúc… nhưng chỉ khi hội đủ bốn điều kiện". Chữ mới thêm "(theo cách Pettigrew và Tropp, 2006, tóm lại)" và nói "giảm khi có bốn điều kiện". Lý do: nguồn đọc được là bài tóm lại; P&T (2006) cho thấy các điều kiện không bắt buộc (n10).'
+    ghi_chu: 'Chữ cũ: "Cùng trong cuốn sách, Allport đưa ra giả thuyết tiếp xúc… nhưng chỉ khi hội đủ bốn điều kiện". Chữ mới thêm "(theo cách Pettigrew và Tropp, 2006, tóm lại)" và nói "giảm khi có bốn điều kiện". Lý do: nguồn đọc được là bài tóm lại; P&T (2006) cho thấy các điều kiện không bắt buộc (n10). Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): trang viết Allport đưa ra giả thuyết tiếp xúc "nhưng chỉ khi hội đủ bốn điều kiện", trong khi P&T 2006 viết "Allport held that reduced prejudice will result when four features of the contact situation are present" và chính phân tích của họ thấy các điều kiện không bắt buộc. Đã sửa thành "khi hội đủ bốn điều kiện … phân tích của chính họ lại thấy các điều kiện này không bắt buộc".'
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
+    review: sai
   - id: n8
     cau: 'Pettigrew và Tropp (2006): 713 mẫu độc lập từ 515 nghiên cứu về tiếp xúc liên nhóm, phân tích tổng hợp.'
     loai: so-lieu
@@ -168,9 +180,10 @@ nhan_dinh:
     trich: With 713 independent samples from 515 studies, the meta-analysis finds that intergroup contact typically reduces intergroup prejudice.
     vi_tri: Tóm tắt
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. P&T 2006 toàn văn (Internet Archive): 713 mẫu độc lập, 515 nghiên cứu.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751" ]
+    review: dung
   - id: n9
     cau: Tiếp xúc liên nhóm nhìn chung làm giảm định kiến; hiệu ứng có ý nghĩa, không do thiên lệch chọn người tham gia hay thiên lệch xuất bản; hiệu ứng lan ra cả nhóm ngoài.
     loai: phat-hien
@@ -179,9 +192,10 @@ nhan_dinh:
     trich: Multiple tests indicate that this finding appears not to result from either participant selection or publication biases, and the more rigorous studies yield larger mean effects. These contact effects typically generalize to the entire outgroup
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "hiệu ứng có ý nghĩa thống kê, không phải do thiên lệch chọn mẫu hay thiên lệch xuất bản". Chữ mới: "không do thiên lệch chọn người tham gia hay thiên lệch xuất bản". Lý do: nguồn nói "appears not to result", nên viết mềm ở khung nhãn là "không phải do" → giữ ở thân bài như G1 đã xác nhận KHỚP; đã làm mềm "tái lập tốt nhất" (n12).'
+    ghi_chu: 'Chữ cũ: "hiệu ứng có ý nghĩa thống kê, không phải do thiên lệch chọn mẫu hay thiên lệch xuất bản". Chữ mới: "không do thiên lệch chọn người tham gia hay thiên lệch xuất bản". Lý do: nguồn nói "appears not to result", nên viết mềm ở khung nhãn là "không phải do" → giữ ở thân bài như G1 đã xác nhận KHỚP; đã làm mềm "tái lập tốt nhất" (n12). Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh nhẹ): trang viết "không phải do thiên lệch chọn mẫu hay thiên lệch xuất bản" trong khi nguồn viết "appears not to result from either participant selection or publication biases". Đã sửa thành "dường như không do" ở thân bài và ở khung Vững chắc.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751" ]
+    review: sai
   - id: n10
     cau: Khi bốn điều kiện của Allport được đáp ứng, hiệu ứng lớn hơn; nhưng các điều kiện không bắt buộc.
     loai: phat-hien
@@ -190,11 +204,12 @@ nhan_dinh:
     trich: A global indicator of Allport's optimal contact conditions demonstrates that contact under these conditions typically leads to even greater reduction in prejudice.
     vi_tri: Tóm tắt
     ket_qua: dung
-    ghi_chu: 'G1: khớp. Tóm tắt: "these conditions are not essential for prejudice reduction".'
+    ghi_chu: 'G1: khớp. Tóm tắt: "these conditions are not essential for prejudice reduction". Review (Claude Sonnet 5.5, 10/11/2026): dung. P&T 2006 tóm tắt: điều kiện tối ưu "even greater reduction"; "these conditions are not essential".'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751" ]
+    review: dung
   - id: n11
-    cau: 'Khung Vững chắc: tiếp xúc liên nhóm thường làm giảm định kiến; hiệu ứng không do thiên lệch xuất bản; nghiên cứu chặt chẽ cho hiệu ứng lớn hơn; 27 thí nghiệm ngẫu nhiên sau đó cho cùng kết luận nhưng yếu hơn với định kiến chủng tộc, sắc tộc.'
+    cau: "Khung Vững chắc: tiếp xúc liên nhóm thường làm giảm định kiến; hiệu ứng dường như không do thiên lệch xuất bản; nghiên cứu chặt chẽ cho hiệu ứng lớn hơn; 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian cho cùng kết luận nhưng yếu hơn đáng kể với định kiến chủng tộc, sắc tộc, và chưa có nghiên cứu về định kiến chủng tộc, sắc tộc của người trưởng thành."
     loai: nhan
     nguon:
       - ptt2006
@@ -202,7 +217,7 @@ nhan_dinh:
     trich: We find the evidence from this updated dataset to be consistent with Pettigrew and Tropp's (2006) conclusion that contact "typically reduces prejudice."
     vi_tri: Paluck và cộng sự 2019, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Đây là một trong những phát hiện được tái lập tốt nhất trong tâm lý học về định kiến." (G1 ghi chú: Paluck 2019 xác nhận nhưng thấy hiệu ứng "substantially weaker" với định kiến chủng tộc, sắc tộc). Chữ mới: bỏ câu "được tái lập tốt nhất" (không nguồn), thêm kết quả Paluck 2019. Lý do: nhãn Vững chắc giữ nhưng giới hạn nêu rõ.'
+    ghi_chu: 'Chữ cũ: "Đây là một trong những phát hiện được tái lập tốt nhất trong tâm lý học về định kiến." (G1 ghi chú: Paluck 2019 xác nhận nhưng thấy hiệu ứng "substantially weaker" với định kiến chủng tộc, sắc tộc). Chữ mới: bỏ câu "được tái lập tốt nhất" (không nguồn), thêm kết quả Paluck 2019. Lý do: nhãn Vững chắc giữ nhưng giới hạn nêu rõ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Vững chắc chốt, sát ranh với Khá vững: đạt mục 4 vì có phân tích tổng hợp 713 mẫu, 515 nghiên cứu, 38 nước (P&T 2006, đã mở toàn văn) và phân tích tổng hợp 27 thí nghiệm ngẫu nhiên có đo sau thời gian (Paluck 2019) cùng chiều ("typically reduces prejudice"), không có thất bại tái lập lớn. Lý do sát ranh: Paluck 2019 thấy hiệu ứng yếu hơn đáng kể với định kiến chủng tộc, sắc tộc, chưa có nghiên cứu về người lớn, và kết luận "phải lấp khoảng trống trước khi giả thuyết dẫn dắt chính sách một cách đáng tin" (tóm tắt Paluck). Đã thêm giới hạn ấy vào khung và đổi "không phải do" thành "dường như không do". Chữ cuối khớp nguồn.'
     nhan: vung-chac
     co_so:
       - ptt2006
@@ -211,8 +226,9 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
     luot_2_ghi_chu: Nhãn Vững chắc đạt thước đo (phân tích tổng hợp + cập nhật cùng chiều), có ghi giới hạn.
+    review: dung
   - id: n12
-    cau: 'Paluck và cộng sự (2019): 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian; thấy tiếp xúc nhìn chung giảm định kiến nhưng yếu hơn đáng kể với định kiến chủng tộc, sắc tộc; thiếu nghiên cứu về định kiến của người trưởng thành.'
+    cau: "Paluck và cộng sự (2019): 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian (gần hai phần ba công bố sau P&T 2006); thấy tiếp xúc nhìn chung giảm định kiến nhưng yếu hơn đáng kể với định kiến chủng tộc, sắc tộc; chưa có nghiên cứu về định kiến chủng tộc, sắc tộc của người trưởng thành."
     loai: tai-lap
     nguon:
       - paluck2019
@@ -222,8 +238,10 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
     luot_2_ghi_chu: Vế 'thiếu nghiên cứu về định kiến của người trưởng thành' bài giới hạn ở định kiến chủng tộc/sắc tộc (có 6 nghiên cứu người lớn khác).
+    review: sai
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): sai (thiếu phạm vi): trang viết \"27 thí nghiệm ngẫu nhiên\" và khoảng trống ở \"định kiến của người trưởng thành\"; tóm tắt Paluck 2019 nói 27 nghiên cứu \"that feature random assignment and delayed outcome measures\", và khoảng trống là \"the absence of studies addressing adults' racial or ethnic prejudices\". Đã sửa trên trang: \"có đo kết quả sau một thời gian\", \"định kiến chủng tộc, sắc tộc của người trưởng thành\"."
   - id: n13
-    cau: 'Khung Khá vững: bốn điều kiện của Allport làm tiếp xúc hiệu quả hơn; bằng chứng chủ yếu đến từ so sánh giữa các nghiên cứu; chưa có thí nghiệm ngẫu nhiên nào thao túng có hệ thống bốn điều kiện.'
+    cau: "Khung Khá vững: bốn điều kiện của Allport làm tiếp xúc hiệu quả hơn; bằng chứng chủ yếu đến từ so sánh giữa các nghiên cứu; trong 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian chưa có thí nghiệm nào thao túng có hệ thống bốn điều kiện."
     loai: nhan
     nguon:
       - ptt2006
@@ -231,7 +249,7 @@ nhan_dinh:
     trich: no randomized study with over-time outcome measurement has systematically varied, as part of its experimental design, Allport's facilitating conditions
     vi_tri: Paluck và cộng sự 2019, phần Discussion
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (G1: ĐÁNG NGỜ): "cho hiệu ứng giảm định kiến mạnh hơn hẳn so với tiếp xúc ''cho có''". Trang đã áp sửa G1 (thêm câu Paluck 2019). Chữ mới: bỏ "mạnh hơn" → "lớn hơn" và bỏ "so với tiếp xúc cho có". Lý do: "mạnh hơn hẳn" quá mức nguồn.'
+    ghi_chu: 'Chữ cũ (G1: ĐÁNG NGỜ): "cho hiệu ứng giảm định kiến mạnh hơn hẳn so với tiếp xúc ''cho có''". Trang đã áp sửa G1 (thêm câu Paluck 2019). Chữ mới: bỏ "mạnh hơn" → "lớn hơn" và bỏ "so với tiếp xúc cho có". Lý do: "mạnh hơn hẳn" quá mức nguồn. Review (Claude Sonnet 5.5, 10/11/2026): sai (thiếu phạm vi): "chưa có thí nghiệm ngẫu nhiên nào thao túng có hệ thống bốn điều kiện" chỉ đúng trong 27 thí nghiệm có đo kết quả sau một thời gian mà Paluck 2019 tập hợp. Đã thêm phạm vi trên trang. Nhãn Khá vững chốt: P&T 2006 (so sánh giữa nghiên cứu, hiệu ứng lớn hơn khi điều kiện tối ưu) nhưng chưa có thao túng thực nghiệm và các điều kiện được chính P&T thấy không bắt buộc; đạt "Khá vững", không đạt "Vững chắc".'
     nhan: kha-vung
     co_so:
       - ptt2006
@@ -240,18 +258,20 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
     luot_2_ghi_chu: Nhãn Khá vững phù hợp thước đo. Giới hạn ở 27 thí nghiệm có đo sau thời gian.
+    review: sai
   - id: n14
-    cau: 'Paluck 2019: bốn điều kiện đặc biệt của Allport ít được ủng hộ thực nghiệm; chưa thí nghiệm ngẫu nhiên nào thao túng chúng có hệ thống.'
+    cau: "Paluck 2019: bốn điều kiện của Allport ít được ủng hộ thực nghiệm; trong 27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian chưa có thí nghiệm nào thao túng chúng có hệ thống."
     loai: phat-hien
     nguon:
       - paluck2019
     trich: no randomized study with over-time outcome measurement has systematically varied, as part of its experimental design, Allport's facilitating conditions
     vi_tri: Phần Discussion
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): sai (thiếu phạm vi): xem n13; trích của Paluck 2019 giới hạn ở "randomized study with over-time outcome measurement". Đã sửa trên trang.'
     luot_2: dung
     luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
     luot_2_ghi_chu: Phạm vi là 27 thí nghiệm ngẫu nhiên có đo sau thời gian.
+    review: sai
   - id: n15
     cau: 'Greenwald, McGhee và Schwartz (1998): IAT đo thời gian phản ứng khi ghép cặp các khái niệm (ví dụ da trắng–tốt, da đen–xấu so với ghép ngược lại); chênh lệch tốc độ được diễn giải là độ mạnh của liên tưởng.'
     loai: phat-hien
@@ -260,10 +280,11 @@ nhan_dinh:
     trich: performance is faster than when less associated categories
     vi_tri: Tóm tắt
     ket_qua: dung
-    ghi_chu: 'G1: khớp. Chỉ đọc tóm tắt (OpenAlex; toàn văn không mở được qua các nguồn đã thử).'
+    ghi_chu: 'G1: khớp. Chỉ đọc tóm tắt (OpenAlex; toàn văn không mở được qua các nguồn đã thử). Review (Claude Sonnet 5.5, 10/11/2026): dung. Greenwald, McGhee & Schwartz 1998 tóm tắt (OpenAlex): IAT đo chênh lệch tốc độ khi hai khái niệm chung phím; "da trắng/da đen" là ví dụ trong tóm tắt.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.74.6.1464" ]
     luot_2_ghi_chu: Chỉ đọc được tóm tắt.
+    review: dung
   - id: n16
     cau: IAT được dùng rất rộng rãi (một trang web trình diễn thu hơn 600.000 lượt làm bài, 1998–2000) và gây nhiều tranh cãi.
     loai: so-lieu
@@ -272,10 +293,11 @@ nhan_dinh:
     trich: Respondents at an Internet site completed over 600,000 tasks between October 1998
     vi_tri: Tóm tắt Nosek và cộng sự 2002
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "IAT nhanh chóng trở thành công cụ đo ''thiên kiến ngầm'' phổ biến nhất trong tâm lý học — và cũng là công cụ gây tranh cãi nhất". Chữ mới: "được dùng rất rộng rãi (riêng một trang web… hơn 600.000 lượt) — và cũng gây nhiều tranh cãi". Lý do: "phổ biến nhất", "gây tranh cãi nhất" là so sánh cực đại không nguồn.'
+    ghi_chu: 'Chữ cũ: "IAT nhanh chóng trở thành công cụ đo ''thiên kiến ngầm'' phổ biến nhất trong tâm lý học — và cũng là công cụ gây tranh cãi nhất". Chữ mới: "được dùng rất rộng rãi (riêng một trang web… hơn 600.000 lượt) — và cũng gây nhiều tranh cãi". Lý do: "phổ biến nhất", "gây tranh cãi nhất" là so sánh cực đại không nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nosek 2002 tóm tắt: hơn 600.000 IAT trên một trang web từ 10/1998 đến 4/2000; "gây nhiều tranh cãi" có Oswald 2013, Payne 2017.'
     luot_2: dung
     luot_2_nguon: [ "https://osf.io/download/wt5sv/" ]
     luot_2_ghi_chu: "'Gây nhiều tranh cãi' có Oswald 2013, Payne 2017."
+    review: dung
   - id: n17
     cau: 'Oswald và cộng sự (2013): phân tích tổng hợp: tương quan trung bình giữa IAT và hành vi khoảng r = 0,14; với vi hành vi khoảng r = 0,07 (giải thích chưa tới 1%); IAT không dự đoán tốt hơn các biện pháp hỏi trực tiếp đơn giản; ít cho biết ai sẽ phân biệt đối xử với ai.'
     loai: so-lieu
@@ -284,10 +306,11 @@ nhan_dinh:
     trich: performed no better than simple explicit measures
     vi_tri: Tóm tắt; Bảng 1 (Overall .14 [.10, .19]; Microbehavior .07 [-.03, .18])
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "tức IAT giải thích chưa tới 1% sự khác biệt" gắn với cả hai số; "không dự đoán tốt hơn các biện pháp hỏi trực tiếp". Chữ mới: "…chưa tới 1% sự khác biệt về vi hành vi" và "không hơn các biện pháp hỏi trực tiếp đơn giản". Lý do: r = 0,14 giải thích khoảng 2%; chỉ r = 0,07 (0,5%) dưới 1%. Nguồn: "no better than simple explicit measures". Khoảng tin cậy của vi hành vi gồm cả 0.'
+    ghi_chu: 'Chữ cũ: "tức IAT giải thích chưa tới 1% sự khác biệt" gắn với cả hai số; "không dự đoán tốt hơn các biện pháp hỏi trực tiếp". Chữ mới: "…chưa tới 1% sự khác biệt về vi hành vi" và "không hơn các biện pháp hỏi trực tiếp đơn giản". Lý do: r = 0,14 giải thích khoảng 2%; chỉ r = 0,07 (0,5%) dưới 1%. Nguồn: "no better than simple explicit measures". Khoảng tin cậy của vi hành vi gồm cả 0. Review (Claude Sonnet 5.5, 10/11/2026): dung. Oswald 2013 toàn văn (Internet Archive): bảng 1 overall .14 [.10, .19]; microbehavior .07 [–.03, .18]; "the IAT did not predict microbehaviors well and no better than explicit measures"; "the IAT provides little insight into who will discriminate against whom". r = 0,07 giải thích khoảng 0,5% phương sai, đúng "chưa tới 1%".'
     luot_2: dung
     luot_2_nguon: [ "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/", "https://arxiv.org/pdf/2312.14984", "https://api.openalex.org/works/doi:10.1037/a0032734" ]
     luot_2_ghi_chu: Số 0,07 đọc qua trích dẫn Oswald 2015 trong arXiv; bài Oswald 2013 chưa mở toàn văn (chỉ tóm tắt). r = 0,148 làm tròn là 0,15, 'khoảng 0,14' chấp nhận được.
+    review: dung
   - id: n18
     cau: Greenwald và cộng sự (2009) từng đưa ra con số lạc quan hơn (r trung bình 0,236 cho Black–White), chủ yếu do dùng tiêu chí chọn nghiên cứu khác nhau.
     loai: so-lieu
@@ -297,9 +320,10 @@ nhan_dinh:
     trich: The difference between the estimates of the 2 reviews was due mostly to their use of different policies for including effect sizes.
     vi_tri: Tóm tắt Greenwald, Banaji & Nosek 2015; Greenwald 2009 bảng (.236)
     ket_qua: dung
-    ghi_chu: 'G1: khớp. Oswald: r̄ = .148 theo tóm tắt 2015, trang ghi khoảng 0,14 theo Bảng 1 của Oswald.'
+    ghi_chu: 'G1: khớp. Oswald: r̄ = .148 theo tóm tắt 2015, trang ghi khoảng 0,14 theo Bảng 1 của Oswald. Review (Claude Sonnet 5.5, 10/11/2026): dung. Greenwald, Banaji & Nosek 2015: .236 (GPUB) so với .148 (Oswald), khác chủ yếu do chính sách chọn hiệu ứng; Greenwald 2009 toàn văn: số .236 cho nhóm Black–White. Đã thêm "cho các bài về … da đen–da trắng" trên trang.'
     luot_2: dung
     luot_2_nguon: [ "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/", "https://api.openalex.org/works/doi:10.1037/pspa0000016" ]
+    review: dung
   - id: n19
     cau: 'Greenwald, Banaji và Nosek (2015): hiệu ứng thống kê nhỏ vẫn có thể có hậu quả xã hội lớn vì ảnh hưởng nhiều người cùng lúc hoặc lặp lại với cùng một người.'
     loai: phat-hien
@@ -308,12 +332,13 @@ nhan_dinh:
     trich: both meta-analyses estimated aggregate correlational effect sizes that were large enough to explain discriminatory impacts that are societally significant
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Nếu một thiên lệch nhỏ ảnh hưởng đến hàng triệu quyết định (tuyển dụng, cho vay, kết án...)". Chữ mới: "nhiều người cùng lúc hoặc lặp lại với cùng một người". Lý do: tóm tắt nói "can affect many people simultaneously or … repeatedly affect single persons"; ví dụ tuyển dụng, cho vay, kết án không có trong nguồn.'
+    ghi_chu: 'Chữ cũ: "Nếu một thiên lệch nhỏ ảnh hưởng đến hàng triệu quyết định (tuyển dụng, cho vay, kết án...)". Chữ mới: "nhiều người cùng lúc hoặc lặp lại với cùng một người". Lý do: tóm tắt nói "can affect many people simultaneously or … repeatedly affect single persons"; ví dụ tuyển dụng, cho vay, kết án không có trong nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Greenwald, Banaji & Nosek 2015 tóm tắt (OpenAlex): "can affect many people simultaneously or … repeatedly affect single persons"; chữ trong mục nghiên cứu khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/", "https://api.openalex.org/works/doi:10.1037/pspa0000016" ]
     luot_2_ghi_chu: Bản đọc là bản thảo ngày 2/9/2014 trên OSF.
+    review: dung
   - id: n20
-    cau: 'Khung Đang tranh cãi: IAT đo được gì và có nên dùng nó để "chẩn đoán" con người? Phê bình: thiếu ổn định qua vài tuần, phần lớn phương sai mang tính tình huống, dự đoán hành vi yếu; bênh vực: hiệu ứng nhỏ có thể lớn ở cấp xã hội.'
+    cau: 'Khung Đang tranh cãi: IAT đo được gì và có nên dùng nó để "chẩn đoán" con người? Phê bình: thiếu ổn định qua vài tuần, phần lớn phương sai mang tính tình huống, dự đoán hành vi yếu; bênh vực: hiệu ứng nhỏ vẫn có thể gây hậu quả xã hội đáng kể khi ảnh hưởng nhiều người cùng lúc hay lặp lại với cùng một người, và hạn chế về độ tin cậy ít gây vấn đề ở cấp hệ thống, nơi mẫu lớn.'
     loai: nhan
     nguon:
       - oswald2013
@@ -323,7 +348,7 @@ nhan_dinh:
     trich: unstable across a few weeks
     vi_tri: Payne và cộng sự 2017, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "điểm IAT thiếu ổn định khi đo lại, chịu ảnh hưởng của yếu tố tình huống, và dự đoán hành vi… rất kém… không hơn gì hỏi trực tiếp". Chữ mới: "thiếu ổn định qua vài tuần, phần lớn phương sai mang tính tình huống, dự đoán… ở mức yếu… không hơn các biện pháp hỏi trực tiếp đơn giản". Lý do: bám nguồn (Payne: "unstable across a few weeks"; "most of the systematic variance… is situational"); "rất kém" bỏ.'
+    ghi_chu: 'Chữ cũ: "điểm IAT thiếu ổn định khi đo lại, chịu ảnh hưởng của yếu tố tình huống, và dự đoán hành vi… rất kém… không hơn gì hỏi trực tiếp". Chữ mới: "thiếu ổn định qua vài tuần, phần lớn phương sai mang tính tình huống, dự đoán… ở mức yếu… không hơn các biện pháp hỏi trực tiếp đơn giản". Lý do: bám nguồn (Payne: "unstable across a few weeks"; "most of the systematic variance… is situational"); "rất kém" bỏ. Review (Claude Sonnet 5.5, 10/11/2026): sai (không nguồn): khung Đang tranh cãi viết phe bênh vực đáp lại "hiệu ứng nhỏ nhân với hàng triệu quyết định" và "IAT vẫn hữu ích để thăm dò các liên tưởng tự động". Bản thảo Greenwald, Banaji & Nosek (OSF/PsyArXiv, đọc toàn văn) không có "hàng triệu quyết định" và không có câu về "thăm dò"; có: ảnh hưởng nhiều người cùng lúc hay lặp lại với một người, và độ tin cậy hạn chế, hiệu ứng nhỏ "not problematic in diagnosing system-level discrimination". Đã sửa trên trang theo đó. Nhãn Đang tranh cãi chốt: hai phân tích tổng hợp (Greenwald 2009, Oswald 2013) khác nhau nhiều về hiệu ứng và về cách diễn giải, chưa phân xử.'
     nhan: tranh-cai
     co_so:
       - oswald2013
@@ -333,6 +358,7 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1080/1047840X.2017.1335568", "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/", "https://api.openalex.org/works/doi:10.1037/a0032734" ]
     luot_2_ghi_chu: Nhãn Đang tranh cãi đạt thước đo (hai phân tích tổng hợp, hai cách diễn giải cạnh tranh).
+    review: sai
   - id: n21
     cau: 'Nosek và cộng sự (2002): người da đen làm bài thể hiện ưa thích nhẹ người da trắng hơn da đen trên IAT (d = 0,16), dù tự báo cáo ưu ái nhóm mình rõ rệt; ở bài dùng khuôn mặt, xu hướng đảo chiều.'
     loai: so-lieu
@@ -341,10 +367,11 @@ nhan_dinh:
     trich: Black respondents showed a weak preference for White over Black
     vi_tri: Mục Results (race IAT, đối chiếu bản tác giả)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (G1: ĐÁNG NGỜ): "Thậm chí người da đen làm bài cũng thường cho kết quả ''thiên vị da trắng''". Trang đã áp sửa G1; chữ hiện tại: "Ngay cả người da đen làm bài, dù tự báo cáo ưu ái nhóm mình rõ rệt, trên IAT tính trung bình lại không ưu ái nhóm mình, thậm chí hơi nghiêng về phía da trắng". Đối chiếu lại bản tác giả: trên bài chủng tộc d = 0,16 nghiêng da trắng; bài khuôn mặt đảo chiều. Chữ trên trang khớp.'
+    ghi_chu: 'Chữ cũ (G1: ĐÁNG NGỜ): "Thậm chí người da đen làm bài cũng thường cho kết quả ''thiên vị da trắng''". Trang đã áp sửa G1; chữ hiện tại: "Ngay cả người da đen làm bài, dù tự báo cáo ưu ái nhóm mình rõ rệt, trên IAT tính trung bình lại không ưu ái nhóm mình, thậm chí hơi nghiêng về phía da trắng". Đối chiếu lại bản tác giả: trên bài chủng tộc d = 0,16 nghiêng da trắng; bài khuôn mặt đảo chiều. Chữ trên trang khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nosek 2002 toàn văn (bản OSF, mở lại): người da đen explicit ưa da đen (d = .80) nhưng IAT "weak preference for White over Black (d = .16)"; chú thích 6: ở tập dữ liệu thận trọng (mỗi IP một lần) bài khuôn mặt đảo thành hơi nghiêng về da đen. Chữ trên trang khớp.'
     luot_2: dung
     luot_2_nguon: [ "https://osf.io/download/wt5sv/" ]
     luot_2_ghi_chu: Câu khớp; 'ở bài dùng khuôn mặt, xu hướng đảo chiều' đúng ở bộ dữ liệu thận trọng (một IP một lần), không phải toàn bộ.
+    review: dung
   - id: n22
     cau: Điểm IAT có thể phản ánh các đánh giá văn hóa mà người làm bài không tán thành (cách diễn giải của chính nhóm tác giả), chứ không hẳn là thái độ của cá nhân.
     loai: phat-hien
@@ -353,9 +380,10 @@ nhan_dinh:
     trich: the role of culturally imposed evaluations of social groups and the permeability of such evaluations into the minds of individual members of the culture
     vi_tri: Mục Discussion
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "cho thấy IAT có thể đo khuôn mẫu văn hóa mà người làm bài không tán thành, chứ không hẳn là thái độ thù ghét của cá nhân." Chữ mới: "gợi ý rằng điểm IAT có thể phản ánh các đánh giá văn hóa… (một cách diễn giải của chính nhóm tác giả)". Lý do: "cho thấy" mạnh hơn nguồn (tác giả chỉ nêu "raise many questions"); "thù ghét" bỏ.'
+    ghi_chu: 'Chữ cũ: "cho thấy IAT có thể đo khuôn mẫu văn hóa mà người làm bài không tán thành, chứ không hẳn là thái độ thù ghét của cá nhân." Chữ mới: "gợi ý rằng điểm IAT có thể phản ánh các đánh giá văn hóa… (một cách diễn giải của chính nhóm tác giả)". Lý do: "cho thấy" mạnh hơn nguồn (tác giả chỉ nêu "raise many questions"); "thù ghét" bỏ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nosek 2002, Discussion: "raise many questions … the role of culturally imposed evaluations …"; trang viết "gợi ý", "một cách diễn giải của chính nhóm tác giả".'
     luot_2: dung
     luot_2_nguon: [ "https://osf.io/download/wt5sv/" ]
+    review: dung
   - id: n23
     cau: 'Điểm đồng thuận giữa hai phe: không nên dùng điểm IAT của một cá nhân để kết luận người đó "có định kiến"; nhóm bênh vực IAT cảnh báo dùng thước đo này để chẩn đoán cá nhân có nguy cơ phân loại sai cao; IAT không phải công cụ chẩn đoán cá nhân.'
     loai: phat-hien
@@ -364,10 +392,11 @@ nhan_dinh:
     trich: attempts to diagnostically use such measures for individuals risk undesirably high rates of erroneous classifications
     vi_tri: Greenwald, Banaji & Nosek 2015, theo G1-L04
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "không nên dùng điểm IAT của một cá nhân để kết luận người đó ''có định kiến'', càng không nên dùng nó để ra quyết định tuyển dụng hay kỷ luật." Chữ mới: câu trên. Lý do: vế "tuyển dụng hay kỷ luật" không có nguồn; câu trích là của Greenwald, Banaji & Nosek (2015) theo G1 (không mở lại toàn văn: không tìm được bản mở). Chỗ khó: nhận định nhờ G1; review nên mở lại bài nếu có bản.'
+    ghi_chu: 'Chữ cũ: "không nên dùng điểm IAT của một cá nhân để kết luận người đó ''có định kiến'', càng không nên dùng nó để ra quyết định tuyển dụng hay kỷ luật." Chữ mới: câu trên. Lý do: vế "tuyển dụng hay kỷ luật" không có nguồn; câu trích là của Greenwald, Banaji & Nosek (2015) theo G1 (không mở lại toàn văn: không tìm được bản mở). Chỗ khó: nhận định nhờ G1; review nên mở lại bài nếu có bản. Review (Claude Sonnet 5.5, 10/11/2026): dung. đã mở toàn văn bản thảo Greenwald, Banaji & Nosek (OSF): "Attempts to use such measures diagnostically for individuals therefore risk undesirably high rates of erroneous classifications"; phía Oswald (2013) nói IAT "provides little insight into who will discriminate against whom". Chữ "điểm đồng thuận" là diễn giải hợp lý của hai nguồn ấy.'
     luot_2: dung
     luot_2_nguon: [ "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/", "https://api.openalex.org/works/doi:10.1037/a0032734" ]
     luot_2_ghi_chu: Vế 'phe Oswald đồng ý' chỉ có tóm tắt Oswald 2013 (yếu dự đoán), không có câu nói trực tiếp về chẩn đoán cá nhân.
+    review: dung
   - id: n24
     cau: 'Phân loại xã hội: trong các thí nghiệm nhóm tối thiểu của Tajfel (1971), chỉ cần xếp người tham gia vào hai nhóm trên cơ sở rất tầm thường (được cho biết theo sở thích tranh Klee hay Kandinsky, thực tế xếp ngẫu nhiên), họ đã có xu hướng ưu ái nhóm mình.'
     loai: phat-hien
@@ -376,9 +405,10 @@ nhan_dinh:
     trich: the subjects favoured their own group in the distribution of real rewards and penalities in a situation in which nothing but the variable of fairly irrelevant classification distinguished between the ingroup and the outgroup
     vi_tri: Tóm tắt (Summary), tr. 149
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "chỉ cần chia người tham gia vào hai nhóm hoàn toàn ngẫu nhiên, họ đã bắt đầu ưu ái phe mình". Chữ mới: câu trên. Lý do: bài 1971 nói nhóm hình thành theo "classification" ít liên quan (sở thích tranh, hoặc ước lượng điểm), và "assigned randomly" thực tế; người tham gia không biết là ngẫu nhiên; "bắt đầu" bỏ.'
+    ghi_chu: 'Chữ cũ: "chỉ cần chia người tham gia vào hai nhóm hoàn toàn ngẫu nhiên, họ đã bắt đầu ưu ái phe mình". Chữ mới: câu trên. Lý do: bài 1971 nói nhóm hình thành theo "classification" ít liên quan (sở thích tranh, hoặc ước lượng điểm), và "assigned randomly" thực tế; người tham gia không biết là ngẫu nhiên; "bắt đầu" bỏ. Review (Claude Sonnet 5.5, 10/11/2026): sai (một phần): nhóm tối thiểu Tajfel 1971 đã mở toàn văn (Internet Archive): thí nghiệm 2 chia theo "ưa tranh Klee hay Kandinsky" nhưng thực tế xếp ngẫu nhiên, người tham gia ưu ái nhóm mình khi chia phần thưởng; câu của mục này đúng. Nhưng câu đầu mục trên trang viết "Não ta tự động chia thế giới thành phe mình và phe họ" mạnh hơn Tajfel (không đo "não" hay "tự động"). Đã sửa thành "Ta có xu hướng chia người khác thành phe mình và phe họ".'
     luot_2: khong-chac
     luot_2_ghi_chu: "Không mở được toàn văn Tajfel et al. (1971): chỉ có tóm tắt (xác nhận 'favoured their own group ... fairly irrelevant classification'). Chi tiết 'Klee hay Kandinsky, thực tế xếp ngẫu nhiên' chỉ gặp ở nguồn thứ cấp bậc 3."
+    review: sai
   - id: n25
     cau: 'Học tập xã hội: theo OpenStax, trẻ em học thái độ định kiến từ cha mẹ, thầy cô, bạn bè và truyền thông; định kiến duy trì nhờ học tập xã hội và sự tuân theo chuẩn mực xã hội.'
     loai: phat-hien
@@ -387,9 +417,10 @@ nhan_dinh:
     trich: 'Children learn prejudiced attitudes and beliefs from society: their parents, teachers, friends, the media, and other sources of socialization'
     vi_tri: OpenStax 12.5
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Nhiều định kiến được học từ gia đình, bạn bè, trường học và truyền thông — trẻ em tiếp thu thái độ của người lớn xung quanh từ trước khi kịp hiểu những thái độ đó có nghĩa gì." Chữ mới: theo OpenStax. Lý do: vế "từ trước khi kịp hiểu" không có nguồn. Cùng sửa ở mục Điều gì đang xảy ra.'
+    ghi_chu: 'Chữ cũ: "Nhiều định kiến được học từ gia đình, bạn bè, trường học và truyền thông — trẻ em tiếp thu thái độ của người lớn xung quanh từ trước khi kịp hiểu những thái độ đó có nghĩa gì." Chữ mới: theo OpenStax. Lý do: vế "từ trước khi kịp hiểu" không có nguồn. Cùng sửa ở mục Điều gì đang xảy ra. Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.5 (đọc lại): "Children learn prejudiced attitudes and beliefs from society: their parents, teachers, friends, the media".'
     luot_2: dung
     luot_2_nguon: [ "https://openstax.org/books/psychology-2e/pages/12-5-prejudice-and-discrimination" ]
+    review: dung
   - id: n26
     cau: Các nhóm cảm thấy bị đe dọa hoặc cạnh tranh có thể nhìn nhóm ngoài tiêu cực hơn (một phân tích tổng hợp, 95 mẫu, 5 loại đe dọa liên hệ dương với thái độ tiêu cực với nhóm ngoài); mục tiêu chung buộc các nhóm hợp tác là một điều kiện của tiếp xúc giảm định kiến, như trong Robbers Cave.
     loai: phat-hien
@@ -399,9 +430,10 @@ nhan_dinh:
     trich: The meta-analysis, involving 95 samples, revealed that 5 different threat types had a positive relationship with negative outgroup attitudes.
     vi_tri: Riek và cộng sự (2006), tóm tắt, theo hồ sơ thi-nghiem/robbers-cave (đã khóa)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Khi các nhóm cạnh tranh việc làm, tài nguyên, địa vị — hoặc chỉ cần tin rằng mình đang cạnh tranh — định kiến bùng lên." Chữ mới: câu trên. Lý do: "hoặc chỉ cần tin rằng" không có nguồn đã mở; thay bằng kết quả đã khóa ở trang nhà (khớp nk1 và nk2 của Robbers Cave); ở bài này chỉ tóm, link trang nhà.'
+    ghi_chu: 'Chữ cũ: "Khi các nhóm cạnh tranh việc làm, tài nguyên, địa vị — hoặc chỉ cần tin rằng mình đang cạnh tranh — định kiến bùng lên." Chữ mới: câu trên. Lý do: "hoặc chỉ cần tin rằng" không có nguồn đã mở; thay bằng kết quả đã khóa ở trang nhà (khớp nk1 và nk2 của Robbers Cave); ở bài này chỉ tóm, link trang nhà. Review (Claude Sonnet 5.5, 10/11/2026): dung. Riek và cộng sự 2006 theo trang Robbers Cave đã khóa (95 mẫu, 5 loại đe dọa): trang nhà có đúng câu; chỉ tóm một câu và link về.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1207/s15327957pspr1004_4", "https://api.openalex.org/works/doi:10.1086/222258", "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
+    review: dung
   - id: n27
     cau: 'Pettigrew (1998): bốn cơ chế trung gian của tiếp xúc: hiểu biết hơn về nhóm ngoài, thay đổi hành vi, gắn kết cảm xúc (tình bạn), đánh giá lại nhóm mình.'
     loai: phat-hien
@@ -410,9 +442,10 @@ nhan_dinh:
     trich: 'The chapter proposes four processes: learning about the outgroup, changed behavior, affective ties, and ingroup reappraisal.'
     vi_tri: Tóm tắt
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pettigrew 1998 (đọc lại): bốn quá trình: học về nhóm ngoài, đổi hành vi, gắn kết cảm xúc, đánh giá lại nhóm mình.'
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
+    review: dung
   - id: n28
     cau: Pettigrew (1998) coi tình bạn liên nhóm là con đường tiếp xúc đặc biệt mạnh vì kích hoạt cả bốn cơ chế; cảm xúc tích cực với một người có thể lan ra cả nhóm của họ.
     loai: phat-hien
@@ -421,9 +454,10 @@ nhan_dinh:
     trich: because it potentially invokes all four mediating processes
     vi_tri: Mục A Reformulation of Intergroup Contact Theory
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (G1: KHÔNG KIỂM ĐƯỢC): "Dạng tiếp xúc mạnh nhất là tình bạn liên nhóm". Chữ mới: "Pettigrew (1998) coi tình bạn liên nhóm là một con đường tiếp xúc đặc biệt mạnh vì nó kích hoạt cả bốn cơ chế". Lý do: nguồn chỉ nói "potent", chưa có số so sánh với các dạng tiếp xúc khác; câu bỏ "mạnh nhất".'
+    ghi_chu: 'Chữ cũ (G1: KHÔNG KIỂM ĐƯỢC): "Dạng tiếp xúc mạnh nhất là tình bạn liên nhóm". Chữ mới: "Pettigrew (1998) coi tình bạn liên nhóm là một con đường tiếp xúc đặc biệt mạnh vì nó kích hoạt cả bốn cơ chế". Lý do: nguồn chỉ nói "potent", chưa có số so sánh với các dạng tiếp xúc khác; câu bỏ "mạnh nhất". Review (Claude Sonnet 5.5, 10/11/2026): dung. Pettigrew 1998: "Intergroup friendship is potent because it potentially invokes all four mediating processes".'
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
+    review: dung
   - id: n29
     cau: Tiếp xúc trong điều kiện không thuận lợi có thể làm tăng định kiến và căng thẳng giữa các nhóm (Amir, 1976, dẫn trong P&T 2006); một nghiên cứu ở Alabama thấy định kiến tăng khi cả bốn điều kiện đều bị vi phạm.
     loai: phat-hien
@@ -433,10 +467,11 @@ nhan_dinh:
     trich: contact under unfavorable conditions "may increase prejudice and intergroup tension"
     vi_tri: Pettigrew & Tropp 2006, mục Introduction; Pettigrew 1998, mục Initial Empirical Evidence
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "tiếp xúc hời hợt, gượng ép, hoặc trong thế cạnh tranh có thể phản tác dụng — đúng như Allport đã cảnh báo từ 1954". Chữ mới: câu trên. Lý do: "hời hợt, gượng ép" không có nguồn; "Allport cảnh báo" cần sách gốc (n6). Cùng sửa ngộ nhận 2 và đáp án quiz 2.'
+    ghi_chu: 'Chữ cũ: "tiếp xúc hời hợt, gượng ép, hoặc trong thế cạnh tranh có thể phản tác dụng — đúng như Allport đã cảnh báo từ 1954". Chữ mới: câu trên. Lý do: "hời hợt, gượng ép" không có nguồn; "Allport cảnh báo" cần sách gốc (n6). Cùng sửa ngộ nhận 2 và đáp án quiz 2. Review (Claude Sonnet 5.5, 10/11/2026): dung. P&T 2006: "contact under unfavorable conditions may increase prejudice and intergroup tension" (Amir 1976, tr. 308); Pettigrew 1998: nghiên cứu Alabama (Sims & Patrick 1936) thấy định kiến tăng khi cả bốn điều kiện bị vi phạm, sinh viên da trắng miền Bắc tăng định kiến chống da đen theo từng năm ở miền Nam.'
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
     luot_2_ghi_chu: Vế 'Amir 1976 dẫn trong P&T 2006' chưa mở được toàn văn P&T 2006.
+    review: dung
   - id: n30
     cau: Điểm IAT của bạn không phải "bản chẩn đoán" con người bạn; đừng dùng nó để tự kết tội mình hay đánh giá người khác.
     loai: loi-khuyen
@@ -446,9 +481,10 @@ nhan_dinh:
     trich: attempts to diagnostically use such measures for individuals risk undesirably high rates of erroneous classifications
     vi_tri: Greenwald, Banaji & Nosek 2015, theo G1-L04; Oswald 2013 (r = 0,14)
     ket_qua: dung
-    ghi_chu: Gắn nhãn Đang tranh cãi của khung n20; lời khuyên nhẹ, đúng quy tắc nội dung của site (không chẩn đoán).
+    ghi_chu: "Gắn nhãn Đang tranh cãi của khung n20; lời khuyên nhẹ, đúng quy tắc nội dung của site (không chẩn đoán). Review (Claude Sonnet 5.5, 10/11/2026): dung. lời khuyên nhẹ (không dùng IAT để kết tội ai), dựa trên cảnh báo của chính phía bênh vực (n23) và Oswald 2013; không phải chẩn đoán."
     luot_2: dung
     luot_2_nguon: [ "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/" ]
+    review: dung
   - id: n31
     cau: 'Một phân tích tổng hợp (Forscher và cộng sự, 2019): các quy trình làm đổi điểm đo ngầm thường chỉ đổi hành vi rất ít, và thay đổi ở điểm đo ngầm không giải thích thay đổi ở hành vi; điều đó gợi ý hiệu quả của các khóa "xóa thiên kiến vô thức" dựa trên IAT chưa có bằng chứng rõ ràng.'
     loai: phat-hien
@@ -457,10 +493,11 @@ nhan_dinh:
     trich: generally produced trivial changes in behavior
     vi_tri: Tóm tắt (OpenAlex, bị cắt đầu)
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (G1: KHÔNG KIỂM ĐƯỢC): "Hiệu quả của các khóa huấn luyện ''xóa thiên kiến vô thức'' dựa trên IAT cũng chưa có bằng chứng rõ ràng." Chữ mới: câu trên. Lý do: Forscher 2019 xét các quy trình thực nghiệm, không xét các khóa huấn luyện; phần "gợi ý" là suy luận, ghi rõ trên trang. Chỉ đọc tóm tắt.'
+    ghi_chu: 'Chữ cũ (G1: KHÔNG KIỂM ĐƯỢC): "Hiệu quả của các khóa huấn luyện ''xóa thiên kiến vô thức'' dựa trên IAT cũng chưa có bằng chứng rõ ràng." Chữ mới: câu trên. Lý do: Forscher 2019 xét các quy trình thực nghiệm, không xét các khóa huấn luyện; phần "gợi ý" là suy luận, ghi rõ trên trang. Chỉ đọc tóm tắt. Review (Claude Sonnet 5.5, 10/11/2026): dung. tóm tắt Forscher 2019: "generally produced trivial changes in behavior", "changes in implicit measures did not mediate changes in explicit measures or behavior"; phần "gợi ý" về khóa học là diễn giải và đã ghi "gợi ý".'
     luot_2: dung
     luot_2_nguon: [ "https://osf.io/download/b5m97/" ]
     luot_2_ghi_chu: Bản đọc là bản thảo tác giả (OSF). Phần 'khóa xóa thiên kiến vô thức chưa có bằng chứng' là diễn giải rộng hơn bài, nhưng câu có chữ 'gợi ý'.
+    review: dung
   - id: n32
     cau: 'Theo Pettigrew (1998), sự ủng hộ của cơ quan có thẩm quyền thiết lập chuẩn mực chấp nhận và làm tiếp xúc được đón nhận hơn; gợi ý suy ra: quy trình tuyển dụng công bằng và người có ảnh hưởng công khai lên án định kiến có thể giúp tiếp xúc liên nhóm dễ thành công (chưa kiểm trực tiếp).'
     loai: loi-khuyen
@@ -469,10 +506,11 @@ nhan_dinh:
     trich: Authority support establishes norms of acceptance.
     vi_tri: Mục Allport's conditions, đoạn về authority support
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ: "Quy trình tuyển dụng công bằng, chính sách chống phân biệt đối xử được thực thi nghiêm, và việc người có ảnh hưởng công khai lên án định kiến, đều tạo ''khí hậu'' khiến tiếp xúc liên nhóm dễ thành công hơn." Chữ mới: câu trên. Lý do: nguồn chỉ nói về điều kiện ủng hộ của thể chế; các ví dụ cụ thể là suy luận.'
+    ghi_chu: 'Chữ cũ: "Quy trình tuyển dụng công bằng, chính sách chống phân biệt đối xử được thực thi nghiêm, và việc người có ảnh hưởng công khai lên án định kiến, đều tạo ''khí hậu'' khiến tiếp xúc liên nhóm dễ thành công hơn." Chữ mới: câu trên. Lý do: nguồn chỉ nói về điều kiện ủng hộ của thể chế; các ví dụ cụ thể là suy luận. Review (Claude Sonnet 5.5, 10/11/2026): dung. Pettigrew 1998: "Authority support establishes norms of acceptance"; phần quy trình tuyển dụng và người có ảnh hưởng là suy ra, đã ghi chưa kiểm trực tiếp.'
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
     luot_2_ghi_chu: Gợi ý tuyển dụng/lên án định kiến là suy ra, đã ghi chưa kiểm trực tiếp.
+    review: dung
   - id: n33
     cau: Phân tích tổng hợp của Pettigrew và Tropp bao gồm 38 quốc gia.
     loai: so-lieu
@@ -481,33 +519,36 @@ nhan_dinh:
     trich: Combined, 250,089 individuals from 38 nations
     vi_tri: Mục Method
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "bao phủ hàng chục quốc gia". Chữ mới: "bao gồm 38 quốc gia". Lý do: có số cụ thể (G1: khớp "38 nations").'
+    ghi_chu: 'Chữ cũ: "bao phủ hàng chục quốc gia". Chữ mới: "bao gồm 38 quốc gia". Lý do: có số cụ thể (G1: khớp "38 nations"). Review (Claude Sonnet 5.5, 10/11/2026): dung. P&T 2006 toàn văn (mở lại): "Combined, 250,089 individuals from 38 nations".'
     luot_2: dung
     luot_2_nguon: [ "https://www.iser.osaka-u.ac.jp/static/resources/docs/dp/DP1319.pdf" ]
     luot_2_ghi_chu: Chỉ có nguồn thứ cấp (bản thảo thảo luận ISER 2025) trích P&T 2006; bài gốc không mở được (trang trường chặn). Con số 515 khớp tóm tắt gốc.
+    review: dung
   - id: n34
     cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm chứng giả thuyết tiếp xúc trực tiếp trên người Việt, và cũng chưa tìm thấy dữ liệu IAT trên mẫu Việt Nam.
     loai: thoi-su
     nguon:
       - tim-kiem-vn
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "chúng tôi chưa tìm thấy… và cũng chưa có dữ liệu IAT trên mẫu Việt Nam" (G1: là kết quả tìm kiếm của site, không kiểm). Chữ mới thêm mốc, đổi "chưa có" thành "chưa tìm thấy". Tìm 10/11/2026 trên Crossref: "intergroup contact hypothesis Vietnam prejudice" (8 kết quả đầu: chương tổng quan, không có mẫu Việt Nam) và "implicit association test Vietnamese" (không có mẫu Việt Nam); chưa tìm Project Implicit hay tạp chí trong nước.'
+    ghi_chu: 'Chữ cũ: "chúng tôi chưa tìm thấy… và cũng chưa có dữ liệu IAT trên mẫu Việt Nam" (G1: là kết quả tìm kiếm của site, không kiểm). Chữ mới thêm mốc, đổi "chưa có" thành "chưa tìm thấy". Tìm 10/11/2026 trên Crossref: "intergroup contact hypothesis Vietnam prejudice" (8 kết quả đầu: chương tổng quan, không có mẫu Việt Nam) và "implicit association test Vietnamese" (không có mẫu Việt Nam); chưa tìm Project Implicit hay tạp chí trong nước. Review (Claude Sonnet 5.5, 10/11/2026): dung. thời sự có mốc 11/2026, hạn 2027-11-01, nguồn tim-kiem-vn; câu "chưa tìm thấy", không khẳng định chưa có.'
     het_han: '2027-11-01'
     luot_2: dung
     luot_2_nguon: [ "https://api.crossref.org/works?query=intergroup%20contact%20prejudice%20Vietnam%20experiment&rows=6", "https://api.crossref.org/works?query=implicit%20association%20test%20Vietnamese%20participants&rows=6" ]
     luot_2_ghi_chu: "Câu 'chưa tìm thấy' có mốc; tìm kiếm hạn chế. Ngày kiểm: 2026-11-10."
+    review: dung
   - id: n35
-    cau: 'Điều đó không có nghĩa Việt Nam "không có định kiến": bài này chỉ không có bằng chứng thực nghiệm về người Việt để dẫn; cần nghiên cứu có thiết kế (đo trước–sau, có nhóm đối chứng); Paluck và cộng sự (2019) chỉ ra khoảng trống lớn ở các nghiên cứu về định kiến của người trưởng thành.'
+    cau: 'Điều đó không có nghĩa Việt Nam "không có định kiến": bài này chỉ không có bằng chứng thực nghiệm về người Việt để dẫn; cần nghiên cứu có thiết kế (đo trước–sau, có nhóm đối chứng); Paluck và cộng sự (2019) chỉ ra khoảng trống: chưa có thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian về định kiến chủng tộc, sắc tộc của người trưởng thành.'
     loai: loi-khuyen
     nguon:
       - paluck2019
     trich: most notably the absence of studies addressing adults' racial or ethnic prejudices
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "định kiến vùng miền, với người nhiễm HIV, người đồng tính, người khuyết tật hay lao động nhập cư đều là những hiện tượng xã hội có thật — nhưng hiện chủ yếu được ghi nhận qua báo chí và quan sát… Các chương trình giao lưu văn hóa giữa các dân tộc… là ứng viên tự nhiên để kiểm chứng." Chữ mới: câu trên. Lý do: danh sách nhóm bị định kiến ở Việt Nam và "chủ yếu qua báo chí" không có nguồn.'
+    ghi_chu: 'Chữ cũ: "định kiến vùng miền, với người nhiễm HIV, người đồng tính, người khuyết tật hay lao động nhập cư đều là những hiện tượng xã hội có thật — nhưng hiện chủ yếu được ghi nhận qua báo chí và quan sát… Các chương trình giao lưu văn hóa giữa các dân tộc… là ứng viên tự nhiên để kiểm chứng." Chữ mới: câu trên. Lý do: danh sách nhóm bị định kiến ở Việt Nam và "chủ yếu qua báo chí" không có nguồn. Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh): "khoảng trống lớn ở các nghiên cứu về định kiến của người trưởng thành" rộng hơn nguồn; Paluck 2019 nói "the absence of studies addressing adults'' racial or ethnic prejudices". Đã sửa thành "chưa có thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian về định kiến chủng tộc, sắc tộc của người trưởng thành".'
     luot_2: dung
     luot_2_nguon: [ "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
     luot_2_ghi_chu: Phạm vi bài là định kiến chủng tộc/sắc tộc ở người lớn; câu 'định kiến của người trưởng thành' nên thêm 'chủng tộc/sắc tộc'.
+    review: sai
   - id: n36
     cau: 'Ngộ nhận: "Có điểm IAT cao nghĩa là bạn phân biệt chủng tộc": điểm IAT của một cá nhân không đủ để kết luận; nhóm tác giả của Nosek và cộng sự (2002) nêu khả năng nó phản ánh các đánh giá văn hóa.'
     loai: phat-hien
@@ -516,9 +557,10 @@ nhan_dinh:
     trich: the role of culturally imposed evaluations of social groups and the permeability of such evaluations into the minds of individual members of the culture
     vi_tri: Mục Discussion
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (đã áp sửa G1): "Người da đen làm bài, tính trung bình, cũng không cho thấy ưu ái nhóm mình như khi tự báo cáo" và "phản ánh cả những khuôn mẫu văn hóa mà bạn không hề tán thành". Chữ mới: câu trên. Lý do: "phản ánh" chắc chắn → "nêu khả năng"; vế người da đen chuyển sang n21.'
+    ghi_chu: 'Chữ cũ (đã áp sửa G1): "Người da đen làm bài, tính trung bình, cũng không cho thấy ưu ái nhóm mình như khi tự báo cáo" và "phản ánh cả những khuôn mẫu văn hóa mà bạn không hề tán thành". Chữ mới: câu trên. Lý do: "phản ánh" chắc chắn → "nêu khả năng"; vế người da đen chuyển sang n21. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nosek 2002 (n22); nội dung ngộ nhận không nói quá ("nêu khả năng").'
     luot_2: dung
     luot_2_nguon: [ "https://osf.io/download/wt5sv/", "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/" ]
+    review: dung
   - id: n37
     cau: 'Ngộ nhận "Cứ tiếp xúc là hết định kiến": tiếp xúc trong điều kiện không thuận lợi có thể làm tăng định kiến (xem n29).'
     loai: phat-hien
@@ -527,9 +569,10 @@ nhan_dinh:
     trich: contact under unfavorable conditions "may increase prejudice and intergroup tension"
     vi_tri: Mục Introduction
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Tiếp xúc trong thế bất bình đẳng, trong cạnh tranh, hoặc tiếp xúc tiêu cực có thể làm định kiến tệ hơn. Allport đưa ra bốn điều kiện chính là vì lý do này." Chữ mới: như n29. Lý do: vế "bất bình đẳng, cạnh tranh" và "chính là vì lý do này" không có nguồn.'
+    ghi_chu: 'Chữ cũ: "Tiếp xúc trong thế bất bình đẳng, trong cạnh tranh, hoặc tiếp xúc tiêu cực có thể làm định kiến tệ hơn. Allport đưa ra bốn điều kiện chính là vì lý do này." Chữ mới: như n29. Lý do: vế "bất bình đẳng, cạnh tranh" và "chính là vì lý do này" không có nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. P&T 2006 (Amir 1976) và Pettigrew 1998 (Alabama); trang viết "có thể làm tăng".'
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
+    review: dung
   - id: n38
     cau: 'Ngộ nhận "Định kiến chỉ là chuyện của kẻ xấu tính": định kiến nảy sinh từ phân loại nhóm, chuẩn mực xã hội và cạnh tranh; người tử tế vẫn có thể mang định kiến.'
     loai: phat-hien
@@ -539,9 +582,10 @@ nhan_dinh:
     trich: Prejudice and discrimination persist in society due to social learning and conformity to social norms.
     vi_tri: OpenStax 12.5
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "…cách não phân loại nhóm, từ chuẩn mực xã hội và từ cạnh tranh tài nguyên — những người tử tế vẫn có thể mang định kiến mà không hay biết." Chữ mới: bỏ "mà không hay biết". Lý do: "không hay biết" thuộc về tranh luận IAT (n20), không có nguồn riêng.'
+    ghi_chu: 'Chữ cũ: "…cách não phân loại nhóm, từ chuẩn mực xã hội và từ cạnh tranh tài nguyên — những người tử tế vẫn có thể mang định kiến mà không hay biết." Chữ mới: bỏ "mà không hay biết". Lý do: "không hay biết" thuộc về tranh luận IAT (n20), không có nguồn riêng. Review (Claude Sonnet 5.5, 10/11/2026): dung. OpenStax 12.5 (học tập xã hội, chuẩn mực), Tajfel 1971 (phân loại), Riek 2006 (cạnh tranh, đe dọa); câu cuối "người tử tế vẫn có thể mang định kiến" là khái quát từ các cơ chế ấy, chấp nhận.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1002/ejsp.2420010202", "https://openstax.org/books/psychology-2e/pages/12-5-prejudice-and-discrimination", "https://api.openalex.org/works/doi:10.1207/s15327957pspr1004_4", "https://api.openalex.org/works/doi:10.1037/0022-3514.74.6.1464" ]
+    review: dung
   - id: n39
     cau: 'Ngộ nhận "Giảm được định kiến trong đầu là tự khắc hết phân biệt đối xử": thái độ và hành vi không trùng khít; ở cấp cá nhân điểm IAT liên hệ yếu với hành vi, nhưng ở cấp tập thể (quốc gia, bang, hạt) mức thiên kiến ngầm trung bình liên hệ mạnh với mức chênh lệch và phân biệt đối xử.'
     loai: phat-hien
@@ -551,25 +595,29 @@ nhan_dinh:
     trich: studies of aggregate levels of implicit bias (i.e., countries, states, counties) are strongly associated with aggregate levels of disparities and discrimination
     vi_tri: Payne và cộng sự 2017, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "quy trình tuyển dụng thiên lệch hay luật lệ phân biệt vẫn tạo ra bất bình đẳng ngay cả khi thái độ cá nhân đã cải thiện — và ngược lại." Chữ mới: câu trên. Lý do: vế cũ là khẳng định không nguồn; thay bằng kết quả tóm tắt Payne 2017.'
+    ghi_chu: 'Chữ cũ: "quy trình tuyển dụng thiên lệch hay luật lệ phân biệt vẫn tạo ra bất bình đẳng ngay cả khi thái độ cá nhân đã cải thiện — và ngược lại." Chữ mới: câu trên. Lý do: vế cũ là khẳng định không nguồn; thay bằng kết quả tóm tắt Payne 2017. Review (Claude Sonnet 5.5, 10/11/2026): dung. Payne, Vuletich & Lundberg 2017 tóm tắt: cấp cá nhân liên hệ yếu, cấp tổng hợp (quốc gia, bang, hạt) "strongly associated" với chênh lệch.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1080/1047840X.2017.1335568" ]
+    review: dung
   - id: n40
     cau: 'Đọc thêm: Vì sao ta làm theo số đông? (thí nghiệm Asch và sự phù hợp); Quảng cáo thuyết phục ta thế nào? (mô hình ELM).'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: hai trang có trong src/data/trang.yml; tiêu đề và nội dung khớp (phu-hop-so-dong: Asch; thuyet-phuc: ELM). Đã sửa ở phu-hop-so-dong (n40 hồ sơ ấy): trang này giữ.'
+    ghi_chu: 'Đã kiểm: hai trang có trong src/data/trang.yml; tiêu đề và nội dung khớp (phu-hop-so-dong: Asch; thuyet-phuc: ELM). Đã sửa ở phu-hop-so-dong (n40 hồ sơ ấy): trang này giữ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: phu-hop-so-dong (Asch, sự phù hợp) và thuyet-phuc (ELM) có trong trang.yml và có file, tên và nội dung khớp.'
+    review: dung
   - id: n41
-    cau: 'Quiz 1: thứ tự thang 5 mức của Allport: nói xấu, tránh né, phân biệt đối xử, tấn công thân thể, diệt chủng.'
+    cau: "Quiz 1: thứ tự thang 5 mức của Allport theo cách tóm tắt thường gặp: nói xấu, tránh né, phân biệt đối xử, tấn công thân thể, diệt chủng; giải thích: nói xấu là điểm khởi đầu và các hình thức bạo lực nặng hơn dựa trên những hành vi định kiến ở mức thấp hơn (Windisch và cộng sự, 2022)."
     loai: lich-su
     nguon:
+      - windisch2022
       - allport-tomtat
-    trich: Talking in terms of negative stereotypes and negative images
-    vi_tri: Ghi chú giảng, mục Ways of Expressing Prejudice
+    trich: The last level, extermination, includes ultimate acts of violence against members of specific groups, an expression of prejudice that systematically eradicates an entire group of people (e.g., genocide).
+    vi_tri: Windisch và cộng sự 2022, mục Introduction
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ (giải thích): "Điểm quan trọng của Allport: các mức độ không tách rời — lời nói miệt thị ''vô hại'' hôm nay tạo đất cho phân biệt đối xử ngày mai." Chữ mới: "Theo các tóm tắt của thang: nói xấu tự nó có thể không gây hại nhưng tạo đất cho các mức nặng hơn." Cùng chỗ khó với n6 (chỉ có nguồn phụ).'
+    ghi_chu: 'Chữ cũ (giải thích): "Điểm quan trọng của Allport: các mức độ không tách rời — lời nói miệt thị ''vô hại'' hôm nay tạo đất cho phân biệt đối xử ngày mai." Chữ mới: "Theo các tóm tắt của thang: nói xấu tự nó có thể không gây hại nhưng tạo đất cho các mức nặng hơn." Cùng chỗ khó với n6 (chỉ có nguồn phụ). Review (Claude Sonnet 5.5, 10/11/2026): sai (không đúng nguồn): giải thích quiz "nói xấu tự nó có thể không gây hại nhưng tạo đất cho các mức nặng hơn" chỉ có ở ghi chú giảng bậc 3. Đã sửa theo Windisch và cộng sự 2022 (nói xấu là điểm khởi đầu, bạo lực nặng hơn dựa trên mức thấp hơn); thứ tự năm mức đã có nguồn bậc 2 (n6); lựa chọn nhiễu không dựa vào vị trí.'
     luot_2: khong-chac
     luot_2_ghi_chu: "Như n6: thứ tự 5 mức của Allport chưa kiểm được ở nguồn bậc 1–2 mở được."
+    review: sai
   - id: n42
     cau: 'Quiz 2: bốn điều kiện: địa vị ngang nhau, mục tiêu chung, hợp tác giữa các nhóm, được thể chế/luật pháp/phong tục ủng hộ; thiếu các điều kiện này tiếp xúc vẫn có thể có tác dụng, nhưng hiệu quả nhìn chung thấp hơn; trong điều kiện không thuận lợi có thể làm tăng định kiến.'
     loai: phat-hien
@@ -578,9 +626,10 @@ nhan_dinh:
     trich: equal status between the groups in the situation; common goals; intergroup cooperation; and the support of authorities, law, or custom.
     vi_tri: Mục Introduction
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Thiếu các điều kiện này, tiếp xúc vẫn có thể có tác dụng, nhưng hiệu quả yếu hơn — và trong trường hợp xấu (bất bình đẳng, cạnh tranh) còn phản tác dụng." Chữ mới: câu trên. Lý do: n29.'
+    ghi_chu: 'Chữ cũ: "Thiếu các điều kiện này, tiếp xúc vẫn có thể có tác dụng, nhưng hiệu quả yếu hơn — và trong trường hợp xấu (bất bình đẳng, cạnh tranh) còn phản tác dụng." Chữ mới: câu trên. Lý do: n29. Review (Claude Sonnet 5.5, 10/11/2026): dung. P&T 2006: bốn điều kiện; "not essential"; Amir 1976 về điều kiện không thuận lợi.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751", "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
+    review: dung
   - id: n43
     cau: 'Quiz 3: 713 mẫu độc lập từ 515 nghiên cứu, tiếp xúc giảm định kiến; hiệu ứng mạnh hơn khi bốn điều kiện được đáp ứng nhưng không bắt buộc; sau đó kiểm lại trên 27 thí nghiệm ngẫu nhiên (hiệu ứng yếu hơn với định kiến chủng tộc).'
     loai: phat-hien
@@ -590,9 +639,10 @@ nhan_dinh:
     trich: these conditions are not essential for prejudice reduction
     vi_tri: Tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ (giải thích): "Một trong những phát hiện được tái lập tốt nhất trong tâm lý học về định kiến — và là cơ sở khoa học cho nhiều chính sách hòa hợp." Chữ mới: kết quả kiểm lại của Paluck 2019. Lý do: "tái lập tốt nhất" và "cơ sở cho nhiều chính sách" không nguồn.'
+    ghi_chu: 'Chữ cũ (giải thích): "Một trong những phát hiện được tái lập tốt nhất trong tâm lý học về định kiến — và là cơ sở khoa học cho nhiều chính sách hòa hợp." Chữ mới: kết quả kiểm lại của Paluck 2019. Lý do: "tái lập tốt nhất" và "cơ sở cho nhiều chính sách" không nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. P&T 2006 và Paluck 2019 (đã thêm "có đo kết quả sau một thời gian" vào giải thích).'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
+    review: dung
   - id: n44
     cau: 'Quiz 4: IAT đo tốc độ phản ứng khi ghép cặp các khái niệm, được diễn giải là độ mạnh của liên tưởng tự động.'
     loai: phat-hien
@@ -601,9 +651,10 @@ nhan_dinh:
     trich: This performance difference implicitly measures differential association of the 2 concepts with the attribute.
     vi_tri: Tóm tắt
     ket_qua: da-lam-mem
-    ghi_chu: 'Chữ cũ (giải thích): "vừa là điểm mạnh (khó giả vờ) vừa là điểm yếu (khó biết chắc nó đo cái gì)". Chữ mới: "điểm yếu là khó biết chắc nó đo cái gì". Lý do: bỏ "điểm mạnh (khó giả vờ)": không có nguồn đã mở.'
+    ghi_chu: 'Chữ cũ (giải thích): "vừa là điểm mạnh (khó giả vờ) vừa là điểm yếu (khó biết chắc nó đo cái gì)". Chữ mới: "điểm yếu là khó biết chắc nó đo cái gì". Lý do: bỏ "điểm mạnh (khó giả vờ)": không có nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Greenwald 1998 tóm tắt: IAT "implicitly measures differential association"; lời giải thích quiz nói đúng và không dựa vào vị trí lựa chọn.'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.74.6.1464" ]
+    review: dung
   - id: n45
     cau: 'Quiz 5: IAT chỉ dự đoán hành vi ở mức yếu (khoảng r = 0,14; vi hành vi r = 0,07) và không tốt hơn các biện pháp hỏi trực tiếp; phe bênh vực cho rằng hiệu ứng nhỏ ở cấp cá nhân có thể tạo hậu quả lớn ở cấp xã hội.'
     loai: so-lieu
@@ -613,25 +664,29 @@ nhan_dinh:
     trich: performed no better than simple explicit measures
     vi_tri: Tóm tắt
     ket_qua: dung
-    ghi_chu: 'G1: khớp.'
+    ghi_chu: 'G1: khớp. Review (Claude Sonnet 5.5, 10/11/2026): dung. Oswald 2013 (n17) và Greenwald, Banaji & Nosek 2015 (n19).'
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/a0032734", "https://arxiv.org/pdf/2312.14984", "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/" ]
     luot_2_ghi_chu: Xem ghi chú n17 về số 0,07.
+    review: dung
   - id: n46
     cau: Hộp "Tóm tắt nhanh" (::tom-tat) dựng từ ý chính của các khung nhãn của trang.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: ::tom-tat đọc các khung nhãn trong trang.'
+    ghi_chu: 'Đã kiểm: ::tom-tat đọc các khung nhãn trong trang. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: ::tom-tat dựng từ các khung nhãn (src/plugins/thanh-phan.mjs).'
+    review: dung
   - id: n47
     cau: Xem thêm các ngộ nhận khác ở trang Ngộ nhận.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: src/data/trang.yml có id ngo-nhan/index.'
+    ghi_chu: 'Đã kiểm: src/data/trang.yml có id ngo-nhan/index. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: ngo-nhan/index có trong src/data/trang.yml; trang chưa lên bản build nên link thành "sắp có".'
+    review: dung
   - id: n48
     cau: 'Link tới trang thí nghiệm Robbers Cave: /psyche/thi-nghiem/robbers-cave/.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm: src/content/docs/thi-nghiem/robbers-cave.md có trong trang.yml; trang nhà đã khóa.'
+    ghi_chu: 'Đã kiểm: src/content/docs/thi-nghiem/robbers-cave.md có trong trang.yml; trang nhà đã khóa. Review (Claude Sonnet 5.5, 10/11/2026): dung. Chỉ nói về site: src/content/docs/thi-nghiem/robbers-cave.md có, đã khóa (kiem-dinh/khoa.json); link /psyche/thi-nghiem/robbers-cave/ đúng.'
+    review: dung
   - id: n49
     cau: 'Áp dụng 1: tạo tiếp xúc có chất lượng (bình đẳng, hợp tác vì mục tiêu chung), không chỉ ở gần nhau.'
     loai: nhan
@@ -647,6 +702,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1037/0022-3514.90.5.751", "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/142C913E7FA9E121277B29E994124EC5/S2398063X18000258a.pdf/div-class-title-the-contact-hypothesis-re-evaluated-div.pdf" ]
     luot_2_ghi_chu: "Là lời khuyên suy từ bằng chứng tương quan giữa các nghiên cứu; Paluck 2019: điều kiện chưa được thao túng có hệ thống."
+    review: sai
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): sai (quá mạnh, thiếu giới hạn): trang viết tiếp xúc có chất lượng "hiệu quả hơn nhiều so với việc chỉ ở gần nhau" và khuyên thiết kế theo bốn điều kiện như điều chắc; P&T 2006 chỉ thấy hiệu ứng "even greater" khi có điều kiện tối ưu và các điều kiện không bắt buộc, Paluck 2019 chưa thấy thí nghiệm thao túng chúng. Đã sửa thành "có thể hiệu quả hơn", kèm P&T và "gợi ý suy ra, chưa kiểm trực tiếp". Nhãn Khá vững chốt cho nền (P&T), lời khuyên đã ghi chưa kiểm.'
   - id: n50
     cau: 'Áp dụng 2: kết bạn liên nhóm (Pettigrew 1998).'
     loai: nhan
@@ -662,6 +719,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
     luot_2_ghi_chu: Bằng chứng chủ yếu khảo sát; Paluck 2019 cho hiệu ứng yếu hơn với định kiến chủng tộc.
+    review: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững chốt nhưng mỏng: nền là tổng quan lý thuyết Pettigrew 1998 ("potent because it potentially invokes all four") và P&T 2006 (hiệu ứng lan ra cả nhóm ngoài); chưa có phép so riêng tình bạn với các dạng tiếp xúc khác trong nguồn đã mở. Câu trên trang nói "Pettigrew coi…", không khẳng định số so sánh.'
   - id: n51
     cau: 'Áp dụng 3: thận trọng với các bài "test thiên kiến ngầm" (nhãn Đang tranh cãi).'
     loai: nhan
@@ -679,6 +738,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://api.openalex.org/works/doi:10.1080/1047840X.2017.1335568", "https://api.openalex.org/works/doi:10.1037/a0032734", "https://api.osf.io/v2/files/553e57a38c5e4a219919a20e/" ]
     luot_2_ghi_chu: Nhãn Đang tranh cãi khớp thước đo.
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Đang tranh cãi chốt cho nền (n20); lời khuyên không dùng điểm IAT để tự kết tội hay đánh giá người khác khớp cảnh báo của cả hai phía (n23); IAT không phải công cụ chẩn đoán cá nhân."
   - id: n52
     cau: 'Áp dụng 4: can thiệp vào chuẩn mực và thể chế.'
     loai: nhan
@@ -694,6 +755,8 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://ns1.serendipstudio.org/oneworld/system/files/annurev.psych_.49.1.65-2.pdf" ]
     luot_2_ghi_chu: Suy ra từ giả thuyết tiếp xúc; chưa kiểm trực tiếp (Paluck 2019).
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững chốt cho nền (điều kiện thứ tư; Pettigrew 1998); trang đã ghi gợi ý suy ra và chưa kiểm trực tiếp."
 doi_chu:
   - cu: (không có)
     moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
@@ -728,3 +791,27 @@ doi_chu:
   - cu: Ngộ nhận 3 "mà không hay biết"; ngộ nhận 4 "quy trình tuyển dụng… và ngược lại"
     moi: Bỏ; dẫn Payne 2017
     ly_do: n38, n39.
+  - cu: 'Allport: "Theo cách tóm tắt thường gặp của thang … (chúng tôi chưa mở được sách gốc …)"; mức 1 "lời lẽ miệt thị, đùa cợt … thường được xem là vô hại"; "Theo các tóm tắt ấy, nói xấu tự nó có thể không gây hại nhưng tạo đất …"; giải thích quiz 1 tương tự'
+    moi: dẫn Windisch và cộng sự (2022); mức 1 "bày tỏ định kiến bằng lời lẽ tiêu cực về một nhóm, với bạn bè hay với người lạ"; "…nói xấu chỉ là điểm khởi đầu"; Nguồn gộp một dòng Allport kèm ghi chú
+    ly_do: "Review n6, n41: chỉ nguồn bậc 3; nay có tổng quan hệ thống bậc 2."
+  - cu: '"nhưng chỉ khi hội đủ bốn điều kiện (theo cách Pettigrew và Tropp, 2006, tóm lại)"'
+    moi: '"khi hội đủ bốn điều kiện (… phân tích của chính họ lại thấy các điều kiện này không bắt buộc, xem mục dưới)"'
+    ly_do: Review n7.
+  - cu: '"không phải do thiên lệch chọn mẫu hay thiên lệch xuất bản"; khung Vững chắc "hiệu ứng không phải do thiên lệch xuất bản"'
+    moi: '"nhiều phép kiểm cho thấy dường như không do …"; khung: "dường như không do …"'
+    ly_do: Review n9.
+  - cu: '"27 thí nghiệm ngẫu nhiên sau đó (Paluck …)"; "chưa có thí nghiệm ngẫu nhiên nào thao túng có hệ thống bốn điều kiện"; "khoảng trống lớn ở các nghiên cứu về định kiến của người trưởng thành"'
+    moi: '"27 thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian … và chưa có nghiên cứu nào về định kiến chủng tộc, sắc tộc của người trưởng thành"; "trong 27 thí nghiệm … chưa có thí nghiệm nào thao túng …"; "chưa có thí nghiệm ngẫu nhiên có đo kết quả sau một thời gian về định kiến chủng tộc, sắc tộc của người trưởng thành"'
+    ly_do: "Review n11–n14, n35: tóm tắt Paluck 2019."
+  - cu: Greenwald 2009 "trung bình r ≈ 0,236 …"
+    moi: '"… 0,236 cho các bài về thái độ và khuôn mẫu da đen–da trắng — … theo Greenwald, Banaji và Nosek, 2015"'
+    ly_do: Review n18.
+  - cu: 'Khung IAT: "hiệu ứng nhỏ nhân với hàng triệu quyết định … IAT vẫn hữu ích để thăm dò các liên tưởng tự động"'
+    moi: '"hiệu ứng nhỏ vẫn có thể gây hậu quả xã hội đáng kể khi ảnh hưởng nhiều người cùng lúc hoặc lặp lại với cùng một người; … hạn chế về độ tin cậy, hiệu ứng nhỏ ít gây vấn đề khi phân tích phân biệt đối xử ở cấp hệ thống, nơi mẫu lớn"'
+    ly_do: Review n20.
+  - cu: '"Não ta tự động chia thế giới thành phe mình và phe họ."'
+    moi: '"Ta có xu hướng chia người khác thành phe mình và phe họ."'
+    ly_do: Review n24.
+  - cu: 'Áp dụng 1: "hiệu quả hơn nhiều so với việc chỉ ở gần nhau. … hãy thiết kế sao cho bốn điều kiện … được đáp ứng."'
+    moi: '"có thể hiệu quả hơn …: theo Pettigrew và Tropp (2006) … dù chúng không bắt buộc. Một gợi ý suy ra từ đó (chưa kiểm trực tiếp): …"'
+    ly_do: Review n49.

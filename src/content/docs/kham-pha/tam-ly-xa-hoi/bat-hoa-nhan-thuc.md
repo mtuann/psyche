@@ -49,11 +49,11 @@ Nhóm được trả **ít tiền hơn** lại đánh giá công việc **tích 
 ## Mức độ chắc chắn
 
 :::tranh-cai[phần thưởng nhỏ có làm thái độ thay đổi nhiều hơn phần thưởng lớn?]
-Thí nghiệm gốc có mẫu nhỏ (71 người, 60 người được phân tích; toàn nam sinh viên một trường), một bối cảnh duy nhất, và thái độ chỉ được đo bằng một câu hỏi trên thang 11 điểm. Quan trọng hơn, đợt tái lập lớn nhất của mô hình này (39 phòng thí nghiệm ở 19 nước, gần 4.900 người, có đăng ký trước) không tìm thấy dự đoán cốt lõi của nó: viết bài trái quan điểm khi được tự chọn không làm thái độ đổi nhiều hơn khi bị chỉ định ([Vaidis và cộng sự, 2024](https://doi.org/10.1177/25152459231213375)). Đợt này không dùng tiền thưởng 1 hay 20 đô-la, nhưng nó đặt dấu hỏi lớn cho chính mô hình mà thí nghiệm của Festinger và Carlsmith thuộc về.
+Thí nghiệm gốc có mẫu nhỏ (71 người, 60 người được phân tích; toàn nam sinh viên một trường), một bối cảnh duy nhất, và chênh lệch có ý nghĩa thống kê chỉ thấy ở một trong bốn câu hỏi phỏng vấn (độ thú vị, thang 11 điểm); câu hỏi về mong muốn tham gia lại cho kết quả cùng chiều nhưng chưa đạt ý nghĩa thống kê. Quan trọng hơn, đợt tái lập lớn nhất của mô hình này (39 phòng thí nghiệm ở 19 nước, gần 4.900 người, có đăng ký trước) không tìm thấy dự đoán cốt lõi của nó: viết bài trái quan điểm khi được tự chọn không làm thái độ đổi nhiều hơn khi bị chỉ định ([Vaidis và cộng sự, 2024](https://doi.org/10.1177/25152459231213375)). Đợt này không dùng tiền thưởng 1 hay 20 đô-la, nhưng nó đặt dấu hỏi lớn cho chính mô hình mà thí nghiệm của Festinger và Carlsmith thuộc về.
 :::
 
 :::kha-vung[con người có xu hướng giảm mâu thuẫn giữa niềm tin và hành vi]
-Lý thuyết bất hòa đã được áp dụng cho nhiều tình huống khác nhau (niềm tin bị phản bác, biện minh cho nỗ lực, đạo đức giả, ra quyết định). Cũng trong đợt tái lập năm 2024, người viết bài trái quan điểm có thái độ thuận hơn người viết bài trung tính, dù quyền chọn không tạo khác biệt. Nhưng chưa có phân tích tổng hợp chung cho các mô hình, nhiều nghiên cứu kinh điển có mẫu nhỏ và hạn chế về phương pháp ([Vaidis và cộng sự, 2024](https://doi.org/10.1177/25152459241268197)), và mô hình tuân thủ bị ép buộc đã không tái lập được ở phần quan trọng nhất. Vì vậy chỉ dừng ở "khá vững": khi không thể đổi hành vi đã rồi, ta có thể đổi cách nghĩ cho khớp, nhưng độ mạnh của từng mô hình đang được kiểm tra lại.
+Lý thuyết bất hòa đã được áp dụng cho nhiều tình huống khác nhau (niềm tin bị phản bác, biện minh cho nỗ lực, đạo đức giả, ra quyết định). Cũng trong đợt tái lập năm 2024, người viết bài trái quan điểm có thái độ thuận hơn người viết bài trung tính, dù quyền chọn không tạo khác biệt. Nhưng các tác giả đánh giá lại tài liệu nhận thấy nhiều nghiên cứu kinh điển có mẫu nhỏ và hạn chế về phương pháp ([Sleegers và cộng sự, 2024](https://doi.org/10.1177/25152459241268197)), và mô hình tuân thủ bị ép buộc đã không tái lập được ở phần quan trọng nhất. Vì vậy chỉ dừng ở "khá vững": khi không thể đổi hành vi đã rồi, ta có thể đổi cách nghĩ cho khớp, nhưng độ mạnh của từng mô hình đang được kiểm tra lại.
 :::
 
 :::tranh-cai[bất hòa có thật sự là 'cảm giác khó chịu' không?]
@@ -73,9 +73,8 @@ Khi rơi vào bất hòa ("tôi đã làm X" nhưng "tôi tin Y"), ta có thể 
 
 ## Áp dụng vào đời sống
 
-- **Khi mua sắm:** nếu bạn thấy mình đang ra sức "bênh" một món đồ vừa mua trước những lời chê, hãy dừng lại một nhịp và tự hỏi: mình khen nó vì nó tốt, hay vì mình đã trả tiền cho nó? Gợi ý này suy ra từ lý thuyết bất hòa, chưa được kiểm trực tiếp.
-- **Trong tranh luận:** khi ai đó càng bị dồn vào chân tường càng cố thủ, đừng vội kết luận họ "cứng đầu". Theo lý thuyết, có thể họ đang giảm cảm giác "mình đã sai". Một gợi ý suy ra từ lý thuyết (chưa kiểm trực tiếp): cho họ một lối thoát giữ thể diện ("Ừ, với thông tin lúc đó thì quyết định của anh cũng hợp lý, giờ có thêm dữ liệu mới...").
-- **Với chính mình:** nhận ra cơ chế này không giúp ta hết bị bất hòa — nó là một phần của con người. Nhưng nhận ra giúp ta phân biệt được đâu là lý do thật, đâu là lý do ta bịa ra để tự an ủi.
+- **Khi mua sắm:** theo lý thuyết, khi một lựa chọn đã xong mà không đổi được, ta có thể giảm khó chịu bằng cách đổi cách nghĩ về nó; OpenStax minh họa bằng người lính nhập ngũ không thể rời đi, tự nhủ rằng mình đang mạnh lên. Áp vào chuyện mua đồ là suy luận từ lý thuyết, chưa được kiểm trực tiếp, và không cho biết món đồ ấy tốt hay dở.
+- **Trong tranh luận:** khi ai đó bị dồn vào chân tường mà vẫn cố thủ, theo lý thuyết, có thể họ đang giảm cảm giác "mình đã sai" chứ không nhất thiết là "cứng đầu". Đây là suy luận từ lý thuyết (ta có động lực giảm bất hòa vì nó khó chịu, OpenStax mục 12.3), chưa được kiểm trực tiếp.
 
 **Giới hạn.** Theo lý thuyết, bất hòa chỉ xuất hiện khi hành vi mâu thuẫn với điều quan trọng với hình ảnh bản thân, và mô hình tuân thủ bị ép buộc dựa vào cảm giác được **tự chọn**. Nhưng đợt tái lập lớn năm 2024 không thấy quyền chọn tạo khác biệt, nên đây là dự đoán của lý thuyết hơn là điều đã chắc chắn.
 
@@ -83,12 +82,12 @@ Khi rơi vào bất hòa ("tôi đã làm X" nhưng "tôi tin Y"), ta có thể 
 
 Thí nghiệm gốc dùng sinh viên Stanford năm 1959. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào lặp lại đúng mô hình này với người Việt.
 
-Ví dụ giả định: một người đã theo một "thầy" chữa bệnh có thể khó thừa nhận phương pháp đó không hiệu quả, vì thừa nhận đồng nghĩa với việc nhìn nhận một lựa chọn tốn kém là sai lầm. Nếu văn hóa coi trọng "giữ thể diện", lối thoát số 4 (coi nhẹ mâu thuẫn) và số 3 (thêm lý do bênh vực) có thể dễ được chọn hơn. Đây là suy luận từ lý thuyết, chưa phải kết quả nghiên cứu trên người Việt.
+Ví dụ giả định: một người đã theo một "thầy" chữa bệnh có thể khó thừa nhận phương pháp đó không hiệu quả, vì thừa nhận đồng nghĩa với việc nhìn nhận một lựa chọn tốn kém là sai lầm. Đây là suy luận từ lý thuyết, chưa phải kết quả nghiên cứu trên người Việt.
 
 ## Ngộ nhận liên quan
 
-- **"Thưởng càng nhiều thì người ta càng thay đổi thái độ theo ý mình."** Thí nghiệm gốc thấy điều ngược lại: nhóm 20 đô-la không đổi thái độ, nhóm 1 đô-la có. Theo lý thuyết, phần thưởng lớn cho người ta lý do để *không cần* đổi thái độ.
-- **"Tôi luôn nhìn nhận quyết định của mình một cách khách quan."** :nhan[bac-bo] Nhiều nghiên cứu cho thấy thái độ của ta có thể dịch về phía điều ta đã làm (xem các khung nhãn ở trên), nên ta không phải lúc nào cũng nhìn quyết định của mình một cách khách quan.
+- **"Thưởng càng nhiều thì người ta càng thay đổi thái độ theo ý mình."** Thí nghiệm gốc thấy điều ngược lại: nhóm 20 đô-la không khác nhóm đối chứng về mặt thống kê, còn nhóm 1 đô-la thì khác. Theo lý thuyết, phần thưởng lớn cho người ta lý do để *không cần* đổi thái độ.
+- **"Tôi luôn nhìn nhận quyết định của mình một cách khách quan."** Chưa chắc. Trong đợt tái lập lớn năm 2024, thái độ của người viết bài trái quan điểm dịch về phía điều họ đã viết (xem các khung nhãn ở trên). Theo lý thuyết bất hòa, đó là dấu hiệu ta không phải lúc nào cũng nhìn điều mình đã làm một cách khách quan; lý thuyết tự tri giác giải thích khác, nên cơ chế còn tranh cãi.
 - **"Người cố chấp là người thiếu thông minh."** Ở một dạng gần (thiên kiến "bênh phía mình" khi đánh giá lập luận), Stanovich và West (2008) không thấy người có năng lực nhận thức cao ít thiên kiến hơn. Theo lý thuyết bất hòa, điều bị đe dọa là hình ảnh bản thân chứ không phải trí tuệ.
 
 Xem thêm các ngộ nhận khác ở trang [Ngộ nhận](/psyche/ngo-nhan/).
@@ -137,4 +136,4 @@ Xem thêm các ngộ nhận khác ở trang [Ngộ nhận](/psyche/ngo-nhan/).
 - Simon, L., Greenberg, J., & Brehm, J. (1995). Trivialization: The forgotten mode of dissonance reduction. *Journal of Personality and Social Psychology*, 68(2), 247–260. <https://doi.org/10.1037/0022-3514.68.2.247>
 - Stanovich, K. E., & West, R. F. (2008). On the failure of cognitive ability to predict myside and one-sided thinking biases. *Thinking & Reasoning*, 14(2), 129–167. <https://doi.org/10.1080/13546780701679764>
 - Vaidis, D. C., Sleegers, W. W. A., van Leeuwen, F., DeMarree, K. G., và cộng sự (2024). A multilab replication of the induced-compliance paradigm of cognitive dissonance. *Advances in Methods and Practices in Psychological Science*, 7(1), 25152459231213375. <https://doi.org/10.1177/25152459231213375>
-- Vaidis, D. C., và cộng sự (2024). When replication fails: What to conclude and not to conclude? *Advances in Methods and Practices in Psychological Science*, 7(3). <https://doi.org/10.1177/25152459241268197>
+- Sleegers, W. W. A., van Leeuwen, F., Ross, R. M., DeMarree, K. G., van Beest, I., và cộng sự (2024). When replication fails: What to conclude and not to conclude? *Advances in Methods and Practices in Psychological Science*, 7(4). <https://doi.org/10.1177/25152459241268197>

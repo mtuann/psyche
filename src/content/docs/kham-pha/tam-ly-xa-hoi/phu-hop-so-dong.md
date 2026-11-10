@@ -27,16 +27,18 @@ Các nhà tâm lý học gọi hiện tượng này là **sự phù hợp** (*co
 
 ## Nghiên cứu then chốt
 
-### Asch (1951, 1956): đường thẳng và nhóm "chim mồi"
+### Asch (1951, 1956): đường thẳng và nhóm "chim mồi" { #asch-1951-1956-nhung-duong-thang-va-bay-dien-vien }
 
 Trong thí nghiệm kinh điển của Solomon Asch, người tham gia so sánh độ dài đường thẳng trước một nhóm "chim mồi" đồng loạt nói sai; khoảng 37% câu trả lời hùa theo nhóm, và khoảng ba phần tư số người hùa theo ít nhất một lần ([Asch, 1956](https://doi.org/10.1037/h0093718)). Thiết kế, số liệu và các biến thể (quy mô nhóm, một người cùng phòng nói đúng) kể ở trang [thí nghiệm Asch](/psyche/thi-nghiem/asch/).
 
 ### Bond và Smith (1996): 133 nghiên cứu, 17 quốc gia
 
-Hơn bốn mươi năm sau, Rod Bond và Peter Smith gộp **133 nghiên cứu** dùng kiểu bài đo phán đoán đường thẳng theo Asch (gồm cả bản theo mô hình Asch và bản theo biến thể Crutchfield), thực hiện ở **17 quốc gia** ([Bond và Smith, 1996](https://doi.org/10.1037/0033-2909.119.1.111)). Hai phát hiện đáng chú ý:
+Khoảng bốn mươi năm sau, Rod Bond và Peter Smith gộp **133 nghiên cứu** dùng kiểu bài đo phán đoán đường thẳng theo Asch (gồm cả bản theo mô hình Asch và bản theo biến thể Crutchfield), thực hiện ở **17 quốc gia** ([Bond và Smith, 1996](https://doi.org/10.1037/0033-2909.119.1.111)). Hai phát hiện đáng chú ý:
 
 1. **Phù hợp ở Mỹ đã giảm** kể từ những năm 1950: trong các nghiên cứu ở Mỹ, mức phù hợp trong bài đo này thấp dần theo thời gian.
 2. **Các nước được xếp vào nhóm "cộng đồng" (collectivist) có mức phù hợp cao hơn** các nước "cá nhân" (individualist). Mối liên hệ này thấy ở cả ba cách đo văn hóa mà họ dùng. Ngoài văn hóa, quy mô nhóm cũng có liên hệ với mức phù hợp.
+
+## Mức độ chắc chắn
 
 :::vung-chac[một nhóm nhất trí có thể làm lệch phán đoán công khai, kể cả với bài toán rõ ràng]
 Hiệu ứng đã được lặp lại ở 133 nghiên cứu trong 17 nước (Bond và Smith, 1996) và trong một lần làm lại năm 2023 (Franzen và Mader). Mức hùa theo giảm dần theo thời gian và khác nhau giữa các nền văn hóa, nhưng vẫn còn. Nhóm nhất trí là điều kiện then chốt: khi một người cùng phòng nói đúng, áp lực sụt mạnh (xem trang thí nghiệm Asch).
@@ -57,8 +59,8 @@ Theo Deutsch và Gerard (1955), hai kiểu ảnh hưởng này thường xuất 
 
 ## Áp dụng vào đời sống
 
-- **Trong họp nhóm:** nếu bạn là người điều hành, đừng nêu ý kiến của mình trước rồi mới hỏi mọi người. Hãy để mọi người **viết ý kiến riêng ra giấy trước**, rồi mới thảo luận. Đây là gợi ý rút từ một biến thể của Asch, nơi trả lời bằng văn bản làm số lỗi giảm (mẫu chỉ 14 người; xem trang thí nghiệm Asch), chưa được kiểm trực tiếp trong các cuộc họp.
-- **Khi mua sắm theo review:** hàng nghìn đánh giá có sẵn là một dạng "ý kiến của số đông" mà bạn thấy trước khi tự đánh giá (phép loại suy với thí nghiệm Asch, không phải kết quả của chính thí nghiệm). Đọc thêm vài đánh giá thấp điểm giúp bạn có một góc nhìn khác.
+- **Trong họp nhóm:** nếu bạn là người điều hành, đừng nêu ý kiến của mình trước rồi mới hỏi mọi người. Hãy để mọi người **viết ý kiến riêng ra giấy trước**, rồi mới thảo luận. Đây là gợi ý rút từ một biến thể của Asch, nơi trả lời bằng văn bản làm số lỗi giảm còn khoảng một phần ba (mẫu chỉ 14 người, nên chính Asch nói chưa chứng minh được chênh lệch bằng thống kê; xem trang thí nghiệm Asch), chưa được kiểm trực tiếp trong các cuộc họp.
+- **Khi mua sắm theo review:** các đánh giá có sẵn là một dạng "ý kiến của số đông" mà bạn thấy trước khi tự đánh giá. Đây chỉ là phép loại suy với thí nghiệm Asch, không phải kết quả của chính thí nghiệm: Asch không thử đánh giá trực tuyến.
 - **Dạy trẻ dám nói khác:** khi một đứa trẻ nói ngược lại cả lớp mà đúng, hãy khen cụ thể việc *dám giữ ý kiến có lý do*. Trong biến thể của Asch, chỉ cần một người cùng phòng nói đúng là người tham gia hùa theo ít hơn nhiều (Asch, 1955).
 
 **Giới hạn.** Thí nghiệm của Asch dùng nam sinh viên đại học, trong phòng thí nghiệm, với bài toán so sánh đường thẳng. Khi bài toán mơ hồ hơn, mức làm theo cao hơn (Bond và Smith, 1996, các nghiên cứu ở Mỹ).
@@ -99,7 +101,7 @@ Xem thêm các ngộ nhận khác ở trang [Ngộ nhận](/psyche/ngo-nhan/).
 - Mức phù hợp ở Mỹ tăng lên kể từ những năm 1950.
 + Mức phù hợp ở Mỹ đã giảm kể từ những năm 1950.
 - Mức phù hợp ở Mỹ không thay đổi.
-> Đây là một phát hiện thú vị: hiệu ứng Asch không phải hằng số bất biến của con người, mà thay đổi theo thời đại.
+> Mức phù hợp đo bằng bài này không phải hằng số bất biến: trong các nghiên cứu ở Mỹ, nó thấp dần theo thời gian. Bond và Smith mô tả xu hướng này, không giải thích nguyên nhân.
 ? Vì sao mối liên hệ "văn hóa cộng đồng → phù hợp cao hơn" chỉ được gắn nhãn "Khá vững", không phải "Vững chắc"?
 - Vì Asch chưa bao giờ nghiên cứu văn hóa.
 + Vì đó là tương quan ở cấp quốc gia, không chứng minh văn hóa gây ra phù hợp.

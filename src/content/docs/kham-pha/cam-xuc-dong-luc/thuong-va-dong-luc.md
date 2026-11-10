@@ -108,7 +108,7 @@ Dùng thưởng cho việc cần hoàn thành (doanh số, deadline), và bảo 
 
 ## Ở Việt Nam và các nền văn hóa khác
 
-Các thí nghiệm gốc — Deci (1971), Lepper và cộng sự (1973) — đều thực hiện trên sinh viên đại học và trẻ mẫu giáo ở Mỹ; 128 nghiên cứu trong phân tích tổng hợp 1999 đều là thí nghiệm công bố bằng tiếng Anh trong các cơ sở dữ liệu PsycINFO và ERIC (1971 đến 8/1997), nên nhiều khả năng cũng chủ yếu đến từ phương Tây. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra trực tiếp hiệu ứng xói mòn trên người Việt Nam (tìm trên Crossref ngày 10/11/2026; chưa tìm Google Scholar hay tạp chí trong nước).
+Các thí nghiệm gốc — Deci (1971), Lepper và cộng sự (1973) — đều thực hiện trên sinh viên đại học và trẻ mẫu giáo ở Mỹ; 128 nghiên cứu trong phân tích tổng hợp 1999 lấy từ 94 bài báo đã công bố và 19 luận án tiến sĩ chưa công bố, tìm trong các cơ sở dữ liệu PsycINFO, ERIC, Current Contents (1971 đến 8/1997) và danh sách tham khảo của các bài trước, nên nhiều khả năng cũng chủ yếu đến từ phương Tây. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra trực tiếp hiệu ứng xói mòn trên người Việt Nam (tìm trên Crossref ngày 10/11/2026; chưa tìm Google Scholar hay tạp chí trong nước).
 
 Điều này đáng lưu ý vì cách thưởng – phạt trong giáo dục và gia đình ở Việt Nam có thể có những nét riêng, và chưa có bằng chứng trực tiếp nào cho thấy hiệu ứng diễn ra giống hệt hay khác đi trong bối cảnh đó. Mọi áp dụng trong bài này đều dựa trên bằng chứng phương Tây; độc giả nên coi đó là gợi ý để thử nghiệm trong chính gia đình, lớp học của mình thay vì quy tắc cứng.
 
@@ -136,7 +136,7 @@ Các thí nghiệm gốc — Deci (1971), Lepper và cộng sự (1973) — đ�
 - Thưởng bất ngờ sau khi làm xong việc.
 + Thưởng cụ thể, hứa trước, gắn với việc tham gia hoặc hoàn thành một nhiệm vụ thú vị.
 - Lời khen về sự tiến bộ.
-> Thưởng cụ thể hứa trước cho hiệu ứng xói mòn ổn định (d ≈ −0,28 đến −0,40). Thưởng bất ngờ gần như không có hiệu ứng, còn lời khen mang tính thông tin thì tăng hứng thú.
+> Thưởng cụ thể hứa trước gắn với việc tham gia (d = −0,40) hay hoàn thành (d = −0,36) xói mòn mạnh hơn thưởng gắn với việc làm tốt (d = −0,28). Thưởng bất ngờ gần như không có hiệu ứng, còn lời khen mang tính thông tin thì tăng hứng thú (d = +0,33).
 ? Vì sao nhóm trẻ được thưởng *bất ngờ* trong nghiên cứu của Lepper và cộng sự (1973) không bị giảm hứng thú vẽ?
 - Vì phần thưởng bất ngờ có giá trị nhỏ hơn.
 + Vì lúc vẽ trẻ không biết sẽ có thưởng, nên không suy luận "mình vẽ vì được thưởng".
