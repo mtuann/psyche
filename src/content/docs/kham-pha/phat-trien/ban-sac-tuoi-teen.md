@@ -27,7 +27,7 @@ Năm 1966, hai năm trước khi Erikson ra sách, **James Marcia** công bố m
 
 Hai trục có/không tạo thành 4 trạng thái bản sắc:
 
-| | Chưa cam kết | Đã cam kết |
+| Khám phá | Chưa cam kết | Đã cam kết |
 |---|---|---|
 | **Đang khám phá** | **Moratorium** — "đang thử": Linh thử vẽ, thử học y, thử tìm hiểu du học, nhưng chưa quyết. Theo Marcia, đây là trạng thái đang trong khủng hoảng, cam kết còn mơ hồ nhưng đang nỗ lực để cam kết. | **Achievement** — "đã chọn sau khi thử": Linh đã thử nhiều thứ và quyết định theo mỹ thuật, vì đó là lựa chọn của chính mình sau khi đã cân nhắc. |
 | **Không khám phá** | **Diffusion** — "chưa tìm, chưa chọn": Linh không thử gì cả, phó mặc "tới đâu hay tới đó", hoặc tránh né mọi quyết định. | **Foreclosure** — "chọn sẵn theo người khác": Linh thi y vì "bố mẹ đã quyết", chưa bao giờ thật sự cân nhắc lựa chọn khác. |

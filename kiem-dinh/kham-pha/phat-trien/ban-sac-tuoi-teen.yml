@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L3)
       review: Claude Opus 5.5 (agent review D6-L3, 10/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d6-l3-kiem-mau.yml), đạt, 10/11/2026
+  - so: 2
+    ngay: 2026-11-10
+    nhanh: moi/d6-l3
+    ma_bam: sha256:eb8b95db467ebcc63df14ba9f6d2a5ca1de3f809a68ed763d18939c38902fc08
+    nguoi:
+      luot_1: 'Claude Opus 5.5 (người gom D6-L3): chỉ thêm tên cột "Khám phá" vào ô tiêu đề rỗng của bảng trạng thái bản sắc, không có nhận định nào bị chạm'
+      luot_2: "không cần: tên cột không phải điều kiểm được bằng nguồn; các nhận định giữ kết quả lượt 2 của lần 1"
+      review: "Claude Opus 5.5 (người gom D6-L3): kiểm thử trình duyệt (axe) đạt sau khi sửa"
+      kiem_mau: chủ repo, kiểm mẫu D6-L3 (lần 1) đạt 10/11/2026; lần này chỉ đổi tên cột, trước khi đăng
 nguon:
   - id: marcia1966
     ten: 'Marcia (1966), J Pers Soc Psychol 3(5), 551–558: toàn văn (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
@@ -924,3 +933,10 @@ doi_chu:
   - cu: Mục Nguồn (không có OpenStax Lifespan Development)
     moi: thêm OpenStax (2024), Lifespan Development, mục 10.1
     ly_do: "Review D6-L3: nguồn mới dẫn ở mục Erikson."
+  - cu: "| | Chưa cam kết | Đã cam kết |"
+    moi: "| Khám phá | Chưa cam kết | Đã cam kết |"
+    ly_do: Ô tiêu đề cột đầu bỏ trống (axe empty-table-header, WCAG); tên cột nêu chiều của hàng.
+mo_khoa:
+  - ngay: 2026-11-10
+    nhanh: moi/d6-l3
+    ly_do: Bảng trạng thái bản sắc có ô tiêu đề cột đầu bỏ trống (axe empty-table-header); điền 'Khám phá'. Chưa lên main.
