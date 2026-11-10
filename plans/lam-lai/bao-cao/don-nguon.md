@@ -101,3 +101,10 @@ Bản ghi theo quy ước id; hồ sơ trang vẫn dùng id cũ, vì việc này
 
 - Claude Opus 5.5: dựng bản ghi, lượt 1, quyết chỗ lệch, phân loại, báo cáo.
 - Claude Sonnet 5.5, agent riêng: lượt 2 của 19 mục lệch.
+
+## Review, kiểm mẫu, khóa (09/11/2026)
+
+- Review: Claude Sonnet 5.5, agent riêng, mức Lớn. Đối chiếu tự động 76/76 bản ghi mới với Crossref, xem kỹ 16 bản ghi, xét mọi sửa và chỗ lệch; thử khóa 81 hồ sơ trên bản sao. Phải sửa: không có. Nên sửa: thêm "[sic]" sau "Datton" ở `szczucka2012` (chủ repo chọn, đã làm); chữ ghi chú nhắc `suomi1972` ở hồ sơ đã khóa `kiem-dinh/thi-nghiem/harlow.yml` sửa khi mở khóa trang ấy.
+- Kiểm mẫu: chủ repo, 5 nhận định ngẫu nhiên (`don-nguon-kiem-mau.yml`), đạt 09/11/2026.
+- Chủ repo quyết: chưa thêm `gantt1928` (DOI APA PsycBooks ghi nhà xuất bản khác bản trang dẫn).
+- Khóa 81 bản ghi (`#doi,loai,nam,noi_dang,tac_gia,ten`) bằng `tools/du_lieu/khoa-loat.mjs`. Tổng bản ghi đã khóa: 637. `staddon1971`, `stanczak2022` chưa có hồ sơ, chưa khóa.
