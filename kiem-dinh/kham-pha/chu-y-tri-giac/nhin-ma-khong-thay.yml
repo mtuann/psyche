@@ -5,13 +5,761 @@ tang: loi
 muc: V3
 lan:
   - so: 1
-    ngay: null
+    ngay: '2026-11-10'
     nhanh: moi/d5-l3
     ma_bam: null
     nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L3 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L3)
+      review: Claude Sonnet 5.5 (agent review D5-L3, 10/11/2026)
       kiem_mau: null
-nguon: []
-nhan_dinh: []
+nguon:
+  - id: simons1999
+    ten: 'Simons & Chabris (1999), Perception 28(9), 1059–1074: toàn văn (PDF, chabris.com; đọc lại ở review 10/11/2026)'
+    link: https://doi.org/10.1068/p281059
+    toan_van: true
+  - id: simons1998
+    ten: 'Simons & Levin (1998), Psychon Bull Rev 5(4), 644–649: toàn văn (PDF, Springer)'
+    link: https://doi.org/10.3758/BF03208840
+    toan_van: true
+  - id: simons2011
+    ten: 'Simons & Chabris (2011), PLoS ONE 6(8), e22757: toàn văn (PLOS, PDF; đọc lại ở review 10/11/2026)'
+    link: https://doi.org/10.1371/journal.pone.0022757
+    toan_van: true
+  - id: strayer2006
+    ten: 'Strayer, Drews & Crouch (2006), Hum Factors 48(2), 381–391: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus; đọc ở review 10/11/2026)'
+    link: https://doi.org/10.1518/001872006777724471
+    toan_van: true
+  - id: watson2010
+    ten: 'Watson & Strayer (2010), Psychon Bull Rev 17(4), 479–485: toàn văn (PDF, Springer)'
+    link: https://doi.org/10.3758/PBR.17.4.479
+    toan_van: true
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "inattentional blindness change blindness Vietnamese participants": sáu kết quả đầu không phải nghiên cứu mù không chú ý trên người Việt; thêm hồ sơ thi-nghiem/khi-dot-vo-hinh (30/10/2026: "inattentional blindness Vietnam", PubMed, Crossref: không có)'
+    link: https://api.openalex.org/works?search=inattentional%20blindness%20change%20blindness%20Vietnamese%20participants
+    toan_van: false
+  - id: ekelund2022
+    ten: "Ekelund và cộng sự (2022), Perception 51(2), 131–147: tóm tắt (Europe PMC, PMC8813586); phân tích tổng hợp 14 nghiên cứu (1.153 người) về chuyên môn và mù không chú ý; cùng căn cứ với trang nhà thi-nghiem/khi-dot-vo-hinh (đã khóa)"
+    link: https://doi.org/10.1177/03010066211072466
+    toan_van: false
+  - id: horrey2006
+    ten: "Horrey & Wickens (2006), Hum Factors 48(1), 196–205: tóm tắt (Europe PMC); phân tích tổng hợp 23 nghiên cứu về điện thoại và lái xe"
+    link: https://doi.org/10.1518/001872006776412135
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: Mù không chú ý được nêu trong Simons và Chabris (1999) và mù thay đổi trong Simons và Levin (1998).
+    loai: lich-su
+    nguon:
+      - simons1999
+      - simons1998
+    trich: Daniel J Simons, Christopher F Chabris, Perception, 1999, volume 28, pages 1059–1074
+    vi_tri: Simons 1999, trang đầu; Simons & Levin 1998
+    ket_qua: dung
+    ghi_chu: Mô tả (description). "Mù không chú ý" là thuật ngữ có từ trước (Mack và Rock 1998); trang chỉ gắn hai nghiên cứu với hai hiện tượng.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+  - id: n2
+    cau: 'Video bóng rổ: hai đội chuyền bóng nhanh, một đội áo trắng, một đội áo đen; nhiệm vụ đếm số lần chuyền của đội áo trắng.'
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: Each tape showed two teams of three players, one team wearing white shirts and the other wearing black shirts
+    vi_tri: Simons 1999, 2 Method
+    ket_qua: dung
+    ghi_chu: Mô tả tình huống của trang là bản tóm lược của video gốc; "rất nhanh" là mô tả của trang, không đếm.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+  - id: n3
+    cau: Trong video, người mặc đồ khỉ đột đi giữa sân, dừng lại, đấm ngực rồi đi ra.
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: the Gorilla walked from right to left into the live basketball-passing event, stopped in the middle of the players as the action continued all around it, turned to face the camera, thumped its chest, and then resumed walking across the screen
+    vi_tri: Simons 1999, mục Discussion (điều kiện bổ sung)
+    ket_qua: dung
+    ghi_chu: Cảnh đấm ngực thuộc điều kiện bổ sung (video 62 s); video điều kiện chính chỉ cho khỉ đột đi ngang (5 s).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+  - id: n4
+    cau: Khỉ đột ở trên màn hình nhiều giây liền, ngay giữa khung hình.
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: this action began after 35 s and lasted 9 s in a stimulus tape 62 s long
+    vi_tri: Simons 1999, Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nó ở trên màn hình suốt 9 giây" (trong thu-gon và quiz 1). 9 giây là của điều kiện bổ sung; điều kiện chính 5 giây (trang nhà ghi 5 giây). Chữ mới "nhiều giây liền". Review (Claude Sonnet 5.5, 10/11/2026): dung. Simons & Chabris 1999 (toàn văn): khỉ đột đi vào giữa trận, "stopped in the middle of the players…", 9 giây trong video bổ sung 62 giây (điều kiện chính ngắn hơn). Chữ trang "nhiều giây liền" đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+    review: dung
+  - id: n5
+    cau: Hầu hết mọi người đều tin chắc "làm sao mà không thấy được một con khỉ đột".
+    loai: phat-hien
+    nguon:
+      - simons2011
+    trich: 'Unexpected Events: 77.5% agreed that "people generally notice when something unexpected enters their field of view, even when they''re paying attention to something else."'
+    vi_tri: Simons & Chabris 2011, Results
+    ket_qua: da-lam-mem
+    ghi_chu: "Khảo sát hỏi niềm tin chung về vật bất ngờ, không hỏi riêng khỉ đột; \"hầu hết\" khớp 77,5%. Review (Claude Sonnet 5.5, 10/11/2026): dung. Simons & Chabris 2011 (toàn văn, Results): 77,5% đồng ý \"people generally notice when something unexpected enters their field of view, even when they're paying attention to something else\". Câu của trang là tóm tắt phổ thông (\"hầu hết… tin\"); khảo sát hỏi vật bất ngờ nói chung, không riêng khỉ đột."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n6
+    cau: Khoảng một nửa số người xem không thấy con khỉ đột (46% trong thí nghiệm chính; 50% ở bản đấm ngực), dù con khỉ đột đi ngay giữa màn hình suốt nhiều giây.
+    loai: so-lieu
+    nguon:
+      - simons1999
+    trich: Out of all 192 observers across all conditions, 54% noticed the unexpected event and 46% failed to notice the unexpected event
+    vi_tri: Simons 1999, Results; Discussion (50% ở điều kiện bổ sung)
+    ket_qua: dung
+    ghi_chu: 'Trang nhà ghi 46% trong 192 người (khỉ đột hoặc người cầm ô). Ở bản đấm ngực: "only 50% noticed the event". Trang này nói "khoảng một nửa", nhất quán với trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+  - id: n7
+    cau: Khi được hỏi trước, đa số người tin chắc rằng mình sẽ thấy (xem khảo sát ở mục Mức độ chắc chắn).
+    loai: phat-hien
+    nguon:
+      - simons2011
+    trich: unexpected objects generally grab attention (78%)
+    vi_tri: Tóm tắt Simons & Chabris 2011
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "trước khi xem, hầu hết họ cũng tin chắc như bạn rằng mình sẽ thấy" (người xem năm 1999 không được hỏi trước; theo G1-L03 #2). Chữ mới trỏ tới khảo sát 2009. Review (Claude Sonnet 5.5, 10/11/2026): dung. Như n5: 77,5% (làm tháng 6/2009, 1.500 người sau gia quyền). Chữ trang trỏ tới khảo sát, không nói người xem 1999 được hỏi trước.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: Con số 78% khớp. Không xác minh được ngày thực hiện (6/2009) từ tóm tắt.
+    review: dung
+  - id: n8
+    cau: 'Sự chú ý giống đèn pin hơn camera an ninh: một chùm sáng hẹp soi rõ một vùng nhỏ, những gì ngoài chùm sáng có thể đi qua mà ta không hay biết.'
+    loai: dinh-nghia
+    nguon:
+      - simons1999
+    trich: we perceive and remember only those objects and details that receive focused attention
+    vi_tri: Tóm tắt Simons 1999
+    ket_qua: da-lam-mem
+    ghi_chu: 'Ẩn dụ của trang; nguồn nói ta chỉ nhận thức và nhớ những vật nhận được chú ý tập trung. Chữ giữ vì có "có thể". Review (Claude Sonnet 5.5, 10/11/2026): dung. Ẩn dụ đèn pin có "có thể"; Simons 1999: "we perceive and remember only those objects and details that receive focused attention".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n9
+    cau: Mù không chú ý (inattentional blindness) là không thấy một vật hoàn toàn nhìn thấy được, chỉ vì chú ý đang bận ở chỗ khác.
+    loai: dinh-nghia
+    nguon:
+      - simons1999
+    trich: without attention, we may not even perceive objects (`inattentional blindness')
+    vi_tri: Tóm tắt Simons 1999
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+  - id: n10
+    cau: 'Mù không chú ý khác với "không nhìn": vật lạ đi qua ngay vùng bạn đang nhìn, nhưng bạn không nhận ra nó vì chú ý đang dồn cho việc đếm bóng.'
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: Objects can pass through the spatial extent of attentional focus (and the fovea) and still not be 'seen' if they are not specifically being attended.
+    vi_tri: Simons 1999, Discussion (v)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "mắt bạn vẫn hướng về phía con khỉ đột, ánh sáng từ nó vẫn vào võng mạc — nhưng não không ''đăng ký'' nó, vì toàn bộ ''ngân sách'' chú ý đã dồn cho việc đếm bóng." Bài gốc không đo hướng nhìn của mắt (không có eye tracking); chữ mới chỉ nói vật đi qua vùng đang nhìn. Quiz 1 giải thích sửa tương ứng. Review (Claude Sonnet 5.5, 10/11/2026): dung. Simons 1999 (toàn văn), Discussion: vật có thể đi qua vùng chú ý và cả hố mắt mà vẫn không được "thấy"; chữ trang không nói về hướng nhìn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+    review: dung
+  - id: n11
+    cau: 'Simons và Chabris dựng lại một ý tưởng cũ của Ulric Neisser bằng video hiện đại: hai đội chuyền bóng rổ, người xem đếm số lần chuyền của một đội, giữa video có người mặc đồ khỉ đột đi ngang.'
+    loai: lich-su
+    nguon:
+      - simons1999
+    trich: The actions of the players, and this unexpected event, were designed to mimic the stimuli used by Neisser and colleagues.
+    vi_tri: Simons 1999, 2.2 Materials
+    ket_qua: da-lam-mem
+    ghi_chu: 'Trang này nay chỉ tóm một câu và link về trang nhà thi-nghiem/khi-dot-vo-hinh (đã khóa). Chữ cũ có cả đoạn kể chi tiết; đã rút gọn, bỏ chi tiết về độ khó nhiệm vụ, tỉ lệ một phần ba và câu "Tôi bỏ lỡ cái đó á?!" (đã có ở trang nhà hay không cần). Review (Claude Sonnet 5.5, 10/11/2026): dung. Simons 1999 (toàn văn), 2.2 Materials: các hành động được dựng "to mimic the stimuli used by Neisser and colleagues". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+    review: dung
+  - id: n12
+    cau: Trong thí nghiệm nổi tiếng nhất về mù không chú ý, khoảng một nửa số người xem mải đếm đường chuyền bóng không thấy người mặc đồ khỉ đột đi ngang qua.
+    loai: so-lieu
+    nguon:
+      - simons1999
+    trich: 46% failed to notice the unexpected event
+    vi_tri: Simons 1999, Results
+    ket_qua: dung
+    ghi_chu: Tóm một câu, không thêm số, khớp trang nhà (46%, "khoảng một nửa").
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059" ]
+    luot_2_ghi_chu: "Đọc toàn văn PDF (Perception 1999). Chú ý: 46% là tỉ lệ không thấy ở mọi điều kiện (khỉ đột lẫn người cầm ô), không riêng khỉ đột."
+  - id: n13
+    cau: Thiết kế và kết quả đầy đủ của thí nghiệm con khỉ đột ở trang "Con khỉ đột đi giữa sân mà không ai thấy".
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: thi-nghiem/khi-dot-vo-hinh có trong src/data/trang.yml, tiêu đề "Con khỉ đột đi giữa sân mà không ai thấy (Mù không chú ý)"; link /psyche/thi-nghiem/khi-dot-vo-hinh/. Review (Claude Sonnet 5.5, 10/11/2026): dung. thi-nghiem/khi-dot-vo-hinh có trong src/data/trang.yml và đã khóa (khoa.json); tiêu đề "Con khỉ đột đi giữa sân mà không ai thấy (Mù không chú ý)"; link `/psyche/thi-nghiem/khi-dot-vo-hinh/` đúng.'
+    review: dung
+  - id: n14
+    cau: Mù thay đổi (change blindness) là không nhận ra một thay đổi lớn, vì ta không lưu chi tiết của cảnh vật như tưởng.
+    loai: dinh-nghia
+    nguon:
+      - simons1999
+      - simons1998
+    trich: we often do not detect large changes to objects and scenes (`change blindness')
+    vi_tri: Tóm tắt Simons 1999
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ khẳng định "vì não không hề lưu chi tiết…"; nguồn: "We apparently do not retain a detailed visual representation of our surroundings from one view to the next". Giữ chữ, vì tác giả dùng "apparently"; trang đã đặt trong định nghĩa. Review (Claude Sonnet 5.5, 10/11/2026): dung. Simons 1999 và Simons & Levin 1998: "we often do not detect large changes… We apparently do not retain a detailed visual representation"; chữ trang là định nghĩa, có hedge qua "như ta tưởng".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+    review: dung
+  - id: n15
+    cau: 'Simons và Levin làm thí nghiệm ngoài đời thật: một người của nhóm nghiên cứu chặn người đi đường ở sân trường Cornell để hỏi đường; đang nói chuyện, hai người khiêng một cánh cửa gỗ đi ngang che khuất tầm nhìn khoảng một giây.'
+    loai: phat-hien
+    nguon:
+      - simons1998
+    trich: The door blocked the pedestrian's view for approximately 1 sec
+    vi_tri: Simons & Levin 1998, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+  - id: n16
+    cau: Trong lúc đó, người hỏi đường lẩn ra sau cánh cửa và một trong hai người khiêng cửa ở lại, tiếp tục hỏi đường như không có gì xảy ra.
+    loai: phat-hien
+    nguon:
+      - simons1998
+    trich: As the door passed, the first experimenter grabbed the back of the door, and the experimenter who had been carrying that part of the door stayed behind and continued to ask for directions
+    vi_tri: Simons & Levin 1998, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+  - id: n17
+    cau: Hai người đàn ông mặc đồ khác nhau, cao chênh nhau khoảng 5 cm, giọng nói khác nhau.
+    loai: so-lieu
+    nguon:
+      - simons1998
+    trich: The two experimenters wore different clothing and differed in height by approximately 5 cm. Their voices were also clearly distinguishable.
+    vi_tri: Simons & Levin 1998, Method
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+  - id: n18
+    cau: Khoảng một nửa số người được hỏi (8 trên 15 người) không nhận ra mình đang nói chuyện với một người hoàn toàn khác.
+    loai: so-lieu
+    nguon:
+      - simons1998
+    trich: only 7 of the 15 pedestrians reported noticing the change of experimenters
+    vi_tri: Simons & Levin 1998, Results
+    ket_qua: dung
+    ghi_chu: '7 trên 15 nhận ra nên 8 trên 15 không nhận ra. Theo G1-L03: KHỚP.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+  - id: n19
+    cau: Trong biến thể sau, hai người đàn ông hóa trang thành công nhân xây dựng và chỉ chặn các sinh viên trẻ — nhóm trước đó luôn phát hiện ra sự tráo đổi; lần này chỉ 4 trên 12 người nhận ra.
+    loai: so-lieu
+    nguon:
+      - simons1998
+    trich: only 4 of the 12 pedestrians in Experiment 2 reported noticing the change
+    vi_tri: Simons & Levin 1998, Experiment 2
+    ket_qua: dung
+    ghi_chu: '"the group that had always detected the change in Experiment 1". Theo G1-L03: KHỚP.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+  - id: n20
+    cau: 'Giả thuyết của các tác giả: ta mã hóa chi tiết của những người ta coi là "cùng nhóm" với mình, còn với người ta xếp vào loại "người lạ chung chung", não chỉ ghi lại một cái nhãn.'
+    loai: phat-hien
+    nguon:
+      - simons1998
+    trich: we hypothesize that the younger subjects considered themselves members of the same social group as the experimenters and older subjects considered the experimenters to be members of an out-group
+    vi_tri: Simons & Levin 1998, trước Experiment 2
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Cách giải thích: ta mã hóa chi tiết…". Chữ mới: "Giả thuyết của các tác giả". Lý do: bài gốc nêu "hypothesize". Review (Claude Sonnet 5.5, 10/11/2026): dung. Simons & Levin 1998: "we hypothesize that the younger subjects considered themselves members of the same social group…". Chữ "Giả thuyết của các tác giả" đúng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+    review: dung
+  - id: n21
+    cau: Mù thay đổi là không nhận ra một thay đổi lớn, vì não không lưu chi tiết của cảnh vật như ta tưởng (câu cuối mục).
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: We apparently do not retain a detailed visual representation of our surroundings from one view to the next
+    vi_tri: Simons 1999, Discussion
+    ket_qua: da-lam-mem
+    ghi_chu: 'Nhắc lại n14; "apparently". Review (Claude Sonnet 5.5, 10/11/2026): dung. Như n14: Simons 1999 "We apparently do not retain…". Chữ trang dùng "như ta tưởng" (không nói chắc cơ chế).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+    review: dung
+  - id: n22
+    cau: 'Vững chắc: chú ý tập trung vào một việc có thể khiến ta bỏ lỡ vật hiển nhiên khác.'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - simons1999
+      - ekelund2022
+    ly_do: 'Cùng nhãn ở trang nhà thi-nghiem/khi-dot-vo-hinh (đã khóa; căn cứ ở đó: Simons và Chabris 1999, Ekelund 2022 phân tích tổng hợp 14 nghiên cứu, Drew 2013, Hyman 2010, Chabris 2011, Nobre 2020); trang này chỉ dẫn lại, không thêm căn cứ.'
+    nguon:
+      - simons1999
+      - ekelund2022
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đã được tìm thấy với nhiều loại nhiệm vụ, nhiều loại ''vật lạ'', trong phòng thí nghiệm lẫn ngoài đời. Hiệu ứng con khỉ đột là một trong những phát hiện được lặp lại nhiều nhất của tâm lý học nhận thức." ("được lặp lại nhiều nhất" không có nguồn). Chữ mới khớp trang nhà và link về nhà. Chỗ khó: co_so là hồ sơ trang nhà, không phải nguồn đã mở ở đây; Simons 1999 mở được xác nhận video và màn hình đơn giản. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Vững chắc đạt thước đo theo căn cứ của trang nhà đã khóa (kiem-dinh/thi-nghiem/khi-dot-vo-hinh n31): phân tích tổng hợp Ekelund 2022 (14 nghiên cứu, 1.153 người: 62% người mới và 56% chuyên gia bị mù không chú ý), nhiều thí nghiệm cùng chiều ở nhiều bối cảnh (Simons 1999: 46% trong 192 người; Hyman 2010; Chabris 2011; Drew 2013); không có thất bại tái lập lớn. Trang này chỉ dẫn lại. Đọc lại Ekelund (tóm tắt Europe PMC): khớp. Ranh giới: Ekelund đo chuyên môn, không phải "có hiện tượng hay không", nên căn cứ chính vẫn là thí nghiệm gốc cộng với các lặp lại; chủ repo duyệt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n23
+    cau: 'Khá vững: ta đánh giá quá cao khả năng "thấy hết" của mình.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - simons2011
+      - simons1999
+    ly_do: Một khảo sát đại diện dân số Mỹ (1.500 người; 77,5% đồng ý rằng người ta thường nhận ra vật bất ngờ) đi ngược với kết quả thí nghiệm mù không chú ý; nhưng chỉ một khảo sát ở một nước, chưa tái lập hay tổng hợp.
+    nguon:
+      - simons2011
+      - simons1999
+    ket_qua: da-sua
+    ghi_chu: 'Nhãn cũ: Vững chắc. Hạ Khá vững: Vững chắc cần phân tích tổng hợp hay hai tái lập lớn cùng chiều (chuẩn mục 4); khảo sát này là một nghiên cứu ở một nước. Chữ khung thêm câu giới hạn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững hợp lý: một khảo sát đại diện (Simons & Chabris 2011: 1.500 người sau gia quyền, 77,5%; chuyên gia 81% không đồng ý) đi ngược thí nghiệm; chưa tái lập hay tổng hợp; chỉ ở Mỹ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n24
+    cau: Trong khảo sát đại diện dân số Mỹ (làm tháng 6/2009, công bố 2011), 78% người đồng ý rằng người ta thường nhận ra vật bất ngờ xuất hiện trong tầm nhìn, ngay cả khi đang chú ý vào việc khác.
+    loai: so-lieu
+    nguon:
+      - simons2011
+    trich: We hired SurveyUSA to poll a nationally representative sample of the United States population during a one-week period in June 2009
+    vi_tri: Simons & Chabris 2011, Methods; tóm tắt (78%)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trong khảo sát đại diện dân số Mỹ năm 2011" (2011 là năm công bố). Theo G1-L03 #1. Toàn văn: 77,5% đồng ý, mẫu 1.500 người. Review (Claude Sonnet 5.5, 10/11/2026): dung. Simons & Chabris 2011 (toàn văn): "poll a nationally representative sample of the United States population during a one-week period in June 2009"; 77,5% (trang làm tròn 78%, như tóm tắt). Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: Con số 78% khớp. Không xác minh được ngày thực hiện (6/2009) từ tóm tắt.
+    review: dung
+  - id: n25
+    cau: Trong thí nghiệm, kết quả cho thấy điều ngược lại với niềm tin của 78% người Mỹ.
+    loai: phat-hien
+    nguon:
+      - simons1999
+      - simons2011
+    trich: it appears that observers are more likely to notice an unexpected event that shares basic visual features... approximately half of observers fail to notice
+    vi_tri: Simons 1999, Discussion (i)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: Con số 78% khớp. Không xác minh được ngày thực hiện (6/2009) từ tóm tắt.
+  - id: n26
+    cau: Niềm tin phổ biến này đi ngược với bằng chứng từ các thí nghiệm mù không chú ý, và có thể khiến ta chủ quan.
+    loai: loi-khuyen
+    nguon:
+      - simons2011
+    trich: The surprise people express ... reflects incorrect underlying beliefs about the completeness of visual encoding, the richness of visual representations, and the exhaustiveness of visual awareness
+    vi_tri: Simons & Chabris 2011, Introduction
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "và nó nguy hiểm vì khiến ta chủ quan." Bài gốc không nói "nguy hiểm"; chữ mới: "có thể khiến ta chủ quan" (suy luận). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chữ trang đã mềm ("có thể khiến ta chủ quan", suy luận).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n27
+    cau: 'Khá vững: mù thay đổi với người thật ngoài đời.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - simons1998
+      - simons1999
+    ly_do: Thí nghiệm cánh cửa (15 người đi đường) rất ấn tượng nhưng mẫu nhỏ; Simons 1999 cho thấy mù thay đổi là tính chất chung của thị giác với cảnh tự nhiên ("change blindness is a general property of the visual system"); chưa có tái lập lớn của thí nghiệm cánh cửa trong nguồn đã mở.
+    nguon:
+      - simons1998
+      - simons1999
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: nhãn Khá vững hợp lý; mẫu nhỏ 15 người đã ghi trên trang. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Khá vững hợp lý: một thí nghiệm ngoài đời, mẫu nhỏ (15), cùng chiều với Simons 1999 (mù thay đổi là tính chất chung); chưa có tái lập lớn ngoài đời.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n28
+    cau: Thí nghiệm cánh cửa có mẫu nhỏ (15 người đi đường trong thí nghiệm đầu).
+    loai: so-lieu
+    nguon:
+      - simons1998
+    trich: A total of 15 pedestrians were approached on the campus of Cornell University.
+    vi_tri: Simons & Levin 1998, Method
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+  - id: n29
+    cau: Kết quả cánh cửa phù hợp với nhiều nghiên cứu mù thay đổi trong phòng thí nghiệm.
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: This change blindness for natural scenes has been extended to a number of other paradigms.
+    vi_tri: Simons 1999, Discussion
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: Đọc toàn văn PDF (gwern.net). Cửa che khoảng 1 s; 15 người đi đường; thí nghiệm 2 toàn sinh viên, nhóm thí nghiệm 1 luôn phát hiện.
+  - id: n30
+    cau: 'Ba cách giải thích thường được nêu: chú ý là tài nguyên có hạn; ta thấy những gì ta chờ đợi; cảm giác "thấy hết" có thể là ảo giác.'
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: The Umbrella Woman was noticed more often than the Gorilla ... suggesting that the Umbrella Woman was either a more visually salient event than the Gorilla, more consistent with observers' expectations about situations involving basketballs, more semantically similar to the attended events, or all three.
+    vi_tri: Simons 1999, Results
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Vì sao não ''tiết kiệm'' đến vậy? Ba ý tưởng chính:". Chữ mới: ba cách giải thích thường được nêu, chưa được đo trực tiếp ở các thí nghiệm của trang. Chỗ khó: ý "kỳ vọng" chỉ là một trong ba cách giải thích Simons nêu cho khác biệt giữa người cầm ô và khỉ đột. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ba cách giải thích thường được nêu, trang đã ghi chưa cách nào được đo trực tiếp trong các thí nghiệm kể trên; Simons 1999 đưa ra các giải thích về độ nổi bật, kỳ vọng, giống về ngữ nghĩa; "thấy hết là ảo giác" là mở bài của Simons 1999 ("We feel that we perceive and remember everything…").'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n31
+    cau: 'Chú ý là tài nguyên có hạn: việc đếm bóng chiếm gần hết "băng thông", nên con khỉ đột có thể chỉ được xử lý ở mức sơ sài.'
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: The level of inattentional blindness depends on the difficulty of the primary task
+    vi_tri: Simons 1999, Discussion (iii)
+    ket_qua: da-sua
+    ghi_chu: 'Mức bỏ lỡ tăng khi nhiệm vụ khó hơn (Easy 64%, Hard 45% nhận ra). "Xử lý ở mức sơ sài" là diễn giải của trang, nguồn chưa khẳng định; chỗ khó: lượt 2. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "…nên con khỉ đột bị xử lý ở mức sơ sài…" Chữ mới: "…nên con khỉ đột có thể chỉ được xử lý ở mức sơ sài…". Lý do: nguồn chỉ nói mức mù không chú ý phụ thuộc độ khó nhiệm vụ; mức xử lý vật không được chú ý còn tranh luận (Nobre 2020: tổng quan hệ thống và phân tích tổng hợp 59 thí nghiệm thấy kích thích không chú ý, không báo cáo vẫn có thể được xử lý ngầm), nên không nói chắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: sai
+  - id: n32
+    cau: Cảm giác "thấy hết" có thể vượt xa lượng chi tiết thật sự được lưu lại; thí nghiệm cánh cửa cho thấy ta có thể không nhận ra người đối diện bị đổi.
+    loai: phat-hien
+    nguon:
+      - simons1999
+      - simons1998
+    trich: We feel that we perceive and remember everything around us ... The richness of our visual experience leads us to believe that our visual representations will include and preserve the same amount of detail
+    vi_tri: Simons 1999, trang đầu
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ta không nhận ra mình đang ''tự bịa'' phần lớn khung cảnh, cho đến khi thí nghiệm cánh cửa chứng minh điều đó." ("tự bịa", "chứng minh" quá mạnh). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chữ trang có "có thể"; khớp mở bài Simons 1999 (cảm giác thấy và nhớ mọi thứ) và thí nghiệm cánh cửa (không nhận ra người bị đổi).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n33
+    cau: Vừa lái xe vừa nói chuyện điện thoại làm phản ứng phanh chậm hơn và gặp nhiều tai nạn mô phỏng hơn, cả điện thoại cầm tay và rảnh tay.
+    loai: phat-hien
+    nguon:
+      - strayer2006
+    trich: When drivers were conversing on either a handheld or hands-free cell phone, their braking reactions were delayed and they were involved in more traffic accidents than when they were not conversing on a cell phone.
+    vi_tri: Tóm tắt Strayer 2006
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+  - id: n34
+    cau: Mức suy giảm khi lái xe nói chuyện điện thoại có thể nghiêm trọng như khi lái xe say ở nồng độ cồn 0,08% (ngưỡng giới hạn theo luật ở Mỹ).
+    loai: phat-hien
+    nguon:
+      - strayer2006
+    trich: the impairments associated with using a cell phone while driving can be as profound as those associated with driving while drunk
+    vi_tri: Tóm tắt Strayer 2006
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "bị suy giảm ngang với người lái xe khi say ở mức vi phạm pháp luật"; chữ mới theo "can be as profound". Quiz 4 và ngộ nhận sửa tương ứng. Review (Claude Sonnet 5.5, 10/11/2026): dung. Strayer, Drews & Crouch 2006 (toàn văn, Conclusion): "the impairments associated with using a cell phone while driving can be as profound as those associated with driving while drunk"; BAC 0,08% w/v. Khớp. Lưu ý: kiểu suy giảm khác nhau (rượu: lái hung hăng hơn; điện thoại: phản ứng phanh chậm); trang chỉ nói "có thể nghiêm trọng như".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+    review: dung
+  - id: n35
+    cau: Cả điện thoại cầm tay và rảnh tay đều gây suy giảm như nhau (trong mô phỏng).
+    loai: phat-hien
+    nguon:
+      - strayer2006
+    trich: When drivers were conversing on either a handheld or hands-free cell phone, their braking reactions were delayed
+    vi_tri: Tóm tắt Strayer 2006
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "điện thoại rảnh tay cũng gây xao lãng như cầm tay — vì vấn đề nằm ở cuộc trò chuyện chiếm mất chú ý, không phải ở bàn tay bận." Bỏ vế "vì…" (cơ chế không có trong tóm tắt). "Như nhau" theo G1: KHỚP; chỗ khó: tóm tắt không đo "như nhau", chỉ nói cả hai gây chậm phanh; lượt 2 xem. Review (Claude Sonnet 5.5, 10/11/2026): dung. Strayer 2006 (toàn văn): "no significant differences in the impairments caused by these two modes (all ps > .25)" nên "như nhau" khớp; 40 người, mô phỏng. Chữ trang có "(trong mô phỏng)".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+    review: dung
+  - id: n36
+    cau: 'Khá vững: đang lái xe thì đừng nghe điện thoại, kể cả rảnh tay.'
+    loai: nhan
+    nhan: kha-vung
+    co_so:
+      - strayer2006
+      - horrey2006
+    ly_do: Một thí nghiệm mô phỏng lái xe (Strayer 2006) thấy phản ứng phanh chậm hơn và nhiều tai nạn mô phỏng hơn ở cả hai kiểu điện thoại; chưa mở phân tích tổng hợp hay thí nghiệm ngoài đường.
+    nguon:
+      - strayer2006
+      - horrey2006
+    ket_qua: da-sua
+    ghi_chu: 'Nhãn cũ: Vững chắc (chip). Hạ Khá vững vì căn cứ đã mở chỉ là một thí nghiệm mô phỏng. Chỗ khó: có tổng quan lớn về điện thoại và lái xe chưa mở; lượt 2 xem có đủ Vững chắc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Strayer 2006 (40 người, mô phỏng) và phân tích tổng hợp Horrey & Wickens 2006 (23 nghiên cứu: chi phí rõ rệt cho phản ứng với sự kiện bên ngoài, điện thoại rảnh tay không loại bỏ chi phí). Nhãn Khá vững hợp lý cho lời khuyên (chưa có tái lập đăng ký trước; bằng chứng chủ yếu mô phỏng và thí nghiệm); thêm Horrey & Wickens vào cơ sở.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+    review: dung
+  - id: n37
+    cau: 'Một quy tắc đơn giản phù hợp với bằng chứng này: đang lái xe thì đừng nghe điện thoại, kể cả rảnh tay.'
+    loai: loi-khuyen
+    nguon:
+      - strayer2006
+      - horrey2006
+    trich: the impairments associated with using a cell phone while driving can be as profound as those associated with driving while drunk
+    vi_tri: Tóm tắt Strayer 2006
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ở Việt Nam, với mật độ xe máy dày đặc và đường đông, một giây nhìn mà không thấy có thể là khoảng cách giữa an toàn và tai nạn. Quy tắc đơn giản nhất cũng là quy tắc được bằng chứng ủng hộ nhất…" Bỏ câu về Việt Nam (không nguồn), "ủng hộ nhất" thành "phù hợp với bằng chứng này". Review (Claude Sonnet 5.5, 10/11/2026): dung. Strayer 2006 (toàn văn): "clearly the safest course of action is to not use a cell phone while driving". Khớp, lời khuyên đúng chừng mực.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+    review: dung
+  - id: n38
+    cau: Trong nhà máy, công trường hay phòng mổ, giao một người vừa làm việc chính vừa "để mắt" thêm một việc là sự đảm bảo hão; quy trình an toàn tốt tách vai trò quan sát khỏi thao tác.
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ mục "2. An toàn lao động và y tế" khỏi trang: không có nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã bỏ; kiểm trang: không còn mục "An toàn lao động và y tế" hay câu về công trường, phòng mổ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n39
+    cau: Khi kiểm tra bài thi, soát hợp đồng, tìm chìa khóa lúc vội, khả năng "nhìn mà không thấy" là rất thật; làm một việc một lúc, kiểm tra hai lượt độc lập cách nhau một quãng nghỉ.
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ mục "3. Đừng tin tuyệt đối vào ''tôi đã nhìn kỹ rồi''" khỏi trang: lời khuyên không có nguồn đã mở. Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã bỏ; kiểm trang: không còn mục "Đừng tin tuyệt đối vào tôi đã nhìn kỹ rồi" hay câu về bài thi, hợp đồng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n40
+    cau: Các thí nghiệm dùng tình huống được dàn dựng; các thí nghiệm này không cho biết điều gì xảy ra khi vật lạ thật sự nguy hiểm; mù không chú ý không có nghĩa ta mù hoàn toàn, mà có nghĩa chú ý có thể hẹp hơn ta tưởng.
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: In each of our videotapes, the unexpected object more than once crossed the path of the basketball
+    vi_tri: Simons 1999, Discussion
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ngoài đời, khi vật lạ nguy hiểm thật sự (tiếng còi xe, vật bay về phía mặt), các hệ thống cảnh báo sớm của não vẫn hoạt động." (không nguồn). Đã thay bằng câu nói về giới hạn của thí nghiệm. Review (Claude Sonnet 5.5, 10/11/2026): dung. Giới hạn do trang tự nêu; Simons 1999: vật lạ lặp lại đi ngang trong video dàn dựng. Không có khẳng định cần nguồn thêm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n41
+    cau: Các thí nghiệm gốc đều làm ở Mỹ, với người Mỹ; tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu mù không chú ý hay mù thay đổi nào thực hiện với người Việt.
+    loai: thoi-su
+    nguon:
+      - simons1999
+      - simons1998
+      - tim-kiem-vn
+    trich: Department of Psychology, Harvard University; A total of 15 pedestrians were approached on the campus of Cornell University.
+    vi_tri: Simons 1999, trang tiêu đề; Simons & Levin 1998, Method
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'OpenAlex 10/11/2026 và hồ sơ trang nhà (30/10/2026): không có. Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Thời sự có mốc "11/2026", `het_han` 2028-11-01. Tự tìm lại Europe PMC ngày 10/11/2026: ("inattentional blindness" OR "change blindness") AND (Vietnam OR Vietnamese): không có nghiên cứu mù không chú ý ở người Việt (kết quả đầu không liên quan). Thí nghiệm gốc: Simons & Levin (Cornell), Simons & Chabris (Harvard; "almost all undergraduates"); đã đọc toàn văn Simons 1999.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(%22inattentional%20blindness%22%20OR%20%22change%20blindness%22)%20AND%20(Vietnam%20OR%20Vietnamese)&format=json" ]
+    luot_2_ghi_chu: "Tìm Europe PMC ngày 10/11/2026 (OpenAlex hết hạn mức): không có nghiên cứu mù không chú ý/mù thay đổi ở người Việt. Thí nghiệm gốc: Harvard và Cornell. n42 là câu 'chưa có bằng chứng', đúng với những gì tìm được."
+    review: dung
+  - id: n42
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy bằng chứng nào cho thấy một nền văn hóa miễn nhiễm với mù không chú ý; các thí nghiệm gốc đều ở Mỹ.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Điều chắc chắn từ bằng chứng hiện có: không có nền văn hóa nào miễn nhiễm với mù không chú ý." (G1: không có nguồn; câu tuyệt đối). Chữ mới: chưa có bằng chứng về nền văn hóa miễn nhiễm, dựa trên lần tìm 10/11/2026. Đã bỏ cả đoạn suy luận về giao thông Việt Nam (không nguồn). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Chưa có bằng chứng nào cho thấy một nền văn hóa nào miễn nhiễm với mù không chú ý (các thí nghiệm gốc đều ở Mỹ)." Chữ mới: "Tính đến 11/2026, chúng tôi chưa tìm thấy bằng chứng nào cho thấy một nền văn hóa miễn nhiễm với mù không chú ý; các thí nghiệm gốc đều ở Mỹ." Lý do: khẳng định thời sự phải có mốc ngay ở câu. Tìm Europe PMC 10/11/2026: có nghiên cứu mù không chú ý ở trẻ Trung Quốc (Zhang 2026, tóm tắt không nêu tỉ lệ) và so sánh đa văn hóa phát hiện thay đổi (Miller 2025: khác biệt không được lặp lại nhất quán); không thấy nơi nào nói một nền văn hóa miễn nhiễm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(%22inattentional%20blindness%22%20OR%20%22change%20blindness%22)%20AND%20(Vietnam%20OR%20Vietnamese)&format=json" ]
+    luot_2_ghi_chu: "Tìm Europe PMC ngày 10/11/2026 (OpenAlex hết hạn mức): không có nghiên cứu mù không chú ý/mù thay đổi ở người Việt. Thí nghiệm gốc: Harvard và Cornell. n42 là câu 'chưa có bằng chứng', đúng với những gì tìm được."
+    review: sai
+  - id: n43
+    cau: 'Đã bị bác bỏ: "Mắt tôi vẫn nhìn đường nên vừa lái xe vừa nghe điện thoại không sao." (ngộ nhận).'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - strayer2006
+      - horrey2006
+    ly_do: 'Thí nghiệm mô phỏng Strayer 2006: cả điện thoại cầm tay và rảnh tay làm phản ứng phanh chậm hơn và nhiều tai nạn mô phỏng hơn. Chỉ một nguồn đã mở; chưa có tổng quan.'
+    nguon:
+      - strayer2006
+      - horrey2006
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "suy giảm tương đương lái xe khi say, và điện thoại rảnh tay cũng nguy hiểm như cầm tay." Chỗ khó: Đã bị bác bỏ cần các kiểm tra đủ mạnh liên tục thất bại; chỉ một thí nghiệm mô phỏng mở được: lượt 2 và review cân nhắc đổi nhãn hay thêm nguồn. Chữ trang đã làm mềm. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Đã bị bác bỏ giữ cho ý "mắt vẫn nhìn đường nên không sao": Strayer 2006 (40 người, phanh chậm hơn, 3 tai nạn mô phỏng so với 0; cả cầm tay lẫn rảnh tay) và phân tích tổng hợp Horrey & Wickens 2006 (23 nghiên cứu, rảnh tay không loại bỏ chi phí). Thêm Horrey & Wickens vào cơ sở; có hai nguồn cùng chiều, một tổng hợp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+    review: dung
+  - id: n44
+    cau: Với đa số người, làm hai việc đòi hỏi chú ý cùng lúc thì kém hơn làm riêng từng việc.
+    loai: phat-hien
+    nguon:
+      - watson2010
+    trich: Whereas the vast majority of participants showed significant performance decrements in dual-task conditions
+    vi_tri: Tóm tắt Watson & Strayer 2010
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chú ý là tài nguyên có hạn; đa nhiệm chỉ là chuyển đổi nhanh giữa các việc, mỗi lần chuyển đều tốn chi phí." (cơ chế "chỉ là chuyển đổi nhanh" không có nguồn đã mở ở trang này; bài Đa nhiệm có phần riêng). Review (Claude Sonnet 5.5, 10/11/2026): dung. Watson & Strayer 2010 (toàn văn lượt 1): "the vast majority of participants showed significant performance decrements in dual-task conditions". Khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+    review: dung
+  - id: n45
+    cau: 'Ngộ nhận: "Nếu có chuyện lạ xảy ra ngay trước mắt, chắc chắn tôi sẽ thấy." 78% người Mỹ tin như vậy, và khoảng một nửa số người trong thí nghiệm con khỉ đột đã cho thấy điều ngược lại với chính mình.'
+    loai: phat-hien
+    nguon:
+      - simons2011
+      - simons1999
+    trich: unexpected objects generally grab attention (78%)
+    vi_tri: Tóm tắt Simons & Chabris 2011; Simons 1999, Results
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "đã chứng minh điều ngược lại". Review (Claude Sonnet 5.5, 10/11/2026): dung. 78% (Simons & Chabris 2011) và "khoảng một nửa" (46% trong 192 người; Simons 1999). Chữ trang mềm.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: Con số 78% khớp. Không xác minh được ngày thực hiện (6/2009) từ tóm tắt.
+    review: dung
+  - id: n46
+    cau: 'Quiz 1: người xem không thấy khỉ đột vì chú ý dồn vào việc đếm bóng, không còn đủ để đăng ký vật lạ; khỉ đột đi qua ngay vùng đang nhìn, nhiều giây liền; đây là định nghĩa của mù không chú ý.'
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: Objects can pass through the spatial extent of attentional focus (and the fovea) and still not be 'seen' if they are not specifically being attended.
+    vi_tri: Simons 1999, Discussion (v)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Mắt vẫn hướng về phía con khỉ đột và ánh sáng vẫn vào võng mạc. Vấn đề nằm ở khâu xử lý của não: không có chú ý thì không có nhận thức về vật đó." Đã bỏ phần về mắt (n10), "dù ở giữa màn hình 9 giây" thành "nhiều giây" (n4). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ (câu hỏi quiz 1): "…dù nó ở ngay giữa màn hình 9 giây?" Chữ mới: "…dù nó ở ngay giữa màn hình nhiều giây?" Lý do: hồ sơ n4 đã đổi "9 giây" thành "nhiều giây" nhưng câu hỏi quiz còn sót; 9 giây chỉ ở video bổ sung (62 giây), điều kiện chính ngắn hơn (Simons 1999).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: sai
+  - id: n47
+    cau: 'Quiz 2: thí nghiệm cánh cửa cho thấy ngay cả khi nhìn thẳng và nói chuyện với một người, ta vẫn có thể không nhận ra người đó bị đổi thành người khác; thí nghiệm khỉ đột dùng vật xuất hiện bất ngờ; đây là mù thay đổi.'
+    loai: phat-hien
+    nguon:
+      - simons1998
+    trich: Only half of the pedestrians detected the change.
+    vi_tri: Tóm tắt Simons & Levin 1998
+    ket_qua: dung
+    ghi_chu: 'Theo G1-L03: KHỚP.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+  - id: n48
+    cau: 'Quiz 3: 78% người Mỹ đồng ý (khảo sát Simons & Chabris 2011); niềm tin này có thể khiến ta chủ quan, tin rằng sẽ tự động thấy nguy hiểm nên vừa lái xe vừa làm việc khác.'
+    loai: phat-hien
+    nguon:
+      - simons2011
+    trich: unexpected objects generally grab attention (78%)
+    vi_tri: Tóm tắt Simons & Chabris 2011
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Vì nó khiến ta chủ quan"; thêm "có thể". Khoảng cách giữa ta tưởng và thực sự thấy "có thể khiến ta chủ quan trong những việc cần chú ý" (cũ: "chính là nơi tai nạn xảy ra"). Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp n24, n26; đáp án có "có thể".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: Con số 78% khớp. Không xác minh được ngày thực hiện (6/2009) từ tóm tắt.
+    review: dung
+  - id: n49
+    cau: 'Quiz 4: theo Strayer, Drews và Crouch (2006), điện thoại rảnh tay cũng gây suy giảm như cầm tay, và mức suy giảm có thể nghiêm trọng như lái xe khi say ở nồng độ cồn 0,08%.'
+    loai: phat-hien
+    nguon:
+      - strayer2006
+    trich: the impairments associated with using a cell phone while driving can be as profound as those associated with driving while drunk
+    vi_tri: Tóm tắt Strayer 2006
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "suy giảm tương đương lái xe khi say ở ngưỡng vi phạm"; lời giải thích cũ "Vấn đề nằm ở cuộc trò chuyện chiếm mất chú ý, không phải ở việc tay có bận hay không. Đây là áp dụng trực tiếp của mù không chú ý vào đời sống." (cơ chế không có trong tóm tắt) đã thay. Review (Claude Sonnet 5.5, 10/11/2026): dung. Strayer 2006 (toàn văn): cầm tay và rảnh tay không khác nhau về mức suy giảm (p > 0,25); "as profound as" khớp. Giải thích quiz không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1518/001872006777724471", "https://doi.org/10.1016/j.aap.2008.01.009" ]
+    luot_2_ghi_chu: Có phân tích tổng hợp, nên nhãn 'Khá vững' không cao hơn thước đo (có thể cao hơn).
+    review: dung
+  - id: n50
+    cau: 'Quiz 5: tình huống tìm chìa khóa lúc vội rồi tìm lại thì thấy ngay: có thể là một dạng "nhìn mà không thấy", nhưng chỉ là một cách giải thích có thể; chưa thể kết luận.'
+    loai: phat-hien
+    nguon:
+      - simons1999
+    trich: Our results suggest that the likelihood of noticing an unexpected object depends on the similarity of that object to other objects in the display and on how difficult the priming monitoring task is.
+    vi_tri: Tóm tắt Simons 1999
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: đáp án "Lúc vội, chú ý của bạn bị chiếm bởi sự lo lắng và việc khác, nên mắt ''quét'' qua mà não không đăng ký." và lời giải thích "Đây là phiên bản đời thường của mù không chú ý. Cách khắc phục: dừng lại, hít thở…" (lời khuyên không nguồn). Đã thay bằng "có thể là" và bỏ lời khuyên. Hai lựa chọn nhiễu ("chìa khóa tự di chuyển", "trí nhớ có vấn đề nghiêm trọng") là phương án nhiễu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu hỏi giả định (tìm chìa khóa) ghi `gia-dinh`; đáp án đúng nói "có thể là" và nêu chưa kết luận; không trái nhận định nào.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.3758/BF03208840" ]
+    luot_2_ghi_chu: "Nhận định tổng quát/lời khuyên/giải thích phù hợp các nguồn trên. n22 'Vững chắc': nhiều lần lặp độc lập nhưng tôi không tìm được phân tích tổng hợp chính thức; người review cân nhắc. n38, n39 là lời khuyên suy ra, không có thử nghiệm trực tiếp."
+    review: dung
+  - id: n51
+    cau: 'Chân trang "Đọc thêm": liên kết tới "Mắt thấy có phải là thật?" và "Giữa bữa tiệc ồn ào, sao bạn vẫn nghe thấy tên mình?"; và liên kết tới trang Ngộ nhận.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: kham-pha/chu-y-tri-giac/ao-giac-thi-giac, nghe-chon-loc, ngo-nhan/index đều có trong src/data/trang.yml. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ba trang (ao-giac-thi-giac, nghe-chon-loc cùng lô; ngo-nhan/index) có trong src/data/trang.yml; tiêu đề khớp; ngo-nhan chưa dựng nên link thành "sắp có" tới khi lên.'
+    review: dung
+  - id: n52
+    cau: 'Mục Nguồn: Simons & Chabris (1999), Perception 28(9), 1059–1074; Simons & Levin (1998), Psychon Bull Rev 5(4), 644–649; Simons & Chabris (2011), PLoS ONE 6(8), e22757; Strayer, Drews & Crouch (2006), Hum Factors 48(2), 381–391; Watson & Strayer (2010), Psychon Bull Rev 17(4), 479–485 (thông tin sách báo).'
+    loai: lich-su
+    nguon:
+      - simons1999
+      - simons1998
+      - simons2011
+      - strayer2006
+      - watson2010
+    ket_qua: dung
+    ghi_chu: Đối chiếu tên bài, tạp chí, tập, trang với bản PDF (Simons 1999, 1998, 2011, Watson) và OpenAlex (Strayer). Mô tả trong ngoặc của Nguồn ("8/15 người đi đường không nhận ra", "78%") khớp n18, n24.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1068/p281059", "https://doi.org/10.3758/BF03208840", "https://doi.org/10.1371/journal.pone.0022757", "https://doi.org/10.1518/001872006777724471" ]
+    luot_2_ghi_chu: Tập, trang, năm của Perception 28(9) 1059–1074, PBR 5(4) 644–649, PLoS ONE 6(8) e22757, Hum Factors 48(2) 381–391 khớp. Watson & Strayer 2010 chưa mở.
+doi_chu:
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: '"Nó ở trên màn hình suốt 9 giây"; quiz 1: "ngay giữa màn hình 9 giây"'
+    moi: '"…nhiều giây liền"; "…suốt nhiều giây"'
+    ly_do: Hồ sơ n4.
+  - cu: '"mắt bạn vẫn hướng về phía con khỉ đột, ánh sáng từ nó vẫn vào võng mạc — nhưng não không ''đăng ký'' nó…"; quiz 1 giải thích tương ứng'
+    moi: '"vật lạ đi qua ngay vùng bạn đang nhìn, nhưng bạn không nhận ra nó vì chú ý đang dồn cho việc đếm bóng."'
+    ly_do: Hồ sơ n10, n46.
+  - cu: Mục Simons và Chabris (1999) (hai đoạn kể chi tiết thiết kế, độ khó, tỉ lệ một phần ba, câu "Tôi bỏ lỡ cái đó á?!")
+    moi: Một câu tóm kết quả + link về trang nhà /psyche/thi-nghiem/khi-dot-vo-hinh/
+    ly_do: 'Hồ sơ n11–n13: nghiên cứu đã có trang nhà (kế hoạch: nơi khác tóm một câu).'
+  - cu: '"Cách giải thích: ta mã hóa chi tiết…"'
+    moi: '"Giả thuyết của các tác giả: ta mã hóa chi tiết…"'
+    ly_do: Hồ sơ n20.
+  - cu: 'Khung Vững chắc: "…lặp lại nhiều nhất của tâm lý học nhận thức."'
+    moi: '"…nhiều thiết kế khác nhau… chi tiết ở trang Con khỉ đột đi giữa sân…"'
+    ly_do: Hồ sơ n22.
+  - cu: Khung "ta đánh giá quá cao khả năng thấy hết" nhãn Vững chắc; "nguy hiểm vì khiến ta chủ quan"
+    moi: Nhãn Khá vững; "có thể khiến ta chủ quan. Nhãn dừng ở khá vững vì…"
+    ly_do: Hồ sơ n23, n26.
+  - cu: '"…khảo sát đại diện dân số Mỹ (làm năm 2009, công bố năm 2011)"'
+    moi: '(giữ; đã sửa ở trang cũ theo G1-L03 #1)'
+    ly_do: Hồ sơ n24 (ghi lại để hồ sơ đủ).
+  - cu: '"Vì sao não ''tiết kiệm'' đến vậy? Ba ý tưởng chính:"; "Ta không nhận ra mình đang ''tự bịa''… chứng minh"; "Cảm giác ''thấy hết'' là một ảo giác… bản dựng… trí tưởng tượng"'
+    moi: '"Ba cách giải thích thường được nêu (chưa cách nào được đo trực tiếp…)"; "có thể vượt xa lượng chi tiết thật sự được lưu lại"; "có thể là một ảo giác… chỉ những chi tiết nhận được chú ý mới chắc chắn được lưu lại."'
+    ly_do: Hồ sơ n30, n32.
+  - cu: 'Áp dụng 1: "bị suy giảm ngang với người lái xe khi say ở mức vi phạm pháp luật… vì vấn đề nằm ở cuộc trò chuyện…"; "Ở Việt Nam, với mật độ xe máy dày đặc…"; nhãn Vững chắc'
+    moi: '"có thể nghiêm trọng như khi lái xe say ở nồng độ cồn 0,08% (ngưỡng giới hạn theo luật ở Mỹ)"; bỏ vế "vì…" và câu về Việt Nam; nhãn Khá vững'
+    ly_do: Hồ sơ n34–n37.
+  - cu: Mục áp dụng 2 và 3 (An toàn lao động và y tế; Đừng tin tuyệt đối vào "tôi đã nhìn kỹ rồi")
+    moi: (bỏ)
+    ly_do: Hồ sơ n38, n39.
+  - cu: 'Giới hạn: "…các hệ thống cảnh báo sớm của não vẫn hoạt động. Mù không chú ý không có nghĩa ta mù hoàn toàn — mà có nghĩa chú ý hẹp hơn ta tưởng rất nhiều."'
+    moi: '"Các thí nghiệm này không cho biết điều gì xảy ra khi vật lạ thật sự nguy hiểm… chú ý có thể hẹp hơn ta tưởng."'
+    ly_do: Hồ sơ n40.
+  - cu: 'Mục Việt Nam: "Chúng tôi chưa tìm thấy…"; đoạn "Có một điểm đáng suy ngẫm cho giao thông Việt Nam…"; "Điều chắc chắn…: không có nền văn hóa nào miễn nhiễm…"'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy…"; bỏ đoạn giao thông; "Chưa có bằng chứng nào cho thấy một nền văn hóa nào miễn nhiễm…"'
+    ly_do: Hồ sơ n41, n42.
+  - cu: 'Ngộ nhận: "Chú ý là tài nguyên có hạn; đa nhiệm chỉ là chuyển đổi nhanh…"; "…đã chứng minh điều ngược lại…"; "suy giảm tương đương lái xe khi say, và điện thoại rảnh tay cũng nguy hiểm như cầm tay"'
+    moi: '"Với đa số người, làm hai việc đòi hỏi chú ý cùng lúc thì kém hơn… (Watson và Strayer, 2010)"; "…đã cho thấy điều ngược lại…"; "suy giảm có thể nghiêm trọng như lái xe khi say, và điện thoại rảnh tay cũng gây suy giảm như cầm tay"'
+    ly_do: Hồ sơ n43–n45. Thêm Watson & Strayer (2010) vào mục Nguồn.
+  - cu: 'Quiz 3, 4, 5: "Vì nó khiến ta chủ quan"; "tương đương lái xe khi say ở ngưỡng vi phạm"; lời giải thích "Vấn đề nằm ở cuộc trò chuyện…"; đáp án và giải thích tìm chìa khóa'
+    moi: '"có thể khiến ta chủ quan"; "có thể nghiêm trọng như lái xe khi say ở nồng độ cồn 0,08%"; "Cả hai kiểu điện thoại đều làm phản ứng phanh chậm hơn…"; "Có thể là một dạng ''nhìn mà không thấy''… Đây chỉ là một cách giải thích có thể…"'
+    ly_do: Hồ sơ n48–n50.
+  - cu: 'Quiz 1: "…dù nó ở ngay giữa màn hình 9 giây?"'
+    moi: '"…dù nó ở ngay giữa màn hình nhiều giây?"'
+    ly_do: Review n46.
+  - cu: 'Lý thuyết 1: "…nên con khỉ đột bị xử lý ở mức sơ sài:"'
+    moi: '"…nên con khỉ đột có thể chỉ được xử lý ở mức sơ sài:"'
+    ly_do: Review n31.
+  - cu: 'Ở Việt Nam: "Chưa có bằng chứng nào cho thấy một nền văn hóa nào miễn nhiễm với mù không chú ý (các thí nghiệm gốc đều ở Mỹ)."'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy bằng chứng nào cho thấy một nền văn hóa miễn nhiễm với mù không chú ý; các thí nghiệm gốc đều ở Mỹ."'
+    ly_do: Review n42.

@@ -5,13 +5,840 @@ tang: loi
 muc: V3
 lan:
   - so: 1
-    ngay: null
+    ngay: '2026-11-10'
     nhanh: moi/d5-l3
     ma_bam: null
     nguoi:
-      luot_1: null
-      luot_2: null
-      review: null
+      luot_1: Claude Sonnet 5.5 (agent lượt 1, D5-L3 phần 1/2)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L3)
+      review: Claude Sonnet 5.5 (agent review D5-L3, 10/11/2026)
       kiem_mau: null
-nguon: []
-nhan_dinh: []
+nguon:
+  - id: segall1963
+    ten: 'Segall, Campbell & Herskovits (1963), Science 139(3556), 769–771: tóm tắt (OpenAlex); toàn văn Science và sách 1966 không mở được'
+    link: https://doi.org/10.1126/science.139.3556.769
+    toan_van: false
+  - id: henrich2010
+    ten: 'Henrich, Heine & Norenzayan (2010), Behav Brain Sci 33(2–3), 61–83: toàn văn (PDF, UBC); mục Müller-Lyer mô tả Segall và cộng sự (1966)'
+    link: https://doi.org/10.1017/S0140525X0999152X
+    toan_van: true
+  - id: vdk2013
+    ten: 'van der Kamp, Withagen & de Wit (2013), Atten Percept Psychophys 75(5), 1027–1038: toàn văn (PDF, Springer)'
+    link: https://doi.org/10.3758/s13414-013-0458-5
+    toan_van: true
+  - id: wiki-ml
+    ten: 'Wikipedia, "Müller-Lyer illusion" (nguồn bậc ba, đọc ngày 10/11/2026; chỉ dùng cho điều bài gốc không mở được: năm 1889, các cách giải thích, Howe và Purves)'
+    link: https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion
+    toan_van: false
+  - id: wiki-eb
+    ten: Wikipedia, "Ebbinghaus illusion" (nguồn bậc ba, đọc ngày 10/11/2026)
+    link: https://en.wikipedia.org/wiki/Ebbinghaus_illusion
+    toan_van: false
+  - id: tim-kiem-vn
+    ten: 'Tìm trên OpenAlex (10/11/2026): "Muller-Lyer illusion Vietnamese", "visual illusion susceptibility Vietnam": không có nghiên cứu đo ảo giác thị giác ở người Việt trong sáu kết quả đầu mỗi truy vấn'
+    link: https://api.openalex.org/works?search=Muller-Lyer%20illusion%20Vietnamese
+    toan_van: false
+  - id: amir2026
+    ten: 'Amir & Firestone (2026), Psychol Rev 133(5), 1082–1108: toàn văn (bản chấp nhận đăng "In Press" trên OSF/PsyArXiv, đọc ở review 10/11/2026); siêu dữ liệu khớp Crossref và Europe PMC'
+    link: https://doi.org/10.1037/rev0000549
+    toan_van: true
+  - id: bruno2009
+    ten: "Bruno & Franz (2009), Neuropsychologia 47(6), 1421–1433: tóm tắt (Europe PMC); tổng quan định lượng 18 nghiên cứu"
+    link: https://doi.org/10.1016/j.neuropsychologia.2008.10.031
+    toan_van: false
+  - id: chen2025
+    ten: "Chen và cộng sự (2025), Eye Brain 17, 115–124: tóm tắt (Europe PMC)"
+    link: https://doi.org/10.2147/EB.S533112
+    toan_van: false
+  - id: lin2023
+    ten: "Lin và cộng sự (2023), Front Psychol 14, 1278554: tóm tắt (Europe PMC)"
+    link: https://doi.org/10.3389/fpsyg.2023.1278554
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: Ảo giác Müller-Lyer và vòng tròn Ebbinghaus, các cách lý giải cơ chế, và nghiên cứu kinh điển cho rằng người phương Tây dễ bị ảo giác Müller-Lyer hơn nhiều nền văn hóa khác, một kết luận nay đang bị phản biện (mô tả của trang).
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - segall1963
+      - amir2026
+    trich: American undergraduates anchoring the extreme end of the distribution
+    vi_tri: Henrich 2010, mục Müller-Lyer, Hình 2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "người phương Tây dễ bị ''lừa'' hơn nhiều nền văn hóa khác" (nói chung cho mọi ảo giác, trong khi ảo giác ngang–dọc đảo chiều). Chữ mới chỉ nói Müller-Lyer. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "…và phát hiện rằng người phương Tây dễ bị ảo giác Müller-Lyer hơn nhiều nền văn hóa khác." Chữ mới: "…và nghiên cứu kinh điển cho rằng người phương Tây dễ bị ảo giác Müller-Lyer hơn nhiều nền văn hóa khác, một kết luận nay đang bị phản biện." Lý do: Amir & Firestone (Psychol Rev 2026) xem lại dữ liệu và thấy bằng chứng về khác biệt văn hóa không nhất quán; mô tả không được nói như phát hiện chắc.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
+    review: sai
+  - id: n2
+    cau: Đoạn A `>-------<` và đoạn B `<------->` dài bằng nhau, nhưng đoạn A (cánh xòe ra ngoài) trông dài hơn.
+    loai: phat-hien
+    nguon:
+      - wiki-ml
+      - amir2026
+    trich: The line segment forming the shaft of the arrow with two tails is perceived to be longer
+    vi_tri: Wikipedia, mục mô tả (nguồn bậc ba)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đoạn B dài hơn" (B là dạng đầu mũi tên `<--->`, trông ngắn hơn). Chữ mới: đoạn A trông dài hơn. Lý do: đoạn có cánh xòe ra ngoài (tails) trông dài hơn. Ghi lại bản vẽ chữ trong trang: A là `>-------<` (cánh xòe ra). Review (Claude Sonnet 5.5, 10/11/2026): dung. Amir & Firestone 2026, mục 2.1: Müller-Lyer (1889) thấy đoạn kết thúc bằng góc tù (cánh xòe ra) trông dài hơn đoạn kết thúc bằng góc nhọn (đầu mũi tên); khớp chữ trang và bản vẽ chữ (A là cánh xòe). Wikipedia chỉ còn là nguồn phụ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n3
+    cau: Đồng xu giữa vòng đồng xu to trông nhỏ hơn đồng xu giống hệt giữa vòng đồng xu nhỏ, dù chúng bằng nhau (ví dụ minh họa vòng tròn Ebbinghaus).
+    loai: phat-hien
+    nguon:
+      - wiki-eb
+      - amir2026
+    trich: The central circle surrounded by large circles looks smaller than the one surrounded by small circles.
+    vi_tri: Wikipedia, mục mô tả
+    ket_qua: dung
+    ghi_chu: "Ví dụ đồng xu là minh họa của trang (gia-dinh); hiệu ứng khớp mô tả Ebbinghaus. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ví dụ đồng xu là minh họa (gia-dinh) cho hiệu ứng Ebbinghaus; Amir & Firestone 2026 mô tả đúng hiệu ứng: vòng tròn giữa các vòng lớn trông nhỏ hơn khi giữa các vòng nhỏ."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n4
+    cau: Bạn "thấy sai" dù mắt hoàn toàn khỏe (người có thị lực bình thường vẫn bị ảo giác hình học).
+    loai: phat-hien
+    nguon:
+      - segall1963
+      - henrich2010
+      - chen2025
+    trich: Many subjects perceive line "b" as longer than line "a".
+    vi_tri: Henrich 2010, chú thích Hình 1
+    ket_qua: dung
+    ghi_chu: 'Hình 1 của Henrich: "The lines labeled a and b are the same length. Many subjects perceive line b as longer than line a." Mức bị ảo giác khác nhau giữa xã hội (n19–n21). Review (Claude Sonnet 5.5, 10/11/2026): dung. Chen và cộng sự 2025 (tóm tắt): cường độ ảo giác không đổi khi giảm thị lực nhẹ (4,33% so với 3,75%, p = 0,141) nên "thấy sai dù mắt khỏe" khớp; Henrich 2010 Hình 1 cho phần còn lại.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC12414450/" ]
+    luot_2_ghi_chu: Ảo giác không do mắt kém; khác nhau theo tuổi nên 'ai cũng như nhau' sai. Phần 'biết rồi vẫn thấy' là tính chất kinh điển (không thể hóa được bằng kiến thức), không mở nguồn riêng.
+    review: dung
+  - id: n5
+    cau: Ngay cả khi đã đo bằng thước và biết chắc hai đoạn bằng nhau, nhìn lại ta thường vẫn thấy chúng khác nhau; kiến thức thường không "sửa" ngay được cảm giác.
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - wiki-ml
+      - amir2026
+    trich: its prominent role as Fodor's indisputable example of "cognitive impenetrability"
+    vi_tri: 'Henrich 2010, mục Müller-Lyer; Wikipedia (Day: "you don''t change the perception of illusions very much with experience")'
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Kiến thức không ''sửa'' được cảm giác. Điều đó gợi ý rằng phần xử lý này diễn ra trước khi lý trí kịp can thiệp — và nó tuân theo những ''mẹo'' mà não đã học". Chữ mới: "thường", bỏ phần suy diễn về thứ tự xử lý, chỉ nói ảo giác từng được nêu làm ví dụ về xử lý ít chịu ảnh hưởng của niềm tin. Lý do: van der Kamp 2013 thấy sai lệch với hình Judd có thể thay đổi sau luyện tập có phản hồi; "kiến thức" khác "luyện tập có phản hồi" nhưng nguồn không cho phép nói chắc. Review (Claude Sonnet 5.5, 10/11/2026): dung. Fodor (1983, tr. 66), trích trong Amir & Firestone 2026: người đã thấy hai đoạn được đo bằng nhau vẫn thấy đoạn này dài hơn đoạn kia. Chữ trang đã mềm ("thường").'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC12414450/" ]
+    luot_2_ghi_chu: Ảo giác không do mắt kém; khác nhau theo tuổi nên 'ai cũng như nhau' sai. Phần 'biết rồi vẫn thấy' là tính chất kinh điển (không thể hóa được bằng kiến thức), không mở nguồn riêng.
+    review: dung
+  - id: n6
+    cau: 'Thị giác là quá trình dựng lại: não dùng kinh nghiệm và ngữ cảnh để đoán xem ngoài kia có gì; các "mẹo" này đúng trong hầu hết đời sống nhưng với một số hình thiết kế đặc biệt thì đoán sai một cách có hệ thống.'
+    loai: dinh-nghia
+    nguon:
+      - segall1963
+    trich: The pattern of response differences suggests the existence of different habits of perceptual inference which relate to cultural and ecological factors in the visual environment.
+    vi_tri: Tóm tắt Segall 1963
+    ket_qua: dung
+    ghi_chu: 'Cách diễn đạt phổ thông của "suy luận tri giác" (perceptual inference); nguồn nói về thói quen suy luận tri giác gắn với môi trường. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu mô tả chung (suy luận tri giác); khớp trích Segall 1963 và cách Amir & Firestone 2026 mô tả quan điểm của Gregory (thị giác diễn giải hình 2D như vật 3D).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n7
+    cau: Ảo giác Müller-Lyer được mô tả năm 1889.
+    loai: lich-su
+    nguon:
+      - wiki-ml
+      - amir2026
+    trich: Franz Carl Müller-Lyer, a German sociologist, devised the illusion in 1889.
+    vi_tri: Wikipedia (nguồn bậc ba)
+    ket_qua: dung
+    ghi_chu: 'Chỉ có nguồn bậc ba; lượt 2 có thể đối chiếu Müller-Lyer (1889). Review (Claude Sonnet 5.5, 10/11/2026): dung. Amir & Firestone 2026, mục 2.1: "In 1889, the German sociologist Franz Carl Müller-Lyer noted…". Có nguồn bậc 1–2, không chỉ Wikipedia.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n8
+    cau: Müller-Lyer là hai đoạn thẳng bằng nhau, một đoạn có hai "cánh" xòe ra ngoài ở hai đầu, đoạn kia có hai "cánh" khép vào; đoạn có cánh xòe ra trông dài hơn.
+    loai: dinh-nghia
+    nguon:
+      - wiki-ml
+      - henrich2010
+      - amir2026
+    trich: The line segment forming the shaft of the arrow with two tails is perceived to be longer
+    vi_tri: Wikipedia; Henrich 2010 Hình 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một đoạn có ''mũi tên chĩa ra'' ở hai đầu, đoạn kia có ''mũi tên chĩa vào''. Đoạn chĩa ra trông dài hơn." (mơ hồ, dễ đọc ngược). Chữ mới mô tả bằng "cánh xòe ra" (tails) và "đầu mũi tên". Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp mô tả của Amir & Firestone 2026 (góc tù/góc nhọn ở đầu mút) và Henrich 2010 Hình 1.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n9
+    cau: Vòng tròn Ebbinghaus còn gọi là vòng tròn Titchener; vòng tròn giữa các vòng tròn to trông nhỏ hơn vòng tròn y hệt giữa các vòng tròn nhỏ.
+    loai: lich-su
+    nguon:
+      - wiki-eb
+      - amir2026
+    trich: Edward B. Titchener popularized it in the English-speaking world in a 1901 psychology textbook
+    vi_tri: Wikipedia (nguồn bậc ba)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Titchener phổ biến hình này trong sách giáo khoa tiếng Anh năm 1901, nên gọi "vòng tròn Titchener"; chỉ có Wikipedia là nguồn đọc được cho tên gọi (bậc ba), phần hiệu ứng thì Amir & Firestone 2026 xác nhận. Giữ vì là câu lịch sử ít rủi ro; lượt sau nên thêm nguồn bậc 1.'
+  - id: n10
+    cau: Ảo giác Ebbinghaus cho thấy ngữ cảnh bóp méo cảm nhận kích thước.
+    loai: phat-hien
+    nguon:
+      - wiki-eb
+      - amir2026
+    trich: This is a relative-size effect driven by context.
+    vi_tri: Wikipedia
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ảo giác này được dùng nhiều trong nghiên cứu vì nó cho thấy ngữ cảnh bóp méo…" ("được dùng nhiều" không có nguồn); đã bỏ vế ấy. Review (Claude Sonnet 5.5, 10/11/2026): dung. Amir & Firestone 2026: vòng tròn giữa các vòng lớn trông nhỏ hơn khi giữa các vòng nhỏ; chữ trang đã bỏ vế "được dùng nhiều".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n11
+    cau: Marshall Segall, Donald Campbell và Melville Herskovits so sánh mức độ bị ảo giác hình học ở nhiều xã hội khác nhau.
+    loai: lich-su
+    nguon:
+      - segall1963
+      - amir2026
+    trich: Data from 15 societies are presented showing substantial intersocietal differences of two types in susceptibility to geometric optical illusions.
+    vi_tri: Tóm tắt Segall 1963
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Từ đầu những năm 1960, nhà tâm lý học Marshall Segall cùng … gửi một bộ hình vẽ … cho các cộng sự là nhà nhân học khắp thế giới." Chữ mới bỏ chi tiết về thời điểm, nghề nghiệp và cách gửi hình, vì tóm tắt không nói và toàn văn không mở được. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp tóm tắt Segall 1963 (15 xã hội, khác biệt lớn). Amir & Firestone 2026 mô tả Segall dẫn dự án sáu năm, gần 2.000 người ở 16 nền văn hóa trong chuyên khảo 1966, nên câu trang ("nhiều xã hội") không sai.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
+    review: dung
+  - id: n12
+    cau: Dữ liệu được công bố trên Science năm 1963 (15 xã hội) và trong sách The Influence of Culture on Visual Perception (1966).
+    loai: lich-su
+    nguon:
+      - segall1963
+      - henrich2010
+      - amir2026
+    trich: Data from 15 societies are presented
+    vi_tri: 'Tóm tắt Segall 1963; Henrich 2010 trích Segall 1966 (Hình 2: 16 xã hội)'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ gộp "15 xã hội" cho cả hai. Henrich 2010 vẽ lại dữ liệu sách 1966 với 16 xã hội, nên "15" chỉ gắn với bài báo 1963. Review (Claude Sonnet 5.5, 10/11/2026): dung. Science 1963 (15 xã hội) và sách 1966 (chuyên khảo; Amir & Firestone ghi 16 nền văn hóa): chữ trang khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
+    review: dung
+  - id: n13
+    cau: Người ở các xã hội ấy được đo mức độ bị ảo giác Müller-Lyer và một số ảo giác khác.
+    loai: phat-hien
+    nguon:
+      - segall1963
+      - henrich2010
+    trich: it was also found for the Sander-Parallelogram and both Horizontal-Vertical illusions
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
+    review: dung
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp Henrich 2010 (Müller-Lyer, Sander, hai ảo giác ngang–dọc) và tóm tắt Segall 1963."
+  - id: n14
+    cau: Người Mỹ (sinh viên đại học) và nhóm người gốc châu Âu ở Johannesburg dễ bị ảo giác Müller-Lyer nhất.
+    loai: so-lieu
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: American undergraduates anchoring the extreme end of the distribution, followed by the South African-European sample from Johannesburg
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Người Mỹ và châu Âu dễ bị ảo giác Müller-Lyer nhất." Chữ mới theo Henrich: sinh viên Mỹ, rồi nhóm gốc Âu ở Johannesburg. Review (Claude Sonnet 5.5, 10/11/2026): dung. Mở lại: Henrich 2010 nêu sinh viên Mỹ đứng đầu, rồi nhóm gốc Âu ở Johannesburg; Amir & Firestone 2026 xác nhận sinh viên Evanston bị ảo giác mạnh và người "gốc Âu" bị nhiều hơn "không phải gốc Âu". Đây là kết quả được báo cáo (nay có phản biện); trang đã đặt câu trong mục "Kết quả được báo cáo".'
+    luot_2: dung
+    luot_2_ghi_chu: Không mở được toàn văn Segall, Campbell & Herskovits (1966) để đối chiếu xếp hạng từng nhóm (người Mỹ/Johannesburg dễ bị nhất, người San ít nhất, ảo giác ngang-dọc đảo chiều). Tóm tắt Science 1963 chỉ nói 15 xã hội có khác biệt lớn thuộc hai loại. Amir & Firestone (Psychological Review 2026) cho rằng bằng chứng gốc về biến thiên văn hóa 'rất không nhất quán' và bị các bài sau tường thuật sai; cần đọc bản gốc trước khi giữ các xếp hạng cụ thể.
+    review: dung
+  - id: n15
+    cau: Một số cộng đồng săn bắn hái lượm (như người San ở vùng Kalahari) gần như không bị ảo giác Müller-Lyer, hoặc bị rất nhẹ.
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: the San foragers of the Kalahari were unaffected by the so-called illusion
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: dung
+    ghi_chu: 'G1 chưa kiểm được (không mở toàn văn); Henrich mở được: PSE của người San không khác không. Review (Claude Sonnet 5.5, 10/11/2026): dung. Henrich 2010: "the San foragers of the Kalahari were unaffected by the so-called illusion"; Amir & Firestone 2026 nhắc lại và nói người San "seemed not to see the illusion at all". Chữ trang "gần như không bị… hoặc bị rất nhẹ" nằm trong khoảng ấy và nay được trình bày là kết quả báo cáo, có phản biện ngay dưới danh sách.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Không mở được toàn văn Segall, Campbell & Herskovits (1966) để đối chiếu xếp hạng từng nhóm (người Mỹ/Johannesburg dễ bị nhất, người San ít nhất, ảo giác ngang-dọc đảo chiều). Tóm tắt Science 1963 chỉ nói 15 xã hội có khác biệt lớn thuộc hai loại. Amir & Firestone (Psychological Review 2026) cho rằng bằng chứng gốc về biến thiên văn hóa 'rất không nhất quán' và bị các bài sau tường thuật sai; cần đọc bản gốc trước khi giữ các xếp hạng cụ thể.
+    review: dung
+  - id: n16
+    cau: 'Với ảo giác đường ngang–dọc, chiều khác biệt đảo ngược: nhiều nhóm phi phương Tây bị lừa nhiều hơn người phương Tây.'
+    loai: phat-hien
+    nguon:
+      - vdk2013
+    trich: perceivers from small-scale, mostly African, cultures with few "carpentered," rectangular structures in their environments are less susceptible to the Müller-Lyer illusion and more susceptible to the horizontal–vertical illusion than are Westerners
+    vi_tri: van der Kamp 2013, mở bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (trang cũ trước G1): "người phương Tây ít bị lừa nhất". Đã làm mềm ở G1; chữ hiện tại khớp van der Kamp. theo G1-L03 (22/10/2026). Review (Claude Sonnet 5.5, 10/11/2026): dung. van der Kamp 2013 (mở bài): nhóm quy mô nhỏ, chủ yếu châu Phi, ít bị Müller-Lyer hơn và bị ảo giác ngang–dọc nhiều hơn người phương Tây. Khớp; trang gắn câu vào "kết quả được báo cáo".'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Không mở được toàn văn Segall, Campbell & Herskovits (1966) để đối chiếu xếp hạng từng nhóm (người Mỹ/Johannesburg dễ bị nhất, người San ít nhất, ảo giác ngang-dọc đảo chiều). Tóm tắt Science 1963 chỉ nói 15 xã hội có khác biệt lớn thuộc hai loại. Amir & Firestone (Psychological Review 2026) cho rằng bằng chứng gốc về biến thiên văn hóa 'rất không nhất quán' và bị các bài sau tường thuật sai; cần đọc bản gốc trước khi giữ các xếp hạng cụ thể.
+    review: dung
+  - id: n17
+    cau: 'Một số nghiên cứu kinh điển cho rằng mức bị ảo giác Müller-Lyer khác nhau giữa các xã hội và liên quan đến môi trường sống, nhưng phân tích lại gần đây cho rằng bằng chứng này không nhất quán: các nghiên cứu cùng thời cho kết quả trái chiều (Rivers 1905: hai nhóm ở Ấn Độ bị ảo giác mạnh hơn cả người Anh), bộ dữ liệu của Segall và cộng sự có chỗ tự mâu thuẫn, dữ liệu của nhiều người tham gia bị loại (có nhóm hơn một nửa), và giả thuyết "thế giới thợ mộc" gần như chắc chắn sai (Amir và Firestone, 2026).'
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: the evidence for cultural variation and its correlation with key cultural variables is in fact highly inconsistent, beset by questionable research practices, and misreported by later discussions
+    vi_tri: Amir & Firestone 2026, tóm tắt và mục 5 (5.1 Rivers 1905; 5.2 loại dữ liệu, "mineboys", Bété)
+    ket_qua: da-sua
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1037/rev0000549", "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "câu đúng: Một số nghiên cứu kinh điển cho rằng mức bị ảo giác Müller-Lyer khác nhau giữa các xã hội, nhưng phân tích lại gần đây (Amir & Firestone, 2026) cho rằng bằng chứng về ảnh hưởng của môi trường sống là không nhất quán; chưa nên nói chắc là 'dấu ấn của môi trường sống'.; Bài phản biện còn mới (Psychological Review 2026), chưa có tái lập; nên viết là giả thuyết đang bị thách thức."
+    review: sai
+    ghi_chu: "Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: \"Nói cách khác, thứ mà sách giáo khoa phương Tây trình bày như một 'đặc điểm chung của mắt người' hóa ra lại mang đậm dấu ấn của môi trường sống.\" Chữ mới: kết quả \"được dẫn như bằng chứng\" thị giác chịu ảnh hưởng môi trường sống, nhưng Amir & Firestone (2026) cho rằng bằng chứng không nhất quán (Rivers 1905 thấy người Urali và Sholaga ở Ấn Độ bị ảo giác mạnh hơn cả người Anh; dữ liệu Segall có chỗ tự mâu thuẫn; dữ liệu nhiều người tham gia bị loại, có nhóm quá nửa) và giả thuyết \"thế giới thợ mộc\" gần như chắc chắn sai. Lý do: lượt 2 đúng (câu quá mạnh); đã đọc toàn văn Amir & Firestone mục 5. Cũng viết lại câu dẫn: \"Điều bất ngờ nhất… không phải ai cũng bị lừa như nhau\" thành \"…mức bị lừa khác nhau giữa các nhóm người. Đó là kết quả được báo cáo ban đầu\"."
+  - id: n18
+    cau: 'Giả thuyết "thế giới thợ mộc" (carpentered world): người sống trong môi trường nhiều góc vuông có thể hình thành thói quen thị giác thích nghi với góc vuông; thói quen ấy với hình Müller-Lyer cho đáp án sai; người sống ở môi trường ít góc vuông ít bị lừa hơn.'
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - segall1963
+      - amir2026
+    trich: visual exposure during ontogeny to factors such as the "carpentered corners" of modern environments may favor certain optical calibrations and visual habits that create and perpetuate this illusion
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: người sống trong môi trường nhiều góc vuông "học được cách diễn giải các góc nhọn, góc tù trong hình 2D như góc vuông trong 3D … Não áp dụng mẹo chiều sâu này một cách tự động". Chữ mới nói "thói quen thị giác" (đúng chữ Henrich và tóm tắt Segall), bỏ chi tiết cơ chế chưa mở được toàn văn Segall 1966. Giả thuyết còn tranh cãi (n29). Review (Claude Sonnet 5.5, 10/11/2026): dung. Mô tả đúng giả thuyết: Segall 1963 "highly carpentered, urban European environments could enhance, or even produce, the Müller-Lyer" (trích trong Amir & Firestone 2026); Henrich 2010 "carpentered corners … visual habits". Phản biện đã nằm ở câu n17 ngay sau danh sách kết quả.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769", "https://doi.org/10.1037/rev0000549" ]
+    luot_2_ghi_chu: Mô tả đúng nội dung giả thuyết 'carpentered world'; lưu ý giả thuyết đang bị Amir & Firestone (2026) cho là 'gần như chắc chắn sai'.
+    review: dung
+  - id: n19
+    cau: Henrich, Heine và Norenzayan (2010) dùng phát hiện của Segall và cộng sự làm ví dụ cho thấy tâm lý học không thể chỉ nghiên cứu sinh viên phương Tây rồi kết luận về "con người nói chung".
+    loai: lich-su
+    nguon:
+      - henrich2010
+    trich: If visual perception can vary, what kind of psychological processes can we be sure will not vary?
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "một trong những ví dụ được trích dẫn nhiều nhất" (không có nguồn); chữ mới chỉ nói Henrich dùng nó làm ví dụ. Review (Claude Sonnet 5.5, 10/11/2026): dung. Henrich 2010 dùng Müller-Lyer mở đầu và hỏi "If visual perception can vary…"; chữ trang đã làm mềm, không gắn thêm đánh giá về mức nổi tiếng.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
+    review: dung
+  - id: n20
+    cau: 'Vững chắc: ảo giác Müller-Lyer tồn tại và đo được một cách ổn định.'
+    loai: nhan
+    nhan: vung-chac
+    co_so:
+      - bruno2009
+      - amir2026
+      - henrich2010
+    ly_do: "Tổng quan định lượng 18 nghiên cứu về Müller-Lyer (Bruno & Franz 2009): hiệu ứng lên phán đoán thị giác lớn hơn lên động tác cầm nắm và gần như mọi hiệu ứng cầm nắm lớn hơn 0; Amir & Firestone (2026) tổng hợp hơn một thế kỷ nghiên cứu ở nhiều nhóm người và một số loài. Không có tranh cãi về sự tồn tại; phần tranh cãi (văn hóa) tách sang khung Đang tranh cãi."
+    nguon:
+      - bruno2009
+      - amir2026
+      - henrich2010
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Müller-Lyer và vòng tròn Ebbinghaus đã được đo đi đo lại hơn một thế kỷ, với cùng một hướng sai lệch." (Ebbinghaus không có nguồn đã mở; "một thế kỷ" không có). Chữ mới: Müller-Lyer, mô tả 1889, đo trong nhiều nghiên cứu kể cả liên văn hóa. Chỗ khó: Vững chắc theo thước đo cần phân tích tổng hợp hay hai tái lập lớn; chưa mở nguồn như vậy, nên lượt 2 và review cân nhắc hạ Khá vững. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Vững chắc: các ảo giác hình học tồn tại và đo được một cách ổn định" (thân: "…kể cả so sánh giữa nhiều xã hội (Segall…; Henrich…)"). Chữ mới: "Vững chắc: ảo giác Müller-Lyer tồn tại và đo được một cách ổn định"; thân dẫn tổng quan định lượng 18 nghiên cứu của Bruno & Franz (2009) và Amir & Firestone (2026), bỏ viện dẫn so sánh liên văn hóa (nay đang tranh cãi). Lý do: nhãn Vững chắc cần tổng hợp; thu hẹp về Müller-Lyer, nơi có Bruno & Franz (median hiệu ứng lên phán đoán thị giác lớn hơn lên cầm nắm, gần như mọi hiệu ứng cầm nắm lớn hơn 0) và Amir & Firestone (tổng quan một thế kỷ, ảo giác thấy ở nhiều nhóm và loài). Ranh giới thước đo: Bruno & Franz không phải tổng hợp về mọi ảo giác hình học nên bỏ "các ảo giác hình học"; chủ repo duyệt nhãn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/rev0000549", "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Không tìm được phân tích tổng hợp riêng; nhưng sự tồn tại và đo được của ảo giác không bị tranh cãi. Thước đo mục 4 áp cho nhãn này hơi lỏng.
+    review: sai
+  - id: n21
+    cau: 'Đang tranh cãi: mức độ bị ảo giác Müller-Lyer có khác nhau theo nền văn hóa hay không, và vì sao.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - amir2026
+      - segall1963
+      - vdk2013
+      - henrich2010
+    ly_do: Segall và cộng sự (1963, 1966; qua Henrich 2010) báo cáo khác biệt lớn giữa xã hội; nghiên cứu cùng thời (Rivers 1905) cho chiều ngược, dữ liệu Segall có chỗ tự mâu thuẫn và loại dữ liệu nhiều (Amir & Firestone 2026), van der Kamp 2013 gọi truyền thống này "long, but controversial".
+    nguon:
+      - amir2026
+      - segall1963
+      - vdk2013
+      - henrich2010
+    ket_qua: da-sua
+    ghi_chu: 'G1 #1: nhãn cũ Vững chắc, đã hạ Khá vững và thêm giới hạn (áp dụng trong theo G1-L03 (22/10/2026)). Đối chiếu van der Kamp 2013: "There is a long, but controversial, tradition of research that has (purportedly) demonstrated that individuals from different cultures vary in their susceptibility to illusory drawings". Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: nhãn Khá vững, "mức độ bị ảo giác khác nhau rõ rệt giữa các nền văn hóa". Chữ mới: nhãn Đang tranh cãi, "mức độ bị ảo giác Müller-Lyer có khác nhau theo nền văn hóa hay không, và vì sao". Lý do: lượt 2 đúng; Amir & Firestone (Psychol Rev 2026, đọc toàn văn) cho rằng bằng chứng về biến thiên văn hóa không nhất quán (Rivers 1905 trái chiều, dữ liệu Segall tự mâu thuẫn, loại dữ liệu); đạt thước đo "bằng chứng chất lượng cao mâu thuẫn nhau". Chưa có tái lập lớn nên không viết "đã bị bác bỏ".'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1037/rev0000549", "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "câu đúng: Đang tranh cãi: các nghiên cứu kinh điển (Segall và cộng sự) báo cáo khác biệt giữa các nền văn hóa, nhưng phân tích lại năm 2026 cho rằng bằng chứng đó không nhất quán và còn nghi vấn phương pháp.; Nhãn 'Khá vững' cao hơn thước đo: dữ liệu chủ yếu từ các nghiên cứu những năm 1960, chưa có tái lập lớn có đăng ký trước, và có tổng quan phản biện mạnh."
+    review: sai
+  - id: n22
+    cau: Segall và cộng sự báo cáo khác biệt lớn giữa 15 xã hội, và kết quả ấy được trích dẫn, thảo luận rộng rãi.
+    loai: phat-hien
+    nguon:
+      - segall1963
+      - henrich2010
+      - amir2026
+    trich: Data from 15 societies are presented showing substantial intersocietal differences of two types in susceptibility to geometric optical illusions.
+    vi_tri: Tóm tắt Segall 1963
+    ket_qua: da-sua
+    ghi_chu: 'theo G1-L03 (22/10/2026): KHỚP. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Nghiên cứu của Segall và cộng sự trên 15 xã hội cho thấy khác biệt lớn và có hệ thống; việc người phương Tây ở nhóm dễ bị ảo giác Müller-Lyer nhất là phát hiện được trích dẫn, thảo luận rộng rãi." Chữ mới: "Segall và cộng sự báo cáo khác biệt lớn giữa 15 xã hội, và kết quả ấy được trích dẫn, thảo luận rộng rãi." Lý do: "có hệ thống" không còn đứng được sau phân tích lại 2026.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
+    review: sai
+  - id: n23
+    cau: Dữ liệu nổi tiếng nhất đã cũ, các nghiên cứu cùng thời cho kết quả trái chiều, và phân tích lại năm 2026 cho rằng bằng chứng về khác biệt văn hóa không nhất quán (Amir và Firestone, 2026; xem thêm van der Kamp và cộng sự, 2013).
+    loai: phat-hien
+    nguon:
+      - amir2026
+      - vdk2013
+    trich: the evidence for cultural variation and its correlation with key cultural variables is in fact highly inconsistent
+    vi_tri: Amir & Firestone 2026, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Wikipedia nêu thêm Jahoda (không thấy khác biệt nông thôn–đô thị trong một nhóm châu Phi) và Ahluwalia (1978; đô thị Zambia dễ bị hơn nông thôn). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Dữ liệu nổi tiếng nhất đã cũ, và cả mức độ lẫn cách lý giải khác biệt này vẫn còn bị tranh cãi (van der Kamp và cộng sự, 2013)." Chữ mới: thêm "các nghiên cứu cùng thời cho kết quả trái chiều" và dẫn Amir & Firestone (2026) làm nguồn chính, van der Kamp chỉ "xem thêm". Lý do: van der Kamp 2013 nghiên cứu ảo giác Judd, không đánh giá lại dữ liệu Segall (lượt 2).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/rev0000549", "https://doi.org/10.3758/s13414-013-0458-5" ]
+    luot_2_ghi_chu: "Nội dung đúng (Amir & Firestone 2026 xác nhận tranh cãi). Lưu ý: van der Kamp 2013 nghiên cứu ảo giác Judd (biến thể Müller-Lyer) với mẫu nhỏ, không phải bản đánh giá lại dữ liệu Segall; nên dẫn thêm Amir & Firestone 2026."
+    review: sai
+  - id: n24
+    cau: 'Đang tranh cãi: vì sao ảo giác xảy ra.'
+    loai: nhan
+    nhan: tranh-cai
+    co_so:
+      - wiki-ml
+      - vdk2013
+      - amir2026
+    ly_do: 'Có nhiều cách giải thích cạnh tranh (Gregory: nhầm hằng số kích thước; giả thuyết trọng tâm/lệch điểm cuối; Day: cả hình quyết định) và Howe và Purves bác cách giải thích của Gregory; chưa có đồng thuận. Nguồn đã mở chỉ là Wikipedia (bậc ba) và van der Kamp 2013.'
+    nguon:
+      - wiki-ml
+      - vdk2013
+      - amir2026
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ có thêm "và có thể mỗi ảo giác có cơ chế riêng" (không nguồn): đã bỏ. Chỗ khó: nhãn dựa trên nguồn bậc ba cho các cách giải thích; lượt 2 nên đối chiếu Howe và Purves (2005, PNAS) và Day. Review (Claude Sonnet 5.5, 10/11/2026): dung. Nhãn Đang tranh cãi cho cơ chế đúng: Amir & Firestone 2026 nói lời giải đầy đủ cho Müller-Lyer "eludes the field at large", nhiều lý thuyết (Gregory, lệch điểm cuối, hiệu quả luồng mắt, lọc tần số không gian…), có thể có nhiều cơ chế cùng tồn tại. Đã thêm nguồn bậc 2.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Nhiều cách giải thích cạnh tranh đúng như viết.
+    review: dung
+  - id: n25
+    cau: 'Có nhiều cách giải thích cạnh tranh nhau: não áp dụng nhầm "mẹo" chiều sâu (thuyết của Gregory), não xác định sai vị trí điểm cuối của đoạn thẳng do bị các "vây" kéo đi, hay sự tương phản kích thước với vật xung quanh.'
+    loai: phat-hien
+    nguon:
+      - wiki-ml
+      - amir2026
+    trich: 'Pooling of positional signals from neighboring parts displaces the perceived endpoints (centroid hypothesis; Gregory: misapplied size constancy)'
+    vi_tri: Wikipedia, mục giải thích
+    ket_qua: dung
+    ghi_chu: 'Quả thật có nhiều giả thuyết cạnh tranh; "tương phản kích thước" gắn với Ebbinghaus (n9). Review (Claude Sonnet 5.5, 10/11/2026): dung. Amir & Firestone 2026 mục 2.2.1 liệt kê các giải thích: Gregory (hằng số kích thước), lệch vị trí điểm cuối (Morgan 1990), trọng tâm/trung bình (Day 1988), luồng mắt (Judd); khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Nhiều cách giải thích cạnh tranh đúng như viết.
+    review: dung
+  - id: n26
+    cau: 'Ba cách giải thích thường được nêu: hai cho Müller-Lyer (nhầm hằng số kích thước của Gregory; lệch điểm cuối) và một cho Ebbinghaus (tương phản và khung tham chiếu); chưa cách nào được coi là chắc chắn.'
+    loai: phat-hien
+    nguon:
+      - wiki-ml
+      - wiki-eb
+      - amir2026
+    trich: 'Howe and Purves (rejecting Gregory): convex and concave corners "contribute little if anything to the Müller-Lyer effect."'
+    vi_tri: Wikipedia, mục giải thích
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ba họ giải thích chính cho ảo giác Müller-Lyer" (cách thứ ba thực ra là cho Ebbinghaus) và "không loại trừ nhau hoàn toàn". Chữ mới sửa cả hai. Review (Claude Sonnet 5.5, 10/11/2026): dung. Khớp: ba cách được nêu (hai cho Müller-Lyer, một cho Ebbinghaus) và "chưa cách nào chắc" (Amir & Firestone: lời giải đầy đủ chưa có).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Nhiều cách giải thích cạnh tranh đúng như viết.
+    review: dung
+  - id: n27
+    cau: 'Gregory: não diễn giải hai kiểu "vây" như hai kiểu góc ở những khoảng cách khác nhau, rồi hiệu chỉnh kích thước theo khoảng cách tưởng tượng; một số nhà nghiên cứu (Howe và Purves) không đồng ý.'
+    loai: phat-hien
+    nguon:
+      - wiki-ml
+      - amir2026
+    trich: The visual system "learns that the 'angles in' configuration corresponds to a rectilinear object" that is closer, and "angles out" to one that is farther away.
+    vi_tri: Wikipedia, mục Gregory
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: vây chĩa ra như "góc lồi ở xa", vây chĩa vào như "góc lõm ở gần" (mô tả góc lồi/lõm đảo ngược so với nguồn). Chữ mới trung tính; bỏ câu "mẹo này hữu ích trong thế giới ba chiều… sai với hình phẳng" (chỉ là diễn giải của sách). Review (Claude Sonnet 5.5, 10/11/2026): dung. Gregory (1963, 1965) theo Amir & Firestone: các vây là hình chiếu của góc phòng/góc hộp ở xa hay gần, phần ứng với vật xa được "nở ra"; Howe & Purves cho rằng thống kê cảnh tự nhiên đủ để tạo ảo giác, không cần môi trường xây dựng. Chữ trang trung tính, khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Nhiều cách giải thích cạnh tranh đúng như viết.
+    review: dung
+  - id: n28
+    cau: 'Lệch điểm cuối: các vây kéo vị trí cảm nhận của điểm cuối đoạn thẳng ra ngoài hoặc vào trong, nên đoạn thẳng bị "đo" sai ngay từ khâu định vị.'
+    loai: phat-hien
+    nguon:
+      - wiki-ml
+      - amir2026
+    trich: Pooling of positional signals from neighboring parts displaces the perceived endpoints.
+    vi_tri: Wikipedia, mục giả thuyết trọng tâm (centroid)
+    ket_qua: dung
+    ghi_chu: 'Giả thuyết trọng tâm là cách gọi hiện đại của ý "lệch điểm cuối". Review (Claude Sonnet 5.5, 10/11/2026): dung. Amir & Firestone 2026: một họ giải thích cho rằng vây khiến người xem định vị sai điểm cuối (Morgan 1990); khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Nhiều cách giải thích cạnh tranh đúng như viết.
+    review: dung
+  - id: n29
+    cau: Với vòng tròn Ebbinghaus, não đánh giá kích thước một cách tương đối — "nhỏ hơn những thứ xung quanh" — chứ không đo tuyệt đối (tương phản, khung tham chiếu).
+    loai: phat-hien
+    nguon:
+      - wiki-eb
+      - amir2026
+    trich: This is a relative-size effect driven by context.
+    vi_tri: Wikipedia, mục giải thích
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Nhiều cách giải thích cạnh tranh đúng như viết.
+    review: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Mô tả hiệu ứng ngữ cảnh/kích thước tương đối của Ebbinghaus; Amir & Firestone 2026 (Howe & Purves 2005) cũng giải thích bằng quan hệ kích thước tương đối trong cảnh tự nhiên. Đứng trong câu "ba cách giải thích thường được nêu" nên không nói chắc hơn nguồn.'
+  - id: n30
+    cau: 'Điểm chung của cách giải thích thứ nhất và giả thuyết văn hóa: thị giác dùng ngữ cảnh và kinh nghiệm để suy luận về thế giới, và suy luận thì có thể sai.'
+    loai: phat-hien
+    nguon:
+      - segall1963
+      - amir2026
+    trich: different habits of perceptual inference which relate to cultural and ecological factors in the visual environment
+    vi_tri: Tóm tắt Segall 1963
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ba cách giải thích không loại trừ nhau hoàn toàn. Điểm chung của chúng: thị giác không đo thế giới, mà suy luận…" (khẳng định cho cả ba cách; Howe và Purves bác cách thứ nhất). Review (Claude Sonnet 5.5, 10/11/2026): dung. "Điểm chung" của giải thích thứ nhất (Gregory) và giả thuyết văn hóa đúng: cả hai coi thị giác dùng kinh nghiệm về cảnh 3D (Amir & Firestone 2026 nối hai thuyết này).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n31
+    cau: '"Mắt thấy" không phải bằng chứng cuối cùng: cảm nhận kích thước có thể bị ngữ cảnh bóp méo, và đo đạc, kiểm chứng độc lập đáng tin hơn cảm giác chắc chắn.'
+    loai: loi-khuyen
+    nguon:
+      - wiki-eb
+      - henrich2010
+      - bruno2009
+    trich: This is a relative-size effect driven by context.
+    vi_tri: Wikipedia (Ebbinghaus)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "cảm nhận kích thước, khoảng cách, thậm chí màu sắc đều có thể bị ngữ cảnh bóp méo". Màu sắc, khoảng cách không có nguồn đã mở nên bỏ. Phần "đo đạc đáng tin hơn" là lời khuyên khái quát suy từ việc ảo giác sai ổn định; chỗ khó: lượt 2 xem có cần nguồn riêng. Review (Claude Sonnet 5.5, 10/11/2026): dung. Lời khuyên hợp lý, đúng chừng mực: ảo giác cho thấy cảm nhận có thể sai ổn định (Bruno & Franz 2009; Fodor qua Amir & Firestone). Không khuyên điều gì ngoài đo đạc độc lập.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n32
+    cau: Hiểu biết về ảo giác được dùng trong thiết kế giao thông (vạch kẻ đường tạo cảm giác đi nhanh), kiến trúc và thời trang.
+    loai: loi-khuyen
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ khỏi trang: không có nguồn đã mở. Chữ cũ: "- Thiết kế và an toàn: hiểu biết về ảo giác được dùng trong thiết kế giao thông (vạch kẻ đường tạo cảm giác đi nhanh để tài xế giảm tốc), kiến trúc, và cả thời trang…". Review (Claude Sonnet 5.5, 10/11/2026): dung. Đã bỏ; kiểm trang: không còn đoạn về vạch kẻ đường, kiến trúc, thời trang.'
+    luot_2: dung
+    luot_2_nguon: [ "https://trid.trb.org/View/776411" ]
+    luot_2_ghi_chu: Chỉ xác nhận phần vạch kẻ đường tạo cảm giác đi nhanh; phần kiến trúc, thời trang chưa mở nguồn.
+    review: dung
+  - id: n33
+    cau: Cho trẻ tự đo ảo giác Müller-Lyer bằng thước là một cách đơn giản để minh họa rằng cảm thấy chắc chắn khác với đúng.
+    loai: loi-khuyen
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: Many subjects perceive line "b" as longer than line "a."
+    vi_tri: Henrich 2010, chú thích Hình 1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "một bài học tuyệt vời về tư duy phản biện". Chữ mới nêu tác dụng minh họa; không có nghiên cứu về hiệu quả dạy học: chỗ khó, lượt 2 xem. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu nêu tác dụng minh họa, không nói về hiệu quả dạy học; thước đo thấy sai dù biết đúng khớp Fodor trích trong Amir & Firestone 2026.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n34
+    cau: Các ảo giác trong bài được đo với hình vẽ đơn giản, không phải cảnh đời thường.
+    loai: phat-hien
+    nguon:
+      - segall1963
+      - henrich2010
+      - amir2026
+    trich: Segall et al. (1966) manipulated the length of the two lines in the Müller-Lyer illusion (Fig. 1) and estimated the magnitude of the illusion by determining the approximate point at which the two lines were perceived as being of the same length.
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: da-sua
+    ghi_chu: '"Phòng thí nghiệm" theo nghĩa rộng: các xã hội được đo tại hiện trường bằng hình vẽ. Không nói "ở phòng thí nghiệm" theo nghĩa nhà tâm lý học; chữ trang giữ. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Các ảo giác trong bài được đo với hình vẽ đơn giản trong phòng thí nghiệm." Chữ mới: "…với hình vẽ đơn giản, không phải cảnh đời thường." Lý do: Segall và cộng sự đo ở hiện trường (nhiều xã hội, có phiên dịch, nhà nhân học thu), không phải phòng thí nghiệm; "hình vẽ đơn giản" khớp Henrich 2010 và Amir & Firestone 2026 (12 hình Müller-Lyer, chọn đoạn dài hơn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: sai
+  - id: n35
+    cau: Ngoài đời, ta có thêm nhiều manh mối khác (chuyển động, hai mắt…); bài này không đo xem chúng làm mức bị ảo giác thay đổi ra sao. Ảo giác cho thấy thị giác có thể sai, không có nghĩa ta luôn nhìn sai.
+    loai: phat-hien
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Ngoài đời, não có thêm nhiều manh mối khác (chuyển động, hai mắt, sờ chạm) nên ít bị lừa hơn." (khẳng định không nguồn; ảo giác Müller-Lyer cũng thấy khi sờ). Chữ mới không khẳng định chiều. Câu "không có nghĩa ta luôn nhìn sai" là ranh giới lập luận của bài, không cần nguồn. Review (Claude Sonnet 5.5, 10/11/2026): dung. Câu đã hedge, không khẳng định chiều; "không có nghĩa ta luôn nhìn sai" là ranh giới lập luận. Amir & Firestone 2026 lưu ý ảo giác cũng xuất hiện khi sờ, nên không viết "ít bị lừa hơn". Bổ sung nguồn cho câu giới hạn: Amir & Firestone cho biết ảo giác còn xuất hiện ở giác quan khác ngoài thị giác nên chữ trang không khẳng định chiều tác động của manh mối khác.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+    nguon:
+      - amir2026
+    trich: the illusion arises in sense modalities other than vision; and (3) the illusion does not require straight lines typical of carpentry
+    vi_tri: Amir & Firestone 2026, tóm tắt
+  - id: n36
+    cau: Theo giả thuyết "thế giới thợ mộc", người Việt sống ở đô thị (nhà hộp, chung cư, đường kẻ vạch) được dự đoán dễ bị ảo giác Müller-Lyer tương tự người phương Tây, còn người sống ở môi trường ít góc vuông hơn có thể ít bị hơn; đây mới là suy luận, chưa phải kết quả đo trên người Việt.
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - wiki-ml
+    trich: '"European and American city dwellers have a much higher percentage of rectangularity" in their environments (Segall 1966, theo Wikipedia); Ahluwalia (1978): urban Zambian subjects considerably more susceptible than rural ones.'
+    vi_tri: Wikipedia, mục liên văn hóa
+    ket_qua: dung
+    ghi_chu: 'Câu suy luận đã ghi rõ là suy luận; nguồn cho thấy giả thuyết ở các nhóm khác (Zambia). Review (Claude Sonnet 5.5, 10/11/2026): dung. Là suy luận từ giả thuyết, đã ghi rõ chưa phải kết quả đo trên người Việt; phần "dự đoán" khớp giả thuyết Segall (môi trường đô thị nhiều góc vuông). Phản biện của giả thuyết đã nằm ở mục Nghiên cứu then chốt và Mức độ chắc chắn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(M%C3%BCller-Lyer%20OR%20%22geometric%20illusion%22)%20AND%20(Vietnam%20OR%20Vietnamese)&format=json" ]
+    luot_2_ghi_chu: "Tìm Europe PMC ngày 10/11/2026 (OpenAlex hết hạn mức trong ngày): không có nghiên cứu đo ảo giác hình học ở Việt Nam. n36 là suy luận từ giả thuyết, đã ghi rõ chưa phải kết quả đo (và giả thuyết nền đang bị thách thức)."
+    review: dung
+  - id: n37
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào đo các ảo giác này ở Việt Nam.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'OpenAlex ngày 10/11/2026, hai truy vấn ở danh sách nguồn: không có. Chưa tìm Google Scholar hay tạp chí trong nước. Chữ cũ không có mốc ("chúng tôi chưa tìm thấy…"); đã thêm "tính đến 11/2026". Review (Claude Sonnet 5.5, 10/11/2026): dung. Thời sự có mốc "11/2026", `het_han` 2028-11-01. Tự tìm lại Europe PMC ngày 10/11/2026: ("Müller-Lyer" OR "visual illusion") AND (Vietnam OR Vietnamese) chỉ ra 3 kết quả không liên quan; OpenAlex hết hạn mức trong ngày, dùng kết quả hai truy vấn của lượt 1 (ngày 10/11/2026).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(M%C3%BCller-Lyer%20OR%20%22geometric%20illusion%22)%20AND%20(Vietnam%20OR%20Vietnamese)&format=json" ]
+    luot_2_ghi_chu: "Tìm Europe PMC ngày 10/11/2026 (OpenAlex hết hạn mức trong ngày): không có nghiên cứu đo ảo giác hình học ở Việt Nam. n36 là suy luận từ giả thuyết, đã ghi rõ chưa phải kết quả đo (và giả thuyết nền đang bị thách thức)."
+    review: dung
+  - id: n38
+    cau: Phần lớn những gì ta "biết" về thị giác con người đến từ người phương Tây; số liệu nghiên cứu gốc có thể không đại diện cho mọi người.
+    loai: phat-hien
+    nguon:
+      - henrich2010
+    trich: WEIRD subjects are particularly unusual compared with the rest of the species - frequent outliers. The domains reviewed include visual perception
+    vi_tri: Tóm tắt Henrich 2010
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ giữ ("phần lớn … đến từ người phương Tây") là mô tả chung của Henrich; "có thể không đại diện" là mềm. Review (Claude Sonnet 5.5, 10/11/2026): dung. Henrich 2010 (tóm tắt): WEIRD thường là ngoại lệ, kể cả thị giác; chữ trang mềm ("có thể không đại diện").'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n39
+    cau: Khi công cụ Ảo giác thị giác lên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm: trang công cụ "Ảo giác thị giác" ở mục Tự trải nghiệm có bản ghi ở src/data/trang.yml (trai-nghiem/ao-giac-thi-giac có bản ghi). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Khi bạn thử công cụ Ảo giác thị giác trên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật." (cả ba chỗ trong trang nói công cụ như đã có: câu mở "bạn cũng có thể tự đo bằng công cụ…", đoạn Ở Việt Nam, câu hỏi quiz 5). Chữ mới: "Khi công cụ Ảo giác thị giác lên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật." Lý do: công cụ trai-nghiem/ao-giac-thi-giac chỉ có bản ghi ở trang.yml, chưa dựng (src/content/docs/trai-nghiem chỉ có stroop; CONG_CU chỉ có stroop). Viết thì tương lai và link `/psyche/trai-nghiem/ao-giac-thi-giac/` (tự thành "sắp có"), như tri-nho-lam-viec ở D5-L1; quiz 5 đổi thành tình huống giả định ("một công cụ đo ảo giác trực tuyến").'
+    review: sai
+  - id: n40
+    cau: 'Ngộ nhận: "Mắt thấy tai nghe là chắc chắn nhất." Ảo giác cho thấy cảm nhận trực tiếp có thể sai một cách có hệ thống, thường ngay cả khi ta đã biết sự thật.'
+    loai: phat-hien
+    nguon:
+      - segall1963
+      - henrich2010
+      - amir2026
+    trich: Many subjects perceive line "b" as longer than line "a."
+    vi_tri: Henrich 2010, Hình 1
+    ket_qua: da-lam-mem
+    ghi_chu: 'Vế "ngay cả khi ta đã biết sự thật" như n5 ("thường"); chữ trang chưa đổi vì đây là câu ngộ nhận tóm tắt; lượt 2 xem có cần thêm "thường". Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "…sai một cách có hệ thống, ngay cả khi ta đã biết sự thật." Chữ mới: "…thường ngay cả khi ta đã biết sự thật." Lý do: cho khớp n5 và Fodor 1983 (qua Amir & Firestone 2026), nguồn nói thường vẫn thấy, không nói luôn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: sai
+  - id: n41
+    cau: 'Đã bị bác bỏ: "Người nào cũng bị ảo giác như nhau, vì mắt ai cũng giống nhau."'
+    loai: nhan
+    nhan: bac-bo
+    co_so:
+      - chen2025
+      - lin2023
+      - amir2026
+    ly_do: 'Mức bị ảo giác Müller-Lyer khác nhau giữa người với người: người lớn cao tuổi bị mạnh hơn người trẻ, độc lập với thị lực (Chen 2025: 8,20% so với 4,33%, p = 0,001); ở trẻ 4–17 tuổi mức này giảm theo tuổi và cao hơn ở trẻ khiếm thị bẩm sinh (Lin 2023); Amir & Firestone 2026 ghi ảo giác mạnh hơn ở trẻ em so với người lớn. Nhãn chỉ nói về ý "ai cũng như nhau", không về giải thích văn hóa.'
+    nguon:
+      - chen2025
+      - lin2023
+      - amir2026
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thị giác được ''học'' từ môi trường, không chỉ do cấu tạo mắt." Chữ mới: "theo giải thích của Segall và cộng sự, thị giác có thể được định hình một phần bởi môi trường" (có giả thuyết thay thế như sắc tố võng mạc, theo Wikipedia về Jahoda). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: nhãn Đã bị bác bỏ, thân: "Mức độ bị ảo giác khác nhau rõ rệt giữa các nền văn hóa; theo giải thích của Segall và cộng sự, thị giác có thể được định hình một phần bởi môi trường." Chữ mới: nhãn giữ Đã bị bác bỏ, thân nêu khác biệt giữa người với người: người lớn cao tuổi bị Müller-Lyer mạnh hơn người trẻ (8,20% so với 4,33%, Chen 2025) và mức này đổi theo tuổi ở trẻ em (Lin 2023); khác biệt văn hóa "đang tranh cãi". Lý do: đạo lý của ngộ nhận không được dựa vào kết luận văn hóa đang bị phản biện (n21).'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC12414450/" ]
+    luot_2_ghi_chu: Ảo giác không do mắt kém; khác nhau theo tuổi nên 'ai cũng như nhau' sai. Phần 'biết rồi vẫn thấy' là tính chất kinh điển (không thể hóa được bằng kiến thức), không mở nguồn riêng.
+    review: sai
+    trich: However, normally-sighted elderly participants exhibited stronger illusions than young adults (8.20% vs 4.33%, p β = 0.088, p = 0.001), independent of visual acuity.
+    vi_tri: Chen 2025, tóm tắt (Results)
+  - id: n42
+    cau: 'Ngộ nhận: "Biết đó là ảo giác thì sẽ hết thấy sai." Thường là không: có thể đo bằng thước nhiều lần rồi nhìn lại vẫn thấy hai đoạn khác nhau; biết trước thường không tắt ngay được cảm giác ấy.'
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - wiki-ml
+      - amir2026
+    trich: you don't change the perception of illusions very much with experience (Day, theo Wikipedia)
+    vi_tri: Wikipedia; Henrich 2010
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Không. Bạn có thể đo bằng thước mười lần, lần thứ mười một nhìn vào vẫn thấy sai. Kiến thức không tắt được cơ chế tự động của thị giác." (chắc hơn nguồn; xem n5). Review (Claude Sonnet 5.5, 10/11/2026): dung. Fodor 1983 (qua Amir & Firestone 2026) và Day: kinh nghiệm không đổi nhiều ảo giác; chữ trang "thường là không" khớp.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC12414450/" ]
+    luot_2_ghi_chu: Ảo giác không do mắt kém; khác nhau theo tuổi nên 'ai cũng như nhau' sai. Phần 'biết rồi vẫn thấy' là tính chất kinh điển (không thể hóa được bằng kiến thức), không mở nguồn riêng.
+    review: dung
+  - id: n43
+    cau: 'Quiz 1: điểm kỳ lạ nhất của ảo giác thị giác là biết chắc đáp án đúng rồi mà nhìn vào thường vẫn thấy sai; cảm giác sai thường vẫn còn sau khi đo; ảo giác này từng được nêu làm ví dụ cho kiểu xử lý ít chịu ảnh hưởng của niềm tin.'
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: Fodor's indisputable example of "cognitive impenetrability"
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: đáp án "Biết chắc đáp án đúng rồi mà nhìn vào vẫn thấy sai." và lời giải thích "cho thấy phần xử lý đó diễn ra tự động, trước khi lý trí can thiệp". Đã làm mềm như n5. Hai lựa chọn sai ("chỉ người mắt kém", "chỉ trẻ em") là phương án nhiễu. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 1 khớp n5; giải thích không dựa vào vị trí lựa chọn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n44
+    cau: 'Quiz 2: nghiên cứu của Segall, Campbell và Herskovits báo cáo người Mỹ và người gốc châu Âu dễ bị lừa nhất; một số cộng đồng săn bắn hái lượm gần như không bị lừa; thứ tự đảo ngược giữa các loại ảo giác; 15 xã hội được đo trong nghiên cứu năm 1963; các tác giả giải thích bằng môi trường sống, nhưng phân tích lại gần đây cho rằng bằng chứng không nhất quán.'
+    loai: phat-hien
+    nguon:
+      - segall1963
+      - henrich2010
+      - vdk2013
+      - amir2026
+    trich: Data from 15 societies are presented showing substantial intersocietal differences of two types
+    vi_tri: Tóm tắt Segall 1963
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Người Mỹ và châu Âu…", "15 xã hội được đo bằng cùng một bộ hình vẽ" (chi tiết "cùng một bộ hình" không mở được); đã sửa theo n14, n12. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Nghiên cứu của … phát hiện điều gì…?"; giải thích: "…cho thấy đây là vấn đề môi trường học được, không phải mắt tốt hay kém." Chữ mới: "…báo cáo điều gì…?"; giải thích nói đây là kết quả báo cáo, các tác giả giải thích bằng môi trường sống, và phân tích lại gần đây cho rằng bằng chứng không nhất quán. Lý do: lượt 2 chưa chắc (xếp hạng từng nhóm). Đã mở lại: Henrich 2010 (sinh viên Mỹ, nhóm gốc Âu ở Johannesburg; San không bị) và Amir & Firestone 2026 xác nhận; chỉ phần diễn giải "môi trường học được" quá mạnh.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Không mở được toàn văn Segall, Campbell & Herskovits (1966) để đối chiếu xếp hạng từng nhóm (người Mỹ/Johannesburg dễ bị nhất, người San ít nhất, ảo giác ngang-dọc đảo chiều). Tóm tắt Science 1963 chỉ nói 15 xã hội có khác biệt lớn thuộc hai loại. Amir & Firestone (Psychological Review 2026) cho rằng bằng chứng gốc về biến thiên văn hóa 'rất không nhất quán' và bị các bài sau tường thuật sai; cần đọc bản gốc trước khi giữ các xếp hạng cụ thể.
+    review: sai
+  - id: n45
+    cau: 'Quiz 3: giả thuyết "thế giới thợ mộc" cho rằng người sống trong môi trường nhiều góc vuông có thể hình thành thói quen thị giác thích nghi với góc vuông, và thói quen ấy cho đáp án sai với hình Müller-Lyer; thói quen hình thành từ môi trường nhiều góc vuông bị áp vào cả hình vẽ phẳng; giả thuyết này đang bị thách thức.'
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: visual exposure during ontogeny to factors such as the "carpentered corners" of modern environments may favor certain optical calibrations and visual habits
+    vi_tri: Henrich 2010, mục Müller-Lyer
+    ket_qua: da-sua
+    ghi_chu: 'Chưa sửa quiz 3 vì cơ chế "góc nhọn/tù thành góc 3D" là cách diễn đạt phổ biến của giả thuyết (Wikipedia: "angles in/angles out" của Gregory), không phải chữ Henrich. Chỗ khó: cơ chế chi tiết chưa mở toàn văn Segall 1966; người giao quyết định có đổi chữ quiz 3 thành "thói quen thị giác" như n18 không. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: đáp án "học được cách diễn giải hình 2D thành góc 3D, và ''mẹo'' này gây ra ảo giác"; giải thích "Mẹo đúng trong đời sống, sai trong phòng thí nghiệm." Chữ mới: đáp án "có thể hình thành thói quen thị giác thích nghi với góc vuông, và thói quen ấy cho đáp án sai với hình Müller-Lyer"; giải thích nêu giả thuyết đang bị thách thức (Amir & Firestone 2026). Lý do: cơ chế "diễn giải 2D thành 3D" là của Gregory, không phải chữ Segall/Henrich; khớp n18.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: sai
+  - id: n46
+    cau: 'Quiz 4: hiện tượng ảo giác thì vững (đo được, lặp lại được), nhưng vì sao nó xảy ra vẫn là câu hỏi mở (ba cách giải thích: mẹo chiều sâu, lệch điểm cuối, tương phản).'
+    loai: phat-hien
+    nguon:
+      - wiki-ml
+      - segall1963
+      - amir2026
+      - bruno2009
+    trich: 'Day: "you don''t change the perception of illusions very much with experience"; Howe and Purves reject Gregory'
+    vi_tri: Wikipedia
+    ket_qua: dung
+    ghi_chu: "Khớp n24, n26. Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 4 khớp n24 (Đang tranh cãi cho cơ chế) và n20 (Müller-Lyer đo được, lặp lại được)."
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+  - id: n47
+    cau: 'Quiz 5: một lần tự đo trên công cụ không đủ để so sánh với nghiên cứu có kiểm soát; số liệu gốc chủ yếu từ người phương Tây.'
+    loai: phat-hien
+    nguon:
+      - henrich2010
+    trich: WEIRD subjects are particularly unusual compared with the rest of the species
+    vi_tri: Tóm tắt Henrich 2010
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
+    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
+    review: dung
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Quiz 5: câu hỏi đã đổi thành tình huống giả định ("một công cụ đo ảo giác trực tuyến"); đáp án đúng khớp Henrich 2010 (mẫu WEIRD) và không trái nhận định nào. Ghi `gia-dinh`.'
+  - id: n48
+    cau: 'Xem thêm: trang "Ngộ nhận" (/psyche/ngo-nhan/), "Nhìn mà không thấy" và "Giữa bữa tiệc ồn ào, sao bạn vẫn nghe thấy tên mình?" có trên site.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm: ba trang có trong src/data/trang.yml (hai trang chu-y-tri-giac cùng lô; ngo-nhan: xem trang.yml). Kiểm link bằng tests/link.test.mjs sau khi build; ngo-nhan/index, hai trang chu-y-tri-giac có trong trang.yml. Review (Claude Sonnet 5.5, 10/11/2026): dung. Ba trang có trong src/data/trang.yml (ngo-nhan/index; hai trang chu-y-tri-giac cùng lô). Tiêu đề khớp: "Nhìn mà không thấy", "Giữa bữa tiệc ồn ào, sao bạn vẫn nghe thấy tên mình?". Trang ngộ nhận chưa dựng, link sẽ hiện "sắp có" tới khi lên.'
+    review: dung
+  - id: n49
+    cau: 'Nguồn: Segall, Campbell & Herskovits (1963), Science, 139(3556), 769–771; (1966) The influence of culture on visual perception, Bobbs-Merrill; Henrich, Heine & Norenzayan (2010), Behav Brain Sci 33(2–3), 61–83; van der Kamp, Withagen & de Wit (2013), Atten Percept Psychophys 75(5), 1027–1038; Amir & Firestone (2026), Psychol Rev 133(5), 1082–1108; Bruno & Franz (2009), Neuropsychologia 47(6), 1421–1433; Chen và cộng sự (2025), Eye Brain 17, 115–124; Lin và cộng sự (2023), Front Psychol 14, 1278554 (thông tin sách báo).'
+    loai: lich-su
+    nguon:
+      - segall1963
+      - henrich2010
+      - vdk2013
+      - amir2026
+      - bruno2009
+      - chen2025
+      - lin2023
+    ket_qua: da-sua
+    ghi_chu: 'Đối chiếu tên bài, tạp chí, tập, trang với OpenAlex và bản PDF (Henrich, van der Kamp); Segall 1963 qua OpenAlex; sách 1966 theo trích dẫn trong Henrich 2010. Mô tả trong ngoặc của Nguồn: "dùng phát hiện của Segall làm ví dụ điển hình cho vấn đề mẫu WEIRD" khớp Henrich. Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: danh sách Nguồn có ba nguồn (Segall 1963, 1966; Henrich 2010; van der Kamp 2013). Chữ mới: thêm Amir & Firestone (2026), Bruno & Franz (2009), Chen và cộng sự (2025), Lin và cộng sự (2023); siêu dữ liệu đối chiếu Crossref (tập, trang). Lý do: các nguồn mới dùng cho câu đã sửa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
+    luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
+    review: sai
+doi_chu:
+  - cu: 'mô tả: "…phát hiện rằng người phương Tây dễ bị ''lừa'' hơn nhiều nền văn hóa khác."'
+    moi: '"…dễ bị ảo giác Müller-Lyer hơn nhiều nền văn hóa khác."'
+    ly_do: Hồ sơ n1.
+  - cu: '"Đoạn nào dài hơn? … đoạn B dài hơn."'
+    moi: '"… đoạn A dài hơn."'
+    ly_do: Hồ sơ n2 (đoạn có cánh xòe ra trông dài hơn).
+  - cu: '"…kiến thức không ''sửa'' được cảm giác. Điều đó gợi ý rằng phần xử lý này diễn ra trước khi lý trí kịp can thiệp…"'
+    moi: '"…thường vẫn thấy chúng khác nhau. Kiến thức thường không ''sửa'' ngay được cảm giác. Vì thế Müller-Lyer từng được nêu làm ví dụ… (Henrich 2010)."'
+    ly_do: Hồ sơ n5.
+  - cu: 'Müller-Lyer: "mũi tên chĩa ra / chĩa vào"'
+    moi: '"cánh xòe ra / khép vào" (dạng `>---<`, `<--->`)'
+    ly_do: Hồ sơ n8.
+  - cu: '"Từ đầu những năm 1960, nhà tâm lý học Marshall Segall … gửi một bộ hình vẽ … cho các cộng sự là nhà nhân học khắp thế giới. Kết quả công bố … 1963 và … 1966: người ở 15 xã hội"'
+    moi: '"Marshall Segall cùng … so sánh mức độ bị ảo giác hình học ở nhiều xã hội khác nhau. Dữ liệu công bố … 1963 (15 xã hội) và … 1966"'
+    ly_do: Hồ sơ n11, n12.
+  - cu: '"Người Mỹ và châu Âu dễ bị ảo giác Müller-Lyer nhất."'
+    moi: '"Người Mỹ (sinh viên đại học) và nhóm người gốc châu Âu ở Johannesburg…"; quiz 2 tương ứng'
+    ly_do: Hồ sơ n14, n44.
+  - cu: 'Giả thuyết thế giới thợ mộc: "học được cách diễn giải các góc nhọn, góc tù… mẹo chiều sâu này… không học mẹo đó, nên không bị lừa."'
+    moi: '"có thể hình thành những thói quen thị giác thích nghi với các góc vuông… có thể không hình thành thói quen này, nên ít bị lừa hơn."'
+    ly_do: Hồ sơ n18.
+  - cu: '"…trở thành một trong những ví dụ được trích dẫn nhiều nhất cho thấy…"'
+    moi: '"Henrich, Heine và Norenzayan (2010) dùng phát hiện này làm ví dụ cho thấy…"'
+    ly_do: Hồ sơ n19.
+  - cu: 'Khung Vững chắc: "đã được đo đi đo lại hơn một thế kỷ, với cùng một hướng sai lệch"'
+    moi: '"Ảo giác Müller-Lyer, mô tả từ năm 1889, đã được đo trong nhiều nghiên cứu, kể cả so sánh giữa nhiều xã hội…"'
+    ly_do: Hồ sơ n20.
+  - cu: 'Khung Đang tranh cãi: "…và có thể mỗi ảo giác có cơ chế riêng."'
+    moi: (bỏ)
+    ly_do: Hồ sơ n24.
+  - cu: '"Ba họ giải thích chính cho ảo giác Müller-Lyer:"; "vây chĩa ra như góc lồi ở xa… vây chĩa vào như góc lõm ở gần… Mẹo này hữu ích… sai với hình vẽ phẳng."; "Ba cách giải thích không loại trừ nhau hoàn toàn."'
+    moi: '"Ba cách giải thích thường được nêu (hai cho Müller-Lyer, một cho Ebbinghaus); chưa cách nào được coi là chắc chắn:"; Gregory nói hai kiểu "vây" ở khoảng cách khác nhau, có ý kiến phản đối (Howe và Purves); "Điểm chung của cách giải thích thứ nhất và giả thuyết văn hóa…"'
+    ly_do: Hồ sơ n26, n27, n30.
+  - cu: '"cảm nhận kích thước, khoảng cách, thậm chí màu sắc đều có thể bị ngữ cảnh bóp méo"'
+    moi: '"cảm nhận kích thước có thể bị ngữ cảnh bóp méo"'
+    ly_do: Hồ sơ n31.
+  - cu: 'Bullet "Thiết kế và an toàn: … vạch kẻ đường … kiến trúc … thời trang."'
+    moi: (bỏ)
+    ly_do: Hồ sơ n32.
+  - cu: '"…một bài học tuyệt vời về tư duy phản biện…"'
+    moi: '"…một cách đơn giản để minh họa rằng cảm thấy chắc chắn khác với đúng."'
+    ly_do: Hồ sơ n33.
+  - cu: '"Ngoài đời, não có thêm nhiều manh mối khác (chuyển động, hai mắt, sờ chạm) nên ít bị lừa hơn."'
+    moi: '"…ta có thêm nhiều manh mối khác (chuyển động, hai mắt…); bài này không đo xem chúng làm mức bị ảo giác thay đổi ra sao."'
+    ly_do: Hồ sơ n35.
+  - cu: '"chúng tôi chưa tìm thấy nghiên cứu nào đo các ảo giác này ở Việt Nam."'
+    moi: '"tính đến 11/2026, chúng tôi chưa tìm thấy…"'
+    ly_do: Hồ sơ n37.
+  - cu: 'Ngộ nhận: "…thị giác được ''học'' từ môi trường, không chỉ do cấu tạo mắt." và "Không. Bạn có thể đo bằng thước mười lần… Kiến thức không tắt được cơ chế tự động của thị giác."'
+    moi: '"…theo giải thích của Segall và cộng sự, thị giác có thể được định hình một phần bởi môi trường…"; "Thường là không… Biết trước thường không tắt ngay được cảm giác ấy."'
+    ly_do: Hồ sơ n41, n42.
+  - cu: 'Quiz 1: "…vẫn thấy sai."; lời giải thích "…phần xử lý đó diễn ra tự động, trước khi lý trí can thiệp."'
+    moi: '"…thường vẫn thấy sai."; "…từng được nêu làm ví dụ cho kiểu xử lý thị giác ít chịu ảnh hưởng của niềm tin."'
+    ly_do: Hồ sơ n43.
+  - cu: 'Quiz 2: "Người Mỹ và châu Âu dễ bị lừa nhất"; "15 xã hội được đo bằng cùng một bộ hình vẽ."'
+    moi: '"Người Mỹ và người gốc châu Âu…"; "15 xã hội được đo trong nghiên cứu năm 1963."'
+    ly_do: Hồ sơ n44.
+  - cu: (không có)
+    moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
+    ly_do: Bố cục C (kế hoạch).
+  - cu: 'mô tả: "…và nghiên cứu kinh điển… dễ bị ảo giác Müller-Lyer hơn nhiều nền văn hóa khác."'
+    moi: '"…và nghiên cứu kinh điển cho rằng… một kết luận nay đang bị phản biện."'
+    ly_do: Review n1.
+  - cu: '"Điều bất ngờ nhất… không phải ai cũng bị lừa như nhau."; "Kết quả gây choáng:"; "Nói cách khác, … hóa ra lại mang đậm dấu ấn của môi trường sống."'
+    moi: '"…mức bị lừa khác nhau giữa các nhóm người. Đó là kết quả được báo cáo ban đầu…"; "Kết quả được báo cáo (theo Henrich…; van der Kamp…):"; đoạn "Trong nhiều năm… Amir và Firestone (2026)… không nhất quán…"'
+    ly_do: Review n17.
+  - cu: 'Khung Vững chắc: "các ảo giác hình học tồn tại và đo được một cách ổn định" (dẫn Segall, Henrich)'
+    moi: '"ảo giác Müller-Lyer tồn tại và đo được…" (dẫn Bruno và Franz 2009; Amir và Firestone 2026)'
+    ly_do: Review n20.
+  - cu: 'Khung Khá vững: "mức độ bị ảo giác khác nhau rõ rệt giữa các nền văn hóa"'
+    moi: 'Khung Đang tranh cãi: "mức độ bị ảo giác Müller-Lyer có khác nhau theo nền văn hóa hay không, và vì sao"'
+    ly_do: Review n21, n22, n23.
+  - cu: '"…được đo với hình vẽ đơn giản trong phòng thí nghiệm."'
+    moi: '"…hình vẽ đơn giản, không phải cảnh đời thường."'
+    ly_do: Review n34.
+  - cu: Công cụ Ảo giác thị giác nói như đã có trên site (mở bài; Ở Việt Nam; quiz 5 "Bạn thử công cụ… trên site")
+    moi: '"khi công cụ [Ảo giác thị giác] … lên site…"; quiz 5: "Giả sử bạn thử một công cụ đo ảo giác trực tuyến…"'
+    ly_do: Review n39.
+  - cu: 'Ngộ nhận "Mắt thấy tai nghe…": "…ngay cả khi ta đã biết sự thật."'
+    moi: '"…thường ngay cả khi ta đã biết sự thật."'
+    ly_do: Review n40.
+  - cu: 'Ngộ nhận "Người nào cũng bị ảo giác như nhau": "Mức độ bị ảo giác khác nhau rõ rệt giữa các nền văn hóa; theo giải thích của Segall…"'
+    moi: '"Mức bị ảo giác khác nhau giữa người với người: người cao tuổi…(Chen 2025)…trẻ em…(Lin 2023). Còn khác biệt giữa các nền văn hóa… đang tranh cãi."'
+    ly_do: Review n41.
+  - cu: 'Quiz 2: "…phát hiện điều gì…"; "…cho thấy đây là vấn đề môi trường học được, không phải mắt tốt hay kém."; Quiz 3: "học được cách diễn giải hình 2D thành góc 3D…"'
+    moi: '"…báo cáo điều gì…"; "…phân tích lại gần đây… không nhất quán."; "có thể hình thành thói quen thị giác thích nghi với góc vuông…"; giải thích nêu giả thuyết đang bị thách thức'
+    ly_do: Review n44, n45.
+  - cu: "Nguồn: 3 mục (Henrich, Segall 1963, 1966, van der Kamp)"
+    moi: Thêm Amir & Firestone 2026, Bruno & Franz 2009, Chen 2025, Lin 2023
+    ly_do: Review n49.
