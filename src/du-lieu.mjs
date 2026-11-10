@@ -66,6 +66,9 @@ export const schema = {
 			moi: z.literal(true).optional(), // trang mới, không có ở site cũ
 			dua_tren: khongLap(z.array(duongDan).min(1)).optional(), // bài mở rộng: các bài lõi mà nó dựa trên
 			kiem_lai_truoc: namThang.optional(), // bài mở rộng, trang có hạn: hạn xem lại, đặt khi khóa
+			// tên chủ đề khi tiêu đề là câu hỏi không nêu chủ đề ("Vì sao ta khó đổi ý…" → "Bất hòa nhận thức"): chỉ cho tìm kiếm
+			// (PageTitle.astro, Pagefind trọng số cao), không hiện trên trang; không thuộc mã băm của trang
+			chu_de: z.string().min(2).optional(),
 		})
 		.strict()
 		.superRefine((r, ctx) => {
