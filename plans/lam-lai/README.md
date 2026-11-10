@@ -185,6 +185,17 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 
 **Xong khi:** site mới không còn cần `../psyche-zero/` để build hay kiểm thử.
 
+## Việc treo (cập nhật 09/11/2026)
+
+Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong việc nào thì gạch khỏi đây.
+
+- **Chuyên gia đọc 4 bài Sức khỏe tâm thần** (đợt 7): chủ repo cung cấp sau. Các bài chỉ khóa khi hồ sơ có `nguoi.chuyen_gia`.
+- **Đường dây HOPE** (hyvongsong.com) ở trang Hỗ trợ: chủ repo quyết sau (review D2-L1: trang nói rõ số, giờ, người vận hành, nhưng tư cách pháp lý tự mâu thuẫn).
+- **Đường báo lỗi ở trang Hỗ trợ:** repo đã công khai (11/2026), có thể thêm câu mời báo lỗi kèm link GitHub Issues (mở khóa trang Hỗ trợ).
+- **Nguồn không DOI** trong hồ sơ của trang đã khóa chưa có bản ghi ở `src/data/nguon.yml` (giáo trình mở, văn bản chính thức, trang web): theo D2-0, lô dùng chúng thêm và kiểm (`bao-cao/don-nguon.md` có phân loại).
+- **Sửa nhỏ khi mở khóa:** `bang-chung/dao-duc-nghien-cuu` e4 dịch "disadvantaged" là "nghèo" ("thiệt thòi" sát hơn); nhãn Rowland 2014 (Vững chắc) phải khớp `kham-pha/tri-nho/duong-cong-quen` khi trang ấy làm (D5); trang khác dẫn nhãn cũ của Milgram, Pygmalion, Robbers Cave sửa theo nhãn mới khi chuyển.
+- **Chưa mở được toàn văn:** Messerli 2012 (NEJM), Button 2013, Gignac & Szodorai 2016, Funder & Ozer 2019, Camerer 2018, Marshall & Zimbardo 1979, Maslach 1979: số liệu qua nguồn dẫn lại, ghi ở hồ sơ.
+
 ## Rủi ro
 
 | Rủi ro | Cách giữ |

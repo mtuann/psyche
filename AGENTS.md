@@ -151,10 +151,14 @@ Chốt ở D1.4 (`src/plugins/psyche-markdown.mjs`, `src/plugins/thanh-phan.mjs`
 | Bổ sung có ngày | File `src/content/bo-sung/<trang>/<năm-tháng-ngày>.md`, frontmatter `trang`, `ngay`, `anh_huong_nhan` (`src/content/bo-sung/README.txt`) | Mục "Bổ sung" cuối trang, mới nhất trước; không sửa trang nên không đổi mã băm. Chưa có khóa riêng (đợt 9), nên chỉ hiện ở bản xem |
 | Danh sách sinh từ dữ liệu | `::danh-sach-bai{linh_vuc="tri-nho"}` (hay `nhom="thi-nghiem"`), `::the-linh-vuc`, `::bai-moi{so="6"}`, `::cong-cu-noi-bat` (D2-L1) | Chỉ trang có trong bản build (bản thật: đã khóa), tên và mô tả từ frontmatter của trang ấy; trang chưa lên chỉ được đếm ("Còn N bài sắp có") |
 | Bảng | Bảng Markdown thường | Bọc trong vùng cuộn ngang nhận focus ("Bảng N, cuộn ngang được") |
+| Tóm tắt đầu bài | `::tom-tat` (một dòng, dưới frontmatter; D3-L1) | Hộp "Tóm tắt nhanh" dựng từ ý chính của các khung nhãn trong trang, theo thứ tự; không có chữ riêng nên không cần nhận định riêng |
+| Hồ sơ nghiên cứu | `:::ho-so-nghien-cuu` … `:::`, mỗi dòng `- **Mục** nội dung` (D3-L1) | Bảng hai cột; chỉ dùng điều đã có trong phần kể nghiên cứu của chính trang, mỗi dòng một nhận định |
+| Khối chữ (hình vẽ bằng chữ) | Khối ``` không ghi ngôn ngữ (hay `text`) | Vùng cuộn ngang nhận focus ("Khối chữ N, cuộn ngang được"), chữ đều cột; không qua Expressive Code |
 | Id cố định cho tiêu đề | `## Tiêu đề { #id }` | Giữ id cũ để link `#mục` cũ còn chạy |
 
 - Script công cụ của site cũ chép nguyên ở `src/scripts/cu/` (nạp qua `src/scripts/cong-cu/<tên>.js`, `nen.js`); đợt 8 viết lại thành module. Kiểm thử trình duyệt chờ `data-san` mà `mount()` của công cụ đặt khi dựng xong.
-- Tóm tắt đầu bài, hồ sơ nghiên cứu (bản mẫu C) chưa làm: lô đầu tiên cần chúng (D3-L1) làm thành phần.
+- `title`, `description` có dấu hai chấm theo sau là khoảng trắng thì viết trong nháy đơn: danh sách sinh từ dữ liệu đọc frontmatter bằng YAML chặt, không đọc được thì build hỏng.
+- Bảng: ô tiêu đề không được rỗng (axe `empty-table-header`); ô đầu của bảng so sánh ghi tên cột (ví dụ "Khía cạnh").
 
 ## Cách làm việc
 
