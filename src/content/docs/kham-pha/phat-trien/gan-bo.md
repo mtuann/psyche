@@ -69,7 +69,7 @@ Nói cách khác: gắn bó thời thơ ấu **nghiêng** cán cân phát triể
 
 ### Văn hóa: gắn bó an toàn có phải "chuẩn toàn cầu"?
 
-Phân tích tổng hợp đa văn hóa của van IJzendoorn và Kroonenberg (1988) — gần 2.000 lượt phân loại ở 8 nước — thấy hai điều đáng chú ý: (1) **khác biệt trong cùng một nước lớn gấp 1,5 lần khác biệt giữa các nước** — tức là "văn hóa" giải thích được ít hơn ta tưởng; và (2) tỉ lệ các kiểu *không an toàn* thì khác nhau: các nước Tây Âu có nhiều bé tránh né hơn, còn Nhật Bản và Israel có nhiều bé kháng cự hơn ([van IJzendoorn và Kroonenberg, 1988](https://doi.org/10.2307/1130396)).
+Phân tích tổng hợp đa văn hóa của van IJzendoorn và Kroonenberg (1988) — gần 2.000 lượt phân loại ở 8 nước — thấy hai điều đáng chú ý: (1) **khác biệt trong cùng một nước lớn gấp khoảng 1,5 lần khác biệt giữa các nước** — tức là "văn hóa" giải thích được ít hơn ta tưởng; và (2) tỉ lệ các kiểu *không an toàn* thì khác nhau: các nước Tây Âu có nhiều bé tránh né hơn, còn Nhật Bản và Israel có nhiều bé kháng cự hơn ([van IJzendoorn và Kroonenberg, 1988](https://doi.org/10.2307/1130396)).
 
 Tuy nhiên, một bài báo của Rothbaum và cộng sự (2000) trên *American Psychologist* cho rằng chính **lý thuyết** đã mang màu sắc phương Tây: ba giả thuyết cốt lõi — người chăm sóc "nhạy cảm" dẫn tới gắn bó an toàn, gắn bó an toàn dẫn tới năng lực xã hội, và trẻ dùng người chăm sóc làm "bệ đỡ an toàn" để khám phá — được đo bằng những thước đo thiên về tự chủ, cá nhân hóa và khám phá của phương Tây. So sánh Mỹ và Nhật, họ thấy sự nhạy cảm, năng lực xã hội và bệ đỡ an toàn được hiểu rất khác ở Nhật. Nhóm tác giả kêu gọi xây dựng những lý thuyết gắn bó "bản địa" cho từng nền văn hóa, thay vì áp một khuôn phương Tây cho cả thế giới.
 
