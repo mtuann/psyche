@@ -21,7 +21,7 @@ Không trang, bản ghi đã khóa nào đổi.
 
 ## Model
 
-Opus 5.5 (sửa), Haiku đọc diff (mức vừa).
+Opus 5.5 (sửa), Haiku đọc diff (mức vừa): báo một lỗi "dấu đang xem dính sang trang sau" do sidebar Starlight lưu đệm; không đúng, vì Starlight chép sâu (klona) dữ liệu trang trước khi chạy middleware, và bản build cho thấy mỗi trang đúng một dấu ở chỗ gốc. CI test.yml 6/6.
 
 ## Chỗ chưa chắc
 
