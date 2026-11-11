@@ -70,6 +70,8 @@ export default defineConfig({
 			// Menu đủ tám nhóm, Nền tảng chia theo 14 lĩnh vực (src/menu.mjs), chỉ trang có trong bản build này; nhóm chưa có
 			// trang hiện "sắp có" (src/components/Sidebar.astro). Đang chạy npm run dev mà thêm, xóa trang thì khởi động lại.
 			sidebar: menu(trangTrongBan(), duLieu.trang, duLieu['linh-vuc']),
+			// Bài lặp trong lĩnh vực của Nền tảng: không đánh dấu đang xem, Trước, Tiếp bỏ qua (src/dieu-huong.mjs)
+			routeMiddleware: './src/dieu-huong.mjs',
 			customCss: ['./src/styles/fonts.css', './src/styles/psyche.css', './src/styles/thanh-phan.css'],
 			components: {
 				Banner: './src/components/Banner.astro',

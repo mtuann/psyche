@@ -8,7 +8,7 @@ import path from 'node:path';
 import { BIEU_TUONG, svg } from '../src/bieu-tuong.mjs';
 import { diaChi, trangCuaDiaChi } from '../src/ban-build.mjs';
 import { duLieuDaKiem } from '../src/du-lieu.mjs';
-import { NHOM, menu, nhomCuaTrang } from '../src/menu.mjs';
+import { LAP, NHOM, menu, nhomCuaTrang, suaBanLap } from '../src/menu.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -42,10 +42,49 @@ test('menu: chỉ trang có trong bản build, theo thứ tự của trang.yml; 
 	assert.deepEqual(nenTang[0], { slug: 'kham-pha', label: 'Tổng quan' });
 	const triNho = nenTang.find((x) => x.label === 'Trí nhớ');
 	assert.deepEqual(triNho.items, [{ slug: 'nen-tang/tri-nho', label: 'Tổng quan' }, { slug: 'kham-pha/tri-nho/vi-sao-ta-quen' }]);
-	// trang chủ không vào menu; mỗi trang đúng một chỗ
-	const slugs = JSON.stringify(m).match(/"slug":"[^"]*"/g);
-	assert.equal(slugs.length, trang.length - 1);
-	assert.equal(new Set(slugs).size, slugs.length);
+	// trang chủ không vào menu; mỗi trang đúng một chỗ gốc (không kể bản lặp trong lĩnh vực của Nền tảng)
+	const goc = JSON.stringify(m, (k, v) => (v?.attrs?.[LAP] !== undefined ? undefined : v)).match(/"slug":"[^"]*"/g);
+	assert.equal(goc.length, trang.length - 1);
+	assert.equal(new Set(goc).size, goc.length);
+	// asch (thí nghiệm, lĩnh vực Tâm lý xã hội) lặp ở lĩnh vực của nó; bài nhóm Bắt đầu không lặp
+	const tlxh = nenTang.find((x) => x.label === 'Tâm lý xã hội');
+	assert.deepEqual(tlxh.items, [{ slug: 'thi-nghiem/asch', attrs: { [LAP]: '' } }]);
+});
+
+test('menu: lĩnh vực của Nền tảng kể đủ bài như trang lĩnh vực (::danh-sach-bai), kể cả bài ở nhóm khác', () => {
+	const tat = duLieu.trang.map((r) => r.id);
+	const m = menu(tat, duLieu.trang, duLieu['linh-vuc']);
+	const nenTang = m.find((n) => n.label === 'Nền tảng').items;
+	const laBai = (r) => /^(kham-pha|thi-nghiem|bang-chung)\//.test(r.id) && !r.id.endsWith('/index') && (r.tang === 'loi' || r.tang === 'mo-rong');
+	for (const l of duLieu['linh-vuc']) {
+		const muc = nenTang.find((x) => x.label === l.ten).items.map((x) => x.slug);
+		const can = duLieu.trang.filter((r) => r.linh_vuc === l.id && laBai(r)).map((r) => r.id);
+		for (const t of can) assert.ok(muc.includes(t), `${l.id}: menu thiếu ${t}`);
+	}
+	const hocTap = nenTang.find((x) => x.label === 'Học tập').items;
+	assert.ok(hocTap.some((x) => x.slug === 'thi-nghiem/pavlov' && x.attrs?.[LAP] === ''));
+});
+
+test('menu: Starlight đánh dấu chỗ lặp (khớp đầu tiên) thì dời sang chỗ gốc; Trước, Tiếp bỏ qua chỗ lặp', () => {
+	const link = (slug, cur = false, lap = false) => ({ type: 'link', href: `/${slug}/`, label: slug, isCurrent: cur, attrs: lap ? { [LAP]: '' } : {} });
+	const route = () => ({
+		sidebar: [
+			{ type: 'group', entries: [link('nen-tang/hoc-tap'), link('thi-nghiem/pavlov', true, true), link('thi-nghiem/skinner', false, true)] },
+			{ type: 'group', entries: [link('thi-nghiem/asch'), link('thi-nghiem/pavlov'), link('thi-nghiem/skinner')] },
+		],
+		pagination: {},
+		entry: { data: {} },
+	});
+	const r = route();
+	suaBanLap(r);
+	assert.equal(r.sidebar[0].entries[1].isCurrent, false);
+	assert.equal(r.sidebar[1].entries[1].isCurrent, true);
+	assert.equal(r.pagination.prev.label, 'thi-nghiem/asch');
+	assert.equal(r.pagination.next.label, 'thi-nghiem/skinner');
+	const r2 = route();
+	r2.entry.data = { prev: false, next: false };
+	suaBanLap(r2);
+	assert.deepEqual(r2.pagination, { prev: undefined, next: undefined });
 });
 
 test('menu: mọi trang của trang.yml (trừ trang chủ) thuộc đúng một nhóm', () => {
