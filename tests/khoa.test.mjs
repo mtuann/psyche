@@ -10,6 +10,7 @@ import path from 'node:path';
 import { parse, stringify } from 'yaml';
 import { locTheoBan } from '../src/ban-build.mjs';
 import { chuanHoaTrang, docKhoa, jsonChuan, kiemKhoa, hinhCuaTrang, maBamBanGhi, maBamTrang, maBamTrangFile } from '../src/khoa.mjs';
+import { kiemDinh } from '../src/kiem-dinh.mjs';
 import { MAU_MO_RONG, lenh, loiHoSo } from '../tools/khoa.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -132,6 +133,24 @@ test('luật của hồ sơ: trang Sức khỏe tâm thần cần chữ ký chuy
 		const co = hoSo(sk, 'loi', [nd()]);
 		co.lan[0].nguoi = { ...NGUOI, chuyen_gia: 'BS. X, 2027-01-05' };
 		assert.deepEqual(loiHoSo(co, sk, goc), []);
+		// chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026): khóa được, trang hiện dải "Chưa qua rà soát chuyên môn"
+		const truoc = hoSo(sk, 'loi', [nd()]);
+		truoc.lan[0].nguoi = { ...NGUOI, cho_chuyen_gia: 'chủ repo đồng ý đăng trước, 2026-11-16' };
+		assert.deepEqual(loiHoSo(truoc, sk, goc), []);
+		truoc.lan[0].nguoi.cho_chuyen_gia = '  ';
+		assert.match(loiHoSo(truoc, sk, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
+		truoc.lan[0].nguoi.cho_chuyen_gia = true;
+		assert.match(loiHoSo(truoc, sk, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
+		const cgTam = { ...NGUOI, cho_chuyen_gia: 'x' };
+		const kd = (nguoi) => kiemDinh(sk, { trang: { [sk]: 'sha256:x' } }, stringify({ tang: 'loi', nhan_dinh: [nd()], lan: [{ so: 1, ngay: '2026-11-16', nguoi }] }));
+		assert.equal(kd(cgTam).choChuyenGia, true);
+		assert.equal(kd({ ...cgTam, chuyen_gia: 'BS. X, 2027-01-05' }).choChuyenGia, false);
+		assert.equal(kd({ ...NGUOI, chuyen_gia: ' ' }).choChuyenGia, true);
+		const trong = hoSo(sk, 'loi', [nd()]);
+		trong.lan[0].nguoi = { ...NGUOI, chuyen_gia: ' ' };
+		assert.match(loiHoSo(trong, sk, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
+		trong.lan[0].nguoi.chuyen_gia = true;
+		assert.match(loiHoSo(trong, sk, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
 
 		const mr = 'kham-pha/tri-nho/phong-cach-hoc';
 		ghi(`src/content/docs/${mr}.md`, '---\ntitle: A\n---\n\nChữ.\n');

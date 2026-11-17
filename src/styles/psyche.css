@@ -298,6 +298,29 @@ starlight-theme-select select {
 	font-weight: 700;
 	white-space: nowrap;
 }
+/* Bài Sức khỏe tâm thần đăng trước khi chuyên gia đọc (PageTitle.astro): khung viền cam, như cờ "Chưa kiểm định lại" */
+.pz-cho-ra-soat {
+	margin: 1rem 0 0;
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--sl-color-orange);
+	border-inline-start-width: 4px;
+	border-radius: 0.4rem;
+	background: var(--sl-color-orange-low);
+	color: var(--sl-color-white);
+	font-size: var(--sl-text-sm);
+	line-height: 1.55;
+}
+.pz-cho-ra-soat p {
+	margin: 0;
+}
+.pz-cho-ra-soat p + p {
+	margin-top: 0.4rem;
+}
+.pz-cho-ra-soat a {
+	color: inherit;
+	font-weight: 700;
+	text-decoration: underline;
+}
 .pz-dau__dau {
 	flex: none;
 	width: 1.1rem;

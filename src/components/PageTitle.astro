@@ -40,6 +40,9 @@ const kd = trang ? kiemDinh(trang, KHOA, HO_SO[`/kiem-dinh/${trang}.yml`] as str
 // mọi người đọc (sr-only để Pagefind vẫn đọc; aria-hidden để máy đọc màn hình không đọc lặp). Không đọc từ thân trang,
 // nên mã băm của trang không đổi.
 const tenMenu = entry.data.sidebar?.label;
+// Bài Sức khỏe tâm thần đã khóa khi chuyên gia chưa đọc (hồ sơ: nguoi.cho_chuyen_gia; chủ repo đồng ý 16/11/2026): dải báo
+// ngay dưới tiêu đề. Đọc từ hồ sơ, không từ trang, nên khi chuyên gia ký thì dải tự mất mà mã băm của trang không đổi.
+const choRaSoat = Boolean(kd?.choChuyenGia && trang && loaiTrang(trang) === 'suc-khoe');
 const tenTim = [banGhi?.chu_de, tenMenu && tenMenu !== entry.data.title ? tenMenu : undefined].filter(Boolean).join('. ');
 ---
 
@@ -81,5 +84,20 @@ const tenTim = [banGhi?.chu_de, tenMenu && tenMenu !== entry.data.title ? tenMen
 					<span>Nội dung lấy từ Psyche Zero, đang chờ kiểm chứng lại từ đầu.</span>
 				</p>
 			))
+	}
+	{
+		choRaSoat && (
+			<aside class="pz-cho-ra-soat" aria-label="Chưa qua rà soát chuyên môn" data-cho-ra-soat data-pagefind-ignore>
+				<p>
+					<strong>Chưa qua rà soát chuyên môn.</strong> Bài đã được kiểm chứng hai lượt theo nguồn (hướng dẫn lâm sàng,
+					tổng quan hệ thống), nhưng chưa được chuyên gia sức khỏe tâm thần đọc lại. Bài giúp hiểu chung, không dùng để tự
+					chẩn đoán và không thay lời khuyên của người chữa trị.
+				</p>
+				<p>
+					Bạn đang gặp khó khăn? <a href={diaChi('ho-tro/index')}>Xem trang Hỗ trợ</a>: khi nào nên tìm
+					chuyên gia và số điện thoại khẩn cấp.
+				</p>
+			</aside>
+		)
 	}
 </div>
