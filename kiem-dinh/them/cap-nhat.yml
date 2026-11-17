@@ -4,55 +4,68 @@ nguon_cu: ../psyche-zero/docs/them/cap-nhat.md
 tang: cap-nhat
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l4
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
-    luot_2: không cần (mọi nhận định là câu ve-site, không có câu vào lượt 2 D8-L4)
-    review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l4
+    ma_bam: sha256:0ce56cd1b53a3ae8744736282fb4b4a9a02f368159fe83adcafcc49be4716056
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+      luot_2: không cần (mọi nhận định là câu ve-site, không có câu vào lượt 2 D8-L4)
+      review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l4-kiem-mau.yml), đạt, 17/11/2026
+  - so: 2
+    ngay: 2026-11-17
+    nhanh: moi/d8-l4
+    ma_bam: sha256:1abd06fdaa73328dec33e0529db7cd8549fd0351c91d2b8a4c608b8c755a443f
+    nguoi:
+      luot_1: "Claude Opus 5.5 (người gộp, 17/11/2026): mục 17/11/2026 thêm D8-L2, D8-L3, D8-L4"
+      luot_2: "không cần: chỉ đổi câu về chính site (ve-site)"
+      review: "Claude Opus 5.5 (người gộp, 17/11/2026): đối chiếu khoa.json của main sau khi gộp ba lô"
+      kiem_mau: chủ repo kiểm mẫu D8-L2, D8-L3, D8-L4 đạt (17/11/2026); lần này chỉ thêm tên các trang của ba lô ấy vào mục cùng ngày
 nguon: []
 nhan_dinh:
-- id: s1
-  cau: Nhật ký thay đổi của site, mới nhất trước; mỗi mục có ngày; mục cũ không bị viết lại, nếu có sai thì đính chính bằng một mục mới.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: Tầng cap-nhat (plans/ben-vung/README.md mục 2); tests/them.test.mjs (tiêu đề có ngày, mới nhất trước; mục đã có ở main giữ nguyên).
-- id: s2
-  cau: 'Psyche đang được làm lại từ Psyche Zero (bản đầu của site, 10/2026): mỗi trang lên site sau khi được kiểm chứng lại từ đầu.'
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: plans/lam-lai/README.md (Quyết định, luật 1); src/ban-build.mjs (bản thật chỉ trang đã khóa).
-- id: s3
-  cau: 'Các mục cập nhật của Psyche Zero (13/10 đến 22/10/2026) không chép sang: chúng kể các lần sửa của bản cũ, mà mọi trang chuyển sang site này đều được kiểm lại từng câu.'
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: '../psyche-zero/docs/them/cap-nhat.md: 13 mục, ngày 13/10/2026 đến 22/10/2026 (đã đếm, 17/11/2026). Danh sách mục bỏ và lý do: báo cáo plans/lam-lai/bao-cao/d8-l4.md, mục "Cập nhật: mục cũ".'
-- id: s4
-  cau: '10/11/2026: thêm 47 bài khám phá đã kiểm chứng (ngày 9 và 10/11/2026), thuộc các lĩnh vực trí nhớ, trí tuệ, tư duy, chú ý và tri giác, tính cách, tâm lý xã hội, cảm xúc và động lực, căng thẳng và giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển suốt đời.'
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'git log main: commit khóa d31255b (9/11/2026, D5-L1) tới 18ef43f (10/11/2026, D6-L3). Số bài (khám phá, thí nghiệm, hiểu bằng chứng, trừ mục lục) trong kiem-dinh/khoa.json: 27 ở 4dfb99d (30/10), 74 ở 86d3256 (10/11): thêm 47, đều ở kham-pha/ (D5-L1 đến D6-L3: 7+5+7+8+7+6+7). Mười một lĩnh vực theo các báo cáo d5-l1 … d6-l3.'
-- id: s5
-  cau: '30/10/2026: site mới mở ở https://mtuann.github.io/psyche/, với lối vào (trang chủ, Bắt đầu, Cách đọc nhãn, Cách Psyche kiểm chứng, Hỗ trợ, Khám phá, 14 trang lĩnh vực), 15 thí nghiệm kinh điển và mục lục, 12 bài Hiểu bằng chứng và mục lục.'
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'git log main 30/10/2026: e26d468 (D2-L1, 20 trang), 39b3e36 và f05dd0c (D3, 16 trang), b54108a và 54f0103 (D4, 13 trang); kiem-dinh/khoa.json ở 4dfb99d có 50 trang (gồm 404). Kế hoạch: "Đợt 1 xong 30/10/2026 … deploy đăng trang chủ tạm và 404 mới". https://mtuann.github.io/psyche/ trả 200 (17/11/2026). Ngày lên site là ngày khóa và gộp vào main; deploy chạy khi chủ repo push (không thấy được nhật ký deploy từ máy này).'
-- id: s6
-  cau: '17/11/2026: thêm 4 bài Sức khỏe tâm thần (trầm cảm, lo âu, tìm giúp đỡ, trị liệu tâm lý), đã kiểm chứng hai lượt nhưng chưa được chuyên gia sức khỏe tâm thần đọc lại, có dải "Chưa qua rà soát chuyên môn"; và Tự trải nghiệm: trang mục lục và 5 công cụ (Stroop, độ dài trí nhớ chữ số, Müller-Lyer, mù thay đổi, Ebbinghaus).'
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'git log origin/main: f502ebe (17/11/2026 07:45, D7-L1: khóa 4 bài Sức khỏe tâm thần, đăng trước khi chuyên gia đọc) và d95de31 (17/11/2026 07:49, D8-L1: khóa 6 trang Tự trải nghiệm). kiem-dinh/khoa.json sau gộp main có kham-pha/suc-khoe-tam-than/{tram-cam,lo-au,tim-giup-do,tri-lieu-tam-ly} và trai-nghiem/{index,stroop,do-dai-tri-nho,ao-giac-thi-giac,mu-thay-doi,ebbinghaus}; hồ sơ tram-cam: lan cuối nguoi.cho_chuyen_gia, không có chuyen_gia. Mục thêm theo phép "chỉ thêm" (mục mới đứng đầu, hai mục cũ giữ nguyên). Review (Claude Opus 5.5, agent riêng, 17/11/2026): đạt. git log main: f502ebe (17/11/2026 07:45) và d95de31 (07:49); kiem-dinh/khoa.json ở f502ebe có 4 bài kham-pha/suc-khoe-tam-than/, ở d95de31 có 6 trang trai-nghiem/ (mục lục và 5 công cụ, tên khớp). Hai mục cũ cũng kiểm lại trên khoa.json: a1b8abc (30/10) có 50 trang (20 lối vào, 16 thi-nghiem/, 13 bang-chung/, 404), 9f551a9 (10/11) có 47 bài kham-pha/ ngoài mục lục.'
+  - id: s1
+    cau: Nhật ký thay đổi của site, mới nhất trước; mỗi mục có ngày; mục cũ không bị viết lại, nếu có sai thì đính chính bằng một mục mới.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: Tầng cap-nhat (plans/ben-vung/README.md mục 2); tests/them.test.mjs (tiêu đề có ngày, mới nhất trước; mục đã có ở main giữ nguyên).
+  - id: s2
+    cau: 'Psyche đang được làm lại từ Psyche Zero (bản đầu của site, 10/2026): mỗi trang lên site sau khi được kiểm chứng lại từ đầu.'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: plans/lam-lai/README.md (Quyết định, luật 1); src/ban-build.mjs (bản thật chỉ trang đã khóa).
+  - id: s3
+    cau: 'Các mục cập nhật của Psyche Zero (13/10 đến 22/10/2026) không chép sang: chúng kể các lần sửa của bản cũ, mà mọi trang chuyển sang site này đều được kiểm lại từng câu.'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: '../psyche-zero/docs/them/cap-nhat.md: 13 mục, ngày 13/10/2026 đến 22/10/2026 (đã đếm, 17/11/2026). Danh sách mục bỏ và lý do: báo cáo plans/lam-lai/bao-cao/d8-l4.md, mục "Cập nhật: mục cũ".'
+  - id: s4
+    cau: '10/11/2026: thêm 47 bài khám phá đã kiểm chứng (ngày 9 và 10/11/2026), thuộc các lĩnh vực trí nhớ, trí tuệ, tư duy, chú ý và tri giác, tính cách, tâm lý xã hội, cảm xúc và động lực, căng thẳng và giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển suốt đời.'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'git log main: commit khóa d31255b (9/11/2026, D5-L1) tới 18ef43f (10/11/2026, D6-L3). Số bài (khám phá, thí nghiệm, hiểu bằng chứng, trừ mục lục) trong kiem-dinh/khoa.json: 27 ở 4dfb99d (30/10), 74 ở 86d3256 (10/11): thêm 47, đều ở kham-pha/ (D5-L1 đến D6-L3: 7+5+7+8+7+6+7). Mười một lĩnh vực theo các báo cáo d5-l1 … d6-l3.'
+  - id: s5
+    cau: '30/10/2026: site mới mở ở https://mtuann.github.io/psyche/, với lối vào (trang chủ, Bắt đầu, Cách đọc nhãn, Cách Psyche kiểm chứng, Hỗ trợ, Khám phá, 14 trang lĩnh vực), 15 thí nghiệm kinh điển và mục lục, 12 bài Hiểu bằng chứng và mục lục.'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'git log main 30/10/2026: e26d468 (D2-L1, 20 trang), 39b3e36 và f05dd0c (D3, 16 trang), b54108a và 54f0103 (D4, 13 trang); kiem-dinh/khoa.json ở 4dfb99d có 50 trang (gồm 404). Kế hoạch: "Đợt 1 xong 30/10/2026 … deploy đăng trang chủ tạm và 404 mới". https://mtuann.github.io/psyche/ trả 200 (17/11/2026). Ngày lên site là ngày khóa và gộp vào main; deploy chạy khi chủ repo push (không thấy được nhật ký deploy từ máy này).'
+  - id: s6
+    cau: '17/11/2026: thêm 4 bài Sức khỏe tâm thần (trầm cảm, lo âu, tìm giúp đỡ, trị liệu tâm lý), đã kiểm chứng hai lượt nhưng chưa được chuyên gia sức khỏe tâm thần đọc lại, có dải "Chưa qua rà soát chuyên môn"; Tự trải nghiệm: trang mục lục và 11 công cụ; Ngộ nhận phổ biến: 60 thẻ và bài thử Bạn nghĩ gì về tâm trí?; Sách in, Tờ tóm tắt, Giới thiệu, Dữ liệu của tôi, Nhật ký, Nghiên cứu mới, Cập nhật; đọc lại được trang đã mở khi mất mạng.'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'Lần 2 (người gộp, Claude Opus 5.5, 17/11/2026): thêm D8-L2 (6 công cụ: tri-nho-sai, wason-246, linda, big-five-mini, neo-gia, tri-nho-tu), D8-L3 (bat-dau/ban-nghi-gi, ngo-nhan/index, 60 thẻ du-lieu/ngo-nhan/), D8-L4 (sach/index, sach/tom-tat, them/*; service worker): cả ba khóa 17/11/2026 sau kiểm mẫu đạt, gộp vào main cùng đợt với nhánh này (kiểm trên khoa.json của main sau gộp). git log origin/main: f502ebe (17/11/2026 07:45, D7-L1: khóa 4 bài Sức khỏe tâm thần, đăng trước khi chuyên gia đọc) và d95de31 (17/11/2026 07:49, D8-L1: khóa 6 trang Tự trải nghiệm). kiem-dinh/khoa.json sau gộp main có kham-pha/suc-khoe-tam-than/{tram-cam,lo-au,tim-giup-do,tri-lieu-tam-ly} và trai-nghiem/{index,stroop,do-dai-tri-nho,ao-giac-thi-giac,mu-thay-doi,ebbinghaus}; hồ sơ tram-cam: lan cuối nguoi.cho_chuyen_gia, không có chuyen_gia. Mục thêm theo phép "chỉ thêm" (mục mới đứng đầu, hai mục cũ giữ nguyên). Review (Claude Opus 5.5, agent riêng, 17/11/2026): đạt. git log main: f502ebe (17/11/2026 07:45) và d95de31 (07:49); kiem-dinh/khoa.json ở f502ebe có 4 bài kham-pha/suc-khoe-tam-than/, ở d95de31 có 6 trang trai-nghiem/ (mục lục và 5 công cụ, tên khớp). Hai mục cũ cũng kiểm lại trên khoa.json: a1b8abc (30/10) có 50 trang (20 lối vào, 16 thi-nghiem/, 13 bang-chung/, 404), 9f551a9 (10/11) có 47 bài kham-pha/ ngoài mục lục.'
 doi_chu:
-- cu: 13 mục nhật ký của Psyche Zero (13/10–22/10/2026)
-  moi: Một đoạn nói các mục ấy không chép sang; hai mục mới của site mới (30/10 và 10/11/2026)
-  ly_do: 'Yêu cầu của lô: mục cũ kiểm như nhận định, không kiểm được (hay không còn đúng với site mới) thì bỏ và ghi lại. Báo cáo D8-L4 liệt kê từng mục bỏ.'
+  - cu: 13 mục nhật ký của Psyche Zero (13/10–22/10/2026)
+    moi: Một đoạn nói các mục ấy không chép sang; hai mục mới của site mới (30/10 và 10/11/2026)
+    ly_do: 'Yêu cầu của lô: mục cũ kiểm như nhận định, không kiểm được (hay không còn đúng với site mới) thì bỏ và ghi lại. Báo cáo D8-L4 liệt kê từng mục bỏ.'
 ghi_chu: 'Dòng cập nhật về chính site: mọi câu là câu về chính site, kiểm trên git log của main và kiem-dinh/khoa.json. Mục cho đợt 7–8 (Sức khỏe tâm thần, công cụ, Sách in…) thêm khi các lô ấy được khóa và gộp.'
+mo_khoa:
+  - ngay: 2026-11-17
+    nhanh: moi/d8-l4
+    ly_do: Mục 17/11/2026 thêm D8-L2, D8-L3, D8-L4 (khóa cùng ngày, chủ repo kiểm mẫu đạt 17/11/2026); mục chưa có trên main nên vẫn là chỉ thêm

@@ -7,10 +7,12 @@ Nhật ký thay đổi của site, mới nhất trước. Mỗi mục có ngày;
 
 Psyche đang được làm lại từ Psyche Zero (bản đầu của site, 10/2026): mỗi trang lên site sau khi được kiểm chứng lại từ đầu ([Cách Psyche kiểm chứng](/psyche/bat-dau/cach-kiem-chung/)). Các mục cập nhật của Psyche Zero (13/10 đến 22/10/2026) không chép sang đây: chúng kể các lần sửa của bản cũ, mà mọi trang chuyển sang site này đều được kiểm lại từng câu.
 
-## 17/11/2026: Sức khỏe tâm thần và công cụ tự trải nghiệm { #2026-11-17 }
+## 17/11/2026: Sức khỏe tâm thần, công cụ, ngộ nhận và sách in { #2026-11-17 }
 
 - 4 bài [Sức khỏe tâm thần](/psyche/nen-tang/suc-khoe-tam-than/): trầm cảm, lo âu, tìm giúp đỡ, trị liệu tâm lý. Các bài đã được kiểm chứng hai lượt, nhưng chưa được chuyên gia sức khỏe tâm thần đọc lại, nên có dải "Chưa qua rà soát chuyên môn" dưới tiêu đề.
-- [Tự trải nghiệm](/psyche/trai-nghiem/): trang mục lục và 5 công cụ (hiệu ứng Stroop, độ dài trí nhớ chữ số, ảo giác Müller-Lyer, mù thay đổi, ảo giác Ebbinghaus).
+- [Tự trải nghiệm](/psyche/trai-nghiem/): trang mục lục và 11 công cụ (hiệu ứng Stroop, độ dài trí nhớ chữ số, ảo giác Müller-Lyer, mù thay đổi, ảo giác Ebbinghaus, trí nhớ sai, bài toán 2-4-6 của Wason, bài toán Linda, Big Five mini, hiệu ứng mỏ neo, độ dài trí nhớ từ).
+- [Ngộ nhận phổ biến](/psyche/ngo-nhan/): 60 thẻ ngộ nhận, và bài thử [Bạn nghĩ gì về tâm trí?](/psyche/bat-dau/ban-nghi-gi/).
+- [Sách in](/psyche/sach/), [Tờ tóm tắt](/psyche/sach/tom-tat/), [Giới thiệu](/psyche/them/gioi-thieu/), [Dữ liệu của tôi](/psyche/them/du-lieu-cua-toi/), [Nhật ký](/psyche/them/nhat-ky/), [Nghiên cứu mới](/psyche/them/nghien-cuu-moi/) và trang này; site đọc lại được các trang đã mở khi mất mạng.
 
 ## 10/11/2026: Thêm 47 bài Nền tảng { #2026-11-10 }
 

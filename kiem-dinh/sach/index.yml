@@ -4,61 +4,61 @@ nguon_cu: ../psyche-zero/docs/sach/index.md
 tang: khung
 muc: null
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l4
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
-    luot_2: không cần (mọi nhận định là câu ve-site, không có câu vào lượt 2 D8-L4)
-    review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l4
+    ma_bam: sha256:160de778d52f675de33e9d44dd5b5355350f979c35a404a05e0a8ab2670101d3
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+      luot_2: không cần (mọi nhận định là câu ve-site, không có câu vào lượt 2 D8-L4)
+      review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l4-kiem-mau.yml), đạt, 17/11/2026
 nguon: []
 nhan_dinh:
-- id: s1
-  cau: Trang này gộp mọi bài khám phá, thí nghiệm kinh điển và hiểu bằng chứng đã lên site, theo lĩnh vực.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'Đã kiểm src/components/SachIn.astro (baiTheoLinhVuc trong src/plugins/thanh-phan.mjs: bài tầng loi, mo-rong trong kham-pha/, thi-nghiem/, bang-chung/, trừ trang mục lục, có trong bộ docs của bản build; xếp theo thu_tu của linh-vuc.yml rồi thứ tự trang.yml). tests/sach.test.mjs so tập bài trong sách với tập bài có trong dist/ (17/11/2026, bản xem: 74 bài, khớp).'
-- id: s2
-  cau: Sách tự cập nhật mỗi khi site có bài mới, nên bản bạn in ra là bản của ngày in.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: Sách dựng lúc build (::sach-in, SachIn.astro), không có file sinh nào commit; mỗi lần deploy build lại (.github/workflows/deploy.yml), nên sách luôn theo bản đang đăng.
-- id: s3
-  cau: Dùng lệnh In của trình duyệt (Ctrl+P, trên máy Mac là ⌘+P); muốn có file thì chọn "Lưu thành PDF".
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: Lời hướng dẫn dùng trình duyệt; đã thử in trang sach/ ra PDF bằng Chromium của Playwright (page.pdf, 17/11/2026). Phím tắt in Ctrl+P và ⌘+P là phím tắt chuẩn của Chrome, Firefox, Safari.
-- id: s4
-  cau: Mỗi bài bắt đầu ở một trang giấy mới.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'src/styles/thanh-phan.css, @media print: .pz-sach__bai { break-before: page }; đã xem bản PDF in thử (Chromium, 17/11/2026).'
-- id: s5
-  cau: Công cụ tương tác được thay bằng một dòng dẫn về trang của bài; câu hỏi "Thử suy ngẫm" in kèm đáp án và lời giải thích.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'baiTrongSach (src/plugins/thanh-phan.mjs) thay khối pz-cong-cu bằng dòng "Công cụ tương tác: trải nghiệm ở trang của bài trên web"; câu hỏi giữ bản tĩnh (đáp án đúng in đậm, lời giải thích dưới mỗi câu, src/styles/thanh-phan.css .pz-quiz__ds); trang sách không tải bộ tải thành phần (tests/sach.test.mjs).'
-- id: s6
-  cau: 'Dòng đầu sách (sinh lúc build): số bài, ngày khóa của bài mới khóa nhất, số bài còn sắp có; bản xem ghi thêm số bài chưa kiểm định.'
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'SachIn.astro: ngày lấy từ lần kiểm định cuối trong hồ sơ của từng bài (kiemDinh, src/kiem-dinh.mjs); số bài sắp có đếm từ trang.yml (soBaiChuaLen).'
-- id: s7
-  cau: Mỗi bài trong sách có dòng trạng thái kiểm định như dưới tiêu đề của bài, địa chỉ của bài trên web, và (bài Sức khỏe tâm thần chưa có chữ ký chuyên gia) dải "Chưa qua rà soát chuyên môn" kèm địa chỉ trang Hỗ trợ.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: SachIn.astro dùng chuTrangThai và kiemDinh như src/components/PageTitle.astro; điều kiện dải giống PageTitle (choChuyenGia và loaiTrang suc-khoe). Chữ của dải rút từ dải trên trang bài, giữ câu "không dùng để tự chẩn đoán".
+  - id: s1
+    cau: Trang này gộp mọi bài khám phá, thí nghiệm kinh điển và hiểu bằng chứng đã lên site, theo lĩnh vực.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'Đã kiểm src/components/SachIn.astro (baiTheoLinhVuc trong src/plugins/thanh-phan.mjs: bài tầng loi, mo-rong trong kham-pha/, thi-nghiem/, bang-chung/, trừ trang mục lục, có trong bộ docs của bản build; xếp theo thu_tu của linh-vuc.yml rồi thứ tự trang.yml). tests/sach.test.mjs so tập bài trong sách với tập bài có trong dist/ (17/11/2026, bản xem: 74 bài, khớp).'
+  - id: s2
+    cau: Sách tự cập nhật mỗi khi site có bài mới, nên bản bạn in ra là bản của ngày in.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: Sách dựng lúc build (::sach-in, SachIn.astro), không có file sinh nào commit; mỗi lần deploy build lại (.github/workflows/deploy.yml), nên sách luôn theo bản đang đăng.
+  - id: s3
+    cau: Dùng lệnh In của trình duyệt (Ctrl+P, trên máy Mac là ⌘+P); muốn có file thì chọn "Lưu thành PDF".
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: Lời hướng dẫn dùng trình duyệt; đã thử in trang sach/ ra PDF bằng Chromium của Playwright (page.pdf, 17/11/2026). Phím tắt in Ctrl+P và ⌘+P là phím tắt chuẩn của Chrome, Firefox, Safari.
+  - id: s4
+    cau: Mỗi bài bắt đầu ở một trang giấy mới.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'src/styles/thanh-phan.css, @media print: .pz-sach__bai { break-before: page }; đã xem bản PDF in thử (Chromium, 17/11/2026).'
+  - id: s5
+    cau: Công cụ tương tác được thay bằng một dòng dẫn về trang của bài; câu hỏi "Thử suy ngẫm" in kèm đáp án và lời giải thích.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'baiTrongSach (src/plugins/thanh-phan.mjs) thay khối pz-cong-cu bằng dòng "Công cụ tương tác: trải nghiệm ở trang của bài trên web"; câu hỏi giữ bản tĩnh (đáp án đúng in đậm, lời giải thích dưới mỗi câu, src/styles/thanh-phan.css .pz-quiz__ds); trang sách không tải bộ tải thành phần (tests/sach.test.mjs).'
+  - id: s6
+    cau: 'Dòng đầu sách (sinh lúc build): số bài, ngày khóa của bài mới khóa nhất, số bài còn sắp có; bản xem ghi thêm số bài chưa kiểm định.'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'SachIn.astro: ngày lấy từ lần kiểm định cuối trong hồ sơ của từng bài (kiemDinh, src/kiem-dinh.mjs); số bài sắp có đếm từ trang.yml (soBaiChuaLen).'
+  - id: s7
+    cau: Mỗi bài trong sách có dòng trạng thái kiểm định như dưới tiêu đề của bài, địa chỉ của bài trên web, và (bài Sức khỏe tâm thần chưa có chữ ký chuyên gia) dải "Chưa qua rà soát chuyên môn" kèm địa chỉ trang Hỗ trợ.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: SachIn.astro dùng chuTrangThai và kiemDinh như src/components/PageTitle.astro; điều kiện dải giống PageTitle (choChuyenGia và loaiTrang suc-khoe). Chữ của dải rút từ dải trên trang bài, giữ câu "không dùng để tự chẩn đoán".
 doi_chu:
-- cu: Trang Markdown 12.571 dòng do tools/book.py của site cũ sinh và commit (bìa, mục lục, toàn văn 78 bài, banner chờ rà soát)
-  moi: Trang khung ngắn (lời dẫn, hộp "Khi in", chỉ thị ::sach-in); nội dung sách dựng lúc build từ các bài có trong bản build (SachIn.astro)
-  ly_do: 'Kế hoạch (Quyết định; đợt 8): Sách in sinh lúc build từ trang đã khóa, không commit file sinh. Lời dẫn viết mới, mọi câu là câu về chính site (s1–s7).'
+  - cu: Trang Markdown 12.571 dòng do tools/book.py của site cũ sinh và commit (bìa, mục lục, toàn văn 78 bài, banner chờ rà soát)
+    moi: Trang khung ngắn (lời dẫn, hộp "Khi in", chỉ thị ::sach-in); nội dung sách dựng lúc build từ các bài có trong bản build (SachIn.astro)
+    ly_do: 'Kế hoạch (Quyết định; đợt 8): Sách in sinh lúc build từ trang đã khóa, không commit file sinh. Lời dẫn viết mới, mọi câu là câu về chính site (s1–s7).'
 ghi_chu: 'Trang khung: lời dẫn và hộp "Khi in" viết mới (câu về chính site); nội dung sách sinh lúc build từ các bài đã khóa (bản thật), nên không có nhận định riêng ngoài các câu về cách sách được dựng.'

@@ -4,63 +4,63 @@ nguon_cu: ../psyche-zero/docs/them/nhat-ky.md
 tang: cong-cu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l4
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
-    luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L4, 17/11/2026)
-    review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l4
+    ma_bam: sha256:e108784c7708e96cfa8a1767d1c03fe7564cd17a003ab3d7dd322b375a5177a9
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L4, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l4-kiem-mau.yml), đạt, 17/11/2026
 nguon: []
 nhan_dinh:
-- id: s1
-  cau: Trang liệt kê những gì bạn đã thử trên Psyche (các công cụ, phần "Thử suy ngẫm" cuối mỗi bài, lượt chơi thẻ ngộ nhận), xếp theo từng ngày, mới nhất trước; mỗi lần thử tự ghi lại, bạn không cần làm gì thêm.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'src/scripts/cong-cu/nhat-ky.js (theoNgay: nhóm theo ngày giờ máy, mới nhất trước; chỉ đọc chung/luu.js ds()); mỗi công cụ và quiz.js tự gọi them() khi xong. 78 bài có mục "## Thử suy ngẫm" kèm khối câu hỏi (đếm trong src/content/docs/, 17/11/2026). tests/them.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.'
-- id: s2
-  cau: Mỗi dòng chỉ nhắc lại con số mà công cụ đã cho bạn xem lúc làm; trang này không chấm điểm hay nhận xét gì về bạn.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'chung/loai.js tomTatBanGhi: stroop (hiệu ứng, %), digitspan (xuôi, ngược), illusion (độ lệch %), changeblind (giây), quiz và myths (số câu đúng) đều là con số công cụ hiện ở màn kết quả; bài Big Five chỉ ghi "đã làm" (không nêu điểm); tests/them.test.mjs chặn chữ như "bình thường", "rối loạn", "kém", "giỏi", "chẩn đoán". Dòng của công cụ D8-L2, D8-L3 (tên trường như site cũ) kiểm lại khi các công cụ ấy chuyển.'
-- id: n1
-  cau: Các công cụ của Psyche để bạn tự trải nghiệm một hiện tượng, không phải bài kiểm tra trí tuệ, trí nhớ hay sức khỏe.
-  loai: ve-site
-  ket_qua: da-sua
-  review: dung
-  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 khong-chac: câu cũ ("Con số của một lần làm … không phải là thước đo trí tuệ, trí nhớ hay sức khỏe") là lời dặn của site về cách đọc kết quả, không có nguồn bậc 1–2 đứng riêng. Viết lại thành câu về mục đích của các công cụ trên site, xếp ve-site, bỏ nguồn. Kiểm trên trang trai-nghiem/index (đã khóa, D8-L1: hộp "không phải bài kiểm tra trí tuệ hay sức khỏe") và các công cụ trong CONG_CU (thí nghiệm nhận thức, không thang sàng lọc). Review (Claude Opus 5.5, agent riêng, 17/11/2026): đạt. Trang trai-nghiem/index (đã khóa) viết "Các công cụ này để bạn trải nghiệm một hiện tượng, không để đánh giá trí tuệ, trí nhớ hay sức khỏe của bạn"; câu ở đây cùng ý, chỉ nói về mục đích công cụ của site, đúng loại ve-site.'
-  luot_2: khong-chac
-  luot_2_ghi_chu: 'chỗ khó: câu là lời dặn về cách đọc kết quả công cụ của site, không phải phát hiện thực nghiệm; không có nguồn bậc 1-2 nào xác nhận hay bác bỏ riêng cho công cụ này. Hướng nhận định hợp lý (một lần đo trực tuyến không phải thước đo chuẩn hóa) nhưng tôi không mở nguồn nào đứng riêng cho câu.'
-- id: s3
-  cau: Lời dẫn tới trang Hỗ trợ cho người đang lo về sức khỏe tinh thần.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: Trang ho-tro/index đã khóa (kiem-dinh/khoa.json). Câu mới, theo yêu cầu của lô.
-- id: s4
-  cau: Nhật ký chỉ đọc từ dữ liệu lưu trên trình duyệt này, không gửi đi đâu; sao lưu hay xóa ở trang Dữ liệu của tôi.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: nhat-ky.js chỉ đọc ds() của chung/luu.js; tên trang của câu hỏi lấy từ data-trang dựng lúc build (src/plugins/thanh-phan.mjs tenCacTrang), không tải gì thêm.
-- id: s5
-  cau: Link trong nhật ký chỉ tới trang có trên site; câu hỏi "Thử suy ngẫm" ghi tên bài, cả với bản ghi lưu từ Psyche Zero.
-  loai: ve-site
-  ket_qua: dung
-  review: dung
-  ghi_chu: 'chung/loai.js nhanBanGhi, trangCuaQuiz (đọc cả /psyche-zero/<trang>/: luật 4, đường dẫn trang giữ nguyên); tests/them.test.mjs.'
+  - id: s1
+    cau: Trang liệt kê những gì bạn đã thử trên Psyche (các công cụ, phần "Thử suy ngẫm" cuối mỗi bài, lượt chơi thẻ ngộ nhận), xếp theo từng ngày, mới nhất trước; mỗi lần thử tự ghi lại, bạn không cần làm gì thêm.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'src/scripts/cong-cu/nhat-ky.js (theoNgay: nhóm theo ngày giờ máy, mới nhất trước; chỉ đọc chung/luu.js ds()); mỗi công cụ và quiz.js tự gọi them() khi xong. 78 bài có mục "## Thử suy ngẫm" kèm khối câu hỏi (đếm trong src/content/docs/, 17/11/2026). tests/them.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.'
+  - id: s2
+    cau: Mỗi dòng chỉ nhắc lại con số mà công cụ đã cho bạn xem lúc làm; trang này không chấm điểm hay nhận xét gì về bạn.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'chung/loai.js tomTatBanGhi: stroop (hiệu ứng, %), digitspan (xuôi, ngược), illusion (độ lệch %), changeblind (giây), quiz và myths (số câu đúng) đều là con số công cụ hiện ở màn kết quả; bài Big Five chỉ ghi "đã làm" (không nêu điểm); tests/them.test.mjs chặn chữ như "bình thường", "rối loạn", "kém", "giỏi", "chẩn đoán". Dòng của công cụ D8-L2, D8-L3 (tên trường như site cũ) kiểm lại khi các công cụ ấy chuyển.'
+  - id: n1
+    cau: Các công cụ của Psyche để bạn tự trải nghiệm một hiện tượng, không phải bài kiểm tra trí tuệ, trí nhớ hay sức khỏe.
+    loai: ve-site
+    ket_qua: da-sua
+    review: dung
+    ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 khong-chac: câu cũ ("Con số của một lần làm … không phải là thước đo trí tuệ, trí nhớ hay sức khỏe") là lời dặn của site về cách đọc kết quả, không có nguồn bậc 1–2 đứng riêng. Viết lại thành câu về mục đích của các công cụ trên site, xếp ve-site, bỏ nguồn. Kiểm trên trang trai-nghiem/index (đã khóa, D8-L1: hộp "không phải bài kiểm tra trí tuệ hay sức khỏe") và các công cụ trong CONG_CU (thí nghiệm nhận thức, không thang sàng lọc). Review (Claude Opus 5.5, agent riêng, 17/11/2026): đạt. Trang trai-nghiem/index (đã khóa) viết "Các công cụ này để bạn trải nghiệm một hiện tượng, không để đánh giá trí tuệ, trí nhớ hay sức khỏe của bạn"; câu ở đây cùng ý, chỉ nói về mục đích công cụ của site, đúng loại ve-site.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'chỗ khó: câu là lời dặn về cách đọc kết quả công cụ của site, không phải phát hiện thực nghiệm; không có nguồn bậc 1-2 nào xác nhận hay bác bỏ riêng cho công cụ này. Hướng nhận định hợp lý (một lần đo trực tuyến không phải thước đo chuẩn hóa) nhưng tôi không mở nguồn nào đứng riêng cho câu.'
+  - id: s3
+    cau: Lời dẫn tới trang Hỗ trợ cho người đang lo về sức khỏe tinh thần.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: Trang ho-tro/index đã khóa (kiem-dinh/khoa.json). Câu mới, theo yêu cầu của lô.
+  - id: s4
+    cau: Nhật ký chỉ đọc từ dữ liệu lưu trên trình duyệt này, không gửi đi đâu; sao lưu hay xóa ở trang Dữ liệu của tôi.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: nhat-ky.js chỉ đọc ds() của chung/luu.js; tên trang của câu hỏi lấy từ data-trang dựng lúc build (src/plugins/thanh-phan.mjs tenCacTrang), không tải gì thêm.
+  - id: s5
+    cau: Link trong nhật ký chỉ tới trang có trên site; câu hỏi "Thử suy ngẫm" ghi tên bài, cả với bản ghi lưu từ Psyche Zero.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'chung/loai.js nhanBanGhi, trangCuaQuiz (đọc cả /psyche-zero/<trang>/: luật 4, đường dẫn trang giữ nguyên); tests/them.test.mjs.'
 doi_chu:
-- cu: '"… bạn đã thử trên Psyche Zero — các công cụ, phần …, lượt chơi thẻ ngộ nhận — xếp theo …"; "mỗi lần thử sẽ tự động ghi lại ở đây"; biểu tượng 🔒 trước "Quyền riêng tư"'
-  moi: Tên Psyche; ngoặc đơn thay gạch ngang; bỏ biểu tượng
-  ly_do: Đổi tên site; giọng văn site mới (dấu câu); biểu tượng không mang thông tin
-- cu: (không có)
-  moi: Đoạn "Mỗi dòng chỉ nhắc lại con số … không chấm điểm … Hỗ trợ"
-  ly_do: 'Yêu cầu của lô: không chấm điểm hay diễn giải như chẩn đoán; có lời dẫn tới Hỗ trợ (s2, n1, s3)'
-- cu: 'Tóm tắt bài Big Five: "Chiều cao nhất: <tên chiều> (x/5)"'
-  moi: '"Đã làm bài thử (điểm từng chiều xem ở trang công cụ)"'
-  ly_do: Tránh nêu "chiều cao nhất" (như Bất ổn cảm xúc) ngoài bối cảnh giải thích của công cụ
+  - cu: '"… bạn đã thử trên Psyche Zero — các công cụ, phần …, lượt chơi thẻ ngộ nhận — xếp theo …"; "mỗi lần thử sẽ tự động ghi lại ở đây"; biểu tượng 🔒 trước "Quyền riêng tư"'
+    moi: Tên Psyche; ngoặc đơn thay gạch ngang; bỏ biểu tượng
+    ly_do: Đổi tên site; giọng văn site mới (dấu câu); biểu tượng không mang thông tin
+  - cu: (không có)
+    moi: Đoạn "Mỗi dòng chỉ nhắc lại con số … không chấm điểm … Hỗ trợ"
+    ly_do: 'Yêu cầu của lô: không chấm điểm hay diễn giải như chẩn đoán; có lời dẫn tới Hỗ trợ (s2, n1, s3)'
+  - cu: 'Tóm tắt bài Big Five: "Chiều cao nhất: <tên chiều> (x/5)"'
+    moi: '"Đã làm bài thử (điểm từng chiều xem ở trang công cụ)"'
+    ly_do: Tránh nêu "chiều cao nhất" (như Bất ổn cảm xúc) ngoài bối cảnh giải thích của công cụ
 ghi_chu: 'Trang công cụ: chữ của trang và của công cụ (src/scripts/cong-cu/nhat-ky.js, chung/loai.js). Không phải nhật ký cảm xúc: người đọc không ghi gì ở đây. Không có số liệu nghiên cứu trong mã.'
