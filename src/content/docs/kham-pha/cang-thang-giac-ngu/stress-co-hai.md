@@ -166,6 +166,6 @@ Các nghiên cứu then chốt của Crum được thực hiện ở Mỹ, trên
 - Richardson, S., Shaffer, J. A., Falzon, L., Krupka, D., Davidson, K. W., & Edmondson, D. (2012). Meta-analysis of perceived stress and its association with incident coronary heart disease. *American Journal of Cardiology*, 110(12), 1711–1716. <https://doi.org/10.1016/j.amjcard.2012.08.004>
 - Wendsche, J., & Lohmann-Haislah, A. (2017). A meta-analysis on antecedents and outcomes of detachment from work. *Frontiers in Psychology*, 7, 2072. <https://doi.org/10.3389/fpsyg.2016.02072>
 - Szabo, S., Tache, Y., & Somogyi, A. (2012). The legacy of Hans Selye and the origins of stress research: A retrospective 75 years after his landmark brief "letter" to the Editor of Nature. *Stress*, 15(5), 472–478. <https://doi.org/10.3109/10253890.2012.710919>
-- Spielman, R. M., Jenkins, W. J., & Lovett, M. D. (2020). *Psychology 2e*, mục 14.1, 14.2 và 14.4. OpenStax. <https://openstax.org/books/psychology-2e/>
+- Spielman, R. M., Jenkins, W. J., & Lovett, M. D. (2020). *Psychology 2e*, mục 14.1, 14.2 và 14.4. OpenStax. <https://openstax.org/books/psychology-2e/pages/14-introduction>
 - Keller, A., Litzelman, K., Wisk, L. E., Maddox, T., Cheng, E. R., Creswell, P. D., & Witt, W. P. (2012). Does the perception that stress affects health matter? The association with health and mortality. *Health Psychology*, 31(5), 677–684. <https://doi.org/10.1037/a0026743>
 - Selye, H. (1936). A syndrome produced by diverse nocuous agents. *Nature*, 138(3479), 32. <https://doi.org/10.1038/138032a0>

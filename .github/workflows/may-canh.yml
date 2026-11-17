@@ -115,6 +115,12 @@ jobs:
           # thành link của chính site, bị luật --exclude của chính site bỏ qua.
           # 403 và 429: nhiều trang báo, nhà xuất bản chặn robot hoặc giới hạn tần suất; chấp nhận để tránh báo lỗi giả, link
           # hỏng thật thường trả về 404. Bỏ qua chính site và repo (link nội bộ đã kiểm ở bản build).
+          # Bỏ qua thêm (xét 17/11/2026, plans/lam-lai/bao-cao/sua-may-canh.md): link còn sống nhưng máy chủ chặn hay làm
+          # hỏng yêu cầu tự động, kiểm lại bằng tay khi xét Hỗ trợ hằng quý:
+          #   ipip.ori.org: ngắt kết nối với lychee, curl (cùng User-Agent của dự án) vẫn nhận 200;
+          #   gutenberg.org: 503 cho yêu cầu tự động (lychee báo giới hạn tần suất, chờ 1 giờ), cả lychee lẫn curl;
+          #   doi.org/10.1891/…: Springer Publishing chuyển vòng qua trang đăng nhập (quá 10 lần chuyển), DOI đúng theo Crossref;
+          #   doi.org/10.1055/s-0037-1613072 (Fujimura 2002): trang của Thieme trả 404 cho DOI này, DOI đúng theo Crossref.
           args: >-
             --no-progress
             --base-url https://mtuann.github.io/
@@ -125,6 +131,10 @@ jobs:
             --accept "100..=103,200..=299,403,429"
             --exclude "^https://mtuann\.github\.io/psyche/"
             --exclude "^https://github\.com/mtuann/psyche(/|$)"
+            --exclude "^https?://ipip\.ori\.org/"
+            --exclude "^https?://(www\.)?gutenberg\.org/"
+            --exclude "^https://doi\.org/10\.1891/"
+            --exclude "^https://doi\.org/10\.1055/s-0037-1613072$"
             "src/content/docs/**/*.md"
             "src/data/*.yml"
           output: ./lychee/out.md
