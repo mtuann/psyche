@@ -2,78 +2,81 @@
 ban_ghi: ngo-nhan/hoc-khi-ngu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'chỗ khó: chưa mở được Simon & Emmons 1955 (không có tóm tắt ở PubMed, Crossref, OpenAlex); bỏ câu "Khi các nhà nghiên cứu dùng điện não đồ ... không ghi nhận việc học" (đó là thí nghiệm 1956 của cùng nhóm, chưa mở; và có thí nghiệm sau này thấy học được liên kết đơn giản trong lúc ngủ, như Arzi 2012). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Bài tổng quan kinh điển năm 1955 xem lại các nghiên cứu “học khi ngủ” và kết luận hiệu ứng (nếu có) xảy ra ở trạng thái nửa tỉnh nửa mê chứ không phải giấc ngủ thật. Khi các nhà nghiên cứu dùng điện não đồ để chắc chắn người tham gia đang ngủ sâu, họ không ghi nhận việc học được kiến thức mới. Ngày nay, khoa học chỉ dùng âm thanh khi ngủ để củng cố ký ức đã học lúc tỉnh, chứ không nhồi được kiến thức mới.'' → mới ''Bài tổng quan kinh điển năm 1955 xem lại các nghiên cứu "học khi ngủ" và kết luận hiệu ứng (nếu có) xảy ra ở trạng thái nửa tỉnh nửa mê chứ không phải giấc ngủ thật. Ngày nay, các thí nghiệm phát lại âm thanh hay mùi gắn với bài đã học trong giấc ngủ sóng chậm chỉ có tác dụng nhỏ, và là để củng cố điều đã học lúc thức (phân tích tổng hợp 91 thí nghiệm năm 2020), không phải để học bài mới.'' | nguon: cũ [''simon1955'', ''hoc-khi-ngu-smithsonian''] → mới [''simon1955'', ''hu2020''] | trang: cũ None → mới ''kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho'''
 nguon:
-- id: simon1955
-  ten: Simon và cộng sự (1955). Learning during sleep?
-  link: https://doi.org/10.1037/h0043733
-- id: hu2020
-  ten: 'Hu và cộng sự (2020). Promoting memory consolidation during sleep: A meta-analysis of targeted memory reactivation'
-  link: https://doi.org/10.1037/bul0000223
-- id: ruch2014
-  ten: Ruch (2014). Word encoding during sleep is suggested by correlations between word-evoked up-states and post-sleep semantic priming
-  link: https://doi.org/10.3389/fpsyg.2014.01319
+  - id: simon1955
+    ten: Simon và cộng sự (1955). Learning during sleep?
+    link: https://doi.org/10.1037/h0043733
+  - id: hu2020
+    ten: 'Hu và cộng sự (2020). Promoting memory consolidation during sleep: A meta-analysis of targeted memory reactivation'
+    link: https://doi.org/10.1037/bul0000223
+  - id: ruch2014
+    ten: Ruch (2014). Word encoding during sleep is suggested by correlations between word-evoked up-states and post-sleep semantic priming
+    link: https://doi.org/10.3389/fpsyg.2014.01319
 nhan_dinh:
-- id: nhan
-  cau: 'Bật băng nghe khi ngủ là cách học thêm giờ hiệu quả: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - ruch2014
-  - hu2020
-  co_so:
-  - ruch2014
-  - hu2020
-  ly_do: Nghiên cứu theo dõi chặt giấc ngủ không thấy học được lời nói (theo Ruch 2014 điểm lại các tổng quan 1955–1990); đến 2014 chỉ có báo cáo học liên kết không lời rất đơn giản; nhắc lại ký ức khi ngủ chỉ củng cố điều đã học, tác dụng nhỏ (Hu 2020). Khẳng định "học thêm giờ hiệu quả" không đứng vững.
-  ket_qua: dung
-  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 dung. Hết chưa chắc.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC4231834/
-  - https://pubmed.ncbi.nlm.nih.gov/32027149/
-  luot_2_ghi_chu: Có bằng chứng học ngầm rất đơn giản trong giấc ngủ (Arzi 2012, ghép mùi và âm) và nhắc lại ký ức đã học (TMR), nhưng không phải học bài mới hiệu quả bằng băng nghe; nhãn hợp với khẳng định như viết.
-- id: g1
-  cau: Theo Ruch và cộng sự (2014) điểm lại, các báo cáo cũ về học khi ngủ (tổng quan Simon & Emmons 1955) không chứng minh người tham gia ngủ liên tục; học có thể xảy ra trong lúc thức ngắn; nghiên cứu theo dõi chặt việc không thức thì không thấy học lời nói khi ngủ.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - ruch2014
-  - simon1955
-  trich: previous reports of sleep-encoding lack convincing proof that participants were sleeping continuously during verbal stimulation (for reviews see Simon and Emmons, 1955; Hoskovec, 1966; Aarons, 1976; Eich, 1990). It is possible that encoding was mediated by brief phases of wakefulness in these studies. Studies that properly monitored the absence of wakefulness did not find evidence of sleep-encoding.
-  ket_qua: da-sua
-  ghi_chu: 'chưa chắc: chưa mở được bài. Sau lượt 2 (Opus 5.5, 18/11/2026): Hết chưa chắc: không mở được Simon & Emmons 1955, viết "theo Ruch và cộng sự (2014) điểm lại" (bài lượt 2 dẫn, tôi tự đọc toàn văn). Bỏ chữ "nửa tỉnh nửa mê". Lượt 2 (với câu cũ): dung (Không mở được bài gốc Simon & Emmons 1955 (Psychological Bulletin, chỉ có trang PsycNet không tóm tắt); xác nhận qua bài có bình duyệt kể lại. Review nên xem lại chữ ''nửa tỉnh nửa mê''.).'
-  vi_tri: Ruch 2014, phần Giới thiệu (toàn văn PMC4231834)
-- id: g2
-  cau: 'Phân tích tổng hợp 91 thí nghiệm (2020): nhắc lại ký ức trong giấc ngủ sóng chậm có tác dụng nhỏ (g = 0,27); nhắc trong REM hay lúc thức thì không.'
-  loai: so-lieu
-  truong:
-  - giai_thich
-  nguon:
-  - hu2020
-  trich: 'Trang nhà ngu-va-tri-nho (đã khóa): "Phân tích tổng hợp 91 thí nghiệm ''nhắc lại ký ức có chủ đích'' thấy việc nhắc trong giấc ngủ sóng chậm có tác dụng nhỏ (g = 0,27), còn nhắc trong REM hay lúc thức thì không"'
-  ket_qua: da-sua
-  ghi_chu: 'Câu cũ "Ngày nay, khoa học chỉ dùng âm thanh khi ngủ để củng cố ký ức đã học lúc tỉnh, chứ không nhồi được kiến thức mới": viết lại theo trang nhà, có nguồn.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pubmed.ncbi.nlm.nih.gov/32027149/
-  luot_2_ghi_chu: Bài cũng thấy hiệu quả ở NREM giai đoạn 2 (g = 0,32); câu không nhắc nhưng không sai.
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: Trang đã khóa, có phần nhắc lại ký ức trong giấc ngủ (Hu 2020).
+  - id: nhan
+    cau: 'Bật băng nghe khi ngủ là cách học thêm giờ hiệu quả: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - ruch2014
+      - hu2020
+    co_so:
+      - ruch2014
+      - hu2020
+    ly_do: Nghiên cứu theo dõi chặt giấc ngủ không thấy học được lời nói (theo Ruch 2014 điểm lại các tổng quan 1955–1990); đến 2014 chỉ có báo cáo học liên kết không lời rất đơn giản; nhắc lại ký ức khi ngủ chỉ củng cố điều đã học, tác dụng nhỏ (Hu 2020). Khẳng định "học thêm giờ hiệu quả" không đứng vững.
+    ket_qua: dung
+    ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 dung. Hết chưa chắc.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC4231834/
+      - https://pubmed.ncbi.nlm.nih.gov/32027149/
+    luot_2_ghi_chu: Có bằng chứng học ngầm rất đơn giản trong giấc ngủ (Arzi 2012, ghép mùi và âm) và nhắc lại ký ức đã học (TMR), nhưng không phải học bài mới hiệu quả bằng băng nghe; nhãn hợp với khẳng định như viết.
+  - id: g1
+    cau: Theo Ruch và cộng sự (2014) điểm lại, các báo cáo cũ về học khi ngủ (tổng quan Simon & Emmons 1955) không chứng minh người tham gia ngủ liên tục; học có thể xảy ra trong lúc thức ngắn; nghiên cứu theo dõi chặt việc không thức thì không thấy học lời nói khi ngủ.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - ruch2014
+      - simon1955
+    trich: previous reports of sleep-encoding lack convincing proof that participants were sleeping continuously during verbal stimulation (for reviews see Simon and Emmons, 1955; Hoskovec, 1966; Aarons, 1976; Eich, 1990). It is possible that encoding was mediated by brief phases of wakefulness in these studies. Studies that properly monitored the absence of wakefulness did not find evidence of sleep-encoding.
+    ket_qua: da-sua
+    ghi_chu: 'chưa chắc: chưa mở được bài. Sau lượt 2 (Opus 5.5, 18/11/2026): Hết chưa chắc: không mở được Simon & Emmons 1955, viết "theo Ruch và cộng sự (2014) điểm lại" (bài lượt 2 dẫn, tôi tự đọc toàn văn). Bỏ chữ "nửa tỉnh nửa mê". Lượt 2 (với câu cũ): dung (Không mở được bài gốc Simon & Emmons 1955 (Psychological Bulletin, chỉ có trang PsycNet không tóm tắt); xác nhận qua bài có bình duyệt kể lại. Review nên xem lại chữ ''nửa tỉnh nửa mê''.).'
+    vi_tri: Ruch 2014, phần Giới thiệu (toàn văn PMC4231834)
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4231834/" ]
+    luot_2_ghi_chu: Toàn văn Ruch, Koenig, Mathis, Roth & Henke 2014 (Front Psychol) qua Europe PMC, phần Mở đầu. Câu dẫn Simon & Emmons 1955 là một trong bốn tổng quan; đúng ý.
+  - id: g2
+    cau: 'Phân tích tổng hợp 91 thí nghiệm (2020): nhắc lại ký ức trong giấc ngủ sóng chậm có tác dụng nhỏ (g = 0,27); nhắc trong REM hay lúc thức thì không.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - hu2020
+    trich: 'Trang nhà ngu-va-tri-nho (đã khóa): "Phân tích tổng hợp 91 thí nghiệm ''nhắc lại ký ức có chủ đích'' thấy việc nhắc trong giấc ngủ sóng chậm có tác dụng nhỏ (g = 0,27), còn nhắc trong REM hay lúc thức thì không"'
+    ket_qua: da-sua
+    ghi_chu: 'Câu cũ "Ngày nay, khoa học chỉ dùng âm thanh khi ngủ để củng cố ký ức đã học lúc tỉnh, chứ không nhồi được kiến thức mới": viết lại theo trang nhà, có nguồn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/32027149/
+    luot_2_ghi_chu: Bài cũng thấy hiệu quả ở NREM giai đoạn 2 (g = 0,32); câu không nhắc nhưng không sai.
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: Trang đã khóa, có phần nhắc lại ký ức trong giấc ngủ (Hu 2020).
