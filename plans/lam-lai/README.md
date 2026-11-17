@@ -165,7 +165,7 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 
 ## Đợt 7. Sức khỏe tâm thần (D7-L1)
 
-4 bài (trầm cảm, lo âu, tìm giúp đỡ, trị liệu tâm lý). Rủi ro cao nhất cho người đọc, nên: lượt 1 và lượt 2 dùng Opus; nguồn bậc cao (hướng dẫn lâm sàng, tổng quan hệ thống, ICD-11, DSM-5-TR qua tài liệu chính thức); không viết điều gì như chẩn đoán; mỗi trang có lời dẫn tới Hỗ trợ ở đầu và cuối. Trang lên site với dải "chờ rà soát chuyên môn" chỉ khi chủ repo đồng ý; **khóa sau khi chuyên gia đọc** (người do chủ repo chọn, câu hỏi còn chờ).
+4 bài (trầm cảm, lo âu, tìm giúp đỡ, trị liệu tâm lý). Rủi ro cao nhất cho người đọc, nên: lượt 1 và lượt 2 dùng Opus; nguồn bậc cao (hướng dẫn lâm sàng, tổng quan hệ thống, ICD-11, DSM-5-TR qua tài liệu chính thức); không viết điều gì như chẩn đoán; mỗi trang có lời dẫn tới Hỗ trợ ở đầu và cuối. Trang lên site với dải "chờ rà soát chuyên môn" chỉ khi chủ repo đồng ý; **khóa sau khi chuyên gia đọc** (người do chủ repo chọn, câu hỏi còn chờ). **Chủ repo đồng ý 16/11/2026:** 4 bài lên site sau đủ hai lượt, review và kiểm mẫu, khóa với `nguoi.cho_chuyen_gia` và hiện dải "Chưa qua rà soát chuyên môn" (`them/cho-chuyen-gia`, chuẩn mục 5); chuyên gia đọc sau.
 
 **Xong khi:** 4 trang kiểm định xong; khóa khi có kết quả rà soát chuyên môn.
 
@@ -189,7 +189,7 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 
 Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong việc nào thì gạch khỏi đây.
 
-- **Chuyên gia đọc 4 bài Sức khỏe tâm thần** (đợt 7): chủ repo cung cấp sau. Các bài chỉ khóa khi hồ sơ có `nguoi.chuyen_gia`.
+- **Chuyên gia đọc 4 bài Sức khỏe tâm thần** (đợt 7): chủ repo cung cấp sau. Từ 16/11/2026 các bài lên site trước, khóa với `nguoi.cho_chuyen_gia` và dải "Chưa qua rà soát chuyên môn"; chuyên gia đọc xong thì ghi `nguoi.chuyen_gia` (chuẩn mục 5), dải tự mất.
 - **Đường dây HOPE** (hyvongsong.com) ở trang Hỗ trợ: chủ repo quyết sau (review D2-L1: trang nói rõ số, giờ, người vận hành, nhưng tư cách pháp lý tự mâu thuẫn).
 - **Đường báo lỗi ở trang Hỗ trợ:** repo đã công khai (11/2026), có thể thêm câu mời báo lỗi kèm link GitHub Issues (mở khóa trang Hỗ trợ).
 - **Nguồn không DOI** trong hồ sơ của trang đã khóa chưa có bản ghi ở `src/data/nguon.yml` (giáo trình mở, văn bản chính thức, trang web): theo D2-0, lô dùng chúng thêm và kiểm (`bao-cao/don-nguon.md` có phân loại).

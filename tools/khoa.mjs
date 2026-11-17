@@ -146,9 +146,13 @@ export function loiHoSo(hs, muc, goc, { khiKhoa = false } = {}) {
 	const tang = rec?.tang ?? null;
 	if (!bg && (hs.tang ?? null) !== tang) loi.push(`hồ sơ ghi tang: ${hs.tang ?? null} mà src/data/trang.yml ghi ${tang}: sửa tang trong hồ sơ`);
 	// bài Sức khỏe tâm thần (kham-pha/suc-khoe-tam-than/, loaiTrang) ở mọi tầng; trang Hỗ trợ, trang lĩnh vực cùng lĩnh vực thì
-	// không (Hỗ trợ kiểm số liên hệ ở nguồn chính thức, chuan-kiem-dinh.md mục 3)
-	if (loaiTrang(muc) === 'suc-khoe' && !hs.lan?.at(-1)?.nguoi?.chuyen_gia)
-		loi.push('trang Sức khỏe tâm thần: chỉ khóa khi chuyên gia đã đọc (lần kiểm định cuối: nguoi.chuyen_gia, tên và ngày; plans/ben-vung/chuan-kiem-dinh.md mục 5)');
+	// không (Hỗ trợ kiểm số liên hệ ở nguồn chính thức, chuan-kiem-dinh.md mục 3). Chưa có chuyên gia thì cho_chuyen_gia (chủ
+	// repo đồng ý đăng trước, 16/11/2026): trang lên site với dải "Chưa qua rà soát chuyên môn" (src/components/PageTitle.astro)
+	const nguoi = hs.lan?.at(-1)?.nguoi;
+	if (loaiTrang(muc) === 'suc-khoe' && !nguoi?.chuyen_gia && !(typeof nguoi?.cho_chuyen_gia === 'string' && nguoi.cho_chuyen_gia.trim()))
+		loi.push(
+			'trang Sức khỏe tâm thần: chỉ khóa khi chuyên gia đã đọc (lần kiểm định cuối: nguoi.chuyen_gia, tên và ngày), hay khi chủ repo đồng ý đăng trước (nguoi.cho_chuyen_gia: ai đồng ý, ngày; trang hiện dải "Chưa qua rà soát chuyên môn"); plans/ben-vung/chuan-kiem-dinh.md mục 5',
+		);
 	if (tang === 'mo-rong') {
 		if (!rec.dua_tren?.length) loi.push('bài mở rộng: src/data/trang.yml chưa có dua_tren (các bài lõi mà bài này dựa trên)');
 		if (!rec.kiem_lai_truoc) loi.push('bài mở rộng: src/data/trang.yml chưa có kiem_lai_truoc (hạn xem lại, 12–18 tháng)');

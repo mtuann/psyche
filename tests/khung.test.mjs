@@ -6,6 +6,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { parse } from 'yaml';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -30,6 +31,7 @@ const files = walk(DIST);
 const htmlFiles = files.filter((f) => f.endsWith('.html'));
 const cssFiles = files.filter((f) => f.endsWith('.css'));
 const rel = (f) => path.relative(DIST, f);
+const KHOA_TRANG = readJson(path.join(ROOT, 'kiem-dinh', 'khoa.json')).trang ?? {};
 
 /** Đường dẫn trên site (/psyche/…) thành file trong dist/, hoặc null nếu không thuộc site. */
 function distFile(url) {
@@ -172,6 +174,20 @@ test('chân mọi trang có lời nhắc Hỗ trợ (khi nào nên tìm chuyên 
 		.filter((f) => !/<div class="pz-chan__ho-tro[^"]*"[^>]*>(?:(?!<\/div>)[\s\S])*?<a\b[^>]*\shref="[^"]*\/ho-tro\/"/.test(read(f)))
 		.map(rel);
 	assert.deepEqual(thieu, []);
+});
+
+test('bài Sức khỏe tâm thần chưa có chữ ký chuyên gia thì có dải "Chưa qua rà soát chuyên môn" kèm link Hỗ trợ', () => {
+	// Chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026; hồ sơ nguoi.cho_chuyen_gia, tools/khoa.mjs): dải ở
+	// src/components/PageTitle.astro, mất khi hồ sơ có nguoi.chuyen_gia.
+	const sai = [];
+	for (const f of htmlFiles.filter((f) => rel(f).startsWith('kham-pha/suc-khoe-tam-than/'))) {
+		const trang = rel(f).replace(/\/index\.html$/, '');
+		if (!KHOA_TRANG[trang]) continue; // bản xem: trang chưa khóa có dải "Chưa kiểm định"
+		const coChuyenGia = Boolean(parse(read(path.join(ROOT, 'kiem-dinh', `${trang}.yml`))).lan?.at(-1)?.nguoi?.chuyen_gia);
+		const dai = /<aside class="pz-cho-ra-soat"[^>]*>(?:(?!<\/aside>)[\s\S])*?href="[^"]*\/ho-tro\/"/.test(read(f));
+		if (coChuyenGia === dai) sai.push(`${trang}: ${coChuyenGia ? 'đã có chuyên gia mà còn dải' : 'thiếu dải'}`);
+	}
+	assert.deepEqual(sai, []);
 });
 
 test('không link tới repo trên GitHub khi repo còn riêng tư (người đọc mở ra trang 404)', () => {
