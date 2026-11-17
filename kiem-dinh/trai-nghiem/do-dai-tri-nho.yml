@@ -11,7 +11,7 @@ lan:
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
     luot_2: null
-    review: null
+    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: oberauer2018
@@ -331,12 +331,14 @@ nhan_dinh:
   cau: 'Công cụ: chữ số hiện lần lượt mỗi giây một số (800 ms hiện, 200 ms trống); xuôi bắt đầu 3, ngược bắt đầu 2; dãy dài dần tới khi sai hai lần liên tiếp ở cùng độ dài; độ dài trí nhớ là dãy dài nhất gõ đúng ít nhất một lần; phân tích vị trí và thời gian trả lời trung vị; trình đọc màn hình đọc các chữ số.'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/do-dai-tri-nho.js (QUY_TRINH, trinhBay: aria-live assertive) và chung/thong-ke.js (trangThaiDoDai), 16/11/2026; tests/cong-cu.test.mjs và tests/trinh-duyet/kiem-cong-cu.mjs chạy trọn cả hai phần.'
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/do-dai-tri-nho.js (QUY_TRINH, trinhBay: aria-live assertive) và chung/thong-ke.js (trangThaiDoDai), 16/11/2026; tests/cong-cu.test.mjs và tests/trinh-duyet/kiem-cong-cu.mjs chạy trọn cả hai phần. Review (17/11/2026): QUY_TRINH (xuôi 3–12, ngược 2–10, hiện 800 ms, cách 200 ms), trangThaiDoDai (2 lượt mỗi độ dài, dừng khi sai cả 2; độ dài = dãy dài nhất đúng ít nhất một lần), phanViTri (tỉ lệ đúng theo vị trí, thời gian trả lời trung vị), aria-live assertive: khớp.'
+  review: dung
 - id: s2
   cau: 'Quiz câu 4: 9 chữ số xuôi là "cao hơn số liệu tham khảo".'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: 'So với n3–n5 (6,4–7,4 chữ số xuôi): đúng. Phương án nhiễu "thiên tài", "công cụ lỗi" là giả định (gia-dinh).'
+  ghi_chu: 'So với n3–n5 (6,4–7,4 chữ số xuôi): đúng. Phương án nhiễu "thiên tài", "công cụ lỗi" là giả định (gia-dinh). Review (17/11/2026): 9 > 7,4 (con số cao nhất ở trang); khớp.'
+  review: dung
 doi_chu:
 - cu: Hai mục "Con số kỳ diệu bảy (Miller, 1956)" và "Con số kỳ diệu bốn (Cowan, 2001)", mỗi mục một đoạn
   moi: 'Một mục "Bảy hay bốn?" (giữ id cũ con-so-ky-dieu-bay-miller-1956): một câu link về trang nhà Trí nhớ làm việc'

@@ -11,7 +11,7 @@ lan:
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
       luot_2: null
-      review: null
+      review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
       kiem_mau: null
 nguon:
   - id: hedge2018
@@ -24,20 +24,23 @@ nguon:
     toan_van: true
 nhan_dinh:
   - id: s1
-    cau: Mỗi công cụ ở đây dựa trên một thí nghiệm có thật; khi xong, bạn thấy kết quả của mình, kết quả trong nghiên cứu gốc, và lý do vì sao hai con số có thể khác nhau.
+    cau: Mỗi công cụ ở đây dựa trên một hiện tượng đã được nghiên cứu; với các công cụ đo một con số của người dùng, khi xong người dùng thấy kết quả của mình, số liệu trong nghiên cứu, và lý do vì sao hai con số có thể khác nhau.
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: 'Đã kiểm trên năm công cụ đã chuyển (src/scripts/cong-cu/stroop.js, do-dai-tri-nho.js, ao-giac.js, mu-thay-doi.js, ebbinghaus.js, 16/11/2026): bốn công cụ có màn kết quả với mục "So với nghiên cứu" và khối "Vì sao con số của bạn có thể khác?". Ebbinghaus chỉ đo cho thấy hai vòng bằng nhau, không có con số của người dùng để so (câu nói chung cho cả nhóm; review xét có cần làm mềm). Sáu công cụ còn lại (D8-L2) kiểm khi chúng lên.'
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm trên năm công cụ đã chuyển (src/scripts/cong-cu/stroop.js, do-dai-tri-nho.js, ao-giac.js, mu-thay-doi.js, ebbinghaus.js, 16/11/2026): bốn công cụ có màn kết quả với mục "So với nghiên cứu" và khối "Vì sao con số của bạn có thể khác?". Ebbinghaus chỉ đo cho thấy hai vòng bằng nhau, không có con số của người dùng để so (câu nói chung cho cả nhóm; review xét có cần làm mềm). Sáu công cụ còn lại (D8-L2) kiểm khi chúng lên. Review (Claude Opus 5.5, 17/11/2026): sai như chữ cũ ("Mỗi công cụ … dựa trên một thí nghiệm có thật. Khi xong, bạn sẽ thấy … kết quả trong nghiên cứu gốc"): Ebbinghaus không cho con số của người dùng, không so với nghiên cứu, không có khối "vì sao khác" (ebbinghaus.js, đầu file); Ebbinghaus là một hình ảo giác, không phải một thí nghiệm. Đã sửa câu trên trang thành "một hiện tượng đã được nghiên cứu" và "với các công cụ đo một con số của bạn". Đúng với bốn công cụ đo con số (Stroop, Müller-Lyer, mù thay đổi có mục So với nghiên cứu ngay trong công cụ; độ dài trí nhớ link tới mục So với nghiên cứu của trang).'
+    review: sai
   - id: s2
     cau: 'Danh sách công cụ sinh từ dữ liệu (::danh-sach-bai{nhom="trai-nghiem"}): chỉ trang đã có trên site, tên và mô tả lấy từ chính trang ấy; công cụ chưa xong được đếm ở cuối danh sách.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm src/plugins/thanh-phan.mjs (danhSachBai, nhánh nhom) và bản xem dist/trai-nghiem/index.html (16/11/2026): 5 mục có link, dòng "Còn 6 bài sắp có". src/data/trang.yml có 11 trang trai-nghiem/ ngoài index.'
+    ghi_chu: 'Đã kiểm src/plugins/thanh-phan.mjs (danhSachBai, nhánh nhom) và bản xem dist/trai-nghiem/index.html (16/11/2026): 5 mục có link, dòng "Còn 6 bài sắp có". src/data/trang.yml có 11 trang trai-nghiem/ ngoài index. Review (17/11/2026): đọc lại dist/trai-nghiem/index.html bản xem: 5 mục có tên và mô tả từ frontmatter, "Còn 6 bài sắp có"; 5 + 6 = 11 khớp trang.yml.'
+    review: dung
   - id: s3
     cau: Link tới "Đúng, sai hay còn tranh cãi?" (bat-dau/ban-nghi-gi) và "Dữ liệu của tôi" (them/du-lieu-cua-toi).
     loai: ve-site
     ket_qua: dung
-    ghi_chu: Hai trang có trong src/data/trang.yml (D8-L3, D8-L4); chưa lên site nên src/plugins/sap-co.mjs hiện chữ kèm nhãn "sắp có" (tests/link.test.mjs kiểm).
+    ghi_chu: 'Hai trang có trong src/data/trang.yml (D8-L3, D8-L4); chưa lên site nên src/plugins/sap-co.mjs hiện chữ kèm nhãn "sắp có" (tests/link.test.mjs kiểm). Review (17/11/2026): dist/trai-nghiem/index.html hiện cả hai kèm nhãn "sắp có".'
+    review: dung
   - id: n1
     cau: Các công cụ này để trải nghiệm một hiện tượng, không để đánh giá trí tuệ, trí nhớ hay sức khỏe; một lần làm trên điện thoại hay máy tính có rất nhiều yếu tố ngẫu nhiên.
     loai: phat-hien
@@ -55,8 +58,12 @@ nhan_dinh:
     cau: Mọi kết quả chỉ lưu trên trình duyệt của bạn, không gửi đi đâu.
     loai: ve-site
     ket_qua: dung
-    ghi_chu: 'Đã kiểm src/scripts/cong-cu/chung/luu.js (16/11/2026): chỉ ghi localStorage khóa "psyche-zero", không có fetch hay gửi mạng; tests/khung.test.mjs chặn nạp nguồn ngoài.'
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/chung/luu.js (16/11/2026): chỉ ghi localStorage khóa "psyche-zero", không có fetch hay gửi mạng; tests/khung.test.mjs chặn nạp nguồn ngoài. Review (17/11/2026): tìm fetch, XMLHttpRequest, sendBeacon, WebSocket trong src/scripts/cong-cu/ (cả chung/): không có.'
+    review: dung
 doi_chu:
+  - cu: '"Mỗi công cụ ở đây dựa trên một thí nghiệm có thật. Khi xong, bạn sẽ thấy kết quả của mình, kết quả trong nghiên cứu gốc, …"'
+    moi: '"Mỗi công cụ ở đây dựa trên một hiện tượng đã được nghiên cứu. Với các công cụ đo một con số của bạn, khi xong bạn sẽ thấy kết quả của mình, số liệu trong nghiên cứu, …"'
+    ly_do: 's1 (review): Ebbinghaus không cho con số để so'
   - cu: Lưới 12 thẻ viết tay (<div class="pz-grid">), mỗi thẻ có tên công cụ và một dòng "Khoảng N phút…"
     moi: 'Mục "Các công cụ": danh sách sinh từ dữ liệu (::danh-sach-bai{nhom="trai-nghiem"}), tên và mô tả lấy từ frontmatter của từng trang; một câu link riêng tới "Đúng, sai hay còn tranh cãi?"'
     ly_do: 'Như trang mục lục Thí nghiệm (D3-L1): danh sách chỉ có trang đã lên site; chữ "Khoảng N phút" và mô tả viết tay không kiểm được cho trang chưa chuyển.'

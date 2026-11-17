@@ -11,7 +11,7 @@ lan:
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
     luot_2: null
-    review: null
+    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: rensink2005
@@ -39,7 +39,8 @@ nhan_dinh:
   cau: 'Cách chơi: lưới 5×5 ô màu nhấp nháy, hai phiên bản xen kẽ, giữa mỗi lần đổi màn xám 250 ms; một ô đổi màu; bấm ô đã đổi; công cụ đo số chu kỳ và thời gian; nút "Tôi chịu, hiện đáp án".'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (N = 5, THOI_GIAN.xam 250, nút "Tôi chịu, hiện đáp án"), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs.
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (N = 5, THOI_GIAN.xam 250, nút "Tôi chịu, hiện đáp án"), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): N = 5, xám 250 ms, soChuKy = thời gian / (2 × (hiện + xám)), nút "Tôi chịu, hiện đáp án": khớp.'
+  review: dung
 - id: n1
   cau: Bình thường, một thay đổi tạo ra tín hiệu chuyển động tại chỗ của nó và hệ thị giác hướng chú ý tới đó; màn xám xen giữa tạo tín hiệu chuyển động khắp màn hình, nhấn chìm tín hiệu thật; chú ý phải soát từng vùng, nên thay đổi lớn, lặp đi lặp lại vẫn có thể không thấy suốt nhiều giây.
   loai: phat-hien
@@ -158,12 +159,14 @@ nhan_dinh:
   cau: 'Vì sao con số khác: một ô đổi màu trên lưới 25 ô đơn giản, nghiên cứu gốc dùng ảnh đời thực nhiều loại thay đổi; màn hình, độ sáng, khoảng cách nhìn ảnh hưởng; chế độ giảm chuyển động làm mỗi phiên bản hiện lâu hơn.'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (giamChuyenDong: thời gian gấp đôi), 16/11/2026; nghiên cứu gốc dùng 48 ảnh đời thực, ba loại thay đổi (Rensink 1997, Phương pháp chung: khớp).'
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (giamChuyenDong: thời gian gấp đôi), 16/11/2026; nghiên cứu gốc dùng 48 ảnh đời thực, ba loại thay đổi (Rensink 1997, Phương pháp chung: khớp). Review (17/11/2026): khớp; công cụ còn báo thời gian không so trực tiếp được khi bật giảm chuyển động.'
+  review: dung
 - id: s3
   cau: 'Công cụ, cảnh báo: màn hình nhấp nháy liên tục (mỗi phiên bản hiện nửa giây, xen giữa là màn xám một phần tư giây); ai nhạy cảm với ánh sáng nhấp nháy (như động kinh nhạy sáng) thì bỏ qua công cụ.'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (THOI_GIAN: hiện 500 ms, xám 250 ms), 16/11/2026. Lời cảnh báo là thận trọng, không phải nhận định y khoa; review xét có cần nguồn (hướng dẫn WCAG 2.3.1: không quá ba lần chớp mỗi giây; ở đây khoảng 2,7 lần đổi màn mỗi giây tính cả màn xám).'
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (THOI_GIAN: hiện 500 ms, xám 250 ms), 16/11/2026. Lời cảnh báo là thận trọng, không phải nhận định y khoa; review xét có cần nguồn (hướng dẫn WCAG 2.3.1: không quá ba lần chớp mỗi giây; ở đây khoảng 2,7 lần đổi màn mỗi giây tính cả màn xám). Review (17/11/2026): khớp. Không cần nguồn y khoa: câu chỉ khuyên người nhạy cảm bỏ qua, không khẳng định gì về nguy cơ. Nhịp: chu kỳ A, xám, B, xám dài 1,5 giây, tức 4 lần đổi màn mỗi 1,5 giây (khoảng 2,7 lần mỗi giây), dưới ngưỡng ba lần chớp mỗi giây của WCAG 2.3.1; giảm chuyển động làm nhịp chậm một nửa.'
+  review: dung
 doi_chu:
 - cu: '"Tôi chịu — hiện đáp án"'
   moi: '"Tôi chịu, hiện đáp án"'

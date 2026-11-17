@@ -11,7 +11,7 @@ lan:
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
     luot_2: null
-    review: null
+    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: mruczek2015
@@ -54,6 +54,10 @@ nguon:
   ten: 'Knol, Huys, Sarrazin & Jirsa (2015), Front Psychol 6, 1679: tóm tắt (OpenAlex)'
   link: https://doi.org/10.3389/fpsyg.2015.01679
   toan_van: false
+- id: urale2023
+  ten: 'Urale & Schwarzkopf (2023), Perception 52(7), 459–483: toàn văn (Europe PMC, PMC10291393), Giới thiệu; thêm khi review'
+  link: https://doi.org/10.1177/03010066231175014
+  toan_van: true
 - id: chen2025
   ten: 'Chen & Aimola Davies (2025), Perception 55(4), 384–411: tóm tắt (OpenAlex)'
   link: https://doi.org/10.1177/03010066251395949
@@ -63,7 +67,8 @@ nhan_dinh:
   cau: 'Cách chơi: cụm trái có vòng bao quanh lớn, cụm phải vòng bao quanh nhỏ; thanh trượt đổi kích thước vòng bao quanh cụm trái, hai vòng giữa không đổi; nút "Đo kích thước thật".'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ebbinghaus.js (HINH: tâm 60, quanh trái 14–44 mặc định 40, quanh phải 14; nút "Đo kích thước thật"), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs.'
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ebbinghaus.js (HINH: tâm 60, quanh trái 14–44 mặc định 40, quanh phải 14; nút "Đo kích thước thật"), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): đọc lại HINH và mount: thanh trượt chỉ đổi bán kính vòng bao quanh cụm trái (quanhMin–quanhMax), vòng trung tâm cố định; khớp.'
+  review: dung
 - id: n1
   cau: Vòng tròn trung tâm bị các vòng lớn bao quanh trông nhỏ hơn vòng trung tâm bị các vòng nhỏ bao quanh, dù hai vòng bằng nhau; não đánh giá mỗi vật so với môi trường xung quanh (tương phản kích thước).
   loai: phat-hien
@@ -104,15 +109,15 @@ nhan_dinh:
   luot_2_nguon:
   - https://doi.org/10.1037/0096-1523.33.3.738
 - id: n4
-  cau: 'Độ lớn của ảo giác phụ thuộc nhiều vào cách vẽ: một khảo sát có hệ thống với 30 cấu hình thấy ảo giác từ không có tới khoảng 10% kích thước vòng trung tâm, một phần ba số cấu hình không có ảo giác; với cấu hình kinh điển, một số nghiên cứu khác báo khoảng 10–20%.'
+  cau: 'Độ lớn của ảo giác phụ thuộc nhiều vào cách vẽ: một khảo sát có hệ thống với 27 cấu hình (3 cỡ vòng trung tâm × 3 cỡ vòng bao quanh × 3 khoảng cách) thấy ảo giác từ không có tới khoảng 10% kích thước vòng trung tâm, một phần ba số cấu hình không có ảo giác; với cấu hình kinh điển, một số nghiên cứu khác báo khoảng 10–20%.'
   loai: so-lieu
   nguon:
   - knol2015
   - mruczek2015
   trich: The illusion magnitude ranged from zero to (exceptionally) 10% of the target size. | the classic Ebbinghaus illusion may cause a target circle to appear around 10–20% larger (or smaller) than it actually is
-  vi_tri: Knol 2015, tóm tắt (3 × 3 × 3 + 3 = 30 tổ hợp); Mruczek 2015, Giới thiệu
+  vi_tri: Knol 2015, tóm tắt và Phương pháp (3 × 3 × 3 tổ hợp có vòng bao quanh, cộng 3 điều kiện đối chứng chỉ có vòng trung tâm); Mruczek 2015, Giới thiệu
   ket_qua: da-sua
-  ghi_chu: 'Chỉ đổi cách dẫn: "tổng quan trong bài báo về Ebbinghaus động" thành "theo các nghiên cứu trước được tổng hợp trong Mruczek và cộng sự, 2015" (bài là nghiên cứu gốc, phần Giới thiệu tổng hợp các nghiên cứu trước). Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 sai. Đã mở tóm tắt bài lượt 2 dẫn: tác giả là Knol, Huys, Sarrazin & Jirsa (2015), không phải Todorović & Jovanović; "The illusion magnitude ranged from zero to (exceptionally) 10% of the target size", "In 33% of the factor combinations there was no illusion effect". Mruczek 2015 (toàn văn) vẫn viết "around 10–20%" theo các nghiên cứu cũ và đo được khoảng 20% với hình tĩnh kinh điển. chỗ khó: hai nguồn tốt khác nhau về độ lớn (khác cấu hình). Câu mới nêu cả hai, ưu tiên khảo sát có hệ thống; viết khác cau_dung: review xem.'
+  ghi_chu: 'Chỉ đổi cách dẫn: "tổng quan trong bài báo về Ebbinghaus động" thành "theo các nghiên cứu trước được tổng hợp trong Mruczek và cộng sự, 2015" (bài là nghiên cứu gốc, phần Giới thiệu tổng hợp các nghiên cứu trước). Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 sai. Đã mở tóm tắt bài lượt 2 dẫn: tác giả là Knol, Huys, Sarrazin & Jirsa (2015), không phải Todorović & Jovanović; "The illusion magnitude ranged from zero to (exceptionally) 10% of the target size", "In 33% of the factor combinations there was no illusion effect". Mruczek 2015 (toàn văn) vẫn viết "around 10–20%" theo các nghiên cứu cũ và đo được khoảng 20% với hình tĩnh kinh điển. chỗ khó: hai nguồn tốt khác nhau về độ lớn (khác cấu hình). Câu mới nêu cả hai, ưu tiên khảo sát có hệ thống; viết khác cau_dung: review xem. review: sửa một chi tiết (Claude Opus 5.5, 17/11/2026). Đã mở toàn văn Knol 2015 (Europe PMC, PMC4631937): "three control conditions (isolated targets) … 3 × 3 × 3 + 3 factorial design"; "no significant illusion effect in 33% of the 27 applied parameter combinations". Ba điều kiện thêm là đối chứng (vòng trung tâm đứng một mình), không phải cấu hình của hình, nên "30 cấu hình" sai: sửa thành 27 (trên trang và cau). Phần còn lại khớp: "ranged from zero to (exceptionally) 10%", một phần ba cấu hình không có ảo giác; Mruczek 2015 (toàn văn PMC4332331): "Based on previous reports, the classic Ebbinghaus illusion may cause a target circle to appear around 10–20% larger (or smaller)". Câu nêu cả hai nguồn, không mạnh hơn cau_dung của lượt 2: đạt.'
   luot_2: sai
   luot_2_nguon:
   - https://doi.org/10.3389/fpsyg.2015.01679
@@ -195,7 +200,7 @@ nhan_dinh:
   trich: the more accurate size judgments of the Himba derive from their tendency to prioritize the analysis of local details in visual processing of multiple objects
   vi_tri: de Fockert 2007, tóm tắt
   ket_qua: da-sua
-  ghi_chu: 'Là cách giải thích của tác giả; trang xếp vào "Các lý thuyết giải thích" và nói các cách không loại trừ nhau. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: Chen & Aimola Davies (Perception, công bố trực tuyến 12/2025; lượt 2 ghi 2026), 145 người: "a strong local-processing bias reduced susceptibility … Our findings did not support this proposal … the participants with the stronger local-processing bias were the participants with greater susceptibility". Câu mới nêu là giả thuyết và thêm nghiên cứu này; viết khác cau_dung (năm 2025 theo Crossref): review xem.'
+  ghi_chu: 'Là cách giải thích của tác giả; trang xếp vào "Các lý thuyết giải thích" và nói các cách không loại trừ nhau. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: Chen & Aimola Davies (Perception, công bố trực tuyến 12/2025; lượt 2 ghi 2026), 145 người: "a strong local-processing bias reduced susceptibility … Our findings did not support this proposal … the participants with the stronger local-processing bias were the participants with greater susceptibility". Câu mới nêu là giả thuyết và thêm nghiên cứu này; viết khác cau_dung (năm 2025 theo Crossref): review xem. review: đạt (Claude Opus 5.5, 17/11/2026). Đã mở tóm tắt (OpenAlex) và siêu dữ liệu Crossref: công bố trực tuyến 9/12/2025 (issued 2025), số in 55(4), tháng 4/2026; 145 người (87 trẻ, 58 lớn tuổi); "the young and older participants with the stronger local-processing bias were the participants with greater susceptibility to the illusion". Câu trên trang ("công bố năm 2025", "người thiên về chi tiết cục bộ lại bị lừa nhiều hơn") khớp nguồn và cụ thể hơn cau_dung ("bằng chứng không nhất quán"), không mạnh hơn: một nghiên cứu, nêu đúng là một nghiên cứu. Năm trong danh sách Nguồn theo Crossref (2025).'
   luot_2: qua-manh
   luot_2_nguon:
   - https://doi.org/10.1177/03010066251395949
@@ -238,10 +243,11 @@ nhan_dinh:
   nguon:
   - roberts2005
   - mruczek2015
-  trich: Classical size-contrast and size-assimilation illusions such as the Ebbinghaus illusion (Thiéry, 1896; Burton, 2001) or the Delboeuf illusion (Delboeuf, 1892; Nicolas, 1995)
-  vi_tri: Mruczek 2015, Giới thiệu
+  - urale2023
+  trich: the Delboeuf illusion (see Figure 1), another size-perception illusion that uses a circular ring that surrounds the target stimulus instead of multiple circular inducers … both inducers and annuli made the target appear smaller at farther distances compared to closer distances
+  vi_tri: Urale & Schwarzkopf 2023, Giới thiệu (kể cả kết quả của Roberts 2005); Mruczek 2015, Giới thiệu
   ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Delboeuf … mỗi bên chỉ có một vòng bao quanh đồng tâm (vòng trong nhìn to hơn khi vòng ngoài ở gần nó). Ebbinghaus dùng nhiều vòng bao quanh." Chi tiết hình Delboeuf không có trong nguồn đã mở; chữ mới chỉ nói điều Mruczek 2015 xác nhận (tương phản và đồng hóa, năm 1892). chưa chắc: Mruczek liệt kê "size-contrast and size-assimilation illusions such as …" theo thứ tự, gán Ebbinghaus là tương phản (khớp tên "size contrast" ở nhiều nguồn), Delboeuf là đồng hóa; lượt 2 kiểm thêm. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: chia "Ebbinghaus tương phản, Delboeuf đồng hóa" quá đơn giản; Roberts 2005 (tóm tắt) cho thấy với Ebbinghaus cân bằng kích thước và khoảng cách quyết định vòng trung tâm trông nhỏ đi hay to ra; bỏ năm 1892 (các nguồn lệch nhau). Câu mới theo cau_dung, nguồn Roberts 2005 cho vế "to hơn hay nhỏ hơn"; vế Delboeuf dùng vòng đồng tâm dựa trên Wikipedia (lượt 2 dẫn, bậc 3) và bài Perception 2023 lượt 2 dẫn: review xem.'
+  ghi_chu: 'Chữ cũ: "Delboeuf … mỗi bên chỉ có một vòng bao quanh đồng tâm (vòng trong nhìn to hơn khi vòng ngoài ở gần nó). Ebbinghaus dùng nhiều vòng bao quanh." Chi tiết hình Delboeuf không có trong nguồn đã mở; chữ mới chỉ nói điều Mruczek 2015 xác nhận (tương phản và đồng hóa, năm 1892). chưa chắc: Mruczek liệt kê "size-contrast and size-assimilation illusions such as …" theo thứ tự, gán Ebbinghaus là tương phản (khớp tên "size contrast" ở nhiều nguồn), Delboeuf là đồng hóa; lượt 2 kiểm thêm. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: chia "Ebbinghaus tương phản, Delboeuf đồng hóa" quá đơn giản; Roberts 2005 (tóm tắt) cho thấy với Ebbinghaus cân bằng kích thước và khoảng cách quyết định vòng trung tâm trông nhỏ đi hay to ra; bỏ năm 1892 (các nguồn lệch nhau). Câu mới theo cau_dung, nguồn Roberts 2005 cho vế "to hơn hay nhỏ hơn"; vế Delboeuf dùng vòng đồng tâm dựa trên Wikipedia (lượt 2 dẫn, bậc 3) và bài Perception 2023 lượt 2 dẫn: review xem. review: đạt sau khi thêm nguồn bậc 1 (Claude Opus 5.5, 17/11/2026). Đã mở toàn văn bài Perception 2023 lượt 2 dẫn (Urale & Schwarzkopf, PMC10291393): Delboeuf "uses a circular ring that surrounds the target stimulus instead of multiple circular inducers" (một vòng bao quanh vòng trung tâm, tức đồng tâm), Ebbinghaus dùng nhiều vòng bao quanh; tóm tắt: hai ảo giác làm vòng trung tâm trông khác đi "depending on the size and proximity of circular inducers or a ring"; Giới thiệu kể Roberts 2005: vòng bao quanh và vành càng xa thì vòng trung tâm trông càng nhỏ. Thêm urale2023 vào nguon của nhận định, trang dẫn kèm Roberts 2005 và thêm vào mục Nguồn; Wikipedia không còn là chỗ dựa.'
   luot_2: qua-manh
   luot_2_nguon:
   - https://en.wikipedia.org/wiki/Delboeuf_illusion
@@ -265,7 +271,8 @@ nhan_dinh:
   cau: 'Câu hỏi 1, lời giải thích: nút "Đo kích thước thật" cho thấy cả hai vòng trung tâm đều có đường kính 60 px.'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: Đã kiểm ebbinghaus.js (HINH.duongKinhTam 60, hình gốc rộng 720 đơn vị; màn kết quả nói rõ hình co lại trên màn nhỏ), 16/11/2026.
+  ghi_chu: 'Đã kiểm ebbinghaus.js (HINH.duongKinhTam 60, hình gốc rộng 720 đơn vị; màn kết quả nói rõ hình co lại trên màn nhỏ), 16/11/2026. Review (17/11/2026): khớp; chữ màn kết quả dựng từ HINH.duongKinhTam.'
+  review: dung
 doi_chu:
 - cu: 'Mục "Tên gọi: Ebbinghaus (1902), Titchener (1901)"'
   moi: '"Tên gọi: Ebbinghaus hay Titchener?" (giữ id cũ), viết theo Burton (2001)'
@@ -295,7 +302,7 @@ doi_chu:
   moi: Amir & Firestone 2026, Burton 2001, de Fockert 2007, Kopiske 2016, Mruczek 2015 (đủ tên), Roberts 2005, Segall 1963; bỏ Ebbinghaus 1902
   ly_do: nguồn của n2, n6–n8
 - cu: '"khoảng 10–20% so với kích thước thật, tùy cách vẽ (theo … Mruczek)"'
-  moi: 'Knol và cộng sự (2015): từ không có tới khoảng 10%, một phần ba cấu hình không có ảo giác; với cấu hình kinh điển, một số nghiên cứu báo 10–20% (Mruczek tổng hợp)'
+  moi: 'Knol và cộng sự (2015), 27 cấu hình: từ không có tới khoảng 10%, một phần ba cấu hình không có ảo giác; với cấu hình kinh điển, một số nghiên cứu báo 10–20% (Mruczek tổng hợp)'
   ly_do: n4 (sau lượt 2)
 - cu: :::vung-chac[vòng trung tâm bị vòng lớn bao quanh “nhìn” nhỏ hơn]
   moi: :::kha-vung[…], thêm câu về Knol 2015 và lý do dừng ở khá vững
@@ -309,3 +316,6 @@ doi_chu:
 - cu: Nguồn
   moi: thêm Chen & Aimola Davies 2025, Knol và cộng sự 2015
   ly_do: nguồn của n4, n6, n9
+- cu: 'Ngộ nhận Delboeuf, câu cuối: "(Roberts, Harris và Yates, 2005)"'
+  moi: '"(Roberts, Harris và Yates, 2005; Urale và Schwarzkopf, 2023)", thêm Urale & Schwarzkopf 2023 vào Nguồn'
+  ly_do: n12 (review)

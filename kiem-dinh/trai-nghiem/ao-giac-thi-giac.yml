@@ -11,7 +11,7 @@ lan:
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
     luot_2: null
-    review: null
+    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: henrich2010
@@ -43,7 +43,8 @@ nhan_dinh:
   cau: 'Cách chơi: đoạn trên cánh hướng vào, đoạn dưới cánh hướng ra; kéo thanh trượt chỉnh đoạn dưới; "Chốt đáp án" hiện độ dài thật và % sai lệch.'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (hinhDoan: kieu "vao" ở trên, "ra" ở dưới; TRUOT 50–150%), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs chỉnh bằng phím rồi chốt.'
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (hinhDoan: kieu "vao" ở trên, "ra" ở dưới; TRUOT 50–150%), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs chỉnh bằng phím rồi chốt. Review (17/11/2026): hinhDoan("vao") vẽ <——> (cánh khép vào, đoạn trông ngắn) ở trên, "ra" vẽ >——< ở dưới, khớp chữ trang và trang nhà (>---< cánh xòe ra trông dài hơn). Hai chú thích trong mã ghi ngược ký hiệu (vao là >——<): đã sửa chú thích, hình và chữ hiện ra không đổi. TRUOT 50–150: khớp.'
+  review: dung
 - id: n1
   cau: Đoạn có cánh hướng ra thường trông dài hơn đoạn có cánh hướng vào, dù độ dài thật bằng nhau.
   loai: phat-hien
@@ -140,7 +141,8 @@ nhan_dinh:
   cau: 'Vì sao con số khác: thanh trượt bắt đầu ngẫu nhiên 75–125%; một lần đo; góc, độ dài cánh, độ dày nét, kích thước màn hình ảnh hưởng; biết trước là ảo giác có thể làm chỉnh khác.'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (batDauNgauNhien: 75 + 0..50), 16/11/2026. Ba ý sau là lưu ý chung về đo lường; ý "góc cánh ảnh hưởng" có nguồn ở n7.'
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (batDauNgauNhien: 75 + 0..50), 16/11/2026. Ba ý sau là lưu ý chung về đo lường; ý "góc cánh ảnh hưởng" có nguồn ở n7. Review (17/11/2026): batDauNgauNhien = 75 + floor(rand·51), tức 75–125: khớp; bốn ý có ở khối "Vì sao con số của bạn có thể khác?" của công cụ và trang.'
+  review: dung
 - id: n7
   cau: Góc và độ dài cánh ảnh hưởng đến độ mạnh của ảo giác.
   loai: phat-hien
@@ -158,7 +160,8 @@ nhan_dinh:
   cau: 'Công cụ: độ lệch = (độ dài thật − độ dài chỉnh)/độ dài thật; phần so sánh tính lại theo cách của Segall (đoạn cánh hướng vào dài hơn đoạn cánh hướng ra bao nhiêu %).'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: Đã kiểm src/scripts/cong-cu/ao-giac.js (doLech, theoSegall), tests/cong-cu.test.mjs (84% cho 16,0% và 19,0%), 16/11/2026.
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (doLech, theoSegall), tests/cong-cu.test.mjs (84% cho 16,0% và 19,0%), 16/11/2026. Review (17/11/2026): doLech = (thật − chỉnh)/thật; theoSegall(pct) = 100/pct − 1 (đoạn cánh hướng vào cố định so với đoạn cánh hướng ra đã chỉnh), đúng định nghĩa PSE của Segall theo Henrich 2010; NGHIEN_CUU.segall1966 {sinhVienMy 20, soXaHoi 16} khớp n4 ("khoảng một phần năm") và trang nhà (Henrich 2010 Hình 2: 16 xã hội, hồ sơ kham-pha/chu-y-tri-giac/ao-giac-thi-giac).'
+  review: dung
 doi_chu:
 - cu: 'Điều gì đang xảy ra: "(góc lồi trông như ở xa hơn, góc lõm như ở gần hơn)"'
   moi: '"(đoạn cánh hướng ra giống góc trong của căn phòng, trông như ở xa hơn; đoạn cánh hướng vào giống góc ngoài của ngôi nhà, trông như ở gần hơn)"'
