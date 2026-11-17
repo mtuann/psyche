@@ -110,6 +110,38 @@ test('kho: không có localStorage (Node) thì giữ trong bộ nhớ; có thì 
 	}
 });
 
+test('kho: ghi hỏng (đầy chỗ) thì bản ghi vẫn còn trong phiên; chữ hỏng được chép sang khóa phụ trước khi bị đè', () => {
+	L.xoaHet();
+	const bang = new Map();
+	let day = false;
+	globalThis.localStorage = {
+		getItem: (k) => bang.get(k) ?? null,
+		setItem: (k, v) => {
+			if (day && k === 'psyche-zero') throw new Error('QuotaExceededError');
+			bang.set(k, String(v));
+		},
+		removeItem: (k) => bang.delete(k),
+	};
+	try {
+		L.them('stroop', { effect: 1 });
+		day = true;
+		const r = L.them('stroop', { effect: 2 });
+		assert.equal(L.ds('stroop').length, 2, 'bản ghi vừa làm không mất');
+		assert.ok(L.ds().some((x) => x.id === r.id));
+		day = false;
+		L.them('stroop', { effect: 3 });
+		assert.equal(Object.keys(JSON.parse(bang.get('psyche-zero')).records).length, 3, 'ghi lại được thì kho có đủ');
+		L.xoaHet();
+		bang.set('psyche-zero', '{hỏng');
+		assert.equal(L.ds().length, 0);
+		L.them('quiz', { score: 1 });
+		assert.equal(bang.get('psyche-zero:hong'), '{hỏng');
+	} finally {
+		delete globalThis.localStorage;
+		L.xoaHet();
+	}
+});
+
 // ---------- Thống kê dùng chung ----------
 
 test('trung vị, phân vị, trung bình, độ lệch chuẩn; trung vị không bị một lượt rất chậm kéo lệch', () => {

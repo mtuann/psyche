@@ -451,6 +451,9 @@ export function mount(el) {
 
 	function khiAnPhim(e) {
 		if (!st || e.ctrlKey || e.metaKey || e.altKey) return;
+		// đang gõ vào ô nhập (ô tìm kiếm của trang…) thì phím là chữ, không phải đáp án (review D8-L1)
+		const t = e.target;
+		if (t instanceof Element && (t.closest('input, textarea, select') || t.isContentEditable)) return;
 		const k = (e.key || '').toLowerCase();
 		let i = PHIM.indexOf(k);
 		if (i === -1 && kieu === 'count' && /^[1-4]$/.test(k)) i = +k - 1;

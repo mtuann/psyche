@@ -70,6 +70,21 @@ const LUONG = {
 			for (let i = 0; i < 8; i++) await traLoi(true);
 			await toiKhi(p, () => /Xong phần khởi động: đúng 8 \/ 8/.test(document.querySelector('.pz-stroop').textContent), null, { ten: 'xong khởi động' });
 			await bam(el, 'Bắt đầu phần chính');
+			// gõ vào một ô nhập của trang (như ô tìm kiếm) giữa bài: phím là chữ, không thành đáp án (review D8-L1)
+			await toiKhi(p, () => {
+				const s = document.querySelector('.pz-stroop .pz-stim');
+				return s && !s.classList.contains('pz-stim--fix') && s.textContent.trim() !== '';
+			}, null, { ten: 'kích thích hiện' });
+			await p.evaluate(() => {
+				const o = document.createElement('input');
+				o.id = 'pz-thu-go';
+				o.setAttribute('aria-label', 'thử gõ');
+				document.body.append(o);
+				o.focus();
+			});
+			await p.keyboard.type('1234dfjk');
+			assert.equal(await p.evaluate(() => document.getElementById('pz-thu-go').value), '1234dfjk');
+			await p.evaluate(() => document.getElementById('pz-thu-go').remove());
 			for (let i = 0; i < 36; i++) await traLoi(false);
 			await bam(el, 'Tiếp tục');
 			for (let i = 0; i < 36; i++) await traLoi(false);

@@ -100,7 +100,9 @@ export const taoId = (kind, t, rand = Math.random) => `${kind}-${t.toString(36)}
 
 // ---------- localStorage (chỉ trong trình duyệt) ----------
 
-let boNho = null; // dự phòng khi không có localStorage (chế độ riêng tư, bị chặn): chỉ sống trong phiên
+// dự phòng khi không có localStorage (chế độ riêng tư, bị chặn) hay khi ghi hỏng (đầy chỗ): chỉ sống trong phiên. Khác null
+// thì là bản mới nhất (đọc từ kho rồi thêm), nên doc() đọc nó trước kho: bản ghi vừa làm không biến mất (review D8-L1)
+let boNho = null;
 
 function kho() {
 	try {
@@ -120,10 +122,15 @@ export const coLuu = () => !!kho();
 
 export function doc() {
 	const s = kho();
-	if (!s) return chuanHoa(boNho);
+	if (!s || boNho) return chuanHoa(boNho);
+	const chu = s.getItem(KHOA);
 	try {
-		return chuanHoa(JSON.parse(s.getItem(KHOA) || 'null'));
+		return chuanHoa(JSON.parse(chu || 'null'));
 	} catch {
+		// chữ hỏng (không phải JSON): chép sang khóa phụ trước khi lần ghi sau đè lên, để còn cứu được (chỉ chép lần đầu)
+		try {
+			if (s.getItem(`${KHOA}:hong`) === null) s.setItem(`${KHOA}:hong`, chu);
+		} catch {}
 		return rong();
 	}
 }
@@ -135,6 +142,7 @@ export function ghi(data) {
 	if (s)
 		try {
 			s.setItem(KHOA, JSON.stringify(d));
+			boNho = null;
 			return true;
 		} catch {}
 	boNho = d;
