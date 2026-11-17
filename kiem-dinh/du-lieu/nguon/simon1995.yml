@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/simon1995#…
+ban_ghi: nguon/simon1995
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/0022-3514.68.2.247
+    link: https://api.crossref.org/works/10.1037%2F0022-3514.68.2.247
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/0022-3514.68.2.247
+    link: https://api.openalex.org/works/doi:10.1037%2F0022-3514.68.2.247
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Simon, L., Greenberg, J., & Brehm, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Simon, Linda; Greenberg, Jeff; Brehm, Jack
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0022-3514.68.2.247
+    luot_2_trich: Linda Simon; Jeff Greenberg; Jack W. Brehm
+  - id: n2
+    cau: "Năm xuất bản: 1995"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1995; các năm Crossref ghi: 1995"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0022-3514.68.2.247
+  - id: n3
+    cau: "Tên: Trivialization: the forgotten mode of dissonance reduction"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Trivialization: the forgotten mode of dissonance reduction."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0022-3514.68.2.247
+  - id: n4
+    cau: "Nơi đăng: Journal of Personality and Social Psychology, 68(2), 247–260"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Personality and Social Psychology, tập 68, số 2, trang 247-260
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0022-3514.68.2.247
+  - id: n5
+    cau: DOI 10.1037/0022-3514.68.2.247 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0022-3514.68.2.247

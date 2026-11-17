@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/tomasello1986#…
+ban_ghi: nguon/tomasello1986
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/j.1467-8624.1986.tb00470.x
+    link: https://api.crossref.org/works/10.1111%2Fj.1467-8624.1986.tb00470.x
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/j.1467-8624.1986.tb00470.x
+    link: https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1986.tb00470.x
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Tomasello, M., & Farrar, M. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Tomasello, Michael; Farrar, Michael Jeffrey
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1986.tb00470.x
+    luot_2_trich: Michael Tomasello; Michael Jeffrey Farrar
+  - id: n2
+    cau: "Năm xuất bản: 1986"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1986; các năm Crossref ghi: 1986"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1986.tb00470.x
+  - id: n3
+    cau: "Tên: Joint attention and early language"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Joint Attention and Early Language
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1986.tb00470.x
+  - id: n4
+    cau: "Nơi đăng: Child Development, 57(6), 1454"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Child Development, tập 57, số 6, trang 1454
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1986.tb00470.x
+  - id: n5
+    cau: DOI 10.1111/j.1467-8624.1986.tb00470.x trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1986.tb00470.x

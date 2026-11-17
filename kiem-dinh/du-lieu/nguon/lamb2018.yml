@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/lamb2018#…
+ban_ghi: nguon/lamb2018
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1136/bmj.k1675
+    link: https://api.crossref.org/works/10.1136%2Fbmj.k1675
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1136/bmj.k1675
+    link: https://api.openalex.org/works/doi:10.1136%2Fbmj.k1675
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Lamb, S. E., Sheehan, B., Atherton, N., Nichols, V., Collins, H., Mistry, D., Dosanjh, S., Slowther, A. M., Khan, I., Petrou, S., & Lall, R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Lamb, Sarah E; Sheehan, Bart; Atherton, Nicky; Nichols, Vivien; Collins, Helen; Mistry, Dipesh; Dosanjh, Sukhdeep; Slowther, Anne Marie; Khan, Iftekhar; Petrou, Stavros; Lall, Ranjit
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1136%2Fbmj.k1675
+    luot_2_trich: Sarah E Lamb; Bart Sheehan; Nicky Atherton; Vivien P. Nichols; Helen Collins; Dipesh Mistry; Sukhdeep Dosanjh; Anne‐Marie Slowther; Iftekhar Khan; Stavros Petrou; Ranjit Lall
+  - id: n2
+    cau: "Năm xuất bản: 2018"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2018; các năm Crossref ghi: 2018"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1136%2Fbmj.k1675
+  - id: n3
+    cau: "Tên: Dementia and Physical Activity (DAPA) trial of moderate to high intensity exercise training for people with dementia: randomised controlled trial"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Dementia And Physical Activity (DAPA) trial of moderate to high intensity exercise training for people with dementia: randomised controlled trial"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1136%2Fbmj.k1675
+  - id: n4
+    cau: "Nơi đăng: BMJ, 361, k1675"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: BMJ, trang k1675
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1136%2Fbmj.k1675
+  - id: n5
+    cau: DOI 10.1136/bmj.k1675 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1136%2Fbmj.k1675

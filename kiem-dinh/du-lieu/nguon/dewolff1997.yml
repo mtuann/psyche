@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/dewolff1997#…
+ban_ghi: nguon/dewolff1997
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/j.1467-8624.1997.tb04218.x
+    link: https://api.crossref.org/works/10.1111%2Fj.1467-8624.1997.tb04218.x
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/j.1467-8624.1997.tb04218.x
+    link: https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1997.tb04218.x
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: De Wolff, M. S., & van Ijzendoorn, M. H."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: De Wolff, Marianne S; van Ijzendoorn, Marinus H
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1997.tb04218.x
+    luot_2_trich: Marianne S. de Wolff; Marinus H. van IJzendoorn
+  - id: n2
+    cau: "Năm xuất bản: 1997"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1997; các năm Crossref ghi: 1997, 2006"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1997.tb04218.x
+  - id: n3
+    cau: "Tên: Sensitivity and attachment: A meta-analysis on parental antecedents of infant attachment"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Sensitivity and Attachment: A Meta-Analysis on Parental Antecedents of Infant Attachment"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1997.tb04218.x
+  - id: n4
+    cau: "Nơi đăng: Child Development, 68(4), 571–591"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Child Development, tập 68, số 4, trang 571-591
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1997.tb04218.x
+  - id: n5
+    cau: DOI 10.1111/j.1467-8624.1997.tb04218.x trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fj.1467-8624.1997.tb04218.x

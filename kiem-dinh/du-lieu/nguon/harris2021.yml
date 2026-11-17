@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/harris2021#…
+ban_ghi: nguon/harris2021
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1080/1750984x.2021.1929402
+    link: https://api.crossref.org/works/10.1080%2F1750984x.2021.1929402
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1080/1750984x.2021.1929402
+    link: https://api.openalex.org/works/doi:10.1080%2F1750984x.2021.1929402
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Harris, D. J., Allen, K. L., Vine, S. J., & Wilson, M. R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Harris, David J.; Allen, Kate L.; Vine, Samuel J.; Wilson, Mark R.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F1750984x.2021.1929402
+    luot_2_trich: David Harris; Kate Allen; Samuel James Vine; Mark Wilson
+  - id: n2
+    cau: "Năm xuất bản: 2021"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2021, 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F1750984x.2021.1929402
+  - id: n3
+    cau: "Tên: A systematic review and meta-analysis of the relationship between flow states and performance"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: A systematic review and meta-analysis of the relationship between flow states and performance
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F1750984x.2021.1929402
+  - id: n4
+    cau: "Nơi đăng: International Review of Sport and Exercise Psychology, 16(1), 693–721"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: International Review of Sport and Exercise Psychology, tập 16, số 1, trang 693-721
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F1750984x.2021.1929402
+  - id: n5
+    cau: DOI 10.1080/1750984x.2021.1929402 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1080%2F1750984x.2021.1929402

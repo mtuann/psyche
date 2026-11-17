@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/burton2001#…
+ban_ghi: nguon/burton2001
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/1093-4510.4.3.228
+    link: https://api.crossref.org/works/10.1037%2F1093-4510.4.3.228
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/1093-4510.4.3.228
+    link: https://api.openalex.org/works/doi:10.1037%2F1093-4510.4.3.228
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Burton, G."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Burton, Gregory
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1093-4510.4.3.228
+    luot_2_trich: Gregory Burton
+  - id: n2
+    cau: "Năm xuất bản: 2001"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2001; các năm Crossref ghi: 2001"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1093-4510.4.3.228
+  - id: n3
+    cau: "Tên: The tenacity of historical misinformation: Titchener did not invent the Titchener illusion"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "The tenacity of historical misinformation: Titchener did not invent the Titchener illusion."
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1093-4510.4.3.228
+  - id: n4
+    cau: "Nơi đăng: History of Psychology, 4(3), 228–244"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: History of Psychology, tập 4, số 3, trang 228-244
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1093-4510.4.3.228
+  - id: n5
+    cau: DOI 10.1037/1093-4510.4.3.228 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F1093-4510.4.3.228

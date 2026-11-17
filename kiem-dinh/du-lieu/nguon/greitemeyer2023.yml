@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/greitemeyer2023#…
+ban_ghi: nguon/greitemeyer2023
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1111/jasp.12968
+    link: https://api.crossref.org/works/10.1111%2Fjasp.12968
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1111/jasp.12968
+    link: https://api.openalex.org/works/doi:10.1111%2Fjasp.12968
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Greitemeyer, T."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Greitemeyer, Tobias
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fjasp.12968
+    luot_2_trich: Tobias Greitemeyer
+  - id: n2
+    cau: "Năm xuất bản: 2023"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fjasp.12968
+  - id: n3
+    cau: "Tên: Counter explanation and consider the opposite: Do corrective strategies reduce biased assimilation and attitude polarization in the context of the COVID‐19 pandemic?"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Counter explanation and consider the opposite: Do corrective strategies reduce biased assimilation and attitude polarization in the context of the COVID‐19 pandemic?"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fjasp.12968
+  - id: n4
+    cau: "Nơi đăng: Journal of Applied Social Psychology, 53(8), 785–795"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Journal of Applied Social Psychology, tập 53, số 8, trang 785-795
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fjasp.12968
+  - id: n5
+    cau: DOI 10.1111/jasp.12968 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1111%2Fjasp.12968

@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/jauhar2023#…
+ban_ghi: nguon/jauhar2023
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/s41380-023-02095-y
+    link: https://api.crossref.org/works/10.1038%2Fs41380-023-02095-y
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/s41380-023-02095-y
+    link: https://api.openalex.org/works/doi:10.1038%2Fs41380-023-02095-y
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Jauhar, S., Arnone, D., Baldwin, D. S., Bloomfield, M., Browning, M., Cleare, A. J., Corlett, P., Deakin, J. F. W., Erritzoe, D., Fu, C., Fusar-Poli, P., Goodwin, G. M., Hayes, J., Howard, R., Howes, O. D., Juruena, M. F., Lam, R. W., Lawrie, S. M., McAllister-Williams, H., … Cowen, P. J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Jauhar, Sameer; Arnone, Danilo; Baldwin, David S.; Bloomfield, Michael; Browning, Michael; Cleare, Anthony J.; Corlett, Phillip; Deakin, J. F. William; Erritzoe, David; Fu, Cynthia; Fusar-Poli, Paolo; Goodwin, Guy M.; Hayes, Joseph; Howard, Robert; Howes, Oliver D.; Juruena, Mario F.; Lam, Raymond W.; Lawrie, Stephen M.; McAllister-Williams, Hamish; Marwaha, Steven; Matuskey, David; McCutcheon, Robert A.; Nutt, David J.; Pariante, Carmine; Pillinger, Toby; Radhakrishnan, Rajiv; Rucker, James; Selvaraj, Sudhakar; Stokes, Paul; Upthegrove, Rachel; Yalin, Nefize; Yatham, Lakshmi; Young, Allan H.; Zahn, Roland; Cowen, Philip J.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41380-023-02095-y
+    luot_2_trich: Sameer Jauhar; Danilo Arnone; David S. Baldwin; Michael Bloomfield; Michael D Browning; Anthony James Cleare; Philip Robert Corlett; J.F.W. Deakin; David Erritzøe; Cynthia H.Y. Fu; Paolo Fusar‐Poli; Guy M. Goodwin; Joseph Hayes; Robert J. Howard; Oliver David Howes; Mário F. Juruena; Raymond Wing Moon Lam; Stephen M. Lawrie; Hamish McAllister-Williams; Steven Marwaha; David Matuskey; Robert Ali McCutcheon; David Nutt; Carmine Maria Pariante; Toby Pillinger; Rajiv Radhakrishnan; James Rucker; Sudhakar Selvaraj; Paul R A Stokes; Rachel Upthegrove; Nefize Yalın; Lakshmi N. Yatham; Allan Hunter Young; Roland Zahn; Philip J. Cowen
+  - id: n2
+    cau: "Năm xuất bản: 2023"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41380-023-02095-y
+  - id: n3
+    cau: "Tên: A leaky umbrella has little value: evidence clearly indicates the serotonin system is implicated in depression"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "A leaky umbrella has little value: evidence clearly indicates the serotonin system is implicated in depression"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41380-023-02095-y
+  - id: n4
+    cau: "Nơi đăng: Molecular Psychiatry, 28(8), 3149–3152"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Molecular Psychiatry, tập 28, số 8, trang 3149-3152
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41380-023-02095-y
+  - id: n5
+    cau: DOI 10.1038/s41380-023-02095-y trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41380-023-02095-y

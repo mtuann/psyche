@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/jansen2015#…
+ban_ghi: nguon/jansen2015
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1007/s11065-015-9278-9
+    link: https://api.crossref.org/works/10.1007%2Fs11065-015-9278-9
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1007/s11065-015-9278-9
+    link: https://api.openalex.org/works/doi:10.1007%2Fs11065-015-9278-9
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Jansen, A. G., Mous, S. E., White, T., Posthuma, D., & Polderman, T. J. C."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Jansen, Arija G.; Mous, Sabine E.; White, Tonya; Posthuma, Danielle; Polderman, Tinca J. C.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11065-015-9278-9
+    luot_2_trich: Arija G. Jansen; Sabine E. Mous; Tonya J.H. White; Daniëlle Posthuma; Tinca J. C. Polderman
+  - id: n2
+    cau: "Năm xuất bản: 2015"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2015; các năm Crossref ghi: 2015"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11065-015-9278-9
+  - id: n3
+    cau: "Tên: What twin studies tell us about the heritability of brain development, morphology, and function: A review"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "What Twin Studies Tell Us About the Heritability of Brain Development, Morphology, and Function: A Review"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11065-015-9278-9
+  - id: n4
+    cau: "Nơi đăng: Neuropsychology Review, 25(1), 27–46"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Neuropsychology Review, tập 25, số 1, trang 27-46
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11065-015-9278-9
+  - id: n5
+    cau: DOI 10.1007/s11065-015-9278-9 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1007%2Fs11065-015-9278-9

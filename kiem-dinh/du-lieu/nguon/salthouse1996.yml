@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/salthouse1996#…
+ban_ghi: nguon/salthouse1996
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/0033-295x.103.3.403
+    link: https://api.crossref.org/works/10.1037%2F0033-295x.103.3.403
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/0033-295x.103.3.403
+    link: https://api.openalex.org/works/doi:10.1037%2F0033-295x.103.3.403
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Salthouse, T. A."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Salthouse, Timothy A.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295x.103.3.403
+    luot_2_trich: Timothy A. Salthouse
+  - id: n2
+    cau: "Năm xuất bản: 1996"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 1996; các năm Crossref ghi: 1996"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295x.103.3.403
+  - id: n3
+    cau: "Tên: The processing-speed theory of adult age differences in cognition"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The processing-speed theory of adult age differences in cognition.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295x.103.3.403
+  - id: n4
+    cau: "Nơi đăng: Psychological Review, 103(3), 403–428"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Review, tập 103, số 3, trang 403-428
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295x.103.3.403
+  - id: n5
+    cau: DOI 10.1037/0033-295x.103.3.403 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2F0033-295x.103.3.403

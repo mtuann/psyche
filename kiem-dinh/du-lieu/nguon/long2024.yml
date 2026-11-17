@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/long2024#…
+ban_ghi: nguon/long2024
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/13623613241253908
+    link: https://api.crossref.org/works/10.1177%2F13623613241253908
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/13623613241253908
+    link: https://api.openalex.org/works/doi:10.1177%2F13623613241253908
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Long, H. L., Ramsay, G., Bene, E. R., Su, P. L., Yoo, H., Klaiman, C., Pulver, S. L., Richardson, S., Pileggi, M. L., Brane, N., & Oller, D. K."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Long, Helen L.; Ramsay, Gordon; Bene, Edina R.; Su, Pumpki Lei; Yoo, Hyunjoo; Klaiman, Cheryl; Pulver, Stormi L; Richardson, Shana; Pileggi, Moira L.; Brane, Natalie; Oller, D. Kimbrough
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F13623613241253908
+    luot_2_trich: Helen L. Long; Gordon Ramsay; Edina R. Bene; Pumpki Lei Su; Hyunjoo Yoo; Cheryl Klaiman; Stormi L. Pulver; Shana S. Richardson; Moira L. Pileggi; Natalie Brane; D. Kimbrough Oller
+  - id: n2
+    cau: "Năm xuất bản: 2024"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2024; các năm Crossref ghi: 2024"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F13623613241253908
+  - id: n3
+    cau: "Tên: Canonical babbling trajectories across the first year of life in autism and typical development"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Canonical babbling trajectories across the first year of life in autism and typical development
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F13623613241253908
+  - id: n4
+    cau: "Nơi đăng: Autism, 28(12), 3078–3091"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Autism, tập 28, số 12, trang 3078-3091
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F13623613241253908
+  - id: n5
+    cau: DOI 10.1177/13623613241253908 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F13623613241253908

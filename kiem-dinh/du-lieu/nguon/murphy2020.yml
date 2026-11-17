@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/murphy2020#…
+ban_ghi: nguon/murphy2020
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1186/s13033-020-00342-1
+    link: https://api.crossref.org/works/10.1186%2Fs13033-020-00342-1
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1186/s13033-020-00342-1
+    link: https://api.openalex.org/works/doi:10.1186%2Fs13033-020-00342-1
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Murphy, J. K., Xie, H., Nguyen, V. C., Chau, L. W., Oanh, P. T., Nhu, T. K., O’Neil, J., Goldsmith, C. H., Van Hoi, N., Ma, Y., Lou, H., Jones, W., & Minas, H."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Murphy, Jill K.; Xie, Hui; Nguyen, Vu Cong; Chau, Leena W.; Oanh, Pham Thi; Nhu, Tran Kieu; O’Neil, John; Goldsmith, Charles H.; Van Hoi, Nguyen; Ma, Yue; Lou, Hayami; Jones, Wayne; Minas, Harry
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1186%2Fs13033-020-00342-1
+    luot_2_trich: Jill Murphy; Hui Wen Xie; Vu Cong Nguyen; Leena W. Chau; Phạm Thị Kiều Oanh; Nhu Kieu Tran; John O’Neil; Charles H. Goldsmith; Nguyen Van Hoi; Yue Ma; Hayami Lou; Wayne R. Jones; Harry Minas
+  - id: n2
+    cau: "Năm xuất bản: 2020"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2020; các năm Crossref ghi: 2020"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1186%2Fs13033-020-00342-1
+  - id: n3
+    cau: "Tên: Is supported self-management for depression effective for adults in community-based settings in Vietnam?: a modified stepped-wedge cluster randomized controlled trial"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Is supported self-management for depression effective for adults in community-based settings in Vietnam?: a modified stepped-wedge cluster randomized controlled trial"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1186%2Fs13033-020-00342-1
+  - id: n4
+    cau: "Nơi đăng: International Journal of Mental Health Systems, 14(1), 8"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: International Journal of Mental Health Systems, tập 14, số 1, trang 8
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1186%2Fs13033-020-00342-1
+  - id: n5
+    cau: DOI 10.1186/s13033-020-00342-1 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1186%2Fs13033-020-00342-1
