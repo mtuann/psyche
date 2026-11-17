@@ -5,12 +5,12 @@ lan:
   - so: 1
     ngay: '2026-11-17'
     nhanh: moi/d8-l3
-    ma_bam: null
+    ma_bam: sha256:8557ce1ea2fd7b3fdfa04df38de683d0696303d4749134749fedb33fab4f2d24
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
       review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
-      kiem_mau: null
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
 ghi_chu: 'Bỏ link tới kham-pha/tinh-cach/big-five (trang ấy không bàn về lãnh đạo). Câu cũ "hướng ngoại dự báo tốt ai NỔI LÊN, nhưng dự báo kém hơn nhiều về ai lãnh đạo HIỆU QUẢ" mạnh hơn tóm tắt (tóm tắt: hướng ngoại là tương quan nhất quán nhất ở cả hai tiêu chí). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp (Judge và cộng sự, 2002) thấy hướng ngoại dự báo tốt ai sẽ NỔI LÊN làm lãnh đạo, nhưng dự báo kém hơn nhiều về ai lãnh đạo HIỆU QUẢ. Hướng nội hay hướng ngoại chỉ là một mảnh ghép; tận tâm và ổn định cảm xúc cũng quan trọng không kém.'' → mới ''Phân tích tổng hợp 73 mẫu (Judge và cộng sự, 2002) thấy hướng ngoại là đặc điểm đi cùng khả năng lãnh đạo nhất quán nhất, nhưng tương quan chỉ ở mức vừa (r = .31); tận tâm (.28), cởi mở (.24) và ổn định cảm xúc cũng liên quan. Tương quan ở mức vừa nghĩa là có nhiều ngoại lệ: không đặc điểm nào quyết định ai lãnh đạo giỏi.'' | trang: cũ ''kham-pha/tinh-cach/big-five'' → mới None'
 nguon:
   - id: judge2002

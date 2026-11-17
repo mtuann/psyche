@@ -2,70 +2,70 @@
 ban_ghi: ngo-nhan/duong-tang-dong
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
-    review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:5fce63003e9dcca18f0bb27f63e283eb36dc134d747d4c9f48c72d0c0fabc9e9
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp năm 1995 gộp các thí nghiệm mù đôi có giả dược (cả trẻ, cha mẹ lẫn người quan sát đều không biết trẻ được ăn đường hay chất tạo ngọt) không thấy đường ảnh hưởng đến hành vi hay nhận thức của trẻ; không loại trừ được một hiệu ứng rất nhỏ ở một số trẻ. Kỳ vọng của người lớn, cùng bối cảnh như tiệc sinh nhật, có thể khiến họ "thấy" trẻ hiếu động hơn.'' → mới ''Phân tích tổng hợp năm 1995 gộp các thí nghiệm mù đôi có giả dược (cả trẻ, cha mẹ lẫn người nghiên cứu đều không biết trẻ được ăn đường hay chất tạo ngọt) không thấy đường ảnh hưởng đến hành vi hay nhận thức của trẻ; không loại trừ được một tác dụng nhỏ hay tác dụng ở một nhóm trẻ. Niềm tin mạnh của cha mẹ có thể đến từ kỳ vọng và những liên tưởng quen thuộc.'' | trang: cũ None → mới ''bang-chung/thi-nghiem-doi-chung'''
 nguon:
-- id: wolraich1995
-  ten: 'Wolraich và cộng sự (1995). The effect of sugar on behavior or cognition in children: A meta-analysis'
-  link: https://doi.org/10.1001/jama.1995.03530200053037
+  - id: wolraich1995
+    ten: 'Wolraich và cộng sự (1995). The effect of sugar on behavior or cognition in children: A meta-analysis'
+    link: https://doi.org/10.1001/jama.1995.03530200053037
 nhan_dinh:
-- id: nhan
-  cau: 'Ăn đồ ngọt làm trẻ tăng động: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - wolraich1995
-  co_so:
-  - wolraich1995
-  ly_do: 'Thước đo mục 4, Đã bị bác bỏ: phân tích tổng hợp 23 nghiên cứu mù đôi có giả dược (16 bài), cả 14 thước đo có khoảng tin cậy chứa 0: các kiểm tra đủ mạnh (mù đôi) liên tục không thấy hiệu ứng. Giới hạn: chỉ một tổng hợp (1995), không loại trừ hiệu ứng nhỏ; trang thi-nghiem-doi-chung (đã khóa) viết cùng ý.'
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://pubmed.ncbi.nlm.nih.gov/7474248/
-  luot_2_ghi_chu: 'Chỗ khó: dựa trên một phân tích tổng hợp 1995 (23 nghiên cứu); chưa mở tổng hợp mới hơn.'
-  ghi_chu: 'Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 dung (chỗ khó: một tổng hợp). Giữ; ghi rõ lý do và giới hạn.'
-- id: g1
-  cau: 'Phân tích tổng hợp 1995, thí nghiệm mù đôi có giả dược: đường không ảnh hưởng hành vi hay nhận thức của trẻ; không loại trừ tác dụng nhỏ hay ở một nhóm trẻ.'
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - wolraich1995
-  trich: blind the subjects, parents, and research staff ... found that sugar does not affect the behavior or cognitive performance of children ... However, a small effect of sugar or effects on subsets of children cannot be ruled out.
-  ket_qua: da-sua
-  ghi_chu: Cũ "người quan sát" thành "người nghiên cứu" (research staff).
-  luot_2: dung
-  luot_2_nguon:
-  - https://pubmed.ncbi.nlm.nih.gov/7474248/
-- id: g2
-  cau: Niềm tin mạnh của cha mẹ có thể do kỳ vọng và liên tưởng quen thuộc.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - wolraich1995
-  trich: The strong belief of parents may be due to expectancy and common association.
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "cùng bối cảnh như tiệc sinh nhật, có thể khiến họ thấy trẻ hiếu động hơn": ví dụ tiệc sinh nhật không có trong nguồn.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pubmed.ncbi.nlm.nih.gov/7474248/
-- id: trang
-  cau: Bài liên quan của thẻ là bang-chung/thi-nghiem-doi-chung
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: 'Trang đã khóa, dùng chính ví dụ đường và Wolraich 1995 để giải thích thí nghiệm mù đôi. Review (Claude Opus 5.5, 17/11/2026): bang-chung/thi-nghiem-doi-chung có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: ví dụ đường và hành vi của trẻ trong mục Mù đôi (Wolraich 1995), cùng ý với thẻ.'
-  review: dung
+  - id: nhan
+    cau: 'Ăn đồ ngọt làm trẻ tăng động: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - wolraich1995
+    co_so:
+      - wolraich1995
+    ly_do: 'Thước đo mục 4, Đã bị bác bỏ: phân tích tổng hợp 23 nghiên cứu mù đôi có giả dược (16 bài), cả 14 thước đo có khoảng tin cậy chứa 0: các kiểm tra đủ mạnh (mù đôi) liên tục không thấy hiệu ứng. Giới hạn: chỉ một tổng hợp (1995), không loại trừ hiệu ứng nhỏ; trang thi-nghiem-doi-chung (đã khóa) viết cùng ý.'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/7474248/
+    luot_2_ghi_chu: 'Chỗ khó: dựa trên một phân tích tổng hợp 1995 (23 nghiên cứu); chưa mở tổng hợp mới hơn.'
+    ghi_chu: 'Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 dung (chỗ khó: một tổng hợp). Giữ; ghi rõ lý do và giới hạn.'
+  - id: g1
+    cau: 'Phân tích tổng hợp 1995, thí nghiệm mù đôi có giả dược: đường không ảnh hưởng hành vi hay nhận thức của trẻ; không loại trừ tác dụng nhỏ hay ở một nhóm trẻ.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - wolraich1995
+    trich: blind the subjects, parents, and research staff ... found that sugar does not affect the behavior or cognitive performance of children ... However, a small effect of sugar or effects on subsets of children cannot be ruled out.
+    ket_qua: da-sua
+    ghi_chu: Cũ "người quan sát" thành "người nghiên cứu" (research staff).
+    luot_2: dung
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/7474248/
+  - id: g2
+    cau: Niềm tin mạnh của cha mẹ có thể do kỳ vọng và liên tưởng quen thuộc.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - wolraich1995
+    trich: The strong belief of parents may be due to expectancy and common association.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "cùng bối cảnh như tiệc sinh nhật, có thể khiến họ thấy trẻ hiếu động hơn": ví dụ tiệc sinh nhật không có trong nguồn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/7474248/
+  - id: trang
+    cau: Bài liên quan của thẻ là bang-chung/thi-nghiem-doi-chung
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: 'Trang đã khóa, dùng chính ví dụ đường và Wolraich 1995 để giải thích thí nghiệm mù đôi. Review (Claude Opus 5.5, 17/11/2026): bang-chung/thi-nghiem-doi-chung có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: ví dụ đường và hành vi của trẻ trong mục Mù đôi (Wolraich 1995), cùng ý với thẻ.'
+    review: dung

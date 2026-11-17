@@ -5,12 +5,12 @@ lan:
   - so: 1
     ngay: '2026-11-17'
     nhanh: moi/d8-l3
-    ma_bam: null
+    ma_bam: sha256:3332ef327719341a247135bdc39430bbc29fd1c37acff967a4b34f680606c4c0
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
       review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
-      kiem_mau: null
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
 ghi_chu: 'Việc treo của kế hoạch: câu cũ "Big Five ... có bằng chứng dự báo tốt hơn" lệch trang MBTI (đã khóa, n24: "chưa có so sánh trực tiếp hai khung"); đã sửa cho khớp. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Các đặc điểm tính cách phân bố liên tục, phần đông mọi người ở gần giữa. Chia đôi thành "loại" làm mất thông tin và khiến kết quả kém ổn định: nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu dùng mô hình Big Five, đo theo các chiều liên tục và có bằng chứng dự báo tốt hơn.'' → mới ''Điểm của MBTI phân bố liên tục, không chia thành hai cụm, nên cắt đôi mỗi thang ở điểm giữa thành "loại" làm mất thông tin: hai người có điểm sát vạch nhận hai nhãn trái ngược, và nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu thường dùng mô hình Big Five, đo theo các chiều liên tục; Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương (chưa có nghiên cứu so sánh trực tiếp hai khung).'' | nguon: cũ [''pittenger1993'', ''pittenger2005''] → mới [''pittenger1993'', ''pittenger2005'', ''mccrae1989'', ''barrick1991''] | trang: cũ None → mới ''kham-pha/tinh-cach/mbti'''
 nguon:
   - id: pittenger1993

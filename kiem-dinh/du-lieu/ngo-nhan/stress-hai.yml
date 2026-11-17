@@ -5,12 +5,12 @@ lan:
   - so: 1
     ngay: '2026-11-17'
     nhanh: moi/d8-l3
-    ma_bam: null
+    ma_bam: sha256:6ec4fa037d8e2980319f92f2f2b30d7e1f7d093d3d0578545a60a542b044d3c5
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
       review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
-      kiem_mau: null
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
 ghi_chu: 'chỗ khó: đổi nhãn Đã bị bác bỏ → Đang tranh cãi: cơ sở duy nhất của thẻ cũ là Crum 2013, mà trang nhà stress-co-hai (đã khóa) xếp "đổi niềm tin có giúp khỏe hơn và làm việc tốt hơn?" vào Đang tranh cãi. Khẳng định gồm hai vế ("lúc nào cũng có hại", "càng tránh càng tốt"): vế đầu trái với mô tả phản ứng báo động (Selye), vế sau chưa có nghiên cứu mở được. Lượt 2 (Opus) xem lại nhãn. Đáp án trò chơi đổi từ Sai sang Còn tranh cãi. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). nhan: cũ ''bac-bo'' → mới ''tranh-cai'' | giai_thich: cũ ''Thí nghiệm năm 2013 cho thấy người được xem video về mặt tích cực của căng thẳng, sau một tuần, tự báo cáo hiệu suất làm việc tốt hơn và ít triệu chứng sức khỏe tiêu cực hơn nhóm được xem video về mặt hại — cùng một mức căng thẳng, cách nhìn khác nhau cho kết quả khác nhau. Dĩ nhiên, căng thẳng kéo dài quá sức vẫn có hại; điểm mấu chốt là căng thẳng không phải lúc nào cũng là kẻ thù.'' → mới ''Tim đập nhanh khi căng thẳng là phản ứng báo động bình thường: cơ thể huy động năng lượng để đối phó, và theo mô hình của Selye, điều đáng lo là căng thẳng kéo dài không lối thoát chứ không phải một đợt căng thẳng ngắn. Việc nhìn stress theo hướng tích cực có giúp ích không thì chưa chắc: trong một thí nghiệm năm 2013, người xem video về mặt có lợi của stress báo cáo ít triệu chứng hơn và tự đánh giá làm việc tốt hơn, nhưng đều là tự báo cáo.'' | nguon: cũ [''crum2013''] → mới [''selye1936'', ''crum2013''] | trang: cũ None → mới ''kham-pha/cang-thang-giac-ngu/stress-co-hai'''
 nguon:
   - id: selye1936

@@ -2,70 +2,70 @@
 ban_ghi: ngo-nhan/tram-cam-buon
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
-    review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:4fd7cc20637204964c41c125ad3e34d6e2e6192a49c1caf9729e390bf1028374
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
 ghi_chu: 'Thẻ về sức khỏe tâm thần (lam-sang): viết theo tờ thông tin hiện hành của WHO (cập nhật 11/9/2026, đọc 17/11/2026) thay cho thông cáo năm 2017; câu "Chỉ chuyên gia mới chẩn đoán được" và link tới trang Hỗ trợ theo chuan-kiem-dinh.md mục 5, không phải nhận định. Thay nguồn who2017 bằng who2026. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Theo Tổ chức Y tế Thế giới, trầm cảm là buồn bã kéo dài kèm mất hứng thú với mọi việc và không làm nổi sinh hoạt thường ngày trong ít nhất hai tuần, cùng hàng loạt triệu chứng khác: mất năng lượng, rối loạn ăn ngủ, khó tập trung, cảm giác vô dụng hay tội lỗi. Đây là một bệnh lý có cách điều trị hiệu quả — và chính định kiến “cố vui lên là hết” khiến nhiều người ngại tìm giúp đỡ.'' → mới ''Theo Tổ chức Y tế Thế giới (WHO), trầm cảm khác với những thay đổi tâm trạng thường ngày: tâm trạng buồn, trống rỗng hay mất hứng thú kéo dài gần như cả ngày, gần như mỗi ngày, ít nhất hai tuần, kèm các triệu chứng khác như khó tập trung, rối loạn giấc ngủ, mệt mỏi, cảm giác tội lỗi hay vô dụng. Chỉ chuyên gia mới chẩn đoán được. Trầm cảm có cách điều trị hiệu quả, và sự kỳ thị là một trong những rào cản khiến người bệnh không được chăm sóc.'' | nguon: cũ [''who2017''] → mới [''who2026''] | trang: cũ None → mới ''ho-tro/index'''
 nguon:
-- id: who2026
-  ten: WHO (2026). Depressive disorder (depression)
-  link: https://www.who.int/news-room/fact-sheets/detail/depression
+  - id: who2026
+    ten: WHO (2026). Depressive disorder (depression)
+    link: https://www.who.int/news-room/fact-sheets/detail/depression
 nhan_dinh:
-- id: nhan
-  cau: 'Trầm cảm chỉ là buồn nhiều, "vui lên" là hết: sai (đã bị bác bỏ).'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - who2026
-  co_so:
-  - who2026
-  ly_do: 'WHO (nguồn chuẩn lâm sàng bậc 2): trầm cảm là rối loạn tâm thần, khác với thay đổi tâm trạng thường ngày, có điều trị hiệu quả.'
-  ket_qua: dung
-  ghi_chu: 'chỗ khó: thẻ lâm sàng; nhãn dựa trên định nghĩa của WHO, không phải phân tích tổng hợp.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://www.who.int/news-room/fact-sheets/detail/depression
-- id: g1
-  cau: Theo WHO, giai đoạn trầm cảm khác thay đổi tâm trạng thường ngày, kéo dài gần như cả ngày, gần như mỗi ngày, ít nhất hai tuần, kèm triệu chứng khác (khó tập trung, tội lỗi hay vô dụng, rối loạn giấc ngủ, mệt mỏi…).
-  loai: lam-sang
-  truong:
-  - giai_thich
-  nguon:
-  - who2026
-  trich: 'During a depressive episode, a person experiences a depressed mood (feeling sad, irritable, empty). They may feel a loss of pleasure or interest in activities. A depressive episode is different from regular mood fluctuations. They last most of the day, nearly every day, for at least two weeks. Other symptoms are also present, which may include: poor concentration feelings of excessive guilt or low self-worth ... disrupted sleep ... feeling very tired'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "kèm mất hứng thú với mọi việc và không làm nổi sinh hoạt thường ngày ... mất năng lượng, rối loạn ăn ngủ...": viết theo tờ thông tin 2026.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://www.who.int/news-room/fact-sheets/detail/depression
-  luot_2_ghi_chu: Trang WHO cập nhật 11/9/2026, mở ngày 17/11/2026.
-- id: g2
-  cau: Trầm cảm có cách điều trị hiệu quả; kỳ thị là một rào cản của việc được chăm sóc.
-  loai: lam-sang
-  truong:
-  - giai_thich
-  nguon:
-  - who2026
-  trich: There is effective treatment for mild, moderate and severe depression ... Barriers to effective care include a lack of investment in mental health care, lack of trained health care providers and social stigma associated with mental disorders.
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "chính định kiến cố vui lên là hết khiến nhiều người ngại tìm giúp đỡ": nguồn nói kỳ thị là rào cản, không nói riêng định kiến này.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://www.who.int/news-room/fact-sheets/detail/depression
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/suc-khoe-tam-than/tram-cam
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: 'Trang Trầm cảm đã khóa ở D7-L1 (main): có ngộ nhận "Trầm cảm là yếu đuối, cố lên là hết." Sai, và mô tả WHO "ít nhất hai tuần" như thẻ; thay link Hỗ trợ (chân trang vẫn có lời nhắc Hỗ trợ). Review (Claude Opus 5.5, 17/11/2026): kham-pha/suc-khoe-tam-than/tram-cam có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: trang Sức khỏe tâm thần đã khóa (có chữ ký chuyên gia ở D7-L1): khung vung-chac[Trầm cảm là một rối loạn có thật…], mục "Khi nào nên tìm sự giúp đỡ" và nhiều link tới Hỗ trợ.'
-  review: dung
+  - id: nhan
+    cau: 'Trầm cảm chỉ là buồn nhiều, "vui lên" là hết: sai (đã bị bác bỏ).'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - who2026
+    co_so:
+      - who2026
+    ly_do: 'WHO (nguồn chuẩn lâm sàng bậc 2): trầm cảm là rối loạn tâm thần, khác với thay đổi tâm trạng thường ngày, có điều trị hiệu quả.'
+    ket_qua: dung
+    ghi_chu: 'chỗ khó: thẻ lâm sàng; nhãn dựa trên định nghĩa của WHO, không phải phân tích tổng hợp.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/depression
+  - id: g1
+    cau: Theo WHO, giai đoạn trầm cảm khác thay đổi tâm trạng thường ngày, kéo dài gần như cả ngày, gần như mỗi ngày, ít nhất hai tuần, kèm triệu chứng khác (khó tập trung, tội lỗi hay vô dụng, rối loạn giấc ngủ, mệt mỏi…).
+    loai: lam-sang
+    truong:
+      - giai_thich
+    nguon:
+      - who2026
+    trich: 'During a depressive episode, a person experiences a depressed mood (feeling sad, irritable, empty). They may feel a loss of pleasure or interest in activities. A depressive episode is different from regular mood fluctuations. They last most of the day, nearly every day, for at least two weeks. Other symptoms are also present, which may include: poor concentration feelings of excessive guilt or low self-worth ... disrupted sleep ... feeling very tired'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "kèm mất hứng thú với mọi việc và không làm nổi sinh hoạt thường ngày ... mất năng lượng, rối loạn ăn ngủ...": viết theo tờ thông tin 2026.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/depression
+    luot_2_ghi_chu: Trang WHO cập nhật 11/9/2026, mở ngày 17/11/2026.
+  - id: g2
+    cau: Trầm cảm có cách điều trị hiệu quả; kỳ thị là một rào cản của việc được chăm sóc.
+    loai: lam-sang
+    truong:
+      - giai_thich
+    nguon:
+      - who2026
+    trich: There is effective treatment for mild, moderate and severe depression ... Barriers to effective care include a lack of investment in mental health care, lack of trained health care providers and social stigma associated with mental disorders.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "chính định kiến cố vui lên là hết khiến nhiều người ngại tìm giúp đỡ": nguồn nói kỳ thị là rào cản, không nói riêng định kiến này.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/depression
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/suc-khoe-tam-than/tram-cam
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: 'Trang Trầm cảm đã khóa ở D7-L1 (main): có ngộ nhận "Trầm cảm là yếu đuối, cố lên là hết." Sai, và mô tả WHO "ít nhất hai tuần" như thẻ; thay link Hỗ trợ (chân trang vẫn có lời nhắc Hỗ trợ). Review (Claude Opus 5.5, 17/11/2026): kham-pha/suc-khoe-tam-than/tram-cam có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: trang Sức khỏe tâm thần đã khóa (có chữ ký chuyên gia ở D7-L1): khung vung-chac[Trầm cảm là một rối loạn có thật…], mục "Khi nào nên tìm sự giúp đỡ" và nhiều link tới Hỗ trợ.'
+    review: dung

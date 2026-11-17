@@ -2,71 +2,71 @@
 ban_ghi: ngo-nhan/nao-trai-phai
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
-    review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:c4eac9963225116f8434ba4982ba2f6b8b960b27a038b8db96a17fe6469aad49
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Một số chức năng có thiên lệch về một bán cầu, chẳng hạn ngôn ngữ thường thiên về bên trái. Nhưng đó là đặc điểm của từng chức năng, không phải "kiểu người". Khi phân tích kết nối não lúc nghỉ của 1.011 người từ 7 đến 29 tuổi, các nhà nghiên cứu không thấy ai có toàn bộ mạng lưới bên trái hay bên phải mạnh hơn hẳn.'' → mới ''Một số chức năng thiên về một bán cầu, như ngôn ngữ thường thiên về bên trái; nhưng đó là phân công chức năng, không phải "kiểu người". Khi phân tích ảnh chụp não lúc nghỉ của 1.011 người từ 7 đến 29 tuổi, các nhà nghiên cứu thấy các kết nối lệch về một bán cầu là đặc điểm cục bộ, không gom thành kiểu "não trái hơn" hay "não phải hơn" trên toàn bộ não.'' | trang: cũ None → mới ''kham-pha/co-so-sinh-hoc/nao-che-doi'''
 nguon:
-- id: nielsen2013
-  ten: Nielsen và cộng sự (2013). An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity magnetic resonance imaging
-  link: https://doi.org/10.1371/journal.pone.0071275
-  toan_van: true
+  - id: nielsen2013
+    ten: Nielsen và cộng sự (2013). An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity magnetic resonance imaging
+    link: https://doi.org/10.1371/journal.pone.0071275
+    toan_van: true
 nhan_dinh:
-- id: nhan
-  cau: Phân loại người thành "thiên não trái" và "thiên não phải" đã bị bác bỏ.
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - nielsen2013
-  co_so:
-  - nielsen2013
-  ly_do: Khớp khung bac-bo của trang nhà nao-che-doi (đã khóa); Nielsen 2013 (1.011 người) không thấy kiểu não toàn cục. Corballis 2014 (trang nhà dẫn) chưa có bản ghi nguồn.
-  ket_qua: dung
-  luot_2: khong-chac
-  luot_2_nguon:
-  - https://doi.org/10.1371/journal.pone.0071275
-  luot_2_ghi_chu: 'Chỗ khó: chỉ Nielsen 2013 (một nghiên cứu lớn, tóm tắt đọc được bị cắt kết luận); đã tìm Europe PMC, PubMed không thấy tổng hợp mở để đối chiếu nhãn ''bác bỏ''.'
-  ghi_chu: 'Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 khong-chac (tóm tắt đọc được bị cắt). Tôi đọc đủ tóm tắt Nielsen 2013 trên Europe PMC: "our data are not consistent with a whole-brain phenotype of greater left-brained or greater right-brained network strength"; nhãn khớp khung bac-bo của trang nhà nao-che-doi (đã khóa, cũng dẫn tổng quan Corballis 2014). Giữ Đã bị bác bỏ.'
-- id: g1
-  cau: Ngôn ngữ thường thiên về bán cầu trái; đó là chuyên biệt hóa chức năng.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - nielsen2013
-  trich: Lateralized brain regions subserve functions such as language and visuospatial processing.
-  ket_qua: dung
-  luot_2: khong-chac
-  luot_2_ghi_chu: Chưa mở nguồn.
-  ghi_chu: 'Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 chưa mở nguồn; câu có trong tóm tắt Nielsen 2013 ("Lateralized brain regions subserve functions such as language").'
-- id: g2
-  cau: 'Phân tích ảnh chụp não lúc nghỉ của 1.011 người 7–29 tuổi: lệch bán cầu là đặc điểm cục bộ, không có kiểu "não trái hơn" hay "não phải hơn" trên toàn bộ não.'
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - nielsen2013
-  trich: Data were analyzed from publicly available resting state scans for 1011 individuals between the ages of 7 and 29 ... Lateralization of brain connections appears to be a local rather than global property of brain networks, and our data are not consistent with a whole-brain phenotype of greater "left-brained" or greater "right-brained" network strength across individuals.
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "không thấy ai có toàn bộ mạng lưới bên trái hay bên phải mạnh hơn hẳn" (mạnh hơn bài: bài nói về kiểu hình toàn não ở cấp quần thể); viết theo tóm tắt và trang nhà. Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 xác nhận 1.011 người 7–29 tuổi; phần kết luận có trong tóm tắt đủ (trích ở trên).'
-  luot_2: khong-chac
-  luot_2_nguon:
-  - https://doi.org/10.1371/journal.pone.0071275
-  luot_2_ghi_chu: Đã xác nhận 1011 người 7–29 tuổi; phần kết luận trong tóm tắt đã đọc bị cắt, chưa xác nhận.
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/co-so-sinh-hoc/nao-che-doi
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: 'Trang nhà (đã khóa) có khung bac-bo["người não trái" và "người não phải"], dẫn Nielsen 2013; thẻ cũ chưa có link. Review (Claude Opus 5.5, 17/11/2026): kham-pha/co-so-sinh-hoc/nao-che-doi có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung bac-bo["người não trái" và "người não phải"] và mục "Đừng tin các bài test bạn thuận não nào".'
-  review: dung
+  - id: nhan
+    cau: Phân loại người thành "thiên não trái" và "thiên não phải" đã bị bác bỏ.
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - nielsen2013
+    co_so:
+      - nielsen2013
+    ly_do: Khớp khung bac-bo của trang nhà nao-che-doi (đã khóa); Nielsen 2013 (1.011 người) không thấy kiểu não toàn cục. Corballis 2014 (trang nhà dẫn) chưa có bản ghi nguồn.
+    ket_qua: dung
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://doi.org/10.1371/journal.pone.0071275
+    luot_2_ghi_chu: 'Chỗ khó: chỉ Nielsen 2013 (một nghiên cứu lớn, tóm tắt đọc được bị cắt kết luận); đã tìm Europe PMC, PubMed không thấy tổng hợp mở để đối chiếu nhãn ''bác bỏ''.'
+    ghi_chu: 'Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 khong-chac (tóm tắt đọc được bị cắt). Tôi đọc đủ tóm tắt Nielsen 2013 trên Europe PMC: "our data are not consistent with a whole-brain phenotype of greater left-brained or greater right-brained network strength"; nhãn khớp khung bac-bo của trang nhà nao-che-doi (đã khóa, cũng dẫn tổng quan Corballis 2014). Giữ Đã bị bác bỏ.'
+  - id: g1
+    cau: Ngôn ngữ thường thiên về bán cầu trái; đó là chuyên biệt hóa chức năng.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - nielsen2013
+    trich: Lateralized brain regions subserve functions such as language and visuospatial processing.
+    ket_qua: dung
+    luot_2: khong-chac
+    luot_2_ghi_chu: Chưa mở nguồn.
+    ghi_chu: 'Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 chưa mở nguồn; câu có trong tóm tắt Nielsen 2013 ("Lateralized brain regions subserve functions such as language").'
+  - id: g2
+    cau: 'Phân tích ảnh chụp não lúc nghỉ của 1.011 người 7–29 tuổi: lệch bán cầu là đặc điểm cục bộ, không có kiểu "não trái hơn" hay "não phải hơn" trên toàn bộ não.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - nielsen2013
+    trich: Data were analyzed from publicly available resting state scans for 1011 individuals between the ages of 7 and 29 ... Lateralization of brain connections appears to be a local rather than global property of brain networks, and our data are not consistent with a whole-brain phenotype of greater "left-brained" or greater "right-brained" network strength across individuals.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "không thấy ai có toàn bộ mạng lưới bên trái hay bên phải mạnh hơn hẳn" (mạnh hơn bài: bài nói về kiểu hình toàn não ở cấp quần thể); viết theo tóm tắt và trang nhà. Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 xác nhận 1.011 người 7–29 tuổi; phần kết luận có trong tóm tắt đủ (trích ở trên).'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://doi.org/10.1371/journal.pone.0071275
+    luot_2_ghi_chu: Đã xác nhận 1011 người 7–29 tuổi; phần kết luận trong tóm tắt đã đọc bị cắt, chưa xác nhận.
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/co-so-sinh-hoc/nao-che-doi
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: 'Trang nhà (đã khóa) có khung bac-bo["người não trái" và "người não phải"], dẫn Nielsen 2013; thẻ cũ chưa có link. Review (Claude Opus 5.5, 17/11/2026): kham-pha/co-so-sinh-hoc/nao-che-doi có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung bac-bo["người não trái" và "người não phải"] và mục "Đừng tin các bài test bạn thuận não nào".'
+    review: dung
