@@ -23,7 +23,7 @@ concurrency:
 jobs:
   kiem-thu:
     name: Kiểm thử (bản xem, ${{ matrix.phan }})
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     # sáu phần chạy song song (.github/actions/kiem-thu): npm test, kiểm thử trình duyệt trên từng trình duyệt, Lighthouse,
     # ảnh chụp cho review. Một phần hỏng thì các phần khác vẫn chạy tới cuối, để thấy hết lỗi trong một lần
     strategy:
