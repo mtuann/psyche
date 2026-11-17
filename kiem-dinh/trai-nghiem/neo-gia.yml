@@ -1,0 +1,259 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa trai-nghiem/neo-gia
+trang: src/content/docs/trai-nghiem/neo-gia.md
+nguon_cu: ../psyche-zero/docs/trai-nghiem/neo-gia.md
+tang: cong-cu
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l2
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: tversky1974
+  ten: 'Tversky & Kahneman (1974), Science 185(4157), 1124–1131: câu trích lấy lại từ hồ sơ đã khóa linh-cam-va-xac-suat.yml (toàn văn, Internet Archive)'
+  link: https://doi.org/10.1126/science.185.4157.1124
+  toan_van: true
+- id: englich2006
+  ten: 'Englich, Mussweiler & Strack (2006), Pers Soc Psychol Bull 32(2), 188–200: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus), nghiên cứu 1–4'
+  link: https://doi.org/10.1177/0146167205282152
+  toan_van: true
+- id: mussweiler1999
+  ten: 'Mussweiler & Strack (1999), J Exp Soc Psychol 35(2), 136–164: chỉ siêu dữ liệu (OpenAlex, không có tóm tắt); mô hình được mô tả lại trong Englich và cộng sự (2006)'
+  link: https://doi.org/10.1006/jesp.1998.1364
+  toan_van: false
+- id: klein2014
+  ten: 'Klein và cộng sự (2014), Soc Psychol 45(3), 142–152: toàn văn (bản lưu LSE eprints), Bảng 2 và mục Kết quả'
+  link: https://doi.org/10.1027/1864-9335/a000178
+  toan_van: true
+- id: nso2026
+  ten: 'Cục Thống kê, "Thông cáo báo chí về tình hình dân số, lao động, việc làm quý IV và năm 2025" (1/2026): trang chính thức, mục 1'
+  link: https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-ve-tinh-hinh-dan-so-lao-dong-viec-lam-quy-iv-va-nam-2025/
+  toan_van: true
+- id: tim-neo-vn
+  ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "anchoring effect Vietnam" (762 kết quả, 8 kết quả đầu không liên quan) và OpenAlex "anchoring effect Vietnamese participants" (6 kết quả đầu không liên quan)'
+  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=anchoring%20effect%20Vietnam
+  toan_van: false
+nhan_dinh:
+- id: s1
+  cau: 'Công cụ: xếp ngẫu nhiên 50/50 vào nhóm neo thấp hay cao; hai câu, mỗi câu hai bước (so sánh, ước lượng); không chấm đúng sai; nói rõ một người chưa nói được gì về hiệu ứng.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đã kiểm src/scripts/cong-cu/neo-gia.js (xepNhom, CAU_HOI, docUocLuong), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.
+- id: s2
+  cau: 'Câu 1: neo 40 và 200 triệu người; câu 2: neo 15% và 70%; hai neo kẹp hai phía đáp án.'
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'Đã kiểm CAU_HOI trong neo-gia.js và kiểm thử "neo kẹp hai phía số thật", 17/11/2026. Câu 2 cũ (quãng đường Hà Nội – TP. Hồ Chí Minh, "1.723 km … 1.719–1.730 km tùy điểm đo") không tìm được nguồn
+    chính thức: đã thay bằng tỉ lệ dân thành thị (cùng nguồn chính thức với câu 1).'
+- id: n1
+  cau: Khi ước lượng, ta bám vào một con số có sẵn rồi điều chỉnh, thường điều chỉnh không đủ; con số ban đầu là mỏ neo.
+  loai: dinh-nghia
+  nguon:
+  - tversky1974
+  trich: In many situations, people make estimates by starting from an initial value that is adjusted to yield the final answer … adjustments are typically insufficient.
+  vi_tri: Tversky & Kahneman 1974, mục Adjustment and Anchoring (toàn văn, Internet Archive, mở lại 17/11/2026)
+  ket_qua: dung
+- id: n2
+  cau: Trong nghiên cứu gốc, con số neo đến từ một vòng quay may rủi quay ngay trước mặt người tham gia, nhưng ước lượng vẫn bị kéo đi.
+  loai: phat-hien
+  nguon:
+  - tversky1974
+  trich: a number between 0 and 100 was determined by spinning a wheel of fortune in the subjects' presence
+  vi_tri: mục Adjustment and Anchoring (toàn văn, mở lại 17/11/2026)
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "vòng quay … bị gian lận để dừng ở 10 hoặc 65 — người tham gia biết nó là ngẫu nhiên": bài 1974 chỉ nói quay trước mặt người tham gia; chuyện "gian lận" không có trong bài.'
+- id: n3
+  cau: 'Tversky và Kahneman (1974): hai bước (lớn hơn hay nhỏ hơn số vừa quay; con số cụ thể); nhóm nhận 10 cho trung vị 25, nhóm nhận 65 cho 45; thưởng cho độ chính xác không làm giảm hiệu ứng.'
+  loai: so-lieu
+  nguon:
+  - tversky1974
+  trich: the median estimates of the percentage of African countries in the United Nations were 25 and 45 for groups that received 10 and 65, respectively, as starting points. Payoffs for accuracy did not
+    reduce the anchoring effect.
+  vi_tri: (theo hồ sơ linh-cam-va-xac-suat.yml n19)
+  ket_qua: da-sua
+  ghi_chu: Rút mục bốn ý còn một đoạn, link trang nhà (tversky1974 có trang nhà kham-pha/tu-duy/linh-cam-va-xac-suat); không thêm số mới.
+- id: n4
+  cau: 'Englich và cộng sự (2006), nghiên cứu 3: luật sư trẻ vừa bắt đầu làm thẩm phán ở Đức, hồ sơ vụ án giả định soạn sát thực tế, tự tung xúc xắc bị làm cho luôn ra tổng 3 hoặc 9 (tháng án treo); mức
+    án trung bình 7,81 và 5,28 tháng.'
+  loai: so-lieu
+  nguon:
+  - englich2006
+  trich: Participants were junior lawyers from different German courts who had recently received their law degree and had acquired their first experiences as judges in court. | the dice always showed the
+    numbers 1 and 2 … 3 and 6 | Judges who were exposed to the high anchor gave higher final sentences, M = 7.81 … than those who were confronted with a low anchor, M = 5.28
+  vi_tri: Nghiên cứu 3
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "thẩm phán hình sự Đức có kinh nghiệm đọc một hồ sơ vụ án có thật" (sai: nghiên cứu 3 là luật sư trẻ; hồ sơ là vụ án giả định sát thực tế); "7,8", "5,3" thành 7,81, 5,28.'
+- id: n5
+  cau: 'Nghiên cứu 2: thẩm phán và công tố viên có trung bình hơn 13 năm kinh nghiệm, mức đề nghị được báo là chọn ngẫu nhiên, hiệu ứng vẫn xuất hiện; các tác giả kết luận chuyên môn và kinh nghiệm không
+    làm giảm hiệu ứng.'
+  loai: phat-hien
+  nguon:
+  - englich2006
+  trich: On average, participants had 13.38 years (SD = 8.58) of professional experience in court. | Instructions clearly pointed out that this demand had been determined at random | Expertise and experience
+    did not reduce this effect.
+  vi_tri: Nghiên cứu 2; Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: Thêm để câu "chuyên gia cũng không miễn nhiễm" có cơ sở đúng nhóm.
+- id: n6
+  cau: 'Vững chắc: con số neo làm dịch chuyển ước lượng; Many Labs (36 mẫu, 6.344 người): bốn câu mỏ neo có hiệu ứng ở mọi mẫu, thuộc nhóm hiệu ứng lớn nhất.'
+  loai: nhan
+  nguon:
+  - klein2014
+  trich: 13 classic and contemporary effects across 36 independent samples totaling 6,344 participants | Anchoring - Babies Born … Proportion >0 (p<.05) 1.00 | Anchoring - Mt. Everest … 1.00 | Anchoring
+    - Chicago … 1.00 | Anchoring - Distance to NYC … 1.00 | Tasks ordered from largest to smallest observed effect size
+  vi_tri: Tóm tắt; Bảng 2
+  nhan: vung-chac
+  co_so:
+  - klein2014
+  - tversky1974
+  - englich2006
+  ly_do: Một tái lập lớn nhiều phòng thí nghiệm (36 mẫu ở nhiều nước) thấy hiệu ứng ở mọi mẫu với độ lớn thuộc hàng lớn nhất; cùng chiều với nghiên cứu gốc và nhiều nghiên cứu khác.
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: thước đo mục 4 đòi phân tích tổng hợp hay hai tái lập lớn có đăng ký trước; ở đây có một tái lập lớn (Many Labs 1), chưa tìm phân tích tổng hợp. Cũ: "hàng trăm nghiên cứu trên nhiều
+    lĩnh vực — từ định giá, đàm phán, dự báo đến quyết định pháp lý" (không nguồn).'
+- id: n7
+  cau: 'Khá vững: hiệu ứng có cả khi neo hoàn toàn ngẫu nhiên và người quyết định là chuyên gia; bằng chứng về chuyên gia từ một số ít nghiên cứu vài chục người.'
+  loai: nhan
+  nguon:
+  - tversky1974
+  - englich2006
+  trich: Expertise and experience did not reduce this effect. | We recruited 52 legal experts | 39 legal professionals
+  vi_tri: Englich 2006, Tóm tắt, nghiên cứu 2, 3
+  nhan: kha-vung
+  co_so:
+  - tversky1974
+  - englich2006
+  ly_do: Cùng chiều ở các nghiên cứu gốc, nhưng mẫu chuyên gia nhỏ (39–57 người mỗi nghiên cứu) và chủ yếu ở Đức.
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "neo càng cực đoan … thì tác động càng khác" (mơ hồ, không nguồn): bỏ, thay bằng giới hạn về cỡ mẫu.'
+- id: n8
+  cau: 'Đang tranh cãi: cơ chế (điều chỉnh không đủ của Tversky và Kahneman; khả năng tiếp cận chọn lọc của Mussweiler và Strack); ở nghiên cứu 4 của Englich, sau mức đề nghị cao, lý lẽ buộc tội được nhận
+    ra nhanh hơn; hai cách không loại trừ nhau.'
+  loai: nhan
+  nguon:
+  - tversky1974
+  - mussweiler1999
+  - englich2006
+  trich: we assume that comparing the judgmental target to a provided anchor value increases the accessibility of anchor-consistent target knowledge | The accessibility of incriminating arguments was higher
+    if participants were confronted with a high rather than a low anchor (Study 4).
+  vi_tri: Englich 2006, Giới thiệu, Tóm tắt
+  nhan: tranh-cai
+  co_so:
+  - tversky1974
+  - mussweiler1999
+  - englich2006
+  ly_do: Hai mô hình do hai nhóm tác giả đề xuất; bằng chứng cho mô hình tiếp cận chọn lọc chủ yếu từ chính nhóm đề xuất.
+  ket_qua: da-lam-mem
+  ghi_chu: 'chỗ khó: chưa tìm được tổng quan nói rõ tình trạng tranh luận; bài Mussweiler & Strack 1999 không mở được (chỉ tên bài), mô hình lấy theo Englich 2006. Cũ: "ta lục trong trí nhớ những lý do
+    … dính lại".'
+- id: n9
+  cau: 'Đã bị bác bỏ: "mỏ neo chỉ có tác dụng khi con số có vẻ liên quan"; số ngẫu nhiên vẫn tạo hiệu ứng; Englich so mức đề nghị ngẫu nhiên với cùng mức do công tố đưa ra và không thấy hiệu ứng khác nhau.'
+  loai: nhan
+  nguon:
+  - englich2006
+  - tversky1974
+  trich: 'Again, sentencing decisions in both anchor conditions differed for anchors determined at random (M = 5.28 vs. M = 7.81) and suggested by the prosecutor (M = 4.10 vs. M = 6.98). In a 2 (anchor:
+    high vs. low) × 2 (source: random vs. prosecutor) ANOVA, only the main effects for anchor … and source … reached significance, F < 1 for the interaction.'
+  vi_tri: Nghiên cứu 3, so neo liên quan và không liên quan
+  nhan: bac-bo
+  co_so:
+  - englich2006
+  - tversky1974
+  - klein2014
+  ly_do: Neo rõ ràng ngẫu nhiên tạo hiệu ứng ở nghiên cứu gốc và ở chuyên gia; hiệu ứng của neo ngẫu nhiên không khác neo do công tố đưa ra (tương tác F < 1).
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: nhãn Đã bị bác bỏ cho một ngộ nhận; bằng chứng là vài nghiên cứu, không phải chuỗi kiểm tra chuyên đề. Cũ: "lý do hiệu ứng này đáng lo ngại trong đời sống (giá niêm yết, đàm phán…)"
+    (không nguồn): bỏ.'
+- id: n10
+  cau: 'Lý thuyết: điều chỉnh không đủ (Tversky và Kahneman, 1974); tiếp cận chọn lọc (Mussweiler và Strack, 1999; Englich, 2006).'
+  loai: phat-hien
+  nguon:
+  - tversky1974
+  - mussweiler1999
+  - englich2006
+  trich: adjustments are typically insufficient | comparing the judgmental target to a provided anchor value increases the accessibility of anchor-consistent target knowledge
+  ket_qua: da-sua
+  ghi_chu: Bỏ ý "Neo như gợi ý về thang đo" (không nguồn) và hình ảnh "thả neo kéo dây".
+- id: n11
+  cau: 'Tính đến 11/2026, số chính thức mới nhất: dân số trung bình năm 2025 ước tính 102,3 triệu người (Cục Thống kê, thông cáo 1/2026).'
+  loai: thoi-su
+  nguon:
+  - nso2026
+  trich: Dân số trung bình năm 2025 ước tính là 102,3 triệu người, tăng 1.001,6 nghìn người, tương đương tăng 0,99% so với năm 2024.
+  vi_tri: mục 1
+  het_han: '2027-03-01'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "khoảng 101 triệu (giữa kỳ 2024: 101,1 triệu, 1/4/2024)", link mpi.gov.vn (không mở được ngày 17/11/2026). Thay bằng số mới hơn của Cục Thống kê. Hết hạn khi có thông cáo năm 2026 (thường
+    tháng 1).'
+- id: n12
+  cau: Dân số thành thị năm 2025 chiếm 38,6% (cùng nguồn).
+  loai: thoi-su
+  nguon:
+  - nso2026
+  trich: Trong đó, dân số thành thị là 39,4 triệu người, chiếm 38,6%
+  vi_tri: mục 1
+  het_han: '2027-03-01'
+  ket_qua: da-sua
+  ghi_chu: Câu hỏi mới của công cụ (thay câu quãng đường).
+- id: n13
+  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu về hiệu ứng mỏ neo trên mẫu người Việt.
+  loai: thoi-su
+  nguon:
+  - tim-neo-vn
+  het_han: '2028-11-01'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "Trong phạm vi các nguồn của site". Europe PMC "anchoring effect Vietnam" (762 kết quả, 8 kết quả đầu không liên quan), OpenAlex "anchoring effect Vietnamese participants" (không có nghiên
+    cứu liên quan trong 6 kết quả đầu), 17/11/2026. chỗ khó: tìm chưa kỹ (từ khóa "anchoring" lẫn nhiều nghĩa); lượt 2 nên tìm thêm (ví dụ "anchoring bias Vietnamese investors").'
+- id: n14
+  cau: 'Ngộ nhận: người làm nghề luật biết mức đề nghị do xúc xắc quyết định mà vẫn bị kéo; chuyên môn và kinh nghiệm xét xử không làm giảm hiệu ứng.'
+  loai: phat-hien
+  nguon:
+  - englich2006
+  trich: participants were told to randomly determine the prosecutor's sentencing demand themselves by throwing a pair of dice | Expertise and experience did not reduce this effect.
+  vi_tri: Nghiên cứu 3; Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "Biết về hiệu ứng mỏ neo thì sẽ không bị ảnh hưởng" (Englich không thử điều này), "cách giảm thiểu hiệu quả hơn là nghĩ về phía ngược lại" (không nguồn), "nhà định giá bất động sản … mức
+    tương đương người ngoài ngành" (không nguồn): bỏ.'
+- id: n15
+  cau: 'Câu hỏi 2 và 5: câu so sánh làm người trả lời phải xét con số neo; theo mô hình tiếp cận chọn lọc, hiểu biết phù hợp với neo dễ nhớ ra hơn và kéo ước lượng.'
+  loai: phat-hien
+  nguon:
+  - englich2006
+  - mussweiler1999
+  trich: this comparative anchoring question was included to ensure that participants do indeed process and consider the given anchor value
+  vi_tri: Englich 2006, nghiên cứu 1, Thủ tục
+  ket_qua: dung
+  ghi_chu: Ví dụ "các tỉnh đông dân, mật độ đô thị" trong lời giải thích câu 5 là giả định (gia-dinh).
+- id: n16
+  cau: 'Công cụ: Tversky và Kahneman (1974), vòng quay 0–100 dừng ở 10 hay 65, trung vị 25 và 45.'
+  loai: cong-cu
+  nguon:
+  - tversky1974
+  trich: the median estimates … were 25 and 45 for groups that received 10 and 65
+  vi_tri: hằng NGHIEN_CUU trong src/scripts/cong-cu/neo-gia.js
+  ket_qua: da-sua
+  ghi_chu: 'Công cụ cũ: "thực ra đã bị gian lận để dừng ở 10 hoặc 65" (không có trong bài): bỏ; "25%", "45%" thành 25 và 45.'
+doi_chu:
+- cu: Câu "vòng quay … bị gian lận … người tham gia biết"
+  moi: quay ngay trước mặt người tham gia
+  ly_do: n2
+- cu: Mục Tversky và Kahneman (1974), bốn ý
+  moi: một đoạn, link trang nhà
+  ly_do: n3
+- cu: Mục Chuyên gia cũng không miễn nhiễm
+  moi: nghiên cứu 3 (luật sư trẻ, vụ án giả định), nghiên cứu 2
+  ly_do: n4, n5
+- cu: Bốn khung nhãn
+  moi: Many Labs; giới hạn cỡ mẫu; nghiên cứu 4; so neo ngẫu nhiên với neo của công tố
+  ly_do: n6–n9
+- cu: Mục Lý thuyết (ba ý), Cách công cụ hoạt động, Ở Việt Nam, ngộ nhận 1–2
+  moi: bỏ ý không nguồn; số dân 2025; câu 2 mới; mốc 11/2026
+  ly_do: n10–n14, s2
+- cu: 'Nguồn: Tổng cục Thống kê 2024 (mpi.gov.vn)'
+  moi: Cục Thống kê 2026; thêm Klein và cộng sự 2014
+  ly_do: n11, n6

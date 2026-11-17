@@ -110,9 +110,9 @@ test('luật của hồ sơ: loại, kết quả, nguồn, lượt 2, nhãn có 
 		assert.match(loiHoSo(hoSo('thi-nghiem/a', 'mo-rong', [nd()]), 'thi-nghiem/a', goc).join(), /tang: mo-rong mà src\/data\/trang.yml ghi loi/);
 		assert.match(loi([]).join(), /chưa có nhận định nào/);
 		// trang còn ô "chưa chuyển", hay có khoảng trắng cuối dòng
-		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\n::cong-cu{ten="linda"}\n\n::hinh{ten="khong-co"}\n\nChữ. \n');
+		ghi('src/content/docs/thi-nghiem/a.md', '---\ntitle: A\n---\n\n::cong-cu{ten="nhat-ky"}\n\n::hinh{ten="khong-co"}\n\nChữ. \n');
 		const l = loi([nd()]).join('\n');
-		assert.match(l, /::cong-cu\{ten="linda"\} chưa có/);
+		assert.match(l, /::cong-cu\{ten="nhat-ky"\} chưa có/);
 		assert.match(l, /::hinh\{ten="khong-co"\} chưa có/);
 		assert.match(l, /khoảng trắng cuối dòng/);
 	} finally {

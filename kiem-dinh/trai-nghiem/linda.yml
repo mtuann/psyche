@@ -1,0 +1,268 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa trai-nghiem/linda
+trang: src/content/docs/trai-nghiem/linda.md
+nguon_cu: ../psyche-zero/docs/trai-nghiem/linda.md
+tang: cong-cu
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l2
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: tversky1983
+  ten: 'Tversky & Kahneman (1983), Psychol Rev 90(4), 293–315: câu trích lấy lại từ hồ sơ đã khóa kiem-dinh/kham-pha/tu-duy/linh-cam-va-xac-suat.yml (toàn văn, Internet Archive)'
+  link: https://doi.org/10.1037/0033-295X.90.4.293
+  toan_van: true
+- id: tversky1974
+  ten: 'Tversky & Kahneman (1974), Science 185(4157), 1124–1131: câu trích lấy lại từ hồ sơ đã khóa linh-cam-va-xac-suat.yml (toàn văn, Internet Archive)'
+  link: https://doi.org/10.1126/science.185.4157.1124
+  toan_van: true
+- id: charness2010
+  ten: 'Charness, Karni & Levin (2010), Games Econ Behav 68(2), 551–556: theo hồ sơ đã khóa linh-cam-va-xac-suat.yml (bản working paper 2009)'
+  link: https://doi.org/10.1016/j.geb.2009.09.003
+  toan_van: true
+- id: chandrashekar2021
+  ten: 'Chandrashekar và cộng sự (2021), Meta-Psychology 5: theo hồ sơ đã khóa linh-cam-va-xac-suat.yml'
+  link: https://doi.org/10.15626/mp.2020.2474
+  toan_van: false
+- id: gigerenzer1991
+  ten: 'Gigerenzer (1991), Eur Rev Soc Psychol 2(1), 83–115: tóm tắt (theo hồ sơ đã khóa linh-cam-va-xac-suat.yml)'
+  link: https://doi.org/10.1080/14792779143000033
+  toan_van: false
+- id: kahneman2011
+  ten: 'Kahneman (2011), Thinking, Fast and Slow: theo hồ sơ đã khóa linh-cam-va-xac-suat.yml (bản quét Internet Archive)'
+  link: https://archive.org/details/thinking-fast-and-slow-by-daniel-kahneman
+  toan_van: true
+- id: tim-linda-vn
+  ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "conjunction fallacy Vietnamese" (36 kết quả, không có nghiên cứu về lỗi conjunction ở người Việt trong 8 kết quả đầu)'
+  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=conjunction%20fallacy%20Vietnamese
+  toan_van: false
+nhan_dinh:
+- id: s1
+  cau: 'Công cụ: đoạn mô tả Linda, hai phát biểu A, B (chọn một), "Trả lời"; kết quả, link bài Vì sao linh cảm hay đánh lừa ta?; "Thử lại".'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đã kiểm src/scripts/cong-cu/linda.js, 17/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs.
+- id: n1
+  cau: 'Mô tả trang: 85% người chọn đáp án mà về mặt logic không thể đúng hơn.'
+  loai: so-lieu
+  nguon:
+  - tversky1983
+  trich: Overall, 85% of respondents indicated that T&F was more probable than T, in a flagrant violation of the conjunction rule.
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n1)
+  ket_qua: dung
+  ghi_chu: Giữ description cũ; 85% là của phiên bản chọn một trong hai (142 sinh viên UBC), trang và công cụ nói rõ.
+- id: n2
+  cau: Đoạn mô tả Linda và hai phát biểu (A) nhân viên ngân hàng, (B) nhân viên ngân hàng và là nhà hoạt động nữ quyền (bản dịch như trang nhà).
+  loai: dinh-nghia
+  nguon:
+  - tversky1983
+  trich: Linda is 31 years old, single, outspoken and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated
+    in anti-nuclear demonstrations. | Linda is a bank teller. (T) … Linda is a bank teller and is active in the feminist movement. (T&F)
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n2, n3)
+  ket_qua: da-sua
+  ghi_chu: Công cụ cũ dùng bản rút gọn ("từng biểu tình chống vũ khí hạt nhân", "tham gia phong trào nữ quyền"); nay dùng bản dịch của trang nhà.
+- id: n3
+  cau: Mọi người thỏa (B) đều thỏa (A), nên xác suất của (B) không thể lớn hơn của (A); thêm một chi tiết chỉ có thể giữ nguyên hay làm giảm xác suất.
+  loai: dinh-nghia
+  nguon:
+  - tversky1983
+  trich: 'the conjunction rule: The probability of a conjunction, P(A&B), cannot exceed the probabilities of its constituents, P(A) and P(B)'
+  vi_tri: Tversky & Kahneman 1983, câu đầu (toàn văn, mở lại 17/11/2026)
+  ket_qua: da-sua
+  ghi_chu: 'Quy tắc xác suất. Công cụ cũ: "mỗi chi tiết … chỉ có thể làm nó khó đúng hơn" (sai khi xác suất giữ nguyên): sửa thành "giữ nguyên hay làm giảm".'
+- id: n4
+  cau: Theo cách giải thích của Tversky và Kahneman, ta không thật sự so hai xác suất mà so độ "giống Linda"; (B) nghe giống hơn.
+  loai: phat-hien
+  nguon:
+  - tversky1983
+  trich: The correlation between the mean ranks of probability and representativeness was .96 for Bill and .98 for Linda.
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n7)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: "Não bộ của ta rất giỏi kể chuyện, nhưng rất dở tính xác suất" (không nguồn): bỏ; gắn cách giải thích với tác giả.'
+- id: n5
+  cau: Heuristic là các nguyên tắc đơn giản hóa, thường hữu ích, nhưng đôi khi dẫn đến lỗi có hệ thống; bài toán Linda là ví dụ nổi tiếng nhất của hai ông.
+  loai: dinh-nghia
+  nguon:
+  - tversky1974
+  - tversky1983
+  trich: In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. | The best-known and most controversial of our experiments involved a fictitious lady called
+    Linda.
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n9 và trang nhà)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: "quy tắc mò mẫm nhanh … có thể đánh bại cả những người rành xác suất".'
+- id: n6
+  cau: '142 sinh viên đại học chưa học thống kê chọn giữa hai phát biểu: 85% cho (B) có khả năng hơn.'
+  loai: so-lieu
+  nguon:
+  - tversky1983
+  trich: We first presented the description of Linda to a group of 142 undergraduates at UBC … Overall, 85% of respondents indicated that T&F was more probable than T
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n5)
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "85% người tham gia" không nói nhóm nào.'
+- id: n7
+  cau: 'Phiên bản xếp hạng tám phát biểu: tỉ lệ mắc lỗi 85–90% ở cả ba nhóm, từ sinh viên chưa học thống kê đến nghiên cứu sinh ngành khoa học quyết định.'
+  loai: so-lieu
+  nguon:
+  - tversky1983
+  trich: 'Table 1: Linda, direct test V = 89 (naive), 90 (informed), 85 (sophisticated)'
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n26)
+  ket_qua: dung
+- id: n8
+  cau: 'Phiên bản đặt cược: 56% (60 người).'
+  loai: so-lieu
+  nguon:
+  - tversky1983
+  trich: The percentage of violations of the conjunction rule in this task was "only" 56% (n = 60)
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n32)
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "các biến thể khác … (56–82%)" gộp cả đặt cược: rút còn ví dụ đặt cược, chi tiết ở trang nhà.'
+- id: n9
+  cau: 'Tversky và Kahneman (1974) mô tả ba heuristic: đại diện (đánh giá theo độ giống một khuôn mẫu), sẵn có, neo.'
+  loai: dinh-nghia
+  nguon:
+  - tversky1974
+  trich: 'This article described three heuristics that are employed in making judgments under uncertainty: (i) representativeness … (ii) availability of instances or scenarios … and (iii) adjustment from
+    an anchor'
+  vi_tri: Tversky & Kahneman 1974, Summary (toàn văn, Internet Archive, mở lại 17/11/2026)
+  ket_qua: dung
+- id: n10
+  cau: 'Khá vững: lỗi conjunction fallacy trong bài toán Linda.'
+  loai: nhan
+  nguon:
+  - tversky1983
+  - charness2010
+  - chandrashekar2021
+  trich: In this study 58 percent of participants committed the conjunction fallacy … the mere addition of small incentives reduced this rate to 33 percent.
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n34, n35, n37)
+  nhan: kha-vung
+  co_so:
+  - tversky1983
+  - charness2010
+  - chandrashekar2021
+  ly_do: 'Như trang nhà linh-cam-va-xac-suat (đã khóa, lượt 2 hạ từ Vững chắc): chưa có phân tích tổng hợp về mức độ lỗi, một lần làm lại lớn có đăng ký trước, tỉ lệ thay đổi nhiều theo cách hỏi.'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: Vững chắc, "một trong những phát hiện được lặp lại nhiều nhất" (lệch với trang nhà đã khóa). Đổi thành Khá vững như trang nhà.'
+- id: n11
+  cau: 'Đang tranh cãi: vì sao ta mắc bẫy; Gigerenzer phản biện rằng nhiều "lỗi" không vi phạm lý thuyết xác suất nếu phân biệt xác suất một trường hợp với tần suất, và từ ngữ có thể được hiểu khác (ví
+    dụ hiểu (A) thành "không phải nhà hoạt động nữ quyền").'
+  loai: nhan
+  nguon:
+  - gigerenzer1991
+  - chandrashekar2021
+  - tversky1983
+  trich: Researchers have relied on a very narrow normative view, and have ignored conceptual distinctions—e.g. single case versus relative frequency—fundamental to probability theory.
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, khung tranh-cai của trang nhà)
+  nhan: tranh-cai
+  co_so:
+  - gigerenzer1991
+  - chandrashekar2021
+  ly_do: 'Như trang nhà: phản biện và một lần làm lại có đăng ký trước cho kết quả không đồng nhất (Linda có hiệu ứng, James thì không).'
+  ket_qua: da-sua
+  ghi_chu: Cũ gán cho Gigerenzer luận điểm "vi phạm nguyên tắc hội thoại"; tóm tắt Gigerenzer 1991 nói về một trường hợp so với tần suất; cách hiểu (A) là "không phải nhà hoạt động nữ quyền" là một dạng
+    của cách hiểu từ ngữ (theo trang nhà). Đổi cả câu hỏi 5.
+- id: n12
+  cau: 'Thay thế thuộc tính (Kahneman, 2011): khi câu hỏi khó, ta thường trả lời một câu dễ hơn mà không để ý mình đã đổi câu hỏi (cả câu hỏi 3).'
+  loai: phat-hien
+  nguon:
+  - kahneman2011
+  trich: when faced with a difficult question, we often answer an easier one instead, usually without noticing the substitution.
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n70)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: "não tự động trả lời … mà ta không hề hay biết … đầy sức thuyết phục".'
+- id: n13
+  cau: 'Hai hệ thống (Kahneman, 2011): Hệ thống 1 nhanh, tự động; Hệ thống 2 chậm, có kiểm soát, thường "ký duyệt" câu trả lời trực giác.'
+  loai: phat-hien
+  nguon:
+  - kahneman2011
+  trich: (theo trang nhà, mục Hai hệ thống tư duy)
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n46)
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: Hệ thống 2 "lười biếng", "ký duyệt luôn ấn phẩm của Hệ thống 1 mà không kiểm tra".'
+- id: n14
+  cau: Nghiên cứu gốc dùng sinh viên đại học và nghiên cứu sinh ở Mỹ và Canada, công bố năm 1983.
+  loai: lich-su
+  nguon:
+  - tversky1983
+  trich: Stanford, Berkeley, UBC
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n50 của trang nhà)
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "sinh viên đại học … vào đầu thập niên 1980".'
+- id: n15
+  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra bài toán Linda hay lỗi conjunction fallacy trên người Việt.
+  loai: thoi-su
+  nguon:
+  - tim-linda-vn
+  het_han: '2028-11-01'
+  ket_qua: da-sua
+  ghi_chu: Thêm mốc. Europe PMC "conjunction fallacy Vietnamese" (36 kết quả, không có nghiên cứu liên quan trong 8 kết quả đầu), 17/11/2026; OpenAlex 10/11/2026 (hồ sơ trang nhà).
+- id: n16
+  cau: 'Suy luận của site: nếu một phần hiệu ứng do cách hiểu câu hỏi, thói quen giao tiếp khác nhau giữa các nền văn hóa có thể ảnh hưởng tới hiệu ứng; chưa có dữ liệu.'
+  loai: phat-hien
+  nguon:
+  - gigerenzer1991
+  ket_qua: da-lam-mem
+  ghi_chu: Ghi rõ là suy luận (như trang nhà).
+- id: n17
+  cau: 'Ngộ nhận: ở phiên bản xếp hạng, nhóm nghiên cứu sinh khoa học quyết định vẫn mắc lỗi ở tỉ lệ cao (85%).'
+  loai: so-lieu
+  nguon:
+  - tversky1983
+  trich: 'Table 1: Linda, direct test V = 85 (sophisticated)'
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n64)
+  ket_qua: da-sua
+  ghi_chu: Thêm "ở phiên bản xếp hạng"; ở phiên bản so hai phát biểu, phần lớn người đã học nhiều thống kê làm đúng.
+- id: n18
+  cau: 'Câu hỏi 2: 85% ở phiên bản chọn một trong hai (sinh viên chưa học thống kê), 85–90% ở phiên bản xếp hạng; khi chỉ phải so hai phát biểu, phần lớn người đã học nhiều thống kê làm đúng.'
+  loai: so-lieu
+  nguon:
+  - tversky1983
+  trich: only 36% of respondents committed the fallacy. Thus, statistical sophistication produced a majority who conformed to the conjunction rule in a transparent test
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n69)
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "85% trong phiên bản so sánh trực tiếp … kể cả ở nhóm có trình độ thống kê cao" (sai với phiên bản so trực tiếp: nhóm thống kê cao 36%).'
+- id: n19
+  cau: 'Câu hỏi 4: đặt cược 56%, thấp hơn 85% (nhóm khác); Tversky và Kahneman phỏng đoán khung cược khiến người ta chú ý điều kiện thắng; đây là so sánh giữa hai nhóm, chưa phải thử nghiệm có kiểm soát.'
+  loai: phat-hien
+  nguon:
+  - tversky1983
+  trich: We conjecture that the betting context draws attention to the conditions in which one bet pays off whereas the other does not
+  vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n72)
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "giảm từ 85% xuống 56%" và mẹo "cách nhanh nhất để đánh thức Hệ thống 2" (không nguồn).'
+- id: n20
+  cau: 'Công cụ: 142 sinh viên, 85% chọn (B), 15% chọn (A) (biểu đồ).'
+  loai: cong-cu
+  nguon:
+  - tversky1983
+  trich: 142 undergraduates at UBC … Overall, 85% of respondents indicated that T&F was more probable than T
+  vi_tri: hằng NGHIEN_CUU trong src/scripts/cong-cu/linda.js
+  ket_qua: da-sua
+  ghi_chu: 'Công cụ cũ: "85% người tham gia … kể cả những người có trình độ thống kê cao" ở phiên bản so trực tiếp (sai: n18). 15% suy từ phiên bản chọn một trong hai.'
+doi_chu:
+- cu: Điều gì đang xảy ra? (câu "não bộ … dở tính xác suất", định nghĩa heuristic)
+  moi: gắn với Tversky và Kahneman
+  ly_do: n4, n5
+- cu: Mục Tversky và Kahneman (1983) (thiết kế, ba nhóm, các tỉ lệ)
+  moi: rút gọn, nói rõ nhóm của 85%, link trang nhà
+  ly_do: n6–n8
+- cu: Mục 1974 (ba ý)
+  moi: một đoạn
+  ly_do: n9
+- cu: Khung Vững chắc
+  moi: Khá vững như trang nhà
+  ly_do: n10
+- cu: Khung tranh-cai, mục Lý thuyết (Gigerenzer, Kahneman)
+  moi: theo trang nhà và nguồn
+  ly_do: n11–n13
+- cu: Ở Việt Nam, ngộ nhận 2–3, câu hỏi 2, 3, 4, 5
+  moi: mốc 11/2026; phiên bản xếp hạng; phỏng đoán của tác giả
+  ly_do: n14–n19
+- cu: Nguồn
+  moi: thêm DOI của Gigerenzer 1991 và Kahneman 2011
+  ly_do: nguồn đã kiểm ở trang nhà

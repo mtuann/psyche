@@ -132,6 +132,12 @@ export const CONG_CU = {
 	'ao-giac': { lop: 'pz-ao-giac', thongSo: [] },
 	'mu-thay-doi': { lop: 'pz-mu-thay-doi', thongSo: [] },
 	ebbinghaus: { lop: 'pz-ebbinghaus', thongSo: [] },
+	'tri-nho-sai': { lop: 'pz-tri-nho-sai', thongSo: [] },
+	'wason-246': { lop: 'pz-wason-246', thongSo: [] },
+	linda: { lop: 'pz-linda', thongSo: [] },
+	'big-five-mini': { lop: 'pz-big-five-mini', thongSo: [] },
+	'neo-gia': { lop: 'pz-neo-gia', thongSo: [] },
+	'tri-nho-tu': { lop: 'pz-tri-nho-tu', thongSo: [] },
 };
 
 /** Ô "chưa chuyển" cho công cụ, hình chưa có trên site mới; chỉ dùng được ở trang chưa khóa (D1.6 chặn). */

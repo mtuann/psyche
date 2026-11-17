@@ -1,0 +1,241 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa trai-nghiem/big-five-mini
+trang: src/content/docs/trai-nghiem/big-five-mini.md
+nguon_cu: ../psyche-zero/docs/trai-nghiem/big-five-mini.md
+tang: cong-cu
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l2
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: donnellan2006
+  ten: 'Donnellan, Oswald, Baird & Lucas (2006), Psychol Assess 18(2), 192–203: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/1040-3590.18.2.192
+  toan_van: false
+- id: ipip-mini
+  ten: 'IPIP, "Mini-IPIP Scoring Key": trang chính thức, câu, khóa chấm, hệ số alpha, ghi chú về cách chấm Neuroticism'
+  link: https://ipip.ori.org/MiniIPIPKey.htm
+  toan_van: true
+- id: ipip-cham
+  ten: 'IPIP, "IPIP Scale Scoring Instructions": cách chấm câu thuận, câu nghịch, cộng tổng'
+  link: https://ipip.ori.org/newScoringInstructions.htm
+  toan_van: true
+- id: ipip-dien-giai
+  ten: 'IPIP, "Interpreting Individual IPIP Scale Scores": không xếp loại, chuẩn tính trên mẫu cùng giới, cùng lứa tuổi'
+  link: https://ipip.ori.org/InterpretingIndividualIPIPScaleScores.htm
+  toan_van: true
+- id: ipip-quan-tri
+  ten: 'IPIP, "Administering IPIP Measures, with a 50-item Sample Questionnaire": lời dẫn, thang 5 bậc, khuyên xếp xen kẽ câu các thang'
+  link: https://ipip.ori.org/New_IPIP-50-item-scale.htm
+  toan_van: true
+- id: ipip-trang-chu
+  ten: 'IPIP, trang chủ: câu và thang thuộc phạm vi công cộng'
+  link: https://ipip.ori.org/
+  toan_van: true
+- id: walton-vn
+  ten: 'Walton, "Vietnamese Translation of 45 IPIP Scales Targeted at the AB5C Facets" (trang IPIP): bản dịch tiếng Việt từng câu'
+  link: https://ipip.ori.org/VietnameseAB5C.htm
+  toan_van: true
+- id: goldberg1992
+  ten: 'Goldberg (1992), Psychol Assess 4(1), 26–42: siêu dữ liệu (OpenAlex); dẫn theo trang Mini-IPIP Scoring Key của IPIP'
+  link: https://doi.org/10.1037/1040-3590.4.1.26
+  toan_van: false
+- id: tim-ipip-vn
+  ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "Mini-IPIP Vietnamese" (6 kết quả), "IPIP Vietnamese" (9 kết quả); OpenAlex "Big Five Mini-IPIP Vietnamese": không có nghiên cứu kiểm chứng Mini-IPIP trên người
+    Việt'
+  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Mini-IPIP%20Vietnamese
+  toan_van: false
+nhan_dinh:
+- id: s1
+  cau: 'Công cụ: 20 câu, mỗi màn một câu, năm nút của thang (phím 1–5), "Quay lại câu trước"; kết quả: điểm 4–20 mỗi chiều trên trục có vạch giữa 12, không nhãn cao/thấp; khung cảnh báo; link trang nhà
+    Big Five.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đã kiểm src/scripts/cong-cu/big-five-mini.js, 17/11/2026; tests/cong-cu.test.mjs (20 câu, 4 câu mỗi chiều, khóa nghịch E2 A2 C2 N2 O3, không hai câu cùng chiều liền nhau), tests/trinh-duyet/kiem-cong-cu.mjs.
+- id: s2
+  cau: 'Bản tiếng Việt: 18 câu lấy từ bản dịch của Walton trên IPIP, 2 câu do site dịch; lời dẫn và nhãn thang do site dịch; chưa kiểm chứng trên người Việt.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã so từng câu trong CAU (big-five-mini.js) với trang VietnameseAB5C.htm, 17/11/2026: 18 câu khớp nguyên văn; "Feel others'' emotions" không có trong bản dịch; "Am the life of the party" bản
+    dịch ghi "Cuộc sống với tôi giống như một bữa tiệc".'
+- id: n1
+  cau: 'Thang Mini-IPIP của Donnellan và cộng sự (2006): 20 câu, 4 câu mỗi chiều (hướng ngoại, dễ chịu, tận tâm, bất ổn cảm xúc, trí tuệ/trí tưởng tượng); bản rút gọn của một bảng hỏi IPIP 50 câu.'
+  loai: cong-cu
+  nguon:
+  - donnellan2006
+  - ipip-mini
+  trich: The Mini-IPIP, a 20-item short form of the 50-item International Personality Item Pool-Five-Factor Model measure (Goldberg, 1999) … with four items per Big Five trait | Factor I Surgency or Extraversion
+    … Factor II Agreeableness … Factor III Conscientiousness … Factor IV Neuroticism … Factor V Intellect or Imagination
+  vi_tri: Donnellan 2006, tóm tắt; IPIP Mini-IPIP Scoring Key
+  ket_qua: da-sua
+  ghi_chu: 'Thay 15 câu tự soạn của site cũ (không có nguồn, không kiểm chứng) bằng thang có nguồn, theo lời giao lô. IPIP lưu ý thang 50 câu gốc là bộ đánh dấu Big Five từ vựng (Goldberg, 1992), không
+    phải thang Five-Factor Model như tác giả viết: trang ghi "một bảng hỏi IPIP 50 câu", không gọi tên.'
+- id: n2
+  cau: 'Câu và khóa chấm (thuận, nghịch) của 20 câu theo trang Mini-IPIP Scoring Key; câu nghịch: E 2, A 2, C 2, N 2, Intellect 3.'
+  loai: cong-cu
+  nguon:
+  - ipip-mini
+  trich: + keyed Am the life of the party. Talk to a lot of different people at parties. – keyed Don't talk a lot. Keep in the background. … Factor V Intellect or Imagination + keyed Have a vivid imagination.
+    – keyed Have difficulty understanding abstract ideas. Am not interested in abstract ideas. Do not have a good imagination.
+  vi_tri: 'IPIP Mini-IPIP Scoring Key; vi_tri trong mã: hằng CAU'
+  ket_qua: dung
+- id: n3
+  cau: 'Câu IPIP thuộc phạm vi công cộng: ai cũng được chép, dịch, dùng mà không cần xin phép.'
+  loai: phat-hien
+  nguon:
+  - ipip-trang-chu
+  trich: The items and scales are in the public domain, which means that one can copy, edit, translate, or use them for any purpose without asking permission and without paying a fee.
+  vi_tri: IPIP, trang chủ
+  ket_qua: dung
+- id: n4
+  cau: Thang 5 bậc (Very Inaccurate … Very Accurate) và lời dẫn ("mô tả bạn như bạn thường là hiện nay … so với người cùng giới, cùng lứa tuổi").
+  loai: cong-cu
+  nguon:
+  - ipip-quan-tri
+  trich: Describe yourself as you generally are now, not as you wish to be in the future. Describe yourself as you honestly see yourself, in relation to other people you know of the same sex as you are,
+    and roughly your same age. … 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate
+  vi_tri: 'Administering IPIP Measures; vi_tri trong mã: THANG, lời dẫn trong hoi()'
+  ket_qua: dung
+  ghi_chu: Bản dịch tiếng Việt của site.
+- id: n5
+  cau: 'Cách chấm: câu thuận 1–5, câu nghịch 5–1, điểm chiều là tổng các câu (4–20).'
+  loai: cong-cu
+  nguon:
+  - ipip-cham
+  trich: For + keyed items, the response "Very Inaccurate" is assigned a value of 1 … For - keyed items, the response "Very Inaccurate" is assigned a value of 5 … just sum all the values to obtain a total
+    scale score.
+  vi_tri: 'IPIP Scale Scoring Instructions; vi_tri trong mã: diemCau, chamDiem'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: trung bình 3 câu, thang 1–5, câu đảo 3, 6, 9, 12, 15. Bản ghi vẫn lưu trung bình 1–5 (scores) như site cũ, thêm tổng (tong).'
+- id: n6
+  cau: 'Không gắn nhãn cao/thấp: IPIP khuyên không xếp người vào loại; chuẩn so sánh tính trên mẫu cùng giới, cùng lứa tuổi.'
+  loai: cong-cu
+  nguon:
+  - ipip-dien-giai
+  trich: one might calculate the mean and standard deviation (SD) for a sample of persons, usually of the same sex and a particular age range … we caution against interpreting IPIP scale scores in terms
+    of categories or sorting respondents into groups based on their scores.
+  vi_tri: Interpreting Individual IPIP Scale Scores
+  ket_qua: da-sua
+  ghi_chu: 'Công cụ cũ xếp "cao" (≥ 3,7), "thấp" (≤ 2,3), "trung bình" kèm lời mô tả tính cách: ngưỡng không có nguồn; đã bỏ.'
+- id: n7
+  cau: IPIP khuyên xếp xen kẽ câu của các thang, vì khi câu cùng thang đứng liền nhau người trả lời dễ chọn cùng một mức cho tất cả.
+  loai: phat-hien
+  nguon:
+  - ipip-quan-tri
+  trich: If items from the same scale are listed together, especially if they are all +keyed or -keyed items, respondents may be more likely to see that the items are measuring the same construct. If this
+    happens … they might tend to give the exact same response (e.g., Very Accurate) to all of the items.
+  vi_tri: Administering IPIP Measures
+  ket_qua: dung
+- id: n8
+  cau: Trộn câu thuận và câu nghịch giúp phát hiện thói quen "đồng ý với mọi câu" (xu hướng đồng ý, acquiescence) (cả câu hỏi 1).
+  loai: phat-hien
+  nguon: []
+  ket_qua: da-lam-mem
+  ghi_chu: 'chỗ khó: chưa tìm được nguồn mở được cho câu này trong lô; câu cũ "các bảng hỏi chuẩn đều trộn câu thuận và câu đảo vì lý do này" đã làm mềm ("giúp phát hiện"). Lượt 2 tìm nguồn (ví dụ tổng
+    quan về acquiescence trong bảng hỏi), không có thì bỏ câu.'
+- id: n9
+  cau: 'Qua năm nghiên cứu: độ nhất quán nội tại chấp nhận được (từ khoảng 0,60 trở lên), độ ổn định đo lại sau vài tuần, vài tháng gần như bản 50 câu, quan hệ với các thước đo Big Five khác tương tự.'
+  loai: so-lieu
+  nguon:
+  - donnellan2006
+  trich: had consistent and acceptable internal consistencies across five studies (= at or well above .60) … test-retest correlations that were quite similar to the parent measure across intervals of a
+    few weeks (Study 4) and several months (Study 5) … showed a comparable pattern of convergent, discriminant, and criterion-related validity (Studies 2-5) with other Big Five measures
+  vi_tri: Tóm tắt
+  ket_qua: dung
+- id: n10
+  cau: 'Hệ số alpha của năm thang Mini-IPIP: 0,65–0,77; tác giả chấm chiều cảm xúc theo hướng bất ổn (Neuroticism) thay vì ổn định cảm xúc như thang gốc.'
+  loai: so-lieu
+  nguon:
+  - ipip-mini
+  trich: Extraversion (Alpha = .77) … Agreeableness (Alpha = .70) … Conscientiousness (Alpha = .69) … Neuroticism (Alpha = .68) … Intellect or Imagination (Alpha = .65) | The authors of the Mini-IPIP chose
+    to score the Emotional Stability scale from the lexical Big Five in reverse and to use the label Neuroticism
+  vi_tri: Mini-IPIP Scoring Key và chú thích b
+  ket_qua: dung
+- id: n11
+  cau: 'Khá vững: thang ngắn như Mini-IPIP vẫn đo được 5 chiều, nhưng điểm từng chiều kém chính xác hơn bản dài; bằng chứng chủ yếu từ mẫu nói tiếng Anh.'
+  loai: nhan
+  nguon:
+  - donnellan2006
+  - ipip-mini
+  trich: acceptable internal consistencies … (= at or well above .60) | Alpha = .65 … .77
+  nhan: kha-vung
+  co_so:
+  - donnellan2006
+  - ipip-mini
+  ly_do: Năm nghiên cứu của nhóm tác giả cho kết quả cùng chiều (bản tiếng Anh); độ nhất quán mỗi thang vừa phải; chưa có tái lập lớn đăng ký trước hay tổng hợp trong lô này.
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: khung Khá vững về BFI-10 (Rammstedt và John, 2007). Thay bằng Mini-IPIP, thang công cụ dùng.'
+- id: n12
+  cau: Big Five là công cụ mô tả tính cách bình thường, không phải công cụ chẩn đoán (lời cảnh báo, link trang nhà).
+  loai: dinh-nghia
+  nguon: []
+  ket_qua: da-sua
+  ghi_chu: 'Như trang nhà kham-pha/tinh-cach/big-five (đã khóa, dẫn McCrae và Costa, 1989). Cũ: khung "Đã bị bác bỏ: dùng bài mini để chẩn đoán hay tuyển dụng" — không phải khẳng định thực nghiệm đã bị
+    kiểm tra, dùng nhãn bác bỏ là sai cách; thay bằng khung chú ý (caution) không nhãn. Cũng bỏ khung "Đang tranh cãi: bản 15 câu tự viết có đo đúng 5 chiều" (bản ấy đã bỏ).'
+- id: n13
+  cau: Bằng chứng về cấu trúc Big Five ở người Việt còn ít và chưa thống nhất (link mục Ở Việt Nam của trang nhà).
+  loai: phat-hien
+  nguon: []
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "chúng tôi chưa tìm thấy nghiên cứu kiểm chứng cấu trúc 5 nhân tố trên mẫu người Việt" — trái với trang nhà đã khóa (Bühler và cộng sự, 2023; Quynh và Church, 2023). Nay chỉ tóm một câu,
+    link trang nhà; không thêm nhận định mới. Kiểm câu tóm tắt trên trang nhà (mục Ở Việt Nam và các nền văn hóa khác), 17/11/2026.'
+- id: n14
+  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu kiểm chứng Mini-IPIP trên người Việt.
+  loai: thoi-su
+  nguon:
+  - tim-ipip-vn
+  het_han: '2028-11-01'
+  ket_qua: dung
+  ghi_chu: 'Europe PMC "Mini-IPIP Vietnamese" (6 kết quả), "IPIP Vietnamese" (9 kết quả): không có nghiên cứu kiểm chứng; OpenAlex "Big Five Mini-IPIP Vietnamese": không có (17/11/2026). Trang IPIP có nói
+    bản dịch của Walton dùng trong một dự án ở Hà Nội, không có kết quả kiểm chứng công bố.'
+- id: n15
+  cau: Nhiều bài test Big Five tiếng Việt trên mạng, kể cả bản này, chưa qua chuẩn hóa (dịch ngược, kiểm chứng nhân tố, chuẩn so sánh).
+  loai: phat-hien
+  nguon: []
+  ket_qua: da-lam-mem
+  ghi_chu: 'Phần "kể cả bản ở trang này" là câu về site (đúng: s2). Phần "nhiều bài test trên mạng" là khẳng định chung, không nguồn: giữ như nhận xét thận trọng của site cũ; lượt 2 xét bỏ hay giữ.'
+- id: n16
+  cau: 'Ngộ nhận: mức trung bình các chiều dịch chuyển theo tuổi và điểm một người dao động giữa các lần đo (link Tính cách có thay đổi theo tuổi?).'
+  loai: phat-hien
+  nguon: []
+  ket_qua: dung
+  ghi_chu: Tóm tắt trang nhà kham-pha/tinh-cach/tinh-cach-thay-doi (đã khóa); giữ chữ cũ, chỉ link.
+- id: n17
+  cau: 'Câu hỏi 2: công cụ chỉ cho vị trí trên dải 4–20; muốn nói cao hay thấp cần so với mẫu cùng giới, cùng lứa tuổi; IPIP khuyên không xếp loại.'
+  loai: cong-cu
+  nguon:
+  - ipip-dien-giai
+  trich: we caution against interpreting IPIP scale scores in terms of categories
+  vi_tri: Interpreting Individual IPIP Scale Scores
+  ket_qua: da-sua
+  ghi_chu: 'Câu hỏi mới thay câu cũ về NEO-PI-R 240 câu (số về bảng hỏi khác, không cần cho công cụ, theo lời giao: không thêm số Big Five ngoài phần công cụ cần).'
+doi_chu:
+- cu: Tiêu đề, mô tả "15 câu, 3 câu mỗi chiều, thang 1–5"
+  moi: '"20 câu", Mini-IPIP, dải 4–20'
+  ly_do: n1, n5
+- cu: Điều gì đang xảy ra? (15 câu, câu đảo 3, 6, 9, 12, 15, trung bình 1–5)
+  moi: Mini-IPIP, câu nghịch, tổng 4–20, không nhãn cao/thấp
+  ly_do: n1–n8
+- cu: 'Nghiên cứu then chốt: NEO-PI-R 240 câu, BFI 44 câu, NEO-FFI, BFI-2, BFI-10'
+  moi: 'mục "Thang đo và bản dịch": Donnellan 2006, IPIP, bản dịch Walton'
+  ly_do: 'n9, n10, s2; theo lời giao: không thêm số về Big Five ngoài phần công cụ cần'
+- cu: Bốn khung nhãn (Vững chắc 5 chiều qua ngôn ngữ; Khá vững BFI-10; Đang tranh cãi bản 15 câu; Đã bị bác bỏ chẩn đoán)
+  moi: một khung Khá vững về Mini-IPIP; khung chú ý về chẩn đoán; link trang nhà cho cấu trúc 5 chiều
+  ly_do: n11, n12; khung Vững chắc cũ lệch với trang nhà đã khóa (Khá vững)
+- cu: Các lý thuyết giải thích (giả thuyết từ vựng, Five-Factor Theory)
+  moi: mục "Năm chiều là gì?", link trang nhà
+  ly_do: nội dung thuộc trang nhà
+- cu: Ở Việt Nam
+  moi: link trang nhà; mốc 11/2026 về Mini-IPIP
+  ly_do: n13, n14
+- cu: Ngộ nhận, câu hỏi 2–5, Nguồn
+  moi: theo thang mới
+  ly_do: n16, n17
+ghi_chu: 'Lô D8-L2 thay thang 15 câu tự soạn của site cũ bằng Mini-IPIP (theo lời giao: thang và cách chấm phải có nguồn). Bản ghi cũ (kind "bigfive") vẫn đọc được; bản ghi mới thêm thang: "mini-ipip".
+  Cần chủ repo đồng ý (báo cáo d8-l2.md).'

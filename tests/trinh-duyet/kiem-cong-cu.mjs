@@ -197,6 +197,155 @@ const LUONG = {
 			assert.deepEqual([r.surR, r.centerD], [35, 60]);
 		},
 	},
+	/** Trí nhớ sai: xem 12 từ (đồng hồ giả), nhận diện 18 từ bằng phím D/C: đã học và từ mồi "Đã thấy", nhiễu "Chưa thấy". */
+	'tri-nho-sai': {
+		trang: 'trai-nghiem/tri-nho-sai/',
+		lop: 'pz-tri-nho-sai',
+		async chay({ p, el }) {
+			await bam(el, 'Bắt đầu');
+			await toiKhi(p, () => !!document.querySelector('.pz-tri-nho-sai .pz-answers'), null, { ten: 'bài nhận diện', toiDa: 30000, buoc: 250 });
+			const nhieu = ['bàn', 'cây', 'sách', 'mưa', 'xe đạp'];
+			for (let i = 0; i < 18; i++) {
+				const tu = await p.evaluate(() => document.querySelector('.pz-tri-nho-sai .pz-stim').textContent);
+				await p.keyboard.press(nhieu.includes(tu) ? 'c' : 'd');
+			}
+			await el.getByRole('heading', { name: 'Kết quả của bạn' }).waitFor();
+			await el.getByText('Bạn vừa có một “trí nhớ sai”').waitFor();
+			const [r] = await banGhi(p, 'falsememory');
+			assert.deepEqual([r.hits, r.of, r.lureYes, r.faUnrelated], [12, 12, true, 0]);
+		},
+	},
+	/** Wason: dãy lỗi (thiếu số), 2,5 – 3 – 1 (không tuân theo), 1 – 2 – 3; nêu sai ("cộng 2, tăng"), thử tiếp, nêu đúng. */
+	'wason-246': {
+		trang: 'trai-nghiem/wason-246/',
+		lop: 'pz-wason-246',
+		async chay({ p, el }) {
+			await bam(el, 'Bắt đầu');
+			const o = (i) => el.getByLabel(`Số thứ ${['nhất', 'hai', 'ba'][i]}`);
+			const thu = async (a, b, c) => {
+				await o(0).fill(a);
+				await o(1).fill(b);
+				await o(2).fill(c);
+				await p.keyboard.press('Enter');
+			};
+			await thu('1', '', '3');
+			await el.getByText('Hãy nhập đủ ba số').waitFor();
+			await thu('2,5', '3', '1');
+			await el.getByText('Dãy 2,5 – 3 – 1: không tuân theo quy tắc.').waitFor();
+			await thu('1', '2', '3');
+			await el.getByText('Dãy 1 – 2 – 3: tuân theo quy tắc.').waitFor();
+			await bam(el, 'Công bố quy tắc');
+			await el.getByLabel('Theo bạn, quy tắc là gì?').fill('cộng 2, tăng');
+			await bam(el, 'Chấm');
+			await el.getByText(/thêm một điều kiện/).waitFor();
+			await bam(el, 'Thử thêm dãy');
+			await bam(el, 'Công bố quy tắc');
+			await el.getByLabel('Theo bạn, quy tắc là gì?').fill('ba số tăng dần');
+			await bam(el, 'Chấm');
+			await el.getByText('Chính xác!').waitFor();
+			const [r] = await banGhi(p, 'wason');
+			assert.deepEqual([r.triples, r.disconfirm, r.ruleOk, r.announcements], [2, 1, true, 2]);
+		},
+	},
+	/** Linda: trả lời khi chưa chọn (báo lỗi), chọn B bằng bàn phím. */
+	linda: {
+		trang: 'trai-nghiem/linda/',
+		lop: 'pz-linda',
+		async chay({ p, el }) {
+			await bam(el, 'Trả lời');
+			await el.getByText('Hãy chọn một đáp án trước khi trả lời.').waitFor();
+			await el.getByRole('radio', { name: /B\. Linda/ }).check();
+			await bam(el, 'Trả lời');
+			await el.getByText('Đáp án đúng về mặt logic là A', { exact: true }).waitFor();
+			const [r] = await banGhi(p, 'linda');
+			assert.deepEqual([r.chose, r.correct], ['b', false]);
+		},
+	},
+	/** Big Five mini: 20 câu, câu 1 bằng nút, quay lại, còn lại bằng phím 1–5 (gõ vào ô nhập giữa chừng không thành câu trả lời). */
+	'big-five-mini': {
+		trang: 'trai-nghiem/big-five-mini/',
+		lop: 'pz-big-five-mini',
+		async chay({ p, el }) {
+			await bam(el, 'Bắt đầu');
+			await bam(el, 'Không đúng cũng không sai');
+			await el.getByText('Câu 2 / 20').waitFor();
+			await bam(el, 'Quay lại câu trước');
+			await el.getByText('Câu 1 / 20').waitFor();
+			await p.evaluate(() => {
+				const o = document.createElement('input');
+				o.id = 'pz-thu-go';
+				o.setAttribute('aria-label', 'thử gõ');
+				document.body.append(o);
+				o.focus();
+			});
+			await p.keyboard.type('12345');
+			await p.evaluate(() => document.getElementById('pz-thu-go').remove());
+			await el.getByText('Câu 1 / 20').waitFor();
+			for (let i = 0; i < 20; i++) await p.keyboard.press('5');
+			await el.getByRole('heading', { name: 'Kết quả của bạn' }).waitFor();
+			const [r] = await banGhi(p, 'bigfive');
+			assert.equal(r.thang, 'mini-ipip');
+			assert.equal(r.answers.length, 20);
+			assert.deepEqual(r.tong, { E: 12, A: 12, C: 12, N: 12, O: 8 });
+			assert.deepEqual(r.scores, { E: 3, A: 3, C: 3, N: 3, O: 2 });
+		},
+	},
+	/** Mỏ neo: hai câu, so sánh bằng nút, ước lượng kiểu Việt (dấu chấm hàng nghìn, dấu phẩy thập phân), một lần nhập sai. */
+	'neo-gia': {
+		trang: 'trai-nghiem/neo-gia/',
+		lop: 'pz-neo-gia',
+		async chay({ p, el }) {
+			await bam(el, 'Bắt đầu');
+			await bam(el, 'Lớn hơn');
+			await el.getByRole('textbox').fill('khoảng 90');
+			await bam(el, 'Tiếp tục');
+			await el.getByText('Hãy nhập một con số lớn hơn 0.').waitFor();
+			await el.getByRole('textbox').fill('95');
+			await bam(el, 'Tiếp tục');
+			await bam(el, 'Nhỏ hơn');
+			await el.getByRole('textbox').fill('37,5');
+			await p.keyboard.press('Enter');
+			await el.getByRole('heading', { name: 'Kết quả của bạn' }).waitFor();
+			const [r] = await banGhi(p, 'anchoring');
+			assert.ok(['low', 'high'].includes(r.group));
+			assert.deepEqual(r.answers.map((a) => [a.q, a.compare, a.estimate]), [['dan-so', 'higher', 95], ['thanh-thi', 'lower', 37.5]]);
+			assert.deepEqual(r.answers.map((a) => a.anchor), r.group === 'low' ? [40, 15] : [200, 70]);
+		},
+	},
+	/** Trí nhớ từ: đúng hai lượt 2 từ (gõ chữ hoa, dấu phẩy), sai hai lượt 3 từ: độ dài 2. */
+	'tri-nho-tu': {
+		trang: 'trai-nghiem/tri-nho-tu/',
+		lop: 'pz-tri-nho-tu',
+		async chay({ p, el }) {
+			const docDay = async () => {
+				const day = [];
+				let truoc = '';
+				for (let t = 0; t < 30000; t += 100) {
+					const [chu, hoi] = await p.evaluate(() => [document.querySelector('.pz-tri-nho-tu .pz-stim')?.textContent ?? '', !!document.querySelector('.pz-tri-nho-tu form')]);
+					if (hoi) return day;
+					if (chu && chu !== '?' && chu !== truoc) day.push(chu);
+					truoc = chu;
+					await p.clock.runFor(100);
+				}
+				throw new Error('dãy từ không kết thúc');
+			};
+			const luot = async (dung) => {
+				const day = await docDay();
+				await el.getByRole('textbox').fill(dung ? day.join(', ').toUpperCase() : 'sai');
+				await el.getByRole('button', { name: 'Xong' }).click();
+				await el.getByText(dung ? 'Đúng!' : /Chưa đúng/).waitFor();
+				await bam(el, 'Tiếp');
+				return day.length;
+			};
+			await bam(el, 'Bắt đầu');
+			assert.deepEqual([await luot(true), await luot(true), await luot(false), await luot(false)], [2, 2, 3, 3]);
+			await el.getByRole('heading', { name: 'Kết quả của bạn' }).waitFor();
+			const [r] = await banGhi(p, 'wordspan');
+			assert.equal(r.span, 2);
+			assert.equal(r.positions.length, 3);
+			assert.equal(typeof r.rtMs, 'number');
+		},
+	},
 };
 
 for (const [ten, loai] of Object.entries(TRINH_DUYET)) {

@@ -370,7 +370,7 @@
 }
 /* Khối chưa dựng (chờ script): giữ chỗ để bố cục không xô khi công cụ hiện ra (Lighthouse đo CLS). Chỉ khi có
    JavaScript: tắt JavaScript thì không có khung trống cao (review D1.4). Chiều cao màn đầu của từng công cụ (cả viền, đệm)
-   đo ở bản build D8-L1 (font Be Vietnam Pro 16 px, chưa có lần làm trước), ở 360 px, 412 px và từ 640 px; đổi chữ màn đầu
+   đo ở bản build D8-L1, D8-L2 (font Be Vietnam Pro 16 px, chưa có lần làm trước), ở 360 px, 412 px và từ 640 px; đổi chữ màn đầu
    thì đo lại */
 @media (scripting: enabled) {
 	.pz-cong-cu:empty {
@@ -391,6 +391,24 @@
 	.pz-ebbinghaus:empty {
 		min-height: 23rem;
 	}
+	.pz-tri-nho-sai:empty {
+		min-height: 28.25rem;
+	}
+	.pz-wason-246:empty {
+		min-height: 25.5rem;
+	}
+	.pz-linda:empty {
+		min-height: 42.75rem;
+	}
+	.pz-big-five-mini:empty {
+		min-height: 26rem;
+	}
+	.pz-neo-gia:empty {
+		min-height: 26.75rem;
+	}
+	.pz-tri-nho-tu:empty {
+		min-height: 28.5rem;
+	}
 	@media (min-width: 26rem) {
 		.pz-stroop:empty {
 			min-height: 39rem;
@@ -406,6 +424,24 @@
 		}
 		.pz-ebbinghaus:empty {
 			min-height: 19.75rem;
+		}
+		.pz-tri-nho-sai:empty {
+			min-height: 26.5rem;
+		}
+		.pz-wason-246:empty {
+			min-height: 22rem;
+		}
+		.pz-linda:empty {
+			min-height: 40.25rem;
+		}
+		.pz-big-five-mini:empty {
+			min-height: 24.25rem;
+		}
+		.pz-neo-gia:empty {
+			min-height: 23.25rem;
+		}
+		.pz-tri-nho-tu:empty {
+			min-height: 26.75rem;
 		}
 	}
 	@media (min-width: 40rem) {
@@ -423,6 +459,24 @@
 		}
 		.pz-ebbinghaus:empty {
 			min-height: 16.75rem;
+		}
+		.pz-tri-nho-sai:empty {
+			min-height: 18.5rem;
+		}
+		.pz-wason-246:empty {
+			min-height: 19rem;
+		}
+		.pz-linda:empty {
+			min-height: 31.25rem;
+		}
+		.pz-big-five-mini:empty {
+			min-height: 18.25rem;
+		}
+		.pz-neo-gia:empty {
+			min-height: 18.5rem;
+		}
+		.pz-tri-nho-tu:empty {
+			min-height: 20.25rem;
 		}
 	}
 }
@@ -772,6 +826,132 @@
 .pz-cong-cu .pz-o-mau--dap-an {
 	outline: 4px solid var(--pz-stage-fg);
 	outline-offset: 2px;
+}
+/* ---- D8-L2: trí nhớ sai, Wason, Linda, Big Five mini, mỏ neo, trí nhớ từ ---- */
+/* Kích thích là từ (có từ hai chữ như "thức khuya"): nhỏ hơn chữ số, không giãn chữ, xuống dòng được ở 360 px */
+.pz-cong-cu .pz-stim--tu {
+	font-size: clamp(1.8rem, 8vw, 3rem);
+	letter-spacing: 0;
+	text-align: center;
+}
+.pz-cong-cu .pz-answers--2 {
+	grid-template-columns: repeat(2, 1fr);
+	max-width: 24rem;
+	margin-inline: auto;
+}
+/* Khung kết luận (giao-dien.js: khungKetLuan) */
+.pz-cong-cu .pz-ket-luan {
+	margin: 0.8rem 0;
+	padding: 0.6rem 0.9rem;
+	border-inline-start: 4px solid var(--sl-color-green);
+	border-radius: 0.4rem;
+	background: var(--sl-color-green-low);
+}
+.pz-cong-cu .pz-ket-luan--chu-y {
+	border-color: var(--pz-accent);
+	background: var(--sl-color-bg);
+}
+.pz-cong-cu .pz-ket-luan p {
+	margin: 0.3rem 0;
+}
+.pz-cong-cu .pz-ket-luan__tieu-de {
+	font-weight: 700;
+}
+/* Ô nhập số, chữ (Wason, mỏ neo, trí nhớ từ) */
+.pz-cong-cu .pz-o-so {
+	max-width: 6.5rem;
+	flex: 0 1 5rem;
+	letter-spacing: 0;
+}
+.pz-cong-cu .pz-o-chu {
+	max-width: 22rem;
+	flex: 1 1 12rem;
+	letter-spacing: 0;
+}
+.pz-cong-cu .pz-day-so {
+	margin: 0 0 0.4rem;
+	padding: 0;
+	border: 0;
+}
+.pz-cong-cu .pz-day-so legend {
+	margin-bottom: 0.3rem;
+	padding: 0;
+	font-weight: 600;
+}
+.pz-cong-cu .pz-ds-day {
+	columns: 2 12rem;
+}
+.pz-cong-cu .pz-tinh-huong {
+	margin: 0.6rem 0;
+	padding: 0.4rem 0.9rem;
+	border-inline-start: 4px solid var(--sl-color-text-accent);
+	font-style: italic;
+}
+/* Big Five mini: năm nút của thang, một câu mỗi màn */
+.pz-cong-cu .pz-thang {
+	display: grid;
+	gap: 0.45rem;
+}
+.pz-cong-cu .pz-thang .pz-nut {
+	justify-content: flex-start;
+	gap: 0.6rem;
+	margin: 0;
+	border-radius: 0.5rem;
+	text-align: start;
+}
+.pz-cong-cu .pz-thang__so {
+	min-width: 1.2em;
+	font-weight: 800;
+}
+.pz-cong-cu .pz-cau-hoi {
+	margin-bottom: 0.4rem;
+	font-size: 1.12em;
+}
+.pz-cong-cu .pz-thang-diem {
+	padding: 0;
+	list-style: none;
+}
+.pz-cong-cu .pz-thang-diem li {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 0.2rem 0.6rem;
+	align-items: center;
+	margin: 0 0 0.8rem;
+}
+.pz-cong-cu .pz-thang-diem__ten {
+	grid-column: 1 / -1;
+	font-size: var(--sl-text-sm);
+}
+/* trục 4–20, vạch giữa ở 12; chấm là điểm của người dùng */
+.pz-cong-cu .pz-thang-diem__truc {
+	position: relative;
+	height: 0.5rem;
+	margin-inline: 0.5rem;
+	border-radius: 999px;
+	background: var(--pz-border);
+}
+.pz-cong-cu .pz-thang-diem__truc::before {
+	position: absolute;
+	inset-block: -0.3rem;
+	left: 50%;
+	width: 2px;
+	background: var(--sl-color-gray-2);
+	content: '';
+}
+.pz-cong-cu .pz-thang-diem__diem {
+	position: absolute;
+	top: 50%;
+	left: var(--x);
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: var(--pz-accent);
+	transform: translate(-50%, -50%);
+}
+.pz-cong-cu .pz-thang-diem__so {
+	font-size: var(--sl-text-sm);
+	font-weight: 600;
+	white-space: nowrap;
 }
 /* Đang làm bài thử: ẩn nút lên đầu trang và thanh mục lục điện thoại để không che kích thích */
 .pz-running mobile-starlight-toc {

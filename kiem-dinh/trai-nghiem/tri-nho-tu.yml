@@ -1,0 +1,187 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa trai-nghiem/tri-nho-tu
+trang: src/content/docs/trai-nghiem/tri-nho-tu.md
+nguon_cu: ../psyche-zero/docs/trai-nghiem/tri-nho-tu.md
+tang: cong-cu
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l2
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: btb1975
+  ten: 'Baddeley, Thomson & Buchanan (1975), J Verbal Learn Verbal Behav 14, 575–589: toàn văn (PDF, labs.la.utexas.edu/gilden), tóm tắt bài'
+  link: https://labs.la.utexas.edu/gilden/files/2016/03/1-s2.0-S0022537175800454-main.pdf
+  toan_van: true
+- id: oberauer2018
+  ten: 'Oberauer và cộng sự (2018), Psychol Bull 144(9), 885–958: câu trích lấy lại từ hồ sơ đã khóa kiem-dinh/kham-pha/tri-nho/tri-nho-lam-viec.yml (toàn văn, cns.nyu.edu)'
+  link: https://doi.org/10.1037/bul0000153
+  toan_van: true
+- id: miller1956
+  ten: 'Miller (1956), Psychol Rev 63(2), 81–97: theo hồ sơ đã khóa tri-nho-lam-viec.yml (psychclassics)'
+  link: https://psychclassics.yorku.ca/Miller/
+  toan_van: true
+- id: cowan2001
+  ten: 'Cowan (2001), Behav Brain Sci 24(1), 87–114: theo hồ sơ đã khóa tri-nho-lam-viec.yml'
+  link: https://doi.org/10.1017/S0140525X01003922
+  toan_van: true
+- id: melby2013
+  ten: 'Melby-Lervåg & Hulme (2013), Dev Psychol 49(2), 270–291: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/a0028228
+  toan_van: false
+- id: tim-tu-vn
+  ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "word span Vietnamese" (407 kết quả, không có chuẩn word span tiếng Việt trong 8 kết quả đầu); OpenAlex "word span Vietnamese short-term memory": không có'
+  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=word%20span%20Vietnamese
+  toan_van: false
+nhan_dinh:
+- id: s1
+  cau: 'Cách chơi: từ hiện mỗi giây một từ; gõ lại đúng thứ tự, cách nhau dấu cách; bắt đầu 2 từ, mỗi độ dài 2 lượt, dừng khi sai cả hai lượt ở cùng độ dài; 40 danh từ một âm tiết.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/tri-nho-tu.js (QUY_TRINH: 2–12, 900 + 100 ms; TU; trangThaiDoDai dùng chung), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs. Chấm nay chuẩn
+    hóa Unicode NFC (bộ gõ có thể ra dạng tổ hợp) và bỏ dấu câu.'
+- id: n1
+  cau: Theo mô hình của Baddeley, trí nhớ lời nói giữ thông tin bằng nhẩm lặp thầm; dung lượng ước chừng bằng lượng lời đọc được trong khoảng 2 giây; từ dài hơn thì nhớ được ít hơn.
+  loai: phat-hien
+  nguon:
+  - btb1975
+  trich: Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec
+  vi_tri: Tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: "Vòng lặp này chỉ quay được khoảng 2 giây nội dung" như sự thật; nay gắn với mô hình của Baddeley.'
+- id: n2
+  cau: Từ trong công cụ đều một âm tiết như tên chữ số tiếng Việt, nên độ dài trí nhớ từ và chữ số có thể không chênh nhiều; hãy làm cả hai để tự so.
+  loai: phat-hien
+  nguon:
+  - btb1975
+  trich: Memory span is inversely related to word length across a wide range of materials
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "Từ cũng nặng hơn chữ số … nên độ dài trí nhớ từ thường thấp hơn độ dài trí nhớ chữ số" (không tìm được nguồn trong lô; với từ một âm tiết tiếng Việt không chắc đúng). Viết lại thành suy
+    luận từ hiệu ứng độ dài từ. chỗ khó: suy luận chưa được đo trên người Việt; "tên chữ số tiếng Việt một âm tiết" cùng câu với do-dai-tri-nho n16 (D8-L1, chưa chắc).'
+- id: n3
+  cau: 'Miller (1956) "7 ± 2" và Cowan (2001) khoảng 4 "cục": tóm một câu, link trang nhà tri-nho-lam-viec.'
+  loai: phat-hien
+  nguon:
+  - miller1956
+  - cowan2001
+  ket_qua: da-sua
+  ghi_chu: 'miller1956, cowan2001 có trang nhà kham-pha/tri-nho/tri-nho-lam-viec (nghien-cuu.yml): rút hai mục còn một câu link về nhà, giữ id cũ của mục Miller. Bỏ "(dao động 3–5)", "ta nhớ được 6–7 chữ
+    số vì tự động nhóm …".'
+- id: n4
+  cau: 'Baddeley, Thomson và Buchanan (1975): độ dài trí nhớ tỉ lệ nghịch với độ dài từ; khi số âm tiết và âm vị giữ nguyên, từ đọc nhanh hơn được nhớ tốt hơn; số từ nhớ được dự đoán từ số từ đọc được trong
+    khoảng 2 giây; ngăn nhẩm lặp làm hiệu ứng biến mất với trình bày bằng mắt.'
+  loai: phat-hien
+  nguon:
+  - btb1975
+  trich: (1) Memory span is inversely related to word length across a wide range of materials; (2) When number of syllables and number of phonemes are held constant, words of short temporal duration are
+    better recalled than words of long duration; (3) Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec; (4) When articulation is suppressed by
+    requiring the subject to articulate an irrelevant sound, the word length effect disappears with visual presentation
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "Số từ nhớ được xấp xỉ số từ đọc được" thành "dự đoán được từ" (đúng chữ "predicted"); "ngay cả khi … chỉ khác thời lượng đọc" viết lại theo ý (2).'
+- id: n5
+  cau: 'Vững chắc: dãy từ dài thì nhớ được ít hơn dãy từ ngắn; Oberauer và cộng sự (2018) xếp vào nhóm phát hiện ổn định, ở nhiều ngôn ngữ khi độ dài thay đổi bằng số âm tiết; cách giải thích còn bàn.'
+  loai: nhan
+  nguon:
+  - oberauer2018
+  - btb1975
+  trich: Performance in verbal WM tasks decreases with increasing length of the items on a list. This word-length effect is robust when word length is manipulated through the number of syllables. | The
+    syllable-based word-length effect is a key finding for theories of verbal WM and has been observed consistently in various languages. | its interpretation remains controversial
+  vi_tri: Oberauer 2018 (theo hồ sơ tri-nho-lam-viec.yml n22, n26)
+  nhan: vung-chac
+  co_so:
+  - oberauer2018
+  - btb1975
+  ly_do: Tổng quan chuẩn mực của 16 nhà nghiên cứu (Psychol Bull) xếp hiệu ứng độ dài từ theo số âm tiết là phát hiện ổn định ở nhiều ngôn ngữ; cùng nhãn với trang nhà tri-nho-lam-viec (đã khóa).
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "độ dài trí nhớ từ thường thấp hơn chữ số" trong ý chính và "tái lập rộng rãi suốt nửa thế kỷ" (không nguồn). Bỏ phần chữ số (xem n2). Bỏ khung Khá vững "khoảng 4 cụm" (thuộc trang nhà,
+    ở đó là Đang tranh cãi).'
+- id: n6
+  cau: 'Lý thuyết: nhiễu giữa các mục là một cách giải thích khác cho hiệu ứng độ dài từ (Oberauer và cộng sự, 2018); gom nhóm giúp nhớ nhiều hơn (Miller, 1956).'
+  loai: phat-hien
+  nguon:
+  - oberauer2018
+  - miller1956
+  trich: its interpretation remains controversial | we can increase the number of bits of information that it contains simply by building larger and larger chunks
+  vi_tri: hồ sơ tri-nho-lam-viec.yml n26, n52
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "Suy giảm và nhiễu … những từ giống nhau dễ bị nhầm khi gõ lại", "Đây là lý do cùng một người có thể đạt cao hơn" (giữ, giả định minh họa).'
+- id: n7
+  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy số liệu chuẩn nào cho độ dài trí nhớ từ ở người Việt.
+  loai: thoi-su
+  nguon:
+  - tim-tu-vn
+  het_han: '2028-11-01'
+  ket_qua: da-sua
+  ghi_chu: 'Thêm mốc. Europe PMC "word span Vietnamese" (407 kết quả; trong 8 đầu có bộ chuẩn Nguyen và cộng sự 2025, theo D8-L1 không có word span); OpenAlex "word span Vietnamese short-term memory": không
+    có, 17/11/2026.'
+- id: n8
+  cau: Theo hiệu ứng độ dài từ, nếu dùng từ nhiều âm tiết, độ dài trí nhớ của bạn có thể thấp hơn.
+  loai: phat-hien
+  nguon:
+  - btb1975
+  - oberauer2018
+  trich: This word-length effect is robust when word length is manipulated through the number of syllables.
+  vi_tri: Oberauer 2018
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: "điều kiện tốt nhất cho việc nhẩm lặp" (mạnh hơn nguồn).'
+- id: n9
+  cau: 'Ngộ nhận: số mục nhớ được thay đổi theo loại mục; với từ dài nhớ được ít hơn.'
+  loai: phat-hien
+  nguon:
+  - btb1975
+  trich: Memory span is inversely related to word length across a wide range of materials
+  vi_tri: Tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: "7 ± 2 … là ước lượng cho các mục ngắn gọn … thấp hơn rõ rệt".'
+- id: n10
+  cau: 'Ngộ nhận: phân tích tổng hợp 23 nghiên cứu (Melby-Lervåg và Hulme, 2013): luyện trí nhớ làm việc cải thiện ngắn hạn đúng kỹ năng đã luyện, không có bằng chứng thuyết phục là lan sang kỹ năng khác
+    (cả câu hỏi 5).'
+  loai: phat-hien
+  nguon:
+  - melby2013
+  trich: Twenty-three studies with 30 group comparisons met the criteria for inclusion. … the programs produced reliable short-term improvements in working memory skills … there was no convincing evidence
+    of the generalization of working memory training to other skills
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Cũ: "Chưa có bằng chứng … người ta thường chỉ giỏi hơn đúng nhiệm vụ đã luyện" (không nguồn). Thêm nguồn. Câu hỏi 5 mới thay câu hỏi về Cowan (thuộc trang nhà).'
+- id: n11
+  cau: 'Ngộ nhận: một lần đo trên mạng chịu ảnh hưởng của mệt mỏi, mất tập trung, chiến lược nhóm từ, thiết bị; không phải thước đo trí tuệ.'
+  loai: phat-hien
+  nguon: []
+  ket_qua: da-lam-mem
+  ghi_chu: 'Cũ: "Độ dài trí nhớ chỉ là một mảnh nhỏ của nhận thức". Câu chung về đo lường, như do-dai-tri-nho (D8-L1); lượt 2 xem cần nguồn không.'
+- id: n12
+  cau: 'Câu hỏi 1, 2: hiệu ứng độ dài từ, dự đoán từ số từ đọc được trong khoảng 2 giây; câu hỏi 3: chỉ dùng từ một âm tiết để kiểm soát độ dài từ.'
+  loai: phat-hien
+  nguon:
+  - btb1975
+  trich: Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec
+  vi_tri: Tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Câu hỏi 1 cũ hỏi "vì sao độ dài trí nhớ từ thường thấp hơn chữ số" (xem n2): viết lại.'
+doi_chu:
+- cu: Điều gì đang xảy ra? ("vòng lặp chỉ quay được 2 giây", "độ dài từ thường thấp hơn chữ số")
+  moi: gắn với mô hình Baddeley; từ một âm tiết như tên chữ số, hãy tự so
+  ly_do: n1, n2
+- cu: Mục Miller (1956) và mục Cowan (2001)
+  moi: một mục, một câu, link trang nhà (giữ id cũ)
+  ly_do: n3
+- cu: Mục Baddeley và cộng sự (1975)
+  moi: theo tóm tắt bài
+  ly_do: n4
+- cu: Khung Vững chắc, khung Khá vững "khoảng 4 cụm"
+  moi: một khung Vững chắc theo Oberauer 2018
+  ly_do: n5
+- cu: Lý thuyết, Ở Việt Nam, ngộ nhận, câu hỏi 1, 3, 4, 5
+  moi: mốc 11/2026; Melby-Lervåg và Hulme 2013
+  ly_do: n6–n12
+- cu: Nguồn
+  moi: thêm Melby-Lervåg 2013, Oberauer 2018
+  ly_do: n5, n10
