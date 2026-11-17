@@ -442,8 +442,9 @@ test('bản ghi dữ liệu: câu về chính site chỉ ở cấu trúc của s
 	assert.deepEqual(loiHoSo(hs('ngo-nhan/mbti', [vs(['cap'])]), 'du-lieu/ngo-nhan/mbti#cap', ROOT), []);
 	assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang'])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /cần ít nhất một nhận định không phải ve-site/);
 	assert.match(loiHoSo(hs('nghien-cuu/asch', [vs(['trang_nha'])]), 'du-lieu/nghien-cuu/asch', ROOT).join(), /cần ít nhất một nhận định không phải ve-site/);
+	// truong là chuỗi, rỗng, hay có trường lạ: luôn bị từ chối (rỗng thì câu không thuộc phần được khóa: "chưa có nhận định")
 	for (const truong of ['trang', [], ['trang', 'la']])
-		assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs(truong)]), 'du-lieu/ngo-nhan/mbti#trang', ROOT).join(), /không có câu về chính site/, JSON.stringify(truong));
+		assert.ok(loiHoSo(hs('ngo-nhan/mbti', [vs(truong)]), 'du-lieu/ngo-nhan/mbti#trang', ROOT).length > 0, JSON.stringify(truong));
 	for (const t of ['khang_dinh', 'nhan', 'giai_thich', 'nguon'])
 		assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs([t])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /không có câu về chính site/, t);
 	assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang', 'nhan'])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /không có câu về chính site/);
