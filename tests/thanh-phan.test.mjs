@@ -81,7 +81,7 @@ test('::cong-cu: công cụ đã chuyển thành khối có lớp của công c�
 	assert.match(dung('::cong-cu{ten="stroop" blocks="1"}'), /data-blocks="1"/);
 	assert.throws(() => dung('::cong-cu{ten="stroop" mau="do"}'), /công cụ "stroop" không nhận thông số mau/);
 	assert.throws(() => dung('::cong-cu'), /::cong-cu thiếu thuộc tính ten/);
-	assert.match(dung('::cong-cu{ten="nhat-ky"}'), /<p class="pz-chua-chuyen" data-chua-chuyen="nhat-ky"/);
+	assert.match(dung('::cong-cu{ten="khong-co"}'), /<p class="pz-chua-chuyen" data-chua-chuyen="khong-co"/);
 	assert.ok(canTaiScript(dung('::cong-cu{ten="stroop"}')));
 	// mỗi công cụ đã chuyển có module ở src/scripts/cong-cu/ và có trong bộ tải
 	const tai = fs.readFileSync(path.join(ROOT, 'src/scripts/tai.js'), 'utf8');
