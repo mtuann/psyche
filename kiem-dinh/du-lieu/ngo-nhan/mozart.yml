@@ -1,0 +1,74 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/mozart#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/mozart
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'chỗ khó: chưa mở được tóm tắt hay toàn văn của Chabris 1999 (thư ngắn trên Nature) và Pietschnig 2010 (Intelligence); g1, g2 để chưa có kết quả. Câu cuối cũ "Không có bằng chứng nghe Mozart làm tăng trí thông minh lâu dài" thay bằng câu theo tóm tắt Waterhouse 2006. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, không phải trẻ em, và chỉ đo một nhiệm vụ không gian trong thời gian ngắn ngay sau khi nghe nhạc. Các phân tích tổng hợp sau đó (1999, 2010) thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản. Không có bằng chứng nghe Mozart làm tăng trí thông minh lâu dài.'' → mới ''Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, không phải trẻ em, và chỉ đo một nhiệm vụ không gian trong thời gian ngắn ngay sau khi nghe nhạc. Các phân tích tổng hợp sau đó (1999, 2010) thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản. Một bài tổng quan năm 2006 kết luận "hiệu ứng Mozart" không có đủ bằng chứng để làm cơ sở cho việc dạy học.'' | nguon: cũ [''chabris1999'', ''pietschnig2010''] → mới [''chabris1999'', ''pietschnig2010'', ''waterhouse2006'']'
+nguon:
+- id: chabris1999
+  ten: Chabris (1999). Prelude or requiem for the 'Mozart effect'?
+  link: https://doi.org/10.1038/23608
+- id: pietschnig2010
+  ten: 'Pietschnig và cộng sự (2010). Mozart effect–Shmozart effect: A meta-analysis'
+  link: https://doi.org/10.1016/j.intell.2010.03.001
+- id: waterhouse2006
+  ten: 'Waterhouse (2006). Multiple intelligences, the Mozart effect, and emotional intelligence: A critical review'
+  link: https://doi.org/10.1207/s15326985ep4104_1
+nhan_dinh:
+- id: nhan
+  cau: 'Nghe nhạc Mozart làm trẻ thông minh hơn: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - waterhouse2006
+  - pietschnig2010
+  - chabris1999
+  co_so:
+  - waterhouse2006
+  - pietschnig2010
+  - chabris1999
+  ly_do: Hai phân tích tổng hợp (1999, 2010) và tổng quan phê bình 2006 không ủng hộ.
+  ket_qua: null
+  ghi_chu: 'chỗ khó: chỉ mở được tóm tắt của Waterhouse 2006 ("lack adequate empirical support"); hai phân tích tổng hợp chưa đọc được.'
+- id: g1
+  cau: Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, đo một nhiệm vụ không gian ngay sau khi nghe nhạc.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - chabris1999
+  trich: 'Oberleiter & Pietschnig 2023 (PMC9988829): "The topic was introduced in the context of spatial task performance, which supposedly improved after subjects were exposed to the first movement ... of Mozart’s sonata KV448."'
+  ket_qua: null
+  ghi_chu: 'chưa chắc: phần "nhiệm vụ không gian" có nguồn (Oberleiter 2023, chưa có bản ghi nguồn); "sinh viên đại học" chưa mở được bài gốc Rauscher 1993.'
+- id: g2
+  cau: Các phân tích tổng hợp 1999 và 2010 thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - chabris1999
+  - pietschnig2010
+  trich: ''
+  ket_qua: null
+  ghi_chu: 'chưa chắc: Crossref, Europe PMC, OpenAlex, Semantic Scholar đều không có tóm tắt; cần toàn văn.'
+- id: g3
+  cau: Tổng quan năm 2006 kết luận "hiệu ứng Mozart" không có đủ bằng chứng để làm cơ sở cho việc dạy học.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - waterhouse2006
+  trich: these theories lack adequate empirical support and should not be the basis for educational practice
+  ket_qua: da-sua
+  ghi_chu: Câu mới thay câu cuối cũ (xem ghi_chu hồ sơ).

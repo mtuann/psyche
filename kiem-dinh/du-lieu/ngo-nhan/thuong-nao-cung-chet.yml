@@ -1,0 +1,56 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/thuong-nao-cung-chet#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/thuong-nao-cung-chet
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Thí nghiệm của Deci (1971) cho thấy thưởng tiền làm giảm hứng thú nội tại, nhưng lời khen lại làm TĂNG hứng thú. Phân tích tổng hợp sau này xác nhận: nguy cơ “lấn át” chủ yếu đến từ thưởng vật chất gắn với kiểm soát; thưởng bất ngờ hay thưởng bằng lời thường vô hại.'' → mới ''Trong thí nghiệm của Deci (1971), sinh viên từng được trả tiền về sau tự nguyện chơi câu đố ít hơn (khác biệt mới ở mức ý nghĩa lỏng), còn người được khen thì không giảm. Phân tích tổng hợp 128 nghiên cứu (1999) cho thấy rõ hơn: thưởng vật chất hứa trước làm giảm hứng thú tự nguyện, còn lời khen và phản hồi tích cực lại làm tăng hứng thú.'' | nguon: cũ [''deci1971''] → mới [''deci1971'', ''deci1999'']'
+nguon:
+- id: deci1971
+  ten: Deci (1971). Effects of externally mediated rewards on intrinsic motivation
+  link: https://doi.org/10.1037/h0030644
+- id: deci1999
+  ten: Deci và cộng sự (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation
+  link: https://doi.org/10.1037/0033-2909.125.6.627
+nhan_dinh:
+- id: nhan
+  cau: 'Bất kỳ phần thưởng nào cũng giết chết đam mê: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - deci1999
+  co_so:
+  - deci1999
+  ly_do: 'Cùng phân tích tổng hợp: phản hồi tích cực tăng hứng thú (d = 0,33); trang nhà thuong-va-dong-luc (đã khóa) có khung kha-vung[không phải mọi loại thưởng đều hại].'
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: trang nhà xếp ý ngược lại ("không phải mọi loại thưởng đều hại") là Khá vững; thẻ xếp khẳng định tuyệt đối là Đã bị bác bỏ.'
+- id: g1
+  cau: 'Deci 1971: nhóm được trả tiền về sau tự nguyện chơi ít hơn (p < 0,10); nhóm được khen không giảm.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - deci1971
+  trich: 'Trang nhà (đã khóa): "nhóm từng được trả tiền dành ít thời gian tự nguyện cho câu đố hơn lúc đầu ... Với chỉ 12 người mỗi nhóm, khác biệt này mới ở mức ý nghĩa thống kê lỏng (p < 0,10) ... nhóm được khen không giảm thời gian tự nguyện"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "lời khen lại làm TĂNG hứng thú": trang nhà viết "có xu hướng tăng"; thêm mức ý nghĩa lỏng.'
+- id: g2
+  cau: 'Deci 1999 (128 nghiên cứu): thưởng vật chất trông đợi làm giảm hứng thú tự nguyện; phản hồi tích cực làm tăng (d = 0,33).'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - deci1999
+  trich: all tangible rewards, and all expected rewards ... undermined free-choice intrinsic motivation ... Positive feedback enhanced both free-choice behavior (d = 0.33) and self-reported interest (d = 0.31).
+  ket_qua: da-sua
+  ghi_chu: 'Bỏ "thưởng bất ngờ hay thưởng bằng lời thường vô hại" và "gắn với kiểm soát": giữ điều tóm tắt nói.'

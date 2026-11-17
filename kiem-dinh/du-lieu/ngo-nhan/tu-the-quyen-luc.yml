@@ -1,0 +1,68 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/tu-the-quyen-luc#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/tu-the-quyen-luc
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Một nghiên cứu tái lập với 200 người không thấy thay đổi testosterone, cortisol hay hành vi chấp nhận rủi ro. Năm 2016, tác giả chính của nghiên cứu gốc tuyên bố bà không còn tin hiệu ứng này là thật. Có thể có một hiệu ứng nhỏ lên cảm giác tự tin tự báo cáo, nhưng phần này vẫn đang tranh cãi.'' → mới ''Một nghiên cứu tái lập với cỡ mẫu lớn (2015) không thấy "tư thế quyền lực" làm thay đổi hormone hay mức chấp nhận rủi ro. Năm 2016, tác giả chính của nghiên cứu gốc viết rằng bà không còn tin hiệu ứng này là thật, và thừa nhận phần đo cảm giác quyền lực tự báo cáo trong bài gốc đã được chọn theo kết quả.'''
+nguon:
+- id: ranehill2015
+  ten: 'Ranehill và cộng sự (2015). Assessing the robustness of power posing: No effect on hormones and risk tolerance in a large sample of men and women'
+  link: https://doi.org/10.1177/0956797614553946
+- id: carney2016
+  ten: Carney (2016). My position on "Power Poses"
+  link: https://faculty.haas.berkeley.edu/dana_carney/pdf_my%20position%20on%20power%20poses.pdf
+  toan_van: true
+nhan_dinh:
+- id: nhan
+  cau: '"Tư thế quyền lực" làm tăng testosterone và dám mạo hiểm hơn: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - ranehill2015
+  - carney2016
+  co_so:
+  - ranehill2015
+  - carney2016
+  ly_do: Tái lập cỡ mẫu lớn không thấy tác dụng lên hormone và chấp nhận rủi ro; tác giả chính của bài gốc rút lại niềm tin vào hiệu ứng ("The evidence against the existence of power poses is undeniable").
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: một tái lập lớn (không rõ đăng ký trước) cộng tuyên bố của tác giả gốc; thước đo "Đã bị bác bỏ" cần các kiểm tra đủ mạnh liên tục thất bại.'
+- id: g1
+  cau: 'Ranehill và cộng sự (2015), mẫu lớn nam và nữ: không thấy tác dụng lên hormone và mức chấp nhận rủi ro.'
+  loai: tai-lap
+  truong:
+  - giai_thich
+  nguon:
+  - ranehill2015
+  trich: 'Tên bài: "Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "với 200 người ... testosterone, cortisol": không mở được tóm tắt hay toàn văn (nhà xuất bản ẩn tóm tắt), chỉ giữ điều tên bài nói.'
+- id: g2
+  cau: Năm 2016, Dana Carney viết bà không còn tin hiệu ứng tư thế quyền lực là thật.
+  loai: lich-su
+  truong:
+  - giai_thich
+  nguon:
+  - carney2016
+  trich: As such, I do not believe that “power pose” effects are real.
+  ket_qua: dung
+- id: g3
+  cau: Carney thừa nhận phần đo cảm giác quyền lực tự báo cáo trong bài gốc đã được chọn theo kết quả.
+  loai: lich-su
+  truong:
+  - giai_thich
+  nguon:
+  - carney2016
+  trich: The self-report DV was p-hacked in that many different power questions were asked and those chosen were the ones that “worked.”
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "Có thể có một hiệu ứng nhỏ lên cảm giác tự tin tự báo cáo, nhưng phần này vẫn đang tranh cãi": chưa có nguồn; thay bằng điều Carney viết.'

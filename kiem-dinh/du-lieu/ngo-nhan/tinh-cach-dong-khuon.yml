@@ -1,0 +1,64 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/tinh-cach-dong-khuon#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/tinh-cach-dong-khuon
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Câu cũ gán phát hiện "mức trung bình dịch chuyển" cho phân tích 152 nghiên cứu (Roberts & DelVecchio 2000, về ổn định thứ hạng); đúng ra là Roberts, Walton & Viechtbauer 2006 (thêm nguồn). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp 152 nghiên cứu cho thấy thứ hạng tính cách giữa các cá nhân ổn định dần theo tuổi, nhưng mức trung bình vẫn dịch chuyển suốt tuổi trưởng thành: người ta có xu hướng tận tâm, dễ chịu và ổn định cảm xúc hơn theo năm tháng. “Đóng khuôn như thạch cao” chỉ đúng một nửa.'' → mới ''Phân tích tổng hợp 152 nghiên cứu dọc (2000) cho thấy thứ hạng tính cách giữa các cá nhân ổn định dần theo tuổi nhưng không bao giờ cố định hẳn. Mức trung bình cũng dịch chuyển: phân tích tổng hợp 92 mẫu (2006) thấy người ta tận tâm hơn và ổn định cảm xúc hơn, nhất là ở tuổi 20–40. "Đóng khuôn như thạch cao" chỉ đúng một phần.'' | nguon: cũ [''roberts2000''] → mới [''roberts2000'', ''roberts2006'']'
+nguon:
+- id: roberts2000
+  ten: 'Roberts và cộng sự (2000). The rank-order consistency of personality traits from childhood to old age: A quantitative review of longitudinal studies'
+  link: https://doi.org/10.1037/0033-2909.126.1.3
+- id: roberts2006
+  ten: 'Roberts và cộng sự (2006). Patterns of mean-level change in personality traits across the life course: A meta-analysis of longitudinal studies'
+  link: https://doi.org/10.1037/0033-2909.132.1.1
+nhan_dinh:
+- id: nhan
+  cau: 'Tính cách đóng khuôn sau 30, không đổi được nữa: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - roberts2000
+  - roberts2006
+  co_so:
+  - roberts2000
+  - roberts2006
+  ly_do: 'Trang nhà tinh-cach-thay-doi (đã khóa): ổn định thứ hạng tăng nhưng chưa tới mức tuyệt đối (~.74 ở 50–70; vững chắc), mức trung bình dịch chuyển (khá vững).'
+  ket_qua: dung
+- id: g1
+  cau: 'Roberts & DelVecchio 2000 (152 nghiên cứu dọc): ổn định thứ hạng tăng theo tuổi (.31 thơ ấu → .64 tuổi 30 → ~.74 tuổi 50–70).'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - roberts2000
+  trich: 'Trang nhà (đã khóa): ".31 (thơ ấu) → .54 (đại học) → .64 (tuổi 30) → ~.74 (50–70)"'
+  ket_qua: da-sua
+  ghi_chu: Thêm "nhưng không bao giờ cố định hẳn" (hệ số dưới 1).
+- id: g2
+  cau: 'Roberts 2006 (92 mẫu): tận tâm và ổn định cảm xúc tăng, nhất là ở tuổi 20–40.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - roberts2006
+  trich: 'Trang nhà: "Phân tích tổng hợp 92 mẫu của Roberts, Walton và Viechtbauer (2006) thấy tận tâm và ổn định cảm xúc tăng, nhất là ở tuổi 20–40"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ gán cho bài 152 nghiên cứu và nói thêm "dễ chịu": viết theo trang nhà.'
+- id: trang
+  cau: Bài liên quan của thẻ là kham-pha/tinh-cach/tinh-cach-thay-doi
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa.

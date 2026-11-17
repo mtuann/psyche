@@ -13,6 +13,7 @@ const LUAT = [
 	['.pz-ao-giac', () => import('./cong-cu/ao-giac.js'), false],
 	['.pz-mu-thay-doi', () => import('./cong-cu/mu-thay-doi.js'), false],
 	['.pz-ebbinghaus', () => import('./cong-cu/ebbinghaus.js'), false],
+	['.pz-ngo-nhan', () => import('./cong-cu/ngo-nhan.js'), false],
 ];
 const LE = 600;
 const cho = new Map(); // phần tử đang chờ tới gần màn hình -> hàm khởi tạo (trả về promise)

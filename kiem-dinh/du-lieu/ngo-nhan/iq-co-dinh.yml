@@ -1,0 +1,61 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/iq-co-dinh#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/iq-co-dinh
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp 42 bộ dữ liệu với hơn 600.000 người năm 2018 cho thấy mỗi năm đi học thêm giúp tăng khoảng 1–5 điểm IQ, và hiệu ứng này kéo dài suốt đời. Gen có ảnh hưởng lớn đến trí tuệ, nhưng “cố định bất biến” thì không đúng.'' → mới ''Thứ bậc tương đối (ai cao hơn ai) khá ổn định và càng ổn định khi lớn tuổi; nhưng điểm của cả một thế hệ có thể tăng (hiệu ứng Flynn), và phân tích tổng hợp 42 bộ dữ liệu với hơn 600.000 người (2018) ước tính mỗi năm đi học thêm làm điểm IQ tăng khoảng 1–5 điểm. Gen có ảnh hưởng lớn đến trí tuệ, nhưng "sinh ra sao cả đời vậy" thì không đúng.'' | trang: cũ None → mới ''kham-pha/tri-tue/tri-tue-la-gi'''
+nguon:
+- id: ritchie2018
+  ten: Ritchie và cộng sự (2018). How much does education improve intelligence? A meta-analysis
+  link: https://doi.org/10.1177/0956797618774253
+  toan_van: true
+nhan_dinh:
+- id: nhan
+  cau: 'IQ cố định, sinh ra sao cả đời vậy: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - ritchie2018
+  co_so:
+  - ritchie2018
+  ly_do: 'Phân tích tổng hợp 142 hiệu ứng (bán thực nghiệm): đi học thêm tăng IQ; trang nhà tri-tue-la-gi (đã khóa) gọi "IQ là cố định cả đời" là ngộ nhận "nửa đúng, nửa sai".'
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: trang nhà viết "nửa đúng, nửa sai" (thứ bậc khá ổn định); thẻ giữ Đã bị bác bỏ cho vế tuyệt đối "sinh ra sao cả đời vậy".'
+- id: g1
+  cau: Thứ bậc tương đối khá ổn định và càng ổn định khi lớn; điểm cả thế hệ có thể tăng (Flynn).
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - ritchie2018
+  trich: 'Trang nhà (đã khóa): "Thứ bậc tương đối (ai cao hơn ai) khá ổn định và càng ổn định khi lớn tuổi; nhưng điểm tuyệt đối của cả thế hệ có thể tăng (hiệu ứng Flynn)"'
+  ket_qua: da-sua
+  ghi_chu: Câu mới theo trang nhà.
+- id: g2
+  cau: 'Ritchie 2018: 142 hiệu ứng từ 42 bộ dữ liệu, hơn 600.000 người; mỗi năm học thêm khoảng 1–5 điểm IQ.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - ritchie2018
+  trich: Across 142 effect sizes from 42 data sets involving over 600,000 participants, we found consistent evidence for beneficial effects of education on cognitive abilities of approximately 1 to 5 IQ points for an additional year of education.
+  ket_qua: da-sua
+  ghi_chu: Bỏ "hiệu ứng này kéo dài suốt đời" (tóm tắt chỉ nói "persisted ...", chưa đọc đủ).
+- id: trang
+  cau: Bài liên quan của thẻ là kham-pha/tri-tue/tri-tue-la-gi
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang đã khóa, có ngộ nhận "IQ là cố định cả đời" và Ritchie 2018.

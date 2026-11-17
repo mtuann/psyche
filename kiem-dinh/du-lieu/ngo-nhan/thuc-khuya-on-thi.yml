@@ -1,0 +1,60 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/thuc-khuya-on-thi#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/thuc-khuya-on-thi
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'chỗ khó: sửa khẳng định "Thức khuya ôn thi giúp nhớ bài lâu hơn": trang nhà ngu-va-tri-nho (đã khóa) xếp "thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn" vào Đã bị bác bỏ và ghi rõ "Các nghiên cứu này không kiểm tra việc dùng đêm thức để học thêm". Thí nghiệm 2 thiết kế trong-nhóm, nên bỏ chữ "nhóm". Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). khang_dinh: cũ ''Thức khuya ôn thi giúp nhớ bài lâu hơn.'' → mới ''Học xong mà thức trắng đêm thay vì đi ngủ thì cũng không ảnh hưởng gì đến việc nhớ bài.'' | giai_thich: cũ ''Trong thí nghiệm của Gais và cộng sự (2006), nhóm học buổi tối rồi đi ngủ nhớ tốt hơn hẳn nhóm thức trắng đêm khi kiểm tra sau 48 giờ — dù cả hai đã được ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ; thức khuya chính là bỏ đi cơ hội đó.'' → mới ''Trong thí nghiệm của Gais và cộng sự (2006), học sinh học từ vựng buổi tối rồi đi ngủ nhớ được nhiều từ hơn hẳn so với khi chính họ thức trắng đêm sau khi học, ở bài kiểm tra 48 giờ sau, dù đã được ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ. Nghiên cứu này không so việc dùng đêm thức để học thêm với việc đi ngủ.'''
+nguon:
+- id: gais2006
+  ten: Gais và cộng sự (2006). Sleep after learning aids memory recall
+  link: https://doi.org/10.1101/lm.132106
+nhan_dinh:
+- id: nhan
+  cau: 'Thức trắng đêm thay vì ngủ sau khi học không ảnh hưởng gì đến việc nhớ bài: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - gais2006
+  co_so:
+  - gais2006
+  ly_do: Khớp khung bac-bo của trang nhà ngu-va-tri-nho (đã khóa), dựa trên Gais 2006 và phân tích tổng hợp Berres & Erdfelder 2021.
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+- id: g1
+  cau: 'Gais 2006 (trong-nhóm, 14 học sinh): ngủ đêm sau khi học nhớ nhiều từ hơn so với thức trắng, kiểm tra sau 48 giờ, dù đã ngủ bù.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - gais2006
+  trich: 'Trang nhà: "Thí nghiệm 2 (14 học sinh nam, cũng thiết kế trong-nhóm ...) ... Cả hai điều kiện được kiểm tra 48 giờ sau khi học ... người tham gia nhớ rõ ràng nhiều từ hơn khi đã ngủ ... Tác hại của việc thức trắng vẫn còn đó sau khi đã ngủ bù"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "nhóm học buổi tối rồi đi ngủ ... nhóm thức trắng": thiết kế trong-nhóm.'
+- id: g2
+  cau: Nghiên cứu không so việc dùng đêm thức để học thêm với đi ngủ.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - gais2006
+  trich: 'Trang nhà: "Các nghiên cứu này không kiểm tra việc dùng đêm thức để học thêm: câu hỏi ấy chưa có câu trả lời ở đây."'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "thức khuya chính là bỏ đi cơ hội đó": mạnh hơn nguồn.'
+- id: trang
+  cau: Bài liên quan của thẻ là kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa.

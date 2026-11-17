@@ -132,6 +132,9 @@ export const CONG_CU = {
 	'ao-giac': { lop: 'pz-ao-giac', thongSo: [] },
 	'mu-thay-doi': { lop: 'pz-mu-thay-doi', thongSo: [] },
 	ebbinghaus: { lop: 'pz-ebbinghaus', thongSo: [] },
+	// trò chơi "Bạn nghĩ gì về tâm trí?" (D8-L3): limit (số thẻ mỗi lượt), level (chỉ thẻ có cap từ 1 đến level), như
+	// data-limit, data-level của site cũ; thẻ lấy từ src/data/ngo-nhan.yml lúc build (duLieuNgoNhan), nhúng vào data-the
+	'ngo-nhan': { lop: 'pz-ngo-nhan', thongSo: ['limit', 'level'], duLieu: 'ngo-nhan' },
 };
 
 /** Ô "chưa chuyển" cho công cụ, hình chưa có trên site mới; chỉ dùng được ở trang chưa khóa (D1.6 chặn). */
@@ -145,7 +148,7 @@ export function chuaChuyen(loai, ten, trang) {
  * (khoảng 600 px). Thông số khác là data-* của khối (như site cũ). Kết quả lưu trong trình duyệt, khóa "psyche-zero"
  * như site cũ (src/scripts/cong-cu/chung/luu.js).
  */
-export function congCu({ ten, ...thongSo }, trang) {
+export function congCu({ ten, ...thongSo }, trang, duLieu = {}) {
 	const cc = CONG_CU[ten];
 	if (!cc) return chuaChuyen('công cụ', ten, trang);
 	const la = Object.keys(thongSo).filter((k) => !cc.thongSo.includes(k));
@@ -153,7 +156,13 @@ export function congCu({ ten, ...thongSo }, trang) {
 	const data = Object.entries(thongSo)
 		.map(([k, v]) => ` data-${k}="${esc(v)}"`)
 		.join('');
-	return `<div class="pz-cong-cu ${cc.lop} not-content" data-cong-cu="${ten}"${data} data-pagefind-ignore></div>`;
+	// công cụ dựng từ dữ liệu (trò chơi ngộ nhận): dữ liệu lúc build, dạng JSON trong data-the
+	let them = '';
+	if (cc.duLieu) {
+		if (!duLieu[cc.duLieu]) throw new Error(`công cụ "${ten}" cần dữ liệu "${cc.duLieu}" lúc build`);
+		them = ` data-the="${esc(JSON.stringify(duLieu[cc.duLieu]()))}"`;
+	}
+	return `<div class="pz-cong-cu ${cc.lop} not-content" data-cong-cu="${ten}"${data}${them} data-pagefind-ignore></div>`;
 }
 
 // ---------- Hình ----------
@@ -301,4 +310,81 @@ export function congCuNoiBat({ banGhi, trangCo, docsDir, base }) {
 	const ds = banGhi.filter((r) => r.tang === 'cong-cu' && co.has(r.id) && !r.id.endsWith('/index'));
 	if (!ds.length) return `<p class="pz-ds-bai__con not-content">Công cụ tự trải nghiệm lên site sau khi số liệu trong công cụ được kiểm chứng lại.</p>`;
 	return `<div class="pz-ds-bai not-content"><ul>${ds.map((r) => mucBai(r.id, docsDir, base)).join('')}</ul></div>`;
+}
+
+// ---------- Thẻ ngộ nhận (D8-L3): trang Ngộ nhận và trò chơi "Bạn nghĩ gì về tâm trí?" ----------
+// Dữ liệu một chỗ: src/data/ngo-nhan.yml (khóa từng thẻ, kiem-dinh/du-lieu/ngo-nhan/<id>.yml). Cả trang lẫn trò chơi chỉ
+// dùng thẻ có trong bản build: bản xem mọi thẻ; bản thật chỉ thẻ đã khóa đủ các trường hiện ra (TRUONG_THE). Chữ của thẻ
+// là chữ thường (không Markdown), thoát HTML khi dựng.
+
+/** Trường của thẻ hiện ra trên trang và trong trò chơi: thẻ chỉ lên bản thật khi mọi trường này đã khóa. */
+export const TRUONG_THE = ['khang_dinh', 'nhan', 'giai_thich', 'nguon'];
+
+/** Đáp án của trò chơi theo nhãn (như site cũ): Vững chắc, Khá vững là Đúng; Đã bị bác bỏ là Sai; Đang tranh cãi là Còn tranh cãi. */
+export const DAP_AN_NHAN = { 'vung-chac': 'dung', 'kha-vung': 'dung', 'bac-bo': 'sai', 'tranh-cai': 'tranh-cai' };
+
+/** Một nguồn dạng chữ thường (cho trò chơi): tác giả (năm). Tên. Nơi đăng. Link riêng. */
+export function chuNguon(r) {
+	const cham = (s) => (/[.?!]$/.test(s) ? s : s + '.');
+	return { chu: `${cham(r.tac_gia)} (${r.nam}). ${cham(r.ten)}${r.noi_dang ? ` ${cham(r.noi_dang)}` : ''}`, link: r.doi ? `https://doi.org/${r.doi}` : (r.url ?? null) };
+}
+
+/**
+ * Thẻ có trong bản build, theo thứ tự của ngo-nhan.yml: { the, con } (con: số thẻ chưa lên). `coThe(id)`: thẻ đã khóa đủ
+ * TRUONG_THE chưa (bản xem: luôn có).
+ */
+export function theTrongBan(ngoNhan, coThe) {
+	const the = ngoNhan.filter((r) => coThe(r.id));
+	return { the, con: ngoNhan.length - the.length };
+}
+
+/** Bài liên quan của thẻ: { link, ten } khi trang ấy có trong bản build, không thì null. */
+function baiLienQuan(r, { trangCo, docsDir, base }) {
+	if (!r.trang || !trangCo.includes(r.trang)) return null;
+	return { link: diaChi(r.trang, base), ten: frontmatter(r.trang, docsDir).title ?? r.trang };
+}
+
+/** Dữ liệu của trò chơi: thẻ trong bản build, nguồn dạng chữ, bài liên quan. Tên trường ngắn để khối nhẹ. */
+export function duLieuNgoNhan({ ngoNhan, nguon, coThe, trangCo, docsDir, base }) {
+	const theoId = new Map(nguon.map((r) => [r.id, r]));
+	return theTrongBan(ngoNhan, coThe).the.map((r) => ({
+		id: r.id,
+		cap: r.cap,
+		k: r.khang_dinh,
+		n: r.nhan,
+		g: r.giai_thich,
+		ng: r.nguon.map((id) => chuNguon(theoId.get(id))),
+		bai: baiLienQuan(r, { trangCo, docsDir, base }),
+	}));
+}
+
+/**
+ * ::ngo-nhan{nhan="bac-bo"}: các thẻ mang một nhãn, mỗi thẻ một khung nhãn (như :::bac-bo[…]): khẳng định là ý chính,
+ * giải thích, bài liên quan (khi trang ấy có trong bản build), nguồn (APA, từ nguon.yml). Thẻ chưa lên bản build: một
+ * dòng "Còn N thẻ … sắp có".
+ */
+export function trangNgoNhan({ nhan }, { ngoNhan, nguon, coThe, trangCo, docsDir, base }) {
+	if (!TEN_NHAN[nhan]) throw new Error(`::ngo-nhan: nhan phải là một trong ${Object.keys(TEN_NHAN).join(', ')}`);
+	const theoId = new Map(nguon.map((r) => [r.id, r]));
+	const cua = ngoNhan.filter((r) => r.nhan === nhan);
+	if (!cua.length) throw new Error(`::ngo-nhan: không có thẻ nào mang nhãn ${nhan} trong src/data/ngo-nhan.yml (bỏ mục này khỏi trang)`);
+	const { the, con } = theTrongBan(cua, coThe);
+	const ten = TEN_NHAN[nhan];
+	const khung = (r) => {
+		const bai = baiLienQuan(r, { trangCo, docsDir, base });
+		return (
+			`<aside class="pz-nhan pz-nhan--${nhan} pz-the-nn" id="the-${esc(r.id)}" aria-label="${esc(`${ten}: ${r.khang_dinh}`)}">` +
+			`<p class="pz-nhan__dau"><span class="pz-nhan__muc">${ten}</span><span class="pz-an">: </span><span class="pz-nhan__y">${esc(r.khang_dinh)}</span></p>` +
+			`<p>${esc(r.giai_thich)}</p>` +
+			(bai ? `<p>Đọc thêm: <a href="${bai.link}">${esc(bai.ten)}</a></p>` : '') +
+			`<p class="pz-the-nn__nguon"><em>Nguồn:</em> ${r.nguon.map((id) => dongNguon(theoId.get(id))).join('; ')}</p>` +
+			`</aside>`
+		);
+	};
+	return (
+		`<div class="pz-ds-the">` +
+		the.map(khung).join('') +
+		(con ? `<p class="pz-ds-bai__con">${the.length ? 'Còn' : 'Có'} ${con} thẻ mang nhãn ${ten} sắp có: mỗi thẻ lên site sau khi được kiểm chứng lại.</p>` : '') +
+		`</div>`
+	);
 }

@@ -1,0 +1,84 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/mbti#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/mbti
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Việc treo của kế hoạch: câu cũ "Big Five ... có bằng chứng dự báo tốt hơn" lệch trang MBTI (đã khóa, n24: "chưa có so sánh trực tiếp hai khung"); đã sửa cho khớp. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Các đặc điểm tính cách phân bố liên tục, phần đông mọi người ở gần giữa. Chia đôi thành "loại" làm mất thông tin và khiến kết quả kém ổn định: nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu dùng mô hình Big Five, đo theo các chiều liên tục và có bằng chứng dự báo tốt hơn.'' → mới ''Điểm của MBTI phân bố liên tục, không chia thành hai cụm, nên cắt đôi mỗi thang ở điểm giữa thành "loại" làm mất thông tin: hai người có điểm sát vạch nhận hai nhãn trái ngược, và nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu thường dùng mô hình Big Five, đo theo các chiều liên tục; Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương (chưa có nghiên cứu so sánh trực tiếp hai khung).'' | nguon: cũ [''pittenger1993'', ''pittenger2005''] → mới [''pittenger1993'', ''pittenger2005'', ''mccrae1989'', ''barrick1991''] | trang: cũ None → mới ''kham-pha/tinh-cach/mbti'''
+nguon:
+- id: pittenger1993
+  ten: Pittenger (1993). The utility of the Myers-Briggs Type Indicator
+  link: https://doi.org/10.3102/00346543063004467
+- id: pittenger2005
+  ten: Pittenger (2005). Cautionary comments regarding the Myers-Briggs Type Indicator
+  link: https://doi.org/10.1037/1065-9293.57.3.210
+- id: mccrae1989
+  ten: McCrae và cộng sự (1989). Reinterpreting the Myers-Briggs Type Indicator from the perspective of the five-factor model of personality
+  link: https://doi.org/10.1111/j.1467-6494.1989.tb00759.x
+- id: barrick1991
+  ten: 'Barrick và cộng sự (1991). The Big Five personality dimensions and job performance: A meta-analysis'
+  link: https://doi.org/10.1111/j.1744-6570.1991.tb00688.x
+nhan_dinh:
+- id: nhan
+  cau: 'MBTI là công cụ khoa học đáng tin để xếp mỗi người vào một trong 16 "loại": đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - mccrae1989
+  - pittenger2005
+  - pittenger1993
+  co_so:
+  - mccrae1989
+  - pittenger2005
+  - pittenger1993
+  ly_do: 'Khớp trang nhà mbti (đã khóa, n22: Bác bỏ "con người thuộc về một trong 16 loại rời rạc"; co_so mccrae1989, pittenger2005, pittenger1993, haslam2012).'
+  ket_qua: dung
+- id: g1
+  cau: Điểm MBTI phân bố liên tục, không thành hai cụm; cắt đôi tại điểm giữa làm mất thông tin, hai người sát vạch nhận hai nhãn trái ngược.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - pittenger2005
+  - mccrae1989
+  trich: 'converting continuous interval or ratio scaled scores to an ordinal or nominal scale removes important information (Pittenger 2005; hồ sơ trang nhà n3); McCrae & Costa 1989: no support for ... truly dichotomous preferences or qualitatively distinct types'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "phần đông mọi người ở gần giữa": trang nhà nói phân bố liên tục, không hai cụm; viết theo trang nhà.'
+- id: g2
+  cau: Nhiều người nhận loại khác khi làm lại sau vài tuần.
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - pittenger1993
+  - pittenger2005
+  trich: 'Hồ sơ trang nhà n1, n10: "50% of the subjects were reclassified on one or more of the four scales" sau 5 tuần; "35% of individuals had a different four-letter type score after a 4-week interval"'
+  ket_qua: dung
+- id: g3
+  cau: Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương; chưa có so sánh trực tiếp hai khung.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - barrick1991
+  - pittenger2005
+  trich: 'Hồ sơ trang nhà n24 (Khá vững): "Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương ... Chưa có so sánh trực tiếp hai khung trong cùng nghiên cứu."'
+  ket_qua: da-sua
+  ghi_chu: Cũ "có bằng chứng dự báo tốt hơn" (việc treo của kế hoạch); viết theo trang nhà.
+- id: trang
+  cau: Bài liên quan của thẻ là kham-pha/tinh-cach/mbti
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa, bàn đúng khẳng định này; thẻ cũ chưa có link.

@@ -1,0 +1,66 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/can-kiet-y-chi#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/can-kiet-y-chi
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Hàng trăm nghiên cứu nhỏ từng ủng hộ ý này. Nhưng hai dự án tái lập lớn, đăng ký trước, với 2.141 người ở 23 phòng thí nghiệm (2016) và 3.531 người ở 36 phòng thí nghiệm (2021, do chính một nhà nghiên cứu ủng hộ lý thuyết dẫn đầu) đều thấy hiệu ứng gần bằng 0. Người ủng hộ cho rằng cách gây "cạn kiệt" trong các thử nghiệm này quá yếu. Hiện nay, nếu có hiệu ứng thì nó rất nhỏ.'' → mới ''Một phân tích tổng hợp trước đây từng thấy hiệu ứng ở mức vừa. Nhưng hai dự án tái lập lớn, đăng ký trước, với 2.141 người ở 23 phòng thí nghiệm (2016) và 3.531 người ở 36 phòng thí nghiệm (2021) đều thấy hiệu ứng gần bằng 0 (d = 0,04 và 0,06). Hiện nay, nếu có hiệu ứng thì nó rất nhỏ.'''
+nguon:
+- id: hagger2016
+  ten: Hagger và cộng sự (2016). A multilab preregistered replication of the ego-depletion effect
+  link: https://doi.org/10.1177/1745691616652873
+- id: vohs2021
+  ten: Vohs và cộng sự (2021). A multisite preregistered paradigmatic test of the ego-depletion effect
+  link: https://doi.org/10.1177/0956797621989733
+nhan_dinh:
+- id: nhan
+  cau: '"Cạn kiệt ý chí": đang tranh cãi.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: tranh-cai
+  nguon:
+  - hagger2016
+  - vohs2021
+  co_so:
+  - hagger2016
+  - vohs2021
+  ly_do: 'Hai tái lập lớn đăng ký trước không thấy hiệu ứng (thước đo mục 4: tái lập lớn có đăng ký trước thất bại); khớp ví dụ trong khung tranh-cai của bat-dau/doc-nhan-chac-chan và bảng của bang-chung/do-lon-hieu-ung (đã khóa).'
+  ket_qua: dung
+- id: g1
+  cau: Một phân tích tổng hợp trước đây từng thấy hiệu ứng ở mức vừa.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - hagger2016
+  trich: Although a meta-analysis of ego-depletion experiments found a medium-sized effect, subsequent meta-analyses have questioned the size and existence of the effect
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "Hàng trăm nghiên cứu nhỏ từng ủng hộ ý này": không có số trong nguồn đã mở.'
+- id: g2
+  cau: 'Tái lập 2016: 23 phòng thí nghiệm, 2.141 người, d = 0,04 (khoảng tin cậy chứa 0).'
+  loai: tai-lap
+  truong:
+  - giai_thich
+  nguon:
+  - hagger2016
+  trich: Multiple laboratories (k = 23, total N = 2,141) ... (d = 0.04, 95% CI [-0.07, 0.15]
+  ket_qua: dung
+- id: g3
+  cau: 'Tái lập 2021: 36 phòng thí nghiệm, 3.531 người, d = 0,06, không có ý nghĩa.'
+  loai: tai-lap
+  truong:
+  - giai_thich
+  nguon:
+  - vohs2021
+  trich: preregistered multilaboratory project (k = 36; N = 3,531) ... Confirmatory tests found a nonsignificant result (d = 0.06)
+  ket_qua: da-sua
+  ghi_chu: 'Bỏ "do chính một nhà nghiên cứu ủng hộ lý thuyết dẫn đầu" và câu "Người ủng hộ cho rằng cách gây cạn kiệt quá yếu": chưa có nguồn mở được.'

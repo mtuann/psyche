@@ -1,0 +1,58 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/khen-thong-minh#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/khen-thong-minh
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'chỗ khó: đổi nhãn Đã bị bác bỏ → Đang tranh cãi: tìm thấy lần làm lại sát của Li & Bates 2019 (624 trẻ, nghiên cứu 1 làm lại Mueller & Dweck 1998) không thấy hiệu ứng ở các thước đo động lực. Bỏ chi tiết "nói dối về điểm số" (không có trong tóm tắt, chưa mở toàn văn). Đáp án trò chơi đổi từ Sai sang Còn tranh cãi. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). nhan: cũ ''bac-bo'' → mới ''tranh-cai'' | giai_thich: cũ ''Trong loạt 6 thí nghiệm năm 1998, trẻ được khen “con thông minh quá” có xu hướng chọn bài dễ để giữ hình ảnh, bỏ cuộc sớm khi gặp khó và nói dối về điểm số nhiều hơn nhóm được khen nỗ lực. Khen vào quá trình (“con đã thử nhiều cách”) nuôi tư duy cầu tiến; khen vào “bản chất” thông minh thì cho kết quả ngược lại.'' → mới ''Trong 6 thí nghiệm năm 1998 với học sinh lớp 5, sau một lần thất bại, trẻ từng được khen "thông minh" kém bền bỉ, kém thích thú và làm bài kém hơn trẻ được khen nỗ lực. Nhưng một lần làm lại sát thí nghiệm này ở trẻ Trung Quốc 9–13 tuổi (2019) không thấy khác biệt ở cả 8 thước đo động lực và cách giải thích thất bại, chỉ thấy một khác biệt sát ngưỡng ở điểm làm bài. Khen thế nào là tốt nhất vẫn đang được nghiên cứu.'' | nguon: cũ [''mueller1998''] → mới [''mueller1998'', ''li2019'']'
+nguon:
+- id: mueller1998
+  ten: Mueller và cộng sự (1998). Praise for intelligence can undermine children's motivation and performance
+  link: https://doi.org/10.1037/0022-3514.75.1.33
+- id: li2019
+  ten: 'Li và cộng sự (2019). You can’t change your basic ability, but you work at things, and that’s how we get hard things done: Testing the role of growth mindset on response to setbacks, educational attainment, and cognitive ability'
+  link: https://doi.org/10.1037/xge0000669
+nhan_dinh:
+- id: nhan
+  cau: 'Khen trẻ "thông minh" giúp trẻ tự tin và học giỏi hơn: đang tranh cãi.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: tranh-cai
+  nguon:
+  - mueller1998
+  - li2019
+  co_so:
+  - mueller1998
+  - li2019
+  ly_do: 'Bằng chứng mâu thuẫn: 6 thí nghiệm 1998 thấy khen trí thông minh có hại sau thất bại; lần làm lại sát 2019 không thấy ở 8 thước đo.'
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+- id: g1
+  cau: 'Mueller & Dweck 1998 (6 nghiên cứu, học sinh lớp 5): sau thất bại, trẻ được khen thông minh kém bền bỉ, kém thích thú, làm bài kém hơn trẻ được khen nỗ lực.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - mueller1998
+  trich: six studies demonstrated that praise for intelligence had more negative consequences ... Fifth graders praised for intelligence ... After failure, they also displayed less task persistence, less task enjoyment, more low-ability attributions, and worse task performance than children praised for effort.
+  ket_qua: da-sua
+  ghi_chu: 'Cũ nêu "chọn bài dễ ... nói dối về điểm số": bỏ chi tiết chưa kiểm được; giữ điều tóm tắt nói.'
+- id: g2
+  cau: 'Li & Bates 2019: làm lại sát Mueller & Dweck ở trẻ Trung Quốc 9–13 tuổi; không khác biệt ở 8 thước đo động lực và quy kết, chỉ điểm làm bài sau thất bại sát ngưỡng (p = .049).'
+  loai: tai-lap
+  truong:
+  - giai_thich
+  nguon:
+  - li2019
+  trich: Study 1 closely replicated Mueller and Dweck (1998). Growth mindset manipulation was associated with performance on a moderate difficulty postfailure test (p = .049), but not with any of the 8 motivation and attribution measures used by Mueller and Dweck (1998)
+  ket_qua: da-sua
+  ghi_chu: Câu mới (nguồn mới, tìm khi kiểm). Câu cũ "Khen vào quá trình nuôi tư duy cầu tiến; khen vào bản chất cho kết quả ngược lại" đã bỏ.

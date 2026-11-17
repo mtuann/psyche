@@ -1,0 +1,59 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/sinh-vien-my-dai-dien#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/sinh-vien-my-dai-dien
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Ước tính khoảng 96% mẫu nghiên cứu tâm lý đến từ các nước phương Tây công nghiệp hóa — chỉ khoảng 12% dân số thế giới — và 68% từ Mỹ. Ở nhiều lĩnh vực, kết quả trên mẫu WEIRD này là ngoại lệ chứ không phải chuẩn mực của loài người (Henrich và cộng sự, 2010).'' → mới ''Theo một phân tích các tạp chí tâm lý học hàng đầu giai đoạn 2003–2007 (Arnett, 2008, do Henrich và cộng sự dẫn), 96% người tham gia đến từ các nước phương Tây công nghiệp hóa, vốn chỉ chiếm khoảng 12% dân số thế giới, và 68% từ Mỹ. Tổng quan dữ liệu so sánh giữa các nền văn hóa của Henrich và cộng sự (2010) thấy người ở các xã hội "WEIRD" thường là ngoại lệ, không đại diện tốt cho loài người.'''
+nguon:
+- id: henrich2010
+  ten: Henrich và cộng sự (2010). The weirdest people in the world?
+  link: https://doi.org/10.1017/S0140525X0999152X
+nhan_dinh:
+- id: nhan
+  cau: 'Nghiên cứu trên sinh viên Mỹ thì đúng với mọi người trên thế giới: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - henrich2010
+  co_so:
+  - henrich2010
+  ly_do: 'Tổng quan dữ liệu so sánh nhiều lĩnh vực: kết quả khác nhau đáng kể giữa các quần thể, WEIRD là ngoại lệ.'
+  ket_qua: dung
+- id: g1
+  cau: 'Arnett 2008 (theo Henrich 2010): tạp chí hàng đầu 2003–2007, 96% người tham gia từ nước phương Tây công nghiệp hóa (khoảng 12% dân số), 68% từ Mỹ.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - henrich2010
+  trich: 'Trang nhà bang-chung/mau-va-chon-mau (đã khóa): "Henrich, Heine và Norenzayan dẫn một phân tích của Arnett (2008) ... 68% người tham gia đến từ Mỹ, và 96% đến từ các nước phương Tây công nghiệp hóa ... chỉ chiếm khoảng 12% dân số thế giới."'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "Ước tính khoảng 96% mẫu nghiên cứu tâm lý": ghi rõ phạm vi (tạp chí hàng đầu 2003–2007) và nguồn gốc con số (Arnett 2008).'
+- id: g2
+  cau: 'Henrich 2010: người WEIRD thường là ngoại lệ, thuộc nhóm ít đại diện nhất để khái quát về loài người.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - henrich2010
+  trich: WEIRD subjects are particularly unusual compared with the rest of the species - frequent outliers ... among the least representative populations one could find for generalizing about humans
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "Ở nhiều lĩnh vực, kết quả trên mẫu WEIRD này là ngoại lệ chứ không phải chuẩn mực": viết sát tóm tắt.'
+- id: trang
+  cau: Bài liên quan của thẻ là bang-chung/mau-va-chon-mau
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa.

@@ -391,6 +391,9 @@
 	.pz-ebbinghaus:empty {
 		min-height: 23rem;
 	}
+	.pz-ngo-nhan:empty {
+		min-height: 22rem;
+	}
 	@media (min-width: 26rem) {
 		.pz-stroop:empty {
 			min-height: 39rem;
@@ -1011,4 +1014,33 @@
 	font-size: var(--sl-text-sm);
 	line-height: 1.5;
 	white-space: pre;
+}
+
+/* ---------- Thẻ ngộ nhận (D8-L3): trang Ngộ nhận (::ngo-nhan) và trò chơi "Bạn nghĩ gì về tâm trí?" ---------- */
+.sl-markdown-content .pz-the-nn__nguon,
+.pz-cong-cu .pz-the-nn__nguon {
+	font-size: var(--sl-text-sm);
+	overflow-wrap: anywhere;
+}
+.pz-nn__dem,
+.pz-nn__meo {
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-sm);
+}
+.pz-cong-cu .pz-nn__khang {
+	margin: 0.6rem 0;
+	padding: 0.2rem 0 0.2rem 1rem;
+	border-inline-start: 4px solid var(--pz-accent);
+	color: var(--sl-color-white);
+	font-size: 1.15rem;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.pz-cong-cu .pz-nn__nhan {
+	margin-block: 0.8rem;
+}
+@media (hover: none) {
+	.pz-nn__meo {
+		display: none;
+	}
 }

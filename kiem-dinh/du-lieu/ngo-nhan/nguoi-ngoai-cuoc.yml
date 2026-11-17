@@ -1,0 +1,64 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/nguoi-ngoai-cuoc#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/nguoi-ngoai-cuoc
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Trong phòng thí nghiệm, mỗi cá nhân đúng là ít ra tay hơn khi có người khác (phân tích tổng hợp năm 2011 xác nhận). Nhưng phân tích camera giám sát 219 vụ xung đột thật ở Anh, Hà Lan và Nam Phi (2020) cho thấy ít nhất một người can thiệp trong khoảng 9/10 vụ, và càng đông người thì càng có nhiều khả năng ai đó giúp. Hiệu ứng có thật ở cấp độ từng người, nhưng câu nói phổ biến ở trên thì gây hiểu lầm.'' → mới ''Trong các thí nghiệm, mỗi cá nhân đúng là ít ra tay hơn khi có người khác hiện diện (phân tích tổng hợp năm 2011 xác nhận), nhất là khi tình huống mập mờ. Nhưng phân tích camera giám sát 219 vụ xung đột thật ở Anh, Hà Lan và Nam Phi (2020) cho thấy khoảng 9 trên 10 vụ có ít nhất một người can thiệp, và càng đông người thì càng dễ có ai đó giúp. Hiệu ứng có thật ở cấp từng người, nhưng câu nói phổ biến ở trên thì gây hiểu lầm.'' | trang: cũ None → mới ''thi-nghiem/darley-latane'''
+nguon:
+- id: fischer2011
+  ten: 'Fischer và cộng sự (2011). The bystander-effect: A meta-analytic review on bystander intervention in dangerous and non-dangerous emergencies'
+  link: https://doi.org/10.1037/a0023304
+- id: philpot2020
+  ten: Philpot và cộng sự (2020). Would I be helped? Cross-national CCTV footage shows that intervention is the norm in public conflicts
+  link: https://doi.org/10.1037/amp0000469
+nhan_dinh:
+- id: nhan
+  cau: '"Càng đông người chứng kiến, nạn nhân càng khó được giúp": đang tranh cãi.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: tranh-cai
+  nguon:
+  - fischer2011
+  - philpot2020
+  co_so:
+  - fischer2011
+  - philpot2020
+  ly_do: 'Trang nhà darley-latane (đã khóa): hiệu ứng ở mức cá nhân vững chắc (Fischer 2011), nhưng ở mức cả đám đông ngoài đời thì ngược lại (Philpot 2020). Câu nói về nạn nhân (mức nhóm) có bằng chứng hai chiều.'
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: nhãn của khẳng định mức nhóm, khác nhãn vững chắc của hiệu ứng mức cá nhân ở trang nhà; lượt 2 xem lại.'
+- id: g1
+  cau: 'Phân tích tổng hợp 2011: có người khác hiện diện thì mỗi người ít giúp hơn, nhất là khi tình huống mập mờ.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - fischer2011
+  trich: 'Trang nhà (đã khóa): "Một phân tích tổng hợp 105 hiệu ứng ... (Fischer và cộng sự, 2011) thấy cùng một hướng ở mức cá nhân ... hiệu ứng yếu đi khi nguy hiểm rõ ràng"'
+  ket_qua: da-sua
+  ghi_chu: Thêm "nhất là khi tình huống mập mờ" cho khớp trang nhà; "Trong phòng thí nghiệm" thành "Trong các thí nghiệm".
+- id: g2
+  cau: 'Camera 219 vụ xung đột ở Anh, Hà Lan, Nam Phi: khoảng 9/10 vụ có người can thiệp; càng đông càng dễ có người giúp.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - philpot2020
+  trich: 'Trang nhà: "Trong 219 xung đột công cộng quay bằng camera ở Anh, Hà Lan và Nam Phi, 9 trên 10 vụ có ít nhất một người ra tay giúp, và càng đông người chứng kiến thì càng dễ có ai đó giúp (Philpot và cộng sự, 2020)."'
+  ket_qua: dung
+- id: trang
+  cau: Bài liên quan của thẻ là thi-nghiem/darley-latane
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa của hiệu ứng người ngoài cuộc, có cả Fischer 2011 và Philpot 2020.

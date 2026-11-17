@@ -1,0 +1,74 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/bay-con-so#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/bay-con-so
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'chỗ khó: trang nhà tri-nho-lam-viec (đã khóa) xếp "giới hạn của bàn nháp là bao nhiêu" vào Đang tranh cãi và ghi "7 ± 2 là giới hạn cứng cho mọi loại thông tin" là ngộ nhận. Thẻ giữ Đã bị bác bỏ cho khẳng định "mọi người chứa được 7 món"; câu cũ "giới hạn thô thì gần với 4" quá chắc so với trang nhà, đã viết lại. Bỏ nguồn bay-con-so-pubmed (chỉ là bản ghi PubMed của Cowan 2001). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Con số 7±2 của Miller (1956) là về “cụm” thông tin — ta có thể gom nhiều món thành một cụm để nhớ. Khi ngăn người tham gia dùng mẹo gom cụm hay nhẩm lại, Nelson Cowan tổng hợp lại toàn bộ bằng chứng năm 2001 và kết luận dung lượng thật gần với 4 cụm hơn. Nói cách khác, 7 là mức tối đa khi đã dùng mẹo, còn giới hạn thô thì gần với 4.'' → mới ''Con số "7 ± 2" của Miller (1956) là ước lượng ban đầu, đã tính cả các mẹo gom nhóm. Khi loại bỏ các mẹo ấy, Cowan (2001) ước lượng khoảng 4 "cụm" thông tin. Con số chính xác vẫn còn tranh cãi, nhưng giới hạn còn tùy loại thông tin, cách đo và từng người: không có một con số 7 chung cho mọi người.'' | nguon: cũ [''cowan2001'', ''bay-con-so-pubmed''] → mới [''miller1956'', ''cowan2001''] | trang: cũ ''trai-nghiem/do-dai-tri-nho'' → mới ''kham-pha/tri-nho/tri-nho-lam-viec'''
+nguon:
+- id: miller1956
+  ten: 'Miller (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information'
+  link: https://doi.org/10.1037/h0043158
+- id: cowan2001
+  ten: 'Cowan (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity'
+  link: https://doi.org/10.1017/S0140525X01003922
+nhan_dinh:
+- id: nhan
+  cau: '"Trí nhớ ngắn hạn của mọi người chứa được 7 món": đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - cowan2001
+  - miller1956
+  co_so:
+  - cowan2001
+  - miller1956
+  ly_do: 'Trang nhà: 7 ± 2 không phải giới hạn cứng, tùy loại thông tin, cách đo và từng người; ước lượng hiện đại thận trọng hơn khoảng 4 cụm.'
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+- id: g1
+  cau: 7 ± 2 của Miller (1956) là ước lượng ban đầu, đã tính cả các mẹo gom nhóm.
+  loai: lich-su
+  truong:
+  - giai_thich
+  nguon:
+  - miller1956
+  trich: 'Trang nhà (đã khóa): "7 ± 2 của Miller (1956) là ước lượng ban đầu, đã tính cả các mẹo gom nhóm; ước lượng hiện đại thận trọng hơn là khoảng 4 ''cục''."'
+  ket_qua: dung
+- id: g2
+  cau: Cowan (2001), khi loại bỏ mẹo gom nhóm, ước lượng khoảng 4 cụm.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - cowan2001
+  trich: 'Trang nhà: "Con số 7 ± 2 ... đã được Cowan (2001) hiệu chỉnh xuống còn khoảng 4 ''cục'' thông tin khi loại bỏ các mẹo gom nhóm"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "tổng hợp lại toàn bộ bằng chứng năm 2001 và kết luận dung lượng thật gần với 4 cụm hơn ... giới hạn thô thì gần với 4": quá chắc so với trang nhà (tranh-cai).'
+- id: g3
+  cau: Con số chính xác còn tranh cãi; giới hạn tùy loại thông tin, cách đo và từng người.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - cowan2001
+  trich: 'Trang nhà: "Và giới hạn còn tùy loại thông tin, cách đo, và từng người."; khung tranh-cai[giới hạn của bàn nháp là bao nhiêu]'
+  ket_qua: da-sua
+  ghi_chu: Câu mới cho khớp trang nhà.
+- id: trang
+  cau: Bài liên quan của thẻ là kham-pha/tri-nho/tri-nho-lam-viec
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà của Miller 1956 và Cowan 2001 (báo cáo D8-L1); thẻ cũ link trai-nghiem/do-dai-tri-nho (công cụ, chưa khóa).

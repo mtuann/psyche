@@ -1,0 +1,57 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/cam-xuc-bam-sinh#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/cam-xuc-bam-sinh
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Người các nền văn hóa nhận diện nét mặt đúng trên mức may rủi, nhưng tổng quan năm 2019 kết luận các biểu hiện cảm xúc không đủ ổn định và đặc trưng để coi là “dấu vân tay” phổ quát — cách ta cảm nhận và gọi tên cảm xúc còn phụ thuộc ngữ cảnh và khái niệm ta có.'' → mới ''Khi chọn nhãn cảm xúc từ một danh sách cho sẵn, người ở nhiều nền văn hóa nhận diện ảnh nét mặt dàn dựng đúng trên mức may rủi. Nhưng bài tổng quan năm 2019 kết luận nét mặt không đủ ổn định và đặc trưng để coi là "dấu vân tay" phổ quát của cảm xúc; cảm xúc có phải "chương trình" sinh học phổ quát hay được não dựng lên từ cảm giác cơ thể, kinh nghiệm và văn hóa thì vẫn chưa ngã ngũ.'' | nguon: cũ [''barrett2019''] → mới [''barrett2019'', ''elfenbein2002'']'
+nguon:
+- id: barrett2019
+  ten: 'Barrett và cộng sự (2019). Emotional expressions reconsidered: Challenges to inferring emotion from human facial movements'
+  link: https://doi.org/10.1177/1529100619832930
+- id: elfenbein2002
+  ten: 'Elfenbein và cộng sự (2002). On the universality and cultural specificity of emotion recognition: A meta-analysis'
+  link: https://doi.org/10.1037/0033-2909.128.2.203
+nhan_dinh:
+- id: nhan
+  cau: 'Cảm xúc của mọi người đều giống nhau, bẩm sinh nguyên khối: đang tranh cãi.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: tranh-cai
+  nguon:
+  - barrett2019
+  - elfenbein2002
+  co_so:
+  - barrett2019
+  - elfenbein2002
+  ly_do: Khớp khung tranh-cai[cảm xúc có phải là chương trình sinh học phổ quát?] của trang nhà cam-xuc-co-ban (đã khóa).
+  ket_qua: dung
+- id: g1
+  cau: Chọn nhãn từ danh sách cho sẵn, người nhiều nền văn hóa nhận diện ảnh nét mặt dàn dựng đúng trên mức may rủi.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - elfenbein2002
+  trich: 'Trang nhà: khung vung-chac[khi chọn nhãn cảm xúc từ một danh sách cho sẵn, người xem ở nhiều nền văn hóa nhận diện ảnh nét mặt dàn dựng đúng ở trên mức may rủi]'
+  ket_qua: da-sua
+  ghi_chu: Thêm điều kiện "danh sách cho sẵn", "ảnh dàn dựng" theo trang nhà.
+- id: g2
+  cau: 'Barrett 2019: nét mặt không đủ ổn định, đặc trưng để làm "dấu vân tay" phổ quát; tranh luận chưa ngã ngũ.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - barrett2019
+  trich: 'Trang nhà: "Phe kiến tạo (Barrett) cho rằng cảm xúc được não dựng lên từ cảm giác cơ thể, kinh nghiệm và văn hóa — nét mặt chỉ là một manh mối, không phải dấu vân tay của cảm xúc. Cả hai phe đều có bằng chứng"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "tổng quan năm 2019 kết luận ... cách ta cảm nhận và gọi tên cảm xúc còn phụ thuộc ngữ cảnh": thêm rằng tranh luận chưa ngã ngũ (trang nhà).'

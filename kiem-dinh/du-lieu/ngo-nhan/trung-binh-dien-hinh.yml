@@ -1,0 +1,60 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/trung-binh-dien-hinh#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/trung-binh-dien-hinh
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Thay nguồn statology-mean-median (trang web hướng dẫn, bậc 3) bằng von Hippel 2005 (bài có bình duyệt mà trang nhà thong-ke-mo-ta dẫn). Thêm "thường": quy tắc trung bình bị kéo theo đuôi là quy tắc thường đúng, không phải luật (trang nhà, von Hippel 2005). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Khi phân phối lệch — như thu nhập, nơi vài người rất giàu kéo đuôi phân phối dài ra — trung bình cộng bị kéo lên xa khỏi đa số. Lúc đó trung vị (giá trị đứng giữa) mới mô tả “người điển hình” tốt hơn.'' → mới ''Khi phân phối lệch, như thu nhập, nơi một số ít người thu nhập rất cao kéo đuôi phân phối dài ra, trung bình thường bị kéo về phía đuôi nhiều hơn trung vị. Trung vị (giá trị đứng chính giữa) cho biết người đứng giữa kiếm bao nhiêu, nên thường mô tả "người điển hình" tốt hơn.'' | nguon: cũ [''statology-mean-median''] → mới [''vonhippel2005'']'
+nguon:
+- id: vonhippel2005
+  ten: 'von Hippel (2005). Mean, median, and skew: Correcting a textbook rule'
+  link: https://doi.org/10.1080/10691898.2005.11910556
+nhan_dinh:
+- id: nhan
+  cau: '"Thu nhập trung bình là thu nhập của người điển hình": sai (đã bị bác bỏ).'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - vonhippel2005
+  co_so:
+  - vonhippel2005
+  ly_do: 'Câu về định nghĩa thống kê, không cần phân tích tổng hợp: với phân phối lệch như thu nhập, trung bình khác trung vị (trang nhà thong-ke-mo-ta, đã khóa).'
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: nhãn cho một khẳng định về định nghĩa thống kê; thước đo mục 4 viết cho phát hiện thực nghiệm.'
+- id: g1
+  cau: 'Phân phối lệch: trung bình thường bị đuôi kéo đi nhiều hơn trung vị (quy tắc thường đúng, không phải luật).'
+  loai: dinh-nghia
+  truong:
+  - giai_thich
+  nguon:
+  - vonhippel2005
+  trich: 'Trang nhà: "đuôi lệch về phía nào, trung bình thường bị kéo về phía đó nhiều hơn trung vị ... Đây là quy tắc thường đúng chứ không phải luật" (von Hippel 2005: "Mean, median, and skew: Correcting a textbook rule")'
+  ket_qua: da-sua
+  ghi_chu: Thêm "thường" (xem ghi_chu hồ sơ).
+- id: g2
+  cau: Trung vị là giá trị đứng chính giữa, cho biết người đứng giữa kiếm bao nhiêu.
+  loai: dinh-nghia
+  truong:
+  - giai_thich
+  nguon:
+  - vonhippel2005
+  trich: 'Trang nhà: "Trung bình không cho biết người đứng chính giữa kiếm bao nhiêu: đó là việc của trung vị."'
+  ket_qua: da-sua
+  ghi_chu: Viết lại theo trang nhà.
+- id: trang
+  cau: Bài liên quan của thẻ là bang-chung/thong-ke-mo-ta
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa.

@@ -197,6 +197,37 @@ const LUONG = {
 			assert.deepEqual([r.surR, r.centerD], [35, 60]);
 		},
 	},
+	/**
+	 * "Bạn nghĩ gì về tâm trí?" (D8-L3): thẻ lẻ chọn bằng nút (chạm), thẻ chẵn bằng phím 1–3 (tiêu điểm đã ở nút đầu của
+	 * thẻ); mỗi thẻ hiện nhãn và giải thích; cuối lượt lưu kind "myths" như site cũ; "Chơi lại" bắt đầu lượt mới.
+	 */
+	'ngo-nhan': {
+		trang: 'bat-dau/ban-nghi-gi/',
+		lop: 'pz-ngo-nhan',
+		async chay({ p, el }) {
+			const dem = await el.locator('.pz-nn__dem').textContent();
+			const n = Number(/\/ (\d+)/.exec(dem)[1]);
+			assert.ok(n >= 1 && n <= 20, `số thẻ ${n}`);
+			for (let i = 0; i < n; i++) {
+				await el.getByText(`Thẻ ${i + 1} / ${n}`).waitFor();
+				if (i % 2 === 0) await bam(el, ['Đúng', 'Sai', 'Còn tranh cãi'][i % 3]);
+				else {
+					await el.getByRole('button', { name: 'Đúng', exact: true }).focus();
+					await p.keyboard.press(String((i % 3) + 1));
+				}
+				await el.locator('.pz-nn__nhan .pz-nhan__muc').waitFor();
+				await bam(el, i + 1 < n ? 'Thẻ tiếp theo' : 'Xem tổng kết');
+			}
+			await el.getByRole('heading', { name: /^Bạn khớp với bằng chứng ở \d+ \/ \d+ thẻ$/ }).waitFor();
+			const [r] = await banGhi(p, 'myths');
+			assert.equal(r.total, n);
+			assert.equal(r.score + r.wrong.length, n);
+			await bam(el, 'Chơi lại (xáo trộn thẻ)');
+			await el.getByText(`Thẻ 1 / ${n}`).waitFor();
+			await bam(el, 'Sai');
+			await bam(el, n > 1 ? 'Thẻ tiếp theo' : 'Xem tổng kết');
+		},
+	},
 };
 
 for (const [ten, loai] of Object.entries(TRINH_DUYET)) {

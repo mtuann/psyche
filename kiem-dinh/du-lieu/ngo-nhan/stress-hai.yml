@@ -1,0 +1,65 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/stress-hai#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/stress-hai
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'chỗ khó: đổi nhãn Đã bị bác bỏ → Đang tranh cãi: cơ sở duy nhất của thẻ cũ là Crum 2013, mà trang nhà stress-co-hai (đã khóa) xếp "đổi niềm tin có giúp khỏe hơn và làm việc tốt hơn?" vào Đang tranh cãi. Khẳng định gồm hai vế ("lúc nào cũng có hại", "càng tránh càng tốt"): vế đầu trái với mô tả phản ứng báo động (Selye), vế sau chưa có nghiên cứu mở được. Lượt 2 (Opus) xem lại nhãn. Đáp án trò chơi đổi từ Sai sang Còn tranh cãi. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). nhan: cũ ''bac-bo'' → mới ''tranh-cai'' | giai_thich: cũ ''Thí nghiệm năm 2013 cho thấy người được xem video về mặt tích cực của căng thẳng, sau một tuần, tự báo cáo hiệu suất làm việc tốt hơn và ít triệu chứng sức khỏe tiêu cực hơn nhóm được xem video về mặt hại — cùng một mức căng thẳng, cách nhìn khác nhau cho kết quả khác nhau. Dĩ nhiên, căng thẳng kéo dài quá sức vẫn có hại; điểm mấu chốt là căng thẳng không phải lúc nào cũng là kẻ thù.'' → mới ''Tim đập nhanh khi căng thẳng là phản ứng báo động bình thường: cơ thể huy động năng lượng để đối phó, và theo mô hình của Selye, điều đáng lo là căng thẳng kéo dài không lối thoát chứ không phải một đợt căng thẳng ngắn. Việc nhìn stress theo hướng tích cực có giúp ích không thì chưa chắc: trong một thí nghiệm năm 2013, người xem video về mặt có lợi của stress báo cáo ít triệu chứng hơn và tự đánh giá làm việc tốt hơn, nhưng đều là tự báo cáo.'' | nguon: cũ [''crum2013''] → mới [''selye1936'', ''crum2013''] | trang: cũ None → mới ''kham-pha/cang-thang-giac-ngu/stress-co-hai'''
+nguon:
+- id: selye1936
+  ten: Selye (1936). A syndrome produced by diverse nocuous agents
+  link: https://doi.org/10.1038/138032a0
+- id: crum2013
+  ten: 'Crum và cộng sự (2013). Rethinking stress: The role of mindsets in determining the stress response'
+  link: https://doi.org/10.1037/a0031201
+nhan_dinh:
+- id: nhan
+  cau: 'Căng thẳng lúc nào cũng có hại, càng tránh càng tốt: đang tranh cãi.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: tranh-cai
+  nguon:
+  - selye1936
+  - crum2013
+  co_so:
+  - selye1936
+  - crum2013
+  ly_do: Phản ứng căng thẳng ngắn là phản ứng thích nghi (Selye); bằng chứng rằng đổi cách nhìn stress mang lại lợi ích còn tranh cãi (trang nhà).
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+- id: g1
+  cau: Phản ứng căng thẳng là phản ứng báo động bình thường; theo mô hình của Selye, điều đáng lo là căng thẳng kéo dài.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - selye1936
+  trich: 'Trang nhà (đã khóa): "Tim đập nhanh của An là phản ứng báo động bình thường: cơ thể huy động năng lượng để đối phó ... Mô hình này gợi ý rằng điều đáng lo là stress kéo dài không lối thoát, chứ không phải một đợt căng thẳng ngắn"'
+  ket_qua: da-sua
+  ghi_chu: Câu mới theo trang nhà. Cũ "Dĩ nhiên, căng thẳng kéo dài quá sức vẫn có hại" không có nguồn.
+- id: g2
+  cau: 'Crum 2013 (nghiên cứu 2): nhóm xem video "stress có lợi" báo cáo ít triệu chứng tâm lý hơn và tự đánh giá hiệu suất cao hơn; đều là tự báo cáo.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - crum2013
+  trich: 'Trang nhà: "Nhóm có lợi báo cáo ít triệu chứng tâm lý hơn (thang đo MASQ) ... tự đánh giá hiệu suất làm việc cao hơn (thang đo WPS)"; khung tranh-cai: "ở các biến sức khỏe và hiệu suất đó chủ yếu là tự báo cáo"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "sau một tuần ... ít triệu chứng sức khỏe tiêu cực hơn ... cùng một mức căng thẳng, cách nhìn khác nhau cho kết quả khác nhau": viết theo trang nhà, nêu rõ là tự báo cáo.'
+- id: trang
+  cau: Bài liên quan của thẻ là kham-pha/cang-thang-giac-ngu/stress-co-hai
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa (Selye, Crum 2013).

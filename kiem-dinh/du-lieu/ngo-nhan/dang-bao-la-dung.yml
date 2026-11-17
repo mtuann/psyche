@@ -1,0 +1,50 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/dang-bao-la-dung#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/dang-bao-la-dung
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Năm 2023 có hơn 10.000 bài báo bị rút lại — mức kỷ lục, trong đó hơn 8.000 bài từ các tạp chí Hindawi do quy trình phản biện bị thao túng. Bình duyệt là bộ lọc quan trọng nhưng không hoàn hảo; đọc báo khoa học vẫn cần con mắt kiểm chứng.'' → mới ''Theo tin của tạp chí Nature, năm 2023 có hơn 10.000 bài báo nghiên cứu bị rút lại, phá các kỷ lục hằng năm; hơn 8.000 bài trong số đó từ các tạp chí của Hindawi, với lý do gồm thao túng có hệ thống quy trình xuất bản và phản biện. Bình duyệt là bộ lọc quan trọng nhưng không hoàn hảo; đọc báo khoa học vẫn cần con mắt kiểm chứng.'''
+nguon:
+- id: vannoorden2023
+  ten: Van Noorden (2023). More than 10,000 research papers were retracted in 2023 — a new record
+  link: https://doi.org/10.1038/d41586-023-03974-8
+nhan_dinh:
+- id: nhan
+  cau: 'Đã đăng trên báo khoa học thì kết luận là đúng: sai (đã bị bác bỏ).'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - vannoorden2023
+  co_so:
+  - vannoorden2023
+  ly_do: Số bài bị rút kỷ lục năm 2023 (Nature); trang nhà bang-chung/doc-bai-bao-khoa-hoc (đã khóa).
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: nhãn cho một khẳng định về hệ thống xuất bản; một tin của Nature là cơ sở.'
+- id: g1
+  cau: 'Nature (Van Noorden 2023): hơn 10.000 bài bị rút năm 2023, kỷ lục; hơn 8.000 bài của Hindawi, lý do gồm thao túng có hệ thống quy trình xuất bản và phản biện.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - vannoorden2023
+  trich: 'Trang nhà (đã khóa): "số bài báo nghiên cứu bị rút lại trong năm 2023 đã vượt 10.000, phá các kỷ lục hằng năm. Phần lớn đến từ các tạp chí của Hindawi ...: hơn 8.000 bài bị rút, với lý do gồm thao túng có hệ thống quy trình xuất bản và phản biện"'
+  ket_qua: da-sua
+  ghi_chu: Thêm "theo tin của Nature"; cũ "do quy trình phản biện bị thao túng" viết đúng lý do.
+- id: trang
+  cau: Bài liên quan của thẻ là bang-chung/doc-bai-bao-khoa-hoc
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: Trang nhà đã khóa.

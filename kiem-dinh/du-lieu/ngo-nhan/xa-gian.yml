@@ -1,0 +1,57 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/xa-gian#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/xa-gian
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Trong một thí nghiệm năm 2002, người đấm bao cát trong lúc nghĩ về người làm mình giận lại giận và hung hăng hơn so với người ngồi yên. Phân tích tổng hợp năm 2024 gộp 154 nghiên cứu cho thấy các hoạt động làm dịu cơ thể (thở chậm, thư giãn cơ, chánh niệm) giảm giận rõ rệt, còn các hoạt động làm tăng kích động như trút giận gần như không có tác dụng.'' → mới ''Trong một thí nghiệm năm 2002, người đấm bao cát trong lúc nghĩ về người làm mình giận lại giận và hung hăng hơn so với người không đấm bao cát. Phân tích tổng hợp năm 2024 gộp 154 nghiên cứu cho thấy các hoạt động làm dịu cơ thể (thở sâu, chánh niệm, thiền) giảm giận rõ rệt, còn các hoạt động làm tăng kích động như đấm bao cát hay chạy bộ nhìn chung không có tác dụng.'''
+nguon:
+- id: bushman2002
+  ten: Bushman (2002). Does venting anger feed or extinguish the flame? Catharsis, rumination, distraction, anger, and aggressive responding
+  link: https://doi.org/10.1177/0146167202289002
+- id: kjaervik2024
+  ten: 'Kjærvik và cộng sự (2024). A meta-analytic review of anger management activities that increase or decrease arousal: What fuels or douses rage?'
+  link: https://doi.org/10.1016/j.cpr.2024.102414
+nhan_dinh:
+- id: nhan
+  cau: 'Trút giận (đấm gối, la hét) giúp bớt giận: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - kjaervik2024
+  - bushman2002
+  co_so:
+  - kjaervik2024
+  - bushman2002
+  ly_do: 'Phân tích tổng hợp 154 nghiên cứu, 10.189 người: hoạt động tăng kích động không hiệu quả (g = −0,02); thí nghiệm 2002 thấy ngược với lý thuyết xả giận.'
+  ket_qua: dung
+- id: g1
+  cau: 'Thí nghiệm 2002: nhóm đấm bao cát và nghĩ về người làm mình giận giận hơn và hung hăng nhất, so với nhóm không đấm bao cát.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - bushman2002
+  trich: People in the rumination group felt angrier than did people in the distraction or control groups. People in the rumination group were also most aggressive ... There also was a no punching bag control group.
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "so với người ngồi yên": nhóm đối chứng là nhóm không đấm bao cát; sửa cho đúng.'
+- id: g2
+  cau: 'Phân tích tổng hợp 2024, 154 nghiên cứu: hoạt động làm dịu (thở sâu, chánh niệm, thiền) giảm giận; hoạt động tăng kích động (đấm bao cát, chạy bộ) nhìn chung không tác dụng.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - kjaervik2024
+  trich: arousal-decreasing activities (e.g., deep breathing, mindfulness, meditation) ... based on 154 studies ... arousal-decreasing activities decreased anger and aggression (g = -0.63) ... arousal-increasing activities were ineffective overall (g = -0.02)
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "thở chậm, thư giãn cơ, chánh niệm"; tóm tắt nêu thở sâu, chánh niệm, thiền. Cũ "như trút giận gần như không có tác dụng": nêu đúng ví dụ của bài.'

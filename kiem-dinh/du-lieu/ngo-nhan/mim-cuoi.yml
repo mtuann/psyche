@@ -1,0 +1,68 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/mim-cuoi#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/mim-cuoi
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Thí nghiệm "ngậm bút" kinh điển không tái lập được khi làm lại ở 17 phòng thí nghiệm với gần 1.900 người. Dự án Many Smiles (3.878 người, 19 quốc gia, 2022) thấy chủ động mỉm cười làm tăng cảm giác vui một chút, nhưng cách ngậm bút thì không cho kết quả rõ ràng. Nếu có hiệu ứng thì nó nhỏ, và mỉm cười không phải cách chữa buồn bã hay trầm cảm.'' → mới ''Thí nghiệm "ngậm bút" kinh điển không tái lập được khi 17 phòng thí nghiệm cùng làm lại theo một quy trình đăng ký trước (2016). Dự án Many Smiles (3.878 người, 19 quốc gia, 2022) thấy bắt chước nét mặt cười hay chủ động mỉm cười có thể làm tăng cảm giác vui, nhưng cách ngậm bút thì không cho kết quả rõ ràng. Các nghiên cứu này đo cảm giác vui ngay lúc ấy, không thử mỉm cười như cách chữa buồn bã kéo dài hay trầm cảm.'''
+nguon:
+- id: wagenmakers2016
+  ten: 'Wagenmakers và cộng sự (2016). Registered Replication Report: Strack, Martin, & Stepper (1988)'
+  link: https://doi.org/10.1177/1745691616674458
+- id: coles2022
+  ten: Coles và cộng sự (2022). A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration
+  link: https://doi.org/10.1038/s41562-022-01458-9
+nhan_dinh:
+- id: nhan
+  cau: 'Cứ mỉm cười là thấy vui hơn: đang tranh cãi.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: tranh-cai
+  nguon:
+  - wagenmakers2016
+  - coles2022
+  co_so:
+  - wagenmakers2016
+  - coles2022
+  ly_do: Một tái lập lớn có đăng ký trước thất bại (17 phòng thí nghiệm); dự án đa trung tâm có đăng ký trước 2022 thấy kết quả khác nhau theo cách gây nét mặt.
+  ket_qua: dung
+- id: g1
+  cau: 'Báo cáo tái lập có đăng ký trước 2016: 17 lần làm lại thí nghiệm ngậm bút, chênh lệch 0,03 (gốc 0,82).'
+  loai: tai-lap
+  truong:
+  - giai_thich
+  nguon:
+  - wagenmakers2016
+  trich: This Registered Replication Report describes the results of 17 independent direct replications ... The original ... reported a rating difference of 0.82 units ... Our meta-analysis revealed a rating difference of 0.03 units
+  ket_qua: da-sua
+  ghi_chu: 'Bỏ "gần 1.900 người": tóm tắt không nêu tổng số người, chưa mở toàn văn.'
+- id: g2
+  cau: 'Many Smiles (3.878 người, 19 nước): bắt chước nét mặt và chủ động cử động mặt làm tăng cảm giác vui; ngậm bút thì kết quả kém rõ.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - coles2022
+  trich: Data from n = 3,878 participants spanning 19 countries indicated that a facial mimicry and voluntary facial action task could both amplify and initiate feelings of happiness. However, evidence of facial feedback effects was less conclusive when facial feedback was manipulated unobtrusively via a pen-in-mouth task.
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "chủ động mỉm cười làm tăng cảm giác vui một chút": bài không nói "một chút"; thêm bắt chước nét mặt. Bỏ "Nếu có hiệu ứng thì nó nhỏ" (không có trong nguồn đã mở).'
+- id: g3
+  cau: Các nghiên cứu này đo cảm giác ngay lúc ấy, không thử mỉm cười như cách chữa buồn bã kéo dài hay trầm cảm.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - wagenmakers2016
+  - coles2022
+  trich: 'Thiết kế trong hai tóm tắt: chấm độ buồn cười của tranh (2016), cảm giác vui sau nhiệm vụ cử động mặt (2022); không có nhóm người trầm cảm, không theo dõi dài hạn.'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "mỉm cười không phải cách chữa buồn bã hay trầm cảm": câu về điều trị không có nguồn; viết lại thành câu về phạm vi của nghiên cứu.'

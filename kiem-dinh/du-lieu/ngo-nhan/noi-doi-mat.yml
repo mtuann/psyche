@@ -1,0 +1,58 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/noi-doi-mat#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/noi-doi-mat
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp gần 25.000 người phán đoán cho thấy con người chỉ phân biệt đúng nói thật hay nói dối khoảng 54% số lần, chỉ hơn đoán may (50%) một chút. Phần lớn các dấu hiệu hành vi mà ta hay tin, kể cả tránh nhìn, liên hệ rất yếu với việc nói dối.'' → mới ''Phân tích tổng hợp gần 25.000 người phán đoán cho thấy con người chỉ phân biệt đúng nói thật hay nói dối khoảng 54% số lần, chỉ hơn đoán may (50%) một chút. Trong 158 dấu hiệu hành vi được tổng hợp ở một phân tích khác, nhiều dấu hiệu không liên hệ hoặc chỉ liên hệ yếu với việc nói dối; riêng nhìn vào mắt người đối diện và tránh nhìn thì gần như không liên hệ gì.'''
+nguon:
+- id: bond2006
+  ten: Bond và cộng sự (2006). Accuracy of deception judgments
+  link: https://doi.org/10.1207/s15327957pspr1003_2
+- id: depaulo2003
+  ten: DePaulo và cộng sự (2003). Cues to deception
+  link: https://doi.org/10.1037/0033-2909.129.1.74
+  toan_van: true
+nhan_dinh:
+- id: nhan
+  cau: 'Nhìn ánh mắt để biết ai nói dối: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - depaulo2003
+  - bond2006
+  co_so:
+  - depaulo2003
+  - bond2006
+  ly_do: 'Hai phân tích tổng hợp lớn: tránh nhìn không liên hệ với nói dối (d = 0,03, 6 ước lượng; giao tiếp bằng mắt d = 0,01, 32 ước lượng); người phán đoán chỉ đúng 54%.'
+  ket_qua: dung
+- id: g1
+  cau: 'Phân tích tổng hợp 206 tài liệu, 24.483 người phán đoán: đúng trung bình 54%.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - bond2006
+  trich: synthesizing research results from 206 documents and 24,483 judges ... people achieve an average of 54% correct lie-truth judgments
+  ket_qua: dung
+- id: g2
+  cau: Trong 158 dấu hiệu, nhiều hành vi không liên hệ hoặc liên hệ yếu với nói dối; giao tiếp bằng mắt (d = 0,01) và tránh nhìn (d = 0,03) gần như không liên hệ.
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - depaulo2003
+  trich: '"The combined results of 1,338 estimates of 158 cues ... many behaviors showed no discernible links, or only weak links, to deceit." Bảng 3: "027 Eye contact 1,491 32 17 0.01 ... 028 Gaze aversion 411 6 4 0.03"'
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "Phần lớn các dấu hiệu ... kể cả tránh nhìn, liên hệ rất yếu": đọc toàn văn (DukeSpace), tránh nhìn gần như bằng 0; nêu số dấu hiệu.'
+  vi_tri: tóm tắt; Bảng 3

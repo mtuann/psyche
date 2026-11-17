@@ -1,0 +1,73 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/trang-tron#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/trang-tron
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'chỗ khó: chỉ mở được tên bài và tóm tắt tiếng Pháp của Rotton & Kelly 1985 (37 nghiên cứu); kết luận "không tìm thấy mối liên hệ đáng tin" chưa đọc được. Có nghiên cứu lẻ thấy liên hệ (động kinh 2006, tội phạm 1984 ở Ấn Độ, giấc ngủ 2013) nên nhãn cần lượt 2 xem lại. Bỏ câu "ta dễ nhớ những đêm trăng tròn hỗn loạn" (không có nguồn). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp năm 1985 không tìm thấy mối liên hệ đáng tin giữa pha mặt trăng và các hành vi này, và các kết quả dương tính lẻ tẻ không lặp lại được. Niềm tin vẫn tồn tại vì ta dễ nhớ những đêm trăng tròn hỗn loạn mà quên những đêm trăng tròn bình thường.'' → mới ''Phân tích tổng hợp năm 1985 gộp 37 nghiên cứu về pha mặt trăng và các rối loạn hành vi không tìm thấy mối liên hệ đáng tin. Ở một khoa cấp cứu tại Mỹ, số liệu 4 năm với 150.999 lượt khám không thấy ngày trăng tròn có nhiều lượt khám, xe cấp cứu hay ca nhập viện hơn; một nghiên cứu khác trên 1.444 ca chấn thương nặng trong một năm cũng không thấy khác biệt, kể cả các ca do bạo lực.'' | nguon: cũ [''rotton1985''] → mới [''rotton1985'', ''thompson1996'', ''coates1989'']'
+nguon:
+- id: rotton1985
+  ten: 'Rotton và cộng sự (1985). Much ado about the full moon: A meta-analysis of lunar-lunacy research'
+  link: https://doi.org/10.1037/0033-2909.97.2.286
+- id: thompson1996
+  ten: 'Thompson và cộng sự (1996). The full moon and ED patient volumes: Unearthing a myth'
+  link: https://doi.org/10.1016/s0735-6757(96)90124-2
+- id: coates1989
+  ten: 'Coates và cộng sự (1989). Trauma and the full moon: A waning theory'
+  link: https://doi.org/10.1016/s0196-0644(89)80014-9
+nhan_dinh:
+- id: nhan
+  cau: 'Trăng tròn làm người ta hành xử kỳ lạ hơn (tai nạn, cấp cứu, gây gổ): đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - rotton1985
+  - thompson1996
+  - coates1989
+  co_so:
+  - rotton1985
+  - thompson1996
+  - coates1989
+  ly_do: Phân tích tổng hợp 37 nghiên cứu; hai nghiên cứu cấp cứu, chấn thương lớn không thấy khác biệt.
+  ket_qua: null
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+- id: g1
+  cau: Phân tích tổng hợp 1985 (37 nghiên cứu) không thấy mối liên hệ đáng tin giữa pha mặt trăng và rối loạn hành vi.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - rotton1985
+  trich: Les donnees provenant de 37 etudes ... sont combinees dans une etude meta-analytique examinant les relations entre les phases de la lune et l'alienation mentale
+  ket_qua: null
+  ghi_chu: 'chưa chắc: tóm tắt chỉ xác nhận 37 nghiên cứu; kết luận cần toàn văn. Câu cũ "các kết quả dương tính lẻ tẻ không lặp lại được" đã bỏ.'
+- id: g2
+  cau: 'Một khoa cấp cứu ở Mỹ, 4 năm, 150.999 lượt khám: ngày trăng tròn không khác về lượt khám, xe cấp cứu, nhập viện.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - thompson1996
+  trich: There were 150,999 patient visits to the ED during the study period ... No significant differences were found in total patient visits, ambulance runs, admissions to the hospital, or admissions to a monitored unit on days of the full moon.
+  ket_qua: da-sua
+  ghi_chu: Câu mới (nguồn mới).
+- id: g3
+  cau: '1.444 ca chấn thương nặng trong một năm: không khác biệt ngày trăng tròn, kể cả ca do bạo lực.'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - coates1989
+  trich: we reviewed 1,444 trauma victims admitted to the hospital during one calendar year ... Victims of violence were admitted at a similar frequency on full moon ... and nonfull moon days
+  ket_qua: da-sua
+  ghi_chu: Câu mới (nguồn mới).

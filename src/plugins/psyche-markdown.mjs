@@ -7,19 +7,20 @@
 //   chính trang) của bố cục C;
 // - chip nhãn trong câu :nhan[vung-chac];
 // - khối ```quiz thành câu hỏi kiểm tra nhanh;
-// - chỉ thị một dòng ::cong-cu{ten="…"}, ::hinh{ten="…"}, ::nguon{id="…"} thành công cụ, hình tĩnh, danh sách nguồn.
+// - chỉ thị một dòng ::cong-cu{ten="…"}, ::hinh{ten="…"}, ::nguon{id="…"} thành công cụ, hình tĩnh, danh sách nguồn;
+//   ::ngo-nhan{nhan="…"} thành các thẻ ngộ nhận mang một nhãn (D8-L3).
 // Chỉ thị khối của Starlight (:::note, :::tip, :::caution, :::danger) để nguyên cho Starlight.
 // Viết sai (chỉ thị không có tên ở đây, thiếu nhãn của khung, thuộc tính lạ, câu hỏi không đúng một đáp án đúng) thì ném
 // lỗi: build hỏng.
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { duLieuDaKiem } from '../du-lieu.mjs';
-import { docKhoa, hinhCuaTrang } from '../khoa.mjs';
+import { docKhoa, hinhCuaTrang, truongDaKhoa } from '../khoa.mjs';
 import fs from 'node:fs';
 import { parse } from 'yaml';
-import { DUONG_GOC, trangTrongBan } from '../ban-build.mjs';
+import { DUONG_GOC, ban, trangTrongBan } from '../ban-build.mjs';
 import { svg } from '../bieu-tuong.mjs';
-import { TEN_NHAN, baiMoi, tomTat, chipNhan, congCu, congCuNoiBat, danhSachBai, danhSachNguon, hinh, quiz, theLinhVuc } from './thanh-phan.mjs';
+import { TEN_NHAN, TRUONG_THE, baiMoi, tomTat, chipNhan, congCu, congCuNoiBat, danhSachBai, danhSachNguon, duLieuNgoNhan, hinh, quiz, theLinhVuc, trangNgoNhan } from './thanh-phan.mjs';
 
 /** Aside của Starlight: không đụng tới. */
 const ASIDE_STARLIGHT = new Set(['note', 'tip', 'caution', 'danger']);
@@ -90,7 +91,9 @@ const KHOI = {
 
 /** Chỉ thị một dòng: tên -> { thuocTinh: nhận được (dấu * là bắt buộc; "…" là nhận thêm mọi thuộc tính), ve }. */
 const CHI_THI = {
-	'cong-cu': { thuocTinh: ['ten*', '…'], ve: ({ tt, trang }) => congCu(tt, trang) },
+	'cong-cu': { thuocTinh: ['ten*', '…'], ve: ({ tt, trang, nn }) => congCu(tt, trang, { 'ngo-nhan': () => duLieuNgoNhan(nn()) }) },
+	// thẻ ngộ nhận của một nhãn (D8-L3): chỉ thẻ có trong bản build (bản thật: thẻ đã khóa)
+	'ngo-nhan': { thuocTinh: ['nhan*'], ve: ({ tt, nn }) => trangNgoNhan(tt, nn()) },
 	// danh sách sinh từ dữ liệu (D2-L1): chỉ trang có trong bản build, tên và mô tả từ frontmatter của chính trang
 	'danh-sach-bai': { thuocTinh: ['linh_vuc', 'nhom'], ve: ({ tt, ds }) => danhSachBai(tt, ds()) },
 	'the-linh-vuc': { ve: ({ ds }) => theLinhVuc(ds()) },
@@ -125,6 +128,17 @@ function duLieuDanhSach(docsDir) {
 		return fs.existsSync(f) ? String(parse(fs.readFileSync(f, 'utf8'))?.lan?.at(-1)?.ngay ?? '') || null : null;
 	};
 	return { banGhi: duLieu.trang, linhVuc: duLieu['linh-vuc'], trangCo: trangTrongBan(), docsDir, base: DUONG_GOC, svg, ngayKhoa };
+}
+
+/**
+ * Dữ liệu cho thẻ ngộ nhận: các thẻ, nguồn, thẻ nào có trong bản build (bản xem: mọi thẻ; bản thật: thẻ đã khóa đủ các
+ * trường hiện ra, TRUONG_THE), trang trong bản build (link bài liên quan).
+ */
+function duLieuThe(docsDir, khoa) {
+	const duLieu = duLieuDaKiem();
+	const daKhoa = truongDaKhoa({ ban_ghi: {}, ...khoa() });
+	const coThe = ban() === 'xem' ? () => true : (id) => TRUONG_THE.every((t) => daKhoa('ngo-nhan', id, t));
+	return { ngoNhan: duLieu['ngo-nhan'], nguon: duLieu.nguon, coThe, trangCo: trangTrongBan(), docsDir, base: DUONG_GOC };
 }
 
 /** Kiểm thuộc tính của một chỉ thị theo khai báo; trả về thông báo lỗi hay null. */
@@ -198,7 +212,13 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				if (sai) throw loi(sai);
 				let html;
 				try {
-					html = muc.ve({ tt, trang, ds: () => duLieuDanhSach(docsDir), nguonTrang: () => (fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null) });
+					html = muc.ve({
+						tt,
+						trang,
+						ds: () => duLieuDanhSach(docsDir),
+						nn: () => duLieuThe(docsDir, khoa),
+						nguonTrang: () => (fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null),
+					});
 				} catch (e) {
 					throw loi(e.message);
 				}

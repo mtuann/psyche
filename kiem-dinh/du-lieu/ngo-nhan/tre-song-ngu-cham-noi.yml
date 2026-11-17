@@ -1,0 +1,58 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/tre-song-ngu-cham-noi#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/tre-song-ngu-cham-noi
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l3
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+    luot_2: null
+    review: null
+    kiem_mau: null
+ghi_chu: 'chỗ khó: bỏ link tới kham-pha/phat-trien/tre-hoc-noi (trang ấy không bàn về song ngữ). Thêm nguồn Hoff 2012 (bậc 1) vì nguồn cũ là bài giảng của I-LABS (viện nghiên cứu, không bình duyệt). Cơ sở còn mỏng: một nghiên cứu ở gia đình có điều kiện kinh tế cao; cần tổng quan. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Trẻ song ngữ đạt các mốc ngôn ngữ — bập bẹ, từ đầu tiên, ghép từ — ở cùng độ tuổi với trẻ đơn ngữ, miễn là tính cả hai ngôn ngữ. Cảm giác “chậm” thường đến từ việc chỉ đếm số từ của một ngôn ngữ.'' → mới ''Trẻ học hai ngôn ngữ từ nhỏ đạt các mốc ngôn ngữ ở cùng độ tuổi với trẻ đơn ngữ, như nói từ đầu tiên vào khoảng 12 tháng. Nếu chỉ so một ngôn ngữ, trẻ song ngữ có thể biết ít từ hơn trẻ đơn ngữ; nhưng tính cả hai ngôn ngữ thì tổng vốn từ tương đương (nghiên cứu năm 2012 ở trẻ 22–30 tháng).'' | nguon: cũ [''ilabs-bilingual''] → mới [''hoff2012'', ''ilabs-bilingual''] | trang: cũ ''kham-pha/phat-trien/tre-hoc-noi'' → mới None'
+nguon:
+- id: hoff2012
+  ten: Hoff và cộng sự (2012). Dual language exposure and early bilingual development
+  link: https://doi.org/10.1017/s0305000910000759
+- id: ilabs-bilingual
+  ten: Institute for Learning & Brain Sciences và cộng sự (n.d.). Milestones in bilingual language acquisition
+  link: https://modules.ilabs.uw.edu/module/bilingual-language-development/milestones-in-bilingual-language-acquisition/
+nhan_dinh:
+- id: nhan
+  cau: 'Trẻ học hai ngôn ngữ cùng lúc sẽ chậm nói: đã bị bác bỏ.'
+  loai: nhan
+  truong:
+  - khang_dinh
+  - nhan
+  nhan: bac-bo
+  nguon:
+  - hoff2012
+  - ilabs-bilingual
+  co_so:
+  - hoff2012
+  - ilabs-bilingual
+  ly_do: Mốc ngôn ngữ như trẻ đơn ngữ (I-LABS); tổng vốn từ tương đương (Hoff 2012).
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+- id: g1
+  cau: Trẻ song ngữ từ nhỏ đạt mốc ngôn ngữ cùng tuổi trẻ đơn ngữ; từ đầu tiên khoảng 12 tháng.
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - ilabs-bilingual
+  trich: Simultaneous bilinguals reach language milestones at the same ages as their monolingual peers. Regardless of how many languages they are learning, children usually say their first words around 12 months of age.
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "bập bẹ, từ đầu tiên, ghép từ ... miễn là tính cả hai ngôn ngữ": viết theo đúng trang nguồn.'
+- id: g2
+  cau: 'Hoff 2012 (22–30 tháng): so từng ngôn ngữ, trẻ đơn ngữ hơn về từ vựng và ngữ pháp; tổng vốn từ tương đương.'
+  loai: phat-hien
+  truong:
+  - giai_thich
+  nguon:
+  - hoff2012
+  trich: compared the language development of equivalently high-SES samples of bilingually and monolingually developing children from 1 ; 10 to 2 ; 6. The monolingually developing children were significantly more advanced ... in single language comparisons, but they were comparable on a measure of total vocabulary.
+  ket_qua: da-sua
+  ghi_chu: 'Cũ "Cảm giác chậm thường đến từ việc chỉ đếm số từ của một ngôn ngữ": thay bằng kết quả có nguồn.'
