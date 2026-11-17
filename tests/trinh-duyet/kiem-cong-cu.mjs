@@ -198,6 +198,65 @@ const LUONG = {
 		},
 	},
 	/**
+	 * Dữ liệu của tôi (D8-L4): khôi phục từ file (xem trước, gộp; gộp lại lần nữa không thêm gì), tải bản sao lưu (đúng
+	 * dữ liệu trong kho), xóa hai bước, tắt rồi bật lại dùng khi mất mạng (tùy chọn lưu trong kho).
+	 */
+	'du-lieu-cua-toi': {
+		trang: 'them/du-lieu-cua-toi/',
+		lop: 'pz-du-lieu-cua-toi',
+		async chay({ p, el }) {
+			await el.getByText('Chưa có kết quả nào lưu trên trình duyệt này.').waitFor();
+			const t = Date.UTC(2026, 10, 1);
+			const saoLuu = { v: 1, records: { a: { id: 'a', kind: 'stroop', t, effect: 100, pct: 15 }, b: { id: 'b', kind: 'quiz', t, score: 3, total: 5 } }, prefs: {} };
+			const nap = () => el.locator('input[type=file]').setInputFiles({ name: 'sao-luu.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(saoLuu)) });
+			await nap();
+			await el.getByText('Sẽ thêm 2 bản ghi mới.', { exact: false }).waitFor();
+			await bam(el, 'Gộp vào dữ liệu hiện có');
+			await el.getByText('Trên trình duyệt này đang có 2 bản ghi, trong 1 ngày khác nhau:').waitFor();
+			assert.equal((await banGhi(p, 'stroop')).length, 1);
+			await nap();
+			await el.getByText('File này không có bản ghi nào mới (2 bản ghi đã có sẵn).').waitFor();
+			await bam(el, 'Hủy');
+			const [tai] = await Promise.all([p.waitForEvent('download'), bam(el, 'Tải bản sao lưu (JSON)')]);
+			assert.match(tai.suggestedFilename(), /^psyche-zero-\d{4}-\d{2}-\d{2}\.json$/);
+			const chu = fs.readFileSync(await tai.path(), 'utf8');
+			assert.deepEqual(Object.keys(JSON.parse(chu).records).sort(), ['a', 'b']);
+			await bam(el, 'Tắt và xóa các trang đã lưu');
+			await el.getByRole('button', { name: 'Bật lại', exact: true }).waitFor();
+			assert.equal(await p.evaluate(() => JSON.parse(localStorage.getItem('psyche-zero')).prefs['ngoai-tuyen'].value), false);
+			await bam(el, 'Xóa toàn bộ kết quả');
+			await bam(el, 'Xóa hẳn');
+			await el.getByText('Chưa có kết quả nào lưu trên trình duyệt này.').waitFor();
+			// xóa kết quả không bật lại dùng khi mất mạng
+			assert.equal(await p.evaluate(() => JSON.parse(localStorage.getItem('psyche-zero')).prefs['ngoai-tuyen'].value), false);
+			await bam(el, 'Bật lại');
+			await el.getByRole('button', { name: 'Tắt và xóa các trang đã lưu', exact: true }).waitFor();
+		},
+	},
+	/** Nhật ký (D8-L4): trống thì có lời dẫn; có bản ghi thì nhóm theo ngày, mới nhất trước, tên bài của câu hỏi. */
+	'nhat-ky': {
+		trang: 'them/nhat-ky/',
+		lop: 'pz-nhat-ky',
+		async chay({ p, el }) {
+			await el.getByText('Nhật ký còn trống').waitFor();
+			await p.evaluate(() => {
+				const t = new Date(2026, 10, 16, 9, 5).getTime();
+				const records = {
+					a: { id: 'a', kind: 'stroop', t, effect: 100, pct: 15 },
+					b: { id: 'b', kind: 'quiz', t: t + 86400e3, quiz: '/psyche-zero/thi-nghiem/asch/#quiz-0', score: 3, total: 5 },
+				};
+				localStorage.setItem('psyche-zero', JSON.stringify({ v: 1, records, prefs: {} }));
+			});
+			await p.reload({ waitUntil: 'load' });
+			await toiKhi(p, () => document.querySelector('.pz-nhat-ky')?.dataset.san === '1', null, { ten: 'nhật ký dựng lại' });
+			const ngay = await el.locator('h2').allTextContents();
+			assert.deepEqual(ngay, ['Thứ Ba, 17/11/2026', 'Thứ Hai, 16/11/2026']);
+			await el.getByText('2 lần thử trong 2 ngày.').waitFor();
+			await el.getByText('Đúng 3/5 câu').waitFor();
+			await el.getByText('Hiệu ứng 100 ms (chậm hơn 15,0%)').waitFor();
+		},
+	},
+	/**
 	 * "Bạn nghĩ gì về tâm trí?" (D8-L3): thẻ lẻ chọn bằng nút (chạm), thẻ chẵn bằng phím 1–3 (tiêu điểm đã ở nút đầu của
 	 * thẻ); mỗi thẻ hiện nhãn và giải thích; cuối lượt lưu kind "myths" như site cũ; "Chơi lại" bắt đầu lượt mới.
 	 */

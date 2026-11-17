@@ -132,6 +132,10 @@ export const CONG_CU = {
 	'ao-giac': { lop: 'pz-ao-giac', thongSo: [] },
 	'mu-thay-doi': { lop: 'pz-mu-thay-doi', thongSo: [] },
 	ebbinghaus: { lop: 'pz-ebbinghaus', thongSo: [] },
+	// D8-L4: hai trang đọc kho kết quả trong trình duyệt (src/scripts/cong-cu/chung/luu.js). canTrang: khối mang danh sách
+	// trang có trong bản build và tên của chúng (data-trang), để công cụ chỉ đặt link tới trang có thật
+	'du-lieu-cua-toi': { lop: 'pz-du-lieu-cua-toi', thongSo: [], canTrang: true },
+	'nhat-ky': { lop: 'pz-nhat-ky', thongSo: [], canTrang: true },
 	// trò chơi "Bạn nghĩ gì về tâm trí?" (D8-L3): limit (số thẻ mỗi lượt), level (chỉ thẻ có cap từ 1 đến level), như
 	// data-limit, data-level của site cũ; thẻ lấy từ src/data/ngo-nhan.yml lúc build (duLieuNgoNhan), nhúng vào data-the
 	'ngo-nhan': { lop: 'pz-ngo-nhan', thongSo: ['limit', 'level'], duLieu: 'ngo-nhan' },
@@ -162,13 +166,15 @@ export function congCu({ ten, ...thongSo }, trang, duLieu = {}) {
 	const data = Object.entries(thongSo)
 		.map(([k, v]) => ` data-${k}="${esc(v)}"`)
 		.join('');
+	// công cụ cần danh sách trang có trong bản build (D8-L4, canTrang: Dữ liệu của tôi, Nhật ký): data-trang
+	const dsTrang = cc.canTrang ? ` data-trang="${esc(JSON.stringify(duLieu.trang ? duLieu.trang() : {}))}"` : '';
 	// công cụ dựng từ dữ liệu (trò chơi ngộ nhận): dữ liệu lúc build, dạng JSON trong data-the
 	let them = '';
 	if (cc.duLieu) {
 		if (!duLieu[cc.duLieu]) throw new Error(`công cụ "${ten}" cần dữ liệu "${cc.duLieu}" lúc build`);
 		them = ` data-the="${esc(JSON.stringify(duLieu[cc.duLieu]()))}"`;
 	}
-	return `<div class="pz-cong-cu ${cc.lop} not-content" data-cong-cu="${ten}"${data}${them} data-pagefind-ignore></div>`;
+	return `<div class="pz-cong-cu ${cc.lop} not-content" data-cong-cu="${ten}"${data}${dsTrang}${them} data-pagefind-ignore></div>`;
 }
 
 // ---------- Hình ----------
@@ -316,6 +322,108 @@ export function congCuNoiBat({ banGhi, trangCo, docsDir, base }) {
 	const ds = banGhi.filter((r) => r.tang === 'cong-cu' && co.has(r.id) && !r.id.endsWith('/index'));
 	if (!ds.length) return `<p class="pz-ds-bai__con not-content">Công cụ tự trải nghiệm lên site sau khi số liệu trong công cụ được kiểm chứng lại.</p>`;
 	return `<div class="pz-ds-bai not-content"><ul>${ds.map((r) => mucBai(r.id, docsDir, base)).join('')}</ul></div>`;
+}
+
+/**
+ * Tên của các trang có trong bản build, cho công cụ cần đặt link (CONG_CU[…].canTrang): { "trai-nghiem/stroop": "Hiệu
+ * ứng Stroop", … }, chỉ trang tầng cong-cu, bài thử và bài (laBai), để khối không quá lớn.
+ */
+export function tenCacTrang({ banGhi, trangCo, docsDir }) {
+	const co = new Set(trangCo);
+	return Object.fromEntries(
+		banGhi
+			.filter((r) => co.has(r.id) && (r.tang === 'cong-cu' || laBai(r) || ['bat-dau/ban-nghi-gi', 'trai-nghiem/index'].includes(r.id)))
+			.map((r) => [r.id, String(frontmatter(r.id, docsDir).title ?? r.id)]),
+	);
+}
+
+// ---------- Tờ tóm tắt, Sách in (D8-L4): sinh lúc build, chỉ từ trang có trong bản build ----------
+
+/** Bài vào Sách in và Tờ tóm tắt: bài (laBai) có trong bản build, theo lĩnh vực (thu_tu) rồi thứ tự của trang.yml. */
+export function baiTheoLinhVuc({ banGhi, linhVuc, trangCo }) {
+	const co = new Set(trangCo);
+	return [...linhVuc]
+		.sort((a, b) => a.thu_tu - b.thu_tu)
+		.map((lv) => ({ lv, bai: banGhi.filter((r) => baiKhamPha(r, lv.id) && co.has(r.id)) }))
+		.filter((x) => x.bai.length);
+}
+
+/** Số bài (laBai) có trong trang.yml mà chưa có trong bản build. */
+export const soBaiChuaLen = ({ banGhi, trangCo }) => {
+	const co = new Set(trangCo);
+	return banGhi.filter((r) => laBai(r) && !co.has(r.id)).length;
+};
+
+/** Ý chính của các khung nhãn trong chữ nguồn của một trang, theo thứ tự: [{ ma, y }]. */
+export const yChinh = (nguon) => [...String(nguon).matchAll(/^:::(vung-chac|kha-vung|tranh-cai|bac-bo)\[(.+)\]\s*$/gm)].map(([, ma, y]) => ({ ma, y }));
+
+const hoaDau = (x) => x.replace(/^(\P{L}*)(\p{L})/u, (_, a, b) => a + b.toLocaleUpperCase('vi'));
+const CHUA_KIEM = '<span class="pz-sach__chua">chưa kiểm định, chỉ có ở bản xem</span>';
+
+/**
+ * ::to-tom-tat: mỗi lĩnh vực một mục; mỗi bài: tên (link về bài), mô tả, và các ý chính kèm nhãn mức độ chắc chắn (như
+ * hộp "Tóm tắt nhanh" của bài). Chữ đều lấy từ trang có trong bản build (bản thật: đã khóa); bài chưa khóa (chỉ ở bản
+ * xem) được đánh dấu. Cuối cùng một dòng đếm bài chưa lên.
+ */
+export function toTomTat(d) {
+	const { docsDir, base, ngayKhoa } = d;
+	const nhom = baiTheoLinhVuc(d);
+	const con = soBaiChuaLen(d);
+	const doc = (t) => fs.readFileSync(path.join(docsDir, `${t}.md`), 'utf8');
+	return (
+		`<div class="pz-to-tom-tat not-content">` +
+		nhom
+			.map(
+				({ lv, bai }) =>
+					`<section class="pz-to-tom-tat__lv" style="--h: ${lv.mau}" aria-labelledby="lv-${lv.id}"><h2 id="lv-${lv.id}">${esc(lv.ten)}</h2><ul>` +
+					bai
+						.map((r) => {
+							const fm = frontmatter(r.id, docsDir);
+							const y = yChinh(doc(r.id));
+							return (
+								`<li><p class="pz-to-tom-tat__ten"><a href="${diaChi(r.id, base)}">${esc(fm.title ?? r.id)}</a>${ngayKhoa(r.id) ? '' : ` ${CHUA_KIEM}`}</p>` +
+								(fm.description ? `<p class="pz-to-tom-tat__mo">${esc(fm.description)}</p>` : '') +
+								(y.length ? `<ul class="pz-to-tom-tat__y">${y.map(({ ma, y }) => `<li>${chipNhan(ma)} ${md(hoaDau(y))}</li>`).join('')}</ul>` : '') +
+								`</li>`
+							);
+						})
+						.join('') +
+					`</ul></section>`,
+			)
+			.join('') +
+		(nhom.length ? '' : `<p class="pz-ds-bai__con">Chưa có bài nào lên site.</p>`) +
+		(con ? `<p class="pz-ds-bai__con">Còn ${con} bài sắp có: mỗi bài vào tờ tóm tắt sau khi được kiểm chứng lại.</p>` : '') +
+		`</div>`
+	);
+}
+
+/** ::sach-in: chỗ đặt nội dung sách, do src/components/SachIn.astro dựng (MarkdownContent.astro thay chỗ này). */
+export const CHO_SACH = '<div class="pz-sach-cho" data-sach-in></div>';
+
+/**
+ * HTML đã dựng của một bài, đặt vào Sách in (SachIn.astro): mọi id thêm tiền tố của bài (link #mục trong bài, hình SVG
+ * dùng url(#…), aria-*) để không trùng giữa các bài; tiêu đề lùi hai bậc (bài là h3 dưới h2 của lĩnh vực); vùng có tên
+ * (aside, role="region") thêm tên bài vào tên, để các vùng không trùng tên trong cùng trang (axe landmark-unique); công cụ
+ * tương tác thay bằng một dòng link về trang; câu hỏi giữ bản tĩnh (bỏ dữ liệu cho bản bấm được).
+ */
+export function baiTrongSach(html, { tienTo, ten, diaChiBai }) {
+	const p = (id) => `${tienTo}--${id}`;
+	const nhieu = (v) => v.split(/\s+/).filter(Boolean).map(p).join(' ');
+	const tenBai = esc(ten);
+	return String(html)
+		.replace(/<div class="pz-cong-cu [^"]*"[^>]*><\/div>/g, `<p class="pz-sach__cong-cu">Công cụ tương tác: trải nghiệm ở <a href="${diaChiBai}">trang của bài trên web</a>.</p>`)
+		// câu hỏi chỉ giữ bản tĩnh: bỏ dữ liệu của bản bấm được và đổi lớp, để không có gì chờ được dựng (bộ tải, kiểm thử)
+		.replace(/\sdata-quiz="[^"]*"/g, '')
+		.replace(/class="pz-quiz not-content"/g, 'class="pz-quiz-sach not-content"')
+		.replace(/(\s)id="([^"]+)"/g, (_, s, id) => `${s}id="${p(id)}"`)
+		.replace(/(\s(?:xlink:)?href)="#([^"]+)"/g, (_, a, id) => `${a}="#${p(id)}"`)
+		.replace(/url\(#([^)]+)\)/g, (_, id) => `url(#${p(id)})`)
+		.replace(/(\s(?:aria-labelledby|aria-describedby|aria-controls|for))="([^"]+)"/g, (_, a, v) => `${a}="${nhieu(v)}"`)
+		.replace(/<(\/?)h([2-6])\b/g, (_, c, n) => `<${c}h${Math.min(6, Number(n) + 2)}`)
+		.replace(/\blevel-h([2-6])\b/g, (_, n) => `level-h${Math.min(6, Number(n) + 2)}`)
+		.replace(/<(aside|div|section)\b([^>]*)\saria-label="([^"]*)"/g, (m, the, tt, nhan) =>
+			the === 'aside' || /\srole="region"/.test(m) ? `<${the}${tt} aria-label="${nhan} (bài: ${tenBai})"` : m,
+		);
 }
 
 // ---------- Thẻ ngộ nhận (D8-L3): trang Ngộ nhận và trò chơi "Bạn nghĩ gì về tâm trí?" ----------

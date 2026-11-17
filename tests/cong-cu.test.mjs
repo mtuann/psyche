@@ -148,6 +148,13 @@ test('kho: ghi hỏng (đầy chỗ) thì bản ghi vẫn còn trong phiên; ch�
 	}
 });
 
+test('chuẩn hóa: id hay khóa "__proto__" trong file sao lưu bị bỏ, không đổi prototype (review D8-L4)', () => {
+	const d = L.chuanHoa(JSON.parse('{"v":1,"records":{"__proto__":{"kind":"quiz","t":1},"a":{"kind":"quiz","t":2}},"prefs":{"__proto__":{"value":1,"t":1}}}'));
+	assert.deepEqual(Object.keys(d.records), ['a']);
+	assert.equal(Object.getPrototypeOf(d.records), Object.prototype);
+	assert.equal(Object.getPrototypeOf(d.prefs), Object.prototype);
+});
+
 // ---------- Thống kê dùng chung ----------
 
 test('trung vị, phân vị, trung bình, độ lệch chuẩn; trung vị không bị một lượt rất chậm kéo lệch', () => {

@@ -13,6 +13,9 @@ const LUAT = [
 	['.pz-ao-giac', () => import('./cong-cu/ao-giac.js'), false],
 	['.pz-mu-thay-doi', () => import('./cong-cu/mu-thay-doi.js'), false],
 	['.pz-ebbinghaus', () => import('./cong-cu/ebbinghaus.js'), false],
+	// D8-L4: hai trang đọc kho kết quả; khối ở đầu trang nên khởi tạo ngay
+	['.pz-du-lieu-cua-toi', () => import('./cong-cu/du-lieu-cua-toi.js'), true],
+	['.pz-nhat-ky', () => import('./cong-cu/nhat-ky.js'), true],
 	['.pz-ngo-nhan', () => import('./cong-cu/ngo-nhan.js'), false],
 	['.pz-tri-nho-sai', () => import('./cong-cu/tri-nho-sai.js'), false],
 	['.pz-wason-246', () => import('./cong-cu/wason-246.js'), false],

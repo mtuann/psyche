@@ -24,9 +24,9 @@ export function chuanHoa(data) {
 	if (!laDoiTuong(data)) return ra;
 	if (laDoiTuong(data.records))
 		for (const [id, r] of Object.entries(data.records))
-			if (laDoiTuong(r) && typeof r.kind === 'string' && typeof r.t === 'number') ra.records[id] = { ...r, id };
+			if (id !== '__proto__' && laDoiTuong(r) && typeof r.kind === 'string' && typeof r.t === 'number') ra.records[id] = { ...r, id };
 	if (laDoiTuong(data.prefs))
-		for (const [k, p] of Object.entries(data.prefs)) if (laDoiTuong(p) && typeof p.t === 'number') ra.prefs[k] = { value: p.value, t: p.t };
+		for (const [k, p] of Object.entries(data.prefs)) if (k !== '__proto__' && laDoiTuong(p) && typeof p.t === 'number') ra.prefs[k] = { value: p.value, t: p.t };
 	return ra;
 }
 

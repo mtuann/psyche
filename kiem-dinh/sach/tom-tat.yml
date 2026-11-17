@@ -1,0 +1,40 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa sach/tom-tat
+trang: src/content/docs/sach/tom-tat.md
+nguon_cu: ../psyche-zero/docs/sach/tom-tat.md
+tang: khung
+muc: null
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l4
+    ma_bam: sha256:74c62bb8721a50bbec09f97f212885edf5cdc43f16c7b1da992d18a96d82097d
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+      luot_2: không cần (mọi nhận định là câu ve-site, không có câu vào lượt 2 D8-L4)
+      review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l4-kiem-mau.yml), đạt, 17/11/2026
+nguon: []
+nhan_dinh:
+  - id: s1
+    cau: 'Mỗi bài một mục: tên bài (link về bài đầy đủ), mô tả ngắn, và các kết luận chính kèm nhãn mức độ chắc chắn, lấy từ các khung nhãn trong bài (như hộp "Tóm tắt nhanh" ở đầu bài).'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'toTomTat (src/plugins/thanh-phan.mjs): tên, mô tả từ frontmatter của bài; ý chính và nhãn từ các dòng :::<nhãn>[ý chính] của chữ nguồn (yChinh, cùng biểu thức với hộp ::tom-tat). tests/them.test.mjs, tests/sach.test.mjs (mỗi bài trong bản build một mục).'
+  - id: s2
+    cau: Tờ này tự cập nhật mỗi khi site có bài mới.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: Dựng lúc build (::to-tom-tat), chỉ từ bài có trong bản build; không có file sinh nào commit.
+  - id: s3
+    cau: Link tới trang Cách đọc nhãn.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: Trang bat-dau/doc-nhan-chac-chan đã khóa (kiem-dinh/khoa.json).
+doi_chu:
+  - cu: 'Trang do tools/book.py sinh và commit: mỗi bài một dòng (tên, mô tả, danh sách tên các nhãn có trong bài)'
+    moi: 'Trang khung (lời dẫn, ::to-tom-tat): mỗi bài một mục, mỗi kết luận chính một dòng kèm nhãn, sinh lúc build'
+    ly_do: 'Kế hoạch: Tờ tóm tắt sinh lúc build từ trang đã khóa. Liệt kê ý chính kèm nhãn thay cho danh sách tên nhãn: người đọc biết nhãn nói về điều gì.'
+ghi_chu: 'Trang khung: lời dẫn viết mới; phần còn lại sinh từ chữ của các bài đã khóa.'

@@ -148,14 +148,17 @@
 }
 
 /* ---------- Câu hỏi kiểm tra nhanh ---------- */
-.pz-quiz {
+/* .pz-quiz-sach: câu hỏi trong Sách in, chỉ có bản tĩnh (src/plugins/thanh-phan.mjs, baiTrongSach) */
+.pz-quiz,
+.pz-quiz-sach {
 	margin-block: 1.5rem;
 	padding: 1rem 1.15rem;
 	border: 1px solid var(--pz-border);
 	border-radius: 1rem;
 	background: var(--pz-card);
 }
-.pz-quiz :is(p, li) {
+.pz-quiz :is(p, li),
+.pz-quiz-sach :is(p, li) {
 	max-width: none;
 }
 /* Bản tĩnh (chưa có JavaScript, khi in): câu đánh số, đáp án đúng in đậm, giải thích ngay dưới */
@@ -1194,6 +1197,209 @@
 	font-size: var(--sl-text-sm);
 	line-height: 1.5;
 	white-space: pre;
+}
+
+/* ---------- Dữ liệu của tôi, Nhật ký (D8-L4: src/scripts/cong-cu/du-lieu-cua-toi.js, nhat-ky.js) ---------- */
+.pz-du-lieu-cua-toi,
+.pz-nhat-ky {
+	min-height: 8rem;
+}
+.pz-cong-cu .pz-du-lieu__hop {
+	margin: 0.75rem 0;
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 0.75rem;
+	background: var(--pz-card);
+}
+.pz-cong-cu .pz-du-lieu__hop--xoa {
+	border-color: var(--sl-color-orange);
+}
+.pz-cong-cu .pz-du-lieu__tieu-de {
+	font-weight: 700;
+}
+.pz-cong-cu .pz-du-lieu__ngoai-tuyen {
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--pz-border);
+}
+.pz-du-lieu__bao:empty {
+	display: none;
+}
+.pz-du-lieu__bao {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+}
+.pz-du-lieu-cua-toi h2,
+.pz-cong-cu .pz-nhat-ky__ngay h2 {
+	margin-top: 1.5rem;
+	font-size: var(--sl-text-lg);
+}
+.pz-cong-cu .pz-nhat-ky__ds {
+	margin: 0.5rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+.pz-cong-cu .pz-nhat-ky__ds li {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 0.75rem;
+	max-width: none;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid var(--pz-border);
+}
+.pz-cong-cu .pz-nhat-ky__ds time {
+	grid-row: span 2;
+	color: var(--sl-color-gray-2);
+	font-variant-numeric: tabular-nums;
+}
+.pz-cong-cu .pz-nhat-ky__tom-tat {
+	grid-column: 2;
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+}
+
+/* ---------- Tờ tóm tắt (::to-tom-tat, D8-L4) ---------- */
+.pz-to-tom-tat__lv {
+	--lv: hsl(var(--h) 70% 80%);
+}
+:root[data-theme='light'] .pz-to-tom-tat__lv {
+	--lv: hsl(var(--h) 55% 30%);
+}
+.sl-markdown-content .pz-to-tom-tat__lv h2 {
+	margin-top: 2rem;
+	padding-bottom: 0.25rem;
+	border-bottom: 3px solid var(--lv);
+}
+.sl-markdown-content .pz-to-tom-tat__lv > ul {
+	padding: 0;
+	list-style: none;
+}
+.sl-markdown-content .pz-to-tom-tat__lv > ul > li {
+	max-width: none;
+	margin-top: 1rem;
+}
+.sl-markdown-content .pz-to-tom-tat__ten {
+	margin: 0;
+	font-weight: 600;
+}
+.sl-markdown-content .pz-to-tom-tat__mo {
+	margin: 0.15rem 0 0;
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+}
+.sl-markdown-content .pz-to-tom-tat__y {
+	margin: 0.35rem 0 0;
+	padding-inline-start: 0;
+	list-style: none;
+	font-size: var(--sl-text-sm);
+}
+.sl-markdown-content .pz-to-tom-tat__y li {
+	margin-top: 0.2rem;
+}
+.pz-sach__chua {
+	padding: 0 0.4em;
+	border-radius: 0.3em;
+	background: var(--sl-color-orange-low);
+	color: var(--sl-color-white);
+	font-size: var(--sl-text-xs);
+	font-weight: 400;
+}
+
+/* ---------- Sách in (::sach-in, src/components/SachIn.astro, D8-L4) ---------- */
+.pz-sach__bia {
+	font-weight: 600;
+}
+/* mục lục của sách không đánh số như mục lớn của bài (src/styles/psyche.css) */
+[data-has-sidebar] .sl-markdown-content .pz-sach__muc-luc h2 {
+	counter-increment: none;
+}
+[data-has-sidebar] .sl-markdown-content .pz-sach__muc-luc h2::before {
+	content: none;
+}
+.pz-sach__muc-luc > ol {
+	padding-inline-start: 1.3rem;
+}
+.pz-sach__muc-luc ol ol {
+	margin-top: 0.25rem;
+	padding-inline-start: 1.2rem;
+	list-style: disc;
+	font-size: var(--sl-text-sm);
+}
+.pz-sach__lv {
+	--lv: hsl(var(--h) 70% 80%);
+}
+:root[data-theme='light'] .pz-sach__lv {
+	--lv: hsl(var(--h) 55% 30%);
+}
+.sl-markdown-content .pz-sach__lv > h2 {
+	margin-top: 3rem;
+	padding-bottom: 0.3rem;
+	border-bottom: 4px solid var(--lv);
+}
+.pz-sach__bai {
+	margin-top: 2.5rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--pz-border);
+}
+.sl-markdown-content .pz-sach__dau > * {
+	margin-top: 0.3rem;
+}
+.sl-markdown-content .pz-sach__lv-ten {
+	color: var(--lv);
+	font-size: var(--sl-text-xs);
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+.sl-markdown-content .pz-sach__dau h3 {
+	margin-top: 0.2rem;
+	font-size: var(--sl-text-2xl);
+}
+.sl-markdown-content .pz-sach__mo {
+	font-size: var(--sl-text-lg);
+	color: var(--sl-color-gray-2);
+}
+.sl-markdown-content .pz-sach__trang-thai {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+	overflow-wrap: anywhere;
+}
+.sl-markdown-content .pz-sach__ra-soat {
+	padding: 0.6rem 0.9rem;
+	border-inline-start: 4px solid var(--sl-color-orange);
+	background: var(--sl-color-orange-low);
+	color: var(--sl-color-white);
+	overflow-wrap: anywhere;
+}
+.sl-markdown-content .pz-sach__cong-cu {
+	padding: 0.6rem 0.9rem;
+	border: 1px dashed var(--pz-border);
+	border-radius: 0.5rem;
+	font-style: italic;
+}
+
+/* ---------- Bản in (D8-L4): chỉ nội dung, mỗi bài của Sách in sang trang giấy mới ---------- */
+@media print {
+	/* menu, mục lục bên đã ẩn khi in (lớp print:hidden của Starlight); thanh trên nền chàm đậm tốn mực, không mang nội dung */
+	.page > header.header,
+	.sl-anchor-link,
+	.pagination-links {
+		display: none !important;
+	}
+	.pz-sach__bai {
+		break-before: page;
+		border-top: 0;
+		margin-top: 0;
+	}
+	.pz-sach__lv > h2 {
+		break-after: avoid;
+	}
+	.pz-sach__muc-luc {
+		break-after: page;
+	}
+	.pz-to-tom-tat__lv > ul > li {
+		break-inside: avoid;
+	}
 }
 
 /* ---------- Thẻ ngộ nhận (D8-L3): trang Ngộ nhận (::ngo-nhan) và trò chơi "Bạn nghĩ gì về tâm trí?" ---------- */

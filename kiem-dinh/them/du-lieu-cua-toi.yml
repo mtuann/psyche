@@ -1,0 +1,80 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa them/du-lieu-cua-toi
+trang: src/content/docs/them/du-lieu-cua-toi.md
+nguon_cu: ../psyche-zero/docs/them/du-lieu-cua-toi.md
+tang: cong-cu
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l4
+    ma_bam: sha256:b8ef748f75a960674cb7c6fe60683229c764304a39e21e329fb0dfb91dcb50f8
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L4, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l4-kiem-mau.yml), đạt, 17/11/2026
+nguon:
+  - id: mdn-localstorage
+    ten: 'MDN Web Docs, Window: localStorage property (mục Value, Exceptions), đọc ngày 17/11/2026'
+    link: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+    toan_van: true
+nhan_dinh:
+  - id: s1
+    cau: Kết quả các bài thử, lượt chơi thẻ ngộ nhận và các phần "Thử suy ngẫm" được lưu chỉ trên trình duyệt này (trong localStorage); Psyche không có máy chủ lưu dữ liệu, và không gửi kết quả của bạn đi đâu.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'src/scripts/cong-cu/chung/luu.js (khóa localStorage psyche-zero); src/scripts/quiz.js lưu bản ghi quiz qua đó; tìm fetch, XMLHttpRequest, sendBeacon, WebSocket trong src/scripts/: không có (17/11/2026). Thẻ ngộ nhận (D8-L3) lưu kind myths như site cũ.'
+  - id: n1
+    cau: Dữ liệu trong localStorage mất nếu bạn xóa dữ liệu duyệt web, và không tự đồng bộ sang thiết bị khác; trình duyệt có thể chặn lưu (chế độ riêng tư, người dùng tắt lưu dữ liệu trang web).
+    loai: dinh-nghia
+    nguon:
+      - mdn-localstorage
+    trich: allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions. … (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed.) … The request violates a policy decision. For example, the user has configured the browsers to prevent the page from persisting data.
+    vi_tri: mục mô tả, Exceptions (SecurityError)
+    ket_qua: dung
+    ghi_chu: '"Không tự đồng bộ sang thiết bị khác": localStorage gắn với nguồn (origin) của tài liệu trong trình duyệt ấy (MDN: "Storage object for the Document''s origin"); "mất khi xóa dữ liệu duyệt web" là hệ quả của lưu trong trình duyệt. Câu cảnh báo trong công cụ ("chế độ riêng tư hay đã tắt lưu dữ liệu trang web") cùng nguồn.'
+    luot_2: dung
+    luot_2_nguon: [ "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API", "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria" ]
+    luot_2_ghi_chu: MDN không có câu riêng về người dùng xóa dữ liệu duyệt web, nhưng đó là hành vi chuẩn của trình duyệt; phần chặn lưu và chế độ riêng tư đã xác nhận.
+  - id: s2
+    cau: Kết quả đã lưu khi dùng Psyche Zero (bản cũ của site) vẫn còn ở đây, vì hai bản dùng chung chỗ lưu.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'Hai bản cùng nguồn https://mtuann.github.io (localStorage theo nguồn) và cùng khóa psyche-zero, dữ liệu phiên bản 1 y như progress.js của site cũ (chung/luu.js, tests/cong-cu.test.mjs "kho: khóa và phiên bản như site cũ"). Câu mới.'
+  - id: s3
+    cau: 'Bạn có thể tải một file sao lưu và khôi phục ở nơi khác; khôi phục là gộp, không ghi đè: các bản ghi trong file được thêm vào, không có gì bị xóa; gộp cùng một file nhiều lần không tạo bản ghi trùng lặp; trước khi gộp, bạn thấy số bản ghi mới sẽ được thêm.'
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: 'src/scripts/cong-cu/du-lieu-cua-toi.js (taiVe, xemTruoc dùng soSanh, nhap dùng gop); chung/luu.js gop: hợp theo id (tests/cong-cu.test.mjs: không mất, không nhân đôi, lũy đẳng); luồng trên ba trình duyệt: tests/trinh-duyet/kiem-cong-cu.mjs (gộp lại cùng file: "không có bản ghi nào mới").'
+  - id: s4
+    cau: Xóa toàn bộ kết quả qua hai bước (hỏi lại trước khi xóa); xóa kết quả không bật lại việc lưu trang khi đã tắt.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: du-lieu-cua-toi.js (hoiXoa; giữ tùy chọn ngoai-tuyen false sau xoaHet); tests/trinh-duyet/kiem-cong-cu.mjs.
+  - id: s5
+    cau: Khi bật (mặc định), trình duyệt lưu các trang bạn đã mở trên máy này, cùng trang Hỗ trợ, để đọc lại được khi mất mạng; mỗi lần site cập nhật, các trang đã lưu bị xóa để khỏi đọc phải bản cũ, trang nào bạn mở lại thì được lưu bản mới; trang chưa mở lần nào thì chưa đọc được khi mất mạng; tắt thì các trang đã lưu bị xóa, kết quả bài thử không bị ảnh hưởng.
+    loai: ve-site
+    ket_qua: da-sua
+    review: sai
+    ghi_chu: 'src/scripts/ngoai-tuyen/sw.js (điều hướng: mạng trước rồi lưu; lưu sẵn ho-tro/ lúc cài; phiên bản mới xóa bộ nhớ đệm psyche- cũ), dang-ky.js (mặc định đăng ký; tùy chọn false thì gỡ và xóa bộ nhớ đệm); du-lieu-cua-toi.js (tat chỉ xóa bộ nhớ đệm psyche-, không đụng khóa kết quả). tests/trinh-duyet/kiem-ngoai-tuyen.mjs (Chromium, WebKit: trang đã mở đọc được khi mất mạng; trang chưa mở hiện "Đang mất mạng"; tắt thì gỡ, xóa). Review (Claude Opus 5.5, agent riêng, 17/11/2026): sai như chữ cũ ("mỗi lần site cập nhật, bản lưu cũ được thay"): sw.js, sự kiện activate, xóa mọi bộ nhớ đệm psyche-moi- khác phiên bản mới, nên sau mỗi lần deploy các trang đã lưu mất hết (chỉ còn Hỗ trợ, lưu sẵn lúc cài), không được thay bằng bản mới; trang chỉ được lưu lại khi mở lại. Đã sửa câu trên trang. Chữ cùng ý trong công cụ (du-lieu-cua-toi.js, veNgoaiTuyen) chưa sửa (không sửa mã ở bước review; ghi ở báo cáo).'
+  - id: s6
+    cau: Trình duyệt không hỗ trợ service worker thì công cụ nói rõ không lưu được trang để đọc khi mất mạng.
+    loai: ve-site
+    ket_qua: dung
+    review: dung
+    ghi_chu: du-lieu-cua-toi.js (coSw).
+doi_chu:
+  - cu: '"Psyche Zero không có máy chủ lưu dữ liệu"'
+    moi: '"Psyche không có máy chủ lưu dữ liệu"'
+    ly_do: Đổi tên site
+  - cu: (không có)
+    moi: Câu về dữ liệu của Psyche Zero; mục "Đọc khi mất mạng"; mô tả trang thêm "bật, tắt việc lưu trang để đọc khi mất mạng"
+    ly_do: 's2, s5: công cụ của trang này thêm phần bật, tắt dùng khi mất mạng (D8-L4)'
+  - cu: 'Xóa: hộp xác nhận của trình duyệt (window.confirm)'
+    moi: Hỏi lại ngay trong công cụ (nút "Xóa hẳn", "Không xóa")
+    ly_do: Làm được bằng bàn phím, đọc được bằng trình đọc màn hình, kiểm thử được; s4
+ghi_chu: 'Trang công cụ: chữ của trang và của công cụ (src/scripts/cong-cu/du-lieu-cua-toi.js, chung/loai.js: tên các loại bản ghi). Không có số liệu nghiên cứu trong mã.'
