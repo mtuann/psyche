@@ -4,188 +4,188 @@ nguon_cu: ../psyche-zero/docs/trai-nghiem/mu-thay-doi.md
 tang: cong-cu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-16'
-  nhanh: moi/d8-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
-    luot_2: null
-    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l1
+    ma_bam: sha256:29728a008235109271f1494a15c125600cdcf86f88bc85ac99df447f4e16be8c
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L1, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l1-kiem-mau.yml), đạt, 18/11/2026
 nguon:
-- id: rensink2005
-  ten: 'Rensink (2005), McGraw-Hill Yearbook of Science & Technology, 44–46: toàn văn (bản tác giả)'
-  link: https://www2.psych.ubc.ca/~rensink/publications/download/RR-MGY.pdf
-  toan_van: true
-- id: rensink1997
-  ten: 'Rensink, O''Regan & Clark (1997), Psychol Sci 8(5), 368–373: toàn văn (bản tác giả, UBC)'
-  link: https://www2.psych.ubc.ca/~rensink/publications/download/PsychSci97-RR.pdf
-  toan_van: true
-- id: rensink2002
-  ten: 'Rensink (2002), Annu Rev Psychol 53, 245–277: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1146/annurev.psych.53.100901.135125
-  toan_van: false
-- id: ouattara2026
-  ten: 'Ouattara và cộng sự (2026), Quant Methods Psychol 22(2), 56–70: toàn văn (PDF mở, tqmp.org)'
-  link: https://doi.org/10.20982/tqmp.22.2.p056
-  toan_van: true
-- id: simons2005
-  ten: 'Simons & Rensink (2005), Trends Cogn Sci 9(1), 16–20: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/j.tics.2004.11.006
-  toan_van: false
+  - id: rensink2005
+    ten: 'Rensink (2005), McGraw-Hill Yearbook of Science & Technology, 44–46: toàn văn (bản tác giả)'
+    link: https://www2.psych.ubc.ca/~rensink/publications/download/RR-MGY.pdf
+    toan_van: true
+  - id: rensink1997
+    ten: 'Rensink, O''Regan & Clark (1997), Psychol Sci 8(5), 368–373: toàn văn (bản tác giả, UBC)'
+    link: https://www2.psych.ubc.ca/~rensink/publications/download/PsychSci97-RR.pdf
+    toan_van: true
+  - id: rensink2002
+    ten: 'Rensink (2002), Annu Rev Psychol 53, 245–277: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1146/annurev.psych.53.100901.135125
+    toan_van: false
+  - id: ouattara2026
+    ten: 'Ouattara và cộng sự (2026), Quant Methods Psychol 22(2), 56–70: toàn văn (PDF mở, tqmp.org)'
+    link: https://doi.org/10.20982/tqmp.22.2.p056
+    toan_van: true
+  - id: simons2005
+    ten: 'Simons & Rensink (2005), Trends Cogn Sci 9(1), 16–20: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.tics.2004.11.006
+    toan_van: false
 nhan_dinh:
-- id: s1
-  cau: 'Cách chơi: lưới 5×5 ô màu nhấp nháy, hai phiên bản xen kẽ, giữa mỗi lần đổi màn xám 250 ms; một ô đổi màu; bấm ô đã đổi; công cụ đo số chu kỳ và thời gian; nút "Tôi chịu, hiện đáp án".'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (N = 5, THOI_GIAN.xam 250, nút "Tôi chịu, hiện đáp án"), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): N = 5, xám 250 ms, soChuKy = thời gian / (2 × (hiện + xám)), nút "Tôi chịu, hiện đáp án": khớp.'
-  review: dung
-- id: n1
-  cau: Bình thường, một thay đổi tạo ra tín hiệu chuyển động tại chỗ của nó và hệ thị giác hướng chú ý tới đó; màn xám xen giữa tạo tín hiệu chuyển động khắp màn hình, nhấn chìm tín hiệu thật; chú ý phải soát từng vùng, nên thay đổi lớn, lặp đi lặp lại vẫn có thể không thấy suốt nhiều giây.
-  loai: phat-hien
-  nguon:
-  - rensink2005
-  - rensink1997
-  trich: Normally, a change produces a motion signal at its location. But when a blank field appears it produces motion signals throughout the display. If these global signals are strong enough they will overwhelm the local signals
-  vi_tri: Rensink 2005, mục "Basic effect"
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://www.cs.ubc.ca/~rensink/flicker/index.html
-  - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
-- id: n2
-  cau: 'Rensink, O''Regan và Clark (1997): ảnh đời thực xen kẽ bản chỉnh sửa, giữa hai lần hiện có màn trống ngắn; thay đổi ở vùng được quan tâm phát hiện sau trung bình 4,7 giây, vùng ít được quan tâm 10,9 giây.'
-  loai: so-lieu
-  nguon:
-  - rensink1997
-  trich: changes in MIs were extremely difficult to see, requiring an average of 17.1 alternations (10.9 s) … Changes in CIs were noticed much more quickly, with an average of 7.3 alternations [4.7 seconds]
-  vi_tri: Rensink 1997, Thí nghiệm 1
-  ket_qua: dung
-  ghi_chu: Cùng số dùng trong công cụ (NGHIEN_CUU.rensink1997 ở src/scripts/cong-cu/mu-thay-doi.js).
-  luot_2: dung
-  luot_2_nguon:
-  - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
-- id: n3
-  cau: Có ảnh người xem cần hơn 80 lần đổi hình (khoảng 50 giây) mới nhận ra, dù thay đổi hiển nhiên khi đã thấy.
-  loai: so-lieu
-  nguon:
-  - rensink1997
-  trich: for some images observers required over 80 alternations (50 s) to identify a change that was obvious once noticed
-  vi_tri: Rensink 1997, Thí nghiệm 1
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ (gạch đầu dòng thứ ba của mục 1997): "Có trường hợp thay đổi rất lớn vẫn mất 10–20 giây (20–40 chu kỳ) mới thấy — dù khi đã thấy, ai cũng bảo ''rõ thế mà''". Con số 10–20 giây là của bản tóm tắt Rensink 2005 (nay ở n4), "chu kỳ" nhầm với "lần đổi hình" (alternations); bài 1997 nói hơn 80 lần đổi hình (50 giây).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
-- id: n4
-  cau: Trong bản tóm tắt của chính tác giả (Rensink, 2005), mỗi ảnh hiện khoảng 0,5 giây, màn trống khoảng 0,25 giây; người xem đôi khi cần 10 hay 20 giây (20 hay 40 lần đổi hình) mới nhận ra thay đổi; hiệu ứng không phụ thuộc nhiều vào con số chính xác.
-  loai: phat-hien
-  nguon:
-  - rensink2005
-  trich: Each image is typically on for about half a second, while the blanks are on for a quarter second or so. (The strength of the effect does not depend greatly upon the exact durations used.) … observers sometimes requiring 10 or 20 seconds (20 or 40 alternations)
-  vi_tri: Rensink 2005, mục "Basic effect" và chú thích Hình 1
-  ket_qua: da-sua
-  ghi_chu: Chuyển câu 10–20 giây về đúng nguồn (Rensink 2005), viết "lần đổi hình" thay cho "chu kỳ".
-  luot_2: dung
-  luot_2_nguon:
-  - https://www2.psych.ubc.ca/~rensink/publications/download/RR-MGY.pdf
-- id: n5
-  cau: Trong thí nghiệm gốc năm 1997, mỗi ảnh hiện 240 ms, màn trống 80 ms, và mỗi ảnh hiện hai lần trước khi đổi.
-  loai: so-lieu
-  nguon:
-  - rensink1997
-  trich: Each image was displayed for 240 ms and each blank for 80 ms. Note that each image was presented twice before being switched.
-  vi_tri: Rensink 1997, Phương pháp chung
-  ket_qua: da-sua
-  ghi_chu: Thêm "mỗi ảnh hiện hai lần trước khi đổi" (đúng thiết kế A, A, A', A').
-  luot_2: dung
-  luot_2_nguon:
-  - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
-- id: n6
-  cau: Khi bỏ màn trống đi, người xem nhận ra thay đổi gần như ngay (trung bình 1,4 lần đổi hình, 0,9 giây), chứng tỏ chính màn trống là thứ gây ra hiện tượng.
-  loai: so-lieu
-  nguon:
-  - rensink1997
-  trich: identification required only 1.4 alternations (0.9 s) on average, showing that observers quickly noticed the changes
-  vi_tri: Rensink 1997, Thí nghiệm 1, điều kiện không màn trống
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "thay đổi trở nên dễ thấy ngay lập tức". Chữ mới: "gần như ngay", kèm số của bài.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
-  luot_2_ghi_chu: '"Chứng tỏ" hơi mạnh nhưng là suy luận thực nghiệm hợp lý từ thí nghiệm có đối chứng.'
-- id: n7
-  cau: 'Khá vững: kỹ thuật nhấp nháy gây ra mù thay đổi; được quan sát trong nhiều nghiên cứu (tổng quan Rensink, 2002), thí nghiệm 1997 có một lần tái lập độc lập, trực tuyến, năm 2026 với 69 người (thời gian phát hiện 11,2 giây ở vùng ít quan tâm và 5,8 giây ở vùng được quan tâm); chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước.'
-  loai: nhan
-  nguon:
-  - rensink2002
-  - ouattara2026
-  trich: In the flicker condition, mean detection times for marginal interest changes (11.22 s) closely approximated the original values (10.9 s), and central interest changes (5.79 s) were also comparable to the original (4.7 s)
-  vi_tri: Ouattara 2026, Thảo luận; Rensink 2002, tóm tắt ("under a variety of conditions observers are often unable to see large changes")
-  nhan: kha-vung
-  co_so:
-  - rensink2002
-  - ouattara2026
-  ly_do: Tổng quan tường thuật (Rensink 2002) và một tái lập độc lập nhỏ, trực tuyến (Ouattara 2026, N = 69) cùng chiều với bản gốc; chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước.
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Hiệu ứng đã được tái lập nhiều lần, kể cả trong một nghiên cứu tái lập trực tuyến năm 2026 …". Ouattara 2026 viết thí nghiệm gốc "have not been subject to systematic independent replication", nên câu "tái lập nhiều lần" cho chính thí nghiệm 1997 là sai; chữ mới tách hiện tượng (nhiều nghiên cứu) và thí nghiệm 1997 (một lần tái lập). chỗ khó: theo thước đo mục 4, vững chắc cần phân tích tổng hợp, tổng quan hệ thống hay hai tái lập lớn có đăng ký trước; ở đây là tổng quan tường thuật cộng một tái lập không rõ đăng ký trước. Lượt 2 (Opus) xét giữ vững chắc hay hạ khá vững. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: thước đo mục 4 cần phân tích tổng hợp, tổng quan hệ thống hay hai tái lập lớn có đăng ký trước; ở đây là tổng quan tường thuật (Rensink 2002) cộng một tái lập 69 người, không ghi đăng ký trước. Hạ nhãn Khá vững; câu theo cau_dung, trên trang thêm câu nêu lý do dừng ở khá vững.'
-  luot_2: qua-manh
-  luot_2_nguon:
-  - https://www.tqmp.org/RegularArticles/vol22-2/p056/p056.pdf
-  - https://www.cs.ubc.ca/~rensink/publications/download/NeuroBiol-RR.pdf
-  luot_2_ghi_chu: 'câu đúng: Khá vững: kỹ thuật nhấp nháy gây ra mù thay đổi; được quan sát trong nhiều nghiên cứu (tổng quan Rensink, 2002), thí nghiệm 1997 có một lần tái lập độc lập, trực tuyến, năm 2026 với 69 người (thời gian phát hiện 11,2 giây ở vùng ít quan tâm và 5,8 giây ở vùng được quan tâm); chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước.; chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hay hai tái lập lớn có đăng ký trước; ở đây chỉ có tổng quan tường thuật (Rensink 2002) cộng một tái lập nhỏ, không đăng ký trước ghi nhận. Số liệu tái lập ghi đúng.'
-- id: n8
-  cau: 'Đang tranh cãi: chú ý có phải là tất cả; Rensink và cộng sự (1997) cho rằng phải có chú ý mới thấy được thay đổi và người xem không bao giờ giữ một hình ảnh đầy đủ, chi tiết của cảnh; về sau giới nghiên cứu còn tranh luận điều gì có thể và không thể suy ra từ mù thay đổi.'
-  loai: nhan
-  nguon:
-  - rensink1997
-  - simons2005
-  trich: Its counterintuitive nature has also engendered confusions about the kinds of inferences that legitimately follow from it. Here we discuss the legitimate and the erroneous inferences that have been drawn
-  vi_tri: Simons & Rensink 2005, tóm tắt; Rensink 1997, tóm tắt
-  nhan: tranh-cai
-  co_so:
-  - simons2005
-  - rensink2002
-  ly_do: Simons & Rensink 2005 (chính tác giả gốc) bàn các suy luận đúng và sai từ mù thay đổi, nhất là về việc não giữ bao nhiêu chi tiết; cách giải thích chưa thống nhất.
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Các tranh luận sau này bàn thêm vai trò của trí nhớ thị giác ngắn hạn và chiến lược soát khác nhau của từng người" (không có nguồn đã mở). Chữ mới viết theo tóm tắt Rensink 1997 và Simons & Rensink 2005. chưa chắc: lượt 2 xem toàn văn Simons & Rensink 2005 để chắc tranh luận chính là về độ chi tiết của biểu diễn.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
-  - https://www.tqmp.org/RegularArticles/vol22-2/p056/p056.pdf
-  luot_2_ghi_chu: Phần "về sau còn tranh luận" là mô tả chung, đúng; nhãn Đang tranh cãi chấp nhận được.
-- id: s2
-  cau: 'Vì sao con số khác: một ô đổi màu trên lưới 25 ô đơn giản, nghiên cứu gốc dùng ảnh đời thực nhiều loại thay đổi; màn hình, độ sáng, khoảng cách nhìn ảnh hưởng; chế độ giảm chuyển động làm mỗi phiên bản hiện lâu hơn.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (giamChuyenDong: thời gian gấp đôi), 16/11/2026; nghiên cứu gốc dùng 48 ảnh đời thực, ba loại thay đổi (Rensink 1997, Phương pháp chung: khớp). Review (17/11/2026): khớp; công cụ còn báo thời gian không so trực tiếp được khi bật giảm chuyển động.'
-  review: dung
-- id: s3
-  cau: 'Công cụ, cảnh báo: màn hình nhấp nháy liên tục (mỗi phiên bản hiện nửa giây, xen giữa là màn xám một phần tư giây); ai nhạy cảm với ánh sáng nhấp nháy (như động kinh nhạy sáng) thì bỏ qua công cụ.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (THOI_GIAN: hiện 500 ms, xám 250 ms), 16/11/2026. Lời cảnh báo là thận trọng, không phải nhận định y khoa; review xét có cần nguồn (hướng dẫn WCAG 2.3.1: không quá ba lần chớp mỗi giây; ở đây khoảng 2,7 lần đổi màn mỗi giây tính cả màn xám). Review (17/11/2026): khớp. Không cần nguồn y khoa: câu chỉ khuyên người nhạy cảm bỏ qua, không khẳng định gì về nguy cơ. Nhịp: chu kỳ A, xám, B, xám dài 1,5 giây, tức 4 lần đổi màn mỗi 1,5 giây (khoảng 2,7 lần mỗi giây), dưới ngưỡng ba lần chớp mỗi giây của WCAG 2.3.1; giảm chuyển động làm nhịp chậm một nửa.'
-  review: dung
+  - id: s1
+    cau: 'Cách chơi: lưới 5×5 ô màu nhấp nháy, hai phiên bản xen kẽ, giữa mỗi lần đổi màn xám 250 ms; một ô đổi màu; bấm ô đã đổi; công cụ đo số chu kỳ và thời gian; nút "Tôi chịu, hiện đáp án".'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (N = 5, THOI_GIAN.xam 250, nút "Tôi chịu, hiện đáp án"), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): N = 5, xám 250 ms, soChuKy = thời gian / (2 × (hiện + xám)), nút "Tôi chịu, hiện đáp án": khớp.'
+    review: dung
+  - id: n1
+    cau: Bình thường, một thay đổi tạo ra tín hiệu chuyển động tại chỗ của nó và hệ thị giác hướng chú ý tới đó; màn xám xen giữa tạo tín hiệu chuyển động khắp màn hình, nhấn chìm tín hiệu thật; chú ý phải soát từng vùng, nên thay đổi lớn, lặp đi lặp lại vẫn có thể không thấy suốt nhiều giây.
+    loai: phat-hien
+    nguon:
+      - rensink2005
+      - rensink1997
+    trich: Normally, a change produces a motion signal at its location. But when a blank field appears it produces motion signals throughout the display. If these global signals are strong enough they will overwhelm the local signals
+    vi_tri: Rensink 2005, mục "Basic effect"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.cs.ubc.ca/~rensink/flicker/index.html
+      - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
+  - id: n2
+    cau: 'Rensink, O''Regan và Clark (1997): ảnh đời thực xen kẽ bản chỉnh sửa, giữa hai lần hiện có màn trống ngắn; thay đổi ở vùng được quan tâm phát hiện sau trung bình 4,7 giây, vùng ít được quan tâm 10,9 giây.'
+    loai: so-lieu
+    nguon:
+      - rensink1997
+    trich: changes in MIs were extremely difficult to see, requiring an average of 17.1 alternations (10.9 s) … Changes in CIs were noticed much more quickly, with an average of 7.3 alternations [4.7 seconds]
+    vi_tri: Rensink 1997, Thí nghiệm 1
+    ket_qua: dung
+    ghi_chu: Cùng số dùng trong công cụ (NGHIEN_CUU.rensink1997 ở src/scripts/cong-cu/mu-thay-doi.js).
+    luot_2: dung
+    luot_2_nguon:
+      - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
+  - id: n3
+    cau: Có ảnh người xem cần hơn 80 lần đổi hình (khoảng 50 giây) mới nhận ra, dù thay đổi hiển nhiên khi đã thấy.
+    loai: so-lieu
+    nguon:
+      - rensink1997
+    trich: for some images observers required over 80 alternations (50 s) to identify a change that was obvious once noticed
+    vi_tri: Rensink 1997, Thí nghiệm 1
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (gạch đầu dòng thứ ba của mục 1997): "Có trường hợp thay đổi rất lớn vẫn mất 10–20 giây (20–40 chu kỳ) mới thấy — dù khi đã thấy, ai cũng bảo ''rõ thế mà''". Con số 10–20 giây là của bản tóm tắt Rensink 2005 (nay ở n4), "chu kỳ" nhầm với "lần đổi hình" (alternations); bài 1997 nói hơn 80 lần đổi hình (50 giây).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
+  - id: n4
+    cau: Trong bản tóm tắt của chính tác giả (Rensink, 2005), mỗi ảnh hiện khoảng 0,5 giây, màn trống khoảng 0,25 giây; người xem đôi khi cần 10 hay 20 giây (20 hay 40 lần đổi hình) mới nhận ra thay đổi; hiệu ứng không phụ thuộc nhiều vào con số chính xác.
+    loai: phat-hien
+    nguon:
+      - rensink2005
+    trich: Each image is typically on for about half a second, while the blanks are on for a quarter second or so. (The strength of the effect does not depend greatly upon the exact durations used.) … observers sometimes requiring 10 or 20 seconds (20 or 40 alternations)
+    vi_tri: Rensink 2005, mục "Basic effect" và chú thích Hình 1
+    ket_qua: da-sua
+    ghi_chu: Chuyển câu 10–20 giây về đúng nguồn (Rensink 2005), viết "lần đổi hình" thay cho "chu kỳ".
+    luot_2: dung
+    luot_2_nguon:
+      - https://www2.psych.ubc.ca/~rensink/publications/download/RR-MGY.pdf
+  - id: n5
+    cau: Trong thí nghiệm gốc năm 1997, mỗi ảnh hiện 240 ms, màn trống 80 ms, và mỗi ảnh hiện hai lần trước khi đổi.
+    loai: so-lieu
+    nguon:
+      - rensink1997
+    trich: Each image was displayed for 240 ms and each blank for 80 ms. Note that each image was presented twice before being switched.
+    vi_tri: Rensink 1997, Phương pháp chung
+    ket_qua: da-sua
+    ghi_chu: Thêm "mỗi ảnh hiện hai lần trước khi đổi" (đúng thiết kế A, A, A', A').
+    luot_2: dung
+    luot_2_nguon:
+      - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
+  - id: n6
+    cau: Khi bỏ màn trống đi, người xem nhận ra thay đổi gần như ngay (trung bình 1,4 lần đổi hình, 0,9 giây), chứng tỏ chính màn trống là thứ gây ra hiện tượng.
+    loai: so-lieu
+    nguon:
+      - rensink1997
+    trich: identification required only 1.4 alternations (0.9 s) on average, showing that observers quickly noticed the changes
+    vi_tri: Rensink 1997, Thí nghiệm 1, điều kiện không màn trống
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thay đổi trở nên dễ thấy ngay lập tức". Chữ mới: "gần như ngay", kèm số của bài.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
+    luot_2_ghi_chu: '"Chứng tỏ" hơi mạnh nhưng là suy luận thực nghiệm hợp lý từ thí nghiệm có đối chứng.'
+  - id: n7
+    cau: 'Khá vững: kỹ thuật nhấp nháy gây ra mù thay đổi; được quan sát trong nhiều nghiên cứu (tổng quan Rensink, 2002), thí nghiệm 1997 có một lần tái lập độc lập, trực tuyến, năm 2026 với 69 người (thời gian phát hiện 11,2 giây ở vùng ít quan tâm và 5,8 giây ở vùng được quan tâm); chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước.'
+    loai: nhan
+    nguon:
+      - rensink2002
+      - ouattara2026
+    trich: In the flicker condition, mean detection times for marginal interest changes (11.22 s) closely approximated the original values (10.9 s), and central interest changes (5.79 s) were also comparable to the original (4.7 s)
+    vi_tri: Ouattara 2026, Thảo luận; Rensink 2002, tóm tắt ("under a variety of conditions observers are often unable to see large changes")
+    nhan: kha-vung
+    co_so:
+      - rensink2002
+      - ouattara2026
+    ly_do: Tổng quan tường thuật (Rensink 2002) và một tái lập độc lập nhỏ, trực tuyến (Ouattara 2026, N = 69) cùng chiều với bản gốc; chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước.
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hiệu ứng đã được tái lập nhiều lần, kể cả trong một nghiên cứu tái lập trực tuyến năm 2026 …". Ouattara 2026 viết thí nghiệm gốc "have not been subject to systematic independent replication", nên câu "tái lập nhiều lần" cho chính thí nghiệm 1997 là sai; chữ mới tách hiện tượng (nhiều nghiên cứu) và thí nghiệm 1997 (một lần tái lập). chỗ khó: theo thước đo mục 4, vững chắc cần phân tích tổng hợp, tổng quan hệ thống hay hai tái lập lớn có đăng ký trước; ở đây là tổng quan tường thuật cộng một tái lập không rõ đăng ký trước. Lượt 2 (Opus) xét giữ vững chắc hay hạ khá vững. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: thước đo mục 4 cần phân tích tổng hợp, tổng quan hệ thống hay hai tái lập lớn có đăng ký trước; ở đây là tổng quan tường thuật (Rensink 2002) cộng một tái lập 69 người, không ghi đăng ký trước. Hạ nhãn Khá vững; câu theo cau_dung, trên trang thêm câu nêu lý do dừng ở khá vững.'
+    luot_2: qua-manh
+    luot_2_nguon:
+      - https://www.tqmp.org/RegularArticles/vol22-2/p056/p056.pdf
+      - https://www.cs.ubc.ca/~rensink/publications/download/NeuroBiol-RR.pdf
+    luot_2_ghi_chu: 'câu đúng: Khá vững: kỹ thuật nhấp nháy gây ra mù thay đổi; được quan sát trong nhiều nghiên cứu (tổng quan Rensink, 2002), thí nghiệm 1997 có một lần tái lập độc lập, trực tuyến, năm 2026 với 69 người (thời gian phát hiện 11,2 giây ở vùng ít quan tâm và 5,8 giây ở vùng được quan tâm); chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước.; chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hay hai tái lập lớn có đăng ký trước; ở đây chỉ có tổng quan tường thuật (Rensink 2002) cộng một tái lập nhỏ, không đăng ký trước ghi nhận. Số liệu tái lập ghi đúng.'
+  - id: n8
+    cau: 'Đang tranh cãi: chú ý có phải là tất cả; Rensink và cộng sự (1997) cho rằng phải có chú ý mới thấy được thay đổi và người xem không bao giờ giữ một hình ảnh đầy đủ, chi tiết của cảnh; về sau giới nghiên cứu còn tranh luận điều gì có thể và không thể suy ra từ mù thay đổi.'
+    loai: nhan
+    nguon:
+      - rensink1997
+      - simons2005
+    trich: Its counterintuitive nature has also engendered confusions about the kinds of inferences that legitimately follow from it. Here we discuss the legitimate and the erroneous inferences that have been drawn
+    vi_tri: Simons & Rensink 2005, tóm tắt; Rensink 1997, tóm tắt
+    nhan: tranh-cai
+    co_so:
+      - simons2005
+      - rensink2002
+    ly_do: Simons & Rensink 2005 (chính tác giả gốc) bàn các suy luận đúng và sai từ mù thay đổi, nhất là về việc não giữ bao nhiêu chi tiết; cách giải thích chưa thống nhất.
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Các tranh luận sau này bàn thêm vai trò của trí nhớ thị giác ngắn hạn và chiến lược soát khác nhau của từng người" (không có nguồn đã mở). Chữ mới viết theo tóm tắt Rensink 1997 và Simons & Rensink 2005. chưa chắc: lượt 2 xem toàn văn Simons & Rensink 2005 để chắc tranh luận chính là về độ chi tiết của biểu diễn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://homepage.villanova.edu/diego.fernandezduque/Teaching/CognitivePsychology/Lectures_and_Labs/s3Attention/sReading/Rensink_etal_97.pdf
+      - https://www.tqmp.org/RegularArticles/vol22-2/p056/p056.pdf
+    luot_2_ghi_chu: Phần "về sau còn tranh luận" là mô tả chung, đúng; nhãn Đang tranh cãi chấp nhận được.
+  - id: s2
+    cau: 'Vì sao con số khác: một ô đổi màu trên lưới 25 ô đơn giản, nghiên cứu gốc dùng ảnh đời thực nhiều loại thay đổi; màn hình, độ sáng, khoảng cách nhìn ảnh hưởng; chế độ giảm chuyển động làm mỗi phiên bản hiện lâu hơn.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (giamChuyenDong: thời gian gấp đôi), 16/11/2026; nghiên cứu gốc dùng 48 ảnh đời thực, ba loại thay đổi (Rensink 1997, Phương pháp chung: khớp). Review (17/11/2026): khớp; công cụ còn báo thời gian không so trực tiếp được khi bật giảm chuyển động.'
+    review: dung
+  - id: s3
+    cau: 'Công cụ, cảnh báo: màn hình nhấp nháy liên tục (mỗi phiên bản hiện nửa giây, xen giữa là màn xám một phần tư giây); ai nhạy cảm với ánh sáng nhấp nháy (như động kinh nhạy sáng) thì bỏ qua công cụ.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/mu-thay-doi.js (THOI_GIAN: hiện 500 ms, xám 250 ms), 16/11/2026. Lời cảnh báo là thận trọng, không phải nhận định y khoa; review xét có cần nguồn (hướng dẫn WCAG 2.3.1: không quá ba lần chớp mỗi giây; ở đây khoảng 2,7 lần đổi màn mỗi giây tính cả màn xám). Review (17/11/2026): khớp. Không cần nguồn y khoa: câu chỉ khuyên người nhạy cảm bỏ qua, không khẳng định gì về nguy cơ. Nhịp: chu kỳ A, xám, B, xám dài 1,5 giây, tức 4 lần đổi màn mỗi 1,5 giây (khoảng 2,7 lần mỗi giây), dưới ngưỡng ba lần chớp mỗi giây của WCAG 2.3.1; giảm chuyển động làm nhịp chậm một nửa.'
+    review: dung
 doi_chu:
-- cu: '"Tôi chịu — hiện đáp án"'
-  moi: '"Tôi chịu, hiện đáp án"'
-  ly_do: Khớp nút của công cụ mới (bỏ gạch ngang dài).
-- cu: Gạch đầu dòng "10–20 giây (20–40 chu kỳ)"
-  moi: '"hơn 80 lần đổi hình (khoảng 50 giây)"'
-  ly_do: n3
-- cu: Đoạn Rensink 2005 và thí nghiệm gốc
-  moi: thêm 10 hay 20 giây (20 hay 40 lần đổi hình), "mỗi ảnh hiện hai lần trước khi đổi", "gần như ngay (1,4 lần đổi hình, 0,9 giây)"
-  ly_do: n4–n6
-- cu: 'Khung Vững chắc: "Hiệu ứng đã được tái lập nhiều lần …"'
-  moi: tách hiện tượng (Rensink 2002) và tái lập 2026 (Ouattara và cộng sự), kèm số
-  ly_do: n7
-- cu: 'Khung Đang tranh cãi: "… trí nhớ thị giác ngắn hạn và chiến lược soát …"'
-  moi: theo Rensink 1997 và Simons & Rensink 2005
-  ly_do: n8
-- cu: 'Nguồn: Rensink 1997, 2005'
-  moi: thêm Ouattara 2026, Rensink 2002, Simons & Rensink 2005
-  ly_do: nguồn của n7, n8
-- cu: :::vung-chac[kỹ thuật nhấp nháy gây ra mù thay đổi]
-  moi: :::kha-vung[…], thêm câu "Chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước, nên nhãn dừng ở khá vững."
-  ly_do: 'n7 (sau lượt 2: đổi nhãn)'
+  - cu: '"Tôi chịu — hiện đáp án"'
+    moi: '"Tôi chịu, hiện đáp án"'
+    ly_do: Khớp nút của công cụ mới (bỏ gạch ngang dài).
+  - cu: Gạch đầu dòng "10–20 giây (20–40 chu kỳ)"
+    moi: '"hơn 80 lần đổi hình (khoảng 50 giây)"'
+    ly_do: n3
+  - cu: Đoạn Rensink 2005 và thí nghiệm gốc
+    moi: thêm 10 hay 20 giây (20 hay 40 lần đổi hình), "mỗi ảnh hiện hai lần trước khi đổi", "gần như ngay (1,4 lần đổi hình, 0,9 giây)"
+    ly_do: n4–n6
+  - cu: 'Khung Vững chắc: "Hiệu ứng đã được tái lập nhiều lần …"'
+    moi: tách hiện tượng (Rensink 2002) và tái lập 2026 (Ouattara và cộng sự), kèm số
+    ly_do: n7
+  - cu: 'Khung Đang tranh cãi: "… trí nhớ thị giác ngắn hạn và chiến lược soát …"'
+    moi: theo Rensink 1997 và Simons & Rensink 2005
+    ly_do: n8
+  - cu: 'Nguồn: Rensink 1997, 2005'
+    moi: thêm Ouattara 2026, Rensink 2002, Simons & Rensink 2005
+    ly_do: nguồn của n7, n8
+  - cu: :::vung-chac[kỹ thuật nhấp nháy gây ra mù thay đổi]
+    moi: :::kha-vung[…], thêm câu "Chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước, nên nhãn dừng ở khá vững."
+    ly_do: 'n7 (sau lượt 2: đổi nhãn)'
