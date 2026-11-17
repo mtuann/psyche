@@ -42,7 +42,7 @@ Chủ repo chọn ngày 29/10/2026 ("đồng ý với plan và step"; dùng Astr
 Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 
 - Ai rà soát chuyên môn 4 trang Sức khỏe tâm thần (điều kiện để khóa). Trước đợt 7.
-- Khi site mới đủ (đợt 9): có thêm dải "Psyche đã chuyển sang /psyche/" lên site cũ không. Việc này phải sửa repo cũ, nên chỉ làm khi chủ repo cho phép rõ.
+- ~~Khi site mới đủ (đợt 9): có thêm dải "Psyche đã chuyển sang /psyche/" lên site cũ không.~~ Hết cần hỏi (17/11/2026): repo cũ đã chuyển riêng tư, site cũ trả 404.
 
 ## Tiến độ
 
@@ -57,7 +57,7 @@ Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 | 6 | Nền tảng phần 2 | D6-L1–D6-L3 | 20 bài: căng thẳng, giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển (96 trang) | 2–3 ngày | Xong 10/11/2026 (`bao-cao/d6-l1.md` … `d6-l3.md`): 20 trang đã khóa; bài mở rộng kiểm lượt 2 cả trang; tìm kiếm thêm tên chủ đề (`chu_de` ở `trang.yml`) |
 | 7 | Sức khỏe tâm thần | D7-L1 | 4 bài, khóa sau khi chuyên gia đọc (100 trang) | 1 ngày, cộng thời gian chờ chuyên gia | Xong 17/11/2026 (`bao-cao/d7-l1.md`): 4 bài khóa với `nguoi.cho_chuyen_gia` (chủ repo đồng ý đăng trước, 16/11/2026), có dải "Chưa qua rà soát chuyên môn"; chờ chuyên gia đọc |
 | 8 | Công cụ, ngộ nhận, sách in, Thêm | D8-L1–D8-L4 | 11 công cụ, 60 thẻ ngộ nhận, Sách in, Tờ tóm tắt, Nghiên cứu mới, dùng khi mất mạng; đủ 106 trang cũ (121 trang) | 2–3 ngày | Xong 17/11/2026 (`bao-cao/d8-l1.md` … `d8-l4.md`): 11 công cụ theo khuôn module mới, 60 thẻ ngộ nhận và bài thử, Sách in (miễn ngưỡng hiệu năng Lighthouse), Tờ tóm tắt, các trang Thêm, dùng khi mất mạng; sửa nhỏ ở 6 trang đã khóa (`bao-cao/sua-nho-dot-8.md`) |
-| 9 | Hoàn tất | | Máy canh hằng tuần; site mới không còn cần `../psyche-zero/` | 0,5–1 ngày | Chưa làm |
+| 9 | Hoàn tất | | Máy canh hằng tuần; site mới không còn cần `../psyche-zero/` | 0,5–1 ngày | Xong 17/11/2026 (`bao-cao/d9-may-canh.md`, `d9-doi-chieu.md`, `xong-lam-lai.md`, `sua-may-canh.md`): máy canh hằng tuần (rút bài, đính chính, thời sự, kiểm lại, link hỏng); 106/106 trang cũ lên site; Lighthouse và axe toàn site (122 trang) không lỗi; trang chủ và 404 bỏ lời "đang làm lại"; sửa 2 link hỏng, xét 13 đính chính |
 
 - Ước tính theo nhịp của opus (đợt 0–1 trong khoảng 1,5 ngày; sau đó 25–45 trang mỗi ngày khi bộ máy đã chạy), cộng phần nặng hơn của tâm lý học: mỗi trang cũ có khoảng 22 khẳng định (G1-L01–L04: 607 khẳng định trên 27 bài), nhiều số liệu và nghiên cứu gốc phải mở. Tổng khoảng **14–19 ngày làm việc, 30–40 phiên**; theo lịch thì 3–5 tuần, tùy nhịp bạn duyệt và gộp, giới hạn sử dụng, và thời gian chờ chuyên gia.
 - Số trang trong cột "site có thêm" là cộng dồn, tính cả trang mục lục và 15 trang mới. Danh sách trang của từng lô: `anh-xa.md`. Người review cập nhật bảng này cuối mỗi đợt.
@@ -179,15 +179,15 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 
 ## Đợt 9. Hoàn tất
 
-- Máy canh hằng tuần (GitHub Actions): DOI bị rút hay đính chính (Crossref, Retraction Watch, OpenAlex), khẳng định thời sự và trang mở rộng tới hạn, link hỏng (như `links.yml` dùng lychee của site cũ); mở issue nêu đúng trang, đúng khẳng định. Hằng quý: Hỗ trợ, Nghiên cứu mới.
+- [x] Máy canh hằng tuần (GitHub Actions; `bao-cao/d9-may-canh.md`, lần chạy đầu và cách xử lý: `bao-cao/sua-may-canh.md`): DOI bị rút hay đính chính (Crossref, Retraction Watch, OpenAlex), khẳng định thời sự và trang mở rộng tới hạn, link hỏng (như `links.yml` dùng lychee của site cũ); mở issue nêu đúng trang, đúng khẳng định. Hằng quý: Hỗ trợ, Nghiên cứu mới.
 - [x] Bảng đối chiếu chức năng với site cũ (`doi-chieu.md`: không thiếu trang nào, vài chỗ nhỏ ghi ở mục C); Lighthouse và axe trên mọi trang một lần (`bao-cao/d9-doi-chieu.md`, nhánh `them/doi-chieu`). Bỏ phụ thuộc `../psyche-zero/` ở build và kiểm thử: xong ở nhánh ấy.
-- Hỏi chủ repo có thêm dải chuyển hướng lên site cũ không (câu hỏi còn chờ). Mặc định: không động vào site cũ.
+- [x] Dải chuyển hướng lên site cũ: không làm (site cũ đã tắt, 17/11/2026). Trang chủ và 404 bỏ lời "đang làm lại" (`bao-cao/xong-lam-lai.md`).
 
 **Xong khi:** site mới không còn cần `../psyche-zero/` để build hay kiểm thử.
 
 **Sau đợt 9:** thêm nội dung theo `../ben-vung/them-noi-dung.md`, thứ tự ưu tiên ở mục 9 (lấp lĩnh vực mỏng trước: Học tập, Cơ sở sinh học, Ý thức và giấc ngủ, Căng thẳng, Động lực, Lịch sử; chủ repo duyệt 17/11/2026).
 
-## Việc treo (cập nhật 10/11/2026)
+## Việc treo (cập nhật 17/11/2026)
 
 Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong việc nào thì gạch khỏi đây.
 
@@ -202,6 +202,10 @@ Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong 
 - **Sửa nhỏ khi mở khóa:** nhãn Rowland 2014 (Vững chắc) phải khớp `kham-pha/tri-nho/duong-cong-quen`; trang khác dẫn nhãn cũ của Milgram, Pygmalion, Robbers Cave sửa theo nhãn mới khi chuyển. Đã xong ở `mo/sua-nho-dot-8` (17/11/2026, `bao-cao/sua-nho-dot-8.md`): "thiệt thòi" ở `dao-duc-nghien-cuu`; Titchener ở `ao-giac-thi-giac`; ρ ≈ .17 ở `tri-tue-cam-xuc`; Hertwig & Gigerenzer 1999 ở `linh-cam-va-xac-suat` và `trai-nghiem/linda`; nhãn hiệu ứng độ dài từ ở `tri-nho-lam-viec`; thang lịch sử Big Five mini.
 - **Số chỉ đọc qua bản lưu Internet Archive của bài trả phí:** từ 17/11/2026 không dùng cách ấy nữa (giống lách quyền truy cập của nhà xuất bản). Một số trang đã khóa còn số đọc theo cách cũ, ví dụ `kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc` (r = .22, N = 220; r = .00, N = 223; ΔR²; ρ = .39; r .12–.25) và các nguồn ghi "(Internet Archive)" trong hồ sơ. Lần xem lại trang: tìm nguồn mở (PMC, bản tác giả) hay viết ở mức tóm tắt. `plans/ben-vung/chuan-kiem-dinh.md`, mục "Nguồn và cách mở", cần sửa theo.
 - **Còn từ đợt 8:** `trai-nghiem/tri-nho-tu` dùng chữ "xếp vào nhóm phát hiện ổn định" cho Oberauer 2018 (trang `tri-nho-lam-viec` nay ghi mức B); `tri-tue-cam-xuc` (Joseph & Newman "2010b" trong Joseph 2015 chưa kiểm được danh mục tham khảo); `trang-tron`, `tre-song-ngu-cham-noi` (thẻ ngộ nhận) tìm tổng quan ở lần xem lại; thẻ `can-kiet-y-chi` giữ Đang tranh cãi (chủ repo quyết 17/11/2026).
+- **7 đính chính máy canh báo mà agent không mở được** (Sage, APA PsycNet chặn yêu cầu tự động; `bao-cao/sua-may-canh.md`): cần người mở bằng trình duyệt rồi ghi vào `tools/may-canh-da-xet.yml`. Gấp nhất **Macnamara 2014** (đính chính 2018: sai công thức điều chỉnh; các % ở thẻ `muoi-nghin-gio` có thể đã đổi). Còn: Barrett 2019, Gardner 2005, Flynn 1987, Burton 2001, Kowalski 2014, Schachter 1962. Funder 2019, Adesope 2017 chỉ đọc được câu đầu.
+- **Từ bảng đối chiếu** (`doi-chieu.md` mục C): nút "In bài này" của site cũ (77 bài) chưa có, chờ chủ repo quyết; 32 id tiêu đề cũ ở 16 trang đã mất, thêm `{ #id-cu }` khi mở khóa các trang ấy lần sau.
+- **Khóa cho bổ sung có ngày** (`src/content/bo-sung/`): chưa có, nên bổ sung chỉ hiện ở bản xem. Làm trước khi bắt đầu thêm bổ sung (`../ben-vung/them-noi-dung.md`).
+- **Phép thử "dùng khi mất mạng" trên Firefox** (`tests/trinh-duyet/kiem-ngoai-tuyen.mjs`) thỉnh thoảng hỏng ("error loading dynamically imported module", 17/11/2026, chạy lại thì đạt): xem lại nếu lặp.
 - **Chưa mở được toàn văn:** Messerli 2012 (NEJM), Button 2013, Gignac & Szodorai 2016, Funder & Ozer 2019, Camerer 2018, Marshall & Zimbardo 1979, Maslach 1979: số liệu qua nguồn dẫn lại, ghi ở hồ sơ.
 
 ## Rủi ro

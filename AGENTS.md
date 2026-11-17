@@ -1,6 +1,6 @@
 # Sổ tay cho agent: Psyche (repo psyche)
 
-Psyche (bản trước tên Psyche Zero) là site tâm lý học bằng tiếng Việt cho người không học chuyên ngành: mỗi trang trả lời một câu hỏi, **bằng chứng nói gì, và chắc chắn đến đâu?** Site đang được làm lại trong repo này (`mtuann/psyche`, site ở https://mtuann.github.io/psyche/). Kế hoạch hiện hành: `plans/lam-lai/README.md`; khi sổ tay này khác kế hoạch thì kế hoạch đúng. Người mới đọc `plans/lam-lai/giao-viec.md`.
+Psyche (bản trước tên Psyche Zero) là site tâm lý học bằng tiếng Việt cho người không học chuyên ngành: mỗi trang trả lời một câu hỏi, **bằng chứng nói gì, và chắc chắn đến đâu?** Site được làm lại trong repo này (xong 17/11/2026) (`mtuann/psyche`, site ở https://mtuann.github.io/psyche/). Kế hoạch hiện hành: `plans/lam-lai/README.md`; khi sổ tay này khác kế hoạch thì kế hoạch đúng. Người mới đọc `plans/lam-lai/giao-viec.md`.
 
 ## Site cũ và repo mẫu
 
@@ -132,7 +132,7 @@ node tools/chuyen/so-chu.mjs thi-nghiem/asch --doi-chu       # khung doi_chu cho
 - `so-chu.mjs` so từng khối chữ, câu hỏi, tiêu đề, mô tả, id tiêu đề; cụm khối chỉ khác cách ngắt khối (site cũ dồn danh sách vào đoạn trên) không tính là khác.
 - Id tiêu đề giữ kiểu site cũ (`src/plugins/id-cu.mjs`, như `vi_slugs.py`: "đ" thành "d"), nên link `#mục` cũ còn đúng.
 - Link tới trang chưa có trong bản build thành chữ kèm nhãn "sắp có" (`src/plugins/sap-co.mjs`), tự thành link khi trang lên; `tests/link.test.mjs` kiểm mọi link và `#mục` nội bộ, và chữ "sắp có" trỏ tới trang có trong `trang.yml`. Link nội bộ viết `/psyche/<trang>/`.
-- Trang 404 (`src/content/docs/404.md`, đã khóa): báo trang chưa có, nút về trang chủ, mở ô tìm kiếm. Lời trong trang vẫn nói "đang được làm lại" (viết lúc làm lại): sửa khi mở khóa lần sau.
+- Trang 404 (`src/content/docs/404.md`, đã khóa): báo không có trang, nút về trang chủ, mở ô tìm kiếm; link cũ tới Psyche Zero đổi `/psyche-zero/` thành `/psyche/` là ra trang (từ 17/11/2026 không còn nói "đang được làm lại").
 
 ## Mẫu trang và khối đặc biệt
 
