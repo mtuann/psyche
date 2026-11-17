@@ -1,0 +1,1173 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+trang: src/content/docs/kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly.md
+nguon_cu: ../psyche-zero/docs/kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly.md
+tang: loi
+muc: V3
+lan:
+  - so: 1
+    ngay: 2026-11-17
+    nhanh: moi/d7-l1
+    ma_bam: sha256:5ecbcc482785db95f491b96fc04c2af76fd25851c0d0ea6caa6d42d80a9e9a73
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D7-L1, 16/11/2026; không dùng agent con)
+      luot_2: Claude Opus 5.5 (agent lượt 2 riêng, D7-L1 phần b, 16–17/11/2026; phần bổ sung cho câu viết lại sau lượt 2, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D7-L1, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d7-l1-kiem-mau.yml), đạt, 17/11/2026
+      cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
+nguon:
+  - id: apa-dict
+    ten: 'APA Dictionary of Psychology: mục psychotherapy, cognitive therapy, cognitive triad, automatic thoughts, psychodynamic psychotherapy, client-centered therapy: toàn văn, đọc 16/11/2026'
+    link: https://dictionary.apa.org/
+    toan_van: true
+  - id: wampold2015
+    ten: 'Wampold (2015), World Psychiatry 14(3), 270–277: toàn văn (bản PMC4592639 lưu ở Internet Archive ngày 24/8/2024)'
+    link: https://doi.org/10.1002/wps.20238
+    toan_van: true
+  - id: benish2011
+    ten: "Benish, Quintana & Wampold (2011), Journal of Counseling Psychology 58(3), 279–289: tóm tắt (Europe PMC, PMID 21604860; review đọc 17/11/2026)"
+    link: https://doi.org/10.1037/a0023626
+    toan_van: false
+  - id: hofmannhay2018
+    ten: 'Hofmann & Hay (2018), J Anxiety Disord 55, 14–21: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.janxdis.2018.03.004
+    toan_van: false
+  - id: cuijpers2023
+    ten: 'Cuijpers, Miguel, Harrer, Plessen, Ciharova, Ebert & Karyotaki (2023), World Psychiatry 22(1), 105–115: toàn văn (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; PMC và Wiley chặn máy)'
+    link: https://doi.org/10.1002/wps.21069
+    toan_van: true
+  - id: rush1977
+    ten: 'Rush, Beck, Kovacs & Hollon (1977), Cognitive Therapy and Research 1(1), 17–37: tóm tắt (trang Springer)'
+    link: https://doi.org/10.1007/BF01173502
+    toan_van: false
+  - id: kovacs1981
+    ten: 'Kovacs, Rush, Beck & Hollon (1981), Arch Gen Psychiatry 38(1), 33–39: tóm tắt (Europe PMC, PMID 7006557)'
+    link: https://doi.org/10.1001/archpsyc.1981.01780260035003
+    toan_van: false
+  - id: hofmann2012
+    ten: 'Hofmann, Asnaani, Vonk, Sawyer & Fang (2012), Cognit Ther Res 36(5), 427–440: tóm tắt (Europe PMC, PMC3584580)'
+    link: https://doi.org/10.1007/s10608-012-9476-1
+    toan_van: false
+  - id: powers2008
+    ten: 'Powers, Sigmarsson & Emmelkamp (2008), Int J Cogn Ther 1(2), 94–113: tóm tắt (kho UvA). DOI 10.1680/… là bí danh, doi.org chuyển sang 10.1521/ijct.2008.1.2.94; giữ như bản ghi đã khóa ở src/data/nguon.yml'
+    link: https://doi.org/10.1680/ijct.2008.1.2.94
+    toan_van: false
+  - id: baskin2003
+    ten: 'Baskin, Tierney, Minami & Wampold (2003), J Consult Clin Psychol 71(6), 973–979: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/0022-006X.71.6.973
+    toan_van: false
+  - id: shedler2010
+    ten: 'Shedler (2010), American Psychologist 65(2), 98–109: toàn văn (PDF trên trang của tác giả, jonathanshedler.com)'
+    link: https://doi.org/10.1037/a0018378
+    toan_van: true
+  - id: elliott2021
+    ten: 'Elliott, Watson, Timulak & Sharbanee (2021), chương trong Bergin and Garfield''s Handbook (ấn bản 7): tóm tắt (Strathprints, bản thảo được chấp nhận)'
+    link: https://strathprints.strath.ac.uk/74362/
+    toan_van: false
+  - id: driessen2015
+    ten: 'Driessen và cộng sự (2015), Clin Psychol Rev 42, 1–15: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.cpr.2015.07.004
+    toan_van: false
+  - id: carpenter2018
+    ten: 'Carpenter, Andrews, Witcraft, Powers, Smits & Hofmann (2018), Depress Anxiety 35(6), 502–514: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1002/da.22728
+    toan_van: false
+  - id: johnsen2015
+    ten: 'Johnsen & Friborg (2015), Psychol Bull 141(4), 747–768: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/bul0000015
+    toan_van: false
+  - id: cristea2017
+    ten: 'Cristea, Stefan, Karyotaki, David, Hollon & Cuijpers (2017), Psychol Bull 143(3), 326–340: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/bul0000062
+    toan_van: false
+  - id: craske2014
+    ten: 'Craske, Treanor, Conway, Zbozinek & Vervliet (2014), Behav Res Ther 58, 10–23: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.brat.2014.04.006
+    toan_van: false
+  - id: rosenzweig1936
+    ten: 'Rosenzweig (1936), Am J Orthopsychiatry 6, 412–415: không đọc bài; tên bài đầy đủ (''Some implicit common factors in diverse methods of psychotherapy: "At last the Dodo said, Everybody has won and all must have prizes"'') theo danh mục tham khảo của Wampold 2015'
+    link: null
+    toan_van: false
+  - id: nice-ng222
+    ten: 'NICE (2022), Depression in adults: treatment and management (NG222), chương Recommendations: toàn văn, đọc 16/11/2026'
+    link: https://www.nice.org.uk/guidance/ng222/chapter/Recommendations
+    toan_van: true
+  - id: beck1979
+    ten: 'Beck, Rush, Shaw & Emery (1979), Cognitive therapy of depression, Guilford: sách in, không đọc; chỉ dẫn làm tên sách nền tảng'
+    link: null
+    toan_van: false
+  - id: mckay2011
+    ten: 'McKay (2011), Am Psychol 66(2), 147–148: bình luận về Shedler 2010; tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/a0021195
+    toan_van: false
+  - id: karyotaki2021
+    ten: 'Karyotaki và cộng sự (2021), JAMA Psychiatry 78(4), 361–371: tóm tắt (Europe PMC, PMC8027916)'
+    link: https://doi.org/10.1001/jamapsychiatry.2020.4364
+    toan_van: false
+  - id: who-dep-2026
+    ten: 'WHO, Depressive disorder (depression), tờ thông tin cập nhật 11/9/2026: toàn văn, đọc 16/11/2026'
+    link: https://www.who.int/news-room/fact-sheets/detail/depression
+    toan_van: true
+  - id: nhs-tt
+    ten: 'NHS (Anh), NHS talking therapies for anxiety and depression (duyệt 5/11/2025): toàn văn, đọc 16/11/2026'
+    link: https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/
+    toan_van: true
+  - id: tim-kiem-vn-tri-lieu
+    ten: 'Tìm trên Europe PMC ngày 16/11/2026: (TITLE:Vietnam OR TITLE:Vietnamese) AND (TITLE:randomized OR TITLE:randomised OR TITLE:trial) AND (TITLE:depression OR TITLE:anxiety OR TITLE:"mental health") AND (cognitive OR psychotherapy OR psychological …): 17 kết quả, có thử nghiệm đã công bố kết quả (Murphy 2020, Imamura 2021, Tran 2023, Watanabe 2024, Niemi 2016)'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE:Vietnam%20OR%20TITLE:Vietnamese)%20AND%20(TITLE:randomized%20OR%20TITLE:trial)%20AND%20(TITLE:depression%20OR%20TITLE:anxiety)
+    toan_van: false
+  - id: murphy2020
+    ten: 'Murphy và cộng sự (2020), Int J Ment Health Syst 14, 8: toàn văn (Europe PMC, PMC7014690)'
+    link: https://doi.org/10.1186/s13033-020-00342-1
+    toan_van: true
+  - id: imamura2021
+    ten: 'Imamura và cộng sự (2021), Sci Rep 11, 11353: tóm tắt (Europe PMC, PMC8166974)'
+    link: https://doi.org/10.1038/s41598-021-90320-5
+    toan_van: false
+  - id: owid-psych
+    ten: 'Our World in Data, Psychiatrists per 100,000 people (dữ liệu WHO Mental Health Atlas 2020 qua UNICEF 2023; cập nhật 21/3/2024): tệp CSV, đọc 16/11/2026; Vietnam 2019: 1; United Kingdom 2019: 14 (làm tròn)'
+    link: https://ourworldindata.org/grapher/psychiatrists-working-in-the-mental-health-sector
+    toan_van: true
+  - id: ngo2014
+    ten: 'Ngo, Weiss, Lam, Dang, Nguyen & Nguyen (2014), J Cogn Psychother 28(3), 156–167: tóm tắt (Europe PMC, PMC4283138)'
+    link: https://doi.org/10.1891/0889-8391.28.3.156
+    toan_van: false
+  - id: abbass2006
+    ten: 'Abbass, Hancock, Henderson & Kisely (2006), Cochrane Database Syst Rev CD004687: tóm tắt (Europe PMC, PMID 17054212)'
+    link: https://doi.org/10.1002/14651858.CD004687.pub3
+    toan_van: false
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả: CBT của Beck và bằng chứng từ các phân tích tổng hợp lớn; tranh luận về yếu tố chung và hiệu ứng giả dược; liệu pháp tâm động và nhân văn.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Câu mô tả nội dung trang; đã kiểm trên trang. Mô tả cũ "Bản nháp: … bằng chứng từ hàng trăm phân tích tổng hợp…": bỏ "Bản nháp"; "hàng trăm phân tích tổng hợp" đổi vì trang nói 269 phân tích (Hofmann 2012) cùng một phân tích 409 thử nghiệm. review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp.'
+    review: dung
+  - id: n2
+    cau: 'Hộp đầu trang: bài giới thiệu bằng chứng, không phải lời khuyên điều trị, không để tự chẩn đoán; link trang Hỗ trợ.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trên trang. Chữ cũ (hộp warning) "Bản nháp đang chờ rà soát chuyên môn…"; như hồ sơ tram-cam n2 (dải chờ rà soát ở khung trang). review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp.'
+    review: dung
+  - id: n3
+    cau: Hai người mất ngủ vì lo âu là ví dụ giả định của chúng tôi.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'gia-dinh: ghi rõ trên trang. Đã kiểm. review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp.'
+    review: dung
+  - id: n4
+    cau: 'Điểm khác giữa trị liệu và lời an ủi nằm ở cấu trúc: nhà trị liệu làm việc với một mô hình về cách vấn đề được duy trì và dùng kỹ thuật có chủ đích để can thiệp vào vòng lặp; lời an ủi xoa dịu nhất thời.'
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+    trich: 'cognitive therapy: … The objective of the therapy is to identify these faulty cognitions and replace them with more adaptive ones, a process known as cognitive restructuring. The therapist takes the role of an active guide'
+    vi_tri: APA Dictionary, cognitive therapy
+    ket_qua: dung
+    ghi_chu: Giữ chữ cũ (bỏ "cách tâm trí duy trì" thành "cách vấn đề được duy trì"). Mô tả theo mô hình nhận thức – hành vi; ví dụ trong hộp là giả định.
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1007/s10608-012-9476-1
+      - https://dictionary.apa.org/psychotherapy
+    luot_2_ghi_chu: Định nghĩa đối chiếu; vế 'lời an ủi xoa dịu nhất thời' là diễn giải, không cần số.
+  - id: n5
+    cau: 'Sự lắng nghe, quan tâm của bạn thân không vô ích: WHO xem việc giữ liên lạc, trò chuyện với người mình tin là một phần của tự chăm sóc, và sự đồng cảm là một trong các "yếu tố chung" của trị liệu; nhưng trò chuyện với bạn không thay được trị liệu khi cần.'
+    loai: phat-hien
+    nguon:
+      - wampold2015
+      - who-dep-2026
+    trich: 'The evidence supports the conclusion that the common factors are important for producing the benefits of psychotherapy. … alliance, empathy, expectations || What you can do: … stay connected to friends and family … talk to someone you trust about your feelings [WHO Depression, Self-care]'
+    vi_tri: Wampold 2015, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới, để hộp không ngầm nói lời an ủi là vô ích (khớp mục Ngộ nhận). Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): viết lại theo câu đúng của lượt 2: giữ liên lạc, trò chuyện với người mình tin là tự chăm sóc (WHO); đồng cảm là một yếu tố chung của trị liệu (Wampold 2015); trò chuyện với bạn không thay được trị liệu khi cần. Bỏ ý "quan tâm của bạn thân là một phần của yếu tố chung".'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.who.int/news-room/fact-sheets/detail/depression", "http://web.archive.org/web/20250630215110/https://onlinelibrary.wiley.com/doi/full/10.1002/wps.20238" ]
+    luot_2_ghi_chu: Khớp. WHO đặt 'seek help from a healthcare provider' ngay trong danh sách tự chăm sóc, hợp với ý trò chuyện với bạn không thay được trị liệu khi cần. Wampold đọc qua bản lưu Wayback (30/6/2025) của trang Wiley; PMC4592639 chặn bot. Wampold cũng nói tương quan empathy–kết quả có thể một phần do đặc điểm người bệnh, nhưng câu trên trang không nói con số nên không cần thêm.
+  - id: n6
+    cau: Trị liệu tâm lý là dịch vụ tâm lý do người được đào tạo chuyên môn thực hiện, chủ yếu qua trò chuyện và tương tác, để đánh giá và giúp thay đổi phản ứng cảm xúc, lối nghĩ, hành vi gây khổ sở.
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+    trich: 'psychotherapy: any psychological service provided by a trained professional that primarily uses forms of communication and interaction to assess, diagnose, and treat dysfunctional emotional reactions, ways of thinking, and behavior patterns.'
+    vi_tri: APA Dictionary, psychotherapy
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trị liệu tâm lý (psychotherapy — chữa lành bằng lời nói) là quá trình một người được đào tạo dùng các cuộc trò chuyện có cấu trúc…". Theo định nghĩa của APA; bỏ "chữa lành bằng lời nói" (không phải nghĩa của từ).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/psychotherapy
+  - id: n7
+    cau: 'Câu hỏi đặt ra: vì sao những cuộc trò chuyện lại thay đổi được cách một người nghĩ, cảm thấy và hành động?'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Câu hỏi dẫn dắt của trang, không khẳng định. Chữ cũ "làm sao những lời nói trong một căn phòng lại thay đổi được một bộ não?" đổi để không ngầm khẳng định cơ chế thần kinh (bài không có nguồn về não). Đã kiểm trên trang. review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp.'
+    review: dung
+  - id: n8
+    cau: Theo trường phái nhận thức – hành vi, nhiều đau khổ tâm lý được duy trì bởi các vòng lặp suy nghĩ – cảm xúc – né tránh; trị liệu nhắm vào việc chen vào vòng lặp bằng kỹ thuật có chủ đích.
+    loai: phat-hien
+    nguon:
+      - apa-dict
+      - hofmannhay2018
+    trich: 'cognitive therapy: … based on the concept that emotional and behavioral problems in an individual are, at least in part, the result of maladaptive or faulty ways of thinking [APA]; Avoidance is typically considered a maladaptive behavioral response … leading to the maintenance of anxiety disorders [Hofmann & Hay]'
+    vi_tri: APA Dictionary; Hofmann & Hay 2018
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Câu trả lời ngắn gọn: vì phần lớn đau khổ tâm lý được duy trì bởi các vòng lặp… Trị liệu hiệu quả là trị liệu chen vào được vòng lặp đó…". Đây là quan điểm của một trường phái, không phải câu trả lời chung: làm mềm ("Một câu trả lời, của trường phái nhận thức – hành vi: nhiều…").'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1007/s10608-012-9476-1
+  - id: n9
+    cau: 'Phần lớn liệu pháp thuộc một số nhóm lớn: nhận thức – hành vi, tâm động (từ truyền thống phân tâm học), nhân văn (đặt mối quan hệ và sự chấp nhận làm trung tâm), cùng các liệu pháp tích hợp.'
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+    trich: 'There are many types of psychotherapy, but generally they fall into four major categories: psychodynamic psychotherapy, cognitive therapy or behavior therapy, humanistic therapy, and integrative psychotherapy. [psychotherapy]; psychodynamic psychotherapy: those forms of psychotherapy, falling within or deriving from the psychoanalytic tradition'
+    vi_tri: APA Dictionary
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Hiện nay có hàng trăm thương hiệu trị liệu, nhưng hầu hết đều thuộc ba gia đình lớn…". APA Dictionary kể bốn nhóm (thêm tích hợp); bỏ "hàng trăm thương hiệu" (không nguồn định lượng).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/psychotherapy
+      - https://dictionary.apa.org/psychodynamic-psychotherapy
+      - https://dictionary.apa.org/client-centered-therapy
+  - id: n10
+    cau: CBT là trường phái được nghiên cứu nhiều nhất.
+    loai: phat-hien
+    nguon:
+      - cuijpers2023
+    trich: Cognitive behavior therapy (CBT) is by far the most examined type of psychological treatment for depression and is recommended in most treatment guide-lines.
+    vi_tri: Cuijpers 2023, tóm tắt
+    ket_qua: dung
+    ghi_chu: Nguồn nói "cho trầm cảm"; Hofmann 2012 (269 phân tích tổng hợp) cùng chiều cho phạm vi rộng hơn.
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+      - https://doi.org/10.1007/s10608-012-9476-1
+  - id: n11
+    cau: Aaron T. Beck là người phát triển liệu pháp nhận thức.
+    loai: lich-su
+    nguon:
+      - apa-dict
+    trich: cognitive therapy (CT) … Also called Beck therapy. [developed by Aaron T. Beck]
+    vi_tri: APA Dictionary, cognitive therapy
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Aaron T. Beck — người khai sinh liệu pháp nhận thức vào thập niên 1960–1970 — quyết định đem đứa con tinh thần của mình ra đấu tay đôi với đối thủ mạnh nhất thời đó". Bỏ mốc thập niên (không mở được nguồn, trang Lasker trả 403) và lối kể "đấu tay đôi", "mạnh nhất".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/cognitive-therapy
+      - https://doi.org/10.1007/s10608-012-9476-1
+  - id: n12
+    cau: 'Rush và cộng sự (1977): 41 người bệnh trầm cảm ngoại trú chia ngẫu nhiên vào trị liệu nhận thức (tối đa 20 buổi trong 12 tuần) hay imipramine (tối đa 12 tuần).'
+    loai: phat-hien
+    nguon:
+      - rush1977
+    trich: Forty-one unipolar depressed outpatients were randomly assigned to individual treatment with either cognitive therapy (N = 19) or imipramine (N = 22). … For the cognitive therapy patients, the treatment protocol specified a maximum of 20 interviews over a period of 12 weeks. The pharmacotherapy patients received up to 250 mg/day of imipramine for a maximum of 12 weeks.
+    vi_tri: Rush 1977, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Đây là thử nghiệm ngẫu nhiên có đối chứng nghiêm ngặt đầu tiên của bất kỳ liệu pháp trò chuyện nào: bệnh nhân trầm cảm được chia ngẫu nhiên… theo dõi tối đa 12 tuần." "Đầu tiên của bất kỳ liệu pháp trò chuyện nào" sai (đã có thử nghiệm ngẫu nhiên về trị liệu tâm lý trước 1977); bỏ. Thêm cỡ mẫu. Không ghi liều thuốc trên trang (bài không nói liều).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://link.springer.com/article/10.1007/BF01173502
+    luot_2_ghi_chu: 'Đọc tóm tắt trên Springer. Bài theo dõi Kovacs 1981 ghi 44 người: khác cách đếm, trang dùng 41 của bài gốc là đúng.'
+  - id: n13
+    cau: Cả hai nhóm đều giảm triệu chứng rõ; nhóm trị liệu nhận thức cải thiện nhiều hơn và ít người bỏ dở hơn.
+    loai: phat-hien
+    nguon:
+      - rush1977
+    trich: Both treatment groups showed statistically significant decreases in depressive symptomatology. Cognitive therapy resulted in significantly greater improvement than did pharmacotherapy on both a self-administered measure of depression … and clinical ratings … The dropout rate was significantly higher with pharmacotherapy (8 Ss) than with cognitive therapy (1 S).
+    vi_tri: Rush 1977, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Liệu pháp nhận thức thắng thuốc sau 12 tuần". Viết lại sát tóm tắt.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://link.springer.com/article/10.1007/BF01173502
+      - https://doi.org/10.1001/archpsyc.1981.01780260035003
+  - id: n14
+    cau: 'Theo dõi sau một năm (Kovacs 1981): nhóm từng trị liệu nhận thức tự đánh giá triệu chứng thấp hơn; các khác biệt khác không có ý nghĩa thống kê.'
+    loai: phat-hien
+    nguon:
+      - kovacs1981
+    trich: Self-rated depressive symptomatology was significantly lower for those who, one year earlier, had completed cognitive therapy than for those who had been in the clinical trial's pharmacotherapy cell. While there were several other interesting trends in favor of the cognitive-therapy patients, none of the between-group differences were significant.
+    vi_tri: Kovacs 1981, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một năm sau, nhóm trị liệu vẫn giữ được hiệu quả tốt hơn, trong khi nhóm thuốc có nguy cơ tái phát cao hơn khi ngưng thuốc." Quá mạnh: chỉ triệu chứng tự đánh giá khác có ý nghĩa; khác biệt về tái phát không có ý nghĩa thống kê. Sửa theo tóm tắt. chỗ khó: so sánh với thuốc.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1001/archpsyc.1981.01780260035003
+    luot_2_ghi_chu: Chỉ đọc tóm tắt; theo dõi 35 người hoàn thành.
+  - id: n15
+    cau: 'Đây là mẫu nhỏ; các thử nghiệm lớn hơn về sau cho thấy bức tranh khiêm tốn hơn: trong ngắn hạn, CBT và thuốc hiệu quả gần ngang nhau.'
+    loai: phat-hien
+    nguon:
+      - cuijpers2023
+    trich: The effects of CBT did not differ significantly from those of pharmacotherapies at the short term
+    vi_tri: Cuijpers 2023, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Thay câu cũ "Nghiên cứu này đặt ra một chuẩn mực mới: từ đây, mọi liệu pháp tâm lý muốn được coi là có bằng chứng đều phải vượt qua bài kiểm tra thử nghiệm ngẫu nhiên có đối chứng" (không nguồn) và lời dẫn "tổng quan của Quỹ Lasker" (không mở được).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+    luot_2_ghi_chu: 'Cuijpers 2023: chỉ đọc được tóm tắt (PubMed Central không cho toàn văn máy đọc; Wiley, kho VU và TUM chặn).'
+  - id: n16
+    cau: Hofmann và cộng sự (2012) tìm thấy 269 phân tích tổng hợp về CBT và xem xét mẫu đại diện 106 phân tích, bao phủ nhiều vấn đề (lo âu, trầm cảm, rối loạn ăn uống, mất ngủ, đau mạn tính…).
+    loai: so-lieu
+    nguon:
+      - hofmann2012
+    trich: 'We identified 269 meta-analytic studies and reviewed of those a representative sample of 106 meta-analyses examining CBT for the following problems: substance use disorder, schizophrenia …, depression and dysthymia, …, anxiety disorders, somatoform disorders, eating disorders, insomnia, … chronic pain and fatigue'
+    vi_tri: Hofmann 2012, tóm tắt
+    ket_qua: dung
+    ghi_chu: 'Giữ chữ cũ (diễn đạt lại "rà soát các cơ sở dữ liệu"). Thêm định nghĩa phân tích tổng hợp: "nghiên cứu gộp kết quả của nhiều nghiên cứu để ước tính hiệu quả chung".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1007/s10608-012-9476-1
+    luot_2_ghi_chu: Toàn văn PMC3584580.
+  - id: n17
+    cau: Bằng chứng mạnh nhất ủng hộ CBT cho rối loạn lo âu, rối loạn dạng cơ thể, bulimia, kiểm soát cơn giận và căng thẳng nói chung.
+    loai: phat-hien
+    nguon:
+      - hofmann2012
+    trich: The strongest support exists for CBT of anxiety disorders, somatoform disorders, bulimia, anger control problems, and general stress.
+    vi_tri: Hofmann 2012, tóm tắt
+    ket_qua: dung
+    ghi_chu: Giữ. "chứng cuồng ăn (bulimia)" đổi thành "chứng ăn uống vô độ rồi tìm cách thải ra (bulimia)" cho đúng nghĩa.
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1007/s10608-012-9476-1
+  - id: n18
+    cau: Trong 11 tổng quan có so sánh tỉ lệ đáp ứng, CBT cao hơn nhóm so sánh ở 7, chỉ một tổng quan thấy CBT thấp hơn.
+    loai: so-lieu
+    nguon:
+      - hofmann2012
+    trich: Eleven studies compared response rates between CBT and other treatments or control conditions. CBT showed higher response rates than the comparison conditions in 7 of these reviews and only one review reported that CBT had lower response rates than comparison treatments.
+    vi_tri: Hofmann 2012, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: Thêm vế "chỉ một tổng quan thấy CBT thấp hơn".
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1007/s10608-012-9476-1
+  - id: n19
+    cau: Các tác giả kết luận nền tảng bằng chứng của CBT rất mạnh, nhưng vẫn cần thêm thử nghiệm ngẫu nhiên, và chưa có phân tích tổng hợp nào riêng cho các nhóm như dân tộc thiểu số hay người thu nhập thấp.
+    loai: phat-hien
+    nguon:
+      - hofmann2012
+    trich: In general, the evidence-base of CBT is very strong. However, additional research is needed to examine the efficacy of CBT for randomized-controlled studies. Moreover, except for children and elderly populations, no meta-analytic studies of CBT have been reported on specific subgroups, such as ethnic minorities and low income samples.
+    vi_tri: Hofmann 2012, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "nền tảng bằng chứng của CBT rất vững — dù các tác giả cũng lưu ý vẫn cần thêm nghiên cứu chất lượng cao". Thêm ý về nhóm dân tộc thiểu số, thu nhập thấp (liên quan mục Ở Việt Nam).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1007/s10608-012-9476-1
+  - id: n20
+    cau: 'Theo các tác giả, Cuijpers và cộng sự (2023) là phân tích tổng hợp lớn nhất từng có về một loại liệu pháp tâm lý cho một rối loạn: 409 thử nghiệm ngẫu nhiên, 52.702 người bệnh trầm cảm, so CBT với đối chứng (chăm sóc thông thường, danh sách chờ), liệu pháp khác, thuốc, điều trị kết hợp.'
+    loai: so-lieu
+    nguon:
+      - cuijpers2023
+    trich: We included 409 trials (518 comparisons) with 52,702 patients, thus conducting the largest meta-analysis ever of a specific type of psychotherapy for a mental disorder.
+    vi_tri: Cuijpers 2023, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: Thêm "theo các tác giả" (lời tự nhận của bài).
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+    luot_2_ghi_chu: 'Cuijpers 2023: chỉ đọc được tóm tắt (PubMed Central không cho toàn văn máy đọc; Wiley, kho VU và TUM chặn).'
+  - id: n21
+    cau: 'CBT hơn nhóm đối chứng ở mức vừa đến lớn (g = 0,79); chỉ tính nghiên cứu ít nguy cơ sai lệch: g = 0,60; sau hiệu chỉnh sai lệch xuất bản: g = 0,47.'
+    loai: so-lieu
+    nguon:
+      - cuijpers2023
+    trich: 'The main effect size indicating the overall difference between CBT and control conditions after treatment was g=0.79 (95% CI: 0.70‐0.89) … The effect size was smaller for studies with low risk of bias (g=0.60; 95% CI: 0.49‐0.71) and after adjusting for publication bias (g=0.47, 95% CI: 0.35‐0.59 using the trim and fill procedure).'
+    vi_tri: Cuijpers 2023, Kết quả, bảng 2
+    ket_qua: dung
+    ghi_chu: 'Số khớp toàn văn (bảng 2: 0,79; 0,60; 0,47, phương pháp trim and fill). Hình cuijpers-funnel (chép nguyên từ trang cũ) dùng cùng số. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac vì không mở được toàn văn. Toàn văn Cuijpers 2023 (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; lượt 1 đã đọc, nay đọc lại): bảng 2 "Only low risk of bias 90 0.60 (0.49‐0.71) … Publication bias correction 349 0.47 (0.35‐0.59)", chú thích bảng "The reported publication bias correction is that using the trim and fill procedure"; Kết quả: "The response rate was 0.42 (95% CI: 0.39‐0.45) in CBT and 0.19 (95% CI: 0.18‐0.21) in the control conditions, which resulted in a RR of 2.13 (95% CI: 1.96‐2.32) and a NNT of 4.7 (95% CI: 4.0‐5.5)"; bảng 3: tỉ lệ đáp ứng ước tính ở 228/238 so sánh. NNT 4,7 do bài tính từ RR gộp (phương pháp: NNT = 1/hiệu số nguy cơ, gộp riêng), không phải 1/(0,42 − 0,19) ≈ 4,3 từ hai tỉ lệ gộp riêng; giữ số của bài. Số 0,47 là trim and fill (chỉ hiệu chỉnh sai lệch xuất bản), không phải gộp cả lọc nguy cơ sai lệch như một nguồn bậc 3 viết. Giữ các số. Review (17/11/2026): 0,47 là phép trim and fill trên mọi so sánh (349), không cộng dồn với phép chỉ tính nghiên cứu ít sai lệch (0,60): trang thêm "một phép tính riêng, không cộng dồn với phép lọc trước"; hình cuijpers-funnel đổi "qua ba lần lọc" (aria-label, chú thích) thành "theo ba cách tính" cùng lý do.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'g = 0,79 đúng. g = 0,60 (ít nguy cơ sai lệch) và g = 0,47 (sau hiệu chỉnh sai lệch xuất bản) không xác nhận được. Không mở được toàn văn Cuijpers 2023 (chỉ tóm tắt); tóm tắt không có 42%/19%, NNT, g = 0,60, g = 0,47. Chỉ nguồn bậc 3 nhắc các số này và chúng không khớp nhau: Mad in America ghi 42% so với 19% và 0,47 ''sau khi tính sai lệch xuất bản và nghiên cứu nguy cơ sai lệch cao'' (không phải chỉ hiệu chỉnh xuất bản), và NNT 3,6 (có lẽ cho thuyên giảm); Mental Elf ghi chỉ 9 so sánh ít nguy cơ sai lệch, không ghi số. Cần review mở toàn văn (bảng 1–2) để chốt.'
+  - id: n22
+    cau: '42% người được CBT đáp ứng (giảm ít nhất một nửa triệu chứng; tỉ lệ phần lớn ước tính từ điểm trung bình của từng thử nghiệm), so với 19% ở nhóm đối chứng (NNT = 4,7: cứ khoảng 5 người được điều trị thì có thêm 1 người đáp ứng).'
+    loai: so-lieu
+    nguon:
+      - cuijpers2023
+    trich: A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT.
+    vi_tri: Cuijpers 2023, Thảo luận
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(cứ khoảng 5 người điều trị thì 1 người hưởng lợi thêm — NNT = 4,7)". "Hưởng lợi" đổi thành "đáp ứng" cho sát định nghĩa của bài (đáp ứng = giảm 50% triệu chứng). Hình (chép nguyên) vẫn ghi "hưởng lợi thêm"; không sửa hình (HINH_DA_SUA), lượt 2 xét có cần sửa không. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac. Toàn văn Cuijpers 2023 (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; lượt 1 đã đọc, nay đọc lại): bảng 2 "Only low risk of bias 90 0.60 (0.49‐0.71) … Publication bias correction 349 0.47 (0.35‐0.59)", chú thích bảng "The reported publication bias correction is that using the trim and fill procedure"; Kết quả: "The response rate was 0.42 (95% CI: 0.39‐0.45) in CBT and 0.19 (95% CI: 0.18‐0.21) in the control conditions, which resulted in a RR of 2.13 (95% CI: 1.96‐2.32) and a NNT of 4.7 (95% CI: 4.0‐5.5)"; bảng 3: tỉ lệ đáp ứng ước tính ở 228/238 so sánh. NNT 4,7 do bài tính từ RR gộp (phương pháp: NNT = 1/hiệu số nguy cơ, gộp riêng), không phải 1/(0,42 − 0,19) ≈ 4,3 từ hai tỉ lệ gộp riêng; giữ số của bài. Số 0,47 là trim and fill (chỉ hiệu chỉnh sai lệch xuất bản), không phải gộp cả lọc nguy cơ sai lệch như một nguồn bậc 3 viết. Giữ các số. Thêm vào trang: tỉ lệ đáp ứng "phần lớn ước tính từ điểm trung bình của từng thử nghiệm" và định nghĩa đáp ứng (giảm ít nhất một nửa triệu chứng: "response (i.e., a 50% reduction of depressive symptoms compared to baseline)"). Hình cuijpers-funnel sửa cho khớp ("có thêm 1 người đáp ứng"; thêm vào HINH_DA_SUA).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1002/wps.21069", "https://www.constantinyvesplessen.com/pdfs/Cuijpers%20et%20al.%20-%202023%20-%20Cognitive%20behavior%20therapy%20vs.%20control%20conditions,.pdf" ]
+    luot_2_ghi_chu: "Khớp từng số. 228/238 nhóm CBT có tỉ lệ ước tính, nên 'phần lớn ước tính từ điểm trung bình' đúng (ước tính từ trung bình đầu, cuối, độ lệch chuẩn và cỡ mẫu). Đọc toàn văn bản PDF của nhà xuất bản (có dòng tải từ Wiley) do một đồng tác giả (Plessen) đăng; Wiley và PMC chặn bot. Bối cảnh: NNT 4,7 cao lên 8,0 khi hiệu chỉnh sai lệch xuất bản và 6,3 khi chỉ tính nghiên cứu ít sai lệch."
+  - id: n23
+    cau: Hiệu quả vẫn còn ở lần theo dõi 6–12 tháng sau.
+    loai: phat-hien
+    nguon:
+      - cuijpers2023
+    trich: CBT was still significantly effective at 6‐9 month (g=0.74) and 10‐12 month (g=0.49) follow-up
+    vi_tri: Cuijpers 2023, Thảo luận
+    ket_qua: dung
+    ghi_chu: Giữ chữ cũ ("duy trì ở 6–12 tháng sau").
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+    luot_2_ghi_chu: 'Cuijpers 2023: chỉ đọc được tóm tắt (PubMed Central không cho toàn văn máy đọc; Wiley, kho VU và TUM chặn).'
+  - id: n24
+    cau: CBT chỉ hơn liệu pháp tâm lý khác một chút (g = 0,06, mất ý nghĩa trong phần lớn phân tích độ nhạy); ngang thuốc ngắn hạn nhưng hơn thuốc ở 6–12 tháng (g = 0,34, ít thử nghiệm, không vững trong mọi phân tích độ nhạy); kết hợp hơn thuốc đơn độc nhưng không hơn CBT đơn độc.
+    loai: so-lieu
+    nguon:
+      - cuijpers2023
+    trich: 'CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point.'
+    vi_tri: Cuijpers 2023, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…CBT chỉ hơn các liệu pháp tâm lý khác một chút xíu (g = 0,06…); ngang ngửa thuốc trong ngắn hạn nhưng hơn thuốc ở 6–12 tháng (g = 0,34)…". Thêm giới hạn của g = 0,34 (ít thử nghiệm, không vững) theo tóm tắt. chỗ khó: so sánh với thuốc.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+    luot_2_ghi_chu: 'Cuijpers 2023: chỉ đọc được tóm tắt (PubMed Central không cho toàn văn máy đọc; Wiley, kho VU và TUM chặn).'
+  - id: n25
+    cau: 'Powers và cộng sự (2008): phân tích tổng hợp 32 thử nghiệm (1.479 người) về liệu pháp tâm lý cho lo âu xã hội, so với danh sách chờ, giả dược tâm lý và giả dược thuốc.'
+    loai: so-lieu
+    nguon:
+      - powers2008
+    trich: A comprehensive literature search produced 32 randomized controlled trials (N = 1,479) … There was a clear overall advantage of treatment compared to waitlist (d = 0.86), psychological placebo (d = 0.34), and pill-placebo (d = 0.36) conditions at posttreatment … Treatment gains were maintained at follow-up (d = 0.76).
+    vi_tri: Powers 2008, tóm tắt
+    ket_qua: dung
+    ghi_chu: Giữ. DOI 10.1680/… trên trang là bí danh của 10.1521/… (doi.org chuyển hướng), giống bản ghi đã khóa ở src/data/nguon.yml.
+    luot_2: dung
+    luot_2_nguon:
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+    luot_2_ghi_chu: 'Powers, Sigmarsson, Emmelkamp 2008, International Journal of Cognitive Therapy 1(2): 94–113; tóm tắt ở kho UvA. Lưu ý: kết quả tìm kiếm có trộn với Acarturk 2009 (29 nghiên cứu, 1.628 người), là bài khác.'
+  - id: n26
+    cau: Giả dược tâm lý là một hoạt động có gặp gỡ, trò chuyện nhưng không có thành phần được cho là có tác dụng của liệu pháp; giả dược thuốc là viên không có hoạt chất.
+    loai: dinh-nghia
+    nguon:
+      - baskin2003
+      - wampold2015
+    trich: Placebo treatments in psychotherapy cannot adequately control for all common factors [Baskin]; Structural aspects of the placebo included number and duration of sessions, training of therapist, format of therapy, and restriction of topics. [Baskin]
+    vi_tri: Baskin 2003, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "giả dược tâm lý (psychological placebo — gặp gỡ, được lắng nghe nhưng không nhận kỹ thuật trị liệu thật)". Viết lại gần định nghĩa chung; tóm tắt Powers không định nghĩa. chỗ khó: định nghĩa giả dược tâm lý khác nhau giữa các thử nghiệm.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0022-006X.71.6.973
+    luot_2_ghi_chu: Định nghĩa khớp cách dùng trong Baskin 2003 và Powers 2008.
+  - id: n27
+    cau: Trị liệu thật hơn danh sách chờ ở mức lớn (d = 0,86), hơn giả dược tâm lý (d = 0,34) và giả dược thuốc (d = 0,36), khoảng cách nhỏ hơn nhiều so với danh sách chờ; hiệu quả còn ở lần theo dõi sau (d = 0,76).
+    loai: so-lieu
+    nguon:
+      - powers2008
+    trich: A comprehensive literature search produced 32 randomized controlled trials (N = 1,479) … There was a clear overall advantage of treatment compared to waitlist (d = 0.86), psychological placebo (d = 0.34), and pill-placebo (d = 0.36) conditions at posttreatment … Treatment gains were maintained at follow-up (d = 0.76).
+    vi_tri: Powers 2008, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+  - id: n28
+    cau: 'Thông điệp hai mặt: trong các thử nghiệm này trị liệu thật hơn giả dược, nhưng một phần đáng kể hiệu quả có vẻ đến từ những gì giả dược cũng có (quan tâm, kỳ vọng, người đồng hành).'
+    loai: phat-hien
+    nguon:
+      - powers2008
+      - wampold2015
+    trich: A comprehensive literature search produced 32 randomized controlled trials (N = 1,479) … There was a clear overall advantage of treatment compared to waitlist (d = 0.86), psychological placebo (d = 0.34), and pill-placebo (d = 0.36) conditions at posttreatment … Treatment gains were maintained at follow-up (d = 0.76). [Powers]; alliance, empathy, expectations [Wampold]
+    vi_tri: Powers 2008; Wampold 2015
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "trị liệu thật không chỉ là giả dược — nhưng một phần đáng kể hiệu quả đến từ những yếu tố mà giả dược cũng có". Làm mềm: "trong các thử nghiệm này", "có vẻ"; vì Baskin 2003 thấy với giả dược tương đương về cấu trúc, khác biệt gần như không còn (n33).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+      - https://doi.org/10.1037/0022-006X.71.6.973
+    luot_2_ghi_chu: '''Có vẻ'' giữ đúng mức suy luận.'
+  - id: n29
+    cau: 'Trị liệu tâm lý hiệu quả hơn không điều trị: rất nhiều thử nghiệm và phân tích tổng hợp cho thấy giảm triệu chứng rõ hơn danh sách chờ hay chăm sóc thông thường; với trầm cảm g = 0,79, vẫn có ý nghĩa sau hiệu chỉnh sai lệch.'
+    loai: nhan
+    nguon:
+      - cuijpers2023
+      - hofmann2012
+      - shedler2010
+      - elliott2021
+    trich: 'The main effect size indicating the overall difference between CBT and control conditions after treatment was g=0.79 (95% CI: 0.70‐0.89) … The effect size was smaller for studies with low risk of bias (g=0.60; 95% CI: 0.49‐0.71) and after adjusting for publication bias (g=0.47, 95% CI: 0.35‐0.59 using the trim and fill procedure). [Cuijpers]; The first major meta-analysis of psychotherapy outcome studies included 475 studies and yielded an overall effect size … of 0.85 for patients who received psychotherapy compared with untreated controls (Smith, Glass, & Miller, 1980) [Shedler 2010, kể lại]'
+    vi_tri: Cuijpers 2023; Shedler 2010 tr. 99
+    nhan: vung-chac
+    co_so:
+      - cuijpers2023
+      - hofmann2012
+      - elliott2021
+      - driessen2015
+    ly_do: 'Nhiều phân tích tổng hợp lớn, độc lập, cùng chiều: CBT với trầm cảm (409 thử nghiệm, g = 0,79, còn 0,47 sau hiệu chỉnh), tổng quan 269 phân tích tổng hợp về CBT, liệu pháp nhân văn so với không trị liệu (0,88), trị liệu tâm động ngắn hạn so với đối chứng (Driessen 2015); hiệu quả còn sau hiệu chỉnh sai lệch xuất bản; có ở nhiều quần thể (Cuijpers 2023 ghi số thử nghiệm ở nước không phương Tây tăng). Đạt Vững chắc cho so sánh với không điều trị.'
+    ket_qua: da-sua
+    ghi_chu: 'Thân cũ: "Hàng trăm thử nghiệm… và hàng trăm phân tích tổng hợp… Đây là một trong những kết luận được tái hiện nhiều nhất trong tâm lý học lâm sàng." Bỏ câu cuối (không nguồn); thêm số Cuijpers.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+      - https://doi.org/10.1037/bul0000465
+    luot_2_ghi_chu: 'Nhãn Vững chắc hợp thước đo (nhiều phân tích tổng hợp lớn cùng chiều, có cả nước thu nhập thấp-trung bình). Vế ''sau hiệu chỉnh sai lệch'' chỉ xác nhận được ở mức ''remained similar in sensitivity analyses'' (tóm tắt). Cuijpers 2023: chỉ đọc được tóm tắt (PubMed Central không cho toàn văn máy đọc; Wiley, kho VU và TUM chặn).'
+  - id: n30
+    cau: 'CBT hiệu quả với trầm cảm và lo âu ở mức vừa, nhưng khiêm tốn hơn con số thô: g = 0,79 còn 0,47 sau hiệu chỉnh; 42% so với 19%, hơn một nửa cần thêm hay đổi hướng.'
+    loai: nhan
+    nguon:
+      - cuijpers2023
+      - carpenter2018
+    trich: 'The main effect size indicating the overall difference between CBT and control conditions after treatment was g=0.79 (95% CI: 0.70‐0.89) … The effect size was smaller for studies with low risk of bias (g=0.60; 95% CI: 0.49‐0.71) and after adjusting for publication bias (g=0.47, 95% CI: 0.35‐0.59 using the trim and fill procedure). A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT.'
+    vi_tri: Cuijpers 2023
+    nhan: kha-vung
+    co_so:
+      - cuijpers2023
+      - carpenter2018
+    ly_do: 'Phân tích tổng hợp lớn với trầm cảm (Cuijpers 2023) và với lo âu so với giả dược (Carpenter 2018: g = 0,56) cùng chiều; giới hạn: hiệu ứng giảm rõ khi chỉ tính nghiên cứu ít sai lệch và sau hiệu chỉnh sai lệch xuất bản, dị biệt rất cao, khác nhau giữa các rối loạn. Khá vững.'
+    ket_qua: da-sua
+    ghi_chu: 'Ý chính cũ: "CBT hiệu quả với lo âu và trầm cảm ở mức trung bình — nhưng con số thật khiêm tốn hơn quảng cáo". Bỏ "quảng cáo" (không rõ ai quảng cáo); giữ nhãn. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac vì không mở được toàn văn. Toàn văn Cuijpers 2023 (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; lượt 1 đã đọc, nay đọc lại): bảng 2 "Only low risk of bias 90 0.60 (0.49‐0.71) … Publication bias correction 349 0.47 (0.35‐0.59)", chú thích bảng "The reported publication bias correction is that using the trim and fill procedure"; Kết quả: "The response rate was 0.42 (95% CI: 0.39‐0.45) in CBT and 0.19 (95% CI: 0.18‐0.21) in the control conditions, which resulted in a RR of 2.13 (95% CI: 1.96‐2.32) and a NNT of 4.7 (95% CI: 4.0‐5.5)"; bảng 3: tỉ lệ đáp ứng ước tính ở 228/238 so sánh. NNT 4,7 do bài tính từ RR gộp (phương pháp: NNT = 1/hiệu số nguy cơ, gộp riêng), không phải 1/(0,42 − 0,19) ≈ 4,3 từ hai tỉ lệ gộp riêng; giữ số của bài. Số 0,47 là trim and fill (chỉ hiệu chỉnh sai lệch xuất bản), không phải gộp cả lọc nguy cơ sai lệch như một nguồn bậc 3 viết. Giữ các số.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'Vế lo âu có Hofmann 2012. Số 0,47 và 42%/19% chưa xác nhận ở nguồn bậc 1–2, và theo một nguồn bậc 3, 0,47 là sau khi tính cả sai lệch xuất bản lẫn nghiên cứu nguy cơ sai lệch cao. Nhãn (theo trang có lẽ Khá vững) hợp nếu các số được xác nhận. Không mở được toàn văn Cuijpers 2023 (chỉ tóm tắt); tóm tắt không có 42%/19%, NNT, g = 0,60, g = 0,47. Chỉ nguồn bậc 3 nhắc các số này và chúng không khớp nhau: Mad in America ghi 42% so với 19% và 0,47 ''sau khi tính sai lệch xuất bản và nghiên cứu nguy cơ sai lệch cao'' (không phải chỉ hiệu chỉnh xuất bản), và NNT 3,6 (có lẽ cho thuyên giảm); Mental Elf ghi chỉ 9 so sánh ít nguy cơ sai lệch, không ghi số. Cần review mở toàn văn (bảng 1–2) để chốt.'
+  - id: n31
+    cau: Johnsen và Friborg (2015) cho rằng hiệu quả của CBT với trầm cảm giảm dần theo năm công bố; phân tích làm lại năm 2017 (Cristea và cộng sự) và Cuijpers 2023 không thấy xu hướng này.
+    loai: phat-hien
+    nguon:
+      - johnsen2015
+      - cristea2017
+      - cuijpers2023
+    trich: The metaregressions examining the temporal trends indicated that the effects of CBT have declined linearly and steadily since its introduction [Johnsen]; Year of publication does not appear to be a reliable and independent moderator of the effectiveness of CBT for depression. The linear "fall" reported by Johnsen and Friborg (2015) is most likely a spurious finding. [Cristea]; There was no reduction of the effect size of CBT according to the publication year [Cuijpers 2023]
+    vi_tri: tóm tắt ba bài
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "một phân tích 70 nghiên cứu từ 1977–2014 cho thấy hiệu quả của CBT có xu hướng giảm dần theo thời gian (Johnsen và Friborg, 2015) — có thể vì các nghiên cứu đời đầu chọn bệnh nhân đẹp hơn, hoặc vì chính các nhà trị liệu đời đầu là những người giỏi nhất." Kết quả này bị phản bác bởi phân tích làm lại (Cristea 2017, cùng tạp chí) và không lặp lại trong Cuijpers 2023; trang cũ chỉ nêu một phía và thêm lời giải thích không nguồn. Sửa: nêu cả hai, bỏ lời giải thích. chỗ khó: hai phân tích tổng hợp mâu thuẫn; bên mới hơn, nhiều thử nghiệm hơn không thấy suy giảm.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/bul0000015
+      - https://doi.org/10.1037/bul0000062
+      - https://doi.org/10.1002/wps.21069
+  - id: n32
+    cau: Các liệu pháp chính quy khác nhau rất ít về hiệu quả (CBT hơn liệu pháp khác chỉ g = 0,06).
+    loai: so-lieu
+    nguon:
+      - cuijpers2023
+    trich: 'CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point.'
+    vi_tri: Cuijpers 2023, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+      - https://doi.org/10.1037/0033-2909.122.3.203
+  - id: n33
+    cau: Phe yếu tố chung cho rằng phần lớn tác dụng đến từ những gì mọi liệu pháp đều có (liên minh trị liệu, đồng cảm, kỳ vọng); một phân tích tổng hợp thấy trị liệu thật không hơn rõ giả dược tâm lý được thiết kế tương đương về số buổi, thời lượng, người thực hiện (Baskin 2003).
+    loai: phat-hien
+    nguon:
+      - wampold2015
+      - baskin2003
+    trich: 'Results indicate that comparisons between active treatments and structurally inequivalent placebos produced larger effects than comparisons between active treatments and structurally equivalent placebos: moreover, the latter comparison produced negligible effects, indicating that active treatments were not demonstrably superior to well-designed placebos. [Baskin]'
+    vi_tri: Baskin 2003, tóm tắt; Wampold 2015
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Điều này gợi ý phần lớn tác dụng đến từ các yếu tố chung… liên minh trị liệu…, sự đồng cảm, và kỳ vọng sẽ khỏi." Ghi là luận điểm của một phe; thêm Baskin 2003 (bằng chứng chính của phe này về giả dược). chỗ khó.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0022-006X.71.6.973
+    luot_2_ghi_chu: Chỉ đọc tóm tắt; 'người thực hiện' tương ứng 'training of therapist'.
+  - id: n34
+    cau: Phe kỹ thuật đặc thù chỉ ra rằng trong nhiều thử nghiệm trị liệu thật vẫn hơn giả dược tâm lý (d = 0,34 với lo âu xã hội), và với một số rối loạn lo âu, kỹ thuật như tiếp xúc có vai trò rõ.
+    loai: phat-hien
+    nguon:
+      - powers2008
+      - carpenter2018
+      - craske2014
+    trich: psychological placebo (d = 0.34) [Powers]; Interventions primarily using exposure strategies had larger effect sizes than those using cognitive or cognitive and behavioral techniques, though this difference did not reach significance. [Carpenter]; Exposure therapy is an effective approach for treating anxiety disorders [Craske]
+    vi_tri: Powers 2008; Carpenter 2018; Craske 2014
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Phe kỹ thuật đặc thù phản bác: các nghiên cứu so sánh thường dùng phiên bản làm cho có của liệu pháp đối thủ, và hiệu quả vượt trội giả dược tâm lý (d = 0,34) chứng tỏ kỹ thuật thật vẫn đóng góp thêm." Lập luận "phiên bản làm cho có" (không thật, non-bona fide) thật ra là lập luận của phe yếu tố chung để giải thích vì sao có khác biệt nhỏ (Wampold; Elliott 2021 dùng cho so sánh CBT với liệu pháp nhân văn); trang cũ gán ngược. Sửa. "chứng tỏ" thành "chỉ ra". chỗ khó: vế "kỹ thuật như tiếp xúc có vai trò rõ" dựa trên bằng chứng chưa đủ mạnh (khác biệt trong Carpenter chưa có ý nghĩa); lượt 2 xét có nên làm mềm thêm.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+      - https://doi.org/10.1146/annurev-clinpsy-050718-095424
+    luot_2_ghi_chu: Câu kể lập luận của một phe nên đúng. Vế 'tiếp xúc có vai trò rõ' không có nguồn riêng mở được; nên giữ chữ 'phe … chỉ ra'.
+  - id: n35
+    cau: 'Bao nhiêu phần hiệu quả là nhờ kỹ thuật riêng, bao nhiêu nhờ yếu tố chung: đang tranh cãi.'
+    loai: nhan
+    nguon:
+      - wampold2015
+      - baskin2003
+      - powers2008
+      - cuijpers2023
+    vi_tri: khung "Mức độ chắc chắn"
+    nhan: tranh-cai
+    co_so:
+      - wampold2015
+      - baskin2003
+      - powers2008
+      - cuijpers2023
+    ly_do: 'Bằng chứng chất lượng cao được diễn giải trái ngược: khác biệt giữa các liệu pháp rất nhỏ (Cuijpers 2023: g = 0,06; Wampold 2015: tối đa khoảng d = 0,20), giả dược tương đương về cấu trúc gần ngang trị liệu thật (Baskin 2003); nhưng trị liệu vẫn hơn giả dược tâm lý thông thường (Powers 2008). Wampold tự nhận đây là tranh luận lâu dài ("both embraced and dismissed, creating some tension"). Đang tranh cãi.'
+    ket_qua: da-sua
+    ghi_chu: Giữ nhãn; sửa thân (n33, n34).
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1146/annurev-clinpsy-050718-095424
+      - https://doi.org/10.1002/wps.20238
+      - https://doi.org/10.1037/0022-006X.71.6.973
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+    luot_2_ghi_chu: 'Nhãn Đang tranh cãi hợp thước đo: các tổng hợp chất lượng tốt cho kết luận ngược nhau (Baskin 2003 so với Powers 2008), Annual Review 2019 kết luận chưa biết.'
+  - id: n36
+    cau: 'Tên "phán quyết chim Dodo" bắt nguồn từ bài của Rosenzweig năm 1936, mượn lời con chim Dodo: "Ai cũng thắng, và ai cũng phải có giải".'
+    loai: lich-su
+    nguon:
+      - wampold2015
+      - rosenzweig1936
+    trich: 'Rosenzweig S. Some implicit common factors in diverse methods of psychotherapy: "At last the Dodo said, Everybody has won and all must have prizes" Am J Orthopsychiatry. 1936; 6:412–5. [Wampold 2015, tài liệu tham khảo 1]; The so-called common factors have a long history in psychiatry, originating with a seminal article by S. Rosenzweig in 1936'
+    vi_tri: Wampold 2015, mở đầu và tài liệu tham khảo
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "(Dodo bird verdict, theo Rosenzweig, 1936: mọi người đều thắng)". Dịch đủ câu trích. Tên gọi "Dodo bird verdict" phổ biến sau này (Luborsky 1975); trang chỉ nói "theo bài của Rosenzweig", không nói ông đặt tên.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0033-2909.122.3.203
+    luot_2_ghi_chu: Chữ 'phán quyết' (verdict) phổ biến từ Luborsky và cộng sự 1975; Rosenzweig 1936 là nơi lời con Dodo được dùng lần đầu. 'Bắt nguồn từ' chấp nhận được.
+  - id: n37
+    cau: Tranh luận yếu tố chung và kỹ thuật đặc thù vẫn chưa ngã ngũ.
+    loai: phat-hien
+    nguon:
+      - wampold2015
+    trich: During this period, the common factors have been both embraced and dismissed, creating some tension. The purpose of this paper is not to review or discuss the debate
+    vi_tri: Wampold 2015, mở đầu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1146/annurev-clinpsy-050718-095424
+  - id: n38
+    cau: 'Bộ ba nhận thức của Beck: niềm tin tiêu cực về bản thân, thế giới, tương lai, gắn với trầm cảm.'
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+    trich: 'cognitive triad: a set of three beliefs thought to characterize major depressive episodes. These are negative beliefs about the self, the world, and the future. … [proposed in 1976 by Aaron T. Beck]'
+    vi_tri: APA Dictionary, cognitive triad
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Beck đề xuất rằng trầm cảm (và sau này là lo âu) được duy trì bởi bộ ba nhận thức". APA Dictionary: bộ ba "được cho là đặc trưng của giai đoạn trầm cảm"; bỏ "(và sau này là lo âu)" (bộ ba là của trầm cảm) và "được duy trì bởi" thành "gắn với".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/cognitive-triad
+  - id: n39
+    cau: Suy nghĩ tự động là những ý nghĩ thoáng qua, thành thói quen, mà ta tin ngay không kiểm chứng.
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+    trich: 'automatic thoughts: thoughts that are instantaneous, habitual, and nonconscious. Automatic thoughts affect a person''s mood and actions. Helping individuals to become aware of the presence and impact of negative automatic thoughts, and then to test their validity, is a central task of cognitive therapy.'
+    vi_tri: APA Dictionary, automatic thoughts
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Từ bộ ba này sinh ra các suy nghĩ tự động". Bỏ quan hệ "sinh ra" (không có trong định nghĩa); thêm "thành thói quen".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/automatic-thoughts
+    luot_2_ghi_chu: '''Tin ngay không kiểm chứng'' là diễn ý hợp lý của ''nonconscious, habitual''.'
+  - id: n40
+    cau: 'Trị liệu gồm hai mũi: tái cấu trúc nhận thức (nhận ra và kiểm tra suy nghĩ như giả thuyết, đối chiếu bằng chứng) và can thiệp hành vi (đối mặt dần với điều né tránh, quay lại hoạt động có ý nghĩa).'
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+      - nice-ng222
+    trich: The objective of the therapy is to identify these faulty cognitions and replace them with more adaptive ones, a process known as cognitive restructuring. The therapist … helps the client correct and revise their perceptions and attitudes by citing evidence to the contrary [APA]; Behavioural activation … plan practical changes that reduce avoidance and focus on behaviours that are linked to improved mood [NICE bảng 2]
+    vi_tri: APA Dictionary; NICE NG222 bảng 2
+    ket_qua: da-sua
+    ghi_chu: Thêm ví dụ "quay lại các hoạt động có ý nghĩa" (kích hoạt hành vi).
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1007/s10608-012-9476-1
+      - https://dictionary.apa.org/cognitive-therapy
+  - id: n41
+    cau: 'Sách nền tảng: Beck, Rush, Shaw và Emery (1979), Cognitive therapy of depression.'
+    loai: lich-su
+    nguon:
+      - beck1979
+    vi_tri: Bản ghi nguồn beck1979 (src/data/nguon.yml)
+    ket_qua: dung
+    ghi_chu: Giữ. Sách in, không đọc; siêu dữ liệu theo bản ghi nguồn đã có.
+    luot_2: dung
+    luot_2_nguon:
+      - https://openlibrary.org/books/OL4416048M
+    luot_2_ghi_chu: Đồng tác giả Rush, Shaw, Emery khớp bản ghi tác phẩm (bản 2024 ghi đủ Beck, Rush, Shaw, Emery).
+  - id: n42
+    cau: 'Mô hình bối cảnh của Wampold (một người ủng hộ yếu tố chung): ba con đường là mối quan hệ thật, kỳ vọng (từ lời giải thích hợp lý về vấn đề và cách điều trị), và các hành động có lợi cho sức khỏe mà liệu pháp khuyến khích.'
+    loai: phat-hien
+    nguon:
+      - wampold2015
+    trich: 'The three pathways of the contextual model involve: a) the real relationship, b) the creation of expectations through explanation of disorder and the treatment involved, and c) the enactment of health promoting actions.'
+    vi_tri: Wampold 2015, The contextual model
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "ba thứ quyết định phần lớn kết quả: liên minh trị liệu…, kỳ vọng…, và một nghi thức chữa lành có ý nghĩa (một lời giải thích mạch lạc… + các bước hành động cụ thể)." Sửa theo đúng ba con đường của bài; bỏ "quyết định phần lớn kết quả".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11303923/
+      - https://doi.org/10.1002/wps.20238
+    luot_2_ghi_chu: Không mở được toàn văn Wampold 2015 (PMC chặn bằng captcha, Wiley 403; chỉ có tóm tắt). Ba con đường xác nhận qua bài 2024 của chính nhóm Wampold; cách gọi đường thứ ba là 'hành động có lợi cho sức khỏe' khớp mô tả thường gặp của mô hình bối cảnh nhưng chưa đọc được chữ gốc 2015.
+  - id: n43
+    cau: 'Theo tổng quan của Wampold: tương quan giữa liên minh trị liệu và kết quả khoảng r = 0,27; khác biệt giữa các nhà trị liệu (d ≈ 0,35) lớn hơn khác biệt thường gặp giữa các liệu pháp (tối đa khoảng d = 0,20).'
+    loai: so-lieu
+    nguon:
+      - wampold2015
+    trich: The most recent meta-analysis of the alliance included nearly 200 studies involving over 14,000 patients and found that the aggregate correlation between alliance and outcome was about .27, which is equivalent to a Cohen's d of 0.57 … A meta-analysis of therapist effects in clinical trials found modest therapist effects (d=0.35, n=29) … if they do find differences among various types of treatment, typically find at most differences of approximately d=0.20
+    vi_tri: Wampold 2015, mục Alliance, Therapist effects, Treatment differences
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới, thay câu cũ ở mục Áp dụng "Một nhà trị liệu giỏi với phương pháp thường thường tốt hơn một nhà trị liệu dở với phương pháp xịn" (n55). chỗ khó: số do một phe tổng hợp. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac cho d ≈ 0,35. Toàn văn Wampold 2015 (bản PMC4592639 lưu ở Internet Archive ngày 24/8/2024), mục Therapist effects: "A meta-analysis of therapist effects in clinical trials found modest therapist effects (d=0.35, n=29; see Figure 1)". Số 0,35 là của thử nghiệm lâm sàng (Hình 1); bài nói thêm ở bối cảnh tự nhiên khác biệt lớn hơn. Giữ số, ghi đúng là "trong các thử nghiệm lâm sàng" ở hồ sơ.'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://doi.org/10.1037/a0022186
+      - https://doi.org/10.1037/pst0000172
+      - https://doi.org/10.1037/0033-2909.122.3.203
+    luot_2_ghi_chu: 'r ≈ 0,27 và ''tối đa khoảng d = 0,20'' xác nhận qua nguồn gốc mà Wampold dẫn. d ≈ 0,35 cho khác biệt giữa nhà trị liệu không xác nhận được: không mở được toàn văn Wampold 2015, và theo trí nhớ (chưa kiểm) bảng của bài có thể ghi một số khác (khoảng 0,55). Cần review đọc bảng 1 của Wampold 2015.'
+  - id: n44
+    cau: Điều này có thể giải thích vì sao các trường phái cho kết quả gần như nhau; bằng chứng về liên minh trị liệu chủ yếu là tương quan, chưa chứng minh nhân quả.
+    loai: phat-hien
+    nguon:
+      - wampold2015
+    trich: There have been a number of criticisms of the conclusion that alliance is an important factor in psychotherapy, most of which have focused on the correlational nature of alliance research.
+    vi_tri: Wampold 2015, mục Alliance
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Điều này giải thích vì sao…: chúng khác vỏ kỹ thuật nhưng chia sẻ chung ruột". Làm mềm "có thể giải thích"; thêm giới hạn tương quan. (Wampold cho rằng các phê bình này không làm giảm tầm quan trọng của liên minh; trang nêu giới hạn một cách trung lập.)'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1146/annurev-clinpsy-050718-095424
+  - id: n45
+    cau: Liệu pháp tâm động bắt nguồn từ truyền thống phân tâm học, chú trọng động lực và cảm xúc ít được ý thức, giúp hiểu khuôn mẫu lặp lại trong các mối quan hệ; nhiều dạng hiện đại là trị liệu ngắn hạn.
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+      - shedler2010
+    trich: 'psychodynamic psychotherapy: those forms of psychotherapy, falling within or deriving from the psychoanalytic tradition, that view individuals as reacting to unconscious forces … [APA]; short-term (< 40 hours) psychodynamic therapy [Shedler, kể Abbass 2006]'
+    vi_tri: APA Dictionary; Shedler 2010 tr. 100–101
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "thay vì nằm trên ghế sofa nhiều năm, phiên bản hiện đại thường ngắn hạn (dưới 40 buổi), tập trung vào các mẫu hình quan hệ lặp lại (ví dụ: luôn chọn người yêu coi thường mình — có thể vì đang vô thức diễn lại mối quan hệ với cha mẹ)". "Dưới 40 buổi" sai đơn vị (Abbass 2006: dưới 40 giờ); bỏ ví dụ người yêu (có thể đọc như diễn giải tâm lý cho cá nhân) và "thường" (không có số liệu tỉ lệ). Shedler mô tả các đặc điểm của trị liệu tâm động (tr. 99–100): lượt 2 đối chiếu "khuôn mẫu lặp lại trong quan hệ".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/psychodynamic-psychotherapy
+      - https://www.apa.org/pubs/journals/releases/amp-65-2-98.pdf
+      - https://doi.org/10.1002/14651858.CD004687.pub3
+  - id: n46
+    cau: 'Shedler (2010) dẫn tổng quan Cochrane của Abbass và cộng sự (2006) về trị liệu tâm động ngắn hạn (dưới 40 giờ): cải thiện so với đối chứng 0,97, tăng lên 1,51 khi đánh giá hơn 9 tháng sau trị liệu; chính các tác giả tổng quan dặn đọc dè dặt vì mỗi loại rối loạn có ít nghiên cứu, dị biệt lớn, kết quả không luôn giữ trong phân tích độ nhạy.'
+    loai: so-lieu
+    nguon:
+      - shedler2010
+      - abbass2006
+    trich: included 23 randomized controlled trials of 1,431 patients (Abbass, Hancock, Henderson, & Kisely, 2006). The studies compared patients with a range of common mental disorders who received short-term (< 40 hours) psychodynamic therapy with controls (wait list, minimal treatment, or "treatment as usual") and yielded an overall effect size of 0.97 for general symptom improvement. The effect size increased to 1.51 when the patients were assessed at long-term follow-up (> 9 months posttreatment). || However, only a small number of studies contributed data for each category of disorder, there was significant heterogeneity between studies, and results were not always maintained in sensitivity analyses. … these findings should be interpreted with caution. [Abbass 2006, tóm tắt]
+    vi_tri: Shedler 2010, tr. 100–101
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Shedler (2010) tổng hợp 8 phân tích tổng hợp và thấy hiệu quả tương đương các liệu pháp có bằng chứng khác — … tăng lên sau khi kết thúc trị liệu (từ 0,97 lên 1,51 ở lần theo dõi sau 9 tháng)". Số 0,97 và 1,51 là của Abbass 2006 mà Shedler kể lại (theo X kể lại); "sau 9 tháng" thành "hơn 9 tháng". Bỏ "tổng hợp 8 phân tích tổng hợp" (Shedler là bài tổng quan tường thuật, không gộp số). Bỏ "như thể trị liệu đã khởi động một quá trình tự thay đổi" (diễn giải không nguồn). Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): theo ghi chú lượt 2: thêm câu tổng quan Cochrane tự dặn đọc dè dặt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.briancollinson.ca/wp-content/uploads/2010/06/Shedler-Efficacy-of-Psychodynamic-Psychotherapy-T-LAP-10-9-20091.pdf", "https://pubmed.ncbi.nlm.nih.gov/17054212/" ]
+    luot_2_ghi_chu: Khớp. Bản Shedler đọc được là bản tác giả 'in press, revised 10-9-2009' ('may not exactly replicate the final version'); bản APA không tải được. Shedler ghi chú (chú thích 7) rằng các con số lấy từ mô hình hiệu ứng ngẫu nhiên đã bỏ một nghiên cứu ngoại lai. Abbass 2006 đã có bản cập nhật 2014 (CD004687.pub4); câu chỉ nói điều Shedler dẫn nên không sai.
+  - id: n47
+    cau: Shedler cho rằng hiệu quả của liệu pháp tâm động tương đương các liệu pháp "có bằng chứng" khác; cách ông diễn giải bị một số nhà nghiên cứu phản biện.
+    loai: phat-hien
+    nguon:
+      - shedler2010
+      - mckay2011
+    trich: Effect sizes for psychodynamic therapy are as large as those reported for other therapies that have been actively promoted as "empirically supported" and "evidence based." [Shedler]; Comments on the original article … [McKay 2011, bình luận]; The atypical method used to compute this effect size may provide an inflated estimate of efficacy (for discussion, see Thombs, Bassel, & Jewett, 2009) [Shedler, chú thích 8]
+    vi_tri: Shedler 2010, tóm tắt và chú thích 8; McKay 2011
+    ket_qua: da-sua
+    ghi_chu: 'Thêm vế phản biện. chỗ khó: tóm tắt McKay 2011 nghiêng về đồng tình phần lớn với Shedler (phản biện chủ yếu về cơ chế); phản biện về cách tính hiệu ứng là Thombs 2009 (Shedler tự dẫn). Lượt 2 xét chọn nguồn phản biện rõ hơn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.apa.org/pubs/journals/releases/amp-65-2-98.pdf
+      - https://pubmed.ncbi.nlm.nih.gov/20141265/
+  - id: n48
+    cau: Phân tích tổng hợp năm 2015 về trầm cảm (54 nghiên cứu) thấy trị liệu tâm động ngắn hạn hiệu quả hơn nhóm đối chứng và không khác các liệu pháp tâm lý khác.
+    loai: phat-hien
+    nguon:
+      - driessen2015
+    trich: 54 studies (33 randomized clinical trials) totaling 3946 subjects were included. STPP was significantly more effective than control conditions at post-treatment on depression … (d=0.49 to 0.69) … No significant differences were found between individual STPP and other psychotherapies at post-treatment (d=-0.14) and follow-up (d=-0.06)
+    vi_tri: Driessen 2015, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: Thêm mới, để phần tâm động có một phân tích tổng hợp riêng (không chỉ qua Shedler).
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1016/j.cpr.2015.07.004
+  - id: n49
+    cau: 'Liệu pháp lấy thân chủ làm trung tâm do Carl Rogers phát triển từ đầu thập niên 1940: nhà trị liệu không chỉ đạo mà tạo điều kiện bằng thấu hiểu đồng cảm, chấp nhận, tôn trọng để thân chủ tự khám phá, thay đổi.'
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+    trich: 'client-centered therapy: a form of psychotherapy developed by Carl Rogers in the early 1940s. According to Rogers, an orderly process of client self-discovery and actualization occurs in response to the therapist''s consistent empathic understanding of, acceptance of, and respect for the client''s frame. … nondirective'
+    vi_tri: APA Dictionary, client-centered therapy
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Do Carl Rogers khai sinh, trường phái này cho rằng con người vốn có xu hướng tự hoàn thiện, và đau khổ nảy sinh khi ta phải đeo mặt nạ để được chấp nhận. … ba điều kiện: chấp nhận vô điều kiện, đồng cảm sâu sắc, và chân thành." Viết lại theo APA Dictionary (thêm mốc 1940s); bỏ "đeo mặt nạ" (diễn giải không nguồn).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/client-centered-therapy
+  - id: n50
+    cau: 'Elliott và cộng sự (2021): phân tích tổng hợp 91 nghiên cứu (2009–2018) về liệu pháp nhân văn – trải nghiệm: trước–sau d = 0,86; hơn nhóm không trị liệu 0,88; tương đương các liệu pháp khác −0,08; CBT có lợi thế nhỏ chưa rõ ràng (−0,26), nhưng nghiên cứu phần lớn do nhóm CBT thực hiện; với trầm cảm, lo âu kết quả lẫn lộn hơn.'
+    loai: so-lieu
+    nguon:
+      - elliott2021
+    trich: A key part of this review is a meta-analysis of 91 studies of the effectiveness/efficacy of HEPs, published between 2009 and 2018 … (1) HEPs were associated with large pre-post client change (d = .86). (2) In controlled studies, clients in HEPs generally showed large gains relative to clients who received no therapy (.88). (3) In comparative outcome studies, HEPs in general were statistically and clinically equivalent in effectiveness to other therapies (-.08). (4) Overall, CBT appeared to have an equivocal advantage over HEPs (-.26). However, these studies were overwhelmingly delivered by CBT researchers in largely non-bona fide versions of HEPs as comparison conditions. … Findings were more mixed for depression and anxiety.
+    vi_tri: Elliott 2021, tóm tắt (Strathprints)
+    ket_qua: da-sua
+    ghi_chu: Chữ cũ có 0,86, 0,88, −0,08 và "kết quả với trầm cảm và lo âu thì lẫn lộn hơn"; thêm kết quả so với CBT (−0,26) và giới hạn mà chính tác giả nêu, để không chỉ nêu phía thuận.
+    luot_2: dung
+    luot_2_nguon:
+      - https://strathprints.strath.ac.uk/74362
+    luot_2_ghi_chu: Tóm tắt ở kho Strathclyde; tóm tắt nêu phần lớn so sánh do nhà nghiên cứu CBT thực hiện, thường dùng bản HEP không chính quy.
+  - id: n51
+    cau: Trong thử nghiệm thuốc, giả dược là viên không hoạt chất mà người bệnh có thể không biết; trong trị liệu, khó có "trị liệu giả" mà thân chủ không nhận ra, và giả dược tâm lý cũng chứa yếu tố chung có thể có tác dụng thật.
+    loai: phat-hien
+    nguon:
+      - baskin2003
+      - wampold2015
+    trich: Placebo treatments in psychotherapy cannot adequately control for all common factors, which thereby attenuates their effects vis-a-vis active treatments.
+    vi_tri: Baskin 2003, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "không thể giả vờ trị liệu mà thân chủ không biết: ngay cả nhóm giả dược tâm lý… cũng chứa đầy yếu tố chung có tác dụng thật". Làm mềm "không thể" thành "khó", "có tác dụng thật" thành "có thể có tác dụng thật".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0022-006X.71.6.973
+  - id: n52
+    cau: 'Áp dụng 1: liên minh trị liệu là một trong những yếu tố dự báo kết quả được nghiên cứu nhiều nhất; sau vài buổi đầu, tự hỏi có được lắng nghe không phán xét, có cách hiểu mạch lạc và kế hoạch rõ ràng không; bằng cấp, giấy phép vẫn quan trọng; không hợp thì tìm người khác là bình thường. (Chip Khá vững.)'
+    loai: loi-khuyen
+    nguon:
+      - wampold2015
+    trich: Alliance is the most researched common factor. … the aggregate correlation between alliance and outcome was about .27
+    vi_tri: Wampold 2015, mục Alliance
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (tiêu đề): "Chọn nhà trị liệu bằng cảm giác làm việc chung, không chỉ bằng bằng cấp"; thân: "Vì yếu tố chung… giải thích phần lớn hiệu quả, buổi gặp đầu tiên rất đáng để đánh giá… Một nhà trị liệu giỏi với phương pháp thường thường tốt hơn một nhà trị liệu dở với phương pháp xịn." Bỏ "giải thích phần lớn hiệu quả" (đang tranh cãi, n35) và câu so sánh (không nguồn trực tiếp); nói rõ bằng cấp, giấy phép vẫn quan trọng (trang Hỗ trợ). Giữ chip Khá vững: liên minh – kết quả là tương quan vừa, nhất quán qua gần 200 nghiên cứu, nhưng là tương quan. chỗ khó: chip nhãn cho lời khuyên.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/pst0000172
+    luot_2_ghi_chu: 'Chip Khá vững hợp: mối liên hệ vững qua 295 nghiên cứu nhưng chỉ là tương quan.'
+  - id: n53
+    cau: 'Áp dụng 2: 42% đáp ứng so với 19%; trị liệu đáng thử, nhưng không đỡ sau một liệu trình không phải lỗi của bạn; bàn với nhà trị liệu về đổi phương pháp, đổi người, hay gặp bác sĩ tâm thần đánh giá thêm. (Chip Vững chắc.)'
+    loai: loi-khuyen
+    nguon:
+      - cuijpers2023
+      - nice-ng222
+    trich: A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT. [Cuijpers]; If a person's depression has not responded … discuss further treatment options … switching to a psychological therapy … changing to a combination [NICE 1.9]
+    vi_tri: Cuijpers 2023; NICE NG222 mục 1.9
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…hãy trao đổi với nhà trị liệu để đổi phương pháp, đổi nhà trị liệu, hoặc cân nhắc kết hợp với bác sĩ tâm thần. Kiên trì thử tiếp một thứ không hiệu quả với mình không phải là dũng cảm." Bỏ câu cuối (có thể đọc như khuyên bỏ điều trị sớm); "cân nhắc kết hợp" thành "gặp bác sĩ tâm thần để đánh giá thêm" (không khuyên dùng thuốc). Chip Vững chắc cho ý "trị liệu hiệu quả nhưng không phải ai cũng đáp ứng": hai vế đều có phân tích tổng hợp lớn. chỗ khó: chip cho lời khuyên. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac vì không mở được toàn văn. Toàn văn Cuijpers 2023 (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; lượt 1 đã đọc, nay đọc lại): bảng 2 "Only low risk of bias 90 0.60 (0.49‐0.71) … Publication bias correction 349 0.47 (0.35‐0.59)", chú thích bảng "The reported publication bias correction is that using the trim and fill procedure"; Kết quả: "The response rate was 0.42 (95% CI: 0.39‐0.45) in CBT and 0.19 (95% CI: 0.18‐0.21) in the control conditions, which resulted in a RR of 2.13 (95% CI: 1.96‐2.32) and a NNT of 4.7 (95% CI: 4.0‐5.5)"; bảng 3: tỉ lệ đáp ứng ước tính ở 228/238 so sánh. NNT 4,7 do bài tính từ RR gộp (phương pháp: NNT = 1/hiệu số nguy cơ, gộp riêng), không phải 1/(0,42 − 0,19) ≈ 4,3 từ hai tỉ lệ gộp riêng; giữ số của bài. Số 0,47 là trim and fill (chỉ hiệu chỉnh sai lệch xuất bản), không phải gộp cả lọc nguy cơ sai lệch như một nguồn bậc 3 viết. Giữ các số.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'Số 42% so với 19% chưa xác nhận ở nguồn bậc 1–2 (xem n22). Phần lời khuyên (không đỡ không phải lỗi của bạn, bàn đổi phương pháp hay gặp bác sĩ đánh giá thêm) hợp WHO và Kraus 2019. Chip Vững chắc cho ''trị liệu đáng thử'' hợp thước đo. Không mở được toàn văn Cuijpers 2023 (chỉ tóm tắt); tóm tắt không có 42%/19%, NNT, g = 0,60, g = 0,47. Chỉ nguồn bậc 3 nhắc các số này và chúng không khớp nhau: Mad in America ghi 42% so với 19% và 0,47 ''sau khi tính sai lệch xuất bản và nghiên cứu nguy cơ sai lệch cao'' (không phải chỉ hiệu chỉnh xuất bản), và NNT 3,6 (có lẽ cho thuyên giảm); Mental Elf ghi chỉ 9 so sánh ít nguy cơ sai lệch, không ghi số. Cần review mở toàn văn (bảng 1–2) để chốt.'
+  - id: n54
+    cau: 'Áp dụng 3: CBT tự giúp không có người hướng dẫn vẫn hiệu quả nhỏ đến vừa với trầm cảm (g = 0,45); một phân tích dữ liệu từng người bệnh (39 thử nghiệm) thấy CBT qua mạng có hướng dẫn hiệu quả hơn loại không hướng dẫn ngay sau điều trị, nhất là với trầm cảm vừa đến nặng; nên dùng nội dung dựa trên phương pháp đã kiểm chứng. (Chip Khá vững.)'
+    loai: loi-khuyen
+    nguon:
+      - cuijpers2023
+      - karyotaki2021
+    trich: 'CBT was also effective as unguided self-help intervention (g=0.45; 95% CI: 0.31-0.60) [Cuijpers 2023]; Of 42 eligible RCTs, 39 studies comprising 9751 participants … Guided iCBT was associated with more effectiveness than unguided iCBT (MD in posttreatment PHQ-9 scores, -0.8) …, but we found no evidence of a difference at 6 or 12 months … guided iCBT was associated with overall better outcomes in patients with baseline PHQ-9 greater than 9. [Karyotaki 2021]'
+    vi_tri: Cuijpers 2023; Karyotaki 2021, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Trị liệu qua màn hình và tự giúp có hướng dẫn cũng có bằng chứng… các phiên bản có hướng dẫn (qua tin nhắn, video) thường tốt hơn… không phải video chữa lành trôi nổi trên mạng". Thêm nguồn cho "có hướng dẫn tốt hơn" (Karyotaki 2021: chỉ ngay sau điều trị); bỏ ví dụ "tin nhắn, video" và câu về "video chữa lành" (không nguồn).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+      - https://doi.org/10.1001/jamapsychiatry.2020.4364
+    luot_2_ghi_chu: 'Karyotaki toàn văn PMC8027916. Chip Khá vững hợp: khác biệt có/không hướng dẫn chỉ thấy ngay sau điều trị.'
+  - id: n55
+    cau: 'Áp dụng 4: nên gặp người có chuyên môn khi buồn, lo, căng thẳng kéo dài nhiều tuần không dịu, ảnh hưởng rõ đến học, làm, ngủ, quan hệ, hay phải dùng rượu bia, chất kích thích; có ý nghĩ về cái chết hay tự làm hại thì tìm giúp đỡ ngay; không cần "đủ nặng"; đây là gợi ý, không phải để tự chẩn đoán, chỉ người có chuyên môn mới chẩn đoán được (link Hỗ trợ).'
+    loai: loi-khuyen
+    nguon:
+      - who-dep-2026
+      - nhs-tt
+    trich: Seek care if you have symptoms of depression. … If you think you are in immediate danger of harming yourself, contact any available emergency services or a crisis line. [WHO]; You do not need to have a diagnosed mental health condition. [NHS]
+    vi_tri: WHO; NHS
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ có chip Vững chắc và "gọi 115, không chờ đợi, không để mai tính"; "Số điện thoại khẩn cấp… có ở trang Hỗ trợ". Bỏ chip nhãn (lời khuyên khi nào tìm giúp đỡ không phải kết luận về bằng chứng có thể xếp nhãn); bỏ số 115 (lời giao D7-L1); lời dẫn Hỗ trợ ở cuối bài. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): thêm câu "gợi ý để tìm người nói chuyện, không phải để tự chẩn đoán: chỉ người có chuyên môn mới chẩn đoán được (xem trang Hỗ trợ)" ngay sau danh sách dấu hiệu.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nhs.uk/mental-health/conditions/depression-in-adults/diagnosis/", "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/", "https://www.samhsa.gov/find-support/how-to-cope/signs-of-needing-help", "https://www.who.int/news-room/fact-sheets/detail/depression" ]
+    luot_2_ghi_chu: "Khớp. 'Không cần đủ nặng': NHS khuyên gặp bác sĩ chỉ cần thấy khó đương đầu hay tự làm không đỡ, không đòi mức nặng. Câu có lời rào và link Hỗ trợ (phần link là chuyện của site). Không gần chẩn đoán."
+  - id: n56
+    cau: Phần lớn con số ở trên đến từ thử nghiệm ở các nước phương Tây.
+    loai: phat-hien
+    nguon:
+      - hofmann2012
+      - cuijpers2023
+    trich: no meta-analytic studies of CBT have been reported on specific subgroups, such as ethnic minorities and low income samples [Hofmann]; the number of trials in non‐Western countries [increased significantly over time] [Cuijpers 2023]
+    vi_tri: Hofmann 2012; Cuijpers 2023, Historical overview
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Mọi con số g = 0,79 hay d = 0,86 ở trên đều đến từ các nước phương Tây". Sai một phần: Cuijpers 2023 có thử nghiệm ở nước không phương Tây (và số này tăng theo thời gian). Làm mềm: "Phần lớn". chỗ khó: lượt 2 có thể tra tỉ lệ thử nghiệm không phương Tây trong bảng của Cuijpers 2023.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/bul0000465
+  - id: n57
+    cau: Tính đến 11/2026, ở Việt Nam đã có một số thử nghiệm ngẫu nhiên về can thiệp tâm lý dựa trên CBT, dù còn ít.
+    loai: thoi-su
+    nguon:
+      - tim-kiem-vn-tri-lieu
+      - murphy2020
+      - imamura2021
+    trich: 'Tìm Europe PMC 16/11/2026: 17 kết quả; có kết quả đã công bố: Murphy 2020, Imamura 2021, Watanabe 2024, Tran 2023, Niemi 2016'
+    vi_tri: Europe PMC
+    het_han: '2027-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Chúng tôi chưa tìm thấy nghiên cứu công bố nào kiểm tra hiệu quả của các liệu pháp tâm lý trên người Việt." Sai: có ít nhất các thử nghiệm Murphy 2020 (tự quản lý có hỗ trợ dựa trên CBT, 376 người, 8 tỉnh), Imamura 2021 (CBT qua điện thoại, 951 điều dưỡng). Viết lại. chỗ khó: câu "chưa tìm thấy" của trang cũ là thời sự không có mốc, nay sai. Review (17/11/2026): câu thời sự có het_han nhưng trên trang chưa có mốc: thêm "Tính đến 11/2026," ở đầu câu.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1186/s13033-020-00342-1
+      - https://doi.org/10.1038/s41598-021-90320-5
+    luot_2_ghi_chu: '''Còn ít'' là nhận định thận trọng, thời sự, cần mốc và hạn.'
+  - id: n58
+    cau: 'Murphy và cộng sự (2020): 32 xã, 8 tỉnh, 376 người lớn có triệu chứng trầm cảm (không gồm người nặng); chương trình tự quản lý có hỗ trợ (sổ tay kèm người hướng dẫn, hai tháng) giảm tỉ lệ còn triệu chứng so với nhóm chăm sóc thông thường chờ nhận chương trình sau: 26,4% so với 42,3% sau hai tháng.'
+    loai: so-lieu
+    nguon:
+      - murphy2020
+    trich: The cluster randomized trial included 376 adults in 32 communes in eight provinces. … Patients with severe symptoms were excluded … received a two-month course of SSM, consisting of a workbook and supportive coaching. Those in communes randomized to the delayed group received enhanced treatment as usual and … received the SSM intervention after 4 months. … At 2 months, 26.4% of the intervention group and 42.3% of the delayed group had SRQ-20 scores > 7.
+    vi_tri: Murphy 2020, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới. "Dựa trên CBT": toàn văn (Europe PMC PMC7014690, mục Background): "Supported-self management (SSM) for depression, a psychosocial intervention using a task-sharing approach and based on cognitive behavioural therapy (CBT) principles". "Còn triệu chứng" = điểm SRQ-20 > 7 (sàng lọc, không phải chẩn đoán); trang viết "còn triệu chứng trầm cảm", không viết "bị trầm cảm".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1186/s13033-020-00342-1
+    luot_2_ghi_chu: Toàn văn PMC7014690. Nhóm chứng là chăm sóc thông thường 'tăng cường'.
+  - id: n59
+    cau: 'Imamura và cộng sự (2021): 951 điều dưỡng ở một bệnh viện đa khoa lớn tại Hà Nội, so hai chương trình qua điện thoại thông minh với nhóm đối chứng; chỉ chương trình CBT theo thứ tự cố định giảm triệu chứng trầm cảm, ở mức nhỏ sau 3 tháng, không còn khác biệt sau 7 tháng; chương trình còn lại không cho thấy hiệu quả có ý nghĩa thống kê.'
+    loai: so-lieu
+    nguon:
+      - imamura2021
+    trich: Participants were recruited from nurses in a large general hospital in Hanoi … 951 participants were randomly allocated … Program B showed a statistically significant effect on improving depressive symptoms at 3-month (p = 0.048), but not at 7-month (p = 0.92); Cohen's d was -0.18 … and 0.03
+    vi_tri: Imamura 2021, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): theo ghi chú lượt 2: nói rõ chỉ một trong hai chương trình có hiệu quả. Review (17/11/2026): lượt 2 bổ sung qua-manh ("chương trình còn lại không có hiệu quả"): sửa theo câu đúng: "không cho thấy hiệu quả có ý nghĩa thống kê" (bài: "failed to show a significant intervention effect"); thêm "ở một bệnh viện đa khoa lớn" cho rõ mẫu.'
+    luot_2: qua-manh
+    luot_2_nguon: [ "https://doi.org/10.1038/s41598-021-90320-5", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8166974/" ]
+    luot_2_ghi_chu: "câu đúng: Imamura và cộng sự (2021): 951 điều dưỡng ở một bệnh viện đa khoa lớn tại Hà Nội, so hai chương trình qua điện thoại thông minh với nhóm đối chứng; chỉ chương trình CBT theo thứ tự cố định giảm triệu chứng trầm cảm, ở mức nhỏ sau 3 tháng, không còn khác biệt sau 7 tháng; chương trình còn lại không cho thấy hiệu quả có ý nghĩa thống kê.; Mọi con số và chiều kết quả khớp (toàn văn qua Europe PMC). Chỉ vế cuối quá mạnh: bài viết 'failed to show a significant intervention effect', tức không thấy khác biệt có ý nghĩa thống kê, không phải đã chứng minh 'không có hiệu quả'. Thêm 'một bệnh viện' cho rõ mẫu (một bệnh viện, không phải điều dưỡng cả Hà Nội) là tùy chọn."
+  - id: n60
+    cau: Theo WHO Mental Health Atlas 2020 (số liệu năm 2019, mới nhất chúng tôi tìm được tính đến 11/2026), Việt Nam có khoảng 1 bác sĩ tâm thần trên 100.000 dân, so với khoảng 14 ở Anh.
+    loai: thoi-su
+    nguon:
+      - owid-psych
+    trich: Vietnam,VNM,2019,1 … United Kingdom,GBR,2019,14 (Total number of psychiatrists per 100,000 population; WHO Mental Health Atlas 2020 via UNICEF (2023))
+    vi_tri: OWID CSV
+    het_han: '2027-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "cả nước có chưa đến 1 bác sĩ tâm thần trên 100.000 dân (con số thường được dẫn là 0,9 — thấp xa so với các nước thu nhập cao (WHO Mental Health Atlas))". 0,9 là số năm 2014 (theo báo dẫn lại); số Atlas 2020 (năm 2019) là khoảng 1 (OWID làm tròn). Sửa, ghi mốc. chỗ khó: số làm tròn; hồ sơ quốc gia PDF không trích được số riêng cho bác sĩ tâm thần; lượt 2 nên mở PDF. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): ghi chú lượt 2 về mốc: trang đã ghi "số liệu năm 2019" và "tính đến 11/2026"; giữ.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://cdn.who.int/media/docs/default-source/mental-health/mental-health-atlas-2020-country-profiles/vnm.pdf?sfvrsn=3c00af7f_4&download=true
+      - https://cdn.who.int/media/docs/default-source/mental-health/mental-health-atlas-2020-country-profiles/gbr.pdf
+    luot_2_ghi_chu: 'Số đúng. Mốc ''số liệu năm 2019'' chưa xác nhận: biểu đồ của hồ sơ quốc gia ghi 2020; chỉ kết quả tìm kiếm (không phải trang WHO) nói Atlas 2020 dựa trên số liệu 2019. Nên bỏ ''số liệu năm 2019'' hay ghi ''Atlas 2020''.'
+  - id: n61
+    cau: Nhóm xây dựng một chương trình chăm sóc trầm cảm ở vùng nông thôn Việt Nam ghi nhận nhiều người chưa xem trầm cảm là vấn đề sức khỏe có thể điều trị bằng chuyên môn, và chưa quen với cách nhìn tâm lý mà trị liệu dựa vào (Ngo 2014).
+    loai: phat-hien
+    nguon:
+      - ngo2014
+    trich: Key challenges included cultural factors (e.g., a lack of recognition of depression as a health-related entity amenable to professional treatment, relatively low levels of psychological mindedness useful for understanding of psychological interventions)
+    vi_tri: Ngo 2014, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Thứ hai, rào cản văn hóa: một số khảo sát cho thấy kỳ thị là rào cản lớn khiến người Việt ngại tìm đến trị liệu; dù kỳ thị đang giảm ở thế hệ trẻ, việc che giấu và né tránh… vẫn phổ biến, một phần vì quan niệm đi khám tâm thần là điên." Không dẫn được khảo sát cụ thể; "kỳ thị đang giảm ở thế hệ trẻ" không nguồn. Thay bằng điều Ngo 2014 ghi nhận.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1891/0889-8391.28.3.156
+  - id: n62
+    cau: 'Câu cũ: "Thứ ba, kênh hỗ trợ đầu tiên của người Việt thường là gia đình — vừa là điểm tựa, vừa là rủi ro…"'
+    loai: phat-hien
+    vi_tri: mục Ở Việt Nam, trang cũ
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ: không tìm được nguồn có bình duyệt về "kênh hỗ trợ đầu tiên của người Việt thường là gia đình" trong lô này. Cùng đoạn, câu "nhà trị liệu cần hiểu áp lực thi cử, hiếu thảo, giữ thể diện gia đình" cũng bỏ (không nguồn). Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac: câu đã bỏ ở lượt 1, đã kiểm trang (grep "gia đình", "kênh hỗ trợ" 17/11/2026): không còn. Giữ da-bo.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'Không tìm được nguồn bậc 1–2 nói gia đình là kênh hỗ trợ đầu tiên của người Việt và ''vừa là điểm tựa vừa là rủi ro''. Ngo 2014 chỉ có thành phần hỗ trợ gia đình và bối cảnh văn hóa tập thể. Câu cũ: bỏ hay tìm nghiên cứu về tìm kiếm giúp đỡ ở Việt Nam.'
+  - id: n63
+    cau: Các cơ chế tâm lý "nhiều khả năng là phổ quát" (câu cũ).
+    loai: phat-hien
+    vi_tri: mục Ở Việt Nam, trang cũ
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "các cơ chế tâm lý (vòng lặp suy nghĩ–cảm xúc, vai trò của liên minh trị liệu) nhiều khả năng là phổ quát". Bỏ (không nguồn); giữ ý "không có nghĩa là không áp dụng được" (câu về lập luận, không khẳng định). Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 qua-manh: câu "cơ chế nhiều khả năng là phổ quát" đã bỏ ở lượt 1; đã kiểm trang (grep "phổ quát" 17/11/2026): không còn. Câu còn lại trên trang chỉ nói "không có nghĩa là không áp dụng được" và dẫn bằng chứng điều chỉnh theo văn hóa (n64). Giữ da-bo.'
+    luot_2: qua-manh
+    luot_2_nguon:
+      - https://doi.org/10.1037/bul0000465
+      - https://doi.org/10.1037/a0023626
+    luot_2_ghi_chu: 'câu đúng: Chưa thấy trị liệu tâm lý kém hiệu quả hơn ở các nước thu nhập thấp-trung bình hay nền văn hóa ngoài phương Tây, nhưng liệu pháp được điều chỉnh theo văn hóa có phần hiệu quả hơn; chưa đủ bằng chứng để nói các cơ chế tâm lý là phổ quát.; Không nguồn nào kiểm trực tiếp tính phổ quát của cơ chế; bằng chứng chỉ nói về hiệu quả.'
+  - id: n64
+    cau: Một phân tích tổng hợp mà Wampold (2015) dẫn thấy liệu pháp được điều chỉnh theo văn hóa hiệu quả hơn bản không điều chỉnh, mức chênh nhỏ (d = 0,32); phân tích ấy nói về người bệnh thuộc các nhóm thiểu số chủng tộc, sắc tộc, trong bối cảnh liệu pháp được xây dựng cho nhóm văn hóa chiếm đa số ở Bắc Mỹ và Tây Âu.
+    loai: so-lieu
+    nguon:
+      - wampold2015
+      - benish2011
+    trich: A recent meta-analysis demonstrated that adapting evidence-based treatments by using an explanation congruent with the cultural group's beliefs (i.e., using the cultural "myth" as the explanation) was more effective than unadapted evidence-based treatments, although the effect was modest (d=0.32, n=21) [Wampold 2015] || "ethnic and racial minority clients"; "dominant cultural groups within North America and Western Europe" [Benish 2011, tóm tắt]
+    vi_tri: Wampold 2015, mục Cultural adaptation; Benish 2011, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới (thay ý "cách triển khai cần Việt hóa" bằng bằng chứng). Wampold kể lại (Benish 2011); theo X kể lại. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): theo ghi chú lượt 2 (Benish, Quintana & Wampold 2011, lượt 2 đọc): thêm "các nghiên cứu ấy chủ yếu làm với người thuộc nhóm thiểu số ở Bắc Mỹ". Lượt 1 chưa đọc Benish 2011; vế mới dựa vào lượt 2. Review (17/11/2026): lượt 2 bổ sung khong-chac với vế "chủ yếu làm với người thuộc nhóm thiểu số ở Bắc Mỹ". Review đọc tóm tắt Benish, Quintana & Wampold 2011 (Europe PMC, PMID 21604860): tóm tắt nói "ethnic and racial minority clients" và liệu pháp thông thường hợp với "dominant cultural groups within North America and Western Europe"; không nói các nghiên cứu làm ở đâu. Viết lại vế cuối đúng theo tóm tắt: "phân tích ấy nói về người bệnh thuộc các nhóm thiểu số chủng tộc, sắc tộc, trong bối cảnh liệu pháp được xây dựng cho nhóm văn hóa chiếm đa số ở Bắc Mỹ và Tây Âu"; bỏ "chủ yếu", "ở Bắc Mỹ" như nơi làm nghiên cứu.'
+    luot_2: khong-chac
+    luot_2_nguon: [ "http://web.archive.org/web/20250630215110/https://onlinelibrary.wiley.com/doi/full/10.1002/wps.20238", "https://pubmed.ncbi.nlm.nih.gov/21604860/" ]
+    luot_2_ghi_chu: "Vế đầu đúng: Wampold dẫn một phân tích tổng hợp (Benish 2011, 21 nghiên cứu), d = 0,32, Wampold gọi là 'modest'. Vế cuối 'các nghiên cứu ấy chủ yếu làm với người thuộc nhóm thiểu số ở Bắc Mỹ': tóm tắt của Benish chỉ nói về khách hàng thuộc nhóm thiểu số chủng tộc, sắc tộc, đặt trong bối cảnh Bắc Mỹ và Tây Âu; không nói các nghiên cứu làm ở đâu. Toàn văn Benish đóng (OpenAlex: closed), Wampold không nói về nơi làm. Nếu không mở được toàn văn Benish thì viết: 'các nghiên cứu ấy làm với người thuộc nhóm thiểu số chủng tộc, sắc tộc (ở các nước phương Tây)', hay bỏ 'ở Bắc Mỹ'."
+  - id: n65
+    cau: Ở nơi thiếu chuyên gia, tự giúp có hướng dẫn, trị liệu qua mạng, hay người không chuyên được đào tạo và giám sát — những hình thức WHO cũng khuyến khích — là hướng đáng chú ý.
+    loai: loi-khuyen
+    nguon:
+      - who-dep-2026
+    trich: They may include talk therapy with professionals and supervised lay therapists. Talk therapy can happen in person or online. … WHO has developed brief psychological intervention manuals for depression that can be delivered by lay therapists
+    vi_tri: WHO Depression
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "các mô hình trị liệu qua màn hình, tự giúp có hướng dẫn — những hình thức đã có bằng chứng — đáng được đầu tư hơn là chỉ trông chờ vào phòng khám truyền thống." Bỏ lời khuyên chính sách "đáng được đầu tư hơn"; thêm người không chuyên được giám sát (WHO).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/6ded7ffd-9d69-493a-b48a-0b3e6250c173/content
+  - id: n66
+    cau: 'Ngộ nhận 1: "trị liệu chỉ là nói chuyện cho nhẹ lòng" chỉ đúng một phần: lắng nghe, kỳ vọng có thể có tác dụng; nhưng trị liệu có cấu trúc, do người được đào tạo, và trong nhiều thử nghiệm hiệu quả hơn hẳn không điều trị, hơn giả dược "chỉ lắng nghe" (d = 0,34 với lo âu xã hội), hiệu quả còn sau khi kết thúc.'
+    loai: phat-hien
+    nguon:
+      - powers2008
+      - cuijpers2023
+      - apa-dict
+      - baskin2003
+    trich: A comprehensive literature search produced 32 randomized controlled trials (N = 1,479) … There was a clear overall advantage of treatment compared to waitlist (d = 0.86), psychological placebo (d = 0.34), and pill-placebo (d = 0.36) conditions at posttreatment … Treatment gains were maintained at follow-up (d = 0.76).
+    vi_tri: Powers 2008; APA Dictionary
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Một phần đúng — sự lắng nghe và kỳ vọng có tác dụng thật… Nhưng trị liệu thật vượt trội giả dược chỉ lắng nghe (d = 0,34) và hiệu quả duy trì nhiều tháng sau khi kết thúc, điều lời an ủi thông thường không làm được." Thêm "trong nhiều thử nghiệm", "với lo âu xã hội"; bỏ "điều lời an ủi thông thường không làm được" (không có nghiên cứu so với lời an ủi của bạn bè). chỗ khó: Baskin 2003 (n33) cho thấy giả dược tương đương về cấu trúc gần ngang trị liệu; vế "hơn giả dược" chỉ đúng với giả dược thông thường.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+    luot_2_ghi_chu: Gọi giả dược tâm lý là 'chỉ lắng nghe' là giản lược; Baskin 2003 cho thấy với giả dược tương đương về cấu trúc thì khác biệt không đáng kể, nên giữ 'trong nhiều thử nghiệm'.
+  - id: n67
+    cau: 'Ngộ nhận 2: "CBT tốt nhất, trường phái khác vô dụng" sai; khi so trực tiếp, CBT chỉ hơn 0,06; tâm động và nhân văn cũng có bằng chứng hiệu quả, dù ít nghiên cứu hơn.'
+    loai: phat-hien
+    nguon:
+      - cuijpers2023
+      - driessen2015
+      - elliott2021
+    trich: 'CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point. A key part of this review is a meta-analysis of 91 studies of the effectiveness/efficacy of HEPs, published between 2009 and 2018 … (1) HEPs were associated with large pre-post client change (d = .86). (2) In controlled studies, clients in HEPs generally showed large gains relative to clients who received no therapy (.88). (3) In comparative outcome studies, HEPs in general were statistically and clinically equivalent in effectiveness to other therapies (-.08). (4) Overall, CBT appeared to have an equivocal advantage over HEPs (-.26). However, these studies were overwhelmingly delivered by CBT researchers in largely non-bona fide versions of HEPs as comparison conditions. … Findings were more mixed for depression and anxiety.'
+    vi_tri: Cuijpers 2023; Driessen 2015; Elliott 2021
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Liệu pháp tâm động và nhân văn đều có bằng chứng hiệu quả tương đương." Làm mềm: "cũng có bằng chứng hiệu quả, dù ít nghiên cứu hơn" (Elliott 2021: CBT có lợi thế nhỏ chưa rõ, −0,26; kết quả với trầm cảm, lo âu lẫn lộn).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+      - https://doi.org/10.1016/j.cpr.2015.07.004
+      - https://strathprints.strath.ac.uk/74362
+  - id: n68
+    cau: 'Ngộ nhận 3: đi trị liệu không có nghĩa là "có vấn đề nặng"; không cần chẩn đoán mới được gặp người có chuyên môn; nhiều người đi trị liệu vì khó khăn phổ biến (lo âu, buồn chán, căng thẳng công việc, rắc rối quan hệ); quan niệm này có thể khiến người ta trì hoãn.'
+    loai: loi-khuyen
+    nguon:
+      - nhs-tt
+      - who-dep-2026
+    trich: You do not need to have a diagnosed mental health condition. [NHS]; Barriers to effective care include … social stigma associated with mental disorders. [WHO]
+    vi_tri: NHS; WHO
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Phần lớn thân chủ trị liệu là người đang vật lộn với lo âu, trầm cảm mức nhẹ–trung bình… Quan niệm này chính là rào cản khiến nhiều người Việt trì hoãn…". Bỏ "phần lớn" và "nhiều người Việt" (không nguồn định lượng); dẫn NHS, WHO.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/psychotherapy
+      - https://iris.who.int/server/api/core/bitstreams/6ded7ffd-9d69-493a-b48a-0b3e6250c173/content
+    luot_2_ghi_chu: Vế 'quan niệm này có thể khiến người ta trì hoãn' là suy luận, không có nguồn riêng.
+  - id: n69
+    cau: 'Hết liệu trình không có nghĩa khỏi hẳn: 42% đáp ứng nghĩa là phần lớn còn lại cần thêm phương án; người đã đỡ cũng có thể tái phát; NICE khuyên các liệu trình phòng tái phát (như CBT nhóm) tập trung rèn kỹ năng để giữ ổn định; với trầm cảm, có bằng chứng (từ ít thử nghiệm, không vững trong mọi phân tích độ nhạy) rằng hiệu quả của CBT ở 6–12 tháng sau điều trị tốt hơn thuốc.'
+    loai: phat-hien
+    nguon:
+      - cuijpers2023
+      - nice-ng222
+    trich: 'A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT. CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point. [Cuijpers]; discuss with people who have remitted … whether they wish to continue with their psychological therapy for relapse prevention [NICE 1.8.8] || 1.8.6 For people starting group CBT or MBCT for relapse prevention, offer a course of therapy with an explicit focus on the development of relapse prevention skills and what is needed to stay well. [NICE NG222]'
+    vi_tri: Cuijpers 2023; NICE NG222 1.8
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…58% còn lại cần thêm phương án… đó là lý do CBT chú trọng dạy kỹ năng tự xử lý để phòng tái phát, và vì sao hiệu quả dài hạn của nó hơn thuốc." Làm rõ "từ ít thử nghiệm" (g = 0,34 không vững trong mọi phân tích độ nhạy); "58%" thành "phần lớn còn lại" (58% là phép trừ của trang, không có trong bài). chỗ khó: so sánh với thuốc. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): vế phòng tái phát nay dẫn NICE NG222 1.8.6–1.8.7 (mở được, toàn văn); 42% và 6–12 tháng như n22, n24. Câu trên trang đổi "CBT dạy kỹ năng tự xử lý một phần là để phòng tái phát" thành "Hướng dẫn NICE khuyên các liệu trình phòng tái phát (như CBT nhóm) tập trung rèn kỹ năng để giữ ổn định". Review (17/11/2026): trang viết "hiệu quả của nó", đọc như hiệu quả của liệu trình phòng tái phát (sai: g = 0,34 của Cuijpers 2023 là CBT cấp so với thuốc); đổi thành "hiệu quả của CBT ở 6–12 tháng sau điều trị", thêm "không vững trong mọi phân tích độ nhạy" theo gợi ý lượt 2 bổ sung.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nice.org.uk/guidance/ng222/resources/depression-in-adults-treatment-and-management-pdf-66143832307909", "https://www.constantinyvesplessen.com/pdfs/Cuijpers%20et%20al.%20-%202023%20-%20Cognitive%20behavior%20therapy%20vs.%20control%20conditions,.pdf" ]
+    luot_2_ghi_chu: Khớp. NICE dùng chữ 'consider' (1.8.5) cho người đã hết triệu chứng mà nguy cơ tái phát cao; 'khuyên' chấp nhận được. Có thể thêm 'và khác biệt không giữ ở mọi phân tích độ nhạy' để sát Cuijpers hơn; câu hiện tại đã có '(từ ít thử nghiệm)' nên không quá mạnh. Câu không khuyên dùng hay ngừng thuốc.
+  - id: n70
+    cau: 'Lời dẫn cuối bài và mục Đọc thêm: trang Hỗ trợ có đường dây, nơi khám đã kiểm chứng, gợi ý chọn nơi; link Trầm cảm, Tìm giúp đỡ, Đối phó stress.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: "Đã kiểm trên trang và trang Hỗ trợ (đã khóa). review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp."
+    review: dung
+  - id: n71
+    cau: 'Câu hỏi 1: ý cốt lõi của liệu pháp nhận thức là suy nghĩ tự động, lệch lạc (cách nhìn tiêu cực về bản thân, thế giới, tương lai) góp phần duy trì cảm xúc, hành vi tiêu cực; trị liệu giúp nhận ra, kiểm chứng, điều chỉnh, kèm thay đổi hành vi.'
+    loai: dinh-nghia
+    nguon:
+      - apa-dict
+    trich: cognitive therapy … emotional and behavioral problems … are, at least in part, the result of maladaptive or faulty ways of thinking … [cognitive therapy]; Helping individuals to become aware of … negative automatic thoughts, and then to test their validity [automatic thoughts]
+    vi_tri: APA Dictionary
+    ket_qua: da-sua
+    ghi_chu: 'Câu cũ: "…duy trì cảm xúc và hành vi tiêu cực…" Thêm "góp phần" (APA: "at least in part").'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dictionary.apa.org/cognitive-therapy
+      - https://dictionary.apa.org/cognitive-triad
+      - https://dictionary.apa.org/automatic-thoughts
+  - id: n72
+    cau: 'Câu hỏi 2: Cuijpers 2023: g = 0,79, còn 0,47 sau hiệu chỉnh; 42% so với 19%; CBT chỉ hơn liệu pháp khác 0,06; NNT 4,7.'
+    loai: so-lieu
+    nguon:
+      - cuijpers2023
+    trich: 'The main effect size indicating the overall difference between CBT and control conditions after treatment was g=0.79 (95% CI: 0.70‐0.89) … The effect size was smaller for studies with low risk of bias (g=0.60; 95% CI: 0.49‐0.71) and after adjusting for publication bias (g=0.47, 95% CI: 0.35‐0.59 using the trim and fill procedure). A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT.'
+    vi_tri: Cuijpers 2023
+    ket_qua: da-sua
+    ghi_chu: 'Giải thích cũ: "cứ khoảng 5 người điều trị thì 1 người hưởng lợi thêm so với không điều trị (NNT = 4,7)". "So với không điều trị" thành "so với nhóm đối chứng" (đối chứng gồm chăm sóc thông thường); "hưởng lợi" thành "đáp ứng". Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac vì không mở được toàn văn. Toàn văn Cuijpers 2023 (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; lượt 1 đã đọc, nay đọc lại): bảng 2 "Only low risk of bias 90 0.60 (0.49‐0.71) … Publication bias correction 349 0.47 (0.35‐0.59)", chú thích bảng "The reported publication bias correction is that using the trim and fill procedure"; Kết quả: "The response rate was 0.42 (95% CI: 0.39‐0.45) in CBT and 0.19 (95% CI: 0.18‐0.21) in the control conditions, which resulted in a RR of 2.13 (95% CI: 1.96‐2.32) and a NNT of 4.7 (95% CI: 4.0‐5.5)"; bảng 3: tỉ lệ đáp ứng ước tính ở 228/238 so sánh. NNT 4,7 do bài tính từ RR gộp (phương pháp: NNT = 1/hiệu số nguy cơ, gộp riêng), không phải 1/(0,42 − 0,19) ≈ 4,3 từ hai tỉ lệ gộp riêng; giữ số của bài. Số 0,47 là trim and fill (chỉ hiệu chỉnh sai lệch xuất bản), không phải gộp cả lọc nguy cơ sai lệch như một nguồn bậc 3 viết. Giữ các số.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'g = 0,79 và 0,06 đúng; 0,47, 42%/19%, NNT 4,7 chưa xác nhận. Không mở được toàn văn Cuijpers 2023 (chỉ tóm tắt); tóm tắt không có 42%/19%, NNT, g = 0,60, g = 0,47. Chỉ nguồn bậc 3 nhắc các số này và chúng không khớp nhau: Mad in America ghi 42% so với 19% và 0,47 ''sau khi tính sai lệch xuất bản và nghiên cứu nguy cơ sai lệch cao'' (không phải chỉ hiệu chỉnh xuất bản), và NNT 3,6 (có lẽ cho thuyên giảm); Mental Elf ghi chỉ 9 so sánh ít nguy cơ sai lệch, không ghi số. Cần review mở toàn văn (bảng 1–2) để chốt.'
+  - id: n73
+    cau: 'Câu hỏi 3: Powers 2008 (d = 0,34 so với 0,86): một phần đáng kể hiệu quả có vẻ đến từ những gì giả dược cũng có; phần chênh còn lại gợi ý kỹ thuật riêng góp thêm, nhưng tỉ lệ vẫn đang tranh cãi.'
+    loai: phat-hien
+    nguon:
+      - powers2008
+      - baskin2003
+    trich: A comprehensive literature search produced 32 randomized controlled trials (N = 1,479) … There was a clear overall advantage of treatment compared to waitlist (d = 0.86), psychological placebo (d = 0.34), and pill-placebo (d = 0.36) conditions at posttreatment … Treatment gains were maintained at follow-up (d = 0.76).
+    vi_tri: Powers 2008
+    ket_qua: da-lam-mem
+    ghi_chu: 'Đáp án cũ: "…phần vượt trội còn lại (d = 0,34) và hiệu quả duy trì sau trị liệu cho thấy kỹ thuật thật vẫn đóng góp thêm, nên không thể gọi toàn bộ là giả dược." Làm mềm ("có vẻ", "gợi ý"), vì Baskin 2003.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+      - https://doi.org/10.1146/annurev-clinpsy-050718-095424
+  - id: n74
+    cau: 'Câu hỏi 4: tâm động và nhân văn cũng có bằng chứng; khi so trực tiếp các liệu pháp chính quy khác nhau không nhiều; nên tìm người có chuyên môn, bàn phương pháp phù hợp, xây dựng sự tin tưởng.'
+    loai: loi-khuyen
+    nguon:
+      - cuijpers2023
+      - driessen2015
+      - elliott2021
+      - wampold2015
+    trich: 'CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point.'
+    vi_tri: Cuijpers 2023; Driessen 2015; Elliott 2021
+    ket_qua: da-sua
+    ghi_chu: 'Đáp án cũ: "liệu pháp tâm động (Shedler, 2010) và liệu pháp nhân văn (Elliott và cộng sự, 2021) đều có bằng chứng hiệu quả tương đương CBT (chênh lệch chỉ g = 0,06)… vì yếu tố chung giải thích phần lớn hiệu quả." Sai chỗ: g = 0,06 là CBT so với mọi liệu pháp khác trong trầm cảm, không riêng tâm động, nhân văn; "yếu tố chung giải thích phần lớn" đang tranh cãi. Sửa; giải thích bỏ "kỳ thị", thay "định kiến".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1002/wps.21069
+      - https://doi.org/10.1016/j.cpr.2015.07.004
+      - https://strathprints.strath.ac.uk/74362
+      - https://doi.org/10.1037/pst0000172
+  - id: n75
+    cau: 'Mục Nguồn: thêm các nguồn đã dùng (APA Dictionary, Baskin, Benish, Cristea, Driessen, Imamura, Karyotaki, Kovacs, Murphy, Ngo, Rosenzweig, Wampold, WHO, OWID); sửa thông tin Johnsen 2015 (141(4), 747–768), Rush 1977 (thêm DOI), Shedler 2010 (thêm DOI); bỏ "Quỹ Lasker".'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm trên trang: mục Nguồn khớp các nguồn trong hồ sơ. Siêu dữ liệu Johnsen 2015 (tập, số, trang) theo Europe PMC. review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp; review thêm Benish 2011 (nguồn mới của n64, siêu dữ liệu theo Europe PMC).'
+    review: dung
+  - id: n76
+    cau: 'Khung cũ "Đã bị bác bỏ: trị liệu tâm lý chỉ là hiệu ứng giả dược / nói chuyện an ủi".'
+    loai: nhan
+    vi_tri: khung "Mức độ chắc chắn" của trang cũ
+    nhan: bac-bo
+    co_so:
+      - (đã bỏ)
+    ly_do: Đã bỏ khỏi trang.
+    ket_qua: da-bo
+    ghi_chu: 'Bỏ khung. Thân cũ: "Nếu chỉ là giả dược, trị liệu thật đã không vượt trội giả dược tâm lý và giả dược thuốc một cách nhất quán…". Không đạt thước đo Đã bị bác bỏ: Baskin 2003 (phân tích tổng hợp) thấy trị liệu thật không hơn rõ giả dược tâm lý được thiết kế tương đương về cấu trúc, và Wampold 2005 (cùng nhóm) viết "when properly designed, psychological placebos are as effective as accepted psychotherapies"; nên câu "trị liệu thật vượt trội giả dược một cách nhất quán" sai. Ý "trị liệu có tác dụng thật so với không điều trị" đã nằm ở khung Vững chắc (n29); câu hỏi trị liệu hơn giả dược bao nhiêu nằm ở khung Đang tranh cãi (n35). chỗ khó: bỏ một nhãn. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 qua-manh cho khung cũ: đã kiểm trang (grep "bac-bo", "Đã bị bác bỏ" 17/11/2026): khung đã bỏ hẳn; ý Vững chắc (n29) và Đang tranh cãi (n35) đúng như câu đúng của lượt 2. Giữ da-bo.'
+    luot_2: qua-manh
+    luot_2_nguon:
+      - https://doi.org/10.1037/0022-006X.71.6.973
+      - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
+      - https://doi.org/10.1146/annurev-clinpsy-050718-095424
+    luot_2_ghi_chu: 'câu đúng: Vững chắc: trị liệu tâm lý hiệu quả hơn hẳn không điều trị. Đang tranh cãi: bao nhiêu phần hiệu quả nhờ kỹ thuật riêng, bao nhiêu nhờ những gì giả dược tâm lý cũng có.; Nhãn ''Đã bị bác bỏ'' không đạt thước đo: các kiểm tra đủ mạnh không liên tục thất bại; với giả dược tương đương cấu trúc, trị liệu thật không hơn rõ (Baskin 2003). Chính trang xếp câu này vào Đang tranh cãi (n35). Khung cũ phải bỏ hay đổi nhãn.'
+doi_chu:
+  - cu: 'description "Bản nháp: … bằng chứng từ hàng trăm phân tích tổng hợp…"'
+    moi: description không có "Bản nháp"; "các phân tích tổng hợp lớn"
+    ly_do: Hồ sơ n1.
+  - cu: Hộp warning "Bản nháp đang chờ rà soát chuyên môn"
+    moi: Hộp note "Trước khi đọc" và ::tom-tat
+    ly_do: Hồ sơ n2.
+  - cu: Tự trải nghiệm, hộp đáp án
+    moi: '"(ví dụ giả định của chúng tôi)"; thêm câu về yếu tố chung'
+    ly_do: Hồ sơ n3–n5.
+  - cu: 'Mục "Điều gì đang xảy ra?" ("chữa lành bằng lời nói"; "thay đổi được một bộ não"; "Câu trả lời ngắn gọn: vì phần lớn…"; "hàng trăm thương hiệu… ba gia đình lớn")'
+    moi: Định nghĩa theo APA Dictionary; "Một câu trả lời, của trường phái nhận thức – hành vi"; bốn nhóm (thêm tích hợp)
+    ly_do: Hồ sơ n6–n10.
+  - cu: 'Rush 1977: "bài kiểm tra đầu tiên"; "đấu tay đôi"; "thử nghiệm… đầu tiên của bất kỳ liệu pháp trò chuyện nào"; "nhóm thuốc có nguy cơ tái phát cao hơn"; "chuẩn mực mới"; Quỹ Lasker'
+    moi: Tiêu đề "liệu pháp nhận thức đọ sức với thuốc"; cỡ mẫu; kết quả theo tóm tắt; theo dõi một năm theo Kovacs 1981; bức tranh sau này theo Cuijpers 2023
+    ly_do: Hồ sơ n11–n15.
+  - cu: Hofmann 2012 ("gom toàn bộ bằng chứng"; "chứng cuồng ăn")
+    moi: '"gom các phân tích tổng hợp"; bulimia dịch lại; thêm giới hạn về nhóm dân tộc thiểu số'
+    ly_do: Hồ sơ n16–n19.
+  - cu: Cuijpers 2023 ("con số trung thực nhất"; "hưởng lợi thêm"; "một chút xíu")
+    moi: '"những con số thận trọng"; "có thêm 1 người đáp ứng"; thêm giới hạn của g = 0,34'
+    ly_do: Hồ sơ n20–n24.
+  - cu: Powers 2008 (tiêu đề "đặt trị liệu cạnh... giả dược"; định nghĩa giả dược tâm lý; "trị liệu thật không chỉ là giả dược")
+    moi: Định nghĩa viết lại; "trong các thử nghiệm này", "có vẻ"
+    ly_do: Hồ sơ n25–n28.
+  - cu: Bốn khung nhãn (Vững chắc; Khá vững với Johnsen 2015 và lời giải thích; Đang tranh cãi với "phiên bản làm cho có" gán cho phe kỹ thuật đặc thù; Đã bị bác bỏ "trị liệu chỉ là giả dược")
+    moi: 'Ba khung: Vững chắc; Khá vững (nêu cả Johnsen 2015 và Cristea 2017, Cuijpers 2023); Đang tranh cãi (thêm Baskin 2003, sửa lập luận hai phe); bỏ khung Đã bị bác bỏ'
+    ly_do: Hồ sơ n29–n37, n76.
+  - cu: 'Các lý thuyết: Beck ("và sau này là lo âu"; "Từ bộ ba này sinh ra"); Wampold ("ba thứ quyết định phần lớn kết quả… nghi thức chữa lành"); tâm động ("dưới 40 buổi"; ví dụ người yêu; "Shedler tổng hợp 8 phân tích tổng hợp"; "sau 9 tháng"); nhân văn ("đeo mặt nạ"; ba điều kiện)'
+    moi: Theo APA Dictionary, Wampold 2015 (ba con đường, số liệu), Shedler 2010 kể Abbass 2006 ("dưới 40 giờ", "hơn 9 tháng"), Driessen 2015, Elliott 2021 (thêm −0,26 và giới hạn)
+    ly_do: Hồ sơ n38–n51.
+  - cu: Áp dụng 1–4 ("giải thích phần lớn hiệu quả"; "nhà trị liệu giỏi với phương pháp thường…"; "Kiên trì thử tiếp… không phải là dũng cảm"; "qua tin nhắn, video"; "video chữa lành"; chip Vững chắc ở mục 4; "gọi 115")
+    moi: Viết lại theo Wampold, Cuijpers, Karyotaki, NICE, WHO; bỏ chip nhãn ở mục 4; bỏ số
+    ly_do: Hồ sơ n52–n55.
+  - cu: Mục Ở Việt Nam ("chưa tìm thấy nghiên cứu công bố nào… trên người Việt"; "Mọi con số… đều đến từ các nước phương Tây"; "chưa đến 1… 0,9"; "một số khảo sát…"; "kênh hỗ trợ đầu tiên… gia đình"; "nhiều khả năng là phổ quát"; "đáng được đầu tư hơn")
+    moi: Có thử nghiệm ở Việt Nam (Murphy 2020, Imamura 2021); "Phần lớn"; khoảng 1 (Atlas 2020, số năm 2019, so với Anh 14); Ngo 2014; điều chỉnh theo văn hóa (Wampold kể lại, d = 0,32); hình thức WHO khuyến khích
+    ly_do: Hồ sơ n56–n65.
+  - cu: Bốn ngộ nhận ("điều lời an ủi thông thường không làm được"; "hiệu quả tương đương"; "Phần lớn thân chủ…"; "58%… hơn thuốc")
+    moi: Viết lại có giới hạn ("trong nhiều thử nghiệm", "dù ít nghiên cứu hơn", "từ ít thử nghiệm"); thêm lời dẫn Hỗ trợ cuối bài
+    ly_do: Hồ sơ n66–n70.
+  - cu: Bốn câu hỏi (câu 3 "không thể gọi toàn bộ là giả dược"; câu 4 "tương đương CBT (chênh lệch chỉ g = 0,06)… yếu tố chung giải thích phần lớn hiệu quả")
+    moi: Sửa theo n71–n74
+    ly_do: Hồ sơ n71–n74.
+  - cu: Mục Nguồn (8 nguồn; Johnsen 2015 thiếu tập, trang)
+    moi: 21 nguồn
+    ly_do: Hồ sơ n75.
