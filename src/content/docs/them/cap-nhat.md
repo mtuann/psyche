@@ -7,6 +7,11 @@ Nhật ký thay đổi của site, mới nhất trước. Mỗi mục có ngày;
 
 Psyche đang được làm lại từ Psyche Zero (bản đầu của site, 10/2026): mỗi trang lên site sau khi được kiểm chứng lại từ đầu ([Cách Psyche kiểm chứng](/psyche/bat-dau/cach-kiem-chung/)). Các mục cập nhật của Psyche Zero (13/10 đến 22/10/2026) không chép sang đây: chúng kể các lần sửa của bản cũ, mà mọi trang chuyển sang site này đều được kiểm lại từng câu.
 
+## 17/11/2026: Sức khỏe tâm thần và công cụ tự trải nghiệm { #2026-11-17 }
+
+- 4 bài [Sức khỏe tâm thần](/psyche/nen-tang/suc-khoe-tam-than/): trầm cảm, lo âu, tìm giúp đỡ, trị liệu tâm lý. Các bài đã được kiểm chứng hai lượt, nhưng chưa được chuyên gia sức khỏe tâm thần đọc lại, nên có dải "Chưa qua rà soát chuyên môn" dưới tiêu đề.
+- [Tự trải nghiệm](/psyche/trai-nghiem/): trang mục lục và 5 công cụ (hiệu ứng Stroop, độ dài trí nhớ chữ số, ảo giác Müller-Lyer, mù thay đổi, ảo giác Ebbinghaus).
+
 ## 10/11/2026: Thêm 47 bài Nền tảng { #2026-11-10 }
 
 Thêm 47 bài khám phá đã kiểm chứng (ngày 9 và 10/11/2026), thuộc các lĩnh vực trí nhớ, trí tuệ, tư duy, chú ý và tri giác, tính cách, tâm lý xã hội, cảm xúc và động lực, căng thẳng và giấc ngủ, hạnh phúc, cơ sở sinh học, phát triển suốt đời. Xem theo lĩnh vực ở [Khám phá](/psyche/kham-pha/).

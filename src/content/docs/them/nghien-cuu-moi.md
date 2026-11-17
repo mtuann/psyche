@@ -27,9 +27,9 @@ Năm tin đầu được đăng trên Psyche Zero (bản cũ của site) ngày 1
 
 **Câu hỏi:** Tự tin thái quá thúc ta hành động, còn ác cảm mất mát (*loss aversion*: xu hướng cố tránh những gì ta thấy là mất mát, nhiều một cách không cân xứng) kìm ta lại. Nếu tự tin thái quá có lợi, vì sao lại có thêm một "thiên kiến" kéo theo chiều ngược lại?
 
-**Nội dung chính:** Đây là một bài **lý thuyết**, đề xuất một mô hình giải thích, không phải một thí nghiệm hay một phân tích dữ liệu mới. Theo mô hình, tự tin thái quá "cài sẵn" là một tín hiệu đáng tin về năng lực thật: quyết định sai vì quá tin vào mình gây thiệt hại ít hơn cho người giỏi, còn lợi ích của việc được coi là giỏi tăng theo năng lực. Ác cảm mất mát bù bớt cái giá của những quyết định quá tự tin; vì thường được giấu kín, nó không làm mất vai trò tín hiệu của sự tự tin. Từ đó, tác giả cho rằng lời khuyên của Kahneman nên bỏ cả hai thiên kiến là thiếu cơ sở.
+**Nội dung chính:** Theo tóm tắt, đây là một bài **lý thuyết**: tác giả đề xuất một mô hình giải thích (lý thuyết tín hiệu). Theo mô hình, tự tin thái quá "cài sẵn" là một tín hiệu đáng tin về năng lực thật: quyết định sai vì quá tin vào mình gây thiệt hại ít hơn cho người giỏi, còn lợi ích của việc được coi là giỏi tăng theo năng lực. Ác cảm mất mát bù bớt cái giá của những quyết định quá tự tin; vì thường được giấu kín, nó không làm mất vai trò tín hiệu của sự tự tin. Từ đó, tác giả cho rằng lời khuyên của Kahneman nên bỏ cả hai thiên kiến là thiếu cơ sở.
 
-**Giới hạn:** tóm tắt của bài nói bằng chứng hiện có ủng hộ cách hiểu này, nhưng mô hình vẫn cần được kiểm định bằng dữ liệu.
+**Giới hạn:** chúng tôi chỉ đọc được tóm tắt. Tóm tắt nói bằng chứng hiện có ủng hộ cách hiểu này, nhưng không nêu bằng chứng ấy là gì.
 
 **Liên quan:** bài [Kẻ dốt hay tự tin thái quá?](/psyche/kham-pha/tu-duy/dunning-kruger/) kể các phê bình thống kê nhắm vào hiệu ứng Dunning–Kruger (Krueger và Mueller, 2002; Gignac và Zajenkowski, 2020). Mô hình của Dawson và de Meza bàn một câu hỏi khác (vì sao tự tin thái quá tồn tại), không kiểm định hiệu ứng Dunning–Kruger, nên không dùng được để nói hiệu ứng ấy đúng hay sai.
 
@@ -39,9 +39,9 @@ Năm tin đầu được đăng trên Psyche Zero (bản cũ của site) ngày 1
 
 **Câu hỏi:** Một chương trình tập cả tim mạch (aerobic, như đi bộ nhanh, đạp xe) và sức mạnh (kháng lực, như tạ, dây kháng lực) có cải thiện nhận thức tổng thể không?
 
-**Phát hiện chính:** Phân tích tổng hợp 35 thử nghiệm ngẫu nhiên có đối chứng với 5.734 người tham gia cho thấy tập kết hợp cải thiện nhận thức tổng thể với g = 0,32 (khoảng tin cậy 95%: 0,17–0,46). Lợi ích rõ hơn ở người từ 65 tuổi trở lên (g = 0,33) và cũng thấy ở người có bệnh (g = 0,28); các chương trình dài 13–26 tuần có hiệu quả có ý nghĩa thống kê (g = 0,21). Tác giả khuyên ưu tiên phần tập sức mạnh, mỗi buổi 30–60 phút.
+**Phát hiện chính:** Phân tích tổng hợp 35 thử nghiệm ngẫu nhiên có đối chứng với 5.734 người tham gia cho thấy tập kết hợp cải thiện nhận thức tổng thể với g = 0,32 (khoảng tin cậy 95%: 0,17–0,46). Ở người từ 65 tuổi trở lên, hiệu quả có ý nghĩa thống kê (g = 0,33; khoảng tin cậy 95%: 0,14–0,51), còn ở nhóm 18–65 tuổi thì chưa đạt ý nghĩa thống kê. Tác giả đọc đây là lợi ích lớn hơn ở người cao tuổi, nhưng đó là so sánh nhóm nào đạt, nhóm nào chưa đạt ý nghĩa thống kê, không phải phép kiểm định khác biệt giữa hai nhóm. Ở người có bệnh, g = 0,28; các chương trình dài 13–26 tuần có hiệu quả có ý nghĩa thống kê (g = 0,21). Tác giả khuyên ưu tiên phần tập sức mạnh, mỗi buổi 30–60 phút.
 
-**Giới hạn:** hiệu quả ở mức nhỏ: theo các mốc Cohen (1988) đề xuất, 0,2 là "nhỏ" và 0,5 là "trung bình" (xem [Độ lớn hiệu ứng](/psyche/bang-chung/do-lon-hieu-ung/)).
+**Giới hạn:** theo các mốc Cohen (1988) đề xuất, 0,2 là "nhỏ" và 0,5 là "trung bình" (xem [Độ lớn hiệu ứng](/psyche/bang-chung/do-lon-hieu-ung/)), nên chúng tôi đọc g = 0,32 là hiệu quả nhỏ; tác giả không tự xếp mức.
 
 **Liên quan:** bài [Tập thể dục có làm não khỏe hơn?](/psyche/kham-pha/co-so-sinh-hoc/the-duc-nao/) xếp câu "tập aerobic cải thiện nhận thức đến mức nào" vào nhãn :nhan[tranh-cai]: các phân tích tổng hợp cho hiệu quả nhỏ, và một tổng quan ô dù thấy hiệu quả chung gần như không còn sau khi hiệu chỉnh thiên lệch xuất bản. Con số của Zhang và cộng sự đo nhận thức tổng thể với tập kết hợp, ở những nhóm người khác, nên không so thẳng được với các con số trong bài; một phân tích mới chưa đủ để đổi nhãn.
 
