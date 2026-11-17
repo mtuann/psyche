@@ -1,6 +1,8 @@
 # Chép từ site cũ (mtuann/psyche-zero, .github/workflows/ho-tro-quarterly.yml), sửa đường dẫn trang và việc cần làm cho
-# repo mới (D2-L1). Mỗi quý mở một issue nhắc kiểm tra bằng tay thông tin liên hệ của trang Hỗ trợ.
-name: Nhắc kiểm tra trang Hỗ trợ mỗi quý
+# repo mới (D2-L1). Mỗi quý mở một issue nhắc kiểm tra bằng tay thông tin liên hệ của trang Hỗ trợ. Đợt 9 (máy canh) thêm
+# job nghien-cuu-moi: nhắc tìm tin cho trang Nghiên cứu mới (dòng cập nhật, chỉ thêm) và xử lý các issue của máy canh
+# (may-canh.yml), như nhịp hằng quý của plans/ben-vung/README.md mục 5. Tên file giữ như site cũ.
+name: Nhắc việc mỗi quý (Hỗ trợ, Nghiên cứu mới)
 
 on:
   schedule:
@@ -33,3 +35,30 @@ jobs:
           Chỉ đưa lên những gì kiểm chứng được từ nguồn chính thức.
           BODY
           )"
+
+  nghien-cuu-moi:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - name: Mở issue nhắc việc
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          # ngày của tin mới nhất: tiêu đề "## dd/mm/yyyy: …" đầu tiên của trang (tin mới thêm lên đầu)
+          moi=$(grep -m1 -oE '^## [0-9]{1,2}/[0-9]{1,2}/[0-9]{4}' src/content/docs/them/nghien-cuu-moi.md | cut -c4- || true)
+          {
+            echo "Tin mới nhất trên trang Nghiên cứu mới (src/content/docs/them/nghien-cuu-moi.md): ngày ${moi:-không tìm thấy}."
+            echo
+            cat <<'BODY'
+          Việc hằng quý (plans/ben-vung/README.md mục 5; plans/ben-vung/them-noi-dung.md mục 1, 6):
+
+          - [ ] Tìm nghiên cứu mới đã qua bình duyệt từ quý trước, liên quan trực tiếp tới bài đã có trên Psyche (ưu tiên phân tích tổng hợp, tái lập lớn, nghiên cứu ở Việt Nam)
+          - [ ] Mỗi tin một mục có ngày, thêm lên đầu trang; nói rõ nghiên cứu là gì, mẫu, kết quả, giới hạn, liên quan bài nào; không viết lại tin cũ (sai thì đính chính bằng tin mới). Nhánh them/nghien-cuu-moi-<yyyy-mm>: mở khóa trang (node tools/khoa.mjs mo them/nghien-cuu-moi --ly-do "tin mới"), thêm mục, kiểm định V3 cho mục mới, khóa lại
+          - [ ] Tin đã đủ bằng chứng cho một bài lõi: viết bổ sung bang-chung-moi (them-noi-dung.md mục 5)
+          - [ ] Xử lý các issue còn mở của máy canh (nhãn rut-bai, thoi-su, kiem-lai, link-hong; may-canh.yml)
+
+          Không có tin đủ chuẩn thì đóng issue này, ghi lý do.
+          BODY
+          } > issue.md
+          gh issue create --repo "$REPO" --title "Nghiên cứu mới và việc của máy canh ($(date +%m/%Y))" --body-file issue.md
