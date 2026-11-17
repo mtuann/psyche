@@ -185,6 +185,8 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 
 **Xong khi:** site mới không còn cần `../psyche-zero/` để build hay kiểm thử.
 
+**Sau đợt 9:** thêm nội dung theo `../ben-vung/them-noi-dung.md`, thứ tự ưu tiên ở mục 9 (lấp lĩnh vực mỏng trước: Học tập, Cơ sở sinh học, Ý thức và giấc ngủ, Căng thẳng, Động lực, Lịch sử; chủ repo duyệt 17/11/2026).
+
 ## Việc treo (cập nhật 10/11/2026)
 
 Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong việc nào thì gạch khỏi đây.

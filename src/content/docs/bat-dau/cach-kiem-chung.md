@@ -27,7 +27,7 @@ Câu nói một nghiên cứu đã làm gì và thấy gì thì dựa vào bài 
 
 Hiện nay, lượt 1, lượt 2 và lượt review do mô hình AI (Claude) làm theo đúng quy trình này, mỗi lượt là một phiên làm việc riêng; lượt 2 không thấy nguồn và kết luận của lượt 1. Chủ site đọc kiểm mẫu, quyết các chỗ khó và chịu trách nhiệm về nội dung.
 
-Bài mang viên **Nền tảng** (ở phía trên tiêu đề) được kiểm đủ cả hai lượt. Bài mang viên **Mở rộng** được kiểm đủ ở lượt 1; lượt 2 kiểm một mẫu ngẫu nhiên, cộng mọi nhãn mức độ chắc chắn và mọi điều về lâm sàng, và có hạn xem lại. Bài về sức khỏe tâm thần chỉ lên site sau khi người có chuyên môn đọc lại. Trang chỉ có danh sách sinh từ dữ liệu đã khóa, hay chỉ có câu về chính site, được kiểm theo mức nhẹ hơn.
+Bài mang viên **Nền tảng** (ở phía trên tiêu đề) được kiểm đủ cả hai lượt. Bài mang viên **Mở rộng** được kiểm đủ ở lượt 1; lượt 2 kiểm một mẫu ngẫu nhiên, cộng mọi nhãn mức độ chắc chắn và mọi điều về lâm sàng, và có hạn xem lại. Bài về sức khỏe tâm thần được kiểm cả hai lượt như bài Nền tảng; bài nào chưa được người có chuyên môn về sức khỏe tâm thần đọc lại thì có dải **Chưa qua rà soát chuyên môn** ngay dưới tiêu đề. Trang chỉ có danh sách sinh từ dữ liệu đã khóa, hay chỉ có câu về chính site, được kiểm theo mức nhẹ hơn.
 
 ## Nhãn mức độ chắc chắn
 
