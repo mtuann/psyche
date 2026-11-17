@@ -436,6 +436,12 @@ test('bản ghi dữ liệu: câu về chính site chỉ ở cấu trúc của s
 	assert.deepEqual(loiHoSo(hs('nghien-cuu/asch1956', [vs(['trang_nha'])]), 'du-lieu/nghien-cuu/asch1956', ROOT), []);
 	assert.match(loiHoSo(hs('nghien-cuu/asch1956', [vs(['nguon'])]), 'du-lieu/nghien-cuu/asch1956', ROOT).join(), /không có câu về chính site/);
 	assert.match(loiHoSo(hs('nguon/asch1956', [vs(['ten'])]), 'du-lieu/nguon/asch1956', ROOT).join(), /không có câu về chính site/);
+	// thẻ ngộ nhận: trang liên quan và cấp trong bài thử là lựa chọn của site; khẳng định, nhãn, giải thích thì không
+	assert.deepEqual(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang'])]), 'du-lieu/ngo-nhan/mbti', ROOT), []);
+	assert.deepEqual(loiHoSo(hs('ngo-nhan/mbti', [vs(['cap'])]), 'du-lieu/ngo-nhan/mbti', ROOT), []);
+	for (const t of ['khang_dinh', 'nhan', 'giai_thich', 'nguon'])
+		assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs([t])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /không có câu về chính site/, t);
+	assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang', 'nhan'])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /không có câu về chính site/);
 });
 
 test('khóa từng phần bản ghi: nhận định về trường chưa khóa được để chưa có kết quả', () => {

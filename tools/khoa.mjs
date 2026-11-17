@@ -50,8 +50,9 @@ const LUON_KIEM = ['nhan', 'lam-sang'];
 /** Câu nói về chính site (loai ve-site): review kiểm trên trang và dữ liệu, không qua lượt 2. */
 const VE_SITE = 've-site';
 /** Trường của bản ghi dữ liệu được ghi là câu về chính site: cấu trúc của site, không phải điều về tâm lý học. */
-const VE_SITE_BO = { trang: null, 'linh-vuc': ['ten', 'thu_tu', 'mau', 'bieu_tuong'], 'nghien-cuu': ['trang_nha'] };
-const VE_SITE_DU_LIEU = 'bộ trang; tên, thứ tự, màu, biểu tượng của lĩnh vực; trang nhà của nghiên cứu';
+// thẻ ngộ nhận: trang liên quan (link trên site) và cấp trong bài thử "Bạn nghĩ gì về tâm trí?" là lựa chọn của site (D8-L3)
+const VE_SITE_BO = { trang: null, 'linh-vuc': ['ten', 'thu_tu', 'mau', 'bieu_tuong'], 'nghien-cuu': ['trang_nha'], 'ngo-nhan': ['trang', 'cap'] };
+const VE_SITE_DU_LIEU = 'bộ trang; tên, thứ tự, màu, biểu tượng của lĩnh vực; trang nhà của nghiên cứu; trang liên quan, cấp của thẻ ngộ nhận';
 const veSiteDuoc = (bg, truong) => {
 	const bo = bg.split('/')[0];
 	if (!(bo in VE_SITE_BO)) return false;
