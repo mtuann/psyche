@@ -29,7 +29,7 @@ Lo lắng (anxiety) vốn là phản ứng bình thường khi ta chịu áp l�
 
 Rối loạn lo âu phổ biến. Tính đến 11/2026, WHO ước tính năm 2023 có khoảng 470 triệu người trên thế giới bị rối loạn lo âu, nhiều hơn mọi nhóm rối loạn tâm thần khác, và chỉ khoảng 1 trong 4 người cần điều trị được điều trị.
 
-Có nhiều rối loạn lo âu khác nhau, tùy nỗi sợ tập trung vào đâu. Ba dạng thường được nhắc đến (mô tả chung, **không phải bảng để tự chấm điểm**):
+Có nhiều rối loạn lo âu khác nhau, tùy nỗi sợ tập trung vào đâu. Ba dạng thường được nhắc đến (mô tả chung, **không phải bảng để tự chấm điểm**: chỉ người có chuyên môn mới chẩn đoán được; xem trang [Hỗ trợ](/psyche/ho-tro/)):
 
 - **Rối loạn lo âu lan tỏa** (generalized anxiety disorder): lo lắng quá mức về **nhiều chuyện khác nhau** của đời sống hằng ngày (công việc, tiền bạc, sức khỏe, gia đình…), hoặc cảm giác bất an không gắn với chuyện gì cụ thể. Đi kèm thường là căng cơ hay bồn chồn, cảm giác "căng như dây đàn", khó tập trung, dễ cáu, khó ngủ, và các dấu hiệu cơ thể như tim đập nhanh, đổ mồ hôi, buồn nôn. Theo ICD-11, các triệu chứng không thoáng qua mà kéo dài **ít nhất vài tháng**, phần lớn các ngày.
 - **Rối loạn hoảng sợ** (panic disorder): các **cơn hoảng sợ lặp lại**, trong đó ít nhất một số cơn đến bất ngờ, "từ trên trời rơi xuống". Cơn hoảng sợ là những đợt sợ hãi dữ dội ập đến nhanh, kèm tim đập nhanh, khó thở, đau ngực, chóng mặt, sợ mất kiểm soát hay sợ sắp chết. Sau đó người ấy lo lắng kéo dài về việc cơn sẽ trở lại hay về ý nghĩa của nó (ví dụ sợ mình bị đau tim), hoặc thay đổi cách sống để tránh cơn (ví dụ chỉ ra khỏi nhà khi có người đi cùng).
@@ -61,12 +61,12 @@ Tiếp xúc trong trị liệu được lên kế hoạch cùng người có chu
 Lo âu lan tỏa, rối loạn hoảng sợ và lo âu xã hội đều được mô tả trong ICD-11 và DSM-5-TR, với tiêu chí cụ thể về loại nỗi sợ, thời gian kéo dài, mức khổ sở hay suy giảm chức năng, và các tình trạng cần loại trừ.
 :::
 
-:::kha-vung[CBT, nhất là các kỹ thuật tiếp xúc, giảm triệu chứng của nhiều rối loạn lo âu]
+:::kha-vung[CBT, kể cả các kỹ thuật tiếp xúc, giảm triệu chứng của nhiều rối loạn lo âu]
 Một phân tích tổng hợp 41 thử nghiệm có nhóm giả dược (2.843 người) thấy CBT hiệu quả hơn giả dược ở mức vừa. Hiệu quả lớn với lo âu lan tỏa, nhỏ đến vừa với lo âu xã hội và rối loạn hoảng sợ; các liệu pháp chủ yếu dùng tiếp xúc có hiệu quả lớn hơn một chút, nhưng khác biệt chưa có ý nghĩa thống kê. Một phần đáng kể người bệnh chưa đỡ hay bị tái phát nỗi sợ sau trị liệu.
 :::
 
 :::kha-vung[Rối loạn lo âu hình thành từ nhiều yếu tố cùng tác động: gen, trải nghiệm và hoàn cảnh sống]
-Theo WHO, rối loạn lo âu, như các tình trạng sức khỏe tâm thần khác, là kết quả của sự tương tác phức tạp giữa các yếu tố xã hội, tâm lý và sinh học; người từng bị bạo hành, mất mát nặng hay trải nghiệm bất lợi dễ bị hơn. Một phân tích tổng hợp các nghiên cứu sinh đôi ước tính gen giải thích khoảng 43% khác biệt về nguy cơ rối loạn hoảng sợ và 32% với lo âu lan tỏa; phần còn lại phần lớn đến từ trải nghiệm riêng của mỗi người. Ở mỗi người cụ thể, chưa thể tách rõ yếu tố nào góp bao nhiêu.
+Theo WHO, rối loạn lo âu, như các tình trạng sức khỏe tâm thần khác, là kết quả của sự tương tác phức tạp giữa các yếu tố xã hội, tâm lý và sinh học; người từng bị bạo hành, mất mát nặng hay trải nghiệm bất lợi dễ bị hơn. Một phân tích tổng hợp các nghiên cứu sinh đôi ước tính gen giải thích khoảng 43% khác biệt về nguy cơ rối loạn hoảng sợ và 32% với lo âu lan tỏa. Với rối loạn hoảng sợ, phần còn lại chủ yếu thuộc về môi trường riêng của mỗi người; với lo âu lan tỏa ở nữ, môi trường chung của gia đình có thể cũng góp phần. Ở mỗi người cụ thể, chưa thể tách rõ yếu tố nào góp bao nhiêu.
 :::
 
 ## Ngộ nhận liên quan

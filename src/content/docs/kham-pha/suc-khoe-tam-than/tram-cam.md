@@ -33,7 +33,7 @@ Trầm cảm phổ biến. Tính đến 11/2026, WHO ước tính năm 2023 kho�
 
 ## Chuyên gia phân biệt bằng cách nào?
 
-Người có chuyên môn dựa vào các hệ thống chẩn đoán chuẩn: ICD-11 của WHO và DSM-5-TR (bản hiệu đính năm 2022 của Hiệp hội Tâm thần học Hoa Kỳ). Hai hệ thống mô tả giai đoạn trầm cảm khá giống nhau. Mô tả dưới đây chỉ để hiểu chung, **không phải bảng để tự chấm điểm**:
+Người có chuyên môn dựa vào các hệ thống chẩn đoán chuẩn: ICD-11 của WHO và DSM-5-TR (bản hiệu đính năm 2022 của Hiệp hội Tâm thần học Hoa Kỳ). Hai hệ thống mô tả giai đoạn trầm cảm khá giống nhau. Mô tả dưới đây chỉ để hiểu chung, **không phải bảng để tự chấm điểm**: chỉ người có chuyên môn mới chẩn đoán được (xem trang [Hỗ trợ](/psyche/ho-tro/)).
 
 - Cần có **ít nhất một trong hai dấu hiệu cốt lõi**: tâm trạng trầm buồn, hoặc mất hẳn hứng thú, niềm vui với các hoạt động vốn thích.
 - Chuyên gia xem xét thêm nhiều triệu chứng khác, như khó tập trung hay khó quyết định; cảm giác mình vô giá trị hay tội lỗi quá mức; tuyệt vọng về tương lai; ý nghĩ lặp lại về cái chết; giấc ngủ, sự thèm ăn hay cân nặng thay đổi rõ; mệt mỏi, thiếu năng lượng; bồn chồn hay chậm chạp đến mức người khác nhận thấy.
@@ -60,7 +60,7 @@ Giai đoạn trầm cảm được mô tả cụ thể trong ICD-11 và DSM-5-TR
 :::
 
 :::kha-vung[Liệu pháp tâm lý và thuốc chống trầm cảm giúp giảm triệu chứng ở nhiều người, nhưng không phải ở tất cả]
-Các phân tích tổng hợp lớn cho thấy CBT (409 thử nghiệm) và các thuốc chống trầm cảm (522 thử nghiệm) đều hiệu quả hơn nhóm đối chứng hay giả dược. Mức hiệu quả trung bình ở mức vừa, nhỏ đi khi chỉ tính các nghiên cứu ít sai lệch, và khác nhau nhiều giữa các người: một phần người bệnh cần thử thêm hay đổi hướng điều trị. Kết hợp liệu pháp tâm lý với thuốc tốt hơn chỉ dùng thuốc; nó có tốt hơn chỉ dùng liệu pháp tâm lý hay không thì các phân tích tổng hợp chưa thống nhất.
+Các phân tích tổng hợp lớn cho thấy CBT (409 thử nghiệm) và các thuốc chống trầm cảm (522 thử nghiệm) đều hiệu quả hơn nhóm đối chứng hay giả dược. So với nhóm đối chứng, mức hiệu quả trung bình từ nhỏ đến vừa, nhỏ hơn nữa khi chỉ tính các nghiên cứu ít sai lệch hay khi hiệu chỉnh sai lệch xuất bản, và khác nhau nhiều giữa các người: một phần người bệnh cần thử thêm hay đổi hướng điều trị. Kết hợp liệu pháp tâm lý với thuốc tốt hơn chỉ dùng thuốc; nó có tốt hơn chỉ dùng liệu pháp tâm lý hay không thì các phân tích tổng hợp chưa thống nhất.
 :::
 
 :::tranh-cai[Vai trò cụ thể của serotonin trong trầm cảm]

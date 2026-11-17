@@ -29,14 +29,14 @@ Buồn, lo, căng thẳng là một phần bình thường của cuộc sống, 
 - Người thân, bạn bè nói rằng **bạn thay đổi nhiều**, và bạn cũng thấy mình không còn là mình.
 - Bạn **có ý nghĩ tự làm hại bản thân**, hoặc nghĩ rằng mọi người sẽ tốt hơn nếu không có mình. Trường hợp này, hãy tìm giúp đỡ **ngay**: gọi cấp cứu hay đến khoa cấp cứu gần nhất, không cần chờ hay "xem thêm". Số khẩn cấp có ở trang [Hỗ trợ](/psyche/ho-tro/).
 
-Danh sách này giúp bạn quyết định có nên tìm người nói chuyện hay không, **không phải để tự chẩn đoán**. Một nguyên tắc mà trang [Hỗ trợ](/psyche/ho-tro/) của site này cũng dùng: **bạn không cần phải "đủ nặng" mới được tìm sự giúp đỡ**. Nếu điều gì đó đang làm bạn khổ sở kéo dài, việc tìm người nói chuyện đã là lý do đủ.
+Danh sách này giúp bạn quyết định có nên tìm người nói chuyện hay không, **không phải để tự chẩn đoán**: chỉ người có chuyên môn mới chẩn đoán được. Một nguyên tắc mà trang [Hỗ trợ](/psyche/ho-tro/) của site này cũng dùng: **bạn không cần phải "đủ nặng" mới được tìm sự giúp đỡ**. Nếu điều gì đó đang làm bạn khổ sở kéo dài, việc tìm người nói chuyện đã là lý do đủ.
 
 ## Các vai trò khác nhau thế nào?
 
 Nhiều người e ngại đi khám vì không biết mình sẽ gặp ai, người đó làm được gì. Dưới đây là ba vai trò chính, tóm từ bảng chi tiết ở trang [Hỗ trợ](/psyche/ho-tro/):
 
 - **Bác sĩ chuyên khoa tâm thần:** là bác sĩ y khoa, học chuyên khoa tâm thần. Trong ba vai trò này, chỉ bác sĩ được kê đơn thuốc. Công việc: chẩn đoán, điều trị bằng thuốc và các phương pháp khác, chỉ định nhập viện khi cần.
-- **Nhà tâm lý lâm sàng:** học chuyên ngành tâm lý lâm sàng. Theo Luật Khám bệnh, chữa bệnh 2023 (có hiệu lực từ 01/01/2024), đây là chức danh **phải có giấy phép hành nghề**. Công việc: đánh giá tâm lý, trị liệu tâm lý. Không kê đơn thuốc.
+- **Nhà tâm lý lâm sàng:** học chuyên ngành tâm lý lâm sàng. Theo Luật Khám bệnh, chữa bệnh 2023 (có hiệu lực từ 01/01/2024), đây là chức danh **phải có giấy phép hành nghề**. Công việc, theo phạm vi hành nghề ở Thông tư 32/2023/TT-BYT: đánh giá, xây dựng và thực hiện các can thiệp tâm lý (trị liệu tâm lý) tại cơ sở khám bệnh, chữa bệnh. Không kê đơn thuốc (theo Thông tư 26/2025/TT-BYT, người kê đơn là bác sĩ, y sĩ).
 - **Tham vấn viên, chuyên viên tư vấn tâm lý:** đào tạo rất khác nhau tùy nơi; Luật Khám bệnh, chữa bệnh 2023 không đặt chuẩn đào tạo chung, và đây không phải chức danh phải có giấy phép hành nghề theo luật này. Công việc: lắng nghe, hỗ trợ, tư vấn.
 
 Các vai trò này bổ sung cho nhau, không vai trò nào "cao cấp" hơn trong mọi trường hợp. Có người được bác sĩ theo dõi thuốc đồng thời gặp nhà tâm lý để trị liệu.
@@ -81,8 +81,10 @@ Theo hồ sơ quốc gia trong WHO Mental Health Atlas 2020 (số liệu mới n
 ## Khi nào nên tìm sự giúp đỡ — tóm tắt để hành động
 
 - **Ngay lập tức** (gọi cấp cứu hay đến khoa cấp cứu): có ý nghĩ hoặc hành vi tự làm hại bản thân; cảm thấy có thể gây hại cho người khác; đang say, ngộ độc hay có hành vi nguy hiểm.
-- **Sớm, trong vài ngày tới**: cảm xúc tiêu cực kéo dài từ hai tuần trở lên không dịu; ảnh hưởng rõ đến học tập, công việc, giấc ngủ, ăn uống, các mối quan hệ; phải dùng rượu, chất kích thích để chịu đựng.
+- **Sớm, đừng chờ thêm**: cảm xúc tiêu cực kéo dài từ hai tuần trở lên không dịu; ảnh hưởng rõ đến học tập, công việc, giấc ngủ, ăn uống, các mối quan hệ; phải dùng rượu, chất kích thích để chịu đựng.
 - **Khi bạn chỉ thấy "không ổn" kéo dài**: cũng đủ lý do để tìm một người có chuyên môn trò chuyện. Không cần chờ đến khi sụp đổ.
+
+Các mốc trên là gợi ý để tìm người nói chuyện, không phải để tự chẩn đoán: chỉ người có chuyên môn mới chẩn đoán được.
 
 Mọi số điện thoại và thông tin liên hệ đã kiểm chứng ở trang [Hỗ trợ](/psyche/ho-tro/).
 
