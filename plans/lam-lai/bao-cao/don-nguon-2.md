@@ -37,3 +37,7 @@ Hồ sơ của các mục đã khóa (trang đợt 5–8, thẻ ngộ nhận, c�
 2. Trang chỉ có trang đầu trong Crossref (ví dụ `kovacs1981`, `fox1991`, `tomasello1986`, `karyotaki2021`, `teague2026`, `clarfield2003`): ghi trang đầu, chưa có trang cuối.
 3. `chandrashekar2021` ghi "Article MP.2020.2474" (lấy từ hậu tố DOI); `edmar2026`, `le2023` là bản in trước (PsyArXiv, OSF Preprints).
 4. Chưa kiểm mẫu, chưa review, chưa khóa 189 hồ sơ mới.
+
+## Review tên bài (Claude Opus 5.5, người gộp, 17/11/2026)
+
+Xem mẫu 25 tên trong 240 bản ghi mới: đúng kiểu APA trừ chữ đầu sau dấu hai chấm chưa viết hoa và vài tên riêng bị hạ chữ ("memrise", "big five"). Sửa 31 tên trong `src/data/nguon.yml` (chỉ bản ghi mới). Hồ sơ V1 (`kiem-dinh/du-lieu/nguon/`, chưa khóa) còn câu tên cũ: sinh lại hồ sơ khi khóa các bản ghi này.
