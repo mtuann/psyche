@@ -4,7 +4,7 @@ Psyche (bản trước tên Psyche Zero) là site tâm lý học bằng tiếng 
 
 ## Site cũ và repo mẫu
 
-- Site cũ (MkDocs, repo `mtuann/psyche-zero`, https://mtuann.github.io/psyche-zero/) ở thư mục cạnh `../psyche-zero/`. **Chỉ đọc**: không sửa, không commit, không tag, không push gì ở đó; site cũ chạy nguyên trong suốt thời gian làm lại. Máy khác: `git clone https://github.com/mtuann/psyche-zero.git ../psyche-zero`.
+- Site cũ (MkDocs, repo `mtuann/psyche-zero`) **đã tắt** (đợt 9, 11/2026): https://mtuann.github.io/psyche-zero/ trả 404, repo chuyển riêng tư, chỉ còn để tra. Chuyển trang đã xong (106 trang cũ đều lên site thật; bảng đối chiếu: `plans/lam-lai/doi-chieu.md`). Build và kiểm thử **không cần** site cũ: kiểm thử cần nó (`tests/chuyen.test.mjs`, hai phép kiểm của `tests/du-lieu.test.mjs`) tự bỏ qua khi không có `../psyche-zero/`; danh sách 106 trang cũ chụp ở `tests/trang-site-cu.txt`. Có bản ở thư mục cạnh `../psyche-zero/` thì **chỉ đọc**: không sửa, không commit, không tag, không push gì ở đó. Người đọc không còn được dẫn tới site cũ: đừng thêm link tới nó.
 - Repo opus (`../opus/`, cùng công nghệ, đã qua 5 đợt) là mẫu: mã dùng chung (tìm kiếm, máy chủ tĩnh, kiểm thử trình duyệt, Lighthouse, công cụ khóa, script chuyển) chép từ đó rồi sửa cho Psyche, ghi nguồn ở đầu file. Chỉ đọc.
 
 ## Mạng
@@ -64,7 +64,7 @@ Pagefind (Starlight) bỏ dấu khi so: gõ "tri nho" ra "trí nhớ". Chữ "đ
 - **Máy canh** (đợt 9): `.github/workflows/may-canh.yml` mỗi thứ Hai (hay bấm chạy tay), không chặn deploy, không đăng gì. Bốn việc, mỗi việc một nhãn và đúng một issue mở (có việc thì mở hay cập nhật, hết việc thì tự đóng): `rut-bai` (DOI của `src/data/nguon.yml` và link doi.org trong hồ sơ bị rút, bày tỏ quan ngại, đính chính hay có bản mới, theo trường `updated-by` của Crossref, gồm dữ liệu Retraction Watch; issue nêu trang, nhận định dùng nguồn), `thoi-su` (`het_han` của mục đã khóa tới hạn hay còn dưới 30 ngày), `kiem-lai` (`kiem_lai_truoc` tới hạn), `link-hong` (lychee). Thử ở máy: `node tools/may-canh.mjs <rut-bai|thoi-su|kiem-lai|tat-ca> [--ngay 2027-06-01] [--khong-mang] [--ra issue.md]`. Thông báo đã xét thì ghi vào `tools/may-canh-da-xet.yml` để không báo lại. Kiểm thử: `tests/may-canh.test.mjs` (fetch giả, không gọi mạng). `ho-tro-quarterly.yml` mỗi quý mở issue nhắc Hỗ trợ và Nghiên cứu mới. Xử lý cờ: `plans/ben-vung/them-noi-dung.md` mục 7.
 - Push chỉ đổi `plans/`, `README.md`, `AGENTS.md`, `CLAUDE.md`, giấy phép thì cả hai workflow bỏ qua. Lưu đệm `node_modules` và trình duyệt Playwright. Các bước dùng chung ở `.github/actions/kiem-thu/action.yml`. Chi tiết và lý do: `plans/lam-lai/cong-nghe.md` mục 8.
 - Ảnh chụp các trang nhánh đã đổi và trang mẫu (360 và 1280 px) là tệp `anh-chup` của lần chạy, giữ 7 ngày: `gh run download <số lần chạy> -n anh-chup`. Báo cáo của lô chỉ giữ tối đa 4 ảnh tiêu biểu.
-- Trên GitHub không có `../psyche-zero/` và `.cache/site-cu/`: kiểm thử cần chúng tự bỏ qua.
+- Trên GitHub (và ở máy không còn site cũ) không có `../psyche-zero/` và `.cache/site-cu/`: kiểm thử cần chúng tự bỏ qua (xong đợt 9: chỉ còn các phép kiểm đối chiếu với site cũ, không phép kiểm nào của site mới cần nó).
 
 ## Review và gộp
 
@@ -119,7 +119,7 @@ Từ site cũ (`../psyche-zero/README.md`, "Nguyên tắc nội dung"), cộng c
 
 ## Chuyển trang, so chữ, link
 
-Từ D1.5. Lô chuyển trang bằng script, không chép tay (luật 6):
+Từ D1.5. Lô chuyển trang bằng script, không chép tay (luật 6). Chuyển trang đã xong (đợt 9); phần này chỉ để tra, và các lệnh cần bản repo riêng tư `../psyche-zero/` (chỉ đọc):
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 ../psyche-zero/.venv/bin/mkdocs build -q -f ../psyche-zero/mkdocs.yml -d "$PWD/.cache/site-cu"   # bản build cũ để so chữ (-d tuyệt đối)
@@ -132,7 +132,7 @@ node tools/chuyen/so-chu.mjs thi-nghiem/asch --doi-chu       # khung doi_chu cho
 - `so-chu.mjs` so từng khối chữ, câu hỏi, tiêu đề, mô tả, id tiêu đề; cụm khối chỉ khác cách ngắt khối (site cũ dồn danh sách vào đoạn trên) không tính là khác.
 - Id tiêu đề giữ kiểu site cũ (`src/plugins/id-cu.mjs`, như `vi_slugs.py`: "đ" thành "d"), nên link `#mục` cũ còn đúng.
 - Link tới trang chưa có trong bản build thành chữ kèm nhãn "sắp có" (`src/plugins/sap-co.mjs`), tự thành link khi trang lên; `tests/link.test.mjs` kiểm mọi link và `#mục` nội bộ, và chữ "sắp có" trỏ tới trang có trong `trang.yml`. Link nội bộ viết `/psyche/<trang>/`.
-- Trang 404 (`src/content/docs/404.md`): báo site đang làm lại, nút về trang chủ, mở ô tìm kiếm, và mở đúng địa chỉ ấy ở Psyche Zero.
+- Trang 404 (`src/content/docs/404.md`, đã khóa): báo trang chưa có, nút về trang chủ, mở ô tìm kiếm. Lời trong trang vẫn nói "đang được làm lại" (viết lúc làm lại): sửa khi mở khóa lần sau.
 
 ## Mẫu trang và khối đặc biệt
 

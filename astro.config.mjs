@@ -89,6 +89,10 @@ export default defineConfig({
 				{ tag: 'meta', attrs: { name: 'theme-color', content: '#2a2d6b', media: '(prefers-color-scheme: light)' } },
 				{ tag: 'meta', attrs: { name: 'theme-color', content: '#1b1c3a', media: '(prefers-color-scheme: dark)' } },
 				{ tag: 'link', attrs: { rel: 'apple-touch-icon', href: `${base}/icons/icon-192.png` } },
+				// Ảnh khi chia sẻ link, như site cũ (og:image, twitter:card summary: ảnh vuông 512 px); đợt 9, bảng đối chiếu
+				{ tag: 'meta', attrs: { property: 'og:image', content: `${site}${base}/icons/icon-512.png` } },
+				{ tag: 'meta', attrs: { name: 'twitter:card', content: 'summary' } },
+				{ tag: 'meta', attrs: { name: 'twitter:image', content: `${site}${base}/icons/icon-512.png` } },
 				// Dùng khi mất mạng (D8-L4): manifest (cài như ứng dụng, như site cũ) và đoạn đăng ký service worker, chèn
 				// thẳng vào trang (src/scripts/ngoai-tuyen/: tắt bằng PSYCHE_NGOAI_TUYEN=tat, hay ở trang Dữ liệu của tôi)
 				{ tag: 'link', attrs: { rel: 'manifest', href: `${base}/manifest.webmanifest` } },

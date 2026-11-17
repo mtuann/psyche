@@ -242,13 +242,22 @@ test('loaiTrang suy loại trang từ đường dẫn', () => {
 	for (const [id, loai] of Object.entries(mong)) assert.equal(loaiTrang(id), loai, id);
 });
 
-test('trang.yml có mọi trang của site cũ (chỉ chạy khi có ../psyche-zero/)', { skip: !fs.existsSync(CU) && 'không có site cũ' }, () => {
+// Danh sách 106 trang của site cũ (docs/**/*.md, bỏ .md) chụp một lần vào tests/trang-site-cu.txt: site cũ đã tắt (đợt 9),
+// nên phép kiểm không cần ../psyche-zero/ nữa; có site cũ ở máy thì kiểm thêm danh sách chụp còn khớp.
+const TRANG_CU = fs.readFileSync(path.join(ROOT, 'tests/trang-site-cu.txt'), 'utf8').split('\n').filter(Boolean);
+
+test('trang.yml có mọi trang của site cũ (danh sách chụp ở tests/trang-site-cu.txt)', () => {
 	const ids = new Set(parse(fs.readFileSync(path.join(DATA, 'trang.yml'), 'utf8')).map((r) => r.id));
+	assert.equal(TRANG_CU.length, 106);
+	assert.deepEqual(TRANG_CU.filter((t) => !ids.has(t)), []);
+});
+
+test('danh sách trang site cũ đã chụp khớp ../psyche-zero/docs (chỉ chạy khi có site cũ ở máy)', { skip: !fs.existsSync(CU) && 'không có site cũ' }, () => {
 	const cu = fs
 		.readdirSync(CU, { recursive: true })
 		.map((f) => String(f).replace(/\\/g, '/'))
 		.filter((f) => f.endsWith('.md'))
-		.map((f) => f.slice(0, -3));
-	assert.equal(cu.length, 106);
-	assert.deepEqual(cu.filter((t) => !ids.has(t)), []);
+		.map((f) => f.slice(0, -3))
+		.sort();
+	assert.deepEqual([...TRANG_CU].sort(), cu);
 });

@@ -4,6 +4,7 @@ import { after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 import { chromium } from 'playwright';
+import { toanSite } from '../../tools/trang-mau.mjs';
 import { TRANG, cuonHet, dongMayChu, goc, khongChromium, tenTrang } from './chung.mjs';
 
 after(dongMayChu);
@@ -18,6 +19,7 @@ test('axe: không vi phạm', { skip: khongChromium }, async (t) => {
 		for (const [w, h, scheme] of [
 			[360, 780, 'dark'],
 			[1280, 800, 'light'],
+			...(toanSite() ? [[768, 1024, 'light']] : []), // quét toàn site: thêm cỡ máy tính bảng
 		]) {
 			const ctx = await trinhDuyet.newContext({ viewport: { width: w, height: h }, colorScheme: scheme });
 			for (const trang of TRANG)
