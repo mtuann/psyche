@@ -332,8 +332,8 @@ test('Wason: quy tắc thật, đọc số kiểu Việt, chấm quy tắc ngư�
 	assert.equal(wason.docSo('−3'), -3);
 	assert.equal(wason.docSo('abc'), null);
 	assert.equal(wason.docSo(''), null);
-	for (const q of ['ba số tăng dần', 'Số sau lớn hơn số trước', 'a < b < c', 'tăng dần bất kỳ']) assert.equal(wason.chamQuyTac(q), 'dung', q);
-	for (const q of ['số chẵn tăng dần', 'tăng đều 2 đơn vị', 'mỗi số lớn hơn số trước 2', 'cộng thêm 2, tăng']) assert.equal(wason.chamQuyTac(q), 'hep', q);
+	for (const q of ['ba số tăng dần', 'mỗi số bất kỳ, số sau lớn hơn', 'Số sau lớn hơn số trước', 'a < b < c', 'tăng dần bất kỳ']) assert.equal(wason.chamQuyTac(q), 'dung', q);
+	for (const q of ['số chẵn tăng dần', 'tăng đều 2 đơn vị', 'mỗi số lớn hơn số trước 2', 'cộng thêm 2, tăng', 'mỗi số lớn hơn số trước 1 đơn vị', 'tăng dần, mỗi số lớn hơn số trước 10', 'mỗi số lớn hơn số trước 3', 'số sau gấp đôi số trước, tăng', 'tăng hai đơn vị']) assert.equal(wason.chamQuyTac(q), 'hep', q);
 	for (const q of ['số chẵn', 'giảm dần', 'không biết']) assert.equal(wason.chamQuyTac(q), 'sai', q);
 	assert.deepEqual(wason.tomTatDay([{ ok: true }, { ok: false }]), { n: 2, khongTuan: 1, tiLe: 0.5 });
 });

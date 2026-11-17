@@ -99,7 +99,7 @@ export function mount(el) {
 		K.hien([nhan, stage]);
 		let i = 0;
 		const nhip = () => {
-			if (!el.isConnected) return;
+			if (!el.isConnected) return K.dangChay(false);
 			if (i >= day.length) return hoi(xong, nhan, stage, stim);
 			stim.textContent = day[i];
 			hen = setTimeout(() => {

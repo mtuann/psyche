@@ -36,9 +36,10 @@ export function docSo(chu) {
 	return Number.isFinite(x) ? x : null;
 }
 
-// Ý "tăng dần" và các điều kiện làm quy tắc hẹp hơn quy tắc thật (chẵn, lẻ, cách đều…)
+// Ý "tăng dần" và các điều kiện làm quy tắc hẹp hơn quy tắc thật (chẵn, lẻ, cách đều…). Mọi con số hay lượng ("lớn hơn
+// số trước 1", "3 đơn vị", "gấp đôi") là điều kiện hẹp: \b không dùng được với chữ có dấu nên bắt mọi chữ số (review D8-L2)
 const Y_TANG = /tăng|lớn dần|to dần|lớn hơn|to hơn|nhỏ đến lớn|bé đến lớn|thấp đến cao|nhỏ hơn số sau|bé hơn số sau|a\s*<\s*b\s*<\s*c|<.*</;
-const Y_HEP = /chẵn|lẻ|cách đều|đều nhau|đều đặn|tăng đều|khoảng bằng|khoảng cách bằng|hiệu bằng|cộng|nhân|gấp|liên tiếp|nguyên|dương|\b2\b|hai đơn vị|bội/;
+const Y_HEP = /chẵn|lẻ|cách đều|đều nhau|đều đặn|tăng đều|khoảng bằng|khoảng cách bằng|hiệu bằng|cộng|nhân|gấp|liên tiếp|nguyên|dương|\d|đơn vị|lần|bằng|đôi|bội/;
 
 /** Chấm quy tắc người dùng viết: "dung", "hep" (có ý tăng dần nhưng thêm điều kiện hẹp hơn) hay "sai". */
 export function chamQuyTac(chu) {
