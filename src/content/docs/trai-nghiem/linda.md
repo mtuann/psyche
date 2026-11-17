@@ -36,12 +36,12 @@ Lỗi xuất hiện ở nhiều phiên bản của nghiên cứu gốc, và các
 :::
 
 :::tranh-cai[vì sao ta mắc bẫy — heuristic hay cách hiểu câu hỏi?]
-Tversky và Kahneman cho rằng nguyên nhân là heuristic đại diện: ta thay phép tính xác suất bằng cảm nhận "giống". Gerd Gigerenzer phản biện rằng nhiều "lỗi" như thế không vi phạm lý thuyết xác suất nếu phân biệt xác suất của một trường hợp với tần suất. Những người khác cho rằng từ "xác suất" và chữ "và" có thể được hiểu khác nghĩa trong lý thuyết xác suất (Hertwig và cộng sự, theo mô tả của Chandrashekar và cộng sự, 2021); chẳng hạn người nghe ngầm hiểu "(A) Linda là nhân viên ngân hàng" thành "nhân viên ngân hàng *và không phải nhà hoạt động nữ quyền*". Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.
+Tversky và Kahneman cho rằng nguyên nhân là heuristic đại diện: ta thay phép tính xác suất bằng cảm nhận "giống". Gerd Gigerenzer phản biện rằng nhiều "lỗi" như thế không vi phạm lý thuyết xác suất nếu phân biệt xác suất của một trường hợp với tần suất. Hertwig và cộng sự cho rằng người trả lời có thể hiểu từ "xác suất" và chữ "và" khác nghĩa toán học (theo mô tả của Chandrashekar và cộng sự, 2021). Một số tác giả khác (Adler; Dulany và Hilton; Politzer và Noveck, theo [Hertwig và Gigerenzer, 1999](https://doi.org/10.1002/%28SICI%291099-0771%28199912%2912%3A4%3C275%3A%3AAID-BDM323%3E3.0.CO%3B2-M)) cho rằng người ta hiểu "(A) Linda là nhân viên ngân hàng" thành "nhân viên ngân hàng *và không hoạt động nữ quyền*"; theo Hertwig và Gigerenzer, các dự đoán rút từ giả thuyết này chưa được xác nhận. Một lần làm lại có đăng ký trước (Chandrashekar và cộng sự, 2021) cũng không thấy bằng chứng cho giả thuyết từ ngữ mơ hồ. Cuộc tranh luận này đến nay vẫn chưa ngã ngũ.
 :::
 
 ## Các lý thuyết giải thích
 
-- **Thay thế thuộc tính (attribute substitution).** Theo Kahneman (2011), khi câu hỏi khó ("xác suất nào lớn hơn?"), ta thường trả lời một câu hỏi dễ hơn ("mô tả nào giống Linda hơn?") mà không để ý mình đã đổi câu hỏi.
+- **Thay thế thuộc tính (attribute substitution).** Theo Kahneman và Frederick (2002), người đặt tên khái niệm này, và Kahneman (2011), khi câu hỏi khó ("xác suất nào lớn hơn?"), ta thường trả lời một câu hỏi dễ hơn ("mô tả nào giống Linda hơn?") mà không để ý mình đã đổi câu hỏi.
 - **Cách hiểu câu hỏi (phía phê bình).** Theo một số nhà nghiên cứu phê bình, người tham gia hiểu từ "xác suất" và chữ "và" theo nghĩa thường ngày, khác nghĩa trong lý thuyết xác suất; với cách hiểu ấy, chọn (B) không hẳn là lỗi logic.
 - **Hai hệ thống tư duy (Kahneman, 2011).** Theo Kahneman, Hệ thống 1 vận hành nhanh, tự động, dựa vào ấn tượng và câu chuyện ("B nghe hợp lý quá!"); Hệ thống 2 vận hành chậm, có kiểm soát, và thường "ký duyệt" câu trả lời trực giác.
 
@@ -92,6 +92,8 @@ Nếu một phần hiệu ứng đến từ cách hiểu câu hỏi theo thói q
 - Chandrashekar, S. P., et al. (2021). Frequency estimation and semantic ambiguity do not eliminate conjunction bias, when it occurs: Replication and extension of Mellers, Hertwig, and Kahneman (2001). *Meta-Psychology*, 5. <https://doi.org/10.15626/mp.2020.2474>
 - Charness, G., Karni, E., & Levin, D. (2010). On the conjunction fallacy in probability judgment: New experimental evidence regarding Linda. *Games and Economic Behavior*, 68(2), 551–556. <https://doi.org/10.1016/j.geb.2009.09.003>
 - Gigerenzer, G. (1991). How to make cognitive illusions disappear: Beyond "heuristics and biases". *European Review of Social Psychology*, 2(1), 83–115. <https://doi.org/10.1080/14792779143000033>
+- Hertwig, R., & Gigerenzer, G. (1999). The 'conjunction fallacy' revisited: How intelligent inferences look like reasoning errors. *Journal of Behavioral Decision Making*, 12(4), 275–305. <https://doi.org/10.1002/%28SICI%291099-0771%28199912%2912%3A4%3C275%3A%3AAID-BDM323%3E3.0.CO%3B2-M>
+- Kahneman, D. (2011). *Thinking, fast and slow*. Farrar, Straus and Giroux.
+- Kahneman, D., & Frederick, S. (2002). Representativeness revisited: Attribute substitution in intuitive judgment. Trong T. Gilovich, D. Griffin, & D. Kahneman (Chủ biên), *Heuristics and biases: The psychology of intuitive judgment* (tr. 49–81). Cambridge University Press. <https://doi.org/10.1017/CBO9780511808098.004>
 - Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. *Science*, 185(4157), 1124–1131. <https://doi.org/10.1126/science.185.4157.1124>
 - Tversky, A., & Kahneman, D. (1983). Extensional versus intuitive reasoning: The conjunction fallacy in probability judgment. *Psychological Review*, 90(4), 293–315. <https://doi.org/10.1037/0033-295X.90.4.293>
-- Kahneman, D. (2011). *Thinking, fast and slow*. Farrar, Straus and Giroux.

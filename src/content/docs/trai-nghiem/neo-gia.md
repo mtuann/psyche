@@ -31,8 +31,8 @@ Englich, Mussweiler và Strack (2006) cho người làm nghề luật ở Đức
 
 ## Mức độ chắc chắn
 
-:::kha-vung[con số neo làm dịch chuyển ước lượng]
-Trong dự án tái lập Many Labs (36 mẫu, 6.344 người, ở Mỹ và nhiều nước khác), bốn câu hỏi mỏ neo đều cho hiệu ứng có ý nghĩa thống kê ở mọi mẫu, và thuộc nhóm hiệu ứng lớn nhất của dự án ([Klein và cộng sự, 2014](https://doi.org/10.1027/1864-9335/a000178)). Nhãn là *Khá vững* chứ chưa phải *Vững chắc* vì ở đây mới dẫn một lần tái lập lớn; chúng tôi chưa đối chiếu phân tích tổng hợp nào.
+:::vung-chac[con số neo làm dịch chuyển ước lượng]
+Trong dự án tái lập Many Labs (36 mẫu, 6.344 người, ở Mỹ và nhiều nước khác), bốn câu hỏi mỏ neo đều cho hiệu ứng có ý nghĩa thống kê ở mọi mẫu, và thuộc nhóm hiệu ứng lớn nhất của dự án ([Klein và cộng sự, 2014](https://doi.org/10.1027/1864-9335/a000178)). Các phân tích tổng hợp cũng thấy hiệu ứng rõ, ví dụ trong quyết định pháp lý (29 nghiên cứu, 8.549 người; [Bystranowski và cộng sự, 2021](https://doi.org/10.1037/lhb0000438)), dù độ lớn hiệu ứng khác nhau nhiều giữa các nghiên cứu.
 :::
 
 :::kha-vung[hiệu ứng tồn tại ngay cả khi neo hoàn toàn ngẫu nhiên và người quyết định là chuyên gia]
@@ -101,8 +101,9 @@ Tversky và Kahneman cho rằng ta điều chỉnh không đủ từ điểm neo
 
 ## Nguồn
 
+- Bystranowski, P., Janik, B., Próchnicki, M., & Skórska, P. (2021). Anchoring effect in legal decision-making: A meta-analysis. *Law and Human Behavior*, 45(1), 1–23. <https://doi.org/10.1037/lhb0000438>
+- Cục Thống kê (2026). *Thông cáo báo chí về tình hình dân số, lao động, việc làm quý IV và năm 2025*. <https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-ve-tinh-hinh-dan-so-lao-dong-viec-lam-quy-iv-va-nam-2025/>
 - Englich, B., Mussweiler, T., & Strack, F. (2006). Playing dice with criminal sentences: The influence of irrelevant anchors on experts' judicial decision making. *Personality and Social Psychology Bulletin*, 32(2), 188–200. <https://doi.org/10.1177/0146167205282152>
+- Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Jr., Bahník, Š., Bernstein, M. J., … Nosek, B. A. (2014). Investigating variation in replicability: A "many labs" replication project. *Social Psychology*, 45(3), 142–152. <https://doi.org/10.1027/1864-9335/a000178>
 - Mussweiler, T., & Strack, F. (1999). Hypothesis-consistent testing and semantic priming in the anchoring paradigm: A selective accessibility model. *Journal of Experimental Social Psychology*, 35(2), 136–164. <https://doi.org/10.1006/jesp.1998.1364>
 - Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. *Science*, 185(4157), 1124–1131. <https://doi.org/10.1126/science.185.4157.1124>
-- Cục Thống kê (2026). *Thông cáo báo chí về tình hình dân số, lao động, việc làm quý IV và năm 2025*. <https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-ve-tinh-hinh-dan-so-lao-dong-viec-lam-quy-iv-va-nam-2025/>
-- Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Jr., Bahník, Š., Bernstein, M. J., … Nosek, B. A. (2014). Investigating variation in replicability: A "many labs" replication project. *Social Psychology*, 45(3), 142–152. <https://doi.org/10.1027/1864-9335/a000178>

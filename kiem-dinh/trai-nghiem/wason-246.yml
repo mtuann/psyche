@@ -4,320 +4,304 @@ nguon_cu: ../psyche-zero/docs/trai-nghiem/wason-246.md
 tang: cong-cu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l2
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l2
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
-- id: wason1960
-  ten: 'Wason (1960), Q J Exp Psychol 12(3), 129–140: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
-  link: https://doi.org/10.1080/17470216008416717
-  toan_van: true
-- id: nickerson1998
-  ten: 'Nickerson (1998), Rev Gen Psychol 2(2), 175–220: câu trích lấy lại từ hồ sơ đã khóa kiem-dinh/kham-pha/tu-duy/thien-kien-xac-nhan.yml (toàn văn, Internet Archive); lượt 1 lô này không mở lại'
-  link: https://doi.org/10.1037/1089-2680.2.2.175
-  toan_van: true
-- id: klayman1987
-  ten: 'Klayman & Ha (1987), Psychol Rev 94(2), 211–228: tóm tắt (câu trích như hồ sơ đã khóa thien-kien-xac-nhan.yml)'
-  link: https://doi.org/10.1037/0033-295X.94.2.211
-  toan_van: false
-- id: hart2009
-  ten: 'Hart và cộng sự (2009), Psychol Bull 135(4), 555–588: tóm tắt (theo hồ sơ đã khóa thien-kien-xac-nhan.yml)'
-  link: https://doi.org/10.1037/a0015701
-  toan_van: false
-- id: tim-wason-vn
-  ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "\"2-4-6\" Wason Vietnamese" (0 kết quả); OpenAlex 10/11/2026 (hồ sơ thien-kien-xac-nhan.yml): không có nghiên cứu'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%222-4-6%22%20Wason%20Vietnamese
-  toan_van: false
+  - id: wason1960
+    ten: 'Wason (1960), Q J Exp Psychol 12(3), 129–140: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
+    link: https://doi.org/10.1080/17470216008416717
+    toan_van: true
+  - id: nickerson1998
+    ten: 'Nickerson (1998), Rev Gen Psychol 2(2), 175–220: câu trích lấy lại từ hồ sơ đã khóa kiem-dinh/kham-pha/tu-duy/thien-kien-xac-nhan.yml (toàn văn, Internet Archive); lượt 1 lô này không mở lại'
+    link: https://doi.org/10.1037/1089-2680.2.2.175
+    toan_van: true
+  - id: klayman1987
+    ten: 'Klayman & Ha (1987), Psychol Rev 94(2), 211–228: tóm tắt (câu trích như hồ sơ đã khóa thien-kien-xac-nhan.yml)'
+    link: https://doi.org/10.1037/0033-295X.94.2.211
+    toan_van: false
+  - id: hart2009
+    ten: 'Hart và cộng sự (2009), Psychol Bull 135(4), 555–588: tóm tắt (theo hồ sơ đã khóa thien-kien-xac-nhan.yml)'
+    link: https://doi.org/10.1037/a0015701
+    toan_van: false
+  - id: tim-wason-vn
+    ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "\"2-4-6\" Wason Vietnamese" (0 kết quả); OpenAlex 10/11/2026 (hồ sơ thien-kien-xac-nhan.yml): không có nghiên cứu'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%222-4-6%22%20Wason%20Vietnamese
+    toan_van: false
 nhan_dinh:
-- id: s1
-  cau: 'Công cụ: nhập dãy ba số, công cụ báo tuân theo hay không; nút "Công bố quy tắc"; chấm bằng từ khóa; nêu sai được thử tiếp; chữ người dùng không lưu.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: Đã kiểm src/scripts/cong-cu/wason-246.js (tuanTheo, chamQuyTac, docSo), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.
-- id: n1
-  cau: 'Mô tả trang: thấy vì sao 23 trong 29 người không tìm ra quy tắc ngay lần đầu (6 người nêu đúng ngay).'
-  loai: so-lieu
-  nguon:
-  - wason1960
-  trich: Six out of 29 subjects reached the correct conclusion without previous incorrect ones, 13 reached one incorrect conclusion, nine reached two or more incorrect conclusions, and one reached no conclusion.
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  ghi_chu: 29 − 6 = 23 (13 + 9 + 1).
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1080/17470216008416717
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  luot_2_ghi_chu: 29 - 6 = 23 người không đúng ngay (22 nêu sai + 1 không kết luận). 'Không tìm ra quy tắc ngay lần đầu' khớp.
-- id: n2
-  cau: Nhiều người đoán một quy tắc hẹp hơn quy tắc thật (ví dụ "mỗi số hơn số trước 2 đơn vị"), thử 8–10–12, 20–22–24, đều "đúng", và thường nêu quy tắc sai sau vài lần thử; các dãy ấy phù hợp với cả phỏng
-    đoán sai lẫn quy tắc thật.
-  loai: phat-hien
-  nguon:
-  - wason1960
-  trich: (In nearly all cases incorrect rules were sufficient ones, e.g. "increasing intervals of two.") | the strategy of using only sets of successive even numbers would not reveal the incorrectness of
-    the hypothesis because every test item would get a positive response.
-  vi_tri: Kết quả; Giới thiệu
-  ket_qua: da-lam-mem
-  ghi_chu: 'Cũ: "hầu hết mọi người đoán … số chẵn, mỗi số hơn số trước 2" và "càng thử họ càng tin". Mới: "nhiều người đoán một quy tắc hẹp hơn", "thường nêu quy tắc sai chỉ sau vài lần thử" (như trang
-    nhà thien-kien-xac-nhan đã khóa).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  - https://doi.org/10.1037/0033-295X.94.2.211
-  luot_2_ghi_chu: Ví dụ 8–10–12, 20–22–24 là minh họa của site, phù hợp với phân tích của Wason và Klayman-Ha.
-- id: n3
-  cau: 'Thiên kiến xác nhận thường không phải cố tình tự lừa dối: Nickerson (1998) mô tả nó là sự chọn lọc không chủ ý trong việc thu thập và dùng bằng chứng.'
-  loai: dinh-nghia
-  nguon:
-  - nickerson1998
-  trich: It refers usually to unwitting selectivity in the acquisition and use of evidence.
-  vi_tri: Nickerson 1998, phần mở đầu (theo hồ sơ thien-kien-xac-nhan.yml n9)
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "người chơi thực sự tin rằng mình đang kiểm tra nghiêm túc" (không nguồn). Mới theo Nickerson.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/1089-2680.2.2.175
-  luot_2_ghi_chu: Nickerson cũng nói ranh giới cố ý và không chủ ý khó vạch trong thực tế; 'thường không cố tình' khớp.
-- id: n4
-  cau: Wason cho mỗi người xem dãy 2–4–6, nói nó tuân theo một quy tắc; người tham gia viết từng dãy kèm lý do, được báo dãy có tuân theo không, chỉ nêu quy tắc khi rất tự tin, nêu sai thì được báo rồi
-    thử tiếp; quy tắc thật là ba số tăng dần bất kỳ.
-  loai: phat-hien
-  nguon:
-  - wason1960
-  trich: Your aim is to discover this rule by writing down sets of three numbers, together with reasons for your choice of them. After you have written down each set, I shall tell you whether your numbers
-    conform to the rule or not | the concept to be attained is "three numbers in increasing order of magnitude."
-  vi_tri: Phương pháp
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "được yêu cầu ghi lại các giả thuyết". Mới: viết dãy kèm lý do; nêu sai thì thử tiếp.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  luot_2_ghi_chu: 'Quy tắc thật: ''three numbers in increasing order of magnitude''. Ghi lý do cho mỗi dãy: khớp mô tả.'
-- id: n5
-  cau: Trong 29 người, 6 người tìm ra quy tắc mà không nêu sai lần nào; 13 nêu sai một lần; 9 nêu sai từ hai lần; 1 không đưa ra kết luận.
-  loai: so-lieu
-  nguon:
-  - wason1960
-  trich: Six out of 29 subjects reached the correct conclusion without previous incorrect ones, 13 reached one incorrect conclusion, nine reached two or more incorrect conclusions, and one reached no conclusion.
-  vi_tri: Tóm tắt
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1080/17470216008416717
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  luot_2_ghi_chu: '13 sai một lần, 9 sai từ hai lần: khớp tóm tắt của Wason.'
-- id: n6
-  cau: Gần như mọi quy tắc sai đều hẹp hơn quy tắc thật; ở người nêu sai ngay lần đầu, chỉ 4% số dãy thử trước đó không tuân theo quy tắc thật, so với 21% ở 6 người nêu đúng ngay; dãy có thể bác bỏ phỏng
-    đoán hẹp (như 2–3–4 với "cộng 2") hiếm khi được thử.
-  loai: so-lieu
-  nguon:
-  - wason1960
-  trich: The ratio of the number of negative instances of the correct rule to the total number of instances generated was computed for each subject, (i) up to the first rule announced … The mean ratio was
-    0.21 (n = 6) for those who made the immediate correct announcement and 0.04 (n = 22) for those who made a first incorrect announcement.
-  vi_tri: Kết quả
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "Những dãy có thể bác bỏ giả thuyết — như dãy gồm số lẻ tăng dần — hiếm khi được thử": sai, dãy số lẻ tăng đều 2 (1–3–5) vẫn khớp phỏng đoán "cộng 2", không bác bỏ được. Mới: ví dụ 2–3–4
-    và số liệu tỉ lệ dãy không tuân theo (có ở trang nhà).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  luot_2_ghi_chu: Đây là tỉ số trung bình dãy không tuân theo quy tắc thật trên tổng số dãy trước lần nêu đầu; '4%' là trung bình của nhóm 22 người (13 + 9). Wason ghi 'nearly all incorrect rules were sufficient'
-    và rằng chỉ một ví dụ dương tính không tương thích mới bác được quy tắc đủ.
-- id: n7
-  cau: 'Klayman và Ha (1987): nhiều hiện tượng gọi là thiên kiến xác nhận là chiến lược kiểm tra tích cực; trong điều kiện thực tế nó có thể là cách làm rất tốt, dù vẫn có thể gây lỗi hệ thống hay kém hiệu
-    quả, như ở 2–4–6.'
-  loai: phat-hien
-  nguon:
-  - klayman1987
-  trich: many phenomena labeled "confirmation bias" are better understood in terms of a general positive test strategy … the positive test strategy can be a very good heuristic for determining the truth
-    or falsity of a hypothesis under realistic conditions. It can, however, lead to systematic errors or inefficiencies.
-  vi_tri: Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Cũ: "rẻ, nhanh và khá hợp lý — chỉ gây lỗi trong những nhiệm vụ được thiết kế để bẫy nó" (mạnh hơn tóm tắt). Đổi cả ở khung tranh-cai, mục Lý thuyết và câu hỏi 4.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/0033-295X.94.2.211
-- id: n8
-  cau: 'Khá vững: ta có xu hướng ưu tiên tìm và chọn thông tin phù hợp với giả thuyết sẵn có.'
-  loai: nhan
-  nguon:
-  - wason1960
-  - klayman1987
-  - nickerson1998
-  - hart2009
-  trich: (theo hồ sơ thien-kien-xac-nhan.yml, khung kha-vung)
-  nhan: kha-vung
-  co_so:
-  - hart2009
-  - wason1960
-  - nickerson1998
-  ly_do: 'Phân tích tổng hợp Hart và cộng sự (2009): ưu tiên vừa phải; nghiên cứu chủ yếu phương Tây, chưa có tái lập lớn đăng ký trước. Cùng nhãn và lý do với trang nhà kham-pha/tu-duy/thien-kien-xac-nhan
-    (đã khóa).'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: Vững chắc, "tìm thấy lại nhiều lần trong hơn 60 năm, ở nhiều bối cảnh" (không có nguồn đạt thước đo, lệch với trang nhà đã khóa). Đổi thành Khá vững như trang nhà.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/1089-2680.2.2.175
-  - https://doi.org/10.1037/0033-295X.94.2.211
-  luot_2_ghi_chu: Nhãn 'Khá vững' hợp thước đo (nhiều nghiên cứu cùng chiều, nhưng chủ yếu tổng quan tường thuật, chưa mở được phân tích tổng hợp riêng).
-- id: n9
-  cau: 'Đang tranh cãi: gọi hành vi này là "thiên kiến có hại" hay "lối tắt hợp lý thỉnh thoảng phản tác dụng".'
-  loai: nhan
-  nguon:
-  - klayman1987
-  trich: the positive test strategy can be a very good heuristic … It can, however, lead to systematic errors or inefficiencies.
-  vi_tri: Tóm tắt
-  nhan: tranh-cai
-  co_so:
-  - klayman1987
-  - nickerson1998
-  ly_do: 'Như trang nhà thien-kien-xac-nhan (đã khóa): Klayman và Ha cho là lối tắt tốt; Nickerson xếp vào thiên kiến.'
-  ket_qua: da-lam-mem
-  ghi_chu: Bỏ "Hành vi … thì vững chắc"; thân viết theo tóm tắt Klayman và Ha.
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/0033-295X.94.2.211
-  - https://doi.org/10.1037/1089-2680.2.2.175
-  luot_2_ghi_chu: 'Hai nguồn bậc 2 cùng ghi tranh luận về tính hữu ích: nhãn ''Đang tranh cãi'' hợp lý.'
-- id: n10
-  cau: 'Nickerson (1998): thiên kiến xác nhận là xu hướng tìm thông tin mà ta cho là ủng hộ giả thuyết hay niềm tin sẵn có, và diễn giải thông tin theo hướng có lợi cho chúng.'
-  loai: dinh-nghia
-  nguon:
-  - nickerson1998
-  trich: People tend to seek information that they consider supportive of favored hypotheses or existing beliefs and to interpret information in ways that are partial to those hypotheses or beliefs.
-  vi_tri: Nickerson 1998 (theo hồ sơ thien-kien-xac-nhan.yml n36)
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "ba khâu … nhớ lại có chọn lọc … củng cố lẫn nhau thành vòng lặp khép kín" (câu cuối không có nguồn). Mới theo câu trích.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/1089-2680.2.2.175
-- id: n11
-  cau: Ví dụ thử thuốc trên người bệnh chứ không trên người khỏe; theo Klayman và Ha, thói quen thử trường hợp "dương tính" thường là cách làm tốt, có thể gây lỗi khi giả thuyết hẹp hơn sự thật.
-  loai: phat-hien
-  nguon:
-  - klayman1987
-  trich: there is a tendency to test cases that are expected (or known) to have the property of interest rather than those expected (or known) to lack that property.
-  vi_tri: Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Ví dụ thuốc là giả định minh họa (gia-dinh). Cũ: "nó chỉ thất bại khi giả thuyết quá hẹp".'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/0033-295X.94.2.211
-  luot_2_ghi_chu: Ví dụ 'thử thuốc trên người bệnh' là minh họa của site, không thấy nguyên văn trong bài (Klayman-Ha dùng ví dụ về bệnh truyền nhiễm và về tuyển dụng); gắn nhãn gia-dinh khi duyệt.
-- id: n12
-  cau: Theo Nickerson, ta dễ tin điều mình mong là đúng; có thể chọn lọc bằng chứng và "nghiêng cán cân" khi cân nhắc, dù không thể phớt lờ hoàn toàn bằng chứng trái chiều.
-  loai: phat-hien
-  nguon:
-  - nickerson1998
-  trich: We can be selective with respect to the evidence we seek, and we can tilt the scales when we weigh what we find, but we cannot completely ignore counterindicative evidence
-  vi_tri: Nickerson 1998 (theo hồ sơ thien-kien-xac-nhan.yml n39)
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "Động cơ bảo vệ bản thân: khi niềm tin gắn với bản sắc … ta tích cực bẻ cong bằng chứng" (không nguồn). Thay bằng ý của Nickerson.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/1089-2680.2.2.175
-  luot_2_ghi_chu: 'Nickerson nối với ''Pollyanna principle'': người ta ưu ái mệnh đề mình muốn đúng.'
-- id: n13
-  cau: Nghiên cứu gốc của Wason làm ở Anh với 29 sinh viên ngành tâm lý, công bố năm 1960.
-  loai: lich-su
-  nguon:
-  - wason1960
-  trich: From the Medical Research Council Industrial Psychology Research Group, University College, London | The subjects, 29 psychology undergraduates (17 men and 12 women)
-  vi_tri: Đầu bài; Phương pháp
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "29 người trưởng thành"; bỏ "các lần làm lại sau đó chủ yếu dùng người tham gia ở các nước phương Tây" (không có nguồn).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-- id: n14
-  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra nhiệm vụ 2–4–6 trên người Việt.
-  loai: thoi-su
-  nguon:
-  - tim-wason-vn
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Thêm mốc thời gian. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); OpenAlex (10/11/2026, hồ sơ thien-kien-xac-nhan.yml): không có. Sau lượt 2 (Opus, 17/11/2026): giữ: câu đã
-    viết "Tính đến 11/2026", loại thoi-su, het_han 2028-11-01. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); tìm lại ngày 17/11/2026 bị lỗi mạng (OpenAlex 429, Europe PMC hết thời gian
-    chờ). Lượt 2 bổ sung tìm lại trước khi khóa.'
-  luot_2: khong-chac
-  luot_2_ghi_chu: Tìm OpenAlex bị giới hạn tốc độ giữa chừng nên chưa hoàn tất; chưa thấy nghiên cứu nào nhưng không đủ để xác nhận. Nên tìm lại trước khi khóa.
-- id: n15
-  cau: 'Ngộ nhận: người tham gia của Wason là sinh viên được mô tả là thông minh; Nickerson ghi nhận thiên kiến này cả ở người làm khoa học; theo Nickerson (dẫn Evans, 1989), hướng dẫn tìm bằng chứng bác
-    bỏ đôi khi làm đổi hành vi nhưng thường không cải thiện thành tích.'
-  loai: phat-hien
-  nguon:
-  - wason1960
-  - nickerson1998
-  trich: This investigation seeks to determine the extent to which intelligent young adults make rational inferences | He noted that although behavioral changes were sometimes induced, more often performance
-    was not improved.
-  vi_tri: Wason 1960, Giới thiệu; Nickerson 1998 (hồ sơ thien-kien-xac-nhan.yml n43, n51)
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "được ghi nhận ở rất nhiều nhóm người … Biết về thiên kiến không tự động miễn nhiễm" (không nguồn).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  - https://doi.org/10.1037/1089-2680.2.2.175
-- id: n16
-  cau: 'Ngộ nhận: mười dãy số chẵn tăng đều đều "đúng" cũng không loại trừ được quy tắc thật; số lượng bằng chứng khẳng định không bù được cho sự vắng mặt của một phép thử bác bỏ (câu hỏi 1, 3, 5 cùng ý).'
-  loai: phat-hien
-  nguon:
-  - wason1960
-  trich: the strategy of using only sets of successive even numbers would not reveal the incorrectness of the hypothesis because every test item would get a positive response.
-  vi_tri: Giới thiệu
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  - https://doi.org/10.1037/0033-295X.94.2.211
-  luot_2_ghi_chu: Câu 'mười dãy số chẵn tăng đều' là minh họa; ý chính (nhiều dãy khẳng định không loại được quy tắc rộng hơn) đúng.
-- id: n17
-  cau: 'Công cụ: 29 người, 6 nêu đúng ngay; tỉ lệ dãy không tuân theo trước lần nêu đầu 21% (6 người nêu đúng ngay) và 4% (người nêu sai lần đầu).'
-  loai: cong-cu
-  nguon:
-  - wason1960
-  trich: The mean ratio was 0.21 (n = 6) … and 0.04 (n = 22)
-  vi_tri: Kết quả; hằng NGHIEN_CUU trong src/scripts/cong-cu/wason-246.js
-  ket_qua: da-sua
-  ghi_chu: 'Công cụ cũ có "dãy bác bỏ" (gọi mọi dãy không tuân theo là "có thể bác bỏ một phỏng đoán hẹp") và ví dụ "2–3–4 (số lẻ, tăng không đều)" (2 và 4 là số chẵn): đã sửa nhãn thành "dãy nhận câu trả
-    lời không tuân theo", bỏ "(số lẻ …)"; thêm so sánh tỉ lệ với Wason.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
-  luot_2_ghi_chu: Xem n6; 29 người, 6 đúng ngay khớp Table I.
-- id: n18
-  cau: 'Câu hỏi 4: theo Klayman và Ha, đó là chiến lược kiểm tra tích cực, có thể là cách làm tốt trong điều kiện thực tế, dù đôi khi gây lỗi hệ thống.'
-  loai: phat-hien
-  nguon:
-  - klayman1987
-  trich: the positive test strategy can be a very good heuristic … It can, however, lead to systematic errors or inefficiencies.
-  vi_tri: Tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Cũ: "thường hợp lý, chỉ gây lỗi trong một số nhiệm vụ"; lời giải thích bỏ "hành vi thì vững chắc".'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/0033-295X.94.2.211
+  - id: s1
+    cau: 'Công cụ: nhập dãy ba số, công cụ báo tuân theo hay không; nút "Công bố quy tắc"; chấm bằng từ khóa; nêu sai được thử tiếp; chữ người dùng không lưu.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: Đã kiểm src/scripts/cong-cu/wason-246.js (tuanTheo, chamQuyTac, docSo), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.
+  - id: n1
+    cau: 'Mô tả trang: thấy vì sao 23 trong 29 người không tìm ra quy tắc ngay lần đầu (6 người nêu đúng ngay).'
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: Six out of 29 subjects reached the correct conclusion without previous incorrect ones, 13 reached one incorrect conclusion, nine reached two or more incorrect conclusions, and one reached no conclusion.
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    ghi_chu: 29 − 6 = 23 (13 + 9 + 1).
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1080/17470216008416717
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+    luot_2_ghi_chu: 29 - 6 = 23 người không đúng ngay (22 nêu sai + 1 không kết luận). 'Không tìm ra quy tắc ngay lần đầu' khớp.
+  - id: n2
+    cau: Nhiều người đoán một quy tắc hẹp hơn quy tắc thật (ví dụ "mỗi số hơn số trước 2 đơn vị"), thử 8–10–12, 20–22–24, đều "đúng", và thường nêu quy tắc sai sau vài lần thử; các dãy ấy phù hợp với cả phỏng đoán sai lẫn quy tắc thật.
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: (In nearly all cases incorrect rules were sufficient ones, e.g. "increasing intervals of two.") | the strategy of using only sets of successive even numbers would not reveal the incorrectness of the hypothesis because every test item would get a positive response.
+    vi_tri: Kết quả; Giới thiệu
+    ket_qua: da-lam-mem
+    ghi_chu: 'Cũ: "hầu hết mọi người đoán … số chẵn, mỗi số hơn số trước 2" và "càng thử họ càng tin". Mới: "nhiều người đoán một quy tắc hẹp hơn", "thường nêu quy tắc sai chỉ sau vài lần thử" (như trang nhà thien-kien-xac-nhan đã khóa).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+      - https://doi.org/10.1037/0033-295X.94.2.211
+    luot_2_ghi_chu: Ví dụ 8–10–12, 20–22–24 là minh họa của site, phù hợp với phân tích của Wason và Klayman-Ha.
+  - id: n3
+    cau: 'Thiên kiến xác nhận thường không phải cố tình tự lừa dối: Nickerson (1998) mô tả nó là sự chọn lọc không chủ ý trong việc thu thập và dùng bằng chứng.'
+    loai: dinh-nghia
+    nguon:
+      - nickerson1998
+    trich: It refers usually to unwitting selectivity in the acquisition and use of evidence.
+    vi_tri: Nickerson 1998, phần mở đầu (theo hồ sơ thien-kien-xac-nhan.yml n9)
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "người chơi thực sự tin rằng mình đang kiểm tra nghiêm túc" (không nguồn). Mới theo Nickerson.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/1089-2680.2.2.175
+    luot_2_ghi_chu: Nickerson cũng nói ranh giới cố ý và không chủ ý khó vạch trong thực tế; 'thường không cố tình' khớp.
+  - id: n4
+    cau: Wason cho mỗi người xem dãy 2–4–6, nói nó tuân theo một quy tắc; người tham gia viết từng dãy kèm lý do, được báo dãy có tuân theo không, chỉ nêu quy tắc khi rất tự tin, nêu sai thì được báo rồi thử tiếp; quy tắc thật là ba số tăng dần bất kỳ.
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: Your aim is to discover this rule by writing down sets of three numbers, together with reasons for your choice of them. After you have written down each set, I shall tell you whether your numbers conform to the rule or not | the concept to be attained is "three numbers in increasing order of magnitude."
+    vi_tri: Phương pháp
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "được yêu cầu ghi lại các giả thuyết". Mới: viết dãy kèm lý do; nêu sai thì thử tiếp.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+    luot_2_ghi_chu: 'Quy tắc thật: ''three numbers in increasing order of magnitude''. Ghi lý do cho mỗi dãy: khớp mô tả.'
+  - id: n5
+    cau: Trong 29 người, 6 người tìm ra quy tắc mà không nêu sai lần nào; 13 nêu sai một lần; 9 nêu sai từ hai lần; 1 không đưa ra kết luận.
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: Six out of 29 subjects reached the correct conclusion without previous incorrect ones, 13 reached one incorrect conclusion, nine reached two or more incorrect conclusions, and one reached no conclusion.
+    vi_tri: Tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1080/17470216008416717
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+    luot_2_ghi_chu: '13 sai một lần, 9 sai từ hai lần: khớp tóm tắt của Wason.'
+  - id: n6
+    cau: Gần như mọi quy tắc sai đều hẹp hơn quy tắc thật; ở người nêu sai ngay lần đầu, chỉ 4% số dãy thử trước đó không tuân theo quy tắc thật, so với 21% ở 6 người nêu đúng ngay; dãy có thể bác bỏ phỏng đoán hẹp (như 2–3–4 với "cộng 2") hiếm khi được thử.
+    loai: so-lieu
+    nguon:
+      - wason1960
+    trich: The ratio of the number of negative instances of the correct rule to the total number of instances generated was computed for each subject, (i) up to the first rule announced … The mean ratio was 0.21 (n = 6) for those who made the immediate correct announcement and 0.04 (n = 22) for those who made a first incorrect announcement.
+    vi_tri: Kết quả
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "Những dãy có thể bác bỏ giả thuyết — như dãy gồm số lẻ tăng dần — hiếm khi được thử": sai, dãy số lẻ tăng đều 2 (1–3–5) vẫn khớp phỏng đoán "cộng 2", không bác bỏ được. Mới: ví dụ 2–3–4 và số liệu tỉ lệ dãy không tuân theo (có ở trang nhà).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+    luot_2_ghi_chu: Đây là tỉ số trung bình dãy không tuân theo quy tắc thật trên tổng số dãy trước lần nêu đầu; '4%' là trung bình của nhóm 22 người (13 + 9). Wason ghi 'nearly all incorrect rules were sufficient' và rằng chỉ một ví dụ dương tính không tương thích mới bác được quy tắc đủ.
+  - id: n7
+    cau: 'Klayman và Ha (1987): nhiều hiện tượng gọi là thiên kiến xác nhận là chiến lược kiểm tra tích cực; trong điều kiện thực tế nó có thể là cách làm rất tốt, dù vẫn có thể gây lỗi hệ thống hay kém hiệu quả, như ở 2–4–6.'
+    loai: phat-hien
+    nguon:
+      - klayman1987
+    trich: many phenomena labeled "confirmation bias" are better understood in terms of a general positive test strategy … the positive test strategy can be a very good heuristic for determining the truth or falsity of a hypothesis under realistic conditions. It can, however, lead to systematic errors or inefficiencies.
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Cũ: "rẻ, nhanh và khá hợp lý — chỉ gây lỗi trong những nhiệm vụ được thiết kế để bẫy nó" (mạnh hơn tóm tắt). Đổi cả ở khung tranh-cai, mục Lý thuyết và câu hỏi 4.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0033-295X.94.2.211
+  - id: n8
+    cau: 'Khá vững: ta có xu hướng ưu tiên tìm và chọn thông tin phù hợp với giả thuyết sẵn có.'
+    loai: nhan
+    nguon:
+      - wason1960
+      - klayman1987
+      - nickerson1998
+      - hart2009
+    trich: (theo hồ sơ thien-kien-xac-nhan.yml, khung kha-vung)
+    nhan: kha-vung
+    co_so:
+      - hart2009
+      - wason1960
+      - nickerson1998
+    ly_do: 'Phân tích tổng hợp Hart và cộng sự (2009): ưu tiên vừa phải; nghiên cứu chủ yếu phương Tây, chưa có tái lập lớn đăng ký trước. Cùng nhãn và lý do với trang nhà kham-pha/tu-duy/thien-kien-xac-nhan (đã khóa).'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: Vững chắc, "tìm thấy lại nhiều lần trong hơn 60 năm, ở nhiều bối cảnh" (không có nguồn đạt thước đo, lệch với trang nhà đã khóa). Đổi thành Khá vững như trang nhà.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/1089-2680.2.2.175
+      - https://doi.org/10.1037/0033-295X.94.2.211
+    luot_2_ghi_chu: Nhãn 'Khá vững' hợp thước đo (nhiều nghiên cứu cùng chiều, nhưng chủ yếu tổng quan tường thuật, chưa mở được phân tích tổng hợp riêng).
+  - id: n9
+    cau: 'Đang tranh cãi: gọi hành vi này là "thiên kiến có hại" hay "lối tắt hợp lý thỉnh thoảng phản tác dụng".'
+    loai: nhan
+    nguon:
+      - klayman1987
+    trich: the positive test strategy can be a very good heuristic … It can, however, lead to systematic errors or inefficiencies.
+    vi_tri: Tóm tắt
+    nhan: tranh-cai
+    co_so:
+      - klayman1987
+      - nickerson1998
+    ly_do: 'Như trang nhà thien-kien-xac-nhan (đã khóa): Klayman và Ha cho là lối tắt tốt; Nickerson xếp vào thiên kiến.'
+    ket_qua: da-lam-mem
+    ghi_chu: Bỏ "Hành vi … thì vững chắc"; thân viết theo tóm tắt Klayman và Ha.
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0033-295X.94.2.211
+      - https://doi.org/10.1037/1089-2680.2.2.175
+    luot_2_ghi_chu: 'Hai nguồn bậc 2 cùng ghi tranh luận về tính hữu ích: nhãn ''Đang tranh cãi'' hợp lý.'
+  - id: n10
+    cau: 'Nickerson (1998): thiên kiến xác nhận là xu hướng tìm thông tin mà ta cho là ủng hộ giả thuyết hay niềm tin sẵn có, và diễn giải thông tin theo hướng có lợi cho chúng.'
+    loai: dinh-nghia
+    nguon:
+      - nickerson1998
+    trich: People tend to seek information that they consider supportive of favored hypotheses or existing beliefs and to interpret information in ways that are partial to those hypotheses or beliefs.
+    vi_tri: Nickerson 1998 (theo hồ sơ thien-kien-xac-nhan.yml n36)
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "ba khâu … nhớ lại có chọn lọc … củng cố lẫn nhau thành vòng lặp khép kín" (câu cuối không có nguồn). Mới theo câu trích.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/1089-2680.2.2.175
+  - id: n11
+    cau: Ví dụ thử thuốc trên người bệnh chứ không trên người khỏe; theo Klayman và Ha, thói quen thử trường hợp "dương tính" thường là cách làm tốt, có thể gây lỗi khi giả thuyết hẹp hơn sự thật.
+    loai: phat-hien
+    nguon:
+      - klayman1987
+    trich: there is a tendency to test cases that are expected (or known) to have the property of interest rather than those expected (or known) to lack that property.
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Ví dụ thuốc là giả định minh họa (gia-dinh). Cũ: "nó chỉ thất bại khi giả thuyết quá hẹp".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0033-295X.94.2.211
+    luot_2_ghi_chu: Ví dụ 'thử thuốc trên người bệnh' là minh họa của site, không thấy nguyên văn trong bài (Klayman-Ha dùng ví dụ về bệnh truyền nhiễm và về tuyển dụng); gắn nhãn gia-dinh khi duyệt.
+  - id: n12
+    cau: Theo Nickerson, ta dễ tin điều mình mong là đúng; có thể chọn lọc bằng chứng và "nghiêng cán cân" khi cân nhắc, dù không thể phớt lờ hoàn toàn bằng chứng trái chiều.
+    loai: phat-hien
+    nguon:
+      - nickerson1998
+    trich: We can be selective with respect to the evidence we seek, and we can tilt the scales when we weigh what we find, but we cannot completely ignore counterindicative evidence
+    vi_tri: Nickerson 1998 (theo hồ sơ thien-kien-xac-nhan.yml n39)
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "Động cơ bảo vệ bản thân: khi niềm tin gắn với bản sắc … ta tích cực bẻ cong bằng chứng" (không nguồn). Thay bằng ý của Nickerson.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/1089-2680.2.2.175
+    luot_2_ghi_chu: 'Nickerson nối với ''Pollyanna principle'': người ta ưu ái mệnh đề mình muốn đúng.'
+  - id: n13
+    cau: Nghiên cứu gốc của Wason làm ở Anh với 29 sinh viên ngành tâm lý, công bố năm 1960.
+    loai: lich-su
+    nguon:
+      - wason1960
+    trich: From the Medical Research Council Industrial Psychology Research Group, University College, London | The subjects, 29 psychology undergraduates (17 men and 12 women)
+    vi_tri: Đầu bài; Phương pháp
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "29 người trưởng thành"; bỏ "các lần làm lại sau đó chủ yếu dùng người tham gia ở các nước phương Tây" (không có nguồn).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+  - id: n14
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào kiểm tra nhiệm vụ 2–4–6 trên người Việt.
+    loai: thoi-su
+    nguon:
+      - tim-wason-vn
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mốc thời gian. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); OpenAlex (10/11/2026, hồ sơ thien-kien-xac-nhan.yml): không có. Sau lượt 2 (Opus, 17/11/2026): giữ: câu đã viết "Tính đến 11/2026", loại thoi-su, het_han 2028-11-01. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); tìm lại ngày 17/11/2026 bị lỗi mạng (OpenAlex 429, Europe PMC hết thời gian chờ). Lượt 2 bổ sung tìm lại trước khi khóa.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Wason%20AND%20Vietnam&format=json", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22rule%20discovery%22%20AND%20(Vietnam%20OR%20Vietnamese)&format=json", "https://api.crossref.org/works?query.bibliographic=Wason+2-4-6+task+Vietnamese&rows=8", "https://api.crossref.org/works?query.bibliographic=nhi%E1%BB%87m+v%E1%BB%A5+2-4-6+Wason&rows=8" ]
+    luot_2_ghi_chu: "Tìm ngày 17/11/2026. Europe PMC và Crossref tìm được bằng tiếng Anh và tiếng Việt. Web (tiếng Anh và tiếng Việt) chỉ ra các nghiên cứu ở Ý, Nhật và một khảo sát bằng bảng hỏi về thiên kiến nhận thức ở sinh viên Việt Nam (Tạp chí Xã hội học và Tâm lý học, 2025), không phải nhiệm vụ 2–4–6. OpenAlex không dùng được: hết ngân sách miễn phí của địa chỉ IP, trả HTTP 429. Google Scholar chặn truy vấn tự động (trả 302). Vì vậy chưa tìm được ở hai nơi này; nên tìm lại ở OpenAlex hay Google Scholar trước khi khóa. Kết quả hiện có khớp với câu 'chưa tìm thấy'. Câu có mốc thời gian, nên cần `het_han`."
+  - id: n15
+    cau: 'Ngộ nhận: người tham gia của Wason là sinh viên được mô tả là thông minh; Nickerson ghi nhận thiên kiến này cả ở người làm khoa học; theo Nickerson (dẫn Evans, 1989), hướng dẫn tìm bằng chứng bác bỏ đôi khi làm đổi hành vi nhưng thường không cải thiện thành tích.'
+    loai: phat-hien
+    nguon:
+      - wason1960
+      - nickerson1998
+    trich: This investigation seeks to determine the extent to which intelligent young adults make rational inferences | He noted that although behavioral changes were sometimes induced, more often performance was not improved.
+    vi_tri: Wason 1960, Giới thiệu; Nickerson 1998 (hồ sơ thien-kien-xac-nhan.yml n43, n51)
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "được ghi nhận ở rất nhiều nhóm người … Biết về thiên kiến không tự động miễn nhiễm" (không nguồn).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+      - https://doi.org/10.1037/1089-2680.2.2.175
+  - id: n16
+    cau: 'Ngộ nhận: mười dãy số chẵn tăng đều đều "đúng" cũng không loại trừ được quy tắc thật; số lượng bằng chứng khẳng định không bù được cho sự vắng mặt của một phép thử bác bỏ (câu hỏi 1, 3, 5 cùng ý).'
+    loai: phat-hien
+    nguon:
+      - wason1960
+    trich: the strategy of using only sets of successive even numbers would not reveal the incorrectness of the hypothesis because every test item would get a positive response.
+    vi_tri: Giới thiệu
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+      - https://doi.org/10.1037/0033-295X.94.2.211
+    luot_2_ghi_chu: Câu 'mười dãy số chẵn tăng đều' là minh họa; ý chính (nhiều dãy khẳng định không loại được quy tắc rộng hơn) đúng.
+  - id: n17
+    cau: 'Công cụ: 29 người, 6 nêu đúng ngay; tỉ lệ dãy không tuân theo trước lần nêu đầu 21% (6 người nêu đúng ngay) và 4% (người nêu sai lần đầu).'
+    loai: cong-cu
+    nguon:
+      - wason1960
+    trich: The mean ratio was 0.21 (n = 6) … and 0.04 (n = 22)
+    vi_tri: Kết quả; hằng NGHIEN_CUU trong src/scripts/cong-cu/wason-246.js
+    ket_qua: da-sua
+    ghi_chu: 'Công cụ cũ có "dãy bác bỏ" (gọi mọi dãy không tuân theo là "có thể bác bỏ một phỏng đoán hẹp") và ví dụ "2–3–4 (số lẻ, tăng không đều)" (2 và 4 là số chẵn): đã sửa nhãn thành "dãy nhận câu trả lời không tuân theo", bỏ "(số lẻ …)"; thêm so sánh tỉ lệ với Wason.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
+    luot_2_ghi_chu: Xem n6; 29 người, 6 đúng ngay khớp Table I.
+  - id: n18
+    cau: 'Câu hỏi 4: theo Klayman và Ha, đó là chiến lược kiểm tra tích cực, có thể là cách làm tốt trong điều kiện thực tế, dù đôi khi gây lỗi hệ thống.'
+    loai: phat-hien
+    nguon:
+      - klayman1987
+    trich: the positive test strategy can be a very good heuristic … It can, however, lead to systematic errors or inefficiencies.
+    vi_tri: Tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Cũ: "thường hợp lý, chỉ gây lỗi trong một số nhiệm vụ"; lời giải thích bỏ "hành vi thì vững chắc".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0033-295X.94.2.211
 doi_chu:
-- cu: Đoạn 1–2 của "Điều gì đang xảy ra?"
-  moi: '"nhiều người đoán một quy tắc hẹp hơn"; câu không chủ ý theo Nickerson'
-  ly_do: n2, n3
-- cu: 'Mục Wason (1960): "ghi lại các giả thuyết", "dãy gồm số lẻ tăng dần"'
-  moi: viết dãy kèm lý do; ví dụ 2–3–4, tỉ lệ 4% và 21%, link trang nhà
-  ly_do: n4, n6
-- cu: Mục Klayman và Ha, khung tranh-cai, mục Lý thuyết, câu hỏi 4
-  moi: viết theo tóm tắt của bài
-  ly_do: n7, n9, n11, n18
-- cu: Khung Vững chắc
-  moi: Khá vững, như trang nhà đã khóa
-  ly_do: n8
-- cu: 'Mục Lý thuyết: "vòng lặp khép kín", "Động cơ bảo vệ bản thân"'
-  moi: định nghĩa và ý của Nickerson
-  ly_do: n10, n12
-- cu: Ở Việt Nam, ngộ nhận 1 và 3
-  moi: mốc 11/2026; câu theo Nickerson và Wason
-  ly_do: n13, n14, n15
+  - cu: Đoạn 1–2 của "Điều gì đang xảy ra?"
+    moi: '"nhiều người đoán một quy tắc hẹp hơn"; câu không chủ ý theo Nickerson'
+    ly_do: n2, n3
+  - cu: 'Mục Wason (1960): "ghi lại các giả thuyết", "dãy gồm số lẻ tăng dần"'
+    moi: viết dãy kèm lý do; ví dụ 2–3–4, tỉ lệ 4% và 21%, link trang nhà
+    ly_do: n4, n6
+  - cu: Mục Klayman và Ha, khung tranh-cai, mục Lý thuyết, câu hỏi 4
+    moi: viết theo tóm tắt của bài
+    ly_do: n7, n9, n11, n18
+  - cu: Khung Vững chắc
+    moi: Khá vững, như trang nhà đã khóa
+    ly_do: n8
+  - cu: 'Mục Lý thuyết: "vòng lặp khép kín", "Động cơ bảo vệ bản thân"'
+    moi: định nghĩa và ý của Nickerson
+    ly_do: n10, n12
+  - cu: Ở Việt Nam, ngộ nhận 1 và 3
+    moi: mốc 11/2026; câu theo Nickerson và Wason
+    ly_do: n13, n14, n15

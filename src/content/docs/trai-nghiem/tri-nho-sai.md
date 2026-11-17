@@ -32,8 +32,8 @@ Dựa trên nghiên cứu của Deese (1959), hai tác giả cho sinh viên nghe
 
 ## Mức độ chắc chắn
 
-:::kha-vung[học các từ cùng chủ đề có thể khiến ta “nhớ” một từ chưa từng thấy]
-Hiệu ứng DRM đã được dùng trong hàng trăm nghiên cứu và vẫn xuất hiện qua nhiều cách học, khoảng thời gian chờ và kiểu bài kiểm tra, ở người trẻ, người già và người nói các ngôn ngữ, thuộc các nền văn hóa khác nhau (tổng quan của [Gallo, 2010](https://doi.org/10.3758/MC.38.7.833)). Một lần làm lại có đăng ký trước, trên mạng, cũng tái lập được hiệu ứng ([Zwaan và cộng sự, 2018](https://doi.org/10.3758/s13423-017-1348-y)). Tỉ lệ nhớ nhầm thay đổi nhiều theo danh sách và cách làm. Nhãn là *Khá vững* chứ chưa phải *Vững chắc*: bằng chứng tổng hợp ở đây là một tổng quan tường thuật và một lần làm lại có đăng ký trước, chưa phải phân tích tổng hợp hay hai lần tái lập lớn có đăng ký trước.
+:::vung-chac[học các từ cùng chủ đề có thể khiến ta “nhớ” một từ chưa từng thấy]
+Hiệu ứng DRM đã được dùng trong hàng trăm nghiên cứu và vẫn xuất hiện qua nhiều cách học, khoảng thời gian chờ và kiểu bài kiểm tra, ở người trẻ, người già và người nói các ngôn ngữ, thuộc các nền văn hóa khác nhau (tổng quan của [Gallo, 2010](https://doi.org/10.3758/MC.38.7.833)). Nhiều lần làm lại có đăng ký trước đều thấy hiệu ứng: một lần làm lại trên mạng, hai đợt trên cùng người tham gia ([Zwaan và cộng sự, 2018](https://doi.org/10.3758/s13423-017-1348-y)), một báo cáo đăng ký trước với 488 người ([Mak và cộng sự, 2023](https://doi.org/10.1098/rsos.220595)) và một lần làm lại kèm phân tích tổng hợp có đăng ký trước ([Wiechert và cộng sự, 2024](https://doi.org/10.1037/xge0001527)). Một tổng quan hệ thống ([Coburn và cộng sự, 2021](https://doi.org/10.3389/fpsyg.2021.718818)) và các phân tích tổng hợp dùng mô hình này ở người trẻ và người già ([Huan và cộng sự, 2026](https://doi.org/10.1037/pag0000966)) cũng dựa trên hiệu ứng ấy. Tỉ lệ nhớ nhầm thay đổi nhiều theo danh sách và cách làm.
 :::
 
 :::tranh-cai[cơ chế chính xác là gì]
@@ -51,7 +51,11 @@ Lan tỏa kích hoạt theo liên tưởng, trí nhớ về "ý chính" của da
 
 ## Nguồn
 
-- Roediger, H. L., III, & McDermott, K. B. (1995). Creating false memories: Remembering words not presented in lists. *Journal of Experimental Psychology: Learning, Memory, and Cognition*, 21(4), 803–814. <https://doi.org/10.1037/0278-7393.21.4.803>
+- Coburn, P. I., Dogra, K. K., Rai, I. K., & Bernstein, D. M. (2021). The trajectory of targets and critical lures in the Deese/Roediger–McDermott paradigm: A systematic review. *Frontiers in Psychology*, 12, 718818. <https://doi.org/10.3389/fpsyg.2021.718818>
 - Deese, J. (1959). On the prediction of occurrence of particular verbal intrusions in immediate recall. *Journal of Experimental Psychology*, 58(1), 17–22.
 - Gallo, D. A. (2010). False memories and fantastic beliefs: 15 years of the DRM illusion. *Memory & Cognition*, 38(7), 833–848. <https://doi.org/10.3758/MC.38.7.833>
+- Huan, S., Otgaar, H., Howe, M. L., Liu, Y., Xu, H., Wang, J., & Yu, J. (2026). A meta-analysis of false memory in healthy and pathological cognitive aging. *Psychology and Aging*, 41(4), 497–524. <https://doi.org/10.1037/pag0000966>
+- Mak, M. H. C., O'Hagan, A., Horner, A. J., & Gaskell, M. G. (2023). A registered report testing the effect of sleep on Deese-Roediger-McDermott false memory: Greater lure and veridical recall but fewer intrusions after sleep. *Royal Society Open Science*, 10(12). <https://doi.org/10.1098/rsos.220595>
+- Roediger, H. L., III, & McDermott, K. B. (1995). Creating false memories: Remembering words not presented in lists. *Journal of Experimental Psychology: Learning, Memory, and Cognition*, 21(4), 803–814. <https://doi.org/10.1037/0278-7393.21.4.803>
+- Wiechert, S., Proost, D., Simoens, E., Ben-Shakhar, G., Pertzov, Y., & Verschuere, B. (2024). The effect of negative valence on false memory formation in the Deese–Roediger–McDermott paradigm: A preregistered meta-analysis and preregistered replication. *Journal of Experimental Psychology: General*, 153(3), 621–655. <https://doi.org/10.1037/xge0001527>
 - Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., & Zeelenberg, R. (2018). Participant nonnaiveté and the reproducibility of cognitive psychology. *Psychonomic Bulletin & Review*, 25(5), 1968–1972. <https://doi.org/10.3758/s13423-017-1348-y>

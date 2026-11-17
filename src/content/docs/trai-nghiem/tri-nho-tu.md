@@ -32,7 +32,7 @@ Nhóm nghiên cứu cho thấy độ dài trí nhớ **tỉ lệ nghịch với 
 ## Mức độ chắc chắn
 
 :::kha-vung[dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn]
-Hiệu ứng độ dài từ (Baddeley và cộng sự, 1975) được tổng quan của Oberauer và cộng sự (2018) xếp vào nhóm phát hiện ổn định, quan sát được ở nhiều ngôn ngữ khi độ dài được thay đổi bằng số âm tiết; nhưng cách giải thích nó vẫn còn tranh cãi. Từ dài và từ ngắn thường khác nhau cả ở những yếu tố khác, như số từ "láng giềng" có chính tả và âm gần giống; trong một nghiên cứu năm 2025, khi cân bằng thêm các yếu tố này, hiệu ứng độ dài từ mất đi ở bài nhận diện thứ tự ([Guitard, Neath và Surprenant, 2025](https://doi.org/10.3758/s13421-025-01762-5)). Vì vậy nhãn là *Khá vững*: dãy từ dài thường nhớ kém hơn, nhưng chưa chắc độ dài tự nó là nguyên nhân.
+Hiệu ứng độ dài từ (Baddeley và cộng sự, 1975) được tổng quan của Oberauer và cộng sự (2018) xếp vào nhóm phát hiện ổn định, quan sát được ở nhiều ngôn ngữ khi độ dài được thay đổi bằng số âm tiết. Cách giải thích thì còn tranh cãi: theo Guitard, Neath và Surprenant (2025), từ dài và từ ngắn thường khác nhau cả ở những yếu tố khác, như số từ "láng giềng" có chính tả và âm gần giống, và trong nghiên cứu của họ, khi cân bằng thêm các yếu tố này, hiệu ứng độ dài từ mất đi ở bài nhận diện thứ tự ([Guitard, Neath và Surprenant, 2025](https://doi.org/10.3758/s13421-025-01762-5)). Vì vậy nhãn là *Khá vững*: dãy từ dài thường nhớ kém hơn, nhưng chưa chắc độ dài tự nó là nguyên nhân.
 :::
 
 ## Các lý thuyết giải thích
@@ -87,7 +87,7 @@ Các từ trong công cụ này đều **một âm tiết**. Theo hiệu ứng �
 
 - Baddeley, A. D., Thomson, N., & Buchanan, M. (1975). Word length and the structure of short-term memory. *Journal of Verbal Learning and Verbal Behavior*, 14(6), 575–589. <https://doi.org/10.1016/S0022-5371(75)80045-4>
 - Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. *Behavioral and Brain Sciences*, 24(1), 87–114. <https://doi.org/10.1017/S0140525X01003922>
+- Guitard, D., Neath, I., & Surprenant, A. M. (2025). Word length vs. lexical factors: Re-examining what causes the word-length effect in serial recognition. *Memory & Cognition*, 54(2), 467–482. <https://doi.org/10.3758/s13421-025-01762-5>
 - Melby-Lervåg, M., & Hulme, C. (2013). Is working memory training effective? A meta-analytic review. *Developmental Psychology*, 49(2), 270–291. <https://doi.org/10.1037/a0028228>
 - Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. *Psychological Review*, 63(2), 81–97. <https://doi.org/10.1037/h0043158>
-- Guitard, D., Neath, I., & Surprenant, A. M. (2025). Word length vs. lexical factors: Re-examining what causes the word-length effect in serial recognition. *Memory & Cognition*, 54(2), 467–482. <https://doi.org/10.3758/s13421-025-01762-5>
 - Oberauer, K., Lewandowsky, S., Awh, E., Brown, G. D. A., Conway, A., Cowan, N., … Ward, G. (2018). Benchmarks for models of short-term and working memory. *Psychological Bulletin*, 144(9), 885–958. <https://doi.org/10.1037/bul0000153>
