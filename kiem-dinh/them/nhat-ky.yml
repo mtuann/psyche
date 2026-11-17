@@ -1,0 +1,71 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa them/nhat-ky
+trang: src/content/docs/them/nhat-ky.md
+nguon_cu: ../psyche-zero/docs/them/nhat-ky.md
+tang: cong-cu
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l4
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: hedge2018
+  ten: 'Hedge, Powell & Sumner (2018), Behav Res Methods 50(3), 1166–1186: toàn văn (PMC5990556)'
+  link: https://doi.org/10.3758/s13428-017-0935-1
+  toan_van: true
+- id: woods2011
+  ten: 'Woods và cộng sự (2011), J Clin Exp Neuropsychol 33(1), 101–111: toàn văn (PMC2978794)'
+  link: https://doi.org/10.1080/13803395.2010.493149
+  toan_van: true
+nhan_dinh:
+- id: s1
+  cau: Trang liệt kê những gì bạn đã thử trên Psyche (các công cụ, phần "Thử suy ngẫm" cuối mỗi bài, lượt chơi thẻ ngộ nhận), xếp theo từng ngày, mới nhất trước; mỗi lần thử tự ghi lại, bạn không cần làm gì thêm.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'src/scripts/cong-cu/nhat-ky.js (theoNgay: nhóm theo ngày giờ máy, mới nhất trước; chỉ đọc chung/luu.js ds()); mỗi công cụ và quiz.js tự gọi them() khi xong. 78 bài có mục "## Thử suy ngẫm" kèm khối câu hỏi (đếm trong src/content/docs/, 17/11/2026). tests/them.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.'
+- id: s2
+  cau: Mỗi dòng chỉ nhắc lại con số mà công cụ đã cho bạn xem lúc làm; trang này không chấm điểm hay nhận xét gì về bạn.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'chung/loai.js tomTatBanGhi: stroop (hiệu ứng, %), digitspan (xuôi, ngược), illusion (độ lệch %), changeblind (giây), quiz và myths (số câu đúng) đều là con số công cụ hiện ở màn kết quả; bài Big Five chỉ ghi "đã làm" (không nêu điểm); tests/them.test.mjs chặn chữ như "bình thường", "rối loạn", "kém", "giỏi", "chẩn đoán". Dòng của công cụ D8-L2, D8-L3 (tên trường như site cũ) kiểm lại khi các công cụ ấy chuyển.'
+- id: n1
+  cau: Con số của một lần làm trên điện thoại hay máy tính không phải là thước đo trí tuệ, trí nhớ hay sức khỏe.
+  loai: phat-hien
+  nguon:
+  - hedge2018
+  - woods2011
+  trich: the very reason such tasks produce robust and easily replicable experimental effects - low between-participant variability - makes their use as correlational tools problematic
+  vi_tri: Hedge 2018, tóm tắt; Woods 2011, Thảo luận (biến thiên của điểm độ dài trí nhớ)
+  ket_qua: dung
+  ghi_chu: 'Câu mới, cùng ý và cùng nguồn với câu n1 đã qua hai lượt ở trang trai-nghiem/index (D8-L1): điểm của một người ở các bài nhận thức kinh điển kém ổn định giữa các lần đo.'
+- id: s3
+  cau: Lời dẫn tới trang Hỗ trợ cho người đang lo về sức khỏe tinh thần.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Trang ho-tro/index đã khóa (kiem-dinh/khoa.json). Câu mới, theo yêu cầu của lô.
+- id: s4
+  cau: Nhật ký chỉ đọc từ dữ liệu lưu trên trình duyệt này, không gửi đi đâu; sao lưu hay xóa ở trang Dữ liệu của tôi.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: nhat-ky.js chỉ đọc ds() của chung/luu.js; tên trang của câu hỏi lấy từ data-trang dựng lúc build (src/plugins/thanh-phan.mjs tenCacTrang), không tải gì thêm.
+- id: s5
+  cau: Link trong nhật ký chỉ tới trang có trên site; câu hỏi "Thử suy ngẫm" ghi tên bài, cả với bản ghi lưu từ Psyche Zero.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'chung/loai.js nhanBanGhi, trangCuaQuiz (đọc cả /psyche-zero/<trang>/: luật 4, đường dẫn trang giữ nguyên); tests/them.test.mjs.'
+doi_chu:
+- cu: '"… bạn đã thử trên Psyche Zero — các công cụ, phần …, lượt chơi thẻ ngộ nhận — xếp theo …"; "mỗi lần thử sẽ tự động ghi lại ở đây"; biểu tượng 🔒 trước "Quyền riêng tư"'
+  moi: Tên Psyche; ngoặc đơn thay gạch ngang; bỏ biểu tượng
+  ly_do: Đổi tên site; giọng văn site mới (dấu câu); biểu tượng không mang thông tin
+- cu: (không có)
+  moi: Đoạn "Mỗi dòng chỉ nhắc lại con số … không chấm điểm … Hỗ trợ"
+  ly_do: 'Yêu cầu của lô: không chấm điểm hay diễn giải như chẩn đoán; có lời dẫn tới Hỗ trợ (s2, n1, s3)'
+- cu: 'Tóm tắt bài Big Five: "Chiều cao nhất: <tên chiều> (x/5)"'
+  moi: '"Đã làm bài thử (điểm từng chiều xem ở trang công cụ)"'
+  ly_do: Tránh nêu "chiều cao nhất" (như Bất ổn cảm xúc) ngoài bối cảnh giải thích của công cụ
+ghi_chu: 'Trang công cụ: chữ của trang và của công cụ (src/scripts/cong-cu/nhat-ky.js, chung/loai.js). Không phải nhật ký cảm xúc: người đọc không ghi gì ở đây. Không có số liệu nghiên cứu trong mã.'

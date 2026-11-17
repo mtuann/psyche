@@ -191,9 +191,11 @@ test('bài Sức khỏe tâm thần chưa có chữ ký chuyên gia thì có d�
 	assert.deepEqual(sai, []);
 });
 
-test('không link tới repo trên GitHub khi repo còn riêng tư (người đọc mở ra trang 404)', () => {
-	// Như repo opus (chủ repo bỏ tạm ngày 24/10/2026). Repo psyche công khai thì thêm biểu tượng GitHub (astro.config.mjs,
-	// social) nếu muốn và bỏ kiểm thử này.
-	const co = htmlFiles.filter((f) => /href="https:\/\/github\.com\/mtuann\/psyche(?![\w-])/i.test(read(f))).map(rel);
-	assert.deepEqual(co, []);
+test('link tới GitHub chỉ trỏ tới repo công khai mtuann/psyche (không tới repo riêng tư hay đã gỡ)', () => {
+	// Repo psyche công khai từ 11/2026 (chủ repo; D8-L4 thêm link báo lỗi tới Issues ở trang Giới thiệu), nên bỏ phép chặn
+	// cũ (khi repo còn riêng tư, người đọc mở ra trang 404). Repo khác của chủ repo (như psyche-zero) thì vẫn chặn.
+	const sai = htmlFiles.flatMap((f) =>
+		[...read(f).matchAll(/href="(https:\/\/github\.com\/mtuann\/[^"]*)"/gi)].map((m) => m[1]).filter((u) => !/^https:\/\/github\.com\/mtuann\/psyche(?:[/#?]|$)/.test(u)).map((u) => `${rel(f)}: ${u}`),
+	);
+	assert.deepEqual(sai, []);
 });

@@ -57,8 +57,16 @@ export function nut(chu, khiBam, { chinh = false, tuDong = false, ...khac } = {}
 	return h('button', { type: 'button', class: chinh ? 'pz-nut pz-nut--chinh' : 'pz-nut', 'data-tu-dong': tuDong, onclick: khiBam, ...khac }, [chu]);
 }
 
-/** Lời về quyền riêng tư dưới công cụ. D8-L4 (trang Dữ liệu của tôi) thêm link tới trang ấy. */
-export const loiRiengTu = () => h('p', { class: 'pz-rieng-tu' }, ['Kết quả chỉ lưu trên trình duyệt của bạn, không gửi đi đâu.']);
+/**
+ * Lời về quyền riêng tư dưới công cụ, link tới trang Dữ liệu của tôi (D8-L4; trang công cụ ở /psyche/trai-nghiem/<tên>/,
+ * nên trang ấy ở ../../them/du-lieu-cua-toi/).
+ */
+export const loiRiengTu = () =>
+	h('p', { class: 'pz-rieng-tu' }, [
+		'Kết quả chỉ lưu trên trình duyệt của bạn, không gửi đi đâu. Xem, sao lưu hay xóa ở trang ',
+		h('a', { href: new URL('../../them/du-lieu-cua-toi/', location.href).pathname }, ['Dữ liệu của tôi']),
+		'.',
+	]);
 
 /** Khung cảnh báo trong công cụ (tiêu đề, các đoạn). */
 export const canhBao = (tieuDe, ...doan) => h('div', { class: 'pz-canh-bao' }, [h('p', { class: 'pz-canh-bao__tieu-de', text: tieuDe }), ...doan.map((d) => h('p', {}, [d]))]);

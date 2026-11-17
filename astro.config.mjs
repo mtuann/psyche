@@ -2,6 +2,7 @@
 // Cấu hình site Psyche (Astro và Starlight). Phiên bản và lý do: plans/lam-lai/cong-nghe.md.
 // D1.1: khung, font, màu, tìm kiếm không dấu. D1.2: dữ liệu. D1.3: bố cục C (menu theo lĩnh vực, tiêu đề trang, trang chủ).
 // D1.4: thành phần. D1.5: chuyển trang, "sắp có", 404. D1.6: khóa, bản thật (chỉ trang đã khóa) và bản xem.
+// D8-L4: dùng khi mất mạng (service worker, manifest).
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
@@ -9,6 +10,7 @@ import { satteri } from '@astrojs/markdown-satteri';
 import { DUONG_GOC, chiTrangTrongBan, trangTrongBan } from './src/ban-build.mjs';
 import { duLieuDaKiem } from './src/du-lieu.mjs';
 import { menu } from './src/menu.mjs';
+import { chuDangKy, ngoaiTuyen } from './src/scripts/ngoai-tuyen/tich-hop.mjs';
 import { idCu } from './src/plugins/id-cu.mjs';
 import { psycheMarkdown } from './src/plugins/psyche-markdown.mjs';
 import { sapCo } from './src/plugins/sap-co.mjs';
@@ -87,9 +89,15 @@ export default defineConfig({
 				{ tag: 'meta', attrs: { name: 'theme-color', content: '#2a2d6b', media: '(prefers-color-scheme: light)' } },
 				{ tag: 'meta', attrs: { name: 'theme-color', content: '#1b1c3a', media: '(prefers-color-scheme: dark)' } },
 				{ tag: 'link', attrs: { rel: 'apple-touch-icon', href: `${base}/icons/icon-192.png` } },
+				// Dùng khi mất mạng (D8-L4): manifest (cài như ứng dụng, như site cũ) và đoạn đăng ký service worker, chèn
+				// thẳng vào trang (src/scripts/ngoai-tuyen/: tắt bằng PSYCHE_NGOAI_TUYEN=tat, hay ở trang Dữ liệu của tôi)
+				{ tag: 'link', attrs: { rel: 'manifest', href: `${base}/manifest.webmanifest` } },
+				{ tag: 'script', content: chuDangKy(DUONG_GOC) },
 			],
 		}),
 		// sau Starlight: bọc pagefind.js mà Starlight vừa dựng (gõ "d" thay "đ" vẫn tìm ra)
 		timKiemKhongDau(),
+		// sau tìm kiếm: ghi dist/sw.js, phiên bản là mã băm của cả bản build (đã gồm pagefind.js vừa bọc)
+		ngoaiTuyen(),
 	],
 });

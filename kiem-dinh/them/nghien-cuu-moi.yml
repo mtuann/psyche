@@ -1,0 +1,343 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa them/nghien-cuu-moi
+trang: src/content/docs/them/nghien-cuu-moi.md
+nguon_cu: ../psyche-zero/docs/them/nghien-cuu-moi.md
+tang: cap-nhat
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l4
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: boyce2024
+  ten: 'Boyce và cộng sự (2024), Collabra: Psychology 10(1), 125685: tóm tắt (OpenAlex) và siêu dữ liệu Crossref; truy cập mở'
+  toan_van: false
+- id: dawson2026
+  ten: 'Dawson & de Meza (2026), Psychological Review, đăng trực tuyến 20/7/2026: tóm tắt (OpenAlex, bản PsycInfo) và Crossref'
+  toan_van: false
+- id: zhang2025
+  ten: 'Zhang, Fang & Wang (2025), Int J Clin Health Psychol 25(1), 100559: tóm tắt có cấu trúc (OpenAlex) và Crossref'
+  toan_van: false
+- id: ng2025
+  ten: 'Ng, Noh & Spencer (2025), eLife 13, RP101992: tóm tắt (OpenAlex; Europe PMC ghi toàn văn mở PMC12507438) và Crossref'
+  toan_van: false
+- id: ferguson2025
+  ten: 'Ferguson và cộng sự (2025), Prof Psychol Res Pr 56(1), 73–83: tóm tắt và Public Significance Statement (Semantic Scholar) và Crossref; không mở được toàn văn'
+  toan_van: false
+- id: lakens2013
+  ten: 'Lakens (2013), Frontiers in Psychology 4, 863: dẫn mốc của Cohen (1988), như hồ sơ bang-chung/do-lon-hieu-ung'
+  toan_van: true
+- id: apa-behavioral-economics
+  ten: APA Dictionary of Psychology, mục "behavioral economics" (mục "loss aversion" dẫn sang), cập nhật 19/4/2018, đọc ngày 17/11/2026
+  link: https://dictionary.apa.org/behavioral-economics
+  toan_van: true
+nhan_dinh:
+- id: s1
+  cau: Trang tóm tắt những nghiên cứu mới, đã qua bình duyệt, liên quan trực tiếp đến các bài trên Psyche; mỗi tin có ngày, tin mới thêm lên đầu; tin cũ không bị viết lại, nếu có sai thì đính chính bằng một tin mới.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Tầng cap-nhat (src/data/trang.yml; plans/ben-vung/README.md mục 2, them-noi-dung.md mục 6); tests/them.test.mjs kiểm tiêu đề có ngày, mới nhất trước, và mục đã có ở main không đổi. Năm nghiên cứu đều đăng ở tạp chí có bình duyệt (Crossref: journal-article).'
+- id: s2
+  cau: Một tin ở đây không tự làm đổi nhãn của bài nào.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đổi nhãn của bài đã khóa phải qua mở khóa hay bổ sung có anh_huong_nhan (chuan-kiem-dinh.md mục 4, 8). Câu mới.
+- id: s3
+  cau: Năm tin đầu được đăng trên Psyche Zero ngày 13/10/2026 và được kiểm chứng lại với nguồn khi chuyển sang site này (11/2026).
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: '../psyche-zero/docs/them/cap-nhat.md, mục 13/10/2026 "Cơ chế giữ up to date": "Trang mới Nghiên cứu mới đáng chú ý: tóm tắt 5 nghiên cứu 2024–2026"; mục 4 viết lại ngày 22/10/2026 (mục đính chính cùng file). Lần kiểm này: hồ sơ này, 17/11/2026.'
+- id: s4
+  cau: 'Lời dẫn: đọc các tin cùng với các nhãn mức độ chắc chắn trong từng bài liên quan (link tới Cách đọc nhãn); một nghiên cứu đơn lẻ, dù gây chú ý, chưa đủ để đổi kết luận chung của cả một lĩnh vực.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Link tới bat-dau/doc-nhan-chac-chan (đã khóa). Câu "một nghiên cứu đơn lẻ chưa đủ…" là nguyên tắc viết của site (ưu tiên phân tích tổng hợp: AGENTS.md, chuan-kiem-dinh.md mục 2, 4), giữ từ trang cũ.'
+- id: b1
+  cau: 'Boyce và cộng sự (2024), Collabra: Psychology 10(1), 125685, 20 tác giả (danh sách như trên trang).'
+  loai: so-lieu
+  nguon:
+  - boyce2024
+  trich: '"title": "Estimating the Replicability of Psychology Experiments After an Initial Failure to Replicate", "volume": "10", "issue": "1", article-number 125685; 20 tác giả, từ Boyce tới Frank'
+  vi_tri: siêu dữ liệu Crossref (api.crossref.org, 17/11/2026)
+  ket_qua: dung
+- id: b2
+  cau: Nhóm tác giả làm lại 17 thí nghiệm mà lần tái lập đầu đã thất bại; ở 5 trong 17 trường hợp (29%), lần làm lại tái lập được phần lớn hay toàn bộ kết quả gốc, nhưng với độ lớn hiệu ứng nhỏ hơn; 12 trường hợp còn lại vẫn thất bại.
+  loai: tai-lap
+  nguon:
+  - boyce2024
+  trich: Here, we report 17 re-replications of experiments for which an original replication had failed. In 5/17 of these "rescue" projects (29%), the "rescue" study mostly or fully replicated the original results, albeit with a smaller effect size; in the other 12, the second replication was also judged to have failed.
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "5/17 (29%) lần giải cứu đã khôi phục được hiệu ứng gốc". Chữ mới theo đúng tóm tắt: "tái lập được phần lớn hay toàn bộ" (mostly or fully replicated).'
+- id: b3
+  cau: 'Tác giả phỏng đoán các lần thành công là nhờ mẫu lớn hơn hay đổi cách làm (như thêm câu hỏi kiểm tra sự chú ý), và khuyên: nếu lần tái lập thất bại không có điểm yếu rõ ràng, có lẽ nên dừng sau một lần.'
+  loai: phat-hien
+  nguon:
+  - boyce2024
+  trich: We speculate that successful rescue projects were due to larger sample sizes or methodological changes such as attention checks. In the absence of obvious weaknesses in a failed replication study's sample or procedure, however, it may be most efficient to stop pursuing an effect after a single failed replication.
+  vi_tri: tóm tắt
+  ket_qua: dung
+- id: b4
+  cau: 17 trường hợp là một mẫu nhỏ, nên tỉ lệ 29% còn rất không chắc chắn.
+  loai: phat-hien
+  nguon:
+  - boyce2024
+  trich: In 5/17 of these "rescue" projects (29%)
+  vi_tri: tóm tắt
+  ket_qua: dung
+  ghi_chu: 'Câu giới hạn mới (them-noi-dung.md mục 6: tin nói rõ giới hạn). Lập luận thống kê: khoảng tin cậy 95% của tỉ lệ 5/17 (Wilson) khoảng 13–53%, tự tính; không nêu con số trên trang.'
+- id: b5
+  cau: 'Bài Vì sao nhiều phát hiện nổi tiếng không lặp lại được? viết rằng tái lập thất bại không có nghĩa phát hiện gốc là bịa: có thể hiệu ứng có thật nhưng nhỏ hơn.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'src/content/docs/bang-chung/khung-hoang-tai-lap.md dòng 65: "Tái lập thất bại không có nghĩa phát hiện gốc là bịa. Có thể hiệu ứng thật nhưng nhỏ hơn, hoặc chỉ đúng trong một số điều kiện nhất định." (trang đã khóa).'
+- id: d1
+  cau: Dawson và de Meza (2026), Psychological Review, đăng trực tuyến tháng 7/2026.
+  loai: so-lieu
+  nguon:
+  - dawson2026
+  trich: '"container-title": "Psychological Review", "published-online": 2026-07-20'
+  vi_tri: siêu dữ liệu Crossref (api.crossref.org, 17/11/2026)
+  ket_qua: dung
+- id: d2
+  cau: Bài là một bài lý thuyết, đề xuất một mô hình giải thích, không phải một thí nghiệm hay phân tích dữ liệu mới.
+  loai: phat-hien
+  nguon:
+  - dawson2026
+  trich: We propose a signaling theory according to which the role of self-deception is to better inform others.
+  vi_tri: tóm tắt
+  ket_qua: dung
+  ghi_chu: Tóm tắt chỉ đề xuất lý thuyết, không mô tả dữ liệu hay thí nghiệm mới (đính chính 22/10/2026 của site cũ cùng kết luận).
+- id: d3
+  cau: 'Câu hỏi của bài: tự tin thái quá thúc ta hành động, còn ác cảm mất mát kìm ta lại; nếu tự tin thái quá có lợi, vì sao lại có thêm một thiên kiến kéo theo chiều ngược lại?'
+  loai: phat-hien
+  nguon:
+  - dawson2026
+  trich: Overconfidence is a call to action, while loss aversion curbs initiative. … Moreover, if overconfidence is adaptive, why is it at least partially canceled by loss aversion?
+  vi_tri: tóm tắt
+  ket_qua: dung
+- id: d4
+  cau: Ác cảm mất mát (loss aversion) là xu hướng cố tránh những gì ta thấy là mất mát, nhiều một cách không cân xứng.
+  loai: dinh-nghia
+  nguon:
+  - apa-behavioral-economics
+  trich: loss aversion (the tendency to go to disproportionately great lengths to avoid perceived losses)
+  vi_tri: mục "behavioral economics"
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "mất một khoản thấy đau hơn được cùng khoản đó" (cách nói phổ thông, chưa có nguồn mở được). Chữ mới theo định nghĩa của APA Dictionary.'
+- id: d5
+  cau: 'Theo mô hình, tự tin thái quá cài sẵn là tín hiệu đáng tin về năng lực thật: quyết định sai vì quá tin vào mình gây thiệt hại ít hơn cho người giỏi, còn lợi ích của việc được coi là giỏi tăng theo năng lực.'
+  loai: phat-hien
+  nguon:
+  - dawson2026
+  trich: Since the decision error associated with high self-belief is less burdensome for the more able, and the benefit of being perceived as able increases with ability, hardwired overconfidence is a credible signal of true ability.
+  vi_tri: tóm tắt
+  ket_qua: dung
+- id: d6
+  cau: Ác cảm mất mát bù bớt cái giá của những quyết định quá tự tin; vì thường được giấu kín, nó không làm mất vai trò tín hiệu của sự tự tin; tác giả cho rằng lời khuyên của Kahneman nên bỏ cả hai thiên kiến là thiếu cơ sở.
+  loai: phat-hien
+  nguon:
+  - dawson2026
+  trich: A further implication of signaling is that loss aversion is part of the equilibrium. It partially ameliorates the decision costs of overconfidence, but as it is usually hidden, it does not eliminate its signaling role. … Kahneman's advice that individuals eliminate both overconfidence and loss aversion is poorly founded.
+  vi_tri: tóm tắt
+  ket_qua: dung
+- id: d7
+  cau: Tóm tắt của bài nói bằng chứng hiện có ủng hộ cách hiểu này, nhưng mô hình vẫn cần được kiểm định bằng dữ liệu.
+  loai: phat-hien
+  nguon:
+  - dawson2026
+  trich: Evidence supports this interpretation.
+  vi_tri: tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Tác giả cho biết bằng chứng hiện có ủng hộ cách hiểu này, nhưng mô hình vẫn cần được kiểm định độc lập." "Kiểm định độc lập" là nhận xét của site, không có trong tóm tắt: viết "cần được kiểm định bằng dữ liệu" (bài lý thuyết, d2).'
+- id: d8
+  cau: (bỏ) Theo cách gắn nhãn của site, mô hình đang ở mức Đang tranh cãi.
+  loai: nhan
+  nguon:
+  - dawson2026
+  trich: (không có)
+  vi_tri: ''
+  ket_qua: da-bo
+  ghi_chu: 'Bỏ: nhãn của site nói về tình trạng bằng chứng của một khẳng định theo thước đo mục 4; một bài lý thuyết chưa có kiểm định không có cơ sở (co_so) để xếp nhãn. Thay bằng câu d9.'
+  nhan: tranh-cai
+  co_so:
+  - dawson2026
+  ly_do: đã bỏ
+- id: d9
+  cau: Bài Kẻ dốt hay tự tin thái quá? kể các phê bình thống kê nhắm vào hiệu ứng Dunning–Kruger (Krueger và Mueller, 2002; Gignac và Zajenkowski, 2020); mô hình của Dawson và de Meza bàn một câu hỏi khác, không kiểm định hiệu ứng Dunning–Kruger, nên không dùng được để nói hiệu ứng ấy đúng hay sai.
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'src/content/docs/kham-pha/tu-duy/dunning-kruger.md (đã khóa): mục "Krueger và Mueller (2002): phê bình thống kê", "Gignac và Zajenkowski (2020)". Vế sau suy từ d2, d5 (tóm tắt không nhắc Dunning–Kruger). Chữ cũ "nếu đúng, sự tự tin cao lại đi cùng năng lực cao — trái với cách hiểu phổ thông" đã bỏ (diễn giải xa hơn tóm tắt).'
+- id: z1
+  cau: Zhang, Fang và Wang (2025), International Journal of Clinical and Health Psychology 25(1), 100559.
+  loai: so-lieu
+  nguon:
+  - zhang2025
+  trich: volume 25, issue 1, page 100559, published 2025-01
+  vi_tri: siêu dữ liệu Crossref (api.crossref.org, 17/11/2026)
+  ket_qua: dung
+- id: z2
+  cau: 'Phân tích tổng hợp 35 thử nghiệm ngẫu nhiên có đối chứng với 5.734 người tham gia cho thấy tập kết hợp (aerobic và kháng lực) cải thiện nhận thức tổng thể với g = 0,32 (khoảng tin cậy 95%: 0,17–0,46).'
+  loai: so-lieu
+  nguon:
+  - zhang2025
+  trich: 'The meta-analysis included 35 RCTs with 5,734 participants, revealing a positive effect of CT on global cognition (g = 0.32, 95% CI: 0.17-0.46, p < 0.001).'
+  vi_tri: tóm tắt, Results
+  ket_qua: da-sua
+  ghi_chu: Thêm khoảng tin cậy (có trong tóm tắt); chữ cũ không có.
+- id: z3
+  cau: Lợi ích rõ hơn ở người từ 65 tuổi trở lên (g = 0,33) và cũng thấy ở người có bệnh (g = 0,28); các chương trình dài 13–26 tuần có hiệu quả có ý nghĩa thống kê (g = 0,21).
+  loai: so-lieu
+  nguon:
+  - zhang2025
+  trich: 'older adults (≥65 years) exhibited greater cognitive benefits (g = 0.33; 95% CI: 0.14-0.51, p < 0.05) compared to younger populations. Significant effects were also observed in clinical populations (g = 0.28 …). … medium-length interventions (13-26 weeks) demonstrating significant effects (g = 0.21; 95% CI: 0.05-0.37, p = 0.011).'
+  vi_tri: tóm tắt, Results
+  ket_qua: dung
+- id: z4
+  cau: Tác giả khuyên ưu tiên phần tập sức mạnh, mỗi buổi 30–60 phút.
+  loai: phat-hien
+  nguon:
+  - zhang2025
+  trich: Prioritizing strength training, implementing short- to medium-term interventions (4-26 weeks), and maintaining session durations of 30-60 minutes are crucial for optimizing cognitive benefits.
+  vi_tri: tóm tắt, Conclusion
+  ket_qua: dung
+  ghi_chu: Câu thuật lại khuyến nghị của tác giả, không phải lời khuyên của site.
+- id: z5
+  cau: Theo các mốc Cohen (1988) đề xuất, 0,2 là "nhỏ" và 0,5 là "trung bình".
+  loai: dinh-nghia
+  nguon:
+  - lakens2013
+  trich: A commonly used interpretation is to refer to effect sizes as small (d = 0.2), medium (d = 0.5), and large (d = 0.8) based on benchmarks suggested by Cohen (1988).
+  vi_tri: Lakens 2013
+  ket_qua: dung
+  ghi_chu: Cùng nguồn với trang nhà bang-chung/do-lon-hieu-ung (đã khóa, link trên trang). Mốc đề xuất cho d; g là d hiệu chỉnh cho mẫu nhỏ, cùng thang.
+- id: z6
+  cau: Hiệu quả của tập kết hợp ở mức nhỏ.
+  loai: phat-hien
+  nguon:
+  - zhang2025
+  - lakens2013
+  trich: 'g = 0.32, 95% CI: 0.17-0.46'
+  vi_tri: tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "hiệu quả ở khoảng nhỏ đến vừa". 0,32 nằm giữa mốc nhỏ và trung bình, gần nhỏ; tiêu đề tin đổi "Có — ở mức khiêm tốn" thành "Có, ở mức nhỏ".'
+- id: z7
+  cau: 'Bài Tập thể dục có làm não khỏe hơn? xếp câu "tập aerobic cải thiện nhận thức đến mức nào" vào nhãn Đang tranh cãi: các phân tích tổng hợp cho hiệu quả nhỏ, và một tổng quan ô dù thấy hiệu quả chung gần như không còn sau khi hiệu chỉnh thiên lệch xuất bản.'
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'src/content/docs/kham-pha/co-so-sinh-hoc/the-duc-nao.md (đã khóa) dòng 70 ":::tranh-cai[tập aerobic cải thiện nhận thức đến mức nào]" và dòng 71 (Smith 2010 g ≈ 0,12–0,16; Ciria 2023 d = 0,05 sau hiệu chỉnh). Chữ cũ "đã kết luận khá vững … (g ≈ 0,12–0,18)" sai với bài hiện nay: đã sửa.'
+- id: z8
+  cau: Con số của Zhang và cộng sự đo nhận thức tổng thể với tập kết hợp, ở những nhóm người khác, nên không so thẳng được với các con số trong bài; một phân tích mới chưa đủ để đổi nhãn.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: So z2 (nhận thức tổng thể, tập kết hợp) với the-duc-nao.md dòng 71 (từng chức năng, tập aerobic). Câu cũ cùng ý ("hai phân tích khác nhau về nhóm người tham gia và cách đo").
+- id: g1
+  cau: Ng, Noh và Spencer (2025), eLife 13, RP101992.
+  loai: so-lieu
+  nguon:
+  - ng2025
+  trich: '"container-title": "eLife", "volume": "13", article-number RP101992, published-online 2025-10-08'
+  vi_tri: siêu dữ liệu Crossref (api.crossref.org, 17/11/2026)
+  ket_qua: dung
+- id: g2
+  cau: Phân tích tổng hợp 23 nghiên cứu, 297 độ lớn hiệu ứng; sự ăn khớp chính xác và mạnh giữa sóng chậm và thoi ngủ nhanh ở thùy trán dự báo việc củng cố trí nhớ.
+  loai: so-lieu
+  nguon:
+  - ng2025
+  trich: This meta-analysis, comprising 23 studies and 297 effect sizes … We found strong evidence supporting that precise and strong SO-fast SP coupling in the frontal lobe predicts memory consolidation.
+  vi_tri: tóm tắt
+  ket_qua: dung
+- id: g3
+  cau: Mối liên hệ này thay đổi theo loại trí nhớ, theo tuổi, và theo đặc điểm của thoi ngủ (tần số, vị trí trên vỏ não).
+  loai: phat-hien
+  nguon:
+  - ng2025
+  trich: The strength of this association is mediated by memory type, aging, and spatiotemporal features, including SP frequency and cortical topography.
+  vi_tri: tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "bị điều tiết bởi loại trí nhớ, tuổi tác và vị trí trên vỏ não"; thêm tần số thoi ngủ theo tóm tắt. Bỏ câu cũ "nó yếu dần theo tuổi … người lớn tuổi khó nhớ bài bằng người trẻ" (tóm tắt chỉ nói tuổi làm thay đổi mối liên hệ; chưa đọc toàn văn để xác nhận chiều).'
+- id: g4
+  cau: Sóng chậm là sóng não chậm của giấc ngủ sâu; thoi ngủ nhanh là những đợt sóng nhanh, ngắn.
+  loai: dinh-nghia
+  nguon:
+  - ng2025
+  trich: Neural oscillations during sleep, including the temporal coupling between slow oscillations (SO) and sleep spindles (SP)
+  vi_tri: tóm tắt
+  ket_qua: dung
+  ghi_chu: Chú giải thuật ngữ; bài nhà ngu-va-tri-nho (đã khóa) dùng cùng thuật ngữ "giấc ngủ sóng chậm", "thoi ngủ (spindle)". Lượt 2 xem có cần nguồn định nghĩa riêng.
+- id: g5
+  cau: Phân tích gộp các hệ số tương quan giữa nhịp não và mức nhớ, nên cho biết nhịp nào đi cùng nhớ tốt hơn, chưa tự nó chứng minh quan hệ nhân quả.
+  loai: phat-hien
+  nguon:
+  - ng2025
+  trich: four standard phase-amplitude coupling measures … and their relationship with memory retention. We developed a standardized approach to incorporate non-normal circular-linear correlations.
+  vi_tri: tóm tắt
+  ket_qua: dung
+  ghi_chu: 'Giới hạn mới (them-noi-dung.md mục 6). Tóm tắt dùng chữ "mechanistic role" và kết luận "should be considered as a general physiological mechanism": câu trên trang nói đúng loại dữ liệu (tương quan), không bác kết luận của tác giả. Lượt 2 xem có "quá mạnh" không.'
+- id: g6
+  cau: Bài Ngủ có giúp nhớ bài? kể rằng trong giấc ngủ sóng chậm, sóng chậm, thoi ngủ và gợn sóng phối hợp "phát lại" ký ức.
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'src/content/docs/kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho.md dòng 34 (đã khóa): "sóng chậm, thoi ngủ (spindle) và gợn sóng (ripple) phối hợp "phát lại" ký ức". Chữ cũ "ca làm việc ban đêm" và "chuyển từ hồi hải mã sang vỏ não" rút gọn.'
+- id: f1
+  cau: 'Ferguson, Kaye, Branley-Bell và Markey (2025), Professional Psychology: Research and Practice 56(1), 73–83.'
+  loai: so-lieu
+  nguon:
+  - ferguson2025
+  trich: volume 56, issue 1, page 73-83; published 2025-02
+  vi_tri: siêu dữ liệu Crossref (api.crossref.org, 17/11/2026)
+  ket_qua: da-sua
+  ghi_chu: 'Bỏ "(xuất bản online tháng 10/2024)": Crossref chỉ ghi ngày tạo DOI 3/10/2024, không có published-online; không xác nhận được ngày đăng trực tuyến.'
+- id: f2
+  cau: 'Nhóm tác giả gộp kết quả của 46 nghiên cứu về việc người trẻ dùng mạng xã hội và sức khỏe tâm thần; kết luận của tác giả: các nghiên cứu hiện có không đủ để khẳng định mạng xã hội gây hại cho lo âu, trầm cảm ở người trẻ.'
+  loai: phat-hien
+  nguon:
+  - ferguson2025
+  trich: This was investigated in a meta-analysis of 46 studies of youth social media use and mental health. Results indicated that the current pool of research is unable to support claims of harmful effects for social media use on youth internalizing disorders.
+  vi_tri: tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ thêm: "mối liên hệ đo được quá nhỏ, không đạt mức đáng kể về mặt lâm sàng" và "Kết quả này giữ nguyên dù tách theo giới tính, kiểu nghiên cứu hay loại dữ liệu": không có trong tóm tắt, không mở được toàn văn (APA, không có bản mở): bỏ. "Rối loạn hướng nội" (internalizing) viết là lo âu, trầm cảm như ví dụ của tóm tắt ("e.g., anxiety, depression").'
+- id: f3
+  cau: Tác giả cũng chỉ ra những điểm yếu phương pháp còn phổ biến trong mảng nghiên cứu này, như thiếu đăng ký trước.
+  loai: phat-hien
+  nguon:
+  - ferguson2025
+  trich: Some types of methodological weaknesses, such as evident demand characteristics and lack of preregistration, remain common in this area.
+  vi_tri: tóm tắt
+  ket_qua: dung
+  ghi_chu: 'Câu mới, theo tóm tắt (thay câu "đề nghị nên nghiên cứu cách dùng cụ thể … thay vì đếm giờ" của chữ cũ, không có trong tóm tắt: bỏ).'
+- id: f4
+  cau: '"Chưa đủ bằng chứng về tác hại" không có nghĩa là đã chứng minh mạng xã hội vô hại.'
+  loai: phat-hien
+  nguon:
+  - ferguson2025
+  trich: the current pool of research is unable to support claims of harmful effects
+  vi_tri: tóm tắt
+  ket_qua: dung
+  ghi_chu: 'Giới hạn (lập luận về cách đọc kết luận âm tính). Chữ cũ: "nó không phủ nhận teen buồn hơn thật". Lưu ý: tiêu đề bài nói mạnh hơn ("There is no evidence"); trang dùng chữ của tóm tắt.'
+- id: f5
+  cau: 'Bài Mạng xã hội có làm teen trầm cảm? trình bày hai phe: phe kết tội của Haidt (2024) và phe hoài nghi của Orben và Przybylski (2019), vốn thấy liên hệ đo được rất nhỏ; bài xếp câu "mạng xã hội hoàn toàn vô hại với teen" vào nhãn Đã bị bác bỏ.'
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'src/content/docs/kham-pha/phat-trien/mang-xa-hoi-teen.md (đã khóa): dòng 21, 27, 37 (0,4% phương sai), dòng 71 ":::bac-bo[mạng xã hội hoàn toàn vô hại với teen]". Không nhắc lại con số 0,4% (con số của trang nhà).'
+- id: f6
+  cau: Phân tích tổng hợp này nghiêng về phía hoài nghi.
+  loai: ve-site
+  ket_qua: da-lam-mem
+  ghi_chu: So f2 với hai phe ở mang-xa-hoi-teen.md. Chữ cũ "củng cố phía hoài nghi" làm mềm thành "nghiêng về".
+doi_chu:
+- cu: '"Trang được cập nhật định kỳ mỗi quý." "Cập nhật lần cuối: tháng 10/2026." và dòng cuối "Trang này sẽ được cập nhật mỗi quý. Nếu bạn thấy một nghiên cứu mới … hãy ghi chú lại"'
+  moi: Bỏ; mỗi tin có ngày, tin mới thêm lên đầu, đính chính bằng tin mới (s1); câu về năm tin chuyển từ Psyche Zero (s3)
+  ly_do: 'Dòng cập nhật (tầng cap-nhat): ngày ở từng mục, không cần dòng "cập nhật lần cuối". Lời hứa "mỗi quý" là việc của kế hoạch (máy canh hằng quý, đợt 9), không ghi trên trang để khỏi thành câu thời sự.'
+- cu: Tiêu đề "## 1. …" đến "## 5. …"; mỗi tin có các mục Nghiên cứu, Câu hỏi nghiên cứu, Phát hiện chính, Vì sao đáng chú ý, Đọc thêm
+  moi: 'Tiêu đề "## 13/10/2026: …" có id cố định; các mục Nghiên cứu, Câu hỏi, Phát hiện chính, Giới hạn, Liên quan (gộp Vì sao đáng chú ý và Đọc thêm)'
+  ly_do: 'Dòng cập nhật: mỗi mục có ngày (tests/them.test.mjs); them-noi-dung.md mục 6: tin nói rõ giới hạn và bài liên quan. Thứ tự: năm tin cùng ngày, tin cuối của trang cũ đứng đầu.'
+- cu: Các câu đã sửa, làm mềm, bỏ
+  moi: Theo từng nhận định (b2, d7, d8, d9, z2, z6, z7, g3, g6, f1, f2, f3, f5, f6)
+  ly_do: Xem ghi_chu của từng nhận định
+ghi_chu: 'Dòng cập nhật: 5 tin của Psyche Zero (13/10/2026, mục 4 viết lại 22/10/2026) kiểm lại như nhận định; không tin nào bị bỏ cả tin, các câu không kiểm được trong từng tin đã bỏ hay làm mềm. Nguồn chỉ mở được tóm tắt (bốn bài) và tóm tắt cộng Public Significance Statement (Ferguson): mọi câu viết ở mức tóm tắt xác nhận được (chuan-kiem-dinh.md mục 3, V3: "viết lại ở mức tóm tắt xác nhận được").'

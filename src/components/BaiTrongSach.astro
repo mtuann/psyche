@@ -1,0 +1,9 @@
+---
+// Một bài trong Sách in (SachIn.astro): HTML đã dựng của bài qua baiTrongSach (src/plugins/thanh-phan.mjs).
+import { baiTrongSach } from '../plugins/thanh-phan.mjs';
+
+const { tienTo, ten, diaChiBai } = Astro.props;
+const html = baiTrongSach(await Astro.slots.render('default'), { tienTo, ten, diaChiBai });
+---
+
+<div class="pz-sach__noi"><Fragment set:html={html} /></div>

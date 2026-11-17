@@ -1,0 +1,194 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa them/gioi-thieu
+trang: src/content/docs/them/gioi-thieu.md
+nguon_cu: ../psyche-zero/docs/them/gioi-thieu.md
+tang: khung
+muc: null
+lan:
+- so: 1
+  ngay: '2026-11-17'
+  nhanh: moi/d8-l4
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: apa-psyche
+  ten: APA Dictionary of Psychology, mục "psyche" (cập nhật 19/4/2018), đọc ngày 17/11/2026
+  link: https://dictionary.apa.org/psyche
+  toan_van: true
+- id: cc-by-sa-4
+  ten: Creative Commons, Attribution-ShareAlike 4.0 International, bản tóm tắt (deed), đọc ngày 17/11/2026
+  link: https://creativecommons.org/licenses/by-sa/4.0/deed.en
+  toan_van: true
+- id: github-pages-docs
+  ten: GitHub Docs, "What is GitHub Pages?", mục Data collection, đọc ngày 17/11/2026
+  link: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+  toan_van: true
+- id: rowland2014
+  toan_van: false
+- id: roediger2006
+  toan_van: false
+nhan_dinh:
+- id: s1
+  cau: 'Psyche là site tiếng Việt giúp người không học chuyên ngành hiểu tâm lý học như một khoa học thực nghiệm. Mỗi trang trả lời một câu hỏi: bằng chứng nói gì, và chắc chắn đến đâu?'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Mô tả site: AGENTS.md (đầu), plans/lam-lai/README.md; câu "bằng chứng nói gì, và chắc chắn đến đâu?" cũng ở trang bat-dau/cach-kiem-chung (đã khóa).'
+- id: n1
+  cau: Trong tâm lý học, psyche là tâm trí nói chung, phân biệt với cơ thể; chữ này từng mang nghĩa linh hồn.
+  loai: dinh-nghia
+  nguon:
+  - apa-psyche
+  trich: in psychology, the mind in its totality, as distinguished from the physical organism. The term, which historically had come to refer to the soul or the very essence of life, derives from the character of Psyche in Greek mythology
+  vi_tri: mục từ "psyche"
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Psyche là "tâm trí" trong tiếng Hy Lạp, gốc của chữ psychology; Zero là bắt đầu từ con số 0." Chữ mới theo định nghĩa của APA Dictionary (bậc 2); bỏ "gốc của chữ psychology" (APA không nói, chưa mở được nguồn từ nguyên bậc 2) và câu về chữ "Zero" (site đổi tên thành Psyche).'
+- id: s2
+  cau: 'Psyche là bản làm lại của Psyche Zero (bản đầu của site, 10/2026): từng trang được kiểm chứng lại từ đầu rồi mới lên site mới.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'plans/lam-lai/README.md (Quyết định: tên site, luật 1); bản build thật chỉ có trang đã khóa (src/ban-build.mjs). Câu cũ ở bản nháp đầu "bản cũ vẫn mở" đã bỏ: ngày 17/11/2026 https://mtuann.github.io/psyche-zero/ trả 404 (báo cáo D8-L4).'
+- id: s3
+  cau: 'Nguyên tắc 1: mọi kết luận quan trọng đều có nhãn mức độ chắc chắn, kèm giải thích và nguồn.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: AGENTS.md, Quy tắc nội dung; plans/ben-vung/chuan-kiem-dinh.md mục 4 (mỗi khung nhãn có co_so); tools/khoa.mjs chặn khóa nhãn thiếu co_so, ly_do.
+- id: s4
+  cau: 'Nguyên tắc 2: nói thẳng về khủng hoảng tái lập; khi một hiệu ứng nổi tiếng không tái lập được, chúng tôi nói rõ.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: AGENTS.md, Quy tắc nội dung ("nói thẳng về kết quả tái lập"); loại nhận định tai-lap và thước đo nhãn (Đang tranh cãi khi tái lập lớn thất bại), chuan-kiem-dinh.md mục 1, 4.
+- id: s5
+  cau: 'Nguyên tắc 3: ưu tiên phân tích tổng hợp hơn nghiên cứu đơn lẻ; ghi cỡ mẫu, năm, thiết kế.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'AGENTS.md ("ưu tiên phân tích tổng hợp"); chuan-kiem-dinh.md mục 2 (bậc 2 cho câu về tình trạng bằng chứng). "Ghi cỡ mẫu, năm, thiết kế": khuôn hộp hồ sơ nghiên cứu (:::ho-so-nghien-cuu) và phần kể nghiên cứu ở các bài thí nghiệm.'
+- id: s6
+  cau: 'Nguyên tắc 4: tương quan không phải nhân quả.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Nguyên tắc viết của site; trang nhà của khái niệm: bang-chung/tuong-quan-nhan-qua (đã khóa).'
+- id: s7
+  cau: 'Nguyên tắc 5: nói rõ giới hạn văn hóa; phần lớn nghiên cứu được làm ở phương Tây; khi chưa có dữ liệu về người Việt, chúng tôi nói là chưa có.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Khung "Ở Việt Nam" (:::o-viet-nam) và câu thời sự "chưa tìm thấy nghiên cứu ở Việt Nam" có mốc và hạn (chuan-kiem-dinh.md mục 1, thoi-su). "Phần lớn nghiên cứu làm ở phương Tây" có trang nhà bang-chung/mau-va-chon-mau (WEIRD, đã khóa).
+- id: s8
+  cau: 'Nguyên tắc 6: không bịa; mọi tên nghiên cứu, năm, cỡ mẫu, số liệu đều được tra cứu và đối chiếu với nguồn.'
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'tools/khoa.mjs: mọi nhận định (trừ câu về chính site) phải có nguồn trong hồ sơ mới khóa được; bản thật chỉ có trang đã khóa.'
+- id: s9
+  cau: 'Nguyên tắc 7: khoa học, không phải self-help; chúng tôi viết "nghiên cứu gợi ý rằng…", không hứa "làm 5 bước này bạn sẽ hạnh phúc".'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Nguyên tắc viết (AGENTS.md: không lời khuyên điều trị; lời khuyên là khẳng định về bằng chứng, chuan-kiem-dinh.md mục 1).'
+- id: s10
+  cau: 'Nguyên tắc 8: mỗi nghiên cứu một trang nhà; nghiên cứu kinh điển được kể chi tiết ở một trang, nơi khác chỉ tóm một câu và dẫn về đó.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: AGENTS.md, Quy tắc nội dung; src/data/nghien-cuu.yml (trang_nha); câu cùng ý ở bat-dau/cach-kiem-chung (đã khóa).
+- id: s11
+  cau: Mỗi trang được tách thành từng khẳng định để đối chiếu với nguồn; bài Nền tảng qua hai lượt kiểm độc lập. Trang chỉ lên site khi đã kiểm xong, rồi được khóa. Dòng dưới tiêu đề mỗi bài ghi mức kiểm chứng và ngày khóa; phần việc do mô hình AI làm được nói ở trang Cách Psyche kiểm chứng.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: chuan-kiem-dinh.md mục 3 (lõi V3 hai lượt; mở rộng lượt 2 kiểm mẫu, nên câu chỉ nói "bài Nền tảng"); src/components/PageTitle.astro (chuTrangThai); trang bat-dau/cach-kiem-chung (đã khóa) có đoạn "Hiện nay, lượt 1, lượt 2 và lượt review do mô hình AI (Claude) làm".
+- id: s12
+  cau: Site không có và sẽ không có công cụ tự chẩn đoán.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: AGENTS.md, Quy tắc nội dung ("Không có công cụ tự chẩn đoán"); các công cụ hiện có (src/plugins/thanh-phan.mjs, CONG_CU) đều là thí nghiệm nhận thức, không có thang sàng lọc.
+- id: s13
+  cau: Bài về sức khỏe tâm thần chưa được chuyên gia đọc lại có dải "Chưa qua rà soát chuyên môn" ngay dưới tiêu đề.
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: src/components/PageTitle.astro (choRaSoat), tests/khung.test.mjs kiểm; chuan-kiem-dinh.md mục 5 (chủ repo đồng ý 16/11/2026).
+- id: s14
+  cau: Nội dung của Psyche theo giấy phép CC BY-SA 4.0; phông chữ Be Vietnam Pro theo giấy phép SIL Open Font License, kèm theo site.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: LICENSE-CONTENT; chân trang (src/components/Footer.astro); public/fonts/OFL-BeVietnamPro.txt (tests/khung.test.mjs kiểm có trong dist/).
+- id: n2
+  cau: Giấy phép CC BY-SA 4.0 cho phép chép, chia sẻ và chỉnh sửa, kể cả vì mục đích thương mại, miễn là ghi nguồn và chia sẻ bản chỉnh sửa theo cùng giấy phép.
+  loai: dinh-nghia
+  nguon:
+  - cc-by-sa-4
+  trich: Share — copy and redistribute the material in any medium or format for any purpose, even commercially. Adapt — remix, transform, and build upon the material for any purpose, even commercially. … Attribution — You must give appropriate credit … ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+  vi_tri: bản tóm tắt (deed), mục "You are free to" và "Under the following terms"
+  ket_qua: dung
+  ghi_chu: 'Câu mới (site cũ không nói giấy phép ở trang này). "Ghi nguồn (tên Psyche và link tới trang)": cách ghi nguồn hợp lý theo "appropriate credit" (tên, link); không phải điều khoản riêng.'
+- id: s15
+  cau: 'Site là một trang tĩnh: không có máy chủ riêng, không có tài khoản người dùng, không có công cụ đếm lượt xem hay quảng cáo. Phông chữ và mã đều tải từ chính site, không từ dịch vụ ngoài.'
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'Site tĩnh của Astro đăng trên GitHub Pages (.github/workflows/deploy.yml); tìm "analytics", "gtag", "plausible" trong src/ và astro.config.mjs: không có (17/11/2026); tests/khung.test.mjs chặn script, stylesheet, Google Fonts từ nguồn ngoài.'
+- id: n3
+  cau: Site được đăng trên GitHub Pages; theo tài liệu của GitHub (xem ngày 17/11/2026), địa chỉ IP của người truy cập trang GitHub Pages được ghi lại và lưu vì lý do an ninh.
+  loai: thoi-su
+  nguon:
+  - github-pages-docs
+  trich: When a GitHub Pages site is visited, the visitor's IP address is logged and stored for security purposes, regardless of whether the visitor has signed into GitHub or not.
+  vi_tri: mục Data collection
+  ket_qua: da-sua
+  ghi_chu: 'Thay câu cũ "Phông chữ được tải từ Google Fonts; khi tải phông, trình duyệt gửi yêu cầu đến máy chủ của Google" (sai với site mới: phông chữ tự host). Chính sách của dịch vụ có thể đổi: viết kèm ngày xem, có hạn.'
+  het_han: '2027-11-17'
+- id: s16
+  cau: Kết quả các bài thử chỉ lưu trong trình duyệt của bạn, không gửi đi đâu; xem, sao lưu, xóa ở trang Dữ liệu của tôi; xem lại ở Nhật ký.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'src/scripts/cong-cu/chung/luu.js (chỉ localStorage khóa psyche-zero); tìm fetch, XMLHttpRequest, sendBeacon, WebSocket trong src/scripts/: không có (17/11/2026). Hai trang them/du-lieu-cua-toi, them/nhat-ky cùng lô.'
+- id: s17
+  cau: Trình duyệt lưu các trang bạn đã mở trên máy, để đọc lại được khi mất mạng; mỗi lần site cập nhật, bản lưu cũ được thay; tắt được ở trang Dữ liệu của tôi. Sách in gộp mọi bài đã kiểm chứng, Tờ tóm tắt tóm mỗi bài trong vài dòng.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'src/scripts/ngoai-tuyen/ (sw.js: trang mạng trước rồi lưu; phiên bản theo mã băm bản build, bản mới xóa bộ nhớ đệm cũ; dang-ky.js đọc tùy chọn ngoai-tuyen); tests/trinh-duyet/kiem-ngoai-tuyen.mjs. Sách in, Tờ tóm tắt: hồ sơ sach/index, sach/tom-tat.'
+- id: s18
+  cau: Các phần "Thử suy ngẫm" ở cuối bài không phải để chấm điểm.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Câu hỏi chỉ báo số câu đúng cho người đọc, không xếp loại, không gửi đi (src/scripts/quiz.js); có thể làm lại.
+- id: n4
+  cau: 'Hiệu ứng kiểm tra: tự kiểm tra giúp nhớ lâu hơn đọc lại.'
+  loai: phat-hien
+  nguon:
+  - rowland2014
+  - roediger2006
+  trich: The present study uses meta-analysis to examine the effects of testing versus restudy on retention. … Engaging in a test over previously studied information can serve as a potent learning event, a phenomenon referred to as the testing effect.
+  vi_tri: Rowland 2014, tóm tắt (OpenAlex); Roediger & Karpicke 2006, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "cố nhớ lại một điều giúp nhớ lâu hơn đọc lại nó", link tới bài Vì sao ta quên?. Chữ mới dùng đúng câu khung nhãn Vững chắc của trang nhà kham-pha/tri-nho/duong-cong-quen ("tự kiểm tra giúp nhớ lâu hơn đọc lại", đã khóa, co_so gồm rowland2014) và link về trang nhà ấy. Một câu, không thêm con số.'
+- id: s19
+  cau: Các bài mở đầu bằng một câu hỏi để bạn tự đoán trước.
+  loai: ve-site
+  ket_qua: da-bo
+  ghi_chu: 'Bỏ khỏi trang: chưa kiểm hết mọi bài có câu đoán trước ở đầu; không cần cho trang.'
+- id: s20
+  cau: Báo lỗi ở mục Issues của Psyche trên GitHub (cần tài khoản GitHub); lỗi được báo là một trong những lý do để mở khóa một trang, kiểm lại và sửa.
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: 'Repo mtuann/psyche công khai, bật Issues (api.github.com/repos/mtuann/psyche: "private": false, "has_issues": true; https://github.com/mtuann/psyche/issues trả 200, 17/11/2026). Lý do mở khóa: chuan-kiem-dinh.md mục 8, trường hợp 1. tests/khung.test.mjs đổi: cho link tới repo công khai mtuann/psyche.'
+doi_chu:
+- cu: '"Psyche Zero là một site …"; "Psyche là "tâm trí" trong tiếng Hy Lạp, gốc của chữ psychology; Zero là bắt đầu từ con số 0."'
+  moi: Tên Psyche; định nghĩa psyche theo APA Dictionary; câu về bản làm lại
+  ly_do: Đổi tên site (Quyết định); n1, s2
+- cu: 'Nguyên tắc 6: "… Dữ liệu minh họa luôn được ghi rõ là giả lập."'
+  moi: bỏ vế ấy
+  ly_do: 's8: không kiểm được trên mọi trang (chưa có phép kiểm); phần còn lại đúng theo công cụ khóa'
+- cu: (không có)
+  moi: Nguyên tắc 8 "Mỗi nghiên cứu một trang nhà"; mục "Cách kiểm chứng", "Giấy phép", "Đọc khi không có mạng"
+  ly_do: 'Site mới: kiến trúc bền vững (plans/ben-vung/README.md mục 2), giấy phép CC BY-SA 4.0 (chủ repo chọn 30/10/2026), dùng khi mất mạng và Sách in (D8-L4)'
+- cu: '"Các trang về sức khỏe tâm thần được đánh dấu "đang chờ người có chuyên môn đọc lại" cho đến khi được rà soát."'
+  moi: '"Bài về sức khỏe tâm thần chưa được chuyên gia đọc lại có dải "Chưa qua rà soát chuyên môn" ngay dưới tiêu đề."'
+  ly_do: 's13: tên dải trên site mới'
+- cu: '"Phông chữ được tải từ Google Fonts; …"'
+  moi: Phông chữ, mã tải từ chính site; câu về GitHub Pages ghi IP
+  ly_do: s15, n3
+- cu: '"Các bài cũng mở đầu bằng một câu hỏi để bạn tự đoán trước. Xem bằng chứng ở bài Vì sao ta quên?"'
+  moi: '"Xem bằng chứng ở bài Học dồn có nhớ lâu?"'
+  ly_do: s19 (bỏ), n4 (trang nhà của hiệu ứng kiểm tra)
+- cu: 'Mục Góp ý: "… xin hãy báo cho chúng tôi. Sửa sai là một phần của khoa học."'
+  moi: Link tới GitHub Issues; câu về mở khóa
+  ly_do: 's20: repo đã công khai; site cũ không có đường báo. Bỏ câu chung chung "Sửa sai là một phần của khoa học" (không kiểm được, chuan-kiem-dinh.md mục 1)'
+ghi_chu: 'Trang khung về site: phần lớn là câu về chính site; ba câu có nguồn ngoài (n1 định nghĩa, n2 giấy phép, n3 thời sự) và một câu về bằng chứng (n4, tóm một câu của trang nhà).'

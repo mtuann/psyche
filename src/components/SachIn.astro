@@ -1,0 +1,110 @@
+---
+// Sách in (D8-L4; plans/lam-lai/README.md, đợt 8): mọi bài (khám phá, thí nghiệm, hiểu bằng chứng) có trong bản build,
+// gộp thành một trang in được, theo lĩnh vực rồi thứ tự của src/data/trang.yml. Sinh lúc build, không có file sinh nào
+// được commit. Bản thật chỉ có bài đã khóa (src/ban-build.mjs); bản xem có cả bài chưa khóa, đánh dấu "Chưa kiểm định".
+// Mỗi bài: tên, lĩnh vực, mô tả, dòng trạng thái kiểm định, địa chỉ trên web, rồi nội dung đã dựng (baiTrongSach: id có
+// tiền tố riêng, tiêu đề lùi hai bậc, công cụ thay bằng một dòng link). Bài Sức khỏe tâm thần chưa có chữ ký chuyên gia
+// giữ dải "Chưa qua rà soát chuyên môn" như trên trang của bài. MarkdownContent.astro đặt thành phần này vào chỗ ::sach-in.
+import { getCollection, render } from 'astro:content';
+import { DUONG_GOC, diaChi, trangCuaMuc } from '../ban-build.mjs';
+import { loaiTrang } from '../du-lieu.mjs';
+import { chuTrangThai, kiemDinh, ngayViet } from '../kiem-dinh.mjs';
+import { baiTheoLinhVuc, soBaiChuaLen } from '../plugins/thanh-phan.mjs';
+import BaiTrongSach from './BaiTrongSach.astro';
+
+const KHOA = Object.values(import.meta.glob('/kiem-dinh/khoa.json', { eager: true, import: 'default' }))[0] as { trang?: Record<string, string> } | undefined;
+const HO_SO = import.meta.glob('/kiem-dinh/**/*.yml', { eager: true, query: '?raw', import: 'default' });
+const SITE = 'https://mtuann.github.io';
+
+// Bộ docs đã lọc theo bản build (src/ban-build.mjs, locTheoBan): bản thật chỉ có trang đã khóa. Bản ghi trang theo thứ
+// tự của trang.yml (bộ nạp giữ thứ tự)
+const muc = new Map((await getCollection('docs')).map((e) => [trangCuaMuc(e), e]));
+const trangCo = [...muc.keys()].filter((t): t is string => Boolean(t));
+const banGhi = (await getCollection('trang')).map((e) => e.data);
+const linhVuc = (await getCollection('linh-vuc')).map((e) => e.data);
+const nhom = baiTheoLinhVuc({ banGhi, linhVuc, trangCo });
+const con = soBaiChuaLen({ banGhi, trangCo });
+
+const phan = await Promise.all(
+	nhom.map(async ({ lv, bai }) => ({
+		lv,
+		bai: await Promise.all(
+			bai.map(async (r) => {
+				const e = muc.get(r.id)!;
+				const kd = kiemDinh(r.id, KHOA, HO_SO[`/kiem-dinh/${r.id}.yml`] as string | undefined);
+				const { Content } = await render(e);
+				return {
+					id: r.id,
+					tienTo: 'bai-' + r.id.replace(/[^a-z0-9]+/g, '-'),
+					ten: e.data.title,
+					moTa: e.data.description,
+					diaChi: diaChi(r.id, DUONG_GOC),
+					kd,
+					trangThai: kd && kd.nhanDinh > 0 ? chuTrangThai(kd, r) : null,
+					choRaSoat: Boolean(kd?.choChuyenGia && loaiTrang(r.id) === 'suc-khoe'),
+					Content,
+				};
+			}),
+		),
+	})),
+);
+const tatCa = phan.flatMap((x) => x.bai);
+const ngayMoi = tatCa.map((b) => b.kd?.ngay).filter(Boolean).sort().at(-1);
+const soChuaKhoa = tatCa.filter((b) => !b.kd).length;
+---
+
+<div class="pz-sach">
+	<p class="pz-sach__bia">
+		Gồm {tatCa.length} bài{ngayMoi && <> đã kiểm chứng, bài mới nhất khóa ngày {ngayViet(ngayMoi)}</>}.
+		{con > 0 && <> Còn {con} bài sắp có: mỗi bài vào sách sau khi được kiểm chứng lại.</>}
+		{soChuaKhoa > 0 && <strong> Bản xem: {soChuaKhoa} bài chưa kiểm định, không có trong bản trên site.</strong>}
+	</p>
+	<nav class="pz-sach__muc-luc" aria-labelledby="muc-luc-sach">
+		<h2 id="muc-luc-sach">Mục lục</h2>
+		<ol>
+			{
+				phan.map(({ lv, bai }) => (
+					<li>
+						<a href={`#lv-${lv.id}`}>{lv.ten}</a>
+						<ol>
+							{bai.map((b) => (
+								<li>
+									<a href={`#${b.tienTo}`}>{b.ten}</a>
+								</li>
+							))}
+						</ol>
+					</li>
+				))
+			}
+		</ol>
+	</nav>
+	{
+		phan.map(({ lv, bai }) => (
+			<section class="pz-sach__lv" style={`--h: ${lv.mau}`} aria-labelledby={`lv-${lv.id}`}>
+				<h2 id={`lv-${lv.id}`}>{lv.ten}</h2>
+				{bai.map((b) => (
+					<article class="pz-sach__bai" aria-labelledby={b.tienTo}>
+						<header class="pz-sach__dau">
+							<p class="pz-sach__lv-ten">{lv.ten}</p>
+							<h3 id={b.tienTo}>{b.ten}</h3>
+							{b.moTa && <p class="pz-sach__mo">{b.moTa}</p>}
+							<p class="pz-sach__trang-thai">
+								{b.trangThai ?? (b.kd ? 'Đã kiểm chứng' : <strong>Chưa kiểm định: chỉ có ở bản xem.</strong>)} · Trên web:{' '}
+								<a href={b.diaChi}>{SITE + b.diaChi}</a>
+							</p>
+							{b.choRaSoat && (
+								<p class="pz-sach__ra-soat">
+									<strong>Chưa qua rà soát chuyên môn.</strong> Bài giúp hiểu chung, không dùng để tự chẩn đoán. Bạn đang gặp
+									khó khăn? Xem trang Hỗ trợ: <a href={diaChi('ho-tro/index')}>{SITE + diaChi('ho-tro/index')}</a>.
+								</p>
+							)}
+						</header>
+						<BaiTrongSach tienTo={b.tienTo} ten={b.ten} diaChiBai={b.diaChi}>
+							<b.Content />
+						</BaiTrongSach>
+					</article>
+				))}
+			</section>
+		))
+	}
+</div>
