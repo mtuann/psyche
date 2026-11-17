@@ -2,81 +2,94 @@
 ban_ghi: ngo-nhan/phong-cach-hoc
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 nguon:
-- id: pashler2008
-  ten: 'Pashler và cộng sự (2008). Learning styles: Concepts and evidence'
-  link: https://doi.org/10.1111/j.1539-6053.2009.01038.x
-- id: hattie2025
-  ten: Hattie và cộng sự (2025). Learning styles, preferences, or strategies? An explanation for the resurgence of styles across many meta-analyses
-  link: https://doi.org/10.1007/s10648-025-10002-w
-- id: newton2020
-  ten: Newton và cộng sự (2020). How common is belief in the learning styles neuromyth, and does it matter? A pragmatic systematic review
-  link: https://doi.org/10.3389/feduc.2020.602451
+  - id: pashler2008
+    ten: 'Pashler và cộng sự (2008). Learning styles: Concepts and evidence'
+    link: https://doi.org/10.1111/j.1539-6053.2009.01038.x
+  - id: hattie2025
+    ten: Hattie và cộng sự (2025). Learning styles, preferences, or strategies? An explanation for the resurgence of styles across many meta-analyses
+    link: https://doi.org/10.1007/s10648-025-10002-w
+  - id: newton2020
+    ten: Newton và cộng sự (2020). How common is belief in the learning styles neuromyth, and does it matter? A pragmatic systematic review
+    link: https://doi.org/10.3389/feduc.2020.602451
 nhan_dinh:
-- id: nhan
-  cau: 'Dạy khớp với phong cách học giúp học tốt hơn: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - pashler2008
-  - hattie2025
-  co_so:
-  - pashler2008
-  - hattie2025
-  ly_do: 'Khớp khung bac-bo của trang nhà phong-cach-hoc (đã khóa): tổng quan 2008, tổng hợp 17 phân tích tổng hợp 2025 (d = 0,04).'
-  ket_qua: dung
-- id: g1
-  cau: Người ta có sở thích học khác nhau; giả thuyết "dạy khớp thì học tốt hơn" cần một kiểu thí nghiệm cụ thể (thiết kế bắt chéo) để kiểm tra.
-  loai: dinh-nghia
-  truong:
-  - giai_thich
-  nguon:
-  - pashler2008
-  trich: 'Trang nhà (đã khóa): khung kha-vung[người ta có sở thích học khác nhau]; Pashler 2008 nêu yêu cầu thiết kế bắt chéo (theo hồ sơ trang nhà).'
-  ket_qua: dung
-- id: g2
-  cau: Bài tổng quan năm 2008 gần như không tìm thấy bằng chứng ủng hộ.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - pashler2008
-  trich: Theo hồ sơ trang nhà kham-pha/tri-nho/phong-cach-hoc (đã khóa) và khung bac-bo của trang bat-dau/doc-nhan-chac-chan.
-  ket_qua: dung
-- id: g3
-  cau: 'Tổng hợp 17 phân tích tổng hợp (2025): ở các nghiên cứu kiểm tra đúng việc "dạy khớp", hiệu ứng gần bằng 0 (d = 0,04).'
-  loai: so-lieu
-  truong:
-  - giai_thich
-  nguon:
-  - hattie2025
-  trich: Như trên (bat-dau/doc-nhan-chac-chan, khung bac-bo, đã khóa).
-  ket_qua: dung
-- id: g4
-  cau: Khoảng 9/10 giáo viên được khảo sát ở nhiều nước vẫn tin vào nó.
-  loai: so-lieu
-  truong:
-  - giai_thich
-  nguon:
-  - newton2020
-  trich: 'Trang nhà: "Một tổng quan năm 2020 gộp 37 nghiên cứu với hơn 15.000 nhà giáo dục ở 18 quốc gia: trung bình 89% tin vào ý tưởng này".'
-  ket_qua: dung
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/tri-nho/phong-cach-hoc
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: Trang nhà đã khóa, nhãn Đã bị bác bỏ cho đúng khẳng định này.
+  - id: nhan
+    cau: 'Dạy khớp với phong cách học giúp học tốt hơn: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - pashler2008
+      - hattie2025
+    co_so:
+      - pashler2008
+      - hattie2025
+    ly_do: 'Khớp khung bac-bo của trang nhà phong-cach-hoc (đã khóa): tổng quan 2008, tổng hợp 17 phân tích tổng hợp 2025 (d = 0,04).'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1007/s10648-025-10002-w" ]
+  - id: g1
+    cau: Người ta có sở thích học khác nhau; giả thuyết "dạy khớp thì học tốt hơn" cần một kiểu thí nghiệm cụ thể (thiết kế bắt chéo) để kiểm tra.
+    loai: dinh-nghia
+    truong:
+      - giai_thich
+    nguon:
+      - pashler2008
+    trich: 'Trang nhà (đã khóa): khung kha-vung[người ta có sở thích học khác nhau]; Pashler 2008 nêu yêu cầu thiết kế bắt chéo (theo hồ sơ trang nhà).'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/26162104/" ]
+    luot_2_ghi_chu: Thiết kế bắt chéo đúng như mô tả (chia nhóm theo phong cách, ngẫu nhiên gán phương pháp, bài thi chung, tương tác).
+  - id: g2
+    cau: Bài tổng quan năm 2008 gần như không tìm thấy bằng chứng ủng hộ.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - pashler2008
+    trich: Theo hồ sơ trang nhà kham-pha/tri-nho/phong-cach-hoc (đã khóa) và khung bac-bo của trang bat-dau/doc-nhan-chac-chan.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/26162104/" ]
+    luot_2_ghi_chu: "Pashler 2008 (PSPI 9(3)): 'gần như không có bằng chứng'."
+  - id: g3
+    cau: 'Tổng hợp 17 phân tích tổng hợp (2025): ở các nghiên cứu kiểm tra đúng việc "dạy khớp", hiệu ứng gần bằng 0 (d = 0,04).'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - hattie2025
+    trich: Như trên (bat-dau/doc-nhan-chac-chan, khung bac-bo, đã khóa).
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1007/s10648-025-10002-w" ]
+  - id: g4
+    cau: Khoảng 9/10 giáo viên được khảo sát ở nhiều nước vẫn tin vào nó.
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - newton2020
+    trich: 'Trang nhà: "Một tổng quan năm 2020 gộp 37 nghiên cứu với hơn 15.000 nhà giáo dục ở 18 quốc gia: trung bình 89% tin vào ý tưởng này".'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3389/feduc.2020.602451" ]
+    luot_2_ghi_chu: "'Khoảng 9/10' = 89,1%; 18 nước, 2009–2020."
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/tri-nho/phong-cach-hoc
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: Trang nhà đã khóa, nhãn Đã bị bác bỏ cho đúng khẳng định này.

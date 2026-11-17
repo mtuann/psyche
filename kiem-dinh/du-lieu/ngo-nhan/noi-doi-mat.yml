@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp gần 25.000 người phán đoán cho thấy con người chỉ phân biệt đúng nói thật hay nói dối khoảng 54% số lần, chỉ hơn đoán may (50%) một chút. Phần lớn các dấu hiệu hành vi mà ta hay tin, kể cả tránh nhìn, liên hệ rất yếu với việc nói dối.'' → mới ''Phân tích tổng hợp gần 25.000 người phán đoán cho thấy con người chỉ phân biệt đúng nói thật hay nói dối khoảng 54% số lần, chỉ hơn đoán may (50%) một chút. Trong 158 dấu hiệu hành vi được tổng hợp ở một phân tích khác, nhiều dấu hiệu không liên hệ hoặc chỉ liên hệ yếu với việc nói dối; riêng nhìn vào mắt người đối diện và tránh nhìn thì gần như không liên hệ gì.'''
@@ -36,6 +36,11 @@ nhan_dinh:
   - bond2006
   ly_do: 'Hai phân tích tổng hợp lớn: tránh nhìn không liên hệ với nói dối (d = 0,03, 6 ước lượng; giao tiếp bằng mắt d = 0,01, 32 ước lượng); người phán đoán chỉ đúng 54%.'
   ket_qua: dung
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1207/s15327957pspr1003_2
+  - https://doi.org/10.1037/a0023589
+  luot_2_ghi_chu: 'Chỗ khó: 54% (206 tài liệu) và Hartwig & Bond 2011 (66 dấu hiệu, 153 mẫu) khớp ý ''không đoán được nói dối qua ánh mắt''; d của ánh mắt trong DePaulo 2003 chưa mở.'
 - id: g1
   cau: 'Phân tích tổng hợp 206 tài liệu, 24.483 người phán đoán: đúng trung bình 54%.'
   loai: so-lieu
@@ -45,6 +50,9 @@ nhan_dinh:
   - bond2006
   trich: synthesizing research results from 206 documents and 24,483 judges ... people achieve an average of 54% correct lie-truth judgments
   ket_qua: dung
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1207/s15327957pspr1003_2
 - id: g2
   cau: Trong 158 dấu hiệu, nhiều hành vi không liên hệ hoặc liên hệ yếu với nói dối; giao tiếp bằng mắt (d = 0,01) và tránh nhìn (d = 0,03) gần như không liên hệ.
   loai: so-lieu
@@ -54,5 +62,9 @@ nhan_dinh:
   - depaulo2003
   trich: '"The combined results of 1,338 estimates of 158 cues ... many behaviors showed no discernible links, or only weak links, to deceit." Bảng 3: "027 Eye contact 1,491 32 17 0.01 ... 028 Gaze aversion 411 6 4 0.03"'
   ket_qua: da-sua
-  ghi_chu: 'Cũ "Phần lớn các dấu hiệu ... kể cả tránh nhìn, liên hệ rất yếu": đọc toàn văn (DukeSpace), tránh nhìn gần như bằng 0; nêu số dấu hiệu.'
+  ghi_chu: 'Cũ "Phần lớn các dấu hiệu ... kể cả tránh nhìn, liên hệ rất yếu": đọc toàn văn (DukeSpace), tránh nhìn gần như bằng 0; nêu số dấu hiệu. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 khong-chac (d chỉ có ở thân bài). Tôi đọc toàn văn từ kho lưu trữ công khai của Đại học Duke (DukeSpace, bản của tác giả, hdl.handle.net/10161/14941), Bảng 3: "027 Eye contact ... 0.01; 028 Gaze aversion ... 0.03". Giữ.'
   vi_tri: tóm tắt; Bảng 3
+  luot_2: khong-chac
+  luot_2_nguon:
+  - https://doi.org/10.1037/0033-2909.129.1.74
+  luot_2_ghi_chu: Tóm tắt DePaulo 2003 xác nhận 158 dấu hiệu, 'many behaviors showed no discernible links, or only weak links'; d = 0,01 và 0,03 của giao tiếp bằng mắt và tránh nhìn chỉ có trong thân bài, không có bản mở (đã tìm Europe PMC, PubMed, OpenAlex).

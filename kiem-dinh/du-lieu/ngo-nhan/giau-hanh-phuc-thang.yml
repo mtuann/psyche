@@ -2,78 +2,88 @@
 ban_ghi: ngo-nhan/giau-hanh-phuc-thang
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'chỗ khó: trang nhà tien-va-hanh-phuc (đã khóa) xếp "tiền có mua được hạnh phúc cảm xúc không?" và "con số 75.000 USD" vào Đang tranh cãi. Thẻ giữ Đã bị bác bỏ vì khẳng định nói về hình dạng "đường thẳng", mà mọi bộ dữ liệu đã kể đều thấy quan hệ theo logarit; lượt 2 (Opus) xem lại. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Kahneman và Deaton (2010) thấy hạnh phúc cảm xúc chững lại quanh ngưỡng khoảng 75.000 USD/năm, trong khi đánh giá cuộc sống vẫn tăng chậm theo thu nhập. Nghiên cứu sau này (Killingsworth, 2021) thấy hạnh phúc vẫn tăng tiếp nhưng không đều — tóm lại không phải đường thẳng vô hạn.'' → mới ''Kahneman và Deaton (2010) thấy đánh giá cuộc sống tăng theo logarit thu nhập, còn hạnh phúc cảm xúc không cải thiện thêm sau khoảng 75.000 USD/năm. Killingsworth (2021) đo cảm xúc theo thời gian thực và thấy hạnh phúc vẫn tăng theo logarit thu nhập, không có ngưỡng; mâu thuẫn này được hòa giải năm 2023 trên dữ liệu người Mỹ nhưng vẫn còn bị bình luận. Dù theo cách nào, quan hệ là theo logarit: thu nhập càng cao, mỗi đồng thêm vào đi cùng mức tăng hạnh phúc càng nhỏ, không phải đường thẳng.'' | nguon: cũ [''kahneman2010''] → mới [''kahneman2010'', ''killingsworth2021'', ''killingsworth2023'']'
 nguon:
-- id: kahneman2010
-  ten: Kahneman và cộng sự (2010). High income improves evaluation of life but not emotional well-being
-  link: https://doi.org/10.1073/pnas.1011492107
-  toan_van: true
-- id: killingsworth2021
-  ten: Killingsworth (2021). Experienced well-being rises with income, even above $75,000 per year
-  link: https://doi.org/10.1073/pnas.2016976118
-- id: killingsworth2023
-  ten: 'Killingsworth và cộng sự (2023). Income and emotional well-being: A conflict resolved'
-  link: https://doi.org/10.1073/pnas.2208661120
+  - id: kahneman2010
+    ten: Kahneman và cộng sự (2010). High income improves evaluation of life but not emotional well-being
+    link: https://doi.org/10.1073/pnas.1011492107
+    toan_van: true
+  - id: killingsworth2021
+    ten: Killingsworth (2021). Experienced well-being rises with income, even above $75,000 per year
+    link: https://doi.org/10.1073/pnas.2016976118
+  - id: killingsworth2023
+    ten: 'Killingsworth và cộng sự (2023). Income and emotional well-being: A conflict resolved'
+    link: https://doi.org/10.1073/pnas.2208661120
 nhan_dinh:
-- id: nhan
-  cau: 'Càng giàu thì hạnh phúc càng tăng theo đường thẳng: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - kahneman2010
-  - killingsworth2021
-  co_so:
-  - kahneman2010
-  - killingsworth2021
-  ly_do: Cả hai bộ dữ liệu lớn (450.000 câu trả lời; 1,7 triệu báo cáo) đều thấy quan hệ theo logarit thu nhập.
-  ket_qua: dung
-  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
-- id: g1
-  cau: 'Kahneman & Deaton 2010: đánh giá cuộc sống tăng đều theo log thu nhập; hạnh phúc cảm xúc không tiến thêm sau khoảng 75.000 USD.'
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - kahneman2010
-  trich: When plotted against log income, life evaluation rises steadily. Emotional well-being also rises with log income, but there is no further progress beyond an annual income of ~$75,000.
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "đánh giá cuộc sống vẫn tăng chậm theo thu nhập": viết đúng "theo logarit".'
-- id: g2
-  cau: 'Killingsworth 2021: hạnh phúc trải nghiệm tăng tuyến tính theo log thu nhập, không ngưỡng.'
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - killingsworth2021
-  trich: 'Trang nhà (đã khóa): "Hạnh phúc trải nghiệm tăng tuyến tính theo logarit thu nhập trên toàn bộ dải thu nhập, vượt xa 75.000 USD — không có điểm gãy"'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "hạnh phúc vẫn tăng tiếp nhưng không đều": viết theo trang nhà.'
-- id: g3
-  cau: Mâu thuẫn được hòa giải năm 2023 trên dữ liệu người Mỹ, cách hòa giải còn bị bình luận.
-  loai: lich-su
-  truong:
-  - giai_thich
-  nguon:
-  - killingsworth2023
-  trich: 'Trang nhà: khung tranh-cai "mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) được hòa giải năm 2023 trên dữ liệu người Mỹ, và cách hòa giải ấy lại bị bình luận năm 2024"'
-  ket_qua: da-sua
-  ghi_chu: Câu mới theo trang nhà.
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/hanh-phuc/tien-va-hanh-phuc
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: Trang nhà đã khóa.
+  - id: nhan
+    cau: 'Càng giàu thì hạnh phúc càng tăng theo đường thẳng: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - kahneman2010
+      - killingsworth2021
+    co_so:
+      - kahneman2010
+      - killingsworth2021
+    ly_do: Cả hai bộ dữ liệu lớn (450.000 câu trả lời; 1,7 triệu báo cáo) đều thấy quan hệ theo logarit thu nhập.
+    ket_qua: dung
+    ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/33468644/", "https://pubmed.ncbi.nlm.nih.gov/36857342/" ]
+    luot_2_ghi_chu: Quan hệ tuyến tính theo log thu nhập (mỗi đồng thêm có tác dụng giảm dần), không phải đường thẳng theo số tiền; ngộ nhận 'đường thẳng' sai. Lưu ý vế 'càng giàu càng hạnh phúc' vẫn đúng theo log.
+  - id: g1
+    cau: 'Kahneman & Deaton 2010: đánh giá cuộc sống tăng đều theo log thu nhập; hạnh phúc cảm xúc không tiến thêm sau khoảng 75.000 USD.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - kahneman2010
+    trich: When plotted against log income, life evaluation rises steadily. Emotional well-being also rises with log income, but there is no further progress beyond an annual income of ~$75,000.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "đánh giá cuộc sống vẫn tăng chậm theo thu nhập": viết đúng "theo logarit".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/20823223/" ]
+  - id: g2
+    cau: 'Killingsworth 2021: hạnh phúc trải nghiệm tăng tuyến tính theo log thu nhập, không ngưỡng.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - killingsworth2021
+    trich: 'Trang nhà (đã khóa): "Hạnh phúc trải nghiệm tăng tuyến tính theo logarit thu nhập trên toàn bộ dải thu nhập, vượt xa 75.000 USD — không có điểm gãy"'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "hạnh phúc vẫn tăng tiếp nhưng không đều": viết theo trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/33468644/" ]
+  - id: g3
+    cau: Mâu thuẫn được hòa giải năm 2023 trên dữ liệu người Mỹ, cách hòa giải còn bị bình luận.
+    loai: lich-su
+    truong:
+      - giai_thich
+    nguon:
+      - killingsworth2023
+    trich: 'Trang nhà: khung tranh-cai "mâu thuẫn giữa Kahneman–Deaton (2010) và Killingsworth (2021) được hòa giải năm 2023 trên dữ liệu người Mỹ, và cách hòa giải ấy lại bị bình luận năm 2024"'
+    ket_qua: da-sua
+    ghi_chu: Câu mới theo trang nhà.
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/36857342/", "https://doi.org/10.1073/pnas.2313712121" ]
+    luot_2_ghi_chu: Dữ liệu là người Mỹ đi làm (Killingsworth 2021).
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/hanh-phuc/tien-va-hanh-phuc
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: Trang nhà đã khóa.

@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Con số “tính di truyền 40–60%” là thống kê trên cả quần thể, không phải tỉ lệ “do gen định đoạt” trong một con người cụ thể. Cùng một bộ gen, môi trường và nỗ lực khác nhau vẫn cho kết quả khác nhau — gen đặt khoảng khả năng, không viết sẵn kết cục.'' → mới ''Tính di truyền là con số thống kê trên một quần thể: bao nhiêu phần trăm khác biệt giữa người với người gắn với khác biệt về gen, không phải phần "do gen định đoạt" trong một con người cụ thể. Phân tích tổng hợp gần như mọi nghiên cứu sinh đôi trong 50 năm (2015) cho tính di truyền trung bình 49% trên mọi tính trạng; nghĩa là khoảng một nửa khác biệt còn lại gắn với những thứ khác ngoài gen.'''
@@ -30,6 +30,9 @@ nhan_dinh:
   - polderman2015
   ly_do: 'Phân tích tổng hợp 17.804 tính trạng, 2.748 công bố: tính di truyền trung bình 49%, xa 100%.'
   ket_qua: dung
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1038/ng.3285
 - id: g1
   cau: 'Tính di truyền: phần trăm khác biệt giữa người với người trong một quần thể gắn với khác biệt về gen; không phải tỉ lệ trong một người.'
   loai: dinh-nghia
@@ -40,6 +43,10 @@ nhan_dinh:
   trich: 'Trang nhà gen-va-tinh-cach (đã khóa): "tính di truyền (heritability). Đó là một con số thống kê trả lời câu hỏi: trong một quần thể cụ thể, bao nhiêu phần trăm khác biệt giữa người với người có thể gắn với khác biệt về gen?"'
   ket_qua: da-sua
   ghi_chu: Viết theo định nghĩa của trang nhà.
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1038/nrg2322
+  luot_2_ghi_chu: Chỉ đọc tóm tắt Visscher 2008; ý 'không phải tỉ lệ trong một người' là diễn giải chuẩn nhưng không có chữ trong tóm tắt.
 - id: g2
   cau: 'Polderman 2015: 17.804 tính trạng từ 2.748 công bố; tính di truyền trung bình 49%.'
   loai: so-lieu
@@ -50,6 +57,9 @@ nhan_dinh:
   trich: a meta-analysis of twin correlations and reported variance components for 17,804 traits from 2,748 publications ... across all traits the reported heritability is 49%
   ket_qua: da-sua
   ghi_chu: 'Cũ "tính di truyền 40–60%": nguồn cho 49% trung bình.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1038/ng.3285
 - id: g3
   cau: (Đã bỏ) Gen đặt khoảng khả năng, không viết sẵn kết cục; cùng một bộ gen, môi trường và nỗ lực khác nhau cho kết quả khác nhau.
   loai: phat-hien
@@ -58,7 +68,11 @@ nhan_dinh:
   nguon: []
   trich: ''
   ket_qua: da-bo
-  ghi_chu: Câu ẩn dụ và câu về "nỗ lực" không có nguồn; thay bằng suy luận trực tiếp từ con số 49%.
+  ghi_chu: 'Câu ẩn dụ và câu về "nỗ lực" không có nguồn; thay bằng suy luận trực tiếp từ con số 49%. Sau lượt 2 (Opus 5.5, 18/11/2026): Giữ da-bo: câu đã bỏ khỏi thẻ, lượt 2 đồng ý bỏ hay không có nguồn để giữ.'
+  luot_2: khong-chac
+  luot_2_nguon:
+  - https://doi.org/10.1038/ng.3285
+  luot_2_ghi_chu: Câu đã bỏ. Polderman 2015 (tính di truyền 49%) hợp với ý nhưng không nói trực tiếp về cùng bộ gen, khác môi trường. Đã tìm Europe PMC, PubMed, OpenStax (mục 3.1 không bàn tính di truyền).
 - id: trang
   cau: Bài liên quan của thẻ là kham-pha/co-so-sinh-hoc/gen-va-tinh-cach
   loai: ve-site

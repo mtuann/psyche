@@ -2,41 +2,46 @@
 ban_ghi: ngo-nhan/vaccine-tu-ky
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp năm 2014 gộp 5 nghiên cứu đoàn hệ với hơn 1,25 triệu trẻ và 5 nghiên cứu bệnh-chứng, không tìm thấy liên hệ giữa tiêm chủng (kể cả vắc-xin sởi-quai bị-rubella) và tự kỷ: tỉ số odds gộp là 0,99, tức gần như bằng nhau giữa nhóm tiêm và không tiêm. Đây là một trong những ngộ nhận bị bác bỏ kỹ nhất trong y học.'' → mới ''Phân tích tổng hợp năm 2014 gộp 5 nghiên cứu đoàn hệ với hơn 1,25 triệu trẻ và 5 nghiên cứu bệnh-chứng, không tìm thấy liên hệ giữa tiêm chủng (kể cả vắc-xin sởi-quai bị-rubella) và tự kỷ: ở các nghiên cứu đoàn hệ, tỉ số odds gộp là 0,99, tức gần như bằng nhau giữa nhóm tiêm và không tiêm.'''
 nguon:
-- id: taylor2014
-  ten: 'Taylor và cộng sự (2014). Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies'
-  link: https://doi.org/10.1016/j.vaccine.2014.04.085
+  - id: taylor2014
+    ten: 'Taylor và cộng sự (2014). Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies'
+    link: https://doi.org/10.1016/j.vaccine.2014.04.085
 nhan_dinh:
-- id: nhan
-  cau: 'Tiêm vắc-xin cho trẻ gây tự kỷ: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - taylor2014
-  co_so:
-  - taylor2014
-  ly_do: 'Phân tích tổng hợp 10 nghiên cứu (hơn 1,26 triệu trẻ): không liên hệ với vắc-xin nói chung, MMR, thimerosal, thủy ngân.'
-  ket_qua: dung
-- id: g1
-  cau: 'Taylor 2014: 5 nghiên cứu đoàn hệ (1.256.407 trẻ), 5 nghiên cứu bệnh-chứng (9.920 trẻ); OR 0,99 cho tiêm chủng và tự kỷ; không liên hệ với MMR.'
-  loai: so-lieu
-  truong:
-  - giai_thich
-  nguon:
-  - taylor2014
-  trich: 'Five cohort studies involving 1,256,407 children, and five case-control studies involving 9,920 children ... no relationship between vaccination and autism (OR: 0.99; 95% CI: 0.92 to 1.06) ... nor ... MMR (OR: 0.84; 95% CI: 0.70 to 1.01)'
-  ket_qua: da-sua
-  ghi_chu: Thêm "ở các nghiên cứu đoàn hệ" cho OR 0,99. Bỏ câu "Đây là một trong những ngộ nhận bị bác bỏ kỹ nhất trong y học" (so sánh không có nguồn).
+  - id: nhan
+    cau: 'Tiêm vắc-xin cho trẻ gây tự kỷ: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - taylor2014
+    co_so:
+      - taylor2014
+    ly_do: 'Phân tích tổng hợp 10 nghiên cứu (hơn 1,26 triệu trẻ): không liên hệ với vắc-xin nói chung, MMR, thimerosal, thủy ngân.'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/j.vaccine.2014.04.085" ]
+  - id: g1
+    cau: 'Taylor 2014: 5 nghiên cứu đoàn hệ (1.256.407 trẻ), 5 nghiên cứu bệnh-chứng (9.920 trẻ); OR 0,99 cho tiêm chủng và tự kỷ; không liên hệ với MMR.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - taylor2014
+    trich: 'Five cohort studies involving 1,256,407 children, and five case-control studies involving 9,920 children ... no relationship between vaccination and autism (OR: 0.99; 95% CI: 0.92 to 1.06) ... nor ... MMR (OR: 0.84; 95% CI: 0.70 to 1.01)'
+    ket_qua: da-sua
+    ghi_chu: Thêm "ở các nghiên cứu đoàn hệ" cho OR 0,99. Bỏ câu "Đây là một trong những ngộ nhận bị bác bỏ kỹ nhất trong y học" (so sánh không có nguồn).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/j.vaccine.2014.04.085" ]
+    luot_2_ghi_chu: "Cohort: MMR OR 0,84 (0,70–1,01); case-control có OR 0,90 và 0,85 với p<0,05 theo chiều giảm."

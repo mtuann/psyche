@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''"Hiệu ứng kiểm tra" đã được lặp lại rất nhiều lần, ở cả phòng thí nghiệm lẫn lớp học. Trong một thí nghiệm năm 2006, người tự kiểm tra nhớ kém hơn một chút sau 5 phút nhưng nhớ tốt hơn rõ rệt sau một tuần so với người đọc lại. Bài tổng quan năm 2013 xếp tự kiểm tra vào nhóm kỹ thuật học hiệu quả cao, còn đọc lại và tô đậm vào nhóm hiệu quả thấp.'' → mới ''"Hiệu ứng kiểm tra" đã được lặp lại nhiều lần. Trong một thí nghiệm năm 2006, người đọc lại nhớ tốt hơn một chút ở bài kiểm tra sau 5 phút, nhưng người tự kiểm tra nhớ tốt hơn rõ rệt ở bài kiểm tra sau 2 ngày và sau một tuần. Bài tổng quan năm 2013 xếp tự kiểm tra vào nhóm kỹ thuật học hiệu quả cao, còn đọc lại và tô đậm vào nhóm hiệu quả thấp.'' | trang: cũ ''kham-pha/tri-nho/vi-sao-ta-quen'' → mới ''kham-pha/tri-nho/duong-cong-quen'''
@@ -35,6 +35,13 @@ nhan_dinh:
   - dunlosky2013
   ly_do: Khớp khung vung-chac[tự kiểm tra giúp nhớ lâu hơn đọc lại] của trang nhà duong-cong-quen (đã khóa).
   ket_qua: dung
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1037/a0037559
+  - https://doi.org/10.1111/j.1467-9280.2006.01693.x
+  - https://doi.org/10.1177/1529100612453266
+  luot_2_ghi_chu: 'Chỗ khó: có phân tích tổng hợp (Rowland 2014) và Dunlosky 2013; tóm tắt Rowland không nêu độ lớn hiệu ứng nên mức ''vững chắc'' dựa chủ yếu vào chiều cùng hướng ở nhiều tổng quan.'
+  ghi_chu: 'Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 dung (chỗ khó: độ lớn hiệu ứng). Giữ Vững chắc, khớp khung vung-chac của trang nhà duong-cong-quen (đã khóa).'
 - id: g1
   cau: 'Roediger & Karpicke 2006: sau 5 phút, đọc lại nhớ tốt hơn; sau 2 ngày và một tuần, tự kiểm tra nhớ tốt hơn rõ rệt.'
   loai: phat-hien
@@ -45,6 +52,9 @@ nhan_dinh:
   trich: final retention test 5 min, 2 days, or 1 week later. When the final test was given after 5 min, repeated studying improved recall relative to repeated testing. However, on the delayed tests, prior testing produced substantially greater retention than studying
   ket_qua: da-sua
   ghi_chu: Cũ "nhớ kém hơn một chút sau 5 phút nhưng nhớ tốt hơn rõ rệt sau một tuần"; thêm mốc 2 ngày; bỏ "ở cả phòng thí nghiệm lẫn lớp học" (không có nguồn mở trong hồ sơ).
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1111/j.1467-9280.2006.01693.x
 - id: g2
   cau: Dunlosky 2013 xếp tự kiểm tra hiệu quả cao, đọc lại và tô đậm hiệu quả thấp.
   loai: phat-hien
@@ -54,6 +64,9 @@ nhan_dinh:
   - dunlosky2013
   trich: highlighting, the keyword mnemonic, imagery use for text learning, and rereading. These techniques were rated as low utility (tóm tắt); practice testing ... high utility (trang nhà duong-cong-quen, đã khóa)
   ket_qua: dung
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/26173288/
 - id: trang
   cau: Bài liên quan của thẻ là kham-pha/tri-nho/duong-cong-quen
   loai: ve-site

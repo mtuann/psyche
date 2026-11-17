@@ -2,64 +2,72 @@
 ban_ghi: ngo-nhan/thuong-ngoai
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'chỗ khó: đổi nhãn Đã bị bác bỏ → Đang tranh cãi cho khớp trang nhà thuong-va-dong-luc (đã khóa): khung tranh-cai[hiệu ứng trong đời thực lớn đến đâu?] (Cerasoli 2014, Eisenberger & Cameron 1996). Đáp án trò chơi đổi từ Sai sang Còn tranh cãi. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). nhan: cũ ''bac-bo'' → mới ''tranh-cai'' | giai_thich: cũ ''Phân tích tổng hợp năm 1999 cho thấy phần thưởng vật chất được trông đợi trước có thể làm giảm động lực nội tại — hiện tượng “lấn át”: việc vốn thích làm trở nên kém hấp dẫn khi bị gắn với thưởng. Thưởng vẫn hiệu quả trong nhiều trường hợp, nhưng “càng thưởng càng chăm” không phải quy luật chung.'' → mới ''Phân tích tổng hợp 128 nghiên cứu (1999) cho thấy phần thưởng vật chất được hứa trước làm giảm hứng thú tự nguyện với việc vốn thú vị. Nhưng phần lớn các nghiên cứu ấy làm trong phòng thí nghiệm; một phân tích tổng hợp khác (2014) cho thấy thưởng và hứng thú nội tại có thể cùng dự báo hiệu quả công việc, nên tác động của thưởng ngoài đời vẫn đang được tranh luận.'' | nguon: cũ [''deci1999''] → mới [''deci1999'', ''cerasoli2014''] | trang: cũ None → mới ''kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc'''
 nguon:
-- id: deci1999
-  ten: Deci và cộng sự (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation
-  link: https://doi.org/10.1037/0033-2909.125.6.627
-- id: cerasoli2014
-  ten: 'Cerasoli và cộng sự (2014). Intrinsic motivation and extrinsic incentives jointly predict performance: A 40-year meta-analysis'
-  link: https://doi.org/10.1037/a0035661
+  - id: deci1999
+    ten: Deci và cộng sự (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation
+    link: https://doi.org/10.1037/0033-2909.125.6.627
+  - id: cerasoli2014
+    ten: 'Cerasoli và cộng sự (2014). Intrinsic motivation and extrinsic incentives jointly predict performance: A 40-year meta-analysis'
+    link: https://doi.org/10.1037/a0035661
 nhan_dinh:
-- id: nhan
-  cau: '"Muốn ai chăm hơn thì cứ thưởng nhiều hơn": đang tranh cãi.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: tranh-cai
-  nguon:
-  - deci1999
-  - cerasoli2014
-  co_so:
-  - deci1999
-  - cerasoli2014
-  ly_do: Thưởng hứa trước làm xói mòn hứng thú (khá vững ở trang nhà), nhưng mức độ ngoài đời đang tranh luận (khung tranh-cai của trang nhà).
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
-- id: g1
-  cau: 'Deci 1999 (128 nghiên cứu): thưởng vật chất, thưởng được trông đợi làm giảm hứng thú tự nguyện.'
-  loai: so-lieu
-  truong:
-  - giai_thich
-  nguon:
-  - deci1999
-  trich: A meta-analysis of 128 studies ... significantly undermined free-choice intrinsic motivation ... as did all rewards, all tangible rewards, and all expected rewards
-  ket_qua: da-sua
-  ghi_chu: Bỏ tên "hiện tượng lấn át" (không có trong nguồn đã mở).
-- id: g2
-  cau: 'Phần lớn nghiên cứu làm trong phòng thí nghiệm; Cerasoli 2014: thưởng và hứng thú nội tại có thể cùng dự báo hiệu quả công việc.'
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - cerasoli2014
-  trich: 'Trang nhà (đã khóa): "Một phân tích tổng hợp khác (Cerasoli, Nicklin và Ford, 2014) còn cho thấy thưởng và hứng thú nội tại có thể cùng dự báo hiệu quả công việc. Vì vậy, mức độ nghiêm trọng của hiệu ứng ngoài phòng thí nghiệm vẫn là chủ đề tranh luận."'
-  ket_qua: da-sua
-  ghi_chu: Câu mới theo trang nhà.
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: Trang nhà đã khóa của Deci 1971 và Deci 1999.
+  - id: nhan
+    cau: '"Muốn ai chăm hơn thì cứ thưởng nhiều hơn": đang tranh cãi.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: tranh-cai
+    nguon:
+      - deci1999
+      - cerasoli2014
+    co_so:
+      - deci1999
+      - cerasoli2014
+    ly_do: Thưởng hứa trước làm xói mòn hứng thú (khá vững ở trang nhà), nhưng mức độ ngoài đời đang tranh luận (khung tranh-cai của trang nhà).
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/10589297/", "https://pubmed.ncbi.nlm.nih.gov/24491020/" ]
+    luot_2_ghi_chu: "Thưởng làm giảm hứng thú tự nguyện (Deci 1999) nhưng dự báo số lượng công việc (Cerasoli 2014): bằng chứng tốt kéo hai phía, hợp 'đang tranh cãi'."
+  - id: g1
+    cau: 'Deci 1999 (128 nghiên cứu): thưởng vật chất, thưởng được trông đợi làm giảm hứng thú tự nguyện.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - deci1999
+    trich: A meta-analysis of 128 studies ... significantly undermined free-choice intrinsic motivation ... as did all rewards, all tangible rewards, and all expected rewards
+    ket_qua: da-sua
+    ghi_chu: Bỏ tên "hiện tượng lấn át" (không có trong nguồn đã mở).
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/10589297/" ]
+  - id: g2
+    cau: 'Phần lớn nghiên cứu làm trong phòng thí nghiệm; Cerasoli 2014: thưởng và hứng thú nội tại có thể cùng dự báo hiệu quả công việc.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - cerasoli2014
+    trich: 'Trang nhà (đã khóa): "Một phân tích tổng hợp khác (Cerasoli, Nicklin và Ford, 2014) còn cho thấy thưởng và hứng thú nội tại có thể cùng dự báo hiệu quả công việc. Vì vậy, mức độ nghiêm trọng của hiệu ứng ngoài phòng thí nghiệm vẫn là chủ đề tranh luận."'
+    ket_qua: da-sua
+    ghi_chu: Câu mới theo trang nhà.
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/24491020/", "https://pubmed.ncbi.nlm.nih.gov/10589297/" ]
+    luot_2_ghi_chu: Vế 'phần lớn nghiên cứu làm trong phòng thí nghiệm' chỉ suy được gián tiếp (Deci 1999 đo 'free-choice', cách đo của thí nghiệm); không mở được toàn văn để xác nhận tỉ lệ.
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: Trang nhà đã khóa của Deci 1971 và Deci 1999.

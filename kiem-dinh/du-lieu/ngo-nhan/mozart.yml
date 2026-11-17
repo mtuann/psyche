@@ -8,10 +8,10 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
-ghi_chu: 'chỗ khó: chưa mở được tóm tắt hay toàn văn của Chabris 1999 (thư ngắn trên Nature) và Pietschnig 2010 (Intelligence); g1, g2 để chưa có kết quả. Câu cuối cũ "Không có bằng chứng nghe Mozart làm tăng trí thông minh lâu dài" thay bằng câu theo tóm tắt Waterhouse 2006. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, không phải trẻ em, và chỉ đo một nhiệm vụ không gian trong thời gian ngắn ngay sau khi nghe nhạc. Các phân tích tổng hợp sau đó (1999, 2010) thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản. Không có bằng chứng nghe Mozart làm tăng trí thông minh lâu dài.'' → mới ''Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, không phải trẻ em, và chỉ đo một nhiệm vụ không gian trong thời gian ngắn ngay sau khi nghe nhạc. Các phân tích tổng hợp sau đó (1999, 2010) thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản. Một bài tổng quan năm 2006 kết luận "hiệu ứng Mozart" không có đủ bằng chứng để làm cơ sở cho việc dạy học.'' | nguon: cũ [''chabris1999'', ''pietschnig2010''] → mới [''chabris1999'', ''pietschnig2010'', ''waterhouse2006'']'
+ghi_chu: 'chỗ khó: chưa mở được tóm tắt hay toàn văn của Chabris 1999 (thư ngắn trên Nature) và Pietschnig 2010 (Intelligence); g1, g2 để chưa có kết quả. Câu cuối cũ "Không có bằng chứng nghe Mozart làm tăng trí thông minh lâu dài" thay bằng câu theo tóm tắt Waterhouse 2006. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, không phải trẻ em, và chỉ đo một nhiệm vụ không gian trong thời gian ngắn ngay sau khi nghe nhạc. Các phân tích tổng hợp sau đó (1999, 2010) thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản. Không có bằng chứng nghe Mozart làm tăng trí thông minh lâu dài.'' → mới ''Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, không phải trẻ em, và chỉ đo một nhiệm vụ không gian trong thời gian ngắn ngay sau khi nghe nhạc. Các phân tích tổng hợp sau đó (1999, 2010) thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản. Một bài tổng quan năm 2006 kết luận "hiệu ứng Mozart" không có đủ bằng chứng để làm cơ sở cho việc dạy học.'' | nguon: cũ [''chabris1999'', ''pietschnig2010''] → mới [''chabris1999'', ''pietschnig2010'', ''waterhouse2006''] Sau lượt 2 (18/11/2026): giải thích viết lại theo Rauscher & Hinton 2006; bỏ Chabris 1999, Pietschnig 2010 khỏi nguồn của thẻ.'
 nguon:
 - id: chabris1999
   ten: Chabris (1999). Prelude or requiem for the 'Mozart effect'?
@@ -22,6 +22,9 @@ nguon:
 - id: waterhouse2006
   ten: 'Waterhouse (2006). Multiple intelligences, the Mozart effect, and emotional intelligence: A critical review'
   link: https://doi.org/10.1207/s15326985ep4104_1
+- id: rauscher2006
+  ten: 'Rauscher (2006). The Mozart effect: Music listening is not music instruction'
+  link: https://doi.org/10.1207/s15326985ep4104_3
 nhan_dinh:
 - id: nhan
   cau: 'Nghe nhạc Mozart làm trẻ thông minh hơn: đã bị bác bỏ.'
@@ -31,37 +34,40 @@ nhan_dinh:
   - nhan
   nhan: bac-bo
   nguon:
+  - rauscher2006
   - waterhouse2006
-  - pietschnig2010
-  - chabris1999
   co_so:
+  - rauscher2006
   - waterhouse2006
-  - pietschnig2010
-  - chabris1999
-  ly_do: Hai phân tích tổng hợp (1999, 2010) và tổng quan phê bình 2006 không ủng hộ.
-  ket_qua: null
-  ghi_chu: 'chỗ khó: chỉ mở được tóm tắt của Waterhouse 2006 ("lack adequate empirical support"); hai phân tích tổng hợp chưa đọc được.'
+  ly_do: 'Khẳng định "làm trẻ thông minh hơn" vượt ra ngoài điều từng được kiểm (cải thiện ngắn ở bài không gian của người lớn); tác giả gốc gọi đó là ngộ nhận; tổng quan 2006: không đủ bằng chứng. Đạt "Đã bị bác bỏ" cho khẳng định như viết, không phải cho hiệu ứng ngắn hạn.'
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: chỉ mở được tóm tắt của Waterhouse 2006 ("lack adequate empirical support"); hai phân tích tổng hợp chưa đọc được. Sau lượt 2 (Opus 5.5, 18/11/2026): Hết "chưa chắc": cơ sở nay là bài của tác giả gốc (đã đọc) và Waterhouse 2006.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC9988829/
+  - https://doi.org/10.1207/s15326985ep4104_1
 - id: g1
-  cau: Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, đo một nhiệm vụ không gian ngay sau khi nghe nhạc.
+  cau: Hiệu ứng Mozart ban đầu là một cải thiện ngắn ở bài không gian–thời gian của sinh viên đại học ngay sau khi nghe một bản sonata của Mozart (K. 448).
   loai: phat-hien
   truong:
   - giai_thich
   nguon:
-  - chabris1999
-  trich: 'Oberleiter & Pietschnig 2023 (PMC9988829): "The topic was introduced in the context of spatial task performance, which supposedly improved after subjects were exposed to the first movement ... of Mozart’s sonata KV448."'
-  ket_qua: null
-  ghi_chu: 'chưa chắc: phần "nhiệm vụ không gian" có nguồn (Oberleiter 2023, chưa có bản ghi nguồn); "sinh viên đại học" chưa mở được bài gốc Rauscher 1993.'
+  - rauscher2006
+  trich: “The Mozart effect” originally referred to the phenomenon of a brief enhancement of spatial-temporal abilities in college students after listening to a Mozart piano sonata (K. 448).
+  ket_qua: da-sua
+  ghi_chu: 'chưa chắc: phần "nhiệm vụ không gian" có nguồn (Oberleiter 2023, chưa có bản ghi nguồn); "sinh viên đại học" chưa mở được bài gốc Rauscher 1993. Sau lượt 2 (Opus 5.5, 18/11/2026): Nguồn lượt 2 dẫn (bài của chính tác giả gốc); bỏ nguồn Chabris 1999 không mở được. Lượt 2 (với câu cũ): dung (Bài phản hồi của chính Rauscher (Educational Psychologist 2006). Không mở được thư Nature 1993; chi tiết ''sinh viên đại học'' khớp với ''adult''.).'
+  vi_tri: Rauscher & Hinton 2006, tr. 233, tóm tắt (bản PDF ở trang của Đại học Wisconsin Oshkosh)
 - id: g2
-  cau: Các phân tích tổng hợp 1999 và 2010 thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản.
+  cau: Các tác giả gốc (Rauscher & Hinton 2006) gọi ý nhạc Mozart làm tăng trí thông minh nói chung là một ngộ nhận.
   loai: phat-hien
   truong:
   - giai_thich
   nguon:
-  - chabris1999
-  - pietschnig2010
-  trich: ''
-  ket_qua: null
-  ghi_chu: 'chưa chắc: Crossref, Europe PMC, OpenAlex, Semantic Scholar đều không có tóm tắt; cần toàn văn.'
+  - rauscher2006
+  trich: Much of the controversy concerning the Mozart effect is due to the misconception that Mozart’s music can enhance general intelligence
+  ket_qua: da-sua
+  ghi_chu: 'chưa chắc: Crossref, Europe PMC, OpenAlex, Semantic Scholar đều không có tóm tắt; cần toàn văn. Sau lượt 2 (Opus 5.5, 18/11/2026): Thay câu về hai phân tích tổng hợp 1999, 2010 (không mở được; lượt 2 lưu ý theo bản chép tóm tắt Pietschnig 2010 thì so với im lặng d = 0,37, nên "rất nhỏ hoặc gần như không có" sai một phần). Rauscher & Hinton còn dẫn một phân tích tổng hợp 36 nghiên cứu thấy hiệu ứng ngắn hạn ở bài xoay hình: thẻ không nói hiệu ứng ngắn hạn không có. Lượt 2 (với câu cũ): khong-chac (Không mở được tóm tắt chính thức của Pietschnig 2010 (ScienceDirect chặn, Crossref và OpenAlex không có tóm tắt) và thư Chabris 1999 (Nature). Bài 2023 (PMC) chỉ nói hiệu ứng là do mẫu nhỏ và thiên lệch. Lưu ý: theo bản chép tóm tắt Pietschnig 2010, hiệu ứng so với im lặng là d = 0,37 (''small''), giữa hai điều kiện nhạc d = 0,15, có thiên lệch xuất bản; nếu đúng thì ''rất nhỏ hoặc gần như không có'' chỉ đúng cho hiệu ứng riêng của Mozart.).'
+  vi_tri: 'Rauscher & Hinton 2006, mục Music listening: The Mozart effect'
 - id: g3
   cau: Tổng quan năm 2006 kết luận "hiệu ứng Mozart" không có đủ bằng chứng để làm cơ sở cho việc dạy học.
   loai: phat-hien
@@ -72,3 +78,8 @@ nhan_dinh:
   trich: these theories lack adequate empirical support and should not be the basis for educational practice
   ket_qua: da-sua
   ghi_chu: Câu mới thay câu cuối cũ (xem ghi_chu hồ sơ).
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1207/s15326985ep4104_1
+  - https://doi.org/10.1207/s15326985ep4104_5
+  luot_2_ghi_chu: Đọc tóm tắt qua trang nhà xuất bản và bài đáp của tác giả cùng số.

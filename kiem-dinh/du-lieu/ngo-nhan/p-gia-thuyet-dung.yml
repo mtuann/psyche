@@ -2,57 +2,65 @@
 ban_ghi: ngo-nhan/p-gia-thuyet-dung
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''p-value chỉ cho biết dữ liệu “lạ” đến mức nào NẾU giả thuyết vô hiệu đúng — nó không phải xác suất giả thuyết đúng, cũng không đo độ lớn hay tầm quan trọng của hiệu ứng. Hiểu sai này phổ biến đến mức Hiệp hội Thống kê Hoa Kỳ phải ra tuyên bố chính thức năm 2016.'' → mới ''p-value chỉ cho biết dữ liệu "lạ" đến mức nào nếu một mô hình định sẵn (thường là giả thuyết không) là đúng; nó không phải xác suất giả thuyết đúng, cũng không đo độ lớn hay tầm quan trọng của hiệu ứng. Hiểu sai này phổ biến đến mức năm 2016 Hiệp hội Thống kê Hoa Kỳ (ASA) ra một tuyên bố chính thức về cách dùng và hiểu p-value.'''
 nguon:
-- id: wasserstein2016
-  ten: 'Wasserstein và cộng sự (2016). The ASA statement on p-values: Context, process, and purpose'
-  link: https://doi.org/10.1080/00031305.2016.1154108
+  - id: wasserstein2016
+    ten: 'Wasserstein và cộng sự (2016). The ASA statement on p-values: Context, process, and purpose'
+    link: https://doi.org/10.1080/00031305.2016.1154108
 nhan_dinh:
-- id: nhan
-  cau: '"p < 0,05 nghĩa là giả thuyết đúng tới 95%": sai (đã bị bác bỏ).'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - wasserstein2016
-  co_so:
-  - wasserstein2016
-  ly_do: Tuyên bố chính thức của ASA 2016 (nguyên tắc 2); trang nhà bang-chung/p-value (đã khóa).
-  ket_qua: dung
-- id: g1
-  cau: p-value cho biết dữ liệu không tương thích đến đâu với một mô hình định sẵn; không phải xác suất giả thuyết đúng; không đo độ lớn hay tầm quan trọng.
-  loai: dinh-nghia
-  truong:
-  - giai_thich
-  nguon:
-  - wasserstein2016
-  trich: 'Trang nhà: "p-value cho biết dữ liệu không tương thích đến mức nào với một mô hình đã định trước ... p-value KHÔNG phải xác suất giả thuyết đúng ... là nguyên tắc thứ hai của tuyên bố ASA 2016"'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "NẾU giả thuyết vô hiệu đúng": viết theo cách nói của trang nhà (mô hình định sẵn).'
-- id: g2
-  cau: Năm 2016, ASA ra tuyên bố chính thức về cách dùng và hiểu p-value.
-  loai: lich-su
-  truong:
-  - giai_thich
-  nguon:
-  - wasserstein2016
-  trich: 'Trang nhà: "năm 2016, Hiệp hội Thống kê Hoa Kỳ (ASA) ra một tuyên bố chính thức vì cách dùng và cách hiểu p-value hay bị sai lệch."'
-  ket_qua: dung
-- id: trang
-  cau: Bài liên quan của thẻ là bang-chung/p-value
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: Trang nhà đã khóa.
+  - id: nhan
+    cau: '"p < 0,05 nghĩa là giả thuyết đúng tới 95%": sai (đã bị bác bỏ).'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - wasserstein2016
+    co_so:
+      - wasserstein2016
+    ly_do: Tuyên bố chính thức của ASA 2016 (nguyên tắc 2); trang nhà bang-chung/p-value (đã khóa).
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
+    luot_2_ghi_chu: Tuyên bố ASA ngày 7/3/2016; câu hiểu 'p<0,05 = giả thuyết đúng 95%' là sai theo nguyên tắc 2; nhãn 'bác bỏ' hợp (hiểu sai, không phải khẳng định thực nghiệm).
+  - id: g1
+    cau: p-value cho biết dữ liệu không tương thích đến đâu với một mô hình định sẵn; không phải xác suất giả thuyết đúng; không đo độ lớn hay tầm quan trọng.
+    loai: dinh-nghia
+    truong:
+      - giai_thich
+    nguon:
+      - wasserstein2016
+    trich: 'Trang nhà: "p-value cho biết dữ liệu không tương thích đến mức nào với một mô hình đã định trước ... p-value KHÔNG phải xác suất giả thuyết đúng ... là nguyên tắc thứ hai của tuyên bố ASA 2016"'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "NẾU giả thuyết vô hiệu đúng": viết theo cách nói của trang nhà (mô hình định sẵn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
+  - id: g2
+    cau: Năm 2016, ASA ra tuyên bố chính thức về cách dùng và hiểu p-value.
+    loai: lich-su
+    truong:
+      - giai_thich
+    nguon:
+      - wasserstein2016
+    trich: 'Trang nhà: "năm 2016, Hiệp hội Thống kê Hoa Kỳ (ASA) ra một tuyên bố chính thức vì cách dùng và cách hiểu p-value hay bị sai lệch."'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf" ]
+    luot_2_ghi_chu: Bản PDF trên amstat.org đề ngày 7/3/2016, đăng ở The American Statistician (doi 10.1080/00031305.2016.1154108).
+  - id: trang
+    cau: Bài liên quan của thẻ là bang-chung/p-value
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: Trang nhà đã khóa.

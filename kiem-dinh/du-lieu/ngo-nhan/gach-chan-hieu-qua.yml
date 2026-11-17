@@ -8,31 +8,36 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
-ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Tổng quan năm 2013 xếp gạch chân/highlight vào nhóm kỹ thuật hiệu quả thấp. Muốn nhớ lâu, hãy tự kiểm tra (cố nhớ lại không nhìn sách) và ôn cách quãng thay vì tô màu trang giấy.'' → mới ''Bài tổng quan năm 2013 đánh giá 10 kỹ thuật học phổ biến và xếp gạch chân, tô đậm vào nhóm hiệu quả thấp, còn tự kiểm tra và ôn ngắt quãng vào nhóm hiệu quả cao.'' | trang: cũ None → mới ''kham-pha/tri-nho/duong-cong-quen'''
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Tổng quan năm 2013 xếp gạch chân/highlight vào nhóm kỹ thuật hiệu quả thấp. Muốn nhớ lâu, hãy tự kiểm tra (cố nhớ lại không nhìn sách) và ôn cách quãng thay vì tô màu trang giấy.'' → mới ''Bài tổng quan năm 2013 đánh giá 10 kỹ thuật học phổ biến và xếp gạch chân, tô đậm vào nhóm hiệu quả thấp, còn tự kiểm tra và ôn ngắt quãng vào nhóm hiệu quả cao.'' | trang: cũ None → mới ''kham-pha/tri-nho/duong-cong-quen'' Sau lượt 2 (18/11/2026): đổi nhãn Đã bị bác bỏ → Đang tranh cãi (Ponce 2022); giải thích viết lại.'
 nguon:
 - id: dunlosky2013
   ten: 'Dunlosky và cộng sự (2013). Improving students'' learning with effective learning techniques: Promising directions from cognitive and educational psychology'
   link: https://doi.org/10.1177/1529100612453266
+- id: ponce2022
+  ten: 'Ponce (2022). Effects of learner-generated highlighting and instructor-provided highlighting on learning from text: A meta-analysis'
+  link: https://doi.org/10.1007/s10648-021-09654-1
 nhan_dinh:
 - id: nhan
-  cau: 'Gạch chân, tô đậm là cách ôn bài hiệu quả: đã bị bác bỏ.'
+  cau: 'Gạch chân, tô đậm là cách ôn bài hiệu quả: đang tranh cãi.'
   loai: nhan
   truong:
   - khang_dinh
   - nhan
-  nhan: bac-bo
+  nhan: tranh-cai
   nguon:
   - dunlosky2013
+  - ponce2022
   co_so:
   - dunlosky2013
-  ly_do: Tổng quan lớn (Psychological Science in the Public Interest) xếp hiệu quả thấp.
-  ket_qua: dung
-  ghi_chu: 'chỗ khó: tổng quan xếp "hiệu quả thấp", không nói "không có tác dụng"; lượt 2 xem nhãn.'
+  - ponce2022
+  ly_do: 'Thước đo mục 4, Đang tranh cãi: bằng chứng chất lượng cao mâu thuẫn. Tổng quan Dunlosky 2013 xếp hiệu quả thấp; phân tích tổng hợp Ponce 2022 (36 bài, 85 hiệu ứng) thấy lợi ích nhỏ cho trí nhớ (0,36) và cho hiểu (0,20). Không có chuỗi kiểm tra đủ mạnh liên tục thất bại nên không đạt "Đã bị bác bỏ".'
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: tổng quan xếp "hiệu quả thấp", không nói "không có tác dụng"; lượt 2 xem nhãn. Sau lượt 2 (Opus 5.5, 18/11/2026): Đồng ý lượt 2 (qua-manh): đổi Đã bị bác bỏ → Đang tranh cãi; đã tự mở tóm tắt Ponce 2022 trên trang Springer. Đáp án trò chơi đổi từ Sai sang Còn tranh cãi. Lượt 2 (với câu cũ): qua-manh (câu đúng: Gạch chân, tô đậm là cách ôn bài hiệu quả: đang tranh cãi. Dunlosky 2013 xếp gạch chân vào nhóm hiệu quả thấp, nhưng phân tích tổng hợp 2022 thấy tự gạch chân giúp nhớ ở mức nhỏ (không giúp hiểu); kém xa tự kiểm tra và ôn ngắt quãng.; Không có chuỗi kiểm tra đủ mạnh liên tục thất bại; hiệu ứng nhỏ hơn nhiều so với niềm tin phổ biến, hợp nhãn ''đang tranh cãi'' (hoặc nói rõ ''kém hiệu quả so với các cách khác'').).'
 - id: g1
-  cau: 'Dunlosky 2013: trong 10 kỹ thuật, gạch chân/tô đậm hiệu quả thấp; tự kiểm tra và ôn ngắt quãng hiệu quả cao.'
+  cau: 'Dunlosky 2013: trong 10 kỹ thuật, gạch chân/tô đậm thuộc nhóm hiệu quả thấp.'
   loai: phat-hien
   truong:
   - giai_thich
@@ -40,7 +45,11 @@ nhan_dinh:
   - dunlosky2013
   trich: 'highlighting, the keyword mnemonic, imagery use for text learning, and rereading. These techniques were rated as low utility (tóm tắt); trang nhà duong-cong-quen: "xếp ôn tập ngắt quãng và tự kiểm tra vào nhóm hiệu quả cao, trong khi đọc lại và tô đậm rơi vào nhóm hiệu quả thấp"'
   ket_qua: da-sua
-  ghi_chu: 'Cũ "Muốn nhớ lâu, hãy tự kiểm tra ... thay vì tô màu trang giấy": viết thành câu về kết quả tổng quan.'
+  ghi_chu: 'Cũ "Muốn nhớ lâu, hãy tự kiểm tra ... thay vì tô màu trang giấy": viết thành câu về kết quả tổng quan. Sau lượt 2 (Opus 5.5, 18/11/2026): Bỏ vế tự kiểm tra, ôn ngắt quãng khỏi thẻ; câu hẹp lại, vẫn trong phần lượt 2 đã kiểm.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/26173288/
+  luot_2_ghi_chu: Tóm tắt bị cắt đoạn cuối; xếp hạng 'low utility' cho gạch chân là kết luận đã biết của bài, đọc được ở phần đầu tóm tắt đầy đủ.
 - id: trang
   cau: Bài liên quan của thẻ là kham-pha/tri-nho/duong-cong-quen
   loai: ve-site
@@ -48,3 +57,14 @@ nhan_dinh:
   - trang
   ket_qua: dung
   ghi_chu: Trang đã khóa có đúng kết quả Dunlosky 2013.
+- id: g2
+  cau: 'Ponce, Mayer & Méndez 2022 (36 bài, 85 hiệu ứng): tự gạch chân giúp nhớ (0,36), giúp hiểu ít hơn (0,20); giúp sinh viên đại học (0,39) hơn học sinh phổ thông (0,24).'
+  loai: so-lieu
+  truong:
+  - giai_thich
+  nguon:
+  - ponce2022
+  trich: We found 36 published articles ... which generated 85 effect sizes. The results showed that learner-generated highlighting improved memory but not comprehension, with average effect sizes of 0.36 and 0.20, respectively ... Learner-generated highlighting improved learning for college students but not for school students, with average effect sizes of 0.39 and 0.24
+  vi_tri: tóm tắt (trang bài trên link.springer.com)
+  ket_qua: da-sua
+  ghi_chu: 'Sau lượt 2 (Opus 5.5, 18/11/2026): Câu mới theo nguồn lượt 2 dẫn. Thẻ viết "giúp hiểu ít hơn (0,20)" thay cho "không giúp hiểu" vì 0,20 là hiệu ứng nhỏ mà bài coi là không có ý nghĩa; lượt 2 bổ sung xem chữ.'

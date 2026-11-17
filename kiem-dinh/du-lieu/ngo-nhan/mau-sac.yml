@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'chỗ khó: đổi nhãn Đã bị bác bỏ → Đang tranh cãi. Elliot & Maier 2014 nói màu có thể ảnh hưởng và bằng chứng còn sơ khai; các tái lập thất bại là của hiệu ứng "đỏ và sức hút", không phải của "xanh giúp tập trung, đỏ làm hăng". Chưa có kiểm tra đủ mạnh liên tục thất bại cho chính khẳng định, nên chưa đạt thước đo "Đã bị bác bỏ". Đáp án trong trò chơi đổi từ Sai sang Còn tranh cãi. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). nhan: cũ ''bac-bo'' → mới ''tranh-cai'' | giai_thich: cũ ''Bài tổng quan năm 2014 của Elliot và Maier kết luận nghiên cứu về màu sắc và tâm lý vẫn còn ở giai đoạn sơ khai, cần làm rõ điều kiện biên và khả năng áp dụng thực tế trước khi đưa ra khuyến nghị chắc chắn. Chẳng hạn, hiệu ứng “màu đỏ gợi tình” từng nổi tiếng đã không qua được các lần tái lập đăng ký trước. Màu sắc có thể mang ý nghĩa trong bối cảnh cụ thể, nhưng không có màu nào “lập trình” được hành vi.'' → mới ''Bài tổng quan năm 2014 của Elliot và Maier kết luận màu sắc có thể mang ý nghĩa và ảnh hưởng đến cảm xúc, suy nghĩ, hành vi, nhưng nghiên cứu còn ở giai đoạn sơ khai: cần làm rõ điều kiện và khả năng áp dụng ngoài đời trước khi đưa ra khuyến nghị chắc chắn. Chẳng hạn, hiệu ứng "màu đỏ làm tăng sức hút" từng nổi tiếng gần như không thấy lại trong các lần tái lập đăng ký trước.'''
@@ -41,6 +41,10 @@ nhan_dinh:
   ly_do: 'Tổng quan Annual Review 2014: lĩnh vực sơ khai, chưa đủ cho khuyến nghị; tái lập đăng ký trước của một hiệu ứng màu nổi tiếng thất bại.'
   ket_qua: da-sua
   ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/23808916/
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC10480976/
 - id: g1
   cau: 'Elliot & Maier 2014: màu có thể ảnh hưởng cảm xúc, nhận thức, hành vi, nhưng nghiên cứu còn sơ khai, cần làm rõ điều kiện và khả năng áp dụng trước khi khuyến nghị.'
   loai: phat-hien
@@ -51,6 +55,9 @@ nhan_dinh:
   trich: color can carry important meaning and can have an important impact on people's affect, cognition, and behavior. The literature remains at a nascent stage of development ... considerable work on boundary conditions, moderators, and real-world generalizability is needed before strong conceptual statements and recommendations for application are warranted
   ket_qua: da-sua
   ghi_chu: Bổ sung vế "có thể ảnh hưởng" mà câu cũ bỏ qua.
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/23808916/
 - id: g2
   cau: Hiệu ứng "đỏ làm tăng sức hút" gần như không thấy lại trong các tái lập đăng ký trước.
   loai: tai-lap
@@ -62,6 +69,10 @@ nhan_dinh:
   trich: 'Lehmann 2017: "very weak effect in the predicted direction (d = 0.09 ...) For women ... very weak effect in the opposite direction"; Wagge 2019: "no effect of red on attractiveness ratings"'
   ket_qua: da-sua
   ghi_chu: 'Cũ "hiệu ứng màu đỏ gợi tình ... đã không qua được": giữ ý, viết sát số liệu.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC10480976/
+  luot_2_ghi_chu: Lehmann, Elliot & Calin-Jageman 2018. Toàn bộ (gồm nghiên cứu không đăng ký) có hiệu ứng nhỏ d = 0,26 và 0,13.
 - id: g3
   cau: (Đã bỏ) Không có màu nào "lập trình" được hành vi.
   loai: phat-hien
@@ -70,4 +81,6 @@ nhan_dinh:
   nguon: []
   trich: ''
   ket_qua: da-bo
-  ghi_chu: Câu nói mạnh hơn nguồn.
+  ghi_chu: 'Câu nói mạnh hơn nguồn. Sau lượt 2 (Opus 5.5, 18/11/2026): Giữ da-bo: câu đã bỏ khỏi thẻ, lượt 2 đồng ý bỏ hay không có nguồn để giữ.'
+  luot_2: khong-chac
+  luot_2_ghi_chu: Câu đã bỏ, quá mơ hồ ('lập trình') để kiểm; không nguồn nào nói thẳng. Elliot & Maier 2014 chỉ nói màu có thể ảnh hưởng và bằng chứng còn sơ khai.

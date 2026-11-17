@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'chỗ khó: sửa khẳng định "Thức khuya ôn thi giúp nhớ bài lâu hơn": trang nhà ngu-va-tri-nho (đã khóa) xếp "thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn" vào Đã bị bác bỏ và ghi rõ "Các nghiên cứu này không kiểm tra việc dùng đêm thức để học thêm". Thí nghiệm 2 thiết kế trong-nhóm, nên bỏ chữ "nhóm". Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). khang_dinh: cũ ''Thức khuya ôn thi giúp nhớ bài lâu hơn.'' → mới ''Học xong mà thức trắng đêm thay vì đi ngủ thì cũng không ảnh hưởng gì đến việc nhớ bài.'' | giai_thich: cũ ''Trong thí nghiệm của Gais và cộng sự (2006), nhóm học buổi tối rồi đi ngủ nhớ tốt hơn hẳn nhóm thức trắng đêm khi kiểm tra sau 48 giờ — dù cả hai đã được ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ; thức khuya chính là bỏ đi cơ hội đó.'' → mới ''Trong thí nghiệm của Gais và cộng sự (2006), học sinh học từ vựng buổi tối rồi đi ngủ nhớ được nhiều từ hơn hẳn so với khi chính họ thức trắng đêm sau khi học, ở bài kiểm tra 48 giờ sau, dù đã được ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ. Nghiên cứu này không so việc dùng đêm thức để học thêm với việc đi ngủ.'''
@@ -30,17 +30,23 @@ nhan_dinh:
   - gais2006
   ly_do: Khớp khung bac-bo của trang nhà ngu-va-tri-nho (đã khóa), dựa trên Gais 2006 và phân tích tổng hợp Berres & Erdfelder 2021.
   ket_qua: da-sua
-  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 dung (lưu ý hiệu ứng nhỏ–vừa trong phân tích tổng hợp). Giữ; thẻ không nói tác hại mạnh hơn mức "nhớ kém đi".'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/35238586/
+  - https://pubmed.ncbi.nlm.nih.gov/16741280/
+  luot_2_ghi_chu: Khẳng định 'không ảnh hưởng gì' trái với phân tích tổng hợp, nhưng hiệu ứng nhỏ–vừa, có thiên lệch xuất bản và đa số nghiên cứu yếu; hiệu ứng nhỏ hơn khi kiểm tra sau ngủ bù. Nhãn chấp nhận được; nếu trang nói tác hại thì không nên nói mạnh hơn mức này.
 - id: g1
-  cau: 'Gais 2006 (trong-nhóm, 14 học sinh): ngủ đêm sau khi học nhớ nhiều từ hơn so với thức trắng, kiểm tra sau 48 giờ, dù đã ngủ bù.'
+  cau: 'Gais 2006 (hai thí nghiệm, học sinh trung học, từ vựng): ngủ trong vài giờ sau khi học giúp nhớ tốt hơn; thiếu ngủ có hại, kể cả sau một đêm ngủ bù.'
   loai: phat-hien
   truong:
   - giai_thich
   nguon:
   - gais2006
-  trich: 'Trang nhà: "Thí nghiệm 2 (14 học sinh nam, cũng thiết kế trong-nhóm ...) ... Cả hai điều kiện được kiểm tra 48 giờ sau khi học ... người tham gia nhớ rõ ràng nhiều từ hơn khi đã ngủ ... Tác hại của việc thức trắng vẫn còn đó sau khi đã ngủ bù"'
+  trich: In two experiments, we examined high school students' ability to remember vocabulary. We show that declarative memory is enhanced when sleep follows within a few hours of learning ... Sleep deprivation has a detrimental effect on memory, which was significant after a night of recovery sleep.
   ket_qua: da-sua
-  ghi_chu: 'Cũ "nhóm học buổi tối rồi đi ngủ ... nhóm thức trắng": thiết kế trong-nhóm.'
+  ghi_chu: 'Cũ "nhóm học buổi tối rồi đi ngủ ... nhóm thức trắng": thiết kế trong-nhóm. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 không xác nhận được 14 học sinh, trong-nhóm, 48 giờ (chỉ có ở toàn văn); viết ở mức tóm tắt. Lượt 2 (với câu cũ): khong-chac (Tóm tắt xác nhận học sinh, từ vựng, thức trắng có hại kể cả sau đêm ngủ bù. Không mở được toàn văn (PMC và trang tạp chí chặn máy) nên chưa xác nhận 14 học sinh, thiết kế trong-nhóm và mốc 48 giờ.).'
+  vi_tri: tóm tắt (PubMed 16741280)
 - id: g2
   cau: Nghiên cứu không so việc dùng đêm thức để học thêm với đi ngủ.
   loai: phat-hien
@@ -51,6 +57,10 @@ nhan_dinh:
   trich: 'Trang nhà: "Các nghiên cứu này không kiểm tra việc dùng đêm thức để học thêm: câu hỏi ấy chưa có câu trả lời ở đây."'
   ket_qua: da-sua
   ghi_chu: 'Cũ "thức khuya chính là bỏ đi cơ hội đó": mạnh hơn nguồn.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/16741280/
+  luot_2_ghi_chu: Thiết kế so ngủ và thức sau khi học, không có điều kiện học thêm trong đêm thức (theo tóm tắt).
 - id: trang
   cau: Bài liên quan của thẻ là kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
   loai: ve-site

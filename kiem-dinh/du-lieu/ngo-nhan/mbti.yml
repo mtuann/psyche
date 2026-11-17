@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'Việc treo của kế hoạch: câu cũ "Big Five ... có bằng chứng dự báo tốt hơn" lệch trang MBTI (đã khóa, n24: "chưa có so sánh trực tiếp hai khung"); đã sửa cho khớp. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Các đặc điểm tính cách phân bố liên tục, phần đông mọi người ở gần giữa. Chia đôi thành "loại" làm mất thông tin và khiến kết quả kém ổn định: nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu dùng mô hình Big Five, đo theo các chiều liên tục và có bằng chứng dự báo tốt hơn.'' → mới ''Điểm của MBTI phân bố liên tục, không chia thành hai cụm, nên cắt đôi mỗi thang ở điểm giữa thành "loại" làm mất thông tin: hai người có điểm sát vạch nhận hai nhãn trái ngược, và nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu thường dùng mô hình Big Five, đo theo các chiều liên tục; Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương (chưa có nghiên cứu so sánh trực tiếp hai khung).'' | nguon: cũ [''pittenger1993'', ''pittenger2005''] → mới [''pittenger1993'', ''pittenger2005'', ''mccrae1989'', ''barrick1991''] | trang: cũ None → mới ''kham-pha/tinh-cach/mbti'''
@@ -25,6 +25,9 @@ nguon:
 - id: barrick1991
   ten: 'Barrick và cộng sự (1991). The Big Five personality dimensions and job performance: A meta-analysis'
   link: https://doi.org/10.1111/j.1744-6570.1991.tb00688.x
+- id: nrc1991
+  ten: 'National Research Council (1991). In the mind’s eye: Enhancing human performance'
+  link: https://doi.org/10.17226/1580
 nhan_dinh:
 - id: nhan
   cau: 'MBTI là công cụ khoa học đáng tin để xếp mỗi người vào một trong 16 "loại": đã bị bác bỏ.'
@@ -43,6 +46,11 @@ nhan_dinh:
   - pittenger1993
   ly_do: 'Khớp trang nhà mbti (đã khóa, n22: Bác bỏ "con người thuộc về một trong 16 loại rời rạc"; co_so mccrae1989, pittenger2005, pittenger1993, haslam2012).'
   ket_qua: dung
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/2709300/
+  - https://pubmed.ncbi.nlm.nih.gov/8473967/
+  luot_2_ghi_chu: 'Chỗ khó: nhãn ''bác bỏ'' dựa trên McCrae & Costa 1989 (''consistent with earlier research'') và Girelli & Stake 1993 (không ủng hộ lưỡng cực); không mở tổng hợp hiện đại. Câu ''đáng tin để xếp 16 loại'' bị bác ở phần xếp loại, MBTI vẫn đo được các chiều có tương quan với Big Five.'
 - id: g1
   cau: Điểm MBTI phân bố liên tục, không thành hai cụm; cắt đôi tại điểm giữa làm mất thông tin, hai người sát vạch nhận hai nhãn trái ngược.
   loai: phat-hien
@@ -54,27 +62,37 @@ nhan_dinh:
   trich: 'converting continuous interval or ratio scaled scores to an ordinal or nominal scale removes important information (Pittenger 2005; hồ sơ trang nhà n3); McCrae & Costa 1989: no support for ... truly dichotomous preferences or qualitatively distinct types'
   ket_qua: da-sua
   ghi_chu: 'Cũ "phần đông mọi người ở gần giữa": trang nhà nói phân bố liên tục, không hai cụm; viết theo trang nhà.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/2709300/
+  luot_2_ghi_chu: Kết luận này từ dữ liệu 468 người; chữ 'phân bố liên tục, mất thông tin khi cắt đôi' là diễn giải, tóm tắt không nêu độ phân bố.
 - id: g2
   cau: Nhiều người nhận loại khác khi làm lại sau vài tuần.
   loai: so-lieu
   truong:
   - giai_thich
   nguon:
+  - nrc1991
   - pittenger1993
   - pittenger2005
-  trich: 'Hồ sơ trang nhà n1, n10: "50% of the subjects were reclassified on one or more of the four scales" sau 5 tuần; "35% of individuals had a different four-letter type score after a 4-week interval"'
+  trich: 'NRC 1991, chương 5: "between 24 and 61 percent of the respondents showed stability of type, with a median of 40 percent ... McCarley and Carskadon (1983) report only 47 percent of their respondents retained their initial types over a period of 5 weeks."'
   ket_qua: dung
+  luot_2: khong-chac
+  luot_2_ghi_chu: 'Đã tìm PubMed, OpenAlex, Crossref: nghiên cứu độ tin cậy lặp lại của MBTI (Pittenger 1993 và các bài khác) không có bản mở hay tóm tắt đọc được; chưa xác nhận được tỉ lệ đổi loại.'
+  vi_tri: nap.nationalacademies.org/read/1580/chapter/8
+  ghi_chu: 'Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 khong-chac (không mở được Pittenger). Tôi đọc báo cáo NRC 1991 (bản đọc công khai của NAP): xác nhận; thêm nrc1991 vào nguồn thẻ.'
 - id: g3
-  cau: Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương; chưa có so sánh trực tiếp hai khung.
+  cau: Big Five có bằng chứng dự báo hiệu quả công việc (Barrick & Mount 1991); với MBTI, báo cáo NRC 1991 ghi chưa có bằng chứng về liên hệ giữa các loại và hiệu quả làm việc trong các nghề.
   loai: phat-hien
   truong:
   - giai_thich
   nguon:
   - barrick1991
-  - pittenger2005
-  trich: 'Hồ sơ trang nhà n24 (Khá vững): "Big Five có bằng chứng dự báo hiệu quả công việc, còn MBTI chưa có bằng chứng tương đương ... Chưa có so sánh trực tiếp hai khung trong cùng nghiên cứu."'
+  - nrc1991
+  trich: 'Barrick & Mount 1991: "Conscientiousness showed consistent relations with all job performance criteria for all occupational groups." NRC 1991: "no evidence has been presented on relationships to performance in those occupations."'
   ket_qua: da-sua
-  ghi_chu: Cũ "có bằng chứng dự báo tốt hơn" (việc treo của kế hoạch); viết theo trang nhà.
+  ghi_chu: 'Cũ "có bằng chứng dự báo tốt hơn" (việc treo của kế hoạch); viết theo trang nhà. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 khong-chac với vế "chưa có so sánh trực tiếp hai khung" (khẳng định vắng mặt, không nguồn). Bỏ vế ấy, dẫn câu của NRC. Vẫn khớp trang MBTI đã khóa (n21, n24: "MBTI chưa có bằng chứng tương đương"). Lượt 2 (với câu cũ): khong-chac (Nửa đầu đúng (Zell & Lesick 2022). Nửa ''MBTI chưa có bằng chứng tương đương; chưa có so sánh trực tiếp hai khung'' không tìm được nguồn mở xác nhận hay bác bỏ (PubMed, OpenAlex).).'
+  vi_tri: Barrick 1991, tóm tắt; NRC 1991, chương 5, mục MBTI
 - id: trang
   cau: Bài liên quan của thẻ là kham-pha/tinh-cach/mbti
   loai: ve-site

@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'chỗ khó: chỉ mở được tên bài và tóm tắt tiếng Pháp của Rotton & Kelly 1985 (37 nghiên cứu); kết luận "không tìm thấy mối liên hệ đáng tin" chưa đọc được. Có nghiên cứu lẻ thấy liên hệ (động kinh 2006, tội phạm 1984 ở Ấn Độ, giấc ngủ 2013) nên nhãn cần lượt 2 xem lại. Bỏ câu "ta dễ nhớ những đêm trăng tròn hỗn loạn" (không có nguồn). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp năm 1985 không tìm thấy mối liên hệ đáng tin giữa pha mặt trăng và các hành vi này, và các kết quả dương tính lẻ tẻ không lặp lại được. Niềm tin vẫn tồn tại vì ta dễ nhớ những đêm trăng tròn hỗn loạn mà quên những đêm trăng tròn bình thường.'' → mới ''Phân tích tổng hợp năm 1985 gộp 37 nghiên cứu về pha mặt trăng và các rối loạn hành vi không tìm thấy mối liên hệ đáng tin. Ở một khoa cấp cứu tại Mỹ, số liệu 4 năm với 150.999 lượt khám không thấy ngày trăng tròn có nhiều lượt khám, xe cấp cứu hay ca nhập viện hơn; một nghiên cứu khác trên 1.444 ca chấn thương nặng trong một năm cũng không thấy khác biệt, kể cả các ca do bạo lực.'' | nguon: cũ [''rotton1985''] → mới [''rotton1985'', ''thompson1996'', ''coates1989'']'
@@ -31,16 +31,18 @@ nhan_dinh:
   - nhan
   nhan: bac-bo
   nguon:
-  - rotton1985
   - thompson1996
   - coates1989
   co_so:
-  - rotton1985
   - thompson1996
   - coates1989
-  ly_do: Phân tích tổng hợp 37 nghiên cứu; hai nghiên cứu cấp cứu, chấn thương lớn không thấy khác biệt.
-  ket_qua: null
-  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+  ly_do: 'Hai nghiên cứu số liệu lớn ở bệnh viện (150.999 lượt khám cấp cứu trong 4 năm; 1.444 ca chấn thương trong một năm) không thấy khác biệt ngày trăng tròn, kể cả ca do bạo lực. Cơ sở mỏng so với chữ thước đo (không có tổng hợp đọc được): chỗ khó còn lại.'
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 dung. Giữ Đã bị bác bỏ, co_so chỉ còn hai nghiên cứu đã đọc.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/8924138/
+  - https://doi.org/10.1016/s0196-0644(89)80014-9
 - id: g1
   cau: Phân tích tổng hợp 1985 (37 nghiên cứu) không thấy mối liên hệ đáng tin giữa pha mặt trăng và rối loạn hành vi.
   loai: phat-hien
@@ -49,8 +51,12 @@ nhan_dinh:
   nguon:
   - rotton1985
   trich: Les donnees provenant de 37 etudes ... sont combinees dans une etude meta-analytique examinant les relations entre les phases de la lune et l'alienation mentale
-  ket_qua: null
-  ghi_chu: 'chưa chắc: tóm tắt chỉ xác nhận 37 nghiên cứu; kết luận cần toàn văn. Câu cũ "các kết quả dương tính lẻ tẻ không lặp lại được" đã bỏ.'
+  ket_qua: da-bo
+  ghi_chu: 'chưa chắc: tóm tắt chỉ xác nhận 37 nghiên cứu; kết luận cần toàn văn. Câu cũ "các kết quả dương tính lẻ tẻ không lặp lại được" đã bỏ. Sau lượt 2 (Opus 5.5, 18/11/2026): Bỏ câu về Rotton & Kelly 1985: cả hai lượt chỉ đọc được số nghiên cứu, không đọc được kết quả. Bỏ rotton1985 khỏi nguồn của thẻ.'
+  luot_2: khong-chac
+  luot_2_nguon:
+  - https://api.openalex.org/works/doi:10.1037/0033-2909.97.2.286
+  luot_2_ghi_chu: Xác nhận 37 nghiên cứu và tên bài 'Much ado about the full moon' (Rotton & Kelly 1985); không đọc được phần kết quả (Psychological Bulletin không mở, PubMed không có tóm tắt).
 - id: g2
   cau: 'Một khoa cấp cứu ở Mỹ, 4 năm, 150.999 lượt khám: ngày trăng tròn không khác về lượt khám, xe cấp cứu, nhập viện.'
   loai: so-lieu
@@ -61,6 +67,10 @@ nhan_dinh:
   trich: There were 150,999 patient visits to the ED during the study period ... No significant differences were found in total patient visits, ambulance runs, admissions to the hospital, or admissions to a monitored unit on days of the full moon.
   ket_qua: da-sua
   ghi_chu: Câu mới (nguồn mới).
+  luot_2: dung
+  luot_2_nguon:
+  - https://pubmed.ncbi.nlm.nih.gov/8924138/
+  luot_2_ghi_chu: Thompson & Adams 1996, Am J Emerg Med; tóm tắt nói 'suburban community hospital', không ghi nước; tác giả ở Mỹ.
 - id: g3
   cau: '1.444 ca chấn thương nặng trong một năm: không khác biệt ngày trăng tròn, kể cả ca do bạo lực.'
   loai: so-lieu
@@ -71,3 +81,7 @@ nhan_dinh:
   trich: we reviewed 1,444 trauma victims admitted to the hospital during one calendar year ... Victims of violence were admitted at a similar frequency on full moon ... and nonfull moon days
   ket_qua: da-sua
   ghi_chu: Câu mới (nguồn mới).
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1016/s0196-0644(89)80014-9
+  luot_2_ghi_chu: Coates 1989; 'trăng tròn' định nghĩa là cửa sổ 3 ngày.

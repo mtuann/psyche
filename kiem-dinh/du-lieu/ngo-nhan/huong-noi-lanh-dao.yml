@@ -2,51 +2,58 @@
 ban_ghi: ngo-nhan/huong-noi-lanh-dao
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'Bỏ link tới kham-pha/tinh-cach/big-five (trang ấy không bàn về lãnh đạo). Câu cũ "hướng ngoại dự báo tốt ai NỔI LÊN, nhưng dự báo kém hơn nhiều về ai lãnh đạo HIỆU QUẢ" mạnh hơn tóm tắt (tóm tắt: hướng ngoại là tương quan nhất quán nhất ở cả hai tiêu chí). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp (Judge và cộng sự, 2002) thấy hướng ngoại dự báo tốt ai sẽ NỔI LÊN làm lãnh đạo, nhưng dự báo kém hơn nhiều về ai lãnh đạo HIỆU QUẢ. Hướng nội hay hướng ngoại chỉ là một mảnh ghép; tận tâm và ổn định cảm xúc cũng quan trọng không kém.'' → mới ''Phân tích tổng hợp 73 mẫu (Judge và cộng sự, 2002) thấy hướng ngoại là đặc điểm đi cùng khả năng lãnh đạo nhất quán nhất, nhưng tương quan chỉ ở mức vừa (r = .31); tận tâm (.28), cởi mở (.24) và ổn định cảm xúc cũng liên quan. Tương quan ở mức vừa nghĩa là có nhiều ngoại lệ: không đặc điểm nào quyết định ai lãnh đạo giỏi.'' | trang: cũ ''kham-pha/tinh-cach/big-five'' → mới None'
 nguon:
-- id: judge2002
-  ten: 'Judge và cộng sự (2002). Personality and leadership: A qualitative and quantitative review'
-  link: https://doi.org/10.1037/0021-9010.87.4.765
+  - id: judge2002
+    ten: 'Judge và cộng sự (2002). Personality and leadership: A qualitative and quantitative review'
+    link: https://doi.org/10.1037/0021-9010.87.4.765
 nhan_dinh:
-- id: nhan
-  cau: 'Người hướng nội không thể làm lãnh đạo giỏi: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - judge2002
-  co_so:
-  - judge2002
-  ly_do: 'Phân tích tổng hợp 222 tương quan từ 73 mẫu: hướng ngoại chỉ tương quan vừa (.31) với lãnh đạo.'
-  ket_qua: dung
-- id: g1
-  cau: 'Judge 2002 (73 mẫu): hướng ngoại .31, tận tâm .28, cởi mở .24, nhạy cảm lo âu −.24; hướng ngoại nhất quán nhất ở cả xuất hiện lẫn hiệu quả lãnh đạo.'
-  loai: so-lieu
-  truong:
-  - giai_thich
-  nguon:
-  - judge2002
-  trich: meta-analyzed 222 correlations from 73 samples. Overall, the correlations with leadership were Neuroticism = -.24, Extraversion = .31, Openness to Experience = .24, Agreeableness = .08, and Conscientiousness = .28 ... Extraversion was the most consistent correlate of leadership across study settings and leadership criteria (leader emergence and leadership effectiveness).
-  ket_qua: da-sua
-  ghi_chu: Xem ghi_chu hồ sơ.
-- id: g2
-  cau: Tương quan mức vừa nghĩa là có nhiều ngoại lệ; không đặc điểm nào quyết định.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - judge2002
-  trich: 'r = .31: hướng ngoại giải thích khoảng 10% phương sai (suy từ hệ số tương quan của bài).'
-  ket_qua: da-sua
-  ghi_chu: Câu suy từ số liệu, thay câu cũ "tận tâm và ổn định cảm xúc cũng quan trọng không kém".
+  - id: nhan
+    cau: 'Người hướng nội không thể làm lãnh đạo giỏi: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - judge2002
+    co_so:
+      - judge2002
+    ly_do: 'Phân tích tổng hợp 222 tương quan từ 73 mẫu: hướng ngoại chỉ tương quan vừa (.31) với lãnh đạo.'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0021-9010.87.4.765" ]
+    luot_2_ghi_chu: Tương quan vừa, không loại hướng nội; nhãn 'bác bỏ' hợp với 'không thể làm lãnh đạo giỏi'.
+  - id: g1
+    cau: 'Judge 2002 (73 mẫu): hướng ngoại .31, tận tâm .28, cởi mở .24, nhạy cảm lo âu −.24; hướng ngoại nhất quán nhất ở cả xuất hiện lẫn hiệu quả lãnh đạo.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - judge2002
+    trich: meta-analyzed 222 correlations from 73 samples. Overall, the correlations with leadership were Neuroticism = -.24, Extraversion = .31, Openness to Experience = .24, Agreeableness = .08, and Conscientiousness = .28 ... Extraversion was the most consistent correlate of leadership across study settings and leadership criteria (leader emergence and leadership effectiveness).
+    ket_qua: da-sua
+    ghi_chu: Xem ghi_chu hồ sơ.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0021-9010.87.4.765" ]
+  - id: g2
+    cau: Tương quan mức vừa nghĩa là có nhiều ngoại lệ; không đặc điểm nào quyết định.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - judge2002
+    trich: 'r = .31: hướng ngoại giải thích khoảng 10% phương sai (suy từ hệ số tương quan của bài).'
+    ket_qua: da-sua
+    ghi_chu: Câu suy từ số liệu, thay câu cũ "tận tâm và ổn định cảm xúc cũng quan trọng không kém".
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0021-9010.87.4.765" ]

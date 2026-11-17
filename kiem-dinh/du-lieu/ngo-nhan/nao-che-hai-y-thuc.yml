@@ -2,58 +2,67 @@
 ban_ghi: ngo-nhan/nao-che-hai-y-thuc
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Ở bệnh nhân não chẻ, hai bán cầu xử lý thông tin độc lập: tay trái “biết” điều miệng không nói được. Nhưng liệu đó có phải hai ý thức riêng biệt không thì các nhà nghiên cứu vẫn tranh cãi — nhiều người cho rằng ý thức vẫn thống nhất ở mức độ nào đó, chỉ là đường truyền thông tin bị cắt.'' → mới ''Ở bệnh nhân não chẻ, khi thể chai bị cắt, hai bán cầu không còn trao đổi thông tin trực tiếp: tay trái có thể lấy đúng đồ vật mà miệng nói là không thấy. Nhưng liệu đó có phải hai ý thức riêng thì chưa có lời đáp cuối cùng: Sperry cho rằng mỗi bán cầu dường như có vùng nhận thức riêng, còn Gazzaniga (2005) viết rằng chưa có trường hợp nào cho phép khẳng định mỗi bán cầu có ý thức đầy đủ về bản thân.'''
 nguon:
-- id: gazzaniga1967
-  ten: Gazzaniga và cộng sự (1967). Language after section of the cerebral commissures
-  link: https://doi.org/10.1093/brain/90.1.131
+  - id: gazzaniga1967
+    ten: Gazzaniga và cộng sự (1967). Language after section of the cerebral commissures
+    link: https://doi.org/10.1093/brain/90.1.131
 nhan_dinh:
-- id: nhan
-  cau: 'Cắt thể chai tạo ra hai "con người" độc lập: đang tranh cãi.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: tranh-cai
-  nguon:
-  - gazzaniga1967
-  co_so:
-  - gazzaniga1967
-  ly_do: Khớp khung tranh-cai[liệu có "hai ý thức" trong một đầu người?] của trang nhà nao-che-doi (đã khóa).
-  ket_qua: dung
-- id: g1
-  cau: Khi thể chai bị cắt, hai bán cầu không còn trao đổi trực tiếp; tay trái lấy đúng đồ vật mà miệng nói là không thấy.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - gazzaniga1967
-  trich: 'Trang nhà (đã khóa): khung kha-vung[khi cầu nối bị cắt, hai bán cầu không còn trao đổi thông tin trực tiếp]; ví dụ KEY/RING "tay trái lấy ra chiếc chìa khóa, thứ mà miệng khẳng định không thấy"'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "hai bán cầu xử lý thông tin độc lập: tay trái biết điều miệng không nói được": viết theo trang nhà.'
-- id: g2
-  cau: 'Sperry: mỗi bán cầu dường như có vùng nhận thức riêng; Gazzaniga (2005): chưa có trường hợp cho phép khẳng định mỗi bán cầu có ý thức đầy đủ về bản thân.'
-  loai: lich-su
-  truong:
-  - giai_thich
-  nguon:
-  - gazzaniga1967
-  trich: 'Trang nhà: "Sperry cho rằng mỗi bán cầu dường như có vùng nhận thức riêng, chạy song song. Gazzaniga (2005) viết rằng trong hàng chục trường hợp ... chưa có trường hợp nào cho phép khẳng định mỗi bán cầu có ý thức đầy đủ về bản thân."'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "nhiều người cho rằng ý thức vẫn thống nhất ở mức độ nào đó, chỉ là đường truyền thông tin bị cắt": viết theo trang nhà. Gazzaniga 2005 và Sperry 1981 chưa có bản ghi nguồn (để lô dọn nguồn).'
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/co-so-sinh-hoc/nao-che-doi
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: Trang nhà đã khóa.
+  - id: nhan
+    cau: 'Cắt thể chai tạo ra hai "con người" độc lập: đang tranh cãi.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: tranh-cai
+    nguon:
+      - gazzaniga1967
+    co_so:
+      - gazzaniga1967
+    ly_do: Khớp khung tranh-cai[liệu có "hai ý thức" trong một đầu người?] của trang nhà nao-che-doi (đã khóa).
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1007/s11065-020-09439-3" ]
+    luot_2_ghi_chu: "Chỗ khó: tổng quan tập thể 2020 (de Haan, Corballis, Gazzaniga không phải tác giả) nêu bằng chứng chưa đủ; hợp 'đang tranh cãi'."
+  - id: g1
+    cau: Khi thể chai bị cắt, hai bán cầu không còn trao đổi trực tiếp; tay trái lấy đúng đồ vật mà miệng nói là không thấy.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - gazzaniga1967
+    trich: 'Trang nhà (đã khóa): khung kha-vung[khi cầu nối bị cắt, hai bán cầu không còn trao đổi thông tin trực tiếp]; ví dụ KEY/RING "tay trái lấy ra chiếc chìa khóa, thứ mà miệng khẳng định không thấy"'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "hai bán cầu xử lý thông tin độc lập: tay trái biết điều miệng không nói được": viết theo trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/prizes/medicine/1981/sperry/lecture/" ]
+    luot_2_ghi_chu: "Bài giảng Nobel 1981 của Sperry; de Haan 2020: callosotomy gây gián đoạn tích hợp rộng. Chi tiết 'tay trái' suy từ bán cầu phải điều khiển tay trái."
+  - id: g2
+    cau: 'Sperry: mỗi bán cầu dường như có vùng nhận thức riêng; Gazzaniga (2005): chưa có trường hợp cho phép khẳng định mỗi bán cầu có ý thức đầy đủ về bản thân.'
+    loai: lich-su
+    truong:
+      - giai_thich
+    nguon:
+      - gazzaniga1967
+    trich: 'Trang nhà: "Sperry cho rằng mỗi bán cầu dường như có vùng nhận thức riêng, chạy song song. Gazzaniga (2005) viết rằng trong hàng chục trường hợp ... chưa có trường hợp nào cho phép khẳng định mỗi bán cầu có ý thức đầy đủ về bản thân."'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "nhiều người cho rằng ý thức vẫn thống nhất ở mức độ nào đó, chỉ là đường truyền thông tin bị cắt": viết theo trang nhà. Gazzaniga 2005 và Sperry 1981 chưa có bản ghi nguồn (để lô dọn nguồn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.nobelprize.org/prizes/medicine/1981/sperry/lecture/", "https://doi.org/10.1007/s11065-020-09439-3" ]
+    luot_2_ghi_chu: Câu trích Gazzaniga 2005 không đọc được thân bài (nhà xuất bản chặn); phần ý nghĩa 'chưa đủ bằng chứng' khớp đồng thuận 2020.
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/co-so-sinh-hoc/nao-che-doi
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: Trang nhà đã khóa.

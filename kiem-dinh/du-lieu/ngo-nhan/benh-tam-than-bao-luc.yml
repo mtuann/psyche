@@ -2,75 +2,87 @@
 ban_ghi: ngo-nhan/benh-tam-than-bao-luc
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'Thẻ về sức khỏe tâm thần: trang Ngộ nhận có lời nhắc Hỗ trợ ở chân trang. Bỏ câu "Định kiến này khiến nhiều người ngại tìm giúp đỡ" (hai nguồn của thẻ không nói điều này). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phần lớn người sống với bệnh tâm thần không có hành vi bạo lực. Ước tính từ dữ liệu dịch tễ ở Mỹ cho thấy chỉ khoảng 4% bạo lực trong cộng đồng có thể quy cho bệnh tâm thần nặng. Nguy cơ tăng chủ yếu khi có thêm các yếu tố khác như sử dụng chất gây nghiện hay hoàn cảnh bất lợi, và người có bệnh tâm thần thường là nạn nhân của bạo lực nhiều hơn. Định kiến này khiến nhiều người ngại tìm giúp đỡ.'' → mới ''Phần lớn người sống với bệnh tâm thần không có hành vi bạo lực. Theo số liệu dịch tễ ở Mỹ, chỉ khoảng 4% bạo lực trong cộng đồng có thể quy riêng cho bệnh tâm thần nặng. Một nghiên cứu theo dõi hơn 34.000 người ở Mỹ thấy bệnh tâm thần nặng tự nó không dự báo bạo lực về sau; nguy cơ đi cùng các yếu tố khác như lạm dụng chất, tiền sử bạo lực, hoàn cảnh bất lợi. Người có bệnh tâm thần nặng còn là nạn nhân của bạo lực thường hơn là người gây ra bạo lực.'''
 nguon:
-- id: varshney2016
-  ten: 'Varshney và cộng sự (2016). Violence and mental illness: What is the true story?'
-  link: https://doi.org/10.1136/jech-2015-205546
-  toan_van: true
-- id: elbogen2009
-  ten: 'Elbogen và cộng sự (2009). The intricate link between violence and mental disorder: Results from the National Epidemiologic Survey on Alcohol and Related Conditions'
-  link: https://doi.org/10.1001/archgenpsychiatry.2008.537
+  - id: varshney2016
+    ten: 'Varshney và cộng sự (2016). Violence and mental illness: What is the true story?'
+    link: https://doi.org/10.1136/jech-2015-205546
+    toan_van: true
+  - id: elbogen2009
+    ten: 'Elbogen và cộng sự (2009). The intricate link between violence and mental disorder: Results from the National Epidemiologic Survey on Alcohol and Related Conditions'
+    link: https://doi.org/10.1001/archgenpsychiatry.2008.537
 nhan_dinh:
-- id: nhan
-  cau: 'Phần lớn người có bệnh tâm thần là nguy hiểm, có xu hướng bạo lực: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - elbogen2009
-  - varshney2016
-  co_so:
-  - elbogen2009
-  - varshney2016
-  ly_do: 'Nghiên cứu dọc đại diện quốc gia (NESARC, 34.653 người) và tổng quan 2016: bệnh tâm thần nặng tự nó không dự báo bạo lực; tỉ lệ quy thuộc khoảng 4%.'
-  ket_qua: dung
-- id: g1
-  cau: Phần lớn người sống với bệnh tâm thần không có hành vi bạo lực.
-  loai: lam-sang
-  truong:
-  - giai_thich
-  nguon:
-  - varshney2016
-  trich: Around 10% of the patients with schizophrenia or other psychotic disorders behave violently, compared with less than 2% of the general public.
-  ket_qua: dung
-- id: g2
-  cau: Theo số liệu ECA ở Mỹ, tỉ lệ bạo lực quy cho riêng bệnh tâm thần nặng trong 1 năm chỉ khoảng 4%.
-  loai: so-lieu
-  truong:
-  - giai_thich
-  nguon:
-  - varshney2016
-  trich: the 1-year population-attributable risk (PAR) of violence associated with serious mental illness alone was found to be only 4% in the ECA (Epidemiologic Catchment Area)
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "Ước tính từ dữ liệu dịch tễ ở Mỹ": giữ ý, viết rõ "quy riêng cho".'
-- id: g3
-  cau: 'NESARC (34.653 người, hai đợt): bệnh tâm thần nặng tự nó không dự báo bạo lực về sau; bạo lực đi cùng lạm dụng chất, tiền sử bạo lực, yếu tố hoàn cảnh.'
-  loai: lam-sang
-  truong:
-  - giai_thich
-  nguon:
-  - elbogen2009
-  trich: A total of 34 653 subjects ... Multivariate analyses revealed that severe mental illness alone did not predict future violence; it was associated instead with historical (past violence ...), clinical (substance abuse ...), dispositional ... and contextual (recent divorce, unemployment, victimization) factors.
-  ket_qua: da-sua
-  ghi_chu: 'Câu cũ "Nguy cơ tăng chủ yếu khi có thêm các yếu tố khác như sử dụng chất gây nghiện hay hoàn cảnh bất lợi": viết rõ theo Elbogen 2009.'
-- id: g4
-  cau: Người có bệnh tâm thần nặng là nạn nhân của bạo lực thường hơn là người gây bạo lực.
-  loai: lam-sang
-  truong:
-  - giai_thich
-  nguon:
-  - varshney2016
-  trich: violent victimisation of patients occurs more frequently than violent offending by the patient
-  ket_qua: dung
+  - id: nhan
+    cau: 'Phần lớn người có bệnh tâm thần là nguy hiểm, có xu hướng bạo lực: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - elbogen2009
+      - varshney2016
+    co_so:
+      - elbogen2009
+      - varshney2016
+    ly_do: 'Nghiên cứu dọc đại diện quốc gia (NESARC, 34.653 người) và tổng quan 2016: bệnh tâm thần nặng tự nó không dự báo bạo lực; tỉ lệ quy thuộc khoảng 4%.'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4211925/", "https://doi.org/10.1176/ps.2008.59.2.153", "https://doi.org/10.1001/archgenpsychiatry.2008.537" ]
+    luot_2_ghi_chu: "Chỗ khó: nhãn 'bác bỏ' dựa trên tổng quan Swanson 2015, Choe 2008, NESARC; đạt cho khẳng định 'phần lớn nguy hiểm'."
+  - id: g1
+    cau: Phần lớn người sống với bệnh tâm thần không có hành vi bạo lực.
+    loai: lam-sang
+    truong:
+      - giai_thich
+    nguon:
+      - varshney2016
+    trich: Around 10% of the patients with schizophrenia or other psychotic disorders behave violently, compared with less than 2% of the general public.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4211925/" ]
+  - id: g2
+    cau: Theo số liệu ECA ở Mỹ, tỉ lệ bạo lực quy cho riêng bệnh tâm thần nặng trong 1 năm chỉ khoảng 4%.
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - varshney2016
+    trich: the 1-year population-attributable risk (PAR) of violence associated with serious mental illness alone was found to be only 4% in the ECA (Epidemiologic Catchment Area)
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "Ước tính từ dữ liệu dịch tễ ở Mỹ": giữ ý, viết rõ "quy riêng cho".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pmc.ncbi.nlm.nih.gov/articles/PMC4211925/" ]
+  - id: g3
+    cau: 'NESARC (34.653 người, hai đợt): bệnh tâm thần nặng tự nó không dự báo bạo lực về sau; bạo lực đi cùng lạm dụng chất, tiền sử bạo lực, yếu tố hoàn cảnh.'
+    loai: lam-sang
+    truong:
+      - giai_thich
+    nguon:
+      - elbogen2009
+    trich: A total of 34 653 subjects ... Multivariate analyses revealed that severe mental illness alone did not predict future violence; it was associated instead with historical (past violence ...), clinical (substance abuse ...), dispositional ... and contextual (recent divorce, unemployment, victimization) factors.
+    ket_qua: da-sua
+    ghi_chu: 'Câu cũ "Nguy cơ tăng chủ yếu khi có thêm các yếu tố khác như sử dụng chất gây nghiện hay hoàn cảnh bất lợi": viết rõ theo Elbogen 2009.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1001/archgenpsychiatry.2008.537" ]
+  - id: g4
+    cau: Người có bệnh tâm thần nặng là nạn nhân của bạo lực thường hơn là người gây bạo lực.
+    loai: lam-sang
+    truong:
+      - giai_thich
+    nguon:
+      - varshney2016
+    trich: violent victimisation of patients occurs more frequently than violent offending by the patient
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1176/ps.2008.59.2.153" ]
+    luot_2_ghi_chu: "Choe 2008: nạn nhân 20-35% so với gây bạo lực 2-22% ở bệnh nhân ngoại trú/hỗn hợp."

@@ -2,60 +2,71 @@
 ban_ghi: ngo-nhan/thap-maslow
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'Bỏ các ý chưa đọc được trong toàn văn Bridgman 2019 (chỉ mở được tóm tắt): năm 1943 và 1954, "do giới tư vấn quản trị tạo ra", "Maslow cho rằng các nhu cầu chồng lấn nhau". Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Maslow mô tả một thứ bậc nhu cầu (năm 1943 và 1954) nhưng không vẽ kim tự tháp. Hình kim tự tháp do giới tư vấn quản trị tạo ra về sau, và nó khiến thứ bậc trông cứng nhắc hơn ý ông: Maslow cho rằng các nhu cầu chồng lấn nhau, không cần thỏa mãn trọn vẹn bậc dưới mới đến bậc trên.'' → mới ''Maslow mô tả một thứ bậc nhu cầu nhưng chưa bao giờ vẽ kim tự tháp. Một khảo cứu lịch sử năm 2019 lần lại cách hình kim tự tháp ra đời và trở thành biểu tượng nổi tiếng nhất của ngành quản trị; bài cũng ghi nhận lý thuyết của Maslow ít được nghiên cứu thực nghiệm ủng hộ.'''
 nguon:
-- id: bridgman2019
-  ten: Bridgman và cộng sự (2019). Who built Maslow's pyramid? A history of the creation of management studies' most famous symbol and its implications for management education
-  link: https://doi.org/10.5465/amle.2017.0351
+  - id: bridgman2019
+    ten: Bridgman và cộng sự (2019). Who built Maslow's pyramid? A history of the creation of management studies' most famous symbol and its implications for management education
+    link: https://doi.org/10.5465/amle.2017.0351
 nhan_dinh:
-- id: nhan
-  cau: 'Hình kim tự tháp nhu cầu do Maslow vẽ ra: sai (đã bị bác bỏ).'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - bridgman2019
-  co_so:
-  - bridgman2019
-  ly_do: 'Khảo cứu lịch sử có bình duyệt: "Maslow never created a pyramid".'
-  ket_qua: dung
-- id: g1
-  cau: Maslow mô tả thứ bậc nhu cầu nhưng chưa bao giờ vẽ kim tự tháp.
-  loai: lich-su
-  truong:
-  - giai_thich
-  nguon:
-  - bridgman2019
-  trich: the idea that human needs exist in a hierarchy ... However, Maslow never created a pyramid to represent the hierarchy of needs.
-  ket_qua: dung
-- id: g2
-  cau: Bài 2019 lần lại cách hình kim tự tháp ra đời và thành biểu tượng nổi tiếng nhất của ngành quản trị.
-  loai: lich-su
-  truong:
-  - giai_thich
-  nguon:
-  - bridgman2019
-  trich: A History of the Creation of Management Studies’ Most Famous Symbol ... We investigated how it came to be
-  ket_qua: da-sua
-  ghi_chu: Thay câu "do giới tư vấn quản trị tạo ra về sau" (chưa đọc được toàn văn).
-- id: g3
-  cau: Lý thuyết của Maslow ít được nghiên cứu thực nghiệm ủng hộ.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - bridgman2019
-  trich: Despite gaining little support in empirical studies
-  ket_qua: da-sua
-  ghi_chu: 'Thay câu cũ "nó khiến thứ bậc trông cứng nhắc hơn ý ông: Maslow cho rằng các nhu cầu chồng lấn..." (chưa đọc được nguồn).'
+  - id: nhan
+    cau: 'Hình kim tự tháp nhu cầu do Maslow vẽ ra: sai (đã bị bác bỏ).'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - bridgman2019
+    co_so:
+      - bridgman2019
+    ly_do: 'Khảo cứu lịch sử có bình duyệt: "Maslow never created a pyramid".'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.5465/amle.2017.0351" ]
+    luot_2_ghi_chu: "Chỗ khó: nhãn 'bác bỏ' đúng với chữ 'hình kim tự tháp do Maslow vẽ'; không áp cho lý thuyết thứ bậc nhu cầu."
+  - id: g1
+    cau: Maslow mô tả thứ bậc nhu cầu nhưng chưa bao giờ vẽ kim tự tháp.
+    loai: lich-su
+    truong:
+      - giai_thich
+    nguon:
+      - bridgman2019
+    trich: the idea that human needs exist in a hierarchy ... However, Maslow never created a pyramid to represent the hierarchy of needs.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.5465/amle.2017.0351" ]
+  - id: g2
+    cau: Bài 2019 lần lại cách hình kim tự tháp ra đời và thành biểu tượng nổi tiếng nhất của ngành quản trị.
+    loai: lich-su
+    truong:
+      - giai_thich
+    nguon:
+      - bridgman2019
+    trich: A History of the Creation of Management Studies’ Most Famous Symbol ... We investigated how it came to be
+    ket_qua: da-sua
+    ghi_chu: Thay câu "do giới tư vấn quản trị tạo ra về sau" (chưa đọc được toàn văn).
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.5465/amle.2017.0351" ]
+    luot_2_ghi_chu: Bridgman, Cummings & Ballard 2019, AMLE 18(1) 81-98.
+  - id: g3
+    cau: Lý thuyết của Maslow ít được nghiên cứu thực nghiệm ủng hộ.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - bridgman2019
+    trich: Despite gaining little support in empirical studies
+    ket_qua: da-sua
+    ghi_chu: 'Thay câu cũ "nó khiến thứ bậc trông cứng nhắc hơn ý ông: Maslow cho rằng các nhu cầu chồng lấn..." (chưa đọc được nguồn).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.5465/amle.2017.0351" ]
+    luot_2_ghi_chu: Chỉ trong tóm tắt của Bridgman 2019; chưa mở Wahba & Bridwell 1976.

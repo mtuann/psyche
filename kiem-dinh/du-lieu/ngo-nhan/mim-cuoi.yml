@@ -8,7 +8,7 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
+    luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
     review: null
     kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Thí nghiệm "ngậm bút" kinh điển không tái lập được khi làm lại ở 17 phòng thí nghiệm với gần 1.900 người. Dự án Many Smiles (3.878 người, 19 quốc gia, 2022) thấy chủ động mỉm cười làm tăng cảm giác vui một chút, nhưng cách ngậm bút thì không cho kết quả rõ ràng. Nếu có hiệu ứng thì nó nhỏ, và mỉm cười không phải cách chữa buồn bã hay trầm cảm.'' → mới ''Thí nghiệm "ngậm bút" kinh điển không tái lập được khi 17 phòng thí nghiệm cùng làm lại theo một quy trình đăng ký trước (2016). Dự án Many Smiles (3.878 người, 19 quốc gia, 2022) thấy bắt chước nét mặt cười hay chủ động mỉm cười có thể làm tăng cảm giác vui, nhưng cách ngậm bút thì không cho kết quả rõ ràng. Các nghiên cứu này đo cảm giác vui ngay lúc ấy, không thử mỉm cười như cách chữa buồn bã kéo dài hay trầm cảm.'''
@@ -35,6 +35,11 @@ nhan_dinh:
   - coles2022
   ly_do: Một tái lập lớn có đăng ký trước thất bại (17 phòng thí nghiệm); dự án đa trung tâm có đăng ký trước 2022 thấy kết quả khác nhau theo cách gây nét mặt.
   ket_qua: dung
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1177/1745691616674458
+  - https://doi.org/10.1038/s41562-022-01458-9
+  luot_2_ghi_chu: 'Chỗ khó: tái lập thất bại cho ngậm bút nhưng Many Smiles có hiệu ứng ở nhiệm vụ khác; ''đang tranh cãi'' hợp.'
 - id: g1
   cau: 'Báo cáo tái lập có đăng ký trước 2016: 17 lần làm lại thí nghiệm ngậm bút, chênh lệch 0,03 (gốc 0,82).'
   loai: tai-lap
@@ -45,6 +50,9 @@ nhan_dinh:
   trich: This Registered Replication Report describes the results of 17 independent direct replications ... The original ... reported a rating difference of 0.82 units ... Our meta-analysis revealed a rating difference of 0.03 units
   ket_qua: da-sua
   ghi_chu: 'Bỏ "gần 1.900 người": tóm tắt không nêu tổng số người, chưa mở toàn văn.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1177/1745691616674458
 - id: g2
   cau: 'Many Smiles (3.878 người, 19 nước): bắt chước nét mặt và chủ động cử động mặt làm tăng cảm giác vui; ngậm bút thì kết quả kém rõ.'
   loai: phat-hien
@@ -55,6 +63,9 @@ nhan_dinh:
   trich: Data from n = 3,878 participants spanning 19 countries indicated that a facial mimicry and voluntary facial action task could both amplify and initiate feelings of happiness. However, evidence of facial feedback effects was less conclusive when facial feedback was manipulated unobtrusively via a pen-in-mouth task.
   ket_qua: da-sua
   ghi_chu: 'Cũ "chủ động mỉm cười làm tăng cảm giác vui một chút": bài không nói "một chút"; thêm bắt chước nét mặt. Bỏ "Nếu có hiệu ứng thì nó nhỏ" (không có trong nguồn đã mở).'
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1038/s41562-022-01458-9
 - id: g3
   cau: Các nghiên cứu này đo cảm giác ngay lúc ấy, không thử mỉm cười như cách chữa buồn bã kéo dài hay trầm cảm.
   loai: phat-hien
@@ -64,5 +75,10 @@ nhan_dinh:
   - wagenmakers2016
   - coles2022
   trich: 'Thiết kế trong hai tóm tắt: chấm độ buồn cười của tranh (2016), cảm giác vui sau nhiệm vụ cử động mặt (2022); không có nhóm người trầm cảm, không theo dõi dài hạn.'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "mỉm cười không phải cách chữa buồn bã hay trầm cảm": câu về điều trị không có nguồn; viết lại thành câu về phạm vi của nghiên cứu.'
+  ket_qua: da-bo
+  ghi_chu: 'Cũ "mỉm cười không phải cách chữa buồn bã hay trầm cảm": câu về điều trị không có nguồn; viết lại thành câu về phạm vi của nghiên cứu. Sau lượt 2 (Opus 5.5, 18/11/2026): Bỏ câu về phạm vi (không thử mỉm cười như cách chữa trầm cảm): lượt 2 khong-chac, câu là suy luận, không nguồn nói thẳng.'
+  luot_2: khong-chac
+  luot_2_nguon:
+  - https://doi.org/10.1177/1745691616674458
+  - https://doi.org/10.1038/s41562-022-01458-9
+  luot_2_ghi_chu: 'Đã tìm Europe PMC, PubMed: hai nghiên cứu đo cảm giác tức thời ở người khỏe mạnh, nhưng không có nguồn nào mở nói về việc không thử mỉm cười để chữa buồn bã hay trầm cảm; câu là suy luận về phạm vi.'

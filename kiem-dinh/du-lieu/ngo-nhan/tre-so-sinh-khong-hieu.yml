@@ -2,63 +2,71 @@
 ban_ghi: ngo-nhan/tre-so-sinh-khong-hieu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l3
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-    luot_2: null
-    review: null
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      review: null
+      kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Trẻ vài tháng tuổi đã phân biệt được âm thanh của mọi ngôn ngữ trên thế giới và âm thầm học thống kê từ giọng nói xung quanh — trước cả khi bập bẹ. Thí nghiệm của Kuhl và cộng sự (2003) cho thấy chỉ cần người thật trò chuyện vài giờ, trẻ 9 tháng đã “mở tai” với âm ngoại ngữ.'' → mới ''Trẻ vài tháng tuổi đã phân biệt được nhiều cặp âm, kể cả âm không có trong tiếng mẹ đẻ; trong khoảng 6–12 tháng tuổi, khả năng ấy hẹp dần theo tiếng mẹ đẻ. Trong thí nghiệm của Kuhl và cộng sự (2003), sau 12 buổi chơi với người bản ngữ (tổng cộng 5 giờ), trẻ Mỹ 9 tháng tuổi phân biệt được một cặp phụ âm tiếng Quan Thoại; xem video hay nghe băng cùng nội dung thì không.'' | nguon: cũ [''kuhl2003''] → mới [''werker1984'', ''kuhl2003'']'
 nguon:
-- id: werker1984
-  ten: 'Werker và cộng sự (1984). Cross-language speech perception: Evidence for perceptual reorganization during the first year of life'
-  link: https://doi.org/10.1016/S0163-6383(84)80022-3
-- id: kuhl2003
-  ten: 'Kuhl và cộng sự (2003). Foreign-language experience in infancy: Effects of short-term exposure and social interaction on phonetic learning'
-  link: https://doi.org/10.1073/pnas.1532872100
+  - id: werker1984
+    ten: 'Werker và cộng sự (1984). Cross-language speech perception: Evidence for perceptual reorganization during the first year of life'
+    link: https://doi.org/10.1016/S0163-6383(84)80022-3
+  - id: kuhl2003
+    ten: 'Kuhl và cộng sự (2003). Foreign-language experience in infancy: Effects of short-term exposure and social interaction on phonetic learning'
+    link: https://doi.org/10.1073/pnas.1532872100
 nhan_dinh:
-- id: nhan
-  cau: 'Trẻ sơ sinh chẳng hiểu gì về ngôn ngữ xung quanh: đã bị bác bỏ.'
-  loai: nhan
-  truong:
-  - khang_dinh
-  - nhan
-  nhan: bac-bo
-  nguon:
-  - werker1984
-  - kuhl2003
-  co_so:
-  - werker1984
-  - kuhl2003
-  ly_do: 'Trang nhà tre-hoc-noi (đã khóa): khung vung-chac[hẹp dần theo tiếng mẹ đẻ trong khoảng 6–12 tháng tuổi]; kha-vung về học qua người thật.'
-  ket_qua: dung
-- id: g1
-  cau: Trẻ nhỏ phân biệt được cả âm không có trong tiếng mẹ đẻ; khả năng này hẹp dần trong khoảng 6–12 tháng.
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - werker1984
-  trich: 'Trang nhà: "Khả năng phân biệt phụ âm không có trong tiếng mẹ đẻ giảm từ 6–8 tháng sang 10–12 tháng tuổi"; khung vung-chac[hẹp dần theo tiếng mẹ đẻ trong khoảng 6–12 tháng tuổi]'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "phân biệt được âm thanh của mọi ngôn ngữ trên thế giới và âm thầm học thống kê từ giọng nói": "mọi ngôn ngữ" quá rộng (trang nhà: không phải mọi tương phản đều suy giảm), "học thống kê" chưa có nguồn trong hồ sơ.'
-- id: g2
-  cau: 'Kuhl 2003: 12 buổi (5 giờ) với người thật, trẻ 9 tháng học được cặp phụ âm Quan Thoại; video, băng thì không.'
-  loai: phat-hien
-  truong:
-  - giai_thich
-  nguon:
-  - kuhl2003
-  trich: 'Trang nhà: "Sau 12 buổi tiếp xúc trực tiếp (tổng cộng 5 giờ), trẻ Mỹ phân biệt được cặp phụ âm tiếng Quan Thoại ... Nhưng nhóm xem TV hoặc nghe băng không cho thấy việc học nào"'
-  ket_qua: da-sua
-  ghi_chu: 'Cũ "chỉ cần người thật trò chuyện vài giờ, trẻ 9 tháng đã mở tai với âm ngoại ngữ": viết cụ thể theo trang nhà.'
-- id: trang
-  cau: Bài liên quan của thẻ là kham-pha/phat-trien/tre-hoc-noi
-  loai: ve-site
-  truong:
-  - trang
-  ket_qua: dung
-  ghi_chu: Trang nhà đã khóa.
+  - id: nhan
+    cau: 'Trẻ sơ sinh chẳng hiểu gì về ngôn ngữ xung quanh: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - werker1984
+      - kuhl2003
+    co_so:
+      - werker1984
+      - kuhl2003
+    ly_do: 'Trang nhà tre-hoc-noi (đã khóa): khung vung-chac[hẹp dần theo tiếng mẹ đẻ trong khoảng 6–12 tháng tuổi]; kha-vung về học qua người thật.'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1113380109", "https://web.archive.org/web/2017/https://www.pnas.org/content/pnas/100/15/9096.full.pdf" ]
+    luot_2_ghi_chu: "Chỗ khó: bằng chứng từ 6 tháng tuổi (không phải sơ sinh vài tuần) và từ một vài nghiên cứu; nhãn 'bác bỏ' hợp với câu 'chẳng hiểu gì' nhưng nên ghi rõ độ tuổi."
+  - id: g1
+    cau: Trẻ nhỏ phân biệt được cả âm không có trong tiếng mẹ đẻ; khả năng này hẹp dần trong khoảng 6–12 tháng.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - werker1984
+    trich: 'Trang nhà: "Khả năng phân biệt phụ âm không có trong tiếng mẹ đẻ giảm từ 6–8 tháng sang 10–12 tháng tuổi"; khung vung-chac[hẹp dần theo tiếng mẹ đẻ trong khoảng 6–12 tháng tuổi]'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "phân biệt được âm thanh của mọi ngôn ngữ trên thế giới và âm thầm học thống kê từ giọng nói": "mọi ngôn ngữ" quá rộng (trang nhà: không phải mọi tương phản đều suy giảm), "học thống kê" chưa có nguồn trong hồ sơ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1532872100" ]
+  - id: g2
+    cau: 'Kuhl 2003: 12 buổi (5 giờ) với người thật, trẻ 9 tháng học được cặp phụ âm Quan Thoại; video, băng thì không.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - kuhl2003
+    trich: 'Trang nhà: "Sau 12 buổi tiếp xúc trực tiếp (tổng cộng 5 giờ), trẻ Mỹ phân biệt được cặp phụ âm tiếng Quan Thoại ... Nhưng nhóm xem TV hoặc nghe băng không cho thấy việc học nào"'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "chỉ cần người thật trò chuyện vài giờ, trẻ 9 tháng đã mở tai với âm ngoại ngữ": viết cụ thể theo trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://web.archive.org/web/2017/https://www.pnas.org/content/pnas/100/15/9096.full.pdf" ]
+    luot_2_ghi_chu: 12 buổi x 25 phút = 5 giờ; đọc toàn văn qua bản lưu Internet Archive.
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/phat-trien/tre-hoc-noi
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: Trang nhà đã khóa.
