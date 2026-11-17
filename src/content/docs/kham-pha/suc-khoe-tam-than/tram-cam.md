@@ -60,7 +60,7 @@ Giai đoạn trầm cảm được mô tả cụ thể trong ICD-11 và DSM-5-TR
 :::
 
 :::kha-vung[Liệu pháp tâm lý và thuốc chống trầm cảm giúp giảm triệu chứng ở nhiều người, nhưng không phải ở tất cả]
-Các phân tích tổng hợp lớn cho thấy CBT (409 thử nghiệm) và các thuốc chống trầm cảm (522 thử nghiệm) đều hiệu quả hơn nhóm đối chứng hay giả dược. So với nhóm đối chứng, mức hiệu quả trung bình từ nhỏ đến vừa, nhỏ hơn nữa khi chỉ tính các nghiên cứu ít sai lệch hay khi hiệu chỉnh sai lệch xuất bản, và khác nhau nhiều giữa các người: một phần người bệnh cần thử thêm hay đổi hướng điều trị. Kết hợp liệu pháp tâm lý với thuốc tốt hơn chỉ dùng thuốc; nó có tốt hơn chỉ dùng liệu pháp tâm lý hay không thì các phân tích tổng hợp chưa thống nhất.
+Các phân tích tổng hợp lớn cho thấy CBT (409 thử nghiệm) và các thuốc chống trầm cảm (522 thử nghiệm) đều hiệu quả hơn nhóm đối chứng hay giả dược. So với nhóm đối chứng, mức hiệu quả trung bình từ nhỏ đến vừa, nhỏ hơn nữa khi chỉ tính các nghiên cứu ít sai lệch hay khi hiệu chỉnh sai lệch xuất bản, và kết quả khác nhau nhiều giữa người này với người khác: một phần người bệnh cần thử thêm hay đổi hướng điều trị. Kết hợp liệu pháp tâm lý với thuốc tốt hơn chỉ dùng thuốc; nó có tốt hơn chỉ dùng liệu pháp tâm lý hay không thì các phân tích tổng hợp chưa thống nhất.
 :::
 
 :::tranh-cai[Vai trò cụ thể của serotonin trong trầm cảm]

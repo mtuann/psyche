@@ -16,7 +16,7 @@ Hãy tưởng tượng bạn bị đau răng âm ỉ ba tuần nay (ví dụ gi�
 Với sức khỏe tâm thần, nhiều người cũng hành xử y hệt: chờ đến khi không chịu nổi mới tìm người giúp. WHO ghi rằng ngay ở các nước thu nhập cao, chỉ khoảng một phần ba người bị trầm cảm được điều trị.
 
 :::thu-gon[Câu hỏi để tự hỏi]
-Không có bài kiểm tra nào trên trang này, và Psyche không làm công cụ tự chẩn đoán. Thay vào đó, hãy đọc các dấu hiệu dưới đây và tự hỏi một cách trung thực: "Điều này có đang diễn ra với mình, kéo dài nhiều tuần, và ảnh hưởng đến cuộc sống của mình không?" Nếu câu trả lời là có, việc tìm một người có chuyên môn để trò chuyện là bước hợp lý, dù bạn có bị rối loạn nào hay không. Bạn không cần phải "đủ nặng".
+Trang này không có bài tự đánh giá hay bảng tự chấm điểm nào (các câu hỏi ở mục "Thử suy ngẫm" chỉ để ôn lại nội dung bài), và Psyche không làm công cụ tự chẩn đoán. Thay vào đó, hãy đọc các dấu hiệu dưới đây và tự hỏi một cách trung thực: "Điều này có đang diễn ra với mình, kéo dài nhiều tuần, và ảnh hưởng đến cuộc sống của mình không?" Nếu câu trả lời là có, việc tìm một người có chuyên môn để trò chuyện là bước hợp lý, dù bạn có bị rối loạn nào hay không. Bạn không cần phải "đủ nặng".
 :::
 
 ## Các dấu hiệu nên tìm chuyên gia
@@ -36,7 +36,7 @@ Danh sách này giúp bạn quyết định có nên tìm người nói chuyện
 Nhiều người e ngại đi khám vì không biết mình sẽ gặp ai, người đó làm được gì. Dưới đây là ba vai trò chính, tóm từ bảng chi tiết ở trang [Hỗ trợ](/psyche/ho-tro/):
 
 - **Bác sĩ chuyên khoa tâm thần:** là bác sĩ y khoa, học chuyên khoa tâm thần. Trong ba vai trò này, chỉ bác sĩ được kê đơn thuốc. Công việc: chẩn đoán, điều trị bằng thuốc và các phương pháp khác, chỉ định nhập viện khi cần.
-- **Nhà tâm lý lâm sàng:** học chuyên ngành tâm lý lâm sàng. Theo Luật Khám bệnh, chữa bệnh 2023 (có hiệu lực từ 01/01/2024), đây là chức danh **phải có giấy phép hành nghề**. Công việc, theo phạm vi hành nghề ở Thông tư 32/2023/TT-BYT: đánh giá, xây dựng và thực hiện các can thiệp tâm lý (trị liệu tâm lý) tại cơ sở khám bệnh, chữa bệnh. Không kê đơn thuốc (theo Thông tư 26/2025/TT-BYT, người kê đơn là bác sĩ, y sĩ).
+- **Nhà tâm lý lâm sàng:** học chuyên ngành tâm lý lâm sàng. Theo các văn bản pháp luật hiện hành tính đến 11/2026: Luật Khám bệnh, chữa bệnh 2023 (có hiệu lực từ 01/01/2024) xếp đây là chức danh **phải có giấy phép hành nghề**; công việc, theo phạm vi hành nghề ở Thông tư 32/2023/TT-BYT: đánh giá, xây dựng và thực hiện các can thiệp tâm lý (trị liệu tâm lý) tại cơ sở khám bệnh, chữa bệnh. Không kê đơn thuốc (theo Thông tư 26/2025/TT-BYT, người kê đơn là bác sĩ, y sĩ).
 - **Tham vấn viên, chuyên viên tư vấn tâm lý:** đào tạo rất khác nhau tùy nơi; Luật Khám bệnh, chữa bệnh 2023 không đặt chuẩn đào tạo chung, và đây không phải chức danh phải có giấy phép hành nghề theo luật này. Công việc: lắng nghe, hỗ trợ, tư vấn.
 
 Các vai trò này bổ sung cho nhau, không vai trò nào "cao cấp" hơn trong mọi trường hợp. Có người được bác sĩ theo dõi thuốc đồng thời gặp nhà tâm lý để trị liệu.
@@ -71,7 +71,7 @@ Một tổng quan hệ thống năm 2014 thấy người bị trầm cảm có t
 :::
 
 :::kha-vung[Liệu pháp tâm lý và thuốc (khi cần, theo chỉ định) giúp được nhiều người bị các rối loạn tâm thần phổ biến]
-WHO và các hướng dẫn điều trị quốc tế ghi nhận hiệu quả của liệu pháp tâm lý và thuốc với trầm cảm và rối loạn lo âu; các phân tích tổng hợp lớn cho thấy hiệu quả ở mức vừa. Không phải ai cũng đỡ với hướng điều trị đầu tiên: điều chỉnh hướng điều trị cùng người có chuyên môn là bình thường.
+WHO và các hướng dẫn điều trị quốc tế ghi nhận hiệu quả của liệu pháp tâm lý và thuốc với trầm cảm và rối loạn lo âu; các phân tích tổng hợp lớn cho thấy hiệu quả trung bình ở mức từ nhỏ đến vừa. Không phải ai cũng đỡ với hướng điều trị đầu tiên: điều chỉnh hướng điều trị cùng người có chuyên môn là bình thường.
 :::
 
 :::o-viet-nam
