@@ -56,7 +56,9 @@ runs:
       run: npm test
       shell: bash
     # trình duyệt của Playwright (Lighthouse và chụp ảnh dùng Chromium): lưu đệm theo phiên bản Playwright trong
-    # package-lock.json và theo trình duyệt (đỡ khoảng 2 phút mỗi lần); thư viện hệ thống thì cài mỗi lần
+    # package-lock.json, theo trình duyệt và theo ảnh máy chạy (ImageOS: trình duyệt dựng cho bản Ubuntu nào chỉ chạy trên
+    # bản ấy; 17/11/2026 ubuntu-latest lên 26.04 thì WebKit lưu từ 24.04 thiếu libicudata.so.74) (đỡ khoảng 2 phút mỗi lần);
+    # thư viện hệ thống thì cài mỗi lần
     - name: Phiên bản Playwright
       if: inputs.phan != 'npm-test'
       id: pw
@@ -69,7 +71,7 @@ runs:
       id: luu-dem
       with:
         path: ~/.cache/ms-playwright
-        key: playwright-${{ runner.os }}-${{ steps.pw.outputs.phien-ban }}-${{ steps.pw.outputs.trinh-duyet }}
+        key: playwright-${{ runner.os }}-${{ env.ImageOS }}-${{ steps.pw.outputs.phien-ban }}-${{ steps.pw.outputs.trinh-duyet }}
     - name: Cài ${{ steps.pw.outputs.trinh-duyet }}
       if: inputs.phan != 'npm-test' && steps.luu-dem.outputs.cache-hit != 'true'
       run: npx playwright install --with-deps ${{ steps.pw.outputs.trinh-duyet }}
