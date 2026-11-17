@@ -1,0 +1,314 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa trai-nghiem/neo-gia
+trang: src/content/docs/trai-nghiem/neo-gia.md
+nguon_cu: ../psyche-zero/docs/trai-nghiem/neo-gia.md
+tang: cong-cu
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l2
+    ma_bam: sha256:2242660a7b842889e238bcdf0c3559487dcf6a8f962f27e030653f9d9dd681d2
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
+      luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
+      review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l2-kiem-mau.yml), đạt, 17/11/2026
+nguon:
+  - id: tversky1974
+    ten: 'Tversky & Kahneman (1974), Science 185(4157), 1124–1131: câu trích lấy lại từ hồ sơ đã khóa linh-cam-va-xac-suat.yml (toàn văn, Internet Archive)'
+    link: https://doi.org/10.1126/science.185.4157.1124
+    toan_van: true
+  - id: englich2006
+    ten: 'Englich, Mussweiler & Strack (2006), Pers Soc Psychol Bull 32(2), 188–200: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus), nghiên cứu 1–4'
+    link: https://doi.org/10.1177/0146167205282152
+    toan_van: true
+  - id: mussweiler1999
+    ten: 'Mussweiler & Strack (1999), J Exp Soc Psychol 35(2), 136–164: chỉ siêu dữ liệu (OpenAlex, không có tóm tắt); mô hình được mô tả lại trong Englich và cộng sự (2006)'
+    link: https://doi.org/10.1006/jesp.1998.1364
+    toan_van: false
+  - id: klein2014
+    ten: 'Klein và cộng sự (2014), Soc Psychol 45(3), 142–152: toàn văn (bản lưu LSE eprints), Bảng 2 và mục Kết quả'
+    link: https://doi.org/10.1027/1864-9335/a000178
+    toan_van: true
+  - id: nso2026
+    ten: 'Cục Thống kê, "Thông cáo báo chí về tình hình dân số, lao động, việc làm quý IV và năm 2025" (1/2026): trang chính thức, mục 1'
+    link: https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-ve-tinh-hinh-dan-so-lao-dong-viec-lam-quy-iv-va-nam-2025/
+    toan_van: true
+  - id: tim-neo-vn
+    ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "anchoring effect Vietnam" (762 kết quả, 8 kết quả đầu không liên quan) và OpenAlex "anchoring effect Vietnamese participants" (6 kết quả đầu không liên quan)'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=anchoring%20effect%20Vietnam
+    toan_van: false
+  - id: bystranowski2021
+    ten: 'Bystranowski, Janik, Próchnicki & Skórska (2021), Law Hum Behav 45(1), 1–23, phân tích tổng hợp 29 nghiên cứu, N = 8.549: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/lhb0000438
+    toan_van: false
+nhan_dinh:
+  - id: s1
+    cau: 'Công cụ: xếp ngẫu nhiên 50/50 vào nhóm neo thấp hay cao; hai câu, mỗi câu hai bước (so sánh, ước lượng); không chấm đúng sai; nói rõ một người chưa nói được gì về hiệu ứng.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/neo-gia.js (xepNhom, CAU_HOI, docUocLuong), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): neo-gia.js và bản build: xepNhom rand() < 0,5 → low/high; mỗi câu bước 1 (Lớn hơn / Nhỏ hơn) rồi bước 2 (ô số); màn kết quả không chấm đúng sai, có khung "Một người chưa nói được gì về hiệu ứng". Khớp.'
+    review: dung
+  - id: s2
+    cau: 'Câu 1: neo 40 và 200 triệu người; câu 2: neo 15% và 70%; hai neo kẹp hai phía đáp án.'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm CAU_HOI trong neo-gia.js và kiểm thử "neo kẹp hai phía số thật", 17/11/2026. Câu 2 cũ (quãng đường Hà Nội – TP. Hồ Chí Minh, "1.723 km … 1.719–1.730 km tùy điểm đo") không tìm được nguồn chính thức: đã thay bằng tỉ lệ dân thành thị (cùng nguồn chính thức với câu 1). Review (17/11/2026): CAU_HOI trong bản build: neo 40/200 (số thật 102,3), 15/70 (số thật 38,6); cả hai cặp kẹp hai phía số thật; trang (Cách công cụ hoạt động) ghi đúng các số này.'
+    review: dung
+  - id: n1
+    cau: Khi ước lượng, ta bám vào một con số có sẵn rồi điều chỉnh, thường điều chỉnh không đủ; con số ban đầu là mỏ neo.
+    loai: dinh-nghia
+    nguon:
+      - tversky1974
+    trich: In many situations, people make estimates by starting from an initial value that is adjusted to yield the final answer … adjustments are typically insufficient.
+    vi_tri: Tversky & Kahneman 1974, mục Adjustment and Anchoring (toàn văn, Internet Archive, mở lại 17/11/2026)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1126/science.185.4157.1124
+    luot_2_ghi_chu: Bản kỹ thuật 1973 nói 'insufficient adjustment'.
+  - id: n2
+    cau: Trong nghiên cứu gốc, con số neo đến từ một vòng quay may rủi quay ngay trước mặt người tham gia, nhưng ước lượng vẫn bị kéo đi.
+    loai: phat-hien
+    nguon:
+      - tversky1974
+    trich: a number between 0 and 100 was determined by spinning a wheel of fortune in the subjects' presence
+    vi_tri: mục Adjustment and Anchoring (toàn văn, mở lại 17/11/2026)
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "vòng quay … bị gian lận để dừng ở 10 hoặc 65 — người tham gia biết nó là ngẫu nhiên": bài 1974 chỉ nói quay trước mặt người tham gia; chuyện "gian lận" không có trong bài.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/DTIC_AD0767426
+      - https://doi.org/10.1126/science.185.4157.1124
+    luot_2_ghi_chu: Dùng bản kỹ thuật DTIC 1973 có cùng đoạn với bài Science 1974.
+  - id: n3
+    cau: 'Tversky và Kahneman (1974): hai bước (lớn hơn hay nhỏ hơn số vừa quay; con số cụ thể); nhóm nhận 10 cho trung vị 25, nhóm nhận 65 cho 45; thưởng cho độ chính xác không làm giảm hiệu ứng.'
+    loai: so-lieu
+    nguon:
+      - tversky1974
+    trich: the median estimates of the percentage of African countries in the United Nations were 25 and 45 for groups that received 10 and 65, respectively, as starting points. Payoffs for accuracy did not reduce the anchoring effect.
+    vi_tri: (theo hồ sơ linh-cam-va-xac-suat.yml n19)
+    ket_qua: da-sua
+    ghi_chu: 'Rút mục bốn ý còn một đoạn, link trang nhà (tversky1974 có trang nhà kham-pha/tu-duy/linh-cam-va-xac-suat); không thêm số mới. Review (Claude Opus 5.5, 17/11/2026): tversky1974 có trang nhà kham-pha/tu-duy/linh-cam-va-xac-suat (nghien-cuu.yml): trang công cụ tóm một câu, không thêm số ngoài số trang nhà đã có (10/65, 25/45, thưởng), link về nhà; công cụ cũng một câu, link về nhà.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/DTIC_AD0767426
+    luot_2_ghi_chu: Hai bước (cao hơn hay thấp hơn rồi ước lượng) khớp mô tả.
+  - id: n4
+    cau: 'Englich và cộng sự (2006), nghiên cứu 3: luật sư trẻ vừa bắt đầu làm thẩm phán ở Đức, hồ sơ vụ án giả định soạn sát thực tế, tự tung xúc xắc bị làm cho luôn ra tổng 3 hoặc 9 (tháng án treo); mức án trung bình 7,81 và 5,28 tháng.'
+    loai: so-lieu
+    nguon:
+      - englich2006
+    trich: Participants were junior lawyers from different German courts who had recently received their law degree and had acquired their first experiences as judges in court. (tr. 193) | About half of the participants were handed a pair of dice that was loaded so that the dice always showed the numbers 1 and 2. The other half was given a pair of dice that was loaded so that the dice always indicated the numbers 3 and 6. (tr. 193) | Judges who were exposed to the high anchor gave higher final sentences, M = 7.81, SD = 3.51, than those who were confronted with a low anchor, M = 5.28, SD = 3.21, t(50) = 2.71, p < .01. (tr. 193) | they had to find a sentence in a fictitious shoplifting case (Nghiên cứu 2, tr. 191; nghiên cứu 3 dùng cùng tài liệu)
+    vi_tri: 'Englich, Mussweiler & Strack 2006, toàn văn (PDF Internet Archive, bản in PSPB 32(2)), Nghiên cứu 3, tr. 193; tài liệu vụ án: tr. 191'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "thẩm phán hình sự Đức có kinh nghiệm đọc một hồ sơ vụ án có thật" (sai: nghiên cứu 3 là luật sư trẻ; hồ sơ là vụ án giả định sát thực tế); "7,8", "5,3" thành 7,81, 5,28. Sau lượt 2 (Opus, 17/11/2026): giữ; mọi chi tiết có nguyên văn trong toàn văn (lượt 2 chỉ đọc tóm tắt). Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn (bản PDF của bài PSPB 32(2) qua Wayback, như lượt 2 bổ sung), Nghiên cứu 3, tr. 193: "junior lawyers from different German courts who had recently received their law degree and had acquired their first experiences as judges"; xúc xắc "always showed the numbers 1 and 2" / "3 and 6", "3 vs. 9 months on probation"; M = 7.81 và 5.28; tài liệu là "fictitious shoplifting case" (tr. 191).'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://doi.org/10.1177/0146167205282152
+    luot_2_ghi_chu: Tóm tắt Englich 2006 xác nhận Nghiên cứu 3 (tung xúc xắc) nhưng không có 7,81/5,28 tháng, người tham gia 'luật sư trẻ' hay xúc xắc làm cho ra 3 hoặc 9. Không mở được toàn văn.
+  - id: n5
+    cau: 'Nghiên cứu 2: thẩm phán và công tố viên có trung bình hơn 13 năm kinh nghiệm, mức đề nghị được báo là chọn ngẫu nhiên, hiệu ứng vẫn xuất hiện; các tác giả kết luận chuyên môn và kinh nghiệm không làm giảm hiệu ứng.'
+    loai: phat-hien
+    nguon:
+      - englich2006
+    trich: We recruited 39 legal professionals (18 women) during an educational conference; 37 were judges and 2 were prosecutors. … On average, participants had 13.38 years (SD = 8.58) of professional experience in court. (tr. 191) | Instructions clearly pointed out that this demand had been determined at random (tr. 191) | Expertise and experience did not reduce this effect. (tóm tắt, tr. 188)
+    vi_tri: Englich, Mussweiler & Strack 2006, toàn văn (PDF Internet Archive, bản in PSPB 32(2)), Nghiên cứu 2, tr. 191; tóm tắt tr. 188
+    ket_qua: da-sua
+    ghi_chu: 'Thêm để câu "chuyên gia cũng không miễn nhiễm" có cơ sở đúng nhóm. Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, tr. 191: "37 were judges and 2 were prosecutors", "13.38 years (SD = 8.58)", mức đề nghị "determined at random"; tóm tắt: "Expertise and experience did not reduce this effect".'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://doi.org/10.1177/0146167205282152
+    luot_2_ghi_chu: Tóm tắt xác nhận nghiên cứu 2 (biết mức đề nghị ngẫu nhiên) và 'Expertise and experience did not reduce this effect'; 'hơn 13 năm kinh nghiệm', thẩm phán và công tố viên chưa xác nhận.
+  - id: n6
+    cau: 'Vững chắc: con số neo làm dịch chuyển ước lượng; Many Labs (36 mẫu, 6.344 người): bốn câu mỏ neo có hiệu ứng ở mọi mẫu, thuộc nhóm hiệu ứng lớn nhất; các phân tích tổng hợp (ví dụ trong quyết định pháp lý, Bystranowski và cộng sự, 2021) cũng thấy hiệu ứng rõ, dù độ lớn khác nhau nhiều giữa các nghiên cứu.'
+    loai: nhan
+    nguon:
+      - klein2014
+    trich: 13 classic and contemporary effects across 36 independent samples totaling 6,344 participants | Anchoring - Babies Born … Proportion >0 (p<.05) 1.00 | Anchoring - Mt. Everest … 1.00 | Anchoring - Chicago … 1.00 | Anchoring - Distance to NYC … 1.00 | Tasks ordered from largest to smallest observed effect size
+    vi_tri: Tóm tắt; Bảng 2
+    nhan: vung-chac
+    co_so:
+      - klein2014
+      - bystranowski2021
+      - tversky1974
+    ly_do: 'Một phân tích tổng hợp đã bình duyệt (Bystranowski 2021: 29 nghiên cứu, 93 cỡ hiệu ứng, N = 8.549) cộng tái lập lớn có kế hoạch đăng ký trước ở 36 mẫu nhiều nước (Many Labs 1), cùng chiều. Độ lớn dao động nhiều; biến thể (neo ngẫu nhiên, dưới ngưỡng) yếu hơn theo các bản thảo phân tích tổng hợp, không thuộc hiệu ứng chuẩn.'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: thước đo mục 4 đòi phân tích tổng hợp hay hai tái lập lớn có đăng ký trước; ở đây có một tái lập lớn (Many Labs 1), chưa tìm phân tích tổng hợp. Cũ: "hàng trăm nghiên cứu trên nhiều lĩnh vực — từ định giá, đàm phán, dự báo đến quyết định pháp lý" (không nguồn). Sau lượt 2 (Opus, 17/11/2026): hạ Vững chắc xuống Khá vững trên trang (thêm câu lý do). Câu mới: cần lượt 2 bổ sung; nếu lượt 2 tìm được phân tích tổng hợp đạt chuẩn thì có thể nâng lại. [câu mới] Sau lượt 2 bổ sung (người gộp quyết, áp dụng 17/11/2026): nhãn trở lại Vững chắc theo cau_dung; trang nói rõ độ lớn khác nhau nhiều giữa các nghiên cứu. Review: đạt (Claude Opus 5.5, 17/11/2026). co_so: phân tích tổng hợp đã bình duyệt Bystranowski 2021 (tóm tắt Europe PMC tự mở: 29 nghiên cứu, 93 cỡ hiệu ứng, N = 8.549, d = 0,58 và 0,91) cộng Many Labs 1 (36 mẫu): đạt Vững chắc theo mục 4. Thân khung nói rõ độ lớn khác nhau nhiều. Trang nhà linh-cam-va-xac-suat không có khung nhãn cho mỏ neo: không lệch.'
+    luot_2: sai
+    luot_2_nguon:
+      - https://researchonline.lse.ac.uk/id/eprint/65158/
+      - https://doi.org/10.1037/lhb0000438
+      - https://doi.org/10.31234/osf.io/teq7k_v2
+      - https://doi.org/10.31234/osf.io/wf2tn
+    luot_2_ghi_chu: 'câu đúng: Vững chắc: con số neo làm dịch chuyển ước lượng; Many Labs (36 mẫu, 6.344 người): bốn câu mỏ neo có hiệu ứng ở mọi mẫu, thuộc nhóm hiệu ứng lớn nhất; các phân tích tổng hợp (ví dụ trong quyết định pháp lý, Bystranowski và cộng sự, 2021) cũng thấy hiệu ứng rõ, dù độ lớn khác nhau nhiều giữa các nghiên cứu.; Phần số liệu đúng: 36 mẫu, 6.344 người, bốn câu mỏ neo có hiệu ứng ở mọi mẫu (tỉ lệ 1.00), thuộc nhóm hiệu ứng lớn nhất (bốn câu mỏ neo chiếm bốn trong năm hiệu ứng lớn nhất). Many Labs 1 có kế hoạch đăng ký trước (osf.io/aBEsQ). Còn nhãn thì thấp hơn mức bằng chứng cho phép theo mục 4. Mỏ neo chuẩn (so với con số rồi ước lượng) đã có phân tích tổng hợp đã bình duyệt (Bystranowski và cộng sự 2021, Law and Human Behavior). Có thêm hai phân tích tổng hợp lớn ở dạng bản thảo: Röseler và cộng sự, k = 393, N = 17.708, g = 0,69; ''50 Years of Anchoring Effects'', 2.601 cỡ hiệu ứng, g = 0,83, vẫn lớn sau khi hiệu chỉnh thiên lệch xuất bản. Cộng thêm Many Labs 1 ở 36 mẫu nhiều nước, nên đạt điều kiện ''Vững chắc''. Lưu ý thêm vào hồ sơ: độ lớn dao động nhiều (I² khoảng 93%; Many Labs 1 thấy dị biệt lớn); các bản thảo phân tích tổng hợp thấy hiệu ứng yếu hơn hay bằng không với mỏ neo ngẫu nhiên, mỏ neo khác chiều đo, hay mỏ neo dưới ngưỡng ý thức (hai lần làm lại có đăng ký trước của mỏ neo dưới ngưỡng thất bại, JESP 2021). Các giới hạn này thuộc các biến thể, không thuộc hiệu ứng chuẩn mà câu nói tới. Đọc toàn văn Many Labs 1 (bản lưu ở LSE); hai bản thảo và Bystranowski chỉ đọc tóm tắt.'
+  - id: n7
+    cau: 'Khá vững: hiệu ứng có cả khi neo hoàn toàn ngẫu nhiên và người quyết định là chuyên gia; bằng chứng về chuyên gia từ một số ít nghiên cứu vài chục người.'
+    loai: nhan
+    nguon:
+      - tversky1974
+      - englich2006
+    trich: Expertise and experience did not reduce this effect. | We recruited 52 legal experts | 39 legal professionals
+    vi_tri: Englich 2006, Tóm tắt, nghiên cứu 2, 3
+    nhan: kha-vung
+    co_so:
+      - tversky1974
+      - englich2006
+    ly_do: Cùng chiều ở các nghiên cứu gốc, nhưng mẫu chuyên gia nhỏ (39–57 người mỗi nghiên cứu) và chủ yếu ở Đức.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "neo càng cực đoan … thì tác động càng khác" (mơ hồ, không nguồn): bỏ, thay bằng giới hạn về cỡ mẫu.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1177/0146167205282152
+    luot_2_ghi_chu: Nhãn 'Khá vững' hợp (vài nghiên cứu về chuyên gia, mẫu nhỏ).
+  - id: n8
+    cau: 'Đang tranh cãi: cơ chế (điều chỉnh không đủ của Tversky và Kahneman; khả năng tiếp cận chọn lọc của Mussweiler và Strack); ở nghiên cứu 4 của Englich, sau mức đề nghị cao, lý lẽ buộc tội được nhận ra nhanh hơn; hai cách không loại trừ nhau.'
+    loai: nhan
+    nguon:
+      - tversky1974
+      - mussweiler1999
+      - englich2006
+    trich: Participants who were exposed to the high anchor were subsequently able to categorize incriminating arguments faster than participants who were exposed to a low sentencing anchor. Notably, categorizations of exculpatory arguments did not depend on the anchoring condition.
+    vi_tri: Englich, Mussweiler & Strack 2006, toàn văn (PDF Internet Archive, bản in PSPB 32(2)), Nghiên cứu 4, tr. 195
+    nhan: tranh-cai
+    co_so:
+      - tversky1974
+      - mussweiler1999
+      - englich2006
+    ly_do: Hai mô hình do hai nhóm tác giả đề xuất; bằng chứng cho mô hình tiếp cận chọn lọc chủ yếu từ chính nhóm đề xuất.
+    ket_qua: da-lam-mem
+    ghi_chu: 'chỗ khó: chưa tìm được tổng quan nói rõ tình trạng tranh luận; bài Mussweiler & Strack 1999 không mở được (chỉ tên bài), mô hình lấy theo Englich 2006. Cũ: "ta lục trong trí nhớ những lý do … dính lại". Sau lượt 2 (Opus, 17/11/2026): giữ "nhận ra nhanh hơn": toàn văn nói phân loại lý lẽ buộc tội nhanh hơn (tóm tắt chỉ nói "accessibility"). Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, Nghiên cứu 4, tr. 195: "able to categorize incriminating arguments faster"; "nhận ra nhanh hơn" đúng ý.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1177/0146167205282152
+      - https://archive.org/details/DTIC_AD0767426
+    luot_2_ghi_chu: 'chỗ khó: Tóm tắt nói ''accessibility ... higher'', không nói ''nhận ra nhanh hơn''. Điều chỉnh không đủ (Tversky-Kahneman) đã xác nhận ở bản 1973. Bài của Mussweiler và Strack chưa mở.'
+  - id: n9
+    cau: 'Ngộ nhận "mỏ neo chỉ có tác dụng khi con số có vẻ liên quan": không; số ngẫu nhiên vẫn tạo hiệu ứng, và Englich so mức đề nghị do xúc xắc quyết định với cùng mức do công tố đưa ra (một nghiên cứu khác, cùng hồ sơ) và không thấy hai loại khác nhau về tác dụng.'
+    loai: phat-hien
+    nguon:
+      - englich2006
+      - tversky1974
+    trich: 'We again compared the present findings with those of the other study with identical materials but relevant anchors (Englich, 2006). Again, sentencing decisions in both anchor conditions differed for anchors determined at random (M = 5.28 vs. M = 7.81) and suggested by the prosecutor (M = 4.10 vs. M = 6.98). In a 2 (anchor: high vs. low) × 2 (source: random vs. prosecutor) ANOVA, only the main effects for anchor … and source … reached significance, F < 1 for the interaction.'
+    vi_tri: Englich, Mussweiler & Strack 2006, toàn văn (PDF Internet Archive, bản in PSPB 32(2)), Nghiên cứu 3, tr. 193
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: nhãn Đã bị bác bỏ cho một ngộ nhận; bằng chứng là vài nghiên cứu, không phải chuỗi kiểm tra chuyên đề. Cũ: "lý do hiệu ứng này đáng lo ngại trong đời sống (giá niêm yết, đàm phán…)" (không nguồn): bỏ. Sau lượt 2 (Opus, 17/11/2026): bỏ khung "Đã bị bác bỏ" (thước đo mục 4: nhãn ấy dành cho khẳng định mà các kiểm tra đủ mạnh liên tục thất bại hay bằng chứng gốc mất giá trị; đây là một ngộ nhận, không phải khẳng định đã được kiểm tra); nội dung chuyển thành một ý trong mục Ngộ nhận liên quan, loại phat-hien. Câu mới: cần lượt 2 bổ sung. [câu mới] Review: đạt (Claude Opus 5.5, 17/11/2026): bỏ khung Đã bị bác bỏ là đúng mục 4 (nhãn dành cho khẳng định đã kiểm tra mà thất bại). Tự mở toàn văn, tr. 193: "Again, sentencing decisions in both anchor conditions differed for anchors determined at random (M = 5.28 vs. M = 7.81) and suggested by the prosecutor (M = 4.10 vs. M = 6.98)", F < 1 cho tương tác; câu trên trang ("không thấy hai loại khác nhau về tác dụng") khớp.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://web.archive.org/web/20250802160412/https://homepages.se.edu/cvonbergen/files/2013/01/Playing-Dice-With-Criminal-Sentences_The-Influence-of-Irrelevant-Anchors-on-Experts-Judicial-Decision-Making.pdf
+      - https://pubmed.ncbi.nlm.nih.gov/16382081/
+      - https://www.hf.uni-koeln.de/data/dppsenglich/File/PDFSStudien/LawPol28.pdf
+    luot_2_ghi_chu: 'Đọc toàn văn bài PSPB 2006 (32:188–200) qua bản lưu Wayback của bản PDF trên trang một giảng viên; bản này khớp tập và trang. Việc so sánh dựa trên một nghiên cứu khác dùng cùng hồ sơ (Englich, 2006, chưa công bố lúc ấy); Study 2 cũng có phép so sánh như vậy (F < 1 cho tương tác). Ghi thêm vào hồ sơ: bản thảo phân tích tổng hợp ''50 Years of Anchoring Effects'' (PsyArXiv, osf.io/teq7k) thấy mỏ neo từ số ngẫu nhiên nhìn chung có hiệu ứng nhỏ hơn hay bằng không. Câu của trang nói đúng về Englich và không khái quát rằng mọi số ngẫu nhiên đều có tác dụng như số liên quan, nên vẫn `dung`.'
+  - id: n10
+    cau: 'Lý thuyết: điều chỉnh không đủ (Tversky và Kahneman, 1974); tiếp cận chọn lọc (Mussweiler và Strack, 1999; Englich, 2006).'
+    loai: phat-hien
+    nguon:
+      - tversky1974
+      - mussweiler1999
+      - englich2006
+    trich: adjustments are typically insufficient | comparing the judgmental target to a provided anchor value increases the accessibility of anchor-consistent target knowledge
+    ket_qua: da-sua
+    ghi_chu: Bỏ ý "Neo như gợi ý về thang đo" (không nguồn) và hình ảnh "thả neo kéo dây".
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1126/science.185.4157.1124
+      - https://doi.org/10.1177/0146167205282152
+    luot_2_ghi_chu: Mussweiler và Strack (1999) chưa mở nên năm đó chưa xác nhận.
+  - id: n11
+    cau: 'Tính đến 11/2026, số chính thức mới nhất: dân số trung bình năm 2025 ước tính 102,3 triệu người (Cục Thống kê, thông cáo 1/2026).'
+    loai: thoi-su
+    nguon:
+      - nso2026
+    trich: Dân số trung bình năm 2025 ước tính là 102,3 triệu người, tăng 1.001,6 nghìn người, tương đương tăng 0,99% so với năm 2024.
+    vi_tri: mục 1
+    het_han: '2027-03-01'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "khoảng 101 triệu (giữa kỳ 2024: 101,1 triệu, 1/4/2024)", link mpi.gov.vn (không mở được ngày 17/11/2026). Thay bằng số mới hơn của Cục Thống kê. Hết hạn khi có thông cáo năm 2026 (thường tháng 1). Review: đạt (Claude Opus 5.5, 17/11/2026): www.nso.gov.vn không phân giải được tên miền từ máy review; mở bản lưu Wayback của đúng trang ấy: "Dân số trung bình năm 2025 ước tính là 102,3 triệu người".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2025/
+    luot_2_ghi_chu: Thông cáo báo chí tình hình KTXH quý IV và năm 2025, Cục Thống kê (nso.gov.vn), kiểm 17/11/2026. Trang cũng có thông cáo quý II/2026 (về lao động); số dân năm 2025 vẫn là số dân cả năm mới nhất thấy được.
+  - id: n12
+    cau: Dân số thành thị năm 2025 chiếm 38,6% (cùng nguồn).
+    loai: thoi-su
+    nguon:
+      - nso2026
+    trich: Trong đó, dân số thành thị là 39,4 triệu người, chiếm 38,6%
+    vi_tri: mục 1
+    het_han: '2027-03-01'
+    ket_qua: da-sua
+    ghi_chu: 'Câu hỏi mới của công cụ (thay câu quãng đường). Review: đạt (Claude Opus 5.5, 17/11/2026): cùng bản lưu: "dân số thành thị là 39,4 triệu người, chiếm 38,6%".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2025/
+  - id: n13
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu về hiệu ứng mỏ neo trên mẫu người Việt.
+    loai: thoi-su
+    nguon:
+      - tim-neo-vn
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "Trong phạm vi các nguồn của site". Europe PMC "anchoring effect Vietnam" (762 kết quả, 8 kết quả đầu không liên quan), OpenAlex "anchoring effect Vietnamese participants" (không có nghiên cứu liên quan trong 6 kết quả đầu), 17/11/2026. chỗ khó: tìm chưa kỹ (từ khóa "anchoring" lẫn nhiều nghĩa); lượt 2 nên tìm thêm (ví dụ "anchoring bias Vietnamese investors").'
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works?search=anchoring+effect+Vietnamese+participants
+    luot_2_ghi_chu: 'Tìm OpenAlex 17/11/2026 (''anchoring effect Vietnamese participants'', ''anchoring effect Vietnam experiment''): không có nghiên cứu phù hợp. Hạn chế: chỉ tìm tiếng Anh.'
+  - id: n14
+    cau: 'Ngộ nhận: người làm nghề luật biết mức đề nghị do xúc xắc quyết định mà vẫn bị kéo; chuyên môn và kinh nghiệm xét xử không làm giảm hiệu ứng.'
+    loai: phat-hien
+    nguon:
+      - englich2006
+    trich: participants were told to randomly determine the prosecutor's sentencing demand themselves by throwing a pair of dice | Expertise and experience did not reduce this effect.
+    vi_tri: Nghiên cứu 3; Tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "Biết về hiệu ứng mỏ neo thì sẽ không bị ảnh hưởng" (Englich không thử điều này), "cách giảm thiểu hiệu quả hơn là nghĩ về phía ngược lại" (không nguồn), "nhà định giá bất động sản … mức tương đương người ngoài ngành" (không nguồn): bỏ.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1177/0146167205282152
+    luot_2_ghi_chu: Câu 'biết mức đề nghị do xúc xắc quyết định mà vẫn bị kéo' khớp Nghiên cứu 3.
+  - id: n15
+    cau: 'Câu hỏi 2 và 5: câu so sánh làm người trả lời phải xét con số neo; theo mô hình tiếp cận chọn lọc, hiểu biết phù hợp với neo dễ nhớ ra hơn và kéo ước lượng.'
+    loai: phat-hien
+    nguon:
+      - englich2006
+      - mussweiler1999
+    trich: this comparative anchoring question was included to ensure that participants do indeed process and consider the given anchor value
+    vi_tri: Englich 2006, nghiên cứu 1, Thủ tục
+    ket_qua: dung
+    ghi_chu: Ví dụ "các tỉnh đông dân, mật độ đô thị" trong lời giải thích câu 5 là giả định (gia-dinh).
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1177/0146167205282152
+    luot_2_ghi_chu: Là diễn giải theo mô hình tiếp cận chọn lọc, đã ghi 'theo mô hình'.
+  - id: n16
+    cau: 'Công cụ: Tversky và Kahneman (1974), vòng quay 0–100 dừng ở 10 hay 65, trung vị 25 và 45.'
+    loai: cong-cu
+    nguon:
+      - tversky1974
+    trich: the median estimates … were 25 and 45 for groups that received 10 and 65
+    vi_tri: hằng NGHIEN_CUU trong src/scripts/cong-cu/neo-gia.js
+    ket_qua: da-sua
+    ghi_chu: 'Công cụ cũ: "thực ra đã bị gian lận để dừng ở 10 hoặc 65" (không có trong bài): bỏ; "25%", "45%" thành 25 và 45.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://archive.org/details/DTIC_AD0767426
+    luot_2_ghi_chu: Bản gốc dùng câu hỏi về tỉ lệ nước châu Phi ở Liên Hợp Quốc; công cụ là mô phỏng.
+doi_chu:
+  - cu: Câu "vòng quay … bị gian lận … người tham gia biết"
+    moi: quay ngay trước mặt người tham gia
+    ly_do: n2
+  - cu: Mục Tversky và Kahneman (1974), bốn ý
+    moi: một đoạn, link trang nhà
+    ly_do: n3
+  - cu: Mục Chuyên gia cũng không miễn nhiễm
+    moi: nghiên cứu 3 (luật sư trẻ, vụ án giả định), nghiên cứu 2
+    ly_do: n4, n5
+  - cu: Bốn khung nhãn
+    moi: Many Labs; giới hạn cỡ mẫu; nghiên cứu 4; so neo ngẫu nhiên với neo của công tố
+    ly_do: n6–n9
+  - cu: Mục Lý thuyết (ba ý), Cách công cụ hoạt động, Ở Việt Nam, ngộ nhận 1–2
+    moi: bỏ ý không nguồn; số dân 2025; câu 2 mới; mốc 11/2026
+    ly_do: n10–n14, s2
+  - cu: 'Nguồn: Tổng cục Thống kê 2024 (mpi.gov.vn)'
+    moi: Cục Thống kê 2026; thêm Klein và cộng sự 2014
+    ly_do: n11, n6

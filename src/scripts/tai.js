@@ -14,6 +14,12 @@ const LUAT = [
 	['.pz-mu-thay-doi', () => import('./cong-cu/mu-thay-doi.js'), false],
 	['.pz-ebbinghaus', () => import('./cong-cu/ebbinghaus.js'), false],
 	['.pz-ngo-nhan', () => import('./cong-cu/ngo-nhan.js'), false],
+	['.pz-tri-nho-sai', () => import('./cong-cu/tri-nho-sai.js'), false],
+	['.pz-wason-246', () => import('./cong-cu/wason-246.js'), false],
+	['.pz-linda', () => import('./cong-cu/linda.js'), false],
+	['.pz-big-five-mini', () => import('./cong-cu/big-five-mini.js'), false],
+	['.pz-neo-gia', () => import('./cong-cu/neo-gia.js'), false],
+	['.pz-tri-nho-tu', () => import('./cong-cu/tri-nho-tu.js'), false],
 ];
 const LE = 600;
 const cho = new Map(); // phần tử đang chờ tới gần màn hình -> hàm khởi tạo (trả về promise)

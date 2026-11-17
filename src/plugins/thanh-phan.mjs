@@ -135,6 +135,12 @@ export const CONG_CU = {
 	// trò chơi "Bạn nghĩ gì về tâm trí?" (D8-L3): limit (số thẻ mỗi lượt), level (chỉ thẻ có cap từ 1 đến level), như
 	// data-limit, data-level của site cũ; thẻ lấy từ src/data/ngo-nhan.yml lúc build (duLieuNgoNhan), nhúng vào data-the
 	'ngo-nhan': { lop: 'pz-ngo-nhan', thongSo: ['limit', 'level'], duLieu: 'ngo-nhan' },
+	'tri-nho-sai': { lop: 'pz-tri-nho-sai', thongSo: [] },
+	'wason-246': { lop: 'pz-wason-246', thongSo: [] },
+	linda: { lop: 'pz-linda', thongSo: [] },
+	'big-five-mini': { lop: 'pz-big-five-mini', thongSo: [] },
+	'neo-gia': { lop: 'pz-neo-gia', thongSo: [] },
+	'tri-nho-tu': { lop: 'pz-tri-nho-tu', thongSo: [] },
 };
 
 /** Ô "chưa chuyển" cho công cụ, hình chưa có trên site mới; chỉ dùng được ở trang chưa khóa (D1.6 chặn). */

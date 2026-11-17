@@ -13,6 +13,12 @@ import * as doDai from '../src/scripts/cong-cu/do-dai-tri-nho.js';
 import * as aoGiac from '../src/scripts/cong-cu/ao-giac.js';
 import * as muThayDoi from '../src/scripts/cong-cu/mu-thay-doi.js';
 import * as ebb from '../src/scripts/cong-cu/ebbinghaus.js';
+import * as drm from '../src/scripts/cong-cu/tri-nho-sai.js';
+import * as wason from '../src/scripts/cong-cu/wason-246.js';
+import * as linda from '../src/scripts/cong-cu/linda.js';
+import * as bf from '../src/scripts/cong-cu/big-five-mini.js';
+import * as neo from '../src/scripts/cong-cu/neo-gia.js';
+import * as tu from '../src/scripts/cong-cu/tri-nho-tu.js';
 import { CONG_CU } from '../src/plugins/thanh-phan.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -304,6 +310,79 @@ test('Ebbinghaus: vòng trung tâm 60, vòng bao quanh không đè nhau ở mọ
 	const p = ebb.viTriQuanh(0, 0, 10, 6);
 	assert.equal(p.length, 6);
 	assert.ok(Math.abs(p[0].x) < 1e-9 && Math.abs(p[0].y + 10) < 1e-9);
+});
+
+// ---------- D8-L2 ----------
+
+test('trí nhớ sai: 18 từ (12 đã học, từ mồi, 5 nhiễu), từ mồi không nằm trong từ đã học; chấm', () => {
+	const b = drm.baiKiemTra(ngauNhien(3));
+	assert.equal(b.length, 18);
+	assert.deepEqual(['study', 'lure', 'unrelated'].map((k) => b.filter((x) => x.kind === k).length), [12, 1, 5]);
+	// từ mồi không được xuất hiện, kể cả trong một từ ghép đã học (site cũ có "buồn ngủ")
+	for (const w of drm.DANH_SACH.hoc) assert.ok(!w.split(' ').includes(drm.DANH_SACH.moi), w);
+	const s = drm.cham(b.map((x) => ({ kind: x.kind, yes: x.kind !== 'unrelated' })));
+	assert.deepEqual(s, { hits: 12, n: 12, lureYes: true, faUnrelated: 0, nUnrelated: 5 });
+	assert.equal(drm.DANH_SACH.hienMs + drm.DANH_SACH.nghiMs, 1500);
+});
+
+test('Wason: quy tắc thật, đọc số kiểu Việt, chấm quy tắc người dùng viết', () => {
+	assert.ok(wason.tuanTheo(2, 4, 6) && wason.tuanTheo(-3, 0.5, 100));
+	assert.ok(!wason.tuanTheo(6, 4, 2) && !wason.tuanTheo(1, 1, 2));
+	assert.equal(wason.docSo('2,5'), 2.5);
+	assert.equal(wason.docSo('−3'), -3);
+	assert.equal(wason.docSo('abc'), null);
+	assert.equal(wason.docSo(''), null);
+	for (const q of ['ba số tăng dần', 'mỗi số bất kỳ, số sau lớn hơn', 'Số sau lớn hơn số trước', 'a < b < c', 'tăng dần bất kỳ']) assert.equal(wason.chamQuyTac(q), 'dung', q);
+	for (const q of ['số chẵn tăng dần', 'tăng đều 2 đơn vị', 'mỗi số lớn hơn số trước 2', 'cộng thêm 2, tăng', 'mỗi số lớn hơn số trước 1 đơn vị', 'tăng dần, mỗi số lớn hơn số trước 10', 'mỗi số lớn hơn số trước 3', 'số sau gấp đôi số trước, tăng', 'tăng hai đơn vị']) assert.equal(wason.chamQuyTac(q), 'hep', q);
+	for (const q of ['số chẵn', 'giảm dần', 'không biết']) assert.equal(wason.chamQuyTac(q), 'sai', q);
+	assert.deepEqual(wason.tomTatDay([{ ok: true }, { ok: false }]), { n: 2, khongTuan: 1, tiLe: 0.5 });
+});
+
+test('Linda: A đúng về logic; số liệu nghiên cứu', () => {
+	assert.ok(linda.dungLogic('a') && !linda.dungLogic('b'));
+	assert.deepEqual(linda.NGHIEN_CUU.tversky1983, { soNguoi: 142, chonB: 85 });
+});
+
+test('Big Five mini: Mini-IPIP 20 câu, 4 câu mỗi chiều, khóa như IPIP; chấm tổng 4–20', () => {
+	assert.equal(bf.CAU.length, 20);
+	for (const { k } of bf.CHIEU) assert.equal(bf.CAU.filter((c) => c.k === k).length, 4, k);
+	// khóa nghịch theo Mini-IPIP Scoring Key: E 2, A 2, C 2, N 2, Intellect 3
+	const nghich = Object.fromEntries(bf.CHIEU.map(({ k }) => [k, bf.CAU.filter((c) => c.k === k && c.khoa < 0).length]));
+	assert.deepEqual(nghich, { E: 2, A: 2, C: 2, N: 2, O: 3 });
+	assert.equal(bf.CAU.filter((c) => c.dich === 'site').length, 2);
+	// không có hai câu cùng chiều liền nhau
+	for (let i = 1; i < 20; i++) assert.notEqual(bf.CAU[i].k, bf.CAU[i - 1].k);
+	const tat5 = bf.chamDiem(Array(20).fill(5));
+	assert.deepEqual(tat5.tong, { E: 12, A: 12, C: 12, N: 12, O: 8 });
+	const tot = bf.chamDiem(bf.CAU.map((c) => (c.khoa > 0 ? 5 : 1)));
+	assert.deepEqual(Object.values(tot.tong), [20, 20, 20, 20, 20]);
+	assert.equal(tot.scores.E, 5);
+	assert.equal(bf.chamDiem([3]).tong.E, null);
+	assert.equal(bf.THANG.length, 5);
+});
+
+test('mỏ neo: xếp nhóm 50/50, neo kẹp hai phía số thật, đọc ước lượng', () => {
+	assert.equal(neo.xepNhom(() => 0.2), 'low');
+	assert.equal(neo.xepNhom(() => 0.7), 'high');
+	for (const c of neo.CAU_HOI) assert.ok(c.neo.low < c.that && c.that < c.neo.high, c.id);
+	assert.equal(neo.docUocLuong('95'), 95);
+	assert.equal(neo.docUocLuong('1.500'), 1500);
+	assert.equal(neo.docUocLuong('38,6%'), 38.6);
+	assert.equal(neo.docUocLuong('0'), null);
+	assert.equal(neo.docUocLuong('khoảng 90'), null);
+	assert.deepEqual(neo.NGHIEN_CUU.tversky1974, { neo: [10, 65], trungVi: [25, 45] });
+});
+
+test('trí nhớ từ: 40 từ một âm tiết khác nhau; rút không lặp; chấm theo NFC, bỏ dấu câu', () => {
+	assert.equal(new Set(tu.TU).size, 40);
+	for (const w of tu.TU) assert.ok(!/\s/.test(w), w);
+	const d = tu.rutTu(12, ngauNhien(4));
+	assert.equal(new Set(d).size, 12);
+	assert.ok(tu.chamTu(['mèo', 'chó'], '  Mèo,  CHÓ '));
+	assert.ok(tu.chamTu(['mèo', 'chó'], 'me\u0300o cho\u0301'));
+	assert.ok(!tu.chamTu(['mèo', 'chó'], 'chó mèo'));
+	assert.deepEqual(tu.chamViTriTu(['mèo', 'chó', 'gà'], 'mèo gà'), [true, false, false]);
+	assert.deepEqual(tu.QUY_TRINH, { batDau: 2, toiDa: 12, hienMs: 900, cachMs: 100 });
 });
 
 // ---------- Khuôn: mỗi công cụ đăng ký đủ ----------
