@@ -114,12 +114,14 @@ test('trang 404 không có trong menu, nên không trang nào link tới nó', (
 	assert.deepEqual(co, []);
 });
 
-test('trang 404 bằng tiếng Việt, báo site đang làm lại, dẫn về trang chủ, ô tìm kiếm và bản cũ', () => {
+test('trang 404 bằng tiếng Việt, dẫn về trang chủ và ô tìm kiếm, không còn nói site đang làm lại', () => {
 	trangDist();
 	const html = fs.readFileSync(path.join(DIST, '404.html'), 'utf8');
 	assert.match(html, /<html lang="vi"/);
 	assert.match(html, /<title>Không thấy trang \| Psyche<\/title>/);
-	assert.match(html, /Psyche đang được làm lại/);
+	// đợt 9 xong (17/11/2026): không còn lời "đang được làm lại"
+	assert.doesNotMatch(html, /đang được làm lại/);
+	assert.match(html, /Không thấy trang này/);
 	assert.match(html, /<a [^>]*href="\/psyche\/"[^>]*>\s*Về trang chủ/);
 	assert.match(html, /<a [^>]*href="#tim-trang-khac"[^>]*data-mo-tim-kiem/);
 	// site cũ (Psyche Zero) đã tắt (repo chuyển riêng tư, 11/2026): không còn nút "Xem ở bản cũ"

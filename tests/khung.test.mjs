@@ -13,7 +13,6 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const DIST = path.join(ROOT, 'dist');
 const SITE = 'https://mtuann.github.io';
 const BASE = '/psyche/';
-const NOTICE = 'Psyche đang được làm lại; từng phần sẽ lên sau khi được kiểm chứng lại từ đầu.';
 
 const read = (file) => fs.readFileSync(file, 'utf8');
 const readJson = (file) => JSON.parse(read(file));
@@ -55,10 +54,10 @@ function assetRefs(html) {
 }
 const cssUrls = (css) => [...css.matchAll(/url\(\s*["']?([^"')]+)["']?\s*\)/g)].map((m) => m[1]).filter((u) => !u.startsWith('data:'));
 
-test('trang chủ tạm: tiếng Việt, câu thông báo của kế hoạch, thẻ cho điện thoại và máy tìm kiếm', () => {
+test('trang chủ: tiếng Việt, không còn hộp "Đang làm lại" (đợt 9 xong), thẻ cho điện thoại và máy tìm kiếm', () => {
 	const html = read(path.join(DIST, 'index.html'));
 	assert.match(html, /<html lang="vi"/);
-	assert.ok(html.includes(NOTICE), 'thiếu câu thông báo trang chủ tạm (plans/lam-lai/README.md, D1.1)');
+	assert.doesNotMatch(html, /đang được làm lại/, 'trang chủ còn câu "đang được làm lại" (đợt 9 đã xong, 17/11/2026)');
 	assert.match(html, /<title>Psyche<\/title>/);
 	assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1"\/?>/);
 	assert.match(html, /<meta name="description" content="[^"]+"/);
