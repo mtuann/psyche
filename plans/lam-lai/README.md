@@ -70,7 +70,7 @@ Câu hỏi còn chờ; hỏi chủ repo trước lô ghi bên cạnh:
 4. **Giữ đường dẫn:** `../psyche-zero/docs/<trang>.md` thành `src/content/docs/<trang>.md`; `/psyche-zero/<trang>/` thành `/psyche/<trang>/`. Trang gộp hay bỏ ghi trong `anh-xa.md`. Link tới trang chưa lên site hiện chữ "sắp có" và tự thành link khi trang lên.
 5. **Mỗi đợt một chủ đề, mỗi lô một nhánh,** có tiêu chí xong.
 6. **Chuyển bằng script, sửa qua kiểm định:** cú pháp đổi bằng `tools/chuyen/`; chữ chỉ đổi khi hồ sơ ghi lý do và nguồn.
-7. **Không lùi chuẩn:** Lighthouse trên điện thoại: hiệu năng từ 95; trợ năng, thực hành tốt và SEO đều 100. Không lỗi axe (WCAG 2.2 AA). Ba trình duyệt (Chromium, WebKit, Firefox), ba cỡ màn hình (360, 768, 1280 px), vùng bấm từ 44 px. Chân mọi trang có lời nhắc Hỗ trợ.
+7. **Không lùi chuẩn:** Lighthouse trên điện thoại: hiệu năng từ 95 (ngoại lệ: trang Sách in `sach/`, gom mọi bài để in, chỉ đo và báo; chủ repo quyết 17/11/2026); trợ năng, thực hành tốt và SEO đều 100. Không lỗi axe (WCAG 2.2 AA). Ba trình duyệt (Chromium, WebKit, Firefox), ba cỡ màn hình (360, 768, 1280 px), vùng bấm từ 44 px. Chân mọi trang có lời nhắc Hỗ trợ.
 
 ## Quy tắc chung
 
