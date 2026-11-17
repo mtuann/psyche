@@ -1,4 +1,4 @@
-# Khóa: câu về chính site ở thẻ ngộ nhận (them/ve-site-ngo-nhan, 18/11/2026)
+# Khóa: câu về chính site ở thẻ ngộ nhận (them/ve-site-ngo-nhan, 17/11/2026)
 
 D8-L3 báo: `tools/khoa.mjs` từ chối nhận định `ve-site` ở bản ghi `ngo-nhan`, trong khi mỗi thẻ có trường `trang` (trang liên quan trên site, link) và `cap` (cấp trong bài thử "Bạn nghĩ gì về tâm trí?") là lựa chọn của site, không có nguồn ngoài để kiểm ở lượt 2.
 

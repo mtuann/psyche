@@ -23,7 +23,7 @@ hero:
 ---
 
 :::note[Đang làm lại]
-Psyche đang được làm lại; từng phần sẽ lên sau khi được kiểm chứng lại từ đầu. Trong lúc chờ, bản cũ vẫn đọc được ở [mtuann.github.io/psyche-zero](https://mtuann.github.io/psyche-zero/).
+Psyche đang được làm lại; từng phần sẽ lên sau khi được kiểm chứng lại từ đầu.
 :::
 
 ## Thử với chính bạn

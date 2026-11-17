@@ -122,7 +122,8 @@ test('trang 404 bằng tiếng Việt, báo site đang làm lại, dẫn về tr
 	assert.match(html, /Psyche đang được làm lại/);
 	assert.match(html, /<a [^>]*href="\/psyche\/"[^>]*>\s*Về trang chủ/);
 	assert.match(html, /<a [^>]*href="#tim-trang-khac"[^>]*data-mo-tim-kiem/);
-	assert.match(html, /<a [^>]*href="https:\/\/mtuann.github.io\/psyche-zero\/"[^>]*data-ban-cu/);
+	// site cũ (Psyche Zero) đã tắt (repo chuyển riêng tư, 11/2026): không còn nút "Xem ở bản cũ"
+	assert.doesNotMatch(html, /psyche-zero|data-ban-cu/);
 	assert.match(html, /id="tim-trang-khac"/);
 	assert.doesNotMatch(html, /rel="(prev|next)"/, 'trang 404 không có link "Trước", "Tiếp"');
 	assert.doesNotMatch(html, /Page not found|This page/);
