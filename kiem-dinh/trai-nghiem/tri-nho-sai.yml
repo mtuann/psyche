@@ -4,258 +4,228 @@ nguon_cu: ../psyche-zero/docs/trai-nghiem/tri-nho-sai.md
 tang: cong-cu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-17'
-  nhanh: moi/d8-l2
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
-    luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
-    review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l2
+    ma_bam: sha256:69c73b6df5d2f5fec7a07bdacf455feb6e813a93589f6b37993f8ad14cb55bff
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
+      luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
+      review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l2-kiem-mau.yml), đạt, 17/11/2026
 nguon:
-- id: roediger1995
-  ten: 'Roediger & McDermott (1995), J Exp Psychol Learn Mem Cogn 21(4), 803–814: toàn văn (PDF, psych.hanover.edu), Phương pháp và Kết quả của thí nghiệm 1 và 2, Bảng 1–3'
-  link: https://psych.hanover.edu/classes/Cognition/Papers/RoedigerMcDermott%201996%20DRM%20False.pdf
-  toan_van: true
-- id: deese1959
-  ten: 'Deese (1959), J Exp Psychol 58(1), 17–22: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus); tên bài đúng là "On the prediction of occurrence of particular verbal intrusions
-    in immediate recall"'
-  link: https://doi.org/10.1037/h0046671
-  toan_van: true
-- id: gallo2010
-  ten: 'Gallo (2010), Mem Cognit 38(7), 833–848: toàn văn (PDF mở, Springer)'
-  link: https://doi.org/10.3758/MC.38.7.833
-  toan_van: true
-- id: zwaan2018
-  ten: 'Zwaan và cộng sự (2018), Psychon Bull Rev 25(5), 1968–1972: toàn văn (PDF mở, Springer), Bảng 1'
-  link: https://doi.org/10.3758/s13423-017-1348-y
-  toan_van: true
-- id: mak2023
-  ten: 'Mak, O''Hagan, Horner & Gaskell (2023), R Soc Open Sci 10(12), registered report, N = 488: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1098/rsos.220595
-  toan_van: false
-- id: wiechert2024
-  ten: 'Wiechert và cộng sự (2024), J Exp Psychol Gen 153(3), 621–655, phân tích tổng hợp và lần làm lại có đăng ký trước (n = 278): tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1037/xge0001527
-  toan_van: false
-- id: coburn2021
-  ten: 'Coburn, Dogra, Rai & Bernstein (2021), Front Psychol 12, 718818, tổng quan hệ thống: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.3389/fpsyg.2021.718818
-  toan_van: false
-- id: huan2026
-  ten: 'Huan và cộng sự (2026), Psychol Aging 41(4), 497–524, phân tích tổng hợp 150 bài, 414 cỡ hiệu ứng: tóm tắt (Europe PMC, review mở 17/11/2026)'
-  link: https://doi.org/10.1037/pag0000966
-  toan_van: false
+  - id: roediger1995
+    ten: 'Roediger & McDermott (1995), J Exp Psychol Learn Mem Cogn 21(4), 803–814: toàn văn (PDF, psych.hanover.edu), Phương pháp và Kết quả của thí nghiệm 1 và 2, Bảng 1–3'
+    link: https://psych.hanover.edu/classes/Cognition/Papers/RoedigerMcDermott%201996%20DRM%20False.pdf
+    toan_van: true
+  - id: deese1959
+    ten: 'Deese (1959), J Exp Psychol 58(1), 17–22: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus); tên bài đúng là "On the prediction of occurrence of particular verbal intrusions in immediate recall"'
+    link: https://doi.org/10.1037/h0046671
+    toan_van: true
+  - id: gallo2010
+    ten: 'Gallo (2010), Mem Cognit 38(7), 833–848: toàn văn (PDF mở, Springer)'
+    link: https://doi.org/10.3758/MC.38.7.833
+    toan_van: true
+  - id: zwaan2018
+    ten: 'Zwaan và cộng sự (2018), Psychon Bull Rev 25(5), 1968–1972: toàn văn (PDF mở, Springer), Bảng 1'
+    link: https://doi.org/10.3758/s13423-017-1348-y
+    toan_van: true
+  - id: mak2023
+    ten: 'Mak, O''Hagan, Horner & Gaskell (2023), R Soc Open Sci 10(12), registered report, N = 488: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1098/rsos.220595
+    toan_van: false
+  - id: wiechert2024
+    ten: 'Wiechert và cộng sự (2024), J Exp Psychol Gen 153(3), 621–655, phân tích tổng hợp và lần làm lại có đăng ký trước (n = 278): tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1037/xge0001527
+    toan_van: false
+  - id: coburn2021
+    ten: 'Coburn, Dogra, Rai & Bernstein (2021), Front Psychol 12, 718818, tổng quan hệ thống: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.3389/fpsyg.2021.718818
+    toan_van: false
+  - id: huan2026
+    ten: 'Huan và cộng sự (2026), Psychol Aging 41(4), 497–524, phân tích tổng hợp 150 bài, 414 cỡ hiệu ứng: tóm tắt (Europe PMC, review mở 17/11/2026)'
+    link: https://doi.org/10.1037/pag0000966
+    toan_van: false
 nhan_dinh:
-- id: s1
-  cau: 'Cách chơi: 12 từ hiện lần lượt; 18 từ kiểm tra, "Đã thấy" (phím D) hay "Chưa thấy" (phím C); 12 từ đã học, 5 từ nhiễu và một từ đặc biệt.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/tri-nho-sai.js (DANH_SACH, baiKiemTra, phím D/C qua batPhimTat), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): tri-nho-sai.js và bản xem dist/: DANH_SACH 12 từ học, 5 từ nhiễu, từ mồi "ngủ" (12 + 5 + 1 = 18), xáo trộn, nút Đã thấy (D) / Chưa thấy (C) qua batPhimTat. Khớp.'
-  review: dung
-- id: s2
-  cau: 'Công cụ: mỗi từ hiện 1,2 giây, nghỉ 0,3 giây; danh sách tiếng Việt do site soạn theo mẫu danh sách "sleep" của bài gốc, chưa chuẩn hóa độ mạnh liên tưởng; lời "minh họa, không phải bài kiểm tra
-    trí nhớ".'
-  loai: ve-site
-  ket_qua: da-sua
-  ghi_chu: 'Đã kiểm DANH_SACH trong tri-nho-sai.js, 17/11/2026. Danh sách cũ có "buồn ngủ" (chứa đúng từ mồi "ngủ"): đã thay bằng "chợp mắt"; kiểm thử chặn từ mồi nằm trong từ đã học. Review (17/11/2026): bản build (dist/_astro/tri-nho-sai.*.js) có hienMs 1200, nghiMs 300; "chợp mắt" thay "buồn ngủ"; chữ "minh họa … không phải bài kiểm tra trí nhớ" có ở cả công cụ và trang. Khớp.'
-  review: dung
-- id: n1
-  cau: Các từ cùng chủ đề (giường, gối, mơ…) kích hoạt cả từ gắn với chủ đề ("ngủ"); lúc kiểm tra, người ta không phân biệt được "đã thấy" với "đã nghĩ đến" (cách giải thích phổ biến).
-  loai: phat-hien
-  nguon:
-  - gallo2010
-  trich: Some evidence that supports the associative activation theory is (1) the strong positive correlation between the degree of associative strength and the level of false memory across DRM lists …
-    According to the source-monitoring framework, all false memories reflect a breakdown of source monitoring
-  vi_tri: Gallo 2010, mục "Theories"
-  ket_qua: dung
-  ghi_chu: Đoạn "Điều gì đang xảy ra?" giữ chữ cũ; "cách giải thích phổ biến" khớp khung kích hoạt/giám sát mà Gallo mô tả.
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/0278-7393.21.4.803
-  luot_2_ghi_chu: Chỉ đọc tóm tắt (bản đầy đủ không mở được). Câu nói đây là cách giải thích phổ biến (kích hoạt + nhầm nguồn); tóm tắt xác nhận hiện tượng, không bàn cơ chế.
-- id: n2
-  cau: Roediger và McDermott (1995) dựa trên nghiên cứu của Deese (1959), cho sinh viên nghe các danh sách 12 từ cùng gợi về một từ mồi không xuất hiện (bed, rest, awake… → sleep), rồi nhớ lại ngay sau
-    mỗi danh sách.
-  loai: phat-hien
-  nguon:
-  - roediger1995
-  - deese1959
-  trich: Two experiments (modeled after J. Deese's 1959 study) … subjects studied lists of 12 words (e.g., bed, rest, awake); each list was composed of associates of 1 nonpresented word (e.g., sleep). |
-    the lists were read aloud by the experimenter | Subjects were given 2.5 min to recall each
-  vi_tri: Tóm tắt; Thí nghiệm 1, Phương pháp
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "cho người học các danh sách" (không nói nghe đọc to, nhớ lại sau mỗi danh sách). Mới: "cho sinh viên nghe … rồi nhớ lại ngay sau mỗi danh sách".'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/0278-7393.21.4.803
-  luot_2_ghi_chu: Đọc tóm tắt.
-- id: n3
-  cau: Khi nhớ lại tự do, người tham gia "nhớ" ra từ mồi ở 40% số danh sách (thí nghiệm 1); với danh sách 15 từ, 55% (thí nghiệm 2).
-  loai: so-lieu
-  nguon:
-  - roediger1995
-  trich: On immediate free recall tests, the nonpresented associates were recalled 40 % of the time | For each of 24 target words, 15 associates were selected for the list. | Subjects recalled the critical
-    nonpresented word on 55% of the lists
-  vi_tri: Tóm tắt; Thí nghiệm 2, Vật liệu và Kết quả
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1037/0278-7393.21.4.803
-  luot_2_ghi_chu: Tóm tắt không nêu 'danh sách 15 từ'; phần đó chưa xác nhận trực tiếp.
-- id: n4
-  cau: 'Ở bài nhận diện sau đó, tỉ lệ nhận nhầm từ mồi gần bằng tỉ lệ nhận đúng từ đã học (thí nghiệm 1: 84% so với 86%).'
-  loai: so-lieu
-  nguon:
-  - roediger1995
-  trich: Consider first the proportion of items subjects called old by assigning a rating of 3 (probably old) or 4 (sure old). The hit rate was 86% … As shown in Table 1, the false-alarm rate for the critical
-    nonstudied lures (.84) approached the hit rate (.86)
-  vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 806, Thí nghiệm 1, mục Recognition, Bảng 1
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "có khi cao ngang". Mới nêu số của thí nghiệm 1 (đánh giá 3 hay 4). Sau lượt 2 (Opus, 17/11/2026): giữ; lượt 2 chỉ đọc tóm tắt, số 84% và 86% có nguyên văn ở tr. 806. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở PDF psych.hanover.edu, tr. 806: "the false-alarm rate for the critical nonstudied lures (.84) approached the hit rate (.86)" (đánh giá 3 hay 4).'
-  luot_2: khong-chac
-  luot_2_ghi_chu: 'Tóm tắt chỉ nói thí nghiệm 1: nhận diện với độ tin cậy cao; thí nghiệm 2: dương tính giả ''comparable to the hit rate''. Không mở được toàn văn (APA đóng, CiteSeerX hỏng, không có bản
-    ở Internet Archive) nên 84% và 86% chưa xác nhận.'
-- id: n5
-  cau: Ở thí nghiệm 2, phần lớn những lần nhận nhầm từ mồi được đánh giá là "nhớ rõ" (remember) chứ không chỉ "thấy quen" (know).
-  loai: phat-hien
-  nguon:
-  - roediger1995
-  trich: after recalling the lists subjects were much more likely to say that they remembered the items from the list, with remember judgments being made 72% of the time (i.e., .58 ÷ .81 × 100) for words
-    that had never been presented. When the lists were presented but not recalled, the rate of remember judgments dropped to 53%, although this figure is still quite high.
-  vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 808–809, Thí nghiệm 2, mục Recognition, Bảng 2
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "người ta còn nhớ cả khoảnh khắc mình đã thấy từ đó" (không nói thí nghiệm nào). Mới gắn với thí nghiệm 2, phân biệt remember/know. Sau lượt 2 (Opus, 17/11/2026): giữ; 72% (có nhớ lại) và
-    53% (không nhớ lại) đều trên một nửa, đúng chữ "phần lớn". Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, tr. 808–809 và Bảng 2: remember 72% (.58/.81) khi đã nhớ lại, 53% khi không nhớ lại.'
-  luot_2: khong-chac
-  luot_2_ghi_chu: Phán đoán remember/know ở thí nghiệm 2 không có trong tóm tắt; chưa mở được toàn văn.
-- id: n6
-  cau: 'Vững chắc: học các từ cùng chủ đề có thể khiến ta "nhớ" một từ chưa từng thấy (nhiều lần làm lại có đăng ký trước cùng chiều, như Zwaan và cộng sự, 2018; một tổng quan hệ thống và nhiều phân tích
-    tổng hợp dùng mô hình này ở trẻ em, người trẻ, người già).'
-  loai: nhan
-  nguon:
-  - gallo2010
-  - zwaan2018
-  - roediger1995
-  trich: This memory illusion is difficult for people to avoid and has been used in hundreds of studies (Gallo 2010, tr. 833) | These DRM relatedness effects have persisted across a variety of encoding
-    tasks, retention intervals, and test formats. They have also been observed in a variety of populations, including the young, the old, the neurologically impaired, and people with different languages
-    and cultures. (Gallo 2010, tr. 835) | we conducted the first preregistered replication of a large set of cognitive psychological effects … 5 False memories … Roediger and McDermott (1995) (Zwaan 2018,
-    tr. 1968–1969, Bảng 1)
-  vi_tri: Gallo 2010, mục "Establishing the illusion"; Zwaan 2018, Bảng 1
-  nhan: vung-chac
-  co_so:
-  - gallo2010
-  - zwaan2018
-  - mak2023
-  - wiechert2024
-  - coburn2021
-  - huan2026
-  ly_do: Nhiều tái lập có đăng ký trước cùng chiều (Zwaan 2018 hai đợt; registered report Mak 2023, N = 488; lần làm lại có đăng ký trước Wiechert 2024, n = 278), một tổng quan hệ thống (Coburn 2021) và
-    các phân tích tổng hợp có hiệu ứng nền (Wiechert 2024; Huan 2026); nhiều quần thể; không thấy thất bại tái lập lớn. Đạt thước đo mục 4.
-  ket_qua: da-sua
-  ghi_chu: 'chỗ khó: thước đo mục 4 đòi phân tích tổng hợp hay hai tái lập lớn có đăng ký trước; ở đây là một tổng quan tường thuật cộng một tái lập có đăng ký trước (trên mạng). Cũ: "một trong những ảo
-    giác trí nhớ mạnh nhất", "Tỉ lệ nhớ nhầm thường đạt 40–80% tùy thiết kế" (không tìm được nguồn cho khoảng 40–80%): đã bỏ, thay bằng "thay đổi nhiều theo danh sách và cách làm". Sau lượt 2 (Opus, 17/11/2026):
-    hạ Vững chắc xuống Khá vững trên trang (ý chính giữ, thêm câu lý do nhãn). Câu mới: cần lượt 2 bổ sung. [câu mới] Sau lượt 2 bổ sung (người gộp quyết, áp dụng 17/11/2026): nhãn trở lại Vững chắc theo
-    cau_dung; thân khung trên trang dẫn thêm Mak 2023, Wiechert 2024, Coburn 2021, Huan 2026. Review: đạt (Claude Opus 5.5, 17/11/2026). Tự mở toàn văn Gallo 2010 (tr. 833, 835: "hundreds of studies"; "the young, the old, the neurologically impaired, and people with different languages and cultures") và Zwaan 2018 (Bảng 1, hiệu ứng 5 False memories); tóm tắt Mak 2023 (registered report, N = 488), Wiechert 2024 (preregistered meta-analysis and preregistered replication, n = 278), Coburn 2021 (systematic review), Huan 2026 (phân tích tổng hợp 150 bài, 414 cỡ hiệu ứng, trí nhớ sai tự phát ở người trẻ và người già) qua Europe PMC. co_so có tổng quan hệ thống và phân tích tổng hợp, nhiều tái lập có đăng ký trước cùng chiều, nhiều quần thể: đạt Vững chắc theo mục 4. Câu trên trang hẹp hơn cau ("người trẻ và người già", không nói trẻ em): không mạnh hơn nguồn.'
-  luot_2: sai
-  luot_2_nguon:
-  - https://link.springer.com/content/pdf/10.3758/s13423-017-1348-y.pdf
-  - https://doi.org/10.1098/rsos.220595
-  - https://doi.org/10.1037/xge0001527
-  - https://doi.org/10.1037/pag0000966
-  - https://doi.org/10.3389/fpsyg.2021.718818
-  luot_2_ghi_chu: 'câu đúng: Vững chắc: học các từ cùng chủ đề có thể khiến ta "nhớ" một từ chưa từng thấy (nhiều lần làm lại có đăng ký trước cùng chiều, như Zwaan và cộng sự, 2018; một tổng quan hệ thống
-    và nhiều phân tích tổng hợp dùng mô hình này ở trẻ em, người trẻ, người già).; Bằng chứng vượt mức ''Khá vững'' theo mục 4 của chuẩn. Ít nhất ba nghiên cứu có đăng ký trước cho hiệu ứng DRM nền đều
-    cùng chiều: Zwaan 2018 (hai đợt, khoảng 160 người mỗi thí nghiệm, trên MTurk), registered report về giấc ngủ (N = 488) và lần làm lại năm 2024 (n = 278). Có một tổng quan hệ thống (Frontiers in Psychology
-    2021) và nhiều phân tích tổng hợp gộp hàng trăm cỡ hiệu ứng DRM: theo tuổi (Psychology and Aging 2026, 150 bài, 414 cỡ hiệu ứng, cả người trẻ lẫn người già), theo cảm xúc, theo giấc ngủ (Newbury & Monaghan
-    2019), theo mã hóa khác biệt (Huff, Bodner & Fawcett). Các bài này dùng DRM để xét yếu tố điều tiết, không ước lượng riêng hiệu ứng nền, nhưng mọi bài đều có hiệu ứng nền. Hiệu ứng đúng ở trẻ em, người
-    già, mẫu online và mẫu phòng thí nghiệm. Không tìm thấy thất bại tái lập lớn nào. Như vậy đạt điều kiện ''Vững chắc'' (hai lần tái lập lớn có đăng ký trước, cùng chiều; một tổng quan hệ thống; nhiều
-    quần thể). Phần ngoặc ''một tổng quan tường thuật và một lần làm lại có đăng ký trước'' tả đúng hai nguồn trang dẫn, nhưng bằng chứng hiện có nhiều hơn thế. Chỉ đọc toàn văn Zwaan 2018; các bài khác
-    đọc tóm tắt qua Europe PMC.'
-- id: n7
-  cau: 'Đang tranh cãi: cơ chế chính xác (kích hoạt theo liên tưởng, ý chính/thuyết vết mờ, giám sát nguồn); theo Gallo, các cách giải thích khó tách, không loại trừ nhau, mỗi cách có bằng chứng riêng.'
-  loai: nhan
-  nguon:
-  - gallo2010
-  trich: The associative-activation and gist theories are difficult to tease apart in practice, but these processes are not mutually exclusive, and there is evidence that uniquely supports each.
-  vi_tri: Gallo 2010, toàn văn (PDF mở, Springer), tr. 836, mục "Theoretical progress"
-  nhan: tranh-cai
-  co_so:
-  - gallo2010
-  ly_do: Tổng quan nêu hai nhóm lý thuyết chính, mỗi nhóm có bằng chứng riêng, chưa tách được.
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "sự mờ nhòe của dấu vết trí nhớ … tranh luận vẫn tiếp tục". Mới gọi đúng tên các lý thuyết theo Gallo. Sau lượt 2 (Opus, 17/11/2026): giữ vế "theo Gallo": nguyên văn ở tr. 836 (lượt 2 không
-    mở được Gallo). Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở Gallo 2010, tr. 836: "difficult to tease apart in practice, but these processes are not mutually exclusive, and there is evidence that uniquely supports each".'
-  luot_2: dung
-  luot_2_nguon:
-  - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC8473788&format=json&resultType=core
-  luot_2_ghi_chu: 'chỗ khó: Tóm tắt PMC8473788 (2021) cho thấy cơ chế (kích hoạt lan truyền kèm nhầm nguồn) vẫn đang được kiểm tra thực nghiệm; vế ''theo Gallo'' và ''khó tách'' chưa mở được nguồn của Gallo.'
-- id: n8
-  cau: Nghiên cứu gốc dùng nhiều danh sách trên hàng chục người (36 người ở thí nghiệm 1, 30 người ở thí nghiệm 2).
-  loai: so-lieu
-  nguon:
-  - roediger1995
-  trich: Subjects. Subjects were 36 Rice University undergraduates who participated as part of a course project (tr. 804) | Subjects. Thirty Rice University undergraduates participated in a one hour session
-    as part of a course requirement. (tr. 807)
-  vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 804 và 807, mục Subjects của hai thí nghiệm
-  ket_qua: da-sua
-  ghi_chu: 'Thêm cỡ mẫu. Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn: "36 Rice University undergraduates" (tr. 804), "Thirty Rice University undergraduates" (tr. 807).'
-  luot_2: khong-chac
-  luot_2_ghi_chu: Số người (36, 30) không có trong tóm tắt; chưa mở được toàn văn.
-- id: n9
-  cau: Thí nghiệm 2 của bản gốc còn hỏi người tham gia có "nhớ" khoảnh khắc thấy từ hay chỉ "biết" nó quen; trong thí nghiệm 1 bài nhận diện đến sau các lần nhớ lại.
-  loai: phat-hien
-  nguon:
-  - roediger1995
-  trich: Recognition. The recognition test was given following study and recall of all six lists, and thus the results were likely affected by prior recall. (tr. 806) | In Experiment 2 … During the recognition
-    test, subjects made old-new judgments, followed by remember-know judgments for items judged to be old. (tr. 807)
-  vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 806–807
-  ket_qua: da-sua
-  ghi_chu: 'Cũ: "bản gốc còn hỏi …" (chỉ thí nghiệm 2 hỏi). Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn: bài nhận diện thí nghiệm 1 "given following study and recall of all six lists" (tr. 806); remember-know chỉ ở thí nghiệm 2.'
-  luot_2: khong-chac
-  luot_2_nguon:
-  - https://doi.org/10.1037/0278-7393.21.4.803
-  luot_2_ghi_chu: Tóm tắt không nói về phán đoán remember/know và thứ tự bài nhận diện; chưa mở được toàn văn.
-- id: n10
-  cau: 'Công cụ, mục So với nghiên cứu gốc: 36 sinh viên nghe 6 danh sách 12 từ; nhớ ra từ mồi ở 40% số danh sách; thí nghiệm 2 (15 từ) 55%; bài nhận diện thí nghiệm 1: 84% so với 86%.'
-  loai: cong-cu
-  nguon:
-  - roediger1995
-  trich: Subjects were 36 Rice University undergraduates (tr. 804) | We developed six lists … the first 12 associates listed in Russell and Jenkins's (1954) word association norms (tr. 804–805) | Subjects
-    intruded the critical lure on 40% of the lists (tr. 806) | For each of 24 target words, 15 associates were selected (tr. 807) | Subjects recalled the critical nonpresented word on 55% of the lists (tr.
-    808) | the false-alarm rate for the critical nonstudied lures (.84) approached the hit rate (.86) (tr. 806)
-  vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)); hằng NGHIEN_CUU trong tri-nho-sai.js
-  ket_qua: da-sua
-  ghi_chu: 'Công cụ cũ chỉ nêu 40%, 55% và "có khi cao ngang"; nay dựng chữ từ hằng NGHIEN_CUU, thêm cỡ mẫu và số nhận diện. Sau lượt 2 (Opus, 17/11/2026): giữ; mọi số có nguyên văn trong toàn văn. Review: đạt (Claude Opus 5.5, 17/11/2026): mọi số của NGHIEN_CUU (36, 6, 12, 40; 30, 15, 55; 84, 86) có nguyên văn trong toàn văn (tóm tắt, tr. 804–808, Bảng 1); chữ hiện ra trong công cụ dựng từ hằng này.'
-  luot_2: khong-chac
-  luot_2_nguon:
-  - https://doi.org/10.1037/0278-7393.21.4.803
-  luot_2_ghi_chu: Chỉ 40% và 55% xác nhận từ tóm tắt; 36 sinh viên, 6 danh sách, 84%/86% chưa xác nhận. Cần sửa câu nếu không kiểm được.
-- id: n11
-  cau: 'Nhịp trình bày khoảng 1,5 giây mỗi từ như nhịp đọc của thí nghiệm 1 (công cụ: 1,2 giây hiện, 0,3 giây nghỉ).'
-  loai: cong-cu
-  nguon:
-  - roediger1995
-  trich: The lists were read aloud by the first author at the approximate rate of 1 word per 1.5 s.
-  vi_tri: 'Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 805, Thí nghiệm 1, mục Procedure; trong mã: DANH_SACH.hienMs 1200 + nghiMs 300'
-  ket_qua: dung
-  luot_2: khong-chac
-  luot_2_ghi_chu: Nhịp 1,5 giây mỗi từ ở thí nghiệm 1 chưa xác nhận (không mở được toàn văn). Thông số 1,2 giây hiện + 0,3 giây nghỉ là của công cụ, không đối chiếu được.
-  ghi_chu: 'Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, tr. 805: "read aloud by the first author at the approximate rate of 1 word per 1.5 s".'
+  - id: s1
+    cau: 'Cách chơi: 12 từ hiện lần lượt; 18 từ kiểm tra, "Đã thấy" (phím D) hay "Chưa thấy" (phím C); 12 từ đã học, 5 từ nhiễu và một từ đặc biệt.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/tri-nho-sai.js (DANH_SACH, baiKiemTra, phím D/C qua batPhimTat), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): tri-nho-sai.js và bản xem dist/: DANH_SACH 12 từ học, 5 từ nhiễu, từ mồi "ngủ" (12 + 5 + 1 = 18), xáo trộn, nút Đã thấy (D) / Chưa thấy (C) qua batPhimTat. Khớp.'
+    review: dung
+  - id: s2
+    cau: 'Công cụ: mỗi từ hiện 1,2 giây, nghỉ 0,3 giây; danh sách tiếng Việt do site soạn theo mẫu danh sách "sleep" của bài gốc, chưa chuẩn hóa độ mạnh liên tưởng; lời "minh họa, không phải bài kiểm tra trí nhớ".'
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Đã kiểm DANH_SACH trong tri-nho-sai.js, 17/11/2026. Danh sách cũ có "buồn ngủ" (chứa đúng từ mồi "ngủ"): đã thay bằng "chợp mắt"; kiểm thử chặn từ mồi nằm trong từ đã học. Review (17/11/2026): bản build (dist/_astro/tri-nho-sai.*.js) có hienMs 1200, nghiMs 300; "chợp mắt" thay "buồn ngủ"; chữ "minh họa … không phải bài kiểm tra trí nhớ" có ở cả công cụ và trang. Khớp.'
+    review: dung
+  - id: n1
+    cau: Các từ cùng chủ đề (giường, gối, mơ…) kích hoạt cả từ gắn với chủ đề ("ngủ"); lúc kiểm tra, người ta không phân biệt được "đã thấy" với "đã nghĩ đến" (cách giải thích phổ biến).
+    loai: phat-hien
+    nguon:
+      - gallo2010
+    trich: Some evidence that supports the associative activation theory is (1) the strong positive correlation between the degree of associative strength and the level of false memory across DRM lists … According to the source-monitoring framework, all false memories reflect a breakdown of source monitoring
+    vi_tri: Gallo 2010, mục "Theories"
+    ket_qua: dung
+    ghi_chu: Đoạn "Điều gì đang xảy ra?" giữ chữ cũ; "cách giải thích phổ biến" khớp khung kích hoạt/giám sát mà Gallo mô tả.
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0278-7393.21.4.803
+    luot_2_ghi_chu: Chỉ đọc tóm tắt (bản đầy đủ không mở được). Câu nói đây là cách giải thích phổ biến (kích hoạt + nhầm nguồn); tóm tắt xác nhận hiện tượng, không bàn cơ chế.
+  - id: n2
+    cau: Roediger và McDermott (1995) dựa trên nghiên cứu của Deese (1959), cho sinh viên nghe các danh sách 12 từ cùng gợi về một từ mồi không xuất hiện (bed, rest, awake… → sleep), rồi nhớ lại ngay sau mỗi danh sách.
+    loai: phat-hien
+    nguon:
+      - roediger1995
+      - deese1959
+    trich: Two experiments (modeled after J. Deese's 1959 study) … subjects studied lists of 12 words (e.g., bed, rest, awake); each list was composed of associates of 1 nonpresented word (e.g., sleep). | the lists were read aloud by the experimenter | Subjects were given 2.5 min to recall each
+    vi_tri: Tóm tắt; Thí nghiệm 1, Phương pháp
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "cho người học các danh sách" (không nói nghe đọc to, nhớ lại sau mỗi danh sách). Mới: "cho sinh viên nghe … rồi nhớ lại ngay sau mỗi danh sách".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0278-7393.21.4.803
+    luot_2_ghi_chu: Đọc tóm tắt.
+  - id: n3
+    cau: Khi nhớ lại tự do, người tham gia "nhớ" ra từ mồi ở 40% số danh sách (thí nghiệm 1); với danh sách 15 từ, 55% (thí nghiệm 2).
+    loai: so-lieu
+    nguon:
+      - roediger1995
+    trich: On immediate free recall tests, the nonpresented associates were recalled 40 % of the time | For each of 24 target words, 15 associates were selected for the list. | Subjects recalled the critical nonpresented word on 55% of the lists
+    vi_tri: Tóm tắt; Thí nghiệm 2, Vật liệu và Kết quả
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1037/0278-7393.21.4.803
+    luot_2_ghi_chu: Tóm tắt không nêu 'danh sách 15 từ'; phần đó chưa xác nhận trực tiếp.
+  - id: n4
+    cau: 'Ở bài nhận diện sau đó, tỉ lệ nhận nhầm từ mồi gần bằng tỉ lệ nhận đúng từ đã học (thí nghiệm 1: 84% so với 86%).'
+    loai: so-lieu
+    nguon:
+      - roediger1995
+    trich: Consider first the proportion of items subjects called old by assigning a rating of 3 (probably old) or 4 (sure old). The hit rate was 86% … As shown in Table 1, the false-alarm rate for the critical nonstudied lures (.84) approached the hit rate (.86)
+    vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 806, Thí nghiệm 1, mục Recognition, Bảng 1
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "có khi cao ngang". Mới nêu số của thí nghiệm 1 (đánh giá 3 hay 4). Sau lượt 2 (Opus, 17/11/2026): giữ; lượt 2 chỉ đọc tóm tắt, số 84% và 86% có nguyên văn ở tr. 806. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở PDF psych.hanover.edu, tr. 806: "the false-alarm rate for the critical nonstudied lures (.84) approached the hit rate (.86)" (đánh giá 3 hay 4).'
+    luot_2: khong-chac
+    luot_2_ghi_chu: 'Tóm tắt chỉ nói thí nghiệm 1: nhận diện với độ tin cậy cao; thí nghiệm 2: dương tính giả ''comparable to the hit rate''. Không mở được toàn văn (APA đóng, CiteSeerX hỏng, không có bản ở Internet Archive) nên 84% và 86% chưa xác nhận.'
+  - id: n5
+    cau: Ở thí nghiệm 2, phần lớn những lần nhận nhầm từ mồi được đánh giá là "nhớ rõ" (remember) chứ không chỉ "thấy quen" (know).
+    loai: phat-hien
+    nguon:
+      - roediger1995
+    trich: after recalling the lists subjects were much more likely to say that they remembered the items from the list, with remember judgments being made 72% of the time (i.e., .58 ÷ .81 × 100) for words that had never been presented. When the lists were presented but not recalled, the rate of remember judgments dropped to 53%, although this figure is still quite high.
+    vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 808–809, Thí nghiệm 2, mục Recognition, Bảng 2
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "người ta còn nhớ cả khoảnh khắc mình đã thấy từ đó" (không nói thí nghiệm nào). Mới gắn với thí nghiệm 2, phân biệt remember/know. Sau lượt 2 (Opus, 17/11/2026): giữ; 72% (có nhớ lại) và 53% (không nhớ lại) đều trên một nửa, đúng chữ "phần lớn". Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, tr. 808–809 và Bảng 2: remember 72% (.58/.81) khi đã nhớ lại, 53% khi không nhớ lại.'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Phán đoán remember/know ở thí nghiệm 2 không có trong tóm tắt; chưa mở được toàn văn.
+  - id: n6
+    cau: 'Vững chắc: học các từ cùng chủ đề có thể khiến ta "nhớ" một từ chưa từng thấy (nhiều lần làm lại có đăng ký trước cùng chiều, như Zwaan và cộng sự, 2018; một tổng quan hệ thống và nhiều phân tích tổng hợp dùng mô hình này ở trẻ em, người trẻ, người già).'
+    loai: nhan
+    nguon:
+      - gallo2010
+      - zwaan2018
+      - roediger1995
+    trich: This memory illusion is difficult for people to avoid and has been used in hundreds of studies (Gallo 2010, tr. 833) | These DRM relatedness effects have persisted across a variety of encoding tasks, retention intervals, and test formats. They have also been observed in a variety of populations, including the young, the old, the neurologically impaired, and people with different languages and cultures. (Gallo 2010, tr. 835) | we conducted the first preregistered replication of a large set of cognitive psychological effects … 5 False memories … Roediger and McDermott (1995) (Zwaan 2018, tr. 1968–1969, Bảng 1)
+    vi_tri: Gallo 2010, mục "Establishing the illusion"; Zwaan 2018, Bảng 1
+    nhan: vung-chac
+    co_so:
+      - gallo2010
+      - zwaan2018
+      - mak2023
+      - wiechert2024
+      - coburn2021
+      - huan2026
+    ly_do: Nhiều tái lập có đăng ký trước cùng chiều (Zwaan 2018 hai đợt; registered report Mak 2023, N = 488; lần làm lại có đăng ký trước Wiechert 2024, n = 278), một tổng quan hệ thống (Coburn 2021) và các phân tích tổng hợp có hiệu ứng nền (Wiechert 2024; Huan 2026); nhiều quần thể; không thấy thất bại tái lập lớn. Đạt thước đo mục 4.
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: thước đo mục 4 đòi phân tích tổng hợp hay hai tái lập lớn có đăng ký trước; ở đây là một tổng quan tường thuật cộng một tái lập có đăng ký trước (trên mạng). Cũ: "một trong những ảo giác trí nhớ mạnh nhất", "Tỉ lệ nhớ nhầm thường đạt 40–80% tùy thiết kế" (không tìm được nguồn cho khoảng 40–80%): đã bỏ, thay bằng "thay đổi nhiều theo danh sách và cách làm". Sau lượt 2 (Opus, 17/11/2026): hạ Vững chắc xuống Khá vững trên trang (ý chính giữ, thêm câu lý do nhãn). Câu mới: cần lượt 2 bổ sung. [câu mới] Sau lượt 2 bổ sung (người gộp quyết, áp dụng 17/11/2026): nhãn trở lại Vững chắc theo cau_dung; thân khung trên trang dẫn thêm Mak 2023, Wiechert 2024, Coburn 2021, Huan 2026. Review: đạt (Claude Opus 5.5, 17/11/2026). Tự mở toàn văn Gallo 2010 (tr. 833, 835: "hundreds of studies"; "the young, the old, the neurologically impaired, and people with different languages and cultures") và Zwaan 2018 (Bảng 1, hiệu ứng 5 False memories); tóm tắt Mak 2023 (registered report, N = 488), Wiechert 2024 (preregistered meta-analysis and preregistered replication, n = 278), Coburn 2021 (systematic review), Huan 2026 (phân tích tổng hợp 150 bài, 414 cỡ hiệu ứng, trí nhớ sai tự phát ở người trẻ và người già) qua Europe PMC. co_so có tổng quan hệ thống và phân tích tổng hợp, nhiều tái lập có đăng ký trước cùng chiều, nhiều quần thể: đạt Vững chắc theo mục 4. Câu trên trang hẹp hơn cau ("người trẻ và người già", không nói trẻ em): không mạnh hơn nguồn.'
+    luot_2: sai
+    luot_2_nguon:
+      - https://link.springer.com/content/pdf/10.3758/s13423-017-1348-y.pdf
+      - https://doi.org/10.1098/rsos.220595
+      - https://doi.org/10.1037/xge0001527
+      - https://doi.org/10.1037/pag0000966
+      - https://doi.org/10.3389/fpsyg.2021.718818
+    luot_2_ghi_chu: 'câu đúng: Vững chắc: học các từ cùng chủ đề có thể khiến ta "nhớ" một từ chưa từng thấy (nhiều lần làm lại có đăng ký trước cùng chiều, như Zwaan và cộng sự, 2018; một tổng quan hệ thống và nhiều phân tích tổng hợp dùng mô hình này ở trẻ em, người trẻ, người già).; Bằng chứng vượt mức ''Khá vững'' theo mục 4 của chuẩn. Ít nhất ba nghiên cứu có đăng ký trước cho hiệu ứng DRM nền đều cùng chiều: Zwaan 2018 (hai đợt, khoảng 160 người mỗi thí nghiệm, trên MTurk), registered report về giấc ngủ (N = 488) và lần làm lại năm 2024 (n = 278). Có một tổng quan hệ thống (Frontiers in Psychology 2021) và nhiều phân tích tổng hợp gộp hàng trăm cỡ hiệu ứng DRM: theo tuổi (Psychology and Aging 2026, 150 bài, 414 cỡ hiệu ứng, cả người trẻ lẫn người già), theo cảm xúc, theo giấc ngủ (Newbury & Monaghan 2019), theo mã hóa khác biệt (Huff, Bodner & Fawcett). Các bài này dùng DRM để xét yếu tố điều tiết, không ước lượng riêng hiệu ứng nền, nhưng mọi bài đều có hiệu ứng nền. Hiệu ứng đúng ở trẻ em, người già, mẫu online và mẫu phòng thí nghiệm. Không tìm thấy thất bại tái lập lớn nào. Như vậy đạt điều kiện ''Vững chắc'' (hai lần tái lập lớn có đăng ký trước, cùng chiều; một tổng quan hệ thống; nhiều quần thể). Phần ngoặc ''một tổng quan tường thuật và một lần làm lại có đăng ký trước'' tả đúng hai nguồn trang dẫn, nhưng bằng chứng hiện có nhiều hơn thế. Chỉ đọc toàn văn Zwaan 2018; các bài khác đọc tóm tắt qua Europe PMC.'
+  - id: n7
+    cau: 'Đang tranh cãi: cơ chế chính xác (kích hoạt theo liên tưởng, ý chính/thuyết vết mờ, giám sát nguồn); theo Gallo, các cách giải thích khó tách, không loại trừ nhau, mỗi cách có bằng chứng riêng.'
+    loai: nhan
+    nguon:
+      - gallo2010
+    trich: The associative-activation and gist theories are difficult to tease apart in practice, but these processes are not mutually exclusive, and there is evidence that uniquely supports each.
+    vi_tri: Gallo 2010, toàn văn (PDF mở, Springer), tr. 836, mục "Theoretical progress"
+    nhan: tranh-cai
+    co_so:
+      - gallo2010
+    ly_do: Tổng quan nêu hai nhóm lý thuyết chính, mỗi nhóm có bằng chứng riêng, chưa tách được.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "sự mờ nhòe của dấu vết trí nhớ … tranh luận vẫn tiếp tục". Mới gọi đúng tên các lý thuyết theo Gallo. Sau lượt 2 (Opus, 17/11/2026): giữ vế "theo Gallo": nguyên văn ở tr. 836 (lượt 2 không mở được Gallo). Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở Gallo 2010, tr. 836: "difficult to tease apart in practice, but these processes are not mutually exclusive, and there is evidence that uniquely supports each".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC8473788&format=json&resultType=core
+    luot_2_ghi_chu: 'chỗ khó: Tóm tắt PMC8473788 (2021) cho thấy cơ chế (kích hoạt lan truyền kèm nhầm nguồn) vẫn đang được kiểm tra thực nghiệm; vế ''theo Gallo'' và ''khó tách'' chưa mở được nguồn của Gallo.'
+  - id: n8
+    cau: Nghiên cứu gốc dùng nhiều danh sách trên hàng chục người (36 người ở thí nghiệm 1, 30 người ở thí nghiệm 2).
+    loai: so-lieu
+    nguon:
+      - roediger1995
+    trich: Subjects. Subjects were 36 Rice University undergraduates who participated as part of a course project (tr. 804) | Subjects. Thirty Rice University undergraduates participated in a one hour session as part of a course requirement. (tr. 807)
+    vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 804 và 807, mục Subjects của hai thí nghiệm
+    ket_qua: da-sua
+    ghi_chu: 'Thêm cỡ mẫu. Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn: "36 Rice University undergraduates" (tr. 804), "Thirty Rice University undergraduates" (tr. 807).'
+    luot_2: khong-chac
+    luot_2_ghi_chu: Số người (36, 30) không có trong tóm tắt; chưa mở được toàn văn.
+  - id: n9
+    cau: Thí nghiệm 2 của bản gốc còn hỏi người tham gia có "nhớ" khoảnh khắc thấy từ hay chỉ "biết" nó quen; trong thí nghiệm 1 bài nhận diện đến sau các lần nhớ lại.
+    loai: phat-hien
+    nguon:
+      - roediger1995
+    trich: Recognition. The recognition test was given following study and recall of all six lists, and thus the results were likely affected by prior recall. (tr. 806) | In Experiment 2 … During the recognition test, subjects made old-new judgments, followed by remember-know judgments for items judged to be old. (tr. 807)
+    vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 806–807
+    ket_qua: da-sua
+    ghi_chu: 'Cũ: "bản gốc còn hỏi …" (chỉ thí nghiệm 2 hỏi). Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn: bài nhận diện thí nghiệm 1 "given following study and recall of all six lists" (tr. 806); remember-know chỉ ở thí nghiệm 2.'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://doi.org/10.1037/0278-7393.21.4.803
+    luot_2_ghi_chu: Tóm tắt không nói về phán đoán remember/know và thứ tự bài nhận diện; chưa mở được toàn văn.
+  - id: n10
+    cau: 'Công cụ, mục So với nghiên cứu gốc: 36 sinh viên nghe 6 danh sách 12 từ; nhớ ra từ mồi ở 40% số danh sách; thí nghiệm 2 (15 từ) 55%; bài nhận diện thí nghiệm 1: 84% so với 86%.'
+    loai: cong-cu
+    nguon:
+      - roediger1995
+    trich: Subjects were 36 Rice University undergraduates (tr. 804) | We developed six lists … the first 12 associates listed in Russell and Jenkins's (1954) word association norms (tr. 804–805) | Subjects intruded the critical lure on 40% of the lists (tr. 806) | For each of 24 target words, 15 associates were selected (tr. 807) | Subjects recalled the critical nonpresented word on 55% of the lists (tr. 808) | the false-alarm rate for the critical nonstudied lures (.84) approached the hit rate (.86) (tr. 806)
+    vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)); hằng NGHIEN_CUU trong tri-nho-sai.js
+    ket_qua: da-sua
+    ghi_chu: 'Công cụ cũ chỉ nêu 40%, 55% và "có khi cao ngang"; nay dựng chữ từ hằng NGHIEN_CUU, thêm cỡ mẫu và số nhận diện. Sau lượt 2 (Opus, 17/11/2026): giữ; mọi số có nguyên văn trong toàn văn. Review: đạt (Claude Opus 5.5, 17/11/2026): mọi số của NGHIEN_CUU (36, 6, 12, 40; 30, 15, 55; 84, 86) có nguyên văn trong toàn văn (tóm tắt, tr. 804–808, Bảng 1); chữ hiện ra trong công cụ dựng từ hằng này.'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://doi.org/10.1037/0278-7393.21.4.803
+    luot_2_ghi_chu: Chỉ 40% và 55% xác nhận từ tóm tắt; 36 sinh viên, 6 danh sách, 84%/86% chưa xác nhận. Cần sửa câu nếu không kiểm được.
+  - id: n11
+    cau: 'Nhịp trình bày khoảng 1,5 giây mỗi từ như nhịp đọc của thí nghiệm 1 (công cụ: 1,2 giây hiện, 0,3 giây nghỉ).'
+    loai: cong-cu
+    nguon:
+      - roediger1995
+    trich: The lists were read aloud by the first author at the approximate rate of 1 word per 1.5 s.
+    vi_tri: 'Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 805, Thí nghiệm 1, mục Procedure; trong mã: DANH_SACH.hienMs 1200 + nghiMs 300'
+    ket_qua: dung
+    luot_2: khong-chac
+    luot_2_ghi_chu: Nhịp 1,5 giây mỗi từ ở thí nghiệm 1 chưa xác nhận (không mở được toàn văn). Thông số 1,2 giây hiện + 0,3 giây nghỉ là của công cụ, không đối chiếu được.
+    ghi_chu: 'Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, tr. 805: "read aloud by the first author at the approximate rate of 1 word per 1.5 s".'
 doi_chu:
-- cu: 'Mục Roediger và McDermott (1995): "cho người học", "có khi cao ngang", "nhớ cả khoảnh khắc"'
-  moi: nghe đọc to, nhớ lại sau mỗi danh sách; 84% so với 86%; remember/know ở thí nghiệm 2
-  ly_do: n2, n4, n5
-- cu: Khung Vững chắc "một trong những ảo giác trí nhớ mạnh nhất … 40–80%"
-  moi: ý chính và thân viết theo Gallo (2010), Zwaan (2018)
-  ly_do: n6
-- cu: Khung Đang tranh cãi "sự mờ nhòe của dấu vết"
-  moi: tên các lý thuyết theo Gallo (2010)
-  ly_do: n7
-- cu: Hai ý của "Vì sao kết quả của bạn có thể khác?"
-  moi: thêm cỡ mẫu; nói rõ thí nghiệm 2 mới hỏi remember/know
-  ly_do: n8, n9
-- cu: 'Nguồn: Deese "occurrence or nonoccurrence", không có DOI'
-  moi: tên bài đúng; thêm DOI, thêm Gallo 2010, Zwaan 2018
-  ly_do: deese1959 (đã mở toàn văn)
+  - cu: 'Mục Roediger và McDermott (1995): "cho người học", "có khi cao ngang", "nhớ cả khoảnh khắc"'
+    moi: nghe đọc to, nhớ lại sau mỗi danh sách; 84% so với 86%; remember/know ở thí nghiệm 2
+    ly_do: n2, n4, n5
+  - cu: Khung Vững chắc "một trong những ảo giác trí nhớ mạnh nhất … 40–80%"
+    moi: ý chính và thân viết theo Gallo (2010), Zwaan (2018)
+    ly_do: n6
+  - cu: Khung Đang tranh cãi "sự mờ nhòe của dấu vết"
+    moi: tên các lý thuyết theo Gallo (2010)
+    ly_do: n7
+  - cu: Hai ý của "Vì sao kết quả của bạn có thể khác?"
+    moi: thêm cỡ mẫu; nói rõ thí nghiệm 2 mới hỏi remember/know
+    ly_do: n8, n9
+  - cu: 'Nguồn: Deese "occurrence or nonoccurrence", không có DOI'
+    moi: tên bài đúng; thêm DOI, thêm Gallo 2010, Zwaan 2018
+    ly_do: deese1959 (đã mở toàn văn)

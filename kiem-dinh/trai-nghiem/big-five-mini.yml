@@ -7,12 +7,12 @@ lan:
   - so: 1
     ngay: '2026-11-17'
     nhanh: moi/d8-l2
-    ma_bam: null
+    ma_bam: sha256:e7c3f9888f45bad066dea214ebca3d0a211db18878940e8c8ce36433a14cbf14
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
       luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
       review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
-      kiem_mau: null
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l2-kiem-mau.yml), đạt, 17/11/2026
 nguon:
   - id: donnellan2006
     ten: 'Donnellan, Oswald, Baird & Lucas (2006), Psychol Assess 18(2), 192–203: tóm tắt (OpenAlex)'
@@ -50,6 +50,22 @@ nguon:
     ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "Mini-IPIP Vietnamese" (6 kết quả), "IPIP Vietnamese" (9 kết quả); OpenAlex "Big Five Mini-IPIP Vietnamese": không có nghiên cứu kiểm chứng Mini-IPIP trên người Việt'
     link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Mini-IPIP%20Vietnamese
     toan_van: false
+  - id: mccrae1989
+    ten: "McCrae & Costa (1989), J Pers 57(1), 17–40: dẫn theo hồ sơ trang nhà kham-pha/tinh-cach/big-five (đã khóa)"
+    link: https://doi.org/10.1111/j.1467-6494.1989.tb00759.x
+    toan_van: true
+  - id: buhler2023
+    ten: "Bühler, Sharma & Stein (2023), J Pers: chỉ tóm tắt; dẫn theo hồ sơ trang nhà kham-pha/tinh-cach/big-five (đã khóa)"
+    link: https://doi.org/10.1111/jopy.12813
+    toan_van: false
+  - id: quynh2023
+    ten: "Quynh & Church (2023), Int J Pers Psychol 9: chỉ tóm tắt; dẫn theo hồ sơ trang nhà kham-pha/tinh-cach/big-five (đã khóa)"
+    link: https://doi.org/10.21827/ijpp.9.41003
+    toan_van: false
+  - id: roberts2006
+    ten: "Roberts, Walton & Viechtbauer (2006), Psychol Bull 132(1), 1–25: dẫn theo hồ sơ trang nhà kham-pha/tinh-cach/tinh-cach-thay-doi (đã khóa)"
+    link: https://doi.org/10.1037/0033-2909.132.1.1
+    toan_van: true
 nhan_dinh:
   - id: s1
     cau: 'Công cụ: 20 câu, mỗi màn một câu, năm nút của thang (phím 1–5), "Quay lại câu trước"; kết quả: điểm 4–20 mỗi chiều trên trục có vạch giữa 12, không nhãn cao/thấp; khung cảnh báo; link trang nhà Big Five.'
@@ -209,9 +225,9 @@ nhan_dinh:
   - id: n12
     cau: Big Five là công cụ mô tả tính cách bình thường, không phải công cụ chẩn đoán (lời cảnh báo, link trang nhà).
     loai: dinh-nghia
-    nguon: []
+    nguon: [ mccrae1989, donnellan2006 ]
     ket_qua: da-sua
-    ghi_chu: 'Như trang nhà kham-pha/tinh-cach/big-five (đã khóa, dẫn McCrae và Costa, 1989). Cũ: khung "Đã bị bác bỏ: dùng bài mini để chẩn đoán hay tuyển dụng" — không phải khẳng định thực nghiệm đã bị kiểm tra, dùng nhãn bác bỏ là sai cách; thay bằng khung chú ý (caution) không nhãn. Cũng bỏ khung "Đang tranh cãi: bản 15 câu tự viết có đo đúng 5 chiều" (bản ấy đã bỏ).'
+    ghi_chu: 'Như trang nhà kham-pha/tinh-cach/big-five (đã khóa, dẫn McCrae và Costa, 1989). Cũ: khung "Đã bị bác bỏ: dùng bài mini để chẩn đoán hay tuyển dụng" — không phải khẳng định thực nghiệm đã bị kiểm tra, dùng nhãn bác bỏ là sai cách; thay bằng khung chú ý (caution) không nhãn. Cũng bỏ khung "Đang tranh cãi: bản 15 câu tự viết có đo đúng 5 chiều" (bản ấy đã bỏ). Khi khóa (người gộp, Claude Opus 5.5, 17/11/2026): câu tóm trang nhà đã khóa nên lượt 1 chưa ghi nguồn; gắn đúng nguồn lượt 2 đã dẫn (DOI trong luot_2_nguon), lấy bản ghi từ hồ sơ trang nhà.'
     luot_2: dung
     luot_2_nguon:
       - https://doi.org/10.1037/1040-3590.18.2.192
@@ -219,9 +235,9 @@ nhan_dinh:
   - id: n13
     cau: Bằng chứng về cấu trúc Big Five ở người Việt còn ít và chưa thống nhất (link mục Ở Việt Nam của trang nhà).
     loai: phat-hien
-    nguon: []
+    nguon: [ buhler2023, quynh2023 ]
     ket_qua: da-sua
-    ghi_chu: 'Cũ: "chúng tôi chưa tìm thấy nghiên cứu kiểm chứng cấu trúc 5 nhân tố trên mẫu người Việt" — trái với trang nhà đã khóa (Bühler và cộng sự, 2023; Quynh và Church, 2023). Nay chỉ tóm một câu, link trang nhà; không thêm nhận định mới. Kiểm câu tóm tắt trên trang nhà (mục Ở Việt Nam và các nền văn hóa khác), 17/11/2026.'
+    ghi_chu: 'Cũ: "chúng tôi chưa tìm thấy nghiên cứu kiểm chứng cấu trúc 5 nhân tố trên mẫu người Việt" — trái với trang nhà đã khóa (Bühler và cộng sự, 2023; Quynh và Church, 2023). Nay chỉ tóm một câu, link trang nhà; không thêm nhận định mới. Kiểm câu tóm tắt trên trang nhà (mục Ở Việt Nam và các nền văn hóa khác), 17/11/2026. Khi khóa (người gộp, Claude Opus 5.5, 17/11/2026): câu tóm trang nhà đã khóa nên lượt 1 chưa ghi nguồn; gắn đúng nguồn lượt 2 đã dẫn (DOI trong luot_2_nguon), lấy bản ghi từ hồ sơ trang nhà.'
     luot_2: dung
     luot_2_nguon:
       - https://doi.org/10.21827/ijpp.9.41003
@@ -250,9 +266,9 @@ nhan_dinh:
   - id: n16
     cau: 'Ngộ nhận: mức trung bình các chiều dịch chuyển theo tuổi và điểm một người dao động giữa các lần đo (link Tính cách có thay đổi theo tuổi?).'
     loai: phat-hien
-    nguon: []
+    nguon: [ roberts2006, donnellan2006 ]
     ket_qua: dung
-    ghi_chu: Tóm tắt trang nhà kham-pha/tinh-cach/tinh-cach-thay-doi (đã khóa); giữ chữ cũ, chỉ link.
+    ghi_chu: "Tóm tắt trang nhà kham-pha/tinh-cach/tinh-cach-thay-doi (đã khóa); giữ chữ cũ, chỉ link. Khi khóa (người gộp, Claude Opus 5.5, 17/11/2026): câu tóm trang nhà đã khóa nên lượt 1 chưa ghi nguồn; gắn đúng nguồn lượt 2 đã dẫn (DOI trong luot_2_nguon), lấy bản ghi từ hồ sơ trang nhà."
     luot_2: dung
     luot_2_nguon:
       - https://doi.org/10.1037/0033-2909.132.1.1
