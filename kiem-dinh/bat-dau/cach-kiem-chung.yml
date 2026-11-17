@@ -12,6 +12,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D2-L1)
       review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-l1-kiem-mau.yml), đạt, 30/10/2026
+  - so: 2
+    ngay: 2026-11-17
+    nhanh: mo/bo-link-site-cu
+    ma_bam: sha256:7455ebd092292c031aba1226e130abe4543357557a21b9e34c51f226d761fd28
+    nguoi:
+      luot_1: "Claude Opus 5.5 (người gộp, mo/bo-link-site-cu, 17/11/2026): bỏ link sang Psyche Zero; cach-kiem-chung: câu về bài Sức khỏe tâm thần theo quyết định 16/11/2026"
+      luot_2: "không cần: chỉ đổi câu về chính site (ve-site), không có nhận định cần nguồn ngoài; các nhận định khác giữ kết quả của lần trước"
+      review: "Claude Opus 5.5 (người gộp, 17/11/2026): kiểm trên bản build (không còn link psyche-zero, dải ở bài Sức khỏe tâm thần), npm test và kiểm thử trình duyệt"
+      kiem_mau: chủ repo quyết bỏ link sang site cũ (17/11/2026) và đăng trước bài Sức khỏe tâm thần (16/11/2026); lần này chỉ đổi câu về chính site theo hai quyết định ấy
 nguon: []
 nhan_dinh:
   - id: n1
@@ -128,6 +137,12 @@ nhan_dinh:
     ket_qua: da-sua
     ghi_chu: "Người gom (Claude Opus 5.5, 30/10/2026): thêm để nói rõ ai làm các lượt (người đọc cần biết); khớp plans/lam-lai/loi-giao/README.md (model cho từng lượt) và các báo cáo lô. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. Vế \"mỗi lượt là một phiên làm việc riêng không thấy kết quả của lượt kia\" sai với lượt review: theo chuan-kiem-dinh.md mục 3 bước 3, review phải xem cả hai lượt (chỉ xét chỗ hai lượt lệch, chỗ đã sửa); chính lời giao review này đưa cả hai lượt. Chỉ lượt 2 là không thấy nguồn và kết luận của lượt 1. Ngoài ra hồ sơ D2-L1 ghi một bước \"người gom\" (Claude) sửa chữ sau lượt 2, trang không nhắc. Người gom (Claude Opus 5.5) sửa theo review: Hiện nay, lượt 1, lượt 2 và lượt review do mô hình AI (Claude) làm theo đúng quy trình này, mỗi lượt là một phiên làm việc riêng; lượt 2 không thấy nguồn và kết luận của lượt 1. Chủ site đọc kiểm mẫu, quyết các chỗ khó và chịu trách nhiệm về nội dung."
     review: sai
+  - id: n20
+    cau: Bài về sức khỏe tâm thần được kiểm cả hai lượt như bài Nền tảng; bài nào chưa được người có chuyên môn về sức khỏe tâm thần đọc lại thì có dải "Chưa qua rà soát chuyên môn" ngay dưới tiêu đề.
+    loai: ve-site
+    ket_qua: da-sua
+    ghi_chu: 'Lần 2 (mo/bo-link-site-cu, 17/11/2026): thay câu cũ "Bài về sức khỏe tâm thần chỉ lên site sau khi người có chuyên môn đọc lại" (sai từ khi chủ repo đồng ý đăng trước, 16/11/2026). Đối chiếu: plans/ben-vung/chuan-kiem-dinh.md mục 5 ("Đăng trước khi chuyên gia đọc"); tools/khoa.mjs (nguoi.cho_chuyen_gia); src/components/PageTitle.astro (dải); 4 bài kham-pha/suc-khoe-tam-than/ là tầng loi (src/data/trang.yml), hồ sơ có đủ lượt 2. Review (Claude Opus 5.5, người gom, 17/11/2026): dung, đọc dist/kham-pha/suc-khoe-tam-than/tram-cam/index.html của nhánh moi/d7-l1 (có dải).'
+    review: dung
 doi_chu:
   - cu: 'Mô tả: "...sau khi từng khẳng định được đối chiếu với nguồn qua hai lượt..."'
     moi: '"...sau khi các khẳng định được đối chiếu với nguồn (bài nền tảng qua hai lượt độc lập)..."'
@@ -145,3 +160,7 @@ doi_chu:
     moi: '"khi bằng chứng mới có thể làm đổi nhãn hay kết luận"'
     ly_do: Chuẩn mục 8 (tái lập mốc).
 ghi_chu: 'Trang khung mới, toàn câu về chính site; không có nguồn ngoài. Đã đối chiếu từng câu với chuan-kiem-dinh.md và them-noi-dung.md. Người gom quyết: trang công khai mô tả lượt 1, 2 và review là "bên/lượt" (trung tính) vì thực tế do agent AI làm, chủ repo kiểm mẫu; có nên ghi rõ "AI" ở đây không (minh bạch với người đọc) là quyết định của chủ repo.'
+mo_khoa:
+  - ngay: 2026-11-17
+    nhanh: mo/bo-link-site-cu
+    ly_do: "Bỏ link sang Psyche Zero (repo cũ đã chuyển riêng tư, site cũ trả 404; chủ repo chọn bỏ link, 17/11/2026); cach-kiem-chung: câu về bài Sức khỏe tâm thần theo quyết định đăng trước khi chuyên gia đọc (16/11/2026)"

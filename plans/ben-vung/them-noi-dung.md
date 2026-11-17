@@ -76,3 +76,36 @@ Không quét lại toàn site: chỉ mở đúng trang, đúng khẳng định m
 **Viết một bổ sung:**
 
 > Bạn viết bổ sung `<loai>` cho bài `<trang lõi>` của repo psyche, mục `<id tiêu đề>`, nhánh `them/bo-sung-<slug>-<yyyy-mm>`. Model: Sonnet (Opus nếu có thể đổi nhãn). Đọc `plans/ben-vung/them-noi-dung.md` mục 5 và hồ sơ của bài lõi (`kiem-dinh/<trang lõi>.yml`) để biết bài đang nói gì và dựa vào nguồn nào. Không sửa bài lõi. Lập hồ sơ cho bổ sung, viết ngắn, ghi `anh_huong_nhan` và lý do. Khi xong như trên.
+
+## 9. Thứ tự ưu tiên sau đợt 9 (chủ repo duyệt 17/11/2026)
+
+Đếm lúc xong đợt 8 (68 bài lõi, 12 mở rộng, 11 công cụ): lĩnh vực lệch nhau nhiều. Phương pháp có 14 bài lõi, Tâm lý xã hội 10; còn Căng thẳng và Hạnh phúc mỗi lĩnh vực 1 bài lõi, Ý thức và giấc ngủ 2, Tính cách 2. Học tập chỉ có 5 thí nghiệm, không có bài giải thích nền. Cả 11 công cụ thuộc nhận thức và tính cách. Nhiều bài ghi "chưa tìm thấy nghiên cứu ở Việt Nam". Các chủ đề dưới đây lấy từ bảng chỗ trống kinh điển (`README.md` mục 3), làm theo mục 4 (bài lõi) hay mục 3 (bài mở rộng).
+
+| Đợt | Bài | Lĩnh vực | Ghi chú |
+|---|---|---|---|
+| A (lấp lĩnh vực mỏng, ưu tiên cao) | Điều kiện hóa: học bằng liên tưởng và hệ quả | Học tập | Cầu nối cho 5 thí nghiệm Pavlov, Skinner, Bandura, Little Albert, Seligman (tóm một câu, link về trang nhà) |
+| | Neuron và chất dẫn truyền thần kinh | Cơ sở sinh học | Bài nền; bài mở rộng Dopamine dựa trên nó (`dua_tren`) |
+| | Tính dẻo của não | Cơ sở sinh học | |
+| | Giấc ngủ và nhịp sinh học | Ý thức và giấc ngủ | |
+| | Thiền và thôi miên | Ý thức và giấc ngủ | Khớp thẻ ngộ nhận `thoi-mien` |
+| | Hiệu ứng giả dược | Căng thẳng và sức khỏe | |
+| | Nhu cầu và động lực (từ Maslow tới thuyết tự quyết) | Cảm xúc và động lực | Khớp thẻ ngộ nhận `thap-maslow` |
+| | Lịch sử và các trường phái tâm lý học | Phương pháp | |
+| B (lấp chỗ trống khái niệm) | Lỗi quy kết cơ bản | Tâm lý xã hội | |
+| | Hấp dẫn và các mối quan hệ | Tâm lý xã hội | |
+| | Thuyết tâm trí | Phát triển | |
+| | Phát triển đạo đức | Phát triển | |
+| | Ngôn ngữ có định hình tư duy? | Tư duy, ngôn ngữ | |
+| | Giải quyết vấn đề | Tư duy, ngôn ngữ | |
+| | Các cách tiếp cận tính cách | Tính cách | |
+| C (cần người ngoài, chủ đề do chủ repo chọn) | Thế nào là rối loạn tâm thần (ICD, DSM, kỳ thị) | Sức khỏe tâm thần | Làm khi đã có chuyên gia; Opus cả hai lượt |
+| | Sang chấn tâm lý | Sức khỏe tâm thần | Như trên |
+| | Một đến hai chủ đề cho Hạnh phúc (ví dụ các mối quan hệ và hạnh phúc, lòng biết ơn) | Hạnh phúc | Chưa có trong bảng chỗ trống: chủ repo chọn; có thể viết bài mở rộng trước |
+
+Song song với các đợt trên, việc nhỏ:
+
+- **Bổ sung "Ở Việt Nam"** (mục 5, `loai: viet-nam`) khi tìm được nghiên cứu có bình duyệt; ưu tiên các bài đang ghi "chưa tìm thấy nghiên cứu ở Việt Nam" (mỗi câu ấy có `het_han`, máy canh nhắc).
+- **Công cụ cho lĩnh vực chưa có** (mục 1, trang `cong-cu`, khuôn của D8-L1): ví dụ trò lỗi quy kết (xã hội), nhận diện cảm xúc trên khuôn mặt (cảm xúc), bài thử niềm tin sai (phát triển). Không công cụ tự chẩn đoán.
+- **Nâng bài mở rộng thành bài lõi** khi tới hạn xem lại mà bằng chứng đã chín (mục 3).
+
+Xong A và B thì mỗi lĩnh vực có ít nhất 3–4 bài lõi, trừ Căng thẳng và Hạnh phúc (cần thêm chủ đề ở C). Mỗi bài lõi 1–2 phiên; làm theo lô 4–6 bài như đợt 5–6 (lượt 1 Sonnet, lượt 2 độc lập, review, kiểm mẫu của chủ repo).
