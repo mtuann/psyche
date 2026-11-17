@@ -4,385 +4,385 @@ nguon_cu: ../psyche-zero/docs/trai-nghiem/stroop.md
 tang: cong-cu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-16'
-  nhanh: moi/d8-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
-    luot_2: null
-    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l1
+    ma_bam: sha256:76163fd065eec807cb74c6d5a57bdf00aef18e695d926317ebdde27235da063b
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L1, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l1-kiem-mau.yml), đạt, 17/11/2026
 nguon:
-- id: stroop1935
-  ten: 'Stroop (1935), J Exp Psychol 18(6), 643–662: toàn văn trên Classics in the History of Psychology'
-  link: https://psychclassics.yorku.ca/Stroop/
-  toan_van: true
-- id: macleod1991
-  ten: 'MacLeod (1991), Psychol Bull 109(2), 163–203: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1037/0033-2909.109.2.163
-  toan_van: false
-- id: augustinova2019
-  ten: 'Augustinova, Parris & Ferrand (2019), Front Psychol 10, 1786: toàn văn (Europe PMC, PMC6709679), Bảng 2'
-  link: https://doi.org/10.3389/fpsyg.2019.01786
-  toan_van: true
-- id: hedge2018
-  ten: 'Hedge, Powell & Sumner (2018), Behav Res Methods 50(3), 1166–1186: toàn văn (PMC5990556), Bảng 1'
-  link: https://doi.org/10.3758/s13428-017-0935-1
-  toan_van: true
-- id: simons2016
-  ten: 'Simons và cộng sự (2016), Psychol Sci Public Interest 17(3), 103–186: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1177/1529100616661983
-  toan_van: false
-- id: mahidol2005
-  ten: 'Luận văn thạc sĩ "A comparison of Thai and Vietnamese color terms" (Mahidol University, 2005): trang mô tả; nguồn phụ, không bình duyệt'
-  link: https://repository.li.mahidol.ac.th/handle/123456789/107742
-  toan_van: false
-- id: tim-stroop-vn
-  ten: 'Tìm ngày 16/11/2026 trên Europe PMC: "Stroop Vietnamese" (86 kết quả), "Stroop test Vietnam norms" (71): không thấy số liệu chuẩn Stroop bằng tiếng Việt trong 8 kết quả đầu mỗi truy vấn; bộ chuẩn tiếng Việt Nguyen và cộng sự (2025) không có Stroop'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Stroop%20Vietnamese
-  toan_van: false
-- id: nguyen2025
-  ten: 'Nguyen, Do, Tran, Kilimann & Tran (2025), J Int Neuropsychol Soc 31(7–8), 573–581: toàn văn (PMC12752475)'
-  link: https://doi.org/10.1017/S1355617725101100
-  toan_van: true
-- id: bridges2020
-  ten: 'Bridges và cộng sự (2020), PeerJ 8, e9414: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.7717/peerj.9414
-  toan_van: false
-- id: bush1998
-  ten: 'Bush và cộng sự (1998), Hum Brain Mapp 6(4), 270–282: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1002/(SICI)1097-0193(1998)6:4<270::AID-HBM6>3.0.CO;2-0
-  toan_van: false
-- id: verhaeghen1998
-  ten: 'Verhaeghen & De Meersman (1998), Psychol Aging 13(1), 120–126: tóm tắt (OpenAlex; thêm khi review)'
-  link: https://doi.org/10.1037/0882-7974.13.1.120
-  toan_van: false
-- id: morikawa1990
-  ten: 'Morikawa & Hồ Hoàng Hoa (1990), Percept Mot Skills 71(1), 249–258: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.2466/pms.1990.71.1.249
-  toan_van: false
-- id: doan1999
-  ten: 'Doan & Swerdlow (1999), Percept Mot Skills 89(1), 173–182: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.2466/pms.1999.89.1.173
-  toan_van: false
+  - id: stroop1935
+    ten: 'Stroop (1935), J Exp Psychol 18(6), 643–662: toàn văn trên Classics in the History of Psychology'
+    link: https://psychclassics.yorku.ca/Stroop/
+    toan_van: true
+  - id: macleod1991
+    ten: 'MacLeod (1991), Psychol Bull 109(2), 163–203: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/0033-2909.109.2.163
+    toan_van: false
+  - id: augustinova2019
+    ten: 'Augustinova, Parris & Ferrand (2019), Front Psychol 10, 1786: toàn văn (Europe PMC, PMC6709679), Bảng 2'
+    link: https://doi.org/10.3389/fpsyg.2019.01786
+    toan_van: true
+  - id: hedge2018
+    ten: 'Hedge, Powell & Sumner (2018), Behav Res Methods 50(3), 1166–1186: toàn văn (PMC5990556), Bảng 1'
+    link: https://doi.org/10.3758/s13428-017-0935-1
+    toan_van: true
+  - id: simons2016
+    ten: 'Simons và cộng sự (2016), Psychol Sci Public Interest 17(3), 103–186: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1177/1529100616661983
+    toan_van: false
+  - id: mahidol2005
+    ten: 'Luận văn thạc sĩ "A comparison of Thai and Vietnamese color terms" (Mahidol University, 2005): trang mô tả; nguồn phụ, không bình duyệt'
+    link: https://repository.li.mahidol.ac.th/handle/123456789/107742
+    toan_van: false
+  - id: tim-stroop-vn
+    ten: 'Tìm ngày 16/11/2026 trên Europe PMC: "Stroop Vietnamese" (86 kết quả), "Stroop test Vietnam norms" (71): không thấy số liệu chuẩn Stroop bằng tiếng Việt trong 8 kết quả đầu mỗi truy vấn; bộ chuẩn tiếng Việt Nguyen và cộng sự (2025) không có Stroop'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Stroop%20Vietnamese
+    toan_van: false
+  - id: nguyen2025
+    ten: 'Nguyen, Do, Tran, Kilimann & Tran (2025), J Int Neuropsychol Soc 31(7–8), 573–581: toàn văn (PMC12752475)'
+    link: https://doi.org/10.1017/S1355617725101100
+    toan_van: true
+  - id: bridges2020
+    ten: 'Bridges và cộng sự (2020), PeerJ 8, e9414: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.7717/peerj.9414
+    toan_van: false
+  - id: bush1998
+    ten: 'Bush và cộng sự (1998), Hum Brain Mapp 6(4), 270–282: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1002/(SICI)1097-0193(1998)6:4<270::AID-HBM6>3.0.CO;2-0
+    toan_van: false
+  - id: verhaeghen1998
+    ten: 'Verhaeghen & De Meersman (1998), Psychol Aging 13(1), 120–126: tóm tắt (OpenAlex; thêm khi review)'
+    link: https://doi.org/10.1037/0882-7974.13.1.120
+    toan_van: false
+  - id: morikawa1990
+    ten: 'Morikawa & Hồ Hoàng Hoa (1990), Percept Mot Skills 71(1), 249–258: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.2466/pms.1990.71.1.249
+    toan_van: false
+  - id: doan1999
+    ten: 'Doan & Swerdlow (1999), Percept Mot Skills 89(1), 173–182: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.2466/pms.1999.89.1.173
+    toan_van: false
 nhan_dinh:
-- id: n1
-  cau: Với người đọc thạo, việc đọc một chữ gần như tự động; gọi tên màu sắc ít luyện tập hơn và chậm hơn.
-  loai: phat-hien
-  nguon:
-  - stroop1935
-  - macleod1991
-  trich: the difference in speed in reading names of colors and in naming colors may be satisfactorily accounted for by the difference in training in the two activities
-  vi_tri: Stroop 1935, Tóm tắt và kết luận (mục 2–3); MacLeod 1991, tóm tắt (thuyết tốc độ và tính tự động)
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-  - https://psychclassics.yorku.ca/Stroop/
-- id: n2
-  cau: Khi chữ và màu mực mâu thuẫn, câu trả lời tự động chen vào; kìm nó lại tốn thời gian và đôi khi thất bại, nên lượt không khớp chậm hơn và dễ sai hơn.
-  loai: phat-hien
-  nguon:
-  - stroop1935
-  - augustinova2019
-  trich: Fifty-nine percent of the group left an average of 2.6 errors uncorrected on the NCWd test (200 reactions) and 32 percent of the group left an average of 1.2 errors uncorrected on the NC test
-  vi_tri: Stroop 1935, Thí nghiệm 2; Augustinova 2019, Bảng 2 (chậm hơn ở mọi kiểu trả lời)
-  ket_qua: dung
-  ghi_chu: Cách giải thích "kìm phản ứng tự động" là cách diễn đạt phổ thông của thuyết tốc độ và tính tự động mà MacLeod 1991 tổng quan; trang nói rõ các cách giải thích còn tranh luận (mục Các lý thuyết).
-  luot_2: dung
-  luot_2_nguon:
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-- id: n3
-  cau: 'Stroop (1935), Thí nghiệm 1: 70 sinh viên; đọc chữ chỉ màu in mực màu khác chỉ chậm hơn khoảng 2,3 giây so với chữ in mực đen, khoảng 5,6%, và Stroop coi chênh lệch này là không đáng tin cậy.'
-  loai: so-lieu
-  nguon:
-  - stroop1935
-  trich: caused an increase of only 2.3 seconds or 5.6 percent over the normal time for reading the same words printed in black. This increase is not reliable.
-  vi_tri: Stroop 1935, Thí nghiệm 1 (Seventy college undergraduates) và Tóm tắt, mục 2
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://psychclassics.yorku.ca/Stroop/
-- id: n4
-  cau: 'Stroop (1935), Thí nghiệm 2: 100 sinh viên, mỗi thẻ 100 mục; gọi tên màu ô vuông mất trung bình 63,3 giây, màu mực của chữ chỉ màu khác 110,3 giây, chậm hơn khoảng 74%.'
-  loai: so-lieu
-  nguon:
-  - stroop1935
-  trich: The mean time for 100 responses is increased from 63.3 seconds to 110.3 seconds or an increase of 74 percent.
-  vi_tri: Stroop 1935, Thí nghiệm 2, kết quả
-  ket_qua: dung
-  ghi_chu: '100 người gồm 88 sinh viên đại học và 12 học viên sau đại học: "sinh viên" đúng. Cùng số dùng trong công cụ (NGHIEN_CUU.stroop1935 ở src/scripts/cong-cu/stroop.js; tests/cong-cu.test.mjs kiểm 74% khớp hai con số).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://psychclassics.yorku.ca/Stroop/
-  luot_2_ghi_chu: Mỗi thẻ 200 phản ứng, nhưng số trung bình tính theo 100 phản ứng; câu viết "mỗi thẻ 100 mục" khớp phần số liệu được báo cáo.
-- id: n5
-  cau: Chữ cản trở việc gọi tên màu rất mạnh, nhưng màu gần như không cản trở việc đọc chữ.
-  loai: phat-hien
-  nguon:
-  - stroop1935
-  trich: Since the presence of the color stimuli caused no reliable increase over the normal time for reading words ... and the presence of word stimuli caused a considerable increase over the normal time for naming colors
-  vi_tri: Stroop 1935, Tóm tắt, mục 2
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://psychclassics.yorku.ca/Stroop/
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-- id: n6
-  cau: Năm 1991, MacLeod tổng quan khoảng 400 nghiên cứu về hiệu ứng Stroop và rút ra 18 phát hiện lặp đi lặp lại mà mọi lý thuyết phải giải thích được.
-  loai: so-lieu
-  nguon:
-  - macleod1991
-  trich: covering over 50 years and some 400 studies ... a set of 18 reliable empirical findings is isolated that must be captured by any successful theory of the Stroop effect
-  vi_tri: MacLeod 1991, tóm tắt
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-- id: n7
-  cau: 'Trả lời bằng phím bấm cho hiệu ứng nhỏ hơn trả lời bằng lời: trong hai thí nghiệm năm 2019, mức cản trở (lượt không khớp so với lượt trung tính XXXX) khi bấm phím là 76 ms và 73 ms, khi nói to là 155 ms và 168 ms, khoảng gấp đôi.'
-  loai: so-lieu
-  nguon:
-  - augustinova2019
-  trich: Standard Stroop interference BLUE green – XXXX green RT diff. 76 < 155 ... 73 < 168
-  vi_tri: Augustinova 2019, Bảng 2 (Thí nghiệm 1 giữa người, Thí nghiệm 2 trong người)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "hiệu ứng đo bằng phím bấm là 76 ms và 73 ms". Chữ mới nói rõ thước đo là lượt không khớp so với lượt trung tính XXXX (Bảng 2: "Standard Stroop interference"), không phải không khớp trừ khớp như công cụ gọi "hiệu ứng Stroop". Công cụ (stroop.js) đổi theo: so với lượt không khớp trừ lượt trung tính của người dùng.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC6709679
-- id: n8
-  cau: 'Vững chắc: gọi tên màu mực chậm hơn khi chữ chỉ một màu khác; hiệu ứng có trong hàng trăm nghiên cứu với nhiều biến thể (MacLeod 1991), và một đợt tái lập ở nhiều phòng thí nghiệm (Many Labs 3) thấy hiệu ứng ở mọi lần thử; độ lớn phụ thuộc vào cách trả lời, số màu, tỉ lệ lượt, người tham gia.'
-  loai: nhan
-  nguon:
-  - macleod1991
-  - hedge2018
-  - augustinova2019
-  trich: the Stroop effect was replicated in 100% of attempts, compared to much lower rates for most effects tested
-  vi_tri: Hedge 2018, Giới thiệu (kể lại Many Labs 3, Ebersole và cộng sự 2016); MacLeod 1991, tóm tắt (khoảng 400 nghiên cứu)
-  nhan: vung-chac
-  co_so:
-  - macleod1991
-  - hedge2018
-  - augustinova2019
-  - morikawa1990
-  - doan1999
-  - verhaeghen1998
-  ly_do: Phân tích tổng hợp 20 nghiên cứu so người trẻ và người già, hiệu ứng cản trở rất lớn ở cả hai nhóm (d = 2,04 và 2,17; Verhaeghen & De Meersman 1998); tổng quan khoảng 400 nghiên cứu trong 50 năm (MacLeod 1991, Psychol Bull, bậc 2); tái lập nhiều phòng thí nghiệm Many Labs 3 thành công 100% (theo Hedge 2018 kể lại); hiệu ứng có ở cả trả lời bằng phím và bằng lời (Augustinova 2019). Độ lớn tùy cách trả lời (Augustinova 2019).
-  ket_qua: da-lam-mem
-  luot_2: dung
-  luot_2_nguon:
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-  - https://gwern.net/doc/statistics/bias/2020-olssoncollentine.pdf
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
-  luot_2_ghi_chu: 'chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hay hai tái lập lớn có đăng ký trước. Tôi không tìm thấy phân tích tổng hợp riêng cho hiệu ứng Stroop cơ bản; căn cứ là tổng quan tường thuật của MacLeod (khoảng 400 nghiên cứu) cộng một tái lập lớn có đăng ký trước (Many Labs 3, 21 mẫu). Giữ Vững chắc vì hiệu ứng cơ bản bền ở mọi bối cảnh đã thử, nhưng người giao nên xem lại; cụm "một trong những phát hiện được tái lập nhiều nhất" không có nguồn đếm trực tiếp, nên bỏ hoặc làm mềm.'
-  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 dung kèm chỗ khó. Giữ Vững chắc: tổng quan khoảng 400 nghiên cứu (MacLeod 1991) cộng một tái lập lớn có đăng ký trước nhiều phòng thí nghiệm (Many Labs 3: hiệu ứng ở mọi mẫu, theo Hedge 2018 và Olsson-Collentine 2020 lượt 2 dẫn), có ở nhiều ngôn ngữ kể cả tiếng Việt (Morikawa & Hồ Hoàng Hoa 1990; Doan & Swerdlow 1999): đạt "đúng ở nhiều quần thể", không có thất bại tái lập. Chỉ có một tái lập lớn thay vì hai, nhưng tổng quan bậc 2 bù lại. Bỏ cụm "một trong những phát hiện được tái lập nhiều nhất" (không có nguồn đếm) theo lượt 2; câu mới viết khác cau_dung: review xem. review: đạt (Claude Opus 5.5, 17/11/2026). Câu trên trang khớp cau; mọi vế có nguồn (MacLeod tóm tắt: khoảng 400 nghiên cứu; Many Labs 3 theo Hedge 2018; độ lớn tùy cách trả lời: Augustinova 2019). Câu mới chỉ bỏ cụm không có nguồn, không mạnh hơn cau_dung của lượt 2. Thước đo mục 4 nói rõ cần phân tích tổng hợp hay hai tái lập lớn: thêm vào co_so phân tích tổng hợp Verhaeghen & De Meersman 1998 (20 nghiên cứu, tóm tắt OpenAlex: d = 2,04 ở người trẻ, 2,17 ở người già), nên nhãn Vững chắc đạt đúng chữ của thước đo, không chỉ "tinh thần".'
-- id: n9
-  cau: 'Điểm Stroop của một người không ổn định lắm: trong một nghiên cứu, độ tin cậy giữa hai lần đo cách nhau 3 tuần khoảng 0,6–0,7, dưới mức 0,8 thường được coi là cần khi đánh giá từng người; các tác giả gọi đây là "nghịch lý độ tin cậy".'
-  loai: so-lieu
-  nguon:
-  - hedge2018
-  trich: the Stroop RT cost (ICCs of .6 and .66 in Studies 1 and 2 respectively) ... reliabilities of .8, typically considered excellent or of a clinically required standard
-  vi_tri: Hedge 2018, Kết quả và Bảng 1; hai buổi cách nhau 3 tuần (Phương pháp)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chỉ khoảng 0,6–0,7". Chữ mới bỏ "chỉ" và nêu mốc 0,8 mà tác giả dẫn: theo quy ước, .6 được xếp "tốt", nên "chỉ" làm câu mạnh hơn nguồn. "Nghịch lý độ tin cậy" là tên bài (The reliability paradox).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
-- id: n10
-  cau: 'Đang tranh cãi: dùng hiệu ứng Stroop để đo "khả năng tự kiểm soát" của từng người; nhiệm vụ cho hiệu ứng nhóm càng chắc chắn thì thường càng kém trong việc phân biệt người này với người kia.'
-  loai: nhan
-  nguon:
-  - hedge2018
-  trich: the very reason such tasks produce robust and easily replicable experimental effects - low between-participant variability - makes their use as correlational tools problematic
-  vi_tri: Hedge 2018, tóm tắt
-  nhan: tranh-cai
-  co_so:
-  - hedge2018
-  ly_do: Hedge 2018 (ba nghiên cứu, bảy nhiệm vụ) cho thấy độ tin cậy cá nhân thấp tới vừa dù hiệu ứng nhóm rất vững; việc dùng các nhiệm vụ này làm thước đo khác biệt cá nhân bị đặt câu hỏi.
-  ket_qua: dung
-  ghi_chu: 'chỗ khó: nhãn tranh-cai cho cách dùng (đo cá nhân), không cho hiệu ứng; chỉ một nguồn chính (Hedge 2018), ICC .60–.66 theo quy ước là "tốt". Lượt 2 (Opus) xét thước đo nhãn mục 4: có bằng chứng mâu thuẫn chất lượng cao không, hay nên là khá vững cho câu "điểm một người kém ổn định".'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
-- id: n11
-  cau: 'Các cách giải thích: tốc độ xử lý (đọc nhanh hơn gọi tên màu), tính tự động (đọc đã thành tự động), và mô hình mạng nơ-ron coi đọc và gọi tên màu là hai con đường cạnh tranh, chú ý tăng sức cho con đường đúng; các cách không loại trừ nhau, tranh luận về chi tiết vẫn tiếp tục.'
-  loai: dinh-nghia
-  nguon:
-  - macleod1991
-  trich: the 2 major candidate theories—relative speed of processing and automaticity of reading—are found to be wanting. It is concluded that recent theories placing the explanatory weight on parallel processing of the irrelevant and the relevant dimensions are likely to be more successful
-  vi_tri: MacLeod 1991, tóm tắt
-  ket_qua: dung
-  ghi_chu: Trang không nói thuyết nào đúng; MacLeod thấy hai thuyết chính "chưa đủ" và nghiêng về thuyết xử lý song song (gồm mô hình mạng). Khớp "tranh luận về chi tiết vẫn tiếp tục".
-  luot_2: dung
-  luot_2_nguon:
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC6709679
-  luot_2_ghi_chu: Câu đã nói thận trọng ("không loại trừ nhau, tranh luận tiếp tục").
-- id: n12
-  cau: Kỹ năng đã thành thạo chạy tự động và có thể chen vào khi ta cần làm điều khác; kìm một phản ứng tự động tốn thời gian và công sức, ngay cả trong nhiệm vụ đơn giản.
-  loai: phat-hien
-  nguon:
-  - stroop1935
-  - macleod1991
-  trich: The mean time for 100 responses is increased from 63.3 seconds to 110.3 seconds
-  vi_tri: Stroop 1935, Thí nghiệm 2; MacLeod 1991
-  ket_qua: dung
-  ghi_chu: Bài học rút ra trực tiếp từ hiệu ứng (đọc thạo chen vào gọi tên màu); ví dụ lái xe theo lộ trình quen là minh họa (gia-dinh).
-  luot_2: dung
-  luot_2_nguon:
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-  luot_2_ghi_chu: Nói chung đúng; lưu ý MacLeod cho rằng "tự động" một mình chưa đủ giải thích Stroop, nhưng câu không khẳng định điều ấy.
-- id: n13
-  cau: Có rất ít bằng chứng rằng luyện tập các bài nhận thức như Stroop giúp làm tốt hơn những việc khác xa bài đã luyện, hay giúp ích cho việc dùng trí óc hằng ngày.
-  loai: loi-khuyen
-  nguon:
-  - simons2016
-  trich: little evidence that training enhances performance on distantly related tasks or that training improves everyday cognitive performance
-  vi_tri: Simons và cộng sự 2016, tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Không có bằng chứng rằng luyện tập nhiệm vụ Stroop giúp tăng trí thông minh hay khả năng tập trung nói chung." Chữ mới theo đúng mức của tổng quan Simons 2016 ("little evidence"), thêm nguồn.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1177/1529100616661983
-- id: s1
-  cau: Công cụ dùng chữ tiếng Việt; site chỉ dùng màu xanh dương và tránh xanh lá; bộ màu ĐỎ, VÀNG, XANH, TRẮNG trên nền tối.
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/stroop.js (BO_MAU: ĐỎ #ff5a52, VÀNG #ffd21f, XANH #5c9dff, TRẮNG #f4f4f4; nền --pz-stage-bg #17171f ở src/styles/thanh-phan.css), 16/11/2026. Ý "được chọn để các màu khác nhau rõ về độ sáng" là lý do thiết kế của site cũ, không đo. Review (17/11/2026): BO_MAU và --pz-stage-bg khớp; không có màu xanh lá trong bộ màu của Stroop.'
-  review: dung
-- id: n14
-  cau: Trong tiếng Việt, "xanh" có thể là xanh lá hay xanh dương.
-  loai: dinh-nghia
-  nguon:
-  - mahidol2005
-  vi_tri: Luận văn so sánh từ chỉ màu tiếng Thái và tiếng Việt (trang mô tả)
-  ket_qua: dung
-  ghi_chu: 'chưa chắc: chỉ có nguồn phụ (luận văn thạc sĩ, các trang dạy tiếng); là hiểu biết phổ thông của người nói tiếng Việt. Lượt 2 tìm nguồn ngôn ngữ học có bình duyệt (World Color Survey, từ điển).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://en.wiktionary.org/wiki/xanh
-  luot_2_ghi_chu: Chỉ có nguồn bậc 3 cho định nghĩa từ vựng; điều này hiển nhiên với người Việt, đủ cho một câu định nghĩa.
-- id: n15
-  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) cho bài Stroop tiếng Việt ở người lớn; mới có vài nghiên cứu Stroop tiếng Việt cỡ nhỏ, như so sánh chữ Quốc ngữ, chữ Nôm và chữ Hán (1990) hay 30 người Mỹ gốc Việt (1999).
-  loai: thoi-su
-  nguon:
-  - tim-stroop-vn
-  - nguyen2025
-  - morikawa1990
-  - doan1999
-  trich: Neuropsychological tests were administered in a paper-and-pencil format, including the CERAD Word List, Trail Making Tests, Digit Span, Animal Naming, and Clock Drawing Test.
-  vi_tri: Nguyen 2025, tóm tắt (bộ chuẩn tiếng Việt không có Stroop); kết quả tìm Europe PMC 16/11/2026
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ không có mốc thời gian; thêm "Tính đến 11/2026". Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: đã mở tóm tắt Morikawa & Hồ Hoàng Hoa 1990 (Quốc ngữ, chữ Nôm, chữ Hán) và Doan & Swerdlow 1999 (30 người Mỹ gốc Việt so 30 người nói tiếng Anh). Câu hẹp lại thành "bộ số liệu chuẩn theo tuổi, học vấn cho người lớn" và nêu hai nghiên cứu ấy; bỏ nghiên cứu 2019 lượt 2 nêu vì không mở được. Viết khác cau_dung: review xem. review: đạt (Claude Opus 5.5, 17/11/2026). Đã mở tóm tắt (OpenAlex): Morikawa & Ho Hoang Hoa 1990 dùng chữ Quốc ngữ, chữ Nôm và chữ Hán (so thêm với tiếng Nhật, Hàn); Doan & Swerdlow 1999 so 30 người Mỹ gốc Việt nói tiếng Việt là tiếng mẹ đẻ với 30 người nói tiếng Anh, gọi là "kết quả sơ bộ", không phải bộ chuẩn. Câu trên trang giữ phạm vi "bộ số liệu chuẩn (theo tuổi, học vấn) … ở người lớn" như cau_dung; bỏ nghiên cứu 2019 (học sinh lớp 1) không mở được là hẹp hơn, không làm câu sai (câu viết "như", không liệt kê đủ).'
-  luot_2: qua-manh
-  luot_2_nguon:
-  - https://doi.org/10.2466/pms.1999.89.1.173
-  - https://doi.org/10.2466/pms.1990.71.1.249
-  luot_2_ghi_chu: 'câu đúng: Tính đến 11/2026, chúng tôi chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) được công bố cho bài Stroop tiếng Việt ở người lớn; chỉ có một số nghiên cứu Stroop tiếng Việt cỡ nhỏ (1990, 1999 với 30 người Mỹ gốc Việt, 2019 với học sinh lớp 1).; Câu "chưa tìm thấy số liệu chuẩn" có thể đúng với số liệu chuẩn theo tuổi/học vấn cho người lớn, nhưng đã có nghiên cứu Stroop tiếng Việt cỡ nhỏ; không mở được nội dung bài 2019. Câu cần nêu rõ phạm vi "số liệu chuẩn theo tuổi" để không bị hiểu là chưa có nghiên cứu nào.'
-- id: n16
-  cau: Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ chữ viết.
-  loai: phat-hien
-  nguon:
-  - macleod1991
-  - morikawa1990
-  - doan1999
-  vi_tri: MacLeod 1991 (tổng quan 400 nghiên cứu, có mục về ngôn ngữ và song ngữ trong toàn văn; tóm tắt không nói)
-  ket_qua: dung
-  ghi_chu: 'chưa chắc: tóm tắt MacLeod không nêu ngôn ngữ; lượt 2 mở toàn văn hay nguồn khác (nghiên cứu Stroop song ngữ, chữ Hán). Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): hết chưa chắc: có cả nghiên cứu Stroop tiếng Việt (Morikawa & Hồ Hoàng Hoa 1990: Quốc ngữ, chữ Nôm, chữ Hán; Doan & Swerdlow 1999).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
-- id: s2
-  cau: 'Cách công cụ hoạt động: 8 lượt khởi động, rồi 2 phần × 36 lượt (12 khớp, 12 không khớp, 12 trung tính ####), không hai lượt liền cùng màu mực; dấu + 500 ms, màn trống 300–700 ms, kích thích tới khi trả lời hay hết 3 giây; thời điểm hiện lấy bằng requestAnimationFrame, thời điểm trả lời từ dấu thời gian của sự kiện; bỏ lượt khởi động, sai, hết giờ, ngoài 200–2.500 ms; dùng trung vị; hiệu ứng = trung vị không khớp − trung vị khớp; phiên bản đếm hiện ví dụ "3 3", trả lời số ký tự.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/stroop.js (cauHinh, khoiStroop, hopLeStroop, tomTatStroop, luotSau, traLoi), 16/11/2026; tests/cong-cu.test.mjs kiểm cấu hình mặc định, ràng buộc thứ tự và cách tính; tests/trinh-duyet/kiem-cong-cu.mjs chạy trọn 8 + 72 lượt. Review (17/11/2026): đọc lại stroop.js: cauHinh (moiDk 12, soPhan 2, khoiDong 8, dauCong 500, trong 300–700, hetGio 3000), hopVoi (không hai lượt liền cùng màu mực), RT_MIN 200, RT_MAX 2500, tomTatStroop (bỏ lượt khởi động, sai, hết giờ, ngoài khoảng; effect = trung vị không khớp − khớp), hai lần requestAnimationFrame, event.timeStamp. Khớp.'
-  review: dung
-- id: n17
-  cau: Màn hình, bàn phím và màn cảm ứng đều có độ trễ, khác nhau giữa các thiết bị và trình duyệt; nếu độ trễ gần như như nhau ở mọi lượt, phép trừ giữa hai điều kiện ít bị ảnh hưởng hơn từng con số riêng lẻ.
-  loai: phat-hien
-  nguon:
-  - bridges2020
-  trich: Online studies did not deliver the same level of precision as lab-based systems, with slightly more variability in all measurements.
-  vi_tri: Bridges 2020, tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "thường vài chục mili giây" và "Vì độ trễ này gần như như nhau ở mọi lượt". Chữ mới bỏ con số (tóm tắt Bridges không cho) và đổi thành điều kiện "nếu". Câu cùng ý trong công cụ (stroop.js, khối "Vì sao con số của bạn khó giống…") sửa theo.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC7512138
-  luot_2_ghi_chu: Sai số thay đổi giữa các lượt (jitter) thì không triệt tiêu; câu chỉ nói về độ trễ gần như đều nên đúng.
-- id: n18
-  cau: Phiên bản đếm dựa trên ý tưởng "Stroop đếm", tạo cùng loại xung đột giữa phản ứng tự động (đọc chữ số) và nhiệm vụ (đếm) mà không dùng màu.
-  loai: cong-cu
-  nguon:
-  - bush1998
-  trich: subjects report by button-press the number of words (1-4) on the screen, regardless of word meaning. Interference trials contain number words that are incongruent with the correct response
-  vi_tri: Bush 1998, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: Thêm nguồn cho "Stroop đếm" (bản gốc đếm từ chỉ số; công cụ đếm chữ số, cùng ý).
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC6873370
-- id: n20
-  cau: 'Câu hỏi 4, lời giải thích: một cách giải thích vì sao trả lời bằng lời cho hiệu ứng lớn hơn là câu trả lời sai và đúng cạnh tranh trên cùng một kênh lời nói; đây là một lý do không nên so thẳng kết quả bấm phím với con số 74% của Stroop (1935).'
-  loai: phat-hien
-  nguon:
-  - augustinova2019
-  trich: Response Conflict BLUE green – SKY green RT diff. 44 < 78 … 50 < 101
-  vi_tri: Augustinova 2019, Bảng 2 (xung đột đáp án lớn hơn khi trả lời bằng lời) và Thảo luận
-  ket_qua: dung
-  ghi_chu: 'chưa chắc: Augustinova thấy phần "xung đột đáp án" và "xung đột nhiệm vụ" lớn hơn khi nói, khớp ý "cạnh tranh ở khâu trả lời"; cách nói "cùng một kênh lời nói" là diễn giải của trang (câu đã ghi "một cách giải thích"). Lượt 2 đọc Thảo luận của bài.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC6709679
-  luot_2_ghi_chu: Câu viết "một cách giải thích", đúng; so thẳng với 74% của Stroop (1935) không nên vì khác thiết kế (nền so sánh khác, nói to).
-- id: s3
-  cau: 'Công cụ, phần so sánh: dẫn Stroop (1935) Thí nghiệm 2 (100 sinh viên, 100 mục, 63,3 và 110,3 giây, 74%) và Augustinova 2019 (76 và 73 ms bấm phím, 155 và 168 ms nói to); lượt không khớp của người dùng so với lượt trung tính tính bằng % và ms; "khoảng 24 lượt mỗi điều kiện".'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/stroop.js (NGHIEN_CUU, ketQua), 16/11/2026: các con số lấy từ hằng NGHIEN_CUU, trùng n4, n7; 24 = 2 phần × 12. Con số nghiên cứu kiểm ở n4, n7. Review (17/11/2026): NGHIEN_CUU.stroop1935 {100, 100, 63,3, 110,3, 74} khớp n4; augustinova2019 {phim 76, 73; loi 155, 168} khớp n7; ketQua dùng interferencePct (không khớp so với trung tính) và hiệu ms không khớp − trung tính; "khoảng ${soPhan × moiDk}" = 24.'
-  review: dung
-- id: n19
-  cau: Trung vị phản ánh lượt điển hình tốt hơn trung bình vì thời gian phản ứng có đuôi dài về phía chậm.
-  loai: dinh-nghia
-  nguon:
-  - stroop1935
-  trich: (The medians on the two tests are 61.9 and 110.4 seconds respectively.)
-  vi_tri: Stroop 1935 (báo cả trung vị); lời giải thích câu hỏi 2
-  ket_qua: dung
-  ghi_chu: 'chưa chắc: Stroop chỉ báo trung vị, không bàn đuôi phân phối. Đây là kiến thức thống kê phổ thông (phân phối thời gian phản ứng lệch phải); lượt 2 thêm nguồn phương pháp (ví dụ Whelan 2008, Ratcliff 1993).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1098/rsos.190831
-  luot_2_ghi_chu: Nguồn bậc 2 nói phân bố RT lệch; ưu điểm của trung vị là kiến thức thống kê chuẩn.
+  - id: n1
+    cau: Với người đọc thạo, việc đọc một chữ gần như tự động; gọi tên màu sắc ít luyện tập hơn và chậm hơn.
+    loai: phat-hien
+    nguon:
+      - stroop1935
+      - macleod1991
+    trich: the difference in speed in reading names of colors and in naming colors may be satisfactorily accounted for by the difference in training in the two activities
+    vi_tri: Stroop 1935, Tóm tắt và kết luận (mục 2–3); MacLeod 1991, tóm tắt (thuyết tốc độ và tính tự động)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+      - https://psychclassics.yorku.ca/Stroop/
+  - id: n2
+    cau: Khi chữ và màu mực mâu thuẫn, câu trả lời tự động chen vào; kìm nó lại tốn thời gian và đôi khi thất bại, nên lượt không khớp chậm hơn và dễ sai hơn.
+    loai: phat-hien
+    nguon:
+      - stroop1935
+      - augustinova2019
+    trich: Fifty-nine percent of the group left an average of 2.6 errors uncorrected on the NCWd test (200 reactions) and 32 percent of the group left an average of 1.2 errors uncorrected on the NC test
+    vi_tri: Stroop 1935, Thí nghiệm 2; Augustinova 2019, Bảng 2 (chậm hơn ở mọi kiểu trả lời)
+    ket_qua: dung
+    ghi_chu: Cách giải thích "kìm phản ứng tự động" là cách diễn đạt phổ thông của thuyết tốc độ và tính tự động mà MacLeod 1991 tổng quan; trang nói rõ các cách giải thích còn tranh luận (mục Các lý thuyết).
+    luot_2: dung
+    luot_2_nguon:
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+  - id: n3
+    cau: 'Stroop (1935), Thí nghiệm 1: 70 sinh viên; đọc chữ chỉ màu in mực màu khác chỉ chậm hơn khoảng 2,3 giây so với chữ in mực đen, khoảng 5,6%, và Stroop coi chênh lệch này là không đáng tin cậy.'
+    loai: so-lieu
+    nguon:
+      - stroop1935
+    trich: caused an increase of only 2.3 seconds or 5.6 percent over the normal time for reading the same words printed in black. This increase is not reliable.
+    vi_tri: Stroop 1935, Thí nghiệm 1 (Seventy college undergraduates) và Tóm tắt, mục 2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://psychclassics.yorku.ca/Stroop/
+  - id: n4
+    cau: 'Stroop (1935), Thí nghiệm 2: 100 sinh viên, mỗi thẻ 100 mục; gọi tên màu ô vuông mất trung bình 63,3 giây, màu mực của chữ chỉ màu khác 110,3 giây, chậm hơn khoảng 74%.'
+    loai: so-lieu
+    nguon:
+      - stroop1935
+    trich: The mean time for 100 responses is increased from 63.3 seconds to 110.3 seconds or an increase of 74 percent.
+    vi_tri: Stroop 1935, Thí nghiệm 2, kết quả
+    ket_qua: dung
+    ghi_chu: '100 người gồm 88 sinh viên đại học và 12 học viên sau đại học: "sinh viên" đúng. Cùng số dùng trong công cụ (NGHIEN_CUU.stroop1935 ở src/scripts/cong-cu/stroop.js; tests/cong-cu.test.mjs kiểm 74% khớp hai con số).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://psychclassics.yorku.ca/Stroop/
+    luot_2_ghi_chu: Mỗi thẻ 200 phản ứng, nhưng số trung bình tính theo 100 phản ứng; câu viết "mỗi thẻ 100 mục" khớp phần số liệu được báo cáo.
+  - id: n5
+    cau: Chữ cản trở việc gọi tên màu rất mạnh, nhưng màu gần như không cản trở việc đọc chữ.
+    loai: phat-hien
+    nguon:
+      - stroop1935
+    trich: Since the presence of the color stimuli caused no reliable increase over the normal time for reading words ... and the presence of word stimuli caused a considerable increase over the normal time for naming colors
+    vi_tri: Stroop 1935, Tóm tắt, mục 2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://psychclassics.yorku.ca/Stroop/
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+  - id: n6
+    cau: Năm 1991, MacLeod tổng quan khoảng 400 nghiên cứu về hiệu ứng Stroop và rút ra 18 phát hiện lặp đi lặp lại mà mọi lý thuyết phải giải thích được.
+    loai: so-lieu
+    nguon:
+      - macleod1991
+    trich: covering over 50 years and some 400 studies ... a set of 18 reliable empirical findings is isolated that must be captured by any successful theory of the Stroop effect
+    vi_tri: MacLeod 1991, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+  - id: n7
+    cau: 'Trả lời bằng phím bấm cho hiệu ứng nhỏ hơn trả lời bằng lời: trong hai thí nghiệm năm 2019, mức cản trở (lượt không khớp so với lượt trung tính XXXX) khi bấm phím là 76 ms và 73 ms, khi nói to là 155 ms và 168 ms, khoảng gấp đôi.'
+    loai: so-lieu
+    nguon:
+      - augustinova2019
+    trich: Standard Stroop interference BLUE green – XXXX green RT diff. 76 < 155 ... 73 < 168
+    vi_tri: Augustinova 2019, Bảng 2 (Thí nghiệm 1 giữa người, Thí nghiệm 2 trong người)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "hiệu ứng đo bằng phím bấm là 76 ms và 73 ms". Chữ mới nói rõ thước đo là lượt không khớp so với lượt trung tính XXXX (Bảng 2: "Standard Stroop interference"), không phải không khớp trừ khớp như công cụ gọi "hiệu ứng Stroop". Công cụ (stroop.js) đổi theo: so với lượt không khớp trừ lượt trung tính của người dùng.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6709679
+  - id: n8
+    cau: 'Vững chắc: gọi tên màu mực chậm hơn khi chữ chỉ một màu khác; hiệu ứng có trong hàng trăm nghiên cứu với nhiều biến thể (MacLeod 1991), và một đợt tái lập ở nhiều phòng thí nghiệm (Many Labs 3) thấy hiệu ứng ở mọi lần thử; độ lớn phụ thuộc vào cách trả lời, số màu, tỉ lệ lượt, người tham gia.'
+    loai: nhan
+    nguon:
+      - macleod1991
+      - hedge2018
+      - augustinova2019
+    trich: the Stroop effect was replicated in 100% of attempts, compared to much lower rates for most effects tested
+    vi_tri: Hedge 2018, Giới thiệu (kể lại Many Labs 3, Ebersole và cộng sự 2016); MacLeod 1991, tóm tắt (khoảng 400 nghiên cứu)
+    nhan: vung-chac
+    co_so:
+      - macleod1991
+      - hedge2018
+      - augustinova2019
+      - morikawa1990
+      - doan1999
+      - verhaeghen1998
+    ly_do: Phân tích tổng hợp 20 nghiên cứu so người trẻ và người già, hiệu ứng cản trở rất lớn ở cả hai nhóm (d = 2,04 và 2,17; Verhaeghen & De Meersman 1998); tổng quan khoảng 400 nghiên cứu trong 50 năm (MacLeod 1991, Psychol Bull, bậc 2); tái lập nhiều phòng thí nghiệm Many Labs 3 thành công 100% (theo Hedge 2018 kể lại); hiệu ứng có ở cả trả lời bằng phím và bằng lời (Augustinova 2019). Độ lớn tùy cách trả lời (Augustinova 2019).
+    ket_qua: da-lam-mem
+    luot_2: dung
+    luot_2_nguon:
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+      - https://gwern.net/doc/statistics/bias/2020-olssoncollentine.pdf
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
+    luot_2_ghi_chu: 'chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hay hai tái lập lớn có đăng ký trước. Tôi không tìm thấy phân tích tổng hợp riêng cho hiệu ứng Stroop cơ bản; căn cứ là tổng quan tường thuật của MacLeod (khoảng 400 nghiên cứu) cộng một tái lập lớn có đăng ký trước (Many Labs 3, 21 mẫu). Giữ Vững chắc vì hiệu ứng cơ bản bền ở mọi bối cảnh đã thử, nhưng người giao nên xem lại; cụm "một trong những phát hiện được tái lập nhiều nhất" không có nguồn đếm trực tiếp, nên bỏ hoặc làm mềm.'
+    ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 dung kèm chỗ khó. Giữ Vững chắc: tổng quan khoảng 400 nghiên cứu (MacLeod 1991) cộng một tái lập lớn có đăng ký trước nhiều phòng thí nghiệm (Many Labs 3: hiệu ứng ở mọi mẫu, theo Hedge 2018 và Olsson-Collentine 2020 lượt 2 dẫn), có ở nhiều ngôn ngữ kể cả tiếng Việt (Morikawa & Hồ Hoàng Hoa 1990; Doan & Swerdlow 1999): đạt "đúng ở nhiều quần thể", không có thất bại tái lập. Chỉ có một tái lập lớn thay vì hai, nhưng tổng quan bậc 2 bù lại. Bỏ cụm "một trong những phát hiện được tái lập nhiều nhất" (không có nguồn đếm) theo lượt 2; câu mới viết khác cau_dung: review xem. review: đạt (Claude Opus 5.5, 17/11/2026). Câu trên trang khớp cau; mọi vế có nguồn (MacLeod tóm tắt: khoảng 400 nghiên cứu; Many Labs 3 theo Hedge 2018; độ lớn tùy cách trả lời: Augustinova 2019). Câu mới chỉ bỏ cụm không có nguồn, không mạnh hơn cau_dung của lượt 2. Thước đo mục 4 nói rõ cần phân tích tổng hợp hay hai tái lập lớn: thêm vào co_so phân tích tổng hợp Verhaeghen & De Meersman 1998 (20 nghiên cứu, tóm tắt OpenAlex: d = 2,04 ở người trẻ, 2,17 ở người già), nên nhãn Vững chắc đạt đúng chữ của thước đo, không chỉ "tinh thần".'
+  - id: n9
+    cau: 'Điểm Stroop của một người không ổn định lắm: trong một nghiên cứu, độ tin cậy giữa hai lần đo cách nhau 3 tuần khoảng 0,6–0,7, dưới mức 0,8 thường được coi là cần khi đánh giá từng người; các tác giả gọi đây là "nghịch lý độ tin cậy".'
+    loai: so-lieu
+    nguon:
+      - hedge2018
+    trich: the Stroop RT cost (ICCs of .6 and .66 in Studies 1 and 2 respectively) ... reliabilities of .8, typically considered excellent or of a clinically required standard
+    vi_tri: Hedge 2018, Kết quả và Bảng 1; hai buổi cách nhau 3 tuần (Phương pháp)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chỉ khoảng 0,6–0,7". Chữ mới bỏ "chỉ" và nêu mốc 0,8 mà tác giả dẫn: theo quy ước, .6 được xếp "tốt", nên "chỉ" làm câu mạnh hơn nguồn. "Nghịch lý độ tin cậy" là tên bài (The reliability paradox).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
+  - id: n10
+    cau: 'Đang tranh cãi: dùng hiệu ứng Stroop để đo "khả năng tự kiểm soát" của từng người; nhiệm vụ cho hiệu ứng nhóm càng chắc chắn thì thường càng kém trong việc phân biệt người này với người kia.'
+    loai: nhan
+    nguon:
+      - hedge2018
+    trich: the very reason such tasks produce robust and easily replicable experimental effects - low between-participant variability - makes their use as correlational tools problematic
+    vi_tri: Hedge 2018, tóm tắt
+    nhan: tranh-cai
+    co_so:
+      - hedge2018
+    ly_do: Hedge 2018 (ba nghiên cứu, bảy nhiệm vụ) cho thấy độ tin cậy cá nhân thấp tới vừa dù hiệu ứng nhóm rất vững; việc dùng các nhiệm vụ này làm thước đo khác biệt cá nhân bị đặt câu hỏi.
+    ket_qua: dung
+    ghi_chu: 'chỗ khó: nhãn tranh-cai cho cách dùng (đo cá nhân), không cho hiệu ứng; chỉ một nguồn chính (Hedge 2018), ICC .60–.66 theo quy ước là "tốt". Lượt 2 (Opus) xét thước đo nhãn mục 4: có bằng chứng mâu thuẫn chất lượng cao không, hay nên là khá vững cho câu "điểm một người kém ổn định".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
+  - id: n11
+    cau: 'Các cách giải thích: tốc độ xử lý (đọc nhanh hơn gọi tên màu), tính tự động (đọc đã thành tự động), và mô hình mạng nơ-ron coi đọc và gọi tên màu là hai con đường cạnh tranh, chú ý tăng sức cho con đường đúng; các cách không loại trừ nhau, tranh luận về chi tiết vẫn tiếp tục.'
+    loai: dinh-nghia
+    nguon:
+      - macleod1991
+    trich: the 2 major candidate theories—relative speed of processing and automaticity of reading—are found to be wanting. It is concluded that recent theories placing the explanatory weight on parallel processing of the irrelevant and the relevant dimensions are likely to be more successful
+    vi_tri: MacLeod 1991, tóm tắt
+    ket_qua: dung
+    ghi_chu: Trang không nói thuyết nào đúng; MacLeod thấy hai thuyết chính "chưa đủ" và nghiêng về thuyết xử lý song song (gồm mô hình mạng). Khớp "tranh luận về chi tiết vẫn tiếp tục".
+    luot_2: dung
+    luot_2_nguon:
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6709679
+    luot_2_ghi_chu: Câu đã nói thận trọng ("không loại trừ nhau, tranh luận tiếp tục").
+  - id: n12
+    cau: Kỹ năng đã thành thạo chạy tự động và có thể chen vào khi ta cần làm điều khác; kìm một phản ứng tự động tốn thời gian và công sức, ngay cả trong nhiệm vụ đơn giản.
+    loai: phat-hien
+    nguon:
+      - stroop1935
+      - macleod1991
+    trich: The mean time for 100 responses is increased from 63.3 seconds to 110.3 seconds
+    vi_tri: Stroop 1935, Thí nghiệm 2; MacLeod 1991
+    ket_qua: dung
+    ghi_chu: Bài học rút ra trực tiếp từ hiệu ứng (đọc thạo chen vào gọi tên màu); ví dụ lái xe theo lộ trình quen là minh họa (gia-dinh).
+    luot_2: dung
+    luot_2_nguon:
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+    luot_2_ghi_chu: Nói chung đúng; lưu ý MacLeod cho rằng "tự động" một mình chưa đủ giải thích Stroop, nhưng câu không khẳng định điều ấy.
+  - id: n13
+    cau: Có rất ít bằng chứng rằng luyện tập các bài nhận thức như Stroop giúp làm tốt hơn những việc khác xa bài đã luyện, hay giúp ích cho việc dùng trí óc hằng ngày.
+    loai: loi-khuyen
+    nguon:
+      - simons2016
+    trich: little evidence that training enhances performance on distantly related tasks or that training improves everyday cognitive performance
+    vi_tri: Simons và cộng sự 2016, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Không có bằng chứng rằng luyện tập nhiệm vụ Stroop giúp tăng trí thông minh hay khả năng tập trung nói chung." Chữ mới theo đúng mức của tổng quan Simons 2016 ("little evidence"), thêm nguồn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1177/1529100616661983
+  - id: s1
+    cau: Công cụ dùng chữ tiếng Việt; site chỉ dùng màu xanh dương và tránh xanh lá; bộ màu ĐỎ, VÀNG, XANH, TRẮNG trên nền tối.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/stroop.js (BO_MAU: ĐỎ #ff5a52, VÀNG #ffd21f, XANH #5c9dff, TRẮNG #f4f4f4; nền --pz-stage-bg #17171f ở src/styles/thanh-phan.css), 16/11/2026. Ý "được chọn để các màu khác nhau rõ về độ sáng" là lý do thiết kế của site cũ, không đo. Review (17/11/2026): BO_MAU và --pz-stage-bg khớp; không có màu xanh lá trong bộ màu của Stroop.'
+    review: dung
+  - id: n14
+    cau: Trong tiếng Việt, "xanh" có thể là xanh lá hay xanh dương.
+    loai: dinh-nghia
+    nguon:
+      - mahidol2005
+    vi_tri: Luận văn so sánh từ chỉ màu tiếng Thái và tiếng Việt (trang mô tả)
+    ket_qua: dung
+    ghi_chu: 'chưa chắc: chỉ có nguồn phụ (luận văn thạc sĩ, các trang dạy tiếng); là hiểu biết phổ thông của người nói tiếng Việt. Lượt 2 tìm nguồn ngôn ngữ học có bình duyệt (World Color Survey, từ điển).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://en.wiktionary.org/wiki/xanh
+    luot_2_ghi_chu: Chỉ có nguồn bậc 3 cho định nghĩa từ vựng; điều này hiển nhiên với người Việt, đủ cho một câu định nghĩa.
+  - id: n15
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) cho bài Stroop tiếng Việt ở người lớn; mới có vài nghiên cứu Stroop tiếng Việt cỡ nhỏ, như so sánh chữ Quốc ngữ, chữ Nôm và chữ Hán (1990) hay 30 người Mỹ gốc Việt (1999).
+    loai: thoi-su
+    nguon:
+      - tim-stroop-vn
+      - nguyen2025
+      - morikawa1990
+      - doan1999
+    trich: Neuropsychological tests were administered in a paper-and-pencil format, including the CERAD Word List, Trail Making Tests, Digit Span, Animal Naming, and Clock Drawing Test.
+    vi_tri: Nguyen 2025, tóm tắt (bộ chuẩn tiếng Việt không có Stroop); kết quả tìm Europe PMC 16/11/2026
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ không có mốc thời gian; thêm "Tính đến 11/2026". Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: đã mở tóm tắt Morikawa & Hồ Hoàng Hoa 1990 (Quốc ngữ, chữ Nôm, chữ Hán) và Doan & Swerdlow 1999 (30 người Mỹ gốc Việt so 30 người nói tiếng Anh). Câu hẹp lại thành "bộ số liệu chuẩn theo tuổi, học vấn cho người lớn" và nêu hai nghiên cứu ấy; bỏ nghiên cứu 2019 lượt 2 nêu vì không mở được. Viết khác cau_dung: review xem. review: đạt (Claude Opus 5.5, 17/11/2026). Đã mở tóm tắt (OpenAlex): Morikawa & Ho Hoang Hoa 1990 dùng chữ Quốc ngữ, chữ Nôm và chữ Hán (so thêm với tiếng Nhật, Hàn); Doan & Swerdlow 1999 so 30 người Mỹ gốc Việt nói tiếng Việt là tiếng mẹ đẻ với 30 người nói tiếng Anh, gọi là "kết quả sơ bộ", không phải bộ chuẩn. Câu trên trang giữ phạm vi "bộ số liệu chuẩn (theo tuổi, học vấn) … ở người lớn" như cau_dung; bỏ nghiên cứu 2019 (học sinh lớp 1) không mở được là hẹp hơn, không làm câu sai (câu viết "như", không liệt kê đủ).'
+    luot_2: qua-manh
+    luot_2_nguon:
+      - https://doi.org/10.2466/pms.1999.89.1.173
+      - https://doi.org/10.2466/pms.1990.71.1.249
+    luot_2_ghi_chu: 'câu đúng: Tính đến 11/2026, chúng tôi chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) được công bố cho bài Stroop tiếng Việt ở người lớn; chỉ có một số nghiên cứu Stroop tiếng Việt cỡ nhỏ (1990, 1999 với 30 người Mỹ gốc Việt, 2019 với học sinh lớp 1).; Câu "chưa tìm thấy số liệu chuẩn" có thể đúng với số liệu chuẩn theo tuổi/học vấn cho người lớn, nhưng đã có nghiên cứu Stroop tiếng Việt cỡ nhỏ; không mở được nội dung bài 2019. Câu cần nêu rõ phạm vi "số liệu chuẩn theo tuổi" để không bị hiểu là chưa có nghiên cứu nào.'
+  - id: n16
+    cau: Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ chữ viết.
+    loai: phat-hien
+    nguon:
+      - macleod1991
+      - morikawa1990
+      - doan1999
+    vi_tri: MacLeod 1991 (tổng quan 400 nghiên cứu, có mục về ngôn ngữ và song ngữ trong toàn văn; tóm tắt không nói)
+    ket_qua: dung
+    ghi_chu: 'chưa chắc: tóm tắt MacLeod không nêu ngôn ngữ; lượt 2 mở toàn văn hay nguồn khác (nghiên cứu Stroop song ngữ, chữ Hán). Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): hết chưa chắc: có cả nghiên cứu Stroop tiếng Việt (Morikawa & Hồ Hoàng Hoa 1990: Quốc ngữ, chữ Nôm, chữ Hán; Doan & Swerdlow 1999).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/strooprev_0.pdf
+  - id: s2
+    cau: 'Cách công cụ hoạt động: 8 lượt khởi động, rồi 2 phần × 36 lượt (12 khớp, 12 không khớp, 12 trung tính ####), không hai lượt liền cùng màu mực; dấu + 500 ms, màn trống 300–700 ms, kích thích tới khi trả lời hay hết 3 giây; thời điểm hiện lấy bằng requestAnimationFrame, thời điểm trả lời từ dấu thời gian của sự kiện; bỏ lượt khởi động, sai, hết giờ, ngoài 200–2.500 ms; dùng trung vị; hiệu ứng = trung vị không khớp − trung vị khớp; phiên bản đếm hiện ví dụ "3 3", trả lời số ký tự.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/stroop.js (cauHinh, khoiStroop, hopLeStroop, tomTatStroop, luotSau, traLoi), 16/11/2026; tests/cong-cu.test.mjs kiểm cấu hình mặc định, ràng buộc thứ tự và cách tính; tests/trinh-duyet/kiem-cong-cu.mjs chạy trọn 8 + 72 lượt. Review (17/11/2026): đọc lại stroop.js: cauHinh (moiDk 12, soPhan 2, khoiDong 8, dauCong 500, trong 300–700, hetGio 3000), hopVoi (không hai lượt liền cùng màu mực), RT_MIN 200, RT_MAX 2500, tomTatStroop (bỏ lượt khởi động, sai, hết giờ, ngoài khoảng; effect = trung vị không khớp − khớp), hai lần requestAnimationFrame, event.timeStamp. Khớp.'
+    review: dung
+  - id: n17
+    cau: Màn hình, bàn phím và màn cảm ứng đều có độ trễ, khác nhau giữa các thiết bị và trình duyệt; nếu độ trễ gần như như nhau ở mọi lượt, phép trừ giữa hai điều kiện ít bị ảnh hưởng hơn từng con số riêng lẻ.
+    loai: phat-hien
+    nguon:
+      - bridges2020
+    trich: Online studies did not deliver the same level of precision as lab-based systems, with slightly more variability in all measurements.
+    vi_tri: Bridges 2020, tóm tắt
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "thường vài chục mili giây" và "Vì độ trễ này gần như như nhau ở mọi lượt". Chữ mới bỏ con số (tóm tắt Bridges không cho) và đổi thành điều kiện "nếu". Câu cùng ý trong công cụ (stroop.js, khối "Vì sao con số của bạn khó giống…") sửa theo.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC7512138
+    luot_2_ghi_chu: Sai số thay đổi giữa các lượt (jitter) thì không triệt tiêu; câu chỉ nói về độ trễ gần như đều nên đúng.
+  - id: n18
+    cau: Phiên bản đếm dựa trên ý tưởng "Stroop đếm", tạo cùng loại xung đột giữa phản ứng tự động (đọc chữ số) và nhiệm vụ (đếm) mà không dùng màu.
+    loai: cong-cu
+    nguon:
+      - bush1998
+    trich: subjects report by button-press the number of words (1-4) on the screen, regardless of word meaning. Interference trials contain number words that are incongruent with the correct response
+    vi_tri: Bush 1998, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: Thêm nguồn cho "Stroop đếm" (bản gốc đếm từ chỉ số; công cụ đếm chữ số, cùng ý).
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6873370
+  - id: n20
+    cau: 'Câu hỏi 4, lời giải thích: một cách giải thích vì sao trả lời bằng lời cho hiệu ứng lớn hơn là câu trả lời sai và đúng cạnh tranh trên cùng một kênh lời nói; đây là một lý do không nên so thẳng kết quả bấm phím với con số 74% của Stroop (1935).'
+    loai: phat-hien
+    nguon:
+      - augustinova2019
+    trich: Response Conflict BLUE green – SKY green RT diff. 44 < 78 … 50 < 101
+    vi_tri: Augustinova 2019, Bảng 2 (xung đột đáp án lớn hơn khi trả lời bằng lời) và Thảo luận
+    ket_qua: dung
+    ghi_chu: 'chưa chắc: Augustinova thấy phần "xung đột đáp án" và "xung đột nhiệm vụ" lớn hơn khi nói, khớp ý "cạnh tranh ở khâu trả lời"; cách nói "cùng một kênh lời nói" là diễn giải của trang (câu đã ghi "một cách giải thích"). Lượt 2 đọc Thảo luận của bài.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6709679
+    luot_2_ghi_chu: Câu viết "một cách giải thích", đúng; so thẳng với 74% của Stroop (1935) không nên vì khác thiết kế (nền so sánh khác, nói to).
+  - id: s3
+    cau: 'Công cụ, phần so sánh: dẫn Stroop (1935) Thí nghiệm 2 (100 sinh viên, 100 mục, 63,3 và 110,3 giây, 74%) và Augustinova 2019 (76 và 73 ms bấm phím, 155 và 168 ms nói to); lượt không khớp của người dùng so với lượt trung tính tính bằng % và ms; "khoảng 24 lượt mỗi điều kiện".'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/stroop.js (NGHIEN_CUU, ketQua), 16/11/2026: các con số lấy từ hằng NGHIEN_CUU, trùng n4, n7; 24 = 2 phần × 12. Con số nghiên cứu kiểm ở n4, n7. Review (17/11/2026): NGHIEN_CUU.stroop1935 {100, 100, 63,3, 110,3, 74} khớp n4; augustinova2019 {phim 76, 73; loi 155, 168} khớp n7; ketQua dùng interferencePct (không khớp so với trung tính) và hiệu ms không khớp − trung tính; "khoảng ${soPhan × moiDk}" = 24.'
+    review: dung
+  - id: n19
+    cau: Trung vị phản ánh lượt điển hình tốt hơn trung bình vì thời gian phản ứng có đuôi dài về phía chậm.
+    loai: dinh-nghia
+    nguon:
+      - stroop1935
+    trich: (The medians on the two tests are 61.9 and 110.4 seconds respectively.)
+    vi_tri: Stroop 1935 (báo cả trung vị); lời giải thích câu hỏi 2
+    ket_qua: dung
+    ghi_chu: 'chưa chắc: Stroop chỉ báo trung vị, không bàn đuôi phân phối. Đây là kiến thức thống kê phổ thông (phân phối thời gian phản ứng lệch phải); lượt 2 thêm nguồn phương pháp (ví dụ Whelan 2008, Ratcliff 1993).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1098/rsos.190831
+    luot_2_ghi_chu: Nguồn bậc 2 nói phân bố RT lệch; ưu điểm của trung vị là kiến thức thống kê chuẩn.
 doi_chu:
-- cu: 'Mục "Hơn 50 năm sau": "hiệu ứng đo bằng phím bấm là 76 ms và 73 ms, còn bằng lời nói là 155 ms và 168 ms"'
-  moi: '"mức cản trở (lượt không khớp so với lượt trung tính XXXX) khi bấm phím là 76 ms và 73 ms, khi nói to là 155 ms và 168 ms"'
-  ly_do: n7
-- cu: 'Khung Đang tranh cãi: "độ tin cậy … chỉ khoảng 0,6–0,7"'
-  moi: '"khoảng 0,6–0,7, dưới mức 0,8 thường được coi là cần khi đánh giá từng người"'
-  ly_do: n9
-- cu: '"Không có bằng chứng rằng luyện tập nhiệm vụ Stroop giúp tăng trí thông minh hay khả năng tập trung nói chung."'
-  moi: '"Có rất ít bằng chứng rằng luyện tập các bài nhận thức như Stroop …" kèm Simons và cộng sự (2016)'
-  ly_do: n13
-- cu: '"Chúng tôi chưa tìm thấy số liệu chuẩn có công bố cho phiên bản tiếng Việt"'
-  moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy …"'
-  ly_do: 'n15: khẳng định thời sự viết kèm mốc'
-- cu: 'Độ trễ thiết bị: "thường vài chục mili giây … Vì độ trễ này gần như như nhau"'
-  moi: '"khác nhau giữa các thiết bị và trình duyệt (Bridges và cộng sự, 2020). Nếu độ trễ gần như như nhau"'
-  ly_do: n17
-- cu: 'Phiên bản đếm: "dựa trên ý tưởng ''Stroop đếm''"'
-  moi: thêm link Bush và cộng sự (1998)
-  ly_do: n18
-- cu: 'Mục Nguồn: 4 nguồn'
-  moi: thêm Bridges 2020, Bush 1998, Simons 2016
-  ly_do: nguồn của n13, n17, n18
-- cu: 'Khung Vững chắc: "là một trong những phát hiện được tái lập nhiều nhất của tâm lý học, với hàng trăm nghiên cứu"'
-  moi: '"có trong hàng trăm nghiên cứu … (MacLeod, 1991), và một đợt tái lập ở nhiều phòng thí nghiệm (Many Labs 3) thấy hiệu ứng ở mọi lần thử"'
-  ly_do: n8 (sau lượt 2)
-- cu: '"chưa tìm thấy số liệu chuẩn có công bố cho phiên bản tiếng Việt"'
-  moi: '"chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) … ở người lớn; mới có vài nghiên cứu Stroop tiếng Việt cỡ nhỏ" kèm Morikawa 1990, Doan 1999 (thêm vào Nguồn)'
-  ly_do: n15 (sau lượt 2)
+  - cu: 'Mục "Hơn 50 năm sau": "hiệu ứng đo bằng phím bấm là 76 ms và 73 ms, còn bằng lời nói là 155 ms và 168 ms"'
+    moi: '"mức cản trở (lượt không khớp so với lượt trung tính XXXX) khi bấm phím là 76 ms và 73 ms, khi nói to là 155 ms và 168 ms"'
+    ly_do: n7
+  - cu: 'Khung Đang tranh cãi: "độ tin cậy … chỉ khoảng 0,6–0,7"'
+    moi: '"khoảng 0,6–0,7, dưới mức 0,8 thường được coi là cần khi đánh giá từng người"'
+    ly_do: n9
+  - cu: '"Không có bằng chứng rằng luyện tập nhiệm vụ Stroop giúp tăng trí thông minh hay khả năng tập trung nói chung."'
+    moi: '"Có rất ít bằng chứng rằng luyện tập các bài nhận thức như Stroop …" kèm Simons và cộng sự (2016)'
+    ly_do: n13
+  - cu: '"Chúng tôi chưa tìm thấy số liệu chuẩn có công bố cho phiên bản tiếng Việt"'
+    moi: '"Tính đến 11/2026, chúng tôi chưa tìm thấy …"'
+    ly_do: 'n15: khẳng định thời sự viết kèm mốc'
+  - cu: 'Độ trễ thiết bị: "thường vài chục mili giây … Vì độ trễ này gần như như nhau"'
+    moi: '"khác nhau giữa các thiết bị và trình duyệt (Bridges và cộng sự, 2020). Nếu độ trễ gần như như nhau"'
+    ly_do: n17
+  - cu: 'Phiên bản đếm: "dựa trên ý tưởng ''Stroop đếm''"'
+    moi: thêm link Bush và cộng sự (1998)
+    ly_do: n18
+  - cu: 'Mục Nguồn: 4 nguồn'
+    moi: thêm Bridges 2020, Bush 1998, Simons 2016
+    ly_do: nguồn của n13, n17, n18
+  - cu: 'Khung Vững chắc: "là một trong những phát hiện được tái lập nhiều nhất của tâm lý học, với hàng trăm nghiên cứu"'
+    moi: '"có trong hàng trăm nghiên cứu … (MacLeod, 1991), và một đợt tái lập ở nhiều phòng thí nghiệm (Many Labs 3) thấy hiệu ứng ở mọi lần thử"'
+    ly_do: n8 (sau lượt 2)
+  - cu: '"chưa tìm thấy số liệu chuẩn có công bố cho phiên bản tiếng Việt"'
+    moi: '"chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) … ở người lớn; mới có vài nghiên cứu Stroop tiếng Việt cỡ nhỏ" kèm Morikawa 1990, Doan 1999 (thêm vào Nguồn)'
+    ly_do: n15 (sau lượt 2)

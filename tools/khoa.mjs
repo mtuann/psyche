@@ -50,8 +50,9 @@ const LUON_KIEM = ['nhan', 'lam-sang'];
 /** Câu nói về chính site (loai ve-site): review kiểm trên trang và dữ liệu, không qua lượt 2. */
 const VE_SITE = 've-site';
 /** Trường của bản ghi dữ liệu được ghi là câu về chính site: cấu trúc của site, không phải điều về tâm lý học. */
-const VE_SITE_BO = { trang: null, 'linh-vuc': ['ten', 'thu_tu', 'mau', 'bieu_tuong'], 'nghien-cuu': ['trang_nha'] };
-const VE_SITE_DU_LIEU = 'bộ trang; tên, thứ tự, màu, biểu tượng của lĩnh vực; trang nhà của nghiên cứu';
+// thẻ ngộ nhận: trang liên quan (link trên site) và cấp trong bài thử "Bạn nghĩ gì về tâm trí?" là lựa chọn của site (D8-L3)
+const VE_SITE_BO = { trang: null, 'linh-vuc': ['ten', 'thu_tu', 'mau', 'bieu_tuong'], 'nghien-cuu': ['trang_nha'], 'ngo-nhan': ['trang', 'cap'] };
+const VE_SITE_DU_LIEU = 'bộ trang; tên, thứ tự, màu, biểu tượng của lĩnh vực; trang nhà của nghiên cứu; trang liên quan, cấp của thẻ ngộ nhận';
 const veSiteDuoc = (bg, truong) => {
 	const bo = bg.split('/')[0];
 	if (!(bo in VE_SITE_BO)) return false;
@@ -163,6 +164,15 @@ export function loiHoSo(hs, muc, goc, { khiKhoa = false } = {}) {
 	if (!ds.length) {
 		if (bg && !hs.ghi_chu) loi.push('chưa có nhận định nào: bản ghi cần ít nhất một nhận định đã kiểm, hay ghi_chu giải thích vì sao không có');
 		if (!bg && tang && tang !== 'khung' && tang !== 'du-lieu') loi.push(`chưa có nhận định nào: trang tầng ${tang} cần ít nhất một nhận định đã kiểm`);
+	}
+	// bản ghi mà phần được khóa có trường nội dung (ngoài cấu trúc của site, VE_SITE_BO) thì phải có ít nhất một nhận định
+	// không phải ve-site: không thì cả bản ghi khóa được chỉ nhờ câu về trang liên quan (review them/ve-site-ngo-nhan)
+	if (bg && ds.length && Array.isArray(VE_SITE_BO[bg.split('/')[0]])) {
+		const ve = VE_SITE_BO[bg.split('/')[0]];
+		const truong = truongKhoa ?? Object.keys(docBanGhi(bg, goc) ?? {}).filter((t) => t !== 'id');
+		const noiDung = truong.filter((t) => !ve.includes(t));
+		if (noiDung.length && !ds.some((n) => n.loai !== VE_SITE && n.ket_qua !== 'da-bo'))
+			loi.push(`bản ghi khóa cả trường nội dung (${noiDung.join(', ')}): cần ít nhất một nhận định không phải ve-site, qua hai lượt`);
 	}
 	const nguon = new Set((hs.nguon ?? []).map((n) => n.id));
 	const ids = ds.map((n) => n.id).filter(Boolean);
