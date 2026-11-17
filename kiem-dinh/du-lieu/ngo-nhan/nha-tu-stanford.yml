@@ -9,7 +9,7 @@ lan:
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-      review: null
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
       kiem_mau: null
 ghi_chu: 'Thay nguồn hplt2019 (bản ghi PubMed của chính Le Texier 2019) bằng zimbardo2020 (phản hồi của Zimbardo và Haney, trang nhà dẫn). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Điều tra lại hồ sơ lưu trữ và phỏng vấn 15 người tham gia (Le Texier, 2019) cho thấy các “cai ngục” đã được hướng dẫn cách đối xử với “tù nhân”, dữ liệu thu thập thiếu khách quan, và người tham gia hiếm khi thật sự “nhập vai”. Nhóm của Zimbardo đã phản bác, cho rằng phê bình này bỏ qua bối cảnh — nên đây vẫn là cuộc tranh luận mở, không phải kết luận đã ngã ngũ.'' → mới ''Điều tra lại hồ sơ lưu trữ và phỏng vấn 15 người tham gia (Le Texier, 2019) cho thấy các "cai ngục" đã được hướng dẫn cụ thể cách đối xử với "tù nhân", dữ liệu thu thập thiếu khách quan và không đầy đủ, và người tham gia hiếm khi thật sự nhập vai hoàn toàn. Zimbardo và Haney (2020) phản hồi, vẫn bảo vệ sức mạnh của môi trường phi nhân tính; đây vẫn là cuộc tranh luận mở.'' | nguon: cũ [''letexier2019'', ''hplt2019''] → mới [''letexier2019'', ''zimbardo2020''] | trang: cũ None → mới ''thi-nghiem/zimbardo'''
 nguon:
@@ -69,4 +69,5 @@ nhan_dinh:
     truong:
       - trang
     ket_qua: dung
-    ghi_chu: Trang nhà đã khóa.
+    ghi_chu: 'Trang nhà đã khóa. Review (Claude Opus 5.5, 17/11/2026): thi-nghiem/zimbardo có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung tranh-cai[kết luận gốc tình huống biến người bình thường thành tàn ác].'
+    review: dung

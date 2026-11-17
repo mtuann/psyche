@@ -9,7 +9,7 @@ lan:
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-      review: null
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
       kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''p-value chỉ cho biết dữ liệu “lạ” đến mức nào NẾU giả thuyết vô hiệu đúng — nó không phải xác suất giả thuyết đúng, cũng không đo độ lớn hay tầm quan trọng của hiệu ứng. Hiểu sai này phổ biến đến mức Hiệp hội Thống kê Hoa Kỳ phải ra tuyên bố chính thức năm 2016.'' → mới ''p-value chỉ cho biết dữ liệu "lạ" đến mức nào nếu một mô hình định sẵn (thường là giả thuyết không) là đúng; nó không phải xác suất giả thuyết đúng, cũng không đo độ lớn hay tầm quan trọng của hiệu ứng. Hiểu sai này phổ biến đến mức năm 2016 Hiệp hội Thống kê Hoa Kỳ (ASA) ra một tuyên bố chính thức về cách dùng và hiểu p-value.'''
 nguon:
@@ -63,4 +63,5 @@ nhan_dinh:
     truong:
       - trang
     ket_qua: dung
-    ghi_chu: Trang nhà đã khóa.
+    ghi_chu: 'Trang nhà đã khóa. Review (Claude Opus 5.5, 17/11/2026): bang-chung/p-value có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung vung-chac[p-value không phải xác suất giả thuyết đúng…] và mục "Hiểu lầm lớn nhất".'
+    review: dung

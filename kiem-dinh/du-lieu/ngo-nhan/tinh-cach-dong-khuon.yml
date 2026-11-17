@@ -9,7 +9,7 @@ lan:
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-      review: null
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
       kiem_mau: null
 ghi_chu: 'Câu cũ gán phát hiện "mức trung bình dịch chuyển" cho phân tích 152 nghiên cứu (Roberts & DelVecchio 2000, về ổn định thứ hạng); đúng ra là Roberts, Walton & Viechtbauer 2006 (thêm nguồn). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp 152 nghiên cứu cho thấy thứ hạng tính cách giữa các cá nhân ổn định dần theo tuổi, nhưng mức trung bình vẫn dịch chuyển suốt tuổi trưởng thành: người ta có xu hướng tận tâm, dễ chịu và ổn định cảm xúc hơn theo năm tháng. “Đóng khuôn như thạch cao” chỉ đúng một nửa.'' → mới ''Phân tích tổng hợp 152 nghiên cứu dọc (2000) cho thấy thứ hạng tính cách giữa các cá nhân ổn định dần theo tuổi nhưng không bao giờ cố định hẳn. Mức trung bình cũng dịch chuyển: phân tích tổng hợp 92 mẫu (2006) thấy người ta tận tâm hơn và ổn định cảm xúc hơn, nhất là ở tuổi 20–40. "Đóng khuôn như thạch cao" chỉ đúng một phần.'' | nguon: cũ [''roberts2000''] → mới [''roberts2000'', ''roberts2006'']'
 nguon:
@@ -67,4 +67,5 @@ nhan_dinh:
     truong:
       - trang
     ket_qua: dung
-    ghi_chu: Trang nhà đã khóa.
+    ghi_chu: 'Trang nhà đã khóa. Review (Claude Opus 5.5, 17/11/2026): kham-pha/tinh-cach/tinh-cach-thay-doi có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung vung-chac về ổn định thứ hạng và kha-vung về mức trung bình dịch chuyển.'
+    review: dung

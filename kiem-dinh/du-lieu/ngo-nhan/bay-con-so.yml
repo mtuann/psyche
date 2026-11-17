@@ -9,7 +9,7 @@ lan:
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-      review: null
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
       kiem_mau: null
 ghi_chu: 'chỗ khó: trang nhà tri-nho-lam-viec (đã khóa) xếp "giới hạn của bàn nháp là bao nhiêu" vào Đang tranh cãi và ghi "7 ± 2 là giới hạn cứng cho mọi loại thông tin" là ngộ nhận. Thẻ giữ Đã bị bác bỏ cho khẳng định "mọi người chứa được 7 món"; câu cũ "giới hạn thô thì gần với 4" quá chắc so với trang nhà, đã viết lại. Bỏ nguồn bay-con-so-pubmed (chỉ là bản ghi PubMed của Cowan 2001). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Con số 7±2 của Miller (1956) là về “cụm” thông tin — ta có thể gom nhiều món thành một cụm để nhớ. Khi ngăn người tham gia dùng mẹo gom cụm hay nhẩm lại, Nelson Cowan tổng hợp lại toàn bộ bằng chứng năm 2001 và kết luận dung lượng thật gần với 4 cụm hơn. Nói cách khác, 7 là mức tối đa khi đã dùng mẹo, còn giới hạn thô thì gần với 4.'' → mới ''Con số "7 ± 2" của Miller (1956) là ước lượng ban đầu, đã tính cả các mẹo gom nhóm. Khi loại bỏ các mẹo ấy, Cowan (2001) ước lượng khoảng 4 "cụm" thông tin. Con số chính xác vẫn còn tranh cãi, nhưng giới hạn còn tùy loại thông tin, cách đo và từng người: không có một con số 7 chung cho mọi người.'' | nguon: cũ [''cowan2001'', ''bay-con-so-pubmed''] → mới [''miller1956'', ''cowan2001''] | trang: cũ ''trai-nghiem/do-dai-tri-nho'' → mới ''kham-pha/tri-nho/tri-nho-lam-viec'''
 nguon:
@@ -83,4 +83,5 @@ nhan_dinh:
     truong:
       - trang
     ket_qua: dung
-    ghi_chu: Trang nhà của Miller 1956 và Cowan 2001 (báo cáo D8-L1); thẻ cũ link trai-nghiem/do-dai-tri-nho (công cụ, chưa khóa).
+    ghi_chu: 'Trang nhà của Miller 1956 và Cowan 2001 (báo cáo D8-L1); thẻ cũ link trai-nghiem/do-dai-tri-nho (công cụ, chưa khóa). Review (Claude Opus 5.5, 17/11/2026): kham-pha/tri-nho/tri-nho-lam-viec có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung tranh-cai[giới hạn của bàn nháp là bao nhiêu] và đoạn Miller 1956, Cowan 2001.'
+    review: dung

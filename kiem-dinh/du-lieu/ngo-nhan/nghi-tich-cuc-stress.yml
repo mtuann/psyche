@@ -9,7 +9,7 @@ lan:
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
     luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-    review: null
+    review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
     kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Can thiệp “tư duy về stress” (Crum và cộng sự, 2013) cho thấy nhóm được hướng dẫn nhìn stress tích cực tự báo cáo làm việc tốt hơn sau một tuần. Nhưng hiệu ứng còn nhỏ, đo bằng tự báo cáo, và việc tái lập đúng giao thức gốc vẫn là câu hỏi mở — chưa đủ để nói “nghĩ tích cực là đủ”.'' → mới ''Nhiều thử nghiệm cho thấy niềm tin về stress đổi được qua một can thiệp ngắn. Các thử nghiệm của Crum và cộng sự (2013, 2023) cho kết quả tích cực về sức khỏe và hiệu quả làm việc, nhưng chủ yếu là tự báo cáo; các nhóm khác thấy kết quả chưa nhất quán, nhất là ở chỉ số sinh lý. Vì vậy chưa đủ để nói "nghĩ tích cực là đủ".'' | nguon: cũ [''crum2013''] → mới [''crum2013'', ''crum2023'']'
 nguon:
@@ -72,3 +72,11 @@ nhan_dinh:
   - https://doi.org/10.1037/a0031201
   - https://doi.org/10.1037/xge0001396
   luot_2_ghi_chu: Đã xác nhận Crum 2023 báo cáo chủ yếu tự khai và Crum 2013 có cortisol; chưa tìm được nguồn mở cho 'các nhóm khác chưa nhất quán, nhất là chỉ số sinh lý' (Europe PMC, PubMed).
+- id: trang
+  cau: 'Bài liên quan của thẻ là kham-pha/cang-thang-giac-ngu/stress-co-hai'
+  loai: ve-site
+  truong:
+  - trang
+  ket_qua: dung
+  ghi_chu: 'Review thêm (Claude Opus 5.5, 17/11/2026): thẻ có trường trang mà hồ sơ thiếu câu về site. Trang đã khóa (khoa.json), "Đọc thêm" hiện ở dist/ngo-nhan/; trang có ngộ nhận "Cứ nghĩ tích cực là hết bệnh" và khung tranh-cai[đổi niềm tin có giúp khỏe hơn và làm việc tốt hơn?].'
+  review: dung

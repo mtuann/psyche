@@ -9,7 +9,7 @@ lan:
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-      review: null
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
       kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp 24 nghiên cứu theo dõi theo thời gian với hơn 17.000 trẻ em (2018) thấy chơi game bạo lực liên quan đến hành vi hung hăng sau đó, nhưng mức độ rất nhỏ (β ≈ 0,08–0,11). Một nhóm nhà nghiên cứu khác cho rằng mối liên hệ này bị thổi phồng và không có ý nghĩa thực tế. Bằng chứng hiện tại: có tín hiệu nhỏ, chưa đủ để kết luận game “gây” bạo lực.'' → mới ''Phân tích tổng hợp 24 nghiên cứu theo dõi theo thời gian với hơn 17.000 trẻ em và thiếu niên (2018) thấy chơi game bạo lực đi cùng hành vi gây hấn về sau, nhưng ở mức nhỏ (β ≈ 0,08–0,11). Các nhà nghiên cứu khác, như Ferguson và Kilburn (2010), cho rằng những hiệu ứng như vậy bị ước lượng quá cao và quá yếu để có ý nghĩa thực tế. Bằng chứng hiện tại: có tín hiệu nhỏ, chưa đủ để kết luận game "gây" bạo lực.'' | nguon: cũ [''prescott2018''] → mới [''prescott2018'', ''ferguson2010''] | trang: cũ None → mới ''thi-nghiem/bandura'''
 nguon:
@@ -69,4 +69,5 @@ nhan_dinh:
     truong:
       - trang
     ket_qua: dung
-    ghi_chu: Trang đã khóa kể tranh luận về trò chơi bạo lực (Anderson 2010, Ferguson & Kilburn 2010).
+    ghi_chu: 'Trang đã khóa kể tranh luận về trò chơi bạo lực (Anderson 2010, Ferguson & Kilburn 2010). Review (Claude Opus 5.5, 17/11/2026): thi-nghiem/bandura có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung tranh-cai[kết quả có suy ra được bạo lực truyền thông gây bạo lực thật không?].'
+    review: dung

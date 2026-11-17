@@ -9,7 +9,7 @@ lan:
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
     luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-    review: null
+    review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
     kiem_mau: null
 ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Một số chức năng có thiên lệch về một bán cầu, chẳng hạn ngôn ngữ thường thiên về bên trái. Nhưng đó là đặc điểm của từng chức năng, không phải "kiểu người". Khi phân tích kết nối não lúc nghỉ của 1.011 người từ 7 đến 29 tuổi, các nhà nghiên cứu không thấy ai có toàn bộ mạng lưới bên trái hay bên phải mạnh hơn hẳn.'' → mới ''Một số chức năng thiên về một bán cầu, như ngôn ngữ thường thiên về bên trái; nhưng đó là phân công chức năng, không phải "kiểu người". Khi phân tích ảnh chụp não lúc nghỉ của 1.011 người từ 7 đến 29 tuổi, các nhà nghiên cứu thấy các kết nối lệch về một bán cầu là đặc điểm cục bộ, không gom thành kiểu "não trái hơn" hay "não phải hơn" trên toàn bộ não.'' | trang: cũ None → mới ''kham-pha/co-so-sinh-hoc/nao-che-doi'''
 nguon:
@@ -68,4 +68,5 @@ nhan_dinh:
   truong:
   - trang
   ket_qua: dung
-  ghi_chu: Trang nhà (đã khóa) có khung bac-bo["người não trái" và "người não phải"], dẫn Nielsen 2013; thẻ cũ chưa có link.
+  ghi_chu: 'Trang nhà (đã khóa) có khung bac-bo["người não trái" và "người não phải"], dẫn Nielsen 2013; thẻ cũ chưa có link. Review (Claude Opus 5.5, 17/11/2026): kham-pha/co-so-sinh-hoc/nao-che-doi có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung bac-bo["người não trái" và "người não phải"] và mục "Đừng tin các bài test bạn thuận não nào".'
+  review: dung

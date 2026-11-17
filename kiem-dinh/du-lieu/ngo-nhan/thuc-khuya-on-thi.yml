@@ -9,7 +9,7 @@ lan:
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
       luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
-      review: null
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
       kiem_mau: null
 ghi_chu: 'chỗ khó: sửa khẳng định "Thức khuya ôn thi giúp nhớ bài lâu hơn": trang nhà ngu-va-tri-nho (đã khóa) xếp "thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn" vào Đã bị bác bỏ và ghi rõ "Các nghiên cứu này không kiểm tra việc dùng đêm thức để học thêm". Thí nghiệm 2 thiết kế trong-nhóm, nên bỏ chữ "nhóm". Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). khang_dinh: cũ ''Thức khuya ôn thi giúp nhớ bài lâu hơn.'' → mới ''Học xong mà thức trắng đêm thay vì đi ngủ thì cũng không ảnh hưởng gì đến việc nhớ bài.'' | giai_thich: cũ ''Trong thí nghiệm của Gais và cộng sự (2006), nhóm học buổi tối rồi đi ngủ nhớ tốt hơn hẳn nhóm thức trắng đêm khi kiểm tra sau 48 giờ — dù cả hai đã được ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ; thức khuya chính là bỏ đi cơ hội đó.'' → mới ''Trong thí nghiệm của Gais và cộng sự (2006), học sinh học từ vựng buổi tối rồi đi ngủ nhớ được nhiều từ hơn hẳn so với khi chính họ thức trắng đêm sau khi học, ở bài kiểm tra 48 giờ sau, dù đã được ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ. Nghiên cứu này không so việc dùng đêm thức để học thêm với việc đi ngủ.'''
 nguon:
@@ -70,4 +70,5 @@ nhan_dinh:
     truong:
       - trang
     ket_qua: dung
-    ghi_chu: Trang nhà đã khóa.
+    ghi_chu: 'Trang nhà đã khóa. Review (Claude Opus 5.5, 17/11/2026): kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung bac-bo[thức trắng đêm thay cho giấc ngủ giúp nhớ lại phần đã học tốt hơn] và ngộ nhận "Thức trắng ôn thi".'
+    review: dung
