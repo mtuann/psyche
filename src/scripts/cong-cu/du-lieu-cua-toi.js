@@ -148,7 +148,7 @@ export function mount(el) {
 			h('p', {}, [
 				coSw
 					? bat
-						? 'Đang bật: trình duyệt lưu các trang bạn đã mở (và trang Hỗ trợ) trên máy này, để đọc lại được khi mất mạng. Mỗi lần site cập nhật, bản lưu cũ được thay.'
+						? 'Đang bật: trình duyệt lưu các trang bạn đã mở (và trang Hỗ trợ) trên máy này, để đọc lại được khi mất mạng. Mỗi lần site cập nhật, các trang đã lưu bị xóa để khỏi đọc phải bản cũ; trang nào bạn mở lại thì được lưu bản mới.'
 						: 'Đang tắt: trình duyệt không lưu trang nào để đọc khi mất mạng.'
 					: 'Trình duyệt này không hỗ trợ lưu trang để đọc khi mất mạng.',
 			]),

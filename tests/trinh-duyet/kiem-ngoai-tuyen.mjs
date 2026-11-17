@@ -50,7 +50,7 @@ for (const [ten, loai] of Object.entries(TRINH_DUYET)) {
 			await p.waitForFunction(() => !!navigator.serviceWorker?.controller, null, { timeout: 20000 });
 			assert.deepEqual(
 				await p.evaluate(async () => (await caches.keys()).filter((k) => k.startsWith('psyche-moi-'))),
-				[`psyche-${phienBan}`],
+				[`psyche-moi-${phienBan}`],
 				'bộ nhớ đệm mang phiên bản của bản build',
 			);
 			await p.goto(g + DA_MO + '/', { waitUntil: 'load' });
