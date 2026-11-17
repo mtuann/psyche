@@ -10,8 +10,8 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L4, một mình, không agent con)
-    luot_2: null
-    review: null
+    luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L4, 17/11/2026)
+    review: Claude Opus 5.5 (agent review D8-L4, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: boyce2024
@@ -37,7 +37,7 @@ nguon:
   link: https://dictionary.apa.org/behavioral-economics
   toan_van: true
 - id: zhang2025-pmc
-  ten: Zhang, Fang & Wang (2025), toàn văn PMC11987655 (Europe PMC fullTextXML), Bảng 3 và mục Results
+  ten: Zhang, Fang & Wang (2025), toàn văn PMC11987655 (Europe PMC fullTextXML), Bảng 3, Bảng 4, mục Results, Discussion và Conclusions
   link: https://pmc.ncbi.nlm.nih.gov/articles/PMC11987655/
   toan_van: true
 nhan_dinh:
@@ -45,21 +45,25 @@ nhan_dinh:
   cau: Trang tóm tắt những nghiên cứu mới, đã qua bình duyệt, liên quan trực tiếp đến các bài trên Psyche; mỗi tin có ngày, tin mới thêm lên đầu; tin cũ không bị viết lại, nếu có sai thì đính chính bằng một tin mới.
   loai: ve-site
   ket_qua: dung
+  review: dung
   ghi_chu: 'Tầng cap-nhat (src/data/trang.yml; plans/ben-vung/README.md mục 2, them-noi-dung.md mục 6); tests/them.test.mjs kiểm tiêu đề có ngày, mới nhất trước, và mục đã có ở main không đổi. Năm nghiên cứu đều đăng ở tạp chí có bình duyệt (Crossref: journal-article).'
 - id: s2
   cau: Một tin ở đây không tự làm đổi nhãn của bài nào.
   loai: ve-site
   ket_qua: dung
+  review: dung
   ghi_chu: Đổi nhãn của bài đã khóa phải qua mở khóa hay bổ sung có anh_huong_nhan (chuan-kiem-dinh.md mục 4, 8). Câu mới.
 - id: s3
   cau: Năm tin đầu được đăng trên Psyche Zero ngày 13/10/2026 và được kiểm chứng lại với nguồn khi chuyển sang site này (11/2026).
   loai: ve-site
   ket_qua: dung
+  review: dung
   ghi_chu: '../psyche-zero/docs/them/cap-nhat.md, mục 13/10/2026 "Cơ chế giữ up to date": "Trang mới Nghiên cứu mới đáng chú ý: tóm tắt 5 nghiên cứu 2024–2026"; mục 4 viết lại ngày 22/10/2026 (mục đính chính cùng file). Lần kiểm này: hồ sơ này, 17/11/2026.'
 - id: s4
   cau: 'Lời dẫn: đọc các tin cùng với các nhãn mức độ chắc chắn trong từng bài liên quan (link tới Cách đọc nhãn); một nghiên cứu đơn lẻ, dù gây chú ý, chưa đủ để đổi kết luận chung của cả một lĩnh vực.'
   loai: ve-site
   ket_qua: dung
+  review: dung
   ghi_chu: 'Link tới bat-dau/doc-nhan-chac-chan (đã khóa). Câu "một nghiên cứu đơn lẻ chưa đủ…" là nguyên tắc viết của site (ưu tiên phân tích tổng hợp: AGENTS.md, chuan-kiem-dinh.md mục 2, 4), giữ từ trang cũ.'
 - id: b1
   cau: 'Boyce và cộng sự (2024), Collabra: Psychology 10(1), 125685, 20 tác giả (danh sách như trên trang).'
@@ -115,6 +119,7 @@ nhan_dinh:
   cau: 'Bài Vì sao nhiều phát hiện nổi tiếng không lặp lại được? viết rằng tái lập thất bại không có nghĩa phát hiện gốc là bịa: có thể hiệu ứng có thật nhưng nhỏ hơn.'
   loai: ve-site
   ket_qua: dung
+  review: dung
   ghi_chu: 'src/content/docs/bang-chung/khung-hoang-tai-lap.md dòng 65: "Tái lập thất bại không có nghĩa phát hiện gốc là bịa. Có thể hiệu ứng thật nhưng nhỏ hơn, hoặc chỉ đúng trong một số điều kiện nhất định." (trang đã khóa).'
 - id: d1
   cau: Dawson và de Meza (2026), Psychological Review, đăng trực tuyến tháng 7/2026.
@@ -136,7 +141,7 @@ nhan_dinh:
   trich: We propose a signaling theory according to which the role of self-deception is to better inform others.
   vi_tri: tóm tắt
   ket_qua: da-sua
-  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 khong-chac (chỉ đọc tóm tắt, không loại trừ được bài có phân tích dữ liệu hay mô phỏng). Bỏ vế "không phải một thí nghiệm hay một phân tích dữ liệu mới" (tóm tắt không nói); giữ phần tóm tắt xác nhận ("We propose a signaling theory"), nói rõ "theo tóm tắt".'
+  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 khong-chac (chỉ đọc tóm tắt, không loại trừ được bài có phân tích dữ liệu hay mô phỏng). Bỏ vế "không phải một thí nghiệm hay một phân tích dữ liệu mới" (tóm tắt không nói); giữ phần tóm tắt xác nhận ("We propose a signaling theory"), nói rõ "theo tóm tắt". Review (Claude Opus 5.5, agent riêng, 17/11/2026): đạt. Tự mở tóm tắt (OpenAlex, bản PsycInfo; Crossref: journal-article, Psychological Review, đăng trực tuyến 20/7/2026): "We propose a signaling theory…"; câu chỉ nói điều tóm tắt xác nhận, có "theo tóm tắt".'
   luot_2: khong-chac
   luot_2_ghi_chu: 'chỗ khó: tóm tắt nói ''We propose a signaling theory'' và ''Evidence supports this interpretation'', nghĩa là bài đề xuất lý thuyết nhưng có viện dẫn bằng chứng; tôi không mở được toàn văn nên không loại trừ việc bài có phân tích dữ liệu hay mô phỏng riêng. Phần ''một bài lý thuyết, đề xuất mô hình'' thì đúng.'
 - id: d3
@@ -196,7 +201,7 @@ nhan_dinh:
   trich: Evidence supports this interpretation.
   vi_tri: tóm tắt
   ket_qua: da-sua
-  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 khong-chac: vế "mô hình vẫn cần được kiểm định bằng dữ liệu" không có trong tóm tắt (nhận xét của site). Bỏ vế ấy; câu mới chỉ nói điều kiểm được trên chính tóm tắt (câu duy nhất về bằng chứng là "Evidence supports this interpretation."). Chữ trước nữa (site cũ): "… cần được kiểm định độc lập".'
+  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 khong-chac: vế "mô hình vẫn cần được kiểm định bằng dữ liệu" không có trong tóm tắt (nhận xét của site). Bỏ vế ấy; câu mới chỉ nói điều kiểm được trên chính tóm tắt (câu duy nhất về bằng chứng là "Evidence supports this interpretation."). Chữ trước nữa (site cũ): "… cần được kiểm định độc lập". Review (Claude Opus 5.5, agent riêng, 17/11/2026): đạt. Tóm tắt (OpenAlex) chỉ có một câu về bằng chứng, "Evidence supports this interpretation.", không nêu bằng chứng nào; câu trên trang nói đúng vậy.'
   luot_2: khong-chac
   luot_2_ghi_chu: 'chỗ khó: tóm tắt chỉ nói ''Evidence supports this interpretation''. Vế ''mô hình vẫn cần được kiểm định bằng dữ liệu'' không có trong tóm tắt (là nhận xét của site, chưa xác nhận được vì không mở toàn văn); vì vậy câu gán cho tóm tắt điều tóm tắt không nói.'
 - id: d8
@@ -218,6 +223,7 @@ nhan_dinh:
   cau: Bài Kẻ dốt hay tự tin thái quá? kể các phê bình thống kê nhắm vào hiệu ứng Dunning–Kruger (Krueger và Mueller, 2002; Gignac và Zajenkowski, 2020); mô hình của Dawson và de Meza bàn một câu hỏi khác, không kiểm định hiệu ứng Dunning–Kruger, nên không dùng được để nói hiệu ứng ấy đúng hay sai.
   loai: ve-site
   ket_qua: da-sua
+  review: dung
   ghi_chu: 'src/content/docs/kham-pha/tu-duy/dunning-kruger.md (đã khóa): mục "Krueger và Mueller (2002): phê bình thống kê", "Gignac và Zajenkowski (2020)". Vế sau suy từ d2, d5 (tóm tắt không nhắc Dunning–Kruger). Chữ cũ "nếu đúng, sự tự tin cao lại đi cùng năng lực cao — trái với cách hiểu phổ thông" đã bỏ (diễn giải xa hơn tóm tắt).'
 - id: z1
   cau: Zhang, Fang và Wang (2025), International Journal of Clinical and Health Psychology 25(1), 100559.
@@ -245,19 +251,19 @@ nhan_dinh:
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC11987655/
   luot_2_ghi_chu: Khớp từng số. Tác giả gọi 'concurrent training' (CT) là tập đồng thời aerobic và kháng lực.
 - id: z3
-  cau: 'Ở người từ 65 tuổi trở lên, hiệu quả có ý nghĩa thống kê (g = 0,33; khoảng tin cậy 95%: 0,14–0,51), còn ở nhóm 18–65 tuổi thì chưa đạt ý nghĩa thống kê; tác giả đọc đây là lợi ích lớn hơn ở người cao tuổi, nhưng đó là so sánh nhóm nào đạt, nhóm nào chưa đạt ý nghĩa thống kê, không phải phép kiểm định khác biệt giữa hai nhóm. Ở người có bệnh, g = 0,28; các chương trình dài 13–26 tuần có hiệu quả có ý nghĩa thống kê (g = 0,21).'
+  cau: 'Ở người từ 65 tuổi trở lên, hiệu quả có ý nghĩa thống kê (g = 0,33; khoảng tin cậy 95%: 0,14–0,51), còn ở nhóm 18–65 tuổi (chỉ 4 thử nghiệm) thì chưa đạt ý nghĩa thống kê; tác giả đọc đây là lợi ích lớn hơn ở người cao tuổi, nhưng khi chính bài kiểm định ảnh hưởng của tuổi bằng hồi quy tổng hợp (meta-regression), khác biệt giữa hai nhóm tuổi không có ý nghĩa thống kê (p = 0,69). Ở người có bệnh, g = 0,28; các chương trình dài 13–26 tuần có hiệu quả có ý nghĩa thống kê (g = 0,21).'
   loai: so-lieu
   nguon:
   - zhang2025
   - zhang2025-pmc
-  trich: 'Participants aged over 65 exhibited significant effects (g = 0.33, 95% CI: 0.14 to 0.51; p < 0.05), whereas those aged 18 to 65 did not (p = 0.099), indicating greater cognitive benefits from exercise in older adults. Clinical populations demonstrated significant effects (g = 0.28, 95% CI: 0.11 to 0.46; p < 0.001) … Bảng 3: 18–65, k = 4, g = 0,24 (0,00 đến 0,48); >65, k = 31, g = 0,33 (0,14 đến 0,51)'
-  vi_tri: toàn văn, Results (Participants moderators), Bảng 3
+  trich: 'Participants aged over 65 exhibited significant effects (g = 0.33, 95% CI: 0.14 to 0.51; p < 0.05), whereas those aged 18 to 65 did not (p = 0.099), indicating greater cognitive benefits from exercise in older adults. Clinical populations demonstrated significant effects (g = 0.28, 95% CI: 0.11 to 0.46; p < 0.001) … Bảng 3: 18–65, k = 4, g = 0,24 (0,00 đến 0,48); >65, k = 31, g = 0,33 (0,14 đến 0,51) … Bảng 4 (Meta-regression analysis for potential heterogeneity): Age (18–65 years, >65 years), k = 36, R² = 0,03, p value 0.69'
+  vi_tri: toàn văn, Results (Participants moderators), Bảng 3, Bảng 4
   ket_qua: da-sua
   luot_2: qua-manh
   luot_2_nguon:
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC11987655/
   luot_2_ghi_chu: 'câu đúng: Ở người từ 65 tuổi trở lên, tập kết hợp có hiệu quả có ý nghĩa thống kê (g = 0,33; KTC 95%: 0,14-0,51), còn ở nhóm 18-65 tuổi thì chưa đạt ý nghĩa thống kê (p = 0,099); tác giả diễn giải là lợi ích lớn hơn ở người cao tuổi, nhưng đây là so sánh có/không đạt ý nghĩa thống kê giữa các nhóm con, chưa phải phép kiểm định sự khác biệt. Ở người có bệnh g = 0,28; ở các chương trình 13-26 tuần g = 0,21 (có ý nghĩa).; chỗ khó: các số đều đúng; vấn đề là ''rõ hơn'' dựa trên so sánh ý nghĩa thống kê giữa các nhóm con (g = 0,33 gần bằng g chung 0,32, khoảng tin cậy rộng), nên nói mạnh hơn bằng chứng. Câu trích dùng đúng lời tác giả nên nếu giữ thì nên thêm ''theo tác giả'' và giới hạn này.'
-  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 qua-manh, đồng ý. Chữ cũ: "Lợi ích rõ hơn ở người từ 65 tuổi trở lên (g = 0,33) và cũng thấy ở người có bệnh (g = 0,28)". Đã tự mở toàn văn (Bảng 3): nhóm 18–65 chỉ 4 thử nghiệm, g = 0,24, p = 0,099. Câu mới theo cau_dung; không nêu p = 0,099 và g của nhóm trẻ (giữ tin ngắn). Khác cau_dung: thêm "khoảng tin cậy" và viết "đó là so sánh nhóm nào đạt…"; review xem.'
+  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 qua-manh, đồng ý. Chữ cũ: "Lợi ích rõ hơn ở người từ 65 tuổi trở lên (g = 0,33) và cũng thấy ở người có bệnh (g = 0,28)". Đã tự mở toàn văn (Bảng 3): nhóm 18–65 chỉ 4 thử nghiệm, g = 0,24, p = 0,099. Câu mới theo cau_dung; không nêu p = 0,099 và g của nhóm trẻ (giữ tin ngắn). Khác cau_dung: thêm "khoảng tin cậy" và viết "đó là so sánh nhóm nào đạt…"; review xem. Review (Claude Opus 5.5, agent riêng, 17/11/2026): tự mở toàn văn (Europe PMC fullTextXML PMC11987655). Các số đúng (Bảng 3; tóm tắt: >65 g = 0,33, 0,14–0,51; người có bệnh g = 0,28; 13–26 tuần g = 0,21). Nhưng vế "không phải phép kiểm định khác biệt giữa hai nhóm" chưa đúng hẳn: bài có kiểm định tuổi bằng hồi quy tổng hợp (Bảng 4: tuổi, k = 36, p = 0,69, không có ý nghĩa), và ghi "the 95% CI for all factors overlapped". Đã sửa câu theo Bảng 4 (thêm "chỉ 4 thử nghiệm" theo Bảng 3); câu mới cùng hướng thận trọng với cau_dung của lượt 2, chính xác hơn theo toàn văn.'
 - id: z4
   cau: Tác giả khuyên ưu tiên phần tập sức mạnh, mỗi buổi 30–60 phút.
   loai: phat-hien
@@ -285,15 +291,16 @@ nhan_dinh:
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC3840331/
   luot_2_ghi_chu: Qua Lakens (2013); không mở sách gốc của Cohen. Lakens nhấn mạnh các mốc này mang tính tùy ý.
 - id: z6
-  cau: Theo các mốc Cohen (1988), chúng tôi đọc g = 0,32 là hiệu quả nhỏ; tác giả không tự xếp mức.
+  cau: Theo các mốc Cohen (1988), chúng tôi đọc g = 0,32 là hiệu quả nhỏ; tác giả thì gọi đây là hiệu quả mức vừa (moderate).
   loai: phat-hien
   nguon:
   - zhang2025
   - lakens2013
-  trich: 'g = 0.32, 95% CI: 0.17-0.46'
-  vi_tri: tóm tắt
-  ket_qua: da-lam-mem
-  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 dung, ghi chú đây là cách đọc của site. Chữ trên trang nay nói rõ: "nên chúng tôi đọc g = 0,32 là hiệu quả nhỏ; tác giả không tự xếp mức". Chữ cũ: "hiệu quả ở khoảng nhỏ đến vừa".'
+  - zhang2025-pmc
+  trich: 'g = 0.32, 95% CI: 0.17-0.46 … The overall findings indicate moderate effects of CT on global cognition. … Concurrent training yield moderate improvements in cognitive health'
+  vi_tri: tóm tắt; toàn văn, Discussion (Main effects) và Conclusions
+  ket_qua: da-sua
+  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 17/11/2026): lượt 2 dung, ghi chú đây là cách đọc của site. Chữ trên trang nay nói rõ: "nên chúng tôi đọc g = 0,32 là hiệu quả nhỏ; tác giả không tự xếp mức". Chữ cũ: "hiệu quả ở khoảng nhỏ đến vừa". Review (Claude Opus 5.5, agent riêng, 17/11/2026): vế "tác giả không tự xếp mức" sai: toàn văn (PMC11987655) viết "The overall findings indicate moderate effects of CT on global cognition" (Discussion) và "Concurrent training yield moderate improvements" (Conclusions); tóm tắt không xếp mức. Đã sửa: "tác giả thì gọi đây là hiệu quả mức vừa (moderate)"; giữ cách đọc của site theo mốc Cohen (z5). ket_qua đổi từ da-lam-mem thành da-sua.'
   luot_2: dung
   luot_2_nguon:
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC11987655/
@@ -303,11 +310,13 @@ nhan_dinh:
   cau: 'Bài Tập thể dục có làm não khỏe hơn? xếp câu "tập aerobic cải thiện nhận thức đến mức nào" vào nhãn Đang tranh cãi: các phân tích tổng hợp cho hiệu quả nhỏ, và một tổng quan ô dù thấy hiệu quả chung gần như không còn sau khi hiệu chỉnh thiên lệch xuất bản.'
   loai: ve-site
   ket_qua: da-sua
+  review: dung
   ghi_chu: 'src/content/docs/kham-pha/co-so-sinh-hoc/the-duc-nao.md (đã khóa) dòng 70 ":::tranh-cai[tập aerobic cải thiện nhận thức đến mức nào]" và dòng 71 (Smith 2010 g ≈ 0,12–0,16; Ciria 2023 d = 0,05 sau hiệu chỉnh). Chữ cũ "đã kết luận khá vững … (g ≈ 0,12–0,18)" sai với bài hiện nay: đã sửa.'
 - id: z8
   cau: Con số của Zhang và cộng sự đo nhận thức tổng thể với tập kết hợp, ở những nhóm người khác, nên không so thẳng được với các con số trong bài; một phân tích mới chưa đủ để đổi nhãn.
   loai: ve-site
   ket_qua: dung
+  review: dung
   ghi_chu: So z2 (nhận thức tổng thể, tập kết hợp) với the-duc-nao.md dòng 71 (từng chức năng, tập aerobic). Câu cũ cùng ý ("hai phân tích khác nhau về nhóm người tham gia và cách đo").
 - id: g1
   cau: Ng, Noh và Spencer (2025), eLife 13, RP101992.
@@ -375,6 +384,7 @@ nhan_dinh:
   cau: Bài Ngủ có giúp nhớ bài? kể rằng trong giấc ngủ sóng chậm, sóng chậm, thoi ngủ và gợn sóng phối hợp "phát lại" ký ức.
   loai: ve-site
   ket_qua: da-sua
+  review: dung
   ghi_chu: 'src/content/docs/kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho.md dòng 34 (đã khóa): "sóng chậm, thoi ngủ (spindle) và gợn sóng (ripple) phối hợp "phát lại" ký ức". Chữ cũ "ca làm việc ban đêm" và "chuyển từ hồi hải mã sang vỏ não" rút gọn.'
 - id: f1
   cau: 'Ferguson, Kaye, Branley-Bell và Markey (2025), Professional Psychology: Research and Practice 56(1), 73–83.'
@@ -433,11 +443,13 @@ nhan_dinh:
   cau: 'Bài Mạng xã hội có làm teen trầm cảm? trình bày hai phe: phe kết tội của Haidt (2024) và phe hoài nghi của Orben và Przybylski (2019), vốn thấy liên hệ đo được rất nhỏ; bài xếp câu "mạng xã hội hoàn toàn vô hại với teen" vào nhãn Đã bị bác bỏ.'
   loai: ve-site
   ket_qua: da-sua
+  review: dung
   ghi_chu: 'src/content/docs/kham-pha/phat-trien/mang-xa-hoi-teen.md (đã khóa): dòng 21, 27, 37 (0,4% phương sai), dòng 71 ":::bac-bo[mạng xã hội hoàn toàn vô hại với teen]". Không nhắc lại con số 0,4% (con số của trang nhà).'
 - id: f6
   cau: Phân tích tổng hợp này nghiêng về phía hoài nghi.
   loai: ve-site
   ket_qua: da-lam-mem
+  review: dung
   ghi_chu: So f2 với hai phe ở mang-xa-hoi-teen.md. Chữ cũ "củng cố phía hoài nghi" làm mềm thành "nghiêng về".
 doi_chu:
 - cu: '"Trang được cập nhật định kỳ mỗi quý." "Cập nhật lần cuối: tháng 10/2026." và dòng cuối "Trang này sẽ được cập nhật mỗi quý. Nếu bạn thấy một nghiên cứu mới … hãy ghi chú lại"'

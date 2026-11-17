@@ -38,7 +38,7 @@ Kết quả các bài thử chỉ lưu trong trình duyệt của bạn, không 
 
 ## Đọc khi không có mạng
 
-Trình duyệt lưu các trang bạn đã mở trên máy, để đọc lại được khi mất mạng; mỗi lần site cập nhật, bản lưu cũ được thay. Bạn tắt được việc này ở trang [Dữ liệu của tôi](/psyche/them/du-lieu-cua-toi/). Muốn đọc trên giấy: [Sách in](/psyche/sach/) gộp mọi bài đã kiểm chứng, [Tờ tóm tắt](/psyche/sach/tom-tat/) tóm mỗi bài trong vài dòng.
+Trình duyệt lưu các trang bạn đã mở trên máy, để đọc lại được khi mất mạng; mỗi lần site cập nhật, các trang đã lưu bị xóa để khỏi đọc phải bản cũ, và trang nào bạn mở lại thì được lưu bản mới. Bạn tắt được việc này ở trang [Dữ liệu của tôi](/psyche/them/du-lieu-cua-toi/). Muốn đọc trên giấy: [Sách in](/psyche/sach/) gộp mọi bài đã kiểm chứng, [Tờ tóm tắt](/psyche/sach/tom-tat/) tóm mỗi bài trong vài dòng.
 
 ## Site tự áp dụng tâm lý học
 

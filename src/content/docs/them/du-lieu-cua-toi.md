@@ -17,4 +17,4 @@ Khôi phục là **gộp, không ghi đè**: các bản ghi trong file được 
 
 ## Đọc khi mất mạng
 
-Khi bật (mặc định), trình duyệt lưu các trang bạn đã mở trên máy này, cùng trang Hỗ trợ, để đọc lại được khi mất mạng. Mỗi lần site cập nhật, bản lưu cũ được thay. Trang chưa mở lần nào thì chưa đọc được khi mất mạng. Tắt thì các trang đã lưu bị xóa; kết quả bài thử không bị ảnh hưởng.
+Khi bật (mặc định), trình duyệt lưu các trang bạn đã mở trên máy này, cùng trang Hỗ trợ, để đọc lại được khi mất mạng. Mỗi lần site cập nhật, các trang đã lưu bị xóa để khỏi đọc phải bản cũ; trang nào bạn mở lại thì được lưu bản mới. Trang chưa mở lần nào thì chưa đọc được khi mất mạng. Tắt thì các trang đã lưu bị xóa; kết quả bài thử không bị ảnh hưởng.
