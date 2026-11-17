@@ -84,6 +84,14 @@ jobs:
         run: |
           gh issue close "${{ steps.issue.outputs.number }}" --repo "$GITHUB_REPOSITORY" --comment "Lần kiểm tra tự động ngày $(date -u +%d/%m/%Y): ${{ matrix.het }}."
 
+      # phòng hờ: mã 1 ("có việc") mà không có issue.md thì script đã hỏng giữa chừng (script tự bắt lỗi và thoát 2, nhưng
+      # Node cũng thoát 1 khi có lỗi chưa bắt): làm hỏng job thay vì xanh mà không có issue
+      - name: Có việc mà không có nội dung issue
+        if: steps.canh.outputs.exit_code == '1' && hashFiles('issue.md') == ''
+        run: |
+          echo "tools/may-canh.mjs ${{ matrix.viec }} thoát với mã 1 mà không ghi issue.md: script hỏng"
+          exit 1
+
       - name: Script hỏng hay mạng hỏng
         if: steps.canh.outputs.exit_code != '0' && steps.canh.outputs.exit_code != '1'
         run: |

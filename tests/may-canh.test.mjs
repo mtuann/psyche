@@ -20,6 +20,7 @@ import {
 	issueRutBai,
 	issueThoiSu,
 	kiemLaiToiHan,
+	laNgay,
 	layJson,
 	loiDaXet,
 	nhomCapNhat,
@@ -292,4 +293,53 @@ test('script trên repo thật (không mạng): đọc được dữ liệu, mã
 	} finally {
 		fs.rmSync(tep, { force: true });
 	}
+});
+
+test('ngày có thật: loại ngày không tồn tại và dạng thiếu số 0', () => {
+	assert.equal(laNgay('2027-01-05'), true);
+	assert.equal(laNgay('2028-02-29'), true);
+	assert.equal(laNgay('2026-02-31'), false);
+	assert.equal(laNgay('2027-02-29'), false);
+	assert.equal(laNgay('2027-1-5'), false);
+	assert.equal(laNgay('2027-13-01'), false);
+	assert.equal(laNgay(''), false);
+});
+
+test('thời sự: het_han sai dạng hay không có thật vẫn vào issue, nhóm "ngày hạn sai", xếp đầu', (t) => {
+	const r = repoMau();
+	t.after(r.xoa);
+	const f = path.join(r.goc, 'kiem-dinh/kham-pha/x/mot.yml');
+	const hs = parse(fs.readFileSync(f, 'utf8'));
+	hs.nhan_dinh.push(
+		{ id: 'n7', cau: 'Hạn viết thiếu số 0.', loai: 'thoi-su', nguon: ['tim'], het_han: '2027-1-5', ket_qua: 'dung' },
+		{ id: 'n8', cau: 'Hạn không có thật.', loai: 'thoi-su', nguon: ['tim'], het_han: '2026-02-31', ket_qua: 'dung' },
+		{ id: 'n9', cau: 'Thiếu hạn.', loai: 'thoi-su', nguon: ['tim'], ket_qua: 'dung' },
+	);
+	fs.writeFileSync(f, stringify(hs));
+	const ds = thoiSuToiHan(docKho(r.goc), '2026-10-01');
+	assert.deepEqual(ds.map((x) => [x.id, x.sai ?? false]), [['n9', true], ['n8', true], ['n7', true]]);
+	const md = issueThoiSu(ds, '2026-10-01');
+	assert.match(md, /\*\*Ngày hạn sai: 3 khẳng định\*\*/);
+	assert.match(md, /`n7` \| Hạn viết thiếu số 0\. \| \*\*ngày hạn sai\*\*: `2027-1-5`/);
+	assert.match(md, /\*\*ngày hạn sai\*\*: `\(trống\)`/);
+	// script: có mục ngày hạn sai thì là có việc (mã 1)
+	const kq = spawnSync(process.execPath, [path.join(ROOT, 'tools/may-canh.mjs'), 'thoi-su', '--ngay', '2026-10-01'], { encoding: 'utf8', env: { ...process.env, PSYCHE_MAY_CANH_GOC: r.goc } });
+	assert.equal(kq.status, 1, kq.stderr);
+	assert.match(kq.stdout, /n7: het_han 2027-1-5 \(ngày hạn sai\)/);
+});
+
+test('script sập (hồ sơ YAML hỏng, khoa.json hỏng) thì thoát 2, không bao giờ 1 ("có việc")', (t) => {
+	const r = repoMau();
+	t.after(r.xoa);
+	const chay = (viec) => spawnSync(process.execPath, [path.join(ROOT, 'tools/may-canh.mjs'), viec, '--khong-mang', '--ngay', '2026-10-01'], { encoding: 'utf8', env: { ...process.env, PSYCHE_MAY_CANH_GOC: r.goc } });
+	assert.equal(chay('thoi-su').status, 0, 'bản chép lành');
+	fs.writeFileSync(path.join(r.goc, 'kiem-dinh/kham-pha/x/hai.yml'), 'trang: [hỏng\n  - : :\n');
+	for (const viec of ['thoi-su', 'kiem-lai', 'rut-bai']) {
+		const kq = chay(viec);
+		assert.equal(kq.status, 2, `${viec}: ${kq.stdout}`);
+		assert.match(kq.stderr, /may-canh\.mjs sập/);
+	}
+	fs.writeFileSync(path.join(r.goc, 'kiem-dinh/kham-pha/x/hai.yml'), 'trang: src/content/docs/kham-pha/x/hai.md\n');
+	fs.writeFileSync(path.join(r.goc, 'kiem-dinh/khoa.json'), '{ hỏng');
+	assert.equal(chay('kiem-lai').status, 2);
 });

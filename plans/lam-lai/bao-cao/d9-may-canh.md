@@ -22,6 +22,14 @@ Máy canh theo `plans/ben-vung/README.md` mục 4.7 và kế hoạch đợt 9: c
 - **Hằng quý:** `ho-tro-quarterly.yml` (giữ tên file như site cũ, đổi tên workflow) thêm job `nghien-cuu-moi`. Job mở issue nhắc tìm tin Nghiên cứu mới (kèm ngày của tin mới nhất, đọc từ trang) và nhắc xử lý các issue của máy canh.
 - **Cờ dòng lệnh:** `--ngay 2027-06-01` chạy thử theo ngày; `--truoc N` đổi ngưỡng báo trước; `--khong-mang` không gọi mạng; `--luu`, `--tu` lưu kết quả Crossref ra JSON hay đọc lại từ đó; `--ra issue.md` ghi nội dung issue; `tat-ca` chạy cả ba việc.
 
+- **Sửa sau review (17/11/2026):**
+  - Script sập (YAML hỏng, lỗi chưa bắt, promise bị từ chối) thì thoát 2, không còn 1. Workflow thêm phòng hờ: mã 1 mà không có `issue.md` thì làm hỏng job.
+  - `ho-tro-quarterly.yml` thêm `contents: read`.
+  - Ngày phải là ngày có thật (đi một vòng qua `Date` vẫn ra đúng chuỗi).
+  - `het_han` thiếu hay sai dạng không còn bị bỏ qua: vào issue `thoi-su` thành nhóm "ngày hạn sai", xếp đầu. Hiện không có câu nào như vậy.
+  - Biến `PSYCHE_MAY_CANH_GOC` trỏ dữ liệu sang bản chép khác, dùng cho kiểm thử.
+  - Đã kiểm `peter-evans/create-issue-from-file@v6` và `lycheeverse/lychee-action@v2`: hai tag có thật (bản mới nhất v6.0.0, v2.9.0).
+
 ## File đã chạm
 
 - Mới: `tools/may-canh.mjs`, `tools/may-canh-da-xet.yml`, `tests/may-canh.test.mjs`, `.github/workflows/may-canh.yml`, báo cáo này.
@@ -30,7 +38,7 @@ Máy canh theo `plans/ben-vung/README.md` mục 4.7 và kế hoạch đợt 9: c
 
 ## Kiểm thử
 
-- `tests/may-canh.test.mjs`, 12 phép thử, không gọi mạng (dùng repo mẫu trong thư mục tạm và fetch giả):
+- `tests/may-canh.test.mjs`, 15 phép thử (thêm: ngày có thật, `het_han` sai, script sập thoát 2), không gọi mạng (dùng repo mẫu trong thư mục tạm và fetch giả):
   - ngày; chuẩn hóa DOI;
   - trạng thái khóa (cả bản ghi, từng phần);
   - thời sự (chỉ mục đã khóa, phần đã khóa, bỏ `da-bo`, ngưỡng);
@@ -41,7 +49,7 @@ Máy canh theo `plans/ben-vung/README.md` mục 4.7 và kế hoạch đợt 9: c
   - thử lại khi lỗi mạng, 429, 5xx;
   - lô Crossref có DOI thiếu và lô lỗi mạng (DOI lỗi không thành phát hiện);
   - chạy script trên repo thật với `--khong-mang` và `--ngay`.
-- `npm run build:xem && npm test`: 147 phép thử, 146 đạt, 1 bỏ qua (phép thử cần site cũ), 0 hỏng.
+- `npm run build:xem && npm test`: 150 phép thử, 149 đạt, 1 bỏ qua (phép thử cần site cũ), 0 hỏng.
 - Workflow đã đọc lại bằng YAML parser. Đoạn script của job quý đã chạy thử ở máy, thay `gh` bằng `echo`. Các workflow chưa chạy trên GitHub (nhánh chưa push), nên chưa có actionlint.
 
 ## Kết quả lần chạy thật (17/11/2026, máy chủ repo)
