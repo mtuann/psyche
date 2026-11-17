@@ -84,7 +84,7 @@ Hiệu ứng tương tự âm (Conrad, 1964; Baddeley, 1966a) được tổng qu
 :::
 
 :::kha-vung[dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn]
-Hiệu ứng độ dài từ (Baddeley và cộng sự, 1975) được tổng quan của Oberauer và cộng sự (2018) xếp vào nhóm phát hiện ổn định, quan sát được ở nhiều ngôn ngữ khi độ dài được thay đổi bằng số âm tiết. Cách giải thích thì còn tranh cãi: từ dài và từ ngắn thường khác nhau cả ở những yếu tố khác, như số từ "láng giềng" có chính tả và âm gần giống; khi cân bằng thêm các yếu tố này, hiệu ứng độ dài từ mất đi, ở bài nhận diện thứ tự trong nghiên cứu của Guitard, Neath và Surprenant (2025), như các nghiên cứu trước đó ở bài nhớ lại theo thứ tự mà họ dẫn ([Guitard, Neath và Surprenant, 2025](https://doi.org/10.3758/s13421-025-01762-5)). Vì vậy nhãn là *Khá vững*: dãy từ dài thường nhớ kém hơn, nhưng chưa chắc độ dài tự nó là nguyên nhân.
+Tổng quan của Oberauer và cộng sự (2018) gọi hiệu ứng độ dài từ (Baddeley và cộng sự, 1975) là ổn định khi độ dài được thay đổi bằng số âm tiết, quan sát được ở nhiều ngôn ngữ, và xếp nó ở mức B (phạm vi hẹp hơn mức A, vì chỉ thuộc trí nhớ cho lời nói). Cách giải thích thì còn tranh cãi: từ dài và từ ngắn thường khác nhau cả ở những yếu tố khác, như số từ "láng giềng" có chính tả và âm gần giống; khi cân bằng thêm các yếu tố này, hiệu ứng độ dài từ mất đi, ở bài nhận diện thứ tự trong nghiên cứu của Guitard, Neath và Surprenant (2025), như các nghiên cứu trước đó ở bài nhớ lại theo thứ tự mà họ dẫn ([Guitard, Neath và Surprenant, 2025](https://doi.org/10.3758/s13421-025-01762-5)). Vì vậy nhãn là *Khá vững*: dãy từ dài thường nhớ kém hơn, nhưng chưa chắc độ dài tự nó là nguyên nhân.
 :::
 
 :::kha-vung[bộ đệm tập (episodic buffer)]

@@ -19,7 +19,7 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: "Claude Opus 5.5 (agent mở khóa mo/sua-nho-dot-8, 17/11/2026): tách tên gọi khỏi n9, thêm n50 theo Burton (2001) như công cụ trai-nghiem/ebbinghaus (n2); n10 cùng gạch đầu dòng không đổi chữ, giữ kết quả lần 1"
-      luot_2: "chờ lượt 2 bổ sung (n9, n50: plans/lam-lai/bao-cao/sua-nho-dot-8-nhan-dinh.yml)"
+      luot_2: "Claude Opus (agent riêng, lượt 2 sửa nhỏ đợt 8, plans/lam-lai/bao-cao/sua-nho-dot-8-luot-2.yml, 17/11/2026): dung"
       review: null
       kiem_mau: null
 nguon:
@@ -193,6 +193,9 @@ nhan_dinh:
     vi_tri: Burton 2001, tóm tắt (OpenAlex); Amir & Firestone 2026 (như lần 1)
     ket_qua: da-sua
     ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Titchener phổ biến hình này trong sách giáo khoa tiếng Anh năm 1901, nên gọi "vòng tròn Titchener"; chỉ có Wikipedia là nguồn đọc được cho tên gọi (bậc ba), phần hiệu ứng thì Amir & Firestone 2026 xác nhận. Giữ vì là câu lịch sử ít rủi ro; lượt sau nên thêm nguồn bậc 1. Mở khóa 17/11/2026 (mo/sua-nho-dot-8): chữ cũ "Vòng tròn Ebbinghaus (còn gọi là vòng tròn Titchener): một vòng tròn …", chữ mới bỏ ngoặc tên gọi; tên gọi tách thành n50 theo Burton (2001), bỏ nguồn wiki-eb (câu "Titchener popularized it … in a 1901 psychology textbook" lệch với Burton: Titchener không có quyền tác giả, cách gọi theo tên ông chỉ có từ khoảng 1957). Phần mô tả hình giữ nguyên; loai đổi lich-su thành dinh-nghia vì câu chỉ còn mô tả hình.'
+    luot_2: dung
+    luot_2_nguon: [ "https://dictionary.apa.org/ebbinghaus-illusion", "https://doi.org/10.1037/1093-4510.4.3.228" ]
+    luot_2_ghi_chu: Hai nguồn mô tả đúng như câu. Burton 2001 chỉ đọc được tóm tắt (qua OpenAlex; APA PsycNet đóng).
   - id: n10
     cau: Ảo giác Ebbinghaus cho thấy ngữ cảnh bóp méo cảm nhận kích thước.
     loai: phat-hien
@@ -771,6 +774,9 @@ nhan_dinh:
     ghi_chu: 'Câu mới khi mở khóa (mo/sua-nho-dot-8, 17/11/2026), thay vế "còn gọi là vòng tròn Titchener" của n9 (lần 1 dựa Wikipedia: Titchener phổ biến hình năm 1901). Cùng nội dung với công cụ đã khóa trai-nghiem/ebbinghaus (hồ sơ n2, lượt 2 dung); trang không nêu năm 1901 hay 1957 để khỏi thêm chi tiết. "có lẽ" theo chữ "probably" của Burton. Chưa mở được toàn văn Burton (APA); tóm tắt đủ cho cả ba vế.'
     o_dau:
       trai-nghiem/ebbinghaus.md: Titchener không tạo ra hình này
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/1093-4510.4.3.228", "https://api.openalex.org/works/doi:10.1037/1093-4510.4.3.228", "https://dictionary.apa.org/ebbinghaus-illusion" ]
+    luot_2_ghi_chu: "Chỉ đọc được tóm tắt của Burton (bài đóng, không có bản mở; có bài đính chính Burton 2002, doi 10.1037/1093-4510.5.1.37, cũng đóng, không rõ đính chính điều gì). Tóm tắt nói đủ các ý của câu: 'có lẽ' Ebbinghaus đưa ra từ những năm 1890, Titchener không tạo ra và không nhận. Tên 'Titchener circles' trong tiếng Anh: APA Dictionary xác nhận."
 doi_chu:
   - cu: 'mô tả: "…phát hiện rằng người phương Tây dễ bị ''lừa'' hơn nhiều nền văn hóa khác."'
     moi: '"…dễ bị ảo giác Müller-Lyer hơn nhiều nền văn hóa khác."'

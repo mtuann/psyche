@@ -19,7 +19,7 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: "Claude Opus 5.5 (agent mở khóa mo/sua-nho-dot-8, 17/11/2026): tách khung Vững chắc n35 (chỉ còn hiệu ứng tương tự âm) và thêm khung Khá vững n71 cho hiệu ứng độ dài từ, thống nhất với công cụ trai-nghiem/tri-nho-tu (n5); quyết định nhãn ở plans/lam-lai/bao-cao/sua-nho-dot-8.md, việc 4"
-      luot_2: "chờ lượt 2 bổ sung (n35, n71: plans/lam-lai/bao-cao/sua-nho-dot-8-nhan-dinh.yml)"
+      luot_2: "Claude Opus (agent riêng, lượt 2 sửa nhỏ đợt 8, plans/lam-lai/bao-cao/sua-nho-dot-8-luot-2.yml, 17/11/2026): n35, n71 dung; n71 sau đó chính xác hóa câu về mức B theo lưu ý của lượt 2, chờ lượt 2 bổ sung (sua-nho-dot-8-nhan-dinh-2.yml)"
       review: null
       kiem_mau: null
 nguon:
@@ -528,6 +528,9 @@ nhan_dinh:
       - baddeley1966a
     trich: "Benchmark 8.1.1: Phonological similarity (A). Increasing the phonological similarity between memoranda leads to worse serial recall performance … The phonological similarity effect is observed regardless of whether memoranda are presented visually or auditorily … This suggests that phonology is a preferred form of representation for verbal WM."
     vi_tri: Oberauer và cộng sự 2018, Benchmark 8.1.1, tr. 906 (PDF tác giả cns.nyu.edu, mở 17/11/2026); định nghĩa mức A ở mục Criteria and Scope, tr. 887
+    luot_2: dung
+    luot_2_nguon: [ "https://unsworks.unsw.edu.au/bitstreams/0ed47cd2-5eff-4a07-a449-586c99763aac/download", "https://doi.org/10.1037/bul0000153" ]
+    luot_2_ghi_chu: "Nhãn Vững chắc đạt thước đo: tổng quan đồng thuận ở Psychological Bulletin xếp mức A (tổng quát qua nhiều mô hình thí nghiệm). Lưu ý: Oberauer nói hiệu ứng bất lợi là ở trí nhớ thứ tự; với từ vần, trí nhớ về từ (không theo thứ tự) có khi lợi, và ở bài complex span thường thấy lợi. Khung nói 'nhớ kém hơn' chung, đọc theo nghĩa nhớ dãy theo thứ tự thì đúng. 'Vòng lặp âm vị là cách giải thích phổ biến nhất': bài gọi là 'cornerstone of the phonological loop theory', không xếp hạng các cách giải thích, nhưng câu không mạnh hơn mức ấy."
   - id: n36
     cau: 'Khung "Khá vững": bộ đệm tập (episodic buffer).'
     loai: nhan
@@ -971,7 +974,7 @@ nhan_dinh:
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922", "https://psychclassics.yorku.ca/Miller/" ]
     review: dung
   - id: n71
-    cau: 'Khung "Khá vững": dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn; Oberauer và cộng sự (2018) xếp hiệu ứng độ dài từ (Baddeley và cộng sự 1975) vào nhóm phát hiện ổn định, quan sát được ở nhiều ngôn ngữ khi độ dài thay đổi bằng số âm tiết; cách giải thích còn tranh cãi: từ dài và ngắn thường khác nhau cả ở số từ láng giềng có chính tả và âm gần giống, và khi cân bằng thêm các yếu tố này, hiệu ứng mất đi ở bài nhận diện thứ tự (Guitard, Neath và Surprenant 2025), như các nghiên cứu trước ở bài nhớ lại theo thứ tự mà họ dẫn; chưa chắc độ dài tự nó là nguyên nhân.'
+    cau: 'Khung "Khá vững": dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn; Oberauer và cộng sự (2018) gọi hiệu ứng độ dài từ (Baddeley và cộng sự 1975) là ổn định khi độ dài thay đổi bằng số âm tiết, quan sát được ở nhiều ngôn ngữ, và xếp mức B (phạm vi hẹp hơn mức A, vì chỉ thuộc trí nhớ cho lời nói); cách giải thích còn tranh cãi: từ dài và ngắn thường khác nhau cả ở số từ láng giềng có chính tả và âm gần giống, và khi cân bằng thêm các yếu tố này, hiệu ứng mất đi ở bài nhận diện thứ tự (Guitard, Neath và Surprenant 2025), như các nghiên cứu trước ở bài nhớ lại theo thứ tự mà họ dẫn; chưa chắc độ dài tự nó là nguyên nhân.'
     loai: nhan
     nhan: kha-vung
     nguon:
@@ -985,9 +988,12 @@ nhan_dinh:
     vi_tri: Oberauer và cộng sự 2018, Benchmark 7, tr. 905–906; Guitard và cộng sự 2025, tóm tắt và Thảo luận Thí nghiệm 2 (Europe PMC PMC12956956)
     ly_do: 'Thước đo mục 4, nhãn cho một khẳng định cụ thể. Hiện tượng (dãy từ nhiều âm tiết nhớ kém hơn, với chất liệu thường dùng): nhiều nghiên cứu cùng chiều ở nhiều ngôn ngữ (Oberauer 2018, mức B vì chỉ thuộc miền lời nói), Guitard 2025 Thí nghiệm 1 cũng lặp lại được với từ không cân bằng. Nhưng Oberauer phát biểu nó như một thao tác ("robust when word length is manipulated through the number of syllables"), và các nghiên cứu cân bằng kỹ hơn (Jalbert 2011a, b; Guitard 2018; Guitard 2025, Bayes factor ủng hộ giả thuyết không) thấy hiệu ứng mất: bằng chứng chất lượng tốt trái chiều với khẳng định "độ dài tự nó làm nhớ kém", nên khẳng định nhân quả không đạt Vững chắc (cần không có thất bại lớn chưa giải thích) và chính là phần Đang tranh cãi (bằng chứng chất lượng cao mâu thuẫn). Phần mô tả còn lại (dãy từ dài thường nhớ kém hơn, chưa rõ vì đâu) là Khá vững: nhiều nghiên cứu cùng chiều nhưng có giới hạn rõ (độ dài lẫn với yếu tố từ vựng; chưa có phân tích tổng hợp về độ lớn). Cùng nhãn và lý lẽ với công cụ trai-nghiem/tri-nho-tu n5.'
     ket_qua: da-sua
-    ghi_chu: 'Khung mới khi mở khóa 17/11/2026, tách từ n35 (xem ghi_chu n35). Chữ thân khung theo công cụ trai-nghiem/tri-nho-tu (đã khóa), thêm vế "như các nghiên cứu trước ở bài nhớ lại theo thứ tự mà họ dẫn" theo Thảo luận Thí nghiệm 2 của Guitard 2025 (toàn văn PMC). Bỏ cách giải thích "nhiễu giữa các mục" của khung cũ (lượt 2 công cụ tri-nho-tu không xác nhận được nguồn cho cách gọi ấy); thay bằng giải thích từ vựng theo Guitard 2025. Không nêu "chưa có phân tích tổng hợp" trên trang (sẽ là câu thời sự); tìm Europe PMC 17/11/2026 ("word length effect" AND meta-analysis; "word-length effect" AND preregistered/registered report): không có bài tổng hợp hay tái lập có đăng ký trước cho hiệu ứng này.'
+    ghi_chu: 'Khung mới khi mở khóa 17/11/2026, tách từ n35 (xem ghi_chu n35). Chữ thân khung theo công cụ trai-nghiem/tri-nho-tu (đã khóa), thêm vế "như các nghiên cứu trước ở bài nhớ lại theo thứ tự mà họ dẫn" theo Thảo luận Thí nghiệm 2 của Guitard 2025 (toàn văn PMC). Bỏ cách giải thích "nhiễu giữa các mục" của khung cũ (lượt 2 công cụ tri-nho-tu không xác nhận được nguồn cho cách gọi ấy); thay bằng giải thích từ vựng theo Guitard 2025. Không nêu "chưa có phân tích tổng hợp" trên trang (sẽ là câu thời sự); tìm Europe PMC 17/11/2026 ("word length effect" AND meta-analysis; "word-length effect" AND preregistered/registered report): không có bài tổng hợp hay tái lập có đăng ký trước cho hiệu ứng này. Sau lượt 2 (Opus, 17/11/2026: dung, kèm lưu ý): Oberauer định nghĩa mức B là phát hiện áp dụng cho phạm vi hẹp hơn mức A ("The benchmark applies to a narrower set of tasks or paradigms than an A benchmark"), không phải mức "ổn định"; chữ cũ "xếp vào nhóm phát hiện ổn định" dễ hiểu là mức B nghĩa là ổn định. Chữ mới: "gọi hiệu ứng … là ổn định (robust) …, và xếp nó ở mức B (phạm vi hẹp hơn mức A, vì chỉ thuộc trí nhớ cho lời nói)", theo Benchmark 7 ("Given its restriction to the verbal domain, the rating … is a B") và định nghĩa mức B (tr. 887). Lượt 1 tự kiểm trên bản PDF tác giả đã mở. Lượt 2 cho dung với câu cũ; câu mới chỉ chính xác hóa, nhưng vẫn ghi vào danh sách lượt 2 bổ sung.'
     o_dau:
       trai-nghiem/tri-nho-tu.md: Vì vậy nhãn là *Khá vững*
+    luot_2: dung
+    luot_2_nguon: [ "https://unsworks.unsw.edu.au/bitstreams/0ed47cd2-5eff-4a07-a449-586c99763aac/download", "https://link.springer.com/content/pdf/10.3758/s13421-025-01762-5.pdf" ]
+    luot_2_ghi_chu: "Đúng. 'Nhóm phát hiện ổn định': Oberauer định nghĩa mức B là phát hiện áp dụng cho phạm vi hẹp hơn mức A (ở đây vì chỉ ở lời nói), không phải 'ổn định'; nhưng bài có gọi hiệu ứng là 'robust', nên câu không sai. Nếu sửa trang thì nên ghi 'mức B (hẹp hơn vì chỉ ở lời nói)'. Nhãn Khá vững hợp thước đo: hiệu ứng lặp lại nhiều, nhưng nguyên nhân bị nghi trùng biến."
 doi_chu:
   - cu: (trang cũ không có hộp tóm tắt đầu trang)
     moi: Hộp ::tom-tat tự dựng từ ý chính bốn khung nhãn của trang (bản mới thêm).
