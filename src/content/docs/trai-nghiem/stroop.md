@@ -32,16 +32,16 @@ Sự bất đối xứng này là điểm cốt lõi: chữ cản trở việc g
 
 Năm 1991, Colin MacLeod tổng quan khoảng 400 nghiên cứu về hiệu ứng Stroop và rút ra 18 phát hiện được tìm thấy lặp đi lặp lại mà mọi lý thuyết phải giải thích được ([MacLeod, 1991](https://doi.org/10.1037/0033-2909.109.2.163)).
 
-Với cách trả lời bằng phím bấm như công cụ trên, hiệu ứng nhỏ hơn khi trả lời bằng lời. Trong hai thí nghiệm năm 2019, hiệu ứng đo bằng phím bấm là **76 ms và 73 ms**, còn bằng lời nói là **155 ms và 168 ms**, tức khoảng gấp đôi ([Augustinova, Parris và Ferrand, 2019](https://doi.org/10.3389/fpsyg.2019.01786)).
+Trả lời bằng phím bấm như công cụ trên cho hiệu ứng nhỏ hơn trả lời bằng lời. Trong hai thí nghiệm năm 2019, mức cản trở (lượt không khớp so với lượt trung tính `XXXX`) khi bấm phím là **76 ms và 73 ms**, khi nói to là **155 ms và 168 ms**, tức khoảng gấp đôi ([Augustinova, Parris và Ferrand, 2019](https://doi.org/10.3389/fpsyg.2019.01786)).
 
 ## Mức độ chắc chắn
 
 :::vung-chac[gọi tên màu mực chậm hơn khi chữ chỉ một màu khác]
-Hiệu ứng Stroop là một trong những phát hiện được tái lập nhiều nhất của tâm lý học, với hàng trăm nghiên cứu và nhiều biến thể. Độ lớn cụ thể phụ thuộc vào cách trả lời (nói hay bấm phím), số màu, tỉ lệ các lượt khớp và không khớp, và người tham gia.
+Hiệu ứng Stroop có trong hàng trăm nghiên cứu với nhiều biến thể (MacLeod, 1991), và một đợt tái lập ở nhiều phòng thí nghiệm (Many Labs 3) thấy hiệu ứng ở mọi lần thử (theo Hedge, Powell và Sumner, 2018, kể lại). Độ lớn cụ thể phụ thuộc vào cách trả lời (nói hay bấm phím), số màu, tỉ lệ các lượt khớp và không khớp, và người tham gia.
 :::
 
 :::tranh-cai[dùng hiệu ứng Stroop để đo “khả năng tự kiểm soát” của từng người]
-Hiệu ứng ở cấp độ nhóm rất ổn định, nhưng điểm Stroop của *một người* lại không ổn định lắm giữa các lần đo. Trong một nghiên cứu, độ tin cậy giữa hai lần đo cách nhau 3 tuần chỉ khoảng 0,6–0,7 ([Hedge, Powell và Sumner, 2018](https://doi.org/10.3758/s13428-017-0935-1)). Các tác giả gọi đây là "nghịch lý độ tin cậy": nhiệm vụ cho hiệu ứng nhóm càng chắc chắn thì thường càng kém trong việc phân biệt người này với người kia. Vì vậy, đừng coi con số của bạn là thước đo năng lực.
+Hiệu ứng ở cấp độ nhóm rất ổn định, nhưng điểm Stroop của *một người* lại không ổn định lắm giữa các lần đo. Trong một nghiên cứu, độ tin cậy giữa hai lần đo cách nhau 3 tuần khoảng 0,6–0,7, dưới mức 0,8 thường được coi là cần khi đánh giá từng người ([Hedge, Powell và Sumner, 2018](https://doi.org/10.3758/s13428-017-0935-1)). Các tác giả gọi đây là "nghịch lý độ tin cậy": nhiệm vụ cho hiệu ứng nhóm càng chắc chắn thì thường càng kém trong việc phân biệt người này với người kia. Vì vậy, đừng coi con số của bạn là thước đo năng lực.
 :::
 
 ## Các lý thuyết giải thích
@@ -59,13 +59,13 @@ Hiệu ứng Stroop chủ yếu là một cửa sổ để nhìn vào cách chú
 - Những kỹ năng đã thành thạo (đọc, lái xe theo lộ trình quen) **chạy tự động** và có thể chen vào khi ta cần làm điều khác.
 - Kìm một phản ứng tự động **tốn thời gian và công sức**, ngay cả trong một nhiệm vụ đơn giản.
 
-Không có bằng chứng rằng luyện tập nhiệm vụ Stroop giúp tăng trí thông minh hay khả năng tập trung nói chung.
+Có rất ít bằng chứng rằng luyện tập các bài nhận thức như Stroop giúp làm tốt hơn những việc khác xa bài đã luyện, hay giúp ích cho việc dùng trí óc hằng ngày ([Simons và cộng sự, 2016](https://doi.org/10.1177/1529100616661983)).
 
 ## Ở Việt Nam và các nền văn hóa khác
 
 Công cụ trên dùng chữ tiếng Việt. Vì "xanh" trong tiếng Việt có thể là xanh lá hay xanh dương, site chỉ dùng màu xanh dương và tránh màu xanh lá. Bộ màu ĐỎ, VÀNG, XANH, TRẮNG trên nền tối được chọn để các màu khác nhau rõ về độ sáng.
 
-Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ chữ viết khác nhau. Chúng tôi chưa tìm thấy số liệu chuẩn có công bố cho phiên bản tiếng Việt, nên chưa thể so kết quả của bạn với người Việt nói chung.
+Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ chữ viết khác nhau. Tính đến 11/2026, chúng tôi chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) cho bài Stroop tiếng Việt ở người lớn; mới có vài nghiên cứu Stroop tiếng Việt cỡ nhỏ, như so sánh chữ Quốc ngữ, chữ Nôm và chữ Hán ([Morikawa và Hồ Hoàng Hoa, 1990](https://doi.org/10.2466/pms.1990.71.1.249)) hay 30 người Mỹ gốc Việt ([Doan và Swerdlow, 1999](https://doi.org/10.2466/pms.1999.89.1.173)). Vì vậy chưa thể so kết quả của bạn với người Việt nói chung.
 
 ## Cách công cụ hoạt động
 
@@ -74,8 +74,8 @@ Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ
 - **Mỗi lượt:** dấu `+` hiện 500 ms, rồi màn trống 300–700 ms (ngẫu nhiên để bạn không đoán trước được), rồi đến chữ, hiển thị đến khi bạn trả lời hoặc hết 3 giây.
 - **Đo thời gian:** thời điểm chữ xuất hiện được lấy đồng bộ với khung hình của màn hình (`requestAnimationFrame`); thời điểm trả lời lấy từ dấu thời gian của sự kiện chạm hoặc bấm phím (`performance.now()`, độ phân giải dưới 1 ms trên trình duyệt hiện đại).
 - **Tính kết quả:** bỏ lượt khởi động, lượt sai, lượt hết giờ và lượt nhanh hơn 200 ms hoặc chậm hơn 2.500 ms. Dùng **trung vị** (không dùng trung bình) để vài lượt rất chậm không kéo lệch kết quả. Hiệu ứng Stroop = trung vị lượt không khớp − trung vị lượt khớp.
-- **Độ trễ thiết bị:** màn hình, bàn phím và màn cảm ứng đều có độ trễ, thường vài chục mili giây, và khác nhau giữa các thiết bị. Vì độ trễ này gần như như nhau ở mọi lượt, phép trừ giữa hai điều kiện ít bị ảnh hưởng hơn từng con số riêng lẻ.
-- **Phiên bản đếm** (cho người khó phân biệt màu): màn hình hiện ví dụ `3 3` và bạn trả lời có bao nhiêu ký tự (2). Lượt không khớp là khi chữ số khác số lượng ký tự. Phiên bản này dựa trên ý tưởng "Stroop đếm", tạo cùng loại xung đột giữa một phản ứng tự động (đọc chữ số) và nhiệm vụ (đếm), mà không dùng màu sắc.
+- **Độ trễ thiết bị:** màn hình, bàn phím và màn cảm ứng đều có độ trễ, khác nhau giữa các thiết bị và trình duyệt ([Bridges và cộng sự, 2020](https://doi.org/10.7717/peerj.9414)). Nếu độ trễ gần như như nhau ở mọi lượt, phép trừ giữa hai điều kiện ít bị ảnh hưởng hơn từng con số riêng lẻ.
+- **Phiên bản đếm** (cho người khó phân biệt màu): màn hình hiện ví dụ `3 3` và bạn trả lời có bao nhiêu ký tự (2). Lượt không khớp là khi chữ số khác số lượng ký tự. Phiên bản này dựa trên ý tưởng "Stroop đếm" ([Bush và cộng sự, 1998](https://doi.org/10.1002/(SICI)1097-0193(1998)6:4%3C270::AID-HBM6%3E3.0.CO;2-0)), tạo cùng loại xung đột giữa một phản ứng tự động (đọc chữ số) và nhiệm vụ (đếm), mà không dùng màu sắc.
 :::
 
 ## Thử suy ngẫm
@@ -106,6 +106,11 @@ Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ
 ## Nguồn
 
 - Augustinova, M., Parris, B. A., & Ferrand, L. (2019). The loci of Stroop interference and facilitation effects with manual and vocal responses. *Frontiers in Psychology*, 10, 1786. <https://doi.org/10.3389/fpsyg.2019.01786>
+- Bridges, D., Pitiot, A., MacAskill, M. R., & Peirce, J. W. (2020). The timing mega-study: Comparing a range of experiment generators, both lab-based and online. *PeerJ*, 8, e9414. <https://doi.org/10.7717/peerj.9414>
+- Bush, G., Whalen, P. J., Rosen, B. R., Jenike, M. A., McInerney, S. C., & Rauch, S. L. (1998). The counting Stroop: An interference task specialized for functional neuroimaging—validation study with functional MRI. *Human Brain Mapping*, 6(4), 270–282. <https://doi.org/10.1002/(SICI)1097-0193(1998)6:4%3C270::AID-HBM6%3E3.0.CO;2-0>
+- Doan, Q. T., & Swerdlow, N. R. (1999). Preliminary findings with a new Vietnamese Stroop test. *Perceptual and Motor Skills*, 89(1), 173–182. <https://doi.org/10.2466/pms.1999.89.1.173>
 - Hedge, C., Powell, G., & Sumner, P. (2018). The reliability paradox: Why robust cognitive tasks do not produce reliable individual differences. *Behavior Research Methods*, 50(3), 1166–1186. <https://doi.org/10.3758/s13428-017-0935-1>
 - MacLeod, C. M. (1991). Half a century of research on the Stroop effect: An integrative review. *Psychological Bulletin*, 109(2), 163–203. <https://doi.org/10.1037/0033-2909.109.2.163>
+- Morikawa, Y., & Hồ Hoàng Hoa (1990). Stroop phenomena in the Vietnamese language: The case of Quocngu, Chunom and Chinese characters. *Perceptual and Motor Skills*, 71(1), 249–258. <https://doi.org/10.2466/pms.1990.71.1.249>
+- Simons, D. J., Boot, W. R., Charness, N., Gathercole, S. E., Chabris, C. F., Hambrick, D. Z., & Stine-Morrow, E. A. L. (2016). Do "brain-training" programs work? *Psychological Science in the Public Interest*, 17(3), 103–186. <https://doi.org/10.1177/1529100616661983>
 - Stroop, J. R. (1935). Studies of interference in serial verbal reactions. *Journal of Experimental Psychology*, 18(6), 643–662. <https://doi.org/10.1037/h0054651> (bản trực tuyến: <https://psychclassics.yorku.ca/Stroop/>)

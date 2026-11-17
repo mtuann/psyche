@@ -141,7 +141,8 @@ test('site cũ: mọi trang chuyển được (không lỗi), không còn cú ph
 // festinger-diverging (D5-L4 review): chú thích "tích cực hơn hẳn nhóm 20 đô-la" thành "cao hơn, chênh lệch có ý nghĩa thống kê" (Festinger & Carlsmith 1959: p < 0,03 và p < 0,02)
 // flow-channel (D6-L1 review): chữ trong hình và chú thích thành "theo mô hình kênh flow, … được dự đoán" (bằng chứng chưa thống nhất)
 // gf-gc-curves (D6-L3 review): đường Gc tăng đến khoảng tuổi 60 rồi chững lại hay giảm nhẹ, không "giữ vững đến tuổi già" (Cattell 1963, Salthouse 2019)
-const HINH_DA_SUA = new Set(["tuong-quan", "milgram-obedience", "harlow-contact", "seligman-design", "skinner-schedules", "mean-vs-median", "loftus-verbs", "linda-venn", "festinger-diverging", "elm-routes", "gross-model", "flow-channel", "thi-nghiem-key-ring", "tinh-di-truyen-theo-tuoi", "erickson-hippocampus", "piaget-timeline", "lo-trinh-hoc-noi", "marcia-matrix", "gf-gc-curves"]);
+// cuijpers-funnel (D7-L1 sau lượt 2): "1 người hưởng lợi thêm" thành "có thêm 1 người đáp ứng"; "bệnh nhân CBT", "nhóm chứng" thành "người bệnh được CBT", "nhóm đối chứng" (Cuijpers 2023, bảng 3: đáp ứng = giảm 50% triệu chứng)
+const HINH_DA_SUA = new Set(["tuong-quan", "milgram-obedience", "harlow-contact", "seligman-design", "skinner-schedules", "mean-vs-median", "loftus-verbs", "linda-venn", "festinger-diverging", "elm-routes", "gross-model", "flow-channel", "thi-nghiem-key-ring", "tinh-di-truyen-theo-tuoi", "erickson-hippocampus", "piaget-timeline", "lo-trinh-hoc-noi", "marcia-matrix", "gf-gc-curves", "cuijpers-funnel"]);
 
 test('hình tĩnh src/hinh/<tên>.html chép đúng hình của trang cũ (chữ trong hình, aria-label; so-chu không so SVG)', { skip: !CO_SITE_CU && 'không có ../psyche-zero/' }, () => {
 	const thu = new URL('../src/hinh/', import.meta.url);
