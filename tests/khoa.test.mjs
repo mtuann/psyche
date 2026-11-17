@@ -433,12 +433,17 @@ test('bản ghi dữ liệu: câu về chính site chỉ ở cấu trúc của s
 	assert.deepEqual(loiHoSo(hs('trang/thi-nghiem/asch', [vs(['tang', 'linh_vuc'])]), 'du-lieu/trang/thi-nghiem/asch', ROOT), []);
 	assert.deepEqual(loiHoSo(hs('linh-vuc/tri-nho', [vs(['ten', 'thu_tu'])]), 'du-lieu/linh-vuc/tri-nho', ROOT), []);
 	assert.match(loiHoSo(hs('linh-vuc/tri-nho', [vs(['mo_ta'])]), 'du-lieu/linh-vuc/tri-nho', ROOT).join(), /không có câu về chính site/);
-	assert.deepEqual(loiHoSo(hs('nghien-cuu/asch1956', [vs(['trang_nha'])]), 'du-lieu/nghien-cuu/asch1956', ROOT), []);
+	assert.deepEqual(loiHoSo(hs('nghien-cuu/asch1956', [vs(['trang_nha'])]), 'du-lieu/nghien-cuu/asch1956#trang_nha', ROOT), []);
 	assert.match(loiHoSo(hs('nghien-cuu/asch1956', [vs(['nguon'])]), 'du-lieu/nghien-cuu/asch1956', ROOT).join(), /không có câu về chính site/);
 	assert.match(loiHoSo(hs('nguon/asch1956', [vs(['ten'])]), 'du-lieu/nguon/asch1956', ROOT).join(), /không có câu về chính site/);
 	// thẻ ngộ nhận: trang liên quan và cấp trong bài thử là lựa chọn của site; khẳng định, nhãn, giải thích thì không
-	assert.deepEqual(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang'])]), 'du-lieu/ngo-nhan/mbti', ROOT), []);
-	assert.deepEqual(loiHoSo(hs('ngo-nhan/mbti', [vs(['cap'])]), 'du-lieu/ngo-nhan/mbti', ROOT), []);
+	// khóa riêng trường trang, cap: chỉ câu ve-site là đủ; khóa cả thẻ (có khang_dinh, nhan…) thì phải có nhận định thật
+	assert.deepEqual(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang'])]), 'du-lieu/ngo-nhan/mbti#trang', ROOT), []);
+	assert.deepEqual(loiHoSo(hs('ngo-nhan/mbti', [vs(['cap'])]), 'du-lieu/ngo-nhan/mbti#cap', ROOT), []);
+	assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang'])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /cần ít nhất một nhận định không phải ve-site/);
+	assert.match(loiHoSo(hs('nghien-cuu/asch', [vs(['trang_nha'])]), 'du-lieu/nghien-cuu/asch', ROOT).join(), /cần ít nhất một nhận định không phải ve-site/);
+	for (const truong of ['trang', [], ['trang', 'la']])
+		assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs(truong)]), 'du-lieu/ngo-nhan/mbti#trang', ROOT).join(), /không có câu về chính site/, JSON.stringify(truong));
 	for (const t of ['khang_dinh', 'nhan', 'giai_thich', 'nguon'])
 		assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs([t])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /không có câu về chính site/, t);
 	assert.match(loiHoSo(hs('ngo-nhan/mbti', [vs(['trang', 'nhan'])]), 'du-lieu/ngo-nhan/mbti', ROOT).join(), /không có câu về chính site/);

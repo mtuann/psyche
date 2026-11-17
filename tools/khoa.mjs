@@ -165,6 +165,15 @@ export function loiHoSo(hs, muc, goc, { khiKhoa = false } = {}) {
 		if (bg && !hs.ghi_chu) loi.push('chưa có nhận định nào: bản ghi cần ít nhất một nhận định đã kiểm, hay ghi_chu giải thích vì sao không có');
 		if (!bg && tang && tang !== 'khung' && tang !== 'du-lieu') loi.push(`chưa có nhận định nào: trang tầng ${tang} cần ít nhất một nhận định đã kiểm`);
 	}
+	// bản ghi mà phần được khóa có trường nội dung (ngoài cấu trúc của site, VE_SITE_BO) thì phải có ít nhất một nhận định
+	// không phải ve-site: không thì cả bản ghi khóa được chỉ nhờ câu về trang liên quan (review them/ve-site-ngo-nhan)
+	if (bg && ds.length && Array.isArray(VE_SITE_BO[bg.split('/')[0]])) {
+		const ve = VE_SITE_BO[bg.split('/')[0]];
+		const truong = truongKhoa ?? Object.keys(docBanGhi(bg, goc) ?? {}).filter((t) => t !== 'id');
+		const noiDung = truong.filter((t) => !ve.includes(t));
+		if (noiDung.length && !ds.some((n) => n.loai !== VE_SITE && n.ket_qua !== 'da-bo'))
+			loi.push(`bản ghi khóa cả trường nội dung (${noiDung.join(', ')}): cần ít nhất một nhận định không phải ve-site, qua hai lượt`);
+	}
 	const nguon = new Set((hs.nguon ?? []).map((n) => n.id));
 	const ids = ds.map((n) => n.id).filter(Boolean);
 	for (const id of new Set(ids.filter((x, i) => ids.indexOf(x) !== i))) loi.push(`nhận định ${id}: id trùng`);
