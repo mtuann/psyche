@@ -41,3 +41,11 @@ Hồ sơ của các mục đã khóa (trang đợt 5–8, thẻ ngộ nhận, c�
 ## Review tên bài (Claude Opus 5.5, người gộp, 17/11/2026)
 
 Xem mẫu 25 tên trong 240 bản ghi mới: đúng kiểu APA trừ chữ đầu sau dấu hai chấm chưa viết hoa và vài tên riêng bị hạ chữ ("memrise", "big five"). Sửa 31 tên trong `src/data/nguon.yml` (chỉ bản ghi mới). Hồ sơ V1 (`kiem-dinh/du-lieu/nguon/`, chưa khóa) còn câu tên cũ: sinh lại hồ sơ khi khóa các bản ghi này.
+
+## Lượt 2 (Claude Sonnet 5.5, agent riêng, 17/11/2026) và áp dụng
+
+56 mục lệch: 52 đúng, 3 sai, 1 không quyết được (`don-nguon-2/doi-luot-2.yml`). Người gộp áp dụng trong `src/data/nguon.yml`:
+- `knecht2000`: đủ 8 tác giả; `kovacs1981`: đủ 4 tác giả, trang 33–39; `nuhfer2017` và `nuhfer2016`: "Fleisher" (không phải "Fleischer").
+- `itc2017`: trường tác giả hỏng (", & undefined", tác giả tập thể mà script dựng bản ghi không đọc được): sửa thành "International Test Commission". Năm in là 2018 (tập 18 số 2; trực tuyến 21/12/2017) nhưng id `itc2017` (hồ sơ đã khóa dẫn) buộc năm 2017 theo schema; giữ 2017, ghi ở đây. Không bản ghi nào khác có trường hỏng như vậy.
+- Hồ sơ V1 của các bản ghi trên chưa sinh lại theo lượt 2 (chưa khóa): làm khi khóa nguồn.
+- Còn lại cho lần sau: 251 nguồn không DOI; 68 id trùng nguồn ở hồ sơ khác nhau; `chen2025`, `hanoi2026`, `nguyen2026` (một id cho hai bài); `gardner1983` mang DOI của Neisser 1996; `wendsche2016`, `mischel70`, `crossref-krueger`, `vaidis2024c` (id không khớp năm hay tác giả). Các chỗ này nằm trong hồ sơ trang đã khóa: sửa id trong hồ sơ không đổi mã băm trang, làm ở một lô dọn hồ sơ riêng.
