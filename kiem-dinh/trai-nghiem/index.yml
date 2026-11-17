@@ -1,0 +1,60 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa trai-nghiem/index
+trang: src/content/docs/trai-nghiem/index.md
+nguon_cu: ../psyche-zero/docs/trai-nghiem/index.md
+tang: khung
+muc: null
+lan:
+- so: 1
+  ngay: '2026-11-16'
+  nhanh: moi/d8-l1
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: hedge2018
+  ten: 'Hedge, Powell & Sumner (2018), Behav Res Methods 50(3), 1166–1186: toàn văn (PMC5990556), Bảng 1'
+  link: https://doi.org/10.3758/s13428-017-0935-1
+  toan_van: true
+- id: woods2011
+  ten: 'Woods và cộng sự (2011), J Clin Exp Neuropsychol 33(1), 101–111: toàn văn (PMC2978794, đọc qua NCBI E-utilities)'
+  link: https://doi.org/10.1080/13803395.2010.493149
+  toan_van: true
+nhan_dinh:
+- id: s1
+  cau: Mỗi công cụ ở đây dựa trên một thí nghiệm có thật; khi xong, bạn thấy kết quả của mình, kết quả trong nghiên cứu gốc, và lý do vì sao hai con số có thể khác nhau.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trên năm công cụ đã chuyển (src/scripts/cong-cu/stroop.js, do-dai-tri-nho.js, ao-giac.js, mu-thay-doi.js, ebbinghaus.js, 16/11/2026): bốn công cụ có màn kết quả với mục "So với nghiên cứu" và khối "Vì sao con số của bạn có thể khác?". Ebbinghaus chỉ đo cho thấy hai vòng bằng nhau, không có con số của người dùng để so (câu nói chung cho cả nhóm; review xét có cần làm mềm). Sáu công cụ còn lại (D8-L2) kiểm khi chúng lên.'
+- id: s2
+  cau: 'Danh sách công cụ sinh từ dữ liệu (::danh-sach-bai{nhom="trai-nghiem"}): chỉ trang đã có trên site, tên và mô tả lấy từ chính trang ấy; công cụ chưa xong được đếm ở cuối danh sách.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm src/plugins/thanh-phan.mjs (danhSachBai, nhánh nhom) và bản xem dist/trai-nghiem/index.html (16/11/2026): 5 mục có link, dòng "Còn 6 bài sắp có". src/data/trang.yml có 11 trang trai-nghiem/ ngoài index.'
+- id: s3
+  cau: Link tới "Đúng, sai hay còn tranh cãi?" (bat-dau/ban-nghi-gi) và "Dữ liệu của tôi" (them/du-lieu-cua-toi).
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Hai trang có trong src/data/trang.yml (D8-L3, D8-L4); chưa lên site nên src/plugins/sap-co.mjs hiện chữ kèm nhãn "sắp có" (tests/link.test.mjs kiểm).
+- id: n1
+  cau: Các công cụ này để trải nghiệm một hiện tượng, không để đánh giá trí tuệ, trí nhớ hay sức khỏe; một lần làm trên điện thoại hay máy tính có rất nhiều yếu tố ngẫu nhiên.
+  loai: phat-hien
+  nguon:
+  - hedge2018
+  - woods2011
+  trich: the very reason such tasks produce robust and easily replicable experimental effects - low between-participant variability - makes their use as correlational tools problematic
+  vi_tri: Hedge 2018, tóm tắt; Woods 2011, Thảo luận (biến thiên của điểm độ dài trí nhớ)
+  ket_qua: dung
+  ghi_chu: 'Câu khuyên về cách hiểu kết quả: điểm của một người ở các bài nhận thức kinh điển kém ổn định (Hedge 2018: Stroop ICC .60–.66); Woods 2011 bàn độ biến thiên lớn của điểm độ dài trí nhớ một lần đo. "Hãy trao đổi với bác sĩ" là lời dẫn tới chuyên môn, không phải lời khuyên điều trị.'
+- id: s4
+  cau: Mọi kết quả chỉ lưu trên trình duyệt của bạn, không gửi đi đâu.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/chung/luu.js (16/11/2026): chỉ ghi localStorage khóa "psyche-zero", không có fetch hay gửi mạng; tests/khung.test.mjs chặn nạp nguồn ngoài.'
+doi_chu:
+- cu: Lưới 12 thẻ viết tay (<div class="pz-grid">), mỗi thẻ có tên công cụ và một dòng "Khoảng N phút…"
+  moi: 'Mục "Các công cụ": danh sách sinh từ dữ liệu (::danh-sach-bai{nhom="trai-nghiem"}), tên và mô tả lấy từ frontmatter của từng trang; một câu link riêng tới "Đúng, sai hay còn tranh cãi?"'
+  ly_do: 'Như trang mục lục Thí nghiệm (D3-L1): danh sách chỉ có trang đã lên site; chữ "Khoảng N phút" và mô tả viết tay không kiểm được cho trang chưa chuyển.'
+ghi_chu: 'Trang khung: đoạn giới thiệu, chỉ thị sinh danh sách, hộp lưu ý và dòng quyền riêng tư.'

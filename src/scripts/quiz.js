@@ -2,10 +2,8 @@
 // một lần, hiện đúng sai và lời giải thích, cuối cùng là số câu đúng và nút "Làm lại". Khác site cũ: thứ tự lựa chọn trộn
 // mỗi lần dựng (nên lời giải thích không được dựa vào vị trí lựa chọn). Câu hỏi, lựa chọn và lời giải thích đã dựng sẵn
 // bằng HTML lúc build (src/plugins/thanh-phan.mjs); bản tĩnh ẩn đi khi bản bấm được dựng xong, vẫn hiện khi in.
-// Kết quả lưu như site cũ: bản ghi "quiz" trong khóa "psyche-zero" (src/scripts/cu/progress.js).
-import './cu/progress.js';
-
-const kho = () => /** @type {any} */ (window).PZStore;
+// Kết quả lưu như site cũ: bản ghi "quiz" trong khóa "psyche-zero" (src/scripts/cong-cu/chung/luu.js).
+import { them } from './cong-cu/chung/luu.js';
 
 function tron(a) {
 	for (let i = a.length - 1; i > 0; i--) {
@@ -83,7 +81,7 @@ export function mount(root, thuTu = 0) {
 		diem.textContent =
 			`Bạn trả lời đúng ${dung} / ${qs.length} câu. Điểm số không quan trọng bằng phần giải thích: ` +
 			'nhầm lẫn rồi được giải thích là một cách nhớ rất tốt.';
-		kho()?.add('quiz', { quiz: id, score: dung, total: qs.length });
+		them('quiz', { quiz: id, score: dung, total: qs.length });
 		const lai = the('button', 'pz-nut', 'Làm lại');
 		lai.type = 'button';
 		lai.addEventListener('click', () => {

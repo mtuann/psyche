@@ -123,10 +123,15 @@ export function quiz(src) {
 
 /**
  * Công cụ có trên site mới: tên (như ::cong-cu{ten="…"} và lớp pz-<tên> của site cũ) -> lớp của khối và thông số nhận
- * được (data-* của khối ở site cũ). Module của công cụ đăng ký ở src/scripts/tai.js. Đợt 8 chuyển 10 công cụ còn lại.
+ * được (data-* của khối ở site cũ). Module src/scripts/cong-cu/<tên>.js (khuôn: đầu src/scripts/cong-cu/stroop.js), nạp ở
+ * src/scripts/tai.js. D8-L1 làm 5 công cụ; D8-L2, D8-L4 làm các công cụ còn lại theo cùng khuôn.
  */
 export const CONG_CU = {
 	stroop: { lop: 'pz-stroop', thongSo: ['per-cond', 'blocks', 'practice'] },
+	'do-dai-tri-nho': { lop: 'pz-do-dai-tri-nho', thongSo: [] },
+	'ao-giac': { lop: 'pz-ao-giac', thongSo: [] },
+	'mu-thay-doi': { lop: 'pz-mu-thay-doi', thongSo: [] },
+	ebbinghaus: { lop: 'pz-ebbinghaus', thongSo: [] },
 };
 
 /** Ô "chưa chuyển" cho công cụ, hình chưa có trên site mới; chỉ dùng được ở trang chưa khóa (D1.6 chặn). */
@@ -138,7 +143,7 @@ export function chuaChuyen(loai, ten, trang) {
 /**
  * ::cong-cu{ten="stroop" …}: khối trống có lớp của công cụ; src/scripts/tai.js nạp module khi khối tới gần màn hình
  * (khoảng 600 px). Thông số khác là data-* của khối (như site cũ). Kết quả lưu trong trình duyệt, khóa "psyche-zero"
- * như site cũ (src/scripts/cu/progress.js).
+ * như site cũ (src/scripts/cong-cu/chung/luu.js).
  */
 export function congCu({ ten, ...thongSo }, trang) {
 	const cc = CONG_CU[ten];

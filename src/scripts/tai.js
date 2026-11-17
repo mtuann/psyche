@@ -9,6 +9,10 @@ const LUAT = [
 	['.pz-quiz', () => import('./quiz.js'), true],
 	// công cụ (::cong-cu): nạp khi khối tới gần màn hình
 	['.pz-stroop', () => import('./cong-cu/stroop.js'), false],
+	['.pz-do-dai-tri-nho', () => import('./cong-cu/do-dai-tri-nho.js'), false],
+	['.pz-ao-giac', () => import('./cong-cu/ao-giac.js'), false],
+	['.pz-mu-thay-doi', () => import('./cong-cu/mu-thay-doi.js'), false],
+	['.pz-ebbinghaus', () => import('./cong-cu/ebbinghaus.js'), false],
 ];
 const LE = 600;
 const cho = new Map(); // phần tử đang chờ tới gần màn hình -> hàm khởi tạo (trả về promise)

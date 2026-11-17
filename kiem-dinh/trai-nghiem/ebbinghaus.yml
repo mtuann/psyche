@@ -1,0 +1,227 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa trai-nghiem/ebbinghaus
+trang: src/content/docs/trai-nghiem/ebbinghaus.md
+nguon_cu: ../psyche-zero/docs/trai-nghiem/ebbinghaus.md
+tang: cong-cu
+muc: V3
+lan:
+- so: 1
+  ngay: '2026-11-16'
+  nhanh: moi/d8-l1
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+nguon:
+- id: mruczek2015
+  ten: 'Mruczek, Blair, Strother & Caplovitz (2015), Front Hum Neurosci 9, 77: toàn văn (PMC4332331), mục Giới thiệu'
+  link: https://doi.org/10.3389/fnhum.2015.00077
+  toan_van: true
+- id: roberts2005
+  ten: 'Roberts, Harris & Yates (2005), Perception 34(7), 847–856: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1068/p5273
+  toan_van: false
+- id: burton2001
+  ten: 'Burton (2001), Hist Psychol 4(3), 228–244: tóm tắt (OpenAlex)'
+  link: https://doi.org/10.1037/1093-4510.4.3.228
+  toan_van: false
+- id: defockert2007
+  ten: 'de Fockert và cộng sự (2007), J Exp Psychol Hum Percept Perform 33(3), 738–742: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1037/0096-1523.33.3.738
+  toan_van: false
+- id: amir2026
+  ten: 'Amir & Firestone (2026), Psychol Rev 133(5), 1082–1108: toàn văn (bản chấp nhận đăng trên OSF)'
+  link: https://osf.io/y7mtf/download
+  toan_van: true
+- id: henrich2010
+  ten: 'Henrich, Heine & Norenzayan (2010), Behav Brain Sci 33(2–3), 61–83: toàn văn (bản tác giả, UBC), mục 2.1 và Hình 2'
+  link: https://www2.psych.ubc.ca/~henrich/pdfs/Weird_People_BBS_final02.pdf
+  toan_van: true
+- id: vdk2013
+  ten: 'van der Kamp, Withagen & de Wit (2013), Atten Percept Psychophys 75(5), 1027–1038: toàn văn (PDF, Springer)'
+  link: https://doi.org/10.3758/s13414-013-0458-5
+  toan_van: true
+- id: kopiske2016
+  ten: 'Kopiske và cộng sự (2016), Cortex 79, 130–152: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1016/j.cortex.2016.03.020
+  toan_van: false
+- id: tim-eb-vn
+  ten: 'Tìm ngày 16/11/2026 trên Europe PMC: "Ebbinghaus illusion Vietnamese" (0 kết quả), "visual illusion Vietnam" (119 kết quả, không có nghiên cứu đo ảo giác thị giác ở người Việt trong 8 kết quả đầu)'
+  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Ebbinghaus%20illusion%20Vietnamese
+  toan_van: false
+nhan_dinh:
+- id: s1
+  cau: 'Cách chơi: cụm trái có vòng bao quanh lớn, cụm phải vòng bao quanh nhỏ; thanh trượt đổi kích thước vòng bao quanh cụm trái, hai vòng giữa không đổi; nút "Đo kích thước thật".'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ebbinghaus.js (HINH: tâm 60, quanh trái 14–44 mặc định 40, quanh phải 14; nút "Đo kích thước thật"), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs.'
+- id: n1
+  cau: Vòng tròn trung tâm bị các vòng lớn bao quanh trông nhỏ hơn vòng trung tâm bị các vòng nhỏ bao quanh, dù hai vòng bằng nhau; não đánh giá mỗi vật so với môi trường xung quanh (tương phản kích thước).
+  loai: phat-hien
+  nguon:
+  - mruczek2015
+  - roberts2005
+  trich: the viewer perceives the target that is surrounded by the large-and-far objects to be smaller than the target that is surrounded by the small-and-near objects
+  vi_tri: Mruczek 2015, Giới thiệu; Roberts 2005, tóm tắt ("simple size-contrast effect")
+  ket_qua: dung
+- id: n2
+  cau: Ảo giác mang tên Hermann Ebbinghaus; theo một khảo cứu lịch sử, có lẽ Ebbinghaus đưa ra hình này từ những năm 1890, dù không có bài công bố rõ ràng nào; trong tiếng Anh hình còn gọi là "vòng tròn Titchener", nhưng Titchener không tạo ra và không nhận hình là của mình, cách gọi ấy chỉ xuất hiện từ khoảng năm 1957.
+  loai: lich-su
+  nguon:
+  - burton2001
+  trich: Ebbinghaus probably introduced this illusion in the 1890s, although not in any explicit publication, and Titchener neither had nor asserted any authorship of this figure … The modern custom of attributing the surrounded-circles illusion to Titchener, although widespread in the 1960s and 1970s, does not appear before 1957.
+  vi_tri: Burton 2001, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ông mô tả nó trong cuốn Grundzüge der Psychologie (1902). Edward B. Titchener đưa hình này vào giáo trình thực hành … (1901), nên … còn được gọi là vòng tròn Titchener". Burton 2001 (khảo cứu lịch sử có bình duyệt) cho thấy không có công bố rõ ràng của Ebbinghaus và Titchener không có quyền tác giả; Mruczek 2015 dẫn "Thiéry, 1896; Burton, 2001". chỗ khó: trang nhà kham-pha/chu-y-tri-giac/ao-giac-thi-giac (đã khóa, n9) viết theo Wikipedia rằng Titchener phổ biến hình trong sách năm 1901; Burton không bác chuyện sách 1901 có hình (tóm tắt không nói) nhưng mâu thuẫn với "Ebbinghaus mô tả năm 1902". Ghi vào báo cáo để sửa khi mở khóa trang nhà; lượt 2 (Opus) xét.'
+- id: n3
+  cau: 'de Fockert và cộng sự (2007): người Himba (cộng đồng sống tách biệt ở Namibia, không có từ riêng cho các hình hình học) ít bị ảo giác Ebbinghaus hơn người Anh, nên đánh giá kích thước chính xác hơn; khi vòng bao quanh khác hẳn vòng trung tâm (hình thoi), ảo giác yếu đi ở cả hai nhóm như nhau; các tác giả cho rằng người Himba ưu tiên phân tích chi tiết cục bộ.'
+  loai: phat-hien
+  nguon:
+  - defockert2007
+  - amir2026
+  trich: The illusion was experienced less strongly by Himba compared with English participants, leading to more accurate size contrast judgments in the Himba. … The illusion was weaker when the inducing stimuli were dissimilar (diamonds) to the target (circle) … However, the illusion was weakened to the same extent in both cultures. … tendency to prioritize the analysis of local details
+  vi_tri: de Fockert 2007, tóm tắt; Amir & Firestone 2026, mục 7 ("semi-nomadic Himba people of Namibia")
+  ket_qua: dung
+- id: n4
+  cau: Với các cấu hình kinh điển, vòng tròn trung tâm có thể trông to hơn hoặc nhỏ hơn khoảng 10–20% so với kích thước thật, tùy cách vẽ.
+  loai: so-lieu
+  nguon:
+  - mruczek2015
+  trich: Based on previous reports, the classic Ebbinghaus illusion may cause a target circle to appear around 10–20% larger (or smaller) than it actually is
+  vi_tri: Mruczek 2015, Giới thiệu
+  ket_qua: da-sua
+  ghi_chu: 'Chỉ đổi cách dẫn: "tổng quan trong bài báo về Ebbinghaus động" thành "theo các nghiên cứu trước được tổng hợp trong Mruczek và cộng sự, 2015" (bài là nghiên cứu gốc, phần Giới thiệu tổng hợp các nghiên cứu trước).'
+- id: n5
+  cau: Nghiên cứu xuyên văn hóa của Segall, Campbell và Herskovits (1963, 1966) được biết tới chủ yếu qua kết quả về ảo giác Müller-Lyer; phát hiện về văn hóa ở ảo giác Ebbinghaus đến từ nghiên cứu khác, của de Fockert và cộng sự (2007).
+  loai: lich-su
+  nguon:
+  - henrich2010
+  - vdk2013
+  - defockert2007
+  trich: Here we highlight the comparative findings on the famed Mueller‐Lyer illusion … Most well-known is the work by Segall et al., which showed that perceivers from small-scale, mostly African, cultures … are less susceptible to the Müller-Lyer illusion and more susceptible to the horizontal – vertical illusion
+  vi_tri: Henrich 2010, mục 2.1; van der Kamp 2013, tr. 1
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (mục "Đính chính"): Segall "đo ảo giác Müller-Lyer (cùng với hình bình hành Sander, ảo giác ngang–dọc và tranh phối cảnh) — không gồm ảo giác Ebbinghaus". Không mở được sách 1966 để kiểm danh sách năm hình (Henrich 2010 chỉ nói "five standard illusions"), nên chữ mới không nêu danh sách và không khẳng định phủ định; chỉ nói điều kiểm được. Câu hỏi 5 sửa theo.'
+- id: n6
+  cau: 'Vững chắc: vòng trung tâm bị vòng lớn bao quanh trông nhỏ hơn; được đo trong nhiều nghiên cứu với cấu hình kinh điển, và một lần tái lập ở bốn phòng thí nghiệm với 144 người xác nhận ảo giác ảnh hưởng tới cả động tác cầm nắm.'
+  loai: nhan
+  nguon:
+  - mruczek2015
+  - kopiske2016
+  trich: In four different labs (total N = 144), we conducted an exact replication of previous studies … Our results confirm that grasping is affected by the Ebbinghaus illusion
+  vi_tri: Kopiske 2016, tóm tắt; Mruczek 2015, Giới thiệu (Massaro & Anderson 1971 … Roberts 2005)
+  nhan: vung-chac
+  co_so:
+  - kopiske2016
+  - mruczek2015
+  ly_do: Nhiều nghiên cứu độc lập đo cùng chiều và độ lớn 10–20% (tổng hợp ở Mruczek 2015); tái lập chính xác ở bốn phòng thí nghiệm (Kopiske 2016, N = 144); có cả ở loài khác và qua xúc giác (Amir & Firestone 2026, mục 6).
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "được tái lập rộng rãi suốt hơn một thế kỷ" (không nguồn). chỗ khó: chưa có phân tích tổng hợp riêng cho phán đoán bằng mắt; Kopiske 2016 là tái lập nhiều phòng thí nghiệm (không rõ đăng ký trước) nhắm vào cầm nắm. Lượt 2 (Opus) xét nhãn theo mục 4.'
+- id: n7
+  cau: 'Đang tranh cãi: vì sao có ảo giác (tương phản kích thước, xử lý theo ngữ cảnh, khoảng cách vòng bao quanh) và khác biệt văn hóa lớn đến đâu; một bài phân tích năm 2026 cho rằng nhiều lý lẽ chống giải thích "do văn hóa" của Müller-Lyer cũng áp dụng cho Ebbinghaus.'
+  loai: nhan
+  nguon:
+  - amir2026
+  - roberts2005
+  trich: We further extend our case beyond this phenomenon, showing that many of these considerations apply to other visual illusions as well, including similarly implicated visual phenomena such as the Ebbinghaus, Ponzo, Poggendorf, and Horizontal-Vertical illusions.
+  vi_tri: Amir & Firestone 2026, tóm tắt; Roberts 2005, tóm tắt (nhiều yếu tố, mô hình hai yếu tố)
+  nhan: tranh-cai
+  co_so:
+  - amir2026
+  - roberts2005
+  - defockert2007
+  ly_do: Khác biệt văn hóa (de Fockert 2007) bị phản biện (Amir & Firestone 2026); cơ chế có nhiều mô hình (Roberts 2005 đề xuất mô hình hai yếu tố sau khi "previous studies have emphasised its complexity").
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "… cũng đang được kiểm tra lại bằng phương pháp hiện đại." Chữ mới nêu Amir & Firestone 2026.'
+- id: n8
+  cau: 'Kích thước và khoảng cách của vòng bao quanh: theo Roberts, Harris và Yates (2005), hai yếu tố chính là kích thước của vòng bao quanh so với vòng trung tâm và khoảng cách giữa chúng; cân bằng giữa hai yếu tố quyết định vòng trung tâm trông nhỏ đi hay to ra; ảnh hưởng của kích thước còn hay bị lẫn với độ khép kín của vành bao quanh.'
+  loai: phat-hien
+  nguon:
+  - roberts2005
+  trich: 'the apparent effects of inducer size are often confounded by the relative completeness of the inducing surround … two primary and independent factors: the relative size of the inducers and target, and the distance between the inducers and the target. The balance between these two factors determines whether the size of the target is underestimated or overestimated.'
+  vi_tri: Roberts 2005, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "vòng bao quanh càng gần vòng trung tâm thì ảnh hưởng càng mạnh; vành bao quanh càng khép kín thì ảo giác càng rõ. Vì vậy hai yếu tố này thường bị lẫn vào nhau (tổng quan … Frontiers 2015)". Chiều "càng gần càng mạnh" không có trong nguồn đã mở, và nguồn đúng là Roberts 2005; viết lại theo tóm tắt. Câu hỏi 4 sửa theo.'
+- id: n9
+  cau: 'Xử lý toàn cục so với cục bộ: xu hướng nhìn cả cụm khiến vòng bao quanh "kéo" cảm nhận về vòng trung tâm; người chú ý chi tiết cục bộ ít bị lừa hơn, phù hợp với phát hiện ở người Himba.'
+  loai: phat-hien
+  nguon:
+  - defockert2007
+  trich: the more accurate size judgments of the Himba derive from their tendency to prioritize the analysis of local details in visual processing of multiple objects
+  vi_tri: de Fockert 2007, tóm tắt
+  ket_qua: dung
+  ghi_chu: Là cách giải thích của tác giả; trang xếp vào "Các lý thuyết giải thích" và nói các cách không loại trừ nhau.
+- id: n10
+  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào đo ảo giác Ebbinghaus trên người Việt; từ các nghiên cứu xuyên văn hóa (người Himba) có thể dự đoán mức bị lừa khác nhau giữa đô thị và nông thôn, nhưng đây mới là suy luận.
+  loai: thoi-su
+  nguon:
+  - tim-eb-vn
+  - amir2026
+  trich: It has also been reported that Himba children living in more traditional environments show a weaker Ebbinghaus illusion than Himba children living in urban areas do (Bremner et al., 2016).
+  vi_tri: Tìm Europe PMC 16/11/2026; Amir & Firestone 2026, mục 7 (kể lại Bremner 2016)
+  het_han: '2028-11-01'
+  ket_qua: da-sua
+  ghi_chu: Thêm "Tính đến 11/2026". Dự đoán đô thị, nông thôn có cơ sở ở Bremner 2016 (theo Amir kể lại) nhưng chính Amir phản biện cách giải thích "do văn hóa"; trang đã ghi là suy luận.
+- id: n11
+  cau: Ảo giác không phải lỗi của mắt; đó là cách não diễn giải ngữ cảnh, và hệ thị giác bình thường nào cũng bị lừa.
+  loai: phat-hien
+  nguon:
+  - mruczek2015
+  - amir2026
+  trich: Classical size-contrast and size-assimilation illusions such as the Ebbinghaus illusion … demonstrate that the presence of nearby objects can influence the perceived size of a central target object.
+  vi_tri: Mruczek 2015, Giới thiệu; Amir & Firestone 2026, mục 6 (ảo giác có ở nhiều loài)
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: "hệ thị giác bình thường nào cũng bị lừa" mạnh hơn nguồn: de Fockert 2007 thấy người Himba bị ít hơn (vẫn bị). Lượt 2 xét làm mềm thành "hầu như ai cũng bị lừa ít nhiều".'
+- id: n12
+  cau: 'Delboeuf và Ebbinghaus đều là ảo giác về kích thước vòng tròn nhưng là hai hình khác nhau: Ebbinghaus là ảo giác tương phản kích thước, Delboeuf (mô tả năm 1892) là ảo giác đồng hóa kích thước.'
+  loai: dinh-nghia
+  nguon:
+  - mruczek2015
+  trich: Classical size-contrast and size-assimilation illusions such as the Ebbinghaus illusion (Thiéry, 1896; Burton, 2001) or the Delboeuf illusion (Delboeuf, 1892; Nicolas, 1995)
+  vi_tri: Mruczek 2015, Giới thiệu
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Delboeuf … mỗi bên chỉ có một vòng bao quanh đồng tâm (vòng trong nhìn to hơn khi vòng ngoài ở gần nó). Ebbinghaus dùng nhiều vòng bao quanh." Chi tiết hình Delboeuf không có trong nguồn đã mở; chữ mới chỉ nói điều Mruczek 2015 xác nhận (tương phản và đồng hóa, năm 1892). chưa chắc: Mruczek liệt kê "size-contrast and size-assimilation illusions such as …" theo thứ tự, gán Ebbinghaus là tương phản (khớp tên "size contrast" ở nhiều nguồn), Delboeuf là đồng hóa; lượt 2 kiểm thêm.'
+- id: n13
+  cau: 'Mức bị ảo giác không như nhau ở mọi người: de Fockert và cộng sự (2007) thấy người Himba bị ảo giác ít hơn người Anh, dù cách giải thích khác biệt còn bị tranh cãi.'
+  loai: phat-hien
+  nguon:
+  - defockert2007
+  - amir2026
+  trich: The illusion was experienced less strongly by Himba compared with English participants
+  vi_tri: de Fockert 2007, tóm tắt
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Không — mức độ khác nhau rõ giữa các cá nhân và các nền văn hóa". Chữ mới chỉ nói điều nguồn có (Himba so với người Anh) và nhắc tranh cãi (n7).'
+- id: s2
+  cau: 'Câu hỏi 1, lời giải thích: nút "Đo kích thước thật" cho thấy cả hai vòng trung tâm đều có đường kính 60 px.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đã kiểm ebbinghaus.js (HINH.duongKinhTam 60, hình gốc rộng 720 đơn vị; màn kết quả nói rõ hình co lại trên màn nhỏ), 16/11/2026.
+doi_chu:
+- cu: 'Mục "Tên gọi: Ebbinghaus (1902), Titchener (1901)"'
+  moi: '"Tên gọi: Ebbinghaus hay Titchener?" (giữ id cũ), viết theo Burton (2001)'
+  ly_do: n2
+- cu: Dẫn "tổng quan trong bài báo về Ebbinghaus động … 2015"
+  moi: '"theo các nghiên cứu trước được tổng hợp trong Mruczek và cộng sự, 2015"'
+  ly_do: n4
+- cu: 'Mục "Đính chính: Segall và cộng sự (1963, 1966) không đo ảo giác này"'
+  moi: '"Đừng nhầm với nghiên cứu về ảo giác Müller-Lyer" (giữ id cũ), không nêu danh sách hình, link trang nhà'
+  ly_do: n5
+- cu: 'Khung Vững chắc: "tái lập rộng rãi suốt hơn một thế kỷ"'
+  moi: Mruczek 2015, Kopiske 2016
+  ly_do: n6
+- cu: 'Khung Đang tranh cãi: "… kiểm tra lại bằng phương pháp hiện đại"'
+  moi: nêu Amir và Firestone (2026)
+  ly_do: n7
+- cu: Lý thuyết "Khoảng cách và độ khép kín của vành bao quanh"
+  moi: '"Kích thước và khoảng cách của vòng bao quanh" theo Roberts 2005'
+  ly_do: n8
+- cu: Ngộ nhận Delboeuf, "Ai cũng bị lừa như nhau"
+  moi: viết lại theo Mruczek 2015, de Fockert 2007
+  ly_do: n12, n13
+- cu: Câu hỏi 2 (vì sao gọi vòng tròn Titchener), 4 (khoảng cách, "càng gần càng mạnh"), 5 (Segall có đo Ebbinghaus không)
+  moi: câu 2 về Burton 2001; câu 4 theo Roberts 2005; câu 5 hỏi phát hiện ở người Himba đến từ nghiên cứu nào
+  ly_do: n2, n8, n5
+- cu: 'Nguồn: de Fockert 2007, Ebbinghaus 1902, Segall 1963, bài Frontiers 2015 (không tên tác giả)'
+  moi: Amir & Firestone 2026, Burton 2001, de Fockert 2007, Kopiske 2016, Mruczek 2015 (đủ tên), Roberts 2005, Segall 1963; bỏ Ebbinghaus 1902
+  ly_do: nguồn của n2, n6–n8
