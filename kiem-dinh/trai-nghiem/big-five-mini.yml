@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
-      luot_2: null
-      review: null
+      luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
+      review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
       kiem_mau: null
 nguon:
   - id: donnellan2006
@@ -55,12 +55,14 @@ nhan_dinh:
     cau: 'Công cụ: 20 câu, mỗi màn một câu, năm nút của thang (phím 1–5), "Quay lại câu trước"; kết quả: điểm 4–20 mỗi chiều trên trục có vạch giữa 12, không nhãn cao/thấp; khung cảnh báo; link trang nhà Big Five.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: Đã kiểm src/scripts/cong-cu/big-five-mini.js, 17/11/2026; tests/cong-cu.test.mjs (20 câu, 4 câu mỗi chiều, khóa nghịch E2 A2 C2 N2 O3, không hai câu cùng chiều liền nhau), tests/trinh-duyet/kiem-cong-cu.mjs.
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/big-five-mini.js, 17/11/2026; tests/cong-cu.test.mjs (20 câu, 4 câu mỗi chiều, khóa nghịch E2 A2 C2 N2 O3, không hai câu cùng chiều liền nhau), tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): đọc lại big-five-mini.js và bản xem dist/: 20 câu, nút 1–5 và phím 1–5, "Quay lại câu trước", kết quả tổng 4–20 trên trục có vạch giữa 12, không nhãn cao/thấp, khung "Một lần trải nghiệm, không phải trắc nghiệm", link bài Tính cách có mấy chiều?. Khớp.'
+    review: dung
   - id: s2
     cau: 'Bản tiếng Việt: 18 câu lấy từ bản dịch của Walton trên IPIP, 2 câu do site dịch; lời dẫn và nhãn thang do site dịch; chưa kiểm chứng trên người Việt.'
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: 'Đã so từng câu trong CAU (big-five-mini.js) với trang VietnameseAB5C.htm, 17/11/2026: 18 câu khớp nguyên văn; "Feel others'' emotions" không có trong bản dịch; "Am the life of the party" bản dịch ghi "Cuộc sống với tôi giống như một bữa tiệc".'
+    ket_qua: da-sua
+    ghi_chu: 'Đã so từng câu trong CAU (big-five-mini.js) với trang VietnameseAB5C.htm, 17/11/2026: 18 câu khớp nguyên văn; "Feel others'' emotions" không có trong bản dịch; "Am the life of the party" bản dịch ghi "Cuộc sống với tôi giống như một bữa tiệc". Review (Claude Opus 5.5, 17/11/2026): sai một vế. Tự so lại 20 câu với VietnameseAB5C.htm (tải ngày 17/11/2026): 18 câu khớp nguyên văn và đúng cặp; "Am the life of the party" đúng như ghi; nhưng bản dịch có câu a2p1p112 (warmth) ghi "Feel others'' emotion" (số ít), dịch "Cảm nhận được tình cảm của người khác", nên câu trên trang "bản dịch IPIP không có câu này" sai. Giữ bản dịch của site ("cảm xúc", sát chữ emotions hơn "tình cảm"; số câu do site dịch vẫn là 2, câu chính của nhận định vẫn đúng); sửa lý do trên trang và chú thích đầu big-five-mini.js thành "bản dịch IPIP ghi câu này là "Feel others'' emotion" và dịch "Cảm nhận được tình cảm của người khác"; chúng tôi dịch "cảm xúc" cho sát chữ emotions".'
+    review: sai
   - id: n1
     cau: 'Thang Mini-IPIP của Donnellan và cộng sự (2006): 20 câu, 4 câu mỗi chiều (hướng ngoại, dễ chịu, tận tâm, bất ổn cảm xúc, trí tuệ/trí tưởng tượng); bản rút gọn của một bảng hỏi IPIP 50 câu.'
     loai: cong-cu
@@ -84,6 +86,7 @@ nhan_dinh:
     trich: + keyed Am the life of the party. Talk to a lot of different people at parties. – keyed Don't talk a lot. Keep in the background. … Factor V Intellect or Imagination + keyed Have a vivid imagination. – keyed Have difficulty understanding abstract ideas. Am not interested in abstract ideas. Do not have a good imagination.
     vi_tri: 'IPIP Mini-IPIP Scoring Key; vi_tri trong mã: hằng CAU'
     ket_qua: dung
+    ghi_chu: 'Review (Claude Opus 5.5, 17/11/2026): tự so CAU trong big-five-mini.js với trang Mini-IPIP Scoring Key: 20 câu và khóa khớp (E +2 −2, A +2 −2, C +2 −2, N +2 −2, Intellect +1 −3); thứ tự xen kẽ, không hai câu cùng chiều liền nhau.'
     luot_2: dung
     luot_2_nguon:
       - https://ipip.ori.org/MiniIPIPKey.htm
@@ -156,7 +159,7 @@ nhan_dinh:
     nguon:
       - ipip-quan-tri
     ket_qua: da-sua
-    ghi_chu: 'chỗ khó: chưa tìm được nguồn mở được cho câu này trong lô; câu cũ "các bảng hỏi chuẩn đều trộn câu thuận và câu đảo vì lý do này" đã làm mềm ("giúp phát hiện"). Lượt 2 tìm nguồn (ví dụ tổng quan về acquiescence trong bảng hỏi), không có thì bỏ câu. Sau lượt 2 (Opus, 17/11/2026): viết theo đúng lời trang IPIP; bỏ ý "phát hiện xu hướng đồng ý (acquiescence)" (không nguồn). Sửa đoạn trên trang và câu hỏi 1. Câu mới: cần lượt 2 bổ sung. [câu mới]'
+    ghi_chu: 'chỗ khó: chưa tìm được nguồn mở được cho câu này trong lô; câu cũ "các bảng hỏi chuẩn đều trộn câu thuận và câu đảo vì lý do này" đã làm mềm ("giúp phát hiện"). Lượt 2 tìm nguồn (ví dụ tổng quan về acquiescence trong bảng hỏi), không có thì bỏ câu. Sau lượt 2 (Opus, 17/11/2026): viết theo đúng lời trang IPIP; bỏ ý "phát hiện xu hướng đồng ý (acquiescence)" (không nguồn). Sửa đoạn trên trang và câu hỏi 1. Câu mới: cần lượt 2 bổ sung. [câu mới] Review: đạt (Claude Opus 5.5, 17/11/2026). Tự mở trang Administering IPIP Measures (17/11/2026): "The theory behind distributing items from different scales throughout an inventory and alternating between +keyed and -keyed items is that this encourages respondents to pay close attention to the content of items"; câu trên trang và câu hỏi 1 khớp, không còn ý acquiescence.'
     luot_2: dung
     trich: The theory behind distributing items from different scales throughout an inventory and alternating between +keyed and -keyed items is that this encourages respondents to pay close attention to the content of items and therefore increases the probability of valid responding.
     vi_tri: IPIP, Administering IPIP Measures
@@ -197,7 +200,7 @@ nhan_dinh:
       - ipip-mini
     ly_do: Năm nghiên cứu của nhóm tác giả cho kết quả cùng chiều (bản tiếng Anh); độ nhất quán mỗi thang vừa phải; chưa có tái lập lớn đăng ký trước hay tổng hợp trong lô này.
     ket_qua: da-sua
-    ghi_chu: 'Cũ: khung Khá vững về BFI-10 (Rammstedt và John, 2007). Thay bằng Mini-IPIP, thang công cụ dùng.'
+    ghi_chu: 'Cũ: khung Khá vững về BFI-10 (Rammstedt và John, 2007). Thay bằng Mini-IPIP, thang công cụ dùng. Review: đạt (Claude Opus 5.5, 17/11/2026). Khung nói về thang Mini-IPIP (không về cấu trúc Big Five, khẳng định của trang nhà), nên không lệch nhãn với trang nhà kham-pha/tinh-cach/big-five; co_so: năm nghiên cứu của nhóm tác giả, không có tái lập độc lập hay tổng hợp được dẫn: đúng mức Khá vững. Alpha 0,65–0,77 khớp trang Mini-IPIP Scoring Key (tự mở 17/11/2026).'
     luot_2: dung
     luot_2_nguon:
       - https://doi.org/10.1037/1040-3590.18.2.192
@@ -240,7 +243,8 @@ nhan_dinh:
     cau: Bản ở trang này chưa qua chuẩn hóa ở người Việt (dịch ngược, kiểm chứng cấu trúc nhân tố, chuẩn so sánh trên người Việt).
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'Phần "kể cả bản ở trang này" là câu về site (đúng: s2). Phần "nhiều bài test trên mạng" là khẳng định chung, không nguồn: giữ như nhận xét thận trọng của site cũ; lượt 2 xét bỏ hay giữ. Sau lượt 2 (Opus, 17/11/2026): theo đề nghị lượt 2: bỏ nhận xét chung "nhiều bài test tiếng Việt trên mạng" (không nguồn); chỉ còn câu về chính site, đúng (xem s2, n14).'
+    ghi_chu: 'Phần "kể cả bản ở trang này" là câu về site (đúng: s2). Phần "nhiều bài test trên mạng" là khẳng định chung, không nguồn: giữ như nhận xét thận trọng của site cũ; lượt 2 xét bỏ hay giữ. Sau lượt 2 (Opus, 17/11/2026): theo đề nghị lượt 2: bỏ nhận xét chung "nhiều bài test tiếng Việt trên mạng" (không nguồn); chỉ còn câu về chính site, đúng (xem s2, n14). Review (Claude Opus 5.5, 17/11/2026): câu trên trang (mục Ở Việt Nam) chỉ nói về chính bản của site; đúng với s2 (2 câu do site dịch, chưa dịch ngược) và n14 (chưa tìm thấy nghiên cứu kiểm chứng Mini-IPIP trên người Việt); không còn nhận xét chung về bài test trên mạng.'
+    review: dung
     luot_2: khong-chac
     luot_2_ghi_chu: '''Nhiều bài test tiếng Việt trên mạng chưa chuẩn hóa'' là mô tả thị trường, không có nguồn bậc 1-2. Phần ''bản này chưa chuẩn hóa'' đúng (xem n14). Nên viết lại: bản này chưa qua chuẩn hóa ở người Việt.'
   - id: n16

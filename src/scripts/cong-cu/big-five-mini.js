@@ -5,7 +5,8 @@
 // "Mini-IPIP Scoring Key" của IPIP (ipip.ori.org; câu IPIP thuộc phạm vi công cộng). Thang trả lời 5 bậc và cách chấm theo
 // "IPIP Scale Scoring Instructions": câu thuận 1–5, câu nghịch 5–1, điểm chiều là tổng 4 câu (4–20). Câu tiếng Việt: 18 câu
 // lấy từ bản dịch tiếng Việt các câu IPIP của Kate E. Walton (trang "Vietnamese Translation of AB5C Facets" của IPIP), 2 câu
-// do site dịch (bản dịch IPIP không có câu "Feel others' emotions"; câu "Am the life of the party" bản IPIP dịch thành "Cuộc
+// do site dịch (bản dịch IPIP ghi "Feel others' emotion", dịch "Cảm nhận được tình cảm của người khác": site dịch
+// "cảm xúc" cho sát chữ emotions; câu "Am the life of the party" bản IPIP dịch thành "Cuộc
 // sống với tôi giống như một bữa tiệc", sai nghĩa). Lời dẫn và nhãn thang do site dịch. Bản tiếng Việt này chưa được kiểm
 // chứng hay chuẩn hóa trên người Việt. Thứ tự câu xen kẽ các chiều (IPIP khuyên không xếp câu cùng thang liền nhau).
 //

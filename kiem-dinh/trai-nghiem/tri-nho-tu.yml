@@ -10,8 +10,8 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
-    luot_2: null
-    review: null
+    luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
+    review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: btb1975
@@ -48,7 +48,8 @@ nhan_dinh:
   loai: ve-site
   ket_qua: dung
   ghi_chu: 'Đã kiểm src/scripts/cong-cu/tri-nho-tu.js (QUY_TRINH: 2–12, 900 + 100 ms; TU; trangThaiDoDai dùng chung), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs. Chấm nay chuẩn
-    hóa Unicode NFC (bộ gõ có thể ra dạng tổ hợp) và bỏ dấu câu.'
+    hóa Unicode NFC (bộ gõ có thể ra dạng tổ hợp) và bỏ dấu câu. Review (17/11/2026): tri-nho-tu.js và bản build: QUY_TRINH batDau 2, toiDa 12, hienMs 900, cachMs 100 (mỗi giây một từ); TU 40 danh từ một âm tiết; dừng theo trangThaiDoDai (sai cả 2 lượt cùng độ dài); chấm NFC, không phân biệt hoa thường. Khớp.'
+  review: dung
 - id: n1
   cau: Theo mô hình của Baddeley, trí nhớ lời nói giữ thông tin bằng nhẩm lặp thầm; dung lượng ước chừng bằng lượng lời đọc được trong khoảng 2 giây; từ dài hơn thì nhớ được ít hơn.
   loai: phat-hien
@@ -58,7 +59,7 @@ nhan_dinh:
     temporal capacity
   vi_tri: Baddeley, Thomson & Buchanan 1975, toàn văn (PDF labs.la.utexas.edu/gilden, 15 trang), tóm tắt, tr. 575
   ket_qua: da-lam-mem
-  ghi_chu: 'Cũ: "Vòng lặp này chỉ quay được khoảng 2 giây nội dung" như sự thật; nay gắn với mô hình của Baddeley. Sau lượt 2 (Opus, 17/11/2026): giữ; nguyên văn ở tóm tắt bài (lượt 2 không mở được).'
+  ghi_chu: 'Cũ: "Vòng lặp này chỉ quay được khoảng 2 giây nội dung" như sự thật; nay gắn với mô hình của Baddeley. Sau lượt 2 (Opus, 17/11/2026): giữ; nguyên văn ở tóm tắt bài (lượt 2 không mở được). Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở PDF (labs.la.utexas.edu/gilden), tóm tắt tr. 575: "(3) Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec"; "a phonemically-based store of limited temporal capacity".'
   luot_2: khong-chac
   luot_2_ghi_chu: Baddeley, Thomson và Buchanan (1975) không mở được (nhà xuất bản đóng, không có bản ở Internet Archive hay CiteSeerX). 'Khoảng 2 giây' chưa xác nhận.
 - id: n2
@@ -68,7 +69,8 @@ nhan_dinh:
   ghi_chu: 'Cũ: "Từ cũng nặng hơn chữ số … nên độ dài trí nhớ từ thường thấp hơn độ dài trí nhớ chữ số" (không tìm được nguồn trong lô; với từ một âm tiết tiếng Việt không chắc đúng). Viết lại thành suy
     luận từ hiệu ứng độ dài từ. chỗ khó: suy luận chưa được đo trên người Việt; "tên chữ số tiếng Việt một âm tiết" cùng câu với do-dai-tri-nho n16 (D8-L1, chưa chắc). Sau lượt 2 (Opus, 17/11/2026): bỏ
     dự đoán "độ dài trí nhớ từ và chữ số có thể không chênh nhiều" (không có nguồn; lượt 2 nêu chữ số thường quen hơn từ). Chỉ còn câu về chính site (TU trong tri-nho-tu.js: 40 từ một âm tiết; link trang
-    chữ số), kiểm 17/11/2026.'
+    chữ số), kiểm 17/11/2026. Review (17/11/2026): trang (Điều gì đang xảy ra?, Ở Việt Nam) và công cụ (mục So với độ dài trí nhớ chữ số) chỉ mời tự so, không còn dự đoán chênh lệch; TU đều một âm tiết; link /psyche/trai-nghiem/do-dai-tri-nho/ đúng. Khớp.'
+  review: dung
   luot_2: khong-chac
   luot_2_ghi_chu: Dự đoán 'ít chênh' chưa có nguồn; chữ số thường quen thuộc hơn từ nên khoảng nhớ thường lớn hơn. Nên nói 'hãy làm cả hai để tự so' và bỏ dự đoán.
 - id: n3
@@ -96,7 +98,7 @@ nhan_dinh:
     requiring the subject to articulate an irrelevant sound, the word length effect disappears with visual presentation, but remains when presentation is auditory.
   vi_tri: Baddeley, Thomson & Buchanan 1975, toàn văn (PDF labs.la.utexas.edu/gilden, 15 trang), tóm tắt, tr. 575
   ket_qua: da-sua
-  ghi_chu: 'Cũ: "Số từ nhớ được xấp xỉ số từ đọc được" thành "dự đoán được từ" (đúng chữ "predicted"); "ngay cả khi … chỉ khác thời lượng đọc" viết lại theo ý (2). Sau lượt 2 (Opus, 17/11/2026): giữ.'
+  ghi_chu: 'Cũ: "Số từ nhớ được xấp xỉ số từ đọc được" thành "dự đoán được từ" (đúng chữ "predicted"); "ngay cả khi … chỉ khác thời lượng đọc" viết lại theo ý (2). Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở PDF, tóm tắt tr. 575: bốn kết quả (1)–(4) đúng như trich.'
   luot_2: khong-chac
   luot_2_ghi_chu: Không mở được bài gốc 1975 nên các số liệu và thí nghiệm ngăn nhẩm lặp chưa xác nhận.
 - id: n5
@@ -121,7 +123,7 @@ nhan_dinh:
   ghi_chu: 'Cũ: "độ dài trí nhớ từ thường thấp hơn chữ số" trong ý chính và "tái lập rộng rãi suốt nửa thế kỷ" (không nguồn). Bỏ phần chữ số (xem n2). Bỏ khung Khá vững "khoảng 4 cụm" (thuộc trang nhà,
     ở đó là Đang tranh cãi). Sau lượt 2 (Opus, 17/11/2026): theo câu đúng của lượt 2 (Khá vững), viết lại ý chính và thân khung. Lệch với trang nhà kham-pha/tri-nho/tri-nho-lam-viec (đã khóa), nơi khung
     Vững chắc "trí nhớ ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh của từ" gộp hiệu ứng độ dài từ: báo chủ repo, có thể cần mở khóa trang nhà. Câu mới: cần lượt 2 bổ sung. [câu mới] Sau lượt 2 bổ sung
-    (người gộp quyết, áp dụng 17/11/2026): tách câu: Oberauer 2018 chỉ cho ý "ổn định, nhiều ngôn ngữ khi thay đổi số âm tiết"; ý "cách giải thích còn tranh cãi" quy cho Guitard và cộng sự 2025.'
+    (người gộp quyết, áp dụng 17/11/2026): tách câu: Oberauer 2018 chỉ cho ý "ổn định, nhiều ngôn ngữ khi thay đổi số âm tiết"; ý "cách giải thích còn tranh cãi" quy cho Guitard và cộng sự 2025. Review: đạt (Claude Opus 5.5, 17/11/2026). Tự mở tóm tắt Guitard, Neath & Surprenant (Europe PMC; số in 2/2026): thí nghiệm 2 cân bằng cả số láng giềng chính tả và âm thì "the word-length effect disappeared" (bài nhận diện thứ tự). Oberauer 2018 (hồ sơ trang nhà, n26) cũng viết "its interpretation remains controversial", nên vế tranh cãi đúng với cả hai nguồn. co_so: tổng quan chuẩn mực (không phải phân tích tổng hợp hay tổng quan hệ thống), không tái lập lớn có đăng ký trước được dẫn, một nghiên cứu cân bằng kỹ làm hiệu ứng mất: đúng chữ Khá vững của mục 4. Lệch với khung Vững chắc của trang nhà đã khóa kham-pha/tri-nho/tri-nho-lam-viec (cùng hiệu ứng theo số âm tiết, căn cứ Oberauer 2018) và với độ dài trí nhớ D8-L1 (Vững chắc dựa trên Oberauer 2018): ghi vào báo cáo cho chủ repo quyết một cách dùng thống nhất; không sửa trang đã khóa.'
   luot_2: dung
   luot_2_nguon:
   - https://www.cns.nyu.edu/malab/static/files/publications/2018%20Oberauer%20et%20al..pdf
@@ -143,7 +145,7 @@ nhan_dinh:
   vi_tri: Guitard 2025, tóm tắt (OpenAlex); Miller 1956 (hồ sơ tri-nho-lam-viec.yml n52)
   ket_qua: da-sua
   ghi_chu: 'Cũ: "Suy giảm và nhiễu … những từ giống nhau dễ bị nhầm khi gõ lại", "Đây là lý do cùng một người có thể đạt cao hơn" (giữ, giả định minh họa). Sau lượt 2 (Opus, 17/11/2026): thay ý "nhiễu giữa
-    các mục (Oberauer 2018)" (lượt 2 không xác nhận được nguồn cho cách gọi ấy) bằng cách giải thích từ vựng theo Guitard 2025. Câu mới: cần lượt 2 bổ sung. [câu mới]'
+    các mục (Oberauer 2018)" (lượt 2 không xác nhận được nguồn cho cách gọi ấy) bằng cách giải thích từ vựng theo Guitard 2025. Câu mới: cần lượt 2 bổ sung. [câu mới] Review: đạt (Claude Opus 5.5, 17/11/2026): tóm tắt Guitard 2025: "most studies have confounded length with lexical and other long-term memory factors"; "có thể" giữ đúng mức thận trọng.'
   luot_2: dung
   luot_2_nguon:
   - https://europepmc.org/article/PMC/PMC12956956
@@ -214,7 +216,7 @@ nhan_dinh:
   - miller1956
   ket_qua: da-lam-mem
   ghi_chu: 'Cũ: "Độ dài trí nhớ chỉ là một mảnh nhỏ của nhận thức". Câu chung về đo lường, như do-dai-tri-nho (D8-L1); lượt 2 xem cần nguồn không. Sau lượt 2 (Opus, 17/11/2026): bỏ "một lần đo trên mạng
-    chịu ảnh hưởng của mệt mỏi, mất tập trung, thiết bị" (không nguồn); giữ phần có nguồn (gom nhóm) và phần về chính site (công cụ chưa chuẩn hóa). Câu mới: cần lượt 2 bổ sung. [câu mới]'
+    chịu ảnh hưởng của mệt mỏi, mất tập trung, thiết bị" (không nguồn); giữ phần có nguồn (gom nhóm) và phần về chính site (công cụ chưa chuẩn hóa). Câu mới: cần lượt 2 bổ sung. [câu mới] Review: đạt (Claude Opus 5.5, 17/11/2026): câu trên trang chỉ còn phần có nguồn (gom nhóm, Miller 1956 theo hồ sơ trang nhà) và phần về chính công cụ. Câu hỏi 4 và khối "Vì sao con số của bạn có thể khác?" của công cụ vẫn nhắc mệt, mất tập trung: lời nhắc chung về một lần đo, như công cụ độ dài trí nhớ đã khóa (D8-L1); không coi là nhận định cần nguồn.'
   luot_2: dung
   trich: we can increase the number of bits of information that it contains simply by building larger and larger chunks
   vi_tri: Miller 1956 (hồ sơ tri-nho-lam-viec.yml n52)
@@ -231,7 +233,7 @@ nhan_dinh:
   vi_tri: Baddeley, Thomson & Buchanan 1975, toàn văn (PDF labs.la.utexas.edu/gilden, 15 trang), tóm tắt, tr. 575
   ket_qua: da-sua
   ghi_chu: 'Câu hỏi 1 cũ hỏi "vì sao độ dài trí nhớ từ thường thấp hơn chữ số" (xem n2): viết lại. Sau lượt 2 (Opus, 17/11/2026): giữ câu hỏi 1–2 (nguyên văn ở tóm tắt); câu hỏi 3 (chỉ dùng từ một âm tiết
-    để giữ độ dài như nhau) là lựa chọn thiết kế của site: lời giải thích không cần nguồn ngoài hiệu ứng độ dài từ.'
+    để giữ độ dài như nhau) là lựa chọn thiết kế của site: lời giải thích không cần nguồn ngoài hiệu ứng độ dài từ. Review: đạt (Claude Opus 5.5, 17/11/2026): như n1, n4.'
   luot_2: khong-chac
   luot_2_ghi_chu: Phụ thuộc Baddeley 1975 (chưa mở). Phần 'từ một âm tiết kiểm soát độ dài từ' là lựa chọn thiết kế của công cụ, có lý nhưng chưa có nguồn.
 doi_chu:

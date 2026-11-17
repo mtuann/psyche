@@ -10,8 +10,8 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
-    luot_2: null
-    review: null
+    luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
+    review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: tversky1983
@@ -27,9 +27,9 @@ nguon:
   link: https://doi.org/10.1016/j.geb.2009.09.003
   toan_van: true
 - id: chandrashekar2021
-  ten: 'Chandrashekar và cộng sự (2021), Meta-Psychology 5: theo hồ sơ đã khóa linh-cam-va-xac-suat.yml'
+  ten: 'Chandrashekar và cộng sự (2021), Meta-Psychology 5: toàn văn (open.lnu.se/index.php/metapsychology/article/download/2474/2516, review mở 17/11/2026)'
   link: https://doi.org/10.15626/mp.2020.2474
-  toan_van: false
+  toan_van: true
 - id: gigerenzer1991
   ten: 'Gigerenzer (1991), Eur Rev Soc Psychol 2(1), 83–115: tóm tắt (theo hồ sơ đã khóa linh-cam-va-xac-suat.yml)'
   link: https://doi.org/10.1080/14792779143000033
@@ -43,9 +43,9 @@ nguon:
   link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=conjunction%20fallacy%20Vietnamese
   toan_van: false
 - id: hertwig1999
-  ten: 'Hertwig & Gigerenzer (1999), J Behav Decis Mak 12(4), 275–305: siêu dữ liệu (Crossref); câu trích tr. 296 theo lượt 2 bổ sung (đọc toàn văn)'
+  ten: 'Hertwig & Gigerenzer (1999), J Behav Decis Mak 12(4), 275–305: toàn văn (PDF công khai, pure.mpg.de, review mở 17/11/2026), tr. 296–297'
   link: https://doi.org/10.1002/%28SICI%291099-0771%28199912%2912%3A4%3C275%3A%3AAID-BDM323%3E3.0.CO%3B2-M
-  toan_van: false
+  toan_van: true
 - id: kahneman2002
   ten: 'Kahneman & Frederick (2002), chương trong Heuristics and Biases (Cambridge), tr. 49–81: siêu dữ liệu (Crossref); định nghĩa theo bản cập nhật 2005 và bài giảng Nobel, lượt 2 bổ sung đọc'
   link: https://doi.org/10.1017/CBO9780511808098.004
@@ -55,7 +55,8 @@ nhan_dinh:
   cau: 'Công cụ: đoạn mô tả Linda, hai phát biểu A, B (chọn một), "Trả lời"; kết quả, link bài Vì sao linh cảm hay đánh lừa ta?; "Thử lại".'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: Đã kiểm src/scripts/cong-cu/linda.js, 17/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs.
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/linda.js, 17/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): linda.js và bản build: đoạn mô tả Linda như trang nhà, hai phát biểu A, B (radio), nút "Trả lời" (chưa chọn thì nhắc), kết quả kèm biểu đồ 85%/15% (NGHIEN_CUU: 142, 85), link bài Vì sao linh cảm hay đánh lừa ta?, nút "Thử lại". Khớp.'
+  review: dung
 - id: n1
   cau: 'Mô tả trang: 85% người chọn đáp án mà về mặt logic không thể đúng hơn.'
   loai: so-lieu
@@ -132,7 +133,7 @@ nhan_dinh:
   trich: We first presented the description of Linda to a group of 142 undergraduates at UBC … Overall, 85% of respondents indicated that T&F was more probable than T
   vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n5)
   ket_qua: da-sua
-  ghi_chu: 'Cũ: "85% người tham gia" không nói nhóm nào.'
+  ghi_chu: 'Cũ: "85% người tham gia" không nói nhóm nào. Review (Claude Opus 5.5, 17/11/2026): tự mở bản in, tr. 299: "142 undergraduates at UBC … Overall, 85%"; "The respondents in the studies described in this section were statistically naive undergraduates at UBC".'
   luot_2: dung
   luot_2_nguon:
   - https://archive.org/details/DTIC_ADA131801
@@ -149,7 +150,7 @@ nhan_dinh:
   luot_2_nguon:
   - https://archive.org/details/DTIC_ADA131801
   luot_2_ghi_chu: Bản quét OCR có chữ số bị nhòe ở hàng Linda (đọc ra 89%, 90%, 85%); khoảng 85–90% khớp trí nhớ về bảng đã đăng. Nên đối chiếu bảng 1 của bản đăng Psychological Review.
-  ghi_chu: 'Sau lượt 2 (Opus, 17/11/2026): giữ; đối chiếu bảng của bản in (không phải bản DTIC): 89, 90, 85.'
+  ghi_chu: 'Sau lượt 2 (Opus, 17/11/2026): giữ; đối chiếu bảng của bản in (không phải bản DTIC): 89, 90, 85. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở bản in Psychological Review (Internet Archive, bộ wikipedia-scholarly-sources-corpus), tr. 298, Bảng 1: hàng Linda V = 89, 90, 85 (ngây thơ, trung gian, tinh vi).'
 - id: n8
   cau: 'Phiên bản đặt cược: 56% (60 người).'
   loai: so-lieu
@@ -221,7 +222,7 @@ nhan_dinh:
     của cách hiểu từ ngữ (theo trang nhà). Đổi cả câu hỏi 5. Sau lượt 2 (Opus, 17/11/2026): tách vế quy cho Gigerenzer (chỉ còn ý trong tóm tắt Gigerenzer 1991: một trường hợp so với tần suất) với vế cách
     hiểu từ ngữ (quy cho Hertwig, theo Chandrashekar 2021, như trang nhà). Sửa cả mục Lý thuyết và câu hỏi 5. Câu mới: cần lượt 2 bổ sung. [câu mới] Sau lượt 2 bổ sung (người gộp quyết, áp dụng 17/11/2026):
     sửa theo cau_dung: quy cách hiểu "không hoạt động nữ quyền" cho Adler, Dulany & Hilton, Politzer & Noveck (theo Hertwig & Gigerenzer 1999), ghi chưa được xác nhận; thêm kết quả làm lại của Chandrashekar
-    2021. Câu hỏi 5 chỉ nói phần Gigerenzer 1991, không cần sửa.'
+    2021. Câu hỏi 5 chỉ nói phần Gigerenzer 1991, không cần sửa. Review: đạt (Claude Opus 5.5, 17/11/2026). Tự mở toàn văn Hertwig & Gigerenzer 1999 (bản PDF công khai trên pure.mpg.de), tr. 296–297: "several researchers (e.g. Adler, 1984, 1991; Dulany and Hilton, 1991; Politzer and Noveck, 1991) argued that participants interpret the hypothesis ''Linda is a bank teller'' to mean ''Linda is a bank teller and is not active in the feminist movement'' (T&not-F implicature)"; "None of the predictions that Agnoli and Krantz (1989) attributed to this hypothesis have been corroborated". Câu thêm ngoài cau_dung ("Một lần làm lại có đăng ký trước (Chandrashekar và cộng sự, 2021) cũng không thấy bằng chứng cho giả thuyết từ ngữ mơ hồ"): tự mở toàn văn (open.lnu.se, Meta-Psychology): "We conducted a pre-registered well-powered very close replication (N = 1032) … We found no support for semantic ambiguity"; vế Hertwig về "probability" và "and" cũng có ở đó. Nhãn Đang tranh cãi cho câu hỏi vì sao: đúng mục 4. Trang nhà đã khóa linh-cam-va-xac-suat còn viết cách hiểu "không phải nhà hoạt động nữ quyền" là "một dạng" của cách hiểu từ ngữ của Hertwig: lệch với nguồn (ghi vào báo cáo, không sửa trang đã khóa).'
   luot_2: sai
   luot_2_nguon:
   - https://www.csc2.ncsu.edu/faculty/mpsingh/local/Social/f24/wrap/readings/Gigerenzer-on-Kahneman+Tversky-1991.pdf
@@ -247,7 +248,7 @@ nhan_dinh:
   ghi_chu: 'Cũ: "não tự động trả lời … mà ta không hề hay biết … đầy sức thuyết phục". Sau lượt 2 (Opus, 17/11/2026): giữ, vì câu là lời quy cho chính Kahneman ("Theo Kahneman (2011)"): sách của ông là
     nguồn gốc của chính quan điểm ấy, và hồ sơ trang nhà đã khóa có câu trích từ bản quét. Lô không mở được Kahneman & Frederick (2002) (mạng lỗi ngày 17/11/2026): lượt 2 bổ sung nên mở bài ấy; không mở
     được thì bỏ ý Thay thế thuộc tính và câu hỏi 3. Sau lượt 2 bổ sung (người gộp quyết, áp dụng 17/11/2026): thêm Kahneman & Frederick (2002) làm nguồn của khái niệm thay thế thuộc tính, trên trang và
-    trong mục Nguồn.'
+    trong mục Nguồn. Review: đạt (Claude Opus 5.5, 17/11/2026): Crossref 10.1017/CBO9780511808098.004: Kahneman & Frederick, "Representativeness Revisited: Attribute Substitution in Intuitive Judgment", Heuristics and Biases, tr. 49–81: tên chương khớp ý "người đặt tên khái niệm" và mục Nguồn.'
   luot_2: dung
   luot_2_nguon:
   - https://cdn2.psychologytoday.com/assets/model_of_heuristic_judgment.pdf
@@ -314,7 +315,7 @@ nhan_dinh:
     theory. (tr. 297–298) | Table 1: Sophisticated, Linda: V = 85, N = 32 (tr. 298)'
   vi_tri: Tversky & Kahneman 1983, bản in Psychol Rev, tr. 297–298, Bảng 1
   ket_qua: da-sua
-  ghi_chu: 'Thêm "ở phiên bản xếp hạng"; ở phiên bản so hai phát biểu, phần lớn người đã học nhiều thống kê làm đúng. Sau lượt 2 (Opus, 17/11/2026): giữ.'
+  ghi_chu: 'Thêm "ở phiên bản xếp hạng"; ở phiên bản so hai phát biểu, phần lớn người đã học nhiều thống kê làm đúng. Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): cùng bản in, Bảng 1: Sophisticated, Linda: V = 85, N = 32; nhóm tinh vi là "doctoral students in the decision science program of the Stanford Business School".'
   luot_2: dung
   luot_2_nguon:
   - https://archive.org/details/DTIC_ADA131801
@@ -327,7 +328,7 @@ nhan_dinh:
   trich: only 36% of respondents committed the fallacy. Thus, statistical sophistication produced a majority who conformed to the conjunction rule in a transparent test
   vi_tri: (câu trích như hồ sơ đã khóa linh-cam-va-xac-suat.yml, n69)
   ket_qua: da-sua
-  ghi_chu: 'Cũ: "85% trong phiên bản so sánh trực tiếp … kể cả ở nhóm có trình độ thống kê cao" (sai với phiên bản so trực tiếp: nhóm thống kê cao 36%).'
+  ghi_chu: 'Cũ: "85% trong phiên bản so sánh trực tiếp … kể cả ở nhóm có trình độ thống kê cao" (sai với phiên bản so trực tiếp: nhóm thống kê cao 36%). Review (Claude Opus 5.5, 17/11/2026): tr. 299: 64 nghiên cứu sinh đã học nhiều thống kê, bản chấm thang của phép thử trực tiếp, "only 36% of respondents committed the fallacy".'
   luot_2: dung
   luot_2_nguon:
   - https://archive.org/details/DTIC_ADA131801

@@ -33,7 +33,7 @@ Mini-IPIP là bản rút gọn 20 câu của một bảng hỏi IPIP 50 câu. Qu
 
 ### Bản tiếng Việt
 
-18 trong 20 câu lấy từ bản dịch tiếng Việt các câu IPIP do Kate E. Walton cung cấp trên trang IPIP ([Vietnamese Translation of AB5C Facets](https://ipip.ori.org/VietnameseAB5C.htm)). Hai câu do chúng tôi dịch: "Feel others' emotions." (bản dịch IPIP không có câu này) và "Am the life of the party." (bản dịch IPIP ghi "Cuộc sống với tôi giống như một bữa tiệc", khác nghĩa câu gốc). Lời dẫn và nhãn của thang 5 bậc cũng do chúng tôi dịch. Bản tiếng Việt này chưa được kiểm chứng cấu trúc nhân tố hay chuẩn hóa trên người Việt.
+18 trong 20 câu lấy từ bản dịch tiếng Việt các câu IPIP do Kate E. Walton cung cấp trên trang IPIP ([Vietnamese Translation of AB5C Facets](https://ipip.ori.org/VietnameseAB5C.htm)). Hai câu do chúng tôi dịch: "Feel others' emotions." (bản dịch IPIP ghi câu này là "Feel others' emotion" và dịch "Cảm nhận được tình cảm của người khác"; chúng tôi dịch "cảm xúc" cho sát chữ emotions) và "Am the life of the party." (bản dịch IPIP ghi "Cuộc sống với tôi giống như một bữa tiệc", khác nghĩa câu gốc). Lời dẫn và nhãn của thang 5 bậc cũng do chúng tôi dịch. Bản tiếng Việt này chưa được kiểm chứng cấu trúc nhân tố hay chuẩn hóa trên người Việt.
 
 ## Mức độ chắc chắn
 

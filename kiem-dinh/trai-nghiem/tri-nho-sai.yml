@@ -10,8 +10,8 @@ lan:
   ma_bam: null
   nguoi:
     luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
-    luot_2: null
-    review: null
+    luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
+    review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
     kiem_mau: null
 nguon:
 - id: roediger1995
@@ -44,7 +44,7 @@ nguon:
   link: https://doi.org/10.3389/fpsyg.2021.718818
   toan_van: false
 - id: huan2026
-  ten: 'Huan và cộng sự (2026), Psychol Aging 41(4), 497–524, phân tích tổng hợp: siêu dữ liệu (Crossref); nội dung theo lượt 2 bổ sung'
+  ten: 'Huan và cộng sự (2026), Psychol Aging 41(4), 497–524, phân tích tổng hợp 150 bài, 414 cỡ hiệu ứng: tóm tắt (Europe PMC, review mở 17/11/2026)'
   link: https://doi.org/10.1037/pag0000966
   toan_van: false
 nhan_dinh:
@@ -52,13 +52,15 @@ nhan_dinh:
   cau: 'Cách chơi: 12 từ hiện lần lượt; 18 từ kiểm tra, "Đã thấy" (phím D) hay "Chưa thấy" (phím C); 12 từ đã học, 5 từ nhiễu và một từ đặc biệt.'
   loai: ve-site
   ket_qua: dung
-  ghi_chu: Đã kiểm src/scripts/cong-cu/tri-nho-sai.js (DANH_SACH, baiKiemTra, phím D/C qua batPhimTat), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.
+  ghi_chu: 'Đã kiểm src/scripts/cong-cu/tri-nho-sai.js (DANH_SACH, baiKiemTra, phím D/C qua batPhimTat), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): tri-nho-sai.js và bản xem dist/: DANH_SACH 12 từ học, 5 từ nhiễu, từ mồi "ngủ" (12 + 5 + 1 = 18), xáo trộn, nút Đã thấy (D) / Chưa thấy (C) qua batPhimTat. Khớp.'
+  review: dung
 - id: s2
   cau: 'Công cụ: mỗi từ hiện 1,2 giây, nghỉ 0,3 giây; danh sách tiếng Việt do site soạn theo mẫu danh sách "sleep" của bài gốc, chưa chuẩn hóa độ mạnh liên tưởng; lời "minh họa, không phải bài kiểm tra
     trí nhớ".'
   loai: ve-site
   ket_qua: da-sua
-  ghi_chu: 'Đã kiểm DANH_SACH trong tri-nho-sai.js, 17/11/2026. Danh sách cũ có "buồn ngủ" (chứa đúng từ mồi "ngủ"): đã thay bằng "chợp mắt"; kiểm thử chặn từ mồi nằm trong từ đã học.'
+  ghi_chu: 'Đã kiểm DANH_SACH trong tri-nho-sai.js, 17/11/2026. Danh sách cũ có "buồn ngủ" (chứa đúng từ mồi "ngủ"): đã thay bằng "chợp mắt"; kiểm thử chặn từ mồi nằm trong từ đã học. Review (17/11/2026): bản build (dist/_astro/tri-nho-sai.*.js) có hienMs 1200, nghiMs 300; "chợp mắt" thay "buồn ngủ"; chữ "minh họa … không phải bài kiểm tra trí nhớ" có ở cả công cụ và trang. Khớp.'
+  review: dung
 - id: n1
   cau: Các từ cùng chủ đề (giường, gối, mơ…) kích hoạt cả từ gắn với chủ đề ("ngủ"); lúc kiểm tra, người ta không phân biệt được "đã thấy" với "đã nghĩ đến" (cách giải thích phổ biến).
   loai: phat-hien
@@ -111,7 +113,7 @@ nhan_dinh:
     nonstudied lures (.84) approached the hit rate (.86)
   vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 806, Thí nghiệm 1, mục Recognition, Bảng 1
   ket_qua: da-sua
-  ghi_chu: 'Cũ: "có khi cao ngang". Mới nêu số của thí nghiệm 1 (đánh giá 3 hay 4). Sau lượt 2 (Opus, 17/11/2026): giữ; lượt 2 chỉ đọc tóm tắt, số 84% và 86% có nguyên văn ở tr. 806.'
+  ghi_chu: 'Cũ: "có khi cao ngang". Mới nêu số của thí nghiệm 1 (đánh giá 3 hay 4). Sau lượt 2 (Opus, 17/11/2026): giữ; lượt 2 chỉ đọc tóm tắt, số 84% và 86% có nguyên văn ở tr. 806. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở PDF psych.hanover.edu, tr. 806: "the false-alarm rate for the critical nonstudied lures (.84) approached the hit rate (.86)" (đánh giá 3 hay 4).'
   luot_2: khong-chac
   luot_2_ghi_chu: 'Tóm tắt chỉ nói thí nghiệm 1: nhận diện với độ tin cậy cao; thí nghiệm 2: dương tính giả ''comparable to the hit rate''. Không mở được toàn văn (APA đóng, CiteSeerX hỏng, không có bản
     ở Internet Archive) nên 84% và 86% chưa xác nhận.'
@@ -125,7 +127,7 @@ nhan_dinh:
   vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 808–809, Thí nghiệm 2, mục Recognition, Bảng 2
   ket_qua: da-sua
   ghi_chu: 'Cũ: "người ta còn nhớ cả khoảnh khắc mình đã thấy từ đó" (không nói thí nghiệm nào). Mới gắn với thí nghiệm 2, phân biệt remember/know. Sau lượt 2 (Opus, 17/11/2026): giữ; 72% (có nhớ lại) và
-    53% (không nhớ lại) đều trên một nửa, đúng chữ "phần lớn".'
+    53% (không nhớ lại) đều trên một nửa, đúng chữ "phần lớn". Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, tr. 808–809 và Bảng 2: remember 72% (.58/.81) khi đã nhớ lại, 53% khi không nhớ lại.'
   luot_2: khong-chac
   luot_2_ghi_chu: Phán đoán remember/know ở thí nghiệm 2 không có trong tóm tắt; chưa mở được toàn văn.
 - id: n6
@@ -155,7 +157,7 @@ nhan_dinh:
   ghi_chu: 'chỗ khó: thước đo mục 4 đòi phân tích tổng hợp hay hai tái lập lớn có đăng ký trước; ở đây là một tổng quan tường thuật cộng một tái lập có đăng ký trước (trên mạng). Cũ: "một trong những ảo
     giác trí nhớ mạnh nhất", "Tỉ lệ nhớ nhầm thường đạt 40–80% tùy thiết kế" (không tìm được nguồn cho khoảng 40–80%): đã bỏ, thay bằng "thay đổi nhiều theo danh sách và cách làm". Sau lượt 2 (Opus, 17/11/2026):
     hạ Vững chắc xuống Khá vững trên trang (ý chính giữ, thêm câu lý do nhãn). Câu mới: cần lượt 2 bổ sung. [câu mới] Sau lượt 2 bổ sung (người gộp quyết, áp dụng 17/11/2026): nhãn trở lại Vững chắc theo
-    cau_dung; thân khung trên trang dẫn thêm Mak 2023, Wiechert 2024, Coburn 2021, Huan 2026.'
+    cau_dung; thân khung trên trang dẫn thêm Mak 2023, Wiechert 2024, Coburn 2021, Huan 2026. Review: đạt (Claude Opus 5.5, 17/11/2026). Tự mở toàn văn Gallo 2010 (tr. 833, 835: "hundreds of studies"; "the young, the old, the neurologically impaired, and people with different languages and cultures") và Zwaan 2018 (Bảng 1, hiệu ứng 5 False memories); tóm tắt Mak 2023 (registered report, N = 488), Wiechert 2024 (preregistered meta-analysis and preregistered replication, n = 278), Coburn 2021 (systematic review), Huan 2026 (phân tích tổng hợp 150 bài, 414 cỡ hiệu ứng, trí nhớ sai tự phát ở người trẻ và người già) qua Europe PMC. co_so có tổng quan hệ thống và phân tích tổng hợp, nhiều tái lập có đăng ký trước cùng chiều, nhiều quần thể: đạt Vững chắc theo mục 4. Câu trên trang hẹp hơn cau ("người trẻ và người già", không nói trẻ em): không mạnh hơn nguồn.'
   luot_2: sai
   luot_2_nguon:
   - https://link.springer.com/content/pdf/10.3758/s13423-017-1348-y.pdf
@@ -184,7 +186,7 @@ nhan_dinh:
   ly_do: Tổng quan nêu hai nhóm lý thuyết chính, mỗi nhóm có bằng chứng riêng, chưa tách được.
   ket_qua: da-sua
   ghi_chu: 'Cũ: "sự mờ nhòe của dấu vết trí nhớ … tranh luận vẫn tiếp tục". Mới gọi đúng tên các lý thuyết theo Gallo. Sau lượt 2 (Opus, 17/11/2026): giữ vế "theo Gallo": nguyên văn ở tr. 836 (lượt 2 không
-    mở được Gallo).'
+    mở được Gallo). Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở Gallo 2010, tr. 836: "difficult to tease apart in practice, but these processes are not mutually exclusive, and there is evidence that uniquely supports each".'
   luot_2: dung
   luot_2_nguon:
   - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC8473788&format=json&resultType=core
@@ -198,7 +200,7 @@ nhan_dinh:
     as part of a course requirement. (tr. 807)
   vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 804 và 807, mục Subjects của hai thí nghiệm
   ket_qua: da-sua
-  ghi_chu: 'Thêm cỡ mẫu. Sau lượt 2 (Opus, 17/11/2026): giữ.'
+  ghi_chu: 'Thêm cỡ mẫu. Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn: "36 Rice University undergraduates" (tr. 804), "Thirty Rice University undergraduates" (tr. 807).'
   luot_2: khong-chac
   luot_2_ghi_chu: Số người (36, 30) không có trong tóm tắt; chưa mở được toàn văn.
 - id: n9
@@ -210,7 +212,7 @@ nhan_dinh:
     test, subjects made old-new judgments, followed by remember-know judgments for items judged to be old. (tr. 807)
   vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)), tr. 806–807
   ket_qua: da-sua
-  ghi_chu: 'Cũ: "bản gốc còn hỏi …" (chỉ thí nghiệm 2 hỏi). Sau lượt 2 (Opus, 17/11/2026): giữ.'
+  ghi_chu: 'Cũ: "bản gốc còn hỏi …" (chỉ thí nghiệm 2 hỏi). Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn: bài nhận diện thí nghiệm 1 "given following study and recall of all six lists" (tr. 806); remember-know chỉ ở thí nghiệm 2.'
   luot_2: khong-chac
   luot_2_nguon:
   - https://doi.org/10.1037/0278-7393.21.4.803
@@ -225,7 +227,7 @@ nhan_dinh:
     808) | the false-alarm rate for the critical nonstudied lures (.84) approached the hit rate (.86) (tr. 806)
   vi_tri: Roediger & McDermott 1995, toàn văn (PDF psych.hanover.edu, 12 trang, bản in J Exp Psychol LMC 21(4)); hằng NGHIEN_CUU trong tri-nho-sai.js
   ket_qua: da-sua
-  ghi_chu: 'Công cụ cũ chỉ nêu 40%, 55% và "có khi cao ngang"; nay dựng chữ từ hằng NGHIEN_CUU, thêm cỡ mẫu và số nhận diện. Sau lượt 2 (Opus, 17/11/2026): giữ; mọi số có nguyên văn trong toàn văn.'
+  ghi_chu: 'Công cụ cũ chỉ nêu 40%, 55% và "có khi cao ngang"; nay dựng chữ từ hằng NGHIEN_CUU, thêm cỡ mẫu và số nhận diện. Sau lượt 2 (Opus, 17/11/2026): giữ; mọi số có nguyên văn trong toàn văn. Review: đạt (Claude Opus 5.5, 17/11/2026): mọi số của NGHIEN_CUU (36, 6, 12, 40; 30, 15, 55; 84, 86) có nguyên văn trong toàn văn (tóm tắt, tr. 804–808, Bảng 1); chữ hiện ra trong công cụ dựng từ hằng này.'
   luot_2: khong-chac
   luot_2_nguon:
   - https://doi.org/10.1037/0278-7393.21.4.803
@@ -240,7 +242,7 @@ nhan_dinh:
   ket_qua: dung
   luot_2: khong-chac
   luot_2_ghi_chu: Nhịp 1,5 giây mỗi từ ở thí nghiệm 1 chưa xác nhận (không mở được toàn văn). Thông số 1,2 giây hiện + 0,3 giây nghỉ là của công cụ, không đối chiếu được.
-  ghi_chu: 'Sau lượt 2 (Opus, 17/11/2026): giữ.'
+  ghi_chu: 'Sau lượt 2 (Opus, 17/11/2026): giữ. Review: đạt (Claude Opus 5.5, 17/11/2026): tự mở toàn văn, tr. 805: "read aloud by the first author at the approximate rate of 1 word per 1.5 s".'
 doi_chu:
 - cu: 'Mục Roediger và McDermott (1995): "cho người học", "có khi cao ngang", "nhớ cả khoảnh khắc"'
   moi: nghe đọc to, nhớ lại sau mỗi danh sách; 84% so với 86%; remember/know ở thí nghiệm 2

@@ -10,8 +10,8 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L2, một mình, không agent con)
-      luot_2: null
-      review: null
+      luot_2: 'Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L2, 17/11/2026); bổ sung: Claude Opus 5.5 (17/11/2026)'
+      review: Claude Opus 5.5 (agent review D8-L2, 17/11/2026)
       kiem_mau: null
 nguon:
   - id: wason1960
@@ -39,7 +39,8 @@ nhan_dinh:
     cau: 'Công cụ: nhập dãy ba số, công cụ báo tuân theo hay không; nút "Công bố quy tắc"; chấm bằng từ khóa; nêu sai được thử tiếp; chữ người dùng không lưu.'
     loai: ve-site
     ket_qua: dung
-    ghi_chu: Đã kiểm src/scripts/cong-cu/wason-246.js (tuanTheo, chamQuyTac, docSo), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs.
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/wason-246.js (tuanTheo, chamQuyTac, docSo), 17/11/2026; tests/cong-cu.test.mjs, tests/trinh-duyet/kiem-cong-cu.mjs. Review (17/11/2026): wason-246.js và bản build: ô ba số (docSo), báo tuân theo hay không (a < b < c), nút "Công bố quy tắc", chamQuyTac theo từ khóa, chấm chưa đúng thì thử tiếp; chữ người dùng chỉ đặt qua textContent, không lưu (bản ghi chỉ có triples, disconfirm, ruleOk, announcements). Khớp.'
+    review: dung
   - id: n1
     cau: 'Mô tả trang: thấy vì sao 23 trong 29 người không tìm ra quy tắc ngay lần đầu (6 người nêu đúng ngay).'
     loai: so-lieu
@@ -230,7 +231,7 @@ nhan_dinh:
       - tim-wason-vn
     het_han: '2028-11-01'
     ket_qua: da-sua
-    ghi_chu: 'Thêm mốc thời gian. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); OpenAlex (10/11/2026, hồ sơ thien-kien-xac-nhan.yml): không có. Sau lượt 2 (Opus, 17/11/2026): giữ: câu đã viết "Tính đến 11/2026", loại thoi-su, het_han 2028-11-01. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); tìm lại ngày 17/11/2026 bị lỗi mạng (OpenAlex 429, Europe PMC hết thời gian chờ). Lượt 2 bổ sung tìm lại trước khi khóa.'
+    ghi_chu: 'Thêm mốc thời gian. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); OpenAlex (10/11/2026, hồ sơ thien-kien-xac-nhan.yml): không có. Sau lượt 2 (Opus, 17/11/2026): giữ: câu đã viết "Tính đến 11/2026", loại thoi-su, het_han 2028-11-01. Europe PMC "\"2-4-6\" Wason Vietnamese": 0 kết quả (17/11/2026); tìm lại ngày 17/11/2026 bị lỗi mạng (OpenAlex 429, Europe PMC hết thời gian chờ). Lượt 2 bổ sung tìm lại trước khi khóa. Review: đạt (Claude Opus 5.5, 17/11/2026): tìm lại trên Europe PMC ("Wason AND (Vietnam OR Vietnamese)": 23 kết quả, không có bài nào về nhiệm vụ 2–4–6; "2-4-6" AND Vietnam: các bài y khoa); OpenAlex hết hạn mức (429). Câu có mốc 11/2026 và het_han.'
     luot_2: dung
     luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Wason%20AND%20Vietnam&format=json", "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22rule%20discovery%22%20AND%20(Vietnam%20OR%20Vietnamese)&format=json", "https://api.crossref.org/works?query.bibliographic=Wason+2-4-6+task+Vietnamese&rows=8", "https://api.crossref.org/works?query.bibliographic=nhi%E1%BB%87m+v%E1%BB%A5+2-4-6+Wason&rows=8" ]
     luot_2_ghi_chu: "Tìm ngày 17/11/2026. Europe PMC và Crossref tìm được bằng tiếng Anh và tiếng Việt. Web (tiếng Anh và tiếng Việt) chỉ ra các nghiên cứu ở Ý, Nhật và một khảo sát bằng bảng hỏi về thiên kiến nhận thức ở sinh viên Việt Nam (Tạp chí Xã hội học và Tâm lý học, 2025), không phải nhiệm vụ 2–4–6. OpenAlex không dùng được: hết ngân sách miễn phí của địa chỉ IP, trả HTTP 429. Google Scholar chặn truy vấn tự động (trả 302). Vì vậy chưa tìm được ở hai nơi này; nên tìm lại ở OpenAlex hay Google Scholar trước khi khóa. Kết quả hiện có khớp với câu 'chưa tìm thấy'. Câu có mốc thời gian, nên cần `het_han`."
@@ -269,7 +270,7 @@ nhan_dinh:
     trich: The mean ratio was 0.21 (n = 6) … and 0.04 (n = 22)
     vi_tri: Kết quả; hằng NGHIEN_CUU trong src/scripts/cong-cu/wason-246.js
     ket_qua: da-sua
-    ghi_chu: 'Công cụ cũ có "dãy bác bỏ" (gọi mọi dãy không tuân theo là "có thể bác bỏ một phỏng đoán hẹp") và ví dụ "2–3–4 (số lẻ, tăng không đều)" (2 và 4 là số chẵn): đã sửa nhãn thành "dãy nhận câu trả lời không tuân theo", bỏ "(số lẻ …)"; thêm so sánh tỉ lệ với Wason.'
+    ghi_chu: 'Công cụ cũ có "dãy bác bỏ" (gọi mọi dãy không tuân theo là "có thể bác bỏ một phỏng đoán hẹp") và ví dụ "2–3–4 (số lẻ, tăng không đều)" (2 và 4 là số chẵn): đã sửa nhãn thành "dãy nhận câu trả lời không tuân theo", bỏ "(số lẻ …)"; thêm so sánh tỉ lệ với Wason. Review (Claude Opus 5.5, 17/11/2026): NGHIEN_CUU.wason1960 {29, 6, 0,21, 0,04} khớp n5, n6 và trang nhà thien-kien-xac-nhan (đã khóa).'
     luot_2: dung
     luot_2_nguon:
       - https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask
