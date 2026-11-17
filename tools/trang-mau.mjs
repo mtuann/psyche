@@ -1,7 +1,8 @@
 // Trang mẫu cho kiểm thử trình duyệt và Lighthouse (chép từ ../opus/tools/, việc D1.7 của opus): lấy từ chính bản build,
 // để trang của mọi lô đều được kiểm. Thứ tự: trang chủ, trang 404, các trang nhánh đang làm đã đổi so với main (tối đa TOI_DA_TRANG_DOI: trang của lô), rồi
 // với mỗi loại khối, trang đầu tiên (theo thứ tự chữ cái) có khối ấy; cộng trang ghi trong biến môi trường PSYCHE_TRANG
-// ("thi-nghiem/asch/,trai-nghiem/stroop/").
+// ("thi-nghiem/asch/,trai-nghiem/stroop/"). PSYCHE_TOAN_SITE=1: mọi trang của bản build (trang chủ, 404, rồi theo thứ tự
+// chữ cái), cho lần quét toàn site của đợt 9 (npm run lighthouse, kiểm axe ở tests/trinh-duyet/kiem-tro-nang.mjs).
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -63,11 +64,16 @@ export function trangDaDoi(goc = GOC) {
 	}
 }
 
+/** Có đang quét toàn site không (PSYCHE_TOAN_SITE=1). */
+export const toanSite = () => process.env.PSYCHE_TOAN_SITE === '1';
+
 /** Danh sách trang mẫu của bản build ở `dist`. */
 export function trangMau(dist, goc = GOC) {
 	if (!fs.existsSync(path.join(dist, 'index.html'))) throw new Error(`Chưa có ${path.relative(goc, dist) || dist}/index.html: chạy npm run build (hay build:xem) trước.`);
 	const co = tatCa(dist);
 	const html = new Map(co.map((t) => [t, fs.readFileSync(fileCua(dist, t), 'utf8')]));
+	/** PSYCHE_TOAN_SITE=1: mọi trang, không chọn mẫu. */
+	if (toanSite()) return ['', ...(fs.existsSync(path.join(dist, '404.html')) ? ['404.html'] : []), ...co.filter((t) => t)];
 	const ra = ['', ...(fs.existsSync(path.join(dist, '404.html')) ? ['404.html'] : [])];
 	ra.push(...trangDaDoi(goc).filter((t) => html.has(t)).slice(0, TOI_DA_TRANG_DOI));
 	for (const dau of Object.values(KHOI)) {

@@ -2,6 +2,7 @@
 // (mặc định 3), và kiểm luật 7 của kế hoạch: hiệu năng (trung vị) từ 95; trợ năng, thực hành tốt, SEO đều 100.
 // Không đạt thì thoát 1: CI không đăng site. In bảng kết quả như các báo cáo.
 //   npm run lighthouse                                        (sau npm run build hay npm run build:xem)
+//   PSYCHE_TOAN_SITE=1 LH_LAN=1 npm run lighthouse           (mọi trang của dist/, không giới hạn ba trang)
 //   LH_TRANG="thi-nghiem/asch/,404.html" LH_LAN=5 npm run lighthouse
 // Trang mặc định: trang chủ, rồi trang mẫu của bản build (tools/trang-mau.mjs: trang đã đổi trên nhánh trước, rồi mỗi
 // loại khối một trang), tối đa ba trang. Lighthouse quá 240 s thì ghi lỗi, không treo. Chrome: bản Chromium của Playwright (npx playwright install chromium), hay
@@ -13,13 +14,13 @@ import path from 'node:path';
 import { promisify } from 'node:util';
 import { chromium } from 'playwright';
 import { moMayChu } from '../may-chu.mjs';
-import { trangMau } from '../trang-mau.mjs';
+import { toanSite, trangMau } from '../trang-mau.mjs';
 
 const DIST = path.resolve('dist');
 // trang chủ, rồi trang mẫu của bản build (trang đã đổi trên nhánh trước, rồi mỗi loại khối một trang), trang 404 nếu
 // còn chỗ; tối đa ba trang
 const mau = trangMau(DIST);
-const TRANG = process.env.LH_TRANG ? process.env.LH_TRANG.split(',') : [...mau.filter((t) => t !== '404.html'), ...mau.filter((t) => t === '404.html')].slice(0, 3);
+const TRANG = process.env.LH_TRANG ? process.env.LH_TRANG.split(',') : [...mau.filter((t) => t !== '404.html'), ...mau.filter((t) => t === '404.html')].slice(0, toanSite() ? Infinity : 3);
 const LAN = Number(process.env.LH_LAN || 3);
 const NGUONG = { perf: 95, a11y: 100, bp: 100, seo: 100 };
 // Ngoại lệ của luật 7 (chủ repo quyết 17/11/2026): Sách in gom mọi bài đã khóa vào một trang để in (vài MB HTML), nên

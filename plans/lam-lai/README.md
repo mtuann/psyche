@@ -180,7 +180,7 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 ## Đợt 9. Hoàn tất
 
 - Máy canh hằng tuần (GitHub Actions): DOI bị rút hay đính chính (Crossref, Retraction Watch, OpenAlex), khẳng định thời sự và trang mở rộng tới hạn, link hỏng (như `links.yml` dùng lychee của site cũ); mở issue nêu đúng trang, đúng khẳng định. Hằng quý: Hỗ trợ, Nghiên cứu mới.
-- Bảng đối chiếu chức năng với site cũ (không thiếu gì); Lighthouse và axe trên mọi trang một lần.
+- [x] Bảng đối chiếu chức năng với site cũ (`doi-chieu.md`: không thiếu trang nào, vài chỗ nhỏ ghi ở mục C); Lighthouse và axe trên mọi trang một lần (`bao-cao/d9-doi-chieu.md`, nhánh `them/doi-chieu`). Bỏ phụ thuộc `../psyche-zero/` ở build và kiểm thử: xong ở nhánh ấy.
 - Hỏi chủ repo có thêm dải chuyển hướng lên site cũ không (câu hỏi còn chờ). Mặc định: không động vào site cũ.
 
 **Xong khi:** site mới không còn cần `../psyche-zero/` để build hay kiểm thử.
