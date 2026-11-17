@@ -318,7 +318,8 @@ export function congCuNoiBat({ banGhi, trangCo, docsDir, base }) {
 // là chữ thường (không Markdown), thoát HTML khi dựng.
 
 /** Trường của thẻ hiện ra trên trang và trong trò chơi: thẻ chỉ lên bản thật khi mọi trường này đã khóa. */
-export const TRUONG_THE = ['khang_dinh', 'nhan', 'giai_thich', 'nguon'];
+// trang (link "Đọc thêm") và cap (cấp trong trò chơi) cũng hiện ra, nên cũng phải khóa: đổi chúng sau khi khóa thì build hỏng (review D8-L3)
+export const TRUONG_THE = ['khang_dinh', 'nhan', 'giai_thich', 'nguon', 'trang', 'cap'];
 
 /** Đáp án của trò chơi theo nhãn (như site cũ): Vững chắc, Khá vững là Đúng; Đã bị bác bỏ là Sai; Đang tranh cãi là Còn tranh cãi. */
 export const DAP_AN_NHAN = { 'vung-chac': 'dung', 'kha-vung': 'dung', 'bac-bo': 'sai', 'tranh-cai': 'tranh-cai' };

@@ -109,7 +109,7 @@ test('bản thật: chỉ thẻ đã khóa lên trang và vào trò chơi; thẻ
 	assert.deepEqual(du[0], { id: 'a', cap: 1, k: 'A <b>', n: 'bac-bo', g: 'Giải thích "A" & B.', ng: [{ chu: 'Họ, A. (2001). Tên một. Tạp chí, 1(2), 3–4.', link: 'https://doi.org/10.1/abc' }], bai: null });
 	assert.deepEqual(duLieuNgoNhan(ctx())[1].bai, { link: '/psyche/x/y/', ten: 'Bài Y' });
 	assert.deepEqual(duLieuNgoNhan(ctx())[2].ng, [{ chu: 'WHO. (2026). Tên hai.', link: 'https://www.who.int/x' }]);
-	assert.deepEqual(TRUONG_THE, ['khang_dinh', 'nhan', 'giai_thich', 'nguon']);
+	assert.deepEqual(TRUONG_THE, ['khang_dinh', 'nhan', 'giai_thich', 'nguon', 'trang', 'cap']);
 });
 
 test('khối trò chơi: thẻ nhúng vào data-the (JSON đã thoát), thông số limit, level như site cũ', () => {
