@@ -15,10 +15,19 @@ lan:
       luot_2: Claude Opus 5.5 (agent riêng, lượt 2 D2-L1)
       review: Claude Opus 5.5 (agent review D2-L1, 30/10/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-l1-kiem-mau.yml), đạt, 30/10/2026
+  - so: 2
+    ngay: 2026-11-17
+    nhanh: mo/sua-may-canh
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (agent lô sửa theo máy canh, mo/sua-may-canh, 17/11/2026): chỉ đổi link Luật Viễn thông 2023 trong khối Nguồn đã dùng để kiểm chứng (binhphuoc.gov.vn lỗi chứng chỉ, nay datafiles.chinhphu.vn), n75; không đổi chữ nào khác, không kiểm lại các số liên hệ (hạn kiểm lại vẫn 30/01/2027)"
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
   - id: luat-vien-thong-2023
-    ten: "Luật Viễn thông số 24/2023/QH15 (Công báo số 29+30, ngày 05/01/2024), bản PDF đăng trên Cổng thông tin điện tử tỉnh Bình Phước"
-    link: https://binhphuoc.gov.vn/uploads/binhphuoc/news/2024_04/luat24.pdf
+    ten: "Luật Viễn thông số 24/2023/QH15 (Công báo số 29+30, ngày 05/01/2024), bản PDF đăng trên Cổng Thông tin điện tử Chính phủ (mở 17/11/2026: 56 trang, Điều 25 ở trang 20 của tệp; trước đây dẫn bản trên binhphuoc.gov.vn, nay lỗi chứng chỉ TLS)"
+    link: https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/01/luat24.pdf
     toan_van: true
   - id: tt22-2014-btttt
     ten: "Thông tư 22/2014/TT-BTTTT ban hành Quy hoạch kho số viễn thông (LuatVietnam)"
@@ -918,7 +927,7 @@ nhan_dinh:
     loai: ve-site
     ket_qua: da-sua
     review: sai
-    ghi_chu: "Đối chiếu với danh sách nguon của hồ sơ. Đổi so với trang cũ: bỏ Báo Lào Cai, Tuổi Trẻ (12/10/2025, không nói 24/7 hay miễn phí), Thư viện pháp luật (trả 403), Tuổi Trẻ/PLO (111), Vietnam News (Ngày Mai), Find A Helpline (CSAGA), trang Bạch Mai, và số 112 (trang không nói 112). Thêm Luật Viễn thông 2023, TT 22/2014, QĐ 01/2008, TT 26/2025, cổng pháp luật Cần Thơ, WHO, SAMHSA, NIMH, Healthdirect, NHS Health Careers. Sửa tên báo cáo 111: trang cũ ghi \"Báo cáo số 14/BC-BMTE ngày 20/01/2026\", bản PDF đăng trên tongdai111.vn để trống số và ngày (\"Số: /BC-BMTE\", \"ngày tháng 01 năm 2026\"), nên ghi \"tháng 01/2026\". Bỏ câu \"Số của Bệnh viện Tâm thần Trung ương 2 mới chỉ đối chiếu được với trang chính thức\" (nay mọi số đều chỉ đối chiếu trang chính thức). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. So danh sách nguon của hồ sơ với khối \"Nguồn đã dùng để kiểm chứng\": thiếu hope-hyvongsong và findahelpline-vn, là hai nguồn đã mở cho câu \"chưa tìm thấy đường dây quốc gia 24/7\" (n25; Find A Helpline chỉ có link ở thân trang); dazzi2014 có link ngay trong câu. Các nguồn còn lại khớp. Người gom (Claude Opus 5.5) sửa theo review: Thêm một dòng: \"Câu về đường dây quốc gia 24/7: danh bạ [Find A Helpline](https://findahelpline.com/countries/vn) và trang của các đường dây đã liệt kê ở đó, như [HOPE](https://hyvongsong.com) (12:00–00:00 hằng ngày, không 24/7).\""
+    ghi_chu: "Đối chiếu với danh sách nguon của hồ sơ. Đổi so với trang cũ: bỏ Báo Lào Cai, Tuổi Trẻ (12/10/2025, không nói 24/7 hay miễn phí), Thư viện pháp luật (trả 403), Tuổi Trẻ/PLO (111), Vietnam News (Ngày Mai), Find A Helpline (CSAGA), trang Bạch Mai, và số 112 (trang không nói 112). Thêm Luật Viễn thông 2023, TT 22/2014, QĐ 01/2008, TT 26/2025, cổng pháp luật Cần Thơ, WHO, SAMHSA, NIMH, Healthdirect, NHS Health Careers. Sửa tên báo cáo 111: trang cũ ghi \"Báo cáo số 14/BC-BMTE ngày 20/01/2026\", bản PDF đăng trên tongdai111.vn để trống số và ngày (\"Số: /BC-BMTE\", \"ngày tháng 01 năm 2026\"), nên ghi \"tháng 01/2026\". Bỏ câu \"Số của Bệnh viện Tâm thần Trung ương 2 mới chỉ đối chiếu được với trang chính thức\" (nay mọi số đều chỉ đối chiếu trang chính thức). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): sai. So danh sách nguon của hồ sơ với khối \"Nguồn đã dùng để kiểm chứng\": thiếu hope-hyvongsong và findahelpline-vn, là hai nguồn đã mở cho câu \"chưa tìm thấy đường dây quốc gia 24/7\" (n25; Find A Helpline chỉ có link ở thân trang); dazzi2014 có link ngay trong câu. Các nguồn còn lại khớp. Người gom (Claude Opus 5.5) sửa theo review: Thêm một dòng: \"Câu về đường dây quốc gia 24/7: danh bạ [Find A Helpline](https://findahelpline.com/countries/vn) và trang của các đường dây đã liệt kê ở đó, như [HOPE](https://hyvongsong.com) (12:00–00:00 hằng ngày, không 24/7).\" Lần 2 (Claude Opus 5.5, mo/sua-may-canh, 17/11/2026): dòng Luật Viễn thông đổi link từ binhphuoc.gov.vn (lỗi chứng chỉ TLS sai tên miền: lychee và curl, 17/11/2026) sang bản Công báo trên datafiles.chinhphu.vn (cùng văn bản; lượt 2 lần 1 đã dùng bản này ở n5, n10), chữ link thành \"Công báo, bản đăng trên Cổng Thông tin điện tử Chính phủ\"; nguồn luat-vien-thong-2023 của hồ sơ đổi theo. Các dòng khác không đổi."
 doi_chu:
   # Ghi tay theo chữ hiển thị (chưa build được: agent khác đang build). Sau build:xem, chạy
   # node tools/chuyen/so-chu.mjs ho-tro/index --doi-chu để khớp đúng chuỗi khối và bổ sung chỗ còn thiếu.
@@ -979,3 +988,7 @@ doi_chu:
   - cu: 'Bảng số khẩn cấp, dòng 115: "Mọi trường hợp nguy hiểm đến tính mạng, kể cả nguy cơ tự làm hại | 24/7, miễn phí"'
     moi: '"Tình huống sức khỏe nguy hiểm đến tính mạng, kể cả khi đã tự làm hại hoặc sắp tự làm hại | 24/7, cuộc gọi miễn phí"'
     ly_do: "n9, n10 (lượt 2: qua-manh)."
+mo_khoa:
+  - ngay: 2026-11-17
+    nhanh: mo/sua-may-canh
+    ly_do: "link hỏng (máy canh 17/11/2026): bản PDF Luật Viễn thông 2023 trên binhphuoc.gov.vn lỗi chứng chỉ TLS sai tên miền; thay bằng bản Công báo trên datafiles.chinhphu.vn (cùng văn bản, lượt 2 đã dùng)"

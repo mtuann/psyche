@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L1)
       review: Claude Opus 5.5 (agent review D6-L1, 10/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d6-l1-kiem-mau.yml), đạt, 10/11/2026
+  - so: 2
+    ngay: 2026-11-17
+    nhanh: mo/sua-may-canh
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (agent lô sửa theo máy canh, mo/sua-may-canh, 17/11/2026): chỉ đổi link OpenStax hỏng (404) ở mục Nguồn sang trang mở đầu chương 14 (n81); không đổi chữ nào khác"
+      luot_2: null
+      review: null
+      kiem_mau: null
 nguon:
   - id: crum2013
     ten: 'Crum, Salovey & Achor (2013), JPSP 104(4), 716–733: toàn văn (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
@@ -30,6 +39,10 @@ nguon:
     ten: 'Szabo, Tache & Somogyi (2012), Stress 15(5), 472–478: tóm tắt (Europe PMC)'
     link: https://doi.org/10.3109/10253890.2012.710919
     toan_van: false
+  - id: os14
+    ten: 'OpenStax Psychology 2e, chương 14 Stress, Lifestyle, and Health, trang mở đầu (mục lục chương: 14.1–14.5; mở 17/11/2026)'
+    link: https://openstax.org/books/psychology-2e/pages/14-introduction
+    toan_van: true
   - id: os141
     ten: OpenStax Psychology 2e, 14.1 (đọc 10/11/2026)
     link: https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress
@@ -1119,7 +1132,7 @@ nhan_dinh:
     cau: 'Mục Nguồn: Crum 2013, Keller 2012, Selye 1936, Crum 2023, Yeager 2022, Langrafe 2025, Liu 2019, Bosshard 2024, Nguyen 2023, Kivimäki 2012, Richardson 2012, Wendsche 2016, Szabo 2012, McEwen & Stellar 1993, Lazarus & Folkman 1984, OpenStax Psychology 2e (14.1, 14.2, 14.4) có tên, tạp chí, tập, trang, DOI đúng.'
     loai: lich-su
     ket_qua: da-sua
-    ghi_chu: 'Đối chiếu Crossref (10/11/2026): tất cả khớp, trừ tên bài Bosshard (đã sửa, n47). Wendsche: Crossref ghi đăng 2017, tập 7 (2016) trên trang ghi 2016: chấp nhận theo tập. McEwen & Stellar 1993: Arch Intern Med 153(18), 2093–2101 (Europe PMC, DOI 10.1001/archinte.1993.00410180039004); trang chưa ghi DOI, nên thêm khi dọn nguồn. Lazarus & Folkman 1984 là sách, không kiểm Crossref. Review (Claude Opus 5.5, 10/11/2026): sai. Đối chiếu Crossref (10/11/2026): Selye 1936 thiếu số (3479); Yeager 2022 ghi "et al." với 9 tác giả và thiếu số (7919): ghi đủ tác giả (Europe PMC); Bosshard thiếu số (1); McEwen & Stellar chưa có DOI: thêm 10.1001/archinte.1993.00410180039004; Wendsche: Crossref ghi đăng 13/01/2017 (tập 7): đổi năm thành 2017 ở thân bài và mục Nguồn; Wu 2026 được nhắc ở thân bài nhưng thiếu trong mục Nguồn: thêm (Crossref, Europe PMC) và link ở thân bài. Các mục khác khớp.'
+    ghi_chu: 'Đối chiếu Crossref (10/11/2026): tất cả khớp, trừ tên bài Bosshard (đã sửa, n47). Wendsche: Crossref ghi đăng 2017, tập 7 (2016) trên trang ghi 2016: chấp nhận theo tập. McEwen & Stellar 1993: Arch Intern Med 153(18), 2093–2101 (Europe PMC, DOI 10.1001/archinte.1993.00410180039004); trang chưa ghi DOI, nên thêm khi dọn nguồn. Lazarus & Folkman 1984 là sách, không kiểm Crossref. Review (Claude Opus 5.5, 10/11/2026): sai. Đối chiếu Crossref (10/11/2026): Selye 1936 thiếu số (3479); Yeager 2022 ghi "et al." với 9 tác giả và thiếu số (7919): ghi đủ tác giả (Europe PMC); Bosshard thiếu số (1); McEwen & Stellar chưa có DOI: thêm 10.1001/archinte.1993.00410180039004; Wendsche: Crossref ghi đăng 13/01/2017 (tập 7): đổi năm thành 2017 ở thân bài và mục Nguồn; Wu 2026 được nhắc ở thân bài nhưng thiếu trong mục Nguồn: thêm (Crossref, Europe PMC) và link ở thân bài. Các mục khác khớp. Lần 2 (Claude Opus 5.5, mo/sua-may-canh, 17/11/2026): link của mục OpenStax là https://openstax.org/books/psychology-2e/ trả 404 (lychee, curl 17/11/2026); đổi thành trang mở đầu chương 14 (https://openstax.org/books/psychology-2e/pages/14-introduction, trả 200, mục lục chương có 14.1, 14.2, 14.4). Chữ của mục Nguồn không đổi, chỉ đổi link.'
     luot_2: khong-chac
     luot_2_ghi_chu: "Không được xem trang. Đã kiểm riêng, đều có thật: Crum 2013 (JPSP 104, 716-733), Keller 2012 (Health Psychol 31, 677-684), Selye 1936 (Nature 138, 32), Crum 2023 (J Exp Psychol Gen 152, 2603-2622), Yeager 2022 (Nature 607, 512-520), Langrafe 2025 (Front Behav Neurosci 19, 1685319), Liu 2019 (PLoS One 14, e0212854), Bosshard 2024 (Sci Rep 14, 7923), Nguyen 2023 (BMC Med Educ 23, 587), Kivimäki 2012 (Lancet 380, 1491-1497), Richardson 2012 (Am J Cardiol 110, 1711-1716), Wendsche 2016 (Front Psychol 7, 2072), Szabo 2012 (Stress 15, 472-478), McEwen & Stellar 1993 (Arch Intern Med 153, 2093-2101)."
     nguon:
@@ -1127,6 +1140,7 @@ nhan_dinh:
       - keller2012
       - selye1936
       - szabo2012
+      - os14
       - os141
       - os142
       - os144
@@ -1263,3 +1277,7 @@ doi_chu:
   - cu: 'Nguồn: Selye 138; Yeager "et al.", 607; Bosshard 14; McEwen không DOI; Wendsche 2016; thiếu Wu 2026'
     moi: 138(3479); đủ tác giả, 607(7919); 14(1); thêm DOI; 2017; thêm Wu 2026 (và link ở thân bài)
     ly_do: Review, n81.
+mo_khoa:
+  - ngay: 2026-11-17
+    nhanh: mo/sua-may-canh
+    ly_do: "link hỏng (máy canh 17/11/2026): https://openstax.org/books/psychology-2e/ trả 404; thay bằng trang mở đầu chương 14 của OpenStax Psychology 2e"
