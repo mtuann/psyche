@@ -33,7 +33,7 @@ Trong một nghiên cứu năm 2011 dùng phiên bản trên máy tính (chữ s
 
 Con số "7 ± 2" của George Miller ([Miller, 1956](https://doi.org/10.1037/h0043158)) và ước lượng khoảng 4 "cụm" của Nelson Cowan ([Cowan, 2001](https://doi.org/10.1017/S0140525X01003922)) được kể ở bài [Trí nhớ làm việc](/psyche/kham-pha/tri-nho/tri-nho-lam-viec/), cùng tranh luận về giới hạn ấy.
 
-Vì sao vẫn nhớ được 6–7 chữ số? Vì ta tự động **nhóm** chúng: "0912 345 678" là ba cụm, không phải mười chữ số rời. Và ta có thể **nhẩm lặp** thầm trong đầu.
+Vì sao vẫn nhớ được 6–7 chữ số? Nhờ **nhóm** chúng lại thành cụm (như "0912 345 678" là ba cụm, không phải mười chữ số rời) và **nhẩm lặp** thầm trong đầu.
 
 ## Mức độ chắc chắn
 
@@ -49,10 +49,10 @@ Vì sao vẫn nhớ được 6–7 chữ số? Vì ta tự động **nhóm** ch�
 
 Nhiều nghiên cứu cho thấy: tên chữ số càng ngắn khi đọc, người ta càng nhớ được nhiều chữ số.
 
-- Ở người song ngữ xứ Wales, tên chữ số tiếng Wales dài hơn khi đọc so với tiếng Anh, và độ dài trí nhớ chữ số bằng tiếng Wales ngắn hơn rõ rệt ([Ellis và Hennelly, 1980](https://doi.org/10.1111/j.2044-8295.1980.tb02728.x)). Khác biệt này do độ dài từ, không phải do trí thông minh.
+- Ở người song ngữ xứ Wales, tên chữ số tiếng Wales dài hơn khi đọc so với tiếng Anh, và độ dài trí nhớ chữ số bằng tiếng Wales ngắn hơn rõ rệt. Ellis và Hennelly (1980) cho là do độ dài từ chứ không do trí thông minh ([Ellis và Hennelly, 1980](https://doi.org/10.1111/j.2044-8295.1980.tb02728.x)); nghiên cứu sau (Murray và Jones, 2002, theo [Mattys và cộng sự, 2018](https://doi.org/10.3758/s13421-017-0770-8), kể lại) cho rằng khác biệt về cách nối âm giữa các từ cũng đóng vai trò.
 - Trẻ em nói tiếng Trung, vốn có tên chữ số được đọc rất nhanh, nhớ được nhiều chữ số xuôi hơn trẻ em nói tiếng Anh ([Stigler, Lee và Stevenson, 1986](https://doi.org/10.1016/0010-0277(86)90051-X), theo [Mattys và cộng sự, 2018](https://doi.org/10.3758/s13421-017-0770-8), kể lại).
 
-Tên chữ số tiếng Việt đều chỉ có **một âm tiết** (một, hai, ba…). Từ các nghiên cứu trên, có thể *dự đoán* người Việt nhớ được nhiều chữ số hơn khi làm bằng tiếng Việt so với các bộ chuẩn tiếng Anh. Nhưng tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào so sánh điều này ở người Việt, nên đây mới là suy luận, chưa phải phát hiện. Bộ chuẩn tiếng Việt đầu tiên cho bài nhắc lại chữ số mà chúng tôi tìm thấy (người từ 40 tuổi, [Nguyen và cộng sự, 2025](https://doi.org/10.1017/S1355617725101100)) tính điểm theo số lượt đúng chứ không theo độ dài dãy, nên không so được với các con số ở trên.
+Tên chữ số tiếng Việt đều chỉ có **một âm tiết** (một, hai, ba…). Từ các nghiên cứu trên, có thể *dự đoán* người Việt nhớ được nhiều chữ số hơn khi làm bằng tiếng Việt so với các bộ chuẩn tiếng Anh. Nhưng tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào so sánh điều này ở người Việt, nên đây mới là suy luận, chưa phải phát hiện. Bộ chuẩn tiếng Việt cho bài nhắc lại chữ số mà chúng tôi tìm thấy (385 người từ 40 tuổi, [Nguyen và cộng sự, 2025](https://doi.org/10.1017/S1355617725101100)) tính theo độ dài dãy đúng dài nhất, nhưng không so sánh với tiếng Anh.
 
 ## Áp dụng vào đời sống
 
@@ -78,7 +78,7 @@ Các gợi ý này suy ra từ giới hạn của trí nhớ ngắn hạn, khôn
 - 7 ± 2 mục.
 + Khoảng 4 cụm thông tin.
 - Không có giới hạn.
-> Ta nhớ được 6–7 chữ số vì tự động nhóm chúng thành cụm và nhẩm lặp.
+> Ta vẫn nhớ được 6–7 chữ số nhờ nhóm chúng lại thành cụm và nhẩm lặp thầm.
 ? Người song ngữ Wales nhớ ít chữ số hơn khi làm bằng tiếng Wales. Điều này cho thấy gì?
 - Người nói tiếng Wales kém thông minh hơn.
 + Độ dài trí nhớ chữ số phụ thuộc vào độ dài khi đọc của tên chữ số trong ngôn ngữ đó.

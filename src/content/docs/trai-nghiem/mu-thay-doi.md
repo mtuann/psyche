@@ -35,8 +35,8 @@ Trong bản tóm tắt của chính tác giả (Rensink, 2005), mỗi ảnh hi�
 
 ## Mức độ chắc chắn
 
-:::vung-chac[kỹ thuật nhấp nháy gây ra mù thay đổi]
-Mù thay đổi với kỹ thuật nhấp nháy đã được quan sát trong nhiều nghiên cứu (tổng quan: Rensink, 2002). Riêng thí nghiệm năm 1997 có một lần tái lập độc lập, trực tuyến, năm 2026 với 69 người: thời gian phát hiện gần với bản gốc (11,2 giây ở vùng ít được quan tâm, 5,8 giây ở vùng được quan tâm; Ouattara và cộng sự, 2026).
+:::kha-vung[kỹ thuật nhấp nháy gây ra mù thay đổi]
+Mù thay đổi với kỹ thuật nhấp nháy đã được quan sát trong nhiều nghiên cứu (tổng quan: Rensink, 2002). Riêng thí nghiệm năm 1997 có một lần tái lập độc lập, trực tuyến, năm 2026 với 69 người: thời gian phát hiện gần với bản gốc (11,2 giây ở vùng ít được quan tâm, 5,8 giây ở vùng được quan tâm; Ouattara và cộng sự, 2026). Chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước, nên nhãn dừng ở "khá vững".
 :::
 
 :::tranh-cai[chú ý có phải là tất cả?]

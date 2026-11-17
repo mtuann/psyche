@@ -3,7 +3,7 @@ title: Tự trải nghiệm
 description: Các thí nghiệm tâm lý học kinh điển bạn có thể tự làm trong trình duyệt, so với kết quả nghiên cứu gốc.
 ---
 
-Tâm lý học thú vị nhất khi bạn **thấy hiệu ứng xảy ra với chính mình**. Mỗi công cụ ở đây dựa trên một thí nghiệm có thật. Khi xong, bạn sẽ thấy kết quả của mình, kết quả trong nghiên cứu gốc, và lý do vì sao hai con số có thể khác nhau.
+Tâm lý học thú vị nhất khi bạn **thấy hiệu ứng xảy ra với chính mình**. Mỗi công cụ ở đây dựa trên một hiện tượng đã được nghiên cứu. Với các công cụ đo một con số của bạn, khi xong bạn sẽ thấy kết quả của mình, số liệu trong nghiên cứu, và lý do vì sao hai con số có thể khác nhau.
 
 ## Các công cụ
 

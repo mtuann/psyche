@@ -37,7 +37,7 @@ Trả lời bằng phím bấm như công cụ trên cho hiệu ứng nhỏ hơn
 ## Mức độ chắc chắn
 
 :::vung-chac[gọi tên màu mực chậm hơn khi chữ chỉ một màu khác]
-Hiệu ứng Stroop là một trong những phát hiện được tái lập nhiều nhất của tâm lý học, với hàng trăm nghiên cứu và nhiều biến thể. Độ lớn cụ thể phụ thuộc vào cách trả lời (nói hay bấm phím), số màu, tỉ lệ các lượt khớp và không khớp, và người tham gia.
+Hiệu ứng Stroop có trong hàng trăm nghiên cứu với nhiều biến thể (MacLeod, 1991), và một đợt tái lập ở nhiều phòng thí nghiệm (Many Labs 3) thấy hiệu ứng ở mọi lần thử (theo Hedge, Powell và Sumner, 2018, kể lại). Độ lớn cụ thể phụ thuộc vào cách trả lời (nói hay bấm phím), số màu, tỉ lệ các lượt khớp và không khớp, và người tham gia.
 :::
 
 :::tranh-cai[dùng hiệu ứng Stroop để đo “khả năng tự kiểm soát” của từng người]
@@ -65,7 +65,7 @@ Có rất ít bằng chứng rằng luyện tập các bài nhận thức như S
 
 Công cụ trên dùng chữ tiếng Việt. Vì "xanh" trong tiếng Việt có thể là xanh lá hay xanh dương, site chỉ dùng màu xanh dương và tránh màu xanh lá. Bộ màu ĐỎ, VÀNG, XANH, TRẮNG trên nền tối được chọn để các màu khác nhau rõ về độ sáng.
 
-Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ chữ viết khác nhau. Tính đến 11/2026, chúng tôi chưa tìm thấy số liệu chuẩn có công bố cho phiên bản tiếng Việt, nên chưa thể so kết quả của bạn với người Việt nói chung.
+Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ chữ viết khác nhau. Tính đến 11/2026, chúng tôi chưa tìm thấy bộ số liệu chuẩn (theo tuổi, học vấn) cho bài Stroop tiếng Việt ở người lớn; mới có vài nghiên cứu Stroop tiếng Việt cỡ nhỏ, như so sánh chữ Quốc ngữ, chữ Nôm và chữ Hán ([Morikawa và Hồ Hoàng Hoa, 1990](https://doi.org/10.2466/pms.1990.71.1.249)) hay 30 người Mỹ gốc Việt ([Doan và Swerdlow, 1999](https://doi.org/10.2466/pms.1999.89.1.173)). Vì vậy chưa thể so kết quả của bạn với người Việt nói chung.
 
 ## Cách công cụ hoạt động
 
@@ -108,7 +108,9 @@ Hiệu ứng Stroop đã được nghiên cứu ở nhiều ngôn ngữ và hệ
 - Augustinova, M., Parris, B. A., & Ferrand, L. (2019). The loci of Stroop interference and facilitation effects with manual and vocal responses. *Frontiers in Psychology*, 10, 1786. <https://doi.org/10.3389/fpsyg.2019.01786>
 - Bridges, D., Pitiot, A., MacAskill, M. R., & Peirce, J. W. (2020). The timing mega-study: Comparing a range of experiment generators, both lab-based and online. *PeerJ*, 8, e9414. <https://doi.org/10.7717/peerj.9414>
 - Bush, G., Whalen, P. J., Rosen, B. R., Jenike, M. A., McInerney, S. C., & Rauch, S. L. (1998). The counting Stroop: An interference task specialized for functional neuroimaging—validation study with functional MRI. *Human Brain Mapping*, 6(4), 270–282. <https://doi.org/10.1002/(SICI)1097-0193(1998)6:4%3C270::AID-HBM6%3E3.0.CO;2-0>
+- Doan, Q. T., & Swerdlow, N. R. (1999). Preliminary findings with a new Vietnamese Stroop test. *Perceptual and Motor Skills*, 89(1), 173–182. <https://doi.org/10.2466/pms.1999.89.1.173>
 - Hedge, C., Powell, G., & Sumner, P. (2018). The reliability paradox: Why robust cognitive tasks do not produce reliable individual differences. *Behavior Research Methods*, 50(3), 1166–1186. <https://doi.org/10.3758/s13428-017-0935-1>
 - MacLeod, C. M. (1991). Half a century of research on the Stroop effect: An integrative review. *Psychological Bulletin*, 109(2), 163–203. <https://doi.org/10.1037/0033-2909.109.2.163>
+- Morikawa, Y., & Hồ Hoàng Hoa (1990). Stroop phenomena in the Vietnamese language: The case of Quocngu, Chunom and Chinese characters. *Perceptual and Motor Skills*, 71(1), 249–258. <https://doi.org/10.2466/pms.1990.71.1.249>
 - Simons, D. J., Boot, W. R., Charness, N., Gathercole, S. E., Chabris, C. F., Hambrick, D. Z., & Stine-Morrow, E. A. L. (2016). Do "brain-training" programs work? *Psychological Science in the Public Interest*, 17(3), 103–186. <https://doi.org/10.1177/1529100616661983>
 - Stroop, J. R. (1935). Studies of interference in serial verbal reactions. *Journal of Experimental Psychology*, 18(6), 643–662. <https://doi.org/10.1037/h0054651> (bản trực tuyến: <https://psychclassics.yorku.ca/Stroop/>)

@@ -1,8 +1,8 @@
 // Công cụ "Ảo giác Müller-Lyer" (::cong-cu{ten="ao-giac"}; D8-L1, viết lại từ
 // ../psyche-zero/docs/assets/js/ao-giac-thi-giac.js). Khuôn của một công cụ: đầu stroop.js.
 //
-// Hai đoạn thẳng: đoạn trên cố định, cánh hướng vào (>——<); đoạn dưới chỉnh bằng thanh trượt (50–150% đoạn trên), cánh
-// hướng ra (<——>). Người dùng chỉnh tới khi hai đoạn "nhìn bằng nhau", rồi xem độ dài thật và độ lệch (%).
+// Hai đoạn thẳng: đoạn trên cố định, cánh hướng vào (<——>); đoạn dưới chỉnh bằng thanh trượt (50–150% đoạn trên), cánh
+// hướng ra (>——<). Người dùng chỉnh tới khi hai đoạn "nhìn bằng nhau", rồi xem độ dài thật và độ lệch (%).
 
 import { bieuDoCot, h, khung, lichSu, loiRiengTu, nut, s, so, thuGon } from './chung/giao-dien.js';
 import { them } from './chung/luu.js';
@@ -54,7 +54,7 @@ export function dienGiai(e) {
 
 // ---------- Giao diện ----------
 
-/** Một đoạn thẳng có cánh (SVG): kieu "vao" (>——<) hay "ra" (<——>); chỉ để nhìn, chữ mô tả nằm ngoài hình. */
+/** Một đoạn thẳng có cánh (SVG): kieu "vao" (<——>) hay "ra" (>——<); chỉ để nhìn, chữ mô tả nằm ngoài hình. */
 function hinhDoan(kieu, dai) {
 	const W = 560;
 	const y = 50;
