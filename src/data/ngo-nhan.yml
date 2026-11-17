@@ -1,5 +1,5 @@
 # Sinh một lần bằng tools/du_lieu/tach.py từ ../psyche-zero/ (commit 1ca5a80), việc D1.2.
-# Chưa kiểm định, chưa khóa. Từ nay sửa tay; trường và kiểu: src/du-lieu.mjs.
+# Sửa tay; trường và kiểu: src/du-lieu.mjs. D8-L3: lượt 1 cho cả 60 thẻ, chỗ sửa ghi ở kiem-dinh/du-lieu/ngo-nhan/<id>.yml.
 # 60 thẻ của docs/assets/data/myths.json (site cũ ghi kiểm tra lần cuối 2026-10-13). cap: cấp trong bài thử
 # Bạn nghĩ gì về tâm trí? (bài thử lấy thẻ có cấp nhỏ hơn hay bằng mức đã chọn).
 
@@ -7,382 +7,502 @@
   cap: 1
   khang_dinh: Con người chỉ dùng 10% bộ não.
   nhan: bac-bo
-  giai_thich: Các kỹ thuật chụp não như PET và fMRI cho thấy hầu như mọi vùng não đều hoạt động trong một ngày bình thường, và tổn thương ở gần như bất kỳ vùng nào cũng gây hậu quả. Não chỉ chiếm khoảng 2% khối lượng cơ thể nhưng dùng khoảng 20% năng lượng lúc nghỉ; một cơ quan "tốn kém" như vậy khó có 90% bỏ không. Dù vậy, khảo sát năm 2012 cho thấy gần một nửa giáo viên được hỏi ở Anh và Hà Lan vẫn tin điều này.
-  nguon: [beyerstein-10, dekker2012]
+  giai_thich: Tổ chức Hợp tác và Phát triển Kinh tế (OECD) xếp ý này vào nhóm "huyền thoại thần kinh" (neuromyth), và trong một khảo sát công chúng ở Brazil đây là ngộ nhận phổ biến nhất (theo Dekker và cộng sự, 2012). Trong khảo sát năm 2012 của chính nhóm này, gần một nửa giáo viên được hỏi ở Anh và Hà Lan (48% và 46%) vẫn tin điều này.
+  nguon:
+  - dekker2012
+  - torrijosmuelas2021
 - id: nao-trai-phai
   cap: 1
   khang_dinh: Có người "thiên não trái" (logic) và người "thiên não phải" (sáng tạo).
   nhan: bac-bo
-  giai_thich: Một số chức năng có thiên lệch về một bán cầu, chẳng hạn ngôn ngữ thường thiên về bên trái. Nhưng đó là đặc điểm của từng chức năng, không phải "kiểu người". Khi phân tích kết nối não lúc nghỉ của 1.011 người từ 7 đến 29 tuổi, các nhà nghiên cứu không thấy ai có toàn bộ mạng lưới bên trái hay bên phải mạnh hơn hẳn.
-  nguon: [nielsen2013]
+  giai_thich: Một số chức năng thiên về một bán cầu, như ngôn ngữ thường thiên về bên trái; nhưng đó là phân công chức năng, không phải "kiểu người". Khi phân tích ảnh chụp não lúc nghỉ của 1.011 người từ 7 đến 29 tuổi, các nhà nghiên cứu thấy các kết nối lệch về một bán cầu là đặc điểm cục bộ, không gom thành kiểu "não trái hơn" hay "não phải hơn" trên toàn bộ não.
+  nguon:
+  - nielsen2013
+  trang: kham-pha/co-so-sinh-hoc/nao-che-doi
 - id: phong-cach-hoc
   cap: 1
   khang_dinh: Dạy đúng "phong cách học" của mỗi người (nhìn, nghe hay vận động) giúp họ học tốt hơn.
   nhan: bac-bo
   giai_thich: Người ta có sở thích học khác nhau, nhưng giả thuyết "dạy khớp với phong cách thì học tốt hơn" cần một kiểu thí nghiệm cụ thể để kiểm tra. Bài tổng quan năm 2008 gần như không tìm thấy bằng chứng ủng hộ. Tổng hợp 17 phân tích tổng hợp năm 2025 cho thấy ở các nghiên cứu thật sự kiểm tra việc "dạy khớp", hiệu ứng gần bằng 0 (d = 0,04). Dù vậy, khoảng 9/10 giáo viên được khảo sát ở nhiều nước vẫn tin vào nó.
-  nguon: [pashler2008, hattie2025, newton2020]
+  nguon:
+  - pashler2008
+  - hattie2025
+  - newton2020
   trang: kham-pha/tri-nho/phong-cach-hoc
 - id: mozart
   cap: 1
   khang_dinh: Cho trẻ nghe nhạc Mozart làm trẻ thông minh hơn.
   nhan: bac-bo
-  giai_thich: Nghiên cứu gốc năm 1993 làm trên sinh viên đại học, không phải trẻ em, và chỉ đo một nhiệm vụ không gian trong thời gian ngắn ngay sau khi nghe nhạc. Các phân tích tổng hợp sau đó (1999, 2010) thấy hiệu ứng rất nhỏ hoặc gần như không có, kèm dấu hiệu thiên lệch xuất bản. Không có bằng chứng nghe Mozart làm tăng trí thông minh lâu dài.
-  nguon: [chabris1999, pietschnig2010]
+  giai_thich: '"Hiệu ứng Mozart" ban đầu chỉ là một cải thiện ngắn ở các bài không gian–thời gian của sinh viên đại học ngay sau khi nghe một bản sonata của Mozart, không phải ở trẻ em và không phải trí thông minh nói chung. Một bài tổng quan năm 2006 kết luận "hiệu ứng Mozart" không có đủ bằng chứng để làm cơ sở cho việc dạy học.'
+  nguon:
+  - rauscher2006
+  - waterhouse2006
 - id: xa-gian
   cap: 1
   khang_dinh: Trút giận ra ngoài (đấm gối, la hét) giúp bớt giận.
   nhan: bac-bo
-  giai_thich: Trong một thí nghiệm năm 2002, người đấm bao cát trong lúc nghĩ về người làm mình giận lại giận và hung hăng hơn so với người ngồi yên. Phân tích tổng hợp năm 2024 gộp 154 nghiên cứu cho thấy các hoạt động làm dịu cơ thể (thở chậm, thư giãn cơ, chánh niệm) giảm giận rõ rệt, còn các hoạt động làm tăng kích động như trút giận gần như không có tác dụng.
-  nguon: [bushman2002, kjaervik2024]
+  giai_thich: Trong một thí nghiệm năm 2002, người đấm bao cát trong lúc nghĩ về người làm mình giận lại giận và hung hăng hơn so với người không đấm bao cát. Phân tích tổng hợp năm 2024 gộp 154 nghiên cứu cho thấy các hoạt động làm dịu cơ thể (thở sâu, chánh niệm, thiền) giảm giận rõ rệt, còn các hoạt động làm tăng kích động như đấm bao cát hay chạy bộ nhìn chung không có tác dụng.
+  nguon:
+  - bushman2002
+  - kjaervik2024
 - id: noi-doi-mat
   cap: 1
   khang_dinh: Người nói dối hay tránh ánh mắt, nên nhìn mắt là biết ai nói dối.
   nhan: bac-bo
-  giai_thich: Phân tích tổng hợp gần 25.000 người phán đoán cho thấy con người chỉ phân biệt đúng nói thật hay nói dối khoảng 54% số lần, chỉ hơn đoán may (50%) một chút. Phần lớn các dấu hiệu hành vi mà ta hay tin, kể cả tránh nhìn, liên hệ rất yếu với việc nói dối.
-  nguon: [bond2006, depaulo2003]
+  giai_thich: Phân tích tổng hợp gần 25.000 người phán đoán cho thấy con người chỉ phân biệt đúng nói thật hay nói dối khoảng 54% số lần, chỉ hơn đoán may (50%) một chút. Trong 158 dấu hiệu hành vi được tổng hợp ở một phân tích khác, nhiều dấu hiệu không liên hệ hoặc chỉ liên hệ yếu với việc nói dối; riêng nhìn vào mắt người đối diện và tránh nhìn thì gần như không liên hệ gì.
+  nguon:
+  - bond2006
+  - depaulo2003
 - id: trai-dau
   cap: 2
   khang_dinh: 'Trái dấu thì hút nhau: người khác mình nhiều dễ hấp dẫn mình hơn.'
   nhan: bac-bo
-  giai_thich: Phân tích tổng hợp 313 nghiên cứu cho thấy sự giống nhau, cả thực tế lẫn cảm nhận, liên quan khá mạnh đến sức hút giữa hai người. Chưa có bằng chứng nhất quán rằng tính cách trái ngược làm người ta hấp dẫn nhau hơn.
-  nguon: [montoya2008]
+  giai_thich: Phân tích tổng hợp 313 nghiên cứu cho thấy sự giống nhau, cả thực tế lẫn cảm nhận, đi cùng sức hút rõ rệt giữa hai người; ở những cặp đã quen nhau lâu, chỉ sự giống nhau theo cảm nhận còn liên quan. Bằng chứng nghiêng về "giống nhau thì hút nhau", không ủng hộ "khác nhau thì hút nhau".
+  nguon:
+  - montoya2008
 - id: tri-nho-may-quay
   cap: 1
   khang_dinh: 'Trí nhớ hoạt động như máy quay phim: ghi lại chính xác những gì đã xảy ra.'
   nhan: bac-bo
-  giai_thich: Mỗi lần nhớ lại, ta dựng lại ký ức từ các mảnh, và ký ức có thể bị thay đổi bởi câu hỏi gợi ý hay thông tin nghe được sau đó. Đây là một trong những phát hiện được tái lập nhiều nhất của tâm lý học trí nhớ. Một khảo sát đại diện ở Mỹ công bố năm 2011 cho thấy 63% người được hỏi vẫn tin trí nhớ giống máy quay.
-  nguon: [simons2011, loftus2005]
+  giai_thich: 'Mỗi lần nhớ lại, ta dựng lại ký ức, và ký ức có thể bị thông tin nghe được sau sự kiện làm sai lệch: hiện tượng này đã được nghiên cứu trong nhiều thập kỷ, với nhiều kiểu thí nghiệm. Dù vậy, trong một khảo sát đại diện ở Mỹ (công bố năm 2011), 63% người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim.'
+  nguon:
+  - simons2011
+  - loftus2005
   trang: kham-pha/tri-nho/bang-ghi-hinh
 - id: mbti
   cap: 2
   khang_dinh: MBTI là công cụ khoa học đáng tin để xếp mỗi người vào một trong 16 "loại" tính cách.
   nhan: bac-bo
-  giai_thich: 'Các đặc điểm tính cách phân bố liên tục, phần đông mọi người ở gần giữa. Chia đôi thành "loại" làm mất thông tin và khiến kết quả kém ổn định: nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu dùng mô hình Big Five, đo theo các chiều liên tục và có bằng chứng dự báo tốt hơn.'
-  nguon: [pittenger1993, pittenger2005]
+  giai_thich: 'Điểm của MBTI phân bố liên tục, không chia thành hai cụm, nên cắt đôi mỗi thang ở điểm giữa thành "loại" làm mất thông tin: hai người có điểm sát vạch nhận hai nhãn trái ngược, và nhiều người nhận loại khác khi làm lại sau vài tuần. Giới nghiên cứu thường dùng mô hình Big Five, đo theo các chiều liên tục; Big Five có bằng chứng dự báo hiệu quả công việc, còn với MBTI, một báo cáo của Hội đồng Nghiên cứu Quốc gia Hoa Kỳ (1991) ghi chưa có bằng chứng nào về liên hệ giữa các loại và hiệu quả làm việc.'
+  nguon:
+  - pittenger1993
+  - pittenger2005
+  - mccrae1989
+  - barrick1991
+  - nrc1991
+  trang: kham-pha/tinh-cach/mbti
 - id: thap-maslow
   cap: 2
   khang_dinh: Hình kim tự tháp nhu cầu nổi tiếng là do Abraham Maslow vẽ ra.
   nhan: bac-bo
-  giai_thich: 'Maslow mô tả một thứ bậc nhu cầu (năm 1943 và 1954) nhưng không vẽ kim tự tháp. Hình kim tự tháp do giới tư vấn quản trị tạo ra về sau, và nó khiến thứ bậc trông cứng nhắc hơn ý ông: Maslow cho rằng các nhu cầu chồng lấn nhau, không cần thỏa mãn trọn vẹn bậc dưới mới đến bậc trên.'
-  nguon: [bridgman2019]
+  giai_thich: Maslow mô tả một thứ bậc nhu cầu nhưng chưa bao giờ vẽ kim tự tháp. Một khảo cứu lịch sử năm 2019 lần lại cách hình kim tự tháp ra đời và trở thành biểu tượng nổi tiếng nhất của ngành quản trị; bài cũng ghi nhận lý thuyết của Maslow ít được nghiên cứu thực nghiệm ủng hộ.
+  nguon:
+  - bridgman2019
 - id: gian-cach
   cap: 1
   khang_dinh: Chia nhỏ việc ôn tập ra nhiều lần cách quãng giúp nhớ lâu hơn học dồn một lần.
   nhan: vung-chac
-  giai_thich: Đây là "hiệu ứng giãn cách", một trong những phát hiện vững nhất của tâm lý học. Phân tích tổng hợp năm 2006 gộp hơn 300 thí nghiệm cho thấy ôn cách quãng cho kết quả nhớ lâu tốt hơn học dồn với cùng tổng thời gian. Khoảng cách tốt nhất dài hơn khi bạn cần nhớ lâu hơn.
-  nguon: [cepeda2006, dunlosky2013]
-  trang: kham-pha/tri-nho/vi-sao-ta-quen
+  giai_thich: Đây là "hiệu ứng giãn cách". Phân tích tổng hợp năm 2006 gộp 317 thí nghiệm cho thấy học ngắt quãng giúp nhớ lâu hơn học dồn. Khoảng cách tốt nhất giữa các lần ôn dài hơn khi bạn cần nhớ lâu hơn.
+  nguon:
+  - cepeda2006
+  - dunlosky2013
+  trang: kham-pha/tri-nho/duong-cong-quen
 - id: tu-kiem-tra
   cap: 1
   khang_dinh: Tự kiểm tra (cố nhớ lại) giúp nhớ lâu hơn đọc lại.
   nhan: vung-chac
-  giai_thich: '"Hiệu ứng kiểm tra" đã được lặp lại rất nhiều lần, ở cả phòng thí nghiệm lẫn lớp học. Trong một thí nghiệm năm 2006, người tự kiểm tra nhớ kém hơn một chút sau 5 phút nhưng nhớ tốt hơn rõ rệt sau một tuần so với người đọc lại. Bài tổng quan năm 2013 xếp tự kiểm tra vào nhóm kỹ thuật học hiệu quả cao, còn đọc lại và tô đậm vào nhóm hiệu quả thấp.'
-  nguon: [roediger2006, dunlosky2013]
-  trang: kham-pha/tri-nho/vi-sao-ta-quen
+  giai_thich: '"Hiệu ứng kiểm tra" đã được lặp lại nhiều lần. Trong một thí nghiệm năm 2006, người đọc lại nhớ tốt hơn một chút ở bài kiểm tra sau 5 phút, nhưng người tự kiểm tra nhớ tốt hơn rõ rệt ở bài kiểm tra sau 2 ngày và sau một tuần. Bài tổng quan năm 2013 xếp tự kiểm tra vào nhóm kỹ thuật học hiệu quả cao, còn đọc lại và tô đậm vào nhóm hiệu quả thấp.'
+  nguon:
+  - roediger2006
+  - dunlosky2013
+  trang: kham-pha/tri-nho/duong-cong-quen
 - id: da-nhiem
   cap: 1
   khang_dinh: Phần lớn mọi người có thể làm nhiều việc cùng lúc mà không kém hiệu quả.
   nhan: bac-bo
-  giai_thich: Mỗi lần chuyển qua lại giữa các việc đều tốn thời gian và làm tăng lỗi, nhất là với việc phức tạp. Trong một thí nghiệm lái xe mô phỏng kết hợp nhiệm vụ trí nhớ với 200 người, chỉ khoảng 2,5% không bị giảm hiệu suất. Cảm giác "mình làm nhiều việc cùng lúc rất giỏi" thường không khớp với kết quả đo được.
-  nguon: [rubinstein2001, watson2010]
+  giai_thich: '"Làm nhiều việc cùng lúc" của phần lớn người là chuyển nhanh qua lại giữa các việc, và mỗi lần chuyển đều tốn thời gian; trong một loạt thí nghiệm năm 2001, phí chuyển việc tăng khi quy tắc của việc phức tạp hơn. Trong một thí nghiệm lái xe mô phỏng kèm một bài trí nhớ khó với 200 người, đa số giảm hiệu suất rõ rệt; chỉ 2,5% không giảm chút nào.'
+  nguon:
+  - rubinstein2001
+  - watson2010
+  trang: kham-pha/chu-y-tri-giac/da-nhiem-so
 - id: can-kiet-y-chi
   cap: 2
   khang_dinh: 'Ý chí là nguồn lực có hạn: dùng nhiều thì cạn, khiến ta kém tự chủ ở việc tiếp theo.'
   nhan: tranh-cai
-  giai_thich: Hàng trăm nghiên cứu nhỏ từng ủng hộ ý này. Nhưng hai dự án tái lập lớn, đăng ký trước, với 2.141 người ở 23 phòng thí nghiệm (2016) và 3.531 người ở 36 phòng thí nghiệm (2021, do chính một nhà nghiên cứu ủng hộ lý thuyết dẫn đầu) đều thấy hiệu ứng gần bằng 0. Người ủng hộ cho rằng cách gây "cạn kiệt" trong các thử nghiệm này quá yếu. Hiện nay, nếu có hiệu ứng thì nó rất nhỏ.
-  nguon: [hagger2016, vohs2021]
+  giai_thich: Một phân tích tổng hợp trước đây từng thấy hiệu ứng ở mức vừa. Nhưng hai dự án tái lập lớn, đăng ký trước, với 2.141 người ở 23 phòng thí nghiệm (2016) và 3.531 người ở 36 phòng thí nghiệm (2021) đều thấy hiệu ứng gần bằng 0 (d = 0,04 và 0,06). Hiện nay, nếu có hiệu ứng thì nó rất nhỏ.
+  nguon:
+  - hagger2016
+  - vohs2021
 - id: tu-the-quyen-luc
   cap: 2
   khang_dinh: Đứng "tư thế quyền lực" 2 phút làm tăng hormone testosterone và khiến bạn dám mạo hiểm hơn.
   nhan: bac-bo
-  giai_thich: Một nghiên cứu tái lập với 200 người không thấy thay đổi testosterone, cortisol hay hành vi chấp nhận rủi ro. Năm 2016, tác giả chính của nghiên cứu gốc tuyên bố bà không còn tin hiệu ứng này là thật. Có thể có một hiệu ứng nhỏ lên cảm giác tự tin tự báo cáo, nhưng phần này vẫn đang tranh cãi.
-  nguon: [ranehill2015, carney2016]
+  giai_thich: Một nghiên cứu tái lập với cỡ mẫu lớn (2015) không thấy "tư thế quyền lực" làm thay đổi hormone hay mức chấp nhận rủi ro. Năm 2016, tác giả chính của nghiên cứu gốc viết rằng bà không còn tin hiệu ứng này là thật, và thừa nhận phần đo cảm giác quyền lực tự báo cáo trong bài gốc đã được chọn theo kết quả.
+  nguon:
+  - ranehill2015
+  - carney2016
 - id: benh-tam-than-bao-luc
   cap: 2
   khang_dinh: Phần lớn người có bệnh tâm thần là nguy hiểm và có xu hướng bạo lực.
   nhan: bac-bo
-  giai_thich: Phần lớn người sống với bệnh tâm thần không có hành vi bạo lực. Ước tính từ dữ liệu dịch tễ ở Mỹ cho thấy chỉ khoảng 4% bạo lực trong cộng đồng có thể quy cho bệnh tâm thần nặng. Nguy cơ tăng chủ yếu khi có thêm các yếu tố khác như sử dụng chất gây nghiện hay hoàn cảnh bất lợi, và người có bệnh tâm thần thường là nạn nhân của bạo lực nhiều hơn. Định kiến này khiến nhiều người ngại tìm giúp đỡ.
-  nguon: [varshney2016, elbogen2009]
+  giai_thich: Phần lớn người sống với bệnh tâm thần không có hành vi bạo lực. Theo số liệu dịch tễ ở Mỹ, chỉ khoảng 4% bạo lực trong cộng đồng có thể quy riêng cho bệnh tâm thần nặng. Một nghiên cứu theo dõi hơn 34.000 người ở Mỹ thấy bệnh tâm thần nặng tự nó không dự báo bạo lực về sau; nguy cơ đi cùng các yếu tố khác như lạm dụng chất, tiền sử bạo lực, hoàn cảnh bất lợi. Người có bệnh tâm thần nặng còn là nạn nhân của bạo lực thường hơn là người gây ra bạo lực.
+  nguon:
+  - varshney2016
+  - elbogen2009
 - id: trang-tron
   cap: 2
   khang_dinh: 'Đêm trăng tròn khiến người ta hành xử kỳ lạ hơn: nhiều tai nạn, cấp cứu, gây gổ hơn.'
   nhan: bac-bo
-  giai_thich: Phân tích tổng hợp năm 1985 không tìm thấy mối liên hệ đáng tin giữa pha mặt trăng và các hành vi này, và các kết quả dương tính lẻ tẻ không lặp lại được. Niềm tin vẫn tồn tại vì ta dễ nhớ những đêm trăng tròn hỗn loạn mà quên những đêm trăng tròn bình thường.
-  nguon: [rotton1985]
+  giai_thich: Ở một khoa cấp cứu tại Mỹ, số liệu 4 năm với 150.999 lượt khám không thấy ngày trăng tròn có nhiều lượt khám, xe cấp cứu hay ca nhập viện hơn; một nghiên cứu khác trên 1.444 ca chấn thương nặng trong một năm cũng không thấy khác biệt, kể cả các ca do bạo lực.
+  nguon:
+  - thompson1996
+  - coates1989
 - id: duong-tang-dong
   cap: 2
   khang_dinh: Ăn đồ ngọt làm trẻ em tăng động.
   nhan: bac-bo
-  giai_thich: Phân tích tổng hợp năm 1995 gộp các thí nghiệm mù đôi có giả dược (cả trẻ, cha mẹ lẫn người quan sát đều không biết trẻ được ăn đường hay chất tạo ngọt) không thấy đường ảnh hưởng đến hành vi hay nhận thức của trẻ; không loại trừ được một hiệu ứng rất nhỏ ở một số trẻ. Kỳ vọng của người lớn, cùng bối cảnh như tiệc sinh nhật, có thể khiến họ "thấy" trẻ hiếu động hơn.
-  nguon: [wolraich1995]
+  giai_thich: Phân tích tổng hợp năm 1995 gộp các thí nghiệm mù đôi có giả dược (cả trẻ, cha mẹ lẫn người nghiên cứu đều không biết trẻ được ăn đường hay chất tạo ngọt) không thấy đường ảnh hưởng đến hành vi hay nhận thức của trẻ; không loại trừ được một tác dụng nhỏ hay tác dụng ở một nhóm trẻ. Niềm tin mạnh của cha mẹ có thể đến từ kỳ vọng và những liên tưởng quen thuộc.
+  nguon:
+  - wolraich1995
+  trang: bang-chung/thi-nghiem-doi-chung
 - id: nguoi-ngoai-cuoc
   cap: 3
   khang_dinh: Càng đông người chứng kiến một vụ việc, nạn nhân càng khó được ai giúp.
   nhan: tranh-cai
-  giai_thich: Trong phòng thí nghiệm, mỗi cá nhân đúng là ít ra tay hơn khi có người khác (phân tích tổng hợp năm 2011 xác nhận). Nhưng phân tích camera giám sát 219 vụ xung đột thật ở Anh, Hà Lan và Nam Phi (2020) cho thấy ít nhất một người can thiệp trong khoảng 9/10 vụ, và càng đông người thì càng có nhiều khả năng ai đó giúp. Hiệu ứng có thật ở cấp độ từng người, nhưng câu nói phổ biến ở trên thì gây hiểu lầm.
-  nguon: [fischer2011, philpot2020]
+  giai_thich: Trong các thí nghiệm, mỗi cá nhân đúng là ít ra tay hơn khi có người khác hiện diện (phân tích tổng hợp năm 2011 xác nhận), và hiệu ứng yếu đi khi tình huống nguy hiểm rõ ràng. Nhưng phân tích camera giám sát 219 vụ xung đột thật ở Anh, Hà Lan và Nam Phi (2020) cho thấy khoảng 9 trên 10 vụ có ít nhất một người can thiệp, và càng đông người thì càng dễ có ai đó giúp. Hiệu ứng có thật ở cấp từng người, nhưng câu nói phổ biến ở trên thì gây hiểu lầm.
+  nguon:
+  - fischer2011
+  - philpot2020
+  trang: thi-nghiem/darley-latane
 - id: mim-cuoi
   cap: 3
   khang_dinh: Cứ mỉm cười là bạn sẽ thấy vui hơn.
   nhan: tranh-cai
-  giai_thich: Thí nghiệm "ngậm bút" kinh điển không tái lập được khi làm lại ở 17 phòng thí nghiệm với gần 1.900 người. Dự án Many Smiles (3.878 người, 19 quốc gia, 2022) thấy chủ động mỉm cười làm tăng cảm giác vui một chút, nhưng cách ngậm bút thì không cho kết quả rõ ràng. Nếu có hiệu ứng thì nó nhỏ, và mỉm cười không phải cách chữa buồn bã hay trầm cảm.
-  nguon: [wagenmakers2016, coles2022]
+  giai_thich: Thí nghiệm "ngậm bút" kinh điển không tái lập được khi 17 phòng thí nghiệm cùng làm lại theo một quy trình đăng ký trước (2016). Dự án Many Smiles (3.878 người, 19 quốc gia, 2022) thấy bắt chước nét mặt cười hay chủ động mỉm cười có thể làm tăng cảm giác vui, nhưng cách ngậm bút thì không cho kết quả rõ ràng.
+  nguon:
+  - wagenmakers2016
+  - coles2022
 - id: thoi-mien
   cap: 1
   khang_dinh: Thôi miên giúp nhớ lại chính xác chuyện đã qua.
   nhan: bac-bo
-  giai_thich: Tổng quan năm 2025 về các nghiên cứu của Steven Jay Lynn kết luận thôi miên không giúp nhớ chính xác hơn trong bất kỳ nghiên cứu nào, thậm chí có khi còn làm tệ đi; ngược lại, nó làm tăng việc nhớ ra những chuyện chưa từng xảy ra và khiến người ta tự tin hơn vào ký ức sai. Trong một thí nghiệm với 96 sinh viên, nhóm bị thôi miên không đoán đúng ngày tháng các sự kiện hơn nhóm đối chứng, nhưng lại ít chịu sửa đáp án khi được báo có thể sai.
-  nguon: [krackow2025, thoi-mien-osu]
+  giai_thich: 'Một tổng quan năm 2025 về các nghiên cứu của Steven Jay Lynn kết luận: trong các nghiên cứu ấy, thôi miên không giúp nhớ chính xác hơn, có khi còn làm nhớ kém đi; nó làm người ta "nhớ" ra những chuyện chưa từng xảy ra, ký ức ấy tồn tại lâu, và người ta khá tự tin vào nó. Một phân tích tổng hợp 24 nghiên cứu năm 1994 cho kết quả lẫn lộn: thôi miên giúp nhớ đúng hơn ở một điều kiện (câu hỏi không dẫn dắt, sau 1–2 ngày) nhưng làm nhớ kém hơn khi hỏi trong vòng 24 giờ hay sau một tuần, kèm nhiều lỗi và ký ức giả hơn, và người bị thôi miên tự tin hơn.'
+  nguon:
+  - krackow2025
+  - steblay1994
 - id: hoc-khi-ngu
   cap: 2
   khang_dinh: Bật băng nghe khi ngủ là cách học thêm giờ hiệu quả.
   nhan: bac-bo
-  giai_thich: Bài tổng quan kinh điển năm 1955 xem lại các nghiên cứu “học khi ngủ” và kết luận hiệu ứng (nếu có) xảy ra ở trạng thái nửa tỉnh nửa mê chứ không phải giấc ngủ thật. Khi các nhà nghiên cứu dùng điện não đồ để chắc chắn người tham gia đang ngủ sâu, họ không ghi nhận việc học được kiến thức mới. Ngày nay, khoa học chỉ dùng âm thanh khi ngủ để củng cố ký ức đã học lúc tỉnh, chứ không nhồi được kiến thức mới.
-  nguon: [simon1955, hoc-khi-ngu-smithsonian]
+  giai_thich: Theo một nhóm nghiên cứu điểm lại năm 2014, các báo cáo cũ về "học khi ngủ" (tổng quan từ năm 1955 của Simon và Emmons) không chứng minh được người tham gia ngủ liên tục khi nghe; phần "học được" có thể xảy ra trong những lúc thức ngắn, còn các nghiên cứu theo dõi chặt giấc ngủ thì không thấy học được lời nói. Ngày nay, các thí nghiệm phát lại âm thanh hay mùi gắn với bài đã học trong giấc ngủ sóng chậm chỉ có tác dụng nhỏ, và là để củng cố điều đã học lúc thức (phân tích tổng hợp 91 thí nghiệm năm 2020), không phải để học bài mới.
+  nguon:
+  - ruch2014
+  - simon1955
+  - hu2020
+  trang: kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
 - id: bay-con-so
   cap: 1
   khang_dinh: Trí nhớ ngắn hạn của mọi người chứa được 7 món đồ.
   nhan: bac-bo
-  giai_thich: Con số 7±2 của Miller (1956) là về “cụm” thông tin — ta có thể gom nhiều món thành một cụm để nhớ. Khi ngăn người tham gia dùng mẹo gom cụm hay nhẩm lại, Nelson Cowan tổng hợp lại toàn bộ bằng chứng năm 2001 và kết luận dung lượng thật gần với 4 cụm hơn. Nói cách khác, 7 là mức tối đa khi đã dùng mẹo, còn giới hạn thô thì gần với 4.
-  nguon: [cowan2001, bay-con-so-pubmed]
-  trang: trai-nghiem/do-dai-tri-nho
+  giai_thich: 'Con số "7 ± 2" của Miller (1956) là ước lượng ban đầu, đã tính cả các mẹo gom nhóm. Khi loại bỏ các mẹo ấy, Cowan (2001) ước lượng khoảng 4 "cụm" thông tin. Con số chính xác vẫn còn tranh cãi, nhưng giới hạn còn tùy loại thông tin, cách đo và từng người: không có một con số 7 chung cho mọi người.'
+  nguon:
+  - miller1956
+  - cowan2001
+  trang: kham-pha/tri-nho/tri-nho-lam-viec
 - id: nhan-chung
   cap: 1
   khang_dinh: Tận mắt chứng kiến thì khó mà nhận nhầm người.
   nhan: bac-bo
-  giai_thich: 'Nhận dạng nhầm là nguyên nhân hàng đầu gây án oan ở Mỹ: nó xuất hiện trong khoảng 7 trên 10 vụ án được minh oan bằng ADN theo Innocence Project. Trí nhớ không ghi hình nguyên vẹn mà dựng lại mỗi lần nhớ, nên nhân chứng có thể rất thành thật, rất chắc chắn mà vẫn chỉ nhầm người.'
-  nguon: [nhan-chung-ip, nhan-chung-innocence]
+  giai_thich: Tính đến 11/2026, tổ chức Innocence Project (Mỹ) cho biết hơn 60% thân chủ của họ đã bị kết án oan dựa trên nhận dạng nhầm của nhân chứng. Trí nhớ không ghi hình nguyên vẹn mà được dựng lại, và có thể bị thông tin sau sự kiện làm sai lệch; cảm giác nhớ rõ và chắc chắn có thể đi kèm cả ký ức sai.
+  nguon:
+  - nhan-chung-ip
+  - loftus2005
   trang: kham-pha/tri-nho/bang-ghi-hinh
 - id: khi-dot-vo-hinh
   cap: 1
   khang_dinh: Mắt đã nhìn rõ thì không thể bỏ sót thứ ngay trước mặt.
   nhan: bac-bo
-  giai_thich: Trong thí nghiệm “con khỉ đột vô hình” năm 1999, người xem được nhờ đếm số lần chuyền bóng và khoảng một nửa không hề thấy một người mặc đồ khỉ đột đi ngang giữa màn hình. Hiện tượng “mù không chú ý” này cho thấy ta chỉ nhận thức được những gì mình đang chú ý đến — mắt “thấy” nhưng não không “ghi nhận”.
-  nguon: [simons1999]
+  giai_thich: 'Trong thí nghiệm "con khỉ đột vô hình" năm 1999, người xem được nhờ đếm số đường chuyền bóng, và 46% trong 192 người không để ý đến sự kiện bất ngờ (một người mặc đồ khỉ đột hay một người phụ nữ cầm ô đi ngang qua). Các tác giả cho rằng ta chỉ nhận thức và nhớ được những gì nhận được sự chú ý tập trung: mắt nhìn thấy, nhưng ta không nhận ra.'
+  nguon:
+  - simons1999
+  trang: thi-nghiem/khi-dot-vo-hinh
 - id: mau-sac
   cap: 2
   khang_dinh: Sơn phòng màu xanh giúp tập trung, màu đỏ làm người ta hăng hơn.
-  nhan: bac-bo
-  giai_thich: Bài tổng quan năm 2014 của Elliot và Maier kết luận nghiên cứu về màu sắc và tâm lý vẫn còn ở giai đoạn sơ khai, cần làm rõ điều kiện biên và khả năng áp dụng thực tế trước khi đưa ra khuyến nghị chắc chắn. Chẳng hạn, hiệu ứng “màu đỏ gợi tình” từng nổi tiếng đã không qua được các lần tái lập đăng ký trước. Màu sắc có thể mang ý nghĩa trong bối cảnh cụ thể, nhưng không có màu nào “lập trình” được hành vi.
-  nguon: [elliot2014, lehmann2017, wagge2019]
+  nhan: tranh-cai
+  giai_thich: 'Bài tổng quan năm 2014 của Elliot và Maier kết luận màu sắc có thể mang ý nghĩa và ảnh hưởng đến cảm xúc, suy nghĩ, hành vi, nhưng nghiên cứu còn ở giai đoạn sơ khai: cần làm rõ điều kiện và khả năng áp dụng ngoài đời trước khi đưa ra khuyến nghị chắc chắn. Chẳng hạn, hiệu ứng "màu đỏ làm tăng sức hút" từng nổi tiếng gần như không thấy lại trong các lần tái lập đăng ký trước.'
+  nguon:
+  - elliot2014
+  - lehmann2017
+  - wagge2019
 - id: nha-tu-stanford
   cap: 3
   khang_dinh: Thí nghiệm nhà tù Stanford chứng minh hoàn cảnh biến người tốt thành kẻ ác.
   nhan: tranh-cai
-  giai_thich: Điều tra lại hồ sơ lưu trữ và phỏng vấn 15 người tham gia (Le Texier, 2019) cho thấy các “cai ngục” đã được hướng dẫn cách đối xử với “tù nhân”, dữ liệu thu thập thiếu khách quan, và người tham gia hiếm khi thật sự “nhập vai”. Nhóm của Zimbardo đã phản bác, cho rằng phê bình này bỏ qua bối cảnh — nên đây vẫn là cuộc tranh luận mở, không phải kết luận đã ngã ngũ.
-  nguon: [letexier2019, hplt2019]
+  giai_thich: Điều tra lại hồ sơ lưu trữ và phỏng vấn 15 người tham gia (Le Texier, 2019) cho thấy các "cai ngục" đã được hướng dẫn cụ thể cách đối xử với "tù nhân", dữ liệu thu thập thiếu khách quan và không đầy đủ, và người tham gia hiếm khi thật sự nhập vai hoàn toàn. Zimbardo và Haney (2020) phản hồi, vẫn bảo vệ sức mạnh của môi trường phi nhân tính; đây vẫn là cuộc tranh luận mở.
+  nguon:
+  - letexier2019
+  - zimbardo2020
+  trang: thi-nghiem/zimbardo
 - id: luoi-xa-hoi
   cap: 2
   khang_dinh: Làm việc nhóm lúc nào cũng cho kết quả tốt hơn làm một mình.
   nhan: bac-bo
-  giai_thich: 'Phân tích tổng hợp 78 nghiên cứu năm 1993 xác nhận hiện tượng “lười xã hội”: mỗi cá nhân thường bỏ ít nỗ lực hơn khi làm chung so với khi làm riêng, nhất là khi đóng góp của từng người khó được đánh giá. Nhóm chỉ vượt trội khi có phân công rõ ràng, trách nhiệm cá nhân và công việc có ý nghĩa — còn “càng đông càng tốt” thì không đúng.'
-  nguon: [karau1993]
+  giai_thich: 'Phân tích tổng hợp 78 nghiên cứu năm 1993 xác nhận hiện tượng "lười xã hội": mỗi người thường bỏ ít công sức hơn khi làm chung so với khi làm riêng, ở nhiều loại việc và nhiều nhóm người. Mức lười thay đổi theo hoàn cảnh: nó chịu ảnh hưởng mạnh của việc đóng góp của từng người có được đánh giá không, kỳ vọng về đồng đội, ý nghĩa của công việc và văn hóa.'
+  nguon:
+  - karau1993
 - id: khen-thong-minh
   cap: 1
   khang_dinh: Khen trẻ “thông minh” giúp trẻ tự tin và học giỏi hơn.
-  nhan: bac-bo
-  giai_thich: Trong loạt 6 thí nghiệm năm 1998, trẻ được khen “con thông minh quá” có xu hướng chọn bài dễ để giữ hình ảnh, bỏ cuộc sớm khi gặp khó và nói dối về điểm số nhiều hơn nhóm được khen nỗ lực. Khen vào quá trình (“con đã thử nhiều cách”) nuôi tư duy cầu tiến; khen vào “bản chất” thông minh thì cho kết quả ngược lại.
-  nguon: [mueller1998]
+  nhan: tranh-cai
+  giai_thich: Trong 6 thí nghiệm năm 1998 với học sinh lớp 5, sau một lần thất bại, trẻ từng được khen "thông minh" kém bền bỉ, kém thích thú và làm bài kém hơn trẻ được khen nỗ lực. Nhưng một lần làm lại sát thí nghiệm này ở trẻ Trung Quốc 9–13 tuổi (2019) không thấy khác biệt ở cả 8 thước đo động lực và cách giải thích thất bại, chỉ thấy một khác biệt sát ngưỡng ở điểm làm bài. Khen thế nào là tốt nhất vẫn đang được nghiên cứu.
+  nguon:
+  - mueller1998
+  - li2019
 - id: game-bao-luc
   cap: 2
   khang_dinh: Chơi game bạo lực khiến trẻ em hung hăng ngoài đời.
   nhan: tranh-cai
-  giai_thich: 'Phân tích tổng hợp 24 nghiên cứu theo dõi theo thời gian với hơn 17.000 trẻ em (2018) thấy chơi game bạo lực liên quan đến hành vi hung hăng sau đó, nhưng mức độ rất nhỏ (β ≈ 0,08–0,11). Một nhóm nhà nghiên cứu khác cho rằng mối liên hệ này bị thổi phồng và không có ý nghĩa thực tế. Bằng chứng hiện tại: có tín hiệu nhỏ, chưa đủ để kết luận game “gây” bạo lực.'
-  nguon: [prescott2018]
+  giai_thich: 'Phân tích tổng hợp 24 nghiên cứu theo dõi theo thời gian với hơn 17.000 trẻ em và thiếu niên (2018) thấy chơi game bạo lực đi cùng hành vi gây hấn về sau, nhưng ở mức nhỏ (β ≈ 0,08–0,11). Các nhà nghiên cứu khác, như Ferguson và Kilburn (2010), cho rằng những hiệu ứng như vậy bị ước lượng quá cao và quá yếu để có ý nghĩa thực tế. Bằng chứng hiện tại: có tín hiệu nhỏ, chưa đủ để kết luận game "gây" bạo lực.'
+  nguon:
+  - prescott2018
+  - ferguson2010
+  trang: thi-nghiem/bandura
 - id: eq-hon-iq
   cap: 2
   khang_dinh: EQ quyết định thành công trong sự nghiệp nhiều hơn IQ.
-  nhan: bac-bo
-  giai_thich: Phân tích tổng hợp năm 2011 thấy trí tuệ cảm xúc liên hệ với hiệu suất công việc ở mức vừa phải (r ≈ 0,24–0,30), nhưng không có bằng chứng nó dự báo thành công nghề nghiệp tốt hơn IQ. EQ là một năng lực có thật và hữu ích, nhưng khẩu hiệu “EQ quan trọng hơn IQ” thì không đứng vững.
-  nguon: [oboyle2011]
+  nhan: tranh-cai
+  giai_thich: 'Đây là thông điệp trên bìa tạp chí Time năm 1995, không phải kết luận khoa học, và dữ liệu tổng hợp chủ yếu nói về hiệu suất công việc. Một phân tích tổng hợp (O''Boyle và cộng sự, 2011) thấy EQ tương quan .24–.30 với hiệu suất và dự báo thêm được ngoài IQ và tính cách; một phân tích khác (Joseph và cộng sự, 2015) thấy phần dự báo thêm ấy gần bằng 0 khi kiểm soát đầy đủ. Phân tích tổng hợp của Joseph và Newman (2010) thấy liên hệ giữa EQ dạng năng lực và hiệu suất không nhất quán: dương ở công việc đòi hỏi nhiều lao động cảm xúc, âm ở công việc ít đòi hỏi.'
+  nguon:
+  - oboyle2011
+  - joseph2015
+  - joseph2010
+  trang: kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc
 - id: than-kinh-moi
   cap: 2
   khang_dinh: Não người trưởng thành không sinh thêm tế bào thần kinh mới.
-  nhan: bac-bo
-  giai_thich: Dùng phương pháp “xác định tuổi” tế bào bằng carbon-14 từ các vụ thử hạt nhân, nhóm nghiên cứu ở Viện Karolinska (2013) chứng minh hồi hải mã của người trưởng thành vẫn sinh tế bào thần kinh mới mỗi ngày, dù tốc độ giảm dần theo tuổi. Phát hiện này mới chắc chắn ở hồi hải mã — vùng liên quan đến trí nhớ — chứ chưa phải toàn bộ não.
-  nguon: [spalding2013]
+  nhan: tranh-cai
+  giai_thich: 'Năm 2013, một nghiên cứu đo carbon-14 (từ các vụ thử hạt nhân) trong ADN tế bào hồi hải mã ước tính mỗi ngày có khoảng 700 tế bào thần kinh mới ở mỗi hồi hải mã người trưởng thành, giảm nhẹ theo tuổi. Nhưng chuyện này vẫn đang tranh luận: Sorrells và cộng sự (2018) không thấy tế bào thần kinh non ở người trưởng thành, còn Boldrini và cộng sự (2018) thấy chúng ở người 14–79 tuổi.'
+  nguon:
+  - spalding2013
+  - sorrells2018
+  - boldrini2018
+  trang: kham-pha/co-so-sinh-hoc/the-duc-nao
 - id: nao-nam-nu
   cap: 1
   khang_dinh: Não đàn ông và não phụ nữ khác nhau căn bản, như hai “loại” riêng.
   nhan: bac-bo
   giai_thich: Phân tích hơn 1.400 bộ não (2015) cho thấy sự khác biệt trung bình giữa hai giới có tồn tại, nhưng phân bố chồng lấn rất nhiều và hầu như không có bộ não nào “thuần nam” hay “thuần nữ” ở mọi đặc điểm. Hầu hết não người là “khảm” — gồm các đặc điểm phổ biến hơn ở nam, ở nữ và ở cả hai. Khác biệt trung bình không có nghĩa là hai loại riêng biệt.
-  nguon: [joel2015, hpj2015]
+  nguon:
+  - joel2015
 - id: vaccine-tu-ky
   cap: 1
   khang_dinh: Tiêm vắc-xin cho trẻ gây tự kỷ.
   nhan: bac-bo
-  giai_thich: 'Phân tích tổng hợp năm 2014 gộp 5 nghiên cứu đoàn hệ với hơn 1,25 triệu trẻ và 5 nghiên cứu bệnh-chứng, không tìm thấy liên hệ giữa tiêm chủng (kể cả vắc-xin sởi-quai bị-rubella) và tự kỷ: tỉ số odds gộp là 0,99, tức gần như bằng nhau giữa nhóm tiêm và không tiêm. Đây là một trong những ngộ nhận bị bác bỏ kỹ nhất trong y học.'
-  nguon: [taylor2014]
+  giai_thich: 'Phân tích tổng hợp năm 2014 gộp 5 nghiên cứu đoàn hệ với hơn 1,25 triệu trẻ và 5 nghiên cứu bệnh-chứng, không tìm thấy liên hệ giữa tiêm chủng (kể cả vắc-xin sởi-quai bị-rubella) và tự kỷ: ở các nghiên cứu đoàn hệ, tỉ số odds gộp là 0,99, tức gần như bằng nhau giữa nhóm tiêm và không tiêm.'
+  nguon:
+  - taylor2014
 - id: muoi-nghin-gio
   cap: 1
   khang_dinh: Cứ luyện tập 10.000 giờ là thành chuyên gia trong lĩnh vực nào cũng được.
   nhan: bac-bo
-  giai_thich: Phân tích tổng hợp 88 nghiên cứu năm 2014 thấy luyện tập có chủ đích giải thích được 26% khác biệt thành tích trong game, 21% trong âm nhạc, 18% trong thể thao — nhưng chỉ 4% trong học tập và dưới 1% trong các ngành nghề. Luyện tập đúng cách rất quan trọng, nhưng “10.000 giờ” không phải công thức đảm bảo cho mọi lĩnh vực.
-  nguon: [macnamara2014]
+  giai_thich: Phân tích tổng hợp năm 2014 thấy luyện tập có chủ đích giải thích được 26% khác biệt thành tích trong trò chơi (như cờ), 21% trong âm nhạc, 18% trong thể thao, nhưng chỉ 4% trong học tập và dưới 1% trong các ngành nghề. Luyện tập đúng cách quan trọng, nhưng "10.000 giờ" không phải công thức bảo đảm cho mọi lĩnh vực.
+  nguon:
+  - macnamara2014
 - id: thuong-ngoai
   cap: 2
   khang_dinh: Muốn ai đó chăm hơn thì cứ thưởng nhiều hơn.
-  nhan: bac-bo
-  giai_thich: 'Phân tích tổng hợp năm 1999 cho thấy phần thưởng vật chất được trông đợi trước có thể làm giảm động lực nội tại — hiện tượng “lấn át”: việc vốn thích làm trở nên kém hấp dẫn khi bị gắn với thưởng. Thưởng vẫn hiệu quả trong nhiều trường hợp, nhưng “càng thưởng càng chăm” không phải quy luật chung.'
-  nguon: [deci1999]
+  nhan: tranh-cai
+  giai_thich: Phân tích tổng hợp 128 nghiên cứu (1999) cho thấy phần thưởng vật chất được hứa trước làm giảm hứng thú tự nguyện với việc vốn thú vị. Nhưng phần lớn các nghiên cứu ấy làm trong phòng thí nghiệm; một phân tích tổng hợp khác (2014) cho thấy thưởng và hứng thú nội tại có thể cùng dự báo hiệu quả công việc, nên tác động của thưởng ngoài đời vẫn đang được tranh luận.
+  nguon:
+  - deci1999
+  - cerasoli2014
+  trang: kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc
 - id: stress-hai
   cap: 1
   khang_dinh: Căng thẳng lúc nào cũng có hại, càng tránh được càng tốt.
-  nhan: bac-bo
-  giai_thich: Thí nghiệm năm 2013 cho thấy người được xem video về mặt tích cực của căng thẳng, sau một tuần, tự báo cáo hiệu suất làm việc tốt hơn và ít triệu chứng sức khỏe tiêu cực hơn nhóm được xem video về mặt hại — cùng một mức căng thẳng, cách nhìn khác nhau cho kết quả khác nhau. Dĩ nhiên, căng thẳng kéo dài quá sức vẫn có hại; điểm mấu chốt là căng thẳng không phải lúc nào cũng là kẻ thù.
-  nguon: [crum2013]
+  nhan: tranh-cai
+  giai_thich: 'Tim đập nhanh khi căng thẳng là phản ứng báo động bình thường: cơ thể huy động năng lượng để đối phó, và theo mô hình của Selye, điều đáng lo là căng thẳng kéo dài không lối thoát chứ không phải một đợt căng thẳng ngắn. Việc nhìn stress theo hướng tích cực có giúp ích không thì chưa chắc: trong một thí nghiệm năm 2013, người xem video về mặt có lợi của stress báo cáo ít triệu chứng hơn và tự đánh giá làm việc tốt hơn, nhưng đều là tự báo cáo.'
+  nguon:
+  - selye1936
+  - crum2013
+  trang: kham-pha/cang-thang-giac-ngu/stress-co-hai
 - id: ruou-ngu
   cap: 2
-  khang_dinh: Uống chút rượu trước khi ngủ giúp ngủ ngon và sâu.
+  khang_dinh: Uống chút rượu trước khi ngủ giúp ngủ ngon suốt đêm.
   nhan: bac-bo
-  giai_thich: 'Rượu đúng là giúp thiếp đi nhanh hơn, nhưng tổng quan nghiên cứu năm 2013 cho thấy nó phá vỡ cấu trúc giấc ngủ: đè nén giấc ngủ REM, khiến nửa sau của đêm chập chờn và hay tỉnh giấc. Ngủ sau khi uống rượu là giấc ngủ “nông và đứt quãng”, không phải ngủ sâu.'
-  nguon: [ebrahim2013]
+  giai_thich: Tổng quan các nghiên cứu trên người khỏe mạnh (2013) cho thấy ở mọi liều, rượu giúp thiếp đi nhanh hơn và nửa đầu đêm ngủ liền hơn, nhưng nửa sau của đêm bị gián đoạn nhiều hơn. Giấc ngủ REM đầu tiên đến muộn hơn ở mọi liều, và ở liều vừa và cao, tổng thời gian ngủ REM giảm.
+  nguon:
+  - ebrahim2013
 - id: tram-cam-buon
   cap: 1
   khang_dinh: Trầm cảm chỉ là buồn nhiều, “vui lên” là hết.
   nhan: bac-bo
-  giai_thich: 'Theo Tổ chức Y tế Thế giới, trầm cảm là buồn bã kéo dài kèm mất hứng thú với mọi việc và không làm nổi sinh hoạt thường ngày trong ít nhất hai tuần, cùng hàng loạt triệu chứng khác: mất năng lượng, rối loạn ăn ngủ, khó tập trung, cảm giác vô dụng hay tội lỗi. Đây là một bệnh lý có cách điều trị hiệu quả — và chính định kiến “cố vui lên là hết” khiến nhiều người ngại tìm giúp đỡ.'
-  nguon: [who2017]
+  giai_thich: 'Theo Tổ chức Y tế Thế giới (WHO), trầm cảm khác với những thay đổi tâm trạng thường ngày: tâm trạng buồn, trống rỗng hay mất hứng thú kéo dài gần như cả ngày, gần như mỗi ngày, ít nhất hai tuần, kèm các triệu chứng khác như khó tập trung, rối loạn giấc ngủ, mệt mỏi, cảm giác tội lỗi hay vô dụng. Chỉ chuyên gia mới chẩn đoán được. Trầm cảm có cách điều trị hiệu quả, và sự kỳ thị là một trong những rào cản khiến người bệnh không được chăm sóc.'
+  nguon:
+  - who2026
+  trang: kham-pha/suc-khoe-tam-than/tram-cam
 - id: iq-co-dinh
   cap: 1
   khang_dinh: IQ của mỗi người là cố định, sinh ra sao thì cả đời vậy.
   nhan: bac-bo
-  giai_thich: Phân tích tổng hợp 42 bộ dữ liệu với hơn 600.000 người năm 2018 cho thấy mỗi năm đi học thêm giúp tăng khoảng 1–5 điểm IQ, và hiệu ứng này kéo dài suốt đời. Gen có ảnh hưởng lớn đến trí tuệ, nhưng “cố định bất biến” thì không đúng.
-  nguon: [ritchie2018]
+  giai_thich: Thứ bậc tương đối (ai cao hơn ai) khá ổn định và càng ổn định khi lớn tuổi; nhưng điểm của cả một thế hệ có thể tăng (hiệu ứng Flynn), và phân tích tổng hợp 42 bộ dữ liệu với hơn 600.000 người (2018) ước tính mỗi năm đi học thêm làm điểm IQ tăng khoảng 1–5 điểm. Gen có ảnh hưởng lớn đến trí tuệ, nhưng "sinh ra sao cả đời vậy" thì không đúng.
+  nguon:
+  - ritchie2018
+  trang: kham-pha/tri-tue/tri-tue-la-gi
 - id: nao-che-hai-y-thuc
   cap: 2
   khang_dinh: Phẫu thuật cắt thể chai tạo ra hai “con người” độc lập trong một cơ thể.
   nhan: tranh-cai
-  giai_thich: 'Ở bệnh nhân não chẻ, hai bán cầu xử lý thông tin độc lập: tay trái “biết” điều miệng không nói được. Nhưng liệu đó có phải hai ý thức riêng biệt không thì các nhà nghiên cứu vẫn tranh cãi — nhiều người cho rằng ý thức vẫn thống nhất ở mức độ nào đó, chỉ là đường truyền thông tin bị cắt.'
-  nguon: [gazzaniga1967]
+  giai_thich: 'Ở bệnh nhân não chẻ, khi thể chai bị cắt, hai bán cầu không còn trao đổi thông tin trực tiếp: tay trái có thể lấy đúng đồ vật mà miệng nói là không thấy. Nhưng liệu đó có phải hai ý thức riêng thì chưa có lời đáp cuối cùng: Sperry cho rằng mỗi bán cầu dường như có vùng nhận thức riêng, còn Gazzaniga (2005) viết rằng chưa có trường hợp nào cho phép khẳng định mỗi bán cầu có ý thức đầy đủ về bản thân.'
+  nguon:
+  - gazzaniga1967
   trang: kham-pha/co-so-sinh-hoc/nao-che-doi
 - id: tinh-cach-dong-khuon
   cap: 2
   khang_dinh: Tính cách đóng khuôn sau tuổi 30, không đổi được nữa.
   nhan: bac-bo
-  giai_thich: 'Phân tích tổng hợp 152 nghiên cứu cho thấy thứ hạng tính cách giữa các cá nhân ổn định dần theo tuổi, nhưng mức trung bình vẫn dịch chuyển suốt tuổi trưởng thành: người ta có xu hướng tận tâm, dễ chịu và ổn định cảm xúc hơn theo năm tháng. “Đóng khuôn như thạch cao” chỉ đúng một nửa.'
-  nguon: [roberts2000]
+  giai_thich: 'Phân tích tổng hợp 152 nghiên cứu dọc (2000) cho thấy thứ hạng tính cách giữa các cá nhân ổn định dần theo tuổi nhưng không bao giờ cố định hẳn. Mức trung bình cũng dịch chuyển: phân tích tổng hợp 92 mẫu (2006) thấy người ta tận tâm hơn và ổn định cảm xúc hơn, nhất là ở tuổi 20–40. "Đóng khuôn như thạch cao" chỉ đúng một phần.'
+  nguon:
+  - roberts2000
+  - roberts2006
   trang: kham-pha/tinh-cach/tinh-cach-thay-doi
 - id: thuong-nao-cung-chet
   cap: 2
   khang_dinh: Bất kỳ phần thưởng nào cũng giết chết đam mê.
   nhan: bac-bo
-  giai_thich: 'Thí nghiệm của Deci (1971) cho thấy thưởng tiền làm giảm hứng thú nội tại, nhưng lời khen lại làm TĂNG hứng thú. Phân tích tổng hợp sau này xác nhận: nguy cơ “lấn át” chủ yếu đến từ thưởng vật chất gắn với kiểm soát; thưởng bất ngờ hay thưởng bằng lời thường vô hại.'
-  nguon: [deci1971]
+  giai_thich: 'Trong thí nghiệm của Deci (1971), sinh viên từng được trả tiền về sau tự nguyện chơi câu đố ít hơn (khác biệt mới ở mức ý nghĩa lỏng), còn người được khen thì không giảm. Phân tích tổng hợp 128 nghiên cứu (1999) cho thấy rõ hơn: thưởng vật chất hứa trước làm giảm hứng thú tự nguyện, còn lời khen và phản hồi tích cực lại làm tăng hứng thú.'
+  nguon:
+  - deci1971
+  - deci1999
   trang: kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc
 - id: nghi-tich-cuc-stress
   cap: 2
   khang_dinh: Chỉ cần nghĩ tích cực về stress thì stress sẽ tự thành có lợi.
   nhan: tranh-cai
-  giai_thich: Can thiệp “tư duy về stress” (Crum và cộng sự, 2013) cho thấy nhóm được hướng dẫn nhìn stress tích cực tự báo cáo làm việc tốt hơn sau một tuần. Nhưng hiệu ứng còn nhỏ, đo bằng tự báo cáo, và việc tái lập đúng giao thức gốc vẫn là câu hỏi mở — chưa đủ để nói “nghĩ tích cực là đủ”.
-  nguon: [crum2013]
+  giai_thich: Nhiều thử nghiệm cho thấy niềm tin về stress đổi được qua một can thiệp ngắn. Các thử nghiệm của Crum và cộng sự (2013, 2023) cho kết quả tích cực về sức khỏe và hiệu quả làm việc, nhưng chủ yếu là tự báo cáo; các nhóm khác thấy kết quả chưa nhất quán, nhất là ở chỉ số sinh lý. Vì vậy chưa đủ để nói "nghĩ tích cực là đủ".
+  nguon:
+  - crum2013
+  - crum2023
   trang: kham-pha/cang-thang-giac-ngu/stress-co-hai
 - id: thuc-khuya-on-thi
   cap: 1
-  khang_dinh: Thức khuya ôn thi giúp nhớ bài lâu hơn.
+  khang_dinh: Học xong mà thức trắng đêm thay vì đi ngủ thì cũng không ảnh hưởng gì đến việc nhớ bài.
   nhan: bac-bo
-  giai_thich: Trong thí nghiệm của Gais và cộng sự (2006), nhóm học buổi tối rồi đi ngủ nhớ tốt hơn hẳn nhóm thức trắng đêm khi kiểm tra sau 48 giờ — dù cả hai đã được ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ; thức khuya chính là bỏ đi cơ hội đó.
-  nguon: [gais2006]
+  giai_thich: Trong hai thí nghiệm của Gais và cộng sự (2006), học sinh trung học học từ vựng nhớ tốt hơn khi được ngủ trong vòng vài giờ sau khi học; thiếu ngủ sau khi học làm nhớ kém đi, và tác hại vẫn còn sau một đêm ngủ bù. Giấc ngủ sau khi học giúp củng cố trí nhớ. Nghiên cứu này không so việc dùng đêm thức để học thêm với việc đi ngủ.
+  nguon:
+  - gais2006
   trang: kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
 - id: giau-hanh-phuc-thang
   cap: 2
   khang_dinh: Càng giàu thì hạnh phúc càng tăng theo đường thẳng.
   nhan: bac-bo
-  giai_thich: Kahneman và Deaton (2010) thấy hạnh phúc cảm xúc chững lại quanh ngưỡng khoảng 75.000 USD/năm, trong khi đánh giá cuộc sống vẫn tăng chậm theo thu nhập. Nghiên cứu sau này (Killingsworth, 2021) thấy hạnh phúc vẫn tăng tiếp nhưng không đều — tóm lại không phải đường thẳng vô hạn.
-  nguon: [kahneman2010]
+  giai_thich: 'Kahneman và Deaton (2010) thấy đánh giá cuộc sống tăng theo logarit thu nhập, còn hạnh phúc cảm xúc không cải thiện thêm sau khoảng 75.000 USD/năm. Killingsworth (2021) đo cảm xúc theo thời gian thực và thấy hạnh phúc vẫn tăng theo logarit thu nhập, không có ngưỡng; mâu thuẫn này được hòa giải năm 2023 trên dữ liệu người Mỹ nhưng vẫn còn bị bình luận. Dù theo cách nào, quan hệ là theo logarit: thu nhập càng cao, mỗi đồng thêm vào đi cùng mức tăng hạnh phúc càng nhỏ, không phải đường thẳng.'
+  nguon:
+  - kahneman2010
+  - killingsworth2021
+  - killingsworth2023
   trang: kham-pha/hanh-phuc/tien-va-hanh-phuc
 - id: tre-so-sinh-khong-hieu
   cap: 1
   khang_dinh: Trẻ sơ sinh chẳng hiểu gì về ngôn ngữ xung quanh.
   nhan: bac-bo
-  giai_thich: Trẻ vài tháng tuổi đã phân biệt được âm thanh của mọi ngôn ngữ trên thế giới và âm thầm học thống kê từ giọng nói xung quanh — trước cả khi bập bẹ. Thí nghiệm của Kuhl và cộng sự (2003) cho thấy chỉ cần người thật trò chuyện vài giờ, trẻ 9 tháng đã “mở tai” với âm ngoại ngữ.
-  nguon: [kuhl2003]
+  giai_thich: Trẻ vài tháng tuổi đã phân biệt được nhiều cặp âm, kể cả âm không có trong tiếng mẹ đẻ; trong khoảng 6–12 tháng tuổi, khả năng ấy hẹp dần theo tiếng mẹ đẻ. Trong thí nghiệm của Kuhl và cộng sự (2003), sau 12 buổi chơi với người bản ngữ (tổng cộng 5 giờ), trẻ Mỹ 9 tháng tuổi phân biệt được một cặp phụ âm tiếng Quan Thoại; xem video hay nghe băng cùng nội dung thì không.
+  nguon:
+  - werker1984
+  - kuhl2003
   trang: kham-pha/phat-trien/tre-hoc-noi
 - id: cam-xuc-bam-sinh
   cap: 2
   khang_dinh: Cảm xúc của mọi người trên thế giới đều giống nhau, bẩm sinh nguyên khối.
   nhan: tranh-cai
-  giai_thich: Người các nền văn hóa nhận diện nét mặt đúng trên mức may rủi, nhưng tổng quan năm 2019 kết luận các biểu hiện cảm xúc không đủ ổn định và đặc trưng để coi là “dấu vân tay” phổ quát — cách ta cảm nhận và gọi tên cảm xúc còn phụ thuộc ngữ cảnh và khái niệm ta có.
-  nguon: [barrett2019]
+  giai_thich: Khi chọn nhãn cảm xúc từ một danh sách cho sẵn, người ở nhiều nền văn hóa nhận diện ảnh nét mặt dàn dựng đúng trên mức may rủi. Nhưng bài tổng quan năm 2019 kết luận nét mặt không đủ ổn định và đặc trưng để coi là "dấu vân tay" phổ quát của cảm xúc; cảm xúc có phải "chương trình" sinh học phổ quát hay được não dựng lên từ cảm giác cơ thể, kinh nghiệm và văn hóa thì vẫn chưa ngã ngũ.
+  nguon:
+  - barrett2019
+  - elfenbein2002
   trang: kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban
 - id: p-gia-thuyet-dung
   cap: 2
   khang_dinh: p < 0,05 nghĩa là giả thuyết nghiên cứu đúng tới 95%.
   nhan: bac-bo
-  giai_thich: p-value chỉ cho biết dữ liệu “lạ” đến mức nào NẾU giả thuyết vô hiệu đúng — nó không phải xác suất giả thuyết đúng, cũng không đo độ lớn hay tầm quan trọng của hiệu ứng. Hiểu sai này phổ biến đến mức Hiệp hội Thống kê Hoa Kỳ phải ra tuyên bố chính thức năm 2016.
-  nguon: [wasserstein2016]
+  giai_thich: p-value chỉ cho biết dữ liệu "lạ" đến mức nào nếu một mô hình định sẵn (thường là giả thuyết không) là đúng; nó không phải xác suất giả thuyết đúng, cũng không đo độ lớn hay tầm quan trọng của hiệu ứng. Hiểu sai này phổ biến đến mức năm 2016 Hiệp hội Thống kê Hoa Kỳ (ASA) ra một tuyên bố chính thức về cách dùng và hiểu p-value.
+  nguon:
+  - wasserstein2016
   trang: bang-chung/p-value
 - id: sinh-vien-my-dai-dien
   cap: 2
   khang_dinh: Nghiên cứu trên sinh viên Mỹ thì đúng với mọi người trên thế giới.
   nhan: bac-bo
-  giai_thich: Ước tính khoảng 96% mẫu nghiên cứu tâm lý đến từ các nước phương Tây công nghiệp hóa — chỉ khoảng 12% dân số thế giới — và 68% từ Mỹ. Ở nhiều lĩnh vực, kết quả trên mẫu WEIRD này là ngoại lệ chứ không phải chuẩn mực của loài người (Henrich và cộng sự, 2010).
-  nguon: [henrich2010]
+  giai_thich: Theo một phân tích các tạp chí tâm lý học hàng đầu giai đoạn 2003–2007 (Arnett, 2008, do Henrich và cộng sự dẫn), 96% người tham gia đến từ các nước phương Tây công nghiệp hóa, vốn chỉ chiếm khoảng 12% dân số thế giới, và 68% từ Mỹ. Tổng quan dữ liệu so sánh giữa các nền văn hóa của Henrich và cộng sự (2010) thấy người ở các xã hội "WEIRD" thường là ngoại lệ, không đại diện tốt cho loài người.
+  nguon:
+  - henrich2010
   trang: bang-chung/mau-va-chon-mau
 - id: trung-binh-dien-hinh
   cap: 1
   khang_dinh: Thu nhập trung bình chính là thu nhập của người điển hình.
   nhan: bac-bo
-  giai_thich: Khi phân phối lệch — như thu nhập, nơi vài người rất giàu kéo đuôi phân phối dài ra — trung bình cộng bị kéo lên xa khỏi đa số. Lúc đó trung vị (giá trị đứng giữa) mới mô tả “người điển hình” tốt hơn.
-  nguon: [statology-mean-median]
+  giai_thich: Khi phân phối lệch, như thu nhập, nơi một số ít người thu nhập rất cao kéo đuôi phân phối dài ra, trung bình thường bị kéo về phía đuôi nhiều hơn trung vị. Trung vị (giá trị đứng chính giữa) cho biết người đứng giữa kiếm bao nhiêu, nên thường mô tả "người điển hình" tốt hơn.
+  nguon:
+  - vonhippel2005
   trang: bang-chung/thong-ke-mo-ta
 - id: thang-do-dung-ten
   cap: 2
   khang_dinh: Thang đo nào cũng đo đúng thứ mà tên của nó gọi.
   nhan: bac-bo
-  giai_thich: Một thang đo phải chứng minh “độ giá trị” — điểm số thực sự phản ánh khái niệm cần đo, chứ không phải thứ gì khác na ná (Cronbach & Meehl, 1955). Tên gọi hay, câu hỏi nghe hợp lý không đảm bảo điều đó; phải kiểm tra bằng dữ liệu.
-  nguon: [cronbach1955]
+  giai_thich: 'Một thang đo phải chứng minh "độ giá trị": điểm số thật sự phản ánh khái niệm cần đo, chứ không phải thứ gì khác. Cronbach và Meehl (1955) trình bày cách hiểu "giá trị cấu trúc" (construct validity). Tên gọi hay, câu hỏi nghe hợp lý không bảo đảm điều đó; phải kiểm tra bằng dữ liệu.'
+  nguon:
+  - cronbach1955
   trang: bang-chung/do-luong
 - id: dang-bao-la-dung
   cap: 2
   khang_dinh: Đã đăng trên báo khoa học thì kết luận là đúng.
   nhan: bac-bo
-  giai_thich: Năm 2023 có hơn 10.000 bài báo bị rút lại — mức kỷ lục, trong đó hơn 8.000 bài từ các tạp chí Hindawi do quy trình phản biện bị thao túng. Bình duyệt là bộ lọc quan trọng nhưng không hoàn hảo; đọc báo khoa học vẫn cần con mắt kiểm chứng.
-  nguon: [vannoorden2023]
+  giai_thich: Theo tin của tạp chí Nature, năm 2023 có hơn 10.000 bài báo nghiên cứu bị rút lại, phá các kỷ lục hằng năm; hơn 8.000 bài trong số đó từ các tạp chí của Hindawi, với lý do gồm thao túng có hệ thống quy trình xuất bản và phản biện. Bình duyệt là bộ lọc quan trọng nhưng không hoàn hảo; đọc báo khoa học vẫn cần con mắt kiểm chứng.
+  nguon:
+  - vannoorden2023
   trang: bang-chung/doc-bai-bao-khoa-hoc
 - id: tre-song-ngu-cham-noi
   cap: 1
   khang_dinh: Trẻ học hai ngôn ngữ cùng lúc sẽ chậm nói.
   nhan: bac-bo
-  giai_thich: Trẻ song ngữ đạt các mốc ngôn ngữ — bập bẹ, từ đầu tiên, ghép từ — ở cùng độ tuổi với trẻ đơn ngữ, miễn là tính cả hai ngôn ngữ. Cảm giác “chậm” thường đến từ việc chỉ đếm số từ của một ngôn ngữ.
-  nguon: [ilabs-bilingual]
-  trang: kham-pha/phat-trien/tre-hoc-noi
+  giai_thich: Trẻ học hai ngôn ngữ từ nhỏ đạt các mốc ngôn ngữ đầu đời ở mỗi ngôn ngữ cùng lúc, như trẻ đơn ngữ (một nghiên cứu theo dõi 6 trẻ, 2001). Nếu chỉ so một ngôn ngữ, trẻ song ngữ có thể biết ít từ hơn trẻ đơn ngữ; nhưng tính cả hai ngôn ngữ thì tổng vốn từ tương đương (nghiên cứu năm 2012 ở trẻ 22–30 tháng).
+  nguon:
+  - hoff2012
+  - petitto2001
+  - ilabs-bilingual
 - id: qua-day-thi-muon
   cap: 2
   khang_dinh: Học ngoại ngữ sau tuổi dậy thì là quá muộn, không học nổi nữa.
   nhan: bac-bo
-  giai_thich: Tuổi bắt đầu càng sớm thì càng dễ đạt mức như người bản xứ ở ngữ pháp (Johnson & Newport, 1989) — nhưng đó là chuyện “giỏi đến mức nào”, không phải “học được hay không”. Người lớn vẫn học và dùng tốt ngoại ngữ; không có cánh cửa nào đóng sập sau dậy thì.
-  nguon: [johnson1989]
+  giai_thich: Một phân tích dữ liệu của 669.498 người nói tiếng Anh (2018) ước tính khả năng học ngữ pháp gần như giữ nguyên đến khoảng 17,4 tuổi rồi mới giảm dần đều, tức là muộn hơn tuổi dậy thì nhiều. Khả năng ấy giảm dần chứ không mất đi ngay sau dậy thì; người lớn vẫn học được ngoại ngữ, chỉ là khó đạt ngữ pháp như người bản ngữ hơn.
+  nguon:
+  - hartshorne2018
 - id: nhin-mat-biet-cam-xuc
   cap: 2
   khang_dinh: Nhìn nét mặt là biết chính xác người ta đang cảm thấy gì.
   nhan: tranh-cai
-  giai_thich: Trong phòng thí nghiệm với vài đáp án cho sẵn, người ta đoán đúng nét mặt trên mức may rủi. Nhưng tỉ lệ đó bị thổi phồng bởi cách trắc nghiệm ép chọn; ngoài đời thực, cùng một nét mặt có thể ứng với nhiều cảm xúc khác nhau tùy ngữ cảnh — nên “đọc mặt” không đáng tin như ta tưởng.
-  nguon: [barrett2019]
+  giai_thich: Bằng chứng cho thấy người ta đôi khi cười khi vui, cau mày khi buồn, nhíu mày khi giận… nhiều hơn mức may rủi. Nhưng bài tổng quan năm 2019 thấy cách biểu lộ cảm xúc thay đổi nhiều giữa các nền văn hóa, tình huống, và cả giữa người với người trong cùng tình huống; cùng một kiểu cử động mặt có thể ứng với nhiều cảm xúc, và một cái cau mày thường nói điều gì đó khác hẳn cảm xúc. Vì vậy "đọc mặt" không đáng tin như ta tưởng.
+  nguon:
+  - barrett2019
   trang: kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban
 - id: ngu-it-da-quen
   cap: 1
   khang_dinh: Ngủ 4–5 tiếng mỗi đêm là đủ, miễn là đã quen.
   nhan: bac-bo
-  giai_thich: Thí nghiệm 14 ngày cho thấy nhóm ngủ 4–6 tiếng/đêm suy giảm nhận thức tích lũy dần, tương đương thức trắng 1–2 đêm — trong khi cảm giác buồn ngủ tự báo cáo gần như không tăng thêm. “Quen” chỉ là cảm giác; não thì không quen được.
-  nguon: [vandongen2003]
+  giai_thich: 'Trong thí nghiệm 14 ngày, người chỉ được nằm giường 4 hoặc 6 tiếng mỗi đêm suy giảm nhận thức tích lũy dần, tới mức tương đương thức trắng tới 2 đêm, trong khi cảm giác buồn ngủ tự báo cáo chỉ tăng thêm chút ít sau mấy ngày đầu. "Quen" chỉ là cảm giác: người tham gia gần như không nhận ra mình đang suy giảm.'
+  nguon:
+  - vandongen2003
 - id: gach-chan-hieu-qua
   cap: 1
   khang_dinh: Gạch chân, tô đậm sách giáo khoa là cách ôn bài hiệu quả.
-  nhan: bac-bo
-  giai_thich: Tổng quan năm 2013 xếp gạch chân/highlight vào nhóm kỹ thuật hiệu quả thấp. Muốn nhớ lâu, hãy tự kiểm tra (cố nhớ lại không nhìn sách) và ôn cách quãng thay vì tô màu trang giấy.
-  nguon: [dunlosky2013]
+  nhan: tranh-cai
+  giai_thich: Bài tổng quan năm 2013 đánh giá 10 kỹ thuật học phổ biến và xếp gạch chân, tô đậm vào nhóm hiệu quả thấp. Nhưng một phân tích tổng hợp năm 2022 (36 bài báo, 85 hiệu ứng) thấy tự gạch chân giúp nhớ ở mức nhỏ (khoảng 0,36) nhưng không giúp hiểu (0,20, không đạt ý nghĩa), và giúp sinh viên đại học (0,39) nhưng không giúp học sinh phổ thông (0,24).
+  nguon:
+  - dunlosky2013
+  - ponce2022
+  trang: kham-pha/tri-nho/duong-cong-quen
 - id: huong-noi-lanh-dao
   cap: 2
   khang_dinh: Người hướng nội không thể làm lãnh đạo giỏi.
   nhan: bac-bo
-  giai_thich: Phân tích tổng hợp (Judge và cộng sự, 2002) thấy hướng ngoại dự báo tốt ai sẽ NỔI LÊN làm lãnh đạo, nhưng dự báo kém hơn nhiều về ai lãnh đạo HIỆU QUẢ. Hướng nội hay hướng ngoại chỉ là một mảnh ghép; tận tâm và ổn định cảm xúc cũng quan trọng không kém.
-  nguon: [judge2002]
-  trang: kham-pha/tinh-cach/big-five
+  giai_thich: 'Phân tích tổng hợp 73 mẫu (Judge và cộng sự, 2002) thấy hướng ngoại là đặc điểm đi cùng khả năng lãnh đạo nhất quán nhất, nhưng tương quan chỉ ở mức vừa (r = .31); tận tâm (.28), cởi mở (.24) và ổn định cảm xúc cũng liên quan. Tương quan ở mức vừa nghĩa là có nhiều ngoại lệ: không đặc điểm nào quyết định ai lãnh đạo giỏi.'
+  nguon:
+  - judge2002
 - id: gen-quyet-dinh-het
   cap: 1
   khang_dinh: Gen quyết định hết mọi thứ, cố gắng cũng vô ích.
   nhan: bac-bo
-  giai_thich: Con số “tính di truyền 40–60%” là thống kê trên cả quần thể, không phải tỉ lệ “do gen định đoạt” trong một con người cụ thể. Cùng một bộ gen, môi trường và nỗ lực khác nhau vẫn cho kết quả khác nhau — gen đặt khoảng khả năng, không viết sẵn kết cục.
-  nguon: [polderman2015]
+  giai_thich: 'Tính di truyền là con số thống kê trên một quần thể: bao nhiêu phần trăm khác biệt giữa người với người gắn với khác biệt về gen, không phải phần "do gen định đoạt" trong một con người cụ thể. Phân tích tổng hợp gần như mọi nghiên cứu sinh đôi trong 50 năm (2015) cho tính di truyền trung bình 49% trên mọi tính trạng; nghĩa là khoảng một nửa khác biệt còn lại gắn với những thứ khác ngoài gen.'
+  nguon:
+  - polderman2015
   trang: kham-pha/co-so-sinh-hoc/gen-va-tinh-cach

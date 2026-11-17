@@ -1,0 +1,70 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/tri-nho-may-quay#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/tri-nho-may-quay
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:66f2615525a1029869d311e8f9f1fa6515c2684e67d2d5ecd0f21c9b01178149
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Mỗi lần nhớ lại, ta dựng lại ký ức từ các mảnh, và ký ức có thể bị thay đổi bởi câu hỏi gợi ý hay thông tin nghe được sau đó. Đây là một trong những phát hiện được tái lập nhiều nhất của tâm lý học trí nhớ. Một khảo sát đại diện ở Mỹ công bố năm 2011 cho thấy 63% người được hỏi vẫn tin trí nhớ giống máy quay.'' → mới ''Mỗi lần nhớ lại, ta dựng lại ký ức, và ký ức có thể bị thông tin nghe được sau sự kiện làm sai lệch: hiện tượng này đã được nghiên cứu trong nhiều thập kỷ, với nhiều kiểu thí nghiệm. Dù vậy, trong một khảo sát đại diện ở Mỹ (công bố năm 2011), 63% người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim.'''
+nguon:
+  - id: simons2011
+    ten: 'Simons và cộng sự (2011). What people believe about how memory works: A representative survey of the U.S. population'
+    link: https://doi.org/10.1371/journal.pone.0022757
+  - id: loftus2005
+    ten: 'Loftus (2005). Planting misinformation in the human mind: A 30-year investigation of the malleability of memory'
+    link: https://doi.org/10.1101/lm.94705
+nhan_dinh:
+  - id: nhan
+    cau: 'Trí nhớ hoạt động như máy quay phim: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - loftus2005
+    co_so:
+      - loftus2005
+    ly_do: 'Khớp trang nhà bang-ghi-hinh (đã khóa): ngộ nhận "Trí nhớ hoạt động như máy quay phim" :nhan[bac-bo]; khung vung-chac: trí nhớ được dựng lại và có thể bị thông tin sau sự kiện làm sai lệch (Loftus 2005, tổng kết 30 năm).'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1101/lm.94705", "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: "Chỗ khó: bằng chứng là tổng quan 30 năm của Loftus 2005, không phải phân tích tổng hợp."
+  - id: g1
+    cau: Ký ức được dựng lại và có thể bị thông tin sau sự kiện làm sai lệch; hiện tượng được nghiên cứu nhiều thập kỷ với nhiều kiểu thí nghiệm.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - loftus2005
+    trich: 'Trang nhà (đã khóa): "Hiện tượng thông tin sai lệch (misinformation effect) đã được nghiên cứu trong nhiều thập kỷ với nhiều kiểu thí nghiệm khác nhau; bài tổng quan của Elizabeth Loftus năm 2005 tổng kết 30 năm nghiên cứu"'
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "Đây là một trong những phát hiện được tái lập nhiều nhất của tâm lý học trí nhớ": mạnh hơn nguồn đã kiểm; viết theo trang nhà.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1101/lm.94705" ]
+  - id: g2
+    cau: 'Khảo sát đại diện ở Mỹ (công bố 2011): 63% đồng ý trí nhớ hoạt động như máy quay phim.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - simons2011
+    trich: 'Trang nhà: "Trong một khảo sát đại diện ở Mỹ (làm năm 2009, công bố năm 2011), 63% người được hỏi đồng ý rằng trí nhớ hoạt động như máy quay phim"'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0022757" ]
+    luot_2_ghi_chu: Khảo sát đại diện Mỹ, PLoS ONE 2011.
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/tri-nho/bang-ghi-hinh
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: 'Trang nhà đã khóa, có mục Ngộ nhận liên quan với chính khẳng định này, nhãn bac-bo. Review (Claude Opus 5.5, 17/11/2026): kham-pha/tri-nho/bang-ghi-hinh có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: ngộ nhận "Trí nhớ hoạt động như máy quay phim" :nhan[bac-bo], khung vung-chac về trí nhớ được dựng lại.'
+    review: dung

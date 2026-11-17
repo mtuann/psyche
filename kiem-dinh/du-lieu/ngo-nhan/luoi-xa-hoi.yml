@@ -1,0 +1,57 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/luoi-xa-hoi#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/luoi-xa-hoi
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:bfa8bae8b25d0496e6bf5e08da20e86cf9ccc6699908e0a79e4064f591ab3626
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp 78 nghiên cứu năm 1993 xác nhận hiện tượng “lười xã hội”: mỗi cá nhân thường bỏ ít nỗ lực hơn khi làm chung so với khi làm riêng, nhất là khi đóng góp của từng người khó được đánh giá. Nhóm chỉ vượt trội khi có phân công rõ ràng, trách nhiệm cá nhân và công việc có ý nghĩa — còn “càng đông càng tốt” thì không đúng.'' → mới ''Phân tích tổng hợp 78 nghiên cứu năm 1993 xác nhận hiện tượng "lười xã hội": mỗi người thường bỏ ít công sức hơn khi làm chung so với khi làm riêng, ở nhiều loại việc và nhiều nhóm người. Mức lười thay đổi theo hoàn cảnh: nó chịu ảnh hưởng mạnh của việc đóng góp của từng người có được đánh giá không, kỳ vọng về đồng đội, ý nghĩa của công việc và văn hóa.'''
+nguon:
+  - id: karau1993
+    ten: 'Karau và cộng sự (1993). Social loafing: A meta-analytic review and theoretical integration'
+    link: https://doi.org/10.1037/0022-3514.65.4.681
+nhan_dinh:
+  - id: nhan
+    cau: 'Làm việc nhóm lúc nào cũng tốt hơn làm một mình: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - karau1993
+    co_so:
+      - karau1993
+    ly_do: 'Phân tích tổng hợp 78 nghiên cứu: lười xã hội vững, khái quát qua nhiều việc và nhóm người.'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.65.4.681" ]
+  - id: g1
+    cau: 'Phân tích tổng hợp 78 nghiên cứu (1993): lười xã hội vững, qua nhiều loại việc và nhóm người.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - karau1993
+    trich: Social loafing is the tendency for individuals to expend less effort when working collectively than when working individually. A meta-analysis of 78 studies demonstrates that social loafing is robust and generalizes across tasks and S populations.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.65.4.681" ]
+  - id: g2
+    cau: 'Yếu tố ảnh hưởng mạnh: việc đóng góp có được đánh giá không, kỳ vọng về đồng đội, ý nghĩa công việc, văn hóa.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - karau1993
+    trich: Evaluation potential, expectations of co-worker performance, task meaningfulness, and culture had especially strong influence.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "Nhóm chỉ vượt trội khi có phân công rõ ràng, trách nhiệm cá nhân và công việc có ý nghĩa — còn càng đông càng tốt thì không đúng": nguồn nói về các yếu tố làm giảm lười, không nói khi nào nhóm vượt trội.'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0022-3514.65.4.681" ]

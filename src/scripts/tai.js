@@ -16,6 +16,13 @@ const LUAT = [
 	// D8-L4: hai trang đọc kho kết quả; khối ở đầu trang nên khởi tạo ngay
 	['.pz-du-lieu-cua-toi', () => import('./cong-cu/du-lieu-cua-toi.js'), true],
 	['.pz-nhat-ky', () => import('./cong-cu/nhat-ky.js'), true],
+	['.pz-ngo-nhan', () => import('./cong-cu/ngo-nhan.js'), false],
+	['.pz-tri-nho-sai', () => import('./cong-cu/tri-nho-sai.js'), false],
+	['.pz-wason-246', () => import('./cong-cu/wason-246.js'), false],
+	['.pz-linda', () => import('./cong-cu/linda.js'), false],
+	['.pz-big-five-mini', () => import('./cong-cu/big-five-mini.js'), false],
+	['.pz-neo-gia', () => import('./cong-cu/neo-gia.js'), false],
+	['.pz-tri-nho-tu', () => import('./cong-cu/tri-nho-tu.js'), false],
 ];
 const LE = 600;
 const cho = new Map(); // phần tử đang chờ tới gần màn hình -> hàm khởi tạo (trả về promise)

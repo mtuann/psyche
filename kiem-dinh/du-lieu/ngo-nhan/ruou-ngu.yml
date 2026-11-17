@@ -1,0 +1,75 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/ruou-ngu#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/ruou-ngu
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:cce860d3bd923338b426ff5dc3ea15fe471e1de346d86a23d96cdc1a9a048da2
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
+ghi_chu: 'chỗ khó: sửa khẳng định "giúp ngủ ngon và sâu" thành "giúp ngủ ngon suốt đêm": tổng quan 2013 thấy giấc ngủ sóng chậm (ngủ sâu) TĂNG ở nửa đầu đêm, nên câu cũ "Ngủ sau khi uống rượu là giấc ngủ nông và đứt quãng, không phải ngủ sâu" sai. Nguồn là tổng quan định tính (không phải phân tích tổng hợp). Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). khang_dinh: cũ ''Uống chút rượu trước khi ngủ giúp ngủ ngon và sâu.'' → mới ''Uống chút rượu trước khi ngủ giúp ngủ ngon suốt đêm.'' | giai_thich: cũ ''Rượu đúng là giúp thiếp đi nhanh hơn, nhưng tổng quan nghiên cứu năm 2013 cho thấy nó phá vỡ cấu trúc giấc ngủ: đè nén giấc ngủ REM, khiến nửa sau của đêm chập chờn và hay tỉnh giấc. Ngủ sau khi uống rượu là giấc ngủ “nông và đứt quãng”, không phải ngủ sâu.'' → mới ''Tổng quan các nghiên cứu trên người khỏe mạnh (2013) cho thấy ở mọi liều, rượu giúp thiếp đi nhanh hơn và nửa đầu đêm ngủ liền hơn, nhưng nửa sau của đêm bị gián đoạn nhiều hơn. Giấc ngủ REM đầu tiên đến muộn hơn ở mọi liều, và ở liều vừa và cao, tổng thời gian ngủ REM giảm.'''
+nguon:
+  - id: ebrahim2013
+    ten: 'Ebrahim và cộng sự (2013). Alcohol and sleep I: Effects on normal sleep'
+    link: https://doi.org/10.1111/acer.12006
+nhan_dinh:
+  - id: nhan
+    cau: 'Uống chút rượu trước khi ngủ giúp ngủ ngon suốt đêm: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - ebrahim2013
+    co_so:
+      - ebrahim2013
+    ly_do: 'Tổng quan mọi nghiên cứu đã biết trên người khỏe mạnh: ở mọi liều, nửa sau đêm bị gián đoạn nhiều hơn.'
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/23347102/
+  - id: g1
+    cau: 'Ở mọi liều: thiếp đi nhanh hơn, nửa đầu đêm liền hơn, nửa sau gián đoạn nhiều hơn.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - ebrahim2013
+    trich: At all dosages, alcohol causes a reduction in sleep onset latency, a more consolidated first half sleep and an increase in sleep disruption in the second half of sleep.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "phá vỡ cấu trúc giấc ngủ ... nửa sau của đêm chập chờn và hay tỉnh giấc": viết sát nguồn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/23347102/
+  - id: g2
+    cau: Giấc REM đầu tiên đến muộn hơn ở mọi liều; liều vừa và cao làm giảm tổng REM.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - ebrahim2013
+    trich: The onset of the first REM sleep period is significantly delayed at all doses ... Total night REM sleep percentage is decreased in the majority of studies at moderate and high doses with no clear trend apparent at low doses.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "đè nén giấc ngủ REM": chỉ đúng ở liều vừa và cao.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/23347102/
+  - id: g3
+    cau: (Đã bỏ) Ngủ sau khi uống rượu là giấc ngủ nông và đứt quãng, không phải ngủ sâu.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon: []
+    trich: ''
+    ket_qua: da-bo
+    ghi_chu: 'Sai: "The majority of studies ... confirm an increase in slow wave sleep (SWS) in the first half of the night" (Ebrahim 2013). Sau lượt 2 (Opus 5.5, 17/11/2026): Giữ da-bo: câu đã bỏ khỏi thẻ, lượt 2 đồng ý bỏ hay không có nguồn để giữ.'
+    luot_2: sai
+    luot_2_nguon:
+      - https://pubmed.ncbi.nlm.nih.gov/23347102/
+    luot_2_ghi_chu: 'câu đúng: Sau khi uống rượu, nửa đầu đêm thường có nhiều giấc ngủ sóng chậm (ngủ sâu) hơn, nửa sau thì gián đoạn nhiều hơn.; Câu đã bỏ; bỏ là đúng.'

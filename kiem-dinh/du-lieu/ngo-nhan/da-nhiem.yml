@@ -1,0 +1,82 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/da-nhiem#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/da-nhiem
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:67ee0292654b3ae7d115f7bdcab65ca336c8226c8fbc06978504d6e1643b2588
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Mỗi lần chuyển qua lại giữa các việc đều tốn thời gian và làm tăng lỗi, nhất là với việc phức tạp. Trong một thí nghiệm lái xe mô phỏng kết hợp nhiệm vụ trí nhớ với 200 người, chỉ khoảng 2,5% không bị giảm hiệu suất. Cảm giác "mình làm nhiều việc cùng lúc rất giỏi" thường không khớp với kết quả đo được.'' → mới ''"Làm nhiều việc cùng lúc" của phần lớn người là chuyển nhanh qua lại giữa các việc, và mỗi lần chuyển đều tốn thời gian; trong một loạt thí nghiệm năm 2001, phí chuyển việc tăng khi quy tắc của việc phức tạp hơn. Trong một thí nghiệm lái xe mô phỏng kèm một bài trí nhớ khó với 200 người, đa số giảm hiệu suất rõ rệt; chỉ 2,5% không giảm chút nào.'' | trang: cũ None → mới ''kham-pha/chu-y-tri-giac/da-nhiem-so'''
+nguon:
+  - id: rubinstein2001
+    ten: Rubinstein và cộng sự (2001). Executive control of cognitive processes in task switching
+    link: https://doi.org/10.1037/0096-1523.27.4.763
+  - id: watson2010
+    ten: 'Watson và cộng sự (2010). Supertaskers: Profiles in extraordinary multitasking ability'
+    link: https://doi.org/10.3758/PBR.17.4.479
+nhan_dinh:
+  - id: nhan
+    cau: 'Phần lớn mọi người làm nhiều việc cùng lúc mà không kém hiệu quả: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - watson2010
+      - rubinstein2001
+    co_so:
+      - watson2010
+      - rubinstein2001
+    ly_do: 'Khớp trang nhà da-nhiem-so (đã khóa): khung vung-chac[chuyển đổi nhiệm vụ thường tốn phí]; "với việc làm cùng lúc hai việc đòi hỏi chú ý, đa số người giảm hiệu suất; chỉ khoảng 2,5% ..."'
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/PBR.17.4.479", "https://doi.org/10.1371/journal.pone.0054402", "https://doi.org/10.1037/0096-1523.27.4.763" ]
+    luot_2_ghi_chu: "Chỗ khó: ba nghiên cứu thực nghiệm cùng chiều (Watson & Strayer 2010, Sanbonmatsu 2013, Rubinstein 2001), chưa mở phân tích tổng hợp; đạt mức tối thiểu của 'bác bỏ' cho câu 'phần lớn làm nhiều việc mà không kém'. Đã tìm: Europe PMC, PubMed, OpenAlex."
+  - id: g1
+    cau: Chuyển qua lại giữa các việc tốn thời gian; phí chuyển việc tăng khi quy tắc phức tạp hơn.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - rubinstein2001
+    trich: Task alternation yielded switching-time costs that increased with rule complexity but decreased with task cuing.
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "tốn thời gian và làm tăng lỗi, nhất là với việc phức tạp": tóm tắt chỉ nói thời gian; bỏ "tăng lỗi".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/0096-1523.27.4.763" ]
+  - id: g2
+    cau: '200 người lái xe mô phỏng kèm bài OSPAN: đa số giảm hiệu suất; 2,5% không giảm.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - watson2010
+    trich: We tested 200 participants in a high-fidelity driving simulator ... auditory version of the operation span (OSPAN) task. Whereas the vast majority of participants showed significant performance decrements ... 2.5% of the sample showed absolutely no performance decrements
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.3758/PBR.17.4.479" ]
+  - id: g3
+    cau: (Đã bỏ) Cảm giác "mình làm nhiều việc cùng lúc rất giỏi" thường không khớp với kết quả đo được.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon: []
+    trich: ''
+    ket_qua: da-bo
+    ghi_chu: Không có nguồn trong thẻ (Sanbonmatsu 2013 ở trang nhà chưa có bản ghi nguồn); bỏ cho gọn.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1371/journal.pone.0054402" ]
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/chu-y-tri-giac/da-nhiem-so
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: 'Trang nhà đã khóa, có cả Watson & Strayer 2010. Review (Claude Opus 5.5, 17/11/2026): kham-pha/chu-y-tri-giac/da-nhiem-so có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung vung-chac[chuyển đổi nhiệm vụ thường tốn phí] và mục "Đừng nhầm bận rộn với hiệu quả".'
+    review: dung

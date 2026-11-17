@@ -1,0 +1,73 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/game-bao-luc#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/game-bao-luc
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:4f4a0651f139781c3c9e125639cf0218e992e73e7390da9a7a3945bc122043a6
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Sonnet (agent riêng, phần b: plans/lam-lai/bao-cao/d8-l3-luot-2-b.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Phân tích tổng hợp 24 nghiên cứu theo dõi theo thời gian với hơn 17.000 trẻ em (2018) thấy chơi game bạo lực liên quan đến hành vi hung hăng sau đó, nhưng mức độ rất nhỏ (β ≈ 0,08–0,11). Một nhóm nhà nghiên cứu khác cho rằng mối liên hệ này bị thổi phồng và không có ý nghĩa thực tế. Bằng chứng hiện tại: có tín hiệu nhỏ, chưa đủ để kết luận game “gây” bạo lực.'' → mới ''Phân tích tổng hợp 24 nghiên cứu theo dõi theo thời gian với hơn 17.000 trẻ em và thiếu niên (2018) thấy chơi game bạo lực đi cùng hành vi gây hấn về sau, nhưng ở mức nhỏ (β ≈ 0,08–0,11). Các nhà nghiên cứu khác, như Ferguson và Kilburn (2010), cho rằng những hiệu ứng như vậy bị ước lượng quá cao và quá yếu để có ý nghĩa thực tế. Bằng chứng hiện tại: có tín hiệu nhỏ, chưa đủ để kết luận game "gây" bạo lực.'' | nguon: cũ [''prescott2018''] → mới [''prescott2018'', ''ferguson2010''] | trang: cũ None → mới ''thi-nghiem/bandura'''
+nguon:
+  - id: prescott2018
+    ten: Prescott và cộng sự (2018). Metaanalysis of the relationship between violent video game play and physical aggression over time
+    link: https://doi.org/10.1073/pnas.1611617114
+  - id: ferguson2010
+    ten: 'Ferguson và cộng sự (2010). Much ado about nothing: The misestimation and overinterpretation of violent video game effects in Eastern and Western nations: Comment on Anderson et al. (2010)'
+    link: https://doi.org/10.1037/a0018566
+nhan_dinh:
+  - id: nhan
+    cau: 'Chơi game bạo lực khiến trẻ hung hăng ngoài đời: đang tranh cãi.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: tranh-cai
+    nguon:
+      - prescott2018
+      - ferguson2010
+    co_so:
+      - prescott2018
+      - ferguson2010
+    ly_do: Phân tích tổng hợp nghiên cứu dọc thấy liên hệ nhỏ; phê bình (Ferguson & Kilburn 2010) cho rằng hiệu ứng bị thổi phồng. Trùng tranh luận được kể ở trang thi-nghiem/bandura (đã khóa).
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611617114", "https://doi.org/10.1037/a0018566" ]
+    luot_2_ghi_chu: "Chỗ khó: tổng hợp cùng chiều nhưng hiệu ứng nhỏ, tranh luận phương pháp."
+  - id: g1
+    cau: 'Prescott 2018: 24 nghiên cứu theo dõi, hơn 17.000 người tuổi 9–19; β 0,08–0,11.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - prescott2018
+    trich: The search strategy identified 24 studies with over 17,000 participants ... mean ages from 9 to 19 years ... [β = 0.113 ...] and random effects models [β = 0.106 ...] ... [β = 0.080 ...] and β = 0.078
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "hơn 17.000 trẻ em": mẫu gồm tuổi 9–19, thêm "và thiếu niên".'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1073/pnas.1611617114" ]
+    luot_2_ghi_chu: β 0,08–0,11 khớp (0,080 đến 0,113); tuổi là tuổi trung bình của các mẫu.
+  - id: g2
+    cau: Ferguson & Kilburn (2010) cho rằng các hiệu ứng như vậy bị ước lượng quá cao, quá yếu để có ý nghĩa thực tế.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - ferguson2010
+    trich: 'Trang thi-nghiem/bandura (đã khóa): "Ferguson và Kilburn (2010) phản biện ... làm phồng hiệu ứng; theo họ, ước lượng r = 0,15 vẫn chỉ là hiệu ứng yếu"'
+    ket_qua: da-sua
+    ghi_chu: Cũ "Một nhóm nhà nghiên cứu khác cho rằng mối liên hệ này bị thổi phồng" không có nguồn; Ferguson & Kilburn phê bình Anderson 2010, nên câu viết "những hiệu ứng như vậy".
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1037/a0018566" ]
+  - id: trang
+    cau: Bài liên quan của thẻ là thi-nghiem/bandura
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: 'Trang đã khóa kể tranh luận về trò chơi bạo lực (Anderson 2010, Ferguson & Kilburn 2010). Review (Claude Opus 5.5, 17/11/2026): thi-nghiem/bandura có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung tranh-cai[kết quả có suy ra được bạo lực truyền thông gây bạo lực thật không?].'
+    review: dung

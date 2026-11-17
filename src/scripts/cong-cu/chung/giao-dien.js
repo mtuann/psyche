@@ -71,6 +71,30 @@ export const loiRiengTu = () =>
 /** Khung cảnh báo trong công cụ (tiêu đề, các đoạn). */
 export const canhBao = (tieuDe, ...doan) => h('div', { class: 'pz-canh-bao' }, [h('p', { class: 'pz-canh-bao__tieu-de', text: tieuDe }), ...doan.map((d) => h('p', {}, [d]))]);
 
+/**
+ * Khung kết luận trong công cụ (D8-L2): `kieu` "tot" (viền xanh lá: làm đúng, không sập bẫy) hay "chu-y" (viền hồng: vừa
+ * sập bẫy, kết quả đáng chú ý). Không phải lời khen chê: chữ của khung nói điều vừa xảy ra.
+ */
+export const khungKetLuan = (kieu, tieuDe, ...doan) =>
+	h('div', { class: `pz-ket-luan pz-ket-luan--${kieu}` }, [h('p', { class: 'pz-ket-luan__tieu-de', text: tieuDe }), ...doan.map((d) => h('p', {}, [].concat(d)))]);
+
+/**
+ * Phím tắt trên document (D8-L2, từ bài học review D8-L1): bỏ qua khi có Ctrl, Alt, Meta, hay khi đang gõ vào ô nhập
+ * (input, textarea, select, contenteditable: ô tìm kiếm của trang…). `xuLy(phím chữ thường, sự kiện)` trả về true nếu đã
+ * dùng phím (thì chặn hành vi mặc định). Trả về hàm gỡ phím tắt.
+ */
+export function batPhimTat(xuLy) {
+	const nghe = (e) => {
+		if (e.ctrlKey || e.metaKey || e.altKey || dangGo(e.target)) return;
+		if (xuLy((e.key || '').toLowerCase(), e)) e.preventDefault();
+	};
+	document.addEventListener('keydown', nghe);
+	return () => document.removeEventListener('keydown', nghe);
+}
+
+/** Phần tử đang nhận phím là ô nhập chữ (phím là chữ, không phải phím tắt). */
+export const dangGo = (t) => t instanceof Element && (!!t.closest('input, textarea, select') || t.isContentEditable);
+
 /** Khối thu gọn trong công cụ: tiêu đề và danh sách ý. */
 export const thuGon = (tieuDe, y) => h('details', { class: 'pz-mo-them' }, [h('summary', { text: tieuDe }), h('ul', {}, y.filter(Boolean).map((x) => h('li', {}, [x])))]);
 

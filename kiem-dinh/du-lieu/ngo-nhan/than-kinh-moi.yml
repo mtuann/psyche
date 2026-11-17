@@ -1,0 +1,78 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/than-kinh-moi#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/than-kinh-moi
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:a276dd6683bbc734311036c417ef4f0f271fcf060dca609af02fade516387b66
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
+ghi_chu: 'chỗ khó: đổi nhãn Đã bị bác bỏ → Đang tranh cãi cho khớp trang the-duc-nao (đã khóa): khung tranh-cai[cơ chế BDNF ở người — và chuyện não người lớn có sinh tế bào thần kinh mới không]. Câu cũ "chứng minh ... mỗi ngày" mạnh hơn trang nhà. Đáp án trò chơi đổi từ Sai sang Còn tranh cãi. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). nhan: cũ ''bac-bo'' → mới ''tranh-cai'' | giai_thich: cũ ''Dùng phương pháp “xác định tuổi” tế bào bằng carbon-14 từ các vụ thử hạt nhân, nhóm nghiên cứu ở Viện Karolinska (2013) chứng minh hồi hải mã của người trưởng thành vẫn sinh tế bào thần kinh mới mỗi ngày, dù tốc độ giảm dần theo tuổi. Phát hiện này mới chắc chắn ở hồi hải mã — vùng liên quan đến trí nhớ — chứ chưa phải toàn bộ não.'' → mới ''Năm 2013, một nghiên cứu đo carbon-14 (từ các vụ thử hạt nhân) trong ADN tế bào hồi hải mã ước tính mỗi ngày có khoảng 700 tế bào thần kinh mới ở mỗi hồi hải mã người trưởng thành, giảm nhẹ theo tuổi. Nhưng chuyện này vẫn đang tranh luận: Sorrells và cộng sự (2018) không thấy tế bào thần kinh non ở người trưởng thành, còn Boldrini và cộng sự (2018) thấy chúng ở người 14–79 tuổi.'' | nguon: cũ [''spalding2013''] → mới [''spalding2013'', ''sorrells2018'', ''boldrini2018''] | trang: cũ None → mới ''kham-pha/co-so-sinh-hoc/the-duc-nao'''
+nguon:
+  - id: spalding2013
+    ten: Spalding và cộng sự (2013). Dynamics of hippocampal neurogenesis in adult humans
+    link: https://doi.org/10.1016/j.cell.2013.05.002
+  - id: sorrells2018
+    ten: Sorrells và cộng sự (2018). Human hippocampal neurogenesis drops sharply in children to undetectable levels in adults
+    link: https://doi.org/10.1038/nature25975
+  - id: boldrini2018
+    ten: Boldrini và cộng sự (2018). Human hippocampal neurogenesis persists throughout aging
+    link: https://doi.org/10.1016/j.stem.2018.03.015
+nhan_dinh:
+  - id: nhan
+    cau: 'Não người trưởng thành không sinh thêm tế bào thần kinh mới: đang tranh cãi.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: tranh-cai
+    nguon:
+      - spalding2013
+      - sorrells2018
+      - boldrini2018
+    co_so:
+      - spalding2013
+      - sorrells2018
+      - boldrini2018
+    ly_do: Bằng chứng chất lượng cao mâu thuẫn (Sorrells 2018 và Boldrini 2018); khớp trang nhà.
+    ket_qua: da-sua
+    ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ. Review (Claude Opus 5.5, 17/11/2026): đạt (Đang tranh cãi). Tóm tắt Spalding 2013 (Europe PMC): "700 new neurons are added in each hippocampus per day … modest decline during aging"; Sorrells 2018: "young neurons were not detected in the dentate gyrus" ở người lớn 18–77; Boldrini 2018: 14–79 tuổi, "thousands of immature neurons". Bằng chứng chất lượng cao mâu thuẫn: đúng chữ thước đo.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/29513649/", "https://doi.org/10.1016/j.stem.2018.03.015" ]
+  - id: g1
+    cau: 'Spalding 2013 (carbon-14 từ thử hạt nhân): khoảng 700 tế bào thần kinh mới mỗi ngày ở mỗi hồi hải mã người trưởng thành, giảm nhẹ theo tuổi.'
+    loai: so-lieu
+    truong:
+      - giai_thich
+    nguon:
+      - spalding2013
+    trich: measuring the concentration of nuclear-bomb-test-derived 14C in genomic DNA ... In adult humans, 700 new neurons are added in each hippocampus per day ... with a modest decline during aging
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "nhóm nghiên cứu ở Viện Karolinska (2013) chứng minh": bỏ "chứng minh" (trang nhà xếp tranh cãi), bỏ tên viện (chưa kiểm).'
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1016/j.cell.2013.05.002" ]
+  - id: g2
+    cau: Sorrells 2018 không thấy tế bào thần kinh non ở người trưởng thành; Boldrini 2018 thấy ở người 14–79 tuổi.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - sorrells2018
+      - boldrini2018
+    trich: 'Trang nhà (đã khóa): "Sorrells và cộng sự (2018) không thấy tế bào thần kinh non ở người trưởng thành, Boldrini và cộng sự (2018) thấy chúng ở người 14–79 tuổi"'
+    ket_qua: da-sua
+    ghi_chu: Câu mới theo trang nhà.
+    luot_2: dung
+    luot_2_nguon: [ "https://doi.org/10.1038/nature25975", "https://doi.org/10.1016/j.stem.2018.03.015" ]
+  - id: trang
+    cau: Bài liên quan của thẻ là kham-pha/co-so-sinh-hoc/the-duc-nao
+    loai: ve-site
+    truong:
+      - trang
+    ket_qua: dung
+    ghi_chu: 'Trang đã khóa, có khung tranh-cai về sinh tế bào thần kinh ở người lớn. Review (Claude Opus 5.5, 17/11/2026): kham-pha/co-so-sinh-hoc/the-duc-nao có trong trang.yml, đã khóa (khoa.json); dist/ngo-nhan/ hiện "Đọc thêm" trỏ đúng trang; trang bàn đúng ngộ nhận: khung tranh-cai[cơ chế BDNF ở người, và chuyện não người lớn có sinh tế bào thần kinh mới không].'
+    review: dung

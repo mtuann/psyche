@@ -1,0 +1,59 @@
+# Hồ sơ kiểm định thẻ ngộ nhận (D8-L3, lượt 1). Cấu trúc: plans/ben-vung/chuan-kiem-dinh.md mục 6. Khóa: node tools/khoa.mjs khoa du-lieu/ngo-nhan/ngu-it-da-quen#cap,giai_thich,khang_dinh,nguon,nhan,trang
+ban_ghi: ngo-nhan/ngu-it-da-quen
+muc: V3
+lan:
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l3
+    ma_bam: sha256:b12ccc58f181afe684e8de6ed2a5734eb5b5b956f95b3e4a778281977dcf3caa
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
+      review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l3-kiem-mau.yml), đạt, 17/11/2026
+ghi_chu: 'Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). giai_thich: cũ ''Thí nghiệm 14 ngày cho thấy nhóm ngủ 4–6 tiếng/đêm suy giảm nhận thức tích lũy dần, tương đương thức trắng 1–2 đêm — trong khi cảm giác buồn ngủ tự báo cáo gần như không tăng thêm. “Quen” chỉ là cảm giác; não thì không quen được.'' → mới ''Trong thí nghiệm 14 ngày, người chỉ được nằm giường 4 hoặc 6 tiếng mỗi đêm suy giảm nhận thức tích lũy dần, tới mức tương đương thức trắng tới 2 đêm, trong khi cảm giác buồn ngủ tự báo cáo chỉ tăng thêm chút ít sau mấy ngày đầu. "Quen" chỉ là cảm giác: người tham gia gần như không nhận ra mình đang suy giảm.'''
+nguon:
+  - id: vandongen2003
+    ten: 'Van Dongen và cộng sự (2003). The cumulative cost of additional wakefulness: Dose-response effects on neurobehavioral functions and sleep physiology from chronic sleep restriction and total sleep deprivation'
+    link: https://doi.org/10.1093/sleep/26.2.117
+nhan_dinh:
+  - id: nhan
+    cau: 'Ngủ 4–5 tiếng mỗi đêm là đủ, miễn là đã quen: đã bị bác bỏ.'
+    loai: nhan
+    truong:
+      - khang_dinh
+      - nhan
+    nhan: bac-bo
+    nguon:
+      - vandongen2003
+    co_so:
+      - vandongen2003
+    ly_do: Thí nghiệm ngẫu nhiên liều–đáp ứng có kiểm soát chặt (48 người).
+    ket_qua: dung
+    ghi_chu: 'chỗ khó: cơ sở chính là một thí nghiệm (48 người), chưa có phân tích tổng hợp trong hồ sơ.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/12683469/" ]
+  - id: g1
+    cau: 'Van Dongen 2003: nằm giường 4 hay 6 tiếng mỗi đêm trong 14 ngày gây suy giảm nhận thức tích lũy, tương đương tới 2 đêm thức trắng.'
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - vandongen2003
+    trich: randomization to one of three sleep doses (4 h, 6 h, or 8 h time in bed per night), which were maintained for 14 consecutive days ... chronic restriction of sleep to 6 h or less per night produced cognitive performance deficits equivalent to up to 2 nights of total sleep deprivation
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "nhóm ngủ 4–6 tiếng/đêm ... tương đương thức trắng 1–2 đêm": là thời gian nằm giường; nguồn nói "tới 2 đêm".'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/12683469/" ]
+  - id: g2
+    cau: Buồn ngủ tự báo cáo chỉ tăng thêm ít sau phản ứng ban đầu; người tham gia phần lớn không nhận ra mình suy giảm.
+    loai: phat-hien
+    truong:
+      - giai_thich
+    nguon:
+      - vandongen2003
+    trich: Subjective sleepiness ratings showed an acute response to sleep restriction but only small further increases on subsequent days ... Sleepiness ratings suggest that subjects were largely unaware of these increasing cognitive deficits
+    ket_qua: da-sua
+    ghi_chu: 'Cũ "não thì không quen được": thay bằng điều nguồn nói.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/12683469/" ]
