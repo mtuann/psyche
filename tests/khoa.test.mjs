@@ -145,7 +145,12 @@ test('luật của hồ sơ: trang Sức khỏe tâm thần cần chữ ký chuy
 		const kd = (nguoi) => kiemDinh(sk, { trang: { [sk]: 'sha256:x' } }, stringify({ tang: 'loi', nhan_dinh: [nd()], lan: [{ so: 1, ngay: '2026-11-16', nguoi }] }));
 		assert.equal(kd(cgTam).choChuyenGia, true);
 		assert.equal(kd({ ...cgTam, chuyen_gia: 'BS. X, 2027-01-05' }).choChuyenGia, false);
-		assert.equal(kd(NGUOI).choChuyenGia, false);
+		assert.equal(kd({ ...NGUOI, chuyen_gia: ' ' }).choChuyenGia, true);
+		const trong = hoSo(sk, 'loi', [nd()]);
+		trong.lan[0].nguoi = { ...NGUOI, chuyen_gia: ' ' };
+		assert.match(loiHoSo(trong, sk, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
+		trong.lan[0].nguoi.chuyen_gia = true;
+		assert.match(loiHoSo(trong, sk, goc).join(), /chỉ khóa khi chuyên gia đã đọc/);
 
 		const mr = 'kham-pha/tri-nho/phong-cach-hoc';
 		ghi(`src/content/docs/${mr}.md`, '---\ntitle: A\n---\n\nChữ.\n');

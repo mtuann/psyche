@@ -17,4 +17,4 @@ Chủ repo quyết (16/11/2026): đợt 7 làm xong nội dung thì cho lên sit
 
 ## Model
 
-Opus 5.5 (làm); review mã mức lớn (đụng khóa): Opus.
+Opus 5.5 (làm); review mã mức lớn (đụng khóa): Opus 5.5. Review thấy `chuyen_gia: " "` hay `true` (không có `cho_chuyen_gia`) vẫn khóa được mà không có dải: sửa, cả ba chỗ (`tools/khoa.mjs`, `src/kiem-dinh.mjs`, kiểm thử khung) dùng chung `coChu` (chuỗi có chữ); thêm kiểm thử. Khi 4 bài lên: thêm một bài vào `PSYCHE_TRANG` để axe kiểm dải.

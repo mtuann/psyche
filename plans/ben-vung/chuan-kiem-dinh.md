@@ -112,7 +112,7 @@ Bốn nhãn của site, từ trang "Cách đọc nhãn". Mỗi khung nhãn là m
 - Lượt 1 và lượt 2 dùng Opus. Nguồn bậc 2 về lâm sàng (ICD-11, hướng dẫn WHO, NICE, tổng quan hệ thống); tỉ lệ mắc ở Việt Nam theo nghiên cứu có bình duyệt hay cơ quan chính thức, ghi mốc.
 - Không viết điều gì như chẩn đoán ("nếu bạn có 3 dấu hiệu sau thì bạn bị…"), không khuyên dùng hay ngừng thuốc. Danh sách dấu hiệu luôn kèm "chỉ chuyên gia mới chẩn đoán được" và đường tới Hỗ trợ.
 - Đầu và cuối trang có lời dẫn tới Hỗ trợ; nói về tự hại theo hướng dẫn đưa tin an toàn (không mô tả cách thức, có thông tin trợ giúp).
-- Chuyên gia (do chủ repo chọn) đọc và ghi kết quả vào hồ sơ (`nguoi.chuyen_gia`, ngày). Chỉ khi hồ sơ có mục ấy trang mới được khóa (`tools/khoa.mjs` kiểm, D1.6); không cần cờ riêng trong trang.
+- Chuyên gia (do chủ repo chọn) đọc và ghi kết quả vào hồ sơ (`nguoi.chuyen_gia`, ngày). Chỉ khi hồ sơ có mục ấy, hay `nguoi.cho_chuyen_gia` (gạch dưới), trang mới được khóa (`tools/khoa.mjs` kiểm, D1.6); không cần cờ riêng trong trang.
 - **Đăng trước khi chuyên gia đọc** (chủ repo đồng ý 16/11/2026): lần kiểm định cuối ghi `nguoi.cho_chuyen_gia` (ai đồng ý, ngày) thay cho `nguoi.chuyen_gia`; trang khóa được sau đủ hai lượt, review và kiểm mẫu như mọi bài lõi, và hiện dải "Chưa qua rà soát chuyên môn" dưới tiêu đề, kèm link Hỗ trợ (`src/components/PageTitle.astro`, đọc từ hồ sơ nên không đổi mã băm). Khi chuyên gia đọc xong: không sửa chữ thì chỉ thêm `nguoi.chuyen_gia` vào lần cuối, dải tự mất ở lần build sau; có sửa chữ thì mở khóa (`node tools/khoa.mjs mo`), sửa, kiểm, ghi `nguoi.chuyen_gia` ở lần mới rồi khóa lại.
 
 ## 6. Hồ sơ

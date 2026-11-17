@@ -7,6 +7,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
+import { coChu } from '../src/kiem-dinh.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -183,7 +184,7 @@ test('bài Sức khỏe tâm thần chưa có chữ ký chuyên gia thì có d�
 	for (const f of htmlFiles.filter((f) => rel(f).startsWith('kham-pha/suc-khoe-tam-than/'))) {
 		const trang = rel(f).replace(/\/index\.html$/, '');
 		if (!KHOA_TRANG[trang]) continue; // bản xem: trang chưa khóa có dải "Chưa kiểm định"
-		const coChuyenGia = Boolean(parse(read(path.join(ROOT, 'kiem-dinh', `${trang}.yml`))).lan?.at(-1)?.nguoi?.chuyen_gia);
+		const coChuyenGia = coChu(parse(read(path.join(ROOT, 'kiem-dinh', `${trang}.yml`))).lan?.at(-1)?.nguoi?.chuyen_gia);
 		const dai = /<aside class="pz-cho-ra-soat"[^>]*>(?:(?!<\/aside>)[\s\S])*?href="[^"]*\/ho-tro\/"/.test(read(f));
 		if (coChuyenGia === dai) sai.push(`${trang}: ${coChuyenGia ? 'đã có chuyên gia mà còn dải' : 'thiếu dải'}`);
 	}

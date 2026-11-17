@@ -4,10 +4,13 @@
 // D1.6) và hồ sơ kiem-dinh/<đường dẫn trang>.yml (plans/ben-vung/chuan-kiem-dinh.md mục 6).
 import { parse } from 'yaml';
 
+/** Chữ ký trong hồ sơ (nguoi.chuyen_gia, nguoi.cho_chuyen_gia…): chuỗi có chữ; " ", true, null đều không tính. */
+export const coChu = (x) => typeof x === 'string' && x.trim() !== '';
+
 /**
- * null khi trang chưa khóa; còn không thì { ngay, nhanDinh, tang, choChuyenGia }: ngày của lần kiểm định gần nhất
- * ("2026-11-02"), số nhận định trong hồ sơ, tầng lúc khóa; choChuyenGia: lần cuối có nguoi.cho_chuyen_gia mà chưa có
- * nguoi.chuyen_gia (bài Sức khỏe tâm thần đăng trước khi chuyên gia đọc, chuan-kiem-dinh.md mục 5). Trang khóa mà hồ sơ không có nhận định (trang chủ tạm, trang 404) thì nhanDinh là
+ * null khi trang chưa khóa; còn không thì { ngay, nhanDinh, tang, choChuyenGia }: ngày của lần kiểm định gần
+ * nhất ("2026-11-02"), số nhận định trong hồ sơ, tầng lúc khóa; choChuyenGia: lần cuối chưa có chữ ký chuyên
+ * gia (nguoi.chuyen_gia; bài Sức khỏe tâm thần đăng trước khi chuyên gia đọc, chuan-kiem-dinh.md mục 5). Trang khóa mà hồ sơ không có nhận định (trang chủ tạm, trang 404) thì nhanDinh là
  * 0: không có gì để kiểm, không hiện dòng trạng thái.
  * @param {string} trang đường dẫn trang, như "thi-nghiem/asch" (trang mục lục: "thi-nghiem/index")
  * @param {{ trang?: Record<string, string> } | undefined} khoa nội dung kiem-dinh/khoa.json
@@ -18,7 +21,8 @@ export function kiemDinh(trang, khoa, hoSo) {
 	const hs = (hoSo && parse(hoSo)) || {};
 	const cuoi = hs.lan?.at(-1);
 	const ngay = cuoi?.ngay;
-	const choChuyenGia = Boolean(cuoi?.nguoi?.cho_chuyen_gia && !cuoi?.nguoi?.chuyen_gia);
+	// không có chữ ký chuyên gia thì dải hiện (trang không phải Sức khỏe tâm thần thì PageTitle.astro bỏ qua)
+	const choChuyenGia = !coChu(cuoi?.nguoi?.chuyen_gia);
 	return { ngay: ngay ? String(ngay) : null, nhanDinh: (hs.nhan_dinh ?? []).length, tang: hs.tang ?? null, choChuyenGia };
 }
 
