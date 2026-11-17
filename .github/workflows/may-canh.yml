@@ -1,0 +1,158 @@
+name: Máy canh hằng tuần
+
+# Đợt 9 (plans/ben-vung/README.md mục 4.7). Chạy mỗi thứ Hai lúc 02:00 UTC (9:00 sáng giờ Việt Nam), hoặc bấm chạy tay
+# trong tab Actions. Phỏng theo ../opus/.github/workflows/ra-lai.yml và kiem-link.yml (D8-L1 của opus) và links.yml của site
+# cũ. Bốn việc, mỗi việc một nhãn issue và giữ đúng một issue mở cho nhãn ấy: có việc thì mở issue, hoặc cập nhật issue đang
+# mở thay vì mở thêm; lần sau hết việc thì issue tự đóng. Không đăng gì, không chặn deploy.
+#   rut-bai    DOI của nguồn bị rút, bày tỏ quan ngại hay đính chính (Crossref; tools/may-canh.mjs rut-bai)
+#   thoi-su    khẳng định thời sự của mục đã khóa có het_han tới hạn hay còn dưới 30 ngày (tools/may-canh.mjs thoi-su)
+#   kiem-lai   trang có kiem_lai_truoc (src/data/trang.yml) tới hạn hay còn dưới 30 ngày (tools/may-canh.mjs kiem-lai)
+#   link-hong  link ra ngoài hỏng trong trang và dữ liệu (lychee)
+# Nhắc việc hằng quý (Hỗ trợ, Nghiên cứu mới) ở ho-tro-quarterly.yml.
+# GitHub tắt lịch chạy sau 60 ngày repo không có hoạt động: khi đó bật lại ở tab Actions.
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: may-canh
+  cancel-in-progress: false
+
+jobs:
+  may-canh:
+    name: Máy canh (${{ matrix.viec }})
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - viec: rut-bai
+            tieu_de: 'Nguồn bị rút, bày tỏ quan ngại hay đính chính'
+            het: 'không còn thông báo rút bài, quan ngại hay đính chính nào chưa xét'
+          - viec: thoi-su
+            tieu_de: 'Khẳng định thời sự tới hạn'
+            het: 'không còn khẳng định thời sự nào tới hạn'
+          - viec: kiem-lai
+            tieu_de: 'Trang tới hạn xem lại'
+            het: 'không còn trang nào tới hạn xem lại'
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      # script chỉ cần gói yaml: bỏ bước cài trình duyệt và các script sau khi cài
+      - run: npm ci --ignore-scripts
+
+      # Mã thoát: 0 không có việc, 1 có việc, 2 lỗi script hay dữ liệu, 3 (rut-bai) không có phát hiện nhưng có DOI không
+      # hỏi được vì lỗi mạng (không mở, không đóng issue). Gọi Crossref chỉ với User-Agent của dự án, không email.
+      # OPENALEX_API_KEY (secret, tùy chọn): có thì hỏi thêm cờ is_retracted của OpenAlex (chỉ là tín hiệu).
+      - name: Chạy máy canh
+        id: canh
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          set +e
+          node tools/may-canh.mjs ${{ matrix.viec }} --ra issue.md
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Tìm issue đang mở
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: echo "number=$(gh issue list --repo "$GITHUB_REPOSITORY" --label ${{ matrix.viec }} --state open --json number --jq '.[0].number // empty')" >> "$GITHUB_OUTPUT"
+
+      - name: Mở hoặc cập nhật issue nếu có việc
+        if: steps.canh.outputs.exit_code == '1' && hashFiles('issue.md') != ''
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: ${{ matrix.tieu_de }}
+          content-filepath: ./issue.md
+          labels: ${{ matrix.viec }}
+          issue-number: ${{ steps.issue.outputs.number }}
+
+      - name: Đóng issue khi hết việc
+        if: steps.canh.outputs.exit_code == '0' && steps.issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue close "${{ steps.issue.outputs.number }}" --repo "$GITHUB_REPOSITORY" --comment "Lần kiểm tra tự động ngày $(date -u +%d/%m/%Y): ${{ matrix.het }}."
+
+      # phòng hờ: mã 1 ("có việc") mà không có issue.md thì script đã hỏng giữa chừng (script tự bắt lỗi và thoát 2, nhưng
+      # Node cũng thoát 1 khi có lỗi chưa bắt): làm hỏng job thay vì xanh mà không có issue
+      - name: Có việc mà không có nội dung issue
+        if: steps.canh.outputs.exit_code == '1' && hashFiles('issue.md') == ''
+        run: |
+          echo "tools/may-canh.mjs ${{ matrix.viec }} thoát với mã 1 mà không ghi issue.md: script hỏng"
+          exit 1
+
+      - name: Script hỏng hay mạng hỏng
+        if: steps.canh.outputs.exit_code != '0' && steps.canh.outputs.exit_code != '1'
+        run: |
+          echo "tools/may-canh.mjs ${{ matrix.viec }} thoát với mã ${{ steps.canh.outputs.exit_code }} (2: lỗi script hay dữ liệu; 3: lỗi mạng khi hỏi Crossref, lần sau chạy lại)"
+          exit 1
+
+  link-hong:
+    name: Máy canh (link-hong)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Kiểm tra link ra ngoài
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Chỉ kiểm link http(s) trong trang (src/content/docs) và dữ liệu (src/data: url của nguồn). Link nội bộ đã được
+          # tests/link.test.mjs kiểm trên bản build ở mỗi lần push.
+          # --base-url: link nội bộ trong Markdown viết /psyche/… (gốc site); gắn gốc https://mtuann.github.io/ thì chúng
+          # thành link của chính site, bị luật --exclude của chính site bỏ qua.
+          # 403 và 429: nhiều trang báo, nhà xuất bản chặn robot hoặc giới hạn tần suất; chấp nhận để tránh báo lỗi giả, link
+          # hỏng thật thường trả về 404. Bỏ qua chính site và repo (link nội bộ đã kiểm ở bản build).
+          args: >-
+            --no-progress
+            --base-url https://mtuann.github.io/
+            --max-retries 3
+            --timeout 30
+            --scheme https
+            --scheme http
+            --accept "100..=103,200..=299,403,429"
+            --exclude "^https://mtuann\.github\.io/psyche/"
+            --exclude "^https://github\.com/mtuann/psyche(/|$)"
+            "src/content/docs/**/*.md"
+            "src/data/*.yml"
+          output: ./lychee/out.md
+          fail: false
+
+      - name: Tìm issue link hỏng đang mở
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: echo "number=$(gh issue list --repo "$GITHUB_REPOSITORY" --label link-hong --state open --json number --jq '.[0].number // empty')" >> "$GITHUB_OUTPUT"
+
+      # Mã thoát của lychee: 0 không có link hỏng; 2 có link hỏng (mở issue); 1 hay 3 là lỗi chạy hay lỗi cấu hình, không
+      # phải link hỏng: làm hỏng job thay vì mở issue
+      - name: Lychee hỏng
+        if: steps.lychee.outputs.exit_code != 0 && steps.lychee.outputs.exit_code != 2
+        run: echo "lychee thoát với mã ${{ steps.lychee.outputs.exit_code }} (lỗi chạy hay lỗi cấu hình)" && exit 1
+
+      - name: Mở hoặc cập nhật issue nếu có link hỏng
+        if: steps.lychee.outputs.exit_code == 2 && hashFiles('lychee/out.md') != ''
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: 'Link hỏng'
+          content-filepath: ./lychee/out.md
+          labels: link-hong
+          issue-number: ${{ steps.issue.outputs.number }}
+
+      - name: Đóng issue khi không còn link hỏng
+        if: steps.lychee.outputs.exit_code == 0 && steps.issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close "${{ steps.issue.outputs.number }}" --repo "$GITHUB_REPOSITORY" --comment "Lần kiểm tra tự động ngày $(date -u +%d/%m/%Y) không còn link hỏng."
