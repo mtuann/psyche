@@ -22,10 +22,6 @@ hero:
       variant: secondary
 ---
 
-:::note[Đang làm lại]
-Psyche đang được làm lại; từng phần sẽ lên sau khi được kiểm chứng lại từ đầu.
-:::
-
 ## Thử với chính bạn
 
 ::cong-cu-noi-bat

@@ -30,6 +30,15 @@ lan:
       luot_2: "không cần: chỉ đổi câu về chính site (ve-site), không có nhận định cần nguồn ngoài; các nhận định khác giữ kết quả của lần trước"
       review: "Claude Opus 5.5 (người gộp, 17/11/2026): kiểm trên bản build (không còn link psyche-zero, dải ở bài Sức khỏe tâm thần), npm test và kiểm thử trình duyệt"
       kiem_mau: chủ repo quyết bỏ link sang site cũ (17/11/2026) và đăng trước bài Sức khỏe tâm thần (16/11/2026); lần này chỉ đổi câu về chính site theo hai quyết định ấy
+  - so: 4
+    ngay: 2026-11-17
+    nhanh: mo/xong-lam-lai
+    ma_bam: sha256:df271e74e96be8796f47827d47c0227bdf95f625aa832fba6257a2da570910de
+    nguoi:
+      luot_1: "Claude Opus 5.5 (người gộp, mo/xong-lam-lai, 17/11/2026): bỏ hộp «Đang làm lại» (nhận định n4: da-bo)"
+      luot_2: "không cần: chỉ đổi câu về chính site (ve-site), không có nhận định cần nguồn ngoài"
+      review: "Claude Opus 5.5 (người gộp, 17/11/2026): kiểm trên bản build, npm test; 106/106 trang cũ cùng đường dẫn theo plans/lam-lai/doi-chieu.md"
+      kiem_mau: "chủ repo duyệt bỏ lời 'đang làm lại' ở 404 và trang chủ khi đợt 9 xong (17/11/2026)"
 nguon: []
 nhan_dinh:
   - id: n1
@@ -53,8 +62,8 @@ nhan_dinh:
   - id: n4
     cau: Psyche đang được làm lại; từng phần sẽ lên sau khi được kiểm chứng lại từ đầu.
     loai: ve-site
-    ket_qua: da-sua
-    ghi_chu: 'Lần 3 (mo/bo-link-site-cu, 17/11/2026): bỏ vế "bản cũ vẫn đọc được ở mtuann.github.io/psyche-zero": repo cũ đã chuyển riêng tư, site cũ trả 404 (kiểm 17/11/2026); chủ repo chọn bỏ link. Vế còn lại đúng (plans/lam-lai/README.md: đợt 9 chưa xong). plans/lam-lai/README.md (Quyết định: site cũ chạy nguyên trong lúc làm lại; luật 1: chỉ trang đã khóa lên). Câu hết đúng khi đợt cuối chuyển hết trang: đổi lúc đó. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. plans/lam-lai/README.md (site cũ chạy nguyên; chỉ trang đã khóa lên). Link mtuann.github.io/psyche-zero/ đúng. Câu phải đổi khi chuyển xong.'
+    ket_qua: da-bo
+    ghi_chu: 'Lần 4 (mo/xong-lam-lai, 17/11/2026): bỏ cả hộp "Đang làm lại": đợt 9 xong, 106/106 trang cũ đã lên và khóa (plans/lam-lai/doi-chieu.md); chủ repo duyệt bỏ 17/11/2026. Lần 3 (mo/bo-link-site-cu, 17/11/2026): bỏ vế "bản cũ vẫn đọc được ở mtuann.github.io/psyche-zero": repo cũ đã chuyển riêng tư, site cũ trả 404 (kiểm 17/11/2026); chủ repo chọn bỏ link. Vế còn lại đúng (plans/lam-lai/README.md: đợt 9 chưa xong). plans/lam-lai/README.md (Quyết định: site cũ chạy nguyên trong lúc làm lại; luật 1: chỉ trang đã khóa lên). Câu hết đúng khi đợt cuối chuyển hết trang: đổi lúc đó. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. plans/lam-lai/README.md (site cũ chạy nguyên; chỉ trang đã khóa lên). Link mtuann.github.io/psyche-zero/ đúng. Câu phải đổi khi chuyển xong.'
     review: dung
   - id: n5
     cau: 'Ba khối của trang chủ (Thử với chính bạn, Mới kiểm chứng, Theo lĩnh vực) sinh từ dữ liệu: công cụ có trong bản build, sáu bài mới khóa gần nhất, 14 thẻ lĩnh vực.'
@@ -94,6 +103,9 @@ mo_khoa:
   - ngay: 2026-11-17
     nhanh: mo/bo-link-site-cu
     ly_do: "Bỏ link sang Psyche Zero (repo cũ đã chuyển riêng tư, site cũ trả 404; chủ repo chọn bỏ link, 17/11/2026); cach-kiem-chung: câu về bài Sức khỏe tâm thần theo quyết định đăng trước khi chuyên gia đọc (16/11/2026)"
+  - ngay: 2026-11-17
+    nhanh: mo/xong-lam-lai
+    ly_do: "Đợt 9 xong: bỏ hộp 'Đang làm lại' (chủ repo duyệt 17/11/2026)"
 doi_chu:
   - cu: 'tagline: "...mức độ chắc chắn của từng kết luận."'
     moi: '"...của các kết luận chính."'
