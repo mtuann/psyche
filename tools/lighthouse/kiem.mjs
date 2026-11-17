@@ -22,6 +22,9 @@ const mau = trangMau(DIST);
 const TRANG = process.env.LH_TRANG ? process.env.LH_TRANG.split(',') : [...mau.filter((t) => t !== '404.html'), ...mau.filter((t) => t === '404.html')].slice(0, 3);
 const LAN = Number(process.env.LH_LAN || 3);
 const NGUONG = { perf: 95, a11y: 100, bp: 100, seo: 100 };
+// Ngoại lệ của luật 7 (chủ repo quyết 17/11/2026): Sách in gom mọi bài đã khóa vào một trang để in (vài MB HTML), nên
+// hiệu năng trên điện thoại không thể đạt 95; vẫn đo và in điểm, nhưng không chặn. Trợ năng, thực hành tốt, SEO vẫn 100.
+const MIEN_HIEU_NANG = new Set(['sach/']);
 const TEN = { perf: 'hiệu năng', a11y: 'trợ năng', bp: 'thực hành tốt', seo: 'SEO' };
 
 const trungVi = (a) => [...a].sort((x, y) => x - y)[Math.floor(a.length / 2)];
@@ -83,7 +86,7 @@ try {
 			`| ${trang || '(trang chủ)'} | ${tv('perf')} (${lan.map((x) => x.perf).join('/')}) | ${tv('a11y')} | ${tv('bp')} | ${tv('seo')} | ` +
 				`${giay(tv('fcp'))} | ${giay(tv('lcp'))} | ${Math.round(tv('tbt'))} ms | ${tv('cls').toFixed(3).replace('.', ',')} | ${Math.round(tv('tai') / 1024)} KiB |`,
 		);
-		for (const [k, n] of Object.entries(NGUONG)) if (tv(k) < n) loi.push(`${trang || '(trang chủ)'}: ${TEN[k]} ${tv(k)}, cần từ ${n}`);
+		for (const [k, n] of Object.entries(NGUONG)) if (tv(k) < n && !(k === 'perf' && MIEN_HIEU_NANG.has(trang))) loi.push(`${trang || '(trang chủ)'}: ${TEN[k]} ${tv(k)}, cần từ ${n}`);
 	}
 } finally {
 	don();
