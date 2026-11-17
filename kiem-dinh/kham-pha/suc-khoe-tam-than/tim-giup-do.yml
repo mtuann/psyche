@@ -1,0 +1,556 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/suc-khoe-tam-than/tim-giup-do
+trang: src/content/docs/kham-pha/suc-khoe-tam-than/tim-giup-do.md
+nguon_cu: ../psyche-zero/docs/kham-pha/suc-khoe-tam-than/tim-giup-do.md
+tang: loi
+muc: V3
+lan:
+- so: 1
+  ngay: null
+  nhanh: moi/d7-l1
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D7-L1, 16/11/2026; không dùng agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+    chuyen_gia: null
+nguon:
+- id: apa-anx
+  ten: 'American Psychiatric Association, What Are Anxiety Disorders? (psychiatry.org, bác sĩ duyệt 5/2026; dẫn DSM-5-TR): toàn văn, đọc 16/11/2026'
+  link: https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+  toan_van: true
+- id: apa-dep
+  ten: 'American Psychiatric Association, What Is Depression? (psychiatry.org, bác sĩ duyệt 4/2024; tài liệu chính thức của APA tóm DSM-5-TR cho người đọc): toàn văn, đọc 16/11/2026'
+  link: https://www.psychiatry.org/patients-families/depression/what-is-depression
+  toan_van: true
+- id: who-dep-2026
+  ten: 'WHO, Depressive disorder (depression), tờ thông tin cập nhật 11/9/2026: toàn văn, đọc 16/11/2026'
+  link: https://www.who.int/news-room/fact-sheets/detail/depression
+  toan_van: true
+- id: nhs-tt
+  ten: 'NHS (Anh), NHS talking therapies for anxiety and depression (duyệt 5/11/2025): toàn văn, đọc 16/11/2026'
+  link: https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/
+  toan_van: true
+- id: icd11-cddr
+  ten: 'WHO (2024), Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR), ISBN 9789240077263: toàn văn (PDF 852 trang tải từ IRIS của WHO qua trang ấn phẩm; số trang in = số trang PDF trừ 18). Giai đoạn trầm cảm tr. 212–214; 6A70 tr. 244; 6B00 tr. 266–267; 6B01 tr. 271–272; 6B04 tr. 284–285'
+  link: https://www.who.int/publications/i/item/9789240077263
+  toan_van: true
+- id: paho-living
+  ten: 'WHO/PAHO (2021), Living with someone with depression? (tờ thông tin Ngày Sức khỏe tâm thần thế giới): toàn văn (PDF 1 trang)'
+  link: https://www.paho.org/sites/default/files/2021-10/WMHD-2_living_with_someone_with_depression-2021.pdf
+  toan_van: true
+- id: healthdirect-psy
+  ten: 'Healthdirect Australia, Psychiatrists vs psychologists: toàn văn, đọc 16/11/2026'
+  link: https://www.healthdirect.gov.au/psychiatrists-vs-psychologists
+  toan_van: true
+- id: tt26-2025
+  ten: 'Thông tư 26/2025/TT-BYT về đơn thuốc và kê đơn thuốc hóa dược, sinh phẩm, Điều 2 (LuatVietnam): toàn văn, đọc 16/11/2026'
+  link: https://luatvietnam.vn/y-te/thong-tu-26-2025-tt-byt-quy-dinh-ke-don-thuoc-hoa-duoc-sinh-pham-tai-co-so-kham-chua-benh-404246-d1.html
+  toan_van: true
+- id: luat-kbcb-d26
+  ten: 'Luật Khám bệnh, chữa bệnh số 15/2023/QH15, Điều 26 (Hệ thống pháp luật): toàn văn điều luật, đọc 16/11/2026; hiệu lực 01/01/2024'
+  link: https://hethongphapluat.com/luat-kham-benh-chua-benh-2023/dieu-26
+  toan_van: true
+- id: nice-ng222
+  ten: 'NICE (2022), Depression in adults: treatment and management (NG222), chương Recommendations: toàn văn, đọc 16/11/2026'
+  link: https://www.nice.org.uk/guidance/ng222/chapter/Recommendations
+  toan_van: true
+- id: healthdirect-couns
+  ten: 'Healthdirect Australia, Counsellors and counselling: toàn văn, đọc 16/11/2026'
+  link: https://www.healthdirect.gov.au/counsellors-and-counselling
+  toan_van: true
+- id: bdi-consult
+  ten: 'Black Dog Institute, What to expect from a mental health consultation (tờ thông tin, 2022): toàn văn (PDF 2 trang)'
+  link: https://blackdoginstitute.org.au/wp-content/uploads/2022/08/What-to-expect-from-a-mental-health-consultation-fact-sheet.pdf
+  toan_van: true
+- id: luat-kbcb-d10
+  ten: 'Luật Khám bệnh, chữa bệnh số 15/2023/QH15, Điều 10 (Hệ thống pháp luật): toàn văn điều luật, đọc 16/11/2026'
+  link: https://hethongphapluat.com/luat-kham-benh-chua-benh-2023/dieu-10
+  toan_van: true
+- id: apa-dict
+  ten: 'APA Dictionary of Psychology: mục psychotherapy, cognitive therapy, cognitive triad, automatic thoughts, psychodynamic psychotherapy, client-centered therapy: toàn văn, đọc 16/11/2026'
+  link: https://dictionary.apa.org/
+  toan_van: true
+- id: ghio2014
+  ten: 'Ghio, Gotelli, Marcenaro, Amore & Natta (2014), J Affect Disord 152–154, 45–51: tóm tắt (Europe PMC, PMID 24183486)'
+  link: https://doi.org/10.1016/j.jad.2013.10.002
+  toan_van: false
+- id: who-anx-2026
+  ten: 'WHO, Anxiety disorders, tờ thông tin cập nhật 15/9/2026: toàn văn, đọc 16/11/2026'
+  link: https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  toan_van: true
+- id: cuijpers2023
+  ten: 'Cuijpers, Miguel, Harrer, Plessen, Ciharova, Ebert & Karyotaki (2023), World Psychiatry 22(1), 105–115: toàn văn (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; PMC và Wiley chặn máy)'
+  link: https://doi.org/10.1002/wps.21069
+  toan_van: true
+- id: carpenter2018
+  ten: 'Carpenter, Andrews, Witcraft, Powers, Smits & Hofmann (2018), Depress Anxiety 35(6), 502–514: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1002/da.22728
+  toan_van: false
+- id: cipriani2018
+  ten: 'Cipriani và cộng sự (2018), Lancet 391(10128), 1357–1366: tóm tắt (Europe PMC, PMID 29477251)'
+  link: https://doi.org/10.1016/S0140-6736(17)32802-7
+  toan_van: false
+- id: atlas-vnm-2020
+  ten: 'WHO (2021), Mental Health Atlas 2020 country profile: Viet Nam: PDF 3 trang, đọc 16/11/2026; biểu đồ ''Mental health workers per 100 000 population, 2014 and 2020'' ghi 3.91 và 4.16 (chữ trích từ PDF lẫn thứ tự, nên đọc theo biểu đồ)'
+  link: https://www.who.int/publications/m/item/mental-health-atlas-vnm-2020-country-profile
+  toan_van: true
+- id: ngo2014
+  ten: 'Ngo, Weiss, Lam, Dang, Nguyen & Nguyen (2014), J Cogn Psychother 28(3), 156–167: tóm tắt (Europe PMC, PMC4283138)'
+  link: https://doi.org/10.1891/0889-8391.28.3.156
+  toan_van: false
+nhan_dinh:
+- id: n1
+  cau: 'Mô tả: dấu hiệu nên tìm người có chuyên môn, các vai trò bác sĩ tâm thần, nhà tâm lý lâm sàng, tham vấn viên khác nhau thế nào, buổi gặp đầu tiên thường diễn ra ra sao.'
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Câu mô tả nội dung của chính trang; đã kiểm trên trang (các mục tương ứng có). Mô tả cũ có "Bản nháp:"; bỏ (dải chờ rà soát làm ở khung trang).
+- id: n2
+  cau: 'Hộp đầu trang: nếu đang gặp nguy hiểm ngay thì xem trang Hỗ trợ (số cấp cứu, đường dây đã kiểm chứng); bài không dùng để tự chẩn đoán, chỉ người có chuyên môn mới chẩn đoán được.'
+  loai: lam-sang
+  nguon:
+  - apa-anx
+  - apa-dep
+  trich: A diagnosis is made by a qualified health professional. [APA anxiety]; To diagnose depression, a healthcare professional will conduct a thorough diagnostic evaluation [APA depression]
+  vi_tri: APA
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (hộp warning): "Bản nháp đang chờ rà soát chuyên môn. Bài viết này chưa được người có chuyên môn đọc lại…". Như hồ sơ tram-cam n2. Vế "trang Hỗ trợ có số cấp cứu…" là câu về site: đã kiểm trên src/content/docs/ho-tro/index.md.'
+- id: n3
+  cau: Ví dụ đau răng là ví dụ giả định của chúng tôi.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: ghi rõ trên trang. Đã kiểm.'
+- id: n4
+  cau: Với sức khỏe tâm thần, nhiều người chờ đến khi không chịu nổi mới tìm người giúp; WHO ghi ngay ở các nước thu nhập cao, chỉ khoảng một phần ba người bị trầm cảm được điều trị.
+  loai: so-lieu
+  nguon:
+  - who-dep-2026
+  trich: In high-income countries, only about one third of people with depression receive mental health treatment (3). Barriers to effective care include a lack of investment in mental health care, lack of trained health care providers and social stigma
+  vi_tri: WHO Depression, Overview (dẫn Evans-Lacko 2018)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Với sức khỏe tâm thần, đa số chúng ta cũng hành xử y hệt: chờ đến khi không chịu nổi mới tìm người giúp. Nhưng cũng như răng, tâm trí càng được can thiệp sớm thì thường càng đỡ vất vả." Bỏ "đa số" (không nguồn); thay bằng số của WHO; ý "can thiệp sớm" đưa vào khung nhãn (n25) với nguồn.'
+- id: n5
+  cau: Không có bài kiểm tra nào trên trang này, và Psyche không làm công cụ tự chẩn đoán.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm: trang không có ::cong-cu; trang Hỗ trợ (đã khóa) ghi "Psyche không có và sẽ không có công cụ tự chẩn đoán". Chữ cũ "Psyche Zero" đổi thành "Psyche" (tên site mới); bỏ "và sẽ không bao giờ có" (lời hứa về tương lai, đã có ở trang Hỗ trợ).'
+- id: n6
+  cau: Nếu điều gì đang diễn ra với mình, kéo dài nhiều tuần, ảnh hưởng cuộc sống thì tìm người có chuyên môn trò chuyện là hợp lý, dù có bị rối loạn nào hay không; không cần "đủ nặng".
+  loai: loi-khuyen
+  nguon:
+  - nhs-tt
+  - who-dep-2026
+  trich: You do not need to have a diagnosed mental health condition. [NHS talking therapies]; Seek care if you have symptoms of depression. [WHO]
+  vi_tri: NHS, How to get talking therapies; WHO
+  ket_qua: da-sua
+  ghi_chu: Thêm vế "dù bạn có bị rối loạn nào hay không" (NHS); bỏ ý ngầm "có/không" như một phép thử.
+- id: n7
+  cau: Buồn, lo, căng thẳng là phần bình thường của cuộc sống và tự chúng không phải dấu hiệu của rối loạn.
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  trich: Some depression of mood is a normal reaction to severe adverse life events … [Depressive episode]; Anxiety and worry are normal emotional/cognitive states that commonly occur when people are under stress. [6B00]
+  vi_tri: CDDR tr. 213, 267
+  ket_qua: da-sua
+  ghi_chu: Thêm vế "tự chúng không phải dấu hiệu của rối loạn" cho khớp trang Hỗ trợ (đã khóa).
+- id: n8
+  cau: 'Dấu hiệu nên cân nhắc tìm giúp đỡ: buồn bã, trống rỗng, lo âu hay căng thẳng kéo dài từ hai tuần trở lên không dịu; ảnh hưởng rõ đến học, làm, ngủ, ăn, các mối quan hệ.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - apa-dep
+  - apa-anx
+  trich: They last most of the day, nearly every day, for at least two weeks. [WHO]; Interferes with work, school, or relationships [APA, When to Seek Help for Anxiety]
+  vi_tri: WHO; APA
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "kéo dài nhiều tuần và không dịu đi dù hoàn cảnh đã ổn hơn"; ví dụ "nghỉ học/nhiều ngày không làm được việc, sụt cân hoặc tăng cân rõ rệt, mất ngủ triền miên". Đổi thành "từ hai tuần trở lên" cho khớp trang Hỗ trợ (đã khóa, cùng nguồn WHO, SAMHSA, NIMH); bỏ "dù hoàn cảnh đã ổn hơn" (ICD-11: có biến cố vẫn có thể là trầm cảm) và các ví dụ như ngưỡng.'
+- id: n9
+  cau: 'Dấu hiệu: dùng rượu, chất kích thích ngày càng nhiều để chịu đựng cảm xúc.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - icd11-cddr
+  trich: avoid or cut down on alcohol and don't use illicit drugs, which can make depression worse [WHO]; Depressive episodes may be associated with increased consumption of alcohol or other substances [ICD-11]
+  vi_tri: WHO Self-care; CDDR tr. 213
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "dùng rượu, thuốc hay các hành vi khác (chơi game thâu đêm, tự làm đau...) để chịu đựng cảm xúc". Bỏ "chơi game thâu đêm" (không nguồn) và "tự làm đau" (chuyển vào mục tự hại, n11, theo hướng dẫn đưa tin an toàn: không liệt kê hành vi tự hại); khớp trang Hỗ trợ.'
+- id: n10
+  cau: 'Dấu hiệu: người thân nói bạn thay đổi nhiều, và bạn cũng thấy mình không còn là mình.'
+  loai: loi-khuyen
+  nguon:
+  - icd11-cddr
+  trich: Assessment of the presence or absence of symptoms should be made relative to typical functioning of the individual.
+  vi_tri: CDDR tr. 212
+  ket_qua: dung
+  ghi_chu: 'Giữ chữ cũ. Nguồn gián tiếp: ICD-11 đánh giá triệu chứng so với mức hoạt động thường ngày của chính người ấy. chỗ khó: dấu hiệu này không có trong danh sách của WHO, SAMHSA trang Hỗ trợ dùng; lượt 2 xét có cần nguồn trực tiếp hơn không (ví dụ SAMHSA "Signs You Need To Seek Help").'
+- id: n11
+  cau: 'Có ý nghĩ tự làm hại bản thân, hay nghĩ mọi người sẽ tốt hơn nếu không có mình: tìm giúp đỡ ngay, gọi cấp cứu hay đến khoa cấp cứu gần nhất; số khẩn cấp ở trang Hỗ trợ.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - paho-living
+  trich: If you think you are in immediate danger of harming yourself, contact any available emergency services or a crisis line. [WHO]; Seek help from the emergency services or a health-care professional. [PAHO]
+  vi_tri: WHO Self-care; PAHO 2021
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "…gọi 115 hoặc đến khoa cấp cứu gần nhất". Bỏ số 115 khỏi bài (lời giao D7-L1); số ở trang Hỗ trợ.'
+- id: n12
+  cau: Danh sách dấu hiệu giúp quyết định có nên tìm người nói chuyện, không phải để tự chẩn đoán.
+  loai: loi-khuyen
+  nguon:
+  - apa-anx
+  trich: A diagnosis is made by a qualified health professional.
+  vi_tri: APA
+  ket_qua: da-sua
+  ghi_chu: Thêm mới (lời giao D7-L1).
+- id: n13
+  cau: Nguyên tắc "không cần đủ nặng mới được tìm giúp đỡ" là nguyên tắc trang Hỗ trợ cũng dùng.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trên src/content/docs/ho-tro/index.md: "Bạn không cần phải đủ nặng mới được tìm sự giúp đỡ."'
+- id: n14
+  cau: Ba vai trò chính tóm từ bảng chi tiết ở trang Hỗ trợ.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm: bảng "Các loại chuyên gia khác nhau thế nào?" ở trang Hỗ trợ có bốn vai trò (thêm nhân viên công tác xã hội); bài tóm ba. Chữ cũ "đồng bộ với bảng chi tiết" đổi thành "tóm từ".'
+- id: n15
+  cau: Bác sĩ chuyên khoa tâm thần là bác sĩ y khoa học chuyên khoa tâm thần; chẩn đoán, điều trị bằng thuốc và phương pháp khác, chỉ định nhập viện khi cần.
+  loai: dinh-nghia
+  nguon:
+  - healthdirect-psy
+  trich: Psychiatrists are medical doctors who have completed specialised training in how to diagnose, treat and prevent mental, emotional and behavioural disorders. They work in different ways and can use a combination of treatments, including counselling, psychotherapy and medicines. They can arrange admission to hospital if needed.
+  vi_tri: Healthdirect, What does a psychiatrist do?
+  ket_qua: dung
+  ghi_chu: Giữ như trang cũ và trang Hỗ trợ (đã khóa). Nguồn mô tả vai trò ở Úc; quy định về phạm vi hành nghề ở Việt Nam không kiểm riêng ở lô này (trang Hỗ trợ dùng cùng nguồn).
+- id: n16
+  cau: Trong ba vai trò, chỉ bác sĩ được kê đơn thuốc.
+  loai: lam-sang
+  nguon:
+  - tt26-2025
+  trich: 'Điều 2. Thẩm quyền kê đơn thuốc: Người hành nghề khám bệnh, chữa bệnh có chứng chỉ hành nghề hoặc giấy phép hành nghề khám bệnh, chữa bệnh với chức danh là bác sỹ, y sỹ có thẩm quyền kê đơn thuốc.'
+  vi_tri: TT 26/2025/TT-BYT, Điều 2
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Là người duy nhất trong ba vai trò được kê đơn thuốc." Diễn đạt lại, giữ nghĩa (y sỹ cũng kê đơn nhưng không thuộc ba vai trò). Thông tư chỉ về thuốc hóa dược, sinh phẩm.'
+- id: n17
+  cau: 'Theo Luật Khám bệnh, chữa bệnh 2023 (hiệu lực 01/01/2024), nhà tâm lý lâm sàng là chức danh phải có giấy phép hành nghề; công việc: đánh giá tâm lý, trị liệu tâm lý; không kê đơn thuốc.'
+  loai: lam-sang
+  nguon:
+  - luat-kbcb-d26
+  - tt26-2025
+  trich: Điều 26. Chức danh chuyên môn phải có giấy phép hành nghề 1. … h) Tâm lý lâm sàng
+  vi_tri: Luật 15/2023/QH15 Điều 26 khoản 1 điểm h; TT 26/2025 Điều 2
+  ket_qua: dung
+  ghi_chu: Khớp trang cũ và trang Hỗ trợ (đã khóa).
+- id: n18
+  cau: 'Tham vấn viên được đào tạo rất khác nhau; Luật Khám bệnh, chữa bệnh 2023 không đặt chuẩn đào tạo chung và đây không phải chức danh phải có giấy phép hành nghề theo luật này; công việc: lắng nghe, hỗ trợ, tư vấn.'
+  loai: lam-sang
+  nguon:
+  - luat-kbcb-d26
+  trich: 'Điều 26 khoản 1 liệt kê: Bác sỹ; Y sỹ; Điều dưỡng; Hộ sinh; Kỹ thuật y; Dinh dưỡng lâm sàng; Cấp cứu viên ngoại viện; Tâm lý lâm sàng; Lương y; Người có bài thuốc gia truyền … (không có tham vấn, tư vấn tâm lý)'
+  vi_tri: Luật 15/2023/QH15 Điều 26
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "hiện chưa có giấy phép hành nghề quốc gia riêng như hai vai trò trên… phù hợp với những khó khăn ở mức độ nhẹ, hoặc như bước đầu để được hướng đến đúng nơi". Sửa cho khớp trang Hỗ trợ (đã khóa, chỉ nói theo Luật KBCB 2023); bỏ "phù hợp với khó khăn mức nhẹ" (không nguồn, dễ đọc như lời khuyên chọn trị liệu).'
+- id: n19
+  cau: Các vai trò bổ sung cho nhau; có người được bác sĩ theo dõi thuốc đồng thời gặp nhà tâm lý để trị liệu.
+  loai: lam-sang
+  nguon:
+  - nice-ng222
+  trich: Combination of individual cognitive behavioural therapy (CBT) and an antidepressant … Sessions with a therapist provide immediate support while the medication takes time to work
+  vi_tri: NICE NG222 bảng 2
+  ket_qua: da-lam-mem
+  ghi_chu: 'Chữ cũ: "Nhiều người được điều trị kết hợp: bác sĩ theo dõi thuốc, nhà tâm lý đồng hành trị liệu." Làm mềm "Nhiều người" thành "Có người" (không có số liệu về tỉ lệ).'
+- id: n20
+  cau: 'Gợi ý khi chọn nơi hỗ trợ: hỏi đào tạo, giấy phép, chứng chỉ; chi phí, thời lượng; cách bảo mật; không hợp thì tìm người khác là bình thường.'
+  loai: loi-khuyen
+  nguon:
+  - healthdirect-couns
+  - nhs-tt
+  trich: Your counsellor should discuss confidentiality in your first session. [Healthdirect]; Before choosing a private therapist, make sure they're registered with a professional organisation [NHS]
+  vi_tri: Healthdirect; NHS
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "…Một nơi làm việc nghiêm túc sẽ trả lời thẳng thắn những câu hỏi này." Thay câu cuối bằng gợi ý của trang Hỗ trợ (đã khóa): "Nếu bạn không thấy hợp với một người, việc tìm người khác là bình thường."'
+- id: n21
+  cau: 'Buổi gặp đầu: người có chuyên môn hỏi lý do đến, từ khi nào, ảnh hưởng ra sao; hỏi bối cảnh: giấc ngủ, ăn uống, công việc, học tập, quan hệ, tiền sử sức khỏe bản thân và gia đình, rượu, chất kích thích, thuốc đang dùng.'
+  loai: lam-sang
+  nguon:
+  - bdi-consult
+  - healthdirect-couns
+  - apa-dep
+  trich: You should expect a thorough assessment of your mental health problem/s. The assessment could cover … Whether there is any family history of depression or bipolar disorder? … The quality of your relationships … Your drug and alcohol history? … information about any medications you are taking [Black Dog]; During your first appointment with a counsellor, they will ask you questions about yourself and what you want help with. [Healthdirect]
+  vi_tri: Black Dog Institute; Healthdirect
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Mô tả chung dưới đây dựa trên thực hành phổ biến". Nay dẫn tài liệu cho người bệnh của Black Dog Institute và Healthdirect; thêm tiền sử gia đình, rượu, chất.'
+- id: n22
+  cau: 'Họ cũng có thể hỏi về ý nghĩ tự làm hại bản thân: đó là câu hỏi thường lệ để giữ an toàn.'
+  loai: lam-sang
+  nguon:
+  - bdi-consult
+  trich: What is the risk of self-harm or harm to others?
+  vi_tri: Black Dog Institute, các mục đánh giá
+  ket_qua: da-sua
+  ghi_chu: 'Thêm mới (để người đọc không bất ngờ; trang Hỗ trợ dẫn Dazzi 2014: hỏi về ý nghĩ tự sát không làm tăng ý nghĩ ấy).'
+- id: n23
+  cau: Bạn được nói theo nhịp của mình, có quyền nói "chuyện này tôi chưa muốn kể" và đặt câu hỏi; sau đánh giá, người có chuyên môn thường giải thích nhận định và đề xuất hướng đi; bạn có quyền hỏi, xin ý kiến thứ hai.
+  loai: loi-khuyen
+  nguon:
+  - bdi-consult
+  trich: you should expect … being given sufficient time to express your thoughts and feelings … After assessing you … the mental health professional should inform you … A management strategy should be recommended … Oppportunity to ask questions and raise concerns. Professional support if you request a referral for a second opinion.
+  vi_tri: Black Dog Institute
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Không ai ép bạn nói điều bạn chưa sẵn sàng… Một nhà chuyên môn tốt sẽ tôn trọng điều đó"; "có thể chỉ là một số thay đổi trong sinh hoạt và hẹn tái khám". Viết lại theo Black Dog; bỏ ví dụ "thay đổi sinh hoạt" (dễ đọc như lời khuyên điều trị).'
+- id: n24
+  cau: Luật Khám bệnh, chữa bệnh 2023 (Điều 10) ghi quyền của người bệnh được giữ bí mật thông tin trong hồ sơ bệnh án và thông tin đời tư đã cung cấp, trừ một số trường hợp luật định; ở nhiều nước, ngoại lệ thường gặp là khi bạn hay người khác có nguy cơ bị hại.
+  loai: lam-sang
+  nguon:
+  - luat-kbcb-d10
+  - healthdirect-couns
+  trich: Được giữ bí mật thông tin trong hồ sơ bệnh án và thông tin khác về đời tư mà người bệnh đã cung cấp cho người hành nghề trong quá trình khám bệnh, chữa bệnh, trừ trường hợp người bệnh đồng ý chia sẻ thông tin theo quy định của pháp luật hoặc trường hợp quy định tại khoản 3 và khoản 4 Điều 69 [Luật, Điều 10 khoản 2]; By law, a counsellor must keep what you tell them confidential … However, there are some exceptions. This includes times when you or another person is thought to be at risk of harm. [Healthdirect]
+  vi_tri: Luật 15/2023/QH15 Điều 10 khoản 2; Healthdirect
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Những gì bạn chia sẻ được bảo mật theo quy định nghề nghiệp. Ngoại lệ hiếm hoi là khi có nguy cơ gây hại nghiêm trọng cho bạn hoặc người khác — người có chuyên môn có trách nhiệm can thiệp để bảo vệ an toàn." Ở Việt Nam, ngoại lệ do Điều 69 của Luật quy định (cung cấp hồ sơ bệnh án theo yêu cầu cơ quan có thẩm quyền), không phải đúng ngoại lệ "nguy cơ gây hại"; ngoại lệ ấy là của Úc (Healthdirect). Viết lại tách hai ý; bỏ "hiếm hoi". chỗ khó: quy định pháp lý về bảo mật; chưa đọc Điều 69 và các quy định riêng cho tham vấn ngoài cơ sở khám chữa bệnh.'
+- id: n25
+  cau: Buổi đầu tiên không phải bài kiểm tra có thể trượt; không có câu trả lời đúng hay sai; mục đích là hiểu điều bạn đang trải qua.
+  loai: loi-khuyen
+  nguon:
+  - bdi-consult
+  - healthdirect-couns
+  trich: You should expect a thorough assessment of your mental health problem/s. [Black Dog]; they will ask you questions about yourself and what you want help with [Healthdirect]
+  vi_tri: Black Dog; Healthdirect
+  ket_qua: dung
+  ghi_chu: Giữ chữ cũ (bỏ "duy nhất"). Câu trấn an, khớp mô tả buổi đánh giá của hai nguồn.
+- id: n26
+  cau: Đi khám khi tâm trí gặp khó khăn bình thường như khi dạ dày đau; bạn không cần có chẩn đoán mới được gặp người có chuyên môn, nhiều người tìm đến vì một giai đoạn khó khăn.
+  loai: loi-khuyen
+  nguon:
+  - nhs-tt
+  - who-dep-2026
+  trich: You do not need to have a diagnosed mental health condition. [NHS]
+  vi_tri: NHS
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Phần lớn người tìm đến chuyên gia sức khỏe tâm thần không có rối loạn nặng — họ chỉ đang gặp giai đoạn khó khăn". Không tìm được số liệu cho "phần lớn"; viết lại theo NHS.'
+- id: n27
+  cau: Người có chuyên môn được đào tạo để lắng nghe không phán xét.
+  loai: loi-khuyen
+  nguon:
+  - bdi-consult
+  - apa-dict
+  trich: When you consult a mental health professional, you should expect confidentiality, empathy, understanding [Black Dog]; consistent empathic understanding of, acceptance of, and respect for the client [APA Dictionary, client-centered therapy]
+  vi_tri: Black Dog; APA Dictionary
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "người có chuyên môn nghe những câu chuyện như vậy mỗi ngày — công việc của họ là lắng nghe không phán xét, chứ không phải đánh giá con người bạn". Bỏ "nghe mỗi ngày" (không nguồn).'
+- id: n28
+  cau: Lo bị ghi vào hồ sơ là lo lắng chính đáng; hãy hỏi thẳng nơi đến về bảo mật và hồ sơ bệnh án trước khi bắt đầu.
+  loai: loi-khuyen
+  nguon:
+  - healthdirect-couns
+  - luat-kbcb-d10
+  trich: Your counsellor should discuss confidentiality in your first session.
+  vi_tri: Healthdirect
+  ket_qua: dung
+  ghi_chu: Giữ chữ cũ.
+- id: n29
+  cau: Trang Hỗ trợ có danh bạ đường dây và bệnh viện đã kiểm chứng, cùng gợi ý chọn nơi phù hợp.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đã kiểm trên trang Hỗ trợ (đã khóa). Chữ cũ "đường dây nóng"; trang Hỗ trợ nói rõ các số bệnh viện không phải đường dây khủng hoảng, nên bỏ "nóng".
+- id: n30
+  cau: Với trầm cảm, được điều trị sớm hơn đi kèm kết quả điều trị tốt hơn.
+  loai: nhan
+  nguon:
+  - ghio2014
+  trich: Pooled data indicates the overall positive effect of shorter duration of untreated illness both in a patient's response to treatment (RR 1.70) and remission (RR 1.65). … in particular in patients presenting with a first episode of depression. … Only three studies reported comparable data … The heterogeneity of the selected studies was cause for limitations
+  vi_tri: Ghio 2014, tóm tắt
+  nhan: kha-vung
+  co_so:
+  - ghio2014
+  ly_do: 'Tổng quan hệ thống và phân tích tổng hợp (Ghio 2014): thời gian không điều trị ngắn hơn đi kèm đáp ứng (RR 1,70) và thuyên giảm (RR 1,65) tốt hơn, các nghiên cứu khác cùng chiều. Giới hạn: chỉ 3 nghiên cứu gộp được, dị biệt cao, nghiên cứu quan sát (có thể nhiễu: người được điều trị sớm có thể khác người điều trị muộn), với trầm cảm tái phát bằng chứng yếu hơn. Khá vững.'
+  ket_qua: da-sua
+  ghi_chu: 'Khung cũ: "Vững chắc: can thiệp sớm thường cho kết quả tốt hơn can thiệp muộn" với thân "nguyên tắc chung được công nhận rộng rãi trong y khoa". Không có nguồn đạt thước đo Vững chắc cho mọi tình trạng sức khỏe tâm thần; với trầm cảm có tổng quan hệ thống Ghio 2014 nhưng chỉ 3 nghiên cứu gộp được, dị biệt cao, thiết kế quan sát. Hạ nhãn và thu hẹp ý chính về trầm cảm. chỗ khó: đổi nhãn (Vững chắc → Khá vững).'
+- id: n31
+  cau: 'Tổng quan Ghio 2014: chỉ 3 nghiên cứu đủ số liệu để gộp, các nghiên cứu khác nhau nhiều, nghiên cứu quan sát nên chưa tách được hẳn nguyên nhân.'
+  loai: so-lieu
+  nguon:
+  - ghio2014
+  trich: Ten studies were identified as meeting the inclusion criteria. Only three studies reported comparable data and were consequently used for the meta-analysis. … The heterogeneity of the selected studies was cause for limitations
+  vi_tri: Ghio 2014, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: Thêm mới. "Nghiên cứu quan sát" là suy từ đề tài (thời gian chưa điều trị không thể phân ngẫu nhiên); tóm tắt không ghi thiết kế.
+- id: n32
+  cau: Liệu pháp tâm lý và thuốc (khi cần, theo chỉ định) giúp được nhiều người bị các rối loạn tâm thần phổ biến; không phải ai cũng đỡ với hướng đầu tiên, điều chỉnh cùng người có chuyên môn là bình thường.
+  loai: nhan
+  nguon:
+  - who-dep-2026
+  - who-anx-2026
+  - cuijpers2023
+  - carpenter2018
+  - nice-ng222
+  trich: There are effective treatments for depression. [WHO]; There are highly effective treatments for anxiety disorders. [WHO]; CBT had moderate to large effects compared to control conditions [Cuijpers 2023]; moderate placebo-controlled effects of CBT [Carpenter 2018]; 1.9.x … discuss further treatment options … switching … [NICE NG222, khi không đáp ứng]
+  vi_tri: WHO; Cuijpers 2023; Carpenter 2018; NICE NG222 mục 1.9
+  nhan: kha-vung
+  co_so:
+  - cuijpers2023
+  - cipriani2018
+  - carpenter2018
+  - who-dep-2026
+  - who-anx-2026
+  ly_do: 'Như hồ sơ tram-cam n32 và lo-au n32: các phân tích tổng hợp lớn cùng chiều (CBT với trầm cảm, thuốc với trầm cảm, CBT với lo âu so với giả dược), hướng dẫn WHO và NICE thống nhất; giới hạn: hiệu quả vừa, dị biệt lớn, sai lệch xuất bản, hơn một nửa người bệnh không đáp ứng với hướng đầu tiên. Khá vững.'
+  ket_qua: da-sua
+  ghi_chu: Khung cũ cùng nhãn và ý; thân cũ "Các hướng dẫn điều trị quốc tế ghi nhận…". Thêm "các phân tích tổng hợp lớn cho thấy hiệu quả ở mức vừa"; "phác đồ" thành "hướng điều trị".
+- id: n33
+  cau: Theo hồ sơ quốc gia trong WHO Mental Health Atlas 2020 (số liệu mới nhất của WHO chúng tôi tìm được, tính đến 11/2026), Việt Nam có khoảng 4 người làm chuyên môn sức khỏe tâm thần trên 100.000 dân.
+  loai: thoi-su
+  nguon:
+  - atlas-vnm-2020
+  trich: 'Mental health workers per 100 000 population, 2014 and 2020: 3.91 [2014] 4.16 [2020]'
+  vi_tri: Atlas 2020 hồ sơ Việt Nam, tr. 2, biểu đồ nhân lực
+  het_han: '2027-11-01'
+  ket_qua: da-sua
+  ghi_chu: 'Thêm mới, thay khung cũ "Đang tranh cãi: hệ thống chăm sóc sức khỏe tâm thần ở Việt Nam đang ở đâu?" (n36). Chữ trích từ PDF bị xáo thứ tự; đọc số theo biểu đồ (hai cột 2014, 2020, trục 3,70–4,20). Không tìm được hồ sơ quốc gia Atlas 2024 của Việt Nam trên trang WHO (đường dẫn kiểu 2020 trả 404, 16/11/2026). chỗ khó: lượt 2 nên mở PDF và nhìn biểu đồ.'
+- id: n34
+  cau: Nhóm xây dựng một chương trình chăm sóc trầm cảm ở vùng nông thôn Việt Nam ghi nhận khó khăn như thiếu chuyên gia sức khỏe tâm thần, và nhiều người chưa xem trầm cảm là vấn đề sức khỏe có thể điều trị.
+  loai: phat-hien
+  nguon:
+  - ngo2014
+  trich: Key challenges included cultural factors (e.g., a lack of recognition of depression as a health-related entity amenable to professional treatment, relatively low levels of psychological mindedness …) and health system (e.g., lack of mental health specialists, overburdened health providers unfamiliar with behavioral interventions) factors.
+  vi_tri: Ngo 2014, tóm tắt
+  ket_qua: da-sua
+  ghi_chu: Thêm mới (thay khung cũ, n36).
+- id: n35
+  cau: Luật Khám bệnh, chữa bệnh 2023 chưa đặt chuẩn đào tạo chung cho tham vấn viên.
+  loai: lam-sang
+  nguon:
+  - luat-kbcb-d26
+  trich: Điều 26 khoản 1 (danh sách chức danh phải có giấy phép, không có tham vấn)
+  vi_tri: Luật 15/2023/QH15 Điều 26
+  ket_qua: da-sua
+  ghi_chu: 'Thay câu cũ "khung pháp lý cho một số vai trò … vẫn đang trong quá trình hoàn thiện". Khớp trang Hỗ trợ (đã khóa: "Luật Khám bệnh, chữa bệnh 2023 không đặt chuẩn đào tạo chung"). Câu nói về một luật, không nói không có văn bản nào khác.'
+- id: n36
+  cau: 'Khung "Đang tranh cãi: hệ thống chăm sóc sức khỏe tâm thần ở Việt Nam đang ở đâu?"'
+  loai: nhan
+  vi_tri: khung "Mức độ chắc chắn" của trang cũ
+  nhan: tranh-cai
+  co_so:
+  - (đã bỏ)
+  ly_do: Đã bỏ khỏi trang.
+  ket_qua: da-bo
+  ghi_chu: 'Bỏ khung nhãn: đây không phải một khẳng định có bằng chứng mâu thuẫn mà là mô tả hiện trạng (thời sự), dùng nhãn Đang tranh cãi là sai thước đo (chuan-kiem-dinh mục 4). Thay bằng khung "Ở Việt Nam" có số liệu và nguồn (n33–n35). Thân cũ: "Nhu cầu ngày càng được nói đến công khai, nhưng nguồn lực chuyên môn, khung pháp lý cho một số vai trò, và dịch vụ ở tuyến cơ sở vẫn đang trong quá trình hoàn thiện… đến tháng 10/2026."'
+- id: n37
+  cau: 'Cần giúp đỡ ngay (gọi cấp cứu, đến khoa cấp cứu): ý nghĩ hay hành vi tự làm hại; cảm thấy có thể gây hại người khác; đang say, ngộ độc hay có hành vi nguy hiểm.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - paho-living
+  trich: If you think you are in immediate danger of harming yourself, contact any available emergency services [WHO]; Seek help from the emergency services or a health-care professional. [PAHO]
+  vi_tri: WHO; PAHO
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Ngay lập tức (gọi 115 / đến cấp cứu)…"; tình trạng say, ngộ độc nằm trong ngoặc ở mục "vài ngày tới". Bỏ số 115; đưa say, ngộ độc, hành vi nguy hiểm lên mục "ngay lập tức". chỗ khó: danh sách tình huống khẩn cấp; chỉ "gây hại người khác" và "say, ngộ độc" là suy từ thông lệ cấp cứu (trang Hỗ trợ: "Nếu có nguy cơ bạo lực"), không có câu nguồn riêng.'
+- id: n38
+  cau: 'Sớm, trong vài ngày tới: cảm xúc tiêu cực kéo dài từ hai tuần trở lên không dịu; ảnh hưởng rõ đến học, làm, ngủ, ăn, quan hệ; phải dùng rượu, chất kích thích để chịu đựng.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - apa-dep
+  trich: Seek care if you have symptoms of depression. [WHO]
+  vi_tri: WHO
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Trong vài ngày tới: cảm xúc tiêu cực kéo dài nhiều tuần…". "Nhiều tuần" thành "từ hai tuần trở lên" (n8). "Trong vài ngày tới" là lời khuyên của trang, không có nguồn chỉ khung thời gian; giữ vì không trái nguồn. chỗ khó.'
+- id: n39
+  cau: Chỉ thấy "không ổn" kéo dài cũng đủ lý do tìm người có chuyên môn trò chuyện; không cần chờ đến khi sụp đổ.
+  loai: loi-khuyen
+  nguon:
+  - nhs-tt
+  trich: You do not need to have a diagnosed mental health condition.
+  vi_tri: NHS
+  ket_qua: dung
+  ghi_chu: Giữ chữ cũ.
+- id: n40
+  cau: Mọi số điện thoại và thông tin liên hệ đã kiểm chứng ở trang Hỗ trợ; mục Đọc thêm link tới Trầm cảm, Lo âu.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: Đã kiểm trên trang và trang Hỗ trợ (đã khóa).
+- id: n41
+  cau: 'Câu hỏi 1: nên tìm người có chuyên môn khi cảm xúc tiêu cực kéo dài nhiều tuần không dịu, ảnh hưởng rõ cuộc sống, hay phải dùng rượu, chất để chịu đựng; ngưỡng là thời gian kéo dài và mức ảnh hưởng; đây là gợi ý, không phải tự chẩn đoán.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - apa-anx
+  trich: Lasts for months or keeps coming back … Interferes with work, school, or relationships [APA]
+  vi_tri: APA; WHO
+  ket_qua: da-sua
+  ghi_chu: Thêm câu cuối giải thích ("không phải để tự chẩn đoán"); "học tập/công việc" viết lại không dùng gạch chéo.
+- id: n42
+  cau: 'Câu hỏi 2: chỉ bác sĩ tâm thần (trong ba vai trò) kê đơn; nhà tâm lý lâm sàng đánh giá, trị liệu, phải có giấy phép theo Luật 2023; tham vấn viên đào tạo khác nhau, không thuộc chức danh phải có giấy phép theo luật này.'
+  loai: lam-sang
+  nguon:
+  - luat-kbcb-d26
+  - tt26-2025
+  trich: Điều 26 khoản 1 điểm h) Tâm lý lâm sàng; TT 26/2025 Điều 2 (bác sỹ, y sỹ)
+  vi_tri: Luật Điều 26; TT 26/2025 Điều 2
+  ket_qua: da-sua
+  ghi_chu: 'Câu cũ: "…tham vấn viên thì đào tạo rất khác nhau và hiện chưa có giấy phép hành nghề quốc gia riêng". Sửa như n18.'
+- id: n43
+  cau: 'Câu hỏi 3: điều KHÔNG đúng là "phải trả lời đúng mọi câu hỏi như bài kiểm tra"; bạn có quyền không kể chuyện chưa sẵn sàng, hỏi về bảo mật, xin ý kiến thứ hai.'
+  loai: loi-khuyen
+  nguon:
+  - bdi-consult
+  trich: Professional support if you request a referral for a second opinion.
+  vi_tri: Black Dog
+  ket_qua: dung
+  ghi_chu: Giữ chữ cũ.
+- id: n44
+  cau: 'Câu hỏi 4: không cần "đủ nặng"; không cần có chẩn đoán mới gặp người có chuyên môn; với trầm cảm, điều trị sớm hơn đi kèm kết quả tốt hơn.'
+  loai: loi-khuyen
+  nguon:
+  - nhs-tt
+  - ghio2014
+  trich: You do not need to have a diagnosed mental health condition. [NHS]; positive effect of shorter duration of untreated illness [Ghio]
+  vi_tri: NHS; Ghio 2014
+  ket_qua: da-sua
+  ghi_chu: 'Giải thích cũ: "Chờ đến khi sụp đổ mới tìm giúp đỡ cũng giống như chờ răng sâu đến tủy mới đi nha sĩ — càng sớm thường càng đỡ vất vả." Thay bằng câu có nguồn.'
+- id: n45
+  cau: 'Câu hỏi 5: ý nghĩ hay hành vi tự làm hại cần giúp đỡ ngay (gọi cấp cứu, đến khoa cấp cứu); tìm giúp đỡ lúc ấy là đúng, không phải "làm quá"; số khẩn cấp ở trang Hỗ trợ.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  trich: If you think you are in immediate danger of harming yourself, contact any available emergency services or a crisis line.
+  vi_tri: WHO
+  ket_qua: da-sua
+  ghi_chu: 'Câu cũ: "…gọi 115 hoặc đến khoa cấp cứu gần nhất ngay"; giải thích "Đây là ranh giới khẩn cấp duy nhất trong bài". Bỏ số 115; bỏ "duy nhất" (mục tóm tắt có thêm tình huống khẩn cấp khác, n37).'
+- id: n46
+  cau: Mục Nguồn cũ có dòng DSM-5-TR "khung tham chiếu cho các khái niệm rối loạn" và dòng trang Hỗ trợ "cũng đang chờ rà soát chuyên môn".
+  loai: ve-site
+  ket_qua: da-sua
+  ghi_chu: Trang Hỗ trợ đã khóa (D2-L1), không còn "chờ rà soát"; dòng tham chiếu trang Hỗ trợ giữ (bài này tóm bảng của trang ấy, nên dẫn nguồn tới đó), viết lại; bỏ dòng DSM-5-TR (bài không dùng). Thêm các nguồn đã dùng. Đã kiểm trên trang.
+doi_chu:
+- cu: 'description "Bản nháp: các dấu hiệu nên tìm chuyên gia sức khỏe tâm thần, phân biệt bác sĩ tâm thần / nhà tâm lý lâm sàng / tham vấn viên…"'
+  moi: description không có "Bản nháp", không dùng gạch chéo
+  ly_do: Hồ sơ n1.
+- cu: Hộp warning "Bản nháp đang chờ rà soát chuyên môn"
+  moi: Hộp note "Trước khi đọc" (nguy hiểm ngay thì xem Hỗ trợ) và ::tom-tat
+  ly_do: Hồ sơ n2.
+- cu: 'Tự trải nghiệm: "đa số chúng ta cũng hành xử y hệt"; "tâm trí càng được can thiệp sớm thì thường càng đỡ vất vả"; hộp "Câu hỏi để tự kiểm" ("Psyche Zero"; "và sẽ không bao giờ có")'
+  moi: '"nhiều người"; số của WHO; hộp "Câu hỏi để tự hỏi" ("Psyche"; "dù bạn có bị rối loạn nào hay không")'
+  ly_do: Hồ sơ n3–n6.
+- cu: 'Các dấu hiệu: "kéo dài nhiều tuần… dù hoàn cảnh đã ổn hơn"; "(chơi game thâu đêm, tự làm đau...)"; "gọi 115"'
+  moi: '"từ hai tuần trở lên"; "rượu, chất kích thích ngày càng nhiều"; "gọi cấp cứu", số ở trang Hỗ trợ; thêm câu "không phải để tự chẩn đoán"'
+  ly_do: Hồ sơ n7–n13.
+- cu: 'Các vai trò: "đồng bộ với bảng"; tham vấn viên "hiện chưa có giấy phép hành nghề quốc gia riêng… phù hợp với những khó khăn ở mức độ nhẹ"; "Nhiều người được điều trị kết hợp"; "Một nơi làm việc nghiêm túc sẽ trả lời thẳng thắn"'
+  moi: '"tóm từ bảng"; theo Luật KBCB 2023 như trang Hỗ trợ; "Có người"; "Nếu không thấy hợp với một người, việc tìm người khác là bình thường"'
+  ly_do: Hồ sơ n14–n20.
+- cu: 'Buổi gặp đầu tiên: "dựa trên thực hành phổ biến"; "một số thay đổi trong sinh hoạt và hẹn tái khám"; bảo mật "theo quy định nghề nghiệp. Ngoại lệ hiếm hoi…"'
+  moi: Dẫn Black Dog, Healthdirect; thêm câu hỏi về tự hại là thường lệ; bảo mật theo Luật KBCB 2023 Điều 10 và ngoại lệ thường gặp ở nhiều nước
+  ly_do: Hồ sơ n21–n25.
+- cu: 'Rào cản: "Phần lớn người tìm đến… không có rối loạn nặng"; "nghe những câu chuyện như vậy mỗi ngày"; "đường dây nóng"'
+  moi: Theo NHS ("không cần có chẩn đoán"); "được đào tạo để lắng nghe"; "các đường dây"
+  ly_do: Hồ sơ n26–n29.
+- cu: 'Ba khung nhãn: Vững chắc (can thiệp sớm); Khá vững (trị liệu và thuốc); Đang tranh cãi (hệ thống ở Việt Nam)'
+  moi: Khá vững (với trầm cảm, điều trị sớm hơn đi kèm kết quả tốt hơn); Khá vững (trị liệu và thuốc); khung "Ở Việt Nam" có số liệu WHO 2020 và nguồn
+  ly_do: Hồ sơ n30–n36.
+- cu: 'Tóm tắt để hành động: "(gọi 115 / đến cấp cứu)"; say, ngộ độc trong ngoặc ở mục vài ngày'
+  moi: Bỏ số; say, ngộ độc, hành vi nguy hiểm vào mục ngay lập tức
+  ly_do: Hồ sơ n37–n40.
+- cu: Năm câu hỏi (câu 2 "chưa có giấy phép hành nghề quốc gia riêng"; câu 4 so với răng sâu; câu 5 "gọi 115", "ranh giới khẩn cấp duy nhất")
+  moi: Sửa theo Luật KBCB 2023, NHS, Ghio 2014; bỏ số; bỏ "duy nhất"
+  ly_do: Hồ sơ n41–n45.
+- cu: Mục Nguồn (trang Hỗ trợ "cũng đang chờ rà soát chuyên môn"; Luật KBCB 2023; DSM-5-TR)
+  moi: Trang Hỗ trợ (đã kiểm), Luật KBCB 2023 Điều 10, 26, WHO, Atlas 2020, Ghio 2014, Ngo 2014, Black Dog, Healthdirect, NHS
+  ly_do: Hồ sơ n46.

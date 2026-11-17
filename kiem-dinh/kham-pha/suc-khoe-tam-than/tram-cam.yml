@@ -1,0 +1,612 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/suc-khoe-tam-than/tram-cam
+trang: src/content/docs/kham-pha/suc-khoe-tam-than/tram-cam.md
+nguon_cu: ../psyche-zero/docs/kham-pha/suc-khoe-tam-than/tram-cam.md
+tang: loi
+muc: V3
+lan:
+- so: 1
+  ngay: null
+  nhanh: moi/d7-l1
+  ma_bam: null
+  nguoi:
+    luot_1: Claude Opus 5.5 (agent làm lô D7-L1, 16/11/2026; không dùng agent con)
+    luot_2: null
+    review: null
+    kiem_mau: null
+    chuyen_gia: null
+nguon:
+- id: icd11-cddr
+  ten: 'WHO (2024), Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR), ISBN 9789240077263: toàn văn (PDF 852 trang tải từ IRIS của WHO qua trang ấn phẩm; số trang in = số trang PDF trừ 18). Giai đoạn trầm cảm tr. 212–214; 6A70 tr. 244; 6B00 tr. 266–267; 6B01 tr. 271–272; 6B04 tr. 284–285'
+  link: https://www.who.int/publications/i/item/9789240077263
+  toan_van: true
+- id: apa-dep
+  ten: 'American Psychiatric Association, What Is Depression? (psychiatry.org, bác sĩ duyệt 4/2024; tài liệu chính thức của APA tóm DSM-5-TR cho người đọc): toàn văn, đọc 16/11/2026'
+  link: https://www.psychiatry.org/patients-families/depression/what-is-depression
+  toan_van: true
+- id: apa-anx
+  ten: 'American Psychiatric Association, What Are Anxiety Disorders? (psychiatry.org, bác sĩ duyệt 5/2026; dẫn DSM-5-TR): toàn văn, đọc 16/11/2026'
+  link: https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+  toan_van: true
+- id: who-dep-2026
+  ten: 'WHO, Depressive disorder (depression), tờ thông tin cập nhật 11/9/2026: toàn văn, đọc 16/11/2026'
+  link: https://www.who.int/news-room/fact-sheets/detail/depression
+  toan_van: true
+- id: nhs-tt
+  ten: 'NHS (Anh), NHS talking therapies for anxiety and depression (duyệt 5/11/2025): toàn văn, đọc 16/11/2026'
+  link: https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/
+  toan_van: true
+- id: nice-ng222
+  ten: 'NICE (2022), Depression in adults: treatment and management (NG222), chương Recommendations: toàn văn, đọc 16/11/2026'
+  link: https://www.nice.org.uk/guidance/ng222/chapter/Recommendations
+  toan_van: true
+- id: cuijpers2023
+  ten: 'Cuijpers, Miguel, Harrer, Plessen, Ciharova, Ebert & Karyotaki (2023), World Psychiatry 22(1), 105–115: toàn văn (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; PMC và Wiley chặn máy)'
+  link: https://doi.org/10.1002/wps.21069
+  toan_van: true
+- id: cipriani2018
+  ten: 'Cipriani và cộng sự (2018), Lancet 391(10128), 1357–1366: tóm tắt (Europe PMC, PMID 29477251)'
+  link: https://doi.org/10.1016/S0140-6736(17)32802-7
+  toan_van: false
+- id: cuijpers2020
+  ten: 'Cuijpers, Noma, Karyotaki, Vinkers, Cipriani & Furukawa (2020), World Psychiatry 19(1), 92–107: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1002/wps.20701
+  toan_van: false
+- id: moncrieff2023
+  ten: 'Moncrieff, Cooper, Stockmann, Amendola, Hengartner & Horowitz (2023; trực tuyến 2022), Mol Psychiatry 28, 3243–3256: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1038/s41380-022-01661-0
+  toan_van: false
+- id: jauhar2023
+  ten: 'Jauhar và cộng sự (2023), Mol Psychiatry 28, 3149–3152 (bài phản hồi Moncrieff 2022): chỉ đọc tên bài và siêu dữ liệu (Europe PMC); tên bài nêu luận điểm'
+  link: https://doi.org/10.1038/s41380-023-02095-y
+  toan_van: false
+- id: sullivan2000
+  ten: 'Sullivan, Neale & Kendler (2000), Am J Psychiatry 157(10), 1552–1562: tóm tắt (Europe PMC)'
+  link: https://doi.org/10.1176/appi.ajp.157.10.1552
+  toan_van: false
+- id: paho-living
+  ten: 'WHO/PAHO (2021), Living with someone with depression? (tờ thông tin Ngày Sức khỏe tâm thần thế giới): toàn văn (PDF 1 trang)'
+  link: https://www.paho.org/sites/default/files/2021-10/WMHD-2_living_with_someone_with_depression-2021.pdf
+  toan_van: true
+- id: rcpsych-ad
+  ten: 'Royal College of Psychiatrists, Antidepressants (xuất bản 3/2025, hạn duyệt 3/2028): toàn văn, đọc 16/11/2026'
+  link: https://www.rcpsych.ac.uk/mental-health/treatments-and-wellbeing/antidepressants
+  toan_van: true
+- id: who-anx-2026
+  ten: 'WHO, Anxiety disorders, tờ thông tin cập nhật 15/9/2026: toàn văn, đọc 16/11/2026'
+  link: https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  toan_van: true
+nhan_dinh:
+- id: n1
+  cau: 'Mô tả: nỗi buồn thông thường khác rối loạn trầm cảm ở mức độ, độ lan rộng và thời gian kéo dài, theo mô tả của ICD-11 và DSM-5-TR.'
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  - apa-dep
+  trich: Some depression of mood is a normal reaction to severe adverse life events and problems (e.g. divorce, job loss), and is common in the community. A depressive episode is differentiated from this common experience by the severity, range and duration of symptoms. If the diagnostic requirements for a depressive episode listed above are met, a depressive episode should still be considered present, even if there are identifiable life events that appear to have triggered the episode. [ICD-11] / It is normal to experience moments of sadness … However, a diagnosis of depression requires that the above symptoms occur for most of the day, nearly every day, for more than two weeks, along with a clear change in day-to-day functioning [APA]
+  vi_tri: CDDR tr. 213 (Boundary with normality); APA What is depression
+  ket_qua: da-sua
+  ghi_chu: 'Mô tả cũ: "Bản nháp: phân biệt nỗi buồn thông thường với rối loạn trầm cảm nặng theo DSM-5-TR, các hướng điều trị có bằng chứng ở mức liệt kê…". Bỏ "Bản nháp" (dải chờ rà soát làm ở nhánh them/cho-chuyen-gia); nêu tiêu chí phân biệt theo ICD-11 (xem n4).'
+- id: n2
+  cau: Chỉ người có chuyên môn mới chẩn đoán được trầm cảm; bài không dùng để tự chẩn đoán (lời dẫn đầu trang, kèm link trang Hỗ trợ).
+  loai: lam-sang
+  nguon:
+  - apa-dep
+  - apa-anx
+  trich: To diagnose depression, a healthcare professional will conduct a thorough diagnostic evaluation that includes a comprehensive interview … [What is depression]; A diagnosis is made by a qualified health professional. [What are anxiety disorders]
+  vi_tri: APA, mục How Is Depression Treated? / Treatment
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ (hộp warning): "Bản nháp đang chờ rà soát chuyên môn. Bài viết này chưa được người có chuyên môn đọc lại. Nội dung chỉ mang tính giáo dục, không thay thế chẩn đoán hay điều trị…". Chữ mới: hộp "Trước khi đọc": không dùng để tự chẩn đoán, chỉ người có chuyên môn mới chẩn đoán được, link Hỗ trợ. Lý do: dải "chưa qua rà soát chuyên môn" do khung trang thêm (nhánh them/cho-chuyen-gia), không viết trong trang (trang đã khóa không đổi được khi chuyên gia đọc xong); lời giao D7-L1 đòi lời dẫn tới Hỗ trợ ở đầu trang.'
+- id: n3
+  cau: Lời dẫn đầu và cuối trang trỏ tới trang Hỗ trợ (/psyche/ho-tro/); bài không chép số điện thoại.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trên trang: hộp "Trước khi đọc" ở đầu, mục "Khi nào nên tìm sự giúp đỡ" ở cuối đều link /psyche/ho-tro/ (trang đã khóa, kiem-dinh/ho-tro/index.yml). Số 115 của trang cũ đã bỏ khỏi bài (xem n37).'
+- id: n4
+  cau: Hai người bạn trong mục Tự trải nghiệm là ví dụ giả định của chúng tôi.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'gia-dinh: ghi rõ trên trang ("ví dụ giả định của chúng tôi"). Nội dung ví dụ không trái với nhận định nào (sau khi sửa n5). Đã kiểm trên trang.'
+- id: n5
+  cau: Theo ICD-11, mức độ, độ lan rộng và thời gian kéo dài của triệu chứng, chứ không phải việc có hay không có một lý do, phân biệt một giai đoạn trầm cảm với nỗi buồn thông thường; trầm cảm vẫn có thể bắt đầu sau một biến cố như mất việc hay ly hôn.
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  trich: Some depression of mood is a normal reaction to severe adverse life events and problems (e.g. divorce, job loss), and is common in the community. A depressive episode is differentiated from this common experience by the severity, range and duration of symptoms. If the diagnostic requirements for a depressive episode listed above are met, a depressive episode should still be considered present, even if there are identifiable life events that appear to have triggered the episode.
+  vi_tri: CDDR tr. 213, Depressive episode, Boundary with normality (threshold)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Người thứ hai có các triệu chứng kéo dài, lan khắp mọi mặt cuộc sống, và không gắn với một sự kiện cụ thể — đó là ranh giới mà y học dùng để nói về rối loạn trầm cảm." Sai: ICD-11 nói rõ có biến cố khởi phát vẫn chẩn đoán được giai đoạn trầm cảm nếu đủ tiêu chí; ranh giới là mức độ, độ lan rộng, thời gian. Chữ mới theo CDDR. Câu hỏi 1 sửa theo (n41).'
+- id: n6
+  cau: Câu "không còn thấy gì đáng sống" là lý do để tìm sự giúp đỡ sớm (kèm link Hỗ trợ).
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - icd11-cddr
+  trich: 'If you have thoughts of suicide: … talk to someone you trust about how you feel; talk to a health worker, such as a doctor or counsellor [WHO]; Hopelessness about the future; Recurrent thoughts of death [ICD-11, triệu chứng nhóm nhận thức – hành vi]'
+  vi_tri: WHO, mục Self-care; CDDR tr. 212
+  ket_qua: da-sua
+  ghi_chu: 'Thêm mới (trang cũ không nói gì về câu này trong ví dụ). Lý do: ví dụ có ý nghĩ "không còn thấy gì đáng sống"; theo hướng dẫn đưa tin an toàn, chỗ nhắc tới ý nghĩ này phải kèm đường tới trợ giúp.'
+- id: n7
+  cau: Buồn là phản ứng bình thường trước mất mát, thất bại, thất vọng; ICD-11 ghi một mức độ buồn bã là phản ứng bình thường trước biến cố nặng nề (ly hôn, mất việc) và rất thường gặp.
+  loai: dinh-nghia
+  nguon:
+  - icd11-cddr
+  trich: Some depression of mood is a normal reaction to severe adverse life events and problems (e.g. divorce, job loss), and is common in the community. A depressive episode is differentiated from this common experience by the severity, range and duration of symptoms. If the diagnostic requirements for a depressive episode listed above are met, a depressive episode should still be considered present, even if there are identifiable life events that appear to have triggered the episode.
+  vi_tri: CDDR tr. 213
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Buồn là phản ứng lành mạnh của tâm trí trước mất mát… Nó có đối tượng, có nhịp lên xuống, và thường dịu đi khi hoàn cảnh thay đổi hoặc khi ta được chia sẻ." Bỏ các ý "có đối tượng, có nhịp" (không có nguồn); dẫn ICD-11.'
+- id: n8
+  cau: Theo WHO, trong một giai đoạn trầm cảm, người ta có tâm trạng trầm buồn (buồn, dễ cáu, trống rỗng) hoặc mất hứng thú, niềm vui với các hoạt động, gần như cả ngày, gần như mỗi ngày, trong ít nhất hai tuần, kèm các triệu chứng khác.
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  - icd11-cddr
+  trich: During a depressive episode, a person experiences a depressed mood (feeling sad, irritable, empty). They may feel a loss of pleasure or interest in activities. A depressive episode is different from regular mood fluctuations. They last most of the day, nearly every day, for at least two weeks. Other symptoms are also present
+  vi_tri: WHO, mục Symptoms and patterns; CDDR tr. 212
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Rối loạn trầm cảm nặng (major depressive disorder) thì khác ở ba điểm: kéo dài (hàng tuần liền, hầu như mỗi ngày), lan tỏa…, và gây suy giảm chức năng… Người trầm cảm thường mô tả không phải là buồn mà là trống rỗng, tê liệt…". Viết lại theo mô tả của WHO và ICD-11 (tên rối loạn theo ICD-11: depressive disorder); bỏ "thường mô tả… tê liệt" (không nguồn).'
+- id: n9
+  cau: 'Trầm cảm có thể ảnh hưởng đến mọi mặt của cuộc sống: học tập, công việc, gia đình, bạn bè.'
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  trich: Depression can affect all aspects of life, including relationships with family, friends and community. It can result from, or lead to, problems at school or work.
+  vi_tri: WHO, mục Overview
+  ket_qua: dung
+- id: n10
+  cau: ICD-11 lưu ý ở một số người, cảm xúc trầm cảm biểu hiện chủ yếu là cáu bẳn hay cảm giác trống rỗng hơn là buồn.
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  trich: In some individuals, the affective component of a depressive episode may be primarily experienced and expressed as irritability, or as an absence of emotional experience (e.g. "emptiness").
+  vi_tri: CDDR tr. 213, Additional clinical features
+  ket_qua: da-sua
+  ghi_chu: Thay cho câu cũ "Người trầm cảm thường mô tả không phải là buồn, mà là trống rỗng, tê liệt, hoặc mất hẳn khả năng thấy vui" (không nguồn); nay theo ICD-11.
+- id: n11
+  cau: Tính đến 11/2026, WHO ước tính năm 2023 khoảng 5,2% người trưởng thành trên thế giới bị trầm cảm, và phụ nữ bị nhiều hơn nam giới khoảng 1,5 lần.
+  loai: thoi-su
+  nguon:
+  - who-dep-2026
+  trich: In 2023, an estimated 4% of the population experienced depression, including 5.2% of adults (4.1% among men and 6.2% among women) … Depression is about 1.5 times more common among women than among men.
+  vi_tri: 'WHO, mục Overview (tờ thông tin cập nhật 11/9/2026; nguồn: GBD 2023)'
+  het_han: '2027-11-01'
+  ket_qua: da-sua
+  ghi_chu: 'Thêm mới: lời giao D7-L1 đòi số liệu dịch tễ là khẳng định thời sự có mốc và hạn.'
+- id: n12
+  cau: Người có chuyên môn dựa vào ICD-11 của WHO và DSM-5-TR, bản hiệu đính năm 2022 của Hiệp hội Tâm thần học Hoa Kỳ.
+  loai: lich-su
+  nguon:
+  - icd11-cddr
+  - apa-anx
+  trich: American Psychiatric Association. (2022). Diagnostic and statistical manual of mental disorders (5th ed., text rev.; DSM-5-TR). [APA, mục References]; The CDDR are a clinical version of ICD-11
+  vi_tri: APA What are anxiety disorders, References; CDDR, Lời nói đầu
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ chỉ nói DSM-5-TR ("một cuốn cẩm nang chẩn đoán có tên DSM-5-TR (bản hiệu đính 2022 của Hiệp hội Tâm thần Hoa Kỳ)"). Thêm ICD-11 (hệ thống của WHO, dùng ở Việt Nam qua ICD); sửa tên hội: American Psychiatric Association là Hiệp hội Tâm thần học Hoa Kỳ.'
+- id: n13
+  cau: ICD-11 và DSM-5-TR mô tả giai đoạn trầm cảm khá giống nhau.
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  - apa-dep
+  trich: The concurrent presence of at least five of the following characteristic symptoms occurring for most of the day, nearly every day, during a period lasting at least 2 weeks is required for diagnosis. At least one symptom from the affective cluster must be present. [ICD-11] / a diagnosis of depression requires that the above symptoms occur for most of the day, nearly every day, for more than two weeks, along with a clear change in day-to-day functioning [APA, danh sách 9 triệu chứng như DSM-5-TR]
+  vi_tri: CDDR tr. 212–213; APA What is depression
+  ket_qua: dung
+  ghi_chu: 'chỗ khó: hai hệ thống cùng đòi ít nhất 5 triệu chứng trong 2 tuần, ít nhất một là khí sắc trầm hay mất hứng thú; ICD-11 thêm triệu chứng "tuyệt vọng về tương lai" (12 triệu chứng chia ba nhóm), DSM-5-TR có 9. "Khá giống nhau" là nhận xét của trang; không mở được bản in DSM-5-TR (chỉ tài liệu chính thức của APA cho người đọc).'
+- id: n14
+  cau: Mô tả trong bài chỉ để hiểu chung, không phải bảng để tự chấm điểm.
+  loai: loi-khuyen
+  nguon:
+  - apa-dep
+  - apa-anx
+  trich: A diagnosis is made by a qualified health professional.
+  vi_tri: APA What are anxiety disorders, Treatment
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ ở cuối mục: "Điểm quan trọng nhất của danh sách này không phải để bạn tự chấm điểm cho mình". Đưa lên đầu danh sách và bỏ ngưỡng đếm triệu chứng (n47).'
+- id: n15
+  cau: 'Cần có ít nhất một trong hai dấu hiệu cốt lõi: tâm trạng trầm buồn, hoặc mất hẳn hứng thú, niềm vui với các hoạt động vốn thích.'
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  - apa-dep
+  trich: At least one symptom from the affective cluster must be present. … Depressed mood … Markedly diminished interest or pleasure in activities, especially those normally found to be enjoyable to the individual
+  vi_tri: CDDR tr. 212
+  ket_qua: dung
+  ghi_chu: 'Chữ cũ cùng ý ("ít nhất một trong hai triệu chứng cốt lõi phải có mặt: (1) khí sắc trầm buồn…, hoặc (2) mất hẳn hứng thú"); diễn đạt lại.'
+- id: n16
+  cau: 'Chuyên gia xem xét thêm các triệu chứng: khó tập trung hay khó quyết định; cảm giác vô giá trị hay tội lỗi quá mức; tuyệt vọng về tương lai; ý nghĩ lặp lại về cái chết; giấc ngủ, thèm ăn hay cân nặng thay đổi rõ; mệt mỏi, thiếu năng lượng; bồn chồn hay chậm chạp đến mức người khác nhận thấy.'
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  - who-dep-2026
+  trich: Reduced ability to concentrate … or marked indecisiveness; Beliefs of low self-worth or excessive and inappropriate guilt; Hopelessness about the future; Recurrent thoughts of death …; Significantly disrupted sleep … or excessive sleep; Significant change in appetite … or significant weight change; Psychomotor agitation or retardation (observable by others …); Reduced energy, fatigue
+  vi_tri: CDDR tr. 212–213 (nhóm nhận thức – hành vi và nhóm thực vật)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Bảy triệu chứng còn lại trong danh sách gồm…" (theo DSM-5-TR, đếm 7). Nay liệt kê theo ICD-11 (thêm "tuyệt vọng về tương lai"), không đếm, để không thành bảng tự chấm.'
+- id: n17
+  cau: Các triệu chứng kéo dài ít nhất hai tuần, gần như mỗi ngày, và gây suy giảm rõ trong học tập, công việc, gia đình hay các mối quan hệ; nếu vẫn làm được việc thì chỉ nhờ cố gắng nhiều hơn hẳn.
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  trich: The concurrent presence of at least five of the following characteristic symptoms occurring for most of the day, nearly every day, during a period lasting at least 2 weeks is required for diagnosis. At least one symptom from the affective cluster must be present. … The mood disturbance results in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. If functioning is maintained, it is only through significant additional effort.
+  vi_tri: CDDR tr. 212–213
+  ket_qua: dung
+- id: n18
+  cau: 'Chuyên gia phải loại trừ: bệnh cơ thể (ví dụ rối loạn nội tiết, bệnh thần kinh), tác dụng của thuốc, rượu hay chất kích thích, phản ứng tang chế bình thường, và rối loạn lưỡng cực (khi từng có giai đoạn hưng cảm).'
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  - apa-dep
+  trich: The symptoms are not better accounted for by bereavement. The symptoms are not a manifestation of another medical condition (e.g. a brain tumour), and are not due to the effects of a substance or medication … There is no history of manic, mixed or hypomanic episodes, which would indicate the presence of a bipolar disorder. [ICD-11]; screen for underlying medical conditions that may mimic depression — such as hormonal imbalances, vitamin deficiencies, neurological problems and drug or alcohol use [APA]
+  vi_tri: CDDR tr. 213, 244; APA, How Is Depression Treated?
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "ba điều kiện đi kèm: … gây đau khổ hoặc suy giảm rõ rệt; không giải thích được bằng chất kích thích hay một bệnh cơ thể khác; và người đó chưa từng có giai đoạn hưng cảm". Thêm tang chế (ICD-11) và ví dụ bệnh cơ thể (APA).'
+- id: n19
+  cau: 'Chẩn đoán do người có chuyên môn thực hiện: trò chuyện kỹ, hỏi tiền sử, khám cơ thể và khi cần làm xét nghiệm để loại trừ bệnh khác.'
+  loai: lam-sang
+  nguon:
+  - apa-dep
+  trich: To diagnose depression, a healthcare professional will conduct a thorough diagnostic evaluation that includes a comprehensive interview to discuss your symptoms in addition to your personal, medical and family histories. Moreover, a physical examination should be performed … Laboratory and imaging tests may also be included in the evaluation as part of the medical screening.
+  vi_tri: APA, How Is Depression Treated?
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "chẩn đoán là một quy trình có cấu trúc, do người có chuyên môn thực hiện sau khi trò chuyện và loại trừ nhiều khả năng khác". Thêm khám cơ thể, xét nghiệm theo APA.'
+- id: n20
+  cau: Hai người cùng "buồn" có thể ở hai tình trạng rất khác nhau, và người không có đủ các dấu hiệu vẫn có thể cần được giúp đỡ.
+  loai: loi-khuyen
+  nguon:
+  - nhs-tt
+  - icd11-cddr
+  trich: You do not need to have a diagnosed mental health condition. [NHS, về việc dùng dịch vụ trị liệu tâm lý]
+  vi_tri: NHS talking therapies, How to get talking therapies
+  ket_qua: da-sua
+  ghi_chu: Thêm vế sau ("người không có đủ các dấu hiệu vẫn có thể cần được giúp đỡ") để danh sách không bị đọc như ngưỡng "phải đủ mới được giúp".
+- id: n21
+  cau: WHO kể tên kích hoạt hành vi, CBT, liệu pháp liên cá nhân (IPT) và liệu pháp giải quyết vấn đề là liệu pháp tâm lý hiệu quả với trầm cảm, và xem liệu pháp tâm lý là hướng điều trị đầu tiên.
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  - nice-ng222
+  trich: 'Psychological treatments are the first treatments for depression. … Effective psychological treatments for depression include: behavioural activation, cognitive behavioural therapy, interpersonal psychotherapy, problem-solving therapy.'
+  vi_tri: WHO, Diagnosis and treatment; NICE NG222 bảng 1, 2
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "liệu pháp nhận thức – hành vi (CBT) giúp nhận diện…; IPT…; kích hoạt hành vi… Các hướng dẫn như NICE (Anh) xếp các liệu pháp này ở vị trí ưu tiên, đặc biệt với trầm cảm nhẹ đến trung bình." NICE NG222 xếp tự giúp có hướng dẫn đứng đầu bảng 1 (trầm cảm nhẹ hơn) và kết hợp CBT với thuốc đứng đầu bảng 2 (nặng hơn); câu "xếp ưu tiên" không khớp hẳn. Nay dẫn WHO.'
+- id: n22
+  cau: Liệu pháp có thể làm trực tiếp, trực tuyến, hay qua tài liệu tự giúp có người hướng dẫn.
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  - nice-ng222
+  trich: 'Talk therapy can happen in person or online. Psychological treatments may be accessed through self-help manuals, websites and apps. [WHO]; Guided self-help: Printed or digital materials … Support from a trained practitioner [NICE bảng 1]'
+  vi_tri: WHO, Diagnosis and treatment; NICE bảng 1
+  ket_qua: da-sua
+  ghi_chu: Thêm mới.
+- id: n23
+  cau: Theo WHO, thuốc chống trầm cảm có thể dùng kết hợp với liệu pháp tâm lý khi trầm cảm ở mức vừa và nặng, và không cần cho trầm cảm nhẹ.
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  trich: They can be combined with antidepressant medicines in moderate and severe depression. Antidepressant medicines are not needed for mild depression.
+  vi_tri: WHO, Diagnosis and treatment
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "các nhóm SSRI, SNRI thường được nhắc đến như lựa chọn đầu tay trong hướng dẫn điều trị trầm cảm trung bình đến nặng — chỉ theo chỉ định và theo dõi của bác sĩ." NICE NG222 bảng 2 đặt thuốc (SSRI, SNRI hay loại khác) là một trong nhiều lựa chọn cho trầm cảm nặng hơn, sau kết hợp, CBT cá nhân, kích hoạt hành vi; "đầu tay" quá mạnh. Viết lại theo WHO, ở mức giáo dục chung, không nêu tên thuốc. chỗ khó: lời về thuốc trong bài Sức khỏe tâm thần.'
+- id: n24
+  cau: Hướng dẫn NICE (Anh, 2022) khuyên không dùng thuốc chống trầm cảm thường quy làm lựa chọn đầu tiên cho trầm cảm nhẹ hơn, trừ khi người bệnh đã được giải thích đủ và muốn vậy.
+  loai: lam-sang
+  nguon:
+  - nice-ng222
+  trich: 1.5.3 Do not routinely offer antidepressant medication as first-line treatment for less severe depression. Only offer it if that is the person's informed preference. [2022]
+  vi_tri: NICE NG222, khuyến nghị 1.5.3
+  ket_qua: da-sua
+  ghi_chu: Thêm mới.
+- id: n25
+  cau: Bắt đầu, đổi hay ngừng thuốc là việc của bác sĩ cùng người bệnh, vì thuốc có tác dụng phụ và có thể gây triệu chứng khi ngừng.
+  loai: lam-sang
+  nguon:
+  - nice-ng222
+  - who-dep-2026
+  trich: 1.4.12 Advise people taking antidepressant medication to talk with the person who prescribed their medication … 1.4.13 … if they stop taking it abruptly, miss doses or do not take a full dose, they may have withdrawal symptoms. [NICE]; Health-care providers should keep in mind the possible adverse effects associated with antidepressant medicines [WHO]
+  vi_tri: NICE NG222 1.4.11–1.4.13; WHO
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Thuốc không gây nghiện theo nghĩa của chất gây nghiện, nhưng việc bắt đầu, đổi hay ngưng thuốc cần có hướng dẫn y khoa vì có thể có tác dụng phụ và triệu chứng khi ngưng đột ngột." Tách câu "không gây nghiện" sang mục Ngộ nhận (n38), viết thận trọng. chỗ khó: lời về thuốc.'
+- id: n26
+  cau: NICE xếp chương trình vận động theo nhóm, do người được đào tạo hướng dẫn, vào các lựa chọn cho trầm cảm nhẹ hơn.
+  loai: lam-sang
+  nguon:
+  - nice-ng222
+  trich: 'Group exercise: A group physical activity intervention provided by a trained practitioner. Uses a physical activity programme specifically designed for people with depression. [bảng 1, Treatment options for less severe depression]'
+  vi_tri: NICE NG222 bảng 1
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Vận động thể chất: các chương trình vận động nhóm có bằng chứng hỗ trợ, thường như một phần bổ sung chứ không thay thế điều trị chính." NICE xếp vận động nhóm là một lựa chọn điều trị đầu tay cho trầm cảm nhẹ hơn, không chỉ "bổ sung". Viết lại theo NICE. chỗ khó.'
+- id: n27
+  cau: Với trầm cảm nặng hơn, lựa chọn đứng đầu trong bảng của NICE là kết hợp CBT cá nhân với thuốc chống trầm cảm.
+  loai: lam-sang
+  nguon:
+  - nice-ng222
+  trich: Table 2 Treatment options for more severe depression in order of the committee's interpretation of their clinical and cost effectiveness … Combination of individual cognitive behavioural therapy (CBT) and an antidepressant
+  vi_tri: NICE NG222 bảng 2
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Kết hợp: với trầm cảm nặng hơn, bằng chứng ủng hộ việc kết hợp liệu pháp tâm lý và thuốc tốt hơn dùng đơn lẻ." Phần "tốt hơn dùng đơn lẻ" có hai phân tích tổng hợp không thống nhất (n31), nên câu này chỉ nói thứ tự trong bảng của NICE. chỗ khó.'
+- id: n28
+  cau: Hướng điều trị được chọn sau khi người có chuyên môn đánh giá trực tiếp và bàn với người bệnh; không có "một liều cho mọi người".
+  loai: loi-khuyen
+  nguon:
+  - nice-ng222
+  trich: 1.5.2 Discuss treatment options with people with a new episode of less severe depression, and match their choice of treatment to their clinical needs and preferences … reach a shared decision on a treatment choice
+  vi_tri: NICE NG222 1.5.2
+  ket_qua: dung
+  ghi_chu: Chữ cũ cùng ý ("phác đồ do bác sĩ hoặc nhà trị liệu có chuyên môn xây dựng sau khi đánh giá trực tiếp"); thêm "bàn với người bệnh" theo NICE.
+- id: n29
+  cau: Trầm cảm là một rối loạn có thật, được mô tả với tiêu chí rõ ràng trong các hệ thống chẩn đoán quốc tế (ICD-11, DSM-5-TR); không chỉ là "buồn nhiều hơn bình thường".
+  loai: nhan
+  nguon:
+  - icd11-cddr
+  - apa-dep
+  - who-dep-2026
+  trich: Depressive disorder … It is different from regular mood changes and feelings about everyday life [WHO]; Essential (required) features … Boundary with normality [ICD-11]
+  vi_tri: WHO Overview; CDDR tr. 212–214
+  nhan: vung-chac
+  co_so:
+  - icd11-cddr
+  - who-dep-2026
+  - apa-dep
+  ly_do: 'Câu nói về sự tồn tại của tiêu chí chẩn đoán chuẩn, không về nguyên nhân: cả ICD-11 (WHO) và DSM-5-TR (APA) đều có tiêu chí cụ thể, thời gian tối thiểu, ngưỡng suy giảm, tình trạng loại trừ, và ranh giới với nỗi buồn bình thường; WHO coi trầm cảm là rối loạn tâm thần phổ biến, khác dao động tâm trạng thường ngày. Nguồn chuẩn bậc 2 thống nhất.'
+  ket_qua: da-sua
+  ghi_chu: 'Ý chính cũ: "trầm cảm là một tình trạng sức khỏe có thật, có tiêu chí chẩn đoán rõ ràng"; thân cũ: "…mà là một chẩn đoán y khoa." Viết lại: "rối loạn… được mô tả với tiêu chí rõ ràng trong các hệ thống chẩn đoán quốc tế"; bỏ "chẩn đoán y khoa" (ICD-11 là phân loại của WHO, chẩn đoán do người có chuyên môn, kể cả nhà tâm lý lâm sàng).'
+- id: n30
+  cau: Các phân tích tổng hợp lớn cho thấy CBT (409 thử nghiệm) và các thuốc chống trầm cảm (522 thử nghiệm) đều hiệu quả hơn nhóm đối chứng hay giả dược.
+  loai: so-lieu
+  nguon:
+  - cuijpers2023
+  - cipriani2018
+  trich: We included 409 trials (518 comparisons) with 52,702 patients … CBT had moderate to large effects compared to control conditions such as care as usual and waitlist (g=0.79) [Cuijpers 2023]; we … included 522 trials comprising 116 477 participants. In terms of efficacy, all antidepressants were more effective than placebo, with ORs ranging between 2·13 … and 1·37 [Cipriani 2018]
+  vi_tri: tóm tắt của hai bài
+  ket_qua: da-sua
+  ghi_chu: 'Thân khung cũ: "Nhiều thử nghiệm ngẫu nhiên có đối chứng và phân tích tổng hợp cho thấy CBT, IPT, kích hoạt hành vi và các thuốc chống trầm cảm (SSRI/SNRI) giúp giảm triệu chứng ở một bộ phận đáng kể người bệnh." Thêm số và nguồn cụ thể.'
+- id: n31
+  cau: Kết hợp liệu pháp tâm lý với thuốc tốt hơn chỉ dùng thuốc; nó có tốt hơn chỉ dùng liệu pháp tâm lý hay không thì các phân tích tổng hợp chưa thống nhất.
+  loai: phat-hien
+  nguon:
+  - cuijpers2023
+  - cuijpers2020
+  trich: 'Combined treatment was more effective than pharmacotherapies alone at the short (g=0.51) and long term (g=0.32), but it was not more effective than CBT alone at either time point. [Cuijpers 2023]; combined treatment was more effective than psychotherapy alone (RR=1.27; 95% CI: 1.14-1.39) and pharmacotherapy alone (RR=1.25) in achieving response [Cuijpers 2020, mạng 101 nghiên cứu, phần lớn trầm cảm vừa đến nặng]'
+  vi_tri: tóm tắt Cuijpers 2020; Cuijpers 2023 tóm tắt và kết quả
+  ket_qua: da-sua
+  ghi_chu: 'chỗ khó: hai phân tích tổng hợp cùng nhóm tác giả cho kết quả khác nhau về kết hợp so với liệu pháp tâm lý đơn độc (2020: kết hợp hơn; 2023, riêng CBT: không hơn). Trang cũ: "bằng chứng ủng hộ việc kết hợp… tốt hơn dùng đơn lẻ" (một chiều). Nay nói cả hai.'
+- id: n32
+  cau: Liệu pháp tâm lý và thuốc chống trầm cảm giúp giảm triệu chứng ở nhiều người, nhưng không phải ở tất cả; mức hiệu quả trung bình ở mức vừa, nhỏ đi khi chỉ tính các nghiên cứu ít sai lệch, và khác nhau nhiều giữa các người.
+  loai: nhan
+  nguon:
+  - cuijpers2023
+  - cipriani2018
+  - who-dep-2026
+  trich: The effect size was smaller for studies with low risk of bias (g=0.60) and after adjusting for publication bias (g=0.47) … A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups [Cuijpers 2023]; Heterogeneity was very high (I2=85)
+  vi_tri: Cuijpers 2023, mục CBT versus control conditions
+  nhan: kha-vung
+  co_so:
+  - cuijpers2023
+  - cipriani2018
+  ly_do: 'Hai phân tích tổng hợp lớn (409 thử nghiệm CBT; 522 thử nghiệm thuốc) cùng chiều: hiệu quả hơn đối chứng, giả dược. Giới hạn: hiệu ứng vừa và giảm khi chỉ tính nghiên cứu ít sai lệch (0,79 → 0,60) hay hiệu chỉnh sai lệch xuất bản (0,47); dị biệt giữa các nghiên cứu rất cao (I2 = 85%); 42% đáp ứng với CBT, tức hơn một nửa không đáp ứng. Đạt Khá vững theo thước đo (nhiều nghiên cứu cùng chiều, kết quả khác nhau nhiều, nghi sai lệch xuất bản).'
+  ket_qua: da-sua
+  ghi_chu: 'Ý chính cũ: "các liệu pháp tâm lý và thuốc chống trầm cảm có hiệu quả" (Khá vững). Giữ nhãn, viết ý chính rõ hơn ("ở nhiều người, nhưng không phải ở tất cả"). chỗ khó: nhãn cho hiệu quả điều trị; có thể lập luận Vững chắc cho câu "hiệu quả hơn nhóm đối chứng" (hai phân tích tổng hợp lớn cùng chiều), nhưng ý chính nói về mức và độ đồng đều của hiệu quả, nơi bằng chứng có giới hạn (dị biệt rất lớn, sai lệch xuất bản), nên giữ Khá vững.'
+- id: n33
+  cau: Ý "trầm cảm do thiếu serotonin" từng rất phổ biến; một tổng quan năm 2022 không tìm thấy bằng chứng nhất quán cho ý này.
+  loai: phat-hien
+  nguon:
+  - moncrieff2023
+  trich: The serotonin hypothesis of depression is still influential. … The main areas of serotonin research provide no consistent evidence of there being an association between serotonin and depression, and no support for the hypothesis that depression is caused by lowered serotonin activity or concentrations.
+  vi_tri: Moncrieff 2023, tóm tắt (đăng trực tuyến 7/2022)
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Giả thuyết mất cân bằng hóa chất từng phổ biến nhưng nay được xem là đơn giản hóa quá mức." Viết cụ thể theo tổng quan Moncrieff.'
+- id: n34
+  cau: Nhiều nhà nghiên cứu phản bác tổng quan ấy, cho rằng hệ serotonin vẫn có liên quan đến trầm cảm.
+  loai: phat-hien
+  nguon:
+  - jauhar2023
+  trich: 'A leaky umbrella has little value: evidence clearly indicates the serotonin system is implicated in depression. [tên bài; 35 tác giả]'
+  vi_tri: Jauhar 2023, tên bài và danh sách tác giả (Europe PMC)
+  ket_qua: da-sua
+  ghi_chu: 'Thêm mới. Chỉ đọc tên bài (bài thư không có tóm tắt); câu trên trang chỉ nói điều tên bài nêu. chỗ khó: tranh luận còn mở.'
+- id: n35
+  cau: Theo WHO, trầm cảm hình thành từ sự tương tác phức tạp giữa các yếu tố xã hội, tâm lý và sinh học.
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  trich: Depression results from a complex interaction of social, psychological, and biological factors.
+  vi_tri: WHO, Contributing factors and prevention
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Giới nghiên cứu hiện nghiêng về mô hình đa yếu tố: gen, stress kéo dài, các kiểu suy nghĩ, môi trường xã hội và sức khỏe cơ thể tương tác với nhau." Nay dẫn WHO.'
+- id: n36
+  cau: Nghiên cứu sinh đôi ước tính gen giải thích khoảng 37% khác biệt về nguy cơ trầm cảm nặng.
+  loai: so-lieu
+  nguon:
+  - sullivan2000
+  trich: their statistical summation suggested that familial aggregation was due to additive genetic effects (point estimate of heritability of liability=37%, 95% CI=31%-42%), with a minimal contribution of environmental effects common to siblings
+  vi_tri: Sullivan 2000, tóm tắt (phân tích tổng hợp 5 nghiên cứu sinh đôi)
+  ket_qua: da-sua
+  ghi_chu: Thêm mới, thay câu cũ "Chưa có một xét nghiệm sinh học nào chẩn đoán được trầm cảm" (không tìm được nguồn chuẩn nói thẳng; APA chỉ nói xét nghiệm dùng để loại trừ bệnh khác).
+- id: n37
+  cau: 'Vai trò cụ thể của serotonin trong trầm cảm: đang tranh cãi.'
+  loai: nhan
+  nguon:
+  - moncrieff2023
+  - jauhar2023
+  vi_tri: khung "Mức độ chắc chắn"
+  nhan: tranh-cai
+  co_so:
+  - moncrieff2023
+  - jauhar2023
+  ly_do: 'Một tổng quan ô (umbrella review) có đăng ký trước (Moncrieff 2022) kết luận không có bằng chứng nhất quán cho giả thuyết serotonin thấp; một nhóm lớn nhà nghiên cứu phản bác trên cùng tạp chí (Jauhar 2023). Bằng chứng chất lượng cao được diễn giải trái ngược: Đang tranh cãi.'
+  ket_qua: da-sua
+  ghi_chu: 'Ý chính cũ: "nguyên nhân gốc rễ của trầm cảm" (Đang tranh cãi). Đổi đối tượng của nhãn: "nguyên nhân gồm nhiều yếu tố" thì ít tranh cãi (WHO); điều đang tranh cãi bằng các tổng quan có chất lượng là vai trò của serotonin. chỗ khó: đổi ý chính của nhãn.'
+- id: n38
+  cau: 'Ngộ nhận "Trầm cảm là yếu đuối, cố lên là hết" là sai: trầm cảm có thể xảy ra với bất kỳ ai, hình thành từ nhiều yếu tố, có cách điều trị hiệu quả; ý chí đơn thuần không phải là cách điều trị.'
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  - paho-living
+  trich: Depression can happen to anyone. [WHO]; There are effective treatments for depression. [WHO]; Depression can happen to anyone and is not a sign of weakness. [WHO/PAHO]
+  vi_tri: WHO Overview, Diagnosis and treatment; PAHO 2021
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Trầm cảm liên quan đến nhiều yếu tố sinh học, tâm lý và xã hội; lời khuyên cố lên không điều trị được nó, và còn khiến người bệnh thêm mặc cảm." Bỏ "khiến người bệnh thêm mặc cảm" (không nguồn); dẫn WHO, PAHO.'
+- id: n39
+  cau: Thuốc chống trầm cảm không gây thèm muốn hay cảm giác "phê" như chất gây nghiện, nhưng cơ thể có thể quen thuốc nên khi ngừng, nhất là ngừng đột ngột, một số người bị triệu chứng ngừng thuốc.
+  loai: lam-sang
+  nguon:
+  - rcpsych-ad
+  - nice-ng222
+  - apa-dep
+  trich: 'It may feel as though you are addicted … This is not quite the same as being addicted. Addiction generally means that you: feel an urge or craving … experience pleasure, or a high … It can be hard to stop taking antidepressants, but this is more accurately described as physical dependence. [RCPsych]; if they stop taking it abruptly … they may have withdrawal symptoms. Also advise them that withdrawal symptoms do not affect everyone [NICE 1.4.13]; These medications are not sedatives, uppers or tranquilizers. They are not addictive. [APA]'
+  vi_tri: RCPsych, Are antidepressants addictive…?; NICE 1.4.13; APA
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Sai ở cách diễn đạt. Thuốc không tạo cảm giác phê như chất gây nghiện, và nhiều người chỉ dùng trong một giai đoạn. Nhưng ngưng thuốc đột ngột có thể gây khó chịu — vì vậy mọi thay đổi liều đều cần bác sĩ hướng dẫn." chỗ khó: nguồn chuẩn diễn đạt khác nhau: APA viết "They are not addictive"; RCPsych viết không hẳn là nghiện nhưng là lệ thuộc thể chất; mức độ phổ biến và độ nặng của triệu chứng ngừng thuốc còn tranh cãi trong y văn. Trang viết theo RCPsych và NICE (thận trọng hơn), mở đầu "Không đúng như vậy, nhưng cũng có phần thật".'
+- id: n40
+  cau: NICE ghi rằng phần lớn người dùng ngừng thuốc được, thường bằng cách giảm liều dần; mọi thay đổi về thuốc cần bàn với người kê đơn.
+  loai: lam-sang
+  nguon:
+  - nice-ng222
+  trich: 1.4.12 Advise people taking antidepressant medication to talk with the person who prescribed their medication … explain that it is usually necessary to reduce the dose in stages over time (called tapering) but that most people stop antidepressants successfully.
+  vi_tri: NICE NG222 1.4.12
+  ket_qua: da-sua
+  ghi_chu: Thay câu cũ "nhiều người chỉ dùng trong một giai đoạn" (không nguồn).
+- id: n41
+  cau: ICD-11 ghi có người trầm cảm vẫn duy trì được công việc, nhưng chỉ nhờ cố gắng nhiều hơn hẳn; vẻ ngoài không cho biết tình trạng bên trong.
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  trich: If functioning is maintained, it is only through significant additional effort. … the affective component … may be primarily experienced and expressed as irritability, or as an absence of emotional experience
+  vi_tri: CDDR tr. 213
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "Nhiều người trầm cảm vẫn đi làm, cười nói xã giao, và che giấu rất giỏi." Không tìm được nguồn chuẩn cho "che giấu rất giỏi"; viết lại theo ICD-11.'
+- id: n42
+  cau: Nên cân nhắc tìm người có chuyên môn khi nỗi buồn hay trống rỗng kéo dài từ hai tuần trở lên mà không dịu, ảnh hưởng rõ đến học tập, công việc, giấc ngủ, ăn uống, các mối quan hệ, hoặc khi thấy "không ổn" kéo dài; không cần "đủ nặng".
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - apa-dep
+  - nhs-tt
+  trich: Seek care if you have symptoms of depression. [WHO]; symptoms occur for most of the day, nearly every day, for more than two weeks, along with a clear change in day-to-day functioning [APA]; You do not need to have a diagnosed mental health condition. [NHS]
+  vi_tri: WHO; APA; NHS
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "kéo dài nhiều tuần không dịu". Đổi thành "từ hai tuần trở lên" cho khớp trang Hỗ trợ (đã khóa) và tiêu chí thời gian; thêm "thấy không ổn kéo dài".'
+- id: n43
+  cau: 'Có ý nghĩ về cái chết hay tự làm hại bản thân thì tìm giúp đỡ ngay: gọi cấp cứu hay đến khoa cấp cứu gần nhất, và nói với một người bạn tin tưởng.'
+  loai: loi-khuyen
+  nguon:
+  - who-dep-2026
+  - paho-living
+  trich: If you think you are in immediate danger of harming yourself, contact any available emergency services or a crisis line. … talk to someone you trust about how you feel [WHO]; If they are thinking about self-harm … don't leave them alone. Seek help from the emergency services or a health-care professional. [PAHO]
+  vi_tri: WHO, Self-care; PAHO 2021
+  ket_qua: da-sua
+  ghi_chu: 'Chữ cũ: "…trường hợp này cần giúp đỡ ngay (gọi 115), không chờ." Bỏ số 115 khỏi bài: lời giao D7-L1 chỉ dẫn trang Hỗ trợ (số đã kiểm và có hạn ở đó). Viết theo hướng dẫn đưa tin an toàn của WHO: không chi tiết, kèm đường tới trợ giúp.'
+- id: n44
+  cau: Trang Hỗ trợ có số khẩn cấp và các đường dây hỗ trợ đã kiểm chứng.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trên src/content/docs/ho-tro/index.md (đã khóa): có 115, 113, 111, Ngày Mai, CSAGA, kèm ngày kiểm.'
+- id: n45
+  cau: Trầm cảm và lo âu thường đi cùng nhau (lời dẫn tới bài Lo âu).
+  loai: lam-sang
+  nguon:
+  - who-anx-2026
+  - icd11-cddr
+  trich: Anxiety disorders increase the risk for depression [WHO]; Social anxiety disorder frequently co-occurs with other anxiety and fear-related disorders and depressive disorders. [ICD-11]
+  vi_tri: WHO Anxiety, Symptoms and patterns; CDDR tr. 285
+  ket_qua: dung
+- id: n46
+  cau: Mục Đọc thêm link tới các bài Lo âu, Tìm giúp đỡ, Đối phó stress.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trên trang: ba link nội bộ đúng đường dẫn (tests/link.test.mjs kiểm).'
+- id: n47
+  cau: Ngưỡng "từ năm triệu chứng trở lên trong chín triệu chứng, trong hai tuần" của DSM-5-TR và câu hỏi về ngưỡng ấy.
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  trich: The concurrent presence of at least five of the following characteristic symptoms occurring for most of the day, nearly every day, during a period lasting at least 2 weeks is required for diagnosis. At least one symptom from the affective cluster must be present.
+  vi_tri: CDDR tr. 212
+  ket_qua: da-bo
+  ghi_chu: 'Chữ cũ (thân bài): "một giai đoạn trầm cảm nặng được xem xét khi trong cùng một khoảng hai tuần, người đó có từ năm triệu chứng trở lên trong một danh sách chín triệu chứng…"; câu hỏi 2: "Theo DSM-5-TR, để xem xét chẩn đoán… cần điều kiện nào? … Từ năm triệu chứng trở lên…". Nội dung đúng (ICD-11 cũng đòi ít nhất 5), nhưng bỏ ngưỡng đếm và câu hỏi về ngưỡng: danh sách kèm ngưỡng đếm là bảng tự chấm điểm, trái quy tắc không có công cụ tự chẩn đoán (chuan-kiem-dinh mục 5, lời giao D7-L1). Thân bài giữ mô tả các nhóm triệu chứng (n15–n18), không đếm.'
+- id: n48
+  cau: 'Câu hỏi 1: theo ICD-11, giai đoạn trầm cảm khác nỗi buồn ở mức độ, độ lan rộng, thời gian kéo dài (ít nhất hai tuần, gần như mỗi ngày, suy giảm rõ); trầm cảm vẫn có thể bắt đầu sau một biến cố.'
+  loai: lam-sang
+  nguon:
+  - icd11-cddr
+  trich: Some depression of mood is a normal reaction to severe adverse life events and problems (e.g. divorce, job loss), and is common in the community. A depressive episode is differentiated from this common experience by the severity, range and duration of symptoms. If the diagnostic requirements for a depressive episode listed above are met, a depressive episode should still be considered present, even if there are identifiable life events that appear to have triggered the episode.
+  vi_tri: CDDR tr. 212–213
+  ket_qua: da-sua
+  ghi_chu: 'Câu cũ: đáp án "trong khi nỗi buồn thường gắn với một sự việc và tự dịu đi", phương án nhiễu "Trầm cảm chỉ xảy ra sau một biến cố lớn". Đáp án cũ ngầm nói trầm cảm không gắn sự việc (sai, xem n5). Phương án nhiễu mới: "Trầm cảm không bao giờ có nguyên nhân rõ ràng; nỗi buồn thì luôn có" (sai theo ICD-11).'
+- id: n49
+  cau: 'Câu hỏi 2: mô tả chẩn đoán không dùng để tự chẩn đoán vì chẩn đoán cần trò chuyện, hỏi tiền sử, loại trừ nguyên nhân khác (bệnh cơ thể, thuốc, chất, lưỡng cực, tang chế) và đánh giá suy giảm.'
+  loai: lam-sang
+  nguon:
+  - apa-dep
+  - icd11-cddr
+  trich: a thorough diagnostic evaluation that includes a comprehensive interview … personal, medical and family histories … physical examination [APA]
+  vi_tri: APA; CDDR tr. 213
+  ket_qua: da-sua
+  ghi_chu: Câu cũ (câu hỏi 3) cùng ý; thêm "thuốc", "rối loạn lưỡng cực", "tang chế" cho khớp n18. Phương án nhiễu giữ.
+- id: n50
+  cau: 'Câu hỏi 3: liệu pháp tâm lý (CBT, IPT, kích hoạt hành vi) và thuốc chống trầm cảm đều có bằng chứng; hướng điều trị do người có chuyên môn cùng người bệnh chọn; WHO xem liệu pháp tâm lý là hướng đầu tiên, thuốc có thể kết hợp khi vừa và nặng.'
+  loai: lam-sang
+  nguon:
+  - who-dep-2026
+  - nice-ng222
+  trich: Psychological treatments are the first treatments for depression. They can be combined with antidepressant medicines in moderate and severe depression.
+  vi_tri: WHO; NICE 1.5.2
+  ket_qua: da-sua
+  ghi_chu: 'Câu cũ (câu hỏi 4): đáp án "…với trường hợp nặng hơn, kết hợp thường tốt hơn dùng đơn lẻ", phương án nhiễu "Vận động thể chất có thể thay thế hoàn toàn điều trị chuyên môn". Bỏ vế "kết hợp tốt hơn" (n31); đổi phương án nhiễu thành "Tự tập thể dục là đủ cho mọi trường hợp…, không cần ai đánh giá", vì NICE có vận động nhóm có hướng dẫn là một lựa chọn điều trị (n26).'
+- id: n51
+  cau: 'Câu hỏi 4: câu "Cố lên, do em yếu đuối thôi" ít giúp được vì trầm cảm không phải dấu hiệu yếu đuối; điều người thân có thể làm là lắng nghe không phán xét, kiên nhẫn, khuyến khích và giúp tìm người có chuyên môn.'
+  loai: loi-khuyen
+  nguon:
+  - paho-living
+  - who-dep-2026
+  trich: Depression can happen to anyone and is not a sign of weakness. … Make it clear that you want to help, listen without judgement, and offer support. … Encourage them to seek professional help and offer to go with them to appointments. … Be patient
+  vi_tri: WHO/PAHO 2021
+  ket_qua: da-sua
+  ghi_chu: 'Câu cũ (câu hỏi 5): "Người thân nói cố lên, nghĩ tích cực vào… Vì sao lời khuyên này có hại? → Vì nó tầm thường hóa… khiến người bệnh thêm mặc cảm và ít dám tìm sự giúp đỡ". WHO/PAHO lại khuyên người thân "Encourage them to focus on the positive", nên "nghĩ tích cực" không phải điều có hại; đổi lời trong câu hỏi thành "do em yếu đuối thôi" (trái với "not a sign of weakness") và bỏ "có hại", "thêm mặc cảm" (không nguồn).'
+- id: n52
+  cau: Giải thích câu hỏi 4 nhắc mục "Khi người thân đang gặp khó khăn" ở trang Hỗ trợ.
+  loai: ve-site
+  ket_qua: dung
+  ghi_chu: 'Đã kiểm trên src/content/docs/ho-tro/index.md: có mục "## Khi người thân đang gặp khó khăn".'
+- id: n53
+  cau: Mục Nguồn cũ ghi DSM-5-TR "5/9 triệu chứng trong hai tuần" và NICE NG222 "SSRI/SNRI là thuốc đầu tay cho trầm cảm trung bình–nặng"; dòng "Trang Hỗ trợ của Psyche Zero" nằm trong mục Nguồn.
+  loai: lam-sang
+  nguon:
+  - nice-ng222
+  vi_tri: mục Nguồn
+  ket_qua: da-sua
+  ghi_chu: 'Chú thích nguồn cũ có hai điều: ngưỡng 5/9 (bỏ cùng n47) và "SSRI/SNRI là thuốc đầu tay cho trầm cảm trung bình–nặng" (NG222 không xếp như vậy, xem n23). Mục Nguồn mới chỉ liệt kê nguồn, không chú thích nội dung. Dòng tham chiếu trang Hỗ trợ (không phải nguồn) bỏ khỏi mục Nguồn, theo báo cáo D1.2 mục 4; link Hỗ trợ đã ở thân bài.'
+doi_chu:
+- cu: 'description: "Bản nháp: phân biệt nỗi buồn thông thường với rối loạn trầm cảm nặng theo DSM-5-TR, các hướng điều trị có bằng chứng ở mức liệt kê, và những ngộ nhận phổ biến."'
+  moi: 'description: "Nỗi buồn thông thường khác rối loạn trầm cảm ở mức độ, độ lan rộng và thời gian kéo dài, theo mô tả của ICD-11 và DSM-5-TR; …"'
+  ly_do: Hồ sơ n1.
+- cu: Hộp warning "Bản nháp đang chờ rà soát chuyên môn"
+  moi: Hộp note "Trước khi đọc" (không tự chẩn đoán, link Hỗ trợ) và ::tom-tat
+  ly_do: Hồ sơ n2, n3; dải chờ rà soát làm ở khung trang (nhánh them/cho-chuyen-gia); Bố cục C (hộp Tóm tắt nhanh).
+- cu: 'Tự trải nghiệm: "Hãy tưởng tượng hai người bạn của bạn."; hộp "Điểm khác biệt cốt lõi" nói trầm cảm "không gắn với một sự kiện cụ thể — đó là ranh giới mà y học dùng…"'
+  moi: '"(ví dụ giả định của chúng tôi)"; hộp viết lại theo ICD-11 (mức độ, độ lan rộng, thời gian), thêm lời dẫn Hỗ trợ'
+  ly_do: Hồ sơ n4, n5, n6.
+- cu: Mục "Điều gì đang xảy ra?" (buồn "có đối tượng, có nhịp"; trầm cảm nặng khác ở ba điểm; "trống rỗng, tê liệt")
+  moi: Viết lại theo ICD-11 và WHO; thêm số liệu WHO 2023 có mốc
+  ly_do: Hồ sơ n7–n11.
+- cu: 'Mục "Chuyên gia phân biệt bằng cách nào?": DSM-5-TR, 5/9 triệu chứng, bảy triệu chứng còn lại, ba điều kiện đi kèm'
+  moi: ICD-11 và DSM-5-TR; danh sách các nhóm triệu chứng không có ngưỡng đếm, ghi rõ "không phải bảng để tự chấm điểm"; quy trình chẩn đoán theo APA
+  ly_do: Hồ sơ n12–n20, n47.
+- cu: Mục "Các hướng điều trị có bằng chứng" (NICE xếp ưu tiên; SSRI, SNRI đầu tay cho trung bình đến nặng; vận động "bổ sung chứ không thay thế"; kết hợp tốt hơn đơn lẻ)
+  moi: 'Theo WHO và NICE NG222: liệu pháp tâm lý là hướng đầu tiên; thuốc kết hợp khi vừa và nặng, không thường quy cho nhẹ hơn; vận động nhóm là một lựa chọn; kết hợp đứng đầu bảng cho nặng hơn'
+  ly_do: Hồ sơ n21–n28.
+- cu: 'Ba khung nhãn: Vững chắc (tình trạng có thật, "chẩn đoán y khoa"); Khá vững (liệu pháp và thuốc có hiệu quả); Đang tranh cãi (nguyên nhân gốc rễ; "Chưa có một xét nghiệm sinh học nào…")'
+  moi: Vững chắc (tiêu chí trong hệ thống chẩn đoán quốc tế); Khá vững (giúp nhiều người nhưng không phải tất cả, kèm số); Đang tranh cãi (vai trò của serotonin)
+  ly_do: Hồ sơ n29–n37.
+- cu: Ba ngộ nhận ("khiến người bệnh thêm mặc cảm"; "Sai ở cách diễn đạt… nhiều người chỉ dùng trong một giai đoạn"; "che giấu rất giỏi")
+  moi: Viết lại theo WHO, PAHO, RCPsych, NICE, ICD-11
+  ly_do: Hồ sơ n38–n41.
+- cu: 'Khi nào nên tìm sự giúp đỡ: "kéo dài nhiều tuần"; "(gọi 115)"'
+  moi: '"từ hai tuần trở lên"; "gọi cấp cứu hay đến khoa cấp cứu", số ở trang Hỗ trợ'
+  ly_do: Hồ sơ n42–n44.
+- cu: Năm câu hỏi (câu 2 về ngưỡng 5/9 của DSM-5-TR)
+  moi: Bốn câu hỏi; bỏ câu về ngưỡng; sửa câu 1, câu "kết hợp", câu "cố lên"
+  ly_do: Hồ sơ n47–n51.
+- cu: 'Mục Nguồn: DSM-5-TR (kèm chú thích 5/9), NICE NG222 (kèm chú thích SSRI/SNRI đầu tay), dòng "Trang Hỗ trợ của Psyche Zero"'
+  moi: Mục Nguồn liệt kê ICD-11 CDDR, WHO, APA, NICE, các phân tích tổng hợp đã dùng; bỏ chú thích nội dung và dòng tham chiếu trang Hỗ trợ
+  ly_do: Hồ sơ n53; báo cáo D1.2 mục 4.
