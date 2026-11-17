@@ -33,7 +33,7 @@ Nhóm nghiên cứu cho người Himba — một cộng đồng sống tách bi�
 
 ### Độ lớn điển hình
 
-Với các cấu hình kinh điển, vòng tròn trung tâm có thể "nhìn" to hơn hoặc nhỏ hơn khoảng **10–20%** so với kích thước thật, tùy cách vẽ (theo các nghiên cứu trước được tổng hợp trong [Mruczek và cộng sự, 2015](https://doi.org/10.3389/fnhum.2015.00077)).
+Độ lớn của ảo giác phụ thuộc nhiều vào cách vẽ. Một khảo sát có hệ thống với 30 cấu hình thấy ảo giác từ không có tới khoảng **10%** kích thước vòng trung tâm, và một phần ba số cấu hình không có ảo giác ([Knol và cộng sự, 2015](https://doi.org/10.3389/fpsyg.2015.01679)); với cấu hình kinh điển, một số nghiên cứu khác báo khoảng 10–20% (theo [Mruczek và cộng sự, 2015](https://doi.org/10.3389/fnhum.2015.00077), tổng hợp).
 
 ### Đừng nhầm với nghiên cứu về ảo giác Müller-Lyer { #dinh-chinh-segall-va-cong-su-1963-1966-khong-do-ao-giac-nay }
 
@@ -41,8 +41,8 @@ Nghiên cứu xuyên văn hóa nổi tiếng của Segall, Campbell và Herskovi
 
 ## Mức độ chắc chắn
 
-:::vung-chac[vòng trung tâm bị vòng lớn bao quanh “nhìn” nhỏ hơn]
-Hiệu ứng tương phản kích thước này được đo trong nhiều nghiên cứu với cấu hình kinh điển (vòng lớn bao quanh một bên, vòng nhỏ bao quanh một bên; tổng hợp trong Mruczek và cộng sự, 2015), và một lần tái lập ở bốn phòng thí nghiệm với 144 người xác nhận ảo giác ảnh hưởng tới cả động tác cầm nắm (Kopiske và cộng sự, 2016).
+:::kha-vung[vòng trung tâm bị vòng lớn bao quanh “nhìn” nhỏ hơn]
+Với các cấu hình kinh điển, hiệu ứng tương phản kích thước này được đo trong nhiều nghiên cứu (vòng lớn bao quanh một bên, vòng nhỏ bao quanh một bên; tổng hợp trong Mruczek và cộng sự, 2015), và một lần tái lập ở bốn phòng thí nghiệm với 144 người xác nhận ảo giác ảnh hưởng tới cả động tác cầm nắm (Kopiske và cộng sự, 2016). Độ lớn thay đổi nhiều theo cách vẽ, có cấu hình không có ảo giác (Knol và cộng sự, 2015), và chưa có phân tích tổng hợp, nên nhãn dừng ở "khá vững".
 :::
 
 :::tranh-cai[vì sao có ảo giác, và khác biệt văn hóa lớn đến đâu]
@@ -53,7 +53,7 @@ Các cách giải thích (tương phản kích thước, xử lý theo ngữ c�
 
 - **Tương phản kích thước:** não đánh giá vật theo vật xung quanh, giống như cùng một người đứng cạnh trẻ con thì "nhìn" cao hơn khi đứng cạnh người cao lớn.
 - **Kích thước và khoảng cách của vòng bao quanh:** theo Roberts, Harris và Yates (2005), hai yếu tố chính là kích thước của vòng bao quanh so với vòng trung tâm, và khoảng cách giữa chúng; cân bằng giữa hai yếu tố quyết định vòng trung tâm trông nhỏ đi hay to ra. Ảnh hưởng của kích thước còn hay bị lẫn với độ khép kín của vành bao quanh ([Roberts, Harris và Yates, 2005](https://doi.org/10.1068/p5273)).
-- **Xử lý toàn cục so với cục bộ:** xu hướng nhìn cả cụm (toàn cục) khiến các vòng bao quanh "kéo" cảm nhận về vòng trung tâm; người có xu hướng chú ý vào chi tiết cục bộ ít bị lừa hơn — phù hợp với phát hiện ở người Himba (de Fockert và cộng sự, 2007).
+- **Xử lý toàn cục so với cục bộ:** một giả thuyết cho rằng xu hướng nhìn cả cụm (toàn cục) khiến các vòng bao quanh "kéo" cảm nhận về vòng trung tâm, nên người chú ý chi tiết cục bộ ít bị lừa hơn; điều này phù hợp với phát hiện ở người Himba (de Fockert và cộng sự, 2007). Nhưng ở cấp từng người, một nghiên cứu công bố năm 2025 với 145 người không ủng hộ: người thiên về chi tiết cục bộ lại bị lừa nhiều hơn ([Chen và Aimola Davies, 2025](https://doi.org/10.1177/03010066251395949)).
 
 Các cách giải thích này không loại trừ nhau.
 
@@ -63,8 +63,8 @@ Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào đo ảo 
 
 ## Ngộ nhận liên quan
 
-- **"Nhìn to hơn nghĩa là to hơn."** Không — như nút "Đo kích thước thật" cho thấy, hai vòng trung tâm bằng nhau tuyệt đối. Ảo giác không phải lỗi của mắt bạn; đó là cách não diễn giải ngữ cảnh, và hệ thị giác bình thường nào cũng bị lừa.
-- **Nhầm với ảo giác Delboeuf.** Cả hai đều là ảo giác về kích thước vòng tròn, nhưng là hai hình khác nhau: Ebbinghaus là ảo giác tương phản kích thước (vòng trông khác đi theo hướng ngược với vật xung quanh), còn Delboeuf (mô tả năm 1892) là ảo giác đồng hóa kích thước (Mruczek và cộng sự, 2015).
+- **"Nhìn to hơn nghĩa là to hơn."** Không — như nút "Đo kích thước thật" cho thấy, hai vòng trung tâm bằng nhau tuyệt đối. Ảo giác không phải lỗi của mắt bạn; đó là cách não diễn giải ngữ cảnh, và hầu hết người có thị giác bình thường đều bị lừa, ở mức độ khác nhau.
+- **Nhầm với ảo giác Delboeuf.** Cả hai đều là ảo giác về kích thước vòng tròn nhưng là hai hình khác nhau: Delboeuf dùng vòng tròn đồng tâm, Ebbinghaus đặt vòng tròn ở giữa các vòng khác. Cả hai có thể làm vòng trung tâm trông to hơn hay nhỏ hơn, tùy kích thước và khoảng cách của vòng bao quanh (Roberts, Harris và Yates, 2005).
 - **"Ai cũng bị lừa như nhau."** Không hẳn: de Fockert và cộng sự (2007) thấy người Himba bị ảo giác ít hơn người Anh, dù cách giải thích khác biệt này còn bị tranh cãi (xem mục Mức độ chắc chắn).
 
 ## Thử suy ngẫm
@@ -101,7 +101,9 @@ Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào đo ảo 
 
 - Amir, D., & Firestone, C. (2026). Is visual perception WEIRD? The Müller-Lyer illusion and the cultural byproduct hypothesis. *Psychological Review*, 133(5), 1082–1108. <https://doi.org/10.1037/rev0000549>
 - Burton, G. (2001). The tenacity of historical misinformation: Titchener did not invent the Titchener illusion. *History of Psychology*, 4(3), 228–244. <https://doi.org/10.1037/1093-4510.4.3.228>
+- Chen, H., & Aimola Davies, A. M. (2025). Global–local processing and the Ebbinghaus illusion: Group and individual differences in young and older adults. *Perception*, 55(4), 384–411. <https://doi.org/10.1177/03010066251395949>
 - de Fockert, J., Davidoff, J., Fagot, J., Parron, C., & Goldstein, J. (2007). More accurate size contrast judgments in the Ebbinghaus illusion by a remote culture. *Journal of Experimental Psychology: Human Perception and Performance*, 33(3), 738–742. <https://doi.org/10.1037/0096-1523.33.3.738>
+- Knol, H., Huys, R., Sarrazin, J.-C., & Jirsa, V. K. (2015). Quantifying the Ebbinghaus figure effect: Target size, context size, and target-context distance determine the presence and direction of the illusion. *Frontiers in Psychology*, 6, 1679. <https://doi.org/10.3389/fpsyg.2015.01679>
 - Kopiske, K. K., Bruno, N., Hesse, C., Schenk, T., & Franz, V. H. (2016). The functional subdivision of the visual brain: Is there a real illusion effect on action? A multi-lab replication study. *Cortex*, 79, 130–152. <https://doi.org/10.1016/j.cortex.2016.03.020>
 - Mruczek, R. E. B., Blair, C. D., Strother, L., & Caplovitz, G. P. (2015). The Dynamic Ebbinghaus: Motion dynamics greatly enhance the classic contextual size illusion. *Frontiers in Human Neuroscience*, 9, 77. <https://doi.org/10.3389/fnhum.2015.00077>
 - Roberts, B., Harris, M. G., & Yates, T. A. (2005). The roles of inducer size and distance in the Ebbinghaus illusion (Titchener circles). *Perception*, 34(7), 847–856. <https://doi.org/10.1068/p5273>
