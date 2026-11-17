@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L2)
       review: "Claude Opus 5.5 (agent review D5-L2, 10/11/2026)"
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l2-kiem-mau.yml), đạt, 10/11/2026
+  - so: 2
+    ngay: 2026-11-17
+    nhanh: mo/sua-nho-dot-8
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (agent mở khóa mo/sua-nho-dot-8, 17/11/2026): khung Đang tranh cãi và mục Lý thuyết không còn gán cách hiểu 'nhân viên ngân hàng và không hoạt động nữ quyền' cho Hertwig, theo Hertwig & Gigerenzer (1999) như công cụ trai-nghiem/linda (n11); thêm n73, n74, sửa ly_do n38. Các nhận định cùng đoạn n39–n44, n62 không đổi chữ, giữ kết quả lần 1"
+      luot_2: "chờ lượt 2 bổ sung (n38, n73, n74: plans/lam-lai/bao-cao/sua-nho-dot-8-nhan-dinh.yml)"
+      review: null
+      kiem_mau: null
 nguon:
   - id: tversky1974
     ten: 'Tversky & Kahneman (1974), Science 185(4157), 1124–1131: toàn văn (PDF trong Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
@@ -49,6 +58,10 @@ nguon:
   - id: tim-kiem-vn-linda
     ten: 'Tìm trên OpenAlex (10/11/2026): "conjunction fallacy Vietnamese", "Linda problem Vietnam participants": không có nghiên cứu về lỗi conjunction ở người Việt (kết quả là bài không liên quan). Review tìm thêm Europe PMC (10/11/2026): "conjunction fallacy" AND (Vietnam OR Vietnamese), "Linda problem" AND (Vietnam OR Vietnamese): một bài không liên quan'
     link: https://api.openalex.org/works?search=conjunction%20fallacy%20Vietnamese
+  - id: hertwig1999
+    ten: "Hertwig & Gigerenzer (1999), J Behav Decis Mak 12(4), 275–305: toàn văn (PDF công khai, pure.mpg.de; review công cụ trai-nghiem/linda đã mở 17/11/2026, tr. 296–297). Lượt 1 lần này không mở lại được (pure.mpg.de trả 403 và trang kiểm tra bot, 17/11/2026): câu trích theo hồ sơ kiem-dinh/trai-nghiem/linda.yml n11"
+    link: https://doi.org/10.1002/%28SICI%291099-0771%28199912%2912%3A4%3C275%3A%3AAID-BDM323%3E3.0.CO%3B2-M
+    toan_van: true
 nhan_dinh:
   - id: n1
     cau: 'Mô tả (description): 85% sinh viên ở một phiên bản của nghiên cứu gốc chọn đáp án "chi tiết hơn" dù về mặt logic nó không thể đúng hơn.'
@@ -494,17 +507,16 @@ nhan_dinh:
       - gigerenzer1991
       - chandrashekar2021
       - tentori2004
-    ly_do: 'Bằng chứng hai chiều: hiệu ứng vẫn còn khi người tham gia có thể hiểu khác câu hỏi (82% ở thang 9 bậc; Tversky & Kahneman 1983) và trong lần làm lại có đăng ký trước (Chandrashekar 2021: không ủng hộ mơ hồ ngữ nghĩa), nhưng Gigerenzer (1991) và Tentori và cộng sự (2004) cho rằng cách hiểu từ ngữ và trường hợp đơn/tần suất quyết định việc đây có phải là "lỗi" hay không, và lần làm lại không thấy hiệu ứng ở bài James. Chưa có kết luận chung về cơ chế.'
+      - hertwig1999
+    ly_do: 'Bằng chứng hai chiều: hiệu ứng vẫn còn khi người tham gia có thể hiểu khác câu hỏi (82% ở thang 9 bậc; Tversky & Kahneman 1983) và trong lần làm lại có đăng ký trước (Chandrashekar 2021: không ủng hộ mơ hồ ngữ nghĩa), nhưng Gigerenzer (1991) và Tentori và cộng sự (2004) cho rằng cách hiểu từ ngữ và trường hợp đơn/tần suất quyết định việc đây có phải là "lỗi" hay không, và lần làm lại không thấy hiệu ứng ở bài James. Chưa có kết luận chung về cơ chế. Giả thuyết hàm ý hội thoại ("nhân viên ngân hàng và không hoạt động nữ quyền") là của Adler, Dulany & Hilton, Politzer & Noveck, và theo Hertwig & Gigerenzer (1999) các dự đoán của nó chưa được xác nhận (mở khóa 17/11/2026).'
     nguon:
       - tversky1983
       - gigerenzer1991
       - chandrashekar2021
       - tentori2004
+      - hertwig1999
     ket_qua: dung
-    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): giữ Đang tranh cãi: Chandrashekar 2021 (toàn văn) không ủng hộ mơ hồ ngữ nghĩa ở Linda nhưng không tái lập ở James; phía Gigerenzer, Tentori có bài phê bình. Đạt mục 4 (bằng chứng hai chiều).'
-    luot_2: dung
-    luot_2_nguon: [ "https://open.lnu.se/index.php/metapsychology/article/download/2474/2516", "https://doi.org/10.1016/s0364-0213(04)00004-7", "https://doi.org/10.1080/14792779143000033" ]
-    review: 'dung'
+    ghi_chu: 'Review (Claude Opus 5.5, 10/11/2026): giữ Đang tranh cãi: Chandrashekar 2021 (toàn văn) không ủng hộ mơ hồ ngữ nghĩa ở Linda nhưng không tái lập ở James; phía Gigerenzer, Tentori có bài phê bình. Đạt mục 4 (bằng chứng hai chiều). Mở khóa 17/11/2026 (mo/sua-nho-dot-8, Claude Opus 5.5): ý chính và nhãn không đổi; thân khung tách giả thuyết "không hoạt động nữ quyền" khỏi luận điểm của Hertwig (n73). Nhãn Đang tranh cãi vẫn đúng mục 4: phía phản biện (Gigerenzer 1991, Hertwig, Tentori 2004) và kết quả không đồng nhất của lần làm lại 2021 (Linda có, James không).'
   - id: n39
     cau: Theo Gigerenzer (1991), nhiều "lỗi" trong suy luận xác suất, trong đó có conjunction fallacy, thực ra không vi phạm lý thuyết xác suất nếu phân biệt xác suất của một trường hợp đơn lẻ với tần suất tương đối.
     loai: phat-hien
@@ -925,6 +937,29 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1037%252F0022-3514.87.6.796.zip/10.1037%252F0033-295X.90.4.293.pdf" ]
     review: 'sai'
+  - id: n73
+    cau: Một giả thuyết khác, của một số tác giả như Adler, Dulany và Hilton, Politzer và Noveck (theo Hertwig và Gigerenzer, 1999), là người nghe ngầm hiểu "(a) Linda là nhân viên ngân hàng" thành "nhân viên ngân hàng và không phải nhà hoạt động nữ quyền", và với cách hiểu đó thì chọn (b) không còn là lỗi logic; theo Hertwig và Gigerenzer, các dự đoán rút từ giả thuyết này chưa được xác nhận.
+    loai: lich-su
+    nguon:
+      - hertwig1999
+    trich: several researchers (e.g. Adler, 1984, 1991; Dulany and Hilton, 1991; Politzer and Noveck, 1991) argued that participants interpret the hypothesis "Linda is a bank teller" to mean "Linda is a bank teller and is not active in the feminist movement" (T&not-F implicature) … None of the predictions that Agnoli and Krantz (1989) attributed to this hypothesis have been corroborated
+    vi_tri: Hertwig & Gigerenzer 1999, tr. 296–297 (theo hồ sơ kiem-dinh/trai-nghiem/linda.yml n11, review mở toàn văn 17/11/2026)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (khung Đang tranh cãi): "Một dạng của cách hiểu này [cách hiểu từ ngữ của Hertwig] là người nghe ngầm hiểu … và không phải nhà hoạt động nữ quyền". Lý do: Hertwig & Gigerenzer (1999) ghi giả thuyết hàm ý T&not-F là của Adler, Dulany & Hilton, Politzer & Noveck, và các dự đoán của nó "None … have been corroborated"; luận điểm của Hertwig là về nghĩa của "probability" và "and". Viết cùng ý với công cụ đã khóa trai-nghiem/linda (n11). "Lỗi logic": với cách hiểu (a) = T&not-F, hai phát biểu loại trừ nhau nên chọn (b) không vi phạm quy tắc conjunction (suy ra từ định nghĩa, không cần nguồn riêng). Chưa có nhận định riêng cho câu này ở lần 1 (gộp trong n41).'
+    o_dau:
+      trai-nghiem/linda.md: Adler; Dulany và Hilton; Politzer và Noveck
+  - id: n74
+    cau: 'Mục Lý thuyết: theo các nhà phê bình như Gigerenzer và Hertwig, người tham gia hiểu câu hỏi theo thói quen giao tiếp, có thể hiểu "xác suất" và "và" khác nghĩa toán học (Tentori 2004 cũng nêu); một số tác giả khác cho rằng người tham gia hiểu (a) và (b) là hai nhóm loại trừ nhau; Tversky và Kahneman (1983) đã thử cách hiểu này, và theo Hertwig và Gigerenzer (1999), các dự đoán của giả thuyết ấy chưa được xác nhận.'
+    loai: phat-hien
+    nguon:
+      - chandrashekar2021
+      - tentori2004
+      - hertwig1999
+      - tversky1983
+    trich: participants’ understanding of natural language words such as “probability” and “and” diverged from that of experimenters (e.g., Hertwig & Gigerenzer, 1999) … We found no support for semantic ambiguity. (Chandrashekar 2021, Introduction) | several researchers (e.g. Adler, 1984, 1991; Dulany and Hilton, 1991; Politzer and Noveck, 1991) argued that participants interpret the hypothesis "Linda is a bank teller" to mean "Linda is a bank teller and is not active in the feminist movement" (T&not-F implicature) … None of the predictions that Agnoli and Krantz (1989) attributed to this hypothesis have been corroborated (Hertwig & Gigerenzer 1999) | Perhaps the subjects found the question too trivial to be taken literally and consequently interpreted the inclusive statement T as T&not-F (Tversky & Kahneman 1983, theo n41)
+    vi_tri: Chandrashekar và cộng sự 2021, mục mở đầu (toàn văn open.lnu.se, mở 17/11/2026); Hertwig & Gigerenzer 1999, tr. 296–297 (theo hồ sơ linda.yml n11); Tversky & Kahneman 1983, mục Transparent Tests (n41)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "họ có thể hiểu (a) và (b) là hai nhóm loại trừ nhau, hay hiểu \"xác suất\" và \"và\" khác nghĩa toán học (Tentori, 2004, cũng nêu điều này). Theo cách nhìn đó, phần lỗi nằm ở thiết kế câu hỏi …; Tversky và Kahneman (1983) không đồng ý và đã thử cách hiểu này." Lý do: cách hiểu "hai nhóm loại trừ nhau" (T&not-F) không phải của Gigerenzer và Hertwig (xem n73). Bỏ "không đồng ý" (không cần cho ý chính). Chưa có nhận định riêng cho gạch đầu dòng này ở lần 1.'
 doi_chu:
   - cu: (không có)
     moi: Hộp Tóm tắt nhanh (::tom-tat) dựng từ ý chính của các khung nhãn
@@ -983,3 +1018,10 @@ doi_chu:
   - cu: 'Quiz câu 5: "Vì sao phiên bản "đặt cược 10 đô la" làm giảm tỉ lệ mắc lỗi (từ 85% xuống 56%)?"; "cược vào (a) không thể thua (b)"'
     moi: '"Ở phiên bản … 56%, thấp hơn mức 85% của phiên bản chọn một trong hai (ở một nhóm sinh viên khác). Tversky và Kahneman giải thích chênh lệch này thế nào?"; "không bao giờ kém cược vào (b)"; giải thích nói rõ là phỏng đoán'
     ly_do: 'Review: hồ sơ n72.'
+  - cu: 'Khung Đang tranh cãi: "Một dạng của cách hiểu này là …"; mục Lý thuyết: "hiểu (a) và (b) là hai nhóm loại trừ nhau, hay …"'
+    moi: Quy giả thuyết cho Adler, Dulany và Hilton, Politzer và Noveck (theo Hertwig và Gigerenzer 1999), ghi chưa được xác nhận; thêm Hertwig & Gigerenzer 1999 vào Nguồn
+    ly_do: Hồ sơ n73, n74 (mở khóa 17/11/2026).
+mo_khoa:
+  - ngay: 2026-11-17
+    nhanh: mo/sua-nho-dot-8
+    ly_do: "Lỗi phát hiện khi review công cụ trai-nghiem/linda (D8): cách hiểu 'nhân viên ngân hàng và không hoạt động nữ quyền' bị gán là một dạng cách hiểu từ ngữ của Hertwig; theo Hertwig & Gigerenzer (1999) đó là giả thuyết của Adler, Dulany & Hilton, Politzer & Noveck, chưa được xác nhận"

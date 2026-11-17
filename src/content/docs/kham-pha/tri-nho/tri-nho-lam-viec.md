@@ -79,8 +79,12 @@ Mô hình ba thành phần giải thích được rất nhiều, nhưng có mộ
 Hai nhiệm vụ cùng một nội dung (ví dụ cả hai bằng lời) làm trí nhớ tệ hơn nhiều so với hai nhiệm vụ khác kênh (một việc bằng lời, một việc bằng hình). Hiệu ứng này được tìm thấy nhất quán trong nhiều thí nghiệm, và được một bài tổng quan của 16 chuyên gia (Oberauer và cộng sự, 2018) xếp vào nhóm phát hiện mà mọi lý thuyết trí nhớ làm việc phải giải thích được. Lưu ý: hai việc khác kênh vẫn gây nhiễu nhau, chỉ ít hơn, nên các "ngăn" không tách biệt hoàn toàn. Mô hình đa thành phần của Baddeley và Hitch là một trong những khung lý thuyết có ảnh hưởng nhất của lĩnh vực này.
 :::
 
-:::vung-chac[trí nhớ ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh của từ]
-Dãy chữ hay từ giống nhau về âm thì nhớ kém hơn (Conrad, 1964; Baddeley, 1966a), và dãy từ dài thì nhớ được ít hơn (Baddeley và cộng sự, 1975); cả hai hiệu ứng được tổng quan của Oberauer và cộng sự (2018) xếp vào nhóm phát hiện ổn định, quan sát được ở nhiều ngôn ngữ. Vòng lặp âm vị là cách giải thích phổ biến nhất, nhưng riêng hiệu ứng độ dài từ vẫn còn được giải thích theo nhiều cách (nhẩm lại hay nhiễu giữa các mục).
+:::vung-chac[dãy chữ hay từ giống nhau về âm thì nhớ kém hơn]
+Hiệu ứng tương tự âm (Conrad, 1964; Baddeley, 1966a) được tổng quan của Oberauer và cộng sự (2018) xếp vào nhóm phát hiện cơ bản mà mọi lý thuyết trí nhớ làm việc phải giải thích được, quan sát được dù trình bày bằng mắt hay bằng tai. Theo tổng quan ấy, điều này gợi ý âm thanh là dạng mã được ưu tiên của trí nhớ làm việc cho lời nói. Vòng lặp âm vị là cách giải thích phổ biến nhất.
+:::
+
+:::kha-vung[dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn]
+Hiệu ứng độ dài từ (Baddeley và cộng sự, 1975) được tổng quan của Oberauer và cộng sự (2018) xếp vào nhóm phát hiện ổn định, quan sát được ở nhiều ngôn ngữ khi độ dài được thay đổi bằng số âm tiết. Cách giải thích thì còn tranh cãi: từ dài và từ ngắn thường khác nhau cả ở những yếu tố khác, như số từ "láng giềng" có chính tả và âm gần giống; khi cân bằng thêm các yếu tố này, hiệu ứng độ dài từ mất đi, ở bài nhận diện thứ tự trong nghiên cứu của Guitard, Neath và Surprenant (2025), như các nghiên cứu trước đó ở bài nhớ lại theo thứ tự mà họ dẫn ([Guitard, Neath và Surprenant, 2025](https://doi.org/10.3758/s13421-025-01762-5)). Vì vậy nhãn là *Khá vững*: dãy từ dài thường nhớ kém hơn, nhưng chưa chắc độ dài tự nó là nguyên nhân.
 :::
 
 :::kha-vung[bộ đệm tập (episodic buffer)]
@@ -187,6 +191,7 @@ Có một chi tiết đáng lưu ý: độ dài trí nhớ chữ số **khác nh
 - Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. *Behavioral and Brain Sciences*, 24(1), 87–114. <https://doi.org/10.1017/S0140525X01003922>
 - Gathercole, S. E., & Baddeley, A. D. (1989). Evaluation of the role of phonological STM in the development of vocabulary in children: A longitudinal study. *Journal of Memory and Language*, 28(2), 200–213. <https://doi.org/10.1016/0749-596X(89)90044-2>
 - Gathercole, S. E., Willis, C. S., Emslie, H., & Baddeley, A. D. (1992). Phonological memory and vocabulary development during the early school years: A longitudinal study. *Developmental Psychology*, 28(5), 887–898. <https://doi.org/10.1037/0012-1649.28.5.887>
+- Guitard, D., Neath, I., & Surprenant, A. M. (2025). Word length vs. lexical factors: Re-examining what causes the word-length effect in serial recognition. *Memory & Cognition*, 54(2), 467–482. <https://doi.org/10.3758/s13421-025-01762-5>
 - Mattys, S. L., Baddeley, A., & Trenkic, D. (2018). Is the superior verbal memory span of Mandarin speakers due to faster rehearsal? *Memory & Cognition*, 46(3), 361–369. <https://doi.org/10.3758/s13421-017-0770-8>
 - Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. *Psychological Review*, 63(2), 81–97. <https://doi.org/10.1037/h0043158>
 - Oberauer, K., Lewandowsky, S., Awh, E., Brown, G. D. A., Conway, A., Cowan, N., … Ward, G. (2018). Benchmarks for models of short-term and working memory. *Psychological Bulletin*, 144(9), 885–958. <https://doi.org/10.1037/bul0000153>

@@ -14,7 +14,8 @@
 // dùng thang; site không có mẫu người Việt, nên chỉ hiện điểm trên dải 4–20.
 //
 // Bản ghi (kind "bigfive", như site cũ): { scores: { O, C, E, A, N } (trung bình 1–5, như site cũ), answers, thang:
-// "mini-ipip", tong: { O, C, E, A, N } (4–20) }. Bản ghi cũ (15 câu tự soạn) không có `thang`.
+// "mini-ipip", tong: { O, C, E, A, N } (4–20) }. Bản ghi cũ (15 câu tự soạn) không có `thang`. Mục "Các lần làm trước"
+// hiện tổng 4–20 cho bản Mini-IPIP (cùng thang với màn kết quả), trung bình 1–5 cho bản cũ (diemLichSu).
 
 import { batPhimTat, h, khung, lichSu, loiRiengTu, nut, so } from './chung/giao-dien.js';
 import { them } from './chung/luu.js';
@@ -82,6 +83,19 @@ export function chamDiem(traLoi) {
 	return ra;
 }
 
+/** Tên bản và thang của một lần làm trước: bản Mini-IPIP hiện tổng 4–20 như màn kết quả; bản cũ chỉ có trung bình 1–5. */
+export const banLichSu = (r) => (laMiniIpip(r) ? 'Mini-IPIP (tổng 4–20)' : 'bản cũ 15 câu (trung bình 1–5)');
+const laMiniIpip = (r) => r.thang === 'mini-ipip' && r.tong != null;
+
+/**
+ * Điểm chiều k của một lần làm trước, cùng thang với màn kết quả: bản Mini-IPIP lấy tổng 4–20 (r.tong); bản cũ 15 câu
+ * không có tổng nên giữ trung bình 1–5 (r.scores), cột "Bản" ghi rõ thang.
+ */
+export function diemLichSu(r, k) {
+	if (laMiniIpip(r)) return r.tong[k] == null ? '—' : String(r.tong[k]);
+	return r.scores?.[k] == null ? '—' : so(r.scores[k], 1);
+}
+
 // ---------- Giao diện ----------
 
 export function mount(el) {
@@ -108,8 +122,8 @@ export function mount(el) {
 			nut('Bắt đầu', hoi, { chinh: true, tuDong: true }),
 			loiRiengTu(),
 			lichSu('bigfive', [
-				['Bản', (r) => (r.thang === 'mini-ipip' ? 'Mini-IPIP' : 'bản cũ 15 câu')],
-				...CHIEU.map(({ k }) => [k, (r) => (r.scores?.[k] == null ? '—' : so(r.scores[k], 1))]),
+				['Bản', banLichSu],
+				...CHIEU.map(({ k }) => [k, (r) => diemLichSu(r, k)]),
 			]),
 		]);
 	}

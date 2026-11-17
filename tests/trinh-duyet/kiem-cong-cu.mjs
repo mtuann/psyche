@@ -319,6 +319,12 @@ const LUONG = {
 			assert.equal(r.answers.length, 20);
 			assert.deepEqual(r.tong, { E: 12, A: 12, C: 12, N: 12, O: 8 });
 			assert.deepEqual(r.scores, { E: 3, A: 3, C: 3, N: 3, O: 2 });
+			// "Các lần làm trước" cùng thang với màn kết quả: tổng 4–20, không phải trung bình 1–5
+			await bam(el, 'Làm lại');
+			await el.locator('summary', { hasText: 'Các lần làm trước' }).click();
+			const hang = el.locator('tbody tr').first();
+			await hang.getByText('Mini-IPIP (tổng 4–20)').waitFor();
+			assert.deepEqual((await hang.locator('td').allInnerTexts()).slice(2), ['12', '12', '12', '12', '8']);
 		},
 	},
 	/** Mỏ neo: hai câu, so sánh bằng nút, ước lượng kiểu Việt (dấu chấm hàng nghìn, dấu phẩy thập phân), một lần nhập sai. */

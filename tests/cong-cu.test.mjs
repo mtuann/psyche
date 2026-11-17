@@ -361,6 +361,18 @@ test('Big Five mini: Mini-IPIP 20 câu, 4 câu mỗi chiều, khóa như IPIP; c
 	assert.equal(bf.THANG.length, 5);
 });
 
+test('Big Five mini: "Các lần làm trước" cùng thang với màn kết quả (tổng 4–20); bản cũ ghi rõ trung bình 1–5', () => {
+	const moi = { thang: 'mini-ipip', ...bf.chamDiem(Array(20).fill(5)) };
+	assert.equal(bf.diemLichSu(moi, 'E'), '12');
+	assert.equal(bf.diemLichSu(moi, 'O'), '8');
+	assert.match(bf.banLichSu(moi), /4–20/);
+	const cu = { scores: { O: 3.4, C: 2, E: 4, A: 3, N: 1.5 } };
+	assert.match(bf.banLichSu(cu), /1–5/);
+	assert.equal(bf.diemLichSu(cu, 'E'), bf.diemLichSu({ scores: { E: 4 } }, 'E'));
+	assert.notEqual(bf.diemLichSu(cu, 'E'), '—');
+	assert.equal(bf.diemLichSu({ thang: 'mini-ipip', tong: { E: null }, scores: {} }, 'E'), '—');
+});
+
 test('mỏ neo: xếp nhóm 50/50, neo kẹp hai phía số thật, đọc ước lượng', () => {
 	assert.equal(neo.xepNhom(() => 0.2), 'low');
 	assert.equal(neo.xepNhom(() => 0.7), 'high');

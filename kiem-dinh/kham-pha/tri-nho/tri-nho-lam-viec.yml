@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L1)
       review: Claude Opus 5.5 (agent review D5-L1, 09/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d5-l1-kiem-mau.yml), đạt, 09/11/2026
+  - so: 2
+    ngay: 2026-11-17
+    nhanh: mo/sua-nho-dot-8
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (agent mở khóa mo/sua-nho-dot-8, 17/11/2026): tách khung Vững chắc n35 (chỉ còn hiệu ứng tương tự âm) và thêm khung Khá vững n71 cho hiệu ứng độ dài từ, thống nhất với công cụ trai-nghiem/tri-nho-tu (n5); quyết định nhãn ở plans/lam-lai/bao-cao/sua-nho-dot-8.md, việc 4"
+      luot_2: "chờ lượt 2 bổ sung (n35, n71: plans/lam-lai/bao-cao/sua-nho-dot-8-nhan-dinh.yml)"
+      review: null
+      kiem_mau: null
 nguon:
   - id: baddeley2021
     ten: 'Baddeley (2021), Arch Clin Neuropsychol 36(6), 861–873: toàn văn (PMC11979773); bài tự thuật của Baddeley, kể lại Baddeley & Hitch (1974), Baddeley và cộng sự (1975, 1988), Gathercole & Baddeley (1989), Baddeley (2000)'
@@ -78,6 +87,10 @@ nguon:
     ten: "Baddeley, Lewis & Vallar (1984), Q J Exp Psychol A 36(2), 233–252: chỉ đọc tóm tắt (OpenAlex); điều kiện biên cũng có trong Oberauer và cộng sự (2018), Benchmark 7"
     link: https://doi.org/10.1080/14640748408402157
     toan_van: false
+  - id: guitard2025
+    ten: "Guitard, Neath & Surprenant (2025), Mem Cognit 54(2), 467–482: toàn văn (Europe PMC, PMC12956956, CC BY; mở 17/11/2026), tóm tắt và Thảo luận Thí nghiệm 2"
+    link: https://doi.org/10.3758/s13421-025-01762-5
+    toan_van: true
 nhan_dinh:
   - id: n1
     cau: Nhiều người thấy việc giữ một dãy số trong đầu khó hơn khi đồng thời nhẩm hát một bài có lời.
@@ -499,26 +512,22 @@ nhan_dinh:
       - oberauer2018
       - baddeley2021
   - id: n35
-    cau: 'Khung "Vững chắc": trí nhớ ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh của từ (giống âm thì nhớ kém, từ dài thì nhớ ít).'
+    cau: 'Khung "Vững chắc": dãy chữ hay từ giống nhau về âm thì nhớ kém hơn (Conrad 1964; Baddeley 1966a); Oberauer và cộng sự (2018) xếp hiệu ứng vào nhóm phát hiện cơ bản, quan sát được dù trình bày bằng mắt hay bằng tai, và cho rằng điều này gợi ý âm thanh là dạng mã được ưu tiên của trí nhớ làm việc cho lời nói; vòng lặp âm vị là cách giải thích phổ biến nhất.'
     loai: nhan
     nhan: vung-chac
     co_so:
       - oberauer2018
       - conrad1964
       - baddeley1966a
-      - btb1975
-    ly_do: 'Oberauer 2018: hiệu ứng tương tự âm thanh (Benchmark 8.1.1) xếp A; hiệu ứng độ dài từ (Benchmark 7) xếp B, vững và quan sát ở nhiều ngôn ngữ. Các bài gốc (Conrad 1964; Baddeley 1966a; Baddeley và cộng sự 1975) mô tả hiệu ứng. Cách giải thích (vòng lặp âm vị) còn tranh luận riêng với độ dài từ (Mattys 2018), nên khung chỉ khẳng định hiệu ứng, không khẳng định cơ chế.'
+    ly_do: 'Oberauer 2018 (tổng quan đồng thuận 16 chuyên gia, cách đọc như n34 của trang này): hiệu ứng tương tự âm (Benchmark 8.1.1) xếp A, "general across paradigms and content domains", quan sát được dù trình bày bằng mắt hay bằng tai; các bài gốc Conrad 1964, Baddeley 1966a. Không có kết quả nào đã đọc cho thấy hiệu ứng mất khi kiểm soát yếu tố khác (khác với độ dài từ, n71). Khung chỉ khẳng định hiệu ứng, không khẳng định cơ chế.'
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "thông tin lời nói được giữ dưới dạng mã âm thanh"; "sức chứa dự đoán được từ tốc độ đọc trong 2 giây — rất khó giải thích nếu không có vòng lặp âm vị". Lý do: "rất khó giải thích" mạnh hơn bằng chứng (cách giải thích độ dài từ còn tranh cãi). Đã viết lại ý chính theo hiệu ứng quan sát được. Review (Claude Opus 5.5, 09/11/2026): Giữ Vững chắc, không theo câu đề xuất của lượt 2. Khung khẳng định hiệu ứng, không khẳng định cơ chế: tương tự âm (Oberauer 2018, Benchmark 8.1.1, A; Conrad 1964; Baddeley 1966a) và độ dài từ theo số âm tiết (Benchmark 7: "robust", "observed consistently in various languages"; xếp B vì chỉ thuộc miền lời nói, không vì yếu). Chỗ còn tranh cãi là cơ chế và hiệu ứng theo thời lượng phát âm (n23, n26); thân khung đã nói rõ.'
-    luot_2: qua-manh
-    luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922" ]
-    luot_2_ghi_chu: 'câu đúng: Khá vững: ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh (giống âm thì nhớ kém); hiệu ứng độ dài từ thấy được nhưng còn tranh cãi về cơ chế.; Giống âm làm nhớ kém rất vững; "từ dài thì nhớ ít" thì cơ chế và tính tổng quát còn tranh cãi (n26 trên cùng trang), chưa tìm tái lập lớn hay phân tích tổng hợp.'
-    review: dung
+    ghi_chu: 'Chữ cũ: "thông tin lời nói được giữ dưới dạng mã âm thanh"; "sức chứa dự đoán được từ tốc độ đọc trong 2 giây — rất khó giải thích nếu không có vòng lặp âm vị". Lý do: "rất khó giải thích" mạnh hơn bằng chứng (cách giải thích độ dài từ còn tranh cãi). Đã viết lại ý chính theo hiệu ứng quan sát được. Review (Claude Opus 5.5, 09/11/2026): Giữ Vững chắc, không theo câu đề xuất của lượt 2. Khung khẳng định hiệu ứng, không khẳng định cơ chế: tương tự âm (Oberauer 2018, Benchmark 8.1.1, A; Conrad 1964; Baddeley 1966a) và độ dài từ theo số âm tiết (Benchmark 7: "robust", "observed consistently in various languages"; xếp B vì chỉ thuộc miền lời nói, không vì yếu). Chỗ còn tranh cãi là cơ chế và hiệu ứng theo thời lượng phát âm (n23, n26); thân khung đã nói rõ. Mở khóa 17/11/2026 (mo/sua-nho-dot-8, Claude Opus 5.5): chữ cũ: ý chính "trí nhớ ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh của từ", thân khung gộp cả hiệu ứng độ dài từ. Lý do: công cụ trai-nghiem/tri-nho-tu (đã khóa, n5) xếp hiệu ứng độ dài từ Khá vững theo Guitard 2025; hai trang phải cùng nhãn. Tách: khung này chỉ còn hiệu ứng tương tự âm (Vững chắc), hiệu ứng độ dài từ sang khung Khá vững n71. Ý chính đổi thành chính hiệu ứng; "phụ thuộc mạnh vào âm thanh" thành câu "gợi ý … dạng mã được ưu tiên" theo đúng chữ "suggests … preferred form" của Oberauer. Bỏ "quan sát được ở nhiều ngôn ngữ" cho hiệu ứng tương tự âm (Oberauer chỉ nói câu ấy ở Benchmark 7). Lượt 2 lần 1 (qua-manh, đề xuất Khá vững cho cả khung) được giải quyết bằng việc tách: phần độ dài từ hạ Khá vững; phần tương tự âm giữ Vững chắc theo cách đọc thước đo của review lần 1.'
     nguon:
       - oberauer2018
       - conrad1964
       - baddeley1966a
-      - btb1975
+    trich: "Benchmark 8.1.1: Phonological similarity (A). Increasing the phonological similarity between memoranda leads to worse serial recall performance … The phonological similarity effect is observed regardless of whether memoranda are presented visually or auditorily … This suggests that phonology is a preferred form of representation for verbal WM."
+    vi_tri: Oberauer và cộng sự 2018, Benchmark 8.1.1, tr. 906 (PDF tác giả cns.nyu.edu, mở 17/11/2026); định nghĩa mức A ở mục Criteria and Scope, tr. 887
   - id: n36
     cau: 'Khung "Khá vững": bộ đệm tập (episodic buffer).'
     loai: nhan
@@ -961,6 +970,24 @@ nhan_dinh:
     luot_2: dung
     luot_2_nguon: [ "https://doi.org/10.1017/S0140525X01003922", "https://psychclassics.yorku.ca/Miller/" ]
     review: dung
+  - id: n71
+    cau: 'Khung "Khá vững": dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn; Oberauer và cộng sự (2018) xếp hiệu ứng độ dài từ (Baddeley và cộng sự 1975) vào nhóm phát hiện ổn định, quan sát được ở nhiều ngôn ngữ khi độ dài thay đổi bằng số âm tiết; cách giải thích còn tranh cãi: từ dài và ngắn thường khác nhau cả ở số từ láng giềng có chính tả và âm gần giống, và khi cân bằng thêm các yếu tố này, hiệu ứng mất đi ở bài nhận diện thứ tự (Guitard, Neath và Surprenant 2025), như các nghiên cứu trước ở bài nhớ lại theo thứ tự mà họ dẫn; chưa chắc độ dài tự nó là nguyên nhân.'
+    loai: nhan
+    nhan: kha-vung
+    nguon:
+      - oberauer2018
+      - btb1975
+      - guitard2025
+    co_so:
+      - oberauer2018
+      - guitard2025
+    trich: Performance in verbal WM tasks decreases with increasing length of the items on a list. This word-length effect is robust when word length is manipulated through the number of syllables. … has been observed consistently in various languages. Given its restriction to the verbal domain, the rating proposed by the Benchmarks Team is a B. (Oberauer 2018) | Experiment 2 found that when the short and long words were more fully equated, including being equated for orthographic and phonological neighborhood size, the word-length effect disappeared. (tóm tắt) | This result with serial recognition parallels earlier findings with serial recall that the word-length effect disappears when the short and long words are equated on more dimensions and especially for orthographic and phonological neighborhood size and frequency (e.g., Guitard et al., 2018; Jalbert et al., 2011a, b). (Thảo luận Thí nghiệm 2) (Guitard 2025)
+    vi_tri: Oberauer và cộng sự 2018, Benchmark 7, tr. 905–906; Guitard và cộng sự 2025, tóm tắt và Thảo luận Thí nghiệm 2 (Europe PMC PMC12956956)
+    ly_do: 'Thước đo mục 4, nhãn cho một khẳng định cụ thể. Hiện tượng (dãy từ nhiều âm tiết nhớ kém hơn, với chất liệu thường dùng): nhiều nghiên cứu cùng chiều ở nhiều ngôn ngữ (Oberauer 2018, mức B vì chỉ thuộc miền lời nói), Guitard 2025 Thí nghiệm 1 cũng lặp lại được với từ không cân bằng. Nhưng Oberauer phát biểu nó như một thao tác ("robust when word length is manipulated through the number of syllables"), và các nghiên cứu cân bằng kỹ hơn (Jalbert 2011a, b; Guitard 2018; Guitard 2025, Bayes factor ủng hộ giả thuyết không) thấy hiệu ứng mất: bằng chứng chất lượng tốt trái chiều với khẳng định "độ dài tự nó làm nhớ kém", nên khẳng định nhân quả không đạt Vững chắc (cần không có thất bại lớn chưa giải thích) và chính là phần Đang tranh cãi (bằng chứng chất lượng cao mâu thuẫn). Phần mô tả còn lại (dãy từ dài thường nhớ kém hơn, chưa rõ vì đâu) là Khá vững: nhiều nghiên cứu cùng chiều nhưng có giới hạn rõ (độ dài lẫn với yếu tố từ vựng; chưa có phân tích tổng hợp về độ lớn). Cùng nhãn và lý lẽ với công cụ trai-nghiem/tri-nho-tu n5.'
+    ket_qua: da-sua
+    ghi_chu: 'Khung mới khi mở khóa 17/11/2026, tách từ n35 (xem ghi_chu n35). Chữ thân khung theo công cụ trai-nghiem/tri-nho-tu (đã khóa), thêm vế "như các nghiên cứu trước ở bài nhớ lại theo thứ tự mà họ dẫn" theo Thảo luận Thí nghiệm 2 của Guitard 2025 (toàn văn PMC). Bỏ cách giải thích "nhiễu giữa các mục" của khung cũ (lượt 2 công cụ tri-nho-tu không xác nhận được nguồn cho cách gọi ấy); thay bằng giải thích từ vựng theo Guitard 2025. Không nêu "chưa có phân tích tổng hợp" trên trang (sẽ là câu thời sự); tìm Europe PMC 17/11/2026 ("word length effect" AND meta-analysis; "word-length effect" AND preregistered/registered report): không có bài tổng hợp hay tái lập có đăng ký trước cho hiệu ứng này.'
+    o_dau:
+      trai-nghiem/tri-nho-tu.md: Vì vậy nhãn là *Khá vững*
 doi_chu:
   - cu: (trang cũ không có hộp tóm tắt đầu trang)
     moi: Hộp ::tom-tat tự dựng từ ý chính bốn khung nhãn của trang (bản mới thêm).
@@ -1022,3 +1049,10 @@ doi_chu:
   - cu: '"### 5. Tự đo bàn nháp của mình :nhan[kha-vung]"; "Site có công cụ [đo độ dài trí nhớ chữ số] (nhớ xuôi và nhớ ngược). Thử làm rồi đọc phần giải thích: bạn sẽ thấy con số của mình nằm đâu so với nghiên cứu, và vì sao 7 ± 2 không hẳn đúng với mọi người."'
     moi: '"### 5. Tự đo bàn nháp của mình { #5-tu-do-ban-nhap-cua-minh-kha-vung }"; "Khi công cụ [đo độ dài trí nhớ chữ số] lên site, bạn có thể tự đo cả nhớ xuôi lẫn nhớ ngược."'
     ly_do: "Review: công cụ chưa lên site; tiêu đề không có nhận định nhãn; giữ id cũ (xem ghi_chu n54, n55)."
+  - cu: Khung Vững chắc [trí nhớ ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh của từ], gộp tương tự âm và độ dài từ
+    moi: Khung Vững chắc [dãy chữ hay từ giống nhau về âm thì nhớ kém hơn] và khung Khá vững [dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn]; thêm Guitard 2025 vào Nguồn
+    ly_do: Hồ sơ n35, n71 (mở khóa 17/11/2026).
+mo_khoa:
+  - ngay: 2026-11-17
+    nhanh: mo/sua-nho-dot-8
+    ly_do: "Lỗi phát hiện khi review công cụ trai-nghiem/tri-nho-tu (D8): khung Vững chắc gộp hiệu ứng độ dài từ, lệch nhãn Khá vững của công cụ (Guitard, Neath & Surprenant 2025); tách khung theo thước đo mục 4"

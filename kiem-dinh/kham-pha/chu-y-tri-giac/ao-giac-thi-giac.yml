@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L3)
       review: Claude Sonnet 5.5 (agent review D5-L3, 10/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l3-kiem-mau.yml), đạt, 10/11/2026
+  - so: 2
+    ngay: 2026-11-17
+    nhanh: mo/sua-nho-dot-8
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (agent mở khóa mo/sua-nho-dot-8, 17/11/2026): tách tên gọi khỏi n9, thêm n50 theo Burton (2001) như công cụ trai-nghiem/ebbinghaus (n2); n10 cùng gạch đầu dòng không đổi chữ, giữ kết quả lần 1"
+      luot_2: "chờ lượt 2 bổ sung (n9, n50: plans/lam-lai/bao-cao/sua-nho-dot-8-nhan-dinh.yml)"
+      review: null
+      kiem_mau: null
 nguon:
   - id: segall1963
     ten: 'Segall, Campbell & Herskovits (1963), Science 139(3556), 769–771: tóm tắt (OpenAlex); toàn văn Science và sách 1966 không mở được'
@@ -53,6 +62,10 @@ nguon:
   - id: lin2023
     ten: "Lin và cộng sự (2023), Front Psychol 14, 1278554: tóm tắt (Europe PMC)"
     link: https://doi.org/10.3389/fpsyg.2023.1278554
+    toan_van: false
+  - id: burton2001
+    ten: "Burton (2001), Hist Psychol 4(3), 228–244: tóm tắt (OpenAlex, mở lại 17/11/2026); toàn văn không mở được (APA)"
+    link: https://doi.org/10.1037/1093-4510.4.3.228
     toan_van: false
 nhan_dinh:
   - id: n1
@@ -171,19 +184,15 @@ nhan_dinh:
     luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
     review: dung
   - id: n9
-    cau: Vòng tròn Ebbinghaus còn gọi là vòng tròn Titchener; vòng tròn giữa các vòng tròn to trông nhỏ hơn vòng tròn y hệt giữa các vòng tròn nhỏ.
-    loai: lich-su
+    cau: "Vòng tròn Ebbinghaus: một vòng tròn ở giữa các vòng tròn to trông nhỏ hơn vòng tròn y hệt ở giữa các vòng tròn nhỏ."
+    loai: dinh-nghia
     nguon:
-      - wiki-eb
       - amir2026
-    trich: Edward B. Titchener popularized it in the English-speaking world in a 1901 psychology textbook
-    vi_tri: Wikipedia (nguồn bậc ba)
-    ket_qua: dung
-    luot_2: dung
-    luot_2_nguon: [ "https://doi.org/10.1073/pnas.0409314102" ]
-    luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
-    review: dung
-    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Titchener phổ biến hình này trong sách giáo khoa tiếng Anh năm 1901, nên gọi "vòng tròn Titchener"; chỉ có Wikipedia là nguồn đọc được cho tên gọi (bậc ba), phần hiệu ứng thì Amir & Firestone 2026 xác nhận. Giữ vì là câu lịch sử ít rủi ro; lượt sau nên thêm nguồn bậc 1.'
+      - burton2001
+    trich: the illusion depicting a circle ringed by smaller circles, which appears larger than an equivalent circle surrounded by larger circles
+    vi_tri: Burton 2001, tóm tắt (OpenAlex); Amir & Firestone 2026 (như lần 1)
+    ket_qua: da-sua
+    ghi_chu: 'Review (Claude Sonnet 5.5, 10/11/2026): dung. Titchener phổ biến hình này trong sách giáo khoa tiếng Anh năm 1901, nên gọi "vòng tròn Titchener"; chỉ có Wikipedia là nguồn đọc được cho tên gọi (bậc ba), phần hiệu ứng thì Amir & Firestone 2026 xác nhận. Giữ vì là câu lịch sử ít rủi ro; lượt sau nên thêm nguồn bậc 1. Mở khóa 17/11/2026 (mo/sua-nho-dot-8): chữ cũ "Vòng tròn Ebbinghaus (còn gọi là vòng tròn Titchener): một vòng tròn …", chữ mới bỏ ngoặc tên gọi; tên gọi tách thành n50 theo Burton (2001), bỏ nguồn wiki-eb (câu "Titchener popularized it … in a 1901 psychology textbook" lệch với Burton: Titchener không có quyền tác giả, cách gọi theo tên ông chỉ có từ khoảng 1957). Phần mô tả hình giữ nguyên; loai đổi lich-su thành dinh-nghia vì câu chỉ còn mô tả hình.'
   - id: n10
     cau: Ảo giác Ebbinghaus cho thấy ngữ cảnh bóp méo cảm nhận kích thước.
     loai: phat-hien
@@ -751,6 +760,17 @@ nhan_dinh:
     luot_2_nguon: [ "https://doi.org/10.1126/science.139.3556.769" ]
     luot_2_ghi_chu: "Số xã hội (15), năm, tạp chí đúng; Henrich 2010 mở đầu bằng Müller-Lyer; van der Kamp 2013: Atten Percept Psychophys 75(5), 1027–1038 (Crossref khớp, nhưng bài về ảo giác Judd)."
     review: sai
+  - id: n50
+    cau: Hình mang tên Hermann Ebbinghaus, người có lẽ đưa ra nó từ những năm 1890; trong tiếng Anh hình còn được gọi là "vòng tròn Titchener", nhưng Edward B. Titchener không tạo ra hình này và cũng không nhận là của mình (Burton, 2001).
+    loai: lich-su
+    nguon:
+      - burton2001
+    trich: One such false fact is that Titchener introduced the illusion depicting a circle ringed by smaller circles … A review of contemporary sources indicates that Ebbinghaus probably introduced this illusion in the 1890s, although not in any explicit publication, and Titchener neither had nor asserted any authorship of this figure.
+    vi_tri: Burton 2001, tóm tắt (OpenAlex, mở 17/11/2026)
+    ket_qua: da-sua
+    ghi_chu: 'Câu mới khi mở khóa (mo/sua-nho-dot-8, 17/11/2026), thay vế "còn gọi là vòng tròn Titchener" của n9 (lần 1 dựa Wikipedia: Titchener phổ biến hình năm 1901). Cùng nội dung với công cụ đã khóa trai-nghiem/ebbinghaus (hồ sơ n2, lượt 2 dung); trang không nêu năm 1901 hay 1957 để khỏi thêm chi tiết. "có lẽ" theo chữ "probably" của Burton. Chưa mở được toàn văn Burton (APA); tóm tắt đủ cho cả ba vế.'
+    o_dau:
+      trai-nghiem/ebbinghaus.md: Titchener không tạo ra hình này
 doi_chu:
   - cu: 'mô tả: "…phát hiện rằng người phương Tây dễ bị ''lừa'' hơn nhiều nền văn hóa khác."'
     moi: '"…dễ bị ảo giác Müller-Lyer hơn nhiều nền văn hóa khác."'
@@ -842,3 +862,10 @@ doi_chu:
   - cu: "Nguồn: 3 mục (Henrich, Segall 1963, 1966, van der Kamp)"
     moi: Thêm Amir & Firestone 2026, Bruno & Franz 2009, Chen 2025, Lin 2023
     ly_do: Review n49.
+  - cu: '"Vòng tròn Ebbinghaus (còn gọi là vòng tròn Titchener): …"'
+    moi: bỏ ngoặc; thêm câu về tên gọi theo Burton (2001) và link công cụ Ảo giác Ebbinghaus
+    ly_do: Hồ sơ n9, n50 (mở khóa 17/11/2026).
+mo_khoa:
+  - ngay: 2026-11-17
+    nhanh: mo/sua-nho-dot-8
+    ly_do: "Lỗi phát hiện khi review trang khác (trai-nghiem/ebbinghaus, D8): câu về tên gọi vòng tròn Titchener dựa trên Wikipedia (Titchener phổ biến hình năm 1901); viết theo Burton (2001) cho khớp công cụ Ảo giác Ebbinghaus đã khóa"

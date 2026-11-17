@@ -28,7 +28,7 @@ Hãy tưởng tượng bạn là sinh viên đó. Trước khi quyết định, 
 
 ### Vì sao cần có quy định đạo đức?
 
-Báo cáo Belmont mở đầu bằng nhận xét rằng nghiên cứu khoa học đã đem lại những lợi ích xã hội đáng kể nhưng cũng đặt ra những câu hỏi đạo đức rắc rối. Sự chú ý của công chúng được kéo tới các câu hỏi ấy nhờ những báo cáo về việc lạm dụng người tham gia trong các thí nghiệm y sinh, đặc biệt trong Chiến tranh thế giới thứ hai. Báo cáo cũng nhắc tới nghiên cứu giang mai ở Tuskegee (Mỹ): các nam giới da đen nghèo ở nông thôn được dùng để nghiên cứu diễn tiến tự nhiên của bệnh, và họ bị từ chối phương pháp điều trị hiệu quả đã có. Báo cáo viết rằng người tham gia có thể bị chọn vì dễ tiếp cận hay ở thế yếu.
+Báo cáo Belmont mở đầu bằng nhận xét rằng nghiên cứu khoa học đã đem lại những lợi ích xã hội đáng kể nhưng cũng đặt ra những câu hỏi đạo đức rắc rối. Sự chú ý của công chúng được kéo tới các câu hỏi ấy nhờ những báo cáo về việc lạm dụng người tham gia trong các thí nghiệm y sinh, đặc biệt trong Chiến tranh thế giới thứ hai. Báo cáo cũng nhắc tới nghiên cứu giang mai ở Tuskegee (Mỹ): các nam giới da đen thiệt thòi ở nông thôn được dùng để nghiên cứu diễn tiến tự nhiên của bệnh, và họ bị từ chối phương pháp điều trị hiệu quả đã có. Báo cáo viết rằng người tham gia có thể bị chọn vì dễ tiếp cận hay ở thế yếu.
 
 Các bộ quy tắc đạo đức có từ trước, theo Belmont, thường không đủ cho các tình huống phức tạp: có lúc chúng mâu thuẫn nhau, và khó diễn giải hay áp dụng. Vì vậy cần những nguyên tắc rộng hơn làm nền cho các quy tắc cụ thể, và cần một cơ chế xem xét độc lập: Tuyên bố Helsinki yêu cầu hội đồng đạo đức có sự độc lập và quyền hạn để chống lại ảnh hưởng không chính đáng từ nhà nghiên cứu hay bên tài trợ.
 

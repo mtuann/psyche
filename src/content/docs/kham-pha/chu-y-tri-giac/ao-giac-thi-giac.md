@@ -29,7 +29,7 @@ Mắt ta không phải máy ảnh, và não không phải màn hình chiếu l�
 Hai ảo giác nổi tiếng nhất:
 
 - **Müller-Lyer** (mô tả năm 1889): hai đoạn thẳng bằng nhau, một đoạn có hai "cánh" xòe ra ngoài ở hai đầu (như đuôi mũi tên, dạng `>---<`), đoạn kia có hai "cánh" khép vào (như đầu mũi tên, dạng `<--->`). Đoạn có cánh xòe ra trông dài hơn.
-- **Vòng tròn Ebbinghaus** (còn gọi là vòng tròn Titchener): một vòng tròn ở giữa các vòng tròn to trông nhỏ hơn vòng tròn y hệt ở giữa các vòng tròn nhỏ. Ảo giác này cho thấy **ngữ cảnh** bóp méo cảm nhận kích thước ra sao.
+- **Vòng tròn Ebbinghaus**: một vòng tròn ở giữa các vòng tròn to trông nhỏ hơn vòng tròn y hệt ở giữa các vòng tròn nhỏ. Ảo giác này cho thấy **ngữ cảnh** bóp méo cảm nhận kích thước ra sao. Hình mang tên Hermann Ebbinghaus, người có lẽ đưa ra nó từ những năm 1890; trong tiếng Anh hình còn được gọi là "vòng tròn Titchener", nhưng Edward B. Titchener không tạo ra hình này và cũng không nhận là của mình ([Burton, 2001](https://doi.org/10.1037/1093-4510.4.3.228); xem công cụ [Ảo giác Ebbinghaus](/psyche/trai-nghiem/ebbinghaus/)).
 
 ## Nghiên cứu then chốt
 
@@ -137,6 +137,7 @@ Xem thêm các ngộ nhận khác ở trang [Ngộ nhận](/psyche/ngo-nhan/).
 - Segall, M. H., Campbell, D. T., & Herskovits, M. J. (1963). Cultural differences in the perception of geometric illusions. *Science*, 139(3556), 769–771. <https://doi.org/10.1126/science.139.3556.769> (nghiên cứu gốc trên 15 xã hội)
 - Segall, M. H., Campbell, D. T., & Herskovits, M. J. (1966). *The influence of culture on visual perception*. Bobbs-Merrill. (trình bày đầy đủ giả thuyết "thế giới thợ mộc")
 - Amir, D., & Firestone, C. (2026). Is visual perception WEIRD? The Müller-Lyer illusion and the cultural byproduct hypothesis. *Psychological Review*, 133(5), 1082–1108. <https://doi.org/10.1037/rev0000549> (phân tích lại dữ liệu liên văn hóa và các bằng chứng khác)
+- Burton, G. (2001). The tenacity of historical misinformation: Titchener did not invent the Titchener illusion. *History of Psychology*, 4(3), 228–244. <https://doi.org/10.1037/1093-4510.4.3.228>
 - Bruno, N., & Franz, V. H. (2009). When is grasping affected by the Müller-Lyer illusion? A quantitative review. *Neuropsychologia*, 47(6), 1421–1433. <https://doi.org/10.1016/j.neuropsychologia.2008.10.031>
 - Chen, B., Lin, N., Tian, L., Mao, J., Yang, M., Sun, X., Lu, F., & Deng, R. (2025). Müller-Lyer illusion in adults increases with age but is not affected by mild visual acuity loss. *Eye and Brain*, 17, 115–124. <https://doi.org/10.2147/EB.S533112>
 - Lin, N., Chen, B., Yang, M., Lu, F., & Deng, R. (2023). Low vision aids and age are associated with Müller-Lyer illusion in congenital visually impaired children. *Frontiers in Psychology*, 14, 1278554. <https://doi.org/10.3389/fpsyg.2023.1278554>
