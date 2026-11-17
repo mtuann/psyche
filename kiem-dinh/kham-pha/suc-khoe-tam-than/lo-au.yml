@@ -1,0 +1,732 @@
+# Hồ sơ kiểm định, cấu trúc ở plans/ben-vung/chuan-kiem-dinh.md mục 6. Điền xong thì khóa: node tools/khoa.mjs khoa kham-pha/suc-khoe-tam-than/lo-au
+trang: src/content/docs/kham-pha/suc-khoe-tam-than/lo-au.md
+nguon_cu: ../psyche-zero/docs/kham-pha/suc-khoe-tam-than/lo-au.md
+tang: loi
+muc: V3
+lan:
+  - so: 1
+    ngay: 2026-11-17
+    nhanh: moi/d7-l1
+    ma_bam: sha256:7c01c7cc74613d863297c1330e052ad8946feb1c753696ffc559ff4d66d5c09c
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D7-L1, 16/11/2026; không dùng agent con)
+      luot_2: Claude Opus 5.5 (agent lượt 2 riêng, D7-L1 phần a, 16–17/11/2026; phần bổ sung cho câu viết lại sau lượt 2, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D7-L1, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d7-l1-kiem-mau.yml), đạt, 17/11/2026
+      cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
+nguon:
+  - id: icd11-cddr
+    ten: 'WHO (2024), Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR), ISBN 9789240077263: toàn văn (PDF 852 trang tải từ IRIS của WHO qua trang ấn phẩm; số trang in = số trang PDF trừ 18). Giai đoạn trầm cảm tr. 212–214; 6A70 tr. 244; 6B00 tr. 266–267; 6B01 tr. 271–272; 6B04 tr. 284–285'
+    link: https://www.who.int/publications/i/item/9789240077263
+    toan_van: true
+  - id: apa-anx
+    ten: 'American Psychiatric Association, What Are Anxiety Disorders? (psychiatry.org, bác sĩ duyệt 5/2026; dẫn DSM-5-TR): toàn văn, đọc 16/11/2026'
+    link: https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+    toan_van: true
+  - id: who-anx-2026
+    ten: 'WHO, Anxiety disorders, tờ thông tin cập nhật 15/9/2026: toàn văn, đọc 16/11/2026'
+    link: https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+    toan_van: true
+  - id: hofmannhay2018
+    ten: 'Hofmann & Hay (2018), J Anxiety Disord 55, 14–21: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.janxdis.2018.03.004
+    toan_van: false
+  - id: craske2014
+    ten: 'Craske, Treanor, Conway, Zbozinek & Vervliet (2014), Behav Res Ther 58, 10–23: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.brat.2014.04.006
+    toan_van: false
+  - id: nice-cg113
+    ten: 'NICE (2011, cập nhật 15/6/2020), Generalised anxiety disorder and panic disorder in adults: management (CG113), chương Recommendations: toàn văn'
+    link: https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
+    toan_van: true
+  - id: nice-cg159
+    ten: 'NICE (22/5/2013), Social anxiety disorder: recognition, assessment and treatment (CG159), chương Recommendations: toàn văn'
+    link: https://www.nice.org.uk/guidance/cg159/chapter/Recommendations
+    toan_van: true
+  - id: tt26-2025
+    ten: 'Thông tư 26/2025/TT-BYT về đơn thuốc và kê đơn thuốc hóa dược, sinh phẩm, Điều 2 (LuatVietnam): toàn văn, đọc 16/11/2026'
+    link: https://luatvietnam.vn/y-te/thong-tu-26-2025-tt-byt-quy-dinh-ke-don-thuoc-hoa-duoc-sinh-pham-tai-co-so-kham-chua-benh-404246-d1.html
+    toan_van: true
+  - id: carpenter2018
+    ten: 'Carpenter, Andrews, Witcraft, Powers, Smits & Hofmann (2018), Depress Anxiety 35(6), 502–514: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1002/da.22728
+    toan_van: false
+  - id: hettema2001
+    ten: 'Hettema, Neale & Kendler (2001), Am J Psychiatry 158(10), 1568–1578: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1176/appi.ajp.158.10.1568
+    toan_van: false
+  - id: who-dep-2026
+    ten: 'WHO, Depressive disorder (depression), tờ thông tin cập nhật 11/9/2026: toàn văn, đọc 16/11/2026'
+    link: https://www.who.int/news-room/fact-sheets/detail/depression
+    toan_van: true
+  - id: paho-living
+    ten: 'WHO/PAHO (2021), Living with someone with depression? (tờ thông tin Ngày Sức khỏe tâm thần thế giới): toàn văn (PDF 1 trang)'
+    link: https://www.paho.org/sites/default/files/2021-10/WMHD-2_living_with_someone_with_depression-2021.pdf
+    toan_van: true
+nhan_dinh:
+  - id: n1
+    cau: 'Mô tả: lo lắng bình thường khác rối loạn lo âu thế nào theo ICD-11 và DSM-5-TR (lo âu lan tỏa, hoảng sợ, lo âu xã hội); vòng luẩn quẩn tránh né; các hướng điều trị ở mức giới thiệu chung.'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - apa-anx
+    trich: Anxiety and worry are normal emotional/cognitive states that commonly occur when people are under stress. At optimal levels, anxiety and worry may help to direct problem-solving efforts, focus attention adaptively and increase alertness. Normal anxiety and worry are usually sufficiently self-regulated that they do not interfere with functioning or cause marked distress. In generalized anxiety disorder, the anxiety or worry is excessive, persistent and intense, and may have a significant negative impact on functioning.
+    vi_tri: CDDR tr. 266–267
+    ket_qua: da-sua
+    ghi_chu: 'Mô tả cũ: "Bản nháp: các rối loạn lo âu chính theo DSM-5-TR (lo âu lan tỏa, hoảng sợ, ám ảnh sợ xã hội)…". Bỏ "Bản nháp"; thêm ICD-11.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+  - id: n2
+    cau: Chỉ người có chuyên môn mới chẩn đoán được rối loạn lo âu; bài không dùng để tự chẩn đoán (lời dẫn đầu trang, link Hỗ trợ).
+    loai: lam-sang
+    nguon:
+      - apa-anx
+    trich: A diagnosis is made by a qualified health professional.
+    vi_tri: APA What are anxiety disorders, Treatment
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (hộp warning): "Bản nháp đang chờ rà soát chuyên môn. Bài viết này chưa được người có chuyên môn đọc lại…". Như hồ sơ tram-cam n2.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n3
+    cau: Lời dẫn đầu và cuối trang trỏ tới trang Hỗ trợ; bài không chép số điện thoại.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trên trang: hộp "Trước khi đọc" và mục "Khi nào nên tìm sự giúp đỡ" link /psyche/ho-tro/. Số 115 của trang cũ đã bỏ (n36). review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp.'
+    review: dung
+  - id: n4
+    cau: Hai sinh viên trong mục Tự trải nghiệm là ví dụ giả định của chúng tôi.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'gia-dinh: ghi rõ trên trang. Không trái nhận định nào. Đã kiểm trên trang. review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp.'
+    review: dung
+  - id: n5
+    cau: Lo lắng tương xứng với tình huống và tự hết khác với lo lắng quá mức, khó kiểm soát, kéo dài, lan sang nhiều mặt cuộc sống; đó là kiểu lo lắng các hệ thống chẩn đoán dùng để mô tả rối loạn lo âu khi nó gây khổ sở hay suy giảm rõ.
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - who-anx-2026
+    trich: Anxiety and worry are normal emotional/cognitive states that commonly occur when people are under stress. At optimal levels, anxiety and worry may help to direct problem-solving efforts, focus attention adaptively and increase alertness. Normal anxiety and worry are usually sufficiently self-regulated that they do not interfere with functioning or cause marked distress. In generalized anxiety disorder, the anxiety or worry is excessive, persistent and intense, and may have a significant negative impact on functioning. [ICD-11]; people with anxiety disorders often experience fear and worry that is both intense and excessive … They are difficult to control, cause significant distress and can last a long time if untreated. [WHO]
+    vi_tri: CDDR tr. 266–267; WHO Overview
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đó là dạng mà y học gọi là rối loạn lo âu". Thêm điều kiện khổ sở hay suy giảm rõ (ICD-11, WHO).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n6
+    cau: 'Ẩn dụ: lo lắng là hệ thống báo động bình thường; rối loạn lo âu như chiếc báo động reo cả lúc không có cháy.'
+    loai: dinh-nghia
+    nguon:
+      - icd11-cddr
+    trich: Anxiety and worry are normal emotional/cognitive states that commonly occur when people are under stress. At optimal levels, anxiety and worry may help to direct problem-solving efforts, focus attention adaptively and increase alertness. Normal anxiety and worry are usually sufficiently self-regulated that they do not interfere with functioning or cause marked distress. In generalized anxiety disorder, the anxiety or worry is excessive, persistent and intense, and may have a significant negative impact on functioning.
+    vi_tri: CDDR tr. 266–267
+    ket_qua: dung
+    ghi_chu: Ẩn dụ của trang cũ, giữ; khớp ICD-11 (lo âu bình thường có ích, rối loạn khi quá mức, kéo dài).
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+    luot_2_ghi_chu: Ẩn dụ, không phải định nghĩa chuẩn; không trái nguồn.
+  - id: n7
+    cau: Chỉ người có chuyên môn mới đánh giá được ai đó có rối loạn lo âu hay không (trong hộp thu gọn).
+    loai: lam-sang
+    nguon:
+      - apa-anx
+    trich: A diagnosis is made by a qualified health professional.
+    vi_tri: APA
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới (lời giao D7-L1: danh sách dấu hiệu kèm "chỉ chuyên gia mới chẩn đoán được").'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n8
+    cau: ICD-11 ghi rằng ở mức vừa phải, lo âu và lo lắng giúp tập trung giải quyết vấn đề và tỉnh táo hơn; lo lắng bình thường thường tự điều chỉnh được, không cản trở cuộc sống.
+    loai: dinh-nghia
+    nguon:
+      - icd11-cddr
+    trich: Anxiety and worry are normal emotional/cognitive states that commonly occur when people are under stress. At optimal levels, anxiety and worry may help to direct problem-solving efforts, focus attention adaptively and increase alertness. Normal anxiety and worry are usually sufficiently self-regulated that they do not interfere with functioning or cause marked distress. In generalized anxiety disorder, the anxiety or worry is excessive, persistent and intense, and may have a significant negative impact on functioning.
+    vi_tri: CDDR tr. 266–267, 6B00 Boundary with normality
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Lo lắng vốn là một cơ chế sinh tồn: tim đập nhanh, cơ căng, đầu óc cảnh giác — tất cả để chuẩn bị cho ta đối phó với nguy hiểm." Viết lại theo ICD-11.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+    luot_2_ghi_chu: ICD-11 viết 'optimal levels' (mức tối ưu); 'mức vừa phải' là cách dịch chấp nhận được.
+  - id: n9
+    cau: Rối loạn khi nỗi sợ hay lo lắng mạnh, quá mức, kéo dài, khó kiểm soát, gây khổ sở hay cản trở việc học, việc làm, gia đình và các mối quan hệ.
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+    trich: people with anxiety disorders often experience fear and worry that is both intense and excessive. … They are difficult to control, cause significant distress and can last a long time if untreated. Anxiety disorders interfere with daily activities and can impair a person's family, social and school or working life.
+    vi_tri: WHO Overview
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "khi hệ thống này kích hoạt quá mạnh, quá thường xuyên, hoặc trước những thứ không thực sự nguy hiểm, và bắt đầu chiếm lấy cuộc sống". Viết theo WHO.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  - id: n10
+    cau: Tính đến 11/2026, WHO ước tính năm 2023 có khoảng 470 triệu người trên thế giới bị rối loạn lo âu, nhiều hơn mọi nhóm rối loạn tâm thần khác, và chỉ khoảng 1 trong 4 người cần điều trị được điều trị.
+    loai: thoi-su
+    nguon:
+      - who-anx-2026
+    trich: In 2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the most common of all mental disorders. Although highly effective treatments for anxiety disorders exist, only about 1 in 4 people in need (27.6%) receive any treatment.
+    vi_tri: WHO Overview (tờ thông tin cập nhật 15/9/2026)
+    het_han: '2027-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới (lời giao: số liệu dịch tễ là thời sự, có mốc và hạn).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+    luot_2_ghi_chu: 'Thời sự: kiểm ngày 16/11/2026. WHO viết ''receive any treatment'' (nhận bất kỳ điều trị nào).'
+  - id: n11
+    cau: Có nhiều rối loạn lo âu khác nhau, tùy nỗi sợ tập trung vào đâu; ba dạng thường được nhắc là lo âu lan tỏa, hoảng sợ, lo âu xã hội.
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+    trich: 'There are several different kinds of anxiety disorders, including: generalized anxiety disorder …; panic disorder …; social anxiety disorder …; agoraphobia …; separation anxiety disorder …; specific phobias …; and selective mutism'
+    vi_tri: WHO, Symptoms and patterns
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ba dạng phổ biến nhất". Không có nguồn xếp ba dạng này là phổ biến nhất (ám ảnh sợ đặc hiệu thường phổ biến hơn); đổi thành "thường được nhắc đến".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n12
+    cau: 'Rối loạn lo âu lan tỏa: lo lắng quá mức về nhiều chuyện của đời sống hằng ngày hoặc bất an không gắn với chuyện cụ thể; kèm căng cơ, bồn chồn, "căng như dây đàn", khó tập trung, dễ cáu, khó ngủ, tim đập nhanh, đổ mồ hôi, buồn nôn; theo ICD-11 kéo dài ít nhất vài tháng, phần lớn các ngày.'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - apa-anx
+    trich: 'Marked symptoms of anxiety are required for diagnosis, manifested in either: general apprehensiveness that is not restricted to any particular environmental circumstance (i.e. "free-floating anxiety"); or excessive worry (apprehensive expectation) about negative events occurring in several different aspects of everyday life (e.g. work, finances, health, family). … muscle tension or motor restlessness; sympathetic autonomic overactivity as evidenced by frequent gastrointestinal symptoms such as nausea and/or abdominal distress, heart palpitations, sweating …; subjective experience of nervousness, restlessness or being "on edge"; difficulty concentrating; irritability; sleep disturbances … The symptoms are not transient and persist for at least several months, for more days than not.'
+    vi_tri: CDDR tr. 266
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…hầu như mỗi ngày trong ít nhất sáu tháng… kèm bồn chồn, dễ mệt, khó tập trung, căng cơ, rối loạn giấc ngủ". "Sáu tháng" là ngưỡng của DSM-5-TR; tài liệu chính thức của APA đọc được không ghi con số, ICD-11 ghi "ít nhất vài tháng". Viết theo ICD-11, không ghi ngưỡng số. chỗ khó: ngưỡng thời gian khác giữa hai hệ thống.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+    luot_2_ghi_chu: 'gần chẩn đoán: mô tả gần nguyên yêu cầu chẩn đoán ICD-11 kèm thời gian; cần đứng cạnh n15 (không phải bảng tự chấm) và lời ''chỉ chuyên gia''.'
+  - id: n13
+    cau: 'Rối loạn hoảng sợ: cơn hoảng sợ lặp lại, ít nhất một số cơn đến bất ngờ; cơn là đợt sợ dữ dội ập đến nhanh, kèm tim đập nhanh, khó thở, đau ngực, chóng mặt, sợ mất kiểm soát hay sắp chết; sau đó lo lắng kéo dài về cơn trở lại hay ý nghĩa của nó (ví dụ sợ đau tim), hoặc thay đổi cách sống để tránh cơn (ví dụ chỉ ra khỏi nhà khi có người đi cùng).'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - apa-anx
+    trich: Recurrent panic attacks, which are discrete episodes of intense fear or apprehension characterized by the rapid and concurrent onset of several characteristic symptoms … palpitations or increased heart rate … sensations of shortness of breath … chest pain … feelings of dizziness … fear of losing control or going mad; fear of imminent death. At least some of the panic attacks are unexpected … seem to arise "out of the blue". Panic attacks are followed by persistent concern or worry (e.g. for several weeks) about their recurrence or their perceived negative significance (e.g. that the physiological symptoms may be those of a myocardial infarction), or by behaviours intended to avoid their recurrence (e.g. only leaving the home with a trusted companion).
+    vi_tri: CDDR tr. 271
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "…và sau đó là ít nhất một tháng lo sợ cơn tiếp theo… (ví dụ không dám đi xa, không dám tập thể dục)". "Ít nhất một tháng" là ngưỡng DSM-5-TR, không có trong tài liệu chính thức của APA đọc được; ICD-11 ghi "ví dụ vài tuần". Viết theo ICD-11 (cả hai ví dụ).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+    luot_2_ghi_chu: 'gần chẩn đoán: như n12.'
+  - id: n14
+    cau: 'Rối loạn lo âu xã hội (còn gọi ám ảnh sợ xã hội): nỗi sợ rõ rệt, quá mức trong tình huống xã hội như trò chuyện, ăn uống khi bị nhìn, thuyết trình, vì sợ bị đánh giá tiêu cực, chê cười hay từ chối; né tránh hay chịu đựng trong lo sợ; kéo dài (ICD-11: ví dụ ít nhất vài tháng; APA theo DSM-5-TR: ít nhất sáu tháng).'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - apa-anx
+    trich: Marked and excessive fear or anxiety that occurs consistently in one or more social situations such as social interactions (e.g. having a conversation), doing something while feeling observed (e.g. eating or drinking in the presence of others) or performing in front of others (e.g. giving a speech) … The individual is concerned that they will act in a way, or show anxiety symptoms, that will be negatively evaluated by others (i.e. be humiliating, be embarrassing, lead to rejection or be offensive). Relevant social situations are consistently avoided or endured with intense fear or anxiety. The symptoms are not transient – that is, they persist for an extended period of time (e.g. at least several months). [ICD-11]; The fear or anxiety causes problems with daily functioning and lasts at least six months. [APA, Social Anxiety Disorder]
+    vi_tri: CDDR tr. 284; APA
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Ám ảnh sợ xã hội: nỗi sợ rõ rệt trước các tình huống xã hội có thể bị người khác soi xét… kéo dài ít nhất sáu tháng". Thêm tên ICD-11 (social anxiety disorder), thời gian theo cả hai hệ thống.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+    luot_2_ghi_chu: 'gần chẩn đoán: như n12.'
+  - id: n15
+    cau: 'Mô tả ba dạng là mô tả chung, không phải bảng để tự chấm điểm: chỉ người có chuyên môn mới chẩn đoán được (kèm link Hỗ trợ, ngay trước danh sách).'
+    loai: loi-khuyen
+    nguon:
+      - apa-anx
+    trich: A diagnosis is made by a qualified health professional.
+    vi_tri: APA
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): câu dẫn danh sách ba rối loạn nay có "chỉ người có chuyên môn mới chẩn đoán được; xem trang Hỗ trợ" ngay trước danh sách.'
+    luot_2: dung
+    luot_2_nguon: [ "https://www.who.int/news/item/08-03-2024-new-manual-released-to-support-diagnosis-of-mental--behavioural-and-neurodevelopmental-disorders-added-in-icd-11", "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder/symptoms/" ]
+    luot_2_ghi_chu: Như tram-cam n14. Phần trong ngoặc là chuyện của site, review kiểm.
+  - id: n16
+    cau: 'Chuyên gia phải loại trừ: bệnh cơ thể (ví dụ cường giáp), tác dụng của cà phê, thuốc, rượu hay chất kích thích (kể cả khi ngừng dùng), hay một rối loạn khác giải thích tốt hơn.'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - apa-anx
+    trich: The symptoms are not a manifestation of another medical condition (e.g. hyperthyroidism), and are not due to the effects of a substance or medication on the central nervous system (e.g. caffeine, cocaine), including withdrawal effects (e.g. alcohol, benzodiazepines). [6B00]; see your doctor to rule out medical conditions that may cause similar symptoms [APA]
+    vi_tri: CDDR tr. 266 (6B00), tr. 271 (6B01)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "không giải thích được bằng chất kích thích, bệnh cơ thể hay một rối loạn khác". Thêm ví dụ theo ICD-11.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n17
+    cau: Một cơn hoảng sợ đơn lẻ, hay sự hồi hộp khi phải nói trước đám đông, rất thường gặp và tự nó chưa phải là rối loạn.
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+    trich: Panic attacks are common in the general population, particularly in response to anxiety-provoking life events. … the presence of panic attacks is not in itself sufficient to assign a diagnosis of panic disorder. [6B01]; Many individuals experience fear in social situations (e.g. it is common for individuals to experience anxiety about speaking in public) [6B04]
+    vi_tri: CDDR tr. 271–272, 285
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ (giải thích câu hỏi 3): "Một cơn hoảng sợ đơn lẻ khá phổ biến và chưa phải là rối loạn". Đưa vào thân bài, thêm nói trước đám đông.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n18
+    cau: Rối loạn lo âu hay đi cùng trầm cảm.
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+      - icd11-cddr
+    trich: Anxiety disorders increase the risk for depression and substance use disorders [WHO]; Social anxiety disorder frequently co-occurs with … depressive disorders. [ICD-11]
+    vi_tri: WHO; CDDR tr. 285
+    ket_qua: da-sua
+    ghi_chu: Thêm mới.
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+  - id: n19
+    cau: Các mô hình nhận thức – hành vi nhấn mạnh tránh né là một cơ chế duy trì lo âu.
+    loai: phat-hien
+    nguon:
+      - hofmannhay2018
+    trich: Avoidance is typically considered a maladaptive behavioral response to excessive fear and anxiety, leading to the maintenance of anxiety disorders.
+    vi_tri: Hofmann & Hay 2018, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Có một cơ chế duy trì lo âu mà hầu như rối loạn nào cũng có: tránh né." Bỏ "hầu như rối loạn nào cũng có" (không nguồn định lượng); ghi là quan điểm của mô hình nhận thức – hành vi.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/29550689
+    luot_2_ghi_chu: Toàn văn (PMC5879019 qua NCBI E-utilities).
+  - id: n20
+    cau: 'Vòng tránh né: tránh cho nhẹ nhõm, sự nhẹ nhõm "thưởng" hành vi tránh, và mỗi lần tránh là mất cơ hội học rằng thứ đó không nguy hiểm; càng sợ càng tránh càng sợ hơn.'
+    loai: phat-hien
+    nguon:
+      - hofmannhay2018
+      - craske2014
+    trich: We will first revisit the role of avoidance learning in the development and maintenance of anxiety disorders [Hofmann & Hay]; Research suggests that anxious individuals show deficits in the mechanisms believed to underlie exposure therapy, such as inhibitory learning. [Craske]
+    vi_tri: tóm tắt hai bài
+    ket_qua: dung
+    ghi_chu: 'Mô tả mô hình học tránh né (giữ chữ cũ). Chỉ đọc tóm tắt: cơ chế "nhẹ nhõm củng cố tránh né" là nội dung phổ biến của mô hình học tránh né mà Hofmann & Hay nói tới; lượt 2 nên đối chiếu toàn văn (PMC5879019). chỗ khó: câu giải thích cơ chế.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/29550689
+    luot_2_ghi_chu: Ý 'mất cơ hội học rằng thứ đó không nguy hiểm' là cách diễn giải phổ biến của mô hình học tập (tránh né chống lại sự dập tắt), khớp với 'resistant to extinction' trong bài.
+  - id: n21
+    cau: 'Với rối loạn lo âu, "tránh hẳn thứ gây sợ" có thể giữ nỗi sợ lại lâu dài; liệu pháp tiếp xúc làm ngược lại: đối mặt có kế hoạch, có kiểm soát để học lại rằng báo động reo nhầm.'
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+      - craske2014
+    trich: These include exposure therapy, during which people learn to face their fears. [WHO]; Exposure therapy is an effective approach for treating anxiety disorders [Craske]
+    vi_tri: WHO, Diagnosis and treatment; Craske 2014
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "là chiến lược duy trì lo âu về lâu dài. Các liệu pháp hiệu quả nhất hiện nay làm điều ngược lại: đối mặt dần dần…". Làm mềm: "có thể giữ nỗi sợ lại"; bỏ "hiệu quả nhất" (xem n24).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+      - https://europepmc.org/article/MED/29550689
+  - id: n22
+    cau: Các nhà nghiên cứu lưu ý không phải mọi hành vi tránh đều có hại; tùy mục đích, có lúc tránh né là một cách đối phó hợp lý.
+    loai: phat-hien
+    nguon:
+      - hofmannhay2018
+    trich: We will argue that there are occasions when avoidance behaviors can serve as effective coping strategies to enhance the person's perception of control … We conclude that avoidance behaviors can be a valuable therapeutic element, depending on the function of these behaviors.
+    vi_tri: Hofmann & Hay 2018, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: Thêm mới, để câu về tránh né không tuyệt đối.
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/29550689
+  - id: n23
+    cau: WHO ghi các liệu pháp tâm lý dựa trên nguyên tắc CBT, gồm liệu pháp tiếp xúc, có nhiều bằng chứng nhất cho nhiều rối loạn lo âu.
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+    trich: The psychological interventions with the most evidence for treating a range of anxiety disorders are those based on principles of cognitive-behavioural therapy. These include exposure therapy, during which people learn to face their fears.
+    vi_tri: WHO, Diagnosis and treatment
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "CBT được xem là hướng điều trị tâm lý có bằng chứng mạnh nhất cho các rối loạn lo âu. Với ám ảnh sợ, thành phần cốt lõi là tiếp xúc dần dần…". Dẫn WHO.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  - id: n24
+    cau: NICE khuyên CBT cho rối loạn hoảng sợ, CBT cá nhân cho lo âu xã hội, và CBT hay thư giãn ứng dụng cho lo âu lan tỏa; với lo âu lan tỏa, NICE giới thiệu các bước nhẹ hơn trước như tự giúp có hướng dẫn.
+    loai: lam-sang
+    nguon:
+      - nice-cg113
+      - nice-cg159
+    trich: '1.2.12 For people with GAD whose symptoms have not improved after education and active monitoring in step 1, offer 1 or more of the following as a first-line intervention …: individual non-facilitated self-help, individual guided self-help, psychoeducational groups … 1.2.18 If a person with GAD chooses a high-intensity psychological intervention, offer either CBT or applied relaxation. … 1.3.13 CBT should be used. [panic, CG113]; 1.3.2 Offer adults with social anxiety disorder individual cognitive behavioural therapy (CBT) that has been specifically developed to treat social anxiety disorder [CG159]'
+    vi_tri: NICE CG113 1.2.12, 1.2.18, 1.3.13; CG159 1.3.2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Với lo âu lan tỏa, CBT tập trung vào các kiểu lo lắng và hành vi duy trì nó." Thay bằng khuyến nghị cụ thể của NICE (mô hình chăm sóc từng bước).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
+      - https://www.nice.org.uk/guidance/cg159/chapter/Recommendations
+  - id: n25
+    cau: Theo WHO, thuốc chống trầm cảm như nhóm SSRI có thể hữu ích cho người lớn bị rối loạn lo âu.
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+      - apa-anx
+    trich: Antidepressant medications, such as selective serotonin reuptake inhibitors (SSRIs), can also be useful in treating adults with anxiety disorders.
+    vi_tri: WHO, Diagnosis and treatment
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Thuốc: các nhóm SSRI, SNRI được các hướng dẫn (như NICE) nhắc đến…". Dẫn WHO. chỗ khó: lời về thuốc.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  - id: n26
+    cau: NICE xếp thuốc là một lựa chọn bên cạnh liệu pháp tâm lý cho lo âu lan tỏa, và là lựa chọn cho người không muốn hay không dùng được CBT với lo âu xã hội; chỉ bác sĩ kê đơn và theo dõi thuốc.
+    loai: lam-sang
+    nguon:
+      - nice-cg113
+      - nice-cg159
+      - tt26-2025
+    trich: 1.2.17 … Offer either an individual high-intensity psychological intervention … or drug treatment … there is no evidence that either mode of treatment … is better. [CG113]; 1.3.5 For adults who decline cognitive behavioural interventions and express a preference for a pharmacological intervention … 1.3.6 … offer a selective serotonin reuptake inhibitor (SSRI) [CG159]; Người hành nghề … với chức danh là bác sỹ, y sỹ có thẩm quyền kê đơn thuốc [TT 26/2025 Điều 2]
+    vi_tri: CG113 1.2.17; CG159 1.3.5–1.3.6; TT 26/2025 Điều 2
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Thuốc thường được cân nhắc khi triệu chứng nặng, kéo dài, hoặc khi liệu pháp tâm lý đơn thuần chưa đủ." Với lo âu lan tỏa có suy giảm rõ, NICE cho chọn ngang hàng liệu pháp hay thuốc; viết lại theo NICE. "Chỉ bác sĩ" ở đây là cách nói gọn: TT 26/2025 cho bác sỹ và y sỹ kê đơn. chỗ khó: lời về thuốc.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
+      - https://www.nice.org.uk/guidance/cg159/chapter/Recommendations
+    luot_2_ghi_chu: CG159 nói 'người từ chối CBT'; 'không dùng được' rộng hơn chữ gốc một chút.
+  - id: n27
+    cau: WHO ghi thuốc an thần nhóm benzodiazepine nhìn chung không được khuyên dùng cho rối loạn lo âu, vì nguy cơ lệ thuộc cao và hiệu quả lâu dài hạn chế; NICE chỉ chấp nhận dùng ngắn hạn trong khủng hoảng với lo âu lan tỏa, và khuyên không dùng cho rối loạn hoảng sợ.
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+      - nice-cg113
+    trich: Benzodiazepines, which have historically been prescribed for anxiety disorders, are generally not recommended for anxiety disorders because of their high potential for dependence as well as their limited long-term effectiveness. [WHO]; 1.2.26 Do not offer a benzodiazepine for the treatment of GAD in primary or secondary care except as a short-term measure during crises. … 1.3.20 Benzodiazepines are associated with a less good outcome in the long term and should not be prescribed for the treatment of individuals with panic disorder. [NICE]
+    vi_tri: WHO; CG113 1.2.26, 1.3.20
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới (trang cũ chỉ nói ở mục Ngộ nhận: "Tự dùng thuốc an thần có thể gây phụ thuộc").'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+      - https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
+  - id: n28
+    cau: Tiếp xúc trong trị liệu được lên kế hoạch cùng người có chuyên môn, thường đi từng bước, phù hợp với từng người; khác với việc bị người khác ép vào tình huống đáng sợ.
+    loai: lam-sang
+    nguon:
+      - craske2014
+      - nice-cg113
+    trich: The primary aim of this paper is to provide examples to clinicians for how to apply this model to optimize exposure therapy with anxious clients [Craske]; 1.3.14 CBT should be delivered only by suitably trained and supervised people who can demonstrate that they adhere closely to empirically grounded treatment protocols. [CG113]
+    vi_tri: Craske 2014; CG113 1.3.14
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "các kỹ thuật đối mặt dần dần trong sách vở khác hẳn việc tự ép mình vào tình huống gây sợ một cách đột ngột — cách sau có thể làm mọi thứ tệ đi. Tiếp xúc trị liệu được thiết kế theo từng bước, có người có chuyên môn đồng hành." Không tìm được nguồn cho "có thể làm mọi thứ tệ đi" (trị liệu tiếp xúc cường độ cao, flooding, cũng là một dạng có bằng chứng); bỏ vế ấy, giữ ý "có kế hoạch, cùng người có chuyên môn".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+      - https://europepmc.org/article/MED/24864005
+  - id: n29
+    cau: Các rối loạn lo âu là những rối loạn có thật, được mô tả với tiêu chí rõ ràng (loại nỗi sợ, thời gian, mức khổ sở hay suy giảm, tình trạng loại trừ) trong ICD-11 và DSM-5-TR.
+    loai: nhan
+    nguon:
+      - icd11-cddr
+      - apa-anx
+    trich: Essential (required) features … (6B00, 6B01, 6B04) [ICD-11]; As identified in the Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR), anxiety disorders include the following [APA]
+    vi_tri: CDDR tr. 266–285; APA
+    nhan: vung-chac
+    co_so:
+      - icd11-cddr
+      - apa-anx
+      - who-anx-2026
+    ly_do: 'Câu về sự tồn tại của tiêu chí chẩn đoán chuẩn: ICD-11 (WHO) và DSM-5-TR (APA) đều mô tả các rối loạn này với tiêu chí bắt buộc, thời gian, mức suy giảm và ranh giới với lo âu bình thường; WHO mô tả cùng các dạng. Nguồn chuẩn bậc 2 thống nhất.'
+    ket_qua: da-sua
+    ghi_chu: 'Ý chính cũ: "các rối loạn lo âu là những chẩn đoán có thật, có tiêu chí rõ ràng". Đổi "chẩn đoán" thành "rối loạn", thêm "tình trạng loại trừ".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+    luot_2_ghi_chu: 'Nhãn: câu kiểm trực tiếp được trong hai hệ thống phân loại; Vững chắc (nếu là nhãn của khung) hợp thước đo.'
+  - id: n30
+    cau: Một phân tích tổng hợp 41 thử nghiệm có nhóm giả dược (2.843 người) thấy CBT hiệu quả hơn giả dược ở mức vừa; hiệu quả lớn với lo âu lan tỏa, nhỏ đến vừa với lo âu xã hội và rối loạn hoảng sợ; liệu pháp chủ yếu dùng tiếp xúc có hiệu quả lớn hơn một chút nhưng chưa có ý nghĩa thống kê.
+    loai: so-lieu
+    nguon:
+      - carpenter2018
+    trich: We included 41 studies that randomly assigned patients (N = 2,843) … Findings demonstrated moderate placebo-controlled effects of CBT on target disorder symptoms (Hedges' g = 0.56) … Large effect sizes were found for OCD, GAD, and acute stress disorder, and small to moderate effect sizes were found for PTSD, SAD, and PD. … Interventions primarily using exposure strategies had larger effect sizes … though this difference did not reach significance.
+    vi_tri: Carpenter 2018, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Thân khung cũ: "Nhiều thử nghiệm ngẫu nhiên có đối chứng cho thấy CBT, nhất là các kỹ thuật tiếp xúc, giúp giảm đáng kể triệu chứng của các ám ảnh sợ và rối loạn hoảng sợ. Với lo âu lan tỏa, bằng chứng cũng ủng hộ CBT và một số thuốc theo chỉ định." Thay bằng số của Carpenter 2018 (với hoảng sợ, hiệu quả so với giả dược chỉ nhỏ đến vừa).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/29451967
+    luot_2_ghi_chu: Chỉ đọc tóm tắt. 41 thử nghiệm gồm cả OCD, PTSD, rối loạn stress cấp; câu của trang không nói 41 thử nghiệm chỉ về ba rối loạn lo âu, nên vẫn đúng.
+  - id: n31
+    cau: Một phần đáng kể người bệnh chưa đỡ hay bị tái phát nỗi sợ sau trị liệu tiếp xúc.
+    loai: phat-hien
+    nguon:
+      - craske2014
+    trich: Exposure therapy is an effective approach for treating anxiety disorders, although a substantial number of individuals fail to benefit or experience a return of fear after treatment.
+    vi_tri: Craske 2014, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: Thêm mới.
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/24864005
+  - id: n32
+    cau: 'CBT, kể cả các kỹ thuật tiếp xúc, giảm triệu chứng của nhiều rối loạn lo âu: khá vững.'
+    loai: nhan
+    nguon:
+      - carpenter2018
+      - who-anx-2026
+    vi_tri: khung "Mức độ chắc chắn"
+    nhan: kha-vung
+    co_so:
+      - carpenter2018
+      - craske2014
+      - who-anx-2026
+    ly_do: 'Phân tích tổng hợp 41 thử nghiệm có nhóm giả dược: hiệu quả vừa (g = 0,56), cùng chiều với WHO và NICE. Giới hạn: hiệu quả khác nhau nhiều giữa các rối loạn (nhỏ đến vừa với hoảng sợ, lo âu xã hội), mạnh hơn ở mẫu hoàn tất so với phân tích theo ý định điều trị, nhiều người không đỡ hay tái phát (Craske 2014). Khá vững.'
+    ket_qua: da-sua
+    ghi_chu: 'Ý chính cũ: "CBT — đặc biệt là tiếp xúc dần dần — có hiệu quả với lo âu" (Khá vững). Giữ nhãn; sửa ý chính và thân theo Carpenter 2018. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): đổi "nhất là" thành "kể cả" theo câu đúng của lượt 2 (Carpenter 2018: tiếp xúc hơn các kỹ thuật khác chưa có ý nghĩa thống kê). Review (17/11/2026): "nhất là" thành "kể cả" khớp câu đúng của lượt 2; lượt 2 bổ sung dung; nhãn Khá vững đạt thước đo (Carpenter 2018 g = 0,56 so với giả dược, khác nhau giữa các rối loạn). Đạt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/29451967/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12004241/", "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders" ]
+    luot_2_ghi_chu: "Có nhiều phân tích tổng hợp cùng chiều, nhưng hiệu quả so với giả dược chỉ vừa, phụ thuộc loại đối chứng (danh sách chờ thổi phồng), nhỏ hơn với hoảng sợ, lo âu xã hội: nhãn Khá vững hợp thước đo, không quá mạnh. Trích Carpenter từ tóm tắt (PubMed)."
+  - id: n33
+    cau: Theo WHO, rối loạn lo âu là kết quả của sự tương tác phức tạp giữa yếu tố xã hội, tâm lý và sinh học; người từng bị bạo hành, mất mát nặng hay trải nghiệm bất lợi dễ bị hơn.
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+    trich: Anxiety disorders, like other mental health conditions, result from a complex interaction of social, psychological and biological factors. Anyone can have an anxiety disorder, but people who have lived through abuse, severe losses or other adverse experiences are more likely to develop one.
+    vi_tri: WHO, Contributing factors and prevention
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Lo âu có yếu tố sinh học (tính khí, gen) nhưng cũng gắn chặt với stress kéo dài, chấn thương và môi trường sống." Dẫn WHO.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  - id: n34
+    cau: Phân tích tổng hợp các nghiên cứu sinh đôi ước tính gen giải thích khoảng 43% khác biệt về nguy cơ rối loạn hoảng sợ và 32% với lo âu lan tỏa; với rối loạn hoảng sợ, phần còn lại chủ yếu thuộc về môi trường riêng của mỗi người; với lo âu lan tỏa ở nữ, môi trường chung của gia đình có thể cũng góp phần.
+    loai: so-lieu
+    nguon:
+      - hettema2001
+    trich: These yielded heritabilities of 0.43 for panic disorder and 0.32 for generalized anxiety disorder. For panic disorder, the remaining variance in liability could be attributed primarily to nonshared environment. For generalized anxiety disorder, this was true for men, but for women, a potentially significant role for common familial environment was also seen.
+    vi_tri: Hettema 2001, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Thêm mới. Vế "phần còn lại phần lớn đến từ trải nghiệm riêng" đúng với hoảng sợ và với lo âu lan tỏa ở nam; ở nữ, môi trường gia đình chung có thể có vai trò. chỗ khó: câu tóm có thể quá gọn; lượt 2 xem có cần thêm "ở nam" không. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): sửa vế sau theo Hettema 2001 (lượt 2 qua-manh): chỉ với hoảng sợ phần còn lại chủ yếu là môi trường riêng; với lo âu lan tỏa ở nữ, môi trường chung có thể góp phần. Bỏ "trải nghiệm riêng" (môi trường riêng trong mô hình sinh đôi gồm cả sai số đo), dùng "môi trường riêng". Review (17/11/2026): câu trên trang khớp tóm tắt Hettema 2001 (lượt 2 bổ sung dung), "có thể cũng góp phần" đúng mức "potentially". Đạt.'
+    luot_2: dung
+    luot_2_nguon: [ "https://pubmed.ncbi.nlm.nih.gov/11578982/" ]
+    luot_2_ghi_chu: "Khớp từng ý. Chỉ đọc tóm tắt; tóm tắt có đủ các con số. 'Có thể cũng góp phần' đúng mức thận trọng của bài ('potentially', kết luận: 'the role of family environment in generalized anxiety disorder is uncertain')."
+  - id: n35
+    cau: Rối loạn lo âu hình thành từ nhiều yếu tố cùng tác động (gen, trải nghiệm, hoàn cảnh); ở mỗi người cụ thể, chưa thể tách rõ yếu tố nào góp bao nhiêu.
+    loai: nhan
+    nguon:
+      - who-anx-2026
+      - hettema2001
+    vi_tri: khung "Mức độ chắc chắn"
+    nhan: kha-vung
+    co_so:
+      - hettema2001
+      - who-anx-2026
+    ly_do: 'Phân tích tổng hợp nghiên cứu gia đình và sinh đôi (Hettema 2001) cho thấy cả gen (di truyền 0,32–0,43) và môi trường đều góp phần; WHO mô tả cùng mô hình. Giới hạn: số nghiên cứu sinh đôi lớn ít (chỉ hoảng sợ và lo âu lan tỏa có hơn một), mẫu chủ yếu phương Tây, ước lượng di truyền là của quần thể, không áp được cho từng người. Khá vững.'
+    ket_qua: da-sua
+    ghi_chu: 'Khung cũ: "Đang tranh cãi: lo âu là bệnh của não hay bệnh của hoàn cảnh?" và thân "Giới nghiên cứu tranh luận về tỉ trọng của từng yếu tố — và câu trả lời ảnh hưởng đến việc nên can thiệp ở cấp độ cá nhân, gia đình hay xã hội." Không tìm được bằng chứng chất lượng cao mâu thuẫn nhau theo cách đặt câu hỏi "não hay hoàn cảnh"; WHO và các nghiên cứu sinh đôi cùng chiều về mô hình nhiều yếu tố. Đổi thành Khá vững với ý chính mới. chỗ khó: đổi nhãn (Đang tranh cãi → Khá vững) và đổi đối tượng của nhãn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+      - https://europepmc.org/article/MED/11578982
+    luot_2_ghi_chu: 'Nhãn (nếu Vững chắc hay Khá vững) hợp thước đo: ý ''nhiều yếu tố cùng tác động'' có phân tích tổng hợp sinh đôi và nguồn chuẩn WHO; vế ''ở mỗi người chưa thể tách'' là đúng về mặt phương pháp (hệ số di truyền là số của quần thể).'
+  - id: n36
+    cau: 'Ngộ nhận "Tránh hẳn thứ gây sợ là cách tốt nhất": thường là không; với rối loạn lo âu, tránh né có thể giữ nỗi sợ lâu dài; đối mặt có kế hoạch, cùng người có chuyên môn, là cốt lõi của liệu pháp tiếp xúc.'
+    loai: lam-sang
+    nguon:
+      - hofmannhay2018
+      - who-anx-2026
+    trich: Avoidance is typically considered a maladaptive behavioral response … leading to the maintenance of anxiety disorders. Exposure is a core element of cognitive-behavioral therapy for anxiety disorders.
+    vi_tri: Hofmann & Hay 2018
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Sai về lâu dài. Tránh né… duy trì và khuếch đại nỗi sợ, vì não không bao giờ có cơ hội học rằng thứ đó an toàn." Làm mềm ("thường là không", "có thể giữ") theo Hofmann & Hay (có lúc tránh né là thích nghi).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/29550689
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  - id: n37
+    cau: 'Ngộ nhận "chỉ cần bình tĩnh, hít thở sâu": kỹ năng thư giãn có thể giúp giảm triệu chứng, nhưng rối loạn lo âu là tình trạng kéo dài, khó kiểm soát; điều trị có bằng chứng là các liệu pháp có cấu trúc như CBT, và khi cần là thuốc do bác sĩ kê.'
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+    trich: In addition, learning stress management skills, such as relaxation skills and mindfulness skills, can help reduce symptoms of anxiety disorders. … The psychological interventions with the most evidence … are those based on principles of cognitive-behavioural therapy.
+    vi_tri: WHO, Diagnosis and treatment
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Sai ở cách diễn đạt. Kỹ thuật thư giãn có thể hỗ trợ… lời khuyên bình tĩnh đi giống như bảo người cận thị cố nhìn rõ đi." Bỏ so sánh với cận thị; dẫn WHO.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+      - https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder/overview/
+  - id: n38
+    cau: 'Ngộ nhận "tự uống thuốc an thần là được": benzodiazepine có nguy cơ lệ thuộc cao và WHO nhìn chung không khuyên dùng cho rối loạn lo âu; dùng thuốc nào, bao lâu là việc của bác sĩ.'
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+      - tt26-2025
+    trich: Benzodiazepines … are generally not recommended for anxiety disorders because of their high potential for dependence
+    vi_tri: WHO
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nguy hiểm. Tự dùng thuốc an thần có thể gây phụ thuộc và che lấp vấn đề gốc. Mọi dùng thuốc đều cần bác sĩ chỉ định." Bỏ "che lấp vấn đề gốc" (không nguồn); dẫn WHO.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  - id: n39
+    cau: Nên cân nhắc tìm người có chuyên môn khi lo lắng kéo dài, khó kiểm soát, khiến né tránh ngày càng nhiều thứ, hay cơ thể như luôn báo động (khó ngủ, căng cơ, mệt); không cần "đủ nặng".
+    loai: loi-khuyen
+    nguon:
+      - apa-anx
+      - who-anx-2026
+    trich: 'When to Seek Help for Anxiety … Potential anxiety disorder: Persistent, excessive worry; Lasts for months or keeps coming back; Strong physical symptoms …; Interferes with work, school, or relationships; Feels overwhelming, hard to control; Recurrent panic attacks [APA]; People with symptoms of anxiety should seek care. [WHO]'
+    vi_tri: APA, bảng When to Seek Help for Anxiety; WHO
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "kéo dài nhiều tháng". Bỏ "nhiều tháng" để không thành ngưỡng phải chờ; thêm "không cần đủ nặng".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder/overview/
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+  - id: n40
+    cau: 'Cơn hoảng sợ có thể giống cơn đau tim; đau ngực, khó thở dữ dội hay nghĩ mình gặp nguy hiểm về sức khỏe thì gọi cấp cứu: chỉ nhân viên y tế mới phân biệt được.'
+    loai: loi-khuyen
+    nguon:
+      - apa-anx
+      - icd11-cddr
+    trich: Because symptoms can be intense, some people experiencing a panic attack may believe they are having a heart attack and seek emergency care. [APA]; (e.g. that the physiological symptoms may be those of a myocardial infarction) [ICD-11]
+    vi_tri: APA, Panic Disorder; CDDR tr. 271
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nếu có cơn hoảng sợ khiến bạn tưởng mình sắp chết, việc đi khám để loại trừ nguyên nhân cơ thể và được đánh giá đúng là bước hợp lý." Viết rõ hơn: triệu chứng như đau tim thì gọi cấp cứu (an toàn: không tự kết luận là "chỉ hoảng sợ"). chỗ khó: lời khuyên khi có triệu chứng cơ thể.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.nhs.uk/conditions/chest-pain/
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n41
+    cau: Có ý nghĩ tự làm hại bản thân thì tìm giúp đỡ ngay; số khẩn cấp và đường dây hỗ trợ ở trang Hỗ trợ.
+    loai: loi-khuyen
+    nguon:
+      - who-dep-2026
+    trich: If you think you are in immediate danger of harming yourself, contact any available emergency services or a crisis line.
+    vi_tri: WHO Depression, Self-care
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Nếu bạn cảm thấy không an toàn với chính mình, gọi 115 ngay." Bỏ số khỏi bài (lời giao D7-L1); chỉ dẫn trang Hỗ trợ.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/
+    luot_2_ghi_chu: Phần số khẩn cấp là câu về trang Hỗ trợ (ve-site); kiểm ở hồ sơ Hỗ trợ.
+  - id: n42
+    cau: Mục Đọc thêm link tới Trầm cảm, Tìm giúp đỡ, Đối phó stress.
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm trên trang: ba link nội bộ (tests/link.test.mjs). review (17/11/2026): đã kiểm trên trang và dist/ (npm run build:xem), khớp.'
+    review: dung
+  - id: n43
+    cau: 'Câu hỏi 1: rối loạn lo âu là nỗi sợ, lo lắng quá mức, khó kiểm soát, kéo dài, gây khổ sở hay suy giảm rõ; lo lắng bình thường tương xứng và tự hết; chỉ người có chuyên môn đánh giá được.'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - apa-anx
+    trich: Anxiety and worry are normal emotional/cognitive states that commonly occur when people are under stress. At optimal levels, anxiety and worry may help to direct problem-solving efforts, focus attention adaptively and increase alertness. Normal anxiety and worry are usually sufficiently self-regulated that they do not interfere with functioning or cause marked distress. In generalized anxiety disorder, the anxiety or worry is excessive, persistent and intense, and may have a significant negative impact on functioning.
+    vi_tri: CDDR tr. 267
+    ket_qua: da-sua
+    ghi_chu: 'Câu cũ: đáp án có "(với lo âu lan tỏa là ít nhất sáu tháng)"; phương án nhiễu "chỉ xảy ra với người yếu thần kinh". Bỏ ngưỡng sáu tháng (n12); đổi "yếu thần kinh" thành "yếu đuối".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n44
+    cau: 'Câu hỏi 2: tránh né có thể giữ lo âu lâu dài vì nhẹ nhõm tức thì thưởng hành vi tránh và lấy mất cơ hội học rằng thứ đó không nguy hiểm.'
+    loai: phat-hien
+    nguon:
+      - hofmannhay2018
+    trich: Avoidance is typically considered a maladaptive behavioral response to excessive fear and anxiety, leading to the maintenance of anxiety disorders.
+    vi_tri: Hofmann & Hay 2018
+    ket_qua: da-lam-mem
+    ghi_chu: 'Câu cũ: "Vì sao tránh hẳn thứ gây sợ lại duy trì lo âu về lâu dài?" Làm mềm "có thể giữ".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/29550689
+  - id: n45
+    cau: 'Câu hỏi 3: theo ICD-11, rối loạn hoảng sợ có các cơn lặp lại, một số cơn bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, gây suy giảm rõ; cơn hoảng sợ đơn lẻ khá thường gặp và chưa phải rối loạn.'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+    trich: Recurrent panic attacks, which are discrete episodes of intense fear or apprehension characterized by the rapid and concurrent onset of several characteristic symptoms … palpitations or increased heart rate … sensations of shortness of breath … chest pain … feelings of dizziness … fear of losing control or going mad; fear of imminent death. At least some of the panic attacks are unexpected … seem to arise "out of the blue". Panic attacks are followed by persistent concern or worry (e.g. for several weeks) about their recurrence or their perceived negative significance (e.g. that the physiological symptoms may be those of a myocardial infarction), or by behaviours intended to avoid their recurrence (e.g. only leaving the home with a trusted companion). … Panic attacks are common in the general population
+    vi_tri: CDDR tr. 271–272
+    ket_qua: da-sua
+    ghi_chu: 'Câu cũ: "Theo DSM-5-TR… kèm ít nhất một tháng lo sợ cơn tiếp theo…". Đổi sang ICD-11 (ngưỡng một tháng của DSM-5-TR không kiểm được qua tài liệu chính thức của APA).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+  - id: n46
+    cau: 'Câu hỏi 4: liệu pháp dựa trên CBT, gồm tiếp xúc, có nhiều bằng chứng nhất; SSRI có thể hữu ích, do bác sĩ kê; benzodiazepine nhìn chung không được khuyên dùng; WHO và NICE đặt CBT ở vị trí trung tâm.'
+    loai: lam-sang
+    nguon:
+      - who-anx-2026
+      - nice-cg113
+      - nice-cg159
+    trich: The psychological interventions with the most evidence … are those based on principles of cognitive-behavioural therapy. … Antidepressant medications, such as SSRIs, can also be useful … Benzodiazepines … are generally not recommended
+    vi_tri: WHO; NICE
+    ket_qua: da-sua
+    ghi_chu: 'Câu cũ: đáp án "…tiếp xúc trị liệu khác hẳn việc tự ép mình đối mặt đột ngột"; phương án nhiễu "Cứ đối mặt đột ngột với nỗi sợ lớn nhất là khỏi nhanh nhất"; giải thích "Tự ngập trong nỗi sợ… có thể làm mọi thứ tệ đi". Bỏ phần không nguồn (n28); phương án nhiễu mới: "Thuốc an thần là lựa chọn tốt nhất về lâu dài" (sai theo WHO).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+      - https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
+  - id: n47
+    cau: 'Câu hỏi 5: với người bạn ngày càng ít ra khỏi nhà vì sợ lên cơn, điều hữu ích là lắng nghe không phán xét, không ép, khuyến khích tìm người có chuyên môn, vì tránh né ngày càng rộng có thể làm nỗi sợ bám lâu hơn.'
+    loai: loi-khuyen
+    nguon:
+      - paho-living
+      - who-anx-2026
+    trich: listen without judgement, and offer support … Encourage them to seek professional help [PAHO, về trầm cảm]; People with symptoms of anxiety should seek care. … Usually they avoid the situations that make them anxious. [WHO]
+    vi_tri: PAHO 2021; WHO Anxiety
+    ket_qua: da-sua
+    ghi_chu: 'Câu cũ: "…vì tránh né ngày càng rộng là dấu hiệu vòng luẩn quẩn đang siết chặt"; giải thích "Ép đối mặt hay bao bọc tránh né đều không giúp". Làm mềm; nguồn về cách giúp người thân của WHO/PAHO viết cho trầm cảm, áp dụng chung (ghi rõ để lượt 2 xét).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://europepmc.org/article/MED/29550689
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+    luot_2_ghi_chu: Ý 'không ép' khớp n28 (tiếp xúc có kế hoạch, từng bước).
+  - id: n48
+    cau: Mục Nguồn cũ ghi chú thích DSM-5-TR (lo âu lan tỏa ≥6 tháng, 3/6 triệu chứng; hoảng sợ ≥1 tháng; lo âu xã hội ≥6 tháng), NICE CG113, và dòng tham chiếu trang Hỗ trợ.
+    loai: lam-sang
+    nguon:
+      - apa-anx
+    vi_tri: mục Nguồn
+    ket_qua: da-sua
+    ghi_chu: 'Bỏ chú thích ngưỡng của DSM-5-TR (không kiểm được qua tài liệu chính thức của APA, trừ lo âu xã hội sáu tháng, đã đưa vào thân bài; ngưỡng đếm "3/6 triệu chứng" là kiểu bảng tự chấm). Dòng tham chiếu trang Hỗ trợ bỏ khỏi mục Nguồn (báo cáo D1.2 mục 4). Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac cho ngưỡng DSM ở chú thích nguồn cũ. Đã kiểm trang (grep 17/11/2026): không còn "3/6", "một tháng", "sáu tháng" cho lo âu lan tỏa; chỉ còn "ít nhất sáu tháng" của lo âu xã hội, theo tài liệu chính thức của APA (lượt 2 xác nhận). Giữ da-sua.'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+      - https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
+    luot_2_ghi_chu: 'Lo âu xã hội ≥6 tháng: xác nhận qua APA. Lo âu lan tỏa ''≥6 tháng, 3/6 triệu chứng'' và hoảng sợ ''≥1 tháng'': đúng theo hiểu biết chung về DSM-5, nhưng không mở được văn bản tiêu chí của APA (psychiatryonline.org 403), nên ghi khong-chac theo yêu cầu. gần chẩn đoán: ''3/6 triệu chứng'' là ngưỡng đếm, dễ thành bảng tự chấm; nên bỏ số đếm hay để kèm lời ''chỉ chuyên gia áp dụng''.'
+doi_chu:
+  - cu: 'description "Bản nháp: các rối loạn lo âu chính theo DSM-5-TR (lo âu lan tỏa, hoảng sợ, ám ảnh sợ xã hội)…"'
+    moi: description không có "Bản nháp", thêm ICD-11
+    ly_do: Hồ sơ n1.
+  - cu: Hộp warning "Bản nháp đang chờ rà soát chuyên môn"
+    moi: Hộp note "Trước khi đọc" và ::tom-tat
+    ly_do: Hồ sơ n2, n3.
+  - cu: Tự trải nghiệm, hộp "Điểm khác biệt cốt lõi" ("dạng mà y học gọi là rối loạn lo âu")
+    moi: '"(ví dụ giả định của chúng tôi)"; thêm điều kiện khổ sở, suy giảm; câu "chỉ người có chuyên môn…"'
+    ly_do: Hồ sơ n4–n7.
+  - cu: 'Mục "Điều gì đang xảy ra?": "cơ chế sinh tồn"; "Ba dạng phổ biến nhất"; ngưỡng sáu tháng, một tháng; "Ám ảnh sợ xã hội"'
+    moi: Theo ICD-11 và WHO; thêm số liệu WHO 2023 có mốc; "Ba dạng thường được nhắc đến"; thời gian theo ICD-11 (và APA cho lo âu xã hội); loại trừ, cơn đơn lẻ, đi cùng trầm cảm
+    ly_do: Hồ sơ n8–n18.
+  - cu: 'Mục "Vòng luẩn quẩn tránh né": "hầu như rối loạn nào cũng có"; "là chiến lược duy trì lo âu"; "Các liệu pháp hiệu quả nhất hiện nay…"'
+    moi: '"Các mô hình nhận thức – hành vi nhấn mạnh…"; "có thể giữ nỗi sợ lại lâu dài"; thêm câu không phải mọi tránh né đều có hại'
+    ly_do: Hồ sơ n19–n22.
+  - cu: Mục "Các hướng điều trị có bằng chứng" (CBT "mạnh nhất"; SSRI, SNRI "khi triệu chứng nặng"; kết hợp; "cách sau có thể làm mọi thứ tệ đi")
+    moi: Theo WHO, NICE CG113, CG159; thêm benzodiazepine; tiếp xúc có kế hoạch cùng người có chuyên môn
+    ly_do: Hồ sơ n23–n28.
+  - cu: Ba khung nhãn (Vững chắc; Khá vững CBT; Đang tranh cãi "bệnh của não hay bệnh của hoàn cảnh")
+    moi: Vững chắc; Khá vững (CBT, số của Carpenter 2018); Khá vững (nhiều yếu tố cùng tác động)
+    ly_do: Hồ sơ n29–n35.
+  - cu: Ba ngộ nhận ("Sai về lâu dài"; "người cận thị"; "che lấp vấn đề gốc")
+    moi: Viết lại theo Hofmann & Hay, WHO
+    ly_do: Hồ sơ n36–n38.
+  - cu: 'Khi nào nên tìm giúp đỡ: "kéo dài nhiều tháng"; "gọi 115 ngay"'
+    moi: Bỏ ngưỡng "nhiều tháng"; triệu chứng như đau tim thì gọi cấp cứu; số ở trang Hỗ trợ
+    ly_do: Hồ sơ n39–n41.
+  - cu: Năm câu hỏi (câu 3 "Theo DSM-5-TR… ít nhất một tháng"; câu 4 "đối mặt đột ngột")
+    moi: Năm câu hỏi, câu 3 theo ICD-11, câu 4 về thuốc an thần
+    ly_do: Hồ sơ n43–n47.
+  - cu: Mục Nguồn (DSM-5-TR kèm ngưỡng; NICE CG113; trang Hỗ trợ)
+    moi: ICD-11 CDDR, WHO, APA, NICE CG113, CG159, các phân tích tổng hợp
+    ly_do: Hồ sơ n48.

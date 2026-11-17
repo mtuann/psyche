@@ -4,177 +4,177 @@ nguon_cu: ../psyche-zero/docs/trai-nghiem/ao-giac-thi-giac.md
 tang: cong-cu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-16'
-  nhanh: moi/d8-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
-    luot_2: null
-    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l1
+    ma_bam: sha256:bba418c67a1d63d48d35af612186749a98e381ddac9856b1c8bc028b71e785c4
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L1, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l1-kiem-mau.yml), đạt, 17/11/2026
 nguon:
-- id: henrich2010
-  ten: 'Henrich, Heine & Norenzayan (2010), Behav Brain Sci 33(2–3), 61–83: toàn văn (bản tác giả, UBC), mục 2.1 và Hình 2'
-  link: https://www2.psych.ubc.ca/~henrich/pdfs/Weird_People_BBS_final02.pdf
-  toan_van: true
-- id: amir2026
-  ten: 'Amir & Firestone (2026), Psychol Rev 133(5), 1082–1108: toàn văn (bản chấp nhận đăng trên OSF)'
-  link: https://osf.io/y7mtf/download
-  toan_van: true
-- id: segall1963
-  ten: 'Segall, Campbell & Herskovits (1963), Science 139(3556), 769–771: tóm tắt (OpenAlex); sách 1966 không mở được (Internet Archive hạn chế)'
-  link: https://doi.org/10.1126/science.139.3556.769
-  toan_van: false
-- id: bruno2009
-  ten: 'Bruno & Franz (2009), Neuropsychologia 47(6), 1421–1433: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1016/j.neuropsychologia.2008.10.031
-  toan_van: false
-- id: mruczek2015
-  ten: 'Mruczek, Blair, Strother & Caplovitz (2015), Front Hum Neurosci 9, 77: toàn văn (PMC4332331), mục Giới thiệu'
-  link: https://doi.org/10.3389/fnhum.2015.00077
-  toan_van: true
-- id: vdk2013
-  ten: 'van der Kamp, Withagen & de Wit (2013), Atten Percept Psychophys 75(5), 1027–1038: toàn văn (PDF, Springer)'
-  link: https://doi.org/10.3758/s13414-013-0458-5
-  toan_van: true
+  - id: henrich2010
+    ten: 'Henrich, Heine & Norenzayan (2010), Behav Brain Sci 33(2–3), 61–83: toàn văn (bản tác giả, UBC), mục 2.1 và Hình 2'
+    link: https://www2.psych.ubc.ca/~henrich/pdfs/Weird_People_BBS_final02.pdf
+    toan_van: true
+  - id: amir2026
+    ten: 'Amir & Firestone (2026), Psychol Rev 133(5), 1082–1108: toàn văn (bản chấp nhận đăng trên OSF)'
+    link: https://osf.io/y7mtf/download
+    toan_van: true
+  - id: segall1963
+    ten: 'Segall, Campbell & Herskovits (1963), Science 139(3556), 769–771: tóm tắt (OpenAlex); sách 1966 không mở được (Internet Archive hạn chế)'
+    link: https://doi.org/10.1126/science.139.3556.769
+    toan_van: false
+  - id: bruno2009
+    ten: 'Bruno & Franz (2009), Neuropsychologia 47(6), 1421–1433: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1016/j.neuropsychologia.2008.10.031
+    toan_van: false
+  - id: mruczek2015
+    ten: 'Mruczek, Blair, Strother & Caplovitz (2015), Front Hum Neurosci 9, 77: toàn văn (PMC4332331), mục Giới thiệu'
+    link: https://doi.org/10.3389/fnhum.2015.00077
+    toan_van: true
+  - id: vdk2013
+    ten: 'van der Kamp, Withagen & de Wit (2013), Atten Percept Psychophys 75(5), 1027–1038: toàn văn (PDF, Springer)'
+    link: https://doi.org/10.3758/s13414-013-0458-5
+    toan_van: true
 nhan_dinh:
-- id: s1
-  cau: 'Cách chơi: đoạn trên cánh hướng vào, đoạn dưới cánh hướng ra; kéo thanh trượt chỉnh đoạn dưới; "Chốt đáp án" hiện độ dài thật và % sai lệch.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (hinhDoan: kieu "vao" ở trên, "ra" ở dưới; TRUOT 50–150%), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs chỉnh bằng phím rồi chốt. Review (17/11/2026): hinhDoan("vao") vẽ <——> (cánh khép vào, đoạn trông ngắn) ở trên, "ra" vẽ >——< ở dưới, khớp chữ trang và trang nhà (>---< cánh xòe ra trông dài hơn). Hai chú thích trong mã ghi ngược ký hiệu (vao là >——<): đã sửa chú thích, hình và chữ hiện ra không đổi. TRUOT 50–150: khớp.'
-  review: dung
-- id: n1
-  cau: Đoạn có cánh hướng ra thường trông dài hơn đoạn có cánh hướng vào, dù độ dài thật bằng nhau.
-  loai: phat-hien
-  nguon:
-  - henrich2010
-  - amir2026
-  trich: The lines labeled 'a' and 'b' in each figure are the same length. Many subjects perceive line 'b' as longer than line 'a'.
-  vi_tri: Henrich 2010, Hình 1; Amir & Firestone 2026, Hình 1
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://osf.io/y7mtf/download
-- id: n2
-  cau: 'Một cách giải thích: não "đọc" các cánh như góc tường ba chiều (đoạn cánh hướng ra giống góc trong của căn phòng, trông như ở xa hơn; đoạn cánh hướng vào giống góc ngoài của ngôi nhà, trông như ở gần hơn) rồi tự bù trừ khoảng cách; cách khác cho rằng đây là đặc tính xử lý của hệ thị giác, không cần diễn giải ba chiều; các cách giải thích còn tranh luận.'
-  loai: dinh-nghia
-  nguon:
-  - amir2026
-  trich: the outward-going Müller-Lyer arrow figure is a typical projection of, say, the corner of a room … while the in-going arrow is a typical projection of an outside corner of a house or a box … the [central] line would be further away in the diverging case, and is expanded in the illusion
-  vi_tri: 'Amir & Firestone 2026, mục 2 (trích Gregory 1963) và mục 2.2.1 (các thuyết khác: conflicting cues, confusion, lọc tần số thấp…)'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "góc lồi trông như ở xa hơn, góc lõm như ở gần hơn" (ngược với Gregory: góc lõm, tức góc trong căn phòng, ứng với cánh hướng ra, ở xa hơn). Chữ mới viết theo đoạn Gregory 1963 do Amir & Firestone trích.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://osf.io/y7mtf/download
-- id: n3
-  cau: Nghiên cứu xuyên văn hóa của Segall, Campbell và Herskovits báo cáo mức bị ảo giác khác nhau giữa các xã hội; chuyện kể đầy đủ ở bài Ảo giác thị giác.
-  loai: phat-hien
-  nguon:
-  - segall1963
-  trich: Data from 15 societies are presented showing substantial intersocietal differences of two types in susceptibility to geometric optical illusions.
-  vi_tri: Segall 1963, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Mục cũ kể chi tiết (15 xã hội, người Mỹ trưởng thành ở Evanston 19%, người San 1%, giả thuyết "thế giới thợ mộc") rút còn một câu link về trang nhà kham-pha/chu-y-tri-giac/ao-giac-thi-giac (src/data/nghien-cuu.yml: segall1963).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://osf.io/y7mtf/download
-  - https://www2.psych.ubc.ca/~henrich/pdfs/WeirdPeople.pdf
-- id: n4
-  cau: 'Theo Henrich và cộng sự (2010) kể lại: sinh viên đại học Mỹ cần đoạn cánh hướng vào dài hơn đoạn cánh hướng ra khoảng một phần năm mới thấy bằng nhau; người San ở Kalahari gần như không bị ảo giác.'
-  loai: so-lieu
-  nguon:
-  - henrich2010
-  - amir2026
-  trich: On average, the undergraduates required that segment 'a' be about a fifth longer than 'b' before the two segments were perceived as equal. At the other end, the San foragers of the Kalahari were unaffected … While the San's PSE value cannot be distinguished from zero
-  vi_tri: Henrich 2010, mục 2.1 và Hình 2; Amir & Firestone 2026, mục 1 ("American college students in Evanston, Illinois")
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "Người Mỹ trưởng thành ở Evanston cần đoạn thẳng dài hơn khoảng 19% … Người San … khoảng 1%". Henrich 2010 (toàn văn) nói "sinh viên đại học" và "khoảng một phần năm", PSE của người San "không phân biệt được với 0"; con số 19% và 1% (McCauley & Henrich 2006, đọc từ hình) không mở được để kiểm. Công cụ (ao-giac.js, NGHIEN_CUU.segall1966) dùng "khoảng 20%" và "gần như 0%" theo Henrich 2010, và tính độ lệch của người dùng theo cùng định nghĩa (theoSegall). chỗ khó: con số này là của nghiên cứu có trang nhà ở nơi khác, mà trang nhà không nêu số; kế hoạch đợt 8 ghi rõ số liệu Segall 1966 trong công cụ vào hồ sơ trang này. Chủ repo quyết có giữ con số so sánh trong công cụ không.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://www2.psych.ubc.ca/~henrich/pdfs/WeirdPeople.pdf
-- id: n5
-  cau: 'Vững chắc: ảo giác Müller-Lyer là hiệu ứng tri giác mạnh, tái lập rộng rãi; được mô tả từ năm 1889 và đo trong nhiều nghiên cứu suốt hơn một thế kỷ; một tổng quan định lượng 18 nghiên cứu thấy hiệu ứng lên phán đoán bằng mắt lớn hơn lên động tác cầm nắm, và hiệu ứng lên cầm nắm cũng gần như luôn lớn hơn 0.'
-  loai: nhan
-  nguon:
-  - bruno2009
-  - amir2026
-  - mruczek2015
-  trich: here we re-analyze 18 studies on grasping objects embedded in the Müller-Lyer (ML) illusion. We find that median percent effects across studies are indeed larger for perceptual than for grasping measures. However, almost all grasping effects are larger than zero
-  vi_tri: Bruno & Franz 2009, tóm tắt; Mruczek 2015, Thảo luận ("Müller-Lyer (~20–40%)", nhiều nghiên cứu); Amir & Firestone 2026, mục 2 (Müller-Lyer 1889)
-  nhan: vung-chac
-  co_so:
-  - bruno2009
-  - amir2026
-  - mruczek2015
-  ly_do: Tổng quan định lượng 18 nghiên cứu (Bruno & Franz 2009); hiệu ứng có ở người nhiều nền văn hóa, ở nhiều loài và cả qua xúc giác (Amir & Firestone 2026, tổng hợp). Trùng nhãn của trang nhà (đã khóa).
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "đa số người phương Tây … Hiệu ứng xuất hiện trong hàng trăm nghiên cứu" ("hàng trăm" không có nguồn). Chữ mới như trang nhà: 1889, nhiều nghiên cứu, tổng quan 18 nghiên cứu. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 dung kèm chỗ khó. Giữ Vững chắc: Bruno & Franz 2009 là tổng quan định lượng (18 nghiên cứu) cho thấy hiệu ứng lên phán đoán bằng mắt lớn hơn lên cầm nắm, tức hiệu ứng tri giác có ở mọi nghiên cứu được gộp; Amir & Firestone 2026 tổng hợp thấy ảo giác ở nhiều loài, qua xúc giác, cả ở người mù bẩm sinh; không có thất bại tái lập; trùng nhãn của trang nhà đã khóa.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1016/j.neuropsychologia.2008.10.031
-  - https://osf.io/y7mtf/download
-  luot_2_ghi_chu: 'chỗ khó: thước đo Vững chắc cần phân tích tổng hợp; rà soát định lượng 18 nghiên cứu chỉ về phần cầm nắm. Phần "ảo giác mạnh, tái lập rộng" dựa trên hơn một thế kỷ nghiên cứu và tổng quan 2026 (hiện ở nhiều loài); độ lớn thì khác nhau giữa các nhóm người (khung kế bên). Giữ dung vì hiệu ứng tri giác này không bị thách thức; người giao nên xem lại.'
-- id: n6
-  cau: 'Đang tranh cãi: vì sao có ảo giác (góc ba chiều, xử lý thần kinh, học từ môi trường), và khác biệt văn hóa lớn đến đâu; một phân tích lại năm 2026 cho rằng bằng chứng về khác biệt văn hóa không nhất quán và giả thuyết "thế giới thợ mộc" gần như chắc chắn sai.'
-  loai: nhan
-  nguon:
-  - amir2026
-  - vdk2013
-  trich: we argue that it is almost certainly false … the evidence for cultural variation and its correlation with key cultural variables is in fact highly inconsistent, beset by questionable research practices, and misreported by later discussions
-  vi_tri: Amir & Firestone 2026, tóm tắt; van der Kamp 2013, tr. 1 ("long, but controversial, tradition")
-  nhan: tranh-cai
-  co_so:
-  - amir2026
-  - vdk2013
-  ly_do: Bằng chứng xuyên văn hóa cũ (Segall 1966) bị phân tích lại năm 2026 cho là không nhất quán; nhiều thuyết cơ chế cạnh tranh (Amir & Firestone 2026, mục 2.2.1). Trùng nhãn của trang nhà.
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "… mức độ khác biệt giữa các nền văn hóa trong nghiên cứu gốc cũng đang được kiểm tra lại." Chữ mới nêu Amir & Firestone 2026, như trang nhà.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://osf.io/y7mtf/download
-  - https://doi.org/10.1037/rev0000549
-  luot_2_ghi_chu: Câu đã nêu là "một phân tích lại cho rằng", đúng; nhãn Đang tranh cãi hợp lý.
-- id: s2
-  cau: 'Vì sao con số khác: thanh trượt bắt đầu ngẫu nhiên 75–125%; một lần đo; góc, độ dài cánh, độ dày nét, kích thước màn hình ảnh hưởng; biết trước là ảo giác có thể làm chỉnh khác.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (batDauNgauNhien: 75 + 0..50), 16/11/2026. Ba ý sau là lưu ý chung về đo lường; ý "góc cánh ảnh hưởng" có nguồn ở n7. Review (17/11/2026): batDauNgauNhien = 75 + floor(rand·51), tức 75–125: khớp; bốn ý có ở khối "Vì sao con số của bạn có thể khác?" của công cụ và trang.'
-  review: dung
-- id: n7
-  cau: Góc và độ dài cánh ảnh hưởng đến độ mạnh của ảo giác.
-  loai: phat-hien
-  nguon:
-  - bruno2009
-  trich: critical roles in accounting for this variability are played by … the angle of the illusion fins
-  vi_tri: Bruno & Franz 2009, tóm tắt
-  ket_qua: dung
-  ghi_chu: Tóm tắt chỉ nói góc cánh (với cầm nắm); độ dài cánh, độ dày nét, kích thước màn hình là lưu ý chung. Lượt 2 xem có cần nguồn thêm.
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.1016/j.neuropsychologia.2008.10.031
-  luot_2_ghi_chu: Phần "độ dài cánh" là kiến thức chuẩn trong tài liệu ảo giác này, nhưng tóm tắt đã mở chỉ nêu rõ góc.
-- id: s3
-  cau: 'Công cụ: độ lệch = (độ dài thật − độ dài chỉnh)/độ dài thật; phần so sánh tính lại theo cách của Segall (đoạn cánh hướng vào dài hơn đoạn cánh hướng ra bao nhiêu %).'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (doLech, theoSegall), tests/cong-cu.test.mjs (84% cho 16,0% và 19,0%), 16/11/2026. Review (17/11/2026): doLech = (thật − chỉnh)/thật; theoSegall(pct) = 100/pct − 1 (đoạn cánh hướng vào cố định so với đoạn cánh hướng ra đã chỉnh), đúng định nghĩa PSE của Segall theo Henrich 2010; NGHIEN_CUU.segall1966 {sinhVienMy 20, soXaHoi 16} khớp n4 ("khoảng một phần năm") và trang nhà (Henrich 2010 Hình 2: 16 xã hội, hồ sơ kham-pha/chu-y-tri-giac/ao-giac-thi-giac).'
-  review: dung
+  - id: s1
+    cau: 'Cách chơi: đoạn trên cánh hướng vào, đoạn dưới cánh hướng ra; kéo thanh trượt chỉnh đoạn dưới; "Chốt đáp án" hiện độ dài thật và % sai lệch.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (hinhDoan: kieu "vao" ở trên, "ra" ở dưới; TRUOT 50–150%), 16/11/2026; tests/trinh-duyet/kiem-cong-cu.mjs chỉnh bằng phím rồi chốt. Review (17/11/2026): hinhDoan("vao") vẽ <——> (cánh khép vào, đoạn trông ngắn) ở trên, "ra" vẽ >——< ở dưới, khớp chữ trang và trang nhà (>---< cánh xòe ra trông dài hơn). Hai chú thích trong mã ghi ngược ký hiệu (vao là >——<): đã sửa chú thích, hình và chữ hiện ra không đổi. TRUOT 50–150: khớp.'
+    review: dung
+  - id: n1
+    cau: Đoạn có cánh hướng ra thường trông dài hơn đoạn có cánh hướng vào, dù độ dài thật bằng nhau.
+    loai: phat-hien
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: The lines labeled 'a' and 'b' in each figure are the same length. Many subjects perceive line 'b' as longer than line 'a'.
+    vi_tri: Henrich 2010, Hình 1; Amir & Firestone 2026, Hình 1
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://osf.io/y7mtf/download
+  - id: n2
+    cau: 'Một cách giải thích: não "đọc" các cánh như góc tường ba chiều (đoạn cánh hướng ra giống góc trong của căn phòng, trông như ở xa hơn; đoạn cánh hướng vào giống góc ngoài của ngôi nhà, trông như ở gần hơn) rồi tự bù trừ khoảng cách; cách khác cho rằng đây là đặc tính xử lý của hệ thị giác, không cần diễn giải ba chiều; các cách giải thích còn tranh luận.'
+    loai: dinh-nghia
+    nguon:
+      - amir2026
+    trich: the outward-going Müller-Lyer arrow figure is a typical projection of, say, the corner of a room … while the in-going arrow is a typical projection of an outside corner of a house or a box … the [central] line would be further away in the diverging case, and is expanded in the illusion
+    vi_tri: 'Amir & Firestone 2026, mục 2 (trích Gregory 1963) và mục 2.2.1 (các thuyết khác: conflicting cues, confusion, lọc tần số thấp…)'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "góc lồi trông như ở xa hơn, góc lõm như ở gần hơn" (ngược với Gregory: góc lõm, tức góc trong căn phòng, ứng với cánh hướng ra, ở xa hơn). Chữ mới viết theo đoạn Gregory 1963 do Amir & Firestone trích.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://osf.io/y7mtf/download
+  - id: n3
+    cau: Nghiên cứu xuyên văn hóa của Segall, Campbell và Herskovits báo cáo mức bị ảo giác khác nhau giữa các xã hội; chuyện kể đầy đủ ở bài Ảo giác thị giác.
+    loai: phat-hien
+    nguon:
+      - segall1963
+    trich: Data from 15 societies are presented showing substantial intersocietal differences of two types in susceptibility to geometric optical illusions.
+    vi_tri: Segall 1963, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Mục cũ kể chi tiết (15 xã hội, người Mỹ trưởng thành ở Evanston 19%, người San 1%, giả thuyết "thế giới thợ mộc") rút còn một câu link về trang nhà kham-pha/chu-y-tri-giac/ao-giac-thi-giac (src/data/nghien-cuu.yml: segall1963).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://osf.io/y7mtf/download
+      - https://www2.psych.ubc.ca/~henrich/pdfs/WeirdPeople.pdf
+  - id: n4
+    cau: 'Theo Henrich và cộng sự (2010) kể lại: sinh viên đại học Mỹ cần đoạn cánh hướng vào dài hơn đoạn cánh hướng ra khoảng một phần năm mới thấy bằng nhau; người San ở Kalahari gần như không bị ảo giác.'
+    loai: so-lieu
+    nguon:
+      - henrich2010
+      - amir2026
+    trich: On average, the undergraduates required that segment 'a' be about a fifth longer than 'b' before the two segments were perceived as equal. At the other end, the San foragers of the Kalahari were unaffected … While the San's PSE value cannot be distinguished from zero
+    vi_tri: Henrich 2010, mục 2.1 và Hình 2; Amir & Firestone 2026, mục 1 ("American college students in Evanston, Illinois")
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "Người Mỹ trưởng thành ở Evanston cần đoạn thẳng dài hơn khoảng 19% … Người San … khoảng 1%". Henrich 2010 (toàn văn) nói "sinh viên đại học" và "khoảng một phần năm", PSE của người San "không phân biệt được với 0"; con số 19% và 1% (McCauley & Henrich 2006, đọc từ hình) không mở được để kiểm. Công cụ (ao-giac.js, NGHIEN_CUU.segall1966) dùng "khoảng 20%" và "gần như 0%" theo Henrich 2010, và tính độ lệch của người dùng theo cùng định nghĩa (theoSegall). chỗ khó: con số này là của nghiên cứu có trang nhà ở nơi khác, mà trang nhà không nêu số; kế hoạch đợt 8 ghi rõ số liệu Segall 1966 trong công cụ vào hồ sơ trang này. Chủ repo quyết có giữ con số so sánh trong công cụ không.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://www2.psych.ubc.ca/~henrich/pdfs/WeirdPeople.pdf
+  - id: n5
+    cau: 'Vững chắc: ảo giác Müller-Lyer là hiệu ứng tri giác mạnh, tái lập rộng rãi; được mô tả từ năm 1889 và đo trong nhiều nghiên cứu suốt hơn một thế kỷ; một tổng quan định lượng 18 nghiên cứu thấy hiệu ứng lên phán đoán bằng mắt lớn hơn lên động tác cầm nắm, và hiệu ứng lên cầm nắm cũng gần như luôn lớn hơn 0.'
+    loai: nhan
+    nguon:
+      - bruno2009
+      - amir2026
+      - mruczek2015
+    trich: here we re-analyze 18 studies on grasping objects embedded in the Müller-Lyer (ML) illusion. We find that median percent effects across studies are indeed larger for perceptual than for grasping measures. However, almost all grasping effects are larger than zero
+    vi_tri: Bruno & Franz 2009, tóm tắt; Mruczek 2015, Thảo luận ("Müller-Lyer (~20–40%)", nhiều nghiên cứu); Amir & Firestone 2026, mục 2 (Müller-Lyer 1889)
+    nhan: vung-chac
+    co_so:
+      - bruno2009
+      - amir2026
+      - mruczek2015
+    ly_do: Tổng quan định lượng 18 nghiên cứu (Bruno & Franz 2009); hiệu ứng có ở người nhiều nền văn hóa, ở nhiều loài và cả qua xúc giác (Amir & Firestone 2026, tổng hợp). Trùng nhãn của trang nhà (đã khóa).
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "đa số người phương Tây … Hiệu ứng xuất hiện trong hàng trăm nghiên cứu" ("hàng trăm" không có nguồn). Chữ mới như trang nhà: 1889, nhiều nghiên cứu, tổng quan 18 nghiên cứu. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 dung kèm chỗ khó. Giữ Vững chắc: Bruno & Franz 2009 là tổng quan định lượng (18 nghiên cứu) cho thấy hiệu ứng lên phán đoán bằng mắt lớn hơn lên cầm nắm, tức hiệu ứng tri giác có ở mọi nghiên cứu được gộp; Amir & Firestone 2026 tổng hợp thấy ảo giác ở nhiều loài, qua xúc giác, cả ở người mù bẩm sinh; không có thất bại tái lập; trùng nhãn của trang nhà đã khóa.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1016/j.neuropsychologia.2008.10.031
+      - https://osf.io/y7mtf/download
+    luot_2_ghi_chu: 'chỗ khó: thước đo Vững chắc cần phân tích tổng hợp; rà soát định lượng 18 nghiên cứu chỉ về phần cầm nắm. Phần "ảo giác mạnh, tái lập rộng" dựa trên hơn một thế kỷ nghiên cứu và tổng quan 2026 (hiện ở nhiều loài); độ lớn thì khác nhau giữa các nhóm người (khung kế bên). Giữ dung vì hiệu ứng tri giác này không bị thách thức; người giao nên xem lại.'
+  - id: n6
+    cau: 'Đang tranh cãi: vì sao có ảo giác (góc ba chiều, xử lý thần kinh, học từ môi trường), và khác biệt văn hóa lớn đến đâu; một phân tích lại năm 2026 cho rằng bằng chứng về khác biệt văn hóa không nhất quán và giả thuyết "thế giới thợ mộc" gần như chắc chắn sai.'
+    loai: nhan
+    nguon:
+      - amir2026
+      - vdk2013
+    trich: we argue that it is almost certainly false … the evidence for cultural variation and its correlation with key cultural variables is in fact highly inconsistent, beset by questionable research practices, and misreported by later discussions
+    vi_tri: Amir & Firestone 2026, tóm tắt; van der Kamp 2013, tr. 1 ("long, but controversial, tradition")
+    nhan: tranh-cai
+    co_so:
+      - amir2026
+      - vdk2013
+    ly_do: Bằng chứng xuyên văn hóa cũ (Segall 1966) bị phân tích lại năm 2026 cho là không nhất quán; nhiều thuyết cơ chế cạnh tranh (Amir & Firestone 2026, mục 2.2.1). Trùng nhãn của trang nhà.
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "… mức độ khác biệt giữa các nền văn hóa trong nghiên cứu gốc cũng đang được kiểm tra lại." Chữ mới nêu Amir & Firestone 2026, như trang nhà.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://osf.io/y7mtf/download
+      - https://doi.org/10.1037/rev0000549
+    luot_2_ghi_chu: Câu đã nêu là "một phân tích lại cho rằng", đúng; nhãn Đang tranh cãi hợp lý.
+  - id: s2
+    cau: 'Vì sao con số khác: thanh trượt bắt đầu ngẫu nhiên 75–125%; một lần đo; góc, độ dài cánh, độ dày nét, kích thước màn hình ảnh hưởng; biết trước là ảo giác có thể làm chỉnh khác.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (batDauNgauNhien: 75 + 0..50), 16/11/2026. Ba ý sau là lưu ý chung về đo lường; ý "góc cánh ảnh hưởng" có nguồn ở n7. Review (17/11/2026): batDauNgauNhien = 75 + floor(rand·51), tức 75–125: khớp; bốn ý có ở khối "Vì sao con số của bạn có thể khác?" của công cụ và trang.'
+    review: dung
+  - id: n7
+    cau: Góc và độ dài cánh ảnh hưởng đến độ mạnh của ảo giác.
+    loai: phat-hien
+    nguon:
+      - bruno2009
+    trich: critical roles in accounting for this variability are played by … the angle of the illusion fins
+    vi_tri: Bruno & Franz 2009, tóm tắt
+    ket_qua: dung
+    ghi_chu: Tóm tắt chỉ nói góc cánh (với cầm nắm); độ dài cánh, độ dày nét, kích thước màn hình là lưu ý chung. Lượt 2 xem có cần nguồn thêm.
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.1016/j.neuropsychologia.2008.10.031
+    luot_2_ghi_chu: Phần "độ dài cánh" là kiến thức chuẩn trong tài liệu ảo giác này, nhưng tóm tắt đã mở chỉ nêu rõ góc.
+  - id: s3
+    cau: 'Công cụ: độ lệch = (độ dài thật − độ dài chỉnh)/độ dài thật; phần so sánh tính lại theo cách của Segall (đoạn cánh hướng vào dài hơn đoạn cánh hướng ra bao nhiêu %).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/ao-giac.js (doLech, theoSegall), tests/cong-cu.test.mjs (84% cho 16,0% và 19,0%), 16/11/2026. Review (17/11/2026): doLech = (thật − chỉnh)/thật; theoSegall(pct) = 100/pct − 1 (đoạn cánh hướng vào cố định so với đoạn cánh hướng ra đã chỉnh), đúng định nghĩa PSE của Segall theo Henrich 2010; NGHIEN_CUU.segall1966 {sinhVienMy 20, soXaHoi 16} khớp n4 ("khoảng một phần năm") và trang nhà (Henrich 2010 Hình 2: 16 xã hội, hồ sơ kham-pha/chu-y-tri-giac/ao-giac-thi-giac).'
+    review: dung
 doi_chu:
-- cu: 'Điều gì đang xảy ra: "(góc lồi trông như ở xa hơn, góc lõm như ở gần hơn)"'
-  moi: '"(đoạn cánh hướng ra giống góc trong của căn phòng, trông như ở xa hơn; đoạn cánh hướng vào giống góc ngoài của ngôi nhà, trông như ở gần hơn)"'
-  ly_do: n2
-- cu: 'Mục Segall và cộng sự: đoạn kể 15 xã hội, hai gạch đầu dòng 19% và 1%, đoạn "thế giới thợ mộc"'
-  moi: 'Một đoạn: một câu link về trang nhà, một câu nêu hai con số tham khảo của công cụ theo Henrich và cộng sự (2010)'
-  ly_do: n3, n4
-- cu: 'Khung Vững chắc: "đa số người phương Tây … hàng trăm nghiên cứu"'
-  moi: '"đa số người được đo … mô tả từ năm 1889 … tổng quan định lượng 18 nghiên cứu"'
-  ly_do: n5
-- cu: 'Khung Đang tranh cãi: "… cũng đang được kiểm tra lại."'
-  moi: nêu phân tích lại của Amir và Firestone (2026)
-  ly_do: n6
-- cu: 'Nguồn: Segall 1963, 1966, McCauley & Henrich 2006'
-  moi: Amir & Firestone 2026, Bruno & Franz 2009, Henrich và cộng sự 2010, Segall 1963 (thêm DOI), 1966; bỏ McCauley & Henrich 2006 (không mở được, thay bằng Henrich 2010)
-  ly_do: nguồn của n2, n4–n6
+  - cu: 'Điều gì đang xảy ra: "(góc lồi trông như ở xa hơn, góc lõm như ở gần hơn)"'
+    moi: '"(đoạn cánh hướng ra giống góc trong của căn phòng, trông như ở xa hơn; đoạn cánh hướng vào giống góc ngoài của ngôi nhà, trông như ở gần hơn)"'
+    ly_do: n2
+  - cu: 'Mục Segall và cộng sự: đoạn kể 15 xã hội, hai gạch đầu dòng 19% và 1%, đoạn "thế giới thợ mộc"'
+    moi: 'Một đoạn: một câu link về trang nhà, một câu nêu hai con số tham khảo của công cụ theo Henrich và cộng sự (2010)'
+    ly_do: n3, n4
+  - cu: 'Khung Vững chắc: "đa số người phương Tây … hàng trăm nghiên cứu"'
+    moi: '"đa số người được đo … mô tả từ năm 1889 … tổng quan định lượng 18 nghiên cứu"'
+    ly_do: n5
+  - cu: 'Khung Đang tranh cãi: "… cũng đang được kiểm tra lại."'
+    moi: nêu phân tích lại của Amir và Firestone (2026)
+    ly_do: n6
+  - cu: 'Nguồn: Segall 1963, 1966, McCauley & Henrich 2006'
+    moi: Amir & Firestone 2026, Bruno & Franz 2009, Henrich và cộng sự 2010, Segall 1963 (thêm DOI), 1966; bỏ McCauley & Henrich 2006 (không mở được, thay bằng Henrich 2010)
+    ly_do: nguồn của n2, n4–n6

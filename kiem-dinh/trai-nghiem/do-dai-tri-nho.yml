@@ -4,372 +4,372 @@ nguon_cu: ../psyche-zero/docs/trai-nghiem/do-dai-tri-nho.md
 tang: cong-cu
 muc: V3
 lan:
-- so: 1
-  ngay: '2026-11-16'
-  nhanh: moi/d8-l1
-  ma_bam: null
-  nguoi:
-    luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
-    luot_2: null
-    review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
-    kiem_mau: null
+  - so: 1
+    ngay: '2026-11-17'
+    nhanh: moi/d8-l1
+    ma_bam: sha256:48211fbbe1e81f8c71782d0c1b677a3d77d964489967c5956e9c4c9170033aa7
+    nguoi:
+      luot_1: Claude Opus 5.5 (agent làm lô D8-L1, một mình, không agent con)
+      luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D8-L1, 17/11/2026)
+      review: Claude Opus 5.5 (agent review D8-L1, 17/11/2026)
+      kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d8-l1-kiem-mau.yml), đạt, 17/11/2026
 nguon:
-- id: oberauer2018
-  ten: 'Oberauer và cộng sự (2018), Psychol Bull 144(9), 885–958: toàn văn (PDF tại cns.nyu.edu/malab), Benchmark 1.3 và 11.1'
-  link: https://www.cns.nyu.edu/malab/static/files/publications/2018%20Oberauer%20et%20al..pdf
-  toan_van: true
-- id: cowan2001
-  ten: 'Cowan (2001), Behav Brain Sci 24(1), 87–114: tóm tắt (Europe PMC)'
-  link: https://doi.org/10.1017/S0140525X01003922
-  toan_van: false
-- id: nguyen2025
-  ten: 'Nguyen, Do, Tran, Kilimann & Tran (2025), J Int Neuropsychol Soc 31(7–8), 573–581: toàn văn (PMC12752475)'
-  link: https://doi.org/10.1017/S1355617725101100
-  toan_van: true
-- id: woods2011
-  ten: 'Woods và cộng sự (2011), J Clin Exp Neuropsychol 33(1), 101–111: toàn văn (PMC2978794, đọc qua NCBI E-utilities)'
-  link: https://doi.org/10.1080/13803395.2010.493149
-  toan_van: true
-- id: miller1956
-  ten: 'Miller (1956), Psychol Rev 63(2), 81–97: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1037/h0043158
-  toan_van: false
-- id: mattys2018
-  ten: 'Mattys, Baddeley & Trenkic (2018), Mem Cognit 46(3), 361–369: toàn văn (PMC5880866)'
-  link: https://doi.org/10.3758/s13421-017-0770-8
-  toan_van: true
-- id: ellis1980
-  ten: 'Ellis & Hennelly (1980), Br J Psychol 71(1), 43–51: tóm tắt (OpenAlex)'
-  link: https://doi.org/10.1111/j.2044-8295.1980.tb02728.x
-  toan_van: false
-- id: stigler1986
-  ten: 'Stigler, Lee & Stevenson (1986), Cognition 23(1), 1–20: không có tóm tắt (PubMed 3742988); kết quả theo Mattys và cộng sự (2018) kể lại'
-  link: https://doi.org/10.1016/0010-0277(86)90051-X
-  toan_van: false
-- id: tim-dd-vn
-  ten: 'Tìm ngày 16/11/2026 trên Europe PMC: "digit span Vietnamese" (206 kết quả), "digit span Vietnam adults" (329): chỉ thấy bộ chuẩn Nguyen và cộng sự (2025) và công cụ sàng lọc TNmindtest (2026), không có nghiên cứu so độ dài trí nhớ chữ số tiếng Việt với chuẩn tiếng Anh'
-  link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=digit%20span%20Vietnamese
-  toan_van: false
+  - id: oberauer2018
+    ten: 'Oberauer và cộng sự (2018), Psychol Bull 144(9), 885–958: toàn văn (PDF tại cns.nyu.edu/malab), Benchmark 1.3 và 11.1'
+    link: https://www.cns.nyu.edu/malab/static/files/publications/2018%20Oberauer%20et%20al..pdf
+    toan_van: true
+  - id: cowan2001
+    ten: 'Cowan (2001), Behav Brain Sci 24(1), 87–114: tóm tắt (Europe PMC)'
+    link: https://doi.org/10.1017/S0140525X01003922
+    toan_van: false
+  - id: nguyen2025
+    ten: 'Nguyen, Do, Tran, Kilimann & Tran (2025), J Int Neuropsychol Soc 31(7–8), 573–581: toàn văn (PMC12752475)'
+    link: https://doi.org/10.1017/S1355617725101100
+    toan_van: true
+  - id: woods2011
+    ten: 'Woods và cộng sự (2011), J Clin Exp Neuropsychol 33(1), 101–111: toàn văn (PMC2978794, đọc qua NCBI E-utilities)'
+    link: https://doi.org/10.1080/13803395.2010.493149
+    toan_van: true
+  - id: miller1956
+    ten: 'Miller (1956), Psychol Rev 63(2), 81–97: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1037/h0043158
+    toan_van: false
+  - id: mattys2018
+    ten: 'Mattys, Baddeley & Trenkic (2018), Mem Cognit 46(3), 361–369: toàn văn (PMC5880866)'
+    link: https://doi.org/10.3758/s13421-017-0770-8
+    toan_van: true
+  - id: ellis1980
+    ten: 'Ellis & Hennelly (1980), Br J Psychol 71(1), 43–51: tóm tắt (OpenAlex)'
+    link: https://doi.org/10.1111/j.2044-8295.1980.tb02728.x
+    toan_van: false
+  - id: stigler1986
+    ten: 'Stigler, Lee & Stevenson (1986), Cognition 23(1), 1–20: không có tóm tắt (PubMed 3742988); kết quả theo Mattys và cộng sự (2018) kể lại'
+    link: https://doi.org/10.1016/0010-0277(86)90051-X
+    toan_van: false
+  - id: tim-dd-vn
+    ten: 'Tìm ngày 16/11/2026 trên Europe PMC: "digit span Vietnamese" (206 kết quả), "digit span Vietnam adults" (329): chỉ thấy bộ chuẩn Nguyen và cộng sự (2025) và công cụ sàng lọc TNmindtest (2026), không có nghiên cứu so độ dài trí nhớ chữ số tiếng Việt với chuẩn tiếng Anh'
+    link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=digit%20span%20Vietnamese
+    toan_van: false
 nhan_dinh:
-- id: n1
-  cau: 'Khi giữ một dãy số trong đầu đủ lâu để gõ lại, bạn dùng trí nhớ ngắn hạn, hay gần hơn là trí nhớ làm việc: nơi giữ và thao tác thông tin trong vài giây; nó có dung lượng rất hạn chế.'
-  loai: dinh-nghia
-  nguon:
-  - oberauer2018
-  - cowan2001
-  trich: young adults can reliably recall or recognize across many trials no more than three to five separate units
-  vi_tri: Oberauer 2018, Benchmark 1.3; Cowan 2001, tóm tắt
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-  - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
-- id: n2
-  cau: Phần ngược khó hơn vì không chỉ giữ mà còn phải đảo thứ tự, vừa lưu vừa xử lý; độ dài trí nhớ ngược thường được coi là gần với trí nhớ làm việc hơn.
-  loai: phat-hien
-  nguon:
-  - nguyen2025
-  - woods2011
-  trich: Digit Span (Wechsler, 2008), consisting of Digit Span Forward and Digit Span Backward, which are measures of attention and working memory, respectively.
-  vi_tri: Nguyen 2025, Phương pháp; Woods 2011, Bảng 6 (ngược ngắn hơn xuôi khoảng 1,7–1,8 chữ số)
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-  luot_2_ghi_chu: '"Thường được coi là gần trí nhớ làm việc hơn" là cách nhìn phổ biến, vẫn có tranh luận; câu đã dùng "thường được coi".'
-- id: n3
-  cau: 'Woods và cộng sự (2011): phiên bản trên máy tính, chữ số được đọc to; 763 người trưởng thành 18–65 tuổi trong cộng đồng đạt trung bình khoảng 6,4–6,5 chữ số xuôi và 4,6–4,9 chữ số ngược, tùy cách tính điểm.'
-  loai: so-lieu
-  nguon:
-  - woods2011
-  trich: FS TE-ML scores averaged 6.35 digits, slightly less than MS scores (6.52) ... Table 6 … BS TE-ML 4.61 … MS 4.91
-  vi_tri: Woods 2011, Thí nghiệm 2, Kết quả và Bảng 6; Phương pháp ("spoken digits … delivered binaurally through headphones")
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-- id: n4
-  cau: Con số này gần với bộ chuẩn của thang trí nhớ Wechsler (xuôi 6,6; ngược 4,9) được dùng để so sánh trong cùng nghiên cứu.
-  loai: so-lieu
-  nguon:
-  - woods2011
-  trich: TE-ML scores in Experiment 2 were similar to those reported for the age-matched WMS-III control data sample (Wechsler, 1997) for both FS (6.4 vs. 6.6 digits) and BS (4.6 vs. 4.9 digits).
-  vi_tri: Woods 2011, Thảo luận Thí nghiệm 2
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-- id: n5
-  cau: Một nhóm nhỏ hơn, trẻ hơn (30 người, 18–46 tuổi) đạt khoảng 7,4 xuôi và 5,8–6,0 ngược.
-  loai: so-lieu
-  nguon:
-  - woods2011
-  trich: mean MS scores (7.41 digits) were similar to mean TE-ML scores. In BS testing, TE-ML scores averaged 5.80 digits ... (6.00 vs. 5.80)
-  vi_tri: Woods 2011, Thí nghiệm 1 (31 người 18–46 tuổi, một người bị loại vì dùng mẹo nhớ)
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "31 người". Chữ mới: 30 người (31 tham gia, một người bị loại khỏi phân tích), thêm "trẻ hơn" (tuổi trung bình 26 so với 46,5).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-- id: n6
-  cau: Độ dài ngược giảm dần theo tuổi, và cả hai tăng theo trình độ học vấn.
-  loai: phat-hien
-  nguon:
-  - woods2011
-  trich: Table 8 Correlations between DS metrics, age, and education level … Age … BS … −0.14 … Ed 0.11 … 0.20
-  vi_tri: Woods 2011, Bảng 8 và Thảo luận ("larger age-related differences in BS scores")
-  ket_qua: dung
-  ghi_chu: Tương quan nhỏ (tuổi với ngược khoảng −0,13 tới −0,14; học vấn 0,11–0,20); "giảm dần" là chiều của tương quan, không phải mức lớn.
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-  luot_2_ghi_chu: Mức tương quan nhỏ; "giảm dần theo tuổi" đúng chiều nhưng yếu.
-- id: n7
-  cau: Ở các nghiên cứu đó, chữ số được đọc to và người tham gia nghe, rồi nói lại; các nghiên cứu làm bằng tiếng Anh.
-  loai: phat-hien
-  nguon:
-  - woods2011
-  trich: spoken digits (1–9) that had been digitally recorded … were delivered binaurally through headphones … The only exclusions were inability to speak and write English
-  vi_tri: Woods 2011, Phương pháp
-  ket_qua: dung
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-- id: n8
-  cau: Một lần làm có nhiều yếu tố ngẫu nhiên; dao động ±1 chữ số là bình thường.
-  loai: so-lieu
-  nguon:
-  - woods2011
-  trich: the variance of the TE-ML metric … FS (1.15 vs. 1.31 digits) and BS (1.22 vs. 1.57 digits)
-  vi_tri: Woods 2011, độ lệch chuẩn và độ tin cậy lặp lại (Thí nghiệm 1, ba buổi)
-  ket_qua: dung
-  ghi_chu: 'chưa chắc: ±1 là cách nói gần đúng; Woods đo độ tin cậy lặp lại và độ lệch chuẩn khoảng 1 chữ số giữa người, chưa phải dao động trong một người. Lượt 2 xem bảng độ tin cậy của Thí nghiệm 1.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-- id: n9
-  cau: Con số "7 ± 2" của Miller (1956) và ước lượng khoảng 4 "cụm" của Cowan (2001) được kể ở bài Trí nhớ làm việc, cùng tranh luận về giới hạn ấy.
-  loai: lich-su
-  nguon:
-  - miller1956
-  - cowan2001
-  trich: Miller (1956) summarized evidence that people can remember about seven chunks in short-term memory (STM) tasks. … A single, central capacity limit averaging about four chunks is implicated
-  vi_tri: Cowan 2001, tóm tắt
-  ket_qua: da-sua
-  ghi_chu: 'Hai mục "Con số kỳ diệu bảy" và "Con số kỳ diệu bốn" của trang cũ rút còn một câu link về trang nhà kham-pha/tri-nho/tri-nho-lam-viec (src/data/nghien-cuu.yml: miller1956, cowan2001), theo quy tắc mỗi nghiên cứu một trang nhà. Bỏ chi tiết "một cách nói tu từ", "dao động 3–5" (con số không có ở trang nhà).'
-  luot_2: dung
-  luot_2_nguon:
-  - https://psychclassics.yorku.ca/Miller/
-  - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
-  luot_2_ghi_chu: Hai tên và hai con số là kiến thức lịch sử chuẩn; đã đối chiếu qua bản Miller trên psychclassics và Cowan (2010), không đọc lại Cowan (2001).
-- id: n10
-  cau: Ta vẫn nhớ được 6–7 chữ số nhờ nhóm chúng lại thành cụm (như "0912 345 678" là ba cụm) và nhẩm lặp thầm.
-  loai: phat-hien
-  nguon:
-  - cowan2001
-  - miller1956
-  trich: Under these conditions, rehearsal and long-term memory cannot be used to combine stimulus items into chunks of an unknown size
-  vi_tri: Cowan 2001, tóm tắt; Miller 1956, tóm tắt ("organizing the stimulus input … into a sequence or chunks")
-  ket_qua: da-sua
-  ghi_chu: 'Số điện thoại là ví dụ minh họa (gia-dinh). Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý ("tự động" không có nguồn; Cowan 2010 lượt 2 dẫn: nhóm và nhẩm là cơ chế người ta áp dụng). Câu mới lấy đúng cau_dung; lời giải thích câu hỏi 2 sửa theo.'
-  luot_2: qua-manh
-  luot_2_nguon:
-  - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-  luot_2_ghi_chu: 'câu đúng: Ta vẫn nhớ được 6–7 chữ số nhờ nhóm chúng lại thành cụm (như "0912 345 678" là ba cụm) và nhẩm lặp thầm.; "Tự động nhóm" không có nguồn; nhóm là chiến lược có thể có ý thức.'
-- id: n11
-  cau: 'Vững chắc: dung lượng trí nhớ ngắn hạn rất hạn chế, và người trưởng thành thường nhớ khoảng 6–7 chữ số xuôi, 4–5 chữ số ngược; đo trên nhiều mẫu lớn, kể cả bộ chuẩn Wechsler; con số phụ thuộc cách trình bày, cách tính điểm, tuổi, học vấn, ngôn ngữ.'
-  loai: nhan
-  nguon:
-  - oberauer2018
-  - woods2011
-  trich: young adults can reliably recall or recognize across many trials no more than three to five separate units
-  vi_tri: Oberauer 2018, Benchmark 1.3; Woods 2011 (763 người, so với chuẩn WMS-III)
-  nhan: vung-chac
-  co_so:
-  - oberauer2018
-  - woods2011
-  ly_do: Giới hạn dung lượng là chuẩn mực mức A trong tổng quan 16 nhà nghiên cứu (Oberauer 2018, Psychol Bull, bậc 2); số chữ số xuôi, ngược khớp giữa mẫu cộng đồng 763 người và bộ chuẩn Wechsler (Woods 2011).
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Được đo trên hàng nghìn người với nhiều bộ chuẩn khác nhau" (không có nguồn cho "hàng nghìn"). Chữ mới: "nhiều mẫu lớn, kể cả bộ chuẩn của thang Wechsler mà nghiên cứu trên dùng để so sánh". Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 dung kèm chỗ khó. Giữ Vững chắc: câu là mô tả (giới hạn nhỏ, số chữ số điển hình), không phải hiệu ứng nhân quả; giới hạn dung lượng là chuẩn mực mức A trong tổng quan Oberauer 2018 (16 tác giả, Psychol Bull, rà bằng chứng của nhiều phòng thí nghiệm), số chữ số khớp giữa mẫu cộng đồng 763 người và bộ chuẩn Wechsler, và bộ chuẩn tiếng Việt Nguyen 2025 cũng cho xuôi dài hơn ngược. Đạt tinh thần "đúng ở nhiều quần thể, không có thất bại".'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-  - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
-  luot_2_ghi_chu: 'chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hay tái lập lớn. Căn cứ ở đây là số đo mô tả trên mẫu lớn và bộ chuẩn Wechsler, hơn là một phân tích tổng hợp; vì câu là nhận định mô tả (không phải hiệu ứng nhân quả) tôi giữ dung, nhưng người giao nên xem lại.'
-- id: n12
-  cau: 'Khá vững: giới hạn "thật" khoảng 4 cụm thông tin; được ủng hộ bởi nhiều loại bằng chứng Cowan tổng hợp; một tổng quan của 16 nhà nghiên cứu coi khoảng 3–4 cụm là chuẩn mực "có điều kiện", vì phụ thuộc vào cách hiểu thế nào là một cụm.'
-  loai: nhan
-  nguon:
-  - cowan2001
-  - oberauer2018
-  trich: we propose as a conditional benchmark that young adults can hold in WM about three to four chunks (Cowan, 2001). This benchmark is conditional because observation of the supporting evidence depends on measurement processes that rely on substantive assumptions, most notably about the nature of chunks in WM.
-  vi_tri: Oberauer 2018, Benchmark 1.3
-  nhan: kha-vung
-  co_so:
-  - cowan2001
-  - oberauer2018
-  ly_do: Cowan 2001 tổng hợp nhiều loại bằng chứng (BBS, có bình luận ngang hàng); Oberauer 2018 nhận con số 3–4 cụm nhưng chỉ là chuẩn mực có điều kiện. Chưa tới "vững chắc" vì phụ thuộc định nghĩa cụm.
-  ket_qua: da-sua
-  ghi_chu: 'Thêm câu về Oberauer 2018 để nêu cơ sở của nhãn. chỗ khó: trang nhà (tri-nho-lam-viec, đã khóa) xếp câu rộng hơn "giới hạn là bao nhiêu và bản chất là gì" vào Đang tranh cãi; hai nhãn nói về hai khẳng định khác nhau nhưng người đọc có thể thấy lệch. Lượt 2 (Opus) xét. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 khong-chac vì không tìm thấy bài "16 nhà nghiên cứu". Nguồn là Oberauer, Lewandowsky, Awh, Brown, Conway, Cowan … Ward (2018), Psychol Bull 144(9), 885–958 (Crossref: 16 tác giả), toàn văn PDF tại cns.nyu.edu/malab; câu trích ở trường trich (Benchmark 1.3, "conditional benchmark … about three to four chunks"). Giữ câu và nhãn Khá vững (lượt 2 đồng ý nhãn hợp). Không cần lượt 2 lại: chỉ bổ sung trích dẫn.'
-  luot_2: khong-chac
-  luot_2_nguon:
-  - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
-  luot_2_ghi_chu: 'chỗ khó: nhãn Khá vững hợp với bằng chứng (Cowan 2001/2010, nhiều nghiên cứu nhưng không có phân tích tổng hợp, còn tranh luận). Nhưng chi tiết "một tổng quan của 16 nhà nghiên cứu coi 3–4 cụm là chuẩn mực có điều kiện" tôi không tìm ra bài nào để đối chiếu; cần lượt 1 đưa trích dẫn cụ thể.'
-- id: n13
-  cau: Tên chữ số càng ngắn khi đọc, người ta càng nhớ được nhiều chữ số.
-  loai: phat-hien
-  nguon:
-  - mattys2018
-  - ellis1980
-  trich: All of these results suggest a broad association between articulation rate and memory span across the range of materials … in line with studies demonstrating a systematic association between articulation rate and span across a range of languages
-  vi_tri: Mattys 2018, Thảo luận
-  ket_qua: dung
-  ghi_chu: Trang nhà tri-nho-lam-viec thêm rằng thời gian phát âm không giải thích được hết (Mattys 2018); câu ở đây nói "nhiều nghiên cứu cho thấy" mối liên hệ, khớp.
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.3758/s13421-017-0770-8
-  luot_2_ghi_chu: 'Mối liên hệ chiều đúng nhưng không giải thích hết (hiệu ứng độ dài từ có bài không tái lập: Lovatt, Avons & Masterson, 2000); câu nên nói "thường".'
-- id: n14
-  cau: Ở người song ngữ xứ Wales, tên chữ số tiếng Wales dài hơn và độ dài trí nhớ chữ số bằng tiếng Wales ngắn hơn; Ellis và Hennelly (1980) cho là do độ dài từ chứ không do trí thông minh, nhưng nghiên cứu sau (Murray và Jones, 2002) cho rằng khác biệt nối âm giữa các từ cũng đóng vai trò.
-  loai: phat-hien
-  nguon:
-  - ellis1980
-  - mattys2018
-  trich: in bilingual subjects, Welsh digits take longer to articulate than their English equivalents, and this difference is paralleled by the finding that digit span in Welsh is significantly smaller than that in English. These differences are attributable to bilingual word‐length differences, and it is this, rather than intellectual differences
-  vi_tri: Ellis & Hennelly 1980, tóm tắt
-  ket_qua: da-sua
-  luot_2: qua-manh
-  luot_2_nguon:
-  - https://doi.org/10.3758/s13421-017-0770-8
-  luot_2_ghi_chu: 'câu đúng: Ở người song ngữ xứ Wales, tên chữ số tiếng Wales dài hơn và độ dài trí nhớ chữ số bằng tiếng Wales ngắn hơn; Ellis và Hennelly (1980) cho là do độ dài từ chứ không do trí thông minh, nhưng nghiên cứu sau (Murray và Jones, 2002) cho rằng khác biệt nối âm giữa các từ cũng đóng vai trò.; Phần "do độ dài từ" là cách giải thích của tác giả 1980; nghiên cứu sau cho rằng nguyên nhân phức tạp hơn.'
-  ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: Mattys 2018 (toàn văn) kể Murray & Jones 2002: dãy tiếng Wales ngắn hơn "not because of the time it takes to pronounce individual items but because of greater differences in between-word coarticulation". Câu mới theo cau_dung, nêu đó là cách giải thích của Ellis & Hennelly.'
-- id: n15
-  cau: Trẻ em nói tiếng Trung, vốn có tên chữ số được đọc rất nhanh, nhớ được nhiều chữ số xuôi hơn trẻ em nói tiếng Anh (Stigler và cộng sự, 1986).
-  loai: phat-hien
-  nguon:
-  - stigler1986
-  - mattys2018
-  trich: They found that, across the age range, the Chinese children remembered at least two more digits on average than the American or Japanese children. They also found the difference to be absent in backward span
-  vi_tri: Mattys 2018, Giới thiệu (kể lại Stigler 1986)
-  ket_qua: da-sua
-  ghi_chu: Thêm "xuôi" (khác biệt không có ở dãy ngược) và "theo Mattys và cộng sự, 2018, kể lại" vì không mở được bài gốc (không có tóm tắt).
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.3758/s13421-017-0770-8
-  luot_2_ghi_chu: Chỉ đọc qua nguồn bậc 2 (Mattys và cộng sự); bài gốc không mở được. Khác biệt nhỏ ở dãy ngược; câu nói về xuôi nên đúng.
-- id: n16
-  cau: Tên chữ số tiếng Việt đều chỉ có một âm tiết (một, hai, ba…).
-  loai: dinh-nghia
-  nguon:
-  - nguyen2025
-  vi_tri: 'Kiểm trực tiếp: không, một, hai, ba, bốn, năm, sáu, bảy, tám, chín; Nguyen 2025 dùng bài chữ số đọc bằng tiếng Việt'
-  ket_qua: dung
-  ghi_chu: 'chưa chắc: sự thật ngôn ngữ hiển nhiên với người nói tiếng Việt, chưa có nguồn bình duyệt nói thẳng; lượt 2 xét có cần nguồn.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://en.wiktionary.org/wiki/xanh
-  luot_2_ghi_chu: Nguồn bậc 3 và kiến thức ngôn ngữ chuẩn; không cần nguồn chuyên đề.
-- id: n17
-  cau: Từ các nghiên cứu trên, có thể dự đoán người Việt nhớ được nhiều chữ số hơn khi làm bằng tiếng Việt so với bộ chuẩn tiếng Anh; đây mới là suy luận.
-  loai: phat-hien
-  nguon:
-  - mattys2018
-  - ellis1980
-  vi_tri: Suy luận của trang từ Ellis 1980, Mattys 2018; trang nói rõ là dự đoán
-  ket_qua: dung
-  ghi_chu: 'Câu dự đoán, ghi rõ là suy luận. Mattys 2018 lưu ý tiếng Anh từng cho độ dài dài nhất vì phần lớn tên chữ số là một âm tiết; dự đoán so với tiếng Anh vì thế không chắc. chỗ khó: lượt 2 xét có nên làm mềm thêm.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://doi.org/10.3758/s13421-017-0770-8
-  luot_2_ghi_chu: Chưa có dữ liệu tiếng Việt; câu đã gắn nhãn "mới là suy luận".
-- id: n18
-  cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào so sánh điều này ở người Việt; bộ chuẩn tiếng Việt cho bài nhắc lại chữ số mà chúng tôi tìm thấy (385 người từ 40 tuổi, Nguyen và cộng sự, 2025) tính theo độ dài dãy đúng dài nhất, nhưng không so sánh với tiếng Anh.
-  loai: thoi-su
-  nguon:
-  - tim-dd-vn
-  - nguyen2025
-  trich: Variables of interest are the longest correct number of sequential digits.
-  vi_tri: Nguyen 2025, Bảng 1 (điểm thô kiểu WAIS-IV, 0–12) và Kết luận; tìm Europe PMC 16/11/2026
-  het_han: '2028-11-01'
-  ket_qua: da-sua
-  ghi_chu: 'Chữ cũ: "chúng tôi chưa tìm thấy nghiên cứu nào đo điều này ở người Việt". Thêm mốc thời gian và bộ chuẩn Nguyen 2025 (tìm thấy lúc kiểm). Điểm 0–12 của Nguyen là số lượt đúng (Wechsler 2008), không phải độ dài dãy, nên không so được. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 sai, đồng ý: lượt 1 đọc nhầm. Nguyen 2025, Phương pháp: "Variables of interest are the longest correct number of sequential digits" (thang 0–12 ở Bảng 1 là độ dài dãy). Câu mới theo cau_dung (chỉ đổi thứ tự chữ), bỏ ý "không so được".'
-  luot_2: sai
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC12752475
-  luot_2_ghi_chu: 'câu đúng: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào so sánh điều này ở người Việt; bộ chuẩn tiếng Việt cho bài nhắc lại chữ số mà chúng tôi tìm thấy (người từ 40 tuổi, 385 người, Nguyen và cộng sự, 2025) tính theo độ dài dãy đúng dài nhất, nhưng không so sánh với tiếng Anh.; chỗ khó: nghiên cứu này dùng độ dài dãy đúng dài nhất, không dùng số lượt đúng; câu hiện tại viết ngược. Phần "chưa tìm thấy nghiên cứu so sánh ở người Việt" tìm trên OpenAlex không thấy gì.'
-- id: n19
-  cau: Nhóm thông tin lại khi phải nhớ tạm; đừng trông cậy vào trí nhớ ngắn hạn cho việc quan trọng; hướng dẫn quá nhiều bước thì người nghe dễ quên, viết ra hay chia nhỏ giúp ích. Các gợi ý này suy ra từ giới hạn của trí nhớ ngắn hạn.
-  loai: loi-khuyen
-  nguon:
-  - miller1956
-  - oberauer2018
-  trich: By organizing the stimulus input simultaneously into several dimensions and successively into a sequence or chunks, we manage to break (or at least stretch) this informational bottleneck.
-  vi_tri: Miller 1956, tóm tắt; Oberauer 2018, Benchmark 1.3 (giới hạn), 11.1 (nhóm)
-  ket_qua: da-lam-mem
-  ghi_chu: 'Chữ cũ: "Đây cũng là lý do số điện thoại thường được viết thành từng cụm" (quan hệ nhân quả không có nguồn) và "nhiều khả năng người nghe sẽ quên vài bước". Chữ mới: viết số thành cụm là "một cách nhóm như vậy"; "dễ quên"; thêm câu nói rõ gợi ý là suy luận, như trang nhà tri-nho-lam-viec.'
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-  - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
-  luot_2_ghi_chu: Lời khuyên suy ra từ giới hạn trí nhớ ngắn hạn, đúng chiều bằng chứng; câu đã ghi rõ là suy ra.
-- id: n20
-  cau: Độ dài trí nhớ chữ số là một phần của một số bài đánh giá chuyên môn, nhưng một lần làm trên mạng không thể dùng để đánh giá trí tuệ hay phát hiện vấn đề sức khỏe.
-  loai: phat-hien
-  nguon:
-  - woods2011
-  - nguyen2025
-  trich: Digit Span (Wechsler, 2008), consisting of Digit Span Forward and Digit Span Backward
-  vi_tri: Nguyen 2025 (bài Digit Span trong bộ đánh giá thần kinh tâm lý); Woods 2011 (WMS-III)
-  ket_qua: dung
-  ghi_chu: Vế sau là lời khuyên thận trọng (không chẩn đoán), có dẫn tới bác sĩ; khớp quy tắc nội dung.
-  luot_2: dung
-  luot_2_nguon:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
-- id: s1
-  cau: 'Công cụ: chữ số hiện lần lượt mỗi giây một số (800 ms hiện, 200 ms trống); xuôi bắt đầu 3, ngược bắt đầu 2; dãy dài dần tới khi sai hai lần liên tiếp ở cùng độ dài; độ dài trí nhớ là dãy dài nhất gõ đúng ít nhất một lần; phân tích vị trí và thời gian trả lời trung vị; trình đọc màn hình đọc các chữ số.'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'Đã kiểm src/scripts/cong-cu/do-dai-tri-nho.js (QUY_TRINH, trinhBay: aria-live assertive) và chung/thong-ke.js (trangThaiDoDai), 16/11/2026; tests/cong-cu.test.mjs và tests/trinh-duyet/kiem-cong-cu.mjs chạy trọn cả hai phần. Review (17/11/2026): QUY_TRINH (xuôi 3–12, ngược 2–10, hiện 800 ms, cách 200 ms), trangThaiDoDai (2 lượt mỗi độ dài, dừng khi sai cả 2; độ dài = dãy dài nhất đúng ít nhất một lần), phanViTri (tỉ lệ đúng theo vị trí, thời gian trả lời trung vị), aria-live assertive: khớp.'
-  review: dung
-- id: s2
-  cau: 'Quiz câu 4: 9 chữ số xuôi là "cao hơn số liệu tham khảo".'
-  loai: ve-site
-  ket_qua: dung
-  ghi_chu: 'So với n3–n5 (6,4–7,4 chữ số xuôi): đúng. Phương án nhiễu "thiên tài", "công cụ lỗi" là giả định (gia-dinh). Review (17/11/2026): 9 > 7,4 (con số cao nhất ở trang); khớp.'
-  review: dung
+  - id: n1
+    cau: 'Khi giữ một dãy số trong đầu đủ lâu để gõ lại, bạn dùng trí nhớ ngắn hạn, hay gần hơn là trí nhớ làm việc: nơi giữ và thao tác thông tin trong vài giây; nó có dung lượng rất hạn chế.'
+    loai: dinh-nghia
+    nguon:
+      - oberauer2018
+      - cowan2001
+    trich: young adults can reliably recall or recognize across many trials no more than three to five separate units
+    vi_tri: Oberauer 2018, Benchmark 1.3; Cowan 2001, tóm tắt
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+      - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
+  - id: n2
+    cau: Phần ngược khó hơn vì không chỉ giữ mà còn phải đảo thứ tự, vừa lưu vừa xử lý; độ dài trí nhớ ngược thường được coi là gần với trí nhớ làm việc hơn.
+    loai: phat-hien
+    nguon:
+      - nguyen2025
+      - woods2011
+    trich: Digit Span (Wechsler, 2008), consisting of Digit Span Forward and Digit Span Backward, which are measures of attention and working memory, respectively.
+    vi_tri: Nguyen 2025, Phương pháp; Woods 2011, Bảng 6 (ngược ngắn hơn xuôi khoảng 1,7–1,8 chữ số)
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+    luot_2_ghi_chu: '"Thường được coi là gần trí nhớ làm việc hơn" là cách nhìn phổ biến, vẫn có tranh luận; câu đã dùng "thường được coi".'
+  - id: n3
+    cau: 'Woods và cộng sự (2011): phiên bản trên máy tính, chữ số được đọc to; 763 người trưởng thành 18–65 tuổi trong cộng đồng đạt trung bình khoảng 6,4–6,5 chữ số xuôi và 4,6–4,9 chữ số ngược, tùy cách tính điểm.'
+    loai: so-lieu
+    nguon:
+      - woods2011
+    trich: FS TE-ML scores averaged 6.35 digits, slightly less than MS scores (6.52) ... Table 6 … BS TE-ML 4.61 … MS 4.91
+    vi_tri: Woods 2011, Thí nghiệm 2, Kết quả và Bảng 6; Phương pháp ("spoken digits … delivered binaurally through headphones")
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+  - id: n4
+    cau: Con số này gần với bộ chuẩn của thang trí nhớ Wechsler (xuôi 6,6; ngược 4,9) được dùng để so sánh trong cùng nghiên cứu.
+    loai: so-lieu
+    nguon:
+      - woods2011
+    trich: TE-ML scores in Experiment 2 were similar to those reported for the age-matched WMS-III control data sample (Wechsler, 1997) for both FS (6.4 vs. 6.6 digits) and BS (4.6 vs. 4.9 digits).
+    vi_tri: Woods 2011, Thảo luận Thí nghiệm 2
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+  - id: n5
+    cau: Một nhóm nhỏ hơn, trẻ hơn (30 người, 18–46 tuổi) đạt khoảng 7,4 xuôi và 5,8–6,0 ngược.
+    loai: so-lieu
+    nguon:
+      - woods2011
+    trich: mean MS scores (7.41 digits) were similar to mean TE-ML scores. In BS testing, TE-ML scores averaged 5.80 digits ... (6.00 vs. 5.80)
+    vi_tri: Woods 2011, Thí nghiệm 1 (31 người 18–46 tuổi, một người bị loại vì dùng mẹo nhớ)
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "31 người". Chữ mới: 30 người (31 tham gia, một người bị loại khỏi phân tích), thêm "trẻ hơn" (tuổi trung bình 26 so với 46,5).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+  - id: n6
+    cau: Độ dài ngược giảm dần theo tuổi, và cả hai tăng theo trình độ học vấn.
+    loai: phat-hien
+    nguon:
+      - woods2011
+    trich: Table 8 Correlations between DS metrics, age, and education level … Age … BS … −0.14 … Ed 0.11 … 0.20
+    vi_tri: Woods 2011, Bảng 8 và Thảo luận ("larger age-related differences in BS scores")
+    ket_qua: dung
+    ghi_chu: Tương quan nhỏ (tuổi với ngược khoảng −0,13 tới −0,14; học vấn 0,11–0,20); "giảm dần" là chiều của tương quan, không phải mức lớn.
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+    luot_2_ghi_chu: Mức tương quan nhỏ; "giảm dần theo tuổi" đúng chiều nhưng yếu.
+  - id: n7
+    cau: Ở các nghiên cứu đó, chữ số được đọc to và người tham gia nghe, rồi nói lại; các nghiên cứu làm bằng tiếng Anh.
+    loai: phat-hien
+    nguon:
+      - woods2011
+    trich: spoken digits (1–9) that had been digitally recorded … were delivered binaurally through headphones … The only exclusions were inability to speak and write English
+    vi_tri: Woods 2011, Phương pháp
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+  - id: n8
+    cau: Một lần làm có nhiều yếu tố ngẫu nhiên; dao động ±1 chữ số là bình thường.
+    loai: so-lieu
+    nguon:
+      - woods2011
+    trich: the variance of the TE-ML metric … FS (1.15 vs. 1.31 digits) and BS (1.22 vs. 1.57 digits)
+    vi_tri: Woods 2011, độ lệch chuẩn và độ tin cậy lặp lại (Thí nghiệm 1, ba buổi)
+    ket_qua: dung
+    ghi_chu: 'chưa chắc: ±1 là cách nói gần đúng; Woods đo độ tin cậy lặp lại và độ lệch chuẩn khoảng 1 chữ số giữa người, chưa phải dao động trong một người. Lượt 2 xem bảng độ tin cậy của Thí nghiệm 1.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+  - id: n9
+    cau: Con số "7 ± 2" của Miller (1956) và ước lượng khoảng 4 "cụm" của Cowan (2001) được kể ở bài Trí nhớ làm việc, cùng tranh luận về giới hạn ấy.
+    loai: lich-su
+    nguon:
+      - miller1956
+      - cowan2001
+    trich: Miller (1956) summarized evidence that people can remember about seven chunks in short-term memory (STM) tasks. … A single, central capacity limit averaging about four chunks is implicated
+    vi_tri: Cowan 2001, tóm tắt
+    ket_qua: da-sua
+    ghi_chu: 'Hai mục "Con số kỳ diệu bảy" và "Con số kỳ diệu bốn" của trang cũ rút còn một câu link về trang nhà kham-pha/tri-nho/tri-nho-lam-viec (src/data/nghien-cuu.yml: miller1956, cowan2001), theo quy tắc mỗi nghiên cứu một trang nhà. Bỏ chi tiết "một cách nói tu từ", "dao động 3–5" (con số không có ở trang nhà).'
+    luot_2: dung
+    luot_2_nguon:
+      - https://psychclassics.yorku.ca/Miller/
+      - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
+    luot_2_ghi_chu: Hai tên và hai con số là kiến thức lịch sử chuẩn; đã đối chiếu qua bản Miller trên psychclassics và Cowan (2010), không đọc lại Cowan (2001).
+  - id: n10
+    cau: Ta vẫn nhớ được 6–7 chữ số nhờ nhóm chúng lại thành cụm (như "0912 345 678" là ba cụm) và nhẩm lặp thầm.
+    loai: phat-hien
+    nguon:
+      - cowan2001
+      - miller1956
+    trich: Under these conditions, rehearsal and long-term memory cannot be used to combine stimulus items into chunks of an unknown size
+    vi_tri: Cowan 2001, tóm tắt; Miller 1956, tóm tắt ("organizing the stimulus input … into a sequence or chunks")
+    ket_qua: da-sua
+    ghi_chu: 'Số điện thoại là ví dụ minh họa (gia-dinh). Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý ("tự động" không có nguồn; Cowan 2010 lượt 2 dẫn: nhóm và nhẩm là cơ chế người ta áp dụng). Câu mới lấy đúng cau_dung; lời giải thích câu hỏi 2 sửa theo.'
+    luot_2: qua-manh
+    luot_2_nguon:
+      - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+    luot_2_ghi_chu: 'câu đúng: Ta vẫn nhớ được 6–7 chữ số nhờ nhóm chúng lại thành cụm (như "0912 345 678" là ba cụm) và nhẩm lặp thầm.; "Tự động nhóm" không có nguồn; nhóm là chiến lược có thể có ý thức.'
+  - id: n11
+    cau: 'Vững chắc: dung lượng trí nhớ ngắn hạn rất hạn chế, và người trưởng thành thường nhớ khoảng 6–7 chữ số xuôi, 4–5 chữ số ngược; đo trên nhiều mẫu lớn, kể cả bộ chuẩn Wechsler; con số phụ thuộc cách trình bày, cách tính điểm, tuổi, học vấn, ngôn ngữ.'
+    loai: nhan
+    nguon:
+      - oberauer2018
+      - woods2011
+    trich: young adults can reliably recall or recognize across many trials no more than three to five separate units
+    vi_tri: Oberauer 2018, Benchmark 1.3; Woods 2011 (763 người, so với chuẩn WMS-III)
+    nhan: vung-chac
+    co_so:
+      - oberauer2018
+      - woods2011
+    ly_do: Giới hạn dung lượng là chuẩn mực mức A trong tổng quan 16 nhà nghiên cứu (Oberauer 2018, Psychol Bull, bậc 2); số chữ số xuôi, ngược khớp giữa mẫu cộng đồng 763 người và bộ chuẩn Wechsler (Woods 2011).
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Được đo trên hàng nghìn người với nhiều bộ chuẩn khác nhau" (không có nguồn cho "hàng nghìn"). Chữ mới: "nhiều mẫu lớn, kể cả bộ chuẩn của thang Wechsler mà nghiên cứu trên dùng để so sánh". Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 dung kèm chỗ khó. Giữ Vững chắc: câu là mô tả (giới hạn nhỏ, số chữ số điển hình), không phải hiệu ứng nhân quả; giới hạn dung lượng là chuẩn mực mức A trong tổng quan Oberauer 2018 (16 tác giả, Psychol Bull, rà bằng chứng của nhiều phòng thí nghiệm), số chữ số khớp giữa mẫu cộng đồng 763 người và bộ chuẩn Wechsler, và bộ chuẩn tiếng Việt Nguyen 2025 cũng cho xuôi dài hơn ngược. Đạt tinh thần "đúng ở nhiều quần thể, không có thất bại".'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+      - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
+    luot_2_ghi_chu: 'chỗ khó: thước đo Vững chắc cần phân tích tổng hợp hay tái lập lớn. Căn cứ ở đây là số đo mô tả trên mẫu lớn và bộ chuẩn Wechsler, hơn là một phân tích tổng hợp; vì câu là nhận định mô tả (không phải hiệu ứng nhân quả) tôi giữ dung, nhưng người giao nên xem lại.'
+  - id: n12
+    cau: 'Khá vững: giới hạn "thật" khoảng 4 cụm thông tin; được ủng hộ bởi nhiều loại bằng chứng Cowan tổng hợp; một tổng quan của 16 nhà nghiên cứu coi khoảng 3–4 cụm là chuẩn mực "có điều kiện", vì phụ thuộc vào cách hiểu thế nào là một cụm.'
+    loai: nhan
+    nguon:
+      - cowan2001
+      - oberauer2018
+    trich: we propose as a conditional benchmark that young adults can hold in WM about three to four chunks (Cowan, 2001). This benchmark is conditional because observation of the supporting evidence depends on measurement processes that rely on substantive assumptions, most notably about the nature of chunks in WM.
+    vi_tri: Oberauer 2018, Benchmark 1.3
+    nhan: kha-vung
+    co_so:
+      - cowan2001
+      - oberauer2018
+    ly_do: Cowan 2001 tổng hợp nhiều loại bằng chứng (BBS, có bình luận ngang hàng); Oberauer 2018 nhận con số 3–4 cụm nhưng chỉ là chuẩn mực có điều kiện. Chưa tới "vững chắc" vì phụ thuộc định nghĩa cụm.
+    ket_qua: da-sua
+    ghi_chu: 'Thêm câu về Oberauer 2018 để nêu cơ sở của nhãn. chỗ khó: trang nhà (tri-nho-lam-viec, đã khóa) xếp câu rộng hơn "giới hạn là bao nhiêu và bản chất là gì" vào Đang tranh cãi; hai nhãn nói về hai khẳng định khác nhau nhưng người đọc có thể thấy lệch. Lượt 2 (Opus) xét. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 khong-chac vì không tìm thấy bài "16 nhà nghiên cứu". Nguồn là Oberauer, Lewandowsky, Awh, Brown, Conway, Cowan … Ward (2018), Psychol Bull 144(9), 885–958 (Crossref: 16 tác giả), toàn văn PDF tại cns.nyu.edu/malab; câu trích ở trường trich (Benchmark 1.3, "conditional benchmark … about three to four chunks"). Giữ câu và nhãn Khá vững (lượt 2 đồng ý nhãn hợp). Không cần lượt 2 lại: chỉ bổ sung trích dẫn.'
+    luot_2: khong-chac
+    luot_2_nguon:
+      - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
+    luot_2_ghi_chu: 'chỗ khó: nhãn Khá vững hợp với bằng chứng (Cowan 2001/2010, nhiều nghiên cứu nhưng không có phân tích tổng hợp, còn tranh luận). Nhưng chi tiết "một tổng quan của 16 nhà nghiên cứu coi 3–4 cụm là chuẩn mực có điều kiện" tôi không tìm ra bài nào để đối chiếu; cần lượt 1 đưa trích dẫn cụ thể.'
+  - id: n13
+    cau: Tên chữ số càng ngắn khi đọc, người ta càng nhớ được nhiều chữ số.
+    loai: phat-hien
+    nguon:
+      - mattys2018
+      - ellis1980
+    trich: All of these results suggest a broad association between articulation rate and memory span across the range of materials … in line with studies demonstrating a systematic association between articulation rate and span across a range of languages
+    vi_tri: Mattys 2018, Thảo luận
+    ket_qua: dung
+    ghi_chu: Trang nhà tri-nho-lam-viec thêm rằng thời gian phát âm không giải thích được hết (Mattys 2018); câu ở đây nói "nhiều nghiên cứu cho thấy" mối liên hệ, khớp.
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.3758/s13421-017-0770-8
+    luot_2_ghi_chu: 'Mối liên hệ chiều đúng nhưng không giải thích hết (hiệu ứng độ dài từ có bài không tái lập: Lovatt, Avons & Masterson, 2000); câu nên nói "thường".'
+  - id: n14
+    cau: Ở người song ngữ xứ Wales, tên chữ số tiếng Wales dài hơn và độ dài trí nhớ chữ số bằng tiếng Wales ngắn hơn; Ellis và Hennelly (1980) cho là do độ dài từ chứ không do trí thông minh, nhưng nghiên cứu sau (Murray và Jones, 2002) cho rằng khác biệt nối âm giữa các từ cũng đóng vai trò.
+    loai: phat-hien
+    nguon:
+      - ellis1980
+      - mattys2018
+    trich: in bilingual subjects, Welsh digits take longer to articulate than their English equivalents, and this difference is paralleled by the finding that digit span in Welsh is significantly smaller than that in English. These differences are attributable to bilingual word‐length differences, and it is this, rather than intellectual differences
+    vi_tri: Ellis & Hennelly 1980, tóm tắt
+    ket_qua: da-sua
+    luot_2: qua-manh
+    luot_2_nguon:
+      - https://doi.org/10.3758/s13421-017-0770-8
+    luot_2_ghi_chu: 'câu đúng: Ở người song ngữ xứ Wales, tên chữ số tiếng Wales dài hơn và độ dài trí nhớ chữ số bằng tiếng Wales ngắn hơn; Ellis và Hennelly (1980) cho là do độ dài từ chứ không do trí thông minh, nhưng nghiên cứu sau (Murray và Jones, 2002) cho rằng khác biệt nối âm giữa các từ cũng đóng vai trò.; Phần "do độ dài từ" là cách giải thích của tác giả 1980; nghiên cứu sau cho rằng nguyên nhân phức tạp hơn.'
+    ghi_chu: 'Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 qua-manh, đồng ý: Mattys 2018 (toàn văn) kể Murray & Jones 2002: dãy tiếng Wales ngắn hơn "not because of the time it takes to pronounce individual items but because of greater differences in between-word coarticulation". Câu mới theo cau_dung, nêu đó là cách giải thích của Ellis & Hennelly.'
+  - id: n15
+    cau: Trẻ em nói tiếng Trung, vốn có tên chữ số được đọc rất nhanh, nhớ được nhiều chữ số xuôi hơn trẻ em nói tiếng Anh (Stigler và cộng sự, 1986).
+    loai: phat-hien
+    nguon:
+      - stigler1986
+      - mattys2018
+    trich: They found that, across the age range, the Chinese children remembered at least two more digits on average than the American or Japanese children. They also found the difference to be absent in backward span
+    vi_tri: Mattys 2018, Giới thiệu (kể lại Stigler 1986)
+    ket_qua: da-sua
+    ghi_chu: Thêm "xuôi" (khác biệt không có ở dãy ngược) và "theo Mattys và cộng sự, 2018, kể lại" vì không mở được bài gốc (không có tóm tắt).
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.3758/s13421-017-0770-8
+    luot_2_ghi_chu: Chỉ đọc qua nguồn bậc 2 (Mattys và cộng sự); bài gốc không mở được. Khác biệt nhỏ ở dãy ngược; câu nói về xuôi nên đúng.
+  - id: n16
+    cau: Tên chữ số tiếng Việt đều chỉ có một âm tiết (một, hai, ba…).
+    loai: dinh-nghia
+    nguon:
+      - nguyen2025
+    vi_tri: 'Kiểm trực tiếp: không, một, hai, ba, bốn, năm, sáu, bảy, tám, chín; Nguyen 2025 dùng bài chữ số đọc bằng tiếng Việt'
+    ket_qua: dung
+    ghi_chu: 'chưa chắc: sự thật ngôn ngữ hiển nhiên với người nói tiếng Việt, chưa có nguồn bình duyệt nói thẳng; lượt 2 xét có cần nguồn.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://en.wiktionary.org/wiki/xanh
+    luot_2_ghi_chu: Nguồn bậc 3 và kiến thức ngôn ngữ chuẩn; không cần nguồn chuyên đề.
+  - id: n17
+    cau: Từ các nghiên cứu trên, có thể dự đoán người Việt nhớ được nhiều chữ số hơn khi làm bằng tiếng Việt so với bộ chuẩn tiếng Anh; đây mới là suy luận.
+    loai: phat-hien
+    nguon:
+      - mattys2018
+      - ellis1980
+    vi_tri: Suy luận của trang từ Ellis 1980, Mattys 2018; trang nói rõ là dự đoán
+    ket_qua: dung
+    ghi_chu: 'Câu dự đoán, ghi rõ là suy luận. Mattys 2018 lưu ý tiếng Anh từng cho độ dài dài nhất vì phần lớn tên chữ số là một âm tiết; dự đoán so với tiếng Anh vì thế không chắc. chỗ khó: lượt 2 xét có nên làm mềm thêm.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://doi.org/10.3758/s13421-017-0770-8
+    luot_2_ghi_chu: Chưa có dữ liệu tiếng Việt; câu đã gắn nhãn "mới là suy luận".
+  - id: n18
+    cau: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào so sánh điều này ở người Việt; bộ chuẩn tiếng Việt cho bài nhắc lại chữ số mà chúng tôi tìm thấy (385 người từ 40 tuổi, Nguyen và cộng sự, 2025) tính theo độ dài dãy đúng dài nhất, nhưng không so sánh với tiếng Anh.
+    loai: thoi-su
+    nguon:
+      - tim-dd-vn
+      - nguyen2025
+    trich: Variables of interest are the longest correct number of sequential digits.
+    vi_tri: Nguyen 2025, Bảng 1 (điểm thô kiểu WAIS-IV, 0–12) và Kết luận; tìm Europe PMC 16/11/2026
+    het_han: '2028-11-01'
+    ket_qua: da-sua
+    ghi_chu: 'Chữ cũ: "chúng tôi chưa tìm thấy nghiên cứu nào đo điều này ở người Việt". Thêm mốc thời gian và bộ chuẩn Nguyen 2025 (tìm thấy lúc kiểm). Điểm 0–12 của Nguyen là số lượt đúng (Wechsler 2008), không phải độ dài dãy, nên không so được. Giải quyết sau lượt 2 (Claude Opus 5.5, 16/11/2026): lượt 2 sai, đồng ý: lượt 1 đọc nhầm. Nguyen 2025, Phương pháp: "Variables of interest are the longest correct number of sequential digits" (thang 0–12 ở Bảng 1 là độ dài dãy). Câu mới theo cau_dung (chỉ đổi thứ tự chữ), bỏ ý "không so được".'
+    luot_2: sai
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC12752475
+    luot_2_ghi_chu: 'câu đúng: Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào so sánh điều này ở người Việt; bộ chuẩn tiếng Việt cho bài nhắc lại chữ số mà chúng tôi tìm thấy (người từ 40 tuổi, 385 người, Nguyen và cộng sự, 2025) tính theo độ dài dãy đúng dài nhất, nhưng không so sánh với tiếng Anh.; chỗ khó: nghiên cứu này dùng độ dài dãy đúng dài nhất, không dùng số lượt đúng; câu hiện tại viết ngược. Phần "chưa tìm thấy nghiên cứu so sánh ở người Việt" tìm trên OpenAlex không thấy gì.'
+  - id: n19
+    cau: Nhóm thông tin lại khi phải nhớ tạm; đừng trông cậy vào trí nhớ ngắn hạn cho việc quan trọng; hướng dẫn quá nhiều bước thì người nghe dễ quên, viết ra hay chia nhỏ giúp ích. Các gợi ý này suy ra từ giới hạn của trí nhớ ngắn hạn.
+    loai: loi-khuyen
+    nguon:
+      - miller1956
+      - oberauer2018
+    trich: By organizing the stimulus input simultaneously into several dimensions and successively into a sequence or chunks, we manage to break (or at least stretch) this informational bottleneck.
+    vi_tri: Miller 1956, tóm tắt; Oberauer 2018, Benchmark 1.3 (giới hạn), 11.1 (nhóm)
+    ket_qua: da-lam-mem
+    ghi_chu: 'Chữ cũ: "Đây cũng là lý do số điện thoại thường được viết thành từng cụm" (quan hệ nhân quả không có nguồn) và "nhiều khả năng người nghe sẽ quên vài bước". Chữ mới: viết số thành cụm là "một cách nhóm như vậy"; "dễ quên"; thêm câu nói rõ gợi ý là suy luận, như trang nhà tri-nho-lam-viec.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+      - https://oppimistiede.fi/wp-content/uploads/2025/06/02-Cowan-2010-The-magical-mystery-four-How-is-working-memory-capacity-limited.pdf
+    luot_2_ghi_chu: Lời khuyên suy ra từ giới hạn trí nhớ ngắn hạn, đúng chiều bằng chứng; câu đã ghi rõ là suy ra.
+  - id: n20
+    cau: Độ dài trí nhớ chữ số là một phần của một số bài đánh giá chuyên môn, nhưng một lần làm trên mạng không thể dùng để đánh giá trí tuệ hay phát hiện vấn đề sức khỏe.
+    loai: phat-hien
+    nguon:
+      - woods2011
+      - nguyen2025
+    trich: Digit Span (Wechsler, 2008), consisting of Digit Span Forward and Digit Span Backward
+    vi_tri: Nguyen 2025 (bài Digit Span trong bộ đánh giá thần kinh tâm lý); Woods 2011 (WMS-III)
+    ket_qua: dung
+    ghi_chu: Vế sau là lời khuyên thận trọng (không chẩn đoán), có dẫn tới bác sĩ; khớp quy tắc nội dung.
+    luot_2: dung
+    luot_2_nguon:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2978794
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC5990556
+  - id: s1
+    cau: 'Công cụ: chữ số hiện lần lượt mỗi giây một số (800 ms hiện, 200 ms trống); xuôi bắt đầu 3, ngược bắt đầu 2; dãy dài dần tới khi sai hai lần liên tiếp ở cùng độ dài; độ dài trí nhớ là dãy dài nhất gõ đúng ít nhất một lần; phân tích vị trí và thời gian trả lời trung vị; trình đọc màn hình đọc các chữ số.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Đã kiểm src/scripts/cong-cu/do-dai-tri-nho.js (QUY_TRINH, trinhBay: aria-live assertive) và chung/thong-ke.js (trangThaiDoDai), 16/11/2026; tests/cong-cu.test.mjs và tests/trinh-duyet/kiem-cong-cu.mjs chạy trọn cả hai phần. Review (17/11/2026): QUY_TRINH (xuôi 3–12, ngược 2–10, hiện 800 ms, cách 200 ms), trangThaiDoDai (2 lượt mỗi độ dài, dừng khi sai cả 2; độ dài = dãy dài nhất đúng ít nhất một lần), phanViTri (tỉ lệ đúng theo vị trí, thời gian trả lời trung vị), aria-live assertive: khớp.'
+    review: dung
+  - id: s2
+    cau: 'Quiz câu 4: 9 chữ số xuôi là "cao hơn số liệu tham khảo".'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'So với n3–n5 (6,4–7,4 chữ số xuôi): đúng. Phương án nhiễu "thiên tài", "công cụ lỗi" là giả định (gia-dinh). Review (17/11/2026): 9 > 7,4 (con số cao nhất ở trang); khớp.'
+    review: dung
 doi_chu:
-- cu: Hai mục "Con số kỳ diệu bảy (Miller, 1956)" và "Con số kỳ diệu bốn (Cowan, 2001)", mỗi mục một đoạn
-  moi: 'Một mục "Bảy hay bốn?" (giữ id cũ con-so-ky-dieu-bay-miller-1956): một câu link về trang nhà Trí nhớ làm việc'
-  ly_do: 'n9: mỗi nghiên cứu một trang nhà'
-- cu: '"Một nhóm nhỏ hơn (31 người, 18–46 tuổi)"'
-  moi: '"Một nhóm nhỏ hơn, trẻ hơn (30 người, 18–46 tuổi)"'
-  ly_do: n5
-- cu: 'Khung Vững chắc: "Được đo trên hàng nghìn người với nhiều bộ chuẩn khác nhau."'
-  moi: '"Được đo trên nhiều mẫu lớn, kể cả bộ chuẩn của thang Wechsler …"'
-  ly_do: n11
-- cu: 'Khung Khá vững: "… và được dùng rộng rãi. Nhưng cách định nghĩa …"'
-  moi: thêm câu về Oberauer và cộng sự (2018), chuẩn mực "có điều kiện"
-  ly_do: n12
-- cu: 'Stigler: "nhớ được nhiều chữ số hơn"'
-  moi: '"nhớ được nhiều chữ số xuôi hơn … theo Mattys và cộng sự, 2018, kể lại"'
-  ly_do: n15
-- cu: '"chúng tôi chưa tìm thấy nghiên cứu nào đo điều này ở người Việt"'
-  moi: '"tính đến 11/2026 … chưa tìm thấy nghiên cứu nào so sánh điều này" và câu về bộ chuẩn Nguyen 2025'
-  ly_do: n18
-- cu: 'Áp dụng: "Đây cũng là lý do số điện thoại …", "nhiều khả năng người nghe sẽ quên"'
-  moi: '"là một cách nhóm như vậy", "dễ quên", thêm câu "Các gợi ý này suy ra …"'
-  ly_do: n19
-- cu: 'Nguồn: 5 nguồn'
-  moi: thêm Mattys 2018, Nguyen 2025, Oberauer 2018
-  ly_do: nguồn của n12, n15, n18
-- cu: '"Vì ta tự động nhóm chúng … Và ta có thể nhẩm lặp"; câu hỏi 2 "vì tự động nhóm"'
-  moi: '"Nhờ nhóm chúng lại thành cụm … và nhẩm lặp thầm"'
-  ly_do: n10 (sau lượt 2)
-- cu: 'Wales: "Khác biệt này do độ dài từ, không phải do trí thông minh."'
-  moi: nêu đó là cách giải thích của Ellis và Hennelly, thêm Murray và Jones (2002) theo Mattys 2018
-  ly_do: n14 (sau lượt 2)
-- cu: '"tính điểm theo số lượt đúng chứ không theo độ dài dãy, nên không so được"'
-  moi: '"(385 người từ 40 tuổi …) tính theo độ dài dãy đúng dài nhất, nhưng không so sánh với tiếng Anh"'
-  ly_do: 'n18 (sau lượt 2: lượt 1 đọc nhầm)'
+  - cu: Hai mục "Con số kỳ diệu bảy (Miller, 1956)" và "Con số kỳ diệu bốn (Cowan, 2001)", mỗi mục một đoạn
+    moi: 'Một mục "Bảy hay bốn?" (giữ id cũ con-so-ky-dieu-bay-miller-1956): một câu link về trang nhà Trí nhớ làm việc'
+    ly_do: 'n9: mỗi nghiên cứu một trang nhà'
+  - cu: '"Một nhóm nhỏ hơn (31 người, 18–46 tuổi)"'
+    moi: '"Một nhóm nhỏ hơn, trẻ hơn (30 người, 18–46 tuổi)"'
+    ly_do: n5
+  - cu: 'Khung Vững chắc: "Được đo trên hàng nghìn người với nhiều bộ chuẩn khác nhau."'
+    moi: '"Được đo trên nhiều mẫu lớn, kể cả bộ chuẩn của thang Wechsler …"'
+    ly_do: n11
+  - cu: 'Khung Khá vững: "… và được dùng rộng rãi. Nhưng cách định nghĩa …"'
+    moi: thêm câu về Oberauer và cộng sự (2018), chuẩn mực "có điều kiện"
+    ly_do: n12
+  - cu: 'Stigler: "nhớ được nhiều chữ số hơn"'
+    moi: '"nhớ được nhiều chữ số xuôi hơn … theo Mattys và cộng sự, 2018, kể lại"'
+    ly_do: n15
+  - cu: '"chúng tôi chưa tìm thấy nghiên cứu nào đo điều này ở người Việt"'
+    moi: '"tính đến 11/2026 … chưa tìm thấy nghiên cứu nào so sánh điều này" và câu về bộ chuẩn Nguyen 2025'
+    ly_do: n18
+  - cu: 'Áp dụng: "Đây cũng là lý do số điện thoại …", "nhiều khả năng người nghe sẽ quên"'
+    moi: '"là một cách nhóm như vậy", "dễ quên", thêm câu "Các gợi ý này suy ra …"'
+    ly_do: n19
+  - cu: 'Nguồn: 5 nguồn'
+    moi: thêm Mattys 2018, Nguyen 2025, Oberauer 2018
+    ly_do: nguồn của n12, n15, n18
+  - cu: '"Vì ta tự động nhóm chúng … Và ta có thể nhẩm lặp"; câu hỏi 2 "vì tự động nhóm"'
+    moi: '"Nhờ nhóm chúng lại thành cụm … và nhẩm lặp thầm"'
+    ly_do: n10 (sau lượt 2)
+  - cu: 'Wales: "Khác biệt này do độ dài từ, không phải do trí thông minh."'
+    moi: nêu đó là cách giải thích của Ellis và Hennelly, thêm Murray và Jones (2002) theo Mattys 2018
+    ly_do: n14 (sau lượt 2)
+  - cu: '"tính điểm theo số lượt đúng chứ không theo độ dài dãy, nên không so được"'
+    moi: '"(385 người từ 40 tuổi …) tính theo độ dài dãy đúng dài nhất, nhưng không so sánh với tiếng Anh"'
+    ly_do: 'n18 (sau lượt 2: lượt 1 đọc nhầm)'
