@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/cho2012#…
+ban_ghi: nguon/cho2012
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.neulet.2012.05.025
+    link: https://api.crossref.org/works/10.1016%2Fj.neulet.2012.05.025
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.neulet.2012.05.025
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.neulet.2012.05.025
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Cho, H.-C., Kim, J., Kim, S., Son, Y. H., Lee, N., & Jung, S. H."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Cho, Hyun-chul; Kim, Jongkyu; Kim, Sungyeon; Son, Yeon Hee; Lee, Namju; Jung, Seung Ho
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neulet.2012.05.025
+    luot_2_trich: Cho Hyun-Chul; Jongkyu Kim; Sung-Yeon Kim; Yeon Hee Son; Namju Lee; Seung Ho Jung
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neulet.2012.05.025
+  - id: n3
+    cau: "Tên: The concentrations of serum, plasma and platelet BDNF are all increased by treadmill VO2max performance in healthy college men"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: The concentrations of serum, plasma and platelet BDNF are all increased by treadmill VO2max performance in healthy college men
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neulet.2012.05.025
+  - id: n4
+    cau: "Nơi đăng: Neuroscience Letters, 519(1), 78–83"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Neuroscience Letters, tập 519, số 1, trang 78-83
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neulet.2012.05.025
+  - id: n5
+    cau: DOI 10.1016/j.neulet.2012.05.025 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neulet.2012.05.025

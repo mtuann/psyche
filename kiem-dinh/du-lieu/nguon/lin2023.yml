@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/lin2023#…
+ban_ghi: nguon/lin2023
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.3389/fpsyg.2023.1278554
+    link: https://api.crossref.org/works/10.3389%2Ffpsyg.2023.1278554
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.3389/fpsyg.2023.1278554
+    link: https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1278554
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Lin, N., Chen, B., Yang, M., Lu, F., & Deng, R."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Lin, Na; Chen, Bichi; Yang, Maoyuan; Lu, Fan; Deng, Ruzhi
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1278554
+    luot_2_trich: Na Lin; Bichi Chen; Maoyuan Yang; Fan Lü; Ruzhi Deng
+  - id: n2
+    cau: "Năm xuất bản: 2023"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2023; các năm Crossref ghi: 2023"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1278554
+  - id: n3
+    cau: "Tên: Low vision aids and age are associated with Müller-Lyer illusion in congenital visually impaired children"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Low vision aids and age are associated with Müller-Lyer illusion in congenital visually impaired children
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1278554
+  - id: n4
+    cau: "Nơi đăng: Frontiers in Psychology, 14, 1278554"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Frontiers in Psychology, tập 14, trang 1278554
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1278554
+  - id: n5
+    cau: DOI 10.3389/fpsyg.2023.1278554 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.3389%2Ffpsyg.2023.1278554

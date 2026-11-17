@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/richardson2012#…
+ban_ghi: nguon/richardson2012
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.amjcard.2012.08.004
+    link: https://api.crossref.org/works/10.1016%2Fj.amjcard.2012.08.004
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.amjcard.2012.08.004
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.amjcard.2012.08.004
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Richardson, S., Shaffer, J. A., Falzon, L., Krupka, D., Davidson, K. W., & Edmondson, D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Richardson, Safiya; Shaffer, Jonathan A.; Falzon, Louise; Krupka, David; Davidson, Karina W.; Edmondson, Donald
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.amjcard.2012.08.004
+    luot_2_trich: Safiya I. Richardson; Jonathan A. Shaffer; Louise Falzon; David J. Krupka; Karina W. Davidson; Donald E. Edmondson
+  - id: n2
+    cau: "Năm xuất bản: 2012"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2012; các năm Crossref ghi: 2012"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.amjcard.2012.08.004
+  - id: n3
+    cau: "Tên: Meta-analysis of perceived stress and its association with incident coronary heart disease"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Meta-Analysis of Perceived Stress and Its Association With Incident Coronary Heart Disease
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.amjcard.2012.08.004
+  - id: n4
+    cau: "Nơi đăng: American Journal of Cardiology, 110(12), 1711–1716"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: The American Journal of Cardiology, tập 110, số 12, trang 1711-1716
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.amjcard.2012.08.004
+  - id: n5
+    cau: DOI 10.1016/j.amjcard.2012.08.004 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.amjcard.2012.08.004

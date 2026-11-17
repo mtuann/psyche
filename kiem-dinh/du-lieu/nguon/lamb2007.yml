@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/lamb2007#…
+ban_ghi: nguon/lamb2007
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.chiabu.2007.03.021
+    link: https://api.crossref.org/works/10.1016%2Fj.chiabu.2007.03.021
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.chiabu.2007.03.021
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.chiabu.2007.03.021
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Lamb, M. E., Orbach, Y., Hershkowitz, I., Esplin, P. W., & Horowitz, D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Lamb, Michael E.; Orbach, Yael; Hershkowitz, Irit; Esplin, Phillip W.; Horowitz, Dvora
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chiabu.2007.03.021
+    luot_2_trich: Michael E. Lamb; Yael Orbach; Irit Hershkowitz; Phillip W. Esplin; Dvora Horowitz
+  - id: n2
+    cau: "Năm xuất bản: 2007"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2007; các năm Crossref ghi: 2007"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chiabu.2007.03.021
+  - id: n3
+    cau: "Tên: A structured forensic interview protocol improves the quality and informativeness of investigative interviews with children: A review of research using the NICHD Investigative Interview Protocol"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "A structured forensic interview protocol improves the quality and informativeness of investigative interviews with children: A review of research using the NICHD Investigative Interview Protocol"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chiabu.2007.03.021
+  - id: n4
+    cau: "Nơi đăng: Child Abuse & Neglect, 31(11-12), 1201–1231"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Child Abuse &amp; Neglect, tập 31, số 11-12, trang 1201-1231
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chiabu.2007.03.021
+  - id: n5
+    cau: DOI 10.1016/j.chiabu.2007.03.021 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chiabu.2007.03.021

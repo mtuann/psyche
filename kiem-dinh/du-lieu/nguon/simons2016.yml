@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/simons2016#…
+ban_ghi: nguon/simons2016
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1177/1529100616661983
+    link: https://api.crossref.org/works/10.1177%2F1529100616661983
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1177/1529100616661983
+    link: https://api.openalex.org/works/doi:10.1177%2F1529100616661983
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Simons, D. J., Boot, W. R., Charness, N., Gathercole, S. E., Chabris, C. F., Hambrick, D. Z., & Stine-Morrow, E. A. L."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Simons, Daniel J.; Boot, Walter R.; Charness, Neil; Gathercole, Susan E.; Chabris, Christopher F.; Hambrick, David Z.; Stine-Morrow, Elizabeth A. L.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100616661983
+    luot_2_trich: Daniel J. Simons; Walter R. Boot; Neil H. Charness; Susan Elizabeth Gathercole; Christopher F. Chabris; David Zachary Hambrick; Elizabeth A. L. Stine‐Morrow
+  - id: n2
+    cau: "Năm xuất bản: 2016"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2016; các năm Crossref ghi: 2016"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100616661983
+  - id: n3
+    cau: "Tên: Do “Brain-training” programs work?"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Do “Brain-Training” Programs Work?
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100616661983
+  - id: n4
+    cau: "Nơi đăng: Psychological Science in the Public Interest, 17(3), 103–186"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Science in the Public Interest, tập 17, số 3, trang 103-186
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100616661983
+  - id: n5
+    cau: DOI 10.1177/1529100616661983 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1177%2F1529100616661983

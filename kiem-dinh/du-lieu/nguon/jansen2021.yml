@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/jansen2021#…
+ban_ghi: nguon/jansen2021
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1038/s41562-021-01057-0
+    link: https://api.crossref.org/works/10.1038%2Fs41562-021-01057-0
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1038/s41562-021-01057-0
+    link: https://api.openalex.org/works/doi:10.1038%2Fs41562-021-01057-0
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Jansen, R. A., Rafferty, A. N., & Griffiths, T. L."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Jansen, Rachel A.; Rafferty, Anna N.; Griffiths, Thomas L.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-021-01057-0
+    luot_2_trich: Rachel A. Jansen; Anna N. Rafferty; Thomas L. Griffiths
+  - id: n2
+    cau: "Năm xuất bản: 2021"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2021; các năm Crossref ghi: 2021"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-021-01057-0
+  - id: n3
+    cau: "Tên: A rational model of the Dunning–Kruger effect supports insensitivity to evidence in low performers"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: A rational model of the Dunning–Kruger effect supports insensitivity to evidence in low performers
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-021-01057-0
+  - id: n4
+    cau: "Nơi đăng: Nature Human Behaviour, 5(6), 756–763"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Nature Human Behaviour, tập 5, số 6, trang 756-763
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-021-01057-0
+  - id: n5
+    cau: DOI 10.1038/s41562-021-01057-0 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1038%2Fs41562-021-01057-0

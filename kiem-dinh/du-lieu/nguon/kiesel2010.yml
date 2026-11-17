@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/kiesel2010#…
+ban_ghi: nguon/kiesel2010
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1037/a0019842
+    link: https://api.crossref.org/works/10.1037%2Fa0019842
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1037/a0019842
+    link: https://api.openalex.org/works/doi:10.1037%2Fa0019842
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Kiesel, A., Steinhauser, M., Wendt, M., Falkenstein, M., Jost, K., Philipp, A. M., & Koch, I."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Kiesel, Andrea; Steinhauser, Marco; Wendt, Mike; Falkenstein, Michael; Jost, Kerstin; Philipp, Andrea M.; Koch, Iring
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0019842
+    luot_2_trich: Andrea Kiesel; Marco Steinhauser; Mike Wendt; Michael Falkenstein; Kerstin Jost; Andrea M. Philipp; Iring Koch
+  - id: n2
+    cau: "Năm xuất bản: 2010"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2010; các năm Crossref ghi: 2010"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0019842
+  - id: n3
+    cau: "Tên: Control and interference in task switching—A review"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Control and interference in task switching—A review.
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0019842
+  - id: n4
+    cau: "Nơi đăng: Psychological Bulletin, 136(5), 849–874"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Psychological Bulletin, tập 136, số 5, trang 849-874
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0019842
+  - id: n5
+    cau: DOI 10.1037/a0019842 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1037%2Fa0019842

@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/nguyen2026#…
+ban_ghi: nguon/nguyen2026
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.actpsy.2026.106580
+    link: https://api.crossref.org/works/10.1016%2Fj.actpsy.2026.106580
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.actpsy.2026.106580
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.actpsy.2026.106580
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Nguyen, K. T., Le, N. T. K., Nguyen, Q. T., Van, N. H., & Pham, Q. X."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Nguyen, Kien Trung; Le, Ngan Thi Kim; Nguyen, Quynh Thi; Van, Nghi Hieu; Pham, Quynh Xuan
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.actpsy.2026.106580
+    luot_2_trich: Kien Trung Nguyen; Ngan Thi Kim Le; Quynh Thi Nguyen; Nghi Hieu Van; Quynh Xuan Pham
+  - id: n2
+    cau: "Năm xuất bản: 2026"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2026; các năm Crossref ghi: 2026"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.actpsy.2026.106580
+  - id: n3
+    cau: "Tên: Understanding flow experiences in online EFL learning: Perspectives from Vietnamese undergraduates"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Understanding flow experiences in online EFL learning: Perspectives from Vietnamese undergraduates"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.actpsy.2026.106580
+  - id: n4
+    cau: "Nơi đăng: Acta Psychologica, 264, 106580"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Acta Psychologica, tập 264, trang 106580
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.actpsy.2026.106580
+  - id: n5
+    cau: DOI 10.1016/j.actpsy.2026.106580 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.actpsy.2026.106580

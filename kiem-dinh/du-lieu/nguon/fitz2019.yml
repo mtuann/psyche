@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/fitz2019#…
+ban_ghi: nguon/fitz2019
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.chb.2019.07.016
+    link: https://api.crossref.org/works/10.1016%2Fj.chb.2019.07.016
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.chb.2019.07.016
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.chb.2019.07.016
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Fitz, N., Kushlev, K., Jagannathan, R., Lewis, T., Paliwal, D., & Ariely, D."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Fitz, Nicholas; Kushlev, Kostadin; Jagannathan, Ranjan; Lewis, Terrel; Paliwal, Devang; Ariely, Dan
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chb.2019.07.016
+    luot_2_trich: Nicholas S. Fitz; Kostadin Kushlev; Ranjan Jagannathan; Terrel Lewis; Devang Paliwal; Dan Ariely C
+  - id: n2
+    cau: "Năm xuất bản: 2019"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2019; các năm Crossref ghi: 2019"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chb.2019.07.016
+  - id: n3
+    cau: "Tên: Batching smartphone notifications can improve well-being"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Batching smartphone notifications can improve well-being
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chb.2019.07.016
+  - id: n4
+    cau: "Nơi đăng: Computers in Human Behavior, 101, 84–94"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Computers in Human Behavior, tập 101, trang 84-94
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chb.2019.07.016
+  - id: n5
+    cau: DOI 10.1016/j.chb.2019.07.016 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.chb.2019.07.016

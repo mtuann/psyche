@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/garrison2013#…
+ban_ghi: nguon/garrison2013
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1016/j.neubiorev.2013.03.023
+    link: https://api.crossref.org/works/10.1016%2Fj.neubiorev.2013.03.023
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1016/j.neubiorev.2013.03.023
+    link: https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2013.03.023
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Garrison, J., Erdeniz, B., & Done, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Garrison, Jane; Erdeniz, Burak; Done, John
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2013.03.023
+    luot_2_trich: Jane R. Garrison; Burak Erdeniz; John Done
+  - id: n2
+    cau: "Năm xuất bản: 2013"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2013; các năm Crossref ghi: 2013"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2013.03.023
+  - id: n3
+    cau: "Tên: Prediction error in reinforcement learning: A meta-analysis of neuroimaging studies"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: "Prediction error in reinforcement learning: A meta-analysis of neuroimaging studies"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2013.03.023
+  - id: n4
+    cau: "Nơi đăng: Neuroscience & Biobehavioral Reviews, 37(7), 1297–1310"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Neuroscience &amp; Biobehavioral Reviews, tập 37, số 7, trang 1297-1310
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2013.03.023
+  - id: n5
+    cau: DOI 10.1016/j.neubiorev.2013.03.023 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1016%2Fj.neubiorev.2013.03.023

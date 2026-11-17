@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/rasmussen2009#…
+ban_ghi: nguon/rasmussen2009
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1113/expphysiol.2009.048512
+    link: https://api.crossref.org/works/10.1113%2Fexpphysiol.2009.048512
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1113/expphysiol.2009.048512
+    link: https://api.openalex.org/works/doi:10.1113%2Fexpphysiol.2009.048512
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Rasmussen, P., Brassard, P., Adser, H., Pedersen, M. V., Leick, L., Hart, E., Secher, N. H., Pedersen, B. K., & Pilegaard, H."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Rasmussen, Peter; Brassard, Patrice; Adser, Helle; Pedersen, Martin V.; Leick, Lotte; Hart, Emma; Secher, Niels H.; Pedersen, Bente K.; Pilegaard, Henriette
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1113%2Fexpphysiol.2009.048512
+    luot_2_trich: Peter Rasmussen; Patrice Brassard; Helle Adser; Martin Volmer Pedersen; Lotte Leick; Emma C. Hart; Niels Henry Secher; Bente Klarlund Pedersen; Henriette Pilegaard
+  - id: n2
+    cau: "Năm xuất bản: 2009"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2009; các năm Crossref ghi: 2009"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1113%2Fexpphysiol.2009.048512
+  - id: n3
+    cau: "Tên: Evidence for a release of brain‐derived neurotrophic factor from the brain during exercise"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Evidence for a release of brain‐derived neurotrophic factor from the brain during exercise
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1113%2Fexpphysiol.2009.048512
+  - id: n4
+    cau: "Nơi đăng: Experimental Physiology, 94(10), 1062–1069"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Experimental Physiology, tập 94, số 10, trang 1062-1069
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1113%2Fexpphysiol.2009.048512
+  - id: n5
+    cau: DOI 10.1113/expphysiol.2009.048512 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1113%2Fexpphysiol.2009.048512

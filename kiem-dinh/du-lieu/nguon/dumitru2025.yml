@@ -1,0 +1,83 @@
+# Hồ sơ kiểm định (việc dọn nguồn lần 2, 11/2026, V1: siêu dữ liệu xuất bản), sinh bằng tools/du_lieu/ho-so-nguon.mjs. Khóa: node tools/khoa.mjs khoa du-lieu/nguon/dumitru2025#…
+ban_ghi: nguon/dumitru2025
+muc: V1
+lan:
+  - so: 1
+    ngay: null
+    nhanh: them/don-nguon-2
+    ma_bam: null
+    nguoi:
+      luot_1: script tools/du_lieu/doi.mjs (Crossref); Claude Sonnet 5.5 dựng bản ghi và xem chỗ lệch (việc dọn nguồn lần 2)
+      luot_2: script tools/du_lieu/doi.mjs (OpenAlex); chỗ lệch ghi ở plans/lam-lai/bao-cao/don-nguon-2/can-luot-2.yml cho người kiểm lượt 2 (chưa làm)
+      review: null
+      kiem_mau: null
+nguon:
+  - id: crossref
+    ten: Bản ghi Crossref của DOI 10.1126/science.adu9575
+    link: https://api.crossref.org/works/10.1126%2Fscience.adu9575
+  - id: openalex
+    ten: Bản ghi OpenAlex của DOI 10.1126/science.adu9575
+    link: https://api.openalex.org/works/doi:10.1126%2Fscience.adu9575
+nhan_dinh:
+  - id: n1
+    cau: "Tác giả: Dumitru, I., Paterlini, M., Zamboni, M., Ziegenhain, C., Giatrellis, S., Saghaleyni, R., Björklund, Å., Alkass, K., Tata, M., Druid, H., Sandberg, R., & Frisén, J."
+    loai: lich-su
+    truong:
+      - tac_gia
+    nguon:
+      - crossref
+    trich: Dumitru, Ionut; Paterlini, Marta; Zamboni, Margherita; Ziegenhain, Christoph; Giatrellis, Sarantis; Saghaleyni, Rasool; Björklund, Åsa; Alkass, Kanar; Tata, Mathew; Druid, Henrik; Sandberg, Rickard; Frisén, Jonas
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.adu9575
+    luot_2_trich: Ionut Dumitru; Marta Paterlini; Margherita Zamboni; Christoph Ziegenhain; Sarantis Giatrellis; Rasool Saghaleyni; Åsa K. Björklund; Kanar Alkass; Mathew Tata; Henrik Druid; Rickard Sandberg; Jonas Frisén
+  - id: n2
+    cau: "Năm xuất bản: 2025"
+    loai: lich-su
+    truong:
+      - nam
+    nguon:
+      - crossref
+    trich: "năm in hay xuất bản: 2025; các năm Crossref ghi: 2025"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.adu9575
+  - id: n3
+    cau: "Tên: Identification of proliferating neural progenitors in the adult human hippocampus"
+    loai: lich-su
+    truong:
+      - ten
+    nguon:
+      - crossref
+    trich: Identification of proliferating neural progenitors in the adult human hippocampus
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.adu9575
+  - id: n4
+    cau: "Nơi đăng: Science, 389(6755), 58–63"
+    loai: lich-su
+    truong:
+      - noi_dang
+    nguon:
+      - crossref
+    trich: Science, tập 389, số 6755, trang 58-63
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.adu9575
+  - id: n5
+    cau: DOI 10.1126/science.adu9575 trỏ tới tài liệu này, một bài báo
+    loai: lich-su
+    truong:
+      - doi
+      - loai
+    nguon:
+      - crossref
+    trich: "loại theo Crossref: journal-article"
+    ket_qua: dung
+    luot_2: dung
+    luot_2_nguon:
+      - https://api.openalex.org/works/doi:10.1126%2Fscience.adu9575
