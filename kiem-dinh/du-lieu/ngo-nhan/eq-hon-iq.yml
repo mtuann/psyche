@@ -8,7 +8,7 @@ lan:
     ma_bam: null
     nguoi:
       luot_1: Claude Opus 5.5 (agent làm lô D8-L3)
-      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 18/11/2026'
+      luot_2: 'Claude Opus (agent riêng, phần a: plans/lam-lai/bao-cao/d8-l3-luot-2-a.yml); giải quyết chỗ lệch: Claude Opus 5.5 (agent làm lô), 17/11/2026'
       review: 'Claude Opus 5.5 (agent review nội dung D8-L3, không làm lượt 1 hay lượt 2, 17/11/2026)'
       kiem_mau: null
 ghi_chu: 'chỗ khó: đổi nhãn Đã bị bác bỏ → Đang tranh cãi cho khớp trang nhà tri-tue-cam-xuc (đã khóa): khung tranh-cai["EQ là yếu tố dự báo thành công trong đời tốt nhất, quan trọng hơn IQ"]. Đáp án trò chơi đổi từ Sai sang Còn tranh cãi. Đã sửa src/data/ngo-nhan.yml ở D8-L3 (lượt 1). nhan: cũ ''bac-bo'' → mới ''tranh-cai'' | giai_thich: cũ ''Phân tích tổng hợp năm 2011 thấy trí tuệ cảm xúc liên hệ với hiệu suất công việc ở mức vừa phải (r ≈ 0,24–0,30), nhưng không có bằng chứng nó dự báo thành công nghề nghiệp tốt hơn IQ. EQ là một năng lực có thật và hữu ích, nhưng khẩu hiệu “EQ quan trọng hơn IQ” thì không đứng vững.'' → mới "Đây là thông điệp trên bìa tạp chí Time năm 1995, không phải kết luận khoa học, và dữ liệu tổng hợp chủ yếu nói về hiệu suất công việc. Một phân tích tổng hợp (O''Boyle và cộng sự, 2011) thấy EQ tương quan .24–.30 với hiệu suất và dự báo thêm được ngoài IQ và tính cách; một phân tích khác (Joseph và cộng sự, 2015) thấy phần dự báo thêm ấy gần bằng 0 khi kiểm soát đầy đủ. Trong phân tích tổng hợp của Joseph và Newman (2010), EQ năng lực tương quan với hiệu suất (ρ ≈ .17) thấp hơn năng lực nhận thức." | nguon: cũ [''oboyle2011''] → mới [''oboyle2011'', ''joseph2015'', ''joseph2010''] | trang: cũ None → mới ''kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc'''
@@ -40,7 +40,7 @@ nhan_dinh:
       - joseph2010
     ly_do: 'Khớp trang nhà (đã khóa): hai phân tích tổng hợp cho kết quả khác nhau về giá trị dự báo thêm; chưa có phân tích tổng hợp nào ủng hộ "EQ quan trọng hơn IQ".'
     ket_qua: da-sua
-    ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 dung. Giữ Đang tranh cãi (khớp trang nhà); thẻ đã nói rõ phân tích tổng hợp không ủng hộ phần "nhiều hơn IQ" ở mức tóm tắt (Joseph & Newman 2010). Review (Claude Opus 5.5, 17/11/2026): đạt (Đang tranh cãi). Tóm tắt O''Boyle 2011 (OpenAlex): ba dòng EI tương quan 0,24–0,30 với hiệu suất, dự báo thêm ngoài năng lực nhận thức và Big Five; Joseph 2015 (Europe PMC): mixed EI ρ = .29, "becomes nil (β = -.02) after controlling"; Joseph & Newman 2010: "positively predicts performance for high emotional labor jobs and negatively … for low". Khớp khung tranh-cai của trang nhà. Con số .17 ở trang nhà tri-tue-cam-xuc: chờ chủ repo (báo cáo).'
+    ghi_chu: 'chỗ khó: xem ghi_chu hồ sơ. Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 dung. Giữ Đang tranh cãi (khớp trang nhà); thẻ đã nói rõ phân tích tổng hợp không ủng hộ phần "nhiều hơn IQ" ở mức tóm tắt (Joseph & Newman 2010). Review (Claude Opus 5.5, 17/11/2026): đạt (Đang tranh cãi). Tóm tắt O''Boyle 2011 (OpenAlex): ba dòng EI tương quan 0,24–0,30 với hiệu suất, dự báo thêm ngoài năng lực nhận thức và Big Five; Joseph 2015 (Europe PMC): mixed EI ρ = .29, "becomes nil (β = -.02) after controlling"; Joseph & Newman 2010: "positively predicts performance for high emotional labor jobs and negatively … for low". Khớp khung tranh-cai của trang nhà. Con số .17 ở trang nhà tri-tue-cam-xuc: chờ chủ repo (báo cáo).'
     luot_2: dung
     luot_2_nguon:
       - https://doi.org/10.1002/job.714
@@ -97,7 +97,7 @@ nhan_dinh:
       - joseph2010
     trich: relationships between ability-based EI and job performance are shown to be inconsistent (i.e., EI positively predicts performance for high emotional labor jobs and negatively predicts performance for low emotional labor jobs)
     ket_qua: da-sua
-    ghi_chu: 'Câu mới theo trang nhà. Sau lượt 2 (Opus 5.5, 18/11/2026): Lượt 2 khong-chac với "ρ ≈ .17 ... thấp hơn năng lực nhận thức" (nguồn kể lại ghi .16 hay .18); tôi cũng không mở được toàn văn. Viết lại ở mức tóm tắt. Trang nhà tri-tue-cam-xuc (đã khóa) ghi ρ ≈ .17 (hồ sơ n43): ghi vào báo cáo, không sửa trang. Lượt 2 (với câu cũ): khong-chac (Không mở được toàn văn Joseph & Newman 2010 (tóm tắt không có hệ số). Nguồn kể lại ghi 0,16; nguồn khác ghi .18. Chưa xác nhận được ρ ≈ .17 và con số của năng lực nhận thức trong cùng bài.).'
+    ghi_chu: 'Câu mới theo trang nhà. Sau lượt 2 (Opus 5.5, 17/11/2026): Lượt 2 khong-chac với "ρ ≈ .17 ... thấp hơn năng lực nhận thức" (nguồn kể lại ghi .16 hay .18); tôi cũng không mở được toàn văn. Viết lại ở mức tóm tắt. Trang nhà tri-tue-cam-xuc (đã khóa) ghi ρ ≈ .17 (hồ sơ n43): ghi vào báo cáo, không sửa trang. Lượt 2 (với câu cũ): khong-chac (Không mở được toàn văn Joseph & Newman 2010 (tóm tắt không có hệ số). Nguồn kể lại ghi 0,16; nguồn khác ghi .18. Chưa xác nhận được ρ ≈ .17 và con số của năng lực nhận thức trong cùng bài.).'
     vi_tri: tóm tắt (Europe PMC)
     luot_2: dung
     luot_2_nguon: [ "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1037/a0017286%22&resultType=core&format=json" ]
