@@ -9,7 +9,8 @@
 // Tắt: người đọc tắt ở trang Dữ liệu của tôi (dang-ky.js gỡ service worker, xóa bộ nhớ đệm); chủ site build với
 // PSYCHE_NGOAI_TUYEN=tat thì sw.js thành bản tự gỡ (tich-hop.mjs).
 const PHIEN_BAN = '__PHIEN_BAN__';
-const TIEN_TO = 'psyche-';
+// không trùng tiền tố bộ nhớ đệm của site cũ (psyche-zero-v1, cùng nguồn mtuann.github.io): dọn kho không xóa của site cũ (review D8-L4)
+const TIEN_TO = 'psyche-moi-';
 const KHO = TIEN_TO + PHIEN_BAN;
 const PHAM_VI = new URL('./', self.location).pathname; // "/psyche/"
 
@@ -42,7 +43,7 @@ self.addEventListener('activate', (e) => {
 const laFileCoDinh = (p) => p.startsWith(PHAM_VI + '_astro/') || p.startsWith(PHAM_VI + 'fonts/') || p.startsWith(PHAM_VI + 'icons/');
 
 async function luu(req, res) {
-	if (res && res.ok && res.type === 'basic') {
+	if (res && res.status === 200 && res.type === 'basic') {
 		const kho = await caches.open(KHO);
 		await kho.put(req, res.clone());
 	}

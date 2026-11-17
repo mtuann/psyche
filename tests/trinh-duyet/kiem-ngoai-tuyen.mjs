@@ -49,7 +49,7 @@ for (const [ten, loai] of Object.entries(TRINH_DUYET)) {
 			await p.goto(g, { waitUntil: 'load' });
 			await p.waitForFunction(() => !!navigator.serviceWorker?.controller, null, { timeout: 20000 });
 			assert.deepEqual(
-				await p.evaluate(async () => (await caches.keys()).filter((k) => k.startsWith('psyche-'))),
+				await p.evaluate(async () => (await caches.keys()).filter((k) => k.startsWith('psyche-moi-'))),
 				[`psyche-${phienBan}`],
 				'bộ nhớ đệm mang phiên bản của bản build',
 			);
@@ -66,7 +66,7 @@ for (const [ten, loai] of Object.entries(TRINH_DUYET)) {
 			await p.evaluate(() => localStorage.setItem('psyche-zero', JSON.stringify({ v: 1, records: {}, prefs: { 'ngoai-tuyen': { value: false, t: Date.now() } } })));
 			await p.goto(g, { waitUntil: 'load' });
 			await p.waitForFunction(
-				async () => (await navigator.serviceWorker.getRegistrations()).length === 0 && !(await caches.keys()).some((k) => k.startsWith('psyche-')),
+				async () => (await navigator.serviceWorker.getRegistrations()).length === 0 && !(await caches.keys()).some((k) => k.startsWith('psyche-moi-')),
 				null,
 				{ timeout: 20000, polling: 250 },
 			);

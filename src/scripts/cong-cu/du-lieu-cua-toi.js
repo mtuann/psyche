@@ -163,7 +163,7 @@ export function mount(el) {
 		datTuyChon(TUY_CHON_NGOAI_TUYEN, false);
 		try {
 			for (const r of await navigator.serviceWorker.getRegistrations()) if (new URL(r.scope).pathname.startsWith(goc())) await r.unregister();
-			if (globalThis.caches) for (const k of await caches.keys()) if (k.startsWith('psyche-')) await caches.delete(k);
+			if (globalThis.caches) for (const k of await caches.keys()) if (k.startsWith('psyche-moi-')) await caches.delete(k);
 		} catch {}
 		veNgoaiTuyen();
 		thongBao('Đã tắt dùng khi mất mạng và xóa các trang đã lưu.');

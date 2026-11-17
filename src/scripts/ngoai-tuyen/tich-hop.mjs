@@ -32,7 +32,7 @@ self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => {
 	e.waitUntil(
 		caches.keys()
-			.then((ds) => Promise.all(ds.filter((k) => k.startsWith('psyche-')).map((k) => caches.delete(k))))
+			.then((ds) => Promise.all(ds.filter((k) => k.startsWith('psyche-moi-')).map((k) => caches.delete(k))))
 			.then(() => self.registration.unregister()),
 	);
 });

@@ -20,7 +20,7 @@
 			}).catch(function () {});
 			if (window.caches) caches.keys().then(function (ks) {
 				ks.forEach(function (k) {
-					if (k.indexOf('psyche-') === 0) caches.delete(k);
+					if (k.indexOf('psyche-moi-') === 0) caches.delete(k);
 				});
 			}).catch(function () {});
 			return;
