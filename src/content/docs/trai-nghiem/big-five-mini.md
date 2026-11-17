@@ -21,7 +21,7 @@ sidebar:
 
 Công cụ dùng thang **Mini-IPIP** của Donnellan và cộng sự (2006): **20 câu**, **4 câu cho mỗi chiều** của Big Five — hướng ngoại, dễ chịu, tận tâm, bất ổn cảm xúc, và trí tuệ hay trí tưởng tượng (Intellect/Imagination, chiều mà nhiều tài liệu gọi là cởi mở). Các câu lấy từ kho câu hỏi IPIP (International Personality Item Pool), thuộc phạm vi công cộng: ai cũng được chép, dịch, dùng mà không cần xin phép ([IPIP](https://ipip.ori.org/)). Với mỗi câu, bạn chọn mức mô tả đúng về mình trên thang 5 bậc, từ "Rất không đúng" đến "Rất đúng".
 
-Một số câu là **câu nghịch**: chọn "Rất đúng" ở câu "Không nói nhiều." thì được ít điểm hướng ngoại nhất. Trộn câu thuận và câu nghịch giúp phát hiện thói quen "đồng ý với mọi câu"; IPIP cũng khuyên xếp xen kẽ câu của các thang khác nhau, vì khi các câu cùng thang đứng liền nhau, người trả lời dễ chọn cùng một mức cho tất cả.
+Một số câu là **câu nghịch**: chọn "Rất đúng" ở câu "Không nói nhiều." thì được ít điểm hướng ngoại nhất. Theo IPIP, xếp xen kẽ câu của các thang khác nhau và xen câu thuận với câu nghịch khuyến khích người trả lời đọc kỹ nội dung từng câu; khi các câu cùng thang đứng liền nhau, người trả lời dễ chọn cùng một mức cho tất cả.
 
 Theo hướng dẫn chấm của IPIP, điểm mỗi chiều là **tổng 4 câu**, từ 4 đến 20 (câu nghịch được đảo điểm). Công cụ không gắn nhãn "cao" hay "thấp": IPIP khuyên không xếp người vào loại, và chuẩn so sánh phải tính trên mẫu người cùng giới, cùng lứa tuổi — site chưa có mẫu như vậy cho người Việt.
 
@@ -49,7 +49,7 @@ Mini-IPIP (bản tiếng Anh) cho kết quả gần với bản 50 câu qua năm
 
 Bằng chứng về cấu trúc Big Five ở người Việt còn ít và chưa thống nhất: xem mục [Ở Việt Nam và các nền văn hóa khác](/psyche/kham-pha/tinh-cach/big-five/#o-viet-nam-va-cac-nen-van-hoa-khac) của bài Tính cách có mấy chiều?. Tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu kiểm chứng Mini-IPIP trên người Việt.
 
-Nhiều bài test Big Five tiếng Việt trên mạng — kể cả bản ở trang này — là bản dịch **chưa qua quy trình chuẩn hóa** (dịch ngược, kiểm chứng cấu trúc nhân tố, chuẩn so sánh trên người Việt). Điểm số từ các bản như vậy chỉ nên xem như tham khảo.
+Bản ở trang này **chưa qua chuẩn hóa ở người Việt** (dịch ngược, kiểm chứng cấu trúc nhân tố, chuẩn so sánh trên người Việt). Điểm số chỉ nên xem như tham khảo.
 
 ## Ngộ nhận liên quan
 
@@ -60,11 +60,11 @@ Nhiều bài test Big Five tiếng Việt trên mạng — kể cả bản ở t
 ## Thử suy ngẫm
 
 ```quiz
-? Vì sao bảng hỏi này trộn câu nghịch (như "Không nói nhiều." cho chiều hướng ngoại)?
+? Vì sao bảng hỏi này xen câu nghịch (như "Không nói nhiều." cho chiều hướng ngoại) với câu thuận?
 - Vì người ra đề muốn đánh lừa người làm.
-+ Để phát hiện và giảm ảnh hưởng của thói quen "đồng ý với mọi câu": nếu ai cũng chọn "Rất đúng", câu nghịch sẽ kéo điểm về giữa.
++ Theo IPIP, để người trả lời đọc kỹ nội dung từng câu, thay vì chọn cùng một mức cho mọi câu.
 - Vì câu nghịch đo một chiều tính cách khác hẳn.
-> Xu hướng đồng ý một chiều (acquiescence) là một thiên kiến trả lời quen thuộc. Đây cũng là lý do nên đọc kỹ từng câu thay vì đánh dấu theo quán tính.
+> Khi các câu giống nhau đứng liền nhau, người trả lời dễ đánh dấu theo quán tính. Nếu bạn chọn "Rất đúng" cho mọi câu, các câu nghịch sẽ kéo điểm về giữa dải.
 ? Điểm hướng ngoại của bạn là 15/20. Công cụ có nói bạn là "người hướng ngoại" không?
 - Có, vì 15 lớn hơn 12.
 + Không: công cụ chỉ cho biết vị trí trên dải 4–20; muốn nói "cao hay thấp" cần so với một mẫu người cùng giới, cùng lứa tuổi, mà site chưa có cho người Việt.

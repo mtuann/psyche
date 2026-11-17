@@ -38,6 +38,10 @@ nguon:
   ten: 'Tìm ngày 17/11/2026 trên Europe PMC: "word span Vietnamese" (407 kết quả, không có chuẩn word span tiếng Việt trong 8 kết quả đầu); OpenAlex "word span Vietnamese short-term memory": không có'
   link: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=word%20span%20Vietnamese
   toan_van: false
+- id: guitard2025
+  ten: 'Guitard, Neath & Surprenant (2025), Mem Cognit 54(2), 467–482: tóm tắt (OpenAlex; có bản mở PMC12956956)'
+  link: https://doi.org/10.3758/s13421-025-01762-5
+  toan_van: false
 nhan_dinh:
 - id: s1
   cau: 'Cách chơi: từ hiện mỗi giây một từ; gõ lại đúng thứ tự, cách nhau dấu cách; bắt đầu 2 từ, mỗi độ dài 2 lượt, dừng khi sai cả hai lượt ở cùng độ dài; 40 danh từ một âm tiết.'
@@ -50,20 +54,23 @@ nhan_dinh:
   loai: phat-hien
   nguon:
   - btb1975
-  trich: Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec
-  vi_tri: Tóm tắt
+  trich: (3) Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec | The results are interpreted in terms of a phonemically-based store of limited
+    temporal capacity
+  vi_tri: Baddeley, Thomson & Buchanan 1975, toàn văn (PDF labs.la.utexas.edu/gilden, 15 trang), tóm tắt, tr. 575
   ket_qua: da-lam-mem
-  ghi_chu: 'Cũ: "Vòng lặp này chỉ quay được khoảng 2 giây nội dung" như sự thật; nay gắn với mô hình của Baddeley.'
+  ghi_chu: 'Cũ: "Vòng lặp này chỉ quay được khoảng 2 giây nội dung" như sự thật; nay gắn với mô hình của Baddeley. Sau lượt 2 (Opus, 17/11/2026): giữ; nguyên văn ở tóm tắt bài (lượt 2 không mở được).'
+  luot_2: khong-chac
+  luot_2_ghi_chu: Baddeley, Thomson và Buchanan (1975) không mở được (nhà xuất bản đóng, không có bản ở Internet Archive hay CiteSeerX). 'Khoảng 2 giây' chưa xác nhận.
 - id: n2
-  cau: Từ trong công cụ đều một âm tiết như tên chữ số tiếng Việt, nên độ dài trí nhớ từ và chữ số có thể không chênh nhiều; hãy làm cả hai để tự so.
-  loai: phat-hien
-  nguon:
-  - btb1975
-  trich: Memory span is inversely related to word length across a wide range of materials
-  vi_tri: Tóm tắt
-  ket_qua: da-sua
+  cau: Các từ trong công cụ đều một âm tiết; bạn có thể làm thêm bài độ dài trí nhớ chữ số để tự so (không dự đoán hai con số chênh nhau bao nhiêu).
+  loai: ve-site
+  ket_qua: da-bo
   ghi_chu: 'Cũ: "Từ cũng nặng hơn chữ số … nên độ dài trí nhớ từ thường thấp hơn độ dài trí nhớ chữ số" (không tìm được nguồn trong lô; với từ một âm tiết tiếng Việt không chắc đúng). Viết lại thành suy
-    luận từ hiệu ứng độ dài từ. chỗ khó: suy luận chưa được đo trên người Việt; "tên chữ số tiếng Việt một âm tiết" cùng câu với do-dai-tri-nho n16 (D8-L1, chưa chắc).'
+    luận từ hiệu ứng độ dài từ. chỗ khó: suy luận chưa được đo trên người Việt; "tên chữ số tiếng Việt một âm tiết" cùng câu với do-dai-tri-nho n16 (D8-L1, chưa chắc). Sau lượt 2 (Opus, 17/11/2026): bỏ
+    dự đoán "độ dài trí nhớ từ và chữ số có thể không chênh nhiều" (không có nguồn; lượt 2 nêu chữ số thường quen hơn từ). Chỉ còn câu về chính site (TU trong tri-nho-tu.js: 40 từ một âm tiết; link trang
+    chữ số), kiểm 17/11/2026.'
+  luot_2: khong-chac
+  luot_2_ghi_chu: Dự đoán 'ít chênh' chưa có nguồn; chữ số thường quen thuộc hơn từ nên khoảng nhớ thường lớn hơn. Nên nói 'hãy làm cả hai để tự so' và bỏ dự đoán.
 - id: n3
   cau: 'Miller (1956) "7 ± 2" và Cowan (2001) khoảng 4 "cục": tóm một câu, link trang nhà tri-nho-lam-viec.'
   loai: phat-hien
@@ -73,6 +80,11 @@ nhan_dinh:
   ket_qua: da-sua
   ghi_chu: 'miller1956, cowan2001 có trang nhà kham-pha/tri-nho/tri-nho-lam-viec (nghien-cuu.yml): rút hai mục còn một câu link về nhà, giữ id cũ của mục Miller. Bỏ "(dao động 3–5)", "ta nhớ được 6–7 chữ
     số vì tự động nhóm …".'
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1037/h0043158
+  - https://doi.org/10.1017/S0140525X01003922
+  luot_2_ghi_chu: Cowan 2001 nói 3-5 'chunk', trung tâm quanh 4.
 - id: n4
   cau: 'Baddeley, Thomson và Buchanan (1975): độ dài trí nhớ tỉ lệ nghịch với độ dài từ; khi số âm tiết và âm vị giữ nguyên, từ đọc nhanh hơn được nhớ tốt hơn; số từ nhớ được dự đoán từ số từ đọc được trong
     khoảng 2 giây; ngăn nhẩm lặp làm hiệu ứng biến mất với trình bày bằng mắt.'
@@ -81,37 +93,59 @@ nhan_dinh:
   - btb1975
   trich: (1) Memory span is inversely related to word length across a wide range of materials; (2) When number of syllables and number of phonemes are held constant, words of short temporal duration are
     better recalled than words of long duration; (3) Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec; (4) When articulation is suppressed by
-    requiring the subject to articulate an irrelevant sound, the word length effect disappears with visual presentation
-  vi_tri: Tóm tắt
+    requiring the subject to articulate an irrelevant sound, the word length effect disappears with visual presentation, but remains when presentation is auditory.
+  vi_tri: Baddeley, Thomson & Buchanan 1975, toàn văn (PDF labs.la.utexas.edu/gilden, 15 trang), tóm tắt, tr. 575
   ket_qua: da-sua
-  ghi_chu: 'Cũ: "Số từ nhớ được xấp xỉ số từ đọc được" thành "dự đoán được từ" (đúng chữ "predicted"); "ngay cả khi … chỉ khác thời lượng đọc" viết lại theo ý (2).'
+  ghi_chu: 'Cũ: "Số từ nhớ được xấp xỉ số từ đọc được" thành "dự đoán được từ" (đúng chữ "predicted"); "ngay cả khi … chỉ khác thời lượng đọc" viết lại theo ý (2). Sau lượt 2 (Opus, 17/11/2026): giữ.'
+  luot_2: khong-chac
+  luot_2_ghi_chu: Không mở được bài gốc 1975 nên các số liệu và thí nghiệm ngăn nhẩm lặp chưa xác nhận.
 - id: n5
-  cau: 'Vững chắc: dãy từ dài thì nhớ được ít hơn dãy từ ngắn; Oberauer và cộng sự (2018) xếp vào nhóm phát hiện ổn định, ở nhiều ngôn ngữ khi độ dài thay đổi bằng số âm tiết; cách giải thích còn bàn.'
+  cau: 'Khá vững: dãy từ nhiều âm tiết thường nhớ được ít hơn dãy từ ngắn; Oberauer và cộng sự (2018) xếp hiệu ứng vào nhóm phát hiện ổn định ở nhiều ngôn ngữ nhưng cách giải thích còn tranh cãi; Guitard,
+    Neath và Surprenant (2025): khi cân bằng thêm số từ láng giềng, hiệu ứng mất ở bài nhận diện thứ tự.'
   loai: nhan
   nguon:
   - oberauer2018
   - btb1975
-  trich: Performance in verbal WM tasks decreases with increasing length of the items on a list. This word-length effect is robust when word length is manipulated through the number of syllables. | The
-    syllable-based word-length effect is a key finding for theories of verbal WM and has been observed consistently in various languages. | its interpretation remains controversial
+  trich: Performance in verbal WM tasks decreases with increasing length of the items on a list. This word-length effect is robust when word length is manipulated through the number of syllables. | its
+    interpretation remains controversial (Oberauer 2018, theo hồ sơ tri-nho-lam-viec.yml) | Experiment 2 found that when the short and long words were more fully equated, including being equated for orthographic
+    and phonological neighborhood size, the word-length effect disappeared. (Guitard 2025, tóm tắt)
   vi_tri: Oberauer 2018 (theo hồ sơ tri-nho-lam-viec.yml n22, n26)
-  nhan: vung-chac
+  nhan: kha-vung
   co_so:
   - oberauer2018
+  - guitard2025
   - btb1975
-  ly_do: Tổng quan chuẩn mực của 16 nhà nghiên cứu (Psychol Bull) xếp hiệu ứng độ dài từ theo số âm tiết là phát hiện ổn định ở nhiều ngôn ngữ; cùng nhãn với trang nhà tri-nho-lam-viec (đã khóa).
+  ly_do: 'Hiệu ứng lặp lại ở nhiều nghiên cứu và ngôn ngữ (Oberauer 2018), nhưng chưa có phân tích tổng hợp hay tái lập lớn có đăng ký trước được dẫn, và độ dài thường lẫn với yếu tố từ vựng: khi cân bằng
+    các yếu tố ấy, hiệu ứng có thể mất (Guitard 2025). Theo đúng chữ của thước đo mục 4: Khá vững.'
   ket_qua: da-sua
   ghi_chu: 'Cũ: "độ dài trí nhớ từ thường thấp hơn chữ số" trong ý chính và "tái lập rộng rãi suốt nửa thế kỷ" (không nguồn). Bỏ phần chữ số (xem n2). Bỏ khung Khá vững "khoảng 4 cụm" (thuộc trang nhà,
-    ở đó là Đang tranh cãi).'
+    ở đó là Đang tranh cãi). Sau lượt 2 (Opus, 17/11/2026): theo câu đúng của lượt 2 (Khá vững), viết lại ý chính và thân khung. Lệch với trang nhà kham-pha/tri-nho/tri-nho-lam-viec (đã khóa), nơi khung
+    Vững chắc "trí nhớ ngắn hạn cho lời nói phụ thuộc mạnh vào âm thanh của từ" gộp hiệu ứng độ dài từ: báo chủ repo, có thể cần mở khóa trang nhà. Câu mới: cần lượt 2 bổ sung. [câu mới]'
+  luot_2: qua-manh
+  luot_2_nguon:
+  - https://doi.org/10.3758/s13421-025-01762-5
+  - https://doi.org/10.1037/bul0000153
+  luot_2_ghi_chu: 'câu đúng: Khá vững: dãy từ dài thường nhớ được ít hơn dãy từ ngắn trong các tác vụ trí nhớ ngắn hạn, nhưng một phần do các yếu tố đi kèm độ dài (độ quen, láng giềng); cơ chế còn tranh
+    luận.; chỗ khó: Hiệu ứng độ dài từ có nhiều tranh cãi về yếu tố gây nhiễu (từ dài khác từ ngắn ở độ quen, láng giềng); chưa thấy phân tích tổng hợp hay tái lập lớn có đăng ký trước đạt thước đo ''Vững
+    chắc''. Tóm tắt Oberauer 2018 không nói riêng về hiệu ứng này.'
 - id: n6
-  cau: 'Lý thuyết: nhiễu giữa các mục là một cách giải thích khác cho hiệu ứng độ dài từ (Oberauer và cộng sự, 2018); gom nhóm giúp nhớ nhiều hơn (Miller, 1956).'
+  cau: 'Lý thuyết: yếu tố từ vựng và trí nhớ dài hạn (từ dài và ngắn khác nhau về số từ láng giềng; Guitard, Neath và Surprenant, 2025, cho rằng các yếu tố này, không phải thời gian đọc, có thể tạo ra hiệu
+    ứng); gom nhóm giúp nhớ nhiều hơn (Miller, 1956).'
   loai: phat-hien
   nguon:
-  - oberauer2018
+  - guitard2025
   - miller1956
-  trich: its interpretation remains controversial | we can increase the number of bits of information that it contains simply by building larger and larger chunks
-  vi_tri: hồ sơ tri-nho-lam-viec.yml n26, n52
+  trich: most studies have confounded length with lexical and other long-term memory factors that covary with length … The results provide more evidence against the standard account of the word-length effect
+    and instead are consistent with a growing body of work which shows that lexical and other long-term memory factors affect performance | we can increase the number of bits of information that it contains
+    simply by building larger and larger chunks
+  vi_tri: Guitard 2025, tóm tắt (OpenAlex); Miller 1956 (hồ sơ tri-nho-lam-viec.yml n52)
   ket_qua: da-sua
-  ghi_chu: 'Cũ: "Suy giảm và nhiễu … những từ giống nhau dễ bị nhầm khi gõ lại", "Đây là lý do cùng một người có thể đạt cao hơn" (giữ, giả định minh họa).'
+  ghi_chu: 'Cũ: "Suy giảm và nhiễu … những từ giống nhau dễ bị nhầm khi gõ lại", "Đây là lý do cùng một người có thể đạt cao hơn" (giữ, giả định minh họa). Sau lượt 2 (Opus, 17/11/2026): thay ý "nhiễu giữa
+    các mục (Oberauer 2018)" (lượt 2 không xác nhận được nguồn cho cách gọi ấy) bằng cách giải thích từ vựng theo Guitard 2025. Câu mới: cần lượt 2 bổ sung. [câu mới]'
+  luot_2: khong-chac
+  luot_2_nguon:
+  - https://doi.org/10.3758/s13421-025-01762-5
+  luot_2_ghi_chu: Tóm tắt Neath/Nairne (2025) xác nhận có cách giải thích khác (yếu tố từ vựng và trí nhớ dài hạn); 'nhiễu giữa các mục' của Oberauer 2018 chưa mở; Miller 1956 về gom nhóm khớp ('chunks').
 - id: n7
   cau: Tính đến 11/2026, chúng tôi chưa tìm thấy số liệu chuẩn nào cho độ dài trí nhớ từ ở người Việt.
   loai: thoi-su
@@ -121,6 +155,11 @@ nhan_dinh:
   ket_qua: da-sua
   ghi_chu: 'Thêm mốc. Europe PMC "word span Vietnamese" (407 kết quả; trong 8 đầu có bộ chuẩn Nguyen và cộng sự 2025, theo D8-L1 không có word span); OpenAlex "word span Vietnamese short-term memory": không
     có, 17/11/2026.'
+  luot_2: dung
+  luot_2_nguon:
+  - https://api.openalex.org/works?search=word+length+effect+Vietnamese
+  luot_2_ghi_chu: 'Tìm OpenAlex 17/11/2026 (''word length effect Vietnamese'', ''digit span Vietnamese phonological loop'', ''memory span Vietnamese children syllable''): không có số liệu chuẩn người Việt
+    (chỉ có nghiên cứu lặp từ vô nghĩa ở trẻ em, không phải khoảng nhớ). Hạn chế: chỉ tìm tiếng Anh.'
 - id: n8
   cau: Theo hiệu ứng độ dài từ, nếu dùng từ nhiều âm tiết, độ dài trí nhớ của bạn có thể thấp hơn.
   loai: phat-hien
@@ -131,6 +170,10 @@ nhan_dinh:
   vi_tri: Oberauer 2018
   ket_qua: da-lam-mem
   ghi_chu: 'Cũ: "điều kiện tốt nhất cho việc nhẩm lặp" (mạnh hơn nguồn).'
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.3758/s13421-025-01762-5
+  luot_2_ghi_chu: Câu đã nói 'có thể'; hiệu ứng có nhưng một phần do yếu tố đi kèm.
 - id: n9
   cau: 'Ngộ nhận: số mục nhớ được thay đổi theo loại mục; với từ dài nhớ được ít hơn.'
   loai: phat-hien
@@ -140,6 +183,11 @@ nhan_dinh:
   vi_tri: Tóm tắt
   ket_qua: da-lam-mem
   ghi_chu: 'Cũ: "7 ± 2 … là ước lượng cho các mục ngắn gọn … thấp hơn rõ rệt".'
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1037/h0043158
+  - https://doi.org/10.3758/s13421-025-01762-5
+  luot_2_ghi_chu: '''Số mục nhớ thay đổi theo loại mục'' khớp (đơn vị là chunk, từ dài kém hơn); xem n5 về nhiễu.'
 - id: n10
   cau: 'Ngộ nhận: phân tích tổng hợp 23 nghiên cứu (Melby-Lervåg và Hulme, 2013): luyện trí nhớ làm việc cải thiện ngắn hạn đúng kỹ năng đã luyện, không có bằng chứng thuyết phục là lan sang kỹ năng khác
     (cả câu hỏi 5).'
@@ -151,21 +199,34 @@ nhan_dinh:
   vi_tri: Tóm tắt
   ket_qua: da-sua
   ghi_chu: 'Cũ: "Chưa có bằng chứng … người ta thường chỉ giỏi hơn đúng nhiệm vụ đã luyện" (không nguồn). Thêm nguồn. Câu hỏi 5 mới thay câu hỏi về Cowan (thuộc trang nhà).'
+  luot_2: dung
+  luot_2_nguon:
+  - https://doi.org/10.1037/a0028228
+  luot_2_ghi_chu: Bài xuất bản trực tuyến 2012, in năm 2013 (Developmental Psychology 49). 'Cải thiện ngắn hạn đúng kỹ năng đã luyện' khớp 'short-term, specific training effects'.
 - id: n11
-  cau: 'Ngộ nhận: một lần đo trên mạng chịu ảnh hưởng của mệt mỏi, mất tập trung, chiến lược nhóm từ, thiết bị; không phải thước đo trí tuệ.'
+  cau: 'Ngộ nhận: không nên kết luận "trí nhớ kém, kém thông minh" từ công cụ này: một lần làm trên công cụ chưa chuẩn hóa, và gom các từ thành cụm là đã nhớ được nhiều hơn (Miller, 1956).'
   loai: phat-hien
-  nguon: []
+  nguon:
+  - miller1956
   ket_qua: da-lam-mem
-  ghi_chu: 'Cũ: "Độ dài trí nhớ chỉ là một mảnh nhỏ của nhận thức". Câu chung về đo lường, như do-dai-tri-nho (D8-L1); lượt 2 xem cần nguồn không.'
+  ghi_chu: 'Cũ: "Độ dài trí nhớ chỉ là một mảnh nhỏ của nhận thức". Câu chung về đo lường, như do-dai-tri-nho (D8-L1); lượt 2 xem cần nguồn không. Sau lượt 2 (Opus, 17/11/2026): bỏ "một lần đo trên mạng
+    chịu ảnh hưởng của mệt mỏi, mất tập trung, thiết bị" (không nguồn); giữ phần có nguồn (gom nhóm) và phần về chính site (công cụ chưa chuẩn hóa). Câu mới: cần lượt 2 bổ sung. [câu mới]'
+  luot_2: khong-chac
+  luot_2_ghi_chu: Không có nguồn bậc 1-2 đã mở nói riêng cho một lần đo trên mạng; ý tổng quát (chiến lược nhóm từ) có ở Cowan 2001 nhưng không đủ.
+  trich: we can increase the number of bits of information that it contains simply by building larger and larger chunks
+  vi_tri: Miller 1956 (hồ sơ tri-nho-lam-viec.yml n52)
 - id: n12
   cau: 'Câu hỏi 1, 2: hiệu ứng độ dài từ, dự đoán từ số từ đọc được trong khoảng 2 giây; câu hỏi 3: chỉ dùng từ một âm tiết để kiểm soát độ dài từ.'
   loai: phat-hien
   nguon:
   - btb1975
-  trich: Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec
-  vi_tri: Tóm tắt
+  trich: (3) Span could be predicted on the basis of the number of words which the subject can read in approximately 2 sec
+  vi_tri: Baddeley, Thomson & Buchanan 1975, toàn văn (PDF labs.la.utexas.edu/gilden, 15 trang), tóm tắt, tr. 575
   ket_qua: da-sua
-  ghi_chu: 'Câu hỏi 1 cũ hỏi "vì sao độ dài trí nhớ từ thường thấp hơn chữ số" (xem n2): viết lại.'
+  ghi_chu: 'Câu hỏi 1 cũ hỏi "vì sao độ dài trí nhớ từ thường thấp hơn chữ số" (xem n2): viết lại. Sau lượt 2 (Opus, 17/11/2026): giữ câu hỏi 1–2 (nguyên văn ở tóm tắt); câu hỏi 3 (chỉ dùng từ một âm tiết
+    để giữ độ dài như nhau) là lựa chọn thiết kế của site: lời giải thích không cần nguồn ngoài hiệu ứng độ dài từ.'
+  luot_2: khong-chac
+  luot_2_ghi_chu: Phụ thuộc Baddeley 1975 (chưa mở). Phần 'từ một âm tiết kiểm soát độ dài từ' là lựa chọn thiết kế của công cụ, có lý nhưng chưa có nguồn.
 doi_chu:
 - cu: Điều gì đang xảy ra? ("vòng lặp chỉ quay được 2 giây", "độ dài từ thường thấp hơn chữ số")
   moi: gắn với mô hình Baddeley; từ một âm tiết như tên chữ số, hãy tự so

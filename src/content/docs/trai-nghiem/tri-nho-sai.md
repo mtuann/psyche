@@ -32,8 +32,8 @@ Dựa trên nghiên cứu của Deese (1959), hai tác giả cho sinh viên nghe
 
 ## Mức độ chắc chắn
 
-:::vung-chac[học các từ cùng chủ đề có thể khiến ta “nhớ” một từ chưa từng thấy]
-Hiệu ứng DRM đã được dùng trong hàng trăm nghiên cứu và vẫn xuất hiện qua nhiều cách học, khoảng thời gian chờ và kiểu bài kiểm tra, ở người trẻ, người già và người nói các ngôn ngữ, thuộc các nền văn hóa khác nhau (tổng quan của [Gallo, 2010](https://doi.org/10.3758/MC.38.7.833)). Một lần làm lại có đăng ký trước, trên mạng, cũng tái lập được hiệu ứng ([Zwaan và cộng sự, 2018](https://doi.org/10.3758/s13423-017-1348-y)). Tỉ lệ nhớ nhầm thay đổi nhiều theo danh sách và cách làm.
+:::kha-vung[học các từ cùng chủ đề có thể khiến ta “nhớ” một từ chưa từng thấy]
+Hiệu ứng DRM đã được dùng trong hàng trăm nghiên cứu và vẫn xuất hiện qua nhiều cách học, khoảng thời gian chờ và kiểu bài kiểm tra, ở người trẻ, người già và người nói các ngôn ngữ, thuộc các nền văn hóa khác nhau (tổng quan của [Gallo, 2010](https://doi.org/10.3758/MC.38.7.833)). Một lần làm lại có đăng ký trước, trên mạng, cũng tái lập được hiệu ứng ([Zwaan và cộng sự, 2018](https://doi.org/10.3758/s13423-017-1348-y)). Tỉ lệ nhớ nhầm thay đổi nhiều theo danh sách và cách làm. Nhãn là *Khá vững* chứ chưa phải *Vững chắc*: bằng chứng tổng hợp ở đây là một tổng quan tường thuật và một lần làm lại có đăng ký trước, chưa phải phân tích tổng hợp hay hai lần tái lập lớn có đăng ký trước.
 :::
 
 :::tranh-cai[cơ chế chính xác là gì]

@@ -31,8 +31,8 @@ Englich, Mussweiler và Strack (2006) cho người làm nghề luật ở Đức
 
 ## Mức độ chắc chắn
 
-:::vung-chac[con số neo làm dịch chuyển ước lượng]
-Trong dự án tái lập Many Labs (36 mẫu, 6.344 người, ở Mỹ và nhiều nước khác), bốn câu hỏi mỏ neo đều cho hiệu ứng có ý nghĩa thống kê ở mọi mẫu, và thuộc nhóm hiệu ứng lớn nhất của dự án ([Klein và cộng sự, 2014](https://doi.org/10.1027/1864-9335/a000178)).
+:::kha-vung[con số neo làm dịch chuyển ước lượng]
+Trong dự án tái lập Many Labs (36 mẫu, 6.344 người, ở Mỹ và nhiều nước khác), bốn câu hỏi mỏ neo đều cho hiệu ứng có ý nghĩa thống kê ở mọi mẫu, và thuộc nhóm hiệu ứng lớn nhất của dự án ([Klein và cộng sự, 2014](https://doi.org/10.1027/1864-9335/a000178)). Nhãn là *Khá vững* chứ chưa phải *Vững chắc* vì ở đây mới dẫn một lần tái lập lớn; chúng tôi chưa đối chiếu phân tích tổng hợp nào.
 :::
 
 :::kha-vung[hiệu ứng tồn tại ngay cả khi neo hoàn toàn ngẫu nhiên và người quyết định là chuyên gia]
@@ -41,10 +41,6 @@ Từ vòng quay may rủi của Tversky và Kahneman (1974) đến xúc xắc c�
 
 :::tranh-cai[cơ chế chính xác là gì?]
 Tversky và Kahneman cho rằng ta điều chỉnh không đủ từ điểm neo. Mussweiler và Strack đề xuất một cơ chế khác — **khả năng tiếp cận chọn lọc**: khi trả lời câu hỏi so sánh ("lớn hơn hay nhỏ hơn X?"), những hiểu biết phù hợp với con số neo trở nên dễ nhớ ra hơn, và chúng kéo ước lượng về phía neo ([Mussweiler và Strack, 1999](https://doi.org/10.1006/jesp.1998.1364)). Ở nghiên cứu 4 của Englich và cộng sự (2006), sau mức đề nghị cao, các lý lẽ buộc tội được nhận ra nhanh hơn, đúng như cơ chế này dự đoán. Hai cách giải thích không loại trừ nhau.
-:::
-
-:::bac-bo["mỏ neo chỉ có tác dụng khi con số có vẻ liên quan"]
-Những con số rõ ràng là ngẫu nhiên — vòng quay may rủi, xúc xắc — vẫn tạo ra hiệu ứng. Englich và cộng sự (2006) so mức đề nghị chọn ngẫu nhiên với cùng mức ấy do công tố đưa ra (một nghiên cứu khác, cùng hồ sơ) và không thấy hiệu ứng của hai loại khác nhau.
 :::
 
 ## Các lý thuyết giải thích
@@ -69,6 +65,7 @@ Những con số rõ ràng là ngẫu nhiên — vòng quay may rủi, xúc xắ
 ## Ngộ nhận liên quan
 
 - **"Biết con số neo là vô nghĩa thì sẽ không bị ảnh hưởng."** Sai: trong nghiên cứu của Englich và cộng sự (2006), người làm nghề luật *biết* mức đề nghị do xúc xắc quyết định mà vẫn bị kéo.
+- **"Mỏ neo chỉ có tác dụng khi con số có vẻ liên quan."** Không: những con số rõ ràng là ngẫu nhiên — vòng quay may rủi, xúc xắc — vẫn tạo ra hiệu ứng. Englich và cộng sự (2006) còn so mức đề nghị do xúc xắc quyết định với cùng mức ấy do công tố đưa ra (ở một nghiên cứu khác, cùng hồ sơ vụ án) và không thấy hai loại khác nhau về tác dụng.
 - **"Chỉ người thiếu hiểu biết mới bị neo."** Sai. Chuyên gia trong đúng lĩnh vực của mình vẫn bị ảnh hưởng: Englich và cộng sự (2006) thấy chuyên môn và kinh nghiệm xét xử không làm giảm hiệu ứng.
 - **"Ước lượng của tôi khác xa đáp án nên tôi 'thua'."** Không. Công cụ này không chấm đúng/sai — nó chỉ cho bạn thấy *quy trình* mà một con số cho trước có thể len vào ước lượng của mình.
 
