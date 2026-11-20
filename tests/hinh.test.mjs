@@ -42,7 +42,7 @@ export function loiChuan2(html, ten) {
 			loi.push(`${ten}: hai bản bố cục mang lớp pz-fig__hep và pz-fig__rong`);
 	}
 	for (const s of svg) {
-		const co = new Set([...s.matchAll(/font-size(?:="|:\s*)([\d.]+)/g)].map((m) => m[1]));
+		const co = new Set([...s.matchAll(/font-size(?:="|:\s*)([\d.]+)/g)].map((m) => Number(m[1])));
 		if (co.size > 3) loi.push(`${ten}: tối đa ba cỡ chữ mỗi bản, có ${co.size} (${[...co].join(', ')})`);
 	}
 	const chuThich = chuThuong(/<figcaption>([\s\S]*?)<\/figcaption>/.exec(html)?.[1] ?? '');

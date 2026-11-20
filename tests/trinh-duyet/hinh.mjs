@@ -13,7 +13,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { chromium } from 'playwright';
-import { DIST, choTimKiem, dongMayChu, goc, khongChromium } from './chung.mjs';
+import { DIST, dongMayChu, goc, khongChromium } from './chung.mjs';
 
 after(dongMayChu);
 const AXE = createRequire(import.meta.url).resolve('axe-core/axe.min.js');
@@ -100,7 +100,6 @@ test('hình: cỡ chữ, chữ đè, chữ ra ngoài (360, 1280 px; 320 px cản
 						);
 						loi.push(...vp.map((v) => `${trang} ${w} px axe ${v}`));
 					}
-					await choTimKiem(p);
 					await p.close();
 					assert.deepEqual(loi, []);
 				});
