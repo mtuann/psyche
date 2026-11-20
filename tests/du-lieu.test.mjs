@@ -117,6 +117,9 @@ test('bộ dữ liệu hỏng mẫu: mỗi lỗi cố ý đều bị bắt, đ�
 		'nguon.yml: "roediger2006c" và "roediger2006" cùng url',
 		'nguon.yml: bản ghi "wundt1874" (dòng 97): nam_goc:',
 		'nguon.yml: bản ghi "retracted2012" (dòng 103): rut_bai.nguon: link phải là http hay https',
+		'trang.yml: bản ghi "kham-pha/tri-nho/lien-quan-nhieu" (dòng 57): lien_quan:',
+		'trang.yml: bản ghi "kham-pha/tri-nho/lien-quan-sai": lien_quan "kham-pha/khong-co-2" không có trong trang.yml',
+		'trang.yml: bản ghi "kham-pha/tri-nho/lien-quan-sai": lien_quan trỏ tới chính nó',
 	];
 	for (const c of canBat) assert.ok(loi.some((l) => l.startsWith(c)), `không bắt được lỗi: ${c}\nCác lỗi bắt được:\n${loi.join('\n')}`);
 	// Mỗi chú thích "lỗi:" trong file mẫu là một lỗi phải bắt, và không có lỗi nào ngoài các lỗi đã ghi (không lỗi dây
@@ -217,7 +220,7 @@ test('trangChuaDangKy: mọi trang thật có bản ghi; thiếu thì báo đún
 });
 
 test('frontmatter không ghi thông tin thuộc trang.yml (mọi trường của trang.yml trừ id, cùng ma, loai, can_ra_soat)', () => {
-	assert.deepEqual([...TRUONG_O_TRANG_YML].sort(), ['can_ra_soat', 'chu_de', 'dua_tren', 'kiem_lai_truoc', 'linh_vuc', 'loai', 'ma', 'moi', 'tang']);
+	assert.deepEqual([...TRUONG_O_TRANG_YML].sort(), ['can_ra_soat', 'chu_de', 'dua_tren', 'kiem_lai_truoc', 'lien_quan', 'linh_vuc', 'loai', 'ma', 'moi', 'tang']);
 	for (const truong of TRUONG_O_TRANG_YML) {
 		const kq = frontmatterRieng.safeParse({ [truong]: 'loi' });
 		assert.equal(kq.success, false, `frontmatter có ${truong} mà không báo lỗi`);

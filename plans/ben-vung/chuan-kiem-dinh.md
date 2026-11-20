@@ -164,6 +164,7 @@ nhan_dinh:
 - Kết quả lượt 2 vào hồ sơ bằng `node tools/khoa.mjs nhap <file lượt 2>`, không chép tay. Lệnh in các nhận định cần review.
 - Link trong nguồn phải là trang đã mở và đọc, không phải kết quả tìm kiếm.
 - Hồ sơ bản ghi dữ liệu ghi thêm `truong` ở mỗi nhận định (các trường mà nhận định nói tới), để biết khóa trường nào.
+- **Lớp nối** (kế hoạch nâng cấp, K1, 20/11/2026): mọi trường của bộ `trang` hiện lên site đều phải khóa. Ngoài `tang`, `linh_vuc`, `moi` (khóa từ D2-0), nay khóa cả `lien_quan` (trang liên quan của khối "Đọc tiếp", tối đa 4) và `dua_tren` của bài mở rộng (phần "Bài mở rộng dựa trên bài này"). Mỗi trường một câu `ve-site` có `truong`, qua review và kiểm mẫu; rồi khóa lại bản ghi với khóa rộng hơn (ví dụ `node tools/khoa.mjs khoa du-lieu/trang/<id>#dua_tren,linh_vuc,moi,tang`). Khóa rộng hơn không phải mở khóa: trường đã khóa không đổi, khóa cũ được thay (`tests/pham-vi.test.mjs` cho phép). Trường chưa khóa thì thành phần không hiện ở bản thật (`truongDaKhoa`).
 - Định dạng cuối cùng chốt ở D1.6 (công cụ khóa kiểm), có thể thêm trường; đổi thì sửa mục này.
 
 ## 7. Khóa

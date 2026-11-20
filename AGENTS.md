@@ -42,7 +42,7 @@ Từ D1.2. Năm bộ dữ liệu trong `src/data/`, schema và kiểm chéo ở 
 | File | Nội dung |
 |---|---|
 | `linh-vuc.yml` | 14 lĩnh vực: `id`, `ten`, `thu_tu`, `mau` (sắc độ màu của lĩnh vực, 0–359) |
-| `trang.yml` | Mọi trang của site, kể cả trang chưa chuyển: `id` (đường dẫn trong `src/content/docs/`, bỏ `.md`), `tang`, `linh_vuc`, `moi` (trang mới), `dua_tren` (bài mở rộng: các bài lõi nó dựa trên), `kiem_lai_truoc` (bài mở rộng, trang có hạn; năm-tháng, đặt khi khóa) |
+| `trang.yml` | Mọi trang của site, kể cả trang chưa chuyển: `id` (đường dẫn trong `src/content/docs/`, bỏ `.md`), `tang`, `linh_vuc`, `moi` (trang mới), `dua_tren` (bài mở rộng: các bài lõi nó dựa trên), `kiem_lai_truoc` (bài mở rộng, trang có hạn; năm-tháng, đặt khi khóa), `lien_quan` (tối đa 4 trang cho khối "Đọc tiếp"; khóa theo trường, chuẩn mục 6) |
 | `nguon.yml` | Nguồn mà các trang dẫn: `id` (họ tác giả đầu và năm, như `cepeda2006`; trùng thì thêm b, c…), `loai`, `tac_gia`, `nam`, `ten`, `noi_dang`, `doi` (không có `https://doi.org/`) hay `url`; `toan_van`, `rut_bai` ghi khi kiểm định. Mỗi nguồn một bản ghi |
 | `nghien-cuu.yml` | Hồ sơ nghiên cứu kinh điển: `nguon` (các bài gốc), `trang_nha` (trang lõi kể chi tiết; nơi khác chỉ tóm một câu và link về). Một nguồn chỉ thuộc một hồ sơ |
 | `ngo-nhan.yml` | 60 thẻ ngộ nhận: `khang_dinh`, `nhan` (một trong bốn nhãn), `giai_thich`, `nguon`, `trang`, `cap` (cấp trong bài thử "Bạn nghĩ gì về tâm trí?") |

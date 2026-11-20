@@ -66,6 +66,9 @@ export const schema = {
 			moi: z.literal(true).optional(), // trang mới, không có ở site cũ
 			dua_tren: khongLap(z.array(duongDan).min(1)).optional(), // bài mở rộng: các bài lõi mà nó dựa trên
 			kiem_lai_truoc: namThang.optional(), // bài mở rộng, trang có hạn: hạn xem lại, đặt khi khóa
+			// trang liên quan cho khối "Đọc tiếp" (kế hoạch nâng cấp K1, L1): tối đa 4 trang, chỉ tên trang hiện ra; câu ve-site,
+			// khóa theo trường (trang/<id>#lien_quan,…); trường chưa khóa thì không hiện ở bản thật
+			lien_quan: khongLap(z.array(duongDan).min(1).max(4)).optional(),
 			// tên chủ đề khi tiêu đề là câu hỏi không nêu chủ đề ("Vì sao ta khó đổi ý…" → "Bất hòa nhận thức"): chỉ cho tìm kiếm
 			// (PageTitle.astro, Pagefind trọng số cao), không hiện trên trang; không thuộc mã băm của trang
 			chu_de: z.string().min(2).optional(),
@@ -300,6 +303,10 @@ function kiemTraCheo(d, tho, hong) {
 		for (const t of r.dua_tren ?? []) {
 			const l = t === r.id ? `${goc}: dua_tren trỏ tới chính nó` : phaiLaLoi(t, goc, 'dua_tren');
 			if (l) loi.push(l);
+		}
+		for (const t of r.lien_quan ?? []) {
+			if (t === r.id) loi.push(`${goc}: lien_quan trỏ tới chính nó`);
+			else if (!coTrang.has(t)) loi.push(`${goc}: lien_quan "${t}" không có trong trang.yml`);
 		}
 	}
 	if (co('trang') && co('linh-vuc')) {

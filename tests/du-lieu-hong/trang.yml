@@ -54,3 +54,11 @@
   tang: mo-rong
   linh_vuc: phuong-phap
   dua_tren: [] # lỗi: danh sách rỗng (chưa có thì bỏ trường)
+- id: kham-pha/tri-nho/lien-quan-nhieu
+  tang: loi
+  linh_vuc: phuong-phap
+  lien_quan: [bang-chung/p-value, index, nen-tang/phuong-phap, nen-tang/hoc-tap, bat-dau/index] # lỗi: tối đa 4 trang
+- id: kham-pha/tri-nho/lien-quan-sai
+  tang: loi
+  linh_vuc: phuong-phap
+  lien_quan: [kham-pha/khong-co-2, kham-pha/tri-nho/lien-quan-sai] # lỗi: trang không có; lỗi: trỏ tới chính nó
