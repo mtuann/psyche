@@ -38,8 +38,8 @@ jobs:
       # Lô gộp vào main kiểu fast-forward: commit này đã qua test.yml ở nhánh (lần chạy do push, kiểm đúng commit này; lần
       # chạy của pull request kiểm bản gộp nên không tính), trên ba trình duyệt với bản xem. Bản thật dựng khác bản xem (link
       # tới trang chưa khóa thành "sắp có", nút của dải mực tự ẩn, không có dải "Chưa kiểm định", trang mẫu khác), nên vẫn
-      # kiểm trên Chromium (axe, hiển thị, thành phần) và Lighthouse; chỉ bỏ WebKit và Firefox. Push thẳng lên main, hay
-      # test.yml chưa đạt ở commit này, thì chạy đủ bốn phần.
+      # kiểm trên Chromium (axe, hiển thị, thành phần), Lighthouse và đo hình; chỉ bỏ WebKit và Firefox. Push thẳng lên main,
+      # hay test.yml chưa đạt ở commit này, thì chạy đủ năm phần.
       - name: Đã kiểm ở nhánh?
         id: da-kiem
         env:
@@ -47,7 +47,7 @@ jobs:
         run: |
           n=$(gh api "repos/${{ github.repository }}/actions/workflows/test.yml/runs?head_sha=${{ github.sha }}&event=push&status=success" -q .total_count || echo 0)
           echo "test.yml đã đạt ở ${{ github.sha }}: $n lần"
-          if [ "${n:-0}" -gt 0 ]; then p='["chromium","lighthouse"]'; else p='["chromium","webkit","firefox","lighthouse"]'; fi
+          if [ "${n:-0}" -gt 0 ]; then p='["chromium","lighthouse","hinh"]'; else p='["chromium","webkit","firefox","lighthouse","hinh"]'; fi
           echo "cac-phan=$p" >> "$GITHUB_OUTPUT"
         shell: bash
       - uses: ./.github/actions/kiem-thu

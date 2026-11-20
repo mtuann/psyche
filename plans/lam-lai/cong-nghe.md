@@ -96,7 +96,7 @@ Mục tiêu: nhanh (các phần chạy song song, thời gian chờ bằng phầ
 push nhánh moi/**, mo/**, them/** (hay pull request)            push main
         │  bỏ qua nếu chỉ đổi plans/, README, AGENTS, CLAUDE, LICENSE        │  bỏ qua như bên trái
         ▼                                                                    ▼
-test.yml: 6 job song song, mỗi job tự build bản xem          deploy.yml: job build (bản thật, npm test)
+test.yml: 7 job song song, mỗi job tự build bản xem          deploy.yml: job build (bản thật, npm test)
   npm-test │ chromium │ webkit │ firefox │ lighthouse │ anh-chup        ▼
   (một job hỏng, các job khác vẫn chạy tới cuối)            job trình duyệt song song: chromium, lighthouse
                                                             (+ webkit, firefox nếu commit chưa qua test.yml)
