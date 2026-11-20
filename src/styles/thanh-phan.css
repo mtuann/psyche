@@ -352,14 +352,7 @@
 		display: block;
 	}
 }
-@media print {
-	.pz-fig[data-chuan='2'] .pz-fig__hep {
-		display: none;
-	}
-	.pz-fig[data-chuan='2'] .pz-fig__rong {
-		display: block;
-	}
-}
+/* Khi in: không ép bản rộng; khổ giấy rộng thì @container tự chọn bản rộng, cột hẹp của Sách in vẫn theo khung (hinh.md mục 3.1) */
 @media print {
 	.pz-fig__cuon {
 		overflow: visible;
