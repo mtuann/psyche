@@ -22,6 +22,15 @@ lan:
       luot_2: "Claude Opus (agent riêng, lượt 2 sửa nhỏ đợt 8, plans/lam-lai/bao-cao/sua-nho-dot-8-luot-2.yml, 17/11/2026): dung"
       review: "Claude Opus 5.5 (người gộp, không làm lượt 1, lượt 2 của phần này; 17/11/2026): đọc diff chữ của trang, đối chiếu câu đã sửa với kết quả lượt 2 và lượt 2 bổ sung"
       kiem_mau: chủ repo đọc tóm tắt các câu đã sửa của đợt sửa nhỏ (plans/lam-lai/bao-cao/sua-nho-dot-8.md), đạt, 17/11/2026
+  - so: 3
+    ngay: null
+    nhanh: mo/sua-ngay
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (phiên chính, mo/sua-ngay, kế hoạch nâng cấp S2, 20/11/2026): đổi hai câu về site hết đúng (n39, loại ve-site) thành link thẳng tới công cụ đã lên; không đổi chữ nào khác"
+      luot_2: "không qua lượt 2: n39 là câu ve-site, kiểm bằng review (chuẩn mục 3)"
+      review: "Claude Haiku 5.5 (agent review riêng, không làm lượt 1; 20/11/2026): đọc diff chữ; mở trang công cụ và mã công cụ; dung (n39: công cụ có trong khoa.json, hiện kết quả cạnh số liệu Segall và cộng sự 1966, hai link đúng)"
+      kiem_mau: null
 nguon:
   - id: segall1963
     ten: 'Segall, Campbell & Herskovits (1963), Science 139(3556), 769–771: tóm tắt (OpenAlex); toàn văn Science và sách 1966 không mở được'
@@ -612,11 +621,11 @@ nhan_dinh:
     luot_2_ghi_chu: Kiến thức chuẩn/định nghĩa (Müller-Lyer 1889, Ebbinghaus-Titchener, hình mô tả); không mở bản gốc 1889.
     review: dung
   - id: n39
-    cau: Khi công cụ Ảo giác thị giác lên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật.
+    cau: Khi bạn dùng công cụ Ảo giác thị giác và so kết quả của mình với số liệu gốc, kết quả của bạn, dù khác, vẫn là một dữ liệu thật; câu mở bài dẫn tới công cụ ấy.
     loai: ve-site
     ket_qua: da-sua
-    ghi_chu: 'Đã kiểm: trang công cụ "Ảo giác thị giác" ở mục Tự trải nghiệm có bản ghi ở src/data/trang.yml (trai-nghiem/ao-giac-thi-giac có bản ghi). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Khi bạn thử công cụ Ảo giác thị giác trên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật." (cả ba chỗ trong trang nói công cụ như đã có: câu mở "bạn cũng có thể tự đo bằng công cụ…", đoạn Ở Việt Nam, câu hỏi quiz 5). Chữ mới: "Khi công cụ Ảo giác thị giác lên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật." Lý do: công cụ trai-nghiem/ao-giac-thi-giac chỉ có bản ghi ở trang.yml, chưa dựng (src/content/docs/trai-nghiem chỉ có stroop; CONG_CU chỉ có stroop). Viết thì tương lai và link `/psyche/trai-nghiem/ao-giac-thi-giac/` (tự thành "sắp có"), như tri-nho-lam-viec ở D5-L1; quiz 5 đổi thành tình huống giả định ("một công cụ đo ảo giác trực tuyến").'
-    review: sai
+    ghi_chu: 'Đã kiểm: trang công cụ "Ảo giác thị giác" ở mục Tự trải nghiệm có bản ghi ở src/data/trang.yml (trai-nghiem/ao-giac-thi-giac có bản ghi). Review (Claude Sonnet 5.5, 10/11/2026): sai. Chữ cũ: "Khi bạn thử công cụ Ảo giác thị giác trên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật." (cả ba chỗ trong trang nói công cụ như đã có: câu mở "bạn cũng có thể tự đo bằng công cụ…", đoạn Ở Việt Nam, câu hỏi quiz 5). Chữ mới: "Khi công cụ Ảo giác thị giác lên site, kết quả của bạn, dù khác số liệu gốc, vẫn là một dữ liệu thật." Lý do: công cụ trai-nghiem/ao-giac-thi-giac chỉ có bản ghi ở trang.yml, chưa dựng (src/content/docs/trai-nghiem chỉ có stroop; CONG_CU chỉ có stroop). Viết thì tương lai và link `/psyche/trai-nghiem/ao-giac-thi-giac/` (tự thành "sắp có"), như tri-nho-lam-viec ở D5-L1; quiz 5 đổi thành tình huống giả định ("một công cụ đo ảo giác trực tuyến"). Kế hoạch nâng cấp S2 (20/11/2026): công cụ đã lên site (đợt 8; src/content/docs/trai-nghiem/ao-giac-thi-giac.md, đã khóa; công cụ cho chỉnh hai đoạn thẳng rồi so với nghiên cứu năm 1966). Chữ cũ (hai chỗ): mở bài "(khi công cụ [Ảo giác thị giác] trong mục Tự trải nghiệm lên site, bạn cũng có thể tự đo)"; Ở Việt Nam "Khi công cụ Ảo giác thị giác lên site và bạn so kết quả …". Chữ mới: "(bạn cũng có thể tự đo bằng công cụ [Ảo giác thị giác] trong mục Tự trải nghiệm)"; "Khi bạn dùng công cụ [Ảo giác thị giác] và so kết quả …". Quiz 5 giữ tình huống giả định.'
+    review: dung
   - id: n40
     cau: 'Ngộ nhận: "Mắt thấy tai nghe là chắc chắn nhất." Ảo giác cho thấy cảm nhận trực tiếp có thể sai một cách có hệ thống, thường ngay cả khi ta đã biết sự thật.'
     loai: phat-hien
@@ -871,7 +880,13 @@ doi_chu:
   - cu: '"Vòng tròn Ebbinghaus (còn gọi là vòng tròn Titchener): …"'
     moi: bỏ ngoặc; thêm câu về tên gọi theo Burton (2001) và link công cụ Ảo giác Ebbinghaus
     ly_do: Hồ sơ n9, n50 (mở khóa 17/11/2026).
+  - cu: 'Mở bài "(khi công cụ [Ảo giác thị giác] trong mục Tự trải nghiệm lên site, bạn cũng có thể tự đo)"; Ở Việt Nam "Khi công cụ Ảo giác thị giác lên site và bạn so kết quả …"'
+    moi: '"(bạn cũng có thể tự đo bằng công cụ [Ảo giác thị giác] trong mục Tự trải nghiệm)"; "Khi bạn dùng công cụ [Ảo giác thị giác] và so kết quả …"'
+    ly_do: Kế hoạch nâng cấp S2 (20/11/2026); xem ghi_chu n39.
 mo_khoa:
   - ngay: 2026-11-17
     nhanh: mo/sua-nho-dot-8
     ly_do: "Lỗi phát hiện khi review trang khác (trai-nghiem/ebbinghaus, D8): câu về tên gọi vòng tròn Titchener dựa trên Wikipedia (Titchener phổ biến hình năm 1901); viết theo Burton (2001) cho khớp công cụ Ảo giác Ebbinghaus đã khóa"
+  - ngay: 2026-11-20
+    nhanh: mo/sua-ngay
+    ly_do: "Lỗi phát hiện khi kiểm toán (kế hoạch nâng cấp, S2, 17/11/2026): câu về site hết đúng, «khi công cụ … lên site» trong khi công cụ đã lên (đợt 8); đổi thành link thẳng"

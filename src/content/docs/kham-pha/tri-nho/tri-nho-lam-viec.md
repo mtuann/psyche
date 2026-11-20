@@ -125,7 +125,7 @@ Giới hạn của bàn nháp tính theo "cục" thông tin, không tính theo k
 
 ### 5. Tự đo bàn nháp của mình { #5-tu-do-ban-nhap-cua-minh-kha-vung }
 
-Khi công cụ [đo độ dài trí nhớ chữ số](/psyche/trai-nghiem/do-dai-tri-nho/) lên site, bạn có thể tự đo cả nhớ xuôi lẫn nhớ ngược. Nhớ ngược đòi hỏi vừa *giữ* vừa *đảo thứ tự* (xử lý), nên gần với nghĩa "làm việc" của trí nhớ làm việc hơn nhớ xuôi.
+Với công cụ [đo độ dài trí nhớ chữ số](/psyche/trai-nghiem/do-dai-tri-nho/), bạn có thể tự đo cả nhớ xuôi lẫn nhớ ngược. Nhớ ngược đòi hỏi vừa *giữ* vừa *đảo thứ tự* (xử lý), nên gần với nghĩa "làm việc" của trí nhớ làm việc hơn nhớ xuôi.
 
 ## Ở Việt Nam và các nền văn hóa khác
 

@@ -8,7 +8,7 @@ in_duoc: true
 
 ## Tự trải nghiệm
 
-Hãy nhìn hai đoạn thẳng dưới đây (khi công cụ [Ảo giác thị giác](/psyche/trai-nghiem/ao-giac-thi-giac/) trong mục Tự trải nghiệm lên site, bạn cũng có thể tự đo):
+Hãy nhìn hai đoạn thẳng dưới đây (bạn cũng có thể tự đo bằng công cụ [Ảo giác thị giác](/psyche/trai-nghiem/ao-giac-thi-giac/) trong mục Tự trải nghiệm):
 
 > Đoạn A: `>-------<` &nbsp;&nbsp;&nbsp; Đoạn B: `<------->`
 
@@ -86,7 +86,7 @@ Ba cách giải thích thường được nêu (hai cho Müller-Lyer, một cho 
 
 Theo giả thuyết "thế giới thợ mộc", người Việt Nam sống ở đô thị — nhà hộp, chung cư, đường phố kẻ vạch — được dự đoán sẽ dễ bị ảo giác Müller-Lyer tương tự người phương Tây, còn người sống ở môi trường ít góc vuông hơn có thể ít bị hơn. Nhưng đây mới là **suy luận từ giả thuyết**, chưa phải kết quả đo trên người Việt: tính đến 11/2026, chúng tôi chưa tìm thấy nghiên cứu nào đo các ảo giác này ở Việt Nam.
 
-Đây cũng là một lời nhắc cho chính site này: phần lớn những gì ta "biết" về thị giác con người đến từ người phương Tây. Khi công cụ Ảo giác thị giác lên site và bạn so kết quả của mình với số liệu nghiên cứu gốc, hãy nhớ rằng số liệu gốc đó có thể không đại diện cho tất cả mọi người — và kết quả của bạn, dù khác, vẫn là một dữ liệu thật đáng giá.
+Đây cũng là một lời nhắc cho chính site này: phần lớn những gì ta "biết" về thị giác con người đến từ người phương Tây. Khi bạn dùng công cụ [Ảo giác thị giác](/psyche/trai-nghiem/ao-giac-thi-giac/) và so kết quả của mình với số liệu nghiên cứu gốc, hãy nhớ rằng số liệu gốc đó có thể không đại diện cho tất cả mọi người — và kết quả của bạn, dù khác, vẫn là một dữ liệu thật đáng giá.
 
 ## Ngộ nhận liên quan
 

@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L1)
       review: Claude Opus 5.5 (agent review D6-L1, 10/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d6-l1-kiem-mau.yml), đạt, 10/11/2026
+  - so: 2
+    ngay: null
+    nhanh: mo/sua-ngay
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (phiên chính, mo/sua-ngay, kế hoạch nâng cấp S1, 20/11/2026): chỉ xóa ghi chú nội bộ trong ngoặc ở mục Các lý thuyết (doi_chu cuối); không đổi chữ nào khác, không nhận định nào đổi"
+      luot_2: "không cần lượt 2 mới: chỉ xóa chữ, không thêm hay đổi khẳng định nào; n49 (đoạn bị chạm) giữ kết quả lượt 2 của lần 1"
+      review: "Claude Haiku 5.5 (agent review riêng, không làm lượt 1; 20/11/2026): đọc diff chữ; mở trang công cụ và mã công cụ; dung (chỉ xóa ghi chú trong ngoặc, câu còn lại đọc tốt)"
+      kiem_mau: null
 nguon:
   - id: freud1900
     ten: 'Freud (1900), The Interpretation of Dreams, bản dịch A. A. Brill (Project Gutenberg #66048): toàn văn'
@@ -1322,3 +1331,10 @@ doi_chu:
   - cu: 'Nguồn: Freud "London: Hogarth Press"; Voss "Tuin, I., & Hobson, J. A."; Cerebral Cortex "24"'
     moi: Freud bản Brill 1913 (Macmillan); Voss đủ 7 tác giả, 17(6); Cerebral Cortex 24(5); thêm Morgenthaler 2018, OpenStax 4.3
     ly_do: Review, n73.
+  - cu: '"Chúng tôi chưa xác nhận được việc Hobson sau này điều chỉnh lập trường (câu cũ «chính Hobson … mềm hóa lập trường» đã bỏ vì chưa mở được nguồn)."'
+    moi: '"Chúng tôi chưa xác nhận được việc Hobson sau này điều chỉnh lập trường."'
+    ly_do: "Kế hoạch nâng cấp S1 (20/11/2026): ghi chú nội bộ lọt vào chữ trang; chỉ xóa phần trong ngoặc, câu trước đã đủ ý. Không nhận định nào đổi (n49 giữ nguyên)."
+mo_khoa:
+  - ngay: 2026-11-20
+    nhanh: mo/sua-ngay
+    ly_do: "Lỗi phát hiện khi kiểm toán (kế hoạch nâng cấp, S1, 17/11/2026): ghi chú nội bộ lọt vào chữ trang, mục Các lý thuyết; chỉ xóa"
