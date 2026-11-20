@@ -70,7 +70,7 @@ Rất nhiều thử nghiệm ngẫu nhiên và phân tích tổng hợp cho th�
 :::
 
 :::kha-vung[CBT hiệu quả với trầm cảm và lo âu ở mức vừa, nhưng con số khiêm tốn hơn con số thô]
-Phân tích 409 thử nghiệm của Cuijpers và cộng sự (2023) cho g = 0,79 so với nhóm đối chứng, nhưng còn g = 0,47 sau khi hiệu chỉnh sai lệch xuất bản; 42% đáp ứng so với 19% ở nhóm đối chứng, nghĩa là hơn một nửa người bệnh cần thêm hay đổi hướng điều trị. Một phân tích năm 2015 (Johnsen và Friborg) cho rằng hiệu quả của CBT với trầm cảm giảm dần theo năm công bố; nhưng một phân tích làm lại năm 2017 (Cristea và cộng sự) và chính Cuijpers và cộng sự (2023) không thấy xu hướng này.
+Phân tích 409 thử nghiệm của Cuijpers và cộng sự (2023) cho g = 0,79 so với nhóm đối chứng, nhưng còn g = 0,47 sau khi hiệu chỉnh sai lệch xuất bản; và không phải ai được CBT cũng đáp ứng, nên một phần người bệnh cần thêm hay đổi hướng điều trị. Một phân tích năm 2015 (Johnsen và Friborg) cho rằng hiệu quả của CBT với trầm cảm giảm dần theo năm công bố; nhưng một phân tích làm lại năm 2017 (Cristea và cộng sự) và chính Cuijpers và cộng sự (2023) không thấy xu hướng này.
 :::
 
 :::tranh-cai[Bao nhiêu phần hiệu quả là nhờ kỹ thuật riêng của từng liệu pháp, bao nhiêu nhờ yếu tố chung?]
@@ -97,7 +97,7 @@ Liên minh trị liệu là một trong những yếu tố dự báo kết quả
 
 ### 2. Đặt kỳ vọng thực tế: trị liệu hiệu quả nhưng không phải phép màu :nhan[vung-chac]
 
-Theo phân tích 409 thử nghiệm về CBT cho trầm cảm: 42% người được trị liệu đáp ứng, so với 19% ở nhóm đối chứng. Nghĩa là trị liệu giúp được nhiều người, nhưng không phải ai cũng đỡ sau một liệu trình, và chưa đỡ không phải lỗi của người bệnh. Hướng dẫn NICE ghi rằng khi trầm cảm chưa đáp ứng điều trị, người có chuyên môn bàn với người bệnh các phương án tiếp theo, như chuyển sang một liệu pháp tâm lý hay kết hợp các hướng điều trị.
+Theo phân tích 409 thử nghiệm về CBT cho trầm cảm, CBT hiệu quả hơn nhóm đối chứng ở mức vừa đến lớn. Nghĩa là trị liệu giúp được nhiều người, nhưng không phải ai cũng đỡ sau một liệu trình, và chưa đỡ không phải lỗi của người bệnh. Hướng dẫn NICE ghi rằng khi trầm cảm chưa đáp ứng điều trị, người có chuyên môn bàn với người bệnh các phương án tiếp theo, như chuyển sang một liệu pháp tâm lý hay kết hợp các hướng điều trị.
 
 ### 3. Trị liệu qua mạng và tự giúp theo phương pháp đã kiểm chứng cũng có bằng chứng :nhan[kha-vung]
 
@@ -120,7 +120,7 @@ Bối cảnh Việt Nam có những điểm riêng. **Thứ nhất, thiếu nhâ
 - **"Trị liệu chỉ là nói chuyện cho nhẹ lòng, bạn thân cũng làm được."** Chỉ đúng một phần. Sự lắng nghe và kỳ vọng *có thể* có tác dụng thật — đó chính là các yếu tố chung. Nhưng trị liệu là một quá trình có cấu trúc, do người được đào tạo thực hiện, và trong nhiều thử nghiệm, trị liệu thật hiệu quả hơn hẳn không điều trị và hơn giả dược "chỉ lắng nghe" (d = 0,34 với lo âu xã hội), với hiệu quả còn duy trì sau khi kết thúc.
 - **"CBT là tốt nhất, các trường phái khác là vô dụng."** Sai. CBT được nghiên cứu nhiều nhất nên bằng chứng đồ sộ nhất, nhưng khi so trực tiếp, CBT chỉ hơn các liệu pháp chính quy khác 0,06 — rất nhỏ. Liệu pháp tâm động và liệu pháp nhân văn cũng có bằng chứng hiệu quả, dù ít nghiên cứu hơn.
 - **"Đi trị liệu nghĩa là mình 'có vấn đề nặng'."** Sai và có hại. Bạn không cần có chẩn đoán mới được gặp người có chuyên môn; nhiều người đi trị liệu vì những khó khăn rất phổ biến như lo âu, buồn chán, căng thẳng công việc hay rắc rối trong quan hệ. Quan niệm này có thể khiến người ta trì hoãn tìm giúp đỡ.
-- **"Hết liệu trình là khỏi hẳn, không bao giờ tái phát."** Sai. Trong phân tích 409 thử nghiệm, 42% đáp ứng nghĩa là phần lớn còn lại cần thêm phương án; và ngay cả người đã đỡ cũng có thể tái phát. Hướng dẫn NICE khuyên các liệu trình phòng tái phát (như CBT nhóm) tập trung rèn kỹ năng để giữ ổn định, và với trầm cảm, có bằng chứng (từ ít thử nghiệm, không vững trong mọi phân tích độ nhạy) rằng hiệu quả của CBT ở 6–12 tháng sau điều trị tốt hơn thuốc. Đây không phải lý do để tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn.
+- **"Hết liệu trình là khỏi hẳn, không bao giờ tái phát."** Sai. Không phải ai được trị liệu cũng đáp ứng, và nhiều người cần thêm phương án; và ngay cả người đã đỡ cũng có thể tái phát. Hướng dẫn NICE khuyên các liệu trình phòng tái phát (như CBT nhóm) tập trung rèn kỹ năng để giữ ổn định, và với trầm cảm, có bằng chứng (từ ít thử nghiệm, không vững trong mọi phân tích độ nhạy) rằng hiệu quả của CBT ở 6–12 tháng sau điều trị tốt hơn thuốc. Đây không phải lý do để tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn.
 
 Nếu bạn đang cân nhắc tìm người trị liệu, hay đang gặp khó khăn, trang [Hỗ trợ](/psyche/ho-tro/) có các đường dây và nơi khám đã kiểm chứng, cùng gợi ý chọn nơi phù hợp.
 
@@ -140,7 +140,7 @@ Nếu bạn đang cân nhắc tìm người trị liệu, hay đang gặp khó k
 > Đây là "bộ ba nhận thức" của Beck: trị liệu chen vào vòng lặp suy nghĩ → cảm xúc → hành vi ở khâu suy nghĩ, bằng cách coi mỗi suy nghĩ tự động như một giả thuyết cần kiểm chứng.
 ? Theo phân tích tổng hợp của Cuijpers và cộng sự (2023) — 409 thử nghiệm, 52.702 người bệnh — đâu là bức tranh thận trọng về CBT trị trầm cảm?
 - CBT hiệu quả vượt trội mọi liệu pháp khác với khoảng cách lớn.
-+ CBT hơn nhóm đối chứng ở mức vừa đến lớn (g = 0,79; còn g = 0,47 sau khi hiệu chỉnh sai lệch xuất bản); 42% đáp ứng so với 19% ở nhóm đối chứng; nhưng CBT chỉ hơn các liệu pháp tâm lý khác một chút (g = 0,06).
++ CBT hơn nhóm đối chứng ở mức vừa đến lớn (g = 0,79; còn g = 0,47 sau khi hiệu chỉnh sai lệch xuất bản); nhưng CBT chỉ hơn các liệu pháp tâm lý khác một chút (g = 0,06).
 - CBT kém hiệu quả hơn giả dược.
 > Cứ khoảng 5 người được điều trị thì có thêm 1 người đáp ứng so với nhóm đối chứng (NNT = 4,7): hiệu quả có thật nhưng khiêm tốn, và "thương hiệu" liệu pháp ít quan trọng hơn nhiều người tưởng.
 ? Nghiên cứu của Powers và cộng sự (2008) cho thấy trị liệu thật hơn giả dược tâm lý ở mức d = 0,34 — nhỏ hơn nhiều so với khi so với danh sách chờ (d = 0,86). Điều này nên được hiểu thế nào?

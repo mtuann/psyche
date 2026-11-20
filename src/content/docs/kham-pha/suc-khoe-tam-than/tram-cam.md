@@ -72,7 +72,7 @@ Các phân tích tổng hợp lớn cho thấy CBT (409 thử nghiệm) và các
 
 ## Khi nào nên tìm sự giúp đỡ
 
-Hãy cân nhắc tìm người có chuyên môn khi nỗi buồn hay sự trống rỗng **kéo dài từ hai tuần trở lên mà không dịu**, khi nó **ảnh hưởng rõ đến học tập, công việc, giấc ngủ, ăn uống hay các mối quan hệ**, hoặc khi bạn thấy "không ổn" kéo dài. Bạn không cần phải "đủ nặng" mới được tìm sự giúp đỡ.
+Hãy cân nhắc tìm người có chuyên môn khi nỗi buồn hay sự trống rỗng **kéo dài từ hai tuần trở lên mà không dịu** (hay sớm hơn, nếu bạn nghĩ mình có thể đang bị trầm cảm), khi nó **ảnh hưởng rõ đến học tập, công việc, giấc ngủ, ăn uống hay các mối quan hệ**, hoặc khi bạn thấy "không ổn" kéo dài. Bạn không cần phải "đủ nặng" mới được tìm sự giúp đỡ.
 
 Nếu bạn có **ý nghĩ về cái chết hay tự làm hại bản thân**, hãy tìm giúp đỡ **ngay**, không chờ: gọi cấp cứu hay đến khoa cấp cứu gần nhất, và nói với một người bạn tin tưởng. Số khẩn cấp và các đường dây hỗ trợ đã kiểm chứng có ở trang [Hỗ trợ](/psyche/ho-tro/). Xem thêm bài [Khi nào nên tìm sự giúp đỡ chuyên môn?](/psyche/kham-pha/suc-khoe-tam-than/tim-giup-do/).
 
@@ -90,10 +90,10 @@ Nếu bạn có **ý nghĩ về cái chết hay tự làm hại bản thân**, h
 + Mức độ, độ lan rộng và thời gian kéo dài của các triệu chứng: kéo dài ít nhất hai tuần, gần như mỗi ngày, và gây suy giảm rõ trong cuộc sống.
 - Trầm cảm không bao giờ có nguyên nhân rõ ràng; nỗi buồn thì luôn có.
 > Trầm cảm vẫn có thể bắt đầu sau một biến cố như mất việc hay ly hôn. Điều phân biệt là mức độ, độ lan rộng và thời gian kéo dài, và chỉ người có chuyên môn mới đánh giá được.
-? Vì sao mô tả chẩn đoán trong bài không nên dùng để tự chẩn đoán?
+? Vì sao các mô tả về trầm cảm trong bài không nên dùng để tự chẩn đoán?
 + Vì chẩn đoán cần người có chuyên môn trò chuyện, hỏi tiền sử, loại trừ các nguyên nhân khác (bệnh cơ thể, thuốc, chất kích thích, rối loạn lưỡng cực, tang chế) và đánh giá mức độ suy giảm, điều một bảng kiểm không làm được.
-- Vì các tiêu chí này chỉ đúng với người phương Tây.
-- Vì danh sách triệu chứng thay đổi mỗi năm.
+- Vì các mô tả này chỉ đúng với người phương Tây.
+- Vì các mô tả về trầm cảm thay đổi mỗi năm.
 > Cùng một triệu chứng có thể thuộc nhiều tình trạng khác nhau. Chẩn đoán là quy trình đánh giá tổng thể và loại trừ, không phải phép cộng điểm.
 ? Phát biểu nào đúng về điều trị trầm cảm theo các hướng dẫn quốc tế?
 - Chỉ có thuốc mới có bằng chứng; liệu pháp tâm lý chỉ để an ủi.
@@ -113,6 +113,7 @@ Nếu bạn có **ý nghĩ về cái chết hay tự làm hại bản thân**, h
 - World Health Organization. (2026, 11 tháng 9). *Depressive disorder (depression)* [Tờ thông tin]. <https://www.who.int/news-room/fact-sheets/detail/depression>
 - American Psychiatric Association. (2022). *Diagnostic and Statistical Manual of Mental Disorders*, Fifth Edition, Text Revision (DSM-5-TR). American Psychiatric Publishing. Tóm tắt chính thức cho người đọc: American Psychiatric Association, *What is depression?* <https://www.psychiatry.org/patients-families/depression/what-is-depression>
 - National Institute for Health and Care Excellence. (2022). *Depression in adults: treatment and management* (NICE guideline NG222). <https://www.nice.org.uk/guidance/ng222>
+- NHS. (2023, xem lại 5 tháng 7). *Depression in adults: Overview*. <https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/>
 - Cuijpers, P., Miguel, C., Harrer, M., Plessen, C. Y., Ciharova, M., Ebert, D., & Karyotaki, E. (2023). Cognitive behavior therapy vs. control conditions, other psychotherapies, pharmacotherapies and combined treatment for depression: A comprehensive meta-analysis including 409 trials with 52,702 patients. *World Psychiatry*, 22(1), 105–115. <https://doi.org/10.1002/wps.21069>
 - Cuijpers, P., Noma, H., Karyotaki, E., Vinkers, C. H., Cipriani, A., & Furukawa, T. A. (2020). A network meta-analysis of the effects of psychotherapies, pharmacotherapies and their combination in the treatment of adult depression. *World Psychiatry*, 19(1), 92–107. <https://doi.org/10.1002/wps.20701>
 - Cipriani, A., Furukawa, T. A., Salanti, G., và cộng sự. (2018). Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: A systematic review and network meta-analysis. *The Lancet*, 391(10128), 1357–1366. <https://doi.org/10.1016/S0140-6736(17)32802-7>

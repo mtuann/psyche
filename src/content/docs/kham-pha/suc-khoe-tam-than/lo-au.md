@@ -102,7 +102,7 @@ Cơn hoảng sợ có thể giống cơn đau tim. Nếu bạn bị đau ngực,
 > Đây là cơ chế mà liệu pháp tiếp xúc nhắm vào: đối mặt có kế hoạch, có kiểm soát để học lại rằng tín hiệu báo động đã reo nhầm.
 ? Theo ICD-11, rối loạn hoảng sợ khác một cơn hoảng sợ đơn lẻ ở điểm nào?
 - Cơn hoảng sợ đơn lẻ thì không có triệu chứng cơ thể.
-+ Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống.
++ Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại khiến người ấy lo sợ kéo dài, và cản trở rõ cuộc sống.
 - Rối loạn hoảng sợ chỉ chẩn đoán được bằng điện não đồ.
 > Cơn hoảng sợ khá thường gặp và tự nó chưa phải là rối loạn; "nỗi sợ về cơn sợ" kéo dài mới là đặc điểm của rối loạn hoảng sợ.
 ? Phát biểu nào đúng về điều trị rối loạn lo âu theo các hướng dẫn quốc tế?

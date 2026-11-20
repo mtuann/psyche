@@ -24,6 +24,16 @@ lan:
       review: "Claude Opus 5.5 (agent review riêng S5, mức Lớn, không làm lượt 1 hay lượt 2, 20/11/2026): đạt; mọi thay đổi theo hướng thận trọng hơn, không còn danh sách để tự chấm, không câu khuyên dùng hay ngừng thuốc"
       kiem_mau: chủ repo trả lời «đạt» cho các mục kiểm mẫu của NC0 (S1, S2, S3, S5 gồm câu chữ, T4; danh sách ở plans/nang-cap/bao-cao/nc0-kiem-mau.md), 20/11/2026
       cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
+  - so: 3
+    ngay: null
+    nhanh: mo/sktt-sua-nho
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (phiên chính, lô sửa nhỏ sau S5, mo/sktt-sua-nho, 20/11/2026): câu hỏi 2 (n49); «hay sớm hơn…» ở mục tìm giúp đỡ (n42, nguồn mới NHS); chỉ theo hướng thận trọng hơn"
+      luot_2: null
+      review: null
+      kiem_mau: null
+      cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
 nguon:
   - id: icd11-cddr
     ten: 'WHO (2024), Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR), ISBN 9789240077263: toàn văn (PDF 852 trang tải từ IRIS của WHO qua trang ấn phẩm; số trang in = số trang PDF trừ 18). Giai đoạn trầm cảm tr. 212–214; 6A70 tr. 244; 6B00 tr. 266–267; 6B01 tr. 271–272; 6B04 tr. 284–285'
@@ -44,6 +54,10 @@ nguon:
   - id: nhs-tt
     ten: 'NHS (Anh), NHS talking therapies for anxiety and depression (duyệt 5/11/2025): toàn văn, đọc 16/11/2026'
     link: https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/
+    toan_van: true
+  - id: nhs-dep
+    ten: 'NHS (Anh), Depression in adults: Overview (xem lại 5/7/2023), mục When to see a doctor: toàn văn, đọc 20/11/2026'
+    link: https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/
     toan_van: true
   - id: nice-ng222
     ten: 'NICE (2022), Depression in adults: treatment and management (NG222), chương Recommendations: toàn văn, đọc 16/11/2026'
@@ -633,21 +647,17 @@ nhan_dinh:
       - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
     luot_2_ghi_chu: Vế 'vẻ ngoài không cho biết tình trạng bên trong' là suy ra hợp lý từ câu trên.
   - id: n42
-    cau: Nên cân nhắc tìm người có chuyên môn khi nỗi buồn hay trống rỗng kéo dài từ hai tuần trở lên mà không dịu, ảnh hưởng rõ đến học tập, công việc, giấc ngủ, ăn uống, các mối quan hệ, hoặc khi thấy "không ổn" kéo dài; không cần "đủ nặng".
+    cau: 'Nên cân nhắc tìm người có chuyên môn khi nỗi buồn hay trống rỗng kéo dài từ hai tuần trở lên mà không dịu (hay sớm hơn, nếu nghĩ mình có thể đang bị trầm cảm), ảnh hưởng rõ đến học tập, công việc, giấc ngủ, ăn uống, các mối quan hệ, hoặc khi thấy «không ổn» kéo dài; không cần «đủ nặng».'
     loai: loi-khuyen
     nguon:
+      - nhs-dep
       - who-dep-2026
       - apa-dep
       - nhs-tt
     trich: Seek care if you have symptoms of depression. [WHO]; symptoms occur for most of the day, nearly every day, for more than two weeks, along with a clear change in day-to-day functioning [APA]; You do not need to have a diagnosed mental health condition. [NHS]
     vi_tri: WHO; APA; NHS
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "kéo dài nhiều tuần không dịu". Đổi thành "từ hai tuần trở lên" cho khớp trang Hỗ trợ (đã khóa) và tiêu chí thời gian; thêm "thấy không ổn kéo dài".'
-    luot_2: dung
-    luot_2_nguon:
-      - https://www.who.int/news-room/fact-sheets/detail/depression
-      - https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/
-    luot_2_ghi_chu: 'gần chẩn đoán (nhẹ): mốc ''hai tuần'' trùng ngưỡng thời gian của tiêu chí; vế ''hoặc khi thấy không ổn kéo dài; không cần đủ nặng'' đã tránh để người đọc hiểu là dưới hai tuần thì không cần giúp.'
+    ghi_chu: 'Chữ cũ: "kéo dài nhiều tuần không dịu". Đổi thành "từ hai tuần trở lên" cho khớp trang Hỗ trợ (đã khóa) và tiêu chí thời gian; thêm "thấy không ổn kéo dài". Lô sửa nhỏ sau S5 (chủ repo quyết 20/11/2026): thêm «(hay sớm hơn, nếu bạn nghĩ mình có thể đang bị trầm cảm)» theo đề xuất của lượt 2 S5 (mốc hai tuần không thành ngưỡng phải chờ); nguồn NHS «It''s important to seek help from a GP if you think you may be depressed» (thêm nhs-dep vào nguồn).'
   - id: n43
     cau: 'Có ý nghĩ về cái chết hay tự làm hại bản thân thì tìm giúp đỡ ngay: gọi cấp cứu hay đến khoa cấp cứu gần nhất, và nói với một người bạn tin tưởng.'
     loai: loi-khuyen
@@ -713,7 +723,7 @@ nhan_dinh:
     luot_2_nguon:
       - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
   - id: n49
-    cau: 'Câu hỏi 2: mô tả chẩn đoán không dùng để tự chẩn đoán vì chẩn đoán cần trò chuyện, hỏi tiền sử, loại trừ nguyên nhân khác (bệnh cơ thể, thuốc, chất, lưỡng cực, tang chế) và đánh giá suy giảm.'
+    cau: 'Câu hỏi 2: các mô tả về trầm cảm trong bài không dùng để tự chẩn đoán vì chẩn đoán cần trò chuyện, hỏi tiền sử, loại trừ nguyên nhân khác (bệnh cơ thể, thuốc, chất, lưỡng cực, tang chế) và đánh giá suy giảm.'
     loai: lam-sang
     nguon:
       - apa-dep
@@ -721,11 +731,7 @@ nhan_dinh:
     trich: a thorough diagnostic evaluation that includes a comprehensive interview … personal, medical and family histories … physical examination [APA]
     vi_tri: APA; CDDR tr. 213
     ket_qua: da-sua
-    ghi_chu: Câu cũ (câu hỏi 3) cùng ý; thêm "thuốc", "rối loạn lưỡng cực", "tang chế" cho khớp n18. Phương án nhiễu giữ.
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-      - https://www.psychiatry.org/patients-families/depression/what-is-depression
+    ghi_chu: 'Câu cũ (câu hỏi 3) cùng ý; thêm "thuốc", "rối loạn lưỡng cực", "tang chế" cho khớp n18. Phương án nhiễu giữ. Lô sửa nhỏ sau S5 (chủ repo quyết 20/11/2026): câu hỏi và hai phương án nhiễu không còn nhắc «mô tả chẩn đoán», «tiêu chí», «danh sách triệu chứng» (danh sách đã bỏ ở S5; theo review S5).'
   - id: n50
     cau: 'Câu hỏi 3: liệu pháp tâm lý (CBT, IPT, kích hoạt hành vi) và thuốc chống trầm cảm đều có bằng chứng; hướng điều trị do người có chuyên môn cùng người bệnh chọn; WHO xem liệu pháp tâm lý là hướng đầu tiên, thuốc có thể kết hợp khi vừa và nặng.'
     loai: lam-sang
@@ -822,7 +828,16 @@ doi_chu:
   - cu: 'Mục «Chuyên gia phân biệt bằng cách nào?»: câu dẫn «Mô tả dưới đây chỉ để hiểu chung, không phải bảng để tự chấm điểm…», bốn gạch đầu dòng (hai dấu hiệu cốt lõi; các triệu chứng khác; ít nhất hai tuần, suy giảm rõ; loại trừ), đoạn «Cũng vì vậy, chẩn đoán là một quy trình…»'
     moi: 'Ba đoạn văn xuôi: chẩn đoán không phải tự đối chiếu với danh sách; cách người có chuyên môn đánh giá (trò chuyện, tiền sử, khám, xét nghiệm, cả bức tranh, loại trừ); dấu hiệu nên đi khám nói chung, link Tìm giúp đỡ và Hỗ trợ'
     ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026), lô thận trọng tạm chờ chuyên gia; hồ sơ n14–n20, n54.'
+  - cu: "Câu hỏi 2: «mô tả chẩn đoán trong bài»; nhiễu «các tiêu chí này», «danh sách triệu chứng»"
+    moi: «các mô tả về trầm cảm trong bài»; «các mô tả này», «các mô tả về trầm cảm»
+    ly_do: "Lô sửa nhỏ sau S5: danh sách triệu chứng đã bỏ ở S5 (review S5); hồ sơ n49."
+  - cu: "Khi nào nên tìm sự giúp đỡ: «kéo dài từ hai tuần trở lên mà không dịu»"
+    moi: thêm «(hay sớm hơn, nếu bạn nghĩ mình có thể đang bị trầm cảm)»; thêm NHS vào Nguồn
+    ly_do: Lô sửa nhỏ sau S5, theo lượt 2 S5; hồ sơ n42.
 mo_khoa:
   - ngay: 2026-11-20
     nhanh: mo/sktt-than-trong
     ly_do: "Kế hoạch nâng cấp S5 (20/11/2026): lô thận trọng tạm, chờ chuyên gia: mục «Chuyên gia phân biệt bằng cách nào?» bỏ bốn gạch đầu dòng giống tiêu chí chẩn đoán, thay bằng mô tả cách người có chuyên môn đánh giá và dấu hiệu nên đi khám (kiem-sinh-hoc-cam-xuc.md [A][CG]; phản biện P7)"
+  - ngay: 2026-11-20
+    nhanh: mo/sktt-sua-nho
+    ly_do: "Kế hoạch nâng cấp, lô sửa nhỏ sau S5 (chủ repo quyết 20/11/2026): theo review và lượt 2 của S5, sửa theo hướng thận trọng hơn"

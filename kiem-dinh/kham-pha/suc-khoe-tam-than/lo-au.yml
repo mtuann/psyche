@@ -24,6 +24,16 @@ lan:
       review: "Claude Opus 5.5 (agent review riêng S5, mức Lớn, không làm lượt 1 hay lượt 2, 20/11/2026): đạt; mọi thay đổi theo hướng thận trọng hơn, không còn danh sách để tự chấm, không câu khuyên dùng hay ngừng thuốc, n50 đổi loai thành loi-khuyen theo review"
       kiem_mau: chủ repo trả lời «đạt» cho các mục kiểm mẫu của NC0 (S1, S2, S3, S5 gồm câu chữ, T4; danh sách ở plans/nang-cap/bao-cao/nc0-kiem-mau.md), 20/11/2026
       cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
+  - so: 3
+    ngay: null
+    nhanh: mo/sktt-sua-nho
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (phiên chính, lô sửa nhỏ sau S5, mo/sktt-sua-nho, 20/11/2026): đáp án câu hỏi 3 (n45); chỉ theo hướng thận trọng hơn"
+      luot_2: null
+      review: null
+      kiem_mau: null
+      cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
 nguon:
   - id: icd11-cddr
     ten: 'WHO (2024), Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR), ISBN 9789240077263: toàn văn (PDF 852 trang tải từ IRIS của WHO qua trang ấn phẩm; số trang in = số trang PDF trừ 18). Giai đoạn trầm cảm tr. 212–214; 6A70 tr. 244; 6B00 tr. 266–267; 6B01 tr. 271–272; 6B04 tr. 284–285'
@@ -652,17 +662,14 @@ nhan_dinh:
     luot_2_nguon:
       - https://europepmc.org/article/MED/29550689
   - id: n45
-    cau: 'Câu hỏi 3: theo ICD-11, ở rối loạn hoảng sợ các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống; cơn hoảng sợ đơn lẻ khá thường gặp và tự nó chưa phải rối loạn.'
+    cau: 'Câu hỏi 3: theo ICD-11, ở rối loạn hoảng sợ các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại khiến người ấy lo sợ kéo dài, và cản trở rõ cuộc sống; cơn hoảng sợ đơn lẻ thì thường gặp và tự nó chưa phải là rối loạn.'
     loai: lam-sang
     nguon:
       - icd11-cddr
     trich: Recurrent panic attacks, which are discrete episodes of intense fear or apprehension characterized by the rapid and concurrent onset of several characteristic symptoms … palpitations or increased heart rate … sensations of shortness of breath … chest pain … feelings of dizziness … fear of losing control or going mad; fear of imminent death. At least some of the panic attacks are unexpected … seem to arise "out of the blue". Panic attacks are followed by persistent concern or worry (e.g. for several weeks) about their recurrence or their perceived negative significance (e.g. that the physiological symptoms may be those of a myocardial infarction), or by behaviours intended to avoid their recurrence (e.g. only leaving the home with a trusted companion). … Panic attacks are common in the general population
     vi_tri: CDDR tr. 271–272
     ket_qua: da-sua
-    ghi_chu: 'Câu cũ: "Theo DSM-5-TR… kèm ít nhất một tháng lo sợ cơn tiếp theo…". Đổi sang ICD-11 (ngưỡng một tháng của DSM-5-TR không kiểm được qua tài liệu chính thức của APA). Kế hoạch nâng cấp S5 (20/11/2026): đáp án cũ «Rối loạn hoảng sợ có các cơn lặp lại, một số cơn đến bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, và gây suy giảm rõ.»; đáp án mới «Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống.». Lý do: đáp án cũ dựa vào chữ đã bỏ ở n13 (cơn bất ngờ, thay đổi cách sống), gần như chép tiêu chí; sửa tối thiểu cho khớp chữ mới. Câu hỏi, phương án nhiễu và giải thích giữ. Lượt 2 cũ đã xóa.'
-    luot_2: dung
-    luot_2_nguon: [ "https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content" ]
-    luot_2_ghi_chu: "«CDDR 6B01, Boundary with normality: Panic attacks are common in the general population…; Panic disorder is differentiated from normal fear reactions by frequent recurrence of panic attacks, persistent worry or concern about the panic attacks…, or alterations in behaviour (e.g. avoidance) and associated significant impairment; Note: the presence of panic attacks is not in itself sufficient. Lệch nhỏ: với 6B01, ICD-11 chỉ đòi suy giảm chức năng (significant impairment), không có vế «khổ sở» như 6B00, 6B04; «gây khổ sở hay cản trở» rộng hơn ICD một chút. Không đổi kết luận; nếu muốn sát thì viết «gây cản trở rõ cuộc sống».»"
+    ghi_chu: 'Câu cũ: "Theo DSM-5-TR… kèm ít nhất một tháng lo sợ cơn tiếp theo…". Đổi sang ICD-11 (ngưỡng một tháng của DSM-5-TR không kiểm được qua tài liệu chính thức của APA). Kế hoạch nâng cấp S5 (20/11/2026): đáp án cũ «Rối loạn hoảng sợ có các cơn lặp lại, một số cơn đến bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, và gây suy giảm rõ.»; đáp án mới «Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống.». Lý do: đáp án cũ dựa vào chữ đã bỏ ở n13 (cơn bất ngờ, thay đổi cách sống), gần như chép tiêu chí; sửa tối thiểu cho khớp chữ mới. Câu hỏi, phương án nhiễu và giải thích giữ. Lượt 2 cũ đã xóa. Lô sửa nhỏ sau S5 (chủ repo quyết 20/11/2026): chữ đáp án gọn hơn (theo review S5); bỏ «khổ sở» vì ICD-11 với rối loạn hoảng sợ chỉ nêu suy giảm chức năng (ghi chú của lượt 2 S5).'
   - id: n46
     cau: 'Câu hỏi 4: liệu pháp dựa trên CBT, gồm tiếp xúc, có nhiều bằng chứng nhất; SSRI có thể hữu ích, do bác sĩ kê; benzodiazepine nhìn chung không được khuyên dùng; WHO và NICE đặt CBT ở vị trí trung tâm.'
     loai: lam-sang
@@ -774,7 +781,13 @@ doi_chu:
   - cu: 'Gạch đầu dòng benzodiazepine kết thúc ở «…khuyên không dùng cho rối loạn hoảng sợ.»'
     moi: 'Thêm «Người đang được kê thuốc nhóm này đừng tự ngừng đột ngột: theo NHS, ngừng đột ngột có thể gây triệu chứng cai, và bác sĩ sẽ giảm liều dần.»'
     ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026), theo lượt 2; hồ sơ n50.'
+  - cu: "Câu hỏi 3, đáp án: «…thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống»"
+    moi: «…khiến người ấy lo sợ kéo dài, và cản trở rõ cuộc sống»
+    ly_do: Lô sửa nhỏ sau S5 (review S5; ICD-11 với rối loạn hoảng sợ nêu suy giảm, không nêu khổ sở); hồ sơ n45.
 mo_khoa:
   - ngay: 2026-11-20
     nhanh: mo/sktt-than-trong
     ly_do: "Kế hoạch nâng cấp S5 (20/11/2026): lô thận trọng tạm, chờ chuyên gia: mục «Điều gì đang xảy ra?» viết lại ba gạch đầu dòng (lo âu lan tỏa, hoảng sợ, lo âu xã hội) ở mức khái niệm, bỏ danh sách triệu chứng và mốc thời gian (kiem-sinh-hoc-cam-xuc.md [A][CG]; phản biện P7)"
+  - ngay: 2026-11-20
+    nhanh: mo/sktt-sua-nho
+    ly_do: "Kế hoạch nâng cấp, lô sửa nhỏ sau S5 (chủ repo quyết 20/11/2026): theo review và lượt 2 của S5, sửa theo hướng thận trọng hơn"
