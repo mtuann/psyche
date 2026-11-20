@@ -201,3 +201,14 @@ test('link tới GitHub chỉ trỏ tới repo công khai mtuann/psyche (không 
 	);
 	assert.deepEqual(sai, []);
 });
+
+test('khối "Đọc tiếp" (L1): mọi tiêu đề mục Nguồn có đúng markup mà chenDocTiep tìm, nên khối không lặng lẽ rơi xuống cuối trang', async () => {
+	const { MOC_NGUON } = await import('../src/plugins/thanh-phan.mjs');
+	const sai = [];
+	for (const f of fs.readdirSync(DIST, { recursive: true }).map(String).filter((f) => f.endsWith('index.html'))) {
+		const html = read(path.join(DIST, f));
+		if (html.includes('<h2 id="nguon"') && !html.includes(MOC_NGUON)) sai.push(f);
+		if (html.includes('class="pz-doc-tiep"') && html.includes(MOC_NGUON) && html.indexOf('class="pz-doc-tiep"') > html.indexOf(MOC_NGUON)) sai.push(`${f} (khối sau mục Nguồn)`);
+	}
+	assert.deepEqual(sai, []);
+});
