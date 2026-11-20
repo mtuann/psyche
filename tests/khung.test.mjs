@@ -62,6 +62,9 @@ test('trang chủ: tiếng Việt, không còn hộp "Đang làm lại" (đợt 
 	assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1"\/?>/);
 	assert.match(html, /<meta name="description" content="[^"]+"/);
 	assert.match(html, new RegExp(`<link rel="canonical" href="${SITE}${BASE}"/?>`));
+	// lối vào các mục chính và Sách in (kế hoạch nâng cấp T4): trang chủ không còn là lối vào cụt
+	for (const muc of ['kham-pha', 'thi-nghiem', 'bang-chung', 'ngo-nhan', 'trai-nghiem', 'sach'])
+		assert.match(html, new RegExp(`href="${BASE}${muc}/"`), `trang chủ thiếu link tới /${muc}/`);
 });
 
 test('hộp tìm kiếm nói tiếng Việt (src/content/i18n/vi.json), không còn chữ tiếng Anh của Pagefind', () => {

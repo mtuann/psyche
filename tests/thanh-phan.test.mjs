@@ -152,6 +152,16 @@ test('tóm tắt đầu bài (từ các khung nhãn của trang) và hồ sơ ng
 	assert.match(dung(':::ho-so-nghien-cuu[Hồ sơ: Asch]\n- **Năm** 1951\n:::'), /aria-label="Hồ sơ: Asch"/);
 });
 
+test('lối vào các mục chính (:::loi-vao, T4): thẻ có tên, số đếm lúc build, một câu; dòng sai khuôn, mục lạ là lỗi', () => {
+	const html = dung(':::loi-vao\n- [Thí nghiệm](/psyche/thi-nghiem/): Đọc lại thí nghiệm.\n- [Ngộ nhận](/psyche/ngo-nhan/): Niềm tin phổ biến.\n:::', 'index');
+	assert.match(html, /^<ul class="pz-loi-vao not-content" role="list">/);
+	assert.match(html, /<span class="pz-loi-vao__ten">Thí nghiệm<\/span><span class="pz-loi-vao__so">\d+ thí nghiệm<\/span><span class="pz-loi-vao__mo">Đọc lại thí nghiệm.<\/span>/);
+	assert.match(html, /<span class="pz-loi-vao__so">\d+ ngộ nhận<\/span>/);
+	assert.throws(() => dung(':::loi-vao\n- Thí nghiệm: không có link\n:::', 'index'), /phải là "- \[Bài khám phá\]/);
+	assert.throws(() => dung(':::loi-vao\n- [Lạ](/psyche/la/): câu\n:::', 'index'), /không có mục \/psyche\/la\//);
+	assert.throws(() => dung(':::loi-vao\nĐoạn.\n:::', 'index'), /chỉ chứa một danh sách/);
+});
+
 test('khối chữ không ghi ngôn ngữ: vùng cuộn nhận focus, có tên riêng, chữ được thoát; khối có ngôn ngữ để Expressive Code', () => {
 	const html = dung('```\nA <b> & ─●─\n```\n\nĐoạn.\n\n```text\nB\n```\n\n```js\nlet x = 1;\n```');
 	const vung = html.match(/<div class="pz-bang pz-khoi-chu" tabindex="0" role="region" aria-label="Khối chữ \d, cuộn ngang được"><pre>\n/g) ?? [];

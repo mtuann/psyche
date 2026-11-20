@@ -22,6 +22,18 @@ hero:
       variant: secondary
 ---
 
+## Đi theo cách của bạn
+
+:::loi-vao
+- [Bài khám phá](/psyche/kham-pha/): Mỗi bài là một câu hỏi về con người, kèm bằng chứng và mức độ chắc chắn.
+- [Thí nghiệm kinh điển](/psyche/thi-nghiem/): Các thí nghiệm nổi tiếng đọc lại từ đầu: thiết kế, kết quả, lần làm lại và tranh luận.
+- [Hiểu bằng chứng](/psyche/bang-chung/): Cách đọc một tin tức hay một nghiên cứu tâm lý học: tương quan và nhân quả, nhóm đối chứng, độ lớn hiệu ứng.
+- [Ngộ nhận](/psyche/ngo-nhan/): Những niềm tin phổ biến về tâm trí, kèm nhãn mức độ chắc chắn và nguồn.
+- [Tự trải nghiệm](/psyche/trai-nghiem/): Tự làm các thí nghiệm kinh điển trong trình duyệt, rồi so với kết quả nghiên cứu gốc.
+:::
+
+Muốn đọc liền một mạch hay in ra? [Sách in](/psyche/sach/) gộp mọi bài đã kiểm chứng thành một trang.
+
 ## Thử với chính bạn
 
 ::cong-cu-noi-bat

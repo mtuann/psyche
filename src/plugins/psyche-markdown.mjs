@@ -21,7 +21,7 @@ import fs from 'node:fs';
 import { parse } from 'yaml';
 import { DUONG_GOC, ban, trangTrongBan } from '../ban-build.mjs';
 import { svg } from '../bieu-tuong.mjs';
-import { CHO_SACH, TEN_NHAN, TRUONG_THE, baiMoi, tomTat, chipNhan, congCu, congCuNoiBat, danhSachBai, danhSachNguon, duLieuNgoNhan, hinh, quiz, tenCacTrang, theLinhVuc, toTomTat, trangNgoNhan } from './thanh-phan.mjs';
+import { CHO_SACH, TEN_NHAN, TRUONG_THE, baiMoi, loiVao, tomTat, chipNhan, congCu, congCuNoiBat, danhSachBai, danhSachNguon, duLieuNgoNhan, hinh, quiz, tenCacTrang, theLinhVuc, toTomTat, trangNgoNhan } from './thanh-phan.mjs';
 
 /** Aside của Starlight: không đụng tới. */
 const ASIDE_STARLIGHT = new Set(['note', 'tip', 'caution', 'danger']);
@@ -82,6 +82,27 @@ const KHOI = {
 		});
 		const ten = nhan?.length ? nhan : [{ type: 'text', value: 'Hồ sơ nghiên cứu' }];
 		return khoi('aside', { class: 'pz-ho-so', 'aria-label': ten.map(chu).join('') }, [khoi('p', { class: 'pz-ho-so__ten' }, ten), khoi('dl', {}, dong)]);
+	},
+	// lối vào các mục chính ở trang chủ (kế hoạch nâng cấp T4): danh sách "- [Tên mục](/psyche/<mục>/): một câu";
+	// số bài của mỗi mục đếm lúc build
+	'loi-vao': ({ nhan, con, ds, nn }, loi) => {
+		const [dsMuc] = con;
+		const mau = '"- [Bài khám phá](/psyche/kham-pha/): một câu"';
+		if (nhan?.length || con.length !== 1 || dsMuc.type !== 'list') throw loi(`:::loi-vao chỉ chứa một danh sách, mỗi dòng ${mau}`);
+		const muc = dsMuc.children.map((m) => {
+			const [p, ...thua] = m.children ?? [];
+			const [lk, ...sau] = p?.children ?? [];
+			const nhom = /^\/psyche\/([a-z-]+)\/$/.exec(lk?.url ?? '')?.[1];
+			const mo = chu({ children: sau }).replace(/^[\s:]+/, '').trim();
+			if (p?.type !== 'paragraph' || thua.length || lk.type !== 'link' || !nhom || !mo || sau.some((n) => n.type !== 'text'))
+				throw loi(`:::loi-vao: dòng "${chu(m).trim().slice(0, 40)}" phải là ${mau}`);
+			return { nhom, ten: chu(lk), mo };
+		});
+		try {
+			return { type: 'html', value: loiVao(muc, ds(), () => { const d = nn(); return d.ngoNhan.filter((t) => d.coThe(t.id)).length; }) };
+		} catch (e) {
+			throw loi(e.message);
+		}
 	},
 	'o-viet-nam': ({ nhan, con }) =>
 		khoi('aside', { class: 'pz-vn', 'aria-label': 'Ở Việt Nam' }, [
@@ -202,7 +223,7 @@ export function psycheMarkdown({ docsDir, khoa = docKhoa }) {
 				if (!dung)
 					throw loi(`không có khối :::${node.name} (có: ${[...Object.keys(KHOI), ...ASIDE_STARLIGHT].map((t) => ':::' + t).join(', ')})`);
 				if (Object.keys(node.attributes ?? {}).length) throw loi(`:::${node.name} không nhận thuộc tính`);
-				return dung({ ...tachNhan(node), trang }, loi);
+				return dung({ ...tachNhan(node), trang, ds: () => duLieuDanhSach(docsDir), nn: () => duLieuThe(docsDir, khoa) }, loi);
 			},
 			textDirective(node) {
 				// chỉ :nhan[…]; chữ khác dạng ":x" (giờ, tỉ lệ) để Starlight trả lại nguyên chữ

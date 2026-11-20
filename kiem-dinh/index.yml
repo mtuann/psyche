@@ -39,6 +39,15 @@ lan:
       luot_2: "không cần: chỉ đổi câu về chính site (ve-site), không có nhận định cần nguồn ngoài"
       review: "Claude Opus 5.5 (người gộp, 17/11/2026): kiểm trên bản build, npm test; 106/106 trang cũ cùng đường dẫn theo plans/lam-lai/doi-chieu.md"
       kiem_mau: "chủ repo duyệt bỏ lời 'đang làm lại' ở 404 và trang chủ khi đợt 9 xong (17/11/2026)"
+  - so: 5
+    ngay: null
+    nhanh: moi/nc0-trang-chu
+    ma_bam: null
+    nguoi:
+      luot_1: "Claude Opus 5.5 (phiên chính, moi/nc0-trang-chu, kế hoạch nâng cấp T4, 20/11/2026): thêm khối :::loi-vao (n10, n5) và câu dẫn Sách in (n11); không đổi chữ nào khác"
+      luot_2: "không cần: chỉ thêm câu về chính site (ve-site), kiểm bằng review"
+      review: null
+      kiem_mau: null
 nguon: []
 nhan_dinh:
   - id: n1
@@ -66,11 +75,11 @@ nhan_dinh:
     ghi_chu: 'Lần 4 (mo/xong-lam-lai, 17/11/2026): bỏ cả hộp "Đang làm lại": đợt 9 xong, 106/106 trang cũ đã lên và khóa (plans/lam-lai/doi-chieu.md); chủ repo duyệt bỏ 17/11/2026. Lần 3 (mo/bo-link-site-cu, 17/11/2026): bỏ vế "bản cũ vẫn đọc được ở mtuann.github.io/psyche-zero": repo cũ đã chuyển riêng tư, site cũ trả 404 (kiểm 17/11/2026); chủ repo chọn bỏ link. Vế còn lại đúng (plans/lam-lai/README.md: đợt 9 chưa xong). plans/lam-lai/README.md (Quyết định: site cũ chạy nguyên trong lúc làm lại; luật 1: chỉ trang đã khóa lên). Câu hết đúng khi đợt cuối chuyển hết trang: đổi lúc đó. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. plans/lam-lai/README.md (site cũ chạy nguyên; chỉ trang đã khóa lên). Link mtuann.github.io/psyche-zero/ đúng. Câu phải đổi khi chuyển xong.'
     review: dung
   - id: n5
-    cau: 'Ba khối của trang chủ (Thử với chính bạn, Mới kiểm chứng, Theo lĩnh vực) sinh từ dữ liệu: công cụ có trong bản build, sáu bài mới khóa gần nhất, 14 thẻ lĩnh vực.'
+    cau: 'Bốn khối của trang chủ (Đi theo cách của bạn, Thử với chính bạn, Mới kiểm chứng, Theo lĩnh vực) sinh từ dữ liệu: số bài của năm mục chính, công cụ có trong bản build, sáu bài mới khóa gần nhất, 14 thẻ lĩnh vực.'
     loai: ve-site
-    ket_qua: dung
-    ghi_chu: 'src/plugins/thanh-phan.mjs: ::cong-cu-noi-bat (trang công cụ có trong bản build), ::bai-moi{so="6"} (bài mới khóa gần nhất theo ngày kiểm định cuối), ::the-linh-vuc (14 thẻ theo thu_tu). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. src/plugins/thanh-phan.mjs: congCuNoiBat (tầng cong-cu có trong bản build), baiMoi (so=6, lõi và mở rộng, xếp theo ngày lần kiểm định cuối), theLinhVuc (14 thẻ theo thu_tu). Bản xem 30/10/2026: ba khối dựng đúng.'
-    review: dung
+    ket_qua: da-sua
+    ghi_chu: 'src/plugins/thanh-phan.mjs: ::cong-cu-noi-bat (trang công cụ có trong bản build), ::bai-moi{so="6"} (bài mới khóa gần nhất theo ngày kiểm định cuối), ::the-linh-vuc (14 thẻ theo thu_tu). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. src/plugins/thanh-phan.mjs: congCuNoiBat (tầng cong-cu có trong bản build), baiMoi (so=6, lõi và mở rộng, xếp theo ngày lần kiểm định cuối), theLinhVuc (14 thẻ theo thu_tu). Bản xem 30/10/2026: ba khối dựng đúng. Lần 6 (moi/nc0-trang-chu, kế hoạch nâng cấp T4, 20/11/2026): thêm khối :::loi-vao (src/plugins/thanh-phan.mjs, loiVao): số bài đếm lúc build, chỉ trang có trong bản build (bài khám phá, thí nghiệm, bài bằng chứng theo laBai; công cụ tầng cong-cu; thẻ ngộ nhận có trong bản build). Bản xem 20/11/2026: 51 bài, 15 thí nghiệm, 12 bài, 60 ngộ nhận, 11 công cụ.'
+    review: null
   - id: n6
     cau: 'Hồ sơ trước, chữ sau: mỗi khẳng định được đối chiếu với nghiên cứu gốc hay tổng hợp đáng tin, ghi nguồn và câu trích.'
     loai: ve-site
@@ -95,6 +104,16 @@ nhan_dinh:
     ket_qua: dung
     ghi_chu: "Cả hai đích đều là trang trong src/content/docs/bat-dau/ có trong src/data/trang.yml. Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. Hai nút và link trong src/content/docs/index.md trỏ /psyche/bat-dau/ và /psyche/bat-dau/cach-kiem-chung/; cả hai trang có trong bản build; npm test (link.test) đạt 30/10/2026."
     review: dung
+  - id: n10
+    cau: 'Khối «Đi theo cách của bạn»: năm thẻ, mỗi thẻ một mục và một câu: Bài khám phá («Mỗi bài là một câu hỏi về con người, kèm bằng chứng và mức độ chắc chắn.»); Thí nghiệm kinh điển («Các thí nghiệm nổi tiếng đọc lại từ đầu: thiết kế, kết quả, lần làm lại và tranh luận.»); Hiểu bằng chứng («Cách đọc một tin tức hay một nghiên cứu tâm lý học: tương quan và nhân quả, nhóm đối chứng, độ lớn hiệu ứng.»); Ngộ nhận («Những niềm tin phổ biến về tâm trí, kèm nhãn mức độ chắc chắn và nguồn.»); Tự trải nghiệm («Tự làm các thí nghiệm kinh điển trong trình duyệt, rồi so với kết quả nghiên cứu gốc.»).'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Kế hoạch nâng cấp T4 (20/11/2026). Mỗi câu theo description của trang mục lục tương ứng (đã khóa): kham-pha/index «Các chủ đề tâm lý học, mỗi bài là một câu hỏi về con người, kèm bằng chứng và mức độ chắc chắn.»; thi-nghiem/index «… mỗi thí nghiệm là một hướng dẫn đọc: thiết kế, kết quả, lần làm lại và tranh luận.» (trang mục lục: mỗi thí nghiệm được kiểm chứng lại từ đầu); bang-chung/index «Cách đọc một tin tức hay một nghiên cứu tâm lý học — tương quan và nhân quả, nhóm đối chứng, độ lớn hiệu ứng.»; ngo-nhan/index «Những niềm tin phổ biến về tâm trí, kèm nhãn mức độ chắc chắn, giải thích ngắn và nguồn.»; trai-nghiem/index «Các thí nghiệm tâm lý học kinh điển bạn có thể tự làm trong trình duyệt, so với kết quả nghiên cứu gốc.». Tên thẻ theo title của trang mục lục, trừ «Bài khám phá» (title «Khám phá»).'
+  - id: n11
+    cau: 'Muốn đọc liền một mạch hay in ra? Sách in gộp mọi bài đã kiểm chứng thành một trang.'
+    loai: ve-site
+    ket_qua: dung
+    ghi_chu: 'Kế hoạch nâng cấp T4 (20/11/2026). sach/index (đã khóa): description «Mọi bài đã kiểm chứng của Psyche gộp thành một trang, in ra hay lưu thành PDF để đọc không cần mạng.»; chữ trang «gộp mọi bài khám phá, thí nghiệm kinh điển và hiểu bằng chứng đã lên site».'
 ghi_chu: 'Trang chủ tạm (D1.1, bố cục C ở D1.3), viết mới, không chuyển từ trang chủ cũ. Chỉ có câu về chính site: site đang làm lại, bản cũ ở /psyche-zero/, ba bước lên site; đã đối chiếu với plans/lam-lai/README.md (Quyết định, Bảy luật). D2-L1 thay bằng trang chủ thật. Lần 2 (D2-L1): chữ ở hero và dải "Cách Psyche kiểm chứng" là câu về chính site, đã đối chiếu như ghi ở từng nhận định; không có câu cần nguồn ngoài.'
 mo_khoa:
   - ngay: 2026-10-30
@@ -106,6 +125,9 @@ mo_khoa:
   - ngay: 2026-11-17
     nhanh: mo/xong-lam-lai
     ly_do: "Đợt 9 xong: bỏ hộp 'Đang làm lại' (chủ repo duyệt 17/11/2026)"
+  - ngay: 2026-11-20
+    nhanh: moi/nc0-trang-chu
+    ly_do: "Lỗi phát hiện khi kiểm toán (kế hoạch nâng cấp T4, 17/11/2026): trang chủ là lối vào cụt, không link tới Khám phá, Thí nghiệm, Hiểu bằng chứng, Ngộ nhận, Tự trải nghiệm, Sách in; thêm khối lối vào sinh từ dữ liệu (:::loi-vao) và link Sách in"
 doi_chu:
   - cu: 'tagline: "...mức độ chắc chắn của từng kết luận."'
     moi: '"...của các kết luận chính."'

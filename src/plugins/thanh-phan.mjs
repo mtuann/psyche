@@ -267,6 +267,7 @@ function mucBai(trang, docsDir, base, { moTa = true } = {}) {
 }
 
 /** Bài (lõi, mở rộng) là bài khám phá, thí nghiệm hay phương pháp; trang mục lục, Bắt đầu (như Cách đọc nhãn), Hỗ trợ không tính (review D2-L1). */
+const thoat = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const laBai = (r) => /^(kham-pha|thi-nghiem|bang-chung)\//.test(r.id) && !r.id.endsWith('/index') && (r.tang === 'loi' || r.tang === 'mo-rong');
 const baiKhamPha = (r, linhVuc) => r.linh_vuc === linhVuc && laBai(r);
 
@@ -331,6 +332,30 @@ export function baiMoi({ so = '6' }, { banGhi, trangCo, docsDir, base, ngayKhoa 
 		.slice(0, n);
 	if (!ds.length) return `<p class="pz-ds-bai__con not-content">Bài đầu tiên lên site sau khi được kiểm chứng lại từ đầu.</p>`;
 	return `<div class="pz-ds-bai not-content"><ul>${ds.map((r) => mucBai(r.id, docsDir, base)).join('')}</ul></div>`;
+}
+
+/**
+ * :::loi-vao (trang chủ, kế hoạch nâng cấp T4): thẻ lối vào các mục chính. Chữ của thẻ (tên, một câu) viết ở trang; số
+ * bài đếm lúc build, chỉ trang có trong bản build (bản thật: đã khóa) và thẻ ngộ nhận có trong bản build.
+ * @param {{ nhom: string, ten: string, mo: string }[]} muc nhom: thư mục của mục (kham-pha, thi-nghiem…)
+ */
+export const LOI_VAO = {
+	'kham-pha': { bieuTuong: 'nen-tang', donVi: 'bài', dem: (r) => r.id.startsWith('kham-pha/') && laBai(r) },
+	'thi-nghiem': { bieuTuong: 'thi-nghiem', donVi: 'thí nghiệm', dem: (r) => r.id.startsWith('thi-nghiem/') && laBai(r) },
+	'bang-chung': { bieuTuong: 'bang-chung', donVi: 'bài', dem: (r) => r.id.startsWith('bang-chung/') && laBai(r) },
+	'ngo-nhan': { bieuTuong: 'ngo-nhan', donVi: 'ngộ nhận' },
+	'trai-nghiem': { bieuTuong: 'trai-nghiem', donVi: 'công cụ', dem: (r) => r.tang === 'cong-cu' && r.id.startsWith('trai-nghiem/') && !r.id.endsWith('/index') },
+};
+export function loiVao(muc, { banGhi, trangCo, base, svg }, soNgoNhan) {
+	const co = new Set(trangCo);
+	const the = muc.map(({ nhom, ten, mo }) => {
+		const lv = LOI_VAO[nhom];
+		if (!lv) throw new Error(`:::loi-vao: không có mục /psyche/${nhom}/ (có: ${Object.keys(LOI_VAO).join(', ')})`);
+		const so = nhom === 'ngo-nhan' ? soNgoNhan() : banGhi.filter((r) => co.has(r.id) && lv.dem(r)).length;
+		const noi = `${svg(lv.bieuTuong)}<span class="pz-loi-vao__ten">${thoat(ten)}</span><span class="pz-loi-vao__so">${so} ${lv.donVi}</span><span class="pz-loi-vao__mo">${thoat(mo)}</span>`;
+		return co.has(`${nhom}/index`) ? `<li><a href="${base}${nhom}/">${noi}</a></li>` : `<li><span class="pz-loi-vao__chua">${noi}</span></li>`;
+	});
+	return `<ul class="pz-loi-vao not-content" role="list">${the.join('')}</ul>`;
 }
 
 export function congCuNoiBat({ banGhi, trangCo, docsDir, base }) {

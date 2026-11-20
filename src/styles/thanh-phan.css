@@ -1116,6 +1116,61 @@
 	justify-self: start;
 }
 
+/* ---------- Lối vào các mục chính ở trang chủ (:::loi-vao, kế hoạch nâng cấp T4) ---------- */
+.pz-loi-vao {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	gap: 0.75rem;
+	margin: 1rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+.sl-markdown-content .pz-loi-vao li {
+	max-width: none;
+	margin: 0;
+}
+.pz-loi-vao :is(a, .pz-loi-vao__chua) {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 0.2rem 0.75rem;
+	height: 100%;
+	min-height: 44px;
+	padding: 0.9rem 1rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 0.75rem;
+	background: var(--pz-card);
+	color: var(--sl-color-gray-2);
+	text-decoration: none;
+}
+.pz-loi-vao a:hover {
+	border-color: var(--sl-color-text-accent);
+	box-shadow: inset 0 0 0 1px var(--sl-color-text-accent);
+}
+.pz-loi-vao .pz-icon {
+	grid-row: span 2;
+	width: 1.6rem;
+	height: 1.6rem;
+	color: var(--pz-accent);
+}
+.pz-loi-vao__ten {
+	color: var(--sl-color-text-accent);
+	font-weight: 700;
+	line-height: 1.3;
+}
+.pz-loi-vao__so {
+	grid-column: 2;
+	color: var(--pz-accent);
+	font-size: var(--sl-text-xs);
+	font-weight: 600;
+}
+.pz-loi-vao__mo {
+	grid-column: 1 / -1;
+	margin-top: 0.25rem;
+	font-size: var(--sl-text-sm);
+	line-height: 1.5;
+}
+
 /* ---------- Trang Hỗ trợ: hộp khẩn cấp, số điện thoại ---------- */
 .sl-markdown-content .pz-urgent {
 	margin-block: 1rem 1.5rem;
