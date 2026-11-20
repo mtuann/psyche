@@ -205,7 +205,7 @@ Việc chưa làm được hay chờ chủ repo, không chặn đợt sau; xong 
 - **7 đính chính máy canh báo mà agent không mở được** (Sage, APA PsycNet chặn yêu cầu tự động; `bao-cao/sua-may-canh.md`): cần người mở bằng trình duyệt rồi ghi vào `tools/may-canh-da-xet.yml`. Gấp nhất **Macnamara 2014** (đính chính 2018: sai công thức điều chỉnh; các % ở thẻ `muoi-nghin-gio` có thể đã đổi). Còn: Barrett 2019, Gardner 2005, Flynn 1987, Burton 2001, Kowalski 2014, Schachter 1962. Funder 2019, Adesope 2017 chỉ đọc được câu đầu.
 - **Từ bảng đối chiếu** (`doi-chieu.md` mục C): nút "In bài này" của site cũ (77 bài) chưa có, chờ chủ repo quyết; 32 id tiêu đề cũ ở 16 trang đã mất, thêm `{ #id-cu }` khi mở khóa các trang ấy lần sau.
 - **Khóa cho bổ sung có ngày** (`src/content/bo-sung/`): chưa có, nên bổ sung chỉ hiện ở bản xem. Làm trước khi bắt đầu thêm bổ sung (`../ben-vung/them-noi-dung.md`).
-- **Phép thử "dùng khi mất mạng" trên Firefox** (`tests/trinh-duyet/kiem-ngoai-tuyen.mjs`) thỉnh thoảng hỏng ("error loading dynamically imported module", 17/11/2026, chạy lại thì đạt): xem lại nếu lặp.
+- ~~Phép thử "dùng khi mất mạng" trên Firefox thỉnh thoảng hỏng~~: đã sửa (20/11/2026, `../nang-cap/bao-cao/s4.md`): phép thử chuyển trang khi ô tìm kiếm còn đang nạp.
 - **Chưa mở được toàn văn:** Messerli 2012 (NEJM), Button 2013, Gignac & Szodorai 2016, Funder & Ozer 2019, Camerer 2018, Marshall & Zimbardo 1979, Maslach 1979: số liệu qua nguồn dẫn lại, ghi ở hồ sơ.
 
 ## Rủi ro

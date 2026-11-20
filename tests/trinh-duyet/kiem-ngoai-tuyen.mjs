@@ -7,7 +7,7 @@ import { after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { DIST, TRINH_DUYET, dongMayChu, goc } from './chung.mjs';
+import { DIST, TRANG, TRINH_DUYET, dongMayChu, goc } from './chung.mjs';
 
 after(dongMayChu);
 
@@ -16,6 +16,11 @@ const phienBan = /const PHIEN_BAN = '([0-9a-f]+)';/.exec(fs.readFileSync(path.jo
 // trang đã mở để lưu, trang chưa mở: lấy trang có trong bản build
 const DA_MO = ['thi-nghiem/asch', 'bat-dau', 'them/gioi-thieu'].find(co);
 const CHUA_MO = ['bang-chung', 'kham-pha', 'thi-nghiem'].find((t) => co(t) && t !== DA_MO);
+
+// Mỗi trang nạp ô tìm kiếm (module ui-core của Pagefind) lúc trình duyệt rảnh, sau DOMContentLoaded. Chuyển trang khi module
+// còn đang nạp thì Firefox báo lỗi "error loading dynamically imported module" (lỗi của phép thử, không phải của trang;
+// nguồn của lần hỏng thỉnh thoảng ngày 17/11/2026, nc0 S4). Nên trước khi rời một trang có mạng, chờ ô tìm kiếm dựng xong.
+const choTimKiem = (p) => p.waitForFunction(() => !!document.querySelector('#starlight__search .pagefind-ui'), null, { timeout: 20000 });
 
 async function kiemMatMang(ctx, p, g, tieuDe) {
 	await ctx.setOffline(true);
@@ -48,6 +53,7 @@ for (const [ten, loai] of Object.entries(TRINH_DUYET)) {
 			const g = await goc();
 			await p.goto(g, { waitUntil: 'load' });
 			await p.waitForFunction(() => !!navigator.serviceWorker?.controller, null, { timeout: 20000 });
+			await choTimKiem(p);
 			assert.deepEqual(
 				await p.evaluate(async () => (await caches.keys()).filter((k) => k.startsWith('psyche-moi-'))),
 				[`psyche-moi-${phienBan}`],
@@ -55,6 +61,7 @@ for (const [ten, loai] of Object.entries(TRINH_DUYET)) {
 			);
 			await p.goto(g + DA_MO + '/', { waitUntil: 'load' });
 			const tieuDe = await p.title();
+			await choTimKiem(p);
 			if (co('ho-tro'))
 				await p.waitForFunction(async () => !!(await caches.match(location.origin + '/psyche/ho-tro/')), null, { timeout: 10000 });
 
@@ -70,6 +77,46 @@ for (const [ten, loai] of Object.entries(TRINH_DUYET)) {
 				null,
 				{ timeout: 20000, polling: 250 },
 			);
+			assert.deepEqual(loi, [], 'lỗi trên trang');
+		} finally {
+			await ctx.close();
+			await trinhDuyet.close();
+		}
+	});
+}
+
+const NHIEU_TRANG = [...new Set([...TRANG, 'thi-nghiem/asch/', 'kham-pha/', 'thi-nghiem/', 'ngo-nhan/', 'trai-nghiem/', 'bang-chung/'])]
+	.filter((t) => t && !t.endsWith('.html') && t !== 'ho-tro/' && co(t))
+	.slice(0, 10);
+
+// nc0 S4: trong phiên kiểm toán 17/11/2026 có một lần tải /ho-tro/ quá 30 giây khi service worker bật (chưa tái hiện). Mở
+// liền các trang mẫu (service worker điều khiển, lưu dần vào bộ nhớ đệm), rồi mở trang Hỗ trợ: phải tải xong dưới 10 giây,
+// cả lần đầu và lần sau (lần sau đi qua bản lưu sẵn lúc cài).
+for (const [ten, loai] of Object.entries(TRINH_DUYET)) {
+	test(`trang Hỗ trợ mở nhanh sau nhiều trang, có service worker, ${ten}`, { skip: (!phienBan && 'sw.js tự gỡ (PSYCHE_NGOAI_TUYEN=tat)') || (!co('ho-tro') && 'không có trang Hỗ trợ') }, async () => {
+		const trinhDuyet = await loai.launch();
+		const ctx = await trinhDuyet.newContext();
+		try {
+			const p = await ctx.newPage();
+			const loi = [];
+			p.on('pageerror', (e) => loi.push(String(e)));
+			const g = await goc();
+			await p.goto(g, { waitUntil: 'load' });
+			await p.waitForFunction(() => !!navigator.serviceWorker?.controller, null, { timeout: 20000 });
+			await choTimKiem(p);
+			for (const t of NHIEU_TRANG) {
+				await p.goto(g + t, { waitUntil: 'load' });
+				await choTimKiem(p);
+			}
+			for (const lan of ['lần đầu', 'lần sau']) {
+				const bd = Date.now();
+				await p.goto(g + 'ho-tro/', { waitUntil: 'load', timeout: 30000 });
+				const ms = Date.now() - bd;
+				assert.match(await p.title(), /Hỗ trợ/);
+				assert.ok(ms < 10000, `trang Hỗ trợ (${lan}) tải mất ${ms} ms`);
+				assert.ok(await p.evaluate(() => !!navigator.serviceWorker.controller), 'service worker điều khiển trang Hỗ trợ');
+				await choTimKiem(p);
+			}
 			assert.deepEqual(loi, [], 'lỗi trên trang');
 		} finally {
 			await ctx.close();
