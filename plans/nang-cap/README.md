@@ -607,6 +607,15 @@ Tối đa 2–3 agent nặng cùng lúc; ghi model đã dùng vào báo cáo.
    Đề xuất: bật cả hai.
 6. **Nhịp:** bao nhiêu phiên mỗi tuần. Đề xuất: bắt đầu NC0 ngay sau khi duyệt; N1 và M1 song song sau NC1; dừng xem số đo sau N1a.
 
+**Chủ repo quyết (20/11/2026), theo đề xuất của phiên chính:**
+- Ý 1–3: duyệt (bắt đầu NC0 cùng ngày; NC0 xong 20/11/2026).
+- Ý 4: hạn tìm chuyên gia **hết 2/2027**; tới hạn chưa có người thì chủ repo quyết tiếp.
+- Ý 5: bật link "Báo lỗi trang này" (T12, NC1). Bật Google Search Console bằng thẻ meta xác minh; chủ repo tự xác minh bằng tài khoản của mình, phiên làm việc chỉ thêm thẻ khi có mã.
+- Ý 6: **3–4 phiên mỗi tuần**, tối đa 2–3 agent nặng cùng lúc. Kiểm mẫu của chủ repo gom theo mốc (sau phần khóa và hình, sau phần trình bày, sau trang mới), không hỏi lẻ từng phần.
+- T4: **chưa làm nút menu** ở trang chủ (đổi mẫu `splash` sang `doc` nhiều rủi ro, ít lợi; năm thẻ lối vào đã lấp lối vào cụt). Xem lại khi có số liệu Search Console.
+- S5, việc tùy chọn: làm cả ba trong một lô sửa nhỏ (`mo/sktt-sua-nho`): giữ số 42%/19% (Cuijpers 2023) ở mục kể nghiên cứu, bỏ ở chỗ lặp; sửa câu hỏi 2 của `tram-cam`, câu hỏi 3 của `lo-au`; thêm "hay sớm hơn nếu thấy quá sức" ở mục tìm giúp đỡ của `tram-cam`.
+- Thứ tự tiếp: lô sửa nhỏ S5, rồi NC1 theo mục 5. 7 thông báo đính chính chủ repo tự mở bằng trình duyệt; phiên làm việc soạn danh sách link và câu cần đối chiếu.
+
 ## 8. Rủi ro và cách giữ
 
 | Rủi ro | Cách giữ |
