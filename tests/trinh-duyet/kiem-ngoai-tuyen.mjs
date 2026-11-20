@@ -7,7 +7,7 @@ import { after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { DIST, TRANG, TRINH_DUYET, dongMayChu, goc } from './chung.mjs';
+import { DIST, TRANG, TRINH_DUYET, choTimKiem, dongMayChu, goc } from './chung.mjs';
 
 after(dongMayChu);
 
@@ -17,10 +17,6 @@ const phienBan = /const PHIEN_BAN = '([0-9a-f]+)';/.exec(fs.readFileSync(path.jo
 const DA_MO = ['thi-nghiem/asch', 'bat-dau', 'them/gioi-thieu'].find(co);
 const CHUA_MO = ['bang-chung', 'kham-pha', 'thi-nghiem'].find((t) => co(t) && t !== DA_MO);
 
-// Mỗi trang nạp ô tìm kiếm (module ui-core của Pagefind) lúc trình duyệt rảnh, sau DOMContentLoaded. Chuyển trang khi module
-// còn đang nạp thì Firefox báo lỗi "error loading dynamically imported module" (lỗi của phép thử, không phải của trang;
-// nguồn của lần hỏng thỉnh thoảng ngày 17/11/2026, nc0 S4). Nên trước khi rời một trang có mạng, chờ ô tìm kiếm dựng xong.
-const choTimKiem = (p) => p.waitForFunction(() => !!document.querySelector('#starlight__search .pagefind-ui'), null, { timeout: 20000 });
 
 async function kiemMatMang(ctx, p, g, tieuDe) {
 	await ctx.setOffline(true);

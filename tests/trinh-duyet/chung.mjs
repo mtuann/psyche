@@ -54,6 +54,14 @@ export async function goc() {
 export const dongMayChu = () => mayChu?.dong();
 
 /**
+ * Chờ ô tìm kiếm dựng xong. Mỗi trang nạp module ui-core của Pagefind lúc trình duyệt rảnh, sau DOMContentLoaded; rời
+ * trang hay nạp lại khi module còn đang nạp thì Firefox, WebKit báo lỗi "error loading dynamically imported module" /
+ * "Importing a module script failed" (lỗi của phép thử, không phải của trang). Gọi trước khi chuyển hay nạp lại trang có
+ * mạng mà phép thử thu `pageerror` (kế hoạch nâng cấp S4).
+ */
+export const choTimKiem = (p) => p.waitForFunction(() => !!document.querySelector('#starlight__search .pagefind-ui'), null, { timeout: 20000 });
+
+/**
  * Chạy trong trang: các khối cần JavaScript chưa dựng xong. `ten`: trả tên các khối ấy; không thì cuộn tới khối đầu tiên
  * còn chờ, và trả true khi không còn khối nào chờ. Lô làm ra thành phần mới thêm điều kiện "đã dựng xong" của nó vào
  * đây, như repo opus.

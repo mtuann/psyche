@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
-import { DIST, TRINH_DUYET, dongMayChu, goc, nguCanh } from './chung.mjs';
+import { DIST, TRINH_DUYET, choTimKiem, dongMayChu, goc, nguCanh } from './chung.mjs';
 
 after(dongMayChu);
 const AXE = createRequire(import.meta.url).resolve('axe-core/axe.min.js');
@@ -247,6 +247,7 @@ const LUONG = {
 				};
 				localStorage.setItem('psyche-zero', JSON.stringify({ v: 1, records, prefs: {} }));
 			});
+			await choTimKiem(p);
 			await p.reload({ waitUntil: 'load' });
 			await toiKhi(p, () => document.querySelector('.pz-nhat-ky')?.dataset.san === '1', null, { ten: 'nhật ký dựng lại' });
 			const ngay = await el.locator('h2').allTextContents();
