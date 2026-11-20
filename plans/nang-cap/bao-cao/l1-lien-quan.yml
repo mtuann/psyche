@@ -1,0 +1,773 @@
+# L1 (kế hoạch nâng cấp, 20/11/2026): câu ve-site cho trường lien_quan (khối «Đọc tiếp»), chờ review và kiểm mẫu.
+# Review ve-site (Claude Sonnet 5.5, agent riêng): 179 cặp, 166 dat, 12 yeu, 1 sai; đã bỏ 11 cặp, thay 2 (lq-review.yml ở báo cáo l1-du-lieu.md).
+# Đề xuất của ba agent Sonnet 5.5 (lô A: thí nghiệm, bằng chứng; lô B: nhận thức, sinh học; lô C: xã hội, phát triển, cảm xúc, sức khỏe).
+# Bản ghi đang khóa #linh_vuc,moi,tang (hồ sơ mục đã khóa không được có lần dở), nên câu nằm ở đây. Đạt thì thêm câu và lần mới vào
+# kiem-dinh/du-lieu/trang/<id>.yml rồi node tools/khoa.mjs khoa <khoa_moi> (bài mở rộng: khóa cùng dua_tren, bao-cao/k1-dua-tren.yml).
+- ban_ghi: trang/thi-nghiem/milgram
+  khoa_moi: du-lieu/trang/thi-nghiem/milgram#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/milgram («Người ta vâng lời đến mức nào? (Thí nghiệm Milgram)») hiện 2 trang liên quan: thi-nghiem/zimbardo («Nhà tù giả thành tù thật? (Thí nghiệm Zimbardo)»); bang-chung/dao-duc-nghien-cuu («Ai bảo vệ người tham gia nghiên cứu?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/zimbardo: một nghiên cứu kinh điển khác về vai trò, quyền lực và hành vi trong tình huống
+    bang-chung/dao-duc-nghien-cuu: thí nghiệm này là ca điển hình dẫn tới các nguyên tắc đạo đức nghiên cứu
+  review: dung
+- ban_ghi: trang/thi-nghiem/asch
+  khoa_moi: du-lieu/trang/thi-nghiem/asch#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/asch («Khi cả phòng đều nói sai, bạn có dám nói đúng? (Thí nghiệm Asch)») hiện 3 trang liên quan: kham-pha/tam-ly-xa-hoi/phu-hop-so-dong («Vì sao ta làm theo số đông?»); thi-nghiem/milgram («Người ta vâng lời đến mức nào? (Thí nghiệm Milgram)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/phu-hop-so-dong: bài khám phá về chuyện hùa theo đám đông, dùng thí nghiệm này
+    thi-nghiem/milgram: một thí nghiệm kinh điển khác về việc làm theo người khác
+    bang-chung/phan-tich-tong-hop: trang nhắc phân tích tổng hợp xuyên văn hóa về tỉ lệ hùa theo; bài này giải thích cách đọc
+  review: dung
+- ban_ghi: trang/thi-nghiem/darley-latane
+  khoa_moi: du-lieu/trang/thi-nghiem/darley-latane#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/darley-latane («Vì sao đám đông không ai cứu? (Hiệu ứng người ngoài cuộc)») hiện 3 trang liên quan: kham-pha/tam-ly-xa-hoi/phu-hop-so-dong («Vì sao ta làm theo số đông?»); thi-nghiem/asch («Khi cả phòng đều nói sai, bạn có dám nói đúng? (Thí nghiệm Asch)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/phu-hop-so-dong: cùng mảng ảnh hưởng của đám đông lên hành vi từng người
+    thi-nghiem/asch: nghiên cứu kinh điển khác về sức ép của nhóm
+    bang-chung/phan-tich-tong-hop: trang dựa vào phân tích tổng hợp của Fischer và cộng sự; bài này giải thích cách đọc
+  review: dung
+- ban_ghi: trang/thi-nghiem/keo-deo
+  khoa_moi: du-lieu/trang/thi-nghiem/keo-deo#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của thi-nghiem/keo-deo («Viên kẹo dẻo có đoán được tương lai? (Thí nghiệm "kẹo dẻo")») hiện 2 trang liên quan: kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc («Nén cảm xúc có tốt?»); bang-chung/khung-hoang-tai-lap («Vì sao nhiều phát hiện nổi tiếng không lặp lại được?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc: kiềm chế và điều chỉnh bản thân là chủ đề gần với chờ đợi phần thưởng
+    bang-chung/khung-hoang-tai-lap: trang nói rõ lần làm lại cho kết quả yếu hơn mẫu gốc
+  review: dung
+- ban_ghi: trang/thi-nghiem/khi-dot-vo-hinh
+  khoa_moi: du-lieu/trang/thi-nghiem/khi-dot-vo-hinh#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/khi-dot-vo-hinh («Con khỉ đột đi giữa sân mà không ai thấy (Mù không chú ý)») hiện 2 trang liên quan: kham-pha/chu-y-tri-giac/nhin-ma-khong-thay («Nhìn mà không thấy»); trai-nghiem/mu-thay-doi («Nhìn mà không thấy: bạn tìm ra ô đổi màu trong bao lâu?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/chu-y-tri-giac/nhin-ma-khong-thay: bài khám phá về mù không chú ý, hiện tượng của thí nghiệm này
+    trai-nghiem/mu-thay-doi: trang nhắc mù thay đổi; tự thử một hiện tượng họ hàng
+  review: dung
+- ban_ghi: trang/thi-nghiem/pavlov
+  khoa_moi: du-lieu/trang/thi-nghiem/pavlov#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/pavlov («Chuông reo thì chó chảy nước miếng? (Thí nghiệm Pavlov)») hiện 3 trang liên quan: kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc («Thưởng có làm mất hứng thú?»); thi-nghiem/skinner («Thưởng phạt nặn hành vi thế nào? (Hộp Skinner)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc: học qua phần thưởng và động lực, mảng gần với điều kiện hóa
+    thi-nghiem/skinner: trang đã nêu ranh giới với điều kiện hóa thao tác; xem tiếp phần ấy
+    bang-chung/phan-tich-tong-hop: trang dựa vào phân tích tổng hợp về điều kiện hóa ở người
+  review: dung
+- ban_ghi: trang/thi-nghiem/skinner
+  khoa_moi: du-lieu/trang/thi-nghiem/skinner#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/skinner («Thưởng phạt nặn hành vi thế nào? (Hộp Skinner)») hiện 2 trang liên quan: kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc («Thưởng có làm mất hứng thú?»); thi-nghiem/pavlov («Chuông reo thì chó chảy nước miếng? (Thí nghiệm Pavlov)»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc: lịch trình thưởng và động lực trong đời sống
+    thi-nghiem/pavlov: điều kiện hóa cổ điển, để phân biệt với điều kiện hóa thao tác
+  review: dung
+- ban_ghi: trang/thi-nghiem/harlow
+  khoa_moi: du-lieu/trang/thi-nghiem/harlow#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của thi-nghiem/harlow («Khỉ con cần mẹ vải hay mẹ sắt? (Harlow)») hiện 3 trang liên quan: kham-pha/phat-trien/gan-bo («Bé bám mẹ là tốt hay xấu?»); thi-nghiem/little-albert («Nỗi sợ có thể "dạy" được? (Thí nghiệm Little Albert)»); bang-chung/dao-duc-nghien-cuu («Ai bảo vệ người tham gia nghiên cứu?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/phat-trien/gan-bo: gắn bó mẹ con ở người, nối tiếp từ thí nghiệm trên khỉ
+    thi-nghiem/little-albert: một nghiên cứu cũ khác mà chuẩn đạo đức ngày nay không cho phép
+    bang-chung/dao-duc-nghien-cuu: trang có mục đạo đức theo chuẩn hiện nay; bài này nêu các nguyên tắc ấy
+  review: dung
+- ban_ghi: trang/thi-nghiem/bandura
+  khoa_moi: du-lieu/trang/thi-nghiem/bandura#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/bandura («Thấy người lớn đánh búp bê, trẻ có bắt chước? (Bandura)») hiện 2 trang liên quan: kham-pha/phat-trien/mang-xa-hoi-teen («Mạng xã hội có làm teen trầm cảm?»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/phat-trien/mang-xa-hoi-teen: trẻ và thiếu niên học hành vi từ những gì chúng xem
+    bang-chung/thi-nghiem-doi-chung: thí nghiệm có nhóm đối chứng và phân nhóm ngẫu nhiên; bài này giải thích vì sao quan trọng
+  review: dung
+- ban_ghi: trang/thi-nghiem/little-albert
+  khoa_moi: du-lieu/trang/thi-nghiem/little-albert#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của thi-nghiem/little-albert («Nỗi sợ có thể "dạy" được? (Thí nghiệm Little Albert)») hiện 3 trang liên quan: kham-pha/suc-khoe-tam-than/lo-au («Lo lắng đến mức nào thì thành rối loạn?»); thi-nghiem/pavlov («Chuông reo thì chó chảy nước miếng? (Thí nghiệm Pavlov)»); bang-chung/dao-duc-nghien-cuu («Ai bảo vệ người tham gia nghiên cứu?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/lo-au: nỗi sợ học được và cách hiểu lo âu ngày nay
+    thi-nghiem/pavlov: điều kiện hóa cổ điển, nền của thí nghiệm này
+    bang-chung/dao-duc-nghien-cuu: trang nêu vấn đề đạo đức; bài này giải thích các nguyên tắc hiện nay
+  review: dung
+- ban_ghi: trang/thi-nghiem/zimbardo
+  khoa_moi: du-lieu/trang/thi-nghiem/zimbardo#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/zimbardo («Nhà tù giả thành tù thật? (Thí nghiệm Zimbardo)») hiện 3 trang liên quan: kham-pha/tam-ly-xa-hoi/phu-hop-so-dong («Vì sao ta làm theo số đông?»); thi-nghiem/milgram («Người ta vâng lời đến mức nào? (Thí nghiệm Milgram)»); bang-chung/dao-duc-nghien-cuu («Ai bảo vệ người tham gia nghiên cứu?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/phu-hop-so-dong: sức ép của vai trò và nhóm lên hành vi
+    thi-nghiem/milgram: thí nghiệm kinh điển khác về quyền lực và sự phục tùng
+    bang-chung/dao-duc-nghien-cuu: trang nêu các vấn đề đạo đức của thí nghiệm
+  review: dung
+- ban_ghi: trang/thi-nghiem/schachter-singer
+  khoa_moi: du-lieu/trang/thi-nghiem/schachter-singer#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/schachter-singer («Tim đập nhanh là yêu hay sợ? (Thí nghiệm Schachter & Singer)») hiện 2 trang liên quan: kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban («Cảm xúc có mấy loại cơ bản?»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban: các cách giải thích cảm xúc đến từ đâu
+    bang-chung/thi-nghiem-doi-chung: thiết kế nhiều nhóm có nhóm đối chứng; bài này giải thích cách đọc
+  review: dung
+- ban_ghi: trang/thi-nghiem/pygmalion
+  khoa_moi: du-lieu/trang/thi-nghiem/pygmalion#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/pygmalion («Thầy tin trò giỏi, trò có giỏi hơn? (Hiệu ứng Pygmalion)») hiện 2 trang liên quan: kham-pha/phat-trien/tam-ly-hoc-duong («Bắt nạt và áp lực thi cử?»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/phat-trien/tam-ly-hoc-duong: kỳ vọng của giáo viên và việc học trong lớp
+    bang-chung/thi-nghiem-doi-chung: học sinh được chọn ngẫu nhiên và so với nhóm đối chứng
+  review: dung
+- ban_ghi: trang/thi-nghiem/robbers-cave
+  khoa_moi: du-lieu/trang/thi-nghiem/robbers-cave#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/robbers-cave («Chia trại hè thành hai phe thù nhau? (Thí nghiệm Robbers Cave)») hiện 2 trang liên quan: kham-pha/tam-ly-xa-hoi/dinh-kien («Định kiến hình thành thế nào?»); thi-nghiem/zimbardo («Nhà tù giả thành tù thật? (Thí nghiệm Zimbardo)»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/dinh-kien: thù địch giữa các nhóm và cách giảm định kiến
+    thi-nghiem/zimbardo: nghiên cứu kinh điển khác về hành vi trong nhóm và tình huống
+  review: dung
+- ban_ghi: trang/thi-nghiem/seligman
+  khoa_moi: du-lieu/trang/thi-nghiem/seligman#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của thi-nghiem/seligman («Chó bỏ cuộc sau cú sốc không tránh được? (Thí nghiệm Seligman)») hiện 1 trang liên quan: kham-pha/suc-khoe-tam-than/tram-cam («Buồn thường và trầm cảm khác nhau thế nào?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/tram-cam: bất lực học được từng được dùng để giải thích trầm cảm
+  review: dung
+- ban_ghi: trang/bang-chung/tuong-quan-nhan-qua
+  khoa_moi: du-lieu/trang/bang-chung/tuong-quan-nhan-qua#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của bang-chung/tuong-quan-nhan-qua («Uống cà phê giúp sống lâu hơn?») hiện 3 trang liên quan: kham-pha/hanh-phuc/do-hanh-phuc («Hạnh phúc có đo được không?»); thi-nghiem/keo-deo («Viên kẹo dẻo có đoán được tương lai? (Thí nghiệm "kẹo dẻo")»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/hanh-phuc/do-hanh-phuc: nhiều kết quả về hạnh phúc là tương quan, cần thận trọng khi suy ra nhân quả
+    thi-nghiem/keo-deo: ví dụ điển hình, tương quan trong mẫu gốc nhưng nhân quả bị đặt lại
+    bang-chung/thi-nghiem-doi-chung: cách thí nghiệm giúp tách nhân quả
+  review: dung
+- ban_ghi: trang/bang-chung/thi-nghiem-doi-chung
+  khoa_moi: du-lieu/trang/bang-chung/thi-nghiem-doi-chung#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?») hiện 3 trang liên quan: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly («Trị liệu tâm lý hoạt động thế nào?»); thi-nghiem/pygmalion («Thầy tin trò giỏi, trò có giỏi hơn? (Hiệu ứng Pygmalion)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly: thử nghiệm đối chứng là cách đánh giá trị liệu
+    thi-nghiem/pygmalion: thí nghiệm có chọn ngẫu nhiên và so nhóm
+    bang-chung/phan-tich-tong-hop: bước tiếp theo, gộp nhiều thử nghiệm lại
+  review: dung
+- ban_ghi: trang/bang-chung/do-lon-hieu-ung
+  khoa_moi: du-lieu/trang/bang-chung/do-lon-hieu-ung#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của bang-chung/do-lon-hieu-ung («Hiệu ứng lớn hay nhỏ?») hiện 3 trang liên quan: kham-pha/tri-nho/phong-cach-hoc («Mỗi người có một "phong cách học"?»); thi-nghiem/darley-latane («Vì sao đám đông không ai cứu? (Hiệu ứng người ngoài cuộc)»); bang-chung/p-value («p < 0,05 nghĩa là gì?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/darley-latane: có độ lớn hiệu ứng gộp từ phân tích tổng hợp
+    bang-chung/p-value: ý nghĩa thống kê khác với độ lớn
+    kham-pha/tri-nho/phong-cach-hoc: Bài đọc độ lớn hiệu ứng nhỏ d = 0,04 của phong cách học (Hattie và O’Leary); bài phong cách học kể đủ (theo review)
+  review: dung
+- ban_ghi: trang/bang-chung/mau-va-chon-mau
+  khoa_moi: du-lieu/trang/bang-chung/mau-va-chon-mau#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của bang-chung/mau-va-chon-mau («Ai được hỏi thì kết quả mới đáng tin?») hiện 4 trang liên quan: kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa («Tâm lý học tiến hóa: não ta là sản phẩm của thảo nguyên?»); thi-nghiem/keo-deo («Viên kẹo dẻo có đoán được tương lai? (Thí nghiệm "kẹo dẻo")»); bang-chung/khung-hoang-tai-lap («Vì sao nhiều phát hiện nổi tiếng không lặp lại được?»); trai-nghiem/ao-giac-thi-giac («Hai đoạn thẳng bằng nhau — mắt bạn nói gì?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa: bài nhắc WEIRD và giới hạn khi suy ra cho mọi người
+    thi-nghiem/keo-deo: mẫu gốc nhỏ và đặc thù, ví dụ về giới hạn của mẫu
+    bang-chung/khung-hoang-tai-lap: mẫu nhỏ góp phần làm kết quả khó tái lập
+    trai-nghiem/ao-giac-thi-giac: kết quả khác nhau giữa các nền văn hóa, liên quan WEIRD
+  review: dung
+- ban_ghi: trang/bang-chung/p-value
+  khoa_moi: du-lieu/trang/bang-chung/p-value#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của bang-chung/p-value («p < 0,05 nghĩa là gì?») hiện 2 trang liên quan: kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc («Vì sao ta khó đổi ý khi đã chọn?»); bang-chung/co-mau-suc-manh («Bao nhiêu người là đủ?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc: bài nhắc ý nghĩa thống kê và việc tái lập
+    bang-chung/co-mau-suc-manh: p-value phụ thuộc cỡ mẫu và công suất
+  review: dung
+- ban_ghi: trang/bang-chung/khung-hoang-tai-lap
+  khoa_moi: du-lieu/trang/bang-chung/khung-hoang-tai-lap#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của bang-chung/khung-hoang-tai-lap («Vì sao nhiều phát hiện nổi tiếng không lặp lại được?») hiện 3 trang liên quan: kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc («Vì sao ta khó đổi ý khi đã chọn?»); thi-nghiem/keo-deo («Viên kẹo dẻo có đoán được tương lai? (Thí nghiệm "kẹo dẻo")»); bang-chung/co-mau-suc-manh («Bao nhiêu người là đủ?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc: ví dụ kết quả khó tái lập
+    thi-nghiem/keo-deo: lần làm lại cho hiệu ứng yếu hơn nhiều
+    bang-chung/co-mau-suc-manh: nghiên cứu nhỏ là một nguyên nhân khó tái lập
+  review: dung
+- ban_ghi: trang/bang-chung/phan-tich-tong-hop
+  khoa_moi: du-lieu/trang/bang-chung/phan-tich-tong-hop#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?») hiện 3 trang liên quan: kham-pha/co-so-sinh-hoc/the-duc-nao («Tập thể dục có làm não khỏe hơn?»); thi-nghiem/asch («Khi cả phòng đều nói sai, bạn có dám nói đúng? (Thí nghiệm Asch)»); bang-chung/khung-hoang-tai-lap («Vì sao nhiều phát hiện nổi tiếng không lặp lại được?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/the-duc-nao: bài dựa nhiều vào phân tích tổng hợp
+    thi-nghiem/asch: có phân tích tổng hợp xuyên văn hóa về tỉ lệ hùa theo
+    bang-chung/khung-hoang-tai-lap: thiên lệch xuất bản và tái lập
+  review: dung
+- ban_ghi: trang/bang-chung/thong-ke-mo-ta
+  khoa_moi: du-lieu/trang/bang-chung/thong-ke-mo-ta#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của bang-chung/thong-ke-mo-ta («Trung bình có nói dối?») hiện 2 trang liên quan: kham-pha/tinh-cach/tinh-cach-thay-doi («Tính cách có thay đổi theo tuổi?»); bang-chung/do-lon-hieu-ung («Hiệu ứng lớn hay nhỏ?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tinh-cach/tinh-cach-thay-doi: bài dùng nhiều con số trung bình, cần đọc đúng
+    bang-chung/do-lon-hieu-ung: từ tóm tắt số liệu tới đọc độ lớn của khác biệt
+  review: dung
+- ban_ghi: trang/bang-chung/do-luong
+  khoa_moi: du-lieu/trang/bang-chung/do-luong#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của bang-chung/do-luong («Đo "cái không nhìn thấy" thế nào?») hiện 3 trang liên quan: kham-pha/tinh-cach/mbti («MBTI có thực sự đo được tính cách?»); bang-chung/doc-bai-bao-khoa-hoc («Đọc một bài báo khoa học từ đâu?»); trai-nghiem/big-five-mini («Tính cách của bạn nghiêng về đâu? Thử bản mini 20 câu»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tinh-cach/mbti: câu hỏi độ tin cậy và độ giá trị áp vào một bài test nổi tiếng
+    bang-chung/doc-bai-bao-khoa-hoc: cách đọc kỹ phần phương pháp, gồm thang đo
+    trai-nghiem/big-five-mini: tự làm một bản đo ngắn rồi hỏi nó đo tin cậy đến đâu
+  review: dung
+- ban_ghi: trang/bang-chung/co-mau-suc-manh
+  khoa_moi: du-lieu/trang/bang-chung/co-mau-suc-manh#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của bang-chung/co-mau-suc-manh («Bao nhiêu người là đủ?») hiện 3 trang liên quan: kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc («Vì sao ta khó đổi ý khi đã chọn?»); thi-nghiem/keo-deo («Viên kẹo dẻo có đoán được tương lai? (Thí nghiệm "kẹo dẻo")»); bang-chung/doc-bai-bao-khoa-hoc («Đọc một bài báo khoa học từ đâu?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc: kết quả từ nghiên cứu nhỏ khó tái lập
+    thi-nghiem/keo-deo: mẫu gốc nhỏ, ví dụ cho việc đọc thận trọng
+    bang-chung/doc-bai-bao-khoa-hoc: kiểm cỡ mẫu khi đọc bài báo
+  review: dung
+- ban_ghi: trang/bang-chung/doc-bai-bao-khoa-hoc
+  khoa_moi: du-lieu/trang/bang-chung/doc-bai-bao-khoa-hoc#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của bang-chung/doc-bai-bao-khoa-hoc («Đọc một bài báo khoa học từ đâu?») hiện 2 trang liên quan: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly («Trị liệu tâm lý hoạt động thế nào?»); bang-chung/dao-duc-nghien-cuu («Ai bảo vệ người tham gia nghiên cứu?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly: bài dựa vào thử nghiệm đối chứng và phân tích tổng hợp, thử áp cách đọc
+    bang-chung/dao-duc-nghien-cuu: phần đạo đức và hội đồng duyệt trong một bài báo
+  review: dung
+- ban_ghi: trang/bang-chung/dao-duc-nghien-cuu
+  khoa_moi: du-lieu/trang/bang-chung/dao-duc-nghien-cuu#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của bang-chung/dao-duc-nghien-cuu («Ai bảo vệ người tham gia nghiên cứu?») hiện 2 trang liên quan: thi-nghiem/harlow («Khỉ con cần mẹ vải hay mẹ sắt? (Harlow)»); bang-chung/doc-bai-bao-khoa-hoc («Đọc một bài báo khoa học từ đâu?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/harlow: trang có mục đạo đức theo chuẩn hiện nay
+    bang-chung/doc-bai-bao-khoa-hoc: tìm thông tin đạo đức khi đọc bài báo
+  review: dung
+- ban_ghi: trang/kham-pha/tri-nho/vi-sao-ta-quen
+  khoa_moi: du-lieu/trang/kham-pha/tri-nho/vi-sao-ta-quen#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tri-nho/vi-sao-ta-quen («Vì sao ta quên?») hiện 2 trang liên quan: kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho («Ngủ có giúp nhớ bài?»); bang-chung/khung-hoang-tai-lap («Vì sao nhiều phát hiện nổi tiếng không lặp lại được?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho: giấc ngủ củng cố trí nhớ, mở sang mảng khác (bài chỉ nhắc một lần ở phần ứng dụng)
+    bang-chung/khung-hoang-tai-lap: bài kể lần tái lập 2015 của đường cong quên, bài này giải thích vì sao tái lập quan trọng
+  review: dung
+- ban_ghi: trang/kham-pha/tri-nho/bang-ghi-hinh
+  khoa_moi: du-lieu/trang/kham-pha/tri-nho/bang-ghi-hinh#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tri-nho/bang-ghi-hinh («Trí nhớ có giống cuốn băng ghi hình?») hiện 2 trang liên quan: kham-pha/chu-y-tri-giac/nhin-ma-khong-thay («Nhìn mà không thấy»); trai-nghiem/tri-nho-sai («Bạn có chắc mình đã thấy từ "ngủ"?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/chu-y-tri-giac/nhin-ma-khong-thay: cùng chủ đề ta tin mình thấy và nhớ đủ, nhưng bỏ lỡ hay dựng lại chi tiết
+    trai-nghiem/tri-nho-sai: tự thử nhớ sai một từ chưa từng xuất hiện, minh họa trí nhớ dựng lại
+  review: dung
+- ban_ghi: trang/kham-pha/tri-nho/phong-cach-hoc
+  khoa_moi: du-lieu/trang/kham-pha/tri-nho/phong-cach-hoc#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tri-nho/phong-cach-hoc («Mỗi người có một "phong cách học"?») hiện 2 trang liên quan: kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho («Ngủ có giúp nhớ bài?»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho: một cách học có bằng chứng (ngủ đủ) thay cho phong cách học
+    bang-chung/phan-tich-tong-hop: bài dựa chủ yếu vào các phân tích tổng hợp để bác phong cách học
+  review: dung
+- ban_ghi: trang/kham-pha/tri-nho/duong-cong-quen
+  khoa_moi: du-lieu/trang/kham-pha/tri-nho/duong-cong-quen#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tri-nho/duong-cong-quen («Học dồn có nhớ lâu?») hiện 2 trang liên quan: kham-pha/co-so-sinh-hoc/the-duc-nao («Tập thể dục có làm não khỏe hơn?»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/the-duc-nao: một thói quen khác tác động lên trí nhớ, chưa được bài nhắc tới
+    bang-chung/phan-tich-tong-hop: bài dựa nhiều vào phân tích tổng hợp về học ngắt quãng và tự kiểm tra
+  review: dung
+- ban_ghi: trang/kham-pha/tri-nho/tri-nho-lam-viec
+  khoa_moi: du-lieu/trang/kham-pha/tri-nho/tri-nho-lam-viec#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tri-nho/tri-nho-lam-viec («Não "nháp" thông tin thế nào?») hiện 2 trang liên quan: kham-pha/chu-y-tri-giac/da-nhiem-so («Đa nhiệm với smartphone có hại não?»); trai-nghiem/tri-nho-tu («Bạn nhớ được bao nhiêu từ?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/chu-y-tri-giac/da-nhiem-so: giới hạn trí nhớ làm việc liên quan đến làm nhiều việc cùng lúc
+    trai-nghiem/tri-nho-tu: tự đo độ dài trí nhớ từ tiếng Việt (bài mới link công cụ chữ số)
+  review: dung
+- ban_ghi: trang/kham-pha/chu-y-tri-giac/ao-giac-thi-giac
+  khoa_moi: du-lieu/trang/kham-pha/chu-y-tri-giac/ao-giac-thi-giac#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/chu-y-tri-giac/ao-giac-thi-giac («Mắt thấy có phải là thật?») hiện 2 trang liên quan: thi-nghiem/khi-dot-vo-hinh («Con khỉ đột đi giữa sân mà không ai thấy (Mù không chú ý)»); bang-chung/mau-va-chon-mau («Ai được hỏi thì kết quả mới đáng tin?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/khi-dot-vo-hinh: một thí nghiệm khác về điều mắt thấy nhưng não không thấy
+    bang-chung/mau-va-chon-mau: phần khác biệt văn hóa và mẫu WEIRD trong bài
+  review: dung
+- ban_ghi: trang/kham-pha/chu-y-tri-giac/nhin-ma-khong-thay
+  khoa_moi: du-lieu/trang/kham-pha/chu-y-tri-giac/nhin-ma-khong-thay#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/chu-y-tri-giac/nhin-ma-khong-thay («Nhìn mà không thấy») hiện 2 trang liên quan: kham-pha/tri-nho/bang-ghi-hinh («Trí nhớ có giống cuốn băng ghi hình?»); trai-nghiem/mu-thay-doi («Nhìn mà không thấy: bạn tìm ra ô đổi màu trong bao lâu?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tri-nho/bang-ghi-hinh: từ bỏ lỡ chi tiết sang nhớ sai chi tiết, cùng liên quan lời khai nhân chứng
+    trai-nghiem/mu-thay-doi: tự thử mù thay đổi bằng lưới nhấp nháy
+  review: dung
+- ban_ghi: trang/kham-pha/chu-y-tri-giac/nghe-chon-loc
+  khoa_moi: du-lieu/trang/kham-pha/chu-y-tri-giac/nghe-chon-loc#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/chu-y-tri-giac/nghe-chon-loc («Giữa bữa tiệc ồn ào, sao bạn vẫn nghe thấy tên mình?») hiện 2 trang liên quan: thi-nghiem/khi-dot-vo-hinh («Con khỉ đột đi giữa sân mà không ai thấy (Mù không chú ý)»); trai-nghiem/stroop («Vì sao chữ "ĐỎ" màu xanh làm ta khựng lại?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/khi-dot-vo-hinh: điều không được chú ý có thể không vào ý thức, ở thị giác thay vì thính giác
+    trai-nghiem/stroop: tự đo khả năng lọc thông tin gây nhiễu khi chú ý
+  review: dung
+- ban_ghi: trang/kham-pha/chu-y-tri-giac/da-nhiem-so
+  khoa_moi: du-lieu/trang/kham-pha/chu-y-tri-giac/da-nhiem-so#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/chu-y-tri-giac/da-nhiem-so («Đa nhiệm với smartphone có hại não?») hiện 2 trang liên quan: kham-pha/phat-trien/mang-xa-hoi-teen («Mạng xã hội có làm teen trầm cảm?»); bang-chung/tuong-quan-nhan-qua («Uống cà phê giúp sống lâu hơn?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/phat-trien/mang-xa-hoi-teen: truyền thông số và chú ý ở tuổi teen, cùng câu hỏi tương quan hay nhân quả
+    bang-chung/tuong-quan-nhan-qua: bài lập luận nhiều về tương quan, nhân quả và nghiên cứu cắt ngang
+  review: dung
+- ban_ghi: trang/kham-pha/tu-duy/thien-kien-xac-nhan
+  khoa_moi: du-lieu/trang/kham-pha/tu-duy/thien-kien-xac-nhan#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tu-duy/thien-kien-xac-nhan («Vì sao ta chỉ thấy điều mình muốn thấy?») hiện 3 trang liên quan: kham-pha/tam-ly-xa-hoi/dinh-kien («Định kiến hình thành thế nào?»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»); trai-nghiem/wason-246 («Vì sao bạn đoán mãi không ra quy tắc 2–4–6?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/dinh-kien: định kiến được duy trì khi ta chỉ tìm điều xác nhận
+    bang-chung/thi-nghiem-doi-chung: thí nghiệm đối chứng là cách chặn thiên kiến xác nhận của người nghiên cứu
+    trai-nghiem/wason-246: tự chơi nhiệm vụ 2-4-6 mà bài kể
+  review: dung
+- ban_ghi: trang/kham-pha/tu-duy/linh-cam-va-xac-suat
+  khoa_moi: du-lieu/trang/kham-pha/tu-duy/linh-cam-va-xac-suat#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tu-duy/linh-cam-va-xac-suat («Vì sao linh cảm hay đánh lừa ta?») hiện 2 trang liên quan: kham-pha/tam-ly-xa-hoi/dinh-kien («Định kiến hình thành thế nào?»); trai-nghiem/linda («Vì sao đáp án "chi tiết hơn" nghe có vẻ đúng hơn?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/dinh-kien: Linda đánh lừa ta vì khuôn mẫu, gần với định kiến
+    trai-nghiem/linda: tự làm bài toán Linda
+  review: dung
+- ban_ghi: trang/kham-pha/tu-duy/tu-duy-nhanh-cham
+  khoa_moi: du-lieu/trang/kham-pha/tu-duy/tu-duy-nhanh-cham#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tu-duy/tu-duy-nhanh-cham («Não có hai chế độ nghĩ?») hiện 2 trang liên quan: kham-pha/tu-duy/dunning-kruger («Kẻ dốt hay tự tin thái quá?»); trai-nghiem/neo-gia («Vì sao một con số ngẫu nhiên có thể "kéo" ước lượng của bạn đi chệch?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tu-duy/dunning-kruger: một lệch lạc khác trong cách ta đánh giá bản thân
+    trai-nghiem/neo-gia: hiệu ứng mỏ neo, ví dụ điển hình của Hệ 1 do Kahneman và Tversky mô tả
+  review: dung
+- ban_ghi: trang/kham-pha/tu-duy/tin-dieu-vo-ly
+  khoa_moi: du-lieu/trang/kham-pha/tu-duy/tin-dieu-vo-ly#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tu-duy/tin-dieu-vo-ly («Vì sao ta tin điều vô lý?») hiện 2 trang liên quan: kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc («Vì sao ta khó đổi ý khi đã chọn?»); kham-pha/tu-duy/dunning-kruger («Kẻ dốt hay tự tin thái quá?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc: bất hòa nhận thức là động cơ phía sau việc tin điều mình muốn
+    kham-pha/tu-duy/dunning-kruger: lệch lạc trong tự đánh giá, bài này chưa dẫn
+  review: dung
+- ban_ghi: trang/kham-pha/co-so-sinh-hoc/gen-va-tinh-cach
+  khoa_moi: du-lieu/trang/kham-pha/co-so-sinh-hoc/gen-va-tinh-cach#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/co-so-sinh-hoc/gen-va-tinh-cach («Gen quyết định bao nhiêu phần con người ta?») hiện 3 trang liên quan: kham-pha/tri-tue/tri-tue-la-gi («IQ đo được gì?»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»); trai-nghiem/big-five-mini («Tính cách của bạn nghiêng về đâu? Thử bản mini 20 câu»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tri-tue/tri-tue-la-gi: hệ số di truyền của trí tuệ, cùng cách đọc nghiên cứu sinh đôi
+    bang-chung/phan-tich-tong-hop: bài dựa trên các phân tích tổng hợp về nghiên cứu sinh đôi
+    trai-nghiem/big-five-mini: tự xem vị trí của mình trên các nét tính cách mà bài nói tới
+  review: dung
+- ban_ghi: trang/kham-pha/co-so-sinh-hoc/nao-tuoi-teen
+  khoa_moi: du-lieu/trang/kham-pha/co-so-sinh-hoc/nao-tuoi-teen#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/co-so-sinh-hoc/nao-tuoi-teen («Não tuổi teen khác gì não người lớn?») hiện 3 trang liên quan: kham-pha/co-so-sinh-hoc/dopamine («Dopamine có phải "chất gây sướng"?»); thi-nghiem/keo-deo («Viên kẹo dẻo có đoán được tương lai? (Thí nghiệm "kẹo dẻo")»); bang-chung/co-mau-suc-manh («Bao nhiêu người là đủ?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/dopamine: hệ phần thưởng nhạy bén ở tuổi teen liên quan đến dopamine
+    thi-nghiem/keo-deo: trì hoãn thỏa mãn, liên quan kiểm soát xung động
+    bang-chung/co-mau-suc-manh: nghiên cứu chụp não chỉ có 13 trẻ, cần hiểu cỡ mẫu và sức mạnh thống kê
+  review: dung
+- ban_ghi: trang/kham-pha/co-so-sinh-hoc/dopamine
+  khoa_moi: du-lieu/trang/kham-pha/co-so-sinh-hoc/dopamine#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/co-so-sinh-hoc/dopamine («Dopamine có phải "chất gây sướng"?») hiện 2 trang liên quan: kham-pha/co-so-sinh-hoc/nao-tuoi-teen («Não tuổi teen khác gì não người lớn?»); thi-nghiem/pavlov («Chuông reo thì chó chảy nước miếng? (Thí nghiệm Pavlov)»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/nao-tuoi-teen: hệ phần thưởng ở tuổi dậy thì
+    thi-nghiem/pavlov: học liên kết tín hiệu và phần thưởng, nền cho nghiên cứu sai số dự đoán của Schultz
+  review: dung
+- ban_ghi: trang/kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa
+  khoa_moi: du-lieu/trang/kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa («Tâm lý học tiến hóa: não ta là sản phẩm của thảo nguyên?») hiện 1 trang liên quan: bang-chung/khung-hoang-tai-lap («Vì sao nhiều phát hiện nổi tiếng không lặp lại được?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    bang-chung/khung-hoang-tai-lap: bài kể tái lập quy mô lớn ở 45 nước của nghiên cứu Buss
+  review: dung
+- ban_ghi: trang/kham-pha/co-so-sinh-hoc/the-duc-nao
+  khoa_moi: du-lieu/trang/kham-pha/co-so-sinh-hoc/the-duc-nao#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/co-so-sinh-hoc/the-duc-nao («Tập thể dục có làm não khỏe hơn?») hiện 2 trang liên quan: kham-pha/phat-trien/tuoi-gia («Già có lẫn không?»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/phat-trien/tuoi-gia: não và trí nhớ ở người lớn tuổi
+    bang-chung/thi-nghiem-doi-chung: thử nghiệm Erickson là thử nghiệm ngẫu nhiên có đối chứng
+  review: dung
+- ban_ghi: trang/kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
+  khoa_moi: du-lieu/trang/kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho («Ngủ có giúp nhớ bài?») hiện 2 trang liên quan: kham-pha/co-so-sinh-hoc/the-duc-nao («Tập thể dục có làm não khỏe hơn?»); bang-chung/tuong-quan-nhan-qua («Uống cà phê giúp sống lâu hơn?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/the-duc-nao: thói quen sống khác tác động lên trí nhớ
+    bang-chung/tuong-quan-nhan-qua: bài phân biệt ngủ tốt thì nhớ tốt với tái kích hoạt gây ra củng cố
+  review: dung
+- ban_ghi: trang/kham-pha/cang-thang-giac-ngu/giac-mo
+  khoa_moi: du-lieu/trang/kham-pha/cang-thang-giac-ngu/giac-mo#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/cang-thang-giac-ngu/giac-mo («Giấc mơ có ý nghĩa gì?») hiện 1 trang liên quan: kham-pha/suc-khoe-tam-than/tim-giup-do («Khi nào nên tìm sự giúp đỡ chuyên môn?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/tim-giup-do: phần ác mộng lặp lại, khi nào nên tìm người có chuyên môn
+  review: dung
+- ban_ghi: trang/kham-pha/tri-tue/tri-tue-la-gi
+  khoa_moi: du-lieu/trang/kham-pha/tri-tue/tri-tue-la-gi#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tri-tue/tri-tue-la-gi («IQ đo được gì?») hiện 2 trang liên quan: kham-pha/tinh-cach/big-five («Tính cách có mấy chiều?»); bang-chung/tuong-quan-nhan-qua («Uống cà phê giúp sống lâu hơn?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tinh-cach/big-five: so sánh cách đo trí tuệ với cách đo tính cách
+    bang-chung/tuong-quan-nhan-qua: hệ số g xây từ tương quan giữa các bài kiểm tra
+  review: dung
+- ban_ghi: trang/kham-pha/tri-tue/hieu-ung-flynn
+  khoa_moi: du-lieu/trang/kham-pha/tri-tue/hieu-ung-flynn#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tri-tue/hieu-ung-flynn («Người nay thông minh hơn xưa?») hiện 1 trang liên quan: bang-chung/do-luong («Đo "cái không nhìn thấy" thế nào?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    bang-chung/do-luong: điểm IQ tăng theo thế hệ liên quan đến chuẩn hóa và độ giá trị của thang đo
+  review: dung
+- ban_ghi: trang/kham-pha/tam-ly-xa-hoi/phu-hop-so-dong
+  khoa_moi: du-lieu/trang/kham-pha/tam-ly-xa-hoi/phu-hop-so-dong#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tam-ly-xa-hoi/phu-hop-so-dong («Vì sao ta làm theo số đông?») hiện 2 trang liên quan: thi-nghiem/milgram («Người ta vâng lời đến mức nào? (Thí nghiệm Milgram)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/milgram: một thí nghiệm kinh điển khác về sức ép xã hội, ở đây là vâng lời quyền uy
+    bang-chung/phan-tich-tong-hop: bài dùng phân tích tổng hợp của Bond và Smith; trang này giải thích cách đọc loại bằng chứng ấy
+  review: dung
+- ban_ghi: trang/kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc
+  khoa_moi: du-lieu/trang/kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc («Vì sao ta khó đổi ý khi đã chọn?») hiện 2 trang liên quan: kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc («Thưởng có làm mất hứng thú?»); bang-chung/khung-hoang-tai-lap («Vì sao nhiều phát hiện nổi tiếng không lặp lại được?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc: thí nghiệm trả 1 đô-la hay 20 đô-la gần với câu hỏi phần thưởng làm đổi động lực ra sao
+    bang-chung/khung-hoang-tai-lap: bài nói về mẫu nhỏ và kết quả tái lập của thí nghiệm gốc
+  review: dung
+- ban_ghi: trang/kham-pha/tam-ly-xa-hoi/thuyet-phuc
+  khoa_moi: du-lieu/trang/kham-pha/tam-ly-xa-hoi/thuyet-phuc#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tam-ly-xa-hoi/thuyet-phuc («Quảng cáo thuyết phục ta thế nào?») hiện 2 trang liên quan: kham-pha/tu-duy/tu-duy-nhanh-cham («Não có hai chế độ nghĩ?»); bang-chung/mau-va-chon-mau («Ai được hỏi thì kết quả mới đáng tin?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tu-duy/tu-duy-nhanh-cham: hai đường của ELM (nghĩ kỹ và đi đường tắt) song song với hai hệ thống tư duy
+    bang-chung/mau-va-chon-mau: nghiên cứu về thuyết phục phần lớn dùng mẫu sinh viên, nên cần biết giới hạn của việc chọn mẫu
+  review: dung
+- ban_ghi: trang/kham-pha/tam-ly-xa-hoi/dinh-kien
+  khoa_moi: du-lieu/trang/kham-pha/tam-ly-xa-hoi/dinh-kien#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tam-ly-xa-hoi/dinh-kien («Định kiến hình thành thế nào?») hiện 3 trang liên quan: kham-pha/tu-duy/thien-kien-xac-nhan («Vì sao ta chỉ thấy điều mình muốn thấy?»); thi-nghiem/robbers-cave («Chia trại hè thành hai phe thù nhau? (Thí nghiệm Robbers Cave)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tu-duy/thien-kien-xac-nhan: định kiến được giữ vững một phần nhờ ta chỉ chú ý điều khớp với niềm tin sẵn có
+    thi-nghiem/robbers-cave: trang nhà của thí nghiệm Sherif về xung đột và hợp tác giữa các nhóm
+    bang-chung/phan-tich-tong-hop: bài dựa vào phân tích tổng hợp 515 nghiên cứu về giả thuyết tiếp xúc
+  review: dung
+- ban_ghi: trang/kham-pha/tinh-cach/big-five
+  khoa_moi: du-lieu/trang/kham-pha/tinh-cach/big-five#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tinh-cach/big-five («Tính cách có mấy chiều?») hiện 3 trang liên quan: kham-pha/co-so-sinh-hoc/gen-va-tinh-cach («Gen quyết định bao nhiêu phần con người ta?»); bang-chung/do-luong («Đo "cái không nhìn thấy" thế nào?»); trai-nghiem/big-five-mini («Tính cách của bạn nghiêng về đâu? Thử bản mini 20 câu»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/gen-va-tinh-cach: phần nào của năm chiều tính cách gắn với gen
+    bang-chung/do-luong: Big Five dựa vào thang tự báo cáo; trang này nói đo một khái niệm trừu tượng có đáng tin không
+    trai-nghiem/big-five-mini: thử bản rút gọn để thấy tính cách là các chiều liên tục
+  review: dung
+- ban_ghi: trang/kham-pha/tinh-cach/tinh-cach-thay-doi
+  khoa_moi: du-lieu/trang/kham-pha/tinh-cach/tinh-cach-thay-doi#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/tinh-cach/tinh-cach-thay-doi («Tính cách có thay đổi theo tuổi?») hiện 3 trang liên quan: kham-pha/co-so-sinh-hoc/gen-va-tinh-cach («Gen quyết định bao nhiêu phần con người ta?»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»); trai-nghiem/big-five-mini («Tính cách của bạn nghiêng về đâu? Thử bản mini 20 câu»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/gen-va-tinh-cach: phần ổn định của tính cách có nền sinh học
+    bang-chung/phan-tich-tong-hop: bài dựa chủ yếu vào phân tích tổng hợp về độ ổn định theo tuổi
+    trai-nghiem/big-five-mini: một lần đo tính cách để hình dung các chiều được nói tới
+  review: dung
+- ban_ghi: trang/kham-pha/tinh-cach/mbti
+  khoa_moi: du-lieu/trang/kham-pha/tinh-cach/mbti#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/tinh-cach/mbti («MBTI có thực sự đo được tính cách?») hiện 2 trang liên quan: bang-chung/do-luong («Đo "cái không nhìn thấy" thế nào?»); trai-nghiem/big-five-mini («Tính cách của bạn nghiêng về đâu? Thử bản mini 20 câu»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    bang-chung/do-luong: độ tin cậy và giá trị của một bài trắc nghiệm, chỗ MBTI yếu
+    trai-nghiem/big-five-mini: so với mô hình tính cách được nghiên cứu nhiều hơn
+  review: dung
+- ban_ghi: trang/kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban
+  khoa_moi: du-lieu/trang/kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban («Cảm xúc có mấy loại cơ bản?») hiện 3 trang liên quan: kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa («Tâm lý học tiến hóa: não ta là sản phẩm của thảo nguyên?»); thi-nghiem/schachter-singer («Tim đập nhanh là yêu hay sợ? (Thí nghiệm Schachter & Singer)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa: cảm xúc phổ quát được giải thích theo tiến hóa, và những giới hạn của cách giải thích đó
+    thi-nghiem/schachter-singer: thí nghiệm kinh điển cho thấy ngữ cảnh góp phần gọi tên cảm xúc
+    bang-chung/phan-tich-tong-hop: bài dựa vào các phân tích tổng hợp về nhận ra biểu cảm
+  review: dung
+- ban_ghi: trang/kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc
+  khoa_moi: du-lieu/trang/kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc («Thưởng có làm mất hứng thú?») hiện 2 trang liên quan: kham-pha/hanh-phuc/dong-chay-flow («'Cháy' hết mình là gì?»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/hanh-phuc/dong-chay-flow: làm vì thích hoạt động ấy (động lực nội tại) dẫn tới trạng thái dòng chảy
+    bang-chung/phan-tich-tong-hop: bài dựa vào phân tích tổng hợp 128 nghiên cứu
+  review: dung
+- ban_ghi: trang/kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc
+  khoa_moi: du-lieu/trang/kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc («Nén cảm xúc có tốt?») hiện 2 trang liên quan: thi-nghiem/schachter-singer («Tim đập nhanh là yêu hay sợ? (Thí nghiệm Schachter & Singer)»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/schachter-singer: một thí nghiệm khác về cách cơ thể và ngữ cảnh tạo nên cảm xúc
+    bang-chung/thi-nghiem-doi-chung: thí nghiệm của Gross có nhóm đối chứng; trang này giải thích vì sao thiết kế ấy cần thiết
+  review: dung
+- ban_ghi: trang/kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc
+  khoa_moi: du-lieu/trang/kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc («EQ có thật không?») hiện 2 trang liên quan: kham-pha/tinh-cach/big-five («Tính cách có mấy chiều?»); bang-chung/do-luong («Đo "cái không nhìn thấy" thế nào?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tinh-cach/big-five: trí tuệ cảm xúc dạng tự báo cáo chồng lấn nhiều với tính cách
+    bang-chung/do-luong: bài bàn nhiều về hai cách đo (tự báo cáo và bài thi năng lực)
+  review: dung
+- ban_ghi: trang/kham-pha/cang-thang-giac-ngu/stress-co-hai
+  khoa_moi: du-lieu/trang/kham-pha/cang-thang-giac-ngu/stress-co-hai#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/cang-thang-giac-ngu/stress-co-hai («Stress có luôn có hại?») hiện 3 trang liên quan: kham-pha/suc-khoe-tam-than/lo-au («Lo lắng đến mức nào thì thành rối loạn?»); thi-nghiem/seligman («Chó bỏ cuộc sau cú sốc không tránh được? (Thí nghiệm Seligman)»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/lo-au: khi căng thẳng kéo dài và thành lo âu cần chú ý
+    thi-nghiem/seligman: nghiên cứu kinh điển về căng thẳng không kiểm soát được
+    bang-chung/thi-nghiem-doi-chung: bài nói về thử nghiệm ngẫu nhiên có đối chứng với stress mindset
+  review: dung
+- ban_ghi: trang/kham-pha/cang-thang-giac-ngu/doi-pho-stress
+  khoa_moi: du-lieu/trang/kham-pha/cang-thang-giac-ngu/doi-pho-stress#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/cang-thang-giac-ngu/doi-pho-stress («Đối phó stress thế nào cho đúng?») hiện 3 trang liên quan: kham-pha/suc-khoe-tam-than/lo-au («Lo lắng đến mức nào thì thành rối loạn?»); thi-nghiem/seligman («Chó bỏ cuộc sau cú sốc không tránh được? (Thí nghiệm Seligman)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/lo-au: lo âu là chỗ cách đối phó (như tránh né) có thể phản tác dụng
+    thi-nghiem/seligman: cảm giác không kiểm soát được ảnh hưởng tới cách đối phó
+    bang-chung/phan-tich-tong-hop: bài dựa vào các phân tích tổng hợp về hiệu quả của cách đối phó
+  review: dung
+- ban_ghi: trang/kham-pha/phat-trien/tre-hoc-noi
+  khoa_moi: du-lieu/trang/kham-pha/phat-trien/tre-hoc-noi#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/phat-trien/tre-hoc-noi («Trẻ học nói như thế nào?») hiện 2 trang liên quan: thi-nghiem/skinner («Thưởng phạt nặn hành vi thế nào? (Hộp Skinner)»); bang-chung/thi-nghiem-doi-chung («Vì sao cần nhóm đối chứng?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/skinner: bài nhắc tranh luận về vai trò của củng cố trong học nói
+    bang-chung/thi-nghiem-doi-chung: thí nghiệm tiếp xúc tiếng Quan Thoại dùng nhóm đối chứng để biết điều gì tạo ra khác biệt
+  review: dung
+- ban_ghi: trang/kham-pha/phat-trien/gan-bo
+  khoa_moi: du-lieu/trang/kham-pha/phat-trien/gan-bo#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/phat-trien/gan-bo («Bé bám mẹ là tốt hay xấu?») hiện 3 trang liên quan: kham-pha/co-so-sinh-hoc/gen-va-tinh-cach («Gen quyết định bao nhiêu phần con người ta?»); thi-nghiem/harlow («Khỉ con cần mẹ vải hay mẹ sắt? (Harlow)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/gen-va-tinh-cach: bẩm sinh và môi trường cùng góp phần vào khác biệt giữa trẻ
+    thi-nghiem/harlow: thí nghiệm khỉ con cho thấy sự gần gũi quan trọng hơn thức ăn
+    bang-chung/phan-tich-tong-hop: bài dựa vào các phân tích tổng hợp về kiểu gắn bó
+  review: dung
+- ban_ghi: trang/kham-pha/phat-trien/ban-sac-tuoi-teen
+  khoa_moi: du-lieu/trang/kham-pha/phat-trien/ban-sac-tuoi-teen#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/phat-trien/ban-sac-tuoi-teen («Tuổi teen: mình là ai?») hiện 2 trang liên quan: kham-pha/tinh-cach/tinh-cach-thay-doi («Tính cách có thay đổi theo tuổi?»); bang-chung/mau-va-chon-mau («Ai được hỏi thì kết quả mới đáng tin?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/tinh-cach/tinh-cach-thay-doi: bản sắc và tính cách đổi hay giữ nguyên theo tuổi
+    bang-chung/mau-va-chon-mau: nghiên cứu bản sắc thường lấy mẫu sinh viên, hạn chế khi khái quát
+  review: dung
+- ban_ghi: trang/kham-pha/phat-trien/tam-ly-hoc-duong
+  khoa_moi: du-lieu/trang/kham-pha/phat-trien/tam-ly-hoc-duong#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/phat-trien/tam-ly-hoc-duong («Bắt nạt và áp lực thi cử?») hiện 1 trang liên quan: bang-chung/tuong-quan-nhan-qua («Uống cà phê giúp sống lâu hơn?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    bang-chung/tuong-quan-nhan-qua: bắt nạt và sức khỏe tâm thần thường chỉ được chứng minh ở mức tương quan
+  review: dung
+- ban_ghi: trang/kham-pha/phat-trien/mang-xa-hoi-teen
+  khoa_moi: du-lieu/trang/kham-pha/phat-trien/mang-xa-hoi-teen#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/phat-trien/mang-xa-hoi-teen («Mạng xã hội có làm teen trầm cảm?») hiện 2 trang liên quan: kham-pha/hanh-phuc/do-hanh-phuc («Hạnh phúc có đo được không?»); bang-chung/tuong-quan-nhan-qua («Uống cà phê giúp sống lâu hơn?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/hanh-phuc/do-hanh-phuc: tranh luận phụ thuộc vào cách đo sức khỏe tâm thần bằng tự báo cáo
+    bang-chung/tuong-quan-nhan-qua: trọng tâm tranh luận là tương quan hay nhân quả
+  review: dung
+- ban_ghi: trang/kham-pha/phat-trien/tuoi-gia
+  khoa_moi: du-lieu/trang/kham-pha/phat-trien/tuoi-gia#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/phat-trien/tuoi-gia («Già có lẫn không?») hiện 2 trang liên quan: kham-pha/co-so-sinh-hoc/the-duc-nao («Tập thể dục có làm não khỏe hơn?»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/co-so-sinh-hoc/the-duc-nao: vận động và trí nhớ khi lớn tuổi
+    bang-chung/phan-tich-tong-hop: bài dùng phân tích tổng hợp để nói về thay đổi nhận thức theo tuổi
+  review: dung
+- ban_ghi: trang/kham-pha/hanh-phuc/tien-va-hanh-phuc
+  khoa_moi: du-lieu/trang/kham-pha/hanh-phuc/tien-va-hanh-phuc#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/hanh-phuc/tien-va-hanh-phuc («Nhiều tiền có hạnh phúc hơn?») hiện 1 trang liên quan: bang-chung/tuong-quan-nhan-qua («Uống cà phê giúp sống lâu hơn?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    bang-chung/tuong-quan-nhan-qua: tiền và hạnh phúc đi cùng nhau chưa có nghĩa tiền gây ra hạnh phúc
+  review: dung
+- ban_ghi: trang/kham-pha/hanh-phuc/do-hanh-phuc
+  khoa_moi: du-lieu/trang/kham-pha/hanh-phuc/do-hanh-phuc#lien_quan,linh_vuc,moi,tang
+  cau: 'Khối Đọc tiếp của kham-pha/hanh-phuc/do-hanh-phuc («Hạnh phúc có đo được không?») hiện 1 trang liên quan: bang-chung/do-luong («Đo "cái không nhìn thấy" thế nào?»)'
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    bang-chung/do-luong: thang SWLS là ví dụ cho việc đo một khái niệm chủ quan
+  review: dung
+- ban_ghi: trang/kham-pha/hanh-phuc/dong-chay-flow
+  khoa_moi: du-lieu/trang/kham-pha/hanh-phuc/dong-chay-flow#dua_tren,lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/hanh-phuc/dong-chay-flow («'Cháy' hết mình là gì?») hiện 2 trang liên quan: kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc («Thưởng có làm mất hứng thú?»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc: động lực nội tại và ngoại tại, nền của trạng thái dòng chảy
+    bang-chung/phan-tich-tong-hop: bài dựa vào các phân tích tổng hợp về dòng chảy
+  review: dung
+- ban_ghi: trang/kham-pha/suc-khoe-tam-than/tram-cam
+  khoa_moi: du-lieu/trang/kham-pha/suc-khoe-tam-than/tram-cam#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/suc-khoe-tam-than/tram-cam («Buồn thường và trầm cảm khác nhau thế nào?») hiện 3 trang liên quan: kham-pha/suc-khoe-tam-than/tim-giup-do («Khi nào nên tìm sự giúp đỡ chuyên môn?»); thi-nghiem/seligman («Chó bỏ cuộc sau cú sốc không tránh được? (Thí nghiệm Seligman)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    thi-nghiem/seligman: mô hình bất lực học được từng được dùng để hiểu trầm cảm
+    bang-chung/phan-tich-tong-hop: các hướng điều trị có bằng chứng dựa vào phân tích tổng hợp
+    kham-pha/suc-khoe-tam-than/tim-giup-do: "Bài nói khi nào nên tìm giúp đỡ và dẫn tới bài Tìm giúp đỡ (luật: bài Sức khỏe tâm thần ưu tiên tim-giup-do; theo review)"
+  review: dung
+- ban_ghi: trang/kham-pha/suc-khoe-tam-than/lo-au
+  khoa_moi: du-lieu/trang/kham-pha/suc-khoe-tam-than/lo-au#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/suc-khoe-tam-than/lo-au («Lo lắng đến mức nào thì thành rối loạn?») hiện 3 trang liên quan: kham-pha/cang-thang-giac-ngu/stress-co-hai («Stress có luôn có hại?»); thi-nghiem/pavlov («Chuông reo thì chó chảy nước miếng? (Thí nghiệm Pavlov)»); bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/cang-thang-giac-ngu/stress-co-hai: phân biệt căng thẳng với lo âu
+    thi-nghiem/pavlov: vòng luẩn quẩn tránh né mang tính học qua điều kiện hóa
+    bang-chung/phan-tich-tong-hop: các hướng điều trị có bằng chứng dựa vào phân tích tổng hợp
+  review: dung
+- ban_ghi: trang/kham-pha/suc-khoe-tam-than/tim-giup-do
+  khoa_moi: du-lieu/trang/kham-pha/suc-khoe-tam-than/tim-giup-do#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/suc-khoe-tam-than/tim-giup-do («Khi nào nên tìm sự giúp đỡ chuyên môn?») hiện 1 trang liên quan: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly («Trị liệu tâm lý hoạt động thế nào?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly: tìm hiểu các loại trị liệu mà chuyên gia có thể đề nghị
+  review: dung
+- ban_ghi: trang/kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+  khoa_moi: du-lieu/trang/kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly#lien_quan,linh_vuc,moi,tang
+  cau: "Khối Đọc tiếp của kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly («Trị liệu tâm lý hoạt động thế nào?») hiện 1 trang liên quan: bang-chung/phan-tich-tong-hop («Gộp nhiều nghiên cứu lại thì được gì?»)"
+  loai: ve-site
+  truong:
+    - lien_quan
+  ly_do:
+    bang-chung/phan-tich-tong-hop: bằng chứng về CBT chủ yếu đến từ các phân tích tổng hợp
+  review: dung

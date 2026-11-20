@@ -17,73 +17,90 @@
 - id: kham-pha/tri-nho/vi-sao-ta-quen
   tang: loi
   linh_vuc: tri-nho
+  lien_quan: [kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho, bang-chung/khung-hoang-tai-lap]
 - id: kham-pha/tri-nho/bang-ghi-hinh
   tang: loi
   linh_vuc: tri-nho
   chu_de: Trí nhớ tái tạo, thông tin sai lệch
+  lien_quan: [kham-pha/chu-y-tri-giac/nhin-ma-khong-thay, trai-nghiem/tri-nho-sai]
 - id: kham-pha/tri-nho/phong-cach-hoc
   tang: mo-rong
   linh_vuc: tri-nho
   dua_tren: [kham-pha/tri-nho/duong-cong-quen]
   kiem_lai_truoc: 2028-05
   chu_de: Phong cách học
+  lien_quan: [kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/tri-nho/duong-cong-quen
   tang: loi
   linh_vuc: tri-nho
   chu_de: Đường cong quên, học rải
+  lien_quan: [kham-pha/co-so-sinh-hoc/the-duc-nao, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/tri-nho/tri-nho-lam-viec
   tang: loi
   linh_vuc: tri-nho
   chu_de: Trí nhớ làm việc
+  lien_quan: [kham-pha/chu-y-tri-giac/da-nhiem-so, trai-nghiem/tri-nho-tu]
 - id: kham-pha/tam-ly-xa-hoi/phu-hop-so-dong
   tang: loi
   linh_vuc: tam-ly-xa-hoi
   chu_de: Sự phù hợp, áp lực số đông
+  lien_quan: [thi-nghiem/milgram, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc
   tang: loi
   linh_vuc: tam-ly-xa-hoi
   chu_de: Bất hòa nhận thức
+  lien_quan: [kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc, bang-chung/khung-hoang-tai-lap]
 - id: kham-pha/tam-ly-xa-hoi/thuyet-phuc
   tang: loi
   linh_vuc: tam-ly-xa-hoi
   chu_de: Thuyết phục
+  lien_quan: [kham-pha/tu-duy/tu-duy-nhanh-cham, bang-chung/mau-va-chon-mau]
 - id: kham-pha/tam-ly-xa-hoi/dinh-kien
   tang: loi
   linh_vuc: tam-ly-xa-hoi
+  lien_quan: [kham-pha/tu-duy/thien-kien-xac-nhan, thi-nghiem/robbers-cave, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/chu-y-tri-giac/ao-giac-thi-giac
   tang: loi
   linh_vuc: tri-giac-chu-y
   chu_de: Ảo giác thị giác
+  lien_quan: [thi-nghiem/khi-dot-vo-hinh, bang-chung/mau-va-chon-mau]
 - id: kham-pha/chu-y-tri-giac/nhin-ma-khong-thay
   tang: loi
   linh_vuc: tri-giac-chu-y
   chu_de: Mù thay đổi
+  lien_quan: [kham-pha/tri-nho/bang-ghi-hinh, trai-nghiem/mu-thay-doi]
 - id: kham-pha/chu-y-tri-giac/nghe-chon-loc
   tang: loi
   linh_vuc: tri-giac-chu-y
   chu_de: Nghe chọn lọc
+  lien_quan: [thi-nghiem/khi-dot-vo-hinh, trai-nghiem/stroop]
 - id: kham-pha/chu-y-tri-giac/da-nhiem-so
   tang: mo-rong
   linh_vuc: tri-giac-chu-y
   dua_tren: [kham-pha/chu-y-tri-giac/nghe-chon-loc, kham-pha/chu-y-tri-giac/nhin-ma-khong-thay]
   kiem_lai_truoc: 2028-05
   chu_de: Đa nhiệm số
+  lien_quan: [kham-pha/phat-trien/mang-xa-hoi-teen, bang-chung/tuong-quan-nhan-qua]
 - id: kham-pha/tu-duy/thien-kien-xac-nhan
   tang: loi
   linh_vuc: tu-duy-tri-tue
   chu_de: Thiên kiến xác nhận
+  lien_quan: [kham-pha/tam-ly-xa-hoi/dinh-kien, bang-chung/thi-nghiem-doi-chung, trai-nghiem/wason-246]
 - id: kham-pha/tu-duy/linh-cam-va-xac-suat
   tang: loi
   linh_vuc: tu-duy-tri-tue
   chu_de: Linh cảm và xác suất
+  lien_quan: [kham-pha/tam-ly-xa-hoi/dinh-kien, trai-nghiem/linda]
 - id: kham-pha/tu-duy/tu-duy-nhanh-cham
   tang: loi
   linh_vuc: tu-duy-tri-tue
   chu_de: Tư duy nhanh và chậm
+  lien_quan: [kham-pha/tu-duy/dunning-kruger, trai-nghiem/neo-gia]
 - id: kham-pha/tu-duy/tin-dieu-vo-ly
   tang: loi
   linh_vuc: tu-duy-tri-tue
   chu_de: Lập luận có động cơ
+  lien_quan: [kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc, kham-pha/tu-duy/dunning-kruger]
 - id: kham-pha/tu-duy/dunning-kruger
   tang: mo-rong
   linh_vuc: tu-duy-tri-tue
@@ -94,14 +111,17 @@
   tang: loi
   linh_vuc: tinh-cach
   chu_de: Big Five, năm chiều tính cách
+  lien_quan: [kham-pha/co-so-sinh-hoc/gen-va-tinh-cach, bang-chung/do-luong, trai-nghiem/big-five-mini]
 - id: kham-pha/tinh-cach/tinh-cach-thay-doi
   tang: loi
   linh_vuc: tinh-cach
+  lien_quan: [kham-pha/co-so-sinh-hoc/gen-va-tinh-cach, bang-chung/phan-tich-tong-hop, trai-nghiem/big-five-mini]
 - id: kham-pha/tinh-cach/mbti
   tang: mo-rong
   linh_vuc: tinh-cach
   dua_tren: [kham-pha/tinh-cach/big-five]
   kiem_lai_truoc: 2028-05
+  lien_quan: [bang-chung/do-luong, trai-nghiem/big-five-mini]
 - id: kham-pha/co-so-sinh-hoc/nao-che-doi
   tang: loi
   linh_vuc: co-so-sinh-hoc
@@ -110,60 +130,73 @@
   tang: loi
   linh_vuc: co-so-sinh-hoc
   chu_de: Gen và tính di truyền
+  lien_quan: [kham-pha/tri-tue/tri-tue-la-gi, bang-chung/phan-tich-tong-hop, trai-nghiem/big-five-mini]
 - id: kham-pha/co-so-sinh-hoc/nao-tuoi-teen
   tang: loi
   linh_vuc: co-so-sinh-hoc
   chu_de: Não tuổi vị thành niên
+  lien_quan: [kham-pha/co-so-sinh-hoc/dopamine, thi-nghiem/keo-deo, bang-chung/co-mau-suc-manh]
 - id: kham-pha/co-so-sinh-hoc/dopamine
   tang: mo-rong
   linh_vuc: co-so-sinh-hoc
   dua_tren: [kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc]
   kiem_lai_truoc: 2028-05
   chu_de: Dopamine và phần thưởng
+  lien_quan: [kham-pha/co-so-sinh-hoc/nao-tuoi-teen, thi-nghiem/pavlov]
 - id: kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa
   tang: loi
   linh_vuc: co-so-sinh-hoc
+  lien_quan: [bang-chung/khung-hoang-tai-lap]
 - id: kham-pha/co-so-sinh-hoc/the-duc-nao
   tang: mo-rong
   linh_vuc: co-so-sinh-hoc
   dua_tren: [kham-pha/tri-nho/vi-sao-ta-quen]
   kiem_lai_truoc: 2027-11
   chu_de: Thể dục và não
+  lien_quan: [kham-pha/phat-trien/tuoi-gia, bang-chung/thi-nghiem-doi-chung]
 - id: kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban
   tang: loi
   linh_vuc: cam-xuc-dong-luc
   chu_de: Cảm xúc cơ bản
+  lien_quan: [kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa, thi-nghiem/schachter-singer, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc
   tang: loi
   linh_vuc: cam-xuc-dong-luc
   chu_de: Phần thưởng và động lực
+  lien_quan: [kham-pha/hanh-phuc/dong-chay-flow, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc
   tang: loi
   linh_vuc: cam-xuc-dong-luc
   chu_de: Điều tiết cảm xúc
+  lien_quan: [thi-nghiem/schachter-singer, bang-chung/thi-nghiem-doi-chung]
 - id: kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc
   tang: mo-rong
   linh_vuc: cam-xuc-dong-luc
   dua_tren: [kham-pha/tri-tue/tri-tue-la-gi, kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc]
   kiem_lai_truoc: 2027-11
   chu_de: Trí tuệ cảm xúc
+  lien_quan: [kham-pha/tinh-cach/big-five, bang-chung/do-luong]
 - id: kham-pha/cang-thang-giac-ngu/stress-co-hai
   tang: mo-rong
   linh_vuc: cang-thang-suc-khoe
   dua_tren: [kham-pha/cang-thang-giac-ngu/doi-pho-stress]
   kiem_lai_truoc: 2028-05
   chu_de: Stress và sức khỏe
+  lien_quan: [kham-pha/suc-khoe-tam-than/lo-au, thi-nghiem/seligman, bang-chung/thi-nghiem-doi-chung]
 - id: kham-pha/cang-thang-giac-ngu/ngu-va-tri-nho
   tang: loi
   linh_vuc: y-thuc-giac-ngu
   chu_de: Giấc ngủ và trí nhớ
+  lien_quan: [kham-pha/co-so-sinh-hoc/the-duc-nao, bang-chung/tuong-quan-nhan-qua]
 - id: kham-pha/cang-thang-giac-ngu/doi-pho-stress
   tang: loi
   linh_vuc: cang-thang-suc-khoe
   chu_de: Đối phó với stress
+  lien_quan: [kham-pha/suc-khoe-tam-than/lo-au, thi-nghiem/seligman, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/cang-thang-giac-ngu/giac-mo
   tang: loi
   linh_vuc: y-thuc-giac-ngu
+  lien_quan: [kham-pha/suc-khoe-tam-than/tim-giup-do]
 - id: kham-pha/phat-trien/tre-hoc-the-nao
   tang: loi
   linh_vuc: phat-trien
@@ -172,114 +205,144 @@
   tang: loi
   linh_vuc: phat-trien
   chu_de: Phát triển ngôn ngữ
+  lien_quan: [thi-nghiem/skinner, bang-chung/thi-nghiem-doi-chung]
 - id: kham-pha/phat-trien/gan-bo
   tang: loi
   linh_vuc: phat-trien
   chu_de: Gắn bó
+  lien_quan: [kham-pha/co-so-sinh-hoc/gen-va-tinh-cach, thi-nghiem/harlow, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/phat-trien/ban-sac-tuoi-teen
   tang: loi
   linh_vuc: phat-trien
   chu_de: Bản sắc tuổi teen
+  lien_quan: [kham-pha/tinh-cach/tinh-cach-thay-doi, bang-chung/mau-va-chon-mau]
 - id: kham-pha/phat-trien/tam-ly-hoc-duong
   tang: mo-rong
   linh_vuc: phat-trien
   dua_tren: [kham-pha/phat-trien/ban-sac-tuoi-teen]
   kiem_lai_truoc: 2027-11
   chu_de: Bắt nạt học đường, áp lực thi cử
+  lien_quan: [bang-chung/tuong-quan-nhan-qua]
 - id: kham-pha/phat-trien/mang-xa-hoi-teen
   tang: mo-rong
   linh_vuc: phat-trien
   dua_tren: [kham-pha/phat-trien/ban-sac-tuoi-teen, kham-pha/co-so-sinh-hoc/nao-tuoi-teen]
   kiem_lai_truoc: 2027-05
   chu_de: Mạng xã hội và tuổi teen
+  lien_quan: [kham-pha/hanh-phuc/do-hanh-phuc, bang-chung/tuong-quan-nhan-qua]
 - id: kham-pha/phat-trien/tuoi-gia
   tang: loi
   linh_vuc: phat-trien
   chu_de: Tuổi già và trí nhớ
+  lien_quan: [kham-pha/co-so-sinh-hoc/the-duc-nao, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/hanh-phuc/tien-va-hanh-phuc
   tang: mo-rong
   linh_vuc: hanh-phuc
   dua_tren: [kham-pha/hanh-phuc/do-hanh-phuc]
   kiem_lai_truoc: 2028-05
   chu_de: Tiền và hạnh phúc
+  lien_quan: [bang-chung/tuong-quan-nhan-qua]
 - id: kham-pha/hanh-phuc/do-hanh-phuc
   tang: loi
   linh_vuc: hanh-phuc
   chu_de: Đo hạnh phúc
+  lien_quan: [bang-chung/do-luong]
 - id: kham-pha/hanh-phuc/dong-chay-flow
   tang: mo-rong
   linh_vuc: hanh-phuc
   dua_tren: [kham-pha/hanh-phuc/do-hanh-phuc]
   kiem_lai_truoc: 2028-05
   chu_de: Trạng thái dòng chảy (flow)
+  lien_quan: [kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/tri-tue/tri-tue-la-gi
   tang: loi
   linh_vuc: tu-duy-tri-tue
   chu_de: Trí tuệ
+  lien_quan: [kham-pha/tinh-cach/big-five, bang-chung/tuong-quan-nhan-qua]
 - id: kham-pha/tri-tue/hieu-ung-flynn
   tang: loi
   linh_vuc: tu-duy-tri-tue
   chu_de: Hiệu ứng Flynn
+  lien_quan: [bang-chung/do-luong]
 - id: kham-pha/suc-khoe-tam-than/tram-cam
   tang: loi
   linh_vuc: suc-khoe-tam-than
+  lien_quan: [kham-pha/suc-khoe-tam-than/tim-giup-do, thi-nghiem/seligman, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/suc-khoe-tam-than/lo-au
   tang: loi
   linh_vuc: suc-khoe-tam-than
+  lien_quan: [kham-pha/cang-thang-giac-ngu/stress-co-hai, thi-nghiem/pavlov, bang-chung/phan-tich-tong-hop]
 - id: kham-pha/suc-khoe-tam-than/tim-giup-do
   tang: loi
   linh_vuc: suc-khoe-tam-than
+  lien_quan: [kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly]
 - id: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
   tang: loi
   linh_vuc: suc-khoe-tam-than
+  lien_quan: [bang-chung/phan-tich-tong-hop]
 - id: thi-nghiem/index
   tang: khung
 - id: thi-nghiem/milgram
   tang: loi
   linh_vuc: tam-ly-xa-hoi
+  lien_quan: [thi-nghiem/zimbardo, bang-chung/dao-duc-nghien-cuu]
 - id: thi-nghiem/asch
   tang: loi
   linh_vuc: tam-ly-xa-hoi
   chu_de: Bài toán đường thẳng, áp lực số đông
+  lien_quan: [kham-pha/tam-ly-xa-hoi/phu-hop-so-dong, thi-nghiem/milgram, bang-chung/phan-tich-tong-hop]
 - id: thi-nghiem/darley-latane
   tang: loi
   linh_vuc: tam-ly-xa-hoi
+  lien_quan: [kham-pha/tam-ly-xa-hoi/phu-hop-so-dong, thi-nghiem/asch, bang-chung/phan-tich-tong-hop]
 - id: thi-nghiem/keo-deo
   tang: loi
   linh_vuc: phat-trien
+  lien_quan: [kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc, bang-chung/khung-hoang-tai-lap]
 - id: thi-nghiem/khi-dot-vo-hinh
   tang: loi
   linh_vuc: tri-giac-chu-y
+  lien_quan: [kham-pha/chu-y-tri-giac/nhin-ma-khong-thay, trai-nghiem/mu-thay-doi]
 - id: thi-nghiem/pavlov
   tang: loi
   linh_vuc: hoc-tap
+  lien_quan: [kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc, thi-nghiem/skinner, bang-chung/phan-tich-tong-hop]
 - id: thi-nghiem/skinner
   tang: loi
   linh_vuc: hoc-tap
+  lien_quan: [kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc, thi-nghiem/pavlov]
 - id: thi-nghiem/harlow
   tang: loi
   linh_vuc: phat-trien
+  lien_quan: [kham-pha/phat-trien/gan-bo, thi-nghiem/little-albert, bang-chung/dao-duc-nghien-cuu]
 - id: thi-nghiem/bandura
   tang: loi
   linh_vuc: hoc-tap
+  lien_quan: [kham-pha/phat-trien/mang-xa-hoi-teen, bang-chung/thi-nghiem-doi-chung]
 - id: thi-nghiem/little-albert
   tang: loi
   linh_vuc: hoc-tap
+  lien_quan: [kham-pha/suc-khoe-tam-than/lo-au, thi-nghiem/pavlov, bang-chung/dao-duc-nghien-cuu]
 - id: thi-nghiem/zimbardo
   tang: loi
   linh_vuc: tam-ly-xa-hoi
+  lien_quan: [kham-pha/tam-ly-xa-hoi/phu-hop-so-dong, thi-nghiem/milgram, bang-chung/dao-duc-nghien-cuu]
 - id: thi-nghiem/schachter-singer
   tang: loi
   linh_vuc: cam-xuc-dong-luc
+  lien_quan: [kham-pha/cam-xuc-dong-luc/cam-xuc-co-ban, bang-chung/thi-nghiem-doi-chung]
 - id: thi-nghiem/pygmalion
   tang: loi
   linh_vuc: tam-ly-xa-hoi
+  lien_quan: [kham-pha/phat-trien/tam-ly-hoc-duong, bang-chung/thi-nghiem-doi-chung]
 - id: thi-nghiem/robbers-cave
   tang: loi
   linh_vuc: tam-ly-xa-hoi
+  lien_quan: [kham-pha/tam-ly-xa-hoi/dinh-kien, thi-nghiem/zimbardo]
 - id: thi-nghiem/seligman
   tang: loi
   linh_vuc: hoc-tap
+  lien_quan: [kham-pha/suc-khoe-tam-than/tram-cam]
 - id: trai-nghiem/index
   tang: khung
 - id: trai-nghiem/stroop
@@ -327,42 +390,54 @@
 - id: bang-chung/tuong-quan-nhan-qua
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/hanh-phuc/do-hanh-phuc, thi-nghiem/keo-deo, bang-chung/thi-nghiem-doi-chung]
 - id: bang-chung/thi-nghiem-doi-chung
   tang: loi
   linh_vuc: phuong-phap
   chu_de: Thí nghiệm có nhóm đối chứng
+  lien_quan: [kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly, thi-nghiem/pygmalion, bang-chung/phan-tich-tong-hop]
 - id: bang-chung/do-lon-hieu-ung
   tang: loi
   linh_vuc: phuong-phap
   chu_de: Độ lớn hiệu ứng
+  lien_quan: [kham-pha/tri-nho/phong-cach-hoc, thi-nghiem/darley-latane, bang-chung/p-value]
 - id: bang-chung/mau-va-chon-mau
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/co-so-sinh-hoc/tam-ly-tien-hoa, thi-nghiem/keo-deo, bang-chung/khung-hoang-tai-lap, trai-nghiem/ao-giac-thi-giac]
 - id: bang-chung/p-value
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc, bang-chung/co-mau-suc-manh]
 - id: bang-chung/khung-hoang-tai-lap
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc, thi-nghiem/keo-deo, bang-chung/co-mau-suc-manh]
 - id: bang-chung/phan-tich-tong-hop
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/co-so-sinh-hoc/the-duc-nao, thi-nghiem/asch, bang-chung/khung-hoang-tai-lap]
 - id: bang-chung/thong-ke-mo-ta
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/tinh-cach/tinh-cach-thay-doi, bang-chung/do-lon-hieu-ung]
 - id: bang-chung/do-luong
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/tinh-cach/mbti, bang-chung/doc-bai-bao-khoa-hoc, trai-nghiem/big-five-mini]
 - id: bang-chung/co-mau-suc-manh
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [kham-pha/tam-ly-xa-hoi/bat-hoa-nhan-thuc, thi-nghiem/keo-deo, bang-chung/doc-bai-bao-khoa-hoc]
 - id: bang-chung/doc-bai-bao-khoa-hoc
   tang: loi
   linh_vuc: phuong-phap
   chu_de: Đọc bài báo khoa học
+  lien_quan: [kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly, bang-chung/dao-duc-nghien-cuu]
 - id: bang-chung/dao-duc-nghien-cuu
   tang: loi
   linh_vuc: phuong-phap
+  lien_quan: [thi-nghiem/harlow, bang-chung/doc-bai-bao-khoa-hoc]
 - id: ho-tro/index
   tang: co-han
   linh_vuc: suc-khoe-tam-than
