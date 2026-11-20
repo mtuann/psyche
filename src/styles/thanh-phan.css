@@ -329,6 +329,30 @@
 	outline: 2px solid var(--sl-color-text-accent);
 	outline-offset: 2px;
 }
+/* Hình theo chuẩn mới (data-chuan="2", plans/nang-cap/hinh.md mục 3.1): hai bản SVG, đổi theo bề rộng khung bằng
+   @container. Khung rộng tối đa 40rem (bằng viewBox của bản rộng, 640); bản rộng hiện từ khung 38rem (chữ 12 còn trên 11 px), bản hẹp
+   tối đa 28rem để chữ không phóng to quá. Bản đang ẩn
+   dùng display: none để ra khỏi cây trợ năng. Khi in hiện bản rộng. */
+.pz-fig[data-chuan='2'] {
+	container-type: inline-size;
+	max-width: 40rem;
+}
+.pz-fig[data-chuan='2'] .pz-fig__rong {
+	display: none;
+}
+.pz-fig[data-chuan='2'] .pz-fig__hep {
+	max-width: 28rem;
+	margin-inline: auto;
+}
+@container (min-width: 38rem) {
+	.pz-fig[data-chuan='2'] .pz-fig__hep {
+		display: none;
+	}
+	.pz-fig[data-chuan='2'] .pz-fig__rong {
+		display: block;
+	}
+}
+/* Khi in: không ép bản rộng; khổ giấy rộng thì @container tự chọn bản rộng, cột hẹp của Sách in vẫn theo khung (hinh.md mục 3.1) */
 @media print {
 	.pz-fig__cuon {
 		overflow: visible;

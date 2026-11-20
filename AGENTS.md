@@ -28,6 +28,7 @@ npm run preview   # xem dist/ vừa build: http://localhost:4321/psyche/
 npm test          # kiểm thử trên dist/: chạy sau npm run build hay npm run build:xem
 npm run test:trinh-duyet  # kiểm thử trình duyệt trên trang mẫu của dist/: ba trình duyệt, ba cỡ màn hình, axe, tìm kiếm
 npm run lighthouse        # Lighthouse ở tối đa ba trang mẫu của dist/, kiểm luật 7 của kế hoạch
+npm run test:hinh         # đo hình trên mọi trang có hình của dist/ (Chromium): chữ từ 11 px ở 360 px, không đè, không ra ngoài; axe trong hình
 ```
 
 - Kiểm thử ở `tests/*.test.mjs`, chạy bằng trình kiểm thử có sẵn của Node (`node --test`, các file chạy song song). Thêm kiểm thử thì thêm file `tests/<tên>.test.mjs`.
@@ -59,7 +60,7 @@ Pagefind (Starlight) bỏ dấu khi so: gõ "tri nho" ra "trí nhớ". Chữ "đ
 
 ## CI và đăng site
 
-- `.github/workflows/test.yml`: nhánh `moi/**`, `mo/**`, `them/**`, pull request, hay bấm chạy tay. Sáu job chạy song song, mỗi job tự build bản xem: `npm test`, kiểm thử trình duyệt trên chromium, webkit, firefox (mỗi trình duyệt một job), Lighthouse, ảnh chụp. Không đăng gì.
+- `.github/workflows/test.yml`: nhánh `moi/**`, `mo/**`, `them/**`, pull request, hay bấm chạy tay. Bảy job chạy song song, mỗi job tự build bản xem: `npm test`, kiểm thử trình duyệt trên chromium, webkit, firefox (mỗi trình duyệt một job), Lighthouse, đo hình (`hinh`, kế hoạch nâng cấp H1), ảnh chụp. Không đăng gì.
 - `.github/workflows/deploy.yml`: mỗi lần push lên `main`. Build bản thật, `npm test`, rồi các job trình duyệt song song (commit đã qua `test.yml` ở nhánh thì chỉ chromium và Lighthouse). Đạt hết thì đăng `dist/` lên GitHub Pages; hỏng bước nào thì không đăng, site giữ bản trước.
 - **Máy canh** (đợt 9): `.github/workflows/may-canh.yml` mỗi thứ Hai (hay bấm chạy tay), không chặn deploy, không đăng gì. Bốn việc, mỗi việc một nhãn và đúng một issue mở (có việc thì mở hay cập nhật, hết việc thì tự đóng): `rut-bai` (DOI của `src/data/nguon.yml` và link doi.org trong hồ sơ bị rút, bày tỏ quan ngại, đính chính hay có bản mới, theo trường `updated-by` của Crossref, gồm dữ liệu Retraction Watch; issue nêu trang, nhận định dùng nguồn), `thoi-su` (`het_han` của mục đã khóa tới hạn hay còn dưới 30 ngày), `kiem-lai` (`kiem_lai_truoc` tới hạn), `link-hong` (lychee). Thử ở máy: `node tools/may-canh.mjs <rut-bai|thoi-su|kiem-lai|tat-ca> [--ngay 2027-06-01] [--khong-mang] [--ra issue.md]`. Thông báo đã xét thì ghi vào `tools/may-canh-da-xet.yml` để không báo lại. Kiểm thử: `tests/may-canh.test.mjs` (fetch giả, không gọi mạng). `ho-tro-quarterly.yml` mỗi quý mở issue nhắc Hỗ trợ và Nghiên cứu mới. Xử lý cờ: `plans/ben-vung/them-noi-dung.md` mục 7.
 - Push chỉ đổi `plans/`, `README.md`, `AGENTS.md`, `CLAUDE.md`, giấy phép thì cả hai workflow bỏ qua. Lưu đệm `node_modules` và trình duyệt Playwright. Các bước dùng chung ở `.github/actions/kiem-thu/action.yml`. Chi tiết và lý do: `plans/lam-lai/cong-nghe.md` mục 8.

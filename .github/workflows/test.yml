@@ -29,7 +29,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        phan: [npm-test, chromium, webkit, firefox, lighthouse, anh-chup]
+        phan: [npm-test, chromium, webkit, firefox, lighthouse, hinh, anh-chup]
     # chặn đường treo (mặc định của GitHub là 6 giờ); phần lâu nhất thường khoảng 4 phút
     timeout-minutes: 30
     steps:
