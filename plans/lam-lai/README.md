@@ -185,7 +185,7 @@ Chuẩn hóa 9 bài lệch khung theo khuôn 7 mục, mỗi bài có câu hỏi 
 
 **Xong khi:** site mới không còn cần `../psyche-zero/` để build hay kiểm thử.
 
-**Sau đợt 9:** thêm nội dung theo `../ben-vung/them-noi-dung.md`, thứ tự ưu tiên ở mục 9 (lấp lĩnh vực mỏng trước: Học tập, Cơ sở sinh học, Ý thức và giấc ngủ, Căng thẳng, Động lực, Lịch sử; chủ repo duyệt 17/11/2026).
+**Sau đợt 9:** theo kế hoạch nâng cấp `../nang-cap/README.md` (chủ repo bảo bắt đầu 20/11/2026): NC0, NC1, rồi nâng cấp bài theo lô (N) và thêm bài (M, thay mục 9 của `../ben-vung/them-noi-dung.md`).
 
 ## Việc treo (cập nhật 17/11/2026)
 

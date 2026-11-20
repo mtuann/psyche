@@ -16,7 +16,7 @@ Kiến trúc khóa và chuẩn kiểm định giữ nguyên (`../ben-vung/`). K�
 | `kiem-toan/` | Sáu báo cáo kiểm toán ngày 17/11/2026: bốn nhóm trang (nội dung, hình; từng trang một), trình bày (đo trên bản build), độ phủ (so giáo trình). Là đầu mối, chưa kiểm định: lô làm việc kiểm lại (mục 9) |
 | `phan-bien/` | Hai bản phản biện bản nháp, viết trong dự án (phiên AI, không phải phản biện bên ngoài): nội dung và người đọc; kỹ thuật, kiểm định và chi phí. Cách xử lý từng điểm: mục 10 |
 
-**Trạng thái: bản đề xuất ngày 17/11/2026, đã qua một vòng phản biện (mục 10), chờ chủ repo duyệt** (mục 7). Khi duyệt:
+**Trạng thái: chủ repo bảo bắt đầu làm ngày 20/11/2026** ("bắt đầu làm đi, làm từng phần theo kế hoạch nâng cấp"). Hiểu là duyệt mục 7, ý 1–3 theo đề xuất. Ý 4 (hạn tìm chuyên gia), ý 5 (Search Console, link báo lỗi), ý 6 (nhịp) và câu chữ S5 vẫn chờ chủ repo. Kế hoạch đã qua một vòng phản biện (mục 10). Các việc đã làm khi duyệt:
 - mục 3.7 thay mục 9 của `../ben-vung/them-noi-dung.md`; mục "Đọc thêm" ở mục 3 của file ấy đổi theo việc L1;
 - `AGENTS.md` trỏ tới file này.
 

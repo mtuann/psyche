@@ -1,6 +1,6 @@
 # Sổ tay cho agent: Psyche (repo psyche)
 
-Psyche (bản trước tên Psyche Zero) là site tâm lý học bằng tiếng Việt cho người không học chuyên ngành: mỗi trang trả lời một câu hỏi, **bằng chứng nói gì, và chắc chắn đến đâu?** Site được làm lại trong repo này (xong 17/11/2026) (`mtuann/psyche`, site ở https://mtuann.github.io/psyche/). Kế hoạch hiện hành: `plans/lam-lai/README.md`; khi sổ tay này khác kế hoạch thì kế hoạch đúng. Người mới đọc `plans/lam-lai/giao-viec.md`.
+Psyche (bản trước tên Psyche Zero) là site tâm lý học bằng tiếng Việt cho người không học chuyên ngành: mỗi trang trả lời một câu hỏi, **bằng chứng nói gì, và chắc chắn đến đâu?** Site được làm lại trong repo này (xong 17/11/2026) (`mtuann/psyche`, site ở https://mtuann.github.io/psyche/). Kế hoạch hiện hành: `plans/nang-cap/README.md` (nâng cấp nội dung, hình, trình bày, mở rộng; chủ repo bảo bắt đầu 20/11/2026); kế hoạch làm lại (`plans/lam-lai/README.md`) đã xong, vẫn là chỗ tra quy tắc chung, ba mức review, việc treo. Khi sổ tay này khác kế hoạch thì kế hoạch đúng. Người mới đọc `plans/lam-lai/giao-viec.md`.
 
 ## Site cũ và repo mẫu
 

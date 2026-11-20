@@ -33,7 +33,7 @@ Không đụng trang lõi nào khác, trừ khi đơn vị mới mâu thuẫn v�
 
 ## 3. Bài mở rộng mới
 
-- Bản ghi trong `src/data/trang.yml`: `tang: mo-rong`, `linh_vuc`, `dua_tren: [<đường dẫn bài lõi>]` (không ghi ở frontmatter). Trang lõi trong `dua_tren` tự có mục "Đọc thêm" trỏ tới bài mới (sinh lúc build), không phải mở khóa.
+- Bản ghi trong `src/data/trang.yml`: `tang: mo-rong`, `linh_vuc`, `dua_tren: [<đường dẫn bài lõi>]` (không ghi ở frontmatter). Trang lõi trong `dua_tren` tự có mục "Đọc tiếp" (phần "Bài mở rộng dựa trên bài này") trỏ tới bài mới, sinh lúc build, không phải mở khóa (việc L1 của `../nang-cap/README.md`).
 - Lượt 2 kiểm mẫu khoảng 8 nhận định, cộng mọi nhận định loại `nhan`, `lam-sang`; mẫu có câu sai thì kiểm hết.
 - Hạn xem lại 12–18 tháng (`kiem_lai_truoc`); máy canh nhắc trước 30 ngày. Tới hạn: kiểm lại phần thời sự và nhãn; bằng chứng đã chín thì có thể nâng thành bài lõi (kiểm V3, khóa).
 
@@ -78,6 +78,8 @@ Không quét lại toàn site: chỉ mở đúng trang, đúng khẳng định m
 > Bạn viết bổ sung `<loai>` cho bài `<trang lõi>` của repo psyche, mục `<id tiêu đề>`, nhánh `them/bo-sung-<slug>-<yyyy-mm>`. Model: Sonnet (Opus nếu có thể đổi nhãn). Đọc `plans/ben-vung/them-noi-dung.md` mục 5 và hồ sơ của bài lõi (`kiem-dinh/<trang lõi>.yml`) để biết bài đang nói gì và dựa vào nguồn nào. Không sửa bài lõi. Lập hồ sơ cho bổ sung, viết ngắn, ghi `anh_huong_nhan` và lý do. Khi xong như trên.
 
 ## 9. Thứ tự ưu tiên sau đợt 9 (chủ repo duyệt 17/11/2026)
+
+**Đã thay** (20/11/2026) bằng mục 3.7 của `../nang-cap/README.md` (danh sách M1, M2, M3 xếp lại theo kiểm toán độ phủ). Bảng dưới chỉ để tra.
 
 Đếm lúc xong đợt 8 (68 bài lõi, 12 mở rộng, 11 công cụ): lĩnh vực lệch nhau nhiều. Phương pháp có 14 bài lõi, Tâm lý xã hội 10; còn Căng thẳng và Hạnh phúc mỗi lĩnh vực 1 bài lõi, Ý thức và giấc ngủ 2, Tính cách 2. Học tập chỉ có 5 thí nghiệm, không có bài giải thích nền. Cả 11 công cụ thuộc nhận thức và tính cách. Nhiều bài ghi "chưa tìm thấy nghiên cứu ở Việt Nam". Các chủ đề dưới đây lấy từ bảng chỗ trống kinh điển (`README.md` mục 3), làm theo mục 4 (bài lõi) hay mục 3 (bài mở rộng).
 
