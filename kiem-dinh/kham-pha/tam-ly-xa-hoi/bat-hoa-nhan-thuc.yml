@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D5-L4)
       review: Claude Sonnet 5.5 (agent review D5-L4, 10/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d5-l4-kiem-mau.yml), đạt, 10/11/2026
+  - so: 2
+    ngay: 2026-11-20
+    nhanh: mo/hinh-loi
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent S3, kế hoạch nâng cấp, vẽ lại hình festinger-diverging)
+      luot_2: "không cần: vẽ lại cùng chữ và số (ve-lai-hinh), máy so tập số và tập từ"
+      review: null
+      kiem_mau: null
 nguon:
   - id: fest1959
     ten: 'Festinger & Carlsmith (1959), J Abnorm Soc Psychol 58, 203-210: toàn văn (psychclassics.yorku.ca)'
@@ -650,3 +659,10 @@ doi_chu:
   - cu: 'Ngộ nhận "Tôi luôn nhìn nhận quyết định…": :nhan[bac-bo] "Nhiều nghiên cứu cho thấy thái độ của ta có thể dịch …, nên ta không phải lúc nào cũng nhìn quyết định của mình một cách khách quan."'
     moi: '"Chưa chắc." (không chip nhãn) + kết quả 2024, theo lý thuyết bất hòa, tự tri giác giải thích khác nên còn tranh cãi'
     ly_do: Review n34, n35.
+  - cu: 'Hình festinger-diverging (một SVG viewBox 680×300): nhãn "+5 (cực thích)" và tên trục ra ngoài mép'
+    moi: 'Hai bản SVG (hẹp xếp dọc, rộng), chữ và số giữ nguyên; trục −5 đến +5 vẫn 10 đơn vị, thanh 0 làm gốc, thêm nét ngang cho trục (không chữ); khung thu về trong mép'
+    ly_do: 'Vẽ lại theo plans/nang-cap/hinh.md mục 3 (ve-lai-hinh). Máy so tập số và tập từ với bản ở da0e1ef: tập số bằng nhau, không từ mới. Không thêm khối "Xem số liệu của hình": loại nhận định hinh chưa có ở công cụ khóa (việc K2); ba số đã có nguyên văn ở chú thích.'
+mo_khoa:
+  - ngay: 2026-11-20
+    nhanh: mo/hinh-loi
+    ly_do: "Lỗi phát hiện khi kiểm toán (kế hoạch nâng cấp S3, 17/11/2026): hình festinger-diverging lỗi bố cục (nhãn +5 và tên trục ra ngoài mép); vẽ lại theo plans/nang-cap/hinh.md mục 3, giữ chữ và số"

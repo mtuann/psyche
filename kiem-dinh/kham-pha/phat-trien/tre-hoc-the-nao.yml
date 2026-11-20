@@ -13,6 +13,15 @@ lan:
       luot_2: Claude Sonnet 5.5 (agent riêng, lượt 2 D6-L3)
       review: Claude Opus 5.5 (agent review D6-L3, 10/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d6-l3-kiem-mau.yml), đạt, 10/11/2026
+  - so: 2
+    ngay: 2026-11-20
+    nhanh: mo/hinh-loi
+    ma_bam: null
+    nguoi:
+      luot_1: Claude Sonnet 5.5 (agent S3, kế hoạch nâng cấp, vẽ lại hình piaget-timeline)
+      luot_2: "không cần: vẽ lại cùng chữ và số (ve-lai-hinh), máy so tập số và tập từ"
+      review: null
+      kiem_mau: null
 nguon:
   - id: baillargeon1987
     ten: 'Baillargeon (1987), Dev Psychol 23(5), 655–664: toàn văn (PDF, Internet Archive, bộ wikipedia-scholarly-sources-corpus)'
@@ -1087,3 +1096,10 @@ doi_chu:
   - cu: Mục Nguồn (không có McGarrigle & Donaldson 1974, Rivera 1999, OpenStax Lifespan Development)
     moi: thêm ba mục ấy
     ly_do: "Review D6-L3: nguồn mới dẫn ở khung nhãn, hình và mục Các lý thuyết."
+  - cu: 'Hình piaget-timeline (một SVG viewBox 640×300): đường dẫn từ mốc xuống nhãn cắt qua chữ của các nhãn khác'
+    moi: 'Hai bản SVG (hẹp, rộng), chữ và số giữ nguyên (nhãn tách dòng bằng tspan); ba phát hiện xếp theo thứ tự để đường dẫn không cắt chữ (4–6 tuổi, rồi 5 tháng, rồi 4,5 tháng), mỗi nhãn nằm bên phải đường dẫn của mình'
+    ly_do: 'Vẽ lại theo plans/nang-cap/hinh.md mục 3 (ve-lai-hinh). Máy so tập số và tập từ với bản ở da0e1ef: tập số bằng nhau, không từ mới. Thứ tự dòng đổi để đường không cắt chữ; ba phát hiện không nối với nhau và chú thích của trang không nói về thứ tự.'
+mo_khoa:
+  - ngay: 2026-11-20
+    nhanh: mo/hinh-loi
+    ly_do: "Lỗi phát hiện khi kiểm toán (kế hoạch nâng cấp S3, 17/11/2026): hình piaget-timeline lỗi bố cục (đường dẫn cắt qua chữ); vẽ lại theo plans/nang-cap/hinh.md mục 3, giữ chữ và số"
