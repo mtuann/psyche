@@ -15,14 +15,14 @@ lan:
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d7-l1-kiem-mau.yml), đạt, 17/11/2026
       cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
   - so: 2
-    ngay: null
-    nhanh: mo/sktt-than-trong-wt
-    ma_bam: null
+    ngay: 2026-11-20
+    nhanh: moi/nc0-gop
+    ma_bam: sha256:650c7de2227bd06d9ac64c98004727bbdc11e8064ccd59f71a5ac6fd34e22d00
     nguoi:
       luot_1: 'Claude Opus 5.5 (agent lượt 1 S5, mo/sktt-than-trong, 20/11/2026): sửa mục «Chuyên gia phân biệt bằng cách nào?» theo hướng thận trọng hơn (n14, n17, n18, n20 da-sua; n15, n16 da-bo; n54 thêm mới; n19 chuyển chỗ); không thêm nguồn, không đổi nhãn; danh sách cho lượt 2: plans/nang-cap/bao-cao/s5-luot-2.yml'
       luot_2: "Claude Opus 5.5 (agent lượt 2 riêng S5, mo/sktt-luot-2, 20/11/2026; plans/nang-cap/bao-cao/s5-luot-2-ket-qua.yml)"
       review: "Claude Opus 5.5 (agent review riêng S5, mức Lớn, không làm lượt 1 hay lượt 2, 20/11/2026): đạt; mọi thay đổi theo hướng thận trọng hơn, không còn danh sách để tự chấm, không câu khuyên dùng hay ngừng thuốc"
-      kiem_mau: null
+      kiem_mau: chủ repo trả lời «đạt» cho các mục kiểm mẫu của NC0 (S1, S2, S3, S5 gồm câu chữ, T4; danh sách ở plans/nang-cap/bao-cao/nc0-kiem-mau.md), 20/11/2026
       cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
 nguon:
   - id: icd11-cddr
@@ -268,6 +268,10 @@ nhan_dinh:
     vi_tri: CDDR tr. 212
     ket_qua: da-bo
     ghi_chu: 'Chữ cũ cùng ý ("ít nhất một trong hai triệu chứng cốt lõi phải có mặt: (1) khí sắc trầm buồn…, hoặc (2) mất hẳn hứng thú"); diễn đạt lại. Kế hoạch nâng cấp S5 (20/11/2026): bỏ gạch đầu dòng «Cần có ít nhất một trong hai dấu hiệu cốt lõi…» khỏi trang. Lý do: bốn gạch đầu dòng gần như tiêu chí chẩn đoán, dễ thành bảng tự kiểm (kiem-sinh-hoc-cam-xuc.md [A][CG], phản biện P7); lô thận trọng tạm chờ chuyên gia. Nội dung vẫn đúng theo nguồn; thay bằng mô tả cách người có chuyên môn đánh giá (n17, n18, n19). Lượt 2 cũ đã xóa.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+    luot_2_ghi_chu: "gần chẩn đoán: viết theo dạng tiêu chí ('Cần có ít nhất…'). Nội dung đúng; nên giữ ngay cạnh lời 'chỉ chuyên gia mới chẩn đoán được' và không thêm số đếm triệu chứng."
   - id: n16
     cau: 'Chuyên gia xem xét thêm các triệu chứng: khó tập trung hay khó quyết định; cảm giác vô giá trị hay tội lỗi quá mức; tuyệt vọng về tương lai; ý nghĩ lặp lại về cái chết; giấc ngủ, thèm ăn hay cân nặng thay đổi rõ; mệt mỏi, thiếu năng lượng; bồn chồn hay chậm chạp đến mức người khác nhận thấy.'
     loai: lam-sang
@@ -278,6 +282,10 @@ nhan_dinh:
     vi_tri: CDDR tr. 212–213 (nhóm nhận thức – hành vi và nhóm thực vật)
     ket_qua: da-bo
     ghi_chu: 'Chữ cũ: "Bảy triệu chứng còn lại trong danh sách gồm…" (theo DSM-5-TR, đếm 7). Nay liệt kê theo ICD-11 (thêm "tuyệt vọng về tương lai"), không đếm, để không thành bảng tự chấm. Kế hoạch nâng cấp S5 (20/11/2026): bỏ gạch đầu dòng liệt kê các triệu chứng khác (khó tập trung, vô giá trị, tuyệt vọng, ý nghĩ về cái chết, ngủ ăn, mệt, bồn chồn) khỏi trang. Lý do như n15: danh sách triệu chứng gần nguyên tiêu chí ICD-11. Lượt 2 cũ đã xóa.'
+    luot_2: dung
+    luot_2_nguon:
+      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+    luot_2_ghi_chu: "gần chẩn đoán: danh sách triệu chứng gần như nguyên tiêu chí ICD-11; đã khung là 'chuyên gia xem xét', không có ngưỡng đếm. Nên giữ như vậy."
   - id: n17
     cau: 'Người có chuyên môn xem xét cả bức tranh: các thay đổi kéo dài bao lâu, có mặt gần như mỗi ngày hay không, và ảnh hưởng đến học tập, công việc, gia đình hay các mối quan hệ tới mức nào.'
     loai: lam-sang
@@ -816,5 +824,5 @@ doi_chu:
     ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026), lô thận trọng tạm chờ chuyên gia; hồ sơ n14–n20, n54.'
 mo_khoa:
   - ngay: 2026-11-20
-    nhanh: mo/sktt-than-trong-wt
+    nhanh: mo/sktt-than-trong
     ly_do: "Kế hoạch nâng cấp S5 (20/11/2026): lô thận trọng tạm, chờ chuyên gia: mục «Chuyên gia phân biệt bằng cách nào?» bỏ bốn gạch đầu dòng giống tiêu chí chẩn đoán, thay bằng mô tả cách người có chuyên môn đánh giá và dấu hiệu nên đi khám (kiem-sinh-hoc-cam-xuc.md [A][CG]; phản biện P7)"

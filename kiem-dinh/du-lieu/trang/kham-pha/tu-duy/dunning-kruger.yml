@@ -11,6 +11,16 @@ lan:
       review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
     truong: [ linh_vuc, moi, tang ]
+  - so: 2
+    ngay: 2026-11-20
+    nhanh: moi/nc0-gop
+    ma_bam: sha256:5e41f83d34889ab1ec2a1340a954db6d9b38b7281023ca8967740e73b4c10ee8
+    nguoi:
+      luot_1: "Claude Opus 5.5 (phiên chính, kế hoạch nâng cấp NC0, 20/11/2026): thêm câu ve-site cho dua_tren; khóa rộng hơn #dua_tren,linh_vuc,moi,tang (trường đã khóa không đổi)"
+      luot_2: không cần (câu về chính site, review kiểm)
+      review: "Claude Sonnet 5.5 (agent review K1, 20/11/2026): dung"
+      kiem_mau: chủ repo trả lời «đạt» cho các mục kiểm mẫu của NC0 (câu dua_tren ở plans/nang-cap/bao-cao/k1-dua-tren.yml, câu lien_quan ở l1-lien-quan.yml), 20/11/2026
+    truong: [ dua_tren, linh_vuc, moi, tang ]
 nguon: []
 nhan_dinh:
   - id: n1
@@ -21,4 +31,12 @@ nhan_dinh:
       - linh_vuc
     ket_qua: dung
     ghi_chu: đối chiếu dòng của trang trong plans/lam-lai/anh-xa.md (tầng, lĩnh vực, "(mới)"); tests/du-lieu.test.mjs kiểm trang.yml khớp bảng ấy
+    review: dung
+  - id: n2
+    cau: Bài mở rộng kham-pha/tu-duy/dunning-kruger («Kẻ dốt hay tự tin thái quá?») dựa trên bài lõi kham-pha/tu-duy/thien-kien-xac-nhan («Vì sao ta chỉ thấy điều mình muốn thấy?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
+    loai: ve-site
+    truong:
+      - dua_tren
+    ket_qua: dung
+    ghi_chu: "Kế hoạch nâng cấp K1 (20/11/2026); câu và lý do ở plans/nang-cap/bao-cao/k1-dua-tren.yml. Review: Claude Sonnet 5.5 (agent review K1, 20/11/2026): dung."
     review: dung

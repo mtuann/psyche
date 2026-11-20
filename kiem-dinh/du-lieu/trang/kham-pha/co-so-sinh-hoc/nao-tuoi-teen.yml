@@ -11,6 +11,16 @@ lan:
       review: Claude Sonnet 5.5 (agent review D2-0, không làm lượt 1 hay lượt 2), 30/10/2026
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên (plans/lam-lai/bao-cao/d2-0-kiem-mau.yml), đạt, 30/10/2026
     truong: [ linh_vuc, moi, tang ]
+  - so: 2
+    ngay: 2026-11-20
+    nhanh: moi/nc0-gop
+    ma_bam: sha256:50f4ad4cc752defcdb7014b7d43517ed9fd3098e722d46ab1448cd73a1b90763
+    nguoi:
+      luot_1: "Claude Opus 5.5 (phiên chính, kế hoạch nâng cấp NC0, 20/11/2026): thêm câu ve-site cho lien_quan; khóa rộng hơn #lien_quan,linh_vuc,moi,tang (trường đã khóa không đổi)"
+      luot_2: không cần (câu về chính site, review kiểm)
+      review: "Claude Sonnet 5.5 (agent review ve-site L1, 20/11/2026): dung sau khi bỏ 11 cặp, thay 2 (l1-du-lieu/lq-review.yml)"
+      kiem_mau: chủ repo trả lời «đạt» cho các mục kiểm mẫu của NC0 (câu dua_tren ở plans/nang-cap/bao-cao/k1-dua-tren.yml, câu lien_quan ở l1-lien-quan.yml), 20/11/2026
+    truong: [ lien_quan, linh_vuc, moi, tang ]
 nguon: []
 nhan_dinh:
   - id: n1
@@ -21,4 +31,12 @@ nhan_dinh:
       - linh_vuc
     ket_qua: dung
     ghi_chu: đối chiếu dòng của trang trong plans/lam-lai/anh-xa.md (tầng, lĩnh vực, "(mới)"); tests/du-lieu.test.mjs kiểm trang.yml khớp bảng ấy
+    review: dung
+  - id: n2
+    cau: 'Khối Đọc tiếp của kham-pha/co-so-sinh-hoc/nao-tuoi-teen («Não tuổi teen khác gì não người lớn?») hiện 3 trang liên quan: kham-pha/co-so-sinh-hoc/dopamine («Dopamine có phải "chất gây sướng"?»); thi-nghiem/keo-deo («Viên kẹo dẻo có đoán được tương lai? (Thí nghiệm "kẹo dẻo")»); bang-chung/co-mau-suc-manh («Bao nhiêu người là đủ?»)'
+    loai: ve-site
+    truong:
+      - lien_quan
+    ket_qua: dung
+    ghi_chu: "Kế hoạch nâng cấp L1 (20/11/2026); câu và lý do ở plans/nang-cap/bao-cao/l1-lien-quan.yml. Review: Claude Sonnet 5.5 (agent review ve-site L1, 20/11/2026): dung sau khi bỏ 11 cặp, thay 2 (l1-du-lieu/lq-review.yml)."
     review: dung
