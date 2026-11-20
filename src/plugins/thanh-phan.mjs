@@ -195,7 +195,23 @@ export function hinh(ten, trang) {
 	if (!/^<figure class="pz-fig"[\s>]/.test(html) || !/<figcaption>/.test(html))
 		throw new Error(`src/hinh/${ten}.html phải là một <figure class="pz-fig"> có <figcaption>`);
 	if (!/<svg\b[^>]*\srole="img"[^>]*\saria-label="[^"]+"/.test(html)) throw new Error(`src/hinh/${ten}.html: <svg> cần role="img" và aria-label`);
-	return html;
+	return cuonHinh(html, ten);
+}
+
+/**
+ * Cách tạm cho hình cũ ở màn hẹp (kế hoạch nâng cấp, việc T1; plans/nang-cap/hinh.md mục 4.4): bọc <svg> trong khung
+ * cuộn ngang nhận focus; CSS giữ SVG rộng tối thiểu min(34rem, bề rộng viewBox), nên chữ trong hình không nhỏ quá khi màn
+ * hẹp, người đọc kéo ngang để xem. Chỉ đổi HTML dựng ra, không đổi file src/hinh/ (mã băm của trang giữ nguyên). Hình
+ * theo chuẩn mới (data-chuan="2" ở <figure>, có bản hẹp riêng) không bọc.
+ */
+export function cuonHinh(html, ten) {
+	if (/^<figure\b[^>]*\sdata-chuan="2"/.test(html)) return html;
+	const svg = /<svg\b[^>]*>[\s\S]*<\/svg>/.exec(html);
+	if (!svg) return html;
+	const nhan = /\saria-label="([^"]+)"/.exec(svg[0])[1];
+	const rong = Number(/\sviewBox="[\d.]+ [\d.]+ ([\d.]+) [\d.]+"/.exec(svg[0])?.[1]) || 544;
+	const khung = `<div class="pz-fig__cuon" tabindex="0" role="region" aria-label="Hình: ${nhan} (cuộn ngang được)" style="--pz-fig-rong:${rong}px">`;
+	return html.slice(0, svg.index) + khung + svg[0] + '</div>' + html.slice(svg.index + svg[0].length);
 }
 
 // ---------- Danh sách nguồn ----------

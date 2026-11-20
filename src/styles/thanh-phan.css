@@ -316,6 +316,27 @@
 .pz-fig .pz-fig-b {
 	color: var(--pz-accent);
 }
+/* Hình cũ ở màn hẹp (T1, cách tạm tới khi hình có bản hẹp): khung cuộn ngang, SVG không hẹp hơn min(34rem, bề rộng
+   viewBox), nên chữ nhỏ nhất khoảng 8–10 px thay vì 5–6 px. Màn đủ rộng thì không cuộn. */
+.pz-fig__cuon {
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+}
+.pz-fig__cuon > svg {
+	min-width: min(34rem, var(--pz-fig-rong, 34rem));
+}
+.pz-fig__cuon:focus-visible {
+	outline: 2px solid var(--sl-color-text-accent);
+	outline-offset: 2px;
+}
+@media print {
+	.pz-fig__cuon {
+		overflow: visible;
+	}
+	.pz-fig__cuon > svg {
+		min-width: 0;
+	}
+}
 .pz-fig figcaption {
 	margin-top: 0.5rem;
 	color: var(--sl-color-gray-2);
@@ -1017,6 +1038,16 @@
 .pz-ds-bai li > :is(a, .pz-sap-co) {
 	font-weight: 600;
 	line-height: 1.4;
+}
+/* T3: thẻ nằm ngoài vùng chữ của Starlight (not-content) nên tiêu đề từng dùng màu link mặc định của trình duyệt */
+.pz-ds-bai li > a {
+	color: var(--sl-color-text-accent);
+	text-decoration: none;
+}
+.pz-ds-bai li > a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
 }
 /* vùng bấm từ 44 px trên màn hình cảm ứng */
 @media (pointer: coarse) {

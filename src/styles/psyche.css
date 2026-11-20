@@ -353,6 +353,10 @@ starlight-theme-select select {
 	font-size: clamp(1.45rem, 1.15rem + 1vw, 1.8rem);
 	letter-spacing: -0.015em;
 }
+/* Cấp 3 luôn nhỏ hơn cấp 2 (T2: ở 360 px h3 của Starlight 1.5rem = 24 px, lớn hơn h2 23,2 px) */
+[data-has-sidebar] .sl-markdown-content h3 {
+	font-size: clamp(1.15rem, 1.05rem + 0.5vw, 1.35rem);
+}
 [data-has-sidebar] .sl-markdown-content h2::before {
 	content: counter(pz-muc, decimal-leading-zero);
 	display: block;
