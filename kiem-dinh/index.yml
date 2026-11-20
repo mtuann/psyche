@@ -46,7 +46,7 @@ lan:
     nguoi:
       luot_1: "Claude Opus 5.5 (phiên chính, moi/nc0-trang-chu, kế hoạch nâng cấp T4, 20/11/2026): thêm khối :::loi-vao (n10, n5) và câu dẫn Sách in (n11); không đổi chữ nào khác"
       luot_2: "không cần: chỉ thêm câu về chính site (ve-site), kiểm bằng review"
-      review: null
+      review: "Claude Haiku 5.5 (agent review riêng, không làm lượt 1; 20/11/2026): n5, n10, n11 dung: số đếm khớp dist và trang.yml; năm câu khớp description của trang mục lục"
       kiem_mau: null
 nguon: []
 nhan_dinh:
@@ -79,7 +79,7 @@ nhan_dinh:
     loai: ve-site
     ket_qua: da-sua
     ghi_chu: 'src/plugins/thanh-phan.mjs: ::cong-cu-noi-bat (trang công cụ có trong bản build), ::bai-moi{so="6"} (bài mới khóa gần nhất theo ngày kiểm định cuối), ::the-linh-vuc (14 thẻ theo thu_tu). Review (Claude Opus 5.5 (agent review D2-L1, 30/10/2026)): dung. src/plugins/thanh-phan.mjs: congCuNoiBat (tầng cong-cu có trong bản build), baiMoi (so=6, lõi và mở rộng, xếp theo ngày lần kiểm định cuối), theLinhVuc (14 thẻ theo thu_tu). Bản xem 30/10/2026: ba khối dựng đúng. Lần 6 (moi/nc0-trang-chu, kế hoạch nâng cấp T4, 20/11/2026): thêm khối :::loi-vao (src/plugins/thanh-phan.mjs, loiVao): số bài đếm lúc build, chỉ trang có trong bản build (bài khám phá, thí nghiệm, bài bằng chứng theo laBai; công cụ tầng cong-cu; thẻ ngộ nhận có trong bản build). Bản xem 20/11/2026: 51 bài, 15 thí nghiệm, 12 bài, 60 ngộ nhận, 11 công cụ.'
-    review: null
+    review: dung
   - id: n6
     cau: 'Hồ sơ trước, chữ sau: mỗi khẳng định được đối chiếu với nghiên cứu gốc hay tổng hợp đáng tin, ghi nguồn và câu trích.'
     loai: ve-site
@@ -109,11 +109,13 @@ nhan_dinh:
     loai: ve-site
     ket_qua: dung
     ghi_chu: 'Kế hoạch nâng cấp T4 (20/11/2026). Mỗi câu theo description của trang mục lục tương ứng (đã khóa): kham-pha/index «Các chủ đề tâm lý học, mỗi bài là một câu hỏi về con người, kèm bằng chứng và mức độ chắc chắn.»; thi-nghiem/index «… mỗi thí nghiệm là một hướng dẫn đọc: thiết kế, kết quả, lần làm lại và tranh luận.» (trang mục lục: mỗi thí nghiệm được kiểm chứng lại từ đầu); bang-chung/index «Cách đọc một tin tức hay một nghiên cứu tâm lý học — tương quan và nhân quả, nhóm đối chứng, độ lớn hiệu ứng.»; ngo-nhan/index «Những niềm tin phổ biến về tâm trí, kèm nhãn mức độ chắc chắn, giải thích ngắn và nguồn.»; trai-nghiem/index «Các thí nghiệm tâm lý học kinh điển bạn có thể tự làm trong trình duyệt, so với kết quả nghiên cứu gốc.». Tên thẻ theo title của trang mục lục, trừ «Bài khám phá» (title «Khám phá»).'
+    review: dung
   - id: n11
     cau: 'Muốn đọc liền một mạch hay in ra? Sách in gộp mọi bài đã kiểm chứng thành một trang.'
     loai: ve-site
     ket_qua: dung
     ghi_chu: 'Kế hoạch nâng cấp T4 (20/11/2026). sach/index (đã khóa): description «Mọi bài đã kiểm chứng của Psyche gộp thành một trang, in ra hay lưu thành PDF để đọc không cần mạng.»; chữ trang «gộp mọi bài khám phá, thí nghiệm kinh điển và hiểu bằng chứng đã lên site».'
+    review: dung
 ghi_chu: 'Trang chủ tạm (D1.1, bố cục C ở D1.3), viết mới, không chuyển từ trang chủ cũ. Chỉ có câu về chính site: site đang làm lại, bản cũ ở /psyche-zero/, ba bước lên site; đã đối chiếu với plans/lam-lai/README.md (Quyết định, Bảy luật). D2-L1 thay bằng trang chủ thật. Lần 2 (D2-L1): chữ ở hero và dải "Cách Psyche kiểm chứng" là câu về chính site, đã đối chiếu như ghi ở từng nhận định; không có câu cần nguồn ngoài.'
 mo_khoa:
   - ngay: 2026-10-30

@@ -267,7 +267,6 @@ function mucBai(trang, docsDir, base, { moTa = true } = {}) {
 }
 
 /** Bài (lõi, mở rộng) là bài khám phá, thí nghiệm hay phương pháp; trang mục lục, Bắt đầu (như Cách đọc nhãn), Hỗ trợ không tính (review D2-L1). */
-const thoat = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const laBai = (r) => /^(kham-pha|thi-nghiem|bang-chung)\//.test(r.id) && !r.id.endsWith('/index') && (r.tang === 'loi' || r.tang === 'mo-rong');
 const baiKhamPha = (r, linhVuc) => r.linh_vuc === linhVuc && laBai(r);
 
@@ -352,7 +351,7 @@ export function loiVao(muc, { banGhi, trangCo, base, svg }, soNgoNhan) {
 		const lv = LOI_VAO[nhom];
 		if (!lv) throw new Error(`:::loi-vao: không có mục /psyche/${nhom}/ (có: ${Object.keys(LOI_VAO).join(', ')})`);
 		const so = nhom === 'ngo-nhan' ? soNgoNhan() : banGhi.filter((r) => co.has(r.id) && lv.dem(r)).length;
-		const noi = `${svg(lv.bieuTuong)}<span class="pz-loi-vao__ten">${thoat(ten)}</span><span class="pz-loi-vao__so">${so} ${lv.donVi}</span><span class="pz-loi-vao__mo">${thoat(mo)}</span>`;
+		const noi = `${svg(lv.bieuTuong)}<span class="pz-loi-vao__ten">${esc(ten)}</span><span class="pz-loi-vao__so">${so} ${lv.donVi}</span><span class="pz-loi-vao__mo">${esc(mo)}</span>`;
 		return co.has(`${nhom}/index`) ? `<li><a href="${base}${nhom}/">${noi}</a></li>` : `<li><span class="pz-loi-vao__chua">${noi}</span></li>`;
 	});
 	return `<ul class="pz-loi-vao not-content" role="list">${the.join('')}</ul>`;

@@ -94,7 +94,7 @@ const KHOI = {
 			const [lk, ...sau] = p?.children ?? [];
 			const nhom = /^\/psyche\/([a-z-]+)\/$/.exec(lk?.url ?? '')?.[1];
 			const mo = chu({ children: sau }).replace(/^[\s:]+/, '').trim();
-			if (p?.type !== 'paragraph' || thua.length || lk.type !== 'link' || !nhom || !mo || sau.some((n) => n.type !== 'text'))
+			if (p?.type !== 'paragraph' || thua.length || !lk || lk.type !== 'link' || !nhom || !mo || sau.some((n) => n.type !== 'text'))
 				throw loi(`:::loi-vao: dòng "${chu(m).trim().slice(0, 40)}" phải là ${mau}`);
 			return { nhom, ten: chu(lk), mo };
 		});

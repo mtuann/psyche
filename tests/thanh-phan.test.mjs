@@ -160,6 +160,8 @@ test('lối vào các mục chính (:::loi-vao, T4): thẻ có tên, số đếm
 	assert.throws(() => dung(':::loi-vao\n- Thí nghiệm: không có link\n:::', 'index'), /phải là "- \[Bài khám phá\]/);
 	assert.throws(() => dung(':::loi-vao\n- [Lạ](/psyche/la/): câu\n:::', 'index'), /không có mục \/psyche\/la\//);
 	assert.throws(() => dung(':::loi-vao\nĐoạn.\n:::', 'index'), /chỉ chứa một danh sách/);
+	assert.throws(() => dung(':::loi-vao\n- [Ngộ nhận](/psyche/ngo-nhan/): A & <b>\n-\n:::', 'index'), /phải là "- \[Bài khám phá\]/);
+	assert.match(dung(':::loi-vao\n- [Ngộ nhận](/psyche/ngo-nhan/): A & B\n:::', 'index'), /A &amp; B/);
 });
 
 test('khối chữ không ghi ngôn ngữ: vùng cuộn nhận focus, có tên riêng, chữ được thoát; khối có ngôn ngữ để Expressive Code', () => {
