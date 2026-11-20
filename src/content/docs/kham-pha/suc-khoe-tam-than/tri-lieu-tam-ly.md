@@ -142,7 +142,7 @@ Nếu bạn đang cân nhắc tìm người trị liệu, hay đang gặp khó k
 - CBT hiệu quả vượt trội mọi liệu pháp khác với khoảng cách lớn.
 + CBT hơn nhóm đối chứng ở mức vừa đến lớn (g = 0,79; còn g = 0,47 sau khi hiệu chỉnh sai lệch xuất bản); nhưng CBT chỉ hơn các liệu pháp tâm lý khác một chút (g = 0,06).
 - CBT kém hiệu quả hơn giả dược.
-> Cứ khoảng 5 người được điều trị thì có thêm 1 người đáp ứng so với nhóm đối chứng (NNT = 4,7): hiệu quả có thật nhưng khiêm tốn, và "thương hiệu" liệu pháp ít quan trọng hơn nhiều người tưởng.
+> Hiệu quả có thật nhưng khiêm tốn hơn con số thô, và "thương hiệu" liệu pháp ít quan trọng hơn nhiều người tưởng.
 ? Nghiên cứu của Powers và cộng sự (2008) cho thấy trị liệu thật hơn giả dược tâm lý ở mức d = 0,34 — nhỏ hơn nhiều so với khi so với danh sách chờ (d = 0,86). Điều này nên được hiểu thế nào?
 - Trị liệu tâm lý thực chất chỉ là giả dược, nên không đáng tiền.
 + Một phần đáng kể hiệu quả có vẻ đến từ những gì giả dược cũng có (được quan tâm, kỳ vọng sẽ khỏi, có người đồng hành); phần chênh còn lại trong các thử nghiệm này gợi ý kỹ thuật riêng vẫn đóng góp thêm, nhưng tỉ lệ của mỗi phần vẫn đang tranh cãi.
