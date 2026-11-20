@@ -1,6 +1,7 @@
 # K1 (kế hoạch nâng cấp, 20/11/2026): câu ve-site cho trường dua_tren của 12 bài mở rộng, chờ review và kiểm mẫu của chủ repo.
 # Bản ghi trang đang khóa #linh_vuc,moi,tang; hồ sơ của mục đã khóa không được có lần kiểm định dở (tests/khoa.test.mjs), nên
 # câu nằm ở đây. Đạt thì: thêm câu (nhận định mới, truong [dua_tren]) và lần mới vào kiem-dinh/du-lieu/trang/<id>.yml, rồi
+# Review (Claude Sonnet 5.5, 20/11/2026): 11 dung; tam-ly-hoc-duong sai (dựa trên tre-hoc-the-nao) → đã đổi dua_tren thành ban-sac-tuoi-teen, câu dưới đã theo chữ mới.
 # node tools/khoa.mjs khoa <khoa_moi> (khóa rộng hơn thay khóa cũ). Làm trước khi L1 hiện phần «Bài mở rộng dựa trên bài này».
 - ban_ghi: trang/kham-pha/tri-nho/phong-cach-hoc
   khoa_moi: du-lieu/trang/kham-pha/tri-nho/phong-cach-hoc#dua_tren,linh_vuc,moi,tang
@@ -8,81 +9,81 @@
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/chu-y-tri-giac/da-nhiem-so
   khoa_moi: du-lieu/trang/kham-pha/chu-y-tri-giac/da-nhiem-so#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/chu-y-tri-giac/da-nhiem-so («Đa nhiệm với smartphone có hại não?») dựa trên bài lõi kham-pha/chu-y-tri-giac/nghe-chon-loc («Giữa bữa tiệc ồn ào, sao bạn vẫn nghe thấy tên mình?») và bài lõi kham-pha/chu-y-tri-giac/nhin-ma-khong-thay («Nhìn mà không thấy»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/tu-duy/dunning-kruger
   khoa_moi: du-lieu/trang/kham-pha/tu-duy/dunning-kruger#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/tu-duy/dunning-kruger («Kẻ dốt hay tự tin thái quá?») dựa trên bài lõi kham-pha/tu-duy/thien-kien-xac-nhan («Vì sao ta chỉ thấy điều mình muốn thấy?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/tinh-cach/mbti
   khoa_moi: du-lieu/trang/kham-pha/tinh-cach/mbti#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/tinh-cach/mbti («MBTI có thực sự đo được tính cách?») dựa trên bài lõi kham-pha/tinh-cach/big-five («Tính cách có mấy chiều?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/co-so-sinh-hoc/dopamine
   khoa_moi: du-lieu/trang/kham-pha/co-so-sinh-hoc/dopamine#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/co-so-sinh-hoc/dopamine («Dopamine có phải "chất gây sướng"?») dựa trên bài lõi kham-pha/cam-xuc-dong-luc/thuong-va-dong-luc («Thưởng có làm mất hứng thú?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/co-so-sinh-hoc/the-duc-nao
   khoa_moi: du-lieu/trang/kham-pha/co-so-sinh-hoc/the-duc-nao#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/co-so-sinh-hoc/the-duc-nao («Tập thể dục có làm não khỏe hơn?») dựa trên bài lõi kham-pha/tri-nho/vi-sao-ta-quen («Vì sao ta quên?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc
   khoa_moi: du-lieu/trang/kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/cam-xuc-dong-luc/tri-tue-cam-xuc («EQ có thật không?») dựa trên bài lõi kham-pha/tri-tue/tri-tue-la-gi («IQ đo được gì?») và bài lõi kham-pha/cam-xuc-dong-luc/dieu-tiet-cam-xuc («Nén cảm xúc có tốt?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/cang-thang-giac-ngu/stress-co-hai
   khoa_moi: du-lieu/trang/kham-pha/cang-thang-giac-ngu/stress-co-hai#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/cang-thang-giac-ngu/stress-co-hai («Stress có luôn có hại?») dựa trên bài lõi kham-pha/cang-thang-giac-ngu/doi-pho-stress («Đối phó stress thế nào cho đúng?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/phat-trien/tam-ly-hoc-duong
   khoa_moi: du-lieu/trang/kham-pha/phat-trien/tam-ly-hoc-duong#dua_tren,linh_vuc,moi,tang
-  cau: Bài mở rộng kham-pha/phat-trien/tam-ly-hoc-duong («Bắt nạt và áp lực thi cử?») dựa trên bài lõi kham-pha/phat-trien/tre-hoc-the-nao («Trẻ con học khác người lớn thế nào?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
+  cau: Bài mở rộng kham-pha/phat-trien/tam-ly-hoc-duong («Bắt nạt và áp lực thi cử?») dựa trên bài lõi kham-pha/phat-trien/ban-sac-tuoi-teen («Tuổi teen: mình là ai?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/phat-trien/mang-xa-hoi-teen
   khoa_moi: du-lieu/trang/kham-pha/phat-trien/mang-xa-hoi-teen#dua_tren,linh_vuc,moi,tang
   cau: "Bài mở rộng kham-pha/phat-trien/mang-xa-hoi-teen («Mạng xã hội có làm teen trầm cảm?») dựa trên bài lõi kham-pha/phat-trien/ban-sac-tuoi-teen («Tuổi teen: mình là ai?») và bài lõi kham-pha/co-so-sinh-hoc/nao-tuoi-teen («Não tuổi teen khác gì não người lớn?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp"
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/hanh-phuc/tien-va-hanh-phuc
   khoa_moi: du-lieu/trang/kham-pha/hanh-phuc/tien-va-hanh-phuc#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/hanh-phuc/tien-va-hanh-phuc («Nhiều tiền có hạnh phúc hơn?») dựa trên bài lõi kham-pha/hanh-phuc/do-hanh-phuc («Hạnh phúc có đo được không?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
 - ban_ghi: trang/kham-pha/hanh-phuc/dong-chay-flow
   khoa_moi: du-lieu/trang/kham-pha/hanh-phuc/dong-chay-flow#dua_tren,linh_vuc,moi,tang
   cau: Bài mở rộng kham-pha/hanh-phuc/dong-chay-flow («'Cháy' hết mình là gì?») dựa trên bài lõi kham-pha/hanh-phuc/do-hanh-phuc («Hạnh phúc có đo được không?»); bài lõi ấy hiện link tới bài mở rộng ở phần «Bài mở rộng dựa trên bài này» của khối Đọc tiếp
   loai: ve-site
   truong:
     - dua_tren
-  review: null
+  review: dung
