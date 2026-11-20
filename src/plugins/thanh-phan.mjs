@@ -357,6 +357,34 @@ export function loiVao(muc, { banGhi, trangCo, base, svg }, soNgoNhan) {
 	return `<ul class="pz-loi-vao not-content" role="list">${the.join('')}</ul>`;
 }
 
+/**
+ * Khối "Đọc tiếp" (kế hoạch nâng cấp L1): chèn trước mục Nguồn của trang (src/components/MarkdownContent.astro; trang
+ * không có mục ấy thì cuối nội dung), không đổi file trang nên không đổi mã băm. Hai phần, chỉ tên trang (không câu mới):
+ * trang liên quan (lien_quan của trang.yml, tối đa 4) và bài mở rộng dựa trên bài này (bản ghi có dua_tren chứa trang).
+ * Chỉ trang có trong bản build, và ở bản thật chỉ trường đã khóa (daKhoa = truongDaKhoa, chuẩn mục 6). Rỗng thì ''.
+ */
+export function docTiep(trang, { banGhi, trangCo, ten, base, daKhoa }) {
+	const co = new Set(trangCo);
+	const ban = banGhi.find((r) => r.id === trang);
+	const muc = (id) => `<li><a href="${diaChi(id, base)}">${esc(ten(id) ?? id)}</a></li>`;
+	const lienQuan = daKhoa('trang', trang, 'lien_quan') ? (ban?.lien_quan ?? []).filter((id) => co.has(id)) : [];
+	const moRong = banGhi.filter((r) => r.dua_tren?.includes(trang) && co.has(r.id) && daKhoa('trang', r.id, 'dua_tren')).map((r) => r.id);
+	if (!lienQuan.length && !moRong.length) return '';
+	return (
+		'<section class="pz-doc-tiep" aria-labelledby="doc-tiep"><h2 id="doc-tiep" class="pz-doc-tiep__ten">Đọc tiếp</h2>' +
+		(lienQuan.length ? `<ul class="pz-doc-tiep__ds">${lienQuan.map(muc).join('')}</ul>` : '') +
+		(moRong.length ? `<h3 class="pz-doc-tiep__phan">Bài mở rộng dựa trên bài này</h3><ul class="pz-doc-tiep__ds">${moRong.map(muc).join('')}</ul>` : '') +
+		'</section>'
+	);
+}
+/** Chỗ chèn khối "Đọc tiếp" trong HTML đã dựng: ngay trước tiêu đề mục Nguồn (h2 id "nguon"); không có thì null. */
+export const MOC_NGUON = '<div class="sl-heading-wrapper level-h2"><h2 id="nguon"';
+export function chenDocTiep(html, khoi) {
+	if (!khoi) return html;
+	const i = html.indexOf(MOC_NGUON);
+	return i < 0 ? html + khoi : html.slice(0, i) + khoi + html.slice(i);
+}
+
 export function congCuNoiBat({ banGhi, trangCo, docsDir, base }) {
 	const co = new Set(trangCo);
 	const ds = banGhi.filter((r) => r.tang === 'cong-cu' && co.has(r.id) && !r.id.endsWith('/index'));

@@ -1,15 +1,31 @@
 ---
 // Nội dung trang của Starlight, thêm bộ tải thành phần (src/scripts/tai.js) chỉ ở trang có khối cần JavaScript: câu
 // hỏi kiểm tra nhanh, công cụ. Dò trên HTML đã dựng (lớp do plugin đặt), nên khớp đúng những gì plugin dựng. Trang khác
-// không tải gì thêm. Sau nội dung: các bổ sung có ngày của trang (src/content/bo-sung/, BoSung.astro). Trang Sách in
+// không tải gì thêm. Trước mục Nguồn: khối "Đọc tiếp" (L1, docTiep). Sau nội dung: các bổ sung có ngày của trang (src/content/bo-sung/, BoSung.astro). Trang Sách in
 // (::sach-in, D8-L4): nội dung sách (SachIn.astro) đặt vào chỗ của chỉ thị.
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
-import { CHO_SACH, canTaiScript } from '../plugins/thanh-phan.mjs';
+import { CHO_SACH, canTaiScript, chenDocTiep, docTiep } from '../plugins/thanh-phan.mjs';
+import { getCollection } from 'astro:content';
+import { DUONG_GOC, ban, trangCuaMuc } from '../ban-build.mjs';
+import { truongDaKhoa } from '../khoa.mjs';
+
+// đọc lúc build (Vite gói vào bản dựng), như PageTitle.astro
+const KHOA = Object.values(import.meta.glob('/kiem-dinh/khoa.json', { eager: true, import: 'default' }))[0] as { trang?: object; ban_ghi?: object } | undefined;
 import BoSung from './BoSung.astro';
 import SachIn from './SachIn.astro';
 import TaiThanhPhan from './TaiThanhPhan.astro';
 
-const html = await Astro.slots.render('default');
+// khối "Đọc tiếp" (kế hoạch nâng cấp L1): trước mục Nguồn; bản xem hiện cả trường chưa khóa
+const trang = trangCuaMuc(Astro.locals.starlightRoute.entry);
+const daKhoa = ban() === 'xem' ? () => true : truongDaKhoa({ trang: KHOA?.trang ?? {}, ban_ghi: KHOA?.ban_ghi ?? {} });
+let khoiDocTiep = '';
+if (trang) {
+	const docs = await getCollection('docs');
+	const tenTrang = new Map(docs.map((e) => [trangCuaMuc(e), e.data.title]));
+	const banGhi = (await getCollection('trang')).map((r) => r.data);
+	khoiDocTiep = docTiep(trang, { banGhi, trangCo: [...tenTrang.keys()], ten: (id: string) => tenTrang.get(id), base: DUONG_GOC, daKhoa });
+}
+const html = chenDocTiep(await Astro.slots.render('default'), khoiDocTiep);
 const [truoc, sau] = html.includes(CHO_SACH) ? html.split(CHO_SACH) : [html, null];
 ---
 

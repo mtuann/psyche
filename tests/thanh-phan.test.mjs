@@ -10,7 +10,7 @@ import { pathToFileURL } from 'node:url';
 import { markdownToHtml } from 'satteri';
 import { duLieuDaKiem } from '../src/du-lieu.mjs';
 import { psycheMarkdown } from '../src/plugins/psyche-markdown.mjs';
-import { CONG_CU, THU_MUC_HINH, canTaiScript, docQuiz, dongNguon, hinh, md, tomTat } from '../src/plugins/thanh-phan.mjs';
+import { CONG_CU, THU_MUC_HINH, canTaiScript, chenDocTiep, docQuiz, docTiep, dongNguon, hinh, md, tomTat } from '../src/plugins/thanh-phan.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DOCS = path.join(ROOT, 'src/content/docs');
@@ -162,6 +162,33 @@ test('lối vào các mục chính (:::loi-vao, T4): thẻ có tên, số đếm
 	assert.throws(() => dung(':::loi-vao\nĐoạn.\n:::', 'index'), /chỉ chứa một danh sách/);
 	assert.throws(() => dung(':::loi-vao\n- [Ngộ nhận](/psyche/ngo-nhan/): A & <b>\n-\n:::', 'index'), /phải là "- \[Bài khám phá\]/);
 	assert.match(dung(':::loi-vao\n- [Ngộ nhận](/psyche/ngo-nhan/): A & B\n:::', 'index'), /A &amp; B/);
+});
+
+test('khối "Đọc tiếp" (L1): trang liên quan và bài mở rộng, chỉ trang trong bản build và trường đã khóa; chèn trước mục Nguồn', () => {
+	const banGhi = [
+		{ id: 'a', tang: 'loi', lien_quan: ['b', 'c', 'khong-len'] },
+		{ id: 'b', tang: 'loi' },
+		{ id: 'c', tang: 'loi' },
+		{ id: 'm', tang: 'mo-rong', dua_tren: ['a'] },
+		{ id: 'n', tang: 'mo-rong', dua_tren: ['a'] },
+	];
+	const ten = (id) => ({ b: 'Bài <B>', c: 'Bài C', m: 'Mở rộng M', n: 'Mở rộng N' })[id];
+	const co = { banGhi, trangCo: ['a', 'b', 'c', 'm', 'n'], ten, base: '/psyche/' };
+	const het = docTiep('a', { ...co, daKhoa: () => true });
+	assert.match(het, /^<section class="pz-doc-tiep" aria-labelledby="doc-tiep"><h2 id="doc-tiep"/);
+	assert.match(het, /<a href="\/psyche\/b\/">Bài &lt;B&gt;<\/a>.*<a href="\/psyche\/c\/">Bài C<\/a>/);
+	assert.doesNotMatch(het, /khong-len/, 'trang không có trong bản build không hiện');
+	assert.match(het, /Bài mở rộng dựa trên bài này<\/h3><ul class="pz-doc-tiep__ds"><li><a href="\/psyche\/m\/">Mở rộng M<\/a><\/li><li><a href="\/psyche\/n\/">/);
+	// bản thật: chỉ trường đã khóa (lien_quan của a chưa khóa; dua_tren của n đã khóa)
+	const mot = docTiep('a', { ...co, daKhoa: (bo, id, truong) => id === 'n' && truong === 'dua_tren' });
+	assert.doesNotMatch(mot, /Bài C|Mở rộng M/);
+	assert.match(mot, /Mở rộng N/);
+	assert.equal(docTiep('a', { ...co, daKhoa: () => false }), '');
+	assert.equal(docTiep('b', { ...co, daKhoa: () => true }), '');
+	const moc = '<div class="sl-heading-wrapper level-h2"><h2 id="nguon">';
+	assert.equal(chenDocTiep(`<p>x</p>${moc}`, '<K/>'), `<p>x</p><K/>${moc}`);
+	assert.equal(chenDocTiep('<p>x</p>', '<K/>'), '<p>x</p><K/>');
+	assert.equal(chenDocTiep('<p>x</p>', ''), '<p>x</p>');
 });
 
 test('khối chữ không ghi ngôn ngữ: vùng cuộn nhận focus, có tên riêng, chữ được thoát; khối có ngôn ngữ để Expressive Code', () => {

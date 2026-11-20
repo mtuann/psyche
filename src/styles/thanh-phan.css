@@ -1116,6 +1116,42 @@
 	justify-self: start;
 }
 
+/* ---------- Khối "Đọc tiếp" trước mục Nguồn (kế hoạch nâng cấp L1) ---------- */
+.sl-markdown-content .pz-doc-tiep {
+	margin-block: 2.5rem 0;
+	padding: 1rem 1.25rem 1.1rem;
+	border: 1px solid var(--pz-border);
+	border-radius: 0.9rem;
+	background: var(--pz-card);
+}
+/* không đánh số như các mục lớn của bài (không có trong mục lục của Starlight) */
+[data-has-sidebar] .sl-markdown-content .pz-doc-tiep h2 {
+	counter-increment: none;
+	margin: 0;
+	font-size: var(--sl-text-lg);
+}
+[data-has-sidebar] .sl-markdown-content .pz-doc-tiep h2::before {
+	content: none;
+}
+.sl-markdown-content .pz-doc-tiep h3 {
+	margin-top: 1rem;
+	font-size: var(--sl-text-base);
+}
+.sl-markdown-content .pz-doc-tiep__ds {
+	margin-top: 0.5rem;
+	padding-left: 1.1rem;
+}
+.sl-markdown-content .pz-doc-tiep__ds li {
+	margin-block: 0.25rem;
+}
+@media (pointer: coarse) {
+	.sl-markdown-content .pz-doc-tiep__ds a {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+	}
+}
+
 /* ---------- Lối vào các mục chính ở trang chủ (:::loi-vao, kế hoạch nâng cấp T4) ---------- */
 .pz-loi-vao {
 	display: grid;
