@@ -14,6 +14,16 @@ lan:
       review: Claude Opus 5.5 (agent review D7-L1, 17/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d7-l1-kiem-mau.yml), đạt, 17/11/2026
       cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
+  - so: 2
+    ngay: null
+    nhanh: mo/sktt-than-trong-wt
+    ma_bam: null
+    nguoi:
+      luot_1: 'Claude Opus 5.5 (agent lượt 1 S5, mo/sktt-than-trong, 20/11/2026): sửa mục «Chuyên gia phân biệt bằng cách nào?» theo hướng thận trọng hơn (n14, n17, n18, n20 da-sua; n15, n16 da-bo; n54 thêm mới; n19 chuyển chỗ); không thêm nguồn, không đổi nhãn; danh sách cho lượt 2: plans/nang-cap/bao-cao/s5-luot-2.yml'
+      luot_2: null
+      review: null
+      kiem_mau: null
+      cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
 nguon:
   - id: icd11-cddr
     ten: 'WHO (2024), Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR), ISBN 9789240077263: toàn văn (PDF 852 trang tải từ IRIS của WHO qua trang ấn phẩm; số trang in = số trang PDF trừ 18). Giai đoạn trầm cảm tr. 212–214; 6A70 tr. 244; 6B00 tr. 266–267; 6B01 tr. 271–272; 6B04 tr. 284–285'
@@ -236,7 +246,7 @@ nhan_dinh:
       - https://www.psychiatry.org/patients-families/depression/what-is-depression
     luot_2_ghi_chu: 'Khác biệt chính: ICD-11 có thêm ''tuyệt vọng về tương lai'' (10 triệu chứng so với 9). ''Khá giống nhau'' đúng mức.'
   - id: n14
-    cau: 'Mô tả trong bài chỉ để hiểu chung, không phải bảng để tự chấm điểm: chỉ người có chuyên môn mới chẩn đoán được (kèm link Hỗ trợ, ngay trước danh sách triệu chứng).'
+    cau: 'Chẩn đoán không phải việc tự đối chiếu mình với một danh sách: chỉ người có chuyên môn mới chẩn đoán được (kèm link Hỗ trợ, ở đầu mục «Chuyên gia phân biệt bằng cách nào?»).'
     loai: loi-khuyen
     nguon:
       - apa-dep
@@ -244,10 +254,7 @@ nhan_dinh:
     trich: A diagnosis is made by a qualified health professional.
     vi_tri: APA What are anxiety disorders, Treatment
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ ở cuối mục: "Điểm quan trọng nhất của danh sách này không phải để bạn tự chấm điểm cho mình". Đưa lên đầu danh sách và bỏ ngưỡng đếm triệu chứng (n47). Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 (n15) đề nghị danh sách đứng sát lời "chỉ người có chuyên môn mới chẩn đoán được": câu dẫn danh sách nay thêm "chỉ người có chuyên môn mới chẩn đoán được (xem trang Hỗ trợ)".'
-    luot_2: dung
-    luot_2_nguon: [ "https://www.who.int/news/item/08-03-2024-new-manual-released-to-support-diagnosis-of-mental--behavioural-and-neurodevelopmental-disorders-added-in-icd-11", "https://www.nhs.uk/mental-health/conditions/depression-in-adults/diagnosis/" ]
-    luot_2_ghi_chu: "Chẩn đoán do người có chuyên môn làm qua đánh giá lâm sàng (WHO, NHS). Phần trong ngoặc (link Hỗ trợ, vị trí ngay trước danh sách) là chuyện của site: không kiểm ở lượt 2, review kiểm trên trang. Câu là lời rào, không gần chẩn đoán."
+    ghi_chu: 'Chữ cũ ở cuối mục: "Điểm quan trọng nhất của danh sách này không phải để bạn tự chấm điểm cho mình". Đưa lên đầu danh sách và bỏ ngưỡng đếm triệu chứng (n47). Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 (n15) đề nghị danh sách đứng sát lời "chỉ người có chuyên môn mới chẩn đoán được": câu dẫn danh sách nay thêm "chỉ người có chuyên môn mới chẩn đoán được (xem trang Hỗ trợ)". Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ «Mô tả dưới đây chỉ để hiểu chung, không phải bảng để tự chấm điểm: chỉ người có chuyên môn mới chẩn đoán được (xem trang Hỗ trợ)»; chữ mới «Nhưng chẩn đoán không phải việc tự đối chiếu mình với một danh sách: chỉ người có chuyên môn mới chẩn đoán được (xem trang Hỗ trợ)». Lý do: danh sách triệu chứng (n15–n17) đã bỏ, câu dẫn không còn trỏ tới danh sách; ý giữ nguyên. Lượt 2 cũ (dung) đã xóa, cần kiểm lại.'
   - id: n15
     cau: 'Cần có ít nhất một trong hai dấu hiệu cốt lõi: tâm trạng trầm buồn, hoặc mất hẳn hứng thú, niềm vui với các hoạt động vốn thích.'
     loai: lam-sang
@@ -256,12 +263,8 @@ nhan_dinh:
       - apa-dep
     trich: At least one symptom from the affective cluster must be present. … Depressed mood … Markedly diminished interest or pleasure in activities, especially those normally found to be enjoyable to the individual
     vi_tri: CDDR tr. 212
-    ket_qua: dung
-    ghi_chu: 'Chữ cũ cùng ý ("ít nhất một trong hai triệu chứng cốt lõi phải có mặt: (1) khí sắc trầm buồn…, hoặc (2) mất hẳn hứng thú"); diễn đạt lại.'
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-    luot_2_ghi_chu: 'gần chẩn đoán: viết theo dạng tiêu chí (''Cần có ít nhất…''). Nội dung đúng; nên giữ ngay cạnh lời ''chỉ chuyên gia mới chẩn đoán được'' và không thêm số đếm triệu chứng.'
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ cùng ý ("ít nhất một trong hai triệu chứng cốt lõi phải có mặt: (1) khí sắc trầm buồn…, hoặc (2) mất hẳn hứng thú"); diễn đạt lại. Kế hoạch nâng cấp S5 (20/11/2026): bỏ gạch đầu dòng «Cần có ít nhất một trong hai dấu hiệu cốt lõi…» khỏi trang. Lý do: bốn gạch đầu dòng gần như tiêu chí chẩn đoán, dễ thành bảng tự kiểm (kiem-sinh-hoc-cam-xuc.md [A][CG], phản biện P7); lô thận trọng tạm chờ chuyên gia. Nội dung vẫn đúng theo nguồn; thay bằng mô tả cách người có chuyên môn đánh giá (n17, n18, n19). Lượt 2 cũ đã xóa.'
   - id: n16
     cau: 'Chuyên gia xem xét thêm các triệu chứng: khó tập trung hay khó quyết định; cảm giác vô giá trị hay tội lỗi quá mức; tuyệt vọng về tương lai; ý nghĩ lặp lại về cái chết; giấc ngủ, thèm ăn hay cân nặng thay đổi rõ; mệt mỏi, thiếu năng lượng; bồn chồn hay chậm chạp đến mức người khác nhận thấy.'
     loai: lam-sang
@@ -270,26 +273,19 @@ nhan_dinh:
       - who-dep-2026
     trich: Reduced ability to concentrate … or marked indecisiveness; Beliefs of low self-worth or excessive and inappropriate guilt; Hopelessness about the future; Recurrent thoughts of death …; Significantly disrupted sleep … or excessive sleep; Significant change in appetite … or significant weight change; Psychomotor agitation or retardation (observable by others …); Reduced energy, fatigue
     vi_tri: CDDR tr. 212–213 (nhóm nhận thức – hành vi và nhóm thực vật)
-    ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Bảy triệu chứng còn lại trong danh sách gồm…" (theo DSM-5-TR, đếm 7). Nay liệt kê theo ICD-11 (thêm "tuyệt vọng về tương lai"), không đếm, để không thành bảng tự chấm.'
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-    luot_2_ghi_chu: 'gần chẩn đoán: danh sách triệu chứng gần như nguyên tiêu chí ICD-11; đã khung là ''chuyên gia xem xét'', không có ngưỡng đếm. Nên giữ như vậy.'
+    ket_qua: da-bo
+    ghi_chu: 'Chữ cũ: "Bảy triệu chứng còn lại trong danh sách gồm…" (theo DSM-5-TR, đếm 7). Nay liệt kê theo ICD-11 (thêm "tuyệt vọng về tương lai"), không đếm, để không thành bảng tự chấm. Kế hoạch nâng cấp S5 (20/11/2026): bỏ gạch đầu dòng liệt kê các triệu chứng khác (khó tập trung, vô giá trị, tuyệt vọng, ý nghĩ về cái chết, ngủ ăn, mệt, bồn chồn) khỏi trang. Lý do như n15: danh sách triệu chứng gần nguyên tiêu chí ICD-11. Lượt 2 cũ đã xóa.'
   - id: n17
-    cau: Các triệu chứng kéo dài ít nhất hai tuần, gần như mỗi ngày, và gây suy giảm rõ trong học tập, công việc, gia đình hay các mối quan hệ; nếu vẫn làm được việc thì chỉ nhờ cố gắng nhiều hơn hẳn.
+    cau: 'Người có chuyên môn xem xét cả bức tranh: các thay đổi kéo dài bao lâu, có mặt gần như mỗi ngày hay không, và ảnh hưởng đến học tập, công việc, gia đình hay các mối quan hệ tới mức nào.'
     loai: lam-sang
     nguon:
       - icd11-cddr
     trich: The concurrent presence of at least five of the following characteristic symptoms occurring for most of the day, nearly every day, during a period lasting at least 2 weeks is required for diagnosis. At least one symptom from the affective cluster must be present. … The mood disturbance results in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. If functioning is maintained, it is only through significant additional effort.
     vi_tri: CDDR tr. 212–213
-    ket_qua: dung
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-    luot_2_ghi_chu: 'gần chẩn đoán: câu có dạng tiêu chí thời gian; cùng nhóm với n15–n16.'
+    ket_qua: da-sua
+    ghi_chu: 'Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ (gạch đầu dòng) «Các triệu chứng kéo dài ít nhất hai tuần, gần như mỗi ngày, và gây suy giảm rõ trong học tập, công việc, gia đình hay các mối quan hệ (nếu vẫn làm được việc thì chỉ nhờ cố gắng nhiều hơn hẳn)»; chữ mới (văn xuôi) «Họ xem xét cả bức tranh: các thay đổi kéo dài bao lâu, có mặt gần như mỗi ngày hay không, và ảnh hưởng đến học tập, công việc, gia đình hay các mối quan hệ tới mức nào». Lý do: bỏ dạng tiêu chí thời gian (mốc hai tuần vẫn có ở mục «Điều gì đang xảy ra?» theo WHO, n8), chỉ nói những gì người có chuyên môn xem xét; không thêm khẳng định mới. Lượt 2 cũ đã xóa.'
   - id: n18
-    cau: 'Chuyên gia phải loại trừ: bệnh cơ thể (ví dụ rối loạn nội tiết, bệnh thần kinh), tác dụng của thuốc, rượu hay chất kích thích, phản ứng tang chế bình thường, và rối loạn lưỡng cực (khi từng có giai đoạn hưng cảm).'
+    cau: 'Người có chuyên môn cũng phải loại trừ các khả năng khác, như một bệnh cơ thể (ví dụ rối loạn nội tiết, bệnh thần kinh), tác dụng của thuốc, rượu hay chất kích thích, phản ứng tang chế bình thường, hay rối loạn lưỡng cực (khi người ấy từng có giai đoạn hưng cảm).'
     loai: lam-sang
     nguon:
       - icd11-cddr
@@ -297,11 +293,7 @@ nhan_dinh:
     trich: The symptoms are not better accounted for by bereavement. The symptoms are not a manifestation of another medical condition (e.g. a brain tumour), and are not due to the effects of a substance or medication … There is no history of manic, mixed or hypomanic episodes, which would indicate the presence of a bipolar disorder. [ICD-11]; screen for underlying medical conditions that may mimic depression — such as hormonal imbalances, vitamin deficiencies, neurological problems and drug or alcohol use [APA]
     vi_tri: CDDR tr. 213, 244; APA, How Is Depression Treated?
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "ba điều kiện đi kèm: … gây đau khổ hoặc suy giảm rõ rệt; không giải thích được bằng chất kích thích hay một bệnh cơ thể khác; và người đó chưa từng có giai đoạn hưng cảm". Thêm tang chế (ICD-11) và ví dụ bệnh cơ thể (APA).'
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-      - https://www.psychiatry.org/patients-families/depression/what-is-depression
+    ghi_chu: 'Chữ cũ: "ba điều kiện đi kèm: … gây đau khổ hoặc suy giảm rõ rệt; không giải thích được bằng chất kích thích hay một bệnh cơ thể khác; và người đó chưa từng có giai đoạn hưng cảm". Thêm tang chế (ICD-11) và ví dụ bệnh cơ thể (APA). Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ (gạch đầu dòng) «Chuyên gia phải **loại trừ** các khả năng khác: một bệnh cơ thể…, và rối loạn lưỡng cực…»; chữ mới (văn xuôi) «Họ cũng phải loại trừ các khả năng khác, như một bệnh cơ thể…, hay rối loạn lưỡng cực…». Lý do: chuyển từ danh sách sang văn xuôi; nội dung giữ. Lượt 2 cũ đã xóa.'
   - id: n19
     cau: 'Chẩn đoán do người có chuyên môn thực hiện: trò chuyện kỹ, hỏi tiền sử, khám cơ thể và khi cần làm xét nghiệm để loại trừ bệnh khác.'
     loai: lam-sang
@@ -310,12 +302,12 @@ nhan_dinh:
     trich: To diagnose depression, a healthcare professional will conduct a thorough diagnostic evaluation that includes a comprehensive interview to discuss your symptoms in addition to your personal, medical and family histories. Moreover, a physical examination should be performed … Laboratory and imaging tests may also be included in the evaluation as part of the medical screening.
     vi_tri: APA, How Is Depression Treated?
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "chẩn đoán là một quy trình có cấu trúc, do người có chuyên môn thực hiện sau khi trò chuyện và loại trừ nhiều khả năng khác". Thêm khám cơ thể, xét nghiệm theo APA.'
+    ghi_chu: 'Chữ cũ: "chẩn đoán là một quy trình có cấu trúc, do người có chuyên môn thực hiện sau khi trò chuyện và loại trừ nhiều khả năng khác". Thêm khám cơ thể, xét nghiệm theo APA. Kế hoạch nâng cấp S5 (20/11/2026): câu chuyển lên đầu đoạn thứ hai của mục, bỏ «Cũng vì vậy,» ở đầu; chữ của nhận định không đổi, giữ lượt 2 cũ. Cùng đoạn với n17, n18 nên đưa vào danh sách lượt 2 S5.'
     luot_2: dung
     luot_2_nguon:
       - https://www.psychiatry.org/patients-families/depression/what-is-depression
   - id: n20
-    cau: Hai người cùng "buồn" có thể ở hai tình trạng rất khác nhau, và người không có đủ các dấu hiệu vẫn có thể cần được giúp đỡ.
+    cau: 'Hai người cùng «buồn» có thể ở hai tình trạng rất khác nhau, và một người không có đủ các dấu hiệu mà các hệ thống chẩn đoán mô tả vẫn có thể cần được giúp đỡ.'
     loai: loi-khuyen
     nguon:
       - nhs-tt
@@ -323,11 +315,7 @@ nhan_dinh:
     trich: You do not need to have a diagnosed mental health condition. [NHS, về việc dùng dịch vụ trị liệu tâm lý]
     vi_tri: NHS talking therapies, How to get talking therapies
     ket_qua: da-sua
-    ghi_chu: Thêm vế sau ("người không có đủ các dấu hiệu vẫn có thể cần được giúp đỡ") để danh sách không bị đọc như ngưỡng "phải đủ mới được giúp".
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-      - https://www.nice.org.uk/guidance/ng222/chapter/Recommendations
+    ghi_chu: 'Thêm vế sau ("người không có đủ các dấu hiệu vẫn có thể cần được giúp đỡ") để danh sách không bị đọc như ngưỡng "phải đủ mới được giúp". Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ «…và một người không có đủ các dấu hiệu trên vẫn có thể cần được giúp đỡ»; chữ mới «…không có đủ các dấu hiệu mà các hệ thống chẩn đoán mô tả…». Lý do: danh sách «trên» đã bỏ. Lượt 2 cũ đã xóa.'
   - id: n21
     cau: WHO kể tên kích hoạt hành vi, CBT, liệu pháp liên cá nhân (IPT) và liệu pháp giải quyết vấn đề là liệu pháp tâm lý hiệu quả với trầm cảm, và xem liệu pháp tâm lý là hướng điều trị đầu tiên.
     loai: lam-sang
@@ -764,6 +752,16 @@ nhan_dinh:
     luot_2_nguon:
       - https://www.nice.org.uk/guidance/ng222/chapter/Recommendations
     luot_2_ghi_chu: 'câu đúng: NICE NG222 (2022): với trầm cảm nặng hơn (vừa và nặng), thuốc chống trầm cảm có thể là SSRI, SNRI hay thuốc khác; SSRI nên được cân nhắc là lựa chọn đầu tiên cho phần lớn người bệnh.; NICE chỉ đặt SSRI làm lựa chọn đầu, không xếp SNRI ngang hàng; và thuốc không phải lựa chọn đầu tay duy nhất. Vế DSM-5-TR ''5/9 triệu chứng trong hai tuần'': khong-chac như n47 (không mở được tài liệu chính thức của APA có con số 5). gần chẩn đoán: mục Nguồn có ngưỡng đếm ''5/9'', cùng lý do như n47.'
+  - id: n54
+    cau: 'Không cần tự xác định mình đã «đủ» hay chưa: khi tâm trạng nặng nề kéo dài và bắt đầu ảnh hưởng đến cuộc sống thì nên gặp người có chuyên môn; có ý nghĩ về cái chết hay tự làm hại bản thân thì tìm giúp đỡ ngay (kèm link bài Khi nào nên tìm sự giúp đỡ chuyên môn? và trang Hỗ trợ).'
+    loai: loi-khuyen
+    nguon:
+      - who-dep-2026
+      - nhs-tt
+    trich: 'Seek care if you have symptoms of depression. … If you think you are in immediate danger of harming yourself, contact any available emergency services or a crisis line. [WHO]; You do not need to have a diagnosed mental health condition. [NHS]'
+    vi_tri: WHO, Self-care; NHS talking therapies, How to get talking therapies
+    ket_qua: da-sua
+    ghi_chu: 'Kế hoạch nâng cấp S5 (20/11/2026): thêm mới ở cuối mục «Chuyên gia phân biệt bằng cách nào?», thay cho danh sách triệu chứng đã bỏ: dấu hiệu nên đi khám nói chung, không liệt kê triệu chứng, dẫn tới bài Tìm giúp đỡ và trang Hỗ trợ. Cùng ý với n42, n43 ở mục «Khi nào nên tìm sự giúp đỡ» (dùng lại nguồn và trích của hai nhận định ấy); không lặp nguyên mục. Phần link là chuyện của site (tests/link.test.mjs kiểm).'
 doi_chu:
   - cu: 'description: "Bản nháp: phân biệt nỗi buồn thông thường với rối loạn trầm cảm nặng theo DSM-5-TR, các hướng điều trị có bằng chứng ở mức liệt kê, và những ngộ nhận phổ biến."'
     moi: 'description: "Nỗi buồn thông thường khác rối loạn trầm cảm ở mức độ, độ lan rộng và thời gian kéo dài, theo mô tả của ICD-11 và DSM-5-TR; …"'
@@ -798,3 +796,10 @@ doi_chu:
   - cu: 'Mục Nguồn: DSM-5-TR (kèm chú thích 5/9), NICE NG222 (kèm chú thích SSRI/SNRI đầu tay), dòng "Trang Hỗ trợ của Psyche Zero"'
     moi: Mục Nguồn liệt kê ICD-11 CDDR, WHO, APA, NICE, các phân tích tổng hợp đã dùng; bỏ chú thích nội dung và dòng tham chiếu trang Hỗ trợ
     ly_do: Hồ sơ n53; báo cáo D1.2 mục 4.
+  - cu: 'Mục «Chuyên gia phân biệt bằng cách nào?»: câu dẫn «Mô tả dưới đây chỉ để hiểu chung, không phải bảng để tự chấm điểm…», bốn gạch đầu dòng (hai dấu hiệu cốt lõi; các triệu chứng khác; ít nhất hai tuần, suy giảm rõ; loại trừ), đoạn «Cũng vì vậy, chẩn đoán là một quy trình…»'
+    moi: 'Ba đoạn văn xuôi: chẩn đoán không phải tự đối chiếu với danh sách; cách người có chuyên môn đánh giá (trò chuyện, tiền sử, khám, xét nghiệm, cả bức tranh, loại trừ); dấu hiệu nên đi khám nói chung, link Tìm giúp đỡ và Hỗ trợ'
+    ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026), lô thận trọng tạm chờ chuyên gia; hồ sơ n14–n20, n54.'
+mo_khoa:
+  - ngay: 2026-11-20
+    nhanh: mo/sktt-than-trong-wt
+    ly_do: "Kế hoạch nâng cấp S5 (20/11/2026): lô thận trọng tạm, chờ chuyên gia: mục «Chuyên gia phân biệt bằng cách nào?» bỏ bốn gạch đầu dòng giống tiêu chí chẩn đoán, thay bằng mô tả cách người có chuyên môn đánh giá và dấu hiệu nên đi khám (kiem-sinh-hoc-cam-xuc.md [A][CG]; phản biện P7)"

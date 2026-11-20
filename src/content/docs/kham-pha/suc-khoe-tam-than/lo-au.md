@@ -29,13 +29,13 @@ Lo lắng (anxiety) vốn là phản ứng bình thường khi ta chịu áp l�
 
 Rối loạn lo âu phổ biến. Tính đến 11/2026, WHO ước tính năm 2023 có khoảng 470 triệu người trên thế giới bị rối loạn lo âu, nhiều hơn mọi nhóm rối loạn tâm thần khác, và chỉ khoảng 1 trong 4 người cần điều trị được điều trị.
 
-Có nhiều rối loạn lo âu khác nhau, tùy nỗi sợ tập trung vào đâu. Ba dạng thường được nhắc đến (mô tả chung, **không phải bảng để tự chấm điểm**: chỉ người có chuyên môn mới chẩn đoán được; xem trang [Hỗ trợ](/psyche/ho-tro/)):
+Có nhiều rối loạn lo âu khác nhau, tùy nỗi sợ tập trung vào đâu. Ba dạng thường được nhắc đến (mô tả chung để hiểu, **không dùng để tự chẩn đoán**: chỉ người có chuyên môn mới chẩn đoán được; xem trang [Hỗ trợ](/psyche/ho-tro/)):
 
-- **Rối loạn lo âu lan tỏa** (generalized anxiety disorder): lo lắng quá mức về **nhiều chuyện khác nhau** của đời sống hằng ngày (công việc, tiền bạc, sức khỏe, gia đình…), hoặc cảm giác bất an không gắn với chuyện gì cụ thể. Đi kèm thường là căng cơ hay bồn chồn, cảm giác "căng như dây đàn", khó tập trung, dễ cáu, khó ngủ, và các dấu hiệu cơ thể như tim đập nhanh, đổ mồ hôi, buồn nôn. Theo ICD-11, các triệu chứng không thoáng qua mà kéo dài **ít nhất vài tháng**, phần lớn các ngày.
-- **Rối loạn hoảng sợ** (panic disorder): các **cơn hoảng sợ lặp lại**, trong đó ít nhất một số cơn đến bất ngờ, "từ trên trời rơi xuống". Cơn hoảng sợ là những đợt sợ hãi dữ dội ập đến nhanh, kèm tim đập nhanh, khó thở, đau ngực, chóng mặt, sợ mất kiểm soát hay sợ sắp chết. Sau đó người ấy lo lắng kéo dài về việc cơn sẽ trở lại hay về ý nghĩa của nó (ví dụ sợ mình bị đau tim), hoặc thay đổi cách sống để tránh cơn (ví dụ chỉ ra khỏi nhà khi có người đi cùng).
-- **Rối loạn lo âu xã hội** (social anxiety disorder, còn gọi là ám ảnh sợ xã hội): nỗi sợ rõ rệt và quá mức trong các **tình huống xã hội** như trò chuyện, ăn uống khi bị nhìn, thuyết trình, vì sợ mình làm điều gì đó bị người khác đánh giá tiêu cực, chê cười hay từ chối. Người ấy né tránh các tình huống này hoặc chịu đựng trong lo sợ dữ dội, và tình trạng kéo dài (ICD-11 lấy ví dụ: ít nhất vài tháng; tài liệu của Hiệp hội Tâm thần học Hoa Kỳ theo DSM-5-TR ghi: ít nhất sáu tháng).
+- **Rối loạn lo âu lan tỏa** (generalized anxiety disorder): lo lắng quá mức về **nhiều chuyện khác nhau** của đời sống hằng ngày (công việc, tiền bạc, sức khỏe, gia đình…), hoặc cảm giác bất an không gắn với chuyện gì cụ thể.
+- **Rối loạn hoảng sợ** (panic disorder): nỗi sợ xoay quanh chính các **cơn hoảng sợ lặp lại**, những đợt sợ hãi dữ dội ập đến nhanh, và nỗi lo rằng cơn sẽ trở lại.
+- **Rối loạn lo âu xã hội** (social anxiety disorder, còn gọi là ám ảnh sợ xã hội): nỗi sợ rõ rệt và quá mức trong các **tình huống xã hội**, vì sợ mình bị người khác đánh giá tiêu cực, chê cười hay từ chối.
 
-Chuyên gia còn phải **loại trừ** các khả năng khác: một bệnh cơ thể (ví dụ cường giáp), tác dụng của cà phê, thuốc, rượu hay chất kích thích (kể cả khi ngừng dùng), hay một rối loạn khác giải thích tốt hơn. Một cơn hoảng sợ đơn lẻ, hay sự hồi hộp khi phải nói trước đám đông, thì rất thường gặp và tự nó chưa phải là rối loạn. Rối loạn lo âu cũng hay đi cùng trầm cảm.
+Ở dạng nào cũng vậy, người có chuyên môn xem xét cả bức tranh: nỗi sợ kéo dài bao lâu, mạnh đến đâu, và gây khổ sở hay cản trở cuộc sống tới mức nào. Chuyên gia còn phải **loại trừ** các khả năng khác: một bệnh cơ thể (ví dụ cường giáp), tác dụng của cà phê, thuốc, rượu hay chất kích thích (kể cả khi ngừng dùng), hay một rối loạn khác giải thích tốt hơn. Một cơn hoảng sợ đơn lẻ, hay sự hồi hộp khi phải nói trước đám đông, thì rất thường gặp và tự nó chưa phải là rối loạn. Rối loạn lo âu cũng hay đi cùng trầm cảm.
 
 ## Vòng luẩn quẩn tránh né
 
@@ -102,7 +102,7 @@ Cơn hoảng sợ có thể giống cơn đau tim. Nếu bạn bị đau ngực,
 > Đây là cơ chế mà liệu pháp tiếp xúc nhắm vào: đối mặt có kế hoạch, có kiểm soát để học lại rằng tín hiệu báo động đã reo nhầm.
 ? Theo ICD-11, rối loạn hoảng sợ khác một cơn hoảng sợ đơn lẻ ở điểm nào?
 - Cơn hoảng sợ đơn lẻ thì không có triệu chứng cơ thể.
-+ Rối loạn hoảng sợ có các cơn lặp lại, một số cơn đến bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, và gây suy giảm rõ.
++ Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống.
 - Rối loạn hoảng sợ chỉ chẩn đoán được bằng điện não đồ.
 > Cơn hoảng sợ khá thường gặp và tự nó chưa phải là rối loạn; "nỗi sợ về cơn sợ" kéo dài mới là đặc điểm của rối loạn hoảng sợ.
 ? Phát biểu nào đúng về điều trị rối loạn lo âu theo các hướng dẫn quốc tế?

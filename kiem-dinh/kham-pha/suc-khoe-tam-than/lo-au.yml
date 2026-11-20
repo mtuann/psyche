@@ -14,6 +14,16 @@ lan:
       review: Claude Opus 5.5 (agent review D7-L1, 17/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d7-l1-kiem-mau.yml), đạt, 17/11/2026
       cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
+  - so: 2
+    ngay: null
+    nhanh: mo/sktt-than-trong-wt
+    ma_bam: null
+    nguoi:
+      luot_1: 'Claude Opus 5.5 (agent lượt 1 S5, mo/sktt-than-trong, 20/11/2026): viết lại ba gạch đầu dòng của mục «Điều gì đang xảy ra?» ở mức khái niệm (n12–n15 da-sua; n49 thêm mới), sửa tối thiểu đáp án câu hỏi 3 (n45); không thêm nguồn, không đổi nhãn; danh sách cho lượt 2: plans/nang-cap/bao-cao/s5-luot-2.yml'
+      luot_2: null
+      review: null
+      kiem_mau: null
+      cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
 nguon:
   - id: icd11-cddr
     ten: 'WHO (2024), Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR), ISBN 9789240077263: toàn văn (PDF 852 trang tải từ IRIS của WHO qua trang ấn phẩm; số trang in = số trang PDF trừ 18). Giai đoạn trầm cảm tr. 212–214; 6A70 tr. 244; 6B00 tr. 266–267; 6B01 tr. 271–272; 6B04 tr. 284–285'
@@ -193,7 +203,7 @@ nhan_dinh:
     luot_2_nguon:
       - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
   - id: n12
-    cau: 'Rối loạn lo âu lan tỏa: lo lắng quá mức về nhiều chuyện của đời sống hằng ngày hoặc bất an không gắn với chuyện cụ thể; kèm căng cơ, bồn chồn, "căng như dây đàn", khó tập trung, dễ cáu, khó ngủ, tim đập nhanh, đổ mồ hôi, buồn nôn; theo ICD-11 kéo dài ít nhất vài tháng, phần lớn các ngày.'
+    cau: 'Rối loạn lo âu lan tỏa: lo lắng quá mức về nhiều chuyện khác nhau của đời sống hằng ngày (công việc, tiền bạc, sức khỏe, gia đình…), hoặc cảm giác bất an không gắn với chuyện gì cụ thể.'
     loai: lam-sang
     nguon:
       - icd11-cddr
@@ -201,13 +211,9 @@ nhan_dinh:
     trich: 'Marked symptoms of anxiety are required for diagnosis, manifested in either: general apprehensiveness that is not restricted to any particular environmental circumstance (i.e. "free-floating anxiety"); or excessive worry (apprehensive expectation) about negative events occurring in several different aspects of everyday life (e.g. work, finances, health, family). … muscle tension or motor restlessness; sympathetic autonomic overactivity as evidenced by frequent gastrointestinal symptoms such as nausea and/or abdominal distress, heart palpitations, sweating …; subjective experience of nervousness, restlessness or being "on edge"; difficulty concentrating; irritability; sleep disturbances … The symptoms are not transient and persist for at least several months, for more days than not.'
     vi_tri: CDDR tr. 266
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "…hầu như mỗi ngày trong ít nhất sáu tháng… kèm bồn chồn, dễ mệt, khó tập trung, căng cơ, rối loạn giấc ngủ". "Sáu tháng" là ngưỡng của DSM-5-TR; tài liệu chính thức của APA đọc được không ghi con số, ICD-11 ghi "ít nhất vài tháng". Viết theo ICD-11, không ghi ngưỡng số. chỗ khó: ngưỡng thời gian khác giữa hai hệ thống.'
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-    luot_2_ghi_chu: 'gần chẩn đoán: mô tả gần nguyên yêu cầu chẩn đoán ICD-11 kèm thời gian; cần đứng cạnh n15 (không phải bảng tự chấm) và lời ''chỉ chuyên gia''.'
+    ghi_chu: 'Chữ cũ: "…hầu như mỗi ngày trong ít nhất sáu tháng… kèm bồn chồn, dễ mệt, khó tập trung, căng cơ, rối loạn giấc ngủ". "Sáu tháng" là ngưỡng của DSM-5-TR; tài liệu chính thức của APA đọc được không ghi con số, ICD-11 ghi "ít nhất vài tháng". Viết theo ICD-11, không ghi ngưỡng số. chỗ khó: ngưỡng thời gian khác giữa hai hệ thống. Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ còn hai câu sau «Đi kèm thường là căng cơ hay bồn chồn, cảm giác "căng như dây đàn", khó tập trung, dễ cáu, khó ngủ, và các dấu hiệu cơ thể như tim đập nhanh, đổ mồ hôi, buồn nôn. Theo ICD-11, các triệu chứng không thoáng qua mà kéo dài ít nhất vài tháng, phần lớn các ngày.»; chữ mới chỉ giữ câu đầu. Lý do: gạch đầu dòng cũ gần như một bảng tiêu chí (triệu chứng và thời gian; kiem-sinh-hoc-cam-xuc.md [A][CG], phản biện P7); lô thận trọng tạm chờ chuyên gia giữ ở mức khái niệm: chỉ nói nỗi sợ tập trung vào đâu, dùng chữ đã có. Không thêm khẳng định mới; nguồn và trích giữ (trích dài hơn câu mới). Lượt 2 cũ đã xóa.'
   - id: n13
-    cau: 'Rối loạn hoảng sợ: cơn hoảng sợ lặp lại, ít nhất một số cơn đến bất ngờ; cơn là đợt sợ dữ dội ập đến nhanh, kèm tim đập nhanh, khó thở, đau ngực, chóng mặt, sợ mất kiểm soát hay sắp chết; sau đó lo lắng kéo dài về cơn trở lại hay ý nghĩa của nó (ví dụ sợ đau tim), hoặc thay đổi cách sống để tránh cơn (ví dụ chỉ ra khỏi nhà khi có người đi cùng).'
+    cau: 'Rối loạn hoảng sợ: nỗi sợ xoay quanh chính các cơn hoảng sợ lặp lại, những đợt sợ hãi dữ dội ập đến nhanh, và nỗi lo rằng cơn sẽ trở lại.'
     loai: lam-sang
     nguon:
       - icd11-cddr
@@ -215,13 +221,9 @@ nhan_dinh:
     trich: Recurrent panic attacks, which are discrete episodes of intense fear or apprehension characterized by the rapid and concurrent onset of several characteristic symptoms … palpitations or increased heart rate … sensations of shortness of breath … chest pain … feelings of dizziness … fear of losing control or going mad; fear of imminent death. At least some of the panic attacks are unexpected … seem to arise "out of the blue". Panic attacks are followed by persistent concern or worry (e.g. for several weeks) about their recurrence or their perceived negative significance (e.g. that the physiological symptoms may be those of a myocardial infarction), or by behaviours intended to avoid their recurrence (e.g. only leaving the home with a trusted companion).
     vi_tri: CDDR tr. 271
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "…và sau đó là ít nhất một tháng lo sợ cơn tiếp theo… (ví dụ không dám đi xa, không dám tập thể dục)". "Ít nhất một tháng" là ngưỡng DSM-5-TR, không có trong tài liệu chính thức của APA đọc được; ICD-11 ghi "ví dụ vài tuần". Viết theo ICD-11 (cả hai ví dụ).'
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-    luot_2_ghi_chu: 'gần chẩn đoán: như n12.'
+    ghi_chu: 'Chữ cũ: "…và sau đó là ít nhất một tháng lo sợ cơn tiếp theo… (ví dụ không dám đi xa, không dám tập thể dục)". "Ít nhất một tháng" là ngưỡng DSM-5-TR, không có trong tài liệu chính thức của APA đọc được; ICD-11 ghi "ví dụ vài tuần". Viết theo ICD-11 (cả hai ví dụ). Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ «các cơn hoảng sợ lặp lại, trong đó ít nhất một số cơn đến bất ngờ, "từ trên trời rơi xuống". Cơn hoảng sợ là những đợt sợ hãi dữ dội ập đến nhanh, kèm tim đập nhanh, khó thở, đau ngực, chóng mặt, sợ mất kiểm soát hay sợ sắp chết. Sau đó người ấy lo lắng kéo dài về việc cơn sẽ trở lại hay về ý nghĩa của nó (ví dụ sợ mình bị đau tim), hoặc thay đổi cách sống để tránh cơn (ví dụ chỉ ra khỏi nhà khi có người đi cùng).»; chữ mới «nỗi sợ xoay quanh chính các cơn hoảng sợ lặp lại, những đợt sợ hãi dữ dội ập đến nhanh, và nỗi lo rằng cơn sẽ trở lại». Lý do: gạch đầu dòng cũ gần như một bảng tiêu chí (triệu chứng và thời gian; kiem-sinh-hoc-cam-xuc.md [A][CG], phản biện P7); lô thận trọng tạm chờ chuyên gia giữ ở mức khái niệm: chỉ nói nỗi sợ tập trung vào đâu, dùng chữ đã có. Không thêm khẳng định mới; nguồn và trích giữ (trích dài hơn câu mới). Lượt 2 cũ đã xóa.'
   - id: n14
-    cau: 'Rối loạn lo âu xã hội (còn gọi ám ảnh sợ xã hội): nỗi sợ rõ rệt, quá mức trong tình huống xã hội như trò chuyện, ăn uống khi bị nhìn, thuyết trình, vì sợ bị đánh giá tiêu cực, chê cười hay từ chối; né tránh hay chịu đựng trong lo sợ; kéo dài (ICD-11: ví dụ ít nhất vài tháng; APA theo DSM-5-TR: ít nhất sáu tháng).'
+    cau: 'Rối loạn lo âu xã hội (còn gọi ám ảnh sợ xã hội): nỗi sợ rõ rệt và quá mức trong các tình huống xã hội, vì sợ mình bị người khác đánh giá tiêu cực, chê cười hay từ chối.'
     loai: lam-sang
     nguon:
       - icd11-cddr
@@ -229,24 +231,16 @@ nhan_dinh:
     trich: Marked and excessive fear or anxiety that occurs consistently in one or more social situations such as social interactions (e.g. having a conversation), doing something while feeling observed (e.g. eating or drinking in the presence of others) or performing in front of others (e.g. giving a speech) … The individual is concerned that they will act in a way, or show anxiety symptoms, that will be negatively evaluated by others (i.e. be humiliating, be embarrassing, lead to rejection or be offensive). Relevant social situations are consistently avoided or endured with intense fear or anxiety. The symptoms are not transient – that is, they persist for an extended period of time (e.g. at least several months). [ICD-11]; The fear or anxiety causes problems with daily functioning and lasts at least six months. [APA, Social Anxiety Disorder]
     vi_tri: CDDR tr. 284; APA
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Ám ảnh sợ xã hội: nỗi sợ rõ rệt trước các tình huống xã hội có thể bị người khác soi xét… kéo dài ít nhất sáu tháng". Thêm tên ICD-11 (social anxiety disorder), thời gian theo cả hai hệ thống.'
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
-      - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
-    luot_2_ghi_chu: 'gần chẩn đoán: như n12.'
+    ghi_chu: 'Chữ cũ: "Ám ảnh sợ xã hội: nỗi sợ rõ rệt trước các tình huống xã hội có thể bị người khác soi xét… kéo dài ít nhất sáu tháng". Thêm tên ICD-11 (social anxiety disorder), thời gian theo cả hai hệ thống. Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ còn ví dụ tình huống («như trò chuyện, ăn uống khi bị nhìn, thuyết trình»), câu «Người ấy né tránh các tình huống này hoặc chịu đựng trong lo sợ dữ dội, và tình trạng kéo dài (ICD-11 lấy ví dụ: ít nhất vài tháng; tài liệu của Hiệp hội Tâm thần học Hoa Kỳ theo DSM-5-TR ghi: ít nhất sáu tháng).»; chữ mới bỏ ví dụ, câu né tránh và mốc thời gian. Nguồn apa-anx nay chỉ còn đỡ phần nỗi sợ bị đánh giá (phần sáu tháng đã bỏ). Lý do: gạch đầu dòng cũ gần như một bảng tiêu chí (triệu chứng và thời gian; kiem-sinh-hoc-cam-xuc.md [A][CG], phản biện P7); lô thận trọng tạm chờ chuyên gia giữ ở mức khái niệm: chỉ nói nỗi sợ tập trung vào đâu, dùng chữ đã có. Không thêm khẳng định mới; nguồn và trích giữ (trích dài hơn câu mới). Lượt 2 cũ đã xóa.'
   - id: n15
-    cau: 'Mô tả ba dạng là mô tả chung, không phải bảng để tự chấm điểm: chỉ người có chuyên môn mới chẩn đoán được (kèm link Hỗ trợ, ngay trước danh sách).'
+    cau: 'Mô tả ba dạng là mô tả chung để hiểu, không dùng để tự chẩn đoán: chỉ người có chuyên môn mới chẩn đoán được (kèm link Hỗ trợ, ngay trước danh sách).'
     loai: loi-khuyen
     nguon:
       - apa-anx
     trich: A diagnosis is made by a qualified health professional.
     vi_tri: APA
     ket_qua: da-sua
-    ghi_chu: 'Thêm mới. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): câu dẫn danh sách ba rối loạn nay có "chỉ người có chuyên môn mới chẩn đoán được; xem trang Hỗ trợ" ngay trước danh sách.'
-    luot_2: dung
-    luot_2_nguon: [ "https://www.who.int/news/item/08-03-2024-new-manual-released-to-support-diagnosis-of-mental--behavioural-and-neurodevelopmental-disorders-added-in-icd-11", "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder/symptoms/" ]
-    luot_2_ghi_chu: Như tram-cam n14. Phần trong ngoặc là chuyện của site, review kiểm.
+    ghi_chu: 'Thêm mới. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): câu dẫn danh sách ba rối loạn nay có "chỉ người có chuyên môn mới chẩn đoán được; xem trang Hỗ trợ" ngay trước danh sách. Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ «mô tả chung, **không phải bảng để tự chấm điểm**: chỉ người có chuyên môn mới chẩn đoán được»; chữ mới «mô tả chung để hiểu, **không dùng để tự chẩn đoán**: chỉ người có chuyên môn mới chẩn đoán được». Lý do: ba gạch đầu dòng nay không còn là bảng triệu chứng; giữ lời rào. Lượt 2 cũ đã xóa.'
   - id: n16
     cau: 'Chuyên gia phải loại trừ: bệnh cơ thể (ví dụ cường giáp), tác dụng của cà phê, thuốc, rượu hay chất kích thích (kể cả khi ngừng dùng), hay một rối loạn khác giải thích tốt hơn.'
     loai: lam-sang
@@ -642,17 +636,14 @@ nhan_dinh:
     luot_2_nguon:
       - https://europepmc.org/article/MED/29550689
   - id: n45
-    cau: 'Câu hỏi 3: theo ICD-11, rối loạn hoảng sợ có các cơn lặp lại, một số cơn bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, gây suy giảm rõ; cơn hoảng sợ đơn lẻ khá thường gặp và chưa phải rối loạn.'
+    cau: 'Câu hỏi 3: theo ICD-11, ở rối loạn hoảng sợ các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống; cơn hoảng sợ đơn lẻ khá thường gặp và tự nó chưa phải rối loạn.'
     loai: lam-sang
     nguon:
       - icd11-cddr
     trich: Recurrent panic attacks, which are discrete episodes of intense fear or apprehension characterized by the rapid and concurrent onset of several characteristic symptoms … palpitations or increased heart rate … sensations of shortness of breath … chest pain … feelings of dizziness … fear of losing control or going mad; fear of imminent death. At least some of the panic attacks are unexpected … seem to arise "out of the blue". Panic attacks are followed by persistent concern or worry (e.g. for several weeks) about their recurrence or their perceived negative significance (e.g. that the physiological symptoms may be those of a myocardial infarction), or by behaviours intended to avoid their recurrence (e.g. only leaving the home with a trusted companion). … Panic attacks are common in the general population
     vi_tri: CDDR tr. 271–272
     ket_qua: da-sua
-    ghi_chu: 'Câu cũ: "Theo DSM-5-TR… kèm ít nhất một tháng lo sợ cơn tiếp theo…". Đổi sang ICD-11 (ngưỡng một tháng của DSM-5-TR không kiểm được qua tài liệu chính thức của APA).'
-    luot_2: dung
-    luot_2_nguon:
-      - https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content
+    ghi_chu: 'Câu cũ: "Theo DSM-5-TR… kèm ít nhất một tháng lo sợ cơn tiếp theo…". Đổi sang ICD-11 (ngưỡng một tháng của DSM-5-TR không kiểm được qua tài liệu chính thức của APA). Kế hoạch nâng cấp S5 (20/11/2026): đáp án cũ «Rối loạn hoảng sợ có các cơn lặp lại, một số cơn đến bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, và gây suy giảm rõ.»; đáp án mới «Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống.». Lý do: đáp án cũ dựa vào chữ đã bỏ ở n13 (cơn bất ngờ, thay đổi cách sống), gần như chép tiêu chí; sửa tối thiểu cho khớp chữ mới. Câu hỏi, phương án nhiễu và giải thích giữ. Lượt 2 cũ đã xóa.'
   - id: n46
     cau: 'Câu hỏi 4: liệu pháp dựa trên CBT, gồm tiếp xúc, có nhiều bằng chứng nhất; SSRI có thể hữu ích, do bác sĩ kê; benzodiazepine nhìn chung không được khuyên dùng; WHO và NICE đặt CBT ở vị trí trung tâm.'
     loai: lam-sang
@@ -696,6 +687,16 @@ nhan_dinh:
       - https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
       - https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
     luot_2_ghi_chu: 'Lo âu xã hội ≥6 tháng: xác nhận qua APA. Lo âu lan tỏa ''≥6 tháng, 3/6 triệu chứng'' và hoảng sợ ''≥1 tháng'': đúng theo hiểu biết chung về DSM-5, nhưng không mở được văn bản tiêu chí của APA (psychiatryonline.org 403), nên ghi khong-chac theo yêu cầu. gần chẩn đoán: ''3/6 triệu chứng'' là ngưỡng đếm, dễ thành bảng tự chấm; nên bỏ số đếm hay để kèm lời ''chỉ chuyên gia áp dụng''.'
+  - id: n49
+    cau: 'Ở dạng nào cũng vậy, người có chuyên môn xem xét cả bức tranh: nỗi sợ kéo dài bao lâu, mạnh đến đâu, và gây khổ sở hay cản trở cuộc sống tới mức nào.'
+    loai: lam-sang
+    nguon:
+      - icd11-cddr
+      - who-anx-2026
+    trich: 'people with anxiety disorders often experience fear and worry that is both intense and excessive. … They are difficult to control, cause significant distress and can last a long time if untreated. Anxiety disorders interfere with daily activities and can impair a person''s family, social and school or working life. [WHO]; The symptoms are not transient and persist for at least several months, for more days than not. [ICD-11, 6B00]; The symptoms are not transient – that is, they persist for an extended period of time (e.g. at least several months). [ICD-11, 6B04]'
+    vi_tri: WHO Overview (trích như n9); CDDR tr. 266, 284 (trích như n12, n14)
+    ket_qua: da-sua
+    ghi_chu: 'Kế hoạch nâng cấp S5 (20/11/2026): thêm mới sau ba gạch đầu dòng, thay cho các mốc thời gian đã bỏ ở n12–n14: nói ở mức khái niệm rằng người có chuyên môn xét thời gian, cường độ và mức khổ sở hay cản trở, không nêu ngưỡng. Trích lấy lại từ n9 (WHO) và n12, n14 (ICD-11), không mở nguồn mới; câu không nêu ngưỡng nên chỉ cần nguồn cho thấy thời gian kéo dài và mức khổ sở, cản trở là điều được xét.'
 doi_chu:
   - cu: 'description "Bản nháp: các rối loạn lo âu chính theo DSM-5-TR (lo âu lan tỏa, hoảng sợ, ám ảnh sợ xã hội)…"'
     moi: description không có "Bản nháp", thêm ICD-11
@@ -730,3 +731,13 @@ doi_chu:
   - cu: Mục Nguồn (DSM-5-TR kèm ngưỡng; NICE CG113; trang Hỗ trợ)
     moi: ICD-11 CDDR, WHO, APA, NICE CG113, CG159, các phân tích tổng hợp
     ly_do: Hồ sơ n48.
+  - cu: 'Mục «Điều gì đang xảy ra?»: câu dẫn «mô tả chung, không phải bảng để tự chấm điểm»; ba gạch đầu dòng kèm triệu chứng và thời gian (lo âu lan tỏa: căng cơ, khó ngủ… ít nhất vài tháng; hoảng sợ: tim đập nhanh, khó thở… thay đổi cách sống; lo âu xã hội: né tránh, vài tháng / sáu tháng)'
+    moi: 'Câu dẫn «mô tả chung để hiểu, không dùng để tự chẩn đoán»; mỗi dạng một câu nói nỗi sợ tập trung vào đâu; thêm câu «người có chuyên môn xem xét cả bức tranh» trước đoạn loại trừ'
+    ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026), lô thận trọng tạm chờ chuyên gia; hồ sơ n12–n15, n49.'
+  - cu: 'Câu hỏi 3, đáp án đúng: «…một số cơn đến bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, và gây suy giảm rõ»'
+    moi: '«Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống»'
+    ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026); hồ sơ n45.'
+mo_khoa:
+  - ngay: 2026-11-20
+    nhanh: mo/sktt-than-trong-wt
+    ly_do: "Kế hoạch nâng cấp S5 (20/11/2026): lô thận trọng tạm, chờ chuyên gia: mục «Điều gì đang xảy ra?» viết lại ba gạch đầu dòng (lo âu lan tỏa, hoảng sợ, lo âu xã hội) ở mức khái niệm, bỏ danh sách triệu chứng và mốc thời gian (kiem-sinh-hoc-cam-xuc.md [A][CG]; phản biện P7)"

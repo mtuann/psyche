@@ -14,6 +14,16 @@ lan:
       review: Claude Opus 5.5 (agent review D7-L1, 17/11/2026)
       kiem_mau: chủ repo, 5 nhận định ngẫu nhiên của lô (plans/lam-lai/bao-cao/d7-l1-kiem-mau.yml), đạt, 17/11/2026
       cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
+  - so: 2
+    ngay: null
+    nhanh: mo/sktt-than-trong-wt
+    ma_bam: null
+    nguoi:
+      luot_1: 'Claude Opus 5.5 (agent lượt 1 S5, mo/sktt-than-trong, 20/11/2026): thêm lời rào về thuốc cạnh hai câu CBT hơn thuốc ở 6–12 tháng (n77, n78 thêm mới); Áp dụng #2, #3 chuyển sang mô tả bằng chứng (n53, n54 da-sua, loai lam-sang); không thêm nguồn, không đổi nhãn; danh sách cho lượt 2: plans/nang-cap/bao-cao/s5-luot-2.yml'
+      luot_2: null
+      review: null
+      kiem_mau: null
+      cho_chuyen_gia: chủ repo đồng ý đăng trước khi chuyên gia đọc (16/11/2026); trang hiện dải "Chưa qua rà soát chuyên môn"
 nguon:
   - id: apa-dict
     ten: 'APA Dictionary of Psychology: mục psychotherapy, cognitive therapy, cognitive triad, automatic thoughts, psychodynamic psychotherapy, client-centered therapy: toàn văn, đọc 16/11/2026'
@@ -410,7 +420,7 @@ nhan_dinh:
     trich: 'CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point.'
     vi_tri: Cuijpers 2023, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "…CBT chỉ hơn các liệu pháp tâm lý khác một chút xíu (g = 0,06…); ngang ngửa thuốc trong ngắn hạn nhưng hơn thuốc ở 6–12 tháng (g = 0,34)…". Thêm giới hạn của g = 0,34 (ít thử nghiệm, không vững) theo tóm tắt. chỗ khó: so sánh với thuốc.'
+    ghi_chu: 'Chữ cũ: "…CBT chỉ hơn các liệu pháp tâm lý khác một chút xíu (g = 0,06…); ngang ngửa thuốc trong ngắn hạn nhưng hơn thuốc ở 6–12 tháng (g = 0,34)…". Thêm giới hạn của g = 0,34 (ít thử nghiệm, không vững) theo tóm tắt. chỗ khó: so sánh với thuốc. Kế hoạch nâng cấp S5 (20/11/2026): chữ của nhận định không đổi; ngay sau đoạn có thêm lời rào về thuốc (n77). Đưa vào danh sách lượt 2 S5 như nhận định cùng chỗ.'
     luot_2: dung
     luot_2_nguon:
       - https://doi.org/10.1002/wps.21069
@@ -815,32 +825,25 @@ nhan_dinh:
       - https://doi.org/10.1037/pst0000172
     luot_2_ghi_chu: 'Chip Khá vững hợp: mối liên hệ vững qua 295 nghiên cứu nhưng chỉ là tương quan.'
   - id: n53
-    cau: 'Áp dụng 2: 42% đáp ứng so với 19%; trị liệu đáng thử, nhưng không đỡ sau một liệu trình không phải lỗi của bạn; bàn với nhà trị liệu về đổi phương pháp, đổi người, hay gặp bác sĩ tâm thần đánh giá thêm. (Chip Vững chắc.)'
-    loai: loi-khuyen
+    cau: 'Áp dụng 2: 42% người được trị liệu đáp ứng, so với 19% ở nhóm đối chứng; trị liệu giúp được nhiều người, nhưng không phải ai cũng đỡ sau một liệu trình, và chưa đỡ không phải lỗi của người bệnh; hướng dẫn NICE ghi rằng khi trầm cảm chưa đáp ứng điều trị, người có chuyên môn bàn với người bệnh các phương án tiếp theo, như chuyển sang một liệu pháp tâm lý hay kết hợp các hướng điều trị. (Chip Vững chắc, tiêu đề giữ.)'
+    loai: lam-sang
     nguon:
       - cuijpers2023
       - nice-ng222
     trich: A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT. [Cuijpers]; If a person's depression has not responded … discuss further treatment options … switching to a psychological therapy … changing to a combination [NICE 1.9]
     vi_tri: Cuijpers 2023; NICE NG222 mục 1.9
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "…hãy trao đổi với nhà trị liệu để đổi phương pháp, đổi nhà trị liệu, hoặc cân nhắc kết hợp với bác sĩ tâm thần. Kiên trì thử tiếp một thứ không hiệu quả với mình không phải là dũng cảm." Bỏ câu cuối (có thể đọc như khuyên bỏ điều trị sớm); "cân nhắc kết hợp" thành "gặp bác sĩ tâm thần để đánh giá thêm" (không khuyên dùng thuốc). Chip Vững chắc cho ý "trị liệu hiệu quả nhưng không phải ai cũng đáp ứng": hai vế đều có phân tích tổng hợp lớn. chỗ khó: chip cho lời khuyên. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac vì không mở được toàn văn. Toàn văn Cuijpers 2023 (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; lượt 1 đã đọc, nay đọc lại): bảng 2 "Only low risk of bias 90 0.60 (0.49‐0.71) … Publication bias correction 349 0.47 (0.35‐0.59)", chú thích bảng "The reported publication bias correction is that using the trim and fill procedure"; Kết quả: "The response rate was 0.42 (95% CI: 0.39‐0.45) in CBT and 0.19 (95% CI: 0.18‐0.21) in the control conditions, which resulted in a RR of 2.13 (95% CI: 1.96‐2.32) and a NNT of 4.7 (95% CI: 4.0‐5.5)"; bảng 3: tỉ lệ đáp ứng ước tính ở 228/238 so sánh. NNT 4,7 do bài tính từ RR gộp (phương pháp: NNT = 1/hiệu số nguy cơ, gộp riêng), không phải 1/(0,42 − 0,19) ≈ 4,3 từ hai tỉ lệ gộp riêng; giữ số của bài. Số 0,47 là trim and fill (chỉ hiệu chỉnh sai lệch xuất bản), không phải gộp cả lọc nguy cơ sai lệch như một nguồn bậc 3 viết. Giữ các số.'
-    luot_2: khong-chac
-    luot_2_ghi_chu: 'Số 42% so với 19% chưa xác nhận ở nguồn bậc 1–2 (xem n22). Phần lời khuyên (không đỡ không phải lỗi của bạn, bàn đổi phương pháp hay gặp bác sĩ đánh giá thêm) hợp WHO và Kraus 2019. Chip Vững chắc cho ''trị liệu đáng thử'' hợp thước đo. Không mở được toàn văn Cuijpers 2023 (chỉ tóm tắt); tóm tắt không có 42%/19%, NNT, g = 0,60, g = 0,47. Chỉ nguồn bậc 3 nhắc các số này và chúng không khớp nhau: Mad in America ghi 42% so với 19% và 0,47 ''sau khi tính sai lệch xuất bản và nghiên cứu nguy cơ sai lệch cao'' (không phải chỉ hiệu chỉnh xuất bản), và NNT 3,6 (có lẽ cho thuyên giảm); Mental Elf ghi chỉ 9 so sánh ít nguy cơ sai lệch, không ghi số. Cần review mở toàn văn (bảng 1–2) để chốt.'
+    ghi_chu: 'Chữ cũ: "…hãy trao đổi với nhà trị liệu để đổi phương pháp, đổi nhà trị liệu, hoặc cân nhắc kết hợp với bác sĩ tâm thần. Kiên trì thử tiếp một thứ không hiệu quả với mình không phải là dũng cảm." Bỏ câu cuối (có thể đọc như khuyên bỏ điều trị sớm); "cân nhắc kết hợp" thành "gặp bác sĩ tâm thần để đánh giá thêm" (không khuyên dùng thuốc). Chip Vững chắc cho ý "trị liệu hiệu quả nhưng không phải ai cũng đáp ứng": hai vế đều có phân tích tổng hợp lớn. chỗ khó: chip cho lời khuyên. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): lượt 2 khong-chac vì không mở được toàn văn. Toàn văn Cuijpers 2023 (bản PMC9840507 lưu ở Internet Archive ngày 29/6/2023; lượt 1 đã đọc, nay đọc lại): bảng 2 "Only low risk of bias 90 0.60 (0.49‐0.71) … Publication bias correction 349 0.47 (0.35‐0.59)", chú thích bảng "The reported publication bias correction is that using the trim and fill procedure"; Kết quả: "The response rate was 0.42 (95% CI: 0.39‐0.45) in CBT and 0.19 (95% CI: 0.18‐0.21) in the control conditions, which resulted in a RR of 2.13 (95% CI: 1.96‐2.32) and a NNT of 4.7 (95% CI: 4.0‐5.5)"; bảng 3: tỉ lệ đáp ứng ước tính ở 228/238 so sánh. NNT 4,7 do bài tính từ RR gộp (phương pháp: NNT = 1/hiệu số nguy cơ, gộp riêng), không phải 1/(0,42 − 0,19) ≈ 4,3 từ hai tỉ lệ gộp riêng; giữ số của bài. Số 0,47 là trim and fill (chỉ hiệu chỉnh sai lệch xuất bản), không phải gộp cả lọc nguy cơ sai lệch như một nguồn bậc 3 viết. Giữ các số. Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ «Nghĩa là trị liệu **đáng thử** — nhưng nếu sau một liệu trình mà bạn không đỡ, đó không phải lỗi của bạn. Hãy bàn với nhà trị liệu về việc đổi phương pháp, đổi người trị liệu, hoặc gặp bác sĩ tâm thần để đánh giá thêm.»; chữ mới «Nghĩa là trị liệu giúp được nhiều người, nhưng không phải ai cũng đỡ sau một liệu trình, và chưa đỡ không phải lỗi của người bệnh. Hướng dẫn NICE ghi rằng khi trầm cảm chưa đáp ứng điều trị, người có chuyên môn bàn với người bệnh các phương án tiếp theo, như chuyển sang một liệu pháp tâm lý hay kết hợp các hướng điều trị.». Lý do: chuyển từ lời khuyên cá nhân sang mô tả bằng chứng và hướng dẫn (kiem-sinh-hoc-cam-xuc.md [A][CG], phản biện P7); bỏ «đổi người trị liệu», «gặp bác sĩ tâm thần» (không có trong trích NICE). Số 42%/19% và chip giữ. loai đổi loi-khuyen thành lam-sang (nay là câu về hiệu quả điều trị và hướng dẫn lâm sàng). Lượt 2 cũ (khong-chac về 42%/19%, đã được lượt 1 D7-L1 đối chiếu toàn văn) đã xóa, cần kiểm lại vế NICE 1.9.'
   - id: n54
-    cau: 'Áp dụng 3: CBT tự giúp không có người hướng dẫn vẫn hiệu quả nhỏ đến vừa với trầm cảm (g = 0,45); một phân tích dữ liệu từng người bệnh (39 thử nghiệm) thấy CBT qua mạng có hướng dẫn hiệu quả hơn loại không hướng dẫn ngay sau điều trị, nhất là với trầm cảm vừa đến nặng; nên dùng nội dung dựa trên phương pháp đã kiểm chứng. (Chip Khá vững.)'
-    loai: loi-khuyen
+    cau: 'Áp dụng 3: CBT tự giúp không có người hướng dẫn vẫn hiệu quả nhỏ đến vừa với trầm cảm (g = 0,45); một phân tích dữ liệu từng người bệnh (39 thử nghiệm) thấy CBT qua mạng có hướng dẫn hiệu quả hơn loại không hướng dẫn ngay sau điều trị, nhất là với trầm cảm vừa đến nặng; các kết quả này nói về những chương trình dựa trên phương pháp đã được kiểm chứng, không phải về mọi nội dung tự giúp trên mạng. (Chip Khá vững.)'
+    loai: lam-sang
     nguon:
       - cuijpers2023
       - karyotaki2021
     trich: 'CBT was also effective as unguided self-help intervention (g=0.45; 95% CI: 0.31-0.60) [Cuijpers 2023]; Of 42 eligible RCTs, 39 studies comprising 9751 participants … Guided iCBT was associated with more effectiveness than unguided iCBT (MD in posttreatment PHQ-9 scores, -0.8) …, but we found no evidence of a difference at 6 or 12 months … guided iCBT was associated with overall better outcomes in patients with baseline PHQ-9 greater than 9. [Karyotaki 2021]'
     vi_tri: Cuijpers 2023; Karyotaki 2021, tóm tắt
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "Trị liệu qua màn hình và tự giúp có hướng dẫn cũng có bằng chứng… các phiên bản có hướng dẫn (qua tin nhắn, video) thường tốt hơn… không phải video chữa lành trôi nổi trên mạng". Thêm nguồn cho "có hướng dẫn tốt hơn" (Karyotaki 2021: chỉ ngay sau điều trị); bỏ ví dụ "tin nhắn, video" và câu về "video chữa lành" (không nguồn).'
-    luot_2: dung
-    luot_2_nguon:
-      - https://doi.org/10.1002/wps.21069
-      - https://doi.org/10.1001/jamapsychiatry.2020.4364
-    luot_2_ghi_chu: 'Karyotaki toàn văn PMC8027916. Chip Khá vững hợp: khác biệt có/không hướng dẫn chỉ thấy ngay sau điều trị.'
+    ghi_chu: 'Chữ cũ: "Trị liệu qua màn hình và tự giúp có hướng dẫn cũng có bằng chứng… các phiên bản có hướng dẫn (qua tin nhắn, video) thường tốt hơn… không phải video chữa lành trôi nổi trên mạng". Thêm nguồn cho "có hướng dẫn tốt hơn" (Karyotaki 2021: chỉ ngay sau điều trị); bỏ ví dụ "tin nhắn, video" và câu về "video chữa lành" (không nguồn). Kế hoạch nâng cấp S5 (20/11/2026): chữ cũ câu cuối «Đây là lựa chọn thực tế khi chi phí hoặc khoảng cách là rào cản — miễn là nội dung dựa trên phương pháp đã được kiểm chứng.»; chữ mới «Các kết quả này nói về những chương trình dựa trên phương pháp đã được kiểm chứng, không phải về mọi nội dung tự giúp trên mạng.». Lý do: bỏ lời khuyên cá nhân («lựa chọn thực tế»), chỉ giới hạn phạm vi của bằng chứng (kiem-sinh-hoc-cam-xuc.md [A][CG]). Hai số liệu và chip giữ. loai đổi loi-khuyen thành lam-sang. Lượt 2 cũ (dung) đã xóa.'
   - id: n55
     cau: 'Áp dụng 4: nên gặp người có chuyên môn khi buồn, lo, căng thẳng kéo dài nhiều tuần không dịu, ảnh hưởng rõ đến học, làm, ngủ, quan hệ, hay phải dùng rượu bia, chất kích thích; có ý nghĩ về cái chết hay tự làm hại thì tìm giúp đỡ ngay; không cần "đủ nặng"; đây là gợi ý, không phải để tự chẩn đoán, chỉ người có chuyên môn mới chẩn đoán được (link Hỗ trợ).'
     loai: loi-khuyen
@@ -1036,7 +1039,7 @@ nhan_dinh:
     trich: 'A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT. CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point. [Cuijpers]; discuss with people who have remitted … whether they wish to continue with their psychological therapy for relapse prevention [NICE 1.8.8] || 1.8.6 For people starting group CBT or MBCT for relapse prevention, offer a course of therapy with an explicit focus on the development of relapse prevention skills and what is needed to stay well. [NICE NG222]'
     vi_tri: Cuijpers 2023; NICE NG222 1.8
     ket_qua: da-sua
-    ghi_chu: 'Chữ cũ: "…58% còn lại cần thêm phương án… đó là lý do CBT chú trọng dạy kỹ năng tự xử lý để phòng tái phát, và vì sao hiệu quả dài hạn của nó hơn thuốc." Làm rõ "từ ít thử nghiệm" (g = 0,34 không vững trong mọi phân tích độ nhạy); "58%" thành "phần lớn còn lại" (58% là phép trừ của trang, không có trong bài). chỗ khó: so sánh với thuốc. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): vế phòng tái phát nay dẫn NICE NG222 1.8.6–1.8.7 (mở được, toàn văn); 42% và 6–12 tháng như n22, n24. Câu trên trang đổi "CBT dạy kỹ năng tự xử lý một phần là để phòng tái phát" thành "Hướng dẫn NICE khuyên các liệu trình phòng tái phát (như CBT nhóm) tập trung rèn kỹ năng để giữ ổn định". Review (17/11/2026): trang viết "hiệu quả của nó", đọc như hiệu quả của liệu trình phòng tái phát (sai: g = 0,34 của Cuijpers 2023 là CBT cấp so với thuốc); đổi thành "hiệu quả của CBT ở 6–12 tháng sau điều trị", thêm "không vững trong mọi phân tích độ nhạy" theo gợi ý lượt 2 bổ sung.'
+    ghi_chu: 'Chữ cũ: "…58% còn lại cần thêm phương án… đó là lý do CBT chú trọng dạy kỹ năng tự xử lý để phòng tái phát, và vì sao hiệu quả dài hạn của nó hơn thuốc." Làm rõ "từ ít thử nghiệm" (g = 0,34 không vững trong mọi phân tích độ nhạy); "58%" thành "phần lớn còn lại" (58% là phép trừ của trang, không có trong bài). chỗ khó: so sánh với thuốc. Sau lượt 2 (Claude Opus 5.5, agent làm lô, 17/11/2026): vế phòng tái phát nay dẫn NICE NG222 1.8.6–1.8.7 (mở được, toàn văn); 42% và 6–12 tháng như n22, n24. Câu trên trang đổi "CBT dạy kỹ năng tự xử lý một phần là để phòng tái phát" thành "Hướng dẫn NICE khuyên các liệu trình phòng tái phát (như CBT nhóm) tập trung rèn kỹ năng để giữ ổn định". Review (17/11/2026): trang viết "hiệu quả của nó", đọc như hiệu quả của liệu trình phòng tái phát (sai: g = 0,34 của Cuijpers 2023 là CBT cấp so với thuốc); đổi thành "hiệu quả của CBT ở 6–12 tháng sau điều trị", thêm "không vững trong mọi phân tích độ nhạy" theo gợi ý lượt 2 bổ sung. Kế hoạch nâng cấp S5 (20/11/2026): chữ của nhận định không đổi; cuối gạch đầu dòng thêm lời rào về thuốc (n78). Đưa vào danh sách lượt 2 S5 như nhận định cùng đoạn.'
     luot_2: dung
     luot_2_nguon: [ "https://www.nice.org.uk/guidance/ng222/resources/depression-in-adults-treatment-and-management-pdf-66143832307909", "https://www.constantinyvesplessen.com/pdfs/Cuijpers%20et%20al.%20-%202023%20-%20Cognitive%20behavior%20therapy%20vs.%20control%20conditions,.pdf" ]
     luot_2_ghi_chu: Khớp. NICE dùng chữ 'consider' (1.8.5) cho người đã hết triệu chứng mà nguy cơ tái phát cao; 'khuyên' chấp nhận được. Có thể thêm 'và khác biệt không giữ ở mọi phân tích độ nhạy' để sát Cuijpers hơn; câu hiện tại đã có '(từ ít thử nghiệm)' nên không quá mạnh. Câu không khuyên dùng hay ngừng thuốc.
@@ -1125,6 +1128,24 @@ nhan_dinh:
       - https://dare.uva.nl/id/7886da1f-5790-4005-8ecb-747aca121038
       - https://doi.org/10.1146/annurev-clinpsy-050718-095424
     luot_2_ghi_chu: 'câu đúng: Vững chắc: trị liệu tâm lý hiệu quả hơn hẳn không điều trị. Đang tranh cãi: bao nhiêu phần hiệu quả nhờ kỹ thuật riêng, bao nhiêu nhờ những gì giả dược tâm lý cũng có.; Nhãn ''Đã bị bác bỏ'' không đạt thước đo: các kiểm tra đủ mạnh không liên tục thất bại; với giả dược tương đương cấu trúc, trị liệu thật không hơn rõ (Baskin 2003). Chính trang xếp câu này vào Đang tranh cãi (n35). Khung cũ phải bỏ hay đổi nhãn.'
+  - id: n77
+    cau: 'Các con số so CBT với thuốc là kết quả gộp từ các thử nghiệm, không phải lời khuyên cho ai cụ thể. Đừng tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn.'
+    loai: loi-khuyen
+    nguon:
+      - nice-ng222
+    trich: '1.4.12 Advise people taking antidepressant medication to talk with the person who prescribed their medication … [NICE NG222; trích như tram-cam n25, n40]'
+    vi_tri: NICE NG222 1.4.12
+    ket_qua: da-sua
+    ghi_chu: 'Kế hoạch nâng cấp S5 (20/11/2026): thêm mới, đoạn riêng ngay sau đoạn Kết quả của mục Cuijpers và cộng sự (2023), cạnh câu «hơn thuốc ở 6–12 tháng (g = 0,34…)» (n24), để câu ấy không bị đọc như lời khuyên bỏ thuốc (kiem-sinh-hoc-cam-xuc.md [A][CG], phản biện P7). Vế đầu là câu về cách đọc số của trang; vế sau là lời rào, cùng ý với tram-cam n25, n40 (dùng lại nguồn nice-ng222 đã có trong hồ sơ này). Không nói thêm lý do (triệu chứng ngừng thuốc) để không thêm khẳng định mới vào trang.'
+  - id: n78
+    cau: 'Đây không phải lý do để tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn (cuối ngộ nhận «Hết liệu trình là khỏi hẳn…», sau câu CBT tốt hơn thuốc ở 6–12 tháng).'
+    loai: loi-khuyen
+    nguon:
+      - nice-ng222
+    trich: '1.4.12 Advise people taking antidepressant medication to talk with the person who prescribed their medication … [NICE NG222; trích như tram-cam n25, n40]'
+    vi_tri: NICE NG222 1.4.12
+    ket_qua: da-sua
+    ghi_chu: 'Kế hoạch nâng cấp S5 (20/11/2026): thêm mới, cạnh câu «hiệu quả của CBT ở 6–12 tháng sau điều trị tốt hơn thuốc» (n69). Lời rào như n77.'
 doi_chu:
   - cu: 'description "Bản nháp: … bằng chứng từ hàng trăm phân tích tổng hợp…"'
     moi: description không có "Bản nháp"; "các phân tích tổng hợp lớn"
@@ -1171,3 +1192,16 @@ doi_chu:
   - cu: Mục Nguồn (8 nguồn; Johnsen 2015 thiếu tập, trang)
     moi: 21 nguồn
     ly_do: Hồ sơ n75.
+  - cu: 'Mục Cuijpers và cộng sự (2023): sau đoạn Kết quả không có lời rào về thuốc'
+    moi: 'Thêm đoạn «Các con số so CBT với thuốc là kết quả gộp từ các thử nghiệm, không phải lời khuyên cho ai cụ thể. Đừng tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn.»'
+    ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026); hồ sơ n77.'
+  - cu: 'Áp dụng 2: «Nghĩa là trị liệu đáng thử — nhưng nếu sau một liệu trình mà bạn không đỡ, đó không phải lỗi của bạn. Hãy bàn với nhà trị liệu về việc đổi phương pháp, đổi người trị liệu, hoặc gặp bác sĩ tâm thần để đánh giá thêm.»; Áp dụng 3: «Đây là lựa chọn thực tế khi chi phí hoặc khoảng cách là rào cản — miễn là nội dung dựa trên phương pháp đã được kiểm chứng.»'
+    moi: 'Áp dụng 2: mô tả bằng chứng (không phải ai cũng đỡ, không phải lỗi của người bệnh) và hướng dẫn NICE khi chưa đáp ứng; Áp dụng 3: giới hạn phạm vi của bằng chứng (chương trình dựa trên phương pháp đã kiểm chứng)'
+    ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026); hồ sơ n53, n54.'
+  - cu: 'Ngộ nhận «Hết liệu trình là khỏi hẳn…» kết thúc ở «…tốt hơn thuốc.»'
+    moi: 'Thêm «Đây không phải lý do để tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn.»'
+    ly_do: 'Kế hoạch nâng cấp S5 (20/11/2026); hồ sơ n78.'
+mo_khoa:
+  - ngay: 2026-11-20
+    nhanh: mo/sktt-than-trong-wt
+    ly_do: "Kế hoạch nâng cấp S5 (20/11/2026): lô thận trọng tạm, chờ chuyên gia: thêm lời rào «đừng tự ý ngừng hay đổi thuốc» cạnh hai câu CBT hơn thuốc ở 6–12 tháng; mục Áp dụng #2, #3 chuyển từ lời khuyên cá nhân sang mô tả bằng chứng (kiem-sinh-hoc-cam-xuc.md [A][CG]; phản biện P7)"

@@ -1,0 +1,179 @@
+# Danh sách cho lượt 2 của S5 (kế hoạch nâng cấp, 20/11/2026): mọi nhận định bị chạm hay mới ở ba trang Sức khỏe tâm thần,
+# cộng ba nhận định cùng đoạn (chữ không đổi). Lượt 2 (Opus, độc lập) kiểm từng câu với nguồn; cũng xem câu có còn gần chẩn đoán
+# hay gần lời khuyên dùng, ngừng thuốc không (chuan-kiem-dinh.md mục 5). Kết quả ghi theo khuôn của node tools/khoa.mjs nhap
+# ({ trang, id, luot_2: dung|sai|qua-manh|khong-chac, nguon: [link], cau_dung?, ghi_chu? }).
+# Nhận định đã bỏ khỏi trang (không cần lượt 2, chỉ để biết): tram-cam n15, n16 (da-bo).
+# Trang: npm run build:xem rồi xem dist/kham-pha/suc-khoe-tam-than/<trang>/index.html, hay đọc src/content/docs/.
+- trang: kham-pha/suc-khoe-tam-than/tram-cam
+  id: n14
+  cau: "Chẩn đoán không phải việc tự đối chiếu mình với một danh sách: chỉ người có chuyên môn mới chẩn đoán được (kèm link Hỗ trợ, ở đầu mục «Chuyên gia phân biệt bằng cách nào?»)."
+  loai: loi-khuyen
+  nguon:
+    - apa-dep
+    - apa-anx
+  trich: A diagnosis is made by a qualified health professional.
+  vi_tri: APA What are anxiety disorders, Treatment
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/tram-cam
+  id: n17
+  cau: "Người có chuyên môn xem xét cả bức tranh: các thay đổi kéo dài bao lâu, có mặt gần như mỗi ngày hay không, và ảnh hưởng đến học tập, công việc, gia đình hay các mối quan hệ tới mức nào."
+  loai: lam-sang
+  nguon:
+    - icd11-cddr
+  trich: The concurrent presence of at least five of the following characteristic symptoms occurring for most of the day, nearly every day, during a period lasting at least 2 weeks is required for diagnosis. At least one symptom from the affective cluster must be present. … The mood disturbance results in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. If functioning is maintained, it is only through significant additional effort.
+  vi_tri: CDDR tr. 212–213
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/tram-cam
+  id: n18
+  cau: Người có chuyên môn cũng phải loại trừ các khả năng khác, như một bệnh cơ thể (ví dụ rối loạn nội tiết, bệnh thần kinh), tác dụng của thuốc, rượu hay chất kích thích, phản ứng tang chế bình thường, hay rối loạn lưỡng cực (khi người ấy từng có giai đoạn hưng cảm).
+  loai: lam-sang
+  nguon:
+    - icd11-cddr
+    - apa-dep
+  trich: The symptoms are not better accounted for by bereavement. The symptoms are not a manifestation of another medical condition (e.g. a brain tumour), and are not due to the effects of a substance or medication … There is no history of manic, mixed or hypomanic episodes, which would indicate the presence of a bipolar disorder. [ICD-11]; screen for underlying medical conditions that may mimic depression — such as hormonal imbalances, vitamin deficiencies, neurological problems and drug or alcohol use [APA]
+  vi_tri: CDDR tr. 213, 244; APA, How Is Depression Treated?
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/tram-cam
+  id: n19
+  cau: "Chẩn đoán do người có chuyên môn thực hiện: trò chuyện kỹ, hỏi tiền sử, khám cơ thể và khi cần làm xét nghiệm để loại trừ bệnh khác."
+  loai: lam-sang
+  nguon:
+    - apa-dep
+  trich: To diagnose depression, a healthcare professional will conduct a thorough diagnostic evaluation that includes a comprehensive interview to discuss your symptoms in addition to your personal, medical and family histories. Moreover, a physical examination should be performed … Laboratory and imaging tests may also be included in the evaluation as part of the medical screening.
+  vi_tri: APA, How Is Depression Treated?
+  vi_sao: cùng đoạn với câu đã sửa; chữ không đổi, lượt 2 cũ còn trong hồ sơ
+- trang: kham-pha/suc-khoe-tam-than/tram-cam
+  id: n20
+  cau: Hai người cùng «buồn» có thể ở hai tình trạng rất khác nhau, và một người không có đủ các dấu hiệu mà các hệ thống chẩn đoán mô tả vẫn có thể cần được giúp đỡ.
+  loai: loi-khuyen
+  nguon:
+    - nhs-tt
+    - icd11-cddr
+  trich: You do not need to have a diagnosed mental health condition. [NHS, về việc dùng dịch vụ trị liệu tâm lý]
+  vi_tri: NHS talking therapies, How to get talking therapies
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/tram-cam
+  id: n54
+  cau: "Không cần tự xác định mình đã «đủ» hay chưa: khi tâm trạng nặng nề kéo dài và bắt đầu ảnh hưởng đến cuộc sống thì nên gặp người có chuyên môn; có ý nghĩ về cái chết hay tự làm hại bản thân thì tìm giúp đỡ ngay (kèm link bài Khi nào nên tìm sự giúp đỡ chuyên môn? và trang Hỗ trợ)."
+  loai: loi-khuyen
+  nguon:
+    - who-dep-2026
+    - nhs-tt
+  trich: Seek care if you have symptoms of depression. … If you think you are in immediate danger of harming yourself, contact any available emergency services or a crisis line. [WHO]; You do not need to have a diagnosed mental health condition. [NHS]
+  vi_tri: WHO, Self-care; NHS talking therapies, How to get talking therapies
+  vi_sao: mới (S5)
+- trang: kham-pha/suc-khoe-tam-than/lo-au
+  id: n12
+  cau: "Rối loạn lo âu lan tỏa: lo lắng quá mức về nhiều chuyện khác nhau của đời sống hằng ngày (công việc, tiền bạc, sức khỏe, gia đình…), hoặc cảm giác bất an không gắn với chuyện gì cụ thể."
+  loai: lam-sang
+  nguon:
+    - icd11-cddr
+    - apa-anx
+  trich: 'Marked symptoms of anxiety are required for diagnosis, manifested in either: general apprehensiveness that is not restricted to any particular environmental circumstance (i.e. "free-floating anxiety"); or excessive worry (apprehensive expectation) about negative events occurring in several different aspects of everyday life (e.g. work, finances, health, family). … muscle tension or motor restlessness; sympathetic autonomic overactivity as evidenced by frequent gastrointestinal symptoms such as nausea and/or abdominal distress, heart palpitations, sweating …; subjective experience of nervousness, restlessness or being "on edge"; difficulty concentrating; irritability; sleep disturbances … The symptoms are not transient and persist for at least several months, for more days than not.'
+  vi_tri: CDDR tr. 266
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/lo-au
+  id: n13
+  cau: "Rối loạn hoảng sợ: nỗi sợ xoay quanh chính các cơn hoảng sợ lặp lại, những đợt sợ hãi dữ dội ập đến nhanh, và nỗi lo rằng cơn sẽ trở lại."
+  loai: lam-sang
+  nguon:
+    - icd11-cddr
+    - apa-anx
+  trich: Recurrent panic attacks, which are discrete episodes of intense fear or apprehension characterized by the rapid and concurrent onset of several characteristic symptoms … palpitations or increased heart rate … sensations of shortness of breath … chest pain … feelings of dizziness … fear of losing control or going mad; fear of imminent death. At least some of the panic attacks are unexpected … seem to arise "out of the blue". Panic attacks are followed by persistent concern or worry (e.g. for several weeks) about their recurrence or their perceived negative significance (e.g. that the physiological symptoms may be those of a myocardial infarction), or by behaviours intended to avoid their recurrence (e.g. only leaving the home with a trusted companion).
+  vi_tri: CDDR tr. 271
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/lo-au
+  id: n14
+  cau: "Rối loạn lo âu xã hội (còn gọi ám ảnh sợ xã hội): nỗi sợ rõ rệt và quá mức trong các tình huống xã hội, vì sợ mình bị người khác đánh giá tiêu cực, chê cười hay từ chối."
+  loai: lam-sang
+  nguon:
+    - icd11-cddr
+    - apa-anx
+  trich: Marked and excessive fear or anxiety that occurs consistently in one or more social situations such as social interactions (e.g. having a conversation), doing something while feeling observed (e.g. eating or drinking in the presence of others) or performing in front of others (e.g. giving a speech) … The individual is concerned that they will act in a way, or show anxiety symptoms, that will be negatively evaluated by others (i.e. be humiliating, be embarrassing, lead to rejection or be offensive). Relevant social situations are consistently avoided or endured with intense fear or anxiety. The symptoms are not transient – that is, they persist for an extended period of time (e.g. at least several months). [ICD-11]; The fear or anxiety causes problems with daily functioning and lasts at least six months. [APA, Social Anxiety Disorder]
+  vi_tri: CDDR tr. 284; APA
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/lo-au
+  id: n15
+  cau: "Mô tả ba dạng là mô tả chung để hiểu, không dùng để tự chẩn đoán: chỉ người có chuyên môn mới chẩn đoán được (kèm link Hỗ trợ, ngay trước danh sách)."
+  loai: loi-khuyen
+  nguon:
+    - apa-anx
+  trich: A diagnosis is made by a qualified health professional.
+  vi_tri: APA
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/lo-au
+  id: n45
+  cau: "Câu hỏi 3: theo ICD-11, ở rối loạn hoảng sợ các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống; cơn hoảng sợ đơn lẻ khá thường gặp và tự nó chưa phải rối loạn."
+  loai: lam-sang
+  nguon:
+    - icd11-cddr
+  trich: Recurrent panic attacks, which are discrete episodes of intense fear or apprehension characterized by the rapid and concurrent onset of several characteristic symptoms … palpitations or increased heart rate … sensations of shortness of breath … chest pain … feelings of dizziness … fear of losing control or going mad; fear of imminent death. At least some of the panic attacks are unexpected … seem to arise "out of the blue". Panic attacks are followed by persistent concern or worry (e.g. for several weeks) about their recurrence or their perceived negative significance (e.g. that the physiological symptoms may be those of a myocardial infarction), or by behaviours intended to avoid their recurrence (e.g. only leaving the home with a trusted companion). … Panic attacks are common in the general population
+  vi_tri: CDDR tr. 271–272
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/lo-au
+  id: n49
+  cau: "Ở dạng nào cũng vậy, người có chuyên môn xem xét cả bức tranh: nỗi sợ kéo dài bao lâu, mạnh đến đâu, và gây khổ sở hay cản trở cuộc sống tới mức nào."
+  loai: lam-sang
+  nguon:
+    - icd11-cddr
+    - who-anx-2026
+  trich: people with anxiety disorders often experience fear and worry that is both intense and excessive. … They are difficult to control, cause significant distress and can last a long time if untreated. Anxiety disorders interfere with daily activities and can impair a person's family, social and school or working life. [WHO]; The symptoms are not transient and persist for at least several months, for more days than not. [ICD-11, 6B00]; The symptoms are not transient – that is, they persist for an extended period of time (e.g. at least several months). [ICD-11, 6B04]
+  vi_tri: WHO Overview (trích như n9); CDDR tr. 266, 284 (trích như n12, n14)
+  vi_sao: mới (S5)
+- trang: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+  id: n24
+  cau: CBT chỉ hơn liệu pháp tâm lý khác một chút (g = 0,06, mất ý nghĩa trong phần lớn phân tích độ nhạy); ngang thuốc ngắn hạn nhưng hơn thuốc ở 6–12 tháng (g = 0,34, ít thử nghiệm, không vững trong mọi phân tích độ nhạy); kết hợp hơn thuốc đơn độc nhưng không hơn CBT đơn độc.
+  loai: so-lieu
+  nguon:
+    - cuijpers2023
+  trich: "CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point."
+  vi_tri: Cuijpers 2023, tóm tắt
+  vi_sao: cùng đoạn với câu đã sửa; chữ không đổi, lượt 2 cũ còn trong hồ sơ
+- trang: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+  id: n53
+  cau: "Áp dụng 2: 42% người được trị liệu đáp ứng, so với 19% ở nhóm đối chứng; trị liệu giúp được nhiều người, nhưng không phải ai cũng đỡ sau một liệu trình, và chưa đỡ không phải lỗi của người bệnh; hướng dẫn NICE ghi rằng khi trầm cảm chưa đáp ứng điều trị, người có chuyên môn bàn với người bệnh các phương án tiếp theo, như chuyển sang một liệu pháp tâm lý hay kết hợp các hướng điều trị. (Chip Vững chắc, tiêu đề giữ.)"
+  loai: lam-sang
+  nguon:
+    - cuijpers2023
+    - nice-ng222
+  trich: A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT. [Cuijpers]; If a person's depression has not responded … discuss further treatment options … switching to a psychological therapy … changing to a combination [NICE 1.9]
+  vi_tri: Cuijpers 2023; NICE NG222 mục 1.9
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+  id: n54
+  cau: "Áp dụng 3: CBT tự giúp không có người hướng dẫn vẫn hiệu quả nhỏ đến vừa với trầm cảm (g = 0,45); một phân tích dữ liệu từng người bệnh (39 thử nghiệm) thấy CBT qua mạng có hướng dẫn hiệu quả hơn loại không hướng dẫn ngay sau điều trị, nhất là với trầm cảm vừa đến nặng; các kết quả này nói về những chương trình dựa trên phương pháp đã được kiểm chứng, không phải về mọi nội dung tự giúp trên mạng. (Chip Khá vững.)"
+  loai: lam-sang
+  nguon:
+    - cuijpers2023
+    - karyotaki2021
+  trich: "CBT was also effective as unguided self-help intervention (g=0.45; 95% CI: 0.31-0.60) [Cuijpers 2023]; Of 42 eligible RCTs, 39 studies comprising 9751 participants … Guided iCBT was associated with more effectiveness than unguided iCBT (MD in posttreatment PHQ-9 scores, -0.8) …, but we found no evidence of a difference at 6 or 12 months … guided iCBT was associated with overall better outcomes in patients with baseline PHQ-9 greater than 9. [Karyotaki 2021]"
+  vi_tri: Cuijpers 2023; Karyotaki 2021, tóm tắt
+  vi_sao: đã sửa chữ (S5)
+- trang: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+  id: n69
+  cau: "Hết liệu trình không có nghĩa khỏi hẳn: 42% đáp ứng nghĩa là phần lớn còn lại cần thêm phương án; người đã đỡ cũng có thể tái phát; NICE khuyên các liệu trình phòng tái phát (như CBT nhóm) tập trung rèn kỹ năng để giữ ổn định; với trầm cảm, có bằng chứng (từ ít thử nghiệm, không vững trong mọi phân tích độ nhạy) rằng hiệu quả của CBT ở 6–12 tháng sau điều trị tốt hơn thuốc."
+  loai: phat-hien
+  nguon:
+    - cuijpers2023
+    - nice-ng222
+  trich: "A total of 42% of patients receiving CBT responded to treatment, while the response rate was only 19% in control groups, with a NNT of 4.7 in favor of CBT. CBT was significantly more effective than other psychotherapies, but the difference was small (g=0.06; 95% CI: 0-0.12) and became non-significant in most sensitivity analyses. The effects of CBT did not differ significantly from those of pharmacotherapies at the short term, but were significantly larger at 6-12 month follow-up (g=0.34; 95% CI: 0.09-0.58), although the number of trials was small, and the difference was not significant in all sensitivity analyses. Combined treatment was more effective than pharmacotherapies alone … but it was not more effective than CBT alone at either time point. [Cuijpers]; discuss with people who have remitted … whether they wish to continue with their psychological therapy for relapse prevention [NICE 1.8.8] || 1.8.6 For people starting group CBT or MBCT for relapse prevention, offer a course of therapy with an explicit focus on the development of relapse prevention skills and what is needed to stay well. [NICE NG222]"
+  vi_tri: Cuijpers 2023; NICE NG222 1.8
+  vi_sao: cùng đoạn với câu đã sửa; chữ không đổi, lượt 2 cũ còn trong hồ sơ
+- trang: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+  id: n77
+  cau: "Các con số so CBT với thuốc là kết quả gộp từ các thử nghiệm, không phải lời khuyên cho ai cụ thể. Đừng tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn."
+  loai: loi-khuyen
+  nguon:
+    - nice-ng222
+  trich: 1.4.12 Advise people taking antidepressant medication to talk with the person who prescribed their medication … [NICE NG222; trích như tram-cam n25, n40]
+  vi_tri: NICE NG222 1.4.12
+  vi_sao: mới (S5)
+- trang: kham-pha/suc-khoe-tam-than/tri-lieu-tam-ly
+  id: n78
+  cau: "Đây không phải lý do để tự ý ngừng hay đổi thuốc: mọi thay đổi về thuốc hãy bàn với bác sĩ kê đơn (cuối ngộ nhận «Hết liệu trình là khỏi hẳn…», sau câu CBT tốt hơn thuốc ở 6–12 tháng)."
+  loai: loi-khuyen
+  nguon:
+    - nice-ng222
+  trich: 1.4.12 Advise people taking antidepressant medication to talk with the person who prescribed their medication … [NICE NG222; trích như tram-cam n25, n40]
+  vi_tri: NICE NG222 1.4.12
+  vi_sao: mới (S5)
