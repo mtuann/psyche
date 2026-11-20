@@ -29,13 +29,13 @@ Lo lắng (anxiety) vốn là phản ứng bình thường khi ta chịu áp l�
 
 Rối loạn lo âu phổ biến. Tính đến 11/2026, WHO ước tính năm 2023 có khoảng 470 triệu người trên thế giới bị rối loạn lo âu, nhiều hơn mọi nhóm rối loạn tâm thần khác, và chỉ khoảng 1 trong 4 người cần điều trị được điều trị.
 
-Có nhiều rối loạn lo âu khác nhau, tùy nỗi sợ tập trung vào đâu. Ba dạng thường được nhắc đến (mô tả chung, **không phải bảng để tự chấm điểm**: chỉ người có chuyên môn mới chẩn đoán được; xem trang [Hỗ trợ](/psyche/ho-tro/)):
+Có nhiều rối loạn lo âu khác nhau, tùy nỗi sợ tập trung vào đâu. Ba dạng thường được nhắc đến (mô tả chung để hiểu, **không dùng để tự chẩn đoán**: chỉ người có chuyên môn mới chẩn đoán được; xem trang [Hỗ trợ](/psyche/ho-tro/)):
 
-- **Rối loạn lo âu lan tỏa** (generalized anxiety disorder): lo lắng quá mức về **nhiều chuyện khác nhau** của đời sống hằng ngày (công việc, tiền bạc, sức khỏe, gia đình…), hoặc cảm giác bất an không gắn với chuyện gì cụ thể. Đi kèm thường là căng cơ hay bồn chồn, cảm giác "căng như dây đàn", khó tập trung, dễ cáu, khó ngủ, và các dấu hiệu cơ thể như tim đập nhanh, đổ mồ hôi, buồn nôn. Theo ICD-11, các triệu chứng không thoáng qua mà kéo dài **ít nhất vài tháng**, phần lớn các ngày.
-- **Rối loạn hoảng sợ** (panic disorder): các **cơn hoảng sợ lặp lại**, trong đó ít nhất một số cơn đến bất ngờ, "từ trên trời rơi xuống". Cơn hoảng sợ là những đợt sợ hãi dữ dội ập đến nhanh, kèm tim đập nhanh, khó thở, đau ngực, chóng mặt, sợ mất kiểm soát hay sợ sắp chết. Sau đó người ấy lo lắng kéo dài về việc cơn sẽ trở lại hay về ý nghĩa của nó (ví dụ sợ mình bị đau tim), hoặc thay đổi cách sống để tránh cơn (ví dụ chỉ ra khỏi nhà khi có người đi cùng).
-- **Rối loạn lo âu xã hội** (social anxiety disorder, còn gọi là ám ảnh sợ xã hội): nỗi sợ rõ rệt và quá mức trong các **tình huống xã hội** như trò chuyện, ăn uống khi bị nhìn, thuyết trình, vì sợ mình làm điều gì đó bị người khác đánh giá tiêu cực, chê cười hay từ chối. Người ấy né tránh các tình huống này hoặc chịu đựng trong lo sợ dữ dội, và tình trạng kéo dài (ICD-11 lấy ví dụ: ít nhất vài tháng; tài liệu của Hiệp hội Tâm thần học Hoa Kỳ theo DSM-5-TR ghi: ít nhất sáu tháng).
+- **Rối loạn lo âu lan tỏa** (generalized anxiety disorder): lo lắng quá mức về **nhiều chuyện khác nhau** của đời sống hằng ngày (công việc, tiền bạc, sức khỏe, gia đình…), hoặc cảm giác bất an không gắn với chuyện gì cụ thể.
+- **Rối loạn hoảng sợ** (panic disorder): nỗi sợ xoay quanh chính các **cơn hoảng sợ lặp lại**, những đợt sợ hãi dữ dội ập đến nhanh, và nỗi lo rằng cơn sẽ trở lại.
+- **Rối loạn lo âu xã hội** (social anxiety disorder, còn gọi là ám ảnh sợ xã hội): nỗi sợ rõ rệt và quá mức trong các **tình huống xã hội**, vì sợ mình bị người khác đánh giá tiêu cực, chê cười hay từ chối.
 
-Chuyên gia còn phải **loại trừ** các khả năng khác: một bệnh cơ thể (ví dụ cường giáp), tác dụng của cà phê, thuốc, rượu hay chất kích thích (kể cả khi ngừng dùng), hay một rối loạn khác giải thích tốt hơn. Một cơn hoảng sợ đơn lẻ, hay sự hồi hộp khi phải nói trước đám đông, thì rất thường gặp và tự nó chưa phải là rối loạn. Rối loạn lo âu cũng hay đi cùng trầm cảm.
+Ở dạng nào cũng vậy, người có chuyên môn xem xét cả bức tranh: nỗi sợ kéo dài bao lâu, mạnh đến đâu, và gây khổ sở hay cản trở cuộc sống tới mức nào. Chuyên gia còn phải **loại trừ** các khả năng khác: một bệnh cơ thể (ví dụ cường giáp), tác dụng của cà phê, thuốc, rượu hay chất kích thích (kể cả khi ngừng dùng), hay một rối loạn khác giải thích tốt hơn. Một cơn hoảng sợ đơn lẻ, hay sự hồi hộp khi phải nói trước đám đông, thì rất thường gặp và tự nó chưa phải là rối loạn. Rối loạn lo âu cũng hay đi cùng trầm cảm.
 
 ## Vòng luẩn quẩn tránh né
 
@@ -51,7 +51,7 @@ Phần này chỉ giới thiệu chung các hướng mà hướng dẫn quốc t
 
 - **Liệu pháp nhận thức – hành vi (CBT):** WHO ghi rằng các liệu pháp tâm lý dựa trên nguyên tắc của CBT, gồm liệu pháp tiếp xúc, có nhiều bằng chứng nhất cho nhiều rối loạn lo âu. Các hướng dẫn NICE (Anh) khuyên CBT cho rối loạn hoảng sợ, CBT cá nhân cho lo âu xã hội, và CBT hay thư giãn ứng dụng (applied relaxation) cho lo âu lan tỏa. Với lo âu lan tỏa, NICE cũng giới thiệu các bước nhẹ hơn trước, như tự giúp có hướng dẫn.
 - **Thuốc:** theo WHO, thuốc chống trầm cảm như nhóm SSRI có thể hữu ích cho người lớn bị rối loạn lo âu. NICE xếp thuốc là một lựa chọn bên cạnh liệu pháp tâm lý cho lo âu lan tỏa, và là lựa chọn cho người không muốn hay không dùng được CBT với lo âu xã hội. Chỉ bác sĩ mới kê đơn và theo dõi thuốc.
-- **Thuốc an thần nhóm benzodiazepine:** WHO ghi rằng nhóm thuốc này nhìn chung không được khuyên dùng cho rối loạn lo âu, vì nguy cơ lệ thuộc cao và hiệu quả lâu dài hạn chế; NICE chỉ chấp nhận dùng ngắn hạn trong lúc khủng hoảng với lo âu lan tỏa, và khuyên không dùng cho rối loạn hoảng sợ.
+- **Thuốc an thần nhóm benzodiazepine:** WHO ghi rằng nhóm thuốc này nhìn chung không được khuyên dùng cho rối loạn lo âu, vì nguy cơ lệ thuộc cao và hiệu quả lâu dài hạn chế; NICE chỉ chấp nhận dùng ngắn hạn trong lúc khủng hoảng với lo âu lan tỏa, và khuyên không dùng cho rối loạn hoảng sợ. Người đang được kê thuốc nhóm này đừng tự ngừng đột ngột: theo NHS, ngừng đột ngột có thể gây triệu chứng cai, và bác sĩ sẽ giảm liều dần.
 
 Tiếp xúc trong trị liệu được lên kế hoạch cùng người có chuyên môn, thường đi từng bước, phù hợp với từng người. Nó khác với việc bị người khác ép vào tình huống đáng sợ.
 
@@ -102,7 +102,7 @@ Cơn hoảng sợ có thể giống cơn đau tim. Nếu bạn bị đau ngực,
 > Đây là cơ chế mà liệu pháp tiếp xúc nhắm vào: đối mặt có kế hoạch, có kiểm soát để học lại rằng tín hiệu báo động đã reo nhầm.
 ? Theo ICD-11, rối loạn hoảng sợ khác một cơn hoảng sợ đơn lẻ ở điểm nào?
 - Cơn hoảng sợ đơn lẻ thì không có triệu chứng cơ thể.
-+ Rối loạn hoảng sợ có các cơn lặp lại, một số cơn đến bất ngờ, kèm lo lắng kéo dài về cơn tiếp theo hay thay đổi cách sống để tránh cơn, và gây suy giảm rõ.
++ Ở rối loạn hoảng sợ, các cơn lặp lại và nỗi lo rằng cơn sẽ trở lại thành một nỗi sợ kéo dài, gây khổ sở hay cản trở cuộc sống.
 - Rối loạn hoảng sợ chỉ chẩn đoán được bằng điện não đồ.
 > Cơn hoảng sợ khá thường gặp và tự nó chưa phải là rối loạn; "nỗi sợ về cơn sợ" kéo dài mới là đặc điểm của rối loạn hoảng sợ.
 ? Phát biểu nào đúng về điều trị rối loạn lo âu theo các hướng dẫn quốc tế?
@@ -124,6 +124,7 @@ Cơn hoảng sợ có thể giống cơn đau tim. Nếu bạn bị đau ngực,
 - American Psychiatric Association. (2022). *Diagnostic and Statistical Manual of Mental Disorders*, Fifth Edition, Text Revision (DSM-5-TR). American Psychiatric Publishing. Tóm tắt chính thức cho người đọc: American Psychiatric Association, *What are anxiety disorders?* <https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders>
 - National Institute for Health and Care Excellence. (2011, cập nhật 2020). *Generalised anxiety disorder and panic disorder in adults: management* (NICE guideline CG113). <https://www.nice.org.uk/guidance/cg113>
 - National Institute for Health and Care Excellence. (2013). *Social anxiety disorder: recognition, assessment and treatment* (NICE guideline CG159). <https://www.nice.org.uk/guidance/cg159>
+- NHS. (2026, xem lại 2 tháng 6). *Diazepam* [Trang thông tin thuốc]. <https://www.nhs.uk/medicines/diazepam/>
 - Carpenter, J. K., Andrews, L. A., Witcraft, S. M., Powers, M. B., Smits, J. A. J., & Hofmann, S. G. (2018). Cognitive behavioral therapy for anxiety and related disorders: A meta-analysis of randomized placebo-controlled trials. *Depression and Anxiety*, 35(6), 502–514. <https://doi.org/10.1002/da.22728>
 - Craske, M. G., Treanor, M., Conway, C. C., Zbozinek, T., & Vervliet, B. (2014). Maximizing exposure therapy: An inhibitory learning approach. *Behaviour Research and Therapy*, 58, 10–23. <https://doi.org/10.1016/j.brat.2014.04.006>
 - Hofmann, S. G., & Hay, A. C. (2018). Rethinking avoidance: Toward a balanced approach to avoidance in treating anxiety disorders. *Journal of Anxiety Disorders*, 55, 14–21. <https://doi.org/10.1016/j.janxdis.2018.03.004>

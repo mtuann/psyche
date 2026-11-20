@@ -33,14 +33,11 @@ Trầm cảm phổ biến. Tính đến 11/2026, WHO ước tính năm 2023 kho�
 
 ## Chuyên gia phân biệt bằng cách nào?
 
-Người có chuyên môn dựa vào các hệ thống chẩn đoán chuẩn: ICD-11 của WHO và DSM-5-TR (bản hiệu đính năm 2022 của Hiệp hội Tâm thần học Hoa Kỳ). Hai hệ thống mô tả giai đoạn trầm cảm khá giống nhau. Mô tả dưới đây chỉ để hiểu chung, **không phải bảng để tự chấm điểm**: chỉ người có chuyên môn mới chẩn đoán được (xem trang [Hỗ trợ](/psyche/ho-tro/)).
+Người có chuyên môn dựa vào các hệ thống chẩn đoán chuẩn: ICD-11 của WHO và DSM-5-TR (bản hiệu đính năm 2022 của Hiệp hội Tâm thần học Hoa Kỳ). Hai hệ thống mô tả giai đoạn trầm cảm khá giống nhau. Nhưng chẩn đoán không phải việc tự đối chiếu mình với một danh sách: chỉ người có chuyên môn mới chẩn đoán được (xem trang [Hỗ trợ](/psyche/ho-tro/)).
 
-- Cần có **ít nhất một trong hai dấu hiệu cốt lõi**: tâm trạng trầm buồn, hoặc mất hẳn hứng thú, niềm vui với các hoạt động vốn thích.
-- Chuyên gia xem xét thêm nhiều triệu chứng khác, như khó tập trung hay khó quyết định; cảm giác mình vô giá trị hay tội lỗi quá mức; tuyệt vọng về tương lai; ý nghĩ lặp lại về cái chết; giấc ngủ, sự thèm ăn hay cân nặng thay đổi rõ; mệt mỏi, thiếu năng lượng; bồn chồn hay chậm chạp đến mức người khác nhận thấy.
-- Các triệu chứng kéo dài **ít nhất hai tuần**, gần như mỗi ngày, và gây **suy giảm rõ** trong học tập, công việc, gia đình hay các mối quan hệ (nếu vẫn làm được việc thì chỉ nhờ cố gắng nhiều hơn hẳn).
-- Chuyên gia phải **loại trừ** các khả năng khác: một bệnh cơ thể (ví dụ rối loạn nội tiết, bệnh thần kinh), tác dụng của thuốc, rượu hay chất kích thích, phản ứng tang chế bình thường, và rối loạn lưỡng cực (khi người ấy từng có giai đoạn hưng cảm).
+Chẩn đoán là một quy trình do người có chuyên môn thực hiện: trò chuyện kỹ, hỏi về tiền sử, khám cơ thể và khi cần làm xét nghiệm để loại trừ bệnh khác. Họ xem xét cả bức tranh: các thay đổi kéo dài bao lâu, có mặt gần như mỗi ngày hay không, và ảnh hưởng đến học tập, công việc, gia đình hay các mối quan hệ tới mức nào. Họ cũng phải loại trừ các khả năng khác, như một bệnh cơ thể (ví dụ rối loạn nội tiết, bệnh thần kinh), tác dụng của thuốc, rượu hay chất kích thích, phản ứng tang chế bình thường, hay rối loạn lưỡng cực (khi người ấy từng có giai đoạn hưng cảm).
 
-Cũng vì vậy, chẩn đoán là một quy trình do người có chuyên môn thực hiện: trò chuyện kỹ, hỏi về tiền sử, khám cơ thể và khi cần làm xét nghiệm để loại trừ bệnh khác. Hai người cùng "buồn" có thể ở hai tình trạng rất khác nhau, và một người không có đủ các dấu hiệu trên vẫn có thể cần được giúp đỡ.
+Hai người cùng "buồn" có thể ở hai tình trạng rất khác nhau, và một người không có đủ các dấu hiệu mà các hệ thống chẩn đoán mô tả vẫn có thể cần được giúp đỡ. Bạn không cần tự xác định mình đã "đủ" hay chưa: khi tâm trạng nặng nề kéo dài và bắt đầu ảnh hưởng đến cuộc sống, đó là lúc nên gặp người có chuyên môn, và có ý nghĩ về cái chết hay tự làm hại bản thân thì tìm giúp đỡ ngay (xem bài [Khi nào nên tìm sự giúp đỡ chuyên môn?](/psyche/kham-pha/suc-khoe-tam-than/tim-giup-do/) và trang [Hỗ trợ](/psyche/ho-tro/)).
 
 ## Các hướng điều trị có bằng chứng
 
